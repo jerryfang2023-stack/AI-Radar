@@ -4,18 +4,20 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-8f71c4871a160172",
     "name": "Thinking Machines Lab",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "tml"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -24,6 +26,7 @@
       "EV-0a5d792223f5381f",
       "EV-869c9ea96c58873d",
       "EV-ad40755ca624afe7",
+      "EV-9ad569c873451304",
       "EV-d5f276ad6b2ac9de",
       "EV-181b425d2a600cad",
       "EV-2fea1664807824ce",
@@ -39,6 +42,7 @@
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-agentic_execution",
+      "TX-industry-retail_ecommerce",
       "TX-technology-code_generation",
       "TX-use_case-robotics_automation",
       "TX-technology-long_context",
@@ -50,8 +54,8 @@
     "relatedEntityIds": [
       "EN-78624f0a98e78301"
     ],
-    "firstSeen": "2026-06-15",
-    "lastSeen": "2026-07-22",
+    "firstSeen": "2026-05-14",
+    "lastSeen": "2026-07-23",
     "relationIds": [
       "REL2-742d8437403212de"
     ],
@@ -61,7 +65,9 @@
         "EV-0a5d792223f5381f",
         "EV-ad40755ca624afe7"
       ],
-      "deployments": [],
+      "deployments": [
+        "EV-9ad569c873451304"
+      ],
       "partnerships": [
         "EV-d5f276ad6b2ac9de",
         "EV-181b425d2a600cad"
@@ -83,6 +89,29 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-9ad569c873451304",
+        "dataDate": "2026-07-23",
+        "date": "2026-05-14",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "INTURAI 将其AI原生多垂直平台部署至养老与零售领域的多个集团 – 公司公告",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "entityIds": [
+          "EN-6957217eb8e00a30",
+          "EN-8f71c4871a160172"
+        ]
+      },
       {
         "id": "EV-2fea1664807824ce",
         "dataDate": "2026-07-22",
@@ -509,8 +538,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-2069f6a931b8c9d6",
         "EV-901155ab700a7e8e",
+        "EV-2069f6a931b8c9d6",
         "EV-f6e7a4fe77d7f5c9",
         "EV-6be89ebfbf8de6be",
         "EV-b29878fdf79f2ac5",
@@ -522,6 +551,7 @@
         "EV-095e1a90f14ccdb9",
         "EV-640c5ea9f4fa2780",
         "EV-9781e67076f4e06b",
+        "EV-8cf189b07a257c1c",
         "EV-0a5d792223f5381f",
         "EV-63236c15166b71e0",
         "EV-d642ec7a9ca5eb0f",
@@ -531,7 +561,6 @@
         "EV-8bb64551124d8870",
         "EV-1349fd0441b75da0",
         "EV-6e06cfa28f76a76f",
-        "EV-8cf189b07a257c1c",
         "EV-e61effb7ada8508f",
         "EV-3d93d1da8cb64462",
         "EV-0ade039d36e077ae",
@@ -661,6 +690,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-5b193a038ab4ea22",
+        "EV-6c81f03e885f10af",
+        "EV-bf68acb1350e039b",
         "EV-2fea1664807824ce",
         "EV-3ba971c5939b0f04",
         "EV-6ce069b1845f5a52",
@@ -838,6 +870,7 @@
         "EV-c52947e480fa3347",
         "EV-cf496e0f8a56ca97",
         "EV-aaaa21ae510bc87e",
+        "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
         "EV-70fd0c4e482a646e",
@@ -856,9 +889,9 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-12765295db4f1e79",
         "EN-73ef176d9f12809e",
         "EN-96eebba49dbbf422",
-        "EN-12765295db4f1e79",
         "EN-270e2cfd11014ef8",
         "EN-522656609ff15589",
         "EN-b0bc23fa8e20c543",
@@ -871,6 +904,8 @@
         "EN-45a46e581e91ce79",
         "EN-ea3bd73e2b506e00",
         "EN-4d748ebd71af03a7",
+        "EN-3afbf365c56b769d",
+        "EN-b0532e1af75cc4ab",
         "EN-7a9c94a8c201bcc2",
         "EN-8f71c4871a160172",
         "EN-d6386c59a6bcfcb1",
@@ -882,8 +917,6 @@
         "EN-7692c3ad3540bb80",
         "EN-cd84b3822a32503d",
         "EN-caaa8e02be54cfc9",
-        "EN-3afbf365c56b769d",
-        "EN-b0532e1af75cc4ab",
         "EN-612370f44fcdeae0",
         "EN-14ce7672aaca7a68",
         "EN-047364b9be67f665",
@@ -1018,8 +1051,12 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
-        "EN-0d1e478de2157d48",
+        "EN-6fcba5d96a4fadfd",
         "EN-6f7ac1823da81d2e",
+        "EN-f65bb77682b83476",
+        "EN-7c094d35e3b700c8",
+        "EN-9a266f40d42cf217",
+        "EN-0d1e478de2157d48",
         "EN-4546b5bdff2ea8ed",
         "EN-18f0900d6c487f59",
         "EN-52c2f30b6bda5898",
@@ -1251,7 +1288,6 @@
         "EN-ab9e3beebd83960d",
         "EN-1ecf93c539fcffca",
         "EN-8941d14fe851d732",
-        "EN-6fcba5d96a4fadfd",
         "EN-11ef7b03c79c9bbd",
         "EN-0b9ca57f53ba758b",
         "EN-9bc22dcabf7f45b3",
@@ -1265,6 +1301,7 @@
         "EN-4634cbf463651816",
         "EN-467f67b2ed0f9a54",
         "EN-b7bea343b08cce2c",
+        "EN-fdb2cc367267ac57",
         "EN-1af769ad0ad5907c",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
@@ -1325,7 +1362,88 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "TX-industry-retail_ecommerce",
+      "name": "零售与电商",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "retail_ecommerce",
+      "eventIds": [
+        "EV-f6a72cddbda748b3",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-8b0f056571d68269",
+        "EV-acf1bcb321414706",
+        "EV-434dcf1813a84ead",
+        "EV-a3b006906f6d46a0",
+        "EV-046caa2b3d6fbdde",
+        "EV-0e028ea8f94752de",
+        "EV-9ad569c873451304",
+        "EV-777eb5b7783b71fb",
+        "EV-02686922dd82c4aa",
+        "EV-99a0cb6bac516bdd",
+        "EV-2ffc3377977da114",
+        "EV-d12aa40eff40c97e",
+        "EV-89b644ff05e6b93b",
+        "EV-c7404765df94a3b4",
+        "EV-3f8ba5855b64dd1a",
+        "EV-52e1ac21c25a0a09",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3"
+      ],
+      "entityIds": [
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
+        "EN-f346eaca864441f9",
+        "EN-c70eca6b0f88f44d",
+        "EN-b0532e1af75cc4ab",
+        "EN-e5cc9e38970eacb5",
+        "EN-cbc62794911ff31b",
+        "EN-b1d07f1a647ba7fb",
+        "EN-6f21a653c48f4f19",
+        "EN-4dbe391b8fcf977a",
+        "EN-c5947269de664c47",
+        "EN-e759968ca9278b8d",
+        "EN-6957217eb8e00a30",
+        "EN-8f71c4871a160172",
+        "EN-fb54e9062429a937",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-88e2cce43eeadb36",
+        "EN-276a8bc458036a1a",
+        "EN-5239a379b6326549",
+        "EN-8147e6fed86d42c1",
+        "EN-e274048227f164dc",
+        "EN-1bf93b12e68cac56",
+        "EN-d9b1d7819af92e77",
+        "EN-151013fb8438c046",
+        "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
+        "EN-5388bc10736a0eff",
+        "EN-43a340bb75b45f02",
+        "EN-5e1fcba4c9f1cf69",
+        "EN-94ff75465b1afa65",
+        "EN-3a7bd3e2360a3d29",
+        "EN-40e307d789f77264",
+        "EN-1924fff8eb4d54ae",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93",
+        "EN-4a639cb888a15d75",
+        "EN-56ee86045cfb0ddd",
+        "EN-9dde0c2d375060f6"
+      ],
+      "fdeIds": [
+        "FDE-62f660a9a90bc3f6",
+        "FDE-3d5eb0bc571f55bf",
+        "FDE-309bc49d109029a3"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2023-06-28",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-code_generation",
@@ -1465,6 +1583,7 @@
         "EV-e7b228c1b6b54c6a",
         "EV-57d3b7aa1a2f0fda",
         "EV-234ad54940674bf6",
+        "EV-5a9fe80f8e4ae066",
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
@@ -1510,6 +1629,7 @@
         "EN-3b39ea849059759f",
         "EN-bbdefa2950f49882",
         "EN-3cce50ffb12f1a69",
+        "EN-7c5d04104b1d34e7",
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
@@ -1572,7 +1692,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-long_context",
@@ -1735,8 +1855,8 @@
       "valueId": "open_weights",
       "eventIds": [
         "EV-1abf0d076d30ec6d",
-        "EV-2fea1664807824ce",
         "EV-0d5a32aca724d30e",
+        "EV-2fea1664807824ce",
         "EV-b84035029a63e52e",
         "EV-3028dfadf94c8f4c",
         "EV-a06011da69abcc3d",
@@ -1748,16 +1868,18 @@
         "EN-240389f4b730bad4",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d",
+        "EN-16dc8ea1cf4807b0",
+        "EN-b5251b35f15bedc4",
+        "EN-047364b9be67f665",
+        "EN-cbc62794911ff31b",
+        "EN-10a27c6240d18dbe",
+        "EN-e6ac424c9ea83939",
+        "EN-607964040e4b62e0",
         "EN-0d1e478de2157d48",
         "EN-8d4321d936320802",
         "EN-6f7ac1823da81d2e",
         "EN-8f71c4871a160172",
         "EN-4546b5bdff2ea8ed",
-        "EN-b5251b35f15bedc4",
-        "EN-e9b67bdfb6ae6a2e",
-        "EN-047364b9be67f665",
-        "EN-607964040e4b62e0",
-        "EN-cf5378a2305a999f",
         "EN-d41ebd9f02722fc8",
         "EN-b0532e1af75cc4ab",
         "EN-96eebba49dbbf422",
@@ -1778,7 +1900,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-multimodal",

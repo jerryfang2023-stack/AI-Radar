@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-5fdd673ed1fcff1d",
@@ -21,6 +21,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-a89bf7c0c4203ce2",
+      "EV-02015794e4c719d0",
       "EV-9b29acd28643e9d1",
       "EV-5271985bba70f3d1"
     ],
@@ -28,13 +30,16 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-10",
-    "lastSeen": "2026-06-23",
+    "lastSeen": "2026-07-23",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-a89bf7c0c4203ce2"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-02015794e4c719d0",
         "EV-9b29acd28643e9d1"
       ],
       "hardware": [],
@@ -44,6 +49,47 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-a89bf7c0c4203ce2",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "三星考虑按 200 亿欧元估值向 Mistral AI 投资 10 亿欧元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-968e2d5b08687bf4",
+          "EN-5fdd673ed1fcff1d",
+          "EN-c04bd5ebd10ab696"
+        ]
+      },
+      {
+        "id": "EV-02015794e4c719d0",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "三星首款 AI 眼镜 Galaxy Glasses 亮相：搭载骁龙 AR1 Gen1 芯片，满电续航 9 小时",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_device",
+            "dimensionName": "产品形态",
+            "name": "AI 设备"
+          }
+        ],
+        "entityIds": [
+          "EN-968e2d5b08687bf4",
+          "EN-5fdd673ed1fcff1d",
+          "EN-8f5edf98060f12af"
+        ]
+      },
       {
         "id": "EV-9b29acd28643e9d1",
         "dataDate": "2026-06-23",

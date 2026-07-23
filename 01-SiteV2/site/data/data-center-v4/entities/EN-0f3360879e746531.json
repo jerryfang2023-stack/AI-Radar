@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-0f3360879e746531",
@@ -21,6 +21,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c7ba7b093a1a3b94",
       "EV-cafe435ddd007821",
       "EV-e4fec8a00b416d12",
       "EV-8c526681b74e2762",
@@ -40,13 +41,15 @@
       "EN-8d4321d936320802"
     ],
     "firstSeen": "2026-07-16",
-    "lastSeen": "2026-07-19",
+    "lastSeen": "2026-07-23",
     "relationIds": [
       "REL2-d2669b3b21d3263a",
       "REL2-6cbc4c2f090d044c"
     ],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-c7ba7b093a1a3b94"
+      ],
       "deployments": [
         "EV-cafe435ddd007821"
       ],
@@ -62,6 +65,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c7ba7b093a1a3b94",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "日企 Noetra 获超 3800 亿日元政府资金，称是日本 AI 突围最后机会",
+        "displayTags": [],
+        "entityIds": [
+          "EN-0f3360879e746531"
+        ]
+      },
       {
         "id": "EV-e4fec8a00b416d12",
         "dataDate": "2026-07-19",
@@ -292,6 +310,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-c3f617e75d303f59",
         "EV-b4f69c41e23c7ce0",
         "EV-11b2293769081d4c",
         "EV-883d3b5f6d30eb48",
@@ -318,6 +337,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-18df881cc436b3cb",
+        "EV-828698c8779bb522",
         "EV-2fea1664807824ce",
         "EV-3ba971c5939b0f04",
         "EV-cb3a8846bc4f8aca",
@@ -375,6 +396,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-89bdda008227fb6b",
+        "EV-89f9216de5b559ac",
         "EV-c14e5185fd6bbe30",
         "EV-08f736f61f2b46f3",
         "EV-2c7d13d234147817",
@@ -406,11 +429,14 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-distillation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
         "EN-52c2f30b6bda5898",
         "EN-1e71d9c1a5c4de16",
@@ -438,7 +464,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     }
   ],
   "relationships": [
@@ -678,6 +704,7 @@
         "EV-57597c92f7b183a9",
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
+        "EV-7fad565c9ffab4b0",
         "EV-322796d9761a0824",
         "EV-14b44a40808340f5",
         "EV-edb1ddb3a091ada4"
@@ -729,6 +756,7 @@
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
         "EN-9dde0c2d375060f6",
+        "EN-b21a23767d4d35a9",
         "EN-ea3bd73e2b506e00",
         "EN-a19ad969c84178e9",
         "EN-b6e23938808f272d"
@@ -744,7 +772,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-use_case-robotics_automation",
@@ -761,6 +789,7 @@
         "EV-e7b228c1b6b54c6a",
         "EV-57d3b7aa1a2f0fda",
         "EV-234ad54940674bf6",
+        "EV-5a9fe80f8e4ae066",
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
@@ -806,6 +835,7 @@
         "EN-3b39ea849059759f",
         "EN-bbdefa2950f49882",
         "EN-3cce50ffb12f1a69",
+        "EN-7c5d04104b1d34e7",
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
@@ -868,7 +898,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-embodied_ai",

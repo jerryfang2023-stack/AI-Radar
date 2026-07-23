@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-eb732565c71e6b85",
@@ -71,7 +71,10 @@
       "name": "Moonshot AI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "Kimi",
+        "月之暗面"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -79,6 +82,7 @@
       "eventIds": [
         "EV-5be48cce8dc4f3de",
         "EV-0e4bddfd5c129618",
+        "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
         "EV-0d5a32aca724d30e",
         "EV-26a71ab785014e54",
@@ -105,17 +109,17 @@
         "TX-technology-long_context",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-open_weights",
-        "TX-technology-multimodal"
+        "TX-technology-multimodal",
+        "TX-technology-distillation"
       ],
       "relatedEntityIds": [
         "EN-eb732565c71e6b85",
-        "EN-607964040e4b62e0",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     }
   ],
   "relationships": [

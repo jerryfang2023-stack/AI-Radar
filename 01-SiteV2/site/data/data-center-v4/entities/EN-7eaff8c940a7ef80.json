@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-7eaff8c940a7ef80",
+    "name": "AI Adoption Strategy",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-dac8e2b1fb11403f"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-04-29",
+    "lastSeen": "2026-07-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-dac8e2b1fb11403f"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-dac8e2b1fb11403f",
+        "dataDate": "2026-07-23",
+        "date": "2026-04-29",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 采用策略：从试点到生产的 7 个步骤",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7eaff8c940a7ef80",
+          "EN-b0532e1af75cc4ab"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-10eb591035b26e78",
+      "eventId": "EV-dac8e2b1fb11403f",
+      "dataDate": "2026-07-23",
+      "date": "2026-04-29",
+      "title": "AI 采用策略：从试点到生产的 7 个步骤",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "AI Adoption Strategy",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Production",
+      "reportedNeed": "The gap between 'AI pilot success' and 'enterprise-wide AI adoption' isn't about technology limitations. It's about organizational readiness, cross-departmental coordination, and having the governance foundation to scale AI safely across teams.",
+      "deliveryComponents": [
+        "Align AI initiatives with business goals",
+        "Prioritize high-impact examples",
+        "Build your data foundation",
+        "Choose the right AI technology approach",
+        "Design responsible AI governance from the start",
+        "Redesign workflows around AI",
+        "Invest in people alongside technology"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://monday.com/blog/ai-agents/ai-adoption-strategy",
+      "entityIds": [
+        "EN-7eaff8c940a7ef80",
+        "EN-b0532e1af75cc4ab"
+      ]
+    }
+  ],
+  "hardware": []
+}

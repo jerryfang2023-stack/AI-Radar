@@ -1,0 +1,222 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-062
+title: "SpaceXAI 计划在得州建设大型AI数据中心，对标孟菲斯算力集群"
+title_zh: "SpaceXAI 计划在得州建设大型AI数据中心，对标孟菲斯算力集群"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/980/362.htm"
+canonical_url: "https://ithome.com/0/980/362.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-22T23:34:08.000Z"
+collected_at: 2026-07-23T03:51:33.766Z
+language: mixed
+full_text_hash: 29941c7884453633
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-062-spacexai-计划在得州建设大型ai数据中心-对标孟菲斯算力集群.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-062-spacexai-计划在得州建设大型ai数据中心-对标孟菲斯算力集群.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 62
+extractor_diagnostics: {"readability_score":62,"text_length":1217,"paragraph_count":12,"sentence_count":12,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1217
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"29941c7884453633","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"SpaceXAI 计划在得州建设大型AI数据中心，对标孟菲斯算力集群","discovery_summary":"SpaceXAI 正计划在得州建设新的大型数据中心，规模达到或超过其位于田纳西州的 Colossus 数据中心。该公司运营着拥有数十万颗英伟达最新 AI GPU 的 Colossus 设施，并与谷歌达成协议，提供约 11 万颗 GPU 算力资源，合作至 2029 年，每月带来约 9.2 亿美元收入。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/980/362.htm","discovered_at":"2026-07-23T03:43:25.324Z","rank_on_page":76,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: f59de2fb28368262
+content_hash: 29941c7884453633
+semantic_hash: d4e709882a0541fb
+duplicate_of: ""
+first_seen_at: "2026-07-22T23:34:08.000Z"
+last_seen_at: 2026-07-23T03:51:33.766Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":5,"importance_reason":"market-structure commercial event; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","Anthropic"],"products":[],"people":[],"industries":["金融 / 保险","企业服务"],"roles":[],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["11 万","2029","9.2 亿","7","23","1","150","2"],"quotes":[]}
+evidence_seed: {"company_actions":["IT之家 7 月 23 日消息，随着收购 xAI 后进一步加码 AI 领域，SpaceX 正加大对算力基础设施的投入，同时继续推进其太空计算数据中心计划。","据 The Information 昨日报道，SpaceX 正准备建设大规模地面数据中心，以扩大其自身算力。","SpaceX 此前还公布了名为 AI1 的“AI 卫星”计划。"],"case_details":["SpaceX 在筹备 IPO 时，曾将自身定位为具备建设计算设施能力的数据中心企业，并提出未来在太空部署计算基础设施的设想。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"number","text":"SpaceXAI 正计划在得州建设新的大型数据中心，规模达到或超过其位于田纳西州的 Colossus 数据中心。该公司运营着拥有数十万颗英伟达最新 AI GPU 的 Colossus 设施，并与谷歌达成协议，提供约 11 万颗 GPU 算力资源，合作至 2029 年，每月带来约 9.2 亿美元收入。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 23 日消息，随着收购 xAI 后进一步加码 AI 领域，SpaceX 正加大对算力基础设施的投入，同时继续推进其太空计算数据中心计划。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"据 The Information 昨日报道，SpaceX 正准备建设大规模地面数据中心，以扩大其自身算力。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"SpaceX 在筹备 IPO 时，曾将自身定位为具备建设计算设施能力的数据中心企业，并提出未来在太空部署计算基础设施的设想。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"SpaceX 此前还公布了名为 AI1 的“AI 卫星”计划。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该卫星最高可提供 150 千瓦计算负载能力，相关设备将在 SpaceX 位于得州的新 Gigasat 工厂生产。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-23T03:51:33.766Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# SpaceXAI 计划在得州建设大型AI数据中心，对标孟菲斯算力集群
+
+## clean_text
+
+IT之家 7 月 23 日消息，随着收购 xAI 后进一步加码 AI 领域，SpaceX 正加大对算力基础设施的投入，同时继续推进其太空计算数据中心计划。据 The Information 昨日报道，SpaceX 正准备建设大规模地面数据中心，以扩大其自身算力。
+SpaceX 在筹备 IPO 时，曾将自身定位为具备建设计算设施能力的数据中心企业，并提出未来在太空部署计算基础设施的设想。
+SpaceX 此前还公布了名为 AI1 的“AI 卫星”计划。该卫星最高可提供 150 千瓦计算负载能力，相关设备将在 SpaceX 位于得州的新 Gigasat 工厂生产。
+今年 2 月，SpaceX 收购埃隆 · 马斯克旗下人工智能初创公司 xAI 后，双方业务进一步整合，新成立的 SpaceXAI 开始同时涉足航天、卫星互联网以及 AI 软件和算力服务领域。
+目前，SpaceXAI 运营位于美国田纳西州的 Colossus 数据中心，并拥有数十万颗英伟达最新 AI GPU 资源。该公司还与 Anthropic、谷歌以及 Reflection AI 等人工智能企业达成算力供应协议。
+其中，SpaceXAI 与谷歌达成的合作协议包括向谷歌提供约 11 万颗 GPU 算力资源，合作期限持续至 2029 年。据报道，该协议每月可为 SpaceXAI 带来约 9.2 亿美元（IT之家注：现汇率约合 62.35 亿元人民币）收入。与此同时，Anthropic 可使用 Colossus 1 数据中心的全部算力资源。
+The Information 报道称，SpaceXAI 正考虑进一步扩大数据中心规模，并计划在公司总部所在地得州建设新的大型数据中心。目前，该公司已经考察多个建设地点，并考虑从零开始建设多个设施。知情人士称，SpaceXAI 希望在得州建设的数据中心规模达到或超过其位于田纳西州的算力设施。
+SpaceXAI 扩大地面算力布局之际，公司股票市场表现面临压力。今年完成首次公开募股后，SpaceX 受到市场关注。投资银行摩根士丹利此前发布报告称，未来轨道计算可能具备成本优势。
+摩根士丹利预测，到 2031 年，SpaceX 在轨计算成本可能达到每瓦 6.5 美元，低于采用英伟达 Blackwell AI 芯片的地面数据中心约每瓦 6.8 美元的成本。
+除了地面数据中心外，SpaceX 仍在推进太空 AI 计算基础设施计划。随着星舰持续测试，SpaceX 已向美国联邦通信委员会（FCC）申请批准部署最多 100 万颗具备轨道计算能力的卫星。
+SpaceX 计划利用太空中的太阳能资源，为 AI 计算提供持续算力支持，以应对人工智能模型训练和推理不断增长的计算需求。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 23 日消息，随着收购 xAI 后进一步加码 AI 领域，SpaceX 正加大对算力基础设施的投入，同时继续推进其太空计算数据中心计划。据 The Information 昨日报道，SpaceX 正准备建设大规模地面数据中心，以扩大其自身算力。
+SpaceX 在筹备 IPO 时，曾将自身定位为具备建设计算设施能力的数据中心企业，并提出未来在太空部署计算基础设施的设想。
+SpaceX 此前还公布了名为 AI1 的“AI 卫星”计划。该卫星最高可提供 150 千瓦计算负载能力，相关设备将在 SpaceX 位于得州的新 Gigasat 工厂生产。
+今年 2 月，SpaceX 收购埃隆 · 马斯克旗下人工智能初创公司 xAI 后，双方业务进一步整合，新成立的 SpaceXAI 开始同时涉足航天、卫星互联网以及 AI 软件和算力服务领域。
+目前，SpaceXAI 运营位于美国田纳西州的 Colossus 数据中心，并拥有数十万颗英伟达最新 AI GPU 资源。该公司还与 Anthropic、谷歌以及 Reflection AI 等人工智能企业达成算力供应协议。
+其中，SpaceXAI 与谷歌达成的合作协议包括向谷歌提供约 11 万颗 GPU 算力资源，合作期限持续至 2029 年。据报道，该协议每月可为 SpaceXAI 带来约 9.2 亿美元（IT之家注：现汇率约合 62.35 亿元人民币）收入。与此同时，Anthropic 可使用 Colossus 1 数据中心的全部算力资源。
+The Information 报道称，SpaceXAI 正考虑进一步扩大数据中心规模，并计划在公司总部所在地得州建设新的大型数据中心。目前，该公司已经考察多个建设地点，并考虑从零开始建设多个设施。知情人士称，SpaceXAI 希望在得州建设的数据中心规模达到或超过其位于田纳西州的算力设施。
+SpaceXAI 扩大地面算力布局之际，公司股票市场表现面临压力。今年完成首次公开募股后，SpaceX 受到市场关注。投资银行摩根士丹利此前发布报告称，未来轨道计算可能具备成本优势。
+摩根士丹利预测，到 2031 年，SpaceX 在轨计算成本可能达到每瓦 6.5 美元，低于采用英伟达 Blackwell AI 芯片的地面数据中心约每瓦 6.8 美元的成本。
+除了地面数据中心外，SpaceX 仍在推进太空 AI 计算基础设施计划。随着星舰持续测试，SpaceX 已向美国联邦通信委员会（FCC）申请批准部署最多 100 万颗具备轨道计算能力的卫星。
+SpaceX 计划利用太空中的太阳能资源，为 AI 计算提供持续算力支持，以应对人工智能模型训练和推理不断增长的计算需求。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 62
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":62,"text_length":1217,"paragraph_count":12,"sentence_count":12,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   SpaceXAI 正计划在得州建设新的大型数据中心，规模达到或超过其位于田纳西州的 Colossus 数据中心。该公司运营着拥有数十万颗英伟达最新 AI GPU 的 Colossus 设施，并与谷歌达成协议，提供约 11 万颗 GPU 算力资源，合作至 2029 年，每月带来约 9.2 亿美元收入。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家 7 月 23 日消息，随着收购 xAI 后进一步加码 AI 领域，SpaceX 正加大对算力基础设施的投入，同时继续推进其太空计算数据中心计划。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   据 The Information 昨日报道，SpaceX 正准备建设大规模地面数据中心，以扩大其自身算力。
+
+4. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   SpaceX 在筹备 IPO 时，曾将自身定位为具备建设计算设施能力的数据中心企业，并提出未来在太空部署计算基础设施的设想。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   SpaceX 此前还公布了名为 AI1 的“AI 卫星”计划。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   该卫星最高可提供 150 千瓦计算负载能力，相关设备将在 SpaceX 位于得州的新 Gigasat 工厂生产。
+
+## business_elements
+
+- companies: IT之家（RSS）, Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 金融 / 保险, 企业服务
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 11 万, 2029, 9.2 亿, 7, 23, 1, 150, 2
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: IT之家 7 月 23 日消息，随着收购 xAI 后进一步加码 AI 领域，SpaceX 正加大对算力基础设施的投入，同时继续推进其太空计算数据中心计划。 / 据 The Information 昨日报道，SpaceX 正准备建设大规模地面数据中心，以扩大其自身算力。 / SpaceX 此前还公布了名为 AI1 的“AI 卫星”计划。
+- case_details: SpaceX 在筹备 IPO 时，曾将自身定位为具备建设计算设施能力的数据中心企业，并提出未来在太空部署计算基础设施的设想。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 5
+- importance_reason: market-structure commercial event; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"SpaceXAI 计划在得州建设大型AI数据中心，对标孟菲斯算力集群","discovery_summary":"SpaceXAI 正计划在得州建设新的大型数据中心，规模达到或超过其位于田纳西州的 Colossus 数据中心。该公司运营着拥有数十万颗英伟达最新 AI GPU 的 Colossus 设施，并与谷歌达成协议，提供约 11 万颗 GPU 算力资源，合作至 2029 年，每月带来约 9.2 亿美元收入。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/980/362.htm","discovered_at":"2026-07-23T03:43:25.324Z","rank_on_page":76,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+SpaceXAI 正计划在得州建设新的大型数据中心，规模达到或超过其位于田纳西州的 Colossus 数据中心。该公司运营着拥有数十万颗英伟达最新 AI GPU 的 Colossus 设施，并与谷歌达成协议，提供约 11 万颗 GPU 算力资源，合作至 2029 年，每月带来约 9.2 亿美元收入。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

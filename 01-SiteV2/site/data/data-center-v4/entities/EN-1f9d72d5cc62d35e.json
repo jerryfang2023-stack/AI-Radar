@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-1f9d72d5cc62d35e",
+    "name": "Router",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3e5da88ce004fcf3"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-46a4eebd20d881ec"
+    ],
+    "firstSeen": "2026-07-23",
+    "lastSeen": "2026-07-23",
+    "relationIds": [
+      "REL2-972af455b2c6f47f"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-3e5da88ce004fcf3"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3e5da88ce004fcf3",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-23",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Cursor 发布 Cursor Router：请求级分类器，以 30-50% 更低成本实现前沿编码质量",
+        "displayTags": [],
+        "entityIds": [
+          "EN-46a4eebd20d881ec",
+          "EN-6fcba5d96a4fadfd",
+          "EN-1f9d72d5cc62d35e"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-46a4eebd20d881ec",
+      "name": "Cursor",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3e5da88ce004fcf3",
+        "EV-c3babb7738875383",
+        "EV-6756a2af0058318f",
+        "EV-cd3d3a11153c7070",
+        "EV-773ffcc6e1df56fa",
+        "EV-9aa7db5373967d8f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-1f9d72d5cc62d35e"
+      ],
+      "firstSeen": "2026-05-19",
+      "lastSeen": "2026-07-23"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-972af455b2c6f47f",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-46a4eebd20d881ec",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1f9d72d5cc62d35e",
+      "object_type": "entity",
+      "event_id": "EV-3e5da88ce004fcf3",
+      "claim_refs": [
+        "CL-0a0a652be7d568e9",
+        "CL-9794e466b1dbb4f9",
+        "CL-b97835c526656871",
+        "CL-44753af41b8c40bc"
+      ],
+      "source_refs": [
+        "SA-841b91de97897a67"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

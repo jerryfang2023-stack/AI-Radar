@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-a9776b12a97fe2d9",
+    "name": "Anthropic will",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-c3f617e75d303f59"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-23",
+    "lastSeen": "2026-07-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-c3f617e75d303f59"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-c3f617e75d303f59",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-23",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Anthropic 将部署 2 吉瓦 AMD GPU 用于 Claude，交易价值高达 50 亿美元",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "entityIds": [
+          "EN-a9776b12a97fe2d9",
+          "EN-c70eca6b0f88f44d",
+          "EN-ea3bd73e2b506e00",
+          "EN-7d3194f79e645c42",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-7c91d6528b08a2f0",
+      "eventId": "EV-c3f617e75d303f59",
+      "dataDate": "2026-07-23",
+      "date": "2026-07-23",
+      "title": "Anthropic 将部署 2 吉瓦 AMD GPU 用于 Claude，交易价值高达 50 亿美元",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "Anthropic will",
+      "processNode": "未披露",
+      "capacity": 450,
+      "capacityUnit": "GPUs",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/anthropic-will-deploy-2-gigawatts-of-amd-gpus-for-claude-in-a-deal-worth-up-to-5-billion",
+      "sourceName": "The Decoder AI News",
+      "sourceDate": "2026-07-23",
+      "entityIds": [
+        "EN-a9776b12a97fe2d9",
+        "EN-c70eca6b0f88f44d",
+        "EN-ea3bd73e2b506e00",
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
+}

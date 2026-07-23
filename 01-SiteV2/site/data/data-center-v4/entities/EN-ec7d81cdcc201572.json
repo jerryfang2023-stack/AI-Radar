@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-ec7d81cdcc201572",
+    "name": "英伟达黄仁勋",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-18df881cc436b3cb"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-distillation"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-22",
+    "lastSeen": "2026-07-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-18df881cc436b3cb"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-18df881cc436b3cb",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英伟达黄仁勋：美国无需害怕中国开源 AI 模型，应警惕国内\"封禁\"呼声",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "distillation",
+            "name": "模型蒸馏"
+          }
+        ],
+        "entityIds": [
+          "EN-ec7d81cdcc201572",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-distillation",
+      "name": "模型蒸馏",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "distillation",
+      "eventIds": [
+        "EV-0d5a32aca724d30e",
+        "EV-18df881cc436b3cb",
+        "EV-b920999c64aa9ef6",
+        "EV-d2c370511e9e55fe"
+      ],
+      "entityIds": [
+        "EN-16dc8ea1cf4807b0",
+        "EN-b5251b35f15bedc4",
+        "EN-047364b9be67f665",
+        "EN-cbc62794911ff31b",
+        "EN-10a27c6240d18dbe",
+        "EN-e6ac424c9ea83939",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-607964040e4b62e0",
+        "EN-ec7d81cdcc201572",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-cb4754c48f8023d0"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-23"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

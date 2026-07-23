@@ -1,0 +1,300 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-115
+title: "This startup wants to make enterprise software look more ..."
+title_zh: "这家初创公司希望让企业软件看起来更……"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://techcrunch.com/2026/03/18/this-startup-wants-to-make-enterprise-software-look-more-like-a-prompt/"
+canonical_url: "https://techcrunch.com/2026/03/18/this-startup-wants-to-make-enterprise-software-look-more-like-a-prompt"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_market_trend"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: "2026-03-18T00:00:00.000Z"
+collected_at: 2026-07-23T03:51:56.963Z
+language: mixed
+full_text_hash: 23db0e299dc650b5
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-115-this-startup-wants-to-make-enterprise-software-look-more.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-115-this-startup-wants-to-make-enterprise-software-look-more.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":7150,"paragraph_count":34,"sentence_count":43,"boilerplate_hits":1,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 7150
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"23db0e299dc650b5","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 8102a0833a31bffe
+content_hash: 23db0e299dc650b5
+semantic_hash: 2d0cc216f53e190d
+duplicate_of: ""
+first_seen_at: "2026-03-18T00:00:00.000Z"
+last_seen_at: 2026-07-23T03:51:56.963Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","ai_hardware_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Anthropic","Google","Nvidia","Salesforce"],"products":["agents","Gemini"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["9","00","18","2026","$12 million","$100 million","$180 million","95%"],"quotes":["Software is dead,","founder-market fit.","We see enormous potential for Eragon to become the connective tissue for how modern teams operate and make decisions,","the best applied AI for enterprise in the market.","Most of the data we have needs to remain secure and behind our own cloud,"]}
+evidence_seed: {"company_actions":["This startup wants to make enterprise software look more like a prompt | TechCrunch Image Credits:Eragon AI Copy Share Link # This startup wants to make enterprise software look more like a prompt Tim Fernholz 9:00 AM PDT · March 18, 2026 Copy Share Link Every new technology creates a new en... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt","Image Credits: Eragon AI This startup wants to make enterprise software look more like a prompt Tim Fernholz 9:00 AM PDT · March 18, 2026 Every new technology creates a new environment in which we work, but it’s not clear how AI will do that.","One possibility is that the interface disappears entirely."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"This startup wants to make enterprise software look more like a prompt | TechCrunch Image Credits:Eragon AI Copy Share Link # This startup wants to make enterprise software look more like a prompt Tim Fernholz 9:00 AM PDT · March 18, 2026 Copy Share Link Every new technology creates a new en... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: Eragon AI This startup wants to make enterprise software look more like a prompt Tim Fernholz 9:00 AM PDT · March 18, 2026 Every new technology creates a new environment in which we work, but it’s not clear how AI will do that.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"One possibility is that the interface disappears entirely.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"funding","text":"That’s the vision of Josh Sirota, who founded the startup Eragon back in August and has just raised $12 million at a $100 million post-money valuation to build an agentic AI operating system for enterprise customers.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"quote","text":"There’s a simple thesis: “Software is dead,” Sirota says.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Buttons and dialog boxes and pull-down menus are a thing of the past, and future business will be done by prompt.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-23T03:51:56.963Z
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# This startup wants to make enterprise software look more ...
+
+## clean_text
+
+Image Credits: Eragon
+AI
+This startup wants to make enterprise software look more like a prompt
+Tim Fernholz
+9:00 AM PDT · March 18, 2026
+Every new technology creates a new environment in which we work, but it’s not clear how AI will do that. One possibility is that the interface disappears entirely.
+That’s the vision of Josh Sirota, who founded the startup Eragon back in August and has just raised $12 million at a $100 million post-money valuation to build an agentic AI operating system for enterprise customers.
+There’s a simple thesis: “Software is dead,” Sirota says. Buttons and dialog boxes and pull-down menus are a thing of the past, and future business will be done by prompt. Eragon is attempting to offer the whole suite of business software — your Salesforces, Snowflakes, Tableaus, and Jiras — through an LLM interface.
+Sirota, who worked on go-to-market teams at Oracle and Salesforce, admits to suffering a bit of a quarter-life crisis in the lead-up to moving to San Francisco and launching Eragon with a small team from a live-work loft across the street from the Giants’ baseball park. On a recent, sunny Wednesday, the dining room table sports a bottle of Moët, several Mac minis, and a copy of the book Eragon, the Christopher Paolini fantasy novel that gave the company its name — in the tradition of Palantir and Anduril, which also borrowed from fictional worlds.
+Sirota’s experience implementing the world’s premier corporate software convinced investors of his “founder-market fit.” His backers include Arielle Zuckerberg at Long Journey Ventures, Soma Capital, Axiom Partners, and strategic angels Mike Knoop and Elias Torres.
+“We see enormous potential for Eragon to become the connective tissue for how modern teams operate and make decisions,” Axiom’s Sandhya Venkatachalam said. Eragon’s technical talent includes Rishabh Tiwari, a Berkeley computer science PhD student, and Vin Agarwal, an MIT PhD; together, they’re building out the company’s tech stack.
+At Eragon’s customer center of excellence — a battered white sofa — Sirota shows how the company eats its own dog food. Eragon post-trains open source models like Qwen and Kimi on customer datasets, and links to company email accounts and other resources. When Sirota wants bring on a new customer — he demonstrates with Dedalus Labs, which is adopting the tool this week — he asks in a natural language prompt, and the software automatically assigns each new user credentials, spins up a new Eragon instance in the cloud, and begins an onboarding workflow.
+Sirota expects Eragon to be the software executives ask for analysis on what deals might slip, or for steps to take to improve supply chain lead times, then assign agents to take action. Want a dashboard? Just ask Eragon to spin one up.
+The demo is compelling, but it’s easy to imagine edge queries that baffle the software, or hard-to-audit failures. Sirota even uses Eragon to demonstrate automatic invoice approval — the system processes invoices as they arrive in his own inbox — which prompted this reporter to consider submitting one, just to see what would happen. (Reader, I did not.)
+The security concerns raised by AI agents are big, but for now the company is trying to work out the kinks in real workplaces; Eragon is now in use in a handful of large businesses and dozens of startups. Nico Laqua, the CEO of Corgi, an insurance startup that raised $180 million after emerging from Y Combinator last year, called Eragon “the best applied AI for enterprise in the market.”
+“Most of the data we have needs to remain secure and behind our own cloud,” Laqua said. “Eragon trains state-of-the-art models for us on our data and deploys it in our own environment.”
+That’s central to Eragon’s pitch: A company’s data stays within its own servers and security environment, and it owns its own model weights — the underlying parameters that define how an AI behaves. Sirota expects models trained on years or decades of corporate data will become valuable assets in themselves. And while frontier labs may have the most capable models, as long as companies must access them via API and without owning their configurations, Sirota believes Eragon will have an advantage in the marketplace.
+He compares the evolution of AI software to the transition from mainframes to the personal computer: Frontier labs offer powerful, centralized services, but mass corporate adoption will depend on local tools for bespoke purposes. Companies will need agents and models for their specific purposes and will want to control them.
+A few days later, Nvidia CEO Jensen Huang offers a similar take at GTC, Nvidia’s annual developer conference, arguing that agentic AI tools for enterprise will replace our existing approach to white-collar work: “It is no different than how Windows made it possible for us to create personal computers…every single SaaS company will become Agentic-as-a-Service.”
+Huang’s comments pertain to Nvidia’s new initiative, NemoClaw , which aims to make it easier for OpenClaw agents to work within secure enterprise systems. It’s a sign both that Sirota is on to something — and that the competition from everyone from frontier labs to model wrappers will be fierce.
+Sirota is undaunted, saying he expects Eragon to be a billion-dollar company by the end of the year. He knows the oft-cited MIT figure that 95% of AI corporate trials fail to catch on, but he jokes that it’s because senior executives don’t know what their employees do all day. Eragon aims to give them something they can really work with.
+Topics
+AI , enterprise software , Eragon , Exclusive , Startups
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Tim Fernholz
+Senior Reporter
+Tim Fernholz is a journalist who writes about technology, finance and public policy. He has closely covered the rise of the private space industry and is the author of Rocket Billionaires: Elon Musk, Jeff Bezos and the New Space Race. Formerly, he was a senior reporter at Quartz, the global business news site, for more than a decade, and began his career as a political reporter in Washington, D.C.
+You can contact or verify outreach from Tim by emailing tim.fernholz@techcrunch.com or via an encrypted message to tim_fernholz.21 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Anthropic’s landmark $1.5B copyright settlement is approved
+Kirsten Korosec
+Google is working on a new AI chip designed to make Gemini more efficient
+Lucas Ropek
+X relaunches a rebuilt Android app after year-long effort
+Sarah Perez
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Eragon
+AI
+This startup wants to make enterprise software look more like a prompt
+Tim Fernholz
+9:00 AM PDT · March 18, 2026
+Every new technology creates a new environment in which we work, but it’s not clear how AI will do that. One possibility is that the interface disappears entirely.
+That’s the vision of Josh Sirota, who founded the startup Eragon back in August and has just raised $12 million at a $100 million post-money valuation to build an agentic AI operating system for enterprise customers.
+There’s a simple thesis: “Software is dead,” Sirota says. Buttons and dialog boxes and pull-down menus are a thing of the past, and future business will be done by prompt. Eragon is attempting to offer the whole suite of business software — your Salesforces, Snowflakes, Tableaus, and Jiras — through an LLM interface.
+Sirota, who worked on go-to-market teams at Oracle and Salesforce, admits to suffering a bit of a quarter-life crisis in the lead-up to moving to San Francisco and launching Eragon with a small team from a live-work loft across the street from the Giants’ baseball park. On a recent, sunny Wednesday, the dining room table sports a bottle of Moët, several Mac minis, and a copy of the book Eragon, the Christopher Paolini fantasy novel that gave the company its name — in the tradition of Palantir and Anduril, which also borrowed from fictional worlds.
+Sirota’s experience implementing the world’s premier corporate software convinced investors of his “founder-market fit.” His backers include Arielle Zuckerberg at Long Journey Ventures, Soma Capital, Axiom Partners, and strategic angels Mike Knoop and Elias Torres.
+“We see enormous potential for Eragon to become the connective tissue for how modern teams operate and make decisions,” Axiom’s Sandhya Venkatachalam said. Eragon’s technical talent includes Rishabh Tiwari, a Berkeley computer science PhD student, and Vin Agarwal, an MIT PhD; together, they’re building out the company’s tech stack.
+At Eragon’s customer center of excellence — a battered white sofa — Sirota shows how the company eats its own dog food. Eragon post-trains open source models like Qwen and Kimi on customer datasets, and links to company email accounts and other resources. When Sirota wants bring on a new customer — he demonstrates with Dedalus Labs, which is adopting the tool this week — he asks in a natural language prompt, and the software automatically assigns each new user credentials, spins up a new Eragon instance in the cloud, and begins an onboarding workflow.
+Sirota expects Eragon to be the software executives ask for analysis on what deals might slip, or for steps to take to improve supply chain lead times, then assign agents to take action. Want a dashboard? Just ask Eragon to spin one up.
+The demo is compelling, but it’s easy to imagine edge queries that baffle the software, or hard-to-audit failures. Sirota even uses Eragon to demonstrate automatic invoice approval — the system processes invoices as they arrive in his own inbox — which prompted this reporter to consider submitting one, just to see what would happen. (Reader, I did not.)
+The security concerns raised by AI agents are big, but for now the company is trying to work out the kinks in real workplaces; Eragon is now in use in a handful of large businesses and dozens of startups. Nico Laqua, the CEO of Corgi, an insurance startup that raised $180 million after emerging from Y Combinator last year, called Eragon “the best applied AI for enterprise in the market.”
+“Most of the data we have needs to remain secure and behind our own cloud,” Laqua said. “Eragon trains state-of-the-art models for us on our data and deploys it in our own environment.”
+That’s central to Eragon’s pitch: A company’s data stays within its own servers and security environment, and it owns its own model weights — the underlying parameters that define how an AI behaves. Sirota expects models trained on years or decades of corporate data will become valuable assets in themselves. And while frontier labs may have the most capable models, as long as companies must access them via API and without owning their configurations, Sirota believes Eragon will have an advantage in the marketplace.
+He compares the evolution of AI software to the transition from mainframes to the personal computer: Frontier labs offer powerful, centralized services, but mass corporate adoption will depend on local tools for bespoke purposes. Companies will need agents and models for their specific purposes and will want to control them.
+A few days later, Nvidia CEO Jensen Huang offers a similar take at GTC, Nvidia’s annual developer conference, arguing that agentic AI tools for enterprise will replace our existing approach to white-collar work: “It is no different than how Windows made it possible for us to create personal computers…every single SaaS company will become Agentic-as-a-Service.”
+Huang’s comments pertain to Nvidia’s new initiative, NemoClaw , which aims to make it easier for OpenClaw agents to work within secure enterprise systems. It’s a sign both that Sirota is on to something — and that the competition from everyone from frontier labs to model wrappers will be fierce.
+Sirota is undaunted, saying he expects Eragon to be a billion-dollar company by the end of the year. He knows the oft-cited MIT figure that 95% of AI corporate trials fail to catch on, but he jokes that it’s because senior executives don’t know what their employees do all day. Eragon aims to give them something they can really work with.
+Topics
+AI , enterprise software , Eragon , Exclusive , Startups
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Tim Fernholz
+Senior Reporter
+Tim Fernholz is a journalist who writes about technology, finance and public policy. He has closely covered the rise of the private space industry and is the author of Rocket Billionaires: Elon Musk, Jeff Bezos and the New Space Race. Formerly, he was a senior reporter at Quartz, the global business news site, for more than a decade, and began his career as a political reporter in Washington, D.C.
+You can contact or verify outreach from Tim by emailing tim.fernholz@techcrunch.com or via an encrypted message to tim_fernholz.21 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Anthropic’s landmark $1.5B copyright settlement is approved
+Kirsten Korosec
+Google is working on a new AI chip designed to make Gemini more efficient
+Lucas Ropek
+X relaunches a rebuilt Android app after year-long effort
+Sarah Perez
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 94
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":7150,"paragraph_count":34,"sentence_count":43,"boilerplate_hits":1,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   This startup wants to make enterprise software look more like a prompt | TechCrunch Image Credits:Eragon AI Copy Share Link # This startup wants to make enterprise software look more like a prompt Tim Fernholz 9:00 AM PDT · March 18, 2026 Copy Share Link Every new technology creates a new en... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Image Credits: Eragon AI This startup wants to make enterprise software look more like a prompt Tim Fernholz 9:00 AM PDT · March 18, 2026 Every new technology creates a new environment in which we work, but it’s not clear how AI will do that.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   One possibility is that the interface disappears entirely.
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   That’s the vision of Josh Sirota, who founded the startup Eragon back in August and has just raised $12 million at a $100 million post-money valuation to build an agentic AI operating system for enterprise customers.
+
+5. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   There’s a simple thesis: “Software is dead,” Sirota says.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Buttons and dialog boxes and pull-down menus are a thing of the past, and future business will be done by prompt.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Anthropic, Google, Nvidia, Salesforce
+- products: agents, Gemini
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 9, 00, 18, 2026, $12 million, $100 million, $180 million, 95%
+- quotes: Software is dead, / founder-market fit. / We see enormous potential for Eragon to become the connective tissue for how modern teams operate and make decisions, / the best applied AI for enterprise in the market. / Most of the data we have needs to remain secure and behind our own cloud,
+
+## evidence_seed
+
+- company_actions: This startup wants to make enterprise software look more like a prompt | TechCrunch Image Credits:Eragon AI Copy Share Link # This startup wants to make enterprise software look more like a prompt Tim Fernholz 9:00 AM PDT · March 18, 2026 Copy Share Link Every new technology creates a new en... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt / Image Credits: Eragon AI This startup wants to make enterprise software look more like a prompt Tim Fernholz 9:00 AM PDT · March 18, 2026 Every new technology creates a new environment in which we work, but it’s not clear how AI will do that. / One possibility is that the interface disappears entirely.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,ai_hardware_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+This startup wants to make enterprise software look more like a prompt | TechCrunch Image Credits:Eragon AI Copy Share Link # This startup wants to make enterprise software look more like a prompt Tim Fernholz 9:00 AM PDT · March 18, 2026 Copy Share Link Every new technology creates a new en... / query=AI implementation startup funding enterprise workflow / intent=find_market_trend / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

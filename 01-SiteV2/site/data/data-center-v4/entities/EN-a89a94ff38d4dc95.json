@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-a89a94ff38d4dc95",
+    "name": "Duos Edge AI",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-a67071a8550cb1be"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-08",
+    "lastSeen": "2026-07-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-a67071a8550cb1be"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-a67071a8550cb1be",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-08",
+        "eventType": "hardware_capacity",
+        "eventTypeLabel": "硬件产能",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Duos Edge AI 将向 Nistar 提供 2MW 数据中心容量",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          }
+        ],
+        "entityIds": [
+          "EN-a89a94ff38d4dc95"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-9a39a7f449362f96",
+      "eventId": "EV-a67071a8550cb1be",
+      "dataDate": "2026-07-23",
+      "date": "2026-07-08",
+      "title": "Duos Edge AI 将向 Nistar 提供 2MW 数据中心容量",
+      "hardwareType": "data_center",
+      "eventType": "hardware_capacity",
+      "eventTypeLabel": "硬件产能",
+      "computeLayer": "edge",
+      "supplier": "Duos Edge AI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 2,
+      "capacityUnit": "MW",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://datacenterdynamics.com/en/news/duos-edge-ai-to-provide-2mw-of-data-center-capacity-to-nistar",
+      "sourceName": "datacenterdynamics.com",
+      "sourceDate": "2026-07-08",
+      "entityIds": [
+        "EN-a89a94ff38d4dc95"
+      ]
+    }
+  ]
+}

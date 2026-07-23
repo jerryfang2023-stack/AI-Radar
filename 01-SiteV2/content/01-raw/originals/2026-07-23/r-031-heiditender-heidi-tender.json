@@ -1,0 +1,286 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-031",
+  "title": "heiditender/Heidi-Tender",
+  "title_zh": "GitHub 仓库：heiditender/Heidi-Tender",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://github.com/heiditender/Heidi-Tender",
+  "canonical_url": "https://github.com/heiditender/Heidi-Tender",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "procurement_marketplace",
+  "search_path_label": "采购 / 招投标 / Marketplace 路径",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-23T03:51:14.936Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nheiditender\nHeidi-Tender\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n25 Commits\n25 Commits\nassets\nassets\ndeploy\ndeploy\ndocs\ndocs\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.dockerignore\n.dockerignore\n.env.prod.example\n.env.prod.example\n.gitignore\n.gitignore\nAbuse Message 115F9BB1A.txt\nAbuse Message 115F9BB1A.txt\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nabuse_log.txt\nabuse_log.txt\ndocker-compose.prod.yml\ndocker-compose.prod.yml\ndocker-compose.yml\ndocker-compose.yml\nView all files\nRepository files navigation\nHeidi Tender\nAI-native tender intelligence for procurement teams that need faster decisions, tighter rigor, and explainable supplier matches.\nHeidi Tender transforms dense tender packs into ranked, defensible product recommendations by combining document understanding, governed rules, SQL-backed filtering, and explainable AI scoring.\nWhy Heidi Tender\nProcurement teams spend too much time buried in PDFs, spreadsheets, supplier data, and compliance checks. Heidi Tender brings that work into one auditable flow: extract what matters, apply hard constraints, rank the best candidates, and keep the reasoning visible from start to finish.\nStructured from messy inputs\nUpload tender files, archives, and technical documents, then convert unstructured material into a consistent requirement pipeline.\nGoverned matching logic\nBlend LLM extraction, explicit business rules, and SQL execution against supplier catalog data instead of relying on vague keyword search.\nExplainable outcomes\nProduce shortlist-ready candidates with traceable evidence, fit logic, and operational visibility for more confident bid decisions.\nWhat The Platform Does\nIngests tender packs and supporting files through a web workflow\nExtracts requirements and procurement signals from unstructured documents\nApplies field rules and hard-versus-soft constraint logic\nGenerates SQL from validated hard requirements and executes it on supplier product views\nRanks surviving candidates using soft constraints and model-assisted reasoning\nStreams job progress, step status, and system events in real time\nCore Product Highlights\n7-step pipeline with explicit contracts across extraction, merge, SQL generation, execution, and ranking\nRule Copilot with human approval so generated rule drafts can be reviewed before publication\nSnapshot-based rule binding to keep running jobs stable even when rules evolve later\nRealtime telemetry through SSE events with polling-friendly frontend behavior\nDocker-first deployment with app services, MySQL catalog bootstrap, and knowledge-base initialization\nArchitecture\nHow Matching Works\nKnowledge-base bootstrap and vector store readiness check\nRequirement extraction from tender files\nExternal field rule determination\nRequirement merge with hardness classification\nSQL generation from hard constraints\nSQL execution against supplier product views\nCandidate ranking using soft constraints\nStack\nNext.js frontend for job orchestration, rule management, and monitoring\nFastAPI backend for APIs, execution control, and streaming events\nPostgreSQL for application state and versioned rule metadata\nMySQL for supplier product data and SQL-backed candidate filtering\nOpenAI models for extraction, reasoning, and ranking stages\nQuickstart\nPrerequisites\nDocker and Docker Compose v2\nOpenAI API key\nConfigure\nCreate a root .env file with at least:\nOPENAI_API_KEY=your_key_here\nOPENAI_MODEL=gpt-5-mini\nRun\ndocker compose up --build\nProduction\nUse the dedicated production stack and deployment guide:\nEnvironment template: .env.prod.example\nProduction Compose file: docker-compose.prod.yml\nFull guide: docs/production-deployment.md\nPublic deployments can enable:\nGoogle OIDC login\nMicrosoft OIDC login\nOptional email magic-link login via Resend\nEndpoints\nFrontend: http://localhost:3000\nBackend API: http://localhost:8000/api/v1\nHealth check: http://localhost:8000/health\nStartup Sequence\nmysql starts and prepares the supplier product database\nmysql-init imports src/prepare/pim.sql when initialization is needed\nmysql-views-init creates or refreshes vw_bid_products and vw_bid_specs\nbackend starts after data services are ready\nfrontend starts and connects to the API\nOperating Model\nJob lifecycle\ncreated -> uploading -> ready -> running -> succeeded | failed\nRealtime monitoring\nGET /api/v1/jobs/{job_id}/events streams step and lifecycle events over SSE\nIncremental event IDs support reconnect flows via Last-Event-ID\nFrontend behavior tolerates disconnects and can fall back to polling\nAPI Surface\nJobs\nPOST /api/v1/jobs\nGET /api/v1/jobs\nPOST /api/v1/jobs/{job_id}/file\nPOST /api/v1/jobs/{job_id}/archive\nPOST /api/v1/jobs/{job_id}/start\nGET /api/v1/jobs/{job_id}\nGET /api/v1/jobs/{job_id}/result\nRules\nGET /api/v1/rules/current\nGET /api/v1/rules/versions\nPOST /api/v1/rules/draft\nPOST /api/v1/rules/generate\nPOST /api/v1/rules/generate/stream\nPOST /api/v1/rules/{version_id}/publish\nSettings and stats\nGET /api/v1/settings/model\nPUT /api/v1/settings/model\nGET /api/v1/stats/dashboard\nAuth\nGET /api/v1/auth/options\nGET /api/v1/auth/login/google\nGET /api/v1/auth/callback/google\nGET /api/v1/auth/login/microsoft\nGET /api/v1/auth/callback/microsoft\nPOST /api/v1/auth/magic-link/request\nGET /api/v1/auth/magic-link/verify\nGET /api/v1/auth/session\nPOST /api/v1/auth/logout\nLocal Development\nBackend\ncd src/web/backend\npython3 -m venv .venv\nsource .venv/bin/activate\npip install -r requirements.txt -r ../../requirements.txt\nuvicorn app.main:app --reload --host 0.0.0.0 --port 8000\nFrontend\ncd src/web/frontend\nnpm install\nnpm run dev\nTesting\npython3 -m pytest tests src/web/backend/tests\nNotes\nThis project currently focuses on Swiss tender workflows and lighting product matching\nThe platform is independent and not affiliated with simap.ch\nAbout\nAI-native tender intelligence for teams that want faster, sharper, and more defensible bid decisions.\nheiditender.ch/\nTopics\nmysql\nnextjs\npostgresql\nopenai\nlighting\nsql-generation\nprocurement\nknowledge-base\nrules-engine\nexplainable-ai\nfastapi\ndocument-ai\nllm\nvector-store\ncatalog-matching\nprocurement-automation\ntender-intelligence\ntender-analysis\nsupplier-matching\nswiss-tenders\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nHeidi Tender 1.1\nLatest\nMar 22, 2026\n+ 1 release\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n55.3%\nTypeScript\n34.8%\nCSS\n7.0%\nShell\n2.1%\nOther\n0.8%",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nheiditender\nHeidi-Tender\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n25 Commits\n25 Commits\nassets\nassets\ndeploy\ndeploy\ndocs\ndocs\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.dockerignore\n.dockerignore\n.env.prod.example\n.env.prod.example\n.gitignore\n.gitignore\nAbuse Message 115F9BB1A.txt\nAbuse Message 115F9BB1A.txt\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nabuse_log.txt\nabuse_log.txt\ndocker-compose.prod.yml\ndocker-compose.prod.yml\ndocker-compose.yml\ndocker-compose.yml\nView all files\nRepository files navigation\nHeidi Tender\nAI-native tender intelligence for procurement teams that need faster decisions, tighter rigor, and explainable supplier matches.\nHeidi Tender transforms dense tender packs into ranked, defensible product recommendations by combining document understanding, governed rules, SQL-backed filtering, and explainable AI scoring.\nWhy Heidi Tender\nProcurement teams spend too much time buried in PDFs, spreadsheets, supplier data, and compliance checks. Heidi Tender brings that work into one auditable flow: extract what matters, apply hard constraints, rank the best candidates, and keep the reasoning visible from start to finish.\nStructured from messy inputs\nUpload tender files, archives, and technical documents, then convert unstructured material into a consistent requirement pipeline.\nGoverned matching logic\nBlend LLM extraction, explicit business rules, and SQL execution against supplier catalog data instead of relying on vague keyword search.\nExplainable outcomes\nProduce shortlist-ready candidates with traceable evidence, fit logic, and operational visibility for more confident bid decisions.\nWhat The Platform Does\nIngests tender packs and supporting files through a web workflow\nExtracts requirements and procurement signals from unstructured documents\nApplies field rules and hard-versus-soft constraint logic\nGenerates SQL from validated hard requirements and executes it on supplier product views\nRanks surviving candidates using soft constraints and model-assisted reasoning\nStreams job progress, step status, and system events in real time\nCore Product Highlights\n7-step pipeline with explicit contracts across extraction, merge, SQL generation, execution, and ranking\nRule Copilot with human approval so generated rule drafts can be reviewed before publication\nSnapshot-based rule binding to keep running jobs stable even when rules evolve later\nRealtime telemetry through SSE events with polling-friendly frontend behavior\nDocker-first deployment with app services, MySQL catalog bootstrap, and knowledge-base initialization\nArchitecture\nHow Matching Works\nKnowledge-base bootstrap and vector store readiness check\nRequirement extraction from tender files\nExternal field rule determination\nRequirement merge with hardness classification\nSQL generation from hard constraints\nSQL execution against supplier product views\nCandidate ranking using soft constraints\nStack\nNext.js frontend for job orchestration, rule management, and monitoring\nFastAPI backend for APIs, execution control, and streaming events\nPostgreSQL for application state and versioned rule metadata\nMySQL for supplier product data and SQL-backed candidate filtering\nOpenAI models for extraction, reasoning, and ranking stages\nQuickstart\nPrerequisites\nDocker and Docker Compose v2\nOpenAI API key\nConfigure\nCreate a root .env file with at least:\nOPENAI_API_KEY=your_key_here\nOPENAI_MODEL=gpt-5-mini\nRun\ndocker compose up --build\nProduction\nUse the dedicated production stack and deployment guide:\nEnvironment template: .env.prod.example\nProduction Compose file: docker-compose.prod.yml\nFull guide: docs/production-deployment.md\nPublic deployments can enable:\nGoogle OIDC login\nMicrosoft OIDC login\nOptional email magic-link login via Resend\nEndpoints\nFrontend: http://localhost:3000\nBackend API: http://localhost:8000/api/v1\nHealth check: http://localhost:8000/health\nStartup Sequence\nmysql starts and prepares the supplier product database\nmysql-init imports src/prepare/pim.sql when initialization is needed\nmysql-views-init creates or refreshes vw_bid_products and vw_bid_specs\nbackend starts after data services are ready\nfrontend starts and connects to the API\nOperating Model\nJob lifecycle\ncreated -> uploading -> ready -> running -> succeeded | failed\nRealtime monitoring\nGET /api/v1/jobs/{job_id}/events streams step and lifecycle events over SSE\nIncremental event IDs support reconnect flows via Last-Event-ID\nFrontend behavior tolerates disconnects and can fall back to polling\nAPI Surface\nJobs\nPOST /api/v1/jobs\nGET /api/v1/jobs\nPOST /api/v1/jobs/{job_id}/file\nPOST /api/v1/jobs/{job_id}/archive\nPOST /api/v1/jobs/{job_id}/start\nGET /api/v1/jobs/{job_id}\nGET /api/v1/jobs/{job_id}/result\nRules\nGET /api/v1/rules/current\nGET /api/v1/rules/versions\nPOST /api/v1/rules/draft\nPOST /api/v1/rules/generate\nPOST /api/v1/rules/generate/stream\nPOST /api/v1/rules/{version_id}/publish\nSettings and stats\nGET /api/v1/settings/model\nPUT /api/v1/settings/model\nGET /api/v1/stats/dashboard\nAuth\nGET /api/v1/auth/options\nGET /api/v1/auth/login/google\nGET /api/v1/auth/callback/google\nGET /api/v1/auth/login/microsoft\nGET /api/v1/auth/callback/microsoft\nPOST /api/v1/auth/magic-link/request\nGET /api/v1/auth/magic-link/verify\nGET /api/v1/auth/session\nPOST /api/v1/auth/logout\nLocal Development\nBackend\ncd src/web/backend\npython3 -m venv .venv\nsource .venv/bin/activate\npip install -r requirements.txt -r ../../requirements.txt\nuvicorn app.main:app --reload --host 0.0.0.0 --port 8000\nFrontend\ncd src/web/frontend\nnpm install\nnpm run dev\nTesting\npython3 -m pytest tests src/web/backend/tests\nNotes\nThis project currently focuses on Swiss tender workflows and lighting product matching\nThe platform is independent and not affiliated with simap.ch\nAbout\nAI-native tender intelligence for teams that want faster, sharper, and more defensible bid decisions.\nheiditender.ch/\nTopics\nmysql\nnextjs\npostgresql\nopenai\nlighting\nsql-generation\nprocurement\nknowledge-base\nrules-engine\nexplainable-ai\nfastapi\ndocument-ai\nllm\nvector-store\ncatalog-matching\nprocurement-automation\ntender-intelligence\ntender-analysis\nsupplier-matching\nswiss-tenders\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nHeidi Tender 1.1\nLatest\nMar 22, 2026\n+ 1 release\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n55.3%\nTypeScript\n34.8%\nCSS\n7.0%\nShell\n2.1%\nOther\n0.8%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-23/r-031-heiditender-heidi-tender.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-23/r-031-heiditender-heidi-tender.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6773,
+    "paragraph_count": 101,
+    "sentence_count": 17,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0058,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6773,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "a4fdfedb5e8f11bc",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "6c4e94ffb77b8d27",
+  "content_hash": "a4fdfedb5e8f11bc",
+  "full_text_hash": "a4fdfedb5e8f11bc",
+  "semantic_hash": "ef12095d38326d16",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-23T03:51:14.936Z",
+  "last_seen_at": "2026-07-23T03:51:14.936Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "# Repository: heiditender/Heidi-Tender AI-native tender intelligence for teams that want faster, sharper, and more defensible bid decisions. - Stars: 0 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: Python - Languages: Python (55.2%), TypeScript (34.8%), CSS (7.0%), Shell (2.1%), Ja..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=procurement_marketplace",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "heiditender Heidi-Tender Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 25 Commits 25 Commits assets assets deploy deploy docs docs scripts scripts src src tests tests .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore Abuse Message 115F9BB1A.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "txt Abuse Message 115F9BB1A.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-23T03:51:14.936Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Google",
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "agent",
+      "Copilot",
+      "gpt-5"
+    ],
+    "people": [],
+    "industries": [
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "采购负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "采购 / 招投标",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "采购",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "0",
+      "55.2%",
+      "34.8%",
+      "7.0%",
+      "2.1%",
+      "25",
+      "115",
+      "9B"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There was an error while loading.",
+      "Please reload this page .",
+      "heiditender Heidi-Tender Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 25 Commits 25 Commits assets assets deploy deploy docs docs scripts scripts src src tests tests ."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "采购负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# heiditender/Heidi-Tender\n\n- raw_id: R-031\n- title_zh: GitHub 仓库：heiditender/Heidi-Tender\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://github.com/heiditender/Heidi-Tender\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-23T03:51:14.936Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nheiditender\nHeidi-Tender\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n25 Commits\n25 Commits\nassets\nassets\ndeploy\ndeploy\ndocs\ndocs\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.dockerignore\n.dockerignore\n.env.prod.example\n.env.prod.example\n.gitignore\n.gitignore\nAbuse Message 115F9BB1A.txt\nAbuse Message 115F9BB1A.txt\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nabuse_log.txt\nabuse_log.txt\ndocker-compose.prod.yml\ndocker-compose.prod.yml\ndocker-compose.yml\ndocker-compose.yml\nView all files\nRepository files navigation\nHeidi Tender\nAI-native tender intelligence for procurement teams that need faster decisions, tighter rigor, and explainable supplier matches.\nHeidi Tender transforms dense tender packs into ranked, defensible product recommendations by combining document understanding, governed rules, SQL-backed filtering, and explainable AI scoring.\nWhy Heidi Tender\nProcurement teams spend too much time buried in PDFs, spreadsheets, supplier data, and compliance checks. Heidi Tender brings that work into one auditable flow: extract what matters, apply hard constraints, rank the best candidates, and keep the reasoning visible from start to finish.\nStructured from messy inputs\nUpload tender files, archives, and technical documents, then convert unstructured material into a consistent requirement pipeline.\nGoverned matching logic\nBlend LLM extraction, explicit business rules, and SQL execution against supplier catalog data instead of relying on vague keyword search.\nExplainable outcomes\nProduce shortlist-ready candidates with traceable evidence, fit logic, and operational visibility for more confident bid decisions.\nWhat The Platform Does\nIngests tender packs and supporting files through a web workflow\nExtracts requirements and procurement signals from unstructured documents\nApplies field rules and hard-versus-soft constraint logic\nGenerates SQL from validated hard requirements and executes it on supplier product views\nRanks surviving candidates using soft constraints and model-assisted reasoning\nStreams job progress, step status, and system events in real time\nCore Product Highlights\n7-step pipeline with explicit contracts across extraction, merge, SQL generation, execution, and ranking\nRule Copilot with human approval so generated rule drafts can be reviewed before publication\nSnapshot-based rule binding to keep running jobs stable even when rules evolve later\nRealtime telemetry through SSE events with polling-friendly frontend behavior\nDocker-first deployment with app services, MySQL catalog bootstrap, and knowledge-base initialization\nArchitecture\nHow Matching Works\nKnowledge-base bootstrap and vector store readiness check\nRequirement extraction from tender files\nExternal field rule determination\nRequirement merge with hardness classification\nSQL generation from hard constraints\nSQL execution against supplier product views\nCandidate ranking using soft constraints\nStack\nNext.js frontend for job orchestration, rule management, and monitoring\nFastAPI backend for APIs, execution control, and streaming events\nPostgreSQL for application state and versioned rule metadata\nMySQL for supplier product data and SQL-backed candidate filtering\nOpenAI models for extraction, reasoning, and ranking stages\nQuickstart\nPrerequisites\nDocker and Docker Compose v2\nOpenAI API key\nConfigure\nCreate a root .env file with at least:\nOPENAI_API_KEY=your_key_here\nOPENAI_MODEL=gpt-5-mini\nRun\ndocker compose up --build\nProduction\nUse the dedicated production stack and deployment guide:\nEnvironment template: .env.prod.example\nProduction Compose file: docker-compose.prod.yml\nFull guide: docs/production-deployment.md\nPublic deployments can enable:\nGoogle OIDC login\nMicrosoft OIDC login\nOptional email magic-link login via Resend\nEndpoints\nFrontend: http://localhost:3000\nBackend API: http://localhost:8000/api/v1\nHealth check: http://localhost:8000/health\nStartup Sequence\nmysql starts and prepares the supplier product database\nmysql-init imports src/prepare/pim.sql when initialization is needed\nmysql-views-init creates or refreshes vw_bid_products and vw_bid_specs\nbackend starts after data services are ready\nfrontend starts and connects to the API\nOperating Model\nJob lifecycle\ncreated -> uploading -> ready -> running -> succeeded | failed\nRealtime monitoring\nGET /api/v1/jobs/{job_id}/events streams step and lifecycle events over SSE\nIncremental event IDs support reconnect flows via Last-Event-ID\nFrontend behavior tolerates disconnects and can fall back to polling\nAPI Surface\nJobs\nPOST /api/v1/jobs\nGET /api/v1/jobs\nPOST /api/v1/jobs/{job_id}/file\nPOST /api/v1/jobs/{job_id}/archive\nPOST /api/v1/jobs/{job_id}/start\nGET /api/v1/jobs/{job_id}\nGET /api/v1/jobs/{job_id}/result\nRules\nGET /api/v1/rules/current\nGET /api/v1/rules/versions\nPOST /api/v1/rules/draft\nPOST /api/v1/rules/generate\nPOST /api/v1/rules/generate/stream\nPOST /api/v1/rules/{version_id}/publish\nSettings and stats\nGET /api/v1/settings/model\nPUT /api/v1/settings/model\nGET /api/v1/stats/dashboard\nAuth\nGET /api/v1/auth/options\nGET /api/v1/auth/login/google\nGET /api/v1/auth/callback/google\nGET /api/v1/auth/login/microsoft\nGET /api/v1/auth/callback/microsoft\nPOST /api/v1/auth/magic-link/request\nGET /api/v1/auth/magic-link/verify\nGET /api/v1/auth/session\nPOST /api/v1/auth/logout\nLocal Development\nBackend\ncd src/web/backend\npython3 -m venv .venv\nsource .venv/bin/activate\npip install -r requirements.txt -r ../../requirements.txt\nuvicorn app.main:app --reload --host 0.0.0.0 --port 8000\nFrontend\ncd src/web/frontend\nnpm install\nnpm run dev\nTesting\npython3 -m pytest tests src/web/backend/tests\nNotes\nThis project currently focuses on Swiss tender workflows and lighting product matching\nThe platform is independent and not affiliated with simap.ch\nAbout\nAI-native tender intelligence for teams that want faster, sharper, and more defensible bid decisions.\nheiditender.ch/\nTopics\nmysql\nnextjs\npostgresql\nopenai\nlighting\nsql-generation\nprocurement\nknowledge-base\nrules-engine\nexplainable-ai\nfastapi\ndocument-ai\nllm\nvector-store\ncatalog-matching\nprocurement-automation\ntender-intelligence\ntender-analysis\nsupplier-matching\nswiss-tenders\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nHeidi Tender 1.1\nLatest\nMar 22, 2026\n+ 1 release\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n55.3%\nTypeScript\n34.8%\nCSS\n7.0%\nShell\n2.1%\nOther\n0.8%\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nheiditender\nHeidi-Tender\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n25 Commits\n25 Commits\nassets\nassets\ndeploy\ndeploy\ndocs\ndocs\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.dockerignore\n.dockerignore\n.env.prod.example\n.env.prod.example\n.gitignore\n.gitignore\nAbuse Message 115F9BB1A.txt\nAbuse Message 115F9BB1A.txt\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nabuse_log.txt\nabuse_log.txt\ndocker-compose.prod.yml\ndocker-compose.prod.yml\ndocker-compose.yml\ndocker-compose.yml\nView all files\nRepository files navigation\nHeidi Tender\nAI-native tender intelligence for procurement teams that need faster decisions, tighter rigor, and explainable supplier matches.\nHeidi Tender transforms dense tender packs into ranked, defensible product recommendations by combining document understanding, governed rules, SQL-backed filtering, and explainable AI scoring.\nWhy Heidi Tender\nProcurement teams spend too much time buried in PDFs, spreadsheets, supplier data, and compliance checks. Heidi Tender brings that work into one auditable flow: extract what matters, apply hard constraints, rank the best candidates, and keep the reasoning visible from start to finish.\nStructured from messy inputs\nUpload tender files, archives, and technical documents, then convert unstructured material into a consistent requirement pipeline.\nGoverned matching logic\nBlend LLM extraction, explicit business rules, and SQL execution against supplier catalog data instead of relying on vague keyword search.\nExplainable outcomes\nProduce shortlist-ready candidates with traceable evidence, fit logic, and operational visibility for more confident bid decisions.\nWhat The Platform Does\nIngests tender packs and supporting files through a web workflow\nExtracts requirements and procurement signals from unstructured documents\nApplies field rules and hard-versus-soft constraint logic\nGenerates SQL from validated hard requirements and executes it on supplier product views\nRanks surviving candidates using soft constraints and model-assisted reasoning\nStreams job progress, step status, and system events in real time\nCore Product Highlights\n7-step pipeline with explicit contracts across extraction, merge, SQL generation, execution, and ranking\nRule Copilot with human approval so generated rule drafts can be reviewed before publication\nSnapshot-based rule binding to keep running jobs stable even when rules evolve later\nRealtime telemetry through SSE events with polling-friendly frontend behavior\nDocker-first deployment with app services, MySQL catalog bootstrap, and knowledge-base initialization\nArchitecture\nHow Matching Works\nKnowledge-base bootstrap and vector store readiness check\nRequirement extraction from tender files\nExternal field rule determination\nRequirement merge with hardness classification\nSQL generation from hard constraints\nSQL execution against supplier product views\nCandidate ranking using soft constraints\nStack\nNext.js frontend for job orchestration, rule management, and monitoring\nFastAPI backend for APIs, execution control, and streaming events\nPostgreSQL for application state and versioned rule metadata\nMySQL for supplier product data and SQL-backed candidate filtering\nOpenAI models for extraction, reasoning, and ranking stages\nQuickstart\nPrerequisites\nDocker and Docker Compose v2\nOpenAI API key\nConfigure\nCreate a root .env file with at least:\nOPENAI_API_KEY=your_key_here\nOPENAI_MODEL=gpt-5-mini\nRun\ndocker compose up --build\nProduction\nUse the dedicated production stack and deployment guide:\nEnvironment template: .env.prod.example\nProduction Compose file: docker-compose.prod.yml\nFull guide: docs/production-deployment.md\nPublic deployments can enable:\nGoogle OIDC login\nMicrosoft OIDC login\nOptional email magic-link login via Resend\nEndpoints\nFrontend: http://localhost:3000\nBackend API: http://localhost:8000/api/v1\nHealth check: http://localhost:8000/health\nStartup Sequence\nmysql starts and prepares the supplier product database\nmysql-init imports src/prepare/pim.sql when initialization is needed\nmysql-views-init creates or refreshes vw_bid_products and vw_bid_specs\nbackend starts after data services are ready\nfrontend starts and connects to the API\nOperating Model\nJob lifecycle\ncreated -> uploading -> ready -> running -> succeeded | failed\nRealtime monitoring\nGET /api/v1/jobs/{job_id}/events streams step and lifecycle events over SSE\nIncremental event IDs support reconnect flows via Last-Event-ID\nFrontend behavior tolerates disconnects and can fall back to polling\nAPI Surface\nJobs\nPOST /api/v1/jobs\nGET /api/v1/jobs\nPOST /api/v1/jobs/{job_id}/file\nPOST /api/v1/jobs/{job_id}/archive\nPOST /api/v1/jobs/{job_id}/start\nGET /api/v1/jobs/{job_id}\nGET /api/v1/jobs/{job_id}/result\nRules\nGET /api/v1/rules/current\nGET /api/v1/rules/versions\nPOST /api/v1/rules/draft\nPOST /api/v1/rules/generate\nPOST /api/v1/rules/generate/stream\nPOST /api/v1/rules/{version_id}/publish\nSettings and stats\nGET /api/v1/settings/model\nPUT /api/v1/settings/model\nGET /api/v1/stats/dashboard\nAuth\nGET /api/v1/auth/options\nGET /api/v1/auth/login/google\nGET /api/v1/auth/callback/google\nGET /api/v1/auth/login/microsoft\nGET /api/v1/auth/callback/microsoft\nPOST /api/v1/auth/magic-link/request\nGET /api/v1/auth/magic-link/verify\nGET /api/v1/auth/session\nPOST /api/v1/auth/logout\nLocal Development\nBackend\ncd src/web/backend\npython3 -m venv .venv\nsource .venv/bin/activate\npip install -r requirements.txt -r ../../requirements.txt\nuvicorn app.main:app --reload --host 0.0.0.0 --port 8000\nFrontend\ncd src/web/frontend\nnpm install\nnpm run dev\nTesting\npython3 -m pytest tests src/web/backend/tests\nNotes\nThis project currently focuses on Swiss tender workflows and lighting product matching\nThe platform is independent and not affiliated with simap.ch\nAbout\nAI-native tender intelligence for teams that want faster, sharper, and more defensible bid decisions.\nheiditender.ch/\nTopics\nmysql\nnextjs\npostgresql\nopenai\nlighting\nsql-generation\nprocurement\nknowledge-base\nrules-engine\nexplainable-ai\nfastapi\ndocument-ai\nllm\nvector-store\ncatalog-matching\nprocurement-automation\ntender-intelligence\ntender-analysis\nsupplier-matching\nswiss-tenders\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nHeidi Tender 1.1\nLatest\nMar 22, 2026\n+ 1 release\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n55.3%\nTypeScript\n34.8%\nCSS\n7.0%\nShell\n2.1%\nOther\n0.8%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] # Repository: heiditender/Heidi-Tender AI-native tender intelligence for teams that want faster, sharper, and more defensible bid decisions. - Stars: 0 - Forks: 0 - Watchers: 0 - Open issues: 0 - Primary language: Python - Languages: Python (55.2%), TypeScript (34.8%), CSS (7.0%), Shell (2.1%), Ja..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=procurement_marketplace\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] There was an error while loading.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Please reload this page .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] heiditender Heidi-Tender Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 25 Commits 25 Commits assets assets deploy deploy docs docs scripts scripts src src tests tests .\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] gitignore Abuse Message 115F9BB1A.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] txt Abuse Message 115F9BB1A.\n"
+}

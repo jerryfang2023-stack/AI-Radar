@@ -1,0 +1,228 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-036
+title: "Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors"
+title_zh: "Proton 终结重新输入时代，为分销商推出智能订单与报价录入自动化"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.proton.ai/blog/proton-ends-rekeying-era-with-agentic-order-quote-entry-automation"
+canonical_url: "https://proton.ai/blog/proton-ends-rekeying-era-with-agentic-order-quote-entry-automation"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: "2026-07-21T00:00:00.000Z"
+collected_at: 2026-07-23T03:51:19.787Z
+language: mixed
+full_text_hash: cc5d57b85d745aaa
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-036-proton-ends-the-re-keying-era-with-agentic-order-quote-entry-automatio.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-036-proton-ends-the-re-keying-era-with-agentic-order-quote-entry-automatio.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 92
+extractor_diagnostics: {"readability_score":92,"text_length":3684,"paragraph_count":12,"sentence_count":25,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 3684
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cc5d57b85d745aaa","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6adfc94052aae7d4
+content_hash: cc5d57b85d745aaa
+semantic_hash: 9b02e751a5e9f877
+duplicate_of: ""
+first_seen_at: "2026-07-21T00:00:00.000Z"
+last_seen_at: 2026-07-23T03:51:19.787Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["Agents","agents","agent"],"people":[],"industries":[],"roles":["销售 / 客服"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["21","2026","11","48","75%"],"quotes":["As long as your people are the glue between systems, the power of AI stays capped,","\nWhat load-bearing AI looks like\nA purchasing manager emails at 11:48 p.m.: ","The dream has always been: a customer emails a part list, and the order just happens,"]}
+evidence_seed: {"company_actions":["— July 21, 2026 — Proton."],"case_details":["Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors ##### The Distribution Blog # Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors By Dasha Shakov · Published on July 21, 2026 ## Get trusted playbooks from leadi... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original","ai, the AI platform for distributors, today announced the general availability of Proton Order & Quote Entry Automation , an agentic system that turns the messiest inbound customer requests — competitor part numbers, vague descriptions, screenshots of PDFs — into revenue.","Agents draft the quote, send the email, follow up when the customer goes quiet, and source substitutes when the branch can't fill the order."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors ##### The Distribution Blog # Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors By Dasha Shakov · Published on July 21, 2026 ## Get trusted playbooks from leadi... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"— July 21, 2026 — Proton.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"ai, the AI platform for distributors, today announced the general availability of Proton Order & Quote Entry Automation , an agentic system that turns the messiest inbound customer requests — competitor part numbers, vague descriptions, screenshots of PDFs — into revenue.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Agents draft the quote, send the email, follow up when the customer goes quiet, and source substitutes when the branch can't fill the order.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Reps approve every quote before it reaches the customer.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Work reaches the agents however it arrives: a forwarded email, an uploaded spreadsheet or PDF — or a rep simply talking to the tool, describing what the customer needs on a call or at the counter.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-23T03:51:19.787Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors
+
+## clean_text
+
+CAMBRIDGE, Mass. — July 21, 2026 — Proton.ai, the AI platform for distributors, today announced the general availability of Proton Order & Quote Entry Automation , an agentic system that turns the messiest inbound customer requests — competitor part numbers, vague descriptions, screenshots of PDFs — into revenue. Agents draft the quote, send the email, follow up when the customer goes quiet, and source substitutes when the branch can't fill the order. Reps approve every quote before it reaches the customer.
+Work reaches the agents however it arrives: a forwarded email, an uploaded spreadsheet or PDF — or a rep simply talking to the tool, describing what the customer needs on a call or at the counter.
+The launch advances Proton's mission: help distributors grow faster and lower operating costs by giving AI the load-bearing work, so their people can do the work only humans can — building relationships and driving sales.
+"As long as your people are the glue between systems, the power of AI stays capped," said Benj Cohen, Founder & CEO of Proton.ai . "That's why this runs on one data layer with our other software tools. The agent that drafts the quote already knows the customer, the catalog, and the pricing — so it doesn't type faster, it does the job."
+What load-bearing AI looks like
+A purchasing manager emails at 11:48 p.m.: "Ready to move on the unit we discussed last month. Will it work with the rest of our equipment? Send documentation and a quote." For a rep, that's a morning of system-hopping: finding the thread, checking compatibility and stock, then building the quote and writing the reply. For a Proton agent with full business context, it's one pass — reply drafted, compatibility confirmed, quote attached, waiting for approval before the customer's day starts. The same holds out loud: a counter rep reads a part list into their phone, and the draft quote is ready before the customer leaves.
+Architecture, not another tool
+Point tools attack one slice of the job: getting the order into the ERP faster. Useful — but a person still sits between every system, reading one screen and retyping into the next. Proton built Order & Quote Entry Automation as part of a platform architecture instead: CRM, PIM, eCommerce AI, and Order & Quote Entry Automation run on one shared data layer, so every match feeds the catalog, every enrichment improves the next match, and every interaction sharpens the recommendations. Connected data also makes agents affordable to run at scale — they take the direct path instead of rummaging through disconnected systems.
+Real results
+Building Products Inc. (BPI), a wholesale building materials distributor serving retail lumberyards across the Midwest, is among the early customers putting agents to work.
+"The dream has always been: a customer emails a part list, and the order just happens," said Cas Rangel, Chief Information & Technology Officer at Building Products Inc. "Proton is the first vendor I've seen actually build toward that — and they ship faster than anyone we work with. Feedback we give in one call shows up in the product by the next."
+One of North America's largest industrial distributors tested Proton head-to-head against its own in-house cross-reference system in a structured proof of value. Proton beat every success criterion set — on the hardest, description-only lists, Proton found the right part without human help three times as often as the in-house system, meaning far fewer quotes had to be kicked back to a rep for manual cross-referencing. List preparation time dropped 75%.
+Availability
+Proton Order & Quote Entry Automation is available today: proton.ai/order-and-quote-entry .
+
+## full_text
+
+CAMBRIDGE, Mass. — July 21, 2026 — Proton.ai, the AI platform for distributors, today announced the general availability of Proton Order & Quote Entry Automation , an agentic system that turns the messiest inbound customer requests — competitor part numbers, vague descriptions, screenshots of PDFs — into revenue. Agents draft the quote, send the email, follow up when the customer goes quiet, and source substitutes when the branch can't fill the order. Reps approve every quote before it reaches the customer.
+Work reaches the agents however it arrives: a forwarded email, an uploaded spreadsheet or PDF — or a rep simply talking to the tool, describing what the customer needs on a call or at the counter.
+The launch advances Proton's mission: help distributors grow faster and lower operating costs by giving AI the load-bearing work, so their people can do the work only humans can — building relationships and driving sales.
+"As long as your people are the glue between systems, the power of AI stays capped," said Benj Cohen, Founder & CEO of Proton.ai . "That's why this runs on one data layer with our other software tools. The agent that drafts the quote already knows the customer, the catalog, and the pricing — so it doesn't type faster, it does the job."
+What load-bearing AI looks like
+A purchasing manager emails at 11:48 p.m.: "Ready to move on the unit we discussed last month. Will it work with the rest of our equipment? Send documentation and a quote." For a rep, that's a morning of system-hopping: finding the thread, checking compatibility and stock, then building the quote and writing the reply. For a Proton agent with full business context, it's one pass — reply drafted, compatibility confirmed, quote attached, waiting for approval before the customer's day starts. The same holds out loud: a counter rep reads a part list into their phone, and the draft quote is ready before the customer leaves.
+Architecture, not another tool
+Point tools attack one slice of the job: getting the order into the ERP faster. Useful — but a person still sits between every system, reading one screen and retyping into the next. Proton built Order & Quote Entry Automation as part of a platform architecture instead: CRM, PIM, eCommerce AI, and Order & Quote Entry Automation run on one shared data layer, so every match feeds the catalog, every enrichment improves the next match, and every interaction sharpens the recommendations. Connected data also makes agents affordable to run at scale — they take the direct path instead of rummaging through disconnected systems.
+Real results
+Building Products Inc. (BPI), a wholesale building materials distributor serving retail lumberyards across the Midwest, is among the early customers putting agents to work.
+"The dream has always been: a customer emails a part list, and the order just happens," said Cas Rangel, Chief Information & Technology Officer at Building Products Inc. "Proton is the first vendor I've seen actually build toward that — and they ship faster than anyone we work with. Feedback we give in one call shows up in the product by the next."
+One of North America's largest industrial distributors tested Proton head-to-head against its own in-house cross-reference system in a structured proof of value. Proton beat every success criterion set — on the hardest, description-only lists, Proton found the right part without human help three times as often as the in-house system, meaning far fewer quotes had to be kicked back to a rep for manual cross-referencing. List preparation time dropped 75%.
+Availability
+Proton Order & Quote Entry Automation is available today: proton.ai/order-and-quote-entry .
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 92
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":92,"text_length":3684,"paragraph_count":12,"sentence_count":25,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors ##### The Distribution Blog # Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors By Dasha Shakov · Published on July 21, 2026 ## Get trusted playbooks from leadi... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   — July 21, 2026 — Proton.
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   ai, the AI platform for distributors, today announced the general availability of Proton Order & Quote Entry Automation , an agentic system that turns the messiest inbound customer requests — competitor part numbers, vague descriptions, screenshots of PDFs — into revenue.
+
+4. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Agents draft the quote, send the email, follow up when the customer goes quiet, and source substitutes when the branch can't fill the order.
+
+5. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Reps approve every quote before it reaches the customer.
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Work reaches the agents however it arrives: a forwarded email, an uploaded spreadsheet or PDF — or a rep simply talking to the tool, describing what the customer needs on a call or at the counter.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: Agents, agents, agent
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 销售 / 客服
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 21, 2026, 11, 48, 75%
+- quotes: As long as your people are the glue between systems, the power of AI stays capped, / 
+What load-bearing AI looks like
+A purchasing manager emails at 11:48 p.m.:  / The dream has always been: a customer emails a part list, and the order just happens,
+
+## evidence_seed
+
+- company_actions: — July 21, 2026 — Proton.
+- case_details: Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors ##### The Distribution Blog # Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors By Dasha Shakov · Published on July 21, 2026 ## Get trusted playbooks from leadi... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original / ai, the AI platform for distributors, today announced the general availability of Proton Order & Quote Entry Automation , an agentic system that turns the messiest inbound customer requests — competitor part numbers, vague descriptions, screenshots of PDFs — into revenue. / Agents draft the quote, send the email, follow up when the customer goes quiet, and source substitutes when the branch can't fill the order.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors ##### The Distribution Blog # Proton Ends the Re-Keying Era with Agentic Order & Quote Entry Automation for Distributors By Dasha Shakov · Published on July 21, 2026 ## Get trusted playbooks from leadi... / query=AI platform case study production rollout customer 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
