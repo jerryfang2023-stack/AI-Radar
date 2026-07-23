@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "node": {
     "id": "TX-industry-retail_ecommerce",
@@ -25,6 +25,8 @@
       "EV-a3b006906f6d46a0",
       "EV-046caa2b3d6fbdde",
       "EV-0e028ea8f94752de",
+      "EV-9ad569c873451304",
+      "EV-777eb5b7783b71fb",
       "EV-02686922dd82c4aa",
       "EV-99a0cb6bac516bdd",
       "EV-2ffc3377977da114",
@@ -49,6 +51,11 @@
       "EN-4dbe391b8fcf977a",
       "EN-c5947269de664c47",
       "EN-e759968ca9278b8d",
+      "EN-6957217eb8e00a30",
+      "EN-8f71c4871a160172",
+      "EN-fb54e9062429a937",
+      "EN-7d3194f79e645c42",
+      "EN-bbdefa2950f49882",
       "EN-88e2cce43eeadb36",
       "EN-276a8bc458036a1a",
       "EN-5239a379b6326549",
@@ -56,14 +63,12 @@
       "EN-e274048227f164dc",
       "EN-1bf93b12e68cac56",
       "EN-d9b1d7819af92e77",
-      "EN-bbdefa2950f49882",
       "EN-151013fb8438c046",
       "EN-01f1074bb52ff605",
       "EN-0e008e2c06144ec8",
       "EN-5388bc10736a0eff",
       "EN-43a340bb75b45f02",
       "EN-5e1fcba4c9f1cf69",
-      "EN-7d3194f79e645c42",
       "EN-94ff75465b1afa65",
       "EN-3a7bd3e2360a3d29",
       "EN-40e307d789f77264",
@@ -79,11 +84,12 @@
     ],
     "fdeIds": [
       "FDE-62f660a9a90bc3f6",
+      "FDE-3d5eb0bc571f55bf",
       "FDE-309bc49d109029a3"
     ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-07-20"
+    "lastSeen": "2026-07-23"
   },
   "events": [
     {
@@ -829,6 +835,180 @@
       "products": [],
       "sourceUrl": "https://artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing",
       "publisher": "Artificial Intelligence News（RSS）"
+    },
+    {
+      "id": "EV-9ad569c873451304",
+      "dataDate": "2026-07-23",
+      "date": "2026-05-14",
+      "updatedDate": "2026-07-23",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "INTURAI 将其AI原生多垂直平台部署至养老与零售领域的多个集团 – 公司公告",
+      "originalTitle": "INTURAI DEPLOYS IT'S AI NATIVE MULTI-VERTICAL PLATFORM TO MULTIPLE GROUPS ACROSS AGED CARE AND RETAIL VERTICALS – Company Announcement - FT.com",
+      "subject": "INTURAI",
+      "action": "DEPLOYS",
+      "object": "IT'S AI NATIVE MULTI-VERTICAL PLATFORM TO MULTIPLE GROUPS ACROSS AGED CARE AND RETAIL VERTICALS – Company Announcement - FT.com",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "entityIds": [
+        "EN-6957217eb8e00a30",
+        "EN-8f71c4871a160172"
+      ],
+      "entityNames": [
+        "INTURAI",
+        "Thinking Machines Lab"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202605140857CANADANWCANADAPR_C8091-1",
+      "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-777eb5b7783b71fb",
+      "dataDate": "2026-07-23",
+      "date": "2025-10-09",
+      "updatedDate": "2026-07-23",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "印度试点AI智能体主导的电商，融合ChatGPT、Gemini、Claude",
+      "originalTitle": "India pilots AI chatbot-led e-commerce with ChatGPT, Gemini, Claude in the mix | TechCrunch",
+      "subject": "India",
+      "action": "pilots",
+      "object": "AI chatbot-led e-commerce with ChatGPT, Gemini, Claude in the mix",
+      "metrics": [
+        "$5 "
+      ],
+      "locations": [
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "id": "consumer",
+            "dimensionName": "目标用户",
+            "name": "个人用户"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "consumer",
+          "dimensionName": "目标用户",
+          "name": "个人用户"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "consumer",
+          "dimensionName": "目标用户",
+          "name": "个人用户"
+        }
+      ],
+      "entityIds": [
+        "EN-fb54e9062429a937",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "India",
+        "OpenAI",
+        "Google",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2025/10/09/india-pilots-ai-chatbot-led-e-commerce-with-chatgpt-gemini-claude-in-the-mix",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-02686922dd82c4aa",
@@ -1970,6 +2150,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-ccbf97fdf4dc11d0",
         "EV-2069f6a931b8c9d6",
         "EV-02882e6f5e1902c6",
         "EV-e3792591090281c6",
@@ -2027,6 +2208,7 @@
         "EV-b85139b8fba1a5c5",
         "EV-c4303801ea8c54dc",
         "EV-0b7f11c0c18b8bf4",
+        "EV-0b6cfbf67ba2da31",
         "EV-8b0f056571d68269",
         "EV-30ba1a24f74ccc6d",
         "EV-b4eb99a878be9bb2",
@@ -2035,6 +2217,7 @@
         "EV-4dd25589d834060d",
         "EV-6617850e0b014051",
         "EV-c81cb21337a9bb98",
+        "EV-056bb8c683ef60a4",
         "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-181b425d2a600cad",
@@ -2050,6 +2233,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
+        "EV-1ba939d8baf43207",
         "EV-941ba9ebdc43f20c",
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
@@ -2104,7 +2288,8 @@
         "EV-9705a8de3c2e9653",
         "EV-6fba63ca5f1e51c7",
         "EV-8b4f7844af234ed8",
-        "EV-e8e47f4bb528e107"
+        "EV-e8e47f4bb528e107",
+        "EV-8654cc0faeb02d14"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -2142,7 +2327,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-f346eaca864441f9",
@@ -2177,6 +2362,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-9c069dcbaf5283a2",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
         "EV-e41fc65eb014893f",
@@ -2200,6 +2386,9 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-c3f617e75d303f59",
+        "EV-0e3f748f87f5892a",
+        "EV-8a2d8ebbd700c787",
         "EV-2c16aa6254de4496",
         "EV-47a16db069ed320e",
         "EV-49c6291694fb6c7b",
@@ -2210,6 +2399,9 @@
         "EV-c81cb21337a9bb98",
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
+        "EV-777eb5b7783b71fb",
+        "EV-75b9b997e9c7e5d1",
+        "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-4515377aa6311bf1",
@@ -2224,10 +2416,14 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-6cd7509380208a9d",
+        "EV-0d5a32aca724d30e",
+        "EV-3e449c3e9ad6a9e1",
+        "EV-5b193a038ab4ea22",
+        "EV-604cffac28a0af69",
         "EV-4449950a89892852",
         "EV-6ce069b1845f5a52",
         "EV-071c72225b8aaf80",
-        "EV-0d5a32aca724d30e",
         "EV-3043858af3970696",
         "EV-8121a1ecdf168d8a",
         "EV-cd067fa6f39fe828",
@@ -2379,6 +2575,10 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-8cb5b0ed18c7cdd8",
+        "EV-7b2a272a891f54d1",
+        "EV-89bdda008227fb6b",
+        "EV-ae9142b65fa86975",
         "EV-33fba8931cca96d5",
         "EV-22c88b4ff8c7d8d8",
         "EV-bf8086947a2639d4",
@@ -2414,7 +2614,8 @@
         "EV-65a4b47d1cca0a7a",
         "EV-e8e47f4bb528e107",
         "EV-01f196f98ece4eb2",
-        "EV-ecfc552af7344d65"
+        "EV-ecfc552af7344d65",
+        "EV-8654cc0faeb02d14"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -2441,10 +2642,13 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-distillation"
+        "TX-technology-distillation",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
+        "EN-830abc32d2a443c5",
+        "EN-240389f4b730bad4",
+        "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
         "EN-729324072d368379",
         "EN-ef11a801c5bd3673",
@@ -2466,8 +2670,8 @@
         "EN-b8c236d640d6a5fb",
         "EN-d8494bb34d6ddc43"
       ],
-      "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-22"
+      "firstSeen": "2025-09-04",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-b0532e1af75cc4ab",
@@ -2480,9 +2684,10 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-ccbf97fdf4dc11d0",
         "EV-64fb6d791e19d10a",
-        "EV-463cb26b5e03c7f7",
         "EV-8cf189b07a257c1c",
+        "EV-463cb26b5e03c7f7",
         "EV-f0fee44c1dfdcb09",
         "EV-52bf48005db3461a",
         "EV-a7e14985b924b464",
@@ -2496,6 +2701,7 @@
         "EV-ec711aed6721bb30",
         "EV-d756f05478303505",
         "EV-06b294f255c0087e",
+        "EV-dac8e2b1fb11403f",
         "EV-2c476cb7969f399b",
         "EV-06487af6e98ea491",
         "EV-bb9ba11acf104db1",
@@ -2539,7 +2745,7 @@
         "EN-3ccbd9105a45d8fc"
       ],
       "firstSeen": "2026-03-11",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-e5cc9e38970eacb5",
@@ -2588,6 +2794,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
+        "EV-0d5a32aca724d30e",
         "EV-303b418c63895ba6",
         "EV-30749250196dd507",
         "EV-43976be427aefb52",
@@ -2615,13 +2822,15 @@
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
-        "TX-use_case-cybersecurity"
+        "TX-use_case-cybersecurity",
+        "TX-technology-open_weights",
+        "TX-technology-distillation"
       ],
       "relatedEntityIds": [
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-b1d07f1a647ba7fb",
@@ -2754,39 +2963,76 @@
       "lastSeen": "2026-07-09"
     },
     {
-      "id": "EN-88e2cce43eeadb36",
-      "name": "Alipay",
+      "id": "EN-6957217eb8e00a30",
+      "name": "INTURAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9ad569c873451304"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-14",
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "EN-8f71c4871a160172",
+      "name": "Thinking Machines Lab",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "支付宝"
+        "tml"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-584212d254d882bc",
-        "EV-02686922dd82c4aa",
-        "EV-3fb492fb45980541",
-        "EV-2ffc3377977da114",
-        "EV-7d09b00182b08c3f",
-        "EV-f6ac2938949f74ec",
-        "EV-2c1fc2143d7d4a6a"
+        "EV-0a5d792223f5381f",
+        "EV-869c9ea96c58873d",
+        "EV-ad40755ca624afe7",
+        "EV-9ad569c873451304",
+        "EV-d5f276ad6b2ac9de",
+        "EV-181b425d2a600cad",
+        "EV-2fea1664807824ce",
+        "EV-70e3f88cb06a856c",
+        "EV-cf5b2a0aff3914bd",
+        "EV-54ecd52c69b97834",
+        "EV-34b0f4cfd513fbde",
+        "EV-38e1fc190aeb0f75",
+        "EV-77662aa9bef9efbe",
+        "EV-f0caa4082916d619",
+        "EV-2f56b99f72ad6c4f"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_service"
+        "TX-technology-code_generation",
+        "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
+        "TX-technology-multimodal"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-20"
+      "relatedEntityIds": [
+        "EN-78624f0a98e78301"
+      ],
+      "firstSeen": "2026-05-14",
+      "lastSeen": "2026-07-23"
     },
     {
-      "id": "EN-276a8bc458036a1a",
-      "name": "支付宝",
+      "id": "EN-fb54e9062429a937",
+      "name": "India",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
@@ -2795,43 +3041,19 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-584212d254d882bc",
-        "EV-02686922dd82c4aa"
+        "EV-777eb5b7783b71fb"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-18"
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-07-23"
     },
     {
-      "id": "EN-5239a379b6326549",
-      "name": "OPPO达成智能体跨端互联",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-02686922dd82c4aa"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-retail_ecommerce"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-15"
-    },
-    {
-      "id": "EN-8147e6fed86d42c1",
-      "name": "OPPO",
+      "id": "EN-7d3194f79e645c42",
+      "name": "OpenAI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
@@ -2840,108 +3062,280 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-f020dd198aa2f952",
-        "EV-736404028b8ad33e",
-        "EV-53f08daddd011dbb",
-        "EV-0592458e094f26cc",
-        "EV-33b218942b1deab7",
-        "EV-afd0332ad8f5f05b",
-        "EV-02686922dd82c4aa",
-        "EV-2fd730d0ad452334",
-        "EV-4faa2bcf2e42e60c",
-        "EV-7d09b00182b08c3f",
-        "EV-8a9b12665a3e40a0",
-        "EV-cfa8c754627747a1",
-        "EV-0d862d59b05361cc",
-        "EV-dab4d3f2059e8880",
-        "EV-33fba8931cca96d5"
+        "EV-14cc7f194f3e5af8",
+        "EV-754e83c2d19005fe",
+        "EV-d7a7244d620a2142",
+        "EV-4da1a7c4d527eb69",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-7abd8ec418f1e7f3",
+        "EV-dfddbb260b3d1c77",
+        "EV-78a11d309c3d4e97",
+        "EV-20d762872664fddb",
+        "EV-aa33ca051f3a7f78",
+        "EV-d4e44892226be468",
+        "EV-edcb66d0401cfb8f",
+        "EV-036f43cf7a0549eb",
+        "EV-336cd248842004a5",
+        "EV-a42e51959c627554",
+        "EV-ee0662b75588987e",
+        "EV-9055cb4fa2b4ee62",
+        "EV-b1138bccf5ccd86c",
+        "EV-201b25d4f3cf696a",
+        "EV-d9270ae7b862212b",
+        "EV-7954fd5a6b8b76d0",
+        "EV-7add33b4c74dbf1a",
+        "EV-1abf0d076d30ec6d",
+        "EV-3b40ec144e5db22c",
+        "EV-467d1a701d21327d",
+        "EV-c5643983538c6513",
+        "EV-c3f617e75d303f59",
+        "EV-6fa2c58973ea61b4",
+        "EV-e15ae1112294d59e",
+        "EV-36d484148fbd3424",
+        "EV-47a16db069ed320e",
+        "EV-49c6291694fb6c7b",
+        "EV-62901df23f471eea",
+        "EV-538adc98d1da8fda",
+        "EV-d209a6acecba4285",
+        "EV-a5d127e62d102ad6",
+        "EV-d1e2a7c6d314612c",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-83b2e8f7fe679bc3",
+        "EV-8abf5adc3e72fbb8",
+        "EV-3a704c40204ecfd9",
+        "EV-777eb5b7783b71fb",
+        "EV-eec1e6857f0e0b2b",
+        "EV-7f2811d2272cf4a3",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-b833b29d904b39ac",
+        "EV-48015ed51ec9be9f",
+        "EV-8ab833e13ecaa916",
+        "EV-41ffecb51e643397",
+        "EV-5f199c45a41b8555",
+        "EV-26183a56cf9ed63c",
+        "EV-3fbfb89a10efd42f",
+        "EV-1c6adfef6f405319",
+        "EV-66df35d14361a6cb",
+        "EV-3c4d6d70ac763885",
+        "EV-0d5a32aca724d30e",
+        "EV-1ba939d8baf43207",
+        "EV-5b193a038ab4ea22",
+        "EV-969923b0b978a660",
+        "EV-ea6abb5378846a71",
+        "EV-133a92cb6cb25a0c",
+        "EV-7c836c34e7cf36ee",
+        "EV-071c72225b8aaf80",
+        "EV-ae1e2769aff82965",
+        "EV-ab3e820aa6d92542",
+        "EV-bc41a3060f11ca2d",
+        "EV-83a8ac8a2554b60c",
+        "EV-a68475d82ec939b5",
+        "EV-c237f5dc53f0a923",
+        "EV-3a74e4995b590507",
+        "EV-7963d8c78531f12d",
+        "EV-70e3f88cb06a856c",
+        "EV-7c899d5decafc42f",
+        "EV-a4a61babc902931a",
+        "EV-1c2723ad61d192bd",
+        "EV-74dfbd82b47dc626",
+        "EV-167f50a6f3134bd5",
+        "EV-30749250196dd507",
+        "EV-712473b23a2a11a0",
+        "EV-b9296439f7c34c89",
+        "EV-cf5b2a0aff3914bd",
+        "EV-025778b83c1b2ca9",
+        "EV-4b8dffdf86ae5009",
+        "EV-969ed3078d10f0c9",
+        "EV-d7d8fcd0694a590f",
+        "EV-6e7b632ee0b3410d",
+        "EV-efee7c1ac4dc336f",
+        "EV-2ffbe4560e69992a",
+        "EV-f1befee642551db7",
+        "EV-0dbc7b904378f713",
+        "EV-10eb16192d83dbf7",
+        "EV-ae736eb124d7163a",
+        "EV-cf317dd1579a01bb",
+        "EV-d07f7a8d4d20a034",
+        "EV-f023e94a239f22f2",
+        "EV-107725f2bdece882",
+        "EV-3ab2de2a340e0a23",
+        "EV-6af1e74358025628",
+        "EV-ee9a1c99fe7054d6",
+        "EV-225ad0a94611daf3",
+        "EV-cadcc94249dea81d",
+        "EV-dae42c1daf8ba2f8",
+        "EV-caec65aef89d3b4a",
+        "EV-d07906b648eec63f",
+        "EV-70efbfcaadcdb259",
+        "EV-ad2e4fe6a149d95d",
+        "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
+        "EV-2059f42c7b2aff44",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-20ffa968bcbc4729",
+        "EV-77662aa9bef9efbe",
+        "EV-9ca7db66f8f10b63",
+        "EV-9c4b862020202f6c",
+        "EV-5012364af7480121",
+        "EV-918fc324de3117bd",
+        "EV-8a91e14f37d32b4d",
+        "EV-31782f0824ae1db1",
+        "EV-860b90c017deaa59",
+        "EV-ae5333aeb2be6316",
+        "EV-888b9eb73582e21c",
+        "EV-13f0b515194f3245",
+        "EV-abf0990dcaceb1ce",
+        "EV-b8bfab77707274b7",
+        "EV-6364cfadff0d1d30",
+        "EV-6eb9a23be3117421",
+        "EV-a0d3853dd41c8ef6",
+        "EV-b26bead25288d19c",
+        "EV-37cdd2fae39aaa2e",
+        "EV-1e7c76dae985100f",
+        "EV-644337db309a1c82",
+        "EV-be69ef6fcae83890",
+        "EV-482df8a8ef264238",
+        "EV-9110f23a7e60173e",
+        "EV-9e04edd969c977a1",
+        "EV-e792252690f98a22",
+        "EV-2aca9a810ea65555",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-bac5824e594f1831",
+        "EV-0c06df62702d26ab",
+        "EV-f01d28aac73c3f9c",
+        "EV-574998b1638a3f4f",
+        "EV-0b6992ae74184d13",
+        "EV-7f979d0a01e6dffa",
+        "EV-f3e11eadfb7c6a4b",
+        "EV-ab3586268ebfab38",
+        "EV-2cb9dbed2b2b6077",
+        "EV-d6ba9ef3ff65940c",
+        "EV-3f8ba5855b64dd1a",
+        "EV-b73c7096546b82e8",
+        "EV-f89ba2b487d4abf1",
+        "EV-57b029a4afb71044",
+        "EV-ad1444d8653b37ae",
+        "EV-8f167245603f8ebc",
+        "EV-fbdfb5888ad19663",
+        "EV-cac9d9f31ef675ce",
+        "EV-4a727d54055d6d0e",
+        "EV-e295f808713644c7",
+        "EV-3474febbec499f3c",
+        "EV-519537a36355d82e",
+        "EV-631197767a45d34c",
+        "EV-657837763764c869",
+        "EV-ce291577f61b8543",
+        "EV-a4f052325d0ef230",
+        "EV-3550e9863266ea96",
+        "EV-ca420d07e12369f1",
+        "EV-773ffcc6e1df56fa",
+        "EV-02b19ffbe883ee2e",
+        "EV-cf496e0f8a56ca97",
+        "EV-b30dcacd355fe5f5",
+        "EV-2f7e6d3a68bbf08f",
+        "EV-5cd10de5c12916f0",
+        "EV-067f57f6e6ffa6ce",
+        "EV-da6678e4e865e00e",
+        "EV-14b44a40808340f5",
+        "EV-2d56dec8dfeb2b56",
+        "EV-8cb2374f76202ecc",
+        "EV-946569cccbd9222f",
+        "EV-917966af8545a380",
+        "EV-b4203b10d6592bf2",
+        "EV-5eb23cdd9c14c6ea",
+        "EV-e1fa30136e2e12f1",
+        "EV-10e841ab47d2b1f1",
+        "EV-f2d29ca7b05c3dd9",
+        "EV-35d1cc31d1351d4c",
+        "EV-ea2b6ce4acd46366",
+        "EV-2821d0cef61b3c6a",
+        "EV-6f7c5f0abad3d4da",
+        "EV-8f497488d129fee5",
+        "EV-a8f1204b54ae6475",
+        "EV-62df953d81def866",
+        "EV-6b7917bd7edd4bde",
+        "EV-e1ebf7d63e058a39",
+        "EV-b52af7bb03c98eb0",
+        "EV-9705a8de3c2e9653",
+        "EV-07454824d51125ca",
+        "EV-6950bb00a0913038",
+        "EV-d29997d350e7c947",
+        "EV-6defe295e6fbe61c",
+        "EV-bce258f8f915ff5f",
+        "EV-4beb890f0879aeaf",
+        "EV-4900ddf0686f4bbc",
+        "EV-a46db68211837fec",
+        "EV-0a0b6604250a82b8",
+        "EV-a381531dd3abef18",
+        "EV-d8be3852cb83a361",
+        "EV-8973f8148205ed35",
+        "EV-65a4b47d1cca0a7a",
+        "EV-e8e47f4bb528e107"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-technology",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
-        "TX-technology-on_device",
-        "TX-technology-embodied_ai"
+        "TX-use_case-software_development",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-embodied_ai",
+        "TX-technology-fine_tuning",
+        "TX-use_case-research_science",
+        "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-technology-multimodal",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-distillation",
+        "TX-technology-computer_use"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-22"
-    },
-    {
-      "id": "EN-e274048227f164dc",
-      "name": "Rezolve Ai",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
+      "relatedEntityIds": [
+        "EN-f65bb77682b83476",
+        "EN-3850792f618f534b",
+        "EN-7839fb10a8f14c70",
+        "EN-d1ad14d4ad57d207",
+        "EN-74692028630429c7",
+        "EN-c70eca6b0f88f44d",
+        "EN-52fc33ae4d101a5d",
+        "EN-6a50fbf0b970c03a",
+        "EN-9fbf261b62c1d7c0",
+        "EN-536c4035ba0c7047",
+        "EN-4d748ebd71af03a7",
+        "EN-65ef4539bbcbe9fc",
+        "EN-5ce177312903c604",
+        "EN-3673c8b4dba7409e",
+        "EN-b70e8201c9feb94a",
+        "EN-373ac021a2c0bb2c",
+        "EN-bd2bfbea5911ec7a",
+        "EN-af53dbc3e443f7a9",
+        "EN-3c534d54dae48cbb",
+        "EN-b269456229397ef3",
+        "EN-fc0586e76f80f181",
+        "EN-1ecf93c539fcffca",
+        "EN-9de030d092759897",
+        "EN-b9db1ff13ae8496e",
+        "EN-7b8cb35de7ad047a"
       ],
-      "eventIds": [
-        "EV-99a0cb6bac516bdd"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-retail_ecommerce"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-09",
-      "lastSeen": "2026-07-09"
-    },
-    {
-      "id": "EN-1bf93b12e68cac56",
-      "name": "The Home Depot",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-b96493767e5cf645",
-        "EV-d12aa40eff40c97e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-retail_ecommerce"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-10"
-    },
-    {
-      "id": "EN-d9b1d7819af92e77",
-      "name": "Google Cloud",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-b4b5d141dac164c2",
-        "EV-36a9e4e908249381",
-        "EV-d12aa40eff40c97e",
-        "EV-96c8ce4ee89adb84",
-        "EV-a886a800f06ab9d6",
-        "EV-51dfd0d541380500"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-retail_ecommerce"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-07-18"
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -2949,7 +3343,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Gemini"
+        "谷歌"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -2972,6 +3366,8 @@
         "EV-cec235426920c522",
         "EV-b96493767e5cf645",
         "EV-029d34e296397775",
+        "EV-777eb5b7783b71fb",
+        "EV-5a9fe80f8e4ae066",
         "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-8ab833e13ecaa916",
@@ -2982,6 +3378,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-5b193a038ab4ea22",
+        "EV-969923b0b978a660",
         "EV-6ce069b1845f5a52",
         "EV-597b8257a97b3d02",
         "EV-5aaa4c6697606274",
@@ -3071,6 +3469,7 @@
         "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
+        "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
         "EV-48e17a3ba4b73550",
@@ -3117,30 +3516,225 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
         "EN-6f216f2ea5b7a13e",
-        "EN-18f0900d6c487f59",
+        "EN-31055a8d9856fce4",
         "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
         "EN-0e008e2c06144ec8",
-        "EN-cfe6926406f30a15",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
+        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
+        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
+        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
+        "EN-cfe6926406f30a15",
         "EN-e3db3da2b7dc6057",
         "EN-2aae0de3f5530f08"
       ],
-      "firstSeen": "2026-04-12",
-      "lastSeen": "2026-07-22"
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "EN-88e2cce43eeadb36",
+      "name": "Alipay",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "支付宝"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-584212d254d882bc",
+        "EV-02686922dd82c4aa",
+        "EV-3fb492fb45980541",
+        "EV-2ffc3377977da114",
+        "EV-7d09b00182b08c3f",
+        "EV-f6ac2938949f74ec",
+        "EV-2c1fc2143d7d4a6a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-07",
+      "lastSeen": "2026-07-20"
+    },
+    {
+      "id": "EN-276a8bc458036a1a",
+      "name": "支付宝",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-584212d254d882bc",
+        "EV-02686922dd82c4aa"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-18"
+    },
+    {
+      "id": "EN-5239a379b6326549",
+      "name": "OPPO达成智能体跨端互联",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-02686922dd82c4aa"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-8147e6fed86d42c1",
+      "name": "OPPO",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b53c30df8b86da5b",
+        "EV-f020dd198aa2f952",
+        "EV-736404028b8ad33e",
+        "EV-53f08daddd011dbb",
+        "EV-0592458e094f26cc",
+        "EV-33b218942b1deab7",
+        "EV-afd0332ad8f5f05b",
+        "EV-02686922dd82c4aa",
+        "EV-2fd730d0ad452334",
+        "EV-4faa2bcf2e42e60c",
+        "EV-7d09b00182b08c3f",
+        "EV-8a9b12665a3e40a0",
+        "EV-cfa8c754627747a1",
+        "EV-0d862d59b05361cc",
+        "EV-dab4d3f2059e8880",
+        "EV-33fba8931cca96d5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
+        "TX-use_case-customer_service",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-robotics_automation",
+        "TX-technology-on_device",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-04-28",
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "EN-e274048227f164dc",
+      "name": "Rezolve Ai",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-99a0cb6bac516bdd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-09"
+    },
+    {
+      "id": "EN-1bf93b12e68cac56",
+      "name": "The Home Depot",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b96493767e5cf645",
+        "EV-d12aa40eff40c97e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-10"
+    },
+    {
+      "id": "EN-d9b1d7819af92e77",
+      "name": "Google Cloud",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b4b5d141dac164c2",
+        "EV-36a9e4e908249381",
+        "EV-d12aa40eff40c97e",
+        "EV-96c8ce4ee89adb84",
+        "EV-a886a800f06ab9d6",
+        "EV-51dfd0d541380500"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-18"
     },
     {
       "id": "EN-151013fb8438c046",
@@ -3328,280 +3922,6 @@
       "lastSeen": "2026-06-11"
     },
     {
-      "id": "EN-7d3194f79e645c42",
-      "name": "OpenAI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-d7a7244d620a2142",
-        "EV-4da1a7c4d527eb69",
-        "EV-e41fc65eb014893f",
-        "EV-974a6b7d0e0efef2",
-        "EV-7abd8ec418f1e7f3",
-        "EV-dfddbb260b3d1c77",
-        "EV-78a11d309c3d4e97",
-        "EV-20d762872664fddb",
-        "EV-aa33ca051f3a7f78",
-        "EV-d4e44892226be468",
-        "EV-edcb66d0401cfb8f",
-        "EV-036f43cf7a0549eb",
-        "EV-336cd248842004a5",
-        "EV-a42e51959c627554",
-        "EV-ee0662b75588987e",
-        "EV-9055cb4fa2b4ee62",
-        "EV-b1138bccf5ccd86c",
-        "EV-201b25d4f3cf696a",
-        "EV-d9270ae7b862212b",
-        "EV-7954fd5a6b8b76d0",
-        "EV-7add33b4c74dbf1a",
-        "EV-1abf0d076d30ec6d",
-        "EV-3b40ec144e5db22c",
-        "EV-467d1a701d21327d",
-        "EV-c5643983538c6513",
-        "EV-e15ae1112294d59e",
-        "EV-36d484148fbd3424",
-        "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
-        "EV-62901df23f471eea",
-        "EV-538adc98d1da8fda",
-        "EV-d209a6acecba4285",
-        "EV-a5d127e62d102ad6",
-        "EV-d1e2a7c6d314612c",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-83b2e8f7fe679bc3",
-        "EV-8abf5adc3e72fbb8",
-        "EV-3a704c40204ecfd9",
-        "EV-7f2811d2272cf4a3",
-        "EV-2fab4396000198d2",
-        "EV-3fb492fb45980541",
-        "EV-b833b29d904b39ac",
-        "EV-48015ed51ec9be9f",
-        "EV-8ab833e13ecaa916",
-        "EV-41ffecb51e643397",
-        "EV-5f199c45a41b8555",
-        "EV-26183a56cf9ed63c",
-        "EV-3fbfb89a10efd42f",
-        "EV-1c6adfef6f405319",
-        "EV-66df35d14361a6cb",
-        "EV-3c4d6d70ac763885",
-        "EV-133a92cb6cb25a0c",
-        "EV-7c836c34e7cf36ee",
-        "EV-071c72225b8aaf80",
-        "EV-0d5a32aca724d30e",
-        "EV-ae1e2769aff82965",
-        "EV-ab3e820aa6d92542",
-        "EV-bc41a3060f11ca2d",
-        "EV-83a8ac8a2554b60c",
-        "EV-a68475d82ec939b5",
-        "EV-c237f5dc53f0a923",
-        "EV-3a74e4995b590507",
-        "EV-7963d8c78531f12d",
-        "EV-70e3f88cb06a856c",
-        "EV-7c899d5decafc42f",
-        "EV-a4a61babc902931a",
-        "EV-1c2723ad61d192bd",
-        "EV-74dfbd82b47dc626",
-        "EV-167f50a6f3134bd5",
-        "EV-30749250196dd507",
-        "EV-712473b23a2a11a0",
-        "EV-b9296439f7c34c89",
-        "EV-cf5b2a0aff3914bd",
-        "EV-025778b83c1b2ca9",
-        "EV-4b8dffdf86ae5009",
-        "EV-969ed3078d10f0c9",
-        "EV-d7d8fcd0694a590f",
-        "EV-6e7b632ee0b3410d",
-        "EV-efee7c1ac4dc336f",
-        "EV-2ffbe4560e69992a",
-        "EV-f1befee642551db7",
-        "EV-0dbc7b904378f713",
-        "EV-10eb16192d83dbf7",
-        "EV-ae736eb124d7163a",
-        "EV-cf317dd1579a01bb",
-        "EV-d07f7a8d4d20a034",
-        "EV-f023e94a239f22f2",
-        "EV-107725f2bdece882",
-        "EV-3ab2de2a340e0a23",
-        "EV-6af1e74358025628",
-        "EV-ee9a1c99fe7054d6",
-        "EV-225ad0a94611daf3",
-        "EV-cadcc94249dea81d",
-        "EV-dae42c1daf8ba2f8",
-        "EV-caec65aef89d3b4a",
-        "EV-d07906b648eec63f",
-        "EV-70efbfcaadcdb259",
-        "EV-ad2e4fe6a149d95d",
-        "EV-51aed98773a9fca1",
-        "EV-cc3b92fe233953cf",
-        "EV-2059f42c7b2aff44",
-        "EV-578a9db1fe952d0a",
-        "EV-b93b5cc15823e9c3",
-        "EV-20ffa968bcbc4729",
-        "EV-77662aa9bef9efbe",
-        "EV-9ca7db66f8f10b63",
-        "EV-9c4b862020202f6c",
-        "EV-5012364af7480121",
-        "EV-918fc324de3117bd",
-        "EV-8a91e14f37d32b4d",
-        "EV-31782f0824ae1db1",
-        "EV-860b90c017deaa59",
-        "EV-ae5333aeb2be6316",
-        "EV-888b9eb73582e21c",
-        "EV-13f0b515194f3245",
-        "EV-abf0990dcaceb1ce",
-        "EV-b8bfab77707274b7",
-        "EV-6364cfadff0d1d30",
-        "EV-6eb9a23be3117421",
-        "EV-a0d3853dd41c8ef6",
-        "EV-b26bead25288d19c",
-        "EV-37cdd2fae39aaa2e",
-        "EV-1e7c76dae985100f",
-        "EV-644337db309a1c82",
-        "EV-be69ef6fcae83890",
-        "EV-482df8a8ef264238",
-        "EV-9110f23a7e60173e",
-        "EV-9e04edd969c977a1",
-        "EV-e792252690f98a22",
-        "EV-2aca9a810ea65555",
-        "EV-f953555178744c22",
-        "EV-28145c97a7237d6d",
-        "EV-bac5824e594f1831",
-        "EV-0c06df62702d26ab",
-        "EV-f01d28aac73c3f9c",
-        "EV-574998b1638a3f4f",
-        "EV-0b6992ae74184d13",
-        "EV-7f979d0a01e6dffa",
-        "EV-f3e11eadfb7c6a4b",
-        "EV-ab3586268ebfab38",
-        "EV-2cb9dbed2b2b6077",
-        "EV-d6ba9ef3ff65940c",
-        "EV-3f8ba5855b64dd1a",
-        "EV-b73c7096546b82e8",
-        "EV-f89ba2b487d4abf1",
-        "EV-57b029a4afb71044",
-        "EV-ad1444d8653b37ae",
-        "EV-8f167245603f8ebc",
-        "EV-fbdfb5888ad19663",
-        "EV-cac9d9f31ef675ce",
-        "EV-4a727d54055d6d0e",
-        "EV-e295f808713644c7",
-        "EV-3474febbec499f3c",
-        "EV-519537a36355d82e",
-        "EV-631197767a45d34c",
-        "EV-657837763764c869",
-        "EV-ce291577f61b8543",
-        "EV-a4f052325d0ef230",
-        "EV-3550e9863266ea96",
-        "EV-ca420d07e12369f1",
-        "EV-773ffcc6e1df56fa",
-        "EV-02b19ffbe883ee2e",
-        "EV-cf496e0f8a56ca97",
-        "EV-b30dcacd355fe5f5",
-        "EV-2f7e6d3a68bbf08f",
-        "EV-5cd10de5c12916f0",
-        "EV-067f57f6e6ffa6ce",
-        "EV-da6678e4e865e00e",
-        "EV-14b44a40808340f5",
-        "EV-2d56dec8dfeb2b56",
-        "EV-8cb2374f76202ecc",
-        "EV-946569cccbd9222f",
-        "EV-917966af8545a380",
-        "EV-b4203b10d6592bf2",
-        "EV-5eb23cdd9c14c6ea",
-        "EV-e1fa30136e2e12f1",
-        "EV-10e841ab47d2b1f1",
-        "EV-f2d29ca7b05c3dd9",
-        "EV-35d1cc31d1351d4c",
-        "EV-ea2b6ce4acd46366",
-        "EV-2821d0cef61b3c6a",
-        "EV-6f7c5f0abad3d4da",
-        "EV-8f497488d129fee5",
-        "EV-a8f1204b54ae6475",
-        "EV-62df953d81def866",
-        "EV-6b7917bd7edd4bde",
-        "EV-e1ebf7d63e058a39",
-        "EV-b52af7bb03c98eb0",
-        "EV-9705a8de3c2e9653",
-        "EV-07454824d51125ca",
-        "EV-6950bb00a0913038",
-        "EV-d29997d350e7c947",
-        "EV-6defe295e6fbe61c",
-        "EV-bce258f8f915ff5f",
-        "EV-4beb890f0879aeaf",
-        "EV-4900ddf0686f4bbc",
-        "EV-a46db68211837fec",
-        "EV-0a0b6604250a82b8",
-        "EV-a381531dd3abef18",
-        "EV-d8be3852cb83a361",
-        "EV-8973f8148205ed35",
-        "EV-65a4b47d1cca0a7a",
-        "EV-e8e47f4bb528e107"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-technology",
-        "TX-industry-financial_services",
-        "TX-use_case-enterprise_operations",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-professional_services",
-        "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
-        "TX-technology-long_context",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-data_analysis",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
-        "TX-technology-fine_tuning",
-        "TX-use_case-research_science",
-        "TX-technology-open_weights",
-        "TX-technology-model_context_protocol",
-        "TX-technology-multimodal",
-        "TX-technology-guardrails_safety",
-        "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-computer_use"
-      ],
-      "relatedEntityIds": [
-        "EN-3850792f618f534b",
-        "EN-7839fb10a8f14c70",
-        "EN-d1ad14d4ad57d207",
-        "EN-74692028630429c7",
-        "EN-c70eca6b0f88f44d",
-        "EN-52fc33ae4d101a5d",
-        "EN-6a50fbf0b970c03a",
-        "EN-9fbf261b62c1d7c0",
-        "EN-536c4035ba0c7047",
-        "EN-4d748ebd71af03a7",
-        "EN-65ef4539bbcbe9fc",
-        "EN-5ce177312903c604",
-        "EN-3673c8b4dba7409e",
-        "EN-b70e8201c9feb94a",
-        "EN-373ac021a2c0bb2c",
-        "EN-bd2bfbea5911ec7a",
-        "EN-af53dbc3e443f7a9",
-        "EN-3c534d54dae48cbb",
-        "EN-b269456229397ef3",
-        "EN-fc0586e76f80f181",
-        "EN-1ecf93c539fcffca",
-        "EN-9de030d092759897",
-        "EN-b9db1ff13ae8496e",
-        "EN-7b8cb35de7ad047a"
-      ],
-      "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-22"
-    },
-    {
       "id": "EN-94ff75465b1afa65",
       "name": "Oasis 3",
       "entityType": "product_candidate",
@@ -3639,6 +3959,7 @@
       "eventIds": [
         "EV-f282ab8740ff0096",
         "EV-5be48cce8dc4f3de",
+        "EV-bf46d8d6d7d6e90a",
         "EV-53f08daddd011dbb",
         "EV-b726a9cda7beae64",
         "EV-afcd5426f5c01dc7",
@@ -3733,7 +4054,7 @@
         "EN-af3ceabbe048a291"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-40e307d789f77264",
@@ -3867,6 +4188,7 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
+        "EV-eec1e6857f0e0b2b",
         "EV-6acfb15c012ddf6d",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
@@ -3877,6 +4199,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-6c81f03e885f10af",
+        "EV-e1e30a2a4a5232c6",
         "EV-cd067fa6f39fe828",
         "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
@@ -3917,6 +4241,7 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-89bdda008227fb6b",
         "EV-62df953d81def866",
         "EV-1b92b6c835ce240c",
         "EV-3da14e3743571e92",
@@ -3939,6 +4264,7 @@
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
@@ -3947,6 +4273,7 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
@@ -3958,7 +4285,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-2dc010636b9dce91",
@@ -4038,7 +4365,8 @@
         "EV-72e7f5cf283f16b8",
         "EV-f2b2460c0273e725",
         "EV-dd62847548bb6ae3",
-        "EV-34929bdd016dc8d6"
+        "EV-34929bdd016dc8d6",
+        "EV-196c28aaa71dd6d5"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -4052,7 +4380,7 @@
         "EN-8d4321d936320802"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-14"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-56ee86045cfb0ddd",
@@ -4106,6 +4434,47 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-3d5eb0bc571f55bf",
+      "eventId": "EV-777eb5b7783b71fb",
+      "dataDate": "2026-07-23",
+      "date": "2025-10-09",
+      "title": "印度试点AI智能体主导的电商，融合ChatGPT、Gemini、Claude",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "India",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "AI chatbot-led e-commerce with ChatGPT, Gemini, Claude in the mix",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "On Thursday, the National Payments Corporation of India (NPCI), the federal body behind the country’s widely used Unified Payments Interface (UPI), partnered with OpenAI and fintech firm Razorpay to enable consumers to shop and pay directly through ChatGPT. Razorpay confirmed to TechCrunch that the pilot is being rolled out nationwide and will become widely available in the coming months."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$5 "
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2025/10/09/india-pilots-ai-chatbot-led-e-commerce-with-chatgpt-gemini-claude-in-the-mix",
+      "entityIds": [
+        "EN-fb54e9062429a937",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDE-309bc49d109029a3",
       "eventId": "EV-99a0cb6bac516bdd",

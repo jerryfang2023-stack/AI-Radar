@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "node": {
     "id": "TX-industry-healthcare_life_sciences",
@@ -44,6 +44,7 @@
       "EV-57597c92f7b183a9",
       "EV-6ce6b9c9780b97d9",
       "EV-dd62847548bb6ae3",
+      "EV-7fad565c9ffab4b0",
       "EV-322796d9761a0824",
       "EV-14b44a40808340f5",
       "EV-edb1ddb3a091ada4"
@@ -95,6 +96,7 @@
       "EN-4a639cb888a15d75",
       "EN-56ee86045cfb0ddd",
       "EN-9dde0c2d375060f6",
+      "EN-b21a23767d4d35a9",
       "EN-ea3bd73e2b506e00",
       "EN-a19ad969c84178e9",
       "EN-b6e23938808f272d"
@@ -110,7 +112,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-01-20",
-    "lastSeen": "2026-07-22"
+    "lastSeen": "2026-07-23"
   },
   "events": [
     {
@@ -3168,6 +3170,68 @@
       "publisher": "supermicro.com"
     },
     {
+      "id": "EV-7fad565c9ffab4b0",
+      "dataDate": "2026-07-23",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-23",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "海南全面禁止 AI 自动开方、虚假问诊、事后补方等处方药零售违规行为",
+      "originalTitle": "",
+      "subject": "海南省药品监督管理局",
+      "action": "policy_regulation",
+      "object": "AI自动开方、虚假问诊、事后补方等违规行为",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "entityIds": [
+        "EN-b21a23767d4d35a9"
+      ],
+      "entityNames": [
+        "海南省药品监督管理局"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/980/399.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-322796d9761a0824",
       "dataDate": "2026-07-15",
       "date": "2026-07-15",
@@ -3465,6 +3529,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-ccbf97fdf4dc11d0",
         "EV-2069f6a931b8c9d6",
         "EV-02882e6f5e1902c6",
         "EV-e3792591090281c6",
@@ -3522,6 +3587,7 @@
         "EV-b85139b8fba1a5c5",
         "EV-c4303801ea8c54dc",
         "EV-0b7f11c0c18b8bf4",
+        "EV-0b6cfbf67ba2da31",
         "EV-8b0f056571d68269",
         "EV-30ba1a24f74ccc6d",
         "EV-b4eb99a878be9bb2",
@@ -3530,6 +3596,7 @@
         "EV-4dd25589d834060d",
         "EV-6617850e0b014051",
         "EV-c81cb21337a9bb98",
+        "EV-056bb8c683ef60a4",
         "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
         "EV-181b425d2a600cad",
@@ -3545,6 +3612,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
+        "EV-1ba939d8baf43207",
         "EV-941ba9ebdc43f20c",
         "EV-92d28aef0c4b0a8a",
         "EV-c2800c1c5a3f568f",
@@ -3599,7 +3667,8 @@
         "EV-9705a8de3c2e9653",
         "EV-6fba63ca5f1e51c7",
         "EV-8b4f7844af234ed8",
-        "EV-e8e47f4bb528e107"
+        "EV-e8e47f4bb528e107",
+        "EV-8654cc0faeb02d14"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -3637,7 +3706,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-caaa8e02be54cfc9",
@@ -3698,6 +3767,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-14cc7f194f3e5af8",
+        "EV-754e83c2d19005fe",
         "EV-d7a7244d620a2142",
         "EV-4da1a7c4d527eb69",
         "EV-e41fc65eb014893f",
@@ -3723,6 +3794,8 @@
         "EV-3b40ec144e5db22c",
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
+        "EV-c3f617e75d303f59",
+        "EV-6fa2c58973ea61b4",
         "EV-e15ae1112294d59e",
         "EV-36d484148fbd3424",
         "EV-47a16db069ed320e",
@@ -3736,6 +3809,8 @@
         "EV-83b2e8f7fe679bc3",
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
+        "EV-777eb5b7783b71fb",
+        "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
@@ -3749,10 +3824,14 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-0d5a32aca724d30e",
+        "EV-1ba939d8baf43207",
+        "EV-5b193a038ab4ea22",
+        "EV-969923b0b978a660",
+        "EV-ea6abb5378846a71",
         "EV-133a92cb6cb25a0c",
         "EV-7c836c34e7cf36ee",
         "EV-071c72225b8aaf80",
-        "EV-0d5a32aca724d30e",
         "EV-ae1e2769aff82965",
         "EV-ab3e820aa6d92542",
         "EV-bc41a3060f11ca2d",
@@ -3930,9 +4009,11 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-distillation",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-7839fb10a8f14c70",
         "EN-d1ad14d4ad57d207",
@@ -3958,8 +4039,8 @@
         "EN-b9db1ff13ae8496e",
         "EN-7b8cb35de7ad047a"
       ],
-      "firstSeen": "2026-02-19",
-      "lastSeen": "2026-07-22"
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-41a9132b800767fb",
@@ -4146,6 +4227,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-ec2e421d0e18be9b",
         "EV-c0a65877001ed413",
+        "EV-0d5a32aca724d30e",
         "EV-303b418c63895ba6",
         "EV-30749250196dd507",
         "EV-43976be427aefb52",
@@ -4173,13 +4255,15 @@
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
-        "TX-use_case-cybersecurity"
+        "TX-use_case-cybersecurity",
+        "TX-technology-open_weights",
+        "TX-technology-distillation"
       ],
       "relatedEntityIds": [
         "EN-9fbf261b62c1d7c0"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-023e881577ad3ab1",
@@ -4232,6 +4316,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-c3f617e75d303f59",
         "EV-b4f69c41e23c7ce0",
         "EV-11b2293769081d4c",
         "EV-883d3b5f6d30eb48",
@@ -4258,6 +4343,8 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-18df881cc436b3cb",
+        "EV-828698c8779bb522",
         "EV-2fea1664807824ce",
         "EV-3ba971c5939b0f04",
         "EV-cb3a8846bc4f8aca",
@@ -4315,6 +4402,8 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-89bdda008227fb6b",
+        "EV-89f9216de5b559ac",
         "EV-c14e5185fd6bbe30",
         "EV-08f736f61f2b46f3",
         "EV-2c7d13d234147817",
@@ -4346,11 +4435,14 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-distillation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
         "EN-52c2f30b6bda5898",
         "EN-1e71d9c1a5c4de16",
@@ -4378,7 +4470,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-b81c8201acfc7639",
@@ -4469,6 +4561,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-c7ba7b093a1a3b94",
         "EV-cafe435ddd007821",
         "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
@@ -4488,7 +4581,7 @@
         "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-80d387ccb3289295",
@@ -4580,6 +4673,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-9c069dcbaf5283a2",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
         "EV-e41fc65eb014893f",
@@ -4603,6 +4697,9 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-c3f617e75d303f59",
+        "EV-0e3f748f87f5892a",
+        "EV-8a2d8ebbd700c787",
         "EV-2c16aa6254de4496",
         "EV-47a16db069ed320e",
         "EV-49c6291694fb6c7b",
@@ -4613,6 +4710,9 @@
         "EV-c81cb21337a9bb98",
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
+        "EV-777eb5b7783b71fb",
+        "EV-75b9b997e9c7e5d1",
+        "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-4515377aa6311bf1",
@@ -4627,10 +4727,14 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-6cd7509380208a9d",
+        "EV-0d5a32aca724d30e",
+        "EV-3e449c3e9ad6a9e1",
+        "EV-5b193a038ab4ea22",
+        "EV-604cffac28a0af69",
         "EV-4449950a89892852",
         "EV-6ce069b1845f5a52",
         "EV-071c72225b8aaf80",
-        "EV-0d5a32aca724d30e",
         "EV-3043858af3970696",
         "EV-8121a1ecdf168d8a",
         "EV-cd067fa6f39fe828",
@@ -4782,6 +4886,10 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-8cb5b0ed18c7cdd8",
+        "EV-7b2a272a891f54d1",
+        "EV-89bdda008227fb6b",
+        "EV-ae9142b65fa86975",
         "EV-33fba8931cca96d5",
         "EV-22c88b4ff8c7d8d8",
         "EV-bf8086947a2639d4",
@@ -4817,7 +4925,8 @@
         "EV-65a4b47d1cca0a7a",
         "EV-e8e47f4bb528e107",
         "EV-01f196f98ece4eb2",
-        "EV-ecfc552af7344d65"
+        "EV-ecfc552af7344d65",
+        "EV-8654cc0faeb02d14"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -4844,10 +4953,13 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-distillation"
+        "TX-technology-distillation",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
+        "EN-830abc32d2a443c5",
+        "EN-240389f4b730bad4",
+        "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
         "EN-729324072d368379",
         "EN-ef11a801c5bd3673",
@@ -4869,8 +4981,8 @@
         "EN-b8c236d640d6a5fb",
         "EN-d8494bb34d6ddc43"
       ],
-      "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-22"
+      "firstSeen": "2025-09-04",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -4926,6 +5038,7 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
+        "EV-eec1e6857f0e0b2b",
         "EV-6acfb15c012ddf6d",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
@@ -4936,6 +5049,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-6c81f03e885f10af",
+        "EV-e1e30a2a4a5232c6",
         "EV-cd067fa6f39fe828",
         "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
@@ -4976,6 +5091,7 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-89bdda008227fb6b",
         "EV-62df953d81def866",
         "EV-1b92b6c835ce240c",
         "EV-3da14e3743571e92",
@@ -4998,6 +5114,7 @@
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
@@ -5006,6 +5123,7 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
@@ -5017,7 +5135,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-8d291c7017252b07",
@@ -5052,6 +5170,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-b53c30df8b86da5b",
         "EV-f020dd198aa2f952",
         "EV-736404028b8ad33e",
         "EV-53f08daddd011dbb",
@@ -5081,7 +5200,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-28",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -5310,6 +5429,7 @@
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
         "EV-f8c3a83d883c9b22",
+        "EV-5b193a038ab4ea22",
         "EV-2fea1664807824ce",
         "EV-70cbf25f7ec2cc3a",
         "EV-f8ba1728de6a4899",
@@ -5334,6 +5454,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
         "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
@@ -5347,7 +5468,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-86acdf589a6723d5",
@@ -5550,7 +5671,8 @@
         "EV-72e7f5cf283f16b8",
         "EV-f2b2460c0273e725",
         "EV-dd62847548bb6ae3",
-        "EV-34929bdd016dc8d6"
+        "EV-34929bdd016dc8d6",
+        "EV-196c28aaa71dd6d5"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -5564,7 +5686,7 @@
         "EN-8d4321d936320802"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-14"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-56ee86045cfb0ddd",
@@ -5617,6 +5739,27 @@
       "lastSeen": "2026-07-14"
     },
     {
+      "id": "EN-b21a23767d4d35a9",
+      "name": "海南省药品监督管理局",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7fad565c9ffab4b0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-23"
+    },
+    {
       "id": "EN-ea3bd73e2b506e00",
       "name": "Meta",
       "entityType": "organization_candidate",
@@ -5635,11 +5778,16 @@
         "EV-917a390341b9fce6",
         "EV-3f8f6a578be79988",
         "EV-467d1a701d21327d",
+        "EV-c3f617e75d303f59",
         "EV-bc9abd502c002102",
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
+        "EV-1ba939d8baf43207",
+        "EV-5b193a038ab4ea22",
+        "EV-655018b9820c7940",
+        "EV-828698c8779bb522",
         "EV-938eebe85a688ff1",
         "EV-a37b9d9fb85e460f",
         "EV-cf176636839e45be",
@@ -5665,6 +5813,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
         "EV-04cf95633b564f9a",
         "EV-02b07069713d9a1c",
@@ -5678,6 +5827,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-cybersecurity",
@@ -5699,7 +5849,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-a19ad969c84178e9",

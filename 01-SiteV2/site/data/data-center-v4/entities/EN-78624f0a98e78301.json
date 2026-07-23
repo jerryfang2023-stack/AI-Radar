@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-78624f0a98e78301",
@@ -95,7 +95,9 @@
       "name": "Thinking Machines Lab",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "tml"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -104,6 +106,7 @@
         "EV-0a5d792223f5381f",
         "EV-869c9ea96c58873d",
         "EV-ad40755ca624afe7",
+        "EV-9ad569c873451304",
         "EV-d5f276ad6b2ac9de",
         "EV-181b425d2a600cad",
         "EV-2fea1664807824ce",
@@ -119,6 +122,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
         "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
@@ -130,8 +134,8 @@
       "relatedEntityIds": [
         "EN-78624f0a98e78301"
       ],
-      "firstSeen": "2026-06-15",
-      "lastSeen": "2026-07-22"
+      "firstSeen": "2026-05-14",
+      "lastSeen": "2026-07-23"
     }
   ],
   "relationships": [

@@ -1,0 +1,383 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-024
+title: "Exclusive: Oro Labs, which uses AI to streamline corporate procurement, raises $100 million | Fortune"
+title_zh: "独家：Oro Labs利用AI智能体简化企业采购，获1亿美元融资"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/"
+canonical_url: "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "procurement_marketplace"
+search_path_label: "采购 / 招投标 / Marketplace 路径"
+author: ""
+published_at: "2026-03-12T00:00:00.000Z"
+collected_at: 2026-07-23T03:51:08.089Z
+language: mixed
+full_text_hash: 903d49978d88c371
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-024-exclusive-oro-labs-which-uses-ai-to-streamline-corporate-procurement-r.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-024-exclusive-oro-labs-which-uses-ai-to-streamline-corporate-procurement-r.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":10749,"paragraph_count":43,"sentence_count":58,"boilerplate_hits":4,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 10749
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"903d49978d88c371","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 00b7f265a7c33b76
+content_hash: 903d49978d88c371
+semantic_hash: 7c70925a15e520dc
+duplicate_of: ""
+first_seen_at: "2026-03-12T00:00:00.000Z"
+last_seen_at: 2026-07-23T03:51:08.089Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Google"],"products":["agents"],"people":[],"industries":["金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","采购 / 招投标"],"business_actions":["发布 / 推出","合作 / 联盟","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","采购","销售 / 客服"],"numbers":["$100 million","1 M","2","12","2026","3","00","$160 million"],"quotes":["procurement orchestration platform","revenue retention rate,","need a layer that brings order and intelligence to the chaos—and that layer is orchestration.","designed as systems of record, rather than systems of action.","We built Oro to ensure enterprises can move faster without losing control,"]}
+evidence_seed: {"company_actions":["Exclusive: Oro Labs, which uses AI to streamline corporate procurement, raises $100 million | Fortune # Trendingnow # 1 Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock # 2 ‘I want to die broke’: Billionai... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace","The company just announced it has raised another $100 million in venture capital funding.","Photo courtesy of Oro Labs Add Fortune on Google for similar content."],"case_details":[],"workflow_changes":["The startup's software platform aims to use AI to automate procurement processes for large enterprises."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Exclusive: Oro Labs, which uses AI to streamline corporate procurement, raises $100 million | Fortune # Trendingnow # 1 Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock # 2 ‘I want to die broke’: Billionai... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"Trending now OpenAI says its AI models secretly broke out of a secure test environment and hacked into AI company Hugging Face in order to cheat on an evaluation Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock Mathematicians grapple with a ‘very rapid and very unsettling change’ as AI cracks yet another century-old problem OpenAI says its AI models secretly broke out of a secure test environment and hacked into AI company Hug","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"funding","text":"The company just announced it has raised another $100 million in venture capital funding.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The startup's software platform aims to use AI to automate procurement processes for large enterprises.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Photo courtesy of Oro Labs Add Fortune on Google for similar content.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Add us on Google Add us on Google Oro Labs , a Silicon Valley startup that uses artificial intelligence to automate companies’ procurement processes, has raised $100 million in new venture capital funding.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-23T03:51:08.089Z
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Exclusive: Oro Labs, which uses AI to streamline corporate procurement, raises $100 million | Fortune
+
+## clean_text
+
+Trending now
+OpenAI says its AI models secretly broke out of a secure test environment and hacked into AI company Hugging Face in order to cheat on an evaluation
+Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock
+Mathematicians grapple with a ‘very rapid and very unsettling change’ as AI cracks yet another century-old problem
+OpenAI says its AI models secretly broke out of a secure test environment and hacked into AI company Hugging Face in order to cheat on an evaluation
+Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock
+Mathematicians grapple with a ‘very rapid and very unsettling change’ as AI cracks yet another century-old problem
+Startups & Venture Venture Capital
+Exclusive: Oro Labs, which uses AI to streamline corporate procurement, raises $100 million
+By Jeremy Kahn
+Jeremy Kahn
+Editor, AI
+By Jeremy Kahn
+Jeremy Kahn
+Editor, AI
+March 12, 2026, 3:00 AM ET
+Oro Labs' cofounders (from left): Sudhir Bhojwani, Lalitha Rajagopalan, and Yuan Tung. The company just announced it has raised another $100 million in venture capital funding. The startup's software platform aims to use AI to automate procurement processes for large enterprises. Photo courtesy of Oro Labs
+Add Fortune on Google for similar content.
+Add us on Google
+Add us on Google
+Oro Labs , a Silicon Valley startup that uses artificial intelligence to automate companies’ procurement processes, has raised $100 million in new venture capital funding.
+Recommended Video
+The fundraise, which is the company’s Series C round, is being led by Goldman Sachs Growth Equity and Brighton Park Capital. Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating. As part of the deal, Clare Greenan, a vice president at Goldman Sachs Growth Equity, and Mike Gregoire, partner at Brighton Park Capital, will join Oro’s board of directors.
+Oro declined to disclose its valuation following the new fundraise. The new capital raise brings the total amount of money the startup has raised to date to $160 million.
+The five-year old startup has built what it calls a “procurement orchestration platform”—a layer of AI-powered software that sits on top of a company’s existing enterprise resource planning and procurement systems. Rather than replacing those legacy investments, Oro acts as an intelligent front door, using AI agents to route requests, check compliance, and automate manual processes.
+Oro’s customers include a number of Fortune 500 companies, including Coca-Cola , Pfizer , Novartis , Thermo Fisher Scientific , and Booking.com, among others. The company says it now works with 15 of the top 25 life sciences companies, two of the top four diversified U.S. banks, and five of the top 15 food and drink manufacturers.
+Oro’s fundraise comes after a year in which the five-year-old company said it achieved 300% revenue growth. The company says it expects to triple revenue again this year and that it is currently seeing a 150% “revenue retention rate,” meaning that existing customers are rapidly expanding their use of the platform.
+“Demand for procurement orchestration has skyrocketed because of one fundamental truth: procurement teams simply cannot continue to operate like they always have. The market volatility, disruption and price pressures are too severe,” Sudhir Bhojwani, co-founder and CEO of Oro Labs, said. Companies, he said, “need a layer that brings order and intelligence to the chaos—and that layer is orchestration.”
+Bhojwani, a software engineer who spent nine years at Ariba, a procurement software company that was acquired by SAP , told Fortune that the fundamental problem with existing procurement software is that it is “designed as systems of record, rather than systems of action.” What he means is that the software produces data in the form of purchase orders, contracts, and invoices, but is not designed, for example, to produce risk-based assessments of whether a particular invoice should be paid or presents a compliance issue.
+He said procurement departments consistently receive the lowest net promoter scores in internal company surveys because they are seen as overly-bureaucratic blockers that slow down the business. And most of that bureaucracy still involves manual processes, according to Bhojwani. He said one Fortune 500 energy company, which he could not name but said had roughly $40 billion in annual revenue, had a procurement process that involved 20 million human touchpoints per year before it began using Oro’s software.
+“We built Oro to ensure enterprises can move faster without losing control,” Lalitha Rajagopalan, a cofounder of Oro Labs who currently leads strategy and operations for the company, told Fortune .
+Bhojwani said that Oro’s software helped one global pharmaceutical company with roughly $20 billion in procurement spending bring the time it takes to onboard a new supplier from more than 30 days to under 10 days, and that the company thinks it can reduce this further to less than five days. At the same company, manual compliance checks on purchase orders that previously took 36 hours now take six minutes, with 50% of transactions running completely without human intervention, he said. He said the company has compared the accuracy of Oro’s automated decisions to those made by its purchasing department employees and that the AI system’s accuracy has reached 90%. He said this inevitably meant that “the number of people who are doing this work can be reduced dramatically.”
+Gregoire, the Brighton Park partner who is joining Oro’s board, said the company represents a generational shift in how procurement technology works. “Previous generations of procurement software relied on rigid, manual decision trees that easily broke down under enterprise scale and complexity,” he said. But Oro is built on AI systems that understand the language in purchase orders, invoices, and contracts and also builds on a knowledge graph, or complex map, of how a particular company’s processes work and what its purchasing and compliance rules are.
+Gregoire added that Brighton Park liked the fact that Oro’s founding team has deep roots in the procurement industry, giving them an intimate understanding of where legacy systems fall short. “Their extraordinary traction with the world’s most complex, highly regulated enterprises like Novartis, Coca-Cola , and Roche proves the platform can handle the most demanding compliance environments,” he said.
+Oro plans to use the new capital to accelerate its growth, building out its product capabilities but also adding to its sales and go-to-market teams. Bhojwani said that the company spends about half of its budget on research and development. The company is also expanding what it calls the Oro Partner Enterprise Network, or OPEN, which brings together technology providers, consulting firms, and service partners. Unlike many legacy software-as-a-service companies, Oro does not use a per-seat licensing model. Instead, it charges based on transaction volume—a pricing structure that Bhojwani said better reflects the value the platform delivers. “I never believed in [the per-seat] model fundamentally,” he said of seat-based pricing. “It didn’t make sense before and it definitely does not make sense now.”
+He also said that he is not concerned that businesses will use AI coding tools to create their own procurement software with similar capabilities to what Oro has built. He says bringing together all the capabilities that Oro has would not be easy, and, even if a company did do that on their own, the cost of maintaining such a system would not be something most companies would want to take on.
+Subscribe to Fortune Gulf Brief . Every Tuesday, this new newsletter delivers clear-eyed, authoritative intelligence on the deals, decisions, policies, and power shifts shaping one of the world’s most consequential regions, written for the people who need to act on it. Sign up here.
+About the Author By Jeremy Kahn Editor, AI
+Jeremy Kahn is the AI editor at Fortune , spearheading the publication's coverage of artificial intelligence. He also co-authors Eye on AI , Fortune ’s flagship AI newsletter.
+See full bio
+Add Fortune on Google for similar content.
+Add us on Google
+Latest in Startups & Venture
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Most Popular
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+
+## full_text
+
+Trending now
+OpenAI says its AI models secretly broke out of a secure test environment and hacked into AI company Hugging Face in order to cheat on an evaluation
+Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock
+Mathematicians grapple with a ‘very rapid and very unsettling change’ as AI cracks yet another century-old problem
+OpenAI says its AI models secretly broke out of a secure test environment and hacked into AI company Hugging Face in order to cheat on an evaluation
+Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock
+Mathematicians grapple with a ‘very rapid and very unsettling change’ as AI cracks yet another century-old problem
+Startups & Venture Venture Capital
+Exclusive: Oro Labs, which uses AI to streamline corporate procurement, raises $100 million
+By Jeremy Kahn
+Jeremy Kahn
+Editor, AI
+By Jeremy Kahn
+Jeremy Kahn
+Editor, AI
+March 12, 2026, 3:00 AM ET
+Oro Labs' cofounders (from left): Sudhir Bhojwani, Lalitha Rajagopalan, and Yuan Tung. The company just announced it has raised another $100 million in venture capital funding. The startup's software platform aims to use AI to automate procurement processes for large enterprises. Photo courtesy of Oro Labs
+Add Fortune on Google for similar content.
+Add us on Google
+Add us on Google
+Oro Labs , a Silicon Valley startup that uses artificial intelligence to automate companies’ procurement processes, has raised $100 million in new venture capital funding.
+Recommended Video
+The fundraise, which is the company’s Series C round, is being led by Goldman Sachs Growth Equity and Brighton Park Capital. Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating. As part of the deal, Clare Greenan, a vice president at Goldman Sachs Growth Equity, and Mike Gregoire, partner at Brighton Park Capital, will join Oro’s board of directors.
+Oro declined to disclose its valuation following the new fundraise. The new capital raise brings the total amount of money the startup has raised to date to $160 million.
+The five-year old startup has built what it calls a “procurement orchestration platform”—a layer of AI-powered software that sits on top of a company’s existing enterprise resource planning and procurement systems. Rather than replacing those legacy investments, Oro acts as an intelligent front door, using AI agents to route requests, check compliance, and automate manual processes.
+Oro’s customers include a number of Fortune 500 companies, including Coca-Cola , Pfizer , Novartis , Thermo Fisher Scientific , and Booking.com, among others. The company says it now works with 15 of the top 25 life sciences companies, two of the top four diversified U.S. banks, and five of the top 15 food and drink manufacturers.
+Oro’s fundraise comes after a year in which the five-year-old company said it achieved 300% revenue growth. The company says it expects to triple revenue again this year and that it is currently seeing a 150% “revenue retention rate,” meaning that existing customers are rapidly expanding their use of the platform.
+“Demand for procurement orchestration has skyrocketed because of one fundamental truth: procurement teams simply cannot continue to operate like they always have. The market volatility, disruption and price pressures are too severe,” Sudhir Bhojwani, co-founder and CEO of Oro Labs, said. Companies, he said, “need a layer that brings order and intelligence to the chaos—and that layer is orchestration.”
+Bhojwani, a software engineer who spent nine years at Ariba, a procurement software company that was acquired by SAP , told Fortune that the fundamental problem with existing procurement software is that it is “designed as systems of record, rather than systems of action.” What he means is that the software produces data in the form of purchase orders, contracts, and invoices, but is not designed, for example, to produce risk-based assessments of whether a particular invoice should be paid or presents a compliance issue.
+He said procurement departments consistently receive the lowest net promoter scores in internal company surveys because they are seen as overly-bureaucratic blockers that slow down the business. And most of that bureaucracy still involves manual processes, according to Bhojwani. He said one Fortune 500 energy company, which he could not name but said had roughly $40 billion in annual revenue, had a procurement process that involved 20 million human touchpoints per year before it began using Oro’s software.
+“We built Oro to ensure enterprises can move faster without losing control,” Lalitha Rajagopalan, a cofounder of Oro Labs who currently leads strategy and operations for the company, told Fortune .
+Bhojwani said that Oro’s software helped one global pharmaceutical company with roughly $20 billion in procurement spending bring the time it takes to onboard a new supplier from more than 30 days to under 10 days, and that the company thinks it can reduce this further to less than five days. At the same company, manual compliance checks on purchase orders that previously took 36 hours now take six minutes, with 50% of transactions running completely without human intervention, he said. He said the company has compared the accuracy of Oro’s automated decisions to those made by its purchasing department employees and that the AI system’s accuracy has reached 90%. He said this inevitably meant that “the number of people who are doing this work can be reduced dramatically.”
+Gregoire, the Brighton Park partner who is joining Oro’s board, said the company represents a generational shift in how procurement technology works. “Previous generations of procurement software relied on rigid, manual decision trees that easily broke down under enterprise scale and complexity,” he said. But Oro is built on AI systems that understand the language in purchase orders, invoices, and contracts and also builds on a knowledge graph, or complex map, of how a particular company’s processes work and what its purchasing and compliance rules are.
+Gregoire added that Brighton Park liked the fact that Oro’s founding team has deep roots in the procurement industry, giving them an intimate understanding of where legacy systems fall short. “Their extraordinary traction with the world’s most complex, highly regulated enterprises like Novartis, Coca-Cola , and Roche proves the platform can handle the most demanding compliance environments,” he said.
+Oro plans to use the new capital to accelerate its growth, building out its product capabilities but also adding to its sales and go-to-market teams. Bhojwani said that the company spends about half of its budget on research and development. The company is also expanding what it calls the Oro Partner Enterprise Network, or OPEN, which brings together technology providers, consulting firms, and service partners. Unlike many legacy software-as-a-service companies, Oro does not use a per-seat licensing model. Instead, it charges based on transaction volume—a pricing structure that Bhojwani said better reflects the value the platform delivers. “I never believed in [the per-seat] model fundamentally,” he said of seat-based pricing. “It didn’t make sense before and it definitely does not make sense now.”
+He also said that he is not concerned that businesses will use AI coding tools to create their own procurement software with similar capabilities to what Oro has built. He says bringing together all the capabilities that Oro has would not be easy, and, even if a company did do that on their own, the cost of maintaining such a system would not be something most companies would want to take on.
+Subscribe to Fortune Gulf Brief . Every Tuesday, this new newsletter delivers clear-eyed, authoritative intelligence on the deals, decisions, policies, and power shifts shaping one of the world’s most consequential regions, written for the people who need to act on it. Sign up here.
+About the Author By Jeremy Kahn Editor, AI
+Jeremy Kahn is the AI editor at Fortune , spearheading the publication's coverage of artificial intelligence. He also co-authors Eye on AI , Fortune ’s flagship AI newsletter.
+See full bio
+Add Fortune on Google for similar content.
+Add us on Google
+Latest in Startups & Venture
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Most Popular
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 85
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":10749,"paragraph_count":43,"sentence_count":58,"boilerplate_hits":4,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Exclusive: Oro Labs, which uses AI to streamline corporate procurement, raises $100 million | Fortune # Trendingnow # 1 Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock # 2 ‘I want to die broke’: Billionai... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace
+
+2. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   Trending now OpenAI says its AI models secretly broke out of a secure test environment and hacked into AI company Hugging Face in order to cheat on an evaluation Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock Mathematicians grapple with a ‘very rapid and very unsettling change’ as AI cracks yet another century-old problem OpenAI says its AI models secretly broke out of a secure test environment and hacked into AI company Hug
+
+3. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   The company just announced it has raised another $100 million in venture capital funding.
+
+4. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The startup's software platform aims to use AI to automate procurement processes for large enterprises.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Photo courtesy of Oro Labs Add Fortune on Google for similar content.
+
+6. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Add us on Google Add us on Google Oro Labs , a Silicon Valley startup that uses artificial intelligence to automate companies’ procurement processes, has raised $100 million in new venture capital funding.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Google
+- products: agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 采购 / 招投标
+- business_actions: 发布 / 推出, 合作 / 联盟, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 采购, 销售 / 客服
+- numbers: $100 million, 1 M, 2, 12, 2026, 3, 00, $160 million
+- quotes: procurement orchestration platform / revenue retention rate, / need a layer that brings order and intelligence to the chaos—and that layer is orchestration. / designed as systems of record, rather than systems of action. / We built Oro to ensure enterprises can move faster without losing control,
+
+## evidence_seed
+
+- company_actions: Exclusive: Oro Labs, which uses AI to streamline corporate procurement, raises $100 million | Fortune # Trendingnow # 1 Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock # 2 ‘I want to die broke’: Billionai... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace / The company just announced it has raised another $100 million in venture capital funding. / Photo courtesy of Oro Labs Add Fortune on Google for similar content.
+- case_details: 暂无公开信息
+- workflow_changes: The startup's software platform aims to use AI to automate procurement processes for large enterprises.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Exclusive: Oro Labs, which uses AI to streamline corporate procurement, raises $100 million | Fortune # Trendingnow # 1 Mark Cuban says he has the solution to growing income inequality, and it's to reward every employee—from CEO to janitor—with company stock # 2 ‘I want to die broke’: Billionai... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,292 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-114
+title: "Sales were up at Tesla but so were costs and spending"
+title_zh: "特斯拉销售额增长，但成本和支出也同步上升"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://arstechnica.com/cars/2026/07/teslas-revenues-are-up-but-profits-squeezed-as-musk-spends-on-ai/"
+canonical_url: "https://arstechnica.com/cars/2026/07/teslas-revenues-are-up-but-profits-squeezed-as-musk-spends-on-ai"
+source_name: "Ars Technica AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-22T21:15:19.000Z"
+collected_at: 2026-07-23T03:51:55.880Z
+language: mixed
+full_text_hash: 14bdc8fa02b659cd
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-114-sales-were-up-at-tesla-but-so-were-costs-and-spending.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-114-sales-were-up-at-tesla-but-so-were-costs-and-spending.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 88
+extractor_diagnostics: {"readability_score":88,"text_length":3786,"paragraph_count":14,"sentence_count":33,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 3786
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"14bdc8fa02b659cd","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: b64f028b9b534f3a
+content_hash: 14bdc8fa02b659cd
+semantic_hash: 6b76b011bc13fbb4
+duplicate_of: ""
+first_seen_at: "2026-07-22T21:15:19.000Z"
+last_seen_at: 2026-07-23T03:51:55.880Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica AI","OpenAI"],"products":["agent"],"people":[],"industries":[],"roles":["销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["25","1.4","$20.5 billion","23","$146 million","2025","13","$3.1 billion"],"quotes":["in line in seven major metros,"]}
+evidence_seed: {"company_actions":["Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Tesla posted its financial statement for the second quarter of the year this afternoon.","Revenues are up but so are expenses, and the company’s once-enviable double-digit profit margin has fallen to just 1."],"case_details":[],"workflow_changes":["Earlier in July, we learned that the American automaker had had a good quarter in terms of sales , growing 25 percent year over year.","Fans hoping that sales increase would result in a plenty profitable Tesla may be disappointed, though."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Tesla posted its financial statement for the second quarter of the year this afternoon.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Earlier in July, we learned that the American automaker had had a good quarter in terms of sales , growing 25 percent year over year.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Fans hoping that sales increase would result in a plenty profitable Tesla may be disappointed, though.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Revenues are up but so are expenses, and the company’s once-enviable double-digit profit margin has fallen to just 1.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"Tesla brought in $20.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"5 billion from its electric vehicle business, a 23 percent increase year over year, and just $146 million came from automotive regulatory credits.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-23T03:51:55.880Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Sales were up at Tesla but so were costs and spending
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+Tesla posted its financial statement for the second quarter of the year this afternoon. Earlier in July, we learned that the American automaker had had a good quarter in terms of sales , growing 25 percent year over year. Fans hoping that sales increase would result in a plenty profitable Tesla may be disappointed, though. Revenues are up but so are expenses, and the company’s once-enviable double-digit profit margin has fallen to just 1.4 percent.
+Tesla brought in $20.5 billion from its electric vehicle business, a 23 percent increase year over year, and just $146 million came from automotive regulatory credits. Credits have been a key to Tesla’s profitability in previous challenging quarters, but they were abolished in the United States with Musk’s blessing in 2025.
+There was growth from its energy and storage business, which grew 13 percent year over year to revenues of $3.1 billion, but the most growth was in Tesla’s services, which doubled, bringing in $4.6 billion. Tesla’s shift from a one-time purchase to a monthly subscription for its much-criticized FSD partially automated driver assist—something tied to CEO Elon Musk’s gargantuan remuneration package —was a big help here.
+Overall, total revenues were up 26 percent, to $28.2 billion.
+But the cost of doing business went up more. Tesla’s operating expenses went up 47 percent to $4.4 billion, and income from those operations fell by 57 percent year over year to $398 million. The company is still profitable—it generated $1.1 billion for the quarter, but that’s 5 percent less than the same three months last year.
+In large part, that’s because Tesla has been spending heavily. Its capital expenditures grew by 142 percent to $5.8 billion, and free cash flow is currently negative $1.1 billion. That’s an 848 percent drop compared to last year, but Q2 2025 was barely positive either . For a more short-term comparison, Tesla ended last quarter with a free cash flow of more than $1.4 billion. It’s also lost another $1.2 billion from its investments.
+Despite so much of Tesla’s revenues coming from cars, then solar and batteries, its spending is not on developing a new line of cars or even finally making those solar roof tiles we were promised a decade ago. It’s still all about AI, humanoid robots, and more robotaxi rollouts, despite a high preponderance of crashes in Texas, including one involving a teleoperator and a Houston tree stump.
+In its statement to investors, Tesla says that it anticipates beginning production for its humanoid robots later this year, and that robotaxi deployments are “in line in seven major metros,” although it acknowledges that at least one of these requires the assent of California regulators, who we have seen are notably less permissive than equivalents in Arizona, Florida, Nevada, or Texas.
+Jonathan M. Gitlin
+Automotive Editor
+Jonathan M. Gitlin
+Automotive Editor
+Jonathan is the Automotive Editor at Ars Technica. He has a BSc and PhD in Pharmacology. In 2014 he decided to indulge his lifelong passion for the car by leaving the National Human Genome Research Institute and launching Ars Technica's automotive coverage. He lives in Washington, DC.
+73 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+1.
+On the run for 20 years, most-wanted fugitive caught hiding as a biotech exec
+2.
+Unlimited AI tokens aren't unlimited after all as US Army burns through supply
+3.
+Nintendo says users voluntarily paid higher prices, have no right to tariff refunds
+4.
+OpenAI says its AI agent broke out of testing sandbox to hack Hugging Face
+5.
+What happens when you try to chop a photon in half?
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+Tesla posted its financial statement for the second quarter of the year this afternoon. Earlier in July, we learned that the American automaker had had a good quarter in terms of sales , growing 25 percent year over year. Fans hoping that sales increase would result in a plenty profitable Tesla may be disappointed, though. Revenues are up but so are expenses, and the company’s once-enviable double-digit profit margin has fallen to just 1.4 percent.
+Tesla brought in $20.5 billion from its electric vehicle business, a 23 percent increase year over year, and just $146 million came from automotive regulatory credits. Credits have been a key to Tesla’s profitability in previous challenging quarters, but they were abolished in the United States with Musk’s blessing in 2025.
+There was growth from its energy and storage business, which grew 13 percent year over year to revenues of $3.1 billion, but the most growth was in Tesla’s services, which doubled, bringing in $4.6 billion. Tesla’s shift from a one-time purchase to a monthly subscription for its much-criticized FSD partially automated driver assist—something tied to CEO Elon Musk’s gargantuan remuneration package —was a big help here.
+Overall, total revenues were up 26 percent, to $28.2 billion.
+But the cost of doing business went up more. Tesla’s operating expenses went up 47 percent to $4.4 billion, and income from those operations fell by 57 percent year over year to $398 million. The company is still profitable—it generated $1.1 billion for the quarter, but that’s 5 percent less than the same three months last year.
+In large part, that’s because Tesla has been spending heavily. Its capital expenditures grew by 142 percent to $5.8 billion, and free cash flow is currently negative $1.1 billion. That’s an 848 percent drop compared to last year, but Q2 2025 was barely positive either . For a more short-term comparison, Tesla ended last quarter with a free cash flow of more than $1.4 billion. It’s also lost another $1.2 billion from its investments.
+Despite so much of Tesla’s revenues coming from cars, then solar and batteries, its spending is not on developing a new line of cars or even finally making those solar roof tiles we were promised a decade ago. It’s still all about AI, humanoid robots, and more robotaxi rollouts, despite a high preponderance of crashes in Texas, including one involving a teleoperator and a Houston tree stump.
+In its statement to investors, Tesla says that it anticipates beginning production for its humanoid robots later this year, and that robotaxi deployments are “in line in seven major metros,” although it acknowledges that at least one of these requires the assent of California regulators, who we have seen are notably less permissive than equivalents in Arizona, Florida, Nevada, or Texas.
+Jonathan M. Gitlin
+Automotive Editor
+Jonathan M. Gitlin
+Automotive Editor
+Jonathan is the Automotive Editor at Ars Technica. He has a BSc and PhD in Pharmacology. In 2014 he decided to indulge his lifelong passion for the car by leaving the National Human Genome Research Institute and launching Ars Technica's automotive coverage. He lives in Washington, DC.
+73 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+1.
+On the run for 20 years, most-wanted fugitive caught hiding as a biotech exec
+2.
+Unlimited AI tokens aren't unlimited after all as US Army burns through supply
+3.
+Nintendo says users voluntarily paid higher prices, have no right to tariff refunds
+4.
+OpenAI says its AI agent broke out of testing sandbox to hack Hugging Face
+5.
+What happens when you try to chop a photon in half?
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 88
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":88,"text_length":3786,"paragraph_count":14,"sentence_count":33,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Tesla posted its financial statement for the second quarter of the year this afternoon.
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Earlier in July, we learned that the American automaker had had a good quarter in terms of sales , growing 25 percent year over year.
+
+3. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Fans hoping that sales increase would result in a plenty profitable Tesla may be disappointed, though.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Revenues are up but so are expenses, and the company’s once-enviable double-digit profit margin has fallen to just 1.
+
+5. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Tesla brought in $20.
+
+6. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   5 billion from its electric vehicle business, a 23 percent increase year over year, and just $146 million came from automotive regulatory credits.
+
+## business_elements
+
+- companies: Ars Technica AI, OpenAI
+- products: agent
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 25, 1.4, $20.5 billion, 23, $146 million, 2025, 13, $3.1 billion
+- quotes: in line in seven major metros,
+
+## evidence_seed
+
+- company_actions: Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Tesla posted its financial statement for the second quarter of the year this afternoon. / Revenues are up but so are expenses, and the company’s once-enviable double-digit profit margin has fallen to just 1.
+- case_details: 暂无公开信息
+- workflow_changes: Earlier in July, we learned that the American automaker had had a good quarter in terms of sales , growing 25 percent year over year. / Fans hoping that sales increase would result in a plenty profitable Tesla may be disappointed, though.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+采集通道未提供摘要。
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

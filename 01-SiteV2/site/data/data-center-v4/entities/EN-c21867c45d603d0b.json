@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-c21867c45d603d0b",
+    "name": "Quote Entry Automation",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-955b5810b3fca4c7"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-21",
+    "lastSeen": "2026-07-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-955b5810b3fca4c7"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-955b5810b3fca4c7",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Proton 终结重新输入时代，为分销商推出智能订单与报价录入自动化",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "entityIds": [
+          "EN-b81c5ec5cca9ee79",
+          "EN-512b07739a861ba4",
+          "EN-c21867c45d603d0b",
+          "EN-076804bec879d667"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

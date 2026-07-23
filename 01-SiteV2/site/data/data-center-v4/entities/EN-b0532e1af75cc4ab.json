@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-b0532e1af75cc4ab",
@@ -21,9 +21,10 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-ccbf97fdf4dc11d0",
       "EV-64fb6d791e19d10a",
-      "EV-463cb26b5e03c7f7",
       "EV-8cf189b07a257c1c",
+      "EV-463cb26b5e03c7f7",
       "EV-f0fee44c1dfdcb09",
       "EV-52bf48005db3461a",
       "EV-a7e14985b924b464",
@@ -37,6 +38,7 @@
       "EV-ec711aed6721bb30",
       "EV-d756f05478303505",
       "EV-06b294f255c0087e",
+      "EV-dac8e2b1fb11403f",
       "EV-2c476cb7969f399b",
       "EV-06487af6e98ea491",
       "EV-bb9ba11acf104db1",
@@ -80,15 +82,16 @@
       "EN-3ccbd9105a45d8fc"
     ],
     "firstSeen": "2026-03-11",
-    "lastSeen": "2026-07-22",
+    "lastSeen": "2026-07-23",
     "relationIds": [
       "REL2-ddba6ef3ef6a76e3"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-ccbf97fdf4dc11d0",
+        "EV-8cf189b07a257c1c",
         "EV-463cb26b5e03c7f7",
         "EV-64fb6d791e19d10a",
-        "EV-8cf189b07a257c1c",
         "EV-f0fee44c1dfdcb09",
         "EV-e7dcecaed5a0ee5b",
         "EV-c17f5a364ed6a3ac",
@@ -101,6 +104,7 @@
         "EV-c8928410f6c145eb"
       ],
       "deployments": [
+        "EV-dac8e2b1fb11403f",
         "EV-2c476cb7969f399b",
         "EV-33e7429a7bc94840",
         "EV-cfb7c4b4b765f53b",
@@ -138,6 +142,87 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-ccbf97fdf4dc11d0",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-23",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AppliedAI 完成 pre-Series B 轮融资，用于扩展企业 AI 平台",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "entityIds": [
+          "EN-160077a1c92d0095",
+          "EN-96eebba49dbbf422",
+          "EN-b0532e1af75cc4ab"
+        ]
+      },
+      {
+        "id": "EV-8cf189b07a257c1c",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-09",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Kapture CX 获 Bajaj Finserv Ventures 领投的 1000 万美元 Pre-B 轮融资，用于扩展 AI 智能体企业技术栈",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          },
+          {
+            "dimensionId": "target_user",
+            "id": "enterprise",
+            "dimensionName": "目标用户",
+            "name": "企业用户"
+          }
+        ],
+        "entityIds": [
+          "EN-3afbf365c56b769d",
+          "EN-b0532e1af75cc4ab"
+        ]
+      },
+      {
+        "id": "EV-dac8e2b1fb11403f",
+        "dataDate": "2026-07-23",
+        "date": "2026-04-29",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 采用策略：从试点到生产的 7 个步骤",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7eaff8c940a7ef80",
+          "EN-b0532e1af75cc4ab"
+        ]
+      },
       {
         "id": "EV-463cb26b5e03c7f7",
         "dataDate": "2026-07-22",
@@ -360,41 +445,6 @@
           "EN-e54c14020fb74611",
           "EN-916a98f0fa2a39af",
           "EN-8f71c4871a160172",
-          "EN-b0532e1af75cc4ab"
-        ]
-      },
-      {
-        "id": "EV-8cf189b07a257c1c",
-        "dataDate": "2026-07-07",
-        "date": "2026-07-07",
-        "eventType": "funding",
-        "eventTypeLabel": "融资",
-        "eventGroup": "融资与并购",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Kapture CX获Bajaj Finserv Ventures领投1000万美元Pre-B轮融资，用于扩展代理型企业技术栈",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "enterprise_platform",
-            "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "agentic_execution",
-            "name": "智能体"
-          },
-          {
-            "dimensionId": "target_user",
-            "id": "enterprise",
-            "dimensionName": "目标用户",
-            "name": "企业用户"
-          }
-        ],
-        "entityIds": [
-          "EN-3afbf365c56b769d",
           "EN-b0532e1af75cc4ab"
         ]
       },
@@ -1193,8 +1243,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-2069f6a931b8c9d6",
         "EV-901155ab700a7e8e",
+        "EV-2069f6a931b8c9d6",
         "EV-f6e7a4fe77d7f5c9",
         "EV-6be89ebfbf8de6be",
         "EV-b29878fdf79f2ac5",
@@ -1206,6 +1256,7 @@
         "EV-095e1a90f14ccdb9",
         "EV-640c5ea9f4fa2780",
         "EV-9781e67076f4e06b",
+        "EV-8cf189b07a257c1c",
         "EV-0a5d792223f5381f",
         "EV-63236c15166b71e0",
         "EV-d642ec7a9ca5eb0f",
@@ -1215,7 +1266,6 @@
         "EV-8bb64551124d8870",
         "EV-1349fd0441b75da0",
         "EV-6e06cfa28f76a76f",
-        "EV-8cf189b07a257c1c",
         "EV-e61effb7ada8508f",
         "EV-3d93d1da8cb64462",
         "EV-0ade039d36e077ae",
@@ -1345,6 +1395,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-5b193a038ab4ea22",
+        "EV-6c81f03e885f10af",
+        "EV-bf68acb1350e039b",
         "EV-2fea1664807824ce",
         "EV-3ba971c5939b0f04",
         "EV-6ce069b1845f5a52",
@@ -1522,6 +1575,7 @@
         "EV-c52947e480fa3347",
         "EV-cf496e0f8a56ca97",
         "EV-aaaa21ae510bc87e",
+        "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
         "EV-70fd0c4e482a646e",
@@ -1540,9 +1594,9 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-12765295db4f1e79",
         "EN-73ef176d9f12809e",
         "EN-96eebba49dbbf422",
-        "EN-12765295db4f1e79",
         "EN-270e2cfd11014ef8",
         "EN-522656609ff15589",
         "EN-b0bc23fa8e20c543",
@@ -1555,6 +1609,8 @@
         "EN-45a46e581e91ce79",
         "EN-ea3bd73e2b506e00",
         "EN-4d748ebd71af03a7",
+        "EN-3afbf365c56b769d",
+        "EN-b0532e1af75cc4ab",
         "EN-7a9c94a8c201bcc2",
         "EN-8f71c4871a160172",
         "EN-d6386c59a6bcfcb1",
@@ -1566,8 +1622,6 @@
         "EN-7692c3ad3540bb80",
         "EN-cd84b3822a32503d",
         "EN-caaa8e02be54cfc9",
-        "EN-3afbf365c56b769d",
-        "EN-b0532e1af75cc4ab",
         "EN-612370f44fcdeae0",
         "EN-14ce7672aaca7a68",
         "EN-047364b9be67f665",
@@ -1702,8 +1756,12 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
-        "EN-0d1e478de2157d48",
+        "EN-6fcba5d96a4fadfd",
         "EN-6f7ac1823da81d2e",
+        "EN-f65bb77682b83476",
+        "EN-7c094d35e3b700c8",
+        "EN-9a266f40d42cf217",
+        "EN-0d1e478de2157d48",
         "EN-4546b5bdff2ea8ed",
         "EN-18f0900d6c487f59",
         "EN-52c2f30b6bda5898",
@@ -1935,7 +1993,6 @@
         "EN-ab9e3beebd83960d",
         "EN-1ecf93c539fcffca",
         "EN-8941d14fe851d732",
-        "EN-6fcba5d96a4fadfd",
         "EN-11ef7b03c79c9bbd",
         "EN-0b9ca57f53ba758b",
         "EN-9bc22dcabf7f45b3",
@@ -1949,6 +2006,7 @@
         "EN-4634cbf463651816",
         "EN-467f67b2ed0f9a54",
         "EN-b7bea343b08cce2c",
+        "EN-fdb2cc367267ac57",
         "EN-1af769ad0ad5907c",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
@@ -2009,7 +2067,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-industry-financial_services",
@@ -2020,6 +2078,7 @@
       "eventIds": [
         "EV-f6a72cddbda748b3",
         "EV-34a077ec20c91cea",
+        "EV-8cf189b07a257c1c",
         "EV-aa33ca051f3a7f78",
         "EV-189e43cb9fea8e1a",
         "EV-a42e51959c627554",
@@ -2045,6 +2104,8 @@
         "EN-a5d2ae286d0d9e45",
         "EN-96eebba49dbbf422",
         "EN-e5dcb6b25180d1d6",
+        "EN-3afbf365c56b769d",
+        "EN-b0532e1af75cc4ab",
         "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
         "EN-11507a0e2f5e69d5",
@@ -2061,7 +2122,6 @@
         "EN-5e757c7fc575c41e",
         "EN-bc8a00f7f6fb535f",
         "EN-3ccbd9105a45d8fc",
-        "EN-b0532e1af75cc4ab",
         "EN-4d748ebd71af03a7",
         "EN-c3e4cc183d345262",
         "EN-9b6ea48b511ffd60",
@@ -2084,7 +2144,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-03-19",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -2101,6 +2161,8 @@
         "EV-a3b006906f6d46a0",
         "EV-046caa2b3d6fbdde",
         "EV-0e028ea8f94752de",
+        "EV-9ad569c873451304",
+        "EV-777eb5b7783b71fb",
         "EV-02686922dd82c4aa",
         "EV-99a0cb6bac516bdd",
         "EV-2ffc3377977da114",
@@ -2125,6 +2187,11 @@
         "EN-4dbe391b8fcf977a",
         "EN-c5947269de664c47",
         "EN-e759968ca9278b8d",
+        "EN-6957217eb8e00a30",
+        "EN-8f71c4871a160172",
+        "EN-fb54e9062429a937",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
         "EN-88e2cce43eeadb36",
         "EN-276a8bc458036a1a",
         "EN-5239a379b6326549",
@@ -2132,14 +2199,12 @@
         "EN-e274048227f164dc",
         "EN-1bf93b12e68cac56",
         "EN-d9b1d7819af92e77",
-        "EN-bbdefa2950f49882",
         "EN-151013fb8438c046",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-5388bc10736a0eff",
         "EN-43a340bb75b45f02",
         "EN-5e1fcba4c9f1cf69",
-        "EN-7d3194f79e645c42",
         "EN-94ff75465b1afa65",
         "EN-3a7bd3e2360a3d29",
         "EN-40e307d789f77264",
@@ -2155,11 +2220,12 @@
       ],
       "fdeIds": [
         "FDE-62f660a9a90bc3f6",
+        "FDE-3d5eb0bc571f55bf",
         "FDE-309bc49d109029a3"
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-code_generation",
@@ -2358,8 +2424,10 @@
         "EV-c0ec0c026233bea5",
         "EV-03f661e8dcdf1b58",
         "EV-474d5a8ffca11ed9",
+        "EV-8a2d8ebbd700c787",
         "EV-2d6d2dc0ead4be10",
         "EV-d209a6acecba4285",
+        "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
         "EV-6ce069b1845f5a52",
         "EV-ab3e820aa6d92542",
@@ -2388,16 +2456,19 @@
         "EN-a7dd4a797cf9990b",
         "EN-e78bdebae031095b",
         "EN-7d4e02d31a7eb0f8",
+        "EN-c70eca6b0f88f44d",
+        "EN-6d57b22ebbd2bd90",
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
         "EN-7d3194f79e645c42",
         "EN-968e2d5b08687bf4",
+        "EN-240389f4b730bad4",
+        "EN-ef705dd2f374e840",
         "EN-f48a4090493d2b5e",
         "EN-f9ae78c09ff308f9",
         "EN-ce635c4eabff5e4f",
         "EN-9fbf261b62c1d7c0",
         "EN-bbdefa2950f49882",
-        "EN-c70eca6b0f88f44d",
         "EN-18f0900d6c487f59",
         "EN-916a98f0fa2a39af",
         "EN-dc6c28a2123e8efb",
@@ -2432,11 +2503,14 @@
       ],
       "fdeIds": [
         "FDE-2dda1b977721f467",
+        "FDE-6920b7a1f4924656",
         "FDE-8d7df617732e7c45"
       ],
-      "hardwareIds": [],
+      "hardwareIds": [
+        "HW-033a5b73cdc3f4be"
+      ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-mixture_of_experts",
@@ -2634,8 +2708,8 @@
       "valueId": "open_weights",
       "eventIds": [
         "EV-1abf0d076d30ec6d",
-        "EV-2fea1664807824ce",
         "EV-0d5a32aca724d30e",
+        "EV-2fea1664807824ce",
         "EV-b84035029a63e52e",
         "EV-3028dfadf94c8f4c",
         "EV-a06011da69abcc3d",
@@ -2647,16 +2721,18 @@
         "EN-240389f4b730bad4",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d",
+        "EN-16dc8ea1cf4807b0",
+        "EN-b5251b35f15bedc4",
+        "EN-047364b9be67f665",
+        "EN-cbc62794911ff31b",
+        "EN-10a27c6240d18dbe",
+        "EN-e6ac424c9ea83939",
+        "EN-607964040e4b62e0",
         "EN-0d1e478de2157d48",
         "EN-8d4321d936320802",
         "EN-6f7ac1823da81d2e",
         "EN-8f71c4871a160172",
         "EN-4546b5bdff2ea8ed",
-        "EN-b5251b35f15bedc4",
-        "EN-e9b67bdfb6ae6a2e",
-        "EN-047364b9be67f665",
-        "EN-607964040e4b62e0",
-        "EN-cf5378a2305a999f",
         "EN-d41ebd9f02722fc8",
         "EN-b0532e1af75cc4ab",
         "EN-96eebba49dbbf422",
@@ -2677,7 +2753,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-multimodal",
@@ -2829,6 +2905,49 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-10eb591035b26e78",
+      "eventId": "EV-dac8e2b1fb11403f",
+      "dataDate": "2026-07-23",
+      "date": "2026-04-29",
+      "title": "AI 采用策略：从试点到生产的 7 个步骤",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "AI Adoption Strategy",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Production",
+      "reportedNeed": "The gap between 'AI pilot success' and 'enterprise-wide AI adoption' isn't about technology limitations. It's about organizational readiness, cross-departmental coordination, and having the governance foundation to scale AI safely across teams.",
+      "deliveryComponents": [
+        "Align AI initiatives with business goals",
+        "Prioritize high-impact examples",
+        "Build your data foundation",
+        "Choose the right AI technology approach",
+        "Design responsible AI governance from the start",
+        "Redesign workflows around AI",
+        "Invest in people alongside technology"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://monday.com/blog/ai-agents/ai-adoption-strategy",
+      "entityIds": [
+        "EN-7eaff8c940a7ef80",
+        "EN-b0532e1af75cc4ab"
+      ]
+    },
     {
       "id": "FDE-cc943789fb1c3f3d",
       "eventId": "EV-2c476cb7969f399b",

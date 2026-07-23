@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-ef705dd2f374e840",
@@ -21,18 +21,22 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-75b9b997e9c7e5d1",
       "EV-a16be3cb9dad7cfe"
     ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-use_case-software_development"
+    ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-22",
-    "lastSeen": "2026-06-23",
+    "lastSeen": "2026-07-23",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [
+        "EV-75b9b997e9c7e5d1",
         "EV-a16be3cb9dad7cfe"
       ],
       "productsServices": [],
@@ -41,6 +45,30 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-75b9b997e9c7e5d1",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-23",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "AMD 与 Anthropic 达成战略合作，内部将广泛采用 Claude 加速软件开发",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "entityIds": [
+          "EN-240389f4b730bad4",
+          "EN-ef705dd2f374e840",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-a16be3cb9dad7cfe",
         "dataDate": "2026-06-23",
@@ -63,7 +91,145 @@
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
-  "fde": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-software_development",
+      "name": "软件开发",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "software_development",
+      "eventIds": [
+        "EV-f0fee44c1dfdcb09",
+        "EV-9300044a58395552",
+        "EV-f3bb064250dba2b2",
+        "EV-c0ec0c026233bea5",
+        "EV-03f661e8dcdf1b58",
+        "EV-474d5a8ffca11ed9",
+        "EV-8a2d8ebbd700c787",
+        "EV-2d6d2dc0ead4be10",
+        "EV-d209a6acecba4285",
+        "EV-75b9b997e9c7e5d1",
+        "EV-b2e374d54b10b9af",
+        "EV-6ce069b1845f5a52",
+        "EV-ab3e820aa6d92542",
+        "EV-347d250e2769de9a",
+        "EV-107725f2bdece882",
+        "EV-70efbfcaadcdb259",
+        "EV-13e06fc12cc3fb7c",
+        "EV-53288fcf18e677e6",
+        "EV-cec69087dc8992e0",
+        "EV-1b03e5dff76a50a1",
+        "EV-2d5746e41f96c3c2",
+        "EV-6af31d42885e0361",
+        "EV-a9e22f22b7a2ec53",
+        "EV-e9a86c47da229331",
+        "EV-f68e00bb9fd49fac",
+        "EV-e295f808713644c7",
+        "EV-d53cd33e8f541a65",
+        "EV-79d4cce8950d7639"
+      ],
+      "entityIds": [
+        "EN-0cc3af265406c202",
+        "EN-b0532e1af75cc4ab",
+        "EN-7106dbc04a08ce3a",
+        "EN-3ccbd9105a45d8fc",
+        "EN-15c785fe4bcb86f5",
+        "EN-a7dd4a797cf9990b",
+        "EN-e78bdebae031095b",
+        "EN-7d4e02d31a7eb0f8",
+        "EN-c70eca6b0f88f44d",
+        "EN-6d57b22ebbd2bd90",
+        "EN-3db1f560db626918",
+        "EN-7c3482959a6cdd3f",
+        "EN-7d3194f79e645c42",
+        "EN-968e2d5b08687bf4",
+        "EN-240389f4b730bad4",
+        "EN-ef705dd2f374e840",
+        "EN-f48a4090493d2b5e",
+        "EN-f9ae78c09ff308f9",
+        "EN-ce635c4eabff5e4f",
+        "EN-9fbf261b62c1d7c0",
+        "EN-bbdefa2950f49882",
+        "EN-18f0900d6c487f59",
+        "EN-916a98f0fa2a39af",
+        "EN-dc6c28a2123e8efb",
+        "EN-536c4035ba0c7047",
+        "EN-1d79127e9d90e89b",
+        "EN-bc77259c5d2eb341",
+        "EN-fab30471ea65d627",
+        "EN-bb5b6487f881bbb1",
+        "EN-4adc2faea521b1f1",
+        "EN-c857d09db23e6822",
+        "EN-cb4754c48f8023d0",
+        "EN-2d87f3d38782aa14",
+        "EN-b5251b35f15bedc4",
+        "EN-0db2d631b42da133",
+        "EN-b81c8201acfc7639",
+        "EN-e18cb6435603205d",
+        "EN-412b57e712039032",
+        "EN-6f7ac1823da81d2e",
+        "EN-c27c48199bb1e14b",
+        "EN-e2a93bc5095dec6c",
+        "EN-0decbc3b45f73b2b",
+        "EN-45cbca5f78f1ef44",
+        "EN-b57c95289680078c",
+        "EN-2b6e51bec93e86c1",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb",
+        "EN-1ecf93c539fcffca",
+        "EN-6fcba5d96a4fadfd",
+        "EN-630dc133336bc266",
+        "EN-c4bc2d00a42f220f",
+        "EN-0b9ca57f53ba758b"
+      ],
+      "fdeIds": [
+        "FDE-2dda1b977721f467",
+        "FDE-6920b7a1f4924656",
+        "FDE-8d7df617732e7c45"
+      ],
+      "hardwareIds": [
+        "HW-033a5b73cdc3f4be"
+      ],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-07-23"
+    }
+  ],
+  "fde": [
+    {
+      "id": "FDE-6920b7a1f4924656",
+      "eventId": "EV-75b9b997e9c7e5d1",
+      "dataDate": "2026-07-23",
+      "date": "2026-07-23",
+      "title": "AMD 与 Anthropic 达成战略合作，内部将广泛采用 Claude 加速软件开发",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "AMD",
+      "vendor": "AMD",
+      "industry": "半导体/高性能计算",
+      "useCase": "内部将广泛采用 Claude 加速软件开发",
+      "reportedNeed": "利用 Claude 加速 AMD 软件开发",
+      "deliveryComponents": [
+        "我们非常高兴能够深化与 Anthropic 的合作，并以 GW 级规模部署 AMD Helios。"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/980/382.htm",
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-ef705dd2f374e840",
+        "EN-c70eca6b0f88f44d"
+      ]
+    }
+  ],
   "hardware": []
 }

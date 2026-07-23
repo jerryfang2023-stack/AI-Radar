@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-d411633327714b72",
@@ -21,19 +21,23 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-4fdbce4200342c1c",
+      "EV-9aa43173dc06803c",
       "EV-3043858af3970696"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-21",
-    "lastSeen": "2026-07-22",
+    "lastSeen": "2026-07-23",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-4fdbce4200342c1c",
+        "EV-9aa43173dc06803c",
         "EV-3043858af3970696"
       ],
       "hardware": [],
@@ -41,6 +45,37 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-4fdbce4200342c1c",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Substack 导入 AI 检测工具 Pangram：用户可了解内容 AI 生成比例",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d411633327714b72",
+          "EN-122324d498bd5ded"
+        ]
+      },
+      {
+        "id": "EV-9aa43173dc06803c",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Substack 推出 AI 检测工具，可显示新闻通讯的 AI 写作比例",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d411633327714b72"
+        ]
+      },
       {
         "id": "EV-3043858af3970696",
         "dataDate": "2026-07-22",

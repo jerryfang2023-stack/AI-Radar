@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-7d3194f79e645c42",
@@ -21,6 +21,8 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-14cc7f194f3e5af8",
+      "EV-754e83c2d19005fe",
       "EV-d7a7244d620a2142",
       "EV-4da1a7c4d527eb69",
       "EV-e41fc65eb014893f",
@@ -46,6 +48,8 @@
       "EV-3b40ec144e5db22c",
       "EV-467d1a701d21327d",
       "EV-c5643983538c6513",
+      "EV-c3f617e75d303f59",
+      "EV-6fa2c58973ea61b4",
       "EV-e15ae1112294d59e",
       "EV-36d484148fbd3424",
       "EV-47a16db069ed320e",
@@ -59,6 +63,8 @@
       "EV-83b2e8f7fe679bc3",
       "EV-8abf5adc3e72fbb8",
       "EV-3a704c40204ecfd9",
+      "EV-777eb5b7783b71fb",
+      "EV-eec1e6857f0e0b2b",
       "EV-7f2811d2272cf4a3",
       "EV-2fab4396000198d2",
       "EV-3fb492fb45980541",
@@ -72,10 +78,14 @@
       "EV-1c6adfef6f405319",
       "EV-66df35d14361a6cb",
       "EV-3c4d6d70ac763885",
+      "EV-0d5a32aca724d30e",
+      "EV-1ba939d8baf43207",
+      "EV-5b193a038ab4ea22",
+      "EV-969923b0b978a660",
+      "EV-ea6abb5378846a71",
       "EV-133a92cb6cb25a0c",
       "EV-7c836c34e7cf36ee",
       "EV-071c72225b8aaf80",
-      "EV-0d5a32aca724d30e",
       "EV-ae1e2769aff82965",
       "EV-ab3e820aa6d92542",
       "EV-bc41a3060f11ca2d",
@@ -253,9 +263,11 @@
       "TX-technology-guardrails_safety",
       "TX-technology-tool_use",
       "TX-technology-reasoning",
+      "TX-technology-distillation",
       "TX-technology-computer_use"
     ],
     "relatedEntityIds": [
+      "EN-f65bb77682b83476",
       "EN-3850792f618f534b",
       "EN-7839fb10a8f14c70",
       "EN-d1ad14d4ad57d207",
@@ -281,9 +293,10 @@
       "EN-b9db1ff13ae8496e",
       "EN-7b8cb35de7ad047a"
     ],
-    "firstSeen": "2026-02-19",
-    "lastSeen": "2026-07-22",
+    "firstSeen": "2025-10-09",
+    "lastSeen": "2026-07-23",
     "relationIds": [
+      "REL2-f19612667cf9a9fc",
       "REL2-368918b89036f894",
       "REL2-3a1dd102da0a9eae",
       "REL2-4bb082b8b58f1dd4",
@@ -331,6 +344,8 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-14cc7f194f3e5af8",
+        "EV-754e83c2d19005fe",
         "EV-d7a7244d620a2142",
         "EV-4da1a7c4d527eb69",
         "EV-e41fc65eb014893f",
@@ -364,6 +379,9 @@
         "EV-c5643983538c6513"
       ],
       "deployments": [
+        "EV-c3f617e75d303f59",
+        "EV-6fa2c58973ea61b4",
+        "EV-777eb5b7783b71fb",
         "EV-e15ae1112294d59e",
         "EV-36d484148fbd3424",
         "EV-47a16db069ed320e",
@@ -381,6 +399,7 @@
         "EV-3a704c40204ecfd9"
       ],
       "partnerships": [
+        "EV-eec1e6857f0e0b2b",
         "EV-3c4d6d70ac763885",
         "EV-7f2811d2272cf4a3",
         "EV-2fab4396000198d2",
@@ -396,10 +415,14 @@
         "EV-66df35d14361a6cb"
       ],
       "productsServices": [
+        "EV-0d5a32aca724d30e",
+        "EV-1ba939d8baf43207",
+        "EV-5b193a038ab4ea22",
+        "EV-969923b0b978a660",
+        "EV-ea6abb5378846a71",
         "EV-133a92cb6cb25a0c",
         "EV-7c836c34e7cf36ee",
         "EV-071c72225b8aaf80",
-        "EV-0d5a32aca724d30e",
         "EV-ae1e2769aff82965",
         "EV-ab3e820aa6d92542",
         "EV-bc41a3060f11ca2d",
@@ -550,6 +573,291 @@
     },
     "timeline": [
       {
+        "id": "EV-14cc7f194f3e5af8",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 与 Datadog 高管支持 AI 部署初创公司 Arrakis",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9b5bd1ff5a1d7f49",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-754e83c2d19005fe",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Arrakis 携 3800 万美元资金走出隐身模式，将 AI 引入工厂与供应链",
+        "displayTags": [],
+        "entityIds": [
+          "EN-834cc12fc35adde7",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-c3f617e75d303f59",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-23",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Anthropic 将部署 2 吉瓦 AMD GPU 用于 Claude，交易价值高达 50 亿美元",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "entityIds": [
+          "EN-a9776b12a97fe2d9",
+          "EN-c70eca6b0f88f44d",
+          "EN-ea3bd73e2b506e00",
+          "EN-7d3194f79e645c42",
+          "EN-8d4321d936320802"
+        ]
+      },
+      {
+        "id": "EV-6fa2c58973ea61b4",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 在佐治亚州的“山茶花项目”通过 2032 年锁定 3.2 吉瓦电力交易",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-777eb5b7783b71fb",
+        "dataDate": "2026-07-23",
+        "date": "2025-10-09",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "印度试点AI智能体主导的电商，融合ChatGPT、Gemini、Claude",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          },
+          {
+            "dimensionId": "target_user",
+            "id": "consumer",
+            "dimensionName": "目标用户",
+            "name": "个人用户"
+          }
+        ],
+        "entityIds": [
+          "EN-fb54e9062429a937",
+          "EN-7d3194f79e645c42",
+          "EN-bbdefa2950f49882",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-eec1e6857f0e0b2b",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "微软评估将月之暗面 Kimi K3 接入 Copilot，推理成本年降 6 亿美元",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-b5251b35f15bedc4",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
+      {
+        "id": "EV-0d5a32aca724d30e",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "开源模型季度盘点：Kimi K3、Qwen 3.8、WAIC 演讲、知识蒸馏与开源闭源差距",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "distillation",
+            "name": "模型蒸馏"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重"
+          }
+        ],
+        "entityIds": [
+          "EN-16dc8ea1cf4807b0",
+          "EN-b5251b35f15bedc4",
+          "EN-047364b9be67f665",
+          "EN-cbc62794911ff31b",
+          "EN-10a27c6240d18dbe",
+          "EN-e6ac424c9ea83939",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42",
+          "EN-607964040e4b62e0"
+        ]
+      },
+      {
+        "id": "EV-1ba939d8baf43207",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Synthesia 推出 AI Roleplay Sessions，将企业培训从视频扩展到实时模拟辅导",
+        "displayTags": [],
+        "entityIds": [
+          "EN-fa6d7e7ab893803f",
+          "EN-ea3bd73e2b506e00",
+          "EN-96eebba49dbbf422",
+          "EN-7d3194f79e645c42",
+          "EN-6852734baccb5ebd"
+        ]
+      },
+      {
+        "id": "EV-5b193a038ab4ea22",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI 推出 OpenAI Presence，布局企业软件赛道",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "enterprise_operations",
+            "dimensionName": "应用场景",
+            "name": "企业运营自动化"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-bbdefa2950f49882",
+          "EN-6fcba5d96a4fadfd",
+          "EN-ea3bd73e2b506e00",
+          "EN-6f7ac1823da81d2e",
+          "EN-f65bb77682b83476"
+        ]
+      },
+      {
+        "id": "EV-969923b0b978a660",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Gemini 3.6 Flash ✨、OpenAI 安全漏洞 🚨、Devin Outposts 🛰️ TLDR",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882",
+          "EN-7d3194f79e645c42",
+          "EN-18f0900d6c487f59"
+        ]
+      },
+      {
+        "id": "EV-ea6abb5378846a71",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "思科押注其小型开源网络安全模型能以更低成本在漏洞检测上超越GPT-5.5",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "entityIds": [
+          "EN-e73b79a0b10f8cdb",
+          "EN-7d3194f79e645c42",
+          "EN-2ca3f7d58fdda0f5",
+          "EN-02be787a1aacea06",
+          "EN-62ce3c1a5a893a2c"
+        ]
+      },
+      {
         "id": "EV-133a92cb6cb25a0c",
         "dataDate": "2026-07-22",
         "date": "2026-07-22",
@@ -611,34 +919,6 @@
           "EN-7d3194f79e645c42",
           "EN-c70eca6b0f88f44d",
           "EN-d5b8915a8c232010"
-        ]
-      },
-      {
-        "id": "EV-0d5a32aca724d30e",
-        "dataDate": "2026-07-22",
-        "date": "2026-07-21",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "美国政策辩论重燃：中国开源权重模型Kimi K3引发安全与成本权衡",
-        "displayTags": [
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "open_weights",
-            "name": "开放权重"
-          }
-        ],
-        "entityIds": [
-          "EN-b5251b35f15bedc4",
-          "EN-7d3194f79e645c42",
-          "EN-e9b67bdfb6ae6a2e",
-          "EN-c70eca6b0f88f44d",
-          "EN-047364b9be67f665",
-          "EN-607964040e4b62e0",
-          "EN-cf5378a2305a999f"
         ]
       },
       {
@@ -4995,6 +5275,30 @@
   },
   "relatedEntities": [
     {
+      "id": "EN-f65bb77682b83476",
+      "name": "Presence",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5b193a038ab4ea22"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-23"
+    },
+    {
       "id": "EN-3850792f618f534b",
       "name": "GPT-6",
       "entityType": "product_candidate",
@@ -5116,6 +5420,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-9c069dcbaf5283a2",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
         "EV-e41fc65eb014893f",
@@ -5139,6 +5444,9 @@
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-c3f617e75d303f59",
+        "EV-0e3f748f87f5892a",
+        "EV-8a2d8ebbd700c787",
         "EV-2c16aa6254de4496",
         "EV-47a16db069ed320e",
         "EV-49c6291694fb6c7b",
@@ -5149,6 +5457,9 @@
         "EV-c81cb21337a9bb98",
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
+        "EV-777eb5b7783b71fb",
+        "EV-75b9b997e9c7e5d1",
+        "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
         "EV-4515377aa6311bf1",
@@ -5163,10 +5474,14 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-6cd7509380208a9d",
+        "EV-0d5a32aca724d30e",
+        "EV-3e449c3e9ad6a9e1",
+        "EV-5b193a038ab4ea22",
+        "EV-604cffac28a0af69",
         "EV-4449950a89892852",
         "EV-6ce069b1845f5a52",
         "EV-071c72225b8aaf80",
-        "EV-0d5a32aca724d30e",
         "EV-3043858af3970696",
         "EV-8121a1ecdf168d8a",
         "EV-cd067fa6f39fe828",
@@ -5318,6 +5633,10 @@
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
         "EV-cf496e0f8a56ca97",
+        "EV-8cb5b0ed18c7cdd8",
+        "EV-7b2a272a891f54d1",
+        "EV-89bdda008227fb6b",
+        "EV-ae9142b65fa86975",
         "EV-33fba8931cca96d5",
         "EV-22c88b4ff8c7d8d8",
         "EV-bf8086947a2639d4",
@@ -5353,7 +5672,8 @@
         "EV-65a4b47d1cca0a7a",
         "EV-e8e47f4bb528e107",
         "EV-01f196f98ece4eb2",
-        "EV-ecfc552af7344d65"
+        "EV-ecfc552af7344d65",
+        "EV-8654cc0faeb02d14"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -5380,10 +5700,13 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-industry-government_public_sector",
-        "TX-industry-education",
-        "TX-technology-distillation"
+        "TX-technology-distillation",
+        "TX-industry-education"
       ],
       "relatedEntityIds": [
+        "EN-830abc32d2a443c5",
+        "EN-240389f4b730bad4",
+        "EN-8d4321d936320802",
         "EN-7d3194f79e645c42",
         "EN-729324072d368379",
         "EN-ef11a801c5bd3673",
@@ -5405,8 +5728,8 @@
         "EN-b8c236d640d6a5fb",
         "EN-d8494bb34d6ddc43"
       ],
-      "firstSeen": "2026-03-13",
-      "lastSeen": "2026-07-22"
+      "firstSeen": "2025-09-04",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -5501,6 +5824,7 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
+        "EV-eec1e6857f0e0b2b",
         "EV-6acfb15c012ddf6d",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
@@ -5511,6 +5835,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-6c81f03e885f10af",
+        "EV-e1e30a2a4a5232c6",
         "EV-cd067fa6f39fe828",
         "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
@@ -5551,6 +5877,7 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-89bdda008227fb6b",
         "EV-62df953d81def866",
         "EV-1b92b6c835ce240c",
         "EV-3da14e3743571e92",
@@ -5573,6 +5900,7 @@
         "TX-use_case-robotics_automation",
         "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
@@ -5581,6 +5909,7 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
         "EN-d2f4e09cb01afa3c",
@@ -5592,7 +5921,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-536c4035ba0c7047",
@@ -5760,7 +6089,8 @@
         "EV-6eb9a23be3117421",
         "EV-37cdd2fae39aaa2e",
         "EV-1e7c76dae985100f",
-        "EV-ad1444d8653b37ae"
+        "EV-ad1444d8653b37ae",
+        "EV-89bdda008227fb6b"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -5771,7 +6101,7 @@
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-07-15"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "EN-bd2bfbea5911ec7a",
@@ -5987,6 +6317,27 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-f19612667cf9a9fc",
+      "relationship_version": "RELATION-V2.0",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-f65bb77682b83476",
+      "object_type": "entity",
+      "event_id": "EV-5b193a038ab4ea22",
+      "claim_refs": [
+        "CL-ddb0aefd30a5f206",
+        "CL-a3990449e4a9b1e5",
+        "CL-9a8819e778cded30",
+        "CL-49e9cbca0f22eebe"
+      ],
+      "source_refs": [
+        "SA-3d3eb79137181535"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-368918b89036f894",
       "relationship_version": "RELATION-V2.0",
@@ -6884,8 +7235,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-2069f6a931b8c9d6",
         "EV-901155ab700a7e8e",
+        "EV-2069f6a931b8c9d6",
         "EV-f6e7a4fe77d7f5c9",
         "EV-6be89ebfbf8de6be",
         "EV-b29878fdf79f2ac5",
@@ -6897,6 +7248,7 @@
         "EV-095e1a90f14ccdb9",
         "EV-640c5ea9f4fa2780",
         "EV-9781e67076f4e06b",
+        "EV-8cf189b07a257c1c",
         "EV-0a5d792223f5381f",
         "EV-63236c15166b71e0",
         "EV-d642ec7a9ca5eb0f",
@@ -6906,7 +7258,6 @@
         "EV-8bb64551124d8870",
         "EV-1349fd0441b75da0",
         "EV-6e06cfa28f76a76f",
-        "EV-8cf189b07a257c1c",
         "EV-e61effb7ada8508f",
         "EV-3d93d1da8cb64462",
         "EV-0ade039d36e077ae",
@@ -7036,6 +7387,9 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-5b193a038ab4ea22",
+        "EV-6c81f03e885f10af",
+        "EV-bf68acb1350e039b",
         "EV-2fea1664807824ce",
         "EV-3ba971c5939b0f04",
         "EV-6ce069b1845f5a52",
@@ -7213,6 +7567,7 @@
         "EV-c52947e480fa3347",
         "EV-cf496e0f8a56ca97",
         "EV-aaaa21ae510bc87e",
+        "EV-8cb5b0ed18c7cdd8",
         "EV-6566d065f5500a85",
         "EV-34929bdd016dc8d6",
         "EV-70fd0c4e482a646e",
@@ -7231,9 +7586,9 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-12765295db4f1e79",
         "EN-73ef176d9f12809e",
         "EN-96eebba49dbbf422",
-        "EN-12765295db4f1e79",
         "EN-270e2cfd11014ef8",
         "EN-522656609ff15589",
         "EN-b0bc23fa8e20c543",
@@ -7246,6 +7601,8 @@
         "EN-45a46e581e91ce79",
         "EN-ea3bd73e2b506e00",
         "EN-4d748ebd71af03a7",
+        "EN-3afbf365c56b769d",
+        "EN-b0532e1af75cc4ab",
         "EN-7a9c94a8c201bcc2",
         "EN-8f71c4871a160172",
         "EN-d6386c59a6bcfcb1",
@@ -7257,8 +7614,6 @@
         "EN-7692c3ad3540bb80",
         "EN-cd84b3822a32503d",
         "EN-caaa8e02be54cfc9",
-        "EN-3afbf365c56b769d",
-        "EN-b0532e1af75cc4ab",
         "EN-612370f44fcdeae0",
         "EN-14ce7672aaca7a68",
         "EN-047364b9be67f665",
@@ -7393,8 +7748,12 @@
         "EN-de5a1adf4fedcce1",
         "EN-19e41212c0556603",
         "EN-dca6ec9510fc0176",
-        "EN-0d1e478de2157d48",
+        "EN-6fcba5d96a4fadfd",
         "EN-6f7ac1823da81d2e",
+        "EN-f65bb77682b83476",
+        "EN-7c094d35e3b700c8",
+        "EN-9a266f40d42cf217",
+        "EN-0d1e478de2157d48",
         "EN-4546b5bdff2ea8ed",
         "EN-18f0900d6c487f59",
         "EN-52c2f30b6bda5898",
@@ -7626,7 +7985,6 @@
         "EN-ab9e3beebd83960d",
         "EN-1ecf93c539fcffca",
         "EN-8941d14fe851d732",
-        "EN-6fcba5d96a4fadfd",
         "EN-11ef7b03c79c9bbd",
         "EN-0b9ca57f53ba758b",
         "EN-9bc22dcabf7f45b3",
@@ -7640,6 +7998,7 @@
         "EN-4634cbf463651816",
         "EN-467f67b2ed0f9a54",
         "EN-b7bea343b08cce2c",
+        "EN-fdb2cc367267ac57",
         "EN-1af769ad0ad5907c",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
@@ -7700,7 +8059,7 @@
         "HW-25ce41fab12d9ef2"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-industry-technology",
@@ -7761,6 +8120,7 @@
       "eventIds": [
         "EV-f6a72cddbda748b3",
         "EV-34a077ec20c91cea",
+        "EV-8cf189b07a257c1c",
         "EV-aa33ca051f3a7f78",
         "EV-189e43cb9fea8e1a",
         "EV-a42e51959c627554",
@@ -7786,6 +8146,8 @@
         "EN-a5d2ae286d0d9e45",
         "EN-96eebba49dbbf422",
         "EN-e5dcb6b25180d1d6",
+        "EN-3afbf365c56b769d",
+        "EN-b0532e1af75cc4ab",
         "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
         "EN-11507a0e2f5e69d5",
@@ -7802,7 +8164,6 @@
         "EN-5e757c7fc575c41e",
         "EN-bc8a00f7f6fb535f",
         "EN-3ccbd9105a45d8fc",
-        "EN-b0532e1af75cc4ab",
         "EN-4d748ebd71af03a7",
         "EN-c3e4cc183d345262",
         "EN-9b6ea48b511ffd60",
@@ -7825,7 +8186,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-03-19",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-use_case-enterprise_operations",
@@ -7847,6 +8208,7 @@
         "EV-12ca2aae7bfcd080",
         "EV-acf1bcb321414706",
         "EV-57d3b7aa1a2f0fda",
+        "EV-5b193a038ab4ea22",
         "EV-3a7128e2d7ff149e",
         "EV-779b733110003284",
         "EV-6364cfadff0d1d30",
@@ -7871,6 +8233,10 @@
         "EN-b1d07f1a647ba7fb",
         "EN-3cce50ffb12f1a69",
         "EN-8d4321d936320802",
+        "EN-6fcba5d96a4fadfd",
+        "EN-ea3bd73e2b506e00",
+        "EN-6f7ac1823da81d2e",
+        "EN-f65bb77682b83476",
         "EN-e395d03e988d30a9",
         "EN-0dba03107c52ed3e",
         "EN-51a5b811990f2a2a",
@@ -7885,7 +8251,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -7902,6 +8268,8 @@
         "EV-a3b006906f6d46a0",
         "EV-046caa2b3d6fbdde",
         "EV-0e028ea8f94752de",
+        "EV-9ad569c873451304",
+        "EV-777eb5b7783b71fb",
         "EV-02686922dd82c4aa",
         "EV-99a0cb6bac516bdd",
         "EV-2ffc3377977da114",
@@ -7926,6 +8294,11 @@
         "EN-4dbe391b8fcf977a",
         "EN-c5947269de664c47",
         "EN-e759968ca9278b8d",
+        "EN-6957217eb8e00a30",
+        "EN-8f71c4871a160172",
+        "EN-fb54e9062429a937",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
         "EN-88e2cce43eeadb36",
         "EN-276a8bc458036a1a",
         "EN-5239a379b6326549",
@@ -7933,14 +8306,12 @@
         "EN-e274048227f164dc",
         "EN-1bf93b12e68cac56",
         "EN-d9b1d7819af92e77",
-        "EN-bbdefa2950f49882",
         "EN-151013fb8438c046",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-5388bc10736a0eff",
         "EN-43a340bb75b45f02",
         "EN-5e1fcba4c9f1cf69",
-        "EN-7d3194f79e645c42",
         "EN-94ff75465b1afa65",
         "EN-3a7bd3e2360a3d29",
         "EN-40e307d789f77264",
@@ -7956,11 +8327,12 @@
       ],
       "fdeIds": [
         "FDE-62f660a9a90bc3f6",
+        "FDE-3d5eb0bc571f55bf",
         "FDE-309bc49d109029a3"
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-07-20"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-industry-manufacturing",
@@ -8295,6 +8667,7 @@
         "EV-57597c92f7b183a9",
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
+        "EV-7fad565c9ffab4b0",
         "EV-322796d9761a0824",
         "EV-14b44a40808340f5",
         "EV-edb1ddb3a091ada4"
@@ -8346,6 +8719,7 @@
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
         "EN-9dde0c2d375060f6",
+        "EN-b21a23767d4d35a9",
         "EN-ea3bd73e2b506e00",
         "EN-a19ad969c84178e9",
         "EN-b6e23938808f272d"
@@ -8361,7 +8735,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-industry-professional_services",
@@ -8408,6 +8782,7 @@
         "EV-e7b228c1b6b54c6a",
         "EV-57d3b7aa1a2f0fda",
         "EV-234ad54940674bf6",
+        "EV-5a9fe80f8e4ae066",
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
@@ -8453,6 +8828,7 @@
         "EN-3b39ea849059759f",
         "EN-bbdefa2950f49882",
         "EN-3cce50ffb12f1a69",
+        "EN-7c5d04104b1d34e7",
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
@@ -8515,7 +8891,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-use_case-software_development",
@@ -8530,8 +8906,10 @@
         "EV-c0ec0c026233bea5",
         "EV-03f661e8dcdf1b58",
         "EV-474d5a8ffca11ed9",
+        "EV-8a2d8ebbd700c787",
         "EV-2d6d2dc0ead4be10",
         "EV-d209a6acecba4285",
+        "EV-75b9b997e9c7e5d1",
         "EV-b2e374d54b10b9af",
         "EV-6ce069b1845f5a52",
         "EV-ab3e820aa6d92542",
@@ -8560,16 +8938,19 @@
         "EN-a7dd4a797cf9990b",
         "EN-e78bdebae031095b",
         "EN-7d4e02d31a7eb0f8",
+        "EN-c70eca6b0f88f44d",
+        "EN-6d57b22ebbd2bd90",
         "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
         "EN-7d3194f79e645c42",
         "EN-968e2d5b08687bf4",
+        "EN-240389f4b730bad4",
+        "EN-ef705dd2f374e840",
         "EN-f48a4090493d2b5e",
         "EN-f9ae78c09ff308f9",
         "EN-ce635c4eabff5e4f",
         "EN-9fbf261b62c1d7c0",
         "EN-bbdefa2950f49882",
-        "EN-c70eca6b0f88f44d",
         "EN-18f0900d6c487f59",
         "EN-916a98f0fa2a39af",
         "EN-dc6c28a2123e8efb",
@@ -8604,11 +8985,14 @@
       ],
       "fdeIds": [
         "FDE-2dda1b977721f467",
+        "FDE-6920b7a1f4924656",
         "FDE-8d7df617732e7c45"
       ],
-      "hardwareIds": [],
+      "hardwareIds": [
+        "HW-033a5b73cdc3f4be"
+      ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-long_context",
@@ -8732,6 +9116,7 @@
         "EV-53f4f2a34b3ce1b4",
         "EV-b240fb11e65b018e",
         "EV-bd508dbe4205774f",
+        "EV-ea6abb5378846a71",
         "EV-6ce069b1845f5a52",
         "EV-7c836c34e7cf36ee",
         "EV-071c72225b8aaf80",
@@ -8778,8 +9163,12 @@
         "EN-ea87a2bd84296f73",
         "EN-4094a2b7125c7564",
         "EN-cbc62794911ff31b",
-        "EN-18f0900d6c487f59",
+        "EN-e73b79a0b10f8cdb",
         "EN-7d3194f79e645c42",
+        "EN-2ca3f7d58fdda0f5",
+        "EN-02be787a1aacea06",
+        "EN-62ce3c1a5a893a2c",
+        "EN-18f0900d6c487f59",
         "EN-d9352ce019e77ab3",
         "EN-ac123e56b0168ec2",
         "EN-d5b8915a8c232010",
@@ -8813,7 +9202,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-use_case-data_analysis",
@@ -8825,6 +9214,7 @@
         "EV-5f5f252c6a826599",
         "EV-b348083270be6c65",
         "EV-95acc01f9b9a08ab",
+        "EV-6c81f03e885f10af",
         "EV-19bcfc6d7c1612cb",
         "EV-daf1e21f8ccbf839",
         "EV-333851b077b606c8",
@@ -8837,6 +9227,7 @@
         "EN-122c0bebae950c77",
         "EN-96eebba49dbbf422",
         "EN-1c5483264189feef",
+        "EN-9fbf261b62c1d7c0",
         "EN-2abf8289b2f2113f",
         "EN-91901356a63794df",
         "EN-a89151ba4b5ac0f2",
@@ -8860,7 +9251,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-06-07",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-retrieval_augmented_generation",
@@ -9071,8 +9462,8 @@
       "valueId": "open_weights",
       "eventIds": [
         "EV-1abf0d076d30ec6d",
-        "EV-2fea1664807824ce",
         "EV-0d5a32aca724d30e",
+        "EV-2fea1664807824ce",
         "EV-b84035029a63e52e",
         "EV-3028dfadf94c8f4c",
         "EV-a06011da69abcc3d",
@@ -9084,16 +9475,18 @@
         "EN-240389f4b730bad4",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d",
+        "EN-16dc8ea1cf4807b0",
+        "EN-b5251b35f15bedc4",
+        "EN-047364b9be67f665",
+        "EN-cbc62794911ff31b",
+        "EN-10a27c6240d18dbe",
+        "EN-e6ac424c9ea83939",
+        "EN-607964040e4b62e0",
         "EN-0d1e478de2157d48",
         "EN-8d4321d936320802",
         "EN-6f7ac1823da81d2e",
         "EN-8f71c4871a160172",
         "EN-4546b5bdff2ea8ed",
-        "EN-b5251b35f15bedc4",
-        "EN-e9b67bdfb6ae6a2e",
-        "EN-047364b9be67f665",
-        "EN-607964040e4b62e0",
-        "EN-cf5378a2305a999f",
         "EN-d41ebd9f02722fc8",
         "EN-b0532e1af75cc4ab",
         "EN-96eebba49dbbf422",
@@ -9114,7 +9507,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-model_context_protocol",
@@ -9134,6 +9527,7 @@
         "EV-266aff97294156f6",
         "EV-1035aa9cbde79b2f",
         "EV-3371b45e53949464",
+        "EV-8cb5b0ed18c7cdd8",
         "EV-9c41acd6ef6df77f"
       ],
       "entityIds": [
@@ -9157,12 +9551,13 @@
         "EN-7d1507284a5757ca",
         "EN-761a66c29a55bc53",
         "EN-c2f186e231aa600d",
+        "EN-fdb2cc367267ac57",
         "EN-5504f88c63fe766d"
       ],
       "fdeIds": [],
       "hardwareIds": [],
-      "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-18"
+      "firstSeen": "2025-11-17",
+      "lastSeen": "2026-07-23"
     },
     {
       "id": "TX-technology-multimodal",
@@ -9407,6 +9802,38 @@
       "lastSeen": "2026-07-19"
     },
     {
+      "id": "TX-technology-distillation",
+      "name": "模型蒸馏",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "distillation",
+      "eventIds": [
+        "EV-0d5a32aca724d30e",
+        "EV-18df881cc436b3cb",
+        "EV-b920999c64aa9ef6",
+        "EV-d2c370511e9e55fe"
+      ],
+      "entityIds": [
+        "EN-16dc8ea1cf4807b0",
+        "EN-b5251b35f15bedc4",
+        "EN-047364b9be67f665",
+        "EN-cbc62794911ff31b",
+        "EN-10a27c6240d18dbe",
+        "EN-e6ac424c9ea83939",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-607964040e4b62e0",
+        "EN-ec7d81cdcc201572",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-cb4754c48f8023d0"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-23"
+    },
+    {
       "id": "TX-technology-computer_use",
       "name": "计算机操作",
       "nodeType": "technology",
@@ -9442,6 +9869,47 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-3d5eb0bc571f55bf",
+      "eventId": "EV-777eb5b7783b71fb",
+      "dataDate": "2026-07-23",
+      "date": "2025-10-09",
+      "title": "印度试点AI智能体主导的电商，融合ChatGPT、Gemini、Claude",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "India",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "AI chatbot-led e-commerce with ChatGPT, Gemini, Claude in the mix",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "On Thursday, the National Payments Corporation of India (NPCI), the federal body behind the country’s widely used Unified Payments Interface (UPI), partnered with OpenAI and fintech firm Razorpay to enable consumers to shop and pay directly through ChatGPT. Razorpay confirmed to TechCrunch that the pilot is being rolled out nationwide and will become widely available in the coming months."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$5 "
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2025/10/09/india-pilots-ai-chatbot-led-e-commerce-with-chatgpt-gemini-claude-in-the-mix",
+      "entityIds": [
+        "EN-fb54e9062429a937",
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDE-2a3615a93ffe5946",
       "eventId": "EV-3c4d6d70ac763885",
@@ -9894,6 +10362,64 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-7c91d6528b08a2f0",
+      "eventId": "EV-c3f617e75d303f59",
+      "dataDate": "2026-07-23",
+      "date": "2026-07-23",
+      "title": "Anthropic 将部署 2 吉瓦 AMD GPU 用于 Claude，交易价值高达 50 亿美元",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "NVIDIA",
+      "customer": "Anthropic will",
+      "processNode": "未披露",
+      "capacity": 450,
+      "capacityUnit": "GPUs",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/anthropic-will-deploy-2-gigawatts-of-amd-gpus-for-claude-in-a-deal-worth-up-to-5-billion",
+      "sourceName": "The Decoder AI News",
+      "sourceDate": "2026-07-23",
+      "entityIds": [
+        "EN-a9776b12a97fe2d9",
+        "EN-c70eca6b0f88f44d",
+        "EN-ea3bd73e2b506e00",
+        "EN-7d3194f79e645c42",
+        "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "HW-c0840303e7e4ae47",
+      "eventId": "EV-6fa2c58973ea61b4",
+      "dataDate": "2026-07-23",
+      "date": "2026-07-22",
+      "title": "OpenAI 在佐治亚州的“山茶花项目”通过 2032 年锁定 3.2 吉瓦电力交易",
+      "hardwareType": "data_center",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "OpenAI",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/openais-project-camellia-in-georgia-secures-a-massive-3-2-gigawatt-power-deal-through-2032",
+      "sourceName": "The Decoder AI News",
+      "sourceDate": "2026-07-22",
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ]
+    },
     {
       "id": "HW-7ac397b49d3cae6a",
       "eventId": "EV-02b19ffbe883ee2e",

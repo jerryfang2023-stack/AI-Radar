@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
+  },
+  "entity": {
+    "id": "EN-5e03133f0735ce9f",
+    "name": "Network World",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-5cd352f2a021350d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-21",
+    "lastSeen": "2026-07-23",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-5cd352f2a021350d"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-5cd352f2a021350d",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Helios 标志着 AMD 迄今最大规模的 AI 基础设施布局",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "entityIds": [
+          "EN-240389f4b730bad4",
+          "EN-5e03133f0735ce9f",
+          "EN-147b4d06ea998b70"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

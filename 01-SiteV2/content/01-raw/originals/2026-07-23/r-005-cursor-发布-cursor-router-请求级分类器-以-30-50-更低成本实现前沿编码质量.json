@@ -1,0 +1,294 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-005",
+  "title": "Cursor 发布 Cursor Router：请求级分类器，以 30-50% 更低成本实现前沿编码质量",
+  "title_zh": "Cursor 发布 Cursor Router：请求级分类器，以 30-50% 更低成本实现前沿编码质量",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://www.marktechpost.com/2026/07/22/cursor-releases-cursor-router-a-request-level-classifier",
+  "canonical_url": "https://marktechpost.com/2026/07/22/cursor-releases-cursor-router-a-request-level-classifier",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-22T22:37:44.000Z",
+  "collected_at": "2026-07-23T03:50:55.877Z",
+  "language": "mixed",
+  "full_text": "Editors Pick\nAgentic AI\nSoftware Engineering\nStaff\nTech News\nCursor has made Cursor Router generally available for Teams and Enterprise plans. The system is a classifier that inspects each request before a model runs, then dispatches it to the model best suited to that specific task. The cursor team reports frontier-quality performance at 60% savings in online A/B tests, and 30–50% savings for early-access enterprise accounts.\nThe problem it targets is a spend pattern rather than a capability gap. Cursor states that roughly 60% of its developers pick a single model as a daily driver . Routine work therefore gets completed at frontier prices, and AI spend grows faster than output quality. Routing is Cursor’s answer to that mismatch.\nWhat the classifier actually reads\nCursor Router is not a fallback chain or a retry mechanism. It is a classifier trained on 600k+ live requests , evaluated in an online A/B test across millions of live requests, and optimized for user satisfaction (AFC) as its reward signal.\nFor each request, the router analyzes four inputs: query, context, task complexity, and domain . It combines these with learned knowledge of each model’s behavior. Cursor publishes three routing rules that follow from that classification:\nSimple work goes to the most price-efficient models.\nUI updates go to the model with the best taste.\nComplex, long-horizon problems go to frontier reasoning models.\nThat third rule carries the weight of the cost argument. The savings do not come from downgrading hard problems. They come from removing routine work from frontier pricing while the difficult tier stays intact.\nOne implementation detail deserves attention from anyone who has built a router. Cursor Router is cache-aware in both training and evaluation . It is trained on a dataset where routing produces cache misses, and the reported cost savings include the cost of those cache misses. Switching models mid-conversation invalidates prompt cache, and that cost is real. Routers that ignore it overstate their savings.\nThe classifier was also designed for model churn. Cursor states it can update the router as newer models ship, which matters in a market where the frontier moves monthly.\nInteractive Explainer\nInside Cursor Router: classification, tiers and published results\nEvery figure below is taken from Cursor’s launch post and changelog (July 22, 2026). Values Cursor did not publish are marked as such.\nRoute a request\nModes\nCost per commit\nHow it was measured\nPick a task — see how the classifier reads it\nStep 1 · Signals read before any model runs\nStep 2 · Routing tier selected\nCursor publishes three routing rules and does not name a specific model per task type. The tier shown is Cursor’s own published category; the sample tasks are illustrative applications of those three rules. Cursor states the classifier reads query, context, task complexity and domain , combined with what it knows about each model’s behavior.\nAuto mode — three points on the cost–intelligence Pareto frontier\nCost\nBalance\nIntelligence\nCursor’s description\nPublished cost per commit (early access measurement)\nLinear projection — drag to set monthly commit volume\nVolume: 1,000 commits / month\nModel / mode $ / commit Monthly vs Opus 4.8\nCost-per-commit figures are Cursor’s published early-access observations. The projection is straight multiplication of those unit figures — it is arithmetic, not a Cursor forecast, and assumes a constant task mix. Cursor reports GPT-5.6 Sol matched the cost of Intelligence mode but with lower user satisfaction ; it did not publish an exact figure for it.\nElement What Cursor reports\nTraining data 600k+ live requests\nReward signal User satisfaction (AFC)\nEvaluation Online A/B test across millions of live requests, not offline evals\nQuality metric 1 User satisfaction — agent success classified from user responses. Moving to the next feature is a strong positive; correcting the agent is a strong negative.\nQuality metric 2 Keep rate — how much agent-generated code remains in the codebase over time\nMetric track record Both metrics used to evaluate every model launch and harness change for the past nine months\nCache handling Cache-aware in training and evaluation. Trained on a dataset where routing causes cache misses; reported savings include cache-miss cost.\nPlatform scale Cursor routes hundreds of millions of coding requests per week across models and providers\nProblem being solved ~60% of Cursor developers pick one model as a daily driver, putting routine work on frontier pricing\nCursor’s stated reason for choosing online A/B tests: offline evals are limited by small size, distance from real usage, and the difficulty of reducing success to a rubric — and they omit the extra cache-miss cost incurred when switching models mid-conversation.\nSource: cursor.com/blog/router · verified Jul 22, 2026\nBuilt by Marktechpost\nWhy online A/B tests instead of offline evals\nCursor deliberately avoided offline evals as its primary measurement. Its stated reasoning is that offline evals suffer from small sample size, distance from real-world usage, and the difficulty of reducing success to a rubric. They also omit the cache-miss cost incurred when switching models.\nReal routing happens across a conversation, not a single turn. Developers write code, ask follow-ups, hit errors, and continue, often across hundreds of requests in a week. The router must decide both which model to pick and when to switch.\nTwo quality metrics carry the evaluation:\nUser satisfaction : agent success classified from user responses. Moving on to the next feature is a strong positive signal. Correcting the agent is a strong negative one.\nKeep rate : how much agent-generated code remains in the codebase over time.\nCursor team states it has used both metrics to evaluate every model launch and harness improvement for the past nine months. This is a meaningful credibility marker: the metrics predate the product they are now being used to justify.\nThree modes, and the numbers behind them\nAuto mode now exposes three optimization settings that move the user along the cost–intelligence Pareto frontier.\nAuto Intelligence lands near Fable on user satisfaction at about 60% lower cost for teams. Against Opus 4.8, it lifts satisfaction about 15% at nearly the same cost.\nAuto Balance lands above Opus 4.8 on user satisfaction at about 36% lower cost. Against GPT-5.6 Sol, it delivers comparable satisfaction at a lower spend rate.\nCost mode is described as good quality reaching the highest available intelligence while optimizing token spend. Cursor published no A/B quality or cost figures for it.\nCost per request is only part of the picture, so Cursor also measured cost per commit :\nModel / mode Cost per commit\nAuto Balance $4.63\nAuto Intelligence $6.76\nOpus 4.8 $7.34\nFable 5 $12.69\nGPT-5.6 Sol matched the cost of Intelligence mode but produced lower user satisfaction. Cursor did not publish an exact per-commit figure for it.\nDeployment reality and the one hard constraint\nCursor Router ships across desktop, web, iOS, CLI, and the Cursor SDK. It is on by default for Teams plans . Enterprise admins enable it from the dashboard.\nThe changelog specifies the admin surface: per-team and per-group enablement, restrictions on which optimization modes members can select, a configurable default mode, and model allow and block lists. Soft and hard enforcement options exist for standardizing on Auto. The routed model can be displayed or hidden, and it is hidden by default — teams that want routing transparency must opt in.\nTwo constraints are important for procurement. First, Grok 4.5 is required as a price-efficient routing option , so the model block list cannot be used to exclude it. Grok 4.5 , released July 8, is priced at $2/M input and $6/M output tokens, with a fast variant at $4/M and $18/M. Second, Balance and Intelligence bill at the routed model’s rate , so unit cost varies with each routing decision rather than settling at a flat price.\nKey Takeaways\nCursor Router is a per-request classifier trained on 600k+ live requests, optimized for user satisfaction (AFC).\nOnline A/B tests report frontier-quality output at 60% savings; three early-access enterprise accounts saved 30–50% versus Opus 4.8.\nCost per commit: $4.63 Balance, $6.76 Intelligence, against $7.34 for Opus 4.8 and $12.69 for Fable 5.\nCache-miss cost from model switching is included in the reported savings, not excluded.\nGrok 4.5 is a required routing option, and Balance and Intelligence bill at the routed model’s rate.\nSources: Cursor Router launch post , Cursor Router changelog , Grok 4.5 announcement and @cursor_ai on X .\nMichal Sutter\n+ posts Bio\nMichal Sutter is a data science professional with a Master of Science in Data Science from the University of Padova. With a solid foundation in statistical analysis, machine learning, and data engineering, Michal excels at transforming complex datasets into actionable insights.\nMichal Sutter\nCisco Foundation AI Releases Antares: 350M and 1B Open-Weight Models That Localize Known Vulnerabilities Inside Real Codebases\nMichal Sutter\nMeta Open-Sources Astryx: An Agent-Ready React Design System With 150+ Accessible Components, Seven Themes, and a CLI\nMichal Sutter\nSomeone Fine-Tuned OpenBMB’s MiniCPM5-1B on Claude Fable 5 Traces to Ship a 657MB Local Thinking Model\nMichal Sutter\nBest Local LLMs You Can Run on a Single 24GB GPU in 2026: Qwen, Gemma, Mistral, DeepSeek Compared",
+  "clean_text": "Editors Pick\nAgentic AI\nSoftware Engineering\nStaff\nTech News\nCursor has made Cursor Router generally available for Teams and Enterprise plans. The system is a classifier that inspects each request before a model runs, then dispatches it to the model best suited to that specific task. The cursor team reports frontier-quality performance at 60% savings in online A/B tests, and 30–50% savings for early-access enterprise accounts.\nThe problem it targets is a spend pattern rather than a capability gap. Cursor states that roughly 60% of its developers pick a single model as a daily driver . Routine work therefore gets completed at frontier prices, and AI spend grows faster than output quality. Routing is Cursor’s answer to that mismatch.\nWhat the classifier actually reads\nCursor Router is not a fallback chain or a retry mechanism. It is a classifier trained on 600k+ live requests , evaluated in an online A/B test across millions of live requests, and optimized for user satisfaction (AFC) as its reward signal.\nFor each request, the router analyzes four inputs: query, context, task complexity, and domain . It combines these with learned knowledge of each model’s behavior. Cursor publishes three routing rules that follow from that classification:\nSimple work goes to the most price-efficient models.\nUI updates go to the model with the best taste.\nComplex, long-horizon problems go to frontier reasoning models.\nThat third rule carries the weight of the cost argument. The savings do not come from downgrading hard problems. They come from removing routine work from frontier pricing while the difficult tier stays intact.\nOne implementation detail deserves attention from anyone who has built a router. Cursor Router is cache-aware in both training and evaluation . It is trained on a dataset where routing produces cache misses, and the reported cost savings include the cost of those cache misses. Switching models mid-conversation invalidates prompt cache, and that cost is real. Routers that ignore it overstate their savings.\nThe classifier was also designed for model churn. Cursor states it can update the router as newer models ship, which matters in a market where the frontier moves monthly.\nInteractive Explainer\nInside Cursor Router: classification, tiers and published results\nEvery figure below is taken from Cursor’s launch post and changelog (July 22, 2026). Values Cursor did not publish are marked as such.\nRoute a request\nModes\nCost per commit\nHow it was measured\nPick a task — see how the classifier reads it\nStep 1 · Signals read before any model runs\nStep 2 · Routing tier selected\nCursor publishes three routing rules and does not name a specific model per task type. The tier shown is Cursor’s own published category; the sample tasks are illustrative applications of those three rules. Cursor states the classifier reads query, context, task complexity and domain , combined with what it knows about each model’s behavior.\nAuto mode — three points on the cost–intelligence Pareto frontier\nCost\nBalance\nIntelligence\nCursor’s description\nPublished cost per commit (early access measurement)\nLinear projection — drag to set monthly commit volume\nVolume: 1,000 commits / month\nModel / mode $ / commit Monthly vs Opus 4.8\nCost-per-commit figures are Cursor’s published early-access observations. The projection is straight multiplication of those unit figures — it is arithmetic, not a Cursor forecast, and assumes a constant task mix. Cursor reports GPT-5.6 Sol matched the cost of Intelligence mode but with lower user satisfaction ; it did not publish an exact figure for it.\nElement What Cursor reports\nTraining data 600k+ live requests\nReward signal User satisfaction (AFC)\nEvaluation Online A/B test across millions of live requests, not offline evals\nQuality metric 1 User satisfaction — agent success classified from user responses. Moving to the next feature is a strong positive; correcting the agent is a strong negative.\nQuality metric 2 Keep rate — how much agent-generated code remains in the codebase over time\nMetric track record Both metrics used to evaluate every model launch and harness change for the past nine months\nCache handling Cache-aware in training and evaluation. Trained on a dataset where routing causes cache misses; reported savings include cache-miss cost.\nPlatform scale Cursor routes hundreds of millions of coding requests per week across models and providers\nProblem being solved ~60% of Cursor developers pick one model as a daily driver, putting routine work on frontier pricing\nCursor’s stated reason for choosing online A/B tests: offline evals are limited by small size, distance from real usage, and the difficulty of reducing success to a rubric — and they omit the extra cache-miss cost incurred when switching models mid-conversation.\nSource: cursor.com/blog/router · verified Jul 22, 2026\nBuilt by Marktechpost\nWhy online A/B tests instead of offline evals\nCursor deliberately avoided offline evals as its primary measurement. Its stated reasoning is that offline evals suffer from small sample size, distance from real-world usage, and the difficulty of reducing success to a rubric. They also omit the cache-miss cost incurred when switching models.\nReal routing happens across a conversation, not a single turn. Developers write code, ask follow-ups, hit errors, and continue, often across hundreds of requests in a week. The router must decide both which model to pick and when to switch.\nTwo quality metrics carry the evaluation:\nUser satisfaction : agent success classified from user responses. Moving on to the next feature is a strong positive signal. Correcting the agent is a strong negative one.\nKeep rate : how much agent-generated code remains in the codebase over time.\nCursor team states it has used both metrics to evaluate every model launch and harness improvement for the past nine months. This is a meaningful credibility marker: the metrics predate the product they are now being used to justify.\nThree modes, and the numbers behind them\nAuto mode now exposes three optimization settings that move the user along the cost–intelligence Pareto frontier.\nAuto Intelligence lands near Fable on user satisfaction at about 60% lower cost for teams. Against Opus 4.8, it lifts satisfaction about 15% at nearly the same cost.\nAuto Balance lands above Opus 4.8 on user satisfaction at about 36% lower cost. Against GPT-5.6 Sol, it delivers comparable satisfaction at a lower spend rate.\nCost mode is described as good quality reaching the highest available intelligence while optimizing token spend. Cursor published no A/B quality or cost figures for it.\nCost per request is only part of the picture, so Cursor also measured cost per commit :\nModel / mode Cost per commit\nAuto Balance $4.63\nAuto Intelligence $6.76\nOpus 4.8 $7.34\nFable 5 $12.69\nGPT-5.6 Sol matched the cost of Intelligence mode but produced lower user satisfaction. Cursor did not publish an exact per-commit figure for it.\nDeployment reality and the one hard constraint\nCursor Router ships across desktop, web, iOS, CLI, and the Cursor SDK. It is on by default for Teams plans . Enterprise admins enable it from the dashboard.\nThe changelog specifies the admin surface: per-team and per-group enablement, restrictions on which optimization modes members can select, a configurable default mode, and model allow and block lists. Soft and hard enforcement options exist for standardizing on Auto. The routed model can be displayed or hidden, and it is hidden by default — teams that want routing transparency must opt in.\nTwo constraints are important for procurement. First, Grok 4.5 is required as a price-efficient routing option , so the model block list cannot be used to exclude it. Grok 4.5 , released July 8, is priced at $2/M input and $6/M output tokens, with a fast variant at $4/M and $18/M. Second, Balance and Intelligence bill at the routed model’s rate , so unit cost varies with each routing decision rather than settling at a flat price.\nKey Takeaways\nCursor Router is a per-request classifier trained on 600k+ live requests, optimized for user satisfaction (AFC).\nOnline A/B tests report frontier-quality output at 60% savings; three early-access enterprise accounts saved 30–50% versus Opus 4.8.\nCost per commit: $4.63 Balance, $6.76 Intelligence, against $7.34 for Opus 4.8 and $12.69 for Fable 5.\nCache-miss cost from model switching is included in the reported savings, not excluded.\nGrok 4.5 is a required routing option, and Balance and Intelligence bill at the routed model’s rate.\nSources: Cursor Router launch post , Cursor Router changelog , Grok 4.5 announcement and @cursor_ai on X .\nMichal Sutter\n+ posts Bio\nMichal Sutter is a data science professional with a Master of Science in Data Science from the University of Padova. With a solid foundation in statistical analysis, machine learning, and data engineering, Michal excels at transforming complex datasets into actionable insights.\nMichal Sutter\nCisco Foundation AI Releases Antares: 350M and 1B Open-Weight Models That Localize Known Vulnerabilities Inside Real Codebases\nMichal Sutter\nMeta Open-Sources Astryx: An Agent-Ready React Design System With 150+ Accessible Components, Seven Themes, and a CLI\nMichal Sutter\nSomeone Fine-Tuned OpenBMB’s MiniCPM5-1B on Claude Fable 5 Traces to Ship a 657MB Local Thinking Model\nMichal Sutter\nBest Local LLMs You Can Run on a Single 24GB GPU in 2026: Qwen, Gemma, Mistral, DeepSeek Compared",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-23/r-005-cursor-发布-cursor-router-请求级分类器-以-30-50-更低成本实现前沿编码质量.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-23/r-005-cursor-发布-cursor-router-请求级分类器-以-30-50-更低成本实现前沿编码质量.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 9481,
+    "paragraph_count": 70,
+    "sentence_count": 76,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0002,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 9481,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "c512e608c49e0ad3",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Cursor 发布 Cursor Router：请求级分类器，以 30-50% 更低成本实现前沿编码质量",
+    "discovery_summary": "Cursor 已面向 Teams 和 Enterprise 计划全面推出 Cursor Router。该系统根据查询、上下文、任务复杂度和领域对每个请求进行分类，并将其路由至最合适的模型。在线 A/B 测试显示可节省 60% 成本，三家早期接入企业客户相比 Opus 4.8 费率节省了 30-50%。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/07/22/cursor-releases-cursor-router-a-request-level-classifier",
+    "discovered_at": "2026-07-23T03:43:25.328Z",
+    "rank_on_page": 93,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "b3039ac13340fe47",
+  "content_hash": "c512e608c49e0ad3",
+  "full_text_hash": "c512e608c49e0ad3",
+  "semantic_hash": "96733c793571f770",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-22T22:37:44.000Z",
+  "last_seen_at": "2026-07-23T03:50:55.877Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Cursor 已面向 Teams 和 Enterprise 计划全面推出 Cursor Router。该系统根据查询、上下文、任务复杂度和领域对每个请求进行分类，并将其路由至最合适的模型。在线 A/B 测试显示可节省 60% 成本，三家早期接入企业客户相比 Opus 4.8 费率节省了 30-50%。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Editors Pick Agentic AI Software Engineering Staff Tech News Cursor has made Cursor Router generally available for Teams and Enterprise plans.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The system is a classifier that inspects each request before a model runs, then dispatches it to the model best suited to that specific task.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "The cursor team reports frontier-quality performance at 60% savings in online A/B tests, and 30–50% savings for early-access enterprise accounts.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The problem it targets is a spend pattern rather than a capability gap.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "Cursor states that roughly 60% of its developers pick a single model as a daily driver .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-23T03:50:55.877Z",
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "Meta",
+      "Cursor",
+      "Mistral"
+    ],
+    "products": [
+      "Cursor",
+      "cursor",
+      "GPT-5",
+      "agent",
+      "Agent",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队",
+      "采购负责人"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "采购 / 招投标",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "采购"
+    ],
+    "numbers": [
+      "30",
+      "50%",
+      "60%",
+      "4.8",
+      "600",
+      "22",
+      "2026",
+      "1"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Editors Pick Agentic AI Software Engineering Staff Tech News Cursor has made Cursor Router generally available for Teams and Enterprise plans.",
+      "The system is a classifier that inspects each request before a model runs, then dispatches it to the model best suited to that specific task.",
+      "The problem it targets is a spend pattern rather than a capability gap."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队",
+      "采购负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Cursor 发布 Cursor Router：请求级分类器，以 30-50% 更低成本实现前沿编码质量\n\n- raw_id: R-005\n- title_zh: Cursor 发布 Cursor Router：请求级分类器，以 30-50% 更低成本实现前沿编码质量\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.marktechpost.com/2026/07/22/cursor-releases-cursor-router-a-request-level-classifier\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-07-23T03:50:55.877Z\n\n## clean_text\n\nEditors Pick\nAgentic AI\nSoftware Engineering\nStaff\nTech News\nCursor has made Cursor Router generally available for Teams and Enterprise plans. The system is a classifier that inspects each request before a model runs, then dispatches it to the model best suited to that specific task. The cursor team reports frontier-quality performance at 60% savings in online A/B tests, and 30–50% savings for early-access enterprise accounts.\nThe problem it targets is a spend pattern rather than a capability gap. Cursor states that roughly 60% of its developers pick a single model as a daily driver . Routine work therefore gets completed at frontier prices, and AI spend grows faster than output quality. Routing is Cursor’s answer to that mismatch.\nWhat the classifier actually reads\nCursor Router is not a fallback chain or a retry mechanism. It is a classifier trained on 600k+ live requests , evaluated in an online A/B test across millions of live requests, and optimized for user satisfaction (AFC) as its reward signal.\nFor each request, the router analyzes four inputs: query, context, task complexity, and domain . It combines these with learned knowledge of each model’s behavior. Cursor publishes three routing rules that follow from that classification:\nSimple work goes to the most price-efficient models.\nUI updates go to the model with the best taste.\nComplex, long-horizon problems go to frontier reasoning models.\nThat third rule carries the weight of the cost argument. The savings do not come from downgrading hard problems. They come from removing routine work from frontier pricing while the difficult tier stays intact.\nOne implementation detail deserves attention from anyone who has built a router. Cursor Router is cache-aware in both training and evaluation . It is trained on a dataset where routing produces cache misses, and the reported cost savings include the cost of those cache misses. Switching models mid-conversation invalidates prompt cache, and that cost is real. Routers that ignore it overstate their savings.\nThe classifier was also designed for model churn. Cursor states it can update the router as newer models ship, which matters in a market where the frontier moves monthly.\nInteractive Explainer\nInside Cursor Router: classification, tiers and published results\nEvery figure below is taken from Cursor’s launch post and changelog (July 22, 2026). Values Cursor did not publish are marked as such.\nRoute a request\nModes\nCost per commit\nHow it was measured\nPick a task — see how the classifier reads it\nStep 1 · Signals read before any model runs\nStep 2 · Routing tier selected\nCursor publishes three routing rules and does not name a specific model per task type. The tier shown is Cursor’s own published category; the sample tasks are illustrative applications of those three rules. Cursor states the classifier reads query, context, task complexity and domain , combined with what it knows about each model’s behavior.\nAuto mode — three points on the cost–intelligence Pareto frontier\nCost\nBalance\nIntelligence\nCursor’s description\nPublished cost per commit (early access measurement)\nLinear projection — drag to set monthly commit volume\nVolume: 1,000 commits / month\nModel / mode $ / commit Monthly vs Opus 4.8\nCost-per-commit figures are Cursor’s published early-access observations. The projection is straight multiplication of those unit figures — it is arithmetic, not a Cursor forecast, and assumes a constant task mix. Cursor reports GPT-5.6 Sol matched the cost of Intelligence mode but with lower user satisfaction ; it did not publish an exact figure for it.\nElement What Cursor reports\nTraining data 600k+ live requests\nReward signal User satisfaction (AFC)\nEvaluation Online A/B test across millions of live requests, not offline evals\nQuality metric 1 User satisfaction — agent success classified from user responses. Moving to the next feature is a strong positive; correcting the agent is a strong negative.\nQuality metric 2 Keep rate — how much agent-generated code remains in the codebase over time\nMetric track record Both metrics used to evaluate every model launch and harness change for the past nine months\nCache handling Cache-aware in training and evaluation. Trained on a dataset where routing causes cache misses; reported savings include cache-miss cost.\nPlatform scale Cursor routes hundreds of millions of coding requests per week across models and providers\nProblem being solved ~60% of Cursor developers pick one model as a daily driver, putting routine work on frontier pricing\nCursor’s stated reason for choosing online A/B tests: offline evals are limited by small size, distance from real usage, and the difficulty of reducing success to a rubric — and they omit the extra cache-miss cost incurred when switching models mid-conversation.\nSource: cursor.com/blog/router · verified Jul 22, 2026\nBuilt by Marktechpost\nWhy online A/B tests instead of offline evals\nCursor deliberately avoided offline evals as its primary measurement. Its stated reasoning is that offline evals suffer from small sample size, distance from real-world usage, and the difficulty of reducing success to a rubric. They also omit the cache-miss cost incurred when switching models.\nReal routing happens across a conversation, not a single turn. Developers write code, ask follow-ups, hit errors, and continue, often across hundreds of requests in a week. The router must decide both which model to pick and when to switch.\nTwo quality metrics carry the evaluation:\nUser satisfaction : agent success classified from user responses. Moving on to the next feature is a strong positive signal. Correcting the agent is a strong negative one.\nKeep rate : how much agent-generated code remains in the codebase over time.\nCursor team states it has used both metrics to evaluate every model launch and harness improvement for the past nine months. This is a meaningful credibility marker: the metrics predate the product they are now being used to justify.\nThree modes, and the numbers behind them\nAuto mode now exposes three optimization settings that move the user along the cost–intelligence Pareto frontier.\nAuto Intelligence lands near Fable on user satisfaction at about 60% lower cost for teams. Against Opus 4.8, it lifts satisfaction about 15% at nearly the same cost.\nAuto Balance lands above Opus 4.8 on user satisfaction at about 36% lower cost. Against GPT-5.6 Sol, it delivers comparable satisfaction at a lower spend rate.\nCost mode is described as good quality reaching the highest available intelligence while optimizing token spend. Cursor published no A/B quality or cost figures for it.\nCost per request is only part of the picture, so Cursor also measured cost per commit :\nModel / mode Cost per commit\nAuto Balance $4.63\nAuto Intelligence $6.76\nOpus 4.8 $7.34\nFable 5 $12.69\nGPT-5.6 Sol matched the cost of Intelligence mode but produced lower user satisfaction. Cursor did not publish an exact per-commit figure for it.\nDeployment reality and the one hard constraint\nCursor Router ships across desktop, web, iOS, CLI, and the Cursor SDK. It is on by default for Teams plans . Enterprise admins enable it from the dashboard.\nThe changelog specifies the admin surface: per-team and per-group enablement, restrictions on which optimization modes members can select, a configurable default mode, and model allow and block lists. Soft and hard enforcement options exist for standardizing on Auto. The routed model can be displayed or hidden, and it is hidden by default — teams that want routing transparency must opt in.\nTwo constraints are important for procurement. First, Grok 4.5 is required as a price-efficient routing option , so the model block list cannot be used to exclude it. Grok 4.5 , released July 8, is priced at $2/M input and $6/M output tokens, with a fast variant at $4/M and $18/M. Second, Balance and Intelligence bill at the routed model’s rate , so unit cost varies with each routing decision rather than settling at a flat price.\nKey Takeaways\nCursor Router is a per-request classifier trained on 600k+ live requests, optimized for user satisfaction (AFC).\nOnline A/B tests report frontier-quality output at 60% savings; three early-access enterprise accounts saved 30–50% versus Opus 4.8.\nCost per commit: $4.63 Balance, $6.76 Intelligence, against $7.34 for Opus 4.8 and $12.69 for Fable 5.\nCache-miss cost from model switching is included in the reported savings, not excluded.\nGrok 4.5 is a required routing option, and Balance and Intelligence bill at the routed model’s rate.\nSources: Cursor Router launch post , Cursor Router changelog , Grok 4.5 announcement and @cursor_ai on X .\nMichal Sutter\n+ posts Bio\nMichal Sutter is a data science professional with a Master of Science in Data Science from the University of Padova. With a solid foundation in statistical analysis, machine learning, and data engineering, Michal excels at transforming complex datasets into actionable insights.\nMichal Sutter\nCisco Foundation AI Releases Antares: 350M and 1B Open-Weight Models That Localize Known Vulnerabilities Inside Real Codebases\nMichal Sutter\nMeta Open-Sources Astryx: An Agent-Ready React Design System With 150+ Accessible Components, Seven Themes, and a CLI\nMichal Sutter\nSomeone Fine-Tuned OpenBMB’s MiniCPM5-1B on Claude Fable 5 Traces to Ship a 657MB Local Thinking Model\nMichal Sutter\nBest Local LLMs You Can Run on a Single 24GB GPU in 2026: Qwen, Gemma, Mistral, DeepSeek Compared\n\n## full_text\n\nEditors Pick\nAgentic AI\nSoftware Engineering\nStaff\nTech News\nCursor has made Cursor Router generally available for Teams and Enterprise plans. The system is a classifier that inspects each request before a model runs, then dispatches it to the model best suited to that specific task. The cursor team reports frontier-quality performance at 60% savings in online A/B tests, and 30–50% savings for early-access enterprise accounts.\nThe problem it targets is a spend pattern rather than a capability gap. Cursor states that roughly 60% of its developers pick a single model as a daily driver . Routine work therefore gets completed at frontier prices, and AI spend grows faster than output quality. Routing is Cursor’s answer to that mismatch.\nWhat the classifier actually reads\nCursor Router is not a fallback chain or a retry mechanism. It is a classifier trained on 600k+ live requests , evaluated in an online A/B test across millions of live requests, and optimized for user satisfaction (AFC) as its reward signal.\nFor each request, the router analyzes four inputs: query, context, task complexity, and domain . It combines these with learned knowledge of each model’s behavior. Cursor publishes three routing rules that follow from that classification:\nSimple work goes to the most price-efficient models.\nUI updates go to the model with the best taste.\nComplex, long-horizon problems go to frontier reasoning models.\nThat third rule carries the weight of the cost argument. The savings do not come from downgrading hard problems. They come from removing routine work from frontier pricing while the difficult tier stays intact.\nOne implementation detail deserves attention from anyone who has built a router. Cursor Router is cache-aware in both training and evaluation . It is trained on a dataset where routing produces cache misses, and the reported cost savings include the cost of those cache misses. Switching models mid-conversation invalidates prompt cache, and that cost is real. Routers that ignore it overstate their savings.\nThe classifier was also designed for model churn. Cursor states it can update the router as newer models ship, which matters in a market where the frontier moves monthly.\nInteractive Explainer\nInside Cursor Router: classification, tiers and published results\nEvery figure below is taken from Cursor’s launch post and changelog (July 22, 2026). Values Cursor did not publish are marked as such.\nRoute a request\nModes\nCost per commit\nHow it was measured\nPick a task — see how the classifier reads it\nStep 1 · Signals read before any model runs\nStep 2 · Routing tier selected\nCursor publishes three routing rules and does not name a specific model per task type. The tier shown is Cursor’s own published category; the sample tasks are illustrative applications of those three rules. Cursor states the classifier reads query, context, task complexity and domain , combined with what it knows about each model’s behavior.\nAuto mode — three points on the cost–intelligence Pareto frontier\nCost\nBalance\nIntelligence\nCursor’s description\nPublished cost per commit (early access measurement)\nLinear projection — drag to set monthly commit volume\nVolume: 1,000 commits / month\nModel / mode $ / commit Monthly vs Opus 4.8\nCost-per-commit figures are Cursor’s published early-access observations. The projection is straight multiplication of those unit figures — it is arithmetic, not a Cursor forecast, and assumes a constant task mix. Cursor reports GPT-5.6 Sol matched the cost of Intelligence mode but with lower user satisfaction ; it did not publish an exact figure for it.\nElement What Cursor reports\nTraining data 600k+ live requests\nReward signal User satisfaction (AFC)\nEvaluation Online A/B test across millions of live requests, not offline evals\nQuality metric 1 User satisfaction — agent success classified from user responses. Moving to the next feature is a strong positive; correcting the agent is a strong negative.\nQuality metric 2 Keep rate — how much agent-generated code remains in the codebase over time\nMetric track record Both metrics used to evaluate every model launch and harness change for the past nine months\nCache handling Cache-aware in training and evaluation. Trained on a dataset where routing causes cache misses; reported savings include cache-miss cost.\nPlatform scale Cursor routes hundreds of millions of coding requests per week across models and providers\nProblem being solved ~60% of Cursor developers pick one model as a daily driver, putting routine work on frontier pricing\nCursor’s stated reason for choosing online A/B tests: offline evals are limited by small size, distance from real usage, and the difficulty of reducing success to a rubric — and they omit the extra cache-miss cost incurred when switching models mid-conversation.\nSource: cursor.com/blog/router · verified Jul 22, 2026\nBuilt by Marktechpost\nWhy online A/B tests instead of offline evals\nCursor deliberately avoided offline evals as its primary measurement. Its stated reasoning is that offline evals suffer from small sample size, distance from real-world usage, and the difficulty of reducing success to a rubric. They also omit the cache-miss cost incurred when switching models.\nReal routing happens across a conversation, not a single turn. Developers write code, ask follow-ups, hit errors, and continue, often across hundreds of requests in a week. The router must decide both which model to pick and when to switch.\nTwo quality metrics carry the evaluation:\nUser satisfaction : agent success classified from user responses. Moving on to the next feature is a strong positive signal. Correcting the agent is a strong negative one.\nKeep rate : how much agent-generated code remains in the codebase over time.\nCursor team states it has used both metrics to evaluate every model launch and harness improvement for the past nine months. This is a meaningful credibility marker: the metrics predate the product they are now being used to justify.\nThree modes, and the numbers behind them\nAuto mode now exposes three optimization settings that move the user along the cost–intelligence Pareto frontier.\nAuto Intelligence lands near Fable on user satisfaction at about 60% lower cost for teams. Against Opus 4.8, it lifts satisfaction about 15% at nearly the same cost.\nAuto Balance lands above Opus 4.8 on user satisfaction at about 36% lower cost. Against GPT-5.6 Sol, it delivers comparable satisfaction at a lower spend rate.\nCost mode is described as good quality reaching the highest available intelligence while optimizing token spend. Cursor published no A/B quality or cost figures for it.\nCost per request is only part of the picture, so Cursor also measured cost per commit :\nModel / mode Cost per commit\nAuto Balance $4.63\nAuto Intelligence $6.76\nOpus 4.8 $7.34\nFable 5 $12.69\nGPT-5.6 Sol matched the cost of Intelligence mode but produced lower user satisfaction. Cursor did not publish an exact per-commit figure for it.\nDeployment reality and the one hard constraint\nCursor Router ships across desktop, web, iOS, CLI, and the Cursor SDK. It is on by default for Teams plans . Enterprise admins enable it from the dashboard.\nThe changelog specifies the admin surface: per-team and per-group enablement, restrictions on which optimization modes members can select, a configurable default mode, and model allow and block lists. Soft and hard enforcement options exist for standardizing on Auto. The routed model can be displayed or hidden, and it is hidden by default — teams that want routing transparency must opt in.\nTwo constraints are important for procurement. First, Grok 4.5 is required as a price-efficient routing option , so the model block list cannot be used to exclude it. Grok 4.5 , released July 8, is priced at $2/M input and $6/M output tokens, with a fast variant at $4/M and $18/M. Second, Balance and Intelligence bill at the routed model’s rate , so unit cost varies with each routing decision rather than settling at a flat price.\nKey Takeaways\nCursor Router is a per-request classifier trained on 600k+ live requests, optimized for user satisfaction (AFC).\nOnline A/B tests report frontier-quality output at 60% savings; three early-access enterprise accounts saved 30–50% versus Opus 4.8.\nCost per commit: $4.63 Balance, $6.76 Intelligence, against $7.34 for Opus 4.8 and $12.69 for Fable 5.\nCache-miss cost from model switching is included in the reported savings, not excluded.\nGrok 4.5 is a required routing option, and Balance and Intelligence bill at the routed model’s rate.\nSources: Cursor Router launch post , Cursor Router changelog , Grok 4.5 announcement and @cursor_ai on X .\nMichal Sutter\n+ posts Bio\nMichal Sutter is a data science professional with a Master of Science in Data Science from the University of Padova. With a solid foundation in statistical analysis, machine learning, and data engineering, Michal excels at transforming complex datasets into actionable insights.\nMichal Sutter\nCisco Foundation AI Releases Antares: 350M and 1B Open-Weight Models That Localize Known Vulnerabilities Inside Real Codebases\nMichal Sutter\nMeta Open-Sources Astryx: An Agent-Ready React Design System With 150+ Accessible Components, Seven Themes, and a CLI\nMichal Sutter\nSomeone Fine-Tuned OpenBMB’s MiniCPM5-1B on Claude Fable 5 Traces to Ship a 657MB Local Thinking Model\nMichal Sutter\nBest Local LLMs You Can Run on a Single 24GB GPU in 2026: Qwen, Gemma, Mistral, DeepSeek Compared\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Cursor 已面向 Teams 和 Enterprise 计划全面推出 Cursor Router。该系统根据查询、上下文、任务复杂度和领域对每个请求进行分类，并将其路由至最合适的模型。在线 A/B 测试显示可节省 60% 成本，三家早期接入企业客户相比 Opus 4.8 费率节省了 30-50%。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Editors Pick Agentic AI Software Engineering Staff Tech News Cursor has made Cursor Router generally available for Teams and Enterprise plans.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The system is a classifier that inspects each request before a model runs, then dispatches it to the model best suited to that specific task.\n4. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] The cursor team reports frontier-quality performance at 60% savings in online A/B tests, and 30–50% savings for early-access enterprise accounts.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The problem it targets is a spend pattern rather than a capability gap.\n6. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Cursor states that roughly 60% of its developers pick a single model as a daily driver .\n"
+}

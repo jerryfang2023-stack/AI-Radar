@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-22T06:04:57.768Z",
-    "latestDataDate": "2026-07-22",
-    "currentDate": "2026-07-22",
-    "eventCount": 1400,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-23T03:54:13.158Z",
+    "latestDataDate": "2026-07-23",
+    "currentDate": "2026-07-23",
+    "eventCount": 1455,
+    "quarantinedEventCount": 15
   },
   "entity": {
     "id": "EN-607964040e4b62e0",
@@ -27,16 +27,13 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-technology-open_weights"
+      "TX-technology-open_weights",
+      "TX-technology-distillation"
     ],
-    "relatedEntityIds": [
-      "EN-b5251b35f15bedc4"
-    ],
-    "firstSeen": "2026-07-21",
-    "lastSeen": "2026-07-22",
-    "relationIds": [
-      "REL2-89beb40b356699d5"
-    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-22",
+    "lastSeen": "2026-07-23",
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -51,15 +48,21 @@
     "timeline": [
       {
         "id": "EV-0d5a32aca724d30e",
-        "dataDate": "2026-07-22",
-        "date": "2026-07-21",
+        "dataDate": "2026-07-23",
+        "date": "2026-07-22",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
         "eventGroup": "模型、产品与服务",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "美国政策辩论重燃：中国开源权重模型Kimi K3引发安全与成本权衡",
+        "title": "开源模型季度盘点：Kimi K3、Qwen 3.8、WAIC 演讲、知识蒸馏与开源闭源差距",
         "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "distillation",
+            "name": "模型蒸馏"
+          },
           {
             "dimensionId": "technology",
             "dimensionName": "技术",
@@ -68,96 +71,22 @@
           }
         ],
         "entityIds": [
+          "EN-16dc8ea1cf4807b0",
           "EN-b5251b35f15bedc4",
-          "EN-7d3194f79e645c42",
-          "EN-e9b67bdfb6ae6a2e",
-          "EN-c70eca6b0f88f44d",
           "EN-047364b9be67f665",
-          "EN-607964040e4b62e0",
-          "EN-cf5378a2305a999f"
+          "EN-cbc62794911ff31b",
+          "EN-10a27c6240d18dbe",
+          "EN-e6ac424c9ea83939",
+          "EN-c70eca6b0f88f44d",
+          "EN-7d3194f79e645c42",
+          "EN-607964040e4b62e0"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-b5251b35f15bedc4",
-      "name": "Moonshot AI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5be48cce8dc4f3de",
-        "EV-0e4bddfd5c129618",
-        "EV-fd21441fb6e143c3",
-        "EV-0d5a32aca724d30e",
-        "EV-26a71ab785014e54",
-        "EV-1b03e5dff76a50a1",
-        "EV-5caf7f83664b1a2c",
-        "EV-2cb9dbed2b2b6077",
-        "EV-75002e9da530c90b",
-        "EV-77042592591657bf",
-        "EV-6af31d42885e0361",
-        "EV-8e6f9c324aa0b2f3",
-        "EV-e878e56967902718",
-        "EV-e9a86c47da229331",
-        "EV-773ffcc6e1df56fa",
-        "EV-94e1f1a5cea15eae",
-        "EV-74b965de27bc0515"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-financial_services",
-        "TX-technology-vision_language",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-long_context",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-technology-open_weights",
-        "TX-technology-multimodal"
-      ],
-      "relatedEntityIds": [
-        "EN-eb732565c71e6b85",
-        "EN-607964040e4b62e0",
-        "EN-2cfed21b7a971267",
-        "EN-23bc2a854bc0cfb0",
-        "EN-b57c95289680078c"
-      ],
-      "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-22"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-89beb40b356699d5",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-b5251b35f15bedc4",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-607964040e4b62e0",
-      "object_type": "entity",
-      "event_id": "EV-0d5a32aca724d30e",
-      "claim_refs": [
-        "CL-e259cdf399a7c18e",
-        "CL-d8af012832093330",
-        "CL-4b969d8826eb8046",
-        "CL-2feefa76870f1bf2",
-        "CL-00156e110b9fa9cb"
-      ],
-      "source_refs": [
-        "SA-eca919535844b66e",
-        "SA-629936897998755b"
-      ],
-      "data_date": "2026-07-22",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-technology-open_weights",
@@ -167,8 +96,8 @@
       "valueId": "open_weights",
       "eventIds": [
         "EV-1abf0d076d30ec6d",
-        "EV-2fea1664807824ce",
         "EV-0d5a32aca724d30e",
+        "EV-2fea1664807824ce",
         "EV-b84035029a63e52e",
         "EV-3028dfadf94c8f4c",
         "EV-a06011da69abcc3d",
@@ -180,16 +109,18 @@
         "EN-240389f4b730bad4",
         "EN-7d3194f79e645c42",
         "EN-c70eca6b0f88f44d",
+        "EN-16dc8ea1cf4807b0",
+        "EN-b5251b35f15bedc4",
+        "EN-047364b9be67f665",
+        "EN-cbc62794911ff31b",
+        "EN-10a27c6240d18dbe",
+        "EN-e6ac424c9ea83939",
+        "EN-607964040e4b62e0",
         "EN-0d1e478de2157d48",
         "EN-8d4321d936320802",
         "EN-6f7ac1823da81d2e",
         "EN-8f71c4871a160172",
         "EN-4546b5bdff2ea8ed",
-        "EN-b5251b35f15bedc4",
-        "EN-e9b67bdfb6ae6a2e",
-        "EN-047364b9be67f665",
-        "EN-607964040e4b62e0",
-        "EN-cf5378a2305a999f",
         "EN-d41ebd9f02722fc8",
         "EN-b0532e1af75cc4ab",
         "EN-96eebba49dbbf422",
@@ -210,7 +141,39 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "TX-technology-distillation",
+      "name": "模型蒸馏",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "distillation",
+      "eventIds": [
+        "EV-0d5a32aca724d30e",
+        "EV-18df881cc436b3cb",
+        "EV-b920999c64aa9ef6",
+        "EV-d2c370511e9e55fe"
+      ],
+      "entityIds": [
+        "EN-16dc8ea1cf4807b0",
+        "EN-b5251b35f15bedc4",
+        "EN-047364b9be67f665",
+        "EN-cbc62794911ff31b",
+        "EN-10a27c6240d18dbe",
+        "EN-e6ac424c9ea83939",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-607964040e4b62e0",
+        "EN-ec7d81cdcc201572",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-cb4754c48f8023d0"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-23"
     }
   ],
   "fde": [],

@@ -1,0 +1,215 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-117
+title: "OpenAI 总裁布罗克曼承认 Kimi K3 竞争力强，但称仍有\"巨大优势\""
+title_zh: "OpenAI 总裁布罗克曼承认 Kimi K3 竞争力强，但称仍有\"巨大优势\""
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/980/356.htm"
+canonical_url: "https://ithome.com/0/980/356.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-22T23:11:17.000Z"
+collected_at: 2026-07-23T03:51:57.720Z
+language: mixed
+full_text_hash: ee3237ca45a4dd47
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-117-openai-总裁布罗克曼承认-kimi-k3-竞争力强-但称仍有-巨大优势.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-23/r-117-openai-总裁布罗克曼承认-kimi-k3-竞争力强-但称仍有-巨大优势.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 44
+extractor_diagnostics: {"readability_score":44,"text_length":844,"paragraph_count":8,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 844
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ee3237ca45a4dd47","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 总裁布罗克曼承认 Kimi K3 竞争力强，但称仍有\"巨大优势\"","discovery_summary":"OpenAI 总裁格雷格·布罗克曼接受彭博社采访时承认，月之暗面发布的开放权重模型 Kimi K3\"确实相当不错\"，但判断其是否通过蒸馏 OpenAI 模型来训练还为时过早。布罗克曼强调，OpenAI 在计算资源和 AI 研究上的多年积累使其仍保持\"巨大优势\"，并指出开放权重模型并非免费，算力成本不低。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/980/356.htm","discovered_at":"2026-07-23T03:43:25.326Z","rank_on_page":85,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 2c4ecce774ec10de
+content_hash: ee3237ca45a4dd47
+semantic_hash: 53b37860bdaf310c
+duplicate_of: ""
+first_seen_at: "2026-07-22T23:11:17.000Z"
+last_seen_at: 2026-07-23T03:51:57.720Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":3,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic"],"products":["Claude","GPT-5"],"people":[],"industries":[],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["3","7","23","5","5.6","4"],"quotes":["\nOpenAI 总裁格雷格·布罗克曼接受彭博社采访时承认，月之暗面发布的开放权重模型 Kimi K3","，但判断其是否通过蒸馏 OpenAI 模型来训练还为时过早。布罗克曼强调，OpenAI 在计算资源和 AI 研究上的多年积累使其仍保持","模型确实相当不错，毫无疑问。","我们一直都在监测此类行为。","多年来，我们一直在深入研究如何打造更高效的模型，让模型能够完成预定目标。"]}
+evidence_seed: {"company_actions":["IT之家 7 月 23 日消息，据彭博社今天（23 日）报道，OpenAI 总裁兼联合创始人格雷格 · 布罗克曼承认，月之暗面推出的 Kimi K3 已经 具备相当强的竞争力 ，但至于月之暗面是否利用了 OpenAI 的技术成果来提升模型能力，自己尚无法确定。","布罗克曼接受采访时评价几天前发布的 Kimi K3：“模型确实相当不错，毫无疑问。","”不过，目前判断月之暗面是否通过“蒸馏”手段，获取 OpenAI 模型的输出结果并用于训练 Kimi K3，还为时过早。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"OpenAI 总裁格雷格·布罗克曼接受彭博社采访时承认，月之暗面发布的开放权重模型 Kimi K3\"确实相当不错\"，但判断其是否通过蒸馏 OpenAI 模型来训练还为时过早。布罗克曼强调，OpenAI 在计算资源和 AI 研究上的多年积累使其仍保持\"巨大优势\"，并指出开放权重模型并非免费，算力成本不低。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 23 日消息，据彭博社今天（23 日）报道，OpenAI 总裁兼联合创始人格雷格 · 布罗克曼承认，月之暗面推出的 Kimi K3 已经 具备相当强的竞争力 ，但至于月之暗面是否利用了 OpenAI 的技术成果来提升模型能力，自己尚无法确定。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"布罗克曼接受采访时评价几天前发布的 Kimi K3：“模型确实相当不错，毫无疑问。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"”不过，目前判断月之暗面是否通过“蒸馏”手段，获取 OpenAI 模型的输出结果并用于训练 Kimi K3，还为时过早。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"” 据IT之家了解，月之暗面上周发布了开放权重模型 Kimi K3，并称其综合能力超过除 Anthropic Claude Fable 5 和 OpenAI GPT-5.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Kimi K3 迅速引发市场震动，也颠覆了外界长期以来对美国在全球 AI 竞争中大幅领先中国的固有判断。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-23T03:51:57.720Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 总裁布罗克曼承认 Kimi K3 竞争力强，但称仍有"巨大优势"
+
+## clean_text
+
+IT之家 7 月 23 日消息，据彭博社今天（23 日）报道，OpenAI 总裁兼联合创始人格雷格 · 布罗克曼承认，月之暗面推出的 Kimi K3 已经 具备相当强的竞争力 ，但至于月之暗面是否利用了 OpenAI 的技术成果来提升模型能力，自己尚无法确定。
+布罗克曼接受采访时评价几天前发布的 Kimi K3：“模型确实相当不错，毫无疑问。”不过，目前判断月之暗面是否通过“蒸馏”手段，获取 OpenAI 模型的输出结果并用于训练 Kimi K3，还为时过早。“我们一直都在监测此类行为。”
+据IT之家了解，月之暗面上周发布了开放权重模型 Kimi K3，并称其综合能力超过除 Anthropic Claude Fable 5 和 OpenAI GPT-5.6 之外的所有竞争对手。Kimi K3 迅速引发市场震动，也颠覆了外界长期以来对美国在全球 AI 竞争中大幅领先中国的固有判断。
+布罗克曼表示，部分估算认为，中国在 AI 模型开发方面可能 只落后美国 4 个月 ，其他专家甚至认为中美之间的差距更小。
+随着价格更低的中国模型迅速普及，中美模型之间的能力差距不断缩小，OpenAI 和 Anthropic 的商业模式也面临更多不确定性。两家公司都在筹备上市，并努力提高来自客户的收入。
+布罗克曼强调，OpenAI 较早投入大量计算资源，又拥有多年 AI 研究积累，因此仍对竞争对手 保持“巨大优势” 。“多年来，我们一直在深入研究如何打造更高效的模型，让模型能够完成预定目标。”
+布罗克曼还表示，Kimi 等开放权重模型并非免费产品，认为开放权重等于免费是一种“误解”。“这些模型依然规模庞大，需要大量算力才能运行，而算力的成本并不低。真正的竞争在于，谁能打造 效率最高、智能水平最强，并在单项任务上提供最佳性价比 的模型。”
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 23 日消息，据彭博社今天（23 日）报道，OpenAI 总裁兼联合创始人格雷格 · 布罗克曼承认，月之暗面推出的 Kimi K3 已经 具备相当强的竞争力 ，但至于月之暗面是否利用了 OpenAI 的技术成果来提升模型能力，自己尚无法确定。
+布罗克曼接受采访时评价几天前发布的 Kimi K3：“模型确实相当不错，毫无疑问。”不过，目前判断月之暗面是否通过“蒸馏”手段，获取 OpenAI 模型的输出结果并用于训练 Kimi K3，还为时过早。“我们一直都在监测此类行为。”
+据IT之家了解，月之暗面上周发布了开放权重模型 Kimi K3，并称其综合能力超过除 Anthropic Claude Fable 5 和 OpenAI GPT-5.6 之外的所有竞争对手。Kimi K3 迅速引发市场震动，也颠覆了外界长期以来对美国在全球 AI 竞争中大幅领先中国的固有判断。
+布罗克曼表示，部分估算认为，中国在 AI 模型开发方面可能 只落后美国 4 个月 ，其他专家甚至认为中美之间的差距更小。
+随着价格更低的中国模型迅速普及，中美模型之间的能力差距不断缩小，OpenAI 和 Anthropic 的商业模式也面临更多不确定性。两家公司都在筹备上市，并努力提高来自客户的收入。
+布罗克曼强调，OpenAI 较早投入大量计算资源，又拥有多年 AI 研究积累，因此仍对竞争对手 保持“巨大优势” 。“多年来，我们一直在深入研究如何打造更高效的模型，让模型能够完成预定目标。”
+布罗克曼还表示，Kimi 等开放权重模型并非免费产品，认为开放权重等于免费是一种“误解”。“这些模型依然规模庞大，需要大量算力才能运行，而算力的成本并不低。真正的竞争在于，谁能打造 效率最高、智能水平最强，并在单项任务上提供最佳性价比 的模型。”
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 44
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":44,"text_length":844,"paragraph_count":8,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   OpenAI 总裁格雷格·布罗克曼接受彭博社采访时承认，月之暗面发布的开放权重模型 Kimi K3"确实相当不错"，但判断其是否通过蒸馏 OpenAI 模型来训练还为时过早。布罗克曼强调，OpenAI 在计算资源和 AI 研究上的多年积累使其仍保持"巨大优势"，并指出开放权重模型并非免费，算力成本不低。
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   IT之家 7 月 23 日消息，据彭博社今天（23 日）报道，OpenAI 总裁兼联合创始人格雷格 · 布罗克曼承认，月之暗面推出的 Kimi K3 已经 具备相当强的竞争力 ，但至于月之暗面是否利用了 OpenAI 的技术成果来提升模型能力，自己尚无法确定。
+
+3. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   布罗克曼接受采访时评价几天前发布的 Kimi K3：“模型确实相当不错，毫无疑问。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   ”不过，目前判断月之暗面是否通过“蒸馏”手段，获取 OpenAI 模型的输出结果并用于训练 Kimi K3，还为时过早。
+
+5. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   ” 据IT之家了解，月之暗面上周发布了开放权重模型 Kimi K3，并称其综合能力超过除 Anthropic Claude Fable 5 和 OpenAI GPT-5.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   Kimi K3 迅速引发市场震动，也颠覆了外界长期以来对美国在全球 AI 竞争中大幅领先中国的固有判断。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, Anthropic
+- products: Claude, GPT-5
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 3, 7, 23, 5, 5.6, 4
+- quotes: 
+OpenAI 总裁格雷格·布罗克曼接受彭博社采访时承认，月之暗面发布的开放权重模型 Kimi K3 / ，但判断其是否通过蒸馏 OpenAI 模型来训练还为时过早。布罗克曼强调，OpenAI 在计算资源和 AI 研究上的多年积累使其仍保持 / 模型确实相当不错，毫无疑问。 / 我们一直都在监测此类行为。 / 多年来，我们一直在深入研究如何打造更高效的模型，让模型能够完成预定目标。
+
+## evidence_seed
+
+- company_actions: IT之家 7 月 23 日消息，据彭博社今天（23 日）报道，OpenAI 总裁兼联合创始人格雷格 · 布罗克曼承认，月之暗面推出的 Kimi K3 已经 具备相当强的竞争力 ，但至于月之暗面是否利用了 OpenAI 的技术成果来提升模型能力，自己尚无法确定。 / 布罗克曼接受采访时评价几天前发布的 Kimi K3：“模型确实相当不错，毫无疑问。 / ”不过，目前判断月之暗面是否通过“蒸馏”手段，获取 OpenAI 模型的输出结果并用于训练 Kimi K3，还为时过早。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 总裁布罗克曼承认 Kimi K3 竞争力强，但称仍有\"巨大优势\"","discovery_summary":"OpenAI 总裁格雷格·布罗克曼接受彭博社采访时承认，月之暗面发布的开放权重模型 Kimi K3\"确实相当不错\"，但判断其是否通过蒸馏 OpenAI 模型来训练还为时过早。布罗克曼强调，OpenAI 在计算资源和 AI 研究上的多年积累使其仍保持\"巨大优势\"，并指出开放权重模型并非免费，算力成本不低。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/980/356.htm","discovered_at":"2026-07-23T03:43:25.326Z","rank_on_page":85,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI 总裁格雷格·布罗克曼接受彭博社采访时承认，月之暗面发布的开放权重模型 Kimi K3"确实相当不错"，但判断其是否通过蒸馏 OpenAI 模型来训练还为时过早。布罗克曼强调，OpenAI 在计算资源和 AI 研究上的多年积累使其仍保持"巨大优势"，并指出开放权重模型并非免费，算力成本不低。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

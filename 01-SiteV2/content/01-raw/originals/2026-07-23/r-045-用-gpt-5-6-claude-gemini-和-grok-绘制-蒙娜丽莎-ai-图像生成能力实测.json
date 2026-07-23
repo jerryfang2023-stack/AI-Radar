@@ -1,0 +1,287 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-045",
+  "title": "用 GPT-5.6、Claude、Gemini 和 Grok \"绘制\"《蒙娜丽莎》--AI 图像生成能力实测",
+  "title_zh": "用 GPT-5.6、Claude、Gemini 和 Grok \"绘制\"《蒙娜丽莎》--AI 图像生成能力实测",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://www.tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok",
+  "canonical_url": "https://tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-21T00:00:00.000Z",
+  "collected_at": "2026-07-23T03:51:21.944Z",
+  "language": "mixed",
+  "full_text": "All posts We built a drawing arena: hand a model a blank white canvas and a set of colored-pencil tools, then get out of the way. The model sets a color, tip width, and pressure, lays down batches of strokes, smudges to blend, erases, and calls view_canvas to see its own work and decide what to fix. It either reproduces a target image or draws from a text prompt.\nWe ran four vision models, GPT-5.6 Sol , Claude Fable 5 , Grok 4.5 , and Gemini 3.6 Flash , across two targets (the Mona Lisa and Van Gogh's Starry Night, both scored objectively) and five open-ended prompts, for 28 drawings total. We'll cover tool use, cost, output, and whether the models actually improved their work, with our opinion at the end.\nWhy we run these\nA quick note on why we're doing this, because our last one of these (models making music videos) kicked off a good discussion where some folks read it as us promoting the creativity or artistic ability of models. These are not objective tests of model capability. They are deliberately open-ended, fuzzy tasks. Here is why we personally keep running them:\nThey are fun, and genuinely informative. Watching a model tackle a loose, open-ended task is a more interesting visual indicator of capability than yet another benchmark number.\nThey expose the real frontier-vs-open gap. Cheaper open-weight models can absolutely replace the frontier for a lot of execution work, and we will keep reporting on that. But there is also a lot of benchmaxxing out there, and tasks like this cut through it. They genuinely separate frontier capability from the rest. Grok 4.5, as you will see, was rough at this \"basic\" drawing task, and the open-weight models we tried were not even usable, several just returned a blank canvas. (That may change with Kimi K3 which we will report on once it is fully open-sourced)\nThey show what long-running tasks actually cost. Claude Fable 5 almost always took much longer than the others, for far more money, and here produced worse output. Fable has beaten GPT-5.6 for us on plenty of tasks, including the music-video challenge , but on this one it was worse for a lot more overhead. Depending on your use case, that trade-off matters.\nWe're loving the discussions. The discussions have genuinely been interesting, and if you have suggestions for the setup or new tasks, we will take them into account. These have been a blast to run, and the outputs are super exciting to see.\nThe tools\nEvery model worked with the exact same colored-pencil toolset:\nplan : a no-op scratchpad for thinking and planning between steps.\nview_target : look at the target image again.\nview_canvas : render the current page and see it. This is also when we score the drawing against the target.\nset_color / set_brush / set_pressure : the current pencil color, tip width, and pressure (0 to 1 opacity, low pressure for softer tone).\ndraw : lay down a batch of marks (strokes, lines, shape outlines, dots) in one call. There are no solid fills, tone and color are built by layering, like a real pencil.\nsmudge : blend/soften a rectangular region, like a blending stump.\nerase / clear_canvas : lift a region back to white / reset the whole page.\nThe whole harness is open source at github.com/hershalb/canvas-arena . Point it at any target image or a text prompt and run it yourself.\nThe two target reproductions\nThe models could see the target the whole time and were scored on structural similarity (SSIM) to it. We show the SSIM scores below.\nMona Lisa (target) GPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nStarry Night (target) GPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nThe five prompt drawings\nNo target, no score, just a text brief and a blank page.\n\"An elderly fisherman's weathered face, warm late-afternoon sun, deep wrinkles and stubble\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A beautiful sunset over a calm ocean, orange-to-violet sky, silhouetted horizon\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A single red rose in a glass vase against a dark background, dramatic Rembrandt lighting\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A tabby cat curled asleep on a windowsill in afternoon sun\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A cozy cabin interior with a lit fireplace, warm amber light and soft shadows\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nThe headline numbers\nAverages and totals across all seven drawings per model.\nModel Drawings ↕ Avg steps ↕ Avg time ↕ Total tokens ↕ Est. token cost ↕ Avg self-reviews ↕ Total draw calls ↕\nGPT-5.6 Sol 7 29 6.2 min 3.4M $7.74 6.0 116\nClaude Fable 5 7 54 12.5 min 14.6M $160.58 15.6 207\nGrok 4.5 7 99 4.8 min 34.0M $9.21 4.3 354\nGemini 3.6 Flash 7 73 6.9 min 27.7M $12.87 22.6 190\nTool calling\nThe four models used the exact same toolset in completely different ways.\nGPT-5.6 Sol Claude Fable 5\nGrok 4.5 Gemini 3.6 Flash\nGPT-5.6 Sol never called set_color, set_brush, or set_pressure once , it set those inline on each draw call instead, so its calls are almost all draw, smudge, and view_canvas. Grok 4.5 did the opposite : 65% of its 1,349 tool calls were set_color / set_brush / set_pressure, which is why it averaged 99 steps per drawing. Claude Fable 5 leaned on smudge (123 calls) and reviewed constantly. Gemini 3.6 Flash was the most obsessive reviewer of all, nearly a third of its calls were view_canvas (about 23 self-reviews per drawing), and like Sol it never touched the set_* tools.\nCost and tokens\nClaude Fable 5 cost an estimated $160 for its seven drawings, roughly 20x GPT-5.6 Sol ($7.74), Grok 4.5 ($9.21), or Gemini 3.6 Flash ($12.87). This shouldn't really be a surprise by now. Grok used by far the most tokens (34M) but stayed cheap because ~98% were cached reads at a fraction of the input rate, and Grok's rates are the lowest of the four. Gemini also leaned heavily on cached reads, so even at 27.7M tokens it stayed modest.\nDid the models actually improve?\nEvery view_canvas re-scored the canvas against the target, so we can watch progress over a run. Two patterns held across both targets:\nFirst, they plateau early. Claude Fable 5 reviewed its Mona Lisa 27 times, but its similarity was essentially flat after about the fifth review. Second, in all eight target runs, the final drawing scored below the best the model reached mid-run. GPT-5.6 Sol's Mona Lisa peaked at 0.352 SSIM and ended at 0.325; its Starry Night peaked at 0.179 and ended at 0.130. Gemini 3.6 Flash reviewed the most (about 23 times per drawing) and reached the highest peak of the whole batch, 0.449 on the Mona Lisa, then slid all the way back to 0.337 by the end. More reviewing did not translate into a better finish. The models kept editing past their own best performance.\nObjective similarity (target runs)\nSSIM is 0 to 1, higher is closer to the target. RMSE is 0 to 255, lower is closer to the target.\nModel Target ↕ Steps ↕ Time ↕ Self-reviews ↕ Final SSIM ↕ Best SSIM ↕ Final RMSE ↕\nGPT-5.6 Sol Mona Lisa 44 8m41s 7 0.325 0.352 54.2\nClaude Fable 5 Mona Lisa 86 18m58s 27 0.286 0.289 56.9\nGrok 4.5 Mona Lisa 106 4m30s 5 0.151 0.152 95.6\nGemini 3.6 Flash Mona Lisa 60 5m31s 22 0.337 0.449 51.1\nGPT-5.6 Sol Starry Night 23 5m47s 4 0.130 0.179 37.8\nClaude Fable 5 Starry Night 43 11m30s 12 0.153 0.176 40.9\nGrok 4.5 Starry Night 58 5m51s 3 0.039 0.039 104.9\nGemini 3.6 Flash Starry Night 74 6m36s 24 0.172 0.190 42.8\nOn raw SSIM, Gemini 3.6 Flash scored highest on both targets, on final score and on peak, though it also swung the most between its best frame and its final one. Gemini 3.6 Flash looked decent, but definitely does not look the closest to the target output. Very interesting that the raw score turned out to be higher though. As always, SSIM measures structural closeness, not how good the drawing looks to a person (see our take below).\nMethod notes\nFour models, two scored targets plus five prompts each, 28 drawings total. All runs used the same colored-pencil toolset. Reasoning was set to high for every model.\nSSIM/RMSE are computed by resizing both images to 256x256 and comparing. They measure structural/pixel closeness, not artistic quality, and only apply to the target runs (prompts have no reference to score against).\nWall-clock time includes the model's own thinking and tool round-trips.\nOur take\nGPT-5.6 Sol was the runaway leader. Its Starry Night and its rose were our favorites of the whole batch, which is wild considering it drew them stroke by stroke on a blank canvas. It also beat the other two on detail in almost every drawing, the one exception being the elderly fisherman.\nGrok 4.5 was basically garbage here. It rarely produced anything usable, and despite its frantic tool use I would not trust it to reliably understand or judge visual output yet.\nGemini 3.6 Flash was definitely better than Grok at a slight cost increase, but comparing the Flash model to frontier versions seems a little unfair. I'm definitely excited to see how Gemini 4 will perform. We also already knew this, but the token output speed is just so impressive.\nClaude Fable 5 landed second on quality but at the far end on cost and time. For this task it was the least appealing trade-off of the three: much slower and far more expensive (about 20x the others) for output that did not keep up with Sol.\nTry it yourself\nEvery model mentioned here is available on TryAI with one account, pay-as-you-go, no subscription.\nStart free",
+  "clean_text": "All posts We built a drawing arena: hand a model a blank white canvas and a set of colored-pencil tools, then get out of the way. The model sets a color, tip width, and pressure, lays down batches of strokes, smudges to blend, erases, and calls view_canvas to see its own work and decide what to fix. It either reproduces a target image or draws from a text prompt.\nWe ran four vision models, GPT-5.6 Sol , Claude Fable 5 , Grok 4.5 , and Gemini 3.6 Flash , across two targets (the Mona Lisa and Van Gogh's Starry Night, both scored objectively) and five open-ended prompts, for 28 drawings total. We'll cover tool use, cost, output, and whether the models actually improved their work, with our opinion at the end.\nWhy we run these\nA quick note on why we're doing this, because our last one of these (models making music videos) kicked off a good discussion where some folks read it as us promoting the creativity or artistic ability of models. These are not objective tests of model capability. They are deliberately open-ended, fuzzy tasks. Here is why we personally keep running them:\nThey are fun, and genuinely informative. Watching a model tackle a loose, open-ended task is a more interesting visual indicator of capability than yet another benchmark number.\nThey expose the real frontier-vs-open gap. Cheaper open-weight models can absolutely replace the frontier for a lot of execution work, and we will keep reporting on that. But there is also a lot of benchmaxxing out there, and tasks like this cut through it. They genuinely separate frontier capability from the rest. Grok 4.5, as you will see, was rough at this \"basic\" drawing task, and the open-weight models we tried were not even usable, several just returned a blank canvas. (That may change with Kimi K3 which we will report on once it is fully open-sourced)\nThey show what long-running tasks actually cost. Claude Fable 5 almost always took much longer than the others, for far more money, and here produced worse output. Fable has beaten GPT-5.6 for us on plenty of tasks, including the music-video challenge , but on this one it was worse for a lot more overhead. Depending on your use case, that trade-off matters.\nWe're loving the discussions. The discussions have genuinely been interesting, and if you have suggestions for the setup or new tasks, we will take them into account. These have been a blast to run, and the outputs are super exciting to see.\nThe tools\nEvery model worked with the exact same colored-pencil toolset:\nplan : a no-op scratchpad for thinking and planning between steps.\nview_target : look at the target image again.\nview_canvas : render the current page and see it. This is also when we score the drawing against the target.\nset_color / set_brush / set_pressure : the current pencil color, tip width, and pressure (0 to 1 opacity, low pressure for softer tone).\ndraw : lay down a batch of marks (strokes, lines, shape outlines, dots) in one call. There are no solid fills, tone and color are built by layering, like a real pencil.\nsmudge : blend/soften a rectangular region, like a blending stump.\nerase / clear_canvas : lift a region back to white / reset the whole page.\nThe whole harness is open source at github.com/hershalb/canvas-arena . Point it at any target image or a text prompt and run it yourself.\nThe two target reproductions\nThe models could see the target the whole time and were scored on structural similarity (SSIM) to it. We show the SSIM scores below.\nMona Lisa (target) GPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nStarry Night (target) GPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nThe five prompt drawings\nNo target, no score, just a text brief and a blank page.\n\"An elderly fisherman's weathered face, warm late-afternoon sun, deep wrinkles and stubble\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A beautiful sunset over a calm ocean, orange-to-violet sky, silhouetted horizon\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A single red rose in a glass vase against a dark background, dramatic Rembrandt lighting\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A tabby cat curled asleep on a windowsill in afternoon sun\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A cozy cabin interior with a lit fireplace, warm amber light and soft shadows\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nThe headline numbers\nAverages and totals across all seven drawings per model.\nModel Drawings ↕ Avg steps ↕ Avg time ↕ Total tokens ↕ Est. token cost ↕ Avg self-reviews ↕ Total draw calls ↕\nGPT-5.6 Sol 7 29 6.2 min 3.4M $7.74 6.0 116\nClaude Fable 5 7 54 12.5 min 14.6M $160.58 15.6 207\nGrok 4.5 7 99 4.8 min 34.0M $9.21 4.3 354\nGemini 3.6 Flash 7 73 6.9 min 27.7M $12.87 22.6 190\nTool calling\nThe four models used the exact same toolset in completely different ways.\nGPT-5.6 Sol Claude Fable 5\nGrok 4.5 Gemini 3.6 Flash\nGPT-5.6 Sol never called set_color, set_brush, or set_pressure once , it set those inline on each draw call instead, so its calls are almost all draw, smudge, and view_canvas. Grok 4.5 did the opposite : 65% of its 1,349 tool calls were set_color / set_brush / set_pressure, which is why it averaged 99 steps per drawing. Claude Fable 5 leaned on smudge (123 calls) and reviewed constantly. Gemini 3.6 Flash was the most obsessive reviewer of all, nearly a third of its calls were view_canvas (about 23 self-reviews per drawing), and like Sol it never touched the set_* tools.\nCost and tokens\nClaude Fable 5 cost an estimated $160 for its seven drawings, roughly 20x GPT-5.6 Sol ($7.74), Grok 4.5 ($9.21), or Gemini 3.6 Flash ($12.87). This shouldn't really be a surprise by now. Grok used by far the most tokens (34M) but stayed cheap because ~98% were cached reads at a fraction of the input rate, and Grok's rates are the lowest of the four. Gemini also leaned heavily on cached reads, so even at 27.7M tokens it stayed modest.\nDid the models actually improve?\nEvery view_canvas re-scored the canvas against the target, so we can watch progress over a run. Two patterns held across both targets:\nFirst, they plateau early. Claude Fable 5 reviewed its Mona Lisa 27 times, but its similarity was essentially flat after about the fifth review. Second, in all eight target runs, the final drawing scored below the best the model reached mid-run. GPT-5.6 Sol's Mona Lisa peaked at 0.352 SSIM and ended at 0.325; its Starry Night peaked at 0.179 and ended at 0.130. Gemini 3.6 Flash reviewed the most (about 23 times per drawing) and reached the highest peak of the whole batch, 0.449 on the Mona Lisa, then slid all the way back to 0.337 by the end. More reviewing did not translate into a better finish. The models kept editing past their own best performance.\nObjective similarity (target runs)\nSSIM is 0 to 1, higher is closer to the target. RMSE is 0 to 255, lower is closer to the target.\nModel Target ↕ Steps ↕ Time ↕ Self-reviews ↕ Final SSIM ↕ Best SSIM ↕ Final RMSE ↕\nGPT-5.6 Sol Mona Lisa 44 8m41s 7 0.325 0.352 54.2\nClaude Fable 5 Mona Lisa 86 18m58s 27 0.286 0.289 56.9\nGrok 4.5 Mona Lisa 106 4m30s 5 0.151 0.152 95.6\nGemini 3.6 Flash Mona Lisa 60 5m31s 22 0.337 0.449 51.1\nGPT-5.6 Sol Starry Night 23 5m47s 4 0.130 0.179 37.8\nClaude Fable 5 Starry Night 43 11m30s 12 0.153 0.176 40.9\nGrok 4.5 Starry Night 58 5m51s 3 0.039 0.039 104.9\nGemini 3.6 Flash Starry Night 74 6m36s 24 0.172 0.190 42.8\nOn raw SSIM, Gemini 3.6 Flash scored highest on both targets, on final score and on peak, though it also swung the most between its best frame and its final one. Gemini 3.6 Flash looked decent, but definitely does not look the closest to the target output. Very interesting that the raw score turned out to be higher though. As always, SSIM measures structural closeness, not how good the drawing looks to a person (see our take below).\nMethod notes\nFour models, two scored targets plus five prompts each, 28 drawings total. All runs used the same colored-pencil toolset. Reasoning was set to high for every model.\nSSIM/RMSE are computed by resizing both images to 256x256 and comparing. They measure structural/pixel closeness, not artistic quality, and only apply to the target runs (prompts have no reference to score against).\nWall-clock time includes the model's own thinking and tool round-trips.\nOur take\nGPT-5.6 Sol was the runaway leader. Its Starry Night and its rose were our favorites of the whole batch, which is wild considering it drew them stroke by stroke on a blank canvas. It also beat the other two on detail in almost every drawing, the one exception being the elderly fisherman.\nGrok 4.5 was basically garbage here. It rarely produced anything usable, and despite its frantic tool use I would not trust it to reliably understand or judge visual output yet.\nGemini 3.6 Flash was definitely better than Grok at a slight cost increase, but comparing the Flash model to frontier versions seems a little unfair. I'm definitely excited to see how Gemini 4 will perform. We also already knew this, but the token output speed is just so impressive.\nClaude Fable 5 landed second on quality but at the far end on cost and time. For this task it was the least appealing trade-off of the three: much slower and far more expensive (about 20x the others) for output that did not keep up with Sol.\nTry it yourself\nEvery model mentioned here is available on TryAI with one account, pay-as-you-go, no subscription.\nStart free",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-23/r-045-用-gpt-5-6-claude-gemini-和-grok-绘制-蒙娜丽莎-ai-图像生成能力实测.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-23/r-045-用-gpt-5-6-claude-gemini-和-grok-绘制-蒙娜丽莎-ai-图像生成能力实测.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 9970,
+    "paragraph_count": 74,
+    "sentence_count": 79,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0018,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 9970,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "83d24dbed34890a9",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "用 GPT-5.6、Claude、Gemini 和 Grok \"绘制\"《蒙娜丽莎》--AI 图像生成能力实测",
+    "discovery_summary": "开发者使用 GPT-5.6、Claude、Gemini 和 Grok 分别尝试\"绘制\"《蒙娜丽莎》，对比各模型的图像生成效果。测试展示了不同 AI 在艺术风格还原、细节处理上的差异，GPT-5.6 在构图准确性上表现突出，而 Claude 和 Gemini 各有侧重。该实验为评估多模态模型的视觉创作能力提供了直观参考。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://www.tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok",
+    "discovered_at": "2026-07-23T03:43:25.392Z",
+    "rank_on_page": 358,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "d4d93cf9ebc648c3",
+  "content_hash": "83d24dbed34890a9",
+  "full_text_hash": "83d24dbed34890a9",
+  "semantic_hash": "698de3280c8b9a6d",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-21T00:00:00.000Z",
+  "last_seen_at": "2026-07-23T03:51:21.944Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "开发者使用 GPT-5.6、Claude、Gemini 和 Grok 分别尝试\"绘制\"《蒙娜丽莎》，对比各模型的图像生成效果。测试展示了不同 AI 在艺术风格还原、细节处理上的差异，GPT-5.6 在构图准确性上表现突出，而 Claude 和 Gemini 各有侧重。该实验为评估多模态模型的视觉创作能力提供了直观参考。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "All posts We built a drawing arena: hand a model a blank white canvas and a set of colored-pencil tools, then get out of the way.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The model sets a color, tip width, and pressure, lays down batches of strokes, smudges to blend, erases, and calls view_canvas to see its own work and decide what to fix.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It either reproduces a target image or draws from a text prompt.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "We ran four vision models, GPT-5.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "6 Sol , Claude Fable 5 , Grok 4.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-23T03:51:21.944Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "GitHub"
+    ],
+    "products": [
+      "GPT-5",
+      "Claude",
+      "Gemini"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "5.6",
+      "5",
+      "4.5",
+      "3.6",
+      "28",
+      "3",
+      "0",
+      "1"
+    ],
+    "quotes": [
+      "《蒙娜丽莎》--AI 图像生成能力实测\n开发者使用 GPT-5.6、Claude、Gemini 和 Grok 分别尝试",
+      "An elderly fisherman's weathered face, warm late-afternoon sun, deep wrinkles and stubble",
+      "A beautiful sunset over a calm ocean, orange-to-violet sky, silhouetted horizon",
+      "A single red rose in a glass vase against a dark background, dramatic Rembrandt lighting",
+      "A tabby cat curled asleep on a windowsill in afternoon sun"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "开发者使用 GPT-5.6、Claude、Gemini 和 Grok 分别尝试\"绘制\"《蒙娜丽莎》，对比各模型的图像生成效果。测试展示了不同 AI 在艺术风格还原、细节处理上的差异，GPT-5.6 在构图准确性上表现突出，而 Claude 和 Gemini 各有侧重。该实验为评估多模态模型的视觉创作能力提供了直观参考。",
+      "All posts We built a drawing arena: hand a model a blank white canvas and a set of colored-pencil tools, then get out of the way.",
+      "The model sets a color, tip width, and pressure, lays down batches of strokes, smudges to blend, erases, and calls view_canvas to see its own work and decide what to fix."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": false,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 用 GPT-5.6、Claude、Gemini 和 Grok \"绘制\"《蒙娜丽莎》--AI 图像生成能力实测\n\n- raw_id: R-045\n- title_zh: 用 GPT-5.6、Claude、Gemini 和 Grok \"绘制\"《蒙娜丽莎》--AI 图像生成能力实测\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.tryai.dev/blog/ai-drawing-arena-colored-pencils-claude-gpt-grok\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-23T03:51:21.944Z\n\n## clean_text\n\nAll posts We built a drawing arena: hand a model a blank white canvas and a set of colored-pencil tools, then get out of the way. The model sets a color, tip width, and pressure, lays down batches of strokes, smudges to blend, erases, and calls view_canvas to see its own work and decide what to fix. It either reproduces a target image or draws from a text prompt.\nWe ran four vision models, GPT-5.6 Sol , Claude Fable 5 , Grok 4.5 , and Gemini 3.6 Flash , across two targets (the Mona Lisa and Van Gogh's Starry Night, both scored objectively) and five open-ended prompts, for 28 drawings total. We'll cover tool use, cost, output, and whether the models actually improved their work, with our opinion at the end.\nWhy we run these\nA quick note on why we're doing this, because our last one of these (models making music videos) kicked off a good discussion where some folks read it as us promoting the creativity or artistic ability of models. These are not objective tests of model capability. They are deliberately open-ended, fuzzy tasks. Here is why we personally keep running them:\nThey are fun, and genuinely informative. Watching a model tackle a loose, open-ended task is a more interesting visual indicator of capability than yet another benchmark number.\nThey expose the real frontier-vs-open gap. Cheaper open-weight models can absolutely replace the frontier for a lot of execution work, and we will keep reporting on that. But there is also a lot of benchmaxxing out there, and tasks like this cut through it. They genuinely separate frontier capability from the rest. Grok 4.5, as you will see, was rough at this \"basic\" drawing task, and the open-weight models we tried were not even usable, several just returned a blank canvas. (That may change with Kimi K3 which we will report on once it is fully open-sourced)\nThey show what long-running tasks actually cost. Claude Fable 5 almost always took much longer than the others, for far more money, and here produced worse output. Fable has beaten GPT-5.6 for us on plenty of tasks, including the music-video challenge , but on this one it was worse for a lot more overhead. Depending on your use case, that trade-off matters.\nWe're loving the discussions. The discussions have genuinely been interesting, and if you have suggestions for the setup or new tasks, we will take them into account. These have been a blast to run, and the outputs are super exciting to see.\nThe tools\nEvery model worked with the exact same colored-pencil toolset:\nplan : a no-op scratchpad for thinking and planning between steps.\nview_target : look at the target image again.\nview_canvas : render the current page and see it. This is also when we score the drawing against the target.\nset_color / set_brush / set_pressure : the current pencil color, tip width, and pressure (0 to 1 opacity, low pressure for softer tone).\ndraw : lay down a batch of marks (strokes, lines, shape outlines, dots) in one call. There are no solid fills, tone and color are built by layering, like a real pencil.\nsmudge : blend/soften a rectangular region, like a blending stump.\nerase / clear_canvas : lift a region back to white / reset the whole page.\nThe whole harness is open source at github.com/hershalb/canvas-arena . Point it at any target image or a text prompt and run it yourself.\nThe two target reproductions\nThe models could see the target the whole time and were scored on structural similarity (SSIM) to it. We show the SSIM scores below.\nMona Lisa (target) GPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nStarry Night (target) GPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nThe five prompt drawings\nNo target, no score, just a text brief and a blank page.\n\"An elderly fisherman's weathered face, warm late-afternoon sun, deep wrinkles and stubble\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A beautiful sunset over a calm ocean, orange-to-violet sky, silhouetted horizon\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A single red rose in a glass vase against a dark background, dramatic Rembrandt lighting\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A tabby cat curled asleep on a windowsill in afternoon sun\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A cozy cabin interior with a lit fireplace, warm amber light and soft shadows\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nThe headline numbers\nAverages and totals across all seven drawings per model.\nModel Drawings ↕ Avg steps ↕ Avg time ↕ Total tokens ↕ Est. token cost ↕ Avg self-reviews ↕ Total draw calls ↕\nGPT-5.6 Sol 7 29 6.2 min 3.4M $7.74 6.0 116\nClaude Fable 5 7 54 12.5 min 14.6M $160.58 15.6 207\nGrok 4.5 7 99 4.8 min 34.0M $9.21 4.3 354\nGemini 3.6 Flash 7 73 6.9 min 27.7M $12.87 22.6 190\nTool calling\nThe four models used the exact same toolset in completely different ways.\nGPT-5.6 Sol Claude Fable 5\nGrok 4.5 Gemini 3.6 Flash\nGPT-5.6 Sol never called set_color, set_brush, or set_pressure once , it set those inline on each draw call instead, so its calls are almost all draw, smudge, and view_canvas. Grok 4.5 did the opposite : 65% of its 1,349 tool calls were set_color / set_brush / set_pressure, which is why it averaged 99 steps per drawing. Claude Fable 5 leaned on smudge (123 calls) and reviewed constantly. Gemini 3.6 Flash was the most obsessive reviewer of all, nearly a third of its calls were view_canvas (about 23 self-reviews per drawing), and like Sol it never touched the set_* tools.\nCost and tokens\nClaude Fable 5 cost an estimated $160 for its seven drawings, roughly 20x GPT-5.6 Sol ($7.74), Grok 4.5 ($9.21), or Gemini 3.6 Flash ($12.87). This shouldn't really be a surprise by now. Grok used by far the most tokens (34M) but stayed cheap because ~98% were cached reads at a fraction of the input rate, and Grok's rates are the lowest of the four. Gemini also leaned heavily on cached reads, so even at 27.7M tokens it stayed modest.\nDid the models actually improve?\nEvery view_canvas re-scored the canvas against the target, so we can watch progress over a run. Two patterns held across both targets:\nFirst, they plateau early. Claude Fable 5 reviewed its Mona Lisa 27 times, but its similarity was essentially flat after about the fifth review. Second, in all eight target runs, the final drawing scored below the best the model reached mid-run. GPT-5.6 Sol's Mona Lisa peaked at 0.352 SSIM and ended at 0.325; its Starry Night peaked at 0.179 and ended at 0.130. Gemini 3.6 Flash reviewed the most (about 23 times per drawing) and reached the highest peak of the whole batch, 0.449 on the Mona Lisa, then slid all the way back to 0.337 by the end. More reviewing did not translate into a better finish. The models kept editing past their own best performance.\nObjective similarity (target runs)\nSSIM is 0 to 1, higher is closer to the target. RMSE is 0 to 255, lower is closer to the target.\nModel Target ↕ Steps ↕ Time ↕ Self-reviews ↕ Final SSIM ↕ Best SSIM ↕ Final RMSE ↕\nGPT-5.6 Sol Mona Lisa 44 8m41s 7 0.325 0.352 54.2\nClaude Fable 5 Mona Lisa 86 18m58s 27 0.286 0.289 56.9\nGrok 4.5 Mona Lisa 106 4m30s 5 0.151 0.152 95.6\nGemini 3.6 Flash Mona Lisa 60 5m31s 22 0.337 0.449 51.1\nGPT-5.6 Sol Starry Night 23 5m47s 4 0.130 0.179 37.8\nClaude Fable 5 Starry Night 43 11m30s 12 0.153 0.176 40.9\nGrok 4.5 Starry Night 58 5m51s 3 0.039 0.039 104.9\nGemini 3.6 Flash Starry Night 74 6m36s 24 0.172 0.190 42.8\nOn raw SSIM, Gemini 3.6 Flash scored highest on both targets, on final score and on peak, though it also swung the most between its best frame and its final one. Gemini 3.6 Flash looked decent, but definitely does not look the closest to the target output. Very interesting that the raw score turned out to be higher though. As always, SSIM measures structural closeness, not how good the drawing looks to a person (see our take below).\nMethod notes\nFour models, two scored targets plus five prompts each, 28 drawings total. All runs used the same colored-pencil toolset. Reasoning was set to high for every model.\nSSIM/RMSE are computed by resizing both images to 256x256 and comparing. They measure structural/pixel closeness, not artistic quality, and only apply to the target runs (prompts have no reference to score against).\nWall-clock time includes the model's own thinking and tool round-trips.\nOur take\nGPT-5.6 Sol was the runaway leader. Its Starry Night and its rose were our favorites of the whole batch, which is wild considering it drew them stroke by stroke on a blank canvas. It also beat the other two on detail in almost every drawing, the one exception being the elderly fisherman.\nGrok 4.5 was basically garbage here. It rarely produced anything usable, and despite its frantic tool use I would not trust it to reliably understand or judge visual output yet.\nGemini 3.6 Flash was definitely better than Grok at a slight cost increase, but comparing the Flash model to frontier versions seems a little unfair. I'm definitely excited to see how Gemini 4 will perform. We also already knew this, but the token output speed is just so impressive.\nClaude Fable 5 landed second on quality but at the far end on cost and time. For this task it was the least appealing trade-off of the three: much slower and far more expensive (about 20x the others) for output that did not keep up with Sol.\nTry it yourself\nEvery model mentioned here is available on TryAI with one account, pay-as-you-go, no subscription.\nStart free\n\n## full_text\n\nAll posts We built a drawing arena: hand a model a blank white canvas and a set of colored-pencil tools, then get out of the way. The model sets a color, tip width, and pressure, lays down batches of strokes, smudges to blend, erases, and calls view_canvas to see its own work and decide what to fix. It either reproduces a target image or draws from a text prompt.\nWe ran four vision models, GPT-5.6 Sol , Claude Fable 5 , Grok 4.5 , and Gemini 3.6 Flash , across two targets (the Mona Lisa and Van Gogh's Starry Night, both scored objectively) and five open-ended prompts, for 28 drawings total. We'll cover tool use, cost, output, and whether the models actually improved their work, with our opinion at the end.\nWhy we run these\nA quick note on why we're doing this, because our last one of these (models making music videos) kicked off a good discussion where some folks read it as us promoting the creativity or artistic ability of models. These are not objective tests of model capability. They are deliberately open-ended, fuzzy tasks. Here is why we personally keep running them:\nThey are fun, and genuinely informative. Watching a model tackle a loose, open-ended task is a more interesting visual indicator of capability than yet another benchmark number.\nThey expose the real frontier-vs-open gap. Cheaper open-weight models can absolutely replace the frontier for a lot of execution work, and we will keep reporting on that. But there is also a lot of benchmaxxing out there, and tasks like this cut through it. They genuinely separate frontier capability from the rest. Grok 4.5, as you will see, was rough at this \"basic\" drawing task, and the open-weight models we tried were not even usable, several just returned a blank canvas. (That may change with Kimi K3 which we will report on once it is fully open-sourced)\nThey show what long-running tasks actually cost. Claude Fable 5 almost always took much longer than the others, for far more money, and here produced worse output. Fable has beaten GPT-5.6 for us on plenty of tasks, including the music-video challenge , but on this one it was worse for a lot more overhead. Depending on your use case, that trade-off matters.\nWe're loving the discussions. The discussions have genuinely been interesting, and if you have suggestions for the setup or new tasks, we will take them into account. These have been a blast to run, and the outputs are super exciting to see.\nThe tools\nEvery model worked with the exact same colored-pencil toolset:\nplan : a no-op scratchpad for thinking and planning between steps.\nview_target : look at the target image again.\nview_canvas : render the current page and see it. This is also when we score the drawing against the target.\nset_color / set_brush / set_pressure : the current pencil color, tip width, and pressure (0 to 1 opacity, low pressure for softer tone).\ndraw : lay down a batch of marks (strokes, lines, shape outlines, dots) in one call. There are no solid fills, tone and color are built by layering, like a real pencil.\nsmudge : blend/soften a rectangular region, like a blending stump.\nerase / clear_canvas : lift a region back to white / reset the whole page.\nThe whole harness is open source at github.com/hershalb/canvas-arena . Point it at any target image or a text prompt and run it yourself.\nThe two target reproductions\nThe models could see the target the whole time and were scored on structural similarity (SSIM) to it. We show the SSIM scores below.\nMona Lisa (target) GPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nStarry Night (target) GPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nThe five prompt drawings\nNo target, no score, just a text brief and a blank page.\n\"An elderly fisherman's weathered face, warm late-afternoon sun, deep wrinkles and stubble\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A beautiful sunset over a calm ocean, orange-to-violet sky, silhouetted horizon\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A single red rose in a glass vase against a dark background, dramatic Rembrandt lighting\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A tabby cat curled asleep on a windowsill in afternoon sun\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\n\"A cozy cabin interior with a lit fireplace, warm amber light and soft shadows\"\nGPT-5.6 Sol Claude Fable 5 Grok 4.5 Gemini 3.6 Flash\nFull transcripts: GPT-5.6 Sol · Claude Fable 5 · Grok 4.5 · Gemini 3.6 Flash\nThe headline numbers\nAverages and totals across all seven drawings per model.\nModel Drawings ↕ Avg steps ↕ Avg time ↕ Total tokens ↕ Est. token cost ↕ Avg self-reviews ↕ Total draw calls ↕\nGPT-5.6 Sol 7 29 6.2 min 3.4M $7.74 6.0 116\nClaude Fable 5 7 54 12.5 min 14.6M $160.58 15.6 207\nGrok 4.5 7 99 4.8 min 34.0M $9.21 4.3 354\nGemini 3.6 Flash 7 73 6.9 min 27.7M $12.87 22.6 190\nTool calling\nThe four models used the exact same toolset in completely different ways.\nGPT-5.6 Sol Claude Fable 5\nGrok 4.5 Gemini 3.6 Flash\nGPT-5.6 Sol never called set_color, set_brush, or set_pressure once , it set those inline on each draw call instead, so its calls are almost all draw, smudge, and view_canvas. Grok 4.5 did the opposite : 65% of its 1,349 tool calls were set_color / set_brush / set_pressure, which is why it averaged 99 steps per drawing. Claude Fable 5 leaned on smudge (123 calls) and reviewed constantly. Gemini 3.6 Flash was the most obsessive reviewer of all, nearly a third of its calls were view_canvas (about 23 self-reviews per drawing), and like Sol it never touched the set_* tools.\nCost and tokens\nClaude Fable 5 cost an estimated $160 for its seven drawings, roughly 20x GPT-5.6 Sol ($7.74), Grok 4.5 ($9.21), or Gemini 3.6 Flash ($12.87). This shouldn't really be a surprise by now. Grok used by far the most tokens (34M) but stayed cheap because ~98% were cached reads at a fraction of the input rate, and Grok's rates are the lowest of the four. Gemini also leaned heavily on cached reads, so even at 27.7M tokens it stayed modest.\nDid the models actually improve?\nEvery view_canvas re-scored the canvas against the target, so we can watch progress over a run. Two patterns held across both targets:\nFirst, they plateau early. Claude Fable 5 reviewed its Mona Lisa 27 times, but its similarity was essentially flat after about the fifth review. Second, in all eight target runs, the final drawing scored below the best the model reached mid-run. GPT-5.6 Sol's Mona Lisa peaked at 0.352 SSIM and ended at 0.325; its Starry Night peaked at 0.179 and ended at 0.130. Gemini 3.6 Flash reviewed the most (about 23 times per drawing) and reached the highest peak of the whole batch, 0.449 on the Mona Lisa, then slid all the way back to 0.337 by the end. More reviewing did not translate into a better finish. The models kept editing past their own best performance.\nObjective similarity (target runs)\nSSIM is 0 to 1, higher is closer to the target. RMSE is 0 to 255, lower is closer to the target.\nModel Target ↕ Steps ↕ Time ↕ Self-reviews ↕ Final SSIM ↕ Best SSIM ↕ Final RMSE ↕\nGPT-5.6 Sol Mona Lisa 44 8m41s 7 0.325 0.352 54.2\nClaude Fable 5 Mona Lisa 86 18m58s 27 0.286 0.289 56.9\nGrok 4.5 Mona Lisa 106 4m30s 5 0.151 0.152 95.6\nGemini 3.6 Flash Mona Lisa 60 5m31s 22 0.337 0.449 51.1\nGPT-5.6 Sol Starry Night 23 5m47s 4 0.130 0.179 37.8\nClaude Fable 5 Starry Night 43 11m30s 12 0.153 0.176 40.9\nGrok 4.5 Starry Night 58 5m51s 3 0.039 0.039 104.9\nGemini 3.6 Flash Starry Night 74 6m36s 24 0.172 0.190 42.8\nOn raw SSIM, Gemini 3.6 Flash scored highest on both targets, on final score and on peak, though it also swung the most between its best frame and its final one. Gemini 3.6 Flash looked decent, but definitely does not look the closest to the target output. Very interesting that the raw score turned out to be higher though. As always, SSIM measures structural closeness, not how good the drawing looks to a person (see our take below).\nMethod notes\nFour models, two scored targets plus five prompts each, 28 drawings total. All runs used the same colored-pencil toolset. Reasoning was set to high for every model.\nSSIM/RMSE are computed by resizing both images to 256x256 and comparing. They measure structural/pixel closeness, not artistic quality, and only apply to the target runs (prompts have no reference to score against).\nWall-clock time includes the model's own thinking and tool round-trips.\nOur take\nGPT-5.6 Sol was the runaway leader. Its Starry Night and its rose were our favorites of the whole batch, which is wild considering it drew them stroke by stroke on a blank canvas. It also beat the other two on detail in almost every drawing, the one exception being the elderly fisherman.\nGrok 4.5 was basically garbage here. It rarely produced anything usable, and despite its frantic tool use I would not trust it to reliably understand or judge visual output yet.\nGemini 3.6 Flash was definitely better than Grok at a slight cost increase, but comparing the Flash model to frontier versions seems a little unfair. I'm definitely excited to see how Gemini 4 will perform. We also already knew this, but the token output speed is just so impressive.\nClaude Fable 5 landed second on quality but at the far end on cost and time. For this task it was the least appealing trade-off of the three: much slower and far more expensive (about 20x the others) for output that did not keep up with Sol.\nTry it yourself\nEvery model mentioned here is available on TryAI with one account, pay-as-you-go, no subscription.\nStart free\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 开发者使用 GPT-5.6、Claude、Gemini 和 Grok 分别尝试\"绘制\"《蒙娜丽莎》，对比各模型的图像生成效果。测试展示了不同 AI 在艺术风格还原、细节处理上的差异，GPT-5.6 在构图准确性上表现突出，而 Claude 和 Gemini 各有侧重。该实验为评估多模态模型的视觉创作能力提供了直观参考。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] All posts We built a drawing arena: hand a model a blank white canvas and a set of colored-pencil tools, then get out of the way.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The model sets a color, tip width, and pressure, lays down batches of strokes, smudges to blend, erases, and calls view_canvas to see its own work and decide what to fix.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] It either reproduces a target image or draws from a text prompt.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] We ran four vision models, GPT-5.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 6 Sol , Claude Fable 5 , Grok 4.\n"
+}
