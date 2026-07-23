@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 1643
-generated_at: 2026-07-22T08:10:39.575Z
+opinion_count: 1649
+generated_at: 2026-07-23T01:41:29.737Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -20,22 +20,22 @@ generated_at: 2026-07-22T08:10:39.575Z
 - [Aaron Levie](people/aaron-levie/README.md) - 74 条 - 最新 2026-07-22
 - [Peter Steinberger](people/peter-steinberger/README.md) - 70 条 - 最新 2026-07-22
 - [Amjad Masad](people/amjad-masad/README.md) - 62 条 - 最新 2026-07-22
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 54 条 - 最新 2026-07-22
 - [Madhu Guru](people/madhu-guru/README.md) - 24 条 - 最新 2026-07-22
+- [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 16 条 - 最新 2026-07-22
+- [Interconnects (Nathan Lambert)](people/interconnects-nathan-lambert/README.md) - 5 条 - 最新 2026-07-22
 - [Guillermo Rauch](people/guillermo-rauch/README.md) - 98 条 - 最新 2026-07-21
 - [Zara Zhang](people/zara-zhang/README.md) - 82 条 - 最新 2026-07-21
 - [Matt Turck](people/matt-turck/README.md) - 61 条 - 最新 2026-07-21
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 50 条 - 最新 2026-07-21
 - [Claude](people/claude/README.md) - 49 条 - 最新 2026-07-21
 - [Aditya Agarwal](people/aditya-agarwal/README.md) - 44 条 - 最新 2026-07-21
 - [Sam Altman](people/sam-altman/README.md) - 43 条 - 最新 2026-07-21
 - [Josh Woodward](people/josh-woodward/README.md) - 26 条 - 最新 2026-07-21
-- [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 15 条 - 最新 2026-07-21
 - [Ben's Bites AI Newsletter](people/bens-bites-ai-newsletter/README.md) - 6 条 - 最新 2026-07-21
 - [Training Data](people/training-data/README.md) - 6 条 - 最新 2026-07-21
 - [Andrej Karpathy](people/andrej-karpathy/README.md) - 4 条 - 最新 2026-07-21
 - [Thariq](people/thariq/README.md) - 50 条 - 最新 2026-07-20
 - [Cat Wu](people/cat-wu/README.md) - 17 条 - 最新 2026-07-20
-- [Interconnects (Nathan Lambert)](people/interconnects-nathan-lambert/README.md) - 4 条 - 最新 2026-07-20
 - [Amanda Askell](people/amanda-askell/README.md) - 13 条 - 最新 2026-07-19
 - [Boris Cherny](people/boris-cherny/README.md) - 22 条 - 最新 2026-07-17
 - [Nan Yu](people/nan-yu/README.md) - 40 条 - 最新 2026-07-16
