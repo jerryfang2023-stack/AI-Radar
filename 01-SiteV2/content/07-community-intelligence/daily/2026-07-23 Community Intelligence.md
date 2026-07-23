@@ -1,0 +1,119 @@
+---
+title: 2026-07-23 Community Intelligence
+date: 2026-07-23
+status: active
+type: community-intelligence-daily
+source: community-intelligence
+---
+
+# 2026-07-23 社群情报
+生成时间：2026/07/23 08:33
+## 今日统计
+- 去重后条目：67
+- 行业案例：5
+- 工具技巧：20
+- 商业机会：42
+- 资料链接：46
+- 本轮搜索词：销售、SOP、知识库、Codex、Claude Code、n8n、Dify、Coze
+## 值得优先看的内容
+### 1. 如何用Codex搭建个人IP内容创作系统
+- 来源：生财有术｜11小时前
+- 分类：商业机会｜获客营销与转化
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#获客营销与转化 #企业服务 #Codex #Obsidian #飞书 #订单成交-/-收费变现
+- 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/55522452885812484)
+如何用Codex搭建个人IP内容创作系统 如何用Codex搭建自己的IP内容创作系统，背后的底层架构是Codex + obsidian + hermes + 飞书CLI，搭建起一套能变现的，随时调用、进步的商业闭环Agent
+- 价值判断：可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：获客成本与精准线索 / 知识沉淀与效率 / 内容生产与账号增长；资料链接：2 个
+- 资料：[资料 1](https://my.feishu.cn/wiki/DerKwzHddiHAnVkHPSmcw6MqnNc?from=from_copylink) · [资料 2](https://my.feishu.cn/wiki/DerKwzHddiHAnVkHPSmcw6Mq)
+### 2. 8 月航海正式开启报名｜这一次，我们带着成果物靠岸！
+- 来源：生财有术｜12小时前
+- 分类：商业机会｜交付与服务自动化
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#交付与服务自动化 #企业服务 #服务交付-/-咨询培训
+- 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/22255425118888211)
+8 月航海正式开启报名｜这一次，我们带着成果物靠岸
+- 价值判断：可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：交付标准化与复购 / 知识沉淀与效率 / 工具配置与AI基建门槛
+### 3. 做油管一年，累计 1 万刀、100W 粉：我如何把项目结果变成接单、涨薪和破圈机会
+- 来源：生财有术｜15小时前
+- 分类：商业机会｜交付与服务自动化
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#交付与服务自动化 #跨境出海 #订单成交-/-收费变现
+- 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/14422142814424552)
+做油管一年，累计 1 万刀、100W 粉：我如何把项目结果变成接单、涨薪和破圈机会 哈喽，大家好，我是椰子树
+- 价值判断：结果信号：月入3000刀；可复用方法：沉淀成SOP/模板；痛点：知识沉淀与效率；资料链接：2 个
+- 资料：[资料 1](https://my.feishu.cn/docx/ScdMdfge8owhGfxB8xScK8rEnKh?from=from_copylink) · [资料 2](https://my.feishu.cn/docx/ScdMdfge8owhGfxB8xScK8rE)
+### 4. 破局AI素养大课 · 助教&志愿者招募 让每一位破局圈友都能上车——破局AI素养大课·助教&志愿者招募正式开启 破局圈友们好，我是破局行动负责人王庆。
+- 来源：AI破局｜2026-07-22 11:56
+- 分类：商业机会｜内容生产与IP运营
+- 标签：#内容生产与IP运营 #内容与自媒体 #服务交付-/-咨询培训
+- 原帖：[打开原帖](https://aipoju.com/topic-details/55522452814418224)
+破局AI素养大课 · 助教&志愿者招募 让每一位破局圈友都能上车——破局AI素养大课·助教&志愿者招募正式开启 破局圈友们好，我是破局行动负责人王庆
+- 价值判断：可复用方法：内容获客路径 / 知识库 + Agent 工作流 / 前端获客 + 后端交付拆分；痛点：交付标准化与复购 / 知识沉淀与效率 / 内容生产与账号增长
+### 5. 9 年设计师，裸辞后在生财做了 5 个项目都失败，最后all in AI企业服务做到一场培训 5000元
+- 来源：生财有术｜1天前
+- 分类：商业机会｜获客营销与转化
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#获客营销与转化 #企业服务 #飞书 #Openclaw #订单成交-/-收费变现
+9 年设计师，裸辞后在生财做了 5 个项目都失败，最后all in AI企业服务做到一场培训 5000元 哈喽，我是石榴爸爸，坐标济南
+- 价值判断：结果信号：订单；可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：获客成本与精准线索 / 交付标准化与复购 / 知识沉淀与效率；资料链接：2 个
+- 资料：[资料 1](https://my.feishu.cn/docx/ILvqdLSghoppOZxCtZ2cPCPRnmc?from=from_copylink) · [资料 2](https://my.feishu.cn/docx/ILvqdLSghoppOZxCtZ2cPCPR)
+### 6. 投流老兵做AI虚拟服务：1个月收入9000+，我踩过的投流、报价和外包交付的项目复盘
+- 来源：生财有术｜1天前
+- 分类：商业机会｜获客营销与转化
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#获客营销与转化 #企业服务 #飞书 #订单成交-/-收费变现
+投流老兵做AI虚拟服务：1个月收入9000+，我踩过的投流、报价和外包交付的项目复盘 大家好，我是邓兴超
+- 价值判断：结果信号：成交和交付；可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：获客成本与精准线索 / 交付标准化与复购 / 内容生产与账号增长；资料链接：2 个
+- 资料：[资料 1](https://my.feishu.cn/docx/AzewdeGEaolB1axt4u5cvds7n4d?from=from_copylink) · [资料 2](https://my.feishu.cn/docx/AzewdeGEaolB1axt4u5cvds7)
+### 7. 我如何用好生财有术，完成一次新的职业转型｜6年老圈友的AI创业实战路径
+- 来源：生财有术｜1天前
+- 分类：商业机会｜获客营销与转化
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#获客营销与转化 #本地生活 #Codex #Claude-Code #Claude #Obsidian #Openclaw #订单成交-/-收费变现
+- 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/55522452541122524)
+我如何用好生财有术，完成一次新的职业转型｜6年老圈友的AI创业实战路径 #线下聚会# 这是7月18日做为嘉宾在戴哥组织的线下局的分享稿，也发到这里
+- 价值判断：结果信号：成交；可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：获客成本与精准线索 / 交付标准化与复购 / 知识沉淀与效率
+### 8. 8 月航海报名开启倒计时，一起来看这期项目拆解！
+- 来源：生财有术｜1天前
+- 分类：商业机会｜获客营销与转化
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#获客营销与转化 #本地生活 #Codex #ChatGPT #Gemini #Cursor #Obsidian #飞书
+- 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/82255425284525542)
+8 月航海报名开启倒计时，一起来看这期项目拆解
+- 价值判断：结果信号：收费的微信小程序；可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：获客成本与精准线索 / 交付标准化与复购 / 知识沉淀与效率
+### 9. 一年时间，我是如何通过AI业务变现，做到10人+AI业务工作室
+- 来源：生财有术｜1天前
+- 分类：商业机会｜获客营销与转化
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#获客营销与转化 #内容与自媒体 #订单成交-/-收费变现
+一年时间，我是如何通过AI业务变现，做到10人+AI业务工作室 大家好，我是绿子
+- 价值判断：可复用方法：沉淀成SOP/模板 / 内容获客路径 / 前端获客 + 后端交付拆分；痛点：交付标准化与复购 / 内容生产与账号增长；资料链接：2 个
+- 资料：[资料 1](https://my.feishu.cn/docx/BgXUdIrWJoIJhUxIlxDcFwuHnHd?from=from_copylink) · [资料 2](https://my.feishu.cn/docx/BgXUdIrWJoIJhUxIlxDcFwuH)
+### 10. 我用资源库、AI自动化工具、目录映射网站和公域流量，把这个老项目重新做了一遍，打造了不少单日小富翁。
+- 来源：生财有术｜1天前
+- 分类：商业机会｜获客营销与转化
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#获客营销与转化 #企业服务 #订单成交-/-收费变现
+- 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/22255425242528411)
+我用资源库、AI自动化工具、目录映射网站和公域流量，把这个老项目重新做了一遍，打造了不少单日小富翁
+- 价值判断：可复用方法：内容获客路径 / 工具产品化；痛点：获客成本与精准线索 / 知识沉淀与效率 / 工具配置与AI基建门槛
+### 11. 生财团队AI原生改造第一阶段收尾，全员用AI写文档、开发Agent
+- 来源：生财有术｜1天前
+- 分类：商业机会｜AI基建与企业服务
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#AI基建与企业服务 #内容与自媒体 #Codex #飞书 #待确认
+生财团队AI原生改造第一阶段收尾，全员用AI写文档、开发Agent 生财团队内部几乎没有什么人写文档了，大多数文档都是 AI 写的，我也要求他们用 AI 写文档，手写文档并不加分，甚至在我这里会减分
+- 价值判断：可复用方法：知识库 + Agent 工作流 / 前端获客 + 后端交付拆分 / 工具产品化；痛点：交付标准化与复购 / 工具配置与AI基建门槛 / 内容生产与账号增长
+### 12. 【油管直播-完整数据分享】两个0播账号，坚持直播3个月，双双达标YPP
+- 来源：生财有术｜1天前
+- 分类：工具技巧｜内容生产与IP运营
+- 命中关键词：销售 / SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze
+- 标签：#内容生产与IP运营 #电商零售 #飞书 #待确认
+【油管直播-完整数据分享】两个0播账号，坚持直播3个月，双双达标YPP 我的油管之路 大家好，我是大盛
+- 价值判断：可复用方法：知识库 + Agent 工作流；痛点：工具配置与AI基建门槛 / 内容生产与账号增长；资料链接：1 个
+- 资料：[资料 1](https://jcn0k5crwoam.feishu.cn/wiki/PyRQwBb0tinwAxkHTlbcKfjpnwc?from=from_copylink)
+## 分类入口
+- [[Industry Cases]]
+- [[Tool Tips]]
+- [[Opportunities]]
+- [[Resource Links]]
