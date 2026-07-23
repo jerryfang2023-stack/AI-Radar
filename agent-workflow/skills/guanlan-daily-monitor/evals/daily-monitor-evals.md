@@ -61,3 +61,7 @@
 16. `same_date_formal_card_source_carry_forward`
    - Pass when a same-date rerun reuses readable, dated Raw source snapshots referenced by already published formal Cards before generated Raw is reset; a missing structured date may be recovered from the captured article body or dated URL.
    - Fail when a valid current-day Card disappears only because the rerun's live search did not rediscover its source URL.
+
+17. `curated_original_source_window_fixture`
+   - Pass when direct-source recall fixtures use an explicit fixture date and verify both active inclusion and expired exclusion.
+   - Fail when a production preflight depends on a real curated source remaining active after its configured `active_until` date.

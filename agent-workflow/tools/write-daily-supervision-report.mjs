@@ -85,10 +85,26 @@ function parseFields(text = "") {
 }
 
 function statusFromGate(file) {
-  const text = readText(file);
+  return statusFromGateText(readText(file));
+}
+
+function statusFromGateText(text = "") {
   if (!text) return "missing";
   const match = text.match(/^- status:\s*([^\r\n]+)/mu);
   return match ? match[1].trim() : "unknown";
+}
+
+function readTextFromGit(ref, file, fallback = "") {
+  const result = runOptional("git", ["show", `${ref}:${rel(file)}`], 8000);
+  return result.ok ? result.stdout : fallback;
+}
+
+function readJsonFromGit(ref, file, fallback = null) {
+  try {
+    return JSON.parse(readTextFromGit(ref, file));
+  } catch {
+    return fallback;
+  }
 }
 
 function countFiles(dir, pattern) {
@@ -822,39 +838,54 @@ function buildCommunityLane() {
   const publishWindowPassed = hasWindowPassed(date, "09:50");
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
   const gateFile = path.join(reportsDir, `${date}-community-intelligence-gate.md`);
-  const data = readJson(dataFile, {});
+  const localData = readJson(dataFile, {});
+  const localGeneratedDate = shanghaiDate(localData?.meta?.generatedAt || "");
+  const publishedData = localGeneratedDate === date ? null : readJsonFromGit("origin/main", dataFile, null);
+  const publishedGeneratedDate = shanghaiDate(publishedData?.meta?.generatedAt || "");
+  const usePublishedData = localGeneratedDate !== date && publishedGeneratedDate === date;
+  const data = usePublishedData ? publishedData : localData;
   const generatedDate = shanghaiDate(data?.meta?.generatedAt || "");
   const task = scheduledTaskState("WaveSight Community Intelligence Daily");
   const gh = githubWorkflowState("daily-community-intelligence-pr.yml", `automation/community-intelligence-${date}`);
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
   const openPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.state === "OPEN") : null;
-  const publicationReady = Boolean(gh.latest_run || mergedPr || openPr);
+  const publicationReady = Boolean(gh.latest_run || mergedPr || openPr || usePublishedData);
+  const publishedGateText = usePublishedData ? readTextFromGit("origin/main", gateFile) : "";
 
   evidence.generatedAt = data?.meta?.generatedAt || "";
   evidence.generatedDate = generatedDate;
+  evidence.dataSource = usePublishedData ? "origin/main" : "working_tree";
+  evidence.localGeneratedDate = localGeneratedDate;
   evidence.items = Array.isArray(data.items) ? data.items.length : 0;
   evidence.links = Array.isArray(data.links) ? data.links.length : 0;
   evidence.selectedKeywords = Array.isArray(data?.meta?.selectedKeywords) ? data.meta.selectedKeywords.length : 0;
   evidence.collectorErrors = Array.isArray(data?.meta?.errors) ? data.meta.errors.length : 0;
-  evidence.gateStatus = statusFromGate(gateFile);
-  evidence.gateReport = exists(gateFile) ? rel(gateFile) : "missing";
+  evidence.gateStatus = usePublishedData ? statusFromGateText(publishedGateText) : statusFromGate(gateFile);
+  evidence.gateReport = usePublishedData && publishedGateText
+    ? `origin/main:${rel(gateFile)}`
+    : exists(gateFile) ? rel(gateFile) : "missing";
   evidence.scheduledTask = task;
   evidence.github = gh;
   evidence.publication = {
     communityPrMerged: Boolean(mergedPr),
     communityPrOpen: Boolean(openPr),
     communityPrUrl: mergedPr?.url || openPr?.url || "",
+    publishedOnOriginMain: usePublishedData,
   };
   const communityDataHealthy =
-    exists(dataFile) &&
+    (exists(dataFile) || usePublishedData) &&
     generatedDate === date &&
     evidence.items >= 12 &&
     evidence.links >= 3 &&
     evidence.collectorErrors === 0 &&
     evidence.gateStatus === "passed";
 
+  if (usePublishedData) {
+    warnings.push(`local community data is ${localGeneratedDate || "missing"}; using passed ${date} publication from origin/main`);
+  }
+
   if (localWindowPassed) {
-    if (!exists(dataFile)) addProblem(problems, `missing community data file: ${rel(dataFile)}`);
+    if (!exists(dataFile) && !usePublishedData) addProblem(problems, `missing community data file: ${rel(dataFile)}`);
     if (generatedDate !== date) addProblem(problems, `community data date is ${generatedDate || "missing"}, expected ${date}`);
     if (evidence.items < 12) addProblem(problems, `community item count ${evidence.items} below 12`);
     if (evidence.links < 3) addProblem(problems, `community deduped links ${evidence.links} below 3`);
