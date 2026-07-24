@@ -1,6 +1,6 @@
 # 2026-07-24 Pool-to-Card Handoff
 
-- generated_at: 2026-07-24T01:28:12.307Z
+- generated_at: 2026-07-24T13:20:13.705Z
 - raw_input_count: 166
 - pool_input_count: 151
 - written_count: 39

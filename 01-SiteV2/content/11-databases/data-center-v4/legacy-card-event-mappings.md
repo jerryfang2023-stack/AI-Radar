@@ -3,12 +3,12 @@
 > 旧 Signal Card 是兼容资产，不等于 V4 CanonicalEvent。一个 Card 可能没有正式事件，也可能因旧聚合逻辑对应多个事件；以本表的 `mapping_status` 为准。
 
 - schema: `LEGACY-CARD-EVENT-MAP-V1.0`
-- card instances: 1071
-- logical card ids: 961
+- card instances: 1109
+- logical card ids: 999
 - duplicate legacy ids: 104
-- mapped to one event: 476
+- mapped to one event: 494
 - ambiguous (multiple events): 3
-- Raw found, no canonical event: 554
+- Raw found, no canonical event: 574
 - unresolved: 38
 
 ## Status semantics

@@ -1,7 +1,7 @@
 # 2026-07-24 Daily Production Chain Readiness
 
-- generated_at: 2026-07-24T01:26:19.845Z
-- stage: post-monitor
+- generated_at: 2026-07-24T13:21:47.888Z
+- stage: pre-commit
 - status: passed
 - final_active_raw_count: 166
 - raw_count_release_override: false
@@ -21,13 +21,13 @@
 - monitor_quality_gate_override: false
 - monitor_quality_gate_override_reason: none
 - review_only: false
-- downstream_assets_stale: true
-- block_stale: false
-- block_stale_groups: none
+- downstream_assets_stale: false
+- block_stale: true
+- block_stale_groups: signal_cards, trend_candidates, site_data
 
 ## Stale Groups
 
-- site_data: 01-SiteV2/site/data/v3-data-observation-desk.json, 01-SiteV2/site/data/intelligence-graph-index.json, 01-SiteV2/site/data/pipeline-dashboard.json
+- none
 
 ## Problems
 
