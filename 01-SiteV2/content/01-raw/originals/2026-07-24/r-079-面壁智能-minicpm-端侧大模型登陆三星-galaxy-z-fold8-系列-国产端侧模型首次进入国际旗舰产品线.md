@@ -1,0 +1,225 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-079
+title: "面壁智能 MiniCPM 端侧大模型登陆三星 Galaxy Z Fold8 系列，国产端侧模型首次进入国际旗舰产品线"
+title_zh: "面壁智能 MiniCPM 端侧大模型登陆三星 Galaxy Z Fold8 系列，国产端侧模型首次进入国际旗舰产品线"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/980/730.htm"
+canonical_url: "https://ithome.com/0/980/730.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-23T09:24:26.000Z"
+collected_at: 2026-07-24T01:25:51.176Z
+language: mixed
+full_text_hash: 0a824a28b733ee14
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-079-面壁智能-minicpm-端侧大模型登陆三星-galaxy-z-fold8-系列-国产端侧模型首次进入国际旗舰产品线.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-079-面壁智能-minicpm-端侧大模型登陆三星-galaxy-z-fold8-系列-国产端侧模型首次进入国际旗舰产品线.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 55
+extractor_diagnostics: {"readability_score":55,"text_length":913,"paragraph_count":11,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 913
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0a824a28b733ee14","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"面壁智能 MiniCPM 端侧大模型登陆三星 Galaxy Z Fold8 系列，国产端侧模型首次进入国际旗舰产品线","discovery_summary":"面壁智能宣布其 MiniCPM 系列端侧大模型深度赋能三星 Galaxy AI，为 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra 提供文本理解与多模态感知能力。这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/980/730.htm","discovered_at":"2026-07-24T01:15:58.878Z","rank_on_page":270,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e79eef06d67d32b5
+content_hash: 0a824a28b733ee14
+semantic_hash: b76c2121a8853367
+duplicate_of: ""
+first_seen_at: "2026-07-23T09:24:26.000Z"
+last_seen_at: 2026-07-24T01:25:51.176Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":[],"roles":["CIO / IT 负责人"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["8","7","23","4","3","5000 万","4800m","2 亿"],"quotes":[]}
+evidence_seed: {"company_actions":["面壁智能宣布其 MiniCPM 系列端侧大模型深度赋能三星 Galaxy AI，为 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra 提供文本理解与多模态感知能力。这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。","IT之家 7 月 23 日消息，三星昨晚在伦敦 Galaxy Unpacked 发布会上，正式推出全新折叠旗舰 ——Galaxy Z Fold8、Galaxy Z Fold8 Ultra 与 Galaxy Z Flip8。","面壁智能今日宣布，旗下 MiniCPM 系列端侧大模型，深度赋能三星 Galaxy AI。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"面壁智能宣布其 MiniCPM 系列端侧大模型深度赋能三星 Galaxy AI，为 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra 提供文本理解与多模态感知能力。这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 7 月 23 日消息，三星昨晚在伦敦 Galaxy Unpacked 发布会上，正式推出全新折叠旗舰 ——Galaxy Z Fold8、Galaxy Z Fold8 Ultra 与 Galaxy Z Flip8。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"面壁智能今日宣布，旗下 MiniCPM 系列端侧大模型，深度赋能三星 Galaxy AI。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"据介绍， 此次面壁智能将为三星 Galaxy AI 提供端侧模型能力，支持文本理解与多模态感知 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"搭载面壁端侧 AI 的三星新机包括 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-24T01:25:51.176Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 面壁智能 MiniCPM 端侧大模型登陆三星 Galaxy Z Fold8 系列，国产端侧模型首次进入国际旗舰产品线
+
+## clean_text
+
+IT之家 7 月 23 日消息，三星昨晚在伦敦 Galaxy Unpacked 发布会上，正式推出全新折叠旗舰 ——Galaxy Z Fold8、Galaxy Z Fold8 Ultra 与 Galaxy Z Flip8。
+面壁智能今日宣布，旗下 MiniCPM 系列端侧大模型，深度赋能三星 Galaxy AI。这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。
+据介绍， 此次面壁智能将为三星 Galaxy AI 提供端侧模型能力，支持文本理解与多模态感知 。搭载面壁端侧 AI 的三星新机包括 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra。
+Galaxy Z Fold8：采用全新 4:3 比例“阔折叠”设计，8 英寸内屏，后置双 5000 万像素摄像头，内置 4800mAh 电池，彻底告别传统折叠屏的狭长比例，带来更接近平板的视觉与办公体验。
+Galaxy Z Fold8 Ultra：三星折叠屏家族首款 Ultra 机型，延续书式折叠设计，配备 2 亿像素主摄与 5000mAh 电池，是当之无愧的折叠旗舰天花板。
+IT之家注：面壁智能于 2022 年 8 月在北京成立，孵化自清华大学自然语言处理实验室。联合创始人、CEO 李大海曾任知乎合伙人、CTO；联合创始人、首席科学家刘知远现任清华大学计算机系教授；联合创始人、CTO 曾国洋在 22 岁时作为核心工程负责人，训练了中国第一个大语言模型 CPM-1。
+相关阅读：
+《 三星 Galaxy Z8 系列手机现场实拍：三种折叠屏齐聚，首款阔折叠是亮点 》
+《 三星最轻折叠屏手机 Galaxy Z Flip8 发布，8999 元起 》
+《 三星 Galaxy Z Fold8 Ultra 折叠屏手机发布，起售价 14999 元 》
+《 三星 Galaxy Z Fold8 阔折叠手机发布：全新机身形态，起售价 12999 元 》
+三星 Galaxy 全球新品发布会专题
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 23 日消息，三星昨晚在伦敦 Galaxy Unpacked 发布会上，正式推出全新折叠旗舰 ——Galaxy Z Fold8、Galaxy Z Fold8 Ultra 与 Galaxy Z Flip8。
+面壁智能今日宣布，旗下 MiniCPM 系列端侧大模型，深度赋能三星 Galaxy AI。这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。
+据介绍， 此次面壁智能将为三星 Galaxy AI 提供端侧模型能力，支持文本理解与多模态感知 。搭载面壁端侧 AI 的三星新机包括 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra。
+Galaxy Z Fold8：采用全新 4:3 比例“阔折叠”设计，8 英寸内屏，后置双 5000 万像素摄像头，内置 4800mAh 电池，彻底告别传统折叠屏的狭长比例，带来更接近平板的视觉与办公体验。
+Galaxy Z Fold8 Ultra：三星折叠屏家族首款 Ultra 机型，延续书式折叠设计，配备 2 亿像素主摄与 5000mAh 电池，是当之无愧的折叠旗舰天花板。
+IT之家注：面壁智能于 2022 年 8 月在北京成立，孵化自清华大学自然语言处理实验室。联合创始人、CEO 李大海曾任知乎合伙人、CTO；联合创始人、首席科学家刘知远现任清华大学计算机系教授；联合创始人、CTO 曾国洋在 22 岁时作为核心工程负责人，训练了中国第一个大语言模型 CPM-1。
+相关阅读：
+《 三星 Galaxy Z8 系列手机现场实拍：三种折叠屏齐聚，首款阔折叠是亮点 》
+《 三星最轻折叠屏手机 Galaxy Z Flip8 发布，8999 元起 》
+《 三星 Galaxy Z Fold8 Ultra 折叠屏手机发布，起售价 14999 元 》
+《 三星 Galaxy Z Fold8 阔折叠手机发布：全新机身形态，起售价 12999 元 》
+三星 Galaxy 全球新品发布会专题
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 55
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":55,"text_length":913,"paragraph_count":11,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   面壁智能宣布其 MiniCPM 系列端侧大模型深度赋能三星 Galaxy AI，为 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra 提供文本理解与多模态感知能力。这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   IT之家 7 月 23 日消息，三星昨晚在伦敦 Galaxy Unpacked 发布会上，正式推出全新折叠旗舰 ——Galaxy Z Fold8、Galaxy Z Fold8 Ultra 与 Galaxy Z Flip8。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   面壁智能今日宣布，旗下 MiniCPM 系列端侧大模型，深度赋能三星 Galaxy AI。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   据介绍， 此次面壁智能将为三星 Galaxy AI 提供端侧模型能力，支持文本理解与多模态感知 。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   搭载面壁端侧 AI 的三星新机包括 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: CIO / IT 负责人
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 8, 7, 23, 4, 3, 5000 万, 4800m, 2 亿
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 面壁智能宣布其 MiniCPM 系列端侧大模型深度赋能三星 Galaxy AI，为 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra 提供文本理解与多模态感知能力。这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。 / IT之家 7 月 23 日消息，三星昨晚在伦敦 Galaxy Unpacked 发布会上，正式推出全新折叠旗舰 ——Galaxy Z Fold8、Galaxy Z Fold8 Ultra 与 Galaxy Z Flip8。 / 面壁智能今日宣布，旗下 MiniCPM 系列端侧大模型，深度赋能三星 Galaxy AI。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"面壁智能 MiniCPM 端侧大模型登陆三星 Galaxy Z Fold8 系列，国产端侧模型首次进入国际旗舰产品线","discovery_summary":"面壁智能宣布其 MiniCPM 系列端侧大模型深度赋能三星 Galaxy AI，为 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra 提供文本理解与多模态感知能力。这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/980/730.htm","discovered_at":"2026-07-24T01:15:58.878Z","rank_on_page":270,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+面壁智能宣布其 MiniCPM 系列端侧大模型深度赋能三星 Galaxy AI，为 Galaxy Z Fold8 和 Galaxy Z Fold8 Ultra 提供文本理解与多模态感知能力。这是国产端侧大模型首次进入国际头部手机厂商的全球旗舰产品线。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

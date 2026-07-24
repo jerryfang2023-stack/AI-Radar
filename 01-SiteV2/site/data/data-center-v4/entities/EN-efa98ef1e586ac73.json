@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-efa98ef1e586ac73",
+    "name": "AISI",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3b7b9040dd2c2a89"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-guardrails_safety"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-23",
+    "lastSeen": "2026-07-24",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-3b7b9040dd2c2a89"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3b7b9040dd2c2a89",
+        "dataDate": "2026-07-24",
+        "date": "2026-07-23",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存\"作弊\"行为",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "guardrails_safety",
+            "name": "安全护栏"
+          }
+        ],
+        "entityIds": [
+          "EN-efa98ef1e586ac73",
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-7839fb10a8f14c70"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-guardrails_safety",
+      "name": "安全护栏",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "guardrails_safety",
+      "eventIds": [
+        "EV-d1e2a7c6d314612c",
+        "EV-b240fb11e65b018e",
+        "EV-5ec22cf9a1fb59d4",
+        "EV-3b7b9040dd2c2a89",
+        "EV-cf176636839e45be",
+        "EV-9c0552732b34f278",
+        "EV-3ff2a155035d01e7",
+        "EV-66338f5fb682617e",
+        "EV-917966af8545a380"
+      ],
+      "entityIds": [
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-efa98ef1e586ac73",
+        "EN-7839fb10a8f14c70",
+        "EN-ae31f30d39374a8b",
+        "EN-ea3bd73e2b506e00",
+        "EN-c857d09db23e6822",
+        "EN-9f15bb7e29e191eb",
+        "EN-8d4321d936320802",
+        "EN-4e7e886400fe6a83"
+      ],
+      "fdeIds": [
+        "FDE-0ee0fe3baa3f1364"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-17",
+      "lastSeen": "2026-07-24"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

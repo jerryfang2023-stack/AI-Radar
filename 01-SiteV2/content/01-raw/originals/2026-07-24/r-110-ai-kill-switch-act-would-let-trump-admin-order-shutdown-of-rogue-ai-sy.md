@@ -1,0 +1,312 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-110
+title: "AI Kill Switch Act would let Trump admin order shutdown of rogue AI systems"
+title_zh: "AI 紧急关闭法案将允许特朗普政府下令关闭失控的AI系统"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://arstechnica.com/tech-policy/2026/07/ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-systems/"
+canonical_url: "https://arstechnica.com/tech-policy/2026/07/ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-systems"
+source_name: "Ars Technica AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-23T19:08:01.000Z"
+collected_at: 2026-07-24T01:26:08.307Z
+language: mixed
+full_text_hash: c740e03e62b970eb
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-110-ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-sy.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-110-ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-sy.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":6047,"paragraph_count":24,"sentence_count":32,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 6047
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c740e03e62b970eb","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 42fbf8734333d212
+content_hash: c740e03e62b970eb
+semantic_hash: c062aa799395dd8b
+duplicate_of: ""
+first_seen_at: "2026-07-23T19:08:01.000Z"
+last_seen_at: 2026-07-24T01:26:08.307Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"supporting commercial context only","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica AI","OpenAI","Anthropic","Microsoft"],"products":["Claude"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["2002","$20 million","5.6","5","5 m","$500 million","$100 million","10"],"quotes":["that can cause catastrophic harm,","The danger of advanced frontier AI models is no longer theoretical,","Powerful AI systems can go rogue","the prevailing market price of cloud computing in the United States.","red-team"]}
+evidence_seed: {"company_actions":["If approved by Congress, the bill would let the Trump administration and future administrations decide when an AI company must block user access, disable or restrict a particular capability, or shut an entire AI system down completely.","The bill would require AI makers to deploy technical capabilities allowing them to throttle or shut down the systems when ordered to do so by the government."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":["Bill would let Homeland Security chief decide when an AI should be shut down.","The bill would amend the Homeland Security Act of 2002 with authority for the Secretary of the Department of Homeland Security to order the suspension or shutdown of AI systems."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"Bill would let Homeland Security chief decide when an AI should be shut down.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"quote","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav A proposed law called the AI Kill Switch Act would let US government officials order the shutdown of AI systems “that can cause catastrophic harm,” the bill’s sponsors said today.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"If approved by Congress, the bill would let the Trump administration and future administrations decide when an AI company must block user access, disable or restrict a particular capability, or shut an entire AI system down completely.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The bill would require AI makers to deploy technical capabilities allowing them to throttle or shut down the systems when ordered to do so by the government.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"The bill would amend the Homeland Security Act of 2002 with authority for the Secretary of the Department of Homeland Security to order the suspension or shutdown of AI systems.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"number","text":"AI developers that refuse to shut systems down could face fines of up $20 million for each day on which a violation occurs.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-24T01:26:08.307Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# AI Kill Switch Act would let Trump admin order shutdown of rogue AI systems
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+A proposed law called the AI Kill Switch Act would let US government officials order the shutdown of AI systems “that can cause catastrophic harm,” the bill’s sponsors said today.
+If approved by Congress, the bill would let the Trump administration and future administrations decide when an AI company must block user access, disable or restrict a particular capability, or shut an entire AI system down completely. The bill would require AI makers to deploy technical capabilities allowing them to throttle or shut down the systems when ordered to do so by the government.
+The bill would amend the Homeland Security Act of 2002 with authority for the Secretary of the Department of Homeland Security to order the suspension or shutdown of AI systems. AI developers that refuse to shut systems down could face fines of up $20 million for each day on which a violation occurs.
+US Reps. Ted Lieu (D-Calif.) and Nathaniel Moran (R-Texas) said the authority is needed because of recent incidents involving OpenAI and Anthropic.
+“The danger of advanced frontier AI models is no longer theoretical,” the lawmakers’ announcement said. “OpenAI’s GPT 5.6 Sol model recently went rogue, escaped its testing sandbox, and hacked its way into Hugging Face . Anthropic’s Mythos 5 and Fable 5 models had cyber hacking capabilities so advanced that the Department of Commerce had to awkwardly use an export law to shut down those systems. This bill addresses the problems caused by these two recent incidents and any future incidents where a deployed AI model goes rogue or has insufficient guardrails.”
+Trump would get more power over AI systems
+The bill could face pushback over the power it would give government officials over AI companies. Anthropic has fought the Trump administration this year over a presidential order directing all federal agencies to stop using Anthropic technology.
+“President Trump will never allow a radical left, woke company to jeopardize our national security by dictating how the greatest and most powerful military in the world operates,” the White House said in March.
+Anthropic sued the US , alleging that Trump and Defense Secretary Pete Hegseth blacklisted the company because it refused to let Claude AI models be used for autonomous warfare and mass surveillance of Americans. A panel of Trump-appointed appeals court judges refused to block the blacklisting, but the case is ongoing.
+We contacted OpenAI and Anthropic about the AI Kill Switch Act today and will update this article if they provide any comment.
+“Powerful AI systems can go rogue”
+Lieu, touting his experience as a computer science major, said that “powerful AI systems can go rogue, behave in extremely dangerous ways, or even resist human intervention. It is imperative that these AI systems have kill switches so we can keep this technology from causing catastrophic harm, and that the federal government has the clear authority and process to shut down rogue AI models.”
+The bill would apply to entities that earn at least $500 million in annual revenue from AI technology, and AI systems that use at least $100 million worth of computing power when calculated by “the prevailing market price of cloud computing in the United States.” The bill text describes several types of scenarios in which the proposed law could be invoked, but has exceptions for “red-team” tests in controlled environments that merely simulate real-world conditions.
+Scenarios covered by the bill text include when an AI pursues a goal that is not the goal intended by the system’s developer or operator, when it sabotages or interferes with a lawful instruction to shut down, and when it conceals a capability or action from monitoring or shutdown mechanisms.
+More ominously, the law would cover “conduct of such technology that is unintended by a developer or operator of such technology and causes the death of not fewer than 10 individuals or economic damages of not less than $100,000,000.” While that is an extreme scenario, the other scenarios described in the bill could presumably be invoked in much less disastrous events.
+When there is a covered incident, the bill “authorizes the Secretary of the Department of Homeland Security, in consultation with the Secretary of Commerce and the Director of National Intelligence, to order a slowdown or shutdown of an AI system that can cause catastrophic harm,” the lawmakers’ announcement said, adding that it would “require incident reporting and preserve forensic records so we actually learn from failures instead of only hearing about them after the fact.”
+The lawmakers’ proposal has support from several nonprofit groups that advocate for legal limits on AI systems.
+“Advanced AI models should never be deployed without a reliable off switch,” said Brad Carson, president of Americans for Responsible Innovation. Carson, a Democrat, is a former congressman and Defense Department official. “The AI Kill Switch Act establishes a commonsense safeguard by requiring leading AI companies to maintain the ability to shut down their models and empowering the federal government to act when a deployed system poses a credible risk of catastrophic harm,” he said.
+Jon Brodkin
+Senior IT Reporter
+Jon Brodkin
+Senior IT Reporter
+Jon is a Senior IT Reporter for Ars Technica. He covers the telecom industry, Federal Communications Commission rulemakings, broadband consumer affairs, court cases, and government regulation of the tech industry.
+60 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+Watch orcas ram a sunfish so hard it explodes
+2.
+Microsoft responds to LG monitors installing McAfee ads on Windows
+3.
+Microsoft brings original Xbox backward compatibility to Windows PCs
+4.
+On the run for 20 years, most-wanted fugitive caught hiding as a biotech exec
+5.
+White House report says Trump can usher in a "new golden age" of science
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+A proposed law called the AI Kill Switch Act would let US government officials order the shutdown of AI systems “that can cause catastrophic harm,” the bill’s sponsors said today.
+If approved by Congress, the bill would let the Trump administration and future administrations decide when an AI company must block user access, disable or restrict a particular capability, or shut an entire AI system down completely. The bill would require AI makers to deploy technical capabilities allowing them to throttle or shut down the systems when ordered to do so by the government.
+The bill would amend the Homeland Security Act of 2002 with authority for the Secretary of the Department of Homeland Security to order the suspension or shutdown of AI systems. AI developers that refuse to shut systems down could face fines of up $20 million for each day on which a violation occurs.
+US Reps. Ted Lieu (D-Calif.) and Nathaniel Moran (R-Texas) said the authority is needed because of recent incidents involving OpenAI and Anthropic.
+“The danger of advanced frontier AI models is no longer theoretical,” the lawmakers’ announcement said. “OpenAI’s GPT 5.6 Sol model recently went rogue, escaped its testing sandbox, and hacked its way into Hugging Face . Anthropic’s Mythos 5 and Fable 5 models had cyber hacking capabilities so advanced that the Department of Commerce had to awkwardly use an export law to shut down those systems. This bill addresses the problems caused by these two recent incidents and any future incidents where a deployed AI model goes rogue or has insufficient guardrails.”
+Trump would get more power over AI systems
+The bill could face pushback over the power it would give government officials over AI companies. Anthropic has fought the Trump administration this year over a presidential order directing all federal agencies to stop using Anthropic technology.
+“President Trump will never allow a radical left, woke company to jeopardize our national security by dictating how the greatest and most powerful military in the world operates,” the White House said in March.
+Anthropic sued the US , alleging that Trump and Defense Secretary Pete Hegseth blacklisted the company because it refused to let Claude AI models be used for autonomous warfare and mass surveillance of Americans. A panel of Trump-appointed appeals court judges refused to block the blacklisting, but the case is ongoing.
+We contacted OpenAI and Anthropic about the AI Kill Switch Act today and will update this article if they provide any comment.
+“Powerful AI systems can go rogue”
+Lieu, touting his experience as a computer science major, said that “powerful AI systems can go rogue, behave in extremely dangerous ways, or even resist human intervention. It is imperative that these AI systems have kill switches so we can keep this technology from causing catastrophic harm, and that the federal government has the clear authority and process to shut down rogue AI models.”
+The bill would apply to entities that earn at least $500 million in annual revenue from AI technology, and AI systems that use at least $100 million worth of computing power when calculated by “the prevailing market price of cloud computing in the United States.” The bill text describes several types of scenarios in which the proposed law could be invoked, but has exceptions for “red-team” tests in controlled environments that merely simulate real-world conditions.
+Scenarios covered by the bill text include when an AI pursues a goal that is not the goal intended by the system’s developer or operator, when it sabotages or interferes with a lawful instruction to shut down, and when it conceals a capability or action from monitoring or shutdown mechanisms.
+More ominously, the law would cover “conduct of such technology that is unintended by a developer or operator of such technology and causes the death of not fewer than 10 individuals or economic damages of not less than $100,000,000.” While that is an extreme scenario, the other scenarios described in the bill could presumably be invoked in much less disastrous events.
+When there is a covered incident, the bill “authorizes the Secretary of the Department of Homeland Security, in consultation with the Secretary of Commerce and the Director of National Intelligence, to order a slowdown or shutdown of an AI system that can cause catastrophic harm,” the lawmakers’ announcement said, adding that it would “require incident reporting and preserve forensic records so we actually learn from failures instead of only hearing about them after the fact.”
+The lawmakers’ proposal has support from several nonprofit groups that advocate for legal limits on AI systems.
+“Advanced AI models should never be deployed without a reliable off switch,” said Brad Carson, president of Americans for Responsible Innovation. Carson, a Democrat, is a former congressman and Defense Department official. “The AI Kill Switch Act establishes a commonsense safeguard by requiring leading AI companies to maintain the ability to shut down their models and empowering the federal government to act when a deployed system poses a credible risk of catastrophic harm,” he said.
+Jon Brodkin
+Senior IT Reporter
+Jon Brodkin
+Senior IT Reporter
+Jon is a Senior IT Reporter for Ars Technica. He covers the telecom industry, Federal Communications Commission rulemakings, broadband consumer affairs, court cases, and government regulation of the tech industry.
+60 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+Next story
+1.
+Watch orcas ram a sunfish so hard it explodes
+2.
+Microsoft responds to LG monitors installing McAfee ads on Windows
+3.
+Microsoft brings original Xbox backward compatibility to Windows PCs
+4.
+On the run for 20 years, most-wanted fugitive caught hiding as a biotech exec
+5.
+White House report says Trump can usher in a "new golden age" of science
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":6047,"paragraph_count":24,"sentence_count":32,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   Bill would let Homeland Security chief decide when an AI should be shut down.
+
+2. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav A proposed law called the AI Kill Switch Act would let US government officials order the shutdown of AI systems “that can cause catastrophic harm,” the bill’s sponsors said today.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   If approved by Congress, the bill would let the Trump administration and future administrations decide when an AI company must block user access, disable or restrict a particular capability, or shut an entire AI system down completely.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The bill would require AI makers to deploy technical capabilities allowing them to throttle or shut down the systems when ordered to do so by the government.
+
+5. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   The bill would amend the Homeland Security Act of 2002 with authority for the Secretary of the Department of Homeland Security to order the suspension or shutdown of AI systems.
+
+6. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   AI developers that refuse to shut systems down could face fines of up $20 million for each day on which a violation occurs.
+
+## business_elements
+
+- companies: Ars Technica AI, OpenAI, Anthropic, Microsoft
+- products: Claude
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: 2002, $20 million, 5.6, 5, 5 m, $500 million, $100 million, 10
+- quotes: that can cause catastrophic harm, / The danger of advanced frontier AI models is no longer theoretical, / Powerful AI systems can go rogue / the prevailing market price of cloud computing in the United States. / red-team
+
+## evidence_seed
+
+- company_actions: If approved by Congress, the bill would let the Trump administration and future administrations decide when an AI company must block user access, disable or restrict a particular capability, or shut an entire AI system down completely. / The bill would require AI makers to deploy technical capabilities allowing them to throttle or shut down the systems when ordered to do so by the government.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: Bill would let Homeland Security chief decide when an AI should be shut down. / The bill would amend the Homeland Security Act of 2002 with authority for the Secretary of the Department of Homeland Security to order the suspension or shutdown of AI systems.
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: supporting commercial context only
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Bill would let Homeland Security chief decide when an AI should be shut down.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

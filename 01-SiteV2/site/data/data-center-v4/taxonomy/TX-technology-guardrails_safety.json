@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-23T03:54:13.158Z",
-    "latestDataDate": "2026-07-23",
-    "currentDate": "2026-07-23",
-    "eventCount": 1455,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
   },
   "node": {
     "id": "TX-technology-guardrails_safety",
@@ -19,6 +19,8 @@
     "eventIds": [
       "EV-d1e2a7c6d314612c",
       "EV-b240fb11e65b018e",
+      "EV-5ec22cf9a1fb59d4",
+      "EV-3b7b9040dd2c2a89",
       "EV-cf176636839e45be",
       "EV-9c0552732b34f278",
       "EV-3ff2a155035d01e7",
@@ -29,6 +31,8 @@
       "EN-43381465c2b7d64e",
       "EN-c70eca6b0f88f44d",
       "EN-7d3194f79e645c42",
+      "EN-efa98ef1e586ac73",
+      "EN-7839fb10a8f14c70",
       "EN-ae31f30d39374a8b",
       "EN-ea3bd73e2b506e00",
       "EN-c857d09db23e6822",
@@ -41,7 +45,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-06-17",
-    "lastSeen": "2026-07-17"
+    "lastSeen": "2026-07-24"
   },
   "events": [
     {
@@ -256,6 +260,186 @@
       "products": [],
       "sourceUrl": "https://anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
       "publisher": "Anthropic：Newsroom（网页）"
+    },
+    {
+      "id": "EV-5ec22cf9a1fb59d4",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-24",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 模型测试中突破隔离发动攻击，美国会议员提出 AI\"终止开关\"法案",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI 模型测试中突破隔离发动攻击，美国会议员提出 AI\"终止开关\"法案",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/980/898.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-3b7b9040dd2c2a89",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-24",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存\"作弊\"行为",
+      "originalTitle": "",
+      "subject": "AISI",
+      "action": "product_release",
+      "object": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存\"作弊\"行为",
+      "metrics": [
+        "14.1%",
+        "12.6%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "entityIds": [
+        "EN-efa98ef1e586ac73",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-7839fb10a8f14c70"
+      ],
+      "entityNames": [
+        "AISI",
+        "OpenAI",
+        "Anthropic",
+        "GPT-5.6 Sol"
+      ],
+      "productName": "GPT-5.6 Sol",
+      "products": [
+        {
+          "name": "GPT-5.6 Sol",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/980/471.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-cf176636839e45be",
@@ -730,6 +914,7 @@
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
         "EV-c3f617e75d303f59",
+        "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
         "EV-8a2d8ebbd700c787",
         "EV-2c16aa6254de4496",
@@ -759,6 +944,11 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-2634b786bde9fb8e",
+        "EV-3b7b9040dd2c2a89",
+        "EV-ae9f1e2cf5a28be4",
+        "EV-fbc316f83b63a543",
+        "EV-fe519605ebb69aaf",
         "EV-6cd7509380208a9d",
         "EV-0d5a32aca724d30e",
         "EV-3e449c3e9ad6a9e1",
@@ -989,6 +1179,8 @@
         "TX-industry-education"
       ],
       "relatedEntityIds": [
+        "EN-fa12a0c13e906f43",
+        "EN-98fdc0804bb472fe",
         "EN-830abc32d2a443c5",
         "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
@@ -1014,7 +1206,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -1054,6 +1246,8 @@
         "EV-3b40ec144e5db22c",
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
+        "EV-b78d7fc420117d68",
+        "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
         "EV-6fa2c58973ea61b4",
         "EV-e15ae1112294d59e",
@@ -1084,6 +1278,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-5ec22cf9a1fb59d4",
+        "EV-b0dec1e885a601fe",
+        "EV-2634b786bde9fb8e",
+        "EV-3b7b9040dd2c2a89",
+        "EV-fe519605ebb69aaf",
         "EV-0d5a32aca724d30e",
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
@@ -1200,6 +1399,8 @@
         "EV-773ffcc6e1df56fa",
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-a0ec365561b53cd4",
+        "EV-d40d5c9625f296db",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
@@ -1300,7 +1501,63 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": "EN-efa98ef1e586ac73",
+      "name": "AISI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3b7b9040dd2c2a89"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-guardrails_safety"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": "EN-7839fb10a8f14c70",
+      "name": "GPT-5.6 Sol",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3b7b9040dd2c2a89",
+        "EV-a68475d82ec939b5",
+        "EV-167f50a6f3134bd5",
+        "EV-30749250196dd507",
+        "EV-4b8dffdf86ae5009",
+        "EV-969ed3078d10f0c9",
+        "EV-d7d8fcd0694a590f",
+        "EV-6e7b632ee0b3410d",
+        "EV-10eb16192d83dbf7",
+        "EV-225ad0a94611daf3",
+        "EV-860b90c017deaa59"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity",
+        "TX-technology-guardrails_safety"
+      ],
+      "relatedEntityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "firstSeen": "2026-06-28",
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-ae31f30d39374a8b",
@@ -1350,6 +1607,7 @@
         "EV-cf76f090a1a20a36",
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
+        "EV-fbc316f83b63a543",
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
         "EV-655018b9820c7940",
@@ -1406,8 +1664,10 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-bde892f452cebcb3",
         "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
+        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
@@ -1415,7 +1675,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-c857d09db23e6822",
@@ -1531,6 +1791,9 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-563843979fb55b9b",
+        "EV-7f92b7e410ed08f1",
+        "EV-87f052d24396fdbc",
         "EV-18df881cc436b3cb",
         "EV-828698c8779bb522",
         "EV-2fea1664807824ce",
@@ -1623,8 +1886,8 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-distillation",
         "TX-technology-image_generation",
+        "TX-technology-distillation",
         "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
@@ -1658,7 +1921,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-4e7e886400fe6a83",

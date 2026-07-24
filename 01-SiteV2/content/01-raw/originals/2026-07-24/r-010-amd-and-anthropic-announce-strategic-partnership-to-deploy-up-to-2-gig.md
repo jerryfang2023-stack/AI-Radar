@@ -1,0 +1,286 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-010
+title: "AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs"
+title_zh: "AMD 与 Anthropic 宣布战略合作，部署高达 2 吉瓦的 AMD Instinct MI450 系列 GPU"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.globenewswire.com/news-release/2026/07/22/3331418/0/en/AMD-and-Anthropic-Announce-Strategic-Partnership-to-Deploy-Up-to-2-Gigawatts-of-AMD-Instinct-MI450-Series-GPUs.html"
+canonical_url: "https://globenewswire.com/news-release/2026/07/22/3331418/0/en/AMD-and-Anthropic-Announce-Strategic-Partnership-to-Deploy-Up-to-2-Gigawatts-of-AMD-Instinct-MI450-Series-GPUs.html"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "ai_hardware_original"
+search_path_label: "AI hardware original-source path"
+author: ""
+published_at: "2026-07-22T00:00:00.000Z"
+collected_at: 2026-07-24T01:25:15.140Z
+language: mixed
+full_text_hash: 8a0b69f468b9cc5d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-010-amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gig.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-010-amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gig.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":9963,"paragraph_count":28,"sentence_count":37,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 9963
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8a0b69f468b9cc5d","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e80ea62fd8376b0c
+content_hash: 8a0b69f468b9cc5d
+semantic_hash: 0efa26ea7be83453
+duplicate_of: ""
+first_seen_at: "2026-07-22T00:00:00.000Z"
+last_seen_at: 2026-07-24T01:25:15.140Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","ai_hardware_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Anthropic","Microsoft"],"products":["Claude"],"people":[],"industries":["法律 / 法务","制造 / 工业","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2","450","22","2026","09","00","2027","$5 billion"],"quotes":["We are thrilled to deepen our partnership with Anthropic and deploy AMD Helios at gigawatt scale,","Access to compute is central to keeping Claude at the frontier and meeting demand from our customers,","expects,","believes,","intends,"]}
+evidence_seed: {"company_actions":["AMD and Anthropic Announce Strategic Partnership to Deploy # AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs July 22, 2026 09:00 ET | Source: Advanced Micro Devices, Inc. Follow Advanced Micro Devices, Inc. --- Share --- News Highl... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original","Accessibility: Skip TopNav AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs July 22, 2026 09:00 ET | Source: Advanced Micro Devices, Inc.","Advanced Micro Devices, Inc."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"AMD and Anthropic Announce Strategic Partnership to Deploy # AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs July 22, 2026 09:00 ET | Source: Advanced Micro Devices, Inc. Follow Advanced Micro Devices, Inc. --- Share --- News Highl... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Accessibility: Skip TopNav AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs July 22, 2026 09:00 ET | Source: Advanced Micro Devices, Inc.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Advanced Micro Devices, Inc.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"News Highlights Anthropic to deploy up to 2 gigawatts of MI450 Series GPUs in AMD Helios rack-scale solutions, with deployment of the first gigawatt beginning in the first half of 2027 The companies will collaborate to use Claude to optimize workloads for AMD Instinct GPUs and accelerate AMD ROCm development, and AMD will broadly adopt Claude across its engineering and product development teams.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"AMD has committed to make a strategic equity investment of up to $5 billion in Anthropic.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"SANTA CLARA, Calif.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-24T01:25:15.140Z
+theme: ai-hardware-scenario-service-signal
+keyword_group: ai-hardware-scenario-service-signal
+copyright_note: local research archive only
+---
+
+# AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs
+
+## clean_text
+
+Accessibility: Skip TopNav
+AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs
+July 22, 2026 09:00 ET
+| Source:
+Advanced Micro Devices, Inc.
+Advanced Micro Devices, Inc.
+News Highlights
+Anthropic to deploy up to 2 gigawatts of MI450 Series GPUs in AMD Helios rack-scale solutions, with deployment of the first gigawatt beginning in the first half of 2027
+The companies will collaborate to use Claude to optimize workloads for AMD Instinct GPUs and accelerate AMD ROCm development, and AMD will broadly adopt Claude across its engineering and product development teams.
+AMD has committed to make a strategic equity investment of up to $5 billion in Anthropic.
+SANTA CLARA, Calif., July 22, 2026 (GLOBE NEWSWIRE) -- AMD (NASDAQ: AMD) and Anthropic today announced a strategic partnership to deploy up to 2 gigawatts of AMD Instinct MI450 Series GPUs in AMD Helios rack-scale solutions, with deployment of the first gigawatt beginning in the first half of 2027.
+The extraordinary pace of AI adoption is driving rapid growth in demand for training and inference capacity. Anthropic is scaling its compute infrastructure to serve strong and growing demand for Claude, and its adoption of AMD Helios at gigawatt scale represents a major expansion of AMD’s position at the center of the global AI infrastructure buildout.
+Anthropic will deploy AMD Helios rack-scale solutions featuring AMD Instinct™ MI455X GPUs, part of the AMD Instinct MI450 Series, together with AMD EPYC™ “Venice” CPUs, AMD Pensando™ networking and ROCm™ software. Purpose-built for next-generation AI training and inference, Helios delivers the performance, efficiency and scale required for the most demanding AI workloads. This deployment builds on Anthropic’s existing use of AMD Instinct MI355X GPUs.
+In addition, AMD and Anthropic are launching a multi-year engineering collaboration to use Claude to accelerate AMD software development. Specifically, the teams will use Claude to optimize workloads for AMD Instinct GPUs and accelerate ROCm software development. AMD will also broadly adopt Claude across its engineering and product development teams.
+AMD has committed to make a strategic equity investment of up to $5 billion in Anthropic in the future.
+“We are thrilled to deepen our partnership with Anthropic and deploy AMD Helios at gigawatt scale,” said Dr. Lisa Su, chair and CEO, AMD. “This collaboration brings together Anthropic’s leadership in frontier AI with the full strength of AMD high-performance computing. Together, we will accelerate AI adoption at scale and establish Helios as a major platform for the next generation of AI infrastructure.”
+“Access to compute is central to keeping Claude at the frontier and meeting demand from our customers,” said Tom Brown, co-founder and chief compute officer, Anthropic. “By partnering with AMD across the stack, we are securing the capacity we need and optimizing it for training and serving Claude. Running across a diversified range of hardware lets us map the right workloads to the right hardware.”
+Today’s announcement marks a major milestone in the partnership between AMD and Anthropic. By combining gigawatt-scale deployment and deep engineering collaboration, the companies are building a long-term foundation to accelerate the development and deployment of next-generation AI infrastructure.
+About AMD
+AMD (NASDAQ: AMD) drives innovation in high-performance and AI computing to solve the world’s most important challenges. Today, AMD technology powers billions of experiences across cloud and AI infrastructure, embedded systems, AI PCs and gaming. With a broad portfolio of AI-optimized CPUs, GPUs, networking and software, AMD delivers full-stack AI solutions that provide the performance and scalability needed for a new era of intelligent computing. Learn more at www.amd.com.
+Cautionary Statement
+This press release contains forward-looking statements concerning Advanced Micro Devices, Inc. (AMD) such as the anticipated benefits of the strategic partnership with Anthropic, including accelerating AI development and adoption, establishing AMD Helios as a major platform for the next generation of AI infrastructure and expanding AMD’s position in the global AI infrastructure buildout; the deployment of up to two gigawatts of AMD Instinct™ GPUs in AMD Helios rack-scale solutions and timing thereof; the rapid growth in demand for training and inference capacity; the multi-year engineering collaboration between the parties; and AMD’s commitment to making a strategic equity investment in Anthropic, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995. Forward-looking statements are commonly identified by words such as "would," "may," "expects," "believes," "plans," "intends," "projects" and other terms with similar meaning. Investors are cautioned that the forward-looking statements in this press release are based on current beliefs, assumptions and expectations, speak only as of the date of this press release and involve risks and uncertainties that could cause actual results to differ materially from current expectations. Such statements are subject to certain known and unknown risks and uncertainties, many of which are difficult to predict and are generally beyond AMD’s control, that could cause actual results and other future events to differ materially from those expressed in, or implied or projected by, the forward-looking information and statements. Material factors that could cause actual results to differ materially from current expectations include, without limitation, the following: impact of government actions and regulations such as export regulations, import tariffs, trade protection measures, and licensing requirements; competitive markets in which AMD’s products are sold; the cyclical nature of the semiconductor industry; market conditions of the industries in which AMD products are sold; AMD's ability to introduce products on a timely basis with expected features and performance levels; loss of a significant customer; economic and market uncertainty; quarterly and seasonal sales patterns; AMD's ability to adequately protect its technology or other intellectual property; unfavorable currency exchange rate fluctuations; ability of third party manufacturers to manufacture AMD's products on a timely basis in sufficient quantities and using competitive technologies; availability of essential equipment, materials, components (such as memory supply), substrates or manufacturing processes; ability to achieve expected manufacturing yields for AMD’s products; AMD's ability to generate revenue from its semi-custom SoC products; potential security vulnerabilities; potential security incidents including IT outages, data loss, data breaches and cyberattacks; uncertainties involving the ordering and shipment of AMD’s products; AMD’s reliance on third-party intellectual property to design and introduce new products; AMD's reliance on third-party companies for design, manufacture and supply of motherboards, software, memory and other computer platform components; AMD's reliance on Microsoft and other software vendors' support to design and develop software to run on AMD’s products; AMD’s reliance on third-party distributors and add-in-board partners; impact of modification or interruption of AMD’s internal business processes and information systems; compatibility of AMD’s products with some or all industry-standard software and hardware; costs related to defective products; failure to maintain an efficient supply chain as customer demand changes; AMD's ability to rely on third party supply-chain logistics functions; AMD’s ability to effectively control sales of its products on the gray market; impact of climate change on AMD’s business; AMD’s ability to realize its deferred tax assets; potential tax liabilities; current and future claims and litigation; impact of environmental laws, conflict minerals related provisions and other laws or regulations; evolving expectations from governments, investors, customers and other stakeholders regarding corporate responsibility matters; issues related to the responsible use of AI; restrictions imposed by agreements governing AMD’s notes, the guarantees of Xilinx’s notes and the revolving credit agreement; AMD’s ability to satisfy financial obligations under guarantees, leases and other commercial commitments; impact of acquisitions, joint ventures and/or investments on AMD’s business and AMD’s ability to integrate acquired businesses; impact of any impairment of the combined company’s assets; political, legal and economic risks and natural disasters; future impairments of technology license purchases; AMD’s ability to attract and retain key employees; and AMD’s stock price volatility. Investors are urged to review in detail the risks and uncertainties in AMD’s Securities and Exchange Commission filings, including but not limited to AMD’s most recent reports on Forms 10-K and 10-Q.
+Contacts:
+Phil Hughes
+AMD Communications
+512-865-9697
+phil.hughes@amd.com
+Investor Contact
+Liz Stine
+AMD Investor Relations
+720-652-3965
+liz.stine@amd.com
+GlobeNewswire
+Recommended Reading
+July 23, 2026 14:30 ET
+Source: Advanced Micro Devices, Inc.
+AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era
+News Highlights At Advancing AI 2026, AMD launches 6th Gen AMD EPYC™ CPUs, AMD Instinct™ MI400 Series GPUs, AMD Helios™ AI rackscale solutions, AMD Ryzen™ AI Embedded X100 processors and the AMD...
+Read More
+July 23, 2026 13:45 ET
+Source: Advanced Micro Devices, Inc.
+AMD and Cerebras Announce Industry-Leading Ultra-Low-Latency and High Throughput AI Inference Solution
+News Highlights AMD and Cerebras are collaborating to advance a workload-optimized approach to ultra-low-latency AI inference infrastructure. AMD Helios™ and the Cerebras Wafer-Scale Engine...
+Read More
+
+## full_text
+
+Accessibility: Skip TopNav
+AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs
+July 22, 2026 09:00 ET
+| Source:
+Advanced Micro Devices, Inc.
+Advanced Micro Devices, Inc.
+News Highlights
+Anthropic to deploy up to 2 gigawatts of MI450 Series GPUs in AMD Helios rack-scale solutions, with deployment of the first gigawatt beginning in the first half of 2027
+The companies will collaborate to use Claude to optimize workloads for AMD Instinct GPUs and accelerate AMD ROCm development, and AMD will broadly adopt Claude across its engineering and product development teams.
+AMD has committed to make a strategic equity investment of up to $5 billion in Anthropic.
+SANTA CLARA, Calif., July 22, 2026 (GLOBE NEWSWIRE) -- AMD (NASDAQ: AMD) and Anthropic today announced a strategic partnership to deploy up to 2 gigawatts of AMD Instinct MI450 Series GPUs in AMD Helios rack-scale solutions, with deployment of the first gigawatt beginning in the first half of 2027.
+The extraordinary pace of AI adoption is driving rapid growth in demand for training and inference capacity. Anthropic is scaling its compute infrastructure to serve strong and growing demand for Claude, and its adoption of AMD Helios at gigawatt scale represents a major expansion of AMD’s position at the center of the global AI infrastructure buildout.
+Anthropic will deploy AMD Helios rack-scale solutions featuring AMD Instinct™ MI455X GPUs, part of the AMD Instinct MI450 Series, together with AMD EPYC™ “Venice” CPUs, AMD Pensando™ networking and ROCm™ software. Purpose-built for next-generation AI training and inference, Helios delivers the performance, efficiency and scale required for the most demanding AI workloads. This deployment builds on Anthropic’s existing use of AMD Instinct MI355X GPUs.
+In addition, AMD and Anthropic are launching a multi-year engineering collaboration to use Claude to accelerate AMD software development. Specifically, the teams will use Claude to optimize workloads for AMD Instinct GPUs and accelerate ROCm software development. AMD will also broadly adopt Claude across its engineering and product development teams.
+AMD has committed to make a strategic equity investment of up to $5 billion in Anthropic in the future.
+“We are thrilled to deepen our partnership with Anthropic and deploy AMD Helios at gigawatt scale,” said Dr. Lisa Su, chair and CEO, AMD. “This collaboration brings together Anthropic’s leadership in frontier AI with the full strength of AMD high-performance computing. Together, we will accelerate AI adoption at scale and establish Helios as a major platform for the next generation of AI infrastructure.”
+“Access to compute is central to keeping Claude at the frontier and meeting demand from our customers,” said Tom Brown, co-founder and chief compute officer, Anthropic. “By partnering with AMD across the stack, we are securing the capacity we need and optimizing it for training and serving Claude. Running across a diversified range of hardware lets us map the right workloads to the right hardware.”
+Today’s announcement marks a major milestone in the partnership between AMD and Anthropic. By combining gigawatt-scale deployment and deep engineering collaboration, the companies are building a long-term foundation to accelerate the development and deployment of next-generation AI infrastructure.
+About AMD
+AMD (NASDAQ: AMD) drives innovation in high-performance and AI computing to solve the world’s most important challenges. Today, AMD technology powers billions of experiences across cloud and AI infrastructure, embedded systems, AI PCs and gaming. With a broad portfolio of AI-optimized CPUs, GPUs, networking and software, AMD delivers full-stack AI solutions that provide the performance and scalability needed for a new era of intelligent computing. Learn more at www.amd.com.
+Cautionary Statement
+This press release contains forward-looking statements concerning Advanced Micro Devices, Inc. (AMD) such as the anticipated benefits of the strategic partnership with Anthropic, including accelerating AI development and adoption, establishing AMD Helios as a major platform for the next generation of AI infrastructure and expanding AMD’s position in the global AI infrastructure buildout; the deployment of up to two gigawatts of AMD Instinct™ GPUs in AMD Helios rack-scale solutions and timing thereof; the rapid growth in demand for training and inference capacity; the multi-year engineering collaboration between the parties; and AMD’s commitment to making a strategic equity investment in Anthropic, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995. Forward-looking statements are commonly identified by words such as "would," "may," "expects," "believes," "plans," "intends," "projects" and other terms with similar meaning. Investors are cautioned that the forward-looking statements in this press release are based on current beliefs, assumptions and expectations, speak only as of the date of this press release and involve risks and uncertainties that could cause actual results to differ materially from current expectations. Such statements are subject to certain known and unknown risks and uncertainties, many of which are difficult to predict and are generally beyond AMD’s control, that could cause actual results and other future events to differ materially from those expressed in, or implied or projected by, the forward-looking information and statements. Material factors that could cause actual results to differ materially from current expectations include, without limitation, the following: impact of government actions and regulations such as export regulations, import tariffs, trade protection measures, and licensing requirements; competitive markets in which AMD’s products are sold; the cyclical nature of the semiconductor industry; market conditions of the industries in which AMD products are sold; AMD's ability to introduce products on a timely basis with expected features and performance levels; loss of a significant customer; economic and market uncertainty; quarterly and seasonal sales patterns; AMD's ability to adequately protect its technology or other intellectual property; unfavorable currency exchange rate fluctuations; ability of third party manufacturers to manufacture AMD's products on a timely basis in sufficient quantities and using competitive technologies; availability of essential equipment, materials, components (such as memory supply), substrates or manufacturing processes; ability to achieve expected manufacturing yields for AMD’s products; AMD's ability to generate revenue from its semi-custom SoC products; potential security vulnerabilities; potential security incidents including IT outages, data loss, data breaches and cyberattacks; uncertainties involving the ordering and shipment of AMD’s products; AMD’s reliance on third-party intellectual property to design and introduce new products; AMD's reliance on third-party companies for design, manufacture and supply of motherboards, software, memory and other computer platform components; AMD's reliance on Microsoft and other software vendors' support to design and develop software to run on AMD’s products; AMD’s reliance on third-party distributors and add-in-board partners; impact of modification or interruption of AMD’s internal business processes and information systems; compatibility of AMD’s products with some or all industry-standard software and hardware; costs related to defective products; failure to maintain an efficient supply chain as customer demand changes; AMD's ability to rely on third party supply-chain logistics functions; AMD’s ability to effectively control sales of its products on the gray market; impact of climate change on AMD’s business; AMD’s ability to realize its deferred tax assets; potential tax liabilities; current and future claims and litigation; impact of environmental laws, conflict minerals related provisions and other laws or regulations; evolving expectations from governments, investors, customers and other stakeholders regarding corporate responsibility matters; issues related to the responsible use of AI; restrictions imposed by agreements governing AMD’s notes, the guarantees of Xilinx’s notes and the revolving credit agreement; AMD’s ability to satisfy financial obligations under guarantees, leases and other commercial commitments; impact of acquisitions, joint ventures and/or investments on AMD’s business and AMD’s ability to integrate acquired businesses; impact of any impairment of the combined company’s assets; political, legal and economic risks and natural disasters; future impairments of technology license purchases; AMD’s ability to attract and retain key employees; and AMD’s stock price volatility. Investors are urged to review in detail the risks and uncertainties in AMD’s Securities and Exchange Commission filings, including but not limited to AMD’s most recent reports on Forms 10-K and 10-Q.
+Contacts:
+Phil Hughes
+AMD Communications
+512-865-9697
+phil.hughes@amd.com
+Investor Contact
+Liz Stine
+AMD Investor Relations
+720-652-3965
+liz.stine@amd.com
+GlobeNewswire
+Recommended Reading
+July 23, 2026 14:30 ET
+Source: Advanced Micro Devices, Inc.
+AAI 2026: AMD Delivers Full-Stack Compute for the Agentic AI Era
+News Highlights At Advancing AI 2026, AMD launches 6th Gen AMD EPYC™ CPUs, AMD Instinct™ MI400 Series GPUs, AMD Helios™ AI rackscale solutions, AMD Ryzen™ AI Embedded X100 processors and the AMD...
+Read More
+July 23, 2026 13:45 ET
+Source: Advanced Micro Devices, Inc.
+AMD and Cerebras Announce Industry-Leading Ultra-Low-Latency and High Throughput AI Inference Solution
+News Highlights AMD and Cerebras are collaborating to advance a workload-optimized approach to ultra-low-latency AI inference infrastructure. AMD Helios™ and the Cerebras Wafer-Scale Engine...
+Read More
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":9963,"paragraph_count":28,"sentence_count":37,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   AMD and Anthropic Announce Strategic Partnership to Deploy # AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs July 22, 2026 09:00 ET | Source: Advanced Micro Devices, Inc. Follow Advanced Micro Devices, Inc. --- Share --- News Highl... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Accessibility: Skip TopNav AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs July 22, 2026 09:00 ET | Source: Advanced Micro Devices, Inc.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Advanced Micro Devices, Inc.
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   News Highlights Anthropic to deploy up to 2 gigawatts of MI450 Series GPUs in AMD Helios rack-scale solutions, with deployment of the first gigawatt beginning in the first half of 2027 The companies will collaborate to use Claude to optimize workloads for AMD Instinct GPUs and accelerate AMD ROCm development, and AMD will broadly adopt Claude across its engineering and product development teams.
+
+5. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   AMD has committed to make a strategic equity investment of up to $5 billion in Anthropic.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   SANTA CLARA, Calif.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Anthropic, Microsoft
+- products: Claude
+- people: 暂无公开信息
+- industries: 法律 / 法务, 制造 / 工业, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2, 450, 22, 2026, 09, 00, 2027, $5 billion
+- quotes: We are thrilled to deepen our partnership with Anthropic and deploy AMD Helios at gigawatt scale, / Access to compute is central to keeping Claude at the frontier and meeting demand from our customers, / expects, / believes, / intends,
+
+## evidence_seed
+
+- company_actions: AMD and Anthropic Announce Strategic Partnership to Deploy # AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs July 22, 2026 09:00 ET | Source: Advanced Micro Devices, Inc. Follow Advanced Micro Devices, Inc. --- Share --- News Highl... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original / Accessibility: Skip TopNav AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs July 22, 2026 09:00 ET | Source: Advanced Micro Devices, Inc. / Advanced Micro Devices, Inc.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,ai_hardware_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AMD and Anthropic Announce Strategic Partnership to Deploy # AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs July 22, 2026 09:00 ET | Source: Advanced Micro Devices, Inc. Follow Advanced Micro Devices, Inc. --- Share --- News Highl... / query=AI server customer deployment enterprise inference / intent=find_customer_case / path=ai_hardware_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

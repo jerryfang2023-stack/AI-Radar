@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-23T03:54:13.158Z",
-    "latestDataDate": "2026-07-23",
-    "currentDate": "2026-07-23",
-    "eventCount": 1455,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
   },
   "entity": {
     "id": "EN-d9352ce019e77ab3",
@@ -21,6 +21,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-fe519605ebb69aaf",
       "EV-7c836c34e7cf36ee",
       "EV-ae1e2769aff82965",
       "EV-9eb3693cc65fbca9",
@@ -28,17 +29,20 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-use_case-cybersecurity"
+      "TX-technology-long_context",
+      "TX-use_case-cybersecurity",
+      "TX-technology-open_weights"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-08",
-    "lastSeen": "2026-07-22",
+    "lastSeen": "2026-07-24",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-fe519605ebb69aaf",
         "EV-7c836c34e7cf36ee",
         "EV-ae1e2769aff82965",
         "EV-9eb3693cc65fbca9"
@@ -50,6 +54,43 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-fe519605ebb69aaf",
+        "dataDate": "2026-07-24",
+        "date": "2026-07-23",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "智谱 GLM-5.2 开源模型助 Hugging Face 完成安全事件取证分析",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "long_context",
+            "name": "长上下文"
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-c70eca6b0f88f44d",
+          "EN-d9352ce019e77ab3",
+          "EN-bc1fc5140040180e"
+        ]
+      },
       {
         "id": "EV-7c836c34e7cf36ee",
         "dataDate": "2026-07-22",
@@ -132,6 +173,65 @@
   "relationships": [],
   "taxonomyNodes": [
     {
+      "id": "TX-technology-long_context",
+      "name": "长上下文",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "long_context",
+      "eventIds": [
+        "EV-80e54c9a390da293",
+        "EV-fd21441fb6e143c3",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-86ab9c2f1416e9d8",
+        "EV-a5efa57f3f744425",
+        "EV-653cbce2ccc79f8b",
+        "EV-70e3f88cb06a856c",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-70efbfcaadcdb259",
+        "EV-0c06df62702d26ab",
+        "EV-534dc9add1c0cc35",
+        "EV-57f083a39393d841",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-7df09a7717ef2feb",
+        "EN-3a7bd3e2360a3d29",
+        "EN-50537dab76505dfc",
+        "EN-b5251b35f15bedc4",
+        "EN-7d3194f79e645c42",
+        "EN-d9352ce019e77ab3",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-6f7ac1823da81d2e",
+        "EN-8f71c4871a160172",
+        "EN-4546b5bdff2ea8ed",
+        "EN-9c8ae69b84f21a2e",
+        "EN-3309b3b14807f39a",
+        "EN-61a405a731497229",
+        "EN-f3cfedbe8428c9f7",
+        "EN-c04bd5ebd10ab696",
+        "EN-50ba7ff15827787b",
+        "EN-78624f0a98e78301",
+        "EN-4b078b39d2fcacc7",
+        "EN-7dd7122ad9bf240f",
+        "EN-95b0632f1b292fa7",
+        "EN-047364b9be67f665",
+        "EN-1d79127e9d90e89b",
+        "EN-bc77259c5d2eb341",
+        "EN-52fc33ae4d101a5d",
+        "EN-3153ebda601cdb79",
+        "EN-c23eb5fae3cdd763",
+        "EN-c608c4787821de1b"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-12",
+      "lastSeen": "2026-07-24"
+    },
+    {
       "id": "TX-use_case-cybersecurity",
       "name": "网络安全",
       "nodeType": "use_case",
@@ -143,6 +243,7 @@
         "EV-c85011ca6a0389bf",
         "EV-8be4676475a8d465",
         "EV-0e84a2f49d765ce3",
+        "EV-d4c9326c53dd927a",
         "EV-c81cb21337a9bb98",
         "EV-9dab7fa55702e561",
         "EV-53f4f2a34b3ce1b4",
@@ -187,6 +288,7 @@
         "EN-b5738c169b693bee",
         "EN-2dc010636b9dce91",
         "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
         "EN-96eebba49dbbf422",
         "EN-a23572554f6c861e",
         "EN-8652f6cd9088f1fa",
@@ -196,7 +298,6 @@
         "EN-4094a2b7125c7564",
         "EN-cbc62794911ff31b",
         "EN-e73b79a0b10f8cdb",
-        "EN-7d3194f79e645c42",
         "EN-2ca3f7d58fdda0f5",
         "EN-02be787a1aacea06",
         "EN-62ce3c1a5a893a2c",
@@ -229,12 +330,70 @@
         "EN-842a7da99bd249d4"
       ],
       "fdeIds": [
+        "FDE-b44bbcf1ee8caad0",
         "FDE-f34ca7b021eae900",
         "FDE-4edaa833d41055bd"
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
+    },
+    {
+      "id": "TX-technology-open_weights",
+      "name": "开放权重",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "open_weights",
+      "eventIds": [
+        "EV-1abf0d076d30ec6d",
+        "EV-fe519605ebb69aaf",
+        "EV-0d5a32aca724d30e",
+        "EV-2fea1664807824ce",
+        "EV-b84035029a63e52e",
+        "EV-3028dfadf94c8f4c",
+        "EV-a06011da69abcc3d",
+        "EV-e2da1aafabb3e09c",
+        "EV-2258329f33d413cf",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-d9352ce019e77ab3",
+        "EN-bc1fc5140040180e",
+        "EN-16dc8ea1cf4807b0",
+        "EN-b5251b35f15bedc4",
+        "EN-047364b9be67f665",
+        "EN-cbc62794911ff31b",
+        "EN-10a27c6240d18dbe",
+        "EN-e6ac424c9ea83939",
+        "EN-607964040e4b62e0",
+        "EN-0d1e478de2157d48",
+        "EN-8d4321d936320802",
+        "EN-6f7ac1823da81d2e",
+        "EN-8f71c4871a160172",
+        "EN-4546b5bdff2ea8ed",
+        "EN-d41ebd9f02722fc8",
+        "EN-b0532e1af75cc4ab",
+        "EN-96eebba49dbbf422",
+        "EN-10556ee2cee94c72",
+        "EN-f8c237773fe24a98",
+        "EN-2b5e92d1908d42f6",
+        "EN-3ae50afab3e392b8",
+        "EN-8395dc051feafc4c",
+        "EN-b3e3bce83d29e787",
+        "EN-8950d72f381130ac",
+        "EN-049e948563e03e97",
+        "EN-f7a386a451b79627",
+        "EN-12ab68e37d104d27",
+        "EN-c608c4787821de1b",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-24"
     }
   ],
   "fde": [],

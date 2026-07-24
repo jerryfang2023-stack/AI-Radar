@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-23T03:54:13.158Z",
-    "latestDataDate": "2026-07-23",
-    "currentDate": "2026-07-23",
-    "eventCount": 1455,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
   },
   "entity": {
     "id": "EN-2daac3672aeafcbd",
@@ -27,14 +27,10 @@
     "classificationRefs": [
       "TX-technology-video_generation"
     ],
-    "relatedEntityIds": [
-      "EN-047364b9be67f665"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-06-22",
     "lastSeen": "2026-06-23",
-    "relationIds": [
-      "REL2-28ee71371286b022"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -74,123 +70,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-047364b9be67f665",
-      "name": "Alibaba",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "Qwen",
-        "阿里"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-43b7f45e9bd7ec9b",
-        "EV-3d93d1da8cb64462",
-        "EV-ef2cd6bd912a6ed8",
-        "EV-4740121f428e4bda",
-        "EV-a354af52772334fd",
-        "EV-c0f87b8c5208cd75",
-        "EV-53f08daddd011dbb",
-        "EV-e1a4bc40db4a9d8f",
-        "EV-2a833330267cb2df",
-        "EV-0d5a32aca724d30e",
-        "EV-b4aa08aef57bdb0f",
-        "EV-1a241bcb4fad886c",
-        "EV-6654f62015eff8e3",
-        "EV-8b67e7ac8e61cc1e",
-        "EV-989631c550d89726",
-        "EV-94ad4a217508e6e0",
-        "EV-b43f22d8bc7fec3f",
-        "EV-f388f7ae2debeae8",
-        "EV-d08935b06ed9e7bb",
-        "EV-215f938a46d0b126",
-        "EV-ac1b82f6e6261012",
-        "EV-6fbbbfcdcec81df4",
-        "EV-82e68f59d8584e4e",
-        "EV-fd8ecce5de2f667d",
-        "EV-f6ac2938949f74ec",
-        "EV-363fe72da52bdb86",
-        "EV-70cbf25f7ec2cc3a",
-        "EV-8b9e4428074bde60",
-        "EV-83c841a4c42cfdea",
-        "EV-3167e6eed75597e9",
-        "EV-ad2e4fe6a149d95d",
-        "EV-76aa77f5a2e7c661",
-        "EV-77662aa9bef9efbe",
-        "EV-c7f274c3aadece12",
-        "EV-333851b077b606c8",
-        "EV-6712f8ac1f00fe85",
-        "EV-c54172bf4e0c1068",
-        "EV-473f852b374d8b1c",
-        "EV-197aac95e60671f7",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-bbc34d7bc9c02b6f",
-        "EV-8e6f9c324aa0b2f3",
-        "EV-a4f413441613beac",
-        "EV-c11ee0da38376254",
-        "EV-657837763764c869",
-        "EV-a4f052325d0ef230",
-        "EV-c0a94bb25d551db1",
-        "EV-710b145230faa692",
-        "EV-1b9bd3d2cb0dc54e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-technology-long_context",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-technology-embodied_ai",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-multimodal",
-        "TX-technology-video_generation",
-        "TX-technology-distillation",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio",
-        "TX-technology-quantization",
-        "TX-technology-computer_use"
-      ],
-      "relatedEntityIds": [
-        "EN-52e3d014f9a275ea",
-        "EN-0b0c3b228202ab0a",
-        "EN-5398729239788ca5",
-        "EN-22a4c686e665e299",
-        "EN-2daac3672aeafcbd",
-        "EN-d65d81c60c0c47c4"
-      ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-23"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-28ee71371286b022",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-047364b9be67f665",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-2daac3672aeafcbd",
-      "object_type": "entity",
-      "event_id": "EV-473f852b374d8b1c",
-      "claim_refs": [
-        "CL-bbcf707867f201c2",
-        "CL-fc9ca608d16b9e92",
-        "CL-c0453e0ddf222c2c"
-      ],
-      "source_refs": [
-        "SA-2a6fddf2020cbec2"
-      ],
-      "data_date": "2026-06-23",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-technology-video_generation",

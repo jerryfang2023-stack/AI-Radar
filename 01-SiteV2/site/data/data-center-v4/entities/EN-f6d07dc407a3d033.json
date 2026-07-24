@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-23T03:54:13.158Z",
-    "latestDataDate": "2026-07-23",
-    "currentDate": "2026-07-23",
-    "eventCount": 1455,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
   },
   "entity": {
     "id": "EN-f6d07dc407a3d033",
@@ -21,17 +21,19 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-b150af93042566a6",
       "EV-0e3f748f87f5892a"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-22",
-    "lastSeen": "2026-07-23",
+    "lastSeen": "2026-07-24",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
+        "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a"
       ],
       "partnerships": [],
@@ -41,6 +43,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b150af93042566a6",
+        "dataDate": "2026-07-24",
+        "date": "2026-07-22",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "AMD 与 Anthropic 宣布战略合作，部署高达 2 吉瓦的 AMD Instinct MI450 系列 GPU",
+        "displayTags": [],
+        "entityIds": [
+          "EN-240389f4b730bad4",
+          "EN-f6d07dc407a3d033",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-0e3f748f87f5892a",
         "dataDate": "2026-07-23",
@@ -66,6 +85,35 @@
   "taxonomyNodes": [],
   "fde": [],
   "hardware": [
+    {
+      "id": "HW-e51ead5a6c442c47",
+      "eventId": "EV-b150af93042566a6",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-22",
+      "title": "AMD 与 Anthropic 宣布战略合作，部署高达 2 吉瓦的 AMD Instinct MI450 系列 GPU",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "AMD",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/22/3331418/0/en/AMD-and-Anthropic-Announce-Strategic-Partnership-to-Deploy-Up-to-2-Gigawatts-of-AMD-Instinct-MI450-Series-GPUs.html",
+      "sourceName": "globenewswire.com",
+      "sourceDate": "2026-07-22",
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-f6d07dc407a3d033",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "HW-153d7d05577e94d9",
       "eventId": "EV-0e3f748f87f5892a",

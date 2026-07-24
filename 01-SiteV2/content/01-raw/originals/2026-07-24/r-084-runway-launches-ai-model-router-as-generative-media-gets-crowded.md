@@ -1,0 +1,306 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-084
+title: "Runway launches AI model router as generative media gets crowded"
+title_zh: "Runway 推出 AI 模型路由器，生成式媒体赛道日益拥挤"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/"
+canonical_url: "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded"
+source_name: "TechCrunch AI"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-23T00:00:00.000Z"
+collected_at: 2026-07-24T01:25:51.186Z
+language: mixed
+full_text_hash: d1438c3ab90ace9e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-084-runway-launches-ai-model-router-as-generative-media-gets-crowded.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-084-runway-launches-ai-model-router-as-generative-media-gets-crowded.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":8211,"paragraph_count":37,"sentence_count":50,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 8211
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d1438c3ab90ace9e","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: b828bddd46d37151
+content_hash: d1438c3ab90ace9e
+semantic_hash: ba2da359b5e4d073
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-23T00:00:00.000Z"
+last_seen_at: 2026-07-24T01:25:51.186Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":3}
+business_elements: {"companies":["TechCrunch AI","OpenAI","Anthropic","Google"],"products":["agent","agents","Gemini"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","合作 / 联盟","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["10","07","23","2026","4.5","2.0","5","20"],"quotes":["The routing really fits into that overall promise of being the easiest one-stop shop for developers to integrate with any type of generative media model,","that end user piece,"]}
+evidence_seed: {"company_actions":["The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed or cost.","Image Credits: Runway AI Runway launches AI model router as generative media gets crowded Rebecca Bellan 10:07 AM PDT · July 23, 2026 Runway no longer wants to be just another AI model company .","It wants to become the infrastructure layer for generative media."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed or cost.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Image Credits: Runway AI Runway launches AI model router as generative media gets crowded Rebecca Bellan 10:07 AM PDT · July 23, 2026 Runway no longer wants to be just another AI model company .","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It wants to become the infrastructure layer for generative media.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"On Thursday, the startup launched Runway Media Router through Runway Dev , its developer platform, released earlier this month, that provides API access to a growing roster of third-party image, video, and audio models alongside Runway’s own.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed, or cost.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"opinion","text":"While model routers have become increasingly common in the world of large language models, Runway says this is the first built specifically for generative media.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-24T01:25:51.186Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Runway launches AI model router as generative media gets crowded
+
+## clean_text
+
+Image Credits: Runway
+AI
+Runway launches AI model router as generative media gets crowded
+Rebecca Bellan
+10:07 AM PDT · July 23, 2026
+Runway no longer wants to be just another AI model company . It wants to become the infrastructure layer for generative media.
+On Thursday, the startup launched Runway Media Router through Runway Dev , its developer platform, released earlier this month, that provides API access to a growing roster of third-party image, video, and audio models alongside Runway’s own.
+The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed, or cost. While model routers have become increasingly common in the world of large language models, Runway says this is the first built specifically for generative media.
+“The routing really fits into that overall promise of being the easiest one-stop shop for developers to integrate with any type of generative media model,” Anthony Maggio, Runway’s chief product officer, told TechCrunch.
+The launch, shared exclusively with TechCrunch, marks another step in Runway’s evolution from an AI video startup into infrastructure for companies building with generative media. Through Runway Dev, customers including Adobe, Cloudflare, ElevenLabs, Expedia, Shutterstock, and Quora can build media generation directly into their own products using Runway’s API rather than sending their users to Runway’s own app or site.
+The launch of the router comes as the number of generative media models has exploded, making it increasingly difficult and time-consuming for developers to evaluate new releases. Through the Runway Dev platform, developers can access the latest media models when they’re released.
+“Most developers are not spending the time to really understand the capabilities of each of these models and where they excel or differ based on various types of outputs across video, image, and audio,” Maggio said. “The unique proposition we’re bringing to the table is all of that intelligence around what the best model is for each different use case, and meshing that with preference you apply around the context of your business.”
+Maggio noted that Chinese generative media models are becoming increasingly popular. However, many businesses building their own products might not be comfortable working with models that come out of China, so they could, he said, potentially set a preference for American model providers — a preference that may become more common as the Trump administration explores bans and sanctions against Chinese open AI models .
+That’s just one example of preferences that developers can set, though. Maggio says customers are mainly interested in routing the model to account for token pricing and quality. Token pricing has become a hot topic in 2026 as enterprises that went all-in on agentic AI felt the sting of high token bills . In the world of LLMs, model routing for token pricing has become common, so it only makes sense that routing for generative media would follow. The Media Router launch also comes weeks after Runway replaced its unlimited subscription plans with token-based pricing, a move that drew criticism from some users.
+On the quality front, deciding which models provide the best quality for any given task isn’t as easy for generative media as it is with language models, Maggio says. That’s where the router’s intelligence layer kicks in. It’s based on the expertise Runway’s in-house creative team has developed in evaluating output across every media type — things like how video models handle motion, how image models handle composition, or how voice models handle lip syncing.
+Runway had already done a lot of the work building that intelligence layer for its agent product, a conversational AI creative partner that Runway launched in May to help turn text prompts into fully edited multi-shot videos and marketing campaigns.
+The Runway Media Router, Maggio says, takes the same routing technology Runway built for its own products and packages it for outside developers to use.
+Runway’s strategy today reflects how fragmented and competitive the current generative media landscape is, and how much the startup needs to expand and pivot to stay competitive. Runway’s last AI video model release — Gen 4.5 — was in December. At the time, the model topped leaderboards, outperforming similar models from incumbents like Google. In the same month, Runway released its first world model .
+Aside from an upgrade to its video editing model, Aleph 2.0 , in May, Runway hasn’t dropped a new dedicated frontier video model in months. (TechCrunch has asked when the startup plans to release Gen 5.) Today, while Aleph 2.0 ranks among the leading video editing models according to Artificial Analysis, the company’s text-to-video and image-to-video models no longer lead the rankings. In the top 20 spots are models from heavy hitters like Google and China’s ByteDance and Alibaba.
+Rather than asking developers to bet on a single model staying ahead, Media Router assumes that the best model will continue to change — and it keeps Runway in the game so that it can continue to build on the frontier. If not as the best new AI model, then as the best orchestration layer.
+Anastasis Germanidis, Runway’s co-founder and co-CEO, acknowledged that the startup has been known for a long time primarily for “that end user piece,” but it had to build a full stack to get there, one that includes a developer platform, a creative tool suite, and an inference layer underneath it all. He says the company has seen increasing interest from companies for Runway to live across every part of that stack.
+“You need great models underneath, but the orchestration increasingly matters a lot because people are building entire campaigns with those models, or they’re building entire finished multi-scene generations out of those models,” Germanidis told TechCrunch. “It’s something that we increasingly had to build — that intelligence layer that comes on top of the pure pixel models. The router is one way in which the benefits of that come to users.”
+Or as Maggio put it more broadly: “If you zoom out at the one thing Runway has been doing since 2018, it’s that we’re deeply focused on research, while building for where we think the space is going at the same time.”
+Got a sensitive tip or confidential documents? Rebecca Bellan is reporting on the inner workings of the AI industry, from the companies shaping its future to the people impacted by their decisions. Contact her securely, and off the record, on Signal at rebeccabellan.491 or via email at rebecca.bellan@techcrunch.com from a non-work device.
+Topics
+AI , AI audio , AI image , ai video , Exclusive , Media & Entertainment , Router , runway , Startups
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Rebecca Bellan
+Senior Reporter
+Rebecca Bellan is a senior reporter at TechCrunch where she covers the business, policy, and emerging trends shaping artificial intelligence. Her work has also appeared in Forbes, Bloomberg, The Atlantic, The Daily Beast, and other publications.
+You can contact or verify outreach from Rebecca by emailing rebecca.bellan@techcrunch.com or via encrypted message at rebeccabellan.491 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+OpenAI says Hugging Face was breached by its pre-release models
+Russell Brandom
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Anthropic’s landmark $1.5B copyright settlement is approved
+Kirsten Korosec
+Google is working on a new AI chip designed to make Gemini more efficient
+Lucas Ropek
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Runway
+AI
+Runway launches AI model router as generative media gets crowded
+Rebecca Bellan
+10:07 AM PDT · July 23, 2026
+Runway no longer wants to be just another AI model company . It wants to become the infrastructure layer for generative media.
+On Thursday, the startup launched Runway Media Router through Runway Dev , its developer platform, released earlier this month, that provides API access to a growing roster of third-party image, video, and audio models alongside Runway’s own.
+The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed, or cost. While model routers have become increasingly common in the world of large language models, Runway says this is the first built specifically for generative media.
+“The routing really fits into that overall promise of being the easiest one-stop shop for developers to integrate with any type of generative media model,” Anthony Maggio, Runway’s chief product officer, told TechCrunch.
+The launch, shared exclusively with TechCrunch, marks another step in Runway’s evolution from an AI video startup into infrastructure for companies building with generative media. Through Runway Dev, customers including Adobe, Cloudflare, ElevenLabs, Expedia, Shutterstock, and Quora can build media generation directly into their own products using Runway’s API rather than sending their users to Runway’s own app or site.
+The launch of the router comes as the number of generative media models has exploded, making it increasingly difficult and time-consuming for developers to evaluate new releases. Through the Runway Dev platform, developers can access the latest media models when they’re released.
+“Most developers are not spending the time to really understand the capabilities of each of these models and where they excel or differ based on various types of outputs across video, image, and audio,” Maggio said. “The unique proposition we’re bringing to the table is all of that intelligence around what the best model is for each different use case, and meshing that with preference you apply around the context of your business.”
+Maggio noted that Chinese generative media models are becoming increasingly popular. However, many businesses building their own products might not be comfortable working with models that come out of China, so they could, he said, potentially set a preference for American model providers — a preference that may become more common as the Trump administration explores bans and sanctions against Chinese open AI models .
+That’s just one example of preferences that developers can set, though. Maggio says customers are mainly interested in routing the model to account for token pricing and quality. Token pricing has become a hot topic in 2026 as enterprises that went all-in on agentic AI felt the sting of high token bills . In the world of LLMs, model routing for token pricing has become common, so it only makes sense that routing for generative media would follow. The Media Router launch also comes weeks after Runway replaced its unlimited subscription plans with token-based pricing, a move that drew criticism from some users.
+On the quality front, deciding which models provide the best quality for any given task isn’t as easy for generative media as it is with language models, Maggio says. That’s where the router’s intelligence layer kicks in. It’s based on the expertise Runway’s in-house creative team has developed in evaluating output across every media type — things like how video models handle motion, how image models handle composition, or how voice models handle lip syncing.
+Runway had already done a lot of the work building that intelligence layer for its agent product, a conversational AI creative partner that Runway launched in May to help turn text prompts into fully edited multi-shot videos and marketing campaigns.
+The Runway Media Router, Maggio says, takes the same routing technology Runway built for its own products and packages it for outside developers to use.
+Runway’s strategy today reflects how fragmented and competitive the current generative media landscape is, and how much the startup needs to expand and pivot to stay competitive. Runway’s last AI video model release — Gen 4.5 — was in December. At the time, the model topped leaderboards, outperforming similar models from incumbents like Google. In the same month, Runway released its first world model .
+Aside from an upgrade to its video editing model, Aleph 2.0 , in May, Runway hasn’t dropped a new dedicated frontier video model in months. (TechCrunch has asked when the startup plans to release Gen 5.) Today, while Aleph 2.0 ranks among the leading video editing models according to Artificial Analysis, the company’s text-to-video and image-to-video models no longer lead the rankings. In the top 20 spots are models from heavy hitters like Google and China’s ByteDance and Alibaba.
+Rather than asking developers to bet on a single model staying ahead, Media Router assumes that the best model will continue to change — and it keeps Runway in the game so that it can continue to build on the frontier. If not as the best new AI model, then as the best orchestration layer.
+Anastasis Germanidis, Runway’s co-founder and co-CEO, acknowledged that the startup has been known for a long time primarily for “that end user piece,” but it had to build a full stack to get there, one that includes a developer platform, a creative tool suite, and an inference layer underneath it all. He says the company has seen increasing interest from companies for Runway to live across every part of that stack.
+“You need great models underneath, but the orchestration increasingly matters a lot because people are building entire campaigns with those models, or they’re building entire finished multi-scene generations out of those models,” Germanidis told TechCrunch. “It’s something that we increasingly had to build — that intelligence layer that comes on top of the pure pixel models. The router is one way in which the benefits of that come to users.”
+Or as Maggio put it more broadly: “If you zoom out at the one thing Runway has been doing since 2018, it’s that we’re deeply focused on research, while building for where we think the space is going at the same time.”
+Got a sensitive tip or confidential documents? Rebecca Bellan is reporting on the inner workings of the AI industry, from the companies shaping its future to the people impacted by their decisions. Contact her securely, and off the record, on Signal at rebeccabellan.491 or via email at rebecca.bellan@techcrunch.com from a non-work device.
+Topics
+AI , AI audio , AI image , ai video , Exclusive , Media & Entertainment , Router , runway , Startups
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Rebecca Bellan
+Senior Reporter
+Rebecca Bellan is a senior reporter at TechCrunch where she covers the business, policy, and emerging trends shaping artificial intelligence. Her work has also appeared in Forbes, Bloomberg, The Atlantic, The Daily Beast, and other publications.
+You can contact or verify outreach from Rebecca by emailing rebecca.bellan@techcrunch.com or via encrypted message at rebeccabellan.491 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+OpenAI says Hugging Face was breached by its pre-release models
+Russell Brandom
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Anthropic’s landmark $1.5B copyright settlement is approved
+Kirsten Korosec
+Google is working on a new AI chip designed to make Gemini more efficient
+Lucas Ropek
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":8211,"paragraph_count":37,"sentence_count":50,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed or cost.
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   Image Credits: Runway AI Runway launches AI model router as generative media gets crowded Rebecca Bellan 10:07 AM PDT · July 23, 2026 Runway no longer wants to be just another AI model company .
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   It wants to become the infrastructure layer for generative media.
+
+4. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   On Thursday, the startup launched Runway Media Router through Runway Dev , its developer platform, released earlier this month, that provides API access to a growing roster of third-party image, video, and audio models alongside Runway’s own.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed, or cost.
+
+6. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   While model routers have become increasingly common in the world of large language models, Runway says this is the first built specifically for generative media.
+
+## business_elements
+
+- companies: TechCrunch AI, OpenAI, Anthropic, Google
+- products: agent, agents, Gemini
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 合作 / 联盟, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 10, 07, 23, 2026, 4.5, 2.0, 5, 20
+- quotes: The routing really fits into that overall promise of being the easiest one-stop shop for developers to integrate with any type of generative media model, / that end user piece,
+
+## evidence_seed
+
+- company_actions: The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed or cost. / Image Credits: Runway AI Runway launches AI model router as generative media gets crowded Rebecca Bellan 10:07 AM PDT · July 23, 2026 Runway no longer wants to be just another AI model company . / It wants to become the infrastructure layer for generative media.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+The Media Router is a tool that automatically selects the best image, video, or audio generation model for a request based on whether a developer prioritizes quality, speed or cost.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

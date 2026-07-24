@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-ac0b142015086aaa",
+    "name": "Venice CPU",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-87f052d24396fdbc"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-23",
+    "lastSeen": "2026-07-24",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-87f052d24396fdbc"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-87f052d24396fdbc",
+        "dataDate": "2026-07-24",
+        "date": "2026-07-23",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "AMD 将发布 Helios 机架与 Venice CPU 等 AI 硬件，正面挑战英伟达",
+        "displayTags": [],
+        "entityIds": [
+          "EN-240389f4b730bad4",
+          "EN-8d4321d936320802",
+          "EN-ac0b142015086aaa",
+          "EN-45c52af0feb0f285"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-8f054f298fdb5d42",
+      "eventId": "EV-87f052d24396fdbc",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-23",
+      "title": "AMD 将发布 Helios 机架与 Venice CPU 等 AI 硬件，正面挑战英伟达",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/980/847.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-23",
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-8d4321d936320802",
+        "EN-ac0b142015086aaa",
+        "EN-45c52af0feb0f285"
+      ]
+    }
+  ]
+}

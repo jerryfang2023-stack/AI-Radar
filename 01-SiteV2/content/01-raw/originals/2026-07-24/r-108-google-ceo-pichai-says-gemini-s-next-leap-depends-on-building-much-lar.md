@@ -1,0 +1,257 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-108
+title: "Google CEO Pichai says Gemini's next leap depends on building \"much larger base models\""
+title_zh: "谷歌CEO皮查伊称Gemini的下一次飞跃取决于构建“更大规模的基础模型”"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://the-decoder.com/google-ceo-pichai-says-geminis-next-leap-depends-on-building-much-larger-base-models/"
+canonical_url: "https://the-decoder.com/google-ceo-pichai-says-geminis-next-leap-depends-on-building-much-larger-base-models"
+source_name: "The Decoder AI News"
+source_type: operators
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-23T00:00:00.000Z"
+collected_at: 2026-07-24T01:26:06.207Z
+language: mixed
+full_text_hash: 6638344eb2c534c5
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-108-google-ceo-pichai-says-gemini-s-next-leap-depends-on-building-much-lar.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-108-google-ceo-pichai-says-gemini-s-next-leap-depends-on-building-much-lar.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 82
+extractor_diagnostics: {"readability_score":82,"text_length":3511,"paragraph_count":17,"sentence_count":28,"boilerplate_hits":3,"symbol_ratio":0.0014,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 3511
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6638344eb2c534c5","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 19947462d01fc0fa
+content_hash: 6638344eb2c534c5
+semantic_hash: 10de092ee0e55554
+duplicate_of: ""
+first_seen_at: "2026-07-23T00:00:00.000Z"
+last_seen_at: 2026-07-24T01:26:06.207Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["The Decoder AI News","Google"],"products":["Gemini"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["2026","$205 billion","82","4","039","23","$195 billion","$180 billion"],"quotes":["much larger base models","much larger base models","We're seeing tons of demand for our workhorse Gemini Flash series because it hits the sweet spot of performance and cost","much larger base models,","We have started our most ambitious pre-training run yet for Gemini 4, and are excited by the progress we are seeing at the frontier,"]}
+evidence_seed: {"company_actions":["Alphabet has raised its 2026 investment forecast to as much as $205 billion, saying demand continues to outpace spending. Google Cloud grew 82 percent in the second quarter. CEO Sundar Pichai says Google needs a larger base model for its next leap in AI and has kicked off an ambitious Gemini 4 training run. The article Google CEO Pichai says Gemini&#039;s next leap depends on building &quot;much larger base models&quot; appeared first on The Decoder. ]]>","Ad Skip to content Google CEO Pichai says Gemini's next leap depends on building \"much larger base models\" Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 23, 2026 Nano Banana Pro prompted by THE DECODER Alphabet has raised its 2026 investment forecast to between $195 billion and $205 billion, up from the previous range of $180 billion to $190 billion."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Alphabet has raised its 2026 investment forecast to as much as $205 billion, saying demand continues to outpace spending. Google Cloud grew 82 percent in the second quarter. CEO Sundar Pichai says Google needs a larger base model for its next leap in AI and has kicked off an ambitious Gemini 4 training run. The article Google CEO Pichai says Gemini&#039;s next leap depends on building &quot;much larger base models&quot; appeared first on The Decoder. ]]>","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Ad Skip to content Google CEO Pichai says Gemini's next leap depends on building \"much larger base models\" Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 23, 2026 Nano Banana Pro prompted by THE DECODER Alphabet has raised its 2026 investment forecast to between $195 billion and $205 billion, up from the previous range of $180 billion to $190 billion.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"The company says demand continues to outpace investment.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"number","text":"Google reported revenue of $119.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"8 billion for the second quarter of 2026, a 24 percent increase year over year that beat analysts' expectations of $116.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Google Cloud grew 82 percent to $24.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-24T01:26:06.207Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Google CEO Pichai says Gemini's next leap depends on building "much larger base models"
+
+## clean_text
+
+Ad
+Skip to content
+Google CEO Pichai says Gemini's next leap depends on building "much larger base models"
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Jul 23, 2026
+Nano Banana Pro prompted by THE DECODER
+Alphabet has raised its 2026 investment forecast to between $195 billion and $205 billion, up from the previous range of $180 billion to $190 billion. The company says demand continues to outpace investment.
+Google reported revenue of $119.8 billion for the second quarter of 2026, a 24 percent increase year over year that beat analysts' expectations of $116.9 billion. Google Cloud grew 82 percent to $24.8 billion, and the Services segment rose 15 percent to $94.5 billion. The Gemini app now has 950 million monthly active users, up from 750 million in February.
+Alphabet's AI metrics for Q2 2026 show Google Cloud growing 82 percent and the Gemini app reaching 950 million monthly active users. | Image: Alphabet
+AI Mode in Google Search has crossed one billion monthly active users since its global launch in October. Google claims AI Mode, like AI Overviews before it, is driving more overall search queries. That shouldn't be confused with more traffic to websites compared to traditional search . Ad
+Google says it sends billions of clicks to websites every week through AI features in Search, but without specific data or comparisons to traditional search volume, that claim doesn't tell us much. On the ad side, AI Max has left beta and already has 500,000 advertisers using it. Alphabet says AI is unlocking billions of new search queries that were previously hard to monetize. Ad
+DEC_D_Incontent-1
+The cost per AI response in AI Mode has dropped to its lowest level since launch, even as Google uses more powerful models. That points to growing efficiency gains, something the recent Flash 3.6 release also showed. Over time, that efficiency could give Google an edge on margins for serving AI.
+It also raises the question of how much a frontier model still matters to Google day to day. For the AGI race, it likely does . For serving daily use cases across its ecosystem, probably less so. "We're seeing tons of demand for our workhorse Gemini Flash series because it hits the sweet spot of performance and cost", Google CEO Sundar Pichai said. Ad
+Google bets on Gemini 4 to close the gap with frontier rivals
+Google is still working on a new frontier model and plans to ship new models monthly. But Gemini 3.5 Pro apparently isn't part of that cadence, even though Google says it's currently being tested.
+CEO Sundar Pichai acknowledged during the earnings call that Google needs a more capable base model first to catch up with the leaders. The next generation of frontier AI models requires "much larger base models," he said. Google is training Gemini 4 to meet that bar. Ad
+DEC_D_Incontent-2
+"We have started our most ambitious pre-training run yet for Gemini 4, and are excited by the progress we are seeing at the frontier," Pichai said. Ad
+He also pointed to specific weaknesses Google is trying to fix. "There are areas where we have acknowledged we need to improve. Coding and agentic coding is an example of that, and I think the teams are very, very focused on it."
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: Transcript
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## full_text
+
+Ad
+Skip to content
+Google CEO Pichai says Gemini's next leap depends on building "much larger base models"
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Jul 23, 2026
+Nano Banana Pro prompted by THE DECODER
+Alphabet has raised its 2026 investment forecast to between $195 billion and $205 billion, up from the previous range of $180 billion to $190 billion. The company says demand continues to outpace investment.
+Google reported revenue of $119.8 billion for the second quarter of 2026, a 24 percent increase year over year that beat analysts' expectations of $116.9 billion. Google Cloud grew 82 percent to $24.8 billion, and the Services segment rose 15 percent to $94.5 billion. The Gemini app now has 950 million monthly active users, up from 750 million in February.
+Alphabet's AI metrics for Q2 2026 show Google Cloud growing 82 percent and the Gemini app reaching 950 million monthly active users. | Image: Alphabet
+AI Mode in Google Search has crossed one billion monthly active users since its global launch in October. Google claims AI Mode, like AI Overviews before it, is driving more overall search queries. That shouldn't be confused with more traffic to websites compared to traditional search . Ad
+Google says it sends billions of clicks to websites every week through AI features in Search, but without specific data or comparisons to traditional search volume, that claim doesn't tell us much. On the ad side, AI Max has left beta and already has 500,000 advertisers using it. Alphabet says AI is unlocking billions of new search queries that were previously hard to monetize. Ad
+DEC_D_Incontent-1
+The cost per AI response in AI Mode has dropped to its lowest level since launch, even as Google uses more powerful models. That points to growing efficiency gains, something the recent Flash 3.6 release also showed. Over time, that efficiency could give Google an edge on margins for serving AI.
+It also raises the question of how much a frontier model still matters to Google day to day. For the AGI race, it likely does . For serving daily use cases across its ecosystem, probably less so. "We're seeing tons of demand for our workhorse Gemini Flash series because it hits the sweet spot of performance and cost", Google CEO Sundar Pichai said. Ad
+Google bets on Gemini 4 to close the gap with frontier rivals
+Google is still working on a new frontier model and plans to ship new models monthly. But Gemini 3.5 Pro apparently isn't part of that cadence, even though Google says it's currently being tested.
+CEO Sundar Pichai acknowledged during the earnings call that Google needs a more capable base model first to catch up with the leaders. The next generation of frontier AI models requires "much larger base models," he said. Google is training Gemini 4 to meet that bar. Ad
+DEC_D_Incontent-2
+"We have started our most ambitious pre-training run yet for Gemini 4, and are excited by the progress we are seeing at the frontier," Pichai said. Ad
+He also pointed to specific weaknesses Google is trying to fix. "There are areas where we have acknowledged we need to improve. Coding and agentic coding is an example of that, and I think the teams are very, very focused on it."
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: Transcript
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 82
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":82,"text_length":3511,"paragraph_count":17,"sentence_count":28,"boilerplate_hits":3,"symbol_ratio":0.0014,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Alphabet has raised its 2026 investment forecast to as much as $205 billion, saying demand continues to outpace spending. Google Cloud grew 82 percent in the second quarter. CEO Sundar Pichai says Google needs a larger base model for its next leap in AI and has kicked off an ambitious Gemini 4 training run. The article Google CEO Pichai says Gemini&#039;s next leap depends on building &quot;much larger base models&quot; appeared first on The Decoder. ]]>
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Ad Skip to content Google CEO Pichai says Gemini's next leap depends on building "much larger base models" Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 23, 2026 Nano Banana Pro prompted by THE DECODER Alphabet has raised its 2026 investment forecast to between $195 billion and $205 billion, up from the previous range of $180 billion to $190 billion.
+
+3. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   The company says demand continues to outpace investment.
+
+4. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Google reported revenue of $119.
+
+5. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   8 billion for the second quarter of 2026, a 24 percent increase year over year that beat analysts' expectations of $116.
+
+6. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Google Cloud grew 82 percent to $24.
+
+## business_elements
+
+- companies: The Decoder AI News, Google
+- products: Gemini
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 2026, $205 billion, 82, 4, 039, 23, $195 billion, $180 billion
+- quotes: much larger base models / much larger base models / We're seeing tons of demand for our workhorse Gemini Flash series because it hits the sweet spot of performance and cost / much larger base models, / We have started our most ambitious pre-training run yet for Gemini 4, and are excited by the progress we are seeing at the frontier,
+
+## evidence_seed
+
+- company_actions: Alphabet has raised its 2026 investment forecast to as much as $205 billion, saying demand continues to outpace spending. Google Cloud grew 82 percent in the second quarter. CEO Sundar Pichai says Google needs a larger base model for its next leap in AI and has kicked off an ambitious Gemini 4 training run. The article Google CEO Pichai says Gemini&#039;s next leap depends on building &quot;much larger base models&quot; appeared first on The Decoder. ]]> / Ad Skip to content Google CEO Pichai says Gemini's next leap depends on building "much larger base models" Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 23, 2026 Nano Banana Pro prompted by THE DECODER Alphabet has raised its 2026 investment forecast to between $195 billion and $205 billion, up from the previous range of $180 billion to $190 billion.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Alphabet has raised its 2026 investment forecast to as much as $205 billion, saying demand continues to outpace spending. Google Cloud grew 82 percent in the second quarter. CEO Sundar Pichai says Google needs a larger base model for its next leap in AI and has kicked off an ambitious Gemini 4 training run. The article Google CEO Pichai says Gemini&#039;s next leap depends on building &quot;much larger base models&quot; appeared first on The Decoder. ]]>
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

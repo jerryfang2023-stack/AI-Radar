@@ -1,0 +1,290 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-107
+title: "AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing"
+title_zh: "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/"
+canonical_url: "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing"
+source_name: "TechCrunch AI"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-23T00:00:00.000Z"
+collected_at: 2026-07-24T01:26:05.321Z
+language: mixed
+full_text_hash: afc63d021b3c19fe
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-107-aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-d.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-107-aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-d.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":4927,"paragraph_count":29,"sentence_count":30,"boilerplate_hits":0,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 4927
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"afc63d021b3c19fe","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: bdda478b7d960e03
+content_hash: afc63d021b3c19fe
+semantic_hash: fb5118b1e411960d
+duplicate_of: "merged 3 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-23T00:00:00.000Z"
+last_seen_at: 2026-07-24T01:26:05.321Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"AI hardware product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["TechCrunch AI","OpenAI","Anthropic","Google"],"products":["agents","Gemini"],"people":[],"industries":[],"roles":["CIO / IT 负责人"],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["$36M","11","38","23","2026","$36 million","$49 million","1"],"quotes":["AI-powered attacks bypass existing controls more than half the time now, which means they’re almost twice as effective as they used to be,","They’ve researched you, they understand everything about you, and they’re targeting attacks that are perfectly bespoke to you.","The bad guys are using email to attack us using AI at a much faster pace than we can keep up with,","Defending against that is going to be a number one priority for a lot of companies.","The core idea of building customized, highly advanced agents that can do investigations is going to [determine] who becomes the next dominant security company,"]}
+evidence_seed: {"company_actions":["AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.","AI can quickly aggregate personal information — such as information about co-workers, active projects, and recent travel itineraries — allowing bad actors to instantly craft convincing messages that look authentic.","With a decade of experience preventing email hacks, the AegisAI co-founders realized that existing rule-based systems for preventing hacks — relying on “if-then” logic — are too slow and limited to catching AI-crafted malicious emails."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":["Last year, former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI, a startup that uses AI agents to stomp out these threats, known as spear phishing."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"number","text":"Image Credits: AegisAI Security AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing Marina Temkin 11:38 AM PDT · July 23, 2026 Hackers are increasingly using AI to launch attacks on a massive scale, with email emerging as a primary target.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI can quickly aggregate personal information — such as information about co-workers, active projects, and recent travel itineraries — allowing bad actors to instantly craft convincing messages that look authentic.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"supporting_context","text":"Last year, former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI, a startup that uses AI agents to stomp out these threats, known as spear phishing.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"With a decade of experience preventing email hacks, the AegisAI co-founders realized that existing rule-based systems for preventing hacks — relying on “if-then” logic — are too slow and limited to catching AI-crafted malicious emails.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So they developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-24T01:26:05.321Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing
+
+## clean_text
+
+Image Credits: AegisAI
+Security
+AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing
+Marina Temkin
+11:38 AM PDT · July 23, 2026
+Hackers are increasingly using AI to launch attacks on a massive scale, with email emerging as a primary target. AI can quickly aggregate personal information — such as information about co-workers, active projects, and recent travel itineraries — allowing bad actors to instantly craft convincing messages that look authentic.
+Last year, former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI, a startup that uses AI agents to stomp out these threats, known as spear phishing.
+With a decade of experience preventing email hacks, the AegisAI co-founders realized that existing rule-based systems for preventing hacks — relying on “if-then” logic — are too slow and limited to catching AI-crafted malicious emails. So they developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.
+Less than a year after its launch, AegisAI says its tech has been adopted by dozens of customers, including crypto payments company Mesh, AI startup LangChain, and privacy compliance platform Lokker. That demand has just helped AegisAI raise a $36 million Series A led by Battery Ventures, with participation from existing backers Accel and Foundation Capital. The fresh funding brings the startup’s total capital to $49 million .
+“AI-powered attacks bypass existing controls more than half the time now, which means they’re almost twice as effective as they used to be,” Khormaee told TechCrunch. “They’ve researched you, they understand everything about you, and they’re targeting attacks that are perfectly bespoke to you.”
+Khormaee claims that AegisAI’s agents can spot threats traditional email security systems may miss entirely. For instance, the startup’s AI can catch malicious PDF attachments that look legitimate at first, including ones with built-in passwords and CAPTCHA, which are often used to fool standard spam filters.
+When Dharmesh Thakker, general partner at Battery Ventures, noticed an increase in email attacks, he set out to invest in a startup that could defend against AI with AI, one aiming to replace legacy email security tools with agentic-driven defense.
+“The bad guys are using email to attack us using AI at a much faster pace than we can keep up with,” Thakker told TechCrunch. “Defending against that is going to be a number one priority for a lot of companies.”
+AegisAI isn’t the only startup using AI to analyze the context of every incoming email to detect fraud and impersonation attempts. Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security.
+However, given that AegisAI is led by experts who helped secure Gmail, the most popular email system in the world, Thakker believes the startup has the best shot at becoming the leading new hack-prevention company.
+While AegisAI is starting with email, the startup has its sights on eventually expanding to other areas of defense, such as data security. “The core idea of building customized, highly advanced agents that can do investigations is going to [determine] who becomes the next dominant security company,” Khormaee said.
+Topics
+AegisAI , AI , battery ventures , Security , Startups
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Marina Temkin
+Reporter, Venture
+Marina Temkin is a venture capital and startups reporter at TechCrunch. Prior to joining TechCrunch, she wrote about VC for PitchBook and Venture Capital Journal. Earlier in her career, Marina was a financial analyst and earned a CFA charterholder designation.
+You can contact or verify outreach from Marina by emailing marina.temkin@techcrunch.com or via encrypted message at +1 347-683-3909 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+OpenAI says Hugging Face was breached by its pre-release models
+Russell Brandom
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Anthropic’s landmark $1.5B copyright settlement is approved
+Kirsten Korosec
+Google is working on a new AI chip designed to make Gemini more efficient
+Lucas Ropek
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: AegisAI
+Security
+AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing
+Marina Temkin
+11:38 AM PDT · July 23, 2026
+Hackers are increasingly using AI to launch attacks on a massive scale, with email emerging as a primary target. AI can quickly aggregate personal information — such as information about co-workers, active projects, and recent travel itineraries — allowing bad actors to instantly craft convincing messages that look authentic.
+Last year, former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI, a startup that uses AI agents to stomp out these threats, known as spear phishing.
+With a decade of experience preventing email hacks, the AegisAI co-founders realized that existing rule-based systems for preventing hacks — relying on “if-then” logic — are too slow and limited to catching AI-crafted malicious emails. So they developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.
+Less than a year after its launch, AegisAI says its tech has been adopted by dozens of customers, including crypto payments company Mesh, AI startup LangChain, and privacy compliance platform Lokker. That demand has just helped AegisAI raise a $36 million Series A led by Battery Ventures, with participation from existing backers Accel and Foundation Capital. The fresh funding brings the startup’s total capital to $49 million .
+“AI-powered attacks bypass existing controls more than half the time now, which means they’re almost twice as effective as they used to be,” Khormaee told TechCrunch. “They’ve researched you, they understand everything about you, and they’re targeting attacks that are perfectly bespoke to you.”
+Khormaee claims that AegisAI’s agents can spot threats traditional email security systems may miss entirely. For instance, the startup’s AI can catch malicious PDF attachments that look legitimate at first, including ones with built-in passwords and CAPTCHA, which are often used to fool standard spam filters.
+When Dharmesh Thakker, general partner at Battery Ventures, noticed an increase in email attacks, he set out to invest in a startup that could defend against AI with AI, one aiming to replace legacy email security tools with agentic-driven defense.
+“The bad guys are using email to attack us using AI at a much faster pace than we can keep up with,” Thakker told TechCrunch. “Defending against that is going to be a number one priority for a lot of companies.”
+AegisAI isn’t the only startup using AI to analyze the context of every incoming email to detect fraud and impersonation attempts. Lightspeed-backed Ocean is also trying to displace established vendors like Proofpoint and Mimecast, along with newer players like Abnormal Security.
+However, given that AegisAI is led by experts who helped secure Gmail, the most popular email system in the world, Thakker believes the startup has the best shot at becoming the leading new hack-prevention company.
+While AegisAI is starting with email, the startup has its sights on eventually expanding to other areas of defense, such as data security. “The core idea of building customized, highly advanced agents that can do investigations is going to [determine] who becomes the next dominant security company,” Khormaee said.
+Topics
+AegisAI , AI , battery ventures , Security , Startups
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Marina Temkin
+Reporter, Venture
+Marina Temkin is a venture capital and startups reporter at TechCrunch. Prior to joining TechCrunch, she wrote about VC for PitchBook and Venture Capital Journal. Earlier in her career, Marina was a financial analyst and earned a CFA charterholder designation.
+You can contact or verify outreach from Marina by emailing marina.temkin@techcrunch.com or via encrypted message at +1 347-683-3909 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+OpenAI says Hugging Face was breached by its pre-release models
+Russell Brandom
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Anthropic’s landmark $1.5B copyright settlement is approved
+Kirsten Korosec
+Google is working on a new AI chip designed to make Gemini more efficient
+Lucas Ropek
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":4927,"paragraph_count":29,"sentence_count":30,"boilerplate_hits":0,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Image Credits: AegisAI Security AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing Marina Temkin 11:38 AM PDT · July 23, 2026 Hackers are increasingly using AI to launch attacks on a massive scale, with email emerging as a primary target.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   AI can quickly aggregate personal information — such as information about co-workers, active projects, and recent travel itineraries — allowing bad actors to instantly craft convincing messages that look authentic.
+
+4. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   Last year, former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI, a startup that uses AI agents to stomp out these threats, known as spear phishing.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   With a decade of experience preventing email hacks, the AegisAI co-founders realized that existing rule-based systems for preventing hacks — relying on “if-then” logic — are too slow and limited to catching AI-crafted malicious emails.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   So they developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.
+
+## business_elements
+
+- companies: TechCrunch AI, OpenAI, Anthropic, Google
+- products: agents, Gemini
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: CIO / IT 负责人
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: $36M, 11, 38, 23, 2026, $36 million, $49 million, 1
+- quotes: AI-powered attacks bypass existing controls more than half the time now, which means they’re almost twice as effective as they used to be, / They’ve researched you, they understand everything about you, and they’re targeting attacks that are perfectly bespoke to you. / The bad guys are using email to attack us using AI at a much faster pace than we can keep up with, / Defending against that is going to be a number one priority for a lot of companies. / The core idea of building customized, highly advanced agents that can do investigations is going to [determine] who becomes the next dominant security company,
+
+## evidence_seed
+
+- company_actions: AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch. / AI can quickly aggregate personal information — such as information about co-workers, active projects, and recent travel itineraries — allowing bad actors to instantly craft convincing messages that look authentic. / With a decade of experience preventing email hacks, the AegisAI co-founders realized that existing rule-based systems for preventing hacks — relying on “if-then” logic — are too slow and limited to catching AI-crafted malicious emails.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: Last year, former Google security executives Cy Khormaee and Ryan Luo, who previously worked on developing safe browsing technology and reCAPTCHA, teamed up to launch AegisAI, a startup that uses AI agents to stomp out these threats, known as spear phishing.
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: AI hardware product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AegisAI co-founders developed AI agents that quickly analyze each message as a human would, paying attention to small anomalies that even the most elaborate checklist wouldn’t catch.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
