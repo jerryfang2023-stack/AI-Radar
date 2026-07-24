@@ -808,9 +808,9 @@ export const MaisaCaseStudy: React.FC<{title: string}> = () => {
   return (
     <AbsoluteFill style={{backgroundColor: COLORS.ink}}>
       <Audio
-        src={staticFile('audio/ambient-bed.m4a')}
+        src={staticFile('audio/piano-bed.m4a')}
         volume={(frame) =>
-          interpolate(frame, [0, 45, durationInFrames - 90, durationInFrames], [0, 0.62, 0.62, 0], {
+          interpolate(frame, [0, 12, 18, durationInFrames - 90, durationInFrames], [0, 0.34, 0.24, 0.24, 0], {
             extrapolateLeft: 'clamp',
             extrapolateRight: 'clamp',
           })

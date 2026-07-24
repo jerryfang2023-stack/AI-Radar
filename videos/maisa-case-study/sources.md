@@ -19,3 +19,10 @@
 - `wavesight-logo.svg`：本仓库正式 WAVESIGHT AI 品牌资产。
 
 Maisa、Creandum 及相关产品标识归各自权利人所有。本项目仅在案例评论与事实说明语境中引用，不暗示背书或合作关系。
+
+## 背景音乐
+
+- `Spark of Inspiration`，Shane Ivers，120 BPM，钢琴 / 鼓 / 合成器商业激励配乐。
+- 来源：<https://www.silvermansound.com/free-music/spark-of-inspiration>
+- 许可：Creative Commons Attribution 4.0（CC BY 4.0）。
+- 署名：Music: Spark of Inspiration by Shane Ivers — <https://www.silvermansound.com>

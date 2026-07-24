@@ -68,6 +68,7 @@ const captions = [];
 
 for (const scene of scenes) {
   const textPath = join(tempDir, `${scene.id}.txt`);
+  const rawAudioPath = join(tempDir, `${scene.id}-raw.mp3`);
   const audioPath = join(voiceDir, `${scene.id}.mp3`);
   const vttPath = join(tempDir, `${scene.id}.vtt`);
   writeFileSync(textPath, scene.voiceover, 'utf8');
@@ -78,15 +79,39 @@ for (const scene of scenes) {
       '-f',
       textPath,
       '-v',
-      'zh-CN-YunyangNeural',
+      'zh-CN-YunjianNeural',
       '--rate',
-      '+16%',
-      '--volume=+4%',
-      '--pitch=+1Hz',
+      '+10%',
+      '--volume=+2%',
+      '--pitch=+2Hz',
       '--write-media',
-      audioPath,
+      rawAudioPath,
       '--write-subtitles',
       vttPath,
+    ],
+    {stdio: 'inherit'},
+  );
+
+  execFileSync(
+    'ffmpeg',
+    [
+      '-y',
+      '-hide_banner',
+      '-loglevel',
+      'error',
+      '-i',
+      rawAudioPath,
+      '-af',
+      'highpass=f=85,equalizer=f=180:t=q:w=1:g=1.2,equalizer=f=3500:t=q:w=1.1:g=2,acompressor=threshold=-19dB:ratio=3:attack=10:release=90:makeup=2,loudnorm=I=-16:TP=-2:LRA=7',
+      '-ar',
+      '48000',
+      '-ac',
+      '2',
+      '-c:a',
+      'libmp3lame',
+      '-b:a',
+      '160k',
+      audioPath,
     ],
     {stdio: 'inherit'},
   );
@@ -127,32 +152,29 @@ const timeline = {
 writeFileSync(join(dataDir, 'timeline.json'), `${JSON.stringify(timeline, null, 2)}\n`);
 writeFileSync(join(dataDir, 'captions.json'), `${JSON.stringify(captions, null, 2)}\n`);
 
-const musicPath = join(audioDir, 'ambient-bed.m4a');
+const musicSourcePath = join(audioDir, 'spark-of-inspiration.mp3');
+const musicPath = join(audioDir, 'piano-bed.m4a');
 const fadeOutStart = Math.max(0, durationSeconds - 3);
 execFileSync(
   'ffmpeg',
   [
     '-y',
-    '-f',
-    'lavfi',
     '-i',
-    `sine=frequency=55:sample_rate=48000:duration=${durationSeconds}`,
-    '-f',
-    'lavfi',
+    musicSourcePath,
     '-i',
-    `sine=frequency=82.41:sample_rate=48000:duration=${durationSeconds}`,
-    '-f',
-    'lavfi',
-    '-i',
-    `anoisesrc=color=pink:amplitude=0.01:sample_rate=48000:duration=${durationSeconds}`,
+    musicSourcePath,
     '-filter_complex',
-    `[0:a]volume=0.09,lowpass=f=420[a0];[1:a]volume=0.035,lowpass=f=700[a1];[2:a]lowpass=f=900,highpass=f=120,volume=0.12[a2];[a0][a1][a2]amix=inputs=3:normalize=0,afade=t=in:st=0:d=2,afade=t=out:st=${fadeOutStart}:d=3,alimiter=limit=0.35[out]`,
+    `[0:a][1:a]acrossfade=d=8:c1=tri:c2=tri,atrim=0:${durationSeconds},asetpts=N/SR/TB,highpass=f=70,lowpass=f=13500,loudnorm=I=-18:TP=-2:LRA=9,afade=t=in:st=0:d=1.2,afade=t=out:st=${fadeOutStart}:d=3[out]`,
     '-map',
     '[out]',
+    '-ar',
+    '48000',
+    '-ac',
+    '2',
     '-c:a',
     'aac',
     '-b:a',
-    '128k',
+    '160k',
     musicPath,
   ],
   {stdio: 'inherit'},
