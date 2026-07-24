@@ -146,6 +146,7 @@ Success after 16:30 requires:
 - Hermes can parse `publish_status`, `publish_error`, and `obsidian_sync_*` counts from the report;
 - the automation branch was pushed, the PR was merged to `main`, and GitHub Pages completed when the local task runs with `-Merge`.
 
+Before creating `afternoon_skill_runner`, refresh `origin/main` and check the exact-date report/output pair there. Do not infer afternoon failure from a Business Signals workflow run or the morning First-Line RSS workflow; neither owns the local afternoon artifacts.
 If the report exists but records `0` while the output contains items, or if the report lacks Obsidian sync counts, repair or regenerate the report before closing Hermes.
 If the report shows healthy feed/archive counts but a publish failure, repair the publication path only. Do not rerun or blame the upstream builders feed unless the output file itself is stale, missing, or zero-count.
 

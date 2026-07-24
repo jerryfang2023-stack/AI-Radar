@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import { sourceTitleNeedsChineseTranslation } from "./source-title-translation-generator.mjs";
 
 const root = process.cwd();
@@ -19,6 +20,7 @@ const date = args.get("date") || shanghaiDate();
 const githubMode = args.get("github") || "auto";
 const taskMode = args.get("scheduled-task") || "auto";
 const hermesMode = args.get("hermes") || args.get("write-hermes") || "auto";
+const forceAfternoonWindow = args.get("force-afternoon-window") === "true";
 
 function shanghaiDate(value = new Date()) {
   const dateValue = value instanceof Date ? value : new Date(value);
@@ -230,6 +232,9 @@ function incidentCategories(lane) {
 
 function repairDataGenerated(lane) {
   if (lane.id === "skill_ops") return "not_applicable";
+  if (lane.id === "follow_builders_skill") {
+    return Number(lane.evidence?.itemCount || 0) > 0 ? "yes" : "no";
+  }
   const category = lane.evidence?.diagnosis?.category || "";
   if (category === "no_run_or_stale_assets") return "no_or_stale";
   if (["raw_card_ingestion_fields", "frontstage_card_contract", "publication", "local_sync", "supervision_observability"].includes(category)) return "yes";
@@ -653,7 +658,7 @@ function buildBusinessSignalsLane() {
   };
 }
 
-function buildFirstLineLane() {
+export function buildFirstLineLane() {
   const problems = [];
   const warnings = [];
   const evidence = {};
@@ -661,34 +666,63 @@ function buildFirstLineLane() {
   const windowPassed = hasWindowPassed(date, "09:50");
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "follow-builders-daily.json");
   const gateFile = path.join(reportsDir, `${date}-follow-builders-data-gate.md`);
-  const data = readJson(dataFile, {});
+  const manifestFile = path.join(reportsDir, `${date}-first-line-viewpoints-manifest.md`);
+  const localData = readJson(dataFile, {});
+  const localGeneratedDate = shanghaiDate(localData?.meta?.generatedAt || "");
+  const publishedData = localGeneratedDate === date ? null : readJsonFromGit("origin/main", dataFile, null);
+  const publishedGeneratedDate = shanghaiDate(publishedData?.meta?.generatedAt || "");
+  const usePublishedData = localGeneratedDate !== date && publishedGeneratedDate === date;
+  const data = usePublishedData ? publishedData : localData;
   const generatedDate = shanghaiDate(data?.meta?.generatedAt || "");
+  const localGateText = readText(gateFile);
+  const publishedGateText = localGateText ? "" : readTextFromGit("origin/main", gateFile);
+  const gateText = localGateText || publishedGateText;
+  const localManifestText = readText(manifestFile);
+  const publishedManifestText = localManifestText ? "" : readTextFromGit("origin/main", manifestFile);
+  const manifestText = localManifestText || publishedManifestText;
+  const manifestFields = parseFields(manifestText);
+  const manifestHealthy = [
+    manifestFields.builders_data,
+    manifestFields.builders_gate,
+    manifestFields.obsidian_sync,
+  ].every((value) => value === "success");
+  const historicalEvidenceHealthy = date < shanghaiDate() && manifestHealthy && statusFromGateText(gateText) === "passed";
   const gh = githubWorkflowState("daily-first-line-viewpoints-pr.yml", `automation/first-line-viewpoints-${date}`);
 
   evidence.generatedAt = data?.meta?.generatedAt || "";
   evidence.generatedDate = generatedDate;
+  evidence.dataSource = usePublishedData ? "origin/main" : "working_tree";
+  evidence.localGeneratedDate = localGeneratedDate;
   evidence.feedGeneratedAt = data?.meta?.feedGeneratedAt || "";
   evidence.remarks = data?.stats?.remarks ?? (Array.isArray(data.remarks) ? data.remarks.length : 0);
   evidence.builders = data?.stats?.builders ?? (Array.isArray(data.builders) ? data.builders.length : 0);
-  evidence.gateStatus = statusFromGate(gateFile);
-  evidence.gateReport = exists(gateFile) ? rel(gateFile) : "missing";
+  evidence.gateStatus = statusFromGateText(gateText);
+  evidence.gateReport = localGateText
+    ? rel(gateFile)
+    : publishedGateText ? `origin/main:${rel(gateFile)}` : "missing";
+  evidence.manifest = localManifestText
+    ? rel(manifestFile)
+    : publishedManifestText ? `origin/main:${rel(manifestFile)}` : "missing";
+  evidence.manifestHealthy = manifestHealthy;
+  evidence.historicalEvidenceHealthy = historicalEvidenceHealthy;
   evidence.github = gh;
 
   if (windowPassed) {
-    if (!exists(dataFile)) addProblem(problems, `missing first-line data file: ${rel(dataFile)}`);
-    if (generatedDate !== date) addProblem(problems, `first-line data date is ${generatedDate || "missing"}, expected ${date}`);
-    if (Number(evidence.remarks) < 12) addProblem(problems, `remarks count ${evidence.remarks} below 12`);
-    if (Number(evidence.builders) < 6) addProblem(problems, `builders count ${evidence.builders} below 6`);
+    if (!historicalEvidenceHealthy && !exists(dataFile) && !usePublishedData) addProblem(problems, `missing first-line data file: ${rel(dataFile)}`);
+    if (!historicalEvidenceHealthy && generatedDate !== date) addProblem(problems, `first-line data date is ${generatedDate || "missing"}, expected ${date}`);
+    if (!historicalEvidenceHealthy && Number(evidence.remarks) < 12) addProblem(problems, `remarks count ${evidence.remarks} below 12`);
+    if (!historicalEvidenceHealthy && Number(evidence.builders) < 6) addProblem(problems, `builders count ${evidence.builders} below 6`);
     if (evidence.gateStatus === "failed") addProblem(problems, `follow-builders gate failed: ${rel(gateFile)}`);
     if (evidence.gateStatus === "missing") warnings.push(`missing follow-builders gate report: ${rel(gateFile)}`);
   }
 
-  const localDataHealthy =
-    exists(dataFile) &&
+  const localDataHealthy = historicalEvidenceHealthy || (
+    (exists(dataFile) || usePublishedData) &&
     generatedDate === date &&
     Number(evidence.remarks) >= 12 &&
     Number(evidence.builders) >= 6 &&
-    evidence.gateStatus !== "failed";
+    evidence.gateStatus !== "failed"
+  );
   evidence.localDataHealthy = localDataHealthy;
 
   if (gh.available && !localDataHealthy) {
@@ -724,16 +758,23 @@ function buildFirstLineLane() {
   };
 }
 
-function buildFollowBuildersSkillLane() {
+export function buildFollowBuildersSkillLane() {
   const problems = [];
+  const waiting = [];
   const warnings = [];
   const evidence = {};
   const actions = [];
-  const windowPassed = hasWindowPassed(date, "16:30");
+  const windowPassed = forceAfternoonWindow || hasWindowPassed(date, "16:30");
   const outputFile = path.join(root, "01-SiteV2", "content", "07-points", `${date}-builders-viewpoints.md`);
   const reportFile = path.join(reportsDir, `${date}-follow-builders-skill-local-publish.md`);
-  const outputText = readText(outputFile);
-  const reportText = readText(reportFile);
+  const localOutputText = readText(outputFile);
+  const localReportText = readText(reportFile);
+  const publishedOutputText = localOutputText ? "" : readTextFromGit("origin/main", outputFile);
+  const publishedReportText = localReportText ? "" : readTextFromGit("origin/main", reportFile);
+  const outputText = localOutputText || publishedOutputText;
+  const reportText = localReportText || publishedReportText;
+  const outputExists = Boolean(outputText);
+  const reportExists = Boolean(reportText);
   const reportFields = parseFields(reportText);
   const itemCount = (outputText.match(/^## BP-\d{8}-\d{2}\b/mgu) || []).length;
   const outputFrontmatterCount = Number((outputText.match(/^builder_items_count:\s*(\d+)/mu) || [])[1] || 0);
@@ -752,31 +793,38 @@ function buildFollowBuildersSkillLane() {
   };
   const obsidianSyncRecorded = Object.values(obsidianSync).every(Number.isFinite);
 
-  evidence.outputFile = exists(outputFile) ? rel(outputFile) : "missing";
-  evidence.reportFile = exists(reportFile) ? rel(reportFile) : "missing";
+  evidence.outputFile = localOutputText
+    ? rel(outputFile)
+    : publishedOutputText ? `origin/main:${rel(outputFile)}` : "missing";
+  evidence.reportFile = localReportText
+    ? rel(reportFile)
+    : publishedReportText ? `origin/main:${rel(reportFile)}` : "missing";
+  evidence.dataSource = localOutputText || localReportText
+    ? "working_tree"
+    : publishedOutputText || publishedReportText ? "origin/main" : "missing";
   evidence.itemCount = itemCount;
   evidence.outputFrontmatterCount = outputFrontmatterCount;
   evidence.reportCount = reportCount;
-  evidence.publishStatus = publishStatus || (exists(reportFile) ? "not_recorded" : "missing");
+  evidence.publishStatus = publishStatus || (reportExists ? "not_recorded" : "missing");
   evidence.publishError = publishError;
   evidence.obsidianSync = obsidianSyncRecorded ? obsidianSync : "missing";
 
   if (windowPassed) {
-    if (!exists(outputFile)) addProblem(problems, `missing follow-builders skill output file: ${rel(outputFile)}`);
+    if (!outputExists) addProblem(problems, `missing follow-builders skill output file: ${rel(outputFile)}`);
     if (itemCount <= 0) addProblem(problems, `follow-builders skill output item count ${itemCount} below 1`);
-    if (exists(reportFile) && reportCount <= 0) {
+    if (reportExists && reportCount <= 0) {
       addProblem(problems, `follow-builders skill report count ${reportCount} below 1`);
     }
-    if (exists(outputFile) && outputFrontmatterCount > 0 && outputFrontmatterCount !== itemCount) {
+    if (outputExists && outputFrontmatterCount > 0 && outputFrontmatterCount !== itemCount) {
       addProblem(problems, `follow-builders skill output frontmatter count ${outputFrontmatterCount} does not match heading count ${itemCount}`);
     }
-    if (exists(reportFile) && reportCount > 0 && itemCount > 0 && reportCount !== itemCount) {
+    if (reportExists && reportCount > 0 && itemCount > 0 && reportCount !== itemCount) {
       addProblem(problems, `follow-builders skill report count ${reportCount} does not match output count ${itemCount}`);
     }
-    if (exists(reportFile) && !obsidianSyncRecorded) {
+    if (reportExists && !obsidianSyncRecorded) {
       addProblem(problems, "follow-builders skill report is missing Obsidian sync counts");
     }
-    if (exists(reportFile) && publishStatus === "failed") {
+    if (reportExists && publishStatus === "failed") {
       const category = /prepare-digest|generate-builders|terminated|skill script|feed/iu.test(publishError)
         ? "afternoon_skill_runner"
         : "afternoon_publication_failure";
@@ -790,7 +838,7 @@ function buildFollowBuildersSkillLane() {
       };
     }
   }
-  if (!exists(reportFile) && windowPassed) {
+  if (!reportExists && windowPassed) {
     addProblem(problems, "no same-date follow-builders skill publish report after 16:30 watchdog", "manual_required");
     actions.push("run `powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/run-follow-builders-skill.ps1` locally");
     evidence.diagnosis = {
@@ -799,8 +847,11 @@ function buildFollowBuildersSkillLane() {
       neededAction: "run the local follow-builders skill publisher and inspect the generated publish report",
     };
   }
-  if (windowPassed && !exists(reportFile)) {
+  if (windowPassed && !reportExists) {
     warnings.push("follow-builders skill publish report is missing before Hermes record time");
+  }
+  if (!windowPassed && (!outputExists || !reportExists)) {
+    addWaiting(waiting, "awaiting the 16:10 follow-builders skill publish and 16:30 Hermes record window");
   }
 
   if (problems.length) {
@@ -820,9 +871,10 @@ function buildFollowBuildersSkillLane() {
     id: "follow_builders_skill",
     label: "First-Line Viewpoints Skill",
     schedule: "16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45",
-    status: laneStatus(problems, warnings),
+    status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
+    waiting,
     warnings,
     actions: [...new Set(actions)],
   };
@@ -1161,6 +1213,9 @@ function writeReports(payload) {
 }
 
 function main() {
+  if (!["false", "off"].includes(String(githubMode).toLowerCase())) {
+    runOptional("git", ["fetch", "origin", "main"], 20000);
+  }
   const lanes = [
     buildSkillOpsLane(),
     buildCommunityLane(),
@@ -1190,4 +1245,7 @@ function main() {
   if (status === "failed") process.exit(1);
 }
 
-main();
+const executedFile = process.argv[1] ? path.resolve(process.argv[1]) : "";
+if (executedFile === fileURLToPath(import.meta.url)) {
+  main();
+}
