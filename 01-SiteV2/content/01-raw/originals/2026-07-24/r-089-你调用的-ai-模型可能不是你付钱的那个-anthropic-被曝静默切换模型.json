@@ -1,0 +1,296 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-089",
+  "title": "你调用的 AI 模型可能不是你付钱的那个--Anthropic 被曝静默切换模型",
+  "title_zh": "你调用的 AI 模型可能不是你付钱的那个--Anthropic 被曝静默切换模型",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://www.marktechpost.com/2026/07/23/you-didnt-get-the-ai-model-you-paid-for",
+  "canonical_url": "https://marktechpost.com/2026/07/23/you-didnt-get-the-ai-model-you-paid-for",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-23T18:07:55.000Z",
+  "collected_at": "2026-07-24T01:25:54.471Z",
+  "language": "mixed",
+  "full_text": "Technology\nAI Shorts\nArtificial Intelligence\nApplications\nEditors Pick\nGuest Post\nLanguage Model\nLarge Language Model\nMachine Learning\nTech News\nThe line in the response object\nYou call the API. You pass model: “claude-fable-5”. You get back a completion, a token count, and a field that reads “model”: “claude-opus-4-8”.\nNothing errored. Nothing retried. The request was classified before generation began, matched a sensitive category, and was handed to a different set of weights entirely. Anthropic documented this when it brought Fable 5 back on July 1: blocked requests are sent to Opus 4.8 instead, and the user is notified. The switch happens at the API layer, and the response object names the model that actually ran.\nThat is the well-behaved version. It is also, as far as I can tell, the only version in wide deployment that tells you the truth in-band.\nTwo weeks later, Cursor shipped Router: a classifier trained on 600,000-plus live requests that reads each query’s context, complexity, and domain and dispatches it to whichever model it judges best with three early-access accounts reporting 30–50% savings against routing everything to Opus 4.8. Cursor published its routing rules but did not name a specific model per task type.\nAnd underneath both, at the aggregation layer, OpenRouter warns that some providers serve quantized weights at lower prices, that output can differ from what full-precision weights would have produced, and that your logs will not tell you this happened.\nThree products. Three different answers to the question what is a model . Zero cases telling us which one the law will accept.\nThree ways a name can stop meaning a thing\nModel identity is fracturing along three independent axes, and they are not usually distinguished:\nSubstitution – A different architecture, different weights, different capability profile – dispatched by a classifier. Fable 5 → Opus 4.8. Cursor Auto → whatever the router picks this turn.\nDegradation – The same model, served at reduced precision. OpenRouter exposes a quantizations parameter precisely because quantized endpoints may perform worse on certain prompts, and by default requests are load-balanced across providers ordered by price. Same name in your request. Different arithmetic on the other end.\nDrift – The same name pointing at silently updated weights. Every -latest alias in production is an unversioned dependency you would never tolerate in a package manifest.\nThe engineering community treats all three as reliability problems. They are also identity problems, and identity is what contracts, warranties, disclosures, and evidence rules are built on.\nSo what did you actually buy?\nStart with the oldest question in commercial law: was the description a term of the deal?\nIf an API call were a sale of goods, this would be near-trivial. UCC §2-313(1)(b) makes any description of the goods that forms part of the basis of the bargain into an express warranty that the goods will conform to it. India’s Sale of Goods Act, 1930, §15 does the same work through the doctrine of sale by description.\nBut an inference API almost certainly isn’t goods. Courts have generally treated hosted software as a service, which pushes you out of warranty statutes and into common-law contract — where the answer depends entirely on what the documentation said and how specifically the buyer bargained. That is precisely where the ambiguity lives. Enterprise agreements price per-model. Model cards are model-specific. Compliance artifacts name model versions. And then the routing layer treats the name as a hint .\nThe cleanest way to see the stakes: if your code pins a model ID rather than expressing a capability requirement, behaviour can shift materially without any error ever firing. A contract drafted the same way has the same defect. If you bargained for a name, substitution is breach. If you bargained for a capability, substitution is fine — and now you need a definition of “frontier quality” that survives cross-examination.\nNobody has written that definition. Cursor’s is instructive: Router was evaluated in an online A/B test optimising for user satisfaction as the reward signal. That is a sound engineering choice and a strange contractual one. Satisfaction is not conformity. A user who never noticed the swap is evidence of a good router, not of a delivered specification.\nThe disclosure gradient\nUnder FTC deception doctrine, a representation is actionable when it is material and likely to mislead a consumer acting reasonably; objective performance claims additionally require a reasonable basis before dissemination. Both halves bite here.\nOn the routing side, the three products sit at very different points. Anthropic notifies and returns the served model in the response. Cursor publishes rules but not per-task model assignment. OpenRouter’s quantization variance is disclosed in documentation and controllable by parameter but it is opt-out, and the default path is the cheap one.\nDisclosure buried in a docs page, defaulted against the user, is exactly the fact pattern regulators have been calling a dark pattern in every other consumer vertical.\nOn the substantiation side, the exposure is the claim , not the routing. Commentators have already flagged that a “60% cheaper, no quality loss” claim arrives without published methodology, and Anthropic’s own disclosure is a model of what candour costs: it stated plainly that the retrained classifier flags benign requests more often during routine coding and debugging. That sentence is a liability shield. The vendors who don’t write it are the ones to watch.\nThere is a competition-law tail here too. Working papers on vertical foreclosure in inference markets are already proposing a conduct framework built on routing transparency, quality-of-service parity, and FRAND-style non-discrimination. A router that is also a first-party model vendor is a self-preferencing engine wearing a cost-optimisation costume.\nThe part nobody is looking at: authentication\nThis is where I think the real fight lands, and it has nothing to do with billing. Federal Rule of Evidence 901(b)(9) authenticates output by describing the process or system that produced it and showing that the process produces an accurate result. FRE 902(13) and 902(14) go further, letting records generated by an electronic system, or data verified by hash, self-authenticate on certification. India’s Bharatiya Sakshya Adhiniyam, 2023, §63 does the analogous work, conditioning admissibility of an electronic record on a certificate identifying the record and the manner of its production.\nEvery one of these provisions assumes you can name the system.\nNow run the scenario – A lawyer files a brief with a fabricated citation. Sanctions proceedings begin. The court asks which model produced it. The firm’s logs say fable-5. The provider’s logs say a classifier fired and Opus 4.8 answered. Or the request went through an IDE router that selected a model the firm cannot reconstruct, at a precision it never specified, on a version that has since been retired.\nThe chain of custody breaks at the router. Not at the model at the dispatcher . And it breaks in both directions: the party trying to authenticate its own output can’t, and the party trying to attack the other side’s output has a free-standing reliability argument that no expert can rebut.\nAdd the discovery problem. Routing decisions are now dispositive facts. That means router classifier logs, per-request model assignments, and precision metadata are discoverable from a vendor who currently has no obligation to retain them.\nThe fix is a signature, not a clause\nYou cannot draft your way out of this, because the representation you need is about a runtime event, and contracts are static.\nWhat the law will eventually ask for is attestable model identity : a signed assertion, returned with each response, binding the completion to a tuple of served model identifier, weights hash, precision, and system-prompt hash signed by a key rooted in hardware attestation, which confidential-computing GPU platforms already support.\nThe primitive is half-built. Response objects already carry the served model name. What is missing is the property that makes it legally useful: that it cannot be asserted falsely, and that the buyer can verify it without trusting the seller. A hash in a response header does for model identity exactly what FRE 902(14) already does for copied data turns a contested factual question into a certificate.\nRouting is good engineering. It is also, right now, an unlogged, unsigned, unverifiable substitution of the thing you bargained for. The model ID has quietly become a legal identifier. It is time somebody decided what it identifies.\nSources :\nCursor, Introducing Cursor Router (22 July 2026) — cursor.com/blog/router\nMarkTechPost, Cursor Releases Cursor Router: A Request-Level Classifier Delivering Frontier Coding Quality at 30–50% Lower Cost (22 July 2026) — marktechpost.com\nAnthropic, Redeploying Claude Fable 5 (30 June 2026) — anthropic.com/news/redeploying-fable-5\nEspressio, Claude Fable 5 Safeguards: The Opus 4.8 Fallback Explained (22 June 2026) — espressio.ai\nDigital Applied, Why Claude Just Got More Cautious About Your Code (2026) — digitalapplied.com\nOpenRouter, Provider Routing — Provider Selection (docs) — openrouter.ai/docs\nOpenRouter, Lowest-Cost LLM Inference: The Complete OpenRouter Guide (12 June 2026) — openrouter.ai/blog\nOpenRouter, How OpenRouter Model Routing Works (12 June 2026) — openrouter.ai/blog\nAabis Islam\n+ posts Bio\nAabis Islam is a student pursuing a BA LLB at National Law University, Delhi. With a strong interest in AI Law, Aabis is passionate about exploring the intersection of artificial intelligence and legal frameworks. Dedicated to understanding the implications of AI in various legal contexts, Aabis is keen on investigating the advancements in AI technologies and their practical applications in the legal field.\nAabis Islam\nWhen Claude Hallucinates in Court: The Latham & Watkins Incident and What It Means for Attorney Liability\nAabis Islam\nBeyond the Black Box: Architecting Explainable AI for the Structured Logic of Law\nAabis Islam\nAI-Driven Antitrust and Competition Law: Algorithmic Collusion, Self-Learning Pricing Tools, and Legal Challenges in the US and EU\nAabis Islam\nThe Legal Accountability of AI-Generated Deepfakes in Election Misinformation",
+  "clean_text": "Technology\nAI Shorts\nArtificial Intelligence\nApplications\nEditors Pick\nGuest Post\nLanguage Model\nLarge Language Model\nMachine Learning\nTech News\nThe line in the response object\nYou call the API. You pass model: “claude-fable-5”. You get back a completion, a token count, and a field that reads “model”: “claude-opus-4-8”.\nNothing errored. Nothing retried. The request was classified before generation began, matched a sensitive category, and was handed to a different set of weights entirely. Anthropic documented this when it brought Fable 5 back on July 1: blocked requests are sent to Opus 4.8 instead, and the user is notified. The switch happens at the API layer, and the response object names the model that actually ran.\nThat is the well-behaved version. It is also, as far as I can tell, the only version in wide deployment that tells you the truth in-band.\nTwo weeks later, Cursor shipped Router: a classifier trained on 600,000-plus live requests that reads each query’s context, complexity, and domain and dispatches it to whichever model it judges best with three early-access accounts reporting 30–50% savings against routing everything to Opus 4.8. Cursor published its routing rules but did not name a specific model per task type.\nAnd underneath both, at the aggregation layer, OpenRouter warns that some providers serve quantized weights at lower prices, that output can differ from what full-precision weights would have produced, and that your logs will not tell you this happened.\nThree products. Three different answers to the question what is a model . Zero cases telling us which one the law will accept.\nThree ways a name can stop meaning a thing\nModel identity is fracturing along three independent axes, and they are not usually distinguished:\nSubstitution – A different architecture, different weights, different capability profile – dispatched by a classifier. Fable 5 → Opus 4.8. Cursor Auto → whatever the router picks this turn.\nDegradation – The same model, served at reduced precision. OpenRouter exposes a quantizations parameter precisely because quantized endpoints may perform worse on certain prompts, and by default requests are load-balanced across providers ordered by price. Same name in your request. Different arithmetic on the other end.\nDrift – The same name pointing at silently updated weights. Every -latest alias in production is an unversioned dependency you would never tolerate in a package manifest.\nThe engineering community treats all three as reliability problems. They are also identity problems, and identity is what contracts, warranties, disclosures, and evidence rules are built on.\nSo what did you actually buy?\nStart with the oldest question in commercial law: was the description a term of the deal?\nIf an API call were a sale of goods, this would be near-trivial. UCC §2-313(1)(b) makes any description of the goods that forms part of the basis of the bargain into an express warranty that the goods will conform to it. India’s Sale of Goods Act, 1930, §15 does the same work through the doctrine of sale by description.\nBut an inference API almost certainly isn’t goods. Courts have generally treated hosted software as a service, which pushes you out of warranty statutes and into common-law contract — where the answer depends entirely on what the documentation said and how specifically the buyer bargained. That is precisely where the ambiguity lives. Enterprise agreements price per-model. Model cards are model-specific. Compliance artifacts name model versions. And then the routing layer treats the name as a hint .\nThe cleanest way to see the stakes: if your code pins a model ID rather than expressing a capability requirement, behaviour can shift materially without any error ever firing. A contract drafted the same way has the same defect. If you bargained for a name, substitution is breach. If you bargained for a capability, substitution is fine — and now you need a definition of “frontier quality” that survives cross-examination.\nNobody has written that definition. Cursor’s is instructive: Router was evaluated in an online A/B test optimising for user satisfaction as the reward signal. That is a sound engineering choice and a strange contractual one. Satisfaction is not conformity. A user who never noticed the swap is evidence of a good router, not of a delivered specification.\nThe disclosure gradient\nUnder FTC deception doctrine, a representation is actionable when it is material and likely to mislead a consumer acting reasonably; objective performance claims additionally require a reasonable basis before dissemination. Both halves bite here.\nOn the routing side, the three products sit at very different points. Anthropic notifies and returns the served model in the response. Cursor publishes rules but not per-task model assignment. OpenRouter’s quantization variance is disclosed in documentation and controllable by parameter but it is opt-out, and the default path is the cheap one.\nDisclosure buried in a docs page, defaulted against the user, is exactly the fact pattern regulators have been calling a dark pattern in every other consumer vertical.\nOn the substantiation side, the exposure is the claim , not the routing. Commentators have already flagged that a “60% cheaper, no quality loss” claim arrives without published methodology, and Anthropic’s own disclosure is a model of what candour costs: it stated plainly that the retrained classifier flags benign requests more often during routine coding and debugging. That sentence is a liability shield. The vendors who don’t write it are the ones to watch.\nThere is a competition-law tail here too. Working papers on vertical foreclosure in inference markets are already proposing a conduct framework built on routing transparency, quality-of-service parity, and FRAND-style non-discrimination. A router that is also a first-party model vendor is a self-preferencing engine wearing a cost-optimisation costume.\nThe part nobody is looking at: authentication\nThis is where I think the real fight lands, and it has nothing to do with billing. Federal Rule of Evidence 901(b)(9) authenticates output by describing the process or system that produced it and showing that the process produces an accurate result. FRE 902(13) and 902(14) go further, letting records generated by an electronic system, or data verified by hash, self-authenticate on certification. India’s Bharatiya Sakshya Adhiniyam, 2023, §63 does the analogous work, conditioning admissibility of an electronic record on a certificate identifying the record and the manner of its production.\nEvery one of these provisions assumes you can name the system.\nNow run the scenario – A lawyer files a brief with a fabricated citation. Sanctions proceedings begin. The court asks which model produced it. The firm’s logs say fable-5. The provider’s logs say a classifier fired and Opus 4.8 answered. Or the request went through an IDE router that selected a model the firm cannot reconstruct, at a precision it never specified, on a version that has since been retired.\nThe chain of custody breaks at the router. Not at the model at the dispatcher . And it breaks in both directions: the party trying to authenticate its own output can’t, and the party trying to attack the other side’s output has a free-standing reliability argument that no expert can rebut.\nAdd the discovery problem. Routing decisions are now dispositive facts. That means router classifier logs, per-request model assignments, and precision metadata are discoverable from a vendor who currently has no obligation to retain them.\nThe fix is a signature, not a clause\nYou cannot draft your way out of this, because the representation you need is about a runtime event, and contracts are static.\nWhat the law will eventually ask for is attestable model identity : a signed assertion, returned with each response, binding the completion to a tuple of served model identifier, weights hash, precision, and system-prompt hash signed by a key rooted in hardware attestation, which confidential-computing GPU platforms already support.\nThe primitive is half-built. Response objects already carry the served model name. What is missing is the property that makes it legally useful: that it cannot be asserted falsely, and that the buyer can verify it without trusting the seller. A hash in a response header does for model identity exactly what FRE 902(14) already does for copied data turns a contested factual question into a certificate.\nRouting is good engineering. It is also, right now, an unlogged, unsigned, unverifiable substitution of the thing you bargained for. The model ID has quietly become a legal identifier. It is time somebody decided what it identifies.\nSources :\nCursor, Introducing Cursor Router (22 July 2026) — cursor.com/blog/router\nMarkTechPost, Cursor Releases Cursor Router: A Request-Level Classifier Delivering Frontier Coding Quality at 30–50% Lower Cost (22 July 2026) — marktechpost.com\nAnthropic, Redeploying Claude Fable 5 (30 June 2026) — anthropic.com/news/redeploying-fable-5\nEspressio, Claude Fable 5 Safeguards: The Opus 4.8 Fallback Explained (22 June 2026) — espressio.ai\nDigital Applied, Why Claude Just Got More Cautious About Your Code (2026) — digitalapplied.com\nOpenRouter, Provider Routing — Provider Selection (docs) — openrouter.ai/docs\nOpenRouter, Lowest-Cost LLM Inference: The Complete OpenRouter Guide (12 June 2026) — openrouter.ai/blog\nOpenRouter, How OpenRouter Model Routing Works (12 June 2026) — openrouter.ai/blog\nAabis Islam\n+ posts Bio\nAabis Islam is a student pursuing a BA LLB at National Law University, Delhi. With a strong interest in AI Law, Aabis is passionate about exploring the intersection of artificial intelligence and legal frameworks. Dedicated to understanding the implications of AI in various legal contexts, Aabis is keen on investigating the advancements in AI technologies and their practical applications in the legal field.\nAabis Islam\nWhen Claude Hallucinates in Court: The Latham & Watkins Incident and What It Means for Attorney Liability\nAabis Islam\nBeyond the Black Box: Architecting Explainable AI for the Structured Logic of Law\nAabis Islam\nAI-Driven Antitrust and Competition Law: Algorithmic Collusion, Self-Learning Pricing Tools, and Legal Challenges in the US and EU\nAabis Islam\nThe Legal Accountability of AI-Generated Deepfakes in Election Misinformation",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-24/r-089-你调用的-ai-模型可能不是你付钱的那个-anthropic-被曝静默切换模型.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-24/r-089-你调用的-ai-模型可能不是你付钱的那个-anthropic-被曝静默切换模型.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 10434,
+    "paragraph_count": 51,
+    "sentence_count": 92,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 10434,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "0f746fea9f904bf3",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "你调用的 AI 模型可能不是你付钱的那个--Anthropic 被曝静默切换模型",
+    "discovery_summary": "调用 API 时指定 `model： \"claude-fable-5\"`，返回的响应中 `model` 字段却显示 `\"claude-opus-4-8\"`。Anthropic 在生成开始前对请求进行分类，匹配到敏感类别后静默切换至另一组权重，且不报错、不重试。用户实际获得的模型与付费指定的模型不一致。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/07/23/you-didnt-get-the-ai-model-you-paid-for",
+    "discovered_at": "2026-07-24T01:15:58.843Z",
+    "rank_on_page": 125,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "48bffc7e6f81e100",
+  "content_hash": "0f746fea9f904bf3",
+  "full_text_hash": "0f746fea9f904bf3",
+  "semantic_hash": "c7b1f035d83f912f",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-23T18:07:55.000Z",
+  "last_seen_at": "2026-07-24T01:25:54.471Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "调用 API 时指定 `model： \"claude-fable-5\"`，返回的响应中 `model` 字段却显示 `\"claude-opus-4-8\"`。Anthropic 在生成开始前对请求进行分类，匹配到敏感类别后静默切换至另一组权重，且不报错、不重试。用户实际获得的模型与付费指定的模型不一致。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Technology AI Shorts Artificial Intelligence Applications Editors Pick Guest Post Language Model Large Language Model Machine Learning Tech News The line in the response object You call the API.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "You pass model: “claude-fable-5”.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "You get back a completion, a token count, and a field that reads “model”: “claude-opus-4-8”.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The request was classified before generation began, matched a sensitive category, and was handed to a different set of weights entirely.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Anthropic documented this when it brought Fable 5 back on July 1: blocked requests are sent to Opus 4.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-24T01:25:54.471Z",
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "Anthropic",
+      "Cursor"
+    ],
+    "products": [
+      "claude",
+      "Cursor",
+      "cursor",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队",
+      "法务 / 律师"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "5",
+      "4",
+      "8",
+      "5 b",
+      "1",
+      "4.8",
+      "600",
+      "000"
+    ],
+    "quotes": [
+      "claude-fable-5",
+      "claude-opus-4-8",
+      "claude-fable-5",
+      "claude-opus-4-8",
+      "frontier quality"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Technology AI Shorts Artificial Intelligence Applications Editors Pick Guest Post Language Model Large Language Model Machine Learning Tech News The line in the response object You call the API.",
+      "The request was classified before generation began, matched a sensitive category, and was handed to a different set of weights entirely.",
+      "Anthropic documented this when it brought Fable 5 back on July 1: blocked requests are sent to Opus 4."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队",
+      "法务 / 律师"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 你调用的 AI 模型可能不是你付钱的那个--Anthropic 被曝静默切换模型\n\n- raw_id: R-089\n- title_zh: 你调用的 AI 模型可能不是你付钱的那个--Anthropic 被曝静默切换模型\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.marktechpost.com/2026/07/23/you-didnt-get-the-ai-model-you-paid-for\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-07-24T01:25:54.471Z\n\n## clean_text\n\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nEditors Pick\nGuest Post\nLanguage Model\nLarge Language Model\nMachine Learning\nTech News\nThe line in the response object\nYou call the API. You pass model: “claude-fable-5”. You get back a completion, a token count, and a field that reads “model”: “claude-opus-4-8”.\nNothing errored. Nothing retried. The request was classified before generation began, matched a sensitive category, and was handed to a different set of weights entirely. Anthropic documented this when it brought Fable 5 back on July 1: blocked requests are sent to Opus 4.8 instead, and the user is notified. The switch happens at the API layer, and the response object names the model that actually ran.\nThat is the well-behaved version. It is also, as far as I can tell, the only version in wide deployment that tells you the truth in-band.\nTwo weeks later, Cursor shipped Router: a classifier trained on 600,000-plus live requests that reads each query’s context, complexity, and domain and dispatches it to whichever model it judges best with three early-access accounts reporting 30–50% savings against routing everything to Opus 4.8. Cursor published its routing rules but did not name a specific model per task type.\nAnd underneath both, at the aggregation layer, OpenRouter warns that some providers serve quantized weights at lower prices, that output can differ from what full-precision weights would have produced, and that your logs will not tell you this happened.\nThree products. Three different answers to the question what is a model . Zero cases telling us which one the law will accept.\nThree ways a name can stop meaning a thing\nModel identity is fracturing along three independent axes, and they are not usually distinguished:\nSubstitution – A different architecture, different weights, different capability profile – dispatched by a classifier. Fable 5 → Opus 4.8. Cursor Auto → whatever the router picks this turn.\nDegradation – The same model, served at reduced precision. OpenRouter exposes a quantizations parameter precisely because quantized endpoints may perform worse on certain prompts, and by default requests are load-balanced across providers ordered by price. Same name in your request. Different arithmetic on the other end.\nDrift – The same name pointing at silently updated weights. Every -latest alias in production is an unversioned dependency you would never tolerate in a package manifest.\nThe engineering community treats all three as reliability problems. They are also identity problems, and identity is what contracts, warranties, disclosures, and evidence rules are built on.\nSo what did you actually buy?\nStart with the oldest question in commercial law: was the description a term of the deal?\nIf an API call were a sale of goods, this would be near-trivial. UCC §2-313(1)(b) makes any description of the goods that forms part of the basis of the bargain into an express warranty that the goods will conform to it. India’s Sale of Goods Act, 1930, §15 does the same work through the doctrine of sale by description.\nBut an inference API almost certainly isn’t goods. Courts have generally treated hosted software as a service, which pushes you out of warranty statutes and into common-law contract — where the answer depends entirely on what the documentation said and how specifically the buyer bargained. That is precisely where the ambiguity lives. Enterprise agreements price per-model. Model cards are model-specific. Compliance artifacts name model versions. And then the routing layer treats the name as a hint .\nThe cleanest way to see the stakes: if your code pins a model ID rather than expressing a capability requirement, behaviour can shift materially without any error ever firing. A contract drafted the same way has the same defect. If you bargained for a name, substitution is breach. If you bargained for a capability, substitution is fine — and now you need a definition of “frontier quality” that survives cross-examination.\nNobody has written that definition. Cursor’s is instructive: Router was evaluated in an online A/B test optimising for user satisfaction as the reward signal. That is a sound engineering choice and a strange contractual one. Satisfaction is not conformity. A user who never noticed the swap is evidence of a good router, not of a delivered specification.\nThe disclosure gradient\nUnder FTC deception doctrine, a representation is actionable when it is material and likely to mislead a consumer acting reasonably; objective performance claims additionally require a reasonable basis before dissemination. Both halves bite here.\nOn the routing side, the three products sit at very different points. Anthropic notifies and returns the served model in the response. Cursor publishes rules but not per-task model assignment. OpenRouter’s quantization variance is disclosed in documentation and controllable by parameter but it is opt-out, and the default path is the cheap one.\nDisclosure buried in a docs page, defaulted against the user, is exactly the fact pattern regulators have been calling a dark pattern in every other consumer vertical.\nOn the substantiation side, the exposure is the claim , not the routing. Commentators have already flagged that a “60% cheaper, no quality loss” claim arrives without published methodology, and Anthropic’s own disclosure is a model of what candour costs: it stated plainly that the retrained classifier flags benign requests more often during routine coding and debugging. That sentence is a liability shield. The vendors who don’t write it are the ones to watch.\nThere is a competition-law tail here too. Working papers on vertical foreclosure in inference markets are already proposing a conduct framework built on routing transparency, quality-of-service parity, and FRAND-style non-discrimination. A router that is also a first-party model vendor is a self-preferencing engine wearing a cost-optimisation costume.\nThe part nobody is looking at: authentication\nThis is where I think the real fight lands, and it has nothing to do with billing. Federal Rule of Evidence 901(b)(9) authenticates output by describing the process or system that produced it and showing that the process produces an accurate result. FRE 902(13) and 902(14) go further, letting records generated by an electronic system, or data verified by hash, self-authenticate on certification. India’s Bharatiya Sakshya Adhiniyam, 2023, §63 does the analogous work, conditioning admissibility of an electronic record on a certificate identifying the record and the manner of its production.\nEvery one of these provisions assumes you can name the system.\nNow run the scenario – A lawyer files a brief with a fabricated citation. Sanctions proceedings begin. The court asks which model produced it. The firm’s logs say fable-5. The provider’s logs say a classifier fired and Opus 4.8 answered. Or the request went through an IDE router that selected a model the firm cannot reconstruct, at a precision it never specified, on a version that has since been retired.\nThe chain of custody breaks at the router. Not at the model at the dispatcher . And it breaks in both directions: the party trying to authenticate its own output can’t, and the party trying to attack the other side’s output has a free-standing reliability argument that no expert can rebut.\nAdd the discovery problem. Routing decisions are now dispositive facts. That means router classifier logs, per-request model assignments, and precision metadata are discoverable from a vendor who currently has no obligation to retain them.\nThe fix is a signature, not a clause\nYou cannot draft your way out of this, because the representation you need is about a runtime event, and contracts are static.\nWhat the law will eventually ask for is attestable model identity : a signed assertion, returned with each response, binding the completion to a tuple of served model identifier, weights hash, precision, and system-prompt hash signed by a key rooted in hardware attestation, which confidential-computing GPU platforms already support.\nThe primitive is half-built. Response objects already carry the served model name. What is missing is the property that makes it legally useful: that it cannot be asserted falsely, and that the buyer can verify it without trusting the seller. A hash in a response header does for model identity exactly what FRE 902(14) already does for copied data turns a contested factual question into a certificate.\nRouting is good engineering. It is also, right now, an unlogged, unsigned, unverifiable substitution of the thing you bargained for. The model ID has quietly become a legal identifier. It is time somebody decided what it identifies.\nSources :\nCursor, Introducing Cursor Router (22 July 2026) — cursor.com/blog/router\nMarkTechPost, Cursor Releases Cursor Router: A Request-Level Classifier Delivering Frontier Coding Quality at 30–50% Lower Cost (22 July 2026) — marktechpost.com\nAnthropic, Redeploying Claude Fable 5 (30 June 2026) — anthropic.com/news/redeploying-fable-5\nEspressio, Claude Fable 5 Safeguards: The Opus 4.8 Fallback Explained (22 June 2026) — espressio.ai\nDigital Applied, Why Claude Just Got More Cautious About Your Code (2026) — digitalapplied.com\nOpenRouter, Provider Routing — Provider Selection (docs) — openrouter.ai/docs\nOpenRouter, Lowest-Cost LLM Inference: The Complete OpenRouter Guide (12 June 2026) — openrouter.ai/blog\nOpenRouter, How OpenRouter Model Routing Works (12 June 2026) — openrouter.ai/blog\nAabis Islam\n+ posts Bio\nAabis Islam is a student pursuing a BA LLB at National Law University, Delhi. With a strong interest in AI Law, Aabis is passionate about exploring the intersection of artificial intelligence and legal frameworks. Dedicated to understanding the implications of AI in various legal contexts, Aabis is keen on investigating the advancements in AI technologies and their practical applications in the legal field.\nAabis Islam\nWhen Claude Hallucinates in Court: The Latham & Watkins Incident and What It Means for Attorney Liability\nAabis Islam\nBeyond the Black Box: Architecting Explainable AI for the Structured Logic of Law\nAabis Islam\nAI-Driven Antitrust and Competition Law: Algorithmic Collusion, Self-Learning Pricing Tools, and Legal Challenges in the US and EU\nAabis Islam\nThe Legal Accountability of AI-Generated Deepfakes in Election Misinformation\n\n## full_text\n\nTechnology\nAI Shorts\nArtificial Intelligence\nApplications\nEditors Pick\nGuest Post\nLanguage Model\nLarge Language Model\nMachine Learning\nTech News\nThe line in the response object\nYou call the API. You pass model: “claude-fable-5”. You get back a completion, a token count, and a field that reads “model”: “claude-opus-4-8”.\nNothing errored. Nothing retried. The request was classified before generation began, matched a sensitive category, and was handed to a different set of weights entirely. Anthropic documented this when it brought Fable 5 back on July 1: blocked requests are sent to Opus 4.8 instead, and the user is notified. The switch happens at the API layer, and the response object names the model that actually ran.\nThat is the well-behaved version. It is also, as far as I can tell, the only version in wide deployment that tells you the truth in-band.\nTwo weeks later, Cursor shipped Router: a classifier trained on 600,000-plus live requests that reads each query’s context, complexity, and domain and dispatches it to whichever model it judges best with three early-access accounts reporting 30–50% savings against routing everything to Opus 4.8. Cursor published its routing rules but did not name a specific model per task type.\nAnd underneath both, at the aggregation layer, OpenRouter warns that some providers serve quantized weights at lower prices, that output can differ from what full-precision weights would have produced, and that your logs will not tell you this happened.\nThree products. Three different answers to the question what is a model . Zero cases telling us which one the law will accept.\nThree ways a name can stop meaning a thing\nModel identity is fracturing along three independent axes, and they are not usually distinguished:\nSubstitution – A different architecture, different weights, different capability profile – dispatched by a classifier. Fable 5 → Opus 4.8. Cursor Auto → whatever the router picks this turn.\nDegradation – The same model, served at reduced precision. OpenRouter exposes a quantizations parameter precisely because quantized endpoints may perform worse on certain prompts, and by default requests are load-balanced across providers ordered by price. Same name in your request. Different arithmetic on the other end.\nDrift – The same name pointing at silently updated weights. Every -latest alias in production is an unversioned dependency you would never tolerate in a package manifest.\nThe engineering community treats all three as reliability problems. They are also identity problems, and identity is what contracts, warranties, disclosures, and evidence rules are built on.\nSo what did you actually buy?\nStart with the oldest question in commercial law: was the description a term of the deal?\nIf an API call were a sale of goods, this would be near-trivial. UCC §2-313(1)(b) makes any description of the goods that forms part of the basis of the bargain into an express warranty that the goods will conform to it. India’s Sale of Goods Act, 1930, §15 does the same work through the doctrine of sale by description.\nBut an inference API almost certainly isn’t goods. Courts have generally treated hosted software as a service, which pushes you out of warranty statutes and into common-law contract — where the answer depends entirely on what the documentation said and how specifically the buyer bargained. That is precisely where the ambiguity lives. Enterprise agreements price per-model. Model cards are model-specific. Compliance artifacts name model versions. And then the routing layer treats the name as a hint .\nThe cleanest way to see the stakes: if your code pins a model ID rather than expressing a capability requirement, behaviour can shift materially without any error ever firing. A contract drafted the same way has the same defect. If you bargained for a name, substitution is breach. If you bargained for a capability, substitution is fine — and now you need a definition of “frontier quality” that survives cross-examination.\nNobody has written that definition. Cursor’s is instructive: Router was evaluated in an online A/B test optimising for user satisfaction as the reward signal. That is a sound engineering choice and a strange contractual one. Satisfaction is not conformity. A user who never noticed the swap is evidence of a good router, not of a delivered specification.\nThe disclosure gradient\nUnder FTC deception doctrine, a representation is actionable when it is material and likely to mislead a consumer acting reasonably; objective performance claims additionally require a reasonable basis before dissemination. Both halves bite here.\nOn the routing side, the three products sit at very different points. Anthropic notifies and returns the served model in the response. Cursor publishes rules but not per-task model assignment. OpenRouter’s quantization variance is disclosed in documentation and controllable by parameter but it is opt-out, and the default path is the cheap one.\nDisclosure buried in a docs page, defaulted against the user, is exactly the fact pattern regulators have been calling a dark pattern in every other consumer vertical.\nOn the substantiation side, the exposure is the claim , not the routing. Commentators have already flagged that a “60% cheaper, no quality loss” claim arrives without published methodology, and Anthropic’s own disclosure is a model of what candour costs: it stated plainly that the retrained classifier flags benign requests more often during routine coding and debugging. That sentence is a liability shield. The vendors who don’t write it are the ones to watch.\nThere is a competition-law tail here too. Working papers on vertical foreclosure in inference markets are already proposing a conduct framework built on routing transparency, quality-of-service parity, and FRAND-style non-discrimination. A router that is also a first-party model vendor is a self-preferencing engine wearing a cost-optimisation costume.\nThe part nobody is looking at: authentication\nThis is where I think the real fight lands, and it has nothing to do with billing. Federal Rule of Evidence 901(b)(9) authenticates output by describing the process or system that produced it and showing that the process produces an accurate result. FRE 902(13) and 902(14) go further, letting records generated by an electronic system, or data verified by hash, self-authenticate on certification. India’s Bharatiya Sakshya Adhiniyam, 2023, §63 does the analogous work, conditioning admissibility of an electronic record on a certificate identifying the record and the manner of its production.\nEvery one of these provisions assumes you can name the system.\nNow run the scenario – A lawyer files a brief with a fabricated citation. Sanctions proceedings begin. The court asks which model produced it. The firm’s logs say fable-5. The provider’s logs say a classifier fired and Opus 4.8 answered. Or the request went through an IDE router that selected a model the firm cannot reconstruct, at a precision it never specified, on a version that has since been retired.\nThe chain of custody breaks at the router. Not at the model at the dispatcher . And it breaks in both directions: the party trying to authenticate its own output can’t, and the party trying to attack the other side’s output has a free-standing reliability argument that no expert can rebut.\nAdd the discovery problem. Routing decisions are now dispositive facts. That means router classifier logs, per-request model assignments, and precision metadata are discoverable from a vendor who currently has no obligation to retain them.\nThe fix is a signature, not a clause\nYou cannot draft your way out of this, because the representation you need is about a runtime event, and contracts are static.\nWhat the law will eventually ask for is attestable model identity : a signed assertion, returned with each response, binding the completion to a tuple of served model identifier, weights hash, precision, and system-prompt hash signed by a key rooted in hardware attestation, which confidential-computing GPU platforms already support.\nThe primitive is half-built. Response objects already carry the served model name. What is missing is the property that makes it legally useful: that it cannot be asserted falsely, and that the buyer can verify it without trusting the seller. A hash in a response header does for model identity exactly what FRE 902(14) already does for copied data turns a contested factual question into a certificate.\nRouting is good engineering. It is also, right now, an unlogged, unsigned, unverifiable substitution of the thing you bargained for. The model ID has quietly become a legal identifier. It is time somebody decided what it identifies.\nSources :\nCursor, Introducing Cursor Router (22 July 2026) — cursor.com/blog/router\nMarkTechPost, Cursor Releases Cursor Router: A Request-Level Classifier Delivering Frontier Coding Quality at 30–50% Lower Cost (22 July 2026) — marktechpost.com\nAnthropic, Redeploying Claude Fable 5 (30 June 2026) — anthropic.com/news/redeploying-fable-5\nEspressio, Claude Fable 5 Safeguards: The Opus 4.8 Fallback Explained (22 June 2026) — espressio.ai\nDigital Applied, Why Claude Just Got More Cautious About Your Code (2026) — digitalapplied.com\nOpenRouter, Provider Routing — Provider Selection (docs) — openrouter.ai/docs\nOpenRouter, Lowest-Cost LLM Inference: The Complete OpenRouter Guide (12 June 2026) — openrouter.ai/blog\nOpenRouter, How OpenRouter Model Routing Works (12 June 2026) — openrouter.ai/blog\nAabis Islam\n+ posts Bio\nAabis Islam is a student pursuing a BA LLB at National Law University, Delhi. With a strong interest in AI Law, Aabis is passionate about exploring the intersection of artificial intelligence and legal frameworks. Dedicated to understanding the implications of AI in various legal contexts, Aabis is keen on investigating the advancements in AI technologies and their practical applications in the legal field.\nAabis Islam\nWhen Claude Hallucinates in Court: The Latham & Watkins Incident and What It Means for Attorney Liability\nAabis Islam\nBeyond the Black Box: Architecting Explainable AI for the Structured Logic of Law\nAabis Islam\nAI-Driven Antitrust and Competition Law: Algorithmic Collusion, Self-Learning Pricing Tools, and Legal Challenges in the US and EU\nAabis Islam\nThe Legal Accountability of AI-Generated Deepfakes in Election Misinformation\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] 调用 API 时指定 `model： \"claude-fable-5\"`，返回的响应中 `model` 字段却显示 `\"claude-opus-4-8\"`。Anthropic 在生成开始前对请求进行分类，匹配到敏感类别后静默切换至另一组权重，且不报错、不重试。用户实际获得的模型与付费指定的模型不一致。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Technology AI Shorts Artificial Intelligence Applications Editors Pick Guest Post Language Model Large Language Model Machine Learning Tech News The line in the response object You call the API.\n3. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] You pass model: “claude-fable-5”.\n4. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] You get back a completion, a token count, and a field that reads “model”: “claude-opus-4-8”.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The request was classified before generation began, matched a sensitive category, and was handed to a different set of weights entirely.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Anthropic documented this when it brought Fable 5 back on July 1: blocked requests are sent to Opus 4.\n"
+}

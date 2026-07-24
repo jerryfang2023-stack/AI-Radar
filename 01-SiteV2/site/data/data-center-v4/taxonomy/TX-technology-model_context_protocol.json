@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-23T03:54:13.158Z",
-    "latestDataDate": "2026-07-23",
-    "currentDate": "2026-07-23",
-    "eventCount": 1455,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
   },
   "node": {
     "id": "TX-technology-model_context_protocol",
@@ -1226,6 +1226,7 @@
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
         "EV-c3f617e75d303f59",
+        "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
         "EV-8a2d8ebbd700c787",
         "EV-2c16aa6254de4496",
@@ -1255,6 +1256,11 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-2634b786bde9fb8e",
+        "EV-3b7b9040dd2c2a89",
+        "EV-ae9f1e2cf5a28be4",
+        "EV-fbc316f83b63a543",
+        "EV-fe519605ebb69aaf",
         "EV-6cd7509380208a9d",
         "EV-0d5a32aca724d30e",
         "EV-3e449c3e9ad6a9e1",
@@ -1485,6 +1491,8 @@
         "TX-industry-education"
       ],
       "relatedEntityIds": [
+        "EN-fa12a0c13e906f43",
+        "EN-98fdc0804bb472fe",
         "EN-830abc32d2a443c5",
         "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
@@ -1510,7 +1518,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-e6483498af8bd2cd",
@@ -1619,6 +1627,9 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-37ff2485172cab0b",
+        "EV-82ae0ea3bfe336a1",
+        "EV-563843979fb55b9b",
         "EV-6c81f03e885f10af",
         "EV-e1e30a2a4a5232c6",
         "EV-cd067fa6f39fe828",
@@ -1689,10 +1700,13 @@
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
+        "TX-technology-image_generation",
         "TX-technology-distillation",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
         "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
@@ -1705,7 +1719,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-d2f4e09cb01afa3c",
@@ -1822,6 +1836,8 @@
         "EV-3b40ec144e5db22c",
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
+        "EV-b78d7fc420117d68",
+        "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
         "EV-6fa2c58973ea61b4",
         "EV-e15ae1112294d59e",
@@ -1852,6 +1868,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-5ec22cf9a1fb59d4",
+        "EV-b0dec1e885a601fe",
+        "EV-2634b786bde9fb8e",
+        "EV-3b7b9040dd2c2a89",
+        "EV-fe519605ebb69aaf",
         "EV-0d5a32aca724d30e",
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
@@ -1968,6 +1989,8 @@
         "EV-773ffcc6e1df56fa",
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-a0ec365561b53cd4",
+        "EV-d40d5c9625f296db",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
@@ -2068,7 +2091,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-178e3a5167e8e1d5",
@@ -2218,6 +2241,7 @@
         "EV-df2357fc3c3b4f5e",
         "EV-bbc1042dcf5ad317",
         "EV-b95539d17772a4ce",
+        "EV-9fb08b68f301eb88",
         "EV-347d250e2769de9a",
         "EV-7449d239223d4928",
         "EV-2f56b99f72ad6c4f"
@@ -2229,13 +2253,14 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-model_context_protocol",
         "TX-technology-tool_use",
-        "TX-technology-reasoning"
+        "TX-technology-reasoning",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-dc6c28a2123e8efb"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-d6d6e4e33c59b45e",

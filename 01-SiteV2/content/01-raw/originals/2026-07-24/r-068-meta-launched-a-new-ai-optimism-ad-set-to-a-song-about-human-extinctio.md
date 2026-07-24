@@ -1,0 +1,332 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-068
+title: "Meta launched a new AI optimism ad set to a song about human extinction"
+title_zh: "Meta 推出新AI乐观广告，配乐主题为人类灭绝"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://techcrunch.com/2026/07/23/meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinction/"
+canonical_url: "https://techcrunch.com/2026/07/23/meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinction"
+source_name: "TechCrunch AI"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-23T00:00:00.000Z"
+collected_at: 2026-07-24T01:25:47.126Z
+language: mixed
+full_text_hash: aeba8a93b3074392
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-068-meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinctio.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-068-meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinctio.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":7886,"paragraph_count":48,"sentence_count":53,"boilerplate_hits":4,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 7886
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"aeba8a93b3074392","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 5dcf6e84b818680f
+content_hash: aeba8a93b3074392
+semantic_hash: ca389a8b0eab93f1
+duplicate_of: ""
+first_seen_at: "2026-07-23T00:00:00.000Z"
+last_seen_at: 2026-07-24T01:25:47.126Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["TechCrunch AI","OpenAI","Anthropic","Google","Meta"],"products":["Claude","agents","Gemini"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["9","28","23","2026\nM","8","2021\nM","1","4"],"quotes":["Five Years,","Some people will have you believe AI is going to make us feel less connected. That it’s going to leave us behind,","We couldn’t disagree more.","Call us optimists. Call us dreamers. Call us whatever the hell you want. But we’re betting on people, and we like those odds,","The future is for everyone."]}
+evidence_seed: {"company_actions":["Image Credits: Creative Images Lab / Getty Images AI Meta launched a new AI optimism ad set to a song about human extinction Amanda Silberling 9:28 AM PDT · July 23, 2026 Meta’s newest advertisement begins with a black-and-white shot of an eye, showing us what someone sees as they read countless panicked headlines about how AI is going to take our jobs, isolate us, and spark a global crisis.","“We couldn’t disagree more.","” Suddenly, the video shifts to color, and shows a cycle of different people opening their eyes and smiling."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"David Bowie's song \"Five Years,\" which Meta used in a supposedly inspiring advertisement, is about humans learning that they have five years left to live before the apocalypse.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Image Credits: Creative Images Lab / Getty Images AI Meta launched a new AI optimism ad set to a song about human extinction Amanda Silberling 9:28 AM PDT · July 23, 2026 Meta’s newest advertisement begins with a black-and-white shot of an eye, showing us what someone sees as they read countless panicked headlines about how AI is going to take our jobs, isolate us, and spark a global crisis.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"opinion","text":"“Some people will have you believe AI is going to make us feel less connected.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"opinion","text":"That it’s going to leave us behind,” a voiceover says.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"“We couldn’t disagree more.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"” Suddenly, the video shifts to color, and shows a cycle of different people opening their eyes and smiling.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-24T01:25:47.126Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Meta launched a new AI optimism ad set to a song about human extinction
+
+## clean_text
+
+Image Credits: Creative Images Lab / Getty Images
+AI
+Meta launched a new AI optimism ad set to a song about human extinction
+Amanda Silberling
+9:28 AM PDT · July 23, 2026
+Meta’s newest advertisement begins with a black-and-white shot of an eye, showing us what someone sees as they read countless panicked headlines about how AI is going to take our jobs, isolate us, and spark a global crisis.
+“Some people will have you believe AI is going to make us feel less connected. That it’s going to leave us behind,” a voiceover says. “We couldn’t disagree more.”
+Suddenly, the video shifts to color, and shows a cycle of different people opening their eyes and smiling. Then, we see a couple dancing on a rooftop, pointing at a rainbow; a group of teens swimming in a lake; a child frolicking in a field; friends embracing after time apart.
+“Call us optimists. Call us dreamers. Call us whatever the hell you want. But we’re betting on people, and we like those odds,” the voiceover says. “The future is for everyone.”
+That’s a nice sentiment — pretty convenient for a company betting hundreds of billions of dollars that AI will revolutionize humanity. But the strangest part of the advertisement is not that we’re watching these happy moments play out via Instagram posts. It’s that the soundtrack to the ad is the David Bowie song “Five Years.”
+If you are not familiar with this song, I urge you to give it a listen , read the lyrics , and think about what it is trying to say. It seems clear to me, but I studied poetry in college, so as a control for this experiment, I asked my brother — a blockchain analyst who loves Claude Code and does not read for fun — if he could tell me what the song is about.
+“I thought climate change at first, then zombie apocalypse, then an asteroid hitting the earth,” he told me. He is correct. It is a song about the human race panicking after learning they will die in a mass-extinction event in five years.
+Image Credits: Texts from my brother, a consenting participant in this literary experiment
+If you’re not familiar with Bowie’s music, this track might sound happy and inspiring, matching the ad’s upbeat tone. The part of the song that is used for the advertisement was probably chosen because it uses the word “people” over and over again, and without the context of the song, it’s not clear what it’s about.
+But if we look at the lines directly preceding this section:
+News had just come over
+We had five years left to cry in
+News guy wept and told us
+Earth was really dying
+Cried so much his face was wet
+Then I knew he was not lying
+We “had five years left to cry in” and the “earth was really dying.” It’s pretty bleak.
+It is not reassuring to convince people that AI is going to make the world better while playing a song about the end of the world, and yet, this contradictory musical choice seems to have sailed right past everyone at Meta, including CEO Mark Zuckerberg.
+“Meta has always believed in giving people the power to share, connect, and shape your world in the ways you want,” he wrote alongside the video. “As we enter this next wave with AI, we continue to believe the future is for everyone. We’re focused on giving every person the tools to reach your full potential and making sure the benefits of technology are distributed to everyone.”
+Then again, tech leaders are not known for their literary analysis skills. Meta’s Oculus used to give new hires copies of the science fiction novel “ Ready Player One ,” which is set in a dystopia in which a tech company making virtual reality products becomes overly powerful and evil. OpenAI CEO Sam Altman has directly cited inspiration from the movie “Her,” which warns us about what can go wrong when we use AI for emotional support . Palantir, a company that builds AI surveillance systems for the government, is named after Palantir, a seeing stone from the “Lord of the Rings” franchise that the Dark Lord uses to spy on his enemies. Elon Musk is currently throwing a fit about the “accuracy” of Christopher Nolan’s blockbuster adaptation of “The Odyssey,” a story with such realistic elements as sea monsters, magic, and divine intervention. These guys make a great argument for the value of studying the humanities.
+Sci-Fi Author: In my book I invented the Torment Nexus as a cautionary tale
+Tech Company: At long last, we have created the Torment Nexus from classic sci-fi novel Don't Create The Torment Nexus
+&mdash; Alex Blechman (@AlexBlechman) November 8, 2021
+Meta isn’t alone in its recent promotional foibles. Instead of racing to build AGI, the top AI companies seem to be fighting over who can make the creepiest advertisement. A few weeks ago, Anthropic released an eerie video of its own. As my colleague Lucas Ropek described it:
+The ad begins with a video of a burning house (not exactly a heartwarming start) before pivoting to a series of still images. These images include a crowd of people being surveilled by facial recognition, a homeless person sleeping on the street, rows upon rows of tombstones in a cemetery, and what appears to be a group of laborers toiling in a mine where (presumably) raw materials for smartphones are being dug up.
+Meanwhile, a voice-over track features different people asking questions like “Can AI be trusted?” and “Who’s gonna hit the brakes if we need to?”
+Anthropic is trying to convince us that it understands the risks AI poses to society, and therefore, this is the company that people can trust to develop AI responsibly. The message it actually conveys feels closer to the mood of Bowie’s “Five Years.”
+i thought this was satire, kept looking for the handle to be spelled c1audeai or something https://t.co/4AVBA93Z27
+&mdash; Sam Altman (@sama) July 14, 2026
+OpenAI CEO Sam Altman responded to the Anthropic ad, “I thought this was satire, kept looking for the handle to be spelled c1audeai or something.”
+As these companies spar to control the public perception of AI, their efforts don’t seem to be making much progress. A recent Pew survey found that only 16% of Americans think that AI’s impact on society over the next 20 years will be positive, and 40% believe it will have a negative impact. Better luck next time, Meta.
+Topics
+AI , Meta
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Amanda Silberling
+Senior Writer
+Amanda Silberling is a senior writer at TechCrunch covering the intersection of technology and culture. She has also written for publications like Polygon, MTV, the Kenyon Review, NPR, and Business Insider. She is the co-host of Wow If True, a podcast about internet culture, with science fiction author Isabel J. Kim. Prior to joining TechCrunch, she worked as a grassroots organizer, museum educator, and film festival coordinator. She holds a B.A. in English from the University of Pennsylvania and served as a Princeton in Asia Fellow in Laos.
+You can contact or verify outreach from Amanda by emailing amanda@techcrunch.com or via encrypted message at @amanda.100 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+OpenAI says Hugging Face was breached by its pre-release models
+Russell Brandom
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Anthropic’s landmark $1.5B copyright settlement is approved
+Kirsten Korosec
+Google is working on a new AI chip designed to make Gemini more efficient
+Lucas Ropek
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Creative Images Lab / Getty Images
+AI
+Meta launched a new AI optimism ad set to a song about human extinction
+Amanda Silberling
+9:28 AM PDT · July 23, 2026
+Meta’s newest advertisement begins with a black-and-white shot of an eye, showing us what someone sees as they read countless panicked headlines about how AI is going to take our jobs, isolate us, and spark a global crisis.
+“Some people will have you believe AI is going to make us feel less connected. That it’s going to leave us behind,” a voiceover says. “We couldn’t disagree more.”
+Suddenly, the video shifts to color, and shows a cycle of different people opening their eyes and smiling. Then, we see a couple dancing on a rooftop, pointing at a rainbow; a group of teens swimming in a lake; a child frolicking in a field; friends embracing after time apart.
+“Call us optimists. Call us dreamers. Call us whatever the hell you want. But we’re betting on people, and we like those odds,” the voiceover says. “The future is for everyone.”
+That’s a nice sentiment — pretty convenient for a company betting hundreds of billions of dollars that AI will revolutionize humanity. But the strangest part of the advertisement is not that we’re watching these happy moments play out via Instagram posts. It’s that the soundtrack to the ad is the David Bowie song “Five Years.”
+If you are not familiar with this song, I urge you to give it a listen , read the lyrics , and think about what it is trying to say. It seems clear to me, but I studied poetry in college, so as a control for this experiment, I asked my brother — a blockchain analyst who loves Claude Code and does not read for fun — if he could tell me what the song is about.
+“I thought climate change at first, then zombie apocalypse, then an asteroid hitting the earth,” he told me. He is correct. It is a song about the human race panicking after learning they will die in a mass-extinction event in five years.
+Image Credits: Texts from my brother, a consenting participant in this literary experiment
+If you’re not familiar with Bowie’s music, this track might sound happy and inspiring, matching the ad’s upbeat tone. The part of the song that is used for the advertisement was probably chosen because it uses the word “people” over and over again, and without the context of the song, it’s not clear what it’s about.
+But if we look at the lines directly preceding this section:
+News had just come over
+We had five years left to cry in
+News guy wept and told us
+Earth was really dying
+Cried so much his face was wet
+Then I knew he was not lying
+We “had five years left to cry in” and the “earth was really dying.” It’s pretty bleak.
+It is not reassuring to convince people that AI is going to make the world better while playing a song about the end of the world, and yet, this contradictory musical choice seems to have sailed right past everyone at Meta, including CEO Mark Zuckerberg.
+“Meta has always believed in giving people the power to share, connect, and shape your world in the ways you want,” he wrote alongside the video. “As we enter this next wave with AI, we continue to believe the future is for everyone. We’re focused on giving every person the tools to reach your full potential and making sure the benefits of technology are distributed to everyone.”
+Then again, tech leaders are not known for their literary analysis skills. Meta’s Oculus used to give new hires copies of the science fiction novel “ Ready Player One ,” which is set in a dystopia in which a tech company making virtual reality products becomes overly powerful and evil. OpenAI CEO Sam Altman has directly cited inspiration from the movie “Her,” which warns us about what can go wrong when we use AI for emotional support . Palantir, a company that builds AI surveillance systems for the government, is named after Palantir, a seeing stone from the “Lord of the Rings” franchise that the Dark Lord uses to spy on his enemies. Elon Musk is currently throwing a fit about the “accuracy” of Christopher Nolan’s blockbuster adaptation of “The Odyssey,” a story with such realistic elements as sea monsters, magic, and divine intervention. These guys make a great argument for the value of studying the humanities.
+Sci-Fi Author: In my book I invented the Torment Nexus as a cautionary tale
+Tech Company: At long last, we have created the Torment Nexus from classic sci-fi novel Don't Create The Torment Nexus
+&mdash; Alex Blechman (@AlexBlechman) November 8, 2021
+Meta isn’t alone in its recent promotional foibles. Instead of racing to build AGI, the top AI companies seem to be fighting over who can make the creepiest advertisement. A few weeks ago, Anthropic released an eerie video of its own. As my colleague Lucas Ropek described it:
+The ad begins with a video of a burning house (not exactly a heartwarming start) before pivoting to a series of still images. These images include a crowd of people being surveilled by facial recognition, a homeless person sleeping on the street, rows upon rows of tombstones in a cemetery, and what appears to be a group of laborers toiling in a mine where (presumably) raw materials for smartphones are being dug up.
+Meanwhile, a voice-over track features different people asking questions like “Can AI be trusted?” and “Who’s gonna hit the brakes if we need to?”
+Anthropic is trying to convince us that it understands the risks AI poses to society, and therefore, this is the company that people can trust to develop AI responsibly. The message it actually conveys feels closer to the mood of Bowie’s “Five Years.”
+i thought this was satire, kept looking for the handle to be spelled c1audeai or something https://t.co/4AVBA93Z27
+&mdash; Sam Altman (@sama) July 14, 2026
+OpenAI CEO Sam Altman responded to the Anthropic ad, “I thought this was satire, kept looking for the handle to be spelled c1audeai or something.”
+As these companies spar to control the public perception of AI, their efforts don’t seem to be making much progress. A recent Pew survey found that only 16% of Americans think that AI’s impact on society over the next 20 years will be positive, and 40% believe it will have a negative impact. Better luck next time, Meta.
+Topics
+AI , Meta
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Amanda Silberling
+Senior Writer
+Amanda Silberling is a senior writer at TechCrunch covering the intersection of technology and culture. She has also written for publications like Polygon, MTV, the Kenyon Review, NPR, and Business Insider. She is the co-host of Wow If True, a podcast about internet culture, with science fiction author Isabel J. Kim. Prior to joining TechCrunch, she worked as a grassroots organizer, museum educator, and film festival coordinator. She holds a B.A. in English from the University of Pennsylvania and served as a Princeton in Asia Fellow in Laos.
+You can contact or verify outreach from Amanda by emailing amanda@techcrunch.com or via encrypted message at @amanda.100 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+OpenAI says Hugging Face was breached by its pre-release models
+Russell Brandom
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Anthropic’s landmark $1.5B copyright settlement is approved
+Kirsten Korosec
+Google is working on a new AI chip designed to make Gemini more efficient
+Lucas Ropek
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 85
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":7886,"paragraph_count":48,"sentence_count":53,"boilerplate_hits":4,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   David Bowie's song "Five Years," which Meta used in a supposedly inspiring advertisement, is about humans learning that they have five years left to live before the apocalypse.
+
+2. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   Image Credits: Creative Images Lab / Getty Images AI Meta launched a new AI optimism ad set to a song about human extinction Amanda Silberling 9:28 AM PDT · July 23, 2026 Meta’s newest advertisement begins with a black-and-white shot of an eye, showing us what someone sees as they read countless panicked headlines about how AI is going to take our jobs, isolate us, and spark a global crisis.
+
+3. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   “Some people will have you believe AI is going to make us feel less connected.
+
+4. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   That it’s going to leave us behind,” a voiceover says.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   “We couldn’t disagree more.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   ” Suddenly, the video shifts to color, and shows a cycle of different people opening their eyes and smiling.
+
+## business_elements
+
+- companies: TechCrunch AI, OpenAI, Anthropic, Google, Meta
+- products: Claude, agents, Gemini
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 9, 28, 23, 2026
+M, 8, 2021
+M, 1, 4
+- quotes: Five Years, / Some people will have you believe AI is going to make us feel less connected. That it’s going to leave us behind, / We couldn’t disagree more. / Call us optimists. Call us dreamers. Call us whatever the hell you want. But we’re betting on people, and we like those odds, / The future is for everyone.
+
+## evidence_seed
+
+- company_actions: Image Credits: Creative Images Lab / Getty Images AI Meta launched a new AI optimism ad set to a song about human extinction Amanda Silberling 9:28 AM PDT · July 23, 2026 Meta’s newest advertisement begins with a black-and-white shot of an eye, showing us what someone sees as they read countless panicked headlines about how AI is going to take our jobs, isolate us, and spark a global crisis. / “We couldn’t disagree more. / ” Suddenly, the video shifts to color, and shows a cycle of different people opening their eyes and smiling.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+David Bowie's song "Five Years," which Meta used in a supposedly inspiring advertisement, is about humans learning that they have five years left to live before the apocalypse.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

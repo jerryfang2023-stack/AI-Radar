@@ -1,0 +1,283 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-008",
+  "title": "Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型",
+  "title_zh": "Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://github.com/cactus-compute/cactus-hybrid",
+  "canonical_url": "https://github.com/cactus-compute/cactus-hybrid",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "repo_readme_or_index",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-23T05:47:29.042Z",
+  "collected_at": "2026-07-24T01:25:15.128Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\ncactus-compute\ncactus-hybrid\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n157\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n10 Commits\n10 Commits\npatches/ llama.cpp\npatches/ llama.cpp\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nCactus Hybrid\nA small, on-device model is fast and private, but sometimes wrong.\nAt Cactus we post-train models to know when they are wrong : we ship probes\ninside the checkpoint that score every answer with a confidence between\n0 and 1, returned as structured data (never parsed out of the answer text).\nAnswer on-device when confidence is high; you can re-route to a bigger\nmodel when it's low:\nif confidence < 0.85 :\nanswer = ask_a_bigger_model ( prompt )\nWe start the rollout with Gemma 4 E2B Hybrid , all builds live in the\nCactus Hybrid collection\non Hugging Face.\nGemma 4 E2B hybrid, the smallest Gemma model, matches Gemini 3.1 Flash-Lite\non common benchmarks by routing only 15–55% of queries to the Gemini 3.1 Flash-Lite and\nrunning the remnant itself.\nBenchmark\nHandoff to match Flash-Lite (FP16)\nAt 4-bit\nAt 3-bit\nChartQA\n15–20%\n25–30%\n40–50%\nMMBench\n30–35%\n40–45%\n50–55%\nLibriSpeech\n25–30%\n35–40%\n55–65%\nGigaSpeech\n30–35%\n40–45%\n50–55%\nMMAU\n30–35%\n35–40%\n50–55%\nMMLU-Pro\n45–55%\n~90%\nn/a\nN/B: Quantisation quality is measured on Cactus Quants\nwhich performs well at uniform quantization.\nDevelopers are encouraged to benchmark for Unsloth, GGUF, and MLX quantization independently.\nCactus\n# pip install cactus-compute\nimport json\nfrom cactus . bindings . cactus import cactus_complete , cactus_init\nfrom cactus . cli . download import download_bundle\nlm = cactus_init ( str ( download_bundle ( \"Cactus-Compute/gemma-4-E2B-it\" )))\nresult = cactus_complete (\nlm ,\n[{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }],\njson . dumps ({ \"max_tokens\" : 512 , \"auto_handoff\" : False }),\nNone ,\nlambda * _ : None ,\nprint ( result [ \"response\" ]. strip ())\nprint ( \"confidence:\" , result [ \"confidence\" ])\nMLX\n# pip install mlx-lm\nimport re\nfrom mlx_lm import load , generate\nmodel , tokenizer = load (\n\"Cactus-Compute/gemma-4-e2b-it-hybrid-mlx\" ,\ntokenizer_config = { \"trust_remote_code\" : True },\nmessages = [{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }]\nanswer = generate (\nmodel ,\ntokenizer ,\nprompt = tokenizer . apply_chat_template ( messages , add_generation_prompt = True ),\nmax_tokens = 512 ,\n# the checkpoint reasons before answering; keep only the final answer\nanswer = re . split ( r\"<\\|?channel\\|?>\" , answer )[ - 1 ]\nanswer = re . sub ( r\"^(thought|final)\\b\\s*\" , \"\" , answer ). strip ()\nprint ( answer )\nprint ( \"confidence:\" , model . last_confidence )\nTransformers\n# pip install \"transformers>=5.5.4,<5.6\" torch (5.14+ segfaults on this checkpoint)\nimport torch\nfrom transformers import AutoModelForCausalLM , AutoTokenizer\nmodel_id = \"Cactus-Compute/gemma-4-e2b-it-hybrid\"\ndevice = \"cuda\" if torch . cuda . is_available () else \"mps\" if torch . backends . mps . is_available () else \"cpu\"\ntokenizer = AutoTokenizer . from_pretrained ( model_id , trust_remote_code = True )\nmodel = AutoModelForCausalLM . from_pretrained ( model_id , trust_remote_code = True , dtype = \"auto\" ). to ( device )\nmessages = [{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }]\ninputs = tokenizer . apply_chat_template (\nmessages , add_generation_prompt = True , return_tensors = \"pt\" , return_dict = True\n). to ( device )\nout = model . generate ( ** inputs , return_confidence = True , max_new_tokens = 512 )\nprint ( tokenizer . decode ( out . sequences [ 0 ][ inputs [ \"input_ids\" ]. shape [ - 1 ]:], skip_special_tokens = True ))\nprint ( \"confidence:\" , out . confidence )\nLoad the model with an explicit .to(device) , not device_map=\"auto\" : the\nprobe scores generations outside the module forward() path, so weights that\naccelerate offloads (left on the meta device) crash the confidence read.\nllama.cpp\nllama.cpp is C++, so the probe is a patch you compile into the engine (see\npatches/llama.cpp/ ). Build the patched server once:\ngit clone https://github.com/cactus-compute/cactus-hybrid && cd cactus-hybrid\n./patches/llama.cpp/install.sh && rehash\nThen serve and query it like any llama-server — the response carries a\ntop-level confidence field:\nllama-server -hf Cactus-Compute/gemma-4-e2b-it-hybrid-GGUF:Q4_K_M --jinja\ncurl -s http://localhost:8080/v1/chat/completions \\\n-d ' {\"messages\":[{\"role\":\"user\",\"content\":\"What is the capital of France?\"}],\"max_tokens\":512} ' \\\n| jq ' {answer: .choices[0].message.content, confidence} '\nRouting Quality (AUROC)\nGemma 4 E2B Hybrid AUROC measures how well the the separates wrong answers from right ones\n(higher = better, 0.5 is random, 1.0 is perfect):\nHold-out\nModality\nCactus Hybrid\nToken Entropy\nMMLU\ntext MCQ\n0.770\n0.697\nMMLU-Pro\ntext MCQ\n0.771\n0.692\nARC-Easy\ntext MCQ\n0.888\n0.655\nARC-Challenge\ntext MCQ\n0.834\n0.646\nGSM8K (3-shot)\ntext gen\n0.782\n0.731\nMMBench-EN-Dev\nvision MCQ\n0.840\n0.435\nChartQA\nvision QA\n0.779\n0.615\nDocVQA\nvision QA\n0.781\n0.512\nMMAU\naudio MCQ\n0.789\n0.517\nGigaSpeech\naudio\n0.876\n0.343\nEarnings-22\naudio\n0.839\n0.323\nLibriSpeech\naudio\n0.822\n0.427\nMean\n0.814\n0.549\nThe strongest result: the probe was trained on zero audio data , yet achieves\n0.79–0.88 AUROC on four audio benchmarks (two transcription, one audio MCQ, one\nout-of-domain transcription).\nThis rules out surface-level explanations, the probe\nis reading a modality-independent correctness signal from the hidden state, not\nmemorizing patterns from training data.\nMIT-licensed. Gemma model use is subject to the Gemma terms.\nAbout\nOn-device models that know when they're wrong: every answer carries a confidence score for cloud handoff.\nhuggingface.co/collections/Cactus-Compute/cactus-hybrid-6a60da4551074db058e8bb64\nResources\nReadme\nMIT license\nActivity\nCustom properties\nStars\n157 stars\nWatchers\n0 watching\nForks\n3 forks\nReport repository\nReleases\nPackages\nContributors\nLanguages",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\ncactus-compute\ncactus-hybrid\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n157\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n10 Commits\n10 Commits\npatches/ llama.cpp\npatches/ llama.cpp\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nCactus Hybrid\nA small, on-device model is fast and private, but sometimes wrong.\nAt Cactus we post-train models to know when they are wrong : we ship probes\ninside the checkpoint that score every answer with a confidence between\n0 and 1, returned as structured data (never parsed out of the answer text).\nAnswer on-device when confidence is high; you can re-route to a bigger\nmodel when it's low:\nif confidence < 0.85 :\nanswer = ask_a_bigger_model ( prompt )\nWe start the rollout with Gemma 4 E2B Hybrid , all builds live in the\nCactus Hybrid collection\non Hugging Face.\nGemma 4 E2B hybrid, the smallest Gemma model, matches Gemini 3.1 Flash-Lite\non common benchmarks by routing only 15–55% of queries to the Gemini 3.1 Flash-Lite and\nrunning the remnant itself.\nBenchmark\nHandoff to match Flash-Lite (FP16)\nAt 4-bit\nAt 3-bit\nChartQA\n15–20%\n25–30%\n40–50%\nMMBench\n30–35%\n40–45%\n50–55%\nLibriSpeech\n25–30%\n35–40%\n55–65%\nGigaSpeech\n30–35%\n40–45%\n50–55%\nMMAU\n30–35%\n35–40%\n50–55%\nMMLU-Pro\n45–55%\n~90%\nn/a\nN/B: Quantisation quality is measured on Cactus Quants\nwhich performs well at uniform quantization.\nDevelopers are encouraged to benchmark for Unsloth, GGUF, and MLX quantization independently.\nCactus\n# pip install cactus-compute\nimport json\nfrom cactus . bindings . cactus import cactus_complete , cactus_init\nfrom cactus . cli . download import download_bundle\nlm = cactus_init ( str ( download_bundle ( \"Cactus-Compute/gemma-4-E2B-it\" )))\nresult = cactus_complete (\nlm ,\n[{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }],\njson . dumps ({ \"max_tokens\" : 512 , \"auto_handoff\" : False }),\nNone ,\nlambda * _ : None ,\nprint ( result [ \"response\" ]. strip ())\nprint ( \"confidence:\" , result [ \"confidence\" ])\nMLX\n# pip install mlx-lm\nimport re\nfrom mlx_lm import load , generate\nmodel , tokenizer = load (\n\"Cactus-Compute/gemma-4-e2b-it-hybrid-mlx\" ,\ntokenizer_config = { \"trust_remote_code\" : True },\nmessages = [{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }]\nanswer = generate (\nmodel ,\ntokenizer ,\nprompt = tokenizer . apply_chat_template ( messages , add_generation_prompt = True ),\nmax_tokens = 512 ,\n# the checkpoint reasons before answering; keep only the final answer\nanswer = re . split ( r\"<\\|?channel\\|?>\" , answer )[ - 1 ]\nanswer = re . sub ( r\"^(thought|final)\\b\\s*\" , \"\" , answer ). strip ()\nprint ( answer )\nprint ( \"confidence:\" , model . last_confidence )\nTransformers\n# pip install \"transformers>=5.5.4,<5.6\" torch (5.14+ segfaults on this checkpoint)\nimport torch\nfrom transformers import AutoModelForCausalLM , AutoTokenizer\nmodel_id = \"Cactus-Compute/gemma-4-e2b-it-hybrid\"\ndevice = \"cuda\" if torch . cuda . is_available () else \"mps\" if torch . backends . mps . is_available () else \"cpu\"\ntokenizer = AutoTokenizer . from_pretrained ( model_id , trust_remote_code = True )\nmodel = AutoModelForCausalLM . from_pretrained ( model_id , trust_remote_code = True , dtype = \"auto\" ). to ( device )\nmessages = [{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }]\ninputs = tokenizer . apply_chat_template (\nmessages , add_generation_prompt = True , return_tensors = \"pt\" , return_dict = True\n). to ( device )\nout = model . generate ( ** inputs , return_confidence = True , max_new_tokens = 512 )\nprint ( tokenizer . decode ( out . sequences [ 0 ][ inputs [ \"input_ids\" ]. shape [ - 1 ]:], skip_special_tokens = True ))\nprint ( \"confidence:\" , out . confidence )\nLoad the model with an explicit .to(device) , not device_map=\"auto\" : the\nprobe scores generations outside the module forward() path, so weights that\naccelerate offloads (left on the meta device) crash the confidence read.\nllama.cpp\nllama.cpp is C++, so the probe is a patch you compile into the engine (see\npatches/llama.cpp/ ). Build the patched server once:\ngit clone https://github.com/cactus-compute/cactus-hybrid && cd cactus-hybrid\n./patches/llama.cpp/install.sh && rehash\nThen serve and query it like any llama-server — the response carries a\ntop-level confidence field:\nllama-server -hf Cactus-Compute/gemma-4-e2b-it-hybrid-GGUF:Q4_K_M --jinja\ncurl -s http://localhost:8080/v1/chat/completions \\\n-d ' {\"messages\":[{\"role\":\"user\",\"content\":\"What is the capital of France?\"}],\"max_tokens\":512} ' \\\n| jq ' {answer: .choices[0].message.content, confidence} '\nRouting Quality (AUROC)\nGemma 4 E2B Hybrid AUROC measures how well the the separates wrong answers from right ones\n(higher = better, 0.5 is random, 1.0 is perfect):\nHold-out\nModality\nCactus Hybrid\nToken Entropy\nMMLU\ntext MCQ\n0.770\n0.697\nMMLU-Pro\ntext MCQ\n0.771\n0.692\nARC-Easy\ntext MCQ\n0.888\n0.655\nARC-Challenge\ntext MCQ\n0.834\n0.646\nGSM8K (3-shot)\ntext gen\n0.782\n0.731\nMMBench-EN-Dev\nvision MCQ\n0.840\n0.435\nChartQA\nvision QA\n0.779\n0.615\nDocVQA\nvision QA\n0.781\n0.512\nMMAU\naudio MCQ\n0.789\n0.517\nGigaSpeech\naudio\n0.876\n0.343\nEarnings-22\naudio\n0.839\n0.323\nLibriSpeech\naudio\n0.822\n0.427\nMean\n0.814\n0.549\nThe strongest result: the probe was trained on zero audio data , yet achieves\n0.79–0.88 AUROC on four audio benchmarks (two transcription, one audio MCQ, one\nout-of-domain transcription).\nThis rules out surface-level explanations, the probe\nis reading a modality-independent correctness signal from the hidden state, not\nmemorizing patterns from training data.\nMIT-licensed. Gemma model use is subject to the Gemma terms.\nAbout\nOn-device models that know when they're wrong: every answer carries a confidence score for cloud handoff.\nhuggingface.co/collections/Cactus-Compute/cactus-hybrid-6a60da4551074db058e8bb64\nResources\nReadme\nMIT license\nActivity\nCustom properties\nStars\n157 stars\nWatchers\n0 watching\nForks\n3 forks\nReport repository\nReleases\nPackages\nContributors\nLanguages",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-24/r-008-cactus-发布-gemma-4-e2b-hybrid-可在设备端为每个回答输出置信度分数-低分时自动路由至更大模型.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-24/r-008-cactus-发布-gemma-4-e2b-hybrid-可在设备端为每个回答输出置信度分数-低分时自动路由至更大模型.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6161,
+    "paragraph_count": 79,
+    "sentence_count": 42,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0211,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6161,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "3f8c24544eeb0989",
+    "missing": []
+  },
+  "evidence_strength": "blocked",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "index_only_or_directory_page"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型",
+    "discovery_summary": "Cactus 推出基于 Gemma 4 的混合模型\"Cactus Hybrid\"，在模型检查点内嵌入置信度探针，为每个生成答案输出 0-1 之间的结构化置信度分数。高置信度时在设备端直接回答，低分时可自动路由至更大模型。该探针在零音频训练数据下，于四个音频基准上达到 0.79-0.88 AUROC，远超 token 熵基线（均值 0.549），且 MIT 协议开源。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://github.com/cactus-compute/cactus-hybrid",
+    "discovered_at": "2026-07-24T01:15:58.890Z",
+    "rank_on_page": 322,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "df8198b3a4f4dd35",
+  "content_hash": "3f8c24544eeb0989",
+  "full_text_hash": "3f8c24544eeb0989",
+  "semantic_hash": "ab0241d0bc9d8bb4",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-23T05:47:29.042Z",
+  "last_seen_at": "2026-07-24T01:25:15.128Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "Cactus 推出基于 Gemma 4 的混合模型\"Cactus Hybrid\"，在模型检查点内嵌入置信度探针，为每个生成答案输出 0-1 之间的结构化置信度分数。高置信度时在设备端直接回答，低分时可自动路由至更大模型。该探针在零音频训练数据下，于四个音频基准上达到 0.79-0.88 AUROC，远超 token 熵基线（均值 0.549），且 MIT 协议开源。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "cactus-compute cactus-hybrid Public Notifications You must be signed in to change notification settings Fork Star 157 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 10 Commits 10 Commits patches/ llama.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "cpp patches/ llama.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore LICENSE LICENSE README.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-24T01:25:15.128Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "GitHub",
+      "Meta"
+    ],
+    "products": [
+      "Gemini"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "4",
+      "2B",
+      "0",
+      "1",
+      "0.79",
+      "0.88",
+      "0.549",
+      "157\nm"
+    ],
+    "quotes": [
+      "Cactus Hybrid",
+      "Cactus-Compute/gemma-4-E2B-it",
+      "What is the capital of France?",
+      "max_tokens",
+      "auto_handoff"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There was an error while loading.",
+      "Please reload this page .",
+      "cactus-compute cactus-hybrid Public Notifications You must be signed in to change notification settings Fork Star 157 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 10 Commits 10 Commits patches/ llama."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型\n\n- raw_id: R-008\n- title_zh: Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://github.com/cactus-compute/cactus-hybrid\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-24T01:25:15.128Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\ncactus-compute\ncactus-hybrid\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n157\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n10 Commits\n10 Commits\npatches/ llama.cpp\npatches/ llama.cpp\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nCactus Hybrid\nA small, on-device model is fast and private, but sometimes wrong.\nAt Cactus we post-train models to know when they are wrong : we ship probes\ninside the checkpoint that score every answer with a confidence between\n0 and 1, returned as structured data (never parsed out of the answer text).\nAnswer on-device when confidence is high; you can re-route to a bigger\nmodel when it's low:\nif confidence < 0.85 :\nanswer = ask_a_bigger_model ( prompt )\nWe start the rollout with Gemma 4 E2B Hybrid , all builds live in the\nCactus Hybrid collection\non Hugging Face.\nGemma 4 E2B hybrid, the smallest Gemma model, matches Gemini 3.1 Flash-Lite\non common benchmarks by routing only 15–55% of queries to the Gemini 3.1 Flash-Lite and\nrunning the remnant itself.\nBenchmark\nHandoff to match Flash-Lite (FP16)\nAt 4-bit\nAt 3-bit\nChartQA\n15–20%\n25–30%\n40–50%\nMMBench\n30–35%\n40–45%\n50–55%\nLibriSpeech\n25–30%\n35–40%\n55–65%\nGigaSpeech\n30–35%\n40–45%\n50–55%\nMMAU\n30–35%\n35–40%\n50–55%\nMMLU-Pro\n45–55%\n~90%\nn/a\nN/B: Quantisation quality is measured on Cactus Quants\nwhich performs well at uniform quantization.\nDevelopers are encouraged to benchmark for Unsloth, GGUF, and MLX quantization independently.\nCactus\n# pip install cactus-compute\nimport json\nfrom cactus . bindings . cactus import cactus_complete , cactus_init\nfrom cactus . cli . download import download_bundle\nlm = cactus_init ( str ( download_bundle ( \"Cactus-Compute/gemma-4-E2B-it\" )))\nresult = cactus_complete (\nlm ,\n[{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }],\njson . dumps ({ \"max_tokens\" : 512 , \"auto_handoff\" : False }),\nNone ,\nlambda * _ : None ,\nprint ( result [ \"response\" ]. strip ())\nprint ( \"confidence:\" , result [ \"confidence\" ])\nMLX\n# pip install mlx-lm\nimport re\nfrom mlx_lm import load , generate\nmodel , tokenizer = load (\n\"Cactus-Compute/gemma-4-e2b-it-hybrid-mlx\" ,\ntokenizer_config = { \"trust_remote_code\" : True },\nmessages = [{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }]\nanswer = generate (\nmodel ,\ntokenizer ,\nprompt = tokenizer . apply_chat_template ( messages , add_generation_prompt = True ),\nmax_tokens = 512 ,\n# the checkpoint reasons before answering; keep only the final answer\nanswer = re . split ( r\"<\\|?channel\\|?>\" , answer )[ - 1 ]\nanswer = re . sub ( r\"^(thought|final)\\b\\s*\" , \"\" , answer ). strip ()\nprint ( answer )\nprint ( \"confidence:\" , model . last_confidence )\nTransformers\n# pip install \"transformers>=5.5.4,<5.6\" torch (5.14+ segfaults on this checkpoint)\nimport torch\nfrom transformers import AutoModelForCausalLM , AutoTokenizer\nmodel_id = \"Cactus-Compute/gemma-4-e2b-it-hybrid\"\ndevice = \"cuda\" if torch . cuda . is_available () else \"mps\" if torch . backends . mps . is_available () else \"cpu\"\ntokenizer = AutoTokenizer . from_pretrained ( model_id , trust_remote_code = True )\nmodel = AutoModelForCausalLM . from_pretrained ( model_id , trust_remote_code = True , dtype = \"auto\" ). to ( device )\nmessages = [{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }]\ninputs = tokenizer . apply_chat_template (\nmessages , add_generation_prompt = True , return_tensors = \"pt\" , return_dict = True\n). to ( device )\nout = model . generate ( ** inputs , return_confidence = True , max_new_tokens = 512 )\nprint ( tokenizer . decode ( out . sequences [ 0 ][ inputs [ \"input_ids\" ]. shape [ - 1 ]:], skip_special_tokens = True ))\nprint ( \"confidence:\" , out . confidence )\nLoad the model with an explicit .to(device) , not device_map=\"auto\" : the\nprobe scores generations outside the module forward() path, so weights that\naccelerate offloads (left on the meta device) crash the confidence read.\nllama.cpp\nllama.cpp is C++, so the probe is a patch you compile into the engine (see\npatches/llama.cpp/ ). Build the patched server once:\ngit clone https://github.com/cactus-compute/cactus-hybrid && cd cactus-hybrid\n./patches/llama.cpp/install.sh && rehash\nThen serve and query it like any llama-server — the response carries a\ntop-level confidence field:\nllama-server -hf Cactus-Compute/gemma-4-e2b-it-hybrid-GGUF:Q4_K_M --jinja\ncurl -s http://localhost:8080/v1/chat/completions \\\n-d ' {\"messages\":[{\"role\":\"user\",\"content\":\"What is the capital of France?\"}],\"max_tokens\":512} ' \\\n| jq ' {answer: .choices[0].message.content, confidence} '\nRouting Quality (AUROC)\nGemma 4 E2B Hybrid AUROC measures how well the the separates wrong answers from right ones\n(higher = better, 0.5 is random, 1.0 is perfect):\nHold-out\nModality\nCactus Hybrid\nToken Entropy\nMMLU\ntext MCQ\n0.770\n0.697\nMMLU-Pro\ntext MCQ\n0.771\n0.692\nARC-Easy\ntext MCQ\n0.888\n0.655\nARC-Challenge\ntext MCQ\n0.834\n0.646\nGSM8K (3-shot)\ntext gen\n0.782\n0.731\nMMBench-EN-Dev\nvision MCQ\n0.840\n0.435\nChartQA\nvision QA\n0.779\n0.615\nDocVQA\nvision QA\n0.781\n0.512\nMMAU\naudio MCQ\n0.789\n0.517\nGigaSpeech\naudio\n0.876\n0.343\nEarnings-22\naudio\n0.839\n0.323\nLibriSpeech\naudio\n0.822\n0.427\nMean\n0.814\n0.549\nThe strongest result: the probe was trained on zero audio data , yet achieves\n0.79–0.88 AUROC on four audio benchmarks (two transcription, one audio MCQ, one\nout-of-domain transcription).\nThis rules out surface-level explanations, the probe\nis reading a modality-independent correctness signal from the hidden state, not\nmemorizing patterns from training data.\nMIT-licensed. Gemma model use is subject to the Gemma terms.\nAbout\nOn-device models that know when they're wrong: every answer carries a confidence score for cloud handoff.\nhuggingface.co/collections/Cactus-Compute/cactus-hybrid-6a60da4551074db058e8bb64\nResources\nReadme\nMIT license\nActivity\nCustom properties\nStars\n157 stars\nWatchers\n0 watching\nForks\n3 forks\nReport repository\nReleases\nPackages\nContributors\nLanguages\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\ncactus-compute\ncactus-hybrid\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n157\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n10 Commits\n10 Commits\npatches/ llama.cpp\npatches/ llama.cpp\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nView all files\nRepository files navigation\nCactus Hybrid\nA small, on-device model is fast and private, but sometimes wrong.\nAt Cactus we post-train models to know when they are wrong : we ship probes\ninside the checkpoint that score every answer with a confidence between\n0 and 1, returned as structured data (never parsed out of the answer text).\nAnswer on-device when confidence is high; you can re-route to a bigger\nmodel when it's low:\nif confidence < 0.85 :\nanswer = ask_a_bigger_model ( prompt )\nWe start the rollout with Gemma 4 E2B Hybrid , all builds live in the\nCactus Hybrid collection\non Hugging Face.\nGemma 4 E2B hybrid, the smallest Gemma model, matches Gemini 3.1 Flash-Lite\non common benchmarks by routing only 15–55% of queries to the Gemini 3.1 Flash-Lite and\nrunning the remnant itself.\nBenchmark\nHandoff to match Flash-Lite (FP16)\nAt 4-bit\nAt 3-bit\nChartQA\n15–20%\n25–30%\n40–50%\nMMBench\n30–35%\n40–45%\n50–55%\nLibriSpeech\n25–30%\n35–40%\n55–65%\nGigaSpeech\n30–35%\n40–45%\n50–55%\nMMAU\n30–35%\n35–40%\n50–55%\nMMLU-Pro\n45–55%\n~90%\nn/a\nN/B: Quantisation quality is measured on Cactus Quants\nwhich performs well at uniform quantization.\nDevelopers are encouraged to benchmark for Unsloth, GGUF, and MLX quantization independently.\nCactus\n# pip install cactus-compute\nimport json\nfrom cactus . bindings . cactus import cactus_complete , cactus_init\nfrom cactus . cli . download import download_bundle\nlm = cactus_init ( str ( download_bundle ( \"Cactus-Compute/gemma-4-E2B-it\" )))\nresult = cactus_complete (\nlm ,\n[{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }],\njson . dumps ({ \"max_tokens\" : 512 , \"auto_handoff\" : False }),\nNone ,\nlambda * _ : None ,\nprint ( result [ \"response\" ]. strip ())\nprint ( \"confidence:\" , result [ \"confidence\" ])\nMLX\n# pip install mlx-lm\nimport re\nfrom mlx_lm import load , generate\nmodel , tokenizer = load (\n\"Cactus-Compute/gemma-4-e2b-it-hybrid-mlx\" ,\ntokenizer_config = { \"trust_remote_code\" : True },\nmessages = [{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }]\nanswer = generate (\nmodel ,\ntokenizer ,\nprompt = tokenizer . apply_chat_template ( messages , add_generation_prompt = True ),\nmax_tokens = 512 ,\n# the checkpoint reasons before answering; keep only the final answer\nanswer = re . split ( r\"<\\|?channel\\|?>\" , answer )[ - 1 ]\nanswer = re . sub ( r\"^(thought|final)\\b\\s*\" , \"\" , answer ). strip ()\nprint ( answer )\nprint ( \"confidence:\" , model . last_confidence )\nTransformers\n# pip install \"transformers>=5.5.4,<5.6\" torch (5.14+ segfaults on this checkpoint)\nimport torch\nfrom transformers import AutoModelForCausalLM , AutoTokenizer\nmodel_id = \"Cactus-Compute/gemma-4-e2b-it-hybrid\"\ndevice = \"cuda\" if torch . cuda . is_available () else \"mps\" if torch . backends . mps . is_available () else \"cpu\"\ntokenizer = AutoTokenizer . from_pretrained ( model_id , trust_remote_code = True )\nmodel = AutoModelForCausalLM . from_pretrained ( model_id , trust_remote_code = True , dtype = \"auto\" ). to ( device )\nmessages = [{ \"role\" : \"user\" , \"content\" : \"What is the capital of France?\" }]\ninputs = tokenizer . apply_chat_template (\nmessages , add_generation_prompt = True , return_tensors = \"pt\" , return_dict = True\n). to ( device )\nout = model . generate ( ** inputs , return_confidence = True , max_new_tokens = 512 )\nprint ( tokenizer . decode ( out . sequences [ 0 ][ inputs [ \"input_ids\" ]. shape [ - 1 ]:], skip_special_tokens = True ))\nprint ( \"confidence:\" , out . confidence )\nLoad the model with an explicit .to(device) , not device_map=\"auto\" : the\nprobe scores generations outside the module forward() path, so weights that\naccelerate offloads (left on the meta device) crash the confidence read.\nllama.cpp\nllama.cpp is C++, so the probe is a patch you compile into the engine (see\npatches/llama.cpp/ ). Build the patched server once:\ngit clone https://github.com/cactus-compute/cactus-hybrid && cd cactus-hybrid\n./patches/llama.cpp/install.sh && rehash\nThen serve and query it like any llama-server — the response carries a\ntop-level confidence field:\nllama-server -hf Cactus-Compute/gemma-4-e2b-it-hybrid-GGUF:Q4_K_M --jinja\ncurl -s http://localhost:8080/v1/chat/completions \\\n-d ' {\"messages\":[{\"role\":\"user\",\"content\":\"What is the capital of France?\"}],\"max_tokens\":512} ' \\\n| jq ' {answer: .choices[0].message.content, confidence} '\nRouting Quality (AUROC)\nGemma 4 E2B Hybrid AUROC measures how well the the separates wrong answers from right ones\n(higher = better, 0.5 is random, 1.0 is perfect):\nHold-out\nModality\nCactus Hybrid\nToken Entropy\nMMLU\ntext MCQ\n0.770\n0.697\nMMLU-Pro\ntext MCQ\n0.771\n0.692\nARC-Easy\ntext MCQ\n0.888\n0.655\nARC-Challenge\ntext MCQ\n0.834\n0.646\nGSM8K (3-shot)\ntext gen\n0.782\n0.731\nMMBench-EN-Dev\nvision MCQ\n0.840\n0.435\nChartQA\nvision QA\n0.779\n0.615\nDocVQA\nvision QA\n0.781\n0.512\nMMAU\naudio MCQ\n0.789\n0.517\nGigaSpeech\naudio\n0.876\n0.343\nEarnings-22\naudio\n0.839\n0.323\nLibriSpeech\naudio\n0.822\n0.427\nMean\n0.814\n0.549\nThe strongest result: the probe was trained on zero audio data , yet achieves\n0.79–0.88 AUROC on four audio benchmarks (two transcription, one audio MCQ, one\nout-of-domain transcription).\nThis rules out surface-level explanations, the probe\nis reading a modality-independent correctness signal from the hidden state, not\nmemorizing patterns from training data.\nMIT-licensed. Gemma model use is subject to the Gemma terms.\nAbout\nOn-device models that know when they're wrong: every answer carries a confidence score for cloud handoff.\nhuggingface.co/collections/Cactus-Compute/cactus-hybrid-6a60da4551074db058e8bb64\nResources\nReadme\nMIT license\nActivity\nCustom properties\nStars\n157 stars\nWatchers\n0 watching\nForks\n3 forks\nReport repository\nReleases\nPackages\nContributors\nLanguages\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] Cactus 推出基于 Gemma 4 的混合模型\"Cactus Hybrid\"，在模型检查点内嵌入置信度探针，为每个生成答案输出 0-1 之间的结构化置信度分数。高置信度时在设备端直接回答，低分时可自动路由至更大模型。该探针在零音频训练数据下，于四个音频基准上达到 0.79-0.88 AUROC，远超 token 熵基线（均值 0.549），且 MIT 协议开源。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] There was an error while loading.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Please reload this page .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] cactus-compute cactus-hybrid Public Notifications You must be signed in to change notification settings Fork Star 157 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 10 Commits 10 Commits patches/ llama.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] cpp patches/ llama.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] gitignore LICENSE LICENSE README.\n"
+}

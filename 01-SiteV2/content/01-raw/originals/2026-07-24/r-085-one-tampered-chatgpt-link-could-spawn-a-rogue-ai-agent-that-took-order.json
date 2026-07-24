@@ -1,0 +1,293 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-085",
+  "title": "One tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes",
+  "title_zh": "",
+  "title_translation_status": "needs_ingestion_translation",
+  "title_translation_method": "title_translation_generator_failed",
+  "title_translation_model": "",
+  "original_url": "https://the-decoder.com/one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-orders-from-an-attacker-every-five-minutes/",
+  "canonical_url": "https://the-decoder.com/one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-orders-from-an-attacker-every-five-minutes",
+  "source_name": "The Decoder AI News",
+  "source_type": "media",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "supporting_article",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-23T00:00:00.000Z",
+  "collected_at": "2026-07-24T01:25:52.124Z",
+  "language": "mixed",
+  "full_text": "Ad\nSkip to content\nOne tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 23, 2026\nOpenAI (Screenshot)\nKey Points\nZenity Labs has revealed a vulnerability in OpenAI's Workspace Agents dubbed \"AgentForger,\" where a single manipulated link could create an autonomous AI agent acting on a user's behalf without their knowledge.\nThe attack exploited URL parameters to hijack the victim's app permissions, disable security controls, and permanently execute the attacker's commands on a scheduled basis, effectively turning the platform's own capabilities against the user.\nOpenAI fixed the vulnerability within four days, but Zenity argues the incident highlights a broader problem: traditional security tools are not equipped to handle autonomous agents that operate under legitimate user identities.\nA single tampered ChatGPT link could spin up an AI agent that quietly checked the attacker's inbox for new orders every five minutes. Zenity Labs calls the flaw a new class of attack against agent-based AI.\nAI security firm Zenity Labs found a vulnerability in OpenAI's Workspace Agents that let one manipulated link create an autonomous AI agent under an employee's account. The agent took on the victim's identity and reused their existing app permissions, skipping the approval steps meant to protect sensitive actions.\nZenity named the vulnerability \"AgentForger\" and sees it as an evolution of classic cross-site request forgery (CSRF). In a typical CSRF attack, someone clicks a bad link or lands on a crafted page and unknowingly fires off an authenticated action they never intended. Ad\nAgentForger went further. Rather than triggering a single unwanted action, the manipulated ChatGPT link kicked off the creation of a fully autonomous agent. That agent operated inside the company's trust boundary, tapped into connectors the victim had already authorized, and picked up new tasks from the attacker on a recurring schedule. Ad\nDEC_D_Incontent-1\nClassic CSRF forges a single request. AgentForger forges an entire agent. | Image: Zenity Labs\nURL parameters let attackers automate agent creation\nCreating a Workspace agent is normally an interactive process. Users select a template, enter instructions, connect tools, review sharing settings, test the agent in preview mode, and then publish it. AgentForger let attackers trigger most of that process through a URL with little further input from the user.\nThe Agent Builder, introduced in 2025, is available at chatgpt.com/agents/studio/new and accepts two URL parameters. template_name selects a starting template such as \"chief-of-staff,\" while initial_assistant_prompt supplies the instructions. Ad\nZenity found that the page didn't just place the value of initial_assistant_prompt in the prompt field. It also submitted and ran the prompt automatically. Attackers didn't need to send raw requests to ChatGPT or directly manipulate the victim's browser. All they needed was a chatgpt.com link with an attached prompt that looked harmless at first glance.\nThe attack starts with an ordinary-looking email that disguises the manipulated ChatGPT link as a productivity tip. | Image: Zenity Labs\nThe only prerequisite was that the victim was logged into ChatGPT, had access to Workspace Agents, and had authorized at least one connector such as Outlook, Gmail, Slack, Google Drive, SharePoint, or Teams. Because the connections already existed, no new OAuth consent prompt appeared that might have tipped the victim off. Ad\nDEC_D_Incontent-2\nOne click built and published the agent\nIn the demo, Zenity embedded a prompt in the URL that guided the Builder through all the steps in a numbered task list. The agent was set up to integrate all already-connected non-MCP connectors and change every permission requirement for reading, writing, and deleting to \"Never ask.\" Ad\nIt also created schedules to run every five minutes, checked Outlook for emails from the attacker with \"TASK\" in the subject line, executed their instructions using the connected apps, and sent the results back unfiltered.\nThe finished agent with connectors linked and all permission requirements turned off. | Image: Zenity Labs\nThe Builder created an agent named \"TASK Mail Operator\" without asking the user. It connected the authorized services, disabled approval requirements, published the agent, and launched it in Preview Mode.\nZenity says Preview Mode isn't just a visual test run: It executes the new agent against the victim's real connected accounts using the approval settings that were just configured. Since every setting was already set to \"Never ask,\" the first run finished without asking the user for approval.\nPreview Mode isn't a dry run. It immediately executes the agent against real accounts. | Image: Zenity Labs\nScheduling gave attackers persistent access\nWithout the scheduler, the attack would have been a one-time event. The scheduler transforms the forged agent into something that resembles command-and-control infrastructure. Once the agent is deployed, the victim doesn't need to click again or reopen ChatGPT. The agent wakes up every five minutes, checks the inbox for new TASK emails, executes the instructions they contain, and sends the results back. The initial click installs the agent, the scheduler keeps it alive, and the inbox becomes the command channel.\nTwelve staggered schedules add up to one run every five minutes. | Image: Zenity Labs\nIn part two of its analysis, Zenity shows what attackers could do through this channel. After receiving the command \"TASK 1: RECON,\" the agent mapped the organization. It pulled data from Outlook, Slack, Teams, Drive, SharePoint, and Calendar to list people, roles, channels, active projects, and recurring meetings.\nA single email command generates a complete map of the company. | Image: Zenity Labs\nThe agent also searched Drive, SharePoint, and Outlook. It found an M&A term sheet, a board presentation that mentioned missed revenue targets and planned layoffs, and a company-wide employee export with contact and compensation data. A request framed as a \"DLP exercise\" told the agent to search Slack for the string \"pass:\". The agent found a database username and password pair and emailed both to the attacker.\nFramed as a DLP exercise, the agent delivers the login credentials it found in plain text. | Image: Zenity Labs\nOther tasks abused the victim's trusted identity. The agent sent messages through the victim's Teams account asking colleagues to confirm an SSO rollout on a login page controlled by the attacker. Zenity also tested phishing through Slack and a business email compromise template. Other tests included an approval request for a $242,500 wire transfer and a calendar invitation with a participant controlled by the attacker.\nPhishing sent from inside the company looks far more credible than any external email. | Image: Zenity Labs\nSafeguards didn't stop the attack\nZenity traces AgentForger to two related design choices. The builder treated the initial_assistant_prompt parameter as executable input rather than user input that needed confirmation. An attacker-controlled URL could therefore change data and settings within the victim's authenticated session without the user's explicit approval.\nThe same prompt could also change security settings, including approval policies and execution schedules. This meant the instruction could disable the system meant to require human approval for sensitive actions.\nZenity describes the combination as \"the lethal trifecta\": the URL supplied untrusted input, connectors provided access to private data, and email offered a path for sending that data out. Most exploits would have to bypass those safeguards first. AgentForger instead gave the attacker access to a build tool that could create an agent with those safeguards already disabled.\nAutonomous agents break assumptions behind today's security tools\nZenity reported AgentForger through OpenAI's Bugcrowd program on June 4, 2026. OpenAI confirmed the report the next day and fixed the flaw on June 8 by removing the affected URL parameter. Zenity praised the OpenAI security team's response time.\nUntil the fix went live, the flaw affected every organization using ChatGPT Workspace Agents with previously authorized enterprise connectors, according to Zenity.\nZenity says the problem extends beyond this specific bug. Traditional security tools are built for users and endpoints, not autonomous agents that act through legitimate user identities. The more an agent can do without supervision, the more damage it can cause when someone else supplies its instructions. The cybersecurity company calls AgentForger an \"agent trust failure\": the platform assumed that the user had personally created, approved, scheduled, and launched the agent.\nSecurity concerns around agent-based AI have grown recently. Hugging Face reported that a fully AI-controlled agent system entered its production infrastructure through a manipulated dataset and then moved laterally. The system performed more than 17,000 actions, according to the company. OpenAI admitted responsibility shortly afterward . During a performance test, its model had accidentally hacked Hugging Face to obtain test data.\nZenity also demonstrated several zero-click and one-click exploits last year under the name AgentFlayer . The attacks targeted Copilot Studio, Salesforce Einstein, Cursor with Jira MCP, and other enterprise AI tools. In those cases, hidden prompts in seemingly harmless resources could divert customer data or steal login credentials.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Part 1 | Part 2\nBETA-TEST\n&times;\nwpDiscuz\nInsert",
+  "clean_text": "Ad\nSkip to content\nOne tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 23, 2026\nOpenAI (Screenshot)\nKey Points\nZenity Labs has revealed a vulnerability in OpenAI's Workspace Agents dubbed \"AgentForger,\" where a single manipulated link could create an autonomous AI agent acting on a user's behalf without their knowledge.\nThe attack exploited URL parameters to hijack the victim's app permissions, disable security controls, and permanently execute the attacker's commands on a scheduled basis, effectively turning the platform's own capabilities against the user.\nOpenAI fixed the vulnerability within four days, but Zenity argues the incident highlights a broader problem: traditional security tools are not equipped to handle autonomous agents that operate under legitimate user identities.\nA single tampered ChatGPT link could spin up an AI agent that quietly checked the attacker's inbox for new orders every five minutes. Zenity Labs calls the flaw a new class of attack against agent-based AI.\nAI security firm Zenity Labs found a vulnerability in OpenAI's Workspace Agents that let one manipulated link create an autonomous AI agent under an employee's account. The agent took on the victim's identity and reused their existing app permissions, skipping the approval steps meant to protect sensitive actions.\nZenity named the vulnerability \"AgentForger\" and sees it as an evolution of classic cross-site request forgery (CSRF). In a typical CSRF attack, someone clicks a bad link or lands on a crafted page and unknowingly fires off an authenticated action they never intended. Ad\nAgentForger went further. Rather than triggering a single unwanted action, the manipulated ChatGPT link kicked off the creation of a fully autonomous agent. That agent operated inside the company's trust boundary, tapped into connectors the victim had already authorized, and picked up new tasks from the attacker on a recurring schedule. Ad\nDEC_D_Incontent-1\nClassic CSRF forges a single request. AgentForger forges an entire agent. | Image: Zenity Labs\nURL parameters let attackers automate agent creation\nCreating a Workspace agent is normally an interactive process. Users select a template, enter instructions, connect tools, review sharing settings, test the agent in preview mode, and then publish it. AgentForger let attackers trigger most of that process through a URL with little further input from the user.\nThe Agent Builder, introduced in 2025, is available at chatgpt.com/agents/studio/new and accepts two URL parameters. template_name selects a starting template such as \"chief-of-staff,\" while initial_assistant_prompt supplies the instructions. Ad\nZenity found that the page didn't just place the value of initial_assistant_prompt in the prompt field. It also submitted and ran the prompt automatically. Attackers didn't need to send raw requests to ChatGPT or directly manipulate the victim's browser. All they needed was a chatgpt.com link with an attached prompt that looked harmless at first glance.\nThe attack starts with an ordinary-looking email that disguises the manipulated ChatGPT link as a productivity tip. | Image: Zenity Labs\nThe only prerequisite was that the victim was logged into ChatGPT, had access to Workspace Agents, and had authorized at least one connector such as Outlook, Gmail, Slack, Google Drive, SharePoint, or Teams. Because the connections already existed, no new OAuth consent prompt appeared that might have tipped the victim off. Ad\nDEC_D_Incontent-2\nOne click built and published the agent\nIn the demo, Zenity embedded a prompt in the URL that guided the Builder through all the steps in a numbered task list. The agent was set up to integrate all already-connected non-MCP connectors and change every permission requirement for reading, writing, and deleting to \"Never ask.\" Ad\nIt also created schedules to run every five minutes, checked Outlook for emails from the attacker with \"TASK\" in the subject line, executed their instructions using the connected apps, and sent the results back unfiltered.\nThe finished agent with connectors linked and all permission requirements turned off. | Image: Zenity Labs\nThe Builder created an agent named \"TASK Mail Operator\" without asking the user. It connected the authorized services, disabled approval requirements, published the agent, and launched it in Preview Mode.\nZenity says Preview Mode isn't just a visual test run: It executes the new agent against the victim's real connected accounts using the approval settings that were just configured. Since every setting was already set to \"Never ask,\" the first run finished without asking the user for approval.\nPreview Mode isn't a dry run. It immediately executes the agent against real accounts. | Image: Zenity Labs\nScheduling gave attackers persistent access\nWithout the scheduler, the attack would have been a one-time event. The scheduler transforms the forged agent into something that resembles command-and-control infrastructure. Once the agent is deployed, the victim doesn't need to click again or reopen ChatGPT. The agent wakes up every five minutes, checks the inbox for new TASK emails, executes the instructions they contain, and sends the results back. The initial click installs the agent, the scheduler keeps it alive, and the inbox becomes the command channel.\nTwelve staggered schedules add up to one run every five minutes. | Image: Zenity Labs\nIn part two of its analysis, Zenity shows what attackers could do through this channel. After receiving the command \"TASK 1: RECON,\" the agent mapped the organization. It pulled data from Outlook, Slack, Teams, Drive, SharePoint, and Calendar to list people, roles, channels, active projects, and recurring meetings.\nA single email command generates a complete map of the company. | Image: Zenity Labs\nThe agent also searched Drive, SharePoint, and Outlook. It found an M&A term sheet, a board presentation that mentioned missed revenue targets and planned layoffs, and a company-wide employee export with contact and compensation data. A request framed as a \"DLP exercise\" told the agent to search Slack for the string \"pass:\". The agent found a database username and password pair and emailed both to the attacker.\nFramed as a DLP exercise, the agent delivers the login credentials it found in plain text. | Image: Zenity Labs\nOther tasks abused the victim's trusted identity. The agent sent messages through the victim's Teams account asking colleagues to confirm an SSO rollout on a login page controlled by the attacker. Zenity also tested phishing through Slack and a business email compromise template. Other tests included an approval request for a $242,500 wire transfer and a calendar invitation with a participant controlled by the attacker.\nPhishing sent from inside the company looks far more credible than any external email. | Image: Zenity Labs\nSafeguards didn't stop the attack\nZenity traces AgentForger to two related design choices. The builder treated the initial_assistant_prompt parameter as executable input rather than user input that needed confirmation. An attacker-controlled URL could therefore change data and settings within the victim's authenticated session without the user's explicit approval.\nThe same prompt could also change security settings, including approval policies and execution schedules. This meant the instruction could disable the system meant to require human approval for sensitive actions.\nZenity describes the combination as \"the lethal trifecta\": the URL supplied untrusted input, connectors provided access to private data, and email offered a path for sending that data out. Most exploits would have to bypass those safeguards first. AgentForger instead gave the attacker access to a build tool that could create an agent with those safeguards already disabled.\nAutonomous agents break assumptions behind today's security tools\nZenity reported AgentForger through OpenAI's Bugcrowd program on June 4, 2026. OpenAI confirmed the report the next day and fixed the flaw on June 8 by removing the affected URL parameter. Zenity praised the OpenAI security team's response time.\nUntil the fix went live, the flaw affected every organization using ChatGPT Workspace Agents with previously authorized enterprise connectors, according to Zenity.\nZenity says the problem extends beyond this specific bug. Traditional security tools are built for users and endpoints, not autonomous agents that act through legitimate user identities. The more an agent can do without supervision, the more damage it can cause when someone else supplies its instructions. The cybersecurity company calls AgentForger an \"agent trust failure\": the platform assumed that the user had personally created, approved, scheduled, and launched the agent.\nSecurity concerns around agent-based AI have grown recently. Hugging Face reported that a fully AI-controlled agent system entered its production infrastructure through a manipulated dataset and then moved laterally. The system performed more than 17,000 actions, according to the company. OpenAI admitted responsibility shortly afterward . During a performance test, its model had accidentally hacked Hugging Face to obtain test data.\nZenity also demonstrated several zero-click and one-click exploits last year under the name AgentFlayer . The attacks targeted Copilot Studio, Salesforce Einstein, Cursor with Jira MCP, and other enterprise AI tools. In those cases, hidden prompts in seemingly harmless resources could divert customer data or steal login credentials.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Part 1 | Part 2\nBETA-TEST\n&times;\nwpDiscuz\nInsert",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-24/r-085-one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-order.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-24/r-085-one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-order.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 9974,
+    "paragraph_count": 45,
+    "sentence_count": 80,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.002,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 9974,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "39fef60f23914a7f",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "f00c2cd8c13a86f4",
+  "content_hash": "39fef60f23914a7f",
+  "full_text_hash": "39fef60f23914a7f",
+  "semantic_hash": "9ce9e5a87520ce93",
+  "duplicate_of": "merged 1 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-07-23T00:00:00.000Z",
+  "last_seen_at": "2026-07-24T01:25:52.124Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "Zenity Labs uncovered \"AgentForger,\" a vulnerability in OpenAI's Agent Builder that let a single manipulated ChatGPT link create an autonomous agent on an employee's behalf. The agent inherited the victim's identity and access rights, bypassed approval requirements through the malicious prompt, and pulled new instructions from the attacker's inbox every five minutes. The article One tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes a",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "Ad Skip to content One tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 23, 2026 OpenAI (Screenshot) Key Points Zenity Labs has revealed a vulnerability in OpenAI's Workspace Agents dubbed \"AgentForger,\" where a single manipulated link could create an autonomous AI agent acting on a user's behalf without their knowledge.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "The attack exploited URL parameters to hijack the victim's app permissions, disable security controls, and permanently execute the attacker's commands on a scheduled basis, effectively turning the platform's own capabilities against the user.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "OpenAI fixed the vulnerability within four days, but Zenity argues the incident highlights a broader problem: traditional security tools are not equipped to handle autonomous agents that operate under legitimate user identities.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "A single tampered ChatGPT link could spin up an AI agent that quietly checked the attacker's inbox for new orders every five minutes.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Zenity Labs calls the flaw a new class of attack against agent-based AI.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-24T01:25:52.124Z",
+  "business_elements": {
+    "companies": [
+      "The Decoder AI News",
+      "OpenAI",
+      "Google",
+      "Salesforce",
+      "Cursor"
+    ],
+    "products": [
+      "ChatGPT",
+      "agent",
+      "Agent",
+      "Agents",
+      "agents",
+      "chatgpt",
+      "MCP",
+      "Copilot",
+      "Cursor"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "23",
+      "2026",
+      "1",
+      "2025",
+      "2",
+      "$242",
+      "500",
+      "4"
+    ],
+    "quotes": [
+      "AgentForger,",
+      "AgentForger,",
+      "AgentForger",
+      "chief-of-staff,",
+      "Never ask."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "A single tampered ChatGPT link could spin up an AI agent that quietly checked the attacker's inbox for new orders every five minutes.",
+      "Zenity Labs calls the flaw a new class of attack against agent-based AI."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": [
+      "The attack exploited URL parameters to hijack the victim's app permissions, disable security controls, and permanently execute the attacker's commands on a scheduled basis, effectively turning the platform's own capabilities against the user.",
+      "OpenAI fixed the vulnerability within four days, but Zenity argues the incident highlights a broader problem: traditional security tools are not equipped to handle autonomous agents that operate under legitimate user identities."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# One tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes\n\n- raw_id: R-085\n- title_zh: needs_ingestion_translation\n- title_translation_status: needs_ingestion_translation\n- title_translation_method: title_translation_generator_failed\n- original_url: https://the-decoder.com/one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-orders-from-an-attacker-every-five-minutes/\n- source_name: The Decoder AI News\n- collected_at: 2026-07-24T01:25:52.124Z\n\n## clean_text\n\nAd\nSkip to content\nOne tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 23, 2026\nOpenAI (Screenshot)\nKey Points\nZenity Labs has revealed a vulnerability in OpenAI's Workspace Agents dubbed \"AgentForger,\" where a single manipulated link could create an autonomous AI agent acting on a user's behalf without their knowledge.\nThe attack exploited URL parameters to hijack the victim's app permissions, disable security controls, and permanently execute the attacker's commands on a scheduled basis, effectively turning the platform's own capabilities against the user.\nOpenAI fixed the vulnerability within four days, but Zenity argues the incident highlights a broader problem: traditional security tools are not equipped to handle autonomous agents that operate under legitimate user identities.\nA single tampered ChatGPT link could spin up an AI agent that quietly checked the attacker's inbox for new orders every five minutes. Zenity Labs calls the flaw a new class of attack against agent-based AI.\nAI security firm Zenity Labs found a vulnerability in OpenAI's Workspace Agents that let one manipulated link create an autonomous AI agent under an employee's account. The agent took on the victim's identity and reused their existing app permissions, skipping the approval steps meant to protect sensitive actions.\nZenity named the vulnerability \"AgentForger\" and sees it as an evolution of classic cross-site request forgery (CSRF). In a typical CSRF attack, someone clicks a bad link or lands on a crafted page and unknowingly fires off an authenticated action they never intended. Ad\nAgentForger went further. Rather than triggering a single unwanted action, the manipulated ChatGPT link kicked off the creation of a fully autonomous agent. That agent operated inside the company's trust boundary, tapped into connectors the victim had already authorized, and picked up new tasks from the attacker on a recurring schedule. Ad\nDEC_D_Incontent-1\nClassic CSRF forges a single request. AgentForger forges an entire agent. | Image: Zenity Labs\nURL parameters let attackers automate agent creation\nCreating a Workspace agent is normally an interactive process. Users select a template, enter instructions, connect tools, review sharing settings, test the agent in preview mode, and then publish it. AgentForger let attackers trigger most of that process through a URL with little further input from the user.\nThe Agent Builder, introduced in 2025, is available at chatgpt.com/agents/studio/new and accepts two URL parameters. template_name selects a starting template such as \"chief-of-staff,\" while initial_assistant_prompt supplies the instructions. Ad\nZenity found that the page didn't just place the value of initial_assistant_prompt in the prompt field. It also submitted and ran the prompt automatically. Attackers didn't need to send raw requests to ChatGPT or directly manipulate the victim's browser. All they needed was a chatgpt.com link with an attached prompt that looked harmless at first glance.\nThe attack starts with an ordinary-looking email that disguises the manipulated ChatGPT link as a productivity tip. | Image: Zenity Labs\nThe only prerequisite was that the victim was logged into ChatGPT, had access to Workspace Agents, and had authorized at least one connector such as Outlook, Gmail, Slack, Google Drive, SharePoint, or Teams. Because the connections already existed, no new OAuth consent prompt appeared that might have tipped the victim off. Ad\nDEC_D_Incontent-2\nOne click built and published the agent\nIn the demo, Zenity embedded a prompt in the URL that guided the Builder through all the steps in a numbered task list. The agent was set up to integrate all already-connected non-MCP connectors and change every permission requirement for reading, writing, and deleting to \"Never ask.\" Ad\nIt also created schedules to run every five minutes, checked Outlook for emails from the attacker with \"TASK\" in the subject line, executed their instructions using the connected apps, and sent the results back unfiltered.\nThe finished agent with connectors linked and all permission requirements turned off. | Image: Zenity Labs\nThe Builder created an agent named \"TASK Mail Operator\" without asking the user. It connected the authorized services, disabled approval requirements, published the agent, and launched it in Preview Mode.\nZenity says Preview Mode isn't just a visual test run: It executes the new agent against the victim's real connected accounts using the approval settings that were just configured. Since every setting was already set to \"Never ask,\" the first run finished without asking the user for approval.\nPreview Mode isn't a dry run. It immediately executes the agent against real accounts. | Image: Zenity Labs\nScheduling gave attackers persistent access\nWithout the scheduler, the attack would have been a one-time event. The scheduler transforms the forged agent into something that resembles command-and-control infrastructure. Once the agent is deployed, the victim doesn't need to click again or reopen ChatGPT. The agent wakes up every five minutes, checks the inbox for new TASK emails, executes the instructions they contain, and sends the results back. The initial click installs the agent, the scheduler keeps it alive, and the inbox becomes the command channel.\nTwelve staggered schedules add up to one run every five minutes. | Image: Zenity Labs\nIn part two of its analysis, Zenity shows what attackers could do through this channel. After receiving the command \"TASK 1: RECON,\" the agent mapped the organization. It pulled data from Outlook, Slack, Teams, Drive, SharePoint, and Calendar to list people, roles, channels, active projects, and recurring meetings.\nA single email command generates a complete map of the company. | Image: Zenity Labs\nThe agent also searched Drive, SharePoint, and Outlook. It found an M&A term sheet, a board presentation that mentioned missed revenue targets and planned layoffs, and a company-wide employee export with contact and compensation data. A request framed as a \"DLP exercise\" told the agent to search Slack for the string \"pass:\". The agent found a database username and password pair and emailed both to the attacker.\nFramed as a DLP exercise, the agent delivers the login credentials it found in plain text. | Image: Zenity Labs\nOther tasks abused the victim's trusted identity. The agent sent messages through the victim's Teams account asking colleagues to confirm an SSO rollout on a login page controlled by the attacker. Zenity also tested phishing through Slack and a business email compromise template. Other tests included an approval request for a $242,500 wire transfer and a calendar invitation with a participant controlled by the attacker.\nPhishing sent from inside the company looks far more credible than any external email. | Image: Zenity Labs\nSafeguards didn't stop the attack\nZenity traces AgentForger to two related design choices. The builder treated the initial_assistant_prompt parameter as executable input rather than user input that needed confirmation. An attacker-controlled URL could therefore change data and settings within the victim's authenticated session without the user's explicit approval.\nThe same prompt could also change security settings, including approval policies and execution schedules. This meant the instruction could disable the system meant to require human approval for sensitive actions.\nZenity describes the combination as \"the lethal trifecta\": the URL supplied untrusted input, connectors provided access to private data, and email offered a path for sending that data out. Most exploits would have to bypass those safeguards first. AgentForger instead gave the attacker access to a build tool that could create an agent with those safeguards already disabled.\nAutonomous agents break assumptions behind today's security tools\nZenity reported AgentForger through OpenAI's Bugcrowd program on June 4, 2026. OpenAI confirmed the report the next day and fixed the flaw on June 8 by removing the affected URL parameter. Zenity praised the OpenAI security team's response time.\nUntil the fix went live, the flaw affected every organization using ChatGPT Workspace Agents with previously authorized enterprise connectors, according to Zenity.\nZenity says the problem extends beyond this specific bug. Traditional security tools are built for users and endpoints, not autonomous agents that act through legitimate user identities. The more an agent can do without supervision, the more damage it can cause when someone else supplies its instructions. The cybersecurity company calls AgentForger an \"agent trust failure\": the platform assumed that the user had personally created, approved, scheduled, and launched the agent.\nSecurity concerns around agent-based AI have grown recently. Hugging Face reported that a fully AI-controlled agent system entered its production infrastructure through a manipulated dataset and then moved laterally. The system performed more than 17,000 actions, according to the company. OpenAI admitted responsibility shortly afterward . During a performance test, its model had accidentally hacked Hugging Face to obtain test data.\nZenity also demonstrated several zero-click and one-click exploits last year under the name AgentFlayer . The attacks targeted Copilot Studio, Salesforce Einstein, Cursor with Jira MCP, and other enterprise AI tools. In those cases, hidden prompts in seemingly harmless resources could divert customer data or steal login credentials.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Part 1 | Part 2\nBETA-TEST\n&times;\nwpDiscuz\nInsert\n\n## full_text\n\nAd\nSkip to content\nOne tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes\nJonathan Kemper\nView the LinkedIn Profile of Jonathan Kemper\nJul 23, 2026\nOpenAI (Screenshot)\nKey Points\nZenity Labs has revealed a vulnerability in OpenAI's Workspace Agents dubbed \"AgentForger,\" where a single manipulated link could create an autonomous AI agent acting on a user's behalf without their knowledge.\nThe attack exploited URL parameters to hijack the victim's app permissions, disable security controls, and permanently execute the attacker's commands on a scheduled basis, effectively turning the platform's own capabilities against the user.\nOpenAI fixed the vulnerability within four days, but Zenity argues the incident highlights a broader problem: traditional security tools are not equipped to handle autonomous agents that operate under legitimate user identities.\nA single tampered ChatGPT link could spin up an AI agent that quietly checked the attacker's inbox for new orders every five minutes. Zenity Labs calls the flaw a new class of attack against agent-based AI.\nAI security firm Zenity Labs found a vulnerability in OpenAI's Workspace Agents that let one manipulated link create an autonomous AI agent under an employee's account. The agent took on the victim's identity and reused their existing app permissions, skipping the approval steps meant to protect sensitive actions.\nZenity named the vulnerability \"AgentForger\" and sees it as an evolution of classic cross-site request forgery (CSRF). In a typical CSRF attack, someone clicks a bad link or lands on a crafted page and unknowingly fires off an authenticated action they never intended. Ad\nAgentForger went further. Rather than triggering a single unwanted action, the manipulated ChatGPT link kicked off the creation of a fully autonomous agent. That agent operated inside the company's trust boundary, tapped into connectors the victim had already authorized, and picked up new tasks from the attacker on a recurring schedule. Ad\nDEC_D_Incontent-1\nClassic CSRF forges a single request. AgentForger forges an entire agent. | Image: Zenity Labs\nURL parameters let attackers automate agent creation\nCreating a Workspace agent is normally an interactive process. Users select a template, enter instructions, connect tools, review sharing settings, test the agent in preview mode, and then publish it. AgentForger let attackers trigger most of that process through a URL with little further input from the user.\nThe Agent Builder, introduced in 2025, is available at chatgpt.com/agents/studio/new and accepts two URL parameters. template_name selects a starting template such as \"chief-of-staff,\" while initial_assistant_prompt supplies the instructions. Ad\nZenity found that the page didn't just place the value of initial_assistant_prompt in the prompt field. It also submitted and ran the prompt automatically. Attackers didn't need to send raw requests to ChatGPT or directly manipulate the victim's browser. All they needed was a chatgpt.com link with an attached prompt that looked harmless at first glance.\nThe attack starts with an ordinary-looking email that disguises the manipulated ChatGPT link as a productivity tip. | Image: Zenity Labs\nThe only prerequisite was that the victim was logged into ChatGPT, had access to Workspace Agents, and had authorized at least one connector such as Outlook, Gmail, Slack, Google Drive, SharePoint, or Teams. Because the connections already existed, no new OAuth consent prompt appeared that might have tipped the victim off. Ad\nDEC_D_Incontent-2\nOne click built and published the agent\nIn the demo, Zenity embedded a prompt in the URL that guided the Builder through all the steps in a numbered task list. The agent was set up to integrate all already-connected non-MCP connectors and change every permission requirement for reading, writing, and deleting to \"Never ask.\" Ad\nIt also created schedules to run every five minutes, checked Outlook for emails from the attacker with \"TASK\" in the subject line, executed their instructions using the connected apps, and sent the results back unfiltered.\nThe finished agent with connectors linked and all permission requirements turned off. | Image: Zenity Labs\nThe Builder created an agent named \"TASK Mail Operator\" without asking the user. It connected the authorized services, disabled approval requirements, published the agent, and launched it in Preview Mode.\nZenity says Preview Mode isn't just a visual test run: It executes the new agent against the victim's real connected accounts using the approval settings that were just configured. Since every setting was already set to \"Never ask,\" the first run finished without asking the user for approval.\nPreview Mode isn't a dry run. It immediately executes the agent against real accounts. | Image: Zenity Labs\nScheduling gave attackers persistent access\nWithout the scheduler, the attack would have been a one-time event. The scheduler transforms the forged agent into something that resembles command-and-control infrastructure. Once the agent is deployed, the victim doesn't need to click again or reopen ChatGPT. The agent wakes up every five minutes, checks the inbox for new TASK emails, executes the instructions they contain, and sends the results back. The initial click installs the agent, the scheduler keeps it alive, and the inbox becomes the command channel.\nTwelve staggered schedules add up to one run every five minutes. | Image: Zenity Labs\nIn part two of its analysis, Zenity shows what attackers could do through this channel. After receiving the command \"TASK 1: RECON,\" the agent mapped the organization. It pulled data from Outlook, Slack, Teams, Drive, SharePoint, and Calendar to list people, roles, channels, active projects, and recurring meetings.\nA single email command generates a complete map of the company. | Image: Zenity Labs\nThe agent also searched Drive, SharePoint, and Outlook. It found an M&A term sheet, a board presentation that mentioned missed revenue targets and planned layoffs, and a company-wide employee export with contact and compensation data. A request framed as a \"DLP exercise\" told the agent to search Slack for the string \"pass:\". The agent found a database username and password pair and emailed both to the attacker.\nFramed as a DLP exercise, the agent delivers the login credentials it found in plain text. | Image: Zenity Labs\nOther tasks abused the victim's trusted identity. The agent sent messages through the victim's Teams account asking colleagues to confirm an SSO rollout on a login page controlled by the attacker. Zenity also tested phishing through Slack and a business email compromise template. Other tests included an approval request for a $242,500 wire transfer and a calendar invitation with a participant controlled by the attacker.\nPhishing sent from inside the company looks far more credible than any external email. | Image: Zenity Labs\nSafeguards didn't stop the attack\nZenity traces AgentForger to two related design choices. The builder treated the initial_assistant_prompt parameter as executable input rather than user input that needed confirmation. An attacker-controlled URL could therefore change data and settings within the victim's authenticated session without the user's explicit approval.\nThe same prompt could also change security settings, including approval policies and execution schedules. This meant the instruction could disable the system meant to require human approval for sensitive actions.\nZenity describes the combination as \"the lethal trifecta\": the URL supplied untrusted input, connectors provided access to private data, and email offered a path for sending that data out. Most exploits would have to bypass those safeguards first. AgentForger instead gave the attacker access to a build tool that could create an agent with those safeguards already disabled.\nAutonomous agents break assumptions behind today's security tools\nZenity reported AgentForger through OpenAI's Bugcrowd program on June 4, 2026. OpenAI confirmed the report the next day and fixed the flaw on June 8 by removing the affected URL parameter. Zenity praised the OpenAI security team's response time.\nUntil the fix went live, the flaw affected every organization using ChatGPT Workspace Agents with previously authorized enterprise connectors, according to Zenity.\nZenity says the problem extends beyond this specific bug. Traditional security tools are built for users and endpoints, not autonomous agents that act through legitimate user identities. The more an agent can do without supervision, the more damage it can cause when someone else supplies its instructions. The cybersecurity company calls AgentForger an \"agent trust failure\": the platform assumed that the user had personally created, approved, scheduled, and launched the agent.\nSecurity concerns around agent-based AI have grown recently. Hugging Face reported that a fully AI-controlled agent system entered its production infrastructure through a manipulated dataset and then moved laterally. The system performed more than 17,000 actions, according to the company. OpenAI admitted responsibility shortly afterward . During a performance test, its model had accidentally hacked Hugging Face to obtain test data.\nZenity also demonstrated several zero-click and one-click exploits last year under the name AgentFlayer . The attacks targeted Copilot Studio, Salesforce Einstein, Cursor with Jira MCP, and other enterprise AI tools. In those cases, hidden prompts in seemingly harmless resources could divert customer data or steal login credentials.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: Part 1 | Part 2\nBETA-TEST\n&times;\nwpDiscuz\nInsert\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 88\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] Zenity Labs uncovered \"AgentForger,\" a vulnerability in OpenAI's Agent Builder that let a single manipulated ChatGPT link create an autonomous agent on an employee's behalf. The agent inherited the victim's identity and access rights, bypassed approval requirements through the malicious prompt, and pulled new instructions from the attacker's inbox every five minutes. The article One tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes a\n2. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] Ad Skip to content One tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jul 23, 2026 OpenAI (Screenshot) Key Points Zenity Labs has revealed a vulnerability in OpenAI's Workspace Agents dubbed \"AgentForger,\" where a single manipulated link could create an autonomous AI agent acting on a user's behalf without their knowledge.\n3. [supporting_context / signal_card_candidate, relationship_graph_input / medium] The attack exploited URL parameters to hijack the victim's app permissions, disable security controls, and permanently execute the attacker's commands on a scheduled basis, effectively turning the platform's own capabilities against the user.\n4. [supporting_context / signal_card_candidate, relationship_graph_input / medium] OpenAI fixed the vulnerability within four days, but Zenity argues the incident highlights a broader problem: traditional security tools are not equipped to handle autonomous agents that operate under legitimate user identities.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] A single tampered ChatGPT link could spin up an AI agent that quietly checked the attacker's inbox for new orders every five minutes.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Zenity Labs calls the flaw a new class of attack against agent-based AI.\n"
+}

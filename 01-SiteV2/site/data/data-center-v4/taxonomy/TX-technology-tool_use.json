@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-23T03:54:13.158Z",
-    "latestDataDate": "2026-07-23",
-    "currentDate": "2026-07-23",
-    "eventCount": 1455,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
   },
   "node": {
     "id": "TX-technology-tool_use",
@@ -19,6 +19,7 @@
     "eventIds": [
       "EV-baa76a4f03b84980",
       "EV-97fdf068afbbe555",
+      "EV-09e1eafc857c79fd",
       "EV-19bcfc6d7c1612cb",
       "EV-0a9617a5118564db",
       "EV-a8a8f26c5128d894",
@@ -36,6 +37,7 @@
       "EN-7f90f96bd6306bff",
       "EN-d8cb1acd1b39854a",
       "EN-5388bc10736a0eff",
+      "EN-f1649339197f76d6",
       "EN-2abf8289b2f2113f",
       "EN-91901356a63794df",
       "EN-81baf57e05f11276",
@@ -71,7 +73,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-25",
-    "lastSeen": "2026-07-19"
+    "lastSeen": "2026-07-24"
   },
   "events": [
     {
@@ -216,6 +218,92 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/963/725.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-09e1eafc857c79fd",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-24",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "国内首个智能体互联标准体系 GB/Z185-2026 发布，为 AI 智能体发放身份码",
+      "originalTitle": "",
+      "subject": "国内首个智能体互联标准体系 GB/Z185-2026",
+      "action": "发布",
+      "object": "，为 AI 智能体发放身份码",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "tool_use",
+          "name": "工具调用"
+        }
+      ],
+      "entityIds": [
+        "EN-f1649339197f76d6"
+      ],
+      "entityNames": [
+        "Z185-2026"
+      ],
+      "productName": "Z185-2026",
+      "products": [
+        {
+          "name": "Z185-2026",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/980/622.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -1653,6 +1741,28 @@
       "lastSeen": "2026-07-22"
     },
     {
+      "id": "EN-f1649339197f76d6",
+      "name": "Z185-2026",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-09e1eafc857c79fd"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-24"
+    },
+    {
       "id": "EN-2abf8289b2f2113f",
       "name": "蚂蚁数科",
       "entityType": "organization_candidate",
@@ -1812,6 +1922,7 @@
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
         "EV-c3f617e75d303f59",
+        "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
         "EV-8a2d8ebbd700c787",
         "EV-2c16aa6254de4496",
@@ -1841,6 +1952,11 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-2634b786bde9fb8e",
+        "EV-3b7b9040dd2c2a89",
+        "EV-ae9f1e2cf5a28be4",
+        "EV-fbc316f83b63a543",
+        "EV-fe519605ebb69aaf",
         "EV-6cd7509380208a9d",
         "EV-0d5a32aca724d30e",
         "EV-3e449c3e9ad6a9e1",
@@ -2071,6 +2187,8 @@
         "TX-industry-education"
       ],
       "relatedEntityIds": [
+        "EN-fa12a0c13e906f43",
+        "EN-98fdc0804bb472fe",
         "EN-830abc32d2a443c5",
         "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
@@ -2096,7 +2214,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-3a9b395103419892",
@@ -2126,7 +2244,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "谷歌"
+        "Gemini"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -2161,6 +2279,9 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-2634b786bde9fb8e",
+        "EV-c914ac00a35d7cf0",
+        "EV-c9d7b46d167df2d1",
         "EV-5b193a038ab4ea22",
         "EV-969923b0b978a660",
         "EV-6ce069b1845f5a52",
@@ -2302,31 +2423,27 @@
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
         "EN-6f216f2ea5b7a13e",
-        "EN-31055a8d9856fce4",
         "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
         "EN-0e008e2c06144ec8",
+        "EN-cfe6926406f30a15",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
-        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
-        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
-        "EN-cfe6926406f30a15",
         "EN-e3db3da2b7dc6057",
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -2384,6 +2501,9 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-563843979fb55b9b",
+        "EV-7f92b7e410ed08f1",
+        "EV-87f052d24396fdbc",
         "EV-18df881cc436b3cb",
         "EV-828698c8779bb522",
         "EV-2fea1664807824ce",
@@ -2476,8 +2596,8 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-distillation",
         "TX-technology-image_generation",
+        "TX-technology-distillation",
         "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
@@ -2511,7 +2631,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-085598c00f2aaccf",
@@ -2705,6 +2825,7 @@
         "EV-cf76f090a1a20a36",
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
+        "EV-fbc316f83b63a543",
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
         "EV-655018b9820c7940",
@@ -2761,8 +2882,10 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-bde892f452cebcb3",
         "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
+        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
@@ -2770,7 +2893,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-e3863f813fe47240",
@@ -2838,6 +2961,8 @@
         "EV-3b40ec144e5db22c",
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
+        "EV-b78d7fc420117d68",
+        "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
         "EV-6fa2c58973ea61b4",
         "EV-e15ae1112294d59e",
@@ -2868,6 +2993,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-5ec22cf9a1fb59d4",
+        "EV-b0dec1e885a601fe",
+        "EV-2634b786bde9fb8e",
+        "EV-3b7b9040dd2c2a89",
+        "EV-fe519605ebb69aaf",
         "EV-0d5a32aca724d30e",
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
@@ -2984,6 +3114,8 @@
         "EV-773ffcc6e1df56fa",
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-a0ec365561b53cd4",
+        "EV-d40d5c9625f296db",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
@@ -3084,7 +3216,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -3180,6 +3312,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
+        "EV-9852a10590030da9",
         "EV-1ba939d8baf43207",
         "EV-941ba9ebdc43f20c",
         "EV-92d28aef0c4b0a8a",
@@ -3274,7 +3407,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -3361,6 +3494,7 @@
         "EV-df2357fc3c3b4f5e",
         "EV-bbc1042dcf5ad317",
         "EV-b95539d17772a4ce",
+        "EV-9fb08b68f301eb88",
         "EV-347d250e2769de9a",
         "EV-7449d239223d4928",
         "EV-2f56b99f72ad6c4f"
@@ -3372,13 +3506,14 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-model_context_protocol",
         "TX-technology-tool_use",
-        "TX-technology-reasoning"
+        "TX-technology-reasoning",
+        "TX-technology-speech_audio"
       ],
       "relatedEntityIds": [
         "EN-dc6c28a2123e8efb"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-07-17"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-d6d6e4e33c59b45e",
@@ -3468,6 +3603,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-d40d5c9625f296db",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-ef823877347ff40f",
@@ -3511,7 +3647,7 @@
         "EN-af3ceabbe048a291"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-41dcc2d4951f337b",

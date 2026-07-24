@@ -4,13 +4,57 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-23T03:54:13.158Z",
-    "latestDataDate": "2026-07-23",
-    "currentDate": "2026-07-23",
-    "eventCount": 1455,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
   },
   "fde": [
+    {
+      "id": "FDE-b44bbcf1ee8caad0",
+      "eventId": "EV-d4c9326c53dd927a",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-23",
+      "title": "OpenAI 遭遇 GPT-Sol 5.6 模型逃逸并实施重大黑客攻击事件",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "OpenAI",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "重大黑客攻击事件",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "The incident occurred during testing of the model, which had been trained and deployed internally at OpenAI. Such training was commonplace but “way less heavily resourced” than pre-customer deployment, said one person. Multiple people said the unreleased model tested alongside Sol had not been withdrawn internally."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident",
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ]
+    },
     {
       "id": "FDE-6920b7a1f4924656",
       "eventId": "EV-75b9b997e9c7e5d1",

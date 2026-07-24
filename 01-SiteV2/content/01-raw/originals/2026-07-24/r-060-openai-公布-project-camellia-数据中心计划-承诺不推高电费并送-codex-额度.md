@@ -1,0 +1,222 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-060
+title: "OpenAI 公布 Project Camellia 数据中心计划，承诺不推高电费并送 Codex 额度"
+title_zh: "OpenAI 公布 Project Camellia 数据中心计划，承诺不推高电费并送 Codex 额度"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/980/575.htm"
+canonical_url: "https://ithome.com/0/980/575.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-23T04:13:17.000Z"
+collected_at: 2026-07-24T01:25:43.516Z
+language: mixed
+full_text_hash: 78ab9f2c2d4ef2dc
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-060-openai-公布-project-camellia-数据中心计划-承诺不推高电费并送-codex-额度.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-060-openai-公布-project-camellia-数据中心计划-承诺不推高电费并送-codex-额度.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 60
+extractor_diagnostics: {"readability_score":60,"text_length":1035,"paragraph_count":12,"sentence_count":10,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1035
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"78ab9f2c2d4ef2dc","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 公布 Project Camellia 数据中心计划，承诺不推高电费并送 Codex 额度","discovery_summary":"OpenAI 计划在佐治亚州埃芬汉姆县建设一座投资至少 200 亿美元、用电需求 3.2 吉瓦的数据中心园区。项目承诺不推高居民电费，采用闭环水系统降低用水量，并向当地学生提供最高 7100 万美元的 Codex 使用额度。园区预计 2028 年至 2032 年分阶段供电，将带来数千个建设岗位和超 1000 个长期运营岗位。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/980/575.htm","discovered_at":"2026-07-24T01:15:58.896Z","rank_on_page":348,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 8d583bf79c5d457a
+content_hash: 78ab9f2c2d4ef2dc
+semantic_hash: 4f24985335c69923
+duplicate_of: ""
+first_seen_at: "2026-07-23T04:13:17.000Z"
+last_seen_at: 2026-07-24T01:25:43.516Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":5,"importance_reason":"market-structure commercial event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","OpenAI"],"products":["Codex","ChatGPT"],"people":[],"industries":["开发者工具","企业服务"],"roles":[],"workflows":["合同审阅 / 法律研究","计费 / 预算管理"],"business_actions":["融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["200 亿","3.2","7100 万","2028","2032","1000","7","23"],"quotes":["我们认为，尽早与社区接触才是建立信任的正确方式。项目仍处于开发初期，基础设施、建设阶段安排、设计、融资和运营模式等方面还有大量工作要完成。","佐治亚州家庭不会为项目买单，我们将全额承担供电所需的基础设施和电力服务费用。"]}
+evidence_seed: {"company_actions":["OpenAI 计划在佐治亚州埃芬汉姆县建设一座投资至少 200 亿美元、用电需求 3.2 吉瓦的数据中心园区。项目承诺不推高居民电费，采用闭环水系统降低用水量，并向当地学生提供最高 7100 万美元的 Codex 使用额度。园区预计 2028 年至 2032 年分阶段供电，将带来数千个建设岗位和超 1000 个长期运营岗位。","IT之家 7 月 23 日消息，据《商业内幕》今天（23 日）报道，OpenAI 正为佐治亚州一座大型数据中心争取社区支持，希望避免 AI 基础设施项目 在美国各地引发的反对浪潮 。","OpenAI 公布了名为 Project Camellia 的新计划，准备在萨凡纳郊外的埃芬汉姆县乡村地区建设一座数据中心园区。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"OpenAI 计划在佐治亚州埃芬汉姆县建设一座投资至少 200 亿美元、用电需求 3.2 吉瓦的数据中心园区。项目承诺不推高居民电费，采用闭环水系统降低用水量，并向当地学生提供最高 7100 万美元的 Codex 使用额度。园区预计 2028 年至 2032 年分阶段供电，将带来数千个建设岗位和超 1000 个长期运营岗位。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 7 月 23 日消息，据《商业内幕》今天（23 日）报道，OpenAI 正为佐治亚州一座大型数据中心争取社区支持，希望避免 AI 基础设施项目 在美国各地引发的反对浪潮 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"OpenAI 公布了名为 Project Camellia 的新计划，准备在萨凡纳郊外的埃芬汉姆县乡村地区建设一座数据中心园区。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"funding","text":"项目投资额至少为 200 亿美元（IT之家注：现汇率约合 1356.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"3 亿元人民币），占地约 567 公顷，用电需求达到 3.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"OpenAI 表示，项目团队已与州及地方官员、社区领袖、学校和其他各方沟通并听取意见，后续还将举行公众说明会。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-24T01:25:43.516Z
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 公布 Project Camellia 数据中心计划，承诺不推高电费并送 Codex 额度
+
+## clean_text
+
+IT之家 7 月 23 日消息，据《商业内幕》今天（23 日）报道，OpenAI 正为佐治亚州一座大型数据中心争取社区支持，希望避免 AI 基础设施项目 在美国各地引发的反对浪潮 。
+OpenAI 公布了名为 Project Camellia 的新计划，准备在萨凡纳郊外的埃芬汉姆县乡村地区建设一座数据中心园区。项目投资额至少为 200 亿美元（IT之家注：现汇率约合 1356.3 亿元人民币），占地约 567 公顷，用电需求达到 3.2 吉瓦。
+OpenAI 表示，项目团队已与州及地方官员、社区领袖、学校和其他各方沟通并听取意见，后续还将举行公众说明会。“我们认为，尽早与社区接触才是建立信任的正确方式。项目仍处于开发初期，基础设施、建设阶段安排、设计、融资和运营模式等方面还有大量工作要完成。”
+埃芬汉姆县委员杰米 · 德洛奇声明称，团队已经提出了尖锐问题，并确认项目用水量很少，不会增加本县居民的能源成本，还能带来新的税收收入以支持学校，并为当地企业创造更多机会。
+OpenAI 已与佐治亚电力公司签订供电合同，约 567 公顷的园区将在 2028 年至 2032 年分阶段获得电力供应 。
+OpenAI 同时公布四项承诺，重点回应 电费上涨、用水量和社区影响 等争议。上述问题正是其他地区反对数据中心建设的主要原因。
+OpenAI 承诺，项目 不会推高当地居民的电费 ，园区采用的闭环水系统也能 把用水量降至“极低”水平 。“佐治亚州家庭不会为项目买单，我们将全额承担供电所需的基础设施和电力服务费用。”
+园区还将成为首批能够在用电高峰主动降低耗电量的数据中心之一，避免住宅用户受到供电压力影响。
+OpenAI 计划在项目整个运营周期内向社区提供 8000 万美元（现汇率约合 5.43 亿元人民币）回馈资金，并为符合条件的佐治亚州大学、社区学院和技术学校学生 提供总额最高 7100 万美元（现汇率约合 4.81 亿元人民币）的 Codex 使用额度， 每名符合条件的学生都可通过 ChatGPT 账户领取价值 100 美元的 Codex 使用额度。
+一家独立机构将每年审计 OpenAI 履行承诺的情况，并向公众公布审计结果。
+园区全面建成后，预计将带来数千个建设岗位和超过 1000 个长期运营岗位。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 23 日消息，据《商业内幕》今天（23 日）报道，OpenAI 正为佐治亚州一座大型数据中心争取社区支持，希望避免 AI 基础设施项目 在美国各地引发的反对浪潮 。
+OpenAI 公布了名为 Project Camellia 的新计划，准备在萨凡纳郊外的埃芬汉姆县乡村地区建设一座数据中心园区。项目投资额至少为 200 亿美元（IT之家注：现汇率约合 1356.3 亿元人民币），占地约 567 公顷，用电需求达到 3.2 吉瓦。
+OpenAI 表示，项目团队已与州及地方官员、社区领袖、学校和其他各方沟通并听取意见，后续还将举行公众说明会。“我们认为，尽早与社区接触才是建立信任的正确方式。项目仍处于开发初期，基础设施、建设阶段安排、设计、融资和运营模式等方面还有大量工作要完成。”
+埃芬汉姆县委员杰米 · 德洛奇声明称，团队已经提出了尖锐问题，并确认项目用水量很少，不会增加本县居民的能源成本，还能带来新的税收收入以支持学校，并为当地企业创造更多机会。
+OpenAI 已与佐治亚电力公司签订供电合同，约 567 公顷的园区将在 2028 年至 2032 年分阶段获得电力供应 。
+OpenAI 同时公布四项承诺，重点回应 电费上涨、用水量和社区影响 等争议。上述问题正是其他地区反对数据中心建设的主要原因。
+OpenAI 承诺，项目 不会推高当地居民的电费 ，园区采用的闭环水系统也能 把用水量降至“极低”水平 。“佐治亚州家庭不会为项目买单，我们将全额承担供电所需的基础设施和电力服务费用。”
+园区还将成为首批能够在用电高峰主动降低耗电量的数据中心之一，避免住宅用户受到供电压力影响。
+OpenAI 计划在项目整个运营周期内向社区提供 8000 万美元（现汇率约合 5.43 亿元人民币）回馈资金，并为符合条件的佐治亚州大学、社区学院和技术学校学生 提供总额最高 7100 万美元（现汇率约合 4.81 亿元人民币）的 Codex 使用额度， 每名符合条件的学生都可通过 ChatGPT 账户领取价值 100 美元的 Codex 使用额度。
+一家独立机构将每年审计 OpenAI 履行承诺的情况，并向公众公布审计结果。
+园区全面建成后，预计将带来数千个建设岗位和超过 1000 个长期运营岗位。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 60
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":60,"text_length":1035,"paragraph_count":12,"sentence_count":10,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=medium
+   OpenAI 计划在佐治亚州埃芬汉姆县建设一座投资至少 200 亿美元、用电需求 3.2 吉瓦的数据中心园区。项目承诺不推高居民电费，采用闭环水系统降低用水量，并向当地学生提供最高 7100 万美元的 Codex 使用额度。园区预计 2028 年至 2032 年分阶段供电，将带来数千个建设岗位和超 1000 个长期运营岗位。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家 7 月 23 日消息，据《商业内幕》今天（23 日）报道，OpenAI 正为佐治亚州一座大型数据中心争取社区支持，希望避免 AI 基础设施项目 在美国各地引发的反对浪潮 。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   OpenAI 公布了名为 Project Camellia 的新计划，准备在萨凡纳郊外的埃芬汉姆县乡村地区建设一座数据中心园区。
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=medium
+   项目投资额至少为 200 亿美元（IT之家注：现汇率约合 1356.
+
+5. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   3 亿元人民币），占地约 567 公顷，用电需求达到 3.
+
+6. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   OpenAI 表示，项目团队已与州及地方官员、社区领袖、学校和其他各方沟通并听取意见，后续还将举行公众说明会。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI
+- products: Codex, ChatGPT
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: 暂无公开信息
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理
+- business_actions: 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 200 亿, 3.2, 7100 万, 2028, 2032, 1000, 7, 23
+- quotes: 我们认为，尽早与社区接触才是建立信任的正确方式。项目仍处于开发初期，基础设施、建设阶段安排、设计、融资和运营模式等方面还有大量工作要完成。 / 佐治亚州家庭不会为项目买单，我们将全额承担供电所需的基础设施和电力服务费用。
+
+## evidence_seed
+
+- company_actions: OpenAI 计划在佐治亚州埃芬汉姆县建设一座投资至少 200 亿美元、用电需求 3.2 吉瓦的数据中心园区。项目承诺不推高居民电费，采用闭环水系统降低用水量，并向当地学生提供最高 7100 万美元的 Codex 使用额度。园区预计 2028 年至 2032 年分阶段供电，将带来数千个建设岗位和超 1000 个长期运营岗位。 / IT之家 7 月 23 日消息，据《商业内幕》今天（23 日）报道，OpenAI 正为佐治亚州一座大型数据中心争取社区支持，希望避免 AI 基础设施项目 在美国各地引发的反对浪潮 。 / OpenAI 公布了名为 Project Camellia 的新计划，准备在萨凡纳郊外的埃芬汉姆县乡村地区建设一座数据中心园区。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 5
+- importance_reason: market-structure commercial event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 公布 Project Camellia 数据中心计划，承诺不推高电费并送 Codex 额度","discovery_summary":"OpenAI 计划在佐治亚州埃芬汉姆县建设一座投资至少 200 亿美元、用电需求 3.2 吉瓦的数据中心园区。项目承诺不推高居民电费，采用闭环水系统降低用水量，并向当地学生提供最高 7100 万美元的 Codex 使用额度。园区预计 2028 年至 2032 年分阶段供电，将带来数千个建设岗位和超 1000 个长期运营岗位。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/980/575.htm","discovered_at":"2026-07-24T01:15:58.896Z","rank_on_page":348,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI 计划在佐治亚州埃芬汉姆县建设一座投资至少 200 亿美元、用电需求 3.2 吉瓦的数据中心园区。项目承诺不推高居民电费，采用闭环水系统降低用水量，并向当地学生提供最高 7100 万美元的 Codex 使用额度。园区预计 2028 年至 2032 年分阶段供电，将带来数千个建设岗位和超 1000 个长期运营岗位。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

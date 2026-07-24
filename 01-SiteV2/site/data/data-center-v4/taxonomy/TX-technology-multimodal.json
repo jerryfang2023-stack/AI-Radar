@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-23T03:54:13.158Z",
-    "latestDataDate": "2026-07-23",
-    "currentDate": "2026-07-23",
-    "eventCount": 1455,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
   },
   "node": {
     "id": "TX-technology-multimodal",
@@ -22,6 +22,7 @@
       "EV-a9810b47e0408a05",
       "EV-26d2874c6ce028d6",
       "EV-fd21441fb6e143c3",
+      "EV-03d40407042d7986",
       "EV-d4278191ae11f198",
       "EV-ed272c57e1513d3f",
       "EV-9d5363657f3541e7",
@@ -112,7 +113,7 @@
       "HW-ceb55d9bc637c1d3"
     ],
     "firstSeen": "2026-06-02",
-    "lastSeen": "2026-07-22"
+    "lastSeen": "2026-07-24"
   },
   "events": [
     {
@@ -770,6 +771,111 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/966/539.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-03d40407042d7986",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-24",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "荣耀官宣全球首款机器人手机 Robot Phone，8 月见",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "荣耀官宣全球首款机器人手机 Robot Phone，8 月见",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-8d57f84bd1847b24"
+      ],
+      "entityNames": [
+        "Robot Phone"
+      ],
+      "productName": "Robot Phone",
+      "products": [
+        {
+          "name": "Robot Phone",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/980/754.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -3765,6 +3871,9 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-563843979fb55b9b",
+        "EV-7f92b7e410ed08f1",
+        "EV-87f052d24396fdbc",
         "EV-18df881cc436b3cb",
         "EV-828698c8779bb522",
         "EV-2fea1664807824ce",
@@ -3857,8 +3966,8 @@
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-distillation",
         "TX-technology-image_generation",
+        "TX-technology-distillation",
         "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
@@ -3892,7 +4001,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -4154,6 +4263,7 @@
         "EV-ebef81764102ee7c",
         "EV-f6611268f119a172",
         "EV-342799d4e68e7416",
+        "EV-d40d5c9625f296db",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-ef823877347ff40f",
@@ -4197,7 +4307,7 @@
         "EN-af3ceabbe048a291"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-50537dab76505dfc",
@@ -4297,6 +4407,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-03d40407042d7986",
         "EV-d4278191ae11f198",
         "EV-ed272c57e1513d3f",
         "EV-25933b8f123f92be",
@@ -4311,7 +4422,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-a89151ba4b5ac0f2",
@@ -4477,6 +4588,8 @@
         "EV-3b40ec144e5db22c",
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
+        "EV-b78d7fc420117d68",
+        "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
         "EV-6fa2c58973ea61b4",
         "EV-e15ae1112294d59e",
@@ -4507,6 +4620,11 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-5ec22cf9a1fb59d4",
+        "EV-b0dec1e885a601fe",
+        "EV-2634b786bde9fb8e",
+        "EV-3b7b9040dd2c2a89",
+        "EV-fe519605ebb69aaf",
         "EV-0d5a32aca724d30e",
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
@@ -4623,6 +4741,8 @@
         "EV-773ffcc6e1df56fa",
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-a0ec365561b53cd4",
+        "EV-d40d5c9625f296db",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
@@ -4723,7 +4843,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-8f71c4871a160172",
@@ -4990,6 +5110,7 @@
         "EV-cf76f090a1a20a36",
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
+        "EV-fbc316f83b63a543",
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
         "EV-655018b9820c7940",
@@ -5046,8 +5167,10 @@
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-bde892f452cebcb3",
         "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
+        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
@@ -5055,7 +5178,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-e3863f813fe47240",
@@ -5179,6 +5302,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
+        "EV-9852a10590030da9",
         "EV-1ba939d8baf43207",
         "EV-941ba9ebdc43f20c",
         "EV-92d28aef0c4b0a8a",
@@ -5273,7 +5397,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-52fc33ae4d101a5d",
@@ -5529,6 +5653,7 @@
         "EV-44a4e92c03a31ab1",
         "EV-3b40ec144e5db22c",
         "EV-c8928410f6c145eb",
+        "EV-67212040ee9cd7c8",
         "EV-cfb7c4b4b765f53b",
         "EV-ec711aed6721bb30",
         "EV-d756f05478303505",
@@ -5563,6 +5688,7 @@
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-use_case-software_development",
@@ -5577,7 +5703,7 @@
         "EN-3ccbd9105a45d8fc"
       ],
       "firstSeen": "2026-03-11",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-01f1074bb52ff605",
@@ -5664,7 +5790,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "谷歌"
+        "Gemini"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -5699,6 +5825,9 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-2634b786bde9fb8e",
+        "EV-c914ac00a35d7cf0",
+        "EV-c9d7b46d167df2d1",
         "EV-5b193a038ab4ea22",
         "EV-969923b0b978a660",
         "EV-6ce069b1845f5a52",
@@ -5840,31 +5969,27 @@
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
         "EN-6f216f2ea5b7a13e",
-        "EN-31055a8d9856fce4",
         "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
         "EN-0e008e2c06144ec8",
+        "EN-cfe6926406f30a15",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
-        "EN-3546e1b15e6549b2",
         "EN-b5c336c0dd1ff29c",
-        "EN-e1a4e41919f7c2dc",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
-        "EN-cfe6926406f30a15",
         "EN-e3db3da2b7dc6057",
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-e0bab6f6c58bfe4e",
@@ -6088,8 +6213,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Qwen",
-        "阿里"
+        "Qwen"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -6105,6 +6229,7 @@
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
+        "EV-2e1352039c487bb0",
         "EV-0d5a32aca724d30e",
         "EV-b4aa08aef57bdb0f",
         "EV-1a241bcb4fad886c",
@@ -6158,8 +6283,8 @@
         "TX-technology-open_weights",
         "TX-technology-multimodal",
         "TX-technology-video_generation",
-        "TX-technology-distillation",
         "TX-technology-image_generation",
+        "TX-technology-distillation",
         "TX-technology-speech_audio",
         "TX-technology-quantization",
         "TX-technology-computer_use"
@@ -6167,13 +6292,11 @@
       "relatedEntityIds": [
         "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
-        "EN-5398729239788ca5",
         "EN-22a4c686e665e299",
-        "EN-2daac3672aeafcbd",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-d65d81c60c0c47c4",
@@ -6322,7 +6445,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "腾讯混元"
+        "腾讯"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -6338,6 +6461,7 @@
         "EV-619e33abf3f9bfbf",
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
+        "EV-59fb7ba1fd6ac55e",
         "EV-423c7293d6a91086",
         "EV-86ab9c2f1416e9d8",
         "EV-7fe139b107f9adc6",
@@ -6369,10 +6493,12 @@
         "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [
-        "EN-a1adb91065c5a347"
+        "EN-dd24c3b82a636110",
+        "EN-a1adb91065c5a347",
+        "EN-ea3bd73e2b506e00"
       ],
       "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-24"
     }
   ],
   "fde": [],

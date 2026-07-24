@@ -1,0 +1,287 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-088
+title: "OpenAI 向所有美国用户开放 ChatGPT Health 功能"
+title_zh: "OpenAI 向所有美国用户开放 ChatGPT Health 功能"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users"
+canonical_url: "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users"
+source_name: "TechCrunch：AI（RSS）"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-23T00:00:00.000Z"
+collected_at: 2026-07-24T01:25:54.467Z
+language: mixed
+full_text_hash: d5886a5aeab74dec
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-088-openai-向所有美国用户开放-chatgpt-health-功能.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-088-openai-向所有美国用户开放-chatgpt-health-功能.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 96
+extractor_diagnostics: {"readability_score":96,"text_length":4019,"paragraph_count":28,"sentence_count":30,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 4019
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d5886a5aeab74dec","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 向所有美国用户开放 ChatGPT Health 功能","discovery_summary":"OpenAI 宣布将 ChatGPT Health 功能开放给所有 18 岁以上的美国用户，覆盖免费、Go、Plus 和 Pro 套餐。该功能允许用户整合 Apple Health、Epic 等来源的健康数据，并在所有对话中调用。目前用户每周提出 3 亿次健康相关查询。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users","discovered_at":"2026-07-24T01:15:58.851Z","rank_on_page":156,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 8262c141f0c550ac
+content_hash: d5886a5aeab74dec
+semantic_hash: 839691fe5ce99a6d
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-23T00:00:00.000Z"
+last_seen_at: 2026-07-24T01:25:54.467Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":5,"importance_reason":"market-structure commercial event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","ai_hardware_lens","commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["TechCrunch","AI（RSS）","OpenAI","Anthropic","Google","Apple"],"products":["ChatGPT","chatgpt","agents","Gemini"],"people":[],"industries":["法律 / 法务","医疗"],"roles":["CIO / IT 负责人"],"workflows":[],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","法务"],"numbers":["18","3 亿","10","00","23","2026","230 million","300 million"],"quotes":["not intended for use in the diagnosis or treatment of any health condition."]}
+evidence_seed: {"company_actions":["-based users over 18 across all plans.","The announcement comes a day after a Florida-based pastor sued the company for giving a near-fatal suggestion not to consult a doctor .","The company started testing the feature through a dedicated hub earlier in January, allowing users to integrate data from other services and their personal information from services such as Apple Health, Function, and MyFitnessPal."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"OpenAI 宣布将 ChatGPT Health 功能开放给所有 18 岁以上的美国用户，覆盖免费、Go、Plus 和 Pro 套餐。该功能允许用户整合 Apple Health、Epic 等来源的健康数据，并在所有对话中调用。目前用户每周提出 3 亿次健康相关查询。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"Image Credits: Jakub Porzycki/NurPhoto / Getty Images Apps OpenAI makes ChatGPT Health available to all US users Ivan Mehta 10:00 AM PDT · July 23, 2026 OpenAI said today it is making ChatGPT Health, a feature that helps users with health-related queries, available to all U.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"-based users over 18 across all plans.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"The announcement comes a day after a Florida-based pastor sued the company for giving a near-fatal suggestion not to consult a doctor .","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"The company started testing the feature through a dedicated hub earlier in January, allowing users to integrate data from other services and their personal information from services such as Apple Health, Function, and MyFitnessPal.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"number","text":"At that time, OpenAI said users were asking 230 million health-related queries each week.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-24T01:25:54.467Z
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# OpenAI 向所有美国用户开放 ChatGPT Health 功能
+
+## clean_text
+
+Image Credits: Jakub Porzycki/NurPhoto / Getty Images
+Apps
+OpenAI makes ChatGPT Health available to all US users
+Ivan Mehta
+10:00 AM PDT · July 23, 2026
+OpenAI said today it is making ChatGPT Health, a feature that helps users with health-related queries, available to all U.S.-based users over 18 across all plans. The announcement comes a day after a Florida-based pastor sued the company for giving a near-fatal suggestion not to consult a doctor .
+The company started testing the feature through a dedicated hub earlier in January, allowing users to integrate data from other services and their personal information from services such as Apple Health, Function, and MyFitnessPal.
+At that time, OpenAI said users were asking 230 million health-related queries each week. That number has now gone up to 300 million.
+ChatGPT health Image Credits: OpenAI
+Users can also integrate their medical records from hospital systems like Epic and Oracle Health, and health platforms like One Medical and Function Health.
+OpenAI said earlier that users needed to use the health hub for health-related queries. Now they can choose to draw insights from connected information in the health section in all queries. The company said during the testing it observed that 70% of health-related queries took place outside the dedicated hub. Through this new feature, users can use their health information to get information on food or allergies in the general chat.
+The company noted that its models have made progress in answering health-related queries. The company noted that the smallest model from its latest release, GPT 5.6-Luna, outperforms GPT 5.5 on HealthBench evaluation, an open source benchmark developed by the company to evaluate large language models (LLMs) on health queries . OpenAI said that it doesn’t use any user data to train its model, and it works with physicians to improve its models on health queries.
+Despite these performance gains, the company maintains in its terms that its services are “not intended for use in the diagnosis or treatment of any health condition.” The company cited these clauses in response to the above lawsuit, and also told The New York Times that it is working on making health- or medicine-related answers safer. With the latest roll out, OpenAI said it wants people to verify information and take medical decisions based on professional advice.
+Several studies have highlighted that AI bots are not reliable for medical advice. However, this has not deterred companies like Anthropic and Google from launching health-related AI features.
+Health in ChatGPT is rolling out to logged-in U.S. users with free, Go, Plus, and Pro plans on the web and iOS this week.
+Topics
+AI , Apps , ChatGPT , chatgpt health , OpenAI , TC
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Ivan Mehta
+Ivan covers global consumer tech developments at TechCrunch. He is based out of India and has previously worked at publications including Huffington Post and The Next Web.
+You can contact or verify outreach from Ivan by emailing im@ivanmehta.com or via encrypted message at ivan.42 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+OpenAI says Hugging Face was breached by its pre-release models
+Russell Brandom
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Anthropic’s landmark $1.5B copyright settlement is approved
+Kirsten Korosec
+Google is working on a new AI chip designed to make Gemini more efficient
+Lucas Ropek
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Jakub Porzycki/NurPhoto / Getty Images
+Apps
+OpenAI makes ChatGPT Health available to all US users
+Ivan Mehta
+10:00 AM PDT · July 23, 2026
+OpenAI said today it is making ChatGPT Health, a feature that helps users with health-related queries, available to all U.S.-based users over 18 across all plans. The announcement comes a day after a Florida-based pastor sued the company for giving a near-fatal suggestion not to consult a doctor .
+The company started testing the feature through a dedicated hub earlier in January, allowing users to integrate data from other services and their personal information from services such as Apple Health, Function, and MyFitnessPal.
+At that time, OpenAI said users were asking 230 million health-related queries each week. That number has now gone up to 300 million.
+ChatGPT health Image Credits: OpenAI
+Users can also integrate their medical records from hospital systems like Epic and Oracle Health, and health platforms like One Medical and Function Health.
+OpenAI said earlier that users needed to use the health hub for health-related queries. Now they can choose to draw insights from connected information in the health section in all queries. The company said during the testing it observed that 70% of health-related queries took place outside the dedicated hub. Through this new feature, users can use their health information to get information on food or allergies in the general chat.
+The company noted that its models have made progress in answering health-related queries. The company noted that the smallest model from its latest release, GPT 5.6-Luna, outperforms GPT 5.5 on HealthBench evaluation, an open source benchmark developed by the company to evaluate large language models (LLMs) on health queries . OpenAI said that it doesn’t use any user data to train its model, and it works with physicians to improve its models on health queries.
+Despite these performance gains, the company maintains in its terms that its services are “not intended for use in the diagnosis or treatment of any health condition.” The company cited these clauses in response to the above lawsuit, and also told The New York Times that it is working on making health- or medicine-related answers safer. With the latest roll out, OpenAI said it wants people to verify information and take medical decisions based on professional advice.
+Several studies have highlighted that AI bots are not reliable for medical advice. However, this has not deterred companies like Anthropic and Google from launching health-related AI features.
+Health in ChatGPT is rolling out to logged-in U.S. users with free, Go, Plus, and Pro plans on the web and iOS this week.
+Topics
+AI , Apps , ChatGPT , chatgpt health , OpenAI , TC
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Ivan Mehta
+Ivan covers global consumer tech developments at TechCrunch. He is based out of India and has previously worked at publications including Huffington Post and The Next Web.
+You can contact or verify outreach from Ivan by emailing im@ivanmehta.com or via encrypted message at ivan.42 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+OpenAI says Hugging Face was breached by its pre-release models
+Russell Brandom
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Anthropic’s landmark $1.5B copyright settlement is approved
+Kirsten Korosec
+Google is working on a new AI chip designed to make Gemini more efficient
+Lucas Ropek
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 96
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":96,"text_length":4019,"paragraph_count":28,"sentence_count":30,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   OpenAI 宣布将 ChatGPT Health 功能开放给所有 18 岁以上的美国用户，覆盖免费、Go、Plus 和 Pro 套餐。该功能允许用户整合 Apple Health、Epic 等来源的健康数据，并在所有对话中调用。目前用户每周提出 3 亿次健康相关查询。
+
+2. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   Image Credits: Jakub Porzycki/NurPhoto / Getty Images Apps OpenAI makes ChatGPT Health available to all US users Ivan Mehta 10:00 AM PDT · July 23, 2026 OpenAI said today it is making ChatGPT Health, a feature that helps users with health-related queries, available to all U.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   -based users over 18 across all plans.
+
+4. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   The announcement comes a day after a Florida-based pastor sued the company for giving a near-fatal suggestion not to consult a doctor .
+
+5. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   The company started testing the feature through a dedicated hub earlier in January, allowing users to integrate data from other services and their personal information from services such as Apple Health, Function, and MyFitnessPal.
+
+6. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   At that time, OpenAI said users were asking 230 million health-related queries each week.
+
+## business_elements
+
+- companies: TechCrunch, AI（RSS）, OpenAI, Anthropic, Google, Apple
+- products: ChatGPT, chatgpt, agents, Gemini
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗
+- roles: CIO / IT 负责人
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 法务
+- numbers: 18, 3 亿, 10, 00, 23, 2026, 230 million, 300 million
+- quotes: not intended for use in the diagnosis or treatment of any health condition.
+
+## evidence_seed
+
+- company_actions: -based users over 18 across all plans. / The announcement comes a day after a Florida-based pastor sued the company for giving a near-fatal suggestion not to consult a doctor . / The company started testing the feature through a dedicated hub earlier in January, allowing users to integrate data from other services and their personal information from services such as Apple Health, Function, and MyFitnessPal.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 5
+- importance_reason: market-structure commercial event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,ai_hardware_lens,commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 向所有美国用户开放 ChatGPT Health 功能","discovery_summary":"OpenAI 宣布将 ChatGPT Health 功能开放给所有 18 岁以上的美国用户，覆盖免费、Go、Plus 和 Pro 套餐。该功能允许用户整合 Apple Health、Epic 等来源的健康数据，并在所有对话中调用。目前用户每周提出 3 亿次健康相关查询。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users","discovered_at":"2026-07-24T01:15:58.851Z","rank_on_page":156,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI 宣布将 ChatGPT Health 功能开放给所有 18 岁以上的美国用户，覆盖免费、Go、Plus 和 Pro 套餐。该功能允许用户整合 Apple Health、Epic 等来源的健康数据，并在所有对话中调用。目前用户每周提出 3 亿次健康相关查询。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.0",
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-772c171be4bf6551",
+    "name": "Elice Group",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-ebdc37429f89b55a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-23",
+    "lastSeen": "2026-07-24",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-ebdc37429f89b55a"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-ebdc37429f89b55a",
+        "dataDate": "2026-07-24",
+        "date": "2026-07-23",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Elice集团利用GPU与国产NPU建设国内首个边缘AI数据中心",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          }
+        ],
+        "entityIds": [
+          "EN-772c171be4bf6551"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-a7207541fe11bd3b",
+      "eventId": "EV-ebdc37429f89b55a",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-23",
+      "title": "Elice集团利用GPU与国产NPU建设国内首个边缘AI数据中心",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "edge",
+      "supplier": "Elice Group",
+      "customer": "Elice Group",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://chosun.com/english/industry-en/2026/07/23/VKEVKHQ57JG2JE7HOQDPMUERHA",
+      "sourceName": "chosun.com",
+      "sourceDate": "2026-07-23",
+      "entityIds": [
+        "EN-772c171be4bf6551"
+      ]
+    }
+  ]
+}

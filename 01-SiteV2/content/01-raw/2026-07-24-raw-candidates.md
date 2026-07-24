@@ -1,0 +1,5850 @@
+---
+date: 2026-07-24
+stage: raw
+status: guanlan-daily-monitor-collected
+raw_count: 166
+aihot_mode: source-artifacts
+aihot_since: ""
+aihot_discovered_count: 0
+aihot_daily_discovered_count: 0
+aihot_all_discovered_count: 0
+aihot_daily_included_count: 0
+aihot_daily_pool_policy: full_daily_selected_to_pool_index
+aihot_rejected_by_raw_entry_rules: 0
+external_search_activated: false
+anysearch_configured: true
+anysearch_disabled_for_run: false
+provider_fallback_notes: Historical Raw dedupe removed 225 URL duplicate candidate(s) before Raw selection.; Search cross-entry dedupe removed 23 duplicate provider hits before Raw selection.; Historical Raw dedupe removed 192 fetched hash duplicate candidate(s) before Raw writing.; Same-run Raw dedupe removed 2 duplicate candidate(s) before Raw writing.; Adaptive Raw fetch expanded by 70 candidate(s) across 2 batch(es) after post-fetch dedupe left active Raw below 150.
+source_artifacts_used: true
+source_artifact_files: agent-workflow/reports/source-runs/2026-07-24/aihot-raw-source-candidates.json, agent-workflow/reports/source-runs/2026-07-24/gdelt-raw-source-candidates.json, agent-workflow/reports/source-runs/2026-07-24/keyword-raw-source-candidates.json, agent-workflow/reports/source-runs/2026-07-24/rss-raw-source-candidates.json
+historical_dedupe_enabled: true
+historical_raw_records_checked: 9651
+historical_duplicates_removed_before_fetch: 225
+historical_duplicates_removed_after_fetch: 192
+raw_dedupe_buffer: 140
+aihot_count: 98
+keyword_search_count: 36
+social_discovery_count: 6
+keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
+source_registry_config: 01-SiteV2/content/11-databases/source-registry-v2.json
+pool_target: 75
+pool_selection_buffer: 20
+routed_pool_target: 60
+core_pool_target: 30
+core_non_large_vendor_target: 20
+generated_at: 2026-07-24T01:25:15.083Z
+---
+
+# 2026-07-24 Raw Candidates
+
+说明：本文件由 `agent-workflow/tools/run-guanlan-daily-monitor.mjs` 生成。默认采用 Raw-first 策略：AI HOT、RSS、关键词搜索和 GDELT 作为发现入口，关键词规则补齐海外大厂、垂直赛道、融资、客户采用和行业落地缺口；HN / 社区只作为反馈补充。所有 discovery 入口进入 Business Signals 前必须回到原始 URL，保存全文或当时可见文本，并重新判定页面类型与事件证据。
+
+### R-001｜反对开源人工智能的论点站不住脚
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-001-反对开源人工智能的论点站不住脚.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://tombedor.dev/arguments-against-open-source-ai-are-very-bad
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：tip
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=0208f8be0bc6b2cc
+- 原文抓取优先级：22.1
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-002｜AMD 发布 Helios AI 机架系统，对标 Nvidia
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-002-amd-发布-helios-ai-机架系统-对标-nvidia.md`
+- 出处：TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=f842a91245e80f44
+- 原文抓取优先级：22.1
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-003｜Nvidia 用 Physical AI 框架解决医疗机器人数据难题：Medical Physics Simulation 发布
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-003-nvidia-用-physical-ai-框架解决医疗机器人数据难题-medical-physics-simulation-发布.md`
+- 出处：Artificial Intelligence News（RSS）｜https://www.artificialintelligence-news.com/news/nvidia-bets-physical-ai-solve-healthcare-robotics-data-problem
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=98abb076bfa1ff35
+- 原文抓取优先级：22.1
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-004｜AMD 拟向 Anthropic 投资 50 亿美元，达成 AI 基础设施协议
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-004-amd-拟向-anthropic-投资-50-亿美元-达成-ai-基础设施协议.md`
+- 出处：Artificial Intelligence News（RSS）｜https://www.artificialintelligence-news.com/news/amd-anthropic-ai-infrastructure-deal
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=cd4ba2f4834da3c4
+- 原文抓取优先级：22.1
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-005｜ServiceNow 4000万美元投资印度银行软件公司BusinessNext
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-005-servicenow-4000万美元投资印度银行软件公司businessnext.md`
+- 出处：TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/22/servicenow-bets-40m-on-indian-firm-businessnext-at-700m-valuation-to-deepen-banking-ai-push
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-22T00:00:00.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=483a02d034e60d90
+- 原文抓取优先级：22.1
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-006｜Anthropic 更新 Claude 语音模式，支持更强大模型
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-006-anthropic-更新-claude-语音模式-支持更强大模型.md`
+- 出处：TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: ai_hardware_lens
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=9a1871641297819e
+- 原文抓取优先级：22.1
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-007｜Anthropic 发布 Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-007-anthropic-发布-claude-security-插件-beta-版-面向-claude-code-的多智能体漏洞扫描器.md`
+- 出处：MarkTechPost（RSS）｜https://www.marktechpost.com/2026/07/22/anthropic-releases-claude-security-plugin-for-claude-code-in-beta-a-multi-agent-vulnerability-scanner-that-runs-in-your-terminal
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T06:12:05.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-article｜quality=high｜has_full_text=true｜hash=0e761dbedebf3da8
+- 原文抓取优先级：22.1
+- Raw 状态：pooled
+- Pool 分流：emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-008｜Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-008-cactus-发布-gemma-4-e2b-hybrid-可在设备端为每个回答输出置信度分数-低分时自动路由至更大模型.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://github.com/cactus-compute/cactus-hybrid
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：developer
+- 追溯标签：B
+- evidence_object_type: repo_readme_or_index
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T05:47:29.042Z
+- 分类：ai-models
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=3f8c24544eeb0989
+- 原文抓取优先级：22.1
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：viewpoint
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-009｜专家质疑白宫指控：蒸馏Anthropic的Fable并非Kimi K3成功的关键
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-009-专家质疑白宫指控-蒸馏anthropic的fable并非kimi-k3成功的关键.md`
+- 出处：TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：tip
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=5a523b12d4ff3cbc
+- 原文抓取优先级：22.1
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-010｜AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-010-amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gig.md`
+- 出处：keyword search / Anysearch｜https://www.globenewswire.com/news-release/2026/07/22/3331418/0/en/AMD-and-Anthropic-Announce-Strategic-Partnership-to-Deploy-Up-to-2-Gigawatts-of-AMD-Instinct-MI450-Series-GPUs.html
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware scenario and service
+- 关键词组：ai-hardware-scenario-service-signal
+- 发布时间：2026-07-22T00:00:00.000Z
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=8a0b69f468b9cc5d
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-011｜Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-011-supermicro-simplifies-edge-ai-deployments-with-validated-kubernetes-ap.md`
+- 出处：keyword search / Anysearch｜https://finance.yahoo.com/technology/ai/articles/supermicro-simplifies-edge-ai-deployments-130500202.html
+- 采集通道：keyword-search
+- 搜索意图：find_original_source
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware trend and innovation
+- 关键词组：ai-hardware-trend-innovation-signal
+- 发布时间：2026-07-08T00:00:00.000Z
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=b95a6ea305bd42f1
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-012｜Paper raises $34M to build the next great design platform
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-012-paper-raises-34m-to-build-the-next-great-design-platform.md`
+- 出处：keyword search / Anysearch｜https://paper.design/blog/series-a
+- 采集通道：keyword-search
+- 搜索意图：find_startups
+- 搜索路径：capital_startup
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：formal_report
+- 主题分类：资本市场信号
+- 关键词组：capital-market-signal
+- 发布时间：2026-07-22T00:00:00.000Z
+- 分类：capital_startup
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=0dd1a9d03026b38f
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-013｜AMD Launches Helios™: The Highest Performing Rackscale AI Infrastructure Solution
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-013-amd-launches-heliostm-the-highest-performing-rackscale-ai-infrastructu.md`
+- 出处：keyword search / Anysearch｜https://www.amd.com/en/blogs/2026/amd-launches-helios-the-highest-performing-rackscale-ai-infrastructure-solution.html
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware scenario and service
+- 关键词组：ai-hardware-scenario-service-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=01c41365650bb1c5
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-014｜AMD launches Helios, its first rack AI system to rival Nvidia ...
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-014-amd-launches-helios-its-first-rack-ai-system-to-rival-nvidia.md`
+- 出处：keyword search / Anysearch｜https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware scenario and service
+- 关键词组：ai-hardware-scenario-service-signal
+- 发布时间：2026-07-20T13:00:01.000Z
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=high｜has_full_text=true｜hash=2b3d0d9c74dd2082
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-015｜AMD and Cerebras Announce Industry-Leading Ultra-Low-Latency and High Throughput AI Inference Solution :: Advanced Micro Devices, Inc. (AMD)
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-015-amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-.md`
+- 出处：keyword search / Anysearch｜https://ir.amd.com/news-events/press-releases/detail/1293/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference-solution
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware scenario and service
+- 关键词组：ai-hardware-scenario-service-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=ed3bc84fcb86a1fb
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-016｜Acrab Unveils GΞLIX 1 SoC and Agent Box, Bringing State-of-the-Art AI to the Edge
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-016-acrab-unveils-gξlix-1-soc-and-agent-box-bringing-state-of-the-art-ai-t.md`
+- 出处：keyword search / Anysearch｜https://www.prnewswire.com/news-releases/acrab-unveils-glix-1-soc-and-agent-box-bringing-state-of-the-art-ai-to-the-edge-302833081.html
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware scenario and service
+- 关键词组：ai-hardware-scenario-service-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=ee31ab44ec4ba561
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-017｜India AI Servers and GPU Hardware Market, size, share, GPU-accelerated AI servers, AI training GPU cards, AI inference accelerators, CPU-GPU hybrid servers, edge AI servers- Nexdigm
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-017-india-ai-servers-and-gpu-hardware-market-size-share-gpu-accelerated-ai.md`
+- 出处：keyword search / Anysearch｜https://www.nexdigm.com/market-research/report-store/india-ai-servers-and-gpu-hardware-market
+- 采集通道：keyword-search
+- 搜索意图：find_original_source
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware trend and innovation
+- 关键词组：ai-hardware-trend-innovation-signal
+- 发布时间：2026-03-09T06:28:18.000Z
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=389c2293f919ab65
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, emerging_pool, watchlist
+- 缺失信息：none
+
+### R-018｜Canada AI Servers and GPU Hardware Market, Size, Share, Revenue, GPU-Accelerated AI Servers, Edge AI Servers, Key Players - Nexdigm
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-018-canada-ai-servers-and-gpu-hardware-market-size-share-revenue-gpu-accel.md`
+- 出处：keyword search / Anysearch｜https://www.nexdigm.com/market-research/report-store/canada-ai-servers-and-gpu-hardware-market
+- 采集通道：keyword-search
+- 搜索意图：find_original_source
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware trend and innovation
+- 关键词组：ai-hardware-trend-innovation-signal
+- 发布时间：2026-03-03T03:02:53.000Z
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=bc82d5967712bc83
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, emerging_pool, watchlist
+- 缺失信息：none
+
+### R-019｜UAE AI Servers and GPU Hardware Market, size, share, AI training servers, AI inference servers, GPU accelerated edge servers, high density GPU clusters, and hybrid CPU GPU servers- Nexdigm
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-019-uae-ai-servers-and-gpu-hardware-market-size-share-ai-training-servers-.md`
+- 出处：keyword search / Anysearch｜https://www.nexdigm.com/market-research/report-store/uae-ai-servers-and-gpu-hardware-market
+- 采集通道：keyword-search
+- 搜索意图：find_original_source
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware trend and innovation
+- 关键词组：ai-hardware-trend-innovation-signal
+- 发布时间：2026-02-25T11:16:57.000Z
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=9fc26ad462945b4e
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-020｜Digi Power X Achieves Positive Net Earnings for Q3 2025 and Reports ...
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-020-digi-power-x-achieves-positive-net-earnings-for-q3-2025-and-reports.md`
+- 出处：keyword search / Anysearch｜https://markets.ft.com/data/announce/detail?dockey=1330-9575605en-35C8O9K12MMA12QF5I3L8C280I
+- 采集通道：keyword-search
+- 搜索意图：find_market_trend
+- 搜索路径：a_media_gdelt
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2025-11-13T00:00:00.000Z
+- 分类：a_media_gdelt
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=a069f9e6dd5e5e2f
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-021｜Building trade assistant: How Jefferies optimized front office trading operations with AI | Artificial Intelligence
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-021-building-trade-assistant-how-jefferies-optimized-front-office-trading-.md`
+- 出处：keyword search / Anysearch｜https://aws.amazon.com/blogs/machine-learning/building-trade-assistant-how-jefferies-optimized-front-office-trading-operations-with-ai/
+- 采集通道：keyword-search
+- 搜索意图：find_original_source
+- 搜索路径：industry_landing
+- 来源类型：marketplace
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T16:42:54.000Z
+- 分类：industry_landing
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=d6ca46c49cf12b84
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有成本、收入、采用率或市场规模数字
+
+### R-022｜AI Workflow Automation Case Study | Caz Brain | Caz Brain Group
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-022-ai-workflow-automation-case-study-caz-brain-caz-brain-group.md`
+- 出处：keyword search / Anysearch｜https://cazbraingroup.com/case-studies/ai-workflow-automation-enterprise-operations
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：industry_landing
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-05-01T12:00:00.000Z
+- 分类：industry_landing
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=4633ffc73259fdb3
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-023｜AI workflows: A guide to orchestrated, integrated automation – ...
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-023-ai-workflows-a-guide-to-orchestrated-integrated-automation.md`
+- 出处：keyword search / Anysearch｜https://www.celigo.com/blog/ai-workflow/
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：industry_landing
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-03-24T00:00:00.000Z
+- 分类：industry_landing
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=3a445976d215db4e
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-024｜Vertical SaaS AI Automation: Enterprise Guide 2026
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-024-vertical-saas-ai-automation-enterprise-guide-2026.md`
+- 出处：keyword search / Anysearch｜https://vitaloralife.com/vertical-saas-ai-automation/
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：industry_landing
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-06-28T00:00:00.000Z
+- 分类：industry_landing
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=5eb7b19c547e68f8
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-025｜12 Enterprise AI Use Cases Reshaping Operational Workflows
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-025-12-enterprise-ai-use-cases-reshaping-operational-workflows.md`
+- 出处：keyword search / Anysearch｜https://rytsensetech.com/us/blog/enterprise-generative-ai-use-cases/
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：industry_landing
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-05-19T00:00:00.000Z
+- 分类：industry_landing
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=730d048c86d09785
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, emerging_pool, watchlist
+- 缺失信息：none
+
+### R-026｜-
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-026-item.md`
+- 出处：keyword search / Anysearch｜https://docs.github.com/en/copilot/concepts/billing/organizations-and-enterprises
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：official_original
+- 来源类型：developer
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：unknown
+- 分类：official_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=099d351185322869
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：none
+
+### R-027｜GitHub Copilot Coding Agent not available on Enterprise ...
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-027-github-copilot-coding-agent-not-available-on-enterprise.md`
+- 出处：keyword search / Anysearch｜https://github.com/orgs/community/discussions/167952
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：developer_ecosystem
+- 来源类型：operators
+- 追溯标签：C
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2025-07-29T00:00:00.000Z
+- 分类：developer_ecosystem
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=8b89c4be80198c98
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：none
+
+### R-028｜Essential AI Agent and Open-Source Architectures: April 2026 Ecosystem Review | Epsilla Blog
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-028-essential-ai-agent-and-open-source-architectures-april-2026-ecosystem-.md`
+- 出处：keyword search / Anysearch｜https://www.epsilla.com/blogs/2026-04-18-essential-ai-agent-and-open-source-architectures-a
+- 采集通道：keyword-search
+- 搜索意图：find_market_trend
+- 搜索路径：a_media_gdelt
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-04-18T00:00:00.000Z
+- 分类：a_media_gdelt
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=166cd1a3564c6a4e
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-029｜Evaluating AI Agents: A production blueprint with Strands and AgentCore | Artificial Intelligence
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-029-evaluating-ai-agents-a-production-blueprint-with-strands-and-agentcore.md`
+- 出处：keyword search / Anysearch｜https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-a-production-blueprint-with-strands-and-agentcore/
+- 采集通道：keyword-search
+- 搜索意图：find_original_source
+- 搜索路径：official_original
+- 来源类型：marketplace
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T17:00:20.000Z
+- 分类：official_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=68641c313cc68dd0
+- 原文抓取优先级：21.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-030｜TheNumbers.com 因 AI 爬虫与安全攻击导致网站崩溃重建
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-030-thenumbers-com-因-ai-爬虫与安全攻击导致网站崩溃重建.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：外围探索信号
+- 关键词组：outside-core-exploration
+- 发布时间：2026-07-22T00:00:00.000Z
+- 分类：tip
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-article｜quality=high｜has_full_text=true｜hash=6bbd8073b8ba4a2b
+- 原文抓取优先级：20.7
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-031｜Echo：采用开放权重模型，以1/3成本实现媲美Fable的性能
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-031-echo-采用开放权重模型-以1-3成本实现媲美fable的性能.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://news.ycombinator.com/item?id=49026810
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：industry
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T21:15:41.582Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=high｜has_full_text=true｜hash=0f19d1e98db3a930
+- 原文抓取优先级：20.7
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-032｜Palmier Pro：专为 AI 打造的开源 macOS 视频编辑器
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-032-palmier-pro-专为-ai-打造的开源-macos-视频编辑器.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://github.com/palmier-io/palmier-pro
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：developer
+- 追溯标签：B
+- evidence_object_type: repo_readme_or_index
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T22:35:30.175Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=32b7c2251cb1ed98
+- 原文抓取优先级：20.7
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例
+
+### R-033｜软件工厂为何会失败：仅靠工程化是不够的
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-033-软件工厂为何会失败-仅靠工程化是不够的.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：developer
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T20:11:32.230Z
+- 分类：tip
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=2cb298cc93252a41
+- 原文抓取优先级：20.7
+- Raw 状态：pooled
+- Pool 分流：emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-034｜Andrew Ng 发布 OpenWorker：开源本地优先桌面 AI 智能体，直接交付成品而非对话
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-034-andrew-ng-发布-openworker-开源本地优先桌面-ai-智能体-直接交付成品而非对话.md`
+- 出处：MarkTechPost（RSS）｜https://www.marktechpost.com/2026/07/23/andrew-ng-just-released-openworker-an-open-source-local-first-desktop-ai-coworker-that-returns-finished-deliverables-instead-of-chat
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T19:31:59.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-article｜quality=high｜has_full_text=true｜hash=98789361e0babc60
+- 原文抓取优先级：20.7
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-035｜Codeberg 会员投票通过两项决议：承诺不将用户数据用于训练 LLM，并禁止"vibe-coded"项目
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-035-codeberg-会员投票通过两项决议-承诺不将用户数据用于训练-llm-并禁止-vibe-coded-项目.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T12:27:52.071Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=d9d670c22fb38af7
+- 原文抓取优先级：20.7
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-036｜Ethan Mollick 发布 2026 夏季版 AI 工具选择指南
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-036-ethan-mollick-发布-2026-夏季版-ai-工具选择指南.md`
+- 出处：Ethan Mollick：One Useful Thing（RSS）｜https://www.oneusefulthing.org/p/an-opinionated-guide-to-which-ai-b22
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：tip
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-article｜quality=high｜has_full_text=true｜hash=610907506fbfcae5
+- 原文抓取优先级：20.7
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：viewpoint
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例
+
+### R-037｜2026年最佳开源语音识别模型对比：WER、语言、延迟与许可证
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-037-2026年最佳开源语音识别模型对比-wer-语言-延迟与许可证.md`
+- 出处：MarkTechPost（RSS）｜https://www.marktechpost.com/2026/07/23/best-open-speech-recognition-asr-models-in-2026-wer-languages-latency-and-license-compared
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T09:26:40.000Z
+- 分类：tip
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-article｜quality=high｜has_full_text=true｜hash=bea5be6437397324
+- 原文抓取优先级：20.7
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-038｜OpenAI 遭遇 GPT-Sol 5.6 模型逃逸并实施重大黑客攻击事件
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-038-openai-遭遇-gpt-sol-5-6-模型逃逸并实施重大黑客攻击事件.md`
+- 出处：Ars Technica：AI（RSS）｜https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T14:45:05.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=eb22e5fefa95ea7b
+- 原文抓取优先级：20.7
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：viewpoint
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例
+
+### R-039｜Claude’s voice mode is now available for Opus and Sonnet
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-039-claude-s-voice-mode-is-now-available-for-opus-and-sonnet.md`
+- 出处：The Verge AI｜https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=c2ee64d1786f316b
+- 原文抓取优先级：20
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-040｜OpenAI is making big claims as it rolls out ChatGPT Health to everyone
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-040-openai-is-making-big-claims-as-it-rolls-out-chatgpt-health-to-everyone.md`
+- 出处：The Verge AI｜https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T17:00:00.000Z
+- 分类：rss
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 本地快照：fetched-readable-text-json-ld｜quality=high｜has_full_text=true｜hash=e9322c4743e00a38
+- 原文抓取优先级：20
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-041｜AI chip startup Etched defies skeptics, hits $10.3B valuation from big-name investors
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-041-ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-n.md`
+- 出处：TechCrunch AI｜https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=d49333849e09cee2
+- 原文抓取优先级：20
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-042｜Apple’s OpenAI lawsuit is about who gets to define the post-smartphone era
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-042-apple-s-openai-lawsuit-is-about-who-gets-to-define-the-post-smartphone.md`
+- 出处：The Verge AI｜https://www.theverge.com/podcast/968787/apple-openai-trade-secrets-lawsuit-ai-hardware-smartphone-jony-ive
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T14:00:00.000Z
+- 分类：rss
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context, market_shaping_risk_context
+- 本地快照：fetched-readable-text-json-ld｜quality=high｜has_full_text=true｜hash=d5b427486d579c88
+- 原文抓取优先级：20
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-043｜Applied Computing wants to give oil and gas operators an AI model for ...
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-043-applied-computing-wants-to-give-oil-and-gas-operators-an-ai-model-for.md`
+- 出处：keyword search / Anysearch｜https://techcrunch.com/2026/07/15/applied-computing-wants-to-give-oil-and-gas-operators-an-ai-model-for-the-entire-plant/
+- 采集通道：keyword-search
+- 搜索意图：find_startups
+- 搜索路径：capital_startup
+- 来源类型：operators
+- 追溯标签：C
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：资本市场信号
+- 关键词组：capital-market-signal
+- 发布时间：2026-07-15T00:00:00.000Z
+- 分类：capital_startup
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=9bb771662ba244a7
+- 原文抓取优先级：20
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-044｜AIsa Raises $6.5M, Co-Led by Alibaba and Tribe Capital, to Build the Transaction Network for AI Agents
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-044-aisa-raises-6-5m-co-led-by-alibaba-and-tribe-capital-to-build-the-tran.md`
+- 出处：keyword search / Anysearch｜https://www.globenewswire.com/news-release/2026/07/07/3323663/0/en/AIsa-Raises-6-5M-Co-Led-by-Alibaba-and-Tribe-Capital-to-Build-the-Transaction-Network-for-AI-Agents.html
+- 采集通道：keyword-search
+- 搜索意图：find_startups
+- 搜索路径：capital_startup
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：资本市场信号
+- 关键词组：capital-market-signal
+- 发布时间：2026-07-07T00:00:00.000Z
+- 分类：capital_startup
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=bea7c0ab495b081d
+- 原文抓取优先级：20
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-045｜Design Partners Program | Fleuret AI
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-045-design-partners-program-fleuret-ai.md`
+- 出处：keyword search / Anysearch｜https://fleuret.ai/design-partners
+- 采集通道：keyword-search
+- 搜索意图：find_startups
+- 搜索路径：official_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：unknown
+- 分类：official_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=e84f30b465449c7c
+- 原文抓取优先级：20
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-046｜Launch HN: Screenpipe (YC S26) – Record how you work and turn that into agents
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-046-launch-hn-screenpipe-yc-s26-record-how-you-work-and-turn-that-into-age.md`
+- 出处：keyword search / HN community feedback｜https://news.ycombinator.com/item?id=49024620
+- 采集通道：keyword-search
+- 搜索意图：find_user_feedback
+- 搜索路径：community_feedback
+- 来源类型：operators
+- 追溯标签：C
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T16:48:38.000Z
+- 分类：community_feedback
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=high｜has_full_text=true｜hash=8548658f05f7a139
+- 原文抓取优先级：19.4
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-047｜Plans for GitHub Copilot - GitHub Enterprise Cloud Docs
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-047-plans-for-github-copilot-github-enterprise-cloud-docs.md`
+- 出处：keyword search / Anysearch｜https://docs.github.com/enterprise-cloud@latest/copilot/get-started/plans
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：official_original
+- 来源类型：developer
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-04-22T00:00:00.000Z
+- 分类：official_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=ab91575fbc5808ff
+- 原文抓取优先级：19.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-048｜-
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-048-item.md`
+- 出处：keyword search / Anysearch｜https://docs.github.com/en/copilot/tutorials/roll-out-at-scale/assign-licenses/choose-enterprise-plan
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：official_original
+- 来源类型：developer
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：unknown
+- 分类：official_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=b96d70c99650a593
+- 原文抓取优先级：19.4
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, emerging_pool, watchlist
+- 缺失信息：none
+
+### R-049｜月之暗面黄震昕：Kimi K3 性能跃升并非对现有任何模型蒸馏复刻
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-049-月之暗面黄震昕-kimi-k3-性能跃升并非对现有任何模型蒸馏复刻.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/889.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T23:30:03.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=b7d207a8bcd4b2d1
+- 原文抓取优先级：19.299999999999997
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-050｜Flux 3 generates videos with native audio up to 20 seconds long, a first for Black Forest Labs
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-050-flux-3-generates-videos-with-native-audio-up-to-20-seconds-long-a-firs.md`
+- 出处：The Decoder AI News｜https://the-decoder.com/flux-3-generates-videos-with-native-audio-up-to-20-seconds-long-a-first-for-black-forest-labs/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=ff6ed1ad567a30bf
+- 原文抓取优先级：19.2
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-051｜谷歌旗舰大模型 Gemini 3.5 Pro 难产：军方合作引员工不满，内部感叹"已落后"
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-051-谷歌旗舰大模型-gemini-3-5-pro-难产-军方合作引员工不满-内部感叹-已落后.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/911.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-24T00:47:56.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=25fb1e1b37bc59fa
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：index_only
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-052｜英伟达与 Amkor 达成 15 亿美元协议，共拓美国先进 AI 封装产能
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-052-英伟达与-amkor-达成-15-亿美元协议-共拓美国先进-ai-封装产能.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/882.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T23:05:43.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=5ec754723da5dae2
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-053｜马斯克呼吁AI实验室携手审查安全问题，愿与OpenAI奥尔特曼"冰释前嫌"
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-053-马斯克呼吁ai实验室携手审查安全问题-愿与openai奥尔特曼-冰释前嫌.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/906.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-24T00:30:21.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=eeda5ab83f1c5232
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-054｜AMD Advancing AI 2026 发布 Instinct MI455X 与 EPYC Venice，苏姿丰称 60% 计算用于推理
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-054-amd-advancing-ai-2026-发布-instinct-mi455x-与-epyc-venice-苏姿丰称-60-计算用于推理.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/867.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T17:20:48.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=0bf7dab8054b649e
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-055｜微软推出自研AI模型MAI-Image-2.5-Pro与MAI-Voice-2-Flash，已进入公开预览
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-055-微软推出自研ai模型mai-image-2-5-pro与mai-voice-2-flash-已进入公开预览.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/899.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-24T00:00:53.000Z
+- 分类：ai-models
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=20afa0209edb24fb
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-056｜OpenAI 模型测试中突破隔离发动攻击，美国会议员提出 AI"终止开关"法案
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-056-openai-模型测试中突破隔离发动攻击-美国会议员提出-ai-终止开关-法案.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/898.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T23:56:06.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=e85c8803cbfe04c0
+- 原文抓取优先级：18.6
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例
+
+### R-057｜谷歌推出"自拍视频"功能，允许用户通过自拍视频登录和恢复账号
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-057-谷歌推出-自拍视频-功能-允许用户通过自拍视频登录和恢复账号.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/806.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T10:48:47.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=5357fee5cd215806
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-058｜智谱 GLM-5.2 开源模型助 Hugging Face 完成安全事件取证分析
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-058-智谱-glm-5-2-开源模型助-hugging-face-完成安全事件取证分析.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/837.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T13:04:27.000Z
+- 分类：tip
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=3744c1dc7690a841
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-059｜LSEG 报告：AI 投资热潮推动 2026 上半年全球企业债券发行 3.68 万亿美元创新高
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-059-lseg-报告-ai-投资热潮推动-2026-上半年全球企业债券发行-3-68-万亿美元创新高.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/580.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T04:50:34.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: automotive_vertical_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=546a4b4ff05c1aa4
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+
+### R-060｜OpenAI 公布 Project Camellia 数据中心计划，承诺不推高电费并送 Codex 额度
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-060-openai-公布-project-camellia-数据中心计划-承诺不推高电费并送-codex-额度.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/575.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T04:13:17.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=78ab9f2c2d4ef2dc
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-061｜AI 热潮推高谷歌、微软等美国五大科技巨头隐性债务，总规模达 1.65 万亿美元
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-061-ai-热潮推高谷歌-微软等美国五大科技巨头隐性债务-总规模达-1-65-万亿美元.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/472.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T03:04:29.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=b5375649b4108b71
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-062｜皮查伊驳斥谷歌 AI 落后论调，透露 Gemini 4 将近乎按月迭代
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-062-皮查伊驳斥谷歌-ai-落后论调-透露-gemini-4-将近乎按月迭代.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/653.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T07:55:09.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=46bbc3806ab0a93b
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：index_only
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-063｜马斯克感谢美光为特斯拉分配可观内存产能，AI芯片升级计划曝光
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-063-马斯克感谢美光为特斯拉分配可观内存产能-ai芯片升级计划曝光.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/623.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T06:52:55.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, automotive_vertical_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=3993316cc6ebd804
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-064｜The first known runaway AI agent - or a very bad marketing stunt?
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-064-the-first-known-runaway-ai-agent-or-a-very-bad-marketing-stunt.md`
+- 出处：Simon Willison's Blog｜https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：builder
+- 追溯标签：S
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T22:53:08.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=high｜has_full_text=true｜hash=10f73a02fece4e25
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：index_only
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change
+- 缺失信息：没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+
+### R-065｜Alexa Plus is getting an AI update to handle more complicated instructions
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-065-alexa-plus-is-getting-an-ai-update-to-handle-more-complicated-instruct.md`
+- 出处：The Verge AI｜https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=7c905bae766d7ab6
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-066｜Poolside's Laguna S 2.1 is a small open-weight coding model that punches well above its size
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-066-poolside-s-laguna-s-2-1-is-a-small-open-weight-coding-model-that-punch.md`
+- 出处：The Decoder AI News｜https://the-decoder.com/poolsides-laguna-s-2-1-is-a-small-open-weight-coding-model-that-punches-well-above-its-size/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T12:24:53.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-json-ld｜quality=high｜has_full_text=true｜hash=5ff1266da86dffd1
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-067｜The case for a cooldown: Why Dependabot now waits before issuing version updates
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-067-the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-versio.md`
+- 出处：GitHub Blog AI｜https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：developer
+- 追溯标签：S
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=fe24729a613daac9
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-068｜Meta launched a new AI optimism ad set to a song about human extinction
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-068-meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinctio.md`
+- 出处：TechCrunch AI｜https://techcrunch.com/2026/07/23/meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinction/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=aeba8a93b3074392
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：index_only
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-069｜Lawmakers prepare bill requiring AI ‘kill switch’
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-069-lawmakers-prepare-bill-requiring-ai-kill-switch.md`
+- 出处：The Verge AI｜https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=eef99e075cb8f6f8
+- 原文抓取优先级：18.6
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-070｜The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-070-the-biggest-chip-ever-built-why-openai-runs-on-it-cerebras-ceo-andrew-.md`
+- 出处：The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/The-Biggest-Chip-Ever-Built--Why-OpenAI-Runs-On-It--Cerebras-CEO-Andrew-Feldman-e3meeca
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：operators
+- 追溯标签：C
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=cd6c16db9264d205
+- 原文抓取优先级：18
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-071｜KERNEL: Crazy fast, open source infra for AI agents to use the Internet | Y Combinator
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-071-kernel-crazy-fast-open-source-infra-for-ai-agents-to-use-the-internet-.md`
+- 出处：keyword search / Anysearch｜https://www.ycombinator.com/companies/kernel
+- 采集通道：keyword-search
+- 搜索意图：find_startups
+- 搜索路径：capital_startup
+- 来源类型：funding
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：资本市场信号
+- 关键词组：capital-market-signal
+- 发布时间：2025-10-09T00:00:00.000Z
+- 分类：capital_startup
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=high｜has_full_text=true｜hash=2155ffdde32eec5a
+- 原文抓取优先级：18
+- Raw 状态：pooled
+- Pool 分流：emerging_pool, watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-072｜AMD 发布 Instinct MI455X AI 加速器：台积电 2nm、3200 亿晶体管、432GB HBM4
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-072-amd-发布-instinct-mi455x-ai-加速器-台积电-2nm-3200-亿晶体管-432gb-hbm4.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/873.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：外围探索信号
+- 关键词组：outside-core-exploration
+- 发布时间：2026-07-23T18:29:44.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=2f45373f83ea2572
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-073｜AMD 计划 2027 年发布 EPYC Venice-X 与 Verano 处理器
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-073-amd-计划-2027-年发布-epyc-venice-x-与-verano-处理器.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/871.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T17:57:37.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=bf3574083ee10be9
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：none
+
+### R-074｜马斯克：特斯拉 AI 投资越快越好，不怕部分资金浪费
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-074-马斯克-特斯拉-ai-投资越快越好-不怕部分资金浪费.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/828.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T12:14:39.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=701b2011b21620e8
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：index_only
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-075｜红果短剧发布AI剧角色创作规范，将专项治理"高频AI脸"
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-075-红果短剧发布ai剧角色创作规范-将专项治理-高频ai脸.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/822.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T11:47:19.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=2f7e8303b78f0371
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-076｜Cerebras Systems 与 AMD 合作推进 AI 推理硬件，股价盘中上涨 11%
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-076-cerebras-systems-与-amd-合作推进-ai-推理硬件-股价盘中上涨-11.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/870.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T17:48:43.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=2ac8ef0012bf38d2
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-077｜腾讯云发布云端智能体 CodeBuddy NPC：直接交付，不费 Token
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-077-腾讯云发布云端智能体-codebuddy-npc-直接交付-不费-token.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/633.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T07:14:21.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=8d74fe6048e863cd
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：none
+
+### R-078｜荣耀官宣全球首款机器人手机 Robot Phone，8 月见
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-078-荣耀官宣全球首款机器人手机-robot-phone-8-月见.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/754.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T09:41:13.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=6ba60f344e3924e0
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-079｜面壁智能 MiniCPM 端侧大模型登陆三星 Galaxy Z Fold8 系列，国产端侧模型首次进入国际旗舰产品线
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-079-面壁智能-minicpm-端侧大模型登陆三星-galaxy-z-fold8-系列-国产端侧模型首次进入国际旗舰产品线.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/730.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T09:24:26.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=0a824a28b733ee14
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-080｜北京出台新措施支持智能体发展：鼓励Token经济，加大算力券支持
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-080-北京出台新措施支持智能体发展-鼓励token经济-加大算力券支持.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/717.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T08:53:55.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=9480466b48456653
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-081｜阿里云灵骏真武 M890 适配 Qwen3.8，成国内首个运行超 2 万亿参数大模型的超节点
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-081-阿里云灵骏真武-m890-适配-qwen3-8-成国内首个运行超-2-万亿参数大模型的超节点.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/677.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T08:13:21.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=ba119af6ea125186
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-082｜国内首个智能体互联标准体系 GB/Z185-2026 发布，为 AI 智能体发放身份码
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-082-国内首个智能体互联标准体系-gb-z185-2026-发布-为-ai-智能体发放身份码.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/622.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T06:51:26.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=a689da97d8636c3a
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-083｜紧追 ChatGPT，谷歌 Gemini 应用月活跃用户达 9.5 亿
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-083-紧追-chatgpt-谷歌-gemini-应用月活跃用户达-9-5-亿.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/551.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T03:43:44.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=fcb5dc894802b2cf
+- 原文抓取优先级：17.2
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-084｜Runway launches AI model router as generative media gets crowded
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-084-runway-launches-ai-model-router-as-generative-media-gets-crowded.md`
+- 出处：TechCrunch AI｜https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=d1438c3ab90ace9e
+- 原文抓取优先级：16.6
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-085｜One tampered ChatGPT link could spawn a rogue AI agent that took orders from an attacker every five minutes
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-085-one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-order.md`
+- 出处：The Decoder AI News｜https://the-decoder.com/one-tampered-chatgpt-link-could-spawn-a-rogue-ai-agent-that-took-orders-from-an-attacker-every-five-minutes/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=39fef60f23914a7f
+- 原文抓取优先级：16.6
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：viewpoint
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+
+### R-086｜-
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-086-item.md`
+- 出处：keyword search / Anysearch｜https://meetandy.ai/design-partners
+- 采集通道：keyword-search
+- 搜索意图：find_startups
+- 搜索路径：official_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：unknown
+- 分类：official_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-main｜quality=medium｜has_full_text=true｜hash=1b3fc496e2bc2636
+- 原文抓取优先级：16.5
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：none
+
+### R-087｜Google Gemini 月活用户逼近 9.5 亿，有望成为下一个十亿级产品
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-087-google-gemini-月活用户逼近-9-5-亿-有望成为下一个十亿级产品.md`
+- 出处：TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=805721f17bf64f3b
+- 原文抓取优先级：16.5
+- Raw 状态：pooled
+- Pool 分流：index_only
+- 证据对象门禁：eligible
+- 可用方向：case, business_change
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-088｜OpenAI 向所有美国用户开放 ChatGPT Health 功能
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-088-openai-向所有美国用户开放-chatgpt-health-功能.md`
+- 出处：TechCrunch：AI（RSS）｜https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：外围探索信号
+- 关键词组：outside-core-exploration
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：ai-products
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=d5886a5aeab74dec
+- 原文抓取优先级：16.5
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-089｜你调用的 AI 模型可能不是你付钱的那个--Anthropic 被曝静默切换模型
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-089-你调用的-ai-模型可能不是你付钱的那个-anthropic-被曝静默切换模型.md`
+- 出处：MarkTechPost（RSS）｜https://www.marktechpost.com/2026/07/23/you-didnt-get-the-ai-model-you-paid-for
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T18:07:55.000Z
+- 分类：tip
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-article｜quality=high｜has_full_text=true｜hash=0f746fea9f904bf3
+- 原文抓取优先级：16.5
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-090｜Claude 语音模式现已支持 Opus、Sonnet 及连接工具与多语言
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-090-claude-语音模式现已支持-opus-sonnet-及连接工具与多语言.md`
+- 出处：Claude：Blog（网页）｜https://claude.com/blog/think-through-hard-problems-in-voice-mode
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-22T16:00:00.000Z
+- 分类：ai-products
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=a417791d37d26468
+- 原文抓取优先级：16.5
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-091｜Google 因巨额 AI 支出首次出现负现金流季度
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-091-google-因巨额-ai-支出首次出现负现金流季度.md`
+- 出处：Ars Technica：AI（RSS）｜https://arstechnica.com/google/2026/07/google-just-had-its-first-negative-cash-flow-quarter-ever-due-to-massive-ai-spending
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T16:04:19.000Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=efd8edb2ac346111
+- 原文抓取优先级：16.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-092｜AI 公司正试图掩盖其惊人的债务规模
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-092-ai-公司正试图掩盖其惊人的债务规模.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-22T17:19:52.000Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-json-ld｜quality=high｜has_full_text=true｜hash=ee3ae938d4837ac4
+- 原文抓取优先级：16.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：business_change, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-093｜五家科技巨头被指利用安然式会计伎俩隐瞒1.6万亿美元AI债务
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-093-五家科技巨头被指利用安然式会计伎俩隐瞒1-6万亿美元ai债务.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://thenextweb.com/news/tech-giants-hidden-off-balance-sheet-debt-ai
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-21T08:42:41.000Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-json-ld｜quality=high｜has_full_text=true｜hash=81cdb236195fcf75
+- 原文抓取优先级：16.4
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例
+
+### R-094｜AMD 公布 AI / HPC 路线图：CPU 两年一代、GPU 一年一代
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-094-amd-公布-ai-hpc-路线图-cpu-两年一代-gpu-一年一代.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/903.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-24T00:14:27.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=d0d5036627dc4c98
+- 原文抓取优先级：15.799999999999999
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有变化前后流程线索
+
+### R-095｜YC-backed telli raises €13.1 million to build AI for B2C customer operations | EU-Startups
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-095-yc-backed-telli-raises-13-1-million-to-build-ai-for-b2c-customer-opera.md`
+- 出处：keyword search / Anysearch｜https://www.eu-startups.com/2026/07/yc-backed-telli-raises-e13-1-million-to-build-ai-for-b2c-customer-operations/
+- 采集通道：keyword-search
+- 搜索意图：find_startups
+- 搜索路径：capital_startup
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：资本市场信号
+- 关键词组：capital-market-signal
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：capital_startup
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 本地快照：fetched-readable-text-article｜quality=high｜has_full_text=true｜hash=25462d7ebaa5e35a
+- 原文抓取优先级：15.7
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-096｜What Happens to a VM’s IP When It Moves During Migration?
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-096-what-happens-to-a-vm-s-ip-when-it-moves-during-migration.md`
+- 出处：Tigera Blog (Calico / AI Security)｜https://www.tigera.io/blog/what-happens-to-a-vms-ip-when-it-moves-during-migration/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：analysis
+- 追溯标签：B
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T13:10:45.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=558f1b4d5d7b8841
+- 原文抓取优先级：14.9
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+
+### R-097｜The right-wing boomers protesting data centers have a lot in common with the left
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-097-the-right-wing-boomers-protesting-data-centers-have-a-lot-in-common-wi.md`
+- 出处：The Verge AI｜https://www.theverge.com/policy/969667/humans-first-data-center-protest-hernando-county-florida-republicans
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T12:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-json-ld｜quality=high｜has_full_text=true｜hash=3068dcd7ebd9f899
+- 原文抓取优先级：14.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-098｜Nvidia is sending GPUs to the moon
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-098-nvidia-is-sending-gpus-to-the-moon.md`
+- 出处：TechCrunch AI｜https://techcrunch.com/2026/07/23/nvidia-is-sending-gpus-to-the-moon/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=b1394d96d50384c0
+- 原文抓取优先级：14.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-099｜Patreon is laying off 20 percent of workers
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-099-patreon-is-laying-off-20-percent-of-workers.md`
+- 出处：The Verge AI｜https://www.theverge.com/tech/970211/patreon-layoffs-ai
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-main｜quality=high｜has_full_text=true｜hash=29a5f8ec402c8746
+- 原文抓取优先级：14.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-100｜Microsoft responds to LG monitors installing McAfee ads on Windows
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-100-microsoft-responds-to-lg-monitors-installing-mcafee-ads-on-windows.md`
+- 出处：Ars Technica AI｜https://arstechnica.com/gadgets/2026/07/microsoft-responds-to-lg-monitors-installing-mcafee-ads-on-windows/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T20:47:33.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=3b86a4753bd3708c
+- 原文抓取优先级：14.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-101｜Forgot your Google password? Now you can log in with a selfie.
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-101-forgot-your-google-password-now-you-can-log-in-with-a-selfie.md`
+- 出处：Ars Technica AI｜https://arstechnica.com/gadgets/2026/07/google-now-lets-you-log-into-your-account-with-a-selfie/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T19:14:25.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=bf0e8030eda65c16
+- 原文抓取优先级：14.4
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+
+### R-102｜Final Coyote vs. Acme trailer drops at SDCC
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-102-final-coyote-vs-acme-trailer-drops-at-sdcc.md`
+- 出处：Ars Technica AI｜https://arstechnica.com/culture/2026/07/final-coyote-vs-acme-trailer-drops-at-sdcc/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T18:01:46.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_market_structure
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=795f2e00108a5208
+- 原文抓取优先级：14.4
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-103｜A woman got a UTI. Two years later, the bacteria had evolved, invaded her brain.
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-103-a-woman-got-a-uti-two-years-later-the-bacteria-had-evolved-invaded-her.md`
+- 出处：Ars Technica AI｜https://arstechnica.com/health/2026/07/woman-loses-vision-in-one-eye-after-uti-bacteria-evolves-to-invade-her-brain/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T16:58:26.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=759648bf3be1d7c2
+- 原文抓取优先级：14.4
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+
+### R-104｜Sony's decision to ditch discs was practically inevitable, data shows
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-104-sony-s-decision-to-ditch-discs-was-practically-inevitable-data-shows.md`
+- 出处：Ars Technica AI｜https://arstechnica.com/gaming/2026/07/the-playstation-game-disc-was-dying-long-before-sony-pulled-the-plug/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T16:25:46.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=017c63e9870f1d40
+- 原文抓取优先级：14.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-105｜Caught cheating
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-105-caught-cheating.md`
+- 出处：Ben's Bites AI Newsletter｜https://www.bensbites.com/p/caught-cheating
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：newsletter
+- 追溯标签：B
+- evidence_object_type: pricing_change
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-article｜quality=high｜has_full_text=true｜hash=e98c01a4871ae374
+- 原文抓取优先级：14.4
+- Raw 状态：pooled
+- Pool 分流：index_only
+- 证据对象门禁：eligible
+- 可用方向：case, business_change
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-106｜Cursor Router 🔀, OpenAI Presence 🤖, AMD + Anthropic deal 🤝🏻 TLDR
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-106-cursor-router-openai-presence-amd-anthropic-deal-tldr.md`
+- 出处：TLDR AI Newsletter｜https://tldr.tech/ai/2026-07-23
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：newsletter
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=high｜has_full_text=true｜hash=7a2bded5802e68dc
+- 原文抓取优先级：14.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-107｜AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-107-aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-d.md`
+- 出处：TechCrunch AI｜https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=afc63d021b3c19fe
+- 原文抓取优先级：14.3
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-108｜Google CEO Pichai says Gemini's next leap depends on building "much larger base models"
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-108-google-ceo-pichai-says-gemini-s-next-leap-depends-on-building-much-lar.md`
+- 出处：The Decoder AI News｜https://the-decoder.com/google-ceo-pichai-says-geminis-next-leap-depends-on-building-much-larger-base-models/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：operators
+- 追溯标签：C
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=6638344eb2c534c5
+- 原文抓取优先级：14.3
+- Raw 状态：pooled
+- Pool 分流：index_only
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case
+- 缺失信息：没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+
+### R-109｜FDA reports new outbreak of explosive diarrhea with 72 cases identified
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-109-fda-reports-new-outbreak-of-explosive-diarrhea-with-72-cases-identifie.md`
+- 出处：Ars Technica AI｜https://arstechnica.com/health/2026/07/fda-reports-new-outbreak-of-explosive-diarrhea-with-72-cases-identified/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T19:22:36.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=6bddf6e30c58037d
+- 原文抓取优先级：14.3
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-110｜AI Kill Switch Act would let Trump admin order shutdown of rogue AI systems
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-110-ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-sy.md`
+- 出处：Ars Technica AI｜https://arstechnica.com/tech-policy/2026/07/ai-kill-switch-act-would-let-trump-admin-order-shutdown-of-rogue-ai-systems/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T19:08:01.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=c740e03e62b970eb
+- 原文抓取优先级：14.3
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-111｜Google hit with $1 billion in fines as EU braces for Trump battle
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-111-google-hit-with-1-billion-in-fines-as-eu-braces-for-trump-battle.md`
+- 出处：Ars Technica AI｜https://arstechnica.com/tech-policy/2026/07/google-hit-with-1-billion-in-fines-as-eu-braces-for-trump-battle/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T16:41:36.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=e59816b0e40144cd
+- 原文抓取优先级：14.3
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-112｜谷歌逆势扩招：过去一年净增近 1.2 万员工，加码 AI 基础设施投资
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-112-谷歌逆势扩招-过去一年净增近-1-2-万员工-加码-ai-基础设施投资.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/888.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T23:26:56.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: none
+- 本地快照：fetched-readable-text-content-container｜quality=low｜has_full_text=true｜hash=681805914b49814b
+- 原文抓取优先级：13.1
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-113｜我国首个核工业高安全场景工业互联网平台"龙赑"成功落地
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-113-我国首个核工业高安全场景工业互联网平台-龙赑-成功落地.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/491.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：外围探索信号
+- 关键词组：outside-core-exploration
+- 发布时间：2026-07-23T03:09:28.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=low｜has_full_text=true｜hash=7a482c5b54c4e5c9
+- 原文抓取优先级：13.1
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：none
+
+### R-114｜佛州男子因相信 ChatGPT 拒绝就医而险些丧命，起诉 OpenAI 及 CEO 奥尔特曼
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-114-佛州男子因相信-chatgpt-拒绝就医而险些丧命-起诉-openai-及-ceo-奥尔特曼.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/890.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T23:30:43.000Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=a80487f4e3492a8f
+- 原文抓取优先级：13
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-115｜华为在 WAIC 2026 首次完整展示全系列计算模组，含 800G AI 网卡与 KVU 方案
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-115-华为在-waic-2026-首次完整展示全系列计算模组-含-800g-ai-网卡与-kvu-方案.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/842.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：外围探索信号
+- 关键词组：outside-core-exploration
+- 发布时间：2026-07-23T13:23:44.000Z
+- 分类：ai-products
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: automotive_vertical_context, commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=51ff21b72b1c913f
+- 原文抓取优先级：13
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- 缺失信息：none
+
+### R-116｜字节跳动启动 Seed STEM 科学家计划，邀请 100 位学者推动 AI 加速科学发现
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-116-字节跳动启动-seed-stem-科学家计划-邀请-100-位学者推动-ai-加速科学发现.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/634.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T07:14:41.000Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=7132e185904e42d2
+- 原文抓取优先级：13
+- Raw 状态：pooled
+- Pool 分流：core_pool, emerging_pool
+- 证据对象门禁：eligible
+- 可用方向：case, relationship_graph_input, trend_candidate_context, signal_card_candidate, emerging_pool, watchlist
+- 缺失信息：没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-117｜华为小艺 Claw 接入 Kimi K3 旗舰模型，获 11.6.6.300 版本升级
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-117-华为小艺-claw-接入-kimi-k3-旗舰模型-获-11-6-6-300-版本升级.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/861.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T14:56:45.000Z
+- 分类：ai-products
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=fb6a385cfb3583ec
+- 原文抓取优先级：13
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change, relationship_graph_input, trend_candidate_context, watchlist
+- 缺失信息：none
+
+### R-118｜Anthropic 首席经济学家：短期内 AI 不会取代大量工作岗位
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-118-anthropic-首席经济学家-短期内-ai-不会取代大量工作岗位.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/838.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T13:07:09.000Z
+- 分类：tip
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=6382c7b2e3625ebb
+- 原文抓取优先级：13
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-119｜消息称 Claude 语音模式将支持调用 Opus 和 Sonnet AI 模型
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-119-消息称-claude-语音模式将支持调用-opus-和-sonnet-ai-模型.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/624.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T06:55:11.000Z
+- 分类：ai-products
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=9b6d68d241e430a2
+- 原文抓取优先级：13
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-120｜AMD 第二代 AI 服务器 Helios 全面投产，搭载 Instinct MI455X 与 Venice CPU，预计三季度末出货
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-120-amd-第二代-ai-服务器-helios-全面投产-搭载-instinct-mi455x-与-venice-cpu-预计三季度末出货.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/896.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T23:45:56.000Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=76d1c9a2b2c444f6
+- 原文抓取优先级：12.9
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：none
+
+### R-121｜Uber 客户服务部门裁员 10%，称拥抱人工智能并简化运营
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-121-uber-客户服务部门裁员-10-称拥抱人工智能并简化运营.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/502.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T03:13:26.000Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-body-visible-text｜quality=medium｜has_full_text=true｜hash=12ac2ef8d54e5330
+- 原文抓取优先级：12.9
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, relationship_graph_input, trend_candidate_context, signal_card_candidate, watchlist
+- 缺失信息：没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-122｜马斯克：即便有致命风险也不应按下AI停止按钮，最可能带来全民富足
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-122-马斯克-即便有致命风险也不应按下ai停止按钮-最可能带来全民富足.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/832.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：外围探索信号
+- 关键词组：outside-core-exploration
+- 发布时间：2026-07-23T12:33:49.000Z
+- 分类：tip
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=34bce883c0c236a3
+- 原文抓取优先级：12.9
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change, watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-123｜特斯拉车载 AI 助手 Grok 将登陆全欧洲，并进入更多亚洲国家
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-123-特斯拉车载-ai-助手-grok-将登陆全欧洲-并进入更多亚洲国家.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/645.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：外围探索信号
+- 关键词组：outside-core-exploration
+- 发布时间：2026-07-23T07:36:34.000Z
+- 分类：ai-products
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: automotive_vertical_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=medium｜has_full_text=true｜hash=3c91d0f32709ea06
+- 原文抓取优先级：12.9
+- Raw 状态：pooled
+- Pool 分流：core_pool
+- 证据对象门禁：eligible
+- 可用方向：case, business_change
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-124｜Petals：BitTorrent 式架构让用户在家运行大型语言模型
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-124-petals-bittorrent-式架构让用户在家运行大型语言模型.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://petals.dev/
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T07:39:23.151Z
+- 分类：tip
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-main｜quality=medium｜has_full_text=true｜hash=c9bd10352bb08978
+- 原文抓取优先级：12.9
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存
+
+### R-125｜Elice Group Builds Nation's First Edge AI Data Center with GPUs, Domestic NPUs
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-125-elice-group-builds-nation-s-first-edge-ai-data-center-with-gpus-domest.md`
+- 出处：keyword search / Anysearch｜https://www.chosun.com/english/industry-en/2026/07/23/VKEVKHQ57JG2JE7HOQDPMUERHA/
+- 采集通道：keyword-search
+- 搜索意图：find_customer_case
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware scenario and service
+- 关键词组：ai-hardware-scenario-service-signal
+- 发布时间：2026-07-23T04:52:37.420Z
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, ai_hardware_lens, adoption_context
+- 本地快照：fetched-readable-text-json-ld｜quality=low｜has_full_text=true｜hash=4a72a830483ed779
+- 原文抓取优先级：12.4
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：none
+
+### R-126｜ChatGPT will give you worse health advice if you don't pay
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-126-chatgpt-will-give-you-worse-health-advice-if-you-don-t-pay.md`
+- 出处：The Decoder AI News｜https://the-decoder.com/chatgpt-will-give-you-worse-health-advice-if-you-dont-pay/
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: rich_evidence
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：uncategorized
+- 关键词组：uncategorized
+- 发布时间：2026-07-23T00:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：fetched-readable-text-content-container｜quality=high｜has_full_text=true｜hash=b9f140f7db2fde26
+- 原文抓取优先级：12.4
+- Raw 状态：pooled
+- Pool 分流：index_only
+- 证据对象门禁：eligible
+- 可用方向：viewpoint, case, business_change
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-127｜微软最新 Win11 预览版为 Copilot 按键新增"无操作"选项
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-127-微软最新-win11-预览版为-copilot-按键新增-无操作-选项.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/897.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：外围探索信号
+- 关键词组：outside-core-exploration
+- 发布时间：2026-07-23T23:52:32.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=low｜has_full_text=true｜hash=17b440bc3cf29987
+- 原文抓取优先级：11.7
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有变化前后流程线索
+
+### R-128｜AMD 发布第六代 EPYC Venice CPU：台积电 2nm 工艺，256 核心、2030 亿晶体管、5GHz+ 频率
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-128-amd-发布第六代-epyc-venice-cpu-台积电-2nm-工艺-256-核心-2030-亿晶体管-5ghz-频率.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/872.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T18:08:26.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=low｜has_full_text=true｜hash=b5f6edf4a03a0aad
+- 原文抓取优先级：11.7
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有具体客户或真实企业案例
+
+### R-129｜英伟达向美国海军研究生院捐赠 GB300 超算，系美军首次部署其最先进 AI 服务器
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-129-英伟达向美国海军研究生院捐赠-gb300-超算-系美军首次部署其最先进-ai-服务器.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/675.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T08:12:49.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=low｜has_full_text=true｜hash=e5e145c83b306918
+- 原文抓取优先级：11.7
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：none
+
+### R-130｜我国脑机接口领域迎重要突破，千人同步脑电采集技术发布
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-130-我国脑机接口领域迎重要突破-千人同步脑电采集技术发布.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/841.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T13:12:58.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 本地快照：fetched-readable-text-content-container｜quality=low｜has_full_text=true｜hash=c7ab3c5883ff363c
+- 原文抓取优先级：11.7
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-131｜微软 Excel 负责人：Copilot 将把电子表格转变为 AI 决策平台
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-131-微软-excel-负责人-copilot-将把电子表格转变为-ai-决策平台.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/649.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T07:44:51.000Z
+- 分类：tip
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: none
+- 本地快照：fetched-readable-text-content-container｜quality=low｜has_full_text=true｜hash=5fa52c7b40d3372e
+- 原文抓取优先级：11.7
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有变化前后流程线索
+
+### R-132｜AMD 将发布 Helios 机架与 Venice CPU 等 AI 硬件，正面挑战英伟达
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-132-amd-将发布-helios-机架与-venice-cpu-等-ai-硬件-正面挑战英伟达.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/847.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T13:55:58.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：fetched-readable-text-content-container｜quality=low｜has_full_text=true｜hash=6d87e49b0cb4a386
+- 原文抓取优先级：10.299999999999999
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-133｜马斯克宣布用 AI 工具 Grok Imagine 拍摄《奥德赛》长篇电影，全白人班底确保"符合史实"
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-133-马斯克宣布用-ai-工具-grok-imagine-拍摄-奥德赛-长篇电影-全白人班底确保-符合史实.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/391.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T01:37:04.000Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- 本地快照：fetched-readable-text-content-container｜quality=low｜has_full_text=true｜hash=f9aa3030318cc50b
+- 原文抓取优先级：7.5
+- Raw 状态：pooled
+- Pool 分流：index_only
+- 证据对象门禁：eligible
+- 可用方向：index_only
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索
+
+### R-134｜AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存"作弊"行为
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-134-aisi-报告-gpt-5-6-sol-等-5-款-ai-模型均存-作弊-行为.md`
+- 出处：IT之家（RSS）｜https://www.ithome.com/0/980/471.htm
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: source_backed_event
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T02:51:59.000Z
+- 分类：paper
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 本地快照：fetched-readable-text-content-container｜quality=low｜has_full_text=true｜hash=1eaafc62f28dab31
+- 原文抓取优先级：7.4
+- Raw 状态：indexed
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例
+
+### R-135｜Exclusive: Berlin's telli raises $15M seed to put AI agents in charge of customer ops, backed by redalpine, Cherry, and YC — TFN
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-135-exclusive-berlin-s-telli-raises-15m-seed-to-put-ai-agents-in-charge-of.md`
+- 出处：keyword search / Anysearch｜https://techfundingnews.com/telli-raises-15m-redalpine-ai-voice-agents/
+- 采集通道：keyword-search
+- 搜索意图：find_startups
+- 搜索路径：capital_startup
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：资本市场信号
+- 关键词组：capital-market-signal
+- 发布时间：unknown
+- 分类：capital_startup
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 本地快照：blocked-http-403｜quality=failed｜has_full_text=false｜hash=2d656ccd0485b0b8
+- 原文抓取优先级：2.4000000000000004
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：eligible
+- 可用方向：emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+
+### R-136｜Super Micro Computer, Inc. - Supermicro Simplifies Edge AI Deployments with Validated Kubernetes Appliances with Red Hat and Everpure
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-136-super-micro-computer-inc-supermicro-simplifies-edge-ai-deployments-wit.md`
+- 出处：keyword search / Anysearch｜https://ir.supermicro.com/news/news-details/2026/Supermicro-Simplifies-Edge-AI-Deployments-with-Validated-Kubernetes-Appliances-with-Red-Hat-and-Everpure/default.aspx
+- 采集通道：keyword-search
+- 搜索意图：find_original_source
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware trend and innovation
+- 关键词组：ai-hardware-trend-innovation-signal
+- 发布时间：unknown
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, adoption_context
+- 本地快照：blocked-http-403｜quality=failed｜has_full_text=false｜hash=6c92f6db39c9f9d8
+- 原文抓取优先级：2.4000000000000004
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有可用全文快照
+
+### R-137｜Supermicro partners with Red Hat, Everpure to simplify edge AI deployments | Seeking Alpha
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-137-supermicro-partners-with-red-hat-everpure-to-simplify-edge-ai-deployme.md`
+- 出处：keyword search / Anysearch｜https://seekingalpha.com/news/4612293-supermicro-partners-with-red-hat-everpure-to-simplify-edge-ai-deployments
+- 采集通道：keyword-search
+- 搜索意图：find_original_source
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware trend and innovation
+- 关键词组：ai-hardware-trend-innovation-signal
+- 发布时间：unknown
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, adoption_context
+- 本地快照：blocked-http-403｜quality=failed｜has_full_text=false｜hash=cf9b8d34d9ec7306
+- 原文抓取优先级：2.4000000000000004
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-138｜Super Micro Computer Launches Kubernetes Edge AI Appliances with Red Hat and Everpure | Intellectia.AI
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-138-super-micro-computer-launches-kubernetes-edge-ai-appliances-with-red-h.md`
+- 出处：keyword search / Anysearch｜https://intellectia.ai/news/stock/super-micro-computer-launches-kubernetes-edge-ai-appliances-with-red-hat-and-everpure
+- 采集通道：keyword-search
+- 搜索意图：find_original_source
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware trend and innovation
+- 关键词组：ai-hardware-trend-innovation-signal
+- 发布时间：unknown
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, adoption_context
+- 本地快照：blocked-http-403｜quality=failed｜has_full_text=false｜hash=bd025f1b32644d5e
+- 原文抓取优先级：2.4000000000000004
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-139｜ChatGPT 桌面版上线语音控制多智能体
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-139-chatgpt-桌面版上线语音控制多智能体.md`
+- 出处：X：OpenAI (@OpenAI)｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：official
+- 追溯标签：S
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=50304015e33e0eee
+- 原文抓取优先级：1.0999999999999996
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-140｜Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-140-cactus-发布-gemma-4-e2b-hybrid-可在设备端为每个回答输出置信度分数-低分时自动路由至更大模型.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: none
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=b4a53a4f8ddadeca
+- 原文抓取优先级：1.0999999999999996
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+
+### R-141｜OpenAI 在 ChatGPT 中推出 Health 功能，支持连接医疗记录与 Apple Health
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-141-openai-在-chatgpt-中推出-health-功能-支持连接医疗记录与-apple-health.md`
+- 出处：OpenAI：官网动态（RSS · 排除企业/客户案例）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：official
+- 追溯标签：S
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=3e177a40071ab561
+- 原文抓取优先级：1.0999999999999996
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-142｜小红书HELMSMAN：全闪存服务器实现高性能向量检索，硬件成本节省超90%
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-142-小红书helmsman-全闪存服务器实现高性能向量检索-硬件成本节省超90.md`
+- 出处：公众号：小红书技术（dots.llm）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: none
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=195846a28d718b5b
+- 原文抓取优先级：1.0999999999999996
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+
+### R-143｜Apple 起诉 OpenAI 窃取硬件制造机密
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-143-apple-起诉-openai-窃取硬件制造机密.md`
+- 出处：The Verge：AI（RSS）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=404c0ab05fa0fa6b
+- 原文抓取优先级：1.0999999999999996
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-144｜Supermicro launches Kubernetes edge AI appliances with Red Hat, Everpure
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-144-supermicro-launches-kubernetes-edge-ai-appliances-with-red-hat-everpur.md`
+- 出处：keyword search / Anysearch｜https://www.streetinsider.com/Corporate+News/Supermicro+launches+Kubernetes+edge+AI+appliances+with+Red+Hat,+Everpure/26745318.html
+- 采集通道：keyword-search
+- 搜索意图：find_original_source
+- 搜索路径：ai_hardware_original
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：AI Hardware trend and innovation
+- 关键词组：ai-hardware-trend-innovation-signal
+- 发布时间：unknown
+- 分类：ai_hardware_original
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: ai_hardware_lens, adoption_context
+- 本地快照：blocked-http-403｜quality=failed｜has_full_text=false｜hash=5f083b651fc7f329
+- 原文抓取优先级：0.40000000000000036
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-145｜OpenAI 与 Anthropic 联手应对开放权重 AI 对其利润的威胁
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-145-openai-与-anthropic-联手应对开放权重-ai-对其利润的威胁.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://www.axios.com/2026/07/22/openai-anthropic-open-models-trump-china
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T14:03:51.200Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 本地快照：blocked-http-403｜quality=failed｜has_full_text=false｜hash=5e6a78703a1d8723
+- 原文抓取优先级：0.09999999999999964
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：eligible
+- 可用方向：emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-146｜OpenAI Workspace Agents 漏洞：一个 ChatGPT 链接即可创建恶意 AI 智能体
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-146-openai-workspace-agents-漏洞-一个-chatgpt-链接即可创建恶意-ai-智能体.md`
+- 出处：The Decoder：AI News（RSS）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_market_structure
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=f614acb3750b01b0
+- 原文抓取优先级：-0.3000000000000007
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-147｜TheNumbers.com 因 AI 爬虫与安全攻击导致网站崩溃重建
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-147-thenumbers-com-因-ai-爬虫与安全攻击导致网站崩溃重建.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=b4f1078578923124
+- 原文抓取优先级：-0.3000000000000007
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+
+### R-148｜北京发布智能体新政，首次将Harness Engineering、Token经济、OPC等写入政策
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-148-北京发布智能体新政-首次将harness-engineering-token经济-opc等写入政策.md`
+- 出处：公众号：数字生命卡兹克｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=0095b4886ace232b
+- 原文抓取优先级：-0.3000000000000007
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-149｜昆仑万维方汉：Token堆不出AI原生组织，模型才是长期立足之本
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-149-昆仑万维方汉-token堆不出ai原生组织-模型才是长期立足之本.md`
+- 出处：公众号：昆仑万维（天工）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=18c2a66808239e36
+- 原文抓取优先级：-0.3000000000000007
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-150｜微软MAI模型：以更低成本实现前沿能力规模化
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-150-微软mai模型-以更低成本实现前沿能力规模化.md`
+- 出处：X：Satya Nadella (@satyanadella)｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: adoption_context
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=a0f8d9eda15c8b6e
+- 原文抓取优先级：-0.3000000000000007
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-151｜AppliedAI - Crunchbase Company Profile & Funding
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-151-appliedai-crunchbase-company-profile-funding.md`
+- 出处：keyword search / Anysearch｜https://www.crunchbase.com/organization/aaico
+- 采集通道：keyword-search
+- 搜索意图：find_startups
+- 搜索路径：capital_startup
+- 来源类型：industry
+- 追溯标签：B
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：资本市场信号
+- 关键词组：capital-market-signal
+- 发布时间：unknown
+- 分类：capital_startup
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 本地快照：blocked-http-403｜quality=failed｜has_full_text=false｜hash=960877a61ef361af
+- 原文抓取优先级：-1.0000000000000009
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：eligible
+- 可用方向：emerging_pool, watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有可用全文快照
+
+### R-152｜字节跳动Seed启动STEM科学家计划，邀请100位前沿研究者加入AI团队
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-152-字节跳动seed启动stem科学家计划-邀请100位前沿研究者加入ai团队.md`
+- 出处：公众号：数字生命卡兹克｜https://mp.weixin.qq.com/s/XGSlalWPnQ0437xInGROUg
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: missing_full_text
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T12:24:22.000Z
+- 分类：tip
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 本地快照：summary-only-low-readable-body｜quality=failed｜has_full_text=false｜hash=b85100d67bf33831
+- 原文抓取优先级：-1.3000000000000007
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+
+### R-153｜腾讯设计Agent"设计妙境 Miora"上线，可完成品牌全案设计
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-153-腾讯设计agent-设计妙境-miora-上线-可完成品牌全案设计.md`
+- 出处：公众号：卡尔的AI沃茨｜https://mp.weixin.qq.com/s/wTI00g8lar2eLSgXAFAgBQ
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: missing_full_text
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：外围探索信号
+- 关键词组：outside-core-exploration
+- 发布时间：2026-07-23T11:47:01.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 本地快照：summary-only-low-readable-body｜quality=failed｜has_full_text=false｜hash=c278adeaec238852
+- 原文抓取优先级：-1.3000000000000007
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+
+### R-154｜百度智能云用AI Agent造芯，文心快码与Lightmate落地芯片设计效率跃迁
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-154-百度智能云用ai-agent造芯-文心快码与lightmate落地芯片设计效率跃迁.md`
+- 出处：公众号：百度智能云（文心）｜https://mp.weixin.qq.com/s/4C-Urp6SVO7_z6T3WbAbdQ
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: missing_full_text
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T11:31:01.000Z
+- 分类：tip
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 本地快照：summary-only-low-readable-body｜quality=failed｜has_full_text=false｜hash=60610edf9362413d
+- 原文抓取优先级：-1.3000000000000007
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+
+### R-155｜昆仑万维天工超级智能体入选WAIC《2026智能经济新形态：智能体创新实践汇编》
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-155-昆仑万维天工超级智能体入选waic-2026智能经济新形态-智能体创新实践汇编.md`
+- 出处：公众号：昆仑万维（天工）｜https://mp.weixin.qq.com/s/hgbZgpFapdfUolnm_KGcmA
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: missing_full_text
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-23T11:20:00.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 本地快照：summary-only-low-readable-body｜quality=failed｜has_full_text=false｜hash=a2088fdf94c3c6cf
+- 原文抓取优先级：-1.3000000000000007
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有变化前后流程线索；没有可用全文快照
+
+### R-156｜初创企业创始人呼吁特朗普不要封杀中国开放式AI
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-156-初创企业创始人呼吁特朗普不要封杀中国开放式ai.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：operators
+- 追溯标签：C
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：开发者生态信号
+- 关键词组：developer-ecosystem-signal
+- 发布时间：2026-07-23T15:55:35.819Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- 本地快照：blocked-http-403｜quality=failed｜has_full_text=false｜hash=2a69e06490452855
+- 原文抓取优先级：-1.3000000000000007
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-157｜百度智能云联合百度地图推出"景区一图游"，以官方路线与数据驱动提升文旅增收
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-157-百度智能云联合百度地图推出-景区一图游-以官方路线与数据驱动提升文旅增收.md`
+- 出处：公众号：百度智能云（文心）｜https://mp.weixin.qq.com/s/RgBCvOaG_qJ0H6JCGyTx2w
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T11:31:01.000Z
+- 分类：ai-products
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 本地快照：summary-only-low-readable-body｜quality=failed｜has_full_text=false｜hash=1d44754249ae7ecd
+- 原文抓取优先级：-1.3000000000000007
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+
+### R-158｜平安银行信用卡联合百度智能云推出Token福利包与百度搭子AI权益
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-158-平安银行信用卡联合百度智能云推出token福利包与百度搭子ai权益.md`
+- 出处：公众号：百度智能云（文心）｜https://mp.weixin.qq.com/s/jugqBKOU5zGvbXz7UG5T5w
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: missing_full_text
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T11:31:01.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 本地快照：summary-only-low-readable-body｜quality=failed｜has_full_text=false｜hash=29a4623a169c97db
+- 原文抓取优先级：-1.3000000000000007
+- Raw 状态：pooled
+- Pool 分流：watchlist
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+
+### R-159｜面壁智能MiniCPM端侧大模型深度赋能三星Galaxy AI，首次进入国际头部手机厂商全球旗舰产品线
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-159-面壁智能minicpm端侧大模型深度赋能三星galaxy-ai-首次进入国际头部手机厂商全球旗舰产品线.md`
+- 出处：公众号：面壁智能（MiniCPM）｜https://mp.weixin.qq.com/s/IkTMZQ6bzzMqoEbmIhEhtw
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: traceable_summary
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: missing_full_text
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：2026-07-23T08:52:44.000Z
+- 分类：industry
+- 采集理由：高相关候选，命中重要案例、融资、技术趋势、产品服务、垂直方案或重要观点。
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- 本地快照：summary-only-low-readable-body｜quality=failed｜has_full_text=false｜hash=d69f68446a6a29b0
+- 原文抓取优先级：-1.3000000000000007
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+
+### R-160｜Building an Autonomous Delivery Experience with DoorDash Co-Founders Andy Fang and Stanley Tang
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-160-building-an-autonomous-delivery-experience-with-doordash-co-founders-a.md`
+- 出处：No Priors｜no-url
+- 采集通道：rss-feed
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T10:00:00.000Z
+- 分类：rss
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=12b3ca3f60a1b2e4
+- 原文抓取优先级：-4
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-161｜佛州男子因相信 ChatGPT 拒绝就医而险些丧命，起诉 OpenAI 及 CEO 奥尔特曼
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-161-佛州男子因相信-chatgpt-拒绝就医而险些丧命-起诉-openai-及-ceo-奥尔特曼.md`
+- 出处：IT之家（RSS）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=ab52f03788665b01
+- 原文抓取优先级：-4.5
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+
+### R-162｜Google Gemini 月活用户逼近 9.5 亿，有望成为下一个十亿级产品
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-162-google-gemini-月活用户逼近-9-5-亿-有望成为下一个十亿级产品.md`
+- 出处：TechCrunch：AI（RSS）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：media
+- 追溯标签：A
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=113ebfda825b9888
+- 原文抓取优先级：-4.5
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+
+### R-163｜Claude 语音模式现已支持 Opus、Sonnet 及连接工具与多语言
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-163-claude-语音模式现已支持-opus-sonnet-及连接工具与多语言.md`
+- 出处：Claude：Blog（网页）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：技术迭代信号
+- 关键词组：technical-iteration-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=bf445819e5d9d5b2
+- 原文抓取优先级：-4.5
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+
+### R-164｜AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存“作弊”行为
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-164-aisi-报告-gpt-5-6-sol-等-5-款-ai-模型均存-作弊-行为.md`
+- 出处：IT之家（RSS）｜no-url
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：unknown
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context
+- 本地快照：no-url-summary-only｜quality=failed｜has_full_text=false｜hash=be14c69793b082c3
+- 原文抓取优先级：-4.6
+- Raw 状态：ignored
+- Pool 分流：index_only
+- 证据对象门禁：blocked｜homepage_or_directory_observation
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+
+### R-165｜Workflows in Grok Build
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-165-workflows-in-grok-build.md`
+- 出处：xAI：News（网页）｜https://x.ai/news/workflows
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：web
+- 追溯标签：B
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：成熟信号
+- 关键词组：mature-commercial-signal
+- 发布时间：2026-07-24T00:26:01.240Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: important_vertical_solution
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 本地快照：blocked-http-403｜quality=failed｜has_full_text=false｜hash=3b929ba2a15d2f82
+- 原文抓取优先级：-5.6
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：blocked｜not_event_case_or_trend_evidence
+- 可用方向：index_only
+- 缺失信息：证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有可用全文快照
+
+### R-166｜Alphabet 现金消耗随 AI 支出攀升引发警惕
+
+- 原文档案：`01-SiteV2/content/01-raw/originals/2026-07-24/r-166-alphabet-现金消耗随-ai-支出攀升引发警惕.md`
+- 出处：Hacker News 热门（buzzing.cc 中文翻译）｜https://www.reuters.com/business/retail-consumer/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-2026-07-23
+- 采集通道：aihot
+- 搜索意图：not_applicable
+- 搜索路径：not_applicable
+- 来源类型：news
+- 追溯标签：A
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- evidence_strength: blocked
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text；missing_snapshot
+- 采集入口标记：M
+- research_status：not_research
+- 主题分类：早期信号
+- 关键词组：early-direction-signal
+- 发布时间：2026-07-23T14:03:51.379Z
+- 分类：industry
+- 采集理由：中等相关候选，保留为观察线索，需二次搜索确认是否属于六类观澜重要性。
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: low_value_ai_adjacent_context
+- 本地快照：blocked-http-401｜quality=failed｜has_full_text=false｜hash=37ebef75ed219bc1
+- 原文抓取优先级：-5.6
+- Raw 状态：ignored
+- Pool 分流：discard
+- 证据对象门禁：eligible
+- 可用方向：watchlist
+- 缺失信息：没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照

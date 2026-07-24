@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-23T03:54:13.158Z",
-    "latestDataDate": "2026-07-23",
-    "currentDate": "2026-07-23",
-    "eventCount": 1455,
-    "quarantinedEventCount": 15
+    "generatedAt": "2026-07-24T01:28:02.081Z",
+    "latestDataDate": "2026-07-24",
+    "currentDate": "2026-07-24",
+    "eventCount": 1491,
+    "quarantinedEventCount": 16
   },
   "entity": {
     "id": "EN-8652f6cd9088f1fa",
@@ -151,6 +151,9 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-37ff2485172cab0b",
+        "EV-82ae0ea3bfe336a1",
+        "EV-563843979fb55b9b",
         "EV-6c81f03e885f10af",
         "EV-e1e30a2a4a5232c6",
         "EV-cd067fa6f39fe828",
@@ -221,10 +224,13 @@
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
+        "TX-technology-image_generation",
         "TX-technology-distillation",
         "TX-technology-computer_use"
       ],
       "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
         "EN-068e7ccb7d4b07a6",
         "EN-8652f6cd9088f1fa",
         "EN-597d8c4afa5fe3d6",
@@ -237,7 +243,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     }
   ],
   "relationships": [
@@ -333,6 +339,7 @@
         "EV-c85011ca6a0389bf",
         "EV-8be4676475a8d465",
         "EV-0e84a2f49d765ce3",
+        "EV-d4c9326c53dd927a",
         "EV-c81cb21337a9bb98",
         "EV-9dab7fa55702e561",
         "EV-53f4f2a34b3ce1b4",
@@ -377,6 +384,7 @@
         "EN-b5738c169b693bee",
         "EN-2dc010636b9dce91",
         "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
         "EN-96eebba49dbbf422",
         "EN-a23572554f6c861e",
         "EN-8652f6cd9088f1fa",
@@ -386,7 +394,6 @@
         "EN-4094a2b7125c7564",
         "EN-cbc62794911ff31b",
         "EN-e73b79a0b10f8cdb",
-        "EN-7d3194f79e645c42",
         "EN-2ca3f7d58fdda0f5",
         "EN-02be787a1aacea06",
         "EN-62ce3c1a5a893a2c",
@@ -419,12 +426,13 @@
         "EN-842a7da99bd249d4"
       ],
       "fdeIds": [
+        "FDE-b44bbcf1ee8caad0",
         "FDE-f34ca7b021eae900",
         "FDE-4edaa833d41055bd"
       ],
       "hardwareIds": [],
       "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-24"
     }
   ],
   "fde": [],

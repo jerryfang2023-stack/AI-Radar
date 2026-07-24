@@ -1,0 +1,270 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-064",
+  "title": "The first known runaway AI agent - or a very bad marketing stunt?",
+  "title_zh": "首个已知失控的AI智能体——还是一场糟糕的营销噱头？",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything",
+  "canonical_url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent",
+  "source_name": "Simon Willison's Blog",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-23T22:53:08.000Z",
+  "collected_at": "2026-07-24T01:25:43.524Z",
+  "language": "mixed",
+  "full_text": "The first known runaway AI agent - or a very bad marketing stunt?\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Atlassian &mdash; Give your agents a plan. Not a prompt. New Jira capabilities unlock full-context for AI-native software development. Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira. Learn more\n23rd July 2026 - Link Blog\nThe first known runaway AI agent - or a very bad marketing stunt? ( via ) Martin Alderson's commentary on the OpenAI accidental cyberattack against Hugging Face includes a couple of details I hadn't considered.\nFirst, Hugging Face offers a truly rich target if you're trying to find potential vulnerabilities that require executing arbitrary code:\nHugging Face has an enormous attack surface. They have more interfaces than I can count which run untrusted models and code. While they definitely have invested in defences, by nature of their operating model they do have many more opportunities to be attacked than many other services. I certainly don't envy their cybersecurity teams.\nSecondly, one of the things that has puzzled me is how OpenAI didn't notice that their sandbox had been so thoroughly breached by the agent. Surely they'd be monitoring network traffic closely?\nMartin points out that:\nIt's also likely they were running a huge amount of benchmarks simultaneously with ~unlimited token budgets - you want as many samples as possible to figure out how good a model is at a certain benchmark. It may also be they are testing various different checkpoints of the model too, understanding how the model is improving as it goes through the various training stages.\nThe mistakes made by the OpenAI team running this benchmark are easier to imagine when you think about the scale at which benchmarks of this kind usually operate. For all we know they could have been subjecting a new model to dozens of benchmarks at the same time, in dozens of different environments.\nPosted 23rd July 2026 at 10:53 pm\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a link post by Simon Willison, posted on 23rd July 2026 .\nsecurity\n617\nai\n2,140\nopenai\n434\ngenerative-ai\n1,892\nllms\n1,859\nhugging-face\n24\nai-security-research\n27\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "clean_text": "The first known runaway AI agent - or a very bad marketing stunt?\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Atlassian &mdash; Give your agents a plan. Not a prompt. New Jira capabilities unlock full-context for AI-native software development. Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira. Learn more\n23rd July 2026 - Link Blog\nThe first known runaway AI agent - or a very bad marketing stunt? ( via ) Martin Alderson's commentary on the OpenAI accidental cyberattack against Hugging Face includes a couple of details I hadn't considered.\nFirst, Hugging Face offers a truly rich target if you're trying to find potential vulnerabilities that require executing arbitrary code:\nHugging Face has an enormous attack surface. They have more interfaces than I can count which run untrusted models and code. While they definitely have invested in defences, by nature of their operating model they do have many more opportunities to be attacked than many other services. I certainly don't envy their cybersecurity teams.\nSecondly, one of the things that has puzzled me is how OpenAI didn't notice that their sandbox had been so thoroughly breached by the agent. Surely they'd be monitoring network traffic closely?\nMartin points out that:\nIt's also likely they were running a huge amount of benchmarks simultaneously with ~unlimited token budgets - you want as many samples as possible to figure out how good a model is at a certain benchmark. It may also be they are testing various different checkpoints of the model too, understanding how the model is improving as it goes through the various training stages.\nThe mistakes made by the OpenAI team running this benchmark are easier to imagine when you think about the scale at which benchmarks of this kind usually operate. For all we know they could have been subjecting a new model to dozens of benchmarks at the same time, in dozens of different environments.\nPosted 23rd July 2026 at 10:53 pm\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a link post by Simon Willison, posted on 23rd July 2026 .\nsecurity\n617\nai\n2,140\nopenai\n434\ngenerative-ai\n1,892\nllms\n1,859\nhugging-face\n24\nai-security-research\n27\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-24/r-064-the-first-known-runaway-ai-agent-or-a-very-bad-marketing-stunt.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-24/r-064-the-first-known-runaway-ai-agent-or-a-very-bad-marketing-stunt.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 64,
+  "extractor_diagnostics": {
+    "readability_score": 64,
+    "text_length": 2742,
+    "paragraph_count": 19,
+    "sentence_count": 20,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0004,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 2742,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "10f73a02fece4e25",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "42587da10e5f8c54",
+  "content_hash": "10f73a02fece4e25",
+  "full_text_hash": "10f73a02fece4e25",
+  "semantic_hash": "33a4ec3f84e205b0",
+  "duplicate_of": "merged 1 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-07-23T22:53:08.000Z",
+  "last_seen_at": "2026-07-24T01:25:43.524Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "&lt;p&gt;&lt;strong&gt;&lt;a href=\"https://martinalderson.com/posts/huggingface-openai-exploit/\"&gt;The first known runaway AI agent - or a very bad marketing stunt?&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Martin Alderson's commentary on the &lt;a href=\"https://simonwillison.net/2026/Jul/22/openai-cyberattack/\"&gt;OpenAI accidental cyberattack against Hugging Face&lt;/a&gt; includes a couple of details I hadn't considered.&lt;/p&gt; &lt;p&gt;First, Hugging Face offers a truly rich target if you're tr",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The first known runaway AI agent - or a very bad marketing stunt?",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Simon Willison’s Weblog Subscribe Sponsored by: Atlassian &mdash; Give your agents a plan.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "New Jira capabilities unlock full-context for AI-native software development.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Learn more 23rd July 2026 - Link Blog The first known runaway AI agent - or a very bad marketing stunt?",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-24T01:25:43.524Z",
+  "business_elements": {
+    "companies": [
+      "Simon Willison's Blog",
+      "OpenAI",
+      "GitHub",
+      "Cursor"
+    ],
+    "products": [
+      "agent",
+      "agents",
+      "Claude",
+      "Cursor",
+      "Copilot"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2026",
+      "22",
+      "23",
+      "10",
+      "53",
+      "21",
+      "3",
+      "16"
+    ],
+    "quotes": [
+      "https://martinalderson.com/posts/huggingface-openai-exploit/",
+      "https://simonwillison.net/2026/Jul/22/openai-cyberattack/"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "The first known runaway AI agent - or a very bad marketing stunt?",
+      "Simon Willison’s Weblog Subscribe Sponsored by: Atlassian &mdash; Give your agents a plan.",
+      "New Jira capabilities unlock full-context for AI-native software development."
+    ],
+    "case_details": [
+      "Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# The first known runaway AI agent - or a very bad marketing stunt?\n\n- raw_id: R-064\n- title_zh: 首个已知失控的AI智能体——还是一场糟糕的营销噱头？\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/#atom-everything\n- source_name: Simon Willison's Blog\n- collected_at: 2026-07-24T01:25:43.524Z\n\n## clean_text\n\nThe first known runaway AI agent - or a very bad marketing stunt?\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Atlassian &mdash; Give your agents a plan. Not a prompt. New Jira capabilities unlock full-context for AI-native software development. Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira. Learn more\n23rd July 2026 - Link Blog\nThe first known runaway AI agent - or a very bad marketing stunt? ( via ) Martin Alderson's commentary on the OpenAI accidental cyberattack against Hugging Face includes a couple of details I hadn't considered.\nFirst, Hugging Face offers a truly rich target if you're trying to find potential vulnerabilities that require executing arbitrary code:\nHugging Face has an enormous attack surface. They have more interfaces than I can count which run untrusted models and code. While they definitely have invested in defences, by nature of their operating model they do have many more opportunities to be attacked than many other services. I certainly don't envy their cybersecurity teams.\nSecondly, one of the things that has puzzled me is how OpenAI didn't notice that their sandbox had been so thoroughly breached by the agent. Surely they'd be monitoring network traffic closely?\nMartin points out that:\nIt's also likely they were running a huge amount of benchmarks simultaneously with ~unlimited token budgets - you want as many samples as possible to figure out how good a model is at a certain benchmark. It may also be they are testing various different checkpoints of the model too, understanding how the model is improving as it goes through the various training stages.\nThe mistakes made by the OpenAI team running this benchmark are easier to imagine when you think about the scale at which benchmarks of this kind usually operate. For all we know they could have been subjecting a new model to dozens of benchmarks at the same time, in dozens of different environments.\nPosted 23rd July 2026 at 10:53 pm\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a link post by Simon Willison, posted on 23rd July 2026 .\nsecurity\n617\nai\n2,140\nopenai\n434\ngenerative-ai\n1,892\nllms\n1,859\nhugging-face\n24\nai-security-research\n27\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## full_text\n\nThe first known runaway AI agent - or a very bad marketing stunt?\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Atlassian &mdash; Give your agents a plan. Not a prompt. New Jira capabilities unlock full-context for AI-native software development. Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira. Learn more\n23rd July 2026 - Link Blog\nThe first known runaway AI agent - or a very bad marketing stunt? ( via ) Martin Alderson's commentary on the OpenAI accidental cyberattack against Hugging Face includes a couple of details I hadn't considered.\nFirst, Hugging Face offers a truly rich target if you're trying to find potential vulnerabilities that require executing arbitrary code:\nHugging Face has an enormous attack surface. They have more interfaces than I can count which run untrusted models and code. While they definitely have invested in defences, by nature of their operating model they do have many more opportunities to be attacked than many other services. I certainly don't envy their cybersecurity teams.\nSecondly, one of the things that has puzzled me is how OpenAI didn't notice that their sandbox had been so thoroughly breached by the agent. Surely they'd be monitoring network traffic closely?\nMartin points out that:\nIt's also likely they were running a huge amount of benchmarks simultaneously with ~unlimited token budgets - you want as many samples as possible to figure out how good a model is at a certain benchmark. It may also be they are testing various different checkpoints of the model too, understanding how the model is improving as it goes through the various training stages.\nThe mistakes made by the OpenAI team running this benchmark are easier to imagine when you think about the scale at which benchmarks of this kind usually operate. For all we know they could have been subjecting a new model to dozens of benchmarks at the same time, in dozens of different environments.\nPosted 23rd July 2026 at 10:53 pm\nRecent articles\nOpenAI’s accidental cyberattack against Hugging Face is science fiction that happened - 22nd July 2026\nA Fireside Chat with Cat and Thariq from the Claude Code team - 21st July 2026\nKimi K3, and what we can still learn from the pelican benchmark - 16th July 2026\nThis is a link post by Simon Willison, posted on 23rd July 2026 .\nsecurity\n617\nai\n2,140\nopenai\n434\ngenerative-ai\n1,892\nllms\n1,859\nhugging-face\n24\nai-security-research\n27\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 64\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] &lt;p&gt;&lt;strong&gt;&lt;a href=\"https://martinalderson.com/posts/huggingface-openai-exploit/\"&gt;The first known runaway AI agent - or a very bad marketing stunt?&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Martin Alderson's commentary on the &lt;a href=\"https://simonwillison.net/2026/Jul/22/openai-cyberattack/\"&gt;OpenAI accidental cyberattack against Hugging Face&lt;/a&gt; includes a couple of details I hadn't considered.&lt;/p&gt; &lt;p&gt;First, Hugging Face offers a truly rich target if you're tr\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The first known runaway AI agent - or a very bad marketing stunt?\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Simon Willison’s Weblog Subscribe Sponsored by: Atlassian &mdash; Give your agents a plan.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] New Jira capabilities unlock full-context for AI-native software development.\n5. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Assign tasks to Claude, Cursor, or GitHub Copilot, now directly from Jira.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Learn more 23rd July 2026 - Link Blog The first known runaway AI agent - or a very bad marketing stunt?\n"
+}

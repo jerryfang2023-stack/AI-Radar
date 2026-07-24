@@ -1,0 +1,293 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-097
+title: "The right-wing boomers protesting data centers have a lot in common with the left"
+title_zh: "右翼婴儿潮一代抗议数据中心的举动与左翼有很多共同点"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.theverge.com/policy/969667/humans-first-data-center-protest-hernando-county-florida-republicans"
+canonical_url: "https://theverge.com/policy/969667/humans-first-data-center-protest-hernando-county-florida-republicans"
+source_name: "The Verge AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-23T12:00:00.000Z"
+collected_at: 2026-07-24T01:25:56.235Z
+language: mixed
+full_text_hash: 48246edcec5920de
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-097-the-right-wing-boomers-protesting-data-centers-have-a-lot-in-common-wi.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-24/r-097-the-right-wing-boomers-protesting-data-centers-have-a-lot-in-common-wi.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":19997,"paragraph_count":50,"sentence_count":140,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 19997
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"48246edcec5920de","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: e4cb836d8421ff1b
+content_hash: 3068dcd7ebd9f899
+semantic_hash: e09e44d0610b94eb
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-23T12:00:00.000Z"
+last_seen_at: 2026-07-24T01:25:56.235Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"supporting commercial context only","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["The Verge AI"],"products":["ChatGPT"],"people":[],"industries":["法律 / 法务","医疗","开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["8230","71","15 m","150","10","75","6","000"],"quotes":["We are going to fight, fight, fight,","How would you like to have one by you? If you live within 15 minutes of a data center, night and day you’re going to hear: EEEEENNNNNNHHHHHHHHHHHH.","ChatGPT told her to.","She consults with ChatGPT what time she should wake up in the morning, what time she should go to bed, who should be her friends,","conservative social movement that is dedicated to ensuring that the future of AI is in the hands of everyday people."]}
+evidence_seed: {"company_actions":["On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community. There was no immediate threat - the Hernando County commission had unanimously approved a one-year moratorium on such developments in June [&#8230;]","The right-wing boomers protesting data centers have a lot in common with the left The conservative backlash to hyperscale facilities is about jobs, the environment, quality of life — and China.","On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community. There was no immediate threat - the Hernando County commission had unanimously approved a one-year moratorium on such developments in June [&#8230;]","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The right-wing boomers protesting data centers have a lot in common with the left The conservative backlash to hyperscale facilities is about jobs, the environment, quality of life — and China.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"There was no immediate threat — the Hernando County commission had unanimously approved a one-year moratorium on such developments in June — but the organizers weren’t satisfied.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"A temporary pause wouldn’t be enough.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"They wanted a ban.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-24T01:25:56.235Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# The right-wing boomers protesting data centers have a lot in common with the left
+
+## clean_text
+
+The right-wing boomers protesting data centers have a lot in common with the left
+The conservative backlash to hyperscale facilities is about jobs, the environment, quality of life — and China.
+On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community. There was no immediate threat — the Hernando County commission had unanimously approved a one-year moratorium on such developments in June — but the organizers weren’t satisfied. A temporary pause wouldn’t be enough. They wanted a ban.
+“We are going to fight, fight, fight,” said a 71-year-old woman named Carol, who was manning a table with flyers and a petition the group, No Data Centers Hernando County, planned on presenting to the local government. Carol, a retired country music radio host, is a staunch conservative and a proud Floridian. The American flag on her red T-shirt was made up of little sea turtles. A white visor, bedazzled with red and blue rhinestones, shielded her face from the late-morning sun. “How would you like to have one by you? If you live within 15 minutes of a data center, night and day you’re going to hear: EEEEENNNNNNHHHHHHHHHHHH.”
+Beyond the noise pollution and environmental destruction — the frequencies emitted by data centers, she told me, hurt bees and other pollinators — Carol was concerned about the social cost of mass AI adoption. She told me about a woman she knows who cut off all her friends because “ChatGPT told her to.”
+“She consults with ChatGPT what time she should wake up in the morning, what time she should go to bed, who should be her friends,” she said.
+The small rally in this Tampa exurb was one of nearly 150 protests affiliated with Humans First, which describes itself as a “conservative social movement that is dedicated to ensuring that the future of AI is in the hands of everyday people.”
+Carol recited a litany of harms caused by data centers, some of them more dubious than others. Cows raised on ranches near data centers, she claimed, were giving birth to stillborn calves. Hyperscale facilities source their parts from China, an American adversary, threatening national security. “We’re setting ourselves up,” Carol told me. “Do you know what’s in those chips?” I told her I do not. “We’re blindly trusting the Chinese?” she continued, incredulous. “To give us chips?” (Conservative proponents of data centers, meanwhile, claim China is funding anti-AI campaigns in the United States.)
+Communities across the country are pushing back on data center construction. A recent Gallup poll found that seven in 10 Americans oppose construction of data centers in their area. Nearly two-thirds of Republicans and 75 percent of Democrats surveyed said they objected to local data center construction. Americans may be more polarized than ever, but the backlash to data centers is bipartisan — and it may cement new, surprising political alliances. The concerns animating the conservative backlash are similar to those motivating liberals: the environmental costs of data center construction and maintenance; the ethical problems of AI, ranging from its use for mass government surveillance to its effects on users’ mental health; and fears that having a data center nearby will hurt their quality of life. But there are also some partisan anxieties behind the right-wing data center backlash, namely the threat of Chinese infiltration of US technology.
+Humans First, a once-bipartisan offshoot of the Center for AI Safety, is helmed by Amy Kremer, a longtime conservative organizer who is arguably one of the people most responsible for the Republican Party’s populist turn. Kremer was an early leader of the Tea Party and a cofounder of both Women for Trump and Women for America First, the latter of which hosted the Stop the Steal rally in Washington, DC, that devolved into the January 6th riots. (Kremer was not among those who stormed the Capitol.)
+Despite Humans First’s partisan bent and Kremer’s political bona fides, the concerns at the Humans First-affiliated rally in Hernando County were decidedly local. A firefighter running for agricultural commissioner dropped off signs; a Republican candidate for county commissioner stopped by. The gathering ended with a lecture from a land use expert who explained how to change zoning codes to prevent the construction of hyperscale data centers — those that occupy at least 10,000 square feet and have a minimum energy draw of 100 megawatts. Before the lecture, No Data Center Hernando County member Kim Belanger, who works in IT, pulled up an article on data centers from the progressive website More Perfect Union. Even though the room skewed conservative, the article, she said, was “very informative.”
+Patti Zirhut, the organizer, told me that she found out about Humans First on Facebook. Participating in the national day of action was a no-brainer, since Zirhut and her friends had already started No Data Center Hernando County to thwart data center construction in their community.
+“I am very conservative and I don’t believe in all the stuff that Democrats believe in at all,” Zirhut told me. But she also feels betrayed by Florida’s Republican leadership. She was a big fan of Gov. Ron DeSantis — at first. But in his second term, she said, “he’s been nothing but pro-development, just inviting everybody here, tearing up our state.”
+DeSantis has positioned himself as an AI skeptic and signed a law in May requiring hyperscale data centers to cover their own utility costs and letting local governments set water use regulations for data center projects. But his administration has given data center developers millions in tax breaks, according to the Tampa Bay Times. The governor reportedly pushed to alter the state’s tax exemption for data centers so it would only apply to hyperscale facilities.
+As they tabled outside the library, Zirhut and her friends discussed DeSantis’ prospective successors. “This is probably the most important governor’s race of your lifetime,” Belanger told me. She’s also concerned about a DeSantis-backed ballot amendment that would eliminate property taxes for most homeowners, since it would deprive county governments of much-needed revenue — potentially making developments like data centers more enticing.
+Zirhut and the others were disappointed by Rep. Byron Donalds, the Republican front-runner in the gubernatorial primary and a vocal supporter of data center construction in Florida. “I just don’t understand why Trump would back him,” one of them said.
+“I’m not anti-data center. I’m pro having a plan,” Donalds said in February. “Data centers are going to be a function of American life going forward.” Donalds has said he wants to bring more outside investment to Florida — a comment that has since come back to haunt him. “My vision is to make Florida the financial capital of the world,” he said at an event hosted by The Hill.
+“That is not what we want here in Florida at all,” Zirhut told me.
+Donalds’ support for data centers is now costing him supporters from his own party. Recent attack ads have focused on the support he’s received from the tech industry, including more than $5 million in donations from Leading the Future, a $100 million pro-AI super PAC whose funders include Andreessen Horowitz and Joe Lonsdale of Palantir, according to the Tallahassee Democrat, as well as $500,000 from American Mission, which is itself funded by Leading the Future. Donalds appears to be staking out a middle ground between the industry that supports him and the voters whose support he needs to win the primary. On Monday, he announced legislation that would prevent data centers from driving up utility costs.
+Opposition to data centers is widespread throughout the state. More than 20 counties and municipalities throughout the state have discussed or passed moratoria on data center construction, Politico reports. In some communities, the backlash has been strong enough to deter developers. In June, the sponsor behind a controversial data center proposal in Citrus County withdrew its plan to build an 800-acre data center in the community after the county commission approved a one-year moratorium on rezoning applications for data centers.
+“Unfortunately, local moratoriums on data centers would send a signal that the area is closed for business, both for data centers and for other significant economic development projects,” Dan Diorio, executive vice president of state policy and government affairs at the Data Center Coalition, an industry lobbying group, told The Verge. But that’s exactly what Zirhut and other organizers want.
+Zirhut explained that she’s not anti-growth, but she doesn’t want the government to give handouts to major developers who have no ties to the community. “If we could keep it local, with local builders, that would be fine because they know what to do with Florida,” she said. “Even our agriculture commissioner” — Wilton Simpson, a Republican — “is having people come in and use herbicides and pesticides, spraying our lakes and killing all our vegetation.” She’s concerned about how AI can fuel mass surveillance, an issue that became especially salient after the Hernando County Sheriff’s Office started installing them on local roads.
+“We don’t want people to lose jobs, and our country to be run by AI, and live like people in China, where our money is controlled and everything we do is looked at,” she said.
+Though Zirhut is a lifelong Republican, the data center issue — and the bigger question of development — has led to some unexpected political compromises for her.
+“If Byron Donalds wins the primary, I’m voting Democrat. I will not vote for him,” she told me, adding that she’d also be willing to vote for an independent candidate who opposed data centers. “I think a lot of people are like that. It’s not about the party. It’s not. It’s about human life.”
+The right-wing boomers protesting data centers have a lot in common with the left
+The conservative backlash to hyperscale facilities is about jobs, the environment, quality of life — and China.
+On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community. There was no immediate threat — the Hernando County commission had unanimously approved a one-year moratorium on such developments in June — but the organizers weren’t satisfied. A temporary pause wouldn’t be enough. They wanted a ban.
+“We are going to fight, fight, fight,” said a 71-year-old woman named Carol, who was manning a table with flyers and a petition the group, No Data Centers Hernando County, planned on presenting to the local government. Carol, a retired country music radio host, is a staunch conservative and a proud Floridian. The American flag on her red T-shirt was made up of little sea turtles. A white visor, bedazzled with red and blue rhinestones, shielded her face from the late-morning sun. “How would you like to have one by you? If you live within 15 minutes of a data center, night and day you’re going to hear: EEEEENNNNNNHHHHHHHHHHHH.”
+Beyond the noise pollution and environmental destruction — the frequencies emitted by data centers, she told me, hurt bees and other pollinators — Carol was concerned about the social cost of mass AI adoption. She told me about a woman she knows who cut off all her friends because “ChatGPT told her to.”
+“She consults with ChatGPT what time she should wake up in the morning, what time she should go to bed, who should be her friends,” she said.
+The small rally in this Tampa exurb was one of nearly 150 protests affiliated with Humans First, which describes itself as a “conservative social movement that is dedicated to ensuring that the future of AI is in the hands of everyday people.”
+Carol recited a litany of harms caused by data centers, some of them more dubious than others. Cows raised on ranches near data centers, she claimed, were giving birth to stillborn calves. Hyperscale facilities source their parts from China, an American adversary, threatening national security. “We’re setting ourselves up,” Carol told me. “Do you know what’s in those chips?” I told her I do not. “We’re blindly trusting the Chinese?” she continued, incredulous. “To give us chips?” (Conservative proponents of data centers, meanwhile, claim China is funding anti-AI campaigns in the United States.)
+Communities across the country are pushing back on data center construction. A recent Gallup poll found that seven in 10 Americans oppose construction of data centers in their area. Nearly two-thirds of Republicans and 75 percent of Democrats surveyed said they objected to local data center construction. Americans may be more polarized than ever, but the backlash to data centers is bipartisan — and it may cement new, surprising political alliances. The concerns animating the conservative backlash are similar to those motivating liberals: the environmental costs of data center construction and maintenance; the ethical problems of AI, ranging from its use for mass government surveillance to its effects on users’ mental health; and fears that having a data center nearby will hurt their quality of life. But there are also some partisan anxieties behind the right-wing data center backlash, namely the threat of Chinese infiltration of US technology.
+Humans First, a once-bipartisan offshoot of the Center for AI Safety, is helmed by Amy Kremer, a longtime conservative organizer who is arguably one of the people most responsible for the Republican Party’s populist turn. Kremer was an early leader of the Tea Party and a cofounder of both Women for Trump and Women for America First, the latter of which hosted the Stop the Steal rally in Washington, DC, that devolved into the January 6th riots. (Kremer was not among those who stormed the Capitol.)
+Despite Humans First’s partisan bent and Kremer’s political bona fides, the concerns at the Humans First-affiliated rally in Hernando County were decidedly local. A firefighter running for agricultural commissioner dropped off signs; a Republican candidate for county commissioner stopped by. The gathering ended with a lecture from a land use expert who explained how to change zoning codes to prevent the construction of hyperscale data centers — those that occupy at least 10,000 square feet and have a minimum energy draw of 100 megawatts. Before the lecture, No Data Center Hernando County member Kim Belanger, who works in IT, pulled up an article on data centers from the progressive website More Perfect Union. Even though the room skewed conservative, the article, she said, was “very informative.”
+Patti Zirhut, the organizer, told me that she found out about Humans First on Facebook. Participating in the national day of action was a no-brainer, since Zirhut and her friends had already started No Data Center Hernando County to thwart data center construction in their community.
+“I am very conservative and I don’t believe in all the stuff that Democrats believe in at all,” Zirhut told me. But she also feels betrayed by Florida’s Republican leadership. She was a big fan of Gov. Ron DeSantis — at first. But in his second term, she said, “he’s been nothing but pro-development, just inviting everybody here, tearing up our state.”
+DeSantis has positioned himself as an AI skeptic and signed a law in May requiring hyperscale data centers to cover their own utility costs and letting local governments set water use regulations for data center projects. But his administration has given data center developers millions in tax breaks, according to the Tampa Bay Times. The governor reportedly pushed to alter the state’s tax exemption for data centers so it would only apply to hyperscale facilities.
+As they tabled outside the library, Zirhut and her friends discussed DeSantis’ prospective successors. “This is probably the most important governor’s race of your lifetime,” Belanger told me. She’s also concerned about a DeSantis-backed ballot amendment that would eliminate property taxes for most homeowners, since it would deprive county governments of much-needed revenue — potentially making developments like data centers more enticing.
+Zirhut and the others were disappointed by Rep. Byron Donalds, the Republican front-runner in the gubernatorial primary and a vocal supporter of data center construction in Florida. “I just don’t understand why Trump would back him,” one of them said.
+“I’m not anti-data center. I’m pro having a plan,” Donalds said in February. “Data centers are going to be a function of American life going forward.” Donalds has said he wants to bring more outside investment to Florida — a comment that has since come back to haunt him. “My vision is to make Florida the financial capital of the world,” he said at an event hosted by The Hill.
+“That is not what we want here in Florida at all,” Zirhut told me.
+Donalds’ support for data centers is now costing him supporters from his own party. Recent attack ads have focused on the support he’s received from the tech industry, including more than $5 million in donations from Leading the Future, a $100 million pro-AI super PAC whose funders include Andreessen Horowitz and Joe Lonsdale of Palantir, according to the Tallahassee Democrat, as well as $500,000 from American Mission, which is itself funded by Leading the Future. Donalds appears to be staking out a middle ground between the industry that supports him and the voters whose support he needs to win the primary. On Monday, he announced legislation that would prevent data centers from driving up utility costs.
+Opposition to data centers is widespread throughout the state. More than 20 counties and municipalities throughout the state have discussed or passed moratoria on data center construction, Politico report
+
+## full_text
+
+The right-wing boomers protesting data centers have a lot in common with the left
+The conservative backlash to hyperscale facilities is about jobs, the environment, quality of life — and China.
+On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community. There was no immediate threat — the Hernando County commission had unanimously approved a one-year moratorium on such developments in June — but the organizers weren’t satisfied. A temporary pause wouldn’t be enough. They wanted a ban.
+“We are going to fight, fight, fight,” said a 71-year-old woman named Carol, who was manning a table with flyers and a petition the group, No Data Centers Hernando County, planned on presenting to the local government. Carol, a retired country music radio host, is a staunch conservative and a proud Floridian. The American flag on her red T-shirt was made up of little sea turtles. A white visor, bedazzled with red and blue rhinestones, shielded her face from the late-morning sun. “How would you like to have one by you? If you live within 15 minutes of a data center, night and day you’re going to hear: EEEEENNNNNNHHHHHHHHHHHH.”
+Beyond the noise pollution and environmental destruction — the frequencies emitted by data centers, she told me, hurt bees and other pollinators — Carol was concerned about the social cost of mass AI adoption. She told me about a woman she knows who cut off all her friends because “ChatGPT told her to.”
+“She consults with ChatGPT what time she should wake up in the morning, what time she should go to bed, who should be her friends,” she said.
+The small rally in this Tampa exurb was one of nearly 150 protests affiliated with Humans First, which describes itself as a “conservative social movement that is dedicated to ensuring that the future of AI is in the hands of everyday people.”
+Carol recited a litany of harms caused by data centers, some of them more dubious than others. Cows raised on ranches near data centers, she claimed, were giving birth to stillborn calves. Hyperscale facilities source their parts from China, an American adversary, threatening national security. “We’re setting ourselves up,” Carol told me. “Do you know what’s in those chips?” I told her I do not. “We’re blindly trusting the Chinese?” she continued, incredulous. “To give us chips?” (Conservative proponents of data centers, meanwhile, claim China is funding anti-AI campaigns in the United States.)
+Communities across the country are pushing back on data center construction. A recent Gallup poll found that seven in 10 Americans oppose construction of data centers in their area. Nearly two-thirds of Republicans and 75 percent of Democrats surveyed said they objected to local data center construction. Americans may be more polarized than ever, but the backlash to data centers is bipartisan — and it may cement new, surprising political alliances. The concerns animating the conservative backlash are similar to those motivating liberals: the environmental costs of data center construction and maintenance; the ethical problems of AI, ranging from its use for mass government surveillance to its effects on users’ mental health; and fears that having a data center nearby will hurt their quality of life. But there are also some partisan anxieties behind the right-wing data center backlash, namely the threat of Chinese infiltration of US technology.
+Humans First, a once-bipartisan offshoot of the Center for AI Safety, is helmed by Amy Kremer, a longtime conservative organizer who is arguably one of the people most responsible for the Republican Party’s populist turn. Kremer was an early leader of the Tea Party and a cofounder of both Women for Trump and Women for America First, the latter of which hosted the Stop the Steal rally in Washington, DC, that devolved into the January 6th riots. (Kremer was not among those who stormed the Capitol.)
+Despite Humans First’s partisan bent and Kremer’s political bona fides, the concerns at the Humans First-affiliated rally in Hernando County were decidedly local. A firefighter running for agricultural commissioner dropped off signs; a Republican candidate for county commissioner stopped by. The gathering ended with a lecture from a land use expert who explained how to change zoning codes to prevent the construction of hyperscale data centers — those that occupy at least 10,000 square feet and have a minimum energy draw of 100 megawatts. Before the lecture, No Data Center Hernando County member Kim Belanger, who works in IT, pulled up an article on data centers from the progressive website More Perfect Union. Even though the room skewed conservative, the article, she said, was “very informative.”
+Patti Zirhut, the organizer, told me that she found out about Humans First on Facebook. Participating in the national day of action was a no-brainer, since Zirhut and her friends had already started No Data Center Hernando County to thwart data center construction in their community.
+“I am very conservative and I don’t believe in all the stuff that Democrats believe in at all,” Zirhut told me. But she also feels betrayed by Florida’s Republican leadership. She was a big fan of Gov. Ron DeSantis — at first. But in his second term, she said, “he’s been nothing but pro-development, just inviting everybody here, tearing up our state.”
+DeSantis has positioned himself as an AI skeptic and signed a law in May requiring hyperscale data centers to cover their own utility costs and letting local governments set water use regulations for data center projects. But his administration has given data center developers millions in tax breaks, according to the Tampa Bay Times. The governor reportedly pushed to alter the state’s tax exemption for data centers so it would only apply to hyperscale facilities.
+As they tabled outside the library, Zirhut and her friends discussed DeSantis’ prospective successors. “This is probably the most important governor’s race of your lifetime,” Belanger told me. She’s also concerned about a DeSantis-backed ballot amendment that would eliminate property taxes for most homeowners, since it would deprive county governments of much-needed revenue — potentially making developments like data centers more enticing.
+Zirhut and the others were disappointed by Rep. Byron Donalds, the Republican front-runner in the gubernatorial primary and a vocal supporter of data center construction in Florida. “I just don’t understand why Trump would back him,” one of them said.
+“I’m not anti-data center. I’m pro having a plan,” Donalds said in February. “Data centers are going to be a function of American life going forward.” Donalds has said he wants to bring more outside investment to Florida — a comment that has since come back to haunt him. “My vision is to make Florida the financial capital of the world,” he said at an event hosted by The Hill.
+“That is not what we want here in Florida at all,” Zirhut told me.
+Donalds’ support for data centers is now costing him supporters from his own party. Recent attack ads have focused on the support he’s received from the tech industry, including more than $5 million in donations from Leading the Future, a $100 million pro-AI super PAC whose funders include Andreessen Horowitz and Joe Lonsdale of Palantir, according to the Tallahassee Democrat, as well as $500,000 from American Mission, which is itself funded by Leading the Future. Donalds appears to be staking out a middle ground between the industry that supports him and the voters whose support he needs to win the primary. On Monday, he announced legislation that would prevent data centers from driving up utility costs.
+Opposition to data centers is widespread throughout the state. More than 20 counties and municipalities throughout the state have discussed or passed moratoria on data center construction, Politico reports. In some communities, the backlash has been strong enough to deter developers. In June, the sponsor behind a controversial data center proposal in Citrus County withdrew its plan to build an 800-acre data center in the community after the county commission approved a one-year moratorium on rezoning applications for data centers.
+“Unfortunately, local moratoriums on data centers would send a signal that the area is closed for business, both for data centers and for other significant economic development projects,” Dan Diorio, executive vice president of state policy and government affairs at the Data Center Coalition, an industry lobbying group, told The Verge. But that’s exactly what Zirhut and other organizers want.
+Zirhut explained that she’s not anti-growth, but she doesn’t want the government to give handouts to major developers who have no ties to the community. “If we could keep it local, with local builders, that would be fine because they know what to do with Florida,” she said. “Even our agriculture commissioner” — Wilton Simpson, a Republican — “is having people come in and use herbicides and pesticides, spraying our lakes and killing all our vegetation.” She’s concerned about how AI can fuel mass surveillance, an issue that became especially salient after the Hernando County Sheriff’s Office started installing them on local roads.
+“We don’t want people to lose jobs, and our country to be run by AI, and live like people in China, where our money is controlled and everything we do is looked at,” she said.
+Though Zirhut is a lifelong Republican, the data center issue — and the bigger question of development — has led to some unexpected political compromises for her.
+“If Byron Donalds wins the primary, I’m voting Democrat. I will not vote for him,” she told me, adding that she’d also be willing to vote for an independent candidate who opposed data centers. “I think a lot of people are like that. It’s not about the party. It’s not. It’s about human life.”
+The right-wing boomers protesting data centers have a lot in common with the left
+The conservative backlash to hyperscale facilities is about jobs, the environment, quality of life — and China.
+On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community. There was no immediate threat — the Hernando County commission had unanimously approved a one-year moratorium on such developments in June — but the organizers weren’t satisfied. A temporary pause wouldn’t be enough. They wanted a ban.
+“We are going to fight, fight, fight,” said a 71-year-old woman named Carol, who was manning a table with flyers and a petition the group, No Data Centers Hernando County, planned on presenting to the local government. Carol, a retired country music radio host, is a staunch conservative and a proud Floridian. The American flag on her red T-shirt was made up of little sea turtles. A white visor, bedazzled with red and blue rhinestones, shielded her face from the late-morning sun. “How would you like to have one by you? If you live within 15 minutes of a data center, night and day you’re going to hear: EEEEENNNNNNHHHHHHHHHHHH.”
+Beyond the noise pollution and environmental destruction — the frequencies emitted by data centers, she told me, hurt bees and other pollinators — Carol was concerned about the social cost of mass AI adoption. She told me about a woman she knows who cut off all her friends because “ChatGPT told her to.”
+“She consults with ChatGPT what time she should wake up in the morning, what time she should go to bed, who should be her friends,” she said.
+The small rally in this Tampa exurb was one of nearly 150 protests affiliated with Humans First, which describes itself as a “conservative social movement that is dedicated to ensuring that the future of AI is in the hands of everyday people.”
+Carol recited a litany of harms caused by data centers, some of them more dubious than others. Cows raised on ranches near data centers, she claimed, were giving birth to stillborn calves. Hyperscale facilities source their parts from China, an American adversary, threatening national security. “We’re setting ourselves up,” Carol told me. “Do you know what’s in those chips?” I told her I do not. “We’re blindly trusting the Chinese?” she continued, incredulous. “To give us chips?” (Conservative proponents of data centers, meanwhile, claim China is funding anti-AI campaigns in the United States.)
+Communities across the country are pushing back on data center construction. A recent Gallup poll found that seven in 10 Americans oppose construction of data centers in their area. Nearly two-thirds of Republicans and 75 percent of Democrats surveyed said they objected to local data center construction. Americans may be more polarized than ever, but the backlash to data centers is bipartisan — and it may cement new, surprising political alliances. The concerns animating the conservative backlash are similar to those motivating liberals: the environmental costs of data center construction and maintenance; the ethical problems of AI, ranging from its use for mass government surveillance to its effects on users’ mental health; and fears that having a data center nearby will hurt their quality of life. But there are also some partisan anxieties behind the right-wing data center backlash, namely the threat of Chinese infiltration of US technology.
+Humans First, a once-bipartisan offshoot of the Center for AI Safety, is helmed by Amy Kremer, a longtime conservative organizer who is arguably one of the people most responsible for the Republican Party’s populist turn. Kremer was an early leader of the Tea Party and a cofounder of both Women for Trump and Women for America First, the latter of which hosted the Stop the Steal rally in Washington, DC, that devolved into the January 6th riots. (Kremer was not among those who stormed the Capitol.)
+Despite Humans First’s partisan bent and Kremer’s political bona fides, the concerns at the Humans First-affiliated rally in Hernando County were decidedly local. A firefighter running for agricultural commissioner dropped off signs; a Republican candidate for county commissioner stopped by. The gathering ended with a lecture from a land use expert who explained how to change zoning codes to prevent the construction of hyperscale data centers — those that occupy at least 10,000 square feet and have a minimum energy draw of 100 megawatts. Before the lecture, No Data Center Hernando County member Kim Belanger, who works in IT, pulled up an article on data centers from the progressive website More Perfect Union. Even though the room skewed conservative, the article, she said, was “very informative.”
+Patti Zirhut, the organizer, told me that she found out about Humans First on Facebook. Participating in the national day of action was a no-brainer, since Zirhut and her friends had already started No Data Center Hernando County to thwart data center construction in their community.
+“I am very conservative and I don’t believe in all the stuff that Democrats believe in at all,” Zirhut told me. But she also feels betrayed by Florida’s Republican leadership. She was a big fan of Gov. Ron DeSantis — at first. But in his second term, she said, “he’s been nothing but pro-development, just inviting everybody here, tearing up our state.”
+DeSantis has positioned himself as an AI skeptic and signed a law in May requiring hyperscale data centers to cover their own utility costs and letting local governments set water use regulations for data center projects. But his administration has given data center developers millions in tax breaks, according to the Tampa Bay Times. The governor reportedly pushed to alter the state’s tax exemption for data centers so it would only apply to hyperscale facilities.
+As they tabled outside the library, Zirhut and her friends discussed DeSantis’ prospective successors. “This is probably the most important governor’s race of your lifetime,” Belanger told me. She’s also concerned about a DeSantis-backed ballot amendment that would eliminate property taxes for most homeowners, since it would deprive county governments of much-needed revenue — potentially making developments like data centers more enticing.
+Zirhut and the others were disappointed by Rep. Byron Donalds, the Republican front-runner in the gubernatorial primary and a vocal supporter of data center construction in Florida. “I just don’t understand why Trump would back him,” one of them said.
+“I’m not anti-data center. I’m pro having a plan,” Donalds said in February. “Data centers are going to be a function of American life going forward.” Donalds has said he wants to bring more outside investment to Florida — a comment that has since come back to haunt him. “My vision is to make Florida the financial capital of the world,” he said at an event hosted by The Hill.
+“That is not what we want here in Florida at all,” Zirhut told me.
+Donalds’ support for data centers is now costing him supporters from his own party. Recent attack ads have focused on the support he’s received from the tech industry, including more than $5 million in donations from Leading the Future, a $100 million pro-AI super PAC whose funders include Andreessen Horowitz and Joe Lonsdale of Palantir, according to the Tallahassee Democrat, as well as $500,000 from American Mission, which is itself funded by Leading the Future. Donalds appears to be staking out a middle ground between the industry that supports him and the voters whose support he needs to win the primary. On Monday, he announced legislation that would prevent data centers from driving up utility costs.
+Opposition to data centers is widespread throughout the state. More than 20 counties and municipalities throughout the state have discussed or passed moratoria on data center construction, Politico reports. In some communities, the backlash has been strong enough to deter developers. In June, the sponsor behind a controversial data center proposal in Citrus County withdrew its plan to build an 800-acre data center in the community after the county commission approved a one-year moratorium on rezoning applications for data centers.
+“Unfortunately, local moratoriums on data centers would send a signal that the area is closed for business, both for data centers and for other significant economic development projects,” Dan Diorio, executive vice president of state policy and government affairs at the Data Center Coalition, an industry lobbying group, told The Verge. But that’s exactly what Zirhut and other organizers want.
+Zirhut explained that she’s not anti-growth, but she doesn’t want the government to give handouts to major developers who have no ties to the community. “If we could keep it local, with local builders, that would be fine because they know what to do with Florida,” she said. “Even our agriculture commissioner” — Wilton Simpson, a Republican — “is having people come in and use herbicides and pesticides, spraying our lakes and killing all our vegetation.” She’s concerned about how AI can fuel mass surveillance, an issue that became especially salient after the Hernando County Sheriff’s Office started installing them on local roads.
+“We don’t want people to lose jobs, and our country to be run by AI, and live like people in China, where our money is controlled and everything we do is looked at,” she said.
+Though Zirhut is a lifelong Republican, the data center issue — and the bigger question of development — has led to some unexpected political compromises for her.
+“If Byron Donalds wins the primary, I’m voting Democrat. I will not vote for him,” she told me, adding that she’d also be willing to vote for an independent candidate who opposed data centers. “I think a lot of people are like that. It’s not about the party. It’s not. It’s about human life.”
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":19997,"paragraph_count":50,"sentence_count":140,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community. There was no immediate threat - the Hernando County commission had unanimously approved a one-year moratorium on such developments in June [&#8230;]
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The right-wing boomers protesting data centers have a lot in common with the left The conservative backlash to hyperscale facilities is about jobs, the environment, quality of life — and China.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   There was no immediate threat — the Hernando County commission had unanimously approved a one-year moratorium on such developments in June — but the organizers weren’t satisfied.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   A temporary pause wouldn’t be enough.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   They wanted a ban.
+
+## business_elements
+
+- companies: The Verge AI
+- products: ChatGPT
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗, 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 8230, 71, 15 m, 150, 10, 75, 6, 000
+- quotes: We are going to fight, fight, fight, / How would you like to have one by you? If you live within 15 minutes of a data center, night and day you’re going to hear: EEEEENNNNNNHHHHHHHHHHHH. / ChatGPT told her to. / She consults with ChatGPT what time she should wake up in the morning, what time she should go to bed, who should be her friends, / conservative social movement that is dedicated to ensuring that the future of AI is in the hands of everyday people.
+
+## evidence_seed
+
+- company_actions: On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community. There was no immediate threat - the Hernando County commission had unanimously approved a one-year moratorium on such developments in June [&#8230;] / The right-wing boomers protesting data centers have a lot in common with the left The conservative backlash to hyperscale facilities is about jobs, the environment, quality of life — and China. / On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: supporting commercial context only
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+On a gray, humid Saturday morning in central Florida, a little under a dozen people gathered outside the Spring Hill Branch Library to protest the construction of a hyperscale data center in their community. There was no immediate threat - the Hernando County commission had unanimously approved a one-year moratorium on such developments in June [&#8230;]
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
