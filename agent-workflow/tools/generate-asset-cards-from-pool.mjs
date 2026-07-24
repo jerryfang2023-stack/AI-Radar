@@ -450,7 +450,8 @@ function ensureDir(file) {
 
 function write(file, text) {
   ensureDir(file);
-  fs.writeFileSync(file, `${text.trimEnd()}\n`, "utf8");
+  const normalized = String(text).replace(/[ \t]+$/gmu, "").trimEnd();
+  fs.writeFileSync(file, `${normalized}\n`, "utf8");
 }
 
 function signalCardDirs() {
@@ -1021,8 +1022,20 @@ function sourceExcerptFromSection(section, points = []) {
   return points.find(sourcePointReadyForPublic) || firstRaw || sourceTitleFactFromSection(section) || "";
 }
 
+function stripLeadingSourceTitleRepeats(value = "", sourceTitle = "") {
+  let text = String(value || "").replace(/\s+/gu, " ").trim();
+  const title = String(sourceTitle || "").replace(/\s+/gu, " ").trim();
+  if (!text || !title) return text;
+  for (let index = 0; index < 2; index += 1) {
+    if (!text.toLocaleLowerCase("en-US").startsWith(title.toLocaleLowerCase("en-US"))) break;
+    text = text.slice(title.length).replace(/^[\s#|:—–-]+/u, "").trim();
+  }
+  return text;
+}
+
 function rawVisibleExcerptFromSection(section, excluded = []) {
   const raw = readRawJson(section);
+  const sourceTitle = originalSourceTitleFromSection(section);
   const excludedKeys = excluded.map(normalizedSignalText).filter(Boolean);
   const isTooSimilar = (item) => {
     const normalized = normalizedSignalText(item);
@@ -1044,6 +1057,7 @@ function rawVisibleExcerptFromSection(section, excluded = []) {
     ...rawExcerpts.flatMap(sourceDetailClauses),
     ...sourceDetailClauses(raw.full_text || raw.clean_text || ""),
   ]
+    .map((item) => stripLeadingSourceTitleRepeats(item, sourceTitle))
     .map((item) => String(item || "").replace(/\s+/gu, " ").trim())
     .filter((item) => item.length >= 36 && item.length <= 420)
     .filter((item) => !/Bounded direct-source recall|QC-reviewed original evidence|raw_entry_reason|curated_original_source/iu.test(item))
@@ -1051,7 +1065,6 @@ function rawVisibleExcerptFromSection(section, excluded = []) {
     .filter((item) => !sourcePointLooksPageChrome(item))
     .filter((item) => !sourcePointLooksSplitFragment(item))
     .filter((item) => !isTooSimilar(item));
-  const sourceTitle = originalSourceTitleFromSection(section);
   return candidates[0] || (sourceTitle && !isTooSimilar(sourceTitle) ? sourceTitle : "");
 }
 
@@ -4151,6 +4164,14 @@ function runQualityRegressionFixtures() {
     "priced service agreements must not be localized as financing facts",
   );
 
+  assert.equal(
+    stripLeadingSourceTitleRepeats(
+      "Elice Group Builds Nation's First Edge AI Data Center with GPUs, Domestic NPUs # Elice Group Builds Nation's First Edge AI Data Center with GPUs, Domestic NPUs Project combines GPUs for training, domestic NPUs for inference in an industrial complex pilot",
+      "Elice Group Builds Nation's First Edge AI Data Center with GPUs, Domestic NPUs",
+    ),
+    "Project combines GPUs for training, domestic NPUs for inference in an industrial complex pilot",
+    "repeated source-title prefixes must not hide a distinct visible source excerpt",
+  );
   const tradeSecretLawsuitFixture = [
     "## P-991｜Apple sues OpenAI over former engineer trade secrets",
     "- source_url: https://example.com/apple-sues-openai-trade-secrets",

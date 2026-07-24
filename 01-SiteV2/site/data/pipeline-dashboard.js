@@ -1,6 +1,6 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
-    "generatedAt": "2026-07-24T01:28:13.546Z",
+    "generatedAt": "2026-07-24T13:21:47.644Z",
     "dateRange": {
       "start": "2025-10-13",
       "end": "2026-07-24"
@@ -17,9 +17,10 @@ window.WaveSightPipelineDashboard = {
       "assets": {
         "case": 16,
         "funding": 3,
-        "product-service": 19
+        "product-service": 19,
+        "opinion": 13
       },
-      "cards": 38,
+      "cards": 51,
       "rawChannels": {
         "aihot": 98,
         "keyword_search": 36,
@@ -101,9 +102,10 @@ window.WaveSightPipelineDashboard = {
       "assets": {
         "case": 11,
         "funding": 9,
-        "product-service": 10
+        "product-service": 10,
+        "opinion": 30
       },
-      "cards": 30,
+      "cards": 60,
       "rawChannels": {
         "aihot": 92,
         "keyword_search": 39,
@@ -566,9 +568,10 @@ window.WaveSightPipelineDashboard = {
     "assets": {
       "case": 16,
       "funding": 3,
-      "product-service": 19
+      "product-service": 19,
+      "opinion": 13
     },
-    "cards": 38,
+    "cards": 51,
     "rawChannels": {
       "aihot": 98,
       "keyword_search": 36,
@@ -648,20 +651,20 @@ window.WaveSightPipelineDashboard = {
       "case": 478,
       "funding": 170,
       "product-service": 461,
-      "opinion": 1649,
+      "opinion": 1692,
       "trend": 6,
       "scene": 3,
       "change": 14
     }
   },
   "opinionTimelines": {
-    "timelineFiles": 786,
+    "timelineFiles": 812,
     "people": 46,
-    "detailBlocks": 1649
+    "detailBlocks": 1692
   },
   "latestRelation": null,
   "engineQuality": {
-    "updatedAt": "2026-07-24T01:28:13.657Z",
+    "updatedAt": "2026-07-24T13:21:47.743Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [

@@ -43,6 +43,7 @@ source: community-intelligence
 - 分类：商业机会｜交付与服务自动化
 - 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
 - 标签：#交付与服务自动化 #内容与自媒体 #飞书 #待确认
+- 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/22255421211858851)
 分享一个最近做 Agent 的心得：矫枉，就要过正
 - 价值判断：可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：交付标准化与复购 / 知识沉淀与效率 / 内容生产与账号增长
 ### 5. 【11期破局行动结营仪式】7月31日20:00，与你共同见证这21天的真实变化 从7月10日开营到现在，不知不觉，十多天已经过去了。
@@ -64,14 +65,16 @@ source: community-intelligence
 - 分类：商业机会｜获客营销与转化
 - 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
 - 标签：#获客营销与转化 #企业服务 #飞书 #订单成交-/-收费变现
+- 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/45544258445424858)
 50 粉小红书账号，3 条笔记，3 天成交 1 万+：我是如何从一句“能不能代贴 Poster”，发现一门高客单生意的 先说结果： 有一个 50 个左右粉丝的小红书账号，前后一共发了 3 条和学术会议相关的笔记
-- 价值判断：结果信号：成交 1 万+：我是如何从一句“能不能代贴 Poster”；可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：交付标准化与复购 / 工具配置与AI基建门槛 / 内容生产与账号增长；资料链接：1 个
+- 价值判断：结果信号：成交 1 万+：我是如何从一句“能不能代贴 Poster”；可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：获客成本与精准线索 / 交付标准化与复购 / 知识沉淀与效率 / 工具配置与AI基建门槛 / 内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://my.feishu.cn/wiki/C2BJwQay3i7sXPkPp3McyBMtnMg?from=from_copylink)
 ### 8. 如何用Codex搭建个人IP内容创作系统
 - 来源：生财有术｜1天前
 - 分类：商业机会｜获客营销与转化
 - 命中关键词：SOP / 知识库 / Codex / Claude Code / n8n / Dify / Coze / Cursor
 - 标签：#获客营销与转化 #企业服务 #Codex #Obsidian #飞书 #订单成交-/-收费变现
+- 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/55522452885812484)
 如何用Codex搭建个人IP内容创作系统 如何用Codex搭建自己的IP内容创作系统，背后的底层架构是Codex + obsidian + hermes + 飞书CLI，搭建起一套能变现的，随时调用、进步的商业闭环Agent
 - 价值判断：可复用方法：沉淀成SOP/模板 / 内容获客路径 / 知识库 + Agent 工作流；痛点：获客成本与精准线索 / 知识沉淀与效率 / 内容生产与账号增长；资料链接：2 个
 - 资料：[资料 1](https://my.feishu.cn/wiki/DerKwzHddiHAnVkHPSmcw6MqnNc?from=from_copylink) · [资料 2](https://my.feishu.cn/wiki/DerKwzHddiHAnVkHPSmcw6Mq)

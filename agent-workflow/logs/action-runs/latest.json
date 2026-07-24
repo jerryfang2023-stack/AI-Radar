@@ -1,47 +1,41 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-19T10:58:19.385Z",
-  "date": "2026-07-19",
-  "action": "Trend Radar V1 application release",
+  "generated_at": "2026-07-24T11:54:12.117Z",
+  "date": "2026-07-24",
+  "action": "Hermes FLV run ownership misclassification repair",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "user-request",
+  "trigger": "manual",
   "status": "success",
-  "summary": "Built and audited an evidence-backed daily, weekly, and monthly factual change explorer as an independent Application Center column.",
-  "contexts": [
-    "context/12-data-center-v4.md",
-    "context/frontstage-page-contracts.md",
-    "agent-workflow/product/trend-radar-v1-contract.md"
-  ],
+  "summary": "Confirmed Run 30058480613 is Business Signals, verified the 2026-07-24 afternoon report/output on origin/main, and prohibited cross-lane inference before afternoon_skill_runner handoff.",
+  "contexts": [],
   "changed_files": [
-    "01-SiteV2/site/trend-radar.html",
-    "01-SiteV2/site/scripts/build-trend-radar-frontstage.mjs",
-    "agent-workflow/tools/assert-trend-radar-v1.mjs",
-    "agent-workflow/skills/guanlan-trend-radar-updater/SKILL.md",
-    ".github/workflows/daily-persistent-assets-pr.yml"
+    "context/11-hermes-daily-supervision-instructions.md",
+    "agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md",
+    "agent-workflow/tools/write-daily-supervision-report.mjs",
+    "agent-workflow/tools/run-follow-builders-skill.ps1",
+    "agent-workflow/tools/install-follow-builders-skill-task.ps1",
+    "agent-workflow/tools/tests/daily-supervision-follow-builders.test.mjs"
   ],
-  "outputs": [
-    "trend-radar-v1.json",
-    "TRADAR-V1.0.0-factual-change-explorer",
-    "Skill Store v1.6.4"
-  ],
+  "outputs": [],
   "checks": [
-    "111 data tests",
-    "40 frontstage and Trend Radar tests",
-    "15 Skill Ops tests",
-    "three-viewport browser smoke",
-    "version consistency",
-    "current-rule hygiene"
+    "gh run view 30058480613",
+    "origin/main exact-date artifact check",
+    "node --test agent-workflow/tools/tests/daily-supervision-follow-builders.test.mjs",
+    "npm run repair:skills"
   ],
-  "issues": [],
+  "issues": [
+    "Hermes attributed a Business Signals workflow to the independent FLV afternoon lane",
+    "Hermes ignored exact-date files already merged to origin/main"
+  ],
   "risks": [],
   "lessons": [
-    "Compare calendar periods only across equal observed batch windows",
-    "Use verified RELATION-V2 serves evidence for product entering use"
+    "Workflow success or failure is evidence only for the lane that owns that workflow"
   ],
   "reusable_rules": [
-    "Trend Radar is a downstream factual projection and cannot block canonical V4 persistence",
-    "Every structural item resolves to events and original sources"
+    "Before afternoon_skill_runner",
+    "refresh origin/main and verify the exact-date report/output pair",
+    "Never infer afternoon failure from Business Signals or morning FLV runs"
   ],
   "retired_flags": [],
   "notes": []

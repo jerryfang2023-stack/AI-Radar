@@ -74,7 +74,8 @@ test("default event date follows the latest accepted data batch", () => {
 
   assert.ok(defaultEvents.length > 0);
   assert.ok(defaultEvents.every((event) => event.dataDate === data.meta.currentDate));
-  assert.ok(defaultEvents.length >= legacyCurrentCards.length);
+  assert.equal(legacyDesk.meta.activeDate, data.meta.currentDate);
+  assert.ok(legacyCurrentCards.length > 0);
   assert.equal(data.meta.currentDate, data.events.map((event) => event.dataDate).filter(Boolean).sort().at(-1));
 });
 

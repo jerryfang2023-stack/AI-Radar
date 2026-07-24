@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "date": "2026-07-24",
+  "status": "passed",
+  "failure_categories": [],
+  "gates": [
+    {
+      "id": "editorial_quality",
+      "label": "Signal Card editorial quality gate",
+      "script": "agent-workflow/tools/assert-signal-card-editorial-quality.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "date": "2026-07-24",
+        "card_count": 38,
+        "problems": []
+      }
+    },
+    {
+      "id": "source_first",
+      "label": "V3 source-first frontstage gate",
+      "script": "agent-workflow/tools/assert-v3-source-first-frontstage.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "status": "passed",
+        "checked_file": "01-SiteV2/site/data/v3-data-observation-desk.json",
+        "card_count": 969,
+        "frontstage_card_count": 968,
+        "issue_count": 0,
+        "issues": []
+      }
+    },
+    {
+      "id": "three_block_contract",
+      "label": "Business Signals three-block contract",
+      "script": "agent-workflow/tools/assert-business-signals-three-block-contract.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "date": "2026-07-24",
+        "active_date": "2026-07-24",
+        "active_card_count": 38,
+        "relationship_node_count": 28,
+        "relationship_edge_count": 27,
+        "today_trend_candidate_count": 0,
+        "no_trend_candidate_decision": true,
+        "problems": []
+      }
+    },
+    {
+      "id": "frontstage_regression",
+      "label": "Frontstage regression gate",
+      "script": "agent-workflow/tools/frontstage-regression-gate.mjs",
+      "status": "passed",
+      "exit_code": 0,
+      "parsed": {
+        "ok": true,
+        "status": "passed",
+        "issue_count": 0,
+        "report": "agent-workflow/reports/frontstage-regression-gate-20260724132259.md"
+      }
+    }
+  ],
+  "report": "agent-workflow/reports/2026-07-24-business-signals-frontstage-gate.md"
+}
