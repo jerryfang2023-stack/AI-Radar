@@ -1,0 +1,25 @@
+{
+  "name": "maisa-case-study-video",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "media": "node scripts/generate-media.mjs",
+    "studio": "remotion studio",
+    "still": "remotion still src/index.ts MaisaCaseStudy out/maisa-case-study-cover.png --frame=75",
+    "render": "remotion render src/index.ts MaisaCaseStudy out/maisa-case-study-1080p.mp4 --codec=h264 --crf=18 --audio-bitrate=192k"
+  },
+  "dependencies": {
+    "@remotion/captions": "4.0.496",
+    "@remotion/cli": "4.0.496",
+    "@remotion/media": "4.0.496",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "remotion": "4.0.496"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^5.9.0"
+  }
+}
