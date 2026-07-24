@@ -1,15 +1,14 @@
 ---
 type: opinion_person_timeline
 person_name: "Nan Yu"
-opinion_count: 42
-latest_date: 2026-07-22
+opinion_count: 40
+latest_date: 2026-07-16
 ---
 
 # Nan Yu 观点时间线
-共 42 条观点，按人物 + 日期文件聚合。
+共 40 条观点，按人物 + 日期文件聚合。
 ## 日期
 
-- [2026-07-22](./2026-07-22.md)
 - [2026-07-16](./2026-07-16.md)
 - [2026-07-13](./2026-07-13.md)
 - [2026-07-10](./2026-07-10.md)
