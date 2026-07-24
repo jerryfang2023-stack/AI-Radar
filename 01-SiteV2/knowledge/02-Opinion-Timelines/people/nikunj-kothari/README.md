@@ -1,12 +1,12 @@
 ---
 type: opinion_person_timeline
 person_name: "Nikunj Kothari"
-opinion_count: 91
+opinion_count: 93
 latest_date: 2026-07-22
 ---
 
 # Nikunj Kothari 观点时间线
-共 91 条观点，按人物 + 日期文件聚合。
+共 93 条观点，按人物 + 日期文件聚合。
 ## 日期
 
 - [2026-07-22](./2026-07-22.md)
