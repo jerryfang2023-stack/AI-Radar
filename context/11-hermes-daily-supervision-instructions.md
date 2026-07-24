@@ -34,7 +34,7 @@ Hermes should do this every Asia/Shanghai production day:
 3. Daily Problem Watchdog records failed production workflows into dated reports and Hermes inbox items. It must not dispatch recovery or start another full-chain run.
 4. Before 10:00 use Business Signals compatibility Card health as a target checkpoint: same-date active data, `BSIG-V2.2.0-pipeline-stage-ownership` unified compatibility Cards present, AI Hardware lens-only items not counted as formal Cards, no placeholder/source-domain titles, no Top10/candidate split, and FDE compatibility items respecting `EAI-V1.2.0-raw-card-ingestion-boundary`. Do not lower gates to hit the checkpoint or confuse this count with public V4 events.
 5. 09:50 use the consolidated closure report to check PR / merge / GitHub Pages, Dashboard freshness, safe repairs, and any targeted Codex handoff. Treat queued / in-progress runs as Waiting.
-6. 16:30 record the follow-builders skill publish: check the local publish report and builders viewpoints output for the afternoon skill lane.
+6. 16:30 record the follow-builders skill publish: check the exact-date local publish report and builders viewpoints output, then refresh and check the same paths on `origin/main` before declaring them missing. A Business Signals run or morning First-Line workflow is not evidence that the independent afternoon skill did or did not run.
 7. For every failure, write cause, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
 8. Never lower gates, edit generated data directly, push to `main`, dispatch recovery, or loop blind reruns.
 

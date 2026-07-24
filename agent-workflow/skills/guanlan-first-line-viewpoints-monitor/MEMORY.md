@@ -7,6 +7,11 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - Repeated English or mistranslated primary text was caused by treating translation as an optional fallback and allowing legacy public-MT cache entries. Production now requires DeepSeek credentials, matching source hashes, model provenance, and a fidelity gate; missing or incomplete translation blocks publication.
 - Flash owns titles and short text. Pro owns long/complex text and quality retries. Provider failure must be surfaced immediately instead of hidden behind untranslated source text.
 
+## 2026-07-24 Afternoon Scheduler Observability
+
+- A single 16:10 interactive Windows trigger with `WakeToRun=false` can miss an afternoon archive while the 09:50 supervisor has already marked the not-yet-due lane `passed`. The task must wake the machine, retry bounded failures, and force a post-run supervision refresh.
+- Exact-date afternoon reports and outputs already merged to `origin/main` outrank a stale working tree. Historical morning health is proved by the exact-date passed gate plus successful manifest, not by comparing the current mutable JSON date to an older audit date.
+
 ## 2026-06-21 Supervision Classification
 
 - First-Line morning RSS health is local-data-first: if `follow-builders-daily.json` is same-date, remarks and builders meet floors, and `assert-follow-builders-data` passes, the public lane is healthy even when GitHub workflow lookup has no same-date run.

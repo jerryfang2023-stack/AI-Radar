@@ -104,6 +104,11 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Pass when routine daily supervision reuses the accepted committed history asset and only rebuilds/translates history for an explicit backfill or repair.
     - Fail when every daily run performs an unnecessary network translation backfill or substitutes history generation for the current morning refresh.
 
+25. `afternoon_scheduler_and_supervision_closure`
+    - Pass when the 16:10 Windows task has wake-on-sleep and bounded failure retries, and the runner forces a same-date Hermes supervision refresh after either success or failure.
+    - Pass when pre-16:30 supervision reports a missing afternoon artifact as `waiting`, and when a stale working tree can verify an exact-date report/output pair from refreshed `origin/main`.
+    - Fail when a sleeping machine can silently miss the only trigger, when the 09:50 report marks an unrun afternoon lane `passed`, or when merged exact-date artifacts are reported missing only because the current checkout is stale.
+
 ## Repair Loop
 
 When a check fails, repair the current source, historical backfill, V4 projection, gate, or timeline sync path. Do not unblock the lane by weakening translation, source URL, AI relevance, opinion tags, dedupe, or idempotency requirements.
