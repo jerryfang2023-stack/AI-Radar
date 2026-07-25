@@ -1,14 +1,14 @@
 ---
 name: guanlan-community-intelligence-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI SITE-V4.2.0 Community Intelligence lane at CINT-V1.0.2-publication-waiting-gate. Covers local logged-in collection, archive generation, community data gate, local publish handoff, Waiting-vs-Problem publication checks, GitHub publish PR, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals facts, Signal Cards, relationship graph evidence, trend candidates, or First-Line Viewpoints.
+description: Use when supervising, running, repairing, or improving the WaveSight AI SITE-V4.2.0 Community Intelligence lane at CINT-V1.0.2-publication-waiting-gate. Covers local logged-in collection, archive generation, community data gate, local publish handoff, Waiting-vs-Problem publication checks, GitHub publish PR, production-incident closure, and lane-specific self-improvement. Do not use for Business Signals facts, Signal Cards, relationship graph evidence, trend candidates, or First-Line Viewpoints.
 metadata:
   guanlan:
-    version: "1.0.5"
+    version: "1.0.6"
     lane: "Community Intelligence"
     status: "current lane owner"
     order: 30
     responsibility: "Own Community Intelligence supervision and repair: local logged-in collection, archive outputs, community data gate, and publication handoff."
-    upstream: "local Windows collection, community publish workflow, Hermes inbox"
+    upstream: "local Windows collection, community publish workflow, production incident registry"
     downstream: "community frontstage data, archive snapshots, community PR publication"
     gates: "local collection availability, community data assertion, archive presence, publication completeness"
     recent_learning: "Healthy same-date community data with an open PR or queued publish workflow is Waiting, not a collection failure or repair inbox."
@@ -25,7 +25,7 @@ This skill owns the Community Intelligence lane. It supervises local logged-in c
 - Local logged-in collection: 08:30 Asia/Shanghai via Windows task `WaveSight Community Intelligence Daily`.
 - Successful local collection owns the archive, gate, and publish handoff.
 - Consolidated recovery: 09:15 Asia/Shanghai validates local data and records local Chrome/login repair when missing. GitHub publication is dispatch-only for targeted repair.
-- Daily Problem Watchdog records failed publish runs to Hermes inbox. It must not rerun local collection or dispatch recovery.
+- Daily Problem Watchdog records failed publish runs to the production incident registry. It must not rerun local collection or dispatch recovery.
 - GitHub Actions can publish validated community files, but cannot replace local Chrome / logged-in collection.
 - Do not classify same-date data as missing before the first Community Intelligence check window. Before 08:45 Asia/Shanghai, stale data is normally yesterday's completed state unless a local collector failure log already exists.
 
@@ -38,7 +38,7 @@ Read only what is needed:
 3. `context/version-ledger.md`
 4. `context/08-v3-3-automation.md`
 5. `context/09-v3-3-current-action-index.md`
-6. Relevant Community Intelligence report, Hermes inbox item, local log, workflow log, or gate output.
+6. Relevant Community Intelligence report, production incident, legacy Hermes record, local log, workflow log, or gate output.
 
 For implementation detail, read:
 
@@ -54,7 +54,7 @@ For regression prevention, read `evals/community-intelligence-monitor-evals.md`.
 
 0. After local collection and before archive generation, run `npm run translate:community-intelligence -- --date=<YYYY-MM-DD>`. English title, summary, and excerpt fields use DeepSeek Flash by default and Pro for long text or quality retry. Preserve `*Original`, model provenance, and `translationSourceHash`; failed translation blocks publication.
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
-2. Check daily supervision and Hermes inbox for the Community Intelligence lane.
+2. Check Daily Closure and the production incident registry for the Community Intelligence lane.
 3. Confirm whether local collection ran and whether the local Chrome / login state was available.
 4. Validate community data with `npm run assert:community-intelligence -- --date=<YYYY-MM-DD>`.
 5. Confirm archive outputs and daily snapshots exist.
@@ -62,7 +62,7 @@ For regression prevention, read `evals/community-intelligence-monitor-evals.md`.
 7. Treat local collection success without PR / merge / Pages publication as incomplete publication.
 8. When same-date data, archive, and gate are healthy, report open PRs or queued / in-progress publish workflows under Waiting, not Problems.
 9. Add or tighten evals before adding long prose when a failure recurs.
-10. Close Hermes inbox items only after validation and prevention are recorded.
+10. Close production incidents only after validation and prevention are recorded.
 11. Reject any English primary field, stale source hash, missing DeepSeek model provenance, or translated record whose original was discarded.
 
 ## Failure Router
@@ -76,7 +76,7 @@ Classify Community Intelligence failures by the earliest broken stage. Do not re
 | Local gate failed | Same-date data exists but `assert-community-intelligence-data.mjs` fails | Fix data shape, item/link floors, collector errors, or archive outputs, then rerun the gate. |
 | Publish workflow failed before gate | GitHub publish run fails while same-date local files are absent or stale on `main` | Stop GitHub retries; run local collection / archive first. |
 | Publish workflow shell / PR failure | Local data is healthy, but publish workflow fails in shell, branch, PR, auto-merge, or permissions | Repair workflow / PR handling only; do not rerun browser collection unless local data changed. |
-| Publication waiting | Same-date local data, archive, and gate are healthy, and a same-date PR is open or publish workflow is queued / in progress | Report Waiting and recheck; do not create a Hermes repair inbox or rerun collection. |
+| Publication waiting | Same-date local data, archive, and gate are healthy, and a same-date PR is open or publish workflow is queued / in progress | Report Waiting and recheck; do not create a production incident or rerun collection. |
 | Published but not deployed | PR merged but Pages is not updated yet | Wait for Pages or inspect GitHub Pages workflow; local collection is already complete. |
 
 ## 2026-06-08 To 2026-06-14 Review Lessons
@@ -96,15 +96,15 @@ The preferred before-10:00 path is:
 2. 09:15 consolidated recovery checks only local output and gate presence. If missing, classify as local collection missing and hand off to Codex / human local repair.
 3. Healthy same-date data is a no-op; do not recollect it.
 4. 09:50 closure checks publication. If local output exists but publish is missing, record a targeted problem instead of rerunning collection.
-5. Daily Problem Watchdog records failed publish workflows to Hermes inbox and never retries the browser collector in GitHub.
+5. Daily Problem Watchdog records failed publish workflows to the production incident registry and never retries the browser collector in GitHub.
 6. 09:50 closure confirms PR merge and Pages. If Pages is still queued / in progress, report waiting rather than local failure.
 
 ## 2026-06-30 Publication Waiting Rule
 
 - Same-date local data, daily snapshot, Obsidian archive, selected keywords, links, and `assert:community-intelligence` passing are enough to mark collection healthy.
 - An open same-date Community Intelligence PR or queued / in-progress publish workflow after healthy local data is a Waiting state, not a Problem.
-- Waiting-only publication state must not create Hermes repair inbox items.
-- If a later same-date PR merges and Pages succeeds, resolve stale Hermes red states without recollecting.
+- Waiting-only publication state must not create production incidents.
+- If a later same-date PR merges and Pages succeeds, resolve stale production incidents without recollecting.
 
 ## Lane Boundaries
 
@@ -126,4 +126,4 @@ When finishing, report:
 - Waiting vs Problems split when publication is still open or queued;
 - files changed;
 - prevention artifact added or not needed;
-- Hermes inbox item status.
+- production incident status.

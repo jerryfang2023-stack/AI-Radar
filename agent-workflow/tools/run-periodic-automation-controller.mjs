@@ -134,7 +134,7 @@ function workerRun(kind) {
 function writeWeeklyEscalation(payload) {
   const escalations = payload?.loopEscalations || [];
   if (!escalations.length) return "";
-  const inbox = path.join(root, "agent-workflow", "inbox", "hermes-to-codex", `${date}-skill_ops-weekly-learning-loop.md`);
+  const inbox = path.join(root, "agent-workflow", "inbox", "production-incidents", `${date}-skill_ops-weekly-learning-loop.md`);
   if (/^status:\s*resolved$/imu.test(fs.existsSync(inbox) ? fs.readFileSync(inbox, "utf8") : "")) return rel(inbox);
   writeText(inbox, [
     "status: open", "priority: medium", "lane: skill_ops", `created_at: ${new Date().toISOString()}`,

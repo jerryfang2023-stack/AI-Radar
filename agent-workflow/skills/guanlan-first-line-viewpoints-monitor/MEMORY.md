@@ -16,7 +16,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 
 - First-Line morning RSS health is local-data-first: if `follow-builders-daily.json` is same-date, remarks and builders meet floors, and `assert-follow-builders-data` passes, the public lane is healthy even when GitHub workflow lookup has no same-date run.
 - A missing same-date GitHub fallback run is not a failure when local 08:30 data / gate already passed. Report it only as observability or local automation evidence, not as a reason to dispatch another RSS workflow.
-- After local repair writes the same-date gate, rerun daily supervision or resolve the stale Hermes inbox. Do not let a pre-repair missing-gate report override the newer passed gate.
+- After local repair writes the same-date gate, rerun Daily Closure or resolve the stale production incident. Do not let a pre-repair missing-gate report override the newer passed gate.
 
 ## 2026-06-30 Original-Date Sync And Publish Reports
 
@@ -31,7 +31,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 
 ## 2026-06-13
 
-- The afternoon `run-follow-builders-skill.ps1` task is the first validation point for the local publish route. If it shells out with PowerShell array splatting incorrectly, Hermes will report a missing same-date publish report and missing `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` even when the skill data itself is healthy.
+- The afternoon `run-follow-builders-skill.ps1` task is the first validation point for the local publish route. If it shells out with PowerShell array splatting incorrectly, lane supervision will report a missing same-date publish report and missing `01-SiteV2/content/07-points/<date>-builders-viewpoints.md` even when the skill data itself is healthy.
 
 ## 2026-06-14
 

@@ -30,14 +30,15 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `context/08-v3-3-automation.md` | SITE-V4.2 GitHub / site / local Obsidian automation loop | GitHub Actions, data sync, local sync |
 | `context/09-v3-3-current-action-index.md` | Current action registry, including internal compatibility actions | Action dispatch and automation recovery |
 | `context/10-v3-3-experience-automation.md` | Action logging and retrospective automation | Record meaningful actions, summarize mistakes and lessons |
-| `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision instructions | Daily monitoring supervision, Codex repair handoff |
+| `context/11-hermes-daily-supervision-instructions.md` | Hermes control-plane watchdog instructions | Controller liveness only; no lane supervision or repair |
 | `context/12-data-center-v4.md` | Current Data Center V4 contract and factual production boundary | Raw / Claim / Event / FDE / hardware / tags / database work |
 
 ## Current Inboxes
 
 | Path | Purpose |
 |---|---|
-| `agent-workflow/inbox/hermes-to-codex/` | File-based Hermes repair requests for Codex |
+| `agent-workflow/inbox/production-incidents/` | Current neutral production and control-plane incident registry |
+| `agent-workflow/inbox/hermes-to-codex/` | Legacy Hermes repair-request history; current readers retain compatibility |
 
 ## Current Skills
 

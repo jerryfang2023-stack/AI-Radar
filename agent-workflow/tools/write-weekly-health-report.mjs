@@ -6,7 +6,10 @@ import { spawnSync } from "node:child_process";
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const actionLogDir = path.join(root, "agent-workflow", "logs", "action-runs");
-const hermesInboxDir = path.join(root, "agent-workflow", "inbox", "hermes-to-codex");
+const incidentInboxDirs = [
+  path.join(root, "agent-workflow", "inbox", "production-incidents"),
+  path.join(root, "agent-workflow", "inbox", "hermes-to-codex"),
+];
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {
@@ -187,47 +190,46 @@ function collectDailyReports() {
   return { laneTotals, recurringProblems, recurringWarnings, reportRows, missingReports };
 }
 
-function collectHermesIncidents() {
+function collectProductionIncidents() {
   const incidents = [];
   const categoryCounts = new Map();
   const laneCounts = new Map();
   const unresolved = [];
 
-  if (!fs.existsSync(hermesInboxDir)) {
-    return { incidents, categoryCounts, laneCounts, unresolved };
-  }
+  for (const incidentInboxDir of incidentInboxDirs) {
+    if (!fs.existsSync(incidentInboxDir)) continue;
+    for (const entry of fs.readdirSync(incidentInboxDir, { withFileTypes: true })) {
+      if (!entry.isFile() || !entry.name.endsWith(".md")) continue;
+      if (/^(README|TEMPLATE)\.md$/iu.test(entry.name)) continue;
 
-  for (const entry of fs.readdirSync(hermesInboxDir, { withFileTypes: true })) {
-    if (!entry.isFile() || !entry.name.endsWith(".md")) continue;
-    if (/^(README|TEMPLATE)\.md$/iu.test(entry.name)) continue;
+      const file = path.join(incidentInboxDir, entry.name);
+      const text = readText(file);
+      const fields = parseKeyValueHeader(text);
+      const date = entry.name.match(/^(\d{4}-\d{2}-\d{2})/u)?.[1]
+        || fields.created_at?.slice(0, 10)
+        || "";
+      if (!inWindow(date)) continue;
 
-    const file = path.join(hermesInboxDir, entry.name);
-    const text = readText(file);
-    const fields = parseKeyValueHeader(text);
-    const date = entry.name.match(/^(\d{4}-\d{2}-\d{2})/u)?.[1]
-      || fields.created_at?.slice(0, 10)
-      || "";
-    if (!inWindow(date)) continue;
+      const categories = incidentCategories(text, fields);
+      const incident = {
+        date,
+        file: rel(file),
+        status: fields.status || "unknown",
+        priority: fields.priority || "",
+        lane: fields.lane || "unknown",
+        failed_gate: fields.failed_gate || "",
+        report_path: fields.report_path || "",
+        data_generated: fields.data_generated || "",
+        needed_action: fields.needed_action || "",
+        categories,
+        resolved: /^(resolved|manual_archive|closed|done)$/iu.test(fields.status || ""),
+      };
 
-    const categories = incidentCategories(text, fields);
-    const incident = {
-      date,
-      file: rel(file),
-      status: fields.status || "unknown",
-      priority: fields.priority || "",
-      lane: fields.lane || "unknown",
-      failed_gate: fields.failed_gate || "",
-      report_path: fields.report_path || "",
-      data_generated: fields.data_generated || "",
-      needed_action: fields.needed_action || "",
-      categories,
-      resolved: /^resolved$/iu.test(fields.status || ""),
-    };
-
-    incidents.push(incident);
-    increment(laneCounts, incident.lane);
-    for (const category of categories) increment(categoryCounts, `${incident.lane}: ${category}`);
-    if (!incident.resolved) unresolved.push(incident);
+      incidents.push(incident);
+      increment(laneCounts, incident.lane);
+      for (const category of categories) increment(categoryCounts, `${incident.lane}: ${category}`);
+      if (!incident.resolved) unresolved.push(incident);
+    }
   }
 
   return { incidents, categoryCounts, laneCounts, unresolved };
@@ -275,11 +277,11 @@ function collectActionLogs() {
   return { records, issueCounts, riskCounts, failed, unregistered };
 }
 
-function buildLoopEscalations({ daily, hermes, actionLogs }) {
+function buildLoopEscalations({ daily, incidents, actionLogs }) {
   const escalations = [];
   const repeatedDailyProblems = Object.entries(daily.recurringProblems || {}).filter(([, count]) => count >= 2);
   const repeatedDailyWarnings = Object.entries(daily.recurringWarnings || {}).filter(([, count]) => count >= 2);
-  const repeatedHermesCategories = [...hermes.categoryCounts.entries()].filter(([, count]) => count >= 2);
+  const repeatedIncidentCategories = [...incidents.categoryCounts.entries()].filter(([, count]) => count >= 2);
   const repeatedActionIssues = [...actionLogs.issueCounts.entries()].filter(([, count]) => count >= 2);
   const repeatedActionRisks = [...actionLogs.riskCounts.entries()].filter(([, count]) => count >= 2);
 
@@ -289,8 +291,8 @@ function buildLoopEscalations({ daily, hermes, actionLogs }) {
   for (const [key, count] of repeatedDailyWarnings) {
     escalations.push(`Daily supervision recurring warning (${count}x): ${key}. Decide whether it should stay warning or become a gate.`);
   }
-  for (const [key, count] of repeatedHermesCategories) {
-    escalations.push(`Hermes incident category repeated (${count}x): ${key}. Add a regression eval and durable MEMORY entry if not already present.`);
+  for (const [key, count] of repeatedIncidentCategories) {
+    escalations.push(`Production incident category repeated (${count}x): ${key}. Add a regression eval and durable MEMORY entry if not already present.`);
   }
   for (const [key, count] of repeatedActionIssues) {
     escalations.push(`Action log issue repeated (${count}x): ${key}. Convert it into a reusable rule or validation check.`);
@@ -298,11 +300,11 @@ function buildLoopEscalations({ daily, hermes, actionLogs }) {
   for (const [key, count] of repeatedActionRisks) {
     escalations.push(`Action log risk repeated (${count}x): ${key}. Add a guardrail before the next production run.`);
   }
-  for (const incident of hermes.unresolved) {
-    escalations.push(`Unresolved Hermes incident: ${incident.file}. Repair and rerun the failed gate before closing.`);
+  for (const incident of incidents.unresolved) {
+    escalations.push(`Unresolved production incident: ${incident.file}. Repair and rerun the failed gate before closing.`);
   }
-  if (hermes.incidents.length && !actionLogs.records.some((record) => /repair|incident|failure|business-signal|business signal|source-first|top10/iu.test([record.action, record.summary].filter(Boolean).join(" ")))) {
-    escalations.push("Hermes incidents exist but action logs do not capture the repair loop. Record repair actions with `npm run record:action`.");
+  if (incidents.incidents.length && !actionLogs.records.some((record) => /repair|incident|failure|business-signal|business signal|source-first|top10/iu.test([record.action, record.summary].filter(Boolean).join(" ")))) {
+    escalations.push("Production incidents exist but action logs do not capture the repair loop. Record repair actions with `npm run record:action`.");
   }
 
   return escalations;
@@ -434,16 +436,16 @@ function writeReports(payload) {
     "",
     markdownMap(payload.daily.recurringWarnings, 2),
     "",
-    "## Hermes Incident Loop",
+    "## Production Incident Loop",
     "",
-    `- incidents_in_window: ${payload.hermes.incidents.length}`,
-    `- unresolved_incidents: ${payload.hermes.unresolved.length}`,
+    `- incidents_in_window: ${payload.incidents.incidents.length}`,
+    `- unresolved_incidents: ${payload.incidents.unresolved.length}`,
     "",
-    incidentTable(payload.hermes.incidents),
+    incidentTable(payload.incidents.incidents),
     "",
     "## Repeated Incident Categories",
     "",
-    markdownMap(payload.hermes.categoryCounts, 2),
+    markdownMap(payload.incidents.categoryCounts, 2),
     "",
     "## Action Log Loop",
     "",
@@ -494,11 +496,11 @@ function main() {
     recurringProblems: Object.fromEntries(dailyMaps.recurringProblems),
     recurringWarnings: Object.fromEntries(dailyMaps.recurringWarnings),
   };
-  const hermesMaps = collectHermesIncidents();
-  const hermes = {
-    ...hermesMaps,
-    categoryCounts: Object.fromEntries(hermesMaps.categoryCounts),
-    laneCounts: Object.fromEntries(hermesMaps.laneCounts),
+  const incidentMaps = collectProductionIncidents();
+  const incidents = {
+    ...incidentMaps,
+    categoryCounts: Object.fromEntries(incidentMaps.categoryCounts),
+    laneCounts: Object.fromEntries(incidentMaps.laneCounts),
   };
   const actionLogMaps = collectActionLogs();
   const actionLogs = {
@@ -508,7 +510,7 @@ function main() {
   };
   const github = collectGithubWorkflowHealth();
   const conflicts = collectConflictSignals();
-  const loopEscalations = buildLoopEscalations({ daily, hermes: hermesMaps, actionLogs: actionLogMaps });
+  const loopEscalations = buildLoopEscalations({ daily, incidents: incidentMaps, actionLogs: actionLogMaps });
   const actions = [];
 
   if (daily.missingReports.length) {
@@ -539,7 +541,7 @@ function main() {
       days: windowDays,
     },
     daily,
-    hermes,
+    incidents,
     actionLogs,
     loopEscalations,
     github,

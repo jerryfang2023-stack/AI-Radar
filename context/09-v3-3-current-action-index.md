@@ -87,7 +87,7 @@ Primary route:
 - Local consolidated controller: `WaveSight Morning Production Dispatch` at 08:10 Asia/Shanghai conditionally dispatches `.github/workflows/daily-persistent-assets-pr.yml` after a non-blocking preflight.
 - Targeted recovery: `WaveSight Daily Recovery Controller` at 09:15 checks accepted V4, active runs, First-Line, and Community health. Accepted V4 prevents a full-chain rerun even when compatibility data needs repair.
 - Cloud fallback: `.github/workflows/business-signals-health-dispatch.yml` remains a late conditional safety check; the primary production workflow itself is dispatch-only.
-- Daily Problem Watchdog: `.github/workflows/daily-recovery-watchdog.yml` records Business Signals failures to Hermes inbox without dispatching recovery or rerunning the full chain.
+- Daily Problem Watchdog: `.github/workflows/daily-recovery-watchdog.yml` records Business Signals failures to the neutral production incident registry without dispatching recovery or rerunning the full chain.
 - Dry run workflow: `.github/workflows/daily-production-chain-dry-run.yml`.
 
 Reads:
@@ -358,7 +358,7 @@ Boundaries:
 
 - The afternoon skill publish is independent from the morning RSS route.
 - It must still publish through a branch and PR instead of pushing generated files directly to `main`.
-- Hermes records the afternoon run from the local publish report at 16:30 and checks the Obsidian sync counts in that report.
+- The First-Line lane publisher records the afternoon run and Obsidian sync counts in its durable local publish report; Hermes does not supervise it.
 
 ### 9. Frontstage Data Build
 

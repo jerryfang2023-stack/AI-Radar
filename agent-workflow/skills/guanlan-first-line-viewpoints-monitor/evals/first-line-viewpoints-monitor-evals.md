@@ -31,12 +31,12 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Pass when the First-Line Viewpoints PR stages no Business Signals, relationship graph, trend candidate, or Community Intelligence data.
 
 9. `daily_problem_watchdog`
-   - Pass when Daily Problem Watchdog records First-Line Viewpoints failures to Hermes inbox after the 08:30 local Codex RSS collection/build/sync attempt, the single 09:15 conditional fallback, and the 09:50 consolidated closure check.
+   - Pass when Daily Problem Watchdog records First-Line Viewpoints failures to the production incident registry after the 08:30 local Codex RSS collection/build/sync attempt, the single 09:15 conditional fallback, and the 09:50 consolidated closure check.
    - Pass when the watchdog does not dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` or any recovery workflow.
    - Fail when the lane waits until the old 10:30 supervision check or uses Hermes recovery / early handoff instead of a problem report and Codex inbox path.
 
 10. `afternoon_follow_builders_skill_lane`
-    - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, syncs the generated skill viewpoints into `01-SiteV2/knowledge/02-Opinion-Timelines/`, records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md`, and Hermes records the lane at 16:30.
+    - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, syncs the generated skill viewpoints into `01-SiteV2/knowledge/02-Opinion-Timelines/`, and records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md` with its own publication and sync status.
     - Pass when the local task running with merge enabled also pushes the automation branch, merges the PR to `main`, and waits for GitHub Pages publication or writes an explicit publish failure.
     - Fail when the afternoon skill route is judged from morning RSS data only, when a missing 16:30 publish report is ignored, when Obsidian sync counts are missing from the report, or when feed/archive generation success is treated as full publication success without branch / PR / Pages closure.
 
@@ -62,13 +62,13 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Pass when the afternoon local task distinguishes feed/archive success from publication success: `builder_items_count > 0`, Obsidian sync counts are present, no `Publish Failure` section remains unresolved, the automation branch was pushed, the PR merged to `main`, and GitHub Pages succeeded when the task ran with `-Merge`.
     - Pass when same-day reruns prune stale remote branch refs before `git push --force-with-lease`, so a previous merged PR deleting `automation/follow-builders-skill-<date>` does not cause a false feed failure.
     - Fail when a `stale info` / `force-with-lease` rejection after a deleted remote automation branch is classified as feed failure.
-    - Fail when the publish report says the feed/archive output is healthy but also contains `publish_status: failed`, and Hermes or Codex still reports the afternoon lane as fully complete.
-    - Fail when Hermes ignores `publish_status: failed`, `publish_error`, or missing `obsidian_sync_*` counts in `agent-workflow/reports/<date>-follow-builders-skill-local-publish.md`.
+    - Fail when the publish report says the feed/archive output is healthy but also contains `publish_status: failed`, and lane supervision or Codex still reports the afternoon lane as fully complete.
+    - Fail when lane supervision ignores `publish_status: failed`, `publish_error`, or missing `obsidian_sync_*` counts in `agent-workflow/reports/<date>-follow-builders-skill-local-publish.md`.
 
 16. `local_data_precedence_in_supervision`
     - Pass when daily supervision treats same-date `follow-builders-daily.json`, remarks / builders floors, and a passed follow-builders data gate as sufficient public-lane health.
     - Pass when missing or unavailable GitHub workflow state is only an observability warning while local same-date data and gate are healthy.
-    - Pass when a stale Hermes inbox generated before local repair is resolved or regenerated after the newer same-date gate passes.
+    - Pass when a stale production incident generated before local repair is resolved or regenerated after the newer same-date gate passes.
     - Fail when supervision dispatches `.github/workflows/daily-first-line-viewpoints-pr.yml` only because no same-date GitHub run exists, while local same-date data and the data gate already pass.
 
 17. `deepseek_translation_provenance`
@@ -105,7 +105,7 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Fail when every daily run performs an unnecessary network translation backfill or substitutes history generation for the current morning refresh.
 
 25. `afternoon_scheduler_and_supervision_closure`
-    - Pass when the 16:10 Windows task has wake-on-sleep and bounded failure retries, and the runner forces a same-date Hermes supervision refresh after either success or failure.
+    - Pass when the 16:10 Windows task has wake-on-sleep and bounded failure retries, and the runner writes a same-date durable publication report after either success or failure.
     - Pass when pre-16:30 supervision reports a missing afternoon artifact as `waiting`, and when a stale working tree can verify an exact-date report/output pair from refreshed `origin/main`.
     - Fail when a sleeping machine can silently miss the only trigger, when the 09:50 report marks an unrun afternoon lane `passed`, or when merged exact-date artifacts are reported missing only because the current checkout is stale.
 

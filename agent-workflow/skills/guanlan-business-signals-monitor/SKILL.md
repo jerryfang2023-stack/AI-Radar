@@ -3,7 +3,7 @@ name: guanlan-business-signals-monitor
 description: Use only for frozen SITE-V3.4.5 Business Signals Card, trend, relationship, FDE/hardware lens, and downstream compatibility after the Data Center V4 integrity gate passes. Do not use it to define V4 facts, tags, events, projections, importance, opportunity, or recommendations.
 metadata:
   guanlan:
-    version: "1.1.3"
+    version: "1.1.4"
     lane: "Business Signals"
     status: "compatibility lane owner"
     order: 10
@@ -32,7 +32,7 @@ Enterprise AI / FDE is owned by `guanlan-enterprise-ai-fde-monitor`. Business Si
 - Consolidated targeted recovery: 09:15 Asia/Shanghai. Accepted V4 prevents another full-chain run when only compatibility assets are unhealthy.
 - Consolidated closure: 09:50 Asia/Shanghai. It runs safe self-check and creates or invokes a Codex handoff only for unresolved targeted tasks.
 - GitHub health dispatch remains a late cloud safety fallback, not the morning SLA clock.
-- Daily Problem Watchdog: records failed production runs to Hermes inbox. It must not dispatch recovery or start a full-chain rerun.
+- Daily Problem Watchdog: records failed production runs to the neutral production incident registry. It must not dispatch recovery or start a full-chain rerun.
 - Hermes morning recovery and early handoff workflows are retired and must not be recreated or used.
 
 ## Required Reads
@@ -46,7 +46,7 @@ Read only what is needed:
 5. `context/07-v3-intelligence-generation-rules.md`
 6. `context/08-v3-3-automation.md`
 7. `context/09-v3-3-current-action-index.md`
-8. Relevant Business Signals report, Hermes inbox item, or failed gate output.
+8. Relevant Business Signals report, production incident, legacy Hermes record, or failed gate output.
 
 For detailed chain work, load the narrower skill:
 
@@ -62,7 +62,7 @@ When repairing repeated morning failures, also read `examples/good-failure-route
 ## Workflow
 
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
-2. Check daily supervision and Hermes inbox for the Business Signals lane.
+2. Check Daily Closure and the production incident registry for the Business Signals lane.
 3. If production has not run, use the GitHub workflow / current automation route rather than pushing generated assets directly to `main`.
 4. If production failed, start from the failed gate report and determine the earliest responsible stage:
    - Raw capture;
@@ -88,7 +88,7 @@ When repairing repeated morning failures, also read `examples/good-failure-route
 7. Repair the smallest script, rule, gate, or skill path needed for the failing category.
 8. Rerun the exact failed gate or the smallest relevant validation.
 9. Add or tighten an eval before adding long prose when the failure is recurring.
-10. Close the Hermes inbox item only after validation, final commit or PR, and prevention are recorded.
+10. Close the production incident only after validation, final commit or PR, and prevention are recorded.
 
 ## Hard Stop: No Blind Full-Chain Reruns
 
@@ -180,5 +180,5 @@ When finishing, report:
 - files changed;
 - validation run;
 - prevention artifact added or not needed;
-- Hermes inbox item status;
+- production incident status;
 - commit / PR / deployment status when relevant.

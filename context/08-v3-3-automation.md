@@ -14,7 +14,7 @@ priority: current
 
 The daily production workflow builds the Data Center V4 factual bundle after Raw evidence supply, then builds frozen V3 Card / graph / trend assets only as internal compatibility and downstream-application input. V4 build, integrity gate, and JSONL materialization are release-blocking. Retired V3 page assets are not generated or deployed.
 
-SITE-V4.2 automation is lane-independent for production and site-unified for publication. First-Line Viewpoints and Community Intelligence keep independent data gates and are projected into the V4 Data Center shell. Business Signals continues as an internal V3.3.6.3 compatibility lane after the V4 integrity gate. Trend Radar (`TRADAR-V1.0.0-factual-change-explorer`) rebuilds from accepted V4 frontstage facts and passes its own evidence/count gate before publication. Reports Center (`REPORTS-V1.0.0-periodic-report-center`) publishes monthly / weekly reports through the periodic content gate and deterministic renderer. Opportunity Map (`OMAP-V1.0.0-independent-column`) independently reads source-backed opportunity signals from `industry-reports-frontstage.json`; no public page reads the V3 desk JSON. Hermes remains a problem monitor: failed production runs are recorded by Daily Problem Watchdog for targeted Codex repair.
+SITE-V4.2 automation is lane-independent for production and site-unified for publication. First-Line Viewpoints and Community Intelligence keep independent data gates and are projected into the V4 Data Center shell. Business Signals continues as an internal V3.3.6.3 compatibility lane after the V4 integrity gate. Trend Radar (`TRADAR-V1.0.0-factual-change-explorer`) rebuilds from accepted V4 frontstage facts and passes its own evidence/count gate before publication. Reports Center (`REPORTS-V1.0.0-periodic-report-center`) publishes monthly / weekly reports through the periodic content gate and deterministic renderer. Opportunity Map (`OMAP-V1.0.0-independent-column`) independently reads source-backed opportunity signals from `industry-reports-frontstage.json`; no public page reads the V3 desk JSON. Hermes is limited to a 10:20 control-plane liveness check; routine production supervision and Codex handoff belong to Daily Closure.
 
 ## Business Signals GitHub Chain
 
@@ -71,9 +71,10 @@ The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. I
 - First-Line Viewpoints RSS primary production: 08:30 local Codex `builder-observation-daily-sync` for RSS collection, page-data build, and Obsidian sync; the 09:15 consolidated recovery controller dispatches the GitHub workflow only when the local gate is unhealthy and no same-date run exists.
 - First-Line Viewpoints skill publish: local follow-builders skill at 16:10 Asia/Shanghai; supervision records it at 16:30.
 - Community Intelligence local collection: 08:30 Asia/Shanghai on the local Windows machine via Windows task `WaveSight Community Intelligence Daily`; successful local collection owns its publish handoff. The 09:15 controller validates the lane and records local repair when login/browser collection is missing; GitHub cannot replace it.
-- Daily Problem Watchdog: observes failed production workflows and writes reports / Hermes inbox items. It must not dispatch recovery or start another full-chain run.
+- Daily Problem Watchdog: records failed production workflows and writes neutral production incidents. It is not Hermes and must not dispatch recovery or start another full-chain run.
 - Consolidated recovery: local Windows task `WaveSight Daily Recovery Controller` runs at 09:15, routes Business, First-Line, and Community failures to the earliest responsible stage, and never reruns accepted V4 evidence for a compatibility-only defect.
 - Consolidated closure: local Windows task `WaveSight Daily Automation Closure` runs at 09:50, runs the safe self-check and invokes Codex only for unresolved targeted tasks.
+- Hermes control-plane watchdog: local Windows task `WaveSight Hermes Control Plane Watchdog` runs at 10:20 and checks only that the morning, recovery, and closure reports are readable.
 
 Operational rules:
 
@@ -85,8 +86,9 @@ Operational rules:
 6. If Business Signals is blocked only by `raw_count_min`, a source-channel/provider quota note, keyword-only floor, AI-title ratio, or off-topic raw-title diagnostic while Pool audit supply and Card supply are sufficient, do not rerun Raw. Treat it as diagnostic and repair the exact downstream blocker.
 7. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current raw-to-card rules.
 8. Community Intelligence cannot be collected inside GitHub Actions because it depends on the local Chrome profile and logged-in community sessions. GitHub may publish already-validated community files, but missing local collector output remains a local / Codex repair handoff.
-9. Daily Problem Watchdog writes `agent-workflow/reports/<date>-daily-recovery-watchdog.json`, `.md`, and `agent-workflow/inbox/hermes-to-codex/<date>-<lane>-daily-problem-watchdog.md` for actionable problems.
+9. Daily Problem Watchdog writes `agent-workflow/reports/<date>-daily-recovery-watchdog.json`, `.md`, and `agent-workflow/inbox/production-incidents/<date>-<lane>-daily-problem-watchdog.md` for actionable problems.
 10. The 09:50 closure should complete before 10:00 when production state is observable. If a same-date workflow is still queued or in progress, classify the lane as waiting rather than failed.
+11. At 10:20 Hermes checks controller-report liveness only. An existing controller report is observable even when it records a downstream repair status.
 
 ## Daily Problem Watchdog
 
@@ -94,12 +96,12 @@ Workflow: `.github/workflows/daily-recovery-watchdog.yml`
 
 Script: `agent-workflow/tools/dispatch-daily-recovery.mjs`
 
-The problem watchdog records production failures after failed workflow events or manual dispatch. It never dispatches recovery workflows. Its job is to write a dated report and, when needed, a Hermes inbox item for targeted Codex repair.
+The problem watchdog records production failures after failed workflow events or manual dispatch. It never dispatches recovery workflows. Its job is to write a dated report and, when needed, a neutral production incident for targeted Codex repair.
 
 Problem-monitoring rules:
 
 1. If Business Signals, First-Line Viewpoints, or Community Intelligence publish workflow fails, the watchdog checks whether a same-date successful run already exists.
-2. If no same-date run is active or successful, the watchdog writes `agent-workflow/reports/<date>-daily-recovery-watchdog.*` and, for actionable problems, `agent-workflow/inbox/hermes-to-codex/<date>-<lane>-daily-problem-watchdog.md`.
+2. If no same-date run is active or successful, the watchdog writes `agent-workflow/reports/<date>-daily-recovery-watchdog.*` and, for actionable problems, `agent-workflow/inbox/production-incidents/<date>-<lane>-daily-problem-watchdog.md`.
 3. It must not dispatch Business Signals, First-Line Viewpoints, Community Intelligence, or any Hermes recovery workflow.
 4. Community Intelligence collection still cannot run in GitHub Actions because it depends on the local Chrome profile and logged-in browser state.
 5. The expected follow-up is targeted diagnosis from the inbox report, reusing same-date artifacts whenever Pool audit supply, Card supply, or lane-specific healthy outputs are already sufficient.
@@ -121,7 +123,7 @@ The Hermes morning recovery and early handoff workflows are retired. Do not recr
 - `npm run hermes:business-early-handoff`
 - `npm run hermes:early-handoff`
 
-If a lane fails after its production window, use the Daily Problem Watchdog report / inbox item to drive targeted repair. Do not use Hermes as a full-chain rerun trigger.
+If a lane fails after its production window, use Daily Closure or the Daily Problem Watchdog incident to drive targeted repair. Hermes checks controller liveness only.
 
 ## First-Line Viewpoints RSS Chain
 
@@ -173,7 +175,7 @@ Execution order:
 6. Commit and push the publish branch through `automation/follow-builders-skill-<date>` from an isolated temporary Git index based on `origin/main`, staging only First-Line owned outputs. Other lane dirty files in the main workspace and Windows long-path checkout limits must not block the afternoon builders publish.
 7. Create or update the PR.
 8. Auto-merge or enable auto-merge after the skill publish and Obsidian sync pass.
-9. Hermes records the run at 16:30 from the local publish report.
+9. The lane publisher records and validates the run from its durable local publish report; Hermes does not supervise this lane.
 
 This skill lane does not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data, and it stays independent from the morning RSS route.
 
@@ -426,7 +428,7 @@ Daily supervision must classify lane health in this order:
 3. latest workflow run status;
 4. local scheduled-task history or observability warnings.
 
-Do not let a red latest workflow, missing GitHub run, or non-zero Windows task result override newer same-date data that already passed the lane gate. If a later local repair writes the same-date data and gate after an earlier supervision report, rerun daily supervision or resolve the stale Hermes inbox instead of leaving the old report as the active truth.
+Do not let a red latest workflow, missing GitHub run, or non-zero Windows task result override newer same-date data that already passed the lane gate. If a later local repair writes the same-date data and gate after an earlier supervision report, rerun Daily Closure or resolve the stale production incident instead of leaving the old report as the active truth.
 
 Lane-specific rules:
 
@@ -477,7 +479,7 @@ npm run install:periodic-automation-tasks
 | Schedule (Asia/Shanghai) | Controller phase | Result |
 |---|---|---|
 | Monday 10:30 | `weekly-report` | Refresh source-backed opportunity signals, rebuild the compatibility projection, generate the weekly report for the previous Monday-Sunday window, pass the content gate, then generate and test the weekly page. |
-| Sunday 18:00 | `weekly-health` | Run `health:weekly`; when repeated failures are present, create a Hermes inbox item requiring a durable gate, eval, or MEMORY prevention artifact. |
+| Sunday 18:00 | `weekly-health` | Run `health:weekly`; when repeated failures are present, create a production incident requiring a durable gate, eval, or MEMORY prevention artifact. |
 | Daily 14:00 with first-weekday guard | `monthly` | On the first Monday-Friday weekday only, generate the previous calendar month's structure report and monthly maintenance report, pass the content gate, then generate and test the monthly page. |
 
 Weekly and monthly production is owned by `.github/workflows/periodic-reports-pr.yml` under `REPORTS-V1.0.0-periodic-report-center`. DeepSeek Pro writes source-ID-cited Markdown only; `assert-periodic-report-content.mjs` accepts or rejects it; `render-periodic-report-pages.mjs` is the sole HTML, navigation, and report-version writer; and the monthly/weekly report page-generator Skills define page structure and validation. The workflow opens and merges a PR; GitHub Pages deploys from `main`. Local periodic tasks are disabled by default to avoid duplicate production and may be installed only as an explicit recovery lane.
@@ -488,7 +490,7 @@ The daily 09:50 closure also runs `assert-data-center-projection-coverage.mjs`. 
 
 ## No-Hermes Daily Self Check And Safe Repair
 
-When the daily monitor should run without Hermes inbox, use the self-check wrapper. It calls daily supervision with `--hermes=off`, writes a non-Hermes repair report, and can run only deterministic safe repairs.
+The self-check wrapper calls daily supervision without automatic incident writing, produces a targeted repair report, and can run only deterministic safe repairs.
 
 Check only:
 
@@ -527,6 +529,14 @@ npm run install:daily-automation-tasks
 ```
 
 This installs 08:10 production dispatch, 09:15 targeted recovery, and 09:50 closure. It disables the separate 09:40 self-repair, 09:50 Codex handoff, and expired agent-review trial tasks after the replacements are registered.
+
+On Windows, every installed task action must use a stable absolute Node executable. The installers prefer `%APPDATA%\fnm\aliases\default\node.exe` and fall back to the absolute path returned by `Get-Command node.exe`; they must not register bare `node.exe` or an ephemeral `fnm_multishells` path.
+
+Install the independent 10:20 control-plane watchdog:
+
+```powershell
+npm run install:hermes-watchdog
+```
 
 ## No-Hermes Codex Self Repair Handoff
 

@@ -3,7 +3,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const inboxDir = path.join(root, "agent-workflow", "inbox", "hermes-to-codex");
+const inboxDirs = [
+  path.join(root, "agent-workflow", "inbox", "production-incidents"),
+  path.join(root, "agent-workflow", "inbox", "hermes-to-codex"),
+];
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {
@@ -80,11 +83,11 @@ function priorityValue(message) {
 
 function repairPrompt(messages) {
   if (!messages.length) {
-    return "Hermes inbox has no matching repair requests.";
+    return "Production incident registry has no matching repair requests.";
   }
 
   const lines = [
-    "Hermes repair queue:",
+    "Production incident queue:",
     "",
   ];
 
@@ -108,26 +111,36 @@ function repairPrompt(messages) {
   lines.push("3. Rerun the exact failed gate or the smallest relevant validation.");
   lines.push("4. Add a prevention artifact when the issue can recur: gate, eval, memory, or context rule.");
   lines.push("5. Record the repair action, then close the inbox item with:");
-  lines.push("   npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>");
+  lines.push("   npm run resolve:incident -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>");
 
   return lines.join("\n");
 }
 
 function listMessages() {
-  if (!fs.existsSync(inboxDir)) return [];
-  return fs.readdirSync(inboxDir, { withFileTypes: true })
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".md") && entry.name !== "README.md" && entry.name !== "TEMPLATE.md")
-    .map((entry) => {
-      const file = path.join(inboxDir, entry.name);
+  return inboxDirs.flatMap((inboxDir) => {
+    if (!fs.existsSync(inboxDir)) return [];
+    return fs.readdirSync(inboxDir, { withFileTypes: true })
+      .filter((entry) => entry.isFile() && entry.name.endsWith(".md") && entry.name !== "README.md" && entry.name !== "TEMPLATE.md")
+      .map((entry) => {
+        const file = path.join(inboxDir, entry.name);
+        const text = readText(file);
+        const stat = fs.statSync(file);
+        return {
+          file: rel(file),
+          name: entry.name,
+          title: parseTitle(text),
+          evidence: parseEvidence(text),
+          modified_at: stat.mtime.toISOString(),
+          fields: parseFields(text),
+        };
+      });
+  })
+    .map((message) => {
+      const file = path.join(root, message.file);
       const text = readText(file);
-      const stat = fs.statSync(file);
       return {
-        file: rel(file),
-        name: entry.name,
-        title: parseTitle(text),
-        evidence: parseEvidence(text),
-        modified_at: stat.mtime.toISOString(),
-        fields: parseFields(text),
+        ...message,
+        title: message.title || parseTitle(text),
       };
     })
     .filter((message) => !statusFilter || statusFilter === "all" || (message.fields.status || "open") === statusFilter)

@@ -31,7 +31,7 @@ Use this when Business Signals has not cleanly published by the morning handoff 
    - for title/fact ingestion failures, repair Raw/Card translation or extraction fields, then rebuild the affected Card/site JSON only;
    - for publication failures, repair PR/merge/Pages only.
 5. Rerun the exact failed gate or the smallest validation.
-6. Record validation, final commit or PR, and prevention before closing Hermes.
+6. Record validation, final commit or PR, and prevention before closing the production incident.
 
 ## Incorrect Behavior
 

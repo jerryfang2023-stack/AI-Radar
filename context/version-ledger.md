@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-07-18
+last_updated: 2026-07-25
 use_when:
   - task startup
   - page change
@@ -22,7 +22,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | WaveSight Entity History |
 | Version layer | Minor |
 | Release date | 2026-07-17 |
-| Last modified at | 2026-07-18T17:19:02+08:00 |
+| Last modified at | 2026-07-25T10:20:00+08:00 |
 | Product version | V4.2 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.2.0-entity-history |
@@ -53,6 +53,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.2.1 |
 | Skill governance editor | guanlan-skill-editor v1.0.1 |
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
+| Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.6.4 Trend Radar factual change application |
 | Git tag | `v4.2.2-trend-radar` |
 | Current entries | Data Center / Trend Radar / Industry Reports / Opportunity Map; V3 column URLs redirect into V4; Dashboard retained as backend |
@@ -79,7 +80,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Daily automation is split by production lane: Business Signals, First-Line Viewpoints, and Community Intelligence each have independent monitoring / gate / persistence / PR publication boundaries.
 - First-Line Viewpoints persists local Obsidian timelines as person / date files under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`; old month files must not be reintroduced.
 - Business Signals blocks social/community posts, repo/catalog pages, marketplace/package/model pages, generic funding lists, funding roundups, generic funding commentary, generic FDE role/service pages, job posts, role explainers, consulting/service landing pages, old evergreen technical posts, and search-query artifacts from formal Card promotion unless the same original source contains a concrete dated product/service, funding, customer deployment, procurement, partnership, or production rollout event.
-- Hermes no longer runs early handoff or morning recovery. The only Hermes problem-monitoring workflow is Daily Problem Watchdog, which writes reports and Hermes inbox items without dispatching recovery or full-chain reruns.
+- Hermes no longer performs daily production supervision. `HERMES-V4.0-control-plane-watchdog` runs once at 10:20, after the Closure timeout window, and checks only whether the morning, recovery, and closure controllers left readable reports. Routine failures use the neutral production incident registry and are owned by Closure/Codex.
 - Production failures must be repaired from the earliest failed gate or report. If same-date artifacts are sufficient, use targeted repair and publication instead of restarting the lane.
 - Opportunity Map reads the dedicated downstream application projection `industry-reports-frontstage.json`; neither application-center page fetches the public V3 desk JSON. Dashboard remains an independent backend consumer.
 - Reports Center is versioned independently as `REPORTS-V1.0.0-periodic-report-center`. It contains Monthly / Weekly reports and archives; `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek for source-ID-cited Markdown only, `assert-periodic-report-content.mjs` gates the content, and `render-periodic-report-pages.mjs` is the sole HTML/navigation/version writer under the monthly and weekly page-generator Skills.
@@ -88,7 +89,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - Internal V3 compatibility data may continue for opportunity-map projection, historical analytics, and Obsidian sync, but no public page may load its V3 CSS, JavaScript, navigation, or desk JSON.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
-- Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
+- Daily supervision and Codex handoff are routed through the consolidated Closure controller. The legacy Hermes inbox remains readable history only.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
 - Skill Store governance is versioned separately as `v1.6.4`. Current Skill metadata, evals, registry entries, and mirrors add the independent Trend Radar factual-change lane while preserving Opportunity Map, Reports Center, Community Intelligence, and governance boundaries.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
@@ -174,6 +175,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `HERMES-V4.0-freeze-control-plane-watchdog-20260725` | Daily automation controllers / Operations Backend / incident registry | 2026-07-25 | 2026-07-25T10:20:00+08:00 | HERMES-V4.0-control-plane-watchdog | Hermes inspecting V4 data quality, V3 compatibility Cards, lane counts, First-Line/Community/report publication, dispatching recovery, invoking Codex, or writing routine lane incidents | controller-report watchdog tests + script syntax + Skill Ops audit + current-rule hygiene |
 | `v4.2.2-trend-radar` | Trend Radar / shared V4 Application Center navigation / Skill Store | 2026-07-19 | 2026-07-19T18:40:00+08:00 | TRADAR-V1.0.0-factual-change-explorer / Skill Store v1.6.4 | Report prose, opportunity/trend scoring, heat or maturity judgments, community/viewpoint/V3 inputs, missing coverage disclosure, or untraceable period records returning to Trend Radar | Trend Radar evidence/count gate + entity-kind tests + frontstage tests + Skill Ops + version consistency + code/rule audit + GitHub Pages deploy |
 | `V4.2-governance-alignment-20260718` | Current V4 pages / Operations Backend / column Skills / version gates | 2026-07-18 | 2026-07-18T17:19:02+08:00 | SITE-V4.2.0-entity-history / PERSON-REVIEW-V1.0 / Skill Store v1.6.3 / Git tag v4.2.1-governance-alignment | stale SITE-V3.4.5 dashboard metadata; shared IMAP preflight; Opportunity Map nested under Reports Center; duplicate root Skill sources; V3 taxonomy declared as V4 truth; unreviewed or non-natural accounts in the public person index | version consistency gate + V4 data/entity/tag tests + Skill validation/sync/audit + frontstage regression + GitHub Pages live verification |
 | `REPORTS-OMAP-freeze-independent-columns-20260718` | Reports Center / Monthly and Weekly details / Opportunity Map / report generation Skills | 2026-07-18 | 2026-07-18T13:17:22+08:00 | REPORTS-V1.0.0-periodic-report-center / OMAP-V1.0.0-independent-column / Skill Store v1.6.2 | shared `IMAP-V2.1.0` metadata returning; opportunity matrices returning to Reports Center; report cards entering Opportunity Map; DeepSeek editing HTML/navigation; page generation before the content gate; report detail pages emitting the Opportunity Map version | periodic renderer tests + report data tests + Skill validation/sync/registry rebuild + frontstage regression + desktop/mobile smoke + GitHub Pages live verification |
@@ -222,6 +224,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| HERMES-V4.0-control-plane-watchdog | 2026-07-25T10:20:00+08:00 | Retires Hermes daily lane supervision and compatibility-Card inspection. Hermes now checks only whether the morning, recovery, and closure controllers left readable reports; routine failures use the neutral production incident registry and Closure/Codex repair path. | current automation governance |
 | V4.2 governance alignment / PERSON-REVIEW-V1.0 / Skill Store v1.6.3 | 2026-07-18T17:19:02+08:00 | Aligns the current version ledger, dashboard, supervision, column Skills, taxonomy routing, and release gates while preserving SITE-V4.2.0 canonical data and 31 reviewed natural-person profiles. | current governance |
 | REPORTS-V1.0.0 / OMAP-V1.0.0 / Skill Store v1.6.2 | 2026-07-18T13:17:22+08:00 | Splits Reports Center and Opportunity Map into independently versioned Application Center columns. The report release owns gated Markdown-to-page generation through the monthly/weekly page-generator Skills; the map release owns the dedicated source-backed projection and two evidence-backed matrices. | current applications |
 | FLV-V1.1.0-history-backfill | 2026-07-18T13:08:53+08:00 | Materializes accepted committed morning snapshots, merges current and historical morning records plus afternoon intake by original URL, and keeps only source-backed, AI-relevant viewpoints with approved Chinese translation provenance and opinion tags in the V4 public feed. | current |

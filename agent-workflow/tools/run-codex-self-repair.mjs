@@ -157,7 +157,7 @@ function buildPrompt(selfCheckReport, tasks, promptPath) {
     "1. Read `AGENTS.md` first.",
     "2. Read the current task context in `context/08-v3-3-automation.md` and the linked report files.",
     `3. Read \`${dailySelfCheckMd}\` and \`${dailySupervisionMd}\`.`,
-    "4. Do not use Hermes inbox as the repair queue for this run.",
+    "4. Do not use the legacy Hermes inbox as the repair queue for this run.",
     "5. Work only on the task(s) below unless a directly required dependency blocks them.",
     "",
     "Hard boundaries:",
