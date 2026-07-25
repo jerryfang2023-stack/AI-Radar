@@ -48,7 +48,7 @@ const date = args.get("date") || shanghaiDate(args.get("source-created-at") || n
 const defaultMaxAttempts = Number.parseInt(args.get("max-attempts") || "0", 10);
 const requestedLanes = resolveRequestedLanes();
 const dryRun = args.get("dry-run") === "true";
-const inboxDir = path.join(root, "agent-workflow", "inbox", "hermes-to-codex");
+const inboxDir = path.join(root, "agent-workflow", "inbox", "production-incidents");
 
 function shanghaiDate(value = new Date()) {
   const dateValue = value instanceof Date ? value : new Date(value);
@@ -262,7 +262,7 @@ function writeInbox(payload, reportPath) {
       `failed_gate: daily_problem_watchdog`,
       `report_path: ${rel(reportPath)}`,
       `data_generated: unknown`,
-      `needed_action: inspect failed production report and repair the smallest responsible stage; do not dispatch a full rerun from Hermes`,
+      `needed_action: inspect failed production report and repair the smallest responsible stage; do not dispatch a full rerun from the incident recorder`,
       `created_at: ${payload.generated_at}`,
       `source: daily_problem_watchdog`,
       `source_workflow: ${payload.source_workflow || laneConfig.workflowName || "unknown"}`,
@@ -287,7 +287,7 @@ function writeInbox(payload, reportPath) {
       "2. Classify the earliest responsible stage before running anything.",
       "3. Repair the smallest script, gate, rule, or data build path that caused the incident.",
       "4. Rerun only the exact failed gate or the smallest relevant validation.",
-      "5. Close with `npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>`.",
+      "5. Close with `npm run resolve:incident -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>`.",
       "",
     ].join("\n");
     fs.writeFileSync(file, `${md}\n`, "utf8");

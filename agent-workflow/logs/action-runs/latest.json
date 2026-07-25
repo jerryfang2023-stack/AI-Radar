@@ -1,41 +1,36 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-25T03:02:09.694Z",
+  "generated_at": "2026-07-25T03:12:53.824Z",
   "date": "2026-07-25",
-  "action": "Recover today's Business Signals publication",
-  "action_status": "unregistered",
+  "action": "Align Community Intelligence skill version gate",
+  "action_status": "current",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Recovered the accepted workflow artifact, repaired three entity links, regenerated 27 Signal Cards, and refreshed V4, Trend Radar, Industry Reports, business lenses, and operations data.",
-  "contexts": [],
+  "summary": "Aligned the release gate and version ledger with the governed Community Intelligence monitor v1.0.6",
+  "contexts": [
+    "context/version-ledger.md",
+    "agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md"
+  ],
   "changed_files": [
-    "2026-07-25 Business Signals assets",
-    "Data Center V4 tables and frontstage indexes",
-    "Trend Radar",
-    "Industry Reports",
-    "pipeline dashboard"
+    "agent-workflow/tools/assert-version-consistency.mjs",
+    "context/version-ledger.md"
   ],
   "outputs": [],
   "checks": [
-    "V4 integrity gate",
-    "projection coverage gate",
-    "27-card dedupe and editorial gates",
-    "prepared site suite",
-    "pre-commit production-chain gate"
+    "npm run assert:versions",
+    "npm run audit:skills",
+    "git diff --check"
   ],
   "issues": [
-    "Workflow stopped at materialization and one generated Card duplicated its news fact as the visible excerpt"
+    "The release gate still required v1.0.5 while the governed project and Skill Store copies were already v1.0.6"
   ],
-  "risks": [
-    "No source-bounded FDE record was produced in today's batch; the integrity and coverage gates report this as a non-blocking warning"
-  ],
+  "risks": [],
   "lessons": [
-    "Reuse the accepted artifact for downstream recovery and preserve model-assisted events while applying narrow deterministic repairs"
+    "Version gates and ledgers must advance with governed Skill metadata"
   ],
   "reusable_rules": [
-    "Do not rerun source monitoring after a downstream-only failure",
-    "Publish only after all downstream gates pass"
+    "Keep the version consistency gate ledger and governed Skill version identical"
   ],
   "retired_flags": [],
   "notes": []

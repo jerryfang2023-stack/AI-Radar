@@ -3,7 +3,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const inboxDir = path.join(root, "agent-workflow", "inbox", "hermes-to-codex");
+const inboxDirs = [
+  path.join(root, "agent-workflow", "inbox", "production-incidents"),
+  path.join(root, "agent-workflow", "inbox", "hermes-to-codex"),
+];
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {
@@ -140,19 +143,28 @@ function priorityValue(fields) {
 }
 
 function openCandidates() {
-  if (!fs.existsSync(inboxDir)) return [];
-
-  return fs.readdirSync(inboxDir, { withFileTypes: true })
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".md") && entry.name !== "README.md" && entry.name !== "TEMPLATE.md")
-    .map((entry) => {
-      const file = path.join(inboxDir, entry.name);
+  return inboxDirs.flatMap((inboxDir) => {
+    if (!fs.existsSync(inboxDir)) return [];
+    return fs.readdirSync(inboxDir, { withFileTypes: true })
+      .filter((entry) => entry.isFile() && entry.name.endsWith(".md") && entry.name !== "README.md" && entry.name !== "TEMPLATE.md")
+      .map((entry) => {
+        const file = path.join(inboxDir, entry.name);
+        const text = readText(file);
+        const fields = parseFields(text);
+        const stat = fs.statSync(file);
+        return {
+          file,
+          fields,
+          modified_at: stat.mtime.toISOString(),
+        };
+      });
+  })
+    .map((candidate) => {
+      const file = candidate.file;
       const text = readText(file);
-      const fields = parseFields(text);
-      const stat = fs.statSync(file);
       return {
-        file,
-        fields,
-        modified_at: stat.mtime.toISOString(),
+        ...candidate,
+        fields: candidate.fields || parseFields(text),
       };
     })
     .filter((candidate) => (candidate.fields.status || "open") === "open")
@@ -168,18 +180,23 @@ function openCandidates() {
 function resolveFile() {
   if (args.get("latest") === "true") {
     const [latest] = openCandidates();
-    if (!latest) fail("No open Hermes inbox item found.");
+    if (!latest) fail("No open production incident found.");
     return latest.file;
   }
 
   const fileArg = args.get("file") || args.get("name");
   if (!fileArg) fail("Pass --file=<inbox-file> or --latest=true.");
 
-  const file = path.isAbsolute(fileArg)
+  let file = path.isAbsolute(fileArg)
     ? path.resolve(fileArg)
-    : path.resolve(root, fileArg.includes("/") || fileArg.includes("\\") ? fileArg : path.join("agent-workflow", "inbox", "hermes-to-codex", fileArg));
+    : path.resolve(root, fileArg.includes("/") || fileArg.includes("\\") ? fileArg : path.join("agent-workflow", "inbox", "production-incidents", fileArg));
+  if (!fs.existsSync(file) && !fileArg.includes("/") && !fileArg.includes("\\")) {
+    file = path.resolve(inboxDirs[1], fileArg);
+  }
 
-  if (!isInside(inboxDir, file)) fail(`Inbox file must be inside ${rel(inboxDir)}.`);
+  if (!inboxDirs.some((inboxDir) => isInside(inboxDir, file))) {
+    fail("Incident file must be inside the current or legacy incident registry.");
+  }
   if (!fs.existsSync(file)) fail(`Inbox file not found: ${rel(file)}`);
   return file;
 }

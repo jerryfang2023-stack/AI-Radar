@@ -46,7 +46,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - Provider recovery must be judged from direct endpoint failures, fallback use, discovered/source/raw-candidate counts, and downstream Card/frontstage gate health. AIHOT `status=collected` can still mean direct API timeout with fallback search; Anysearch can be usable even when one query fallback fails.
 - If Raw / Pool / Cards are healthy but public Cards are missing, do not recollect sources until Card asset status, source-first readiness, and frontstage build failures have been ruled out. Repair the smallest failed layer and rerun the unified Business frontstage gate only.
 - If same-date data and gates are healthy but the latest workflow is red, Pages is skipped, a manifest is missing, or local Obsidian sync is blocked, classify the issue as publication, local sync, or supervision observability. Do not report it as Business data-generation failure and do not rerun generated assets.
-- Hermes inbox closure must record the final commit or PR, exact validation, and prevention artifact. A resolved item should not keep `fix_commit=pending` after the repair has merged.
+- Production incident closure must record the final commit or PR, exact validation, and prevention artifact. A resolved item should not keep `fix_commit=pending` after the repair has merged.
 
 ## FDE Boundary
 

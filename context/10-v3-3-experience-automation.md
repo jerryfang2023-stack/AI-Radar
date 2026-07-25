@@ -30,16 +30,16 @@ Generate a daily retrospective:
 node agent-workflow/tools/write-action-retrospective.mjs --date=<YYYY-MM-DD>
 ```
 
-Read open Hermes repair requests:
+Read open production incidents, including legacy Hermes records:
 
 ```powershell
-npm run inbox:hermes -- --status=open --latest=false
+npm run inbox:incidents -- --status=open --latest=false
 ```
 
-Close a repaired Hermes request:
+Close a repaired production incident:
 
 ```powershell
-npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>
+npm run resolve:incident -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>
 ```
 
 Audit Guanlan Skill Ops after skill edits or repeated lane failures. This command is read-only: it reports mirror drift, checks governed Skill metadata, and validates the generated Skill Store dashboard contract without synchronizing or rebuilding anything:
@@ -131,14 +131,14 @@ Each daily retrospective should answer:
 
 Use this loop after every real production failure:
 
-1. `supervise:daily` identifies the failed lane, gate, report path, and data state.
-2. Hermes automatically creates or updates a compact repair request under `agent-workflow/inbox/hermes-to-codex/`.
+1. Daily Closure identifies the failed lane, gate, report path, and data state.
+2. The responsible failure recorder creates or updates a compact production incident under `agent-workflow/inbox/production-incidents/`; Hermes may create only `control_plane_liveness` incidents.
 3. Codex repairs the smallest script, rule, gate, or data build path.
 4. Codex records the repair action with `record:action`, including issues, risks, checks, and reusable lessons.
 5. Codex reruns the exact failed gate or the smallest relevant validation.
-6. Codex closes the Hermes inbox item only after recording the validation and prevention artifact.
+6. Codex closes the production incident only after recording the validation and prevention artifact.
 7. If the repair changes any Guanlan skill, Codex runs `npm run repair:skills` after confirming the project copy is authoritative; the command ends with `npm run audit:skills` before closure.
-8. Weekly health reads daily supervision reports, Hermes inbox incidents, and action logs together.
+8. Weekly health reads daily supervision reports, production incidents, legacy Hermes history, and action logs together.
 9. If the same incident category repeats twice in the weekly window, promote the lesson into one of:
    - a stricter gate;
    - a monitor skill eval;

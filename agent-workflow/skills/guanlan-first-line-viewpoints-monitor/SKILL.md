@@ -1,14 +1,14 @@
 ---
 name: guanlan-first-line-viewpoints-monitor
-description: Use when supervising, running, repairing, backfilling, or improving the WaveSight AI SITE-V4.2.0 First-Line Viewpoints lane at FLV-V1.1.0-history-backfill. Covers current morning builders data, committed morning history, afternoon follow-builders intake, V4 projection, Chinese translation provenance, original-URL dedupe, AI relevance and opinion tags, Obsidian person/date timelines, publication closure, and Hermes repair. Do not use for Business Signals, Signal Cards, factual relationships, trend candidates, or Community Intelligence.
+description: Use when supervising, running, repairing, backfilling, or improving the WaveSight AI SITE-V4.2.0 First-Line Viewpoints lane at FLV-V1.1.0-history-backfill. Covers current morning builders data, committed morning history, afternoon follow-builders intake, V4 projection, Chinese translation provenance, original-URL dedupe, AI relevance and opinion tags, Obsidian person/date timelines, publication closure, and production-incident repair. Do not use for Business Signals, Signal Cards, factual relationships, trend candidates, or Community Intelligence.
 metadata:
   guanlan:
-    version: "1.1.1"
+    version: "1.1.2"
     lane: "First-Line Viewpoints"
     status: "current lane owner"
     order: 20
     responsibility: "Own First-Line Viewpoints current and historical supervision: source-backed builders data, V4 projection, Chinese translation, formal tags, and Obsidian person/date timelines."
-    upstream: "current follow-builders data, committed morning snapshots, afternoon follow-builders archive, Hermes inbox"
+    upstream: "current follow-builders data, committed morning snapshots, afternoon follow-builders archive, production incident registry"
     downstream: "follow-builders-daily.json, first-line-viewpoints-history.json, first-line-viewpoints-v4.json, Obsidian opinion timelines, PR publication"
     gates: "current builders assertion, historical provenance, translation/source-hash, AI relevance, opinion tags, original-URL dedupe, V4 projection, sync idempotency"
     recent_learning: "Historical morning snapshots may extend the public timeline only through the same source, translation, AI-relevance, opinion-tag, and original-URL gates as current records; afternoon intake cannot bypass them."
@@ -35,7 +35,7 @@ It may call the generic `follow-builders` skill for source / digest behavior, bu
 - Morning local Codex RSS collection/build/sync: 08:30 Asia/Shanghai via `builder-observation-daily-sync`.
 - Conditional GitHub RSS fallback: the 09:15 consolidated recovery controller dispatches it only when the local gate is unhealthy and no same-date run exists.
 - Daily Problem Watchdog records failed RSS / publication runs after the single conditional fallback. It must not start another recovery loop.
-- Afternoon local `follow-builders` skill publish: 16:10 Asia/Shanghai; Hermes records it at 16:30.
+- Afternoon local `follow-builders` skill publish: 16:10 Asia/Shanghai; the lane publisher records and validates its own durable report after completion.
 
 ## Required Reads
 
@@ -47,7 +47,7 @@ Read only what is needed:
 4. `context/frontstage-page-contracts.md`
 5. `context/08-v3-3-automation.md`
 6. `context/09-v3-3-current-action-index.md`
-7. Relevant First-Line Viewpoints report, Hermes inbox item, workflow log, or gate output.
+7. Relevant First-Line Viewpoints report, production incident, legacy Hermes record, workflow log, or gate output.
 
 For implementation detail, read:
 
@@ -65,7 +65,7 @@ When repairing repeated morning or afternoon monitoring failures, also read `exa
 ## Workflow
 
 1. Resolve the Asia/Shanghai production date unless the user gives another date.
-2. Check daily supervision and Hermes inbox for the First-Line Viewpoints lane.
+2. Check Daily Closure and the production incident registry for the First-Line Viewpoints lane.
 3. Build or inspect current `follow-builders-daily.json`; run `assert-follow-builders-data.mjs` for the active date.
 4. Inspect `first-line-viewpoints-history.json`. Rebuild it from committed morning snapshots only when a backfill or history repair is requested; do not translate historical records during routine supervision.
 5. Build `first-line-viewpoints-v4.json`, then run `assert-first-line-viewpoints-v4-data.mjs` and verify current/historical counts, date range, lane coverage, and original-URL dedupe.
@@ -73,7 +73,7 @@ When repairing repeated morning or afternoon monitoring failures, also read `exa
 7. Publish the afternoon follow-builders skill output through its independent branch / PR route and verify the local publish report.
 8. Stage / publish only first-line owned files through the automation PR route.
 9. Add or tighten evals before adding long prose when a failure recurs.
-10. Close Hermes inbox items only after validation and prevention are recorded.
+10. Close production incidents only after validation and prevention are recorded.
 
 ## History Backfill Contract
 
@@ -103,7 +103,7 @@ Classify a failure before rerunning anything:
 - `history_backfill_failure`: committed snapshot discovery, historical provenance, translation/source-hash, AI relevance, opinion tags, or original-URL dedupe failed.
 - `v4_projection_failure`: current, history, and afternoon inputs exist but `first-line-viewpoints-v4.json` counts, date range, lane coverage, or release gate are inconsistent.
 - `obsidian_sync_failure`: original-date person/date timeline files are missing or sync is not idempotent.
-- `prewindow_false_alarm`: Hermes checked before the 09:50 consolidated closure for RSS or before 16:30 for the afternoon skill lane.
+- `prewindow_false_alarm`: lane supervision checked before the 09:50 consolidated closure for RSS or before the afternoon publisher finished.
 - `afternoon_skill_runner`: the local `follow-builders` skill publisher failed or did not write its output/report after 16:30.
 - `afternoon_count_mismatch`: the output file count and publish report count disagree, or either is zero.
 - `afternoon_publication_failure`: the afternoon feed/archive output, report, and Obsidian sync are healthy, but branch push, PR creation, PR merge, or Pages publication failed. If same-day reruns fail with `stale info` or `force-with-lease` rejection after a previous PR deleted the remote automation branch, prune stale remote refs and rerun the publication path rather than reclassifying the feed as failed.
@@ -143,11 +143,11 @@ Success after 16:30 requires:
 - the report count matches the output count.
 - the report includes Obsidian sync counts.
 - the report does not contain `publish_status: failed` or a `Publish Failure` section;
-- Hermes can parse `publish_status`, `publish_error`, and `obsidian_sync_*` counts from the report;
+- lane supervision can parse `publish_status`, `publish_error`, and `obsidian_sync_*` counts from the report;
 - the automation branch was pushed, the PR was merged to `main`, and GitHub Pages completed when the local task runs with `-Merge`.
 
 Before creating `afternoon_skill_runner`, refresh `origin/main` and check the exact-date report/output pair there. Do not infer afternoon failure from a Business Signals workflow run or the morning First-Line RSS workflow; neither owns the local afternoon artifacts.
-If the report exists but records `0` while the output contains items, or if the report lacks Obsidian sync counts, repair or regenerate the report before closing Hermes.
+If the report exists but records `0` while the output contains items, or if the report lacks Obsidian sync counts, repair or regenerate the report before closing the production incident.
 If the report shows healthy feed/archive counts but a publish failure, repair the publication path only. Do not rerun or blame the upstream builders feed unless the output file itself is stale, missing, or zero-count.
 
 ## Lane Boundaries
@@ -174,5 +174,5 @@ When finishing, report:
 - Obsidian sync result and idempotency result;
 - files changed;
 - prevention artifact added or not needed;
-- Hermes inbox item status;
+- production incident status;
 - commit / PR / deployment status when relevant.

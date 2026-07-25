@@ -25,11 +25,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
 7. `lane_isolation`
    - Pass when the Community Intelligence PR stages no Business Signals or First-Line Viewpoints data.
 
-8. `hermes_repair_closure`
-   - Pass when any related Hermes inbox item is closed only after validation and a prevention artifact is recorded.
+8. `production_incident_closure`
+   - Pass when any related production incident is closed only after validation and a prevention artifact is recorded.
 
 9. `daily_problem_watchdog`
-   - Pass when Daily Problem Watchdog records Community Intelligence publish failures to Hermes inbox without rerunning local collection or dispatching recovery.
+   - Pass when Daily Problem Watchdog records Community Intelligence publish failures to the production incident registry without rerunning local collection or dispatching recovery.
    - Pass when missing local Chrome collector output is routed to local / Codex repair, not hidden behind repeated publish retries.
    - Fail when a GitHub run is described as fresh community collection, or when missing local Chrome collector output is hidden behind repeated publish retries.
 
@@ -54,7 +54,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
 
 14. `publication_waiting_not_failure`
    - Pass when an open same-date Community Intelligence PR or queued/in-progress publish workflow is reported under Waiting, not Problems, after same-date data and gate are healthy.
-   - Pass when waiting-only Community Intelligence publication state does not create a Hermes repair inbox item.
+   - Pass when waiting-only Community Intelligence publication state does not create a production incident.
    - Fail when "publication PR is open" is counted as a problem or asks Codex to repair local collection.
 
 15. `local_publish_closure_exit_code`

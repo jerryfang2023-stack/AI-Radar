@@ -1,222 +1,101 @@
-﻿---
+---
 status: current
-scope: hermes-daily-supervision
-last_updated: 2026-07-05
+scope: hermes-control-plane-watchdog
+last_updated: 2026-07-25
 use_when:
-  - hermes daily supervision
-  - monitor dispatch
-  - codex repair handoff
+  - hermes control-plane watchdog
+  - missing daily controller report
+  - automation liveness escalation
 priority: current
 ---
 
-# Hermes Daily Supervision Instructions
+# Hermes Control Plane Watchdog Instructions
 
-Hermes is the daily supervisor for WaveSight AI. It should observe, classify, and hand off. It should not directly rewrite production rules, merge PRs, or bypass gates.
+Hermes is no longer the WaveSight daily production supervisor. It is the final, independent control-plane watchdog.
 
-## Current Version Context
+Current contract: `HERMES-V4.0-control-plane-watchdog`.
 
-- Current public site version: `SITE-V4.2.0-entity-history`.
-- Current Hermes supervision contract: `V3.4.3-daily-problem-watchdog`.
-- Current Business Signals column version: `BSIG-V2.2.0-pipeline-stage-ownership`.
-- Current Enterprise AI / FDE lens version: `EAI-V1.2.0-raw-card-ingestion-boundary`.
-- Current Business Signals data contract: `V3.3.6.3-business-source-artifact-aggregation`.
-- Version ledger: `context/version-ledger.md`.
-- SITE-V4.2 keeps independent First-Line Viewpoints and Community Intelligence production, V4 factual events/FDE/hardware, and Industry Reports downstream application data. Business Signals Cards and graph/trend data remain internal compatibility assets only. Hermes observes and records problems; it does not run early handoff, bounded recovery, or automatic full-chain reruns.
-- Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that current sync is healthy.
-- Do not judge Codex work by commit author name. In this repository Codex commits may use the configured Git identity.
+Hermes answers one question only:
 
-## Daily Short Instruction
+> Did the three daily automation controllers execute and leave readable reports?
 
-Hermes should do this every Asia/Shanghai production day:
+Data quality, lane recovery, publication repair, and Codex handoff are owned by the production gates, Daily Closure, and Codex self-repair.
 
-1. 08:10 observe the consolidated morning controller: non-blocking preflight plus conditional Data Center production dispatch.
-2. 09:15 observe the single recovery controller. It may dispatch missing Business or First-Line production once, but accepted V4 prevents a compatibility-only full-chain rerun. Community collection failures remain local Chrome/login repair.
-3. Daily Problem Watchdog records failed production workflows into dated reports and Hermes inbox items. It must not dispatch recovery or start another full-chain run.
-4. Before 10:00 use Business Signals compatibility Card health as a target checkpoint: same-date active data, `BSIG-V2.2.0-pipeline-stage-ownership` unified compatibility Cards present, AI Hardware lens-only items not counted as formal Cards, no placeholder/source-domain titles, no Top10/candidate split, and FDE compatibility items respecting `EAI-V1.2.0-raw-card-ingestion-boundary`. Do not lower gates to hit the checkpoint or confuse this count with public V4 events.
-5. 09:50 use the consolidated closure report to check PR / merge / GitHub Pages, Dashboard freshness, safe repairs, and any targeted Codex handoff. Treat queued / in-progress runs as Waiting.
-6. 16:30 record the follow-builders skill publish: check the exact-date local publish report and builders viewpoints output, then refresh and check the same paths on `origin/main` before declaring them missing. A Business Signals run or morning First-Line workflow is not evidence that the independent afternoon skill did or did not run.
-7. For every failure, write cause, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
-8. Never lower gates, edit generated data directly, push to `main`, dispatch recovery, or loop blind reruns.
+## Daily instruction
 
-## Optimized Supervision Flow
-
-Use this order every day to avoid duplicate checks and blind reruns:
-
-1. Version preflight: confirm public pages agree on `SITE-V4.2.0-entity-history`; Industry Reports uses `REPORTS-V1.0.0-periodic-report-center`, Opportunity Map uses `OMAP-V1.0.0-independent-column`, and no current page emits shared IMAP metadata. Internal compatibility files may retain `SITE-V3.4.5` and `BSIG-V2.2.0-pipeline-stage-ownership`. Treat ledger history as history.
-2. Lane readiness: check whether each producing lane has same-date output or an active same-date run before declaring missing data.
-3. Data quality: check the lane-specific public contract, not generic volume alone.
-   - Business Signals: unified `BSIG-V2.2.0-pipeline-stage-ownership` Cards, separate AI Hardware lens-only items, source-first titles/facts, no Top10/candidate split, no backend-only / low-value items.
-   - Enterprise AI / FDE: FDE Lens Pool items have title/fact ingestion status, concrete implementation evidence, open detail, and source-bounded demand / service / result analysis.
-   - First-Line Viewpoints: person / original-date Obsidian sync idempotency.
-   - Community Intelligence: local logged-in collector output, archive, gate, and Waiting-vs-Problem publication state.
-4. Publication closure: check PR / merge / Pages only after reusable data exists; do not convert publication failure into a data rerun.
-5. Handoff: write one categorized inbox item per lane / root cause with report path, failed gate, reusable artifacts, and requested Codex repair.
-
-## Daily Entry
-
-Run the unified supervision report for the Asia/Shanghai production date:
+Run once at 10:20 Asia/Shanghai, after the 09:50 Closure timeout window:
 
 ```powershell
-npm run supervise:daily -- --date=<YYYY-MM-DD>
+npm run hermes:watchdog
 ```
 
-The report also runs the read-only Skill Ops check:
+Expected controller reports:
 
-```powershell
-npm run check:skill-ops
-```
+- `agent-workflow/reports/<date>-daily-automation-morning.json`
+- `agent-workflow/reports/<date>-daily-automation-recovery.json`
+- `agent-workflow/reports/<date>-daily-automation-closure.json`
 
-Skill Ops verifies the generated skill registry, current Guanlan skill metadata / eval / example coverage, `.skill-store` mirror state, and the independent Skill Store dashboard semantic contract. The check is read-only and does not synchronize or rebuild assets. It is a governance check, not a fourth production lane.
+Hermes checks only:
 
-Primary outputs:
+1. all three files exist and contain valid JSON;
+2. each report has the expected production date and phase;
+3. each report records at least one controller action.
 
-- `agent-workflow/reports/<date>-daily-supervision-report.json`
-- `agent-workflow/reports/<date>-daily-supervision-report.md`
-- `agent-workflow/reports/daily-supervision-report-latest.json`
-- `agent-workflow/reports/daily-supervision-report-latest.md`
+The watchdog writes:
 
-When the report status is `failed` or `manual_required`, the same command must create or update one open Hermes inbox item per affected lane under:
+- `agent-workflow/reports/<date>-hermes-control-plane-watchdog.json`
+- `agent-workflow/reports/<date>-hermes-control-plane-watchdog.md`
+- one incident under `agent-workflow/inbox/production-incidents/` only when a controller report is missing or invalid.
 
-```text
-agent-workflow/inbox/hermes-to-codex/
-```
+## Status handling
 
-## Business Signals Data Reading Contract
-
-When Hermes checks the internal Business Signals compatibility lane, the canonical current-day source is the active-date compatibility Card set. This is not the public V4 event set:
-
-1. Primary compatibility source: `01-SiteV2/site/data/v3-data-observation-desk.json`.
-2. Resolve `activeDate` from `meta.activeDate`.
-3. Count only `frontstageCards.filter(card.date === activeDate)`.
-4. If using `01-SiteV2/site/data/intelligence-graph-index.json`, treat `todayFrontstageCards` and `summary.todayFrontstageCards` as internal compatibility analytics, not the public V4 event set.
-5. Do not use `coreSignalCards` as the compatibility Card count; it is only a relationship-analysis subset.
-6. Do not use top-level `cards` as the current-day count unless it is explicitly filtered by `activeDate`; top-level `cards` is a historical archive.
-7. Do not report funding for today from `dailyLens.categoryStats.last7`, `dailyLens.categoryStats.total`, historical `cards`, or previous reports. Funding presence for today is `active-date public cards where category === "funding"`.
-8. Normalize category aliases before analytics: `product-service` and `product_service` are the same product / service category.
-
-## Timeline
-
-| Time | Lane | Hermes action |
-|---:|---|---|
-| 08:10 | Consolidated Morning Controller | Windows task `WaveSight Morning Production Dispatch` runs the non-blocking Skill Ops preflight and conditionally dispatches Data Center V4 production. GitHub cron is not the morning SLA clock. |
-| 08:30 | Community Intelligence Local | Windows scheduled task `WaveSight Community Intelligence Daily` runs logged-in collection, archive, gate, and local publish handoff. GitHub cannot replace this collector. |
-| 08:30 | First-Line Viewpoints RSS | Local Codex automation `builder-observation-daily-sync` runs RSS / podcast collection, page-data build, gate, and Obsidian person/date sync. |
-| Daily preflight | Skill Ops Governance | Check current Guanlan skills, registry freshness, eval/example coverage, and `.skill-store` sync without editing files. |
-| 09:15 | Consolidated Recovery Controller | Check accepted V4, active runs, First-Line gate, and Community gate. Dispatch at most one missing Business/First-Line fallback; route Community to local repair; never recollect accepted V4 for compatibility-only defects. |
-| 09:50 | Consolidated Closure | Run supervision, safe repair, Dashboard/publication checks, and Codex handoff only for unresolved targeted tasks. |
-| 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report, `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, the report's `publish_status` / `publish_error`, and `obsidian_sync_*` counts. If the report, output, publish closure, or Obsidian sync result is missing or failed, write a Codex handoff for `afternoon_skill_runner` or `afternoon_publication_failure`. |
-| Monday 10:30 | Weekly Reports | GitHub Actions refreshes the opportunity map, uses DeepSeek Pro to draft the previous Monday-Sunday report with source-ID citations, passes the content gate, then runs the deterministic page renderer and PR/deploy path. |
-| Sunday 18:00 | Weekly Learning Loop | Run weekly health. Repeated problems must become a Hermes inbox item that requires a gate, eval, or MEMORY prevention artifact before resolution. |
-| First Monday-Friday weekday 14:00 | Monthly Reports | GitHub Actions uses DeepSeek Pro to draft the previous calendar month's structure report and monthly maintenance report, passes the content gate, then runs the deterministic page renderer and PR/deploy path. |
-
-If any lane is still `queued` or `in_progress`, wait for it to finish before reporting that lane's data missing.
-
-## Status Handling
-
-| Report status | Hermes action | User action |
+| Status | Meaning | Hermes action |
 |---|---|---|
-| `passed` | Record the report and stop. | None. |
-| `warning` | Read warnings. If they are GitHub CLI timeout, skipped external checks, or missing historical reports while current data is present, do not escalate. | None unless the warning repeats for several days. |
-| `waiting` | A same-date workflow or Pages deployment is queued / in progress. Wait for completion before declaring data missing or asking Codex to repair. | None. |
-| `manual_required` | Follow the report action and ensure an open Hermes inbox item exists for Codex or the human operator. Manual workflow dispatch is allowed only after targeted diagnosis proves no reusable same-date artifacts exist. | Only needed for GitHub permission, login state, or manual PR merge. |
-| `failed` | Ensure an open Hermes inbox item exists, then send Codex the lane repair request from the report. | Only needed if Codex asks for authorization, login, or business judgment. |
+| `passed` | All controllers are observable. | Record and stop. |
+| `waiting` | The 10:20 check window has not arrived. | Stop without escalation. |
+| `manual_required` | A controller report is missing, unreadable, or structurally invalid. | Write one `control_plane_liveness` incident and stop. |
 
-## Daily Problem Watchdog Rule
+A controller report may contain downstream statuses such as `repair_required`, `waiting`, or `targeted_repair_required`. Those statuses prove the controller executed. Hermes must not duplicate the downstream incident or start another repair.
 
-Hermes has one problem-monitoring workflow:
+## Forbidden work
 
-```powershell
-npm run problem:daily -- --date=<YYYY-MM-DD>
-```
+Hermes must not:
 
-The GitHub workflow is `WaveSight Daily Problem Watchdog` (`.github/workflows/daily-recovery-watchdog.yml`). It observes failed production workflows and writes reports / inbox items only.
+- inspect Raw, Claim, Entity, CanonicalEvent, FDE, hardware, Tag, or projection content;
+- evaluate Business Signals compatibility Cards, Top10 counts, active dates, titles, or V3 graph assets;
+- supervise First-Line Viewpoints, Community Intelligence, periodic reports, or the 16:10 follow-builders publication;
+- run `supervise:daily` as an agent-owned production review;
+- create routine lane-quality repair items;
+- dispatch GitHub workflows, recollect sources, rerun production, edit data, change gates, invoke Codex, push branches, merge PRs, or deploy;
+- interpret a downstream failure as a control-plane failure when the controller report exists.
 
-It writes:
+## Incident boundary
 
-- `agent-workflow/reports/<date>-daily-recovery-watchdog.json`
-- `agent-workflow/reports/<date>-daily-recovery-watchdog.md`
-- `agent-workflow/inbox/hermes-to-codex/<date>-<lane>-daily-problem-watchdog.md` for actionable problems.
-
-Hard rules:
-
-- Do not run or recreate Hermes morning recovery or early handoff workflows.
-- Do not dispatch Business Signals, First-Line Viewpoints, Community Intelligence, or any recovery workflow from Hermes.
-- If a lane workflow is queued / in progress, record Waiting instead of missing data.
-- If same-date artifacts are healthy, repair publication / PR / Pages only.
-- If Business Signals Pool audit supply and Card supply are sufficient, provider Raw failures are diagnostic and must not trigger a full Raw rerun.
-- Codex should repair the earliest failing stage and add or tighten the relevant skill eval / context rule before closing the inbox item.
-
-## Weekly And Monthly Review
-
-Run weekly and monthly health reports as read-only reviews:
-
-```powershell
-npm run health:weekly -- --date=<YYYY-MM-DD> --days=7
-npm run health:monthly -- --date=<YYYY-MM-DD> --days=30
-```
-
-Weekly review should look for repeated failures that need a gate, eval, or monitor skill memory update. Monthly review should look for Git hygiene, stale branches/worktrees, large files, old report cleanup candidates, runtime drift, and deployment-service residue. Hermes reports findings; Codex performs code, rule, or cleanup changes.
-
-The scheduled report-production controller is separate from these read-only commands. Its gate order is content acceptance first and page generation/regression second. It creates local `codex/automation-*` branches only and does not push or deploy.
-
-During daily closure, also read the Data Center projection-coverage result. Entity and EntityMention references, accepted-event entity linkage, Entity Index organization/product projection, and current-batch FDE/hardware projection must remain complete. Zero FDE or hardware records are warning-only when the source batch contains none; do not create an independent FDE, hardware, or Entity scheduled task.
-
-## Codex Handoff Format
-
-When Hermes asks Codex for a repair, use this format exactly:
+The current incident registry is:
 
 ```text
-lane: business_signals / enterprise_ai_fde / first_line_viewpoints / community_intelligence / reports_center / skill_ops
-failed_gate: <gate name or report path>
-report_path: <exact report path>
-data_generated: yes / no / stale / unknown / not_applicable
-needed_action: repair rule / repair script / rerun gate / manual dispatch / commit only
-notes: <one or two lines of concrete evidence>
+agent-workflow/inbox/production-incidents/
 ```
 
-Do not send broad descriptions without report paths. Codex should be able to start from the report and reproduce the failure.
+`agent-workflow/inbox/hermes-to-codex/` is legacy history. New routine supervision records must not be written there.
 
-Hermes can also write the request as a file under:
+The only incident category Hermes may create is:
 
 ```text
-agent-workflow/inbox/hermes-to-codex/YYYY-MM-DD-<lane>-<short-slug>.md
+lane: automation
+category: control_plane_liveness
+failed_gate: hermes_control_plane_watchdog
 ```
 
-Codex reads the inbox with:
+The requested action must be limited to restoring the missing scheduled task, controller process, or report-writing path. Once control-plane observability is restored, Closure and Codex decide whether downstream repair remains.
 
-```powershell
-npm run inbox:hermes -- --status=open --latest=false
-```
+## Human escalation
 
-Codex can print a repair prompt only with:
+Hermes may ask the user only when restoring observability requires:
 
-```powershell
-npm run inbox:hermes -- --status=open --latest=false --format=prompt
-```
+- Windows Scheduled Task permission;
+- GitHub authentication or repository permission;
+- a machine/login state that Codex cannot access;
+- approval for a new credential or scheduling mechanism.
 
-After Codex repairs and validates the issue, close the item with:
-
-```powershell
-npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>
-```
-
-Use `agent-workflow/inbox/hermes-to-codex/TEMPLATE.md` for the required fields.
-
-## Boundaries
-
-- Do not treat `warning` as a production failure unless it repeats or blocks publication.
-- Do not push directly to `main`; publication remains automation branch -> PR -> `main` -> GitHub Pages.
-- Do not use `05-frontier-opinions/*` as current First-Line Viewpoints evidence.
-- Do not use old `01-SiteV2/knowledge/02-Opinion-Timelines/people/*/YYYY-MM.md` month files as proof of current First-Line Viewpoints Obsidian sync.
-- Do not use community posts or builders viewpoints as Business Signal facts unless separately verified through Raw / Pool.
-- Do not copy stale artifact `site-content.json` during Business Signals recovery; rebuild site data from current Cards.
-- Do not edit monitor skills directly after an incident. Ask Codex to update evals / rules / memory and commit.
-
-## Human Escalation
-
-Ask the user only for:
-
-- GitHub permission or manual PR merge;
-- community source login / QR code / browser session repair;
-- business judgment that cannot be inferred from source-backed data;
-- approval for a new scheduled task, credential, or deployment mechanism.
+It must not ask the user to judge ordinary lane data quality or compatibility Card volume.

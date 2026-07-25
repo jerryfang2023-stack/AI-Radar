@@ -19,7 +19,7 @@ const args = new Map(
 const date = args.get("date") || shanghaiDate();
 const githubMode = args.get("github") || "auto";
 const taskMode = args.get("scheduled-task") || "auto";
-const hermesMode = args.get("hermes") || args.get("write-hermes") || "auto";
+const hermesMode = args.get("hermes") || args.get("write-hermes") || "off";
 const forceAfternoonWindow = args.get("force-afternoon-window") === "true";
 
 function shanghaiDate(value = new Date()) {
@@ -272,9 +272,7 @@ function isTodayOrPast(targetDate) {
 }
 
 function shouldWriteHermesInbox() {
-  if (["off", "false", "0", "no"].includes(String(hermesMode).toLowerCase())) return false;
-  if (["on", "true", "1", "yes"].includes(String(hermesMode).toLowerCase())) return true;
-  return date === shanghaiDate();
+  return false;
 }
 
 function hasWindowPassed(targetDate, hhmm) {

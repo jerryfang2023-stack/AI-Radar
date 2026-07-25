@@ -3,12 +3,12 @@ name: guanlan-enterprise-ai-fde-monitor
 description: Use only for frozen SITE-V3.4.5 Enterprise AI/FDE data and Obsidian compatibility. V4 FDE facts are owned by guanlan-fde-data-projection; this skill must not infer demand, service, result, ROI, or team details into V4.
 metadata:
   guanlan:
-    version: "1.2.2"
+    version: "1.2.3"
     lane: "Enterprise AI / FDE"
     status: "compatibility lane owner"
     order: 15
     responsibility: "Keep the frozen V3 FDE lens and Obsidian output compatible with accepted FDE-V2 records."
-    upstream: "Business Signals Raw / Pool evidence, FDE source-only discovery, Hermes inbox"
+    upstream: "Business Signals Raw / Pool evidence, FDE source-only discovery, production incident registry"
     downstream: "enterprise-ai-fde.json, Business Signals enterpriseAiTransformation lens, content/09-fde Obsidian archive, FDE quality gates"
     gates: "FDE precision, raw/card title-fact ingestion boundary, detail-openability, demand/service/result completeness, Obsidian sync"
     recent_learning: "Retired V3 page JS is not an implementation surface. This skill maintains compatibility data, detail integrity, and Obsidian output only; V4 FDE facts remain owned by the FDE-V2 projection."
@@ -32,7 +32,7 @@ Read only what is needed:
 4. `context/05-daily-monitoring.md`
 5. `context/07-v3-intelligence-generation-rules.md`
 6. `context/frontstage-page-contracts.md`
-7. Relevant FDE report, Hermes inbox item, or failed gate output.
+7. Relevant FDE report, production incident, legacy Hermes record, or failed gate output.
 
 For implementation work, inspect:
 

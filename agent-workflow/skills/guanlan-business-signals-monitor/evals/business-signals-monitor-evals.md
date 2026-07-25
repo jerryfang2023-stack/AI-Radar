@@ -28,15 +28,15 @@ Compatibility note: legacy field and gate names such as `frontstageCards`, `publ
 6. `builders_and_community_boundary`
    - Pass when builders viewpoints and community leads are not used as facts, graph evidence, or trend-candidate evidence unless recaptured through Raw / Pool.
 
-7. `hermes_repair_closure`
-   - Pass when any related Hermes inbox item is closed only after validation and a prevention artifact is recorded.
+7. `production_incident_closure`
+   - Pass when any related production incident is closed only after validation and a prevention artifact is recorded.
 
 8. `publication_boundary`
    - Pass when publication uses automation branch -> PR -> `main` -> GitHub Pages, not direct deployment or direct generated-data push to `main`.
 
 9. `before_10_problem_watchdog`
    - Pass when the 08:10 local consolidated controller conditionally dispatches production, the 09:15 recovery controller performs at most one targeted fallback after checking accepted V4 and active runs, and the 09:50 consolidated closure performs safe checks plus targeted Codex handoff.
-   - Pass when `WaveSight Daily Problem Watchdog` records failed production runs to a dated report and Hermes inbox item without dispatching a recovery workflow.
+   - Pass when `WaveSight Daily Problem Watchdog` records failed production runs to a dated report and neutral production incident without dispatching a recovery workflow.
    - Pass when Hermes morning recovery and early handoff workflows, package scripts, and GitHub workflow files are absent.
    - Fail when the lane relies on repeated 10:07 / 12:07 / 13:07 / 14:07 schedule loops or a Hermes recovery/handoff workflow instead of producing a problem report and Codex inbox item.
    - Fail when a queued / in-progress same-date workflow is reported as `manual_required` instead of `waiting`.
@@ -146,12 +146,12 @@ Compatibility note: legacy field and gate names such as `frontstageCards`, `publ
     - Fail when a report says "raw shortage" without naming which source/channel or downstream eligibility bucket is actually short.
 
 25. `weekly_repeated_failure_review`
-    - Pass when two or more Business Hermes items with the same category in a seven-day window produce a weekly failure review report and a durable skill memory/eval update.
+    - Pass when two or more Business production incidents with the same category in a seven-day window produce a weekly failure review report and a durable skill memory/eval update.
     - Pass when the review distinguishes true Business data failures from supervision observability, publication, and local-sync warnings.
     - Fail when repeated `business_signals_frontstage_cards_missing` incidents are closed as same-day data fixes without identifying whether the root was stale assets, source-artifact retry, Raw/Card title-fact ingestion, publication, or supervision classification.
 
-26. `hermes_inbox_resolution_quality`
-    - Pass when a resolved Business Hermes inbox item records the final fix commit or PR, exact validation command, and prevention artifact.
+26. `production_incident_resolution_quality`
+    - Pass when a resolved Business production incident records the final fix commit or PR, exact validation command, and prevention artifact.
     - Pass when `pending-local-change` is used only before commit / PR publication and is updated after merge if the item is marked resolved.
     - Fail when a resolved item keeps `fix_commit=pending`, mixes contradictory resolution records, or omits the gate/eval/memory/context prevention artifact for a recurring failure.
 
@@ -163,11 +163,12 @@ Compatibility note: legacy field and gate names such as `frontstageCards`, `publ
     - Pass when source-artifact Raw selection rotates across GDELT, keyword search, RSS, and AI HOT as peer channels instead of consuming one fixed priority channel first.
     - Fail when a transient provider note or Raw-only shortage blocks Card generation after Pool audit supply and the frontstage Card contract are sufficient, or when provider recovery hides a true Pool/Card shortage.
 
-28. `hermes_business_signal_data_entry_contract`
-    - Pass when Hermes / data-officer analysis counts active-date public Business Signal Cards from `v3-data-observation-desk.json.frontstageCards.filter(card.date === meta.activeDate)` or `intelligence-graph-index.json.todayFrontstageCards`.
+28. `compatibility_card_analytics_boundary`
+    - Pass when compatibility-lane analytics count active-date Business Signal Cards from `v3-data-observation-desk.json.frontstageCards.filter(card.date === meta.activeDate)` or `intelligence-graph-index.json.todayFrontstageCards`.
     - Pass when `intelligence-graph-index.json.summary.todayFrontstageCards` matches the active-date public Card count and funding presence is computed only from those active-date public Cards.
     - Pass when `product-service` is normalized to `product_service` before category analytics.
-    - Fail when Hermes treats `coreSignalCards`, `relationshipDirections`, `observationSeeds`, `dailyLens.categoryStats.last7/total`, historical `cards`, or stale reports as today's frontstage Card set.
+    - Fail when any compatibility consumer treats `coreSignalCards`, `relationshipDirections`, `observationSeeds`, `dailyLens.categoryStats.last7/total`, historical `cards`, or stale reports as today's frontstage Card set.
+    - Fail when Hermes inspects compatibility Card data; Hermes is limited to control-plane liveness.
 
 29. `provider_recovery_and_card_quality_boundary`
     - Pass when AIHOT recovery checks direct daily/all endpoint failures, fallback-search use, `source_item_count`, and `raw_candidate_count`; `status=collected` alone is not enough.

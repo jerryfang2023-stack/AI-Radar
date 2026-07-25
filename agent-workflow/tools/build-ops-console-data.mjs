@@ -43,19 +43,24 @@ function parseInboxFields(markdown) {
   return fields;
 }
 
-function parseHermesInbox() {
-  const dir = abs("agent-workflow", "inbox", "hermes-to-codex");
-  if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir)
-    .filter(isHermesInboxRecordFilename)
-    .sort()
-    .map((name) => {
+function parseIncidentInbox() {
+  const dirs = [
+    ["agent-workflow", "inbox", "production-incidents"],
+    ["agent-workflow", "inbox", "hermes-to-codex"],
+  ];
+  return dirs.flatMap((parts) => {
+    const dir = abs(...parts);
+    if (!fs.existsSync(dir)) return [];
+    return fs.readdirSync(dir)
+      .filter(isHermesInboxRecordFilename)
+      .sort()
+      .map((name) => {
       const markdown = fs.readFileSync(path.join(dir, name), "utf8");
       const fields = parseInboxFields(markdown);
       const date = fields.date || name.match(/^\d{4}-\d{2}-\d{2}/)?.[0] || "";
       const title = markdown.match(/^#\s+(.+)$/m)?.[1]?.trim() || name.replace(/\.md$/, "");
       const status = (fields.status || "open").toLowerCase();
-      const isResolved = ["resolved", "closed", "done"].includes(status);
+      const isResolved = ["resolved", "manual_archive", "closed", "done"].includes(status);
       return {
         id: name.replace(/\.md$/, ""),
         date,
@@ -76,9 +81,10 @@ function parseHermesInbox() {
         fixCommit: fields.fix_commit || "",
         validation: fields.validation || "",
         prevention: fields.prevention_added || "",
-        sourceFile: rel("agent-workflow", "inbox", "hermes-to-codex", name),
+        sourceFile: rel(...parts, name),
       };
     });
+  });
 }
 
 function statusText(status) {
@@ -273,7 +279,7 @@ const pipelineFile = "01-SiteV2/site/data/pipeline-dashboard.json";
 const ledgerFile = "context/version-ledger.md";
 const supervision = readJson(supervisionFile, { lanes: [] });
 const pipeline = readJson(pipelineFile, {});
-const inbox = parseHermesInbox();
+const inbox = parseIncidentInbox();
 const supervisionIssues = buildSupervisionIssues(supervision);
 const allIssues = [...supervisionIssues, ...inbox];
 const openIssues = allIssues.filter((item) => item.state !== "resolved");
@@ -286,7 +292,7 @@ const data = {
     version: VERSION,
     generatedAt: new Date().toISOString(),
     date: dailyDate,
-    sources: [supervisionFile, pipelineFile, ledgerFile, "agent-workflow/inbox/hermes-to-codex/*.md"],
+    sources: [supervisionFile, pipelineFile, ledgerFile, "agent-workflow/inbox/production-incidents/*.md", "agent-workflow/inbox/hermes-to-codex/*.md"],
   },
   navigation: [
     { id: "overview", label: "总览" },

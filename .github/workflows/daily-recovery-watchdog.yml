@@ -60,7 +60,7 @@ jobs:
       - name: Syntax check problem watchdog
         run: node --check agent-workflow/tools/dispatch-daily-recovery.mjs
 
-      - name: Record problem and inbox if needed
+      - name: Record problem and production incident if needed
         shell: bash
         run: |
           set -euo pipefail
@@ -86,7 +86,7 @@ jobs:
 
           node agent-workflow/tools/dispatch-daily-recovery.mjs "${args[@]}"
 
-      - name: Upload problem report and inbox
+      - name: Upload problem report and production incident
         if: always()
         uses: actions/upload-artifact@v6
         with:
@@ -96,4 +96,4 @@ jobs:
           path: |
             agent-workflow/reports/*-daily-recovery-watchdog.json
             agent-workflow/reports/*-daily-recovery-watchdog.md
-            agent-workflow/inbox/hermes-to-codex/*daily-problem-watchdog.md
+            agent-workflow/inbox/production-incidents/*daily-problem-watchdog.md

@@ -56,6 +56,6 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 
 - Current version, release time, and freeze points belong in `context/version-ledger.md`.
 - Current execution routes belong in `AGENTS.md`, `context/context-index.md`, and the relevant `context/` rule files.
-- Daily monitoring results belong in reports and Hermes inbox items.
+- Daily monitoring results belong in reports and the neutral production incident registry. Hermes may create only control-plane liveness incidents.
 - Skill-specific learnings belong in each skill's `MEMORY.md`.
 - Temporary task closeouts should not be copied here unless they create a durable rule.
