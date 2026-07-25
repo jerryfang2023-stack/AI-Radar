@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T06:10:03.737Z",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1516,
+    "eventCount": 1533,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -22,10 +22,10 @@
       "EV-a9d0bb672c5ec0ab",
       "EV-88f4ee8cd57bdf42",
       "EV-b85139b8fba1a5c5",
-      "EV-3dd0912fae720df7",
+      "EV-4b545e310ded2baa",
       "EV-e869f17214557633",
+      "EV-051d1924db7ba65d",
       "EV-8abf5adc3e72fbb8",
-      "EV-2c476cb7969f399b",
       "EV-3fb492fb45980541",
       "EV-05a87b578967c83e",
       "EV-78277c678f01e540",
@@ -44,6 +44,9 @@
       "EN-28d0bd981118a907",
       "EN-d3565d297d476f10",
       "EN-3474e24464fc25a7",
+      "EN-1bf93b12e68cac56",
+      "EN-b9776d7ddf459c9a",
+      "EN-bbdefa2950f49882",
       "EN-7d3194f79e645c42",
       "EN-88e2cce43eeadb36",
       "EN-19e41212c0556603",
@@ -55,20 +58,21 @@
       "EN-89e28a570dce8b18",
       "EN-b70e8201c9feb94a",
       "EN-3673c8b4dba7409e",
+      "EN-7b80ed96beed8c0a",
       "EN-7d1507284a5757ca",
       "EN-cbc62794911ff31b",
       "EN-dba61afed18c85d6"
     ],
     "fdeIds": [
-      "FDE-4f2a8cb5ce476228",
+      "FDE-e79a238725a98c06",
       "FDE-3e499215265a81d5",
+      "FDE-bab34e14939e664d",
       "FDE-d08fed45110ab44b",
-      "FDE-cc943789fb1c3f3d",
       "FDE-3665b073634d4b9d"
     ],
     "hardwareIds": [],
     "firstSeen": "2026-03-04",
-    "lastSeen": "2026-07-19"
+    "lastSeen": "2026-07-18"
   },
   "events": [
     {
@@ -232,10 +236,12 @@
       ],
       "entityIds": [
         "EN-3ccbd9105a45d8fc",
+        "EN-e9b67bdfb6ae6a2e",
         "EN-8147e6fed86d42c1"
       ],
       "entityNames": [
         "Salesforce",
+        "NIO",
         "OPPO"
       ],
       "productName": "",
@@ -449,28 +455,44 @@
       "publisher": "polling.reuters.com"
     },
     {
-      "id": "EV-3dd0912fae720df7",
+      "id": "EV-4b545e310ded2baa",
       "dataDate": "2026-07-16",
       "date": "2026-07-14",
       "updatedDate": "2026-07-16",
       "eventType": "deployment",
       "eventTypeLabel": "部署",
       "eventGroup": "部署与案例",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
       "title": "巴西银行将智能体AI嵌入核心工作流程，强化关系银行与客户互动",
       "originalTitle": "Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE",
       "subject": "Banco do Brasil",
-      "action": "deployment",
-      "object": "NiCE Copilot",
-      "metrics": [],
+      "action": "Embeds",
+      "object": "Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE",
+      "metrics": [
+        "90 million"
+      ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
-      "tags": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
       "facets": {
-        "product_form": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
         "use_case": [
           {
             "dimensionId": "use_case",
@@ -479,11 +501,36 @@
             "name": "客户服务"
           }
         ],
-        "industry": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
         "deployment_model": [],
         "target_user": []
       },
       "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
         {
           "dimensionId": "use_case",
           "id": "customer_service",
@@ -493,17 +540,37 @@
       ],
       "displayTags": [
         {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
           "dimensionId": "use_case",
           "id": "customer_service",
           "dimensionName": "应用场景",
           "name": "客户服务"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
         }
       ],
       "entityIds": [
-        "EN-d3565d297d476f10"
+        "EN-d3565d297d476f10",
+        "EN-96eebba49dbbf422"
       ],
       "entityNames": [
-        "Banco do Brasil"
+        "Banco do Brasil",
+        "Intel"
       ],
       "productName": "",
       "products": [],
@@ -609,6 +676,77 @@
       "products": [],
       "sourceUrl": "https://globenewswire.com/news-release/2026/06/23/3316084/0/en/Talkdesk-ends-the-guesswork-in-deploying-customer-facing-AI-agents.html",
       "publisher": "globenewswire.com"
+    },
+    {
+      "id": "EV-051d1924db7ba65d",
+      "dataDate": "2026-06-04",
+      "date": "2026-06-04",
+      "updatedDate": "2026-06-04",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "家得宝借助谷歌云Gemini企业版实现客户支持速度提升四倍 - 2026年4月22日",
+      "originalTitle": "The Home Depot Delivers Customer Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience - Apr 22, 2026",
+      "subject": "The",
+      "action": "deployment",
+      "object": "Gemini Enterprise store phone support",
+      "metrics": [],
+      "locations": [
+        "US",
+        "U.S."
+      ],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "entityIds": [
+        "EN-1bf93b12e68cac56",
+        "EN-b9776d7ddf459c9a",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "The Home Depot",
+        "The",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience",
+      "publisher": "googlecloudpresscorner.com"
     },
     {
       "id": "EV-8abf5adc3e72fbb8",
@@ -737,113 +875,6 @@
       "products": [],
       "sourceUrl": "https://thenextweb.com/news/parloa-turns-its-350-million-war-chest-into-a-partnership-web-spanning-sap-microsoft-and-openai",
       "publisher": "thenextweb.com"
-    },
-    {
-      "id": "EV-2c476cb7969f399b",
-      "dataDate": "2026-07-19",
-      "date": "2026-03-19",
-      "updatedDate": "2026-07-19",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "eventGroup": "部署与案例",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
-      "originalTitle": "Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-      "subject": "Forward",
-      "action": "Deployed",
-      "object": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-      "metrics": [
-        "800%",
-        "40%",
-        "50%",
-        "70%"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "customer_service",
-            "dimensionName": "应用场景",
-            "name": "客户服务"
-          }
-        ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "financial_services",
-            "dimensionName": "行业",
-            "name": "金融服务"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "customer_service",
-          "dimensionName": "应用场景",
-          "name": "客户服务"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "customer_service",
-          "dimensionName": "应用场景",
-          "name": "客户服务"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        }
-      ],
-      "entityIds": [
-        "EN-3ccbd9105a45d8fc",
-        "EN-b0532e1af75cc4ab"
-      ],
-      "entityNames": [
-        "Salesforce",
-        "Rime"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human",
-      "publisher": "salesforce.com"
     },
     {
       "id": "EV-3fb492fb45980541",
@@ -1340,15 +1371,13 @@
         "EN-89e28a570dce8b18",
         "EN-7d3194f79e645c42",
         "EN-b70e8201c9feb94a",
-        "EN-3673c8b4dba7409e",
-        "EN-7b80ed96beed8c0a"
+        "EN-3673c8b4dba7409e"
       ],
       "entityNames": [
         "TECHSHOTS | OpenAI",
         "OpenAI",
         "AI Workflow Automation",
-        "Agent Builder",
-        "Launches Agent Builder"
+        "Agent Builder"
       ],
       "productName": "AI Workflow Automation",
       "products": [
@@ -1361,13 +1390,6 @@
         },
         {
           "name": "Agent Builder",
-          "type": "产品/服务",
-          "ownerNames": [
-            "OpenAI"
-          ]
-        },
-        {
-          "name": "Launches Agent Builder",
           "type": "产品/服务",
           "ownerNames": [
             "OpenAI"
@@ -1504,7 +1526,6 @@
         "EV-d756f05478303505",
         "EV-06b294f255c0087e",
         "EV-dac8e2b1fb11403f",
-        "EV-2c476cb7969f399b",
         "EV-06487af6e98ea491",
         "EV-bb9ba11acf104db1",
         "EV-bee410f8134cba5a",
@@ -1544,9 +1565,7 @@
         "TX-technology-open_weights",
         "TX-technology-video_generation"
       ],
-      "relatedEntityIds": [
-        "EN-3ccbd9105a45d8fc"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-03-11",
       "lastSeen": "2026-07-24"
     },
@@ -1599,7 +1618,6 @@
         "EV-d9270ae7b862212b",
         "EV-3f8f6a578be79988",
         "EV-8b73e88ffd3569b2",
-        "EV-2c476cb7969f399b",
         "EV-30d7f1c5dc8ea464",
         "EV-9009adaed650ddde",
         "EV-11a8e196deb21300",
@@ -1615,11 +1633,9 @@
         "TX-technology-code_generation",
         "TX-use_case-customer_service"
       ],
-      "relatedEntityIds": [
-        "EN-b0532e1af75cc4ab"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
-      "lastSeen": "2026-07-19"
+      "lastSeen": "2026-07-15"
     },
     {
       "id": "EN-8147e6fed86d42c1",
@@ -1652,10 +1668,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-on_device",
         "TX-technology-embodied_ai"
@@ -1738,7 +1754,6 @@
         "EV-e941c32639167c23",
         "EV-e8d1de5c77f32b9c",
         "EV-6a7f9d990732e4e2",
-        "EV-6ae3594aadfcd3d8",
         "EV-bc4ac955cd26b969",
         "EV-88f4ee8cd57bdf42",
         "EV-ef7346378fcf9746",
@@ -1757,12 +1772,13 @@
         "EV-0b6cfbf67ba2da31",
         "EV-8b0f056571d68269",
         "EV-30ba1a24f74ccc6d",
+        "EV-4b545e310ded2baa",
         "EV-b4eb99a878be9bb2",
-        "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
         "EV-4dd25589d834060d",
         "EV-6617850e0b014051",
         "EV-c81cb21337a9bb98",
+        "EV-2f9a87bd46248fe8",
         "EV-056bb8c683ef60a4",
         "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
@@ -1808,7 +1824,7 @@
         "EV-f784003febc1d9eb",
         "EV-7e52d691a0553667",
         "EV-37cdd2fae39aaa2e",
-        "EV-1e7c76dae985100f",
+        "EV-3d1c01d3d1b0bba4",
         "EV-644337db309a1c82",
         "EV-9ae9aa86e51e64a2",
         "EV-be19904753c9c486",
@@ -1817,7 +1833,11 @@
         "EV-4e55361d8324dd49",
         "EV-97a8d86baa7fffc4",
         "EV-f89ba2b487d4abf1",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-bff418b2959f58fb",
         "EV-c5b8faec223a4caf",
+        "EV-da062d02015f99fb",
         "EV-9eb3693cc65fbca9",
         "EV-57597c92f7b183a9",
         "EV-5493c61bcbe58aa2",
@@ -1846,13 +1866,13 @@
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
@@ -1902,7 +1922,6 @@
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
         "EV-381b79897d896995",
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
@@ -1958,7 +1977,6 @@
         "EV-f7484ad16a6d1876",
         "EV-d2d1834222ab32d3",
         "EV-04c2ffd7f6b10126",
-        "EV-a9e22f22b7a2ec53",
         "EV-922de7a46f447efa",
         "EV-1f61330a3f828179",
         "EV-523e5de44cc464fb",
@@ -1975,6 +1993,7 @@
         "EV-1587a760d81451be",
         "EV-33e7429a7bc94840",
         "EV-022d1f3160d94048",
+        "EV-933294dfb2d19a67",
         "EV-7580a050ca19a8ae"
       ],
       "viewpointIds": [],
@@ -1983,12 +2002,12 @@
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-computer_use",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
@@ -2011,7 +2030,6 @@
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-cbc62794911ff31b",
         "EN-8d4321d936320802",
         "EN-10fce287b4b1464c"
       ],
@@ -2036,8 +2054,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-technology",
-        "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences"
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-customer_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-20",
@@ -2054,10 +2072,12 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-3dd0912fae720df7"
+        "EV-4b545e310ded2baa"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
         "TX-use_case-customer_service"
       ],
       "relatedEntityIds": [],
@@ -2088,6 +2108,260 @@
       "lastSeen": "2026-07-06"
     },
     {
+      "id": "EN-1bf93b12e68cac56",
+      "name": "The Home Depot",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-051d1924db7ba65d",
+        "EV-d12aa40eff40c97e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-10"
+    },
+    {
+      "id": "EN-b9776d7ddf459c9a",
+      "name": "The",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-051d1924db7ba65d",
+        "EV-3d6051434ff075b4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-10"
+    },
+    {
+      "id": "EN-bbdefa2950f49882",
+      "name": "Google",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "谷歌"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9b81b0dd09a046ab",
+        "EV-e41fc65eb014893f",
+        "EV-dfddbb260b3d1c77",
+        "EV-78a11d309c3d4e97",
+        "EV-2bb63a3015195f9b",
+        "EV-43b56d49df9a73a2",
+        "EV-0e84a2f49d765ce3",
+        "EV-dbbe3fd637be213f",
+        "EV-4a162c41bb82f325",
+        "EV-5762fe51987bc5ff",
+        "EV-6cb8979f92cf74ce",
+        "EV-38232fed5e0cfdd6",
+        "EV-e7b228c1b6b54c6a",
+        "EV-cf76f090a1a20a36",
+        "EV-ff1f6119de13fa19",
+        "EV-cec235426920c522",
+        "EV-051d1924db7ba65d",
+        "EV-777eb5b7783b71fb",
+        "EV-5a9fe80f8e4ae066",
+        "EV-b4b5d141dac164c2",
+        "EV-36a9e4e908249381",
+        "EV-98496cc86bacb1e0",
+        "EV-ef6464cf7f764835",
+        "EV-b95539d17772a4ce",
+        "EV-d1a3f5c8045e548d",
+        "EV-f949fd95df58d42d",
+        "EV-97747aee0cafd9f3",
+        "EV-c0a65877001ed413",
+        "EV-2634b786bde9fb8e",
+        "EV-6aabfaa0c7c7f838",
+        "EV-c914ac00a35d7cf0",
+        "EV-c9d7b46d167df2d1",
+        "EV-5b193a038ab4ea22",
+        "EV-969923b0b978a660",
+        "EV-6ce069b1845f5a52",
+        "EV-597b8257a97b3d02",
+        "EV-5aaa4c6697606274",
+        "EV-834e65247c2d4a3b",
+        "EV-cc974e0031c69715",
+        "EV-cd067fa6f39fe828",
+        "EV-dc3a5509a690a6b0",
+        "EV-f3cc0845ce442e6b",
+        "EV-bee410f8134cba5a",
+        "EV-a255cfc0dab44564",
+        "EV-98a80b75b27d9f3b",
+        "EV-29e069ac093f0e34",
+        "EV-62feeb8f8791c63c",
+        "EV-8fbe211e9d4bae03",
+        "EV-04efb4eecbb8125f",
+        "EV-6359c9f6c2609a38",
+        "EV-a442b55d0bac5651",
+        "EV-49d9029bdcf87db4",
+        "EV-c2d784ef0a5376f8",
+        "EV-967239f907803753",
+        "EV-ac8f8581cd1ca75d",
+        "EV-f05783f745bc7c2c",
+        "EV-2cd95ab95d0f2ad9",
+        "EV-52508b70ccd2cc0b",
+        "EV-71226eeff6dc7c42",
+        "EV-d12aa40eff40c97e",
+        "EV-9254af7aaedaafbe",
+        "EV-04ee2bc4ac888358",
+        "EV-96c8ce4ee89adb84",
+        "EV-caec65aef89d3b4a",
+        "EV-cabc88e1d09dec80",
+        "EV-cc3b92fe233953cf",
+        "EV-0edb0a592ca1fd67",
+        "EV-2059f42c7b2aff44",
+        "EV-77662aa9bef9efbe",
+        "EV-7e52d691a0553667",
+        "EV-b8bba030747fd3b6",
+        "EV-8aead769e84de342",
+        "EV-982a92fc86f1d20c",
+        "EV-eddb4330fed15762",
+        "EV-2298304e18dbf493",
+        "EV-89b644ff05e6b93b",
+        "EV-9c4b862020202f6c",
+        "EV-d8c69ed782b73a34",
+        "EV-5012364af7480121",
+        "EV-3acf607a02706fa8",
+        "EV-44ae3e7fda9320dc",
+        "EV-abf0990dcaceb1ce",
+        "EV-d5cc9a50a9b88d2b",
+        "EV-6225d18316f90a0d",
+        "EV-b860d46fee913f27",
+        "EV-011eeba13ebcc9a8",
+        "EV-8a26b85b4f432525",
+        "EV-3f23ddb47fc652a4",
+        "EV-a886a800f06ab9d6",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-43a5b874a66b42b3",
+        "EV-c108e7cc2df7faf4",
+        "EV-916bcaee6266e0d0",
+        "EV-54c329f4c8e4227b",
+        "EV-c3cbf5d7f860c693",
+        "EV-009105cbcf82a638",
+        "EV-99e5df844a1bd670",
+        "EV-1b03e5dff76a50a1",
+        "EV-51dfd0d541380500",
+        "EV-ab3586268ebfab38",
+        "EV-b4f3dcac8cc230d9",
+        "EV-d2d1834222ab32d3",
+        "EV-8eed6489ab514823",
+        "EV-22b8d155ce027905",
+        "EV-3ef3e18df61a00d8",
+        "EV-4bb5b24400e49ea4",
+        "EV-568d2aeab5234e48",
+        "EV-0ad758b04b9b5313",
+        "EV-c08837795f9e16d2",
+        "EV-4a3cb762183581cd",
+        "EV-5a1422a9929c582e",
+        "EV-bff418b2959f58fb",
+        "EV-a591b0c96f79de45",
+        "EV-5493c61bcbe58aa2",
+        "EV-cac9d9f31ef675ce",
+        "EV-dab4d3f2059e8880",
+        "EV-342799d4e68e7416",
+        "EV-d53cd33e8f541a65",
+        "EV-a4f052325d0ef230",
+        "EV-cb3cb11ff13f6069",
+        "EV-8115dd18f2812a29",
+        "EV-909cf18b467d6fdf",
+        "EV-89bdda008227fb6b",
+        "EV-ef823877347ff40f",
+        "EV-3e9a0d1be6de5096",
+        "EV-848bdd13f319c516",
+        "EV-8cd7665e40729256",
+        "EV-2d56dec8dfeb2b56",
+        "EV-1b92b6c835ce240c",
+        "EV-8925c94e9a1c5f03",
+        "EV-6950bb00a0913038",
+        "EV-392894a7cc673b9e",
+        "EV-ad269fada2269f35",
+        "EV-6fba63ca5f1e51c7",
+        "EV-1df9b606627460f7",
+        "EV-7580a050ca19a8ae",
+        "EV-39460c022e56badd",
+        "EV-ecfc552af7344d65"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-computer_use",
+        "TX-technology-multimodal",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-use_case-robotics_automation",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
+        "TX-technology-on_device",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-embodied_ai",
+        "TX-technology-fine_tuning",
+        "TX-technology-model_context_protocol",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio",
+        "TX-use_case-content_creation"
+      ],
+      "relatedEntityIds": [
+        "EN-18f0900d6c487f59",
+        "EN-a85d5a9b4a77d59b",
+        "EN-6f216f2ea5b7a13e",
+        "EN-96eebba49dbbf422",
+        "EN-81e577740888ca6d",
+        "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
+        "EN-40f98159922ab514",
+        "EN-8d323d8bba783aa3",
+        "EN-9ff1a58a589bc318",
+        "EN-01f1074bb52ff605",
+        "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
+        "EN-1cd41545564777ce",
+        "EN-2998f8b13f4fd72e",
+        "EN-b5c336c0dd1ff29c",
+        "EN-d56aa2f9908f566a",
+        "EN-4baef0e41cbd7ae2",
+        "EN-bdfecbcd7dbf76d2",
+        "EN-2aae0de3f5530f08"
+      ],
+      "firstSeen": "2025-10-09",
+      "lastSeen": "2026-07-24"
+    },
+    {
       "id": "EN-7d3194f79e645c42",
       "name": "OpenAI",
       "entityType": "organization_candidate",
@@ -2112,14 +2386,13 @@
         "EV-aa33ca051f3a7f78",
         "EV-d4e44892226be468",
         "EV-edcb66d0401cfb8f",
-        "EV-036f43cf7a0549eb",
         "EV-336cd248842004a5",
         "EV-a42e51959c627554",
         "EV-ee0662b75588987e",
-        "EV-9055cb4fa2b4ee62",
         "EV-b1138bccf5ccd86c",
         "EV-201b25d4f3cf696a",
         "EV-d9270ae7b862212b",
+        "EV-5762fe51987bc5ff",
         "EV-7954fd5a6b8b76d0",
         "EV-7add33b4c74dbf1a",
         "EV-1abf0d076d30ec6d",
@@ -2129,13 +2402,13 @@
         "EV-acdeebead5324344",
         "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
+        "EV-a4f5d59c1b4ddce1",
         "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
         "EV-6fa2c58973ea61b4",
         "EV-e15ae1112294d59e",
         "EV-36d484148fbd3424",
         "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
         "EV-62901df23f471eea",
         "EV-538adc98d1da8fda",
         "EV-d209a6acecba4285",
@@ -2171,7 +2444,6 @@
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
         "EV-969923b0b978a660",
-        "EV-ea6abb5378846a71",
         "EV-133a92cb6cb25a0c",
         "EV-7c836c34e7cf36ee",
         "EV-071c72225b8aaf80",
@@ -2194,7 +2466,7 @@
         "EV-b9296439f7c34c89",
         "EV-cf5b2a0aff3914bd",
         "EV-025778b83c1b2ca9",
-        "EV-4b8dffdf86ae5009",
+        "EV-34198b3eaa701a00",
         "EV-969ed3078d10f0c9",
         "EV-d7d8fcd0694a590f",
         "EV-6e7b632ee0b3410d",
@@ -2240,9 +2512,8 @@
         "EV-6364cfadff0d1d30",
         "EV-6eb9a23be3117421",
         "EV-a0d3853dd41c8ef6",
-        "EV-b26bead25288d19c",
         "EV-37cdd2fae39aaa2e",
-        "EV-1e7c76dae985100f",
+        "EV-3d1c01d3d1b0bba4",
         "EV-644337db309a1c82",
         "EV-be69ef6fcae83890",
         "EV-482df8a8ef264238",
@@ -2260,12 +2531,11 @@
         "EV-7f979d0a01e6dffa",
         "EV-f3e11eadfb7c6a4b",
         "EV-ab3586268ebfab38",
-        "EV-2cb9dbed2b2b6077",
         "EV-d6ba9ef3ff65940c",
         "EV-3f8ba5855b64dd1a",
         "EV-b73c7096546b82e8",
         "EV-f89ba2b487d4abf1",
-        "EV-57b029a4afb71044",
+        "EV-59016292a76a2c19",
         "EV-ad1444d8653b37ae",
         "EV-8f167245603f8ebc",
         "EV-fbdfb5888ad19663",
@@ -2286,6 +2556,7 @@
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
+        "EV-d709599eddf5db04",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
@@ -2310,6 +2581,7 @@
         "EV-62df953d81def866",
         "EV-6b7917bd7edd4bde",
         "EV-e1ebf7d63e058a39",
+        "EV-933294dfb2d19a67",
         "EV-b52af7bb03c98eb0",
         "EV-9705a8de3c2e9653",
         "EV-07454824d51125ca",
@@ -2317,7 +2589,6 @@
         "EV-d29997d350e7c947",
         "EV-6defe295e6fbe61c",
         "EV-4beb890f0879aeaf",
-        "EV-4900ddf0686f4bbc",
         "EV-a46db68211837fec",
         "EV-0a0b6604250a82b8",
         "EV-a381531dd3abef18",
@@ -2334,12 +2605,12 @@
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
@@ -2601,9 +2872,7 @@
       "name": "Agent Builder",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "Launches Agent Builder"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -2670,7 +2939,6 @@
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
         "EV-4e5c6267b3237dac",
-        "EV-49c6291694fb6c7b",
         "EV-ef6464cf7f764835",
         "EV-d7b18c5d5759045d",
         "EV-67ef7accd26a07a0",
@@ -2694,21 +2962,20 @@
         "EV-84b423077bf8dac8",
         "EV-7f9631d793292d07",
         "EV-8993e021ac17df4a",
-        "EV-1b92b6c835ce240c"
+        "EV-1b92b6c835ce240c",
+        "EV-933294dfb2d19a67"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-use_case-cybersecurity"
       ],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2025-12-02",
       "lastSeen": "2026-07-20"
     },
@@ -2737,57 +3004,6 @@
   ],
   "fde": [
     {
-      "id": "FDE-cc943789fb1c3f3d",
-      "eventId": "EV-2c476cb7969f399b",
-      "dataDate": "2026-07-19",
-      "date": "2026-03-19",
-      "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
-      "stage": "completed",
-      "stageLabel": "已完成",
-      "customer": "Salesforce",
-      "vendor": "Rime",
-      "industry": "未披露",
-      "useCase": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-      "reportedNeed": "companies adopt AI agents at breakneck speed but need expertise to actually deploy them",
-      "deliveryComponents": [
-        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human",
-        "Sarah Khalid was three years into her career as a Success Architect at Salesforce when her team restructured and she found herself in a role she hadn’t planned on, couldn’t fully define, and wasn’t sure existed yet. “I didn’t plan on becoming an FDE,” she said. “It’s something that I grew into.” Forward deployed engineers (FDEs) saw an 800% spike in job postings between January and September 2025, according to an analysis by Indeed and the Financial Times, as companies adopt AI agents at breakneck speed but need expertise to actually deploy them. FDEs exist to close that gap. They code, consult, and translate agentic AI into working solutions, often while sitting side by side with the customer. Similar to when Harvard Business Review deemed data scientist “the sexiest job of the 21st century” due to a rare combination of technical chops and business savvy, both roles prove that transformative technology doesn’t eliminate jobs. It creates entirely new ones we couldn’t have imagined a few years prior. Now history is repeating itself, just faster. How do I know when AI is wrong, when AI is right, how it can solve the right problem?",
-        "” Around 40% to 50% of FDE movement at Salesforce is internal. The company built a six-week onboarding program in September 2025 with two weeks of focused technical training and four weeks on the job to bridge the gap. For anyone eyeing the role from the outside, Hickin’s advice is simple: “Become the AI expert in the job that you’re in. Experiment with the tool, figure out how it can solve problems in your team. Then you become a kind of quasi-FDE within your own job.” Related How We Cut Inference Spend by Right-Sizing Our Models 8 min read Slackbot Can Now Do Anything Salesforce Can. Just Ask. Trust builder AI has already changed what the job demands internally. FDEs once spent up to 40% of their time on administrative preparation, including summarizing meetings, pulling account histories, and drafting status updates. That’s largely automated now. “Now they can spend their time on hacking, building, figuring out the customer issue,” Hickin said. “Human jobs become more human.” Khalid explained what this looks like in practice: She once worked with a tech customer whose AI agent was targeting a 70% deflection rate for their customer service function. That figure became the North Star to add functionality, optimize, and move the needle. When they hit it, the customer expanded to a second use case. She also described a time when an insurance company demanded accuracy and response time targets. Khalid admitted that the technical side was hard. It required experimenting with different LLM models and prompt engineering on the back end. But what nearly derailed the engagement had nothing to do with code. This company, like many others, was experimenting with a variety of solutions. So she said, “It also required a lot of nontechnical skills: how to deal with that customer, how to make them not want to give up on Agentforce. And make them trust.” That account didn’t turn on a technical breakthrough. It turned on rebuilding confidence. “There’s not much coding involved,” Khalid reflected. “It’s actually more judgment, trust, and communication skills. And not something that AI can replace.” Work, redefined Back in 2012, the data scientist role looked like something only a narrow slice of specialists could do. A decade later, data literacy had become a baseline expectation across job functions. Hickin sees the FDE role charting the same arc. It won’t be a specialty forever but a leading indicator of where technical work is heading: closer to the customer, more dependent on judgment, and more human than the job title implies. Khalid, reflecting on the FDE acronym, has her own proposal: future defining engineers. “We’re not just defining the AI part,” she said. “We’re also defining how this role itself will shape out in the future.” It’s clever. And after what happened with data science, it’s hard to argue with. Go Deeper: Read why today’s hottest role is the forward deployed engineer Learn how Agentforce inspired three FDEs to return to Salesforce Learn how the role of the developer has changed in the agentic AI era",
-        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human"
-      ],
-      "outcomes": [],
-      "metrics": [
-        "800%",
-        "40%",
-        "50%",
-        "40%",
-        "70%"
-      ],
-      "undisclosedFields": [
-        "industry",
-        "workflow_after",
-        "delivery_model",
-        "team_composition",
-        "systems_integrated",
-        "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
-      ],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "sourceUrl": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human",
-      "entityIds": [
-        "EN-3ccbd9105a45d8fc",
-        "EN-b0532e1af75cc4ab"
-      ]
-    },
-    {
       "id": "FDE-3665b073634d4b9d",
       "eventId": "EV-05a87b578967c83e",
       "dataDate": "2026-07-18",
@@ -2803,14 +3019,15 @@
       "deliveryComponents": [
         "Mr Ng Tian Chong, Chief Executive Officer, Singtel Singapore, said: “Putting our customers first has always been at the heart of what we do. The deployment of agentic AI across chat and voice is about delivering real value — more personalised experiences, greater convenience and faster, more responsive service. By using AI to support our customer service teams, we can ensure customers are promptly and well assisted, while empowering our agents to focus on more complex cases where human expertise matters most. Our AI agents are designed to understand local expressions and even Singlish, reflecting our roots as a homegrown company serving a diverse nation. This marks an important step in redefining how we build and sustain customer relationships in the AI era.”"
       ],
-      "outcomes": [],
+      "outcomes": [
+        "Mr Ng Tian Chong, Chief Executive Officer, Singtel Singapore, said: “Putting our customers first has always been at the heart of what we do. The deployment of agentic AI across chat and voice is about delivering real value — more personalised experiences, greater convenience and faster, more responsive service. By using AI to support our customer service teams, we can ensure customers are promptly and well assisted, while empowering our agents to focus on more complex cases where human expertise matters most. Our AI agents are designed to understand local expressions and even Singlish, reflecting our roots as a homegrown company serving a diverse nation. This marks an important step in redefining how we build and sustain customer relationships in the AI era.”"
+      ],
       "metrics": [],
       "undisclosedFields": [
         "industry",
         "systems_integrated",
         "data_requirements",
-        "governance_controls",
-        "reported_outcomes"
+        "governance_controls"
       ],
       "tags": [
         {
@@ -2827,23 +3044,26 @@
       ]
     },
     {
-      "id": "FDE-4f2a8cb5ce476228",
-      "eventId": "EV-3dd0912fae720df7",
+      "id": "FDE-e79a238725a98c06",
+      "eventId": "EV-4b545e310ded2baa",
       "dataDate": "2026-07-16",
       "date": "2026-07-14",
       "title": "巴西银行将智能体AI嵌入核心工作流程，强化关系银行与客户互动",
-      "stage": "announced",
-      "stageLabel": "已公布",
+      "stage": "completed",
+      "stageLabel": "已完成",
       "customer": "Banco do Brasil",
       "vendor": "未披露",
       "industry": "未披露",
-      "useCase": "NiCE Copilot",
+      "useCase": "Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE",
       "reportedNeed": "未披露",
       "deliveryComponents": [
-        "In 2025, Banco do Brasil integrated WhatsApp into the NiCE CXone platform, creating a centralized, secure, and traceable environment for customer interactions."
+        "Deployment of NiCE Copilot enables relationship managers and banking teams to deliver more personalized, efficient, and compliant service at scale",
+        "Hoboken, NJ, July 14, 2026 — NiCE (NASDAQ: NICE) today announced that Banco do Brasil, one of Latin America's largest financial institutions, is leveraging NiCE Copilot to accelerate operational excellence and elevate customer service across its organization. Embedded natively within the unified NiCE CXone AI platform used by relationship managers and banking assistants, NiCE Copilot brings agentic AI-powered guidance and automation into everyday banking workflows. This seamless experience enables employees to work more efficiently, make informed decisions in real time, and deliver personalized compliant customer interactions – all from a single, integrated workspace."
       ],
       "outcomes": [],
-      "metrics": [],
+      "metrics": [
+        "90 million"
+      ],
       "undisclosedFields": [
         "vendor",
         "industry",
@@ -2857,10 +3077,18 @@
         "governance_controls",
         "reported_outcomes"
       ],
-      "tags": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
       "sourceUrl": "https://nice.com/press-releases/banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-relationship-banking-and-customer-engagement",
       "entityIds": [
-        "EN-d3565d297d476f10"
+        "EN-d3565d297d476f10",
+        "EN-96eebba49dbbf422"
       ]
     },
     {
@@ -2906,6 +3134,47 @@
       "sourceUrl": "https://globenewswire.com/news-release/2026/06/23/3316084/0/en/Talkdesk-ends-the-guesswork-in-deploying-customer-facing-AI-agents.html",
       "entityIds": [
         "EN-3474e24464fc25a7"
+      ]
+    },
+    {
+      "id": "FDE-bab34e14939e664d",
+      "eventId": "EV-051d1924db7ba65d",
+      "dataDate": "2026-06-04",
+      "date": "2026-06-04",
+      "title": "家得宝借助谷歌云Gemini企业版实现客户支持速度提升四倍 - 2026年4月22日",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "The Home Depot",
+      "vendor": "The",
+      "industry": "未披露",
+      "useCase": "Gemini Enterprise store phone support",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [
+        "The Home Depot is launching a new customer service AI voice agent phone system to provide faster support for customer calls to U.S. stores.",
+        "Early results from a 50-store pilot show that AI voice agents understand why a customer is calling in fewer than 10 seconds—getting them to a solution four times faster than navigating traditional phone menus. This allows customers to spend less time on the phone and more time on their projects or jobs. Additionally, Home Depot associates in the pilot also reported higher job satisfaction, with more time to focus on in-store shoppers.",
+        "The Home Depot is launching a new customer service AI voice agent phone system to provide faster support for customer calls to U.S. stores.",
+        "Early results from a 50-store pilot show that AI voice agents understand why a customer is calling in just 10 seconds, getting the customer to a solution four times faster than navigating traditional phone menus. This allows customers to spend less time on the phone and more time on their home improvement projects or jobs. Additionally, Home Depot associates in the pilot also reported higher job satisfaction with more time to focus on in-store shoppers."
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components"
+      ],
+      "tags": [],
+      "sourceUrl": "https://googlecloudpresscorner.com/2026-04-22-The-Home-Depot-Delivers-Customer-Support-Four-Times-Faster-Using-Google-Clouds-Gemini-Enterprise-for-Customer-Experience",
+      "entityIds": [
+        "EN-1bf93b12e68cac56",
+        "EN-b9776d7ddf459c9a",
+        "EN-bbdefa2950f49882"
       ]
     },
     {

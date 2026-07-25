@@ -1,10 +1,10 @@
 # Data Center V4 Integrity Gate — 2026-07-22
 
 - status: passed
-- canonical_events: 57
-- claims: 187
+- canonical_events: 59
+- claims: 192
 - tag_assertions: 42
-- facet_assertions: 50
+- facet_assertions: 52
 - fde_records: 0
 - hardware_records: 2
 - event_source_traceability: 100.0%
@@ -13,7 +13,7 @@
 - tag_evidence_coverage: 100.0%
 - facet_evidence_coverage: 100.0%
 - current_raw_snapshot_coverage: 100.0%
-- current_raw_snapshots: 164
+- current_raw_snapshots: 165
 
 ## Failures
 

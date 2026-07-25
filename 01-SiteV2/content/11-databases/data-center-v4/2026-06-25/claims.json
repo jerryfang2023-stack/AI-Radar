@@ -1324,28 +1324,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-8c9d3dd7c3fe7958",
-    "raw_id": "RAW-295f69356567747b",
-    "claim_type": "funding",
-    "subject": "Avoca",
-    "predicate": "funding",
-    "object": "$125 million",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1,
-      "model_candidate_id": "MAC-e260d4888adbf575"
-    },
-    "source_span": {
-      "raw_id": "RAW-295f69356567747b",
-      "start": 303,
-      "end": 452
-    },
-    "source_quote": "Avoca, a voice AI startup targeting field-service trades — HVAC, plumbing, roofing, electrical — announced $125 million in funding on April 27, 2026.",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-c183188d5d74dc04",
     "raw_id": "RAW-afd9910430467b96",
     "claim_type": "partnership",
@@ -1353,7 +1331,7 @@
     "predicate": "partnership",
     "object": "豆包2.1 Pro模型，连续包月68元起",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -1364,7 +1342,7 @@
     "source_quote": "豆包 6 月 24 日正式发布基于最新豆包 2.1 系列大模型的豆包专业版，提供接入豆包 2.1 Pro 模型的办公任务模式。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-1bf61402cc6f3a00",
@@ -1374,7 +1352,7 @@
     "predicate": "partnership",
     "object": "豆包2.1 Pro模型，连续包月68元起",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -1385,7 +1363,7 @@
     "source_quote": "3、在续航赛道狂奔：消息称某厂在研发 14000mAh 电池新机，预计归属荣耀旗下",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-7e0c8bcc39dfd530",
@@ -1395,7 +1373,7 @@
     "predicate": "partnership",
     "object": "豆包2.1 Pro模型，连续包月68元起",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -1406,7 +1384,7 @@
     "source_quote": "博主 @数码闲聊站 6 月 24 日发文透露，某厂正在研发 14000mAh 电池新机，且该项目已进入 NPI 阶段。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-8a7a7a969b43598e",
@@ -2714,6 +2692,90 @@
     "source_quote": "Anthropic’s Claude Cowork plugins — released January 30, 2026 — made the agentic enterprise stack accessible to non-developers for the first time.",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2f5603f017ec923d",
+    "raw_id": "RAW-49ab7ddbfbc49f42",
+    "claim_type": "funding",
+    "subject": "Avoca",
+    "predicate": "funding",
+    "object": "$125M+ at $1B Valuation to Power America's Services Economy With AI",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-49ab7ddbfbc49f42",
+      "start": 0,
+      "end": 80
+    },
+    "source_quote": "Avoca Raises $125M+ at $1B Valuation to Power America's Services Economy With AI",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d0958ea444209b26",
+    "raw_id": "RAW-49ab7ddbfbc49f42",
+    "claim_type": "funding",
+    "subject": "Avoca",
+    "predicate": "funding",
+    "object": "$125M+ at $1B Valuation to Power America's Services Economy With AI",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-49ab7ddbfbc49f42",
+      "start": 8075,
+      "end": 8155
+    },
+    "source_quote": "Avoca Raises $125M+ at $1B Valuation to Power America's Services Economy With AI",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9164c980492348fb",
+    "raw_id": "RAW-49ab7ddbfbc49f42",
+    "claim_type": "funding",
+    "subject": "Avoca",
+    "predicate": "funding",
+    "object": "$125M+ at $1B Valuation to Power America's Services Economy With AI",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-49ab7ddbfbc49f42",
+      "start": 8404,
+      "end": 8742
+    },
+    "source_quote": "NEW YORK , April 27, 2026 /PRNewswire/ -- Today, Avoca , the leading AI platform for America's services economy, announced it has raised more than $125 million across Seed, Series A, and Series B funding at a $1 billion valuation. The Series B funding was led by Meritech and General Catalyst, and the Series A was led by Kleiner Perkins.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bbdb3e1d980f0392",
+    "raw_id": "RAW-49ab7ddbfbc49f42",
+    "claim_type": "funding",
+    "subject": "Avoca",
+    "predicate": "funding",
+    "object": "$125M+ at $1B Valuation to Power America's Services Economy With AI",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-49ab7ddbfbc49f42",
+      "start": 8743,
+      "end": 9169
+    },
+    "source_quote": "While most AI solutions today have focused on optimizing desk work and efficiency–email, docs, decks–the front office of the $1T+ services economy has lacked solutions tailored to specific industry needs. Avoca is transforming this narrative, powering 24/7 call handling, scheduling, custom marketing campaigns, and customer follow-ups, while giving service businesses the AI tools that match the quality of work they deliver.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   }
 ]

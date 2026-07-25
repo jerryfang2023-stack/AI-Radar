@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1533,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-137ef33b0c4f41e0",
+    "name": "OpenAI与Broadcom",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-3d1c01d3d1b0bba4"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-24",
+    "lastSeen": "2026-06-25",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-3d1c01d3d1b0bba4"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-3d1c01d3d1b0bba4",
+        "dataDate": "2026-06-25",
+        "date": "2026-06-24",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenAI与Broadcom发布首款定制芯片\"Jalapeño\"，专为LLM推理设计",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "entityIds": [
+          "EN-137ef33b0c4f41e0",
+          "EN-7d3194f79e645c42",
+          "EN-373ac021a2c0bb2c",
+          "EN-96eebba49dbbf422"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-46a3e65809ab5227",
+      "eventId": "EV-3d1c01d3d1b0bba4",
+      "dataDate": "2026-06-25",
+      "date": "2026-06-24",
+      "title": "OpenAI与Broadcom发布首款定制芯片\"Jalapeño\"，专为LLM推理设计",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "未披露",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/openai-and-broadcom-unveil-jalapeno-a-custom-chip-built-for-llm-inference",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceDate": "2026-06-24",
+      "entityIds": [
+        "EN-137ef33b0c4f41e0",
+        "EN-7d3194f79e645c42",
+        "EN-373ac021a2c0bb2c",
+        "EN-96eebba49dbbf422"
+      ]
+    }
+  ]
+}

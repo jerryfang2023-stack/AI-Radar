@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T06:10:03.737Z",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1516,
+    "eventCount": 1533,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -15,15 +15,13 @@
     "name": "Hy-Embodied-VLM-1.0",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [
-      "VLM Hy-Embodied-VLM-1.0"
-    ],
+    "aliases": [],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
-      "EV-7fe139b107f9adc6"
+      "EV-c5a59cb4cc9d7e8e"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -36,14 +34,14 @@
     "firstSeen": "2026-07-17",
     "lastSeen": "2026-07-18",
     "relationIds": [
-      "REL2-eaa7022bd15b8aad"
+      "REL2-5f0d9f90c84e1075"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-7fe139b107f9adc6"
+        "EV-c5a59cb4cc9d7e8e"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -51,7 +49,7 @@
     },
     "timeline": [
       {
-        "id": "EV-7fe139b107f9adc6",
+        "id": "EV-c5a59cb4cc9d7e8e",
         "dataDate": "2026-07-18",
         "date": "2026-07-17",
         "eventType": "model_release",
@@ -76,7 +74,8 @@
         ],
         "entityIds": [
           "EN-9c8ae69b84f21a2e",
-          "EN-f0da91960830b394"
+          "EN-f0da91960830b394",
+          "EN-505ff8a27618ef39"
         ]
       }
     ],
@@ -107,9 +106,9 @@
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
         "EV-59fb7ba1fd6ac55e",
-        "EV-423c7293d6a91086",
+        "EV-aa25937649956e62",
         "EV-86ab9c2f1416e9d8",
-        "EV-7fe139b107f9adc6",
+        "EV-c5a59cb4cc9d7e8e",
         "EV-de54542fd7e2282c",
         "EV-3167e6eed75597e9",
         "EV-9e35de25113a9269",
@@ -149,14 +148,14 @@
   ],
   "relationships": [
     {
-      "relationship_id": "REL2-eaa7022bd15b8aad",
+      "relationship_id": "REL2-5f0d9f90c84e1075",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-9c8ae69b84f21a2e",
       "subject_type": "entity",
       "predicate": "publishes",
       "object_ref": "EN-f0da91960830b394",
       "object_type": "entity",
-      "event_id": "EV-7fe139b107f9adc6",
+      "event_id": "EV-c5a59cb4cc9d7e8e",
       "claim_refs": [
         "CL-1be9daf2f0c5860e"
       ],
@@ -177,8 +176,8 @@
       "eventIds": [
         "EV-6f092cfc7a064d64",
         "EV-03ab7d0b40d1e5b5",
-        "EV-7fe139b107f9adc6",
         "EV-ba89f9414be0b041",
+        "EV-c5a59cb4cc9d7e8e",
         "EV-0259aae5ef9e83cd",
         "EV-27fef7b87ee871ae",
         "EV-74b965de27bc0515"
@@ -188,9 +187,10 @@
         "EN-2b6e51bec93e86c1",
         "EN-593d0361124f348f",
         "EN-843e746333671ab1",
+        "EN-3c6d89173e6636d7",
         "EN-9c8ae69b84f21a2e",
         "EN-f0da91960830b394",
-        "EN-3c6d89173e6636d7",
+        "EN-505ff8a27618ef39",
         "EN-7117fa8d72fb99b9",
         "EN-24dcf762a3ebce39",
         "EN-b8220dc313f4ad31",
@@ -226,6 +226,7 @@
         "EV-f79713437230562f",
         "EV-03d40407042d7986",
         "EV-7f92b7e410ed08f1",
+        "EV-b76705cd8461925f",
         "EV-03ab7d0b40d1e5b5",
         "EV-d4278191ae11f198",
         "EV-ed272c57e1513d3f",
@@ -234,7 +235,7 @@
         "EV-345c8a2cc00fe8ca",
         "EV-a69dd82a0512a294",
         "EV-c844ddabb8528896",
-        "EV-7fe139b107f9adc6",
+        "EV-c5a59cb4cc9d7e8e",
         "EV-d1e8407177e11fdc",
         "EV-941ba9ebdc43f20c",
         "EV-6b51b1b6fe22c540",
@@ -281,11 +282,13 @@
         "EN-a96df57737b74def",
         "EN-e2c64fbbaf48eeb2",
         "EN-68dce3237e10d795",
+        "EN-9b07ac3374166b76",
         "EN-0e6e48aba1669631",
         "EN-d77c36c05230024c",
         "EN-be548deba4a093d7",
         "EN-9c8ae69b84f21a2e",
         "EN-f0da91960830b394",
+        "EN-505ff8a27618ef39",
         "EN-c51e27d8efcff21f",
         "EN-dbd6a2f6ddb95ca7",
         "EN-954dc5d6516f127c",
@@ -293,6 +296,7 @@
         "EN-e3b1bf3dab957ffe",
         "EN-cbc62794911ff31b",
         "EN-a1b0d8a938903dc7",
+        "EN-29e1f755865493a8",
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",

@@ -1,0 +1,192 @@
+{
+  "manifest": {
+    "contract": "BACKFILL-V1.0",
+    "generated_at": "2026-07-25T10:00:00.000Z",
+    "purpose": "Capture verified original or source-class-A pages for the second targeted backfill batch."
+  },
+  "sources": [
+    {
+      "task_id": "BFQ-bd40436da487768c",
+      "batch_date": "2026-07-16",
+      "url": "https://nice.com/press-releases/banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-relationship-banking-and-customer-engagement",
+      "source_title": "Banco do Brasil Embeds Agentic AI Into Core Workflows to Strengthen Relationship Banking and Customer Engagement",
+      "publisher": "NiCE",
+      "source_level": "official",
+      "published_at": "2026-07-14T00:00:00.000Z",
+      "expected_needles": ["Banco do Brasil", "agentic AI"]
+    },
+    {
+      "task_id": "BFQ-2e36ef36f8f4dc1b",
+      "batch_date": "2026-07-22",
+      "url": "https://blogs.nvidia.com/blog/bristol-myers-squibb-building-life-science-industrys-most-advanced-ai-factory-on-nvidia-vera-rubin/",
+      "source_title": "Bristol Myers Squibb Building Life Science Industry's Most Advanced AI Factory on NVIDIA Vera Rubin",
+      "publisher": "NVIDIA",
+      "source_level": "official",
+      "published_at": "2026-07-20T00:00:00.000Z",
+      "expected_needles": ["Bristol Myers Squibb", "Vera Rubin"]
+    },
+    {
+      "task_id": "BFQ-751a6faa392856bd",
+      "batch_date": "2026-07-05",
+      "url": "https://www.snowflake.com/en/blog/scale-enterprise-agents/",
+      "source_title": "From Pilot to 6,000 Users: How to Scale Enterprise AI Agents",
+      "publisher": "Snowflake",
+      "source_level": "official",
+      "published_at": "2026-02-16T00:00:00.000Z",
+      "expected_needles": ["Snowflake", "6,000"]
+    },
+    {
+      "task_id": "BFQ-d37951023882653a",
+      "batch_date": "2026-06-04",
+      "url": "https://corporate.homedepot.com/news/company/home-depot-delivers-customer-store-phone-support-four-times-faster-using-google-clouds",
+      "source_title": "The Home Depot Delivers Customer Store Phone Support Four Times Faster Using Google Cloud's Gemini Enterprise for Customer Experience",
+      "publisher": "The Home Depot",
+      "source_level": "official",
+      "published_at": "2026-04-22T00:00:00.000Z",
+      "expected_needles": ["Home Depot", "four times faster"]
+    },
+    {
+      "task_id": "BFQ-6e50995856e509ef",
+      "batch_date": "2026-07-19",
+      "url": "https://www.salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human/",
+      "source_title": "Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human",
+      "publisher": "Salesforce",
+      "source_level": "official",
+      "published_at": "2026-03-18T00:00:00.000Z",
+      "expected_needles": ["Forward Deployed Engineers", "Salesforce"]
+    },
+    {
+      "task_id": "BFQ-3b489f2ad6cdd640",
+      "batch_date": "2026-06-23",
+      "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment/",
+      "source_title": "Samsung Electronics brings ChatGPT and Codex to employees",
+      "publisher": "OpenAI",
+      "source_level": "official",
+      "published_at": "2026-06-22T00:00:00.000Z",
+      "expected_needles": ["Samsung Electronics", "Codex"]
+    },
+    {
+      "task_id": "BFQ-b727c11b7723d4dd",
+      "batch_date": "2026-06-11",
+      "url": "https://www.globenewswire.com/news-release/2026/03/10/3253159/0/en/AgentMail-Raises-6M-led-by-General-Catalyst-to-Build-the-First-Email-Provider-for-AI-Agents.html",
+      "source_title": "AgentMail Raises $6M led by General Catalyst to Build the First Email Provider for AI Agents",
+      "publisher": "AgentMail",
+      "source_level": "official",
+      "published_at": "2026-03-10T00:00:00.000Z",
+      "expected_needles": ["AgentMail", "General Catalyst"]
+    },
+    {
+      "task_id": "BFQ-4d93973cf5246f32",
+      "batch_date": "2026-07-09",
+      "url": "https://www.prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+      "source_title": "Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams",
+      "publisher": "Alta",
+      "source_level": "official",
+      "published_at": "2026-07-08T00:00:00.000Z",
+      "expected_needles": ["Alta", "$25M"]
+    },
+    {
+      "task_id": "BFQ-adbc7c1845065695",
+      "batch_date": "2026-06-19",
+      "url": "https://www.arcade.dev/blog/arcade-series-a/",
+      "source_title": "Arcade.dev Raises $60M Series A",
+      "publisher": "Arcade.dev",
+      "source_level": "official",
+      "published_at": "2026-06-12T00:00:00.000Z",
+      "expected_needles": ["Arcade", "Series A"]
+    },
+    {
+      "task_id": "BFQ-5bce24e38a6979c5",
+      "batch_date": "2026-06-05",
+      "url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+      "source_title": "Archestra.AI Announces $10M Seed",
+      "publisher": "Archestra",
+      "source_level": "official",
+      "published_at": "2026-06-02T00:00:00.000Z",
+      "expected_needles": ["Archestra", "$10M"]
+    },
+    {
+      "task_id": "BFQ-b96a74d893716005",
+      "batch_date": "2026-05-22",
+      "url": "https://axelera.ai/news/axelera-ai-secures-more-than-250-million-funding-on-global-commercial-growth",
+      "source_title": "Axelera AI Secures More Than $250 Million Funding on Global Commercial Growth",
+      "publisher": "Axelera AI",
+      "source_level": "official",
+      "published_at": "2026-02-24T00:00:00.000Z",
+      "expected_needles": ["Axelera AI", "$250 million"]
+    },
+    {
+      "task_id": "BFQ-940ad670b99bbf11",
+      "batch_date": "2026-06-06",
+      "url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
+      "source_title": "Former GitHub CEO Thomas Dohmke launches Entire with a landmark $60 million seed round",
+      "publisher": "Entire",
+      "source_level": "official",
+      "published_at": "2026-02-10T00:00:00.000Z",
+      "expected_needles": ["Thomas Dohmke", "$60 million"]
+    },
+    {
+      "task_id": "BFQ-93383e4c75f0a50e",
+      "batch_date": "2026-06-25",
+      "url": "https://www.prnewswire.com/news-releases/avoca-raises-125m-at-1b-valuation-to-power-americas-services-economy-with-ai-302753962.html",
+      "source_title": "Avoca Raises $125M+ at $1B Valuation to Power America's Services Economy With AI",
+      "publisher": "Avoca AI",
+      "source_level": "official",
+      "published_at": "2026-04-27T00:00:00.000Z",
+      "expected_needles": ["Avoca", "across Seed, Series A, and Series B"]
+    },
+    {
+      "task_id": "BFQ-d01cbdddd46fa9c3",
+      "batch_date": "2026-07-18",
+      "url": "https://www.bunkerhillhealth.com/resources/series-b-announcement",
+      "source_title": "Bunkerhill Health Raises $55 Million to Help Health Systems Turn Their Best Ideas into Reality",
+      "publisher": "Bunkerhill Health",
+      "source_level": "official",
+      "published_at": "2026-07-16T00:00:00.000Z",
+      "expected_needles": ["Bunkerhill Health", "$55 million"]
+    },
+    {
+      "task_id": "BFQ-11605a4df4a86c87",
+      "batch_date": "2026-06-14",
+      "url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
+      "source_title": "AI coding startup Cognition raises $1B at $25B pre-money valuation",
+      "publisher": "TechCrunch",
+      "source_level": "A",
+      "published_at": "2026-05-27T00:00:00.000Z",
+      "content_start_needle": "AI coding startup Cognition raises $1B at $25B pre-money valuation\nCognition",
+      "expected_needles": ["Cognition", "$25B"]
+    },
+    {
+      "task_id": "BFQ-8e9b33601b456cc0",
+      "batch_date": "2026-07-08",
+      "url": "https://www.uipath.com/resources/automation-case-studies/bayer-gbs-transforms-procurement-with-intelligent-automation",
+      "source_title": "How Bayer GBS transformed procurement with Intelligent Automation",
+      "publisher": "UiPath",
+      "source_level": "official",
+      "published_at": "2026-05-01T00:00:00.000Z",
+      "content_start_needle": "How Bayer GBS transformed procurement with Intelligent Automation",
+      "expected_needles": ["Bayer GBS", "Manual errors are down by about 70 percent"]
+    },
+    {
+      "task_id": "BFQ-be25d4503a85253e",
+      "batch_date": "2026-06-09",
+      "url": "https://www.nbd.com.cn/articles/2026-05-07/4381686.html",
+      "source_title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
+      "publisher": "每日经济新闻",
+      "source_level": "A",
+      "published_at": "2026-05-07T01:38:08.000Z",
+      "content_start_needle": "正文\n月之暗面完成约20亿美元融资",
+      "expected_needles": ["月之暗面", "美团龙珠"]
+    },
+    {
+      "task_id": "BFQ-1137fe59ad1ce422",
+      "batch_date": "2026-06-08",
+      "url": "https://www.datacenterdynamics.com/en/news/openais-custom-chip-program-lead-clive-chan-joins-anthropic/",
+      "source_title": "OpenAI's custom chip program lead Clive Chan joins Anthropic",
+      "publisher": "Data Center Dynamics",
+      "source_level": "A",
+      "published_at": "2026-06-07T00:00:00.000Z",
+      "expected_needles": ["Clive Chan", "Anthropic"]
+    }
+  ]
+}

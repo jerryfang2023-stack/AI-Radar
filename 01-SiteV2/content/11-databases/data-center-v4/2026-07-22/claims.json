@@ -3668,6 +3668,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-3338e3bfe5cceb3a",
+    "raw_id": "RAW-2069ed89a6ccb0d3",
+    "claim_type": "acquisition",
+    "subject": "Cognition",
+    "predicate": "acquisition",
+    "object": "TierZero",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-bb5834a08d6a8b1e"
+    },
+    "source_span": {
+      "raw_id": "RAW-2069ed89a6ccb0d3",
+      "start": 7050,
+      "end": 7135
+    },
+    "source_quote": "Cognition has acquired TierZero to enhance software automation in its product, Devin.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-833fd2e043d19c10",
     "raw_id": "RAW-91c3a43e552a9816",
     "claim_type": "model_release",
@@ -3942,5 +3964,89 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-a85772bd8cfd3c7f",
+    "raw_id": "RAW-323fbd3aadd52c88",
+    "claim_type": "hardware_deployment",
+    "subject": "Bristol Myers Squibb",
+    "predicate": "hardware_deployment",
+    "object": "Life Science Industry’s Most Advanced AI Factory on NVIDIA Vera Rubin",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-323fbd3aadd52c88",
+      "start": 0,
+      "end": 113
+    },
+    "source_quote": "Bristol Myers Squibb Building Life Science Industry’s Most Advanced AI Factory on NVIDIA Vera Rubin | NVIDIA Blog",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fe9d6749085b1a9c",
+    "raw_id": "RAW-323fbd3aadd52c88",
+    "claim_type": "hardware_deployment",
+    "subject": "Bristol Myers Squibb",
+    "predicate": "hardware_deployment",
+    "object": "Life Science Industry’s Most Advanced AI Factory on NVIDIA Vera Rubin",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-323fbd3aadd52c88",
+      "start": 130,
+      "end": 229
+    },
+    "source_quote": "Bristol Myers Squibb Building Life Science Industry’s Most Advanced AI Factory on NVIDIA Vera Rubin",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8ac1b7ce66ab9f5c",
+    "raw_id": "RAW-323fbd3aadd52c88",
+    "claim_type": "hardware_deployment",
+    "subject": "Bristol Myers Squibb",
+    "predicate": "hardware_deployment",
+    "object": "Life Science Industry’s Most Advanced AI Factory on NVIDIA Vera Rubin",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-323fbd3aadd52c88",
+      "start": 757,
+      "end": 948
+    },
+    "source_quote": "BMS announced today it is deploying its second NVIDIA DGX SuperPOD , this one built on eight DGX Vera Rubin NVL72 systems — the most powerful and energy-efficient AI cluster in life sciences.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1115efd57c3bccad",
+    "raw_id": "RAW-323fbd3aadd52c88",
+    "claim_type": "hardware_deployment",
+    "subject": "Bristol Myers Squibb",
+    "predicate": "hardware_deployment",
+    "object": "Life Science Industry’s Most Advanced AI Factory on NVIDIA Vera Rubin",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-323fbd3aadd52c88",
+      "start": 511,
+      "end": 756
+    },
+    "source_quote": "Erin Davis calls it the “SuperDuperPOD.” That’s two things in one name: pharmaceutical giant Bristol Myers Squibb (BMS) already runs one of the largest AI clusters in life sciences, with serious results to show for it. And they’re doubling down.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
   }
 ]

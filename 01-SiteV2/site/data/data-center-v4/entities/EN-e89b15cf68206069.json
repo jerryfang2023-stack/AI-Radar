@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1533,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-e89b15cf68206069",
+    "name": "Dragonfly C1000",
+    "entityType": "product_candidate",
+    "typeLabel": "产品、模型与服务",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-604f18edb827ea7b"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-25",
+    "lastSeen": "2026-07-13",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-604f18edb827ea7b"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-604f18edb827ea7b",
+        "dataDate": "2026-07-13",
+        "date": "2026-06-25",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "高通发布三款新数据中心解决方案，包括Dragonfly C1000 CPU，将由Meta部署",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f31639a23c744015",
+          "EN-ea3bd73e2b506e00",
+          "EN-e89b15cf68206069",
+          "EN-726f45e812ef0a71"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [
+    {
+      "id": "HW-c795e4b35d6f0d46",
+      "eventId": "EV-604f18edb827ea7b",
+      "dataDate": "2026-07-13",
+      "date": "2026-06-25",
+      "title": "高通发布三款新数据中心解决方案，包括Dragonfly C1000 CPU，将由Meta部署",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "Meta",
+      "customer": "Meta",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://datacenterdynamics.com/en/news/qualcomm-unveils-three-new-data-center-solutions-including-qualcomm-dragonfly-c1000-cpu-set-to-be-deployed-by-meta",
+      "sourceName": "datacenterdynamics.com",
+      "sourceDate": "2026-06-25",
+      "entityIds": [
+        "EN-f31639a23c744015",
+        "EN-ea3bd73e2b506e00",
+        "EN-e89b15cf68206069",
+        "EN-726f45e812ef0a71"
+      ]
+    }
+  ]
+}

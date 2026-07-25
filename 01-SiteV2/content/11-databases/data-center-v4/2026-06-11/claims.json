@@ -1382,7 +1382,7 @@
     "predicate": "pricing_change",
     "object": "付费订阅价格",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1,
       "model_candidate_id": "MAC-e11303761e917c9d"
     },
@@ -1394,7 +1394,7 @@
     "source_quote": "标准版连续包月为每月 68 元，连续包年每年 688 元；加强版连续包月每月 200 元，连续包年每年 2048 元；专业版 / 高级版连续包月每月 500 元，连续包年每年 5088 元。",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-027a6f21d6b71ce5",
@@ -1898,6 +1898,90 @@
       "end": 446
     },
     "source_quote": "Xiaomi miclaw 是基于小米 MiMo 大模型构建的 AI 交互测试产品，于 2026 年 3 月 6 日首次开启面向科技发烧友和极客用户的小范围封闭测试，其核心目标是验证大模型在小米“人车家全生态”系统中的执行能力。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1a8ba161ebf7e63d",
+    "raw_id": "RAW-468ce3d96d5ea8d6",
+    "claim_type": "funding",
+    "subject": "AgentMail",
+    "predicate": "funding",
+    "object": "$6M led by General Catalyst to Build the First Email Provider for AI Agents",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-468ce3d96d5ea8d6",
+      "start": 0,
+      "end": 57
+    },
+    "source_quote": "AgentMail Raises $6M led by General Catalyst to Build the",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1acc38ec50c23d8c",
+    "raw_id": "RAW-468ce3d96d5ea8d6",
+    "claim_type": "funding",
+    "subject": "AgentMail",
+    "predicate": "funding",
+    "object": "$6M led by General Catalyst to Build the First Email Provider for AI Agents",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-468ce3d96d5ea8d6",
+      "start": 1088,
+      "end": 1180
+    },
+    "source_quote": "AgentMail Raises $6M led by General Catalyst to Build the First Email Provider for AI Agents",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ebbd6d91152ae631",
+    "raw_id": "RAW-468ce3d96d5ea8d6",
+    "claim_type": "funding",
+    "subject": "AgentMail",
+    "predicate": "funding",
+    "object": "$6M led by General Catalyst to Build the First Email Provider for AI Agents",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-468ce3d96d5ea8d6",
+      "start": 1413,
+      "end": 1927
+    },
+    "source_quote": "SAN FRANCISCO, March 10, 2026 (GLOBE NEWSWIRE) -- AgentMail , the first email provider built for AI agents, announced today it has raised $6M in seed funding led by General Catalyst, with participation from Y Combinator, Phosphor Capital, and notable angel investors including Paul Graham, Taro Fukuyama, Dharmesh Shah (CTO of HubSpot), Paul Copplestone (CEO of Supabase), and Karim Atiyeh (CTO of Ramp). The platform is also launching its onboarding API for agents to get email addresses without human assistance.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-00d920490b98bd0e",
+    "raw_id": "RAW-468ce3d96d5ea8d6",
+    "claim_type": "funding",
+    "subject": "AgentMail",
+    "predicate": "funding",
+    "object": "$6M led by General Catalyst to Build the First Email Provider for AI Agents",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-468ce3d96d5ea8d6",
+      "start": 5238,
+      "end": 5330
+    },
+    "source_quote": "AgentMail Raises $6M led by General Catalyst to Build the First Email Provider for AI Agents",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

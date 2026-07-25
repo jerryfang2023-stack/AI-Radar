@@ -63,22 +63,22 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-bf1895460dba3240",
+    "claim_id": "CL-9674a3b34ef682ea",
     "raw_id": "RAW-7b0c4f5a0627c882",
-    "claim_type": "deployment",
-    "subject": "微软推出自有AI",
-    "predicate": "deployment",
-    "object": "公司，投入25亿美元",
+    "claim_type": "organization_restructuring",
+    "subject": "微软",
+    "predicate": "organization_restructuring",
+    "object": "自有AI部署公司，投入25亿美元",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 1
     },
     "source_span": {
       "raw_id": "RAW-7b0c4f5a0627c882",
-      "start": 443,
-      "end": 811
+      "start": 11,
+      "end": 88
     },
-    "source_quote": "In a statement announcing the venture, Microsoft’s Commercial Business CEO Judson Althoff resisted the Forward Deployed Engineer (FDE) label that is often applied to these ventures. “This goes beyond what has been labeled as Forward-Deployed Engineering,” Althoff wrote, “and will be the largest, most capable, outcome-driven engineering organization in the industry.”",
+    "source_quote": "Microsoft launches its own AI deployment company with $2.5 billion commitment",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
     "verification_status": "accepted"
@@ -86,10 +86,10 @@
   {
     "claim_id": "CL-7f51040e45fca777",
     "raw_id": "RAW-7b0c4f5a0627c882",
-    "claim_type": "deployment",
-    "subject": "微软推出自有AI",
-    "predicate": "deployment",
-    "object": "公司，投入25亿美元",
+    "claim_type": "organization_restructuring",
+    "subject": "微软",
+    "predicate": "organization_restructuring",
+    "object": "自有AI部署公司，投入25亿美元",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 2
@@ -105,22 +105,43 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e4bdd3c2b84aada6",
+    "claim_id": "CL-07b112cf51b3e70f",
     "raw_id": "RAW-7b0c4f5a0627c882",
-    "claim_type": "deployment",
-    "subject": "微软推出自有AI",
-    "predicate": "deployment",
-    "object": "公司，投入25亿美元",
+    "claim_type": "organization_restructuring",
+    "subject": "微软",
+    "predicate": "organization_restructuring",
+    "object": "自有AI部署公司，投入25亿美元",
     "qualifiers": {
       "event_status": "completed",
       "sequence": 3
     },
     "source_span": {
       "raw_id": "RAW-7b0c4f5a0627c882",
-      "start": 1247,
-      "end": 1536
+      "start": 105,
+      "end": 131
     },
-    "source_quote": "Microsoft’s existing client base will give the new effort a significant head start, as the company has already deployed engineers to much of the Fortune 500. The announcement cites an early partnership with the London Stock Exchange Group, as well as Unilever, Land O’Lakes, and Accenture.",
+    "source_quote": "6:53 AM PDT · July 2, 2026",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d222a298262edfbc",
+    "raw_id": "RAW-7b0c4f5a0627c882",
+    "claim_type": "organization_restructuring",
+    "subject": "微软",
+    "predicate": "organization_restructuring",
+    "object": "自有AI部署公司，投入25亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-7b0c4f5a0627c882",
+      "start": 132,
+      "end": 442
+    },
+    "source_quote": "On Thursday, Microsoft announced a new operating business called Microsoft Frontier Company, focused on delivering successful enterprise AI deployments with Microsoft’s existing AI tools. The project will be backed by a $2.5 billion investment from Microsoft, as well as 6,000 industry and engineering experts.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"
@@ -323,7 +344,7 @@
     "predicate": "funding",
     "object": "$10M to build the security arsenal for the agentic era | General Analysis",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -334,7 +355,7 @@
     "source_quote": "We founded General Analysis because agent reliability is an increasingly prevalent and unavoidable problem, one that will take real iteration and innovation to solve. We have raised $10M in seed funding led by Altos Ventures, with participation from 645 Ventures, Menlo Ventures, and additional strategic investors and angels to tackle the greatest challenge in AI: bridging the gap between simulation and production.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-1a20232004a0e4ac",
@@ -344,7 +365,7 @@
     "predicate": "funding",
     "object": "$10M to build the security arsenal for the agentic era | General Analysis",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -355,7 +376,7 @@
     "source_quote": "Software is interpretable, deterministic, and faithful to its instructions. If software misbehaves, there is a precise explanation lying within the code: a bug that can be patched. Thanks to these properties, the conversation around software security often begins and ends with architectural constraints and the principle of least privilege.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-1ffc8594d85b2762",
@@ -365,7 +386,7 @@
     "predicate": "funding",
     "object": "$10M to build the security arsenal for the agentic era | General Analysis",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -376,7 +397,7 @@
     "source_quote": "Instead, agents demand a new set of security tools and practices. While organizations cannot prove that an employee will never accidentally click on a phishing email or leak company secrets, what they can do is use practical countermeasures, like security education and internal audits, to drive down empirical risk. For agents, those countermeasures must be technical and they must be rigorous. Today's toolkit of harnesses and guardrails is not enough: they can mask an agent's vulnerabilities on the surface, but that agent could remain just as exploitable with marginally more effort, or assistance from the next version of GPT. We are changing that.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-3f9323c12b935feb",
@@ -386,7 +407,7 @@
     "predicate": "funding",
     "object": "$10M to build the security arsenal for the agentic era | General Analysis",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 4
     },
     "source_span": {
@@ -397,7 +418,7 @@
     "source_quote": "General Analysis maps AI applications and agents, red teams prompts, retrieval, tools, MCP servers, browser actions, permissions, and business workflows, then turns findings into evidence your team can reproduce and retest.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-7f05b9f32f664b05",
@@ -703,7 +724,7 @@
     "predicate": "product_release",
     "object": "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -714,7 +735,7 @@
     "source_quote": "IT之家注意到，OpenAI 早在 2024 年便携手博通开启自研芯片设计，上月双方合作的首款产品 Jalapeño 推理芯片正式发布，该芯片可大幅提升大语言模型的运行效率。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-d47fdf5c02372d92",
@@ -724,7 +745,7 @@
     "predicate": "product_release",
     "object": "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -735,7 +756,7 @@
     "source_quote": "消息称 Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-06c4b41465e3b8d9",
@@ -745,7 +766,7 @@
     "predicate": "product_release",
     "object": "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -756,7 +777,7 @@
     "source_quote": "消息称 Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-c1748e06a3757b55",
@@ -766,7 +787,7 @@
     "predicate": "product_release",
     "object": "Anthropic 启动自研 AI 芯片早期开发，拟采用三星 2 纳米工艺",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 4
     },
     "source_span": {
@@ -777,7 +798,7 @@
     "source_quote": "IT之家 7 月 2 日消息，据 The Information 报道，Anthropic 正与三星洽谈定制人工智能芯片事宜，Anthropic 已启动自研人工智能芯片的早期开发工作。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-0fdc56554f30141d",

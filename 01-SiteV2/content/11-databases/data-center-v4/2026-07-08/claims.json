@@ -343,7 +343,7 @@
     "predicate": "organization_people",
     "object": "AI 降本趋势，更多依赖自家模型",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -354,7 +354,7 @@
     "source_quote": "Microsoft joins AI cost-cutting trend by relying more on its own models",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-d8cb80cfbcd37658",
@@ -364,7 +364,7 @@
     "predicate": "organization_people",
     "object": "AI 降本趋势，更多依赖自家模型",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -375,7 +375,7 @@
     "source_quote": "As AI costs continue to rise , companies are looking for ways to cut back. The most recent example is Microsoft, which has reportedly begun to deploy a cost-savings strategy by relying less on software from OpenAI and Anthropic and instead deploying its own in-house models.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-105c0459aeb71015",
@@ -385,7 +385,7 @@
     "predicate": "organization_people",
     "object": "AI 降本趋势，更多依赖自家模型",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -396,7 +396,7 @@
     "source_quote": "Indeed, when it comes to two of its most widely used programs — Excel and Word — Microsoft has begun to use its homemade MAI models to respond to a certain percentage of user prompts, Bloomberg reported Tuesday. In the past, the company had advertised the fact that large parts of Office 365 are powered by models from both OpenAI and Anthropic .",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-080226ace8cf94ef",
@@ -684,7 +684,7 @@
     "predicate": "product_release",
     "object": "AI chip startup Ricursive hits $4B valuation 2 months after launch",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -695,7 +695,7 @@
     "source_quote": "AI chip startup Ricursive hits $4B valuation 2 months after launch",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-b5c1e9da2777f2da",
@@ -705,7 +705,7 @@
     "predicate": "product_release",
     "object": "The Series A comes just two months since the company formally launched with a seed investment led by Sequoia. It has raised $335 million total, reports The New York Times .",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -716,7 +716,7 @@
     "source_quote": "The Series A comes just two months since the company formally launched with a seed investment led by Sequoia. It has raised $335 million total, reports The New York Times .",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-40519f9781e63ed7",
@@ -726,7 +726,7 @@
     "predicate": "product_release",
     "object": "Ricursive Intelligence, a startup building an AI system to design and automatically improve AI chips, has raised $300 million at a $4 billion valuation. The company said Monday the round was led by Lightspeed.",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -737,7 +737,7 @@
     "source_quote": "Ricursive Intelligence, a startup building an AI system to design and automatically improve AI chips, has raised $300 million at a $4 billion valuation. The company said Monday the round was led by Lightspeed.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-4b60795091f2c75b",
@@ -747,7 +747,7 @@
     "predicate": "product_release",
     "object": "Ricursive says the system will be able to create its own silicon substrate layer and speed up AI chip improvements. Rinse and repeat to get to AGI, the founders say.",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 4
     },
     "source_span": {
@@ -758,7 +758,7 @@
     "source_quote": "Ricursive says the system will be able to create its own silicon substrate layer and speed up AI chip improvements. Rinse and repeat to get to AGI, the founders say.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-b7bffd210d0e4870",
@@ -1247,28 +1247,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-576eff501ae9236d",
-    "raw_id": "RAW-b67ef4b5edb52e69",
-    "claim_type": "deployment",
-    "subject": "Bayer GBS Intelligent Automation team",
-    "predicate": "deployment",
-    "object": "UiPath robotic process automation for purchase requisition-to-purchase order workflows",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1,
-      "model_candidate_id": "MAC-8c21c1cb3f1b93b6"
-    },
-    "source_span": {
-      "raw_id": "RAW-b67ef4b5edb52e69",
-      "start": 182,
-      "end": 328
-    },
-    "source_quote": "The GBS Intelligent Automation team deployed UiPath robotic process automation to handle purchase requisition-to-purchase order workflows globally",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-c3859fd272726fd0",
     "raw_id": "RAW-5ab3159c60cb94d9",
     "claim_type": "product_release",
@@ -1616,7 +1594,7 @@
     "predicate": "product_release",
     "object": "微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -1627,7 +1605,7 @@
     "source_quote": "IT之家此前报道，在 6 月的年度 Build 开发者大会上，微软发布了 7 款新 AI 模型，其中一款据称能以更低的成本达到前代 Anthropic 热门模型 Opus 4.6 的编码能力。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-479cc856c871c30f",
@@ -1637,7 +1615,7 @@
     "predicate": "product_release",
     "object": "微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -1648,7 +1626,7 @@
     "source_quote": "减少对外依赖：微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-1d7259841832b5e5",
@@ -1658,7 +1636,7 @@
     "predicate": "product_release",
     "object": "微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -1669,7 +1647,7 @@
     "source_quote": "减少对外依赖：微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-038561445f81a351",
@@ -1679,7 +1657,7 @@
     "predicate": "product_release",
     "object": "微软自研 AI 模型 MAI 开始接手 Office 应用，逐步替代 OpenAI 和 Anthropic",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 4
     },
     "source_span": {
@@ -1690,7 +1668,7 @@
     "source_quote": "IT之家 7 月 8 日消息，据彭博社报道，微软已开始在 Excel 和 Outlook 等软件产品中使用内部自研的 MAI 模型来替代 OpenAI 和 Anthropic 的模型，以降低 AI 成本。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-2b6541a6d067781a",
@@ -1784,7 +1762,7 @@
     "predicate": "organization_people",
     "object": "腾讯，将负责混元多模态模型方向",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -1795,7 +1773,7 @@
     "source_quote": "姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-9f8c6e7fcfd917f0",
@@ -1805,7 +1783,7 @@
     "predicate": "organization_people",
     "object": "腾讯，将负责混元多模态模型方向",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -1816,7 +1794,7 @@
     "source_quote": "姚顺雨 OpenAI 前同事田永龙被曝加入腾讯，混元多模态有望迎来新负责人",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-761c5cc4d6954a52",
@@ -1826,7 +1804,7 @@
     "predicate": "organization_people",
     "object": "腾讯，将负责混元多模态模型方向",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -1837,7 +1815,7 @@
     "source_quote": "IT之家 7 月 8 日消息，据雷峰网昨日报道，OpenAI 前研究员 Yonglong Tian（田永龙）已于近期加入腾讯。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-a6e45cf6de34b2fb",
@@ -1847,7 +1825,7 @@
     "predicate": "organization_people",
     "object": "腾讯，将负责混元多模态模型方向",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 4
     },
     "source_span": {
@@ -1858,7 +1836,7 @@
     "source_quote": "2025 年 9 月，28 岁的姚顺雨从 OpenAI 离职，加入腾讯担任“CEO / 总裁办公室”首席 AI 科学家，直接向总裁刘炽平汇报。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-46924b28701fbb6b",
@@ -2214,6 +2192,90 @@
       "end": 234
     },
     "source_quote": "Suite of AI Agents and Tools to Accelerate HDL (Hardware Description Language) Design",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1ff56198b5b1bba8",
+    "raw_id": "RAW-3ce306463f867fe3",
+    "claim_type": "deployment",
+    "subject": "Bayer GBS",
+    "predicate": "deployment",
+    "object": "Procurement with Intelligent Automation | UiPath",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-3ce306463f867fe3",
+      "start": 0,
+      "end": 65
+    },
+    "source_quote": "How Bayer GBS transformed procurement with Intelligent Automation",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-71c38521cbaf9edd",
+    "raw_id": "RAW-3ce306463f867fe3",
+    "claim_type": "deployment",
+    "subject": "Bayer GBS",
+    "predicate": "deployment",
+    "object": "Procurement with Intelligent Automation | UiPath",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-3ce306463f867fe3",
+      "start": 94,
+      "end": 130
+    },
+    "source_quote": "reduction in vendor & pricing errors",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2c602e5418171d0e",
+    "raw_id": "RAW-3ce306463f867fe3",
+    "claim_type": "deployment",
+    "subject": "Bayer GBS",
+    "predicate": "deployment",
+    "object": "Procurement with Intelligent Automation | UiPath",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-3ce306463f867fe3",
+      "start": 135,
+      "end": 182
+    },
+    "source_quote": "faster purchase order creation (10 → 3 minutes)",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a3c1453ac2ca6f28",
+    "raw_id": "RAW-3ce306463f867fe3",
+    "claim_type": "deployment",
+    "subject": "Bayer GBS",
+    "predicate": "deployment",
+    "object": "Procurement with Intelligent Automation | UiPath",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-3ce306463f867fe3",
+      "start": 199,
+      "end": 995
+    },
+    "source_quote": "Bayer is a global enterprise with core competencies in the life science fields of health care and nutrition. In line with its mission, “Health for all, Hunger for none,” the company’s products and services are designed to help people and the planet thrive by supporting efforts to master the major challenges presented by a growing and aging global population. Bayer is committed to driving sustainable development and generating a positive impact with its businesses. At the same time, the Group aims to increase its earning power and create value through innovation and growth. The Bayer brand stands for trust, reliability and quality throughout the world. In fiscal 2024, the Group employed around 93,000 people and had sales of 46.6 billion euros. R&D expenses amounted to 6.2 billion euros.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

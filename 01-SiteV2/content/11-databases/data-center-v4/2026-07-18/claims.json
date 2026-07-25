@@ -1265,28 +1265,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-a365b46723f7cd8a",
-    "raw_id": "RAW-6e2297a85b861f6c",
-    "claim_type": "funding",
-    "subject": "Bunkerhill Health",
-    "predicate": "funding",
-    "object": "$55 million Series B round",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1,
-      "model_candidate_id": "MAC-78ed9397d95be9ef"
-    },
-    "source_span": {
-      "raw_id": "RAW-6e2297a85b861f6c",
-      "start": 360,
-      "end": 446
-    },
-    "source_quote": "Bunkerhill Health has raised $55 million to scale its agentic AI platform, Carebricks.",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-25527e1a6279a063",
     "raw_id": "RAW-b44929cd96a03cdf",
     "claim_type": "financial_performance",
@@ -1612,7 +1590,7 @@
     "predicate": "lawsuit_settlement",
     "object": "couldn&#8217;t come at a worse time for OpenAI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -1623,7 +1601,7 @@
     "source_quote": "Apple’s lawsuit couldn’t come at a worse time for OpenAI",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-67947111aae1fb6b",
@@ -1633,7 +1611,7 @@
     "predicate": "lawsuit_settlement",
     "object": "couldn&#8217;t come at a worse time for OpenAI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -1644,7 +1622,7 @@
     "source_quote": "Apple filed a trade secrets lawsuit against OpenAI last Friday, and it’s not messing around. The complaint alleges a pattern of misconduct reaching all the way up to OpenAI’s chief hardware officer and claims more than 400 former Apple employees now work at the company. OpenAI’s response so far has been carefully hedged, and the timing couldn’t be worse with the company reportedly eyeing an IPO as early as later this year.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-9fb476d52ba9fbbb",
@@ -1654,7 +1632,7 @@
     "predicate": "lawsuit_settlement",
     "object": "couldn&#8217;t come at a worse time for OpenAI",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -1665,7 +1643,7 @@
     "source_quote": "On this episode of TechCrunch’s Equity podcast, hosts Kirsten Korosec, Anthony Ha, and Sean O’Kane dig into what the lawsuit could mean for OpenAI’s own hardware ambitions and IPO timeline, plus a bigger theme running through the week’s news: how much should anyone trust AI companies with their data?",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-f84dd359a3ff9406",
@@ -3069,7 +3047,7 @@
     "predicate": "model_release",
     "object": "Kimi K3",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1,
       "model_candidate_id": "MAC-90886343acd159b1"
     },
@@ -3081,7 +3059,7 @@
     "source_quote": "Moonshot has launched Kimi K3, a 2.8-trillion-parameter multimodal model with a 1-million-token context window and optimizations for faster long-context decoding and agentic coding.",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-99d9615389cc3245",
@@ -3091,7 +3069,7 @@
     "predicate": "model_release",
     "object": "Kimi K3 open weights",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 2,
       "model_candidate_id": "MAC-90886343acd159b1"
     },
@@ -3103,7 +3081,7 @@
     "source_quote": "open weights scheduled for release on July 27.",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-bbdbf1545578f4dd",
@@ -3197,7 +3175,7 @@
     "predicate": "product_release",
     "object": "该产品最快可能于本月发布， 预计将整合来自微软、OpenAI 和 Anthropic 的 AI 模型 ，使其能在有效控制运营成本的同时，处理各种不同的安全任务。",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -3208,7 +3186,7 @@
     "source_quote": "该产品最快可能于本月发布， 预计将整合来自微软、OpenAI 和 Anthropic 的 AI 模型 ，使其能在有效控制运营成本的同时，处理各种不同的安全任务。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-38ab33add2d40d2e",
@@ -3218,7 +3196,7 @@
     "predicate": "product_release",
     "object": "与依赖单一 AI 模型的安全工具不同，消息称“感知项目”将采用一种被称为“模型路由” (model router) 的技术。",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -3229,7 +3207,7 @@
     "source_quote": "与依赖单一 AI 模型的安全工具不同，消息称“感知项目”将采用一种被称为“模型路由” (model router) 的技术。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-a1c5793a572841d9",
@@ -3239,7 +3217,7 @@
     "predicate": "product_release",
     "object": "该系统会在分配工作负载之前，先评估并决定哪一个 AI 模型最适合处理特定的任务。",
     "qualifiers": {
-      "event_status": "completed",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -3250,7 +3228,7 @@
     "source_quote": "该系统会在分配工作负载之前，先评估并决定哪一个 AI 模型最适合处理特定的任务。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-27c816131f62b34c",
@@ -3774,6 +3752,90 @@
       "end": 512
     },
     "source_quote": "IT之家注意到，2026 年第一季度，百度 AI 收入同比增幅达到 49%，收入占比达到 52% —— 这是百度历史上首次 AI 收入占比过半 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-35dbef30840827e4",
+    "raw_id": "RAW-379fd7dc94d23f11",
+    "claim_type": "funding",
+    "subject": "Bunkerhill Health",
+    "predicate": "funding",
+    "object": "$55 Million to Help Health Systems Turn Their Best Ideas into Reality | Bunkerhill",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-379fd7dc94d23f11",
+      "start": 0,
+      "end": 107
+    },
+    "source_quote": "Bunkerhill Health Raises $55 Million to Help Health Systems Turn Their Best Ideas into Reality | Bunkerhill",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dc3b5b20344a8e97",
+    "raw_id": "RAW-379fd7dc94d23f11",
+    "claim_type": "funding",
+    "subject": "Bunkerhill Health",
+    "predicate": "funding",
+    "object": "$55 Million to Help Health Systems Turn Their Best Ideas into Reality | Bunkerhill",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-379fd7dc94d23f11",
+      "start": 165,
+      "end": 255
+    },
+    "source_quote": "Fortune Exclusive: Bunkerhill Health raises $55M to put AI agents to work inside hospitals",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-484d5bb7474a81e0",
+    "raw_id": "RAW-379fd7dc94d23f11",
+    "claim_type": "funding",
+    "subject": "Bunkerhill Health",
+    "predicate": "funding",
+    "object": "$55 Million to Help Health Systems Turn Their Best Ideas into Reality | Bunkerhill",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-379fd7dc94d23f11",
+      "start": 453,
+      "end": 547
+    },
+    "source_quote": "Bunkerhill Health Raises $55 Million to Help Health Systems Turn Their Best Ideas into Reality",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9203e160853838dc",
+    "raw_id": "RAW-379fd7dc94d23f11",
+    "claim_type": "funding",
+    "subject": "Bunkerhill Health",
+    "predicate": "funding",
+    "object": "$55 Million to Help Health Systems Turn Their Best Ideas into Reality | Bunkerhill",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-379fd7dc94d23f11",
+      "start": 576,
+      "end": 1113
+    },
+    "source_quote": "SAN FRANCISCO — July 16, 2026 — Bunkerhill Health, the agentic AI platform health systems use to turn their best ideas into reality, today announced the close of its Series B funding round, led by Khosla Ventures, with continued participation from Sequoia Capital, Felicis, Optum Ventures, and Y Combinator. The Series B brings Bunkerhill Health's total funding to date, including its Seed and Series A rounds, to $55 million, reflecting growing investor conviction that agentic AI is foundational infrastructure for healthcare delivery.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

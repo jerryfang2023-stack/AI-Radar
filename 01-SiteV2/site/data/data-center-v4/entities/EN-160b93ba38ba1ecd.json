@@ -4,15 +4,15 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T06:10:03.737Z",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1516,
+    "eventCount": 1533,
     "quarantinedEventCount": 16
   },
   "entity": {
-    "id": "EN-349e0d9a72d794c3",
-    "name": "Bayer GBS Intelligent Automation team",
+    "id": "EN-160b93ba38ba1ecd",
+    "name": "Google Gemini",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -21,19 +21,19 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-de1816770e8a2037"
+      "EV-909cf18b467d6fdf"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-08",
-    "lastSeen": "2026-07-08",
+    "firstSeen": "2026-07-23",
+    "lastSeen": "2026-07-24",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
-      "deployments": [
-        "EV-de1816770e8a2037"
+      "fundingAcquisition": [
+        "EV-909cf18b467d6fdf"
       ],
+      "deployments": [],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
@@ -42,19 +42,26 @@
     },
     "timeline": [
       {
-        "id": "EV-de1816770e8a2037",
-        "dataDate": "2026-07-08",
-        "date": "2026-07-08",
-        "eventType": "deployment",
-        "eventTypeLabel": "部署",
-        "eventGroup": "部署与案例",
+        "id": "EV-909cf18b467d6fdf",
+        "dataDate": "2026-07-24",
+        "date": "2026-07-23",
+        "eventType": "financial_performance",
+        "eventTypeLabel": "财务表现",
+        "eventGroup": "融资与并购",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "拜耳 GBS 如何利用 AI 和 UiPath 将采购错误减少 70%",
-        "displayTags": [],
+        "title": "Google Gemini 月活用户逼近 9.5 亿，有望成为下一个十亿级产品",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
         "entityIds": [
-          "EN-349e0d9a72d794c3",
-          "EN-96eebba49dbbf422"
+          "EN-160b93ba38ba1ecd",
+          "EN-bbdefa2950f49882"
         ]
       }
     ],

@@ -1,12 +1,12 @@
 [
   {
     "event_type": "product_release",
-    "event_status": "planned",
+    "event_status": "rumored",
     "event_time": "2026-06-03T23:31:43.000Z",
     "disclosed_at": "2026-06-03T23:31:43.000Z",
     "entities": [
       "EN-5ea8161ee62ed0f3",
-      "EN-5388bc10736a0eff",
+      "EN-f64660efbe61dd28",
       "EN-047364b9be67f665",
       "EN-9c8ae69b84f21a2e"
     ],
@@ -28,10 +28,10 @@
       {
         "source_ref": "SA-504cd4ac71da1869",
         "disclosed_at": "2026-06-03T23:31:43.000Z",
-        "status": "planned"
+        "status": "rumored"
       }
     ],
-    "publication_status": "partial",
+    "publication_status": "disputed",
     "event_id": "EV-c11ee0da38376254",
     "display_title_zh": "豆包宣布将推出专业版，基础功能保持免费；阿里千问向第三方Agent全面开放"
   },
@@ -122,22 +122,34 @@
   },
   {
     "event_type": "deployment",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-06-04T04:44:55.890Z",
     "entities": [
       "EN-1bf93b12e68cac56",
+      "EN-b9776d7ddf459c9a",
       "EN-bbdefa2950f49882"
     ],
     "action": "deployment",
-    "object": "AI-powered phone agents built on Google Cloud's Gemini Enterprise for Customer Experience",
+    "object": "Gemini Enterprise store phone support",
     "metrics": [],
-    "locations": [],
+    "locations": [
+      "US",
+      "U.S."
+    ],
     "claim_refs": [
-      "CL-8f9458874d639ed5"
+      "CL-30494164288ccb46",
+      "CL-9142d4cf5efc92ed",
+      "CL-5c8b079d538fcdf5",
+      "CL-6e9e70a37e558243",
+      "CL-73fd50d47efc06c2",
+      "CL-b869e7c04d2eb969",
+      "CL-02acbfb49c87afc0",
+      "CL-c43c69a8e71d72f0"
     ],
     "source_refs": [
-      "SA-48fedb4a58004c10"
+      "SA-48fedb4a58004c10",
+      "SA-dc314b06bd3c1c55"
     ],
     "conflicts": [],
     "missing_fields": [
@@ -147,11 +159,16 @@
       {
         "source_ref": "SA-48fedb4a58004c10",
         "disclosed_at": "2026-06-04T04:44:55.890Z",
-        "status": "announced"
+        "status": "completed"
+      },
+      {
+        "source_ref": "SA-dc314b06bd3c1c55",
+        "disclosed_at": "2026-04-22T00:00:00.000Z",
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-b96493767e5cf645",
+    "event_id": "EV-051d1924db7ba65d",
     "display_title_zh": "家得宝借助谷歌云Gemini企业版实现客户支持速度提升四倍 - 2026年4月22日"
   },
   {
@@ -243,8 +260,7 @@
       "EN-cbc62794911ff31b",
       "EN-96eebba49dbbf422",
       "EN-efd004603fda1d53",
-      "EN-761a66c29a55bc53",
-      "EN-b6f4fb536939705e"
+      "EN-761a66c29a55bc53"
     ],
     "action": "Unveils",
     "object": "AI Agent Marketplace as ‘One-Stop Shop’",

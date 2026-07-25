@@ -87,8 +87,8 @@
     "card_type": "product_service",
     "title": "MiniMax M3模型正式开源：原生多模态、百万上下文",
     "fact": "15、MiniMax M3 模型正式开源：原生多模态、百万上下文",
-    "event_status": "announced",
-    "publication_status": "verified",
+    "event_status": "rumored",
+    "publication_status": "disputed",
     "event_time": "2026-06-15T23:22:04.000Z",
     "claim_refs": [
       "CL-558fea3810686c61",
@@ -101,12 +101,14 @@
       "SA-eb6b3548f3e969a5",
       "SA-fd5da1ce18b097d5"
     ],
-    "conflicts": [],
+    "conflicts": [
+      "CF-aae8b6aa0da7f103"
+    ],
     "missing_fields": []
   },
   {
-    "card_id": "CARD-69dfa0857e56e21e",
-    "event_id": "EV-1b9bd3d2cb0dc54e",
+    "card_id": "CARD-9b53943f3a6dfe69",
+    "event_id": "EV-de3f5938545ad83a",
     "card_type": "product_service",
     "title": "下一代投机解码：DFlash 与 Spec V2",
     "fact": "Our new, jointly-released DFlash model for Qwen 3.5 397B-A17B achieves higher throughput than both the baseline model and native MTP speculation in all the settings we benchmarked. At concurrency 1 on the HumanEval coding dataset, it achieves >4.3x the throughput of baseline and 1.5x the throughput of MTP.",
@@ -144,8 +146,8 @@
     "missing_fields": []
   },
   {
-    "card_id": "CARD-2e08a1eaad157f9d",
-    "event_id": "EV-f2acdcbe3b644340",
+    "card_id": "CARD-3c8b9043fccf524f",
+    "event_id": "EV-4b81ffcfa0391750",
     "card_type": "product_service",
     "title": "Claude Code v2.1.178 发布",
     "fact": "Added Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents",
@@ -250,8 +252,8 @@
     "card_type": "product_service",
     "title": "美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼",
     "fact": "IT之家 6 月 16 日消息，据路透社报道，美国一名联邦法官于当地时间周一驳回了埃隆 · 马斯克旗下人工智能企业 xAI 提起的诉讼。",
-    "event_status": "announced",
-    "publication_status": "verified",
+    "event_status": "rumored",
+    "publication_status": "disputed",
     "event_time": "2026-06-15T23:58:40.000Z",
     "claim_refs": [
       "CL-be96e1e616daf5ca",
@@ -551,6 +553,27 @@
     ],
     "source_refs": [
       "SA-3a5bc922a5534990"
+    ],
+    "conflicts": [],
+    "missing_fields": []
+  },
+  {
+    "card_id": "CARD-180510e65e4f971a",
+    "event_id": "EV-38ae953ddd53fe8d",
+    "card_type": "case",
+    "title": "月之暗面 Kimi K2.7 Code 模型高速版上线：2 倍价格、最快 6 倍速",
+    "fact": "IT之家 6 月 15 日消息，月之暗面 Kimi 今日宣布， Kimi K2.7 Code 模型高速版上线，现已向 Kimi Code Beta 计划成员、Kimi API 开发者、Kimi Business 用户开放。",
+    "event_status": "completed",
+    "publication_status": "verified",
+    "event_time": "2026-06-15T14:06:58.000Z",
+    "claim_refs": [
+      "CL-ec8d685903e801b9",
+      "CL-92992bfdf97ed42a",
+      "CL-491283c4bfa0752d",
+      "CL-358016f0c2d9f737"
+    ],
+    "source_refs": [
+      "SA-b69d5e50fcef865c"
     ],
     "conflicts": [],
     "missing_fields": []

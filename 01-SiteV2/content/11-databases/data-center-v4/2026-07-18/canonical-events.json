@@ -50,7 +50,7 @@
     "disclosed_at": "2026-07-18T01:20:30.000Z",
     "entities": [
       "EN-c70eca6b0f88f44d",
-      "EN-9d40760b37c15a83",
+      "EN-cb4754c48f8023d0",
       "EN-855bed02b965c12c"
     ],
     "action": "发布",
@@ -84,7 +84,6 @@
     "event_time": "2026-07-16T16:00:00.000Z",
     "disclosed_at": "2026-07-16T16:00:00.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d",
       "EN-f33621416f984f88",
       "EN-3a13916345b60fad"
     ],
@@ -110,7 +109,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-36a9b1b961f8e3b2",
+    "event_id": "EV-09eac972d557a900",
     "display_title_zh": "Cursor 评估负责人确认 Claude Fable 5 在 CursorBench 达 72.9% 新高"
   },
   {
@@ -256,9 +255,9 @@
     "disclosed_at": "2026-07-16T00:00:00.000Z",
     "entities": [
       "EN-6c82c31832e9c3e9",
-      "EN-b0eea3ad7b0d0a48",
-      "EN-9cc48d787f521562",
-      "EN-9c515f4c878bdb2e"
+      "EN-9c515f4c878bdb2e",
+      "EN-5c9476d9640af353",
+      "EN-b4dac50c116e179d"
     ],
     "action": "LAUNCHES",
     "object": "AI INTERCONNECT PLATFORM WITH 400Gb RDMA FOR NEXT-GENERATION DATA CENTER, STORAGE, AND AI INFRASTRUCTURE",
@@ -338,8 +337,7 @@
     "entities": [
       "EN-8d4321d936320802",
       "EN-96eebba49dbbf422",
-      "EN-e07654c7cc29acbd",
-      "EN-78cff6caea83f213"
+      "EN-e07654c7cc29acbd"
     ],
     "action": "product_release",
     "object": "Cosmos 3 Edge",
@@ -638,39 +636,6 @@
     "display_title_zh": "n8n 获 6000 万美元融资，推动 AI 驱动工作流自动化"
   },
   {
-    "event_type": "funding",
-    "event_status": "completed",
-    "event_time": "2026-07-17T00:00:00.000Z",
-    "disclosed_at": "2026-07-17T00:00:00.000Z",
-    "entities": [
-      "EN-522656609ff15589"
-    ],
-    "action": "完成5500万美元B轮融资",
-    "object": "，用于扩展其AI智能体平台Carebricks",
-    "metrics": [
-      "$55 million"
-    ],
-    "locations": [],
-    "claim_refs": [
-      "CL-a365b46723f7cd8a"
-    ],
-    "source_refs": [
-      "SA-2a678174b89a3dbb"
-    ],
-    "conflicts": [],
-    "missing_fields": [],
-    "update_history": [
-      {
-        "source_ref": "SA-2a678174b89a3dbb",
-        "disclosed_at": "2026-07-17T00:00:00.000Z",
-        "status": "completed"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-6be89ebfbf8de6be",
-    "display_title_zh": "Bunkerhill Health 完成5500万美元B轮融资，用于扩展其AI智能体平台Carebricks"
-  },
-  {
     "event_type": "financial_performance",
     "event_status": "completed",
     "event_time": "2026-07-17T00:00:00.000Z",
@@ -820,7 +785,7 @@
   },
   {
     "event_type": "lawsuit_settlement",
-    "event_status": "announced",
+    "event_status": "rumored",
     "event_time": "2026-07-17T00:00:00.000Z",
     "disclosed_at": "2026-07-17T00:00:00.000Z",
     "entities": [
@@ -845,10 +810,10 @@
       {
         "source_ref": "SA-53ea3f4be8d80137",
         "disclosed_at": "2026-07-17T00:00:00.000Z",
-        "status": "announced"
+        "status": "rumored"
       }
     ],
-    "publication_status": "verified",
+    "publication_status": "disputed",
     "event_id": "EV-2f7e6d3a68bbf08f",
     "display_title_zh": "苹果对OpenAI的诉讼来得不是时候"
   },
@@ -897,7 +862,6 @@
     "disclosed_at": "2026-07-14T16:00:00.000Z",
     "entities": [
       "EN-e6483498af8bd2cd",
-      "EN-c70eca6b0f88f44d",
       "EN-b60e6df651264e14"
     ],
     "action": "product_release",
@@ -1153,8 +1117,7 @@
       "EN-6f7ac1823da81d2e",
       "EN-c70eca6b0f88f44d",
       "EN-607964040e4b62e0",
-      "EN-6749675d80a1faa7",
-      "EN-bbdefa2950f49882"
+      "EN-6749675d80a1faa7"
     ],
     "action": "model_release",
     "object": "Kimi K3",
@@ -1169,7 +1132,9 @@
       "SA-e9a4a692bce17aa6",
       "SA-a252235ecaad9689"
     ],
-    "conflicts": [],
+    "conflicts": [
+      "CF-0d5a32aca724d30e"
+    ],
     "missing_fields": [],
     "update_history": [
       {
@@ -1180,10 +1145,10 @@
       {
         "source_ref": "SA-a252235ecaad9689",
         "disclosed_at": "2026-07-17T00:00:00.000Z",
-        "status": "announced"
+        "status": "rumored"
       }
     ],
-    "publication_status": "verified",
+    "publication_status": "disputed",
     "event_id": "EV-0d5a32aca724d30e",
     "display_title_zh": "如同Deepseek，中国的Kimi K3正迫使西方AI实验室质疑其算力优势"
   },
@@ -1227,6 +1192,7 @@
     "event_time": "2026-07-17T09:13:00.000Z",
     "disclosed_at": "2026-07-17T09:13:00.000Z",
     "entities": [
+      "EN-c55f528b3a23dc5b",
       "EN-ceef9085ddc3348c"
     ],
     "action": "合作",
@@ -1253,7 +1219,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-0cce336f720bb7b7",
+    "event_id": "EV-7552a1853994fcfc",
     "display_title_zh": "智能体互信互联互操作全球合作倡议发布，中国网信办提出十大行动方向"
   },
   {
@@ -1500,7 +1466,8 @@
     "event_time": "2026-07-17T06:28:45.000Z",
     "disclosed_at": "2026-07-17T06:28:45.000Z",
     "entities": [
-      "EN-281e1336c36307f8"
+      "EN-281e1336c36307f8",
+      "EN-aab7bebae24ea4fc"
     ],
     "action": "hardware_deployment",
     "object": "曙光 8000（登峰）AI 超集群",
@@ -1634,7 +1601,7 @@
   },
   {
     "event_type": "product_release",
-    "event_status": "completed",
+    "event_status": "rumored",
     "event_time": "2026-07-17T12:38:17.000Z",
     "disclosed_at": "2026-07-17T12:38:17.000Z",
     "entities": [
@@ -1662,10 +1629,10 @@
       {
         "source_ref": "SA-d9adb7053439e979",
         "disclosed_at": "2026-07-17T12:38:17.000Z",
-        "status": "completed"
+        "status": "rumored"
       }
     ],
-    "publication_status": "verified",
+    "publication_status": "disputed",
     "event_id": "EV-7963d8c78531f12d",
     "display_title_zh": "微软正开发AI漏洞检测工具\"感知项目\"，类似Anthropic Mythos模型，最快7月发布"
   },
@@ -1747,10 +1714,9 @@
     "event_time": "2026-07-17T07:22:18.000Z",
     "disclosed_at": "2026-07-17T07:22:18.000Z",
     "entities": [
-      "EN-53874092e000069b",
       "EN-9c8ae69b84f21a2e",
-      "EN-f0da91960830b394",
-      "EN-505ff8a27618ef39"
+      "EN-53874092e000069b",
+      "EN-f0da91960830b394"
     ],
     "action": "发布具身 VLM 基座模型",
     "object": "Hy-Embodied-VLM-1.0，A3B 规模性能接近上一代 A32B 模型",
@@ -1772,7 +1738,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-7fe139b107f9adc6",
+    "event_id": "EV-c5a59cb4cc9d7e8e",
     "display_title_zh": "腾讯发布具身 VLM 基座模型 Hy-Embodied-VLM-1.0，A3B 规模性能接近上一代 A32B 模型"
   },
   {
@@ -1949,5 +1915,43 @@
     "publication_status": "verified",
     "event_id": "EV-ca0beb75aaf1c156",
     "display_title_zh": "百度沈抖：为每位员工每月发放1000元额度，体验市面主流大模型产品"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-07-16T00:00:00.000Z",
+    "disclosed_at": "2026-07-16T00:00:00.000Z",
+    "entities": [
+      "EN-522656609ff15589"
+    ],
+    "action": "Raises",
+    "object": "$55 Million to Help Health Systems Turn Their Best Ideas into Reality | Bunkerhill",
+    "metrics": [
+      "$55 Million",
+      "$55M",
+      "$55 million"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-35dbef30840827e4",
+      "CL-dc3b5b20344a8e97",
+      "CL-484d5bb7474a81e0",
+      "CL-9203e160853838dc"
+    ],
+    "source_refs": [
+      "SA-d4ce1d54873c8b95"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-d4ce1d54873c8b95",
+        "disclosed_at": "2026-07-16T00:00:00.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-6be89ebfbf8de6be",
+    "display_title_zh": "Bunkerhill Health 融资 5500 万美元，助力医疗系统将最佳创意变为现实"
   }
 ]

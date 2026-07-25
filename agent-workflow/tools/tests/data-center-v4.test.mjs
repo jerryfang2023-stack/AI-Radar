@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { buildBundle, eventAiRelevanceEvidence, findEventRule, normalizeEventTitle, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, findEventRule, normalizeEventTitle, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
@@ -595,6 +595,119 @@ test("current factual title language maps to canonical event types", () => {
   for (const [title, eventType] of cases) assert.equal(findEventRule(title)?.eventType, eventType, title);
 });
 
+test("known upstream category collisions stay in their responsible canonical types", () => {
+  const cases = [
+    ["Google's A2A Agent Marketplace Goes Live: The First Natural Language Agent Discovery Platform", "product_release"],
+    ["Qualcomm unveils three new data center solutions including Dragonfly C1000 CPU, set to be deployed by Meta", "hardware_product"],
+    ["Microsoft launches its own AI deployment company, invests $2.5 billion", "organization_restructuring"],
+    ["微软推出自有AI部署公司，投入25亿美元", "organization_restructuring"],
+    ["The Home Depot Delivers Customer Store Phone Support Four Times Faster Using Google Cloud's Gemini Enterprise", "deployment"],
+    ["Banco do Brasil Embeds Agentic AI Into Core Workflows to Strengthen Relationship Banking", "deployment"],
+    ["Bayer GBS Transformed Procurement with Intelligent Automation", "deployment"],
+    ["Bristol Myers Squibb Building Life Science Industry's Most Advanced AI Factory on NVIDIA Vera Rubin", "hardware_deployment"],
+    ["Archestra.AI Announces $10M Seed", "funding"],
+    ["Former GitHub CEO Thomas Dohmke launches Entire with a landmark $60 million seed round", "funding"],
+  ];
+
+  for (const [title, eventType] of cases) assert.equal(findEventRule(title)?.eventType, eventType, title);
+});
+
+test("a research-fund commitment is not eligible as company financing", () => {
+  const result = eventSourceEligibility(
+    {
+      clean_text: "Anthropic is committing $200 million to the fund to support ambitious external research.",
+      raw_qc_decision: "pass",
+      extraction_quality: "high",
+    },
+    { source_url: "https://www.anthropic.com/news/economic-futures-research-fund-agenda" },
+    "Anthropic launches Economic Futures research fund agenda",
+  );
+
+  assert.deepEqual(result, {
+    accepted: false,
+    reason: "research_fund_commitment_not_company_financing",
+  });
+});
+
+test("known cumulative-funding corrections reject the superseded secondary source", () => {
+  const marketOverview = eventSourceEligibility(
+    { clean_text: "The global AI agents market is growing, according to Gartner.", raw_qc_decision: "pass" },
+    { source_url: "https://example.com/vertical-ai-agents" },
+    "Vertical AI Agents: The $1B Shift Reshaping Enterprise in 2026",
+  );
+  const bunkerhillSecondary = eventSourceEligibility(
+    { clean_text: "Bunkerhill announced a Series B.", source_level: "B", raw_qc_decision: "pass" },
+    { source_url: "https://example.com/bunkerhill" },
+    "Bunkerhill Health raises $55M to scale agentic AI",
+  );
+  const bunkerhillOfficial = eventSourceEligibility(
+    { clean_text: "The Series B brings total funding to date to $55 million.", source_level: "official", raw_qc_decision: "pass" },
+    { source_url: "https://www.bunkerhillhealth.com/resources/series-b-announcement" },
+    "Bunkerhill Health Raises $55 Million to Help Health Systems Turn Their Best Ideas into Reality",
+  );
+
+  assert.equal(marketOverview.reason, "market_overview_not_company_funding_source");
+  assert.equal(bunkerhillSecondary.reason, "funding_amount_semantics_replaced_by_official_source");
+  assert.equal(bunkerhillOfficial.accepted, true);
+});
+
+test("superseded roundups and secondary event sources remain outside canonical events", () => {
+  const cases = [
+    [
+      { clean_text: "Daily digest.", raw_qc_decision: "pass" },
+      { source_url: "https://example.com/daily" },
+      "IT早报｜月之暗面完成新一轮融资；其他新闻",
+      "multi_event_roundup_not_single_event_source",
+    ],
+    [
+      { clean_text: "Entire launches.", raw_qc_decision: "pass" },
+      { source_url: "https://the-agent-report.com/entire-launch" },
+      "The Agent Report: Thomas Dohmke launches Entire",
+      "secondary_source_replaced_by_original_announcement",
+    ],
+    [
+      { clean_text: "Bayer case.", raw_qc_decision: "pass" },
+      { source_url: "https://theapplied.co/bayer-gbs" },
+      "Bayer GBS Transformed Procurement with Intelligent Automation",
+      "secondary_source_replaced_by_vendor_case_study",
+    ],
+  ];
+
+  for (const [raw, artifact, title, reason] of cases) {
+    assert.equal(eventSourceEligibility(raw, artifact, title).reason, reason);
+  }
+});
+
+test("an attributed completed financing is not downgraded to rumor", () => {
+  const result = eventSourceEligibility(
+    {
+      clean_text: "据华峰资本官微消息，月之暗面已完成新一轮约20亿美元融资，本轮由美团龙珠领投。",
+      source_level: "A",
+      raw_qc_decision: "pass",
+    },
+    { source_url: "https://www.nbd.com.cn/articles/2026-05-07/4381686.html" },
+    "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
+  );
+  const roundup = eventSourceEligibility(
+    { clean_text: "A daily collection of unrelated items.", raw_qc_decision: "pass" },
+    { source_url: "https://example.com/roundup" },
+    "OpenAI 私有 MCP 🤖，Cognition 估值 260 亿美元 💰，ElevenLabs Music v2 🎵",
+  );
+
+  assert.equal(result.accepted, true);
+  assert.equal(roundup.reason, "multi_event_roundup_not_single_event_source");
+});
+
+test("corrected event statuses distinguish completed rollout evidence from future hardware", () => {
+  assert.equal(findEventRule("Qualcomm unveils Dragonfly C1000 CPU, set to be deployed by Meta")?.eventType, "hardware_product");
+  assert.equal(eventAiRelevanceEvidence({
+    title: "Qualcomm unveils Dragonfly C1000 CPU",
+    claims: [],
+    entityNames: ["Qualcomm"],
+    eventType: "hardware_product",
+  }).accepted, true);
+});
+
 test("a source-bounded app launch in the lead becomes a product event", () => {
   const bundle = buildBundle([
     entry(
@@ -827,6 +940,13 @@ test("AI relevance evaluator distinguishes industry facts from generic AI wordin
   }).accepted, true);
 
   assert.equal(eventAiRelevanceEvidence({
+    title: "Poolside releases Laguna S 2.1",
+    claims: ["Poolside has released Laguna S 2.1, its third coding model in three months."],
+    entityNames: ["Poolside"],
+    eventType: "model_release"
+  }).basis, "explicit_claim_text");
+
+  assert.equal(eventAiRelevanceEvidence({
     title: "北京亦庄联合京东云上线模型券即时补贴平台",
     claims: ["企业购买模型服务可获得最高65%的即时补贴。"],
     entityNames: ["京东云"],
@@ -1037,13 +1157,12 @@ test("daily workflow commits compatibility outputs only after the compatibility 
   for (const asset of [
     "business-signals-frontstage-gate.md",
     "business-signals-frontstage-gate.json",
-    "trend-candidate-decision.md",
-    "no-trend-candidate-decision.md",
     "v3-data-observation-desk.json",
     "intelligence-graph-index.json"
   ]) {
     assert.ok(workflow.indexOf(asset, compatibilityBlock) > compatibilityBlock, `${asset} must be staged inside the compatibility-success block`);
   }
+  assert.doesNotMatch(workflow, /(?:no-)?trend-candidate-decision\.md/iu);
   assert.match(workflow, /pre-commit-gate\.outcome \}\}" = "success" \] && \[ "\$\{\{ steps\.business-frontstage-data\.outcome/iu);
 });
 

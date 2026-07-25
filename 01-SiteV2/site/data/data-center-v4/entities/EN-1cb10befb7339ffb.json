@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1533,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-1cb10befb7339ffb",
+    "name": "Bayer GBS",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-2f9a87bd46248fe8"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-01",
+    "lastSeen": "2026-07-08",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-2f9a87bd46248fe8"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-2f9a87bd46248fe8",
+        "dataDate": "2026-07-08",
+        "date": "2026-05-01",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "UiPath 助力拜耳全球业务服务通过智能自动化转型采购",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1cb10befb7339ffb",
+          "EN-96eebba49dbbf422",
+          "EN-2a920347dfcf07a7"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-e00d6e767952f635",
+      "eventId": "EV-2f9a87bd46248fe8",
+      "dataDate": "2026-07-08",
+      "date": "2026-05-01",
+      "title": "UiPath 助力拜耳全球业务服务通过智能自动化转型采购",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "Bayer GBS",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "Procurement with Intelligent Automation | UiPath",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [
+        "faster purchase order creation (10 → 3 minutes)"
+      ],
+      "metrics": [
+        "46.6 billion",
+        "6.2 billion"
+      ],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components"
+      ],
+      "tags": [],
+      "sourceUrl": "https://www.uipath.com/resources/automation-case-studies/bayer-gbs-transforms-procurement-with-intelligent-automation",
+      "entityIds": [
+        "EN-1cb10befb7339ffb",
+        "EN-96eebba49dbbf422",
+        "EN-2a920347dfcf07a7"
+      ]
+    }
+  ],
+  "hardware": []
+}

@@ -1,27 +1,5 @@
 [
   {
-    "claim_id": "CL-8ebf9fd4c8bcf7f8",
-    "raw_id": "RAW-39805d4a221ccc77",
-    "claim_type": "funding",
-    "subject": "月之暗面",
-    "predicate": "funding",
-    "object": "20 亿美元融资",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1,
-      "model_candidate_id": "MAC-e0b4b89fe8f59fe5"
-    },
-    "source_span": {
-      "raw_id": "RAW-39805d4a221ccc77",
-      "start": 688,
-      "end": 725
-    },
-    "source_quote": "月之暗面正寻求新一轮高达 20 亿美元的融资，目标估值达 300 亿美元。",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-37a1cbf148d7b0f8",
     "raw_id": "RAW-2383acd2e0dea431",
     "claim_type": "ipo_listing",
@@ -29,7 +7,7 @@
     "predicate": "ipo_listing",
     "object": "申请",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -40,7 +18,7 @@
     "source_quote": "OpenAI files confidentially for IPO, following Anthropic",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-27bc52b2aa2b2eb9",
@@ -50,7 +28,7 @@
     "predicate": "ipo_listing",
     "object": "申请",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -61,7 +39,7 @@
     "source_quote": "ChatGPT-maker OpenAI has filed confidentially for an initial public offering, the company announced Monday in a blog post. The filing comes a little more than a week after its main rival, Anthropic, also filed to go public , ramping up the race between the two AI firms.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-4c1e88e676fc6d73",
@@ -71,7 +49,7 @@
     "predicate": "ipo_listing",
     "object": "申请",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -82,7 +60,7 @@
     "source_quote": "OpenAI, which was last valued at $852 billion post-money , submitted a draft registration statement to the U.S. Securities and Exchange Commission for a proposed IPO. OpenAI hasn’t shared any specifics yet. However, the company said it posted the blog because it expected a leak.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-5e55b73326fc1077",
@@ -1147,7 +1125,7 @@
     "predicate": "ipo_listing",
     "object": "上市信号",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -1158,7 +1136,7 @@
     "source_quote": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号 - IT之家",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-37aa9dd154b049e5",
@@ -1168,7 +1146,7 @@
     "predicate": "ipo_listing",
     "object": "上市信号",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -1179,7 +1157,7 @@
     "source_quote": "OpenAI 已提交 S-1 草案，释放潜在 IPO 上市信号",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-fa37220043fac3d3",
@@ -1189,7 +1167,7 @@
     "predicate": "ipo_listing",
     "object": "上市信号",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -1200,7 +1178,7 @@
     "source_quote": "IT之家注：S-1 是企业向美国证券交易委员会提交的注册声明文件，常见于首次公开募股前。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-b3890ae8e8f52a06",
@@ -1210,7 +1188,7 @@
     "predicate": "ipo_listing",
     "object": "上市信号",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 4
     },
     "source_span": {
@@ -1221,7 +1199,7 @@
     "source_quote": "IT之家曾于 6 月 2 日报道，OpenAI 的竞争对手 Anthropic 已秘密递交 IPO 申请，暂未确定发行股份数量与发行定价。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-65b764b60f04a5aa",
@@ -1550,7 +1528,7 @@
     "predicate": "product_release",
     "object": "AIVA 品牌",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1,
       "model_candidate_id": "MAC-7137810e39df6888"
     },
@@ -1562,7 +1540,7 @@
     "source_quote": "赛力斯“赛豆科技”全新品牌 AIVA 官宣：车标样式曝光，全系标配豆包大模型智能座舱",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-ff09878b6268517a",
@@ -1572,7 +1550,7 @@
     "predicate": "product_release",
     "object": "首款车型",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 2,
       "model_candidate_id": "MAC-7137810e39df6888"
     },
@@ -1584,7 +1562,7 @@
     "source_quote": "首款车型预计今年内推出",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-412c1165ad9aea08",
@@ -1814,6 +1792,90 @@
       "end": 392
     },
     "source_quote": "例如给航空公司打电话时，系统可调出邮件里的确认码。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-782bbf8d0f8a6c2c",
+    "raw_id": "RAW-75b193d37155ffc5",
+    "claim_type": "funding",
+    "subject": "月之暗面",
+    "predicate": "funding",
+    "object": "投后估值超过200亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-75b193d37155ffc5",
+      "start": 3,
+      "end": 30
+    },
+    "source_quote": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-52c35eb1cf489fab",
+    "raw_id": "RAW-75b193d37155ffc5",
+    "claim_type": "funding",
+    "subject": "月之暗面",
+    "predicate": "funding",
+    "object": "投后估值超过200亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-75b193d37155ffc5",
+      "start": 58,
+      "end": 118
+    },
+    "source_quote": "每经AI快讯，5月7日，据华峰资本官微消息，月之暗面（Kimi）已完成新一轮约20亿美元融资，投后估值超过200亿美元。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a696f23d8760edcd",
+    "raw_id": "RAW-75b193d37155ffc5",
+    "claim_type": "funding",
+    "subject": "月之暗面",
+    "predicate": "funding",
+    "object": "投后估值超过200亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-75b193d37155ffc5",
+      "start": 118,
+      "end": 153
+    },
+    "source_quote": "本轮由美团龙珠领投，水木资本、中国移动、CPE（中信产业基金）等参投。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-daedb51cccdcd89b",
+    "raw_id": "RAW-75b193d37155ffc5",
+    "claim_type": "funding",
+    "subject": "月之暗面",
+    "predicate": "funding",
+    "object": "投后估值超过200亿美元",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-75b193d37155ffc5",
+      "start": 153,
+      "end": 195
+    },
+    "source_quote": "华峰资本担任本次交易部分买方的财务顾问，在交易结构设计、投资方匹配及谈判中提供支持。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

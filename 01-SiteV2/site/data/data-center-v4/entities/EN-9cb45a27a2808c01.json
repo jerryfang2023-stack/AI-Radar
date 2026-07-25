@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T06:10:03.737Z",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1516,
+    "eventCount": 1533,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -21,16 +21,18 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-da1655ecfaf35feb",
       "EV-ad75efcb12a07793"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-01",
-    "lastSeen": "2026-07-01",
+    "lastSeen": "2026-07-24",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-da1655ecfaf35feb",
         "EV-ad75efcb12a07793"
       ],
       "deployments": [],
@@ -41,6 +43,28 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-da1655ecfaf35feb",
+        "dataDate": "2026-07-24",
+        "date": "2026-07-23",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI芯片初创公司Etched无视质疑，获知名投资者青睐估值达103亿美元",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "entityIds": [
+          "EN-9cb45a27a2808c01"
+        ]
+      },
       {
         "id": "EV-ad75efcb12a07793",
         "dataDate": "2026-07-01",

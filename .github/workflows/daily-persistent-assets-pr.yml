@@ -678,8 +678,6 @@ jobs:
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
             stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.md"
             stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.json"
-            stage_if_exists "agent-workflow/reports/${RUN_DATE}-trend-candidate-decision.md"
-            stage_if_exists "agent-workflow/reports/${RUN_DATE}-no-trend-candidate-decision.md"
             stage_if_exists "01-SiteV2/site/data/v3-data-observation-desk.json"
             stage_if_exists "01-SiteV2/site/data/intelligence-graph-index.json"
           fi

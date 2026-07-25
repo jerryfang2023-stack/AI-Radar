@@ -43,8 +43,7 @@
     "event_time": "2026-06-04T21:52:51.000Z",
     "disclosed_at": "2026-06-04T21:52:51.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d",
-      "EN-fe7f2cc6a2c87e0b"
+      "EN-cb4754c48f8023d0"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.163 发布",
@@ -71,7 +70,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-d83bfcd73c850580",
+    "event_id": "EV-2687a22df927f183",
     "display_title_zh": "Claude Code v2.1.163 发布"
   },
   {
@@ -203,7 +202,8 @@
     "disclosed_at": "2026-06-05T00:46:23.081Z",
     "entities": [
       "EN-58b507456c52c9b3",
-      "EN-96eebba49dbbf422"
+      "EN-96eebba49dbbf422",
+      "EN-348445124d405d5a"
     ],
     "action": "raises",
     "object": "$10M to broker AI agent access to corporate data",
@@ -213,15 +213,22 @@
       "$13.5 million",
       "$3.3 million"
     ],
-    "locations": [],
+    "locations": [
+      "US"
+    ],
     "claim_refs": [
       "CL-cb32b23e33619226",
       "CL-1dfedfbdbb693776",
       "CL-8bcaeba7af962ffb",
-      "CL-b4a0674a59e25e6e"
+      "CL-b4a0674a59e25e6e",
+      "CL-0b7422004e794e61",
+      "CL-7bed742fbb932dec",
+      "CL-084454eb10bac238",
+      "CL-0da970cb0ed8ddca"
     ],
     "source_refs": [
-      "SA-ddb6754de5b2017d"
+      "SA-ddb6754de5b2017d",
+      "SA-2e8806ca442bbcfe"
     ],
     "conflicts": [],
     "missing_fields": [
@@ -232,6 +239,11 @@
         "source_ref": "SA-ddb6754de5b2017d",
         "disclosed_at": "2026-06-05T00:46:23.081Z",
         "status": "completed"
+      },
+      {
+        "source_ref": "SA-2e8806ca442bbcfe",
+        "disclosed_at": "2026-06-02T00:00:00.000Z",
+        "status": "announced"
       }
     ],
     "publication_status": "verified",
@@ -322,9 +334,7 @@
       "EN-9d07f526fab9cfe9",
       "EN-bbdefa2950f49882",
       "EN-96eebba49dbbf422",
-      "EN-2aae0de3f5530f08",
-      "EN-77fe4e790d5bc756",
-      "EN-64d17ceed397dfde"
+      "EN-2aae0de3f5530f08"
     ],
     "action": "Launches",
     "object": "on Google Cloud Marketplace",
@@ -397,8 +407,7 @@
     "entities": [
       "EN-042e9398f2cc8902",
       "EN-4540952d4d9138db",
-      "EN-d736115a934212d4",
-      "EN-1943e48082f97bd6"
+      "EN-d736115a934212d4"
     ],
     "action": "product_release",
     "object": "Inference Engine",

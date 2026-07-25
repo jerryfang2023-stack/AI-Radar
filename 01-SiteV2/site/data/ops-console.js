@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V1.2.3-content-factory-cleanout",
-    "generatedAt": "2026-07-25T03:22:06.820Z",
+    "generatedAt": "2026-07-25T07:23:46.204Z",
     "date": "2026-07-25",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1343,7 +1343,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-07-25T03:00:56.656Z"
+        "detail": "2026-07-25T07:22:53.809Z"
       },
       {
         "label": "Daily Supervision",
@@ -1354,7 +1354,7 @@ window.WaveSightOpsConsole = {
   },
   "quality": {
     "pipelineMeta": {
-      "generatedAt": "2026-07-25T03:00:56.656Z",
+      "generatedAt": "2026-07-25T07:22:53.809Z",
       "dateRange": {
         "start": "2025-10-13",
         "end": "2026-07-25"
@@ -2014,7 +2014,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "engineQuality": {
-      "updatedAt": "2026-07-25T03:00:56.826Z",
+      "updatedAt": "2026-07-25T07:22:54.192Z",
       "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
       "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
       "rows": [
@@ -2218,7 +2218,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "RELATION",
         "label": "Factual relationship contract",
-        "value": "RELATION-V2.0"
+        "value": "RELATION-V2.1"
       },
       {
         "key": "BACKFILL",

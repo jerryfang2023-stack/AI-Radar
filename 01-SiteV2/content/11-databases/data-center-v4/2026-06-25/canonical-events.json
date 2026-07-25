@@ -117,6 +117,7 @@
     "event_time": "2026-06-24T13:50:56.000Z",
     "disclosed_at": "2026-06-24T13:50:56.000Z",
     "entities": [
+      "EN-137ef33b0c4f41e0",
       "EN-7d3194f79e645c42",
       "EN-373ac021a2c0bb2c",
       "EN-96eebba49dbbf422"
@@ -143,7 +144,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-1e7c76dae985100f",
+    "event_id": "EV-3d1c01d3d1b0bba4",
     "display_title_zh": "OpenAI与Broadcom发布首款定制芯片\"Jalapeño\"，专为LLM推理设计"
   },
   {
@@ -387,7 +388,8 @@
     "disclosed_at": "2026-06-25T03:26:00.394Z",
     "entities": [
       "EN-b5738c169b693bee",
-      "EN-4d748ebd71af03a7"
+      "EN-4d748ebd71af03a7",
+      "EN-e9b67bdfb6ae6a2e"
     ],
     "action": "Deployed",
     "object": "Engineering Program to Scale Agentic AI Across the Enterprise",
@@ -459,6 +461,7 @@
     "entities": [
       "EN-3d59f7548e1af215",
       "EN-ea3bd73e2b506e00",
+      "EN-e9b67bdfb6ae6a2e",
       "EN-05644efc4f4a9f67"
     ],
     "action": "推出",
@@ -545,9 +548,7 @@
     "event_time": "2026-06-24T16:15:00.000Z",
     "disclosed_at": "2026-06-24T16:15:00.000Z",
     "entities": [
-      "EN-30b6a841f80922c2",
-      "EN-c70eca6b0f88f44d",
-      "EN-7d3194f79e645c42"
+      "EN-30b6a841f80922c2"
     ],
     "action": "新增",
     "object": "代码层、动画和AI功能",
@@ -575,47 +576,12 @@
     "display_title_zh": "Figma更新：新增代码层、动画和AI功能"
   },
   {
-    "event_type": "funding",
-    "event_status": "announced",
-    "event_time": "",
-    "disclosed_at": "2026-06-25T03:26:00.441Z",
-    "entities": [
-      "EN-2f88f41306209dd7"
-    ],
-    "action": "funding",
-    "object": "$125 million",
-    "metrics": [
-      "$125 million"
-    ],
-    "locations": [],
-    "claim_refs": [
-      "CL-8c9d3dd7c3fe7958"
-    ],
-    "source_refs": [
-      "SA-ef22ce78894951a6"
-    ],
-    "conflicts": [],
-    "missing_fields": [
-      "event_time"
-    ],
-    "update_history": [
-      {
-        "source_ref": "SA-ef22ce78894951a6",
-        "disclosed_at": "2026-06-25T03:26:00.441Z",
-        "status": "announced"
-      }
-    ],
-    "publication_status": "verified",
-    "event_id": "EV-dd3217aad32e6891",
-    "display_title_zh": "垂直AI智能体：2026年重塑企业的10亿美元转型"
-  },
-  {
     "event_type": "partnership",
-    "event_status": "completed",
+    "event_status": "rumored",
     "event_time": "2026-06-24T23:21:41.000Z",
     "disclosed_at": "2026-06-24T23:21:41.000Z",
     "entities": [
-      "EN-5388bc10736a0eff"
+      "EN-3e52637ec683b555"
     ],
     "action": "接入",
     "object": "豆包2.1 Pro模型，连续包月68元起",
@@ -635,11 +601,11 @@
       {
         "source_ref": "SA-eb80275c25212864",
         "disclosed_at": "2026-06-24T23:21:41.000Z",
-        "status": "completed"
+        "status": "rumored"
       }
     ],
-    "publication_status": "verified",
-    "event_id": "EV-533d2da98cce1ae0",
+    "publication_status": "disputed",
+    "event_id": "EV-9f6d481a09b063ee",
     "display_title_zh": "豆包专业版正式发布，接入豆包2.1 Pro模型，连续包月68元起"
   },
   {
@@ -1254,7 +1220,8 @@
     "event_time": "",
     "disclosed_at": "2026-06-25T03:26:00.714Z",
     "entities": [
-      "EN-b9b0702726f5be1c"
+      "EN-b9b0702726f5be1c",
+      "EN-e9b67bdfb6ae6a2e"
     ],
     "action": "raises",
     "object": "$2.2M in a seed round led by Venture Highway | Medial",
@@ -1368,8 +1335,7 @@
       "EN-89e28a570dce8b18",
       "EN-7d3194f79e645c42",
       "EN-b70e8201c9feb94a",
-      "EN-3673c8b4dba7409e",
-      "EN-7b80ed96beed8c0a"
+      "EN-3673c8b4dba7409e"
     ],
     "action": "Launches",
     "object": "Agent Builder to Compete with n8n and Zapier in AI Workflow Automation",
@@ -1407,8 +1373,7 @@
     "entities": [
       "EN-c70eca6b0f88f44d",
       "EN-e65e0f2695fa259d",
-      "EN-562c2c6ed79e6b9e",
-      "EN-bbed1081f0b62667"
+      "EN-562c2c6ed79e6b9e"
     ],
     "action": "model_release",
     "object": "Claude Cowork plugins",
@@ -1434,5 +1399,45 @@
     "publication_status": "verified",
     "event_id": "EV-2740cdc5243d5c47",
     "display_title_zh": "AI 智能体取代SaaS工作流：2026年业务指南"
+  },
+  {
+    "event_type": "funding",
+    "event_status": "completed",
+    "event_time": "2026-04-27T00:00:00.000Z",
+    "disclosed_at": "2026-04-27T00:00:00.000Z",
+    "entities": [
+      "EN-2f88f41306209dd7"
+    ],
+    "action": "Raises",
+    "object": "$125M+ at $1B Valuation to Power America's Services Economy With AI",
+    "metrics": [
+      "$125M",
+      "$1B",
+      "$125 million",
+      "$1 billion",
+      "$1T"
+    ],
+    "locations": [],
+    "claim_refs": [
+      "CL-2f5603f017ec923d",
+      "CL-d0958ea444209b26",
+      "CL-9164c980492348fb",
+      "CL-bbdb3e1d980f0392"
+    ],
+    "source_refs": [
+      "SA-0c32343844008ae5"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-0c32343844008ae5",
+        "disclosed_at": "2026-04-27T00:00:00.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-dd3217aad32e6891",
+    "display_title_zh": "Avoca 获投超1.25亿美元，估值达10亿美元，以AI驱动美国服务业经济"
   }
 ]
