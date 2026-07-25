@@ -10,6 +10,9 @@ const root = path.resolve(__dirname, "../../..");
 
 test("industry reports projection isolates the public application from the V3 desk", () => {
   const data = buildIndustryReportsData(root);
+  const dataCenter = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json"), "utf8"));
+  const legacyDesk = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/v3-data-observation-desk.json"), "utf8"));
+  const legacyCurrentCards = legacyDesk.cards.filter((card) => card.date === dataCenter.meta.currentDate && card.category !== "opinion");
   const reportsHtml = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
   const opportunityHtml = fs.readFileSync(path.join(root, "01-SiteV2/site/opportunity-map.html"), "utf8");
 
@@ -17,6 +20,8 @@ test("industry reports projection isolates the public application from the V3 de
   assert.equal(data.meta.applicationVersion, "OMAP-V1.0.0-independent-column");
   assert.equal(data.meta.opportunityMapVersion, "OMAP-V1.0.0-independent-column");
   assert.match(data.meta.activeDate, /^\d{4}-\d{2}-\d{2}$/u);
+  assert.equal(legacyDesk.meta.activeDate, dataCenter.meta.currentDate);
+  assert.ok(legacyCurrentCards.length > 0);
   assert.ok(data.cards.length > 0);
   assert.ok(data.cards.every((card) => card.id && card.title && card.date));
   assert.ok(data.cards.every((card) => Object.keys(card.opportunitySignals.labels).length === 7));

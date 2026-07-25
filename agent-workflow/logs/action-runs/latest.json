@@ -1,41 +1,37 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-24T11:54:12.117Z",
-  "date": "2026-07-24",
-  "action": "Hermes FLV run ownership misclassification repair",
+  "generated_at": "2026-07-25T02:13:18.978Z",
+  "date": "2026-07-25",
+  "action": "Repair V4 materialization stage ownership",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Confirmed Run 30058480613 is Business Signals, verified the 2026-07-24 afternoon report/output on origin/main, and prohibited cross-lane inference before afternoon_skill_runner handoff.",
+  "summary": "Moved legacy compatibility date assertions out of the V4 core materialization test and added a policy guard against cross-stage coupling.",
   "contexts": [],
   "changed_files": [
-    "context/11-hermes-daily-supervision-instructions.md",
-    "agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md",
-    "agent-workflow/tools/write-daily-supervision-report.mjs",
-    "agent-workflow/tools/run-follow-builders-skill.ps1",
-    "agent-workflow/tools/install-follow-builders-skill-task.ps1",
-    "agent-workflow/tools/tests/daily-supervision-follow-builders.test.mjs"
+    "agent-workflow/tools/tests/data-center-frontstage.test.mjs",
+    "agent-workflow/tools/tests/industry-reports-frontstage.test.mjs",
+    "agent-workflow/tools/assert-business-signals-pipeline-policy.mjs"
   ],
   "outputs": [],
   "checks": [
-    "gh run view 30058480613",
-    "origin/main exact-date artifact check",
-    "node --test agent-workflow/tools/tests/daily-supervision-follow-builders.test.mjs",
-    "npm run repair:skills"
+    "npm run test:data-center-site:core",
+    "node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs",
+    "git diff --check"
   ],
   "issues": [
-    "Hermes attributed a Business Signals workflow to the independent FLV afternoon lane",
-    "Hermes ignored exact-date files already merged to origin/main"
+    "2026-07-25 Business Signals workflow stopped after V4 materialization because the core test expected the previous-day compatibility desk to already be rebuilt"
   ],
-  "risks": [],
+  "risks": [
+    "Compatibility date alignment must remain enforced after the compatibility projection build"
+  ],
   "lessons": [
-    "Workflow success or failure is evidence only for the lane that owns that workflow"
+    "V4 acceptance must not depend on downstream V3 compatibility freshness"
   ],
   "reusable_rules": [
-    "Before afternoon_skill_runner",
-    "refresh origin/main and verify the exact-date report/output pair",
-    "Never infer afternoon failure from Business Signals or morning FLV runs"
+    "Keep V4 core tests limited to V4 artifacts",
+    "Enforce V3/V4 date parity only after the V3 projection build"
   ],
   "retired_flags": [],
   "notes": []

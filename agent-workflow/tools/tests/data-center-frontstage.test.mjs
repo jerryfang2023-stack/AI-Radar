@@ -69,13 +69,9 @@ test("current commercial event titles are complete and evidence-specific", () =>
 test("default event date follows the latest accepted data batch", () => {
   const data = buildFrontstageData(root);
   const defaultEvents = data.events.filter((event) => event.dataDate === data.meta.currentDate);
-  const legacyDesk = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/v3-data-observation-desk.json"), "utf8"));
-  const legacyCurrentCards = legacyDesk.cards.filter((card) => card.date === data.meta.currentDate && card.category !== "opinion");
 
   assert.ok(defaultEvents.length > 0);
   assert.ok(defaultEvents.every((event) => event.dataDate === data.meta.currentDate));
-  assert.equal(legacyDesk.meta.activeDate, data.meta.currentDate);
-  assert.ok(legacyCurrentCards.length > 0);
   assert.equal(data.meta.currentDate, data.events.map((event) => event.dataDate).filter(Boolean).sort().at(-1));
 });
 
