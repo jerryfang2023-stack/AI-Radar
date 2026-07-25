@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T05:04:11.023Z",
+    "generatedAt": "2026-07-25T06:10:03.737Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1530,
-    "quarantinedEventCount": 18
+    "eventCount": 1516,
+    "quarantinedEventCount": 16
   },
   "node": {
     "id": "TX-technology-quantization",
@@ -280,10 +280,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
+        "TX-technology-computer_use",
         "TX-technology-multimodal",
+        "TX-technology-code_generation",
         "TX-technology-long_context",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
@@ -346,9 +346,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-use_case-enterprise_operations",
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -366,9 +366,7 @@
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "苹果"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -384,7 +382,6 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
-        "EV-283e9c6ddce1a271",
         "EV-118317b7f92e5e16",
         "EV-c237f5dc53f0a923",
         "EV-3a74e4995b590507",
@@ -455,10 +452,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-technology-long_context",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
@@ -470,15 +467,11 @@
         "TX-technology-quantization"
       ],
       "relatedEntityIds": [
-        "EN-e463d05a14e8697f",
         "EN-0502bb9ed34980aa",
-        "EN-dd920a8cd166f486",
-        "EN-1924fff8eb4d54ae",
-        "EN-af3ceabbe048a291",
-        "EN-45b5216872656eb3"
+        "EN-af3ceabbe048a291"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-24"
     }
   ],
   "fde": [],

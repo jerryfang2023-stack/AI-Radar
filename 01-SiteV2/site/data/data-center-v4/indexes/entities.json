@@ -4,27 +4,32 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T05:04:11.023Z",
+    "generatedAt": "2026-07-25T06:10:03.737Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1530,
-    "quarantinedEventCount": 18,
+    "eventCount": 1516,
+    "quarantinedEventCount": 16,
     "entityHistory": {
       "entityVersion": "ENTITY-V1.0",
       "relationshipVersion": "RELATION-V2.1",
-      "generatedAt": "2026-07-25T05:04:10.970Z",
+      "generatedAt": "2026-07-25T06:10:03.703Z",
       "coverage": {
         "startDate": "2017-09-07",
         "endDate": "2026-07-25",
-        "distinctDataDays": 63
+        "distinctDataDays": 63,
+        "dataBatchesByMonth": {
+          "2026-05": 8,
+          "2026-06": 30,
+          "2026-07": 25
+        }
       },
       "counts": {
-        "entities": 1290,
-        "organizations": 864,
+        "entities": 1285,
+        "organizations": 859,
         "products": 395,
         "people": 31,
         "taxonomyNodes": 43,
-        "relationships": 335
+        "relationships": 327
       },
       "review": {
         "reviewed": 894,
@@ -91,8 +96,8 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "计算机操作",
         "智能体",
+        "计算机操作",
         "数据分析"
       ],
       "eventIds": [
@@ -789,12 +794,11 @@
       "aliases": [],
       "tags": [],
       "eventIds": [
-        "EV-b2311266a6b19a7c",
         "EV-918fc324de3117bd",
         "EV-b4e7187a9bd1de0e"
       ],
       "firstSeen": "2026-06-08",
-      "lastSeen": "2026-07-25",
+      "lastSeen": "2026-07-01",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "公司/机构",
@@ -1067,10 +1071,10 @@
         "Qwen"
       ],
       "tags": [
-        "计算机操作",
         "智能体",
-        "代码生成",
+        "计算机操作",
         "多模态",
+        "代码生成",
         "长上下文"
       ],
       "eventIds": [
@@ -1250,7 +1254,6 @@
         "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
         "EV-8a2d8ebbd700c787",
-        "EV-ecce694f17ac8ed9",
         "EV-b334f46b11a68045",
         "EV-75b9b997e9c7e5d1",
         "EV-f79713437230562f",
@@ -1297,8 +1300,8 @@
         "智能体",
         "科技与软件",
         "软件开发",
-        "代码生成",
-        "金融服务"
+        "金融服务",
+        "企业运营自动化"
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
@@ -1358,13 +1361,10 @@
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
         "EV-0e616f9e775a77dc",
-        "EV-2ee06634c0ce9f30",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
         "EV-0d5a32aca724d30e",
         "EV-32fb6014149bafdd",
-        "EV-7de7614b6a0a0e78",
-        "EV-c16240c63a33f97a",
         "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
         "EV-3b7b9040dd2c2a89",
@@ -1701,15 +1701,13 @@
       "id": "EN-3a7bd3e2360a3d29",
       "name": "Apple",
       "sourceType": "organization_candidate",
-      "aliases": [
-        "苹果"
-      ],
+      "aliases": [],
       "tags": [
         "智能体",
-        "代码生成",
         "多模态",
         "零售与电商",
-        "制造业"
+        "制造业",
+        "代码生成"
       ],
       "eventIds": [
         "EV-f282ab8740ff0096",
@@ -1722,7 +1720,6 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
-        "EV-283e9c6ddce1a271",
         "EV-118317b7f92e5e16",
         "EV-c237f5dc53f0a923",
         "EV-3a74e4995b590507",
@@ -1791,43 +1788,21 @@
         "EV-1b92b6c835ce240c"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-25",
+      "lastSeen": "2026-07-24",
       "relatedEntityIds": [
-        "EN-e463d05a14e8697f",
         "EN-0502bb9ed34980aa",
-        "EN-dd920a8cd166f486",
-        "EN-1924fff8eb4d54ae",
-        "EN-af3ceabbe048a291",
-        "EN-45b5216872656eb3"
+        "EN-af3ceabbe048a291"
       ],
       "relationIds": [
-        "REL2-2c82bf25c532a4e1",
         "REL2-1088b525da98df85",
-        "REL2-0700c100aba4f7c2",
-        "REL2-5a09d0744942f11b",
         "REL2-04014818e378c5b2",
         "REL2-1f4fedf249db5eac",
-        "REL2-27b659bc5e5fe00b",
-        "REL2-3d00d7538e09943f",
-        "REL2-74ad6f207729d6ae",
-        "REL2-bcbf4f353ec2e5b3",
-        "REL2-ced495a5aea356e0",
-        "REL2-ea61135fcfa1e38f",
         "REL2-f5b7bf87ac9c1791"
       ],
       "type": "公司/机构",
       "productIds": [
-        "EN-e463d05a14e8697f",
         "EN-0502bb9ed34980aa",
-        "EN-dd920a8cd166f486",
-        "EN-1924fff8eb4d54ae",
         "EN-af3ceabbe048a291",
-        "EN-af3ceabbe048a291",
-        "EN-af3ceabbe048a291",
-        "EN-1924fff8eb4d54ae",
-        "EN-45b5216872656eb3",
-        "EN-af3ceabbe048a291",
-        "EN-0502bb9ed34980aa",
         "EN-af3ceabbe048a291",
         "EN-af3ceabbe048a291"
       ]
@@ -2350,9 +2325,9 @@
       "tags": [
         "智能体",
         "软件开发",
-        "代码生成",
         "多模态",
-        "企业运营自动化"
+        "企业运营自动化",
+        "代码生成"
       ],
       "eventIds": [
         "EV-87432dbb99cd6033",
@@ -2654,11 +2629,11 @@
         "Gemini"
       ],
       "tags": [
-        "计算机操作",
         "智能体",
         "科技与软件",
         "软件开发",
-        "代码生成"
+        "计算机操作",
+        "多模态"
       ],
       "eventIds": [
         "EV-e41fc65eb014893f",
@@ -2892,9 +2867,9 @@
       "tags": [
         "智能体",
         "软件开发",
-        "代码生成",
         "多模态",
-        "视觉语言"
+        "视觉语言",
+        "代码生成"
       ],
       "eventIds": [
         "EV-6f092cfc7a064d64",
@@ -3042,8 +3017,8 @@
       "tags": [
         "智能体",
         "软件开发",
-        "代码生成",
         "多模态",
+        "代码生成",
         "医疗与生命科学"
       ],
       "eventIds": [
@@ -3208,11 +3183,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "计算机操作",
         "智能体",
         "科技与软件",
-        "代码生成",
-        "多模态"
+        "计算机操作",
+        "多模态",
+        "金融服务"
       ],
       "eventIds": [
         "EV-ccbf97fdf4dc11d0",
@@ -3526,8 +3501,8 @@
       "aliases": [],
       "tags": [
         "智能体",
-        "代码生成",
         "多模态",
+        "代码生成",
         "长上下文",
         "端侧"
       ],
@@ -3540,10 +3515,12 @@
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-17",
       "relatedEntityIds": [
-        "EN-50ba7ff15827787b"
+        "EN-50ba7ff15827787b",
+        "EN-b5251b35f15bedc4"
       ],
       "relationIds": [
-        "REL2-3bb20cf1641017a6"
+        "REL2-3bb20cf1641017a6",
+        "REL2-da3a5c7a078275ca"
       ],
       "type": "公司/机构",
       "productIds": [
@@ -3593,11 +3570,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "计算机操作",
         "智能体",
         "软件开发",
-        "代码生成",
-        "多模态"
+        "计算机操作",
+        "多模态",
+        "企业运营自动化"
       ],
       "eventIds": [
         "EV-5df885dbd24b6d00",
@@ -3616,7 +3593,6 @@
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
         "EV-5bc7efca0bc7fec0",
-        "EV-d3a47b7f6243a909",
         "EV-fdc4c26edadb4cea",
         "EV-702276a31f123374",
         "EV-fbc316f83b63a543",
@@ -3649,7 +3625,6 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
-        "EV-ae117a54e1332539",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
         "EV-04cf95633b564f9a",
@@ -3709,11 +3684,11 @@
         "微软"
       ],
       "tags": [
-        "计算机操作",
         "智能体",
         "科技与软件",
         "软件开发",
-        "代码生成"
+        "计算机操作",
+        "零售与电商"
       ],
       "eventIds": [
         "EV-86ca5af11ee4d275",
@@ -3734,7 +3709,6 @@
         "EV-8abf5adc3e72fbb8",
         "EV-eec1e6857f0e0b2b",
         "EV-6acfb15c012ddf6d",
-        "EV-00518fdcb2de1f48",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b833b29d904b39ac",
@@ -3792,7 +3766,6 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
-        "EV-ae117a54e1332539",
         "EV-bce258f8f915ff5f",
         "EV-89bdda008227fb6b",
         "EV-62df953d81def866",
@@ -3913,8 +3886,8 @@
       "aliases": [],
       "tags": [
         "智能体",
-        "代码生成",
         "汽车与交通",
+        "代码生成",
         "长上下文",
         "端侧"
       ],
@@ -3986,9 +3959,9 @@
       "tags": [
         "智能体",
         "软件开发",
-        "代码生成",
         "多模态",
-        "金融服务"
+        "金融服务",
+        "视觉语言"
       ],
       "eventIds": [
         "EV-5be48cce8dc4f3de",
@@ -4015,6 +3988,7 @@
       "relatedEntityIds": [
         "EN-607964040e4b62e0",
         "EN-eb732565c71e6b85",
+        "EN-7df09a7717ef2feb",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
@@ -4022,6 +3996,7 @@
       "relationIds": [
         "REL2-89beb40b356699d5",
         "REL2-043910685537ede7",
+        "REL2-da3a5c7a078275ca",
         "REL2-6099c03394d4a343",
         "REL2-fd08f8e3ae8e8b5a",
         "REL2-ec88f13cd3171c26"
@@ -4149,9 +4124,9 @@
       "tags": [
         "智能体",
         "科技与软件",
-        "代码生成",
         "多模态",
-        "企业运营自动化"
+        "企业运营自动化",
+        "制造业"
       ],
       "eventIds": [
         "EV-e3792591090281c6",
@@ -4189,6 +4164,7 @@
         "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-5b16886442234f81",
+        "EV-80f4e7972384ace8",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
         "EV-f63462e34ea40699",
@@ -4196,7 +4172,6 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-80f4e7972384ace8",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
         "EV-243e73016576fa43",
@@ -4262,7 +4237,6 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
-        "EV-ae117a54e1332539",
         "EV-89bdda008227fb6b",
         "EV-89f9216de5b559ac",
         "EV-c14e5185fd6bbe30",
@@ -4274,7 +4248,6 @@
       "firstSeen": "2025-03-18",
       "lastSeen": "2026-07-25",
       "relatedEntityIds": [
-        "EN-b5738c169b693bee",
         "EN-c70eca6b0f88f44d",
         "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
@@ -4286,6 +4259,7 @@
         "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
+        "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
         "EN-3ae50afab3e392b8",
@@ -4300,7 +4274,6 @@
         "EN-171fa23d27b5894b"
       ],
       "relationIds": [
-        "REL2-6bbe82d002f050c9",
         "REL2-a413b62820bbd0b4",
         "REL2-a96854ad8a7b0bbc",
         "REL2-2e2947ee2164a001",
@@ -4314,6 +4287,7 @@
         "REL2-2106a1b212c3c15f",
         "REL2-5c7eb93c8f39f28d",
         "REL2-434765e50ff89fea",
+        "REL2-6bbe82d002f050c9",
         "REL2-1408b94e058f06a8",
         "REL2-bcb7c3de6286e47d",
         "REL2-09079be08468cadc",
@@ -4367,11 +4341,11 @@
       "sourceType": "organization_candidate",
       "aliases": [],
       "tags": [
-        "计算机操作",
         "智能体",
         "科技与软件",
         "软件开发",
-        "代码生成"
+        "计算机操作",
+        "多模态"
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
@@ -4979,9 +4953,9 @@
       "tags": [
         "智能体",
         "软件开发",
-        "代码生成",
         "多模态",
-        "金融服务"
+        "金融服务",
+        "零售与电商"
       ],
       "eventIds": [
         "EV-ccbf97fdf4dc11d0",
@@ -5157,9 +5131,9 @@
       "tags": [
         "智能体",
         "软件开发",
-        "代码生成",
         "金融服务",
-        "企业运营自动化"
+        "企业运营自动化",
+        "制造业"
       ],
       "eventIds": [
         "EV-15cc72d7c78cad3d",
@@ -5313,7 +5287,7 @@
       ],
       "eventIds": [
         "EV-e3382d1c1d7db751",
-        "EV-3c192fe2fcc54993"
+        "EV-b9a1cba0b59a5354"
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-07-25",
@@ -5338,15 +5312,14 @@
         "EV-01df8e489a34893b",
         "EV-029d34e296397775",
         "EV-181b425d2a600cad",
+        "EV-80f4e7972384ace8",
         "EV-3c26d873f436981b",
         "EV-b95539d17772a4ce",
         "EV-f63462e34ea40699",
-        "EV-80f4e7972384ace8",
-        "EV-3474febbec499f3c",
-        "EV-a6f52a6dada10cdf"
+        "EV-3474febbec499f3c"
       ],
       "firstSeen": "2026-04-12",
-      "lastSeen": "2026-07-25",
+      "lastSeen": "2026-07-15",
       "relatedEntityIds": [
         "EN-8d4321d936320802"
       ],
@@ -5368,8 +5341,8 @@
       "tags": [
         "智能体",
         "软件开发",
-        "代码生成",
         "制造业",
+        "代码生成",
         "端侧"
       ],
       "eventIds": [
@@ -5487,10 +5460,10 @@
         "软银"
       ],
       "tags": [
-        "代码生成",
         "多模态",
         "制造业",
         "汽车与交通",
+        "代码生成",
         "医疗与生命科学"
       ],
       "eventIds": [
@@ -5875,8 +5848,8 @@
         "智能体",
         "科技与软件",
         "软件开发",
-        "代码生成",
-        "多模态"
+        "多模态",
+        "零售与电商"
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
@@ -6244,9 +6217,9 @@
       "tags": [
         "智能体",
         "软件开发",
-        "代码生成",
         "企业运营自动化",
-        "制造业"
+        "制造业",
+        "代码生成"
       ],
       "eventIds": [
         "EV-3daefecd0453631a",
@@ -6297,8 +6270,8 @@
       ],
       "tags": [
         "智能体",
-        "代码生成",
         "多模态",
+        "代码生成",
         "机器人与物理自动化",
         "长上下文"
       ],
@@ -6535,8 +6508,8 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
-        "计算机操作",
         "智能体",
+        "计算机操作",
         "数据分析"
       ],
       "eventIds": [
@@ -8900,8 +8873,7 @@
         "Claude Code v2.1.214",
         "Claude Code v2.1.216",
         "Claude Code v2.1.217",
-        "Claude Code v2.1.218",
-        "Claude Code v2.1.219"
+        "Claude Code v2.1.218"
       ],
       "tags": [
         "智能体",
@@ -8912,7 +8884,6 @@
       ],
       "eventIds": [
         "EV-0e616f9e775a77dc",
-        "EV-7de7614b6a0a0e78",
         "EV-6cd7509380208a9d",
         "EV-4449950a89892852",
         "EV-8121a1ecdf168d8a",
@@ -9709,21 +9680,13 @@
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-09",
-      "relatedEntityIds": [
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "relationIds": [
-        "REL2-74ad6f207729d6ae"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-669a3d4496b624"
       ],
-      "companyIds": [
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "companyNames": [
-        "Apple"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -9739,21 +9702,13 @@
       ],
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-06-12",
-      "relatedEntityIds": [
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "relationIds": [
-        "REL2-0700c100aba4f7c2"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-7cb1ad84ae1634"
       ],
-      "companyIds": [
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "companyNames": [
-        "Apple"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -10527,8 +10482,8 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
-        "计算机操作",
-        "智能体"
+        "智能体",
+        "计算机操作"
       ],
       "eventIds": [
         "EV-a4f052325d0ef230"
@@ -11225,8 +11180,8 @@
       "aliases": [],
       "tags": [
         "软件开发",
-        "代码生成",
         "多模态",
+        "代码生成",
         "工具调用",
         "语音与音频"
       ],
@@ -11262,8 +11217,8 @@
       ],
       "tags": [
         "软件开发",
-        "代码生成",
         "多模态",
+        "代码生成",
         "语音与音频"
       ],
       "eventIds": [
@@ -13735,8 +13690,8 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
-        "计算机操作",
         "智能体",
+        "计算机操作",
         "数据分析"
       ],
       "eventIds": [
@@ -13825,8 +13780,8 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
-        "计算机操作",
         "智能体",
+        "计算机操作",
         "多模态",
         "工具调用",
         "推理能力"
@@ -15079,8 +15034,8 @@
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
-        "计算机操作",
         "智能体",
+        "计算机操作",
         "数据分析"
       ],
       "eventIds": [
@@ -15767,22 +15722,13 @@
       ],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-20",
-      "relatedEntityIds": [
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "relationIds": [
-        "REL2-5a09d0744942f11b",
-        "REL2-3d00d7538e09943f"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-3995a3476470ce"
       ],
-      "companyIds": [
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "companyNames": [
-        "Apple"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -15813,9 +15759,6 @@
       "relationIds": [
         "REL2-04014818e378c5b2",
         "REL2-1f4fedf249db5eac",
-        "REL2-27b659bc5e5fe00b",
-        "REL2-bcbf4f353ec2e5b3",
-        "REL2-ea61135fcfa1e38f",
         "REL2-f5b7bf87ac9c1791"
       ],
       "legacyIds": [
@@ -16912,21 +16855,13 @@
       ],
       "firstSeen": "2026-06-26",
       "lastSeen": "2026-06-26",
-      "relatedEntityIds": [
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "relationIds": [
-        "REL2-2c82bf25c532a4e1"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "legacyIds": [
         "PD-4b80b29af2f4bd"
       ],
-      "companyIds": [
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "companyNames": [
-        "Apple"
-      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -16949,8 +16884,7 @@
         "EN-3a7bd3e2360a3d29"
       ],
       "relationIds": [
-        "REL2-1088b525da98df85",
-        "REL2-ced495a5aea356e0"
+        "REL2-1088b525da98df85"
       ],
       "legacyIds": [
         "PD-40624d0771ffbe"
@@ -18559,7 +18493,6 @@
       "typeLabel": "技术",
       "valueId": "code_generation",
       "eventIds": [
-        "EV-d2e31ba8e0ec10cf",
         "EV-1a6688afdfd108ef",
         "EV-15cc72d7c78cad3d",
         "EV-52115fee0e716170",
@@ -18601,7 +18534,6 @@
         "EV-4900ddf0686f4bbc"
       ],
       "entityIds": [
-        "EN-ac32f27ba7a1346f",
         "EN-026c3bd4be5b91f3",
         "EN-80d387ccb3289295",
         "EN-3ccbd9105a45d8fc",
@@ -19152,7 +19084,7 @@
       "typeLabel": "技术",
       "valueId": "computer_use",
       "eventIds": [
-        "EV-095e1a90f14ccdb9",
+        "EV-97854226b6f43a95",
         "EV-e42e55d1e11a2ba2",
         "EV-333851b077b606c8",
         "EV-6225d18316f90a0d",
@@ -19368,7 +19300,6 @@
         "EV-a06011da69abcc3d",
         "EV-e2da1aafabb3e09c",
         "EV-2258329f33d413cf",
-        "EV-ae117a54e1332539",
         "EV-86537be17d50ff20"
       ],
       "entityIds": [
@@ -19395,7 +19326,6 @@
         "EN-f7a386a451b79627",
         "EN-12ab68e37d104d27",
         "EN-8395dc051feafc4c",
-        "EN-907cba18e57806e8",
         "EN-c608c4787821de1b",
         "EN-9c8ae69b84f21a2e"
       ],
@@ -20560,6 +20490,7 @@
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
         "EN-cb4754c48f8023d0",
+        "EN-369c5771d6c09953",
         "EN-607964040e4b62e0",
         "EN-dc33b6ff77e3359c",
         "EN-7d3194f79e645c42",
@@ -20599,7 +20530,7 @@
       "typeLabel": "行业",
       "valueId": "government_public_sector",
       "eventIds": [
-        "EV-3c192fe2fcc54993",
+        "EV-b9a1cba0b59a5354",
         "EV-b240fb11e65b018e",
         "EV-bad301e14b034fbd",
         "EV-3a7128e2d7ff149e"
@@ -20614,7 +20545,7 @@
       ],
       "fdeIds": [],
       "hardwareIds": [
-        "HW-87774cb301affdad"
+        "HW-c5a22adcc66136ed"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-07-25"
@@ -20771,8 +20702,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-095e1a90f14ccdb9",
         "EV-136b2edc9b9f3be8",
+        "EV-97854226b6f43a95",
         "EV-bffc68e7bb4d598b",
         "EV-3fb827f44ea109de",
         "EV-901155ab700a7e8e",
@@ -20785,6 +20716,7 @@
         "EV-8b7cbb66a33a945d",
         "EV-38cce1b72977ff2b",
         "EV-427081ec574b43bb",
+        "EV-095e1a90f14ccdb9",
         "EV-640c5ea9f4fa2780",
         "EV-9781e67076f4e06b",
         "EV-8cf189b07a257c1c",
@@ -20911,6 +20843,7 @@
         "EV-d5f276ad6b2ac9de",
         "EV-181b425d2a600cad",
         "EV-2c87c8ea47cbd1b6",
+        "EV-80f4e7972384ace8",
         "EV-99a0cb6bac516bdd",
         "EV-4515377aa6311bf1",
         "EV-06487af6e98ea491",
@@ -20927,7 +20860,6 @@
         "EV-45be473baf6dfa4c",
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
-        "EV-80f4e7972384ace8",
         "EV-05a87b578967c83e",
         "EV-0d5a32aca724d30e",
         "EV-5ec22cf9a1fb59d4",

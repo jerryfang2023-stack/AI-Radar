@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T05:04:11.023Z",
+    "generatedAt": "2026-07-25T06:10:03.737Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1530,
-    "quarantinedEventCount": 18
+    "eventCount": 1516,
+    "quarantinedEventCount": 16
   },
   "entity": {
     "id": "EN-cb4754c48f8023d0",
@@ -43,8 +43,7 @@
       "Claude Code v2.1.214",
       "Claude Code v2.1.216",
       "Claude Code v2.1.217",
-      "Claude Code v2.1.218",
-      "Claude Code v2.1.219"
+      "Claude Code v2.1.218"
     ],
     "verificationStatus": "verified",
     "datasetScopes": [
@@ -52,7 +51,6 @@
     ],
     "eventIds": [
       "EV-0e616f9e775a77dc",
-      "EV-7de7614b6a0a0e78",
       "EV-6cd7509380208a9d",
       "EV-4449950a89892852",
       "EV-8121a1ecdf168d8a",
@@ -111,7 +109,6 @@
       "partnerships": [],
       "productsServices": [
         "EV-0e616f9e775a77dc",
-        "EV-7de7614b6a0a0e78",
         "EV-6cd7509380208a9d",
         "EV-4449950a89892852",
         "EV-8121a1ecdf168d8a",
@@ -171,23 +168,8 @@
         ],
         "entityIds": [
           "EN-c70eca6b0f88f44d",
-          "EN-cb4754c48f8023d0"
-        ]
-      },
-      {
-        "id": "EV-7de7614b6a0a0e78",
-        "dataDate": "2026-07-25",
-        "date": "2026-07-24",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "announced",
-        "statusLabel": "已公布",
-        "title": "Claude Code 整合 Rust 重构版 Bun，Linux 启动快 10%",
-        "displayTags": [],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d",
-          "EN-cb4754c48f8023d0"
+          "EN-cb4754c48f8023d0",
+          "EN-369c5771d6c09953"
         ]
       },
       {
@@ -887,13 +869,10 @@
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
         "EV-0e616f9e775a77dc",
-        "EV-2ee06634c0ce9f30",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
         "EV-0d5a32aca724d30e",
         "EV-32fb6014149bafdd",
-        "EV-7de7614b6a0a0e78",
-        "EV-c16240c63a33f97a",
         "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
         "EV-3b7b9040dd2c2a89",
@@ -1105,11 +1084,11 @@
         "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-technology-long_context",
@@ -1211,8 +1190,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-095e1a90f14ccdb9",
         "EV-136b2edc9b9f3be8",
+        "EV-97854226b6f43a95",
         "EV-bffc68e7bb4d598b",
         "EV-3fb827f44ea109de",
         "EV-901155ab700a7e8e",
@@ -1225,6 +1204,7 @@
         "EV-8b7cbb66a33a945d",
         "EV-38cce1b72977ff2b",
         "EV-427081ec574b43bb",
+        "EV-095e1a90f14ccdb9",
         "EV-640c5ea9f4fa2780",
         "EV-9781e67076f4e06b",
         "EV-8cf189b07a257c1c",
@@ -1351,6 +1331,7 @@
         "EV-d5f276ad6b2ac9de",
         "EV-181b425d2a600cad",
         "EV-2c87c8ea47cbd1b6",
+        "EV-80f4e7972384ace8",
         "EV-99a0cb6bac516bdd",
         "EV-4515377aa6311bf1",
         "EV-06487af6e98ea491",
@@ -1367,7 +1348,6 @@
         "EV-45be473baf6dfa4c",
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
-        "EV-80f4e7972384ace8",
         "EV-05a87b578967c83e",
         "EV-0d5a32aca724d30e",
         "EV-5ec22cf9a1fb59d4",
@@ -2132,7 +2112,6 @@
       "typeLabel": "技术",
       "valueId": "code_generation",
       "eventIds": [
-        "EV-d2e31ba8e0ec10cf",
         "EV-1a6688afdfd108ef",
         "EV-15cc72d7c78cad3d",
         "EV-52115fee0e716170",
@@ -2174,7 +2153,6 @@
         "EV-4900ddf0686f4bbc"
       ],
       "entityIds": [
-        "EN-ac32f27ba7a1346f",
         "EN-026c3bd4be5b91f3",
         "EN-80d387ccb3289295",
         "EN-3ccbd9105a45d8fc",
@@ -2285,6 +2263,7 @@
         "EN-50537dab76505dfc",
         "EN-b5251b35f15bedc4",
         "EN-cb4754c48f8023d0",
+        "EN-369c5771d6c09953",
         "EN-607964040e4b62e0",
         "EN-dc33b6ff77e3359c",
         "EN-7d3194f79e645c42",

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T05:04:11.023Z",
+    "generatedAt": "2026-07-25T06:10:03.737Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1530,
-    "quarantinedEventCount": 18
+    "eventCount": 1516,
+    "quarantinedEventCount": 16
   },
   "node": {
     "id": "TX-technology-open_weights",
@@ -26,7 +26,6 @@
       "EV-a06011da69abcc3d",
       "EV-e2da1aafabb3e09c",
       "EV-2258329f33d413cf",
-      "EV-ae117a54e1332539",
       "EV-86537be17d50ff20"
     ],
     "entityIds": [
@@ -53,7 +52,6 @@
       "EN-f7a386a451b79627",
       "EN-12ab68e37d104d27",
       "EN-8395dc051feafc4c",
-      "EN-907cba18e57806e8",
       "EN-c608c4787821de1b",
       "EN-9c8ae69b84f21a2e"
     ],
@@ -1041,76 +1039,6 @@
       "publisher": "MarkTechPost（RSS）"
     },
     {
-      "id": "EV-ae117a54e1332539",
-      "dataDate": "2026-07-25",
-      "date": "2026-07-24",
-      "updatedDate": "2026-07-25",
-      "eventType": "policy_regulation",
-      "eventTypeLabel": "政策监管",
-      "eventGroup": "组织、政策与法律",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
-      "originalTitle": "",
-      "subject": "Nvidia, Microsoft, Meta, Palantir and more than 20 other companies",
-      "action": "监管",
-      "object": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "object"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "entityIds": [
-        "EN-8d4321d936320802",
-        "EN-9fbf261b62c1d7c0",
-        "EN-907cba18e57806e8",
-        "EN-ea3bd73e2b506e00"
-      ],
-      "entityNames": [
-        "NVIDIA",
-        "Microsoft",
-        "Meta联合警告",
-        "Meta"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
-      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
-    },
-    {
       "id": "EV-86537be17d50ff20",
       "dataDate": "2026-07-16",
       "date": "2026-07-15",
@@ -1246,7 +1174,6 @@
         "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
         "EV-8a2d8ebbd700c787",
-        "EV-ecce694f17ac8ed9",
         "EV-b334f46b11a68045",
         "EV-75b9b997e9c7e5d1",
         "EV-f79713437230562f",
@@ -1517,16 +1444,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
+        "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
@@ -1642,13 +1569,10 @@
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
         "EV-0e616f9e775a77dc",
-        "EV-2ee06634c0ce9f30",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
         "EV-0d5a32aca724d30e",
         "EV-32fb6014149bafdd",
-        "EV-7de7614b6a0a0e78",
-        "EV-c16240c63a33f97a",
         "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
         "EV-3b7b9040dd2c2a89",
@@ -1860,11 +1784,11 @@
         "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-technology-long_context",
@@ -1945,7 +1869,6 @@
         "EV-8abf5adc3e72fbb8",
         "EV-eec1e6857f0e0b2b",
         "EV-6acfb15c012ddf6d",
-        "EV-00518fdcb2de1f48",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b833b29d904b39ac",
@@ -2003,7 +1926,6 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
-        "EV-ae117a54e1332539",
         "EV-bce258f8f915ff5f",
         "EV-89bdda008227fb6b",
         "EV-62df953d81def866",
@@ -2017,14 +1939,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
+        "TX-technology-computer_use",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
+        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
@@ -2104,6 +2026,7 @@
         "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-5b16886442234f81",
+        "EV-80f4e7972384ace8",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
         "EV-f63462e34ea40699",
@@ -2111,7 +2034,6 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
-        "EV-80f4e7972384ace8",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
         "EV-243e73016576fa43",
@@ -2177,7 +2099,6 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
-        "EV-ae117a54e1332539",
         "EV-89bdda008227fb6b",
         "EV-89f9216de5b559ac",
         "EV-c14e5185fd6bbe30",
@@ -2190,11 +2111,11 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-technology",
-        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
@@ -2218,7 +2139,6 @@
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
-        "EN-b5738c169b693bee",
         "EN-c70eca6b0f88f44d",
         "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
@@ -2230,6 +2150,7 @@
         "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
+        "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
         "EN-3ae50afab3e392b8",
@@ -2273,7 +2194,6 @@
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
         "EV-5bc7efca0bc7fec0",
-        "EV-d3a47b7f6243a909",
         "EV-fdc4c26edadb4cea",
         "EV-702276a31f123374",
         "EV-fbc316f83b63a543",
@@ -2306,7 +2226,6 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
-        "EV-ae117a54e1332539",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
         "EV-04cf95633b564f9a",
@@ -2320,13 +2239,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
+        "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-cybersecurity",
         "TX-technology-open_weights",
@@ -2473,9 +2392,9 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-use_case-enterprise_operations",
+        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -2523,9 +2442,9 @@
         "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-industry-retail_ecommerce",
+        "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -2620,11 +2539,11 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -2794,16 +2713,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
-        "TX-technology-code_generation",
+        "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
+        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
@@ -3047,27 +2966,6 @@
       "lastSeen": "2026-07-17"
     },
     {
-      "id": "EN-907cba18e57806e8",
-      "name": "Meta联合警告",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ae117a54e1332539"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-open_weights"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-24",
-      "lastSeen": "2026-07-25"
-    },
-    {
       "id": "EN-c608c4787821de1b",
       "name": "Xiaomi",
       "entityType": "organization_candidate",
@@ -3096,8 +2994,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-technology-multimodal",
+        "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-on_device",
