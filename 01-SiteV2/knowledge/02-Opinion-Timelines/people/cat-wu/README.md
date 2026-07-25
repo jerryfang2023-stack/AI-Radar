@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Cat Wu"
-opinion_count: 17
-latest_date: 2026-07-20
+opinion_count: 18
+latest_date: 2026-07-24
 ---
 
 # Cat Wu 观点时间线
-共 17 条观点，按人物 + 日期文件聚合。
+共 18 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-24](./2026-07-24.md)
 - [2026-07-20](./2026-07-20.md)
 - [2026-07-17](./2026-07-17.md)
 - [2026-07-14](./2026-07-14.md)
