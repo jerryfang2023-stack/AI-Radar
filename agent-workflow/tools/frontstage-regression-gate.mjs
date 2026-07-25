@@ -19,7 +19,7 @@ const expectedBusinessSignalsColumnVersion = "BSIG-V2.2.0-pipeline-stage-ownersh
 const expectedEnterpriseAiLensVersion = "EAI-V1.2.0-raw-card-ingestion-boundary";
 const expectedLegacyIntelligenceMapColumnVersion = "IMAP-V2.0.0-report-center-opportunity-system";
 const expectedReportsCenterColumnVersion = "REPORTS-V1.0.0-periodic-report-center";
-const expectedOpportunityMapColumnVersion = "OMAP-V1.0.0-independent-column";
+const expectedOpportunityMapColumnVersion = "OMAP-V1.1.0-direction-cards";
 const rolloverAcceptedVersions = new Map([
   ["V3.3.6-business-title-hermes-handoff", new Set(["2026-06-16"])],
 ]);
@@ -226,6 +226,7 @@ function collectUnifiedNavigationIssues() {
     "href=\"opportunity-map.html\" aria-current=\"page\">机会地图",
     "data-map-panel=\"entry\"",
     "data-map-panel=\"pain\"",
+    "data-direction-cards",
     "data-cell-modal",
   ];
   for (const token of opportunityMapRequired) {
@@ -436,12 +437,26 @@ function collectIndustryReportsDataIssues() {
     if (!Array.isArray(data?.cards) || !data.cards.length) {
       issues.push(issue(file, "industry_reports_cards_missing"));
     }
-    const allowedCardKeys = new Set(["id", "title", "category", "categoryLabel", "date", "sourceName", "subject", "opportunitySignals"]);
+    const allowedCardKeys = new Set(["id", "title", "category", "categoryLabel", "date", "sourceUrl", "sourceName", "subject", "opportunitySignals"]);
     for (const card of data?.cards || []) {
       const unexpected = Object.keys(card).filter((key) => !allowedCardKeys.has(key));
       if (unexpected.length) issues.push(issue(file, "industry_reports_card_field_leak", unexpected.join(",")));
       if (!card.id || !card.title || !card.date || !card.opportunitySignals?.labels) {
         issues.push(issue(file, "industry_reports_card_incomplete", card.id || card.title || "missing"));
+      }
+    }
+    if (!Array.isArray(data?.directionCards) || !data.directionCards.length) {
+      issues.push(issue(file, "direction_cards_missing"));
+    }
+    for (const card of data?.directionCards || []) {
+      if (!card.id || !card.title || !card.hypothesis || !["validation_ready", "forming", "tracking"].includes(card.status)) {
+        issues.push(issue(file, "direction_card_incomplete", card.id || card.title || "missing"));
+      }
+      if (!Array.isArray(card.unknowns) || !card.unknowns.length || !card.validationAction) {
+        issues.push(issue(file, "direction_card_validation_boundary_missing", card.id || card.title || "missing"));
+      }
+      if (!Array.isArray(card.evidence) || card.evidence.length < 2 || card.evidence.some((item) => !item.id || !item.sourceUrl)) {
+        issues.push(issue(file, "direction_card_evidence_invalid", card.id || card.title || "missing"));
       }
     }
   } catch (error) {

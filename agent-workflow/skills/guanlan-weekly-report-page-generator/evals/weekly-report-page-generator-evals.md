@@ -45,6 +45,6 @@
 8. Fail if the detail hero has a long deck paragraph after the user has asked to remove it.
 9. Fail if the Industry Reports weekly entry shows three boxed KPI count cards instead of compact tags.
 10. Fail if page generation runs before the content acceptance gate.
-11. Fail if a weekly report page restores shared `IMAP-V2.1.0` metadata or emits `OMAP-V1.0.0-independent-column`.
+11. Fail if a weekly report page restores shared `IMAP-V2.1.0` metadata or emits any Opportunity Map column metadata, including `OMAP-V1.1.0-direction-cards`.
 12. Fail if a newly published weekly source updates the archive but leaves the Reports Center first-screen card on an older issue.
 13. Fail if a recent weekly issue is rendered as paragraph/list-only HTML despite having structured trend, chain, impact, opportunity, watchlist, and action sections.

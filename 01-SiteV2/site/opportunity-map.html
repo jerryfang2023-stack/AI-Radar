@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <meta name="wavesight-version" content="SITE-V4.2.0-entity-history">
-  <meta name="wavesight-column-version" content="OMAP-V1.0.0-independent-column">
+  <meta name="wavesight-column-version" content="OMAP-V1.1.0-direction-cards">
   <meta name="weekly-report-source" content="01-SiteV2/content/08-report/">
   <meta name="monthly-report-source" content="01-SiteV2/content/08-report/monthly/">
   <title>机会地图｜观澜 AI</title>
@@ -168,9 +168,98 @@
     .top-cell { min-height: 132px; padding: 13px; border: 1px solid var(--line); background: rgba(255, 253, 248, .64); }
     .top-cell b { display: block; font-family: var(--serif); font-size: 17px; font-weight: 600; line-height: 26px; }
     .top-cell span { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 18px; }
+    .direction-section { padding-top: 38px; }
+    .direction-section .section-head { align-items: end; }
+    .direction-section .section-head p { max-width: 700px; }
+    .direction-legend { justify-content: flex-end; }
+    .direction-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .direction-card {
+      position: relative;
+      display: flex;
+      min-height: 360px;
+      flex-direction: column;
+      padding: 20px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(145deg, rgba(255, 253, 248, .96), rgba(247, 244, 239, .76)),
+        var(--surface);
+    }
+    .direction-card::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 3px;
+      background: var(--direction-accent, var(--gold));
+      content: "";
+    }
+    .direction-card[data-status="validation_ready"] { --direction-accent: var(--gold); }
+    .direction-card[data-status="forming"] { --direction-accent: var(--blue); }
+    .direction-card[data-status="tracking"] { --direction-accent: var(--green); }
+    .direction-card-head { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
+    .direction-index { color: var(--faint); font-family: var(--mono); font-size: 12px; line-height: 18px; }
+    .direction-status {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border: 1px solid currentColor;
+      color: var(--direction-accent, var(--gold));
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 18px;
+    }
+    .direction-card h3 { margin-top: 18px; font-size: var(--gl-type-card-title-size, 20px); line-height: var(--gl-type-card-title-line, 30px); }
+    .direction-hypothesis { margin: 10px 0 0; color: var(--muted); font-size: var(--gl-type-caption-size, 14px); line-height: var(--gl-type-caption-line, 24px); }
+    .direction-fields { display: grid; gap: 9px; margin: 18px 0 20px; }
+    .direction-field { display: grid; grid-template-columns: 54px minmax(0, 1fr); gap: 10px; font-size: 13px; line-height: 22px; }
+    .direction-field dt { color: var(--faint); }
+    .direction-field dd { margin: 0; color: var(--ink); }
+    .direction-card-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      width: 100%;
+      min-height: 42px;
+      margin-top: auto;
+      padding: 0 12px;
+      border: 0;
+      background: var(--blue);
+      color: var(--paper);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: left;
+    }
+    .direction-card-action span:last-child { font-family: var(--mono); font-size: 12px; font-weight: 500; opacity: .74; }
+    .direction-card-action:hover { background: var(--ink); }
+    .direction-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+    .direction-detail {
+      padding: 12px;
+      border: 1px solid var(--soft-line);
+      background: rgba(255, 253, 248, .72);
+    }
+    .direction-detail b { display: block; color: var(--faint); font-size: 12px; font-weight: 600; line-height: 18px; }
+    .direction-detail span { display: block; margin-top: 5px; font-size: 14px; line-height: 24px; }
+    .direction-question-list { margin: 8px 0 0; padding-left: 20px; color: var(--muted); font-size: 14px; line-height: 24px; }
+    .direction-validation {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--blue);
+      background: rgba(13, 53, 92, .055);
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .direction-evidence-intro { margin-top: 18px !important; color: var(--ink) !important; font-weight: 600; }
+    .evidence-excerpt { font-family: var(--sans) !important; font-size: 12px !important; line-height: 20px !important; }
     @media (max-width: 1120px) {
       .map-layout { grid-template-columns: 1fr; min-height: auto; }
       .weekly-strip, .top-cells { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .direction-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 760px) {
       .shell { width: min(100% - 28px, 1320px); padding-top: 22px; }
@@ -183,6 +272,10 @@
       .section-title, .map-block-title { display: grid; gap: 2px; }
       .link-button { justify-self: start; }
       .matrix.entry, .matrix.pain { min-width: 760px; }
+      .direction-section .section-head { align-items: start; flex-direction: column; }
+      .direction-legend { justify-content: flex-start; }
+      .direction-grid, .direction-detail-grid { grid-template-columns: 1fr; }
+      .direction-card { min-height: 0; }
     }
   </style>
 </head>
@@ -222,7 +315,7 @@
     <section class="report-overview" aria-labelledby="page-title">
       <div class="dc-page-head dc-report-page-head">
         <h1 id="page-title">机会地图</h1>
-        <span class="dc-page-description">切入点、产品痛点与当前证据状态</span>
+        <span class="dc-page-description">从事实变化到机会证据，再到可验证的创业方向</span>
       </div>
       <div class="map-meta">
         <p class="map-updated">更新于 <span data-map-updated>读取中</span></p>
@@ -230,7 +323,7 @@
           <span class="status-warming">升温</span><span class="status-stable">稳定</span><span class="status-noise">噪音</span><span class="status-watch">待验证</span>
         </div>
       </div>
-      <nav class="map-jumps" aria-label="机会地图页内导航"><a href="#entry-map">切入点地图</a><a href="#pain-map">痛点地图</a></nav>
+      <nav class="map-jumps" aria-label="机会地图页内导航"><a href="#entry-map">切入点地图</a><a href="#pain-map">痛点地图</a><a href="#direction-cards">方向卡</a></nav>
     </section>
 
     <section class="section" aria-label="机会地图双图纵览">
@@ -263,6 +356,22 @@
       </div>
     </section>
 
+    <section class="section direction-section" id="direction-cards" aria-labelledby="direction-cards-title">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Direction Cards</p>
+          <div class="section-title">
+            <h2 id="direction-cards-title">方向卡</h2>
+            <span>把重复证据整理成创业假设，不等同于创业推荐</span>
+          </div>
+        </div>
+        <div class="legend direction-legend" aria-label="方向证据阶段">
+          <span class="status-warming">值得验证</span><span class="status-stable">线索形成</span><span class="status-watch">持续跟踪</span>
+        </div>
+      </div>
+      <div class="direction-grid" data-direction-cards aria-live="polite"></div>
+    </section>
+
       </div>
     </main>
   </div>
@@ -291,7 +400,8 @@
       }
     });
 
-    const state = { entryCells: [], painCells: [] };
+    const state = { entryCells: [], painCells: [], directionCards: [] };
+    let lastModalTrigger = null;
     const entryRows = [
       { label:"企业 AI 负责人", fields:["buyer_or_user","team_or_function"], values:["enterprise_ai_owner","it_security","it_security_team"] },
       { label:"研发团队", fields:["buyer_or_user","team_or_function"], values:["engineering_team","engineering"] },
@@ -330,6 +440,15 @@
     const $ = (s, r=document) => r.querySelector(s);
     const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
     const uniq = (items) => Array.from(new Set(items.filter(Boolean)));
+    const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", "\"":"&quot;", "'":"&#39;" })[char]);
+    function safeHref(value) {
+      try {
+        const url = new URL(value, window.location.href);
+        return ["http:", "https:"].includes(url.protocol) ? escapeHtml(url.href) : "#";
+      } catch {
+        return "#";
+      }
+    }
     const daysBetween = (later, earlier) => Math.floor((new Date(`${later}T00:00:00`) - new Date(`${earlier}T00:00:00`)) / 86400000);
     function vals(card, field) {
       const raw = card.opportunitySignals?.labels?.[field] || card.opportunitySignals?.[field] || card.opportunitySignals?.[field.replace(/_([a-z])/g, (_, c) => c.toUpperCase())] || [];
@@ -379,17 +498,39 @@
       const root = $("[data-cell-inspector]");
       if (!cell?.count) { return; }
       const boundary = cell.stats.strong ? `强证据 ${cell.stats.strong} 条，包含部署、融资、采购、合作或定价信号。` : cell.stats.launch ? "证据偏供给侧，主要来自产品发布、开源或技术材料，需要继续补客户结果。" : "有重复信号，但客户部署、采购或结果数据仍不足。";
-      root.innerHTML = `<p class="kicker">${cell.type === "entry" ? "Entry Point Cell" : "Product Pain Cell"}</p><h3 id="cell-modal-title">${cell.row} × ${cell.col}</h3><p>${cell.count} 条 7 日 Cards，30 日基线 ${cell.baseline} 条；状态为 <b>${statusText(cell.status)}</b>。${boundary}</p><div class="legend" style="margin-top:12px"><span class="${statusClass(cell.status)}">${statusText(cell.status)}</span><span>代表主体：${cell.stats.subjects.join(" / ") || "未提取"}</span></div><div class="item-list">${cell.cards.slice(0,5).map((card) => `<article class="evidence"><b>${card.title}</b><span>${card.id} · ${card.categoryLabel || card.category || "Card"} · ${card.date} · ${card.sourceName || ""}</span></article>`).join("")}</div>`;
+      root.innerHTML = `<p class="kicker">${cell.type === "entry" ? "Entry Point Cell" : "Product Pain Cell"}</p><h3 id="cell-modal-title">${escapeHtml(cell.row)} × ${escapeHtml(cell.col)}</h3><p>${cell.count} 条 7 日 Cards，30 日基线 ${cell.baseline} 条；状态为 <b>${statusText(cell.status)}</b>。${boundary}</p><div class="legend" style="margin-top:12px"><span class="${statusClass(cell.status)}">${statusText(cell.status)}</span><span>代表主体：${escapeHtml(cell.stats.subjects.join(" / ") || "未提取")}</span></div><div class="item-list">${cell.cards.slice(0,5).map((card) => card.sourceUrl ? `<a class="evidence" href="${safeHref(card.sourceUrl)}" target="_blank" rel="noopener noreferrer"><b>${escapeHtml(card.title)}</b><span>${escapeHtml(card.id)} · ${escapeHtml(card.categoryLabel || card.category || "Card")} · ${escapeHtml(card.date)} · ${escapeHtml(card.sourceName || "")}</span></a>` : `<article class="evidence"><b>${escapeHtml(card.title)}</b><span>${escapeHtml(card.id)} · ${escapeHtml(card.categoryLabel || card.category || "Card")} · ${escapeHtml(card.date)} · ${escapeHtml(card.sourceName || "")}</span></article>`).join("")}</div>`;
       $("[data-cell-modal]").hidden = false;
       $("[data-modal-close]").focus();
     }
     function renderTop(cells) {
       $("[data-top-cells]").innerHTML = cells.filter((c) => c.count).sort((a,b) => b.count - a.count).slice(0,4).map((cell) => `<article class="top-cell"><p class="kicker">${statusText(cell.status)}</p><b>${cell.row} × ${cell.col}</b><span>${cell.count} 条 7 日 Cards，代表主体：${cell.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span></article>`).join("");
     }
+    function directionStatusText(status) {
+      return ({ validation_ready:"值得验证", forming:"线索形成", tracking:"持续跟踪" })[status] || "持续跟踪";
+    }
+    function renderDirectionCards(cards) {
+      const root = $("[data-direction-cards]");
+      root.innerHTML = cards.map((card, index) => `<article class="direction-card" data-status="${escapeHtml(card.status)}"><div class="direction-card-head"><span class="direction-index">DIRECTION ${String(index + 1).padStart(2, "0")}</span><span class="direction-status">${directionStatusText(card.status)}</span></div><h3>${escapeHtml(card.title)}</h3><p class="direction-hypothesis">${escapeHtml(card.hypothesis)}</p><dl class="direction-fields"><div class="direction-field"><dt>谁买</dt><dd>${escapeHtml(card.buyer)}</dd></div><div class="direction-field"><dt>任务</dt><dd>${escapeHtml(card.task)}</dd></div><div class="direction-field"><dt>切口</dt><dd>${escapeHtml(card.productWedge)}</dd></div></dl><button class="direction-card-action" type="button" data-direction-id="${escapeHtml(card.id)}"><span>查看方向</span><span>${card.evidenceCount} 条证据 →</span></button></article>`).join("");
+    }
+    function renderDirectionInspector(card) {
+      const root = $("[data-cell-inspector]");
+      root.innerHTML = `<p class="kicker">Direction Hypothesis · ${directionStatusText(card.status)}</p><h3 id="cell-modal-title">${escapeHtml(card.title)}</h3><p>${escapeHtml(card.hypothesis)}</p><div class="direction-detail-grid"><div class="direction-detail"><b>目标买方</b><span>${escapeHtml(card.buyer)}</span></div><div class="direction-detail"><b>具体任务</b><span>${escapeHtml(card.task)}</span></div><div class="direction-detail"><b>核心痛点</b><span>${escapeHtml(card.pain)}</span></div><div class="direction-detail"><b>产品切口</b><span>${escapeHtml(card.productWedge)}</span></div><div class="direction-detail"><b>当前替代</b><span>${escapeHtml(card.currentAlternatives)}</span></div><div class="direction-detail"><b>为什么是现在</b><span>${escapeHtml(card.whyNow)}</span></div></div><p class="direction-evidence-intro">仍需验证</p><ul class="direction-question-list">${card.unknowns.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul><div class="direction-validation"><b>首轮验证：</b>${escapeHtml(card.validationAction)}</div><p class="direction-evidence-intro">原始证据 · ${card.evidenceCount} 条 / ${card.actorCount} 个主体</p><div class="item-list">${card.evidence.map((item) => `<a class="evidence" href="${safeHref(item.sourceUrl)}" target="_blank" rel="noopener noreferrer"><b>${escapeHtml(item.title)}</b><span>${escapeHtml(item.id)} · ${escapeHtml(item.categoryLabel || item.category)} · ${escapeHtml(item.date)} · ${escapeHtml(item.sourceName)}</span>${item.sourceExcerpt ? `<span class="evidence-excerpt">${escapeHtml(item.sourceExcerpt)}</span>` : ""}</a>`).join("")}</div>`;
+      $("[data-cell-modal]").hidden = false;
+      $("[data-modal-close]").focus();
+    }
     function bind() {
       document.addEventListener("click", (event) => {
+        const directionButton = event.target.closest("[data-direction-id]");
+        if (directionButton) {
+          const card = state.directionCards.find((item) => item.id === directionButton.dataset.directionId);
+          if (!card) return;
+          lastModalTrigger = directionButton;
+          renderDirectionInspector(card);
+          return;
+        }
         const btn = event.target.closest("[data-cell-key]");
         if (!btn) return;
+        lastModalTrigger = btn;
         const cells = btn.dataset.cellType === "entry" ? state.entryCells : state.painCells;
         const [row, col] = btn.dataset.cellKey.split("||");
         const cell = cells.find((x) => x.row === row && x.col === col);
@@ -407,6 +548,8 @@
     function closeModal() {
       $("[data-cell-modal]").hidden = true;
       $$("[data-cell-key]").forEach((x) => x.classList.remove("is-active"));
+      lastModalTrigger?.focus();
+      lastModalTrigger = null;
     }
     async function init() {
       const payload = await fetch("data/industry-reports-frontstage.json", { cache: "no-store" }).then((r) => r.json());
@@ -415,9 +558,11 @@
       $("[data-map-updated]").textContent = activeDate || "未提供";
       state.entryCells = buildCells(cards, activeDate, entryRows, entryCols, "entry");
       state.painCells = buildCells(cards, activeDate, painRows, painCols, "pain");
+      state.directionCards = payload.directionCards || [];
       renderMatrix($("[data-map-panel='entry']"), entryRows, entryCols, state.entryCells, "entry");
       renderMatrix($("[data-map-panel='pain']"), painRows, painCols, state.painCells, "pain");
       renderTop([...state.entryCells, ...state.painCells]);
+      renderDirectionCards(state.directionCards);
       bind();
     }
     init().catch((error) => { console.error(error); document.body.insertAdjacentHTML("beforeend", `<div style="position:fixed;left:16px;right:16px;bottom:16px;padding:16px;background:#fff;border:1px solid #a85a54">真实数据读取失败：${error.message}</div>`); });

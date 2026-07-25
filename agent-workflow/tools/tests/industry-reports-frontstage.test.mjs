@@ -16,20 +16,26 @@ test("Opportunity Map projection reads accepted Signal Cards without the V3 desk
   const opportunityHtml = fs.readFileSync(path.join(root, "01-SiteV2/site/opportunity-map.html"), "utf8");
 
   assert.equal(data.meta.siteVersion, "SITE-V4.2.0-entity-history");
-  assert.equal(data.meta.schemaVersion, "OPPORTUNITY-MAP-FRONTSTAGE-V1.0");
-  assert.equal(data.meta.applicationVersion, "OMAP-V1.0.0-independent-column");
-  assert.equal(data.meta.opportunityMapVersion, "OMAP-V1.0.0-independent-column");
+  assert.equal(data.meta.schemaVersion, "OPPORTUNITY-MAP-FRONTSTAGE-V1.1");
+  assert.equal(data.meta.applicationVersion, "OMAP-V1.1.0-direction-cards");
+  assert.equal(data.meta.opportunityMapVersion, "OMAP-V1.1.0-direction-cards");
+  assert.equal(data.meta.directionCardVersion, "DIRECTION-CARD-V1.0-reviewed-hypothesis");
   assert.equal(data.meta.sourceAdapter, "accepted-signal-card-assets");
   assert.match(data.meta.activeDate, /^\d{4}-\d{2}-\d{2}$/u);
   assert.equal(data.meta.activeDate, dataCenter.meta.currentDate);
   assert.ok(data.cards.length > 0);
   assert.ok(data.cards.every((card) => card.id && card.title && card.date));
   assert.ok(data.cards.every((card) => Object.keys(card.opportunitySignals.labels).length === 7));
+  assert.equal(data.directionCards.length, 3);
+  assert.ok(data.directionCards.every((card) => card.evidenceCount >= 2));
+  assert.ok(data.directionCards.every((card) => card.evidence.every((item) => item.sourceUrl)));
   assert.doesNotMatch(reportsHtml, /data\/v3-data-observation-desk\.json|data\/industry-reports-frontstage\.json/u);
   assert.match(reportsHtml, /REPORTS-V1\.0\.0-periodic-report-center/u);
   assert.doesNotMatch(opportunityHtml, /data\/v3-data-observation-desk\.json/u);
   assert.match(opportunityHtml, /data\/industry-reports-frontstage\.json/u);
-  assert.match(opportunityHtml, /OMAP-V1\.0\.0-independent-column/u);
+  assert.match(opportunityHtml, /OMAP-V1\.1\.0-direction-cards/u);
+  assert.match(opportunityHtml, /data-direction-cards|查看方向|创业假设/u);
+  assert.doesNotMatch(opportunityHtml, /data-map-toggle|Cell Evidence|Relation Paths/u);
 });
 
 test("Opportunity Map projection has no hidden dependency on generated V3 JSON", () => {
@@ -65,6 +71,8 @@ test("Opportunity Map projection has no hidden dependency on generated V3 JSON",
     });
     assert.equal(data.meta.activeDate, "2026-07-25");
     assert.equal(data.meta.cardCount, 1);
+    assert.equal(data.meta.directionCardCount, 0);
+    assert.deepEqual(data.directionCards, []);
     assert.equal(data.cards[0].sourceName, "example.com");
     assert.deepEqual(data.cards[0].opportunitySignals.labels.specific_task, ["internal_tool_building"]);
     assert.equal(fs.existsSync(path.join(fixtureRoot, "01-SiteV2/site/data/v3-data-observation-desk.json")), false);
