@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-current-action-index
-last_updated: 2026-07-16
+last_updated: 2026-07-25
 use_when:
   - choose current action
   - recover missing actions
@@ -51,6 +51,7 @@ Only these actions are `current` for SITE-V4.2 and retained compatibility lanes:
 | First-line viewpoints skill publish | `current` | Update builders viewpoints from the afternoon local follow-builders skill route independently from business signals. |
 | First-Line Viewpoints Obsidian timeline sync | `current` | Persist Builder viewpoints into person / date Obsidian timelines. |
 | Community intelligence independent update | `current` | Update logged-in community intelligence independently from business signals and builders viewpoints. |
+| Daily final closure | `current` | After all daily windows, classify lane data/publication/task/login state, report evidence-supply and FDE 7/30-day health, and create stable repair incidents for repeated signals. |
 | Frontstage data build | `current` | Build each column's frontstage data through its owning production lane. |
 | Dashboard sync | `current` | Update operations console data. |
 | GitHub PR / Pages publish | `current` | Persist generated assets through PR and deploy through Pages. |

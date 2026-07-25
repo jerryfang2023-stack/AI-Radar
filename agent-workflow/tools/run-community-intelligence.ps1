@@ -131,6 +131,9 @@ function Invoke-NpmStep {
     Write-LogLine ("[$Name] " + $line)
   }
   if ($exitCode -ne 0) {
+    if (($output -join "`n") -match "COMMUNITY_LOGIN_REQUIRED") {
+      throw "COMMUNITY_LOGIN_REQUIRED: 登录状态已失效。请打开社群情报专用 Chrome 配置，完成扫码/登录验证后，重新运行本地社群情报任务。"
+    }
     throw "$Name failed with exit code $exitCode."
   }
 }
@@ -231,6 +234,10 @@ try {
     catch {
       $lastError = $_.Exception.Message
       Write-LogLine ("Community intelligence attempt $attempt failed: " + $lastError)
+      if ($lastError -match "COMMUNITY_LOGIN_REQUIRED") {
+        Write-LogLine "MANUAL_ACTION_REQUIRED: 登录状态已失效；请打开社群情报专用 Chrome 配置完成扫码/登录，再重新运行任务。其他栏目可继续运行。"
+        break
+      }
       if ($attempt -lt $attemptLimit) {
         Write-LogLine "Waiting $RetryDelaySeconds seconds before retry."
         Start-Sleep -Seconds $RetryDelaySeconds

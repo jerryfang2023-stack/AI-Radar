@@ -65,3 +65,16 @@
 17. `curated_original_source_window_fixture`
    - Pass when direct-source recall fixtures use an explicit fixture date and verify both active inclusion and expired exclusion.
    - Fail when a production preflight depends on a real curated source remaining active after its configured `active_until` date.
+
+18. `high_value_original_source_recall`
+   - Pass when customer case, production deployment, procurement contract, and funding refill queries prioritize official newsroom, company/investor announcement, customer story, case study, government notice, or contract-award pages.
+   - Fail when marketplace directories, app stores, job descriptions, or generic consulting reports consume the procurement / customer-evidence refill budget.
+
+19. `dead_rss_retirement`
+   - Pass when a repeatedly 404 RSS endpoint is removed from RSS collection and replaced only with a verified public-web discovery page or disabled source entry.
+   - Fail when the same dead RSS endpoint remains an expected daily source and repeats in failure diagnostics.
+
+20. `fact_type_source_gap_report`
+   - Pass when daily final closure records customer-case, procurement, deployment, funding, and original-source registry coverage gaps without lowering any evidence gate.
+   - Pass when the report distinguishes source-backed accepted events from conservative S-level original-domain matches.
+   - Fail when a missing fact type is hidden by total Raw volume or used to fabricate a same-day item.

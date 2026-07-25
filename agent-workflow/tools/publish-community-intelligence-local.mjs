@@ -15,7 +15,7 @@ const args = new Map(
 
 const date = args.get("date") || shanghaiDate();
 const merge = args.get("merge") !== "false";
-const pollSeconds = Number.parseInt(args.get("poll-seconds") || "120", 10);
+const pollSeconds = Number.parseInt(args.get("poll-seconds") || "15", 10);
 const branch = `automation/community-intelligence-${date}`;
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const reportFile = path.join(reportsDir, `${date}-community-intelligence-local-publish.md`);
@@ -256,6 +256,13 @@ export function syncLocalMainAfterPublish(originalBranch, commandRunner = tryRun
   return sync;
 }
 
+export function publicationState({ mergeEnabled, merged, mergeStatus }) {
+  if (merged?.mergedAt) return "published";
+  if (!mergeEnabled) return "pr_open";
+  if (["auto_or_merged", "merged"].includes(mergeStatus)) return "waiting_for_merge";
+  return "publication_failed";
+}
+
 function main() {
   const originalBranch = run("git", ["branch", "--show-current"]) || "main";
   const summary = [
@@ -307,19 +314,24 @@ function main() {
   const pr = openOrUpdatePr();
   const mergeStatus = merge ? mergePr(pr.number) : "skipped";
   const merged = merge ? waitForMerge(pr.number) : null;
-
-  if (merge && !merged) {
-    throw new Error(`Community Intelligence PR #${pr.number} was opened but not merged within ${pollSeconds}s: ${pr.url}`);
-  }
-
-  const localSync = merge ? syncLocalMainAfterPublish(originalBranch) : { attempted: false, ok: true, warning: "Skipped because merge was disabled." };
-  const warnings = localSync.warning && !localSync.ok ? [localSync.warning] : [];
+  const publication = publicationState({ mergeEnabled: merge, merged, mergeStatus });
+  const localSync = merged
+    ? syncLocalMainAfterPublish(originalBranch)
+    : {
+        attempted: false,
+        ok: true,
+        warning: publication === "waiting_for_merge"
+          ? "Remote publication handoff succeeded; final closure will confirm merge and local sync."
+          : "Skipped because merge was disabled.",
+      };
+  const warnings = localSync.warning ? [localSync.warning] : [];
 
   appendReport([
     "",
     "## Publish Result",
     "",
     `- pr: ${pr.url || pr.number || ""}`,
+    `- publication_state: ${publication}`,
     `- merge_status: ${mergeStatus}`,
     `- merged_at: ${merged?.mergedAt || ""}`,
     `- merge_commit: ${merged?.mergeCommit?.oid || ""}`,
@@ -333,6 +345,7 @@ function main() {
     changed: true,
     branch,
     pr,
+    publicationState: publication,
     mergeStatus,
     mergedAt: merged?.mergedAt || "",
     mergeCommit: merged?.mergeCommit?.oid || "",

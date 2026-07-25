@@ -164,6 +164,31 @@ function laneStatus(problems, warnings, waiting = []) {
   return "passed";
 }
 
+export function classifyCommunityStages({
+  communityDataHealthy,
+  localWindowPassed,
+  published,
+  publicationWaiting,
+  publishWindowPassed,
+  taskAvailable,
+  lastTaskResult,
+  taskState,
+  loginState,
+}) {
+  return {
+    data: communityDataHealthy ? "healthy" : localWindowPassed ? "failed" : "pre_window_waiting",
+    publication: published
+      ? "published"
+      : publicationWaiting ? "waiting" : publishWindowPassed ? "failed" : "not_due",
+    task_execution: !taskAvailable
+      ? "unavailable"
+      : Number.isFinite(lastTaskResult) && lastTaskResult !== 0
+        ? communityDataHealthy ? "anomaly_after_data_success" : "failed"
+        : ["Ready", "Running"].includes(taskState) ? "passed" : "failed",
+    login: loginState,
+  };
+}
+
 function addProblem(list, message, severity = "failed") {
   list.push({ message, severity });
 }
@@ -888,6 +913,18 @@ function buildCommunityLane() {
   const publishWindowPassed = hasWindowPassed(date, "09:50");
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
   const gateFile = path.join(reportsDir, `${date}-community-intelligence-gate.md`);
+  const communityLogFile = path.join(
+    reportsDir,
+    "community-intelligence",
+    `community-intelligence-${date.replaceAll("-", "")}.log`,
+  );
+  const communityLog = readText(communityLogFile);
+  const lastLoginRequiredAt = Math.max(
+    communityLog.lastIndexOf("COMMUNITY_LOGIN_REQUIRED"),
+    communityLog.lastIndexOf("MANUAL_ACTION_REQUIRED"),
+  );
+  const lastCompletedAt = communityLog.lastIndexOf("Community intelligence run completed.");
+  const loginRequired = lastLoginRequiredAt >= 0 && lastLoginRequiredAt > lastCompletedAt;
   const localData = readJson(dataFile, {});
   const localGeneratedDate = shanghaiDate(localData?.meta?.generatedAt || "");
   const publishedData = localGeneratedDate === date ? null : readJsonFromGit("origin/main", dataFile, null);
@@ -929,6 +966,10 @@ function buildCommunityLane() {
     evidence.links >= 3 &&
     evidence.collectorErrors === 0 &&
     evidence.gateStatus === "passed";
+  evidence.login = {
+    state: loginRequired ? "manual_relogin_required" : communityDataHealthy ? "healthy" : "unknown",
+    log: exists(communityLogFile) ? rel(communityLogFile) : "missing",
+  };
 
   if (usePublishedData) {
     warnings.push(`local community data is ${localGeneratedDate || "missing"}; using passed ${date} publication from origin/main`);
@@ -962,6 +1003,16 @@ function buildCommunityLane() {
     warnings.push(task.warning || "scheduled task state unavailable");
   }
 
+  if (loginRequired) {
+    const message = "Community Intelligence login expired; open the dedicated Chrome profile, complete QR/login verification, then rerun the local collector";
+    if (communityDataHealthy) {
+      warnings.push(message);
+    } else {
+      addProblem(problems, message, "manual_required");
+    }
+    actions.push("打开社群情报专用 Chrome 配置完成扫码/登录验证，再重新运行本地社群情报任务；不要阻断其他栏目");
+  }
+
   if (gh.available) {
     if (!publicationReady && publishWindowPassed) {
       addProblem(problems, "no same-date Community Intelligence publish workflow after the morning publication window", "manual_required");
@@ -986,6 +1037,20 @@ function buildCommunityLane() {
     warnings.push(gh.warning || "GitHub workflow state unavailable");
   }
 
+  const lastTaskResult = task.available ? Number(task.task?.LastTaskResult) : null;
+  const taskState = task.available ? scheduledTaskStateName(task.task?.State) : "";
+  evidence.stageStatus = classifyCommunityStages({
+    communityDataHealthy,
+    localWindowPassed,
+    published: Boolean(mergedPr || usePublishedData),
+    publicationWaiting: Boolean(openPr || ["queued", "in_progress"].includes(gh.latest_run?.status)),
+    publishWindowPassed,
+    taskAvailable: task.available,
+    lastTaskResult,
+    taskState,
+    loginState: evidence.login.state,
+  });
+
   if (localWindowPassed && generatedDate !== date) {
     actions.push("rerun `agent-workflow/tools/run-community-intelligence.ps1` locally");
   }
@@ -996,7 +1061,7 @@ function buildCommunityLane() {
   return {
     id: "community_intelligence",
     label: "Community Intelligence",
-    schedule: "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication closure",
+    schedule: "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,

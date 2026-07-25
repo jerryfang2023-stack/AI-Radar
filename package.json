@@ -40,6 +40,7 @@
     "automation:daily:morning": "node agent-workflow/tools/run-daily-automation-controller.mjs --phase=morning",
     "automation:daily:recovery": "node agent-workflow/tools/run-daily-automation-controller.mjs --phase=recovery",
     "automation:daily:closure": "node agent-workflow/tools/run-daily-automation-controller.mjs --phase=closure --invoke-codex=true",
+    "automation:daily:final-closure": "node agent-workflow/tools/run-daily-automation-controller.mjs --phase=final-closure",
     "automation:weekly:report": "node agent-workflow/tools/run-periodic-automation-controller.mjs --phase=weekly-report",
     "automation:weekly:health": "node agent-workflow/tools/run-periodic-automation-controller.mjs --phase=weekly-health",
     "automation:monthly": "node agent-workflow/tools/run-periodic-automation-controller.mjs --phase=monthly",

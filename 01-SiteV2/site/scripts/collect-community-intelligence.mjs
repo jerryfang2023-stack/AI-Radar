@@ -612,6 +612,19 @@ async function collectJob(context, sourceKey, job) {
     }
     await scrollFeed(page);
     const cards = await collectCards(page, sourceKey);
+    if (cards.length === 0) {
+      const pageSignal = await page.evaluate(() => ({
+        title: document.title || "",
+        text: (document.body?.innerText || "").slice(0, 4000),
+        url: location.href,
+      })).catch(() => ({ title: "", text: "", url: page.url() }));
+      const loginText = [pageSignal.url, pageSignal.title, pageSignal.text].join("\n");
+      if (/\/(?:login|signin|sign-in|passport|auth)(?:[/?#]|$)|登录|扫码登录|微信扫码|手机号登录|\bsign in\b|\blog in\b|scan.{0,20}qr/iu.test(loginText)) {
+        throw new Error(
+          `COMMUNITY_LOGIN_REQUIRED: ${sources[sourceKey].name} login expired. Open the dedicated Community Intelligence Chrome profile, complete login/QR verification, then rerun the local task.`,
+        );
+      }
+    }
     const detailLimit = job.mode === "home" ? homeDetailLimit : searchDetailLimit;
     const enriched = await enrichWithDetails(page, sourceKey, cards, detailLimit);
     return enriched.map((card) => normalizeCard(sourceKey, card, job));

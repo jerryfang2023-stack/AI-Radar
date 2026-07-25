@@ -1,6 +1,6 @@
 {
   "schema_version": "v3.3.1-source-registry-1.0",
-  "updated_at": "2026-06-17-enterprise-ai-transformation",
+  "updated_at": "2026-07-25-dead-rss-retirement",
   "owner": "Intelligence Engine Agent",
   "purpose": "Registry for WaveSight AI V3.3.1 daily source collection. Source levels identify source type and evidence boundary only; they are not value scores.",
   "source_levels": {
@@ -1262,10 +1262,10 @@
       "name": "Tigera Blog (Calico / AI Security)",
       "source_level": "B",
       "source_type": "analysis",
-      "interface_type": "rss",
-      "endpoint_or_url": "https://www.tigera.io/feed/",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.tigera.io/blog/",
       "auth_required": false,
-      "rate_limit_note": "public RSS; standard rate",
+      "rate_limit_note": "public web page; low-frequency discovery only",
       "query_scope": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
       "extraction_fields": [
         "title",
@@ -1276,20 +1276,20 @@
         "source",
         "tags"
       ],
-      "fallback_path": "Fallback to keyword-search a_media_gdelt path with site:tigera.io.",
+      "fallback_path": "Use keyword-search a_media_gdelt path with site:tigera.io for dated articles; do not retry the retired RSS interface.",
       "evidence_role": "supporting-analysis",
       "enabled_default": true,
-      "risk_note": "Security vendor blog; analysis content supports business signals but is not first-party event evidence."
+      "risk_note": "The RSS interface repeatedly returned HTTP 415. The official blog index remains discovery/supporting analysis only and is not first-party customer-event evidence."
     },
     {
       "source_id": "dataiku-blog",
-      "name": "Dataiku Blog",
+      "name": "Dataiku Product Updates",
       "source_level": "B",
       "source_type": "analysis",
-      "interface_type": "rss",
-      "endpoint_or_url": "https://www.dataiku.com/stories/blog/rss.xml",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.dataiku.com/blog/product-updates",
       "auth_required": false,
-      "rate_limit_note": "public RSS; standard rate",
+      "rate_limit_note": "public web page; low-frequency discovery only",
       "query_scope": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
       "extraction_fields": [
         "title",
@@ -1300,10 +1300,10 @@
         "source",
         "tags"
       ],
-      "fallback_path": "Fallback to keyword-search industry_landing path with site:dataiku.com.",
+      "fallback_path": "Use keyword-search industry_landing path with site:dataiku.com for dated updates; no RSS endpoint is assumed.",
       "evidence_role": "supporting-analysis",
       "enabled_default": true,
-      "risk_note": "AI platform vendor blog; analysis content supports business signals but is not first-party event evidence."
+      "risk_note": "The retired RSS endpoint returned HTTP 404. This public update index is discovery/supporting analysis only and is not first-party customer-event evidence."
     },
     {
       "source_id": "openai-fde-careers",

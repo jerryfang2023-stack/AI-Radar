@@ -74,6 +74,7 @@ The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. I
 - Daily Problem Watchdog: records failed production workflows and writes neutral production incidents. It is not Hermes and must not dispatch recovery or start another full-chain run.
 - Consolidated recovery: local Windows task `WaveSight Daily Recovery Controller` runs at 09:15, routes Business, First-Line, and Community failures to the earliest responsible stage, and never reruns accepted V4 evidence for a compatibility-only defect.
 - Consolidated closure: local Windows task `WaveSight Daily Automation Closure` runs at 09:50, runs the safe self-check and invokes Codex only for unresolved targeted tasks.
+- Final closure: local Windows task `WaveSight Daily Final Closure` runs at 16:45 after the afternoon First-Line Viewpoints window. It writes the final daily supervision report, evidence-supply health report, and stable repair incidents for signals repeated at least twice in the trailing seven daily reports.
 - Hermes control-plane watchdog: local Windows task `WaveSight Hermes Control Plane Watchdog` runs at 10:20 and checks only that the morning, recovery, and closure reports are readable.
 
 Operational rules:
@@ -89,6 +90,8 @@ Operational rules:
 9. Daily Problem Watchdog writes `agent-workflow/reports/<date>-daily-recovery-watchdog.json`, `.md`, and `agent-workflow/inbox/production-incidents/<date>-<lane>-daily-problem-watchdog.md` for actionable problems.
 10. The 09:50 closure should complete before 10:00 when production state is observable. If a same-date workflow is still queued or in progress, classify the lane as waiting rather than failed.
 11. At 10:20 Hermes checks controller-report liveness only. An existing controller report is observable even when it records a downstream repair status.
+12. Final closure separates each lane's data, publication, task-execution, and login state where applicable. A failed lane remains visible but must not suppress the other lane results.
+13. Repeated daily problems or warnings create a neutral open production incident with a stable fingerprint. Existing open fingerprints are reused rather than duplicated.
 
 ## Daily Problem Watchdog
 
@@ -522,13 +525,13 @@ Safe repair must not:
 - force local sync over dirty worktrees;
 - deploy directly from an automation branch.
 
-Install the consolidated morning, recovery, and closure tasks:
+Install the consolidated morning, recovery, closure, and final-closure tasks:
 
 ```powershell
 npm run install:daily-automation-tasks
 ```
 
-This installs 08:10 production dispatch, 09:15 targeted recovery, and 09:50 closure. It disables the separate 09:40 self-repair, 09:50 Codex handoff, and expired agent-review trial tasks after the replacements are registered.
+This installs 08:10 production dispatch, 09:15 targeted recovery, 09:50 repair closure, and 16:45 final closure. The final closure runs after the 16:10 First-Line Viewpoints lane, reports 7/30-day FDE output and fact-type source gaps, and creates repair incidents for repeated signals. It disables the separate 09:40 self-repair, 09:50 Codex handoff, and expired agent-review trial tasks after the replacements are registered.
 
 On Windows, every installed task action must use a stable absolute Node executable. The installers prefer `%APPDATA%\fnm\aliases\default\node.exe` and fall back to the absolute path returned by `Get-Command node.exe`; they must not register bare `node.exe` or an ephemeral `fnm_multishells` path.
 
@@ -564,7 +567,7 @@ Codex handoff rules:
 - block direct invocation on a dirty worktree unless `--allow-dirty=true` / `-AllowDirty` is intentionally set;
 - run the smallest relevant validation after a code, rule, gate, or skill repair.
 
-The intended morning flow is: 08:10 conditional production dispatch, 08:30 independent local collectors, 09:15 one targeted recovery window, and 09:50 self-check plus Codex closure. Do not add another routine full-chain dispatch between these checkpoints.
+The intended daily flow is: 08:10 conditional production dispatch, 08:30 independent local collectors, 09:15 one targeted recovery window, 09:50 self-check plus Codex repair closure, 16:10 First-Line Viewpoints publish, and 16:45 final closure. Do not add another routine full-chain dispatch between these checkpoints.
 
 ## Data Observation Multi-Agent Review Trial
 
