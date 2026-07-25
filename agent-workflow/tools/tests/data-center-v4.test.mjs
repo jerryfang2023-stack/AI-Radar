@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { buildBundle, eventAiRelevanceEvidence, findEventRule, normalizeEventTitle, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
+import { buildBundle, eventAiRelevanceEvidence, findEventRule, normalizeEventTitle, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
 import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
@@ -507,6 +507,35 @@ test("current funding, public-sector, and hardware titles resolve named organiza
     assert.ok(names.has(name), `missing organization entity ${name}`);
   }
   assert.ok(bundle.canonical_events.every((event) => event.entities.length > 0));
+});
+
+test("entity-link repair preserves an accepted bundle while restoring missing organizations", () => {
+  const bundle = buildBundle([
+    entry(
+      "odisha-ai-data-center-repair",
+      "HCLTech 联手奥里萨邦政府及 Sarvam 建设 AI 数据中心",
+      "HCLTech announced that it will work with the Government of Odisha and Sarvam to build an AI data center in Bhubaneswar.",
+      { language: "zh" }
+    )
+  ], taxonomy, date, "2026-07-25T00:00:00.000Z");
+  const event = bundle.canonical_events[0];
+  event.entities = [];
+  event.missing_fields = [...new Set([...(event.missing_fields || []), "entities"])];
+  bundle.compatibility_cards[0].missing_fields = [...new Set([...(bundle.compatibility_cards[0].missing_fields || []), "entities"])];
+  bundle.entities = [];
+  bundle.entity_mentions = [];
+  for (const document of bundle.raw_documents) document.entity_mention_ids = [];
+
+  const result = repairExistingEntityLinks(bundle, "2026-07-25T01:00:00.000Z");
+  const names = new Set(bundle.entities.map((entity) => entity.canonical_name));
+
+  assert.deepEqual(result.repaired_event_ids, [event.event_id]);
+  assert.deepEqual(names, new Set(["HCLTech", "Government of Odisha", "Sarvam"]));
+  assert.equal(event.entities.length, 3);
+  assert.ok(!event.missing_fields.includes("entities"));
+  assert.ok(!bundle.compatibility_cards[0].missing_fields.includes("entities"));
+  assert.equal(bundle.manifest.counts.entities, 3);
+  assert.equal(bundle.manifest.counts.entity_mentions, 3);
 });
 
 test("an earlier release verb preserves the organization when deployment determines the event type", () => {
