@@ -1,12 +1,12 @@
 ---
 type: opinion_person_timeline
 person_name: "Swyx"
-opinion_count: 110
+opinion_count: 112
 latest_date: 2026-07-24
 ---
 
 # Swyx 观点时间线
-共 110 条观点，按人物 + 日期文件聚合。
+共 112 条观点，按人物 + 日期文件聚合。
 ## 日期
 
 - [2026-07-24](./2026-07-24.md)
