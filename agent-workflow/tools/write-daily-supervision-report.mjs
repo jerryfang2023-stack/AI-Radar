@@ -567,7 +567,7 @@ function buildBusinessSignalsLane() {
     };
     if (!exists(dataFile)) recordDataProblem(`missing business-signal data file: ${rel(dataFile)}`);
     if (activeDate !== date) recordDataProblem(`business-signal activeDate is ${activeDate || "missing"}, expected ${date}`);
-    if (!exists(graphFile)) recordDataProblem(`missing intelligence map data: ${rel(graphFile)}`);
+    if (!exists(graphFile)) recordDataProblem(`missing compatibility relationship graph data: ${rel(graphFile)}`);
     if (!sameDateCards.length) recordDataProblem(`public Card count is 0 for ${date}`);
     if (selection?.supplyConstrained) {
       if (!selectedCount || evidence.qualityGateStatus !== "passed") {
@@ -670,7 +670,7 @@ function buildBusinessSignalsLane() {
 
   return {
     id: "business_signals",
-    label: "Business Signals / Intelligence Map / Dashboard",
+    label: "Business Signals compatibility / Operations",
     schedule: "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
     status: laneStatus(problems, warnings, waiting),
     evidence,

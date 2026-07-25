@@ -215,7 +215,7 @@ if (staleGroups.length) {
     "",
     "## Required Action",
     "",
-    "- Regenerate same-date Card / Trend Candidate / site data before site sync or commit mode.",
+    "- Regenerate same-date Signal Card compatibility assets and site projections before site sync or commit mode.",
     "",
   ].join("\n"), "utf8");
 } else if (exists(staleMarkerFile)) {

@@ -22,7 +22,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | WaveSight Entity History |
 | Version layer | Minor |
 | Release date | 2026-07-17 |
-| Last modified at | 2026-07-25T15:37:44+08:00 |
+| Last modified at | 2026-07-25T20:36:03+08:00 |
 | Product version | V4.2 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.2.0-entity-history |
@@ -51,11 +51,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Trend Radar updater Skill | guanlan-trend-radar-updater v1.0.0 |
 | Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.6 |
 | Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.2.1 |
-| Skill governance editor | guanlan-skill-editor v1.0.1 |
+| Skill governance editor | guanlan-skill-editor v1.0.2 |
+| Code and rule auditor | guanlan-code-rule-auditor v1.0.2 |
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
-| Skill Store version | v1.6.4 Trend Radar factual change application |
-| Git tag | `v4.2.4-direction-cards` |
+| Skill Store version | v1.6.5 Governance audit alignment |
+| Git tag | `v4.2.5-governance-audit` |
 | Current entries | Data Center / Trend Radar / Industry Reports / Opportunity Map; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
@@ -86,6 +87,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Reports Center is versioned independently as `REPORTS-V1.0.0-periodic-report-center`. It contains Monthly / Weekly reports and archives; `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek for source-ID-cited Markdown only, `assert-periodic-report-content.mjs` gates the content, and `render-periodic-report-pages.mjs` is the sole HTML/navigation/version writer under the monthly and weekly page-generator Skills.
 - Opportunity Map is versioned independently as `OMAP-V1.1.0-direction-cards`. It reads `industry-reports-frontstage.json`, renders Entry Point Map and Product Pain Map from source-backed `opportunity_signals`, and adds a small Direction Card layer. DeepSeek V4 Pro writes titles and editorial content from a bounded accepted-Card manifest; generated candidates stay review-only until evidence, unsupported-number, judgment, counter-signal, and human-review gates pass. Direction Cards never enter V4 canonical data and are not automated recommendations.
 - Trend Radar is versioned independently as `TRADAR-V1.0.0-factual-change-explorer`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
+- Skill Store `v1.6.5` aligns the formal project Skill source, external mirror, generated dashboard, ledger, and deploy-time read-only governance checks. It does not change any factual data contract or public column boundary.
+- `guanlan-code-rule-auditor` v1.0.2 requires version audits to compare every active version surface and preserves pre-repair drift evidence before synchronization.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - Internal V3 compatibility data may continue for opportunity-map projection, historical analytics, and Obsidian sync, but no public page may load its V3 CSS, JavaScript, navigation, or desk JSON.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
@@ -175,6 +178,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.2.5-governance-audit` | Current V4 version surfaces / Skill Store / daily compatibility supervision / Pages release gate | 2026-07-25 | 2026-07-25T20:36:03+08:00 | SITE-V4.2.0-entity-history / Skill Store v1.6.5 / guanlan-code-rule-auditor v1.0.2 | project Skills, external mirrors, dashboard, ledger, or release gate drifting; retired daily Trend Candidate or Intelligence Map ownership language returning to active supervision | version consistency + current-rule hygiene + Skill validation/sync/dashboard + core V4 and frontstage tests + GitHub Pages deploy |
 | `v4.2.4-direction-cards` | Opportunity Map / Direction Cards / opportunity projection | 2026-07-25 | 2026-07-25T15:37:44+08:00 | OMAP-V1.1.0-direction-cards / DIRECTION-CARD-V1.0-reviewed-hypothesis | Direction Cards generated from tag frequency alone; recommendation scores; unsupported market size or revenue claims; Direction Cards entering Data Center V4 canonical data; map toggles or persistent evidence panels returning | opportunity projection tests + frontstage regression + typography QC + desktop/mobile browser verification + GitHub Pages live verification |
 | `v4.2.3-relationship-map` | Data Center Industry Dossiers / entity-centered Relationship Map / relationship evidence detail service | 2026-07-25 | 2026-07-25T13:44:11+08:00 | SITE-V4.2.0-entity-history / ENTITY-V1.0 / RELATION-V2.1 | Entity and relationship database labels returning to the public navigation; unbounded global graph; Tag-co-occurrence, viewpoint, inferred, scored, or recommendation edges; relationship detail without accepted event, exact Claim, and source references | Data Center core tests + entity-history integrity gate + desktop/mobile browser verification + GitHub Pages live verification |
 | `HERMES-V4.0-freeze-control-plane-watchdog-20260725` | Daily automation controllers / Operations Backend / incident registry | 2026-07-25 | 2026-07-25T10:20:00+08:00 | HERMES-V4.0-control-plane-watchdog | Hermes inspecting V4 data quality, V3 compatibility Cards, lane counts, First-Line/Community/report publication, dispatching recovery, invoking Codex, or writing routine lane incidents | controller-report watchdog tests + script syntax + Skill Ops audit + current-rule hygiene |
@@ -226,6 +230,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| V4.2 governance audit / Skill Store v1.6.5 / guanlan-code-rule-auditor v1.0.2 | 2026-07-25T20:36:03+08:00 | Aligns current Skill mirrors and generated dashboard data, fixes retired Trend Candidate and Intelligence Map ownership wording in active supervision, and makes Pages verify rule and Skill governance before deployment. | current governance |
+| TAG-V4.0 | 2026-07-17T01:32:06+08:00 | Establishes Claim-backed AI technical tags and separate product, scenario, industry, deployment, audience, and evidence-backed Facets without using taxonomy as ranking or eligibility input. | current |
 | OMAP-V1.1.0-direction-cards | 2026-07-25T15:37:44+08:00 | Adds three human-reviewed Direction Cards to Opportunity Map. Each card states a falsifiable startup hypothesis, unknowns, a first validation action, and accepted Signal Card/original-source evidence without changing Trend Radar or Data Center canonical facts. | current application |
 | `v4.2.3-relationship-map` | 2026-07-25T13:44:11+08:00 | Renames Entity Index and Relationship Index to Industry Dossiers and Relationship Map, adds an entity-centered one-hop graph, evidence detail rail, relationship timeline, 7/30-day change filters, and split Claim/source-backed relationship detail loading while preserving the V4 factual boundary. | current public presentation |
 | HERMES-V4.0-control-plane-watchdog | 2026-07-25T10:20:00+08:00 | Retires Hermes daily lane supervision and compatibility-Card inspection. Hermes now checks only whether the morning, recovery, and closure controllers left readable reports; routine failures use the neutral production incident registry and Closure/Codex repair path. | current automation governance |
@@ -235,7 +241,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 | SITE-V4.2.0 / ENTITY-V1.0 / RELATION-V2.0 | 2026-07-17T22:45:00+08:00 | Adds stable company/product/person profiles, technology/use-case/industry nodes, source-backed typed relationships, cross-day factual timelines, split index/detail payloads, and a six-month accepted-history reprojection with explicit coverage gaps. | superseded by RELATION-V2.1 |
 | SITE-V4.2.0 / ENTITY-V1.0 / RELATION-V2.1 | 2026-07-25T12:30:00+08:00 | Re-audits the full public entity catalog, quarantines fragments and unsupported products, folds software release versions into product timelines, enriches evidence-backed person affiliations, and adds explicit person join/leave/founding relations plus a relationship index. | current |
 | SITE-V4.1.0 / IMAP-V2.1.0-v4-unified-frontstage | 2026-07-17T10:30:00+08:00 | Makes the V4 Data Center / Application Center shell the only public page system, moves legacy column URLs to redirects, migrates all report details to the V4 sidebar, and isolates Industry Reports behind a dedicated application projection. | upgraded |
-| TAG-V2.0.0-semantic-boundaries | 2026-07-11T18:00:00+08:00 | Rebuilds the taxonomy around five Business Signal semantic groups, moves source / region / trend state to structured metadata, separates First-Line column tags, removes default enterprise and stale lifecycle tags, and adds migration plus contract gates. | current |
+| TAG-V2.0.0-semantic-boundaries | 2026-07-11T18:00:00+08:00 | Rebuilds the taxonomy around five Business Signal semantic groups, moves source / region / trend state to structured metadata, separates First-Line column tags, removes default enterprise and stale lifecycle tags, and adds migration plus contract gates. | frozen compatibility; superseded by TAG-V4.0 |
 | SITE-V3.4.5 / BSIG-V2.2.0-pipeline-stage-ownership | 2026-07-11T14:15:02+08:00 | Refactors Business Signals into evidence supply, Card quality, frontstage contract, and publication stages; removes duplicate collection and retired volume/provider blockers; and classifies publication waiting separately from data-production failure. | internal compatibility |
 | SITE-V3.4.5 / BSIG-V2.1.4-raw-card-rule-cleanout | 2026-07-09T18:23:50+08:00 | Removes retired Raw-to-Card QC/current-rule surfaces, replaces lingering Top10/Core Pool/Pool-only wording with the unified Raw-first Card set contract, and clarifies that source-title translation gaps fail in Raw/Card ingestion or the unified pre-publication gate instead of being hidden or rewritten by the frontstage selector. | upgraded |
 | SITE-V3.4.5 / BSIG-V2.1.3-raw-title-translation-generator | 2026-07-09T17:03:21+08:00 | Adds a Raw-stage source-title translation generator so English source titles get Chinese `title_zh` and exact translation registry entries before Card/frontstage promotion; keeps existing V3 gate cleanout boundaries unchanged. | upgraded |

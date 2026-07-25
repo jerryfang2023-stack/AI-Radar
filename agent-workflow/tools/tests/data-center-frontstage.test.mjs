@@ -284,7 +284,7 @@ test("opportunity map is an independent application-center column", () => {
   assert.match(html, /href="intelligence-map\.html">行业报告/u);
   assert.match(html, /href="opportunity-map\.html" aria-current="page">机会地图/u);
   assert.match(html, /id="entry-map"/u);
-  assert.match(html, /OMAP-V1\.0\.0-independent-column/u);
+  assert.match(html, /OMAP-V1\.1\.0-direction-cards/u);
   assert.match(html, /id="pain-map"/u);
   assert.match(html, /data-map-panel="entry"/u);
   assert.match(html, /data-map-panel="pain"/u);

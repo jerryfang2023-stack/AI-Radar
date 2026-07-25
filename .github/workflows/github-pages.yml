@@ -124,6 +124,15 @@ jobs:
         if: steps.deployment-gate.outputs.deploy == 'true'
         run: node agent-workflow/tools/assert-version-consistency.mjs
 
+      - name: Assert current rule and Skill governance
+        if: steps.deployment-gate.outputs.deploy == 'true'
+        env:
+          GUANLAN_SKILL_STORE: ${{ github.workspace }}/agent-workflow/skills
+        run: |
+          node agent-workflow/tools/assert-current-rule-hygiene.mjs
+          node agent-workflow/tools/validate-guanlan-skills.mjs
+          node agent-workflow/tools/assert-skill-store-dashboard.mjs
+
       - name: Archive Frontstage artifact
         if: steps.deployment-gate.outputs.deploy == 'true'
         shell: bash
