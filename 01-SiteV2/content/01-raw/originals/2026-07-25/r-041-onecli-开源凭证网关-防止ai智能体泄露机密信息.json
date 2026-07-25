@@ -1,0 +1,284 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-041",
+  "title": "OneCLI：开源凭证网关，防止AI智能体泄露机密信息",
+  "title_zh": "OneCLI：开源凭证网关，防止AI智能体泄露机密信息",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://github.com/onecli/onecli",
+  "canonical_url": "https://github.com/onecli/onecli",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-24T10:19:38.152Z",
+  "collected_at": "2026-07-25T02:25:35.580Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nonecli\nonecli\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n160\nStar\n2.8k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n304 Commits\n304 Commits\n.agents/ skills\n.agents/ skills\n.claude/ skills\n.claude/ skills\n.github\n.github\n.husky\n.husky\n.vscode\n.vscode\napps\napps\nassets\nassets\ndocker\ndocker\ndocs\ndocs\npackages\npackages\nscripts\nscripts\n.dockerignore\n.dockerignore\n.env.example\n.env.example\n.gitignore\n.gitignore\n.mise.toml\n.mise.toml\n.prettierignore\n.prettierignore\nCHANGELOG.md\nCHANGELOG.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\nskills-lock.json\nskills-lock.json\nturbo.json\nturbo.json\nView all files\nRepository files navigation\nThe secret vault for AI agents.\nStore once. Inject anywhere. Agents never see the keys.\nWebsite ·\nDocs ·\nDiscord\nWhat is OneCLI?\nOneCLI is an open-source gateway that sits between your AI agents and the services they call. Instead of baking API keys into every agent, you store credentials once in OneCLI and the gateway injects them transparently. Agents never see the secrets.\nWhy we built it: AI agents need to call dozens of APIs, but giving each agent raw credentials is a security risk. OneCLI solves this with a single gateway that handles auth, so you get one place to manage access, rotate keys, and see what every agent is doing.\nHow it works: You store your real API credentials in OneCLI and give your agents placeholder keys (e.g. FAKE_KEY ). When an agent makes an HTTP call through the gateway, the OneCLI gateway matches the request to the right credentials, swaps the FAKE_KEY for the REAL_KEY , decrypts them, and injects them into the outbound request. The agent never touches the real secrets. It just makes normal HTTP calls and the gateway handles the swap.\nArchitecture\nRust Gateway : fast HTTP gateway that intercepts outbound requests and injects credentials. Agents authenticate with access tokens via Proxy-Authorization headers.\nWeb Dashboard : Next.js app for managing agents, secrets, and permissions. Provides the API the gateway uses to resolve which credentials to inject for each request.\nSecret Store : AES-256-GCM encrypted credential storage. Secrets are decrypted only at request time, matched by host and path patterns, and injected by the gateway as headers or URL query parameters.\nQuick Start\nThe fastest way to run OneCLI locally:\ncurl -fsSL https://onecli.sh/install | sh\nOr, if you prefer to run it manually:\ngit clone https://github.com/onecli/onecli.git\ncd onecli\ndocker compose -f docker/docker-compose.yml up -d --wait\nOpen http://localhost:10254 , create an agent, add your secrets, and point your agent's HTTP gateway to localhost:10255 .\nThe Quick Start runs OneCLI in local mode (single-user, no login), so no .env or NEXTAUTH_SECRET is required. To enable Google OAuth for multiple users, set NEXTAUTH_SECRET and the Google credentials (see Configuration ).\nFeatures\nTransparent credential injection : agents make normal HTTP calls, the gateway handles auth\nEncrypted secret storage : AES-256-GCM encryption at rest, decrypted only at request time\nHost & path matching : route secrets to the right API endpoints with pattern matching\nMulti-agent support : each agent gets its own access token with scoped permissions\nEasy setup : curl -fsSL https://onecli.sh/install | sh starts everything (app + PostgreSQL)\nTwo auth modes : single-user (no login) for local use, or Google OAuth for teams\nRust gateway : fast, memory-safe HTTP gateway with MITM interception for HTTPS\nVault integration : connect Bitwarden (or other password managers) for on-demand credential injection without storing secrets on the server\nProject Structure\napps/\nweb/ # Next.js app (dashboard + API, port 10254)\ngateway/ # Rust gateway (credential injection, port 10255)\npackages/\ndb/ # Prisma ORM + migrations\nui/ # Shared UI components (shadcn/ui)\ndocker/\nDockerfile # App image (gateway + web)\ndocker-compose.yml\nLocal Development\nPrerequisites\nmise (installs Node.js, pnpm, and other tools)\nRust (for the gateway)\nDocker (for PostgreSQL)\nSetup\nmise install\npnpm install\ncp .env.example .env\npnpm db:generate\npnpm db:up # Start PostgreSQL\npnpm db:migrate # Apply migrations\npnpm dev\nDashboard at http://localhost:10254 , gateway at http://localhost:10255 .\nCommands\nCommand\nDescription\npnpm dev\nStart web + gateway in dev mode\npnpm build\nProduction build\npnpm check\nLint + types + format\npnpm db:up\nStart PostgreSQL (Docker)\npnpm db:down\nStop PostgreSQL\npnpm db:generate\nGenerate Prisma client\npnpm db:migrate\nRun database migrations\npnpm db:studio\nOpen Prisma Studio\nConfiguration\nAll environment variables are optional for local development:\nVariable\nDescription\nDefault\nDATABASE_URL\nPostgreSQL connection string\nSee .env.example\nNEXTAUTH_SECRET\nEnables Google OAuth (multi-user)\nSingle-user mode\nGOOGLE_CLIENT_ID\nGoogle OAuth client ID\nGOOGLE_CLIENT_SECRET\nGoogle OAuth client secret\nSECRET_ENCRYPTION_KEY\nAES-256-GCM encryption key\nAuto-generated\nContributing\nWe welcome contributions! Please read our Contributing Guide and Code of Conduct before getting started.\nLicense\nApache-2.0\nAbout\nOpen-source credential gateway with a built-in vault. give your AI agents access to services without exposing keys.\nonecli.sh\nTopics\nai-agents cli mcp nanoclaw nodejs openclaw postgres rust secret-management security security-tools vault\nResources\nReadme\nApache-2.0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nActivity\nCustom properties\nStars\n2.8k stars\nWatchers\n10 watching\nForks\n160 forks\nReport repository\nReleases\nPackages\nContributors\nLanguages",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nonecli\nonecli\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n160\nStar\n2.8k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n304 Commits\n304 Commits\n.agents/ skills\n.agents/ skills\n.claude/ skills\n.claude/ skills\n.github\n.github\n.husky\n.husky\n.vscode\n.vscode\napps\napps\nassets\nassets\ndocker\ndocker\ndocs\ndocs\npackages\npackages\nscripts\nscripts\n.dockerignore\n.dockerignore\n.env.example\n.env.example\n.gitignore\n.gitignore\n.mise.toml\n.mise.toml\n.prettierignore\n.prettierignore\nCHANGELOG.md\nCHANGELOG.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\nskills-lock.json\nskills-lock.json\nturbo.json\nturbo.json\nView all files\nRepository files navigation\nThe secret vault for AI agents.\nStore once. Inject anywhere. Agents never see the keys.\nWebsite ·\nDocs ·\nDiscord\nWhat is OneCLI?\nOneCLI is an open-source gateway that sits between your AI agents and the services they call. Instead of baking API keys into every agent, you store credentials once in OneCLI and the gateway injects them transparently. Agents never see the secrets.\nWhy we built it: AI agents need to call dozens of APIs, but giving each agent raw credentials is a security risk. OneCLI solves this with a single gateway that handles auth, so you get one place to manage access, rotate keys, and see what every agent is doing.\nHow it works: You store your real API credentials in OneCLI and give your agents placeholder keys (e.g. FAKE_KEY ). When an agent makes an HTTP call through the gateway, the OneCLI gateway matches the request to the right credentials, swaps the FAKE_KEY for the REAL_KEY , decrypts them, and injects them into the outbound request. The agent never touches the real secrets. It just makes normal HTTP calls and the gateway handles the swap.\nArchitecture\nRust Gateway : fast HTTP gateway that intercepts outbound requests and injects credentials. Agents authenticate with access tokens via Proxy-Authorization headers.\nWeb Dashboard : Next.js app for managing agents, secrets, and permissions. Provides the API the gateway uses to resolve which credentials to inject for each request.\nSecret Store : AES-256-GCM encrypted credential storage. Secrets are decrypted only at request time, matched by host and path patterns, and injected by the gateway as headers or URL query parameters.\nQuick Start\nThe fastest way to run OneCLI locally:\ncurl -fsSL https://onecli.sh/install | sh\nOr, if you prefer to run it manually:\ngit clone https://github.com/onecli/onecli.git\ncd onecli\ndocker compose -f docker/docker-compose.yml up -d --wait\nOpen http://localhost:10254 , create an agent, add your secrets, and point your agent's HTTP gateway to localhost:10255 .\nThe Quick Start runs OneCLI in local mode (single-user, no login), so no .env or NEXTAUTH_SECRET is required. To enable Google OAuth for multiple users, set NEXTAUTH_SECRET and the Google credentials (see Configuration ).\nFeatures\nTransparent credential injection : agents make normal HTTP calls, the gateway handles auth\nEncrypted secret storage : AES-256-GCM encryption at rest, decrypted only at request time\nHost & path matching : route secrets to the right API endpoints with pattern matching\nMulti-agent support : each agent gets its own access token with scoped permissions\nEasy setup : curl -fsSL https://onecli.sh/install | sh starts everything (app + PostgreSQL)\nTwo auth modes : single-user (no login) for local use, or Google OAuth for teams\nRust gateway : fast, memory-safe HTTP gateway with MITM interception for HTTPS\nVault integration : connect Bitwarden (or other password managers) for on-demand credential injection without storing secrets on the server\nProject Structure\napps/\nweb/ # Next.js app (dashboard + API, port 10254)\ngateway/ # Rust gateway (credential injection, port 10255)\npackages/\ndb/ # Prisma ORM + migrations\nui/ # Shared UI components (shadcn/ui)\ndocker/\nDockerfile # App image (gateway + web)\ndocker-compose.yml\nLocal Development\nPrerequisites\nmise (installs Node.js, pnpm, and other tools)\nRust (for the gateway)\nDocker (for PostgreSQL)\nSetup\nmise install\npnpm install\ncp .env.example .env\npnpm db:generate\npnpm db:up # Start PostgreSQL\npnpm db:migrate # Apply migrations\npnpm dev\nDashboard at http://localhost:10254 , gateway at http://localhost:10255 .\nCommands\nCommand\nDescription\npnpm dev\nStart web + gateway in dev mode\npnpm build\nProduction build\npnpm check\nLint + types + format\npnpm db:up\nStart PostgreSQL (Docker)\npnpm db:down\nStop PostgreSQL\npnpm db:generate\nGenerate Prisma client\npnpm db:migrate\nRun database migrations\npnpm db:studio\nOpen Prisma Studio\nConfiguration\nAll environment variables are optional for local development:\nVariable\nDescription\nDefault\nDATABASE_URL\nPostgreSQL connection string\nSee .env.example\nNEXTAUTH_SECRET\nEnables Google OAuth (multi-user)\nSingle-user mode\nGOOGLE_CLIENT_ID\nGoogle OAuth client ID\nGOOGLE_CLIENT_SECRET\nGoogle OAuth client secret\nSECRET_ENCRYPTION_KEY\nAES-256-GCM encryption key\nAuto-generated\nContributing\nWe welcome contributions! Please read our Contributing Guide and Code of Conduct before getting started.\nLicense\nApache-2.0\nAbout\nOpen-source credential gateway with a built-in vault. give your AI agents access to services without exposing keys.\nonecli.sh\nTopics\nai-agents cli mcp nanoclaw nodejs openclaw postgres rust secret-management security security-tools vault\nResources\nReadme\nApache-2.0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nActivity\nCustom properties\nStars\n2.8k stars\nWatchers\n10 watching\nForks\n160 forks\nReport repository\nReleases\nPackages\nContributors\nLanguages",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-25/r-041-onecli-开源凭证网关-防止ai智能体泄露机密信息.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-25/r-041-onecli-开源凭证网关-防止ai智能体泄露机密信息.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 5905,
+    "paragraph_count": 56,
+    "sentence_count": 32,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0032,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 5905,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "e29e94a76a07130c",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "OneCLI：开源凭证网关，防止AI智能体泄露机密信息",
+    "discovery_summary": "OneCLI 是一款开源凭证网关，专门设计用于防止 AI 智能体在操作中意外泄露 API 密钥、数据库密码等机密信息。它通过拦截和过滤 CLI 命令中的敏感凭证，确保只有经过授权的安全调用才能访问这些秘密。该项目已在 GitHub 上开源，旨在为使用 AI 代理的开发团队提供一道额外的安全防线。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://github.com/onecli/onecli",
+    "discovered_at": "2026-07-25T02:16:33.203Z",
+    "rank_on_page": 267,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "aca7847db12030b3",
+  "content_hash": "e29e94a76a07130c",
+  "full_text_hash": "e29e94a76a07130c",
+  "semantic_hash": "c0198e7b6d8b50ea",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-24T10:19:38.152Z",
+  "last_seen_at": "2026-07-25T02:25:35.580Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "supporting_context",
+      "text": "OneCLI 是一款开源凭证网关，专门设计用于防止 AI 智能体在操作中意外泄露 API 密钥、数据库密码等机密信息。它通过拦截和过滤 CLI 命令中的敏感凭证，确保只有经过授权的安全调用才能访问这些秘密。该项目已在 GitHub 上开源，旨在为使用 AI 代理的开发团队提供一道额外的安全防线。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "onecli onecli Public Notifications You must be signed in to change notification settings Fork 160 Star 2.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "8k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 304 Commits 304 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "vscode apps apps assets assets docker docker docs docs packages packages scripts scripts .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-25T02:25:35.580Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "Google",
+      "GitHub"
+    ],
+    "products": [
+      "agents",
+      "claude",
+      "CLAUDE",
+      "Agents",
+      "agent",
+      "mcp"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "160",
+      "2.8",
+      "304",
+      "256",
+      "10254",
+      "10255",
+      "2.0",
+      "10"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There was an error while loading.",
+      "Please reload this page .",
+      "onecli onecli Public Notifications You must be signed in to change notification settings Fork 160 Star 2."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": [
+      "OneCLI 是一款开源凭证网关，专门设计用于防止 AI 智能体在操作中意外泄露 API 密钥、数据库密码等机密信息。它通过拦截和过滤 CLI 命令中的敏感凭证，确保只有经过授权的安全调用才能访问这些秘密。该项目已在 GitHub 上开源，旨在为使用 AI 代理的开发团队提供一道额外的安全防线。"
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# OneCLI：开源凭证网关，防止AI智能体泄露机密信息\n\n- raw_id: R-041\n- title_zh: OneCLI：开源凭证网关，防止AI智能体泄露机密信息\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://github.com/onecli/onecli\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-25T02:25:35.580Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nonecli\nonecli\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n160\nStar\n2.8k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n304 Commits\n304 Commits\n.agents/ skills\n.agents/ skills\n.claude/ skills\n.claude/ skills\n.github\n.github\n.husky\n.husky\n.vscode\n.vscode\napps\napps\nassets\nassets\ndocker\ndocker\ndocs\ndocs\npackages\npackages\nscripts\nscripts\n.dockerignore\n.dockerignore\n.env.example\n.env.example\n.gitignore\n.gitignore\n.mise.toml\n.mise.toml\n.prettierignore\n.prettierignore\nCHANGELOG.md\nCHANGELOG.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\nskills-lock.json\nskills-lock.json\nturbo.json\nturbo.json\nView all files\nRepository files navigation\nThe secret vault for AI agents.\nStore once. Inject anywhere. Agents never see the keys.\nWebsite ·\nDocs ·\nDiscord\nWhat is OneCLI?\nOneCLI is an open-source gateway that sits between your AI agents and the services they call. Instead of baking API keys into every agent, you store credentials once in OneCLI and the gateway injects them transparently. Agents never see the secrets.\nWhy we built it: AI agents need to call dozens of APIs, but giving each agent raw credentials is a security risk. OneCLI solves this with a single gateway that handles auth, so you get one place to manage access, rotate keys, and see what every agent is doing.\nHow it works: You store your real API credentials in OneCLI and give your agents placeholder keys (e.g. FAKE_KEY ). When an agent makes an HTTP call through the gateway, the OneCLI gateway matches the request to the right credentials, swaps the FAKE_KEY for the REAL_KEY , decrypts them, and injects them into the outbound request. The agent never touches the real secrets. It just makes normal HTTP calls and the gateway handles the swap.\nArchitecture\nRust Gateway : fast HTTP gateway that intercepts outbound requests and injects credentials. Agents authenticate with access tokens via Proxy-Authorization headers.\nWeb Dashboard : Next.js app for managing agents, secrets, and permissions. Provides the API the gateway uses to resolve which credentials to inject for each request.\nSecret Store : AES-256-GCM encrypted credential storage. Secrets are decrypted only at request time, matched by host and path patterns, and injected by the gateway as headers or URL query parameters.\nQuick Start\nThe fastest way to run OneCLI locally:\ncurl -fsSL https://onecli.sh/install | sh\nOr, if you prefer to run it manually:\ngit clone https://github.com/onecli/onecli.git\ncd onecli\ndocker compose -f docker/docker-compose.yml up -d --wait\nOpen http://localhost:10254 , create an agent, add your secrets, and point your agent's HTTP gateway to localhost:10255 .\nThe Quick Start runs OneCLI in local mode (single-user, no login), so no .env or NEXTAUTH_SECRET is required. To enable Google OAuth for multiple users, set NEXTAUTH_SECRET and the Google credentials (see Configuration ).\nFeatures\nTransparent credential injection : agents make normal HTTP calls, the gateway handles auth\nEncrypted secret storage : AES-256-GCM encryption at rest, decrypted only at request time\nHost & path matching : route secrets to the right API endpoints with pattern matching\nMulti-agent support : each agent gets its own access token with scoped permissions\nEasy setup : curl -fsSL https://onecli.sh/install | sh starts everything (app + PostgreSQL)\nTwo auth modes : single-user (no login) for local use, or Google OAuth for teams\nRust gateway : fast, memory-safe HTTP gateway with MITM interception for HTTPS\nVault integration : connect Bitwarden (or other password managers) for on-demand credential injection without storing secrets on the server\nProject Structure\napps/\nweb/ # Next.js app (dashboard + API, port 10254)\ngateway/ # Rust gateway (credential injection, port 10255)\npackages/\ndb/ # Prisma ORM + migrations\nui/ # Shared UI components (shadcn/ui)\ndocker/\nDockerfile # App image (gateway + web)\ndocker-compose.yml\nLocal Development\nPrerequisites\nmise (installs Node.js, pnpm, and other tools)\nRust (for the gateway)\nDocker (for PostgreSQL)\nSetup\nmise install\npnpm install\ncp .env.example .env\npnpm db:generate\npnpm db:up # Start PostgreSQL\npnpm db:migrate # Apply migrations\npnpm dev\nDashboard at http://localhost:10254 , gateway at http://localhost:10255 .\nCommands\nCommand\nDescription\npnpm dev\nStart web + gateway in dev mode\npnpm build\nProduction build\npnpm check\nLint + types + format\npnpm db:up\nStart PostgreSQL (Docker)\npnpm db:down\nStop PostgreSQL\npnpm db:generate\nGenerate Prisma client\npnpm db:migrate\nRun database migrations\npnpm db:studio\nOpen Prisma Studio\nConfiguration\nAll environment variables are optional for local development:\nVariable\nDescription\nDefault\nDATABASE_URL\nPostgreSQL connection string\nSee .env.example\nNEXTAUTH_SECRET\nEnables Google OAuth (multi-user)\nSingle-user mode\nGOOGLE_CLIENT_ID\nGoogle OAuth client ID\nGOOGLE_CLIENT_SECRET\nGoogle OAuth client secret\nSECRET_ENCRYPTION_KEY\nAES-256-GCM encryption key\nAuto-generated\nContributing\nWe welcome contributions! Please read our Contributing Guide and Code of Conduct before getting started.\nLicense\nApache-2.0\nAbout\nOpen-source credential gateway with a built-in vault. give your AI agents access to services without exposing keys.\nonecli.sh\nTopics\nai-agents cli mcp nanoclaw nodejs openclaw postgres rust secret-management security security-tools vault\nResources\nReadme\nApache-2.0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nActivity\nCustom properties\nStars\n2.8k stars\nWatchers\n10 watching\nForks\n160 forks\nReport repository\nReleases\nPackages\nContributors\nLanguages\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nonecli\nonecli\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n160\nStar\n2.8k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n304 Commits\n304 Commits\n.agents/ skills\n.agents/ skills\n.claude/ skills\n.claude/ skills\n.github\n.github\n.husky\n.husky\n.vscode\n.vscode\napps\napps\nassets\nassets\ndocker\ndocker\ndocs\ndocs\npackages\npackages\nscripts\nscripts\n.dockerignore\n.dockerignore\n.env.example\n.env.example\n.gitignore\n.gitignore\n.mise.toml\n.mise.toml\n.prettierignore\n.prettierignore\nCHANGELOG.md\nCHANGELOG.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\nskills-lock.json\nskills-lock.json\nturbo.json\nturbo.json\nView all files\nRepository files navigation\nThe secret vault for AI agents.\nStore once. Inject anywhere. Agents never see the keys.\nWebsite ·\nDocs ·\nDiscord\nWhat is OneCLI?\nOneCLI is an open-source gateway that sits between your AI agents and the services they call. Instead of baking API keys into every agent, you store credentials once in OneCLI and the gateway injects them transparently. Agents never see the secrets.\nWhy we built it: AI agents need to call dozens of APIs, but giving each agent raw credentials is a security risk. OneCLI solves this with a single gateway that handles auth, so you get one place to manage access, rotate keys, and see what every agent is doing.\nHow it works: You store your real API credentials in OneCLI and give your agents placeholder keys (e.g. FAKE_KEY ). When an agent makes an HTTP call through the gateway, the OneCLI gateway matches the request to the right credentials, swaps the FAKE_KEY for the REAL_KEY , decrypts them, and injects them into the outbound request. The agent never touches the real secrets. It just makes normal HTTP calls and the gateway handles the swap.\nArchitecture\nRust Gateway : fast HTTP gateway that intercepts outbound requests and injects credentials. Agents authenticate with access tokens via Proxy-Authorization headers.\nWeb Dashboard : Next.js app for managing agents, secrets, and permissions. Provides the API the gateway uses to resolve which credentials to inject for each request.\nSecret Store : AES-256-GCM encrypted credential storage. Secrets are decrypted only at request time, matched by host and path patterns, and injected by the gateway as headers or URL query parameters.\nQuick Start\nThe fastest way to run OneCLI locally:\ncurl -fsSL https://onecli.sh/install | sh\nOr, if you prefer to run it manually:\ngit clone https://github.com/onecli/onecli.git\ncd onecli\ndocker compose -f docker/docker-compose.yml up -d --wait\nOpen http://localhost:10254 , create an agent, add your secrets, and point your agent's HTTP gateway to localhost:10255 .\nThe Quick Start runs OneCLI in local mode (single-user, no login), so no .env or NEXTAUTH_SECRET is required. To enable Google OAuth for multiple users, set NEXTAUTH_SECRET and the Google credentials (see Configuration ).\nFeatures\nTransparent credential injection : agents make normal HTTP calls, the gateway handles auth\nEncrypted secret storage : AES-256-GCM encryption at rest, decrypted only at request time\nHost & path matching : route secrets to the right API endpoints with pattern matching\nMulti-agent support : each agent gets its own access token with scoped permissions\nEasy setup : curl -fsSL https://onecli.sh/install | sh starts everything (app + PostgreSQL)\nTwo auth modes : single-user (no login) for local use, or Google OAuth for teams\nRust gateway : fast, memory-safe HTTP gateway with MITM interception for HTTPS\nVault integration : connect Bitwarden (or other password managers) for on-demand credential injection without storing secrets on the server\nProject Structure\napps/\nweb/ # Next.js app (dashboard + API, port 10254)\ngateway/ # Rust gateway (credential injection, port 10255)\npackages/\ndb/ # Prisma ORM + migrations\nui/ # Shared UI components (shadcn/ui)\ndocker/\nDockerfile # App image (gateway + web)\ndocker-compose.yml\nLocal Development\nPrerequisites\nmise (installs Node.js, pnpm, and other tools)\nRust (for the gateway)\nDocker (for PostgreSQL)\nSetup\nmise install\npnpm install\ncp .env.example .env\npnpm db:generate\npnpm db:up # Start PostgreSQL\npnpm db:migrate # Apply migrations\npnpm dev\nDashboard at http://localhost:10254 , gateway at http://localhost:10255 .\nCommands\nCommand\nDescription\npnpm dev\nStart web + gateway in dev mode\npnpm build\nProduction build\npnpm check\nLint + types + format\npnpm db:up\nStart PostgreSQL (Docker)\npnpm db:down\nStop PostgreSQL\npnpm db:generate\nGenerate Prisma client\npnpm db:migrate\nRun database migrations\npnpm db:studio\nOpen Prisma Studio\nConfiguration\nAll environment variables are optional for local development:\nVariable\nDescription\nDefault\nDATABASE_URL\nPostgreSQL connection string\nSee .env.example\nNEXTAUTH_SECRET\nEnables Google OAuth (multi-user)\nSingle-user mode\nGOOGLE_CLIENT_ID\nGoogle OAuth client ID\nGOOGLE_CLIENT_SECRET\nGoogle OAuth client secret\nSECRET_ENCRYPTION_KEY\nAES-256-GCM encryption key\nAuto-generated\nContributing\nWe welcome contributions! Please read our Contributing Guide and Code of Conduct before getting started.\nLicense\nApache-2.0\nAbout\nOpen-source credential gateway with a built-in vault. give your AI agents access to services without exposing keys.\nonecli.sh\nTopics\nai-agents cli mcp nanoclaw nodejs openclaw postgres rust secret-management security security-tools vault\nResources\nReadme\nApache-2.0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nActivity\nCustom properties\nStars\n2.8k stars\nWatchers\n10 watching\nForks\n160 forks\nReport repository\nReleases\nPackages\nContributors\nLanguages\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [supporting_context / signal_card_candidate, relationship_graph_input / high] OneCLI 是一款开源凭证网关，专门设计用于防止 AI 智能体在操作中意外泄露 API 密钥、数据库密码等机密信息。它通过拦截和过滤 CLI 命令中的敏感凭证，确保只有经过授权的安全调用才能访问这些秘密。该项目已在 GitHub 上开源，旨在为使用 AI 代理的开发团队提供一道额外的安全防线。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] There was an error while loading.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Please reload this page .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] onecli onecli Public Notifications You must be signed in to change notification settings Fork 160 Star 2.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 8k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 304 Commits 304 Commits .\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] vscode apps apps assets assets docker docker docs docs packages packages scripts scripts .\n"
+}

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-24T01:28:02.081Z",
-    "latestDataDate": "2026-07-24",
-    "currentDate": "2026-07-24",
-    "eventCount": 1491,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1530,
+    "quarantinedEventCount": 18
   },
   "node": {
     "id": "TX-technology-computer_use",
@@ -17,6 +17,7 @@
     "typeLabel": "技术",
     "valueId": "computer_use",
     "eventIds": [
+      "EV-095e1a90f14ccdb9",
       "EV-e42e55d1e11a2ba2",
       "EV-333851b077b606c8",
       "EV-6225d18316f90a0d",
@@ -24,6 +25,7 @@
       "EV-a4f052325d0ef230"
     ],
     "entityIds": [
+      "EN-9d4cbc0ceab2c56a",
       "EN-ea3bd73e2b506e00",
       "EN-96eebba49dbbf422",
       "EN-e3863f813fe47240",
@@ -42,9 +44,93 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-05-23",
-    "lastSeen": "2026-07-10"
+    "lastSeen": "2026-07-25"
   },
   "events": [
+    {
+      "id": "EV-095e1a90f14ccdb9",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "in_progress",
+      "statusLabel": "进行中",
+      "publicationStatus": "partial",
+      "title": "Prentis 正以 10 亿美元估值洽谈融资 1 亿美元",
+      "originalTitle": "",
+      "subject": "Prentis 正以 10 亿美元估值洽谈",
+      "action": "融资",
+      "object": "1 亿美元",
+      "metrics": [
+        "$100M",
+        "$100 million",
+        "$1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-9d4cbc0ceab2c56a"
+      ],
+      "entityNames": [
+        "Prentis"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
     {
       "id": "EV-e42e55d1e11a2ba2",
       "dataDate": "2026-07-10",
@@ -651,6 +737,28 @@
   ],
   "entities": [
     {
+      "id": "EN-9d4cbc0ceab2c56a",
+      "name": "Prentis",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-095e1a90f14ccdb9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-07-25"
+    },
+    {
       "id": "EN-ea3bd73e2b506e00",
       "name": "Meta",
       "entityType": "organization_candidate",
@@ -669,12 +777,17 @@
         "EV-917a390341b9fce6",
         "EV-3f8f6a578be79988",
         "EV-467d1a701d21327d",
+        "EV-acdeebead5324344",
         "EV-c3f617e75d303f59",
         "EV-bc9abd502c002102",
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-fd7e79d3cb9cdb69",
         "EV-43301de739fe560e",
+        "EV-5bc7efca0bc7fec0",
+        "EV-d3a47b7f6243a909",
+        "EV-fdc4c26edadb4cea",
+        "EV-702276a31f123374",
         "EV-fbc316f83b63a543",
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
@@ -705,6 +818,7 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-ae117a54e1332539",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
         "EV-04cf95633b564f9a",
@@ -718,32 +832,36 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-cybersecurity",
-        "TX-technology-multimodal",
+        "TX-technology-open_weights",
         "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-image_generation",
-        "TX-technology-computer_use"
+        "TX-technology-distillation",
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
+        "EN-af54bb0c9a39eb30",
         "EN-bde892f452cebcb3",
         "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
-        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
         "EN-557203e8cc173124",
         "EN-e71558a14e7ed6ab"
       ],
-      "firstSeen": "2026-05-22",
-      "lastSeen": "2026-07-24"
+      "firstSeen": "2026-03-30",
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -839,6 +957,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
+        "EV-0d5a32aca724d30e",
         "EV-9852a10590030da9",
         "EV-1ba939d8baf43207",
         "EV-941ba9ebdc43f20c",
@@ -900,18 +1019,21 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
@@ -919,14 +1041,12 @@
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-multimodal",
+        "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-industry-government_public_sector",
-        "TX-technology-image_generation",
-        "TX-technology-computer_use"
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-bbdefa2950f49882",
@@ -934,7 +1054,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-e3863f813fe47240",
@@ -952,11 +1072,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-technology-multimodal",
         "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-computer_use"
+        "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
         "EN-ea3bd73e2b506e00"
@@ -986,8 +1106,8 @@
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
-        "EV-2e1352039c487bb0",
         "EV-0d5a32aca724d30e",
+        "EV-2e1352039c487bb0",
         "EV-b4aa08aef57bdb0f",
         "EV-1a241bcb4fad886c",
         "EV-6654f62015eff8e3",
@@ -1030,21 +1150,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-technology-long_context",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-multimodal",
         "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
         "TX-technology-image_generation",
-        "TX-technology-distillation",
         "TX-technology-speech_audio",
-        "TX-technology-quantization",
-        "TX-technology-computer_use"
+        "TX-technology-quantization"
       ],
       "relatedEntityIds": [
         "EN-52e3d014f9a275ea",
@@ -1053,7 +1172,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-09c344df70df9660",
@@ -1070,9 +1189,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
-        "TX-use_case-data_analysis",
-        "TX-technology-computer_use"
+        "TX-use_case-data_analysis"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-02",
@@ -1093,9 +1212,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
-        "TX-use_case-data_analysis",
-        "TX-technology-computer_use"
+        "TX-use_case-data_analysis"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-02",
@@ -1248,7 +1367,6 @@
         "EV-6950bb00a0913038",
         "EV-392894a7cc673b9e",
         "EV-ad269fada2269f35",
-        "EV-bce258f8f915ff5f",
         "EV-6fba63ca5f1e51c7",
         "EV-1df9b606627460f7",
         "EV-7580a050ca19a8ae",
@@ -1257,30 +1375,30 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-multimodal",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
-        "TX-use_case-content_creation",
-        "TX-technology-computer_use"
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
@@ -1367,9 +1485,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
-        "TX-use_case-data_analysis",
-        "TX-technology-computer_use"
+        "TX-use_case-data_analysis"
       ],
       "relatedEntityIds": [
         "EN-16fe95bd48dbf178"
@@ -1392,9 +1510,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
-        "TX-use_case-data_analysis",
-        "TX-technology-computer_use"
+        "TX-use_case-data_analysis"
       ],
       "relatedEntityIds": [
         "EN-e16fc821f34228d1"
@@ -1433,6 +1551,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-eec1e6857f0e0b2b",
         "EV-6acfb15c012ddf6d",
+        "EV-00518fdcb2de1f48",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b833b29d904b39ac",
@@ -1442,8 +1561,11 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-5bc7efca0bc7fec0",
+        "EV-702276a31f123374",
         "EV-37ff2485172cab0b",
         "EV-82ae0ea3bfe336a1",
+        "EV-243e73016576fa43",
         "EV-563843979fb55b9b",
         "EV-6c81f03e885f10af",
         "EV-e1e30a2a4a5232c6",
@@ -1487,6 +1609,8 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-ae117a54e1332539",
+        "EV-bce258f8f915ff5f",
         "EV-89bdda008227fb6b",
         "EV-62df953d81def866",
         "EV-1b92b6c835ce240c",
@@ -1499,25 +1623,27 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
+        "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
-        "TX-technology-image_generation",
         "TX-technology-distillation",
-        "TX-technology-computer_use"
+        "TX-technology-image_generation",
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-688f8db7018da7d4",
@@ -1534,7 +1660,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -1547,6 +1673,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-136b2edc9b9f3be8",
         "EV-14cc7f194f3e5af8",
         "EV-754e83c2d19005fe",
         "EV-d7a7244d620a2142",
@@ -1574,6 +1701,8 @@
         "EV-3b40ec144e5db22c",
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
+        "EV-acdeebead5324344",
+        "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
         "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
@@ -1606,12 +1735,14 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-c9aba59ba04c9fc8",
+        "EV-0d5a32aca724d30e",
         "EV-5ec22cf9a1fb59d4",
         "EV-b0dec1e885a601fe",
+        "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
         "EV-3b7b9040dd2c2a89",
         "EV-fe519605ebb69aaf",
-        "EV-0d5a32aca724d30e",
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
         "EV-969923b0b978a660",
@@ -1727,6 +1858,7 @@
         "EV-773ffcc6e1df56fa",
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
         "EV-b30dcacd355fe5f5",
@@ -1759,7 +1891,6 @@
         "EV-6950bb00a0913038",
         "EV-d29997d350e7c947",
         "EV-6defe295e6fbe61c",
-        "EV-bce258f8f915ff5f",
         "EV-4beb890f0879aeaf",
         "EV-4900ddf0686f4bbc",
         "EV-a46db68211837fec",
@@ -1772,18 +1903,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
@@ -1794,12 +1927,11 @@
         "TX-use_case-research_science",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-distillation",
-        "TX-technology-computer_use"
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-f65bb77682b83476",
@@ -1829,7 +1961,7 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-10fce287b4b1464c",
@@ -1846,8 +1978,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-computer_use"
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution"
       ],
       "relatedEntityIds": [
         "EN-9fbf261b62c1d7c0"

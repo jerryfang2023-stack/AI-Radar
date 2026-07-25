@@ -1,0 +1,298 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-095
+title: "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions"
+title_zh: "美国权衡应对中国AI之际，业界呼吁避免对开源权重实施广泛限制"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/"
+canonical_url: "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions"
+source_name: "TechCrunch AI"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-24T00:00:00.000Z"
+collected_at: 2026-07-25T02:26:01.799Z
+language: mixed
+full_text_hash: dcefc1b004db3aeb
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-25/r-095-as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-25/r-095-as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6724,"paragraph_count":33,"sentence_count":38,"boilerplate_hits":0,"symbol_ratio":0.0006,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 6724
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dcefc1b004db3aeb","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 04aa753d0df2117c
+content_hash: dcefc1b004db3aeb
+semantic_hash: e36b22b53818486d
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-24T00:00:00.000Z"
+last_seen_at: 2026-07-25T02:26:01.799Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_market_structure","importance_score":5,"importance_reason":"market-structure commercial event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["TechCrunch AI","OpenAI","Anthropic","Google","Microsoft","Meta","Nvidia","Mistral"],"products":["GPT-5","agents"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","法务"],"numbers":["8","51","24","2026","3 m","2.5","5.6","5.2"],"quotes":["premature restrictions","I think banning Chinese open models is as good as banning open models in general.","It’s an ecosystem, and the precedent [a ban would] set is bad.","Open models broaden defensive capability, increase transparency, and allow vulnerabilities to be discovered and remediated across many teams.","[keep] the frontier plural by avoiding premature restrictions on open models that stifle competition or drive innovation overseas."]}
+evidence_seed: {"company_actions":["AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.","The letter comes as Washington debates how the U.","should respond to allegations that Chinese AI labs are stealing intellectual property from their American counterparts, and growing in capability."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"Image Credits: David Paul Morris / Bloomberg / Getty Images AI As US weighs response to Chinese AI, industry urges against broad open-weight restrictions Rebecca Bellan 8:51 AM PDT · July 24, 2026 Several AI companies, including Hugging Face, Meta, Microsoft, Mistral, and Nvidia, have signed an open letter urging policymakers not to impose broad “premature restrictions” on open-weight AI models.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The letter comes as Washington debates how the U.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"should respond to allegations that Chinese AI labs are stealing intellectual property from their American counterparts, and growing in capability.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The letter doesn’t mention China at all, but it comes in the wake of reports that the Trump administration has been considering banning Chinese open-weight models, and potentially issuing sanctions against AI companies from the country.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"The White House has even accused Moonshot AI of distilling Anthropic’s Fable model to train its recently released and, by all measures, very impressive, Kimi K3 model.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-25T02:26:01.799Z
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# As US weighs response to Chinese AI, industry urges against broad open-weight restrictions
+
+## clean_text
+
+Image Credits: David Paul Morris / Bloomberg / Getty Images
+AI
+As US weighs response to Chinese AI, industry urges against broad open-weight restrictions
+Rebecca Bellan
+8:51 AM PDT · July 24, 2026
+Several AI companies, including Hugging Face, Meta, Microsoft, Mistral, and Nvidia, have signed an open letter urging policymakers not to impose broad “premature restrictions” on open-weight AI models. The letter comes as Washington debates how the U.S. should respond to allegations that Chinese AI labs are stealing intellectual property from their American counterparts, and growing in capability.
+The letter doesn’t mention China at all, but it comes in the wake of reports that the Trump administration has been considering banning Chinese open-weight models, and potentially issuing sanctions against AI companies from the country. The White House has even accused Moonshot AI of distilling Anthropic’s Fable model to train its recently released and, by all measures, very impressive, Kimi K3 model.
+The missive appears to be aimed at discouraging a total ban on Chinese models, as well as ensuring the administration’s response to alleged Chinese distillation doesn’t spill over into broader restrictions on open-weight AI or common techniques like distillation:
+Policymakers should be careful not to conflate legitimate model-development techniques with misappropriation. Distillation, or the practice of using one model’s outputs to help train or improve another, is a widely used technique for model improvement, evaluation, and validation. It reflects a long tradition of learning from, building upon, and improving existing technologies, a tradition that has helped drive innovation since the rise of the open-source software movement.
+By contrast, unlawful efforts to extract value from closed models raise legitimate concerns. Those concerns should be addressed through targeted legal and commercial frameworks rather than sweeping restrictions on techniques that play an important role in AI innovation.
+Or as Amjad Masad, CEO of Replit (which also signed the letter), told TechCrunch: “I think banning Chinese open models is as good as banning open models in general.” He pointed out that Thinking Machines Lab’s new open model, Inkling , was trained with the help of Moonshot’s Kimi 2.5. “It’s an ecosystem, and the precedent [a ban would] set is bad.”
+The letter also pushes back on arguments in the industry that open-weight models are inherently dangerous because they expand access to powerful models, which can be used in cyberattacks or other nefarious activities, without any oversight.
+“The right response to this risk is not to prohibit open weights. In a world where cybersecurity attackers use advanced AI, defenders need access to models with comparable capabilities so they can detect, simulate, and respond to emerging threats,” the letter reads. “Open models broaden defensive capability, increase transparency, and allow vulnerabilities to be discovered and remediated across many teams.”
+Last week, OpenAI disclosed that while testing GPT-5.6 Sol and another unnamed model, one of the systems exploited a weakness in its testing environment to access a Hugging Face repository containing a solution to a coding benchmark. One could argue the model’s goal wasn’t malicious, and that it was effectively cheating on a test to get the highest score. But the incident sparked debate about the risks of concentrating advanced AI technology behind a handful of closed providers.
+Hugging Face said it was not able to defend itself against the attack with commercial frontier AI models because their guardrails blocked its efforts. The closed AI models it used were unable to distinguish between being asked to build exploits for an attacker and a defender trying to detect them. The company instead had to pivot to using Chinese AI firm Z.ai’s GLM 5.2, a powerful open-weight model, to defend itself against the attack.
+The letter highlights a divide in the AI industry. Companies like OpenAI and Anthropic have urged the administration to respond to alleged IP theft by Chinese AI firms as open-weight models grow rapidly in capability. The outcome could have major implications on their business models, which is being threatened by the spread of cheap, highly capable, and accessible AI models.
+These companies, alongside other closed source AI developers like Google DeepMind and SpaceX, are notable in their absence at the bottom of this letter.
+Those who signed the letter have an obvious economic stake in seeing open AI models flourish. Companies like Nvidia, Microsoft Azure, and other infrastructure providers have a vested interest in pushing for commoditized models: If models are interchangeable, people will buy more GPUs, rent more cloud capacity, and build more applications.
+The letter encourages policymakers to expand access to compute for startups and researchers; invest in shared training assets like datasets, tools, and evaluation frameworks; and “[keep] the frontier plural by avoiding premature restrictions on open models that stifle competition or drive innovation overseas.”
+This article has been updated with comment from Amjad Masad, CEO of Replit.
+Topics
+AI , Government & Policy , Hugging Face , Microsoft , mistral , nvidia , OpenAI
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Rebecca Bellan
+Senior Reporter
+Rebecca Bellan is a senior reporter at TechCrunch where she covers the business, policy, and emerging trends shaping artificial intelligence. Her work has also appeared in Forbes, Bloomberg, The Atlantic, The Daily Beast, and other publications.
+You can contact or verify outreach from Rebecca by emailing rebecca.bellan@techcrunch.com or via encrypted message at rebeccabellan.491 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+US accuses American of allegedly wiping his phone using a ‘duress’ password during border search
+Zack Whittaker
+Anduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark
+Ram Iyer
+OpenAI says Hugging Face was breached by its pre-release models
+Russell Brandom
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: David Paul Morris / Bloomberg / Getty Images
+AI
+As US weighs response to Chinese AI, industry urges against broad open-weight restrictions
+Rebecca Bellan
+8:51 AM PDT · July 24, 2026
+Several AI companies, including Hugging Face, Meta, Microsoft, Mistral, and Nvidia, have signed an open letter urging policymakers not to impose broad “premature restrictions” on open-weight AI models. The letter comes as Washington debates how the U.S. should respond to allegations that Chinese AI labs are stealing intellectual property from their American counterparts, and growing in capability.
+The letter doesn’t mention China at all, but it comes in the wake of reports that the Trump administration has been considering banning Chinese open-weight models, and potentially issuing sanctions against AI companies from the country. The White House has even accused Moonshot AI of distilling Anthropic’s Fable model to train its recently released and, by all measures, very impressive, Kimi K3 model.
+The missive appears to be aimed at discouraging a total ban on Chinese models, as well as ensuring the administration’s response to alleged Chinese distillation doesn’t spill over into broader restrictions on open-weight AI or common techniques like distillation:
+Policymakers should be careful not to conflate legitimate model-development techniques with misappropriation. Distillation, or the practice of using one model’s outputs to help train or improve another, is a widely used technique for model improvement, evaluation, and validation. It reflects a long tradition of learning from, building upon, and improving existing technologies, a tradition that has helped drive innovation since the rise of the open-source software movement.
+By contrast, unlawful efforts to extract value from closed models raise legitimate concerns. Those concerns should be addressed through targeted legal and commercial frameworks rather than sweeping restrictions on techniques that play an important role in AI innovation.
+Or as Amjad Masad, CEO of Replit (which also signed the letter), told TechCrunch: “I think banning Chinese open models is as good as banning open models in general.” He pointed out that Thinking Machines Lab’s new open model, Inkling , was trained with the help of Moonshot’s Kimi 2.5. “It’s an ecosystem, and the precedent [a ban would] set is bad.”
+The letter also pushes back on arguments in the industry that open-weight models are inherently dangerous because they expand access to powerful models, which can be used in cyberattacks or other nefarious activities, without any oversight.
+“The right response to this risk is not to prohibit open weights. In a world where cybersecurity attackers use advanced AI, defenders need access to models with comparable capabilities so they can detect, simulate, and respond to emerging threats,” the letter reads. “Open models broaden defensive capability, increase transparency, and allow vulnerabilities to be discovered and remediated across many teams.”
+Last week, OpenAI disclosed that while testing GPT-5.6 Sol and another unnamed model, one of the systems exploited a weakness in its testing environment to access a Hugging Face repository containing a solution to a coding benchmark. One could argue the model’s goal wasn’t malicious, and that it was effectively cheating on a test to get the highest score. But the incident sparked debate about the risks of concentrating advanced AI technology behind a handful of closed providers.
+Hugging Face said it was not able to defend itself against the attack with commercial frontier AI models because their guardrails blocked its efforts. The closed AI models it used were unable to distinguish between being asked to build exploits for an attacker and a defender trying to detect them. The company instead had to pivot to using Chinese AI firm Z.ai’s GLM 5.2, a powerful open-weight model, to defend itself against the attack.
+The letter highlights a divide in the AI industry. Companies like OpenAI and Anthropic have urged the administration to respond to alleged IP theft by Chinese AI firms as open-weight models grow rapidly in capability. The outcome could have major implications on their business models, which is being threatened by the spread of cheap, highly capable, and accessible AI models.
+These companies, alongside other closed source AI developers like Google DeepMind and SpaceX, are notable in their absence at the bottom of this letter.
+Those who signed the letter have an obvious economic stake in seeing open AI models flourish. Companies like Nvidia, Microsoft Azure, and other infrastructure providers have a vested interest in pushing for commoditized models: If models are interchangeable, people will buy more GPUs, rent more cloud capacity, and build more applications.
+The letter encourages policymakers to expand access to compute for startups and researchers; invest in shared training assets like datasets, tools, and evaluation frameworks; and “[keep] the frontier plural by avoiding premature restrictions on open models that stifle competition or drive innovation overseas.”
+This article has been updated with comment from Amjad Masad, CEO of Replit.
+Topics
+AI , Government & Policy , Hugging Face , Microsoft , mistral , nvidia , OpenAI
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Rebecca Bellan
+Senior Reporter
+Rebecca Bellan is a senior reporter at TechCrunch where she covers the business, policy, and emerging trends shaping artificial intelligence. Her work has also appeared in Forbes, Bloomberg, The Atlantic, The Daily Beast, and other publications.
+You can contact or verify outreach from Rebecca by emailing rebecca.bellan@techcrunch.com or via encrypted message at rebeccabellan.491 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+US accuses American of allegedly wiping his phone using a ‘duress’ password during border search
+Zack Whittaker
+Anduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark
+Ram Iyer
+OpenAI says Hugging Face was breached by its pre-release models
+Russell Brandom
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Judge pauses $110B Paramount-Warner Bros. merger
+Aisha Malik
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6724,"paragraph_count":33,"sentence_count":38,"boilerplate_hits":0,"symbol_ratio":0.0006,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.
+
+2. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   Image Credits: David Paul Morris / Bloomberg / Getty Images AI As US weighs response to Chinese AI, industry urges against broad open-weight restrictions Rebecca Bellan 8:51 AM PDT · July 24, 2026 Several AI companies, including Hugging Face, Meta, Microsoft, Mistral, and Nvidia, have signed an open letter urging policymakers not to impose broad “premature restrictions” on open-weight AI models.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The letter comes as Washington debates how the U.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   should respond to allegations that Chinese AI labs are stealing intellectual property from their American counterparts, and growing in capability.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The letter doesn’t mention China at all, but it comes in the wake of reports that the Trump administration has been considering banning Chinese open-weight models, and potentially issuing sanctions against AI companies from the country.
+
+6. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   The White House has even accused Moonshot AI of distilling Anthropic’s Fable model to train its recently released and, by all measures, very impressive, Kimi K3 model.
+
+## business_elements
+
+- companies: TechCrunch AI, OpenAI, Anthropic, Google, Microsoft, Meta, Nvidia, Mistral
+- products: GPT-5, agents
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 法务
+- numbers: 8, 51, 24, 2026, 3 m, 2.5, 5.6, 5.2
+- quotes: premature restrictions / I think banning Chinese open models is as good as banning open models in general. / It’s an ecosystem, and the precedent [a ban would] set is bad. / Open models broaden defensive capability, increase transparency, and allow vulnerabilities to be discovered and remediated across many teams. / [keep] the frontier plural by avoiding premature restrictions on open models that stifle competition or drive innovation overseas.
+
+## evidence_seed
+
+- company_actions: AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation. / The letter comes as Washington debates how the U. / should respond to allegations that Chinese AI labs are stealing intellectual property from their American counterparts, and growing in capability.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_market_structure
+- importance_score: 5
+- importance_reason: market-structure commercial event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

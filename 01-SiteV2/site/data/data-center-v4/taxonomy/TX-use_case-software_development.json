@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-24T01:28:02.081Z",
-    "latestDataDate": "2026-07-24",
-    "currentDate": "2026-07-24",
-    "eventCount": 1491,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1530,
+    "quarantinedEventCount": 18
   },
   "node": {
     "id": "TX-use_case-software_development",
@@ -17,12 +17,14 @@
     "typeLabel": "应用场景",
     "valueId": "software_development",
     "eventIds": [
+      "EV-136b2edc9b9f3be8",
       "EV-f0fee44c1dfdcb09",
       "EV-9300044a58395552",
       "EV-f3bb064250dba2b2",
       "EV-c0ec0c026233bea5",
       "EV-03f661e8dcdf1b58",
       "EV-474d5a8ffca11ed9",
+      "EV-acdeebead5324344",
       "EV-8a2d8ebbd700c787",
       "EV-2d6d2dc0ead4be10",
       "EV-d209a6acecba4285",
@@ -47,6 +49,12 @@
       "EV-79d4cce8950d7639"
     ],
     "entityIds": [
+      "EN-ab9b29074a980e4b",
+      "EN-c70eca6b0f88f44d",
+      "EN-7d3194f79e645c42",
+      "EN-382635c9325bf327",
+      "EN-3db1f560db626918",
+      "EN-8f71c4871a160172",
       "EN-0cc3af265406c202",
       "EN-b0532e1af75cc4ab",
       "EN-7106dbc04a08ce3a",
@@ -55,11 +63,10 @@
       "EN-a7dd4a797cf9990b",
       "EN-e78bdebae031095b",
       "EN-7d4e02d31a7eb0f8",
-      "EN-c70eca6b0f88f44d",
+      "EN-5b3767eb23d5e4ed",
+      "EN-ea3bd73e2b506e00",
       "EN-6d57b22ebbd2bd90",
-      "EN-3db1f560db626918",
       "EN-7c3482959a6cdd3f",
-      "EN-7d3194f79e645c42",
       "EN-968e2d5b08687bf4",
       "EN-240389f4b730bad4",
       "EN-ef705dd2f374e840",
@@ -108,10 +115,123 @@
     "hardwareIds": [
       "HW-033a5b73cdc3f4be"
     ],
-    "firstSeen": "2026-05-24",
-    "lastSeen": "2026-07-23"
+    "firstSeen": "2026-03-30",
+    "lastSeen": "2026-07-25"
   },
   "events": [
+    {
+      "id": "EV-136b2edc9b9f3be8",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+      "originalTitle": "Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz",
+      "subject": "Accel, Iconiq Join $34M",
+      "action": "Series A",
+      "object": "for Paper, Design Platform for AI Era | citybiz",
+      "metrics": [
+        "$34 million",
+        "$34 Million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "technology",
+            "dimensionName": "行业",
+            "name": "科技与软件"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        }
+      ],
+      "entityIds": [
+        "EN-ab9b29074a980e4b",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-382635c9325bf327",
+        "EN-3db1f560db626918",
+        "EN-8f71c4871a160172"
+      ],
+      "entityNames": [
+        "Accel",
+        "Anthropic",
+        "OpenAI",
+        "Paper",
+        "Canva",
+        "Thinking Machines Lab"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era",
+      "publisher": "citybiz.co"
+    },
     {
       "id": "EV-f0fee44c1dfdcb09",
       "dataDate": "2026-07-04",
@@ -646,6 +766,113 @@
       "products": [],
       "sourceUrl": "https://www.prnewswire.com/news-releases/realm-raises-4-5m-to-bring-the-cursor-moment-to-enterprise-sales-302750020.html",
       "publisher": "prnewswire.com"
+    },
+    {
+      "id": "EV-acdeebead5324344",
+      "dataDate": "2026-07-25",
+      "date": "2026-03-30",
+      "updatedDate": "2026-07-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Qodo 获 7000 万美元融资，用于 AI 编码扩展中的代码验证",
+      "originalTitle": "Qodo raises $70M for code verification as AI coding scales",
+      "subject": "Qodo",
+      "action": "raises",
+      "object": "$70M for code verification as AI coding scales",
+      "metrics": [
+        "$70M",
+        "$70 million",
+        "$120 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-5b3767eb23d5e4ed",
+        "EN-7d3194f79e645c42",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Qodo",
+        "OpenAI",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-8a2d8ebbd700c787",
@@ -2971,8 +3198,8 @@
   ],
   "entities": [
     {
-      "id": "EN-0cc3af265406c202",
-      "name": "Hang Ten Systems",
+      "id": "EN-ab9b29074a980e4b",
+      "name": "Accel",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
@@ -2981,263 +3208,17 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-f0fee44c1dfdcb09"
+        "EV-136b2edc9b9f3be8"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
+        "TX-industry-technology",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-07-04",
-      "lastSeen": "2026-07-04"
-    },
-    {
-      "id": "EN-b0532e1af75cc4ab",
-      "name": "Rime",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ccbf97fdf4dc11d0",
-        "EV-64fb6d791e19d10a",
-        "EV-8cf189b07a257c1c",
-        "EV-463cb26b5e03c7f7",
-        "EV-f0fee44c1dfdcb09",
-        "EV-52bf48005db3461a",
-        "EV-a7e14985b924b464",
-        "EV-e7dcecaed5a0ee5b",
-        "EV-40d196865997025c",
-        "EV-736404028b8ad33e",
-        "EV-44a4e92c03a31ab1",
-        "EV-3b40ec144e5db22c",
-        "EV-c8928410f6c145eb",
-        "EV-67212040ee9cd7c8",
-        "EV-cfb7c4b4b765f53b",
-        "EV-ec711aed6721bb30",
-        "EV-d756f05478303505",
-        "EV-06b294f255c0087e",
-        "EV-dac8e2b1fb11403f",
-        "EV-2c476cb7969f399b",
-        "EV-06487af6e98ea491",
-        "EV-bb9ba11acf104db1",
-        "EV-bee410f8134cba5a",
-        "EV-e7b7df43970f7e2c",
-        "EV-025778b83c1b2ca9",
-        "EV-b84035029a63e52e",
-        "EV-b8bba030747fd3b6",
-        "EV-5babb43f4b4d302f",
-        "EV-9ae9aa86e51e64a2",
-        "EV-173d08643472aee5",
-        "EV-d064939235825765",
-        "EV-3ef3e18df61a00d8",
-        "EV-4bb5b24400e49ea4",
-        "EV-97a8d86baa7fffc4",
-        "EV-0ad758b04b9b5313",
-        "EV-591542ccc2de5be8",
-        "EV-dab4d3f2059e8880",
-        "EV-aaaa21ae510bc87e",
-        "EV-2f56b99f72ad6c4f",
-        "EV-33e7429a7bc94840",
-        "EV-cf0551afe16562ef",
-        "EV-c17f5a364ed6a3ac"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-financial_services",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-use_case-software_development",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-multimodal",
-        "TX-technology-video_generation"
-      ],
-      "relatedEntityIds": [
-        "EN-3ccbd9105a45d8fc"
-      ],
-      "firstSeen": "2026-03-11",
-      "lastSeen": "2026-07-24"
-    },
-    {
-      "id": "EN-7106dbc04a08ce3a",
-      "name": "Chamath Palihapitiya",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-9300044a58395552"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-03"
-    },
-    {
-      "id": "EN-3ccbd9105a45d8fc",
-      "name": "Salesforce",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-15cc72d7c78cad3d",
-        "EV-9300044a58395552",
-        "EV-4e7a32c9ee893918",
-        "EV-236cbc2d64f0c455",
-        "EV-14a666fc27d73a80",
-        "EV-fb5d2ae875255804",
-        "EV-f020dd198aa2f952",
-        "EV-cc7020e12bcaa0d7",
-        "EV-d9270ae7b862212b",
-        "EV-3f8f6a578be79988",
-        "EV-8b73e88ffd3569b2",
-        "EV-2c476cb7969f399b",
-        "EV-30d7f1c5dc8ea464",
-        "EV-9009adaed650ddde",
-        "EV-11a8e196deb21300",
-        "EV-f7aa6d43b75238fb"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-financial_services",
-        "TX-use_case-enterprise_operations",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-use_case-software_development"
-      ],
-      "relatedEntityIds": [
-        "EN-b0532e1af75cc4ab"
-      ],
-      "firstSeen": "2023-03-21",
-      "lastSeen": "2026-07-19"
-    },
-    {
-      "id": "EN-15c785fe4bcb86f5",
-      "name": "Blitzy",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-f3bb064250dba2b2"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-software_development"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-06-16"
-    },
-    {
-      "id": "EN-a7dd4a797cf9990b",
-      "name": "Niteshift",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-c0ec0c026233bea5"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-10",
-      "lastSeen": "2026-06-11"
-    },
-    {
-      "id": "EN-e78bdebae031095b",
-      "name": "SpaceX",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-e9b020a1b5f1af14",
-        "EV-3daefecd0453631a",
-        "EV-bb6bc8194a3a50c1",
-        "EV-edcb66d0401cfb8f",
-        "EV-03f661e8dcdf1b58",
-        "EV-ef7346378fcf9746",
-        "EV-4da18f97771852a9",
-        "EV-f949fd95df58d42d",
-        "EV-fcbd97e1f30c95e3",
-        "EV-5012364af7480121",
-        "EV-8a91e14f37d32b4d",
-        "EV-31782f0824ae1db1",
-        "EV-3c51bcb5e99d2b68",
-        "EV-8973f8148205ed35",
-        "EV-ecfc552af7344d65"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
-      ],
-      "relatedEntityIds": [
-        "EN-35ad2658e502aeda"
-      ],
-      "firstSeen": "2026-05-21",
-      "lastSeen": "2026-07-13"
-    },
-    {
-      "id": "EN-7d4e02d31a7eb0f8",
-      "name": "Realm",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-474d5a8ffca11ed9"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-software_development"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-24"
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -3250,6 +3231,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-136b2edc9b9f3be8",
         "EV-9c069dcbaf5283a2",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
@@ -3305,13 +3287,21 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-0e616f9e775a77dc",
+        "EV-2ee06634c0ce9f30",
+        "EV-c59d80939faf17cc",
+        "EV-c9aba59ba04c9fc8",
+        "EV-0d5a32aca724d30e",
+        "EV-32fb6014149bafdd",
+        "EV-7de7614b6a0a0e78",
+        "EV-c16240c63a33f97a",
+        "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
         "EV-3b7b9040dd2c2a89",
         "EV-ae9f1e2cf5a28be4",
         "EV-fbc316f83b63a543",
         "EV-fe519605ebb69aaf",
         "EV-6cd7509380208a9d",
-        "EV-0d5a32aca724d30e",
         "EV-3e449c3e9ad6a9e1",
         "EV-5b193a038ab4ea22",
         "EV-604cffac28a0af69",
@@ -3515,14 +3505,14 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
-        "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
@@ -3533,13 +3523,17 @@
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
+        "TX-industry-government_public_sector",
+        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-industry-government_public_sector",
         "TX-technology-distillation",
+        "TX-technology-human_in_loop",
         "TX-industry-education"
       ],
       "relatedEntityIds": [
+        "EN-163fa867e7ef6ee6",
+        "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-98fdc0804bb472fe",
         "EN-830abc32d2a443c5",
@@ -3550,7 +3544,6 @@
         "EN-ef11a801c5bd3673",
         "EN-fab30471ea65d627",
         "EN-3a13916345b60fad",
-        "EN-9f15bb7e29e191eb",
         "EN-5a4c2be958c0af72",
         "EN-968e2d5b08687bf4",
         "EN-cb4754c48f8023d0",
@@ -3567,86 +3560,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-24"
-    },
-    {
-      "id": "EN-6d57b22ebbd2bd90",
-      "name": "AI company",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-8a2d8ebbd700c787"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-software_development"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-22",
-      "lastSeen": "2026-07-23"
-    },
-    {
-      "id": "EN-3db1f560db626918",
-      "name": "Canva",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-439ba8d5f2f575c4",
-        "EV-2d6d2dc0ead4be10",
-        "EV-8fbe211e9d4bae03",
-        "EV-f05783f745bc7c2c",
-        "EV-34b0f4cfd513fbde",
-        "EV-a0d3853dd41c8ef6",
-        "EV-266aff97294156f6",
-        "EV-568d2aeab5234e48"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-model_context_protocol",
-        "TX-industry-media_entertainment",
-        "TX-technology-image_generation"
-      ],
-      "relatedEntityIds": [
-        "EN-309e1850e39b13ff",
-        "EN-954dc5d6516f127c"
-      ],
-      "firstSeen": "2026-06-11",
-      "lastSeen": "2026-07-21"
-    },
-    {
-      "id": "EN-7c3482959a6cdd3f",
-      "name": "OpenAI 史上最大规模企业",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-d209a6acecba4285"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-software_development"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-22",
-      "lastSeen": "2026-06-22"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -3659,6 +3573,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-136b2edc9b9f3be8",
         "EV-14cc7f194f3e5af8",
         "EV-754e83c2d19005fe",
         "EV-d7a7244d620a2142",
@@ -3686,6 +3601,8 @@
         "EV-3b40ec144e5db22c",
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
+        "EV-acdeebead5324344",
+        "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
         "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
@@ -3718,12 +3635,14 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-c9aba59ba04c9fc8",
+        "EV-0d5a32aca724d30e",
         "EV-5ec22cf9a1fb59d4",
         "EV-b0dec1e885a601fe",
+        "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
         "EV-3b7b9040dd2c2a89",
         "EV-fe519605ebb69aaf",
-        "EV-0d5a32aca724d30e",
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
         "EV-969923b0b978a660",
@@ -3839,6 +3758,7 @@
         "EV-773ffcc6e1df56fa",
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
         "EV-b30dcacd355fe5f5",
@@ -3871,7 +3791,6 @@
         "EV-6950bb00a0913038",
         "EV-d29997d350e7c947",
         "EV-6defe295e6fbe61c",
-        "EV-bce258f8f915ff5f",
         "EV-4beb890f0879aeaf",
         "EV-4900ddf0686f4bbc",
         "EV-a46db68211837fec",
@@ -3884,18 +3803,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
@@ -3906,12 +3827,11 @@
         "TX-use_case-research_science",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-technology-multimodal",
+        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-distillation",
-        "TX-technology-computer_use"
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-f65bb77682b83476",
@@ -3941,7 +3861,559 @@
         "EN-7b8cb35de7ad047a"
       ],
       "firstSeen": "2025-10-09",
+      "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "EN-382635c9325bf327",
+      "name": "Paper",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-136b2edc9b9f3be8",
+        "EV-3fb827f44ea109de"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "EN-3db1f560db626918",
+      "name": "Canva",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-136b2edc9b9f3be8",
+        "EV-439ba8d5f2f575c4",
+        "EV-2d6d2dc0ead4be10",
+        "EV-8fbe211e9d4bae03",
+        "EV-f05783f745bc7c2c",
+        "EV-34b0f4cfd513fbde",
+        "EV-a0d3853dd41c8ef6",
+        "EV-266aff97294156f6",
+        "EV-568d2aeab5234e48"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-model_context_protocol",
+        "TX-industry-media_entertainment",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-309e1850e39b13ff",
+        "EN-954dc5d6516f127c"
+      ],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "EN-8f71c4871a160172",
+      "name": "Thinking Machines Lab",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "TML"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-136b2edc9b9f3be8",
+        "EV-0a5d792223f5381f",
+        "EV-869c9ea96c58873d",
+        "EV-ad40755ca624afe7",
+        "EV-9ad569c873451304",
+        "EV-d5f276ad6b2ac9de",
+        "EV-181b425d2a600cad",
+        "EV-2fea1664807824ce",
+        "EV-70e3f88cb06a856c",
+        "EV-cf5b2a0aff3914bd",
+        "EV-54ecd52c69b97834",
+        "EV-34b0f4cfd513fbde",
+        "EV-38e1fc190aeb0f75",
+        "EV-77662aa9bef9efbe",
+        "EV-f0caa4082916d619",
+        "EV-2f56b99f72ad6c4f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-fine_tuning",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [
+        "EN-78624f0a98e78301"
+      ],
+      "firstSeen": "2026-05-14",
+      "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "EN-0cc3af265406c202",
+      "name": "Hang Ten Systems",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f0fee44c1dfdcb09"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-04",
+      "lastSeen": "2026-07-04"
+    },
+    {
+      "id": "EN-b0532e1af75cc4ab",
+      "name": "Rime",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ccbf97fdf4dc11d0",
+        "EV-64fb6d791e19d10a",
+        "EV-8cf189b07a257c1c",
+        "EV-463cb26b5e03c7f7",
+        "EV-f0fee44c1dfdcb09",
+        "EV-52bf48005db3461a",
+        "EV-a7e14985b924b464",
+        "EV-e7dcecaed5a0ee5b",
+        "EV-40d196865997025c",
+        "EV-736404028b8ad33e",
+        "EV-44a4e92c03a31ab1",
+        "EV-3b40ec144e5db22c",
+        "EV-c8928410f6c145eb",
+        "EV-67212040ee9cd7c8",
+        "EV-cfb7c4b4b765f53b",
+        "EV-ec711aed6721bb30",
+        "EV-d756f05478303505",
+        "EV-06b294f255c0087e",
+        "EV-dac8e2b1fb11403f",
+        "EV-2c476cb7969f399b",
+        "EV-06487af6e98ea491",
+        "EV-bb9ba11acf104db1",
+        "EV-bee410f8134cba5a",
+        "EV-e7b7df43970f7e2c",
+        "EV-025778b83c1b2ca9",
+        "EV-b84035029a63e52e",
+        "EV-b8bba030747fd3b6",
+        "EV-5babb43f4b4d302f",
+        "EV-9ae9aa86e51e64a2",
+        "EV-173d08643472aee5",
+        "EV-d064939235825765",
+        "EV-3ef3e18df61a00d8",
+        "EV-4bb5b24400e49ea4",
+        "EV-97a8d86baa7fffc4",
+        "EV-0ad758b04b9b5313",
+        "EV-591542ccc2de5be8",
+        "EV-dab4d3f2059e8880",
+        "EV-aaaa21ae510bc87e",
+        "EV-2f56b99f72ad6c4f",
+        "EV-33e7429a7bc94840",
+        "EV-cf0551afe16562ef",
+        "EV-c17f5a364ed6a3ac"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
+        "TX-industry-financial_services",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
+        "TX-use_case-customer_service",
+        "TX-technology-mixture_of_experts",
+        "TX-technology-on_device",
+        "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-3ccbd9105a45d8fc"
+      ],
+      "firstSeen": "2026-03-11",
       "lastSeen": "2026-07-24"
+    },
+    {
+      "id": "EN-7106dbc04a08ce3a",
+      "name": "Chamath Palihapitiya",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9300044a58395552"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-03",
+      "lastSeen": "2026-07-03"
+    },
+    {
+      "id": "EN-3ccbd9105a45d8fc",
+      "name": "Salesforce",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-15cc72d7c78cad3d",
+        "EV-9300044a58395552",
+        "EV-4e7a32c9ee893918",
+        "EV-236cbc2d64f0c455",
+        "EV-14a666fc27d73a80",
+        "EV-fb5d2ae875255804",
+        "EV-f020dd198aa2f952",
+        "EV-cc7020e12bcaa0d7",
+        "EV-d9270ae7b862212b",
+        "EV-3f8f6a578be79988",
+        "EV-8b73e88ffd3569b2",
+        "EV-2c476cb7969f399b",
+        "EV-30d7f1c5dc8ea464",
+        "EV-9009adaed650ddde",
+        "EV-11a8e196deb21300",
+        "EV-f7aa6d43b75238fb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-manufacturing",
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [
+        "EN-b0532e1af75cc4ab"
+      ],
+      "firstSeen": "2023-03-21",
+      "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-15c785fe4bcb86f5",
+      "name": "Blitzy",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f3bb064250dba2b2"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-06-16"
+    },
+    {
+      "id": "EN-a7dd4a797cf9990b",
+      "name": "Niteshift",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c0ec0c026233bea5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-06-11"
+    },
+    {
+      "id": "EN-e78bdebae031095b",
+      "name": "SpaceX",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e9b020a1b5f1af14",
+        "EV-3daefecd0453631a",
+        "EV-bb6bc8194a3a50c1",
+        "EV-edcb66d0401cfb8f",
+        "EV-03f661e8dcdf1b58",
+        "EV-ef7346378fcf9746",
+        "EV-4da18f97771852a9",
+        "EV-f949fd95df58d42d",
+        "EV-fcbd97e1f30c95e3",
+        "EV-5012364af7480121",
+        "EV-8a91e14f37d32b4d",
+        "EV-31782f0824ae1db1",
+        "EV-3c51bcb5e99d2b68",
+        "EV-8973f8148205ed35",
+        "EV-ecfc552af7344d65"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-35ad2658e502aeda"
+      ],
+      "firstSeen": "2026-05-21",
+      "lastSeen": "2026-07-13"
+    },
+    {
+      "id": "EN-7d4e02d31a7eb0f8",
+      "name": "Realm",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-474d5a8ffca11ed9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-05-24"
+    },
+    {
+      "id": "EN-5b3767eb23d5e4ed",
+      "name": "Qodo",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-acdeebead5324344"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-03-30",
+      "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "EN-ea3bd73e2b506e00",
+      "name": "Meta",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5df885dbd24b6d00",
+        "EV-dcbe916c6138e5cb",
+        "EV-427081ec574b43bb",
+        "EV-e41fc65eb014893f",
+        "EV-974a6b7d0e0efef2",
+        "EV-917a390341b9fce6",
+        "EV-3f8f6a578be79988",
+        "EV-467d1a701d21327d",
+        "EV-acdeebead5324344",
+        "EV-c3f617e75d303f59",
+        "EV-bc9abd502c002102",
+        "EV-9efcf6480f6c6f48",
+        "EV-cf76f090a1a20a36",
+        "EV-fd7e79d3cb9cdb69",
+        "EV-43301de739fe560e",
+        "EV-5bc7efca0bc7fec0",
+        "EV-d3a47b7f6243a909",
+        "EV-fdc4c26edadb4cea",
+        "EV-702276a31f123374",
+        "EV-fbc316f83b63a543",
+        "EV-1ba939d8baf43207",
+        "EV-5b193a038ab4ea22",
+        "EV-655018b9820c7940",
+        "EV-828698c8779bb522",
+        "EV-938eebe85a688ff1",
+        "EV-a37b9d9fb85e460f",
+        "EV-cf176636839e45be",
+        "EV-8540be15175c65da",
+        "EV-9496f90f3e808992",
+        "EV-dce5de62b2e4b752",
+        "EV-2ffbe4560e69992a",
+        "EV-60bc38fbf2bbb1ea",
+        "EV-ae736eb124d7163a",
+        "EV-e42e55d1e11a2ba2",
+        "EV-41baa43cf05d4288",
+        "EV-40390136762c64d3",
+        "EV-07a5533c18e5a74e",
+        "EV-56b9643b245a5ff4",
+        "EV-0edb0a592ca1fd67",
+        "EV-20ffa968bcbc4729",
+        "EV-7e52d691a0553667",
+        "EV-f34eec5df7f5bcb7",
+        "EV-c996e56f7f4bdc49",
+        "EV-b60df35d168fe6b7",
+        "EV-c846e768dad05441",
+        "EV-cea99e5d7f93d56a",
+        "EV-29f130674dbbb59e",
+        "EV-c98d4ee7764d51b2",
+        "EV-657837763764c869",
+        "EV-ae117a54e1332539",
+        "EV-89bdda008227fb6b",
+        "EV-ef823877347ff40f",
+        "EV-04cf95633b564f9a",
+        "EV-02b07069713d9a1c",
+        "EV-322796d9761a0824",
+        "EV-2d56dec8dfeb2b56",
+        "EV-618e2e96fac28f06",
+        "EV-47694f247d24b044",
+        "EV-0d6433da1f8d256a",
+        "EV-8fcecabca2e92b40"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-cybersecurity",
+        "TX-technology-open_weights",
+        "TX-industry-media_entertainment",
+        "TX-technology-guardrails_safety",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-distillation",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-af54bb0c9a39eb30",
+        "EN-bde892f452cebcb3",
+        "EN-62503b0d3dcfd096",
+        "EN-e3863f813fe47240",
+        "EN-d85ad5e8ff8e2889",
+        "EN-a2fa009495c3bb3a",
+        "EN-2ba325ce6f8e3dc9",
+        "EN-557203e8cc173124",
+        "EN-e71558a14e7ed6ab"
+      ],
+      "firstSeen": "2026-03-30",
+      "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "EN-6d57b22ebbd2bd90",
+      "name": "AI company",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-8a2d8ebbd700c787"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-23"
+    },
+    {
+      "id": "EN-7c3482959a6cdd3f",
+      "name": "OpenAI 史上最大规模企业",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d209a6acecba4285"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-22",
+      "lastSeen": "2026-06-22"
     },
     {
       "id": "EN-968e2d5b08687bf4",
@@ -3983,8 +4455,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
         "TX-use_case-software_development",
+        "TX-industry-manufacturing",
         "TX-technology-on_device"
       ],
       "relatedEntityIds": [
@@ -4012,9 +4484,12 @@
         "EV-67212040ee9cd7c8",
         "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
+        "EV-ecce694f17ac8ed9",
         "EV-b334f46b11a68045",
         "EV-75b9b997e9c7e5d1",
+        "EV-f79713437230562f",
         "EV-ca819cdf9008f342",
+        "EV-243e73016576fa43",
         "EV-563843979fb55b9b",
         "EV-87f052d24396fdbc",
         "EV-5cd352f2a021350d",
@@ -4022,9 +4497,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
-        "TX-technology-open_weights"
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-open_weights",
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-45c52af0feb0f285",
@@ -4033,7 +4511,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-ef705dd2f374e840",
@@ -4127,9 +4605,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-technology-on_device",
         "TX-technology-tool_use"
       ],
@@ -4170,6 +4648,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-eec1e6857f0e0b2b",
         "EV-6acfb15c012ddf6d",
+        "EV-00518fdcb2de1f48",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b833b29d904b39ac",
@@ -4179,8 +4658,11 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-5bc7efca0bc7fec0",
+        "EV-702276a31f123374",
         "EV-37ff2485172cab0b",
         "EV-82ae0ea3bfe336a1",
+        "EV-243e73016576fa43",
         "EV-563843979fb55b9b",
         "EV-6c81f03e885f10af",
         "EV-e1e30a2a4a5232c6",
@@ -4224,6 +4706,8 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-ae117a54e1332539",
+        "EV-bce258f8f915ff5f",
         "EV-89bdda008227fb6b",
         "EV-62df953d81def866",
         "EV-1b92b6c835ce240c",
@@ -4236,25 +4720,27 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
+        "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
-        "TX-technology-image_generation",
         "TX-technology-distillation",
-        "TX-technology-computer_use"
+        "TX-technology-image_generation",
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-688f8db7018da7d4",
@@ -4271,7 +4757,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -4420,7 +4906,6 @@
         "EV-6950bb00a0913038",
         "EV-392894a7cc673b9e",
         "EV-ad269fada2269f35",
-        "EV-bce258f8f915ff5f",
         "EV-6fba63ca5f1e51c7",
         "EV-1df9b606627460f7",
         "EV-7580a050ca19a8ae",
@@ -4429,30 +4914,30 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
-        "TX-technology-multimodal",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
-        "TX-use_case-content_creation",
-        "TX-technology-computer_use"
+        "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
@@ -4501,8 +4986,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-use_case-cybersecurity"
       ],
       "relatedEntityIds": [
@@ -4529,6 +5014,7 @@
         "EV-df2357fc3c3b4f5e",
         "EV-bbc1042dcf5ad317",
         "EV-b95539d17772a4ce",
+        "EV-5bc7efca0bc7fec0",
         "EV-9fb08b68f301eb88",
         "EV-347d250e2769de9a",
         "EV-7449d239223d4928",
@@ -4548,7 +5034,7 @@
         "EN-dc6c28a2123e8efb"
       ],
       "firstSeen": "2026-05-15",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-dc6c28a2123e8efb",
@@ -4710,8 +5196,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-30",
@@ -4735,8 +5221,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-guardrails_safety"
       ],
       "relatedEntityIds": [],
@@ -4756,6 +5242,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-7de7614b6a0a0e78",
         "EV-8121a1ecdf168d8a",
         "EV-eb97c388b3197c06",
         "EV-26cd4d692404e5c6",
@@ -4773,15 +5260,15 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-05",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-2d87f3d38782aa14",
@@ -4799,8 +5286,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-retrieval_augmented_generation"
       ],
       "relatedEntityIds": [],
@@ -4843,24 +5330,25 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-vision_language",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-open_weights",
-        "TX-technology-multimodal",
-        "TX-technology-distillation"
+        "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [
+        "EN-607964040e4b62e0",
         "EN-eb732565c71e6b85",
+        "EN-3a7bd3e2360a3d29",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-0db2d631b42da133",
@@ -4880,8 +5368,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-retrieval_augmented_generation"
       ],
       "relatedEntityIds": [],
@@ -4923,11 +5411,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
-        "TX-technology-on_device",
+        "TX-technology-code_generation",
         "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-on_device",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-use_case-knowledge_search"
@@ -4955,8 +5443,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-14",
@@ -4977,8 +5465,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [
         "EN-c27c48199bb1e14b"
@@ -5017,6 +5505,7 @@
         "EV-4dfd7233c8c69b0b",
         "EV-657837763764c869",
         "EV-388a53fe918389b0",
+        "EV-3aefbdfa5df2fd6a",
         "EV-c14e5185fd6bbe30",
         "EV-48e17a3ba4b73550",
         "EV-848bdd13f319c516",
@@ -5026,21 +5515,21 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-use_case-enterprise_operations",
-        "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-healthcare_life_sciences",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-multimodal",
         "TX-technology-quantization"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-c27c48199bb1e14b",
@@ -5057,8 +5546,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [
         "EN-412b57e712039032"
@@ -5083,8 +5572,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-technology",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -5109,8 +5598,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-technology",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -5135,8 +5624,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-technology",
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
@@ -5157,8 +5646,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-use_case-software_development"
+        "TX-use_case-software_development",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [
         "EN-b5251b35f15bedc4"
@@ -5207,14 +5696,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-vision_language",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
+        "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
-        "TX-technology-multimodal",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-image_generation",
@@ -5245,8 +5734,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-tool_use",
         "TX-technology-speech_audio"
@@ -5272,8 +5761,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-multimodal",
         "TX-technology-speech_audio"
       ],
@@ -5343,17 +5832,16 @@
         "EV-11a3893cb86fef69",
         "EV-9578242a4df20721",
         "EV-8cd571951f62b2c8",
-        "EV-bce258f8f915ff5f",
         "EV-4beb890f0879aeaf"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -5379,8 +5867,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [],
@@ -5402,8 +5890,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -5431,8 +5919,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-code_generation",
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [],

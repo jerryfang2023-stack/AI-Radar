@@ -1,34 +1,41 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-25T02:55:35.991Z",
+  "generated_at": "2026-07-25T03:02:09.694Z",
   "date": "2026-07-25",
-  "action": "Add accepted-bundle entity link repair",
+  "action": "Recover today's Business Signals publication",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Added a narrow repair mode that restores organization links in an accepted V4 bundle without discarding model-assisted events.",
+  "summary": "Recovered the accepted workflow artifact, repaired three entity links, regenerated 27 Signal Cards, and refreshed V4, Trend Radar, Industry Reports, business lenses, and operations data.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/build-data-center-v4.mjs",
-    "agent-workflow/tools/tests/data-center-v4.test.mjs"
+    "2026-07-25 Business Signals assets",
+    "Data Center V4 tables and frontstage indexes",
+    "Trend Radar",
+    "Industry Reports",
+    "pipeline dashboard"
   ],
   "outputs": [],
   "checks": [
-    "node --test agent-workflow/tools/tests/data-center-v4.test.mjs",
-    "git diff --check"
+    "V4 integrity gate",
+    "projection coverage gate",
+    "27-card dedupe and editorial gates",
+    "prepared site suite",
+    "pre-commit production-chain gate"
   ],
   "issues": [
-    "Rebuilding today's bundle without the workflow-only model-assist snapshot would remove accepted events"
+    "Workflow stopped at materialization and one generated Card duplicated its news fact as the visible excerpt"
   ],
   "risks": [
-    "Repair mode must remain limited to events with empty entity references and source-visible known aliases"
+    "No source-bounded FDE record was produced in today's batch; the integrity and coverage gates report this as a non-blocking warning"
   ],
   "lessons": [
-    "Targeted recovery must preserve accepted model-assisted event rows when their transient proposal snapshot is not published"
+    "Reuse the accepted artifact for downstream recovery and preserve model-assisted events while applying narrow deterministic repairs"
   ],
   "reusable_rules": [
-    "Use repair-existing-entity-links for accepted bundles instead of a lossy full rebuild"
+    "Do not rerun source monitoring after a downstream-only failure",
+    "Publish only after all downstream gates pass"
   ],
   "retired_flags": [],
   "notes": []

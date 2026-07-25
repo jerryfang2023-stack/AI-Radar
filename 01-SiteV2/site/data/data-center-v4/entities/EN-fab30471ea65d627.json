@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-24T01:28:02.081Z",
-    "latestDataDate": "2026-07-24",
-    "currentDate": "2026-07-24",
-    "eventCount": 1491,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1530,
+    "quarantinedEventCount": 18
   },
   "entity": {
     "id": "EN-fab30471ea65d627",
@@ -175,6 +175,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-136b2edc9b9f3be8",
         "EV-9c069dcbaf5283a2",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
@@ -230,13 +231,21 @@
         "EV-8e01849c05b50355",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-0e616f9e775a77dc",
+        "EV-2ee06634c0ce9f30",
+        "EV-c59d80939faf17cc",
+        "EV-c9aba59ba04c9fc8",
+        "EV-0d5a32aca724d30e",
+        "EV-32fb6014149bafdd",
+        "EV-7de7614b6a0a0e78",
+        "EV-c16240c63a33f97a",
+        "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
         "EV-3b7b9040dd2c2a89",
         "EV-ae9f1e2cf5a28be4",
         "EV-fbc316f83b63a543",
         "EV-fe519605ebb69aaf",
         "EV-6cd7509380208a9d",
-        "EV-0d5a32aca724d30e",
         "EV-3e449c3e9ad6a9e1",
         "EV-5b193a038ab4ea22",
         "EV-604cffac28a0af69",
@@ -440,14 +449,14 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
-        "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
@@ -458,13 +467,17 @@
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
+        "TX-industry-government_public_sector",
+        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-industry-government_public_sector",
         "TX-technology-distillation",
+        "TX-technology-human_in_loop",
         "TX-industry-education"
       ],
       "relatedEntityIds": [
+        "EN-163fa867e7ef6ee6",
+        "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
         "EN-98fdc0804bb472fe",
         "EN-830abc32d2a443c5",
@@ -475,7 +488,6 @@
         "EN-ef11a801c5bd3673",
         "EN-fab30471ea65d627",
         "EN-3a13916345b60fad",
-        "EN-9f15bb7e29e191eb",
         "EN-5a4c2be958c0af72",
         "EN-968e2d5b08687bf4",
         "EN-cb4754c48f8023d0",
@@ -492,7 +504,7 @@
         "EN-d8494bb34d6ddc43"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     }
   ],
   "relationships": [
@@ -566,12 +578,14 @@
       "typeLabel": "应用场景",
       "valueId": "software_development",
       "eventIds": [
+        "EV-136b2edc9b9f3be8",
         "EV-f0fee44c1dfdcb09",
         "EV-9300044a58395552",
         "EV-f3bb064250dba2b2",
         "EV-c0ec0c026233bea5",
         "EV-03f661e8dcdf1b58",
         "EV-474d5a8ffca11ed9",
+        "EV-acdeebead5324344",
         "EV-8a2d8ebbd700c787",
         "EV-2d6d2dc0ead4be10",
         "EV-d209a6acecba4285",
@@ -596,6 +610,12 @@
         "EV-79d4cce8950d7639"
       ],
       "entityIds": [
+        "EN-ab9b29074a980e4b",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-382635c9325bf327",
+        "EN-3db1f560db626918",
+        "EN-8f71c4871a160172",
         "EN-0cc3af265406c202",
         "EN-b0532e1af75cc4ab",
         "EN-7106dbc04a08ce3a",
@@ -604,11 +624,10 @@
         "EN-a7dd4a797cf9990b",
         "EN-e78bdebae031095b",
         "EN-7d4e02d31a7eb0f8",
-        "EN-c70eca6b0f88f44d",
+        "EN-5b3767eb23d5e4ed",
+        "EN-ea3bd73e2b506e00",
         "EN-6d57b22ebbd2bd90",
-        "EN-3db1f560db626918",
         "EN-7c3482959a6cdd3f",
-        "EN-7d3194f79e645c42",
         "EN-968e2d5b08687bf4",
         "EN-240389f4b730bad4",
         "EN-ef705dd2f374e840",
@@ -657,8 +676,8 @@
       "hardwareIds": [
         "HW-033a5b73cdc3f4be"
       ],
-      "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-23"
+      "firstSeen": "2026-03-30",
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "TX-use_case-cybersecurity",

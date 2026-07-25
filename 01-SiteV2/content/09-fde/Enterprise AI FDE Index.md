@@ -2,7 +2,7 @@
 type: enterprise_ai_fde_index
 status: current
 fde_version: FDE-V2.0
-updated_at: 2026-07-23T03:54:04.318Z
+updated_at: 2026-07-24T01:26:19.947Z
 ---
 
 # Enterprise AI / FDE Index
@@ -13,6 +13,7 @@ updated_at: 2026-07-23T03:54:04.318Z
 
 ## Daily Views
 
+- [[daily/2026-07-24 Enterprise AI FDE|2026-07-24 Enterprise AI FDE]]
 - [[daily/2026-07-23 Enterprise AI FDE|2026-07-23 Enterprise AI FDE]]
 - [[daily/2026-07-21 Enterprise AI FDE|2026-07-21 Enterprise AI FDE]]
 - [[daily/2026-07-20 Enterprise AI FDE|2026-07-20 Enterprise AI FDE]]
