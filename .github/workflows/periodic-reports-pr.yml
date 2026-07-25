@@ -98,7 +98,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add agent-workflow/reports 01-SiteV2/content/08-report 01-SiteV2/site/intelligence-map.html 01-SiteV2/site/weekly-ai-business-change-radar*.html 01-SiteV2/site/monthly-business-structure-*.html 01-SiteV2/site/data/industry-reports-frontstage.json agent-workflow/inbox/production-incidents || true
+          git add agent-workflow/reports agent-workflow/product/opportunity-direction-card-candidates.json 01-SiteV2/content/08-report 01-SiteV2/site/intelligence-map.html 01-SiteV2/site/weekly-ai-business-change-radar*.html 01-SiteV2/site/monthly-business-structure-*.html 01-SiteV2/site/data/industry-reports-frontstage.json agent-workflow/inbox/production-incidents || true
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
@@ -118,7 +118,7 @@ jobs:
           branch="${{ steps.commit.outputs.branch }}"
           pr_number="$(gh pr list --base main --head "$branch" --state open --json number --jq '.[0].number // empty')"
           if [ -z "$pr_number" ]; then
-            gh pr create --base main --head "$branch" --title "Periodic ${PHASE} ${RUN_DATE}" --body "DeepSeek-generated draft passed the content gate; pages were rendered deterministically. V4 facts were not modified."
+            gh pr create --base main --head "$branch" --title "Periodic ${PHASE} ${RUN_DATE}" --body "DeepSeek-generated report content passed its gate. Weekly runs also persist evidence-gated Direction Card candidates for later human review; candidates are not auto-published. Pages were rendered deterministically and V4 facts were not modified."
             pr_number="$(gh pr list --base main --head "$branch" --state open --json number --jq '.[0].number')"
           fi
           if ! gh pr merge "$pr_number" --squash --auto --delete-branch; then

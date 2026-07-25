@@ -1,9 +1,9 @@
 ---
 name: guanlan-opportunity-radar-updater
-description: "Use when updating, rebuilding, auditing, or explaining the independent Opportunity Map column at OMAP-V1.1.0: Entry Point Map, Product Pain Map, and reviewed Direction Cards. Applies to weekly refreshes of opportunity_signals, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, reviewed startup hypotheses, evidence modal behavior, and repairs when these surfaces become generic, label-driven, merged into Industry Reports, or disconnected from original articles. Do not use for weekly/monthly report prose, Reports Center pages, trend candidates, or old formal_tags aggregation."
+description: "Use when updating, rebuilding, auditing, or explaining the independent Opportunity Map column at OMAP-V1.1.0: Entry Point Map, Product Pain Map, and reviewed Direction Cards. Applies to weekly refreshes of opportunity_signals, DeepSeek V4 Pro Direction Card candidate writing, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, human-reviewed startup hypotheses, evidence modal behavior, and repairs when these surfaces become generic, label-driven, merged into Industry Reports, or disconnected from original articles. Do not use for weekly/monthly report prose, Reports Center pages, trend candidates, or old formal_tags aggregation."
 metadata:
   guanlan:
-    version: "1.3.0"
+    version: "1.4.0"
     lane: "Opportunity Map"
     status: "downstream application"
     order: 92
@@ -11,7 +11,7 @@ metadata:
     upstream: "Business Signal Cards, original source excerpts, opportunity_signals taxonomy"
     downstream: "opportunity-map.html, industry-reports-frontstage.json, opportunity-direction-cards.json, source-near opportunity field repairs, evidence modal behavior, weekly opportunity radar notes"
     gates: "OMAP version boundary, weekly cadence, source-backed opportunity_signals, reviewed direction definitions, no old formal_tags aggregation, map-specific evidence thresholds, independent map page, no Relation Paths, evidence modal smoke, frontstage regression"
-    recent_learning: "Direction Cards must be few, human-reviewed, falsifiable startup hypotheses backed by accepted map evidence; tag frequency alone cannot publish a direction."
+    recent_learning: "DeepSeek V4 Pro may write Direction Card titles and content, but generated candidates stay pending until evidence, unsupported numbers, judgment depth, and falsifiability pass gates plus human review."
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -26,7 +26,7 @@ Use this skill to update the independent `01-SiteV2/site/opportunity-map.html` c
 
 - `Entry Point Map`: buyer or user x specific task.
 - `Product Pain Map`: pain or constraint x product form / delivery model.
-- `Direction Cards`: a small set of human-reviewed startup hypotheses linked to accepted Cards and original sources.
+- `Direction Cards`: a small set of DeepSeek V4 Pro-drafted, human-reviewed startup hypotheses linked to accepted Cards and original sources.
 
 Do not write weekly/monthly report prose with this skill. The map evidence comes from `opportunity_signals`; retired relation-path modules must not return to the page.
 
@@ -74,10 +74,12 @@ This skill does not own an independent scheduled task. Its refresh completes bef
    - `Product Pain Map`: pain rows x product-form or delivery-model columns.
 5. Compare 7-day cells against the 30-day baseline.
 6. Leave unsupported cells blank. A blank cell is better than a vague cell.
-7. Review a maximum of a few Direction Cards; each must include a falsifiable hypothesis, buyer, task, pain, product wedge, unknowns, first validation action, and at least two accepted evidence Cards.
-8. Keep the two maps as separate sections on `opportunity-map.html`; Direction Cards are a third full-width section, not a new top-level navigation item and not a replacement for either map.
-9. Put cell and Direction Card evidence behind click-to-open detail, not in a permanent right-side "Cell Evidence" panel.
-10. Run syntax and frontstage regression checks after data or page generation.
+7. Send only accepted 30-day Card IDs, source excerpts, original URLs, actors, and `opportunity_signals` to `deepseek-v4-pro`; require 2–3 candidate directions with judgmental titles, a structural judgment, a falsifiable hypothesis, a counter-signal, unknowns, and a first validation action.
+8. Keep generated candidates in `opportunity-direction-card-candidates.json` with `pending_human_review`; DeepSeek output cannot publish or replace `opportunity-direction-cards.json` automatically.
+9. Human-review a maximum of a few Direction Cards. Reject unsupported numbers, absolute or promotional language, weak actor diversity, evidence mismatches, and category-name titles before promotion.
+10. Keep the two maps as separate sections on `opportunity-map.html`; Direction Cards are a third full-width section, not a new top-level navigation item and not a replacement for either map.
+11. Put cell and Direction Card evidence behind click-to-open detail, not in a permanent right-side "Cell Evidence" panel.
+12. Run syntax, Direction Card generation tests, and frontstage regression checks after data or page generation.
 
 ## Evidence Rules
 
@@ -99,7 +101,7 @@ Disallowed as direct map evidence:
 
 If a source does not name a buyer, task, product form, pain, or adoption evidence, record the missing field instead of inventing one.
 
-Direction Cards may state downstream hypotheses and validation questions, but they must be explicitly labeled as hypotheses rather than facts or recommendations. They must not contain unsupported market size, revenue projections, opaque opportunity scores, or claims that a direction is "worth doing."
+Direction Cards may state downstream hypotheses and validation questions, but they must be explicitly labeled as hypotheses rather than facts or recommendations. They must not contain unsupported market size, revenue projections, opaque opportunity scores, claims that a direction is "worth doing", or factual numbers absent from the cited source excerpts.
 
 ## Heat Meaning
 
@@ -145,5 +147,6 @@ Before finishing:
 4. Verify the old map toggle buttons and persistent right-side evidence panel do not return.
 5. Verify relation path data was not converted into `opportunity_signals`.
 6. Verify every Direction Card resolves to at least two accepted Cards and original-source URLs, and that no Direction Card was generated from tag frequency alone.
-7. Run the most relevant syntax check for edited scripts.
-8. Run `node agent-workflow/tools/frontstage-regression-gate.mjs` after page/data changes.
+7. Verify candidate provenance is `deepseek-v4-pro`, generated candidates did not auto-publish, and reviewed cards expose both `judgment` and `counter_signal`.
+8. Run the most relevant syntax check for edited scripts.
+9. Run `node agent-workflow/tools/frontstage-regression-gate.mjs` after page/data changes.

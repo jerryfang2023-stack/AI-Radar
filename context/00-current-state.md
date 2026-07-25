@@ -90,9 +90,9 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.2.0, 
 3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
 4. Keep Trend Radar, Industry Reports and Opportunity Map as downstream V4 applications and Dashboard as an independent backend; do not write their derived structures or judgments into V4 canonical data.
    - Trend Radar rebuilds after the V4 frontstage bundle, uses accepted `dataDate` facts only, exposes collection coverage, and links every structure back to events, entities, Claims, SourceArtifacts, and original sources.
-   - Opportunity Map updates weekly from source-backed `opportunity_signals`, not old `formal_tags`, and publishes under `OMAP-V1.1.0-direction-cards`; Direction Cards are reviewed downstream hypotheses and never enter V4 canonical data.
+   - Opportunity Map updates weekly from source-backed `opportunity_signals`, not old `formal_tags`, and publishes under `OMAP-V1.1.0-direction-cards`; DeepSeek V4 Pro writes evidence-bounded Direction Card candidates, but only human-reviewed candidates may enter the public direction configuration, and no Direction Card enters V4 canonical data.
    - Reports Center publishes under `REPORTS-V1.0.0-periodic-report-center`. Weekly report content comes from `01-SiteV2/content/08-report/`; monthly report content comes from `01-SiteV2/content/08-report/monthly/`.
-   - `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek for Markdown only, runs the content acceptance gate, and delegates all HTML/navigation/version writing to `render-periodic-report-pages.mjs` under the monthly and weekly report page-generator Skills.
+   - `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek Pro for report Markdown and, on weekly runs, separate Direction Card candidates. Report content passes its acceptance gate; Direction Card candidates remain review-only. HTML/navigation/version writing stays deterministic.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
 7. Sync merged assets to local Obsidian when the local machine is online.

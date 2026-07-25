@@ -1,14 +1,18 @@
 {
-  "schema_version": "direction-cards-v2",
-  "updated_at": "2026-07-25",
-  "review_mode": "human_reviewed_deepseek_draft",
-  "draft_provenance": {
+  "schema_version": "direction-card-candidates-v1",
+  "generated_at": "2026-07-25T08:38:30.209Z",
+  "as_of": "2026-07-25",
+  "window_days": 30,
+  "review_status": "approved_and_promoted",
+  "reviewed_at": "2026-07-25",
+  "generator": {
     "provider": "deepseek",
     "model": "deepseek-v4-pro",
-    "generated_at": "2026-07-25T08:38:30.209Z",
+    "attempts": 1,
     "prompt_version": "DIRECTION-EDITORIAL-V1.0"
   },
-  "cards": [
+  "evidence_count": 90,
+  "candidates": [
     {
       "id": "DIR-20260725-01",
       "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层",
@@ -27,7 +31,6 @@
         "企业是否愿意将模型选择的控制权交给一个自动化的第三方网关？"
       ],
       "validation_action": "与5个使用多个模型API的工程团队访谈，验证他们是否已在手动进行模型切换以优化成本，并量化他们每月因缺乏自动化路由而浪费的推理费用。",
-      "reviewed_at": "2026-07-25",
       "minimum_evidence": 2,
       "evidence_card_ids": [
         "SIG-20260707-A08",
@@ -52,7 +55,6 @@
         "对智能体行为的实时拦截会在多大程度上增加任务执行的延迟？"
       ],
       "validation_action": "与10位负责评估或部署AI智能体的企业安全工程师进行访谈，了解他们当前如何管理智能体的文件系统和网络访问权限，并询问他们对GPT-5.6 Sol文件删除事件的看法及应对措施。",
-      "reviewed_at": "2026-07-25",
       "minimum_evidence": 2,
       "evidence_card_ids": [
         "SIG-20260718-A25",

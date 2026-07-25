@@ -449,7 +449,7 @@ function collectIndustryReportsDataIssues() {
       issues.push(issue(file, "direction_cards_missing"));
     }
     for (const card of data?.directionCards || []) {
-      if (!card.id || !card.title || !card.hypothesis || !["validation_ready", "forming", "tracking"].includes(card.status)) {
+      if (!card.id || !card.title || !card.judgment || !card.hypothesis || !card.counterSignal || !["validation_ready", "forming", "tracking"].includes(card.status)) {
         issues.push(issue(file, "direction_card_incomplete", card.id || card.title || "missing"));
       }
       if (!Array.isArray(card.unknowns) || !card.unknowns.length || !card.validationAction) {

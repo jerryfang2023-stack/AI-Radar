@@ -4,12 +4,12 @@
     "siteVersion": "SITE-V4.2.0-entity-history",
     "applicationVersion": "OMAP-V1.1.0-direction-cards",
     "opportunityMapVersion": "OMAP-V1.1.0-direction-cards",
-    "directionCardVersion": "DIRECTION-CARD-V1.0-reviewed-hypothesis",
+    "directionCardVersion": "DIRECTION-CARD-V1.1-deepseek-pro-reviewed",
     "activeDate": "2026-07-25",
     "generatedAt": "2026-07-25T00:00:00.000Z",
     "windowDays": 30,
     "cardCount": 531,
-    "directionCardCount": 3,
+    "directionCardCount": 2,
     "sourceAdapter": "accepted-signal-card-assets"
   },
   "cards": [
@@ -17611,24 +17611,37 @@
   "directionCards": [
     {
       "id": "DIR-20260725-01",
-      "title": "多模型路由与成本控制",
-      "hypothesis": "为高频调用多个模型的 AI 团队提供请求级路由、成本监控与质量兜底。",
+      "title": "开源模型推理成本骤降，正在将价值从模型层迁移至“模型路由与成本治理”层",
+      "judgment": "旧均衡中，企业使用单一前沿闭源模型，按用量付费，成本结构简单但单价高。当前，多个证据表明开源模型能力逼近闭源前沿，且推理定价远低于闭源模型，同时企业开始在多模型间切换以优化成本。这导致价值从模型本身迁移到能够动态选择最优模型的“路由层”和“成本治理层”。判断边界在于：如果开源模型在关键企业任务上的可靠性无法达到闭源模型水平，或模型路由的额外延迟和复杂度超过成本节省，该迁移将停滞。",
+      "hypothesis": "买方为工程团队和AI预算负责人，任务是控制AI推理成本并避免供应商锁定。产品切口是一个模型网关，它根据任务类型、延迟要求和成本预算，自动将请求路由到最合适的开源或闭源模型。付费理由是，该网关能持续将推理成本降低一个可量化的比例，同时保持任务成功率。",
       "status": "validation_ready",
-      "buyer": "研发团队、企业 AI 负责人",
-      "task": "模型调用、生产路由与成本管理",
-      "pain": "API 成本波动、模型选择复杂、质量与速度难以同时稳定",
-      "productWedge": "模型网关 + 请求级路由 + 成本与质量观测",
-      "currentAlternatives": "直连单一模型、人工切换模型或维护自建路由脚本",
-      "whyNow": "最近一周同时出现请求级分类路由、按场景自动切换模型与企业计划成本数据。",
+      "buyer": "工程团队和AI预算负责人",
+      "task": "控制AI推理成本并避免供应商锁定",
+      "pain": "前沿模型API成本高企，且开源模型切换复杂，缺乏统一的成本与性能管理工具",
+      "productWedge": "一个根据任务类型、延迟和成本自动路由请求的模型网关",
+      "currentAlternatives": "手动在多个模型API间切换，或使用Runway Media Router等初步的自动切换工具",
+      "whyNow": "SIG-20260707-A08指出开源模型推理成本极低且切换成本低，对前沿模型定价构成压力；SIG-20260725-A23显示Runway已推出根据场景自动切换模型以节省成本的路由器，表明市场正在形成此类需求。两者共同揭示了从使用单一模型到多模型动态路由的转变正在发生。",
+      "counterSignal": "如果主流开源模型在关键企业基准测试中的可靠性得分持续低于闭源模型，或者模型路由带来的延迟增加导致关键业务应用无法接受，则该判断被推翻。",
       "unknowns": [
-        "公开材料中的节省比例能否在不同业务负载下复现",
-        "客户是否愿意为独立路由层付费，而不是继续使用平台内置能力"
+        "模型路由决策引入的额外延迟，在延迟敏感型任务中是否会被用户容忍？",
+        "企业是否愿意将模型选择的控制权交给一个自动化的第三方网关？"
       ],
-      "validationAction": "访谈 5 位月度模型调用成本较高的研发负责人，核实路由频率、成本阈值和采购主体。",
+      "validationAction": "与5个使用多个模型API的工程团队访谈，验证他们是否已在手动进行模型切换以优化成本，并量化他们每月因缺乏自动化路由而浪费的推理费用。",
       "reviewedAt": "2026-07-25",
       "evidenceCount": 2,
       "actorCount": 2,
       "evidence": [
+        {
+          "id": "SIG-20260707-A08",
+          "title": "GLM 5.2 与即将到来的 AI 利润率崩盘",
+          "category": "product-service",
+          "categoryLabel": "产品",
+          "date": "2026-07-07",
+          "sourceUrl": "https://martinalderson.com/posts/the-upcoming-ai-margin-collapse-part-1-glm-5-2",
+          "sourceName": "martinalderson.com",
+          "subject": "Martinalderson",
+          "sourceExcerpt": "真正的\"DeepSeek时刻\"在于推理成本而非训练成本。Anthropic/OpenAI推理API定价约$25/MTok，毛利率接近90%。GLM 5.2由Z.ai发布，是首个开源权重模型达到Opus和GPT（当前GPT 5.5）水平。但推理速度慢、缺少视觉支持（无法处理图片PDF、截图和设计文件），网页搜索能力差。通过Z.ai或Fireworks提供的兼容端点可轻松替换前沿模型，切换成本极低。开源权重允许本地部署处理敏感数据。这对前..."
+        },
         {
           "id": "SIG-20260725-A23",
           "title": "Runway Media Router 上线：根据场景自动切换 AI 模型，节省 Token 成本",
@@ -17639,127 +17652,52 @@
           "sourceName": "ithome.com",
           "subject": "Runway Media Router",
           "sourceExcerpt": "Runway Media Router 上线：根据场景自动切换 AI 模型，节省 Token 成本 Runway Media Router 上线：根据场景自动切换 AI 模型，节省 Token 成本 Runway 推出 Media Router，可在生成图像、视频、音频时根据质量、速度、成本三项优先级自动切换模型，减少开发者手动调换负担。"
-        },
-        {
-          "id": "SIG-20260723-A14",
-          "title": "Cursor 发布 Cursor Router：请求级分类器，以 30-50% 更低成本实现前沿编码质量",
-          "category": "product-service",
-          "categoryLabel": "产品",
-          "date": "2026-07-23",
-          "sourceUrl": "https://www.marktechpost.com/2026/07/22/cursor-releases-cursor-router-a-request-level-classifier",
-          "sourceName": "marktechpost.com",
-          "subject": "Cursor",
-          "sourceExcerpt": "Cursor 发布 Cursor Router：请求级分类器，以 30-50% 更低成本实现前沿编码质量 Cursor 发布 Cursor Router：请求级分类器，以 30-50% 更低成本实现前沿编码质量 Cursor 已面向 Teams 和 Enterprise 计划全面推出 Cursor Router。"
         }
       ]
     },
     {
       "id": "DIR-20260725-02",
-      "title": "企业 AI 安全与合规控制层",
-      "hypothesis": "在企业智能体进入生产环境前，提供权限、合规检查与运行安全控制的一体化入口。",
-      "status": "forming",
-      "buyer": "IT、安全与合规团队",
-      "task": "智能体上线前审查、运行控制与安全事件处置",
-      "pain": "责任边界不清、合规记录分散、AI 驱动攻击面扩大",
-      "productWedge": "智能体安全控制层 + 合规工作流",
-      "currentAlternatives": "传统安全工具、人工合规审查与分散的模型平台控制项",
-      "whyNow": "同一周出现企业智能体安全控制层、智能体合规基础设施和 AI 驱动钓鱼防护三笔融资或产品信号。",
+      "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求",
+      "judgment": "旧均衡中，AI主要作为Copilot辅助人类生成内容，人类是最终执行者。当前，多个证据显示AI智能体正从“读”和“写”转向“行动”，例如自主操作浏览器、编写并执行代码、控制文件系统。这种能力迁移带来了新的安全风险，价值将从提升效率的工具，迁移到能够对智能体行为进行审计、设定权限边界和确保合规的“护栏”层。判断边界在于：如果企业因安全顾虑而禁止智能体执行写操作，或智能体自主执行的成功率过低，该需求将停留在实验阶段。",
+      "hypothesis": "买方为IT安全团队和合规部门，任务是确保自主AI智能体的行为安全、可追溯且符合公司政策。产品切口是一个智能体行为审计与权限控制中间件，它能拦截智能体的高风险操作，记录所有行为日志，并强制执行预设的权限策略。付费理由是，该产品能降低因智能体误操作或恶意指令导致的数据泄露或系统故障风险。",
+      "status": "validation_ready",
+      "buyer": "IT安全团队和合规部门",
+      "task": "确保自主AI智能体的行为安全、可追溯且符合公司政策",
+      "pain": "AI智能体开始具备自主执行能力，但其操作不透明，可能带来数据删除、权限滥用等安全风险",
+      "productWedge": "一个能拦截智能体高风险操作、记录行为日志并强制执行权限策略的中间件",
+      "currentAlternatives": "依赖操作系统层面的权限控制，或完全禁用智能体的写操作能力，缺乏针对AI行为的细粒度审计工具",
+      "whyNow": "SIG-20260718-A25报道了GPT-5.6 Sol意外删除用户文件的事件，暴露了高级模型自主操作的风险；同时，SIG-20260704-A04介绍的WebBrain等开源项目已让智能体具备在浏览器中执行点击、输入等操作的能力。两者共同表明，智能体的“行动”能力正在快速增强，而相应的安全事件已经出现，创造了紧迫的治理需求。",
+      "counterSignal": "如果主流企业AI平台（如Microsoft Copilot, GitHub Copilot）默认不开放或严格限制智能体的文件写入和执行能力，导致该问题在短期内不普遍，则该判断的市场时机不成熟。",
       "unknowns": [
-        "安全团队会购买独立智能体控制层，还是要求现有安全平台原生提供",
-        "最先形成预算的是权限治理、合规留痕还是 AI 攻击防护"
+        "企业是倾向于购买独立的智能体安全产品，还是期望模型供应商或云平台内置这些功能？",
+        "对智能体行为的实时拦截会在多大程度上增加任务执行的延迟？"
       ],
-      "validationAction": "访谈 3 家已部署企业智能体的安全团队，确认上线审批流程、审计材料和现有工具缺口。",
+      "validationAction": "与10位负责评估或部署AI智能体的企业安全工程师进行访谈，了解他们当前如何管理智能体的文件系统和网络访问权限，并询问他们对GPT-5.6 Sol文件删除事件的看法及应对措施。",
       "reviewedAt": "2026-07-25",
-      "evidenceCount": 3,
-      "actorCount": 3,
+      "evidenceCount": 2,
+      "actorCount": 2,
       "evidence": [
         {
-          "id": "SIG-20260721-A02",
-          "title": "Neo Security 获 1 亿美元融资，为企业 AI 智能体构建安全控制层",
-          "category": "funding",
-          "categoryLabel": "融资",
-          "date": "2026-07-21",
-          "sourceUrl": "https://siliconangle.com/2026/07/20/neo-security-bags-100m-build-secure-control-layer-enterprise-ai-agents/",
-          "sourceName": "siliconangle.com",
-          "subject": "Neo Security Inc.",
-          "sourceExcerpt": "Neo Security 获 1 亿美元融资，为企业 AI 智能体构建安全控制层 Neo Security bags $100M to build the secure control layer for enterprise AI agents - SiliconANGLE Neo Security Inc."
-        },
-        {
-          "id": "SIG-20260725-A09",
-          "title": "Hadrius 融资 2700 万美元，打造智能体合规基础设施",
+          "id": "SIG-20260718-A25",
+          "title": "OpenAI 回应 GPT-5.6 Sol 意外删除用户文件：已采取措施降低风险",
           "category": "product-service",
           "categoryLabel": "产品",
-          "date": "2026-07-25",
-          "sourceUrl": "https://theaiinsider.tech/2026/07/23/hadrius-raises-27m-to-build-agentic-compliance-infrastructure/",
-          "sourceName": "theaiinsider.tech",
-          "subject": "Hadrius",
-          "sourceExcerpt": "Hadrius 融资 2700 万美元，打造智能体合规基础设施 Hadrius Raises $27M to Build Agentic Compliance Infrastructure Hadrius宣布完成2700 万美元融资。"
+          "date": "2026-07-18",
+          "sourceUrl": "https://www.ithome.com/0/978/347.htm",
+          "sourceName": "ithome.com",
+          "subject": "OpenAI 回应 GPT",
+          "sourceExcerpt": "6 Sol AI 意外删除用户文件：已采取措施降低风险 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 OpenAI 回应 GPT-5."
         },
         {
-          "id": "SIG-20260724-A10",
-          "title": "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼",
-          "category": "product-service",
-          "categoryLabel": "产品",
-          "date": "2026-07-24",
-          "sourceUrl": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
-          "sourceName": "techcrunch.com",
-          "subject": "AegisAI",
-          "sourceExcerpt": "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼 AegisAI, founded by former Google security execs, lands $36M to stop AI-driven spear phishing AegisAI宣布完成3600 万美元A 轮融资。"
-        }
-      ]
-    },
-    {
-      "id": "DIR-20260725-03",
-      "title": "高峰场景客服智能体",
-      "hypothesis": "从季节性高峰、旅行中断等高压场景切入，为客服团队提供可交接人工的垂直服务智能体。",
-      "status": "tracking",
-      "buyer": "客服负责人、客户运营负责人",
-      "task": "高峰期咨询分流、事务查询与服务恢复",
-      "pain": "咨询量突增、系统集成复杂、自动化与人工接管边界不清",
-      "productWedge": "垂直客服智能体 + 业务系统集成 + 人工接管",
-      "currentAlternatives": "传统呼叫中心、规则机器人和通用客服 Copilot",
-      "whyNow": "公开案例已覆盖零售旺季与旅行服务场景，同时出现面向 B2C 客户运营智能体的新融资。",
-      "unknowns": [
-        "不同垂直行业能否复用同一套交付和知识接入能力",
-        "客户最愿意按坐席、调用量还是解决结果付费"
-      ],
-      "validationAction": "选择一个季节性咨询量明显的行业，访谈 5 位客服运营负责人并复盘最近一次高峰期工单。",
-      "reviewedAt": "2026-07-25",
-      "evidenceCount": 3,
-      "actorCount": 3,
-      "evidence": [
-        {
-          "id": "SIG-20260724-A05",
-          "title": "YC支持的telli融资1310万欧元，打造面向B2C客户运营的AI智能体",
-          "category": "funding",
-          "categoryLabel": "融资",
-          "date": "2026-07-24",
-          "sourceUrl": "https://www.eu-startups.com/2026/07/yc-backed-telli-raises-e13-1-million-to-build-ai-for-b2c-customer-operations/",
-          "sourceName": "eu-startups.com",
-          "subject": "YC-backed telli",
-          "sourceExcerpt": "YC支持的telli融资1310万欧元，打造面向B2C客户运营的AI智能体 YC-backed telli raises €13.1 million to build AI for B2C customer operations | EU-Startups YC-backed telli宣布完成13 欧元融资。"
-        },
-        {
-          "id": "SIG-20260723-A29",
-          "title": "加拿大鹅如何利用AI扩展产能并打造创收体验中心 - Salesforce",
+          "id": "SIG-20260704-A04",
+          "title": "Meet WebBrain：开源本地优先的AI浏览器智能体",
           "category": "case",
           "categoryLabel": "案例",
-          "date": "2026-07-23",
-          "sourceUrl": "https://www.salesforce.com/blog/canada-goose-voice-ai/",
-          "sourceName": "salesforce.com",
-          "subject": "Salesforce",
-          "sourceExcerpt": "加拿大鹅如何利用AI扩展产能并打造创收体验中心 - Salesforce How Canada Goose Used AI to Expand Capacity and Create a Revenue-Generating Experience Center - Salesforce 原文称，relationship-led customer engagement."
-        },
-        {
-          "id": "SIG-20260719-A05",
-          "title": "tiket.com 与微软借助 AI 打造无缝旅行服务体验 - 来源亚洲",
-          "category": "case",
-          "categoryLabel": "案例",
-          "date": "2026-07-19",
-          "sourceUrl": "https://news.microsoft.com/source/asia/2026/07/14/tiket-com-and-microsoft-bring-seamless-travel-services-to-life-with-ai/",
-          "sourceName": "news.microsoft.com",
-          "subject": "Microsoft",
-          "sourceExcerpt": "/ query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original Read in Indonesian here In today’s digital era, travellers do not just compare ticket prices or d..."
+          "date": "2026-07-04",
+          "sourceUrl": "https://www.marktechpost.com/2026/07/02/meet-webbrain-an-open-source-local-first-ai-browser-agent-that-reads-pages-and-automates-tasks-in-chrome-and-firefox",
+          "sourceName": "marktechpost.com",
+          "subject": "marktechpost",
+          "sourceExcerpt": "WebBrain是一个免费、开源的浏览器智能体，基于MIT协议，支持Chrome和Firefox。它提供Ask（只读）和Act（通过Chrome DevTools Protocol执行点击、输入等操作）两种模式。本地模型下数据不出设备，也可通过API接入OpenAI、Anthropic Claude、Gemini、DeepSeek、Grok等云端模型。内置WebBrain Cloud服务每月5美元。安全设计包括权限提示和UI优先的修改..."
         }
       ]
     }
