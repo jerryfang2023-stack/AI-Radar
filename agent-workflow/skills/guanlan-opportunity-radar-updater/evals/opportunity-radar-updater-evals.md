@@ -36,5 +36,13 @@
    - Fail when a separate opportunity-map scheduled task is introduced or the report reads a pre-refresh projection.
 
 10. `independent_column_version`
-   - Pass when Opportunity Map emits `OMAP-V1.0.0-independent-column` and report pages emit only `REPORTS-V1.0.0-periodic-report-center`.
+   - Pass when Opportunity Map emits `OMAP-V1.1.0-direction-cards` and report pages emit only `REPORTS-V1.0.0-periodic-report-center`.
    - Fail when shared IMAP metadata returns or either application emits the other's column version.
+
+11. `reviewed_direction_cards`
+   - Pass when every Direction Card is human-reviewed, resolves to at least two accepted Cards with original-source URLs, and states unknowns plus a first validation action.
+   - Fail when tag frequency, one event, a model-generated summary, an opaque score, or an unsupported market-size claim publishes a Direction Card.
+
+12. `direction_card_presentation`
+   - Pass when Direction Cards are a third full-width section on Opportunity Map and `查看方向` opens the hypothesis and evidence detail.
+   - Fail when Direction Cards become a new sidebar entry, replace either map, or expose a persistent evidence panel.

@@ -1,4 +1,4 @@
-﻿---
+---
 status: current
 scope: project-state
 last_updated: 2026-07-18
@@ -21,7 +21,7 @@ WaveSight AI is now on the `SITE-V4.2.0-entity-history` public website and data-
 - The current backend entry is the operations dashboard.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
 - Pool is an operational QA queue. Card, trend, opportunity, and report objects are internal compatibility or downstream application assets, not V4 truth assets.
-- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Reports Center `REPORTS-V1.0.0-periodic-report-center`, Opportunity Map `OMAP-V1.0.0-independent-column`.
+- Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Reports Center `REPORTS-V1.0.0-periodic-report-center`, Opportunity Map `OMAP-V1.1.0-direction-cards`.
 - Current person-account review contract: `PERSON-REVIEW-V1.0`; all 37 person/account candidates are reviewed, 31 natural people are public, and 6 non-natural accounts remain quarantined without removing their viewpoint records.
 - Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`.
 
@@ -32,7 +32,7 @@ WaveSight AI is now on the `SITE-V4.2.0-entity-history` public website and data-
 | Data Center | `01-SiteV2/site/data-center.html` | V4 public data layer for Commercial Events, FDE, AI hardware, community intelligence, first-line viewpoints, Industry Dossiers (`产业档案`), and an evidence-backed entity-centered one-hop Relationship Map (`关系图谱`) |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Application-center factual explorer for accepted daily changes, weekly structure changes, monthly snapshots, and event/entity/source evidence links |
 | Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 application-center entry for latest Monthly / Weekly reports and their archives |
-| Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent application-center entry for the source-backed Entry Point Map and Product Pain Map, with click-to-open evidence modals |
+| Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent application-center entry for the source-backed Entry Point Map, Product Pain Map, and human-reviewed Direction Cards, with click-to-open evidence modals |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and person timeline |
 | Community Intelligence | `01-SiteV2/site/data-center.html?view=community` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
@@ -90,7 +90,7 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.2.0, 
 3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
 4. Keep Trend Radar, Industry Reports and Opportunity Map as downstream V4 applications and Dashboard as an independent backend; do not write their derived structures or judgments into V4 canonical data.
    - Trend Radar rebuilds after the V4 frontstage bundle, uses accepted `dataDate` facts only, exposes collection coverage, and links every structure back to events, entities, Claims, SourceArtifacts, and original sources.
-   - Opportunity Map updates weekly from source-backed `opportunity_signals`, not old `formal_tags`, and publishes under `OMAP-V1.0.0-independent-column`.
+   - Opportunity Map updates weekly from source-backed `opportunity_signals`, not old `formal_tags`, and publishes under `OMAP-V1.1.0-direction-cards`; Direction Cards are reviewed downstream hypotheses and never enter V4 canonical data.
    - Reports Center publishes under `REPORTS-V1.0.0-periodic-report-center`. Weekly report content comes from `01-SiteV2/content/08-report/`; monthly report content comes from `01-SiteV2/content/08-report/monthly/`.
    - `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek for Markdown only, runs the content acceptance gate, and delegates all HTML/navigation/version writing to `render-periodic-report-pages.mjs` under the monthly and weekly report page-generator Skills.
 5. Persist each producing lane through its own commit / PR boundary.

@@ -38,7 +38,7 @@ const expected = {
   site: "SITE-V4.2.0-entity-history",
   ops: "OPS-V1.2.3-content-factory-cleanout",
   reports: "REPORTS-V1.0.0-periodic-report-center",
-  opportunity: "OMAP-V1.0.0-independent-column",
+  opportunity: "OMAP-V1.1.0-direction-cards",
   trendRadar: "TRADAR-V1.0.0-factual-change-explorer",
   person: "PERSON-REVIEW-V1.0",
   skillStore: "v1.6.4 Trend Radar factual change application",
@@ -52,7 +52,7 @@ const ledgerChecks = [
   ["Trend Radar column version", expected.trendRadar],
   ["Person-account review contract", expected.person],
   ["Skill Store version", expected.skillStore],
-  ["Git tag", "v4.2.3-relationship-map"],
+  ["Git tag", "v4.2.4-direction-cards"],
 ];
 for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
@@ -104,7 +104,7 @@ if (personReview.summary?.candidates !== 37 || personReview.summary?.expected_pu
 }
 
 const skillVersions = [
-  ["agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", 'version: "1.2.0"'],
+  ["agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", 'version: "1.3.0"'],
   ["agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", 'version: "1.0.6"'],
   ["agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md", 'version: "1.1.1"'],
   ["agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md", 'version: "0.2.1"'],

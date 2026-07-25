@@ -107,6 +107,19 @@ If the source evidence does not support a cell, keep it empty.
 
 An empty cell means "no reliable public evidence yet." It is better than filling the map with broad AI language.
 
+## Direction Card Rules
+
+Direction Cards are a reviewed downstream layer built after the two maps, not an automatic extension of heat scoring.
+
+- Keep the published set small.
+- Require at least two accepted Signal Cards with original-source URLs.
+- Prefer evidence from multiple actors or evidence forms.
+- State one falsifiable startup hypothesis, the buyer, task, pain, product wedge, current alternatives, unknowns, and a first validation action.
+- Label evidence stage as `值得验证`, `线索形成`, or `持续跟踪`; these labels describe evidence maturity, not a recommendation.
+- Do not publish a direction from tag frequency, one funding event, one product launch, or a generated summary.
+- Do not add market-size estimates, revenue projections, opaque scores, or "worth doing" language without a separate evidence process.
+- Keep reviewed definitions in `agent-workflow/product/opportunity-direction-cards.json`; the projection builder must drop a card when its minimum accepted evidence cannot be resolved.
+
 
 ## Frontstage Presentation Rules
 
@@ -114,8 +127,10 @@ The independent Opportunity Map page should present the two matrices as source-b
 
 - The top-level section title should be `机会地图` / `Opportunity Map`.
 - Entry Point Map and Product Pain Map must be separate sections with their own Chinese and English subcolumn names.
+- Direction Cards render as a third full-width section on the same page; they do not create a new sidebar entry and do not replace either map.
 - Do not hide the two maps behind toggle buttons once both can be read on the same page.
 - Map cells should open related Card evidence in a modal or equivalent detail layer.
+- Direction Cards should use one primary action, `查看方向`, which opens the hypothesis, unknowns, validation action, and original evidence.
 - Do not keep a persistent right-side "Cell Evidence" instruction panel on the page.
 - Relation Paths are retired and must not return to either Opportunity Map or Reports Center.
 - Keep the visual palette report-like and low saturation: warm paper background, dark blue actions, gold accents, and restrained status colors.

@@ -22,7 +22,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | WaveSight Entity History |
 | Version layer | Minor |
 | Release date | 2026-07-17 |
-| Last modified at | 2026-07-25T13:44:11+08:00 |
+| Last modified at | 2026-07-25T15:37:44+08:00 |
 | Product version | V4.2 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.2.0-entity-history |
@@ -34,7 +34,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Enterprise AI compatibility lens version | EAI-V1.2.0-raw-card-ingestion-boundary |
 | AI Hardware data version | HARDWARE-V1.0 |
 | Reports Center column version | REPORTS-V1.0.0-periodic-report-center |
-| Opportunity Map column version | OMAP-V1.0.0-independent-column |
+| Opportunity Map column version | OMAP-V1.1.0-direction-cards |
 | Trend Radar column version | TRADAR-V1.0.0-factual-change-explorer |
 | Data Center Raw contract | RAW-V3.0 |
 | Canonical event contract | EVENT-V1.1 |
@@ -47,7 +47,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Monthly Report content source | `01-SiteV2/content/08-report/monthly/` |
 | Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.1.1 |
 | Monthly report page-generator Skill | guanlan-monthly-report-page-generator v1.1.0 |
-| Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.2.0 |
+| Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.3.0 |
 | Trend Radar updater Skill | guanlan-trend-radar-updater v1.0.0 |
 | Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.6 |
 | Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.2.1 |
@@ -55,7 +55,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.6.4 Trend Radar factual change application |
-| Git tag | `v4.2.3-relationship-map` |
+| Git tag | `v4.2.4-direction-cards` |
 | Current entries | Data Center / Trend Radar / Industry Reports / Opportunity Map; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
@@ -84,7 +84,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Production failures must be repaired from the earliest failed gate or report. If same-date artifacts are sufficient, use targeted repair and publication instead of restarting the lane.
 - Opportunity Map reads the dedicated downstream application projection `industry-reports-frontstage.json`; neither application-center page fetches the public V3 desk JSON. Dashboard remains an independent backend consumer.
 - Reports Center is versioned independently as `REPORTS-V1.0.0-periodic-report-center`. It contains Monthly / Weekly reports and archives; `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek for source-ID-cited Markdown only, `assert-periodic-report-content.mjs` gates the content, and `render-periodic-report-pages.mjs` is the sole HTML/navigation/version writer under the monthly and weekly page-generator Skills.
-- Opportunity Map is versioned independently as `OMAP-V1.0.0-independent-column`. It reads `industry-reports-frontstage.json`, whose projection builder now reads accepted Signal Card assets directly instead of `v3-data-observation-desk.json`, and renders Entry Point Map and Product Pain Map from source-backed `opportunity_signals` without owning report content or report-page generation.
+- Opportunity Map is versioned independently as `OMAP-V1.1.0-direction-cards`. It reads `industry-reports-frontstage.json`, renders Entry Point Map and Product Pain Map from source-backed `opportunity_signals`, and adds a small human-reviewed Direction Card layer whose hypotheses link back to accepted Signal Cards and original sources. Direction Cards never enter V4 canonical data and are not automated recommendations.
 - Trend Radar is versioned independently as `TRADAR-V1.0.0-factual-change-explorer`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - Internal V3 compatibility data may continue for opportunity-map projection, historical analytics, and Obsidian sync, but no public page may load its V3 CSS, JavaScript, navigation, or desk JSON.
@@ -101,7 +101,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Data Center | `01-SiteV2/site/data-center.html` | Unified V4 entry for Commercial Events, FDE, AI Hardware, Community Intelligence, First-Line Viewpoints, Industry Dossiers, and the entity-centered one-hop Relationship Map |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Independent V4 Application Center entry for daily, weekly, and monthly evidence-backed factual change exploration |
 | Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 sidebar application entry containing latest Monthly / Weekly reports and report archives |
-| Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent V4 sidebar application entry containing source-backed Entry Point Map, Product Pain Map, and click-to-open evidence modals |
+| Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent V4 sidebar application entry containing source-backed Entry Point Map, Product Pain Map, human-reviewed Direction Cards, and click-to-open evidence modals |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and timelines in the V4 shell |
 | Community Intelligence | `01-SiteV2/site/data-center.html?view=community` | Logged-in community cases, AI tool tactics, opportunities, and document links in the V4 shell |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Data Observation operations governance backend |
@@ -120,7 +120,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, Obsidian opinion timelines |
 | Person-account review | `PERSON-REVIEW-V1.0` | Serving-layer admission contract for the Entity Index people view | Canonical entity candidates plus First-Line authors and accepted review evidence | 31 public natural-person profiles, 6 quarantined non-natural accounts, preserved viewpoint records |
 | Reports Center / 行业报告 | `REPORTS-V1.0.0-periodic-report-center` | Published as the first Application Center entry. Owns accepted Monthly / Weekly Markdown, deterministic page rendering, archives, and page-generator Skill validation. | `.github/workflows/periodic-reports-pr.yml` + `assert-periodic-report-content.mjs` + `render-periodic-report-pages.mjs` + Monthly/Weekly report content | `intelligence-map.html`, `monthly-business-structure-*.html`, `weekly-ai-business-change-radar*.html`, monthly/weekly report page-generator Skills, `01-SiteV2/content/08-report/` |
-| Opportunity Map / 机会地图 | `OMAP-V1.0.0-independent-column` | Published as the second Application Center entry. Owns the dedicated downstream projection, two source-backed matrices, and evidence modal. | `industry-reports-frontstage.json` + source-backed `opportunity_signals` | `opportunity-map.html`, `build-industry-reports-frontstage.mjs`, opportunity radar updater Skill |
+| Opportunity Map / 机会地图 | `OMAP-V1.1.0-direction-cards` | Published as the second Application Center entry. Owns the dedicated downstream projection, two source-backed matrices, reviewed Direction Cards, and evidence modal. | `industry-reports-frontstage.json` + source-backed `opportunity_signals` + reviewed direction definitions | `opportunity-map.html`, `opportunity-direction-cards.json`, `build-industry-reports-frontstage.mjs`, opportunity radar updater Skill |
 
 ## Current Enterprise AI / FDE Version
 
@@ -175,6 +175,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.2.4-direction-cards` | Opportunity Map / Direction Cards / opportunity projection | 2026-07-25 | 2026-07-25T15:37:44+08:00 | OMAP-V1.1.0-direction-cards / DIRECTION-CARD-V1.0-reviewed-hypothesis | Direction Cards generated from tag frequency alone; recommendation scores; unsupported market size or revenue claims; Direction Cards entering Data Center V4 canonical data; map toggles or persistent evidence panels returning | opportunity projection tests + frontstage regression + typography QC + desktop/mobile browser verification + GitHub Pages live verification |
 | `v4.2.3-relationship-map` | Data Center Industry Dossiers / entity-centered Relationship Map / relationship evidence detail service | 2026-07-25 | 2026-07-25T13:44:11+08:00 | SITE-V4.2.0-entity-history / ENTITY-V1.0 / RELATION-V2.1 | Entity and relationship database labels returning to the public navigation; unbounded global graph; Tag-co-occurrence, viewpoint, inferred, scored, or recommendation edges; relationship detail without accepted event, exact Claim, and source references | Data Center core tests + entity-history integrity gate + desktop/mobile browser verification + GitHub Pages live verification |
 | `HERMES-V4.0-freeze-control-plane-watchdog-20260725` | Daily automation controllers / Operations Backend / incident registry | 2026-07-25 | 2026-07-25T10:20:00+08:00 | HERMES-V4.0-control-plane-watchdog | Hermes inspecting V4 data quality, V3 compatibility Cards, lane counts, First-Line/Community/report publication, dispatching recovery, invoking Codex, or writing routine lane incidents | controller-report watchdog tests + script syntax + Skill Ops audit + current-rule hygiene |
 | `v4.2.2-trend-radar` | Trend Radar / shared V4 Application Center navigation / Skill Store | 2026-07-19 | 2026-07-19T18:40:00+08:00 | TRADAR-V1.0.0-factual-change-explorer / Skill Store v1.6.4 | Report prose, opportunity/trend scoring, heat or maturity judgments, community/viewpoint/V3 inputs, missing coverage disclosure, or untraceable period records returning to Trend Radar | Trend Radar evidence/count gate + entity-kind tests + frontstage tests + Skill Ops + version consistency + code/rule audit + GitHub Pages deploy |
@@ -225,6 +226,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| OMAP-V1.1.0-direction-cards | 2026-07-25T15:37:44+08:00 | Adds three human-reviewed Direction Cards to Opportunity Map. Each card states a falsifiable startup hypothesis, unknowns, a first validation action, and accepted Signal Card/original-source evidence without changing Trend Radar or Data Center canonical facts. | current application |
 | `v4.2.3-relationship-map` | 2026-07-25T13:44:11+08:00 | Renames Entity Index and Relationship Index to Industry Dossiers and Relationship Map, adds an entity-centered one-hop graph, evidence detail rail, relationship timeline, 7/30-day change filters, and split Claim/source-backed relationship detail loading while preserving the V4 factual boundary. | current public presentation |
 | HERMES-V4.0-control-plane-watchdog | 2026-07-25T10:20:00+08:00 | Retires Hermes daily lane supervision and compatibility-Card inspection. Hermes now checks only whether the morning, recovery, and closure controllers left readable reports; routine failures use the neutral production incident registry and Closure/Codex repair path. | current automation governance |
 | V4.2 governance alignment / PERSON-REVIEW-V1.0 / Skill Store v1.6.3 | 2026-07-18T17:19:02+08:00 | Aligns the current version ledger, dashboard, supervision, column Skills, taxonomy routing, and release gates while preserving SITE-V4.2.0 canonical data and 31 reviewed natural-person profiles. | current governance |

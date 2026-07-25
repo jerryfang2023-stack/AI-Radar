@@ -15,7 +15,7 @@ This file keeps only presentation lessons that remain compatible with `REPORTS-V
 ## Do Not Restore
 
 - Opportunity Map matrices, Relation Paths, relationship networks, Trend Candidates, or History blocks on `intelligence-map.html`.
-- Shared IMAP metadata or `OMAP-V1.0.0-independent-column` on report pages.
+- Shared IMAP metadata or `OMAP-V1.1.0-direction-cards` on report pages.
 - V3 top navigation, retired return buttons, backend method/version footers, duplicate numbered headings, or long hero decks.
 - DeepSeek editing HTML, navigation, CSS, or version metadata.
 
@@ -23,5 +23,5 @@ This file keeps only presentation lessons that remain compatible with `REPORTS-V
 
 - Main site metadata remains `SITE-V4.2.0-entity-history`.
 - Industry Reports and report details use `REPORTS-V1.0.0-periodic-report-center`.
-- Opportunity Map is independent and uses `OMAP-V1.0.0-independent-column` only on `opportunity-map.html`.
+- Opportunity Map is independent and uses `OMAP-V1.1.0-direction-cards` only on `opportunity-map.html`.
 - After project Skill changes, sync `.skill-store`, rebuild the Skill Registry/dashboard, and run the frontstage regression gate.

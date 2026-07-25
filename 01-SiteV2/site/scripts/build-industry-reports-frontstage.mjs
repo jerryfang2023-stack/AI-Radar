@@ -125,6 +125,8 @@ function cardFromFile(file) {
     sourceUrl,
     sourceName: source,
     subject: cardSubject(scalar(fm, "signal_owner"), title, source),
+    sourceExcerpt: nestedScalar(fm, "opportunity_signals", "source_excerpt")
+      || nestedScalar(fm, "frontend", "sourceExcerpt"),
     opportunitySignals: Object.fromEntries(mapFields.map((field) => [
       field,
       nestedList(fm, "opportunity_signals", field),
@@ -186,9 +188,59 @@ function orderedSignalValues(taxonomyFile, card, field) {
     .slice(0, 3);
 }
 
+function readDirectionCardConfig(file) {
+  if (!fs.existsSync(file)) return { schema_version: "direction-cards-v1", cards: [] };
+  return JSON.parse(fs.readFileSync(file, "utf8"));
+}
+
+function buildDirectionCards(file, cards, sourceCards) {
+  const config = readDirectionCardConfig(file);
+  const cardsById = new Map(cards.map((card) => [card.id, card]));
+  const sourceCardsById = new Map(sourceCards.map((card) => [card.id, card]));
+  return (config.cards || []).flatMap((direction) => {
+    const evidence = [...new Set(direction.evidence_card_ids || [])]
+      .map((id) => cardsById.get(id))
+      .filter(Boolean)
+      .map((card) => ({
+        id: card.id,
+        title: card.title,
+        category: card.category,
+        categoryLabel: card.categoryLabel,
+        date: card.date,
+        sourceUrl: card.sourceUrl,
+        sourceName: card.sourceName,
+        subject: card.subject,
+        sourceExcerpt: sourceCardsById.get(card.id)?.sourceExcerpt || "",
+      }));
+    const minimum = Number(direction.minimum_evidence || 2);
+    if (!direction.id || !direction.title || evidence.length < minimum) return [];
+    return [{
+      id: direction.id,
+      title: direction.title,
+      hypothesis: direction.hypothesis,
+      status: direction.status,
+      buyer: direction.buyer,
+      task: direction.task,
+      pain: direction.pain,
+      productWedge: direction.product_wedge,
+      currentAlternatives: direction.current_alternatives,
+      whyNow: direction.why_now,
+      unknowns: direction.unknowns || [],
+      validationAction: direction.validation_action,
+      reviewedAt: direction.reviewed_at || "",
+      evidenceCount: evidence.length,
+      actorCount: new Set(evidence.map((card) => card.subject).filter(Boolean)).size,
+      evidence,
+    }];
+  });
+}
+
 export function buildIndustryReportsData(
   root = defaultRoot,
-  { taxonomyFile = path.join(root, "agent-workflow/product/opportunity-signal-taxonomy.json") } = {},
+  {
+    taxonomyFile = path.join(root, "agent-workflow/product/opportunity-signal-taxonomy.json"),
+    directionFile = path.join(root, "agent-workflow/product/opportunity-direction-cards.json"),
+  } = {},
 ) {
   const allCards = acceptedCards(root);
   const activeDate = allCards.map((card) => card.date).sort().at(-1) || "";
@@ -205,26 +257,31 @@ export function buildIndustryReportsData(
         case: "案例",
       }[card.category] || "",
       date: card.date,
+      sourceUrl: card.sourceUrl,
       sourceName: card.sourceName || "",
       subject: card.subject || "",
       opportunitySignals: {
         labels: Object.fromEntries(mapFields.map((field) => [field, orderedSignalValues(taxonomyFile, card, field)])),
       },
     }));
+  const directionCards = buildDirectionCards(directionFile, cards, allCards);
 
   return {
     meta: {
-      schemaVersion: "OPPORTUNITY-MAP-FRONTSTAGE-V1.0",
+      schemaVersion: "OPPORTUNITY-MAP-FRONTSTAGE-V1.1",
       siteVersion: "SITE-V4.2.0-entity-history",
-      applicationVersion: "OMAP-V1.0.0-independent-column",
-      opportunityMapVersion: "OMAP-V1.0.0-independent-column",
+      applicationVersion: "OMAP-V1.1.0-direction-cards",
+      opportunityMapVersion: "OMAP-V1.1.0-direction-cards",
+      directionCardVersion: "DIRECTION-CARD-V1.0-reviewed-hypothesis",
       activeDate,
       generatedAt: `${activeDate}T00:00:00.000Z`,
       windowDays: 30,
       cardCount: cards.length,
+      directionCardCount: directionCards.length,
       sourceAdapter: "accepted-signal-card-assets",
     },
     cards,
+    directionCards,
   };
 }
 
@@ -245,5 +302,6 @@ if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
     output: path.relative(root, output).replace(/\\/gu, "/"),
     activeDate: data.meta.activeDate,
     cards: data.cards.length,
+    directionCards: data.directionCards.length,
   }, null, 2));
 }

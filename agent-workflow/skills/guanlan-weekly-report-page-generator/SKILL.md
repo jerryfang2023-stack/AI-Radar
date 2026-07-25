@@ -79,7 +79,7 @@ For detailed rules, load:
    - Reports Center column version lives in `meta[name="wavesight-column-version"]` and must be `REPORTS-V1.0.0-periodic-report-center` for this release.
    - Weekly source path lives in `meta[name="weekly-report-source"]`.
    - Update `context/version-ledger.md` only for accepted release changes.
-   - Never emit `OMAP-V1.0.0-independent-column` from weekly report pages; that version belongs only to Opportunity Map.
+   - Never emit `OMAP-V1.1.0-direction-cards` from weekly report pages; that version belongs only to Opportunity Map.
 
 6. Validate.
    - Run syntax checks for touched JS if any.

@@ -2188,7 +2188,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "OMAP",
         "label": "Opportunity Map",
-        "value": "OMAP-V1.0.0-independent-column"
+        "value": "OMAP-V1.1.0-direction-cards"
       },
       {
         "key": "TRADAR",
