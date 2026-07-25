@@ -1,11 +1,11 @@
 {
-  "ok": false,
-  "status": "failed",
+  "ok": true,
+  "status": "waiting",
   "date": "2026-07-25",
-  "generated_at": "2026-07-25T02:03:54.974Z",
+  "generated_at": "2026-07-25T03:21:19.656Z",
   "timezone": "Asia/Shanghai",
-  "hermes_mode": "auto",
-  "hermes_write": "enabled",
+  "hermes_mode": "false",
+  "hermes_write": "disabled",
   "lanes": [
     {
       "id": "skill_ops",
@@ -33,7 +33,7 @@
       "id": "community_intelligence",
       "label": "Community Intelligence",
       "schedule": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication closure",
-      "status": "manual_required",
+      "status": "warning",
       "evidence": {
         "generatedAt": "2026-07-25T01:17:08.019Z",
         "generatedDate": "2026-07-25",
@@ -59,152 +59,135 @@
           "available": true,
           "latest_run": null,
           "same_date_run_count": 0,
-          "prs": [],
+          "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": "2026-07-25T02:07:59Z",
+              "number": 395,
+              "state": "MERGED",
+              "updatedAt": "2026-07-25T02:07:59Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/395"
+            }
+          ],
           "pr_warning": ""
         },
         "publication": {
-          "communityPrMerged": false,
+          "communityPrMerged": true,
           "communityPrOpen": false,
-          "communityPrUrl": "",
+          "communityPrUrl": "https://github.com/jerryfang2023-stack/AI-Radar/pull/395",
           "publishedOnOriginMain": false
         }
       },
-      "problems": [
-        {
-          "message": "no same-date Community Intelligence publish workflow after the morning publication window",
-          "severity": "manual_required"
-        }
-      ],
+      "problems": [],
       "waiting": [],
       "warnings": [
         "community scheduled task last result is 3221225786, but same-date data and gate are healthy"
       ],
-      "actions": [
-        "inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-community-intelligence-pr.yml` only after local collection and archive pass",
-        "send Codex a community_intelligence repair request with log and gate report path"
-      ]
+      "actions": []
     },
     {
       "id": "business_signals",
       "label": "Business Signals / Intelligence Map / Dashboard",
       "schedule": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
-      "status": "failed",
+      "status": "passed",
       "evidence": {
-        "activeDate": "2026-07-24",
-        "generatedAt": "2026-07-24T13:21:27.478Z",
-        "publicCardCount": 0,
-        "frontstageSelected": 0,
-        "supplyConstrained": null,
-        "coreCandidateCount": null,
-        "qualifiedCount": null,
-        "signalCardFiles": 0,
+        "activeDate": "2026-07-25",
+        "generatedAt": "2026-07-25T02:45:57.978Z",
+        "publicCardCount": 27,
+        "frontstageSelected": 27,
+        "supplyConstrained": false,
+        "coreCandidateCount": 0,
+        "qualifiedCount": 27,
+        "signalCardFiles": 27,
         "titleTranslations": {
           "translationDb": "01-SiteV2/content/11-databases/source-title-translations.json",
-          "missingCount": 0,
-          "missingSourceTitles": []
+          "missingCount": 2,
+          "missingSourceTitles": [
+            "Cascade raises $3.5M to help construction firms find and win projects | TechCrunch",
+            "Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz"
+          ]
         },
-        "manifest": "missing",
-        "qualityGateStatus": "missing",
-        "readinessReport": "missing",
+        "manifest": "agent-workflow/reports/2026-07-25-persistent-asset-manifest.json",
+        "qualityGateStatus": "passed",
+        "readinessReport": "agent-workflow/reports/2026-07-25-daily-production-chain-readiness.md",
         "github": {
           "available": true,
           "latest_run": {
             "conclusion": "failure",
-            "createdAt": "2026-07-25T01:47:06Z",
-            "databaseId": 30139179774,
+            "createdAt": "2026-07-25T02:15:58Z",
+            "databaseId": 30140109871,
             "event": "workflow_dispatch",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-07-25T01:58:28Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30139179774"
+            "updatedAt": "2026-07-25T02:28:03Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30140109871"
           },
-          "same_date_run_count": 1,
+          "same_date_run_count": 2,
           "prs": [],
           "pr_warning": ""
         },
         "publicationClosure": {
           "checkpoint": "09:50",
-          "businessDataSameDate": false,
-          "cardCount": 0,
+          "businessDataSameDate": true,
+          "cardCount": 27,
           "businessPrMerged": false,
           "businessPrUrl": "",
-          "pagesSuccess": false,
+          "pagesSuccess": true,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30139546231",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30142066066",
           "localSync": {
             "available": true,
             "clean": true,
             "dirtyFiles": 0,
-            "ignoredReportFiles": 0,
-            "head": "ac6d3728e05d09480122d6fd62003b07e787f645",
-            "originMain": "2975b56d3384f4c69fce1bfc7bee3fe2a11218a9",
+            "ignoredReportFiles": 4,
+            "head": "e2571b179080ca6d6782f891ce699c037ab694ff",
+            "originMain": "a64f9bd8d309faa51cc4af6c14f99607934c0d21",
             "fastForwarded": false,
             "warning": ""
           }
         },
-        "failedWorkflowSupersededByPublication": false,
+        "failedWorkflowSupersededByPublication": true,
         "dataHealth": {
           "dataFile": "01-SiteV2/site/data/v3-data-observation-desk.json",
           "graphFile": "01-SiteV2/site/data/intelligence-graph-index.json",
-          "activeDateMatches": false,
-          "publicCardCount": 0,
-          "frontstageSelected": 0,
-          "signalCardFiles": 0,
-          "coreSignalCardsHealthy": false,
-          "qualityGateStatus": "missing",
-          "healthy": false
+          "activeDateMatches": true,
+          "publicCardCount": 27,
+          "frontstageSelected": 27,
+          "signalCardFiles": 27,
+          "coreSignalCardsHealthy": true,
+          "qualityGateStatus": "passed",
+          "healthy": true
         },
         "diagnosis": {
-          "category": "no_run_or_stale_assets",
-          "reason": "activeDate is 2026-07-24, expected 2026-07-25",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
+          "category": "passed",
+          "reason": "same-date Business data, public Cards, graph, and gate are healthy",
+          "neededAction": "none",
           "preRerunChecklist": {
-            "activeDate": "2026-07-24",
-            "publicCardCount": 0,
-            "frontstageSelected": 0,
-            "signalCardFiles": 0,
+            "activeDate": "2026-07-25",
+            "publicCardCount": 27,
+            "frontstageSelected": 27,
+            "signalCardFiles": 27,
             "rawCount": null,
             "poolCount": null,
             "routedPoolCount": null,
-            "corePoolCount": null,
+            "corePoolCount": 0,
             "nonLargeCorePoolCount": null,
             "sourceArtifactFreshness": "not_checked_by_daily_supervision",
-            "missingSourceTitleTranslations": [],
+            "missingSourceTitleTranslations": [
+              "Cascade raises $3.5M to help construction firms find and win projects | TechCrunch",
+              "Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz"
+            ],
             "businessPrMerged": false,
-            "pagesState": "skipped",
+            "pagesState": "success",
             "localDirtyFiles": 0,
             "localFastForwarded": false
           }
         }
       },
-      "problems": [
-        {
-          "message": "business-signal activeDate is 2026-07-24, expected 2026-07-25",
-          "severity": "failed"
-        },
-        {
-          "message": "public Card count is 0 for 2026-07-25",
-          "severity": "failed"
-        },
-        {
-          "message": "no same-date signal Card files or frontstage Core Signal Cards",
-          "severity": "failed"
-        },
-        {
-          "message": "Business Signals workflow conclusion is failure",
-          "severity": "failed"
-        }
-      ],
+      "problems": [],
       "waiting": [],
-      "warnings": [
-        "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-25-persistent-asset-manifest.json",
-        "missing quality gate report: agent-workflow/reports/2026-07-25-guanlan-monitor-quality-gate.md",
-        "missing readiness report: agent-workflow/reports/2026-07-25-daily-production-chain-readiness.md",
-        "latest same-date GitHub Pages workflow conclusion is skipped"
-      ],
-      "actions": [
-        "send Codex a business_signals repair request with failed gate and report path"
-      ]
+      "warnings": [],
+      "actions": []
     },
     {
       "id": "first_line_viewpoints",
@@ -214,14 +197,14 @@
       "evidence": {
         "generatedAt": "2026-07-25T01:32:06.459Z",
         "generatedDate": "2026-07-25",
-        "dataSource": "origin/main",
-        "localGeneratedDate": "2026-07-24",
+        "dataSource": "working_tree",
+        "localGeneratedDate": "2026-07-25",
         "feedGeneratedAt": "2026-07-24T07:10:08.109Z",
         "remarks": 47,
         "builders": 15,
         "gateStatus": "passed",
-        "gateReport": "origin/main:agent-workflow/reports/2026-07-25-follow-builders-data-gate.md",
-        "manifest": "origin/main:agent-workflow/reports/2026-07-25-first-line-viewpoints-manifest.md",
+        "gateReport": "agent-workflow/reports/2026-07-25-follow-builders-data-gate.md",
+        "manifest": "agent-workflow/reports/2026-07-25-first-line-viewpoints-manifest.md",
         "manifestHealthy": true,
         "historicalEvidenceHealthy": false,
         "github": {
