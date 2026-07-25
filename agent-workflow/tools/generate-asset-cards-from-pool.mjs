@@ -1036,10 +1036,12 @@ function stripLeadingSourceTitleRepeats(value = "", sourceTitle = "") {
 function rawVisibleExcerptFromSection(section, excluded = []) {
   const raw = readRawJson(section);
   const sourceTitle = originalSourceTitleFromSection(section);
+  const excludedItems = excluded.map((item) => String(item || "").trim()).filter(Boolean);
   const excludedKeys = excluded.map(normalizedSignalText).filter(Boolean);
   const isTooSimilar = (item) => {
     const normalized = normalizedSignalText(item);
-    return excludedKeys.some((excludedKey) => {
+    return excludedItems.some((excludedItem) => cardDetailsTooSimilar(item, excludedItem))
+      || excludedKeys.some((excludedKey) => {
       if (normalized === excludedKey) return true;
       const shorter = normalized.length <= excludedKey.length ? normalized : excludedKey;
       const longer = normalized.length > excludedKey.length ? normalized : excludedKey;
@@ -3526,9 +3528,9 @@ function signalCard(spec, section) {
     .filter((item) => !isSameSourcePoint(item, sourceFact) && !isSameSourcePoint(item, valueSummary) && !isSameSourcePoint(item, spec.title) && !isSameSourcePoint(item, titleFact))
     .slice(0, 4);
   let sourceExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...candidateOriginalPoints, originalSourceTitleFromSection(section)]);
-  if (sourceExcerpt && isSameSourcePoint(sourceExcerpt, sourceFact)) {
+  if (sourceExcerpt && cardDetailsTooSimilar(sourceExcerpt, sourceFact)) {
     const alternateExcerpt = rawVisibleExcerptFromSection(section, [sourceFact, valueSummary, ...candidateOriginalPoints, originalSourceTitleFromSection(section), sourceExcerpt]);
-    if (alternateExcerpt && !isSameSourcePoint(alternateExcerpt, sourceFact)) {
+    if (alternateExcerpt && !cardDetailsTooSimilar(alternateExcerpt, sourceFact)) {
       sourceExcerpt = alternateExcerpt;
     }
   }
@@ -3608,6 +3610,18 @@ function signalCard(spec, section) {
     }
     if (agreementPoints.length) originalPoints = agreementPoints;
   }
+  if (!sourceExcerpt || cardDetailsTooSimilar(sourceExcerpt, sourceFact)) {
+    const alternateExcerpt = rawVisibleExcerptFromSection(
+      section,
+      [sourceFact, valueSummary, ...originalPoints, spec.title, originalSourceTitleFromSection(section), sourceExcerpt],
+    );
+    sourceExcerpt = alternateExcerpt && !cardDetailsTooSimilar(alternateExcerpt, sourceFact)
+      ? alternateExcerpt
+      : "本条证据未提供可与新闻事实独立区分的第二段原文。";
+  }
+  originalPoints = originalPoints
+    .filter((item) => !cardDetailsTooSimilar(item, sourceExcerpt))
+    .slice(0, 4);
 
   const yamlString = (input = "") => JSON.stringify(String(input || ""));
   const poolRoutes = poolRoutesForPrimaryRaw(section).map((route) => `    - ${route}`).join("\n");
@@ -3673,7 +3687,7 @@ ${valueSummary}
 
 ## 可见原文片段
 
-${sourceExcerpt || sourceFact}
+${sourceExcerpt}
 
 ## 证据边界
 
@@ -4214,6 +4228,18 @@ function runQualityRegressionFixtures() {
     const normalized = Object.values(details).map(normalizedDetail);
     assert.ok(normalized.every(Boolean), `${poolRef} must render all four public detail fields`);
     assert.equal(new Set(normalized).size, normalized.length, `${poolRef} public detail fields must be distinct: ${JSON.stringify(details)}`);
+    const detailEntries = Object.entries(details);
+    for (let leftIndex = 0; leftIndex < detailEntries.length; leftIndex += 1) {
+      for (let rightIndex = leftIndex + 1; rightIndex < detailEntries.length; rightIndex += 1) {
+        const [leftName, leftValue] = detailEntries[leftIndex];
+        const [rightName, rightValue] = detailEntries[rightIndex];
+        assert.equal(
+          cardDetailsTooSimilar(leftValue, rightValue),
+          false,
+          `${poolRef} ${leftName}/${rightName} must remain substantively distinct`,
+        );
+      }
+    }
     assert.notEqual(normalizedDetail(details["新闻事实"]), normalizedDetail(spec.title), `${poolRef} news fact must not repeat the title`);
   }
 

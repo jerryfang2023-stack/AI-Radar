@@ -1,38 +1,34 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-25T02:30:07.592Z",
+  "generated_at": "2026-07-25T02:43:02.090Z",
   "date": "2026-07-25",
-  "action": "Separate V4 core and compatibility test stages",
+  "action": "Repair Signal Card detail distinctness",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Split the site test commands so Industry Reports compatibility checks run only after the compatibility projection is rebuilt.",
+  "summary": "Aligned visible excerpt selection and generator fixtures with the editorial gate's substantive duplicate semantics.",
   "contexts": [],
   "changed_files": [
-    "package.json",
-    ".github/workflows/daily-persistent-assets-pr.yml",
-    "agent-workflow/tools/assert-business-signals-pipeline-policy.mjs"
+    "agent-workflow/tools/generate-asset-cards-from-pool.mjs"
   ],
   "outputs": [],
   "checks": [
-    "npm run test:data-center-site:core",
-    "npm run test:data-center-site:compatibility",
-    "node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs",
+    "Business Signal Card editorial regression fixtures",
+    "Business Signals pipeline policy",
     "git diff --check"
   ],
   "issues": [
-    "The first repair moved the date assertion to the correct test file but that file was still included in the V4 core test command"
+    "One 2026-07-25 product Card repeated the news fact as its visible source excerpt"
   ],
   "risks": [
-    "Workflow and package scripts must keep the compatibility suite after the downstream build"
+    "Today production batch must be regenerated from the accepted Raw and Pool snapshot after this repair merges"
   ],
   "lessons": [
-    "Test file ownership and test command scheduling must both match pipeline stage ownership"
+    "Exact-string checks are insufficient when the release gate blocks shared long prefixes and contained detail text"
   ],
   "reusable_rules": [
-    "Do not include Industry Reports compatibility tests in the V4 materialization command",
-    "Run compatibility tests after rebuilding V3 and Industry Reports projections"
+    "Use cardDetailsTooSimilar consistently in excerpt selection and regression fixtures"
   ],
   "retired_flags": [],
   "notes": []
