@@ -14,6 +14,7 @@ function includesAny(text, patterns) {
 }
 
 const config = JSON.parse(read("01-SiteV2/content/11-databases/business-signals-gate-v3.json"));
+const packageJson = JSON.parse(read("package.json"));
 const workflow = read(".github/workflows/daily-persistent-assets-pr.yml");
 const dryRunWorkflow = read(".github/workflows/daily-production-chain-dry-run.yml");
 const monitorWrapper = read("agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs");
@@ -21,6 +22,8 @@ const monitor = read("agent-workflow/tools/run-guanlan-daily-monitor.mjs");
 const cardGenerator = read("agent-workflow/tools/generate-asset-cards-from-pool.mjs");
 const qualityGates = read("agent-workflow/tools/run-quality-gates.mjs");
 const dataCenterFrontstageTest = read("agent-workflow/tools/tests/data-center-frontstage.test.mjs");
+const coreSiteTestCommand = packageJson.scripts?.["test:data-center-site:core"] || "";
+const compatibilitySiteTestCommand = packageJson.scripts?.["test:data-center-site:compatibility"] || "";
 const dailySupervision = read("agent-workflow/tools/write-daily-supervision-report.mjs");
 const editorialGate = read("agent-workflow/tools/assert-signal-card-editorial-quality.mjs");
 const healthDispatch = read("agent-workflow/tools/run-business-signals-health-dispatch.mjs");
@@ -97,6 +100,15 @@ if (/source-title-translations\.json|Aina raises \$5\.5M with new hardware inter
 }
 if (/v3-data-observation-desk\.json|legacyDesk|legacyCurrentCards/u.test(dataCenterFrontstageTest)) {
   problems.push("Data Center V4 core tests depend on downstream compatibility assets before the compatibility stage runs");
+}
+if (/industry-reports-frontstage\.test\.mjs/u.test(coreSiteTestCommand)) {
+  problems.push("Data Center V4 core test command still runs the downstream Industry Reports compatibility suite");
+}
+if (!/industry-reports-frontstage\.test\.mjs/u.test(compatibilitySiteTestCommand)) {
+  problems.push("Industry Reports compatibility tests are not isolated in the compatibility test command");
+}
+if (!/npm run test:data-center-site:compatibility/u.test(workflow)) {
+  problems.push("production workflow does not run compatibility tests after rebuilding compatibility projections");
 }
 if (!/failedWorkflowSupersededByPublication/u.test(dailySupervision)) {
   problems.push("daily supervision does not close an earlier failed Business run after a later healthy Pages publication");
