@@ -1352,6 +1352,92 @@ export function writeBundle(bundle, date, destination = path.join(outputRoot, da
   return destination;
 }
 
+export function repairExistingEntityLinks(bundle, generatedAt = new Date().toISOString()) {
+  const claimsById = new Map((bundle.claims || []).map((claim) => [claim.claim_id, claim]));
+  const rawBySource = new Map((bundle.raw_documents || []).map((document) => [document.source_artifact_id, document]));
+  const entitiesById = new Map((bundle.entities || []).map((entity) => [entity.entity_id, entity]));
+  const mentionIds = new Set((bundle.entity_mentions || []).map((mention) => mention.mention_id));
+  const repairedEventIds = [];
+
+  for (const event of bundle.canonical_events || []) {
+    if (event.entities?.length) continue;
+    const claims = (event.claim_refs || []).map((id) => claimsById.get(id)).filter(Boolean);
+    const claimEvidence = claims.map((claim) => claim.source_quote).join("\n");
+    const parsed = {
+      subject: event.relationship_subject || "",
+      action: event.action || event.event_type,
+      object: event.object || ""
+    };
+    const matches = organizationMentions(event.display_title_zh || "", parsed, event.event_type, claimEvidence);
+    if (!matches.length) continue;
+
+    const entityIds = [];
+    const rawDocument = (event.source_refs || []).map((id) => rawBySource.get(id)).find(Boolean);
+    for (const match of matches) {
+      const entityId = `EN-${hash(match.canonicalName.toLowerCase())}`;
+      entityIds.push(entityId);
+      const existing = entitiesById.get(entityId);
+      if (!existing) {
+        const entity = {
+          entity_id: entityId,
+          canonical_name: match.canonicalName,
+          entity_type: "organization_candidate",
+          aliases: match.mentionText !== match.canonicalName ? [match.mentionText] : [],
+          verification_status: match.verified ? "verified" : "candidate"
+        };
+        bundle.entities.push(entity);
+        entitiesById.set(entityId, entity);
+      } else if (match.mentionText !== match.canonicalName) {
+        existing.aliases = [...new Set([...(existing.aliases || []), match.mentionText])];
+        if (match.verified) existing.verification_status = "verified";
+      }
+      if (!rawDocument) continue;
+      const mentionOffset = Math.max(0, match.start);
+      const mentionId = `EM-${hash(`${rawDocument.raw_id}|${entityId}|${match.source}|${mentionOffset}`)}`;
+      if (!mentionIds.has(mentionId)) {
+        bundle.entity_mentions.push({
+          mention_id: mentionId,
+          entity_id: entityId,
+          raw_id: rawDocument.raw_id,
+          text: match.mentionText,
+          source: match.source,
+          start: mentionOffset,
+          end: mentionOffset + match.mentionText.length,
+          verification_status: match.verified ? "verified" : "candidate"
+        });
+        mentionIds.add(mentionId);
+      }
+      rawDocument.entity_mention_ids = [...new Set([...(rawDocument.entity_mention_ids || []), mentionId])];
+    }
+    event.entities = [...new Set(entityIds)];
+    event.missing_fields = (event.missing_fields || []).filter((field) => field !== "entities");
+    repairedEventIds.push(event.event_id);
+  }
+
+  const repairedIds = new Set(repairedEventIds);
+  for (const card of bundle.compatibility_cards || []) {
+    if (repairedIds.has(card.event_id)) {
+      card.missing_fields = (card.missing_fields || []).filter((field) => field !== "entities");
+    }
+  }
+  if (bundle.manifest) {
+    bundle.manifest.generated_at = generatedAt;
+    bundle.manifest.counts.entities = bundle.entities.length;
+    bundle.manifest.counts.entity_mentions = bundle.entity_mentions.length;
+  }
+  return { repaired_event_ids: repairedEventIds };
+}
+
+function loadExistingBundle(date) {
+  const destination = path.join(outputRoot, date);
+  const manifest = readJson(path.join(destination, "manifest.json"));
+  const bundle = { manifest };
+  for (const name of Object.keys(manifest.counts || {})) {
+    bundle[name] = readJson(path.join(destination, `${name.replace(/_/gu, "-")}.json`));
+  }
+  return bundle;
+}
+
 function loadRawEntries(date) {
   const dir = path.join(rawRoot, date);
   if (!fs.existsSync(dir)) throw new Error(`Raw originals directory not found: ${rel(dir)}`);
@@ -1364,6 +1450,13 @@ function loadRawEntries(date) {
 function main() {
   const date = arg("date", availableDates().at(-1));
   if (!date) throw new Error("No Raw date is available. Pass --date=YYYY-MM-DD.");
+  if (arg("repair-existing-entity-links") === "true") {
+    const bundle = loadExistingBundle(date);
+    const repair = repairExistingEntityLinks(bundle);
+    const destination = writeBundle(bundle, date);
+    console.log(JSON.stringify({ ok: true, date, output: rel(destination), ...repair, counts: bundle.manifest.counts }, null, 2));
+    return;
+  }
   const taxonomy = readJson(taxonomyPath);
   if (taxonomy.taxonomy_version !== VERSION.tag) throw new Error(`Expected ${VERSION.tag}, received ${taxonomy.taxonomy_version}`);
   const bundle = buildBundle(loadRawEntries(date), taxonomy, date);

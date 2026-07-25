@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-25T02:50:23.270Z",
+  "generated_at": "2026-07-25T02:55:35.991Z",
   "date": "2026-07-25",
-  "action": "Resolve current V4 organization aliases",
+  "action": "Add accepted-bundle entity link repair",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Added source-visible organization aliases for today's funding, public-sector, and AI data-center events so accepted events retain entity references.",
+  "summary": "Added a narrow repair mode that restores organization links in an accepted V4 bundle without discarding model-assisted events.",
   "contexts": [],
   "changed_files": [
     "agent-workflow/tools/build-data-center-v4.mjs",
@@ -19,16 +19,16 @@
     "git diff --check"
   ],
   "issues": [
-    "Three accepted 2026-07-25 canonical events had no entity reference"
+    "Rebuilding today's bundle without the workflow-only model-assist snapshot would remove accepted events"
   ],
   "risks": [
-    "The accepted daily V4 bundle must be rebuilt after this repair merges"
+    "Repair mode must remain limited to events with empty entity references and source-visible known aliases"
   ],
   "lessons": [
-    "Stable organizations named in mixed Chinese and English commercial titles need explicit aliases before event publication"
+    "Targeted recovery must preserve accepted model-assisted event rows when their transient proposal snapshot is not published"
   ],
   "reusable_rules": [
-    "Add source-visible aliases with a regression fixture when a current accepted event has no organization entity"
+    "Use repair-existing-entity-links for accepted bundles instead of a lossy full rebuild"
   ],
   "retired_flags": [],
   "notes": []
