@@ -1915,7 +1915,7 @@ body[data-dc-view="community"] .dc-source-link:active {
   justify-content: space-between;
 }
 
-.dc-relation-page-head > div:first-child {
+.dc-relation-page-head > .dc-relation-heading {
   max-width: 760px;
 }
 
@@ -1932,13 +1932,22 @@ body[data-dc-view="community"] .dc-source-link:active {
   letter-spacing: var(--gl-letter-label);
 }
 
-.dc-relation-page-head h1 {
+.dc-relation-title-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 20px;
   margin-top: 12px;
 }
 
+.dc-relation-page-head h1 {
+  flex: 0 0 auto;
+}
+
 .dc-relation-page-head p {
+  flex: 1 1 460px;
   max-width: 720px;
-  margin: 8px 0 0;
+  margin: 0;
   color: var(--gl-gray);
   font-size: var(--gl-type-body-size);
   line-height: var(--gl-type-body-line);
