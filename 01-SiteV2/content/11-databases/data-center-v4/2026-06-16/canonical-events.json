@@ -6,6 +6,7 @@
     "disclosed_at": "2026-06-15T14:34:45.000Z",
     "entities": [
       "EN-3ccbd9105a45d8fc",
+      "EN-e9b67bdfb6ae6a2e",
       "EN-8147e6fed86d42c1"
     ],
     "action": "收购",
@@ -146,7 +147,7 @@
   },
   {
     "event_type": "model_release",
-    "event_status": "announced",
+    "event_status": "rumored",
     "event_time": "2026-06-15T23:22:04.000Z",
     "disclosed_at": "2026-06-15T23:22:04.000Z",
     "entities": [
@@ -169,13 +170,15 @@
       "SA-eb6b3548f3e969a5",
       "SA-fd5da1ce18b097d5"
     ],
-    "conflicts": [],
+    "conflicts": [
+      "CF-aae8b6aa0da7f103"
+    ],
     "missing_fields": [],
     "update_history": [
       {
         "source_ref": "SA-eb6b3548f3e969a5",
         "disclosed_at": "2026-06-15T23:22:04.000Z",
-        "status": "announced"
+        "status": "rumored"
       },
       {
         "source_ref": "SA-fd5da1ce18b097d5",
@@ -183,7 +186,7 @@
         "status": "announced"
       }
     ],
-    "publication_status": "verified",
+    "publication_status": "disputed",
     "event_id": "EV-aae8b6aa0da7f103",
     "display_title_zh": "MiniMax M3模型正式开源：原生多模态、百万上下文"
   },
@@ -193,7 +196,6 @@
     "event_time": "2026-06-15T17:25:17.048Z",
     "disclosed_at": "2026-06-15T17:25:17.048Z",
     "entities": [
-      "EN-047364b9be67f665",
       "EN-16912c2e35f7be68"
     ],
     "action": "research_result",
@@ -216,7 +218,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-1b9bd3d2cb0dc54e",
+    "event_id": "EV-de3f5938545ad83a",
     "display_title_zh": "下一代投机解码：DFlash 与 Spec V2"
   },
   {
@@ -263,8 +265,7 @@
     "event_time": "2026-06-15T21:35:55.000Z",
     "disclosed_at": "2026-06-15T21:35:55.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d",
-      "EN-1e4fdc17666edc33"
+      "EN-cb4754c48f8023d0"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.178 发布",
@@ -291,7 +292,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-f2acdcbe3b644340",
+    "event_id": "EV-4b81ffcfa0391750",
     "display_title_zh": "Claude Code v2.1.178 发布"
   },
   {
@@ -437,7 +438,7 @@
   },
   {
     "event_type": "lawsuit_settlement",
-    "event_status": "announced",
+    "event_status": "rumored",
     "event_time": "2026-06-15T23:58:40.000Z",
     "disclosed_at": "2026-06-15T23:58:40.000Z",
     "entities": [
@@ -467,10 +468,10 @@
       {
         "source_ref": "SA-3a9248cb0c0ce407",
         "disclosed_at": "2026-06-15T23:58:40.000Z",
-        "status": "announced"
+        "status": "rumored"
       }
     ],
-    "publication_status": "verified",
+    "publication_status": "disputed",
     "event_id": "EV-4beb890f0879aeaf",
     "display_title_zh": "美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼"
   },
@@ -761,7 +762,6 @@
     "disclosed_at": "2026-06-15T22:59:02.000Z",
     "entities": [
       "EN-4e721fae5963494d",
-      "EN-b5251b35f15bedc4",
       "EN-a4eee620f5a081bd"
     ],
     "action": "推出",
@@ -1003,5 +1003,39 @@
     "publication_status": "verified",
     "event_id": "EV-24a536bc53a87050",
     "display_title_zh": "赛力斯人形机器人\"小赛\"首次亮相，副总裁康波透露更多种类今年内登场"
+  },
+  {
+    "event_type": "deployment",
+    "event_status": "completed",
+    "event_time": "2026-06-15T14:06:58.000Z",
+    "disclosed_at": "2026-06-15T14:06:58.000Z",
+    "entities": [
+      "EN-b5251b35f15bedc4"
+    ],
+    "action": "上线",
+    "object": "：2 倍价格、最快 6 倍速",
+    "metrics": [],
+    "locations": [],
+    "claim_refs": [
+      "CL-ec8d685903e801b9",
+      "CL-92992bfdf97ed42a",
+      "CL-491283c4bfa0752d",
+      "CL-358016f0c2d9f737"
+    ],
+    "source_refs": [
+      "SA-b69d5e50fcef865c"
+    ],
+    "conflicts": [],
+    "missing_fields": [],
+    "update_history": [
+      {
+        "source_ref": "SA-b69d5e50fcef865c",
+        "disclosed_at": "2026-06-15T14:06:58.000Z",
+        "status": "completed"
+      }
+    ],
+    "publication_status": "verified",
+    "event_id": "EV-38ae953ddd53fe8d",
+    "display_title_zh": "月之暗面 Kimi K2.7 Code 模型高速版上线：2 倍价格、最快 6 倍速"
   }
 ]

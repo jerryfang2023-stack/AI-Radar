@@ -219,7 +219,7 @@
     "predicate": "model_release",
     "object": "：原生多模态、百万上下文",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -230,7 +230,7 @@
     "source_quote": "15、MiniMax M3 模型正式开源：原生多模态、百万上下文",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-8e15d6bf22070b22",
@@ -641,7 +641,7 @@
     "predicate": "lawsuit_settlement",
     "object": "IT之家 6 月 16 日消息，据路透社报道，美国一名联邦法官于当地时间周一驳回了埃隆 · 马斯克旗下人工智能企业 xAI 提起的诉讼。",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -652,7 +652,7 @@
     "source_quote": "IT之家 6 月 16 日消息，据路透社报道，美国一名联邦法官于当地时间周一驳回了埃隆 · 马斯克旗下人工智能企业 xAI 提起的诉讼。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-8b7415d9464e6680",
@@ -662,7 +662,7 @@
     "predicate": "lawsuit_settlement",
     "object": "该诉讼指控竞争对手萨姆 · 奥尔特曼创办的 OpenAI 窃取聊天机器人的商业机密。",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -673,7 +673,7 @@
     "source_quote": "该诉讼指控竞争对手萨姆 · 奥尔特曼创办的 OpenAI 窃取聊天机器人的商业机密。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-3d424d2cdae81355",
@@ -683,7 +683,7 @@
     "predicate": "lawsuit_settlement",
     "object": "这份最初于去年 9 月提交的诉讼，指控范围更广，称多名 xAI 员工跳槽至 OpenAI 时，带走了源代码等各类保密资料，构成不正当窃取。",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -694,7 +694,7 @@
     "source_quote": "这份最初于去年 9 月提交的诉讼，指控范围更广，称多名 xAI 员工跳槽至 OpenAI 时，带走了源代码等各类保密资料，构成不正当窃取。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-bd63b64d5515d397",
@@ -704,7 +704,7 @@
     "predicate": "lawsuit_settlement",
     "object": "本次周一的裁决，是马斯克四周内第二次在与 OpenAI 的法律交锋中败诉。",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "rumored",
       "sequence": 4
     },
     "source_span": {
@@ -715,7 +715,7 @@
     "source_quote": "本次周一的裁决，是马斯克四周内第二次在与 OpenAI 的法律交锋中败诉。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-4b2d508b68827b34",
@@ -1793,6 +1793,90 @@
     "source_quote": "赛力斯还有更多种类的具身智能机器人在筹备 ，今年内将正式与大家见面。",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ec8d685903e801b9",
+    "raw_id": "RAW-f038e13ee6d8805b",
+    "claim_type": "deployment",
+    "subject": "月之暗面 Kimi K2.7 Code 模型高速版",
+    "predicate": "deployment",
+    "object": "：2 倍价格、最快 6 倍速",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f038e13ee6d8805b",
+      "start": 0,
+      "end": 111
+    },
+    "source_quote": "IT之家 6 月 15 日消息，月之暗面 Kimi 今日宣布， Kimi K2.7 Code 模型高速版上线，现已向 Kimi Code Beta 计划成员、Kimi API 开发者、Kimi Business 用户开放。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-92992bfdf97ed42a",
+    "raw_id": "RAW-f038e13ee6d8805b",
+    "claim_type": "deployment",
+    "subject": "月之暗面 Kimi K2.7 Code 模型高速版",
+    "predicate": "deployment",
+    "object": "：2 倍价格、最快 6 倍速",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f038e13ee6d8805b",
+      "start": 112,
+      "end": 219
+    },
+    "source_quote": "据介绍，高速版与 Kimi K2.7 Code 是相同模型，输出速度约为普通版的 5-6 倍，常规编程场景下（取输入长度中位数）输出速度约 180 Tokens/s ，短上下文场景可达 260 Tokens/s 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-491283c4bfa0752d",
+    "raw_id": "RAW-f038e13ee6d8805b",
+    "claim_type": "deployment",
+    "subject": "月之暗面 Kimi K2.7 Code 模型高速版",
+    "predicate": "deployment",
+    "object": "：2 倍价格、最快 6 倍速",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f038e13ee6d8805b",
+      "start": 220,
+      "end": 315
+    },
+    "source_quote": "Kimi K2.7 Code 高速版价格为 Kimi K2.7 Code 的两倍： 1M tokens 的标准输入和输出价格分别为 13 元和 54 元；命中缓存的输入价格为 2.6 元 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-358016f0c2d9f737",
+    "raw_id": "RAW-f038e13ee6d8805b",
+    "claim_type": "deployment",
+    "subject": "月之暗面 Kimi K2.7 Code 模型高速版",
+    "predicate": "deployment",
+    "object": "：2 倍价格、最快 6 倍速",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f038e13ee6d8805b",
+      "start": 316,
+      "end": 360
+    },
+    "source_quote": "据IT之家此前报道， Kimi K2.7 Code 编程模型发布于 6 月 12 日 。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   }
 ]

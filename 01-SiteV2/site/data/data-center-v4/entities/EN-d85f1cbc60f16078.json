@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1533,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-d85f1cbc60f16078",
+    "name": "Amkor Technology",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-91a444ff3955ad91"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-24",
+    "lastSeen": "2026-07-24",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-91a444ff3955ad91"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-91a444ff3955ad91",
+        "dataDate": "2026-07-24",
+        "date": "2026-07-24",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英伟达与 Amkor 达成 15 亿美元协议，共拓美国先进 AI 封装产能",
+        "displayTags": [],
+        "entityIds": [
+          "EN-d85f1cbc60f16078",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

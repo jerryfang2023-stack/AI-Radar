@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T06:10:03.737Z",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1516,
+    "eventCount": 1533,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -30,6 +30,7 @@
       "EN-e3b1bf3dab957ffe",
       "EN-2ab6d53e717a0e0d",
       "EN-f0fa30cd90f406c8",
+      "EN-6461cd2cb824a554",
       "EN-61cce404a45c3545",
       "EN-2a920347dfcf07a7",
       "EN-96eebba49dbbf422",
@@ -544,13 +545,15 @@
         "EN-2ab6d53e717a0e0d",
         "EN-accf304851de0ad2",
         "EN-8d4321d936320802",
-        "EN-f0fa30cd90f406c8"
+        "EN-f0fa30cd90f406c8",
+        "EN-6461cd2cb824a554"
       ],
       "entityNames": [
         "Nokia",
         "诺基亚",
         "NVIDIA",
-        "AI-RAN"
+        "AI-RAN",
+        "诺基亚与英伟达"
       ],
       "productName": "AI-RAN",
       "products": [
@@ -778,10 +781,12 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-c2fe5030e8c71d8a",
         "EV-c3f617e75d303f59",
         "EV-b4f69c41e23c7ce0",
         "EV-11b2293769081d4c",
         "EV-883d3b5f6d30eb48",
+        "EV-0d08cee88fe18483",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -794,6 +799,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-91a444ff3955ad91",
         "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-5b16886442234f81",
@@ -802,8 +808,8 @@
         "EV-b95539d17772a4ce",
         "EV-f63462e34ea40699",
         "EV-f4ead1a54e596bf8",
+        "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
-        "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
@@ -883,11 +889,11 @@
         "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -954,9 +960,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai",
         "TX-industry-telecommunications"
@@ -985,9 +991,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai",
         "TX-industry-telecommunications"
@@ -1019,10 +1025,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
@@ -1048,8 +1054,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-multimodal",
-        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-manufacturing",
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai",
         "TX-industry-telecommunications"
@@ -1078,7 +1084,9 @@
       "classificationRefs": [
         "TX-industry-telecommunications"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-07-16"
     },
@@ -1089,6 +1097,27 @@
       "typeLabel": "产品、模型与服务",
       "aliases": [],
       "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-1ff169120ed385f6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-telecommunications"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-6461cd2cb824a554",
+      "name": "诺基亚与英伟达",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
       "datasetScopes": [
         "canonical"
       ],
@@ -1118,9 +1147,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [
@@ -1144,6 +1173,7 @@
         "EV-7e1624d7df300713",
         "EV-3902d8bd5da40a20",
         "EV-01b003fbae67ae91",
+        "EV-2f9a87bd46248fe8",
         "EV-8fcb52bb6ec980af",
         "EV-860b90c017deaa59",
         "EV-6ce6b9c9780b97d9",
@@ -1152,13 +1182,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-20",
+      "firstSeen": "2026-05-01",
       "lastSeen": "2026-07-22"
     },
     {
@@ -1214,7 +1244,6 @@
         "EV-e941c32639167c23",
         "EV-e8d1de5c77f32b9c",
         "EV-6a7f9d990732e4e2",
-        "EV-6ae3594aadfcd3d8",
         "EV-bc4ac955cd26b969",
         "EV-88f4ee8cd57bdf42",
         "EV-ef7346378fcf9746",
@@ -1233,12 +1262,13 @@
         "EV-0b6cfbf67ba2da31",
         "EV-8b0f056571d68269",
         "EV-30ba1a24f74ccc6d",
+        "EV-4b545e310ded2baa",
         "EV-b4eb99a878be9bb2",
-        "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
         "EV-4dd25589d834060d",
         "EV-6617850e0b014051",
         "EV-c81cb21337a9bb98",
+        "EV-2f9a87bd46248fe8",
         "EV-056bb8c683ef60a4",
         "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
@@ -1284,7 +1314,7 @@
         "EV-f784003febc1d9eb",
         "EV-7e52d691a0553667",
         "EV-37cdd2fae39aaa2e",
-        "EV-1e7c76dae985100f",
+        "EV-3d1c01d3d1b0bba4",
         "EV-644337db309a1c82",
         "EV-9ae9aa86e51e64a2",
         "EV-be19904753c9c486",
@@ -1293,7 +1323,11 @@
         "EV-4e55361d8324dd49",
         "EV-97a8d86baa7fffc4",
         "EV-f89ba2b487d4abf1",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-bff418b2959f58fb",
         "EV-c5b8faec223a4caf",
+        "EV-da062d02015f99fb",
         "EV-9eb3693cc65fbca9",
         "EV-57597c92f7b183a9",
         "EV-5493c61bcbe58aa2",
@@ -1322,13 +1356,13 @@
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
@@ -1378,7 +1412,6 @@
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
         "EV-381b79897d896995",
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
@@ -1434,7 +1467,6 @@
         "EV-f7484ad16a6d1876",
         "EV-d2d1834222ab32d3",
         "EV-04c2ffd7f6b10126",
-        "EV-a9e22f22b7a2ec53",
         "EV-922de7a46f447efa",
         "EV-1f61330a3f828179",
         "EV-523e5de44cc464fb",
@@ -1451,6 +1483,7 @@
         "EV-1587a760d81451be",
         "EV-33e7429a7bc94840",
         "EV-022d1f3160d94048",
+        "EV-933294dfb2d19a67",
         "EV-7580a050ca19a8ae"
       ],
       "viewpointIds": [],
@@ -1459,12 +1492,12 @@
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-computer_use",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
@@ -1487,7 +1520,6 @@
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-cbc62794911ff31b",
         "EN-8d4321d936320802",
         "EN-10fce287b4b1464c"
       ],
@@ -1517,9 +1549,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-cybersecurity",
         "TX-industry-telecommunications"
       ],
@@ -1547,9 +1579,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [

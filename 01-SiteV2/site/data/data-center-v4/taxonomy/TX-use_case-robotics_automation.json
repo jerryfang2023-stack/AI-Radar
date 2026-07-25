@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T06:10:03.737Z",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1516,
+    "eventCount": 1533,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -33,6 +33,7 @@
       "EV-f79713437230562f",
       "EV-03d40407042d7986",
       "EV-7f92b7e410ed08f1",
+      "EV-b76705cd8461925f",
       "EV-03ab7d0b40d1e5b5",
       "EV-d4278191ae11f198",
       "EV-ed272c57e1513d3f",
@@ -41,7 +42,7 @@
       "EV-345c8a2cc00fe8ca",
       "EV-a69dd82a0512a294",
       "EV-c844ddabb8528896",
-      "EV-7fe139b107f9adc6",
+      "EV-c5a59cb4cc9d7e8e",
       "EV-d1e8407177e11fdc",
       "EV-941ba9ebdc43f20c",
       "EV-6b51b1b6fe22c540",
@@ -88,11 +89,13 @@
       "EN-a96df57737b74def",
       "EN-e2c64fbbaf48eeb2",
       "EN-68dce3237e10d795",
+      "EN-9b07ac3374166b76",
       "EN-0e6e48aba1669631",
       "EN-d77c36c05230024c",
       "EN-be548deba4a093d7",
       "EN-9c8ae69b84f21a2e",
       "EN-f0da91960830b394",
+      "EN-505ff8a27618ef39",
       "EN-c51e27d8efcff21f",
       "EN-dbd6a2f6ddb95ca7",
       "EN-954dc5d6516f127c",
@@ -100,6 +103,7 @@
       "EN-e3b1bf3dab957ffe",
       "EN-cbc62794911ff31b",
       "EN-a1b0d8a938903dc7",
+      "EN-29e1f755865493a8",
       "EN-522d3edeb64a7ca4",
       "EN-c608c4787821de1b",
       "EN-101a515191c6be9e",
@@ -1783,6 +1787,114 @@
       "publisher": "Artificial Intelligence News（RSS）"
     },
     {
+      "id": "EV-b76705cd8461925f",
+      "dataDate": "2026-07-24",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-24",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Flux 3 生成最长20秒原生音频视频，Black Forest Labs 首创",
+      "originalTitle": "Flux 3 generates videos with native audio up to 20 seconds long, a first for Black Forest Labs",
+      "subject": "Black Forest Labs",
+      "action": "model_release",
+      "object": "Flux 3",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-febedfcafee9d610",
+        "EN-0bd85984211bd173"
+      ],
+      "entityNames": [
+        "Black Forest Labs",
+        "Flux 3"
+      ],
+      "productName": "Flux 3",
+      "products": [
+        {
+          "name": "Flux 3",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/flux-3-generates-videos-with-native-audio-up-to-20-seconds-long-a-first-for-black-forest-labs",
+      "publisher": "The Decoder AI News"
+    },
+    {
       "id": "EV-03ab7d0b40d1e5b5",
       "dataDate": "2026-07-22",
       "date": "2026-07-21",
@@ -2239,23 +2351,16 @@
       ],
       "entityIds": [
         "EN-e2c64fbbaf48eeb2",
-        "EN-68dce3237e10d795",
-        "EN-9b07ac3374166b76"
+        "EN-68dce3237e10d795"
       ],
       "entityNames": [
         "Sunday Robotics",
-        "ACT-2",
-        "Robotics ACT-2"
+        "ACT-2"
       ],
       "productName": "ACT-2",
       "products": [
         {
           "name": "ACT-2",
-          "type": "模型",
-          "ownerNames": []
-        },
-        {
-          "name": "Robotics ACT-2",
           "type": "模型",
           "ownerNames": []
         }
@@ -2498,7 +2603,7 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-7fe139b107f9adc6",
+      "id": "EV-c5a59cb4cc9d7e8e",
       "dataDate": "2026-07-18",
       "date": "2026-07-17",
       "updatedDate": "2026-07-18",
@@ -2568,28 +2673,19 @@
         }
       ],
       "entityIds": [
-        "EN-53874092e000069b",
         "EN-9c8ae69b84f21a2e",
-        "EN-f0da91960830b394",
-        "EN-505ff8a27618ef39"
+        "EN-53874092e000069b",
+        "EN-f0da91960830b394"
       ],
       "entityNames": [
-        "腾讯",
         "Tencent",
-        "Hy-Embodied-VLM-1.0",
-        "VLM Hy-Embodied-VLM-1.0"
+        "腾讯",
+        "Hy-Embodied-VLM-1.0"
       ],
       "productName": "Hy-Embodied-VLM-1.0",
       "products": [
         {
           "name": "Hy-Embodied-VLM-1.0",
-          "type": "模型",
-          "ownerNames": [
-            "Tencent"
-          ]
-        },
-        {
-          "name": "VLM Hy-Embodied-VLM-1.0",
           "type": "模型",
           "ownerNames": [
             "Tencent"
@@ -3104,15 +3200,15 @@
         "EN-8d4321d936320802",
         "EN-cbc62794911ff31b",
         "EN-a1b0d8a938903dc7",
-        "EN-fbe26af59be95e52",
-        "EN-2b119dc14de9478d"
+        "EN-2b119dc14de9478d",
+        "EN-29e1f755865493a8"
       ],
       "entityNames": [
         "NVIDIA",
         "Amazon",
         "Jetson Thor",
-        "Blog",
-        "Advance Mainstream Robotics"
+        "Advance Mainstream Robotics",
+        "Edge AI"
       ],
       "productName": "Jetson Thor",
       "products": [
@@ -3124,14 +3220,14 @@
           ]
         },
         {
-          "name": "Blog",
+          "name": "Advance Mainstream Robotics",
           "type": "AI 硬件",
           "ownerNames": [
             "NVIDIA"
           ]
         },
         {
-          "name": "Advance Mainstream Robotics",
+          "name": "Edge AI",
           "type": "AI 硬件",
           "ownerNames": [
             "NVIDIA"
@@ -4490,7 +4586,6 @@
         "EV-9ad569c873451304",
         "EV-d5f276ad6b2ac9de",
         "EV-181b425d2a600cad",
-        "EV-2fea1664807824ce",
         "EV-70e3f88cb06a856c",
         "EV-cf5b2a0aff3914bd",
         "EV-54ecd52c69b97834",
@@ -4511,8 +4606,7 @@
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights"
+        "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [
         "EN-78624f0a98e78301"
@@ -4596,7 +4690,6 @@
         "EV-e941c32639167c23",
         "EV-e8d1de5c77f32b9c",
         "EV-6a7f9d990732e4e2",
-        "EV-6ae3594aadfcd3d8",
         "EV-bc4ac955cd26b969",
         "EV-88f4ee8cd57bdf42",
         "EV-ef7346378fcf9746",
@@ -4615,12 +4708,13 @@
         "EV-0b6cfbf67ba2da31",
         "EV-8b0f056571d68269",
         "EV-30ba1a24f74ccc6d",
+        "EV-4b545e310ded2baa",
         "EV-b4eb99a878be9bb2",
-        "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
         "EV-4dd25589d834060d",
         "EV-6617850e0b014051",
         "EV-c81cb21337a9bb98",
+        "EV-2f9a87bd46248fe8",
         "EV-056bb8c683ef60a4",
         "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
@@ -4666,7 +4760,7 @@
         "EV-f784003febc1d9eb",
         "EV-7e52d691a0553667",
         "EV-37cdd2fae39aaa2e",
-        "EV-1e7c76dae985100f",
+        "EV-3d1c01d3d1b0bba4",
         "EV-644337db309a1c82",
         "EV-9ae9aa86e51e64a2",
         "EV-be19904753c9c486",
@@ -4675,7 +4769,11 @@
         "EV-4e55361d8324dd49",
         "EV-97a8d86baa7fffc4",
         "EV-f89ba2b487d4abf1",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-bff418b2959f58fb",
         "EV-c5b8faec223a4caf",
+        "EV-da062d02015f99fb",
         "EV-9eb3693cc65fbca9",
         "EV-57597c92f7b183a9",
         "EV-5493c61bcbe58aa2",
@@ -4704,13 +4802,13 @@
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
@@ -4765,10 +4863,12 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-c2fe5030e8c71d8a",
         "EV-c3f617e75d303f59",
         "EV-b4f69c41e23c7ce0",
         "EV-11b2293769081d4c",
         "EV-883d3b5f6d30eb48",
+        "EV-0d08cee88fe18483",
         "EV-cafe435ddd007821",
         "EV-ed388875bc004add",
         "EV-bc9abd502c002102",
@@ -4781,6 +4881,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-91a444ff3955ad91",
         "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-5b16886442234f81",
@@ -4789,8 +4890,8 @@
         "EV-b95539d17772a4ce",
         "EV-f63462e34ea40699",
         "EV-f4ead1a54e596bf8",
+        "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
-        "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
@@ -4870,11 +4971,11 @@
         "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -4941,9 +5042,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai",
         "TX-industry-telecommunications"
@@ -4972,9 +5073,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai",
         "TX-industry-telecommunications"
@@ -5006,10 +5107,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
@@ -5105,12 +5206,15 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-9b81b0dd09a046ab",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
         "EV-78a11d309c3d4e97",
@@ -5119,19 +5223,18 @@
         "EV-0e84a2f49d765ce3",
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
+        "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
         "EV-38232fed5e0cfdd6",
         "EV-e7b228c1b6b54c6a",
         "EV-cf76f090a1a20a36",
         "EV-ff1f6119de13fa19",
         "EV-cec235426920c522",
-        "EV-b96493767e5cf645",
-        "EV-029d34e296397775",
+        "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
         "EV-5a9fe80f8e4ae066",
         "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
-        "EV-8ab833e13ecaa916",
         "EV-98496cc86bacb1e0",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
@@ -5140,6 +5243,7 @@
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
         "EV-2634b786bde9fb8e",
+        "EV-6aabfaa0c7c7f838",
         "EV-c914ac00a35d7cf0",
         "EV-c9d7b46d167df2d1",
         "EV-5b193a038ab4ea22",
@@ -5173,7 +5277,6 @@
         "EV-9254af7aaedaafbe",
         "EV-04ee2bc4ac888358",
         "EV-96c8ce4ee89adb84",
-        "EV-225ad0a94611daf3",
         "EV-caec65aef89d3b4a",
         "EV-cabc88e1d09dec80",
         "EV-cc3b92fe233953cf",
@@ -5219,14 +5322,12 @@
         "EV-3ef3e18df61a00d8",
         "EV-4bb5b24400e49ea4",
         "EV-568d2aeab5234e48",
-        "EV-97a8d86baa7fffc4",
         "EV-0ad758b04b9b5313",
         "EV-c08837795f9e16d2",
         "EV-4a3cb762183581cd",
         "EV-5a1422a9929c582e",
         "EV-bff418b2959f58fb",
         "EV-a591b0c96f79de45",
-        "EV-e878e56967902718",
         "EV-5493c61bcbe58aa2",
         "EV-cac9d9f31ef675ce",
         "EV-dab4d3f2059e8880",
@@ -5234,10 +5335,11 @@
         "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
+        "EV-8115dd18f2812a29",
+        "EV-909cf18b467d6fdf",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
-        "EV-48e17a3ba4b73550",
         "EV-848bdd13f319c516",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
@@ -5264,6 +5366,7 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-use_case-robotics_automation",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
@@ -5271,6 +5374,7 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
+        "TX-technology-model_context_protocol",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
@@ -5286,12 +5390,14 @@
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
+        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -5421,10 +5527,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-on_device",
         "TX-technology-embodied_ai"
@@ -5444,7 +5550,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-c7e1e920e54bb364"
+        "EV-c7e1e920e54bb364",
+        "EV-b76705cd8461925f"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -5454,7 +5561,7 @@
       "relatedEntityIds": [
         "EN-0bd85984211bd173"
       ],
-      "firstSeen": "2026-07-24",
+      "firstSeen": "2026-07-23",
       "lastSeen": "2026-07-25"
     },
     {
@@ -5469,7 +5576,8 @@
       ],
       "eventIds": [
         "EV-c7e1e920e54bb364",
-        "EV-d4d03a7ad477aaa2"
+        "EV-d4d03a7ad477aaa2",
+        "EV-b76705cd8461925f"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -5496,11 +5604,13 @@
         "EV-a00763037a94d512",
         "EV-b75870625504d004",
         "EV-1abf0d076d30ec6d",
+        "EV-2c13574b57844567",
         "EV-67212040ee9cd7c8",
         "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
         "EV-8a2d8ebbd700c787",
         "EV-b334f46b11a68045",
+        "EV-fe644da028a13217",
         "EV-75b9b997e9c7e5d1",
         "EV-f79713437230562f",
         "EV-ca819cdf9008f342",
@@ -5508,7 +5618,8 @@
         "EV-563843979fb55b9b",
         "EV-87f052d24396fdbc",
         "EV-5cd352f2a021350d",
-        "EV-ae9142b65fa86975"
+        "EV-ae9142b65fa86975",
+        "EV-d709599eddf5db04"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -5543,7 +5654,7 @@
         "EV-03d40407042d7986",
         "EV-d4278191ae11f198",
         "EV-ed272c57e1513d3f",
-        "EV-25933b8f123f92be",
+        "EV-2499dc922663af7e",
         "EV-c844ddabb8528896"
       ],
       "viewpointIds": [],
@@ -5656,9 +5767,7 @@
       "name": "ACT-2",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "Robotics ACT-2"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5731,7 +5840,7 @@
       ],
       "eventIds": [
         "EV-ee489212ff9135a4",
-        "EV-25933b8f123f92be",
+        "EV-2499dc922663af7e",
         "EV-c844ddabb8528896"
       ],
       "viewpointIds": [],
@@ -5772,9 +5881,9 @@
         "EV-be2f6bfcad93c42f",
         "EV-c7b81290859057b0",
         "EV-59fb7ba1fd6ac55e",
-        "EV-423c7293d6a91086",
+        "EV-aa25937649956e62",
         "EV-86ab9c2f1416e9d8",
-        "EV-7fe139b107f9adc6",
+        "EV-c5a59cb4cc9d7e8e",
         "EV-de54542fd7e2282c",
         "EV-3167e6eed75597e9",
         "EV-9e35de25113a9269",
@@ -5816,15 +5925,13 @@
       "name": "Hy-Embodied-VLM-1.0",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "VLM Hy-Embodied-VLM-1.0"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-7fe139b107f9adc6"
+        "EV-c5a59cb4cc9d7e8e"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -5959,8 +6066,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-multimodal",
-        "TX-industry-manufacturing",
         "TX-industry-healthcare_life_sciences",
+        "TX-industry-manufacturing",
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai",
         "TX-industry-telecommunications"
@@ -5985,7 +6092,6 @@
         "EV-02548003157849bb",
         "EV-8b0f056571d68269",
         "EV-4e5c6267b3237dac",
-        "EV-49c6291694fb6c7b",
         "EV-ef6464cf7f764835",
         "EV-d7b18c5d5759045d",
         "EV-67ef7accd26a07a0",
@@ -6009,21 +6115,20 @@
         "EV-84b423077bf8dac8",
         "EV-7f9631d793292d07",
         "EV-8993e021ac17df4a",
-        "EV-1b92b6c835ce240c"
+        "EV-1b92b6c835ce240c",
+        "EV-933294dfb2d19a67"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-use_case-cybersecurity"
       ],
-      "relatedEntityIds": [
-        "EN-9fbf261b62c1d7c0"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2025-12-02",
       "lastSeen": "2026-07-20"
     },
@@ -6049,6 +6154,27 @@
         "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-06-24",
+      "lastSeen": "2026-07-16"
+    },
+    {
+      "id": "EN-29e1f755865493a8",
+      "name": "Edge AI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-303b418c63895ba6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-16"
     },
     {
@@ -6095,7 +6221,7 @@
         "EV-634ce5b42f6d32f6",
         "EV-f5dd192f6d4e04a3",
         "EV-3aefbdfa5df2fd6a",
-        "EV-c0a94bb25d551db1",
+        "EV-8692dfde7c3ef5b5",
         "EV-86537be17d50ff20",
         "EV-dd902b603e2e3dbc"
       ],
@@ -6293,7 +6419,6 @@
         "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
-        "EV-3e5da88ce004fcf3",
         "EV-5b193a038ab4ea22",
         "EV-2351415291cb9fcd",
         "EV-e7b7df43970f7e2c",
@@ -6423,14 +6548,13 @@
         "EV-aa33ca051f3a7f78",
         "EV-d4e44892226be468",
         "EV-edcb66d0401cfb8f",
-        "EV-036f43cf7a0549eb",
         "EV-336cd248842004a5",
         "EV-a42e51959c627554",
         "EV-ee0662b75588987e",
-        "EV-9055cb4fa2b4ee62",
         "EV-b1138bccf5ccd86c",
         "EV-201b25d4f3cf696a",
         "EV-d9270ae7b862212b",
+        "EV-5762fe51987bc5ff",
         "EV-7954fd5a6b8b76d0",
         "EV-7add33b4c74dbf1a",
         "EV-1abf0d076d30ec6d",
@@ -6440,13 +6564,13 @@
         "EV-acdeebead5324344",
         "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
+        "EV-a4f5d59c1b4ddce1",
         "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
         "EV-6fa2c58973ea61b4",
         "EV-e15ae1112294d59e",
         "EV-36d484148fbd3424",
         "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
         "EV-62901df23f471eea",
         "EV-538adc98d1da8fda",
         "EV-d209a6acecba4285",
@@ -6482,7 +6606,6 @@
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
         "EV-969923b0b978a660",
-        "EV-ea6abb5378846a71",
         "EV-133a92cb6cb25a0c",
         "EV-7c836c34e7cf36ee",
         "EV-071c72225b8aaf80",
@@ -6505,7 +6628,7 @@
         "EV-b9296439f7c34c89",
         "EV-cf5b2a0aff3914bd",
         "EV-025778b83c1b2ca9",
-        "EV-4b8dffdf86ae5009",
+        "EV-34198b3eaa701a00",
         "EV-969ed3078d10f0c9",
         "EV-d7d8fcd0694a590f",
         "EV-6e7b632ee0b3410d",
@@ -6551,9 +6674,8 @@
         "EV-6364cfadff0d1d30",
         "EV-6eb9a23be3117421",
         "EV-a0d3853dd41c8ef6",
-        "EV-b26bead25288d19c",
         "EV-37cdd2fae39aaa2e",
-        "EV-1e7c76dae985100f",
+        "EV-3d1c01d3d1b0bba4",
         "EV-644337db309a1c82",
         "EV-be69ef6fcae83890",
         "EV-482df8a8ef264238",
@@ -6571,12 +6693,11 @@
         "EV-7f979d0a01e6dffa",
         "EV-f3e11eadfb7c6a4b",
         "EV-ab3586268ebfab38",
-        "EV-2cb9dbed2b2b6077",
         "EV-d6ba9ef3ff65940c",
         "EV-3f8ba5855b64dd1a",
         "EV-b73c7096546b82e8",
         "EV-f89ba2b487d4abf1",
-        "EV-57b029a4afb71044",
+        "EV-59016292a76a2c19",
         "EV-ad1444d8653b37ae",
         "EV-8f167245603f8ebc",
         "EV-fbdfb5888ad19663",
@@ -6597,6 +6718,7 @@
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
+        "EV-d709599eddf5db04",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
@@ -6621,6 +6743,7 @@
         "EV-62df953d81def866",
         "EV-6b7917bd7edd4bde",
         "EV-e1ebf7d63e058a39",
+        "EV-933294dfb2d19a67",
         "EV-b52af7bb03c98eb0",
         "EV-9705a8de3c2e9653",
         "EV-07454824d51125ca",
@@ -6628,7 +6751,6 @@
         "EV-d29997d350e7c947",
         "EV-6defe295e6fbe61c",
         "EV-4beb890f0879aeaf",
-        "EV-4900ddf0686f4bbc",
         "EV-a46db68211837fec",
         "EV-0a0b6604250a82b8",
         "EV-a381531dd3abef18",
@@ -6645,12 +6767,12 @@
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
@@ -6831,7 +6953,6 @@
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
         "EV-381b79897d896995",
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
@@ -6887,7 +7008,6 @@
         "EV-f7484ad16a6d1876",
         "EV-d2d1834222ab32d3",
         "EV-04c2ffd7f6b10126",
-        "EV-a9e22f22b7a2ec53",
         "EV-922de7a46f447efa",
         "EV-1f61330a3f828179",
         "EV-523e5de44cc464fb",
@@ -6904,6 +7024,7 @@
         "EV-1587a760d81451be",
         "EV-33e7429a7bc94840",
         "EV-022d1f3160d94048",
+        "EV-933294dfb2d19a67",
         "EV-7580a050ca19a8ae"
       ],
       "viewpointIds": [],
@@ -6912,12 +7033,12 @@
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-computer_use",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
@@ -6940,7 +7061,6 @@
         "EN-7d3194f79e645c42",
         "EN-38945a66b4806b11",
         "EN-c141d2237427f30d",
-        "EN-cbc62794911ff31b",
         "EN-8d4321d936320802",
         "EN-10fce287b4b1464c"
       ],
@@ -7197,8 +7317,8 @@
         "EN-8d4321d936320802",
         "EN-cbc62794911ff31b",
         "EN-a1b0d8a938903dc7",
-        "EN-fbe26af59be95e52",
-        "EN-2b119dc14de9478d"
+        "EN-2b119dc14de9478d",
+        "EN-29e1f755865493a8"
       ]
     },
     {

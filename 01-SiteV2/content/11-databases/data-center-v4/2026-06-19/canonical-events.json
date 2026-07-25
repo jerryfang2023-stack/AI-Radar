@@ -34,7 +34,7 @@
   },
   {
     "event_type": "funding",
-    "event_status": "in_progress",
+    "event_status": "rumored",
     "event_time": "2026-06-18T15:20:37.000Z",
     "disclosed_at": "2026-06-18T15:20:37.000Z",
     "entities": [],
@@ -65,10 +65,10 @@
       {
         "source_ref": "SA-f4ef8bdf842b6af9",
         "disclosed_at": "2026-06-18T15:20:37.000Z",
-        "status": "in_progress"
+        "status": "rumored"
       }
     ],
-    "publication_status": "partial",
+    "publication_status": "disputed",
     "event_id": "EV-d8ab585446e56beb",
     "display_title_zh": "General Intuition 洽谈约3亿美元融资，估值超20亿美元"
   },
@@ -78,8 +78,7 @@
     "event_time": "2026-06-19T01:20:50.000Z",
     "disclosed_at": "2026-06-19T01:20:50.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d",
-      "EN-29eb5745fdfcb027"
+      "EN-cb4754c48f8023d0"
     ],
     "action": "发布",
     "object": "Claude Code v2.1.183 发布",
@@ -104,12 +103,12 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-2af2957a10b3c198",
+    "event_id": "EV-e1ff39d421631fc1",
     "display_title_zh": "Claude Code v2.1.183 发布"
   },
   {
     "event_type": "funding",
-    "event_status": "completed",
+    "event_status": "rumored",
     "event_time": "2026-06-18T21:20:13.000Z",
     "disclosed_at": "2026-06-18T21:20:13.000Z",
     "entities": [],
@@ -141,10 +140,10 @@
       {
         "source_ref": "SA-6b9883abc5c2e11d",
         "disclosed_at": "2026-06-18T21:20:13.000Z",
-        "status": "completed"
+        "status": "rumored"
       }
     ],
-    "publication_status": "verified",
+    "publication_status": "disputed",
     "event_id": "EV-7a85e21802efd8b2",
     "display_title_zh": "AI推理公司Baseten据报以130亿美元估值融资15亿美元"
   },
@@ -460,24 +459,32 @@
     "disclosed_at": "2026-06-19T07:43:57.693Z",
     "entities": [
       "EN-d74c69db63e4763f",
-      "EN-96eebba49dbbf422"
+      "EN-96eebba49dbbf422",
+      "EN-e9b67bdfb6ae6a2e",
+      "EN-6cb00ecd8bc15956"
     ],
     "action": "nabs",
     "object": "$60M investment - SiliconANGLE",
     "metrics": [
       "$60M",
       "$60 million",
-      "$12 million"
+      "$12 million",
+      "$72 million"
     ],
     "locations": [],
     "claim_refs": [
       "CL-6e81a9c9336787ce",
       "CL-ce0608b3a72a64ad",
       "CL-d15dc1f45cf7379c",
-      "CL-55e72de0f9ea2ef6"
+      "CL-55e72de0f9ea2ef6",
+      "CL-4438943a9db11e1c",
+      "CL-90d873193d266403",
+      "CL-9b6b8cf495034488",
+      "CL-cfc416c2c490c050"
     ],
     "source_refs": [
-      "SA-2cca553e8d6e4ca6"
+      "SA-2cca553e8d6e4ca6",
+      "SA-8e5b7d4ba8608fd1"
     ],
     "conflicts": [],
     "missing_fields": [
@@ -487,6 +494,11 @@
       {
         "source_ref": "SA-2cca553e8d6e4ca6",
         "disclosed_at": "2026-06-19T07:43:57.693Z",
+        "status": "completed"
+      },
+      {
+        "source_ref": "SA-8e5b7d4ba8608fd1",
+        "disclosed_at": "2026-06-12T00:00:00.000Z",
         "status": "completed"
       }
     ],
@@ -604,7 +616,6 @@
     "event_time": "2026-06-18T18:54:47.698Z",
     "disclosed_at": "2026-06-18T18:54:47.698Z",
     "entities": [
-      "EN-c70eca6b0f88f44d",
       "EN-a625159d18da5718"
     ],
     "action": "product_release",
@@ -628,7 +639,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-002074ab1a44e4bc",
+    "event_id": "EV-1bba7775c80af1f0",
     "display_title_zh": "Claude Code 现已支持 artifacts"
   },
   {
@@ -638,7 +649,6 @@
     "disclosed_at": "2026-06-18T17:51:29.795Z",
     "entities": [
       "EN-caf559f7830b566f",
-      "EN-c70eca6b0f88f44d",
       "EN-3db1f560db626918"
     ],
     "action": "推出",
@@ -707,7 +717,7 @@
   },
   {
     "event_type": "organization_people",
-    "event_status": "completed",
+    "event_status": "rumored",
     "event_time": "2026-06-18T08:15:51.000Z",
     "disclosed_at": "2026-06-18T08:15:51.000Z",
     "entities": [
@@ -732,10 +742,10 @@
       {
         "source_ref": "SA-af8f5292375e9b92",
         "disclosed_at": "2026-06-18T08:15:51.000Z",
-        "status": "completed"
+        "status": "rumored"
       }
     ],
-    "publication_status": "verified",
+    "publication_status": "disputed",
     "event_id": "EV-8fcecabca2e92b40",
     "display_title_zh": "Meta AI重组核心项目高管道尔顿·史密斯被曝离职，内部士气\"史上最低\""
   },
@@ -818,6 +828,7 @@
     "event_time": "",
     "disclosed_at": "2026-06-19T07:43:57.958Z",
     "entities": [
+      "EN-58b507456c52c9b3",
       "EN-348445124d405d5a"
     ],
     "action": "Raises",
@@ -845,7 +856,7 @@
       }
     ],
     "publication_status": "partial",
-    "event_id": "EV-f1a605a25af30dc5",
+    "event_id": "EV-6ae3594aadfcd3d8",
     "display_title_zh": "AI 安全初创公司 Archestra.AI 完成 1000 万美元种子轮融资"
   }
 ]

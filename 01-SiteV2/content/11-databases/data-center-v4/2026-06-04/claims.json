@@ -7,7 +7,7 @@
     "predicate": "product_release",
     "object": "专业版，基础功能保持免费；阿里千问向第三方Agent全面开放",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 1
     },
     "source_span": {
@@ -18,7 +18,7 @@
     "source_quote": "1、豆包：计划针对专业人群生产力需求推出豆包专业版，基础功能保持免费",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-d0a07440e2fdd9ae",
@@ -28,7 +28,7 @@
     "predicate": "product_release",
     "object": "专业版，基础功能保持免费；阿里千问向第三方Agent全面开放",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 2
     },
     "source_span": {
@@ -39,7 +39,7 @@
     "source_quote": "3、腾讯人士：目前无法确定微信 AI 智能体何时推出",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-3516f8cdd1820eda",
@@ -49,7 +49,7 @@
     "predicate": "product_release",
     "object": "专业版，基础功能保持免费；阿里千问向第三方Agent全面开放",
     "qualifiers": {
-      "event_status": "planned",
+      "event_status": "rumored",
       "sequence": 3
     },
     "source_span": {
@@ -60,7 +60,7 @@
     "source_quote": "同时，腾讯 2026AI 产业应用大会即将在北京举办，将发布系列新品。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
-    "verification_status": "accepted"
+    "verification_status": "disputed"
   },
   {
     "claim_id": "CL-2514ad10caf2a28f",
@@ -231,25 +231,87 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-8f9458874d639ed5",
+    "claim_id": "CL-30494164288ccb46",
     "raw_id": "RAW-49781cc40764e84e",
     "claim_type": "deployment",
-    "subject": "The Home Depot",
+    "subject": "The",
     "predicate": "deployment",
-    "object": "AI-powered phone agents built on Google Cloud's Gemini Enterprise for Customer Experience",
+    "object": "Gemini Enterprise store phone support",
     "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1,
-      "model_candidate_id": "MAC-dd8aa7f329cd36e4"
+      "event_status": "completed",
+      "sequence": 1
     },
     "source_span": {
       "raw_id": "RAW-49781cc40764e84e",
-      "start": 664,
-      "end": 1039
+      "start": 177,
+      "end": 316
     },
-    "source_quote": "The Home Depot, the world's largest home improvement retailer, today announced new AI-powered phone agents designed to get customers the help they need faster. Built on Google Cloud's Gemini Enterprise for Customer Experience, the agents allow customers to skip complicated phone menus and get straight to solving their home improvement problems through natural conversation.",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
+    "source_quote": "The Home Depot is launching a new customer service AI voice agent phone system to provide faster support for customer calls to U.S. stores.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9142d4cf5efc92ed",
+    "raw_id": "RAW-49781cc40764e84e",
+    "claim_type": "deployment",
+    "subject": "The",
+    "predicate": "deployment",
+    "object": "Gemini Enterprise store phone support",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-49781cc40764e84e",
+      "start": 1389,
+      "end": 1827
+    },
+    "source_quote": "Early results from a 50-store pilot show that AI voice agents understand why a customer is calling in fewer than 10 seconds—getting them to a solution four times faster than navigating traditional phone menus. This allows customers to spend less time on the phone and more time on their projects or jobs. Additionally, Home Depot associates in the pilot also reported higher job satisfaction, with more time to focus on in-store shoppers.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5c8b079d538fcdf5",
+    "raw_id": "RAW-49781cc40764e84e",
+    "claim_type": "deployment",
+    "subject": "The",
+    "predicate": "deployment",
+    "object": "Gemini Enterprise store phone support",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-49781cc40764e84e",
+      "start": 1828,
+      "end": 2184
+    },
+    "source_quote": "\"Nobody likes getting trapped in a phone menu. When a customer calls us, they just want to get help as quickly as possible,\" said Jordan Broggi, executive vice president of customer experience and president of online at Home Depot. \"Using customer service AI voice agents, we're moving away from 'Please listen to these options' and toward 'how can I help?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6e9e70a37e558243",
+    "raw_id": "RAW-49781cc40764e84e",
+    "claim_type": "deployment",
+    "subject": "The",
+    "predicate": "deployment",
+    "object": "Gemini Enterprise store phone support",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-49781cc40764e84e",
+      "start": 2508,
+      "end": 2794
+    },
+    "source_quote": "Get answers without the wait : The AI voice agents are empowered to resolve common customer inquiries from start to finish, such as checking an order status, confirming product availability, or providing store information, freeing up Home Depot associates to handle more complex issues.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   },
   {
@@ -859,6 +921,90 @@
       "end": 179
     },
     "source_quote": "Send a tip to our reporters",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-73fd50d47efc06c2",
+    "raw_id": "RAW-caeb2d69232db715",
+    "claim_type": "deployment",
+    "subject": "The",
+    "predicate": "deployment",
+    "object": "Gemini Enterprise store phone support",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-caeb2d69232db715",
+      "start": 1529,
+      "end": 1668
+    },
+    "source_quote": "The Home Depot is launching a new customer service AI voice agent phone system to provide faster support for customer calls to U.S. stores.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b869e7c04d2eb969",
+    "raw_id": "RAW-caeb2d69232db715",
+    "claim_type": "deployment",
+    "subject": "The",
+    "predicate": "deployment",
+    "object": "Gemini Enterprise store phone support",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-caeb2d69232db715",
+      "start": 2703,
+      "end": 3160
+    },
+    "source_quote": "Early results from a 50-store pilot show that AI voice agents understand why a customer is calling in just 10 seconds, getting the customer to a solution four times faster than navigating traditional phone menus. This allows customers to spend less time on the phone and more time on their home improvement projects or jobs. Additionally, Home Depot associates in the pilot also reported higher job satisfaction with more time to focus on in-store shoppers.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-02acbfb49c87afc0",
+    "raw_id": "RAW-caeb2d69232db715",
+    "claim_type": "deployment",
+    "subject": "The",
+    "predicate": "deployment",
+    "object": "Gemini Enterprise store phone support",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-caeb2d69232db715",
+      "start": 3161,
+      "end": 3521
+    },
+    "source_quote": "“Nobody likes getting trapped in a phone menu. When a customer calls us, they just want to get help as quickly as possible,” said Jordan Broggi, executive vice president of customer experience and president of online at The Home Depot. “Using customer service AI voice agents, we’re moving away from 'please listen to these options' and toward ‘how can I help?",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c43c69a8e71d72f0",
+    "raw_id": "RAW-caeb2d69232db715",
+    "claim_type": "deployment",
+    "subject": "The",
+    "predicate": "deployment",
+    "object": "Gemini Enterprise store phone support",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-caeb2d69232db715",
+      "start": 3845,
+      "end": 4141
+    },
+    "source_quote": "Get answers without the wait: The AI voice agents are empowered to resolve common customer inquiries from start to finish, such as checking order status, confirming product availability, or providing store information, freeing up knowledgeable Home Depot associates to handle more complex issues.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
     "verification_status": "accepted"

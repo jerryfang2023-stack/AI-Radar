@@ -380,28 +380,6 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-e45e6605bf6f022b",
-    "raw_id": "RAW-08c22bd7164ce1a7",
-    "claim_type": "funding",
-    "subject": "Cognition",
-    "predicate": "funding",
-    "object": "over $1B at a $26B valuation",
-    "qualifiers": {
-      "event_status": "announced",
-      "sequence": 1,
-      "model_candidate_id": "MAC-0e828bd5da8044eb"
-    },
-    "source_span": {
-      "raw_id": "RAW-08c22bd7164ce1a7",
-      "start": 893,
-      "end": 1027
-    },
-    "source_quote": "Cognition raised over $1B at a $26B valuation, with significant backing from major investors to expand Devin, an AI software engineer.",
-    "extraction_method": "model_source_span",
-    "extraction_confidence": 0.72,
-    "verification_status": "accepted"
-  },
-  {
     "claim_id": "CL-248b2a86c4d990ae",
     "raw_id": "RAW-14d43904cec19889",
     "claim_type": "product_release",
@@ -950,6 +928,90 @@
     "source_quote": "OpenAI has agreed to buy Promptfoo",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-efbf3dd1a8487589",
+    "raw_id": "RAW-2733cb687a00987f",
+    "claim_type": "funding",
+    "subject": "AI coding startup Cognition",
+    "predicate": "funding",
+    "object": "$1B at $25B pre-money valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-2733cb687a00987f",
+      "start": 0,
+      "end": 66
+    },
+    "source_quote": "AI coding startup Cognition raises $1B at $25B pre-money valuation",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e7a2db13a9917754",
+    "raw_id": "RAW-2733cb687a00987f",
+    "claim_type": "funding",
+    "subject": "AI coding startup Cognition",
+    "predicate": "funding",
+    "object": "$1B at $25B pre-money valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-2733cb687a00987f",
+      "start": 67,
+      "end": 271
+    },
+    "source_quote": "Cognition, the makers of the autonomous AI software engineer named Devin, has raised more than $1 billion at a $25 billion pre-money valuation ($26 billion post money), the company announced on Wednesday.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5a89183f8b5305a4",
+    "raw_id": "RAW-2733cb687a00987f",
+    "claim_type": "funding",
+    "subject": "AI coding startup Cognition",
+    "predicate": "funding",
+    "object": "$1B at $25B pre-money valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-2733cb687a00987f",
+      "start": 272,
+      "end": 415
+    },
+    "source_quote": "That’s a major leap from its $10.2 billion post-money valuation when it closed a $400 million funding round just eight months ago in September.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ec8874bd72f95049",
+    "raw_id": "RAW-2733cb687a00987f",
+    "claim_type": "funding",
+    "subject": "AI coding startup Cognition",
+    "predicate": "funding",
+    "object": "$1B at $25B pre-money valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-2733cb687a00987f",
+      "start": 698,
+      "end": 1079
+    },
+    "source_quote": "This is a giant vote of confidence from top-tier VCs that there will be room for independent AI software coding startups. Last year, all signs pointed to model makers swallowing this hot market themselves. Certainly Anthropic’s Claude Code, OpenAI’s Codex, and maybe even Google’s coding agent Jules (after Google’s acqui-hire deal of Windsurf last year) have captured a lot of it.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   }
 ]

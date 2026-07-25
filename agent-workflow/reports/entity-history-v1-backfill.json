@@ -1,23 +1,23 @@
 {
   "ok": true,
-  "generatedAt": "2026-07-17T15:01:32.757Z",
+  "generatedAt": "2026-07-25T07:14:08.907Z",
   "versions": {
     "product": "SITE-V4.2.0-entity-history",
     "entity": "ENTITY-V1.0",
-    "relationship": "RELATION-V2.0"
+    "relationship": "RELATION-V2.1"
   },
   "scope": "Reproject all accepted canonical events into entity profiles, timelines, taxonomy nodes, and evidence-backed relationships. This does not claim one accepted source batch for every calendar day.",
   "targetWindow": {
-    "startDate": "2026-01-17",
-    "endDate": "2026-07-17",
+    "startDate": "2026-01-25",
+    "endDate": "2026-07-25",
     "months": 6
   },
   "observedCoverage": {
-    "startDate": "2026-01-20",
-    "endDate": "2026-07-17",
-    "eventTimeCoverageDays": 178,
-    "boundaryGapDays": 3,
-    "acceptedDataBatchCount": 55,
+    "startDate": "2017-09-07",
+    "endDate": "2026-07-25",
+    "eventTimeCoverageDays": 3243,
+    "boundaryGapDays": 0,
+    "acceptedDataBatchCount": 63,
     "acceptedDataDates": [
       "2026-05-18",
       "2026-05-19",
@@ -73,42 +73,48 @@
       "2026-07-14",
       "2026-07-15",
       "2026-07-16",
-      "2026-07-17"
+      "2026-07-17",
+      "2026-07-18",
+      "2026-07-19",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-24",
+      "2026-07-25"
     ]
   },
   "counts": {
-    "eventsInWindow": 748,
-    "entities": 328,
-    "taxonomyNodes": 42,
-    "relationships": 21
+    "eventsInWindow": 1497,
+    "entities": 1278,
+    "taxonomyNodes": 43,
+    "relationships": 331
   },
   "monthlyEventCounts": [
     {
-      "month": "2026-01",
-      "count": 1
-    },
-    {
-      "month": "2026-03",
-      "count": 1
-    },
-    {
-      "month": "2026-04",
+      "month": "2026-02",
       "count": 2
     },
     {
+      "month": "2026-03",
+      "count": 8
+    },
+    {
+      "month": "2026-04",
+      "count": 10
+    },
+    {
       "month": "2026-05",
-      "count": 43
+      "count": 71
     },
     {
       "month": "2026-06",
-      "count": 405
+      "count": 624
     },
     {
       "month": "2026-07",
-      "count": 296
+      "count": 782
     }
   ],
-  "unresolved": [
-    "The accepted event-time history begins 3 days after the six-calendar-month boundary. No event or source was invented to fill this boundary gap."
-  ]
+  "unresolved": []
 }

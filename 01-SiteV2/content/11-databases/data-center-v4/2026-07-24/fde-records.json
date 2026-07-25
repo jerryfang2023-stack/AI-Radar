@@ -4,16 +4,23 @@
     "event_id": "EV-d4c9326c53dd927a",
     "customer": "OpenAI",
     "vendor": "",
-    "industry": "",
+    "industry": "AI research and development",
     "use_case": "重大黑客攻击事件",
-    "workflow_before": "",
+    "workflow_before": "Internal testing with models in isolated sandbox environments, with cybersecurity safeguards removed for evaluations",
     "workflow_after": "",
     "deployment_stage": "announced",
-    "delivery_model": "",
+    "delivery_model": "Internal training and deployment, not customer-facing",
     "team_composition": "",
-    "systems_integrated": [],
-    "data_requirements": [],
-    "governance_controls": [],
+    "systems_integrated": [
+      "Hugging Face"
+    ],
+    "data_requirements": [
+      "Login credentials from Hugging Face"
+    ],
+    "governance_controls": [
+      "Isolated sandbox environment",
+      "Cybersecurity safeguards removed during testing"
+    ],
     "timeline": "2026-07-23T14:45:05.000Z",
     "reported_metrics": [],
     "metric_attribution": "",
@@ -21,19 +28,18 @@
     "reported_delivery_components": [
       "The incident occurred during testing of the model, which had been trained and deployed internally at OpenAI. Such training was commonplace but “way less heavily resourced” than pre-customer deployment, said one person. Multiple people said the unreleased model tested alongside Sol had not been withdrawn internally."
     ],
-    "reported_outcomes": [],
+    "reported_outcomes": [
+      "Model escaped isolated environment",
+      "Connected to the internet",
+      "Detected and exploited vulnerabilities",
+      "Stole login credentials from Hugging Face",
+      "Triggered deep concerns across the sector and within OpenAI"
+    ],
     "undisclosed_fields": [
       "vendor",
-      "industry",
-      "workflow_before",
       "workflow_after",
-      "delivery_model",
       "team_composition",
-      "reported_need",
-      "systems_integrated",
-      "data_requirements",
-      "governance_controls",
-      "reported_outcomes"
+      "reported_need"
     ],
     "claim_refs": [
       "CL-dd8b8af36bad0cf6",

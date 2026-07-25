@@ -168,6 +168,94 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-0cd35b13388785e3",
+    "raw_id": "RAW-950bfdb988237217",
+    "claim_type": "capital_investment",
+    "subject": "AMD",
+    "predicate": "capital_investment",
+    "object": "Anthropic",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-35035e0004ab4746"
+    },
+    "source_span": {
+      "raw_id": "RAW-950bfdb988237217",
+      "start": 354,
+      "end": 501
+    },
+    "source_quote": "AMD has agreed to invest up to $5 billion in Anthropic under an infrastructure agreement covering tens of billions of dollars’ worth of AI systems.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f0d54905c5168ed1",
+    "raw_id": "RAW-7932b889328248c6",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Claude voice mode model selection update",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-70384556e1ea0315"
+    },
+    "source_span": {
+      "raw_id": "RAW-7932b889328248c6",
+      "start": 296,
+      "end": 383
+    },
+    "source_quote": "The company said Thursday that users can choose between Opus, Sonnet, and Haiku models.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ea40e15f111506a9",
+    "raw_id": "RAW-7932b889328248c6",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Claude voice mode app integration",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-70384556e1ea0315"
+    },
+    "source_span": {
+      "raw_id": "RAW-7932b889328248c6",
+      "start": 911,
+      "end": 1009
+    },
+    "source_quote": "Claude’s voice mode can tap into other apps like Gmail, Google Calendar, Slack, Canva, and Notion.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ae0e2bfe23289eae",
+    "raw_id": "RAW-7932b889328248c6",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "Claude voice mode multilingual support",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-70384556e1ea0315"
+    },
+    "source_span": {
+      "raw_id": "RAW-7932b889328248c6",
+      "start": 1278,
+      "end": 1365
+    },
+    "source_quote": "Earlier this year, Anthropic added multilingual support to Claude’s voice mode in beta.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-8fb93499974e477c",
     "raw_id": "RAW-b57873ab5298a2c3",
     "claim_type": "product_release",
@@ -501,6 +589,28 @@
     "source_quote": "AI requires a new infrastructure blueprint. Leadership compute is essential, but compute alone is not enough. Customers also need open rack architecture, high-bandwidth scale-up and scale-out fabrics, efficient power and cooling, serviceability, and turnkey solutions that can be deployed rapidly. AMD set out to design these capabilities together as one system.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f4b60d7d83407513",
+    "raw_id": "RAW-f2a885f27b061f9d",
+    "claim_type": "partnership",
+    "subject": "AMD",
+    "predicate": "partnership",
+    "object": "Cerebras Systems",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-22bd424aca7f7759"
+    },
+    "source_span": {
+      "raw_id": "RAW-f2a885f27b061f9d",
+      "start": 750,
+      "end": 974
+    },
+    "source_quote": "AMD (NASDAQ: AMD) and Cerebras Systems (NASDAQ: CBRS) announced a technical partnership to deliver a new disaggregated AI inference solution that combines AMD Helios™ rackscale solutions with the Cerebras Wafer-Scale Engine.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -903,6 +1013,72 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-ca291febaa77718a",
+    "raw_id": "RAW-35918e9e9e49c757",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "voice mode for Opus and Sonnet models",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-3184551f1a0783bb"
+    },
+    "source_span": {
+      "raw_id": "RAW-35918e9e9e49c757",
+      "start": 542,
+      "end": 618
+    },
+    "source_quote": "Now the company is making its Opus and Sonnet models available in voice mode",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-425a1c5652e24161",
+    "raw_id": "RAW-35918e9e9e49c757",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "voice mode access for Gmail, Slack, and Canva",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-3184551f1a0783bb"
+    },
+    "source_span": {
+      "raw_id": "RAW-35918e9e9e49c757",
+      "start": 625,
+      "end": 683
+    },
+    "source_quote": "extending its reach into apps like Gmail, Slack, and Canva",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a11eedd21343277b",
+    "raw_id": "RAW-35918e9e9e49c757",
+    "claim_type": "product_release",
+    "subject": "Anthropic",
+    "predicate": "product_release",
+    "object": "voice mode in French, German, Spanish, Hindi, Indonesian, Italian, Japanese, Korean, and Portuguese",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-3184551f1a0783bb"
+    },
+    "source_span": {
+      "raw_id": "RAW-35918e9e9e49c757",
+      "start": 1777,
+      "end": 1893
+    },
+    "source_quote": "now voice mode is available in French, German, Spanish, Hindi, Indonesian, Italian, Japanese, Korean, and Portuguese",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-20d420336a97b5f1",
     "raw_id": "RAW-278d4eaedbe7ff9f",
     "claim_type": "deployment",
@@ -984,6 +1160,28 @@
     "source_quote": "OpenAI is rolling out ChatGPT Health to everyone in the US on Thursday, allowing more people to connect their medical records and health-tracking information to the chatbot. During a briefing, Ashley Alexander, OpenAI’s vice president of health product, says the company’s models “are now capable of reasoning at levels that are better than clinician level.”",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fcf9fd10cc63c9e6",
+    "raw_id": "RAW-bcf75f83626a4f5f",
+    "claim_type": "funding",
+    "subject": "Etched",
+    "predicate": "funding",
+    "object": "$300 million Series C funding round at a $10.3 billion valuation",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e4c76dcec6bcb805"
+    },
+    "source_span": {
+      "raw_id": "RAW-bcf75f83626a4f5f",
+      "start": 134,
+      "end": 282
+    },
+    "source_quote": "Etched, the AI chip startup founded by three Harvard dropouts in 2022, has closed a $300 million Series C funding round at a $10.3 billion valuation",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1152,6 +1350,93 @@
     "source_quote": "The new funding will be used to expand AIsa’s engineering team, scale its payment infrastructure, onboard additional models, data and API providers, and accelerate stablecoin settlement capabilities for AI agents and businesses worldwide.",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1052c5ccdc64ae09",
+    "raw_id": "RAW-ce055da832621550",
+    "claim_type": "model_release",
+    "subject": "月之暗面黄震昕：",
+    "predicate": "model_release",
+    "object": "蒸馏复刻",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ce055da832621550",
+      "start": 4365,
+      "end": 4401
+    },
+    "source_quote": "30、月之暗面黄震昕：Kimi K3 性能跃升并非对现有任何模型蒸馏复刻",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d89dc531e7b6c362",
+    "raw_id": "RAW-40c5172b1284b2c9",
+    "claim_type": "model_release",
+    "subject": "Black Forest Labs",
+    "predicate": "model_release",
+    "object": "Flux 3",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ef717207a73dc73f"
+    },
+    "source_span": {
+      "raw_id": "RAW-40c5172b1284b2c9",
+      "start": 219,
+      "end": 368
+    },
+    "source_quote": "The German AI company Black Forest Labs has released Flux 3, a multimodal foundation model that learns from images, videos, and audio simultaneously.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a72b1a9a96a542b2",
+    "raw_id": "RAW-40c5172b1284b2c9",
+    "claim_type": "model_release",
+    "subject": "Black Forest Labs",
+    "predicate": "model_release",
+    "object": "Flux-mimic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-ef717207a73dc73f"
+    },
+    "source_span": {
+      "raw_id": "RAW-40c5172b1284b2c9",
+      "start": 543,
+      "end": 667
+    },
+    "source_quote": "the company has developed Flux-mimic, a video action model for robotics applications, which is already being tested at Audi.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a7d064696c5f3c24",
+    "raw_id": "RAW-b8b8f0e13cdea8ae",
+    "claim_type": "partnership",
+    "subject": "Amkor Technology",
+    "predicate": "partnership",
+    "object": "英伟达",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-11eb861bd0855298"
+    },
+    "source_span": {
+      "raw_id": "RAW-b8b8f0e13cdea8ae",
+      "start": 30,
+      "end": 106
+    },
+    "source_quote": "Amkor Technology（安靠科技）宣布与英伟达达成一项多年期战略合作协议，共同开发面向下一代 AI 与加速计算平台的先进半导体封装及测试技术。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1554,6 +1839,28 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-c51727749a345b54",
+    "raw_id": "RAW-ec147b5c4e81183e",
+    "claim_type": "hardware_deployment",
+    "subject": "OpenAI",
+    "predicate": "hardware_deployment",
+    "object": "Project Camellia 数据中心园区",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-231ed6b6b46e05c0"
+    },
+    "source_span": {
+      "raw_id": "RAW-ec147b5c4e81183e",
+      "start": 92,
+      "end": 156
+    },
+    "source_quote": "OpenAI 公布了名为 Project Camellia 的新计划，准备在萨凡纳郊外的埃芬汉姆县乡村地区建设一座数据中心园区。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-d2f53cd2cd88d09f",
     "raw_id": "RAW-bc9587bffadc70ed",
     "claim_type": "product_release",
@@ -1614,6 +1921,28 @@
     "source_quote": "针对摩根大通分析师 Doug Anmuth 提出的“Gemini 是否仍具备行业领先竞争力，以及谷歌模型发布速度为何较慢”的问题，皮查伊表示：“ 我们的模型一直处于行业前沿 。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ced092d479c68f79",
+    "raw_id": "RAW-34609789ab818c5f",
+    "claim_type": "model_release",
+    "subject": "Poolside",
+    "predicate": "model_release",
+    "object": "Laguna S 2.1",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f92d02b32ab178e2"
+    },
+    "source_span": {
+      "raw_id": "RAW-34609789ab818c5f",
+      "start": 186,
+      "end": 261
+    },
+    "source_quote": "Poolside has released Laguna S 2.1, its third coding model in three months.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1869,6 +2198,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-ce1a145746e1785a",
+    "raw_id": "RAW-76f5a36396a78c7c",
+    "claim_type": "policy_regulation",
+    "subject": "红果短剧",
+    "predicate": "policy_regulation",
+    "object": "AI剧角色创作规范",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-706282c1e64839ea"
+    },
+    "source_span": {
+      "raw_id": "RAW-76f5a36396a78c7c",
+      "start": 306,
+      "end": 370
+    },
+    "source_quote": "红果短剧昨日发布《关于规范 AI 剧角色创作的公告》，从角色差异化、版权合规两个维度明确创作标准，降低“高频 AI 脸”使用率。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f4d7370782c24fc4",
+    "raw_id": "RAW-76f5a36396a78c7c",
+    "claim_type": "policy_regulation",
+    "subject": "红果短剧",
+    "predicate": "policy_regulation",
+    "object": "AI仿真人剧内容准入门槛",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3,
+      "model_candidate_id": "MAC-706282c1e64839ea"
+    },
+    "source_span": {
+      "raw_id": "RAW-76f5a36396a78c7c",
+      "start": 708,
+      "end": 804
+    },
+    "source_quote": "7 月 21 日，红果短剧在短剧创作者中心发布公告，对都市情感、破局成长、家庭温情、都市逆袭等品类 AI 仿真人剧提升内容准入门槛，从画面衔接、人物形象、表情变化、音画同步等方面提出更高要求。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-17fa390f84633ac0",
     "raw_id": "RAW-134b548b7067a6b7",
     "claim_type": "partnership",
@@ -2118,6 +2491,28 @@
     "source_quote": "IT之家 7 月 23 日消息，荣耀手机官方今日宣布，全球首款机器人手机 —— 荣耀 Robot Phone“8 月见” 。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f557a595cb6e4200",
+    "raw_id": "RAW-0b6ab076fba9091b",
+    "claim_type": "deployment",
+    "subject": "面壁智能 MiniCPM 系列端侧大模型",
+    "predicate": "deployment",
+    "object": "三星 Galaxy Z Fold8 系列",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5fcd8fcea44c7f3d"
+    },
+    "source_span": {
+      "raw_id": "RAW-0b6ab076fba9091b",
+      "start": 112,
+      "end": 157
+    },
+    "source_quote": "面壁智能今日宣布，旗下 MiniCPM 系列端侧大模型，深度赋能三星 Galaxy AI。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -2541,6 +2936,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-b25df92c640687b4",
+    "raw_id": "RAW-767b3aefefbab54b",
+    "claim_type": "financial_performance",
+    "subject": "Google Gemini",
+    "predicate": "financial_performance",
+    "object": "over 950 million monthly users",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f8ee57e203c4ed40"
+    },
+    "source_span": {
+      "raw_id": "RAW-767b3aefefbab54b",
+      "start": 267,
+      "end": 376
+    },
+    "source_quote": "The company said during its Q2 2026 call that the AI assistant Gemini now has over 950 million monthly users.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6b212205e776fbc4",
+    "raw_id": "RAW-767b3aefefbab54b",
+    "claim_type": "financial_performance",
+    "subject": "Google AI mode",
+    "predicate": "financial_performance",
+    "object": "crossed 1 billion users",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-f8ee57e203c4ed40"
+    },
+    "source_span": {
+      "raw_id": "RAW-767b3aefefbab54b",
+      "start": 1623,
+      "end": 1690
+    },
+    "source_quote": "During this quarter, its Q&A-style AI mode crossed 1 billion users.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-d39bf14f83167526",
     "raw_id": "RAW-a48eb00611c8c018",
     "claim_type": "funding",
@@ -2625,6 +3064,50 @@
     "verification_status": "accepted"
   },
   {
+    "claim_id": "CL-0626113a36022107",
+    "raw_id": "RAW-50d64ac3e80820a1",
+    "claim_type": "capital_investment",
+    "subject": "AMD",
+    "predicate": "capital_investment",
+    "object": "Anthropic",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-713e673a963076ac"
+    },
+    "source_span": {
+      "raw_id": "RAW-50d64ac3e80820a1",
+      "start": 1443,
+      "end": 1530
+    },
+    "source_quote": "AMD will invest up to $5 billion in Anthropic as certain deployment milestones are met.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c561eb8a62587e2d",
+    "raw_id": "RAW-674708a96517fae7",
+    "claim_type": "funding",
+    "subject": "AegisAI",
+    "predicate": "funding",
+    "object": "$36 million Series A",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7bd250e5ceda4803"
+    },
+    "source_span": {
+      "raw_id": "RAW-674708a96517fae7",
+      "start": 1340,
+      "end": 1500
+    },
+    "source_quote": "That demand has just helped AegisAI raise a $36 million Series A led by Battery Ventures, with participation from existing backers Accel and Foundation Capital.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-d8ee2985b26f5688",
     "raw_id": "RAW-1333186ba2f03b86",
     "claim_type": "lawsuit_settlement",
@@ -2706,6 +3189,178 @@
     "source_quote": "他表示，自己在 2024 年开始使用 ChatGPT-4o 咨询身体状况，期间反复询问头晕、血压异常以及其他症状。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-634405e6fc629b36",
+    "raw_id": "RAW-4aa9a21dbd96e5ea",
+    "claim_type": "organization_restructuring",
+    "subject": "字节跳动",
+    "predicate": "organization_restructuring",
+    "object": "Seed STEM 科学家计划",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d5f9bab3eb36b9c8"
+    },
+    "source_span": {
+      "raw_id": "RAW-4aa9a21dbd96e5ea",
+      "start": 351,
+      "end": 442
+    },
+    "source_quote": "字节跳动今日宣布 Seed STEM 科学家计划正式启动， 邀请 100 位前沿科学领域的优秀学者 ，围绕真实科研问题展开合作，推动 AI 加速科学发现，进一步突破智能的边界与上限。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fc515e9b13c61500",
+    "raw_id": "RAW-4aa9a21dbd96e5ea",
+    "claim_type": "organization_restructuring",
+    "subject": "字节跳动",
+    "predicate": "organization_restructuring",
+    "object": "Seed STEM 科学家计划",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 2,
+      "model_candidate_id": "MAC-d5f9bab3eb36b9c8"
+    },
+    "source_span": {
+      "raw_id": "RAW-4aa9a21dbd96e5ea",
+      "start": 784,
+      "end": 837
+    },
+    "source_quote": "字节提供以下两种参与方式，邀请学者来到办公现场，与 Seed 团队紧密协作， 首期计划约持续 6 个月 。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9df4f46e160090de",
+    "raw_id": "RAW-4aa9a21dbd96e5ea",
+    "claim_type": "organization_restructuring",
+    "subject": "字节跳动",
+    "predicate": "organization_restructuring",
+    "object": "Seed STEM 科学家计划",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 3,
+      "model_candidate_id": "MAC-d5f9bab3eb36b9c8"
+    },
+    "source_span": {
+      "raw_id": "RAW-4aa9a21dbd96e5ea",
+      "start": 974,
+      "end": 1009
+    },
+    "source_quote": "申请截止时间 2026 年 9 月 30 日，工作地点位于北京市海淀区",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cab7c52e10197e26",
+    "raw_id": "RAW-8d9067c4f9a0a511",
+    "claim_type": "model_release",
+    "subject": "华为小艺 Claw 接入",
+    "predicate": "model_release",
+    "object": "，获 11.6.6.300 版本升级",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8d9067c4f9a0a511",
+      "start": 0,
+      "end": 58
+    },
+    "source_quote": "华为小艺获 11.6.6.300 版本升级，鸿蒙“龙虾”小艺 Claw 接入 Kimi K3 旗舰模型 - IT之家",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8f5aacdf7bed705b",
+    "raw_id": "RAW-8d9067c4f9a0a511",
+    "claim_type": "model_release",
+    "subject": "华为小艺 Claw 接入",
+    "predicate": "model_release",
+    "object": "，获 11.6.6.300 版本升级",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-8d9067c4f9a0a511",
+      "start": 226,
+      "end": 277
+    },
+    "source_quote": "华为小艺获 11.6.6.300 版本升级，鸿蒙“龙虾”小艺 Claw 接入 Kimi K3 旗舰模型",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9f01407d4039ed44",
+    "raw_id": "RAW-8d9067c4f9a0a511",
+    "claim_type": "model_release",
+    "subject": "华为小艺 Claw 接入",
+    "predicate": "model_release",
+    "object": "，获 11.6.6.300 版本升级",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-8d9067c4f9a0a511",
+      "start": 345,
+      "end": 436
+    },
+    "source_quote": "IT之家 7 月 23 日消息，华为小艺 App 今日迎来了 11.6.6.300 (110606300) 版本升级，更新日志显示，小艺 Claw 接入了 Kimi K3 旗舰模型。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4670d2eeb9d11168",
+    "raw_id": "RAW-8d9067c4f9a0a511",
+    "claim_type": "model_release",
+    "subject": "华为小艺 Claw 接入",
+    "predicate": "model_release",
+    "object": "，获 11.6.6.300 版本升级",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-8d9067c4f9a0a511",
+      "start": 456,
+      "end": 505
+    },
+    "source_quote": "1、小艺 Claw： 接入 Kimi K3 旗舰模型 ，多个模型自由选择，体验全面升级快来试试吧。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-898c963368e48614",
+    "raw_id": "RAW-7b6ebef6a150b7d4",
+    "claim_type": "hardware_deployment",
+    "subject": "AMD",
+    "predicate": "hardware_deployment",
+    "object": "Helios AI server",
+    "qualifiers": {
+      "event_status": "planned",
+      "sequence": 1,
+      "model_candidate_id": "MAC-152997344444da39"
+    },
+    "source_span": {
+      "raw_id": "RAW-7b6ebef6a150b7d4",
+      "start": 328,
+      "end": 380
+    },
+    "source_quote": "AMD 首席执行官苏姿丰周四表示，公司第二代 AI 服务器已全面投入生产， 预计将在今年第三季度末期出货",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -2853,6 +3508,50 @@
     "source_quote": "Elice Group Builds Nations First Edge AI Data Center with GPUs, Domestic NPUs Project combines GPUs for training, domestic NPUs for inference in industrial complex pilot",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-57e84b179dafccb4",
+    "raw_id": "RAW-da870031bec4c703",
+    "claim_type": "hardware_deployment",
+    "subject": "Nvidia",
+    "predicate": "hardware_deployment",
+    "object": "NPS Foundation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-1011d385e2028742"
+    },
+    "source_span": {
+      "raw_id": "RAW-da870031bec4c703",
+      "start": 76,
+      "end": 115
+    },
+    "source_quote": "英伟达已向与该校相关的一家非营利机构捐赠了一套搭载最新 AI 芯片的超级计算机",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1b29b0bb8094cdc7",
+    "raw_id": "RAW-da870031bec4c703",
+    "claim_type": "hardware_deployment",
+    "subject": "Nvidia",
+    "predicate": "hardware_deployment",
+    "object": "Naval Postgraduate School campus",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2,
+      "model_candidate_id": "MAC-1011d385e2028742"
+    },
+    "source_span": {
+      "raw_id": "RAW-da870031bec4c703",
+      "start": 319,
+      "end": 349
+    },
+    "source_quote": "确认其已部署在位于美国加利福尼亚州蒙特雷的海军研究生院校园内",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {

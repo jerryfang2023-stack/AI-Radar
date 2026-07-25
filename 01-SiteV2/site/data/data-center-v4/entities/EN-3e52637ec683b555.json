@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1533,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-3e52637ec683b555",
+    "name": "豆包专业版正式",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-9f6d481a09b063ee"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-25",
+    "lastSeen": "2026-06-25",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-9f6d481a09b063ee"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-9f6d481a09b063ee",
+        "dataDate": "2026-06-25",
+        "date": "2026-06-25",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "豆包专业版正式发布，接入豆包2.1 Pro模型，连续包月68元起",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "entityIds": [
+          "EN-3e52637ec683b555"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

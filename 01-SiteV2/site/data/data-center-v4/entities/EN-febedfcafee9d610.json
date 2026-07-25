@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T06:10:03.737Z",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1516,
+    "eventCount": 1533,
     "quarantinedEventCount": 16
   },
   "entity": {
@@ -21,7 +21,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-c7e1e920e54bb364"
+      "EV-c7e1e920e54bb364",
+      "EV-b76705cd8461925f"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -31,17 +32,19 @@
     "relatedEntityIds": [
       "EN-0bd85984211bd173"
     ],
-    "firstSeen": "2026-07-24",
+    "firstSeen": "2026-07-23",
     "lastSeen": "2026-07-25",
     "relationIds": [
-      "REL2-5f4972be933ff6b2"
+      "REL2-5f4972be933ff6b2",
+      "REL2-82d95dce19bccd53"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-c7e1e920e54bb364"
+        "EV-c7e1e920e54bb364",
+        "EV-b76705cd8461925f"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -58,6 +61,41 @@
         "status": "completed",
         "statusLabel": "已完成",
         "title": "Black Forest Labs 发布 FLUX 3 多模态模型，支持单次生成 20 秒视频与原生音频",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态"
+          }
+        ],
+        "entityIds": [
+          "EN-febedfcafee9d610",
+          "EN-0bd85984211bd173"
+        ]
+      },
+      {
+        "id": "EV-b76705cd8461925f",
+        "dataDate": "2026-07-24",
+        "date": "2026-07-23",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Flux 3 生成最长20秒原生音频视频，Black Forest Labs 首创",
         "displayTags": [
           {
             "dimensionId": "product_form",
@@ -99,7 +137,8 @@
       ],
       "eventIds": [
         "EV-c7e1e920e54bb364",
-        "EV-d4d03a7ad477aaa2"
+        "EV-d4d03a7ad477aaa2",
+        "EV-b76705cd8461925f"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -133,6 +172,25 @@
       ],
       "data_date": "2026-07-25",
       "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-82d95dce19bccd53",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-febedfcafee9d610",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0bd85984211bd173",
+      "object_type": "entity",
+      "event_id": "EV-b76705cd8461925f",
+      "claim_refs": [
+        "CL-d89dc531e7b6c362",
+        "CL-a72b1a9a96a542b2"
+      ],
+      "source_refs": [
+        "SA-77bf71001f334cc2"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified"
     }
   ],
   "taxonomyNodes": [
@@ -151,6 +209,7 @@
         "EV-fd21441fb6e143c3",
         "EV-c7e1e920e54bb364",
         "EV-03d40407042d7986",
+        "EV-b76705cd8461925f",
         "EV-d4278191ae11f198",
         "EV-ed272c57e1513d3f",
         "EV-9d5363657f3541e7",
@@ -267,6 +326,7 @@
         "EV-f79713437230562f",
         "EV-03d40407042d7986",
         "EV-7f92b7e410ed08f1",
+        "EV-b76705cd8461925f",
         "EV-03ab7d0b40d1e5b5",
         "EV-d4278191ae11f198",
         "EV-ed272c57e1513d3f",
@@ -275,7 +335,7 @@
         "EV-345c8a2cc00fe8ca",
         "EV-a69dd82a0512a294",
         "EV-c844ddabb8528896",
-        "EV-7fe139b107f9adc6",
+        "EV-c5a59cb4cc9d7e8e",
         "EV-d1e8407177e11fdc",
         "EV-941ba9ebdc43f20c",
         "EV-6b51b1b6fe22c540",
@@ -322,11 +382,13 @@
         "EN-a96df57737b74def",
         "EN-e2c64fbbaf48eeb2",
         "EN-68dce3237e10d795",
+        "EN-9b07ac3374166b76",
         "EN-0e6e48aba1669631",
         "EN-d77c36c05230024c",
         "EN-be548deba4a093d7",
         "EN-9c8ae69b84f21a2e",
         "EN-f0da91960830b394",
+        "EN-505ff8a27618ef39",
         "EN-c51e27d8efcff21f",
         "EN-dbd6a2f6ddb95ca7",
         "EN-954dc5d6516f127c",
@@ -334,6 +396,7 @@
         "EN-e3b1bf3dab957ffe",
         "EN-cbc62794911ff31b",
         "EN-a1b0d8a938903dc7",
+        "EN-29e1f755865493a8",
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",

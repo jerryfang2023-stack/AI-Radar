@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T06:10:03.737Z",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1516,
+    "eventCount": 1533,
     "quarantinedEventCount": 16
   },
   "node": {
@@ -27,13 +27,13 @@
       "EV-c0d19b8641a7a36c",
       "EV-e4b3a19529576778",
       "EV-a84ec4216d3ded6d",
+      "EV-4b545e310ded2baa",
       "EV-778ae7684a4d782e",
       "EV-9709ad47faf0ede2",
       "EV-86247a326e79bb88",
       "EV-d1e2a7c6d314612c",
       "EV-33717672cb5e8004",
       "EV-83b2e8f7fe679bc3",
-      "EV-2c476cb7969f399b",
       "EV-2c87c8ea47cbd1b6",
       "EV-97747aee0cafd9f3",
       "EV-bad301e14b034fbd",
@@ -58,35 +58,35 @@
       "EN-d82ff987d73882b8",
       "EN-ee04228c5c6d8b08",
       "EN-7706c3c94d5f9b59",
+      "EN-d3565d297d476f10",
       "EN-25690754dd14bd1b",
       "EN-214a50c40a4157a1",
       "EN-43381465c2b7d64e",
       "EN-c70eca6b0f88f44d",
       "EN-5e757c7fc575c41e",
       "EN-bc8a00f7f6fb535f",
-      "EN-3ccbd9105a45d8fc",
       "EN-4d748ebd71af03a7",
       "EN-c3e4cc183d345262",
       "EN-9b6ea48b511ffd60",
       "EN-bbdefa2950f49882",
       "EN-06b5472c16feae4c",
       "EN-4e721fae5963494d",
-      "EN-b5251b35f15bedc4",
       "EN-a4eee620f5a081bd",
       "EN-18b4bbfd60f4137e",
       "EN-6eedfb906b1652fb",
+      "EN-3ccbd9105a45d8fc",
       "EN-32e83e92d45d71f6"
     ],
     "fdeIds": [
+      "FDE-e79a238725a98c06",
       "FDE-e1b2683e8d017358",
       "FDE-0ee0fe3baa3f1364",
       "FDE-d0a39c8df546833a",
-      "FDE-cc943789fb1c3f3d",
       "FDE-560b710961006374",
       "FDE-ae4c44cd0de9d48a"
     ],
     "hardwareIds": [],
-    "firstSeen": "2026-03-19",
+    "firstSeen": "2026-05-22",
     "lastSeen": "2026-07-25"
   },
   "events": [
@@ -1206,6 +1206,129 @@
       "publisher": "prnewswire.com"
     },
     {
+      "id": "EV-4b545e310ded2baa",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-14",
+      "updatedDate": "2026-07-16",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "巴西银行将智能体AI嵌入核心工作流程，强化关系银行与客户互动",
+      "originalTitle": "Banco do Brasil Embeds Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE",
+      "subject": "Banco do Brasil",
+      "action": "Embeds",
+      "object": "Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE",
+      "metrics": [
+        "90 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-d3565d297d476f10",
+        "EN-96eebba49dbbf422"
+      ],
+      "entityNames": [
+        "Banco do Brasil",
+        "Intel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://nice.com/press-releases/banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-relationship-banking-and-customer-engagement",
+      "publisher": "nice.com"
+    },
+    {
       "id": "EV-778ae7684a4d782e",
       "dataDate": "2026-07-10",
       "date": "2026-07-10",
@@ -1714,113 +1837,6 @@
       "publisher": "keepingupwith.ai"
     },
     {
-      "id": "EV-2c476cb7969f399b",
-      "dataDate": "2026-07-19",
-      "date": "2026-03-19",
-      "updatedDate": "2026-07-19",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "eventGroup": "部署与案例",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
-      "originalTitle": "Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-      "subject": "Forward",
-      "action": "Deployed",
-      "object": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-      "metrics": [
-        "800%",
-        "40%",
-        "50%",
-        "70%"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "customer_service",
-            "dimensionName": "应用场景",
-            "name": "客户服务"
-          }
-        ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "financial_services",
-            "dimensionName": "行业",
-            "name": "金融服务"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "customer_service",
-          "dimensionName": "应用场景",
-          "name": "客户服务"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "customer_service",
-          "dimensionName": "应用场景",
-          "name": "客户服务"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "financial_services",
-          "dimensionName": "行业",
-          "name": "金融服务"
-        }
-      ],
-      "entityIds": [
-        "EN-3ccbd9105a45d8fc",
-        "EN-b0532e1af75cc4ab"
-      ],
-      "entityNames": [
-        "Salesforce",
-        "Rime"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human",
-      "publisher": "salesforce.com"
-    },
-    {
       "id": "EV-2c87c8ea47cbd1b6",
       "dataDate": "2026-07-09",
       "date": "2026-07-09",
@@ -2192,12 +2208,10 @@
       ],
       "entityIds": [
         "EN-4e721fae5963494d",
-        "EN-b5251b35f15bedc4",
         "EN-a4eee620f5a081bd"
       ],
       "entityNames": [
         "招商银行",
-        "Moonshot AI",
         "运通工程师信用卡"
       ],
       "productName": "运通工程师信用卡",
@@ -2205,9 +2219,7 @@
         {
           "name": "运通工程师信用卡",
           "type": "产品/服务",
-          "ownerNames": [
-            "Moonshot AI"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/964/614.htm",
@@ -2509,7 +2521,6 @@
         "EV-e941c32639167c23",
         "EV-e8d1de5c77f32b9c",
         "EV-6a7f9d990732e4e2",
-        "EV-6ae3594aadfcd3d8",
         "EV-bc4ac955cd26b969",
         "EV-88f4ee8cd57bdf42",
         "EV-ef7346378fcf9746",
@@ -2528,12 +2539,13 @@
         "EV-0b6cfbf67ba2da31",
         "EV-8b0f056571d68269",
         "EV-30ba1a24f74ccc6d",
+        "EV-4b545e310ded2baa",
         "EV-b4eb99a878be9bb2",
-        "EV-de1816770e8a2037",
         "EV-cfb7c4b4b765f53b",
         "EV-4dd25589d834060d",
         "EV-6617850e0b014051",
         "EV-c81cb21337a9bb98",
+        "EV-2f9a87bd46248fe8",
         "EV-056bb8c683ef60a4",
         "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
@@ -2579,7 +2591,7 @@
         "EV-f784003febc1d9eb",
         "EV-7e52d691a0553667",
         "EV-37cdd2fae39aaa2e",
-        "EV-1e7c76dae985100f",
+        "EV-3d1c01d3d1b0bba4",
         "EV-644337db309a1c82",
         "EV-9ae9aa86e51e64a2",
         "EV-be19904753c9c486",
@@ -2588,7 +2600,11 @@
         "EV-4e55361d8324dd49",
         "EV-97a8d86baa7fffc4",
         "EV-f89ba2b487d4abf1",
+        "EV-5a1422a9929c582e",
+        "EV-8361a47c70ecd243",
+        "EV-bff418b2959f58fb",
         "EV-c5b8faec223a4caf",
+        "EV-da062d02015f99fb",
         "EV-9eb3693cc65fbca9",
         "EV-57597c92f7b183a9",
         "EV-5493c61bcbe58aa2",
@@ -2617,13 +2633,13 @@
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
@@ -2722,7 +2738,6 @@
         "EV-d756f05478303505",
         "EV-06b294f255c0087e",
         "EV-dac8e2b1fb11403f",
-        "EV-2c476cb7969f399b",
         "EV-06487af6e98ea491",
         "EV-bb9ba11acf104db1",
         "EV-bee410f8134cba5a",
@@ -2762,9 +2777,7 @@
         "TX-technology-open_weights",
         "TX-technology-video_generation"
       ],
-      "relatedEntityIds": [
-        "EN-3ccbd9105a45d8fc"
-      ],
+      "relatedEntityIds": [],
       "firstSeen": "2026-03-11",
       "lastSeen": "2026-07-24"
     },
@@ -2786,8 +2799,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences"
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-26",
@@ -2818,14 +2831,13 @@
         "EV-aa33ca051f3a7f78",
         "EV-d4e44892226be468",
         "EV-edcb66d0401cfb8f",
-        "EV-036f43cf7a0549eb",
         "EV-336cd248842004a5",
         "EV-a42e51959c627554",
         "EV-ee0662b75588987e",
-        "EV-9055cb4fa2b4ee62",
         "EV-b1138bccf5ccd86c",
         "EV-201b25d4f3cf696a",
         "EV-d9270ae7b862212b",
+        "EV-5762fe51987bc5ff",
         "EV-7954fd5a6b8b76d0",
         "EV-7add33b4c74dbf1a",
         "EV-1abf0d076d30ec6d",
@@ -2835,13 +2847,13 @@
         "EV-acdeebead5324344",
         "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
+        "EV-a4f5d59c1b4ddce1",
         "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
         "EV-6fa2c58973ea61b4",
         "EV-e15ae1112294d59e",
         "EV-36d484148fbd3424",
         "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
         "EV-62901df23f471eea",
         "EV-538adc98d1da8fda",
         "EV-d209a6acecba4285",
@@ -2877,7 +2889,6 @@
         "EV-1ba939d8baf43207",
         "EV-5b193a038ab4ea22",
         "EV-969923b0b978a660",
-        "EV-ea6abb5378846a71",
         "EV-133a92cb6cb25a0c",
         "EV-7c836c34e7cf36ee",
         "EV-071c72225b8aaf80",
@@ -2900,7 +2911,7 @@
         "EV-b9296439f7c34c89",
         "EV-cf5b2a0aff3914bd",
         "EV-025778b83c1b2ca9",
-        "EV-4b8dffdf86ae5009",
+        "EV-34198b3eaa701a00",
         "EV-969ed3078d10f0c9",
         "EV-d7d8fcd0694a590f",
         "EV-6e7b632ee0b3410d",
@@ -2946,9 +2957,8 @@
         "EV-6364cfadff0d1d30",
         "EV-6eb9a23be3117421",
         "EV-a0d3853dd41c8ef6",
-        "EV-b26bead25288d19c",
         "EV-37cdd2fae39aaa2e",
-        "EV-1e7c76dae985100f",
+        "EV-3d1c01d3d1b0bba4",
         "EV-644337db309a1c82",
         "EV-be69ef6fcae83890",
         "EV-482df8a8ef264238",
@@ -2966,12 +2976,11 @@
         "EV-7f979d0a01e6dffa",
         "EV-f3e11eadfb7c6a4b",
         "EV-ab3586268ebfab38",
-        "EV-2cb9dbed2b2b6077",
         "EV-d6ba9ef3ff65940c",
         "EV-3f8ba5855b64dd1a",
         "EV-b73c7096546b82e8",
         "EV-f89ba2b487d4abf1",
-        "EV-57b029a4afb71044",
+        "EV-59016292a76a2c19",
         "EV-ad1444d8653b37ae",
         "EV-8f167245603f8ebc",
         "EV-fbdfb5888ad19663",
@@ -2992,6 +3001,7 @@
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
+        "EV-d709599eddf5db04",
         "EV-b30dcacd355fe5f5",
         "EV-2f7e6d3a68bbf08f",
         "EV-5cd10de5c12916f0",
@@ -3016,6 +3026,7 @@
         "EV-62df953d81def866",
         "EV-6b7917bd7edd4bde",
         "EV-e1ebf7d63e058a39",
+        "EV-933294dfb2d19a67",
         "EV-b52af7bb03c98eb0",
         "EV-9705a8de3c2e9653",
         "EV-07454824d51125ca",
@@ -3023,7 +3034,6 @@
         "EV-d29997d350e7c947",
         "EV-6defe295e6fbe61c",
         "EV-4beb890f0879aeaf",
-        "EV-4900ddf0686f4bbc",
         "EV-a46db68211837fec",
         "EV-0a0b6604250a82b8",
         "EV-a381531dd3abef18",
@@ -3040,12 +3050,12 @@
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
@@ -3217,8 +3227,8 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences"
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -3242,12 +3252,35 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-industry-manufacturing",
-        "TX-industry-healthcare_life_sciences"
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-manufacturing"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
       "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-d3565d297d476f10",
+      "name": "Banco do Brasil",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-4b545e310ded2baa"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services",
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-14",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-25690754dd14bd1b",
@@ -3327,7 +3360,6 @@
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
-        "EV-9c069dcbaf5283a2",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
         "EV-e41fc65eb014893f",
@@ -3340,13 +3372,12 @@
         "EV-e7dcecaed5a0ee5b",
         "EV-edcb66d0401cfb8f",
         "EV-8861a42a8679562a",
-        "EV-9055cb4fa2b4ee62",
-        "EV-0e84a2f49d765ce3",
         "EV-bc4ac955cd26b969",
         "EV-5d581d112fdbd464",
         "EV-201b25d4f3cf696a",
         "EV-31df816db86db282",
         "EV-d9270ae7b862212b",
+        "EV-5762fe51987bc5ff",
         "EV-cbc0b7a7d21a29e2",
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
@@ -3357,9 +3388,7 @@
         "EV-8a2d8ebbd700c787",
         "EV-2c16aa6254de4496",
         "EV-47a16db069ed320e",
-        "EV-49c6291694fb6c7b",
         "EV-fe601e081c090971",
-        "EV-ae7b6d0c134c9cad",
         "EV-d1e2a7c6d314612c",
         "EV-e1a4bc40db4a9d8f",
         "EV-c81cb21337a9bb98",
@@ -3390,23 +3419,19 @@
         "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
         "EV-3b7b9040dd2c2a89",
+        "EV-6aabfaa0c7c7f838",
+        "EV-ad111bcc8e2bd103",
         "EV-ae9f1e2cf5a28be4",
         "EV-fbc316f83b63a543",
-        "EV-fe519605ebb69aaf",
-        "EV-6cd7509380208a9d",
         "EV-3e449c3e9ad6a9e1",
         "EV-5b193a038ab4ea22",
         "EV-604cffac28a0af69",
-        "EV-4449950a89892852",
-        "EV-6ce069b1845f5a52",
         "EV-071c72225b8aaf80",
-        "EV-3043858af3970696",
         "EV-8121a1ecdf168d8a",
         "EV-cd067fa6f39fe828",
         "EV-684f286ef629ed0d",
         "EV-ab3e820aa6d92542",
         "EV-b20bf10af759bd43",
-        "EV-eb97c388b3197c06",
         "EV-83a8ac8a2554b60c",
         "EV-debecca007e547d2",
         "EV-7963d8c78531f12d",
@@ -3414,8 +3439,6 @@
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
         "EV-c2800c1c5a3f568f",
-        "EV-26cd4d692404e5c6",
-        "EV-49fcb200a72f0024",
         "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
@@ -3425,10 +3448,8 @@
         "EV-2bd337245c920bc8",
         "EV-302018f2e960a8bf",
         "EV-025778b83c1b2ca9",
-        "EV-4b8dffdf86ae5009",
         "EV-969ed3078d10f0c9",
         "EV-b920999c64aa9ef6",
-        "EV-9ba3762f6115f7d9",
         "EV-730a2f95a698a96d",
         "EV-d39b53ca7b84b9ca",
         "EV-cf317dd1579a01bb",
@@ -3436,9 +3457,7 @@
         "EV-ee9a1c99fe7054d6",
         "EV-fdcc4ff01b49053e",
         "EV-3e55e1cd1d54f6ef",
-        "EV-225ad0a94611daf3",
         "EV-cadcc94249dea81d",
-        "EV-cedeae902fd1263d",
         "EV-d60e53c8a70c656e",
         "EV-dae42c1daf8ba2f8",
         "EV-92fbbeb840a98e97",
@@ -3447,7 +3466,6 @@
         "EV-e130583e34ab9d4c",
         "EV-a2476148e8f1eec4",
         "EV-598888cce208de5c",
-        "EV-918b680f2e137559",
         "EV-d40a4e1b7a53cabe",
         "EV-51aed98773a9fca1",
         "EV-9f04529a3a216060",
@@ -3465,7 +3483,6 @@
         "EV-9c0552732b34f278",
         "EV-bf6f67c47c6b0d7c",
         "EV-2399e1055b0ab507",
-        "EV-eb02b3d3b25fe584",
         "EV-9ca7db66f8f10b63",
         "EV-0df617a9a5ac727e",
         "EV-63fdf001c22a0ed4",
@@ -3492,7 +3509,6 @@
         "EV-abf0990dcaceb1ce",
         "EV-2740cdc5243d5c47",
         "EV-46b9ae8e68164b93",
-        "EV-b26bead25288d19c",
         "EV-3ff2a155035d01e7",
         "EV-644337db309a1c82",
         "EV-b796ba14c4eba861",
@@ -3510,24 +3526,17 @@
         "EV-93da4b8cebf54e9f",
         "EV-f0caa4082916d619",
         "EV-574998b1638a3f4f",
-        "EV-002074ab1a44e4bc",
-        "EV-266aff97294156f6",
-        "EV-2af2957a10b3c198",
         "EV-534dc9add1c0cc35",
         "EV-60c27ec9b857f5c2",
         "EV-cec69087dc8992e0",
         "EV-7d0605aa7edf5e50",
         "EV-ab3586268ebfab38",
         "EV-832fa2db95cfea6e",
-        "EV-f2acdcbe3b644340",
-        "EV-2cb9dbed2b2b6077",
         "EV-461b38cb8f56b067",
         "EV-57f083a39393d841",
         "EV-a695ff8c1cff8c64",
-        "EV-adbdaa251b42ec79",
         "EV-689538e8159887de",
         "EV-68fcce7fde89e5d7",
-        "EV-6af31d42885e0361",
         "EV-7133e378762edda5",
         "EV-b0145ffd99b55e66",
         "EV-c7a2774b07554f5d",
@@ -3536,12 +3545,8 @@
         "EV-f1418d9e3b1413b7",
         "EV-f5dd192f6d4e04a3",
         "EV-2eabd03665cbdef7",
-        "EV-3371b45e53949464",
-        "EV-9127c613a365044b",
         "EV-c5b8faec223a4caf",
-        "EV-f6611268f119a172",
         "EV-ad1444d8653b37ae",
-        "EV-d83bfcd73c850580",
         "EV-03a6077b5d3f4475",
         "EV-dbeae330706b53ca",
         "EV-7f9631d793292d07",
@@ -3550,22 +3555,23 @@
         "EV-ce291577f61b8543",
         "EV-773ffcc6e1df56fa",
         "EV-2923b35d936d9f4e",
+        "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-ae9142b65fa86975",
+        "EV-d709599eddf5db04",
         "EV-7b2a272a891f54d1",
         "EV-89bdda008227fb6b",
-        "EV-ae9142b65fa86975",
         "EV-33fba8931cca96d5",
         "EV-22c88b4ff8c7d8d8",
         "EV-bf8086947a2639d4",
         "EV-61053b02542f0fcc",
         "EV-e6a7926fdb42b95a",
-        "EV-94e1f1a5cea15eae",
         "EV-0990915063eb75a0",
-        "EV-36a9b1b961f8e3b2",
         "EV-2d56dec8dfeb2b56",
         "EV-e1fa30136e2e12f1",
         "EV-62df953d81def866",
+        "EV-933294dfb2d19a67",
         "EV-0e7bfa49eb4ae5b2",
         "EV-d49da50484ba781f",
         "EV-0c541092e3ba6dac",
@@ -3577,12 +3583,10 @@
         "EV-ad269fada2269f35",
         "EV-710b145230faa692",
         "EV-32a5af8d5ef80073",
-        "EV-4900ddf0686f4bbc",
         "EV-5e4db66a00cb2158",
         "EV-77ddb45e31018552",
         "EV-143af8b89b984bff",
         "EV-7580a050ca19a8ae",
-        "EV-5208aa6dcd06cecb",
         "EV-a381531dd3abef18",
         "EV-d8be3852cb83a361",
         "EV-366c3fce7982b83b",
@@ -3599,11 +3603,11 @@
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -3627,6 +3631,7 @@
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
+        "EN-cb4754c48f8023d0",
         "EN-830abc32d2a443c5",
         "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
@@ -3637,7 +3642,6 @@
         "EN-3a13916345b60fad",
         "EN-5a4c2be958c0af72",
         "EN-968e2d5b08687bf4",
-        "EN-cb4754c48f8023d0",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
         "EN-e65e0f2695fa259d",
@@ -3695,50 +3699,6 @@
       "lastSeen": "2026-06-07"
     },
     {
-      "id": "EN-3ccbd9105a45d8fc",
-      "name": "Salesforce",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-15cc72d7c78cad3d",
-        "EV-9300044a58395552",
-        "EV-4e7a32c9ee893918",
-        "EV-236cbc2d64f0c455",
-        "EV-14a666fc27d73a80",
-        "EV-fb5d2ae875255804",
-        "EV-f020dd198aa2f952",
-        "EV-cc7020e12bcaa0d7",
-        "EV-d9270ae7b862212b",
-        "EV-3f8f6a578be79988",
-        "EV-8b73e88ffd3569b2",
-        "EV-2c476cb7969f399b",
-        "EV-30d7f1c5dc8ea464",
-        "EV-9009adaed650ddde",
-        "EV-11a8e196deb21300",
-        "EV-f7aa6d43b75238fb"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-use_case-enterprise_operations",
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service"
-      ],
-      "relatedEntityIds": [
-        "EN-b0532e1af75cc4ab"
-      ],
-      "firstSeen": "2023-03-21",
-      "lastSeen": "2026-07-19"
-    },
-    {
       "id": "EN-4d748ebd71af03a7",
       "name": "Accenture",
       "entityType": "organization_candidate",
@@ -3751,7 +3711,6 @@
       "eventIds": [
         "EV-640c5ea9f4fa2780",
         "EV-bbab0dff2f55a4f6",
-        "EV-49c6291694fb6c7b",
         "EV-eb2b4ee2c8cb0daa",
         "EV-01df8e489a34893b",
         "EV-2c87c8ea47cbd1b6",
@@ -3820,12 +3779,15 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-9b81b0dd09a046ab",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
         "EV-78a11d309c3d4e97",
@@ -3834,19 +3796,18 @@
         "EV-0e84a2f49d765ce3",
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
+        "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
         "EV-38232fed5e0cfdd6",
         "EV-e7b228c1b6b54c6a",
         "EV-cf76f090a1a20a36",
         "EV-ff1f6119de13fa19",
         "EV-cec235426920c522",
-        "EV-b96493767e5cf645",
-        "EV-029d34e296397775",
+        "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
         "EV-5a9fe80f8e4ae066",
         "EV-b4b5d141dac164c2",
         "EV-36a9e4e908249381",
-        "EV-8ab833e13ecaa916",
         "EV-98496cc86bacb1e0",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
@@ -3855,6 +3816,7 @@
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
         "EV-2634b786bde9fb8e",
+        "EV-6aabfaa0c7c7f838",
         "EV-c914ac00a35d7cf0",
         "EV-c9d7b46d167df2d1",
         "EV-5b193a038ab4ea22",
@@ -3888,7 +3850,6 @@
         "EV-9254af7aaedaafbe",
         "EV-04ee2bc4ac888358",
         "EV-96c8ce4ee89adb84",
-        "EV-225ad0a94611daf3",
         "EV-caec65aef89d3b4a",
         "EV-cabc88e1d09dec80",
         "EV-cc3b92fe233953cf",
@@ -3934,14 +3895,12 @@
         "EV-3ef3e18df61a00d8",
         "EV-4bb5b24400e49ea4",
         "EV-568d2aeab5234e48",
-        "EV-97a8d86baa7fffc4",
         "EV-0ad758b04b9b5313",
         "EV-c08837795f9e16d2",
         "EV-4a3cb762183581cd",
         "EV-5a1422a9929c582e",
         "EV-bff418b2959f58fb",
         "EV-a591b0c96f79de45",
-        "EV-e878e56967902718",
         "EV-5493c61bcbe58aa2",
         "EV-cac9d9f31ef675ce",
         "EV-dab4d3f2059e8880",
@@ -3949,10 +3908,11 @@
         "EV-d53cd33e8f541a65",
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
+        "EV-8115dd18f2812a29",
+        "EV-909cf18b467d6fdf",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
         "EV-3e9a0d1be6de5096",
-        "EV-48e17a3ba4b73550",
         "EV-848bdd13f319c516",
         "EV-8cd7665e40729256",
         "EV-2d56dec8dfeb2b56",
@@ -3979,6 +3939,7 @@
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-use_case-robotics_automation",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
@@ -3986,6 +3947,7 @@
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
+        "TX-technology-model_context_protocol",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
@@ -4001,12 +3963,14 @@
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
+        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -4060,60 +4024,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-06-16"
-    },
-    {
-      "id": "EN-b5251b35f15bedc4",
-      "name": "Moonshot AI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "月之暗面"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-5be48cce8dc4f3de",
-        "EV-0e4bddfd5c129618",
-        "EV-eec1e6857f0e0b2b",
-        "EV-fd21441fb6e143c3",
-        "EV-0d5a32aca724d30e",
-        "EV-26a71ab785014e54",
-        "EV-1b03e5dff76a50a1",
-        "EV-5caf7f83664b1a2c",
-        "EV-2cb9dbed2b2b6077",
-        "EV-75002e9da530c90b",
-        "EV-77042592591657bf",
-        "EV-6af31d42885e0361",
-        "EV-8e6f9c324aa0b2f3",
-        "EV-e878e56967902718",
-        "EV-e9a86c47da229331",
-        "EV-773ffcc6e1df56fa",
-        "EV-94e1f1a5cea15eae",
-        "EV-74b965de27bc0515"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-technology-vision_language",
-        "TX-technology-code_generation",
-        "TX-technology-long_context",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-industry-media_entertainment"
-      ],
-      "relatedEntityIds": [
-        "EN-607964040e4b62e0",
-        "EN-eb732565c71e6b85",
-        "EN-2cfed21b7a971267",
-        "EN-23bc2a854bc0cfb0",
-        "EN-b57c95289680078c"
-      ],
-      "firstSeen": "2026-05-19",
-      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-a4eee620f5a081bd",
@@ -4180,6 +4090,47 @@
       "lastSeen": "2026-06-18"
     },
     {
+      "id": "EN-3ccbd9105a45d8fc",
+      "name": "Salesforce",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-15cc72d7c78cad3d",
+        "EV-9300044a58395552",
+        "EV-4e7a32c9ee893918",
+        "EV-236cbc2d64f0c455",
+        "EV-14a666fc27d73a80",
+        "EV-fb5d2ae875255804",
+        "EV-f020dd198aa2f952",
+        "EV-cc7020e12bcaa0d7",
+        "EV-d9270ae7b862212b",
+        "EV-3f8f6a578be79988",
+        "EV-8b73e88ffd3569b2",
+        "EV-30d7f1c5dc8ea464",
+        "EV-9009adaed650ddde",
+        "EV-11a8e196deb21300",
+        "EV-f7aa6d43b75238fb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2023-03-21",
+      "lastSeen": "2026-07-15"
+    },
+    {
       "id": "EN-32e83e92d45d71f6",
       "name": "AI",
       "entityType": "organization_candidate",
@@ -4207,37 +4158,34 @@
   ],
   "fde": [
     {
-      "id": "FDE-cc943789fb1c3f3d",
-      "eventId": "EV-2c476cb7969f399b",
-      "dataDate": "2026-07-19",
-      "date": "2026-03-19",
-      "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
+      "id": "FDE-e79a238725a98c06",
+      "eventId": "EV-4b545e310ded2baa",
+      "dataDate": "2026-07-16",
+      "date": "2026-07-14",
+      "title": "巴西银行将智能体AI嵌入核心工作流程，强化关系银行与客户互动",
       "stage": "completed",
       "stageLabel": "已完成",
-      "customer": "Salesforce",
-      "vendor": "Rime",
+      "customer": "Banco do Brasil",
+      "vendor": "未披露",
       "industry": "未披露",
-      "useCase": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-      "reportedNeed": "companies adopt AI agents at breakneck speed but need expertise to actually deploy them",
+      "useCase": "Agentic AI into Core Workflows to Strengthen Relationship Banking and Customer Engagement | NiCE",
+      "reportedNeed": "未披露",
       "deliveryComponents": [
-        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human",
-        "Sarah Khalid was three years into her career as a Success Architect at Salesforce when her team restructured and she found herself in a role she hadn’t planned on, couldn’t fully define, and wasn’t sure existed yet. “I didn’t plan on becoming an FDE,” she said. “It’s something that I grew into.” Forward deployed engineers (FDEs) saw an 800% spike in job postings between January and September 2025, according to an analysis by Indeed and the Financial Times, as companies adopt AI agents at breakneck speed but need expertise to actually deploy them. FDEs exist to close that gap. They code, consult, and translate agentic AI into working solutions, often while sitting side by side with the customer. Similar to when Harvard Business Review deemed data scientist “the sexiest job of the 21st century” due to a rare combination of technical chops and business savvy, both roles prove that transformative technology doesn’t eliminate jobs. It creates entirely new ones we couldn’t have imagined a few years prior. Now history is repeating itself, just faster. How do I know when AI is wrong, when AI is right, how it can solve the right problem?",
-        "” Around 40% to 50% of FDE movement at Salesforce is internal. The company built a six-week onboarding program in September 2025 with two weeks of focused technical training and four weeks on the job to bridge the gap. For anyone eyeing the role from the outside, Hickin’s advice is simple: “Become the AI expert in the job that you’re in. Experiment with the tool, figure out how it can solve problems in your team. Then you become a kind of quasi-FDE within your own job.” Related How We Cut Inference Spend by Right-Sizing Our Models 8 min read Slackbot Can Now Do Anything Salesforce Can. Just Ask. Trust builder AI has already changed what the job demands internally. FDEs once spent up to 40% of their time on administrative preparation, including summarizing meetings, pulling account histories, and drafting status updates. That’s largely automated now. “Now they can spend their time on hacking, building, figuring out the customer issue,” Hickin said. “Human jobs become more human.” Khalid explained what this looks like in practice: She once worked with a tech customer whose AI agent was targeting a 70% deflection rate for their customer service function. That figure became the North Star to add functionality, optimize, and move the needle. When they hit it, the customer expanded to a second use case. She also described a time when an insurance company demanded accuracy and response time targets. Khalid admitted that the technical side was hard. It required experimenting with different LLM models and prompt engineering on the back end. But what nearly derailed the engagement had nothing to do with code. This company, like many others, was experimenting with a variety of solutions. So she said, “It also required a lot of nontechnical skills: how to deal with that customer, how to make them not want to give up on Agentforce. And make them trust.” That account didn’t turn on a technical breakthrough. It turned on rebuilding confidence. “There’s not much coding involved,” Khalid reflected. “It’s actually more judgment, trust, and communication skills. And not something that AI can replace.” Work, redefined Back in 2012, the data scientist role looked like something only a narrow slice of specialists could do. A decade later, data literacy had become a baseline expectation across job functions. Hickin sees the FDE role charting the same arc. It won’t be a specialty forever but a leading indicator of where technical work is heading: closer to the customer, more dependent on judgment, and more human than the job title implies. Khalid, reflecting on the FDE acronym, has her own proposal: future defining engineers. “We’re not just defining the AI part,” she said. “We’re also defining how this role itself will shape out in the future.” It’s clever. And after what happened with data science, it’s hard to argue with. Go Deeper: Read why today’s hottest role is the forward deployed engineer Learn how Agentforce inspired three FDEs to return to Salesforce Learn how the role of the developer has changed in the agentic AI era",
-        "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human"
+        "Deployment of NiCE Copilot enables relationship managers and banking teams to deliver more personalized, efficient, and compliant service at scale",
+        "Hoboken, NJ, July 14, 2026 — NiCE (NASDAQ: NICE) today announced that Banco do Brasil, one of Latin America's largest financial institutions, is leveraging NiCE Copilot to accelerate operational excellence and elevate customer service across its organization. Embedded natively within the unified NiCE CXone AI platform used by relationship managers and banking assistants, NiCE Copilot brings agentic AI-powered guidance and automation into everyday banking workflows. This seamless experience enables employees to work more efficiently, make informed decisions in real time, and deliver personalized compliant customer interactions – all from a single, integrated workspace."
       ],
       "outcomes": [],
       "metrics": [
-        "800%",
-        "40%",
-        "50%",
-        "40%",
-        "70%"
+        "90 million"
       ],
       "undisclosedFields": [
+        "vendor",
         "industry",
+        "workflow_before",
         "workflow_after",
         "delivery_model",
         "team_composition",
+        "reported_need",
         "systems_integrated",
         "data_requirements",
         "governance_controls",
@@ -4251,10 +4199,10 @@
           "name": "智能体"
         }
       ],
-      "sourceUrl": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human",
+      "sourceUrl": "https://nice.com/press-releases/banco-do-brasil-embeds-agentic-ai-into-core-workflows-to-strengthen-relationship-banking-and-customer-engagement",
       "entityIds": [
-        "EN-3ccbd9105a45d8fc",
-        "EN-b0532e1af75cc4ab"
+        "EN-d3565d297d476f10",
+        "EN-96eebba49dbbf422"
       ]
     },
     {
@@ -4271,7 +4219,9 @@
       "useCase": "Bring Agentic Workflows for Market Intelligence to Enterprises",
       "reportedNeed": "未披露",
       "deliveryComponents": [],
-      "outcomes": [],
+      "outcomes": [
+        "Investment made through Accenture Ventures ; partnership aims to enable enterprises to make faster, trusted, and higher-quality decisions with AI"
+      ],
       "metrics": [],
       "undisclosedFields": [
         "industry",
@@ -4283,8 +4233,7 @@
         "systems_integrated",
         "data_requirements",
         "governance_controls",
-        "reported_delivery_components",
-        "reported_outcomes"
+        "reported_delivery_components"
       ],
       "tags": [
         {

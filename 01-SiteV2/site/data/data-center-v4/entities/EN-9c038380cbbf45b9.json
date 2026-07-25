@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1533,
+    "quarantinedEventCount": 16
+  },
+  "entity": {
+    "id": "EN-9c038380cbbf45b9",
+    "name": "ADP与斯坦福联合",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-791fd35b1da3ef01"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-11",
+    "lastSeen": "2026-06-11",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-791fd35b1da3ef01"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-791fd35b1da3ef01",
+        "dataDate": "2026-06-11",
+        "date": "2026-06-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "ADP与斯坦福联合推出Canaries Dashboard，实时追踪AI对职业重塑的影响",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9c038380cbbf45b9",
+          "EN-978d2a2dd71d5d71",
+          "EN-000b49c7b8eea1a1"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

@@ -44,10 +44,15 @@ test("frontstage adapter builds real V4 data collections", () => {
 test("person index contains reviewed natural people while preserving all viewpoint records", () => {
   const data = buildFrontstageData(root);
   const source = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/first-line-viewpoints-v4.json"), "utf8"));
+  const review = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json"), "utf8"));
   const peopleByName = new Map(data.people.map((person) => [person.name, person]));
+  const reviewedNaturalNames = new Set(review.decisions
+    .filter((decision) => decision.review_status === "accepted" && decision.action !== "quarantine" && decision.canonical?.catalog_type === "person")
+    .map((decision) => decision.canonical.name));
   const forbiddenAccounts = ["Ben's Bites AI Newsletter", "Claude", "Dataiku Blog", "Google Labs", "Tigera Blog (Calico / AI Security)", "TLDR AI Newsletter"];
 
-  assert.equal(data.people.length, 31);
+  assert.ok(data.people.length >= reviewedNaturalNames.size);
+  assert.ok([...reviewedNaturalNames].every((name) => peopleByName.has(name)));
   assert.equal(data.viewpoints.length, source.remarks.length);
   assert.ok(forbiddenAccounts.every((name) => !peopleByName.has(name)));
   assert.ok(peopleByName.get("Jack Clark")?.aliases.includes("Import AI (Jack Clark)"));

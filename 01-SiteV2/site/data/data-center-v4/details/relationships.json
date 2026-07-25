@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T06:10:03.737Z",
+    "generatedAt": "2026-07-25T07:23:22.462Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
-    "eventCount": 1516,
+    "eventCount": 1533,
     "quarantinedEventCount": 16
   },
   "relationships": [
@@ -1024,6 +1024,62 @@
       }
     },
     {
+      "relationship_id": "REL2-82d95dce19bccd53",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-febedfcafee9d610",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0bd85984211bd173",
+      "object_type": "entity",
+      "event_id": "EV-b76705cd8461925f",
+      "claim_refs": [
+        "CL-d89dc531e7b6c362",
+        "CL-a72b1a9a96a542b2"
+      ],
+      "source_refs": [
+        "SA-77bf71001f334cc2"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified",
+      "subjectName": "Black Forest Labs",
+      "objectName": "Flux 3",
+      "predicateLabel": "发布",
+      "title": "Black Forest Labs 发布 Flux 3",
+      "eventTitle": "Flux 3 生成最长20秒原生音频视频，Black Forest Labs 首创",
+      "eventDate": "2026-07-23",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-d89dc531e7b6c362",
+          "subject": "Black Forest Labs",
+          "object": "Flux 3",
+          "quote": "The German AI company Black Forest Labs has released Flux 3, a multimodal foundation model that learns from images, videos, and audio simultaneously."
+        },
+        {
+          "id": "CL-a72b1a9a96a542b2",
+          "subject": "Black Forest Labs",
+          "object": "Flux-mimic",
+          "quote": "the company has developed Flux-mimic, a video action model for robotics applications, which is already being tested at Audi."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-77bf71001f334cc2",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/flux-3-generates-videos-with-native-audio-up-to-20-seconds-long-a-first-for-black-forest-labs"
+        }
+      ],
+      "sourceExcerpt": "The German AI company Black Forest Labs has released Flux 3, a multimodal foundation model that learns from images, videos, and audio simultaneously.",
+      "event": {
+        "id": "EV-b76705cd8461925f",
+        "title": "Flux 3 生成最长20秒原生音频视频，Black Forest Labs 首创",
+        "originalTitle": "Flux 3 generates videos with native audio up to 20 seconds long, a first for Black Forest Labs",
+        "date": "2026-07-23",
+        "dataDate": "2026-07-24",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-8ca78070c3a7f6af",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -1055,6 +1111,76 @@
           "subject": "Anthropic",
           "object": "Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
           "quote": "Anthropic has released the Claude Security plugin for Claude Code in beta. The plugin runs a multi-agent vulnerability scan of a repository from inside an existing Claude Code session, then turns the findings you select into patch files that you review and apply yourself. Anthropic emphasized the tool’s versatility upon announcement, highlighting its capability to either run a comprehensive scan across the full codebase or inspect changes from the terminal right before a commit."
+        },
+        {
+          "id": "CL-c6075e977dbdf266",
+          "subject": "Anthropic",
+          "object": "Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
+          "quote": "If the marketplace is not found, run /plugin marketplace add anthropics/claude-plugins-official first. The plugin source is public in the claude-plugins-official repository , currently at version 0.10.0."
+        },
+        {
+          "id": "CL-4a0c5302a5bcc60c",
+          "subject": "Anthropic",
+          "object": "Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
+          "quote": "/plugin install claude-security@claude-plugins-official"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-430830a640f17413",
+          "publisher": "MarkTechPost（RSS）",
+          "url": "https://marktechpost.com/2026/07/22/anthropic-releases-claude-security-plugin-for-claude-code-in-beta-a-multi-agent-vulnerability-scanner-that-runs-in-your-terminal"
+        }
+      ],
+      "sourceExcerpt": "Anthropic has released the Claude Security plugin for Claude Code in beta. The plugin runs a multi-agent vulnerability scan of a repository from inside an existing Claude Code session, then turns the findings you select into patch files that you review and apply yourself. Anthropic emphasized the tool’s versatility upon announcement, highlighting its capability to either run a comprehensive scan across the full codebase or inspect changes from the terminal right before a commit.",
+      "event": {
+        "id": "EV-ae9f1e2cf5a28be4",
+        "title": "Anthropic 发布 Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
+        "originalTitle": "",
+        "date": "2026-07-23",
+        "dataDate": "2026-07-24",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-a352560206a1ac3f",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-cb4754c48f8023d0",
+      "object_type": "entity",
+      "event_id": "EV-ae9f1e2cf5a28be4",
+      "claim_refs": [
+        "CL-8fb93499974e477c",
+        "CL-ec9cd7e9023cb1e5",
+        "CL-c6075e977dbdf266",
+        "CL-4a0c5302a5bcc60c"
+      ],
+      "source_refs": [
+        "SA-430830a640f17413"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified",
+      "subjectName": "Anthropic",
+      "objectName": "Claude Code",
+      "predicateLabel": "发布",
+      "title": "Anthropic 发布 Claude Code",
+      "eventTitle": "Anthropic 发布 Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
+      "eventDate": "2026-07-23",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-8fb93499974e477c",
+          "subject": "Anthropic",
+          "object": "Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
+          "quote": "Anthropic has released the Claude Security plugin for Claude Code in beta. The plugin runs a multi-agent vulnerability scan of a repository from inside an existing Claude Code session, then turns the findings you select into patch files that you review and apply yourself. Anthropic emphasized the tool’s versatility upon announcement, highlighting its capability to either run a comprehensive scan across the full codebase or inspect changes from the terminal right before a commit."
+        },
+        {
+          "id": "CL-ec9cd7e9023cb1e5",
+          "subject": "Anthropic",
+          "object": "Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
+          "quote": "The plugin adds a single command, /claude-security, which opens a menu of three jobs, per the official documentation :"
         },
         {
           "id": "CL-c6075e977dbdf266",
@@ -2529,6 +2655,69 @@
       }
     },
     {
+      "relationship_id": "REL2-40a53a0ef359ae41",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9c8ae69b84f21a2e",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-a1adb91065c5a347",
+      "object_type": "entity",
+      "event_id": "EV-aa25937649956e62",
+      "claim_refs": [
+        "CL-8534300715d70ca9",
+        "CL-be36d2ff56774584",
+        "CL-e4172d1c01bf9805"
+      ],
+      "source_refs": [
+        "SA-da00cac9480c4026"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified",
+      "subjectName": "腾讯",
+      "objectName": "Hyra-1.0",
+      "predicateLabel": "发布",
+      "title": "腾讯 发布 Hyra-1.0",
+      "eventTitle": "腾讯混元发布科学发现智能体 Hyra，能够递归自我改进",
+      "eventDate": "2026-07-21",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-8534300715d70ca9",
+          "subject": "腾讯混元",
+          "object": "科学发现智能体 Hyra，能够递归自我改进",
+          "quote": "IT之家 7 月 21 日消息，腾讯混元今日推出 Hyra-1.0 ，这是 Hyra（Hunyuan Research Agent）的首个版本：一个能够递归自我改进、专为性能导向的研究与工程任务打造的智能体。"
+        },
+        {
+          "id": "CL-be36d2ff56774584",
+          "subject": "腾讯混元",
+          "object": "科学发现智能体 Hyra，能够递归自我改进",
+          "quote": "腾讯表示，除了公开基准，它还能在产品系统里，在真实的 AI 研发流水线上，在自然科学研究乃至工业场景里学习和进化。"
+        },
+        {
+          "id": "CL-e4172d1c01bf9805",
+          "subject": "腾讯混元",
+          "object": "科学发现智能体 Hyra，能够递归自我改进",
+          "quote": "过去一年，递归自我改进（RSI）与自动化研究成为 AI 领域最活跃的前沿问题之一。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-da00cac9480c4026",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/979/440.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 7 月 21 日消息，腾讯混元今日推出 Hyra-1.0 ，这是 Hyra（Hunyuan Research Agent）的首个版本：一个能够递归自我改进、专为性能导向的研究与工程任务打造的智能体。",
+      "event": {
+        "id": "EV-aa25937649956e62",
+        "title": "腾讯混元发布科学发现智能体 Hyra，能够递归自我改进",
+        "originalTitle": "",
+        "date": "2026-07-21",
+        "dataDate": "2026-07-22",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-7a766493d6d54dde",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-8d4321d936320802",
@@ -2648,62 +2837,69 @@
       }
     },
     {
-      "relationship_id": "REL2-965fadef05255157",
+      "relationship_id": "REL2-9ad2c97e765910d9",
       "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9c8ae69b84f21a2e",
+      "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
-      "object_ref": "EN-a1adb91065c5a347",
+      "object_ref": "EN-18f0900d6c487f59",
       "object_type": "entity",
-      "event_id": "EV-423c7293d6a91086",
+      "event_id": "EV-597b8257a97b3d02",
       "claim_refs": [
-        "CL-8534300715d70ca9",
-        "CL-be36d2ff56774584",
-        "CL-e4172d1c01bf9805"
+        "CL-bcf6cc5593de2a0f",
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
       ],
       "source_refs": [
-        "SA-da00cac9480c4026"
+        "SA-a3cf2c06935ba536"
       ],
       "data_date": "2026-07-22",
       "status": "verified",
-      "subjectName": "腾讯",
-      "objectName": "Hyra-1.0",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.6 Flash",
       "predicateLabel": "发布",
-      "title": "腾讯 发布 Hyra-1.0",
-      "eventTitle": "腾讯混元发布科学发现智能体 Hyra，能够递归自我改进",
+      "title": "Google 发布 Gemini 3.6 Flash",
+      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
       "eventDate": "2026-07-21",
       "sourceCount": 1,
       "claims": [
         {
-          "id": "CL-8534300715d70ca9",
-          "subject": "腾讯混元",
-          "object": "科学发现智能体 Hyra，能够递归自我改进",
-          "quote": "IT之家 7 月 21 日消息，腾讯混元今日推出 Hyra-1.0 ，这是 Hyra（Hunyuan Research Agent）的首个版本：一个能够递归自我改进、专为性能导向的研究与工程任务打造的智能体。"
+          "id": "CL-bcf6cc5593de2a0f",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家"
         },
         {
-          "id": "CL-be36d2ff56774584",
-          "subject": "腾讯混元",
-          "object": "科学发现智能体 Hyra，能够递归自我改进",
-          "quote": "腾讯表示，除了公开基准，它还能在产品系统里，在真实的 AI 研发流水线上，在自然科学研究乃至工业场景里学习和进化。"
+          "id": "CL-1407e158e3017631",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber"
         },
         {
-          "id": "CL-e4172d1c01bf9805",
-          "subject": "腾讯混元",
-          "object": "科学发现智能体 Hyra，能够递归自我改进",
-          "quote": "过去一年，递归自我改进（RSI）与自动化研究成为 AI 领域最活跃的前沿问题之一。"
+          "id": "CL-bcccc3f03d4b38a9",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "IT之家 7 月 21 日消息，谷歌今日发布了三款新的人工智能模型，包括性能最强的 Gemini 3.6 Flash，以及专门针对网络安全优化的 Gemini 3.5 Flash Cyber。"
+        },
+        {
+          "id": "CL-910d21a1f5ab0b3c",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "今年以来，这两家 AI 公司相继推出了能够发现软件安全漏洞的先进模型，在网络安全领域占据了领先地位。"
         }
       ],
       "sources": [
         {
-          "id": "SA-da00cac9480c4026",
+          "id": "SA-a3cf2c06935ba536",
           "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/979/440.htm"
+          "url": "https://ithome.com/0/979/795.htm"
         }
       ],
-      "sourceExcerpt": "IT之家 7 月 21 日消息，腾讯混元今日推出 Hyra-1.0 ，这是 Hyra（Hunyuan Research Agent）的首个版本：一个能够递归自我改进、专为性能导向的研究与工程任务打造的智能体。",
+      "sourceExcerpt": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家",
       "event": {
-        "id": "EV-423c7293d6a91086",
-        "title": "腾讯混元发布科学发现智能体 Hyra，能够递归自我改进",
+        "id": "EV-597b8257a97b3d02",
+        "title": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
         "originalTitle": "",
         "date": "2026-07-21",
         "dataDate": "2026-07-22",
@@ -3729,6 +3925,7 @@
       "event_id": "EV-73da0805f2a2705a",
       "claim_refs": [
         "CL-24e2ebe5e7237190",
+        "CL-cf8b4e905696494d",
         "CL-223c0fcb1f49a1e2"
       ],
       "source_refs": [
@@ -3749,6 +3946,12 @@
           "subject": "Sunday Robotics",
           "object": "ACT-2，在陌生家庭叠衣成功率超 99%",
           "quote": "当地时间周四，总部位于美国旧金山湾区的 Sunday Robotics 发布了新一代机器人 AI 模型 ACT-2，该模型将应用于旗下轮式家庭机器人 Memo。"
+        },
+        {
+          "id": "CL-cf8b4e905696494d",
+          "subject": "Sunday Robotics",
+          "object": "ACT-2，在陌生家庭叠衣成功率超 99%",
+          "quote": "Sunday Robotics 联合创始人兼 CEO Tony Zhao 在接受 Business Insider 采访时表示：“我认为，这项突破将大幅缩短家庭自主机器人的落地时间，2026 年有望成为这一行业的重要转折点。"
         },
         {
           "id": "CL-223c0fcb1f49a1e2",
@@ -3838,14 +4041,14 @@
       }
     },
     {
-      "relationship_id": "REL2-bbcc9c6f8833c7a9",
+      "relationship_id": "REL2-864e90102e2f8429",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-be548deba4a093d7",
       "subject_type": "entity",
       "predicate": "publishes",
       "object_ref": "EN-8d57f84bd1847b24",
       "object_type": "entity",
-      "event_id": "EV-25933b8f123f92be",
+      "event_id": "EV-2499dc922663af7e",
       "claim_refs": [
         "CL-0f1f468fa12c19e8",
         "CL-66ab652cb281000c"
@@ -3885,7 +4088,7 @@
       ],
       "sourceExcerpt": "荣耀李健 WAIC 宣布 Robot Phone 开启预约：搭载 Agentic OS，8 月份发布 - IT之家",
       "event": {
-        "id": "EV-25933b8f123f92be",
+        "id": "EV-2499dc922663af7e",
         "title": "荣耀 WAIC 宣布 Robot Phone 开启预约：搭载 Agentic OS，8 月发布",
         "originalTitle": "",
         "date": "2026-07-18",
@@ -4066,76 +4269,6 @@
         "date": "2026-07-18",
         "dataDate": "2026-07-19",
         "eventTypeLabel": "模型发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-ddba6ef3ef6a76e3",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-b0532e1af75cc4ab",
-      "subject_type": "entity",
-      "predicate": "serves",
-      "object_ref": "EN-3ccbd9105a45d8fc",
-      "object_type": "entity",
-      "event_id": "EV-2c476cb7969f399b",
-      "claim_refs": [
-        "CL-d8e1679532388b27",
-        "CL-73d64eeaf17f9064",
-        "CL-7f03341aebc9aa21",
-        "CL-5e7c19759022c3ed"
-      ],
-      "source_refs": [
-        "SA-a1e0e6f7fc5e76d7"
-      ],
-      "data_date": "2026-07-19",
-      "status": "verified",
-      "subjectName": "Rime",
-      "objectName": "Salesforce",
-      "predicateLabel": "服务",
-      "title": "Rime 服务 Salesforce",
-      "eventTitle": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
-      "eventDate": "2026-03-19",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-d8e1679532388b27",
-          "subject": "Forward",
-          "object": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-          "quote": "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human"
-        },
-        {
-          "id": "CL-73d64eeaf17f9064",
-          "subject": "Forward",
-          "object": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-          "quote": "Sarah Khalid was three years into her career as a Success Architect at Salesforce when her team restructured and she found herself in a role she hadn’t planned on, couldn’t fully define, and wasn’t sure existed yet. “I didn’t plan on becoming an FDE,” she said. “It’s something that I grew into.” Forward deployed engineers (FDEs) saw an 800% spike in job postings between January and September 2025, according to an analysis by Indeed and the Financial Times, as companies adopt AI agents at breakneck speed but need expertise to actually deploy them. FDEs exist to close that gap. They code, consult, and translate agentic AI into working solutions, often while sitting side by side with the custom…"
-        },
-        {
-          "id": "CL-7f03341aebc9aa21",
-          "subject": "Forward",
-          "object": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-          "quote": "” Around 40% to 50% of FDE movement at Salesforce is internal. The company built a six-week onboarding program in September 2025 with two weeks of focused technical training and four weeks on the job to bridge the gap. For anyone eyeing the role from the outside, Hickin’s advice is simple: “Become the AI expert in the job that you’re in. Experiment with the tool, figure out how it can solve problems in your team. Then you become a kind of quasi-FDE within your own job.” Related How We Cut Inference Spend by Right-Sizing Our Models 8 min read Slackbot Can Now Do Anything Salesforce Can. Just Ask. Trust builder AI has already changed what the job demands internally. FDEs once spent up to 40% o…"
-        },
-        {
-          "id": "CL-5e7c19759022c3ed",
-          "subject": "Forward",
-          "object": "Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-          "quote": "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-a1e0e6f7fc5e76d7",
-          "publisher": "salesforce.com",
-          "url": "https://salesforce.com/news/stories/forward-deployed-engineers-making-ai-jobs-more-human"
-        }
-      ],
-      "sourceExcerpt": "How Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human",
-      "event": {
-        "id": "EV-2c476cb7969f399b",
-        "title": "前线部署工程师证明AI让技术岗位更人性化 - Salesforce",
-        "originalTitle": "Forward Deployed Engineers Are Proving AI Makes Tech Jobs More Human - Salesforce",
-        "date": "2026-03-19",
-        "dataDate": "2026-07-19",
-        "eventTypeLabel": "部署"
       }
     },
     {
@@ -4374,6 +4507,55 @@
         "date": "2026-07-18",
         "dataDate": "2026-07-18",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-5f0d9f90c84e1075",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9c8ae69b84f21a2e",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-f0da91960830b394",
+      "object_type": "entity",
+      "event_id": "EV-c5a59cb4cc9d7e8e",
+      "claim_refs": [
+        "CL-1be9daf2f0c5860e"
+      ],
+      "source_refs": [
+        "SA-ca524be9e3a83ec0"
+      ],
+      "data_date": "2026-07-18",
+      "status": "verified",
+      "subjectName": "腾讯",
+      "objectName": "Hy-Embodied-VLM-1.0",
+      "predicateLabel": "发布",
+      "title": "腾讯 发布 Hy-Embodied-VLM-1.0",
+      "eventTitle": "腾讯发布具身 VLM 基座模型 Hy-Embodied-VLM-1.0，A3B 规模性能接近上一代 A32B 模型",
+      "eventDate": "2026-07-17",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-1be9daf2f0c5860e",
+          "subject": "腾讯 Robotics X 实验室、福田实验室联合腾讯混元",
+          "object": "Hy-Embodied-VLM-1.0",
+          "quote": "腾讯 Robotics X 实验室、福田实验室联合腾讯混元打造的第二代具身 VLM 基座模型 Hy-Embodied-VLM-1.0 昨日正式发布。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ca524be9e3a83ec0",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/978/080.htm"
+        }
+      ],
+      "sourceExcerpt": "腾讯 Robotics X 实验室、福田实验室联合腾讯混元打造的第二代具身 VLM 基座模型 Hy-Embodied-VLM-1.0 昨日正式发布。",
+      "event": {
+        "id": "EV-c5a59cb4cc9d7e8e",
+        "title": "腾讯发布具身 VLM 基座模型 Hy-Embodied-VLM-1.0，A3B 规模性能接近上一代 A32B 模型",
+        "originalTitle": "",
+        "date": "2026-07-17",
+        "dataDate": "2026-07-18",
+        "eventTypeLabel": "模型发布"
       }
     },
     {
@@ -4638,55 +4820,6 @@
         "date": "2026-07-16",
         "dataDate": "2026-07-18",
         "eventTypeLabel": "硬件部署"
-      }
-    },
-    {
-      "relationship_id": "REL2-eaa7022bd15b8aad",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-9c8ae69b84f21a2e",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-f0da91960830b394",
-      "object_type": "entity",
-      "event_id": "EV-7fe139b107f9adc6",
-      "claim_refs": [
-        "CL-1be9daf2f0c5860e"
-      ],
-      "source_refs": [
-        "SA-ca524be9e3a83ec0"
-      ],
-      "data_date": "2026-07-18",
-      "status": "verified",
-      "subjectName": "腾讯",
-      "objectName": "Hy-Embodied-VLM-1.0",
-      "predicateLabel": "发布",
-      "title": "腾讯 发布 Hy-Embodied-VLM-1.0",
-      "eventTitle": "腾讯发布具身 VLM 基座模型 Hy-Embodied-VLM-1.0，A3B 规模性能接近上一代 A32B 模型",
-      "eventDate": "2026-07-17",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-1be9daf2f0c5860e",
-          "subject": "腾讯 Robotics X 实验室、福田实验室联合腾讯混元",
-          "object": "Hy-Embodied-VLM-1.0",
-          "quote": "腾讯 Robotics X 实验室、福田实验室联合腾讯混元打造的第二代具身 VLM 基座模型 Hy-Embodied-VLM-1.0 昨日正式发布。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-ca524be9e3a83ec0",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/978/080.htm"
-        }
-      ],
-      "sourceExcerpt": "腾讯 Robotics X 实验室、福田实验室联合腾讯混元打造的第二代具身 VLM 基座模型 Hy-Embodied-VLM-1.0 昨日正式发布。",
-      "event": {
-        "id": "EV-7fe139b107f9adc6",
-        "title": "腾讯发布具身 VLM 基座模型 Hy-Embodied-VLM-1.0，A3B 规模性能接近上一代 A32B 模型",
-        "originalTitle": "",
-        "date": "2026-07-17",
-        "dataDate": "2026-07-18",
-        "eventTypeLabel": "模型发布"
       }
     },
     {
@@ -6172,6 +6305,76 @@
         "date": "2026-07-15",
         "dataDate": "2026-07-16",
         "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-f92ee2f782a8185b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0e008e2c06144ec8",
+      "object_type": "entity",
+      "event_id": "EV-6359c9f6c2609a38",
+      "claim_refs": [
+        "CL-3c3d4af5e069787d",
+        "CL-714aa682873fac8b",
+        "CL-b606f6b126922962",
+        "CL-4a7039df083c3152"
+      ],
+      "source_refs": [
+        "SA-b894cd4477812b65"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Nano Banana",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Nano Banana",
+      "eventTitle": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
+      "eventDate": "2026-07-15",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-3c3d4af5e069787d",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 - IT之家"
+        },
+        {
+          "id": "CL-714aa682873fac8b",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能"
+        },
+        {
+          "id": "CL-b606f6b126922962",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "IT之家 7 月 15 日消息，谷歌昨日（7 月 14 日）发布博文，宣布庆祝谷歌图片（Google Image）功能上线 25 周年，并推出新功能： 用户在 AI 概览中，可以直接调用 Nano Banana 模型自定义生成图片。"
+        },
+        {
+          "id": "CL-4a7039df083c3152",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌为庆祝谷歌图片服务上线 25 周年，在 AI 概览中新增生图功能，谷歌表示："
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b894cd4477812b65",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/976/980.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 - IT之家",
+      "event": {
+        "id": "EV-6359c9f6c2609a38",
+        "title": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
+        "originalTitle": "",
+        "date": "2026-07-15",
+        "dataDate": "2026-07-16",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -10438,69 +10641,6 @@
       }
     },
     {
-      "relationship_id": "REL2-96579082da72d315",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-cbc62794911ff31b",
-      "subject_type": "entity",
-      "predicate": "serves",
-      "object_ref": "EN-9fbf261b62c1d7c0",
-      "object_type": "entity",
-      "event_id": "EV-49c6291694fb6c7b",
-      "claim_refs": [
-        "CL-bf1895460dba3240",
-        "CL-7f51040e45fca777",
-        "CL-e4bdd3c2b84aada6"
-      ],
-      "source_refs": [
-        "SA-e94393958a88bbef"
-      ],
-      "data_date": "2026-07-03",
-      "status": "verified",
-      "subjectName": "Amazon",
-      "objectName": "Microsoft",
-      "predicateLabel": "服务",
-      "title": "Amazon 服务 Microsoft",
-      "eventTitle": "微软推出自有AI部署公司，投入25亿美元",
-      "eventDate": "2026-07-02",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-bf1895460dba3240",
-          "subject": "微软推出自有AI",
-          "object": "公司，投入25亿美元",
-          "quote": "In a statement announcing the venture, Microsoft’s Commercial Business CEO Judson Althoff resisted the Forward Deployed Engineer (FDE) label that is often applied to these ventures. “This goes beyond what has been labeled as Forward-Deployed Engineering,” Althoff wrote, “and will be the largest, most capable, outcome-driven engineering organization in the industry.”"
-        },
-        {
-          "id": "CL-7f51040e45fca777",
-          "subject": "微软推出自有AI",
-          "object": "公司，投入25亿美元",
-          "quote": "Nonetheless, the venture bears a striking similarity to a number of FDE-based AI ventures announced in recent months. Just two days earlier , Amazon Web Services announced an internal commitment of $1 billion for its own AI deployment venture, explicitly embracing the FDE model. Both OpenAI and Anthropic have launched joint ventures along similar lines, although those efforts also involve outside capital from private equity firms."
-        },
-        {
-          "id": "CL-e4bdd3c2b84aada6",
-          "subject": "微软推出自有AI",
-          "object": "公司，投入25亿美元",
-          "quote": "Microsoft’s existing client base will give the new effort a significant head start, as the company has already deployed engineers to much of the Fortune 500. The announcement cites an early partnership with the London Stock Exchange Group, as well as Unilever, Land O’Lakes, and Accenture."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-e94393958a88bbef",
-          "publisher": "TechCrunch：AI（RSS）",
-          "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment"
-        }
-      ],
-      "sourceExcerpt": "In a statement announcing the venture, Microsoft’s Commercial Business CEO Judson Althoff resisted the Forward Deployed Engineer (FDE) label that is often applied to these ventures. “This goes beyond what has been labeled as Forward-Deployed Engineering,” Althoff wrote, “and will be the largest, most capable, outcome-driven engineering organization in the industry.”",
-      "event": {
-        "id": "EV-49c6291694fb6c7b",
-        "title": "微软推出自有AI部署公司，投入25亿美元",
-        "originalTitle": "",
-        "date": "2026-07-02",
-        "dataDate": "2026-07-03",
-        "eventTypeLabel": "部署"
-      }
-    },
-    {
       "relationship_id": "REL2-a29518b4e034cde5",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bdedcf7e3b01508b",
@@ -11093,6 +11233,76 @@
         "date": "2026-06-30",
         "dataDate": "2026-07-01",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-638b55900181fbf2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-01f1074bb52ff605",
+      "object_type": "entity",
+      "event_id": "EV-d8c69ed782b73a34",
+      "claim_refs": [
+        "CL-b5bc8b4e766de0ef",
+        "CL-dbee760c0db43fab",
+        "CL-72f47e56c761bde4",
+        "CL-9fdeb9adf922c9da"
+      ],
+      "source_refs": [
+        "SA-cb3a20fe357ba722"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Nano Banana 2 Lite",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Nano Banana 2 Lite",
+      "eventTitle": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+      "eventDate": "2026-07-01",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b5bc8b4e766de0ef",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜 - IT之家"
+        },
+        {
+          "id": "CL-dbee760c0db43fab",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜"
+        },
+        {
+          "id": "CL-72f47e56c761bde4",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "IT之家 7 月 1 日消息，当地时间周二，谷歌发布了新款自研 AI 图像与视频生成模型 Nano Banana 2 Lite，宣称 相比上一代速度更快、使用成本更低 。"
+        },
+        {
+          "id": "CL-9fdeb9adf922c9da",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "Nano Banana 2 Lite 可在 4 秒内生成一张图像 ，延迟较此前明显下降，适合需要快速反复修改方案，或在短时间内批量生成大量图像的工作，每生成 1000 张图像 仅收费 0.034 美元 （IT之家注：现汇率约合 0.23 元人民币）。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-cb3a20fe357ba722",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/970/812.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜 - IT之家",
+      "event": {
+        "id": "EV-d8c69ed782b73a34",
+        "title": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+        "originalTitle": "",
+        "date": "2026-07-01",
+        "dataDate": "2026-07-01",
+        "eventTypeLabel": "模型发布"
       }
     },
     {
@@ -13821,6 +14031,69 @@
       }
     },
     {
+      "relationship_id": "REL2-7a95bce5aecaba79",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-2ab6d53e717a0e0d",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-bbdefa2950f49882",
+      "object_type": "entity",
+      "event_id": "EV-d1a3f5c8045e548d",
+      "claim_refs": [
+        "CL-5758242d40096958",
+        "CL-108011dcac3f51c9",
+        "CL-6816c5ea4abdfa87"
+      ],
+      "source_refs": [
+        "SA-572f0e8d4b983d74"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified",
+      "subjectName": "诺基亚",
+      "objectName": "Google",
+      "predicateLabel": "合作",
+      "title": "诺基亚 合作 Google",
+      "eventTitle": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
+      "eventDate": "2026-06-22",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-5758242d40096958",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台 - IT之家"
+        },
+        {
+          "id": "CL-108011dcac3f51c9",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台"
+        },
+        {
+          "id": "CL-6816c5ea4abdfa87",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "IT之家 6 月 22 日消息，谷歌云与诺基亚当地时间 6 月 22 日宣布扩展合作关系，将谷歌 Gemini 模型整合至诺基亚网络软件套件 Nokia Assurance Center。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-572f0e8d4b983d74",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/967/200.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台 - IT之家",
+      "event": {
+        "id": "EV-d1a3f5c8045e548d",
+        "title": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
+        "originalTitle": "",
+        "date": "2026-06-22",
+        "dataDate": "2026-06-23",
+        "eventTypeLabel": "合作"
+      }
+    },
+    {
       "relationship_id": "REL2-7cd349866749f667",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-81baf57e05f11276",
@@ -13993,6 +14266,55 @@
         "date": "2026-06-22",
         "dataDate": "2026-06-23",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-daef12892d96ece0",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1cd41545564777ce",
+      "object_type": "entity",
+      "event_id": "EV-3f23ddb47fc652a4",
+      "claim_refs": [
+        "CL-df5ef5e62cf87b4e"
+      ],
+      "source_refs": [
+        "SA-930b59dccfe7ca7d"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "TPU v9",
+      "predicateLabel": "发布",
+      "title": "Google 发布 TPU v9",
+      "eventTitle": "郭明錤：谷歌开发 TPU v9 芯片推理优化升级款，联发科接单",
+      "eventDate": "2026-06-22",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-df5ef5e62cf87b4e",
+          "subject": "谷歌",
+          "object": "TPU v9 芯片推理优化升级款",
+          "quote": "谷歌将在代号 \"Humufish\" 的 TPU v9 自有 AI 芯片基础上推出一个旨在提高推理能力的升级改款"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-930b59dccfe7ca7d",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/966/901.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌将在代号 \"Humufish\" 的 TPU v9 自有 AI 芯片基础上推出一个旨在提高推理能力的升级改款",
+      "event": {
+        "id": "EV-3f23ddb47fc652a4",
+        "title": "郭明錤：谷歌开发 TPU v9 芯片推理优化升级款，联发科接单",
+        "originalTitle": "",
+        "date": "2026-06-22",
+        "dataDate": "2026-06-23",
+        "eventTypeLabel": "硬件产品"
       }
     },
     {
@@ -16501,6 +16823,76 @@
       }
     },
     {
+      "relationship_id": "REL2-44ebd8a7378accce",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-22b8d155ce027905",
+      "claim_refs": [
+        "CL-0ffd4a87d0bf9a23",
+        "CL-9a3abffb4df3b677",
+        "CL-53bc4ba62a2c55fb",
+        "CL-c0d954c60d8247d3"
+      ],
+      "source_refs": [
+        "SA-30fb0e04917bc0f3"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "DiffusionGemma",
+      "predicateLabel": "发布",
+      "title": "Google 发布 DiffusionGemma",
+      "eventTitle": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
+      "eventDate": "2026-06-11",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-0ffd4a87d0bf9a23",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍 - IT之家"
+        },
+        {
+          "id": "CL-9a3abffb4df3b677",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍"
+        },
+        {
+          "id": "CL-53bc4ba62a2c55fb",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "IT之家 6 月 11 日消息，谷歌今天（6 月 11 日）发布公告，宣布推出 DiffusionGemma，是基于文本扩散机制的开放 AI 模型， 相比较自回归模型在本地推理速度上提升了 4 倍。"
+        },
+        {
+          "id": "CL-c0d954c60d8247d3",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "开源方面，该模型能力与其他 Gemma 4 模型相当，但推理效率显著更高。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-30fb0e04917bc0f3",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/962/696.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍 - IT之家",
+      "event": {
+        "id": "EV-22b8d155ce027905",
+        "title": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
+        "originalTitle": "",
+        "date": "2026-06-11",
+        "dataDate": "2026-06-11",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-48cdf6bd8d397fed",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -17502,6 +17894,76 @@
       }
     },
     {
+      "relationship_id": "REL2-4aa175c42153e014",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4baef0e41cbd7ae2",
+      "object_type": "entity",
+      "event_id": "EV-4a3cb762183581cd",
+      "claim_refs": [
+        "CL-b487cc8855f09bf4",
+        "CL-5b9c208e3329948f",
+        "CL-a0bae28c89384d4f",
+        "CL-c2d89368f69456e3"
+      ],
+      "source_refs": [
+        "SA-b6f2cdfb3b2eff0e"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.5 Live Translate",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.5 Live Translate",
+      "eventTitle": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b487cc8855f09bf4",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "IT之家 6 月 9 日消息，北京时间 9 日（今天）晚间，谷歌正式发布 最新的实时语音互译音频模型 Gemini 3.5 Live Translate，迈出实时翻译的下一步。"
+        },
+        {
+          "id": "CL-5b9c208e3329948f",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "Gemini 3.5 Live Translate 可自动识别 70 多种语言，并生成流畅、自然的翻译语音，同时保留说话者的语调、语速和音高 。"
+        },
+        {
+          "id": "CL-a0bae28c89384d4f",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "根据介绍，传统轮流式系统通常要等说话者说完后才开始翻译，Gemini 3.5 Live Translate 则会连续生成语音，在“等待更多上下文以提升翻译质量”和“即时翻译以跟上说话者节奏”之间取得平衡。"
+        },
+        {
+          "id": "CL-c2d89368f69456e3",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "Gemini 3.5 Live Translate 今起陆续登陆谷歌产品："
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b6f2cdfb3b2eff0e",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/962/143.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 6 月 9 日消息，北京时间 9 日（今天）晚间，谷歌正式发布 最新的实时语音互译音频模型 Gemini 3.5 Live Translate，迈出实时翻译的下一步。",
+      "event": {
+        "id": "EV-4a3cb762183581cd",
+        "title": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+        "originalTitle": "",
+        "date": "2026-06-09",
+        "dataDate": "2026-06-10",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-572d299c04663eb3",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -18412,55 +18874,6 @@
       }
     },
     {
-      "relationship_id": "REL2-338bba178ea2fddd",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-45cbca5f78f1ef44",
-      "subject_type": "entity",
-      "predicate": "founds",
-      "object_ref": "EN-0decbc3b45f73b2b",
-      "object_type": "entity",
-      "event_id": "EV-a9e22f22b7a2ec53",
-      "claim_refs": [
-        "CL-b967f75e7c42d240"
-      ],
-      "source_refs": [
-        "SA-a56643474da704ec"
-      ],
-      "data_date": "2026-06-06",
-      "status": "verified",
-      "subjectName": "Thomas Dohmke",
-      "objectName": "Entire",
-      "predicateLabel": "创立",
-      "title": "Thomas Dohmke 创立 Entire",
-      "eventTitle": "前GitHub CEO Thomas Dohmke 获6000万美元融资创立Entire，打造面向AI智能体的下一代开发者平台",
-      "eventDate": "2026-06-07",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-b967f75e7c42d240",
-          "subject": "Ex-GitHub CEO Thomas Dohmke",
-          "object": "Entire with $60M to Build the Next Developer Platform for AI Agents | The Agent Report",
-          "quote": "Thomas Dohmke , who led GitHub through its exponential growth under Microsoft and oversaw the launch of GitHub Copilot — the product that arguably kicked off the AI coding revolution — has unveiled Entire , a new company building what he calls “the world’s next developer platform.” The company launches with a $60 million seed round co-led by Felicis, with participation from Madrona, M12 (Microsoft’s venture arm), Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-a56643474da704ec",
-          "publisher": "the-agent-report.com",
-          "url": "https://the-agent-report.com/2026/05/ex-github-ceo-entire-60m-developer-platform-ai-agents"
-        }
-      ],
-      "sourceExcerpt": "Thomas Dohmke , who led GitHub through its exponential growth under Microsoft and oversaw the launch of GitHub Copilot — the product that arguably kicked off the AI coding revolution — has unveiled Entire , a new company building what he calls “the world’s next developer platform.” The company launches with a $60 million seed round co-led by Felicis, with participation from Madrona, M12 (Microsoft’s venture arm), Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital.",
-      "event": {
-        "id": "EV-a9e22f22b7a2ec53",
-        "title": "前GitHub CEO Thomas Dohmke 获6000万美元融资创立Entire，打造面向AI智能体的下一代开发者平台",
-        "originalTitle": "Ex-GitHub CEO Thomas Dohmke Launches Entire with $60M to Build the Next Developer Platform for AI Agents | The Agent Report",
-        "date": "2026-06-07",
-        "dataDate": "2026-06-06",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
       "relationship_id": "REL2-45b70013bdfe1030",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-047364b9be67f665",
@@ -18507,55 +18920,6 @@
         "date": "2026-06-06",
         "dataDate": "2026-06-06",
         "eventTypeLabel": "模型发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-552d149680ec5195",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-0decbc3b45f73b2b",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-8da473e7fc7e1edf",
-      "object_type": "entity",
-      "event_id": "EV-a9e22f22b7a2ec53",
-      "claim_refs": [
-        "CL-f449cdd84412379e"
-      ],
-      "source_refs": [
-        "SA-a56643474da704ec"
-      ],
-      "data_date": "2026-06-06",
-      "status": "verified",
-      "subjectName": "Entire",
-      "objectName": "Entire CLI",
-      "predicateLabel": "发布",
-      "title": "Entire 发布 Entire CLI",
-      "eventTitle": "前GitHub CEO Thomas Dohmke 获6000万美元融资创立Entire，打造面向AI智能体的下一代开发者平台",
-      "eventDate": "2026-06-07",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-f449cdd84412379e",
-          "subject": "Ex-GitHub CEO Thomas Dohmke",
-          "object": "Entire with $60M to Build the Next Developer Platform for AI Agents | The Agent Report",
-          "quote": "The announcement, published on Entire’s blog , comes with an immediate open-source release: the Entire CLI , a tool that captures the reasoning, decisions, and constraints behind every line of AI-generated code and stores them as Git-compatible checkpoints."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-a56643474da704ec",
-          "publisher": "the-agent-report.com",
-          "url": "https://the-agent-report.com/2026/05/ex-github-ceo-entire-60m-developer-platform-ai-agents"
-        }
-      ],
-      "sourceExcerpt": "Thomas Dohmke , who led GitHub through its exponential growth under Microsoft and oversaw the launch of GitHub Copilot — the product that arguably kicked off the AI coding revolution — has unveiled Entire , a new company building what he calls “the world’s next developer platform.” The company launches with a $60 million seed round co-led by Felicis, with participation from Madrona, M12 (Microsoft’s venture arm), Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital.",
-      "event": {
-        "id": "EV-a9e22f22b7a2ec53",
-        "title": "前GitHub CEO Thomas Dohmke 获6000万美元融资创立Entire，打造面向AI智能体的下一代开发者平台",
-        "originalTitle": "Ex-GitHub CEO Thomas Dohmke Launches Entire with $60M to Build the Next Developer Platform for AI Agents | The Agent Report",
-        "date": "2026-06-07",
-        "dataDate": "2026-06-06",
-        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -19108,9 +19472,7 @@
       "event_id": "EV-84b423077bf8dac8",
       "claim_refs": [
         "CL-b6b1072028503622",
-        "CL-4f5262b60356be81",
-        "CL-17ce1177ae238cca",
-        "CL-b8976f2d223a2c5c"
+        "CL-4f5262b60356be81"
       ],
       "source_refs": [
         "SA-d462112294641e76"
@@ -19136,18 +19498,6 @@
           "subject": "PYMNTS | AWS",
           "object": "AI Agent Marketplace as ‘One-Stop Shop’",
           "quote": "AWS has launched an AI agent marketplace with more than 900 listings — bundling agents, tools and guardrails into a single procurement platform."
-        },
-        {
-          "id": "CL-17ce1177ae238cca",
-          "subject": "PYMNTS | AWS",
-          "object": "AI Agent Marketplace as ‘One-Stop Shop’",
-          "quote": "Amazon Web Services (AWS) has launched a new artificial intelligence (AI) agent marketplace aimed at simplifying how businesses find, deploy and manage these autonomous bots."
-        },
-        {
-          "id": "CL-b8976f2d223a2c5c",
-          "subject": "PYMNTS | AWS",
-          "object": "AI Agent Marketplace as ‘One-Stop Shop’",
-          "quote": "The AWS executive said the launch comes amid rising interest in enterprise interest in agentic AI, or AI systems capable of autonomous decision-making and task execution. AWS is positioning its marketplace as the central hub to meet that demand."
         }
       ],
       "sources": [

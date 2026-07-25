@@ -183,7 +183,7 @@
   },
   {
     "event_type": "deployment",
-    "event_status": "announced",
+    "event_status": "completed",
     "event_time": "",
     "disclosed_at": "2026-07-05T04:56:15.246Z",
     "entities": [
@@ -199,10 +199,15 @@
       "CL-64069b3c66a96cda",
       "CL-e117de5a77e2c8db",
       "CL-d8d845610963e4ca",
-      "CL-f8bb1ca01003e783"
+      "CL-f8bb1ca01003e783",
+      "CL-fa57fd4c4e856128",
+      "CL-4279ddb27dfea432",
+      "CL-2dc3b72fe2e3245e",
+      "CL-2e131fdf25f4969c"
     ],
     "source_refs": [
-      "SA-a03b8fd01bfc4e80"
+      "SA-a03b8fd01bfc4e80",
+      "SA-9db8a55bda91df9c"
     ],
     "conflicts": [],
     "missing_fields": [
@@ -212,7 +217,12 @@
       {
         "source_ref": "SA-a03b8fd01bfc4e80",
         "disclosed_at": "2026-07-05T04:56:15.246Z",
-        "status": "announced"
+        "status": "completed"
+      },
+      {
+        "source_ref": "SA-9db8a55bda91df9c",
+        "disclosed_at": "2026-02-16T00:00:00.000Z",
+        "status": "completed"
       }
     ],
     "publication_status": "verified",
@@ -264,7 +274,8 @@
     "event_time": "2026-07-04T18:11:33.000Z",
     "disclosed_at": "2026-07-04T18:11:33.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d"
+      "EN-c70eca6b0f88f44d",
+      "EN-cb4754c48f8023d0"
     ],
     "action": "开源工具",
     "object": "pxpipe 将文本隐藏到 PNG 中，削减 Claude Code 和 Fable 5 的 token 成本高达 70%",
@@ -300,7 +311,6 @@
     "event_time": "2026-07-05T01:00:48.000Z",
     "disclosed_at": "2026-07-05T01:00:48.000Z",
     "entities": [
-      "EN-c70eca6b0f88f44d",
       "EN-6c987a027caae8d8"
     ],
     "action": "model_release",
@@ -325,7 +335,7 @@
       }
     ],
     "publication_status": "verified",
-    "event_id": "EV-918b680f2e137559",
+    "event_id": "EV-d70d4bc3a0be6655",
     "display_title_zh": "sqlite-utils 4.0rc2，主要由 Claude Fable 编写（花费约 149.25 美元）"
   },
   {
