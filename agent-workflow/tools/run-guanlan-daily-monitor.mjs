@@ -3449,7 +3449,7 @@ const keywordSearchPaths = [
     label: "官方原始路径",
     role: "verify company actions, product changes and official claims",
     method: "ddg",
-    querySuffix: "(official OR blog OR changelog OR docs OR API OR SDK OR pricing OR customer story OR partnership OR launch)",
+    querySuffix: "(official OR newsroom OR press release OR company blog OR changelog OR docs OR customer story OR case study OR contract award OR production deployment)",
   },
   {
     id: "developer_ecosystem",
@@ -3470,14 +3470,14 @@ const keywordSearchPaths = [
     label: "行业落地路径",
     role: "find industry adoption, workflows and customer scenarios",
     method: "ddg",
-    querySuffix: "(industry use case OR customer case OR vertical SaaS OR consulting report OR workflow OR adoption)",
+    querySuffix: "(official customer story OR case study OR production deployment OR procurement contract OR workflow rollout OR adoption)",
   },
   {
     id: "fde_implementation",
     label: "Enterprise AI / FDE implementation path",
     role: "find FDE, applied AI, customer engineering, pilot, production rollout, procurement and vertical workflow deployment evidence",
     method: "ddg",
-    querySuffix: "(FDE OR \"forward deployed\" OR \"applied AI\" OR \"customer engineering\" OR \"technical scoping\" OR \"production rollout\" OR \"pilot customer\" OR \"customer story\" OR \"case study\")",
+    querySuffix: "(FDE OR \"forward deployed\" OR \"applied AI\" OR \"customer engineering\" OR \"technical scoping\" OR \"production rollout\" OR \"pilot customer\" OR \"customer story\" OR \"case study\") (official OR newsroom OR press release OR company blog)",
   },
   {
     id: "ai_hardware_original",
@@ -3489,9 +3489,9 @@ const keywordSearchPaths = [
   {
     id: "procurement_marketplace",
     label: "采购 / 招投标 / Marketplace 路径",
-    role: "find procurement, marketplace, app store and job signal",
+    role: "find public procurement notices, awarded contracts and named production deployments",
     method: "ddg",
-    querySuffix: "(procurement OR tender OR marketplace OR app store OR AWS Marketplace OR Azure Marketplace OR job description)",
+    querySuffix: "(procurement notice OR tender award OR contract awarded OR purchasing agreement OR production deployment) (official OR government OR newsroom OR press release)",
   },
   {
     id: "a_media_gdelt",
@@ -3531,6 +3531,10 @@ function selectQueriesForPath(allQueries, pathConfig) {
     const dedicated = fdeQueries.filter((query) => query.query_theme === "enterprise-ai-implementation-signal");
     const fallback = fdeQueries.filter((query) => query.query_theme !== "enterprise-ai-implementation-signal");
     if (fdeQueries.length) return [...dedicated, ...fallback].slice(0, limit);
+  }
+  if (pathConfig.id === "procurement_marketplace") {
+    const procurementQueries = allQueries.filter((query) => /procurement|tender|contract award|purchasing agreement|public sector|production deployment/iu.test(query.query || ""));
+    if (procurementQueries.length) return procurementQueries.slice(0, limit);
   }
   if (pathConfig.id === "ai_hardware_original") {
     const hardwareQueries = allQueries.filter((query) => /AI hardware|AI chip|AI accelerator|inference chip|GPU cluster|AI server|AI data center|AI factory|semiconductor|HBM|edge AI|on-device AI hardware|robotics hardware|humanoid robot/iu.test(query.query || ""));
@@ -3578,7 +3582,14 @@ function selectQueriesForPath(allQueries, pathConfig) {
 }
 
 function queryRecencyHintForPath(pathConfig) {
-  if (!new Set(["capital_startup", "ai_hardware_original"]).has(pathConfig.id)) return "";
+  if (!new Set([
+    "official_original",
+    "capital_startup",
+    "industry_landing",
+    "fde_implementation",
+    "ai_hardware_original",
+    "procurement_marketplace",
+  ]).has(pathConfig.id)) return "";
   const [year, monthValue] = date.split("-");
   const month = [
     "January", "February", "March", "April", "May", "June",
@@ -3592,6 +3603,8 @@ async function runQuerySelectionRegressionFixtures() {
     { query: "AI product launch official", query_theme: "mature-commercial-signal" },
     { query: "AI developer SDK release", query_theme: "developer-ecosystem-signal" },
     { query: "AI customer deployment case", query_theme: "industry-landing-signal" },
+    { query: "enterprise AI production rollout customer story", query_theme: "enterprise-ai-implementation-signal" },
+    { query: "public sector AI procurement contract awarded", query_theme: "enterprise-ai-implementation-signal" },
     { query: "AI regulation market", query_theme: "market-structure-signal" },
     { query: "AI startup seed funding", query_theme: "capital-market-signal" },
     { query: "vertical AI company raises Series A", query_theme: "important-funding" },
@@ -3628,6 +3641,14 @@ async function runQuerySelectionRegressionFixtures() {
   const hardwareRecencyHint = queryRecencyHintForPath(pathConfigById("ai_hardware_original"));
   if (!new RegExp(`^announced [A-Z][a-z]+ ${date.slice(0, 4)}$`, "u").test(hardwareRecencyHint)) {
     throw new Error(`AI hardware path omitted the production-month recency hint: ${hardwareRecencyHint}`);
+  }
+  const selectedFde = selectQueriesForPath(queries, pathConfigById("fde_implementation"));
+  if (!selectedFde.some((query) => query.query_theme === "enterprise-ai-implementation-signal")) {
+    throw new Error(`FDE path omitted its dedicated implementation query: ${JSON.stringify(selectedFde)}`);
+  }
+  const selectedProcurement = selectQueriesForPath(queries, pathConfigById("procurement_marketplace"));
+  if (!selectedProcurement.length || selectedProcurement.some((query) => !/procurement|tender|contract award|purchasing agreement|public sector|production deployment/iu.test(query.query))) {
+    throw new Error(`procurement path selected non-procurement queries: ${JSON.stringify(selectedProcurement)}`);
   }
   const poolGapRequests = refillRequestsForPoolState(
     { gaps: [], poolCount: 100, routedCount: 100, coreCount: 100 },
@@ -4704,15 +4725,15 @@ async function runSourceOnly() {
 
 const targetedRefillQueriesByImportance = {
   important_case: [
-    `enterprise AI agent customer story deployment announced ${date.slice(0, 4)}`,
-    `AI platform case study production rollout customer ${date.slice(0, 4)}`,
-    `enterprise AI agent customer adopts production rollout case study ${date.slice(0, 4)}`,
-    `AI agent pilot customer production rollout case study ${date.slice(0, 4)}`,
+    `enterprise AI customer story production deployment official ${date.slice(0, 4)}`,
+    `AI platform case study production rollout customer newsroom ${date.slice(0, 4)}`,
+    `enterprise AI procurement contract awarded official ${date.slice(0, 4)}`,
+    `AI agent pilot customer production rollout press release ${date.slice(0, 4)}`,
   ],
   important_funding: [
-    `AI agent startup raises seed Series A funding ${date.slice(0, 4)}`,
-    `vertical AI startup funding enterprise agents announced ${date.slice(0, 4)}`,
-    `AI workflow automation startup raises venture funding ${date.slice(0, 4)}`,
+    `AI agent startup raises seed Series A funding company announcement ${date.slice(0, 4)}`,
+    `vertical AI startup funding enterprise agents investor announcement ${date.slice(0, 4)}`,
+    `AI workflow automation startup raises venture funding newsroom ${date.slice(0, 4)}`,
   ],
   important_product_or_service: [
     `AI agent product launch enterprise workflow platform announced ${date.slice(0, 4)}`,

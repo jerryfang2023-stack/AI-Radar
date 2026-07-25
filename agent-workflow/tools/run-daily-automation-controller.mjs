@@ -147,13 +147,17 @@ function recovery() {
   ]);
   const firstLine = firstLineRecovery();
   const community = communityRecovery();
-  const ok = business.ok && firstLine.ok && community.ok;
+  const healthOk = business.ok && firstLine.ok && community.ok;
   return {
-    ok,
-    status: ok ? "passed_or_waiting" : "targeted_repair_required",
+    ok: true,
+    healthOk,
+    status: healthOk ? "passed_or_waiting" : "targeted_repair_required",
     lanes: { business, first_line_viewpoints: firstLine, community_intelligence: community },
     actions: [business, ...firstLine.actions, ...community.actions],
-    notes: [community.note].filter(Boolean),
+    notes: [
+      community.note,
+      healthOk ? "" : "Each lane completed its own check; one unhealthy lane did not block the others.",
+    ].filter(Boolean),
   };
 }
 
@@ -182,11 +186,64 @@ function closure() {
   };
 }
 
+function finalClosure() {
+  const supervision = run("Final daily supervision", process.execPath, [
+    "agent-workflow/tools/write-daily-supervision-report.mjs",
+    `--date=${date}`,
+    "--hermes=off",
+    "--force-afternoon-window=true",
+    ...(dryRun ? ["--github=false", "--scheduled-task=false"] : []),
+  ], 300_000);
+  const evidenceSupply = run("Evidence supply health", process.execPath, [
+    "agent-workflow/tools/write-evidence-supply-health-report.mjs",
+    `--date=${date}`,
+  ]);
+  const recurringIncidents = run("Recurring issue repair tasks", process.execPath, [
+    "agent-workflow/tools/write-recurring-production-incidents.mjs",
+    `--date=${date}`,
+    "--days=7",
+    "--threshold=2",
+  ]);
+  const supervisionPayload = (() => {
+    try {
+      return JSON.parse(fs.readFileSync(
+        path.join(reportsDir, `${date}-daily-supervision-report.json`),
+        "utf8",
+      ));
+    } catch {
+      return null;
+    }
+  })();
+  const supervisionReported = Boolean(supervisionPayload);
+  const supervisionAction = {
+    ...supervision,
+    ok: supervisionReported,
+    health_status: supervisionPayload?.status || "report_missing",
+  };
+  const executionOk = supervisionReported && evidenceSupply.ok && recurringIncidents.ok;
+  return {
+    ok: executionOk,
+    healthOk: Boolean(supervisionPayload?.ok),
+    status: executionOk
+      ? supervisionPayload?.status === "passed" ? "closed" : "closed_with_lane_findings"
+      : "closure_execution_failed",
+    lanes: supervisionPayload?.lanes || [],
+    actions: [supervisionAction, evidenceSupply, recurringIncidents],
+    notes: [
+      "This is the final closure after the 16:10 First-Line Viewpoints window.",
+      "Lane findings remain isolated; the report records them without suppressing other lane results.",
+    ],
+  };
+}
+
 function writeReport(payload) {
   fs.mkdirSync(reportsDir, { recursive: true });
   const base = `${date}-daily-automation-${phase}`;
   const jsonPath = path.join(reportsDir, `${base}.json`);
   const mdPath = path.join(reportsDir, `${base}.md`);
+  const laneValues = Array.isArray(payload.lanes)
+    ? payload.lanes
+    : Object.entries(payload.lanes || {}).map(([id, lane]) => ({ id, ...lane }));
   const lines = [
     `# WaveSight Daily Automation ${phase} - ${date}`,
     "",
@@ -205,6 +262,14 @@ function writeReport(payload) {
     "",
     ...(payload.notes?.length ? payload.notes.map((item) => `- ${item}`) : ["- none"]),
     "",
+    ...(laneValues.length ? [
+      "## Lane Closure",
+      "",
+      "| Lane | Status |",
+      "|---|---|",
+      ...laneValues.map((lane) => `| ${lane.label || lane.id || "unknown"} | ${lane.status || (lane.ok ? "passed" : "failed")} |`),
+      "",
+    ] : []),
   ];
   fs.writeFileSync(jsonPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   fs.writeFileSync(mdPath, lines.join("\n"), "utf8");
@@ -213,10 +278,14 @@ function writeReport(payload) {
 
 function main() {
   if (!date) throw new Error("Unable to resolve Asia/Shanghai production date.");
-  if (!new Set(["morning", "recovery", "closure"]).has(phase)) {
+  if (!new Set(["morning", "recovery", "closure", "final-closure"]).has(phase)) {
     throw new Error(`Unsupported phase: ${phase}`);
   }
-  const result = phase === "morning" ? morning() : phase === "recovery" ? recovery() : closure();
+  const result = phase === "morning"
+    ? morning()
+    : phase === "recovery"
+      ? recovery()
+      : phase === "closure" ? closure() : finalClosure();
   const payload = {
     ...result,
     phase,

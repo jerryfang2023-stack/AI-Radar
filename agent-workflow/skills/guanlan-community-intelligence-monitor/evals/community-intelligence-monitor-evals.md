@@ -66,6 +66,19 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
    - Pass when supervision uses same-date `origin/main` Community Intelligence data and gate evidence after a validated local publish merged, while reporting the stale dirty checkout as a local-sync warning.
    - Fail when safe self-repair reruns the community gate against yesterday's working-tree data, overwrites today's passed gate report, and asks for browser recollection after the same-date PR already merged.
 
+17. `publication_handoff_exit_is_not_data_failure`
+   - Pass when an accepted auto-merge handoff returns success with `publication_state=waiting_for_merge`, and final closure later confirms merge / Pages state.
+   - Fail when a short PR merge polling window turns healthy same-date data and a passed gate into a failed local collection task.
+
+18. `login_expiry_manual_prompt`
+   - Pass when a zero-result login / QR page produces `COMMUNITY_LOGIN_REQUIRED` and a direct instruction to reopen the dedicated Chrome profile and authenticate.
+   - Pass when login expiry affects only Community Intelligence and does not stop other production lanes.
+   - Fail when login expiry is reported as a generic collector error or causes repeated unattended retries.
+
+19. `final_closure_stage_split`
+   - Pass when final closure reports data, publication, task execution, and login state separately after the 16:10 afternoon lane window.
+   - Fail when a non-zero task exit overwrites healthy data/gate evidence or when one lane suppresses another lane's closure result.
+
 ## Repair Loop
 
 When a check fails, repair the local collection, archive, gate, or publisher path. Do not treat local collection success as complete publication until the community PR reaches `main` and Pages deploys when required.

@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { syncLocalMainAfterPublish } from "../publish-community-intelligence-local.mjs";
+import {
+  publicationState,
+  syncLocalMainAfterPublish,
+} from "../publish-community-intelligence-local.mjs";
 
 function runner(results) {
   const queue = [...results];
@@ -40,4 +43,20 @@ test("a run started outside main does not change the caller branch", () => {
   assert.equal(result.attempted, false);
   assert.equal(result.ok, true);
   assert.match(result.warning, /started on codex\/work/iu);
+});
+
+test("an auto-merge handoff is waiting rather than a publication failure", () => {
+  assert.equal(publicationState({
+    mergeEnabled: true,
+    merged: null,
+    mergeStatus: "auto_or_merged",
+  }), "waiting_for_merge");
+});
+
+test("a merged PR is classified as published", () => {
+  assert.equal(publicationState({
+    mergeEnabled: true,
+    merged: { mergedAt: "2026-07-25T02:07:00Z" },
+    mergeStatus: "auto_or_merged",
+  }), "published");
 });

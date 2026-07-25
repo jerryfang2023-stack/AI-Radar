@@ -3,6 +3,7 @@ param(
   [string]$MorningAt = "08:10",
   [string]$RecoveryAt = "09:15",
   [string]$ClosureAt = "09:50",
+  [string]$FinalClosureAt = "16:45",
   [bool]$DisableLegacyTasks = $true,
   [switch]$RunMorningNow
 )
@@ -68,6 +69,7 @@ $nodeExecutable = Resolve-NodeExecutable
 Register-ControllerTask -Name "WaveSight Morning Production Dispatch" -At $MorningAt -Phase "morning" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo
 Register-ControllerTask -Name "WaveSight Daily Recovery Controller" -At $RecoveryAt -Phase "recovery" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo
 Register-ControllerTask -Name "WaveSight Daily Automation Closure" -At $ClosureAt -Phase "closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo
+Register-ControllerTask -Name "WaveSight Daily Final Closure" -At $FinalClosureAt -Phase "final-closure" -Runner $runner -NodeExecutable $nodeExecutable -WorkingDirectory $repo
 
 if ($DisableLegacyTasks) {
   @(
@@ -83,7 +85,7 @@ if ($DisableLegacyTasks) {
   }
 }
 
-Write-Host "Community Intelligence 08:30 and Follow-Builders 16:10 tasks remain independent."
+Write-Host "Community Intelligence 08:30 and Follow-Builders 16:10 tasks remain independent; final closure runs at $FinalClosureAt."
 Write-Host "Node executable: $nodeExecutable"
 if ($RunMorningNow) {
   Start-ScheduledTask -TaskName "WaveSight Morning Production Dispatch"
