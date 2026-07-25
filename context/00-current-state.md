@@ -29,7 +29,7 @@ WaveSight AI is now on the `SITE-V4.2.0-entity-history` public website and data-
 
 | Entry | File | Role |
 |---|---|---|
-| Data Center | `01-SiteV2/site/data-center.html` | V4 public data layer for Commercial Events, FDE, AI hardware, community intelligence, first-line viewpoints, and a unified Entity Index for companies, products, people, technologies, use cases, and industries |
+| Data Center | `01-SiteV2/site/data-center.html` | V4 public data layer for Commercial Events, FDE, AI hardware, community intelligence, first-line viewpoints, Industry Dossiers (`产业档案`), and an evidence-backed entity-centered one-hop Relationship Map (`关系图谱`) |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Application-center factual explorer for accepted daily changes, weekly structure changes, monthly snapshots, and event/entity/source evidence links |
 | Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 application-center entry for latest Monthly / Weekly reports and their archives |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent application-center entry for the source-backed Entry Point Map and Product Pain Map, with click-to-open evidence modals |

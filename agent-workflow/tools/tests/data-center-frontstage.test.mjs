@@ -163,8 +163,8 @@ test("data center page uses the official logo and sidebar navigation", () => {
   assert.match(html, /logo-wavesight-reference-horizontal\.svg/u);
   assert.match(html, /data-view-link="events"/u);
   assert.match(html, /data-view-link="events">商业事件/u);
-  assert.match(html, /data-center\.html\?view=index" data-view-link="index">实体数据库/u);
-  assert.match(html, /data-center\.html\?view=relations" data-view-link="relations">关系数据库/u);
+  assert.match(html, /data-center\.html\?view=index" data-view-link="index">产业档案/u);
+  assert.match(html, /data-center\.html\?view=relations" data-view-link="relations">关系图谱/u);
   assert.ok(indexPosition > viewpointPosition);
   assert.match(html, />数据中心</u);
   assert.match(html, />应用中心</u);
@@ -393,11 +393,11 @@ test("commercial events prioritize financing and cases before products and other
   assert.match(script, /a\.index - b\.index/u);
 });
 
-test("formal entities and classification nodes share one entity index", () => {
+test("industry dossiers and relationship map use the unified entity service", () => {
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
 
-  assert.match(script, /index: \{ title: "实体数据库"/u);
-  assert.match(script, /relations: \{ title: "关系数据库"/u);
+  assert.match(script, /index: \{ title: "产业档案"/u);
+  assert.match(script, /relations: \{ title: "关系图谱"/u);
   assert.match(script, /function entityIndexItems\(data\)/u);
   assert.match(script, /\.\.\.\(data\.companies \|\| \[\]\)\.map/u);
   assert.match(script, /\.\.\.\(data\.products \|\| \[\]\)\.map/u);
@@ -411,4 +411,20 @@ test("formal entities and classification nodes share one entity index", () => {
   assert.match(script, /legacyView === "companies" \|\| legacyView === "products"/u);
   assert.match(script, /detailLink\("index", item\.detailKind, item\.id\)/u);
   assert.match(script, /isIndex && params\.get\("type"\)/u);
+  assert.match(script, /function renderRelationshipGraphPage\(data\)/u);
+  assert.match(script, /function relationshipGraphSvg\(center, relations, entityById\)/u);
+  assert.match(script, /splitDataUrl\("details\/relationships"\)/u);
+  assert.match(script, /最近 30 天/u);
+  assert.match(script, /最近 7 天/u);
+});
+
+test("relationship detail service resolves every edge to exact claims and sources", () => {
+  const payload = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/details/relationships.json"), "utf8"));
+  const manifest = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/manifest.json"), "utf8"));
+
+  assert.equal(manifest.paths.relationshipsDetail, "data/data-center-v4/details/relationships.json");
+  assert.ok(payload.relationships.length > 0);
+  assert.ok(payload.relationships.every((item) => item.event_id && item.event?.id === item.event_id));
+  assert.ok(payload.relationships.every((item) => item.claims.every((claim) => item.claim_refs.includes(claim.id) && claim.quote)));
+  assert.ok(payload.relationships.every((item) => item.sources.every((source) => item.source_refs.includes(source.id) && source.url)));
 });

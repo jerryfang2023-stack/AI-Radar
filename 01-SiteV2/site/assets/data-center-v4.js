@@ -34,8 +34,8 @@
 
   const viewConfig = {
     events: { title: "商业事件", description: "AI 行业商业事件数据库", detail: "event", dataKey: "events", placeholder: "搜索商业事件标题、公司、产品或关键词" },
-    index: { title: "实体数据库", description: "公司机构库、产品模型库、人物库及其证据化历史档案", placeholder: "搜索公司、产品、模型、人物或别名" },
-    relations: { title: "关系数据库", description: "由事件、原文 Claim 和来源共同验证的实体关系", dataKey: "relationships", placeholder: "搜索主体、关系、客体或关联事件" },
+    index: { title: "产业档案", description: "公司机构、产品模型与人物的证据化历史档案", placeholder: "搜索公司、产品、模型、人物或别名" },
+    relations: { title: "关系图谱", description: "选择一个实体，查看由事件、原文 Claim 和来源共同验证的一跳商业关系", dataKey: "relationships", placeholder: "搜索公司、产品、模型或人物" },
     fde: { title: "FDE 实施", description: "企业 AI 实施记录", detail: "fde", dataKey: "fde", placeholder: "搜索客户、服务商、行业或场景" },
     hardware: { title: "AI 硬件", description: "硬件产品、供应与部署记录", detail: "hardware", dataKey: "hardware", placeholder: "搜索硬件、供应方或客户" },
     community: { title: "社群情报", description: "社群来源的一线材料", detail: "community", dataKey: "community", placeholder: "搜索标题、正文关键词或作者" },
@@ -75,6 +75,11 @@
       source: params.get("source") || "",
       date: params.get("date") || ""
     }
+  };
+  const relationshipGraphState = {
+    selectedEntityId: "",
+    selectedRelationId: "",
+    detailsPromise: null
   };
 
   const escapeHtml = (value = "") => String(value)
@@ -207,6 +212,41 @@
         detailKind: "taxonomy"
       }))
     ].sort((a, b) => a.name.localeCompare(b.name, "zh-CN") || a.indexType.localeCompare(b.indexType));
+  }
+
+  function relationshipEntityItems(data) {
+    return entityIndexItems(data).filter((item) => ["company", "product", "person"].includes(item.indexType));
+  }
+
+  function resolveRelationshipEntity(data) {
+    const entities = relationshipEntityItems(data);
+    const byId = new Map(entities.map((item) => [item.id, item]));
+    const requested = (params.get("entity") || "").trim();
+    const normalized = requested.toLocaleLowerCase();
+    const exact = entities.find((item) => (
+      item.id === requested
+      || item.name.toLocaleLowerCase() === normalized
+      || (item.aliases || []).some((alias) => alias.toLocaleLowerCase() === normalized)
+    ));
+    const partial = requested ? entities.find((item) => (
+      item.name.toLocaleLowerCase().includes(normalized)
+      || (item.aliases || []).some((alias) => alias.toLocaleLowerCase().includes(normalized))
+    )) : null;
+    const counts = new Map();
+    for (const relation of data.relationships || []) {
+      if (byId.has(relation.subject_ref)) counts.set(relation.subject_ref, (counts.get(relation.subject_ref) || 0) + 1);
+      if (byId.has(relation.object_ref)) counts.set(relation.object_ref, (counts.get(relation.object_ref) || 0) + 1);
+    }
+    const fallback = [...entities].sort((a, b) => (
+      (counts.get(b.id) || 0) - (counts.get(a.id) || 0)
+      || a.name.localeCompare(b.name, "zh-CN")
+    ))[0];
+    return {
+      entity: exact || partial || fallback || null,
+      requested,
+      unresolved: Boolean(requested && !exact && !partial),
+      byId
+    };
   }
 
   function sortEventsForDisplay(items) {
@@ -529,7 +569,314 @@
     `;
   }
 
+  function relationshipEntityTypeLabel(item = {}) {
+    return item.indexType === "company"
+      ? "公司 / 机构"
+      : item.indexType === "product"
+        ? "产品 / 模型"
+        : item.indexType === "person"
+          ? "人物"
+          : "实体";
+  }
+
+  function relationshipGraphType(item = {}) {
+    return ["company", "product", "person"].includes(item.indexType) ? item.indexType : "unknown";
+  }
+
+  function relationshipWindowItems(relations, dataWindow) {
+    if (!["7", "30"].includes(dataWindow) || !relations.length) return relations;
+    const newest = relations.map((item) => item.data_date).filter(Boolean).sort().at(-1);
+    if (!newest) return relations;
+    const threshold = new Date(`${newest}T00:00:00Z`);
+    threshold.setUTCDate(threshold.getUTCDate() - Number(dataWindow) + 1);
+    const thresholdText = threshold.toISOString().slice(0, 10);
+    return relations.filter((item) => item.data_date >= thresholdText);
+  }
+
+  function relationshipGraphSvg(center, relations, entityById) {
+    const groups = new Map();
+    for (const relation of relations) {
+      const neighborId = relation.subject_ref === center.id ? relation.object_ref : relation.subject_ref;
+      if (!groups.has(neighborId)) groups.set(neighborId, []);
+      groups.get(neighborId).push(relation);
+    }
+    const nodes = [...groups.entries()]
+      .map(([id, items]) => ({
+        id,
+        items: items.sort((a, b) => String(b.data_date).localeCompare(String(a.data_date))),
+        entity: entityById.get(id) || {
+          id,
+          name: items[0].subject_ref === id ? items[0].subjectName : items[0].objectName,
+          indexType: "unknown"
+        }
+      }))
+      .sort((a, b) => b.items.length - a.items.length || a.entity.name.localeCompare(b.entity.name, "zh-CN"))
+      .slice(0, 14);
+    const centerX = 460;
+    const centerY = 260;
+    const centerWidth = Math.min(Math.max([...center.name].length * 17 + 52, 170), 250);
+    const radiusX = nodes.length <= 6 ? 290 : 350;
+    const radiusY = nodes.length <= 6 ? 170 : 205;
+    const plotted = nodes.map((node, index) => {
+      const angle = -Math.PI / 2 + (Math.PI * 2 * index / Math.max(nodes.length, 1));
+      const name = node.entity.name || node.id;
+      return {
+        ...node,
+        width: Math.min(Math.max([...name].length * 13 + 36, 118), 190),
+        x: centerX + Math.cos(angle) * radiusX,
+        y: centerY + Math.sin(angle) * radiusY
+      };
+    });
+    const edges = plotted.map((node) => {
+      const relation = node.items[0];
+      const outward = relation.subject_ref === center.id;
+      const deltaX = node.x - centerX;
+      const deltaY = node.y - centerY;
+      const length = Math.hypot(deltaX, deltaY) || 1;
+      const unitX = deltaX / length;
+      const unitY = deltaY / length;
+      const centerOffset = 1 / Math.max(Math.abs(unitX) / (centerWidth / 2), Math.abs(unitY) / 36);
+      const nodeOffset = 1 / Math.max(Math.abs(unitX) / (node.width / 2), Math.abs(unitY) / 27);
+      const startX = outward ? centerX + unitX * centerOffset : node.x - unitX * nodeOffset;
+      const startY = outward ? centerY + unitY * centerOffset : node.y - unitY * nodeOffset;
+      const endX = outward ? node.x - unitX * nodeOffset : centerX + unitX * centerOffset;
+      const endY = outward ? node.y - unitY * nodeOffset : centerY + unitY * centerOffset;
+      const labels = uniqueSorted(node.items.map((item) => item.predicateLabel || relationshipLabels[item.predicate] || item.predicate));
+      const label = labels.length > 2 ? `${labels.slice(0, 2).join(" / ")} +${labels.length - 2}` : labels.join(" / ");
+      const labelWidth = Math.min(Math.max(label.length * 12 + 20, 54), 154);
+      return `
+        <g class="dc-relation-edge${relationshipGraphState.selectedRelationId === relation.relationship_id ? " is-selected" : ""}" data-relation-open="${escapeHtml(relation.relationship_id)}" tabindex="0" role="button" aria-label="查看关系：${escapeHtml(relation.title)}">
+          <line class="dc-relation-edge-line" x1="${startX.toFixed(1)}" y1="${startY.toFixed(1)}" x2="${endX.toFixed(1)}" y2="${endY.toFixed(1)}" marker-end="url(#dc-relation-arrow)"></line>
+          <line class="dc-relation-edge-hit" x1="${startX.toFixed(1)}" y1="${startY.toFixed(1)}" x2="${endX.toFixed(1)}" y2="${endY.toFixed(1)}"></line>
+          <g class="dc-relation-edge-label" transform="translate(${((centerX + node.x) / 2).toFixed(1)} ${((centerY + node.y) / 2).toFixed(1)})">
+            <rect x="${(-labelWidth / 2).toFixed(1)}" y="-12" width="${labelWidth}" height="24" rx="4"></rect>
+            <text text-anchor="middle" dominant-baseline="middle">${escapeHtml(label)}</text>
+          </g>
+        </g>
+      `;
+    }).join("");
+    const outerNodes = plotted.map((node) => {
+      const name = node.entity.name || node.id;
+      const type = relationshipGraphType(node.entity);
+      const href = type === "unknown" ? "" : currentParams({ entity: name, page: "" }, ["q", "from", "to"]);
+      const content = `
+        <g class="dc-relation-node dc-relation-node-${type}" transform="translate(${node.x.toFixed(1)} ${node.y.toFixed(1)})">
+          <rect x="${(-node.width / 2).toFixed(1)}" y="-27" width="${node.width}" height="54" rx="8"></rect>
+          <text text-anchor="middle" y="-2">${escapeHtml(name.length > 22 ? `${name.slice(0, 21)}…` : name)}</text>
+          <text class="dc-relation-node-meta" text-anchor="middle" y="15">${escapeHtml(`${relationshipEntityTypeLabel(node.entity)} · ${node.items.length} 条`)}</text>
+        </g>
+      `;
+      return href
+        ? `<a href="${escapeHtml(href)}" aria-label="以 ${escapeHtml(name)} 为中心查看关系">${content}</a>`
+        : content;
+    }).join("");
+    return `
+      <svg class="dc-relation-svg" viewBox="0 0 920 520" role="img" aria-labelledby="dc-relation-graph-title dc-relation-graph-desc">
+        <title id="dc-relation-graph-title">${escapeHtml(center.name)}的一跳商业关系图</title>
+        <desc id="dc-relation-graph-desc">中心为当前实体，外围最多显示十四个直接关联实体。选择关系可查看事件与原文证据。</desc>
+        <defs>
+          <marker id="dc-relation-arrow" viewBox="0 0 8 8" refX="6.5" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M 0 0 L 8 4 L 0 8 z"></path>
+          </marker>
+        </defs>
+        <g class="dc-relation-grid" aria-hidden="true">
+          <circle cx="${centerX}" cy="${centerY}" r="96"></circle>
+          <circle cx="${centerX}" cy="${centerY}" r="190"></circle>
+          <circle cx="${centerX}" cy="${centerY}" r="286"></circle>
+          <line x1="62" y1="${centerY}" x2="858" y2="${centerY}"></line>
+          <line x1="${centerX}" y1="36" x2="${centerX}" y2="484"></line>
+        </g>
+        ${edges}
+        ${outerNodes}
+        <g class="dc-relation-node dc-relation-node-center" transform="translate(${centerX} ${centerY})">
+          <rect x="${(-centerWidth / 2).toFixed(1)}" y="-36" width="${centerWidth}" height="72" rx="10"></rect>
+          <text text-anchor="middle" y="-5">${escapeHtml(center.name)}</text>
+          <text class="dc-relation-node-meta" text-anchor="middle" y="18">${escapeHtml(`${relationshipEntityTypeLabel(center)} · 当前中心`)}</text>
+        </g>
+      </svg>
+    `;
+  }
+
+  function relationshipDetailSummary(relation, detail = null) {
+    if (!relation) return `<div class="dc-relation-detail-empty"><span>关系证据</span><p>选择图中的连线或时间线记录，查看对应事实证据。</p></div>`;
+    const item = detail || relation;
+    const claims = item.claims || [];
+    const sources = item.sources || [];
+    const event = item.event || null;
+    return `
+      <div class="dc-relation-detail-kicker">RELATION EVIDENCE</div>
+      <h2>${escapeHtml(relation.subjectName)} <span>${escapeHtml(relation.predicateLabel)}</span> ${escapeHtml(relation.objectName)}</h2>
+      <dl class="dc-relation-detail-facts">
+        <div><dt>关系类型</dt><dd>${escapeHtml(relation.predicateLabel || relation.predicate)}</dd></div>
+        <div><dt>事实日期</dt><dd>${escapeHtml(relation.eventDate || event?.date || "未披露")}</dd></div>
+        <div><dt>数据日期</dt><dd>${escapeHtml(relation.data_date || "未披露")}</dd></div>
+      </dl>
+      <section>
+        <h3>对应商业事件</h3>
+        <a href="${escapeHtml(detailLink("events", "event", relation.event_id))}">${escapeHtml(relation.eventTitle || event?.title || relation.event_id)}</a>
+      </section>
+      <section>
+        <h3>原文证据</h3>
+        ${claims.length
+          ? claims.map((claim) => `<blockquote><p>${escapeHtml(claim.quote || "原文片段未披露")}</p><cite>${escapeHtml(claim.id)}</cite></blockquote>`).join("")
+          : `<p class="dc-relation-detail-pending">${detail ? "该关系未找到对应 Claim 原文。" : "正在载入精确 Claim 与来源…"}</p>`}
+      </section>
+      ${sources.length ? `<section>
+        <h3>原始来源</h3>
+        <div class="dc-relation-source-list">${sources.map((source) => {
+          const href = safeExternalUrl(source.url);
+          return href
+            ? `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher || source.id)} · 查看原文</a>`
+            : `<span>${escapeHtml(source.publisher || source.id)}</span>`;
+        }).join("")}</div>
+      </section>` : ""}
+    `;
+  }
+
+  function renderRelationshipGraphPage(data) {
+    const resolved = resolveRelationshipEntity(data);
+    const center = resolved.entity;
+    if (!center) {
+      root.innerHTML = `${pageHead(data, "relations", 0)}<div class="dc-empty">当前没有可用于关系图谱的实体记录。</div>`;
+      return;
+    }
+    relationshipGraphState.selectedEntityId = center.id;
+    const selectedType = params.get("type") || "";
+    const dataWindow = ["7", "30"].includes(params.get("window")) ? params.get("window") : "all";
+    const entityRelations = (data.relationships || []).filter((item) => (
+      item.subject_ref === center.id || item.object_ref === center.id
+    ));
+    const windowRelations = relationshipWindowItems(entityRelations, dataWindow);
+    const relations = windowRelations
+      .filter((item) => !selectedType || item.predicate === selectedType)
+      .sort((a, b) => (
+        String(b.eventDate || b.data_date).localeCompare(String(a.eventDate || a.data_date))
+        || String(b.data_date).localeCompare(String(a.data_date))
+      ));
+    relationshipGraphState.selectedRelationId = relations[0]?.relationship_id || "";
+    const entities = relationshipEntityItems(data);
+    const entityById = resolved.byId;
+    const predicateOptions = uniqueSorted(entityRelations.map((item) => item.predicate)).map((predicate) => ({
+      value: predicate,
+      label: entityRelations.find((item) => item.predicate === predicate)?.predicateLabel || relationshipLabels[predicate] || predicate
+    }));
+    const neighborCount = new Set(relations.map((item) => item.subject_ref === center.id ? item.object_ref : item.subject_ref)).size;
+    const visibleNeighborCount = Math.min(neighborCount, 14);
+    const initialRelation = relations[0] || null;
+    root.innerHTML = `
+      <header class="dc-page-head dc-relation-page-head">
+        <div>
+          <span class="dc-relation-eyebrow">INDUSTRY RELATION MAP</span>
+          <h1>关系图谱</h1>
+          <p>${escapeHtml(viewConfig.relations.description)}</p>
+        </div>
+        <div class="dc-relation-head-stat"><strong>${relations.length}</strong><span>条事实关系</span></div>
+      </header>
+      <form class="dc-relation-toolbar" method="get" action="data-center.html" data-filter-form>
+        <input type="hidden" name="view" value="relations">
+        <input type="hidden" name="window" value="${escapeHtml(dataWindow)}">
+        <label class="dc-relation-search">
+          <span>选择中心实体</span>
+          <input name="entity" value="${escapeHtml(center.name)}" list="dc-relation-entities" placeholder="${escapeHtml(viewConfig.relations.placeholder)}" autocomplete="off">
+          <datalist id="dc-relation-entities">${entities.map((item) => `<option value="${escapeHtml(item.name)}">${escapeHtml(relationshipEntityTypeLabel(item))}</option>`).join("")}</datalist>
+        </label>
+        <button class="dc-button" type="submit">查看关系</button>
+        <label class="dc-relation-type">
+          <span>关系类型</span>
+          <select name="type" data-auto-submit>${optionList(predicateOptions, selectedType, "全部关系")}</select>
+        </label>
+      </form>
+      ${resolved.unresolved ? `<p class="dc-relation-notice">未找到“${escapeHtml(resolved.requested)}”，已显示当前关系记录最完整的实体。可从搜索建议中重新选择。</p>` : ""}
+      <div class="dc-relation-controls" aria-label="关系图谱辅助筛选">
+        <div class="dc-relation-window">
+          <span>关系变化</span>
+          ${[
+            { value: "all", label: "全部" },
+            { value: "30", label: "最近 30 天" },
+            { value: "7", label: "最近 7 天" }
+          ].map((item) => `<a href="${escapeHtml(currentParams({ entity: center.name, window: item.value, page: "" }, ["q", "from", "to"]))}"${dataWindow === item.value ? ' aria-current="page"' : ""}>${item.label}</a>`).join("")}
+        </div>
+        <div class="dc-relation-legend" aria-label="节点类型图例">
+          <span class="is-company">公司 / 机构</span>
+          <span class="is-product">产品 / 模型</span>
+          <span class="is-person">人物</span>
+        </div>
+      </div>
+      <section class="dc-relation-workspace" aria-label="${escapeHtml(center.name)}的一跳商业关系">
+        <div class="dc-relation-canvas">
+          <div class="dc-relation-canvas-head">
+            <div><span>ONE-HOP VIEW</span><strong>${escapeHtml(center.name)}</strong></div>
+            <p>显示 ${visibleNeighborCount} / ${neighborCount} 个直接关联实体${neighborCount > 14 ? "，优先呈现关系记录较多者" : ""}</p>
+          </div>
+          ${relations.length
+            ? relationshipGraphSvg(center, relations, entityById)
+            : `<div class="dc-relation-empty">当前实体在该时间与关系类型下没有已验证关系。</div>`}
+        </div>
+        <aside class="dc-relation-detail" data-relation-detail aria-live="polite">
+          ${relationshipDetailSummary(initialRelation)}
+        </aside>
+      </section>
+      <section class="dc-relation-timeline">
+        <header>
+          <div><span>RELATION TIMELINE</span><h2>关系时间线</h2></div>
+          <p>按事实发生日期排列；数据日期表示该关系进入数据库的时间。</p>
+        </header>
+        ${relations.length ? `<div class="dc-relation-timeline-list">${relations.slice(0, 60).map((relation) => `
+          <button type="button" data-relation-open="${escapeHtml(relation.relationship_id)}"${relation.relationship_id === relationshipGraphState.selectedRelationId ? ' aria-pressed="true"' : ' aria-pressed="false"'}>
+            <time datetime="${escapeHtml(relation.eventDate || relation.data_date)}">${escapeHtml(relation.eventDate || "日期未披露")}</time>
+            <span class="dc-relation-timeline-type">${escapeHtml(relation.predicateLabel)}</span>
+            <strong>${escapeHtml(relation.title)}</strong>
+            <small>${escapeHtml(relation.eventTitle || relation.event_id)}</small>
+          </button>
+        `).join("")}</div>${relations.length > 60 ? `<p class="dc-relation-timeline-note">当前仅展示最近 60 条，已通过实体、时间和关系类型筛选全部记录。</p>` : ""}` : `<div class="dc-relation-empty">暂无关系时间线。</div>`}
+      </section>
+    `;
+  }
+
+  async function openRelationshipDetail(relationId, data) {
+    if (!relationId) return;
+    relationshipGraphState.selectedRelationId = relationId;
+    document.querySelectorAll("[data-relation-open]").forEach((control) => {
+      const selected = control.dataset.relationOpen === relationId;
+      control.classList.toggle("is-selected", selected);
+      if (control.matches("button")) control.setAttribute("aria-pressed", String(selected));
+    });
+    const panel = root.querySelector("[data-relation-detail]");
+    const relation = (data.relationships || []).find((item) => item.relationship_id === relationId);
+    if (!panel || !relation) return;
+    panel.innerHTML = relationshipDetailSummary(relation);
+    try {
+      relationshipGraphState.detailsPromise ||= communityFetchJson(splitDataUrl("details/relationships"));
+      const payload = await relationshipGraphState.detailsPromise;
+      if (relationshipGraphState.selectedRelationId !== relationId) return;
+      const detail = (payload.relationships || []).find((item) => item.relationship_id === relationId);
+      panel.innerHTML = relationshipDetailSummary(relation, detail || relation);
+    } catch {
+      try {
+        const eventPayload = await communityFetchJson(splitDataUrl("details/events"));
+        if (relationshipGraphState.selectedRelationId !== relationId) return;
+        const event = (eventPayload.events || []).find((item) => item.id === relation.event_id);
+        const claimRefs = new Set(relation.claim_refs || []);
+        const sourceRefs = new Set(relation.source_refs || []);
+        panel.innerHTML = relationshipDetailSummary(relation, {
+          ...relation,
+          event,
+          claims: (event?.claims || []).filter((claim) => claimRefs.has(claim.id)),
+          sources: (event?.sources || []).filter((source) => sourceRefs.has(source.id))
+        });
+      } catch {
+        if (relationshipGraphState.selectedRelationId === relationId) {
+          panel.innerHTML = `${relationshipDetailSummary(relation, relation)}<p class="dc-relation-detail-error">精确证据暂时无法载入，请稍后重试。</p>`;
+        }
+      }
+    }
+  }
+
   function renderListPage(data, targetView) {
+    if (targetView === "relations") {
+      renderRelationshipGraphPage(data);
+      return;
+    }
     const allItems = filteredItems(data, targetView);
     const isCurrentEventBatch = targetView === "events" && eventCurrentBatchMode();
     const current = Math.max(Number(params.get("page") || 1), 1);
@@ -1724,7 +2071,7 @@
     `;
   }
 
-  function bindInteractions() {
+  function bindInteractions(data) {
     document.querySelectorAll("[data-stop-row]").forEach((tag) => {
       tag.addEventListener("click", (event) => event.stopPropagation());
     });
@@ -1753,6 +2100,21 @@
         if (fromInput && toInput.value) fromInput.max = toInput.value;
       });
     });
+    document.querySelectorAll("[data-relation-open]").forEach((control) => {
+      const open = () => openRelationshipDetail(control.dataset.relationOpen, data);
+      control.addEventListener("click", open);
+      if (!control.matches("button")) {
+        control.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            open();
+          }
+        });
+      }
+    });
+    if (view === "relations" && relationshipGraphState.selectedRelationId) {
+      openRelationshipDetail(relationshipGraphState.selectedRelationId, data);
+    }
   }
 
   async function loadColumnData(targetView) {
@@ -1770,7 +2132,13 @@
     if (targetView === "hardware" && detail === "hardware") return { ...(await communityFetchJson(splitDataUrl("details/hardware"))), companies: [], products: [], fde: [], community: [], viewpoints: [] };
     if (targetView === "events" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/events"))), companies: [], products: [], people: [], taxonomyNodes: [], fde: [], hardware: [], community: [], viewpoints: [] };
     if (targetView === "index" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/entities"))), events: [], fde: [], hardware: [], community: [], viewpoints: [] };
-    if (targetView === "relations" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/relationships"))), events: [], companies: [], products: [], people: [], taxonomyNodes: [], fde: [], hardware: [], community: [], viewpoints: [] };
+    if (targetView === "relations" && !detail) {
+      const [relationshipData, entityData] = await Promise.all([
+        communityFetchJson(splitDataUrl("indexes/relationships")),
+        communityFetchJson(splitDataUrl("indexes/entities"))
+      ]);
+      return { ...relationshipData, ...entityData, events: [], fde: [], hardware: [], community: [], viewpoints: [] };
+    }
     if (targetView === "fde" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/fde"))), events: [], companies: [], products: [], people: [], taxonomyNodes: [], hardware: [], community: [], viewpoints: [] };
     if (targetView === "hardware" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/hardware"))), events: [], companies: [], products: [], people: [], taxonomyNodes: [], fde: [], community: [], viewpoints: [] };
     return communityFetchJson("data/data-center-v4-frontstage.json");
@@ -1803,7 +2171,7 @@
 
       if (view === "tag") renderTagPage(data);
       else if (!renderDetail(data)) renderListPage(data, view);
-      bindInteractions();
+      bindInteractions(data);
       document.title = `${view === "tag" ? `分类：${params.get("label") || params.get("tag") || ""}` : viewConfig[view]?.title || "数据中心"}｜观澜 AI`;
     } catch (error) {
       loading.hidden = true;
