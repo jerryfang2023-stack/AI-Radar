@@ -182,8 +182,8 @@ jobs:
           node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
           node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
           node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
-          node --check agent-workflow/tools/assert-business-signals-three-block-contract.mjs
-          node --check agent-workflow/tools/run-trend-candidate-decision.mjs
+          node --check agent-workflow/tools/assert-business-signals-compatibility-contract.mjs
+          node agent-workflow/tools/assert-compatibility-retirement.mjs
           node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
           node --check agent-workflow/tools/classify-business-signals-production-state.mjs
           node --check agent-workflow/tools/assert-v3-source-first-frontstage.mjs
@@ -391,21 +391,9 @@ jobs:
           node agent-workflow/tools/build-legacy-card-event-mappings.mjs
           node agent-workflow/tools/build-data-center-v4-obsidian-index.mjs
 
-      - name: Legacy page compatibility - record trend candidate decision
-        id: trend-decision
-        if: steps.card-editorial-gate.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/run-trend-candidate-decision.mjs \
-            --date="${RUN_DATE}" \
-            --write-no-decision=true \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-trend-decision.log"
-
-      - name: Build legacy compatibility data and V4 Industry Reports projection
+      - name: Build internal Card compatibility data and Opportunity Map projection
         id: business-frontstage-data
-        if: steps.trend-decision.outcome == 'success'
+        if: steps.card-editorial-gate.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -413,7 +401,7 @@ jobs:
           node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-frontstage-data.log"
           node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-industry-reports-frontstage.log"
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-opportunity-map-frontstage.log"
           npm run test:data-center-site:compatibility
 
       - name: Run unified Business Signals frontstage gate
@@ -498,7 +486,6 @@ jobs:
           - asset_generation: ${{ steps.assets.outcome }}
           - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
           - card_editorial_gate: ${{ steps.card-editorial-gate.outcome }}
-          - trend_candidate_decision: ${{ steps.trend-decision.outcome }}
           - business_frontstage_data: ${{ steps.business-frontstage-data.outcome }}
           - business_frontstage_gate: ${{ steps.business-frontstage-gate.outcome }}
           - operations_data_sync: ${{ steps.operations-data.outcome }}
@@ -516,7 +503,7 @@ jobs:
           | Business signals | $(state_for "$signal_file") |
           | Signal card files | ${signal_card_count} |
           | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
-          | Industry Reports application data | $(state_for "01-SiteV2/site/data/industry-reports-frontstage.json") |
+          | Opportunity Map application data | $(state_for "01-SiteV2/site/data/industry-reports-frontstage.json") |
           | Intelligence graph index | $(state_for "01-SiteV2/site/data/intelligence-graph-index.json") |
           | Operations dashboard data | $(state_for "01-SiteV2/site/data/pipeline-dashboard.json") |
 
@@ -545,7 +532,6 @@ jobs:
               "asset_generation": "${{ steps.assets.outcome }}",
               "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
               "card_editorial_gate": "${{ steps.card-editorial-gate.outcome }}",
-              "trend_candidate_decision": "${{ steps.trend-decision.outcome }}",
               "business_frontstage_data": "${{ steps.business-frontstage-data.outcome }}",
               "business_frontstage_gate": "${{ steps.business-frontstage-gate.outcome }}",
               "operations_data_sync": "${{ steps.operations-data.outcome }}",
@@ -561,7 +547,7 @@ jobs:
               "business_signals": "$(state_for "$signal_file")",
               "signal_card_files": ${signal_card_count},
               "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")",
-              "industry_reports_frontstage": "$(state_for "01-SiteV2/site/data/industry-reports-frontstage.json")",
+              "opportunity_map_frontstage": "$(state_for "01-SiteV2/site/data/industry-reports-frontstage.json")",
               "intelligence_graph_index": "$(state_for "01-SiteV2/site/data/intelligence-graph-index.json")",
               "operations_dashboard_data": "$(state_for "01-SiteV2/site/data/pipeline-dashboard.json")"
             }
@@ -588,8 +574,6 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.json
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-data-center-v4-integrity-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-data-center-v4-integrity-gate.json
-            agent-workflow/reports/${{ steps.run-date.outputs.date }}-trend-candidate-decision*.md
-            agent-workflow/reports/${{ steps.run-date.outputs.date }}-no-trend-candidate-decision.md
             agent-workflow/reports/frontstage-regression-gate-*.md
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
@@ -616,8 +600,6 @@ jobs:
             01-SiteV2/site/data/trend-radar-v1.json
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
-            01-SiteV2/content/06-asset-candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
-            01-SiteV2/knowledge/03-Asset-Candidates/trend/${{ steps.run-date.outputs.date }}--trend-candidate--*.md
             01-SiteV2/site/data/v3-data-observation-desk.json
             01-SiteV2/site/data/industry-reports-frontstage.json
             01-SiteV2/site/data/intelligence-graph-index.json
@@ -693,20 +675,10 @@ jobs:
             fi
           fi
 
-          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.trend-decision.outcome }}" = "success" ]; then
-            stage_find "01-SiteV2/content/06-asset-candidates/trend" "${RUN_DATE}--trend-candidate--*.md"
-            stage_find "01-SiteV2/knowledge/03-Asset-Candidates/trend" "${RUN_DATE}--trend-candidate--*.md"
-            no_decision_file="agent-workflow/reports/${RUN_DATE}-no-trend-candidate-decision.md"
-            if git ls-files --error-unmatch "$no_decision_file" >/dev/null 2>&1; then
-              git add -u -- "$no_decision_file"
-            fi
-          fi
-
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
             stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.md"
             stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.json"
             stage_if_exists "agent-workflow/reports/${RUN_DATE}-trend-candidate-decision.md"
-            stage_if_exists "agent-workflow/reports/${RUN_DATE}-trend-candidate-decision-blocked.md"
             stage_if_exists "agent-workflow/reports/${RUN_DATE}-no-trend-candidate-decision.md"
             stage_if_exists "01-SiteV2/site/data/v3-data-observation-desk.json"
             stage_if_exists "01-SiteV2/site/data/intelligence-graph-index.json"
@@ -894,7 +866,6 @@ jobs:
             --cards="${{ steps.assets.outcome }}" \
             --dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
             --cardEditorial="${{ steps.card-editorial-gate.outcome }}" \
-            --trendDecision="${{ steps.trend-decision.outcome }}" \
             --frontstageData="${{ steps.business-frontstage-data.outcome }}" \
             --frontstageGate="${{ steps.business-frontstage-gate.outcome }}" \
             --operations="${{ steps.operations-data.outcome }}" \

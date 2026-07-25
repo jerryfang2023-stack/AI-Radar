@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -130,6 +130,7 @@
       "EV-22b8d155ce027905",
       "EV-3ef3e18df61a00d8",
       "EV-4bb5b24400e49ea4",
+      "EV-568d2aeab5234e48",
       "EV-97a8d86baa7fffc4",
       "EV-0ad758b04b9b5313",
       "EV-c08837795f9e16d2",
@@ -194,15 +195,14 @@
       "EN-18f0900d6c487f59",
       "EN-a85d5a9b4a77d59b",
       "EN-6f216f2ea5b7a13e",
-      "EN-419f2cd96ee122e3",
       "EN-96eebba49dbbf422",
       "EN-81e577740888ca6d",
       "EN-1229af0aa3b0305e",
-      "EN-0e008e2c06144ec8",
-      "EN-cfe6926406f30a15",
+      "EN-40f98159922ab514",
       "EN-8d323d8bba783aa3",
       "EN-9ff1a58a589bc318",
       "EN-01f1074bb52ff605",
+      "EN-0e008e2c06144ec8",
       "EN-f2c032b19edb7900",
       "EN-2ab6d53e717a0e0d",
       "EN-2998f8b13f4fd72e",
@@ -210,7 +210,6 @@
       "EN-d56aa2f9908f566a",
       "EN-4baef0e41cbd7ae2",
       "EN-bdfecbcd7dbf76d2",
-      "EN-e3db3da2b7dc6057",
       "EN-2aae0de3f5530f08"
     ],
     "firstSeen": "2025-10-09",
@@ -220,12 +219,11 @@
       "REL2-066894debed9bb20",
       "REL2-dccb634be274d411",
       "REL2-de5487ce28a724fb",
-      "REL2-757c5244a3f66ecb",
+      "REL2-fcedf12f07ebc6c2",
       "REL2-84466085129acbe5",
       "REL2-70d05a81606b3589",
       "REL2-d68bd82241b5ba02",
-      "REL2-f92ee2f782a8185b",
-      "REL2-b1915b6270f6c555",
+      "REL2-6e0bd52053c02359",
       "REL2-f92ce4e61c880fbe",
       "REL2-c2d351d111dce63d",
       "REL2-1967b453be7e7724",
@@ -234,7 +232,6 @@
       "REL2-c1743ef4560536bd",
       "REL2-eba841d5627207a4",
       "REL2-7a95bce5aecaba79",
-      "REL2-410332a9c4d6c26f",
       "REL2-80e7d430efc92a5c",
       "REL2-3831db0cf6e33a54",
       "REL2-eab334edbd3e9d50",
@@ -243,8 +240,6 @@
       "REL2-572d299c04663eb3",
       "REL2-653e76cf1e48b6fd",
       "REL2-0637ce4d20d93f49",
-      "REL2-1664ef5fd7832e87",
-      "REL2-6c44835ffc465ca4",
       "REL2-ff60075c4628759d"
     ],
     "groupedEventIds": {
@@ -299,6 +294,7 @@
         "EV-cc974e0031c69715",
         "EV-cd067fa6f39fe828",
         "EV-dc3a5509a690a6b0",
+        "EV-59229486408edb05",
         "EV-f3cc0845ce442e6b",
         "EV-bee410f8134cba5a",
         "EV-a255cfc0dab44564",
@@ -367,8 +363,8 @@
         "EV-22b8d155ce027905",
         "EV-3ef3e18df61a00d8",
         "EV-4bb5b24400e49ea4",
-        "EV-97a8d86baa7fffc4",
         "EV-568d2aeab5234e48",
+        "EV-97a8d86baa7fffc4",
         "EV-0ad758b04b9b5313",
         "EV-c08837795f9e16d2",
         "EV-4a3cb762183581cd",
@@ -728,7 +724,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-bbdefa2950f49882",
-          "EN-6c87e5496f592f3c",
           "EN-a85d5a9b4a77d59b"
         ]
       },
@@ -793,6 +788,29 @@
         "displayTags": [],
         "entityIds": [
           "EN-bbdefa2950f49882"
+        ]
+      },
+      {
+        "id": "EV-59229486408edb05",
+        "dataDate": "2026-07-22",
+        "date": "2026-07-21",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google DeepMind 发布三款新 Gemini 模型，但未包含 3.5 Pro",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-18f0900d6c487f59"
         ]
       },
       {
@@ -953,8 +971,7 @@
         "displayTags": [],
         "entityIds": [
           "EN-bbdefa2950f49882",
-          "EN-7a6d113e2d376015",
-          "EN-cfe6926406f30a15"
+          "EN-7a6d113e2d376015"
         ]
       },
       {
@@ -1006,11 +1023,10 @@
         ],
         "entityIds": [
           "EN-6fcba5d96a4fadfd",
-          "EN-630dc133336bc266",
+          "EN-0b9ca57f53ba758b",
           "EN-ce635c4eabff5e4f",
           "EN-c4bc2d00a42f220f",
-          "EN-bbdefa2950f49882",
-          "EN-0b9ca57f53ba758b"
+          "EN-bbdefa2950f49882"
         ]
       },
       {
@@ -1198,8 +1214,7 @@
         "displayTags": [],
         "entityIds": [
           "EN-ef645c28621e5f0f",
-          "EN-bbdefa2950f49882",
-          "EN-c96163fd12452c9c"
+          "EN-bbdefa2950f49882"
         ]
       },
       {
@@ -1289,8 +1304,7 @@
         "entityIds": [
           "EN-1169c45fdc06f0ac",
           "EN-bbdefa2950f49882",
-          "EN-8d323d8bba783aa3",
-          "EN-cfe6926406f30a15"
+          "EN-8d323d8bba783aa3"
         ]
       },
       {
@@ -1308,8 +1322,7 @@
           "EN-7d3194f79e645c42",
           "EN-c70eca6b0f88f44d",
           "EN-bbdefa2950f49882",
-          "EN-7839fb10a8f14c70",
-          "EN-6d120f7a276b6b4c"
+          "EN-7839fb10a8f14c70"
         ]
       },
       {
@@ -1440,8 +1453,7 @@
         "entityIds": [
           "EN-35e36dc1a5213fa3",
           "EN-bbdefa2950f49882",
-          "EN-81e577740888ca6d",
-          "EN-e3db3da2b7dc6057"
+          "EN-81e577740888ca6d"
         ]
       },
       {
@@ -1473,8 +1485,7 @@
         "displayTags": [],
         "entityIds": [
           "EN-bbdefa2950f49882",
-          "EN-9086d4784c07561e",
-          "EN-07035a20899a7cd7"
+          "EN-9086d4784c07561e"
         ]
       },
       {
@@ -1504,8 +1515,7 @@
         "entityIds": [
           "EN-1bf93b12e68cac56",
           "EN-d9b1d7819af92e77",
-          "EN-bbdefa2950f49882",
-          "EN-151013fb8438c046"
+          "EN-bbdefa2950f49882"
         ]
       },
       {
@@ -1560,9 +1570,7 @@
           }
         ],
         "entityIds": [
-          "EN-bbdefa2950f49882",
-          "EN-c96163fd12452c9c",
-          "EN-cfe6926406f30a15"
+          "EN-bbdefa2950f49882"
         ]
       },
       {
@@ -2188,10 +2196,7 @@
           "EN-cbc62794911ff31b",
           "EN-bbdefa2950f49882",
           "EN-9fbf261b62c1d7c0",
-          "EN-8d4321d936320802",
-          "EN-c52588a7a99c8073",
-          "EN-0d6deb2f346991eb",
-          "EN-de3f145bf84e9459"
+          "EN-8d4321d936320802"
         ]
       },
       {
@@ -2285,7 +2290,6 @@
         ],
         "entityIds": [
           "EN-bbdefa2950f49882",
-          "EN-b8174ff7d1b7aada",
           "EN-3aa38718f0399af9"
         ]
       },
@@ -2340,8 +2344,7 @@
         "title": "Google Home 6 月 23 日起扩展面部识别：非正面也能靠体型衣服识别，新增特定声音检测",
         "displayTags": [],
         "entityIds": [
-          "EN-bbdefa2950f49882",
-          "EN-3546e1b15e6549b2"
+          "EN-bbdefa2950f49882"
         ]
       },
       {
@@ -2495,7 +2498,6 @@
         "entityIds": [
           "EN-d9b1d7819af92e77",
           "EN-bbdefa2950f49882",
-          "EN-cfe6926406f30a15",
           "EN-5567ce1995cc85d7"
         ]
       },
@@ -2676,8 +2678,7 @@
         ],
         "entityIds": [
           "EN-4c7e597df9980037",
-          "EN-bbdefa2950f49882",
-          "EN-d4c56709df757c56"
+          "EN-bbdefa2950f49882"
         ]
       },
       {
@@ -2714,8 +2715,7 @@
           }
         ],
         "entityIds": [
-          "EN-bbdefa2950f49882",
-          "EN-3546e1b15e6549b2"
+          "EN-bbdefa2950f49882"
         ]
       },
       {
@@ -3023,8 +3023,7 @@
         "displayTags": [],
         "entityIds": [
           "EN-9fbf261b62c1d7c0",
-          "EN-bbdefa2950f49882",
-          "EN-e1a4e41919f7c2dc"
+          "EN-bbdefa2950f49882"
         ]
       },
       {
@@ -3125,6 +3124,56 @@
         ]
       },
       {
+        "id": "EV-568d2aeab5234e48",
+        "dataDate": "2026-06-11",
+        "date": "2026-06-11",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Google DeepMind 发布 DiffusionGemma，本地 AI 推理速度提升 4 倍",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "image_generation",
+            "name": "图像生成"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "mixture_of_experts",
+            "name": "混合专家模型"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "media_entertainment",
+            "dimensionName": "行业",
+            "name": "媒体与娱乐"
+          }
+        ],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-8d4321d936320802",
+          "EN-3db1f560db626918",
+          "EN-d56aa2f9908f566a",
+          "EN-bbdefa2950f49882"
+        ]
+      },
+      {
         "id": "EV-97a8d86baa7fffc4",
         "dataDate": "2026-06-11",
         "date": "2026-06-11",
@@ -3189,55 +3238,6 @@
           "EN-c70eca6b0f88f44d",
           "EN-bbdefa2950f49882",
           "EN-9fbf261b62c1d7c0"
-        ]
-      },
-      {
-        "id": "EV-568d2aeab5234e48",
-        "dataDate": "2026-06-11",
-        "date": "2026-06-11",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Google DeepMind 发布 DiffusionGemma，本地 AI 推理速度提升 4 倍",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          },
-          {
-            "dimensionId": "product_form",
-            "id": "chip_accelerator",
-            "dimensionName": "产品形态",
-            "name": "芯片与加速器"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "image_generation",
-            "name": "图像生成"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "mixture_of_experts",
-            "name": "混合专家模型"
-          },
-          {
-            "dimensionId": "industry",
-            "id": "media_entertainment",
-            "dimensionName": "行业",
-            "name": "媒体与娱乐"
-          }
-        ],
-        "entityIds": [
-          "EN-2b6e51bec93e86c1",
-          "EN-8d4321d936320802",
-          "EN-3db1f560db626918",
-          "EN-d56aa2f9908f566a"
         ]
       },
       {
@@ -3371,9 +3371,7 @@
         "entityIds": [
           "EN-35e36dc1a5213fa3",
           "EN-bbdefa2950f49882",
-          "EN-bdfecbcd7dbf76d2",
-          "EN-cfe6926406f30a15",
-          "EN-e3db3da2b7dc6057"
+          "EN-bdfecbcd7dbf76d2"
         ]
       },
       {
@@ -3508,8 +3506,7 @@
           "EN-35e36dc1a5213fa3",
           "EN-bbdefa2950f49882",
           "EN-8147e6fed86d42c1",
-          "EN-b0532e1af75cc4ab",
-          "EN-e3db3da2b7dc6057"
+          "EN-b0532e1af75cc4ab"
         ]
       },
       {
@@ -3669,9 +3666,7 @@
         "displayTags": [],
         "entityIds": [
           "EN-bbdefa2950f49882",
-          "EN-6f216f2ea5b7a13e",
-          "EN-3c309a993bd57962",
-          "EN-7cf9af03694038e1"
+          "EN-6f216f2ea5b7a13e"
         ]
       },
       {
@@ -3788,27 +3783,6 @@
       ],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-07-22"
-    },
-    {
-      "id": "EN-419f2cd96ee122e3",
-      "name": "Project Indigo",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-bee410f8134cba5a"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-21"
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -4054,59 +4028,27 @@
       "lastSeen": "2026-07-16"
     },
     {
-      "id": "EN-0e008e2c06144ec8",
-      "name": "Nano Banana",
+      "id": "EN-40f98159922ab514",
+      "name": "Google Images",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [],
+      "aliases": [
+        "Images 25"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-6359c9f6c2609a38",
-        "EV-5babb43f4b4d302f",
-        "EV-89b644ff05e6b93b"
+        "EV-c2d784ef0a5376f8"
       ],
       "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-multimodal",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-video_generation"
-      ],
+      "classificationRefs": [],
       "relatedEntityIds": [
         "EN-bbdefa2950f49882"
       ],
-      "firstSeen": "2026-07-01",
-      "lastSeen": "2026-07-16"
-    },
-    {
-      "id": "EN-cfe6926406f30a15",
-      "name": "Gemini Enterprise Agent",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-62feeb8f8791c63c",
-        "EV-9254af7aaedaafbe",
-        "EV-04ee2bc4ac888358",
-        "EV-a886a800f06ab9d6",
-        "EV-a591b0c96f79de45"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-retrieval_augmented_generation"
-      ],
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "firstSeen": "2026-06-08",
-      "lastSeen": "2026-07-17"
+      "firstSeen": "2026-07-14",
+      "lastSeen": "2026-07-15"
     },
     {
       "id": "EN-8d323d8bba783aa3",
@@ -4186,6 +4128,33 @@
       ],
       "firstSeen": "2026-07-01",
       "lastSeen": "2026-07-15"
+    },
+    {
+      "id": "EN-0e008e2c06144ec8",
+      "name": "Nano Banana",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6359c9f6c2609a38",
+        "EV-5babb43f4b4d302f",
+        "EV-89b644ff05e6b93b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-16"
     },
     {
       "id": "EN-f2c032b19edb7900",
@@ -4354,41 +4323,11 @@
       "lastSeen": "2026-06-09"
     },
     {
-      "id": "EN-e3db3da2b7dc6057",
-      "name": "PHRM",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "Research"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-2cd95ab95d0f2ad9",
-        "EV-a591b0c96f79de45",
-        "EV-dab4d3f2059e8880"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-retrieval_augmented_generation"
-      ],
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "firstSeen": "2026-06-05",
-      "lastSeen": "2026-07-10"
-    },
-    {
       "id": "EN-2aae0de3f5530f08",
-      "name": "Google Cloud Marketplace",
+      "name": "Cloud Marketplace",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [
-        "Cloud Marketplace"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4408,7 +4347,7 @@
   "relationships": [
     {
       "relationship_id": "REL2-a5a15f09d4da8135",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4426,7 +4365,7 @@
     },
     {
       "relationship_id": "REL2-066894debed9bb20",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4436,7 +4375,6 @@
       "claim_refs": [
         "CL-67be95fbd92f3580",
         "CL-039a4c0d200bbc02",
-        "CL-990412cf5b44a5f2",
         "CL-74b76a0a03352ff8"
       ],
       "source_refs": [
@@ -4447,7 +4385,7 @@
     },
     {
       "relationship_id": "REL2-dccb634be274d411",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4456,7 +4394,6 @@
       "event_id": "EV-cc974e0031c69715",
       "claim_refs": [
         "CL-d475a8e56415cfd2",
-        "CL-ef2b3b03da229778",
         "CL-2b6cdcc11e952da7",
         "CL-8f05b63f73a1ee0d"
       ],
@@ -4468,7 +4405,7 @@
     },
     {
       "relationship_id": "REL2-de5487ce28a724fb",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4476,10 +4413,7 @@
       "object_type": "entity",
       "event_id": "EV-cc974e0031c69715",
       "claim_refs": [
-        "CL-d475a8e56415cfd2",
-        "CL-ef2b3b03da229778",
-        "CL-2b6cdcc11e952da7",
-        "CL-8f05b63f73a1ee0d"
+        "CL-d475a8e56415cfd2"
       ],
       "source_refs": [
         "SA-52874072b86357e5"
@@ -4488,29 +4422,26 @@
       "status": "verified"
     },
     {
-      "relationship_id": "REL2-757c5244a3f66ecb",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_id": "REL2-fcedf12f07ebc6c2",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
-      "object_ref": "EN-419f2cd96ee122e3",
+      "object_ref": "EN-18f0900d6c487f59",
       "object_type": "entity",
-      "event_id": "EV-bee410f8134cba5a",
+      "event_id": "EV-59229486408edb05",
       "claim_refs": [
-        "CL-6c1695609b367e3d",
-        "CL-1bb286d7b194f0ef",
-        "CL-c3a677c5071160a3",
-        "CL-57c7ca53e4bbe646"
+        "CL-8d504f615d973a01"
       ],
       "source_refs": [
-        "SA-72c7c6f5de8a1e95"
+        "SA-a75ceb328d955c6a"
       ],
-      "data_date": "2026-07-21",
+      "data_date": "2026-07-22",
       "status": "verified"
     },
     {
       "relationship_id": "REL2-84466085129acbe5",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-96eebba49dbbf422",
       "subject_type": "entity",
       "predicate": "partners_with",
@@ -4531,7 +4462,7 @@
     },
     {
       "relationship_id": "REL2-70d05a81606b3589",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4549,7 +4480,7 @@
     },
     {
       "relationship_id": "REL2-d68bd82241b5ba02",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4557,7 +4488,6 @@
       "object_type": "entity",
       "event_id": "EV-04efb4eecbb8125f",
       "claim_refs": [
-        "CL-1cda26b2793c0711",
         "CL-f1c1c7bd86022006",
         "CL-0b9e84b1b5bb3529",
         "CL-a86ade0b17b2516b"
@@ -4569,48 +4499,29 @@
       "status": "verified"
     },
     {
-      "relationship_id": "REL2-f92ee2f782a8185b",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_id": "REL2-6e0bd52053c02359",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
-      "object_ref": "EN-0e008e2c06144ec8",
+      "object_ref": "EN-40f98159922ab514",
       "object_type": "entity",
-      "event_id": "EV-6359c9f6c2609a38",
+      "event_id": "EV-c2d784ef0a5376f8",
       "claim_refs": [
-        "CL-3c3d4af5e069787d",
-        "CL-b606f6b126922962"
+        "CL-c9e50e4422f648e8",
+        "CL-b68e40a6422efe0d",
+        "CL-88aeea2a16ac2d86",
+        "CL-66ad23809957cc98"
       ],
       "source_refs": [
-        "SA-b894cd4477812b65"
+        "SA-2ec31a5d985c59b9"
       ],
-      "data_date": "2026-07-16",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-b1915b6270f6c555",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-cfe6926406f30a15",
-      "object_type": "entity",
-      "event_id": "EV-04ee2bc4ac888358",
-      "claim_refs": [
-        "CL-8b2067533e50e879",
-        "CL-8f365d25ad4e3022",
-        "CL-ec5ff69e773cde3e",
-        "CL-7af98bb0bb3e11c7"
-      ],
-      "source_refs": [
-        "SA-972efffc04ed35b1"
-      ],
-      "data_date": "2026-07-09",
+      "data_date": "2026-07-15",
       "status": "verified"
     },
     {
       "relationship_id": "REL2-f92ce4e61c880fbe",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4619,9 +4530,7 @@
       "event_id": "EV-96c8ce4ee89adb84",
       "claim_refs": [
         "CL-1cc211dda48a2df5",
-        "CL-a474abd4f4f26091",
-        "CL-349612643de6fc05",
-        "CL-4f231c50ce2a04bc"
+        "CL-349612643de6fc05"
       ],
       "source_refs": [
         "SA-e694ff120209f67a"
@@ -4631,7 +4540,7 @@
     },
     {
       "relationship_id": "REL2-c2d351d111dce63d",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4641,7 +4550,6 @@
       "claim_refs": [
         "CL-283dbc5bfe75db2f",
         "CL-4c6183d41cbb5951",
-        "CL-94c89cfbc12c54e4",
         "CL-1a7e4542b5776180"
       ],
       "source_refs": [
@@ -4652,7 +4560,7 @@
     },
     {
       "relationship_id": "REL2-1967b453be7e7724",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4661,9 +4569,7 @@
       "event_id": "EV-89b644ff05e6b93b",
       "claim_refs": [
         "CL-c295e49cd6fe5fcc",
-        "CL-ed4871935b3e926a",
-        "CL-c1cc2035b379c4f4",
-        "CL-ed809d44725b1876"
+        "CL-ed4871935b3e926a"
       ],
       "source_refs": [
         "SA-7c91c84c27e2a1a0"
@@ -4673,7 +4579,7 @@
     },
     {
       "relationship_id": "REL2-65389a75e3085862",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4681,10 +4587,7 @@
       "object_type": "entity",
       "event_id": "EV-5babb43f4b4d302f",
       "claim_refs": [
-        "CL-4cf8bbb7f166e862",
-        "CL-928846910e24c9b3",
-        "CL-1030b31c165540d3",
-        "CL-3ca47c32c729c6e8"
+        "CL-928846910e24c9b3"
       ],
       "source_refs": [
         "SA-2f82fda2672510e1"
@@ -4694,7 +4597,7 @@
     },
     {
       "relationship_id": "REL2-a973fd9783c033d1",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4702,10 +4605,7 @@
       "object_type": "entity",
       "event_id": "EV-5babb43f4b4d302f",
       "claim_refs": [
-        "CL-4cf8bbb7f166e862",
-        "CL-928846910e24c9b3",
-        "CL-1030b31c165540d3",
-        "CL-3ca47c32c729c6e8"
+        "CL-928846910e24c9b3"
       ],
       "source_refs": [
         "SA-2f82fda2672510e1"
@@ -4715,7 +4615,7 @@
     },
     {
       "relationship_id": "REL2-c1743ef4560536bd",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4724,9 +4624,7 @@
       "event_id": "EV-89b644ff05e6b93b",
       "claim_refs": [
         "CL-c295e49cd6fe5fcc",
-        "CL-ed4871935b3e926a",
-        "CL-c1cc2035b379c4f4",
-        "CL-ed809d44725b1876"
+        "CL-ed4871935b3e926a"
       ],
       "source_refs": [
         "SA-7c91c84c27e2a1a0"
@@ -4736,7 +4634,7 @@
     },
     {
       "relationship_id": "REL2-eba841d5627207a4",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4745,7 +4643,6 @@
       "event_id": "EV-d5cc9a50a9b88d2b",
       "claim_refs": [
         "CL-39f51073a1da78f0",
-        "CL-b3f72da1c6bc2bc4",
         "CL-91a088a6fc02ec3a",
         "CL-4db278891d1e958a"
       ],
@@ -4757,7 +4654,7 @@
     },
     {
       "relationship_id": "REL2-7a95bce5aecaba79",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-2ab6d53e717a0e0d",
       "subject_type": "entity",
       "predicate": "partners_with",
@@ -4776,26 +4673,8 @@
       "status": "verified"
     },
     {
-      "relationship_id": "REL2-410332a9c4d6c26f",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-cfe6926406f30a15",
-      "object_type": "entity",
-      "event_id": "EV-a886a800f06ab9d6",
-      "claim_refs": [
-        "CL-5912581fa2dc70b8"
-      ],
-      "source_refs": [
-        "SA-32e71aa4ecc3064b"
-      ],
-      "data_date": "2026-06-22",
-      "status": "verified"
-    },
-    {
       "relationship_id": "REL2-80e7d430efc92a5c",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4814,7 +4693,7 @@
     },
     {
       "relationship_id": "REL2-3831db0cf6e33a54",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4835,7 +4714,7 @@
     },
     {
       "relationship_id": "REL2-eab334edbd3e9d50",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4845,7 +4724,6 @@
       "claim_refs": [
         "CL-c83d337cfa0736fd",
         "CL-ca554276228d639a",
-        "CL-dca0f01153b681c9",
         "CL-191ed56085648a37"
       ],
       "source_refs": [
@@ -4856,7 +4734,7 @@
     },
     {
       "relationship_id": "REL2-d205049958061bb1",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4877,7 +4755,7 @@
     },
     {
       "relationship_id": "REL2-d38107a2fe8bacd9",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4886,7 +4764,6 @@
       "event_id": "EV-568d2aeab5234e48",
       "claim_refs": [
         "CL-0e3152343b11ebca",
-        "CL-996c42860de8d42c",
         "CL-917ac73263ec2d6c",
         "CL-66d9fb66d9687af6"
       ],
@@ -4898,7 +4775,7 @@
     },
     {
       "relationship_id": "REL2-572d299c04663eb3",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4919,7 +4796,7 @@
     },
     {
       "relationship_id": "REL2-653e76cf1e48b6fd",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4938,7 +4815,7 @@
     },
     {
       "relationship_id": "REL2-0637ce4d20d93f49",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -4955,44 +4832,8 @@
       "status": "verified"
     },
     {
-      "relationship_id": "REL2-1664ef5fd7832e87",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-cfe6926406f30a15",
-      "object_type": "entity",
-      "event_id": "EV-a591b0c96f79de45",
-      "claim_refs": [
-        "CL-de37f5769dfebc99"
-      ],
-      "source_refs": [
-        "SA-08811072d14bb993"
-      ],
-      "data_date": "2026-06-09",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-6c44835ffc465ca4",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-e3db3da2b7dc6057",
-      "object_type": "entity",
-      "event_id": "EV-a591b0c96f79de45",
-      "claim_refs": [
-        "CL-de37f5769dfebc99"
-      ],
-      "source_refs": [
-        "SA-08811072d14bb993"
-      ],
-      "data_date": "2026-06-09",
-      "status": "verified"
-    },
-    {
       "relationship_id": "REL2-ff60075c4628759d",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -5001,7 +4842,6 @@
       "event_id": "EV-5493c61bcbe58aa2",
       "claim_refs": [
         "CL-57ed0bec96d075d4",
-        "CL-eec2d7118595677e",
         "CL-3ce00d540bcdd10e",
         "CL-b84ce1a03fcf6751"
       ],
@@ -5028,7 +4868,6 @@
         "EV-a4f052325d0ef230"
       ],
       "entityIds": [
-        "EN-9d4cbc0ceab2c56a",
         "EN-ea3bd73e2b506e00",
         "EN-96eebba49dbbf422",
         "EN-e3863f813fe47240",
@@ -5036,7 +4875,6 @@
         "EN-09c344df70df9660",
         "EN-1725c58362aadc2a",
         "EN-bbdefa2950f49882",
-        "EN-b8174ff7d1b7aada",
         "EN-3aa38718f0399af9",
         "EN-e16fc821f34228d1",
         "EN-16fe95bd48dbf178",
@@ -5421,7 +5259,6 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
-        "EN-9d4cbc0ceab2c56a",
         "EN-ab9b29074a980e4b",
         "EN-c70eca6b0f88f44d",
         "EN-7d3194f79e645c42",
@@ -5592,20 +5429,16 @@
         "EN-dca6ec9510fc0176",
         "EN-607964040e4b62e0",
         "EN-dc33b6ff77e3359c",
-        "EN-c69fd0dcf781cbf6",
         "EN-481243d2f2a235c1",
         "EN-7839fb10a8f14c70",
-        "EN-10a27c6240d18dbe",
         "EN-240389f4b730bad4",
         "EN-e1517be14d06cdb7",
         "EN-9ff7e3ae1b1ab43f",
         "EN-45c52af0feb0f285",
         "EN-8d57f84bd1847b24",
-        "EN-f1649339197f76d6",
         "EN-a7baed72c308ce88",
         "EN-dd24c3b82a636110",
         "EN-ba728f8ca730921f",
-        "EN-cb3cddd8f161d840",
         "EN-71f3ed83fd5a3ed9",
         "EN-e3c189c04bf15baf",
         "EN-6fcba5d96a4fadfd",
@@ -5614,11 +5447,9 @@
         "EN-7c094d35e3b700c8",
         "EN-9a266f40d42cf217",
         "EN-0d1e478de2157d48",
-        "EN-4546b5bdff2ea8ed",
         "EN-18f0900d6c487f59",
         "EN-52c2f30b6bda5898",
         "EN-2a2aa0512b8ea131",
-        "EN-87683d905745fb89",
         "EN-09d3eb0b07daf955",
         "EN-a1adb91065c5a347",
         "EN-149e96efddc48168",
@@ -5628,9 +5459,7 @@
         "EN-6f21a653c48f4f19",
         "EN-6ef7552b4631e789",
         "EN-dd758281d0c70e60",
-        "EN-e9b67bdfb6ae6a2e",
         "EN-985e1a7c957148f9",
-        "EN-3b29a20f0c5d0cdc",
         "EN-2c348893efb2316e",
         "EN-2abf8289b2f2113f",
         "EN-91901356a63794df",
@@ -5638,12 +5467,10 @@
         "EN-92ec1124e1de6f54",
         "EN-0a64d5a41e885455",
         "EN-8b0aea25404131b5",
-        "EN-0e3c625f3930d7b7",
         "EN-aa15d891a32a51b8",
-        "EN-8395dc051feafc4c",
         "EN-eaaf22a384c26014",
         "EN-3f726694f178ed7a",
-        "EN-3a9b395103419892",
+        "EN-cb4754c48f8023d0",
         "EN-b0126946c556dc47",
         "EN-3fe9141f6d2e3e7f",
         "EN-f3cfedbe8428c9f7",
@@ -5651,27 +5478,21 @@
         "EN-50ba7ff15827787b",
         "EN-597d8c4afa5fe3d6",
         "EN-ac123e56b0168ec2",
-        "EN-f0aa6c0681eb0d35",
-        "EN-3149ad548669e717",
-        "EN-9612b6f6884e062f",
-        "EN-cb4754c48f8023d0",
+        "EN-8395dc051feafc4c",
+        "EN-275b0f4a4023d91c",
         "EN-820a72d1d4b51ae7",
         "EN-74692028630429c7",
         "EN-e6483498af8bd2cd",
         "EN-b60e6df651264e14",
         "EN-e07654c7cc29acbd",
-        "EN-78cff6caea83f213",
         "EN-842fcb5e60989a03",
         "EN-5f6367300dabc238",
         "EN-e93e29634540a290",
         "EN-dc6c28a2123e8efb",
         "EN-45e0ade11fed1e44",
-        "EN-26e4951af4490c21",
         "EN-7dd7122ad9bf240f",
         "EN-95b0632f1b292fa7",
         "EN-b644c0a9d493976a",
-        "EN-636fa9664f878a4d",
-        "EN-6c87e5496f592f3c",
         "EN-ef8ef0d64526209a",
         "EN-a89151ba4b5ac0f2",
         "EN-8b619895a83e35c8",
@@ -5687,20 +5508,14 @@
         "EN-e3863f813fe47240",
         "EN-4dbe391b8fcf977a",
         "EN-6a50fbf0b970c03a",
-        "EN-d1ad14d4ad57d207",
         "EN-309e1850e39b13ff",
         "EN-954dc5d6516f127c",
         "EN-b9776d7ddf459c9a",
         "EN-8d82b0feb1f5da72",
-        "EN-52fc33ae4d101a5d",
         "EN-1bf93b12e68cac56",
-        "EN-151013fb8438c046",
         "EN-536c4035ba0c7047",
         "EN-7ff4fb5ddc1f4700",
-        "EN-18cab68e658be896",
-        "EN-64978f6783bb0099",
         "EN-a4105d5dca667827",
-        "EN-30244d0624ac26cb",
         "EN-774e4ae6eef0efdb",
         "EN-87b3ab1e46b7ee62",
         "EN-210a6aeaed360009",
@@ -5710,11 +5525,8 @@
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-1c3cb68d25565c1c",
-        "EN-654d595fda8963b5",
-        "EN-3c2d249445ae40b2",
         "EN-c0803e19540a3203",
         "EN-ba961b5c6d1aee29",
-        "EN-901c3a4e94b9f14a",
         "EN-b465eebe35e3889a",
         "EN-5a4c2be958c0af72",
         "EN-0a1750ec669a270c",
@@ -5735,54 +5547,41 @@
         "EN-96a4bc2602655473",
         "EN-2c063f604e634100",
         "EN-4adc2faea521b1f1",
-        "EN-c52588a7a99c8073",
-        "EN-0d6deb2f346991eb",
-        "EN-de3f145bf84e9459",
         "EN-e473f24d4325d51a",
         "EN-33a6331aaa822714",
         "EN-1dc7e9837d60c55d",
         "EN-a42d5d95234db6c4",
-        "EN-9e5d9b729e161734",
-        "EN-5ce177312903c604",
+        "EN-52fc33ae4d101a5d",
         "EN-042e9398f2cc8902",
         "EN-2a817d99285e12c4",
         "EN-34da56029403e6f7",
         "EN-51a5b811990f2a2a",
         "EN-e65e0f2695fa259d",
-        "EN-562c2c6ed79e6b9e",
-        "EN-bbed1081f0b62667",
         "EN-ae4ea495016fb286",
         "EN-16fe95bd48dbf178",
         "EN-0666a703033ebd1b",
         "EN-30a63b26b06e096e",
+        "EN-53874092e000069b",
         "EN-fdc6b157616f12a8",
         "EN-d4c633f24b48fcc4",
-        "EN-46a4eebd20d881ec",
         "EN-bc1fc5140040180e",
         "EN-f19600b9e18f7f27",
         "EN-478e0ad4e0940af0",
-        "EN-a4b67cb85b36dab7",
         "EN-27c0390d5f3de698",
         "EN-27b78f50b2d3d969",
         "EN-1b0a2528912919f4",
-        "EN-5c5f862c2a5059df",
-        "EN-3137a20f5252af53",
         "EN-7d1507284a5757ca",
         "EN-02bb4eeba3bde980",
         "EN-3c534d54dae48cbb",
-        "EN-1fe81dc401e2d1df",
-        "EN-d1524df17d7e5a69",
         "EN-8a96f1a807787797",
         "EN-8487426ba81162db",
-        "EN-1ca156b825e21de0",
         "EN-3a13916345b60fad",
         "EN-28d79881d0386305",
         "EN-a4e7560e8d2b340f",
         "EN-0fc990954c0aea17",
+        "EN-ade7ba309eb7a3bf",
         "EN-4c7e597df9980037",
-        "EN-d4c56709df757c56",
         "EN-716f0a8b380bb7d0",
-        "EN-ddc6bcfaf931295c",
         "EN-5e18acda295236e9",
         "EN-e97edd12a2b8befa",
         "EN-af53dbc3e443f7a9",
@@ -5800,27 +5599,20 @@
         "EN-e18cb6435603205d",
         "EN-82eaaba81d9dcc54",
         "EN-761a66c29a55bc53",
-        "EN-5f286d0c0374c045",
-        "EN-1da3dd14ee41aa1a",
         "EN-dba61afed18c85d6",
         "EN-2b6e51bec93e86c1",
         "EN-c18179b68329b054",
         "EN-4540952d4d9138db",
-        "EN-c2f186e231aa600d",
         "EN-d8494bb34d6ddc43",
         "EN-b8c236d640d6a5fb",
-        "EN-b59c577ed73536c6",
         "EN-8a6a6c7694a73ebd",
         "EN-36076a5178595978",
         "EN-73df89424ba2e889",
-        "EN-5752af932876a68c",
         "EN-72e8088a05b38ae3",
         "EN-833cd615d86b73ca",
         "EN-45b5216872656eb3",
         "EN-35e36dc1a5213fa3",
         "EN-bdfecbcd7dbf76d2",
-        "EN-cfe6926406f30a15",
-        "EN-e3db3da2b7dc6057",
         "EN-c1eb8e913000a8eb",
         "EN-0be477336d3e1a8d",
         "EN-1dc405a4cda895d0",
@@ -5828,46 +5620,37 @@
         "EN-e2a93bc5095dec6c",
         "EN-0decbc3b45f73b2b",
         "EN-45cbca5f78f1ef44",
+        "EN-8da473e7fc7e1edf",
         "EN-11cf7e437e02b626",
         "EN-e75a2e5083aa0089",
         "EN-6d766cee0782bfaf",
         "EN-e956b4e6d9c37fa7",
         "EN-67c6738648b7e247",
         "EN-f37c26d92e90eb90",
-        "EN-b6f4fb536939705e",
         "EN-5ea8161ee62ed0f3",
         "EN-ab9e3beebd83960d",
         "EN-1ecf93c539fcffca",
         "EN-8941d14fe851d732",
         "EN-11ef7b03c79c9bbd",
-        "EN-0b9ca57f53ba758b",
         "EN-9bc22dcabf7f45b3",
         "EN-a3266ab9e10d6105",
         "EN-10fce287b4b1464c",
         "EN-b9db1ff13ae8496e",
-        "EN-7b8cb35de7ad047a",
         "EN-e99987e5c504a796",
         "EN-c4de175a35d9d9d1",
         "EN-4d803c223cec4cc4",
-        "EN-4634cbf463651816",
-        "EN-467f67b2ed0f9a54",
         "EN-fa5bbac1048b9190",
         "EN-5f59f157b0f3c885",
         "EN-b7bea343b08cce2c",
         "EN-fdb2cc367267ac57",
-        "EN-1af769ad0ad5907c",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
-        "EN-c165c006a5968443",
         "EN-96045bee6a2d2527",
         "EN-c608c4787821de1b",
         "EN-e19d91fff0a190fc",
         "EN-5504f88c63fe766d",
         "EN-11c47c7a5668d5af",
         "EN-81baf57e05f11276",
-        "EN-6c959f6391a7ce86",
-        "EN-3b2c084424198ca4",
-        "EN-a1c37b53e46efc4b",
         "EN-e72901462ebe4458"
       ],
       "fdeIds": [
@@ -5962,14 +5745,14 @@
         "EN-28d0bd981118a907",
         "EN-9fbf261b62c1d7c0",
         "EN-ba728f8ca730921f",
-        "EN-cb3cddd8f161d840",
         "EN-71f3ed83fd5a3ed9",
         "EN-e3c189c04bf15baf",
         "EN-3c6d89173e6636d7",
         "EN-31f61ed3e6e210c5",
         "EN-e2a93bc5095dec6c",
         "EN-0decbc3b45f73b2b",
-        "EN-45cbca5f78f1ef44"
+        "EN-45cbca5f78f1ef44",
+        "EN-8da473e7fc7e1edf"
       ],
       "fdeIds": [
         "FDE-d08fed45110ab44b"
@@ -6036,9 +5819,9 @@
         "EN-5b3767eb23d5e4ed",
         "EN-ea3bd73e2b506e00",
         "EN-6d57b22ebbd2bd90",
+        "EN-240389f4b730bad4",
         "EN-7c3482959a6cdd3f",
         "EN-968e2d5b08687bf4",
-        "EN-240389f4b730bad4",
         "EN-ef705dd2f374e840",
         "EN-f48a4090493d2b5e",
         "EN-f9ae78c09ff308f9",
@@ -6052,7 +5835,6 @@
         "EN-1d79127e9d90e89b",
         "EN-bc77259c5d2eb341",
         "EN-fab30471ea65d627",
-        "EN-bb5b6487f881bbb1",
         "EN-4adc2faea521b1f1",
         "EN-c857d09db23e6822",
         "EN-cb4754c48f8023d0",
@@ -6067,15 +5849,15 @@
         "EN-e2a93bc5095dec6c",
         "EN-0decbc3b45f73b2b",
         "EN-45cbca5f78f1ef44",
+        "EN-8da473e7fc7e1edf",
         "EN-b57c95289680078c",
         "EN-2b6e51bec93e86c1",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
         "EN-1ecf93c539fcffca",
         "EN-6fcba5d96a4fadfd",
-        "EN-630dc133336bc266",
-        "EN-c4bc2d00a42f220f",
-        "EN-0b9ca57f53ba758b"
+        "EN-0b9ca57f53ba758b",
+        "EN-c4bc2d00a42f220f"
       ],
       "fdeIds": [
         "FDE-2dda1b977721f467",
@@ -6194,15 +5976,14 @@
         "EN-e2a93bc5095dec6c",
         "EN-0decbc3b45f73b2b",
         "EN-45cbca5f78f1ef44",
+        "EN-8da473e7fc7e1edf",
         "EN-ce635c4eabff5e4f",
         "EN-b57c95289680078c",
         "EN-2b6e51bec93e86c1",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
-        "EN-630dc133336bc266",
-        "EN-c4bc2d00a42f220f",
         "EN-0b9ca57f53ba758b",
-        "EN-46a4eebd20d881ec",
+        "EN-c4bc2d00a42f220f",
         "EN-ba1269449ab76537",
         "EN-e759968ca9278b8d",
         "EN-0030f5adc7a3f4d7"
@@ -6296,7 +6077,6 @@
         "EN-c4ef31845ea79710",
         "EN-9e193e1ec8d75d41",
         "EN-51fd7dc086fcb858",
-        "EN-8395dc051feafc4c",
         "EN-2b6e51bec93e86c1",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
@@ -6460,7 +6240,6 @@
         "EN-89e28a570dce8b18",
         "EN-b70e8201c9feb94a",
         "EN-3673c8b4dba7409e",
-        "EN-7b80ed96beed8c0a",
         "EN-ae4ea495016fb286"
       ],
       "fdeIds": [
@@ -6523,7 +6302,6 @@
         "EN-e274048227f164dc",
         "EN-1bf93b12e68cac56",
         "EN-d9b1d7819af92e77",
-        "EN-151013fb8438c046",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-5388bc10736a0eff",
@@ -6531,7 +6309,6 @@
         "EN-5e1fcba4c9f1cf69",
         "EN-94ff75465b1afa65",
         "EN-3a7bd3e2360a3d29",
-        "EN-40e307d789f77264",
         "EN-1924fff8eb4d54ae",
         "EN-61cce404a45c3545",
         "EN-2a920347dfcf07a7",
@@ -6539,8 +6316,7 @@
         "EN-2dc010636b9dce91",
         "EN-23b979df49741c93",
         "EN-4a639cb888a15d75",
-        "EN-56ee86045cfb0ddd",
-        "EN-9dde0c2d375060f6"
+        "EN-56ee86045cfb0ddd"
       ],
       "fdeIds": [
         "FDE-62f660a9a90bc3f6",
@@ -6643,7 +6419,6 @@
         "EN-94c93b5ab886f2d9",
         "EN-d7aba0f660c463d8",
         "EN-e58ee91f1d57df05",
-        "EN-3fd1b8ed094cd712",
         "EN-8f451ae7730ddb67",
         "EN-ce635c4eabff5e4f",
         "EN-ab9e3beebd83960d",
@@ -6653,7 +6428,6 @@
         "EN-23b979df49741c93",
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
-        "EN-9dde0c2d375060f6",
         "EN-cbc62794911ff31b",
         "EN-a614180064f7ef60",
         "EN-3a7bd3e2360a3d29",
@@ -6743,20 +6517,17 @@
         "EN-0bd85984211bd173",
         "EN-240389f4b730bad4",
         "EN-8d57f84bd1847b24",
-        "EN-4cbf88b0da5d15f8",
         "EN-593d0361124f348f",
         "EN-843e746333671ab1",
         "EN-a96df57737b74def",
         "EN-e2c64fbbaf48eeb2",
         "EN-68dce3237e10d795",
-        "EN-9b07ac3374166b76",
         "EN-0e6e48aba1669631",
         "EN-d77c36c05230024c",
         "EN-be548deba4a093d7",
         "EN-53874092e000069b",
         "EN-9c8ae69b84f21a2e",
         "EN-f0da91960830b394",
-        "EN-505ff8a27618ef39",
         "EN-c51e27d8efcff21f",
         "EN-dbd6a2f6ddb95ca7",
         "EN-954dc5d6516f127c",
@@ -6764,19 +6535,16 @@
         "EN-e3b1bf3dab957ffe",
         "EN-cbc62794911ff31b",
         "EN-a1b0d8a938903dc7",
-        "EN-2b119dc14de9478d",
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
         "EN-8afd897b5b887b06",
         "EN-4d8ee3ec190ebf35",
-        "EN-920510199770f4d6",
         "EN-994f9b7ac2d11473",
         "EN-30081094f2a8c83d",
         "EN-4e7e886400fe6a83",
         "EN-75fe8aaf5a7e3a7e",
         "EN-6fcba5d96a4fadfd",
-        "EN-7d5f17368c04f04c",
         "EN-0d049cd1e9f619f9",
         "EN-7f6333102da9e8bd",
         "EN-5e1fcba4c9f1cf69",
@@ -6827,14 +6595,12 @@
         "EN-0d1e478de2157d48",
         "EN-6f7ac1823da81d2e",
         "EN-8f71c4871a160172",
-        "EN-4546b5bdff2ea8ed",
         "EN-7d3194f79e645c42",
         "EN-78624f0a98e78301",
         "EN-4b078b39d2fcacc7",
         "EN-96eebba49dbbf422",
         "EN-9e193e1ec8d75d41",
         "EN-51fd7dc086fcb858",
-        "EN-8395dc051feafc4c",
         "EN-bbf9aece05291ea4",
         "EN-bbdefa2950f49882",
         "EN-2b6e51bec93e86c1",
@@ -6843,9 +6609,7 @@
         "EN-3db1f560db626918",
         "EN-6e898ad0522fca30",
         "EN-72e8088a05b38ae3",
-        "EN-833cd615d86b73ca",
-        "EN-ebe5ed2fc0df64de",
-        "EN-6f549489209ee753"
+        "EN-833cd615d86b73ca"
       ],
       "fdeIds": [],
       "hardwareIds": [],
@@ -6921,7 +6685,6 @@
         "EN-e73b79a0b10f8cdb",
         "EN-2ca3f7d58fdda0f5",
         "EN-02be787a1aacea06",
-        "EN-62ce3c1a5a893a2c",
         "EN-18f0900d6c487f59",
         "EN-d9352ce019e77ab3",
         "EN-ac123e56b0168ec2",
@@ -6938,16 +6701,13 @@
         "EN-3a7bd3e2360a3d29",
         "EN-2c063f604e634100",
         "EN-03b974cdbd22fe32",
-        "EN-784c7cd63a83ccaa",
         "EN-8de7e44229714152",
-        "EN-5ce177312903c604",
         "EN-d8494bb34d6ddc43",
         "EN-9f15bb7e29e191eb",
         "EN-c8185a1a8a6595ad",
         "EN-ced86039c0ad6a7c",
         "EN-3a13916345b60fad",
         "EN-b59c577ed73536c6",
-        "EN-729324072d368379",
         "EN-842a7da99bd249d4"
       ],
       "fdeIds": [
@@ -7020,7 +6780,6 @@
         "EN-c608c4787821de1b",
         "EN-6f21a653c48f4f19",
         "EN-12a81529bba89666",
-        "EN-5388bc10736a0eff",
         "EN-2c348893efb2316e",
         "EN-44a9bf3b11abea5c",
         "EN-de6b71bf77ff4299",
@@ -7033,8 +6792,6 @@
         "EN-dd920a8cd166f486",
         "EN-c70eca6b0f88f44d",
         "EN-41dcc2d4951f337b",
-        "EN-729324072d368379",
-        "EN-e246a1f9a090075b",
         "EN-1dc405a4cda895d0",
         "EN-e07654c7cc29acbd",
         "EN-c3ce0cc92b48bbd6",
@@ -7074,9 +6831,7 @@
         "EN-2f265a693b2897f1",
         "EN-8d4321d936320802",
         "EN-aa15d891a32a51b8",
-        "EN-8395dc051feafc4c",
         "EN-754b113d548b4469",
-        "EN-d87e6bf7aa180a4a",
         "EN-ae4ea495016fb286",
         "EN-916a98f0fa2a39af",
         "EN-d6d6e4e33c59b45e",
@@ -7089,13 +6844,9 @@
         "EN-c18179b68329b054",
         "EN-35e36dc1a5213fa3",
         "EN-bdfecbcd7dbf76d2",
-        "EN-cfe6926406f30a15",
-        "EN-e3db3da2b7dc6057",
         "EN-4d803c223cec4cc4",
         "EN-7d3194f79e645c42",
-        "EN-c70eca6b0f88f44d",
-        "EN-4634cbf463651816",
-        "EN-467f67b2ed0f9a54"
+        "EN-c70eca6b0f88f44d"
       ],
       "fdeIds": [],
       "hardwareIds": [],
@@ -7142,11 +6893,10 @@
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
         "EN-96eebba49dbbf422",
-        "EN-4cbf88b0da5d15f8",
         "EN-149ae7e9819a17a0",
-        "EN-e9b67bdfb6ae6a2e",
         "EN-985e1a7c957148f9",
         "EN-8d57f84bd1847b24",
+        "EN-be548deba4a093d7",
         "EN-4dbe391b8fcf977a",
         "EN-0e6e48aba1669631",
         "EN-954dc5d6516f127c",
@@ -7154,15 +6904,13 @@
         "EN-e3b1bf3dab957ffe",
         "EN-754c490bd199c21a",
         "EN-7a3ecc54829211df",
-        "EN-2f354de778e6a6da",
-        "EN-936f01f91fdadf69",
         "EN-30081094f2a8c83d",
         "EN-047364b9be67f665",
         "EN-67f2d22514622d1b",
-        "EN-c905c4c4af8eacb0",
         "EN-7f6333102da9e8bd",
         "EN-89e3f0711b76932c",
         "EN-e9830c30bc572802",
+        "EN-d3c20bd565303d39",
         "EN-5e1fcba4c9f1cf69",
         "EN-7d3194f79e645c42",
         "EN-94ff75465b1afa65"
@@ -7218,8 +6966,7 @@
         "EN-bbdefa2950f49882",
         "EN-4a639cb888a15d75",
         "EN-8d4321d936320802",
-        "EN-65b3aa2f527deeef",
-        "EN-c165c006a5968443"
+        "EN-65b3aa2f527deeef"
       ],
       "fdeIds": [],
       "hardwareIds": [
@@ -7254,7 +7001,6 @@
         "EN-c9e6168149dd7cf6",
         "EN-92af3ce2fb97edf3",
         "EN-ec1c8f558ff61e34",
-        "EN-d83624eb3ab9192e",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
@@ -7306,13 +7052,11 @@
         "EN-607964040e4b62e0",
         "EN-dc33b6ff77e3359c",
         "EN-7d3194f79e645c42",
-        "EN-c69fd0dcf781cbf6",
         "EN-481243d2f2a235c1",
         "EN-c70eca6b0f88f44d",
         "EN-7839fb10a8f14c70",
         "EN-047364b9be67f665",
         "EN-96eebba49dbbf422",
-        "EN-10a27c6240d18dbe",
         "EN-f0edcf96f6fa2ccb",
         "EN-d36e5a1a7a3c45ce",
         "EN-397e5a2983130593",
@@ -7366,14 +7110,13 @@
         "EN-7f90f96bd6306bff",
         "EN-d8cb1acd1b39854a",
         "EN-5388bc10736a0eff",
-        "EN-f1649339197f76d6",
         "EN-2abf8289b2f2113f",
         "EN-91901356a63794df",
         "EN-81baf57e05f11276",
         "EN-c0e7614761147db1",
         "EN-e9dd8f4bd697492b",
         "EN-c70eca6b0f88f44d",
-        "EN-3a9b395103419892",
+        "EN-cb4754c48f8023d0",
         "EN-bbdefa2950f49882",
         "EN-8d4321d936320802",
         "EN-085598c00f2aaccf",
@@ -7381,7 +7124,6 @@
         "EN-7df09a7717ef2feb",
         "EN-c04bd5ebd10ab696",
         "EN-50ba7ff15827787b",
-        "EN-9418d9e3d1e469cf",
         "EN-ea3bd73e2b506e00",
         "EN-e3863f813fe47240",
         "EN-7d3194f79e645c42",
@@ -7392,12 +7134,10 @@
         "EN-d6d6e4e33c59b45e",
         "EN-3a7bd3e2360a3d29",
         "EN-41dcc2d4951f337b",
-        "EN-729324072d368379",
         "EN-6fcba5d96a4fadfd",
-        "EN-630dc133336bc266",
+        "EN-0b9ca57f53ba758b",
         "EN-ce635c4eabff5e4f",
-        "EN-c4bc2d00a42f220f",
-        "EN-0b9ca57f53ba758b"
+        "EN-c4bc2d00a42f220f"
       ],
       "fdeIds": [],
       "hardwareIds": [],

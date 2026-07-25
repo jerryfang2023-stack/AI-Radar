@@ -5,7 +5,7 @@ import path from "node:path";
 const root = process.cwd();
 const ledgerPath = path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/entity-catalog-review-decisions.json");
 const personLedgerPath = path.join(root, "01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json");
-const phase2Path = path.join(root, "agent-workflow/reports/entity-catalog-deepseek-audit-phase2.json");
+const currentAuditPath = path.join(root, "agent-workflow/reports/entity-catalog-deepseek-audit-current.json");
 const claimsPath = path.join(root, "data-lake/tables/claims.jsonl");
 const entitiesPath = path.join(root, "data-lake/tables/entities.jsonl");
 const frontstagePath = path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json");
@@ -31,7 +31,7 @@ function fail(problems) {
 function main() {
   const ledger = readJson(ledgerPath);
   const personLedger = readJson(personLedgerPath);
-  const phase2 = readJson(phase2Path);
+  const currentAudit = readJson(currentAuditPath);
   const claimIds = new Set(readJsonl(claimsPath).map((claim) => claim.claim_id));
   const entityIds = new Set(readJsonl(entitiesPath).map((entity) => entity.entity_id));
   const decisions = ledger.decisions || [];
@@ -39,16 +39,16 @@ function main() {
   const problems = [];
   const allowedActions = new Set(["confirm", "correct", "merge", "quarantine"]);
   const allowedTypes = new Set(["company", "product", "person", "other"]);
-  const phase2Ids = new Set((phase2.reviews || []).map((review) => review.entity_id));
+  const currentAuditIds = new Set((currentAudit.reviews || []).map((review) => review.entity_id));
   const decisionIds = new Set(decisions.map((decision) => decision.entity_id));
   if (ledger.schema_version !== "ENTITY-CATALOG-REVIEW-V1") problems.push("schema_version must be ENTITY-CATALOG-REVIEW-V1");
-  if (phase2.summary?.reviewed !== 476 || phase2Ids.size !== 476) problems.push("phase2 must contain 476 unique reviewed entities");
-  if (decisions.length !== 476 || decisionIds.size !== 476) problems.push("ledger must contain 476 unique decisions");
+  if (currentAudit.summary?.reviewed !== currentAudit.summary?.catalog_total || currentAudit.summary?.remaining !== 0 || currentAudit.failures?.length || currentAuditIds.size !== currentAudit.summary?.catalog_total) problems.push("current audit must completely cover the current entity catalog");
+  if (decisions.length < currentAuditIds.size || decisionIds.size !== decisions.length) problems.push("ledger must contain unique decisions covering the current catalog");
   const personDecisionIds = new Set(personDecisions.map((decision) => decision.entity_id));
   if (personLedger.schema_version !== "ENTITY-PERSON-ACCOUNT-REVIEW-V1") problems.push("person review schema_version must be ENTITY-PERSON-ACCOUNT-REVIEW-V1");
   if (personLedger.summary?.candidates !== 37 || personLedger.summary?.inherited_catalog_decisions !== 3) problems.push("person review must cover 37 candidates with 3 inherited catalog decisions");
   if (personDecisions.length !== 34 || personDecisionIds.size !== 34) problems.push("person review ledger must contain 34 unique new decisions");
-  for (const entityId of phase2Ids) if (!decisionIds.has(entityId)) problems.push(`missing decision: ${entityId}`);
+  for (const entityId of currentAuditIds) if (!decisionIds.has(entityId)) problems.push(`missing current-catalog decision: ${entityId}`);
   const byId = new Map(decisions.map((decision) => [decision.entity_id, decision]));
   for (const decision of decisions) {
     if (!allowedActions.has(decision.action)) problems.push(`invalid action: ${decision.entity_id}`);
@@ -86,7 +86,7 @@ function main() {
   if (allPersonDecisions.length !== 37 || new Set(allPersonDecisions.map((decision) => decision.entity_id)).size !== 37) problems.push("combined person review coverage must be 37/37");
   if (allPersonDecisions.filter((decision) => decision.action === "quarantine").length !== 6) problems.push("person review must quarantine 6 non-natural accounts");
   const summaryCount = ["confirm", "correct", "merge", "quarantine"].reduce((sum, action) => sum + decisions.filter((item) => item.action === action).length, 0);
-  if (summaryCount !== 476) problems.push("action totals do not close to 476");
+  if (summaryCount !== decisions.length) problems.push(`action totals do not close to ${decisions.length}`);
   if (fs.existsSync(frontstagePath)) {
     const frontstage = readJson(frontstagePath);
     const viewpoints = readJson(viewpointsPath);
@@ -103,6 +103,9 @@ function main() {
     const companiesByName = new Map((frontstage.companies || []).map((company) => [company.name, company]));
     const productsByName = new Map((frontstage.products || []).map((product) => [product.name, product]));
     const peopleByName = new Map((frontstage.people || []).map((person) => [person.name, person]));
+    for (const entity of [...(frontstage.companies || []), ...(frontstage.products || [])]) {
+      if (!decisionIds.has(entity.id)) problems.push(`public company/product lacks explicit review decision: ${entity.id}`);
+    }
     const requiredOwnership = [["1Password for Claude", "1Password"], ["Claude", "Anthropic"], ["ChatGPT", "OpenAI"], ["峰谷 Token", "阿里云"]];
     for (const [productName, companyName] of requiredOwnership) {
       const product = productsByName.get(productName);

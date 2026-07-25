@@ -132,8 +132,8 @@ const runsSplitSiteTests =
 if (repeatsDataCenterMaterialization || (!runsPreparedSiteTests && !runsSplitSiteTests)) {
   problems.push("production workflow repeats Data Center materialization inside the site test command");
 }
-if (!/assert-business-signals-three-block-contract\.mjs/u.test(fs.readFileSync(path.join(root, "agent-workflow", "tools", "assert-business-signals-frontstage.mjs"), "utf8"))) {
-  problems.push("unified Business frontstage gate does not enforce the three-block contract");
+if (!/assert-business-signals-compatibility-contract\.mjs/u.test(fs.readFileSync(path.join(root, "agent-workflow", "tools", "assert-business-signals-frontstage.mjs"), "utf8"))) {
+  problems.push("unified Business frontstage gate does not enforce the compatibility contract");
 }
 
 if (includesAny(monitorWrapper, [/refreshSourceArtifactsForCycle/u, /max_retry_cycles\s*\|\|\s*3/u])) {
@@ -172,8 +172,8 @@ for (const [name, text] of [["production workflow", workflow], ["dry-run workflo
   if (!/id:\s*card-editorial-gate/u.test(text) || !/--skip-editorial=true/u.test(text)) {
     problems.push(`${name} does not own editorial quality before the frontstage contract`);
   }
-  if (!/id:\s*trend-decision/u.test(text) || !/run-trend-candidate-decision\.mjs/u.test(text)) {
-    problems.push(`${name} does not record a current trend-candidate/no-candidate decision before the frontstage build`);
+  if (/id:\s*trend-decision/u.test(text) || /run-trend-candidate-decision\.mjs/u.test(text)) {
+    problems.push(`${name} still runs the retired daily trend-candidate decision stage`);
   }
   if (/--raw-min=|--pool-min=/u.test(text)) {
     problems.push(`${name} still duplicates V3 evidence supply with hard-coded diagnostic volume thresholds`);

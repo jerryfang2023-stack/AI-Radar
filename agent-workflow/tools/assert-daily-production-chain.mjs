@@ -23,8 +23,8 @@ const allowedMonitorQualityGapFailures = new Set([
 const staleBlockGroupsByStage = new Map([
   ["post-monitor", []],
   ["pre-trend", ["signal_cards"]],
-  ["pre-site", ["signal_cards", "trend_candidates"]],
-  ["pre-commit", ["signal_cards", "trend_candidates", "site_data"]],
+  ["pre-site", ["signal_cards"]],
+  ["pre-commit", ["signal_cards", "site_data"]],
 ]);
 
 function rel(file) {
@@ -100,7 +100,7 @@ function staleBlockGroupNames() {
   if (explicit) {
     return explicit.split(",").map((item) => item.trim()).filter(Boolean);
   }
-  return staleBlockGroupsByStage.get(stage) || ["signal_cards", "trend_candidates", "site_data"];
+  return staleBlockGroupsByStage.get(stage) || ["signal_cards", "site_data"];
 }
 
 const files = {
@@ -168,11 +168,6 @@ const downstreamGroups = {
     ...datedMarkdown(path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"), (file) => /--signal--.+\.md$/u.test(path.basename(file))),
     ...datedMarkdown(path.join(root, "01-SiteV2", "content", "04-business-signals")),
   ],
-  trend_candidates: [
-    ...datedMarkdown(path.join(root, "01-SiteV2", "content", "06-asset-candidates", "trend")),
-    ...datedMarkdown(path.join(root, "01-SiteV2", "knowledge", "03-Asset-Candidates", "trend")),
-    path.join(reportsDir, `${date}-no-trend-candidate-decision.md`),
-  ].filter(exists),
   site_data: [
     path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json"),
     path.join(root, "01-SiteV2", "site", "data", "intelligence-graph-index.json"),

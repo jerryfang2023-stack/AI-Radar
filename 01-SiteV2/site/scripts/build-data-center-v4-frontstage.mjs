@@ -415,9 +415,11 @@ function buildViewpoints(root, entityProfiles = []) {
 export function buildEntityCollections(service, eventsById) {
   const nodeById = new Map(service.taxonomyNodes.map((item) => [item.id, item]));
   const nameById = new Map(service.profiles.map((item) => [item.id, item.name]));
+  const profileById = new Map(service.profiles.map((item) => [item.id, item]));
   const productOwnerIds = new Map();
   for (const relation of service.relationships) {
     if (relation.predicate !== "publishes" || relation.object_type !== "entity") continue;
+    if (profileById.get(relation.subject_ref)?.entityType !== "organization_candidate") continue;
     if (!productOwnerIds.has(relation.object_ref)) productOwnerIds.set(relation.object_ref, []);
     productOwnerIds.get(relation.object_ref).push(relation.subject_ref);
   }
@@ -462,7 +464,10 @@ export function buildEntityCollections(service, eventsById) {
       type: "人物",
       handle: profile.handle || "",
       role: profile.role || "",
+      roleTitle: profile.roleTitle || "",
       organization: profile.organization || "",
+      organizationNames: profile.organizationNames || [],
+      affiliationEvidence: profile.affiliationEvidence || [],
       viewpointIds: profile.viewpointIds || []
     }));
   return { companies, products, people };
@@ -569,6 +574,34 @@ export function writeFrontstageData(root = defaultRoot) {
     people: data.people,
     taxonomyNodes: data.taxonomyNodes
   });
+  const relationLabels = {
+    publishes: "发布",
+    partners_with: "合作",
+    acquires: "收购",
+    serves: "服务",
+    deployed_in: "部署于",
+    supplies_hardware_to: "供应硬件",
+    joins: "加入",
+    leaves: "离开",
+    founds: "创立"
+  };
+  const relationEndpointName = (ref, type) => type === "taxonomy"
+    ? data.taxonomyNodes.find((node) => node.id === ref)?.name || ref
+    : data.entityProfiles.find((profile) => profile.id === ref)?.name || ref;
+  const relationshipIndex = data.entityRelationships.map((relation) => {
+    const event = compactEvents.find((item) => item.id === relation.event_id);
+    return {
+      ...relation,
+      subjectName: relationEndpointName(relation.subject_ref, relation.subject_type),
+      objectName: relationEndpointName(relation.object_ref, relation.object_type),
+      predicateLabel: relationLabels[relation.predicate] || relation.predicate,
+      title: `${relationEndpointName(relation.subject_ref, relation.subject_type)} ${relationLabels[relation.predicate] || relation.predicate} ${relationEndpointName(relation.object_ref, relation.object_type)}`,
+      eventTitle: event?.title || "",
+      eventDate: event?.date || "",
+      sourceCount: relation.source_refs.length
+    };
+  });
+  writeJson(path.join(indexesDir, "relationships.json"), { meta: data.meta, relationships: relationshipIndex });
   writeJson(path.join(indexesDir, "fde.json"), { meta: data.meta, fde: data.fde });
   writeJson(path.join(indexesDir, "hardware.json"), { meta: data.meta, hardware: data.hardware });
   writeJson(path.join(detailsDir, "events.json"), { meta: data.meta, events: data.events });
@@ -621,6 +654,7 @@ export function writeFrontstageData(root = defaultRoot) {
     paths: {
       eventsIndex: "data/data-center-v4/indexes/events.json",
       entitiesIndex: "data/data-center-v4/indexes/entities.json",
+      relationshipsIndex: "data/data-center-v4/indexes/relationships.json",
       fdeIndex: "data/data-center-v4/indexes/fde.json",
       hardwareIndex: "data/data-center-v4/indexes/hardware.json",
       eventsDetail: "data/data-center-v4/details/events.json",

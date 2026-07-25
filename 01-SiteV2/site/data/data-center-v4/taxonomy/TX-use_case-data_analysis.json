@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -2138,7 +2138,6 @@
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
-        "EN-98fdc0804bb472fe",
         "EN-830abc32d2a443c5",
         "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
@@ -2151,16 +2150,15 @@
         "EN-968e2d5b08687bf4",
         "EN-cb4754c48f8023d0",
         "EN-2c063f604e634100",
-        "EN-bb5b6487f881bbb1",
         "EN-d0a0acb9a5ef0560",
         "EN-e65e0f2695fa259d",
         "EN-34ec8666daf7b665",
         "EN-e4ffb7bd879b89da",
-        "EN-b59c577ed73536c6",
-        "EN-08013bb0b80d23f7",
         "EN-96eebba49dbbf422",
         "EN-b8c236d640d6a5fb",
-        "EN-d8494bb34d6ddc43"
+        "EN-d8494bb34d6ddc43",
+        "EN-b59c577ed73536c6",
+        "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
       "lastSeen": "2026-07-25"
@@ -2171,7 +2169,8 @@
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
       "aliases": [
-        "Claude Fable 5 and Mythos 5"
+        "Claude Fable 5 and Mythos 5",
+        "ClaudeFable 5"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -2185,6 +2184,7 @@
         "EV-bf6f67c47c6b0d7c",
         "EV-f0caa4082916d619",
         "EV-ab3586268ebfab38",
+        "EV-a695ff8c1cff8c64",
         "EV-689538e8159887de",
         "EV-68fcce7fde89e5d7",
         "EV-c7a2774b07554f5d",
@@ -2216,14 +2216,12 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-689538e8159887de",
         "EV-c7a2774b07554f5d",
         "EV-e09bff5515b1896b",
         "EV-f5dd192f6d4e04a3"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis"
       ],
@@ -2231,7 +2229,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-06-11"
+      "lastSeen": "2026-06-10"
     },
     {
       "id": "EN-729324072d368379",
@@ -2244,32 +2242,24 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-debecca007e547d2",
         "EV-84226288807f817b",
         "EV-0347414d81e7f02e",
         "EV-92fbbeb840a98e97",
         "EV-0df617a9a5ac727e",
-        "EV-63fdf001c22a0ed4",
         "EV-7fb25ff3d853c314",
         "EV-b796ba14c4eba861",
-        "EV-c7a2774b07554f5d",
-        "EV-e09bff5515b1896b",
-        "EV-f1418d9e3b1413b7",
-        "EV-c5b8faec223a4caf"
+        "EV-e09bff5515b1896b"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-technology-tool_use",
         "TX-industry-education"
       ],
       "relatedEntityIds": [
         "EN-c70eca6b0f88f44d"
       ],
-      "firstSeen": "2026-06-09",
-      "lastSeen": "2026-07-18"
+      "firstSeen": "2026-06-10",
+      "lastSeen": "2026-07-15"
     },
     {
       "id": "EN-9f15bb7e29e191eb",
@@ -2285,11 +2275,9 @@
         "EV-c9aba59ba04c9fc8",
         "EV-83a8ac8a2554b60c",
         "EV-9c0552732b34f278",
-        "EV-bf6f67c47c6b0d7c",
         "EV-491e7b4b506ab3e3",
         "EV-c7a2774b07554f5d",
         "EV-e09bff5515b1896b",
-        "EV-f1418d9e3b1413b7",
         "EV-2eabd03665cbdef7"
       ],
       "viewpointIds": [],
@@ -2585,22 +2573,19 @@
         "EN-52fc33ae4d101a5d",
         "EN-6a50fbf0b970c03a",
         "EN-9fbf261b62c1d7c0",
-        "EN-536c4035ba0c7047",
         "EN-4d748ebd71af03a7",
         "EN-65ef4539bbcbe9fc",
-        "EN-5ce177312903c604",
         "EN-3673c8b4dba7409e",
         "EN-b70e8201c9feb94a",
         "EN-373ac021a2c0bb2c",
-        "EN-bd2bfbea5911ec7a",
         "EN-af53dbc3e443f7a9",
         "EN-3c534d54dae48cbb",
         "EN-b269456229397ef3",
+        "EN-da20c5952dba19d8",
         "EN-fc0586e76f80f181",
         "EN-1ecf93c539fcffca",
         "EN-9de030d092759897",
-        "EN-b9db1ff13ae8496e",
-        "EN-7b8cb35de7ad047a"
+        "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2025-10-09",
       "lastSeen": "2026-07-25"

@@ -51,6 +51,27 @@ const decisions = [
   ["EN-f41223b7e1ce4931", "confirm", "Zara Zhang", "https://x.com/zarazhangrui", HUMAN_RATIONALE]
 ];
 
+const affiliationByEntityId = new Map([
+  ["EN-52279415a0ac4fc4", { organization_names: ["Box"], evidence_tokens: ["box"], role_title: "CEO" }],
+  ["EN-743d4ac3b9f15131", { organization_names: ["South Park Commons", "Bevel Health"], evidence_tokens: ["SouthPkCommons", "Bevel_Health"], role_title: "General Partner、Co-Founder" }],
+  ["EN-533f53e43380451e", { organization_names: ["Anthropic"], evidence_tokens: ["AnthropicAI"], role_title: "Research" }],
+  ["EN-cc1a23ffcf54716a", { organization_names: ["Anthropic"], evidence_tokens: ["AnthropicAI"], role_title: "Philosopher & ethicist" }],
+  ["EN-fd67ab47893c5a98", { organization_names: ["Replit"], evidence_tokens: ["replit"], role_title: "CEO" }],
+  ["EN-42f537bd07ee93cb", { organization_names: ["Anthropic"], evidence_tokens: ["anthropicai"], role_title: "Claude Code" }],
+  ["EN-e9ea0665d1a026eb", { organization_names: ["Anthropic"], evidence_tokens: ["anthropicai"], role_title: "Claude Code + Cowork" }],
+  ["EN-1d82ae06a3fa99ce", { organization_names: ["Every"], evidence_tokens: ["every"], role_title: "CEO" }],
+  ["EN-e3ab81e0f7bb06ad", { organization_names: ["Y Combinator"], evidence_tokens: ["ycombinator"], role_title: "President & CEO" }],
+  ["EN-f9ab81cacb3507bd", { organization_names: ["Vercel"], evidence_tokens: ["vercel"], role_title: "CEO" }],
+  ["EN-76a2a0c598ae1389", { organization_names: ["Google"], evidence_tokens: ["Google"], role_title: "VP" }],
+  ["EN-3c67e51edcaf55f3", { organization_names: ["Meta"], evidence_tokens: ["Meta"], role_title: "Senior Director, AI" }],
+  ["EN-676aad90b3894e45", { organization_names: ["FirstMark"], evidence_tokens: ["FirstMarkCap"], role_title: "VC" }],
+  ["EN-2b8001c620ee14ca", { organization_names: ["Linear"], evidence_tokens: ["linear"], role_title: "Head of Product" }],
+  ["EN-49d19fe95c451ea1", { organization_names: ["FPV Ventures"], evidence_tokens: ["fpvventures"], role_title: "Partner" }],
+  ["EN-6e8f210aa5e3e45b", { organization_names: ["Cursor"], evidence_tokens: ["Cursor_ai"], role_title: "Design" }],
+  ["EN-fc3f9c93082da9e8", { organization_names: ["Anthropic"], evidence_tokens: ["anthropicai"], role_title: "Claude Code" }],
+  ["EN-f97e56489ceee4ba", { organization_names: ["OpenAI"], evidence_tokens: ["OpenAI"], role_title: "Codex & ChatGPT" }]
+]);
+
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
 }
@@ -112,6 +133,11 @@ if (problems.length) throw new Error(`person_account_review_build_failed:\n- ${p
 
 const outputDecisions = decisions.map(([entityId, action, canonicalName, sourceUrl, rationale]) => {
   const profile = profilesById.get(entityId);
+  const affiliation = affiliationByEntityId.get(entityId) || { organization_names: [], evidence_tokens: [], role_title: "" };
+  const evidenceQuote = [profile.name, profile.handle ? `@${profile.handle}` : "", profile.role].filter(Boolean).join(" | ");
+  const supportedOrganizations = affiliation.organization_names.filter((name, index) =>
+    key(evidenceQuote).includes(key(affiliation.evidence_tokens[index] || name))
+  );
   return {
     entity_id: entityId,
     current: {
@@ -124,14 +150,16 @@ const outputDecisions = decisions.map(([entityId, action, canonicalName, sourceU
     canonical: {
       name: canonicalName,
       catalog_type: action === "quarantine" ? "other" : "person",
-      company_names: []
+      company_names: [],
+      organization_names: action === "quarantine" ? [] : supportedOrganizations,
+      role_title: action === "quarantine" ? "" : affiliation.role_title
     },
     evidence: {
       claim_refs: [],
       secondary_sources: [{
         source_id: `PERSON-SOURCE-${entityId.slice(3)}`,
         source_url: sourceUrl,
-        quote: [profile.name, profile.handle ? `@${profile.handle}` : "", profile.role].filter(Boolean).join(" | ")
+        quote: evidenceQuote
       }]
     },
     rationale,
@@ -154,6 +182,8 @@ const ledger = {
     corrected: outputDecisions.filter((item) => item.action === "correct").length,
     quarantined: outputDecisions.filter((item) => item.action === "quarantine").length,
     expected_public_natural_people: 31
+    ,
+    affiliation_enriched: outputDecisions.filter((item) => item.canonical.organization_names.length).length
   },
   decisions: outputDecisions
 };

@@ -14,6 +14,23 @@ const mapFields = [
   "delivery_model",
   "business_action",
 ];
+const taxonomyCache = new Map();
+const opportunitySignalPriority = {
+  business_action: [
+    "customer_deployment",
+    "funding_round",
+    "product_launch",
+    "partnership_integration",
+    "procurement_signal",
+    "pricing_change",
+    "acquisition",
+    "open_source_release",
+    "governance_requirement",
+    "research_benchmark",
+    "failure_postmortem",
+    "hiring_fde",
+  ],
+};
 
 function parseArgs(argv = process.argv.slice(2)) {
   return new Map(argv.map((arg) => {
@@ -22,8 +39,119 @@ function parseArgs(argv = process.argv.slice(2)) {
   }));
 }
 
-function readJson(file) {
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+function listMarkdownFiles(dir) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const file = path.join(dir, entry.name);
+    if (entry.isDirectory()) return listMarkdownFiles(file);
+    return entry.isFile() && entry.name.endsWith(".md") ? [file] : [];
+  });
+}
+
+function frontmatter(text = "") {
+  return text.match(/^---\s*([\s\S]*?)---/u)?.[1] || "";
+}
+
+function scalarValue(raw = "") {
+  const value = String(raw).trim();
+  if (!value) return "";
+  try {
+    return JSON.parse(value);
+  } catch {
+    return value.replace(/^["']|["']$/gu, "");
+  }
+}
+
+function scalar(fm = "", name = "") {
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  return scalarValue(fm.match(new RegExp(`^${escaped}:\\s*(.*)$`, "mu"))?.[1] || "");
+}
+
+function nestedBlock(fm = "", name = "") {
+  const lines = fm.split(/\r?\n/u);
+  const start = lines.findIndex((line) => line === `${name}:`);
+  if (start < 0) return "";
+  const rows = [];
+  for (const line of lines.slice(start + 1)) {
+    if (line && !/^\s/u.test(line)) break;
+    rows.push(line);
+  }
+  return rows.join("\n");
+}
+
+function nestedScalar(fm = "", block = "", name = "") {
+  const text = nestedBlock(fm, block);
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  return scalarValue(text.match(new RegExp(`^\\s+${escaped}:\\s*(.*)$`, "mu"))?.[1] || "");
+}
+
+function nestedList(fm = "", block = "", name = "") {
+  const value = nestedScalar(fm, block, name);
+  if (Array.isArray(value)) return value.filter(Boolean);
+  return String(value || "")
+    .replace(/^\[|\]$/gu, "")
+    .split(",")
+    .map((item) => item.trim().replace(/^["']|["']$/gu, ""))
+    .filter(Boolean);
+}
+
+function sourceName(sourceUrl = "") {
+  try {
+    return new URL(sourceUrl).hostname.replace(/^www\./u, "");
+  } catch {
+    return "";
+  }
+}
+
+function cardSubject(owner = "", title = "", source = "") {
+  const normalizedOwner = String(owner || "").trim();
+  if (normalizedOwner && normalizedOwner !== title) return normalizedOwner;
+  return String(source || "").split(".")[0] || normalizedOwner || title;
+}
+
+function cardFromFile(file) {
+  const fm = frontmatter(fs.readFileSync(file, "utf8"));
+  const sourceUrl = nestedScalar(fm, "primary_raw", "source_url");
+  const title = scalar(fm, "title");
+  const source = sourceName(sourceUrl);
+  return {
+    id: scalar(fm, "id"),
+    type: scalar(fm, "type"),
+    title,
+    category: scalar(fm, "signal_type"),
+    date: scalar(fm, "date"),
+    status: scalar(fm, "status"),
+    assetLevel: scalar(fm, "asset_level"),
+    sourceUrl,
+    sourceName: source,
+    subject: cardSubject(scalar(fm, "signal_owner"), title, source),
+    opportunitySignals: Object.fromEntries(mapFields.map((field) => [
+      field,
+      nestedList(fm, "opportunity_signals", field),
+    ])),
+  };
+}
+
+function acceptedCards(root) {
+  const dir = path.join(root, "01-SiteV2/knowledge/01-Signal-Cards");
+  const cardsByEvidence = new Map();
+  for (const file of listMarkdownFiles(dir).sort()) {
+    const card = cardFromFile(file);
+    if (
+      card.id
+      && card.type === "signal_card"
+      && card.status === "published"
+      && card.assetLevel === "frontstage"
+      && ["product_service", "funding", "case"].includes(card.category)
+      && card.date
+      && card.title
+      && card.sourceName
+    ) {
+      const evidenceKey = `${card.date}|${card.sourceUrl || card.title}`;
+      if (!cardsByEvidence.has(evidenceKey)) cardsByEvidence.set(evidenceKey, card);
+    }
+  }
+  return [...new Map([...cardsByEvidence.values()].map((card) => [card.id, card])).values()];
 }
 
 function dateDistance(later, earlier) {
@@ -41,36 +169,60 @@ function signalValues(card, field) {
     : [];
 }
 
-export function buildIndustryReportsData(root = defaultRoot) {
-  const input = path.join(root, "01-SiteV2/site/data/v3-data-observation-desk.json");
-  const payload = readJson(input);
-  const allCards = (payload.cards || []).filter((card) => card.category !== "opinion" && card.date);
-  const activeDate = payload.meta?.activeDate || allCards.map((card) => card.date).sort().at(-1) || "";
+function orderedSignalValues(taxonomyFile, card, field) {
+  if (!taxonomyCache.has(taxonomyFile)) {
+    taxonomyCache.set(taxonomyFile, JSON.parse(fs.readFileSync(taxonomyFile, "utf8")));
+  }
+  const order = Object.keys(taxonomyCache.get(taxonomyFile).fields?.[field]?.values || {});
+  const allowed = new Set(order);
+  const priority = opportunitySignalPriority[field] || [];
+  return signalValues(card, field)
+    .filter((value) => allowed.has(value))
+    .sort((a, b) => {
+      const aIndex = priority.includes(a) ? priority.indexOf(a) : 999;
+      const bIndex = priority.includes(b) ? priority.indexOf(b) : 999;
+      return aIndex - bIndex || a.localeCompare(b);
+    })
+    .slice(0, 3);
+}
+
+export function buildIndustryReportsData(
+  root = defaultRoot,
+  { taxonomyFile = path.join(root, "agent-workflow/product/opportunity-signal-taxonomy.json") } = {},
+) {
+  const allCards = acceptedCards(root);
+  const activeDate = allCards.map((card) => card.date).sort().at(-1) || "";
   const cards = allCards
     .filter((card) => dateDistance(activeDate, card.date) >= 0 && dateDistance(activeDate, card.date) < 30)
+    .sort((a, b) => b.date.localeCompare(a.date) || a.category.localeCompare(b.category))
     .map((card) => ({
       id: card.id,
       title: card.title,
-      category: card.category,
-      categoryLabel: card.categoryLabel || "",
+      category: card.category === "product_service" ? "product-service" : card.category,
+      categoryLabel: {
+        product_service: "产品",
+        funding: "融资",
+        case: "案例",
+      }[card.category] || "",
       date: card.date,
       sourceName: card.sourceName || "",
       subject: card.subject || "",
       opportunitySignals: {
-        labels: Object.fromEntries(mapFields.map((field) => [field, signalValues(card, field)])),
+        labels: Object.fromEntries(mapFields.map((field) => [field, orderedSignalValues(taxonomyFile, card, field)])),
       },
     }));
 
   return {
     meta: {
-      schemaVersion: "INDUSTRY-REPORTS-FRONTSTAGE-V1.0",
+      schemaVersion: "OPPORTUNITY-MAP-FRONTSTAGE-V1.0",
       siteVersion: "SITE-V4.2.0-entity-history",
       applicationVersion: "OMAP-V1.0.0-independent-column",
       opportunityMapVersion: "OMAP-V1.0.0-independent-column",
       activeDate,
-      generatedAt: payload.meta?.generatedAt || `${activeDate}T00:00:00.000Z`,
+      generatedAt: `${activeDate}T00:00:00.000Z`,
       windowDays: 30,
       cardCount: cards.length,
+      sourceAdapter: "accepted-signal-card-assets",
     },
     cards,
   };

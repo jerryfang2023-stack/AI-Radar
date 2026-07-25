@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -12,10 +12,12 @@
   },
   "entity": {
     "id": "EN-5f83ae721501d519",
-    "name": "LIX 1",
+    "name": "GΞLIX 1",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "LIX 1"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -25,10 +27,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-ba728f8ca730921f"
+    ],
     "firstSeen": "2026-07-23",
     "lastSeen": "2026-07-23",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-f4a3d6e6563cfdec"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -54,15 +60,64 @@
         "displayTags": [],
         "entityIds": [
           "EN-ba728f8ca730921f",
-          "EN-7f448ae7686d7dec",
+          "EN-71f3ed83fd5a3ed9",
           "EN-5f83ae721501d519"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-ba728f8ca730921f",
+      "name": "Acrab",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9852a10590030da9",
+        "EV-44de23d372981dc3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-technology"
+      ],
+      "relatedEntityIds": [
+        "EN-e3c189c04bf15baf",
+        "EN-71f3ed83fd5a3ed9",
+        "EN-5f83ae721501d519"
+      ],
+      "firstSeen": "2026-07-23",
+      "lastSeen": "2026-07-24"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-f4a3d6e6563cfdec",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-ba728f8ca730921f",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-5f83ae721501d519",
+      "object_type": "entity",
+      "event_id": "EV-44de23d372981dc3",
+      "claim_refs": [
+        "CL-2fe0c2e45c2d088f",
+        "CL-63ead7f8d434795a",
+        "CL-6aac3d0ee0b861b6"
+      ],
+      "source_refs": [
+        "SA-7ef1466702e0616b"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

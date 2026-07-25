@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -27,9 +27,8 @@
       "EN-d1ad14d4ad57d207",
       "EN-3f726694f178ed7a",
       "EN-45e0ade11fed1e44",
-      "EN-1e68d267df86aa4c",
-      "EN-9d93b78264eb6acb",
       "EN-d8fbfdb6a8143da8",
+      "EN-9d93b78264eb6acb",
       "EN-b81c8201acfc7639",
       "EN-82eaaba81d9dcc54",
       "EN-9a6ee79873b1fb7b"
@@ -407,9 +406,7 @@
         "EV-b925f50b55d3aa00",
         "EV-c237f5dc53f0a923",
         "EV-20dea13a4e6100ea",
-        "EV-efee7c1ac4dc336f",
         "EV-0dbc7b904378f713",
-        "EV-d07f7a8d4d20a034",
         "EV-f023e94a239f22f2",
         "EV-0b6992ae74184d13",
         "EV-f3e11eadfb7c6a4b",
@@ -417,7 +414,6 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-use_case-knowledge_search"
       ],
@@ -454,8 +450,7 @@
       ],
       "relatedEntityIds": [
         "EN-d8fbfdb6a8143da8",
-        "EN-9d93b78264eb6acb",
-        "EN-26e4951af4490c21"
+        "EN-9d93b78264eb6acb"
       ],
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-07-17"
@@ -484,24 +479,29 @@
       "lastSeen": "2026-07-16"
     },
     {
-      "id": "EN-1e68d267df86aa4c",
-      "name": "WPS Comate AI",
+      "id": "EN-d8fbfdb6a8143da8",
+      "name": "WPS Comate",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [],
+      "aliases": [
+        "WPS Comate AI"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
-        "EV-702ed039940800fb"
+        "EV-702ed039940800fb",
+        "EV-ad8f847d403433f7"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-knowledge_search"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-15",
+      "relatedEntityIds": [
+        "EN-3f726694f178ed7a"
+      ],
+      "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-16"
     },
     {
@@ -525,30 +525,6 @@
         "EN-3f726694f178ed7a"
       ],
       "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-16"
-    },
-    {
-      "id": "EN-d8fbfdb6a8143da8",
-      "name": "WPS Comate",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-702ed039940800fb",
-        "EV-ad8f847d403433f7"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-knowledge_search"
-      ],
-      "relatedEntityIds": [
-        "EN-3f726694f178ed7a"
-      ],
-      "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-16"
     },
     {
@@ -608,7 +584,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],

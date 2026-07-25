@@ -27,7 +27,7 @@ export function classifyBusinessSignalsProduction(input = {}) {
 
   const compatibilityStages = [
     ["card_generation", [["cards", "Card generation"]]],
-    ["card_quality", [["dedupe", "Card dedupe/freshness gate"], ["cardEditorial", "Card editorial quality gate"], ["trendDecision", "trend-candidate decision"]]],
+    ["card_quality", [["dedupe", "Card dedupe/freshness gate"], ["cardEditorial", "Card editorial quality gate"]]],
     ["frontstage_contract", [["frontstageData", "frontstage build"], ["frontstageGate", "unified frontstage gate"], ["freshness", "final freshness gate"]]],
   ];
   let compatibilityFailure = null;
@@ -70,11 +70,10 @@ export function classifyBusinessSignalsProduction(input = {}) {
 }
 
 function runFixtures() {
-  const passedStages = { monitor: "success", evidenceGate: "success", dataCenterBuild: "success", dataCenterGate: "success", dataCenterMaterialize: "success", cards: "success", dedupe: "success", cardEditorial: "success", trendDecision: "success", frontstageData: "success", frontstageGate: "success", operations: "success", freshness: "success", commit: "success" };
+  const passedStages = { monitor: "success", evidenceGate: "success", dataCenterBuild: "success", dataCenterGate: "success", dataCenterMaterialize: "success", cards: "success", dedupe: "success", cardEditorial: "success", frontstageData: "success", frontstageGate: "success", operations: "success", freshness: "success", commit: "success" };
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, dataCenterGate: "failure" }).stage, "data_center_v4");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, cards: "failure", changed: "false" }).status, "degraded");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, dedupe: "failure" }).stage, "card_quality");
-  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, trendDecision: "failure" }).stage, "card_quality");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, frontstageGate: "failure" }).stage, "frontstage_contract");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, changed: "true", pr: "success", merge: "success", mergeStatus: "publication_waiting" }).status, "publication_waiting");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, changed: "false" }).status, "passed");

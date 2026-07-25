@@ -46,8 +46,7 @@ Only these actions are `current` for SITE-V4.2 and retained compatibility lanes:
 | Pool-to-Card dedupe | `current` | Prevent duplicate evidence from becoming duplicate Cards. |
 | Factual relationship build | `current` | Build event/claim/entity/source links without tag-derived direction or hypotheses. |
 | Opportunity Map | `compatibility/downstream` | Feed the independent OMAP application projection; outputs cannot enter V4 canonical data. |
-| Industry Reports reports | `compatibility/downstream` | Keep V4 report pages working as downstream interpretation. |
-| Trend candidate judgment | `compatibility/downstream` | Keep frozen pages working; trend judgment cannot enter V4 canonical data. |
+| Industry Reports | `current/downstream` | Generate V4 report pages from accepted canonical events as downstream interpretation. |
 | First-line viewpoints RSS update | `current` | Update builders viewpoints from the morning RSS / podcast route independently from business signals. |
 | First-line viewpoints skill publish | `current` | Update builders viewpoints from the afternoon local follow-builders skill route independently from business signals. |
 | First-Line Viewpoints Obsidian timeline sync | `current` | Persist Builder viewpoints into person / date Obsidian timelines. |
@@ -71,6 +70,7 @@ These actions or records may be useful for diagnosis, audit, or historical recov
 | Old Raw / Pool / Card governance notes | `manual/archive` | Consult only when they do not conflict with the current V3 source-first rules. |
 | Historical provider benchmarks | `manual/archive` | Consult for source-provider diagnosis, not as current sourcing policy. |
 | Past handoff / progress notes | `manual/archive` | Use for context recovery only when current `context/` files are insufficient. |
+| Trend candidate judgment | `manual/archive` | Run only for an explicitly requested historical/manual research review; daily workflows do not create candidates or no-decision shells. |
 
 Manual/archive material can explain why a current rule exists. It cannot override `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, or `context/07-v3-intelligence-generation-rules.md`.
 
@@ -225,7 +225,7 @@ Reads:
 - accepted Business Signal Cards.
 - original source excerpts.
 - `agent-workflow/product/opportunity-signal-taxonomy.json`.
-- `01-SiteV2/site/data/v3-data-observation-desk.json`.
+- `01-SiteV2/site/data/industry-reports-frontstage.json` is rebuilt directly from accepted Signal Card assets; it must not read `v3-data-observation-desk.json`.
 
 Cadence:
 
@@ -266,11 +266,11 @@ Boundaries:
 - Opinions and Community Intelligence can support interpretation and demand cross-checks, but they must not become business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 - The periodic controller creates a local `codex/automation-*` branch only. Push, merge, and deployment remain explicit follow-up actions.
 
-### 7. Trend Candidate Judgment
+### 7. Historical / Manual Trend Candidate Judgment
 
 Purpose:
 
-- Decide whether multiple same-direction business signals are forming a trend candidate.
+- Support an explicitly requested historical/manual review of whether multiple same-direction business signals form a research candidate.
 
 Runs:
 
@@ -283,10 +283,11 @@ Reads:
 
 Outputs:
 
-- trend candidate asset, or a no-decision shell when evidence is insufficient.
+- an explicitly requested manual research artifact; routine no-decision shells are retired.
 
 Boundaries:
 
+- This action is `manual/archive` and must not run in daily production, publication gates, or automation readiness checks.
 - Trend candidate is an internal candidate object, not a long-form publication route.
 - A single article, viewpoint, funding event, or tag count cannot form a trend.
 - Builders viewpoints are not evidence for trend candidates.

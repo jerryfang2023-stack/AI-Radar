@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-85852fd45706e894"
+    ],
     "firstSeen": "2026-06-23",
     "lastSeen": "2026-06-24",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-d3263d0de81813e4"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -68,8 +72,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-85852fd45706e894",
+      "name": "PowerEdge XE8812",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e2db9c4e7c16ae7a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-b34aa8e97b2c2454"
+      ],
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-d3263d0de81813e4",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-b34aa8e97b2c2454",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-85852fd45706e894",
+      "object_type": "entity",
+      "event_id": "EV-e2db9c4e7c16ae7a",
+      "claim_refs": [
+        "CL-67441b3f514a4524",
+        "CL-42bde7a5c54867e9",
+        "CL-92e82040e33cee86"
+      ],
+      "source_refs": [
+        "SA-686f97478e66a370"
+      ],
+      "data_date": "2026-06-24",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

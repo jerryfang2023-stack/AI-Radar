@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -26,10 +26,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-39a37ee3a2b2c3c0"
+    ],
     "firstSeen": "2026-06-29",
     "lastSeen": "2026-07-16",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-5607e54820e0fb5b"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -79,8 +83,50 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-39a37ee3a2b2c3c0",
+      "name": "Spark incubator program",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-333ce1a5838ced85"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-586937124e151c46"
+      ],
+      "firstSeen": "2026-06-29",
+      "lastSeen": "2026-06-29"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-5607e54820e0fb5b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-586937124e151c46",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-39a37ee3a2b2c3c0",
+      "object_type": "entity",
+      "event_id": "EV-333ce1a5838ced85",
+      "claim_refs": [
+        "CL-627eae8c455f0cab",
+        "CL-4a8e4292b32c2821"
+      ],
+      "source_refs": [
+        "SA-863c5cfc35b646a6"
+      ],
+      "data_date": "2026-06-29",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

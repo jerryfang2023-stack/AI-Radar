@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
@@ -8,20 +9,19 @@ import { buildIndustryReportsData } from "../../../01-SiteV2/site/scripts/build-
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
 
-test("industry reports projection isolates the public application from the V3 desk", () => {
+test("Opportunity Map projection reads accepted Signal Cards without the V3 desk", () => {
   const data = buildIndustryReportsData(root);
   const dataCenter = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json"), "utf8"));
-  const legacyDesk = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/v3-data-observation-desk.json"), "utf8"));
-  const legacyCurrentCards = legacyDesk.cards.filter((card) => card.date === dataCenter.meta.currentDate && card.category !== "opinion");
   const reportsHtml = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
   const opportunityHtml = fs.readFileSync(path.join(root, "01-SiteV2/site/opportunity-map.html"), "utf8");
 
   assert.equal(data.meta.siteVersion, "SITE-V4.2.0-entity-history");
+  assert.equal(data.meta.schemaVersion, "OPPORTUNITY-MAP-FRONTSTAGE-V1.0");
   assert.equal(data.meta.applicationVersion, "OMAP-V1.0.0-independent-column");
   assert.equal(data.meta.opportunityMapVersion, "OMAP-V1.0.0-independent-column");
+  assert.equal(data.meta.sourceAdapter, "accepted-signal-card-assets");
   assert.match(data.meta.activeDate, /^\d{4}-\d{2}-\d{2}$/u);
-  assert.equal(legacyDesk.meta.activeDate, dataCenter.meta.currentDate);
-  assert.ok(legacyCurrentCards.length > 0);
+  assert.equal(data.meta.activeDate, dataCenter.meta.currentDate);
   assert.ok(data.cards.length > 0);
   assert.ok(data.cards.every((card) => card.id && card.title && card.date));
   assert.ok(data.cards.every((card) => Object.keys(card.opportunitySignals.labels).length === 7));
@@ -30,6 +30,47 @@ test("industry reports projection isolates the public application from the V3 de
   assert.doesNotMatch(opportunityHtml, /data\/v3-data-observation-desk\.json/u);
   assert.match(opportunityHtml, /data\/industry-reports-frontstage\.json/u);
   assert.match(opportunityHtml, /OMAP-V1\.0\.0-independent-column/u);
+});
+
+test("Opportunity Map projection has no hidden dependency on generated V3 JSON", () => {
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-opportunity-"));
+  const cardDir = path.join(fixtureRoot, "01-SiteV2/knowledge/01-Signal-Cards/case");
+  fs.mkdirSync(cardDir, { recursive: true });
+  fs.writeFileSync(path.join(cardDir, "2026-07-25--signal--fixture.md"), [
+    "---",
+    "id: SIG-FIXTURE-1",
+    "type: signal_card",
+    "signal_type: case",
+    "title: \"Fixture deployment\"",
+    "date: 2026-07-25",
+    "status: published",
+    "asset_level: frontstage",
+    "primary_raw:",
+    "  source_url: \"https://example.com/deployment\"",
+    "opportunity_signals:",
+    "  buyer_or_user: [\"engineering_team\"]",
+    "  team_or_function: [\"engineering\"]",
+    "  specific_task: [\"internal_tool_building\"]",
+    "  pain_or_constraint: [\"workflow_integration\"]",
+    "  product_form: [\"developer_tool\"]",
+    "  delivery_model: [\"enterprise_subscription\"]",
+    "  business_action: [\"customer_deployment\"]",
+    "signal_owner: \"Fixture Company\"",
+    "---",
+    "",
+  ].join("\n"), "utf8");
+  try {
+    const data = buildIndustryReportsData(fixtureRoot, {
+      taxonomyFile: path.join(root, "agent-workflow/product/opportunity-signal-taxonomy.json"),
+    });
+    assert.equal(data.meta.activeDate, "2026-07-25");
+    assert.equal(data.meta.cardCount, 1);
+    assert.equal(data.cards[0].sourceName, "example.com");
+    assert.deepEqual(data.cards[0].opportunitySignals.labels.specific_task, ["internal_tool_building"]);
+    assert.equal(fs.existsSync(path.join(fixtureRoot, "01-SiteV2/site/data/v3-data-observation-desk.json")), false);
+  } finally {
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
 });
 
 test("legacy public routes are redirects and report detail pages use the V4 shell", () => {

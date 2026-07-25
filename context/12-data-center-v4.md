@@ -36,7 +36,7 @@ Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is th
 - Raw: `RAW-V3.0`
 - Event: `EVENT-V1.1`
 - Entity history: `ENTITY-V1.0`
-- Factual relationships: `RELATION-V2.0`
+- Factual relationships: `RELATION-V2.1`
 - Targeted historical collection: `BACKFILL-V1.0`
 - FDE: `FDE-V2.0`
 - Hardware: `HARDWARE-V1.0`

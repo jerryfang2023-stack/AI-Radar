@@ -58,7 +58,7 @@ The four production states are `evidence_supply`, `card_quality`, `frontstage_co
 
 An existing `automation/business-signals-<date>` branch must not block a scheduled rerun. The workflow should update the same branch and PR instead of skipping, because a previous delayed or partial run may have left the branch stale.
 
-`intelligence-graph-index.json` is the stable machine-readable entry for Hermes Agent / data-officer analysis. It is generated from the same Card / backend audit / relationship / trend-candidate compatibility dataset and must be committed whenever `v3-data-observation-desk.json` is updated. Both files stay out of the GitHub Pages artifact.
+`intelligence-graph-index.json` is a retained private compatibility entry for internal agent/data-officer analysis. It is generated from the same Card / backend audit / relationship dataset and must be committed whenever `v3-data-observation-desk.json` is updated. Historical trend candidates may remain in archived data, but daily production does not create candidates or no-decision shells. Both files stay out of the GitHub Pages artifact.
 
 Hermes may use `v3-data-observation-desk.json.meta.activeDate` and `frontstageCards.filter(card.date === activeDate)`, or `intelligence-graph-index.json.todayFrontstageCards` / `summary.todayFrontstageCards`, only to measure the internal Card compatibility lane. These counts are not the public V4 event set. `intelligence-graph-index.json.cards` is a historical archive, and `coreSignalCards` is a relationship-analysis subset. Normalize `product-service` to `product_service` for compatibility analytics.
 

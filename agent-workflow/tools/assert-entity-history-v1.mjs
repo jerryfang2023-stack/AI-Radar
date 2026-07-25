@@ -32,11 +32,12 @@ function evaluate(data) {
   const profilesById = new Map(profiles.map((item) => [item.id, item]));
   const nodeIds = new Set(nodes.map((item) => item.id));
   const eventIds = new Set((data.events || []).map((item) => item.id));
+  const eventsById = new Map((data.events || []).map((item) => [item.id, item]));
   const manifest = data.entityHistoryManifest || {};
 
   if (data.meta?.productVersion !== "SITE-V4.2.0-entity-history") problems.push("frontstage product version is not SITE-V4.2.0-entity-history");
   if (manifest.entityVersion !== "ENTITY-V1.0") problems.push("entity version is not ENTITY-V1.0");
-  if (manifest.relationshipVersion !== "RELATION-V2.0") problems.push("relationship version is not RELATION-V2.0");
+  if (manifest.relationshipVersion !== "RELATION-V2.1") problems.push("relationship version is not RELATION-V2.1");
   if (!profiles.length) problems.push("entity profiles are empty");
   if (!(data.people || []).length) problems.push("people are missing from the unified entity index");
   if (!unique(profiles.map((item) => item.id))) problems.push("entity ids are not unique");
@@ -54,15 +55,27 @@ function evaluate(data) {
   }
 
   for (const relation of relationships) {
-    if (relation.relationship_version !== "RELATION-V2.0") problems.push(`relationship version missing for ${relation.relationship_id}`);
+    if (relation.relationship_version !== "RELATION-V2.1") problems.push(`relationship version missing for ${relation.relationship_id}`);
     if (!entityIds.has(relation.subject_ref)) problems.push(`relationship subject does not resolve ${relation.relationship_id}`);
     if (relation.object_type === "entity" && !entityIds.has(relation.object_ref)) problems.push(`relationship object entity does not resolve ${relation.relationship_id}`);
     if (relation.object_type === "taxonomy" && !nodeIds.has(relation.object_ref)) problems.push(`relationship taxonomy object does not resolve ${relation.relationship_id}`);
     if (!eventIds.has(relation.event_id)) problems.push(`relationship event does not resolve ${relation.relationship_id}`);
     if (!relation.claim_refs?.length) problems.push(`relationship has no Claim refs ${relation.relationship_id}`);
     if (!relation.source_refs?.length) problems.push(`relationship has no source refs ${relation.relationship_id}`);
+    const event = eventsById.get(relation.event_id);
+    const eventClaimIds = new Set((event?.claims || []).map((claim) => claim.id));
+    const eventSourceIds = new Set((event?.sources || []).map((source) => source.id));
+    if ((relation.claim_refs || []).some((claimRef) => !eventClaimIds.has(claimRef))) problems.push(`relationship Claim does not belong to event ${relation.relationship_id}`);
+    if ((relation.source_refs || []).some((sourceRef) => !eventSourceIds.has(sourceRef))) problems.push(`relationship source does not belong to event ${relation.relationship_id}`);
     if (profilesById.get(relation.subject_ref)?.verificationStatus !== "verified") problems.push(`relationship subject is not verified ${relation.relationship_id}`);
     if (relation.object_type === "entity" && profilesById.get(relation.object_ref)?.verificationStatus !== "verified") problems.push(`relationship object is not verified ${relation.relationship_id}`);
+  }
+
+  const publicPeople = data.people || [];
+  const affiliatedPeople = publicPeople.filter((person) => (person.organizationNames || []).length);
+  if (affiliatedPeople.length < 18) problems.push(`fewer than 18 reviewed people have structured affiliations (${affiliatedPeople.length})`);
+  for (const person of affiliatedPeople) {
+    if (!(person.affiliationEvidence || []).length && !(person.relationIds || []).length) problems.push(`person affiliation lacks evidence lineage ${person.id}`);
   }
 
   const ajv = new Ajv2020({ allErrors: true, strict: false });
@@ -90,6 +103,7 @@ function evaluate(data) {
     "manifest.json",
     "indexes/events.json",
     "indexes/entities.json",
+    "indexes/relationships.json",
     "indexes/fde.json",
     "indexes/hardware.json",
     "details/events.json"

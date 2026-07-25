@@ -115,6 +115,44 @@ test("person review canonicalizes named authors and quarantines non-natural acco
   assert.equal(service.profiles.some((item) => item.id === "EN-a16ee5eb64aebdfb"), false);
 });
 
+test("reviewed people expose structured affiliations and directionally exact organization changes", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "Acme", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "Beta", entity_type: "organization_candidate", aliases: [], verification_status: "verified" },
+      { entity_id: "EN-3333333333333333", canonical_name: "Jane Doe", entity_type: "person_candidate", aliases: [], verification_status: "verified" }
+    ],
+    events: [{
+      ...event,
+      id: "EV-PERSON",
+      eventType: "organization_people",
+      title: "Jane Doe left Acme and joined Beta",
+      subject: "Jane Doe",
+      object: "left Acme and joined Beta",
+      entityIds: ["EN-1111111111111111", "EN-2222222222222222", "EN-3333333333333333"],
+      claims: [{ id: "CL-PERSON", quote: "Jane Doe left Acme and joined Beta." }],
+      sources: [{ id: "SA-PERSON" }]
+    }],
+    reviewDecisions: {
+      decisions: [{
+        entity_id: "EN-3333333333333333",
+        action: "confirm",
+        canonical: { name: "Jane Doe", catalog_type: "person", company_names: [], organization_names: ["Beta"], role_title: "VP" },
+        evidence: { claim_refs: ["CL-PERSON"], secondary_sources: [{ source_id: "PERSON-JANE", source_url: "https://example.com/jane", quote: "Jane Doe | VP | Beta" }] },
+        review_status: "accepted",
+        reviewer: "person-review"
+      }]
+    }
+  });
+  const person = service.profiles.find((item) => item.id === "EN-3333333333333333");
+
+  assert.deepEqual(person?.organizationNames, ["Beta"]);
+  assert.equal(person?.roleTitle, "VP");
+  assert.ok(service.relationships.some((item) => item.predicate === "leaves" && item.object_ref === "EN-1111111111111111"));
+  assert.ok(service.relationships.some((item) => item.predicate === "joins" && item.object_ref === "EN-2222222222222222"));
+  assert.equal(service.relationships.some((item) => item.predicate === "joins" && item.object_ref === "EN-1111111111111111"), false);
+});
+
 test("RELATION-V2 rows require event, Claim, source, and stable endpoints", () => {
   const service = buildEntityHistoryService({
     entityRows: [
@@ -125,7 +163,7 @@ test("RELATION-V2 rows require event, Claim, source, and stable endpoints", () =
   });
   const relation = service.relationships[0];
 
-  assert.equal(relation.relationship_version, "RELATION-V2.0");
+  assert.equal(relation.relationship_version, "RELATION-V2.1");
   assert.equal(relation.event_id, "EV-1");
   assert.deepEqual(relation.claim_refs, ["CL-1"]);
   assert.deepEqual(relation.source_refs, ["SA-1"]);

@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-6416272bf06ab3ec"
+    ],
     "firstSeen": "2026-07-13",
     "lastSeen": "2026-07-13",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-a7f78373207c7c7d"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -67,8 +71,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-6416272bf06ab3ec",
+      "name": "商汤",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e8105c2990ca8172"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-8fc4d0cdb7b45668"
+      ],
+      "firstSeen": "2026-07-13",
+      "lastSeen": "2026-07-13"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-a7f78373207c7c7d",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-6416272bf06ab3ec",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8fc4d0cdb7b45668",
+      "object_type": "entity",
+      "event_id": "EV-e8105c2990ca8172",
+      "claim_refs": [
+        "CL-0a07df5755be5277",
+        "CL-55064fc713f68fca",
+        "CL-7c6f5cd8bf74d2e5"
+      ],
+      "source_refs": [
+        "SA-773b66759f418b5d"
+      ],
+      "data_date": "2026-07-13",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

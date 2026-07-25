@@ -19,7 +19,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - WaveSight AI / Guanlan AI is an AI business intelligence asset system, not a general content site.
 - The public frontstage is organized as a V4 Data Center plus one Application Center entry, Industry Reports.
 - Dashboard / Operations Console is a backend-facing operations surface, not a public content column.
-- Business Signals is an internal compatibility chain for Raw / Pool / Card / relationship graph / trend-candidate work; it is not a public page.
+- Business Signals is an internal compatibility chain for Raw / Pool / Card and the remaining relationship/operations adapters; it is not a public page. Trend candidates are historical/manual research artifacts and are not part of daily production.
 - First-Line Viewpoints and Community Intelligence are independent data lanes projected into the V4 Data Center shell.
 - The local DuckDB data lake is an analytical index layer for machine queries; Obsidian remains the human-readable knowledge base.
 

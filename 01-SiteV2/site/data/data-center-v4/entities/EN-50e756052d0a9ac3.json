@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-industry-manufacturing"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-3bc9f78028bc2dba"
+    ],
     "firstSeen": "2026-07-21",
     "lastSeen": "2026-07-22",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-90009b82392af771"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -73,8 +77,53 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-3bc9f78028bc2dba",
+      "name": "CuspAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a37b9d9fb85e460f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing"
+      ],
+      "relatedEntityIds": [
+        "EN-50e756052d0a9ac3"
+      ],
+      "firstSeen": "2026-07-21",
+      "lastSeen": "2026-07-22"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-90009b82392af771",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3bc9f78028bc2dba",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-50e756052d0a9ac3",
+      "object_type": "entity",
+      "event_id": "EV-a37b9d9fb85e460f",
+      "claim_refs": [
+        "CL-9d874d727b30d6d4",
+        "CL-7da06f1d40f54573",
+        "CL-1cdf09c67531eed6"
+      ],
+      "source_refs": [
+        "SA-b29f8c7b23fdb182"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-industry-manufacturing",
@@ -168,7 +217,6 @@
         "EN-94c93b5ab886f2d9",
         "EN-d7aba0f660c463d8",
         "EN-e58ee91f1d57df05",
-        "EN-3fd1b8ed094cd712",
         "EN-8f451ae7730ddb67",
         "EN-ce635c4eabff5e4f",
         "EN-ab9e3beebd83960d",
@@ -178,7 +226,6 @@
         "EN-23b979df49741c93",
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
-        "EN-9dde0c2d375060f6",
         "EN-cbc62794911ff31b",
         "EN-a614180064f7ef60",
         "EN-3a7bd3e2360a3d29",

@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-05644efc4f4a9f67"
+    ],
     "firstSeen": "2026-06-25",
     "lastSeen": "2026-06-25",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-fb96fedd8e318159"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -61,8 +65,52 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-05644efc4f4a9f67",
+      "name": "Creator Studio",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cea99e5d7f93d56a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-3d59f7548e1af215"
+      ],
+      "firstSeen": "2026-06-25",
+      "lastSeen": "2026-06-25"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-fb96fedd8e318159",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3d59f7548e1af215",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-05644efc4f4a9f67",
+      "object_type": "entity",
+      "event_id": "EV-cea99e5d7f93d56a",
+      "claim_refs": [
+        "CL-49047465cc27fd44",
+        "CL-31af81a492f0ce43",
+        "CL-2204de91346ffc61"
+      ],
+      "source_refs": [
+        "SA-da86b0a3bb4da3ff",
+        "SA-098badf51f220522"
+      ],
+      "data_date": "2026-06-25",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

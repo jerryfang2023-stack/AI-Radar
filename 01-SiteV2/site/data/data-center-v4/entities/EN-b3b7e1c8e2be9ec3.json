@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -16,31 +16,57 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
-      "EV-385fee01e808b5fa"
+      "EV-cbb1cc90380d57a7",
+      "EV-385fee01e808b5fa",
+      "EV-3601a1d7d507cd18"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
-    "firstSeen": "2026-06-21",
-    "lastSeen": "2026-06-22",
-    "relationIds": [],
+    "relatedEntityIds": [
+      "EN-790b8bc0b57d7a37"
+    ],
+    "firstSeen": "2026-06-07",
+    "lastSeen": "2026-06-23",
+    "relationIds": [
+      "REL2-410e57ca638cd86a",
+      "REL2-72f3ef1a4091f037"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-385fee01e808b5fa"
+        "EV-cbb1cc90380d57a7",
+        "EV-385fee01e808b5fa",
+        "EV-3601a1d7d507cd18"
       ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-cbb1cc90380d57a7",
+        "dataDate": "2026-06-23",
+        "date": "2026-06-22",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "极摩客 EVO-X3 迷你主机发布：锐龙 AI Max+ 395、预装 GMKtec Claw 龙虾 AI，首发 21699 元起",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9494377efaa0651b",
+          "EN-790b8bc0b57d7a37",
+          "EN-b3b7e1c8e2be9ec3"
+        ]
+      },
       {
         "id": "EV-385fee01e808b5fa",
         "dataDate": "2026-06-22",
@@ -58,12 +84,91 @@
           "EN-b8087e26a688494b",
           "EN-88d56d69ca3828db"
         ]
+      },
+      {
+        "id": "EV-3601a1d7d507cd18",
+        "dataDate": "2026-06-08",
+        "date": "2026-06-07",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "极摩客 EVO-X3 迷你主机发布在即，高端版本将搭载 192GB 内存",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9494377efaa0651b",
+          "EN-790b8bc0b57d7a37",
+          "EN-b3b7e1c8e2be9ec3"
+        ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-790b8bc0b57d7a37",
+      "name": "EVO-X3",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cbb1cc90380d57a7",
+        "EV-385fee01e808b5fa",
+        "EV-3601a1d7d507cd18"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-b3b7e1c8e2be9ec3"
+      ],
+      "firstSeen": "2026-06-07",
+      "lastSeen": "2026-06-23"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-410e57ca638cd86a",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-b3b7e1c8e2be9ec3",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-790b8bc0b57d7a37",
+      "object_type": "entity",
+      "event_id": "EV-cbb1cc90380d57a7",
+      "claim_refs": [
+        "CL-0993390da9398403",
+        "CL-a4bafacf7d7e205d"
+      ],
+      "source_refs": [
+        "SA-4f464cb0fe8377cb"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-72f3ef1a4091f037",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-b3b7e1c8e2be9ec3",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-790b8bc0b57d7a37",
+      "object_type": "entity",
+      "event_id": "EV-3601a1d7d507cd18",
+      "claim_refs": [
+        "CL-9e5ec7cadaae1881"
+      ],
+      "source_refs": [
+        "SA-438acc8b4f5def02"
+      ],
+      "data_date": "2026-06-08",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

@@ -10,7 +10,7 @@
       "required": ["entityVersion", "relationshipVersion", "generatedAt", "coverage", "counts"],
       "properties": {
         "entityVersion": { "const": "ENTITY-V1.0" },
-        "relationshipVersion": { "const": "RELATION-V2.0" },
+        "relationshipVersion": { "const": "RELATION-V2.1" },
         "generatedAt": { "type": "string" },
         "coverage": {
           "type": "object",
@@ -51,7 +51,10 @@
         "lastSeen": { "type": "string" },
         "handle": { "type": "string" },
         "role": { "type": "string" },
+        "roleTitle": { "type": "string" },
         "organization": { "type": "string" },
+        "organizationNames": { "type": "array", "items": { "type": "string" } },
+        "affiliationEvidence": { "type": "array", "items": { "type": "object" } },
         "viewpointTags": { "type": "array", "items": { "type": "string" } }
       },
       "additionalProperties": true
@@ -94,10 +97,10 @@
       "required": ["relationship_id", "relationship_version", "subject_ref", "subject_type", "predicate", "object_ref", "object_type", "event_id", "claim_refs", "source_refs", "data_date", "status"],
       "properties": {
         "relationship_id": { "type": "string", "pattern": "^REL2-" },
-        "relationship_version": { "const": "RELATION-V2.0" },
+        "relationship_version": { "const": "RELATION-V2.1" },
         "subject_ref": { "type": "string" },
         "subject_type": { "const": "entity" },
-        "predicate": { "enum": ["publishes", "partners_with", "acquires", "serves", "deployed_in", "supplies_hardware_to"] },
+        "predicate": { "enum": ["publishes", "partners_with", "acquires", "serves", "deployed_in", "supplies_hardware_to", "joins", "leaves", "founds"] },
         "object_ref": { "type": "string" },
         "object_type": { "enum": ["entity", "taxonomy"] },
         "event_id": { "type": "string" },

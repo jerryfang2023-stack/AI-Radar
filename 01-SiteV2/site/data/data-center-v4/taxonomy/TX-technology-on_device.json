@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -71,7 +71,6 @@
       "EN-c608c4787821de1b",
       "EN-6f21a653c48f4f19",
       "EN-12a81529bba89666",
-      "EN-5388bc10736a0eff",
       "EN-2c348893efb2316e",
       "EN-44a9bf3b11abea5c",
       "EN-de6b71bf77ff4299",
@@ -84,8 +83,6 @@
       "EN-dd920a8cd166f486",
       "EN-c70eca6b0f88f44d",
       "EN-41dcc2d4951f337b",
-      "EN-729324072d368379",
-      "EN-e246a1f9a090075b",
       "EN-1dc405a4cda895d0",
       "EN-e07654c7cc29acbd",
       "EN-c3ce0cc92b48bbd6",
@@ -3260,10 +3257,7 @@
         "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
         "EN-52c2f30b6bda5898",
-        "EN-1e71d9c1a5c4de16",
         "EN-683d8d597da71192",
-        "EN-9e72fd4472222231",
-        "EN-8395dc051feafc4c",
         "EN-aa15d891a32a51b8",
         "EN-0f3360879e746531",
         "EN-a1b0d8a938903dc7",
@@ -3273,10 +3267,10 @@
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
         "EN-3ae50afab3e392b8",
-        "EN-936f01f91fdadf69",
         "EN-4e7e886400fe6a83",
         "EN-1dc405a4cda895d0",
         "EN-12ab68e37d104d27",
+        "EN-8395dc051feafc4c",
         "EN-a3266ab9e10d6105",
         "EN-9fbf261b62c1d7c0",
         "EN-11ef7b03c79c9bbd",
@@ -3457,7 +3451,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
@@ -3468,7 +3462,9 @@
       "classificationRefs": [
         "TX-technology-on_device"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-7a2f2aafb073c74e"
+      ],
       "firstSeen": "2026-07-20",
       "lastSeen": "2026-07-21"
     },
@@ -3495,10 +3491,12 @@
     },
     {
       "id": "EN-7a2f2aafb073c74e",
-      "name": "Auto Immersive 3",
+      "name": "Auto Immersive 3D",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [],
+      "aliases": [
+        "Auto Immersive 3"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3510,7 +3508,9 @@
       "classificationRefs": [
         "TX-technology-on_device"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-e21783b898b55a31"
+      ],
       "firstSeen": "2026-07-20",
       "lastSeen": "2026-07-21"
     },
@@ -3590,8 +3590,8 @@
     {
       "id": "EN-7df09a7717ef2feb",
       "name": "LM Studio",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
       "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -3612,7 +3612,9 @@
         "TX-technology-on_device",
         "TX-technology-tool_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-50ba7ff15827787b"
+      ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-17"
     },
@@ -3676,7 +3678,9 @@
         "TX-technology-on_device",
         "TX-technology-tool_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-7df09a7717ef2feb"
+      ],
       "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-17"
     },
@@ -3800,6 +3804,7 @@
         "EV-22b8d155ce027905",
         "EV-3ef3e18df61a00d8",
         "EV-4bb5b24400e49ea4",
+        "EV-568d2aeab5234e48",
         "EV-97a8d86baa7fffc4",
         "EV-0ad758b04b9b5313",
         "EV-c08837795f9e16d2",
@@ -3864,15 +3869,14 @@
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
         "EN-6f216f2ea5b7a13e",
-        "EN-419f2cd96ee122e3",
         "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
-        "EN-cfe6926406f30a15",
+        "EN-40f98159922ab514",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
         "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
@@ -3880,7 +3884,6 @@
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-bdfecbcd7dbf76d2",
-        "EN-e3db3da2b7dc6057",
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2025-10-09",
@@ -4098,13 +4101,11 @@
       ],
       "relatedEntityIds": [
         "EN-e463d05a14e8697f",
-        "EN-b5251b35f15bedc4",
-        "EN-1924fff8eb4d54ae",
-        "EN-dd920a8cd166f486",
-        "EN-af3ceabbe048a291",
-        "EN-45b5216872656eb3",
         "EN-0502bb9ed34980aa",
-        "EN-40e307d789f77264"
+        "EN-dd920a8cd166f486",
+        "EN-1924fff8eb4d54ae",
+        "EN-af3ceabbe048a291",
+        "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
       "lastSeen": "2026-07-25"
@@ -4256,56 +4257,6 @@
       "lastSeen": "2026-07-16"
     },
     {
-      "id": "EN-5388bc10736a0eff",
-      "name": "ByteDance",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "字节跳动"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-b726a9cda7beae64",
-        "EV-97fdf068afbbe555",
-        "EV-47a84a0f1a85c29c",
-        "EV-6c361125c3f50bb6",
-        "EV-533d2da98cce1ae0",
-        "EV-8734f7217e78c861",
-        "EV-3b1d1dd87442e7f1",
-        "EV-8a9b12665a3e40a0",
-        "EV-ee363e679d12329c",
-        "EV-ad2e4fe6a149d95d",
-        "EV-76aa77f5a2e7c661",
-        "EV-0e42803078b1c6be",
-        "EV-620f5ebfb6ac81ac",
-        "EV-90e206ff43a3b9d1",
-        "EV-c7404765df94a3b4",
-        "EV-e03b324b7e297e6b",
-        "EV-887d47bb477e2142",
-        "EV-4942151f99b2c5ac",
-        "EV-cf00e83782783915",
-        "EV-c11ee0da38376254",
-        "EV-631197767a45d34c"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-on_device",
-        "TX-technology-video_generation",
-        "TX-industry-media_entertainment",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [
-        "EN-4f96127fdacbb405"
-      ],
-      "firstSeen": "2026-06-01",
-      "lastSeen": "2026-07-22"
-    },
-    {
       "id": "EN-2c348893efb2316e",
       "name": "StepFun",
       "entityType": "organization_candidate",
@@ -4333,7 +4284,9 @@
         "TX-technology-on_device",
         "TX-technology-speech_audio"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-44a9bf3b11abea5c"
+      ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-20"
     },
@@ -4354,7 +4307,9 @@
       "classificationRefs": [
         "TX-technology-on_device"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-2c348893efb2316e"
+      ],
       "firstSeen": "2026-07-12",
       "lastSeen": "2026-07-12"
     },
@@ -5115,7 +5070,6 @@
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
-        "EN-98fdc0804bb472fe",
         "EN-830abc32d2a443c5",
         "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
@@ -5128,16 +5082,15 @@
         "EN-968e2d5b08687bf4",
         "EN-cb4754c48f8023d0",
         "EN-2c063f604e634100",
-        "EN-bb5b6487f881bbb1",
         "EN-d0a0acb9a5ef0560",
         "EN-e65e0f2695fa259d",
         "EN-34ec8666daf7b665",
         "EN-e4ffb7bd879b89da",
-        "EN-b59c577ed73536c6",
-        "EN-08013bb0b80d23f7",
         "EN-96eebba49dbbf422",
         "EN-b8c236d640d6a5fb",
-        "EN-d8494bb34d6ddc43"
+        "EN-d8494bb34d6ddc43",
+        "EN-b59c577ed73536c6",
+        "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
       "lastSeen": "2026-07-25"
@@ -5165,65 +5118,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-09"
-    },
-    {
-      "id": "EN-729324072d368379",
-      "name": "Claude",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-debecca007e547d2",
-        "EV-84226288807f817b",
-        "EV-0347414d81e7f02e",
-        "EV-92fbbeb840a98e97",
-        "EV-0df617a9a5ac727e",
-        "EV-63fdf001c22a0ed4",
-        "EV-7fb25ff3d853c314",
-        "EV-b796ba14c4eba861",
-        "EV-c7a2774b07554f5d",
-        "EV-e09bff5515b1896b",
-        "EV-f1418d9e3b1413b7",
-        "EV-c5b8faec223a4caf"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-cybersecurity",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-technology-tool_use",
-        "TX-industry-education"
-      ],
-      "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "firstSeen": "2026-06-09",
-      "lastSeen": "2026-07-18"
-    },
-    {
-      "id": "EN-e246a1f9a090075b",
-      "name": "OpenShell",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-4026c95d4c01b96e"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-on_device"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-01",
-      "lastSeen": "2026-06-01"
     },
     {
       "id": "EN-1dc405a4cda895d0",

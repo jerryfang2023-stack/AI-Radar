@@ -23,7 +23,7 @@ WaveSight AI is now on the `SITE-V4.2.0-entity-history` public website and data-
 - Pool is an operational QA queue. Card, trend, opportunity, and report objects are internal compatibility or downstream application assets, not V4 truth assets.
 - Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Reports Center `REPORTS-V1.0.0-periodic-report-center`, Opportunity Map `OMAP-V1.0.0-independent-column`.
 - Current person-account review contract: `PERSON-REVIEW-V1.0`; all 37 person/account candidates are reviewed, 31 natural people are public, and 6 non-natural accounts remain quarantined without removing their viewpoint records.
-- Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.0`, `BACKFILL-V1.0`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`.
+- Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`.
 
 ## Current Entries
 
@@ -45,7 +45,7 @@ External sources
 -> RawDocument
 -> Claim / Entity
 -> CanonicalEvent
--> ENTITY-V1.0 registry / profiles / RELATION-V2.0
+-> ENTITY-V1.0 registry / profiles / RELATION-V2.1
 -> FDE / Hardware projections
 -> JSON / JSONL / DuckDB data service
 -> downstream applications
@@ -78,7 +78,7 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.2.0, 
 - Git-tracked daily V4 bundles are the canonical normalized dataset. DuckDB and JSONL are rebuildable serving tables.
 - Current and future V4 bundles persist source-backed `product_candidate` entities; the public Entity Index reads those persisted entities and does not infer products with a frontstage whitelist.
 - Companies, products/models/services, and people use stable `EN-*` IDs. Technology, use case, and industry remain TAG-V4 taxonomy nodes with `TX-*` IDs rather than factual entities.
-- RELATION-V2.0 permits only typed endpoints backed by an accepted event, Claim references, and SourceArtifact references. Tag co-occurrence cannot create a relationship.
+- RELATION-V2.1 permits only typed endpoints backed by an accepted event, Claim references, and SourceArtifact references. It adds evidence-bounded `joins`, `leaves`, and `founds` person-to-organization relations; Tag co-occurrence still cannot create a relationship.
 - `npm run backfill:entity-history` reprojects all accepted canonical history and records explicit source-coverage gaps; it must never invent missing historical events.
 - `npm run build:targeted-backfill` maintains the cross-day company, product, funding-detail, and deployment-case discovery queue. Its queries and candidates are operational metadata, not facts; only original-source capture and exact-span Claims may repair the canonical gap.
 - Historical bundles without product entities remain unchanged. `npm run backfill:data-center` rebuilds the full canonical bundle and must not be used for a product-only migration; historical product migration requires a dedicated, dry-run-validated projection migrator.

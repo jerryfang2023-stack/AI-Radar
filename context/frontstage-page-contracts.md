@@ -36,7 +36,7 @@ The legacy Business Signals Card set remains an internal compatibility dataset f
 | Scope | Version | Meaning |
 |---|---|---|
 | Main website | `SITE-V4.2.0-entity-history` | Keeps the unified V4 shell and adds stable entity profiles, cross-day timelines, typed factual relationships, and split frontstage data loading. |
-| Business Signals compatibility lane | `BSIG-V2.2.0-pipeline-stage-ownership` | Internal Card/graph/trend compatibility data only; not a public page. |
+| Business Signals compatibility lane | `BSIG-V2.2.0-pipeline-stage-ownership` | Internal Card and relationship adapters only; trend candidates are manual audit/archive inputs and are not part of daily production or a public page. |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Adds accepted committed morning history to the V4 projection while keeping current morning RSS and afternoon follow-builders production independent; original-URL dedupe, approved Chinese translation provenance, AI relevance, opinion tags, and Obsidian timeline idempotency remain release gates. |
 | Community Intelligence column | `CINT-V1.0.2-publication-waiting-gate` | Keeps local logged-in collection separate from GitHub publication and treats open PR / queued workflow states after healthy same-date data as Waiting, not Problems. |
 | Enterprise AI / FDE lens | `EAI-V1.2.0-raw-card-ingestion-boundary` | Boss-facing implementation lens backed by the independent FDE Lens Pool; title translation and fact extraction belong to Raw/Card/FDE asset generation, not generic frontstage blocking; not a fourth Card type. |

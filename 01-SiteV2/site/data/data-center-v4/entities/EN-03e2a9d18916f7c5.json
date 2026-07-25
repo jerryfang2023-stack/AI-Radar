@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -12,10 +12,12 @@
   },
   "entity": {
     "id": "EN-03e2a9d18916f7c5",
-    "name": "Bonsai 27",
+    "name": "Bonsai 27B",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "Bonsai 27"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -27,10 +29,14 @@
     "classificationRefs": [
       "TX-technology-fine_tuning"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-95b0632f1b292fa7"
+    ],
     "firstSeen": "2026-07-15",
     "lastSeen": "2026-07-15",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-6ace0b347cce6142"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -71,8 +77,57 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-95b0632f1b292fa7",
+      "name": "PrismML",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-long_context",
+        "TX-technology-fine_tuning",
+        "TX-technology-quantization"
+      ],
+      "relatedEntityIds": [
+        "EN-03e2a9d18916f7c5"
+      ],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-15"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-6ace0b347cce6142",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-95b0632f1b292fa7",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-03e2a9d18916f7c5",
+      "object_type": "entity",
+      "event_id": "EV-8b9e4428074bde60",
+      "claim_refs": [
+        "CL-86b22b342fb297d9",
+        "CL-0657d61ac5fc613d",
+        "CL-429297129a61fed0"
+      ],
+      "source_refs": [
+        "SA-9405b2d9c7199282"
+      ],
+      "data_date": "2026-07-15",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-fine_tuning",
@@ -112,8 +167,7 @@
         "EN-bbdefa2950f49882",
         "EN-4a639cb888a15d75",
         "EN-8d4321d936320802",
-        "EN-65b3aa2f527deeef",
-        "EN-c165c006a5968443"
+        "EN-65b3aa2f527deeef"
       ],
       "fdeIds": [],
       "hardwareIds": [

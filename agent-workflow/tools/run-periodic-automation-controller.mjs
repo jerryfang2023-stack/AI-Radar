@@ -82,8 +82,8 @@ function writeText(file, text) {
 
 function pageGate(cwd) {
   const actions = [];
-  actions.push(run("build Industry Reports projection", process.execPath, ["01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"], { cwd }));
-  if (actions.at(-1).ok) actions.push(run("Industry Reports tests", process.execPath, ["--test", "agent-workflow/tools/tests/industry-reports-frontstage.test.mjs"], { cwd }));
+  actions.push(run("build Opportunity Map projection", process.execPath, ["01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"], { cwd }));
+  if (actions.at(-1).ok) actions.push(run("Opportunity Map projection tests", process.execPath, ["--test", "agent-workflow/tools/tests/industry-reports-frontstage.test.mjs"], { cwd }));
   if (actions.at(-1).ok) actions.push(run("frontstage regression gate", process.execPath, ["agent-workflow/tools/frontstage-regression-gate.mjs"], { cwd, timeoutMs: 600_000 }));
   if (actions.at(-1).ok) actions.push(run("V4 visual smoke", "npm", ["run", "test:v4-frontstage-smoke"], { cwd, timeoutMs: 900_000 }));
   return { ok: actions.every((item) => item.ok), actions };
@@ -162,7 +162,7 @@ function changedPaths(cwd) {
 
 function allowedPath(file, kind) {
   const common = ["agent-workflow/reports/", "01-SiteV2/content/08-report/", "01-SiteV2/site/data/industry-reports-frontstage.json", "01-SiteV2/site/intelligence-map.html"];
-  const weekly = ["01-SiteV2/knowledge/01-Signal-Cards/", "01-SiteV2/site/data/v3-data-observation-desk.json", "01-SiteV2/site/data/intelligence-graph-index.json", "01-SiteV2/site/data/enterprise-ai-fde.json", "01-SiteV2/site/weekly-ai-business-change-radar", "01-SiteV2/site/assets/weekly-report.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js"];
+  const weekly = ["01-SiteV2/knowledge/01-Signal-Cards/", "01-SiteV2/site/data/enterprise-ai-fde.json", "01-SiteV2/site/weekly-ai-business-change-radar", "01-SiteV2/site/assets/weekly-report.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js"];
   const monthly = ["01-SiteV2/site/monthly-business-structure-", "01-SiteV2/site/assets/reports.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js"];
   return [...common, ...(kind === "weekly" ? weekly : monthly)].some((prefix) => file === prefix || file.startsWith(prefix));
 }

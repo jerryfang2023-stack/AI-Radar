@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-use_case-customer_service"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-21d8ce5988925f81"
+    ],
     "firstSeen": "2026-07-01",
     "lastSeen": "2026-07-01",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-3a68b920abaf8848"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -71,8 +75,53 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-21d8ce5988925f81",
+      "name": "Fin",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "Innovates Outcome-Based Pricing"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-78277c678f01e540"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [
+        "EN-c47b618e17c75f06"
+      ],
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-01"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-3a68b920abaf8848",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c47b618e17c75f06",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-21d8ce5988925f81",
+      "object_type": "entity",
+      "event_id": "EV-78277c678f01e540",
+      "claim_refs": [
+        "CL-7a2d6d9738b7b016"
+      ],
+      "source_refs": [
+        "SA-a9e39ff21a78d3ae"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-use_case-customer_service",
@@ -119,7 +168,6 @@
         "EN-89e28a570dce8b18",
         "EN-b70e8201c9feb94a",
         "EN-3673c8b4dba7409e",
-        "EN-7b80ed96beed8c0a",
         "EN-7d1507284a5757ca",
         "EN-cbc62794911ff31b",
         "EN-dba61afed18c85d6"

@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -27,10 +27,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-7c0e908da2e0a81f"
+    ],
     "firstSeen": "2026-07-06",
     "lastSeen": "2026-07-07",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-213bfa774d7c57d4"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -63,8 +67,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-7c0e908da2e0a81f",
+      "name": "Synthetic Sciences",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a2476148e8f1eec4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-28fe761f463b7fae"
+      ],
+      "firstSeen": "2026-07-06",
+      "lastSeen": "2026-07-07"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-213bfa774d7c57d4",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7c0e908da2e0a81f",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-28fe761f463b7fae",
+      "object_type": "entity",
+      "event_id": "EV-a2476148e8f1eec4",
+      "claim_refs": [
+        "CL-ab22ef0a3fa94c62",
+        "CL-2bb4cebdfb94dae4",
+        "CL-915aaf68c542c36e"
+      ],
+      "source_refs": [
+        "SA-73e4456d9e2ac3ae"
+      ],
+      "data_date": "2026-07-07",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

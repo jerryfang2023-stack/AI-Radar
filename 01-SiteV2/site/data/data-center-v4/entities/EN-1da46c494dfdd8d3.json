@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-e3a80a99bb5fa250"
+    ],
     "firstSeen": "2026-07-03",
     "lastSeen": "2026-07-04",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-3134364c4ac137b8"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -68,8 +72,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-e3a80a99bb5fa250",
+      "name": "FPC-9309W-G5",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-587c18cb1837c74f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-1da46c494dfdd8d3"
+      ],
+      "firstSeen": "2026-07-03",
+      "lastSeen": "2026-07-04"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-3134364c4ac137b8",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-1da46c494dfdd8d3",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e3a80a99bb5fa250",
+      "object_type": "entity",
+      "event_id": "EV-587c18cb1837c74f",
+      "claim_refs": [
+        "CL-7321602e8e376ee4",
+        "CL-7088c965de696f86",
+        "CL-7976fa739a9fd65e"
+      ],
+      "source_refs": [
+        "SA-58e78a2febaaeced"
+      ],
+      "data_date": "2026-07-04",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

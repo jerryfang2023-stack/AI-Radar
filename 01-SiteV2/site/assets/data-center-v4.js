@@ -12,7 +12,7 @@
     }
     window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}${window.location.hash}`);
   }
-  const knownViews = new Set(["events", "index", "fde", "hardware", "community", "viewpoints", "tag"]);
+  const knownViews = new Set(["events", "index", "relations", "fde", "hardware", "community", "viewpoints", "tag"]);
   const view = knownViews.has(params.get("view")) ? params.get("view") : "events";
   document.body.dataset.dcView = view;
   const pageSize = 20;
@@ -34,7 +34,8 @@
 
   const viewConfig = {
     events: { title: "商业事件", description: "AI 行业商业事件数据库", detail: "event", dataKey: "events", placeholder: "搜索商业事件标题、公司、产品或关键词" },
-    index: { title: "实体索引", description: "公司、产品、人物、技术、场景与行业", placeholder: "搜索实体、技术、场景或行业" },
+    index: { title: "实体数据库", description: "公司机构库、产品模型库、人物库及其证据化历史档案", placeholder: "搜索公司、产品、模型、人物或别名" },
+    relations: { title: "关系数据库", description: "由事件、原文 Claim 和来源共同验证的实体关系", dataKey: "relationships", placeholder: "搜索主体、关系、客体或关联事件" },
     fde: { title: "FDE 实施", description: "企业 AI 实施记录", detail: "fde", dataKey: "fde", placeholder: "搜索客户、服务商、行业或场景" },
     hardware: { title: "AI 硬件", description: "硬件产品、供应与部署记录", detail: "hardware", dataKey: "hardware", placeholder: "搜索硬件、供应方或客户" },
     community: { title: "社群情报", description: "社群来源的一线材料", detail: "community", dataKey: "community", placeholder: "搜索标题、正文关键词或作者" },
@@ -270,6 +271,13 @@
         && (!type || item.indexType === type)
         && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
       ));
+    } else if (targetView === "relations") {
+      items = items.filter((item) => (
+        matchesQuery(item, ["title", "subjectName", "objectName", "predicate", "predicateLabel", "eventTitle"], query)
+        && (!type || item.predicate === type)
+        && (!from || item.data_date >= from)
+        && (!to || item.data_date <= to)
+      ));
     } else if (targetView === "fde") {
       if (monthlyProjectionMode(targetView)) items = items.filter((item) => item.dataDate.startsWith(`${currentDataMonth(data)}-`));
       items = items.filter((item) => (
@@ -325,6 +333,8 @@
         `${entry.dimensionName || "分类"} · ${entry.name}`
       ]));
       pieces.push(`<select class="dc-select" name="tag" aria-label="技术、场景与产品分类" data-auto-submit>${optionList([...classifications].map(([value, label]) => ({ value, label })).sort((a, b) => a.label.localeCompare(b.label, "zh-CN")), selectedTag, "技术 / 场景 / 产品")}</select>`);
+    } else if (targetView === "relations") {
+      pieces.push(`<select class="dc-select" name="type" aria-label="关系类型" data-auto-submit>${optionList(uniqueSorted(items.map((item) => item.predicate).filter(Boolean)).map((value) => ({ value, label: items.find((item) => item.predicate === value)?.predicateLabel || value })), selectedType, "全部关系类型")}</select>`);
     } else if (targetView === "fde") {
       pieces.push(`<select class="dc-select" name="stage" aria-label="实施阶段" data-auto-submit>${optionList(uniqueSorted(items.map((item) => item.stage).filter(Boolean)).map((value) => ({ value, label: items.find((item) => item.stage === value)?.stageLabel || value })), selectedStage, "全部实施阶段")}</select>`);
     } else if (targetView === "hardware") {
@@ -344,7 +354,7 @@
     const to = params.get("to") || "";
     const industry = params.get("industry") || "";
     const industries = targetView === "fde" ? uniqueSorted(data.fde.map((item) => item.industry).filter((value) => value && value !== "未披露")) : [];
-    const dates = collectionForView(data, targetView).map((item) => ["events", "fde", "hardware"].includes(targetView) ? item.dataDate : item.date).filter(Boolean).sort();
+    const dates = collectionForView(data, targetView).map((item) => targetView === "relations" ? item.data_date : ["events", "fde", "hardware"].includes(targetView) ? item.dataDate : item.date).filter(Boolean).sort();
     const minimumDate = dates[0] || "";
     const maximumDate = dates.at(-1) || "";
     const moreActive = Boolean(from || to || industry);
@@ -383,12 +393,12 @@
       && (!tag || normalizeTags(item.tags).some((itemTag) => itemTag.name === tag || itemTag.id === tag))
     ));
     const choices = [
-      { value: "", label: "全部", count: matching.length },
-      { value: "company", label: "公司与机构", count: matching.filter((item) => item.indexType === "company").length },
-      { value: "product", label: "产品模型服务", count: matching.filter((item) => item.indexType === "product").length },
-      { value: "person", label: "人物", count: matching.filter((item) => item.indexType === "person").length },
-      { value: "technology", label: "AI 技术", count: matching.filter((item) => item.indexType === "technology").length },
-      { value: "context", label: "场景与行业", count: matching.filter((item) => item.indexType === "context").length }
+      { value: "", label: "全部实体", count: matching.length },
+      { value: "company", label: "公司机构库", count: matching.filter((item) => item.indexType === "company").length },
+      { value: "product", label: "产品模型库", count: matching.filter((item) => item.indexType === "product").length },
+      { value: "person", label: "人物库", count: matching.filter((item) => item.indexType === "person").length },
+      { value: "technology", label: "技术词表", count: matching.filter((item) => item.indexType === "technology").length },
+      { value: "context", label: "场景行业词表", count: matching.filter((item) => item.indexType === "context").length }
     ];
     return `
       <nav class="dc-index-switch" aria-label="实体索引类型">
@@ -432,6 +442,16 @@
     }
     if (targetView === "index") {
       return { kind: item.indexKind, date: "", title: item.name, sub: item.indexSub, tags: item.tags, href: detailLink("index", item.detailKind, item.id) };
+    }
+    if (targetView === "relations") {
+      return {
+        kind: item.predicateLabel,
+        date: item.data_date,
+        title: item.title,
+        sub: item.eventTitle,
+        tags: [],
+        href: detailLink("events", "event", item.event_id)
+      };
     }
     if (targetView === "fde") {
       return {
@@ -1485,7 +1505,10 @@
     acquires: "收购",
     serves: "服务",
     deployed_in: "部署于",
-    supplies_hardware_to: "供应硬件"
+    supplies_hardware_to: "供应硬件",
+    joins: "加入",
+    leaves: "离开",
+    founds: "创立"
   };
 
   function entityProfileDetail(payload) {
@@ -1525,8 +1548,8 @@
             ${fact("类型", entity.typeLabel)}
             ${aliases ? fact("别名", aliases) : ""}
             ${entity.handle ? fact("账号", `@${entity.handle}`) : ""}
-            ${entity.role ? fact("公开角色", entity.role) : ""}
-            ${entity.organization ? fact("公开机构", entity.organization) : ""}
+            ${entity.roleTitle ? fact("结构化角色", entity.roleTitle) : entity.role ? fact("公开角色", entity.role) : ""}
+            ${(entity.organizationNames || []).length ? fact("机构归属", entity.organizationNames) : entity.organization ? fact("公开机构", entity.organization) : ""}
           </dl></section>
           ${relationRows.length ? `<section class="dc-side-block"><h2>事实关系</h2><ul class="dc-entity-relations">${relationRows.join("")}</ul></section>` : ""}
           ${(payload.taxonomyNodes || []).length ? `<section class="dc-side-block"><h2>关联分类</h2><div class="dc-side-list">${payload.taxonomyNodes.map((node) => `<a href="${escapeHtml(detailLink("index", "taxonomy", node.id))}">${escapeHtml(node.name)}</a>`).join("")}</div></section>` : ""}
@@ -1747,6 +1770,7 @@
     if (targetView === "hardware" && detail === "hardware") return { ...(await communityFetchJson(splitDataUrl("details/hardware"))), companies: [], products: [], fde: [], community: [], viewpoints: [] };
     if (targetView === "events" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/events"))), companies: [], products: [], people: [], taxonomyNodes: [], fde: [], hardware: [], community: [], viewpoints: [] };
     if (targetView === "index" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/entities"))), events: [], fde: [], hardware: [], community: [], viewpoints: [] };
+    if (targetView === "relations" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/relationships"))), events: [], companies: [], products: [], people: [], taxonomyNodes: [], fde: [], hardware: [], community: [], viewpoints: [] };
     if (targetView === "fde" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/fde"))), events: [], companies: [], products: [], people: [], taxonomyNodes: [], hardware: [], community: [], viewpoints: [] };
     if (targetView === "hardware" && !detail) return { ...(await communityFetchJson(splitDataUrl("indexes/hardware"))), events: [], companies: [], products: [], people: [], taxonomyNodes: [], fde: [], community: [], viewpoints: [] };
     return communityFetchJson("data/data-center-v4-frontstage.json");

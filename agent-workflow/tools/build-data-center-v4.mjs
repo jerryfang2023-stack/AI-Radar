@@ -1159,6 +1159,9 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
         organizationNames: entityNames.map((item) => item.canonicalName)
       });
       for (const name of productNames) {
+        const titleOffset = title.toLocaleLowerCase().indexOf(name.toLocaleLowerCase());
+        const bodyOffset = bodyClean.toLocaleLowerCase().indexOf(name.toLocaleLowerCase());
+        if (titleOffset < 0 && bodyOffset < 0) continue;
         const entityId = `EN-${hash(`product|${name.toLocaleLowerCase()}`)}`;
         entityIds.push(entityId);
         if (!entities.has(entityId)) {
@@ -1167,16 +1170,14 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
             canonical_name: name,
             entity_type: "product_candidate",
             aliases: [],
-            verification_status: "verified"
+            verification_status: "candidate"
           });
         }
-        const titleOffset = title.toLocaleLowerCase().indexOf(name.toLocaleLowerCase());
-        const bodyOffset = bodyClean.toLocaleLowerCase().indexOf(name.toLocaleLowerCase());
         const source = titleOffset >= 0 ? "title_original" : "claim_evidence";
         const mentionOffset = Math.max(0, titleOffset >= 0 ? titleOffset : bodyOffset);
         const mentionText = titleOffset >= 0
           ? title.slice(titleOffset, titleOffset + name.length)
-          : bodyClean.slice(mentionOffset, mentionOffset + name.length) || name;
+          : bodyClean.slice(mentionOffset, mentionOffset + name.length);
         const mentionId = `EM-${hash(`${rawId}|${entityId}|${source}|${mentionOffset}`)}`;
         entityMentions.push({
           mention_id: mentionId,
@@ -1186,7 +1187,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
           source,
           start: mentionOffset,
           end: mentionOffset + mentionText.length,
-          verification_status: "verified"
+          verification_status: "candidate"
         });
         doc.entity_mention_ids.push(mentionId);
       }

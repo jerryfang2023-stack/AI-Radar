@@ -10,6 +10,7 @@ const queueFile = path.join(root, "01-SiteV2/content/11-databases/targeted-backf
 const schemaFile = path.join(root, "agent-workflow/product/targeted-backfill-v1.schema.json");
 const reportFile = path.join(root, "agent-workflow/reports/targeted-backfill-v1-gate.json");
 const canonicalRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
+const servingEntityRegistryFile = path.join(root, "data-lake/tables/entity_registry.jsonl");
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
@@ -38,6 +39,13 @@ function canonicalIndex() {
         if (target instanceof Map) target.set(row[key], row);
         else target.add(row[key]);
       }
+    }
+  }
+  if (fs.existsSync(servingEntityRegistryFile)) {
+    const servingRows = fs.readFileSync(servingEntityRegistryFile, "utf8").split(/\r?\n/u).filter(Boolean).map((line) => JSON.parse(line));
+    for (const row of servingRows) {
+      if (!row.id || row.verificationStatus !== "verified") continue;
+      index.entities.set(row.id, { ...row, entity_id: row.id, verification_status: "verified" });
     }
   }
   return index;

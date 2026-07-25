@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -15,7 +15,9 @@
     "name": "Sites",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "Codex Sites"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -58,7 +60,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-7d3194f79e645c42",
-          "EN-e8b6dfd27f418787",
           "EN-9de030d092759897"
         ]
       }
@@ -347,22 +348,19 @@
         "EN-52fc33ae4d101a5d",
         "EN-6a50fbf0b970c03a",
         "EN-9fbf261b62c1d7c0",
-        "EN-536c4035ba0c7047",
         "EN-4d748ebd71af03a7",
         "EN-65ef4539bbcbe9fc",
-        "EN-5ce177312903c604",
         "EN-3673c8b4dba7409e",
         "EN-b70e8201c9feb94a",
         "EN-373ac021a2c0bb2c",
-        "EN-bd2bfbea5911ec7a",
         "EN-af53dbc3e443f7a9",
         "EN-3c534d54dae48cbb",
         "EN-b269456229397ef3",
+        "EN-da20c5952dba19d8",
         "EN-fc0586e76f80f181",
         "EN-1ecf93c539fcffca",
         "EN-9de030d092759897",
-        "EN-b9db1ff13ae8496e",
-        "EN-7b8cb35de7ad047a"
+        "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2025-10-09",
       "lastSeen": "2026-07-25"
@@ -371,7 +369,7 @@
   "relationships": [
     {
       "relationship_id": "REL2-d54cce5e87ce7112",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-7d3194f79e645c42",
       "subject_type": "entity",
       "predicate": "publishes",

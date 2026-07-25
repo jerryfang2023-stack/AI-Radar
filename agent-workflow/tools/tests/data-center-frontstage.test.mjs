@@ -163,7 +163,8 @@ test("data center page uses the official logo and sidebar navigation", () => {
   assert.match(html, /logo-wavesight-reference-horizontal\.svg/u);
   assert.match(html, /data-view-link="events"/u);
   assert.match(html, /data-view-link="events">商业事件/u);
-  assert.match(html, /data-center\.html\?view=index" data-view-link="index">实体索引/u);
+  assert.match(html, /data-center\.html\?view=index" data-view-link="index">实体数据库/u);
+  assert.match(html, /data-center\.html\?view=relations" data-view-link="relations">关系数据库/u);
   assert.ok(indexPosition > viewpointPosition);
   assert.match(html, />数据中心</u);
   assert.match(html, />应用中心</u);
@@ -395,17 +396,18 @@ test("commercial events prioritize financing and cases before products and other
 test("formal entities and classification nodes share one entity index", () => {
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
 
-  assert.match(script, /index: \{ title: "实体索引"/u);
+  assert.match(script, /index: \{ title: "实体数据库"/u);
+  assert.match(script, /relations: \{ title: "关系数据库"/u);
   assert.match(script, /function entityIndexItems\(data\)/u);
   assert.match(script, /\.\.\.\(data\.companies \|\| \[\]\)\.map/u);
   assert.match(script, /\.\.\.\(data\.products \|\| \[\]\)\.map/u);
   assert.match(script, /\.\.\.\(data\.people \|\| \[\]\)\.map/u);
   assert.match(script, /\.\.\.\(data\.taxonomyNodes \|\| \[\]\)\.map/u);
-  assert.match(script, /label: "公司与机构"/u);
-  assert.match(script, /label: "产品模型服务"/u);
-  assert.match(script, /label: "人物"/u);
-  assert.match(script, /label: "AI 技术"/u);
-  assert.match(script, /label: "场景与行业"/u);
+  assert.match(script, /label: "公司机构库"/u);
+  assert.match(script, /label: "产品模型库"/u);
+  assert.match(script, /label: "人物库"/u);
+  assert.match(script, /label: "技术词表"/u);
+  assert.match(script, /label: "场景行业词表"/u);
   assert.match(script, /legacyView === "companies" \|\| legacyView === "products"/u);
   assert.match(script, /detailLink\("index", item\.detailKind, item\.id\)/u);
   assert.match(script, /isIndex && params\.get\("type"\)/u);

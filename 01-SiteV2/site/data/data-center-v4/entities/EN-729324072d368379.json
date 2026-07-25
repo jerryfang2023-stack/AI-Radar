@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -21,39 +21,29 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-debecca007e547d2",
       "EV-84226288807f817b",
       "EV-0347414d81e7f02e",
       "EV-92fbbeb840a98e97",
       "EV-0df617a9a5ac727e",
-      "EV-63fdf001c22a0ed4",
       "EV-7fb25ff3d853c314",
       "EV-b796ba14c4eba861",
-      "EV-c7a2774b07554f5d",
-      "EV-e09bff5515b1896b",
-      "EV-f1418d9e3b1413b7",
-      "EV-c5b8faec223a4caf"
+      "EV-e09bff5515b1896b"
     ],
     "viewpointIds": [],
     "classificationRefs": [
-      "TX-use_case-cybersecurity",
       "TX-use_case-data_analysis",
-      "TX-technology-on_device",
-      "TX-technology-tool_use",
       "TX-industry-education"
     ],
     "relatedEntityIds": [
       "EN-c70eca6b0f88f44d"
     ],
-    "firstSeen": "2026-06-09",
-    "lastSeen": "2026-07-18",
+    "firstSeen": "2026-06-10",
+    "lastSeen": "2026-07-15",
     "relationIds": [
       "REL2-0e0ef4c13fd83477",
       "REL2-282eb0c70c8e4564",
       "REL2-6e39a930f3aa1688",
       "REL2-a3a488f8efd223ce",
-      "REL2-2993f4f400172e9c",
-      "REL2-3ee2424266e0f256",
       "REL2-8b46e6332bf1ea1b"
     ],
     "groupedEventIds": {
@@ -61,42 +51,19 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-debecca007e547d2",
         "EV-84226288807f817b",
         "EV-0347414d81e7f02e",
         "EV-92fbbeb840a98e97",
         "EV-0df617a9a5ac727e",
-        "EV-63fdf001c22a0ed4",
         "EV-7fb25ff3d853c314",
         "EV-b796ba14c4eba861",
-        "EV-c7a2774b07554f5d",
-        "EV-e09bff5515b1896b",
-        "EV-f1418d9e3b1413b7",
-        "EV-c5b8faec223a4caf"
+        "EV-e09bff5515b1896b"
       ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
     "timeline": [
-      {
-        "id": "EV-debecca007e547d2",
-        "dataDate": "2026-07-18",
-        "date": "2026-07-18",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进",
-        "displayTags": [],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d",
-          "EN-9d40760b37c15a83",
-          "EN-855bed02b965c12c",
-          "EN-729324072d368379"
-        ]
-      },
       {
         "id": "EV-84226288807f817b",
         "dataDate": "2026-07-15",
@@ -187,23 +154,6 @@
         ]
       },
       {
-        "id": "EV-63fdf001c22a0ed4",
-        "dataDate": "2026-07-02",
-        "date": "2026-07-02",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Claude Code v2.1.198 发布",
-        "displayTags": [],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d",
-          "EN-8218ed4e007b0ad1",
-          "EN-729324072d368379"
-        ]
-      },
-      {
         "id": "EV-7fb25ff3d853c314",
         "dataDate": "2026-07-01",
         "date": "2026-06-30",
@@ -248,38 +198,6 @@
         ]
       },
       {
-        "id": "EV-c7a2774b07554f5d",
-        "dataDate": "2026-06-10",
-        "date": "2026-06-10",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Anthropic 发布 Claude Fable 5 与 Mythos 5",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "id": "cybersecurity",
-            "dimensionName": "应用场景",
-            "name": "网络安全"
-          },
-          {
-            "dimensionId": "target_user",
-            "id": "consumer",
-            "dimensionName": "目标用户",
-            "name": "个人用户"
-          }
-        ],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d",
-          "EN-3a13916345b60fad",
-          "EN-b59c577ed73536c6",
-          "EN-9f15bb7e29e191eb",
-          "EN-729324072d368379"
-        ]
-      },
-      {
         "id": "EV-e09bff5515b1896b",
         "dataDate": "2026-06-10",
         "date": "2026-06-10",
@@ -309,75 +227,6 @@
           "EN-b59c577ed73536c6",
           "EN-729324072d368379",
           "EN-9f15bb7e29e191eb"
-        ]
-      },
-      {
-        "id": "EV-f1418d9e3b1413b7",
-        "dataDate": "2026-06-10",
-        "date": "2026-06-10",
-        "eventType": "model_release",
-        "eventTypeLabel": "模型发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Anthropic 发布 Claude Fable 5，首个面向公众的 Mythos 级模型",
-        "displayTags": [
-          {
-            "dimensionId": "use_case",
-            "id": "cybersecurity",
-            "dimensionName": "应用场景",
-            "name": "网络安全"
-          }
-        ],
-        "entityIds": [
-          "EN-c70eca6b0f88f44d",
-          "EN-3a13916345b60fad",
-          "EN-729324072d368379",
-          "EN-9f15bb7e29e191eb"
-        ]
-      },
-      {
-        "id": "EV-c5b8faec223a4caf",
-        "dataDate": "2026-06-09",
-        "date": "2026-06-09",
-        "eventType": "product_release",
-        "eventTypeLabel": "产品发布",
-        "eventGroup": "模型、产品与服务",
-        "status": "completed",
-        "statusLabel": "已完成",
-        "title": "Claude 支持 Apple Foundation Models 框架，推出新 Swift 包",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "model",
-            "dimensionName": "产品形态",
-            "name": "模型"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "tool_use",
-            "name": "工具调用"
-          },
-          {
-            "dimensionId": "technology",
-            "dimensionName": "技术",
-            "id": "on_device",
-            "name": "端侧"
-          },
-          {
-            "dimensionId": "deployment_model",
-            "id": "edge_device",
-            "dimensionName": "部署形态",
-            "name": "边缘与端侧"
-          }
-        ],
-        "entityIds": [
-          "EN-3a7bd3e2360a3d29",
-          "EN-c70eca6b0f88f44d",
-          "EN-96eebba49dbbf422",
-          "EN-41dcc2d4951f337b",
-          "EN-729324072d368379"
         ]
       }
     ],
@@ -699,7 +548,6 @@
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
-        "EN-98fdc0804bb472fe",
         "EN-830abc32d2a443c5",
         "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
@@ -712,16 +560,15 @@
         "EN-968e2d5b08687bf4",
         "EN-cb4754c48f8023d0",
         "EN-2c063f604e634100",
-        "EN-bb5b6487f881bbb1",
         "EN-d0a0acb9a5ef0560",
         "EN-e65e0f2695fa259d",
         "EN-34ec8666daf7b665",
         "EN-e4ffb7bd879b89da",
-        "EN-b59c577ed73536c6",
-        "EN-08013bb0b80d23f7",
         "EN-96eebba49dbbf422",
         "EN-b8c236d640d6a5fb",
-        "EN-d8494bb34d6ddc43"
+        "EN-d8494bb34d6ddc43",
+        "EN-b59c577ed73536c6",
+        "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
       "lastSeen": "2026-07-25"
@@ -730,7 +577,7 @@
   "relationships": [
     {
       "relationship_id": "REL2-0e0ef4c13fd83477",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -751,7 +598,7 @@
     },
     {
       "relationship_id": "REL2-282eb0c70c8e4564",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -772,7 +619,7 @@
     },
     {
       "relationship_id": "REL2-6e39a930f3aa1688",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -793,7 +640,7 @@
     },
     {
       "relationship_id": "REL2-a3a488f8efd223ce",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -810,44 +657,8 @@
       "status": "verified"
     },
     {
-      "relationship_id": "REL2-2993f4f400172e9c",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-c70eca6b0f88f44d",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-729324072d368379",
-      "object_type": "entity",
-      "event_id": "EV-c7a2774b07554f5d",
-      "claim_refs": [
-        "CL-0c2d8eedf393ff6e"
-      ],
-      "source_refs": [
-        "SA-688d4a3d24991b75"
-      ],
-      "data_date": "2026-06-10",
-      "status": "verified"
-    },
-    {
-      "relationship_id": "REL2-3ee2424266e0f256",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-c70eca6b0f88f44d",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-729324072d368379",
-      "object_type": "entity",
-      "event_id": "EV-f1418d9e3b1413b7",
-      "claim_refs": [
-        "CL-0dfe28151e772826"
-      ],
-      "source_refs": [
-        "SA-45a96a767247ca86"
-      ],
-      "data_date": "2026-06-10",
-      "status": "verified"
-    },
-    {
       "relationship_id": "REL2-8b46e6332bf1ea1b",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -855,8 +666,7 @@
       "object_type": "entity",
       "event_id": "EV-e09bff5515b1896b",
       "claim_refs": [
-        "CL-022ff08fc8204a5e",
-        "CL-0f37c2091158dc07"
+        "CL-022ff08fc8204a5e"
       ],
       "source_refs": [
         "SA-5648af9929156bbd"
@@ -866,113 +676,6 @@
     }
   ],
   "taxonomyNodes": [
-    {
-      "id": "TX-use_case-cybersecurity",
-      "name": "网络安全",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "cybersecurity",
-      "eventIds": [
-        "EV-9ddcfd9f61c25158",
-        "EV-6484904c176aa016",
-        "EV-c85011ca6a0389bf",
-        "EV-8be4676475a8d465",
-        "EV-0e84a2f49d765ce3",
-        "EV-d4c9326c53dd927a",
-        "EV-c81cb21337a9bb98",
-        "EV-9dab7fa55702e561",
-        "EV-53f4f2a34b3ce1b4",
-        "EV-b240fb11e65b018e",
-        "EV-bd508dbe4205774f",
-        "EV-ea6abb5378846a71",
-        "EV-6ce069b1845f5a52",
-        "EV-7c836c34e7cf36ee",
-        "EV-071c72225b8aaf80",
-        "EV-59229486408edb05",
-        "EV-597b8257a97b3d02",
-        "EV-5aaa4c6697606274",
-        "EV-cd067fa6f39fe828",
-        "EV-167f50a6f3134bd5",
-        "EV-2ffbe4560e69992a",
-        "EV-d07906b648eec63f",
-        "EV-d40a4e1b7a53cabe",
-        "EV-cc3b92fe233953cf",
-        "EV-3b5cb867fdaba28f",
-        "EV-a4b72879f3d73ea4",
-        "EV-1ec24a430911185c",
-        "EV-888b9eb73582e21c",
-        "EV-3ff2a155035d01e7",
-        "EV-482df8a8ef264238",
-        "EV-9110f23a7e60173e",
-        "EV-e792252690f98a22",
-        "EV-491e7b4b506ab3e3",
-        "EV-832fa2db95cfea6e",
-        "EV-7133e378762edda5",
-        "EV-c7a2774b07554f5d",
-        "EV-f1418d9e3b1413b7",
-        "EV-2eabd03665cbdef7",
-        "EV-a35a3871bf36fea2"
-      ],
-      "entityIds": [
-        "EN-871e6f4bf723cb1b",
-        "EN-72badbbdbf521cec",
-        "EN-c0cd6e83b6dd78a5",
-        "EN-634561e92b7593c3",
-        "EN-bbdefa2950f49882",
-        "EN-8d4321d936320802",
-        "EN-b5738c169b693bee",
-        "EN-2dc010636b9dce91",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
-        "EN-96eebba49dbbf422",
-        "EN-a23572554f6c861e",
-        "EN-8652f6cd9088f1fa",
-        "EN-fb2a436a76aa9fde",
-        "EN-9fbf261b62c1d7c0",
-        "EN-ea87a2bd84296f73",
-        "EN-4094a2b7125c7564",
-        "EN-cbc62794911ff31b",
-        "EN-e73b79a0b10f8cdb",
-        "EN-2ca3f7d58fdda0f5",
-        "EN-02be787a1aacea06",
-        "EN-62ce3c1a5a893a2c",
-        "EN-18f0900d6c487f59",
-        "EN-d9352ce019e77ab3",
-        "EN-ac123e56b0168ec2",
-        "EN-d5b8915a8c232010",
-        "EN-2b6e51bec93e86c1",
-        "EN-6f216f2ea5b7a13e",
-        "EN-31055a8d9856fce4",
-        "EN-204d4b18c9d78e88",
-        "EN-7839fb10a8f14c70",
-        "EN-ea3bd73e2b506e00",
-        "EN-52fc33ae4d101a5d",
-        "EN-fab30471ea65d627",
-        "EN-c4941bfc97ac7c2d",
-        "EN-3a7bd3e2360a3d29",
-        "EN-2c063f604e634100",
-        "EN-03b974cdbd22fe32",
-        "EN-784c7cd63a83ccaa",
-        "EN-8de7e44229714152",
-        "EN-5ce177312903c604",
-        "EN-d8494bb34d6ddc43",
-        "EN-9f15bb7e29e191eb",
-        "EN-c8185a1a8a6595ad",
-        "EN-ced86039c0ad6a7c",
-        "EN-3a13916345b60fad",
-        "EN-b59c577ed73536c6",
-        "EN-729324072d368379",
-        "EN-842a7da99bd249d4"
-      ],
-      "fdeIds": [
-        "FDE-b44bbcf1ee8caad0",
-        "FDE-f34ca7b021eae900",
-        "FDE-4edaa833d41055bd"
-      ],
-      "hardwareIds": [],
-      "firstSeen": "2026-04-16",
-      "lastSeen": "2026-07-24"
-    },
     {
       "id": "TX-use_case-data_analysis",
       "name": "数据分析",
@@ -1021,163 +724,6 @@
       "hardwareIds": [],
       "firstSeen": "2026-06-07",
       "lastSeen": "2026-07-23"
-    },
-    {
-      "id": "TX-technology-on_device",
-      "name": "端侧",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "on_device",
-      "eventIds": [
-        "EV-a15da1b52d939967",
-        "EV-736404028b8ad33e",
-        "EV-7263caa45bbf168e",
-        "EV-79913a2e72f0269b",
-        "EV-a5efa57f3f744425",
-        "EV-653cbce2ccc79f8b",
-        "EV-04efb4eecbb8125f",
-        "EV-8a9b12665a3e40a0",
-        "EV-712bb6241160c4c5",
-        "EV-f7b60c0c63403f8c",
-        "EV-e28e134345ea5f99",
-        "EV-a736c6c64d106475",
-        "EV-4e6dc3ec2b3f0bd6",
-        "EV-c5b8faec223a4caf",
-        "EV-4026c95d4c01b96e",
-        "EV-0e2a68efc19bfbaa",
-        "EV-0597e07d7e73051a",
-        "EV-08f736f61f2b46f3",
-        "EV-02186ed7885f68fe",
-        "EV-c0a94bb25d551db1",
-        "EV-5613946bdd578a26",
-        "EV-848bdd13f319c516",
-        "EV-dd902b603e2e3dbc",
-        "EV-7d4b4b8d4e3599d4",
-        "EV-f4876d2e1a20d87b"
-      ],
-      "entityIds": [
-        "EN-a35b80cf9d171015",
-        "EN-48bebf25e5bd5aca",
-        "EN-dca6ec9510fc0176",
-        "EN-b0532e1af75cc4ab",
-        "EN-8147e6fed86d42c1",
-        "EN-16fd849ce27f115b",
-        "EN-8d4321d936320802",
-        "EN-f5791343a13abc71",
-        "EN-9fbf261b62c1d7c0",
-        "EN-e21783b898b55a31",
-        "EN-b6fe9abdb194022b",
-        "EN-7a2f2aafb073c74e",
-        "EN-3309b3b14807f39a",
-        "EN-61a405a731497229",
-        "EN-f3cfedbe8428c9f7",
-        "EN-7df09a7717ef2feb",
-        "EN-c04bd5ebd10ab696",
-        "EN-50ba7ff15827787b",
-        "EN-bbdefa2950f49882",
-        "EN-1229af0aa3b0305e",
-        "EN-81e577740888ca6d",
-        "EN-968e2d5b08687bf4",
-        "EN-3a7bd3e2360a3d29",
-        "EN-b81c8201acfc7639",
-        "EN-c608c4787821de1b",
-        "EN-6f21a653c48f4f19",
-        "EN-12a81529bba89666",
-        "EN-5388bc10736a0eff",
-        "EN-2c348893efb2316e",
-        "EN-44a9bf3b11abea5c",
-        "EN-de6b71bf77ff4299",
-        "EN-c4ef31845ea79710",
-        "EN-96eebba49dbbf422",
-        "EN-ce635c4eabff5e4f",
-        "EN-f8ceb65dd1764cd4",
-        "EN-af3ceabbe048a291",
-        "EN-047364b9be67f665",
-        "EN-dd920a8cd166f486",
-        "EN-c70eca6b0f88f44d",
-        "EN-41dcc2d4951f337b",
-        "EN-729324072d368379",
-        "EN-e246a1f9a090075b",
-        "EN-1dc405a4cda895d0",
-        "EN-e07654c7cc29acbd",
-        "EN-c3ce0cc92b48bbd6",
-        "EN-54ef981ab82586b5",
-        "EN-80d387ccb3289295",
-        "EN-0899bccb1b028521",
-        "EN-b7dac8ddfad3bea8",
-        "EN-6f7ac1823da81d2e",
-        "EN-3dd90c2e1bf28b32",
-        "EN-5d7b7e77768bfdfc"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-22"
-    },
-    {
-      "id": "TX-technology-tool_use",
-      "name": "工具调用",
-      "nodeType": "technology",
-      "typeLabel": "技术",
-      "valueId": "tool_use",
-      "eventIds": [
-        "EV-baa76a4f03b84980",
-        "EV-97fdf068afbbe555",
-        "EV-09e1eafc857c79fd",
-        "EV-19bcfc6d7c1612cb",
-        "EV-0a9617a5118564db",
-        "EV-a8a8f26c5128d894",
-        "EV-29e069ac093f0e34",
-        "EV-653cbce2ccc79f8b",
-        "EV-8bf42c1816e772ba",
-        "EV-9496f90f3e808992",
-        "EV-2ffbe4560e69992a",
-        "EV-9c4b862020202f6c",
-        "EV-7449d239223d4928",
-        "EV-c5b8faec223a4caf",
-        "EV-d53cd33e8f541a65"
-      ],
-      "entityIds": [
-        "EN-7f90f96bd6306bff",
-        "EN-d8cb1acd1b39854a",
-        "EN-5388bc10736a0eff",
-        "EN-f1649339197f76d6",
-        "EN-2abf8289b2f2113f",
-        "EN-91901356a63794df",
-        "EN-81baf57e05f11276",
-        "EN-c0e7614761147db1",
-        "EN-e9dd8f4bd697492b",
-        "EN-c70eca6b0f88f44d",
-        "EN-3a9b395103419892",
-        "EN-bbdefa2950f49882",
-        "EN-8d4321d936320802",
-        "EN-085598c00f2aaccf",
-        "EN-f3cfedbe8428c9f7",
-        "EN-7df09a7717ef2feb",
-        "EN-c04bd5ebd10ab696",
-        "EN-50ba7ff15827787b",
-        "EN-9418d9e3d1e469cf",
-        "EN-ea3bd73e2b506e00",
-        "EN-e3863f813fe47240",
-        "EN-7d3194f79e645c42",
-        "EN-96eebba49dbbf422",
-        "EN-52fc33ae4d101a5d",
-        "EN-2c063f604e634100",
-        "EN-916a98f0fa2a39af",
-        "EN-d6d6e4e33c59b45e",
-        "EN-3a7bd3e2360a3d29",
-        "EN-41dcc2d4951f337b",
-        "EN-729324072d368379",
-        "EN-6fcba5d96a4fadfd",
-        "EN-630dc133336bc266",
-        "EN-ce635c4eabff5e4f",
-        "EN-c4bc2d00a42f220f",
-        "EN-0b9ca57f53ba758b"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-24"
     },
     {
       "id": "TX-industry-education",

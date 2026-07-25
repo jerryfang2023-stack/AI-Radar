@@ -57,7 +57,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current canonical event contract: EVENT-V1.1.
 - Current entity history contract: ENTITY-V1.0.
 - Current person-account review contract: PERSON-REVIEW-V1.0.
-- Current factual relationship contract: RELATION-V2.0.
+- Current factual relationship contract: RELATION-V2.1.
 - Current targeted historical collection contract: BACKFILL-V1.0.
 - Current tag taxonomy version: TAG-V4.0.
 - Current data-center rule source: `context/12-data-center-v4.md`.
@@ -114,7 +114,7 @@ If an old page rule conflicts with SITE-V4.2.0, delete or rebuild it instead of 
 | `context/04-qc-rules.md` | general quality gates |
 | `context/05-daily-monitoring.md` | V3 Raw / Pool monitoring context |
 | `context/06-execution-harness.md` | high-risk execution harness |
-| `context/07-v3-intelligence-generation-rules.md` | Raw / Pool / Card / relation / trend-candidate truth source |
+| `context/07-v3-intelligence-generation-rules.md` | Raw / Pool / Card / retained relation adapter rules; historical/manual trend-candidate rules only |
 | `context/08-v3-3-automation.md` | SITE-V4.2 GitHub / site / Obsidian sync automation loop |
 | `context/09-v3-3-current-action-index.md` | current V4 and compatibility action registry |
 | `context/10-v3-3-experience-automation.md` | action logging and retrospective automation |
@@ -160,18 +160,18 @@ Compatibility rules:
 - Card details must come from original source text, not old summaries or backend fields.
 - Missing frontstage fields must not fallback to backend fields.
 
-### Relationship Graph / Trend Candidate
+### Relationship Graph / Historical Trend Candidate Audit
 
 Read:
 
 1. `context/07-v3-intelligence-generation-rules.md`
 2. current Card files
-3. related relation / trend script
+3. related trend script only when the user explicitly requests a historical/manual trend review
 
 Rules:
 
 - Relationship graph uses Card nodes and source-backed edges.
-- Trend candidate is an internal candidate object, not a long-form publication route.
+- Trend candidates and explicit no-decision shells are historical/manual research artifacts, not daily production outputs or publication gates.
 - A single article, opinion, or funding event cannot form a trend.
 - Builders viewpoints must not be used as evidence.
 

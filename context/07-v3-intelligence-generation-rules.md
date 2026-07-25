@@ -1,18 +1,18 @@
 ---
 status: compatibility
-scope: v3-internal-card-trend-rules
+scope: v3-internal-card-relationship-rules
 version: V3.3.6.3-business-source-artifact-aggregation
-last_updated: 2026-07-17
+last_updated: 2026-07-25
 priority: current
 ---
 
-# V3 Raw / Pool / Card / Trend Rules
+# V3 Raw / Pool / Card Compatibility Rules
 
-This is the active rule source only for frozen V3 Card, trend, relationship, and downstream compatibility production. It is not a public page contract and is not the Data Center V4 truth source. V4 follows `context/12-data-center-v4.md` and the contracts under `agent-workflow/product/`.
+This is the active rule source only for V3 Card, relationship, and downstream compatibility production. Trend candidates are historical/manual research artifacts and are not part of daily production. It is not a public page contract and is not the Data Center V4 truth source. V4 follows `context/12-data-center-v4.md` and the contracts under `agent-workflow/product/`.
 
 Historical site rules, legacy content-output routes, legacy publication templates, legacy copy gates, and broad "Guanlan judgment" rules are not active execution sources for V3.
 
-V3 now has one core goal: preserve source-backed AI business evidence as internal compatibility Cards, then use those Cards as knowledge-base material for relationship graph, trend-candidate analysis, and downstream application projections.
+V3 now has one core goal: preserve source-backed AI business evidence as internal compatibility Cards, then use those Cards for the remaining relationship, operations, and Opportunity Map adapters listed in `agent-workflow/product/compatibility-retirement-v1.json`.
 
 ## 1. Current Outputs
 
@@ -22,7 +22,6 @@ V3 produces and preserves:
 - Pool evidence;
 - signal cards;
 - relationship graph inputs;
-- trend candidates.
 
 V3 does not require legacy content-output routes.
 
@@ -179,7 +178,7 @@ Daily business-signal target:
 - include vertical-industry cases, emerging-company financing, and concrete AI market-structure events when qualified evidence exists;
 - do not let large-company product news crowd out funding and cases during source repair, but do not use a Top10 or large-company-cap rule as a release gate.
 
-Relationship graph and trend-candidate generation use the full eligible Card set.
+The retained relationship adapter uses the full eligible Card set. An explicitly requested historical/manual trend review may also read that set, but it is not part of daily production.
 
 Card title rules:
 
@@ -253,9 +252,9 @@ The internal relationship projection should remain structured graph data, not lo
 
 Opinion content is not part of the current V3 business-signal relationship graph.
 
-## 8. Trend Candidate Rules
+## 8. Historical / Manual Trend Candidate Rules
 
-Trend candidate is an internal candidate object, not a long-form publication route.
+Trend candidate is a historical/manual internal research object, not a long-form publication route or a daily production requirement. Daily workflows do not create trend candidates or explicit no-decision shells. Use these rules only when the user explicitly requests a historical or manual trend-candidate review.
 
 Do not create a trend candidate from:
 

@@ -269,7 +269,13 @@ function summaryFor(reviews, totalItems, failures = []) {
 }
 
 function reportObject(registry, catalogItems, reviews, failures = []) {
-  const normalizedReviews = reviews.map(normalizeStoredReview);
+  const currentEntityIds = new Set(catalogItems.map((item) => item.entity_id));
+  const reviewById = new Map();
+  for (const review of reviews) {
+    if (!currentEntityIds.has(review?.entity_id)) continue;
+    reviewById.set(review.entity_id, normalizeStoredReview(review));
+  }
+  const normalizedReviews = [...reviewById.values()];
   return {
     meta: {
       schema_version: promptVersion,

@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -27,10 +27,15 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-b3b7e1c8e2be9ec3"
+    ],
     "firstSeen": "2026-06-07",
     "lastSeen": "2026-06-23",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-410e57ca638cd86a",
+      "REL2-72f3ef1a4091f037"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -58,7 +63,8 @@
         "displayTags": [],
         "entityIds": [
           "EN-9494377efaa0651b",
-          "EN-790b8bc0b57d7a37"
+          "EN-790b8bc0b57d7a37",
+          "EN-b3b7e1c8e2be9ec3"
         ]
       },
       {
@@ -92,14 +98,77 @@
         "displayTags": [],
         "entityIds": [
           "EN-9494377efaa0651b",
-          "EN-790b8bc0b57d7a37"
+          "EN-790b8bc0b57d7a37",
+          "EN-b3b7e1c8e2be9ec3"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-b3b7e1c8e2be9ec3",
+      "name": "极摩客",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cbb1cc90380d57a7",
+        "EV-385fee01e808b5fa",
+        "EV-3601a1d7d507cd18"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-790b8bc0b57d7a37"
+      ],
+      "firstSeen": "2026-06-07",
+      "lastSeen": "2026-06-23"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-410e57ca638cd86a",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-b3b7e1c8e2be9ec3",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-790b8bc0b57d7a37",
+      "object_type": "entity",
+      "event_id": "EV-cbb1cc90380d57a7",
+      "claim_refs": [
+        "CL-0993390da9398403",
+        "CL-a4bafacf7d7e205d"
+      ],
+      "source_refs": [
+        "SA-4f464cb0fe8377cb"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-72f3ef1a4091f037",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-b3b7e1c8e2be9ec3",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-790b8bc0b57d7a37",
+      "object_type": "entity",
+      "event_id": "EV-3601a1d7d507cd18",
+      "claim_refs": [
+        "CL-9e5ec7cadaae1881"
+      ],
+      "source_refs": [
+        "SA-438acc8b4f5def02"
+      ],
+      "data_date": "2026-06-08",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

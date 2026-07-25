@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-d15ff95eec38ec81"
+    ],
     "firstSeen": "2026-07-13",
     "lastSeen": "2026-07-13",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-972ca0bf3348defb"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -60,8 +64,49 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-d15ff95eec38ec81",
+      "name": "小鹏汽车",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-7826bf7fecafead9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-4ff52fdf48b545e3"
+      ],
+      "firstSeen": "2026-07-13",
+      "lastSeen": "2026-07-13"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-972ca0bf3348defb",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-d15ff95eec38ec81",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4ff52fdf48b545e3",
+      "object_type": "entity",
+      "event_id": "EV-7826bf7fecafead9",
+      "claim_refs": [
+        "CL-940338f400e9a2d2"
+      ],
+      "source_refs": [
+        "SA-c8fbfd18749106aa"
+      ],
+      "data_date": "2026-07-13",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

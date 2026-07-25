@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -12,10 +12,12 @@
   },
   "entity": {
     "id": "EN-0b706b4b95ba647c",
-    "name": "ESL64-O",
+    "name": "云燧 ESL64-O 超节点",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "ESL64-O"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -25,14 +27,10 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [
-      "EN-4dbe391b8fcf977a"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-07-19",
     "lastSeen": "2026-07-20",
-    "relationIds": [
-      "REL2-5903d56f8cf2cfdd"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -72,63 +70,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-4dbe391b8fcf977a",
-      "name": "ZTE",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "中兴"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-4b8064b1139e1724",
-        "EV-434dcf1813a84ead",
-        "EV-218c2f6ecf3c369f",
-        "EV-345c8a2cc00fe8ca",
-        "EV-7256017056b81bbe"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-retail_ecommerce",
-        "TX-use_case-robotics_automation",
-        "TX-technology-embodied_ai"
-      ],
-      "relatedEntityIds": [
-        "EN-0b706b4b95ba647c"
-      ],
-      "firstSeen": "2026-07-03",
-      "lastSeen": "2026-07-20"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-5903d56f8cf2cfdd",
-      "relationship_version": "RELATION-V2.0",
-      "subject_ref": "EN-4dbe391b8fcf977a",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-0b706b4b95ba647c",
-      "object_type": "entity",
-      "event_id": "EV-218c2f6ecf3c369f",
-      "claim_refs": [
-        "CL-bef992849f6c8110",
-        "CL-4acaacad906c6cc7",
-        "CL-23db5f68b34959d3",
-        "CL-043447d9bafb0170"
-      ],
-      "source_refs": [
-        "SA-0729ccc28efa48d9"
-      ],
-      "data_date": "2026-07-20",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": [

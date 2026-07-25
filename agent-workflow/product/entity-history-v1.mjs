@@ -1,7 +1,7 @@
 import crypto from "node:crypto";
 
 export const ENTITY_HISTORY_VERSION = "ENTITY-V1.0";
-export const RELATIONSHIP_VERSION = "RELATION-V2.0";
+export const RELATIONSHIP_VERSION = "RELATION-V2.1";
 
 const ENTITY_TYPE_LABELS = {
   organization_candidate: "公司与机构",
@@ -509,6 +509,29 @@ function mergeViewpointPeople(registry, viewpointData = {}, reviewDecisions = {}
   }
 }
 
+function enrichReviewedPeople(registry, reviewDecisions = {}) {
+  const decisionById = new Map(acceptedReviewDecisions(reviewDecisions).map((decision) => [decision.entity_id, decision]));
+  for (const entity of registry.values()) {
+    if (entity.entityType !== "person_candidate") continue;
+    const decision = decisionById.get(entity.id);
+    const organizationNames = unique(decision?.canonical?.organization_names || []);
+    const roleTitle = clean(decision?.canonical?.role_title);
+    if (organizationNames.length) {
+      entity.organizationNames = organizationNames;
+      entity.organization = organizationNames[0];
+    }
+    if (roleTitle) entity.roleTitle = roleTitle;
+    const affiliationEvidence = decision?.evidence?.secondary_sources || [];
+    if (affiliationEvidence.length && (organizationNames.length || roleTitle)) {
+      entity.affiliationEvidence = affiliationEvidence.map((source) => ({
+        sourceId: source.source_id,
+        sourceUrl: source.source_url,
+        quote: source.quote
+      }));
+    }
+  }
+}
+
 function buildTaxonomyNodes(events, fdeRecords, hardwareRecords) {
   const nodes = new Map();
   for (const event of events) {
@@ -556,6 +579,34 @@ function buildTypedRelationships({ registry, events, fdeRecords, hardwareRecords
   }
   const eventsById = new Map(events.map((event) => [event.id, event]));
 
+  const personOrganizationEvent = (event, person, organization, predicate) => {
+    const actionPattern = predicate === "joins"
+      ? /(?:加入|加盟|跳槽(?:至)?|join(?:ed|s|ing)?)/giu
+      : predicate === "leaves"
+        ? /(?:离开|离职|出走|left|leav(?:e|es|ing))/giu
+        : /(?:创立|创办|成立|found(?:ed|s|ing)?|unveil(?:ed|s)?|launch(?:ed|es)?)/giu;
+    const matchingClaims = (event.claims || []).filter((claim) => {
+      const quote = clean(claim.quote);
+      if (!entityMentioned(quote, person) || !entityMentioned(quote, organization)) return false;
+      const personPositions = [person.name, ...(person.aliases || [])].flatMap((name) => exactNamePositions(quote, name));
+      const organizationPositions = [organization.name, ...(organization.aliases || [])].flatMap((name) => exactNamePositions(quote, name));
+      const actionPositions = [...quote.matchAll(actionPattern)].map((match) => match.index || 0);
+      if (predicate === "joins") return actionPositions.some((action) => organizationPositions.some((position) => position > action && position - action <= 80));
+      if (predicate === "leaves") {
+        const joinPositions = [...quote.matchAll(/(?:加入|加盟|跳槽(?:至)?|join(?:ed|s|ing)?)/giu)].map((match) => match.index || 0);
+        return actionPositions.some((action) => organizationPositions.some((position) =>
+          (position < action && action - position <= 160)
+          || (position > action && position - action <= 80 && !joinPositions.some((join) => join > action && join < position))
+        ));
+      }
+      return actionPositions.some((action) =>
+        personPositions.some((position) => position <= action && action - position <= 180)
+        && organizationPositions.some((position) => position > action && position - action <= 200)
+      );
+    });
+    return matchingClaims.length ? { ...event, claims: matchingClaims } : null;
+  };
+
   const add = (row) => {
     if (!row.subject_ref || !row.object_ref || !row.event_id || !row.claim_refs.length || !row.source_refs.length) return;
     if (row.subject_ref === row.object_ref) return;
@@ -568,12 +619,29 @@ function buildTypedRelationships({ registry, events, fdeRecords, hardwareRecords
     const eventEntities = (event.entityIds || []).map((id) => registry.get(id)).filter(Boolean);
     const organizations = eventEntities.filter((entity) => entity.entityType === "organization_candidate" && entity.verificationStatus === "verified");
     const products = eventEntities.filter((entity) => entity.entityType === "product_candidate" && entity.verificationStatus === "verified");
+    const people = eventEntities.filter((entity) => entity.entityType === "person_candidate" && entity.verificationStatus === "verified");
     const primary = primaryOrganization(event, organizations);
     const explicitPrimary = primaryOrganization(event, organizations, false) || claimPublisherOrganization(event, organizations);
 
     if (["model_release", "product_release", "hardware_product"].includes(event.eventType) && hasPublicationAction(event) && explicitPrimary) {
       for (const product of products.filter((item) => claimPublishesProduct(event, explicitPrimary, item, organizations))) {
         add(relationshipRow({ subjectRef: explicitPrimary.id, subjectType: "entity", predicate: "publishes", objectRef: product.id, objectType: "entity", event }));
+      }
+    }
+    if (["model_release", "product_release", "hardware_product"].includes(event.eventType) && hasPublicationAction(event)) {
+      for (const person of people) {
+        for (const product of products.filter((item) => claimPublishesProduct(event, person, item, organizations))) {
+          add(relationshipRow({ subjectRef: person.id, subjectType: "entity", predicate: "publishes", objectRef: product.id, objectType: "entity", event }));
+        }
+      }
+    }
+
+    for (const person of people) {
+      for (const organization of organizations) {
+        for (const predicate of ["joins", "leaves", "founds"]) {
+          const evidenceEvent = personOrganizationEvent(event, person, organization, predicate);
+          if (evidenceEvent) add(relationshipRow({ subjectRef: person.id, subjectType: "entity", predicate, objectRef: organization.id, objectType: "entity", event: evidenceEvent }));
+        }
       }
     }
 
@@ -661,6 +729,7 @@ function buildTypedRelationships({ registry, events, fdeRecords, hardwareRecords
   return [...relationships.values()]
     .filter((relation) => relation.predicate !== "publishes"
       || !reviewedPublisherAllowlist.has(relation.object_ref)
+      || registry.get(relation.subject_ref)?.entityType === "person_candidate"
       || reviewedPublisherAllowlist.get(relation.object_ref).has(relation.subject_ref))
     .sort((a, b) => b.data_date.localeCompare(a.data_date) || a.relationship_id.localeCompare(b.relationship_id));
 }
@@ -732,6 +801,7 @@ export function buildEntityHistoryService({
   const reviewed = applyEntityReviewDecisions(entityRows, events, reviewDecisions);
   const registry = buildCanonicalRegistry(reviewed.entityRows, reviewed.events);
   mergeViewpointPeople(registry, viewpointData, reviewDecisions);
+  enrichReviewedPeople(registry, reviewDecisions);
   const taxonomyNodes = buildTaxonomyNodes(reviewed.events, fdeRecords, hardwareRecords);
   const relationships = buildTypedRelationships({ registry, events: reviewed.events, fdeRecords, hardwareRecords, taxonomyNodes, reviewDecisions: reviewed.decisions, entityIdRemap: reviewed.remap });
   const profiles = buildProfiles({ registry, events: reviewed.events, relationships, taxonomyNodes, viewpointData });

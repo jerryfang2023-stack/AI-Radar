@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-78c72c4f2487a93f"
+    ],
     "firstSeen": "2026-07-24",
     "lastSeen": "2026-07-25",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-477224593f1439a8"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -60,8 +64,52 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-78c72c4f2487a93f",
+      "name": "微星",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-171304f50961d182",
+        "EV-62a2246aa3df0438"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-20f160b5a3e897c8"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-25"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-477224593f1439a8",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-78c72c4f2487a93f",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-20f160b5a3e897c8",
+      "object_type": "entity",
+      "event_id": "EV-171304f50961d182",
+      "claim_refs": [
+        "CL-62f6f0df28cc2306",
+        "CL-7554414855aec9ca",
+        "CL-eb7c9a61b266aa60"
+      ],
+      "source_refs": [
+        "SA-067c6fdb9173d31b"
+      ],
+      "data_date": "2026-07-25",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -15,7 +15,9 @@
     "name": "Claude Science",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "Claude Science on Tuesday"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -140,8 +142,7 @@
         ],
         "entityIds": [
           "EN-c70eca6b0f88f44d",
-          "EN-fab30471ea65d627",
-          "EN-bb5b6487f881bbb1"
+          "EN-fab30471ea65d627"
         ]
       },
       {
@@ -479,7 +480,6 @@
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
-        "EN-98fdc0804bb472fe",
         "EN-830abc32d2a443c5",
         "EN-240389f4b730bad4",
         "EN-8d4321d936320802",
@@ -492,16 +492,15 @@
         "EN-968e2d5b08687bf4",
         "EN-cb4754c48f8023d0",
         "EN-2c063f604e634100",
-        "EN-bb5b6487f881bbb1",
         "EN-d0a0acb9a5ef0560",
         "EN-e65e0f2695fa259d",
         "EN-34ec8666daf7b665",
         "EN-e4ffb7bd879b89da",
-        "EN-b59c577ed73536c6",
-        "EN-08013bb0b80d23f7",
         "EN-96eebba49dbbf422",
         "EN-b8c236d640d6a5fb",
-        "EN-d8494bb34d6ddc43"
+        "EN-d8494bb34d6ddc43",
+        "EN-b59c577ed73536c6",
+        "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
       "lastSeen": "2026-07-25"
@@ -510,7 +509,7 @@
   "relationships": [
     {
       "relationship_id": "REL2-12eaf5c2c27cba5d",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -519,6 +518,7 @@
       "event_id": "EV-d40a4e1b7a53cabe",
       "claim_refs": [
         "CL-79962ec5841d32d3",
+        "CL-64c92b66b45f56e0",
         "CL-8f57bdb2bc1e63f6",
         "CL-d131a3ee320475df"
       ],
@@ -530,7 +530,7 @@
     },
     {
       "relationship_id": "REL2-a031368465846549",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -539,8 +539,7 @@
       "event_id": "EV-13e06fc12cc3fb7c",
       "claim_refs": [
         "CL-262b9c1886051391",
-        "CL-4ba1eb0e0182bccd",
-        "CL-6c83de77e3224efa"
+        "CL-4ba1eb0e0182bccd"
       ],
       "source_refs": [
         "SA-ddd5b344fc8bbc1e"
@@ -550,7 +549,7 @@
     },
     {
       "relationship_id": "REL2-ccc719d2084a4b28",
-      "relationship_version": "RELATION-V2.0",
+      "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
       "subject_type": "entity",
       "predicate": "publishes",
@@ -558,10 +557,7 @@
       "object_type": "entity",
       "event_id": "EV-01212a5ad9db6a20",
       "claim_refs": [
-        "CL-af18b14b62596ebc",
-        "CL-a2a2c126f0728a55",
-        "CL-1a8e48107a085be8",
-        "CL-c7b28e72ae87693e"
+        "CL-1a8e48107a085be8"
       ],
       "source_refs": [
         "SA-8f8bacf8e42f9cb1"
@@ -627,9 +623,9 @@
         "EN-5b3767eb23d5e4ed",
         "EN-ea3bd73e2b506e00",
         "EN-6d57b22ebbd2bd90",
+        "EN-240389f4b730bad4",
         "EN-7c3482959a6cdd3f",
         "EN-968e2d5b08687bf4",
-        "EN-240389f4b730bad4",
         "EN-ef705dd2f374e840",
         "EN-f48a4090493d2b5e",
         "EN-f9ae78c09ff308f9",
@@ -643,7 +639,6 @@
         "EN-1d79127e9d90e89b",
         "EN-bc77259c5d2eb341",
         "EN-fab30471ea65d627",
-        "EN-bb5b6487f881bbb1",
         "EN-4adc2faea521b1f1",
         "EN-c857d09db23e6822",
         "EN-cb4754c48f8023d0",
@@ -658,15 +653,15 @@
         "EN-e2a93bc5095dec6c",
         "EN-0decbc3b45f73b2b",
         "EN-45cbca5f78f1ef44",
+        "EN-8da473e7fc7e1edf",
         "EN-b57c95289680078c",
         "EN-2b6e51bec93e86c1",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
         "EN-1ecf93c539fcffca",
         "EN-6fcba5d96a4fadfd",
-        "EN-630dc133336bc266",
-        "EN-c4bc2d00a42f220f",
-        "EN-0b9ca57f53ba758b"
+        "EN-0b9ca57f53ba758b",
+        "EN-c4bc2d00a42f220f"
       ],
       "fdeIds": [
         "FDE-2dda1b977721f467",
@@ -748,7 +743,6 @@
         "EN-e73b79a0b10f8cdb",
         "EN-2ca3f7d58fdda0f5",
         "EN-02be787a1aacea06",
-        "EN-62ce3c1a5a893a2c",
         "EN-18f0900d6c487f59",
         "EN-d9352ce019e77ab3",
         "EN-ac123e56b0168ec2",
@@ -765,16 +759,13 @@
         "EN-3a7bd3e2360a3d29",
         "EN-2c063f604e634100",
         "EN-03b974cdbd22fe32",
-        "EN-784c7cd63a83ccaa",
         "EN-8de7e44229714152",
-        "EN-5ce177312903c604",
         "EN-d8494bb34d6ddc43",
         "EN-9f15bb7e29e191eb",
         "EN-c8185a1a8a6595ad",
         "EN-ced86039c0ad6a7c",
         "EN-3a13916345b60fad",
         "EN-b59c577ed73536c6",
-        "EN-729324072d368379",
         "EN-842a7da99bd249d4"
       ],
       "fdeIds": [

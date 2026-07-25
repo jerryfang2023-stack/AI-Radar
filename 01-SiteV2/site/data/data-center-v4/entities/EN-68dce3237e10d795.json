@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -15,7 +15,9 @@
     "name": "ACT-2",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "Robotics ACT-2"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -27,10 +29,14 @@
     "classificationRefs": [
       "TX-use_case-robotics_automation"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-e2c64fbbaf48eeb2"
+    ],
     "firstSeen": "2026-07-19",
     "lastSeen": "2026-07-19",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-56c0b9504524f56a"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -63,15 +69,58 @@
         ],
         "entityIds": [
           "EN-e2c64fbbaf48eeb2",
-          "EN-68dce3237e10d795",
-          "EN-9b07ac3374166b76"
+          "EN-68dce3237e10d795"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-e2c64fbbaf48eeb2",
+      "name": "Sunday Robotics",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-73da0805f2a2705a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [
+        "EN-68dce3237e10d795"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-19"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-56c0b9504524f56a",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-e2c64fbbaf48eeb2",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-68dce3237e10d795",
+      "object_type": "entity",
+      "event_id": "EV-73da0805f2a2705a",
+      "claim_refs": [
+        "CL-24e2ebe5e7237190",
+        "CL-223c0fcb1f49a1e2"
+      ],
+      "source_refs": [
+        "SA-9ea509247e81c2a8"
+      ],
+      "data_date": "2026-07-19",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-use_case-robotics_automation",
@@ -146,20 +195,17 @@
         "EN-0bd85984211bd173",
         "EN-240389f4b730bad4",
         "EN-8d57f84bd1847b24",
-        "EN-4cbf88b0da5d15f8",
         "EN-593d0361124f348f",
         "EN-843e746333671ab1",
         "EN-a96df57737b74def",
         "EN-e2c64fbbaf48eeb2",
         "EN-68dce3237e10d795",
-        "EN-9b07ac3374166b76",
         "EN-0e6e48aba1669631",
         "EN-d77c36c05230024c",
         "EN-be548deba4a093d7",
         "EN-53874092e000069b",
         "EN-9c8ae69b84f21a2e",
         "EN-f0da91960830b394",
-        "EN-505ff8a27618ef39",
         "EN-c51e27d8efcff21f",
         "EN-dbd6a2f6ddb95ca7",
         "EN-954dc5d6516f127c",
@@ -167,19 +213,16 @@
         "EN-e3b1bf3dab957ffe",
         "EN-cbc62794911ff31b",
         "EN-a1b0d8a938903dc7",
-        "EN-2b119dc14de9478d",
         "EN-522d3edeb64a7ca4",
         "EN-c608c4787821de1b",
         "EN-101a515191c6be9e",
         "EN-8afd897b5b887b06",
         "EN-4d8ee3ec190ebf35",
-        "EN-920510199770f4d6",
         "EN-994f9b7ac2d11473",
         "EN-30081094f2a8c83d",
         "EN-4e7e886400fe6a83",
         "EN-75fe8aaf5a7e3a7e",
         "EN-6fcba5d96a4fadfd",
-        "EN-7d5f17368c04f04c",
         "EN-0d049cd1e9f619f9",
         "EN-7f6333102da9e8bd",
         "EN-5e1fcba4c9f1cf69",

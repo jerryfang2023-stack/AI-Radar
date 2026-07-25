@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -33,7 +33,6 @@
       "EN-53874092e000069b",
       "EN-9c8ae69b84f21a2e",
       "EN-f0da91960830b394",
-      "EN-505ff8a27618ef39",
       "EN-3c6d89173e6636d7",
       "EN-7117fa8d72fb99b9",
       "EN-24dcf762a3ebce39",
@@ -806,7 +805,8 @@
         "EN-18f0900d6c487f59",
         "EN-92af3ce2fb97edf3",
         "EN-d56aa2f9908f566a",
-        "EN-085598c00f2aaccf"
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-07-22"
@@ -817,7 +817,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [],
-      "verificationStatus": "candidate",
+      "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
@@ -829,7 +829,9 @@
         "TX-technology-vision_language",
         "TX-use_case-robotics_automation"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-843e746333671ab1"
+      ],
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-22"
     },
@@ -851,7 +853,9 @@
         "TX-technology-vision_language",
         "TX-use_case-robotics_automation"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-593d0361124f348f"
+      ],
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-22"
     },
@@ -867,14 +871,17 @@
       ],
       "eventIds": [
         "EV-7fe139b107f9adc6",
+        "EV-1a073cd22d1bfa59",
         "EV-6a6ff349579765ad"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-vision_language",
         "TX-use_case-robotics_automation"
       ],
       "relatedEntityIds": [
+        "EN-f0da91960830b394",
         "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-05-18",
@@ -945,7 +952,9 @@
       "name": "Hy-Embodied-VLM-1.0",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [],
+      "aliases": [
+        "VLM Hy-Embodied-VLM-1.0"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -958,29 +967,9 @@
         "TX-technology-vision_language",
         "TX-use_case-robotics_automation"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-17",
-      "lastSeen": "2026-07-18"
-    },
-    {
-      "id": "EN-505ff8a27618ef39",
-      "name": "VLM Hy-Embodied-VLM-1.0",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
+      "relatedEntityIds": [
+        "EN-53874092e000069b"
       ],
-      "eventIds": [
-        "EV-7fe139b107f9adc6"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-vision_language",
-        "TX-use_case-robotics_automation"
-      ],
-      "relatedEntityIds": [],
       "firstSeen": "2026-07-17",
       "lastSeen": "2026-07-18"
     },
@@ -1143,7 +1132,6 @@
       "relatedEntityIds": [
         "EN-607964040e4b62e0",
         "EN-eb732565c71e6b85",
-        "EN-3a7bd3e2360a3d29",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"

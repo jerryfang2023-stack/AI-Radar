@@ -21,6 +21,7 @@ const cases = [
   ["data-center.html?view=community", "data-center.html?view=community"],
   ["data-center.html?view=viewpoints", "data-center.html?view=viewpoints"],
   ["data-center.html?view=index", "data-center.html?view=index"],
+  ["data-center.html?view=relations", "data-center.html?view=relations"],
   [`data-center.html?view=index&detail=entity&id=${encodeURIComponent(smokeEntity.id)}`, "data-center.html?view=index"],
   [`data-center.html?view=index&detail=taxonomy&id=${encodeURIComponent(smokeTaxonomy.id)}`, "data-center.html?view=index"],
   ["intelligence-map.html", "intelligence-map.html"],

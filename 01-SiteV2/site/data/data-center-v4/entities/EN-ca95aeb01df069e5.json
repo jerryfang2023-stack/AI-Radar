@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -13,8 +13,8 @@
   "entity": {
     "id": "EN-ca95aeb01df069e5",
     "name": "OpenBMB",
-    "entityType": "product_candidate",
-    "typeLabel": "产品、模型与服务",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
     "aliases": [],
     "verificationStatus": "verified",
     "datasetScopes": [
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-b076867237fbeb34"
+    ],
     "firstSeen": "2026-07-20",
     "lastSeen": "2026-07-20",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-da73f00159d1a794"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -62,8 +66,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-b076867237fbeb34",
+      "name": "MiniCPM5-1B",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b20bf10af759bd43"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-ca95aeb01df069e5"
+      ],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-20"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-da73f00159d1a794",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-ca95aeb01df069e5",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-b076867237fbeb34",
+      "object_type": "entity",
+      "event_id": "EV-b20bf10af759bd43",
+      "claim_refs": [
+        "CL-b3d90d07f2887208",
+        "CL-28867b44009cc25a",
+        "CL-448a762071f9b2e5"
+      ],
+      "source_refs": [
+        "SA-251416540fd3f08b"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-technology-video_generation"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-47c1e53c427aafb4"
+    ],
     "firstSeen": "2026-06-22",
     "lastSeen": "2026-06-23",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-1ae7beae397adb76"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -70,8 +74,54 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-47c1e53c427aafb4",
+      "name": "阿里巴巴",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-473f852b374d8b1c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46"
+      ],
+      "firstSeen": "2026-06-22",
+      "lastSeen": "2026-06-23"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-1ae7beae397adb76",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-47c1e53c427aafb4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-2daac3672aeafcbd",
+      "object_type": "entity",
+      "event_id": "EV-473f852b374d8b1c",
+      "claim_refs": [
+        "CL-bbcf707867f201c2",
+        "CL-fc9ca608d16b9e92",
+        "CL-c0453e0ddf222c2c"
+      ],
+      "source_refs": [
+        "SA-2a6fddf2020cbec2"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-video_generation",
@@ -99,7 +149,6 @@
         "EN-c9e6168149dd7cf6",
         "EN-92af3ce2fb97edf3",
         "EN-ec1c8f558ff61e34",
-        "EN-d83624eb3ab9192e",
         "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",

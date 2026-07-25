@@ -23,3 +23,10 @@ test("product extraction preserves exact branded names while dropping headline s
   assert.deepEqual(extract("OpenAI releases GPT-5.6 amid US AI regulatory drama", ["OpenAI"]), ["GPT-5.6"]);
   assert.deepEqual(extract("1Password has launched 1Password for Claude", ["1Password"]), ["1Password for Claude"]);
 });
+
+test("product extraction rejects reports and dates and folds software versions into the main product", () => {
+  assert.deepEqual(extract("2026 Creator Toolkit Report"), []);
+  assert.deepEqual(extract("February 2026"), []);
+  assert.deepEqual(extract("Announces General Availability"), []);
+  assert.deepEqual(extract("Anthropic releases Claude Code v2.1.219", ["Anthropic"]), ["Claude Code"]);
+});

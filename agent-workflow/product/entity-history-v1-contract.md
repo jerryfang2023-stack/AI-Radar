@@ -3,7 +3,7 @@
 Status: current
 Product version: `SITE-V4.2.0-entity-history`
 Entity version: `ENTITY-V1.0`
-Relationship version: `RELATION-V2.0`
+Relationship version: `RELATION-V2.1`
 
 ## Purpose
 
@@ -19,7 +19,7 @@ Entity History is a rebuildable serving projection over accepted Data Center V4 
 
 ## Relationship boundary
 
-Every public `RELATION-V2.0` row must have:
+Every public `RELATION-V2.1` row must have:
 
 - stable subject and object references;
 - an allowed factual predicate;
@@ -28,7 +28,7 @@ Every public `RELATION-V2.0` row must have:
 - one or more SourceArtifact references;
 - the event data date.
 
-Allowed predicates are `publishes`, `partners_with`, `acquires`, `serves`, `deployed_in`, and `supplies_hardware_to`. Tags and facet co-occurrence cannot independently create a relationship.
+Allowed predicates are `publishes`, `partners_with`, `acquires`, `serves`, `deployed_in`, `supplies_hardware_to`, `joins`, `leaves`, and `founds`. Tags and facet co-occurrence cannot independently create a relationship. Person-to-organization edges require an accepted event and a Claim that explicitly names both endpoints and the join, leave, or founding action.
 
 ## Catalog review boundary
 

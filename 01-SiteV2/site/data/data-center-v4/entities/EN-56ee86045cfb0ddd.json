@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -31,10 +31,14 @@
       "TX-industry-manufacturing",
       "TX-industry-healthcare_life_sciences"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-4a639cb888a15d75"
+    ],
     "firstSeen": "2026-04-13",
     "lastSeen": "2026-07-14",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-fd7cac6243428f79"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -80,15 +84,68 @@
         "entityIds": [
           "EN-4a639cb888a15d75",
           "EN-96eebba49dbbf422",
-          "EN-56ee86045cfb0ddd",
-          "EN-9dde0c2d375060f6"
+          "EN-56ee86045cfb0ddd"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-4a639cb888a15d75",
+      "name": "Supermicro",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-72e7f5cf283f16b8",
+        "EV-f2b2460c0273e725",
+        "EV-dd62847548bb6ae3",
+        "EV-34929bdd016dc8d6",
+        "EV-196c28aaa71dd6d5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-fine_tuning"
+      ],
+      "relatedEntityIds": [
+        "EN-56ee86045cfb0ddd",
+        "EN-8d4321d936320802"
+      ],
+      "firstSeen": "2025-03-18",
+      "lastSeen": "2026-07-23"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-fd7cac6243428f79",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-4a639cb888a15d75",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-56ee86045cfb0ddd",
+      "object_type": "entity",
+      "event_id": "EV-dd62847548bb6ae3",
+      "claim_refs": [
+        "CL-71e2abe848866c02",
+        "CL-5276acf634a2cdf7",
+        "CL-55659ee9c4f25cec"
+      ],
+      "source_refs": [
+        "SA-e8c1cd57c96e6287"
+      ],
+      "data_date": "2026-07-14",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-industry-retail_ecommerce",
@@ -143,7 +200,6 @@
         "EN-e274048227f164dc",
         "EN-1bf93b12e68cac56",
         "EN-d9b1d7819af92e77",
-        "EN-151013fb8438c046",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-5388bc10736a0eff",
@@ -151,7 +207,6 @@
         "EN-5e1fcba4c9f1cf69",
         "EN-94ff75465b1afa65",
         "EN-3a7bd3e2360a3d29",
-        "EN-40e307d789f77264",
         "EN-1924fff8eb4d54ae",
         "EN-61cce404a45c3545",
         "EN-2a920347dfcf07a7",
@@ -159,8 +214,7 @@
         "EN-2dc010636b9dce91",
         "EN-23b979df49741c93",
         "EN-4a639cb888a15d75",
-        "EN-56ee86045cfb0ddd",
-        "EN-9dde0c2d375060f6"
+        "EN-56ee86045cfb0ddd"
       ],
       "fdeIds": [
         "FDE-62f660a9a90bc3f6",
@@ -263,7 +317,6 @@
         "EN-94c93b5ab886f2d9",
         "EN-d7aba0f660c463d8",
         "EN-e58ee91f1d57df05",
-        "EN-3fd1b8ed094cd712",
         "EN-8f451ae7730ddb67",
         "EN-ce635c4eabff5e4f",
         "EN-ab9e3beebd83960d",
@@ -273,7 +326,6 @@
         "EN-23b979df49741c93",
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
-        "EN-9dde0c2d375060f6",
         "EN-cbc62794911ff31b",
         "EN-a614180064f7ef60",
         "EN-3a7bd3e2360a3d29",
@@ -364,24 +416,19 @@
         "EN-cbadff7c58c26e1a",
         "EN-06b5472c16feae4c",
         "EN-bab9670e68265ab1",
-        "EN-4cbf88b0da5d15f8",
         "EN-e3b1bf3dab957ffe",
         "EN-a93bc1dfeb147c54",
         "EN-6f7ac1823da81d2e",
         "EN-86acdf589a6723d5",
-        "EN-ebe5ed2fc0df64de",
-        "EN-6f549489209ee753",
         "EN-61cce404a45c3545",
         "EN-2a920347dfcf07a7",
         "EN-2dc010636b9dce91",
         "EN-23b979df49741c93",
         "EN-4a639cb888a15d75",
         "EN-56ee86045cfb0ddd",
-        "EN-9dde0c2d375060f6",
         "EN-b21a23767d4d35a9",
         "EN-ea3bd73e2b506e00",
-        "EN-a19ad969c84178e9",
-        "EN-b6e23938808f272d"
+        "EN-a19ad969c84178e9"
       ],
       "fdeIds": [
         "FDE-0ee0fe3baa3f1364",

@@ -41,6 +41,9 @@ function cleanCandidate(value = "") {
   if (/\b(?:announces?|announced|releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|rolls?|built|goes|amid|simplif(?:y|ies)|eating|our|finding)\b/iu.test(candidate)) return "";
   if (/\b(?:are|is|was|were|has|have)\b/iu.test(candidate)) return "";
   if (/^(?:Across|Next)\b|\b(?:for|with|to|from|across|amid)$/iu.test(candidate)) return "";
+  if (/(?:\breport|报告)$/iu.test(candidate)) return "";
+  if (/^(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+(?:\d{1,2}|\d{4})$/iu.test(candidate)) return "";
+  if (/^(?:General Availability|Announces General Availability)$/iu.test(candidate)) return "";
   if (/^(?:Company Announcement|Enterprise IT|US AI|Developer Platform for AI)$/iu.test(candidate)) return "";
   if (/^(?:Development|Experiment|Production)(?:\s+(?:From|To)\s+(?:Development|Experiment|Production))+$/iu.test(candidate)) return "";
   if (/\b(?:CTO|CEO|founder)$/iu.test(candidate)) return "";
@@ -94,6 +97,7 @@ export function extractExplicitProductNames({ eventType = "", object = "", title
   const evidence = [object, title, ...evidenceTexts].join("\n");
   const preservedBrandNames = [
     ["1Password for Claude", /\b1Password for Claude\b/iu],
+    ["Claude Code", /\bClaude Code(?:\s+v\d+(?:\.\d+)+)?\b/iu],
     ["Jetson Thor", /\bJetson(?:\s+(?:AGX|T\d+))?\s+Thor\b|\bJetson Thor\b/iu],
     ["LM Studio Bionic", /\bLM Studio Bionic\b/iu]
   ].filter(([, pattern]) => pattern.test(evidence)).map(([name]) => name);
@@ -109,6 +113,7 @@ export function extractExplicitProductNames({ eventType = "", object = "", title
 
   const seen = new Set();
   return candidates.map(cleanCandidate).map((name) => {
+    if (/^Claude Code(?:\s+v\d+(?:\.\d+)+)?$/iu.test(name)) return "Claude Code";
     if (preservedBrandKeys.has(name.toLocaleLowerCase())) return name;
     const owner = organizationNames.find((organization) => name.toLocaleLowerCase().startsWith(`${normalize(organization).toLocaleLowerCase()} `));
     return owner ? cleanCandidate(name.slice(normalize(owner).length)) : name;

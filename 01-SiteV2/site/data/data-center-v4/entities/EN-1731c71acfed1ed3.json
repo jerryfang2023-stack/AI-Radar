@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-9e193b14cd573988"
+    ],
     "firstSeen": "2026-05-18",
     "lastSeen": "2026-05-19",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-57ebb9541cbdded7"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -61,8 +65,50 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-9e193b14cd573988",
+      "name": "长城汽车",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c930058cf6ea047d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-1731c71acfed1ed3"
+      ],
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-05-19"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-57ebb9541cbdded7",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9e193b14cd573988",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-1731c71acfed1ed3",
+      "object_type": "entity",
+      "event_id": "EV-c930058cf6ea047d",
+      "claim_refs": [
+        "CL-a4fa8902bc6f865c",
+        "CL-899d1e5167fcd160"
+      ],
+      "source_refs": [
+        "SA-1dce453b63595f49"
+      ],
+      "data_date": "2026-05-19",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

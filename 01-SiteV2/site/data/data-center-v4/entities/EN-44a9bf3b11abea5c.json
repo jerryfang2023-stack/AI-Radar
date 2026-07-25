@@ -3,8 +3,8 @@
     "productVersion": "SITE-V4.2.0-entity-history",
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
-    "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-25T05:04:11.023Z",
     "latestDataDate": "2026-07-25",
     "currentDate": "2026-07-25",
     "eventCount": 1530,
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-technology-on_device"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-2c348893efb2316e"
+    ],
     "firstSeen": "2026-07-12",
     "lastSeen": "2026-07-12",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-a243d283b580493c"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -81,8 +85,64 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-2c348893efb2316e",
+      "name": "StepFun",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "阶跃星辰"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-584212d254d882bc",
+        "EV-ca223f2a929b67a2",
+        "EV-2c1fc2143d7d4a6a",
+        "EV-3edf153477310ffc",
+        "EV-6824e76c4aa69a71",
+        "EV-ee363e679d12329c",
+        "EV-712bb6241160c4c5",
+        "EV-d99037f2ed8db897"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-on_device",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-44a9bf3b11abea5c"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-20"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-a243d283b580493c",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-2c348893efb2316e",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-44a9bf3b11abea5c",
+      "object_type": "entity",
+      "event_id": "EV-712bb6241160c4c5",
+      "claim_refs": [
+        "CL-257e63d8454919b6",
+        "CL-cac59cf17d5304e8",
+        "CL-f9fe92db57e2480f"
+      ],
+      "source_refs": [
+        "SA-8d4d62cfcc68a7b4"
+      ],
+      "data_date": "2026-07-12",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-on_device",
@@ -145,7 +205,6 @@
         "EN-c608c4787821de1b",
         "EN-6f21a653c48f4f19",
         "EN-12a81529bba89666",
-        "EN-5388bc10736a0eff",
         "EN-2c348893efb2316e",
         "EN-44a9bf3b11abea5c",
         "EN-de6b71bf77ff4299",
@@ -158,8 +217,6 @@
         "EN-dd920a8cd166f486",
         "EN-c70eca6b0f88f44d",
         "EN-41dcc2d4951f337b",
-        "EN-729324072d368379",
-        "EN-e246a1f9a090075b",
         "EN-1dc405a4cda895d0",
         "EN-e07654c7cc29acbd",
         "EN-c3ce0cc92b48bbd6",
