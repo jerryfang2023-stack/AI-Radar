@@ -49,7 +49,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Monthly report page-generator Skill | guanlan-monthly-report-page-generator v1.1.0 |
 | Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.2.0 |
 | Trend Radar updater Skill | guanlan-trend-radar-updater v1.0.0 |
-| Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.4 |
+| Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.6 |
 | Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.2.1 |
 | Skill governance editor | guanlan-skill-editor v1.0.1 |
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
