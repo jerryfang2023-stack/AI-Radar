@@ -41,7 +41,7 @@ const expected = {
   opportunity: "OMAP-V1.1.0-direction-cards",
   trendRadar: "TRADAR-V1.0.0-factual-change-explorer",
   person: "PERSON-REVIEW-V1.0",
-  skillStore: "v1.6.4 Trend Radar factual change application",
+  skillStore: "v1.6.5 Governance audit alignment",
 };
 
 const ledgerChecks = [
@@ -51,8 +51,16 @@ const ledgerChecks = [
   ["Opportunity Map column version", expected.opportunity],
   ["Trend Radar column version", expected.trendRadar],
   ["Person-account review contract", expected.person],
+  ["Weekly report page-generator Skill", "guanlan-weekly-report-page-generator v1.1.1"],
+  ["Monthly report page-generator Skill", "guanlan-monthly-report-page-generator v1.1.0"],
+  ["Opportunity Map updater Skill", "guanlan-opportunity-radar-updater v1.4.0"],
+  ["Trend Radar updater Skill", "guanlan-trend-radar-updater v1.0.0"],
+  ["Community Intelligence monitor Skill", "guanlan-community-intelligence-monitor v1.0.6"],
+  ["Monthly business-structure content Skill", "guanlan-monthly-business-structure-report v0.2.1"],
+  ["Skill governance editor", "guanlan-skill-editor v1.0.2"],
+  ["Code and rule auditor", "guanlan-code-rule-auditor v1.0.2"],
   ["Skill Store version", expected.skillStore],
-  ["Git tag", "v4.2.4-direction-cards"],
+  ["Git tag", "v4.2.5-governance-audit"],
 ];
 for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
@@ -109,6 +117,7 @@ const skillVersions = [
   ["agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md", 'version: "1.1.1"'],
   ["agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md", 'version: "0.2.1"'],
   ["agent-workflow/skills/guanlan-skill-editor/SKILL.md", 'version: "1.0.2"'],
+  ["agent-workflow/skills/guanlan-code-rule-auditor/SKILL.md", 'version: "1.0.2"'],
   ["agent-workflow/skills/guanlan-trend-radar-updater/SKILL.md", 'version: "1.0.0"'],
 ];
 for (const [file, version] of skillVersions) expectText(file, version);

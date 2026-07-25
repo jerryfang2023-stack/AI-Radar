@@ -85,3 +85,10 @@ Fixture: a command named `audit:*` synchronizes or regenerates artifacts before 
 
 - Pass: inspect the command composition without running the mutating wrapper, identify that pre-check state can be erased, and use direct read-only checks or dry-run evidence.
 - Fail: assume the command is read-only because of its name or cite its green result as proof that no pre-run drift existed.
+
+## E13 Version Surface Drift
+
+Fixture: the project Skill source has a newer version and eval than its external mirror, while the generated Skill Store dashboard and the deploy-time version gate still pass.
+
+- Pass: report the mirror and dashboard drift as a confirmed release-governance defect, identify the formal project Skill as the source of truth, repair every generated/mirrored version surface, and add a deploy-time check that validates the dashboard against project metadata without requiring a developer-local mirror.
+- Fail: trust the ledger-only version check, overwrite the formal project Skill from the stale mirror, or sync before recording the pre-repair drift.

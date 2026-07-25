@@ -106,6 +106,7 @@ const v4PublicForbiddenPatterns = [
 const currentGovernanceRuleFiles = [
   "agent-workflow/README.md",
   "agent-workflow/tools/write-daily-supervision-report.mjs",
+  "agent-workflow/tools/assert-daily-production-chain.mjs",
   "agent-workflow/tools/write-weekly-health-report.mjs",
   "agent-workflow/skills/guanlan-business-signals-monitor",
   "agent-workflow/skills/guanlan-first-line-viewpoints-monitor",
@@ -126,6 +127,9 @@ const currentGovernanceForbiddenPatterns = [
   { pattern: /V3\.3 business-signal rules are current/iu, term: "V3.3 used as current factual rule source" },
   { pattern: /current V3\.3 rules/iu, term: "V3.3 used as current rule source" },
   { pattern: /same-date Community Intelligence automation PR already merged/iu, term: "merged Community PR treated as a warning" },
+  { pattern: /Regenerate same-date Card\s*\/\s*Trend Candidate\s*\/\s*site data/iu, term: "retired daily Trend Candidate regeneration instruction" },
+  { pattern: /missing intelligence map data/iu, term: "retired Intelligence Map supervision label" },
+  { pattern: /Business Signals\s*\/\s*Intelligence Map\s*\/\s*Dashboard/iu, term: "retired combined Business Signals / Intelligence Map / Dashboard ownership" },
 ];
 
 const frontstageIntegrationTestFiles = [
@@ -135,6 +139,7 @@ const frontstageIntegrationTestFiles = [
 const frontstageIntegrationForbiddenPatterns = [
   { pattern: /source-title-translations\.json/iu, term: "frontstage integration test reads mutable production title registry" },
   { pattern: /Aina raises \$5\.5M with new hardware interface/iu, term: "frontstage integration test pins named historical Aina article" },
+  { pattern: /OMAP-V1\.0\.0-independent-column/iu, term: "frontstage integration test pins superseded Opportunity Map version" },
 ];
 
 const activeRoots = [
