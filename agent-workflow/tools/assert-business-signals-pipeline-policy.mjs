@@ -95,6 +95,9 @@ if (!/quality-regression-fixtures=true[^\n]*source-title-translations=agent-work
 if (/source-title-translations\.json|Aina raises \$5\.5M with new hardware interface/iu.test(dataCenterFrontstageTest)) {
   problems.push("Data Center frontstage integration tests depend on mutable production title data or a named historical article");
 }
+if (/v3-data-observation-desk\.json|legacyDesk|legacyCurrentCards/u.test(dataCenterFrontstageTest)) {
+  problems.push("Data Center V4 core tests depend on downstream compatibility assets before the compatibility stage runs");
+}
 if (!/failedWorkflowSupersededByPublication/u.test(dailySupervision)) {
   problems.push("daily supervision does not close an earlier failed Business run after a later healthy Pages publication");
 }
