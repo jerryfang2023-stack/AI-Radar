@@ -35,6 +35,25 @@ const EVENT_GROUPS = {
 };
 
 const INDEXED_DIMENSIONS = new Set(["technology", "use_case", "industry"]);
+const NON_ORGANIZATION_ALIAS_NAMES = new Set([
+  "Amazon Bedrock",
+  "Apple Intelligence",
+  "Claude",
+  "Claude Code",
+  "Codex",
+  "Gemini",
+  "GPT-5",
+  "GPT-5.6",
+  "Grok",
+  "Inkling",
+  "Kimi",
+  "Qwen",
+  "昇腾",
+  "百度文库",
+  "百度网盘",
+  "豆包",
+  "腾讯混元"
+].map(key));
 
 const REVIEW_TYPE_TO_ENTITY_TYPE = {
   company: "organization_candidate",
@@ -109,14 +128,17 @@ function applyEntityReviewDecisions(entityRows, events, reviewDecisions) {
       aliases: [...(row.aliases || [])],
       verification_status: row.entity_type === "organization_candidate" && reviewedCompanyNames.has(key(row.canonical_name)) ? "verified" : row.verification_status
     };
-    if (decision.action === "confirm") return { ...row, aliases: [...(row.aliases || [])], verification_status: "verified" };
+    const aliases = Array.isArray(canonical.aliases)
+      ? unique(canonical.aliases).filter((alias) => key(alias) !== key(canonical.name || row.canonical_name))
+      : [...(row.aliases || [])];
+    if (decision.action === "confirm") return { ...row, aliases, verification_status: "verified" };
     if (!["correct", "merge"].includes(decision.action)) return { ...row, aliases: [...(row.aliases || [])] };
     const reviewedName = clean(canonical.name);
     return {
       ...row,
       canonical_name: reviewedName || row.canonical_name,
       entity_type: reviewedType || row.entity_type,
-      aliases: unique([...(row.aliases || []), reviewedName && key(reviewedName) !== key(row.canonical_name) ? row.canonical_name : ""]),
+      aliases: unique([...aliases, reviewedName && key(reviewedName) !== key(row.canonical_name) ? row.canonical_name : ""]),
       verification_status: "verified"
     };
   }).filter(Boolean);
@@ -131,7 +153,7 @@ function applyEntityReviewDecisions(entityRows, events, reviewDecisions) {
       entity_id: decision.entity_id,
       canonical_name: clean(decision.canonical.name),
       entity_type: entityType,
-      aliases: unique([decision.current?.name]).filter((alias) => key(alias) !== key(decision.canonical.name)),
+      aliases: unique([...(decision.canonical.aliases || []), decision.current?.name]).filter((alias) => key(alias) !== key(decision.canonical.name)),
       verification_status: "verified"
     });
   }
@@ -448,7 +470,10 @@ function buildCanonicalRegistry(entityRows, events) {
     .map(key));
   for (const entity of registry.values()) {
     if (entity.entityType === "organization_candidate") {
-      entity.aliases = entity.aliases.filter((alias) => !verifiedProductNames.has(key(alias)));
+      entity.aliases = entity.aliases.filter((alias) =>
+        !verifiedProductNames.has(key(alias))
+        && !NON_ORGANIZATION_ALIAS_NAMES.has(key(alias))
+      );
     }
   }
 
@@ -529,6 +554,34 @@ function enrichReviewedPeople(registry, reviewDecisions = {}) {
         quote: source.quote
       }));
     }
+  }
+}
+
+function enrichReviewedOrganizations(registry, reviewDecisions = {}) {
+  const decisionById = new Map(acceptedReviewDecisions(reviewDecisions).map((decision) => [decision.entity_id, decision]));
+  for (const entity of registry.values()) {
+    if (entity.entityType !== "organization_candidate") continue;
+    const decision = decisionById.get(entity.id);
+    const canonical = decision?.canonical || {};
+    if (clean(canonical.organization_family_id)) entity.organizationFamilyId = clean(canonical.organization_family_id);
+    if (clean(canonical.parent_entity_id)) entity.parentEntityId = clean(canonical.parent_entity_id);
+    if (clean(canonical.organization_role)) entity.organizationRole = clean(canonical.organization_role);
+    if (entity.parentEntityId) {
+      entity.hierarchyEvidence = (decision?.evidence?.secondary_sources || []).map((source) => ({
+        sourceId: source.source_id,
+        sourceUrl: source.source_url,
+        quote: source.quote
+      }));
+    }
+  }
+  for (const entity of registry.values()) {
+    if (entity.entityType !== "organization_candidate" || !entity.organizationFamilyId) continue;
+    entity.organizationFamilyEntityIds = [...registry.values()]
+      .filter((candidate) => candidate.entityType === "organization_candidate"
+        && candidate.organizationFamilyId === entity.organizationFamilyId
+        && candidate.id !== entity.id)
+      .map((candidate) => candidate.id);
+    entity.parentEntityName = registry.get(entity.parentEntityId)?.name || "";
   }
 }
 
@@ -796,12 +849,14 @@ export function buildEntityHistoryService({
   fdeRecords = [],
   hardwareRecords = [],
   viewpointData = {},
-  reviewDecisions = {}
+  reviewDecisions = {},
+  generatedAt = ""
 } = {}) {
   const reviewed = applyEntityReviewDecisions(entityRows, events, reviewDecisions);
   const registry = buildCanonicalRegistry(reviewed.entityRows, reviewed.events);
   mergeViewpointPeople(registry, viewpointData, reviewDecisions);
   enrichReviewedPeople(registry, reviewDecisions);
+  enrichReviewedOrganizations(registry, reviewDecisions);
   const taxonomyNodes = buildTaxonomyNodes(reviewed.events, fdeRecords, hardwareRecords);
   const relationships = buildTypedRelationships({ registry, events: reviewed.events, fdeRecords, hardwareRecords, taxonomyNodes, reviewDecisions: reviewed.decisions, entityIdRemap: reviewed.remap });
   const profiles = buildProfiles({ registry, events: reviewed.events, relationships, taxonomyNodes, viewpointData });
@@ -814,7 +869,7 @@ export function buildEntityHistoryService({
   const manifest = {
     entityVersion: ENTITY_HISTORY_VERSION,
     relationshipVersion: RELATIONSHIP_VERSION,
-    generatedAt: new Date().toISOString(),
+    generatedAt: clean(generatedAt) || new Date().toISOString(),
     coverage: {
       startDate: minDate(dates),
       endDate: maxDate(dates),

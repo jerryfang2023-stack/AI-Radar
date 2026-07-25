@@ -62,7 +62,6 @@
       "EN-3a7bd3e2360a3d29",
       "EN-41dcc2d4951f337b",
       "EN-6fcba5d96a4fadfd",
-      "EN-0b9ca57f53ba758b",
       "EN-ce635c4eabff5e4f",
       "EN-c4bc2d00a42f220f"
     ],
@@ -2289,9 +2288,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Gemini"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -2478,7 +2475,6 @@
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -2757,8 +2753,7 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-50ba7ff15827787b",
-        "EN-b5251b35f15bedc4"
+        "EN-50ba7ff15827787b"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-17"
@@ -2922,6 +2917,7 @@
         "EN-af54bb0c9a39eb30",
         "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
+        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
@@ -3717,7 +3713,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Grok"
+        "SpaceXAI"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -3761,35 +3757,12 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-bac541b589c8a0d1"
+        "EN-bac541b589c8a0d1",
+        "EN-c4bc2d00a42f220f",
+        "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-23"
-    },
-    {
-      "id": "EN-0b9ca57f53ba758b",
-      "name": "SpaceXAI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-bdcd6fc0caa8f6d4",
-        "EV-10aac036228b3c6b",
-        "EV-d53cd33e8f541a65"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-software_development",
-        "TX-technology-code_generation",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
     },
     {
       "id": "EN-ce635c4eabff5e4f",
@@ -3846,7 +3819,9 @@
         "TX-technology-code_generation",
         "TX-technology-tool_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-6fcba5d96a4fadfd"
+      ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-17"
     }

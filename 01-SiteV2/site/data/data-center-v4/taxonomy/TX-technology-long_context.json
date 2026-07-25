@@ -2461,8 +2461,7 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-50ba7ff15827787b",
-        "EN-b5251b35f15bedc4"
+        "EN-50ba7ff15827787b"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-17"
@@ -2617,7 +2616,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Kimi",
         "月之暗面"
       ],
       "verificationStatus": "verified",
@@ -2659,7 +2657,6 @@
       "relatedEntityIds": [
         "EN-607964040e4b62e0",
         "EN-eb732565c71e6b85",
-        "EN-7df09a7717ef2feb",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
@@ -3169,11 +3166,13 @@
     },
     {
       "id": "EN-047364b9be67f665",
-      "name": "Alibaba",
+      "name": "阿里巴巴",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Qwen"
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -3252,10 +3251,18 @@
         "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
         "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-25",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -3640,11 +3647,11 @@
     },
     {
       "id": "EN-9c8ae69b84f21a2e",
-      "name": "Tencent",
+      "name": "腾讯",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "腾讯混元"
+        "Tencent"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -3693,7 +3700,10 @@
         "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [
-        "EN-a1adb91065c5a347"
+        "EN-a1adb91065c5a347",
+        "EN-f0da91960830b394",
+        "EN-ea3bd73e2b506e00",
+        "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-05-18",
       "lastSeen": "2026-07-25"
@@ -3941,22 +3951,30 @@
       "name": "智谱AI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "智谱",
+        "Zhipu AI"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-70efbfcaadcdb259",
-        "EV-534dc9add1c0cc35"
+        "EV-534dc9add1c0cc35",
+        "EV-1e0871947289ab6e"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-long_context"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-18",
+      "relatedEntityIds": [
+        "EN-bc77259c5d2eb341",
+        "EN-993599624a199fe0"
+      ],
+      "firstSeen": "2026-06-13",
       "lastSeen": "2026-07-07"
     },
     {
@@ -3977,7 +3995,9 @@
         "TX-use_case-software_development",
         "TX-technology-long_context"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-1d79127e9d90e89b"
+      ],
       "firstSeen": "2026-07-07",
       "lastSeen": "2026-07-07"
     },

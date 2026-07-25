@@ -62,7 +62,13 @@
         "organization": { "type": "string" },
         "organizationNames": { "type": "array", "items": { "type": "string" } },
         "affiliationEvidence": { "type": "array", "items": { "type": "object" } },
-        "viewpointTags": { "type": "array", "items": { "type": "string" } }
+        "viewpointTags": { "type": "array", "items": { "type": "string" } },
+        "organizationFamilyId": { "type": "string" },
+        "organizationFamilyEntityIds": { "type": "array", "items": { "type": "string" } },
+        "organizationRole": { "enum": ["group", "business_unit"] },
+        "parentEntityId": { "type": "string" },
+        "parentEntityName": { "type": "string" },
+        "hierarchyEvidence": { "type": "array", "items": { "type": "object" } }
       },
       "additionalProperties": true
     },

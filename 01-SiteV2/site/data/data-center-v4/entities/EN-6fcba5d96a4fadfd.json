@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [
-      "Grok"
+      "SpaceXAI"
     ],
     "verificationStatus": "verified",
     "datasetScopes": [
@@ -60,12 +60,16 @@
       "TX-technology-tool_use"
     ],
     "relatedEntityIds": [
-      "EN-bac541b589c8a0d1"
+      "EN-bac541b589c8a0d1",
+      "EN-c4bc2d00a42f220f",
+      "EN-24caf10fe9bfb1c5"
     ],
     "firstSeen": "2026-05-25",
     "lastSeen": "2026-07-23",
     "relationIds": [
-      "REL2-fe33f6bf65f6dfab"
+      "REL2-fe33f6bf65f6dfab",
+      "REL2-e0b4c492d7f56ad2",
+      "REL2-6e6899469cc60402"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -241,7 +245,6 @@
         ],
         "entityIds": [
           "EN-6fcba5d96a4fadfd",
-          "EN-0b9ca57f53ba758b",
           "EN-ce635c4eabff5e4f",
           "EN-c4bc2d00a42f220f",
           "EN-bbdefa2950f49882"
@@ -365,7 +368,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-6fcba5d96a4fadfd",
-          "EN-0b9ca57f53ba758b",
           "EN-24caf10fe9bfb1c5"
         ]
       },
@@ -445,8 +447,7 @@
         "displayTags": [],
         "entityIds": [
           "EN-6fcba5d96a4fadfd",
-          "EN-9fbf261b62c1d7c0",
-          "EN-0b9ca57f53ba758b"
+          "EN-9fbf261b62c1d7c0"
         ]
       },
       {
@@ -693,6 +694,52 @@
       ],
       "firstSeen": "2026-07-18",
       "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-c4bc2d00a42f220f",
+      "name": "Grok Build",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d53cd33e8f541a65"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-17"
+    },
+    {
+      "id": "EN-24caf10fe9bfb1c5",
+      "name": "Grok 4.5",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-bdcd6fc0caa8f6d4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-09"
     }
   ],
   "relationships": [
@@ -714,6 +761,47 @@
         "SA-5e076b3303d1b0cc"
       ],
       "data_date": "2026-07-19",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-e0b4c492d7f56ad2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-6fcba5d96a4fadfd",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-c4bc2d00a42f220f",
+      "object_type": "entity",
+      "event_id": "EV-d53cd33e8f541a65",
+      "claim_refs": [
+        "CL-66990e99d6c6046f",
+        "CL-8dea0880a232aacb",
+        "CL-54c7c187771e7610"
+      ],
+      "source_refs": [
+        "SA-0edcc134c1576e9a",
+        "SA-ab14f44044faafd5"
+      ],
+      "data_date": "2026-07-17",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-6e6899469cc60402",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-6fcba5d96a4fadfd",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-24caf10fe9bfb1c5",
+      "object_type": "entity",
+      "event_id": "EV-bdcd6fc0caa8f6d4",
+      "claim_refs": [
+        "CL-ec2d6107c732e14c",
+        "CL-913d46a75159fe2c",
+        "CL-9237aaeca90244b9"
+      ],
+      "source_refs": [
+        "SA-bcceb60ea21e07af"
+      ],
+      "data_date": "2026-07-09",
       "status": "verified"
     }
   ],
@@ -1393,7 +1481,6 @@
         "EN-16fe95bd48dbf178",
         "EN-0666a703033ebd1b",
         "EN-30a63b26b06e096e",
-        "EN-53874092e000069b",
         "EN-fdc6b157616f12a8",
         "EN-d4c633f24b48fcc4",
         "EN-bc1fc5140040180e",
@@ -1429,7 +1516,6 @@
         "EN-2f00e6c060e01051",
         "EN-e947caedcfbb4b90",
         "EN-e18cb6435603205d",
-        "EN-82eaaba81d9dcc54",
         "EN-761a66c29a55bc53",
         "EN-dba61afed18c85d6",
         "EN-2b6e51bec93e86c1",
@@ -1626,7 +1712,6 @@
         "EN-a3c3b987b09fc1bb",
         "EN-1ecf93c539fcffca",
         "EN-6fcba5d96a4fadfd",
-        "EN-0b9ca57f53ba758b",
         "EN-c4bc2d00a42f220f"
       ],
       "fdeIds": [
@@ -1913,7 +1998,7 @@
         "EN-0db2d631b42da133",
         "EN-b81c8201acfc7639",
         "EN-e18cb6435603205d",
-        "EN-8bcef51236d613cd",
+        "EN-1d79127e9d90e89b",
         "EN-993599624a199fe0",
         "EN-c608c4787821de1b",
         "EN-ddf9916b459b6d77",
@@ -1931,7 +2016,6 @@
         "EN-2b6e51bec93e86c1",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
-        "EN-0b9ca57f53ba758b",
         "EN-c4bc2d00a42f220f",
         "EN-ba1269449ab76537",
         "EN-e759968ca9278b8d",
@@ -2028,7 +2112,6 @@
         "EN-0e6e48aba1669631",
         "EN-d77c36c05230024c",
         "EN-be548deba4a093d7",
-        "EN-53874092e000069b",
         "EN-9c8ae69b84f21a2e",
         "EN-f0da91960830b394",
         "EN-c51e27d8efcff21f",
@@ -2127,7 +2210,6 @@
         "EN-3a7bd3e2360a3d29",
         "EN-41dcc2d4951f337b",
         "EN-6fcba5d96a4fadfd",
-        "EN-0b9ca57f53ba758b",
         "EN-ce635c4eabff5e4f",
         "EN-c4bc2d00a42f220f"
       ],

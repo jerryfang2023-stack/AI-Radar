@@ -26,6 +26,10 @@ function clean(value = "") {
   return String(value || "").replace(/\s+/gu, " ").trim();
 }
 
+function key(value = "") {
+  return clean(value).normalize("NFKC").toLocaleLowerCase();
+}
+
 function fail(problems) {
   if (!problems.length) return;
   throw new Error(`entity_catalog_review_gate_failed:\n- ${problems.join("\n- ")}`);
@@ -111,6 +115,53 @@ function main() {
     const companiesByName = new Map((frontstage.companies || []).map((company) => [company.name, company]));
     const productsByName = new Map((frontstage.products || []).map((product) => [product.name, product]));
     const peopleByName = new Map((frontstage.people || []).map((person) => [person.name, person]));
+    const organizationNames = new Map();
+    for (const company of frontstage.companies || []) {
+      for (const name of [company.name, ...(company.aliases || [])]) {
+        const normalized = key(name);
+        if (!organizationNames.has(normalized)) organizationNames.set(normalized, new Set());
+        organizationNames.get(normalized).add(company.id);
+      }
+    }
+    for (const [name, companyIds] of organizationNames) {
+      if (companyIds.size > 1) problems.push(`organization identity resolves to multiple public entities: ${name}:${[...companyIds].join(",")}`);
+    }
+    const productNames = new Set((frontstage.products || []).flatMap((product) => [product.name, ...(product.aliases || [])]).map(key));
+    const forbiddenOrganizationAliases = new Set([
+      "Amazon Bedrock", "Apple Intelligence", "Claude", "Claude Code", "Codex", "Gemini", "GPT-5", "GPT-5.6",
+      "Grok", "Inkling", "Kimi", "Qwen", "昇腾", "百度文库", "百度网盘", "豆包", "腾讯混元"
+    ].map(key));
+    for (const company of frontstage.companies || []) {
+      for (const alias of company.aliases || []) {
+        if (productNames.has(key(alias)) || forbiddenOrganizationAliases.has(key(alias))) {
+          problems.push(`product or service remains an organization alias: ${company.name}:${alias}`);
+        }
+      }
+    }
+    const identityExpectations = [
+      ["EN-047364b9be67f665", "阿里巴巴", ["Alibaba"], ["EN-47c1e53c427aafb4"]],
+      ["EN-b81c8201acfc7639", "华为", ["Huawei"], ["EN-82eaaba81d9dcc54"]],
+      ["EN-2ab6d53e717a0e0d", "诺基亚", ["Nokia"], ["EN-accf304851de0ad2"]],
+      ["EN-9c8ae69b84f21a2e", "腾讯", ["Tencent"], ["EN-53874092e000069b"]],
+      ["EN-a8100d425f663eac", "商汤科技", ["商汤"], ["EN-6416272bf06ab3ec"]],
+      ["EN-1d79127e9d90e89b", "智谱AI", ["智谱"], ["EN-8bcef51236d613cd"]],
+      ["EN-6fcba5d96a4fadfd", "xAI", ["SpaceXAI"], ["EN-0b9ca57f53ba758b", "EN-630dc133336bc266"]]
+    ];
+    for (const [targetId, canonicalName, aliases, retiredIds] of identityExpectations) {
+      const target = profilesById.get(targetId);
+      if (!target || target.name !== canonicalName) problems.push(`organization identity target missing: ${targetId}:${canonicalName}`);
+      for (const alias of aliases) if (!target?.aliases?.includes(alias)) problems.push(`organization identity alias missing: ${targetId}:${alias}`);
+      for (const retiredId of retiredIds) if (profilesById.has(retiredId)) problems.push(`duplicate organization remains public: ${retiredId}`);
+    }
+    const alibaba = profilesById.get("EN-047364b9be67f665");
+    const alibabaCloud = profilesById.get("EN-e16fc821f34228d1");
+    if (!alibabaCloud
+      || alibabaCloud.parentEntityId !== alibaba?.id
+      || alibabaCloud.organizationFamilyId !== alibaba?.id
+      || alibabaCloud.organizationRole !== "business_unit"
+      || !(alibabaCloud.hierarchyEvidence || []).length) {
+      problems.push("Alibaba Cloud hierarchy metadata is missing or incomplete");
+    }
     for (const entity of [...(frontstage.companies || []), ...(frontstage.products || [])]) {
       if (!decisionIds.has(entity.id)) problems.push(`public company/product lacks explicit review decision: ${entity.id}`);
     }

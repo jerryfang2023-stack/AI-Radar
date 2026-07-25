@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-6fcba5d96a4fadfd"
+    ],
     "firstSeen": "2026-07-09",
     "lastSeen": "2026-07-09",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-6e6899469cc60402"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -54,15 +58,93 @@
         "displayTags": [],
         "entityIds": [
           "EN-6fcba5d96a4fadfd",
-          "EN-0b9ca57f53ba758b",
           "EN-24caf10fe9bfb1c5"
         ]
       }
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-6fcba5d96a4fadfd",
+      "name": "xAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "SpaceXAI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3daefecd0453631a",
+        "EV-edcb66d0401cfb8f",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-31df816db86db282",
+        "EV-883d3b5f6d30eb48",
+        "EV-e15ae1112294d59e",
+        "EV-43301de739fe560e",
+        "EV-3e5da88ce004fcf3",
+        "EV-5b193a038ab4ea22",
+        "EV-2351415291cb9fcd",
+        "EV-e7b7df43970f7e2c",
+        "EV-377094da492a03d2",
+        "EV-ae736eb124d7163a",
+        "EV-bdcd6fc0caa8f6d4",
+        "EV-5012364af7480121",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-10aac036228b3c6b",
+        "EV-ed58c2c69290ee4c",
+        "EV-631197767a45d34c",
+        "EV-d53cd33e8f541a65",
+        "EV-11a3893cb86fef69",
+        "EV-9578242a4df20721",
+        "EV-8cd571951f62b2c8",
+        "EV-4beb890f0879aeaf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-robotics_automation",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-bac541b589c8a0d1",
+        "EN-c4bc2d00a42f220f",
+        "EN-24caf10fe9bfb1c5"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-23"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-6e6899469cc60402",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-6fcba5d96a4fadfd",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-24caf10fe9bfb1c5",
+      "object_type": "entity",
+      "event_id": "EV-bdcd6fc0caa8f6d4",
+      "claim_refs": [
+        "CL-ec2d6107c732e14c",
+        "CL-913d46a75159fe2c",
+        "CL-9237aaeca90244b9"
+      ],
+      "source_refs": [
+        "SA-bcceb60ea21e07af"
+      ],
+      "data_date": "2026-07-09",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

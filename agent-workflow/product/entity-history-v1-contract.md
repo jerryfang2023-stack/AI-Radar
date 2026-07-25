@@ -37,6 +37,8 @@ Allowed predicates are `publishes`, `partners_with`, `acquires`, `serves`, `depl
 - Accepted decisions may confirm, correct, merge, or quarantine an entity in the rebuildable Entity History serving projection; historical V4 bundles remain unchanged.
 - A corrected product-company mapping creates a public `publishes` relationship only when its accepted Claim references and SourceArtifact-backed event contain an explicit publication action.
 - Secondary-search pages without an accepted canonical Claim may support quarantine or a reviewed display correction, but cannot independently create a formal relationship.
+- Organization aliases are identity-equivalent names only. Product, model, and service names cannot be organization aliases.
+- A reviewed `organizationFamilyId` / `parentEntityId` may describe a group and business-unit hierarchy when official secondary evidence is recorded. This catalog hierarchy is display metadata, not a `RELATION-V2.1` row, and must not be presented as an event-backed commercial relationship.
 
 ## Frontstage boundary
 

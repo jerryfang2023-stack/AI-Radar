@@ -223,6 +223,63 @@ test("organization aliases exclude names persisted as verified products", () => 
   assert.deepEqual(service.profiles.find((item) => item.name === "Anthropic")?.aliases, []);
 });
 
+test("reviewed organization identities merge aliases while business units retain hierarchy", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-1111111111111111", canonical_name: "Alibaba", entity_type: "organization_candidate", aliases: ["Qwen"], verification_status: "verified" },
+      { entity_id: "EN-2222222222222222", canonical_name: "阿里巴巴", entity_type: "organization_candidate", aliases: [], verification_status: "candidate" },
+      { entity_id: "EN-3333333333333333", canonical_name: "阿里云", entity_type: "organization_candidate", aliases: [], verification_status: "candidate" }
+    ],
+    events: [{
+      ...event,
+      id: "EV-ORG",
+      entityIds: ["EN-1111111111111111", "EN-2222222222222222", "EN-3333333333333333"]
+    }],
+    reviewDecisions: {
+      decisions: [
+        {
+          entity_id: "EN-1111111111111111",
+          current: { name: "Alibaba", catalog_type: "company", company_names: [] },
+          action: "correct",
+          canonical: { name: "阿里巴巴", catalog_type: "company", company_names: [], aliases: ["Alibaba"], organization_family_id: "EN-1111111111111111", organization_role: "group" },
+          evidence: { claim_refs: [], secondary_sources: [] },
+          review_status: "accepted",
+          reviewer: "organization-review"
+        },
+        {
+          entity_id: "EN-2222222222222222",
+          current: { name: "阿里巴巴", catalog_type: "company", company_names: [] },
+          action: "merge",
+          merge_into_entity_id: "EN-1111111111111111",
+          canonical: { name: "阿里巴巴", catalog_type: "company", company_names: [], aliases: ["Alibaba"], organization_family_id: "EN-1111111111111111", organization_role: "group" },
+          evidence: { claim_refs: [], secondary_sources: [] },
+          review_status: "accepted",
+          reviewer: "organization-review"
+        },
+        {
+          entity_id: "EN-3333333333333333",
+          current: { name: "阿里云", catalog_type: "company", company_names: [] },
+          action: "correct",
+          canonical: { name: "阿里云", catalog_type: "company", company_names: [], aliases: ["Alibaba Cloud"], organization_family_id: "EN-1111111111111111", parent_entity_id: "EN-1111111111111111", organization_role: "business_unit" },
+          evidence: { claim_refs: [], secondary_sources: [{ source_id: "SRC-1", source_url: "https://example.com", quote: "Alibaba Cloud is the cloud arm of Alibaba Group." }] },
+          review_status: "accepted",
+          reviewer: "organization-review"
+        }
+      ]
+    }
+  });
+  const group = service.profiles.find((item) => item.id === "EN-1111111111111111");
+  const cloud = service.profiles.find((item) => item.id === "EN-3333333333333333");
+
+  assert.equal(service.profiles.some((item) => item.id === "EN-2222222222222222"), false);
+  assert.deepEqual(group?.aliases, ["Alibaba"]);
+  assert.equal(group?.aliases.includes("Qwen"), false);
+  assert.deepEqual(group?.organizationFamilyEntityIds, ["EN-3333333333333333"]);
+  assert.equal(cloud?.parentEntityId, group?.id);
+  assert.equal(cloud?.parentEntityName, "阿里巴巴");
+  assert.equal(cloud?.organizationRole, "business_unit");
+});
+
 test("a repeated publisher name still resolves its explicitly launched product", () => {
   const service = buildEntityHistoryService({
     entityRows: [

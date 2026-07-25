@@ -29,10 +29,14 @@
       "TX-technology-code_generation",
       "TX-technology-tool_use"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-6fcba5d96a4fadfd"
+    ],
     "firstSeen": "2026-05-25",
     "lastSeen": "2026-07-17",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-e0b4c492d7f56ad2"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -77,7 +81,6 @@
         ],
         "entityIds": [
           "EN-6fcba5d96a4fadfd",
-          "EN-0b9ca57f53ba758b",
           "EN-ce635c4eabff5e4f",
           "EN-c4bc2d00a42f220f",
           "EN-bbdefa2950f49882"
@@ -86,8 +89,88 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-6fcba5d96a4fadfd",
+      "name": "xAI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "SpaceXAI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-3daefecd0453631a",
+        "EV-edcb66d0401cfb8f",
+        "EV-5d581d112fdbd464",
+        "EV-201b25d4f3cf696a",
+        "EV-31df816db86db282",
+        "EV-883d3b5f6d30eb48",
+        "EV-e15ae1112294d59e",
+        "EV-43301de739fe560e",
+        "EV-3e5da88ce004fcf3",
+        "EV-5b193a038ab4ea22",
+        "EV-2351415291cb9fcd",
+        "EV-e7b7df43970f7e2c",
+        "EV-377094da492a03d2",
+        "EV-ae736eb124d7163a",
+        "EV-bdcd6fc0caa8f6d4",
+        "EV-5012364af7480121",
+        "EV-e1a7e7dcb19bfc70",
+        "EV-10aac036228b3c6b",
+        "EV-ed58c2c69290ee4c",
+        "EV-631197767a45d34c",
+        "EV-d53cd33e8f541a65",
+        "EV-11a3893cb86fef69",
+        "EV-9578242a4df20721",
+        "EV-8cd571951f62b2c8",
+        "EV-4beb890f0879aeaf"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-use_case-enterprise_operations",
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-use_case-robotics_automation",
+        "TX-technology-tool_use"
+      ],
+      "relatedEntityIds": [
+        "EN-bac541b589c8a0d1",
+        "EN-c4bc2d00a42f220f",
+        "EN-24caf10fe9bfb1c5"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-23"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-e0b4c492d7f56ad2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-6fcba5d96a4fadfd",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-c4bc2d00a42f220f",
+      "object_type": "entity",
+      "event_id": "EV-d53cd33e8f541a65",
+      "claim_refs": [
+        "CL-66990e99d6c6046f",
+        "CL-8dea0880a232aacb",
+        "CL-54c7c187771e7610"
+      ],
+      "source_refs": [
+        "SA-0edcc134c1576e9a",
+        "SA-ab14f44044faafd5"
+      ],
+      "data_date": "2026-07-17",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-use_case-software_development",
@@ -182,7 +265,6 @@
         "EN-a3c3b987b09fc1bb",
         "EN-1ecf93c539fcffca",
         "EN-6fcba5d96a4fadfd",
-        "EN-0b9ca57f53ba758b",
         "EN-c4bc2d00a42f220f"
       ],
       "fdeIds": [
@@ -288,7 +370,7 @@
         "EN-0db2d631b42da133",
         "EN-b81c8201acfc7639",
         "EN-e18cb6435603205d",
-        "EN-8bcef51236d613cd",
+        "EN-1d79127e9d90e89b",
         "EN-993599624a199fe0",
         "EN-c608c4787821de1b",
         "EN-ddf9916b459b6d77",
@@ -306,7 +388,6 @@
         "EN-2b6e51bec93e86c1",
         "EN-085598c00f2aaccf",
         "EN-a3c3b987b09fc1bb",
-        "EN-0b9ca57f53ba758b",
         "EN-c4bc2d00a42f220f",
         "EN-ba1269449ab76537",
         "EN-e759968ca9278b8d",
@@ -374,7 +455,6 @@
         "EN-3a7bd3e2360a3d29",
         "EN-41dcc2d4951f337b",
         "EN-6fcba5d96a4fadfd",
-        "EN-0b9ca57f53ba758b",
         "EN-ce635c4eabff5e4f",
         "EN-c4bc2d00a42f220f"
       ],

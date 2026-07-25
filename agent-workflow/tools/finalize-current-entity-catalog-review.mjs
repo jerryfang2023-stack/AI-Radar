@@ -33,6 +33,131 @@ const explicitAcceptedDecisionIds = new Set([
   "EN-833940e4d17c9df3", // OpenWorker is explicitly described as Andrew Ng's product.
   "EN-afe83c198e329ef2" // Pixel is explicitly described as Google's hardware/product line.
 ]);
+const organizationIdentityOverrides = [
+  {
+    entity_id: "EN-047364b9be67f665",
+    canonical_name: "阿里巴巴",
+    aliases: ["Alibaba", "Alibaba Group", "阿里"],
+    organization_family_id: "EN-047364b9be67f665",
+    organization_role: "group",
+    rationale: "“Alibaba”“阿里巴巴”“阿里”是同一集团的中英文名与简称，统一保留稳定实体 ID，并以中文名展示。",
+    secondary_sources: [{
+      source_id: "SRC-alibaba-group-businesses-official",
+      source_url: "https://www.alibabagroup.com/en-US/about-alibaba-businesses-1747835448811585536",
+      source_class: "official",
+      quote: "As part of Alibaba Group's globalization strategy, Cloud Intelligence Group continued to expand its international cloud computing infrastructure."
+    }]
+  },
+  {
+    entity_id: "EN-47c1e53c427aafb4",
+    merge_into_entity_id: "EN-047364b9be67f665",
+    canonical_name: "阿里巴巴",
+    aliases: ["Alibaba", "Alibaba Group", "阿里"],
+    organization_family_id: "EN-047364b9be67f665",
+    organization_role: "group",
+    rationale: "中文名“阿里巴巴”与 Alibaba 是同一集团实体，合并到历史事件覆盖更完整的稳定实体 ID。"
+  },
+  {
+    entity_id: "EN-e16fc821f34228d1",
+    canonical_name: "阿里云",
+    aliases: ["Alibaba Cloud", "Cloud Intelligence Group"],
+    organization_family_id: "EN-047364b9be67f665",
+    parent_entity_id: "EN-047364b9be67f665",
+    organization_role: "business_unit",
+    rationale: "阿里云是阿里巴巴集团的云业务单元；保留独立实体以承载自身事件，同时记录集团归属，不与集团主体合并。",
+    secondary_sources: [{
+      source_id: "SRC-alibaba-cloud-arm-official",
+      source_url: "https://www.alibabagroup.com/en-US/document-1491224164130881536",
+      source_class: "official",
+      quote: "Alibaba Cloud, the cloud computing and data intelligence arm of Alibaba Group"
+    }]
+  },
+  {
+    entity_id: "EN-b81c8201acfc7639",
+    canonical_name: "华为",
+    aliases: ["Huawei"],
+    rationale: "“Huawei”与“华为”是同一机构的中英文名称，统一为一个稳定实体。"
+  },
+  {
+    entity_id: "EN-82eaaba81d9dcc54",
+    merge_into_entity_id: "EN-b81c8201acfc7639",
+    canonical_name: "华为",
+    aliases: ["Huawei"],
+    rationale: "中文名“华为”与 Huawei 重复，合并到既有 verified 稳定实体。"
+  },
+  {
+    entity_id: "EN-2ab6d53e717a0e0d",
+    canonical_name: "诺基亚",
+    aliases: ["Nokia"],
+    rationale: "“Nokia”与“诺基亚”是同一机构的中英文名称，统一为一个稳定实体。"
+  },
+  {
+    entity_id: "EN-accf304851de0ad2",
+    merge_into_entity_id: "EN-2ab6d53e717a0e0d",
+    canonical_name: "诺基亚",
+    aliases: ["Nokia"],
+    rationale: "中文名“诺基亚”与 Nokia 重复，合并到既有 verified 稳定实体。"
+  },
+  {
+    entity_id: "EN-9c8ae69b84f21a2e",
+    canonical_name: "腾讯",
+    aliases: ["Tencent"],
+    rationale: "“Tencent”与“腾讯”是同一机构的中英文名称，统一为一个稳定实体；“腾讯混元”保留为产品名称而不是机构别名。"
+  },
+  {
+    entity_id: "EN-53874092e000069b",
+    merge_into_entity_id: "EN-9c8ae69b84f21a2e",
+    canonical_name: "腾讯",
+    aliases: ["Tencent"],
+    rationale: "中文名“腾讯”与 Tencent 重复，合并到既有 verified 稳定实体。"
+  },
+  {
+    entity_id: "EN-a8100d425f663eac",
+    canonical_name: "商汤科技",
+    aliases: ["商汤", "SenseTime"],
+    rationale: "“商汤”是“商汤科技”的常用简称，统一为一个稳定机构实体。"
+  },
+  {
+    entity_id: "EN-6416272bf06ab3ec",
+    merge_into_entity_id: "EN-a8100d425f663eac",
+    canonical_name: "商汤科技",
+    aliases: ["商汤", "SenseTime"],
+    rationale: "简称“商汤”与“商汤科技”重复，合并到完整机构名称对应的稳定实体。"
+  },
+  {
+    entity_id: "EN-1d79127e9d90e89b",
+    canonical_name: "智谱AI",
+    aliases: ["智谱", "Zhipu AI"],
+    rationale: "“智谱”是“智谱AI”的常用简称，统一为一个稳定机构实体。"
+  },
+  {
+    entity_id: "EN-8bcef51236d613cd",
+    merge_into_entity_id: "EN-1d79127e9d90e89b",
+    canonical_name: "智谱AI",
+    aliases: ["智谱", "Zhipu AI"],
+    rationale: "简称“智谱”与“智谱AI”重复，合并到完整机构名称对应的稳定实体。"
+  },
+  {
+    entity_id: "EN-6fcba5d96a4fadfd",
+    canonical_name: "xAI",
+    aliases: ["SpaceXAI"],
+    rationale: "历史数据中的“SpaceXAI”归一到 xAI 机构实体；Grok 是产品，不作为机构别名。"
+  },
+  {
+    entity_id: "EN-0b9ca57f53ba758b",
+    merge_into_entity_id: "EN-6fcba5d96a4fadfd",
+    canonical_name: "xAI",
+    aliases: ["SpaceXAI"],
+    rationale: "历史“SpaceXAI”条目与 xAI 机构重复，合并到 xAI 稳定实体。"
+  },
+  {
+    entity_id: "EN-630dc133336bc266",
+    merge_into_entity_id: "EN-6fcba5d96a4fadfd",
+    canonical_name: "xAI",
+    aliases: ["SpaceXAI"],
+    rationale: "历史“SpaceXAI”条目与 xAI 机构重复，合并到 xAI 稳定实体。"
+  }
+];
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
@@ -236,6 +361,39 @@ function supplementalClaimEntities(claimsById) {
   });
 }
 
+function applyOrganizationIdentityOverrides(decisionById) {
+  for (const override of organizationIdentityOverrides) {
+    const previous = decisionById.get(override.entity_id);
+    if (!previous) throw new Error(`organization_identity_override_missing:${override.entity_id}`);
+    const canonical = {
+      name: override.canonical_name,
+      catalog_type: "company",
+      company_names: [],
+      aliases: override.aliases
+    };
+    for (const field of ["organization_family_id", "parent_entity_id", "organization_role"]) {
+      if (override[field]) canonical[field] = override[field];
+    }
+    decisionById.set(override.entity_id, {
+      ...previous,
+      action: override.merge_into_entity_id ? "merge" : "correct",
+      merge_into_entity_id: override.merge_into_entity_id || "",
+      canonical,
+      evidence: {
+        claim_refs: previous.evidence?.claim_refs || [],
+        secondary_sources: override.secondary_sources || previous.evidence?.secondary_sources || []
+      },
+      advisory_source: "codex_explicit_organization_identity_review",
+      advisory_decision: "explicit_review",
+      confidence: 1,
+      rationale: override.rationale,
+      review_status: "accepted",
+      reviewer,
+      reviewed_at: reviewedAt
+    });
+  }
+}
+
 function chooseMergeTarget(group, currentIds) {
   return [...group].sort((left, right) => {
     const leftCurrent = currentIds.has(left.entity_id) ? 1 : 0;
@@ -392,6 +550,7 @@ function main() {
   }
   const supplemental = supplementalClaimEntities(claimsById);
   for (const decision of supplemental) decisionById.set(decision.entity_id, decision);
+  applyOrganizationIdentityOverrides(decisionById);
   for (const manualQuarantine of [
     {
       entity_id: "EN-5ce177312903c604",
