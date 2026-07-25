@@ -602,9 +602,30 @@ export function writeFrontstageData(root = defaultRoot) {
     };
   });
   writeJson(path.join(indexesDir, "relationships.json"), { meta: data.meta, relationships: relationshipIndex });
+  const eventDetailById = new Map(data.events.map((event) => [event.id, event]));
+  const relationshipDetails = relationshipIndex.map((relation) => {
+    const event = eventDetailById.get(relation.event_id);
+    const claimRefs = new Set(relation.claim_refs || []);
+    const sourceRefs = new Set(relation.source_refs || []);
+    return {
+      ...relation,
+      claims: (event?.claims || []).filter((claim) => claimRefs.has(claim.id)),
+      sources: (event?.sources || []).filter((source) => sourceRefs.has(source.id)),
+      sourceExcerpt: event?.sourceExcerpt || "",
+      event: event ? {
+        id: event.id,
+        title: event.title,
+        originalTitle: event.originalTitle,
+        date: event.date,
+        dataDate: event.dataDate,
+        eventTypeLabel: event.eventTypeLabel
+      } : null
+    };
+  });
   writeJson(path.join(indexesDir, "fde.json"), { meta: data.meta, fde: data.fde });
   writeJson(path.join(indexesDir, "hardware.json"), { meta: data.meta, hardware: data.hardware });
   writeJson(path.join(detailsDir, "events.json"), { meta: data.meta, events: data.events });
+  writeJson(path.join(detailsDir, "relationships.json"), { meta: data.meta, relationships: relationshipDetails });
   writeJson(path.join(detailsDir, "fde.json"), { meta: data.meta, fde: data.fde, events: compactEvents });
   writeJson(path.join(detailsDir, "hardware.json"), { meta: data.meta, hardware: data.hardware, events: compactEvents });
 
@@ -658,6 +679,7 @@ export function writeFrontstageData(root = defaultRoot) {
       fdeIndex: "data/data-center-v4/indexes/fde.json",
       hardwareIndex: "data/data-center-v4/indexes/hardware.json",
       eventsDetail: "data/data-center-v4/details/events.json",
+      relationshipsDetail: "data/data-center-v4/details/relationships.json",
       fdeDetail: "data/data-center-v4/details/fde.json",
       hardwareDetail: "data/data-center-v4/details/hardware.json",
       entityDetailPattern: "data/data-center-v4/entities/{id}.json",

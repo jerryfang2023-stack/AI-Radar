@@ -22,7 +22,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | WaveSight Entity History |
 | Version layer | Minor |
 | Release date | 2026-07-17 |
-| Last modified at | 2026-07-25T10:20:00+08:00 |
+| Last modified at | 2026-07-25T13:44:11+08:00 |
 | Product version | V4.2 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.2.0-entity-history |
@@ -55,7 +55,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.6.4 Trend Radar factual change application |
-| Git tag | `v4.2.2-trend-radar` |
+| Git tag | `v4.2.3-relationship-map` |
 | Current entries | Data Center / Trend Radar / Industry Reports / Opportunity Map; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
@@ -98,7 +98,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Page | File | Current Role |
 |---|---|---|
-| Data Center | `01-SiteV2/site/data-center.html` | Unified V4 entry for Commercial Events, FDE, AI Hardware, Community Intelligence, First-Line Viewpoints, and Entity Index |
+| Data Center | `01-SiteV2/site/data-center.html` | Unified V4 entry for Commercial Events, FDE, AI Hardware, Community Intelligence, First-Line Viewpoints, Industry Dossiers, and the entity-centered one-hop Relationship Map |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Independent V4 Application Center entry for daily, weekly, and monthly evidence-backed factual change exploration |
 | Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 sidebar application entry containing latest Monthly / Weekly reports and report archives |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent V4 sidebar application entry containing source-backed Entry Point Map, Product Pain Map, and click-to-open evidence modals |
@@ -175,6 +175,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.2.3-relationship-map` | Data Center Industry Dossiers / entity-centered Relationship Map / relationship evidence detail service | 2026-07-25 | 2026-07-25T13:44:11+08:00 | SITE-V4.2.0-entity-history / ENTITY-V1.0 / RELATION-V2.1 | Entity and relationship database labels returning to the public navigation; unbounded global graph; Tag-co-occurrence, viewpoint, inferred, scored, or recommendation edges; relationship detail without accepted event, exact Claim, and source references | Data Center core tests + entity-history integrity gate + desktop/mobile browser verification + GitHub Pages live verification |
 | `HERMES-V4.0-freeze-control-plane-watchdog-20260725` | Daily automation controllers / Operations Backend / incident registry | 2026-07-25 | 2026-07-25T10:20:00+08:00 | HERMES-V4.0-control-plane-watchdog | Hermes inspecting V4 data quality, V3 compatibility Cards, lane counts, First-Line/Community/report publication, dispatching recovery, invoking Codex, or writing routine lane incidents | controller-report watchdog tests + script syntax + Skill Ops audit + current-rule hygiene |
 | `v4.2.2-trend-radar` | Trend Radar / shared V4 Application Center navigation / Skill Store | 2026-07-19 | 2026-07-19T18:40:00+08:00 | TRADAR-V1.0.0-factual-change-explorer / Skill Store v1.6.4 | Report prose, opportunity/trend scoring, heat or maturity judgments, community/viewpoint/V3 inputs, missing coverage disclosure, or untraceable period records returning to Trend Radar | Trend Radar evidence/count gate + entity-kind tests + frontstage tests + Skill Ops + version consistency + code/rule audit + GitHub Pages deploy |
 | `V4.2-governance-alignment-20260718` | Current V4 pages / Operations Backend / column Skills / version gates | 2026-07-18 | 2026-07-18T17:19:02+08:00 | SITE-V4.2.0-entity-history / PERSON-REVIEW-V1.0 / Skill Store v1.6.3 / Git tag v4.2.1-governance-alignment | stale SITE-V3.4.5 dashboard metadata; shared IMAP preflight; Opportunity Map nested under Reports Center; duplicate root Skill sources; V3 taxonomy declared as V4 truth; unreviewed or non-natural accounts in the public person index | version consistency gate + V4 data/entity/tag tests + Skill validation/sync/audit + frontstage regression + GitHub Pages live verification |
@@ -224,6 +225,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| `v4.2.3-relationship-map` | 2026-07-25T13:44:11+08:00 | Renames Entity Index and Relationship Index to Industry Dossiers and Relationship Map, adds an entity-centered one-hop graph, evidence detail rail, relationship timeline, 7/30-day change filters, and split Claim/source-backed relationship detail loading while preserving the V4 factual boundary. | current public presentation |
 | HERMES-V4.0-control-plane-watchdog | 2026-07-25T10:20:00+08:00 | Retires Hermes daily lane supervision and compatibility-Card inspection. Hermes now checks only whether the morning, recovery, and closure controllers left readable reports; routine failures use the neutral production incident registry and Closure/Codex repair path. | current automation governance |
 | V4.2 governance alignment / PERSON-REVIEW-V1.0 / Skill Store v1.6.3 | 2026-07-18T17:19:02+08:00 | Aligns the current version ledger, dashboard, supervision, column Skills, taxonomy routing, and release gates while preserving SITE-V4.2.0 canonical data and 31 reviewed natural-person profiles. | current governance |
 | REPORTS-V1.0.0 / OMAP-V1.0.0 / Skill Store v1.6.2 | 2026-07-18T13:17:22+08:00 | Splits Reports Center and Opportunity Map into independently versioned Application Center columns. The report release owns gated Markdown-to-page generation through the monthly/weekly page-generator Skills; the map release owns the dedicated source-backed projection and two evidence-backed matrices. | current applications |

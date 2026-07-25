@@ -56,7 +56,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 
 ## Active Frontstage
 
-- `01-SiteV2/site/data-center.html`: Commercial Events, FDE, AI hardware, Community Intelligence, First-Line Viewpoints, and Entity Index.
+- `01-SiteV2/site/data-center.html`: Commercial Events, FDE, AI hardware, Community Intelligence, First-Line Viewpoints, Industry Dossiers, and the one-hop Relationship Map.
 - `01-SiteV2/site/intelligence-map.html`: Industry Reports, opportunity maps, and report archive.
 - `01-SiteV2/site/weekly-ai-business-change-radar.html`: weekly AI business change radar detail page.
 - `01-SiteV2/site/v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html`: compatibility redirects only.

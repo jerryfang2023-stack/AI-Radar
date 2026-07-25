@@ -36,7 +36,8 @@ Data Center
 |- Commercial Events
 |- First-Line Viewpoints
 |- Community Intelligence
-`- Entity Index
+|- Industry Dossiers (Entity Index)
+`- Relationship Map (entity-centered one-hop factual graph)
 Application Center
 |- Trend Radar
 |- Industry Reports

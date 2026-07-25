@@ -52,7 +52,7 @@ const ledgerChecks = [
   ["Trend Radar column version", expected.trendRadar],
   ["Person-account review contract", expected.person],
   ["Skill Store version", expected.skillStore],
-  ["Git tag", "v4.2.2-trend-radar"],
+  ["Git tag", "v4.2.3-relationship-map"],
 ];
 for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
