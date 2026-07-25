@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-24T01:28:02.081Z",
-    "latestDataDate": "2026-07-24",
-    "currentDate": "2026-07-24",
-    "eventCount": 1491,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1530,
+    "quarantinedEventCount": 18
   },
   "node": {
     "id": "TX-industry-automotive_transportation",
@@ -851,6 +851,7 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
+        "EV-0d5a32aca724d30e",
         "EV-9852a10590030da9",
         "EV-1ba939d8baf43207",
         "EV-941ba9ebdc43f20c",
@@ -912,18 +913,21 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-professional_services",
         "TX-use_case-robotics_automation",
+        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
@@ -931,14 +935,12 @@
         "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
-        "TX-technology-multimodal",
+        "TX-industry-government_public_sector",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-industry-government_public_sector",
-        "TX-technology-image_generation",
-        "TX-technology-computer_use"
+        "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-bbdefa2950f49882",
@@ -946,7 +948,7 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-f2476f180c07c1c6",
@@ -995,8 +997,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
+        "TX-industry-automotive_transportation",
         "TX-technology-long_context",
         "TX-technology-on_device",
         "TX-technology-tool_use"
@@ -1056,7 +1058,6 @@
         "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
         "EV-5b16886442234f81",
-        "EV-80f4e7972384ace8",
         "EV-ef6464cf7f764835",
         "EV-b95539d17772a4ce",
         "EV-f63462e34ea40699",
@@ -1064,6 +1065,10 @@
         "EV-4faa2bcf2e42e60c",
         "EV-9ee3c0ec243b6129",
         "EV-58c1cc3749294649",
+        "EV-80f4e7972384ace8",
+        "EV-5bc7efca0bc7fec0",
+        "EV-702276a31f123374",
+        "EV-243e73016576fa43",
         "EV-563843979fb55b9b",
         "EV-7f92b7e410ed08f1",
         "EV-87f052d24396fdbc",
@@ -1126,6 +1131,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-ae117a54e1332539",
         "EV-89bdda008227fb6b",
         "EV-89f9216de5b559ac",
         "EV-c14e5185fd6bbe30",
@@ -1138,10 +1144,11 @@
       "classificationRefs": [
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-long_context",
@@ -1153,18 +1160,19 @@
         "TX-technology-fine_tuning",
         "TX-use_case-research_science",
         "TX-technology-open_weights",
-        "TX-technology-multimodal",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-image_generation",
         "TX-technology-distillation",
+        "TX-technology-image_generation",
+        "TX-technology-human_in_loop",
         "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
       "relatedEntityIds": [
+        "EN-b5738c169b693bee",
         "EN-c70eca6b0f88f44d",
         "EN-7dfafb44ee67bcd8",
         "EN-e07654c7cc29acbd",
@@ -1179,7 +1187,6 @@
         "EN-956b7280912ef1cc",
         "EN-4a639cb888a15d75",
         "EN-8d323d8bba783aa3",
-        "EN-b5738c169b693bee",
         "EN-51fd7dc086fcb858",
         "EN-9e193e1ec8d75d41",
         "EN-3ae50afab3e392b8",
@@ -1194,7 +1201,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -1211,12 +1218,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-multimodal",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai",
-        "TX-technology-multimodal",
         "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [],
@@ -1242,12 +1249,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-multimodal",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-embodied_ai",
-        "TX-technology-multimodal",
         "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [
@@ -1276,14 +1283,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-technology-multimodal",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
         "TX-technology-on_device",
         "TX-technology-embodied_ai",
-        "TX-technology-multimodal",
         "TX-industry-telecommunications"
       ],
       "relatedEntityIds": [],
@@ -1392,6 +1399,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-eec1e6857f0e0b2b",
         "EV-6acfb15c012ddf6d",
+        "EV-00518fdcb2de1f48",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
         "EV-b833b29d904b39ac",
@@ -1401,8 +1409,11 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-5bc7efca0bc7fec0",
+        "EV-702276a31f123374",
         "EV-37ff2485172cab0b",
         "EV-82ae0ea3bfe336a1",
+        "EV-243e73016576fa43",
         "EV-563843979fb55b9b",
         "EV-6c81f03e885f10af",
         "EV-e1e30a2a4a5232c6",
@@ -1446,6 +1457,8 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-ae117a54e1332539",
+        "EV-bce258f8f915ff5f",
         "EV-89bdda008227fb6b",
         "EV-62df953d81def866",
         "EV-1b92b6c835ce240c",
@@ -1458,25 +1471,27 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-industry-retail_ecommerce",
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-robotics_automation",
-        "TX-use_case-software_development",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
+        "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
-        "TX-technology-image_generation",
         "TX-technology-distillation",
-        "TX-technology-computer_use"
+        "TX-technology-image_generation",
+        "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
         "EN-688f8db7018da7d4",
@@ -1493,7 +1508,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-2f354de778e6a6da",

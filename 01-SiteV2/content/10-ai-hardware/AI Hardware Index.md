@@ -2,7 +2,7 @@
 type: ai_hardware_index
 status: current
 hardware_version: HARDWARE-V1.0
-updated_at: 2026-07-23T03:54:04.318Z
+updated_at: 2026-07-25T02:56:36.628Z
 ---
 
 # AI Hardware Index
@@ -13,6 +13,8 @@ updated_at: 2026-07-23T03:54:04.318Z
 
 ## Daily Views
 
+- [[daily/2026-07-25 AI Hardware|2026-07-25 AI Hardware]]
+- [[daily/2026-07-24 AI Hardware|2026-07-24 AI Hardware]]
 - [[daily/2026-07-23 AI Hardware|2026-07-23 AI Hardware]]
 - [[daily/2026-07-22 AI Hardware|2026-07-22 AI Hardware]]
 - [[daily/2026-07-21 AI Hardware|2026-07-21 AI Hardware]]

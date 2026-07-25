@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-24T01:28:02.081Z",
-    "latestDataDate": "2026-07-24",
-    "currentDate": "2026-07-24",
-    "eventCount": 1491,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1530,
+    "quarantinedEventCount": 18
   },
   "entity": {
     "id": "EN-6d37feda49a46792",
@@ -21,6 +21,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-b2311266a6b19a7c",
       "EV-918fc324de3117bd",
       "EV-b4e7187a9bd1de0e"
     ],
@@ -28,13 +29,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-08",
-    "lastSeen": "2026-07-01",
+    "lastSeen": "2026-07-25",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-b2311266a6b19a7c",
         "EV-918fc324de3117bd",
         "EV-b4e7187a9bd1de0e"
       ],
@@ -43,6 +45,29 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b2311266a6b19a7c",
+        "dataDate": "2026-07-25",
+        "date": "2026-07-24",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "亚马逊升级 Alexa+ AI 助手，支持购物、餐厅预订、叫车等任务",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "entityIds": [
+          "EN-6d37feda49a46792",
+          "EN-a0dd94cdfc594611"
+        ]
+      },
       {
         "id": "EV-918fc324de3117bd",
         "dataDate": "2026-07-01",

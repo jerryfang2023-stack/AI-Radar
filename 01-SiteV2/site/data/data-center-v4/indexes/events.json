@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.0",
-    "generatedAt": "2026-07-24T01:28:02.081Z",
-    "latestDataDate": "2026-07-24",
-    "currentDate": "2026-07-24",
-    "eventCount": 1491,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-25T02:59:55.128Z",
+    "latestDataDate": "2026-07-25",
+    "currentDate": "2026-07-25",
+    "eventCount": 1530,
+    "quarantinedEventCount": 18
   },
   "eventTypes": {
     "model_release": {
@@ -113,6 +113,560 @@
     }
   },
   "events": [
+    {
+      "id": "EV-095e1a90f14ccdb9",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "in_progress",
+      "statusLabel": "进行中",
+      "publicationStatus": "partial",
+      "title": "Prentis 正以 10 亿美元估值洽谈融资 1 亿美元",
+      "originalTitle": "",
+      "subject": "Prentis 正以 10 亿美元估值洽谈",
+      "action": "融资",
+      "object": "1 亿美元",
+      "metrics": [
+        "$100M",
+        "$100 million",
+        "$1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-9d4cbc0ceab2c56a"
+      ],
+      "entityNames": [
+        "Prentis"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-136b2edc9b9f3be8",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+      "originalTitle": "Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz",
+      "subject": "Accel, Iconiq Join $34M",
+      "action": "Series A",
+      "object": "for Paper, Design Platform for AI Era | citybiz",
+      "metrics": [
+        "$34 million",
+        "$34 Million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "technology",
+            "dimensionName": "行业",
+            "name": "科技与软件"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        }
+      ],
+      "entityIds": [
+        "EN-ab9b29074a980e4b",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-382635c9325bf327",
+        "EN-3db1f560db626918",
+        "EN-8f71c4871a160172"
+      ],
+      "entityNames": [
+        "Accel",
+        "Anthropic",
+        "OpenAI",
+        "Paper",
+        "Canva",
+        "Thinking Machines Lab"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era",
+      "publisher": "citybiz.co"
+    },
+    {
+      "id": "EV-72c64a5967f8af15",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Midjourney 收购占星应用 Co-Star",
+      "originalTitle": "Midjourney bought the astrology app Co-Star",
+      "subject": "Midjourney",
+      "action": "acquisition",
+      "object": "Co-Star",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d931372ba7f836a0"
+      ],
+      "entityNames": [
+        "Midjourney"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-ca2587895f498112",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Midjourney 收购占星应用 Co-Star",
+      "originalTitle": "Midjourney acquired the astrology app Co-Star",
+      "subject": "Midjourney",
+      "action": "acquired",
+      "object": "the astrology app Co-Star",
+      "metrics": [
+        "4.3 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-d931372ba7f836a0"
+      ],
+      "entityNames": [
+        "Midjourney"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/24/midjourney-acquired-the-astrology-app-co-star",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-d2e31ba8e0ec10cf",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cognition 收购 Poke 的原因：AI 个性正成为竞争优势",
+      "originalTitle": "Why Cognition bought Poke: AI personality is becoming a competitive advantage",
+      "subject": "Cognition",
+      "action": "acquisition",
+      "object": "The Interaction Company of California",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-ac32f27ba7a1346f"
+      ],
+      "entityNames": [
+        "Cognition"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-d3054a8a2b62a503",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "腾讯混元大语言模型与多模态团队合并，成立基础模型部由姚顺雨统一管理",
+      "originalTitle": "",
+      "subject": "腾讯混元大语言模型与多模态团队",
+      "action": "合并",
+      "object": "，成立基础模型部由姚顺雨统一管理",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e",
+        "EN-5d7b7e77768bfdfc"
+      ],
+      "entityNames": [
+        "Tencent",
+        "多模态"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/121.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fccae707ab8979fe",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "美国科学的科技兄弟化已正式开启",
+      "originalTitle": "The tech-broification of American science has officially begun",
+      "subject": "Trump administration",
+      "action": "funding",
+      "object": "Genesis Mission grants",
+      "metrics": [
+        "$5 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-6b4af3c2c8567e7d"
+      ],
+      "entityNames": [
+        "Trump administration"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-bffc68e7bb4d598b",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Hadrius 融资 2700 万美元，打造智能体合规基础设施",
+      "originalTitle": "Hadrius Raises $27M to Build Agentic Compliance Infrastructure",
+      "subject": "Hadrius",
+      "action": "Raises",
+      "object": "$27M to Build Agentic Compliance Infrastructure",
+      "metrics": [
+        "$27M",
+        "$27 million",
+        "70%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-7f67f2f8692510cf"
+      ],
+      "entityNames": [
+        "Hadrius"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theaiinsider.tech/2026/07/23/hadrius-raises-27m-to-build-agentic-compliance-infrastructure",
+      "publisher": "theaiinsider.tech"
+    },
     {
       "id": "EV-a64fab2ce6bc6c4c",
       "dataDate": "2026-07-24",
@@ -3250,70 +3804,6 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs",
       "publisher": "TechCrunch：AI（RSS）"
-    },
-    {
-      "id": "EV-095e1a90f14ccdb9",
-      "dataDate": "2026-07-13",
-      "date": "2026-07-10",
-      "updatedDate": "2026-07-13",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Lyzr 的 AI 智能体自行完成了 1 亿美元 B 轮融资",
-      "originalTitle": "Lyzr's AI agent ran its own $100M Series B fundraise — AI Chat Daily",
-      "subject": "Lyzr's AI agent ran its own $100M",
-      "action": "Series B",
-      "object": "fundraise — AI Chat Daily",
-      "metrics": [
-        "$100M",
-        "$400M",
-        "$500M"
-      ],
-      "locations": [],
-      "missingFields": [
-        "entities"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "entityIds": [],
-      "entityNames": [],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://aichatdaily.com/ai-business/lyzr-s-ai-agent-ran-own-100m-series",
-      "publisher": "aichatdaily.com"
     },
     {
       "id": "EV-15cc72d7c78cad3d",
@@ -19582,6 +20072,113 @@
       "publisher": "eqvista.com"
     },
     {
+      "id": "EV-acdeebead5324344",
+      "dataDate": "2026-07-25",
+      "date": "2026-03-30",
+      "updatedDate": "2026-07-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Qodo 获 7000 万美元融资，用于 AI 编码扩展中的代码验证",
+      "originalTitle": "Qodo raises $70M for code verification as AI coding scales",
+      "subject": "Qodo",
+      "action": "raises",
+      "object": "$70M for code verification as AI coding scales",
+      "metrics": [
+        "$70M",
+        "$70 million",
+        "$120 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-5b3767eb23d5e4ed",
+        "EN-7d3194f79e645c42",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Qodo",
+        "OpenAI",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-0b6cfbf67ba2da31",
       "dataDate": "2026-07-23",
       "date": "2026-03-12",
@@ -20071,6 +20668,90 @@
       "publisher": "startupecosystem.ca"
     },
     {
+      "id": "EV-d10684a6f16afe10",
+      "dataDate": "2026-07-25",
+      "date": "2024-09-05",
+      "updatedDate": "2026-07-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "All Hands AI 获 500 万美元融资，为开发者构建开源 AI 智能体",
+      "originalTitle": "All Hands AI raises $5M to build open source agents for developers | TechCrunch",
+      "subject": "All Hands AI",
+      "action": "raises",
+      "object": "$5M to build open source agents for developers",
+      "metrics": [
+        "$5M",
+        "$5 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "id": "developer",
+            "dimensionName": "目标用户",
+            "name": "开发者"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "developer",
+          "dimensionName": "目标用户",
+          "name": "开发者"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "target_user",
+          "id": "developer",
+          "dimensionName": "目标用户",
+          "name": "开发者"
+        }
+      ],
+      "entityIds": [
+        "EN-df30a48992da7fe8"
+      ],
+      "entityNames": [
+        "All Hands AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2024/09/05/all-hands-ai-raises-5m-to-build-open-source-agents-for-developers",
+      "publisher": "techcrunch.com"
+    },
+    {
       "id": "EV-acf1bcb321414706",
       "dataDate": "2026-07-20",
       "date": "2023-06-28",
@@ -20154,6 +20835,239 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2023/06/28/parabola-workflow-automation-startup",
       "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-2a101d792d92fb1f",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 升级 ChatGPT 桌面应用，GPT-Live 模型驱动语音模式上线",
+      "originalTitle": "",
+      "subject": "OpenAI 升级 ChatGPT 桌面应用，GPT-Live 模型驱动语音模式",
+      "action": "上线",
+      "object": "OpenAI 升级 ChatGPT 桌面应用，GPT-Live 模型驱动语音模式上线",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/980/975.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-2ca230a3dec71ba6",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Runway Media Router 上线：根据场景自动切换 AI 模型，节省 Token 成本",
+      "originalTitle": "",
+      "subject": "Runway Media Router",
+      "action": "上线",
+      "object": "：根据场景自动切换 AI 模型，节省 Token 成本",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "technology",
+            "dimensionName": "行业",
+            "name": "科技与软件"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        }
+      ],
+      "entityIds": [
+        "EN-fc77f762a5c2afc1"
+      ],
+      "entityNames": [
+        "Runway Media Router"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/144.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-3c192fe2fcc54993",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "HCLTech 联手奥里萨邦政府及 Sarvam 建设 1425.7 亿卢比 AI 数据中心",
+      "originalTitle": "",
+      "subject": "HCLTech 联手奥里萨邦政府及 Sarvam",
+      "action": "建设 1425.7 亿卢比 AI 数据中心",
+      "object": "HCLTech 联手奥里萨邦政府及 Sarvam 建设 1425.7 亿卢比 AI 数据中心",
+      "metrics": [
+        "1425.7 亿",
+        "100.04 亿"
+      ],
+      "locations": [
+        "印度"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "government_public_sector",
+            "dimensionName": "行业",
+            "name": "政府与公共部门"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "government_public_sector",
+          "dimensionName": "行业",
+          "name": "政府与公共部门"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "government_public_sector",
+          "dimensionName": "行业",
+          "name": "政府与公共部门"
+        }
+      ],
+      "entityIds": [
+        "EN-e6f146354586d556",
+        "EN-4a354bbc9b70a6e6",
+        "EN-ee1e31ffef7dbe64"
+      ],
+      "entityNames": [
+        "HCLTech",
+        "Government of Odisha",
+        "Sarvam"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/379.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-b78d7fc420117d68",
@@ -29971,6 +30885,47 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-ecce694f17ac8ed9",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AMD 携手 Cerebras 押注低时延 AI 推理：每瓦每秒 Token 吞吐提升 5 倍",
+      "originalTitle": "",
+      "subject": "AMD",
+      "action": "partnership",
+      "object": "Cerebras",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-240389f4b730bad4"
+      ],
+      "entityNames": [
+        "AMD"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/112.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-b334f46b11a68045",
       "dataDate": "2026-07-24",
       "date": "2026-07-24",
@@ -30428,6 +31383,49 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/979/773.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-00518fdcb2de1f48",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-25",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "微软将在Azure中使用AMD的AI优化Helios机架",
+      "originalTitle": "Microsoft will use AMD’s AI-optimized Helios racks in Azure - SiliconANGLE",
+      "subject": "Microsoft Corp.",
+      "action": "partnership",
+      "object": "Advanced Micro Devices Inc.",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3d5e343dd47b9389",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft Corp.",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://siliconangle.com/2026/07/20/microsoft-will-use-amds-ai-optimized-helios-racks-azure",
+      "publisher": "siliconangle.com"
     },
     {
       "id": "EV-2a833330267cb2df",
@@ -31988,72 +32986,6 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/04/22/openai-teams-up-with-infosys-to-bring-ai-tools-to-more-businesses",
       "publisher": "techcrunch.com"
-    },
-    {
-      "id": "EV-80f4e7972384ace8",
-      "dataDate": "2026-07-09",
-      "date": "2026-07-09",
-      "updatedDate": "2026-07-09",
-      "eventType": "partnership",
-      "eventTypeLabel": "合作",
-      "eventGroup": "商业合作",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "ServiceNow 借助 NVIDIA 将 AI 智能体治理从桌面扩展到数据中心",
-      "originalTitle": "ServiceNow extends agentic AI governance from desktops to data centers with NVIDIA – Company Announcement - FT.com",
-      "subject": "ServiceNow",
-      "action": "partnership",
-      "object": "NVIDIA",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "entityIds": [
-        "EN-b5738c169b693bee",
-        "EN-8d4321d936320802"
-      ],
-      "entityNames": [
-        "ServiceNow",
-        "NVIDIA"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202605051259BIZWIRE_USPRX____20260505_BW530706-1",
-      "publisher": "markets.ft.com"
     },
     {
       "id": "EV-8ab833e13ecaa916",
@@ -35875,6 +36807,70 @@
       "publisher": "anthropic.com"
     },
     {
+      "id": "EV-80f4e7972384ace8",
+      "dataDate": "2026-07-25",
+      "date": "2026-05-05",
+      "updatedDate": "2026-07-25",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "ServiceNow 借助 NVIDIA 将 AI 智能体治理从桌面扩展到数据中心",
+      "originalTitle": "ServiceNow extends agentic AI governance from desktops to data centers with NVIDIA – Company Announcement - FT.com",
+      "subject": "ServiceNow",
+      "action": "partnership",
+      "object": "NVIDIA",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-b5738c169b693bee",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "ServiceNow",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605051259BIZWIRE_USPRX____20260505_BW530706-1",
+      "publisher": "markets-data-api-proxy.ft.com"
+    },
+    {
       "id": "EV-bd508dbe4205774f",
       "dataDate": "2026-07-17",
       "date": "2026-04-16",
@@ -36104,6 +37100,1377 @@
       "products": [],
       "sourceUrl": "https://cnbc.com/2026/02/23/open-ai-consulting-accenture-boston-capgemini-mckinsey-frontier.html",
       "publisher": "cnbc.com"
+    },
+    {
+      "id": "EV-0e616f9e775a77dc",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Claude Code v2.1.219 发布：新增 Claude Opus 5，支持 1M 上下文与嵌套子智能体",
+      "originalTitle": "",
+      "subject": "Claude Code v2.1.219",
+      "action": "发布",
+      "object": "：新增 Claude Opus 5，支持 1M 上下文与嵌套子智能体",
+      "metrics": [
+        "$10",
+        "$50 "
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-369c5771d6c09953",
+        "EN-bf8951127ecb940e"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Code v2.1.219",
+        "Claude Opus 5"
+      ],
+      "productName": "Claude Code v2.1.219",
+      "products": [
+        {
+          "name": "Claude Code v2.1.219",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Claude Opus 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+      "publisher": "Claude Code：GitHub Releases（RSS）"
+    },
+    {
+      "id": "EV-283e9c6ddce1a271",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "苹果 macOS 27 邮件应用测试\"Write with Siri\"，整合 Siri AI 交互",
+      "originalTitle": "",
+      "subject": "苹果公司",
+      "action": "product_release",
+      "object": "macOS 27 邮件应用\"Write with Siri\"功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5fd3c456802ba96b",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "苹果公司",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/404.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-2ee06634c0ce9f30",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "推出 Claude Opus 5",
+      "originalTitle": "Introducing Claude Opus 5",
+      "subject": "Anthropic",
+      "action": "model_release",
+      "object": "Claude Opus 5",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-bf8951127ecb940e",
+        "EN-fe1f44895b4c4811"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Opus 5",
+        "Introducing Claude Opus 5"
+      ],
+      "productName": "Claude Opus 5",
+      "products": [
+        {
+          "name": "Claude Opus 5",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Introducing Claude Opus 5",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://simonwillison.net/2026/Jul/24/introducing-claude-opus-5",
+      "publisher": "Simon Willison's Blog"
+    },
+    {
+      "id": "EV-5bc7efca0bc7fec0",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "黄仁勋入驻 X 首条推文：英伟达等 25 家公司力挺开源 AI",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "黄仁勋入驻 X 首条推文：英伟达等 25 家公司力挺开源 AI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-3855778c78a8acaa",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-ea3bd73e2b506e00",
+        "EN-916a98f0fa2a39af"
+      ],
+      "entityNames": [
+        "黄仁勋入驻 X 首条推文",
+        "NVIDIA",
+        "Microsoft",
+        "Meta",
+        "IBM"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/423.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c59d80939faf17cc",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic Opus 5 发布：性能逼近 Fable 5 但价格砍半，刷新 ARC-AGI-3 纪录",
+      "originalTitle": "",
+      "subject": "Anthropic Opus 5",
+      "action": "发布",
+      "object": "：性能逼近 Fable 5 但价格砍半，刷新 ARC-AGI-3 纪录",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-163fa867e7ef6ee6"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Opus 5"
+      ],
+      "productName": "Opus 5",
+      "products": [
+        {
+          "name": "Opus 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/398.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c9aba59ba04c9fc8",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 发布 Opus 5，能力“接近”Fable 5",
+      "originalTitle": "Anthropic releases Opus 5 with ‘close’ to Fable 5’s capabilities",
+      "subject": "Anthropic",
+      "action": "releases",
+      "object": "Opus 5 with ‘close’ to Fable 5’s capabilities",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-163fa867e7ef6ee6",
+        "EN-9f15bb7e29e191eb"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "OpenAI",
+        "Opus 5",
+        "Fable 5"
+      ],
+      "productName": "Opus 5",
+      "products": [
+        {
+          "name": "Opus 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Fable 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-d3a47b7f6243a909",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Meta 正将其 AI 聊天机器人打造成更像助手的形态",
+      "originalTitle": "Meta is making its AI chatbot more like an assistant",
+      "subject": "Meta",
+      "action": "product_release",
+      "object": "Meta AI chatbot productivity update",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        }
+      ],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://theverge.com/tech/970570/meta-ai-chatbot-productivity-update",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-fdc4c26edadb4cea",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Meta 推出\"Facebook Verified\"免费徽章，打击 AI 生成虚假账号",
+      "originalTitle": "",
+      "subject": "Meta",
+      "action": "推出",
+      "object": "\"Facebook Verified\"免费徽章，打击 AI 生成虚假账号",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ea3bd73e2b506e00",
+        "EN-af54bb0c9a39eb30"
+      ],
+      "entityNames": [
+        "Meta",
+        "Facebook Verified"
+      ],
+      "productName": "Facebook Verified",
+      "products": [
+        {
+          "name": "Facebook Verified",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Meta"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/426.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-0609f4badfe84803",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Bluesky 的 AI 助手 Attie 扩展为开放社交研究工具，新增 Quests 功能",
+      "originalTitle": "",
+      "subject": "Bluesky 的 AI 助手 Attie 扩展为开放社交研究工具，",
+      "action": "新增",
+      "object": "Quests 功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        }
+      ],
+      "entityIds": [
+        "EN-76dc4156f3e14597"
+      ],
+      "entityNames": [
+        "Quests"
+      ],
+      "productName": "Quests",
+      "products": [
+        {
+          "name": "Quests",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-0d5a32aca724d30e",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Kimi K3 在网络安全漏洞方面大幅落后于美国前沿模型，蒸馏技术或可解释原因",
+      "originalTitle": "Kimi K3 trails frontier US models by a wide margin on cyber exploits, and distillation may explain why",
+      "subject": "undisclosed_subject",
+      "action": "Kimi K3 trails frontier US model",
+      "object": "s by a wide margin on cyber exploits, and distillation may explain why",
+      "metrics": [
+        "2.8 万",
+        "100 万"
+      ],
+      "locations": [
+        "US",
+        "U.S.",
+        "China",
+        "美国",
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "media_entertainment",
+            "dimensionName": "行业",
+            "name": "媒体与娱乐"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "media_entertainment",
+          "dimensionName": "行业",
+          "name": "媒体与娱乐"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "long_context",
+          "name": "长上下文"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "media_entertainment",
+          "dimensionName": "行业",
+          "name": "媒体与娱乐"
+        }
+      ],
+      "entityIds": [
+        "EN-b5251b35f15bedc4",
+        "EN-607964040e4b62e0",
+        "EN-dc33b6ff77e3359c",
+        "EN-7d3194f79e645c42",
+        "EN-c69fd0dcf781cbf6",
+        "EN-481243d2f2a235c1",
+        "EN-c70eca6b0f88f44d",
+        "EN-7839fb10a8f14c70",
+        "EN-047364b9be67f665",
+        "EN-96eebba49dbbf422",
+        "EN-10a27c6240d18dbe"
+      ],
+      "entityNames": [
+        "Moonshot AI",
+        "Kimi K3",
+        "AI communism’",
+        "OpenAI",
+        "Wall Street",
+        "月之暗面",
+        "Anthropic",
+        "GPT-5.6 Sol",
+        "Alibaba",
+        "Intel",
+        "Qwen 3.8"
+      ],
+      "productName": "Kimi K3",
+      "products": [
+        {
+          "name": "Kimi K3",
+          "type": "模型",
+          "ownerNames": [
+            "Moonshot AI"
+          ]
+        },
+        {
+          "name": "Wall Street",
+          "type": "模型",
+          "ownerNames": [
+            "Moonshot AI"
+          ]
+        },
+        {
+          "name": "GPT-5.6 Sol",
+          "type": "模型",
+          "ownerNames": [
+            "Moonshot AI"
+          ]
+        },
+        {
+          "name": "Qwen 3.8",
+          "type": "模型",
+          "ownerNames": [
+            "Moonshot AI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/kimi-k3-trails-frontier-us-models-by-a-wide-margin-on-cyber-exploits-and-distillation-may-explain-why",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-171304f50961d182",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "微星发布 4L 紧凑型台式机 PRO MAX EDGE AI+，基于 AMD 锐龙 AI Max+ 300",
+      "originalTitle": "",
+      "subject": "微星",
+      "action": "发布",
+      "object": "4L 紧凑型台式机 PRO MAX EDGE AI+，基于 AMD 锐龙 AI Max+ 300",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-78c72c4f2487a93f",
+        "EN-20f160b5a3e897c8"
+      ],
+      "entityNames": [
+        "微星",
+        "PRO MAX EDGE AI"
+      ],
+      "productName": "PRO MAX EDGE AI",
+      "products": [
+        {
+          "name": "PRO MAX EDGE AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/386.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-32fb6014149bafdd",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Anthropic 发布 Opus 5，性能超越 Fable 5 且限制更少",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "发布",
+      "object": "Opus 5，性能超越 Fable 5 且限制更少",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-163fa867e7ef6ee6"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Opus 5"
+      ],
+      "productName": "Opus 5",
+      "products": [
+        {
+          "name": "Opus 5",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-6f1729f6968b72c9",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "蚂蚁集团发布百灵原生混合推理模型 Ling-3.0-flash",
+      "originalTitle": "",
+      "subject": "蚂蚁集团",
+      "action": "发布百灵原生混合推理模型",
+      "object": "Ling-3.0-flash",
+      "metrics": [
+        "12.4%",
+        "8.1%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "reasoning",
+          "name": "推理能力"
+        }
+      ],
+      "entityIds": [
+        "EN-d30e5ffc0ba9150b",
+        "EN-8989aada6eb4a4c3"
+      ],
+      "entityNames": [
+        "蚂蚁集团",
+        "Ling-3.0-flash"
+      ],
+      "productName": "Ling-3.0-flash",
+      "products": [
+        {
+          "name": "Ling-3.0-flash",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/382.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-702276a31f123374",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "微软、英伟达、Meta 等 25 家公司签署公开信，呼吁美国政府支持开源权重 AI 模型",
+      "originalTitle": "",
+      "subject": "微软、英伟达、Meta 等 25 家公司签署公开信，呼吁美国政府支持",
+      "action": "开源权重 AI 模型",
+      "object": "微软、英伟达、Meta 等 25 家公司签署公开信，呼吁美国政府支持开源权重 AI 模型",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "distillation",
+          "name": "模型蒸馏"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "distillation",
+          "name": "模型蒸馏"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "distillation",
+          "name": "模型蒸馏"
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "NVIDIA",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/384.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-7de7614b6a0a0e78",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Claude Code 整合 Rust 重构版 Bun，Linux 启动快 10%",
+      "originalTitle": "",
+      "subject": "Claude Code v2.1.181",
+      "action": "product_release",
+      "object": "Rust 重构版 Bun",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-cb4754c48f8023d0"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Code"
+      ],
+      "productName": "Claude Code",
+      "products": [
+        {
+          "name": "Claude Code",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/115.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-b2311266a6b19a7c",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "亚马逊升级 Alexa+ AI 助手，支持购物、餐厅预订、叫车等任务",
+      "originalTitle": "",
+      "subject": "亚马逊",
+      "action": "product_release",
+      "object": "Alexa+ AI 助手",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_application",
+            "dimensionName": "产品形态",
+            "name": "AI 应用"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_application",
+          "dimensionName": "产品形态",
+          "name": "AI 应用"
+        }
+      ],
+      "entityIds": [
+        "EN-6d37feda49a46792",
+        "EN-a0dd94cdfc594611"
+      ],
+      "entityNames": [
+        "亚马逊",
+        "Alexa+ AI"
+      ],
+      "productName": "Alexa+ AI",
+      "products": [
+        {
+          "name": "Alexa+ AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/338.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c16240c63a33f97a",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Claude Opus、Sonnet 模型现已支持语音模式，对话深度与任务执行能力提升",
+      "originalTitle": "",
+      "subject": "Anthropic",
+      "action": "model_release",
+      "object": "Claude Opus and Sonnet voice mode",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-2e0e1a870e12346c"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Claude Opus"
+      ],
+      "productName": "Claude Opus",
+      "products": [
+        {
+          "name": "Claude Opus",
+          "type": "模型",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/066.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c7e1e920e54bb364",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Black Forest Labs 发布 FLUX 3 多模态模型，支持单次生成 20 秒视频与原生音频",
+      "originalTitle": "",
+      "subject": "Black Forest Labs",
+      "action": "发布 FLUX 3 多模态模型",
+      "object": "，支持单次生成 20 秒视频与原生音频",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-febedfcafee9d610",
+        "EN-0bd85984211bd173"
+      ],
+      "entityNames": [
+        "Black Forest Labs",
+        "Flux 3"
+      ],
+      "productName": "Flux 3",
+      "products": [
+        {
+          "name": "Flux 3",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/137.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-e125efa8c6abb163",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "公安部：上半年共侦办利用 AI 工具生成网络谣言案件 170 余起",
+      "originalTitle": "",
+      "subject": "国家反诈中心 App",
+      "action": "product_release",
+      "object": "公安部：上半年共侦办利用 AI 工具生成网络谣言案件 170 余起",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0d3ead46c00ecd09"
+      ],
+      "entityNames": [
+        "Ministry of Public Security of China"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/044.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-f79713437230562f",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AMD 推出锐龙 AI 嵌入式 X100 处理器，为物理 AI 提供 Halo 级性能",
+      "originalTitle": "",
+      "subject": "AMD",
+      "action": "推出",
+      "object": "锐龙 AI 嵌入式 X100 处理器，为物理 AI 提供 Halo 级性能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "robot",
+            "dimensionName": "产品形态",
+            "name": "机器人"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4"
+      ],
+      "entityNames": [
+        "AMD"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/069.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-1dc482e2fe2f10bc",
@@ -36638,6 +39005,186 @@
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/23/andrew-ng-just-released-openworker-an-open-source-local-first-desktop-ai-coworker-that-returns-finished-deliverables-instead-of-chat",
       "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-243e73016576fa43",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AMD 推出基于开放以太网网络的 Helios AI 机架，与 Anthropic、OpenAI 和微软达成千兆瓦级交易",
+      "originalTitle": "AMD launches Helios AI rack on open Ethernet networking, stacks gigawatt deals with Anthropic, OpenAI and Microsoft",
+      "subject": "AMD",
+      "action": "launches",
+      "object": "Helios AI rack on open Ethernet networking, stacks gigawatt deals with Anthropic, OpenAI and Microsoft",
+      "metrics": [
+        "50%",
+        "13%",
+        "33%",
+        "38%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        }
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-7d3194f79e645c42",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802",
+        "EN-e1517be14d06cdb7",
+        "EN-c70eca6b0f88f44d",
+        "EN-9ff7e3ae1b1ab43f",
+        "EN-45c52af0feb0f285"
+      ],
+      "entityNames": [
+        "AMD",
+        "OpenAI",
+        "Microsoft",
+        "NVIDIA",
+        "MiniMax",
+        "Anthropic",
+        "Helios AI",
+        "Helios"
+      ],
+      "productName": "Helios AI",
+      "products": [
+        {
+          "name": "Helios AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        },
+        {
+          "name": "Helios",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "sourceUrl": "https://fierce-network.com/cloud/amds-helios-bets-ai-networking-open-ethernet",
+      "publisher": "fierce-network.com"
+    },
+    {
+      "id": "EV-d4d03a7ad477aaa2",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Flux 3 多模态前沿模型发布，支持图像/视频/音频联合学习",
+      "originalTitle": "",
+      "subject": "Flux 3 多模态前沿模型",
+      "action": "发布",
+      "object": "，支持图像/视频/音频联合学习",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0bd85984211bd173"
+      ],
+      "entityNames": [
+        "Flux 3"
+      ],
+      "productName": "Flux 3",
+      "products": [
+        {
+          "name": "Flux 3",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://bfl.ai/blog/flux-3",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
       "id": "EV-03d40407042d7986",
@@ -38305,122 +40852,6 @@
       ],
       "sourceUrl": "https://ithome.com/0/980/323.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-0d5a32aca724d30e",
-      "dataDate": "2026-07-23",
-      "date": "2026-07-22",
-      "updatedDate": "2026-07-23",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "开源模型季度盘点：Kimi K3、Qwen 3.8、WAIC 演讲、知识蒸馏与开源闭源差距",
-      "originalTitle": "",
-      "subject": "开源",
-      "action": "模型季度盘点：Kimi K3",
-      "object": "、Qwen 3.8、WAIC 演讲、知识蒸馏与开源闭源差距",
-      "metrics": [
-        "2.8 万"
-      ],
-      "locations": [
-        "US",
-        "China"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "distillation",
-          "name": "模型蒸馏"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "distillation",
-          "name": "模型蒸馏"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "distillation",
-          "name": "模型蒸馏"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "open_weights",
-          "name": "开放权重"
-        }
-      ],
-      "entityIds": [
-        "EN-16dc8ea1cf4807b0",
-        "EN-b5251b35f15bedc4",
-        "EN-047364b9be67f665",
-        "EN-cbc62794911ff31b",
-        "EN-10a27c6240d18dbe",
-        "EN-e6ac424c9ea83939",
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42",
-        "EN-607964040e4b62e0"
-      ],
-      "entityNames": [
-        "开源",
-        "Moonshot AI",
-        "Alibaba",
-        "Amazon",
-        "Qwen 3.8",
-        "月之暗面黄震昕",
-        "Anthropic",
-        "OpenAI",
-        "Kimi K3"
-      ],
-      "productName": "Qwen 3.8",
-      "products": [
-        {
-          "name": "Qwen 3.8",
-          "type": "模型",
-          "ownerNames": [
-            "Moonshot AI"
-          ]
-        },
-        {
-          "name": "Kimi K3",
-          "type": "模型",
-          "ownerNames": [
-            "Moonshot AI"
-          ]
-        }
-      ],
-      "sourceUrl": "https://interconnects.ai/p/open-models-recap-more-on-kimi-k3",
-      "publisher": "Nathan Lambert：Interconnects（RSS）"
     },
     {
       "id": "EV-18df881cc436b3cb",
@@ -56714,92 +59145,6 @@
       ],
       "sourceUrl": "https://techcrunch.com/2023/12/13/duet-ai-for-developers-googles-github-copilot-competitor-is-now-generally-available-and-will-soon-use-the-gemini-model",
       "publisher": "techcrunch.com"
-    },
-    {
-      "id": "EV-747d431512701d65",
-      "dataDate": "2026-07-10",
-      "date": "2026-07-10",
-      "updatedDate": "2026-07-10",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Atos 集团推出 Sovereign Agentic Studios，助力企业安全将 AI 投入生产",
-      "originalTitle": "Atos Group Launches Sovereign Agentic Studios to Bring AI Safely into Production Across Organizations – Company Announcement - FT.com",
-      "subject": "Atos Group",
-      "action": "Launches",
-      "object": "Sovereign Agentic Studios to Bring AI Safely into Production Across Organizations – Company Announcement - FT.com",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "entityIds": [
-        "EN-fa5bbac1048b9190",
-        "EN-d736115a934212d4",
-        "EN-a39230f0613145dc",
-        "EN-5f59f157b0f3c885"
-      ],
-      "entityNames": [
-        "Atos Group",
-        "FT.com",
-        "AI Safely",
-        "Sovereign Agentic Studios"
-      ],
-      "productName": "FT.com",
-      "products": [
-        {
-          "name": "FT.com",
-          "type": "产品/服务",
-          "ownerNames": []
-        },
-        {
-          "name": "AI Safely",
-          "type": "产品/服务",
-          "ownerNames": []
-        },
-        {
-          "name": "Sovereign Agentic Studios",
-          "type": "产品/服务",
-          "ownerNames": []
-        }
-      ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=1330-1001169683en-5U29EK31S3BTD5BTO88AFDU8JO",
-      "publisher": "markets.ft.com"
     },
     {
       "id": "EV-ae736eb124d7163a",
@@ -92022,6 +94367,90 @@
       "publisher": "figuringoutwithai.com"
     },
     {
+      "id": "EV-747d431512701d65",
+      "dataDate": "2026-07-25",
+      "date": "2026-03-12",
+      "updatedDate": "2026-07-25",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Atos 集团推出 Sovereign Agentic Studios，助力企业安全将 AI 投入生产",
+      "originalTitle": "Atos Group Launches Sovereign Agentic Studios to Bring AI Safely into Production Across Organizations – Company Announcement - FT.com",
+      "subject": "Atos Group",
+      "action": "Launches",
+      "object": "Sovereign Agentic Studios to Bring AI Safely into Production Across Organizations – Company Announcement - FT.com",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-fa5bbac1048b9190",
+        "EN-d736115a934212d4",
+        "EN-a39230f0613145dc",
+        "EN-5f59f157b0f3c885"
+      ],
+      "entityNames": [
+        "Atos Group",
+        "FT.com",
+        "AI Safely",
+        "Sovereign Agentic Studios"
+      ],
+      "productName": "FT.com",
+      "products": [
+        {
+          "name": "FT.com",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "AI Safely",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Sovereign Agentic Studios",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=1330-1001169683en-5U29EK31S3BTD5BTO88AFDU8JO",
+      "publisher": "markets.ft.com"
+    },
+    {
       "id": "EV-aaaa21ae510bc87e",
       "dataDate": "2026-07-19",
       "date": "2026-03-11",
@@ -92658,6 +95087,273 @@
       ],
       "sourceUrl": "https://techcrunch.com/2025/02/11/mattoboard-picks-up-2m-to-bring-ai-visual-search-to-its-3d-mood-board-for-designers",
       "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-10d155080dcea7d5",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "SK 海力士在美招募 DRAM-逻辑 3D 堆叠技术人才，面向设备内 AI 市场",
+      "originalTitle": "",
+      "subject": "SK 海力士",
+      "action": "organization_people",
+      "object": "DRAM - 逻辑 3D 堆叠领域技术人才",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/228.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-3aefbdfa5df2fd6a",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "小米新机入网备案文心一言、DeepSeek、通义千问等多款大模型，或搭载澎湃OS 4",
+      "originalTitle": "",
+      "subject": "小米新机入网",
+      "action": "备案",
+      "object": "文心一言、DeepSeek、通义千问等多款大模型，或搭载澎湃OS 4",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "entityIds": [
+        "EN-2d559a898cc329c8",
+        "EN-c608c4787821de1b",
+        "EN-6f7ac1823da81d2e"
+      ],
+      "entityNames": [
+        "小米新机入网",
+        "Xiaomi",
+        "DeepSeek"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/378.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-a6f52a6dada10cdf",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "ServiceNow 首席执行官：平台设有终止开关，可阻止AI智能体失控",
+      "originalTitle": "",
+      "subject": "ServiceNow",
+      "action": "financial_performance",
+      "object": "38.77亿美元订阅收入",
+      "metrics": [
+        "38.77 亿",
+        "24.5%",
+        "132 亿",
+        "21%",
+        "100 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b5738c169b693bee"
+      ],
+      "entityNames": [
+        "ServiceNow"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/328.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ae117a54e1332539",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
+      "originalTitle": "",
+      "subject": "Nvidia, Microsoft, Meta, Palantir and more than 20 other companies",
+      "action": "监管",
+      "object": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-907cba18e57806e8",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Microsoft",
+        "Meta联合警告",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-bce258f8f915ff5f",
+      "dataDate": "2026-07-25",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-25",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "2026 年菲尔兹奖得主 Jacob Tsimerman 宣布加入 OpenAI",
+      "originalTitle": "",
+      "subject": "2026 年菲尔兹奖得主 Jacob Tsimerman 宣布",
+      "action": "加入",
+      "object": "OpenAI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/980/994.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-a0ec365561b53cd4",
@@ -99853,51 +102549,6 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition",
       "publisher": "TechCrunch：AI（RSS）"
-    },
-    {
-      "id": "EV-bce258f8f915ff5f",
-      "dataDate": "2026-06-18",
-      "date": "2026-06-18",
-      "updatedDate": "2026-06-18",
-      "eventType": "organization_people",
-      "eventTypeLabel": "组织与人员",
-      "eventGroup": "组织、政策与法律",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Transformer 核心作者 Noam Shazeer 加入 OpenAI",
-      "originalTitle": "",
-      "subject": "Transformer 核心作者 Noam Shazeer",
-      "action": "加入",
-      "object": "OpenAI",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-7d3194f79e645c42",
-        "EN-6fcba5d96a4fadfd",
-        "EN-bbdefa2950f49882"
-      ],
-      "entityNames": [
-        "OpenAI",
-        "xAI",
-        "Google"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/965/937.htm",
-      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-d65865bfd265d537",
