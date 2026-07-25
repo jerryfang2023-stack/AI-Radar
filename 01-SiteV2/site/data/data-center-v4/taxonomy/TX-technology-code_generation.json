@@ -102,7 +102,7 @@
       "EN-0db2d631b42da133",
       "EN-b81c8201acfc7639",
       "EN-e18cb6435603205d",
-      "EN-8bcef51236d613cd",
+      "EN-1d79127e9d90e89b",
       "EN-993599624a199fe0",
       "EN-c608c4787821de1b",
       "EN-ddf9916b459b6d77",
@@ -120,7 +120,6 @@
       "EN-2b6e51bec93e86c1",
       "EN-085598c00f2aaccf",
       "EN-a3c3b987b09fc1bb",
-      "EN-0b9ca57f53ba758b",
       "EN-c4bc2d00a42f220f",
       "EN-ba1269449ab76537",
       "EN-e759968ca9278b8d",
@@ -4399,7 +4398,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Grok"
+        "SpaceXAI"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -4443,7 +4442,9 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-bac541b589c8a0d1"
+        "EN-bac541b589c8a0d1",
+        "EN-c4bc2d00a42f220f",
+        "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-23"
@@ -5414,6 +5415,7 @@
         "EN-af54bb0c9a39eb30",
         "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
+        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
@@ -5464,11 +5466,13 @@
     },
     {
       "id": "EN-047364b9be67f665",
-      "name": "Alibaba",
+      "name": "阿里巴巴",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Qwen"
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -5547,10 +5551,18 @@
         "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
         "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-25",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
     },
     {
       "id": "EN-86f73dfe7bb6a9e6",
@@ -5675,9 +5687,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Gemini"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5864,7 +5874,6 @@
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -6102,8 +6111,7 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-50ba7ff15827787b",
-        "EN-b5251b35f15bedc4"
+        "EN-50ba7ff15827787b"
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-17"
@@ -6645,7 +6653,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Kimi",
         "月之暗面"
       ],
       "verificationStatus": "verified",
@@ -6687,7 +6694,6 @@
       "relatedEntityIds": [
         "EN-607964040e4b62e0",
         "EN-eb732565c71e6b85",
-        "EN-7df09a7717ef2feb",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
@@ -6723,11 +6729,11 @@
     },
     {
       "id": "EN-b81c8201acfc7639",
-      "name": "Huawei",
+      "name": "华为",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "华为"
+        "Huawei"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -6796,27 +6802,35 @@
       "lastSeen": "2026-06-14"
     },
     {
-      "id": "EN-8bcef51236d613cd",
-      "name": "智谱",
+      "id": "EN-1d79127e9d90e89b",
+      "name": "智谱AI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "智谱",
+        "Zhipu AI"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-70efbfcaadcdb259",
+        "EV-534dc9add1c0cc35",
         "EV-1e0871947289ab6e"
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation"
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-long_context"
       ],
       "relatedEntityIds": [
+        "EN-bc77259c5d2eb341",
         "EN-993599624a199fe0"
       ],
       "firstSeen": "2026-06-13",
-      "lastSeen": "2026-06-14"
+      "lastSeen": "2026-07-07"
     },
     {
       "id": "EN-993599624a199fe0",
@@ -6836,7 +6850,7 @@
         "TX-technology-code_generation"
       ],
       "relatedEntityIds": [
-        "EN-8bcef51236d613cd"
+        "EN-1d79127e9d90e89b"
       ],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-06-14"
@@ -7352,31 +7366,6 @@
       "lastSeen": "2026-06-04"
     },
     {
-      "id": "EN-0b9ca57f53ba758b",
-      "name": "SpaceXAI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-bdcd6fc0caa8f6d4",
-        "EV-10aac036228b3c6b",
-        "EV-d53cd33e8f541a65"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-software_development",
-        "TX-technology-code_generation",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
-    },
-    {
       "id": "EN-c4bc2d00a42f220f",
       "name": "Grok Build",
       "entityType": "product_candidate",
@@ -7395,7 +7384,9 @@
         "TX-technology-code_generation",
         "TX-technology-tool_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-6fcba5d96a4fadfd"
+      ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-17"
     },

@@ -34,6 +34,7 @@
     "firstSeen": "2026-07-21",
     "lastSeen": "2026-07-22",
     "relationIds": [
+      "REL2-24c1ef0cdf905e18",
       "REL2-cfb5d5cdc4bb3e14"
     ],
     "groupedEventIds": {
@@ -102,11 +103,13 @@
   "relatedEntities": [
     {
       "id": "EN-047364b9be67f665",
-      "name": "Alibaba",
+      "name": "阿里巴巴",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Qwen"
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -185,13 +188,40 @@
         "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
         "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-25",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-24c1ef0cdf905e18",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-047364b9be67f665",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-52e3d014f9a275ea",
+      "object_type": "entity",
+      "event_id": "EV-1a241bcb4fad886c",
+      "claim_refs": [
+        "CL-0d479d134dd186d8",
+        "CL-8ae2a8f35d3a4429"
+      ],
+      "source_refs": [
+        "SA-fe423563f30907a1"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-cfb5d5cdc4bb3e14",
       "relationship_version": "RELATION-V2.1",

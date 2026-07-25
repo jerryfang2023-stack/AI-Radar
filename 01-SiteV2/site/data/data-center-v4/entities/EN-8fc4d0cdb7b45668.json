@@ -26,12 +26,12 @@
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [
-      "EN-6416272bf06ab3ec"
+      "EN-a8100d425f663eac"
     ],
     "firstSeen": "2026-07-13",
     "lastSeen": "2026-07-13",
     "relationIds": [
-      "REL2-a7f78373207c7c7d"
+      "REL2-4220cf9da6541699"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -64,7 +64,7 @@
           }
         ],
         "entityIds": [
-          "EN-6416272bf06ab3ec",
+          "EN-a8100d425f663eac",
           "EN-8fc4d0cdb7b45668"
         ]
       }
@@ -73,32 +73,39 @@
   },
   "relatedEntities": [
     {
-      "id": "EN-6416272bf06ab3ec",
-      "name": "商汤",
+      "id": "EN-a8100d425f663eac",
+      "name": "商汤科技",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "商汤",
+        "SenseTime"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
+        "EV-314b1d80bc4aa50d",
         "EV-e8105c2990ca8172"
       ],
       "viewpointIds": [],
-      "classificationRefs": [],
+      "classificationRefs": [
+        "TX-technology-reasoning"
+      ],
       "relatedEntityIds": [
+        "EN-c0d023c66edfc877",
         "EN-8fc4d0cdb7b45668"
       ],
       "firstSeen": "2026-07-13",
-      "lastSeen": "2026-07-13"
+      "lastSeen": "2026-07-19"
     }
   ],
   "relationships": [
     {
-      "relationship_id": "REL2-a7f78373207c7c7d",
+      "relationship_id": "REL2-4220cf9da6541699",
       "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-6416272bf06ab3ec",
+      "subject_ref": "EN-a8100d425f663eac",
       "subject_type": "entity",
       "predicate": "publishes",
       "object_ref": "EN-8fc4d0cdb7b45668",

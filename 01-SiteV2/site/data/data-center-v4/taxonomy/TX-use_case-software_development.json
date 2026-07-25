@@ -103,7 +103,6 @@
       "EN-a3c3b987b09fc1bb",
       "EN-1ecf93c539fcffca",
       "EN-6fcba5d96a4fadfd",
-      "EN-0b9ca57f53ba758b",
       "EN-c4bc2d00a42f220f"
     ],
     "fdeIds": [
@@ -4352,6 +4351,7 @@
         "EN-af54bb0c9a39eb30",
         "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
+        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
@@ -4751,9 +4751,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Gemini"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -4940,7 +4938,6 @@
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -5073,22 +5070,30 @@
       "name": "智谱AI",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "智谱",
+        "Zhipu AI"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-70efbfcaadcdb259",
-        "EV-534dc9add1c0cc35"
+        "EV-534dc9add1c0cc35",
+        "EV-1e0871947289ab6e"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-use_case-software_development",
+        "TX-technology-code_generation",
         "TX-technology-long_context"
       ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-06-18",
+      "relatedEntityIds": [
+        "EN-bc77259c5d2eb341",
+        "EN-993599624a199fe0"
+      ],
+      "firstSeen": "2026-06-13",
       "lastSeen": "2026-07-07"
     },
     {
@@ -5109,7 +5114,9 @@
         "TX-use_case-software_development",
         "TX-technology-long_context"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-1d79127e9d90e89b"
+      ],
       "firstSeen": "2026-07-07",
       "lastSeen": "2026-07-07"
     },
@@ -5312,7 +5319,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Kimi",
         "月之暗面"
       ],
       "verificationStatus": "verified",
@@ -5354,7 +5360,6 @@
       "relatedEntityIds": [
         "EN-607964040e4b62e0",
         "EN-eb732565c71e6b85",
-        "EN-7df09a7717ef2feb",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
@@ -5390,11 +5395,11 @@
     },
     {
       "id": "EN-b81c8201acfc7639",
-      "name": "Huawei",
+      "name": "华为",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "华为"
+        "Huawei"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -5854,7 +5859,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Grok"
+        "SpaceXAI"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -5898,35 +5903,12 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-bac541b589c8a0d1"
+        "EN-bac541b589c8a0d1",
+        "EN-c4bc2d00a42f220f",
+        "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-23"
-    },
-    {
-      "id": "EN-0b9ca57f53ba758b",
-      "name": "SpaceXAI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-bdcd6fc0caa8f6d4",
-        "EV-10aac036228b3c6b",
-        "EV-d53cd33e8f541a65"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-use_case-software_development",
-        "TX-technology-code_generation",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-17"
     },
     {
       "id": "EN-c4bc2d00a42f220f",
@@ -5947,7 +5929,9 @@
         "TX-technology-code_generation",
         "TX-technology-tool_use"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-6fcba5d96a4fadfd"
+      ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-17"
     }

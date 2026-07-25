@@ -15,32 +15,39 @@
     "name": "商汤科技",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "商汤",
+      "SenseTime"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
-      "EV-314b1d80bc4aa50d"
+      "EV-314b1d80bc4aa50d",
+      "EV-e8105c2990ca8172"
     ],
     "viewpointIds": [],
     "classificationRefs": [
       "TX-technology-reasoning"
     ],
     "relatedEntityIds": [
-      "EN-c0d023c66edfc877"
+      "EN-c0d023c66edfc877",
+      "EN-8fc4d0cdb7b45668"
     ],
-    "firstSeen": "2026-07-18",
+    "firstSeen": "2026-07-13",
     "lastSeen": "2026-07-19",
     "relationIds": [
-      "REL2-47a0caf57696d3ff"
+      "REL2-47a0caf57696d3ff",
+      "REL2-4220cf9da6541699"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-314b1d80bc4aa50d"
+        "EV-314b1d80bc4aa50d",
+        "EV-e8105c2990ca8172"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -69,6 +76,29 @@
           "EN-a8100d425f663eac",
           "EN-c0d023c66edfc877"
         ]
+      },
+      {
+        "id": "EV-e8105c2990ca8172",
+        "dataDate": "2026-07-13",
+        "date": "2026-07-13",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "商汤发布并开源 SenseNova-Vision 理解生成统一视觉大模型，能力超越 Vision Banana",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "entityIds": [
+          "EN-a8100d425f663eac",
+          "EN-8fc4d0cdb7b45668"
+        ]
       }
     ],
     "viewpoints": []
@@ -96,6 +126,27 @@
       ],
       "firstSeen": "2026-07-18",
       "lastSeen": "2026-07-19"
+    },
+    {
+      "id": "EN-8fc4d0cdb7b45668",
+      "name": "SenseNova-Vision",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e8105c2990ca8172"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-a8100d425f663eac"
+      ],
+      "firstSeen": "2026-07-13",
+      "lastSeen": "2026-07-13"
     }
   ],
   "relationships": [
@@ -117,6 +168,26 @@
         "SA-6baea435cc4f35b5"
       ],
       "data_date": "2026-07-19",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-4220cf9da6541699",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-a8100d425f663eac",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8fc4d0cdb7b45668",
+      "object_type": "entity",
+      "event_id": "EV-e8105c2990ca8172",
+      "claim_refs": [
+        "CL-0a07df5755be5277",
+        "CL-55064fc713f68fca",
+        "CL-7c6f5cd8bf74d2e5"
+      ],
+      "source_refs": [
+        "SA-773b66759f418b5d"
+      ],
+      "data_date": "2026-07-13",
       "status": "verified"
     }
   ],

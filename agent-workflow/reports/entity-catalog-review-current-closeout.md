@@ -5,15 +5,28 @@
 - Claim-backed entities added: 8
 - Historical decisions retained: 290
 - Total explicit decisions: 860
-- Confirmed: 424
-- Corrected: 150
-- Merged: 85
+- Confirmed: 410
+- Corrected: 157
+- Merged: 92
 - Quarantined: 201
 
 ## Current corrections and merges
 
 | Current | Final | Type | Action | Companies |
 |---|---|---|---|---|
+| Alibaba | 阿里巴巴 | company | correct |  |
+| 阿里巴巴 | 阿里巴巴 | company | merge |  |
+| 阿里云 | 阿里云 | company | correct |  |
+| 华为 | 华为 | company | merge |  |
+| Huawei | 华为 | company | correct |  |
+| Nokia | 诺基亚 | company | correct |  |
+| 诺基亚 | 诺基亚 | company | merge |  |
+| 商汤 | 商汤科技 | company | merge |  |
+| 商汤科技 | 商汤科技 | company | correct |  |
+| 腾讯 | 腾讯 | company | merge |  |
+| Tencent | 腾讯 | company | correct |  |
+| 智谱AI | 智谱AI | company | correct |  |
+| 智谱 | 智谱AI | company | merge |  |
 | BrainCo 强脑科技 | BrainCo 强脑科技 | company | correct |  |
 | Entire | Entire | company | correct |  |
 | Featherless.ai | Featherless.ai | company | correct |  |
@@ -23,7 +36,9 @@
 | LM Studio | LM Studio | company | correct |  |
 | OpenBMB | OpenBMB | company | correct |  |
 | Red Hat | Red Hat | company | correct |  |
-| SpaceXAI | SpaceXAI | company | correct |  |
+| SpaceXAI | xAI | company | merge |  |
+| SpaceXAI | xAI | company | merge |  |
+| xAI | xAI | company | correct |  |
 | Y Combinator | Y Combinator | company | correct |  |
 | 高德问店 | 高德问店 | product | correct | 阿里巴巴 |
 | 理想马赫 M100 | 理想马赫 M100 | product | correct | 理想汽车 |

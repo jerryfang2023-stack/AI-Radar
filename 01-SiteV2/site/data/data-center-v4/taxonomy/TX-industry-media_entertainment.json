@@ -1565,11 +1565,11 @@
     },
     {
       "id": "EN-9c8ae69b84f21a2e",
-      "name": "Tencent",
+      "name": "腾讯",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "腾讯混元"
+        "Tencent"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -1618,7 +1618,10 @@
         "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [
-        "EN-a1adb91065c5a347"
+        "EN-a1adb91065c5a347",
+        "EN-f0da91960830b394",
+        "EN-ea3bd73e2b506e00",
+        "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-05-18",
       "lastSeen": "2026-07-25"
@@ -1737,11 +1740,11 @@
     },
     {
       "id": "EN-b81c8201acfc7639",
-      "name": "Huawei",
+      "name": "华为",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "华为"
+        "Huawei"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -1861,7 +1864,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Kimi",
         "月之暗面"
       ],
       "verificationStatus": "verified",
@@ -1903,7 +1905,6 @@
       "relatedEntityIds": [
         "EN-607964040e4b62e0",
         "EN-eb732565c71e6b85",
-        "EN-7df09a7717ef2feb",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
@@ -2660,11 +2661,13 @@
     },
     {
       "id": "EN-047364b9be67f665",
-      "name": "Alibaba",
+      "name": "阿里巴巴",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Qwen"
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -2743,10 +2746,18 @@
         "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
         "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-25",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -3170,6 +3181,7 @@
         "EN-af54bb0c9a39eb30",
         "EN-62503b0d3dcfd096",
         "EN-e3863f813fe47240",
+        "EN-9c8ae69b84f21a2e",
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
@@ -3205,9 +3217,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Gemini"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3394,7 +3404,6 @@
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",

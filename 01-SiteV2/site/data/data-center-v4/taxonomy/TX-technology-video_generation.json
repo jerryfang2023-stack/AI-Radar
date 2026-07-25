@@ -43,7 +43,6 @@
       "EN-bbdefa2950f49882",
       "EN-5388bc10736a0eff",
       "EN-43a340bb75b45f02",
-      "EN-47c1e53c427aafb4",
       "EN-2daac3672aeafcbd",
       "EN-e9857f381893dd05",
       "EN-4f96127fdacbb405"
@@ -913,11 +912,13 @@
     },
     {
       "id": "EN-047364b9be67f665",
-      "name": "Alibaba",
+      "name": "阿里巴巴",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Qwen"
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -996,18 +997,26 @@
         "EN-52e3d014f9a275ea",
         "EN-0b0c3b228202ab0a",
         "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-25",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
     },
     {
       "id": "EN-b81c8201acfc7639",
-      "name": "Huawei",
+      "name": "华为",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "华为"
+        "Huawei"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -1343,9 +1352,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Gemini"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -1532,7 +1539,6 @@
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -1621,30 +1627,6 @@
       "lastSeen": "2026-07-13"
     },
     {
-      "id": "EN-47c1e53c427aafb4",
-      "name": "阿里巴巴",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-473f852b374d8b1c"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-video_generation"
-      ],
-      "relatedEntityIds": [
-        "EN-2daac3672aeafcbd",
-        "EN-3c2a3673eabc9a46"
-      ],
-      "firstSeen": "2026-06-22",
-      "lastSeen": "2026-06-23"
-    },
-    {
       "id": "EN-2daac3672aeafcbd",
       "name": "HappyHorse 1.1",
       "entityType": "product_candidate",
@@ -1662,7 +1644,7 @@
         "TX-technology-video_generation"
       ],
       "relatedEntityIds": [
-        "EN-47c1e53c427aafb4"
+        "EN-047364b9be67f665"
       ],
       "firstSeen": "2026-06-22",
       "lastSeen": "2026-06-23"

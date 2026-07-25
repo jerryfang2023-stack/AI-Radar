@@ -15,7 +15,10 @@
     "name": "阿里云",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
-    "aliases": [],
+    "aliases": [
+      "Alibaba Cloud",
+      "Cloud Intelligence Group"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -36,6 +39,20 @@
     ],
     "firstSeen": "2026-06-24",
     "lastSeen": "2026-07-21",
+    "organizationFamilyId": "EN-047364b9be67f665",
+    "parentEntityId": "EN-047364b9be67f665",
+    "organizationRole": "business_unit",
+    "hierarchyEvidence": [
+      {
+        "sourceId": "SRC-alibaba-cloud-arm-official",
+        "sourceUrl": "https://www.alibabagroup.com/en-US/document-1491224164130881536",
+        "quote": "Alibaba Cloud, the cloud computing and data intelligence arm of Alibaba Group"
+      }
+    ],
+    "organizationFamilyEntityIds": [
+      "EN-047364b9be67f665"
+    ],
+    "parentEntityName": "阿里巴巴",
     "relationIds": [
       "REL2-9d07640d44305591"
     ],
@@ -169,6 +186,108 @@
       ],
       "firstSeen": "2026-06-24",
       "lastSeen": "2026-06-25"
+    }
+  ],
+  "organizationFamilyEntities": [
+    {
+      "id": "EN-047364b9be67f665",
+      "name": "阿里巴巴",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Alibaba",
+        "Alibaba Group",
+        "阿里"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-43b7f45e9bd7ec9b",
+        "EV-3d93d1da8cb64462",
+        "EV-ef2cd6bd912a6ed8",
+        "EV-4740121f428e4bda",
+        "EV-a354af52772334fd",
+        "EV-c0f87b8c5208cd75",
+        "EV-53f08daddd011dbb",
+        "EV-e1a4bc40db4a9d8f",
+        "EV-2a833330267cb2df",
+        "EV-0d5a32aca724d30e",
+        "EV-2e1352039c487bb0",
+        "EV-b4aa08aef57bdb0f",
+        "EV-1a241bcb4fad886c",
+        "EV-6654f62015eff8e3",
+        "EV-8b67e7ac8e61cc1e",
+        "EV-989631c550d89726",
+        "EV-94ad4a217508e6e0",
+        "EV-b43f22d8bc7fec3f",
+        "EV-f388f7ae2debeae8",
+        "EV-d08935b06ed9e7bb",
+        "EV-215f938a46d0b126",
+        "EV-ac1b82f6e6261012",
+        "EV-6fbbbfcdcec81df4",
+        "EV-82e68f59d8584e4e",
+        "EV-fd8ecce5de2f667d",
+        "EV-f6ac2938949f74ec",
+        "EV-363fe72da52bdb86",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60",
+        "EV-83c841a4c42cfdea",
+        "EV-3167e6eed75597e9",
+        "EV-ad2e4fe6a149d95d",
+        "EV-76aa77f5a2e7c661",
+        "EV-77662aa9bef9efbe",
+        "EV-c7f274c3aadece12",
+        "EV-333851b077b606c8",
+        "EV-6712f8ac1f00fe85",
+        "EV-c54172bf4e0c1068",
+        "EV-473f852b374d8b1c",
+        "EV-197aac95e60671f7",
+        "EV-4e6dc3ec2b3f0bd6",
+        "EV-bbc34d7bc9c02b6f",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-a4f413441613beac",
+        "EV-c11ee0da38376254",
+        "EV-657837763764c869",
+        "EV-a4f052325d0ef230",
+        "EV-c0a94bb25d551db1",
+        "EV-710b145230faa692",
+        "EV-1b9bd3d2cb0dc54e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-computer_use",
+        "TX-technology-multimodal",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-use_case-data_analysis",
+        "TX-technology-on_device",
+        "TX-technology-embodied_ai",
+        "TX-technology-fine_tuning",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio",
+        "TX-technology-quantization"
+      ],
+      "relatedEntityIds": [
+        "EN-52e3d014f9a275ea",
+        "EN-0b0c3b228202ab0a",
+        "EN-22a4c686e665e299",
+        "EN-2daac3672aeafcbd",
+        "EN-3c2a3673eabc9a46",
+        "EN-d65d81c60c0c47c4"
+      ],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-25",
+      "organizationFamilyId": "EN-047364b9be67f665",
+      "organizationRole": "group",
+      "organizationFamilyEntityIds": [
+        "EN-e16fc821f34228d1"
+      ],
+      "parentEntityName": ""
     }
   ],
   "relationships": [
@@ -869,7 +988,6 @@
         "EN-16fe95bd48dbf178",
         "EN-0666a703033ebd1b",
         "EN-30a63b26b06e096e",
-        "EN-53874092e000069b",
         "EN-fdc6b157616f12a8",
         "EN-d4c633f24b48fcc4",
         "EN-bc1fc5140040180e",
@@ -905,7 +1023,6 @@
         "EN-2f00e6c060e01051",
         "EN-e947caedcfbb4b90",
         "EN-e18cb6435603205d",
-        "EN-82eaaba81d9dcc54",
         "EN-761a66c29a55bc53",
         "EN-dba61afed18c85d6",
         "EN-2b6e51bec93e86c1",

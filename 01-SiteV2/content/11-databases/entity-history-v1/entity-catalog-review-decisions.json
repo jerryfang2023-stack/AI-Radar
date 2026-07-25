@@ -12,9 +12,9 @@
     "supplemental_claim_entities": 8,
     "historical_decisions_retained": 290,
     "reviewed": 860,
-    "confirmed": 424,
-    "corrected": 150,
-    "merged": 85,
+    "confirmed": 410,
+    "corrected": 157,
+    "merged": 92,
     "quarantined": 201
   },
   "decisions": [
@@ -50,18 +50,72 @@
       "error_patterns": []
     },
     {
+      "entity_id": "EN-047364b9be67f665",
+      "current": {
+        "name": "Alibaba",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "阿里巴巴",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [
+          "Alibaba",
+          "Alibaba Group",
+          "阿里"
+        ],
+        "organization_family_id": "EN-047364b9be67f665",
+        "organization_role": "group"
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-6733448c4ceb989a",
+          "CL-a5cfcd7ae679cbc0",
+          "CL-d7c36097d96ddbd1"
+        ],
+        "secondary_sources": [
+          {
+            "source_id": "SRC-alibaba-group-businesses-official",
+            "source_url": "https://www.alibabagroup.com/en-US/about-alibaba-businesses-1747835448811585536",
+            "source_class": "official",
+            "quote": "As part of Alibaba Group's globalization strategy, Cloud Intelligence Group continued to expand its international cloud computing infrastructure."
+          }
+        ]
+      },
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "“Alibaba”“阿里巴巴”“阿里”是同一集团的中英文名与简称，统一保留稳定实体 ID，并以中文名展示。",
+      "review_status": "accepted",
+      "reviewer": "codex-current-entity-review",
+      "reviewed_at": "2026-07-25T05:03:49.133Z",
+      "error_patterns": [
+        "name_extraction_fragment"
+      ]
+    },
+    {
       "entity_id": "EN-47c1e53c427aafb4",
       "current": {
         "name": "阿里巴巴",
         "catalog_type": "company",
         "company_names": []
       },
-      "action": "confirm",
-      "merge_into_entity_id": "",
+      "action": "merge",
+      "merge_into_entity_id": "EN-047364b9be67f665",
       "canonical": {
         "name": "阿里巴巴",
         "catalog_type": "company",
-        "company_names": []
+        "company_names": [],
+        "aliases": [
+          "Alibaba",
+          "Alibaba Group",
+          "阿里"
+        ],
+        "organization_family_id": "EN-047364b9be67f665",
+        "organization_role": "group"
       },
       "evidence": {
         "claim_refs": [
@@ -71,14 +125,16 @@
         ],
         "secondary_sources": []
       },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据明确显示“阿里巴巴”发布视频生成模型，主语为组织，符合公司定义。",
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "中文名“阿里巴巴”与 Alibaba 是同一集团实体，合并到历史事件覆盖更完整的稳定实体 ID。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
+      "error_patterns": [
+        "duplicate_entity"
+      ]
     },
     {
       "entity_id": "EN-e16fc821f34228d1",
@@ -87,12 +143,19 @@
         "catalog_type": "company",
         "company_names": []
       },
-      "action": "confirm",
+      "action": "correct",
       "merge_into_entity_id": "",
       "canonical": {
         "name": "阿里云",
         "catalog_type": "company",
-        "company_names": []
+        "company_names": [],
+        "aliases": [
+          "Alibaba Cloud",
+          "Cloud Intelligence Group"
+        ],
+        "organization_family_id": "EN-047364b9be67f665",
+        "parent_entity_id": "EN-047364b9be67f665",
+        "organization_role": "business_unit"
       },
       "evidence": {
         "claim_refs": [
@@ -100,16 +163,25 @@
           "CL-a791c3122c2ed06f",
           "CL-c41530a8c9e2911c"
         ],
-        "secondary_sources": []
+        "secondary_sources": [
+          {
+            "source_id": "SRC-alibaba-cloud-arm-official",
+            "source_url": "https://www.alibabagroup.com/en-US/document-1491224164130881536",
+            "source_class": "official",
+            "quote": "Alibaba Cloud, the cloud computing and data intelligence arm of Alibaba Group"
+          }
+        ]
       },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据中多次以“阿里云”作为发布主体，明确为组织实体，非产品、文章或人物。",
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "阿里云是阿里巴巴集团的云业务单元；保留独立实体以承载自身事件，同时记录集团归属，不与集团主体合并。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
+      "error_patterns": [
+        "legacy_correction_retained"
+      ]
     },
     {
       "entity_id": "EN-8afd897b5b887b06",
@@ -231,7 +303,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.95,
-      "rationale": "证据中“高通发布骁龙芯片”、“高通推出Dragonfly”等表述，明确高通是发布产品的公司。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据中“高通发布骁龙芯片”、“高通推出Dragonfly”等表述，明确高通是发布产品的公司。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -275,12 +347,15 @@
         "catalog_type": "company",
         "company_names": []
       },
-      "action": "confirm",
-      "merge_into_entity_id": "",
+      "action": "merge",
+      "merge_into_entity_id": "EN-b81c8201acfc7639",
       "canonical": {
         "name": "华为",
         "catalog_type": "company",
-        "company_names": []
+        "company_names": [],
+        "aliases": [
+          "Huawei"
+        ]
       },
       "evidence": {
         "claim_refs": [
@@ -290,14 +365,52 @@
         ],
         "secondary_sources": []
       },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据中“华为”发布DevEco Code工具，主语为组织，符合公司定义。",
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "中文名“华为”与 Huawei 重复，合并到既有 verified 稳定实体。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
+      "error_patterns": [
+        "duplicate_entity"
+      ]
+    },
+    {
+      "entity_id": "EN-b81c8201acfc7639",
+      "current": {
+        "name": "Huawei",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "华为",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [
+          "Huawei"
+        ]
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-2d88badc424645ed",
+          "CL-468a130072b10e41",
+          "CL-5e9e9c9b6cecaa2d"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "“Huawei”与“华为”是同一机构的中英文名称，统一为一个稳定实体。",
+      "review_status": "accepted",
+      "reviewer": "codex-current-entity-review",
+      "reviewed_at": "2026-07-25T05:03:49.133Z",
+      "error_patterns": [
+        "name_extraction_fragment"
+      ]
     },
     {
       "entity_id": "EN-b3b7e1c8e2be9ec3",
@@ -357,7 +470,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.95,
-      "rationale": "证据中多次以“阶跃终端”作为主体发布产品，表明其为组织实体，而非产品、文章或人物。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据中多次以“阶跃终端”作为主体发布产品，表明其为组织实体，而非产品、文章或人物。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -550,18 +663,57 @@
       "error_patterns": []
     },
     {
+      "entity_id": "EN-2ab6d53e717a0e0d",
+      "current": {
+        "name": "Nokia",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "诺基亚",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [
+          "Nokia"
+        ]
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-6816c5ea4abdfa87",
+          "CL-108011dcac3f51c9",
+          "CL-5758242d40096958"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "“Nokia”与“诺基亚”是同一机构的中英文名称，统一为一个稳定实体。",
+      "review_status": "accepted",
+      "reviewer": "codex-current-entity-review",
+      "reviewed_at": "2026-07-25T05:03:49.133Z",
+      "error_patterns": [
+        "name_extraction_fragment"
+      ]
+    },
+    {
       "entity_id": "EN-accf304851de0ad2",
       "current": {
         "name": "诺基亚",
         "catalog_type": "company",
         "company_names": []
       },
-      "action": "confirm",
-      "merge_into_entity_id": "",
+      "action": "merge",
+      "merge_into_entity_id": "EN-2ab6d53e717a0e0d",
       "canonical": {
         "name": "诺基亚",
         "catalog_type": "company",
-        "company_names": []
+        "company_names": [],
+        "aliases": [
+          "Nokia"
+        ]
       },
       "evidence": {
         "claim_refs": [
@@ -571,14 +723,16 @@
         ],
         "secondary_sources": []
       },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据中“诺基亚”作为主体推出平台并发表声明，行为符合公司实体。",
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "中文名“诺基亚”与 Nokia 重复，合并到既有 verified 稳定实体。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
+      "error_patterns": [
+        "duplicate_entity"
+      ]
     },
     {
       "entity_id": "EN-4eae8b99bc7a67a2",
@@ -680,12 +834,16 @@
         "catalog_type": "company",
         "company_names": []
       },
-      "action": "confirm",
-      "merge_into_entity_id": "",
+      "action": "merge",
+      "merge_into_entity_id": "EN-a8100d425f663eac",
       "canonical": {
-        "name": "商汤",
+        "name": "商汤科技",
         "catalog_type": "company",
-        "company_names": []
+        "company_names": [],
+        "aliases": [
+          "商汤",
+          "SenseTime"
+        ]
       },
       "evidence": {
         "claim_refs": [
@@ -695,14 +853,17 @@
         ],
         "secondary_sources": []
       },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据中“商汤”作为大模型发布方，是公司实体。",
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "简称“商汤”与“商汤科技”重复，合并到完整机构名称对应的稳定实体。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
+      "error_patterns": [
+        "duplicate_entity",
+        "name_extraction_fragment"
+      ]
     },
     {
       "entity_id": "EN-a8100d425f663eac",
@@ -711,12 +872,16 @@
         "catalog_type": "company",
         "company_names": []
       },
-      "action": "confirm",
+      "action": "correct",
       "merge_into_entity_id": "",
       "canonical": {
         "name": "商汤科技",
         "catalog_type": "company",
-        "company_names": []
+        "company_names": [],
+        "aliases": [
+          "商汤",
+          "SenseTime"
+        ]
       },
       "evidence": {
         "claim_refs": [
@@ -726,14 +891,16 @@
         ],
         "secondary_sources": []
       },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据中“商汤科技”作为模型发布主体，明确为组织。",
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "“商汤”是“商汤科技”的常用简称，统一为一个稳定机构实体。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
+      "error_patterns": [
+        "legacy_correction_retained"
+      ]
     },
     {
       "entity_id": "EN-1413a9eabdac963f",
@@ -773,12 +940,15 @@
         "catalog_type": "company",
         "company_names": []
       },
-      "action": "confirm",
-      "merge_into_entity_id": "",
+      "action": "merge",
+      "merge_into_entity_id": "EN-9c8ae69b84f21a2e",
       "canonical": {
         "name": "腾讯",
         "catalog_type": "company",
-        "company_names": []
+        "company_names": [],
+        "aliases": [
+          "Tencent"
+        ]
       },
       "evidence": {
         "claim_refs": [
@@ -788,14 +958,52 @@
         ],
         "secondary_sources": []
       },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据中“腾讯”作为主体发布模型和平台，行为符合公司实体。",
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "中文名“腾讯”与 Tencent 重复，合并到既有 verified 稳定实体。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
+      "error_patterns": [
+        "duplicate_entity"
+      ]
+    },
+    {
+      "entity_id": "EN-9c8ae69b84f21a2e",
+      "current": {
+        "name": "Tencent",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "腾讯",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [
+          "Tencent"
+        ]
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-8534300715d70ca9",
+          "CL-be36d2ff56774584",
+          "CL-e4172d1c01bf9805"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "“Tencent”与“腾讯”是同一机构的中英文名称，统一为一个稳定实体；“腾讯混元”保留为产品名称而不是机构别名。",
+      "review_status": "accepted",
+      "reviewer": "codex-current-entity-review",
+      "reviewed_at": "2026-07-25T05:03:49.133Z",
+      "error_patterns": [
+        "name_extraction_fragment"
+      ]
     },
     {
       "entity_id": "EN-a7baed72c308ce88",
@@ -1135,49 +1343,22 @@
       "error_patterns": []
     },
     {
-      "entity_id": "EN-8bcef51236d613cd",
-      "current": {
-        "name": "智谱",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "action": "confirm",
-      "merge_into_entity_id": "",
-      "canonical": {
-        "name": "智谱",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "evidence": {
-        "claim_refs": [
-          "CL-42bb46570b181556",
-          "CL-76a2dcd87a41c61c",
-          "CL-a39f135edafa0bd5"
-        ],
-        "secondary_sources": []
-      },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据中明确“智谱今日发布了AI编程工具”，智谱作为AI公司发布产品，符合公司实体。",
-      "review_status": "accepted",
-      "reviewer": "codex-current-entity-review",
-      "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
-    },
-    {
       "entity_id": "EN-1d79127e9d90e89b",
       "current": {
         "name": "智谱AI",
         "catalog_type": "company",
         "company_names": []
       },
-      "action": "confirm",
+      "action": "correct",
       "merge_into_entity_id": "",
       "canonical": {
         "name": "智谱AI",
         "catalog_type": "company",
-        "company_names": []
+        "company_names": [],
+        "aliases": [
+          "智谱",
+          "Zhipu AI"
+        ]
       },
       "evidence": {
         "claim_refs": [
@@ -1187,14 +1368,54 @@
         ],
         "secondary_sources": []
       },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据显示“智谱AI”发布编程智能体，符合公司发布行为，名称完整，类型正确。",
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "“智谱”是“智谱AI”的常用简称，统一为一个稳定机构实体。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
+      "error_patterns": [
+        "legacy_correction_retained"
+      ]
+    },
+    {
+      "entity_id": "EN-8bcef51236d613cd",
+      "current": {
+        "name": "智谱",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "merge",
+      "merge_into_entity_id": "EN-1d79127e9d90e89b",
+      "canonical": {
+        "name": "智谱AI",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [
+          "智谱",
+          "Zhipu AI"
+        ]
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-42bb46570b181556",
+          "CL-76a2dcd87a41c61c",
+          "CL-a39f135edafa0bd5"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "简称“智谱”与“智谱AI”重复，合并到完整机构名称对应的稳定实体。",
+      "review_status": "accepted",
+      "reviewer": "codex-current-entity-review",
+      "reviewed_at": "2026-07-25T05:03:49.133Z",
+      "error_patterns": [
+        "duplicate_entity",
+        "name_extraction_fragment"
+      ]
     },
     {
       "entity_id": "EN-4d748ebd71af03a7",
@@ -1346,37 +1567,6 @@
       "advisory_decision": "confirmed",
       "confidence": 0.95,
       "rationale": "证据中Aina被明确称为消费硬件初创公司，获得种子轮融资，有创始人，符合公司实体。",
-      "review_status": "accepted",
-      "reviewer": "codex-current-entity-review",
-      "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
-    },
-    {
-      "entity_id": "EN-047364b9be67f665",
-      "current": {
-        "name": "Alibaba",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "action": "confirm",
-      "merge_into_entity_id": "",
-      "canonical": {
-        "name": "Alibaba",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "evidence": {
-        "claim_refs": [
-          "CL-6733448c4ceb989a",
-          "CL-a5cfcd7ae679cbc0",
-          "CL-d7c36097d96ddbd1"
-        ],
-        "secondary_sources": []
-      },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据中“Alibaba”的团队发布模型，符合公司发布产品行为，名称和类型正确。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -2771,37 +2961,6 @@
       "error_patterns": []
     },
     {
-      "entity_id": "EN-b81c8201acfc7639",
-      "current": {
-        "name": "Huawei",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "action": "confirm",
-      "merge_into_entity_id": "",
-      "canonical": {
-        "name": "Huawei",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "evidence": {
-        "claim_refs": [
-          "CL-2d88badc424645ed",
-          "CL-468a130072b10e41",
-          "CL-5e9e9c9b6cecaa2d"
-        ],
-        "secondary_sources": []
-      },
-      "advisory_source": "codex_explicit_claim_review",
-      "advisory_decision": "explicit_review",
-      "confidence": 0.95,
-      "rationale": "证据中多次提及“华为Pura 80系列”及“鸿蒙HarmonyOS”，表明华为是发布产品的公司实体。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
-      "review_status": "accepted",
-      "reviewer": "codex-current-entity-review",
-      "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
-    },
-    {
       "entity_id": "EN-d9352ce019e77ab3",
       "current": {
         "name": "Hugging Face",
@@ -3508,37 +3667,6 @@
       "advisory_decision": "confirmed",
       "confidence": 0.95,
       "rationale": "证据显示Noetra是获得政府资金并与英伟达合作的企业，符合公司定义。",
-      "review_status": "accepted",
-      "reviewer": "codex-current-entity-review",
-      "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
-    },
-    {
-      "entity_id": "EN-2ab6d53e717a0e0d",
-      "current": {
-        "name": "Nokia",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "action": "confirm",
-      "merge_into_entity_id": "",
-      "canonical": {
-        "name": "Nokia",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "evidence": {
-        "claim_refs": [
-          "CL-6816c5ea4abdfa87",
-          "CL-108011dcac3f51c9",
-          "CL-5758242d40096958"
-        ],
-        "secondary_sources": []
-      },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据显示诺基亚与谷歌云合作，是参与合作的组织，符合公司定义。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -4646,79 +4774,11 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.95,
-      "rationale": "证据显示SpaceX签署算力协议、进行收购，确认为公司。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据显示SpaceX签署算力协议、进行收购，确认为公司。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
       "error_patterns": []
-    },
-    {
-      "entity_id": "EN-0b9ca57f53ba758b",
-      "current": {
-        "name": "SpaceXAI",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "action": "correct",
-      "merge_into_entity_id": "",
-      "canonical": {
-        "name": "SpaceXAI",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "evidence": {
-        "claim_refs": [
-          "CL-66990e99d6c6046f",
-          "CL-913d46a75159fe2c",
-          "CL-9237aaeca90244b9"
-        ],
-        "secondary_sources": []
-      },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据显示SpaceXAI发布模型和开源项目，是AI公司实体。；保留对原始实体行的既有名称或类型纠正。",
-      "review_status": "accepted",
-      "reviewer": "codex-current-entity-review",
-      "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": [
-        "legacy_correction_retained"
-      ]
-    },
-    {
-      "entity_id": "EN-630dc133336bc266",
-      "current": {
-        "name": "SpaceXAI",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "action": "merge",
-      "merge_into_entity_id": "EN-0b9ca57f53ba758b",
-      "canonical": {
-        "name": "SpaceXAI",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "evidence": {
-        "claim_refs": [
-          "CL-66990e99d6c6046f",
-          "CL-913d46a75159fe2c",
-          "CL-9237aaeca90244b9",
-          "CL-ec2d6107c732e14c",
-          "CL-2253a0c5e5c24ff0"
-        ],
-        "secondary_sources": []
-      },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "correction_candidate",
-      "confidence": 0.95,
-      "rationale": "与EN-0b9ca57f53ba758b完全重复，证据相同，建议合并。",
-      "review_status": "accepted",
-      "reviewer": "codex-current-entity-review",
-      "reviewed_at": "2026-07-25T04:34:31.201Z",
-      "error_patterns": [
-        "duplicate_entity"
-      ]
     },
     {
       "entity_id": "EN-2b78da3dc866654e",
@@ -5025,37 +5085,6 @@
       "advisory_decision": "confirmed",
       "confidence": 0.9,
       "rationale": "证据中 Teamily AI 描述其愿景、公测、付费用户及正式上线，符合公司实体特征。",
-      "review_status": "accepted",
-      "reviewer": "codex-current-entity-review",
-      "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
-    },
-    {
-      "entity_id": "EN-9c8ae69b84f21a2e",
-      "current": {
-        "name": "Tencent",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "action": "confirm",
-      "merge_into_entity_id": "",
-      "canonical": {
-        "name": "Tencent",
-        "catalog_type": "company",
-        "company_names": []
-      },
-      "evidence": {
-        "claim_refs": [
-          "CL-8534300715d70ca9",
-          "CL-be36d2ff56774584",
-          "CL-e4172d1c01bf9805"
-        ],
-        "secondary_sources": []
-      },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据中“腾讯混元”是 Tencent 的别名，且腾讯作为主体推出产品，符合公司实体特征。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -5602,18 +5631,97 @@
       "error_patterns": []
     },
     {
+      "entity_id": "EN-0b9ca57f53ba758b",
+      "current": {
+        "name": "SpaceXAI",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "merge",
+      "merge_into_entity_id": "EN-6fcba5d96a4fadfd",
+      "canonical": {
+        "name": "xAI",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [
+          "SpaceXAI"
+        ]
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-66990e99d6c6046f",
+          "CL-913d46a75159fe2c",
+          "CL-9237aaeca90244b9"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "历史“SpaceXAI”条目与 xAI 机构重复，合并到 xAI 稳定实体。",
+      "review_status": "accepted",
+      "reviewer": "codex-current-entity-review",
+      "reviewed_at": "2026-07-25T05:03:49.133Z",
+      "error_patterns": [
+        "duplicate_entity",
+        "name_extraction_fragment"
+      ]
+    },
+    {
+      "entity_id": "EN-630dc133336bc266",
+      "current": {
+        "name": "SpaceXAI",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "merge",
+      "merge_into_entity_id": "EN-6fcba5d96a4fadfd",
+      "canonical": {
+        "name": "xAI",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [
+          "SpaceXAI"
+        ]
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-66990e99d6c6046f",
+          "CL-913d46a75159fe2c",
+          "CL-9237aaeca90244b9",
+          "CL-ec2d6107c732e14c",
+          "CL-2253a0c5e5c24ff0"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "历史“SpaceXAI”条目与 xAI 机构重复，合并到 xAI 稳定实体。",
+      "review_status": "accepted",
+      "reviewer": "codex-current-entity-review",
+      "reviewed_at": "2026-07-25T05:03:49.133Z",
+      "error_patterns": [
+        "duplicate_entity",
+        "name_extraction_fragment"
+      ]
+    },
+    {
       "entity_id": "EN-6fcba5d96a4fadfd",
       "current": {
         "name": "xAI",
         "catalog_type": "company",
         "company_names": []
       },
-      "action": "confirm",
+      "action": "correct",
       "merge_into_entity_id": "",
       "canonical": {
         "name": "xAI",
         "catalog_type": "company",
-        "company_names": []
+        "company_names": [],
+        "aliases": [
+          "SpaceXAI"
+        ]
       },
       "evidence": {
         "claim_refs": [
@@ -5623,14 +5731,16 @@
         ],
         "secondary_sources": []
       },
-      "advisory_source": "current_claim_audit",
-      "advisory_decision": "confirmed",
-      "confidence": 0.95,
-      "rationale": "证据中xAI作为公司发布Grok模型，当前类型为company，确认。",
+      "advisory_source": "codex_explicit_organization_identity_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "历史数据中的“SpaceXAI”归一到 xAI 机构实体；Grok 是产品，不作为机构别名。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
-      "error_patterns": []
+      "error_patterns": [
+        "legacy_correction_retained"
+      ]
     },
     {
       "entity_id": "EN-c608c4787821de1b",
@@ -13401,7 +13511,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.9,
-      "rationale": "多个Claim明确说明Substack新增了“AI detector”功能，且该工具由Substack发布（“Substack adds an AI detector”），因此产品名称为“AI detector”，所属公司为Substack。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "多个Claim明确说明Substack新增了“AI detector”功能，且该工具由Substack发布（“Substack adds an AI detector”），因此产品名称为“AI detector”，所属公司为Substack。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -13437,7 +13547,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.9,
-      "rationale": "证据明确显示亚马逊发布了名为“AI Factories”的产品，且亚马逊是发布方，因此应补充公司名称为Amazon。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据明确显示亚马逊发布了名为“AI Factories”的产品，且亚马逊是发布方，因此应补充公司名称为Amazon。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -13608,7 +13718,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.9,
-      "rationale": "当前公司名称为空，但多条证据显示CHELSIO发布了该AI互连平台，明确支持产品-公司映射。建议将公司名称补充为CHELSIO。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "当前公司名称为空，但多条证据显示CHELSIO发布了该AI互连平台，明确支持产品-公司映射。建议将公司名称补充为CHELSIO。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -20351,7 +20461,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.9,
-      "rationale": "证据中提及的产品是Google Cloud及其子产品（TPU、OKF），而非名为'Cloud'的独立产品。建议修正名称为'Google Cloud'。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据中提及的产品是Google Cloud及其子产品（TPU、OKF），而非名为'Cloud'的独立产品。建议修正名称为'Google Cloud'。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -20387,7 +20497,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.9,
-      "rationale": "证据显示Google发布了'Google Images'，而非'Images 25'。建议修正名称为'Google Images'并添加公司Google。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据显示Google发布了'Google Images'，而非'Images 25'。建议修正名称为'Google Images'并添加公司Google。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -22763,7 +22873,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.9,
-      "rationale": "证据显示 Meta 运营 Llama API，当前公司字段为空，应补充为 Meta。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据显示 Meta 运营 Llama API，当前公司字段为空，应补充为 Meta。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -22967,7 +23077,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.9,
-      "rationale": "证据显示深开鸿发布 M-Robots OS 2.0，当前公司字段为空，应补充为深开鸿。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据显示深开鸿发布 M-Robots OS 2.0，当前公司字段为空，应补充为深开鸿。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -25041,7 +25151,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.95,
-      "rationale": "证据中OpenCode被作为开源项目被对比和二次开发，是一个产品。当前类型和名称正确，无公司归属证据，保持现状。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据中OpenCode被作为开源项目被对比和二次开发，是一个产品。当前类型和名称正确，无公司归属证据，保持现状。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -25174,7 +25284,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.9,
-      "rationale": "证据显示OpenWorker由Andrew Ng发布，但Andrew Ng是个人而非公司，当前company_names为空，无需修改。类型和名称正确。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据显示OpenWorker由Andrew Ng发布，但Andrew Ng是个人而非公司，当前company_names为空，无需修改。类型和名称正确。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",
@@ -25406,7 +25516,7 @@
       "advisory_source": "codex_explicit_claim_review",
       "advisory_decision": "explicit_review",
       "confidence": 0.9,
-      "rationale": "证据显示Pixel是谷歌的硬件产品系列。当前catalog_type为product，canonical_name正确，current_company_names为空（证据提及谷歌但未明确声明所有权，仅描述搭载关系）。无需修改。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
+      "rationale": "证据显示Pixel是谷歌的硬件产品系列。当前catalog_type为product，canonical_name正确，current_company_names为空（证据提及谷歌但未明确声明所有权，仅描述搭载关系）。无需修改。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。；当前审计升级人工复核后，基于既有 exact Claim 明确保留。",
       "review_status": "accepted",
       "reviewer": "codex-current-entity-review",
       "reviewed_at": "2026-07-25T05:03:49.133Z",

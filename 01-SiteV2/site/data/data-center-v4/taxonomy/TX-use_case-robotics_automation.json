@@ -91,7 +91,6 @@
       "EN-0e6e48aba1669631",
       "EN-d77c36c05230024c",
       "EN-be548deba4a093d7",
-      "EN-53874092e000069b",
       "EN-9c8ae69b84f21a2e",
       "EN-f0da91960830b394",
       "EN-c51e27d8efcff21f",
@@ -5106,9 +5105,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "Gemini"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5295,7 +5292,6 @@
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -5753,40 +5749,12 @@
       "lastSeen": "2026-07-19"
     },
     {
-      "id": "EN-53874092e000069b",
+      "id": "EN-9c8ae69b84f21a2e",
       "name": "腾讯",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-7fe139b107f9adc6",
-        "EV-1a073cd22d1bfa59",
-        "EV-6a6ff349579765ad"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-vision_language",
-        "TX-use_case-robotics_automation"
-      ],
-      "relatedEntityIds": [
-        "EN-f0da91960830b394",
-        "EN-30a63b26b06e096e"
-      ],
-      "firstSeen": "2026-05-18",
-      "lastSeen": "2026-07-18"
-    },
-    {
-      "id": "EN-9c8ae69b84f21a2e",
-      "name": "Tencent",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
       "aliases": [
-        "腾讯混元"
+        "Tencent"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -5835,7 +5803,10 @@
         "TX-industry-media_entertainment"
       ],
       "relatedEntityIds": [
-        "EN-a1adb91065c5a347"
+        "EN-a1adb91065c5a347",
+        "EN-f0da91960830b394",
+        "EN-ea3bd73e2b506e00",
+        "EN-30a63b26b06e096e"
       ],
       "firstSeen": "2026-05-18",
       "lastSeen": "2026-07-25"
@@ -5861,7 +5832,7 @@
         "TX-use_case-robotics_automation"
       ],
       "relatedEntityIds": [
-        "EN-53874092e000069b"
+        "EN-9c8ae69b84f21a2e"
       ],
       "firstSeen": "2026-07-17",
       "lastSeen": "2026-07-18"
@@ -6307,7 +6278,7 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "Grok"
+        "SpaceXAI"
       ],
       "verificationStatus": "verified",
       "datasetScopes": [
@@ -6351,7 +6322,9 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
-        "EN-bac541b589c8a0d1"
+        "EN-bac541b589c8a0d1",
+        "EN-c4bc2d00a42f220f",
+        "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-23"

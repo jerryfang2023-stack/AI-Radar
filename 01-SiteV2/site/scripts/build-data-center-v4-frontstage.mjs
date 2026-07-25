@@ -433,7 +433,15 @@ export function buildEntityCollections(service, eventsById) {
     firstSeen: profile.firstSeen || "",
     lastSeen: profile.lastSeen || "",
     relatedEntityIds: profile.relatedEntityIds || [],
-    relationIds: profile.relationIds || []
+    relationIds: profile.relationIds || [],
+    ...(profile.organizationFamilyId ? {
+      organizationFamilyId: profile.organizationFamilyId,
+      organizationFamilyEntityIds: profile.organizationFamilyEntityIds || [],
+      organizationRole: profile.organizationRole || "",
+      parentEntityId: profile.parentEntityId || "",
+      parentEntityName: profile.parentEntityName || "",
+      hierarchyEvidence: profile.hierarchyEvidence || []
+    } : {})
   });
   const companies = service.profiles
     .filter((profile) => profile.entityType === "organization_candidate" && profile.verificationStatus === "verified" && profile.eventIds.length)
@@ -519,7 +527,8 @@ export function buildFrontstageData(root = defaultRoot) {
     fdeRecords: fde,
     hardwareRecords: hardware,
     viewpointData,
-    reviewDecisions
+    reviewDecisions,
+    generatedAt: process.env.WAVESIGHT_ENTITY_HISTORY_GENERATED_AT || ""
   });
   const entityCollections = buildEntityCollections(entityHistory, eventsById);
   const viewpoints = buildViewpoints(root, entityHistory.profiles);
@@ -530,7 +539,7 @@ export function buildFrontstageData(root = defaultRoot) {
       dataVersion: "SITE-V4.0-data-center",
       entityVersion: entityHistory.manifest.entityVersion,
       relationshipVersion: entityHistory.manifest.relationshipVersion,
-      generatedAt: new Date().toISOString(),
+      generatedAt: process.env.WAVESIGHT_FRONTSTAGE_GENERATED_AT || new Date().toISOString(),
       latestDataDate,
       currentDate,
       eventCount: eventRecords.length,
@@ -637,6 +646,9 @@ export function writeFrontstageData(root = defaultRoot) {
       meta: data.meta,
       entity: profile,
       relatedEntities: (profile.relatedEntityIds || []).map((id) => profileById.get(id)).filter(Boolean).map(({ timeline, viewpoints, groupedEventIds, relationIds, ...item }) => item),
+      ...(profile.organizationFamilyEntityIds?.length ? {
+        organizationFamilyEntities: profile.organizationFamilyEntityIds.map((id) => profileById.get(id)).filter(Boolean).map(({ timeline, viewpoints, groupedEventIds, relationIds, ...item }) => item)
+      } : {}),
       relationships: (profile.relationIds || []).map((id) => relationById.get(id)).filter(Boolean),
       taxonomyNodes: (profile.classificationRefs || []).map((id) => nodeById.get(id)).filter(Boolean),
       fde: data.fde.filter((item) => item.entityIds.includes(profile.id)),

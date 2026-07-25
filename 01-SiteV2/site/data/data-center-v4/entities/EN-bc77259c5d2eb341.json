@@ -28,10 +28,14 @@
       "TX-use_case-software_development",
       "TX-technology-long_context"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-1d79127e9d90e89b"
+    ],
     "firstSeen": "2026-07-07",
     "lastSeen": "2026-07-07",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-09dd97666e545a2c"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -78,8 +82,60 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-1d79127e9d90e89b",
+      "name": "智谱AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "智谱",
+        "Zhipu AI"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-70efbfcaadcdb259",
+        "EV-534dc9add1c0cc35",
+        "EV-1e0871947289ab6e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-software_development",
+        "TX-technology-code_generation",
+        "TX-technology-long_context"
+      ],
+      "relatedEntityIds": [
+        "EN-bc77259c5d2eb341",
+        "EN-993599624a199fe0"
+      ],
+      "firstSeen": "2026-06-13",
+      "lastSeen": "2026-07-07"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-09dd97666e545a2c",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-1d79127e9d90e89b",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-bc77259c5d2eb341",
+      "object_type": "entity",
+      "event_id": "EV-70efbfcaadcdb259",
+      "claim_refs": [
+        "CL-8d3f53e900c124b2",
+        "CL-561e07b12fe3bead"
+      ],
+      "source_refs": [
+        "SA-6e3c97add2d113a3"
+      ],
+      "data_date": "2026-07-07",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-use_case-software_development",
@@ -174,7 +230,6 @@
         "EN-a3c3b987b09fc1bb",
         "EN-1ecf93c539fcffca",
         "EN-6fcba5d96a4fadfd",
-        "EN-0b9ca57f53ba758b",
         "EN-c4bc2d00a42f220f"
       ],
       "fdeIds": [
