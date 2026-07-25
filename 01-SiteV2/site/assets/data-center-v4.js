@@ -765,10 +765,12 @@
     const initialRelation = relations[0] || null;
     root.innerHTML = `
       <header class="dc-page-head dc-relation-page-head">
-        <div>
+        <div class="dc-relation-heading">
           <span class="dc-relation-eyebrow">INDUSTRY RELATION MAP</span>
-          <h1>关系图谱</h1>
-          <p>${escapeHtml(viewConfig.relations.description)}</p>
+          <div class="dc-relation-title-row">
+            <h1>关系图谱</h1>
+            <p>${escapeHtml(viewConfig.relations.description)}</p>
+          </div>
         </div>
         <div class="dc-relation-head-stat"><strong>${relations.length}</strong><span>条事实关系</span></div>
       </header>
