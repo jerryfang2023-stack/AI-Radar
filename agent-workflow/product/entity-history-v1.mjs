@@ -806,6 +806,11 @@ export function buildEntityHistoryService({
   const relationships = buildTypedRelationships({ registry, events: reviewed.events, fdeRecords, hardwareRecords, taxonomyNodes, reviewDecisions: reviewed.decisions, entityIdRemap: reviewed.remap });
   const profiles = buildProfiles({ registry, events: reviewed.events, relationships, taxonomyNodes, viewpointData });
   const dates = reviewed.events.flatMap((event) => [event.dataDate, event.date]).map(dateOnly).filter(Boolean);
+  const dataBatchDates = [...new Set(reviewed.events.map((event) => dateOnly(event.dataDate)).filter(Boolean))].sort();
+  const dataBatchesByMonth = Object.fromEntries([...new Set(dataBatchDates.map((date) => date.slice(0, 7)))].map((month) => [
+    month,
+    dataBatchDates.filter((date) => date.startsWith(month)).length
+  ]));
   const manifest = {
     entityVersion: ENTITY_HISTORY_VERSION,
     relationshipVersion: RELATIONSHIP_VERSION,
@@ -813,7 +818,8 @@ export function buildEntityHistoryService({
     coverage: {
       startDate: minDate(dates),
       endDate: maxDate(dates),
-      distinctDataDays: new Set(events.map((event) => dateOnly(event.dataDate)).filter(Boolean)).size
+      distinctDataDays: dataBatchDates.length,
+      dataBatchesByMonth
     },
     counts: {
       entities: profiles.length,

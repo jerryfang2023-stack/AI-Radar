@@ -31,12 +31,14 @@ function writeJsonAtomic(file, value) {
 
 function refreshCounts(queue) {
   const byType = {};
+  const byTier = {};
   const byStatus = {};
   for (const task of queue.tasks || []) {
     byType[task.taskType] = (byType[task.taskType] || 0) + 1;
+    byTier[task.priority.tier] = (byTier[task.priority.tier] || 0) + 1;
     byStatus[task.state.status] = (byStatus[task.state.status] || 0) + 1;
   }
-  queue.manifest.counts = { active: queue.tasks.length, resolved: queue.resolvedTasks.length, byType, byStatus };
+  queue.manifest.counts = { active: queue.tasks.length, resolved: queue.resolvedTasks.length, retired: queue.retiredTasks.length, byType, byTier, byStatus };
 }
 
 if (!fs.existsSync(queueFile)) throw new Error("Targeted backfill queue is missing. Run npm run build:targeted-backfill first.");
@@ -47,7 +49,9 @@ const at = args.get("at") || new Date().toISOString();
 let result;
 
 if (action === "next") {
-  result = queue.tasks.find((task) => task.state.status === "open") || null;
+  result = queue.tasks.find((task) => task.state.status === "open" && task.priority.tier === "core")
+    || queue.tasks.find((task) => task.state.status === "open")
+    || null;
   console.log(JSON.stringify({ ok: true, task: result }, null, 2));
   process.exit(0);
 }

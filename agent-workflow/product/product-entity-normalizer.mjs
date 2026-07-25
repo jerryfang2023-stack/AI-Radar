@@ -38,12 +38,12 @@ function cleanCandidate(value = "") {
   if (GENERIC_WORDS.has(candidate.toLocaleLowerCase())) return "";
   if (/^AI[- ]powered\b|^(?:AI Social|AI Public Launch)$/iu.test(candidate)) return "";
   if (/Social Platform for|^Every Team$/iu.test(candidate)) return "";
-  if (/\b(?:announces?|announced|releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|rolls?|built|goes|amid|simplif(?:y|ies)|eating|our|finding)\b/iu.test(candidate)) return "";
+  if (/\b(?:announces?|announced|releases?|released|launch(?:es|ed)?|introduces?|introduced|unveils?|unveiled|rolls?|builds?|built|goes|amid|simplif(?:y|ies)|eating|enter(?:s|ed)?|achiev(?:e|es|ed)|powering|grows?|grew|replacing|our|finding)\b/iu.test(candidate)) return "";
   if (/\b(?:are|is|was|were|has|have)\b/iu.test(candidate)) return "";
   if (/^(?:Across|Next)\b|\b(?:for|with|to|from|across|amid)$/iu.test(candidate)) return "";
   if (/(?:\breport|报告)$/iu.test(candidate)) return "";
   if (/^(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+(?:\d{1,2}|\d{4})$/iu.test(candidate)) return "";
-  if (/^(?:General Availability|Announces General Availability)$/iu.test(candidate)) return "";
+  if (/^(?:General Availability|Announces General Availability|Production Scale)$/iu.test(candidate)) return "";
   if (/^(?:Company Announcement|Enterprise IT|US AI|Developer Platform for AI)$/iu.test(candidate)) return "";
   if (/^(?:Development|Experiment|Production)(?:\s+(?:From|To)\s+(?:Development|Experiment|Production))+$/iu.test(candidate)) return "";
   if (/\b(?:CTO|CEO|founder)$/iu.test(candidate)) return "";

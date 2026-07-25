@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { annotateEntityReviewErrorPatterns } from "../product/entity-review-error-patterns.mjs";
 
 const root = process.cwd();
 const args = new Map(process.argv.slice(2).map((arg) => {
@@ -424,6 +425,7 @@ function main() {
   mergeClaudeCodeVersions(decisions);
   enrichClaimBackedPeople(decisions, claimsById);
   resolveMergeChains(decisions, currentIds);
+  annotateEntityReviewErrorPatterns(decisions);
   decisions.sort((left, right) => left.canonical.catalog_type.localeCompare(right.canonical.catalog_type)
     || left.canonical.name.localeCompare(right.canonical.name, "zh-CN")
     || left.entity_id.localeCompare(right.entity_id));

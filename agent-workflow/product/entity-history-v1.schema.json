@@ -14,11 +14,18 @@
         "generatedAt": { "type": "string" },
         "coverage": {
           "type": "object",
-          "required": ["startDate", "endDate", "distinctDataDays"],
+          "required": ["startDate", "endDate", "distinctDataDays", "dataBatchesByMonth"],
           "properties": {
             "startDate": { "type": "string" },
             "endDate": { "type": "string" },
-            "distinctDataDays": { "type": "integer", "minimum": 0 }
+            "distinctDataDays": { "type": "integer", "minimum": 0 },
+            "dataBatchesByMonth": {
+              "type": "object",
+              "patternProperties": {
+                "^\\d{4}-\\d{2}$": { "type": "integer", "minimum": 1 }
+              },
+              "additionalProperties": false
+            }
           },
           "additionalProperties": false
         },

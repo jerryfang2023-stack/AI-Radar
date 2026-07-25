@@ -98,6 +98,8 @@ const data = {
   events: eventRecords,
   companies: collections.companies,
   products: collections.products,
+  people: collections.people,
+  relationships: entityHistory.relationships,
   fde
 };
 const previousQueue = readJson(queueFile, {});

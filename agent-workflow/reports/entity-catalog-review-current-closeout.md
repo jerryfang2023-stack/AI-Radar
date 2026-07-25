@@ -1,9 +1,9 @@
 # Current Entity Catalog Review Closeout
 
 - Generated: 2026-07-25T05:03:49.133Z
-- Current catalog reviewed: 571
+- Current catalog reviewed: 570
 - Claim-backed entities added: 8
-- Historical decisions retained: 289
+- Historical decisions retained: 290
 - Total explicit decisions: 860
 - Confirmed: 424
 - Corrected: 150

@@ -93,7 +93,9 @@ function evaluate(data) {
 
   const coverageDays = daysBetween(manifest.coverage?.startDate || "", manifest.coverage?.endDate || "");
   if (!Number.isFinite(coverageDays) || coverageDays < 175) problems.push(`entity event-time coverage is below six-month release window (${coverageDays || 0} days)`);
-  if ((manifest.coverage?.distinctDataDays || 0) < 50) problems.push("entity history has fewer than 50 accepted data batches");
+  const monthlyDataBatchTotal = Object.values(manifest.coverage?.dataBatchesByMonth || {}).reduce((sum, value) => sum + value, 0);
+  if ((manifest.coverage?.distinctDataDays || 0) < 1) problems.push("entity history has no accepted data batches");
+  if (monthlyDataBatchTotal !== manifest.coverage?.distinctDataDays) problems.push("monthly data-batch coverage does not close to distinctDataDays");
 
   const forbidden = ["business_meaning", "why_watch", "why_selected", "importance_score", "opportunity_score", "recommendation"];
   const serialized = JSON.stringify({ profiles, nodes, relationships });

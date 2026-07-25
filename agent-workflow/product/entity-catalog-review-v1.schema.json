@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wavesight.local/schemas/entity-catalog-review-v1.schema.json",
+  "title": "WaveSight Entity Catalog Review V1",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "reviewer", "inputs", "summary", "decisions"],
+  "properties": {
+    "schema_version": { "const": "ENTITY-CATALOG-REVIEW-V1" },
+    "generated_at": { "type": "string", "minLength": 1 },
+    "reviewer": { "type": "string", "minLength": 1 },
+    "inputs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "summary": { "type": "object" },
+    "decisions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/decision" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "entityShape": {
+      "type": "object",
+      "required": ["name", "catalog_type", "company_names"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "catalog_type": { "enum": ["company", "product", "person", "other"] },
+        "company_names": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+      },
+      "additionalProperties": true
+    },
+    "decision": {
+      "type": "object",
+      "required": ["entity_id", "current", "action", "merge_into_entity_id", "canonical", "error_patterns", "evidence", "rationale", "review_status", "reviewer", "reviewed_at"],
+      "properties": {
+        "entity_id": { "type": "string", "pattern": "^EN-[a-f0-9]{16}$" },
+        "current": { "$ref": "#/$defs/entityShape" },
+        "action": { "enum": ["confirm", "correct", "merge", "quarantine"] },
+        "merge_into_entity_id": { "type": "string" },
+        "canonical": { "$ref": "#/$defs/entityShape" },
+        "error_patterns": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "name_extraction_fragment",
+              "version_alias",
+              "entity_type_misclassification",
+              "duplicate_entity",
+              "ownership_attribution",
+              "insufficient_claim_evidence",
+              "generic_or_non_entity",
+              "legacy_correction_retained"
+            ]
+          }
+        },
+        "evidence": {
+          "type": "object",
+          "required": ["claim_refs", "secondary_sources"],
+          "properties": {
+            "claim_refs": { "type": "array", "items": { "type": "string" } },
+            "secondary_sources": { "type": "array", "items": { "type": "object" } }
+          },
+          "additionalProperties": false
+        },
+        "rationale": { "type": "string", "minLength": 1 },
+        "review_status": { "const": "accepted" },
+        "reviewer": { "type": "string", "minLength": 1 },
+        "reviewed_at": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": true
+    }
+  }
+}

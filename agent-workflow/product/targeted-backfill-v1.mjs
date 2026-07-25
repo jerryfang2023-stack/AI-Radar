@@ -5,8 +5,9 @@ export const TARGETED_BACKFILL_VERSION = "BACKFILL-V1.0";
 const TASK_ORDER = new Map([
   ["funding_detail", 0],
   ["deployment_case", 1],
-  ["company_history", 2],
-  ["product_history", 3]
+  ["person_history", 2],
+  ["company_history", 3],
+  ["product_history", 4]
 ]);
 
 const BLOCKED_EVIDENCE = [
@@ -52,6 +53,11 @@ function knownDomains(events = []) {
 
 function acceptedEvent(event = {}) {
   return !["quarantined", "withdrawn", "disputed"].includes(event.publicationStatus);
+}
+
+function eventInWindow(event = {}, window = {}) {
+  const eventDate = dateOnly(event.date || event.dataDate);
+  return Boolean(eventDate && eventDate >= window.startDate && eventDate <= window.endDate);
 }
 
 function fundingEvidenceIsExplicit(event = {}) {
@@ -208,9 +214,19 @@ function baseState(previousState = {}) {
   };
 }
 
+function priorityForTask(task = {}) {
+  if (task.priority?.tier && task.priority?.reasons?.length) return task.priority;
+  if (["funding_detail", "deployment_case"].includes(task.taskType)) return { tier: "core", reasons: ["fact_gap"] };
+  if (task.taskType === "person_history") return { tier: "core", reasons: ["person_relationship"] };
+  return (task.detection?.detectedFromRefs || []).filter((ref) => ref.startsWith("EV-")).length >= 2
+    ? { tier: "core", reasons: ["repeated_accepted_activity"] }
+    : { tier: "standard", reasons: ["single_accepted_activity"] };
+}
+
 function makeTask({
   type,
   target,
+  priority,
   gapKind,
   missingFields = [],
   detectedFromRefs = [],
@@ -233,6 +249,7 @@ function makeTask({
     taskId,
     taskType: type,
     target,
+    priority,
     detection: {
       gapKind,
       missingFields: unique(missingFields).sort(),
@@ -260,15 +277,19 @@ function makeTask({
 }
 
 export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, generatedAt = new Date().toISOString(), windowMonths = 6 } = {}) {
-  const endDate = dateOnly(data.entityHistoryManifest?.coverage?.endDate || data.meta?.currentDate || generatedAt);
+  const endDate = dateOnly(data.meta?.currentDate || data.entityHistoryManifest?.coverage?.endDate || generatedAt);
   const window = { startDate: shiftMonths(endDate, -windowMonths), endDate, months: windowMonths };
-  const events = (data.events || []).filter(acceptedEvent);
+  const acceptedEvents = (data.events || []).filter(acceptedEvent);
+  const acceptedEventsById = new Map(acceptedEvents.map((event) => [event.id, event]));
+  const events = acceptedEvents.filter((event) => eventInWindow(event, window));
   const eventsById = new Map(events.map((event) => [event.id, event]));
   const companiesById = new Map((data.companies || []).map((company) => [company.id, company]));
-  const currentEntityIds = new Set([...(data.companies || []), ...(data.products || [])].map((entity) => entity.id));
-  const previousActiveTasks = previousQueue.tasks || [];
-  const previousResolvedTasks = previousQueue.resolvedTasks || [];
-  const previousRetiredTasks = previousQueue.retiredTasks || [];
+  const peopleById = new Map((data.people || []).map((person) => [person.id, person]));
+  const currentEntitiesById = new Map([...(data.companies || []), ...(data.products || []), ...(data.people || [])].map((entity) => [entity.id, entity]));
+  const currentEntityIds = new Set(currentEntitiesById.keys());
+  const previousActiveTasks = (previousQueue.tasks || []).map((task) => ({ ...task, priority: priorityForTask(task) }));
+  const previousResolvedTasks = (previousQueue.resolvedTasks || []).map((task) => ({ ...task, priority: priorityForTask(task) }));
+  const previousRetiredTasks = (previousQueue.retiredTasks || []).map((task) => ({ ...task, priority: priorityForTask(task) }));
   const previousTasks = [...previousActiveTasks, ...previousResolvedTasks, ...previousRetiredTasks];
   const previousById = new Map(previousTasks.map((task) => [task.taskId, task]));
   const tasks = [];
@@ -282,6 +303,9 @@ export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, gene
     tasks.push(makeTask({
       type: "company_history",
       target: { kind: "entity", id: company.id, name: company.name },
+      priority: companyEvents.length >= 2
+        ? { tier: "core", reasons: ["repeated_accepted_activity"] }
+        : { tier: "standard", reasons: ["single_accepted_activity"] },
       gapKind: "coverage_sweep",
       detectedFromRefs: companyEvents.map((event) => event.id),
       paths: ["official_original", "capital_startup", "industry_landing"],
@@ -307,6 +331,9 @@ export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, gene
     tasks.push(makeTask({
       type: "product_history",
       target: { kind: "entity", id: product.id, name: product.name },
+      priority: productEvents.length >= 2
+        ? { tier: "core", reasons: ["repeated_accepted_activity"] }
+        : { tier: "standard", reasons: ["single_accepted_activity"] },
       gapKind: "coverage_sweep",
       detectedFromRefs: productEvents.map((event) => event.id),
       paths: ["official_original", "developer_ecosystem", "industry_landing"],
@@ -331,6 +358,7 @@ export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, gene
     tasks.push(makeTask({
       type: "funding_detail",
       target: { kind: "event", id: event.id, name: subject, eventId: event.id },
+      priority: { tier: "core", reasons: ["fact_gap"] },
       gapKind: "missing_fields",
       missingFields,
       detectedFromRefs: [event.id, ...(event.claims || []).map((claim) => claim.id), ...(event.sources || []).map((source) => source.id)],
@@ -360,6 +388,7 @@ export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, gene
     tasks.push(makeTask({
       type: "deployment_case",
       target: { kind: "event", id: event.id, name: event.title, eventId: event.id, fdeId: record?.id || "" },
+      priority: { tier: "core", reasons: ["fact_gap"] },
       gapKind: "missing_fields",
       missingFields,
       detectedFromRefs: [event.id, record?.id, ...(event.claims || []).map((claim) => claim.id), ...(event.sources || []).map((source) => source.id)],
@@ -372,21 +401,70 @@ export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, gene
     }));
   }
 
-  tasks.sort((a, b) => (TASK_ORDER.get(a.taskType) - TASK_ORDER.get(b.taskType)) || a.target.name.localeCompare(b.target.name, "zh-CN") || a.taskId.localeCompare(b.taskId));
+  const personRelationships = (data.relationships || []).filter((relationship) =>
+    peopleById.has(relationship.subject_ref)
+    && ["joins", "leaves", "founds"].includes(relationship.predicate)
+    && eventsById.has(relationship.event_id)
+  );
+  for (const person of data.people || []) {
+    const relationships = personRelationships.filter((relationship) => relationship.subject_ref === person.id);
+    if (!relationships.length) continue;
+    const personEvents = unique(relationships.map((relationship) => relationship.event_id)).map((id) => eventsById.get(id)).filter(Boolean);
+    const organizationNames = unique(relationships.map((relationship) => companiesById.get(relationship.object_ref)?.name));
+    const actionTerms = unique(relationships.flatMap((relationship) => relationship.predicate === "joins"
+      ? ["joined", "joins", "appointed"]
+      : relationship.predicate === "leaves"
+        ? ["left", "leaves", "departed"]
+        : ["founded", "founds", "started"]));
+    const timeClause = `after:${window.startDate} before:${shiftDays(window.endDate, 1)}`;
+    const organizationClause = organizationNames.length ? ` (${organizationNames.map(quoted).join(" OR ")})` : "";
+    const domains = knownDomains(personEvents);
+    tasks.push(makeTask({
+      type: "person_history",
+      target: { kind: "entity", id: person.id, name: person.name },
+      priority: { tier: "core", reasons: ["person_relationship"] },
+      gapKind: "coverage_sweep",
+      detectedFromRefs: personEvents.flatMap((event) => [event.id, ...(event.claims || []).map((claim) => claim.id), ...(event.sources || []).map((source) => source.id)]),
+      paths: ["official_original", "company_people", "capital_startup"],
+      domains,
+      queries: [
+        `${quoted(person.name)} (${actionTerms.join(" OR ")})${organizationClause} ${timeClause}`,
+        ...domains.map((domain) => `site:${domain} ${quoted(person.name)} (${actionTerms.join(" OR ")}) ${timeClause}`)
+      ],
+      window,
+      previousById,
+      generatedAt
+    }));
+  }
+
+  tasks.sort((a, b) => (a.priority.tier === b.priority.tier ? 0 : a.priority.tier === "core" ? -1 : 1)
+    || (TASK_ORDER.get(a.taskType) - TASK_ORDER.get(b.taskType))
+    || a.target.name.localeCompare(b.target.name, "zh-CN")
+    || a.taskId.localeCompare(b.taskId));
   const activeIds = new Set(tasks.map((task) => task.taskId));
-  const targetStillCanonical = (task) => task.target.kind === "event" ? eventsById.has(task.target.eventId || task.target.id) : currentEntityIds.has(task.target.id);
+  const targetStillCanonical = (task) => task.target.kind === "event" ? acceptedEventsById.has(task.target.eventId || task.target.id) : currentEntityIds.has(task.target.id);
+  const targetStillInWindow = (task) => task.target.kind === "event"
+    ? eventsById.has(task.target.eventId || task.target.id)
+    : (currentEntitiesById.get(task.target.id)?.eventIds || []).some((eventId) => eventsById.has(eventId));
   const disappeared = previousActiveTasks.filter((task) => !activeIds.has(task.taskId));
-  const newlyResolved = disappeared.filter((task) => task.detection.gapKind === "missing_fields" && targetStillCanonical(task)).map((task) => ({
+  const newlyResolved = disappeared.filter((task) => task.detection.gapKind === "missing_fields" && targetStillCanonical(task) && targetStillInWindow(task)).map((task) => ({
     ...task,
     state: { ...baseState(task.state), status: "resolved", resolvedAt: task.state?.resolvedAt || generatedAt }
   }));
-  const newlyRetired = disappeared.filter((task) => task.detection.gapKind !== "missing_fields" || !targetStillCanonical(task)).map((task) => ({
+  const newlyResolvedIds = new Set(newlyResolved.map((task) => task.taskId));
+  const newlyRetired = disappeared.filter((task) => !newlyResolvedIds.has(task.taskId)).map((task) => ({
     ...task,
-    state: { ...baseState(task.state), status: "retired", retiredAt: task.state?.retiredAt || generatedAt, retirementReason: "target_no_longer_canonical" }
+    state: {
+      ...baseState(task.state),
+      status: "retired",
+      retiredAt: task.state?.retiredAt || generatedAt,
+      retirementReason: targetStillCanonical(task) ? "outside_coverage_window" : "target_no_longer_canonical"
+    }
   }));
   const resolvedTasks = [...previousResolvedTasks.filter((task) => !activeIds.has(task.taskId)), ...newlyResolved];
   const retiredTasks = [...previousRetiredTasks.filter((task) => !activeIds.has(task.taskId)), ...newlyRetired];
   const countsByType = Object.fromEntries([...TASK_ORDER.keys()].map((type) => [type, tasks.filter((task) => task.taskType === type).length]));
+  const countsByTier = Object.fromEntries(["core", "standard"].map((tier) => [tier, tasks.filter((task) => task.priority.tier === tier).length]));
   const countsByStatus = Object.fromEntries(unique(tasks.map((task) => task.state.status)).sort().map((status) => [status, tasks.filter((task) => task.state.status === status).length]));
 
   return {
@@ -396,7 +474,7 @@ export function buildTargetedBackfillQueue({ data = {}, previousQueue = {}, gene
       sourceProductVersion: data.meta?.productVersion || "",
       sourceEntityVersion: data.entityHistoryManifest?.entityVersion || "",
       coverageWindow: window,
-      counts: { active: tasks.length, resolved: resolvedTasks.length, retired: retiredTasks.length, byType: countsByType, byStatus: countsByStatus }
+      counts: { active: tasks.length, resolved: resolvedTasks.length, retired: retiredTasks.length, byType: countsByType, byTier: countsByTier, byStatus: countsByStatus }
     },
     tasks,
     resolvedTasks,

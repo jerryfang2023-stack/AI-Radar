@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { annotateEntityReviewErrorPatterns } from "../product/entity-review-error-patterns.mjs";
 
 const root = process.cwd();
 const args = new Map(process.argv.slice(2).map((arg) => {
@@ -295,6 +296,7 @@ function main() {
     }
   }
 
+  annotateEntityReviewErrorPatterns(decisions);
   assertKnownCorrections(decisions);
   const summary = {
     reviewed: decisions.length,

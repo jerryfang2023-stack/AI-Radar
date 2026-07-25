@@ -90,7 +90,7 @@ For a full historical reprojection of all accepted canonical data, run `npm run 
 
 ## Targeted historical collection
 
-`BACKFILL-V1.0` is the internal cross-day discovery queue for public company and product history sweeps plus explicit funding and deployment fact gaps.
+`BACKFILL-V1.0` is the internal cross-day discovery queue for public company, product, and source-backed person relationship history sweeps plus explicit funding and deployment fact gaps. It routes deterministic `core` work first: factual gaps, person joins/leaves/founds, and company/product targets with repeated accepted activity inside the six-month window. Single-event company/product sweeps remain `standard`; neither tier implies commercial value.
 
 ```powershell
 npm run build:targeted-backfill
@@ -99,6 +99,8 @@ npm run manage:targeted-backfill -- --action=next
 ```
 
 Search queries, result snippets, candidates, and no-findings runs cannot create facts. A candidate must return through SourceArtifact -> RawDocument -> exact-span Claim and the responsible Event/FDE build and gate. A missing event type in an entity timeline is not proof that an event occurred.
+
+The entity-history manifest reports accepted data-batch counts by month. Sparse months remain visible and are not converted into synthetic daily tasks.
 
 ## Daily serving semantics
 

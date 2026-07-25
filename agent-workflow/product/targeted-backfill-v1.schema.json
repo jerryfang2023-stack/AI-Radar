@@ -62,17 +62,30 @@
         "nextReviewOn": { "type": "string" },
         "resolvedAt": { "type": "string" },
         "retiredAt": { "type": "string" },
-        "retirementReason": { "const": "target_no_longer_canonical" }
+        "retirementReason": { "enum": ["target_no_longer_canonical", "outside_coverage_window"] }
       },
       "additionalProperties": false
     },
     "task": {
       "type": "object",
-      "required": ["taskId", "taskType", "target", "detection", "coverageWindow", "searchPlan", "completion", "state"],
+      "required": ["taskId", "taskType", "target", "priority", "detection", "coverageWindow", "searchPlan", "completion", "state"],
       "properties": {
         "taskId": { "type": "string", "pattern": "^BFQ-[a-f0-9]{16}$" },
-        "taskType": { "enum": ["company_history", "product_history", "funding_detail", "deployment_case"] },
+        "taskType": { "enum": ["company_history", "product_history", "person_history", "funding_detail", "deployment_case"] },
         "target": { "$ref": "#/$defs/target" },
+        "priority": {
+          "type": "object",
+          "required": ["tier", "reasons"],
+          "properties": {
+            "tier": { "enum": ["core", "standard"] },
+            "reasons": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "enum": ["fact_gap", "person_relationship", "repeated_accepted_activity", "single_accepted_activity"] }
+            }
+          },
+          "additionalProperties": false
+        },
         "detection": {
           "type": "object",
           "required": ["gapKind", "missingFields", "detectedFromRefs", "detectedAt", "lastObservedAt"],

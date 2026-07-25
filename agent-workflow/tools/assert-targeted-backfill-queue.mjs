@@ -61,7 +61,7 @@ function evaluate(queue, canonical) {
   const validate = ajv.compile(readJson(schemaFile));
   if (!validate(queue)) for (const error of validate.errors || []) problems.push(`schema ${error.instancePath || "/"} ${error.message}`);
 
-  const requiredTypes = ["company_history", "product_history", "funding_detail", "deployment_case"];
+  const requiredTypes = ["company_history", "product_history", "person_history", "funding_detail", "deployment_case"];
   const latestCanonicalDate = canonical.dates.at(-1) || "";
   if (queue.manifest?.coverageWindow?.endDate !== latestCanonicalDate) problems.push(`queue coverage end ${queue.manifest?.coverageWindow?.endDate || "missing"} does not match latest canonical bundle ${latestCanonicalDate || "missing"}`);
   for (const type of requiredTypes) if (!tasks.some((task) => task.taskType === type)) problems.push(`initial queue has no ${type} task`);
@@ -86,6 +86,8 @@ function evaluate(queue, canonical) {
     if (!task.searchPlan.queries.some((query) => query.includes(`"${task.target.name.replace(/"/gu, "")}"`)) && task.taskType !== "deployment_case") problems.push(`${task.taskId} has no exact target-name query`);
     if (task.detection.gapKind === "missing_fields" && !task.detection.missingFields.length) problems.push(`${task.taskId} is a fact-gap task without missing fields`);
     if (task.detection.gapKind === "coverage_sweep" && task.detection.missingFields.length) problems.push(`${task.taskId} treats a coverage sweep as a factual missing field`);
+    if (["funding_detail", "deployment_case", "person_history"].includes(task.taskType) && task.priority.tier !== "core") problems.push(`${task.taskId} must be routed to the core tier`);
+    if (task.priority.tier === "core" && !task.priority.reasons.length) problems.push(`${task.taskId} has no auditable core-tier reason`);
     if (!task.completion.requiredArtifacts.includes("SourceArtifact") || !task.completion.requiredArtifacts.includes("RawDocument") || !task.completion.requiredArtifacts.includes("Claim")) problems.push(`${task.taskId} can complete without the V4 evidence chain`);
     if (task.state.status === "in_progress" && (!task.state.worker || !task.state.leaseExpiresAt)) problems.push(`${task.taskId} has an invalid lease`);
     for (const candidate of task.state.candidateSources) {
@@ -103,8 +105,9 @@ function evaluate(queue, canonical) {
   if (counts.resolved !== (queue.resolvedTasks || []).length) problems.push("manifest resolved count does not match resolved tasks");
   if (counts.retired !== (queue.retiredTasks || []).length) problems.push("manifest retired count does not match retired tasks");
   for (const task of queue.resolvedTasks || []) if (task.state.status !== "resolved") problems.push(`${task.taskId} is in resolvedTasks without resolved status`);
-  for (const task of queue.retiredTasks || []) if (task.state.status !== "retired" || task.state.retirementReason !== "target_no_longer_canonical") problems.push(`${task.taskId} has an invalid retirement record`);
+  for (const task of queue.retiredTasks || []) if (task.state.status !== "retired" || !["target_no_longer_canonical", "outside_coverage_window"].includes(task.state.retirementReason)) problems.push(`${task.taskId} has an invalid retirement record`);
   for (const type of requiredTypes) if ((counts.byType?.[type] || 0) !== tasks.filter((task) => task.taskType === type).length) problems.push(`manifest ${type} count is stale`);
+  for (const tier of ["core", "standard"]) if ((counts.byTier?.[tier] || 0) !== tasks.filter((task) => task.priority.tier === tier).length) problems.push(`manifest ${tier} tier count is stale`);
   return { ok: problems.length === 0, checkedAt: new Date().toISOString(), queueVersion: queue.manifest?.queueVersion || "", coverageWindow: queue.manifest?.coverageWindow || {}, counts, problems };
 }
 

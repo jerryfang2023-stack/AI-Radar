@@ -10,6 +10,7 @@ import {
 const generatedAt = "2026-07-18T00:00:00.000Z";
 const company = { id: "EN-1111111111111111", name: "Acme", eventIds: ["EV-P", "EV-F", "EV-D"] };
 const product = { id: "EN-2222222222222222", name: "Atlas Agent", eventIds: ["EV-P"] };
+const person = { id: "EN-5555555555555555", name: "Avery Chen", eventIds: ["EV-J"] };
 const baseEvent = {
   dataDate: "2026-07-17",
   date: "2026-07-16",
@@ -26,7 +27,16 @@ function fixture() {
     entityHistoryManifest: { entityVersion: "ENTITY-V1.0", coverage: { startDate: "2026-01-20", endDate: "2026-07-17" } },
     companies: [company],
     products: [product],
+    people: [person],
+    relationships: [{
+      relationship_id: "REL2-1",
+      subject_ref: person.id,
+      predicate: "joins",
+      object_ref: company.id,
+      event_id: "EV-J"
+    }],
     events: [
+      { ...baseEvent, id: "EV-J", eventType: "organization_people", title: "Avery Chen joins Acme", originalTitle: "Avery Chen joins Acme", action: "joins", subject: "Avery Chen", entityIds: [person.id, company.id], metrics: [] },
       { ...baseEvent, id: "EV-P", eventType: "product_release", title: "Acme 发布 Atlas Agent", subject: "Acme", metrics: [] },
       { ...baseEvent, id: "EV-F", eventType: "funding", title: "Acme 完成融资", originalTitle: "Acme raises funding", subject: "Acme", metrics: [] },
       { ...baseEvent, id: "EV-D", eventType: "deployment", title: "Acme 公司部署 AI", originalTitle: "Acme company deploys AI", action: "部署", subject: "Acme", metrics: [] }
@@ -35,11 +45,13 @@ function fixture() {
   };
 }
 
-test("builds stable company, product, funding, and deployment backfill tasks", () => {
+test("builds stable company, product, person, funding, and deployment backfill tasks", () => {
   const queue = buildTargetedBackfillQueue({ data: fixture(), generatedAt });
-  assert.deepEqual(new Set(queue.tasks.map((task) => task.taskType)), new Set(["company_history", "product_history", "funding_detail", "deployment_case"]));
+  assert.deepEqual(new Set(queue.tasks.map((task) => task.taskType)), new Set(["company_history", "product_history", "person_history", "funding_detail", "deployment_case"]));
   assert.equal(queue.manifest.queueVersion, "BACKFILL-V1.0");
   assert.equal(queue.tasks.every((task) => task.searchPlan.forbiddenAsFactEvidence.includes("search_result_snippet")), true);
+  assert.equal(queue.tasks[0].priority.tier, "core");
+  assert.equal(queue.tasks.find((task) => task.taskType === "person_history").priority.tier, "core");
   assert.ok(queue.tasks.find((task) => task.taskType === "funding_detail").detection.missingFields.includes("funding_amount"));
   assert.ok(queue.tasks.find((task) => task.taskType === "deployment_case").detection.missingFields.includes("vendor"));
 });
@@ -115,6 +127,16 @@ test("retires a task instead of claiming success when its canonical target disap
   const retired = second.retiredTasks.find((task) => task.target.eventId === "EV-F");
   assert.equal(retired.state.status, "retired");
   assert.equal(retired.state.retirementReason, "target_no_longer_canonical");
+});
+
+test("retires rather than resolves a fact gap when it ages outside the six-month window", () => {
+  const first = buildTargetedBackfillQueue({ data: fixture(), generatedAt });
+  const future = fixture();
+  future.meta.currentDate = "2027-02-01";
+  const second = buildTargetedBackfillQueue({ data: future, previousQueue: first, generatedAt: "2027-02-01T00:00:00.000Z" });
+  const retired = second.retiredTasks.find((task) => task.target.eventId === "EV-F");
+  assert.equal(second.resolvedTasks.some((task) => task.target.eventId === "EV-F"), false);
+  assert.equal(retired.state.retirementReason, "outside_coverage_window");
 });
 
 test("funding searches use the disclosed company subject instead of an investor-shaped display title", () => {

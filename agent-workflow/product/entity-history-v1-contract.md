@@ -33,6 +33,7 @@ Allowed predicates are `publishes`, `partners_with`, `acquires`, `serves`, `depl
 ## Catalog review boundary
 
 - Model and search outputs remain advisory until an explicit reviewer records an accepted decision in `entity-catalog-review-decisions.json`.
+- Every non-confirm decision records one or more controlled `error_patterns`, allowing extraction fragments, version aliases, type errors, duplicate entities, ownership errors, and evidence failures to be checked as classes instead of one-off names.
 - Accepted decisions may confirm, correct, merge, or quarantine an entity in the rebuildable Entity History serving projection; historical V4 bundles remain unchanged.
 - A corrected product-company mapping creates a public `publishes` relationship only when its accepted Claim references and SourceArtifact-backed event contain an explicit publication action.
 - Secondary-search pages without an accepted canonical Claim may support quarantine or a reviewed display correction, but cannot independently create a formal relationship.
@@ -47,4 +48,4 @@ Allowed predicates are `publishes`, `partners_with`, `acquires`, `serves`, `depl
 
 ## History boundary
 
-The first release aggregates all accepted repository history and reports its event-time and data-batch coverage. Missing pre-V4 dates are recorded as coverage gaps; they cannot be filled from legacy page copy or Cards. Additional backfill must start from archived Raw/source material and pass the V4 Claim and event gates.
+The first release aggregates all accepted repository history and reports its event-time coverage plus accepted data-batch counts by month. The monthly counts disclose sparse periods; they are not a daily completeness target. Missing pre-V4 dates are recorded as coverage gaps and cannot be filled from legacy page copy or Cards. Additional backfill must start from archived Raw/source material and pass the V4 Claim and event gates.

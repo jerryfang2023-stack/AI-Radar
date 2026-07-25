@@ -17,6 +17,9 @@ test("product extraction rejects headline grammar and article fragments", () => 
   assert.deepEqual(extract("Vertical AI Agents Are Eating Horizontal SaaS: Inside the 2026 Specialization Boom"), []);
   assert.deepEqual(extract("Entire Is The Next Developer Platform for AI"), []);
   assert.deepEqual(extract("Company Announcement: IBM Enterprise Deployment Scales", ["IBM"]), []);
+  assert.deepEqual(extract("Enter Next Phase"), []);
+  assert.deepEqual(extract("Leading Inference Providers Achieve Production Scale"), []);
+  assert.deepEqual(extract("Manufacturing Leaders Build AI Systems"), []);
 });
 
 test("product extraction preserves exact branded names while dropping headline suffixes", () => {

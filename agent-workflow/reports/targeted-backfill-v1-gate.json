@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "checkedAt": "2026-07-25T05:04:35.140Z",
+  "checkedAt": "2026-07-25T06:10:42.395Z",
   "queueVersion": "BACKFILL-V1.0",
   "coverageWindow": {
     "startDate": "2026-01-25",
@@ -8,17 +8,22 @@
     "months": 6
   },
   "counts": {
-    "active": 707,
+    "active": 701,
     "resolved": 4,
-    "retired": 199,
+    "retired": 207,
     "byType": {
-      "funding_detail": 98,
+      "funding_detail": 96,
       "deployment_case": 42,
+      "person_history": 2,
       "company_history": 182,
-      "product_history": 385
+      "product_history": 379
+    },
+    "byTier": {
+      "core": 304,
+      "standard": 397
     },
     "byStatus": {
-      "open": 707
+      "open": 701
     }
   },
   "problems": []
