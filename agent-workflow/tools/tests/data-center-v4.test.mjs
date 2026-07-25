@@ -481,6 +481,34 @@ test("organization aliases resolve Chinese commercial-event title structures", (
   assert.ok(bundle.canonical_events.every((event) => event.entities.length > 0));
 });
 
+test("current funding, public-sector, and hardware titles resolve named organizations", () => {
+  const bundle = buildBundle([
+    entry(
+      "prentis-funding",
+      "Prentis in talks to raise $100M at a $1 billion valuation",
+      "Prentis is in talks to raise $100 million at a valuation of about $1 billion for its AI lab."
+    ),
+    entry(
+      "public-security-ai",
+      "公安部发布 AI 内容鉴定工具",
+      "公安部发布 AI 内容鉴定工具，并在国家反诈中心 App 上布设该功能。",
+      { language: "zh" }
+    ),
+    entry(
+      "odisha-ai-data-center",
+      "HCLTech 联手奥里萨邦政府及 Sarvam 建设 AI 数据中心",
+      "HCLTech announced that it will work with the Government of Odisha and Sarvam to build an AI data center in Bhubaneswar.",
+      { language: "zh" }
+    )
+  ], taxonomy, date, "2026-07-25T00:00:00.000Z");
+  const names = new Set(bundle.entities.filter((item) => item.entity_type === "organization_candidate").map((item) => item.canonical_name));
+
+  for (const name of ["Prentis", "Ministry of Public Security of China", "HCLTech", "Government of Odisha", "Sarvam"]) {
+    assert.ok(names.has(name), `missing organization entity ${name}`);
+  }
+  assert.ok(bundle.canonical_events.every((event) => event.entities.length > 0));
+});
+
 test("an earlier release verb preserves the organization when deployment determines the event type", () => {
   const bundle = buildBundle([
     entry(

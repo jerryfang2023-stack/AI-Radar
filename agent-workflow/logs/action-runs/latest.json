@@ -1,34 +1,34 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-25T02:43:02.090Z",
+  "generated_at": "2026-07-25T02:50:23.270Z",
   "date": "2026-07-25",
-  "action": "Repair Signal Card detail distinctness",
+  "action": "Resolve current V4 organization aliases",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Aligned visible excerpt selection and generator fixtures with the editorial gate's substantive duplicate semantics.",
+  "summary": "Added source-visible organization aliases for today's funding, public-sector, and AI data-center events so accepted events retain entity references.",
   "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/generate-asset-cards-from-pool.mjs"
+    "agent-workflow/tools/build-data-center-v4.mjs",
+    "agent-workflow/tools/tests/data-center-v4.test.mjs"
   ],
   "outputs": [],
   "checks": [
-    "Business Signal Card editorial regression fixtures",
-    "Business Signals pipeline policy",
+    "node --test agent-workflow/tools/tests/data-center-v4.test.mjs",
     "git diff --check"
   ],
   "issues": [
-    "One 2026-07-25 product Card repeated the news fact as its visible source excerpt"
+    "Three accepted 2026-07-25 canonical events had no entity reference"
   ],
   "risks": [
-    "Today production batch must be regenerated from the accepted Raw and Pool snapshot after this repair merges"
+    "The accepted daily V4 bundle must be rebuilt after this repair merges"
   ],
   "lessons": [
-    "Exact-string checks are insufficient when the release gate blocks shared long prefixes and contained detail text"
+    "Stable organizations named in mixed Chinese and English commercial titles need explicit aliases before event publication"
   ],
   "reusable_rules": [
-    "Use cardDetailsTooSimilar consistently in excerpt selection and regression fixtures"
+    "Add source-visible aliases with a regression fixture when a current accepted event has no organization entity"
   ],
   "retired_flags": [],
   "notes": []
