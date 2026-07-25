@@ -111,12 +111,17 @@ An empty cell means "no reliable public evidence yet." It is better than filling
 
 Direction Cards are a reviewed downstream layer built after the two maps, not an automatic extension of heat scoring.
 
+- DeepSeek V4 Pro writes the title and all editorial content from a bounded 30-day accepted-Card manifest.
+- Generated output is a candidate, not a publication. Persist it with model provenance and `pending_human_review`.
 - Keep the published set small.
 - Require at least two accepted Signal Cards with original-source URLs.
 - Prefer evidence from multiple actors or evidence forms.
-- State one falsifiable startup hypothesis, the buyer, task, pain, product wedge, current alternatives, unknowns, and a first validation action.
+- State one structural judgment, one falsifiable startup hypothesis, the buyer, task, pain, product wedge, current alternatives, counter-signal, unknowns, and a first validation action.
+- A title must express a change in value, budget, entry point, bottleneck, or competitive boundary. A category name such as `企业 AI 安全平台` is not a Direction Card title.
+- Reject factual numbers that do not appear in the selected source excerpts. Future validation sample sizes and counter-signal thresholds are allowed only when clearly framed as tests.
+- Reject `巨大机会`, `必然爆发`, `彻底颠覆`, `万亿市场`, `创业赛道`, and similar promotional or absolute language.
 - Label evidence stage as `值得验证`, `线索形成`, or `持续跟踪`; these labels describe evidence maturity, not a recommendation.
-- Do not publish a direction from tag frequency, one funding event, one product launch, or a generated summary.
+- Do not publish a direction from tag frequency, one funding event, one product launch, or an unreviewed model-generated summary.
 - Do not add market-size estimates, revenue projections, opaque scores, or "worth doing" language without a separate evidence process.
 - Keep reviewed definitions in `agent-workflow/product/opportunity-direction-cards.json`; the projection builder must drop a card when its minimum accepted evidence cannot be resolved.
 

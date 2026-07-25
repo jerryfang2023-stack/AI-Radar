@@ -104,6 +104,9 @@ function workerRun(kind) {
     if (actions.at(-1).ok) actions.push(run("rebuild weekly compatibility projection", process.execPath, [
       "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs", `--date=${date}`,
     ]));
+    if (actions.at(-1).ok) actions.push(run("DeepSeek Pro direction card candidates", process.execPath, [
+      "agent-workflow/tools/generate-opportunity-direction-cards-deepseek.mjs", `--date=${window.end}`,
+    ], { timeoutMs: 600_000 }));
     if (!actions.at(-1).ok) return { ok: false, status: "opportunity_refresh_failed", window, actions };
   }
 
@@ -162,7 +165,7 @@ function changedPaths(cwd) {
 
 function allowedPath(file, kind) {
   const common = ["agent-workflow/reports/", "01-SiteV2/content/08-report/", "01-SiteV2/site/data/industry-reports-frontstage.json", "01-SiteV2/site/intelligence-map.html"];
-  const weekly = ["01-SiteV2/knowledge/01-Signal-Cards/", "01-SiteV2/site/data/enterprise-ai-fde.json", "01-SiteV2/site/weekly-ai-business-change-radar", "01-SiteV2/site/assets/weekly-report.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js"];
+  const weekly = ["01-SiteV2/knowledge/01-Signal-Cards/", "01-SiteV2/site/data/enterprise-ai-fde.json", "01-SiteV2/site/weekly-ai-business-change-radar", "01-SiteV2/site/assets/weekly-report.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js", "agent-workflow/product/opportunity-direction-card-candidates.json"];
   const monthly = ["01-SiteV2/site/monthly-business-structure-", "01-SiteV2/site/assets/reports.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js"];
   return [...common, ...(kind === "weekly" ? weekly : monthly)].some((prefix) => file === prefix || file.startsWith(prefix));
 }

@@ -134,7 +134,7 @@ function cardFromFile(file) {
   };
 }
 
-function acceptedCards(root) {
+export function acceptedCards(root) {
   const dir = path.join(root, "01-SiteV2/knowledge/01-Signal-Cards");
   const cardsByEvidence = new Map();
   for (const file of listMarkdownFiles(dir).sort()) {
@@ -217,6 +217,7 @@ function buildDirectionCards(file, cards, sourceCards) {
     return [{
       id: direction.id,
       title: direction.title,
+      judgment: direction.judgment || "",
       hypothesis: direction.hypothesis,
       status: direction.status,
       buyer: direction.buyer,
@@ -225,6 +226,7 @@ function buildDirectionCards(file, cards, sourceCards) {
       productWedge: direction.product_wedge,
       currentAlternatives: direction.current_alternatives,
       whyNow: direction.why_now,
+      counterSignal: direction.counter_signal || "",
       unknowns: direction.unknowns || [],
       validationAction: direction.validation_action,
       reviewedAt: direction.reviewed_at || "",
@@ -272,7 +274,7 @@ export function buildIndustryReportsData(
       siteVersion: "SITE-V4.2.0-entity-history",
       applicationVersion: "OMAP-V1.1.0-direction-cards",
       opportunityMapVersion: "OMAP-V1.1.0-direction-cards",
-      directionCardVersion: "DIRECTION-CARD-V1.0-reviewed-hypothesis",
+      directionCardVersion: "DIRECTION-CARD-V1.1-deepseek-pro-reviewed",
       activeDate,
       generatedAt: `${activeDate}T00:00:00.000Z`,
       windowDays: 30,

@@ -1,4 +1,4 @@
 interface:
   display_name: "Opportunity Radar Updater"
-  short_description: "Update entry-point and product-pain opportunity maps."
-  default_prompt: "Update the Intelligence Map entry-point and product-pain opportunity maps using source-backed opportunity signals."
+  short_description: "Update opportunity maps and reviewed Direction Cards."
+  default_prompt: "Update Opportunity Map from source-backed opportunity signals, use DeepSeek V4 Pro for Direction Card candidate titles and content, then enforce evidence and human-review gates before publication."

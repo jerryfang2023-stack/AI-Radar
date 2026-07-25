@@ -19,14 +19,15 @@ test("Opportunity Map projection reads accepted Signal Cards without the V3 desk
   assert.equal(data.meta.schemaVersion, "OPPORTUNITY-MAP-FRONTSTAGE-V1.1");
   assert.equal(data.meta.applicationVersion, "OMAP-V1.1.0-direction-cards");
   assert.equal(data.meta.opportunityMapVersion, "OMAP-V1.1.0-direction-cards");
-  assert.equal(data.meta.directionCardVersion, "DIRECTION-CARD-V1.0-reviewed-hypothesis");
+  assert.equal(data.meta.directionCardVersion, "DIRECTION-CARD-V1.1-deepseek-pro-reviewed");
   assert.equal(data.meta.sourceAdapter, "accepted-signal-card-assets");
   assert.match(data.meta.activeDate, /^\d{4}-\d{2}-\d{2}$/u);
   assert.equal(data.meta.activeDate, dataCenter.meta.currentDate);
   assert.ok(data.cards.length > 0);
   assert.ok(data.cards.every((card) => card.id && card.title && card.date));
   assert.ok(data.cards.every((card) => Object.keys(card.opportunitySignals.labels).length === 7));
-  assert.equal(data.directionCards.length, 3);
+  assert.equal(data.directionCards.length, 2);
+  assert.ok(data.directionCards.every((card) => card.judgment && card.counterSignal));
   assert.ok(data.directionCards.every((card) => card.evidenceCount >= 2));
   assert.ok(data.directionCards.every((card) => card.evidence.every((item) => item.sourceUrl)));
   assert.doesNotMatch(reportsHtml, /data\/v3-data-observation-desk\.json|data\/industry-reports-frontstage\.json/u);
