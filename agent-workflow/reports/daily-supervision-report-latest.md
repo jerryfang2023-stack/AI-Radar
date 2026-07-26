@@ -1,6 +1,6 @@
 # WaveSight Daily Supervision - 2026-07-26
 
-- generated_at: 2026-07-26T01:52:32.505Z
+- generated_at: 2026-07-26T08:45:31.578Z
 - status: failed
 - github_mode: auto
 - scheduled_task_mode: auto
@@ -10,9 +10,9 @@
 |---|---|---|---:|---:|---:|
 | Skill Ops Governance | daily supervision preflight | passed | 0 | 0 | 0 |
 | Community Intelligence | 08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure | warning | 0 | 0 | 1 |
-| Business Signals compatibility / Operations | 08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback | failed | 4 | 0 | 4 |
+| Business Signals compatibility / Operations | 08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback | failed | 4 | 0 | 3 |
 | First-Line Viewpoints | 08:30 local RSS collection + page build + Obsidian sync; 09:15 conditional fallback; 09:50 consolidated closure | passed | 0 | 0 | 0 |
-| First-Line Viewpoints Skill | 16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45 | waiting | 0 | 1 | 0 |
+| First-Line Viewpoints Skill | 16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45 | passed | 0 | 0 | 0 |
 
 ## Skill Ops Governance
 
@@ -86,8 +86,7 @@ none
 
 - missing same-date persistent asset manifest: agent-workflow/reports/2026-07-26-persistent-asset-manifest.json
 - missing quality gate report: agent-workflow/reports/2026-07-26-guanlan-monitor-quality-gate.md
-- latest same-date GitHub Pages workflow conclusion is skipped
-- local Obsidian sync may be blocked by 17 dirty file(s)
+- local Obsidian sync may be blocked by 44 dirty file(s)
 
 ### Actions
 
@@ -130,7 +129,7 @@ none
 ```
 ## First-Line Viewpoints Skill
 
-- status: waiting
+- status: passed
 - schedule: 16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45
 
 ### Problems
@@ -139,7 +138,7 @@ none
 
 ### Waiting
 
-- awaiting the 16:10 follow-builders skill publish and 16:30 Hermes record window
+- none
 
 ### Warnings
 

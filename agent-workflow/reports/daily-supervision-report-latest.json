@@ -2,7 +2,7 @@
   "ok": false,
   "status": "failed",
   "date": "2026-07-26",
-  "generated_at": "2026-07-26T01:52:32.505Z",
+  "generated_at": "2026-07-26T08:45:31.578Z",
   "timezone": "Asia/Shanghai",
   "hermes_mode": "off",
   "hermes_write": "disabled",
@@ -23,7 +23,15 @@
         "dashboardErrors": [],
         "evalCoverage": 100,
         "exampleCoverage": 100,
-        "memoryRequiredMissing": 0
+        "memoryRequiredMissing": 0,
+        "discoveryState": "passed",
+        "discoveryAvailable": true,
+        "discoveredSkills": 237,
+        "enabledSkills": 51,
+        "disabledSkills": 186,
+        "invalidSkillManifests": 0,
+        "enabledDuplicateSkillNames": 0,
+        "discoveryErrors": []
       },
       "problems": [],
       "warnings": [],
@@ -121,15 +129,15 @@
           "available": true,
           "latest_run": {
             "conclusion": "failure",
-            "createdAt": "2026-07-26T01:10:13Z",
-            "databaseId": 30182436760,
+            "createdAt": "2026-07-26T05:44:41Z",
+            "databaseId": 30189877799,
             "event": "workflow_dispatch",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-07-26T01:23:22Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30182436760"
+            "updatedAt": "2026-07-26T05:57:55Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30189877799"
           },
-          "same_date_run_count": 1,
+          "same_date_run_count": 3,
           "prs": [],
           "pr_warning": ""
         },
@@ -139,17 +147,17 @@
           "cardCount": 0,
           "businessPrMerged": false,
           "businessPrUrl": "",
-          "pagesSuccess": false,
+          "pagesSuccess": true,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30182806950",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30194231608",
           "localSync": {
             "available": true,
             "clean": false,
-            "dirtyFiles": 17,
+            "dirtyFiles": 44,
             "ignoredReportFiles": 4,
-            "head": "0486adc6047fd7de34c9b8f89a30b763f8c8809a",
-            "originMain": "0486adc6047fd7de34c9b8f89a30b763f8c8809a",
-            "fastForwarded": true,
+            "head": "9185c5bd9f5bf2664dbfaa114b6582f49006fa15",
+            "originMain": "079b4f67b33f1dca891b4c77246ad05c8fb1f403",
+            "fastForwarded": false,
             "warning": ""
           }
         },
@@ -182,9 +190,9 @@
             "sourceArtifactFreshness": "not_checked_by_daily_supervision",
             "missingSourceTitleTranslations": [],
             "businessPrMerged": false,
-            "pagesState": "skipped",
-            "localDirtyFiles": 17,
-            "localFastForwarded": true
+            "pagesState": "success",
+            "localDirtyFiles": 44,
+            "localFastForwarded": false
           }
         }
       },
@@ -210,8 +218,7 @@
       "warnings": [
         "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-26-persistent-asset-manifest.json",
         "missing quality gate report: agent-workflow/reports/2026-07-26-guanlan-monitor-quality-gate.md",
-        "latest same-date GitHub Pages workflow conclusion is skipped",
-        "local Obsidian sync may be blocked by 17 dirty file(s)"
+        "local Obsidian sync may be blocked by 44 dirty file(s)"
       ],
       "actions": [
         "send Codex a business_signals repair request with failed gate and report path"
@@ -252,25 +259,24 @@
       "id": "follow_builders_skill",
       "label": "First-Line Viewpoints Skill",
       "schedule": "16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45",
-      "status": "waiting",
+      "status": "passed",
       "evidence": {
-        "outputFile": "missing",
-        "reportFile": "missing",
-        "dataSource": "missing",
-        "itemCount": 0,
-        "outputFrontmatterCount": 0,
-        "reportCount": 0,
-        "publishStatus": "missing",
+        "outputFile": "01-SiteV2/content/07-points/2026-07-26-builders-viewpoints.md",
+        "reportFile": "agent-workflow/reports/2026-07-26-follow-builders-skill-local-publish.md",
+        "dataSource": "working_tree",
+        "itemCount": 35,
+        "outputFrontmatterCount": 35,
+        "reportCount": 35,
+        "publishStatus": "published",
         "publishError": "",
-        "obsidianSync": "missing"
+        "obsidianSync": {
+          "added": 31,
+          "groups": 16,
+          "files": 16
+        }
       },
       "problems": [],
-      "waiting": [
-        {
-          "message": "awaiting the 16:10 follow-builders skill publish and 16:30 Hermes record window",
-          "severity": "waiting"
-        }
-      ],
+      "waiting": [],
       "warnings": [],
       "actions": []
     }

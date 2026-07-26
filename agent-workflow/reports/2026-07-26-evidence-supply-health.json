@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "status": "review",
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T08:45:31.708Z",
+  "policy": {
+    "gate_effect": "diagnostic_only",
+    "missing_results": "preserve empty reported_outcomes and undisclosed_fields; never infer ROI or outcomes",
+    "original_source_metric": "conservative match against S-level source-registry domains"
+  },
+  "canonical_fact_supply": {
+    "customer_case": {
+      "events": 7,
+      "source_backed_events": 7,
+      "registry_s_level_original_events": 0
+    },
+    "procurement": {
+      "events": 6,
+      "source_backed_events": 6,
+      "registry_s_level_original_events": 0
+    },
+    "deployment": {
+      "events": 7,
+      "source_backed_events": 7,
+      "registry_s_level_original_events": 0
+    },
+    "funding": {
+      "events": 4,
+      "source_backed_events": 4,
+      "registry_s_level_original_events": 0
+    }
+  },
+  "monitor_importance_gaps": [],
+  "fact_type_source_gaps": [
+    "customer_case: no source URL matched an S-level original-source registry domain",
+    "procurement: no source URL matched an S-level original-source registry domain",
+    "deployment: no source URL matched an S-level original-source registry domain",
+    "funding: no source URL matched an S-level original-source registry domain"
+  ],
+  "fde_output_rate": {
+    "trailing_7_days": {
+      "calendar_days": 7,
+      "observed_days": 7,
+      "days_with_records": 5,
+      "records": 17,
+      "observed_day_output_rate": 0.7143,
+      "records_with_reported_outcomes": 4,
+      "records_without_reported_outcomes": 13
+    },
+    "trailing_30_days": {
+      "calendar_days": 30,
+      "observed_days": 30,
+      "days_with_records": 23,
+      "records": 60,
+      "observed_day_output_rate": 0.7667,
+      "records_with_reported_outcomes": 14,
+      "records_without_reported_outcomes": 46
+    }
+  }
+}
