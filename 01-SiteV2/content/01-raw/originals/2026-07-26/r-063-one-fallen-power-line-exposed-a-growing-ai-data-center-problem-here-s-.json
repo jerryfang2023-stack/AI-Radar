@@ -1,0 +1,276 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-063",
+  "title": "One fallen power line exposed a growing AI data center problem. Here’s how to fix it.",
+  "title_zh": "一根倒下的电线暴露了AI数据中心日益严重的问题。以下是解决方案。",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/",
+  "canonical_url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it",
+  "source_name": "TechCrunch AI",
+  "source_type": "news",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "supporting_article",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-25T00:00:00.000Z",
+  "collected_at": "2026-07-26T01:20:41.930Z",
+  "language": "mixed",
+  "full_text": "Image Credits: Getty Images\nAI\nOne fallen power line exposed a growing AI data center problem. Here’s how to fix it.\nTim De Chant\n6:05 AM PDT · July 25, 2026\nA power line went down outside of Washington, DC, this week. Normally, the grid would only need a few seconds to recover from such an event. But this one took more than 10 minutes because more than 3 gigawatts of data centers stopped drawing power nearly simultaneously.\nThe event caused voltage across the PJM grid to spike from Northern Virginia to Chicago, according to data collected by Ting Labs , a startup that runs an IoT sensor network out of people’s electrical sockets.\nThe event didn’t cause a blackout, but it did cause lights across the region to flicker. The incident demonstrated the effect that data centers can have on the grid — an outcome that experts believe will become more frequent.\nNorthern Virginia, which is in PJM’s territory, is home to the highest concentration of data centers in the world.\n“It’s the canary in the coal mine,” Ricardo de Azevedo, CTO at ON.Energy , told TechCrunch. These sorts of events involving large loads like data centers are “happening more and more,” he added.\nThe event echoes one that happened two years ago, also on PJM’s grid, and it could foreshadow larger events if data centers aren’t built to more elegantly handle disruptions to power supplies. The PJM Interconnection manages grids from New Jersey to Illinois and serves 67 million customers, making it the largest grid operator in the United States.\nWhen the power line went down this week, it triggered data centers to switch to backup power, and about 3.1 gigawatts of load vanished in about 30 seconds, according to PJM data . The grid appeared to recover somewhat, but a short time later additional loads dropped off. At its peak, PJM’s grid had an extra 3.49 gigawatts of electricity on it. It took another 11 minutes before it stabilized. The disconnected data centers represented around 3% of total demand on PJM at the time, according to Reuters.\nA few percent may not sound like much, but the electrical grid needs to operate in a state of near-perfect balance, with supply and demand closely matched. If they don’t, voltages can sag or spike. The grid and devices connected to it can tolerate small fluctuations, but if those fluctuations grow too large, they’ll trigger failsafes within the grid or within individual facilities, causing them to disconnect.\nWhen data centers in Northern Virginia sensed the fluctuation caused by the failed power line, they switched to backup power, which removed their load from the grid. As more data centers made the switch, they removed greater amounts of load from the grid. What started as a relatively small drop in supply became an even larger drop in demand, sending supply surging and causing light bulbs to flicker.\nMost data centers make decisions in a split second, and those that disconnected this week appear to be no different. When the voltage dip reached them, they all decided to disconnect within a few seconds of each other, Ali Zain Banatwala, senior market models specialist at the Independent Electricity System Operator, told TechCrunch.\n“We need to figure a way for these loads that are located next to each other to sequentially either disconnect or reconnect,” he said. A more orderly process would allow grid operators to develop more robust procedures in advance.\nAlternatively, data centers could be built to absorb disruptions and not turn their backs to them. One startup, ON.Energy, has been working on a product to help data centers — and the grid — ride through events like the one that occurred this week.\nThe company has developed an uninterruptible power supply for an entire data center campus, covering not just servers but also chillers and other equipment. The company essentially hides the data center behind a bank of batteries connected to sophisticated power conversion equipment. All the grid “sees” is one consistent, well-behaved load rather than the peaks and valleys from each individual part of the data center. ON.Energy’s system allows data centers to ramp computing workloads up and down, including AI training, without bothering the grid.\nPerhaps more important, it also means that data centers can absorb power fluctuations from the grid. Rather than disconnecting from the grid, ON.Energy’s system can use any extra power to charge its batteries, and if the flow dips, the system can dispatch power to servers. Plus, it can follow the grid’s lead within milliseconds, preventing sags or surges like the ones that caused this week’s problem for PJM.\nON.Energy is currently installing a total of 3 gigawatts worth of its systems at four different data center campuses, de Azevedo said.\nGrid managers have also woken up to the problem.\nERCOT, for example, is going to require large loads like data centers to “ride through” disruptions, de Azevedo said.\nThe clock is ticking, though. The mass disconnection this week was twice as large as a similar event in 2024, when 60 data centers simultaneously disconnected, pulling 1.5 gigawatts of load from the grid. Back then, data centers accounted for about 6% of PJM’s load, according to Synapse Energy Economics. By 2040, they are expected to make up 24%. If the problem isn’t addressed soon, things could get a lot worse.\nTopics\nAI , Climate , data centers , electrical grid\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nTim De Chant\nSenior Reporter, Climate\nTim De Chant is a senior climate reporter at TechCrunch. He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor.\nDe Chant is also a lecturer in MIT’s Graduate Program in Science Writing, and he was awarded a Knight Science Journalism Fellowship at MIT in 2018, during which time he studied climate technologies and explored new business models for journalism. He received his PhD in environmental science, policy, and management from the University of California, Berkeley, and his BA degree in environmental studies, English, and biology from St. Olaf College.\nYou can contact or verify outreach from Tim by emailing tim.dechant@techcrunch.com .\nView Bio\nOctober 13 – 15\nSan Francisco\nScale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.\nSave up to $330 toda y!\nREGISTER NOW\nMost Popular\nSpaceX launches new V3 Starlink satellites but suffers another booster failure\nSean O'Kane\nUS accuses American of allegedly wiping his phone using a ‘duress’ password during border search\nZack Whittaker\nAnduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark\nRam Iyer\nTesla’s robotaxis are moving in reverse\nSean O'Kane\nJack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents\nAmanda Silberling\nLight made a flip phone — it’s colorful and it’s cheap\nAmanda Silberling\nAI music generator Suno breach affects 55M users, per Have I Been Pwned\nZack Whittaker\nLoading the next article\nError loading the next article",
+  "clean_text": "Image Credits: Getty Images\nAI\nOne fallen power line exposed a growing AI data center problem. Here’s how to fix it.\nTim De Chant\n6:05 AM PDT · July 25, 2026\nA power line went down outside of Washington, DC, this week. Normally, the grid would only need a few seconds to recover from such an event. But this one took more than 10 minutes because more than 3 gigawatts of data centers stopped drawing power nearly simultaneously.\nThe event caused voltage across the PJM grid to spike from Northern Virginia to Chicago, according to data collected by Ting Labs , a startup that runs an IoT sensor network out of people’s electrical sockets.\nThe event didn’t cause a blackout, but it did cause lights across the region to flicker. The incident demonstrated the effect that data centers can have on the grid — an outcome that experts believe will become more frequent.\nNorthern Virginia, which is in PJM’s territory, is home to the highest concentration of data centers in the world.\n“It’s the canary in the coal mine,” Ricardo de Azevedo, CTO at ON.Energy , told TechCrunch. These sorts of events involving large loads like data centers are “happening more and more,” he added.\nThe event echoes one that happened two years ago, also on PJM’s grid, and it could foreshadow larger events if data centers aren’t built to more elegantly handle disruptions to power supplies. The PJM Interconnection manages grids from New Jersey to Illinois and serves 67 million customers, making it the largest grid operator in the United States.\nWhen the power line went down this week, it triggered data centers to switch to backup power, and about 3.1 gigawatts of load vanished in about 30 seconds, according to PJM data . The grid appeared to recover somewhat, but a short time later additional loads dropped off. At its peak, PJM’s grid had an extra 3.49 gigawatts of electricity on it. It took another 11 minutes before it stabilized. The disconnected data centers represented around 3% of total demand on PJM at the time, according to Reuters.\nA few percent may not sound like much, but the electrical grid needs to operate in a state of near-perfect balance, with supply and demand closely matched. If they don’t, voltages can sag or spike. The grid and devices connected to it can tolerate small fluctuations, but if those fluctuations grow too large, they’ll trigger failsafes within the grid or within individual facilities, causing them to disconnect.\nWhen data centers in Northern Virginia sensed the fluctuation caused by the failed power line, they switched to backup power, which removed their load from the grid. As more data centers made the switch, they removed greater amounts of load from the grid. What started as a relatively small drop in supply became an even larger drop in demand, sending supply surging and causing light bulbs to flicker.\nMost data centers make decisions in a split second, and those that disconnected this week appear to be no different. When the voltage dip reached them, they all decided to disconnect within a few seconds of each other, Ali Zain Banatwala, senior market models specialist at the Independent Electricity System Operator, told TechCrunch.\n“We need to figure a way for these loads that are located next to each other to sequentially either disconnect or reconnect,” he said. A more orderly process would allow grid operators to develop more robust procedures in advance.\nAlternatively, data centers could be built to absorb disruptions and not turn their backs to them. One startup, ON.Energy, has been working on a product to help data centers — and the grid — ride through events like the one that occurred this week.\nThe company has developed an uninterruptible power supply for an entire data center campus, covering not just servers but also chillers and other equipment. The company essentially hides the data center behind a bank of batteries connected to sophisticated power conversion equipment. All the grid “sees” is one consistent, well-behaved load rather than the peaks and valleys from each individual part of the data center. ON.Energy’s system allows data centers to ramp computing workloads up and down, including AI training, without bothering the grid.\nPerhaps more important, it also means that data centers can absorb power fluctuations from the grid. Rather than disconnecting from the grid, ON.Energy’s system can use any extra power to charge its batteries, and if the flow dips, the system can dispatch power to servers. Plus, it can follow the grid’s lead within milliseconds, preventing sags or surges like the ones that caused this week’s problem for PJM.\nON.Energy is currently installing a total of 3 gigawatts worth of its systems at four different data center campuses, de Azevedo said.\nGrid managers have also woken up to the problem.\nERCOT, for example, is going to require large loads like data centers to “ride through” disruptions, de Azevedo said.\nThe clock is ticking, though. The mass disconnection this week was twice as large as a similar event in 2024, when 60 data centers simultaneously disconnected, pulling 1.5 gigawatts of load from the grid. Back then, data centers accounted for about 6% of PJM’s load, according to Synapse Energy Economics. By 2040, they are expected to make up 24%. If the problem isn’t addressed soon, things could get a lot worse.\nTopics\nAI , Climate , data centers , electrical grid\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nTim De Chant\nSenior Reporter, Climate\nTim De Chant is a senior climate reporter at TechCrunch. He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor.\nDe Chant is also a lecturer in MIT’s Graduate Program in Science Writing, and he was awarded a Knight Science Journalism Fellowship at MIT in 2018, during which time he studied climate technologies and explored new business models for journalism. He received his PhD in environmental science, policy, and management from the University of California, Berkeley, and his BA degree in environmental studies, English, and biology from St. Olaf College.\nYou can contact or verify outreach from Tim by emailing tim.dechant@techcrunch.com .\nView Bio\nOctober 13 – 15\nSan Francisco\nScale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.\nSave up to $330 toda y!\nREGISTER NOW\nMost Popular\nSpaceX launches new V3 Starlink satellites but suffers another booster failure\nSean O'Kane\nUS accuses American of allegedly wiping his phone using a ‘duress’ password during border search\nZack Whittaker\nAnduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark\nRam Iyer\nTesla’s robotaxis are moving in reverse\nSean O'Kane\nJack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents\nAmanda Silberling\nLight made a flip phone — it’s colorful and it’s cheap\nAmanda Silberling\nAI music generator Suno breach affects 55M users, per Have I Been Pwned\nZack Whittaker\nLoading the next article\nError loading the next article",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-26/r-063-one-fallen-power-line-exposed-a-growing-ai-data-center-problem-here-s-.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-26/r-063-one-fallen-power-line-exposed-a-growing-ai-data-center-problem-here-s-.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 7210,
+    "paragraph_count": 38,
+    "sentence_count": 58,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 7210,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "760be19d63c593dc",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "cc04af0507f4f94d",
+  "content_hash": "760be19d63c593dc",
+  "full_text_hash": "760be19d63c593dc",
+  "semantic_hash": "0a35d0bd73da7023",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-25T00:00:00.000Z",
+  "last_seen_at": "2026-07-26T01:20:41.930Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "A close call in Northern Virginia revealed just how poorly data centers respond to grid disruptions. Here's how to fix the problem.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Image Credits: Getty Images AI One fallen power line exposed a growing AI data center problem.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Here’s how to fix it.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Tim De Chant 6:05 AM PDT · July 25, 2026 A power line went down outside of Washington, DC, this week.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Normally, the grid would only need a few seconds to recover from such an event.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "But this one took more than 10 minutes because more than 3 gigawatts of data centers stopped drawing power nearly simultaneously.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-26T01:20:41.930Z",
+  "business_elements": {
+    "companies": [
+      "TechCrunch AI"
+    ],
+    "products": [
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "6",
+      "05",
+      "25",
+      "2026",
+      "10 m",
+      "3",
+      "67 million",
+      "3.1"
+    ],
+    "quotes": [
+      "It’s the canary in the coal mine,",
+      "happening more and more,",
+      "We need to figure a way for these loads that are located next to each other to sequentially either disconnect or reconnect,",
+      "ride through"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "A close call in Northern Virginia revealed just how poorly data centers respond to grid disruptions. Here's how to fix the problem.",
+      "Image Credits: Getty Images AI One fallen power line exposed a growing AI data center problem.",
+      "Here’s how to fix it."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "AI hardware scenario or service deployment; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "ai_hardware_lens",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# One fallen power line exposed a growing AI data center problem. Here’s how to fix it.\n\n- raw_id: R-063\n- title_zh: 一根倒下的电线暴露了AI数据中心日益严重的问题。以下是解决方案。\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/\n- source_name: TechCrunch AI\n- collected_at: 2026-07-26T01:20:41.930Z\n\n## clean_text\n\nImage Credits: Getty Images\nAI\nOne fallen power line exposed a growing AI data center problem. Here’s how to fix it.\nTim De Chant\n6:05 AM PDT · July 25, 2026\nA power line went down outside of Washington, DC, this week. Normally, the grid would only need a few seconds to recover from such an event. But this one took more than 10 minutes because more than 3 gigawatts of data centers stopped drawing power nearly simultaneously.\nThe event caused voltage across the PJM grid to spike from Northern Virginia to Chicago, according to data collected by Ting Labs , a startup that runs an IoT sensor network out of people’s electrical sockets.\nThe event didn’t cause a blackout, but it did cause lights across the region to flicker. The incident demonstrated the effect that data centers can have on the grid — an outcome that experts believe will become more frequent.\nNorthern Virginia, which is in PJM’s territory, is home to the highest concentration of data centers in the world.\n“It’s the canary in the coal mine,” Ricardo de Azevedo, CTO at ON.Energy , told TechCrunch. These sorts of events involving large loads like data centers are “happening more and more,” he added.\nThe event echoes one that happened two years ago, also on PJM’s grid, and it could foreshadow larger events if data centers aren’t built to more elegantly handle disruptions to power supplies. The PJM Interconnection manages grids from New Jersey to Illinois and serves 67 million customers, making it the largest grid operator in the United States.\nWhen the power line went down this week, it triggered data centers to switch to backup power, and about 3.1 gigawatts of load vanished in about 30 seconds, according to PJM data . The grid appeared to recover somewhat, but a short time later additional loads dropped off. At its peak, PJM’s grid had an extra 3.49 gigawatts of electricity on it. It took another 11 minutes before it stabilized. The disconnected data centers represented around 3% of total demand on PJM at the time, according to Reuters.\nA few percent may not sound like much, but the electrical grid needs to operate in a state of near-perfect balance, with supply and demand closely matched. If they don’t, voltages can sag or spike. The grid and devices connected to it can tolerate small fluctuations, but if those fluctuations grow too large, they’ll trigger failsafes within the grid or within individual facilities, causing them to disconnect.\nWhen data centers in Northern Virginia sensed the fluctuation caused by the failed power line, they switched to backup power, which removed their load from the grid. As more data centers made the switch, they removed greater amounts of load from the grid. What started as a relatively small drop in supply became an even larger drop in demand, sending supply surging and causing light bulbs to flicker.\nMost data centers make decisions in a split second, and those that disconnected this week appear to be no different. When the voltage dip reached them, they all decided to disconnect within a few seconds of each other, Ali Zain Banatwala, senior market models specialist at the Independent Electricity System Operator, told TechCrunch.\n“We need to figure a way for these loads that are located next to each other to sequentially either disconnect or reconnect,” he said. A more orderly process would allow grid operators to develop more robust procedures in advance.\nAlternatively, data centers could be built to absorb disruptions and not turn their backs to them. One startup, ON.Energy, has been working on a product to help data centers — and the grid — ride through events like the one that occurred this week.\nThe company has developed an uninterruptible power supply for an entire data center campus, covering not just servers but also chillers and other equipment. The company essentially hides the data center behind a bank of batteries connected to sophisticated power conversion equipment. All the grid “sees” is one consistent, well-behaved load rather than the peaks and valleys from each individual part of the data center. ON.Energy’s system allows data centers to ramp computing workloads up and down, including AI training, without bothering the grid.\nPerhaps more important, it also means that data centers can absorb power fluctuations from the grid. Rather than disconnecting from the grid, ON.Energy’s system can use any extra power to charge its batteries, and if the flow dips, the system can dispatch power to servers. Plus, it can follow the grid’s lead within milliseconds, preventing sags or surges like the ones that caused this week’s problem for PJM.\nON.Energy is currently installing a total of 3 gigawatts worth of its systems at four different data center campuses, de Azevedo said.\nGrid managers have also woken up to the problem.\nERCOT, for example, is going to require large loads like data centers to “ride through” disruptions, de Azevedo said.\nThe clock is ticking, though. The mass disconnection this week was twice as large as a similar event in 2024, when 60 data centers simultaneously disconnected, pulling 1.5 gigawatts of load from the grid. Back then, data centers accounted for about 6% of PJM’s load, according to Synapse Energy Economics. By 2040, they are expected to make up 24%. If the problem isn’t addressed soon, things could get a lot worse.\nTopics\nAI , Climate , data centers , electrical grid\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nTim De Chant\nSenior Reporter, Climate\nTim De Chant is a senior climate reporter at TechCrunch. He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor.\nDe Chant is also a lecturer in MIT’s Graduate Program in Science Writing, and he was awarded a Knight Science Journalism Fellowship at MIT in 2018, during which time he studied climate technologies and explored new business models for journalism. He received his PhD in environmental science, policy, and management from the University of California, Berkeley, and his BA degree in environmental studies, English, and biology from St. Olaf College.\nYou can contact or verify outreach from Tim by emailing tim.dechant@techcrunch.com .\nView Bio\nOctober 13 – 15\nSan Francisco\nScale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.\nSave up to $330 toda y!\nREGISTER NOW\nMost Popular\nSpaceX launches new V3 Starlink satellites but suffers another booster failure\nSean O'Kane\nUS accuses American of allegedly wiping his phone using a ‘duress’ password during border search\nZack Whittaker\nAnduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark\nRam Iyer\nTesla’s robotaxis are moving in reverse\nSean O'Kane\nJack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents\nAmanda Silberling\nLight made a flip phone — it’s colorful and it’s cheap\nAmanda Silberling\nAI music generator Suno breach affects 55M users, per Have I Been Pwned\nZack Whittaker\nLoading the next article\nError loading the next article\n\n## full_text\n\nImage Credits: Getty Images\nAI\nOne fallen power line exposed a growing AI data center problem. Here’s how to fix it.\nTim De Chant\n6:05 AM PDT · July 25, 2026\nA power line went down outside of Washington, DC, this week. Normally, the grid would only need a few seconds to recover from such an event. But this one took more than 10 minutes because more than 3 gigawatts of data centers stopped drawing power nearly simultaneously.\nThe event caused voltage across the PJM grid to spike from Northern Virginia to Chicago, according to data collected by Ting Labs , a startup that runs an IoT sensor network out of people’s electrical sockets.\nThe event didn’t cause a blackout, but it did cause lights across the region to flicker. The incident demonstrated the effect that data centers can have on the grid — an outcome that experts believe will become more frequent.\nNorthern Virginia, which is in PJM’s territory, is home to the highest concentration of data centers in the world.\n“It’s the canary in the coal mine,” Ricardo de Azevedo, CTO at ON.Energy , told TechCrunch. These sorts of events involving large loads like data centers are “happening more and more,” he added.\nThe event echoes one that happened two years ago, also on PJM’s grid, and it could foreshadow larger events if data centers aren’t built to more elegantly handle disruptions to power supplies. The PJM Interconnection manages grids from New Jersey to Illinois and serves 67 million customers, making it the largest grid operator in the United States.\nWhen the power line went down this week, it triggered data centers to switch to backup power, and about 3.1 gigawatts of load vanished in about 30 seconds, according to PJM data . The grid appeared to recover somewhat, but a short time later additional loads dropped off. At its peak, PJM’s grid had an extra 3.49 gigawatts of electricity on it. It took another 11 minutes before it stabilized. The disconnected data centers represented around 3% of total demand on PJM at the time, according to Reuters.\nA few percent may not sound like much, but the electrical grid needs to operate in a state of near-perfect balance, with supply and demand closely matched. If they don’t, voltages can sag or spike. The grid and devices connected to it can tolerate small fluctuations, but if those fluctuations grow too large, they’ll trigger failsafes within the grid or within individual facilities, causing them to disconnect.\nWhen data centers in Northern Virginia sensed the fluctuation caused by the failed power line, they switched to backup power, which removed their load from the grid. As more data centers made the switch, they removed greater amounts of load from the grid. What started as a relatively small drop in supply became an even larger drop in demand, sending supply surging and causing light bulbs to flicker.\nMost data centers make decisions in a split second, and those that disconnected this week appear to be no different. When the voltage dip reached them, they all decided to disconnect within a few seconds of each other, Ali Zain Banatwala, senior market models specialist at the Independent Electricity System Operator, told TechCrunch.\n“We need to figure a way for these loads that are located next to each other to sequentially either disconnect or reconnect,” he said. A more orderly process would allow grid operators to develop more robust procedures in advance.\nAlternatively, data centers could be built to absorb disruptions and not turn their backs to them. One startup, ON.Energy, has been working on a product to help data centers — and the grid — ride through events like the one that occurred this week.\nThe company has developed an uninterruptible power supply for an entire data center campus, covering not just servers but also chillers and other equipment. The company essentially hides the data center behind a bank of batteries connected to sophisticated power conversion equipment. All the grid “sees” is one consistent, well-behaved load rather than the peaks and valleys from each individual part of the data center. ON.Energy’s system allows data centers to ramp computing workloads up and down, including AI training, without bothering the grid.\nPerhaps more important, it also means that data centers can absorb power fluctuations from the grid. Rather than disconnecting from the grid, ON.Energy’s system can use any extra power to charge its batteries, and if the flow dips, the system can dispatch power to servers. Plus, it can follow the grid’s lead within milliseconds, preventing sags or surges like the ones that caused this week’s problem for PJM.\nON.Energy is currently installing a total of 3 gigawatts worth of its systems at four different data center campuses, de Azevedo said.\nGrid managers have also woken up to the problem.\nERCOT, for example, is going to require large loads like data centers to “ride through” disruptions, de Azevedo said.\nThe clock is ticking, though. The mass disconnection this week was twice as large as a similar event in 2024, when 60 data centers simultaneously disconnected, pulling 1.5 gigawatts of load from the grid. Back then, data centers accounted for about 6% of PJM’s load, according to Synapse Energy Economics. By 2040, they are expected to make up 24%. If the problem isn’t addressed soon, things could get a lot worse.\nTopics\nAI , Climate , data centers , electrical grid\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nTim De Chant\nSenior Reporter, Climate\nTim De Chant is a senior climate reporter at TechCrunch. He has written for a wide range of publications, including Wired magazine, the Chicago Tribune, Ars Technica, The Wire China, and NOVA Next, where he was founding editor.\nDe Chant is also a lecturer in MIT’s Graduate Program in Science Writing, and he was awarded a Knight Science Journalism Fellowship at MIT in 2018, during which time he studied climate technologies and explored new business models for journalism. He received his PhD in environmental science, policy, and management from the University of California, Berkeley, and his BA degree in environmental studies, English, and biology from St. Olaf College.\nYou can contact or verify outreach from Tim by emailing tim.dechant@techcrunch.com .\nView Bio\nOctober 13 – 15\nSan Francisco\nScale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.\nSave up to $330 toda y!\nREGISTER NOW\nMost Popular\nSpaceX launches new V3 Starlink satellites but suffers another booster failure\nSean O'Kane\nUS accuses American of allegedly wiping his phone using a ‘duress’ password during border search\nZack Whittaker\nAnduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark\nRam Iyer\nTesla’s robotaxis are moving in reverse\nSean O'Kane\nJack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents\nAmanda Silberling\nLight made a flip phone — it’s colorful and it’s cheap\nAmanda Silberling\nAI music generator Suno breach affects 55M users, per Have I Been Pwned\nZack Whittaker\nLoading the next article\nError loading the next article\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] A close call in Northern Virginia revealed just how poorly data centers respond to grid disruptions. Here's how to fix the problem.\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Image Credits: Getty Images AI One fallen power line exposed a growing AI data center problem.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Here’s how to fix it.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Tim De Chant 6:05 AM PDT · July 25, 2026 A power line went down outside of Washington, DC, this week.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Normally, the grid would only need a few seconds to recover from such an event.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] But this one took more than 10 minutes because more than 3 gigawatts of data centers stopped drawing power nearly simultaneously.\n"
+}

@@ -1,0 +1,288 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-028",
+  "title": "OpenAI Presence sells enterprise AI agents with engineers attached - prodSens.live",
+  "title_zh": "OpenAI Presence 销售附带工程师的企业级 AI 智能体",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://prodsens.live/2026/07/24/openai-presence-sells-enterprise-ai-agents-with-engineers-attached/",
+  "canonical_url": "https://prodsens.live/2026/07/24/openai-presence-sells-enterprise-ai-agents-with-engineers-attached",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "industry_landing",
+  "search_path_label": "行业落地路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "production_rollout",
+  "enterprise_ai_transformation_reason": "fde_or_applied_ai_org_signal",
+  "author": "",
+  "published_at": "2026-07-24T00:00:00.000Z",
+  "collected_at": "2026-07-26T01:20:13.882Z",
+  "language": "mixed",
+  "full_text": "AI - Artificial-Intelligence\n5 minute read\nNo comments\nOpenAI Presence sells enterprise AI agents with engineers attached\nDashveenjit Kaur\nJuly 24, 2026\nTotal\nShares\nThe newest way to buy enterprise AI agents from OpenAI does not involve buying anything online. OpenAI Presence, announced on July 22, is a managed product delivered through a limited general availability programme, and the company states plainly that it is not yet available as a self-serve product. Deployments are led by OpenAI’s own Forward Deployed Engineers and a set of selected global systems integrators.\nThat is a departure for a business that has largely run on API keys and seat licences. Presence is sold as a project rather than a product. Each engagement starts with a single job, such as resolving a billing dispute, handling an insurance claim, or clearing an employee IT service request.\nThe agent is given only the knowledge and system access that the job requires, and the customer writes the rules governing what it can do, when it needs sign-off, and when a person takes over. After launch, Codex reads production sessions and escalations, then proposes changes the customer’s team tests and approves before rollout.\nOpenAI’s documentation is unusually candid about the labour involved. Its help centre sets out a six-stage process running from scoping business outcomes, through security, privacy and legal review, simulation and acceptance testing, staged rollout, and post-launch iteration. A Presence agent, it says, does not become production-ready simply by ingesting documents.\nThe problem this is built to solve is real\nThe managed model is easy to read cynically, and harder to dismiss on the evidence. Gartner has warned that more than 40% of agentic AI projects will be cancelled by the end of 2027, attributing the failures to governance, undefined business value and weak operational discipline rather than to model capability.\nAlmost everything Presence bundles is aimed squarely at that diagnosis. Simulations and graders test whether an agent reached the right outcome, followed policy, used its tools correctly and escalated when it should, before anyone outside the company speaks to it. Guardrails intervene when an interaction moves past defined boundaries. Session records and action histories give reviewers something to audit. Escalation paths hand a person structured context rather than a cold transcript, and new versions go out through controlled rollout with rollback.\nEnterprises have spent two years discovering that the hard part of a production agent sits in integration, permissions and change management. A vendor that sends engineers to do that work is responding to what buyers have actually been failing at, rather than shipping another dashboard and calling the gap a customer problem.\nWhere the constraint sits\nThe trade-off shows up in the eligibility criteria. Access, OpenAI says, depends on workflow fit, implementation readiness and available delivery capacity.\nDelivery capacity is a consulting constraint. Software scales; engineers cleared into a bank’s core systems do not. Forward Deployed Engineer is a title borrowed from Palantir, where it describes staff embedded in customer operations for months at a time, and the economics attached to it look nothing like the economics of metered inference. By putting its own FDEs and named partners at the front of every deployment, OpenAI has stepped into the layer of the market occupied by the integrators it will also rely on to scale, which is a workable arrangement while volumes are small and a more complicated one later.\nIt also puts a question on the table for anyone scoping a contract. When the model vendor is also the implementation partner, the lines of accountability for a policy misapplied in production need to be written down rather than assumed.\nThe enterprise AI agents on display are still early\nOpenAI describes Presence as battle-tested, and its case for that language is that the product was assembled from years of deploying agents with enterprise customers before it was packaged and named. The claim is about accumulated practice rather than about the product’s time in market, and it is a reasonable one to make.\nThe strongest single proof point is OpenAI’s own English-language phone support line, 1-888-GPT-0090. The company says the agent met or exceeded its internal benchmarks for frontline human support within weeks, now resolves 75% of inbound issues without human assistance, and cut human handoffs by 15 percentage points in ten days through the Codex improvement loop. Those are OpenAI’s figures, measured against OpenAI’s own grading criteria, on OpenAI’s own channel. The transparency is welcome, but the numbers are not independently verified.\nThe three named customers sit earlier in the cycle than the launch framing implies. BBVA is exploring voice support for everyday banking in Mexico. SoftBank is testing Japanese-language conversations. IAG is exploring support during high-demand events such as severe weather. Daniel Ordaz, head of AI transformation at BBVA Mexico, describes the bank as a design partner helping shape and refine voice experiences for financial customer service. Design partners are normal and useful at limited GA. None of the three, though, is presented as running Presence at scale, which is worth holding alongside the word proven.\nWhat has not been disclosed\nPricing is not published. Implementation scope and cost are set per customer and per deployment, which is ordinary for enterprise services and still leaves buyers without a public reference point for cost per resolved contact against an incumbent contact-centre vendor.\nThe model is not named. Presence uses OpenAI models, the documentation says, with configuration selected for the workflow and subject to change as that workflow evolves. That flexibility is defensible engineering, because pinning a production agent to a frozen model version ages badly. Teams that have spent the past year building evaluation suites against specific versions will nonetheless want the contract to say what they are being held to when the configuration moves.\nChannel support during limited GA covers voice or chat, with contact-centre integration, routing, authentication and handoff design confirmed deployment by deployment. Data handling follows the same pattern, with the signed architecture and contract treated as the governing record rather than any published policy.\nPresence sits apart from ChatGPT Workspace Agents, which remain the self-serve path for teams building inside ChatGPT and Slack, while voice customers keep API access to OpenAI’s frontier models. The company now offers broadly the same capability three ways, separated less by what the technology can do than by who does the work.\nThat leaves buyers choosing on delivery capacity as much as on model capability, and on OpenAI’s own account, delivery capacity is the part being rationed.\nSee also: HP accelerates enterprise workflows with OpenAI Frontier\nWant to learn more about AI and big data from industry leaders? Check out AI & Big Data Expo taking place in Amsterdam, California, and London. The comprehensive event is part of TechEx and is co-located with other leading technology events including the Cyber Security & Cloud Expo . Click here for more information.\nAI News is powered by TechForge Media . Explore other upcoming enterprise technology events and webinars here .\nThe post OpenAI Presence sells enterprise AI agents with engineers attached appeared first on AI News .\nTotal\nShares\nShare\nTweet\nPin it\nLeave a Reply Cancel reply\nView Comments (0)\nPrevious Post\nMarketing\nThe New (AI) SEO Playbook — Whiteboard Friday\nJuly 24, 2026\nNext Post\nSoftware\n大语言模型的每个参数到底能储存多少信息\nJuly 24, 2026\nRelated Posts\n4 min\nAI - Artificial-Intelligence\nThe firm that never forgets: Rowspace launches with US$50M to make AI for private equity actually work\nPrivate equity runs on judgment–and judgment, it turns out, is extraordinarily hard to scale. Decades of deal memos,&hellip;\nDashveenjit Kaur\nMarch 6, 2026\nRead More\nAI - Artificial-Intelligence\nUnauthorized group has gained access to Anthropic’s exclusive cyber tool Mythos, report claims\nAnthropic told TechCrunch it is investigating the claims, but maintains that there is no evidence that its systems&hellip;\nLucas Ropek\nApril 21, 2026\nRead More\nAI - Artificial-Intelligence\nAdobe acquires image and video enhancement tool maker Topaz Labs\nAdobe said that it will integrate Topaz Labs’ tools across its apps.\nIvan Mehta\nJune 25, 2026\nRead More",
+  "clean_text": "AI - Artificial-Intelligence\n5 minute read\nNo comments\nOpenAI Presence sells enterprise AI agents with engineers attached\nDashveenjit Kaur\nJuly 24, 2026\nTotal\nShares\nThe newest way to buy enterprise AI agents from OpenAI does not involve buying anything online. OpenAI Presence, announced on July 22, is a managed product delivered through a limited general availability programme, and the company states plainly that it is not yet available as a self-serve product. Deployments are led by OpenAI’s own Forward Deployed Engineers and a set of selected global systems integrators.\nThat is a departure for a business that has largely run on API keys and seat licences. Presence is sold as a project rather than a product. Each engagement starts with a single job, such as resolving a billing dispute, handling an insurance claim, or clearing an employee IT service request.\nThe agent is given only the knowledge and system access that the job requires, and the customer writes the rules governing what it can do, when it needs sign-off, and when a person takes over. After launch, Codex reads production sessions and escalations, then proposes changes the customer’s team tests and approves before rollout.\nOpenAI’s documentation is unusually candid about the labour involved. Its help centre sets out a six-stage process running from scoping business outcomes, through security, privacy and legal review, simulation and acceptance testing, staged rollout, and post-launch iteration. A Presence agent, it says, does not become production-ready simply by ingesting documents.\nThe problem this is built to solve is real\nThe managed model is easy to read cynically, and harder to dismiss on the evidence. Gartner has warned that more than 40% of agentic AI projects will be cancelled by the end of 2027, attributing the failures to governance, undefined business value and weak operational discipline rather than to model capability.\nAlmost everything Presence bundles is aimed squarely at that diagnosis. Simulations and graders test whether an agent reached the right outcome, followed policy, used its tools correctly and escalated when it should, before anyone outside the company speaks to it. Guardrails intervene when an interaction moves past defined boundaries. Session records and action histories give reviewers something to audit. Escalation paths hand a person structured context rather than a cold transcript, and new versions go out through controlled rollout with rollback.\nEnterprises have spent two years discovering that the hard part of a production agent sits in integration, permissions and change management. A vendor that sends engineers to do that work is responding to what buyers have actually been failing at, rather than shipping another dashboard and calling the gap a customer problem.\nWhere the constraint sits\nThe trade-off shows up in the eligibility criteria. Access, OpenAI says, depends on workflow fit, implementation readiness and available delivery capacity.\nDelivery capacity is a consulting constraint. Software scales; engineers cleared into a bank’s core systems do not. Forward Deployed Engineer is a title borrowed from Palantir, where it describes staff embedded in customer operations for months at a time, and the economics attached to it look nothing like the economics of metered inference. By putting its own FDEs and named partners at the front of every deployment, OpenAI has stepped into the layer of the market occupied by the integrators it will also rely on to scale, which is a workable arrangement while volumes are small and a more complicated one later.\nIt also puts a question on the table for anyone scoping a contract. When the model vendor is also the implementation partner, the lines of accountability for a policy misapplied in production need to be written down rather than assumed.\nThe enterprise AI agents on display are still early\nOpenAI describes Presence as battle-tested, and its case for that language is that the product was assembled from years of deploying agents with enterprise customers before it was packaged and named. The claim is about accumulated practice rather than about the product’s time in market, and it is a reasonable one to make.\nThe strongest single proof point is OpenAI’s own English-language phone support line, 1-888-GPT-0090. The company says the agent met or exceeded its internal benchmarks for frontline human support within weeks, now resolves 75% of inbound issues without human assistance, and cut human handoffs by 15 percentage points in ten days through the Codex improvement loop. Those are OpenAI’s figures, measured against OpenAI’s own grading criteria, on OpenAI’s own channel. The transparency is welcome, but the numbers are not independently verified.\nThe three named customers sit earlier in the cycle than the launch framing implies. BBVA is exploring voice support for everyday banking in Mexico. SoftBank is testing Japanese-language conversations. IAG is exploring support during high-demand events such as severe weather. Daniel Ordaz, head of AI transformation at BBVA Mexico, describes the bank as a design partner helping shape and refine voice experiences for financial customer service. Design partners are normal and useful at limited GA. None of the three, though, is presented as running Presence at scale, which is worth holding alongside the word proven.\nWhat has not been disclosed\nPricing is not published. Implementation scope and cost are set per customer and per deployment, which is ordinary for enterprise services and still leaves buyers without a public reference point for cost per resolved contact against an incumbent contact-centre vendor.\nThe model is not named. Presence uses OpenAI models, the documentation says, with configuration selected for the workflow and subject to change as that workflow evolves. That flexibility is defensible engineering, because pinning a production agent to a frozen model version ages badly. Teams that have spent the past year building evaluation suites against specific versions will nonetheless want the contract to say what they are being held to when the configuration moves.\nChannel support during limited GA covers voice or chat, with contact-centre integration, routing, authentication and handoff design confirmed deployment by deployment. Data handling follows the same pattern, with the signed architecture and contract treated as the governing record rather than any published policy.\nPresence sits apart from ChatGPT Workspace Agents, which remain the self-serve path for teams building inside ChatGPT and Slack, while voice customers keep API access to OpenAI’s frontier models. The company now offers broadly the same capability three ways, separated less by what the technology can do than by who does the work.\nThat leaves buyers choosing on delivery capacity as much as on model capability, and on OpenAI’s own account, delivery capacity is the part being rationed.\nSee also: HP accelerates enterprise workflows with OpenAI Frontier\nWant to learn more about AI and big data from industry leaders? Check out AI & Big Data Expo taking place in Amsterdam, California, and London. The comprehensive event is part of TechEx and is co-located with other leading technology events including the Cyber Security & Cloud Expo . Click here for more information.\nAI News is powered by TechForge Media . Explore other upcoming enterprise technology events and webinars here .\nThe post OpenAI Presence sells enterprise AI agents with engineers attached appeared first on AI News .\nTotal\nShares\nShare\nTweet\nPin it\nLeave a Reply Cancel reply\nView Comments (0)\nPrevious Post\nMarketing\nThe New (AI) SEO Playbook — Whiteboard Friday\nJuly 24, 2026\nNext Post\nSoftware\n大语言模型的每个参数到底能储存多少信息\nJuly 24, 2026\nRelated Posts\n4 min\nAI - Artificial-Intelligence\nThe firm that never forgets: Rowspace launches with US$50M to make AI for private equity actually work\nPrivate equity runs on judgment–and judgment, it turns out, is extraordinarily hard to scale. Decades of deal memos,&hellip;\nDashveenjit Kaur\nMarch 6, 2026\nRead More\nAI - Artificial-Intelligence\nUnauthorized group has gained access to Anthropic’s exclusive cyber tool Mythos, report claims\nAnthropic told TechCrunch it is investigating the claims, but maintains that there is no evidence that its systems&hellip;\nLucas Ropek\nApril 21, 2026\nRead More\nAI - Artificial-Intelligence\nAdobe acquires image and video enhancement tool maker Topaz Labs\nAdobe said that it will integrate Topaz Labs’ tools across its apps.\nIvan Mehta\nJune 25, 2026\nRead More",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-26/r-028-openai-presence-sells-enterprise-ai-agents-with-engineers-attached-pro.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-26/r-028-openai-presence-sells-enterprise-ai-agents-with-engineers-attached-pro.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8579,
+    "paragraph_count": 39,
+    "sentence_count": 61,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 8579,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "3bcd90527d412bd0",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "fee1b9cd6707bfee",
+  "content_hash": "3bcd90527d412bd0",
+  "full_text_hash": "3bcd90527d412bd0",
+  "semantic_hash": "5a3c672ca7095b8f",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-24T00:00:00.000Z",
+  "last_seen_at": "2026-07-26T01:20:13.882Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "OpenAI Presence sells enterprise AI agents with engineers attached - prodSens.live ###### I Found the LeetCode for System Design Interview, and It’s Awesome July 25, 2026 6 minute read ###### Earning the Credential, Developing the Practitioner July 25, 2026 1 minute read ###### 389 Tests Pass... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=industry_landing",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "AI - Artificial-Intelligence 5 minute read No comments OpenAI Presence sells enterprise AI agents with engineers attached Dashveenjit Kaur July 24, 2026 Total Shares The newest way to buy enterprise AI agents from OpenAI does not involve buying anything online.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "OpenAI Presence, announced on July 22, is a managed product delivered through a limited general availability programme, and the company states plainly that it is not yet available as a self-serve product.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Deployments are led by OpenAI’s own Forward Deployed Engineers and a set of selected global systems integrators.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "That is a departure for a business that has largely run on API keys and seat licences.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Presence is sold as a project rather than a product.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-26T01:20:13.882Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "Codex",
+      "ChatGPT",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "金融 / 保险",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队",
+      "法务 / 律师"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "25",
+      "2026",
+      "6 m",
+      "1 m",
+      "389",
+      "5 m",
+      "24",
+      "22"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "AI - Artificial-Intelligence 5 minute read No comments OpenAI Presence sells enterprise AI agents with engineers attached Dashveenjit Kaur July 24, 2026 Total Shares The newest way to buy enterprise AI agents from OpenAI does not involve buying anything online.",
+      "OpenAI Presence, announced on July 22, is a managed product delivered through a limited general availability programme, and the company states plainly that it is not yet available as a self-serve product.",
+      "That is a departure for a business that has largely run on API keys and seat licences."
+    ],
+    "case_details": [
+      "OpenAI Presence sells enterprise AI agents with engineers attached - prodSens.live ###### I Found the LeetCode for System Design Interview, and It’s Awesome July 25, 2026 6 minute read ###### Earning the Credential, Developing the Practitioner July 25, 2026 1 minute read ###### 389 Tests Pass... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=industry_landing",
+      "Deployments are led by OpenAI’s own Forward Deployed Engineers and a set of selected global systems integrators."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队",
+      "法务 / 律师"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# OpenAI Presence sells enterprise AI agents with engineers attached - prodSens.live\n\n- raw_id: R-028\n- title_zh: OpenAI Presence 销售附带工程师的企业级 AI 智能体\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://prodsens.live/2026/07/24/openai-presence-sells-enterprise-ai-agents-with-engineers-attached/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-26T01:20:13.882Z\n\n## clean_text\n\nAI - Artificial-Intelligence\n5 minute read\nNo comments\nOpenAI Presence sells enterprise AI agents with engineers attached\nDashveenjit Kaur\nJuly 24, 2026\nTotal\nShares\nThe newest way to buy enterprise AI agents from OpenAI does not involve buying anything online. OpenAI Presence, announced on July 22, is a managed product delivered through a limited general availability programme, and the company states plainly that it is not yet available as a self-serve product. Deployments are led by OpenAI’s own Forward Deployed Engineers and a set of selected global systems integrators.\nThat is a departure for a business that has largely run on API keys and seat licences. Presence is sold as a project rather than a product. Each engagement starts with a single job, such as resolving a billing dispute, handling an insurance claim, or clearing an employee IT service request.\nThe agent is given only the knowledge and system access that the job requires, and the customer writes the rules governing what it can do, when it needs sign-off, and when a person takes over. After launch, Codex reads production sessions and escalations, then proposes changes the customer’s team tests and approves before rollout.\nOpenAI’s documentation is unusually candid about the labour involved. Its help centre sets out a six-stage process running from scoping business outcomes, through security, privacy and legal review, simulation and acceptance testing, staged rollout, and post-launch iteration. A Presence agent, it says, does not become production-ready simply by ingesting documents.\nThe problem this is built to solve is real\nThe managed model is easy to read cynically, and harder to dismiss on the evidence. Gartner has warned that more than 40% of agentic AI projects will be cancelled by the end of 2027, attributing the failures to governance, undefined business value and weak operational discipline rather than to model capability.\nAlmost everything Presence bundles is aimed squarely at that diagnosis. Simulations and graders test whether an agent reached the right outcome, followed policy, used its tools correctly and escalated when it should, before anyone outside the company speaks to it. Guardrails intervene when an interaction moves past defined boundaries. Session records and action histories give reviewers something to audit. Escalation paths hand a person structured context rather than a cold transcript, and new versions go out through controlled rollout with rollback.\nEnterprises have spent two years discovering that the hard part of a production agent sits in integration, permissions and change management. A vendor that sends engineers to do that work is responding to what buyers have actually been failing at, rather than shipping another dashboard and calling the gap a customer problem.\nWhere the constraint sits\nThe trade-off shows up in the eligibility criteria. Access, OpenAI says, depends on workflow fit, implementation readiness and available delivery capacity.\nDelivery capacity is a consulting constraint. Software scales; engineers cleared into a bank’s core systems do not. Forward Deployed Engineer is a title borrowed from Palantir, where it describes staff embedded in customer operations for months at a time, and the economics attached to it look nothing like the economics of metered inference. By putting its own FDEs and named partners at the front of every deployment, OpenAI has stepped into the layer of the market occupied by the integrators it will also rely on to scale, which is a workable arrangement while volumes are small and a more complicated one later.\nIt also puts a question on the table for anyone scoping a contract. When the model vendor is also the implementation partner, the lines of accountability for a policy misapplied in production need to be written down rather than assumed.\nThe enterprise AI agents on display are still early\nOpenAI describes Presence as battle-tested, and its case for that language is that the product was assembled from years of deploying agents with enterprise customers before it was packaged and named. The claim is about accumulated practice rather than about the product’s time in market, and it is a reasonable one to make.\nThe strongest single proof point is OpenAI’s own English-language phone support line, 1-888-GPT-0090. The company says the agent met or exceeded its internal benchmarks for frontline human support within weeks, now resolves 75% of inbound issues without human assistance, and cut human handoffs by 15 percentage points in ten days through the Codex improvement loop. Those are OpenAI’s figures, measured against OpenAI’s own grading criteria, on OpenAI’s own channel. The transparency is welcome, but the numbers are not independently verified.\nThe three named customers sit earlier in the cycle than the launch framing implies. BBVA is exploring voice support for everyday banking in Mexico. SoftBank is testing Japanese-language conversations. IAG is exploring support during high-demand events such as severe weather. Daniel Ordaz, head of AI transformation at BBVA Mexico, describes the bank as a design partner helping shape and refine voice experiences for financial customer service. Design partners are normal and useful at limited GA. None of the three, though, is presented as running Presence at scale, which is worth holding alongside the word proven.\nWhat has not been disclosed\nPricing is not published. Implementation scope and cost are set per customer and per deployment, which is ordinary for enterprise services and still leaves buyers without a public reference point for cost per resolved contact against an incumbent contact-centre vendor.\nThe model is not named. Presence uses OpenAI models, the documentation says, with configuration selected for the workflow and subject to change as that workflow evolves. That flexibility is defensible engineering, because pinning a production agent to a frozen model version ages badly. Teams that have spent the past year building evaluation suites against specific versions will nonetheless want the contract to say what they are being held to when the configuration moves.\nChannel support during limited GA covers voice or chat, with contact-centre integration, routing, authentication and handoff design confirmed deployment by deployment. Data handling follows the same pattern, with the signed architecture and contract treated as the governing record rather than any published policy.\nPresence sits apart from ChatGPT Workspace Agents, which remain the self-serve path for teams building inside ChatGPT and Slack, while voice customers keep API access to OpenAI’s frontier models. The company now offers broadly the same capability three ways, separated less by what the technology can do than by who does the work.\nThat leaves buyers choosing on delivery capacity as much as on model capability, and on OpenAI’s own account, delivery capacity is the part being rationed.\nSee also: HP accelerates enterprise workflows with OpenAI Frontier\nWant to learn more about AI and big data from industry leaders? Check out AI & Big Data Expo taking place in Amsterdam, California, and London. The comprehensive event is part of TechEx and is co-located with other leading technology events including the Cyber Security & Cloud Expo . Click here for more information.\nAI News is powered by TechForge Media . Explore other upcoming enterprise technology events and webinars here .\nThe post OpenAI Presence sells enterprise AI agents with engineers attached appeared first on AI News .\nTotal\nShares\nShare\nTweet\nPin it\nLeave a Reply Cancel reply\nView Comments (0)\nPrevious Post\nMarketing\nThe New (AI) SEO Playbook — Whiteboard Friday\nJuly 24, 2026\nNext Post\nSoftware\n大语言模型的每个参数到底能储存多少信息\nJuly 24, 2026\nRelated Posts\n4 min\nAI - Artificial-Intelligence\nThe firm that never forgets: Rowspace launches with US$50M to make AI for private equity actually work\nPrivate equity runs on judgment–and judgment, it turns out, is extraordinarily hard to scale. Decades of deal memos,&hellip;\nDashveenjit Kaur\nMarch 6, 2026\nRead More\nAI - Artificial-Intelligence\nUnauthorized group has gained access to Anthropic’s exclusive cyber tool Mythos, report claims\nAnthropic told TechCrunch it is investigating the claims, but maintains that there is no evidence that its systems&hellip;\nLucas Ropek\nApril 21, 2026\nRead More\nAI - Artificial-Intelligence\nAdobe acquires image and video enhancement tool maker Topaz Labs\nAdobe said that it will integrate Topaz Labs’ tools across its apps.\nIvan Mehta\nJune 25, 2026\nRead More\n\n## full_text\n\nAI - Artificial-Intelligence\n5 minute read\nNo comments\nOpenAI Presence sells enterprise AI agents with engineers attached\nDashveenjit Kaur\nJuly 24, 2026\nTotal\nShares\nThe newest way to buy enterprise AI agents from OpenAI does not involve buying anything online. OpenAI Presence, announced on July 22, is a managed product delivered through a limited general availability programme, and the company states plainly that it is not yet available as a self-serve product. Deployments are led by OpenAI’s own Forward Deployed Engineers and a set of selected global systems integrators.\nThat is a departure for a business that has largely run on API keys and seat licences. Presence is sold as a project rather than a product. Each engagement starts with a single job, such as resolving a billing dispute, handling an insurance claim, or clearing an employee IT service request.\nThe agent is given only the knowledge and system access that the job requires, and the customer writes the rules governing what it can do, when it needs sign-off, and when a person takes over. After launch, Codex reads production sessions and escalations, then proposes changes the customer’s team tests and approves before rollout.\nOpenAI’s documentation is unusually candid about the labour involved. Its help centre sets out a six-stage process running from scoping business outcomes, through security, privacy and legal review, simulation and acceptance testing, staged rollout, and post-launch iteration. A Presence agent, it says, does not become production-ready simply by ingesting documents.\nThe problem this is built to solve is real\nThe managed model is easy to read cynically, and harder to dismiss on the evidence. Gartner has warned that more than 40% of agentic AI projects will be cancelled by the end of 2027, attributing the failures to governance, undefined business value and weak operational discipline rather than to model capability.\nAlmost everything Presence bundles is aimed squarely at that diagnosis. Simulations and graders test whether an agent reached the right outcome, followed policy, used its tools correctly and escalated when it should, before anyone outside the company speaks to it. Guardrails intervene when an interaction moves past defined boundaries. Session records and action histories give reviewers something to audit. Escalation paths hand a person structured context rather than a cold transcript, and new versions go out through controlled rollout with rollback.\nEnterprises have spent two years discovering that the hard part of a production agent sits in integration, permissions and change management. A vendor that sends engineers to do that work is responding to what buyers have actually been failing at, rather than shipping another dashboard and calling the gap a customer problem.\nWhere the constraint sits\nThe trade-off shows up in the eligibility criteria. Access, OpenAI says, depends on workflow fit, implementation readiness and available delivery capacity.\nDelivery capacity is a consulting constraint. Software scales; engineers cleared into a bank’s core systems do not. Forward Deployed Engineer is a title borrowed from Palantir, where it describes staff embedded in customer operations for months at a time, and the economics attached to it look nothing like the economics of metered inference. By putting its own FDEs and named partners at the front of every deployment, OpenAI has stepped into the layer of the market occupied by the integrators it will also rely on to scale, which is a workable arrangement while volumes are small and a more complicated one later.\nIt also puts a question on the table for anyone scoping a contract. When the model vendor is also the implementation partner, the lines of accountability for a policy misapplied in production need to be written down rather than assumed.\nThe enterprise AI agents on display are still early\nOpenAI describes Presence as battle-tested, and its case for that language is that the product was assembled from years of deploying agents with enterprise customers before it was packaged and named. The claim is about accumulated practice rather than about the product’s time in market, and it is a reasonable one to make.\nThe strongest single proof point is OpenAI’s own English-language phone support line, 1-888-GPT-0090. The company says the agent met or exceeded its internal benchmarks for frontline human support within weeks, now resolves 75% of inbound issues without human assistance, and cut human handoffs by 15 percentage points in ten days through the Codex improvement loop. Those are OpenAI’s figures, measured against OpenAI’s own grading criteria, on OpenAI’s own channel. The transparency is welcome, but the numbers are not independently verified.\nThe three named customers sit earlier in the cycle than the launch framing implies. BBVA is exploring voice support for everyday banking in Mexico. SoftBank is testing Japanese-language conversations. IAG is exploring support during high-demand events such as severe weather. Daniel Ordaz, head of AI transformation at BBVA Mexico, describes the bank as a design partner helping shape and refine voice experiences for financial customer service. Design partners are normal and useful at limited GA. None of the three, though, is presented as running Presence at scale, which is worth holding alongside the word proven.\nWhat has not been disclosed\nPricing is not published. Implementation scope and cost are set per customer and per deployment, which is ordinary for enterprise services and still leaves buyers without a public reference point for cost per resolved contact against an incumbent contact-centre vendor.\nThe model is not named. Presence uses OpenAI models, the documentation says, with configuration selected for the workflow and subject to change as that workflow evolves. That flexibility is defensible engineering, because pinning a production agent to a frozen model version ages badly. Teams that have spent the past year building evaluation suites against specific versions will nonetheless want the contract to say what they are being held to when the configuration moves.\nChannel support during limited GA covers voice or chat, with contact-centre integration, routing, authentication and handoff design confirmed deployment by deployment. Data handling follows the same pattern, with the signed architecture and contract treated as the governing record rather than any published policy.\nPresence sits apart from ChatGPT Workspace Agents, which remain the self-serve path for teams building inside ChatGPT and Slack, while voice customers keep API access to OpenAI’s frontier models. The company now offers broadly the same capability three ways, separated less by what the technology can do than by who does the work.\nThat leaves buyers choosing on delivery capacity as much as on model capability, and on OpenAI’s own account, delivery capacity is the part being rationed.\nSee also: HP accelerates enterprise workflows with OpenAI Frontier\nWant to learn more about AI and big data from industry leaders? Check out AI & Big Data Expo taking place in Amsterdam, California, and London. The comprehensive event is part of TechEx and is co-located with other leading technology events including the Cyber Security & Cloud Expo . Click here for more information.\nAI News is powered by TechForge Media . Explore other upcoming enterprise technology events and webinars here .\nThe post OpenAI Presence sells enterprise AI agents with engineers attached appeared first on AI News .\nTotal\nShares\nShare\nTweet\nPin it\nLeave a Reply Cancel reply\nView Comments (0)\nPrevious Post\nMarketing\nThe New (AI) SEO Playbook — Whiteboard Friday\nJuly 24, 2026\nNext Post\nSoftware\n大语言模型的每个参数到底能储存多少信息\nJuly 24, 2026\nRelated Posts\n4 min\nAI - Artificial-Intelligence\nThe firm that never forgets: Rowspace launches with US$50M to make AI for private equity actually work\nPrivate equity runs on judgment–and judgment, it turns out, is extraordinarily hard to scale. Decades of deal memos,&hellip;\nDashveenjit Kaur\nMarch 6, 2026\nRead More\nAI - Artificial-Intelligence\nUnauthorized group has gained access to Anthropic’s exclusive cyber tool Mythos, report claims\nAnthropic told TechCrunch it is investigating the claims, but maintains that there is no evidence that its systems&hellip;\nLucas Ropek\nApril 21, 2026\nRead More\nAI - Artificial-Intelligence\nAdobe acquires image and video enhancement tool maker Topaz Labs\nAdobe said that it will integrate Topaz Labs’ tools across its apps.\nIvan Mehta\nJune 25, 2026\nRead More\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] OpenAI Presence sells enterprise AI agents with engineers attached - prodSens.live ###### I Found the LeetCode for System Design Interview, and It’s Awesome July 25, 2026 6 minute read ###### Earning the Credential, Developing the Practitioner July 25, 2026 1 minute read ###### 389 Tests Pass... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=industry_landing\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] AI - Artificial-Intelligence 5 minute read No comments OpenAI Presence sells enterprise AI agents with engineers attached Dashveenjit Kaur July 24, 2026 Total Shares The newest way to buy enterprise AI agents from OpenAI does not involve buying anything online.\n3. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] OpenAI Presence, announced on July 22, is a managed product delivered through a limited general availability programme, and the company states plainly that it is not yet available as a self-serve product.\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Deployments are led by OpenAI’s own Forward Deployed Engineers and a set of selected global systems integrators.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] That is a departure for a business that has largely run on API keys and seat licences.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Presence is sold as a project rather than a product.\n"
+}

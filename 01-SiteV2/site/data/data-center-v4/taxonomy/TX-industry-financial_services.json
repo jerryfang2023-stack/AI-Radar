@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T07:23:22.462Z",
-    "latestDataDate": "2026-07-25",
-    "currentDate": "2026-07-25",
-    "eventCount": 1533,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "latestDataDate": "2026-07-26",
+    "currentDate": "2026-07-26",
+    "eventCount": 1570,
+    "quarantinedEventCount": 17
   },
   "node": {
     "id": "TX-industry-financial_services",
@@ -34,6 +34,7 @@
       "EV-d1e2a7c6d314612c",
       "EV-33717672cb5e8004",
       "EV-83b2e8f7fe679bc3",
+      "EV-16cfe946bbf69aa3",
       "EV-2c87c8ea47cbd1b6",
       "EV-97747aee0cafd9f3",
       "EV-bad301e14b034fbd",
@@ -65,6 +66,8 @@
       "EN-c70eca6b0f88f44d",
       "EN-5e757c7fc575c41e",
       "EN-bc8a00f7f6fb535f",
+      "EN-b3f5e31ec86a08a9",
+      "EN-9fbf261b62c1d7c0",
       "EN-4d748ebd71af03a7",
       "EN-c3e4cc183d345262",
       "EN-9b6ea48b511ffd60",
@@ -82,12 +85,13 @@
       "FDE-e1b2683e8d017358",
       "FDE-0ee0fe3baa3f1364",
       "FDE-d0a39c8df546833a",
+      "FDE-8506e8248e149161",
       "FDE-560b710961006374",
       "FDE-ae4c44cd0de9d48a"
     ],
     "hardwareIds": [],
     "firstSeen": "2026-05-22",
-    "lastSeen": "2026-07-25"
+    "lastSeen": "2026-07-26"
   },
   "events": [
     {
@@ -1837,6 +1841,92 @@
       "publisher": "keepingupwith.ai"
     },
     {
+      "id": "EV-16cfe946bbf69aa3",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-22",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "宏利扩大与微软合作，加速企业AI治理与创新",
+      "originalTitle": "Manulife Expands Partnership with Microsoft to Accelerate Enterprise AI Governance and Innovation",
+      "subject": "Manulife Expands",
+      "action": "Partnership",
+      "object": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
+      "metrics": [],
+      "locations": [
+        "US",
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-b3f5e31ec86a08a9",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Manulife",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://prnewswire.com/news-releases/manulife-expands-partnership-with-microsoft-to-accelerate-enterprise-ai-governance-and-innovation-302831259.html",
+      "publisher": "prnewswire.com"
+    },
+    {
       "id": "EV-2c87c8ea47cbd1b6",
       "dataDate": "2026-07-09",
       "date": "2026-07-09",
@@ -2458,10 +2548,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-manufacturing",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation"
       ],
       "relatedEntityIds": [],
@@ -2548,6 +2638,7 @@
         "EV-2f9a87bd46248fe8",
         "EV-056bb8c683ef60a4",
         "EV-b4b5d141dac164c2",
+        "EV-6e4dd5111dfaae9c",
         "EV-36a9e4e908249381",
         "EV-181b425d2a600cad",
         "EV-2c87c8ea47cbd1b6",
@@ -2562,7 +2653,6 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
-        "EV-0d5a32aca724d30e",
         "EV-9852a10590030da9",
         "EV-1ba939d8baf43207",
         "EV-941ba9ebdc43f20c",
@@ -2629,25 +2719,24 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
+        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-professional_services",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-industry-government_public_sector",
@@ -2658,12 +2747,12 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
-        "EN-bbdefa2950f49882",
         "EN-8d323d8bba783aa3",
+        "EN-bbdefa2950f49882",
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-e5dcb6b25180d1d6",
@@ -2764,11 +2853,11 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-technology-mixture_of_experts",
@@ -2798,9 +2887,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-manufacturing"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-26",
@@ -2818,8 +2907,8 @@
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
+        "EV-3fb827f44ea109de",
         "EV-14cc7f194f3e5af8",
-        "EV-754e83c2d19005fe",
         "EV-d7a7244d620a2142",
         "EV-4da1a7c4d527eb69",
         "EV-e41fc65eb014893f",
@@ -2844,6 +2933,7 @@
         "EV-3b40ec144e5db22c",
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
+        "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
         "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
@@ -2865,6 +2955,7 @@
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
         "EV-eec1e6857f0e0b2b",
+        "EV-fdf6128ae36e1f5e",
         "EV-7f2811d2272cf4a3",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
@@ -2878,8 +2969,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-33e98b8bbd0a11b1",
         "EV-c9aba59ba04c9fc8",
-        "EV-0d5a32aca724d30e",
         "EV-5ec22cf9a1fb59d4",
         "EV-b0dec1e885a601fe",
         "EV-243e73016576fa43",
@@ -3045,30 +3136,29 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
+        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-professional_services",
-        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-use_case-research_science",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -3099,7 +3189,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-11507a0e2f5e69d5",
@@ -3226,9 +3316,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-manufacturing"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -3251,9 +3341,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-financial_services",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-manufacturing"
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
@@ -3360,6 +3450,7 @@
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
+        "EV-3fb827f44ea109de",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
         "EV-e41fc65eb014893f",
@@ -3399,6 +3490,7 @@
         "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
+        "EV-2a71353a862e56b3",
         "EV-4515377aa6311bf1",
         "EV-ef6464cf7f764835",
         "EV-bb9ba11acf104db1",
@@ -3409,12 +3501,12 @@
         "EV-bad301e14b034fbd",
         "EV-45ee75a45f2ca5ee",
         "EV-8e01849c05b50355",
+        "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
         "EV-0e616f9e775a77dc",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
-        "EV-0d5a32aca724d30e",
         "EV-32fb6014149bafdd",
         "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
@@ -3439,6 +3531,7 @@
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
         "EV-c2800c1c5a3f568f",
+        "EV-d9da7dea91725a1c",
         "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
@@ -3600,14 +3693,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -3615,16 +3710,14 @@
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-industry-government_public_sector",
-        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
+        "TX-industry-government_public_sector",
         "TX-technology-tool_use",
-        "TX-technology-distillation",
         "TX-technology-human_in_loop",
+        "TX-technology-distillation",
         "TX-industry-education"
       ],
       "relatedEntityIds": [
@@ -3654,7 +3747,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-5e757c7fc575c41e",
@@ -3697,6 +3790,169 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-06",
       "lastSeen": "2026-06-07"
+    },
+    {
+      "id": "EN-b3f5e31ec86a08a9",
+      "name": "Manulife",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-16cfe946bbf69aa3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-26"
+    },
+    {
+      "id": "EN-9fbf261b62c1d7c0",
+      "name": "Microsoft",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "微软"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-86ca5af11ee4d275",
+        "EV-52115fee0e716170",
+        "EV-20d762872664fddb",
+        "EV-88f4ee8cd57bdf42",
+        "EV-44a4e92c03a31ab1",
+        "EV-7585b033d4005977",
+        "EV-e09efcd49776cb95",
+        "EV-883d3b5f6d30eb48",
+        "EV-fa66f00e9d4b20c2",
+        "EV-4fba2b2f1ac10a79",
+        "EV-bcb74b02448b7d78",
+        "EV-47a16db069ed320e",
+        "EV-381b79897d896995",
+        "EV-d756f05478303505",
+        "EV-7263caa45bbf168e",
+        "EV-8abf5adc3e72fbb8",
+        "EV-16cfe946bbf69aa3",
+        "EV-eec1e6857f0e0b2b",
+        "EV-6acfb15c012ddf6d",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-b833b29d904b39ac",
+        "EV-9dab7fa55702e561",
+        "EV-b2e374d54b10b9af",
+        "EV-4763b46821ab746e",
+        "EV-58c1cc3749294649",
+        "EV-c0a65877001ed413",
+        "EV-bd508dbe4205774f",
+        "EV-5bc7efca0bc7fec0",
+        "EV-702276a31f123374",
+        "EV-37ff2485172cab0b",
+        "EV-82ae0ea3bfe336a1",
+        "EV-243e73016576fa43",
+        "EV-563843979fb55b9b",
+        "EV-6c81f03e885f10af",
+        "EV-e1e30a2a4a5232c6",
+        "EV-cd067fa6f39fe828",
+        "EV-118317b7f92e5e16",
+        "EV-c4723445b11bb275",
+        "EV-7963d8c78531f12d",
+        "EV-7c899d5decafc42f",
+        "EV-b920999c64aa9ef6",
+        "EV-33292a33d0f4d599",
+        "EV-b3a050d576cea2f2",
+        "EV-fdcc4ff01b49053e",
+        "EV-cadcc94249dea81d",
+        "EV-dae42c1daf8ba2f8",
+        "EV-b862692915ae70bb",
+        "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
+        "EV-0370a17f0ef39c3e",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-7309586168387ad8",
+        "EV-8aead769e84de342",
+        "EV-7fb25ff3d853c314",
+        "EV-3acf607a02706fa8",
+        "EV-4ee99f92b011d16f",
+        "EV-9009adaed650ddde",
+        "EV-8a26b85b4f432525",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-10aac036228b3c6b",
+        "EV-8495af729cd05f62",
+        "EV-e28e134345ea5f99",
+        "EV-f7484ad16a6d1876",
+        "EV-d2d1834222ab32d3",
+        "EV-04c2ffd7f6b10126",
+        "EV-922de7a46f447efa",
+        "EV-1f61330a3f828179",
+        "EV-523e5de44cc464fb",
+        "EV-ae89898e7aa4a4d6",
+        "EV-d596f111808bd55b",
+        "EV-a4f052325d0ef230",
+        "EV-6ce6b9c9780b97d9",
+        "EV-bce258f8f915ff5f",
+        "EV-89bdda008227fb6b",
+        "EV-62df953d81def866",
+        "EV-1b92b6c835ce240c",
+        "EV-3da14e3743571e92",
+        "EV-d9a78a839d6c628f",
+        "EV-1587a760d81451be",
+        "EV-33e7429a7bc94840",
+        "EV-022d1f3160d94048",
+        "EV-933294dfb2d19a67",
+        "EV-7580a050ca19a8ae"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
+        "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-technology-computer_use",
+        "TX-industry-financial_services",
+        "TX-use_case-robotics_automation",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-automotive_transportation",
+        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-technology-on_device",
+        "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-industry-telecommunications",
+        "TX-technology-reasoning",
+        "TX-technology-human_in_loop",
+        "TX-technology-distillation",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
+        "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
+        "EN-d2f4e09cb01afa3c",
+        "EN-7d3194f79e645c42",
+        "EN-38945a66b4806b11",
+        "EN-c141d2237427f30d",
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
+      ],
+      "firstSeen": "2026-02-13",
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -3779,9 +4035,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3807,6 +4061,7 @@
         "EV-777eb5b7783b71fb",
         "EV-5a9fe80f8e4ae066",
         "EV-b4b5d141dac164c2",
+        "EV-6e4dd5111dfaae9c",
         "EV-36a9e4e908249381",
         "EV-98496cc86bacb1e0",
         "EV-ef6464cf7f764835",
@@ -3815,6 +4070,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-33e98b8bbd0a11b1",
         "EV-2634b786bde9fb8e",
         "EV-6aabfaa0c7c7f838",
         "EV-c914ac00a35d7cf0",
@@ -3930,22 +4186,22 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
+        "TX-use_case-robotics_automation",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-use_case-robotics_automation",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-model_context_protocol",
         "TX-technology-video_generation",
@@ -3957,20 +4213,18 @@
         "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [
+        "EN-96eebba49dbbf422",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
         "EN-6f216f2ea5b7a13e",
-        "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -3979,7 +4233,7 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-06b5472c16feae4c",
@@ -4110,6 +4364,8 @@
         "EV-cc7020e12bcaa0d7",
         "EV-d9270ae7b862212b",
         "EV-3f8f6a578be79988",
+        "EV-910ebb509f1d437b",
+        "EV-9ff0c57323ed8318",
         "EV-8b73e88ffd3569b2",
         "EV-30d7f1c5dc8ea464",
         "EV-9009adaed650ddde",
@@ -4119,16 +4375,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
-      "lastSeen": "2026-07-15"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-32e83e92d45d71f6",
@@ -4157,6 +4413,50 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-8506e8248e149161",
+      "eventId": "EV-16cfe946bbf69aa3",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-22",
+      "title": "宏利扩大与微软合作，加速企业AI治理与创新",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Manulife",
+      "vendor": "Microsoft",
+      "industry": "未披露",
+      "useCase": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "TORONTO, ON and REDMOND, Wash. , July 22, 2026 /PRNewswire/ -- Manulife and Microsoft today announced the renewal and expansion of their longstanding relationship, supporting Manulife's strategic priority to become an AI-powered organization. As part of this partnership, Manulife has adopted Microsoft 365 E7 Frontier Suite capabilities to enable innovation at scale with secure cloud and AI solutions. This includes expanding adoption of Microsoft 365 Copilot to over 30,000 employees and deploying Microsoft Agent 365 – a next-generation suite that provides a control plane for governing, monitoring, and securing AI agents at enterprise scale. The five-year agreement supports Manulife's continued transformation and responsible scaling of AI-enabled capabilities across its global operations."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://prnewswire.com/news-releases/manulife-expands-partnership-with-microsoft-to-accelerate-enterprise-ai-governance-and-innovation-302831259.html",
+      "entityIds": [
+        "EN-b3f5e31ec86a08a9",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    },
     {
       "id": "FDE-e79a238725a98c06",
       "eventId": "EV-4b545e310ded2baa",

@@ -1,0 +1,312 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-026
+title: "OpenAI Won't Sell You AI Agents — They're Sending Engineers | THE D*AI*LY BRIEF"
+title_zh: "OpenAI 不会向你出售 AI 智能体——他们将派遣工程师"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.beri.net/article/openai-presence-enterprise-ai-agents-forward-deployed-engineers-2026"
+canonical_url: "https://beri.net/article/openai-presence-enterprise-ai-agents-forward-deployed-engineers-2026"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: "2026-07-25T16:06:59.354Z"
+collected_at: 2026-07-26T01:20:11.785Z
+language: mixed
+full_text_hash: 5a9c2b2acff060bb
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-026-openai-won-t-sell-you-ai-agents-they-re-sending-engineers-the-d-ai-ly-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-026-openai-won-t-sell-you-ai-agents-they-re-sending-engineers-the-d-ai-ly-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":12516,"paragraph_count":55,"sentence_count":123,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 12516
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5a9c2b2acff060bb","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 34d70fee5d52cb43
+content_hash: 5a9c2b2acff060bb
+semantic_hash: 64ebe8ce15e0714e
+duplicate_of: ""
+first_seen_at: "2026-07-25T16:06:59.354Z"
+last_seen_at: 2026-07-26T01:20:11.785Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Microsoft","Salesforce","ServiceNow"],"products":["Agents","agents","agent","Codex","Claude"],"people":[],"industries":["法律 / 法务","金融 / 保险","医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算","采购","销售 / 客服"],"numbers":["75%","22","1","888","0090","15","100%","$8"],"quotes":["production-ready"]}
+evidence_seed: {"company_actions":["You were expecting software.","OpenAI is sending engineers instead.","It is not a platform you buy and configure yourself."],"case_details":["On July 22, OpenAI launched Presence — a new enterprise product that deploys AI agents into your customer support, sales, and operations workflows.","It is a high-touch deployment service where OpenAI's own Forward Deployed Engineers sit inside your organization, learn your processes, and build agents that actually work in production."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"number","text":"OpenAI Won't Sell You AI Agents — They're Sending Engineers | THE D*AI*LY BRIEF # OpenAI Won't Sell You AI Agents — They're Sending Engineers OpenAI Presence deploys AI agents into your enterprise with embedded engineers attached. Here's what the 75% resolution rate really costs. By Rajesh Beri·J... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=industry_landing","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You were expecting software.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenAI is sending engineers instead.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"On July 22, OpenAI launched Presence — a new enterprise product that deploys AI agents into your customer support, sales, and operations workflows.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It is not a platform you buy and configure yourself.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"It is a high-touch deployment service where OpenAI's own Forward Deployed Engineers sit inside your organization, learn your processes, and build agents that actually work in production.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-26T01:20:11.785Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# OpenAI Won't Sell You AI Agents — They're Sending Engineers | THE D*AI*LY BRIEF
+
+## clean_text
+
+You were expecting software. OpenAI is sending engineers instead.
+On July 22, OpenAI launched Presence — a new enterprise product that deploys AI agents into your customer support, sales, and operations workflows. It is not a platform you buy and configure yourself. It is a high-touch deployment service where OpenAI's own Forward Deployed Engineers sit inside your organization, learn your processes, and build agents that actually work in production.
+This is not how enterprise software has worked for the last twenty years. And that gap — between what buyers expect and what OpenAI is offering — is the most important thing to understand about Presence.
+What Presence Actually Is
+Presence handles the workflows that break most AI pilots: billing disputes, insurance claims, outbound sales conversations, employee IT requests, HR service tasks. These are not simple FAQ bots. They require authenticating users, accessing account data, taking approved actions inside backend systems, and knowing exactly when to escalate to a human.
+Each Presence deployment starts with a defined job. The agent receives only the data and system access required for that task — not a broad API key to your entire platform. The customer organization defines what the agent can do independently, what requires human approval, and what triggers an immediate handoff.
+Before anything goes live, the deployment runs through a six-stage process: scope definition, security and privacy review, legal sign-off, simulation against common and edge-case scenarios, staged rollout, and post-launch iteration. Nothing moves to production until it has been tested against the specific guardrails the customer has set.
+This is not a plug-and-play product. It is a governed deployment methodology packaged as a service.
+The Palantir Playbook
+If this sounds familiar, it should. OpenAI is borrowing directly from Palantir's Forward Deployed Engineer model — the same approach that made Palantir dominant in defense and intelligence by embedding engineers inside classified government environments where no off-the-shelf software could survive contact with real operational complexity.
+The parallel is explicit. Palantir built its early moat not by selling software licenses but by making its software inseparable from the engineers who understood how to run it. OpenAI is attempting something similar: making Presence less of a product and more of a capability that only OpenAI knows how to deploy.
+For buyers, the implication is significant. You are not acquiring a SaaS tool you can run independently. You are entering a services relationship where OpenAI owns the deployment expertise. That changes the procurement conversation, the vendor dependency calculus, and the long-term cost model in ways that no one has fully priced out yet — OpenAI has not disclosed pricing.
+What the Numbers Actually Show
+OpenAI is using its own customer support line as the Presence reference deployment. The phone number is 1-888- GPT -0090. The system handles inbound English-language support requests, verifies callers, accesses account context, and takes approved actions.
+According to OpenAI, Presence now resolves 75% of inbound issues without human assistance. Its Codex -powered continuous improvement loop reduced human handoffs by 15 percentage points in just ten days.
+These are company-reported figures and have not been independently verified. But even as directional benchmarks, they establish a credible baseline for what production-grade agentic AI looks like when governance is built in from the start — not bolted on after deployment.
+The early enterprise design partners are testing the same foundation. BBVA is exploring voice support for routine banking queries in Mexico. SoftBank is testing natural Japanese-language customer conversations. Australian insurer IAG is exploring how Presence can handle surge volume during severe weather events, when human support queues become unmanageable within hours.
+These are not experimental use cases. They are core revenue-generating workflows at major financial institutions and insurers. The fact that these organizations are testing Presence — even in limited pilots — signals that the governance model is credible enough to bring into regulated environments.
+For Technical Leaders: The Architecture That Makes This Work
+The reason most enterprise AI agent deployments fail is not the model. It is everything around the model: the system integrations, the permission boundaries, the escalation logic, the monitoring, and — most critically — the feedback loop that keeps the agent aligned with real-world policy changes after launch.
+Presence packages all of this as a unified system. The governance layer includes:
+Policy enforcement. Customers define explicit rules for what the agent can do, what requires human approval, and what triggers an immediate escalation. These are not prompt-level instructions. They are enforced constraints at the system level.
+Simulation before production. Before launch, teams run the agent against batches of real and constructed scenarios. Graders evaluate whether the agent reached the intended outcome, followed policy, used tools correctly, and escalated appropriately. This gives organizations a quantified confidence baseline before any customer interaction happens.
+The Codex improvement loop. After launch, Codex monitors production sessions and escalation patterns, identifies failure modes, proposes targeted updates, and routes those updates through a test-before-deploy process. The agent does not rewrite itself — changes require human approval. But the system surfaces what needs to change faster than any manual review process could.
+Third-party model flexibility. The core agent runs on OpenAI models. But the guardrail layer, evaluation tools, and other workflow components can connect to third-party models via API. If your security team requires a specific model for policy enforcement, that door is not closed.
+For CTOs evaluating enterprise AI governance frameworks, this is the most mature production architecture OpenAI has publicly described. It is not a research prototype. It is a reference implementation backed by live deployment data.
+For Business Leaders: The Real Cost Equation
+The 75% resolution rate is the number that will appear in executive briefings. Here is what it actually means for your P&L.
+In a traditional customer support operation, human labor handles 100% of contacts. Each resolved contact carries a fully-loaded cost: agent time, supervision, QA, training, attrition. For most enterprise contact centers, that cost runs between $8 and $25 per resolved contact depending on complexity and channel.
+If Presence resolves 75% of contacts without human involvement, the math is straightforward: labor cost per contact drops to approximately 25% of baseline for the automated share. At meaningful volume — say, 10,000 contacts per month — that is a material operating cost reduction.
+The critical question is what Presence costs to deploy and operate. OpenAI has not disclosed pricing. The FDE engagement model suggests this is not a per-seat SaaS subscription. It is almost certainly a professional services arrangement plus ongoing operational fees. Buyers who are accustomed to evaluating software on a total cost of ownership basis will need to build a different financial model.
+What to watch: the comparison point is not other AI chatbot vendors. It is the total cost of your current human support operation. If Presence can demonstrate a 60-70% reduction in cost-per-contact at your specific volume, the services engagement pays for itself quickly. If you are a smaller operation or your contact volume is low, the economics may not work yet.
+CFOs should request a unit economics breakdown before any pilot: what is the per-contact cost assumption, what is the projected resolution rate for your specific workflow type, and what are the SLA commitments if performance falls below baseline.
+The 40% Failure Problem Presence Is Designed to Solve
+Gartner has warned that more than 40% of agentic AI projects will fail by 2027. The primary causes are not model quality. They are poor governance frameworks, unclear business value definition, and the absence of production monitoring that catches degradation before it becomes a customer experience problem.
+Presence is OpenAI's direct response to that warning. Every element of the deployment methodology — the six-stage process, the simulation layer, the Codex improvement loop, the escalation policies — exists to address the specific failure modes Gartner identified.
+This matters for buyers because it shifts the risk calculation. A self-built agentic AI deployment carries governance risk that sits entirely with the deploying organization. A Presence deployment offloads a significant portion of that risk to OpenAI and its FDEs — who have financial and reputational incentives to make the deployment work.
+That is not a reason to skip due diligence. But it does change the organizational capability required to deploy production agents successfully.
+What This Means for the Market
+Presence is the most direct signal yet that OpenAI is moving beyond being an AI model provider. The OpenAI Deployment Company, launched in May 2026 and backed by Bain & Company, is the corporate vehicle for this services strategy. Presence is the product that justifies it.
+For context: Anthropic has Ode, a consulting practice for Claude deployments. But Ode does not package governance, deployment methodology, and continuous improvement into a branded product the way Presence does. The competitive differentiation is not model capability — it is the institutional packaging around the model.
+Microsoft, Salesforce, ServiceNow, and the major CRM/ERP vendors are all building their own agentic layers. The question those vendors will need to answer is whether their embedded AI governance frameworks are as mature as what OpenAI is shipping in Presence.
+For enterprises evaluating agentic AI vendors in the next 12 months, Presence sets a new baseline for what "production-ready" looks like. Any vendor that cannot explain their equivalent of a six-stage governed deployment process, a simulation layer, and a Codex-like improvement loop should be asked why not.
+What to Do Now
+If you are a CIO or CTO: Presence is worth a structured evaluation if you have a high-volume customer or employee-facing workflow that currently relies on human labor for resolution. The governance architecture is production-grade. The FDE model reduces internal implementation risk. The cost model is opaque and requires direct negotiation.
+If you are a CFO or COO: Do not evaluate Presence as a software purchase. Evaluate it as an operations transformation project with a services component. Build the ROI model on current contact-center economics, not on software license comparisons. Require a pilot with defined success metrics before any volume commitment.
+If you are in a regulated industry (financial services, insurance, healthcare): BBVA, SoftBank, and IAG are your reference cohort. The regulated-environment deployment questions — data residency, model audit trails, regulatory reporting — are questions OpenAI is going to face repeatedly with these customers. Ask OpenAI directly how they are addressing each before you proceed.
+For everyone: Presence is limited general availability. Access requires engagement with OpenAI's FDEs or select global systems integrators. If you want to evaluate it, the process starts with a direct enterprise conversation — not a free trial.
+The headline fact is that OpenAI resolved 75% of its own inbound support calls with AI. The more important fact is how: six stages of governance, embedded engineers, simulation before production, and a continuous improvement loop that requires human approval for every change.
+That is not a technology story. That is an operations story. And for the first time, a major AI vendor has packaged it in a way that enterprise buyers can actually evaluate.
+What's your organization's current agentic AI governance framework look like? I'd like to hear how leaders are approaching this. Connect on LinkedIn or X/Twitter .
+Continue Reading
+OpenAI Presence: 75% Issue Resolution, No Humans Needed
+75% Resolution, No Humans: OpenAI Just Became a Consulting Firm
+Your AI Agents Are Running. Is Anyone in Charge?
+OpenAI vs Microsoft vs Anthropic: Enterprise AI Showdown
+71% of Your 'AI Agents' Are Just Chatbots in Disguise
+
+## full_text
+
+You were expecting software. OpenAI is sending engineers instead.
+On July 22, OpenAI launched Presence — a new enterprise product that deploys AI agents into your customer support, sales, and operations workflows. It is not a platform you buy and configure yourself. It is a high-touch deployment service where OpenAI's own Forward Deployed Engineers sit inside your organization, learn your processes, and build agents that actually work in production.
+This is not how enterprise software has worked for the last twenty years. And that gap — between what buyers expect and what OpenAI is offering — is the most important thing to understand about Presence.
+What Presence Actually Is
+Presence handles the workflows that break most AI pilots: billing disputes, insurance claims, outbound sales conversations, employee IT requests, HR service tasks. These are not simple FAQ bots. They require authenticating users, accessing account data, taking approved actions inside backend systems, and knowing exactly when to escalate to a human.
+Each Presence deployment starts with a defined job. The agent receives only the data and system access required for that task — not a broad API key to your entire platform. The customer organization defines what the agent can do independently, what requires human approval, and what triggers an immediate handoff.
+Before anything goes live, the deployment runs through a six-stage process: scope definition, security and privacy review, legal sign-off, simulation against common and edge-case scenarios, staged rollout, and post-launch iteration. Nothing moves to production until it has been tested against the specific guardrails the customer has set.
+This is not a plug-and-play product. It is a governed deployment methodology packaged as a service.
+The Palantir Playbook
+If this sounds familiar, it should. OpenAI is borrowing directly from Palantir's Forward Deployed Engineer model — the same approach that made Palantir dominant in defense and intelligence by embedding engineers inside classified government environments where no off-the-shelf software could survive contact with real operational complexity.
+The parallel is explicit. Palantir built its early moat not by selling software licenses but by making its software inseparable from the engineers who understood how to run it. OpenAI is attempting something similar: making Presence less of a product and more of a capability that only OpenAI knows how to deploy.
+For buyers, the implication is significant. You are not acquiring a SaaS tool you can run independently. You are entering a services relationship where OpenAI owns the deployment expertise. That changes the procurement conversation, the vendor dependency calculus, and the long-term cost model in ways that no one has fully priced out yet — OpenAI has not disclosed pricing.
+What the Numbers Actually Show
+OpenAI is using its own customer support line as the Presence reference deployment. The phone number is 1-888- GPT -0090. The system handles inbound English-language support requests, verifies callers, accesses account context, and takes approved actions.
+According to OpenAI, Presence now resolves 75% of inbound issues without human assistance. Its Codex -powered continuous improvement loop reduced human handoffs by 15 percentage points in just ten days.
+These are company-reported figures and have not been independently verified. But even as directional benchmarks, they establish a credible baseline for what production-grade agentic AI looks like when governance is built in from the start — not bolted on after deployment.
+The early enterprise design partners are testing the same foundation. BBVA is exploring voice support for routine banking queries in Mexico. SoftBank is testing natural Japanese-language customer conversations. Australian insurer IAG is exploring how Presence can handle surge volume during severe weather events, when human support queues become unmanageable within hours.
+These are not experimental use cases. They are core revenue-generating workflows at major financial institutions and insurers. The fact that these organizations are testing Presence — even in limited pilots — signals that the governance model is credible enough to bring into regulated environments.
+For Technical Leaders: The Architecture That Makes This Work
+The reason most enterprise AI agent deployments fail is not the model. It is everything around the model: the system integrations, the permission boundaries, the escalation logic, the monitoring, and — most critically — the feedback loop that keeps the agent aligned with real-world policy changes after launch.
+Presence packages all of this as a unified system. The governance layer includes:
+Policy enforcement. Customers define explicit rules for what the agent can do, what requires human approval, and what triggers an immediate escalation. These are not prompt-level instructions. They are enforced constraints at the system level.
+Simulation before production. Before launch, teams run the agent against batches of real and constructed scenarios. Graders evaluate whether the agent reached the intended outcome, followed policy, used tools correctly, and escalated appropriately. This gives organizations a quantified confidence baseline before any customer interaction happens.
+The Codex improvement loop. After launch, Codex monitors production sessions and escalation patterns, identifies failure modes, proposes targeted updates, and routes those updates through a test-before-deploy process. The agent does not rewrite itself — changes require human approval. But the system surfaces what needs to change faster than any manual review process could.
+Third-party model flexibility. The core agent runs on OpenAI models. But the guardrail layer, evaluation tools, and other workflow components can connect to third-party models via API. If your security team requires a specific model for policy enforcement, that door is not closed.
+For CTOs evaluating enterprise AI governance frameworks, this is the most mature production architecture OpenAI has publicly described. It is not a research prototype. It is a reference implementation backed by live deployment data.
+For Business Leaders: The Real Cost Equation
+The 75% resolution rate is the number that will appear in executive briefings. Here is what it actually means for your P&L.
+In a traditional customer support operation, human labor handles 100% of contacts. Each resolved contact carries a fully-loaded cost: agent time, supervision, QA, training, attrition. For most enterprise contact centers, that cost runs between $8 and $25 per resolved contact depending on complexity and channel.
+If Presence resolves 75% of contacts without human involvement, the math is straightforward: labor cost per contact drops to approximately 25% of baseline for the automated share. At meaningful volume — say, 10,000 contacts per month — that is a material operating cost reduction.
+The critical question is what Presence costs to deploy and operate. OpenAI has not disclosed pricing. The FDE engagement model suggests this is not a per-seat SaaS subscription. It is almost certainly a professional services arrangement plus ongoing operational fees. Buyers who are accustomed to evaluating software on a total cost of ownership basis will need to build a different financial model.
+What to watch: the comparison point is not other AI chatbot vendors. It is the total cost of your current human support operation. If Presence can demonstrate a 60-70% reduction in cost-per-contact at your specific volume, the services engagement pays for itself quickly. If you are a smaller operation or your contact volume is low, the economics may not work yet.
+CFOs should request a unit economics breakdown before any pilot: what is the per-contact cost assumption, what is the projected resolution rate for your specific workflow type, and what are the SLA commitments if performance falls below baseline.
+The 40% Failure Problem Presence Is Designed to Solve
+Gartner has warned that more than 40% of agentic AI projects will fail by 2027. The primary causes are not model quality. They are poor governance frameworks, unclear business value definition, and the absence of production monitoring that catches degradation before it becomes a customer experience problem.
+Presence is OpenAI's direct response to that warning. Every element of the deployment methodology — the six-stage process, the simulation layer, the Codex improvement loop, the escalation policies — exists to address the specific failure modes Gartner identified.
+This matters for buyers because it shifts the risk calculation. A self-built agentic AI deployment carries governance risk that sits entirely with the deploying organization. A Presence deployment offloads a significant portion of that risk to OpenAI and its FDEs — who have financial and reputational incentives to make the deployment work.
+That is not a reason to skip due diligence. But it does change the organizational capability required to deploy production agents successfully.
+What This Means for the Market
+Presence is the most direct signal yet that OpenAI is moving beyond being an AI model provider. The OpenAI Deployment Company, launched in May 2026 and backed by Bain & Company, is the corporate vehicle for this services strategy. Presence is the product that justifies it.
+For context: Anthropic has Ode, a consulting practice for Claude deployments. But Ode does not package governance, deployment methodology, and continuous improvement into a branded product the way Presence does. The competitive differentiation is not model capability — it is the institutional packaging around the model.
+Microsoft, Salesforce, ServiceNow, and the major CRM/ERP vendors are all building their own agentic layers. The question those vendors will need to answer is whether their embedded AI governance frameworks are as mature as what OpenAI is shipping in Presence.
+For enterprises evaluating agentic AI vendors in the next 12 months, Presence sets a new baseline for what "production-ready" looks like. Any vendor that cannot explain their equivalent of a six-stage governed deployment process, a simulation layer, and a Codex-like improvement loop should be asked why not.
+What to Do Now
+If you are a CIO or CTO: Presence is worth a structured evaluation if you have a high-volume customer or employee-facing workflow that currently relies on human labor for resolution. The governance architecture is production-grade. The FDE model reduces internal implementation risk. The cost model is opaque and requires direct negotiation.
+If you are a CFO or COO: Do not evaluate Presence as a software purchase. Evaluate it as an operations transformation project with a services component. Build the ROI model on current contact-center economics, not on software license comparisons. Require a pilot with defined success metrics before any volume commitment.
+If you are in a regulated industry (financial services, insurance, healthcare): BBVA, SoftBank, and IAG are your reference cohort. The regulated-environment deployment questions — data residency, model audit trails, regulatory reporting — are questions OpenAI is going to face repeatedly with these customers. Ask OpenAI directly how they are addressing each before you proceed.
+For everyone: Presence is limited general availability. Access requires engagement with OpenAI's FDEs or select global systems integrators. If you want to evaluate it, the process starts with a direct enterprise conversation — not a free trial.
+The headline fact is that OpenAI resolved 75% of its own inbound support calls with AI. The more important fact is how: six stages of governance, embedded engineers, simulation before production, and a continuous improvement loop that requires human approval for every change.
+That is not a technology story. That is an operations story. And for the first time, a major AI vendor has packaged it in a way that enterprise buyers can actually evaluate.
+What's your organization's current agentic AI governance framework look like? I'd like to hear how leaders are approaching this. Connect on LinkedIn or X/Twitter .
+Continue Reading
+OpenAI Presence: 75% Issue Resolution, No Humans Needed
+75% Resolution, No Humans: OpenAI Just Became a Consulting Firm
+Your AI Agents Are Running. Is Anyone in Charge?
+OpenAI vs Microsoft vs Anthropic: Enterprise AI Showdown
+71% of Your 'AI Agents' Are Just Chatbots in Disguise
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":12516,"paragraph_count":55,"sentence_count":123,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   OpenAI Won't Sell You AI Agents — They're Sending Engineers | THE D*AI*LY BRIEF # OpenAI Won't Sell You AI Agents — They're Sending Engineers OpenAI Presence deploys AI agents into your enterprise with embedded engineers attached. Here's what the 75% resolution rate really costs. By Rajesh Beri·J... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=industry_landing
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   You were expecting software.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   OpenAI is sending engineers instead.
+
+4. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   On July 22, OpenAI launched Presence — a new enterprise product that deploys AI agents into your customer support, sales, and operations workflows.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   It is not a platform you buy and configure yourself.
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   It is a high-touch deployment service where OpenAI's own Forward Deployed Engineers sit inside your organization, learn your processes, and build agents that actually work in production.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Microsoft, Salesforce, ServiceNow
+- products: Agents, agents, agent, Codex, Claude
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 采购负责人, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 采购, 销售 / 客服
+- numbers: 75%, 22, 1, 888, 0090, 15, 100%, $8
+- quotes: production-ready
+
+## evidence_seed
+
+- company_actions: You were expecting software. / OpenAI is sending engineers instead. / It is not a platform you buy and configure yourself.
+- case_details: On July 22, OpenAI launched Presence — a new enterprise product that deploys AI agents into your customer support, sales, and operations workflows. / It is a high-touch deployment service where OpenAI's own Forward Deployed Engineers sit inside your organization, learn your processes, and build agents that actually work in production.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+OpenAI Won't Sell You AI Agents — They're Sending Engineers | THE D*AI*LY BRIEF # OpenAI Won't Sell You AI Agents — They're Sending Engineers OpenAI Presence deploys AI agents into your enterprise with embedded engineers attached. Here's what the 75% resolution rate really costs. By Rajesh Beri·J... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

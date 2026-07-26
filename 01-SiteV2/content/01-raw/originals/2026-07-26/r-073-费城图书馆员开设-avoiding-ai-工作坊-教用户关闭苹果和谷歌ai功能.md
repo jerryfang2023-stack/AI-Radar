@@ -1,0 +1,307 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-073
+title: "费城图书馆员开设\"Avoiding AI\"工作坊，教用户关闭苹果和谷歌AI功能"
+title_zh: "费城图书馆员开设\"Avoiding AI\"工作坊，教用户关闭苹果和谷歌AI功能"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech"
+canonical_url: "https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech"
+source_name: "TechCrunch：AI（RSS）"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-25T00:00:00.000Z"
+collected_at: 2026-07-26T01:20:43.107Z
+language: mixed
+full_text_hash: a08af9a879d9e2a0
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-073-费城图书馆员开设-avoiding-ai-工作坊-教用户关闭苹果和谷歌ai功能.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-073-费城图书馆员开设-avoiding-ai-工作坊-教用户关闭苹果和谷歌ai功能.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6945,"paragraph_count":36,"sentence_count":46,"boilerplate_hits":0,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 6945
+fetch_error: ""
+evidence_strength: source_backed_event
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a08af9a879d9e2a0","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"费城图书馆员开设\"Avoiding AI\"工作坊，教用户关闭苹果和谷歌AI功能","discovery_summary":"费城图书馆员Charlie Bailey受缅因州同行启发，开设\"Avoiding AI\"工作坊，教授用户如何关闭Apple Intelligence和Gemini等AI功能。首场工作坊注册人数达30人并开设候补名单，线上直播吸引约70人参加。该工作坊旨在提升数字素养，帮助用户在被AI工具包围的环境中重获自主选择权。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech","discovered_at":"2026-07-26T01:10:50.368Z","rank_on_page":80,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: f2fa2f0eee8dc12f
+content_hash: a08af9a879d9e2a0
+semantic_hash: bc2a078e8387c699
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-25T00:00:00.000Z"
+last_seen_at: 2026-07-26T01:20:43.107Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["TechCrunch","AI（RSS）","Google","Apple"],"products":["Gemini","agents"],"people":[],"industries":["医疗"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究"],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["30人","70人","9","00","25","2026","20","30"],"quotes":["Avoiding AI","Avoiding AI","Everybody’s on their phone at my program!","It’s important, especially when it can be so difficult not to use them, and when the design seems to force adoption.","Avoiding AI"]}
+evidence_seed: {"company_actions":["Image Credits: tommy / Getty Images AI Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech Amanda Silberling 9:00 AM PDT · July 25, 2026 “Everybody’s on their phone at my program!","” jokes Charlie Bailey, a librarian in South Philadelphia.","He’s just asked his audience to pull out their phones so that he can walk them through the steps of disabling Apple Intelligence and Gemini."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"费城图书馆员Charlie Bailey受缅因州同行启发，开设\"Avoiding AI\"工作坊，教授用户如何关闭Apple Intelligence和Gemini等AI功能。首场工作坊注册人数达30人并开设候补名单，线上直播吸引约70人参加。该工作坊旨在提升数字素养，帮助用户在被AI工具包围的环境中重获自主选择权。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: tommy / Getty Images AI Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech Amanda Silberling 9:00 AM PDT · July 25, 2026 “Everybody’s on their phone at my program!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"” jokes Charlie Bailey, a librarian in South Philadelphia.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"He’s just asked his audience to pull out their phones so that he can walk them through the steps of disabling Apple Intelligence and Gemini.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bailey stands at the front of a library classroom that’s outfitted for children – the focal point is the vibrant rug he’s standing on, which reminds us that M is for “moon” and Z is for “zebra.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"” But the 20-odd adults in the room aren’t here to learn about the alphabet.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-26T01:20:43.107Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# 费城图书馆员开设"Avoiding AI"工作坊，教用户关闭苹果和谷歌AI功能
+
+## clean_text
+
+Image Credits: tommy / Getty Images
+AI
+Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech
+Amanda Silberling
+9:00 AM PDT · July 25, 2026
+“Everybody’s on their phone at my program!” jokes Charlie Bailey, a librarian in South Philadelphia. He’s just asked his audience to pull out their phones so that he can walk them through the steps of disabling Apple Intelligence and Gemini.
+Bailey stands at the front of a library classroom that’s outfitted for children – the focal point is the vibrant rug he’s standing on, which reminds us that M is for “moon” and Z is for “zebra.” But the 20-odd adults in the room aren’t here to learn about the alphabet. They’re at a workshop called Avoiding AI, which, in this context does not stand for “apple” and “igloo.”
+“I was inspired by the feeling of people’s frustration with AI tools being kind of forced onto them, and feeling like AI tools we didn’t ask for are suddenly everywhere in our lives,” Bailey told TechCrunch.
+Bailey starts the hour-long workshop with an overview of how AI chatbots and other consumer AI tools work, explaining why people might want to use these products, and why they might opt to abstain. Then, he walks through all of the most popular tech platforms and devices, showing step-by-step instructions on the projector to guide people through turning off specific features.
+“As a librarian, I think it’s important to see this as advancing digital literacy and helping people reclaim their autonomy over whether they want to use AI tools,” Bailey said. “It’s important, especially when it can be so difficult not to use them, and when the design seems to force adoption.”
+Charlie Bailey hosts an “Avoiding AI” workshop Image Credits: TechCrunch
+Bailey got the idea for the Avoiding AI workshop from Hannah Cyrus, a librarian in Maine. He was one of dozens of librarians from around the world who contacted Cyrus after she published a journal article about developing her own workshop.
+“This has never happened before with anything I’ve worked on,” Cyrus told TechCrunch. “Nobody has ever been emailing me like, ‘Can you give me your Intro to Computers slides?’”
+At the Bangor Public Library, patrons turn to Cyrus when they need help with anything involving technology.
+“More and more, I was getting questions about, ‘How do I turn this [AI] stuff off? Why is it trying to write my emails for me? Why is it trying to summarize my one-sentence email that I can easily read?’” Cyrus said. “I just decided that with so much media hype out there about AI products, it would be a good opportunity to teach people about the basics of what is happening when you’re using this technology, and then getting into how to turn it off if you don’t want to use it.”
+Usually, Cyrus’ classes like Intro to Computers get about a dozen attendees. But so many people expressed interest in her first Avoiding AI workshop that she had to cut off registration at 30 people, open a waitlist, and share the workshop on Zoom. Including the livestream, about 70 people attended each of Cyrus’ first two workshops.
+When Bailey followed Cyrus’ lead to host a workshop in Philadelphia, the reception was similarly unprecedented. The library’s Instagram post about the “Avoiding AI” event got over 2,000 likes and 220 shares, whereas most of the library’s posts don’t get more than a few dozen likes. He scheduled a second program because the first got too many registrations.
+View this post on Instagram
+“As an information professional, it feels good to see people skeptical of AI,” Bailey said. “It felt really good to see how many people share this feeling.”
+There’s a sense of camaraderie among the room of strangers during the workshop. When Bailey invites attendees to share their own tips, one person explains that when you append “&udm=14” to a Google Search, it will hide AI results. Bailey writes the string of characters down on a whiteboard next to the log-in credentials for the teen Wi-Fi server.
+“You have to go through all the trouble to buy a home in today’s world, and two years from now, there could be a data center next to your house,” one workshop attendee named Johnny says.
+“I keep getting AI shoved down my throat at work, and every time I see it, I think about the environment,” another attendee named Gabrielle adds. But she’s also not writing off AI as a technology altogether. “I’m not against AI in terms of medical breakthroughs.”
+AI naysayers know that this technology is far broader than just chatbots and deepfake apps. Cyrus mentioned how useful optical character recognition is for scanning old documents at the library. But for her and the people who go to her workshops, the anti-AI movement isn’t about rejecting technology altogether so much as it is about advocating for more control, agency, and freedom in how people use technology.
+“I think the forced adoption of AI on people’s devices might be the straw that’s breaking the camel’s back in some ways,” she said. “The awareness has been growing for a long time that these products and these companies that make them have an outsized influence over us, and that we’re not really using these products in the way that we would like to.”
+Topics
+AI , TC
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Amanda Silberling
+Senior Writer
+Amanda Silberling is a senior writer at TechCrunch covering the intersection of technology and culture. She has also written for publications like Polygon, MTV, the Kenyon Review, NPR, and Business Insider. She is the co-host of Wow If True, a podcast about internet culture, with science fiction author Isabel J. Kim. Prior to joining TechCrunch, she worked as a grassroots organizer, museum educator, and film festival coordinator. She holds a B.A. in English from the University of Pennsylvania and served as a Princeton in Asia Fellow in Laos.
+You can contact or verify outreach from Amanda by emailing amanda@techcrunch.com or via encrypted message at @amanda.100 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+SpaceX launches new V3 Starlink satellites but suffers another booster failure
+Sean O'Kane
+US accuses American of allegedly wiping his phone using a ‘duress’ password during border search
+Zack Whittaker
+Anduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark
+Ram Iyer
+Tesla’s robotaxis are moving in reverse
+Sean O'Kane
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: tommy / Getty Images
+AI
+Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech
+Amanda Silberling
+9:00 AM PDT · July 25, 2026
+“Everybody’s on their phone at my program!” jokes Charlie Bailey, a librarian in South Philadelphia. He’s just asked his audience to pull out their phones so that he can walk them through the steps of disabling Apple Intelligence and Gemini.
+Bailey stands at the front of a library classroom that’s outfitted for children – the focal point is the vibrant rug he’s standing on, which reminds us that M is for “moon” and Z is for “zebra.” But the 20-odd adults in the room aren’t here to learn about the alphabet. They’re at a workshop called Avoiding AI, which, in this context does not stand for “apple” and “igloo.”
+“I was inspired by the feeling of people’s frustration with AI tools being kind of forced onto them, and feeling like AI tools we didn’t ask for are suddenly everywhere in our lives,” Bailey told TechCrunch.
+Bailey starts the hour-long workshop with an overview of how AI chatbots and other consumer AI tools work, explaining why people might want to use these products, and why they might opt to abstain. Then, he walks through all of the most popular tech platforms and devices, showing step-by-step instructions on the projector to guide people through turning off specific features.
+“As a librarian, I think it’s important to see this as advancing digital literacy and helping people reclaim their autonomy over whether they want to use AI tools,” Bailey said. “It’s important, especially when it can be so difficult not to use them, and when the design seems to force adoption.”
+Charlie Bailey hosts an “Avoiding AI” workshop Image Credits: TechCrunch
+Bailey got the idea for the Avoiding AI workshop from Hannah Cyrus, a librarian in Maine. He was one of dozens of librarians from around the world who contacted Cyrus after she published a journal article about developing her own workshop.
+“This has never happened before with anything I’ve worked on,” Cyrus told TechCrunch. “Nobody has ever been emailing me like, ‘Can you give me your Intro to Computers slides?’”
+At the Bangor Public Library, patrons turn to Cyrus when they need help with anything involving technology.
+“More and more, I was getting questions about, ‘How do I turn this [AI] stuff off? Why is it trying to write my emails for me? Why is it trying to summarize my one-sentence email that I can easily read?’” Cyrus said. “I just decided that with so much media hype out there about AI products, it would be a good opportunity to teach people about the basics of what is happening when you’re using this technology, and then getting into how to turn it off if you don’t want to use it.”
+Usually, Cyrus’ classes like Intro to Computers get about a dozen attendees. But so many people expressed interest in her first Avoiding AI workshop that she had to cut off registration at 30 people, open a waitlist, and share the workshop on Zoom. Including the livestream, about 70 people attended each of Cyrus’ first two workshops.
+When Bailey followed Cyrus’ lead to host a workshop in Philadelphia, the reception was similarly unprecedented. The library’s Instagram post about the “Avoiding AI” event got over 2,000 likes and 220 shares, whereas most of the library’s posts don’t get more than a few dozen likes. He scheduled a second program because the first got too many registrations.
+View this post on Instagram
+“As an information professional, it feels good to see people skeptical of AI,” Bailey said. “It felt really good to see how many people share this feeling.”
+There’s a sense of camaraderie among the room of strangers during the workshop. When Bailey invites attendees to share their own tips, one person explains that when you append “&udm=14” to a Google Search, it will hide AI results. Bailey writes the string of characters down on a whiteboard next to the log-in credentials for the teen Wi-Fi server.
+“You have to go through all the trouble to buy a home in today’s world, and two years from now, there could be a data center next to your house,” one workshop attendee named Johnny says.
+“I keep getting AI shoved down my throat at work, and every time I see it, I think about the environment,” another attendee named Gabrielle adds. But she’s also not writing off AI as a technology altogether. “I’m not against AI in terms of medical breakthroughs.”
+AI naysayers know that this technology is far broader than just chatbots and deepfake apps. Cyrus mentioned how useful optical character recognition is for scanning old documents at the library. But for her and the people who go to her workshops, the anti-AI movement isn’t about rejecting technology altogether so much as it is about advocating for more control, agency, and freedom in how people use technology.
+“I think the forced adoption of AI on people’s devices might be the straw that’s breaking the camel’s back in some ways,” she said. “The awareness has been growing for a long time that these products and these companies that make them have an outsized influence over us, and that we’re not really using these products in the way that we would like to.”
+Topics
+AI , TC
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Amanda Silberling
+Senior Writer
+Amanda Silberling is a senior writer at TechCrunch covering the intersection of technology and culture. She has also written for publications like Polygon, MTV, the Kenyon Review, NPR, and Business Insider. She is the co-host of Wow If True, a podcast about internet culture, with science fiction author Isabel J. Kim. Prior to joining TechCrunch, she worked as a grassroots organizer, museum educator, and film festival coordinator. She holds a B.A. in English from the University of Pennsylvania and served as a Princeton in Asia Fellow in Laos.
+You can contact or verify outreach from Amanda by emailing amanda@techcrunch.com or via encrypted message at @amanda.100 on Signal.
+View Bio
+October 13 – 15
+San Francisco
+Scale faster. Grow your portfolio. Gain practical expertise. No matter your goal, Disrupt can empower you.
+Save up to $330 toda y!
+REGISTER NOW
+Most Popular
+SpaceX launches new V3 Starlink satellites but suffers another booster failure
+Sean O'Kane
+US accuses American of allegedly wiping his phone using a ‘duress’ password during border search
+Zack Whittaker
+Anduril reportedly in talks to raise funding at $100B valuation, more than 3x last year’s mark
+Ram Iyer
+Tesla’s robotaxis are moving in reverse
+Sean O'Kane
+Jack Dorsey is taking on Slack with Buzz, a group chat platform for teams and their AI agents
+Amanda Silberling
+Light made a flip phone — it’s colorful and it’s cheap
+Amanda Silberling
+AI music generator Suno breach affects 55M users, per Have I Been Pwned
+Zack Whittaker
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6945,"paragraph_count":36,"sentence_count":46,"boilerplate_hits":0,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   费城图书馆员Charlie Bailey受缅因州同行启发，开设"Avoiding AI"工作坊，教授用户如何关闭Apple Intelligence和Gemini等AI功能。首场工作坊注册人数达30人并开设候补名单，线上直播吸引约70人参加。该工作坊旨在提升数字素养，帮助用户在被AI工具包围的环境中重获自主选择权。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Image Credits: tommy / Getty Images AI Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech Amanda Silberling 9:00 AM PDT · July 25, 2026 “Everybody’s on their phone at my program!
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   ” jokes Charlie Bailey, a librarian in South Philadelphia.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   He’s just asked his audience to pull out their phones so that he can walk them through the steps of disabling Apple Intelligence and Gemini.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Bailey stands at the front of a library classroom that’s outfitted for children – the focal point is the vibrant rug he’s standing on, which reminds us that M is for “moon” and Z is for “zebra.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   ” But the 20-odd adults in the room aren’t here to learn about the alphabet.
+
+## business_elements
+
+- companies: TechCrunch, AI（RSS）, Google, Apple
+- products: Gemini, agents
+- people: 暂无公开信息
+- industries: 医疗
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 30人, 70人, 9, 00, 25, 2026, 20, 30
+- quotes: Avoiding AI / Avoiding AI / Everybody’s on their phone at my program! / It’s important, especially when it can be so difficult not to use them, and when the design seems to force adoption. / Avoiding AI
+
+## evidence_seed
+
+- company_actions: Image Credits: tommy / Getty Images AI Librarians are hosting viral ‘Avoiding AI’ workshops for people who are fed up with Big Tech Amanda Silberling 9:00 AM PDT · July 25, 2026 “Everybody’s on their phone at my program! / ” jokes Charlie Bailey, a librarian in South Philadelphia. / He’s just asked his audience to pull out their phones so that he can walk them through the steps of disabling Apple Intelligence and Gemini.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"费城图书馆员开设\"Avoiding AI\"工作坊，教用户关闭苹果和谷歌AI功能","discovery_summary":"费城图书馆员Charlie Bailey受缅因州同行启发，开设\"Avoiding AI\"工作坊，教授用户如何关闭Apple Intelligence和Gemini等AI功能。首场工作坊注册人数达30人并开设候补名单，线上直播吸引约70人参加。该工作坊旨在提升数字素养，帮助用户在被AI工具包围的环境中重获自主选择权。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech","discovered_at":"2026-07-26T01:10:50.368Z","rank_on_page":80,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+费城图书馆员Charlie Bailey受缅因州同行启发，开设"Avoiding AI"工作坊，教授用户如何关闭Apple Intelligence和Gemini等AI功能。首场工作坊注册人数达30人并开设候补名单，线上直播吸引约70人参加。该工作坊旨在提升数字素养，帮助用户在被AI工具包围的环境中重获自主选择权。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
