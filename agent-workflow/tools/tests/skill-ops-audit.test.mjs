@@ -25,6 +25,15 @@ const dailySupervision = path.join(root, "agent-workflow", "tools", "write-daily
 const selfCheckPolicy = path.join(root, "agent-workflow", "tools", "lib", "daily-self-check-policy.mjs");
 const skillStorePaths = path.join(root, "agent-workflow", "tools", "lib", "skill-store-paths.mjs");
 const communityWorkflow = path.join(root, ".github", "workflows", "daily-community-intelligence-pr.yml");
+const pagesWorkflow = path.join(root, ".github", "workflows", "github-pages.yml");
+
+test("GitHub Pages materializes repo runtime Skills before validating governance", () => {
+  const workflow = fs.readFileSync(pagesWorkflow, "utf8");
+  const syncIndex = workflow.indexOf("node agent-workflow/tools/sync-repo-skills.mjs");
+  const validateIndex = workflow.indexOf("node agent-workflow/tools/validate-guanlan-skills.mjs");
+  assert.ok(syncIndex >= 0, "GitHub Pages must materialize ignored repo runtime Skills");
+  assert.ok(validateIndex > syncIndex, "Skill validation must run after repo runtime materialization");
+});
 
 test("Skill discovery audit honors disabled paths and rejects enabled duplicates or invalid manifests", () => {
   const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-skill-discovery-"));
