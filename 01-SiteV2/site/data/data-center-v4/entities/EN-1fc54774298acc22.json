@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "latestDataDate": "2026-07-26",
+    "currentDate": "2026-07-26",
+    "eventCount": 1570,
+    "quarantinedEventCount": 17
+  },
+  "entity": {
+    "id": "EN-1fc54774298acc22",
+    "name": "英国AISI",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0d5a32aca724d30e"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-technology-open_weights",
+      "TX-technology-guardrails_safety"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-26",
+    "lastSeen": "2026-07-26",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-0d5a32aca724d30e",
+        "dataDate": "2026-07-26",
+        "date": "2026-07-26",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "近200家硅谷公司致函白宫，呼吁不要禁止美国企业调用Kimi K3/Qwen 3.8等中国开源AI模型",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "open_weights",
+            "name": "开放权重"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "guardrails_safety",
+            "name": "安全护栏"
+          }
+        ],
+        "entityIds": [
+          "EN-1fc54774298acc22",
+          "EN-b5251b35f15bedc4"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-open_weights",
+      "name": "开放权重",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "open_weights",
+      "eventIds": [
+        "EV-1abf0d076d30ec6d",
+        "EV-0d5a32aca724d30e",
+        "EV-0f0b2013927ce156",
+        "EV-702276a31f123374",
+        "EV-fe519605ebb69aaf",
+        "EV-2fea1664807824ce",
+        "EV-b84035029a63e52e",
+        "EV-3028dfadf94c8f4c",
+        "EV-a06011da69abcc3d",
+        "EV-e2da1aafabb3e09c",
+        "EV-2258329f33d413cf",
+        "EV-86537be17d50ff20"
+      ],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-1fc54774298acc22",
+        "EN-b5251b35f15bedc4",
+        "EN-cc70f504af53013a",
+        "EN-8d4321d936320802",
+        "EN-9fbf261b62c1d7c0",
+        "EN-ea3bd73e2b506e00",
+        "EN-d9352ce019e77ab3",
+        "EN-bc1fc5140040180e",
+        "EN-0d1e478de2157d48",
+        "EN-6f7ac1823da81d2e",
+        "EN-d41ebd9f02722fc8",
+        "EN-b0532e1af75cc4ab",
+        "EN-96eebba49dbbf422",
+        "EN-10556ee2cee94c72",
+        "EN-f8c237773fe24a98",
+        "EN-2b5e92d1908d42f6",
+        "EN-3ae50afab3e392b8",
+        "EN-b3e3bce83d29e787",
+        "EN-8950d72f381130ac",
+        "EN-f7a386a451b79627",
+        "EN-12ab68e37d104d27",
+        "EN-8395dc051feafc4c",
+        "EN-7f871cbf905f6e0c",
+        "EN-c608c4787821de1b",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-05-23",
+      "lastSeen": "2026-07-26"
+    },
+    {
+      "id": "TX-technology-guardrails_safety",
+      "name": "安全护栏",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "guardrails_safety",
+      "eventIds": [
+        "EV-729a0261934b73d9",
+        "EV-d1e2a7c6d314612c",
+        "EV-b240fb11e65b018e",
+        "EV-fe63a869fe4cee45",
+        "EV-0d5a32aca724d30e",
+        "EV-5ec22cf9a1fb59d4",
+        "EV-3b7b9040dd2c2a89",
+        "EV-cf176636839e45be",
+        "EV-9c0552732b34f278",
+        "EV-3ff2a155035d01e7",
+        "EV-66338f5fb682617e",
+        "EV-917966af8545a380"
+      ],
+      "entityIds": [
+        "EN-ddadc7e89f7cd629",
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-fe596100f029516c",
+        "EN-1fc54774298acc22",
+        "EN-b5251b35f15bedc4",
+        "EN-efa98ef1e586ac73",
+        "EN-7839fb10a8f14c70",
+        "EN-ae31f30d39374a8b",
+        "EN-ea3bd73e2b506e00",
+        "EN-c857d09db23e6822",
+        "EN-9f15bb7e29e191eb",
+        "EN-8d4321d936320802",
+        "EN-4e7e886400fe6a83"
+      ],
+      "fdeIds": [
+        "FDE-0ee0fe3baa3f1364",
+        "FDE-8cc818b0e819b217"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-26"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

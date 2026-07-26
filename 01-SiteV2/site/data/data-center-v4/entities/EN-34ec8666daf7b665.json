@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T07:23:22.462Z",
-    "latestDataDate": "2026-07-25",
-    "currentDate": "2026-07-25",
-    "eventCount": 1533,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "latestDataDate": "2026-07-26",
+    "currentDate": "2026-07-26",
+    "eventCount": 1570,
+    "quarantinedEventCount": 17
   },
   "entity": {
     "id": "EN-34ec8666daf7b665",
@@ -85,6 +85,7 @@
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
+        "EV-3fb827f44ea109de",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
         "EV-e41fc65eb014893f",
@@ -124,6 +125,7 @@
         "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
+        "EV-2a71353a862e56b3",
         "EV-4515377aa6311bf1",
         "EV-ef6464cf7f764835",
         "EV-bb9ba11acf104db1",
@@ -134,12 +136,12 @@
         "EV-bad301e14b034fbd",
         "EV-45ee75a45f2ca5ee",
         "EV-8e01849c05b50355",
+        "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
         "EV-0e616f9e775a77dc",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
-        "EV-0d5a32aca724d30e",
         "EV-32fb6014149bafdd",
         "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
@@ -164,6 +166,7 @@
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
         "EV-c2800c1c5a3f568f",
+        "EV-d9da7dea91725a1c",
         "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
@@ -325,14 +328,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -340,16 +345,14 @@
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-industry-government_public_sector",
-        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
+        "TX-industry-government_public_sector",
         "TX-technology-tool_use",
-        "TX-technology-distillation",
         "TX-technology-human_in_loop",
+        "TX-technology-distillation",
         "TX-industry-education"
       ],
       "relatedEntityIds": [
@@ -379,7 +382,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-26"
     }
   ],
   "relationships": [

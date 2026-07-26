@@ -1,0 +1,282 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-031",
+  "title": "Copilot code review: Customization and configurability improvements - GitHub Changelog",
+  "title_zh": "GitHub 更新日志：Copilot 代码审查的自定义与可配置性改进",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/",
+  "canonical_url": "https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-17T21:08:30.000Z",
+  "collected_at": "2026-07-26T01:20:16.907Z",
+  "language": "mixed",
+  "full_text": "Back to changelog\nCopilot code review now utilizes a firewall, custom setup steps, and independent runner configurations. It now reads custom instructions from the head branch to allow for easy testing and validation of custom instructions. These changes give administrators and developers more control over how Copilot code review runs in their environment.\nExpanding custom instructions, now easier to validate\n📝 Custom instructions now read from the head branch\nCustom instructions are now read from the head branch of the pull request instead of the base branch. This includes copilot-instructions.md , *.instructions.md , agent skills, and AGENTS.md . This means you can iterate on and test custom instructions in a feature branch without needing to merge them first.\n📄 Expanded custom instructions file support\nCopilot code review now reads REVIEW.md , GEMINI.md , and CLAUDE.md files from your repository, so your customizations are understood regardless of where they live. If your team already maintains review guidelines or model-specific instructions in these files, Copilot code review will automatically pick them up and incorporate them into its review process.\n🔧 Custom setup steps\nYou can now configure the environment available to Copilot code review during runtime using a copilot-code-review.yml file in your .github/workflows/ directory. This lets you install dependencies, configure runners on the repository level independently of Copilot cloud agent, set up tooling, or run any preparation steps that Copilot code review needs to produce the reviews you desire for your repository.\nAdd a copilot-code-review.yml file to your repository to define setup steps specific to Copilot code review.\nIf no copilot-code-review.yml file exists, Copilot code review will fall back to your existing copilot-setup-steps.yml file if one is present.\nTo learn more about how to set up a copilot-code-review.yml file, see our documentation on setting the Copilot code review environment .\n🛡️ Firewall support\nCopilot code review now runs behind a firewall by default, restricting network access during a review. The firewall is configurable separately from Copilot cloud agent in repository and organization settings, giving you independent control over each agent&rsquo;s network access.\nThe firewall is enabled by default for all repositories.\nTo configure this setting in your repository, navigate to your repository settings, then go to Copilot &rarr; Internet access .\n⚠️ Self-hosted runners do not currently support the firewall. If you have self-hosted runners configured for Copilot code review, your reviews will continue to run as usual without the firewall.\n⚙️ Organization runner configuration updates for Copilot code review\nCopilot code review and Copilot cloud agent previously shared a single runner configuration at the organization level. That configuration is now split into two separate sections on the Runner type settings page in your organization settings, allowing you to independently choose different runner types for each agent.\nTo update your configuration, navigate to your organization settings, then go to Copilot &rarr; Runner type .\nRelated Posts\nJul.24 Release\nClaude Opus 5 is now available in GitHub Copilot\ncopilot\nJul.23 Release\nCopilot cloud agent for Linear is now generally available\ncopilot\nJul.23 Release\nGitHub MCP Server supports the next MCP specification\ncopilot\nJul.23 Release\nAgent automation controls in GitHub Issues in public preview\ncollaboration tools\ncopilot\nprojects & issues\n...\n+2\nJul.22 Release\nNew Copilot usage metrics impact dashboard\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.21 Release\nGemini 3.6 Flash is now available in GitHub Copilot\ncopilot\nJul.20 Improvement\nAI credit pools for cost centers in the billing UI\ncopilot\nenterprise management tools\n...\n+1\nJul.20 Improvement\nCopilot users can now see AI credits used per billing cycle\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.17 Release\nRepository-level GitHub Copilot usage metrics generally available\naccount management\ncopilot\nenterprise management tools\n...\n+2\nSubscribe to our developer newsletter\nDiscover tips, technical guides, and best practices in our biweekly newsletter just for devs.\nBack to top",
+  "clean_text": "Back to changelog\nCopilot code review now utilizes a firewall, custom setup steps, and independent runner configurations. It now reads custom instructions from the head branch to allow for easy testing and validation of custom instructions. These changes give administrators and developers more control over how Copilot code review runs in their environment.\nExpanding custom instructions, now easier to validate\n📝 Custom instructions now read from the head branch\nCustom instructions are now read from the head branch of the pull request instead of the base branch. This includes copilot-instructions.md , *.instructions.md , agent skills, and AGENTS.md . This means you can iterate on and test custom instructions in a feature branch without needing to merge them first.\n📄 Expanded custom instructions file support\nCopilot code review now reads REVIEW.md , GEMINI.md , and CLAUDE.md files from your repository, so your customizations are understood regardless of where they live. If your team already maintains review guidelines or model-specific instructions in these files, Copilot code review will automatically pick them up and incorporate them into its review process.\n🔧 Custom setup steps\nYou can now configure the environment available to Copilot code review during runtime using a copilot-code-review.yml file in your .github/workflows/ directory. This lets you install dependencies, configure runners on the repository level independently of Copilot cloud agent, set up tooling, or run any preparation steps that Copilot code review needs to produce the reviews you desire for your repository.\nAdd a copilot-code-review.yml file to your repository to define setup steps specific to Copilot code review.\nIf no copilot-code-review.yml file exists, Copilot code review will fall back to your existing copilot-setup-steps.yml file if one is present.\nTo learn more about how to set up a copilot-code-review.yml file, see our documentation on setting the Copilot code review environment .\n🛡️ Firewall support\nCopilot code review now runs behind a firewall by default, restricting network access during a review. The firewall is configurable separately from Copilot cloud agent in repository and organization settings, giving you independent control over each agent&rsquo;s network access.\nThe firewall is enabled by default for all repositories.\nTo configure this setting in your repository, navigate to your repository settings, then go to Copilot &rarr; Internet access .\n⚠️ Self-hosted runners do not currently support the firewall. If you have self-hosted runners configured for Copilot code review, your reviews will continue to run as usual without the firewall.\n⚙️ Organization runner configuration updates for Copilot code review\nCopilot code review and Copilot cloud agent previously shared a single runner configuration at the organization level. That configuration is now split into two separate sections on the Runner type settings page in your organization settings, allowing you to independently choose different runner types for each agent.\nTo update your configuration, navigate to your organization settings, then go to Copilot &rarr; Runner type .\nRelated Posts\nJul.24 Release\nClaude Opus 5 is now available in GitHub Copilot\ncopilot\nJul.23 Release\nCopilot cloud agent for Linear is now generally available\ncopilot\nJul.23 Release\nGitHub MCP Server supports the next MCP specification\ncopilot\nJul.23 Release\nAgent automation controls in GitHub Issues in public preview\ncollaboration tools\ncopilot\nprojects & issues\n...\n+2\nJul.22 Release\nNew Copilot usage metrics impact dashboard\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.21 Release\nGemini 3.6 Flash is now available in GitHub Copilot\ncopilot\nJul.20 Improvement\nAI credit pools for cost centers in the billing UI\ncopilot\nenterprise management tools\n...\n+1\nJul.20 Improvement\nCopilot users can now see AI credits used per billing cycle\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.17 Release\nRepository-level GitHub Copilot usage metrics generally available\naccount management\ncopilot\nenterprise management tools\n...\n+2\nSubscribe to our developer newsletter\nDiscover tips, technical guides, and best practices in our biweekly newsletter just for devs.\nBack to top",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-26/r-031-copilot-code-review-customization-and-configurability-improvements-git.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-26/r-031-copilot-code-review-customization-and-configurability-improvements-git.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 4283,
+    "paragraph_count": 34,
+    "sentence_count": 28,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 4283,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "3a549681e323fa0c",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "9466b1428775514b",
+  "content_hash": "3a549681e323fa0c",
+  "full_text_hash": "3a549681e323fa0c",
+  "semantic_hash": "5f3ecbdbd76f52df",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-17T21:08:30.000Z",
+  "last_seen_at": "2026-07-26T01:20:16.907Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Copilot code review: Customization and configurability improvements - GitHub Changelog Back to changelog Copilot code review now utilizes a firewall, custom setup steps, and independent runner configurations. It now reads custom instructions from the head branch to allow for easy testing and valid..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Back to changelog Copilot code review now utilizes a firewall, custom setup steps, and independent runner configurations.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It now reads custom instructions from the head branch to allow for easy testing and validation of custom instructions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "These changes give administrators and developers more control over how Copilot code review runs in their environment.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Expanding custom instructions, now easier to validate 📝 Custom instructions now read from the head branch Custom instructions are now read from the head branch of the pull request instead of the base branch.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "This includes copilot-instructions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-26T01:20:16.907Z",
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [
+      "Copilot",
+      "agent",
+      "copilot",
+      "AGENTS",
+      "GEMINI",
+      "CLAUDE",
+      "Claude",
+      "MCP",
+      "Agent",
+      "Gemini"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "24",
+      "5",
+      "23",
+      "2",
+      "22",
+      "21",
+      "3.6",
+      "20"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "It now reads custom instructions from the head branch to allow for easy testing and validation of custom instructions.",
+      "Expanding custom instructions, now easier to validate 📝 Custom instructions now read from the head branch Custom instructions are now read from the head branch of the pull request instead of the base branch."
+    ],
+    "case_details": [
+      "Copilot code review: Customization and configurability improvements - GitHub Changelog Back to changelog Copilot code review now utilizes a firewall, custom setup steps, and independent runner configurations. It now reads custom instructions from the head branch to allow for easy testing and valid..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original",
+      "Back to changelog Copilot code review now utilizes a firewall, custom setup steps, and independent runner configurations.",
+      "These changes give administrators and developers more control over how Copilot code review runs in their environment."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Copilot code review: Customization and configurability improvements - GitHub Changelog\n\n- raw_id: R-031\n- title_zh: GitHub 更新日志：Copilot 代码审查的自定义与可配置性改进\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-26T01:20:16.907Z\n\n## clean_text\n\nBack to changelog\nCopilot code review now utilizes a firewall, custom setup steps, and independent runner configurations. It now reads custom instructions from the head branch to allow for easy testing and validation of custom instructions. These changes give administrators and developers more control over how Copilot code review runs in their environment.\nExpanding custom instructions, now easier to validate\n📝 Custom instructions now read from the head branch\nCustom instructions are now read from the head branch of the pull request instead of the base branch. This includes copilot-instructions.md , *.instructions.md , agent skills, and AGENTS.md . This means you can iterate on and test custom instructions in a feature branch without needing to merge them first.\n📄 Expanded custom instructions file support\nCopilot code review now reads REVIEW.md , GEMINI.md , and CLAUDE.md files from your repository, so your customizations are understood regardless of where they live. If your team already maintains review guidelines or model-specific instructions in these files, Copilot code review will automatically pick them up and incorporate them into its review process.\n🔧 Custom setup steps\nYou can now configure the environment available to Copilot code review during runtime using a copilot-code-review.yml file in your .github/workflows/ directory. This lets you install dependencies, configure runners on the repository level independently of Copilot cloud agent, set up tooling, or run any preparation steps that Copilot code review needs to produce the reviews you desire for your repository.\nAdd a copilot-code-review.yml file to your repository to define setup steps specific to Copilot code review.\nIf no copilot-code-review.yml file exists, Copilot code review will fall back to your existing copilot-setup-steps.yml file if one is present.\nTo learn more about how to set up a copilot-code-review.yml file, see our documentation on setting the Copilot code review environment .\n🛡️ Firewall support\nCopilot code review now runs behind a firewall by default, restricting network access during a review. The firewall is configurable separately from Copilot cloud agent in repository and organization settings, giving you independent control over each agent&rsquo;s network access.\nThe firewall is enabled by default for all repositories.\nTo configure this setting in your repository, navigate to your repository settings, then go to Copilot &rarr; Internet access .\n⚠️ Self-hosted runners do not currently support the firewall. If you have self-hosted runners configured for Copilot code review, your reviews will continue to run as usual without the firewall.\n⚙️ Organization runner configuration updates for Copilot code review\nCopilot code review and Copilot cloud agent previously shared a single runner configuration at the organization level. That configuration is now split into two separate sections on the Runner type settings page in your organization settings, allowing you to independently choose different runner types for each agent.\nTo update your configuration, navigate to your organization settings, then go to Copilot &rarr; Runner type .\nRelated Posts\nJul.24 Release\nClaude Opus 5 is now available in GitHub Copilot\ncopilot\nJul.23 Release\nCopilot cloud agent for Linear is now generally available\ncopilot\nJul.23 Release\nGitHub MCP Server supports the next MCP specification\ncopilot\nJul.23 Release\nAgent automation controls in GitHub Issues in public preview\ncollaboration tools\ncopilot\nprojects & issues\n...\n+2\nJul.22 Release\nNew Copilot usage metrics impact dashboard\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.21 Release\nGemini 3.6 Flash is now available in GitHub Copilot\ncopilot\nJul.20 Improvement\nAI credit pools for cost centers in the billing UI\ncopilot\nenterprise management tools\n...\n+1\nJul.20 Improvement\nCopilot users can now see AI credits used per billing cycle\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.17 Release\nRepository-level GitHub Copilot usage metrics generally available\naccount management\ncopilot\nenterprise management tools\n...\n+2\nSubscribe to our developer newsletter\nDiscover tips, technical guides, and best practices in our biweekly newsletter just for devs.\nBack to top\n\n## full_text\n\nBack to changelog\nCopilot code review now utilizes a firewall, custom setup steps, and independent runner configurations. It now reads custom instructions from the head branch to allow for easy testing and validation of custom instructions. These changes give administrators and developers more control over how Copilot code review runs in their environment.\nExpanding custom instructions, now easier to validate\n📝 Custom instructions now read from the head branch\nCustom instructions are now read from the head branch of the pull request instead of the base branch. This includes copilot-instructions.md , *.instructions.md , agent skills, and AGENTS.md . This means you can iterate on and test custom instructions in a feature branch without needing to merge them first.\n📄 Expanded custom instructions file support\nCopilot code review now reads REVIEW.md , GEMINI.md , and CLAUDE.md files from your repository, so your customizations are understood regardless of where they live. If your team already maintains review guidelines or model-specific instructions in these files, Copilot code review will automatically pick them up and incorporate them into its review process.\n🔧 Custom setup steps\nYou can now configure the environment available to Copilot code review during runtime using a copilot-code-review.yml file in your .github/workflows/ directory. This lets you install dependencies, configure runners on the repository level independently of Copilot cloud agent, set up tooling, or run any preparation steps that Copilot code review needs to produce the reviews you desire for your repository.\nAdd a copilot-code-review.yml file to your repository to define setup steps specific to Copilot code review.\nIf no copilot-code-review.yml file exists, Copilot code review will fall back to your existing copilot-setup-steps.yml file if one is present.\nTo learn more about how to set up a copilot-code-review.yml file, see our documentation on setting the Copilot code review environment .\n🛡️ Firewall support\nCopilot code review now runs behind a firewall by default, restricting network access during a review. The firewall is configurable separately from Copilot cloud agent in repository and organization settings, giving you independent control over each agent&rsquo;s network access.\nThe firewall is enabled by default for all repositories.\nTo configure this setting in your repository, navigate to your repository settings, then go to Copilot &rarr; Internet access .\n⚠️ Self-hosted runners do not currently support the firewall. If you have self-hosted runners configured for Copilot code review, your reviews will continue to run as usual without the firewall.\n⚙️ Organization runner configuration updates for Copilot code review\nCopilot code review and Copilot cloud agent previously shared a single runner configuration at the organization level. That configuration is now split into two separate sections on the Runner type settings page in your organization settings, allowing you to independently choose different runner types for each agent.\nTo update your configuration, navigate to your organization settings, then go to Copilot &rarr; Runner type .\nRelated Posts\nJul.24 Release\nClaude Opus 5 is now available in GitHub Copilot\ncopilot\nJul.23 Release\nCopilot cloud agent for Linear is now generally available\ncopilot\nJul.23 Release\nGitHub MCP Server supports the next MCP specification\ncopilot\nJul.23 Release\nAgent automation controls in GitHub Issues in public preview\ncollaboration tools\ncopilot\nprojects & issues\n...\n+2\nJul.22 Release\nNew Copilot usage metrics impact dashboard\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.21 Release\nGemini 3.6 Flash is now available in GitHub Copilot\ncopilot\nJul.20 Improvement\nAI credit pools for cost centers in the billing UI\ncopilot\nenterprise management tools\n...\n+1\nJul.20 Improvement\nCopilot users can now see AI credits used per billing cycle\naccount management\ncopilot\nenterprise management tools\n...\n+2\nJul.17 Release\nRepository-level GitHub Copilot usage metrics generally available\naccount management\ncopilot\nenterprise management tools\n...\n+2\nSubscribe to our developer newsletter\nDiscover tips, technical guides, and best practices in our biweekly newsletter just for devs.\nBack to top\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 88\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Copilot code review: Customization and configurability improvements - GitHub Changelog Back to changelog Copilot code review now utilizes a firewall, custom setup steps, and independent runner configurations. It now reads custom instructions from the head branch to allow for easy testing and valid..... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original\n2. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Back to changelog Copilot code review now utilizes a firewall, custom setup steps, and independent runner configurations.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] It now reads custom instructions from the head branch to allow for easy testing and validation of custom instructions.\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] These changes give administrators and developers more control over how Copilot code review runs in their environment.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Expanding custom instructions, now easier to validate 📝 Custom instructions now read from the head branch Custom instructions are now read from the head branch of the pull request instead of the base branch.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] This includes copilot-instructions.\n"
+}

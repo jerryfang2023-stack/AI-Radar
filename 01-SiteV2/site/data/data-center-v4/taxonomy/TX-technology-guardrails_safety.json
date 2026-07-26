@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T07:23:22.462Z",
-    "latestDataDate": "2026-07-25",
-    "currentDate": "2026-07-25",
-    "eventCount": 1533,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "latestDataDate": "2026-07-26",
+    "currentDate": "2026-07-26",
+    "eventCount": 1570,
+    "quarantinedEventCount": 17
   },
   "node": {
     "id": "TX-technology-guardrails_safety",
@@ -17,8 +17,11 @@
     "typeLabel": "技术",
     "valueId": "guardrails_safety",
     "eventIds": [
+      "EV-729a0261934b73d9",
       "EV-d1e2a7c6d314612c",
       "EV-b240fb11e65b018e",
+      "EV-fe63a869fe4cee45",
+      "EV-0d5a32aca724d30e",
       "EV-5ec22cf9a1fb59d4",
       "EV-3b7b9040dd2c2a89",
       "EV-cf176636839e45be",
@@ -28,9 +31,13 @@
       "EV-917966af8545a380"
     ],
     "entityIds": [
+      "EN-ddadc7e89f7cd629",
       "EN-43381465c2b7d64e",
       "EN-c70eca6b0f88f44d",
       "EN-7d3194f79e645c42",
+      "EN-fe596100f029516c",
+      "EN-1fc54774298acc22",
+      "EN-b5251b35f15bedc4",
       "EN-efa98ef1e586ac73",
       "EN-7839fb10a8f14c70",
       "EN-ae31f30d39374a8b",
@@ -41,13 +48,98 @@
       "EN-4e7e886400fe6a83"
     ],
     "fdeIds": [
-      "FDE-0ee0fe3baa3f1364"
+      "FDE-0ee0fe3baa3f1364",
+      "FDE-8cc818b0e819b217"
     ],
     "hardwareIds": [],
-    "firstSeen": "2026-06-17",
-    "lastSeen": "2026-07-24"
+    "firstSeen": "2026-06-11",
+    "lastSeen": "2026-07-26"
   },
   "events": [
+    {
+      "id": "EV-729a0261934b73d9",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "特斯拉在智利、哥伦比亚招聘 AI 安全运营专员，为 Robotaxi 出海铺路",
+      "originalTitle": "",
+      "subject": "特斯拉",
+      "action": "deployment",
+      "object": "AI 安全运营专员岗位",
+      "metrics": [
+        "38 万",
+        "61 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "entityIds": [
+        "EN-ddadc7e89f7cd629"
+      ],
+      "entityNames": [
+        "特斯拉"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/621.htm",
+      "publisher": "IT之家（RSS）"
+    },
     {
       "id": "EV-d1e2a7c6d314612c",
       "dataDate": "2026-06-21",
@@ -260,6 +352,216 @@
       "products": [],
       "sourceUrl": "https://anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
       "publisher": "Anthropic：Newsroom（网页）"
+    },
+    {
+      "id": "EV-fe63a869fe4cee45",
+      "dataDate": "2026-07-26",
+      "date": "2026-06-11",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "DXC 与 Anthropic 宣布建立多年全球联盟，将 AI 引入关键任务企业系统",
+      "originalTitle": "DXC and Anthropic Announce Multi-Year Global Alliance to Bring AI into Mission-Critical Enterprise Systems – Company Announcement - FT.com",
+      "subject": "DXC and Anthropic Announce Multi-Year Global",
+      "action": "Alliance",
+      "object": "to Bring AI into Mission-Critical Enterprise Systems – Company Announcement - FT.com",
+      "metrics": [
+        "95%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        }
+      ],
+      "entityIds": [
+        "EN-fe596100f029516c",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "DXC",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://markets-data-api-proxy.ft.com/data/announce/detail?dockey=600-202606110800CANADANWCANADAPR_C8019-1",
+      "publisher": "markets-data-api-proxy.ft.com"
+    },
+    {
+      "id": "EV-0d5a32aca724d30e",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "近200家硅谷公司致函白宫，呼吁不要禁止美国企业调用Kimi K3/Qwen 3.8等中国开源AI模型",
+      "originalTitle": "",
+      "subject": "近200家硅谷公司致函白宫，呼吁不要禁止美国企业调用",
+      "action": "Kimi K3/Qwen 3.8等中国开源AI模型",
+      "object": "近200家硅谷公司致函白宫，呼吁不要禁止美国企业调用Kimi K3/Qwen 3.8等中国开源AI模型",
+      "metrics": [],
+      "locations": [
+        "美国",
+        "中国",
+        "U.S."
+      ],
+      "missingFields": [
+        "entities",
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "entityIds": [
+        "EN-1fc54774298acc22",
+        "EN-b5251b35f15bedc4"
+      ],
+      "entityNames": [
+        "英国AISI",
+        "Moonshot AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/613.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-5ec22cf9a1fb59d4",
@@ -856,6 +1158,29 @@
   ],
   "entities": [
     {
+      "id": "EN-ddadc7e89f7cd629",
+      "name": "特斯拉",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-729a0261934b73d9",
+        "EV-377094da492a03d2"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity",
+        "TX-technology-guardrails_safety"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-12",
+      "lastSeen": "2026-07-26"
+    },
+    {
       "id": "EN-43381465c2b7d64e",
       "name": "Anthropic's Applied AI Engineers",
       "entityType": "organization_candidate",
@@ -890,6 +1215,7 @@
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
+        "EV-3fb827f44ea109de",
         "EV-d7a7244d620a2142",
         "EV-fbb105be35c21eb4",
         "EV-e41fc65eb014893f",
@@ -929,6 +1255,7 @@
         "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
         "EV-6415a58637893b34",
+        "EV-2a71353a862e56b3",
         "EV-4515377aa6311bf1",
         "EV-ef6464cf7f764835",
         "EV-bb9ba11acf104db1",
@@ -939,12 +1266,12 @@
         "EV-bad301e14b034fbd",
         "EV-45ee75a45f2ca5ee",
         "EV-8e01849c05b50355",
+        "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
         "EV-0e616f9e775a77dc",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
-        "EV-0d5a32aca724d30e",
         "EV-32fb6014149bafdd",
         "EV-243e73016576fa43",
         "EV-2634b786bde9fb8e",
@@ -969,6 +1296,7 @@
         "EV-51645a3b1e730105",
         "EV-7c899d5decafc42f",
         "EV-c2800c1c5a3f568f",
+        "EV-d9da7dea91725a1c",
         "EV-1c2723ad61d192bd",
         "EV-84226288807f817b",
         "EV-8bf42c1816e772ba",
@@ -1130,14 +1458,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
@@ -1145,16 +1475,14 @@
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-industry-government_public_sector",
-        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
+        "TX-industry-government_public_sector",
         "TX-technology-tool_use",
-        "TX-technology-distillation",
         "TX-technology-human_in_loop",
+        "TX-technology-distillation",
         "TX-industry-education"
       ],
       "relatedEntityIds": [
@@ -1184,7 +1512,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -1198,8 +1526,8 @@
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
+        "EV-3fb827f44ea109de",
         "EV-14cc7f194f3e5af8",
-        "EV-754e83c2d19005fe",
         "EV-d7a7244d620a2142",
         "EV-4da1a7c4d527eb69",
         "EV-e41fc65eb014893f",
@@ -1224,6 +1552,7 @@
         "EV-3b40ec144e5db22c",
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
+        "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
         "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
@@ -1245,6 +1574,7 @@
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
         "EV-eec1e6857f0e0b2b",
+        "EV-fdf6128ae36e1f5e",
         "EV-7f2811d2272cf4a3",
         "EV-2fab4396000198d2",
         "EV-3fb492fb45980541",
@@ -1258,8 +1588,8 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-33e98b8bbd0a11b1",
         "EV-c9aba59ba04c9fc8",
-        "EV-0d5a32aca724d30e",
         "EV-5ec22cf9a1fb59d4",
         "EV-b0dec1e885a601fe",
         "EV-243e73016576fa43",
@@ -1425,30 +1755,29 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
+        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-professional_services",
-        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-use_case-research_science",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
@@ -1479,7 +1808,102 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-26"
+    },
+    {
+      "id": "EN-fe596100f029516c",
+      "name": "DXC",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-fe63a869fe4cee45"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-guardrails_safety",
+        "TX-technology-human_in_loop"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-06-11",
+      "lastSeen": "2026-07-26"
+    },
+    {
+      "id": "EN-1fc54774298acc22",
+      "name": "英国AISI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d5a32aca724d30e"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-open_weights",
+        "TX-technology-guardrails_safety"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-26",
+      "lastSeen": "2026-07-26"
+    },
+    {
+      "id": "EN-b5251b35f15bedc4",
+      "name": "Moonshot AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "月之暗面"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0e4bddfd5c129618",
+        "EV-c5d7d88d1aef8edb",
+        "EV-38ae953ddd53fe8d",
+        "EV-eec1e6857f0e0b2b",
+        "EV-fd21441fb6e143c3",
+        "EV-0d5a32aca724d30e",
+        "EV-26a71ab785014e54",
+        "EV-1b03e5dff76a50a1",
+        "EV-2cb9dbed2b2b6077",
+        "EV-75002e9da530c90b",
+        "EV-77042592591657bf",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-e9a86c47da229331",
+        "EV-773ffcc6e1df56fa",
+        "EV-74b965de27bc0515"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-technology-vision_language",
+        "TX-technology-code_generation",
+        "TX-technology-long_context",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-open_weights",
+        "TX-technology-guardrails_safety"
+      ],
+      "relatedEntityIds": [
+        "EN-eb732565c71e6b85",
+        "EN-2cfed21b7a971267",
+        "EN-23bc2a854bc0cfb0",
+        "EN-b57c95289680078c"
+      ],
+      "firstSeen": "2026-05-07",
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-efa98ef1e586ac73",
@@ -1513,7 +1937,6 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-0d5a32aca724d30e",
         "EV-3b7b9040dd2c2a89",
         "EV-a68475d82ec939b5",
         "EV-167f50a6f3134bd5",
@@ -1528,16 +1951,14 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-technology-long_context",
         "TX-use_case-cybersecurity",
-        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety"
       ],
       "relatedEntityIds": [
         "EN-7d3194f79e645c42"
       ],
       "firstSeen": "2026-06-28",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-ae31f30d39374a8b",
@@ -1635,17 +2056,17 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-cybersecurity",
         "TX-technology-open_weights",
-        "TX-industry-media_entertainment",
         "TX-technology-guardrails_safety",
+        "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
         "TX-technology-distillation",
@@ -1751,6 +2172,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-e09efcd49776cb95",
         "EV-c2fe5030e8c71d8a",
         "EV-c3f617e75d303f59",
         "EV-b4f69c41e23c7ce0",
@@ -1769,6 +2191,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-6beed07120c6c6d0",
         "EV-91a444ff3955ad91",
         "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
@@ -1781,6 +2204,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-0f0b2013927ce156",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
         "EV-243e73016576fa43",
@@ -1857,31 +2281,31 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
-        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-use_case-research_science",
         "TX-technology-open_weights",
+        "TX-technology-guardrails_safety",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
-        "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-technology-image_generation",
-        "TX-technology-human_in_loop",
         "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
@@ -1912,7 +2336,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-4e7e886400fe6a83",
@@ -1940,6 +2364,64 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-8cc818b0e819b217",
+      "eventId": "EV-fe63a869fe4cee45",
+      "dataDate": "2026-07-26",
+      "date": "2026-06-11",
+      "title": "DXC 与 Anthropic 宣布建立多年全球联盟，将 AI 引入关键任务企业系统",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "DXC",
+      "vendor": "Anthropic",
+      "industry": "未披露",
+      "useCase": "Bring AI into Mission-Critical Enterprise Systems",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Partnership establishes a new DXC workforce of Claude-certified forward-deployed engineers and builders to be embedded directly in customer environments to accelerate agentic AI transformation.",
+        "The alliance builds on DXC's existing use of Claude in its own operations, including as the primary development tool used to build DXC OASIS, the company's AI-native orchestration platform for managed services. Using Claude models, DXC accelerated DXC OASIS software delivery by an estimated 10x, with more than 95% of code generated by Claude before human review. Claude now serves as the default foundation model powering DXC OASIS's agentic workflows. Launched in April 2026 , DXC OASIS is currently deployed across more than 50 customers and will be rolled out across the DXC global customer base."
+      ],
+      "outcomes": [],
+      "metrics": [
+        "95%"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        }
+      ],
+      "sourceUrl": "https://markets-data-api-proxy.ft.com/data/announce/detail?dockey=600-202606110800CANADANWCANADAPR_C8019-1",
+      "entityIds": [
+        "EN-fe596100f029516c",
+        "EN-c70eca6b0f88f44d"
+      ]
+    },
     {
       "id": "FDE-0ee0fe3baa3f1364",
       "eventId": "EV-d1e2a7c6d314612c",

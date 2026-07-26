@@ -1,0 +1,338 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-008
+title: "Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers"
+title_zh: "德勤以AI速度推动行业智能体转型，扩展行业解决方案工作室并部署前线工程师"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.itnewsonline.com/PRNewswire/Deloitte-Drives-Agentic-Industry-Transformation-at-the-Speed-of-AI-with-Expanded-Industry-Solution-Studios-and-Forward-Deployed-Engineers/1138372"
+canonical_url: "https://itnewsonline.com/PRNewswire/Deloitte-Drives-Agentic-Industry-Transformation-at-the-Speed-of-AI-with-Expanded-Industry-Solution-Studios-and-Forward-Deployed-Engineers/1138372"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "fde_implementation"
+search_path_label: "Enterprise AI / FDE implementation path"
+author: ""
+published_at: "2026-07-22T00:00:00.000Z"
+collected_at: 2026-07-26T01:19:53.021Z
+language: mixed
+full_text_hash: 2ab410b1652c7ae0
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-008-deloitte-drives-agentic-industry-transformation-at-the-speed-of-ai-wit.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-008-deloitte-drives-agentic-industry-transformation-at-the-speed-of-ai-wit.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 82
+extractor_diagnostics: {"readability_score":82,"text_length":11263,"paragraph_count":57,"sentence_count":51,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 11263
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2ab410b1652c7ae0","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 82698f72f9f22883
+content_hash: 2ab410b1652c7ae0
+semantic_hash: 45bb8adf5bd7a683
+duplicate_of: "merged 2 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-22T00:00:00.000Z"
+last_seen_at: 2026-07-26T01:19:53.021Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","ai_hardware_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Nvidia","Deloitte"],"products":["agents"],"people":[],"industries":["法律 / 法务","金融 / 保险","医疗","制造 / 工业","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2026","07","22","90%","500","9","000","180"],"quotes":["To keep pace with their markets, our clients need solutions they can quickly turn into practical tools for their businesses,","The real value of IndustryAdvantage is helping clients move faster and see results sooner,","To truly capture the value of AI, businesses need more than just good ideas—they need a market-ready engineering foundation to make those ideas a reality,","Deloitte Global","Deloitte"]}
+evidence_seed: {"company_actions":["All Rights Reserved 2026-07-22 A new, nimble approach creates prototypes or production solutions in weeks—not months—by using teams' deep industry knowledge to build custom AI solutions alongside clients NEW YORK , July 22, 2026 /PRNewswire/ -- Deloitte today unveiled its expanded Industry Solution Studios , which convene multidisciplinary teams to focus on clients' most pressing business needs across six industries.","These investments are part of the Deloitte IndustryAdvantage™ approach designed to help clients build and scale industry-specific AI solutions faster."],"case_details":["As part of these studios, Forward Deployed Engineers (FDEs) with specific industry, sector, offerings, and product knowledge will be deployed to work with client teams to quickly move AI ideas from pilot to practical use across the enterprise."],"workflow_changes":["Together, they will help organizations test new ideas quickly, pursue new market opportunities, and build AI products and solutions with support from Deloitte's proprietary IP, accelerators, and licensed software."],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":["Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers #### About Us #### Partners #### Privacy Policy | | ☰ | | --- | --- | | Industry Solution Studios, which convene multidisciplinary teams to focus on clients'... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=fde_implementation","Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers About Us Partners Privacy Policy Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers Copyright 2026 PR Newswire."]}
+missing_information: []
+key_excerpts: [{"type":"supporting_context","text":"Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers #### About Us #### Partners #### Privacy Policy | | ☰ | | --- | --- | | Industry Solution Studios, which convene multidisciplinary teams to focus on clients'... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=fde_implementation","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers About Us Partners Privacy Policy Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers Copyright 2026 PR Newswire.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"All Rights Reserved 2026-07-22 A new, nimble approach creates prototypes or production solutions in weeks—not months—by using teams' deep industry knowledge to build custom AI solutions alongside clients NEW YORK , July 22, 2026 /PRNewswire/ -- Deloitte today unveiled its expanded Industry Solution Studios , which convene multidisciplinary teams to focus on clients' most pressing business needs across six industries.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"As part of these studios, Forward Deployed Engineers (FDEs) with specific industry, sector, offerings, and product knowledge will be deployed to work with client teams to quickly move AI ideas from pilot to practical use across the enterprise.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"These investments are part of the Deloitte IndustryAdvantage™ approach designed to help clients build and scale industry-specific AI solutions faster.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Together, they will help organizations test new ideas quickly, pursue new market opportunities, and build AI products and solutions with support from Deloitte's proprietary IP, accelerators, and licensed software.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-26T01:19:53.021Z
+theme: enterprise-ai-implementation-signal
+keyword_group: enterprise-ai-implementation-signal
+copyright_note: local research archive only
+---
+
+# Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers
+
+## clean_text
+
+Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers
+About Us
+Partners
+Privacy Policy
+Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers
+Copyright 2026 PR Newswire. All Rights Reserved
+2026-07-22
+A new, nimble approach creates prototypes or production solutions in weeks—not months—by using teams' deep industry knowledge to build custom AI solutions alongside clients
+NEW YORK , July 22, 2026 /PRNewswire/ -- Deloitte today unveiled its expanded Industry Solution Studios , which convene multidisciplinary teams to focus on clients' most pressing business needs across six industries. As part of these studios, Forward Deployed Engineers (FDEs) with specific industry, sector, offerings, and product knowledge will be deployed to work with client teams to quickly move AI ideas from pilot to practical use across the enterprise.
+These investments are part of the Deloitte IndustryAdvantage™ approach designed to help clients build and scale industry-specific AI solutions faster. Together, they will help organizations test new ideas quickly, pursue new market opportunities, and build AI products and solutions with support from Deloitte's proprietary IP, accelerators, and licensed software.
+The Industry Solution Studios are staffed by dedicated innovation teams focused on specific industry challenges. They combine technology and hands-on experience from across Deloitte to design, test, and tailor products and solutions for clients' needs. This strategy helps clients move from issue to working solution faster, with more flexibility and customization to create new value streams.
+The Converge™ by Deloitte suite of industry-focused products shows how this model works in practice. Converge combines clients' first-party data with Deloitte's industry-specific data to help create a fuller view of customers, markets, opportunities, and risks. Built to support better decision-making through software and agentic AI, Converge has expanded with new capabilities for clients in health care, consumer, sports, financial services, and other sectors.
+"To keep pace with their markets, our clients need solutions they can quickly turn into practical tools for their businesses," said Lynne Sterrett , vice chair, Clients & Industries leader, Deloitte. "We are expanding our IndustryAdvantage strategy with a faster, more hands-on way to innovate. By combining Deloitte's industry knowledge with strong engineering capabilities, we can help clients build reliable AI-powered solutions for their toughest business challenges and create new growth opportunities."
+Deloitte's Industry Solution Studios and Forward Deployed Engineers are key to demonstrating the rapid impact of this co-innovation model. These technology, platform, and product professionals are working with clients in focused six- to eight-week sprints to solve high-priority business problems. They help define clear success measures, build practical solutions, and connect the work to business outcomes.
+FDEs also help clients move AI pilots toward broader production use. They work on the AI platforms clients already use, such as frontier GenAI collaborators, data platforms and hyperscalers, and bring industry knowledge to make solutions practical, useful, and aligned with the client's business environment.
+"The real value of IndustryAdvantage is helping clients move faster and see results sooner," said Kelly Herod , chief client officer, Deloitte Consulting LLP. "Our Forward Deployed Engineers help make that happen by connecting technology with business strategy. They work side by side with clients to pair technical skills with Deloitte's understanding of business, regulation, and finance. The result is custom AI solutions designed to deliver clear value quickly."
+"To truly capture the value of AI, businesses need more than just good ideas—they need a market-ready engineering foundation to make those ideas a reality," said Sundhar Sekhar , chief services officer, Deloitte Consulting LLP. "By bringing the right tools, agents, and technologies directly into the client's environment, our Forward Deployed Engineers reduce friction and turn complexity into clarity. We are helping enterprises set a new standard for how fast they can securely build, deploy, and scale AI."
+About Deloitte's IndustryAdvantage
+With IndustryAdvantage, we give our clients access to the full breadth of thinking, experience, and technology from across Deloitte, our people, and our ecosystems. Because of our deep sector and subsector knowledge, we can apply these capabilities in a targeted way to help our clients differentiate their businesses from the rest of the industry. Deloitte's targeted approach to core business transformation is guided by our understanding of the future of industries. Our industry capabilities are informed by the collective insights of our strategy, engineering and innovation talent, our external ecosystems and alliances; and our broad experience delivering business-critical work for our clients. We demonstrate areas of disruption for your industry and then implement what can help your business create sustainable advantage.
+For additional information and case studies on how Deloitte works with clients to create IndustryAdvantage, visit our website .
+About Deloitte
+Deloitte provides industry-leading audit, consulting, tax and advisory services to many of the world's most admired brands, including nearly 90% of the Fortune 500® and more than 9,000 U.S.-based private companies. At Deloitte, we strive to live our purpose of making an impact that matters for our people, clients, and communities. We bring together distinct talents, technologies, disciplines, and an ecosystem of alliances to help tackle today's most complex business challenges and drive long-term progress. Deloitte is proud to be part of the largest global professional services network serving our clients in the markets that are most important to them. Bringing more than 180 years of service, our network of member firms spans more than 150 countries and territories. Learn how Deloitte's approximately 470,000 people worldwide connect for impact at www.deloitte.com .
+Deloitte refers to one or more of Deloitte Touche Tohmatsu Limited, a UK private company limited by guarantee ("DTTL"), its network of member firms, and their related entities. DTTL and each of its member firms are legally separate and independent entities. DTTL (also referred to as "Deloitte Global") does not provide services to clients. In the United States, Deloitte refers to one or more of the US member firms of DTTL, their related entities that operate using the "Deloitte" name in the United States and their respective affiliates. Certain services may not be available to attest clients under the rules and regulations of public accounting. Please see www.deloitte.com/about to learn more about our global network of member firms.
+View original content to download multimedia: https://www.prnewswire.com/news-releases/deloitte-drives-agentic-industry-transformation-at-the-speed-of-ai-with-expanded-industry-solution-studios-and-forward-deployed-engineers-302832106.html
+SOURCE Deloitte
+Press Releases via PR Newswire
+Alisira OÜ Publishes Findings on Why Most Marketing Dashboards Miss the Metrics That Matter
+From China Mobile's Call Upgrade to the Commercial Launch of "Calling + AI" by Leading Operators: AI Is Reshaping the Value of Native Calling
+Trip.com Group Sincerely Accepts Administrative Penalty Decision Issued by the State Administration for Market Regulation of the People's Republic of China
+NAVER Partners with Brookfield and NVIDIA to Expand Korea's National AI Factory Infrastructure Buildout
+Hyundai Motor Group Executive Chair Euisun Chung Announces Physical AI Vision at San Francisco AI Summit
+Tencent Brings Together AI and Games to Help Preserve and Share Cultural Heritage of New UNESCO Site in Jingdezhen
+Reliance Digital Brings Samsung's Latest Galaxy Z Fold8 Series and Galaxy Z Flip8 to Stores Across India
+Portland General Electric declares dividend
+PointsKash Demonstrates How Businesses Can Build on Bitcoin Without Burdening the Blockchain
+Care Career Announces Acquisition of MAS Medical Staffing, Completing Its First Acquisition Phase and Expanding Annual Revenue Beyond $150 Million, with a Path to Exceed a Quarter Billion by the End of 2026 Through Additional Acquisitions and Organic Growth
+more...
+Press Releases via Business Wire India
+TAC InfoSec to Acquire Israel-Based B2C Cybersecurity Firm Safehouse Technologies
+A First for India: EbixCash World Money's Perpetual RBI Licence Brings Trade and Family Remittances Within Reach of Millions - Unlocking Opportunities for Trade and Permissible Current Account Remittances
+30 Sundays Raises Rs. 61 Crore Series A Led by Bessemer Venture Partners To Scale Its AI-Native Travel Platform
+QX Global Group Appoints Vijay Pahuja as Group Chief Executive Officer
+Jeet Santosh Bhaskar's Bronto Intelligence Enters Social Networking with BrontoY
+more...
+Press Releases via Globe Newswire
+LONG DeFi Introduces Cloud Computing Solutions Designed to Support Digital Asset Infrastructure Development
+SK Group and NVIDIA Expand Strategic Partnership Across AI Factories and Next-Generation Memory
+NAVER, NVIDIA and Brookfield to Expand Korea's National AI Factory Infrastructure Buildout
+CertiK Intel3D: H1 2026 Wrench Attacks Report Reveals 33% Surge in Physical Crypto Crime, Estimated Losses Top $124 Million
+Swarmer Promotes Garrett Kasper to CCO, Realigns Duties Among Executives
+more...
+Press Releases via PR.com
+Botaneco Advances Oilseed Oleosome Platform for Next-Generation Plant-Based Fats and Nutrition Ingredients
+Tampa Web Technologies Releases TWT AEO Ultimate, a Free WordPress Plugin That Prepares Sites to Be Cited by AI Search Engines
+DinkyBalls™ Signs First Slate of Licensing Partners as Pickleball Hits the Hollywood Spotlight
+Lumovex Media Group and BridgeBrain Partner to Deploy AI Rights and Licensing Infrastructure for Talent Identity Protection
+MJI Marketing Urges Businesses to Pair SEO with Generative Engine Optimization as AI Reshapes How Consumers Search
+more...
+Latest on IT News Online
+Change of Venue for the International African Energy Oil and Gas Summit International African Energy Oil and Gas Summit (IAEGOS) 2026 to Windhoek Namibia Africa Newsroom
+Vadzo Presents a Patient Monitoring Camera with HDR Imaging Delivering Reliable Nighttime Observation and Daytime Clarity in Patient Rooms ACCESSWIRE
+CXApp Inc. (Nasdaq:CXAI) Announces Date for Second Quarter 2026 Financial Results and Business Update Conference Call and Investor Forum ACCESSWIRE
+Line Interleaved HDR USB Camera Explained: Vadzo Imaging's Falcon-544CRS Uses AR0544 LI-HDR for Single-Frame HDR Capture Without Motion Artifacts ACCESSWIRE
+more...
+Features
+World Password Day 2026: Will Passwords Defend Us Against AI and Infostealer Attacks?
+How Technology Is Reshaping Digital Workflows
+Keep your digital payments out of trouble - here are some zippy tricks to dodge the online scam drama!
+How Miraii.ai is Reimagining Elder Safety with AI
+more...
+
+## full_text
+
+Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers
+About Us
+Partners
+Privacy Policy
+Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers
+Copyright 2026 PR Newswire. All Rights Reserved
+2026-07-22
+A new, nimble approach creates prototypes or production solutions in weeks—not months—by using teams' deep industry knowledge to build custom AI solutions alongside clients
+NEW YORK , July 22, 2026 /PRNewswire/ -- Deloitte today unveiled its expanded Industry Solution Studios , which convene multidisciplinary teams to focus on clients' most pressing business needs across six industries. As part of these studios, Forward Deployed Engineers (FDEs) with specific industry, sector, offerings, and product knowledge will be deployed to work with client teams to quickly move AI ideas from pilot to practical use across the enterprise.
+These investments are part of the Deloitte IndustryAdvantage™ approach designed to help clients build and scale industry-specific AI solutions faster. Together, they will help organizations test new ideas quickly, pursue new market opportunities, and build AI products and solutions with support from Deloitte's proprietary IP, accelerators, and licensed software.
+The Industry Solution Studios are staffed by dedicated innovation teams focused on specific industry challenges. They combine technology and hands-on experience from across Deloitte to design, test, and tailor products and solutions for clients' needs. This strategy helps clients move from issue to working solution faster, with more flexibility and customization to create new value streams.
+The Converge™ by Deloitte suite of industry-focused products shows how this model works in practice. Converge combines clients' first-party data with Deloitte's industry-specific data to help create a fuller view of customers, markets, opportunities, and risks. Built to support better decision-making through software and agentic AI, Converge has expanded with new capabilities for clients in health care, consumer, sports, financial services, and other sectors.
+"To keep pace with their markets, our clients need solutions they can quickly turn into practical tools for their businesses," said Lynne Sterrett , vice chair, Clients & Industries leader, Deloitte. "We are expanding our IndustryAdvantage strategy with a faster, more hands-on way to innovate. By combining Deloitte's industry knowledge with strong engineering capabilities, we can help clients build reliable AI-powered solutions for their toughest business challenges and create new growth opportunities."
+Deloitte's Industry Solution Studios and Forward Deployed Engineers are key to demonstrating the rapid impact of this co-innovation model. These technology, platform, and product professionals are working with clients in focused six- to eight-week sprints to solve high-priority business problems. They help define clear success measures, build practical solutions, and connect the work to business outcomes.
+FDEs also help clients move AI pilots toward broader production use. They work on the AI platforms clients already use, such as frontier GenAI collaborators, data platforms and hyperscalers, and bring industry knowledge to make solutions practical, useful, and aligned with the client's business environment.
+"The real value of IndustryAdvantage is helping clients move faster and see results sooner," said Kelly Herod , chief client officer, Deloitte Consulting LLP. "Our Forward Deployed Engineers help make that happen by connecting technology with business strategy. They work side by side with clients to pair technical skills with Deloitte's understanding of business, regulation, and finance. The result is custom AI solutions designed to deliver clear value quickly."
+"To truly capture the value of AI, businesses need more than just good ideas—they need a market-ready engineering foundation to make those ideas a reality," said Sundhar Sekhar , chief services officer, Deloitte Consulting LLP. "By bringing the right tools, agents, and technologies directly into the client's environment, our Forward Deployed Engineers reduce friction and turn complexity into clarity. We are helping enterprises set a new standard for how fast they can securely build, deploy, and scale AI."
+About Deloitte's IndustryAdvantage
+With IndustryAdvantage, we give our clients access to the full breadth of thinking, experience, and technology from across Deloitte, our people, and our ecosystems. Because of our deep sector and subsector knowledge, we can apply these capabilities in a targeted way to help our clients differentiate their businesses from the rest of the industry. Deloitte's targeted approach to core business transformation is guided by our understanding of the future of industries. Our industry capabilities are informed by the collective insights of our strategy, engineering and innovation talent, our external ecosystems and alliances; and our broad experience delivering business-critical work for our clients. We demonstrate areas of disruption for your industry and then implement what can help your business create sustainable advantage.
+For additional information and case studies on how Deloitte works with clients to create IndustryAdvantage, visit our website .
+About Deloitte
+Deloitte provides industry-leading audit, consulting, tax and advisory services to many of the world's most admired brands, including nearly 90% of the Fortune 500® and more than 9,000 U.S.-based private companies. At Deloitte, we strive to live our purpose of making an impact that matters for our people, clients, and communities. We bring together distinct talents, technologies, disciplines, and an ecosystem of alliances to help tackle today's most complex business challenges and drive long-term progress. Deloitte is proud to be part of the largest global professional services network serving our clients in the markets that are most important to them. Bringing more than 180 years of service, our network of member firms spans more than 150 countries and territories. Learn how Deloitte's approximately 470,000 people worldwide connect for impact at www.deloitte.com .
+Deloitte refers to one or more of Deloitte Touche Tohmatsu Limited, a UK private company limited by guarantee ("DTTL"), its network of member firms, and their related entities. DTTL and each of its member firms are legally separate and independent entities. DTTL (also referred to as "Deloitte Global") does not provide services to clients. In the United States, Deloitte refers to one or more of the US member firms of DTTL, their related entities that operate using the "Deloitte" name in the United States and their respective affiliates. Certain services may not be available to attest clients under the rules and regulations of public accounting. Please see www.deloitte.com/about to learn more about our global network of member firms.
+View original content to download multimedia: https://www.prnewswire.com/news-releases/deloitte-drives-agentic-industry-transformation-at-the-speed-of-ai-with-expanded-industry-solution-studios-and-forward-deployed-engineers-302832106.html
+SOURCE Deloitte
+Press Releases via PR Newswire
+Alisira OÜ Publishes Findings on Why Most Marketing Dashboards Miss the Metrics That Matter
+From China Mobile's Call Upgrade to the Commercial Launch of "Calling + AI" by Leading Operators: AI Is Reshaping the Value of Native Calling
+Trip.com Group Sincerely Accepts Administrative Penalty Decision Issued by the State Administration for Market Regulation of the People's Republic of China
+NAVER Partners with Brookfield and NVIDIA to Expand Korea's National AI Factory Infrastructure Buildout
+Hyundai Motor Group Executive Chair Euisun Chung Announces Physical AI Vision at San Francisco AI Summit
+Tencent Brings Together AI and Games to Help Preserve and Share Cultural Heritage of New UNESCO Site in Jingdezhen
+Reliance Digital Brings Samsung's Latest Galaxy Z Fold8 Series and Galaxy Z Flip8 to Stores Across India
+Portland General Electric declares dividend
+PointsKash Demonstrates How Businesses Can Build on Bitcoin Without Burdening the Blockchain
+Care Career Announces Acquisition of MAS Medical Staffing, Completing Its First Acquisition Phase and Expanding Annual Revenue Beyond $150 Million, with a Path to Exceed a Quarter Billion by the End of 2026 Through Additional Acquisitions and Organic Growth
+more...
+Press Releases via Business Wire India
+TAC InfoSec to Acquire Israel-Based B2C Cybersecurity Firm Safehouse Technologies
+A First for India: EbixCash World Money's Perpetual RBI Licence Brings Trade and Family Remittances Within Reach of Millions - Unlocking Opportunities for Trade and Permissible Current Account Remittances
+30 Sundays Raises Rs. 61 Crore Series A Led by Bessemer Venture Partners To Scale Its AI-Native Travel Platform
+QX Global Group Appoints Vijay Pahuja as Group Chief Executive Officer
+Jeet Santosh Bhaskar's Bronto Intelligence Enters Social Networking with BrontoY
+more...
+Press Releases via Globe Newswire
+LONG DeFi Introduces Cloud Computing Solutions Designed to Support Digital Asset Infrastructure Development
+SK Group and NVIDIA Expand Strategic Partnership Across AI Factories and Next-Generation Memory
+NAVER, NVIDIA and Brookfield to Expand Korea's National AI Factory Infrastructure Buildout
+CertiK Intel3D: H1 2026 Wrench Attacks Report Reveals 33% Surge in Physical Crypto Crime, Estimated Losses Top $124 Million
+Swarmer Promotes Garrett Kasper to CCO, Realigns Duties Among Executives
+more...
+Press Releases via PR.com
+Botaneco Advances Oilseed Oleosome Platform for Next-Generation Plant-Based Fats and Nutrition Ingredients
+Tampa Web Technologies Releases TWT AEO Ultimate, a Free WordPress Plugin That Prepares Sites to Be Cited by AI Search Engines
+DinkyBalls™ Signs First Slate of Licensing Partners as Pickleball Hits the Hollywood Spotlight
+Lumovex Media Group and BridgeBrain Partner to Deploy AI Rights and Licensing Infrastructure for Talent Identity Protection
+MJI Marketing Urges Businesses to Pair SEO with Generative Engine Optimization as AI Reshapes How Consumers Search
+more...
+Latest on IT News Online
+Change of Venue for the International African Energy Oil and Gas Summit International African Energy Oil and Gas Summit (IAEGOS) 2026 to Windhoek Namibia Africa Newsroom
+Vadzo Presents a Patient Monitoring Camera with HDR Imaging Delivering Reliable Nighttime Observation and Daytime Clarity in Patient Rooms ACCESSWIRE
+CXApp Inc. (Nasdaq:CXAI) Announces Date for Second Quarter 2026 Financial Results and Business Update Conference Call and Investor Forum ACCESSWIRE
+Line Interleaved HDR USB Camera Explained: Vadzo Imaging's Falcon-544CRS Uses AR0544 LI-HDR for Single-Frame HDR Capture Without Motion Artifacts ACCESSWIRE
+more...
+Features
+World Password Day 2026: Will Passwords Defend Us Against AI and Infostealer Attacks?
+How Technology Is Reshaping Digital Workflows
+Keep your digital payments out of trouble - here are some zippy tricks to dodge the online scam drama!
+How Miraii.ai is Reimagining Elder Safety with AI
+more...
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 82
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":82,"text_length":11263,"paragraph_count":57,"sentence_count":51,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers #### About Us #### Partners #### Privacy Policy | | ☰ | | --- | --- | | Industry Solution Studios, which convene multidisciplinary teams to focus on clients'... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=fde_implementation
+
+2. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers About Us Partners Privacy Policy Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers Copyright 2026 PR Newswire.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   All Rights Reserved 2026-07-22 A new, nimble approach creates prototypes or production solutions in weeks—not months—by using teams' deep industry knowledge to build custom AI solutions alongside clients NEW YORK , July 22, 2026 /PRNewswire/ -- Deloitte today unveiled its expanded Industry Solution Studios , which convene multidisciplinary teams to focus on clients' most pressing business needs across six industries.
+
+4. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   As part of these studios, Forward Deployed Engineers (FDEs) with specific industry, sector, offerings, and product knowledge will be deployed to work with client teams to quickly move AI ideas from pilot to practical use across the enterprise.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   These investments are part of the Deloitte IndustryAdvantage™ approach designed to help clients build and scale industry-specific AI solutions faster.
+
+6. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Together, they will help organizations test new ideas quickly, pursue new market opportunities, and build AI products and solutions with support from Deloitte's proprietary IP, accelerators, and licensed software.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Nvidia, Deloitte
+- products: agents
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 医疗, 制造 / 工业, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 07, 22, 90%, 500, 9, 000, 180
+- quotes: To keep pace with their markets, our clients need solutions they can quickly turn into practical tools for their businesses, / The real value of IndustryAdvantage is helping clients move faster and see results sooner, / To truly capture the value of AI, businesses need more than just good ideas—they need a market-ready engineering foundation to make those ideas a reality, / Deloitte Global / Deloitte
+
+## evidence_seed
+
+- company_actions: All Rights Reserved 2026-07-22 A new, nimble approach creates prototypes or production solutions in weeks—not months—by using teams' deep industry knowledge to build custom AI solutions alongside clients NEW YORK , July 22, 2026 /PRNewswire/ -- Deloitte today unveiled its expanded Industry Solution Studios , which convene multidisciplinary teams to focus on clients' most pressing business needs across six industries. / These investments are part of the Deloitte IndustryAdvantage™ approach designed to help clients build and scale industry-specific AI solutions faster.
+- case_details: As part of these studios, Forward Deployed Engineers (FDEs) with specific industry, sector, offerings, and product knowledge will be deployed to work with client teams to quickly move AI ideas from pilot to practical use across the enterprise.
+- workflow_changes: Together, they will help organizations test new ideas quickly, pursue new market opportunities, and build AI products and solutions with support from Deloitte's proprietary IP, accelerators, and licensed software.
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers #### About Us #### Partners #### Privacy Policy | | ☰ | | --- | --- | | Industry Solution Studios, which convene multidisciplinary teams to focus on clients'... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=fde_implementation / Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers About Us Partners Privacy Policy Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers Copyright 2026 PR Newswire.
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,ai_hardware_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Deloitte Drives Agentic Industry Transformation at the Speed of AI with Expanded Industry Solution Studios and Forward Deployed Engineers #### About Us #### Partners #### Privacy Policy | | ☰ | | --- | --- | | Industry Solution Studios, which convene multidisciplinary teams to focus on clients'... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=fde_implementation
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

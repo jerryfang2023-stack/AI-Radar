@@ -1,0 +1,274 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-039",
+  "title": "Ruff v0.16.0 发布：默认规则从 59 条增至 413 条",
+  "title_zh": "Ruff v0.16.0 发布：默认规则从 59 条增至 413 条",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://simonwillison.net/2026/Jul/25/ruff",
+  "canonical_url": "https://simonwillison.net/2026/Jul/25/ruff",
+  "source_name": "Simon Willison 博客",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-25T22:44:05.000Z",
+  "collected_at": "2026-07-26T01:20:23.833Z",
+  "language": "mixed",
+  "full_text": "25th July 2026 - Link Blog\nRuff v0.16.0 . Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd. I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpinned \"ruff\" dev dependency.\nFrom Brent Westbrook's announcement post:\nRuff now enables 413 rules by default, up from 59 in previous versions.\nSince Ruff's default rule set was last modified in v0.1.0 , the number of rules in Ruff has grown from 708 to 968. Many of these rules catch severe issues, including syntax errors and immediate runtime errors but were not previously enabled by default. With the new rule set, Ruff will bring these issues and many others to your attention without any Ruff configuration.\nHere's a one-liner for trying it on any Python project:\nuvx ruff@latest check .\nI ran the latest Ruff against my three biggest projects - Datasette , sqlite-utils , and LLM - and it found hundreds of minor issues that breached the new default rules.\nAll three projects have very comprehensive test suites, executed in CI against Python 3.10 through Python 3.14, so upgrades like this are pretty safe. The following command did the bulk of the upgrades:\nuvx ruff@latest check . --fix --unsafe-fixes\nAgainst sqlite-utils , that command reported:\nFound 1618 errors (1538 fixed, 80 remaining).\nAs an illustrative example, here are three of the remaining issues. Ruff does a nice job of explaining each one:\nDTZ005 `datetime.datetime.now()` called without a `tz` argument\n--> tests/test_duplicate.py:17:10\n15 | \"datetime_col\" TEXT)\"\"\")\n16 | # Insert one row of mock data:\n17 | dt = datetime.datetime.now()\n| ^^^^^^^^^^^^^^^^^^^^^^^\n18 | data = {\n19 | \"text_col\": \"Cleo\",\nhelp: Pass a `datetime.timezone` object to the `tz` parameter\nBLE001 Do not catch blind exception: `Exception`\n--> tests/test_plugins.py:16:12\n14 | db.execute(\"select * from pragma_function_list()\")\n15 | return True\n16 | except Exception:\n| ^^^^^^^^^\n17 | return False\n18 | finally:\nB018 Found useless attribute access. Either assign it to a variable or remove it.\n--> tests/test_update.py:46:5\n44 | def test_update_invalid_pk(fresh_db, pk, update_pk):\n45 | table = fresh_db[\"table\"]\n46 | table.insert({\"id1\": 5, \"id2\": 3, \"v\": 1}, pk=pk).last_pk\n| ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n47 | with pytest.raises(NotFoundError):\n48 | table.update(update_pk, {\"v\": 2})\nUnsurprisingly, given Astral's new home at OpenAI , this output provides everything a coding agent would need to fix the problems.\nI had Codex (GPT-5.6 Sol high) upgrade LLM and sqlite-utils , and Claude Code (with Opus 5) upgrade Datasette .",
+  "clean_text": "25th July 2026 - Link Blog\nRuff v0.16.0 . Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd. I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpinned \"ruff\" dev dependency.\nFrom Brent Westbrook's announcement post:\nRuff now enables 413 rules by default, up from 59 in previous versions.\nSince Ruff's default rule set was last modified in v0.1.0 , the number of rules in Ruff has grown from 708 to 968. Many of these rules catch severe issues, including syntax errors and immediate runtime errors but were not previously enabled by default. With the new rule set, Ruff will bring these issues and many others to your attention without any Ruff configuration.\nHere's a one-liner for trying it on any Python project:\nuvx ruff@latest check .\nI ran the latest Ruff against my three biggest projects - Datasette , sqlite-utils , and LLM - and it found hundreds of minor issues that breached the new default rules.\nAll three projects have very comprehensive test suites, executed in CI against Python 3.10 through Python 3.14, so upgrades like this are pretty safe. The following command did the bulk of the upgrades:\nuvx ruff@latest check . --fix --unsafe-fixes\nAgainst sqlite-utils , that command reported:\nFound 1618 errors (1538 fixed, 80 remaining).\nAs an illustrative example, here are three of the remaining issues. Ruff does a nice job of explaining each one:\nDTZ005 `datetime.datetime.now()` called without a `tz` argument\n--> tests/test_duplicate.py:17:10\n15 | \"datetime_col\" TEXT)\"\"\")\n16 | # Insert one row of mock data:\n17 | dt = datetime.datetime.now()\n| ^^^^^^^^^^^^^^^^^^^^^^^\n18 | data = {\n19 | \"text_col\": \"Cleo\",\nhelp: Pass a `datetime.timezone` object to the `tz` parameter\nBLE001 Do not catch blind exception: `Exception`\n--> tests/test_plugins.py:16:12\n14 | db.execute(\"select * from pragma_function_list()\")\n15 | return True\n16 | except Exception:\n| ^^^^^^^^^\n17 | return False\n18 | finally:\nB018 Found useless attribute access. Either assign it to a variable or remove it.\n--> tests/test_update.py:46:5\n44 | def test_update_invalid_pk(fresh_db, pk, update_pk):\n45 | table = fresh_db[\"table\"]\n46 | table.insert({\"id1\": 5, \"id2\": 3, \"v\": 1}, pk=pk).last_pk\n| ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n47 | with pytest.raises(NotFoundError):\n48 | table.update(update_pk, {\"v\": 2})\nUnsurprisingly, given Astral's new home at OpenAI , this output provides everything a coding agent would need to fix the problems.\nI had Codex (GPT-5.6 Sol high) upgrade LLM and sqlite-utils , and Claude Code (with Opus 5) upgrade Datasette .",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-26/r-039-ruff-v0-16-0-发布-默认规则从-59-条增至-413-条.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-26/r-039-ruff-v0-16-0-发布-默认规则从-59-条增至-413-条.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 81,
+  "extractor_diagnostics": {
+    "readability_score": 81,
+    "text_length": 2661,
+    "paragraph_count": 35,
+    "sentence_count": 17,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0177,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 2661,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "c4647850caf2ef85",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Ruff v0.16.0 发布：默认规则从 59 条增至 413 条",
+    "discovery_summary": "Astral 于 7 月 23 日发布 Python 代码检查工具 Ruff v0.16.0，默认启用规则从 59 条增至 413 条，覆盖语法错误和运行时错误等严重问题。作者在 Datasette、sqlite-utils 和 LLM 三个项目上运行后共发现 1618 个错误，其中 1538 个可通过 `--fix --unsafe-fixes` 自动修复。",
+    "source_name": "Simon Willison 博客",
+    "origin_url": "https://simonwillison.net/2026/Jul/25/ruff",
+    "discovered_at": "2026-07-26T01:10:50.354Z",
+    "rank_on_page": 29,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "412f8cb67d937c7e",
+  "content_hash": "c4647850caf2ef85",
+  "full_text_hash": "c4647850caf2ef85",
+  "semantic_hash": "7191fbcc7542aa50",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-25T22:44:05.000Z",
+  "last_seen_at": "2026-07-26T01:20:23.833Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Astral 于 7 月 23 日发布 Python 代码检查工具 Ruff v0.16.0，默认启用规则从 59 条增至 413 条，覆盖语法错误和运行时错误等严重问题。作者在 Datasette、sqlite-utils 和 LLM 三个项目上运行后共发现 1618 个错误，其中 1538 个可通过 `--fix --unsafe-fixes` 自动修复。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "25th July 2026 - Link Blog Ruff v0.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpinned \"ruff\" dev dependency.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "From Brent Westbrook's announcement post: Ruff now enables 413 rules by default, up from 59 in previous versions.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Since Ruff's default rule set was last modified in v0.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-26T01:20:23.833Z",
+  "business_elements": {
+    "companies": [
+      "Simon Willison 博客",
+      "OpenAI"
+    ],
+    "products": [
+      "agent",
+      "Codex",
+      "GPT-5",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "0.16",
+      "0",
+      "59",
+      "413",
+      "7",
+      "23",
+      "1618",
+      "1538"
+    ],
+    "quotes": [
+      "datetime_col",
+      ")\n16 | # Insert one row of mock data:\n17 | dt = datetime.datetime.now()\n| ^^^^^^^^^^^^^^^^^^^^^^^\n18 | data = {\n19 | ",
+      "select * from pragma_function_list()",
+      "]\n46 | table.insert({",
+      ": 1}, pk=pk).last_pk\n| ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n47 | with pytest.raises(NotFoundError):\n48 | table.update(update_pk, {"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Astral 于 7 月 23 日发布 Python 代码检查工具 Ruff v0.16.0，默认启用规则从 59 条增至 413 条，覆盖语法错误和运行时错误等严重问题。作者在 Datasette、sqlite-utils 和 LLM 三个项目上运行后共发现 1618 个错误，其中 1538 个可通过 `--fix --unsafe-fixes` 自动修复。",
+      "25th July 2026 - Link Blog Ruff v0.",
+      "Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Ruff v0.16.0 发布：默认规则从 59 条增至 413 条\n\n- raw_id: R-039\n- title_zh: Ruff v0.16.0 发布：默认规则从 59 条增至 413 条\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://simonwillison.net/2026/Jul/25/ruff\n- source_name: Simon Willison 博客\n- collected_at: 2026-07-26T01:20:23.833Z\n\n## clean_text\n\n25th July 2026 - Link Blog\nRuff v0.16.0 . Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd. I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpinned \"ruff\" dev dependency.\nFrom Brent Westbrook's announcement post:\nRuff now enables 413 rules by default, up from 59 in previous versions.\nSince Ruff's default rule set was last modified in v0.1.0 , the number of rules in Ruff has grown from 708 to 968. Many of these rules catch severe issues, including syntax errors and immediate runtime errors but were not previously enabled by default. With the new rule set, Ruff will bring these issues and many others to your attention without any Ruff configuration.\nHere's a one-liner for trying it on any Python project:\nuvx ruff@latest check .\nI ran the latest Ruff against my three biggest projects - Datasette , sqlite-utils , and LLM - and it found hundreds of minor issues that breached the new default rules.\nAll three projects have very comprehensive test suites, executed in CI against Python 3.10 through Python 3.14, so upgrades like this are pretty safe. The following command did the bulk of the upgrades:\nuvx ruff@latest check . --fix --unsafe-fixes\nAgainst sqlite-utils , that command reported:\nFound 1618 errors (1538 fixed, 80 remaining).\nAs an illustrative example, here are three of the remaining issues. Ruff does a nice job of explaining each one:\nDTZ005 `datetime.datetime.now()` called without a `tz` argument\n--> tests/test_duplicate.py:17:10\n15 | \"datetime_col\" TEXT)\"\"\")\n16 | # Insert one row of mock data:\n17 | dt = datetime.datetime.now()\n| ^^^^^^^^^^^^^^^^^^^^^^^\n18 | data = {\n19 | \"text_col\": \"Cleo\",\nhelp: Pass a `datetime.timezone` object to the `tz` parameter\nBLE001 Do not catch blind exception: `Exception`\n--> tests/test_plugins.py:16:12\n14 | db.execute(\"select * from pragma_function_list()\")\n15 | return True\n16 | except Exception:\n| ^^^^^^^^^\n17 | return False\n18 | finally:\nB018 Found useless attribute access. Either assign it to a variable or remove it.\n--> tests/test_update.py:46:5\n44 | def test_update_invalid_pk(fresh_db, pk, update_pk):\n45 | table = fresh_db[\"table\"]\n46 | table.insert({\"id1\": 5, \"id2\": 3, \"v\": 1}, pk=pk).last_pk\n| ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n47 | with pytest.raises(NotFoundError):\n48 | table.update(update_pk, {\"v\": 2})\nUnsurprisingly, given Astral's new home at OpenAI , this output provides everything a coding agent would need to fix the problems.\nI had Codex (GPT-5.6 Sol high) upgrade LLM and sqlite-utils , and Claude Code (with Opus 5) upgrade Datasette .\n\n## full_text\n\n25th July 2026 - Link Blog\nRuff v0.16.0 . Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd. I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpinned \"ruff\" dev dependency.\nFrom Brent Westbrook's announcement post:\nRuff now enables 413 rules by default, up from 59 in previous versions.\nSince Ruff's default rule set was last modified in v0.1.0 , the number of rules in Ruff has grown from 708 to 968. Many of these rules catch severe issues, including syntax errors and immediate runtime errors but were not previously enabled by default. With the new rule set, Ruff will bring these issues and many others to your attention without any Ruff configuration.\nHere's a one-liner for trying it on any Python project:\nuvx ruff@latest check .\nI ran the latest Ruff against my three biggest projects - Datasette , sqlite-utils , and LLM - and it found hundreds of minor issues that breached the new default rules.\nAll three projects have very comprehensive test suites, executed in CI against Python 3.10 through Python 3.14, so upgrades like this are pretty safe. The following command did the bulk of the upgrades:\nuvx ruff@latest check . --fix --unsafe-fixes\nAgainst sqlite-utils , that command reported:\nFound 1618 errors (1538 fixed, 80 remaining).\nAs an illustrative example, here are three of the remaining issues. Ruff does a nice job of explaining each one:\nDTZ005 `datetime.datetime.now()` called without a `tz` argument\n--> tests/test_duplicate.py:17:10\n15 | \"datetime_col\" TEXT)\"\"\")\n16 | # Insert one row of mock data:\n17 | dt = datetime.datetime.now()\n| ^^^^^^^^^^^^^^^^^^^^^^^\n18 | data = {\n19 | \"text_col\": \"Cleo\",\nhelp: Pass a `datetime.timezone` object to the `tz` parameter\nBLE001 Do not catch blind exception: `Exception`\n--> tests/test_plugins.py:16:12\n14 | db.execute(\"select * from pragma_function_list()\")\n15 | return True\n16 | except Exception:\n| ^^^^^^^^^\n17 | return False\n18 | finally:\nB018 Found useless attribute access. Either assign it to a variable or remove it.\n--> tests/test_update.py:46:5\n44 | def test_update_invalid_pk(fresh_db, pk, update_pk):\n45 | table = fresh_db[\"table\"]\n46 | table.insert({\"id1\": 5, \"id2\": 3, \"v\": 1}, pk=pk).last_pk\n| ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n47 | with pytest.raises(NotFoundError):\n48 | table.update(update_pk, {\"v\": 2})\nUnsurprisingly, given Astral's new home at OpenAI , this output provides everything a coding agent would need to fix the problems.\nI had Codex (GPT-5.6 Sol high) upgrade LLM and sqlite-utils , and Claude Code (with Opus 5) upgrade Datasette .\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 81\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Astral 于 7 月 23 日发布 Python 代码检查工具 Ruff v0.16.0，默认启用规则从 59 条增至 413 条，覆盖语法错误和运行时错误等严重问题。作者在 Datasette、sqlite-utils 和 LLM 三个项目上运行后共发现 1618 个错误，其中 1538 个可通过 `--fix --unsafe-fixes` 自动修复。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 25th July 2026 - Link Blog Ruff v0.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpinned \"ruff\" dev dependency.\n5. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] From Brent Westbrook's announcement post: Ruff now enables 413 rules by default, up from 59 in previous versions.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Since Ruff's default rule set was last modified in v0.\n"
+}

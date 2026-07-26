@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "latestDataDate": "2026-07-26",
+    "currentDate": "2026-07-26",
+    "eventCount": 1570,
+    "quarantinedEventCount": 17
+  },
+  "entity": {
+    "id": "EN-5d11926dd637b275",
+    "name": "Leidos",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-fa46e5177d548bad"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-26",
+    "lastSeen": "2026-07-26",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-fa46e5177d548bad"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-fa46e5177d548bad",
+        "dataDate": "2026-07-26",
+        "date": "2026-07-26",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Leidos 借助 ServiceNow AI 平台为 5 万名员工重塑体验并提升运营效率",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "entityIds": [
+          "EN-5d11926dd637b275",
+          "EN-b5738c169b693bee"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-ebcbdf2b14d4c291",
+      "eventId": "EV-fa46e5177d548bad",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "title": "Leidos 借助 ServiceNow AI 平台为 5 万名员工重塑体验并提升运营效率",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "Leidos",
+      "industry": "未披露",
+      "useCase": "ServiceNow AI Platform",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Leidos is expanding its relationship with ServiceNow and deploying the ServiceNow AI Platform across its enterprise – providing autonomous, AI-driven workflows designed to cut costs, improve employee experiences, and free employees for mission critical work."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://newsroom.servicenow.com/press-releases/details/2026/Leidos-reimagines-experiences-for-50000-employees-and-boosts-operational-efficiency-with-the-ServiceNow-AI-Platform/default.aspx",
+      "entityIds": [
+        "EN-5d11926dd637b275",
+        "EN-b5738c169b693bee"
+      ]
+    }
+  ],
+  "hardware": []
+}
