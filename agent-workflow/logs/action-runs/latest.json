@@ -1,20 +1,46 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-26T03:30:05.638Z",
+  "generated_at": "2026-07-26T14:17:11.564Z",
   "date": "2026-07-26",
-  "action": "Skill discovery daily gate and dashboard metrics",
-  "action_status": "unregistered",
+  "action": "Funding Insights historical data conversion",
+  "action_status": "current",
   "record_level": "required",
-  "trigger": "manual",
-  "status": "success",
-  "summary": "Integrated effective Skill discovery into the existing read-only Skill Ops lane; dashboard now reports 237 discovered, 51 enabled, and 186 disabled Skills; added semantic and regression gates.",
+  "trigger": "historical_backfill",
+  "status": "partial",
+  "summary": "Published 5 accepted historical Funding Insight cards from 6 processed unique events; one event remained blocked and the external full-range runner ended before later dates.",
   "contexts": [],
-  "changed_files": [],
-  "outputs": [],
-  "checks": [],
-  "issues": [],
-  "risks": [],
-  "lessons": [],
+  "changed_files": [
+    "01-SiteV2/content/12-applications/funding-insights/2026-05-20.json",
+    "01-SiteV2/content/12-applications/funding-insights/2026-05-22.json",
+    "01-SiteV2/site/data/funding-insights-v1.json",
+    "agent-workflow/tools/backfill-funding-insights-history.mjs",
+    "agent-workflow/tools/generate-funding-insights-deepseek.mjs",
+    "agent-workflow/skills/guanlan-funding-insight-generator/SKILL.md"
+  ],
+  "outputs": [
+    "5 auto-published historical cards",
+    "1 blocked historical event",
+    "8 total public cards"
+  ],
+  "checks": [
+    "2026-05-20 assert passed",
+    "2026-05-22 assert passed",
+    "funding tests 7 of 7 passed",
+    "frontstage regression passed",
+    "Skill Ops audit passed",
+    "concurrent backfill dry-run passed"
+  ],
+  "issues": [
+    "Full-range external runner ended before completing 2026-05-23 and later owner dates"
+  ],
+  "risks": [
+    "240 unique historical funding events remain unprocessed",
+    "Resume requires external search and model API usage"
+  ],
+  "lessons": [
+    "Resume without force so accepted cards are reused and blocked or missing events are retried",
+    "Use date concurrency within provider rate limits"
+  ],
   "reusable_rules": [],
   "retired_flags": [],
   "notes": []
