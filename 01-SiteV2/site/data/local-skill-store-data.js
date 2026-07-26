@@ -1,6 +1,6 @@
 window.WaveSightLocalSkillStore = {
   "meta": {
-    "generatedAt": "2026-07-26 22:15:45",
+    "generatedAt": "2026-07-26 23:26:40",
     "generatedDate": "2026-07-26",
     "storeDir": ".skill-store",
     "projectSkillDir": "agent-workflow/skills",
@@ -9,10 +9,10 @@ window.WaveSightLocalSkillStore = {
     "version": {
       "schema_version": 1,
       "name": "Guanlan Skill Store",
-      "version": "1.6.5",
-      "release_date": "2026-07-25",
-      "stage": "Governance audit alignment",
-      "scope": "Aligns current project Skills, external mirrors, generated Skill Store data, version governance, and deploy-time read-only checks without changing Data Center V4 canonical truth.",
+      "version": "1.7.0",
+      "release_date": "2026-07-26",
+      "stage": "Funding Insights generation lane",
+      "scope": "Adds the governed Funding Insight generator Skill, historical unique-event backfill, secondary search, DeepSeek card generation, and fail-closed application publication without changing Data Center V4 canonical truth.",
       "upgrade_policy": {
         "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
         "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",
@@ -2875,11 +2875,11 @@ window.WaveSightLocalSkillStore = {
       "installedAt": "2026-07-26 22:00:05",
       "installedTime": 1785074405522.44,
       "last_used": "2026-07-26",
-      "usage_count": 1,
+      "usage_count": 2,
       "sizeKB": 10,
       "fileCount": 5,
-      "modifiedAt": "2026-07-26 22:14:48",
-      "modifiedTime": 1785075288816.4333,
+      "modifiedAt": "2026-07-26 23:26:20",
+      "modifiedTime": 1785079580935.4075,
       "issueCount": 0,
       "issueSeverity": "",
       "issues": [],

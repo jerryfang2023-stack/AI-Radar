@@ -50,13 +50,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Monthly report page-generator Skill | guanlan-monthly-report-page-generator v1.1.0 |
 | Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.4.0 |
 | Trend Radar updater Skill | guanlan-trend-radar-updater v1.0.0 |
+| Funding Insight generator Skill | guanlan-funding-insight-generator v1.0.0 |
 | Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.6 |
 | Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.2.1 |
 | Skill governance editor | guanlan-skill-editor v1.0.2 |
 | Code and rule auditor | guanlan-code-rule-auditor v1.0.2 |
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
-| Skill Store version | v1.6.5 Governance audit alignment |
+| Skill Store version | v1.7.0 Funding Insights generation lane |
 | Git tag | `v4.2.6-funding-insights` |
 | Current entries | Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
 
@@ -89,14 +90,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Opportunity Map is versioned independently as `OMAP-V1.1.0-direction-cards`. It reads `industry-reports-frontstage.json`, renders Entry Point Map and Product Pain Map from source-backed `opportunity_signals`, and adds a small Direction Card layer. DeepSeek V4 Pro writes titles and editorial content from a bounded accepted-Card manifest; generated candidates stay review-only until evidence, unsupported-number, judgment, counter-signal, and human-review gates pass. Direction Cards never enter V4 canonical data and are not automated recommendations.
 - Trend Radar is versioned independently as `TRADAR-V1.0.0-factual-change-explorer`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
 - Funding Insights is versioned independently as `FUNDING-INSIGHT-V1.0-auto-published-research`. Verified funding events trigger secondary source capture and DeepSeek V4 Pro application research. Every published investor is explicitly named and exact-quote-backed; missing investors or evidence block that card. Automatic publication does not mutate canonical entities or relationships, and exact matches link cards to stable entity profiles, relationship views, funding history, competitors, customers, and reviewed Direction Cards.
-- Skill Store `v1.6.5` aligns the formal project Skill source, external mirror, generated dashboard, ledger, and deploy-time read-only governance checks. It does not change any factual data contract or public column boundary.
+- Skill Store `v1.7.0` adds the governed Funding Insight generator, unique-event historical backfill, secondary source capture, DeepSeek V4 Pro card generation, and fail-closed publication. It does not change any factual data contract or public column boundary.
 - `guanlan-code-rule-auditor` v1.0.2 requires version audits to compare every active version surface and preserves pre-repair drift evidence before synchronization.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - Internal V3 compatibility data may continue for opportunity-map projection, historical analytics, and Obsidian sync, but no public page may load its V3 CSS, JavaScript, navigation, or desk JSON.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Daily supervision and Codex handoff are routed through the consolidated Closure controller. The legacy Hermes inbox remains readable history only.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
-- Skill Store governance is versioned separately as `v1.6.4`. Current Skill metadata, evals, registry entries, and mirrors add the independent Trend Radar factual-change lane while preserving Opportunity Map, Reports Center, Community Intelligence, and governance boundaries.
+- Skill Store governance is versioned separately as `v1.7.0`. Current Skill metadata, evals, registry entries, and mirrors add the Funding Insights historical generation lane while preserving Data Center V4, Trend Radar, Opportunity Map, Reports Center, Community Intelligence, and governance boundaries.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages
@@ -181,6 +182,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.2.7-funding-insights-history` | Funding Insights historical application bundles / combined frontstage / generator Skill | 2026-07-26 | 2026-07-26T23:24:49+08:00 | FUNDING-INSIGHT-V1.0-auto-published-research / Skill Store v1.7.0 / guanlan-funding-insight-generator v1.0.0 | duplicate event research; search snippets as evidence; unnamed investors; missing exact quotes; blocked cards entering the public projection; application analysis mutating canonical facts | 59 bundle schema gates + unique-event coverage report + funding tests + Skill validation/sync/audit + frontstage regression + desktop/mobile smoke + GitHub Pages deploy |
 | `v4.2.6-funding-insights` | Funding Insights / shared V4 Application Center navigation / entity and Direction Card cross-links | 2026-07-26 | 2026-07-26T15:32:50+08:00 | FUNDING-INSIGHT-V1.0-auto-published-research / SITE-V4.2.0-entity-history | unnamed investors; model-only facts without captured exact quotes; search snippets as evidence; cards failing the deterministic publication gate; automatic mutation of canonical entities or relationships; human-review placeholders; Funding Insights buried inside Opportunity Map | funding schema + explicit-investor and exact-quote gates + generation/projection tests + desktop/mobile dialog smoke + GitHub Pages live verification |
 | `v4.2.5-governance-audit` | Current V4 version surfaces / Skill Store / daily compatibility supervision / Pages release gate | 2026-07-25 | 2026-07-25T20:36:03+08:00 | SITE-V4.2.0-entity-history / Skill Store v1.6.5 / guanlan-code-rule-auditor v1.0.2 | project Skills, external mirrors, dashboard, ledger, or release gate drifting; retired daily Trend Candidate or Intelligence Map ownership language returning to active supervision | version consistency + current-rule hygiene + Skill validation/sync/dashboard + core V4 and frontstage tests + GitHub Pages deploy |
 | `v4.2.4-direction-cards` | Opportunity Map / Direction Cards / opportunity projection | 2026-07-25 | 2026-07-25T15:37:44+08:00 | OMAP-V1.1.0-direction-cards / DIRECTION-CARD-V1.0-reviewed-hypothesis | Direction Cards generated from tag frequency alone; recommendation scores; unsupported market size or revenue claims; Direction Cards entering Data Center V4 canonical data; map toggles or persistent evidence panels returning | opportunity projection tests + frontstage regression + typography QC + desktop/mobile browser verification + GitHub Pages live verification |
@@ -234,6 +236,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| Funding Insights history / Skill Store v1.7.0 | 2026-07-26T23:24:49+08:00 | Adds the governed historical generator and converts 246 unique verified funding events through secondary search, DeepSeek V4 Pro, exact-quote and explicit-investor gates into 203 published application cards; 43 unresolved events remain fail-closed. | current application generation |
 | V4.2 governance audit / Skill Store v1.6.5 / guanlan-code-rule-auditor v1.0.2 | 2026-07-25T20:36:03+08:00 | Aligns current Skill mirrors and generated dashboard data, fixes retired Trend Candidate and Intelligence Map ownership wording in active supervision, and makes Pages verify rule and Skill governance before deployment. | current governance |
 | TAG-V4.0 | 2026-07-17T01:32:06+08:00 | Establishes Claim-backed AI technical tags and separate product, scenario, industry, deployment, audience, and evidence-backed Facets without using taxonomy as ranking or eligibility input. | current |
 | OMAP-V1.1.0-direction-cards | 2026-07-25T15:37:44+08:00 | Adds three human-reviewed Direction Cards to Opportunity Map. Each card states a falsifiable startup hypothesis, unknowns, a first validation action, and accepted Signal Card/original-source evidence without changing Trend Radar or Data Center canonical facts. | current application |

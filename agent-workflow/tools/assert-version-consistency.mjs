@@ -41,7 +41,7 @@ const expected = {
   opportunity: "OMAP-V1.1.0-direction-cards",
   trendRadar: "TRADAR-V1.0.0-factual-change-explorer",
   person: "PERSON-REVIEW-V1.0",
-  skillStore: "v1.6.5 Governance audit alignment",
+  skillStore: "v1.7.0 Funding Insights generation lane",
 };
 
 const ledgerChecks = [
@@ -55,6 +55,7 @@ const ledgerChecks = [
   ["Monthly report page-generator Skill", "guanlan-monthly-report-page-generator v1.1.0"],
   ["Opportunity Map updater Skill", "guanlan-opportunity-radar-updater v1.4.0"],
   ["Trend Radar updater Skill", "guanlan-trend-radar-updater v1.0.0"],
+  ["Funding Insight generator Skill", "guanlan-funding-insight-generator v1.0.0"],
   ["Community Intelligence monitor Skill", "guanlan-community-intelligence-monitor v1.0.6"],
   ["Monthly business-structure content Skill", "guanlan-monthly-business-structure-report v0.2.1"],
   ["Skill governance editor", "guanlan-skill-editor v1.0.2"],

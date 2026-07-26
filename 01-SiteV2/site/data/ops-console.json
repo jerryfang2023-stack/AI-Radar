@@ -1,8 +1,8 @@
 {
   "meta": {
     "version": "OPS-V1.2.3-content-factory-cleanout",
-    "generatedAt": "2026-07-25T12:43:21.725Z",
-    "date": "2026-07-25",
+    "generatedAt": "2026-07-26T15:29:38.219Z",
+    "date": "2026-07-26",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -42,21 +42,21 @@
     }
   ],
   "daily": {
-    "date": "2026-07-25",
-    "status": "waiting",
-    "statusText": "等待中",
+    "date": "2026-07-26",
+    "status": "failed",
+    "statusText": "失败",
     "issueSummary": {
-      "total": 52,
-      "daily": 1,
-      "open": 1,
+      "total": 60,
+      "daily": 8,
+      "open": 9,
       "resolved": 51,
-      "urgent": 0
+      "urgent": 4
     },
     "issues": [
       {
-        "id": "supervision-2026-07-25-community_intelligence-warning-0",
-        "date": "2026-07-25",
-        "title": "community scheduled task last result is 3221225786, but same-date data and gate are healthy",
+        "id": "supervision-2026-07-26-community_intelligence-warning-0",
+        "date": "2026-07-26",
+        "title": "community scheduled task last result is 1, but same-date data and gate are healthy",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -66,37 +66,291 @@
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
         "neededAction": "",
-        "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication closure"
+        "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-problem-0",
+        "date": "2026-07-26",
+        "title": "business-signal activeDate is 2026-07-25, expected 2026-07-26",
+        "status": "failed",
+        "state": "open",
+        "priority": "urgent",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "failed",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-problem-1",
+        "date": "2026-07-26",
+        "title": "public Card count is 0 for 2026-07-26",
+        "status": "failed",
+        "state": "open",
+        "priority": "urgent",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "failed",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-problem-2",
+        "date": "2026-07-26",
+        "title": "no same-date signal Card files or frontstage Core Signal Cards",
+        "status": "failed",
+        "state": "open",
+        "priority": "urgent",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "failed",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-problem-3",
+        "date": "2026-07-26",
+        "title": "Business Signals workflow conclusion is failure",
+        "status": "failed",
+        "state": "open",
+        "priority": "urgent",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "failed",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-warning-0",
+        "date": "2026-07-26",
+        "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-26-persistent-asset-manifest.json",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-warning-1",
+        "date": "2026-07-26",
+        "title": "missing quality gate report: agent-workflow/reports/2026-07-26-guanlan-monitor-quality-gate.md",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-warning-2",
+        "date": "2026-07-26",
+        "title": "local Obsidian sync may be blocked by 44 dirty file(s)",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
       }
     ]
   },
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 7,
-      "open": 1,
-      "resolved": 6,
+      "total": 13,
+      "open": 9,
+      "resolved": 4,
       "byLane": {
-        "community_intelligence": 2,
-        "follow_builders_skill": 2,
-        "skill_ops": 1,
-        "business_signals": 2
+        "community_intelligence": 3,
+        "business_signals": 9,
+        "follow_builders_skill": 1
       },
       "byCategory": {
-        "warning": 1,
-        "first_line_viewpoints": 1,
-        "monitor_or_gate_failure": 1,
+        "warning": 4,
+        "failed": 4,
+        "recurring_automation_issue": 1,
         "afternoon_skill_runner": 1,
         "no_run_or_stale_assets": 2,
         "community_intelligence": 1
       },
       "recurring": [
         {
+          "category": "warning",
+          "count": 4
+        },
+        {
+          "category": "failed",
+          "count": 4
+        },
+        {
           "category": "no_run_or_stale_assets",
           "count": 2
         }
       ],
       "latest": [
+        {
+          "id": "2026-07-26-community-intelligence-recurring-73a400f41c5af405",
+          "date": "2026-07-26",
+          "title": "Recurring warning: community_intelligence",
+          "status": "open",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "community_intelligence",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-07-26T08:45:31.857Z",
+          "updatedAt": "",
+          "resolvedAt": "",
+          "resolver": "",
+          "fixCommit": "",
+          "validation": "",
+          "prevention": "",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-26-community-intelligence-recurring-73a400f41c5af405.md"
+        },
+        {
+          "id": "supervision-2026-07-26-community_intelligence-warning-0",
+          "date": "2026-07-26",
+          "title": "community scheduled task last result is 1, but same-date data and gate are healthy",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "community_intelligence",
+          "lane": "Community Intelligence",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-problem-0",
+          "date": "2026-07-26",
+          "title": "business-signal activeDate is 2026-07-25, expected 2026-07-26",
+          "status": "failed",
+          "state": "open",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "failed",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-problem-1",
+          "date": "2026-07-26",
+          "title": "public Card count is 0 for 2026-07-26",
+          "status": "failed",
+          "state": "open",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "failed",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-problem-2",
+          "date": "2026-07-26",
+          "title": "no same-date signal Card files or frontstage Core Signal Cards",
+          "status": "failed",
+          "state": "open",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "failed",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-problem-3",
+          "date": "2026-07-26",
+          "title": "Business Signals workflow conclusion is failure",
+          "status": "failed",
+          "state": "open",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "failed",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-warning-0",
+          "date": "2026-07-26",
+          "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-26-persistent-asset-manifest.json",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-warning-1",
+          "date": "2026-07-26",
+          "title": "missing quality gate report: agent-workflow/reports/2026-07-26-guanlan-monitor-quality-gate.md",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-warning-2",
+          "date": "2026-07-26",
+          "title": "local Obsidian sync may be blocked by 44 dirty file(s)",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
         {
           "id": "2026-07-25-business_signals-no-run-or-stale-assets",
           "date": "2026-07-25",
@@ -142,21 +396,6 @@
           "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-25-community_intelligence-community-intelligence.md"
         },
         {
-          "id": "supervision-2026-07-25-community_intelligence-warning-0",
-          "date": "2026-07-25",
-          "title": "community scheduled task last result is 3221225786, but same-date data and gate are healthy",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
-          "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication closure"
-        },
-        {
           "id": "2026-07-24-business_signals-no-run-or-stale-assets",
           "date": "2026-07-24",
           "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
@@ -177,93 +416,29 @@
           "validation": "38-card editorial, unified frontstage, and pre-commit gates passed",
           "prevention": "gate",
           "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-24-business_signals-no-run-or-stale-assets.md"
-        },
-        {
-          "id": "2026-07-23-follow_builders_skill-afternoon-skill-runner",
-          "date": "2026-07-23",
-          "title": "Hermes Repair Request: First-Line Viewpoints Skill",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "high",
-          "laneId": "follow_builders_skill",
-          "category": "afternoon_skill_runner",
-          "failedGate": "agent-workflow/reports/2026-07-23-daily-supervision-report.md",
-          "reportPath": "agent-workflow/reports/2026-07-23-daily-supervision-report.md",
-          "dataGenerated": "no",
-          "neededAction": "repair the existing 16:10 task wake/retry settings and force a post-run Hermes supervision refresh; do not fabricate a historical archive from a later feed",
-          "createdAt": "2026-07-24T16:55:00+08:00",
-          "updatedAt": "2026-07-24T16:55:19+08:00",
-          "resolvedAt": "2026-07-24T16:55:19+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "node --test agent-workflow/tools/tests/daily-supervision-follow-builders.test.mjs; npm run test:data-center-site:core; forced 2026-07-21..24 supervision replay",
-          "prevention": "eval",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-23-follow_builders_skill-afternoon-skill-runner.md"
-        },
-        {
-          "id": "2026-07-19-follow_builders_skill-first-line-viewpoints",
-          "date": "2026-07-19",
-          "title": "Hermes Repair Request: First-Line Viewpoints Skill",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "follow_builders_skill",
-          "category": "first_line_viewpoints",
-          "failedGate": "follow_builders_skill daily supervision",
-          "reportPath": "agent-workflow/reports/2026-07-19-daily-supervision-report.md",
-          "dataGenerated": "yes",
-          "neededAction": "run the local follow-builders skill publisher and inspect the generated publish report",
-          "createdAt": "2026-07-19T16:30:45+08:00",
-          "updatedAt": "2026-07-19T16:32:47+08:00",
-          "resolvedAt": "2026-07-19T16:32:47+08:00",
-          "resolver": "codex",
-          "fixCommit": "2d090149e8091ce3b4f018e3f07ac078a167d179",
-          "validation": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-07-19",
-          "prevention": "not-needed",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-19-follow_builders_skill-first-line-viewpoints.md"
-        },
-        {
-          "id": "2026-07-19-skill_ops-monitor-or-gate-failure",
-          "date": "2026-07-19",
-          "title": "Hermes Repair Request: Skill Ops Governance",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "skill_ops",
-          "category": "monitor_or_gate_failure",
-          "failedGate": "skill_ops daily supervision",
-          "reportPath": "agent-workflow/reports/2026-07-19-daily-supervision-report.md",
-          "dataGenerated": "not_applicable",
-          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-          "createdAt": "2026-07-19T14:41:47+08:00",
-          "updatedAt": "2026-07-19T14:43:35+08:00",
-          "resolvedAt": "2026-07-19T14:43:35+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "check:skill-ops_passed_and_daily_supervision_healthy",
-          "prevention": "eval",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-19-skill_ops-monitor-or-gate-failure.md"
         }
       ]
     },
     "monthly": {
       "windowDays": 30,
-      "total": 22,
-      "open": 1,
-      "resolved": 21,
+      "total": 27,
+      "open": 9,
+      "resolved": 18,
       "byLane": {
         "community_intelligence": 5,
-        "business_signals": 9,
-        "skill_ops": 4,
+        "business_signals": 15,
+        "skill_ops": 3,
         "follow_builders_skill": 3,
         "first_line_viewpoints": 1
       },
       "byCategory": {
-        "warning": 1,
-        "business_signals_top10_missing": 2,
-        "community_intelligence": 3,
-        "monitor_or_gate_failure": 6,
+        "warning": 4,
+        "failed": 4,
+        "recurring_automation_issue": 1,
+        "business_signals_top10_missing": 1,
+        "monitor_or_gate_failure": 5,
         "no_run_or_stale_assets": 5,
+        "community_intelligence": 2,
         "core_supply_shortfall": 1,
         "daily_problem_watchdog": 1,
         "skill_ops": 1,
@@ -273,22 +448,168 @@
       "recurring": [
         {
           "category": "monitor_or_gate_failure",
-          "count": 6
+          "count": 5
         },
         {
           "category": "no_run_or_stale_assets",
           "count": 5
         },
         {
-          "category": "community_intelligence",
-          "count": 3
+          "category": "warning",
+          "count": 4
         },
         {
-          "category": "business_signals_top10_missing",
+          "category": "failed",
+          "count": 4
+        },
+        {
+          "category": "community_intelligence",
           "count": 2
         }
       ],
       "latest": [
+        {
+          "id": "2026-07-26-community-intelligence-recurring-73a400f41c5af405",
+          "date": "2026-07-26",
+          "title": "Recurring warning: community_intelligence",
+          "status": "open",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "community_intelligence",
+          "category": "recurring_automation_issue",
+          "failedGate": "repeated daily supervision signal",
+          "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
+          "dataGenerated": "inspect linked daily reports",
+          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+          "createdAt": "2026-07-26T08:45:31.857Z",
+          "updatedAt": "",
+          "resolvedAt": "",
+          "resolver": "",
+          "fixCommit": "",
+          "validation": "",
+          "prevention": "",
+          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-26-community-intelligence-recurring-73a400f41c5af405.md"
+        },
+        {
+          "id": "supervision-2026-07-26-community_intelligence-warning-0",
+          "date": "2026-07-26",
+          "title": "community scheduled task last result is 1, but same-date data and gate are healthy",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "community_intelligence",
+          "lane": "Community Intelligence",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-problem-0",
+          "date": "2026-07-26",
+          "title": "business-signal activeDate is 2026-07-25, expected 2026-07-26",
+          "status": "failed",
+          "state": "open",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "failed",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-problem-1",
+          "date": "2026-07-26",
+          "title": "public Card count is 0 for 2026-07-26",
+          "status": "failed",
+          "state": "open",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "failed",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-problem-2",
+          "date": "2026-07-26",
+          "title": "no same-date signal Card files or frontstage Core Signal Cards",
+          "status": "failed",
+          "state": "open",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "failed",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-problem-3",
+          "date": "2026-07-26",
+          "title": "Business Signals workflow conclusion is failure",
+          "status": "failed",
+          "state": "open",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "failed",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-warning-0",
+          "date": "2026-07-26",
+          "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-26-persistent-asset-manifest.json",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-warning-1",
+          "date": "2026-07-26",
+          "title": "missing quality gate report: agent-workflow/reports/2026-07-26-guanlan-monitor-quality-gate.md",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
+        {
+          "id": "supervision-2026-07-26-business_signals-warning-2",
+          "date": "2026-07-26",
+          "title": "local Obsidian sync may be blocked by 44 dirty file(s)",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals compatibility / Operations",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        },
         {
           "id": "2026-07-25-business_signals-no-run-or-stale-assets",
           "date": "2026-07-25",
@@ -334,21 +655,6 @@
           "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-25-community_intelligence-community-intelligence.md"
         },
         {
-          "id": "supervision-2026-07-25-community_intelligence-warning-0",
-          "date": "2026-07-25",
-          "title": "community scheduled task last result is 3221225786, but same-date data and gate are healthy",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
-          "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication closure"
-        },
-        {
           "id": "2026-07-24-business_signals-no-run-or-stale-assets",
           "date": "2026-07-24",
           "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
@@ -369,182 +675,6 @@
           "validation": "38-card editorial, unified frontstage, and pre-commit gates passed",
           "prevention": "gate",
           "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-24-business_signals-no-run-or-stale-assets.md"
-        },
-        {
-          "id": "2026-07-23-follow_builders_skill-afternoon-skill-runner",
-          "date": "2026-07-23",
-          "title": "Hermes Repair Request: First-Line Viewpoints Skill",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "high",
-          "laneId": "follow_builders_skill",
-          "category": "afternoon_skill_runner",
-          "failedGate": "agent-workflow/reports/2026-07-23-daily-supervision-report.md",
-          "reportPath": "agent-workflow/reports/2026-07-23-daily-supervision-report.md",
-          "dataGenerated": "no",
-          "neededAction": "repair the existing 16:10 task wake/retry settings and force a post-run Hermes supervision refresh; do not fabricate a historical archive from a later feed",
-          "createdAt": "2026-07-24T16:55:00+08:00",
-          "updatedAt": "2026-07-24T16:55:19+08:00",
-          "resolvedAt": "2026-07-24T16:55:19+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "node --test agent-workflow/tools/tests/daily-supervision-follow-builders.test.mjs; npm run test:data-center-site:core; forced 2026-07-21..24 supervision replay",
-          "prevention": "eval",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-23-follow_builders_skill-afternoon-skill-runner.md"
-        },
-        {
-          "id": "2026-07-19-follow_builders_skill-first-line-viewpoints",
-          "date": "2026-07-19",
-          "title": "Hermes Repair Request: First-Line Viewpoints Skill",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "follow_builders_skill",
-          "category": "first_line_viewpoints",
-          "failedGate": "follow_builders_skill daily supervision",
-          "reportPath": "agent-workflow/reports/2026-07-19-daily-supervision-report.md",
-          "dataGenerated": "yes",
-          "neededAction": "run the local follow-builders skill publisher and inspect the generated publish report",
-          "createdAt": "2026-07-19T16:30:45+08:00",
-          "updatedAt": "2026-07-19T16:32:47+08:00",
-          "resolvedAt": "2026-07-19T16:32:47+08:00",
-          "resolver": "codex",
-          "fixCommit": "2d090149e8091ce3b4f018e3f07ac078a167d179",
-          "validation": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-07-19",
-          "prevention": "not-needed",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-19-follow_builders_skill-first-line-viewpoints.md"
-        },
-        {
-          "id": "2026-06-29-community_intelligence-community-intelligence",
-          "date": "2026-06-29",
-          "title": "Hermes Repair Request: Community Intelligence",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "community_intelligence",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "rerun gate",
-          "createdAt": "2026-06-29T13:06:03+08:00",
-          "updatedAt": "2026-07-19T14:43:37+08:00",
-          "resolvedAt": "2026-07-19T14:43:37+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "2026-07-19_community_gate_67_items_77_links",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-community_intelligence-community-intelligence.md"
-        },
-        {
-          "id": "2026-07-02-skill_ops-skill-ops",
-          "date": "2026-07-02",
-          "title": "Hermes Repair Request: Skill Ops Governance",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "skill_ops",
-          "category": "skill_ops",
-          "failedGate": "skill_ops daily supervision",
-          "reportPath": "agent-workflow/reports/2026-07-02-daily-supervision-report.md",
-          "dataGenerated": "not_applicable",
-          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-          "createdAt": "2026-07-02T11:18:08+08:00",
-          "updatedAt": "2026-07-19T14:43:36+08:00",
-          "resolvedAt": "2026-07-19T14:43:36+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "check:skill-ops_passed_registry_current",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-skill_ops-skill-ops.md"
-        },
-        {
-          "id": "2026-07-19-skill_ops-monitor-or-gate-failure",
-          "date": "2026-07-19",
-          "title": "Hermes Repair Request: Skill Ops Governance",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "skill_ops",
-          "category": "monitor_or_gate_failure",
-          "failedGate": "skill_ops daily supervision",
-          "reportPath": "agent-workflow/reports/2026-07-19-daily-supervision-report.md",
-          "dataGenerated": "not_applicable",
-          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-          "createdAt": "2026-07-19T14:41:47+08:00",
-          "updatedAt": "2026-07-19T14:43:35+08:00",
-          "resolvedAt": "2026-07-19T14:43:35+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "check:skill-ops_passed_and_daily_supervision_healthy",
-          "prevention": "eval",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-19-skill_ops-monitor-or-gate-failure.md"
-        },
-        {
-          "id": "2026-07-04-first_line_viewpoints-monitor-or-gate-failure",
-          "date": "2026-07-04",
-          "title": "Hermes Repair Request: First-Line Viewpoints",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "first_line_viewpoints",
-          "category": "monitor_or_gate_failure",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-07-04-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` only after targeted diagnosis",
-          "createdAt": "2026-07-04T11:18:50+08:00",
-          "updatedAt": "2026-07-04T11:22:26+08:00",
-          "resolvedAt": "2026-07-04T11:22:26+08:00",
-          "resolver": "codex",
-          "fixCommit": "4563b3cfe479c10acb1661c15e2de518c8e383e7",
-          "validation": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-07-04; node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from=2026-07-04 --to=2026-07-04 --dry-run=true; npm run supervise:daily -- --date=2026-07-04",
-          "prevention": "eval",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-04-first_line_viewpoints-monitor-or-gate-failure.md"
-        },
-        {
-          "id": "2026-06-29-follow_builders_skill-monitor-or-gate-failure",
-          "date": "2026-06-29",
-          "title": "Hermes Repair Request: First-Line Viewpoints Skill",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "follow_builders_skill",
-          "category": "monitor_or_gate_failure",
-          "failedGate": "follow_builders_skill daily supervision",
-          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-          "dataGenerated": "yes",
-          "neededAction": "repair the local follow-builders skill runner or feed preparation before rerunning afternoon publish",
-          "createdAt": "2026-06-29T16:40:24+08:00",
-          "updatedAt": "2026-07-03T11:20:41+08:00",
-          "resolvedAt": "2026-07-03T11:20:41+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "npm run supervise:daily -- --date=2026-06-29",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-follow_builders_skill-monitor-or-gate-failure.md"
-        },
-        {
-          "id": "2026-07-02-business_signals-daily-problem-watchdog",
-          "date": "2026-07-02",
-          "title": "Business Signals Daily Problem Watchdog (2026-07-02)",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "daily_problem_watchdog",
-          "failedGate": "daily_problem_watchdog",
-          "reportPath": "agent-workflow/reports/2026-07-02-daily-recovery-watchdog.md",
-          "dataGenerated": "unknown",
-          "neededAction": "inspect failed production report and repair the smallest responsible stage; do not dispatch a full rerun from Hermes",
-          "createdAt": "2026-07-02T02:44:07.950Z",
-          "updatedAt": "2026-07-02T11:20:58+08:00",
-          "resolvedAt": "2026-07-02T11:20:58+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "npm run supervise:daily -- --date=2026-07-02",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-business_signals-daily-problem-watchdog.md"
         }
       ]
     }
@@ -552,9 +682,9 @@
   "inbox": {
     "open": [
       {
-        "id": "supervision-2026-07-25-community_intelligence-warning-0",
-        "date": "2026-07-25",
-        "title": "community scheduled task last result is 3221225786, but same-date data and gate are healthy",
+        "id": "supervision-2026-07-26-community_intelligence-warning-0",
+        "date": "2026-07-26",
+        "title": "community scheduled task last result is 1, but same-date data and gate are healthy",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -564,7 +694,134 @@
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
         "neededAction": "",
-        "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication closure"
+        "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-problem-0",
+        "date": "2026-07-26",
+        "title": "business-signal activeDate is 2026-07-25, expected 2026-07-26",
+        "status": "failed",
+        "state": "open",
+        "priority": "urgent",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "failed",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-problem-1",
+        "date": "2026-07-26",
+        "title": "public Card count is 0 for 2026-07-26",
+        "status": "failed",
+        "state": "open",
+        "priority": "urgent",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "failed",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-problem-2",
+        "date": "2026-07-26",
+        "title": "no same-date signal Card files or frontstage Core Signal Cards",
+        "status": "failed",
+        "state": "open",
+        "priority": "urgent",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "failed",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-problem-3",
+        "date": "2026-07-26",
+        "title": "Business Signals workflow conclusion is failure",
+        "status": "failed",
+        "state": "open",
+        "priority": "urgent",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "failed",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-warning-0",
+        "date": "2026-07-26",
+        "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-26-persistent-asset-manifest.json",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-warning-1",
+        "date": "2026-07-26",
+        "title": "missing quality gate report: agent-workflow/reports/2026-07-26-guanlan-monitor-quality-gate.md",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "supervision-2026-07-26-business_signals-warning-2",
+        "date": "2026-07-26",
+        "title": "local Obsidian sync may be blocked by 44 dirty file(s)",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals compatibility / Operations",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
+        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+      },
+      {
+        "id": "2026-07-26-community-intelligence-recurring-73a400f41c5af405",
+        "date": "2026-07-26",
+        "title": "Recurring warning: community_intelligence",
+        "status": "open",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "community_intelligence",
+        "category": "recurring_automation_issue",
+        "failedGate": "repeated daily supervision signal",
+        "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
+        "dataGenerated": "inspect linked daily reports",
+        "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
+        "createdAt": "2026-07-26T08:45:31.857Z",
+        "updatedAt": "",
+        "resolvedAt": "",
+        "resolver": "",
+        "fixCommit": "",
+        "validation": "",
+        "prevention": "",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-26-community-intelligence-recurring-73a400f41c5af405.md"
       }
     ],
     "resolved": [
@@ -1246,7 +1503,7 @@
       {
         "id": "community_intelligence",
         "label": "Community Intelligence",
-        "schedule": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication closure",
+        "schedule": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure",
         "status": "warning",
         "statusText": "warning",
         "problemCount": 0,
@@ -1261,21 +1518,19 @@
       },
       {
         "id": "business_signals",
-        "label": "Business Signals / Intelligence Map / Dashboard",
+        "label": "Business Signals compatibility / Operations",
         "schedule": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
-        "status": "passed",
-        "statusText": "已通过",
-        "problemCount": 0,
-        "warningCount": 0,
-        "actions": [],
+        "status": "failed",
+        "statusText": "失败",
+        "problemCount": 4,
+        "warningCount": 3,
+        "actions": [
+          "send Codex a business_signals repair request with failed gate and report path"
+        ],
         "evidence": [
           {
-            "label": "Pool",
-            "value": 27
-          },
-          {
             "label": "Cards",
-            "value": 27
+            "value": 0
           }
         ]
       },
@@ -1291,7 +1546,7 @@
         "evidence": [
           {
             "label": "Items",
-            "value": 47
+            "value": 62
           }
         ]
       },
@@ -1299,15 +1554,15 @@
         "id": "follow_builders_skill",
         "label": "First-Line Viewpoints Skill",
         "schedule": "16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45",
-        "status": "waiting",
-        "statusText": "等待中",
+        "status": "passed",
+        "statusText": "已通过",
         "problemCount": 0,
         "warningCount": 0,
         "actions": [],
         "evidence": [
           {
             "label": "Items",
-            "value": 0
+            "value": 35
           }
         ]
       }
@@ -1328,7 +1583,7 @@
       {
         "label": "GitHub Pages",
         "status": "passed",
-        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30142066066"
+        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30194231608"
       },
       {
         "label": "Business Signals PR",
@@ -1337,8 +1592,8 @@
       },
       {
         "label": "本地 Obsidian 同步",
-        "status": "passed",
-        "detail": "工作区干净"
+        "status": "manual_required",
+        "detail": "44 个本地变更阻塞自动判断"
       },
       {
         "label": "Pipeline Dashboard",
@@ -1347,8 +1602,8 @@
       },
       {
         "label": "Daily Supervision",
-        "status": "passed",
-        "detail": "2026-07-25T03:21:19.656Z"
+        "status": "failed",
+        "detail": "2026-07-26T08:45:31.578Z"
       }
     ]
   },
@@ -2228,7 +2483,7 @@
       {
         "key": "SKILL",
         "label": "Skill Store",
-        "value": "v1.6.5 Governance audit alignment"
+        "value": "v1.7.0 Funding Insights generation lane"
       }
     ],
     "principles": [
