@@ -1,0 +1,20 @@
+[
+  {
+    "agent": "evidence-explorer",
+    "target": "agent-workflow/product/data-center-v4-contract.md",
+    "question": "Does the contract explicitly forbid recommendation or advice in V4 canonical outputs?",
+    "expected": "recommendation"
+  },
+  {
+    "agent": "quality-reviewer",
+    "target": "agent-workflow/model-evals/fixtures/quality-reviewer-invalid-canonical-event.js",
+    "question": "Identify the intentional V4 canonical-contract defect in this fixture.",
+    "expected": "recommendation"
+  },
+  {
+    "agent": "experience-reviewer",
+    "target": "agent-workflow/model-evals/fixtures/experience-reviewer-backend-field.html",
+    "question": "Identify the intentional frontstage field-discipline defect in this fixture.",
+    "expected": "gate_reason"
+  }
+]

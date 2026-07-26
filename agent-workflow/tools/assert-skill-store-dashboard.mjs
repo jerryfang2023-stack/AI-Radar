@@ -81,7 +81,8 @@ function semanticSummary(skills) {
   };
 }
 
-export function evaluateSkillStoreDashboard(paths = dashboardContractPaths()) {
+export function evaluateSkillStoreDashboard(paths = dashboardContractPaths(), options = {}) {
+  const requireCompatibilityMirror = options.requireCompatibilityMirror ?? true;
   const errors = [];
   let payload;
   try {
@@ -99,6 +100,22 @@ export function evaluateSkillStoreDashboard(paths = dashboardContractPaths()) {
     if (JSON.stringify(actual) !== JSON.stringify(expected)) {
       errors.push(`summary.${field} expected ${JSON.stringify(expected)}, got ${JSON.stringify(actual)}`);
     }
+  }
+  const discovery = payload.meta?.summary?.discovery;
+  const discoveryFields = ["discovered", "configuredDisabled", "enabled", "invalidManifests", "enabledDuplicateNames"];
+  if (!discovery || typeof discovery !== "object") {
+    errors.push("summary.discovery is missing");
+  } else {
+    for (const field of discoveryFields) {
+      if (!Number.isInteger(discovery[field]) || discovery[field] < 0) {
+        errors.push(`summary.discovery.${field} must be a non-negative integer`);
+      }
+    }
+    if (discovery.discovered !== discovery.configuredDisabled + discovery.enabled) {
+      errors.push("summary.discovery discovered count must equal enabled plus configuredDisabled");
+    }
+    if (discovery.invalidManifests !== 0) errors.push("summary.discovery invalidManifests must be zero");
+    if (discovery.enabledDuplicateNames !== 0) errors.push("summary.discovery enabledDuplicateNames must be zero");
   }
 
   let expectedVersion = {};
@@ -135,7 +152,7 @@ export function evaluateSkillStoreDashboard(paths = dashboardContractPaths()) {
     if (dashboardSkill.current !== expectedCurrent) {
       errors.push(`${skill.name} current expected ${expectedCurrent}, got ${dashboardSkill.current ?? "missing"}`);
     }
-    if (expected.mirrored_in_skill_store !== false) {
+    if (requireCompatibilityMirror && expected.mirrored_in_skill_store !== false) {
       const mirror = compareSkill(skill.name, paths);
       if (dashboardSkill.syncState !== mirror.state) {
         errors.push(`${skill.name} syncState expected ${mirror.state}, got ${dashboardSkill.syncState ?? "missing"}`);
@@ -156,7 +173,11 @@ export function evaluateSkillStoreDashboard(paths = dashboardContractPaths()) {
     ok: errors.length === 0,
     status: errors.length ? "failed" : "passed",
     errors,
-    summary: { skills: skills.length, governed: readGovernedSkills(paths.projectSkillDir).length },
+    summary: {
+      skills: skills.length,
+      governed: readGovernedSkills(paths.projectSkillDir).length,
+      discovery: discovery || null,
+    },
   };
 }
 

@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import { dashboardContractPaths, evaluateSkillStoreDashboard } from "./assert-skill-store-dashboard.mjs";
 import { defaultPaths, readSkillStoreVersion, ruleDigest } from "./lib/guanlan-skill-ops.mjs";
+import { auditSkillDiscovery } from "./lib/skill-discovery-audit.mjs";
 
 const root = process.cwd();
 const skillOpsPaths = defaultPaths(root);
@@ -555,6 +556,7 @@ const cleanupQueue = [...skills]
     usage_count: skill.usage_count,
     last_used: skill.last_used,
   }));
+const discovery = auditSkillDiscovery();
 
 const payload = {
   meta: {
@@ -566,7 +568,10 @@ const payload = {
     cleanupObservationPath: relProjectPath(cleanupObservationPath),
     version: readSkillStoreVersion(skillOpsPaths),
     cleanupPolicy: CLEANUP_POLICY,
-    summary: summarize(skills),
+    summary: {
+      ...summarize(skills),
+      discovery: discovery.summary,
+    },
   },
   cleanupQueue,
   skills,

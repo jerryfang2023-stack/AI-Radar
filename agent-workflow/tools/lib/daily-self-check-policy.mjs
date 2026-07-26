@@ -3,6 +3,7 @@ export function shouldRebuildSkillStore(report) {
   if (!lane) return false;
   const evidence = lane.evidence || {};
   if (["missing", "stale"].includes(evidence.registryState)) return true;
+  if (evidence.discoveryState === "stale") return true;
   const dashboardErrors = Array.isArray(evidence.dashboardErrors) ? evidence.dashboardErrors : [];
   const semanticErrors = dashboardErrors.filter((error) => !/\bsyncState expected\b|mirror existence flags/iu.test(String(error)));
   if (semanticErrors.length) return true;

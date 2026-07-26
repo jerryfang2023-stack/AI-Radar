@@ -9,8 +9,9 @@ updated:
   - SKILL.md required reads
 validation:
   - validate-guanlan-skills
+  - diff-repo-skills
   - diff-skill-store
 version_change: patch
 ```
 
-Why it passes: the recurring failure becomes an eval, example, and short memory, then the runtime skill is synced.
+Why it passes: the recurring failure becomes an eval, example, and short memory, then both the repo runtime and compatibility mirror are synced.

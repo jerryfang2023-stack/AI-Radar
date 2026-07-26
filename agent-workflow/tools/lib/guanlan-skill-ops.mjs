@@ -12,6 +12,7 @@ export function defaultPaths(root = process.cwd()) {
     root,
     storeDir: process.env.GUANLAN_SKILL_STORE || path.join(os.homedir(), ".skill-store"),
     projectSkillDir: path.join(root, "agent-workflow", "skills"),
+    repoRuntimeSkillDir: path.join(root, ".agents", "skills"),
     registryPath: path.join(root, "agent-workflow", "skills", "skill-registry.md"),
     versionPath: path.join(root, "agent-workflow", "skills", "skill-store-version.json"),
   };
@@ -250,11 +251,15 @@ export function isCurrentLike(status = "") {
   return /current|supporting|governance/i.test(status);
 }
 
-export function evaluateSkillOps(paths = defaultPaths()) {
+export function evaluateSkillOps(paths = defaultPaths(), options = {}) {
   const skills = readGovernedSkills(paths.projectSkillDir);
   const version = readSkillStoreVersion(paths);
   const errors = [];
-  const syncRows = [];
+  const runtimeRows = [];
+  const compatibilityRows = [];
+  const repoRuntimeSkillDir = paths.repoRuntimeSkillDir || path.join(paths.root || process.cwd(), ".agents", "skills");
+  const requireCompatibilityStore = options.requireCompatibilityStore
+    ?? process.env.GUANLAN_REQUIRE_SKILL_STORE === "1";
   const currentSkills = skills.filter((skill) => isCurrentLike(skill.guanlan.status));
   const laneOwners = skills.filter((skill) => /lane owner/i.test(String(skill.guanlan.status || "")));
 
@@ -266,6 +271,7 @@ export function evaluateSkillOps(paths = defaultPaths()) {
   for (const skill of skills) {
     const meta = skill.guanlan;
     const prefix = skill.name;
+    const openAiYamlPath = path.join(skill.dir, "agents", "openai.yaml");
     if (!skill.hasSkillMd) errors.push(`${prefix}: SKILL.md missing`);
     if (skill.frontmatter.name !== skill.name) errors.push(`${prefix}: frontmatter name must match folder name`);
     if (!skill.frontmatter.description) errors.push(`${prefix}: description missing`);
@@ -278,10 +284,33 @@ export function evaluateSkillOps(paths = defaultPaths()) {
       if (!skill.exampleFiles.length) errors.push(`${prefix}: current skill needs examples/`);
       if (meta.memory_required === true && !skill.hasMemory) errors.push(`${prefix}: memory_required=true but MEMORY.md missing`);
     }
+    if (exists(openAiYamlPath)) {
+      const openAiYaml = readText(openAiYamlPath).replace(/\r\n/g, "\n");
+      if (!openAiYaml) errors.push(`${prefix}: agents/openai.yaml is unreadable or empty`);
+      if (!/^interface:\s*$/mu.test(openAiYaml)) errors.push(`${prefix}: agents/openai.yaml needs an interface mapping`);
+      for (const field of ["display_name", "short_description", "default_prompt"]) {
+        if (!new RegExp(`^ {2}${field}:\\s*\\S`, "mu").test(openAiYaml)) {
+          errors.push(`${prefix}: agents/openai.yaml interface.${field} missing`);
+        }
+      }
+      if (/\uFFFD/u.test(openAiYaml)) errors.push(`${prefix}: agents/openai.yaml contains invalid replacement characters`);
+      if (!/^policy:\s*$(?:\n|.)*^ {2}allow_implicit_invocation:\s*(?:true|false)\s*$/mu.test(openAiYaml)) {
+        errors.push(`${prefix}: agents/openai.yaml must declare policy.allow_implicit_invocation as true or false`);
+      }
+    }
+    const runtime = compareSkill(skill.name, {
+      projectSkillDir: paths.projectSkillDir,
+      storeDir: repoRuntimeSkillDir,
+    });
+    runtimeRows.push({ skill: skill.name, state: runtime.state });
+    if (runtime.state !== "synced") errors.push(`${prefix}: repo Skill runtime sync state is ${runtime.state}`);
+
     if (meta.mirrored_in_skill_store !== false) {
-      const compare = compareSkill(skill.name, paths);
-      syncRows.push({ skill: skill.name, state: compare.state });
-      if (compare.state !== "synced") errors.push(`${prefix}: .skill-store sync state is ${compare.state}`);
+      const compatibility = compareSkill(skill.name, paths);
+      compatibilityRows.push({ skill: skill.name, state: compatibility.state });
+      if (requireCompatibilityStore && compatibility.state !== "synced") {
+        errors.push(`${prefix}: compatibility .skill-store sync state is ${compatibility.state}`);
+      }
     }
   }
 
@@ -298,7 +327,8 @@ export function evaluateSkillOps(paths = defaultPaths()) {
   const evalReady = currentSkills.filter((skill) => skill.evalFiles.length).length;
   const exampleReady = currentSkills.filter((skill) => skill.exampleFiles.length).length;
   const memoryMissing = currentSkills.filter((skill) => skill.guanlan.memory_required === true && !skill.hasMemory);
-  const syncDrift = syncRows.filter((row) => row.state !== "synced");
+  const syncDrift = runtimeRows.filter((row) => row.state !== "synced");
+  const compatibilitySyncDrift = compatibilityRows.filter((row) => row.state !== "synced");
 
   return {
     ok: errors.length === 0,
@@ -311,13 +341,17 @@ export function evaluateSkillOps(paths = defaultPaths()) {
       current: currentSkills.length,
       laneOwners: laneOwners.length,
       registryState,
-      mirrored: syncRows.length,
+      mirrored: runtimeRows.length,
       syncDrift: syncDrift.length,
+      compatibilityMirrored: compatibilityRows.length,
+      compatibilitySyncDrift: compatibilitySyncDrift.length,
+      compatibilityRequired: requireCompatibilityStore,
       evalCoverage: currentSkills.length ? Math.round(evalReady / currentSkills.length * 100) : 0,
       exampleCoverage: currentSkills.length ? Math.round(exampleReady / currentSkills.length * 100) : 0,
       memoryRequiredMissing: memoryMissing.length,
     },
-    sync: syncRows,
+    sync: runtimeRows,
+    compatibilitySync: compatibilityRows,
   };
 }
 

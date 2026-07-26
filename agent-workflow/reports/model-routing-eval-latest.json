@@ -1,0 +1,800 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-26T02:16:30.843Z",
+  "protocol": "agent-workflow/model-evals/model-routing-v1.md",
+  "cases": 26,
+  "profiles": [
+    {
+      "id": "sol-high",
+      "model": "gpt-5.6-sol",
+      "effort": "high"
+    },
+    {
+      "id": "sol-medium",
+      "model": "gpt-5.6-sol",
+      "effort": "medium"
+    },
+    {
+      "id": "terra-medium",
+      "model": "gpt-5.6-terra",
+      "effort": "medium"
+    }
+  ],
+  "results": [
+    {
+      "id": "sol-high",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "durationMs": 191160,
+      "exitCode": 0,
+      "signal": "",
+      "status": "completed",
+      "score": {
+        "returned": 26,
+        "unique": 26,
+        "duplicateIds": [],
+        "correct": 26,
+        "accuracy": 1,
+        "evidenceValid": 26,
+        "evidenceRate": 1,
+        "score": 52,
+        "maxScore": 52,
+        "details": [
+          {
+            "id": "follow-builders",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/follow-builders/evals/wavesight-boundary-evals.md",
+            "evidenceExists": true,
+            "rationale": "Builder posts cannot directly support Business Signals without separate original-source capture through Raw and Pool."
+          },
+          {
+            "id": "hardware-projection",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-ai-hardware-data-projection/evals/hardware-projection-evals.md",
+            "evidenceExists": true,
+            "rationale": "Incidental chip or server mentions in a lawsuit do not establish a supported hardware event."
+          },
+          {
+            "id": "business-signals",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-business-signals-monitor/evals/business-signals-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "The Raw 150 target is diagnostic and cannot independently block a release after minimum evidence and downstream gates pass."
+          },
+          {
+            "id": "code-rule-audit",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-code-rule-auditor/evals/code-rule-auditor-evals.md",
+            "evidenceExists": true,
+            "rationale": "A retired gate mentioned only in historical evidence cannot be classified as an active defect without reachability proof."
+          },
+          {
+            "id": "community-intelligence",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-community-intelligence-monitor/evals/community-intelligence-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "Logged-in Community Intelligence collection is a local task and must not be required to run in GitHub Actions."
+          },
+          {
+            "id": "daily-monitor",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-daily-monitor/evals/daily-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "A diagnostic Raw-volume shortfall must not initiate a second full provider collection cycle."
+          },
+          {
+            "id": "daily-monitor-qc",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-daily-monitor-qc/evals/daily-monitor-qc-evals.md",
+            "evidenceExists": true,
+            "rationale": "Semantic QC is correctly limited to anomalies or explicit audits and remains outside mandatory publication gates."
+          },
+          {
+            "id": "data-center-supervisor",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-data-center-supervisor/evals/data-center-supervisor-evals.md",
+            "evidenceExists": true,
+            "rationale": "The described chain preserves source lineage and explicit missing values without introducing forbidden judgment fields."
+          },
+          {
+            "id": "data-integrity",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-data-integrity-gate/evals/data-integrity-gate-evals.md",
+            "evidenceExists": true,
+            "rationale": "An FDE projection must resolve through an accepted event rather than pointing directly to a SourceArtifact."
+          },
+          {
+            "id": "enterprise-fde",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-enterprise-ai-fde-monitor/evals/enterprise-ai-fde-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "FDE is an independent lens and cannot depend on adding a fourth formal Signal Card type."
+          },
+          {
+            "id": "event-normalizer",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-event-normalizer/evals/event-normalizer-evals.md",
+            "evidenceExists": true,
+            "rationale": "The contract requires conflicting claims to remain distinct and disputed event states to be preserved."
+          },
+          {
+            "id": "fde-projection",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-fde-data-projection/evals/fde-projection-evals.md",
+            "evidenceExists": true,
+            "rationale": "An undisclosed outcome must remain absent from reported outcomes and be recorded explicitly as undisclosed."
+          },
+          {
+            "id": "first-line-viewpoints",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-first-line-viewpoints-monitor/evals/first-line-viewpoints-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "First-Line Viewpoints correctly routes through its lane owner before the generic follow-builders capability."
+          },
+          {
+            "id": "monitor-quality",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-monitor-quality-gate/evals/monitor-quality-gate-evals.md",
+            "evidenceExists": true,
+            "rationale": "Provider failure remains diagnostic and does not independently block sufficient accepted evidence."
+          },
+          {
+            "id": "monthly-report",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-monthly-business-structure-report/evals/monthly-business-structure-report-evals.md",
+            "evidenceExists": true,
+            "rationale": "A single evidence-bounded structural judgment with the date retained in metadata satisfies the structural-headline contract."
+          },
+          {
+            "id": "monthly-page",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-monthly-report-page-generator/evals/monthly-report-page-generator-evals.md",
+            "evidenceExists": true,
+            "rationale": "Complete accepted content, readable hierarchy, and preserved judgment ownership satisfy the monthly page contract."
+          },
+          {
+            "id": "opportunity-radar",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-opportunity-radar-updater/evals/opportunity-radar-updater-evals.md",
+            "evidenceExists": true,
+            "rationale": "The stated windows, source-backed fields, and human review conform to the Opportunity Map contract."
+          },
+          {
+            "id": "raw-pool-card",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-raw-pool-card/evals/raw-pool-card-evals.md",
+            "evidenceExists": true,
+            "rationale": "An explicitly requested compatibility run may emit the three formal Card types while keeping them outside V4 canonical data."
+          },
+          {
+            "id": "skill-editor",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-skill-editor/evals/skill-editor-evals.md",
+            "evidenceExists": true,
+            "rationale": "A project Skill edit fails validation when its configured compatibility mirror is left unsynchronized."
+          },
+          {
+            "id": "source-ingestion",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-source-ingestion/evals/source-ingestion-evals.md",
+            "evidenceExists": true,
+            "rationale": "Search-result snippets cannot close funding fact gaps without original-source capture."
+          },
+          {
+            "id": "taxonomy",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-taxonomy-governor/evals/taxonomy-governor-evals.md",
+            "evidenceExists": true,
+            "rationale": "The TagAssertion contains the required evidence metadata and correctly has no effect on eligibility."
+          },
+          {
+            "id": "trend-candidate",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-trend-candidate-writer/evals/trend-candidate-evals.md",
+            "evidenceExists": true,
+            "rationale": "Daily production must not create a trend candidate from one company announcement or without an explicit historical or manual review request."
+          },
+          {
+            "id": "trend-radar",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-trend-radar-updater/evals/trend-radar-updater-evals.md",
+            "evidenceExists": true,
+            "rationale": "Opportunity scores and recommendation fields are forbidden in factual Trend Radar output."
+          },
+          {
+            "id": "typography",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-typography-qc/evals/typography-qc-evals.md",
+            "evidenceExists": true,
+            "rationale": "A retired V3 daily-observation page cannot serve as the current V4 typography baseline."
+          },
+          {
+            "id": "weekly-report",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-weekly-business-change-radar/evals/weekly-business-change-radar-evals.md",
+            "evidenceExists": true,
+            "rationale": "Exact counts and at least two named Signals plus one named Opinion per trend chain satisfy the stated weekly evidence checks."
+          },
+          {
+            "id": "weekly-page",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-weekly-report-page-generator/evals/weekly-report-page-generator-evals.md",
+            "evidenceExists": true,
+            "rationale": "An operational archive cannot be the page's only source because canonical weekly content must exist under 01-SiteV2/content/08-report."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sol-medium",
+      "model": "gpt-5.6-sol",
+      "effort": "medium",
+      "durationMs": 103323,
+      "exitCode": 0,
+      "signal": "",
+      "status": "completed",
+      "score": {
+        "returned": 26,
+        "unique": 26,
+        "duplicateIds": [],
+        "correct": 25,
+        "accuracy": 0.9615384615384616,
+        "evidenceValid": 26,
+        "evidenceRate": 1,
+        "score": 51,
+        "maxScore": 52,
+        "details": [
+          {
+            "id": "follow-builders",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/follow-builders/evals/wavesight-boundary-evals.md",
+            "evidenceExists": true,
+            "rationale": "Builder posts cannot directly supply Business Signal facts without separate original-source capture through Raw and Pool."
+          },
+          {
+            "id": "hardware-projection",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-ai-hardware-data-projection/evals/hardware-projection-evals.md",
+            "evidenceExists": true,
+            "rationale": "A lawsuit does not qualify as a hardware record merely because it mentions chips or servers."
+          },
+          {
+            "id": "business-signals",
+            "expected": "fail",
+            "actual": "pass",
+            "decisionCorrect": false,
+            "evidencePath": "agent-workflow/skills/guanlan-business-signals-monitor/evals/business-signals-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "Raw 150 is a diagnostic target and cannot independently block release after minimum evidence supply and downstream gates pass."
+          },
+          {
+            "id": "code-rule-audit",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-code-rule-auditor/evals/code-rule-auditor-evals.md",
+            "evidenceExists": true,
+            "rationale": "A retired rule found only in a historical closeout cannot be reported as an active defect without reachability proof."
+          },
+          {
+            "id": "community-intelligence",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-community-intelligence-monitor/evals/community-intelligence-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "Logged-in Community Intelligence collection is a local task and must not be required to run in GitHub Actions."
+          },
+          {
+            "id": "daily-monitor",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-daily-monitor/evals/daily-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "A Raw-volume diagnostic shortfall must not trigger another full provider collection cycle."
+          },
+          {
+            "id": "daily-monitor-qc",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-daily-monitor-qc/evals/daily-monitor-qc-evals.md",
+            "evidenceExists": true,
+            "rationale": "Semantic QC is explicitly on-demand for anomalies or audits and is not a mandatory publication gate."
+          },
+          {
+            "id": "data-center-supervisor",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-data-center-supervisor/evals/data-center-supervisor-evals.md",
+            "evidenceExists": true,
+            "rationale": "The described chain preserves source-backed Claims and events, explicit missing values, and the canonical judgment-field boundary."
+          },
+          {
+            "id": "data-integrity",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-data-integrity-gate/evals/data-integrity-gate-evals.md",
+            "evidenceExists": true,
+            "rationale": "An FDE projection must resolve through an accepted event rather than point directly to a SourceArtifact."
+          },
+          {
+            "id": "enterprise-fde",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-enterprise-ai-fde-monitor/evals/enterprise-ai-fde-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "FDE is an independent lens and must not depend on introducing a fourth formal Signal Card type."
+          },
+          {
+            "id": "event-normalizer",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-event-normalizer/evals/event-normalizer-evals.md",
+            "evidenceExists": true,
+            "rationale": "The contract requires conflicting Claims to remain distinct and disputed event states to be preserved."
+          },
+          {
+            "id": "fde-projection",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-fde-data-projection/evals/fde-projection-evals.md",
+            "evidenceExists": true,
+            "rationale": "Undisclosed outcomes must remain empty in reported_outcomes and be recorded explicitly as undisclosed."
+          },
+          {
+            "id": "first-line-viewpoints",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-first-line-viewpoints-monitor/evals/first-line-viewpoints-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "First-Line Viewpoints work must route through its lane-owning Skill before generic follow-builders processing."
+          },
+          {
+            "id": "monitor-quality",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-monitor-quality-gate/evals/monitor-quality-gate-evals.md",
+            "evidenceExists": true,
+            "rationale": "Provider failures remain visible diagnostics and do not independently block sufficient accepted evidence."
+          },
+          {
+            "id": "monthly-report",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-monthly-business-structure-report/evals/monthly-business-structure-report-evals.md",
+            "evidenceExists": true,
+            "rationale": "A monthly headline should express one evidence-bounded structural judgment while keeping the date in metadata."
+          },
+          {
+            "id": "monthly-page",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-monthly-report-page-generator/evals/monthly-report-page-generator-evals.md",
+            "evidenceExists": true,
+            "rationale": "The page generator must render the complete accepted report readably while leaving report judgment to the content-writing Skill."
+          },
+          {
+            "id": "opportunity-radar",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-opportunity-radar-updater/evals/opportunity-radar-updater-evals.md",
+            "evidenceExists": true,
+            "rationale": "The specified windows, source-backed map fields, and human-reviewed Direction Cards follow the updater contract."
+          },
+          {
+            "id": "raw-pool-card",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-raw-pool-card/evals/raw-pool-card-evals.md",
+            "evidenceExists": true,
+            "rationale": "An explicitly requested compatibility run may emit only the three formal Card types while keeping them outside V4 canonical data."
+          },
+          {
+            "id": "skill-editor",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-skill-editor/evals/skill-editor-evals.md",
+            "evidenceExists": true,
+            "rationale": "Editing a project Skill while leaving its configured compatibility mirror unsynchronized violates the Skill editor contract."
+          },
+          {
+            "id": "source-ingestion",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-source-ingestion/evals/source-ingestion-evals.md",
+            "evidenceExists": true,
+            "rationale": "Search-result snippets cannot close funding fact gaps without captured original-source evidence."
+          },
+          {
+            "id": "taxonomy",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-taxonomy-governor/evals/taxonomy-governor-evals.md",
+            "evidenceExists": true,
+            "rationale": "The TagAssertion contains the required evidence metadata and correctly has no effect on eligibility."
+          },
+          {
+            "id": "trend-candidate",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-trend-candidate-writer/evals/trend-candidate-evals.md",
+            "evidenceExists": true,
+            "rationale": "Daily production must not create a trend candidate without an explicit review request or from a single company announcement."
+          },
+          {
+            "id": "trend-radar",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-trend-radar-updater/evals/trend-radar-updater-evals.md",
+            "evidenceExists": true,
+            "rationale": "Opportunity scores and recommendations are forbidden in factual Trend Radar output."
+          },
+          {
+            "id": "typography",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-typography-qc/evals/typography-qc-evals.md",
+            "evidenceExists": true,
+            "rationale": "A retired V3 daily-observation page cannot serve as the current V4 typography baseline."
+          },
+          {
+            "id": "weekly-report",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-weekly-business-change-radar/evals/weekly-business-change-radar-evals.md",
+            "evidenceExists": true,
+            "rationale": "The weekly report satisfies the exact-count rule and the minimum evidence requirement of two named Signals and one named Opinion per trend chain."
+          },
+          {
+            "id": "weekly-page",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-weekly-report-page-generator/evals/weekly-report-page-generator-evals.md",
+            "evidenceExists": true,
+            "rationale": "An operational report archive cannot be the page's only source because a canonical source under 01-SiteV2/content/08-report is required."
+          }
+        ]
+      }
+    },
+    {
+      "id": "terra-medium",
+      "model": "gpt-5.6-terra",
+      "effort": "medium",
+      "durationMs": 103555,
+      "exitCode": 0,
+      "signal": "",
+      "status": "completed",
+      "score": {
+        "returned": 26,
+        "unique": 26,
+        "duplicateIds": [],
+        "correct": 26,
+        "accuracy": 1,
+        "evidenceValid": 26,
+        "evidenceRate": 1,
+        "score": 52,
+        "maxScore": 52,
+        "details": [
+          {
+            "id": "follow-builders",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/follow-builders/evals/wavesight-boundary-evals.md",
+            "evidenceExists": true,
+            "rationale": "Builder posts cannot serve as Business Signal facts without separately captured original-source evidence."
+          },
+          {
+            "id": "hardware-projection",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-ai-hardware-data-projection/evals/hardware-projection-evals.md",
+            "evidenceExists": true,
+            "rationale": "A lawsuit mentioning chips or servers must not become a hardware record on that basis alone."
+          },
+          {
+            "id": "business-signals",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-business-signals-monitor/evals/business-signals-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "Raw-volume targets are diagnostics and cannot independently block an otherwise healthy release."
+          },
+          {
+            "id": "code-rule-audit",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-code-rule-auditor/evals/code-rule-auditor-evals.md",
+            "evidenceExists": true,
+            "rationale": "A historical retired gate is not an active defect without proof that it remains reachable in production."
+          },
+          {
+            "id": "community-intelligence",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-community-intelligence-monitor/evals/community-intelligence-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "Logged-in Community Intelligence collection is a local task and must not be required in GitHub Actions."
+          },
+          {
+            "id": "daily-monitor",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-daily-monitor/evals/daily-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "A Raw-volume diagnostic shortfall must not trigger another full monitoring cycle."
+          },
+          {
+            "id": "daily-monitor-qc",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-daily-monitor-qc/evals/daily-monitor-qc-evals.md",
+            "evidenceExists": true,
+            "rationale": "Semantic QC is correctly limited to anomalies or explicit audits rather than every publication."
+          },
+          {
+            "id": "data-center-supervisor",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-data-center-supervisor/evals/data-center-supervisor-evals.md",
+            "evidenceExists": true,
+            "rationale": "The described chain preserves source-backed Claims and events, explicit missingness, and canonical-object boundaries."
+          },
+          {
+            "id": "data-integrity",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-data-integrity-gate/evals/data-integrity-gate-evals.md",
+            "evidenceExists": true,
+            "rationale": "FDE records must resolve through an accepted event rather than point directly to a SourceArtifact."
+          },
+          {
+            "id": "enterprise-fde",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-enterprise-ai-fde-monitor/evals/enterprise-ai-fde-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "FDE is an independent lens and must not require a fourth formal Signal Card type."
+          },
+          {
+            "id": "event-normalizer",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-event-normalizer/evals/event-normalizer-evals.md",
+            "evidenceExists": true,
+            "rationale": "Conflicting claims and disputed states must remain distinct rather than be overwritten."
+          },
+          {
+            "id": "fde-projection",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-fde-data-projection/evals/fde-projection-evals.md",
+            "evidenceExists": true,
+            "rationale": "Undisclosed outcomes must remain empty and be explicitly recorded as undisclosed."
+          },
+          {
+            "id": "first-line-viewpoints",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-first-line-viewpoints-monitor/evals/first-line-viewpoints-monitor-evals.md",
+            "evidenceExists": true,
+            "rationale": "First-Line Viewpoints work correctly routes through its designated lane owner before generic follow-builders handling."
+          },
+          {
+            "id": "monitor-quality",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-monitor-quality-gate/evals/monitor-quality-gate-evals.md",
+            "evidenceExists": true,
+            "rationale": "Provider failures are diagnostic when accepted combined evidence remains sufficient."
+          },
+          {
+            "id": "monthly-report",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-monthly-business-structure-report/evals/monthly-business-structure-report-evals.md",
+            "evidenceExists": true,
+            "rationale": "The report provides one evidence-bounded structural judgment while retaining date information in metadata."
+          },
+          {
+            "id": "monthly-page",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-monthly-report-page-generator/evals/monthly-report-page-generator-evals.md",
+            "evidenceExists": true,
+            "rationale": "The page correctly renders accepted canonical content while preserving the content-writing Skill's judgment ownership."
+          },
+          {
+            "id": "opportunity-radar",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-opportunity-radar-updater/evals/opportunity-radar-updater-evals.md",
+            "evidenceExists": true,
+            "rationale": "The described update uses the required weekly window, baseline, source-backed fields, and human-reviewed Direction Cards."
+          },
+          {
+            "id": "raw-pool-card",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-raw-pool-card/evals/raw-pool-card-evals.md",
+            "evidenceExists": true,
+            "rationale": "The compatibility run uses only the three permitted Card types and keeps them outside V4 canonical data."
+          },
+          {
+            "id": "skill-editor",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-skill-editor/evals/skill-editor-evals.md",
+            "evidenceExists": true,
+            "rationale": "A project Skill edit fails when its configured .skill-store compatibility mirror is left unsynchronized."
+          },
+          {
+            "id": "source-ingestion",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-source-ingestion/evals/source-ingestion-evals.md",
+            "evidenceExists": true,
+            "rationale": "A search-result snippet cannot close a funding fact gap."
+          },
+          {
+            "id": "taxonomy",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-taxonomy-governor/evals/taxonomy-governor-evals.md",
+            "evidenceExists": true,
+            "rationale": "The TagAssertion includes required evidence metadata and does not influence eligibility."
+          },
+          {
+            "id": "trend-candidate",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-trend-candidate-writer/evals/trend-candidate-evals.md",
+            "evidenceExists": true,
+            "rationale": "Daily production must not create a trend candidate from one company announcement without an explicit historical or manual review."
+          },
+          {
+            "id": "trend-radar",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-trend-radar-updater/evals/trend-radar-updater-evals.md",
+            "evidenceExists": true,
+            "rationale": "Trend Radar outputs must reject opportunity scores and recommendation fields."
+          },
+          {
+            "id": "typography",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-typography-qc/evals/typography-qc-evals.md",
+            "evidenceExists": true,
+            "rationale": "Retired V3 daily-observation pages cannot serve as current typography baselines."
+          },
+          {
+            "id": "weekly-report",
+            "expected": "pass",
+            "actual": "pass",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-weekly-business-change-radar/evals/weekly-business-change-radar-evals.md",
+            "evidenceExists": true,
+            "rationale": "The report meets the exact-count and minimum named Signal and Opinion evidence requirements for each trend chain."
+          },
+          {
+            "id": "weekly-page",
+            "expected": "fail",
+            "actual": "fail",
+            "decisionCorrect": true,
+            "evidencePath": "agent-workflow/skills/guanlan-weekly-report-page-generator/evals/weekly-report-page-generator-evals.md",
+            "evidenceExists": true,
+            "rationale": "Weekly pages require a canonical source under 01-SiteV2/content/08-report and cannot rely only on an operational archive."
+          }
+        ]
+      }
+    }
+  ],
+  "recommendation": {
+    "primary": "gpt-5.6-sol/high",
+    "qualityReviewer": "gpt-5.6-sol/high",
+    "experienceReviewer": "gpt-5.6-sol/medium",
+    "evidenceExplorer": "gpt-5.6-terra/medium",
+    "rationale": "Role-aware defaults remain conservative; this routing suite alone cannot justify lowering the global primary agent."
+  }
+}

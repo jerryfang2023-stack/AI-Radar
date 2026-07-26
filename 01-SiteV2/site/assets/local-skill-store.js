@@ -227,19 +227,20 @@
 
   function renderMetrics() {
     const summary = data.meta?.summary || {};
+    const discovery = summary.discovery || {};
     const version = data.meta?.version || {};
     const versionText = version.version ? `Skill Store v${version.version}` : "Skill Store";
     const quality = `${summary.evalCoverage || 0}% / ${summary.exampleCoverage || 0}%`;
     const metrics = [
-      ["在用 Skill", summary.current || 0],
+      ["发现", discovery.discovered ?? summary.total ?? skills.length],
+      ["启用", discovery.enabled ?? summary.current ?? 0],
+      ["禁用", discovery.configuredDisabled ?? 0],
       ["生产入口", summary.laneOwners || 0],
       ["待处理", summary.needsAction || 0],
-      summary.syncIssues ? ["同步问题", summary.syncIssues] : ["休眠", summary.dormant || 0],
-      ["清理", summary.cleanupQueue || 0],
       ["覆盖", quality],
     ];
     $("[data-metrics]").innerHTML = metrics.map(([label, value]) => `<article class="metric"><span>${html(label)}</span><strong>${html(value)}</strong></article>`).join("");
-    $("[data-generated]").textContent = `${versionText.replace("Skill Store v", "版本 ")} · 更新 ${data.meta?.generatedAt || "-"} · ${summary.total || skills.length} 项能力 · 观澜相关 ${summary.guanlan || 0}`;
+    $("[data-generated]").textContent = `${versionText.replace("Skill Store v", "版本 ")} · 更新 ${data.meta?.generatedAt || "-"} · 已安装 ${summary.total || skills.length} · 发现 ${discovery.discovered ?? "-"} · 启用 ${discovery.enabled ?? "-"} · 禁用 ${discovery.configuredDisabled ?? "-"}`;
   }
 
   function renderLaneOwners() {

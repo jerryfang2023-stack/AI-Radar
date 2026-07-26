@@ -9,7 +9,7 @@ import { buildIndustryReportsData } from "../../../01-SiteV2/site/scripts/build-
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
 
-test("Opportunity Map projection reads accepted Signal Cards without the V3 desk", () => {
+test("Opportunity Map projection reads accepted Signal Cards on its weekly cadence without the V3 desk", () => {
   const data = buildIndustryReportsData(root);
   const dataCenter = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json"), "utf8"));
   const reportsHtml = fs.readFileSync(path.join(root, "01-SiteV2/site/intelligence-map.html"), "utf8");
@@ -22,7 +22,14 @@ test("Opportunity Map projection reads accepted Signal Cards without the V3 desk
   assert.equal(data.meta.directionCardVersion, "DIRECTION-CARD-V1.1-deepseek-pro-reviewed");
   assert.equal(data.meta.sourceAdapter, "accepted-signal-card-assets");
   assert.match(data.meta.activeDate, /^\d{4}-\d{2}-\d{2}$/u);
-  assert.equal(data.meta.activeDate, dataCenter.meta.currentDate);
+  const cadenceLagDays = Math.round(
+    (Date.parse(`${dataCenter.meta.currentDate}T00:00:00Z`) - Date.parse(`${data.meta.activeDate}T00:00:00Z`))
+      / 86_400_000,
+  );
+  assert.ok(
+    cadenceLagDays >= 0 && cadenceLagDays <= 7,
+    `Opportunity Map must not be newer than Data Center or lag its weekly cadence: ${cadenceLagDays} days`,
+  );
   assert.ok(data.cards.length > 0);
   assert.ok(data.cards.every((card) => card.id && card.title && card.date));
   assert.ok(data.cards.every((card) => Object.keys(card.opportunitySignals.labels).length === 7));

@@ -1,39 +1,3 @@
-# Codex Working Principles
-
-These rules apply to every task in this repository unless the user explicitly overrides them.
-
-## 1. Think Before Coding
-
-- Identify the user's real goal before editing.
-- State important assumptions and trade-offs when the task is ambiguous or risky.
-- Do not guess silently.
-- Ask only when work is blocked by missing information.
-
-## 2. Simplicity First
-
-- Make the smallest change that solves the actual problem.
-- Do not add speculative features, dependencies, or abstractions.
-- Prefer existing project patterns.
-- Remove complexity when it does not serve the current goal.
-
-## 3. Surgical Changes
-
-- Change only files needed for the current task.
-- Do not do unrelated refactors.
-- Do not revert user changes unless explicitly asked.
-- Keep cleanup separate unless it directly blocks the task.
-
-## 4. Goal-Driven Execution
-
-For every non-trivial task:
-
-1. understand the goal;
-2. inspect relevant files;
-3. make the smallest correct change;
-4. run relevant validation;
-5. fix failures caused by the change;
-6. report what changed, what was tested, and what risk remains.
-
 # WaveSight AI Current Entry
 
 This file is the default routing entry. It is a router, not a full wiki.

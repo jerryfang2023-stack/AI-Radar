@@ -1,0 +1,41 @@
+{
+  "ok": false,
+  "status": "repair_required",
+  "actions": [
+    {
+      "label": "Data Center projection coverage",
+      "ok": false,
+      "status": 1,
+      "started_at": "2026-07-26T01:50:02.446Z",
+      "finished_at": "2026-07-26T01:50:02.647Z",
+      "command": "node agent-workflow/tools/assert-data-center-projection-coverage.mjs --date=2026-07-26",
+      "stdout": "{\n  \"ok\": false,\n  \"date\": \"2026-07-26\",\n  \"report\": \"agent-workflow/reports/2026-07-26-data-center-projection-coverage.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-26-data-center-projection-coverage.md\",\n  \"failures\": 1,\n  \"warnings\": 0,\n  \"metrics\": {}\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Daily self-check and safe repair",
+      "ok": false,
+      "status": 1,
+      "started_at": "2026-07-26T01:50:02.647Z",
+      "finished_at": "2026-07-26T01:51:20.291Z",
+      "command": "node agent-workflow/tools/run-daily-self-check.mjs --date=2026-07-26 --repair=safe",
+      "stdout": "{\n  \"ok\": false,\n  \"status\": \"repair_required\",\n  \"report\": \"agent-workflow/reports/2026-07-26-daily-self-check.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-26-daily-self-check.md\",\n  \"repair_attempts\": 1,\n  \"codex_repair_tasks\": 2\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Codex targeted repair handoff",
+      "ok": false,
+      "status": 1,
+      "started_at": "2026-07-26T01:51:20.291Z",
+      "finished_at": "2026-07-26T01:52:32.989Z",
+      "command": "node agent-workflow/tools/run-codex-self-repair.mjs --date=2026-07-26 --repair=safe --invoke=on --codex-command=codex",
+      "stdout": "{\n  \"ok\": false,\n  \"status\": \"blocked_dirty_worktree\",\n  \"report\": \"agent-workflow/reports/2026-07-26-codex-self-repair.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-26-codex-self-repair.md\",\n  \"prompt\": \"agent-workflow/reports/2026-07-26-codex-self-repair-prompt.md\",\n  \"tasks\": 1,\n  \"block_reason\": \"Working tree is dirty. Re-run with --allow-dirty=true only when the dirty diff is expected.\"\n}",
+      "stderr": ""
+    }
+  ],
+  "notes": [],
+  "phase": "closure",
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T01:52:32.989Z",
+  "dry_run": false
+}

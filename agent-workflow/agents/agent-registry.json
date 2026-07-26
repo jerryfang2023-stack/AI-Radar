@@ -1,6 +1,6 @@
 {
   "project": "观澜AI｜WaveSight AI",
-  "updatedAt": "2026-07-17",
+  "updatedAt": "2026-07-26",
   "projectDefinition": "WaveSight AI 是一个 AI 行业数据中心和结构化事实数据基础，为 AIP 产品、行业研究和创业决策支持应用提供可追溯数据。V3 Card、关系图和趋势对象只作为内部兼容及下游应用输入。",
   "model": "process-driven-light-agents + reusable-skills",
   "rule": "Agent 按流程节点设置，Skill 按能力模块沉淀；栏目能力优先做 Skill，不新增常驻 Agent；Agent 之间通过结构化 handoff、质量门和自动化任务形成 AI Native 联动。",
@@ -26,8 +26,8 @@
       "id": "intelligence-engine",
       "name": "Intelligence Engine",
       "file": "agents/data-agent.md",
-      "process_node": "source_evidence_pool_card",
-      "primary_outputs": ["来源规则", "Raw / Pool 规则", "Card 资产规则", "结构化素材资产", "标签关系", "质量报告"]
+      "process_node": "source_claim_entity_event",
+      "primary_outputs": ["来源与证据规则", "SourceArtifact / RawDocument", "Claim / Entity / CanonicalEvent", "事实投影", "完整性报告", "V3 兼容 handoff"]
     },
     {
       "id": "experience-editorial",
@@ -42,6 +42,26 @@
       "file": "agents/build-release-agent.md",
       "process_node": "build_gate_release",
       "primary_outputs": ["代码改动", "脚本实现", "质量门结果", "发布状态", "风险说明"]
+    }
+  ],
+  "runtime_agents": [
+    {
+      "id": "evidence-explorer",
+      "file": "../../.codex/agents/evidence-explorer.toml",
+      "mode": "read-only",
+      "purpose": "来源、证据链和数据血缘探索"
+    },
+    {
+      "id": "quality-reviewer",
+      "file": "../../.codex/agents/quality-reviewer.toml",
+      "mode": "read-only",
+      "purpose": "规则、数据契约和质量门审查"
+    },
+    {
+      "id": "experience-reviewer",
+      "file": "../../.codex/agents/experience-reviewer.toml",
+      "mode": "read-only",
+      "purpose": "页面契约、信息层级和前台边界审查"
     }
   ],
   "removed_agent_types": [
