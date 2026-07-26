@@ -1,0 +1,70 @@
+name: WaveSight Control Plane Heartbeat
+run-name: Control Plane · ${{ github.event.client_payload.date || 'unknown' }} · ${{ github.event.client_payload.status || 'invalid' }}
+
+on:
+  repository_dispatch:
+    types:
+      - wavesight_control_plane_heartbeat
+
+permissions:
+  contents: read
+
+jobs:
+  heartbeat:
+    name: Validate sanitized control-plane heartbeat
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate and summarize heartbeat
+        env:
+          HEARTBEAT_JSON: ${{ toJson(github.event.client_payload) }}
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require("node:fs");
+          const heartbeat = JSON.parse(process.env.HEARTBEAT_JSON || "{}");
+          const phases = ["morning", "recovery", "closure"];
+          const controllers = Array.isArray(heartbeat.controllers) ? heartbeat.controllers : [];
+          const byPhase = new Map(controllers.map((item) => [item.phase, item]));
+          const valid = heartbeat.schema_version === "HERMES-HEARTBEAT-V1"
+            && heartbeat.contract_version === "HERMES-V4.0-control-plane-watchdog"
+            && /^\d{4}-\d{2}-\d{2}$/.test(heartbeat.date || "")
+            && ["passed", "manual_required"].includes(heartbeat.status)
+            && phases.every((phase) => {
+              const item = byPhase.get(phase);
+              return item
+                && typeof item.observable === "boolean"
+                && typeof item.status === "string"
+                && Number.isInteger(item.action_count);
+            });
+
+          const rows = phases.map((phase) => {
+            const item = byPhase.get(phase) || {};
+            return `| ${phase} | ${item.observable === true ? "yes" : "no"} | ${item.status || "missing"} | ${item.generated_at || "missing"} | ${item.action_count ?? 0} |`;
+          });
+          const summary = [
+            "# WaveSight Control Plane Heartbeat",
+            "",
+            `- date: ${heartbeat.date || "missing"}`,
+            `- status: ${heartbeat.status || "invalid"}`,
+            `- published_at: ${heartbeat.published_at || "missing"}`,
+            `- watchdog: ${heartbeat.watchdog?.status || "missing"}`,
+            "",
+            "| Controller | Observable | Status | Generated at | Actions |",
+            "|---|---|---|---|---|",
+            ...rows,
+            "",
+            "This heartbeat contains sanitized control-plane metadata only. It does not include local paths, commands, report bodies, or production data.",
+            "",
+          ].join("\n");
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary);
+
+          if (!valid) {
+            console.error("Invalid sanitized heartbeat payload.");
+            process.exit(1);
+          }
+          if (heartbeat.status !== "passed") {
+            console.error("One or more WaveSight controllers are not observable.");
+            process.exit(1);
+          }
+          console.log("Sanitized WaveSight control-plane heartbeat passed.");
+          NODE

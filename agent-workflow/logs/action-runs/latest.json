@@ -1,36 +1,41 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-25T03:12:53.824Z",
-  "date": "2026-07-25",
-  "action": "Align Community Intelligence skill version gate",
-  "action_status": "current",
+  "generated_at": "2026-07-26T03:12:52.687Z",
+  "date": "2026-07-26",
+  "action": "Hermes GitHub heartbeat publication",
+  "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "manual",
+  "trigger": "codex",
   "status": "success",
-  "summary": "Aligned the release gate and version ledger with the governed Community Intelligence monitor v1.0.6",
-  "contexts": [
-    "context/version-ledger.md",
-    "agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md"
-  ],
+  "summary": "Added a sanitized local-to-GitHub control-plane heartbeat so GitHub-only Hermes can observe Morning, Recovery, and Closure without exposing raw reports or production data.",
+  "contexts": [],
   "changed_files": [
-    "agent-workflow/tools/assert-version-consistency.mjs",
-    "context/version-ledger.md"
+    ".github/workflows/hermes-control-plane-heartbeat.yml",
+    "agent-workflow/tools/publish-hermes-control-plane-heartbeat.mjs",
+    "agent-workflow/tools/install-hermes-control-plane-heartbeat-task.ps1",
+    "agent-workflow/tools/tests/hermes-control-plane-heartbeat.test.mjs",
+    "context/08-v3-3-automation.md",
+    "context/11-hermes-daily-supervision-instructions.md",
+    "package.json"
   ],
   "outputs": [],
   "checks": [
-    "npm run assert:versions",
-    "npm run audit:skills",
-    "git diff --check"
+    "4 focused tests passed",
+    "current-rule hygiene passed",
+    "real 2026-07-26 heartbeat dry-run passed",
+    "git diff check passed"
   ],
   "issues": [
-    "The release gate still required v1.0.5 while the governed project and Skill Store copies were already v1.0.6"
+    "GitHub-only Hermes could not read local controller reports and returned github_visibility_unavailable"
   ],
-  "risks": [],
+  "risks": [
+    "GitHub heartbeat is unavailable until the workflow is merged and the local publisher task is installed"
+  ],
   "lessons": [
-    "Version gates and ledgers must advance with governed Skill metadata"
+    "Publish sanitized control-plane metadata as a GitHub Actions heartbeat instead of committing raw local reports"
   ],
   "reusable_rules": [
-    "Keep the version consistency gate ledger and governed Skill version identical"
+    "Hermes reads the latest heartbeat workflow run and never treats raw report HTTP 404 as controller failure"
   ],
   "retired_flags": [],
   "notes": []
