@@ -192,6 +192,7 @@ function canonicalSources(bundle, event) {
       source_id: stableId("FISRC", artifact.source_url),
       source_url: artifact.source_url,
       title: raw.title_zh || raw.title_original,
+      title_original: raw.title_original,
       publisher: artifact.publisher || hostFor(artifact.source_url),
       source_class: "canonical_event_source",
       capture_method: "data_center_v4_source_artifact",
@@ -218,12 +219,39 @@ function scoreCandidate(result, companyName) {
 async function researchSources(bundle, event, company) {
   const captured = canonicalSources(bundle, event);
   const officialHosts = [...new Set(captured.map((source) => hostFor(source.source_url)).filter(Boolean))];
+  const linkedHosts = [...new Set(captured
+    .flatMap((source) => source.body_clean.match(/https?:\/\/[^\s<>"')\]]+/giu) || [])
+    .map((url) => hostFor(url))
+    .filter((host) => host && !secondaryDomains.test(host)))];
+  const companyKey = clean(company.canonical_name).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+  const companyHost = linkedHosts.find((host) => (
+    companyKey.length >= 4
+    && host.replace(/[^\p{L}\p{N}]+/gu, "").includes(companyKey)
+  )) || "";
+  const amountHint = clean((event.metrics || [])[0] || "");
+  const identityHint = clean(captured[0]?.title_original || event.object || event.display_title_zh);
+  const siteHint = companyHost ? `site:${companyHost} ` : "";
   const queries = [
-    { intent: "funding", query: `"${company.canonical_name}" funding investors round` },
-    { intent: "product", query: `"${company.canonical_name}" official product customers case study` },
-    { intent: "comparison", query: `"${company.canonical_name}" competitors product use case funding` },
-    { intent: "investor_rationale", query: `"${company.canonical_name}" investor quote why invested` },
-    { intent: "investor_rationale", query: `"${company.canonical_name}" \"why we invested\" OR \"our investment\"` },
+    {
+      intent: "funding",
+      query: clean(`"${company.canonical_name}" "${amountHint}" funding investors round`),
+    },
+    {
+      intent: "product",
+      query: clean(`${siteHint}"${company.canonical_name}" product customers case study`),
+    },
+    {
+      intent: "comparison",
+      query: clean(`"${company.canonical_name}" "${identityHint}" competitors product use case`),
+    },
+    {
+      intent: "investor_rationale",
+      query: clean(`"${company.canonical_name}" "${amountHint}" investor quote why invested`),
+    },
+    {
+      intent: "investor_rationale",
+      query: clean(`"${company.canonical_name}" "${amountHint}" "why we invested" OR "our investment"`),
+    },
   ];
   const attempts = [];
   const results = [];
@@ -253,10 +281,20 @@ async function researchSources(bundle, event, company) {
     const isCanonicalHost = officialHosts.some((host) => sameHostFamily(candidateHost, host));
     const companyName = clean(company.canonical_name).toLowerCase();
     const companyInLead = clean(`${result.title} ${result.provider_body}`).toLowerCase().includes(companyName);
+    const isRelevantIndependent = result.source_class === "independent"
+      && companyInLead
+      && /\b(?:invest|funding|series|seed|product|customer|case study|agent|platform)\b/iu
+        .test(clean(`${result.title} ${result.url} ${result.provider_body}`));
     const isInvestorRationaleLead = result.intent === "investor_rationale"
       && companyInLead
       && /\b(?:invest|investment|portfolio|series|seed|funding)\b/iu.test(clean(`${result.title} ${result.url} ${result.provider_body}`));
-    if (!isKnownSecondary && !isOfficialCandidate && !isCanonicalHost && !isInvestorRationaleLead) continue;
+    if (
+      !isKnownSecondary
+      && !isOfficialCandidate
+      && !isCanonicalHost
+      && !isRelevantIndependent
+      && !isInvestorRationaleLead
+    ) continue;
     const key = normalizedUrlKey(result.url);
     if (!deduped.has(key) || scoreCandidate(result, company.canonical_name) > scoreCandidate(deduped.get(key), company.canonical_name)) {
       deduped.set(key, result);
@@ -296,6 +334,7 @@ function promptFor(event, company, sources, directions) {
     "analysis.capital_judgment必须回答资本押注的核心变量、当前估值或融资所依赖的已验证信号，以及判断的证据边界；不得使用“知名机构参与表明看好”“商业化前景广阔”等空泛模板。validated_signals只写来源已验证的业务信号。risks至少一项，用于约束资本判断，不单独扩展成问题清单。",
     "related_direction_id只能从DIRECTION_OPTIONS选择；没有合适方向时返回空字符串。",
     "返回一个JSON对象，不要代码围栏。Schema:",
+    "Whole-card evidence rule: cite at least two distinct SOURCE_ID values. Prefer the canonical funding source plus a captured company, investor, or credible independent source. Never add an irrelevant citation merely to reach two sources.",
     JSON.stringify({
       company: {
         full_name: "string",

@@ -44,10 +44,10 @@ Funding Insights is a downstream application. Keep its research, comparisons, ca
 
    ```powershell
    npm run generate:funding-insights -- --date=YYYY-MM-DD --write=true
-   npm run backfill:funding-insights -- --from=YYYY-MM-DD --to=YYYY-MM-DD --write=true --concurrency=2
+   npm run backfill:funding-insights -- --from=YYYY-MM-DD --to=YYYY-MM-DD --write=true --date-concurrency=3 --concurrency=3
    ```
 
-   Resume without `--force`; existing accepted cards are reused and blocked events are retried. Use `--force=true` only when source capture, prompt rules, or a card is known to be stale.
+   Resume without `--force`; existing accepted cards are reused and blocked events are retried. `--date-concurrency` controls parallel source bundles and `--concurrency` controls events inside each bundle; keep their product within search/model rate limits. Use `--force=true` only when source capture, prompt rules, or a card is known to be stale.
 4. Search each subject company through both configured providers. Capture original page text; search titles, snippets, provider answers, and URLs are discovery metadata only.
 5. Send the verified CanonicalEvent plus captured source bodies to `deepseek-v4-pro`. Require every factual object to cite an exact continuous quote contained in one captured body.
 6. Block publication when investors are unnamed or missing, fewer than two cited captured sources remain, required company/product/financing facts lack exact quotes, reader-facing narrative is not Chinese, or schema/model provenance fails.

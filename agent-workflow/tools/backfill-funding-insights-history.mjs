@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
+import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import {
   clean,
@@ -115,15 +115,30 @@ export function selectHistoricalFundingEvents(projectRoot, {
 }
 
 function runNode(script, commandArgs) {
-  const result = spawnSync(process.execPath, [script, ...commandArgs], {
-    cwd: root,
-    env: process.env,
-    stdio: "inherit",
+  return new Promise((resolve, reject) => {
+    const child = spawn(process.execPath, [script, ...commandArgs], {
+      cwd: root,
+      env: process.env,
+      stdio: "inherit",
+    });
+    child.once("error", reject);
+    child.once("exit", (code) => {
+      if (code === 0) resolve();
+      else reject(new Error(`funding_insight_child_failed:${path.basename(script)}:${code}`));
+    });
   });
-  if (result.error) throw result.error;
-  if (result.status !== 0) {
-    throw new Error(`funding_insight_child_failed:${path.basename(script)}:${result.status}`);
+}
+
+async function mapConcurrent(items, worker, size) {
+  let cursor = 0;
+  async function run() {
+    while (cursor < items.length) {
+      const index = cursor;
+      cursor += 1;
+      await worker(items[index]);
+    }
   }
+  await Promise.all(Array.from({ length: Math.min(size, Math.max(1, items.length)) }, run));
 }
 
 function reportForSelection(selection) {
@@ -168,12 +183,13 @@ function reportForSelection(selection) {
   };
 }
 
-function main() {
+async function main() {
   const from = clean(args.get("from") || "");
   const to = clean(args.get("to") || latestDataDate(root));
   const write = args.get("write") === "true";
   const force = args.get("force") === "true";
   const concurrency = Math.max(1, Math.min(4, Number(args.get("concurrency") || 2)));
+  const dateConcurrency = Math.max(1, Math.min(4, Number(args.get("date-concurrency") || 1)));
   const maxEvents = Math.max(0, Number(args.get("max-events") || 0));
   const selection = selectHistoricalFundingEvents(root, { from, to, maxEvents });
   const dryRun = {
@@ -185,6 +201,8 @@ function main() {
     unique_funding_events: selection.unique_event_count,
     selected_events: selection.selected_event_count,
     duplicate_occurrences_removed: selection.duplicate_occurrences_removed,
+    date_concurrency: dateConcurrency,
+    event_concurrency_per_date: concurrency,
     owner_dates: [...selection.groups].map(([date, owners]) => ({ date, events: owners.length })),
   };
   console.log(JSON.stringify(dryRun, null, 2));
@@ -196,9 +214,9 @@ function main() {
   }
   const generator = path.join(root, "agent-workflow/tools/generate-funding-insights-deepseek.mjs");
   const assertion = path.join(root, "agent-workflow/tools/assert-funding-insights-v1.mjs");
-  for (const [date, owners] of selection.groups) {
+  await mapConcurrent([...selection.groups], async ([date, owners]) => {
     const eventIds = owners.map((owner) => owner.event_id);
-    runNode(generator, [
+    await runNode(generator, [
       `--date=${date}`,
       `--event-ids=${eventIds.join(",")}`,
       "--selected-only=true",
@@ -206,9 +224,9 @@ function main() {
       `--force=${force}`,
       `--concurrency=${concurrency}`,
     ]);
-    runNode(assertion, [`--date=${date}`]);
-  }
-  runNode(path.join(root, "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs"), []);
+    await runNode(assertion, [`--date=${date}`]);
+  }, dateConcurrency);
+  await runNode(path.join(root, "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs"), []);
   const report = reportForSelection(selection);
   const reportFile = path.resolve(args.get("report")
     || path.join(root, "agent-workflow/reports/funding-insight-historical-backfill-current.json"));
@@ -220,4 +238,9 @@ function main() {
   }, null, 2));
 }
 
-if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) main();
+if (path.resolve(process.argv[1] || "") === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}
