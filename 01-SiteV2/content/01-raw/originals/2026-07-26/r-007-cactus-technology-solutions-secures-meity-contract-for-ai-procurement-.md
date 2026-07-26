@@ -1,0 +1,239 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-007
+title: "Cactus Technology Solutions Secures MeitY Contract for AI Procurement Platform | SamSearch"
+title_zh: "Cactus Technology Solutions 获得 MeitY 合同，打造 AI 采购平台"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://samsearch.co/government-contracting-news/cactus-technology-solutions-secures-meity-contract-for-ai-procurement-platform-143307"
+canonical_url: "https://samsearch.co/government-contracting-news/cactus-technology-solutions-secures-meity-contract-for-ai-procurement-platform-143307"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "procurement_marketplace"
+search_path_label: "采购 / 招投标 / Marketplace 路径"
+author: ""
+published_at: "2026-07-17T00:00:00.000Z"
+collected_at: 2026-07-26T01:19:52.114Z
+language: mixed
+full_text_hash: 9039c3b34f8f01af
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-007-cactus-technology-solutions-secures-meity-contract-for-ai-procurement-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-007-cactus-technology-solutions-secures-meity-contract-for-ai-procurement-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 92
+extractor_diagnostics: {"readability_score":92,"text_length":3639,"paragraph_count":13,"sentence_count":15,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 3639
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9039c3b34f8f01af","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 9a879b447436b22b
+content_hash: 9039c3b34f8f01af
+semantic_hash: ad7ec96f575f6ce1
+duplicate_of: "merged 2 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-17T00:00:00.000Z"
+last_seen_at: 2026-07-26T01:19:52.114Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch"],"products":[],"people":[],"industries":["企业服务"],"roles":["CIO / IT 负责人","采购负责人"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","采购"],"numbers":["22.7M","2026","22.7 million","100","22","17"],"quotes":[]}
+evidence_seed: {"company_actions":["Cactus Technology Solutions Secures MeitY Contract for AI Procurement Platform | SamSearch ## Key Signals - MeitY awards ₹22.7M AI procurement platform contract to Cactus Technology Solutions - Cactus outperformed Kyndryl and CoRover in competitive bidding process - Government aims to standardize ..... / query=AI procurement startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace","Key Signals MeitY awards ₹22."],"case_details":[],"workflow_changes":["7M AI procurement platform contract to Cactus Technology Solutions Cactus outperformed Kyndryl and CoRover in competitive bidding process Government aims to standardize procurement documents for transparency and efficiency In July 2026, India's Ministry of Electronics and Information Technology (MeitY) awarded a significant contract to Mumbai-based Cactus Technology Solutions to create an innovative AI-powered procurement authoring platform.","The purpose of this platform is to assist government officials in drafting, reviewing, and standardizing procurement documents such as Request for Proposals (RFPs) and Requests for Quotations (RFQs).","The platform is expected to streamline operations across various ministries under the National e-Governance Division (NeGD), targeting improvements in efficiency and transparency across the procurement process."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Cactus Technology Solutions Secures MeitY Contract for AI Procurement Platform | SamSearch ## Key Signals - MeitY awards ₹22.7M AI procurement platform contract to Cactus Technology Solutions - Cactus outperformed Kyndryl and CoRover in competitive bidding process - Government aims to standardize ..... / query=AI procurement startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Key Signals MeitY awards ₹22.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"7M AI procurement platform contract to Cactus Technology Solutions Cactus outperformed Kyndryl and CoRover in competitive bidding process Government aims to standardize procurement documents for transparency and efficiency In July 2026, India's Ministry of Electronics and Information Technology (MeitY) awarded a significant contract to Mumbai-based Cactus Technology Solutions to create an innovative AI-powered procurement authoring platform.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The purpose of this platform is to assist government officials in drafting, reviewing, and standardizing procurement documents such as Request for Proposals (RFPs) and Requests for Quotations (RFQs).","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The platform is expected to streamline operations across various ministries under the National e-Governance Division (NeGD), targeting improvements in efficiency and transparency across the procurement process.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"7 million contract was the result of a competitive bidding process where Cactus outperformed other contenders such as Kyndryl Solutions and CoRover , signaling a significant win for the company.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-26T01:19:52.114Z
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Cactus Technology Solutions Secures MeitY Contract for AI Procurement Platform | SamSearch
+
+## clean_text
+
+Key Signals
+MeitY awards ₹22.7M AI procurement platform contract to Cactus Technology Solutions
+Cactus outperformed Kyndryl and CoRover in competitive bidding process
+Government aims to standardize procurement documents for transparency and efficiency
+In July 2026, India's Ministry of Electronics and Information Technology (MeitY) awarded a significant contract to Mumbai-based Cactus Technology Solutions to create an innovative AI-powered procurement authoring platform. The purpose of this platform is to assist government officials in drafting, reviewing, and standardizing procurement documents such as Request for Proposals (RFPs) and Requests for Quotations (RFQs). The platform is expected to streamline operations across various ministries under the National e-Governance Division (NeGD), targeting improvements in efficiency and transparency across the procurement process.
+The ₹22.7 million contract was the result of a competitive bidding process where Cactus outperformed other contenders such as Kyndryl Solutions and CoRover , signaling a significant win for the company. Cactus achieved a perfect score of 100 in the quality and cost-based selection evaluation, highlighting their capabilities in delivering high-quality, cost-effective solutions. This project comes at a critical time when the Indian government is keen to modernize its procurement practices and leverage advanced technologies like artificial intelligence to enhance operational efficiency.
+The development of this AI procurement platform reflects a broader trend within the government sectors towards adopting digital solutions to facilitate more transparent and efficient procurement processes. The functionality of the platform is designed to recommend standard clauses, ensure compliance with procurement norms, and validate document structure. As the government looks to improve its procurement practices, this initiative has implications not only for immediate stakeholders but also for contractors and technology providers seeking to engage in future government modernization projects.
+Cactus executives have expressed that this contract represents a notable opportunity, given their expertise and background in delivering AI solutions within regulated frameworks. They highlighted that government procurement constitutes nearly 22 percent of GDP , indicating the scale at which this project could influence broader economic dynamics. Furthermore, the deployment of such technology may enhance the quality and consistency in the drafting of procurement documents, leading to renewed focus on transparency, standardization, and competition among bidders.
+For suppliers and contractors within the technology landscape, this decision by MeitY acts as a cue of the increasing emphasis on AI and digital transformation within government operations. It highlights a ripe opportunity for vendors specializing in artificial intelligence solutions to engage with government procurement processes, particularly as entities are increasingly inclined to embrace cutting-edge technologies to drive administrative efficiency. The success of this contract may pave the way for further AI-driven initiatives in the Indian government, propelling a shift towards more innovative approaches to tackling procurement challenges.
+Agencies
+National e-Governance Division
+Ministry of Electronics and Information Technology
+Vendors
+Cactus Technology Solutions
+Kyndryl Solutions
+CoRover
+Sources
+Cactus Wins MeitY Contract To Build AI Tender Authoring Platform Construction World · Jul 17
+Artificial Intelligence Information Technology Government Procurement
+← Back to News
+
+## full_text
+
+Key Signals
+MeitY awards ₹22.7M AI procurement platform contract to Cactus Technology Solutions
+Cactus outperformed Kyndryl and CoRover in competitive bidding process
+Government aims to standardize procurement documents for transparency and efficiency
+In July 2026, India's Ministry of Electronics and Information Technology (MeitY) awarded a significant contract to Mumbai-based Cactus Technology Solutions to create an innovative AI-powered procurement authoring platform. The purpose of this platform is to assist government officials in drafting, reviewing, and standardizing procurement documents such as Request for Proposals (RFPs) and Requests for Quotations (RFQs). The platform is expected to streamline operations across various ministries under the National e-Governance Division (NeGD), targeting improvements in efficiency and transparency across the procurement process.
+The ₹22.7 million contract was the result of a competitive bidding process where Cactus outperformed other contenders such as Kyndryl Solutions and CoRover , signaling a significant win for the company. Cactus achieved a perfect score of 100 in the quality and cost-based selection evaluation, highlighting their capabilities in delivering high-quality, cost-effective solutions. This project comes at a critical time when the Indian government is keen to modernize its procurement practices and leverage advanced technologies like artificial intelligence to enhance operational efficiency.
+The development of this AI procurement platform reflects a broader trend within the government sectors towards adopting digital solutions to facilitate more transparent and efficient procurement processes. The functionality of the platform is designed to recommend standard clauses, ensure compliance with procurement norms, and validate document structure. As the government looks to improve its procurement practices, this initiative has implications not only for immediate stakeholders but also for contractors and technology providers seeking to engage in future government modernization projects.
+Cactus executives have expressed that this contract represents a notable opportunity, given their expertise and background in delivering AI solutions within regulated frameworks. They highlighted that government procurement constitutes nearly 22 percent of GDP , indicating the scale at which this project could influence broader economic dynamics. Furthermore, the deployment of such technology may enhance the quality and consistency in the drafting of procurement documents, leading to renewed focus on transparency, standardization, and competition among bidders.
+For suppliers and contractors within the technology landscape, this decision by MeitY acts as a cue of the increasing emphasis on AI and digital transformation within government operations. It highlights a ripe opportunity for vendors specializing in artificial intelligence solutions to engage with government procurement processes, particularly as entities are increasingly inclined to embrace cutting-edge technologies to drive administrative efficiency. The success of this contract may pave the way for further AI-driven initiatives in the Indian government, propelling a shift towards more innovative approaches to tackling procurement challenges.
+Agencies
+National e-Governance Division
+Ministry of Electronics and Information Technology
+Vendors
+Cactus Technology Solutions
+Kyndryl Solutions
+CoRover
+Sources
+Cactus Wins MeitY Contract To Build AI Tender Authoring Platform Construction World · Jul 17
+Artificial Intelligence Information Technology Government Procurement
+← Back to News
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 92
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":92,"text_length":3639,"paragraph_count":13,"sentence_count":15,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Cactus Technology Solutions Secures MeitY Contract for AI Procurement Platform | SamSearch ## Key Signals - MeitY awards ₹22.7M AI procurement platform contract to Cactus Technology Solutions - Cactus outperformed Kyndryl and CoRover in competitive bidding process - Government aims to standardize ..... / query=AI procurement startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Key Signals MeitY awards ₹22.
+
+3. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   7M AI procurement platform contract to Cactus Technology Solutions Cactus outperformed Kyndryl and CoRover in competitive bidding process Government aims to standardize procurement documents for transparency and efficiency In July 2026, India's Ministry of Electronics and Information Technology (MeitY) awarded a significant contract to Mumbai-based Cactus Technology Solutions to create an innovative AI-powered procurement authoring platform.
+
+4. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The purpose of this platform is to assist government officials in drafting, reviewing, and standardizing procurement documents such as Request for Proposals (RFPs) and Requests for Quotations (RFQs).
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The platform is expected to streamline operations across various ministries under the National e-Governance Division (NeGD), targeting improvements in efficiency and transparency across the procurement process.
+
+6. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   7 million contract was the result of a competitive bidding process where Cactus outperformed other contenders such as Kyndryl Solutions and CoRover , signaling a significant win for the company.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: CIO / IT 负责人, 采购负责人
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 采购
+- numbers: 22.7M, 2026, 22.7 million, 100, 22, 17
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Cactus Technology Solutions Secures MeitY Contract for AI Procurement Platform | SamSearch ## Key Signals - MeitY awards ₹22.7M AI procurement platform contract to Cactus Technology Solutions - Cactus outperformed Kyndryl and CoRover in competitive bidding process - Government aims to standardize ..... / query=AI procurement startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace / Key Signals MeitY awards ₹22.
+- case_details: 暂无公开信息
+- workflow_changes: 7M AI procurement platform contract to Cactus Technology Solutions Cactus outperformed Kyndryl and CoRover in competitive bidding process Government aims to standardize procurement documents for transparency and efficiency In July 2026, India's Ministry of Electronics and Information Technology (MeitY) awarded a significant contract to Mumbai-based Cactus Technology Solutions to create an innovative AI-powered procurement authoring platform. / The purpose of this platform is to assist government officials in drafting, reviewing, and standardizing procurement documents such as Request for Proposals (RFPs) and Requests for Quotations (RFQs). / The platform is expected to streamline operations across various ministries under the National e-Governance Division (NeGD), targeting improvements in efficiency and transparency across the procurement process.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 采购负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Cactus Technology Solutions Secures MeitY Contract for AI Procurement Platform | SamSearch ## Key Signals - MeitY awards ₹22.7M AI procurement platform contract to Cactus Technology Solutions - Cactus outperformed Kyndryl and CoRover in competitive bidding process - Government aims to standardize ..... / query=AI procurement startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

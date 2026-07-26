@@ -1,0 +1,274 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-037
+title: "TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center | Markets Insider"
+title_zh: "TTEC Digital 在 Agentforce 联络中心部署首个实时 Salesforce 客户"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://markets.businessinsider.com/news/stocks/ttec-digital-deploys-first-live-salesforce-customer-on-agentforce-contact-center-1036356704"
+canonical_url: "https://markets.businessinsider.com/news/stocks/ttec-digital-deploys-first-live-salesforce-customer-on-agentforce-contact-center-1036356704"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: "2026-07-23T00:00:00.000Z"
+collected_at: 2026-07-26T01:20:22.870Z
+language: mixed
+full_text_hash: 7b90dc77379149bc
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-037-ttec-digital-deploys-first-live-salesforce-customer-on-agentforce-cont.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-037-ttec-digital-deploys-first-live-salesforce-customer-on-agentforce-cont.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7051,"paragraph_count":26,"sentence_count":32,"boilerplate_hits":0,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 7051
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7b90dc77379149bc","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e60c9bede3da07d1
+content_hash: 7b90dc77379149bc
+semantic_hash: 471204eb3d5f248c
+duplicate_of: ""
+first_seen_at: "2026-07-23T00:00:00.000Z"
+last_seen_at: 2026-07-26T01:20:22.870Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"supporting_signal","importance_score":2,"importance_reason":"consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal","supporting_signals":["low_value_ai_adjacent_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Salesforce"],"products":["Agent","agents","agent"],"people":[],"industries":["医疗","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["23","2026","08","00","6","000","2010","7"],"quotes":["Achieving the first live deployment of Agentforce Contact Center is an incredible milestone for our team,"]}
+evidence_seed: {"company_actions":["TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center | Markets Insider # TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center PRESS RELEASE GlobeNewswire Jul. 23, 2026, 08:00 AM AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC, a leadi... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","“The TTEC Digital team worked alongside us as true partners, taking the time to understand our clients, our coaches, and the realities of serving busy families managing tight budgets and full lives.","Agentforce Contact Center enhances the day-to-day experience for Compass coaches through a unified architecture, with Compass estimating 6,000 staff hours saved annually."],"case_details":["TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center PRESS RELEASE GlobeNewswire Jul.","23, 2026, 08:00 AM AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC , a leading global consulting, technology, and managed services company delivering solutions at the intersection of data, AI, and customer experience (CX), today announced that TTEC Digital has successfully completed the first Salesforce customer go-live of Agentforce Contact Center with client Compass Working Capital , a non-profit financial services organization dedicated to assisting families in building assets and achieving homeownership."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center | Markets Insider # TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center PRESS RELEASE GlobeNewswire Jul. 23, 2026, 08:00 AM AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC, a leadi... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center PRESS RELEASE GlobeNewswire Jul.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"23, 2026, 08:00 AM AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC , a leading global consulting, technology, and managed services company delivering solutions at the intersection of data, AI, and customer experience (CX), today announced that TTEC Digital has successfully completed the first Salesforce customer go-live of Agentforce Contact Center with client Compass Working Capital , a non-profit financial services organization dedicated to assisting families in building assets and achieving homeownership.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"“The TTEC Digital team worked alongside us as true partners, taking the time to understand our clients, our coaches, and the realities of serving busy families managing tight budgets and full lives.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"With that insight, TTEC Digital implemented Agentforce Contact Center in a way that was designed around our needs, helping calls reach the right coach, enabling callbacks on our clients’ schedule, and using AI to handle data entry so our staff can stay focused on the conversation in front of them,” said George Reuter, managing director of impact and innovation at Compass Working Capital .","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Agentforce Contact Center enhances the day-to-day experience for Compass coaches through a unified architecture, with Compass estimating 6,000 staff hours saved annually.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-26T01:20:22.870Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center | Markets Insider
+
+## clean_text
+
+TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center
+PRESS RELEASE GlobeNewswire
+Jul. 23, 2026, 08:00 AM
+AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC , a leading global consulting, technology, and managed services company delivering solutions at the intersection of data, AI, and customer experience (CX), today announced that TTEC Digital has successfully completed the first Salesforce customer go-live of Agentforce Contact Center with client Compass Working Capital , a non-profit financial services organization dedicated to assisting families in building assets and achieving homeownership.
+“The TTEC Digital team worked alongside us as true partners, taking the time to understand our clients, our coaches, and the realities of serving busy families managing tight budgets and full lives. With that insight, TTEC Digital implemented Agentforce Contact Center in a way that was designed around our needs, helping calls reach the right coach, enabling callbacks on our clients’ schedule, and using AI to handle data entry so our staff can stay focused on the conversation in front of them,” said George Reuter, managing director of impact and innovation at Compass Working Capital .
+Agentforce Contact Center enhances the day-to-day experience for Compass coaches through a unified architecture, with Compass estimating 6,000 staff hours saved annually. By unifying every live interaction with complete customer data into one continuous, intelligent workflow, the platform's single-pane console brings all interaction channels, AI, and CRM data into a single workspace.
+This solution enables seamless hand-offs between AI and human agents, maximizing productivity and lowering the total cost of ownership (TCO) in most instances. Within this integrated ecosystem, real-time transcription triggers automated actions such as data capture and task creation. Both human advisors and the AI voice agent operate from this shared system, providing a consistent, up-to-date source of truth as processes and regulations evolve.
+Because Agentforce Contact Center is natively built within Salesforce, Compass can deploy an AI voice agent without complex integrations. Grounded in Compass Working Capital’s existing knowledge base, the assistant helps manage inquiries and schedule appointments while delivering a more intuitive, personalized client experience.
+“Achieving the first live deployment of Agentforce Contact Center is an incredible milestone for our team,” said Chris Brown, president at TTEC Digital . “Debuting this new product alongside an organization as impactful as Compass Working Capital demonstrates how organizations can use agentic AI to reduce or eliminate administrative work while strengthening — not replacing — the human relationships that define exceptional service.”
+Earlier this year, TTEC Digital was selected for Salesforce's elite Forward Deployed Engineering Partner Network , enabling TTEC Digital architects to collaborate directly with Salesforce product engineering teams during implementation. That collaboration helped accelerate deployment from project kickoff to production in six weeks.
+“Our work with TTEC Digital highlights the strength of the Salesforce ecosystem in turning innovation into impact. By bringing our agentic AI capabilities together with TTEC Digital’s deep contact center expertise, we are enabling organizations like Compass Working Capital to deliver more connected, responsive, and human-centered experiences at scale,” said John Robb, senior director, customer solutions, voice, at Salesforce .
+Following the successful production cutover, TTEC Digital is providing hypercare support to ensure continuous optimization as Compass Working Capital scales its service delivery across metropolitan housing authorities nationwide. This foundational deployment establishes a roadmap for future expansion into areas that were previously too complex or cost-prohibitive, including new digital messaging channels, proactive client reminders, and deep employee-facing automation within Salesforce.
+About Compass Working Capital
+Compass Working Capital's mission is to partner with families with low incomes to build assets as a pathway out of poverty. To achieve our mission, we operate client-centered savings and financial coaching programs, deliver training and technical assistance to other practitioners, and shape policy solutions that dismantle barriers to asset building. Compass partners with affordable housing providers to run the Department of Housing and Urban Development's Family Self-Sufficiency program, the nation's largest asset-building program for families with low incomes. Since 2010, Compass has partnered with 7,300 families to build $35 million in savings through the FSS program. To learn more, visit https://compassworkingcapital.org .
+About TTEC
+TTEC Holdings, Inc. (NASDAQ: TTEC) is a leading global consulting, technology, and managed services company delivering solutions at the intersection of data, AI, and customer experience. Serving iconic and disruptive brands, TTEC’s outcome-based solutions span the entire enterprise, touch every virtual interaction channel, and improve each step of the customer journey. Leveraging next-generation digital technology, the Company’s TTEC Digital business designs, builds, and operates omnichannel contact center technology, CRM, AI, and analytics solutions. The Company also delivers AI-enhanced customer engagement, customer acquisition and growth, tech support, back-office, and fraud prevention services. Founded in 1982, TTEC’s singular obsession with CX excellence has earned it leading client, customer, and employee satisfaction scores across the globe. The Company’s employees operate on six continents and bring technology and humanity together to deliver happy customers and differentiated business results. To learn more, visit  https://ttec.com .
+Markets Insider and Business Insider Editorial Teams were not involved in the creation of this post.
+SHARE THIS POST
+FACEBOOK
+TWITTER
+EMAIL
+COPY LINK
+Teletech Holdings News MORE
+TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center GlobeNewswire 3d
+TTEC’s Latest Customer Strategist Journal Examines Seven Shifts Reshaping Customer Experience in the AI Era GlobeNewswire 32d
+TTEC Digital Achieves NiCE Platinum Partner Status GlobeNewswire 37d
+TTEC Launches TTEC VeriCycle, an AI-Powered Healthcare Claims Intelligence Solution to Reduce Denials and Accelerate Reimbursement GlobeNewswire 45d
+TTEC Launches TTEC Titan™, an AI-Powered Security Platform for Remote Customer Experience Operations GlobeNewswire 58d
+TTEC and Volkswagen Group UK Expand Strategic Collaboration with New Seven-Year Agreement GlobeNewswire 66d
+TTEC Holdings announces seven-year contract extension with Volkswagen TipRanks 66d
+TTEC and Volkswagen Group UK Expand Strategic Collaboration with New Seven-Year Agreement GlobeNewswire 66d
+Related Stocks
+TTEC
+2.12
+0.13 (6.53%)
+7/24/2026
+Disclaimer
+Get real-time TTEC charts here >>
+
+## full_text
+
+TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center
+PRESS RELEASE GlobeNewswire
+Jul. 23, 2026, 08:00 AM
+AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC , a leading global consulting, technology, and managed services company delivering solutions at the intersection of data, AI, and customer experience (CX), today announced that TTEC Digital has successfully completed the first Salesforce customer go-live of Agentforce Contact Center with client Compass Working Capital , a non-profit financial services organization dedicated to assisting families in building assets and achieving homeownership.
+“The TTEC Digital team worked alongside us as true partners, taking the time to understand our clients, our coaches, and the realities of serving busy families managing tight budgets and full lives. With that insight, TTEC Digital implemented Agentforce Contact Center in a way that was designed around our needs, helping calls reach the right coach, enabling callbacks on our clients’ schedule, and using AI to handle data entry so our staff can stay focused on the conversation in front of them,” said George Reuter, managing director of impact and innovation at Compass Working Capital .
+Agentforce Contact Center enhances the day-to-day experience for Compass coaches through a unified architecture, with Compass estimating 6,000 staff hours saved annually. By unifying every live interaction with complete customer data into one continuous, intelligent workflow, the platform's single-pane console brings all interaction channels, AI, and CRM data into a single workspace.
+This solution enables seamless hand-offs between AI and human agents, maximizing productivity and lowering the total cost of ownership (TCO) in most instances. Within this integrated ecosystem, real-time transcription triggers automated actions such as data capture and task creation. Both human advisors and the AI voice agent operate from this shared system, providing a consistent, up-to-date source of truth as processes and regulations evolve.
+Because Agentforce Contact Center is natively built within Salesforce, Compass can deploy an AI voice agent without complex integrations. Grounded in Compass Working Capital’s existing knowledge base, the assistant helps manage inquiries and schedule appointments while delivering a more intuitive, personalized client experience.
+“Achieving the first live deployment of Agentforce Contact Center is an incredible milestone for our team,” said Chris Brown, president at TTEC Digital . “Debuting this new product alongside an organization as impactful as Compass Working Capital demonstrates how organizations can use agentic AI to reduce or eliminate administrative work while strengthening — not replacing — the human relationships that define exceptional service.”
+Earlier this year, TTEC Digital was selected for Salesforce's elite Forward Deployed Engineering Partner Network , enabling TTEC Digital architects to collaborate directly with Salesforce product engineering teams during implementation. That collaboration helped accelerate deployment from project kickoff to production in six weeks.
+“Our work with TTEC Digital highlights the strength of the Salesforce ecosystem in turning innovation into impact. By bringing our agentic AI capabilities together with TTEC Digital’s deep contact center expertise, we are enabling organizations like Compass Working Capital to deliver more connected, responsive, and human-centered experiences at scale,” said John Robb, senior director, customer solutions, voice, at Salesforce .
+Following the successful production cutover, TTEC Digital is providing hypercare support to ensure continuous optimization as Compass Working Capital scales its service delivery across metropolitan housing authorities nationwide. This foundational deployment establishes a roadmap for future expansion into areas that were previously too complex or cost-prohibitive, including new digital messaging channels, proactive client reminders, and deep employee-facing automation within Salesforce.
+About Compass Working Capital
+Compass Working Capital's mission is to partner with families with low incomes to build assets as a pathway out of poverty. To achieve our mission, we operate client-centered savings and financial coaching programs, deliver training and technical assistance to other practitioners, and shape policy solutions that dismantle barriers to asset building. Compass partners with affordable housing providers to run the Department of Housing and Urban Development's Family Self-Sufficiency program, the nation's largest asset-building program for families with low incomes. Since 2010, Compass has partnered with 7,300 families to build $35 million in savings through the FSS program. To learn more, visit https://compassworkingcapital.org .
+About TTEC
+TTEC Holdings, Inc. (NASDAQ: TTEC) is a leading global consulting, technology, and managed services company delivering solutions at the intersection of data, AI, and customer experience. Serving iconic and disruptive brands, TTEC’s outcome-based solutions span the entire enterprise, touch every virtual interaction channel, and improve each step of the customer journey. Leveraging next-generation digital technology, the Company’s TTEC Digital business designs, builds, and operates omnichannel contact center technology, CRM, AI, and analytics solutions. The Company also delivers AI-enhanced customer engagement, customer acquisition and growth, tech support, back-office, and fraud prevention services. Founded in 1982, TTEC’s singular obsession with CX excellence has earned it leading client, customer, and employee satisfaction scores across the globe. The Company’s employees operate on six continents and bring technology and humanity together to deliver happy customers and differentiated business results. To learn more, visit  https://ttec.com .
+Markets Insider and Business Insider Editorial Teams were not involved in the creation of this post.
+SHARE THIS POST
+FACEBOOK
+TWITTER
+EMAIL
+COPY LINK
+Teletech Holdings News MORE
+TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center GlobeNewswire 3d
+TTEC’s Latest Customer Strategist Journal Examines Seven Shifts Reshaping Customer Experience in the AI Era GlobeNewswire 32d
+TTEC Digital Achieves NiCE Platinum Partner Status GlobeNewswire 37d
+TTEC Launches TTEC VeriCycle, an AI-Powered Healthcare Claims Intelligence Solution to Reduce Denials and Accelerate Reimbursement GlobeNewswire 45d
+TTEC Launches TTEC Titan™, an AI-Powered Security Platform for Remote Customer Experience Operations GlobeNewswire 58d
+TTEC and Volkswagen Group UK Expand Strategic Collaboration with New Seven-Year Agreement GlobeNewswire 66d
+TTEC Holdings announces seven-year contract extension with Volkswagen TipRanks 66d
+TTEC and Volkswagen Group UK Expand Strategic Collaboration with New Seven-Year Agreement GlobeNewswire 66d
+Related Stocks
+TTEC
+2.12
+0.13 (6.53%)
+7/24/2026
+Disclaimer
+Get real-time TTEC charts here >>
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7051,"paragraph_count":26,"sentence_count":32,"boilerplate_hits":0,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center | Markets Insider # TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center PRESS RELEASE GlobeNewswire Jul. 23, 2026, 08:00 AM AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC, a leadi... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center PRESS RELEASE GlobeNewswire Jul.
+
+3. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   23, 2026, 08:00 AM AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC , a leading global consulting, technology, and managed services company delivering solutions at the intersection of data, AI, and customer experience (CX), today announced that TTEC Digital has successfully completed the first Salesforce customer go-live of Agentforce Contact Center with client Compass Working Capital , a non-profit financial services organization dedicated to assisting families in building assets and achieving homeownership.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   “The TTEC Digital team worked alongside us as true partners, taking the time to understand our clients, our coaches, and the realities of serving busy families managing tight budgets and full lives.
+
+5. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   With that insight, TTEC Digital implemented Agentforce Contact Center in a way that was designed around our needs, helping calls reach the right coach, enabling callbacks on our clients’ schedule, and using AI to handle data entry so our staff can stay focused on the conversation in front of them,” said George Reuter, managing director of impact and innovation at Compass Working Capital .
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Agentforce Contact Center enhances the day-to-day experience for Compass coaches through a unified architecture, with Compass estimating 6,000 staff hours saved annually.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Salesforce
+- products: Agent, agents, agent
+- people: 暂无公开信息
+- industries: 医疗, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 23, 2026, 08, 00, 6, 000, 2010, 7
+- quotes: Achieving the first live deployment of Agentforce Contact Center is an incredible milestone for our team,
+
+## evidence_seed
+
+- company_actions: TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center | Markets Insider # TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center PRESS RELEASE GlobeNewswire Jul. 23, 2026, 08:00 AM AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC, a leadi... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing / “The TTEC Digital team worked alongside us as true partners, taking the time to understand our clients, our coaches, and the realities of serving busy families managing tight budgets and full lives. / Agentforce Contact Center enhances the day-to-day experience for Compass coaches through a unified architecture, with Compass estimating 6,000 staff hours saved annually.
+- case_details: TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center PRESS RELEASE GlobeNewswire Jul. / 23, 2026, 08:00 AM AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC , a leading global consulting, technology, and managed services company delivering solutions at the intersection of data, AI, and customer experience (CX), today announced that TTEC Digital has successfully completed the first Salesforce customer go-live of Agentforce Contact Center with client Compass Working Capital , a non-profit financial services organization dedicated to assisting families in building assets and achieving homeownership.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: supporting_signal
+- importance_score: 2
+- importance_reason: consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal
+- supporting_signals: low_value_ai_adjacent_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center | Markets Insider # TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center PRESS RELEASE GlobeNewswire Jul. 23, 2026, 08:00 AM AUSTIN, Texas, July 23, 2026 (GLOBE NEWSWIRE) -- TTEC, a leadi... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

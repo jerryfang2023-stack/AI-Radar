@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T07:23:22.462Z",
-    "latestDataDate": "2026-07-25",
-    "currentDate": "2026-07-25",
-    "eventCount": 1533,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "latestDataDate": "2026-07-26",
+    "currentDate": "2026-07-26",
+    "eventCount": 1570,
+    "quarantinedEventCount": 17
   },
   "entity": {
     "id": "EN-8d323d8bba783aa3",
@@ -38,6 +38,7 @@
     "firstSeen": "2026-06-16",
     "lastSeen": "2026-07-14",
     "relationIds": [
+      "REL2-ab4c37dd40240134",
       "REL2-ede305f9f251f48d",
       "REL2-434765e50ff89fea",
       "REL2-f92ce4e61c880fbe",
@@ -47,6 +48,7 @@
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [
+        "EV-6e4dd5111dfaae9c",
         "EV-36a9e4e908249381"
       ],
       "productsServices": [
@@ -61,6 +63,30 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-6e4dd5111dfaae9c",
+        "dataDate": "2026-07-26",
+        "date": "2026-07-16",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "英特尔与谷歌云宣布合作，加速英特尔AI赋能的企业转型",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-96eebba49dbbf422",
+          "EN-d9b1d7819af92e77",
+          "EN-bbdefa2950f49882"
+        ]
+      },
       {
         "id": "EV-36a9e4e908249381",
         "dataDate": "2026-07-17",
@@ -249,6 +275,7 @@
         "EV-2f9a87bd46248fe8",
         "EV-056bb8c683ef60a4",
         "EV-b4b5d141dac164c2",
+        "EV-6e4dd5111dfaae9c",
         "EV-36a9e4e908249381",
         "EV-181b425d2a600cad",
         "EV-2c87c8ea47cbd1b6",
@@ -263,7 +290,6 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
-        "EV-0d5a32aca724d30e",
         "EV-9852a10590030da9",
         "EV-1ba939d8baf43207",
         "EV-941ba9ebdc43f20c",
@@ -330,25 +356,24 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
+        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-professional_services",
-        "TX-use_case-robotics_automation",
-        "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-industry-government_public_sector",
@@ -359,12 +384,12 @@
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
-        "EN-bbdefa2950f49882",
         "EN-8d323d8bba783aa3",
+        "EN-bbdefa2950f49882",
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -395,6 +420,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-e09efcd49776cb95",
         "EV-c2fe5030e8c71d8a",
         "EV-c3f617e75d303f59",
         "EV-b4f69c41e23c7ce0",
@@ -413,6 +439,7 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-6beed07120c6c6d0",
         "EV-91a444ff3955ad91",
         "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
@@ -425,6 +452,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-0f0b2013927ce156",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
         "EV-243e73016576fa43",
@@ -501,31 +529,31 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
-        "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-technology-code_generation",
-        "TX-use_case-robotics_automation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-use_case-research_science",
         "TX-technology-open_weights",
+        "TX-technology-guardrails_safety",
         "TX-industry-telecommunications",
         "TX-industry-media_entertainment",
-        "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
+        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-technology-image_generation",
-        "TX-technology-human_in_loop",
         "TX-technology-speech_audio",
         "TX-technology-inference_optimization"
       ],
@@ -556,16 +584,14 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -591,6 +617,7 @@
         "EV-777eb5b7783b71fb",
         "EV-5a9fe80f8e4ae066",
         "EV-b4b5d141dac164c2",
+        "EV-6e4dd5111dfaae9c",
         "EV-36a9e4e908249381",
         "EV-98496cc86bacb1e0",
         "EV-ef6464cf7f764835",
@@ -599,6 +626,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-33e98b8bbd0a11b1",
         "EV-2634b786bde9fb8e",
         "EV-6aabfaa0c7c7f838",
         "EV-c914ac00a35d7cf0",
@@ -714,22 +742,22 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
+        "TX-use_case-robotics_automation",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-use_case-robotics_automation",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-model_context_protocol",
         "TX-technology-video_generation",
@@ -741,20 +769,18 @@
         "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [
+        "EN-96eebba49dbbf422",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
         "EN-6f216f2ea5b7a13e",
-        "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -763,10 +789,31 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-26"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-ab4c37dd40240134",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-8d323d8bba783aa3",
+      "subject_type": "entity",
+      "predicate": "serves",
+      "object_ref": "EN-96eebba49dbbf422",
+      "object_type": "entity",
+      "event_id": "EV-6e4dd5111dfaae9c",
+      "claim_refs": [
+        "CL-16c91905670d5c33",
+        "CL-053348592f3e7b21",
+        "CL-df9a5f583e32db0f",
+        "CL-79142b898b6d1c2d"
+      ],
+      "source_refs": [
+        "SA-7f1a477486ca91a5"
+      ],
+      "data_date": "2026-07-26",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-ede305f9f251f48d",
       "relationship_version": "RELATION-V2.1",

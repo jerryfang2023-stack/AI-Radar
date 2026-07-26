@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "latestDataDate": "2026-07-26",
+    "currentDate": "2026-07-26",
+    "eventCount": 1570,
+    "quarantinedEventCount": 17
+  },
+  "entity": {
+    "id": "EN-43664b1263361b29",
+    "name": "SK Group",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-6beed07120c6c6d0"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-manufacturing"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-26",
+    "lastSeen": "2026-07-26",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-6beed07120c6c6d0"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-6beed07120c6c6d0",
+        "dataDate": "2026-07-26",
+        "date": "2026-07-26",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "SK集团与NVIDIA扩展AI领域战略合作伙伴关系",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "entityIds": [
+          "EN-43664b1263361b29",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-manufacturing",
+      "name": "制造业",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "manufacturing",
+      "eventIds": [
+        "EV-754e83c2d19005fe",
+        "EV-f6a72cddbda748b3",
+        "EV-9300044a58395552",
+        "EV-80e54c9a390da293",
+        "EV-aa33ca051f3a7f78",
+        "EV-010946e35d35bb43",
+        "EV-467d1a701d21327d",
+        "EV-59882383f82f215d",
+        "EV-a84ec4216d3ded6d",
+        "EV-67212040ee9cd7c8",
+        "EV-7012e774379b9c11",
+        "EV-b4f69c41e23c7ce0",
+        "EV-883d3b5f6d30eb48",
+        "EV-0d08cee88fe18483",
+        "EV-cafe435ddd007821",
+        "EV-ff1f6119de13fa19",
+        "EV-4dd25589d834060d",
+        "EV-7263caa45bbf168e",
+        "EV-6beed07120c6c6d0",
+        "EV-e4fec8a00b416d12",
+        "EV-5b16886442234f81",
+        "EV-3d8608d3e78e031b",
+        "EV-39848cdd62c00e59",
+        "EV-436bf00fedf6288d",
+        "EV-4faa2bcf2e42e60c",
+        "EV-a37b9d9fb85e460f",
+        "EV-19bcfc6d7c1612cb",
+        "EV-941ba9ebdc43f20c",
+        "EV-6b51b1b6fe22c540",
+        "EV-5f718c76c285ac9b",
+        "EV-625904809a9b14b8",
+        "EV-309ea4fc27a66485",
+        "EV-66b510b948ad4ba4",
+        "EV-6ce6b9c9780b97d9",
+        "EV-dd62847548bb6ae3",
+        "EV-8993e021ac17df4a",
+        "EV-08f736f61f2b46f3",
+        "EV-946569cccbd9222f",
+        "EV-2c7d13d234147817"
+      ],
+      "entityIds": [
+        "EN-834cc12fc35adde7",
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
+        "EN-7106dbc04a08ce3a",
+        "EN-3ccbd9105a45d8fc",
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-1bd14cd1a58c5708",
+        "EN-7d3194f79e645c42",
+        "EN-b9b0702726f5be1c",
+        "EN-cd35ca6b5c3cf23c",
+        "EN-ea3bd73e2b506e00",
+        "EN-883be863cc6562bb",
+        "EN-968e2d5b08687bf4",
+        "EN-53453cfb48a75dde",
+        "EN-ee04228c5c6d8b08",
+        "EN-7706c3c94d5f9b59",
+        "EN-240389f4b730bad4",
+        "EN-b0532e1af75cc4ab",
+        "EN-449777124b1466a8",
+        "EN-01839aa42da88393",
+        "EN-9fbf261b62c1d7c0",
+        "EN-6fcba5d96a4fadfd",
+        "EN-99f9ebbef37fcec5",
+        "EN-59ae856cd788d0f5",
+        "EN-0f3360879e746531",
+        "EN-80d387ccb3289295",
+        "EN-be972f28adbc6e84",
+        "EN-bbdefa2950f49882",
+        "EN-2fc9fff8ab7f35aa",
+        "EN-8efebac68a48c369",
+        "EN-16fd849ce27f115b",
+        "EN-f5791343a13abc71",
+        "EN-43664b1263361b29",
+        "EN-956b7280912ef1cc",
+        "EN-18ada5002dd89e01",
+        "EN-222f930b87524636",
+        "EN-72138e570e5103e2",
+        "EN-068af4e2e49e9b57",
+        "EN-51188f73e8dfbfee",
+        "EN-aa75c47729b4a292",
+        "EN-8147e6fed86d42c1",
+        "EN-3bc9f78028bc2dba",
+        "EN-50e756052d0a9ac3",
+        "EN-2abf8289b2f2113f",
+        "EN-91901356a63794df",
+        "EN-954dc5d6516f127c",
+        "EN-e07654c7cc29acbd",
+        "EN-e3b1bf3dab957ffe",
+        "EN-cf9488537f777c1a",
+        "EN-38f4d27a18084522",
+        "EN-94c93b5ab886f2d9",
+        "EN-d7aba0f660c463d8",
+        "EN-e58ee91f1d57df05",
+        "EN-8f451ae7730ddb67",
+        "EN-ce635c4eabff5e4f",
+        "EN-ab9e3beebd83960d",
+        "EN-61cce404a45c3545",
+        "EN-2a920347dfcf07a7",
+        "EN-2dc010636b9dce91",
+        "EN-23b979df49741c93",
+        "EN-4a639cb888a15d75",
+        "EN-56ee86045cfb0ddd",
+        "EN-cbc62794911ff31b",
+        "EN-a614180064f7ef60",
+        "EN-3a7bd3e2360a3d29",
+        "EN-6c7575a43005188a"
+      ],
+      "fdeIds": [
+        "FDE-bf49eb6f42ebe6a8",
+        "FDE-9f64e1521dd2dea0",
+        "FDE-6e17403b5cdb72b0"
+      ],
+      "hardwareIds": [
+        "HW-3a780bcd6e5bab6a",
+        "HW-c57ff6e49b40d839",
+        "HW-ceb55d9bc637c1d3"
+      ],
+      "firstSeen": "2025-12-02",
+      "lastSeen": "2026-07-26"
+    }
+  ],
+  "fde": [
+    {
+      "id": "FDE-6e17403b5cdb72b0",
+      "eventId": "EV-6beed07120c6c6d0",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "title": "SK集团与NVIDIA扩展AI领域战略合作伙伴关系",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "SK Group",
+      "industry": "未披露",
+      "useCase": "Across AI",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "SK Group and NVIDIA Expand Strategic Partnership Across AI # SK Group and NVIDIA Expand Strategic Partnership Across AI Factories and Next-Generation Memory ## $500-Billion-Plus NVIDIA-SK AI Initiative Spans SK Telecom’s AI Factory of up to 2 Gigawatts and SK hynix’s Long-Term AI Memory Partnershi..... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original"
+      ],
+      "outcomes": [],
+      "metrics": [
+        "$500"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/25/3333161/0/en/SK-Group-and-NVIDIA-Expand-Strategic-Partnership-Across-AI-Factories-and-Next-Generation-Memory.html",
+      "entityIds": [
+        "EN-43664b1263361b29",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ],
+  "hardware": []
+}

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T07:23:22.462Z",
-    "latestDataDate": "2026-07-25",
-    "currentDate": "2026-07-25",
-    "eventCount": 1533,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "latestDataDate": "2026-07-26",
+    "currentDate": "2026-07-26",
+    "eventCount": 1570,
+    "quarantinedEventCount": 17
   },
   "node": {
     "id": "TX-use_case-content_creation",
@@ -477,9 +477,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -505,6 +503,7 @@
         "EV-777eb5b7783b71fb",
         "EV-5a9fe80f8e4ae066",
         "EV-b4b5d141dac164c2",
+        "EV-6e4dd5111dfaae9c",
         "EV-36a9e4e908249381",
         "EV-98496cc86bacb1e0",
         "EV-ef6464cf7f764835",
@@ -513,6 +512,7 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-33e98b8bbd0a11b1",
         "EV-2634b786bde9fb8e",
         "EV-6aabfaa0c7c7f838",
         "EV-c914ac00a35d7cf0",
@@ -628,22 +628,22 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
+        "TX-technology-embodied_ai",
+        "TX-use_case-robotics_automation",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-use_case-customer_service",
-        "TX-use_case-robotics_automation",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
-        "TX-technology-embodied_ai",
         "TX-technology-fine_tuning",
         "TX-technology-model_context_protocol",
         "TX-technology-video_generation",
@@ -655,20 +655,18 @@
         "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [
+        "EN-96eebba49dbbf422",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
         "EN-6f216f2ea5b7a13e",
-        "EN-96eebba49dbbf422",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
-        "EN-1cd41545564777ce",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -677,14 +675,16 @@
         "EN-2aae0de3f5530f08"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-3a7bd3e2360a3d29",
       "name": "Apple",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "苹果"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -699,6 +699,7 @@
         "EV-d116b0aa5bb292e2",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-db7cb473fe7e9e3c",
         "EV-118317b7f92e5e16",
         "EV-c237f5dc53f0a923",
         "EV-3a74e4995b590507",
@@ -769,9 +770,9 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-retail_ecommerce",
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
         "TX-technology-long_context",
         "TX-use_case-cybersecurity",
@@ -784,11 +785,16 @@
         "TX-technology-quantization"
       ],
       "relatedEntityIds": [
+        "EN-e463d05a14e8697f",
+        "EN-7df09a7717ef2feb",
         "EN-0502bb9ed34980aa",
-        "EN-af3ceabbe048a291"
+        "EN-dd920a8cd166f486",
+        "EN-1924fff8eb4d54ae",
+        "EN-af3ceabbe048a291",
+        "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-06-04",
-      "lastSeen": "2026-07-24"
+      "lastSeen": "2026-07-26"
     },
     {
       "id": "EN-e0bab6f6c58bfe4e",

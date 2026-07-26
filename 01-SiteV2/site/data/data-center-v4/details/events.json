@@ -4,13 +4,211 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-25T07:23:22.462Z",
-    "latestDataDate": "2026-07-25",
-    "currentDate": "2026-07-25",
-    "eventCount": 1533,
-    "quarantinedEventCount": 16
+    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "latestDataDate": "2026-07-26",
+    "currentDate": "2026-07-26",
+    "eventCount": 1570,
+    "quarantinedEventCount": 17
   },
   "events": [
+    {
+      "id": "EV-a1e79d22310709c0",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "特斯拉近 20 亿美元收购未公开 AI 硬件公司，获关键专利与技术团队",
+      "originalTitle": "",
+      "subject": "特斯拉近 20 亿美元",
+      "action": "收购",
+      "object": "未公开 AI 硬件公司，获关键专利与技术团队",
+      "metrics": [
+        "20 亿",
+        "19.5 亿",
+        "132.25 亿"
+      ],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-27cccc0a71ef398c",
+          "subject": "特斯拉近 20 亿美元",
+          "object": "未公开 AI 硬件公司，获关键专利与技术团队",
+          "quote": "IT之家 7 月 26 日消息，特斯拉一笔备受关注的 AI 领域神秘收购终于尘埃落定。"
+        },
+        {
+          "id": "CL-cff1e50e42367e2d",
+          "subject": "特斯拉近 20 亿美元",
+          "object": "未公开 AI 硬件公司，获关键专利与技术团队",
+          "quote": "在今年早些时候释放出一些暗示之后，公司已正式完成对一家未公开名称的人工智能硬件公司的收购，交易规模接近 20 亿美元。"
+        },
+        {
+          "id": "CL-4944b70b0b9a0ae1",
+          "subject": "特斯拉近 20 亿美元",
+          "object": "未公开 AI 硬件公司，获关键专利与技术团队",
+          "quote": "根据特斯拉最新提交的 10-Q 季度报告，公司已于第二季度完成这笔交易，收购对价为价值 19.5 亿美元（IT之家注：现汇率约合 132.25 亿元人民币）的普通股和股权奖励。"
+        },
+        {
+          "id": "CL-dcbdfd2a382e1d7f",
+          "subject": "特斯拉近 20 亿美元",
+          "object": "未公开 AI 硬件公司，获关键专利与技术团队",
+          "quote": "特斯拉最初于今年 4 月宣布了这项收购计划，当时披露的交易规模最高可达 20 亿美元。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-78d6de2860912077",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/625.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/625.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 7 月 26 日消息，特斯拉一笔备受关注的 AI 领域神秘收购终于尘埃落定。"
+    },
+    {
+      "id": "EV-754e83c2d19005fe",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Arrakis 获 3800 万美元融资，用于工业运营中的智能体 AI",
+      "originalTitle": "Arrakis raises $38M for agentic AI in industrial operations",
+      "subject": "Arrakis",
+      "action": "raises",
+      "object": "$38M for agentic AI in industrial operations",
+      "metrics": [
+        "$38M",
+        "$30 million",
+        "$7.5 million",
+        "$140 million",
+        "$38 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-834cc12fc35adde7"
+      ],
+      "entityNames": [
+        "Arrakis"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-78f4fba4e2fdd18c",
+          "subject": "Arrakis",
+          "object": "$38M for agentic AI in industrial operations",
+          "quote": "Arrakis raises $38M for agentic AI in industrial operations"
+        },
+        {
+          "id": "CL-73dad3ce44162e32",
+          "subject": "Arrakis",
+          "object": "$38M for agentic AI in industrial operations",
+          "quote": "Arrakis raises $38M for industrial AI"
+        },
+        {
+          "id": "CL-27c1de87a6ae526f",
+          "subject": "Arrakis",
+          "object": "$38M for agentic AI in industrial operations",
+          "quote": "The funding is a $30 million Series A led by Blossom Capital, on top of a $7.5 million seed round led by Accel . The company is valued at $140 million post-money."
+        },
+        {
+          "id": "CL-cf9a5d9bde63356d",
+          "subject": "Arrakis",
+          "object": "$38M for agentic AI in industrial operations",
+          "quote": "The news: Arrakis, a London and Paris-based startup, came out of stealth with $38 million to build what it calls an AI layer for the operations of industrial companies, targeting aerospace, energy, logistics and manufacturing."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a7654a3e2bf5da93",
+          "publisher": "theconveyor.co",
+          "url": "https://theconveyor.co/p/arrakis-38m-industrial-ai-ops"
+        }
+      ],
+      "sourceUrl": "https://theconveyor.co/p/arrakis-38m-industrial-ai-ops",
+      "publisher": "theconveyor.co",
+      "sourceExcerpt": "Arrakis raises $38M for agentic AI in industrial operations"
+    },
     {
       "id": "EV-136b2edc9b9f3be8",
       "dataDate": "2026-07-25",
@@ -494,6 +692,88 @@
       "sourceExcerpt": "腾讯混元大语言模型和多模态团队合并，统一由姚顺雨管理 - IT之家"
     },
     {
+      "id": "EV-3fb827f44ea109de",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Paper 为其 AI 原生设计平台融资 3400 万美元",
+      "originalTitle": "Paper Raises $34M for AI-Native Design Platform | Value Add Pulse",
+      "subject": "Paper",
+      "action": "Raises",
+      "object": "$34M for AI-Native Design Platform | Value Add Pulse",
+      "metrics": [
+        "$34M",
+        "$34 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-382635c9325bf327",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Paper",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-631a4fe4c60446fc",
+          "subject": "Paper",
+          "object": "$34M for AI-Native Design Platform | Value Add Pulse",
+          "quote": "Paper Raises $34M for AI-Native Design Platform | Value Add Pulse"
+        },
+        {
+          "id": "CL-71a2d8ee9701a864",
+          "subject": "Paper",
+          "object": "$34M for AI-Native Design Platform | Value Add Pulse",
+          "quote": "Paper Raises $34M for AI-Native Design Platform"
+        },
+        {
+          "id": "CL-d4733289baf45e5a",
+          "subject": "Paper",
+          "object": "$34M for AI-Native Design Platform | Value Add Pulse",
+          "quote": "Paper, an AI-native design platform for teams shipping software with coding agents, raised a $34 million Series A led by Accel and ICONIQ, with angel backing from Anthropic and OpenAI engineers."
+        },
+        {
+          "id": "CL-d5d62123c6cd5d80",
+          "subject": "Paper",
+          "object": "$34M for AI-Native Design Platform | Value Add Pulse",
+          "quote": "$34M Series A Raised"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b56e7b4b3875ece6",
+          "publisher": "valueaddvc.com",
+          "url": "https://valueaddvc.com/pulse/paper-34m-series-a-ai-design-platform-2026"
+        }
+      ],
+      "sourceUrl": "https://valueaddvc.com/pulse/paper-34m-series-a-ai-design-platform-2026",
+      "publisher": "valueaddvc.com",
+      "sourceExcerpt": "Paper Raises $34M for AI-Native Design Platform | Value Add Pulse"
+    },
+    {
       "id": "EV-bffc68e7bb4d598b",
       "dataDate": "2026-07-25",
       "date": "2026-07-23",
@@ -940,104 +1220,6 @@
       "sourceExcerpt": "UAE-based AppliedAI has closed a pre-series B funding round led by Mubadala&rsquo;s MENA Venture Capital Fund and Arbor Ventures, for an unknown value."
     },
     {
-      "id": "EV-3fb827f44ea109de",
-      "dataDate": "2026-07-24",
-      "date": "2026-07-22",
-      "updatedDate": "2026-07-24",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Paper 融资 3400 万美元，打造下一代卓越设计平台",
-      "originalTitle": "Paper raises $34M to build the next great design platform",
-      "subject": "Paper",
-      "action": "raises",
-      "object": "$34M to build the next great design platform",
-      "metrics": [
-        "$34M"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "entityIds": [
-        "EN-382635c9325bf327"
-      ],
-      "entityNames": [
-        "Paper"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-7e507116728eb366",
-          "subject": "Paper",
-          "object": "$34M to build the next great design platform",
-          "quote": "Paper raises $34M to build the next great design platform"
-        },
-        {
-          "id": "CL-f37e2c3cca0c9507",
-          "subject": "Paper",
-          "object": "$34M to build the next great design platform",
-          "quote": "Paper has raised $34M in our Series A financing from Accel and ICONIQ. We are building the best place for teams and agents to design software that stands out."
-        },
-        {
-          "id": "CL-bda0ad720291515f",
-          "subject": "Paper",
-          "object": "$34M to build the next great design platform",
-          "quote": "Paper has raised $34M in our Series A financing from Accel and ICONIQ ."
-        },
-        {
-          "id": "CL-788feb77837997b4",
-          "subject": "Paper",
-          "object": "$34M to build the next great design platform",
-          "quote": "Engineering is moving faster than ever. And every department is adopting coding agents. Paper ’s mission is to help designers thrive in this agentic era. We want to help the world make quality software, not just more software."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-25b2471c6a2bc87a",
-          "publisher": "paper.design",
-          "url": "https://paper.design/blog/series-a"
-        }
-      ],
-      "sourceUrl": "https://paper.design/blog/series-a",
-      "publisher": "paper.design",
-      "sourceExcerpt": "Paper raises $34M to build the next great design platform"
-    },
-    {
       "id": "EV-14cc7f194f3e5af8",
       "dataDate": "2026-07-23",
       "date": "2026-07-22",
@@ -1095,121 +1277,6 @@
       "sourceUrl": "https://tech.eu/2026/07/22/openai-and-datadog-leaders-back-ai-deployment-startup-arrakis",
       "publisher": "tech.eu",
       "sourceExcerpt": "Others contributing to the funding include Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s head of business products, and Junaid Hussain, founder of Cambridge Aerospace."
-    },
-    {
-      "id": "EV-754e83c2d19005fe",
-      "dataDate": "2026-07-23",
-      "date": "2026-07-22",
-      "updatedDate": "2026-07-23",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Arrakis 携 3800 万美元资金走出隐身模式，将 AI 引入工厂与供应链",
-      "originalTitle": "Arrakis emerges from stealth with $38 million to bring AI to factories and supply chains",
-      "subject": "Arrakis",
-      "action": "funding",
-      "object": "$38 million in total funding",
-      "metrics": [
-        "$38 million",
-        "$30 million",
-        "$7.5 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-834cc12fc35adde7",
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "Arrakis",
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-44eb237073dddc2d",
-          "subject": "Arrakis",
-          "object": "$38 million in total funding",
-          "quote": "Arrakis, a London and Paris startup building what it calls an AI operating system for industrial companies, has emerged from stealth with $38 million in total funding"
-        },
-        {
-          "id": "CL-43d444e38aa3844b",
-          "subject": "Arrakis",
-          "object": "$30 million Series A led by Blossom Capital",
-          "quote": "The company raised a $30 million Series A led by Blossom Capital, on top of a seven and a half million dollar seed round led by Accel that closed in March."
-        },
-        {
-          "id": "CL-d3e5b633b2b61ddd",
-          "subject": "Arrakis",
-          "object": "$38 million in venture capital funding",
-          "quote": "Arrakis , a seven-month old London- and Paris-based startup building what it calls an AI \"operating system\" for industrial companies, is emerging from stealth with $38 million in venture capital funding."
-        },
-        {
-          "id": "CL-89f86082f74d9368",
-          "subject": "Arrakis",
-          "object": "$30 million Series A",
-          "quote": "The company's latest funding is a $30 million Series A led by Blossom Capital, with participation from venture capital firms Accel, GFC, MainObject, and Rerail."
-        },
-        {
-          "id": "CL-ab4f79d2463875bb",
-          "subject": "Arrakis",
-          "object": "$7.5 million seed round",
-          "quote": "Accel led an earlier $7.5 million seed round, and individual backers include Datadog CEO Olivier Pomel and OpenAI's head of business products, Olivier Godement."
-        },
-        {
-          "id": "CL-9e1b7a1d53ef19ee",
-          "subject": "Arrakis",
-          "object": "$38 million in venture capital funding",
-          "quote": "Arrakis , a seven-month old London- and Paris-based startup building what it calls an AI “operating system” for industrial companies, is emerging from stealth with $38 million in venture capital funding."
-        },
-        {
-          "id": "CL-5727adc00bb5b340",
-          "subject": "Arrakis",
-          "object": "$30 million Series A",
-          "quote": "The company’s latest funding is a $30 million Series A led by Blossom Capital, with participation from venture capital firms Accel, GFC, MainObject, and Rerail."
-        },
-        {
-          "id": "CL-ca4cec6ff06ca13e",
-          "subject": "Arrakis",
-          "object": "$7.5 million seed round",
-          "quote": "Accel led an earlier $7.5 million seed round, and individual backers include Datadog CEO Olivier Pomel and OpenAI’s head of business products, Olivier Godement."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-4217e8731dafc848",
-          "publisher": "thenextweb.com",
-          "url": "https://thenextweb.com/news/arrakis-ai-startup-38-million-stealth-industrial"
-        },
-        {
-          "id": "SA-c3b7f0be9140eddd",
-          "publisher": "finance.yahoo.com",
-          "url": "https://finance.yahoo.com/technology/ai/articles/exclusive-arrakis-betting-ai-biggest-120000635.html?.tsrc=rss"
-        },
-        {
-          "id": "SA-5dd8d7f22c598317",
-          "publisher": "fortune.com",
-          "url": "https://fortune.com/2026/07/22/arrakis-a-startup-betting-ais-biggest-payoff-is-in-industrial-sectors-not-office-work-emerges-from-stealth-with-38-million-in-venture-funding"
-        }
-      ],
-      "sourceUrl": "https://thenextweb.com/news/arrakis-ai-startup-38-million-stealth-industrial",
-      "publisher": "thenextweb.com",
-      "sourceExcerpt": "Arrakis, a London and Paris startup building what it calls an AI operating system for industrial companies, has emerged from stealth with $38 million in total funding"
     },
     {
       "id": "EV-a89bf7c0c4203ce2",
@@ -1453,6 +1520,124 @@
       "sourceUrl": "https://ithome.com/0/980/066.htm",
       "publisher": "IT之家（RSS）",
       "sourceExcerpt": "Noetra 在成立第一年便获得了超过 3800 亿日元（IT之家注：现汇率约合 157.99 亿元人民币）的政府资金支持"
+    },
+    {
+      "id": "EV-fcf3c464260b6730",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-26",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Gritt 获 3240 万美元融资，打造物理 AI 加速全球基础设施建设",
+      "originalTitle": "Gritt Launches with $32.4M to Build Physical AI for Accelerating the World’s Infrastructure Buildout | Gritt",
+      "subject": "Gritt",
+      "action": "Launches with $3",
+      "object": "2.4M to Build Physical AI for Accelerating the World’s Infrastructure Buildout | Gritt",
+      "metrics": [
+        "$32.4M",
+        "$26M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能"
+        }
+      ],
+      "entityIds": [
+        "EN-7ef08ef63597d47c"
+      ],
+      "entityNames": [
+        "Gritt"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-0a29867bfcb9f7f0",
+          "subject": "Gritt",
+          "object": "2.4M to Build Physical AI for Accelerating the World’s Infrastructure Buildout | Gritt",
+          "quote": "Gritt Launches with $32.4M to Build Physical AI for Accelerating the World’s Infrastructure Buildout."
+        },
+        {
+          "id": "CL-20c9755f054a62bc",
+          "subject": "Gritt",
+          "object": "2.4M to Build Physical AI for Accelerating the World’s Infrastructure Buildout | Gritt",
+          "quote": "SAN FRANCISCO July 21, 2026 — Gritt , the company building an intelligent system combining robotics and AI to accelerate the world’s infrastructure buildout, launched today with $32.4M in pre-seed and Series A funding. The $26M Series A was led by Obvious Ventures, with participation from Union Square Ventures and Active Impact Investments, and support from previous investors First Round Capital, Climactic, Congruent Ventures, and VSC Ventures."
+        },
+        {
+          "id": "CL-9dc1c805c852013d",
+          "subject": "Gritt",
+          "object": "2.4M to Build Physical AI for Accelerating the World’s Infrastructure Buildout | Gritt",
+          "quote": "Gritt Team · July 2026"
+        },
+        {
+          "id": "CL-d123af468d7bcc0c",
+          "subject": "Gritt",
+          "object": "2.4M to Build Physical AI for Accelerating the World’s Infrastructure Buildout | Gritt",
+          "quote": "Gritt’s intelligent systems ride on existing jobsite equipment to perform labor-intensive tasks and build infrastructure rapidly."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-487e6af92d35c1f4",
+          "publisher": "gritt.ai",
+          "url": "https://gritt.ai/news/gritt-launches-physical-ai"
+        }
+      ],
+      "sourceUrl": "https://gritt.ai/news/gritt-launches-physical-ai",
+      "publisher": "gritt.ai",
+      "sourceExcerpt": "Gritt Launches with $32.4M to Build Physical AI for Accelerating the World’s Infrastructure Buildout."
     },
     {
       "id": "EV-d23895daabadfa32",
@@ -28712,6 +28897,83 @@
       "sourceExcerpt": "Anthropic acquires Stainless"
     },
     {
+      "id": "EV-1f55bab475db2c30",
+      "dataDate": "2026-07-26",
+      "date": "2026-05-12",
+      "updatedDate": "2026-07-26",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "OpenAI 启动新部署业务；收购 Tomoro 以扩大企业 AI 落地规模",
+      "originalTitle": "OpenAI starts new deployment business; acquires Tomoro to scale enterprise AI rollouts - CIO&Leader",
+      "subject": "OpenAI starts new deployment business;",
+      "action": "acquires",
+      "object": "Tomoro to scale enterprise AI rollouts - CIO&Leader",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b8b1b2a646bf97bf",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI starts new deployment business;",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-c30bce9436be7fdb",
+          "subject": "OpenAI starts new deployment business;",
+          "object": "Tomoro to scale enterprise AI rollouts - CIO&Leader",
+          "quote": "As part of the launch, OpenAI has agreed to acquire Tomoro, an applied AI consulting and engineering firm. The deal is expected to bring around 150 engineers and deployment specialists into the new business once the acquisition closes."
+        },
+        {
+          "id": "CL-f75ef22de95ceb20",
+          "subject": "OpenAI starts new deployment business;",
+          "object": "Tomoro to scale enterprise AI rollouts - CIO&Leader",
+          "quote": "Tomoro acquisition gives OpenAI a ready-made engineering team"
+        },
+        {
+          "id": "CL-07bd36f1ecf81878",
+          "subject": "OpenAI starts new deployment business;",
+          "object": "Tomoro to scale enterprise AI rollouts - CIO&Leader",
+          "quote": "The acquisition of Tomoro gives OpenAI an existing team with enterprise deployment experience from day one."
+        },
+        {
+          "id": "CL-50af6810077ba596",
+          "subject": "OpenAI starts new deployment business;",
+          "object": "Tomoro to scale enterprise AI rollouts - CIO&Leader",
+          "quote": "OpenAI has launched the OpenAI Deployment Company, a new business focused on helping enterprises build, test, and run AI systems inside day-to-day operations. The company will work directly with businesses through teams of Forward Deployed Engineers, or FDEs, who specialize in building AI systems within complex enterprise environments."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a1e3c329b68b9291",
+          "publisher": "cioandleader.com",
+          "url": "https://cioandleader.com/openai-starts-new-deployment-business-acquires-tomoro-to-scale-enterprise-ai-rollouts"
+        }
+      ],
+      "sourceUrl": "https://cioandleader.com/openai-starts-new-deployment-business-acquires-tomoro-to-scale-enterprise-ai-rollouts",
+      "publisher": "cioandleader.com",
+      "sourceExcerpt": "As part of the launch, OpenAI has agreed to acquire Tomoro, an applied AI consulting and engineering firm. The deal is expected to bring around 150 engineers and deployment specialists into the new business once the acquisition closes."
+    },
+    {
       "id": "EV-c5d7d88d1aef8edb",
       "dataDate": "2026-06-09",
       "date": "2026-05-07",
@@ -30284,6 +30546,556 @@
       "sourceExcerpt": "Workflow automation startup Parabola raises $24M"
     },
     {
+      "id": "EV-729a0261934b73d9",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "特斯拉在智利、哥伦比亚招聘 AI 安全运营专员，为 Robotaxi 出海铺路",
+      "originalTitle": "",
+      "subject": "特斯拉",
+      "action": "deployment",
+      "object": "AI 安全运营专员岗位",
+      "metrics": [
+        "38 万",
+        "61 万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "entityIds": [
+        "EN-ddadc7e89f7cd629"
+      ],
+      "entityNames": [
+        "特斯拉"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-9b381f01159d4df4",
+          "subject": "特斯拉",
+          "object": "AI 安全运营专员岗位",
+          "quote": "特斯拉目前正在哥伦比亚和智利招聘 AI 安全运营专员（AI Safety Operator）"
+        },
+        {
+          "id": "CL-93e9affba6a28d63",
+          "subject": "特斯拉",
+          "object": "Robotaxi 车队累计无人监督行驶里程",
+          "quote": "其 Robotaxi 车队累计无人监督行驶里程已突破 38 万英里（约 61 万公里）"
+        },
+        {
+          "id": "CL-98e12ac4d0ba98c1",
+          "subject": "特斯拉",
+          "object": "Robotaxi 服务扩展至奥兰多和坦帕",
+          "quote": "本月早些时候，公司率先在迈阿密推出无人监督 Robotaxi 服务，随后又将服务扩展至奥兰多和坦帕"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ebf3724b384c003c",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/621.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/621.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "特斯拉目前正在哥伦比亚和智利招聘 AI 安全运营专员（AI Safety Operator）"
+    },
+    {
+      "id": "EV-9fa7757568f0524e",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cactus 赢得 MeitY 合同，打造 AI 招标文件编写平台",
+      "originalTitle": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform",
+      "subject": "Cactus Wins MeitY Contract To Build AI",
+      "action": "Tender",
+      "object": "Authoring Platform",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-65eb3e46b27c77c7",
+          "subject": "Cactus Wins MeitY Contract To Build AI",
+          "object": "Authoring Platform",
+          "quote": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
+        },
+        {
+          "id": "CL-ea77b4cb11c1693c",
+          "subject": "Cactus Wins MeitY Contract To Build AI",
+          "object": "Authoring Platform",
+          "quote": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
+        },
+        {
+          "id": "CL-df1f12c7a1489a73",
+          "subject": "Cactus Wins MeitY Contract To Build AI",
+          "object": "Authoring Platform",
+          "quote": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
+        },
+        {
+          "id": "CL-86df6594b3ba58d1",
+          "subject": "Cactus Wins MeitY Contract To Build AI",
+          "object": "Authoring Platform",
+          "quote": "Mumbai-based Cactus Technology Solutions has been awarded a contract by the National e-Governance Division (NeGD) under the IT Ministry to build an artificial intelligence powered procurement authoring platform. The platform is intended to assist officials across ministries and departments to draft, review and standardise requests for proposal, requests for quotation, expressions of interest and other procurement documents while retaining human oversight. Official records show Cactus topped the quality and cost based selection evaluation with a score of 100 and was declared H1."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-abed0558fcb11421",
+          "publisher": "constructionworld.in",
+          "url": "https://constructionworld.in/policy-updates-and-economic-news/cactus-wins-meity-contract-to-build-ai-tender-authoring-platform/94631"
+        }
+      ],
+      "sourceUrl": "https://constructionworld.in/policy-updates-and-economic-news/cactus-wins-meity-contract-to-build-ai-tender-authoring-platform/94631",
+      "publisher": "constructionworld.in",
+      "sourceExcerpt": "Cactus Wins MeitY Contract To Build AI Tender Authoring Platform"
+    },
+    {
+      "id": "EV-fa46e5177d548bad",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Leidos 借助 ServiceNow AI 平台为 5 万名员工重塑体验并提升运营效率",
+      "originalTitle": "Leidos reimagines experiences for 50,000 employees and boosts operational efficiency with the ServiceNow AI Platform - ServiceNow Newsroom",
+      "subject": "Leidos",
+      "action": "deployment",
+      "object": "ServiceNow AI Platform",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        }
+      ],
+      "entityIds": [
+        "EN-5d11926dd637b275",
+        "EN-b5738c169b693bee"
+      ],
+      "entityNames": [
+        "Leidos",
+        "ServiceNow"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-fa5aec72fc5b1625",
+          "subject": "Leidos",
+          "object": "ServiceNow AI Platform",
+          "quote": "Leidos is expanding its relationship with ServiceNow and deploying the ServiceNow AI Platform across its enterprise – providing autonomous, AI-driven workflows designed to cut costs, improve employee experiences, and free employees for mission critical work."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-aaa1f2ed3c2a563b",
+          "publisher": "newsroom.servicenow.com",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/Leidos-reimagines-experiences-for-50000-employees-and-boosts-operational-efficiency-with-the-ServiceNow-AI-Platform/default.aspx"
+        }
+      ],
+      "sourceUrl": "https://newsroom.servicenow.com/press-releases/details/2026/Leidos-reimagines-experiences-for-50000-employees-and-boosts-operational-efficiency-with-the-ServiceNow-AI-Platform/default.aspx",
+      "publisher": "newsroom.servicenow.com",
+      "sourceExcerpt": "Leidos is expanding its relationship with ServiceNow and deploying the ServiceNow AI Platform across its enterprise – providing autonomous, AI-driven workflows designed to cut costs, improve employee experiences, and free employees for mission critical work."
+    },
+    {
+      "id": "EV-c2b613b5a2fb1135",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "阿里 Qoder Mobile 移动端 App 上线，iOS / Android / 鸿蒙三大版本同步发布",
+      "originalTitle": "",
+      "subject": "阿里 Qoder Mobile 移动端 App",
+      "action": "上线",
+      "object": "，iOS / Android / 鸿蒙三大版本同步发布",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665"
+      ],
+      "entityNames": [
+        "Alibaba"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-92f42cf4aa13af06",
+          "subject": "阿里 Qoder Mobile 移动端 App",
+          "object": "，iOS / Android / 鸿蒙三大版本同步发布",
+          "quote": "阿里：Qoder Mobile 移动端 App 安卓、iOS、鸿蒙三大版本同步上线，功能层面完全一致 - IT之家"
+        },
+        {
+          "id": "CL-721873641942cccd",
+          "subject": "阿里 Qoder Mobile 移动端 App",
+          "object": "，iOS / Android / 鸿蒙三大版本同步发布",
+          "quote": "阿里：Qoder Mobile 移动端 App 安卓、iOS、鸿蒙三大版本同步上线，功能层面完全一致"
+        },
+        {
+          "id": "CL-ea542f7447478297",
+          "subject": "阿里 Qoder Mobile 移动端 App",
+          "object": "，iOS / Android / 鸿蒙三大版本同步发布",
+          "quote": "IT之家 7 月 25 日消息，阿里官方今日宣布，Qoder Mobile 移动端 App 正式发布上新， iOS、 Android 、 鸿蒙 三大版本同步上线 。"
+        },
+        {
+          "id": "CL-03250de89bb80001",
+          "subject": "阿里 Qoder Mobile 移动端 App",
+          "object": "，iOS / Android / 鸿蒙三大版本同步发布",
+          "quote": "Qoder Mobile 让用户随时随地在手机上管理 AI Agent。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9ca9b1ea129a4a7d",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/548.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/548.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "阿里：Qoder Mobile 移动端 App 安卓、iOS、鸿蒙三大版本同步上线，功能层面完全一致 - IT之家"
+    },
+    {
+      "id": "EV-e09efcd49776cb95",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "纳德拉：微软自研 MAI 模型在 Excel 任务表现与 GPT-5.6 相当，且部署成本更低",
+      "originalTitle": "",
+      "subject": "纳德拉：微软自研 MAI 模型在 Excel 任务表现与 GPT-5.6 相当，且",
+      "action": "部署",
+      "object": "成本更低",
+      "metrics": [
+        "100 GPU"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        }
+      ],
+      "entityIds": [
+        "EN-3711098f35d71cb9",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "纳德拉",
+        "Microsoft",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-42e85500d76ed9e1",
+          "subject": "纳德拉：微软自研 MAI 模型在 Excel 任务表现与 GPT-5.6 相当，且",
+          "object": "成本更低",
+          "quote": "IT之家 7 月 25 日消息，科技媒体 firstpost 于 7 月 23 日发布博文，报道称微软首席执行官萨提亚 · 纳德拉（Satya Nadella）表示， 微软自研 MAI 系列模型在许多应用场景中超越了前沿 AI，而且能降低企业部署 AI 成本。"
+        },
+        {
+          "id": "CL-4f6cdf876f6fe00d",
+          "subject": "纳德拉：微软自研 MAI 模型在 Excel 任务表现与 GPT-5.6 相当，且",
+          "object": "成本更低",
+          "quote": "纳德拉表示在大部分常见的 Excel 任务下，MAI 系列模型性能相当于 GPT-5.6，而且由于不需要依赖最新的 AI 加速器，企业可以在英伟达 H100/A100 GPU 上运行，因此部署成本更低。"
+        },
+        {
+          "id": "CL-0d7370537f8c3a81",
+          "subject": "纳德拉：微软自研 MAI 模型在 Excel 任务表现与 GPT-5.6 相当，且",
+          "object": "成本更低",
+          "quote": "纳德拉表示微软正在推进“前沿扩散与控制”（Frontier Diffusion & Control）战略，认为在未来企业 AI 场景下，客户不会再完全依赖单一前沿模型，会根据实际任务和需求，编排最合理的 AI 模型调用系统。"
+        },
+        {
+          "id": "CL-217e234e130e74c2",
+          "subject": "纳德拉：微软自研 MAI 模型在 Excel 任务表现与 GPT-5.6 相当，且",
+          "object": "成本更低",
+          "quote": "微软表示在面向特定产品定制的强化学习环境（RLEs）下，MAI 模型通过学习真实的客户工作流程，在 GitHub Copilot 和 Excel 方面取得了显著的进步。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d369435665645f77",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/532.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/532.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 7 月 25 日消息，科技媒体 firstpost 于 7 月 23 日发布博文，报道称微软首席执行官萨提亚 · 纳德拉（Satya Nadella）表示， 微软自研 MAI 系列模型在许多应用场景中超越了前沿 AI，而且能降低企业部署 AI 成本。"
+    },
+    {
+      "id": "EV-910ebb509f1d437b",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-26",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "美国退伍军人事务部授予Salesforce 16亿美元合同，以改革退伍军人护理服务",
+      "originalTitle": "VA Awards Salesforce $1.6B Contract to Transform Veteran Care - Salesforce",
+      "subject": "U.S. Department of Veterans Affairs",
+      "action": "procurement_contract",
+      "object": "Salesforce",
+      "metrics": [
+        "$1.6 billion"
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-ebfeb2f51b9eaf40",
+        "EN-3ccbd9105a45d8fc"
+      ],
+      "entityNames": [
+        "U.S. Department of Veterans Affairs",
+        "Salesforce"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-9eda259aed5d77d5",
+          "subject": "U.S. Department of Veterans Affairs",
+          "object": "Salesforce",
+          "quote": "the U.S. Department of Veterans Affairs (VA) has awarded the company, through its distribution network, a $1.6 billion, three-year, Agentic Enterprise License Agreement (AELA)"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a7c5e1d1c1a8ace8",
+          "publisher": "salesforce.com",
+          "url": "https://salesforce.com/news/press-releases/2026/07/24/missionforce-transforms-veteran-care"
+        }
+      ],
+      "sourceUrl": "https://salesforce.com/news/press-releases/2026/07/24/missionforce-transforms-veteran-care",
+      "publisher": "salesforce.com",
+      "sourceExcerpt": "the U.S. Department of Veterans Affairs (VA) has awarded the company, through its distribution network, a $1.6 billion, three-year, Agentic Enterprise License Agreement (AELA)"
+    },
+    {
       "id": "EV-2a101d792d92fb1f",
       "dataDate": "2026-07-25",
       "date": "2026-07-24",
@@ -30745,6 +31557,106 @@
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
       "publisher": "The Verge AI",
       "sourceExcerpt": "OpenAI is making big claims as it rolls out ChatGPT Health to everyone"
+    },
+    {
+      "id": "EV-9ff0c57323ed8318",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-23",
+      "updatedDate": "2026-07-26",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "TTEC Digital 在 Agentforce 联络中心部署首个实时 Salesforce 客户",
+      "originalTitle": "TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center | Markets Insider",
+      "subject": "TTEC Digital",
+      "action": "Deploys",
+      "object": "First Live Salesforce Customer on Agentforce Contact Center | Markets Insider",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "entityIds": [
+        "EN-5e9e4638fa2ec9a4",
+        "EN-3ccbd9105a45d8fc"
+      ],
+      "entityNames": [
+        "TTEC Digital",
+        "Salesforce"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-065b117ecd3a1093",
+          "subject": "TTEC Digital",
+          "object": "First Live Salesforce Customer on Agentforce Contact Center | Markets Insider",
+          "quote": "TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center"
+        },
+        {
+          "id": "CL-660e0d620d9e0dea",
+          "subject": "TTEC Digital",
+          "object": "First Live Salesforce Customer on Agentforce Contact Center | Markets Insider",
+          "quote": "“The TTEC Digital team worked alongside us as true partners, taking the time to understand our clients, our coaches, and the realities of serving busy families managing tight budgets and full lives. With that insight, TTEC Digital implemented Agentforce Contact Center in a way that was designed around our needs, helping calls reach the right coach, enabling callbacks on our clients’ schedule, and using AI to handle data entry so our staff can stay focused on the conversation in front of them,” said George Reuter, managing director of impact and innovation at Compass Working Capital ."
+        },
+        {
+          "id": "CL-13a83e90bb879574",
+          "subject": "TTEC Digital",
+          "object": "First Live Salesforce Customer on Agentforce Contact Center | Markets Insider",
+          "quote": "Earlier this year, TTEC Digital was selected for Salesforce's elite Forward Deployed Engineering Partner Network , enabling TTEC Digital architects to collaborate directly with Salesforce product engineering teams during implementation. That collaboration helped accelerate deployment from project kickoff to production in six weeks."
+        },
+        {
+          "id": "CL-91dc1435b5ed8778",
+          "subject": "TTEC Digital",
+          "object": "First Live Salesforce Customer on Agentforce Contact Center | Markets Insider",
+          "quote": "TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center GlobeNewswire 3d"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-63b9a7e409c11eeb",
+          "publisher": "markets.businessinsider.com",
+          "url": "https://markets.businessinsider.com/news/stocks/ttec-digital-deploys-first-live-salesforce-customer-on-agentforce-contact-center-1036356704"
+        }
+      ],
+      "sourceUrl": "https://markets.businessinsider.com/news/stocks/ttec-digital-deploys-first-live-salesforce-customer-on-agentforce-contact-center-1036356704",
+      "publisher": "markets.businessinsider.com",
+      "sourceExcerpt": "TTEC Digital Deploys First Live Salesforce Customer on Agentforce Contact Center"
     },
     {
       "id": "EV-67212040ee9cd7c8",
@@ -31593,6 +32505,125 @@
       "sourceUrl": "https://the-decoder.com/anthropic-will-deploy-2-gigawatts-of-amd-gpus-for-claude-in-a-deal-worth-up-to-5-billion",
       "publisher": "The Decoder AI News",
       "sourceExcerpt": "Anthropic will deploy 2 gigawatts of AMD GPUs for Claude in a deal worth up to $5 billion"
+    },
+    {
+      "id": "EV-7012e774379b9c11",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-22",
+      "updatedDate": "2026-07-26",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "E4 赢得卢森堡 AI 工厂招标",
+      "originalTitle": "E4 wins the tender for Luxembourg's AI Factory",
+      "subject": "E4 wins the",
+      "action": "tender",
+      "object": "for Luxembourg's AI Factory",
+      "metrics": [
+        "80 million"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-449777124b1466a8"
+      ],
+      "entityNames": [
+        "E4"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-f13b9d5e8632d52c",
+          "subject": "E4 wins the",
+          "object": "for Luxembourg's AI Factory",
+          "quote": "E4 wins the tender for Luxembourg’s AI Factory"
+        },
+        {
+          "id": "CL-2d82ebbb38e30d23",
+          "subject": "E4 wins the",
+          "object": "for Luxembourg's AI Factory",
+          "quote": "E4 wins the tender for Luxembourg’s AI Factory"
+        },
+        {
+          "id": "CL-6cb56421e35b6cd4",
+          "subject": "E4 wins the",
+          "object": "for Luxembourg's AI Factory",
+          "quote": "The EuroHPC Joint Undertaking has signed a supply contract with E4 Computer Engineering, the company selected as the contractor following a call for tenders launched in February 2026, for the procurement, delivery, installation and maintenance of MeluXina-AI, the new AI-optimised supercomputer intended for the Luxembourg AI Factory."
+        },
+        {
+          "id": "CL-b20b28c69e2e07c8",
+          "subject": "E4 wins the",
+          "object": "for Luxembourg's AI Factory",
+          "quote": "The EuroHPC Joint Undertaking has signed a supply contract with E4 MeluXina-AI, which forms part of the Luxembourg AI Factory initiative and will be hosted and managed by LuxProvide . The new system will strengthen Europe’s capabilities in artificial intelligence, machine learning and data science, providing the computing power r equired for the training, testing and pre-production deployment of advanced AI models, and supporting research, innovation and industrial development in strategic sectors such as finance, space, cybersecurity and the green economy . The system will be complemented by a rich and scalable software ecosystem, designed to meet the needs of start-ups, companies of all si…"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b2a1185bb88b71b5",
+          "publisher": "e4company.com",
+          "url": "https://e4company.com/en/2026/07/meluxina-ai-factory-luxemburg"
+        }
+      ],
+      "sourceUrl": "https://e4company.com/en/2026/07/meluxina-ai-factory-luxemburg",
+      "publisher": "e4company.com",
+      "sourceExcerpt": "E4 wins the tender for Luxembourg’s AI Factory"
     },
     {
       "id": "EV-b150af93042566a6",
@@ -33561,6 +34592,67 @@
       "sourceExcerpt": "我国首个全国产十万卡 AI 超集群，曙光 8000 上线首周实现满载运行 - IT之家"
     },
     {
+      "id": "EV-d789e30c4f663694",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-17",
+      "updatedDate": "2026-07-26",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cactus Technology Solutions 获得 MeitY 合同，打造 AI 采购平台",
+      "originalTitle": "Cactus Technology Solutions Secures MeitY Contract for AI Procurement Platform | SamSearch",
+      "subject": "Ministry of Electronics and Information Technology",
+      "action": "procurement_contract",
+      "object": "Cactus Technology Solutions",
+      "metrics": [],
+      "locations": [
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2b2393f584e62c31",
+        "EN-3729b5060bf754f0"
+      ],
+      "entityNames": [
+        "Ministry of Electronics",
+        "Information Technology"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-b9869effdcc1dbc2",
+          "subject": "Ministry of Electronics and Information Technology",
+          "object": "Cactus Technology Solutions",
+          "quote": "In July 2026, India's Ministry of Electronics and Information Technology (MeitY) awarded a significant contract to Mumbai-based Cactus Technology Solutions to create an innovative AI-powered procurement authoring platform."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-d49b9c63c2a40759",
+          "publisher": "samsearch.co",
+          "url": "https://samsearch.co/government-contracting-news/cactus-technology-solutions-secures-meity-contract-for-ai-procurement-platform-143307"
+        }
+      ],
+      "sourceUrl": "https://samsearch.co/government-contracting-news/cactus-technology-solutions-secures-meity-contract-for-ai-procurement-platform-143307",
+      "publisher": "samsearch.co",
+      "sourceExcerpt": "In July 2026, India's Ministry of Electronics and Information Technology (MeitY) awarded a significant contract to Mumbai-based Cactus Technology Solutions to create an innovative AI-powered procurement authoring platform."
+    },
+    {
       "id": "EV-53f08daddd011dbb",
       "dataDate": "2026-07-18",
       "date": "2026-07-17",
@@ -35189,6 +36281,83 @@
       "sourceExcerpt": "GPT-5.6 上线之际，马斯克再度和奥尔特曼隔空“掐架” - IT之家"
     },
     {
+      "id": "EV-6e59e66c3f9a9754",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-11",
+      "updatedDate": "2026-07-26",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cactus Technology 赢得 MeitY 合同，为 AI 招标起草平台提供服务",
+      "originalTitle": "Cactus Technology wins MeitY contract for AI tender drafting platform, TechGig",
+      "subject": "Cactus Technology wins MeitY contract for AI",
+      "action": "tender",
+      "object": "drafting platform, TechGig",
+      "metrics": [
+        "22%"
+      ],
+      "locations": [
+        "India"
+      ],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-7b7b3b6a8491163f",
+          "subject": "Cactus Technology wins MeitY contract for AI",
+          "object": "drafting platform, TechGig",
+          "quote": "Cactus Technology wins MeitY contract for AI tender drafting platform"
+        },
+        {
+          "id": "CL-0338a47ba313f96a",
+          "subject": "Cactus Technology wins MeitY contract for AI",
+          "object": "drafting platform, TechGig",
+          "quote": "Mumbai-based Cactus Technology Solutions has been awarded a contract by the Ministry of Electronics and Information Technology (MeitY) to create an artificial intelligence (AI)-powered platform designed to assist government departments in drafting, reviewing, and validating procurement documents.The project, commissioned by the National e-Governance Division (NeGD), aims to streamline the preparation of Requests for Proposals (RFPs), Requests for Quotations (RFQs), and Expressions of Interest (EOIs).Cactus outbid Kyndryl Solutions with a bid of ₹2.27 crore, while Kyndryl's bid was ₹2.86 crore. In the quality-and-cost based selection (QCBS) evaluation, Cactus received a score of 100, surpassi…"
+        },
+        {
+          "id": "CL-a5fc1d052522722f",
+          "subject": "Cactus Technology wins MeitY contract for AI",
+          "object": "drafting platform, TechGig",
+          "quote": "Cactus Technology wins MeitY contract for AI tender drafting platform"
+        },
+        {
+          "id": "CL-ec16dae49b22c30a",
+          "subject": "Cactus Technology wins MeitY contract for AI",
+          "object": "drafting platform, TechGig",
+          "quote": "Mumbai-based Cactus Technology Solutions has been awarded a contract by the Ministry of Electronics and Information Technology (MeitY) to create an artificial intelligence (AI)-powered platform designed to assist government departments in drafting, reviewing, and validating procurement documents.The project, commissioned by the National e-Governance Division (NeGD), aims to streamline the preparation of Requests for Proposals (RFPs), Requests for Quotations (RFQs), and Expressions of Interest (EOIs).Cactus outbid Kyndryl Solutions with a bid of ₹2.27 crore, while Kyndryl's bid was ₹2.86 crore. In the quality-and-cost based selection (QCBS) evaluation, Cactus received a score of 100, surpassi…"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-bf2c1247df207ee9",
+          "publisher": "techgig.com",
+          "url": "https://techgig.com/news/ai/cactus-technology-wins-meity-contract-for-ai-tender-drafting-platform/132325734"
+        }
+      ],
+      "sourceUrl": "https://techgig.com/news/ai/cactus-technology-wins-meity-contract-for-ai-tender-drafting-platform/132325734",
+      "publisher": "techgig.com",
+      "sourceExcerpt": "Cactus Technology wins MeitY contract for AI tender drafting platform"
+    },
+    {
       "id": "EV-b4eb99a878be9bb2",
       "dataDate": "2026-07-13",
       "date": "2026-07-10",
@@ -36104,6 +37273,83 @@
       "sourceExcerpt": "based on one of the first large-scale deployments of the NVIDIA Vera Rubin platform"
     },
     {
+      "id": "EV-db7b597314937508",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-07",
+      "updatedDate": "2026-07-26",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Cactus、Kyndryl 入选印度电子信息技术部 AI 招标起草平台最终名单 - Storyboard18",
+      "originalTitle": "Cactus, Kyndryl make final cut for MeitY's AI tender drafting platform - Storyboard18",
+      "subject": "Cactus, Kyndryl make final cut for MeitY's AI",
+      "action": "tender",
+      "object": "drafting platform - Storyboard18",
+      "metrics": [],
+      "locations": [
+        "India"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-caaeac3184e90c7f"
+      ],
+      "entityNames": [
+        "Cactus"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-bf52e0e26ae8c1ef",
+          "subject": "Cactus, Kyndryl make final cut for MeitY's AI",
+          "object": "drafting platform - Storyboard18",
+          "quote": "Cactus, Kyndryl make final cut for MeitY's AI tender drafting platform"
+        },
+        {
+          "id": "CL-944bdf45bfa120eb",
+          "subject": "Cactus, Kyndryl make final cut for MeitY's AI",
+          "object": "drafting platform - Storyboard18",
+          "quote": "According to official records reviewed by Moneycontrol, the two companies have cleared the technical evaluation stage of the National e-Governance Division's (NeGD) (an autonomous body under the IT ministry) tender, while bids submitted by CoRover, Innefu Labs and NEC Corporation India have been rejected."
+        },
+        {
+          "id": "CL-9b42f36cc4362628",
+          "subject": "Cactus, Kyndryl make final cut for MeitY's AI",
+          "object": "drafting platform - Storyboard18",
+          "quote": "Cactus, Kyndryl make final cut for MeitY's AI tender drafting platform"
+        },
+        {
+          "id": "CL-fc8b4fe1928984fa",
+          "subject": "Cactus, Kyndryl make final cut for MeitY's AI",
+          "object": "drafting platform - Storyboard18",
+          "quote": "Cactus Technology Solutions and Kyndryl Solutions lead the race for India's AI procurement platform, clearing technical evaluation."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b5069b210721a73c",
+          "publisher": "storyboard18.com",
+          "url": "https://storyboard18.com/digital/cactus-kyndryl-vie-for-govt-ai-procurement-platform-ws-l-103369.htm"
+        }
+      ],
+      "sourceUrl": "https://storyboard18.com/digital/cactus-kyndryl-vie-for-govt-ai-procurement-platform-ws-l-103369.htm",
+      "publisher": "storyboard18.com",
+      "sourceExcerpt": "Cactus, Kyndryl make final cut for MeitY's AI tender drafting platform"
+    },
+    {
       "id": "EV-392fb231bfc623b6",
       "dataDate": "2026-07-13",
       "date": "2026-07-07",
@@ -36216,6 +37462,119 @@
       "sourceUrl": "https://ithome.com/0/973/347.htm",
       "publisher": "IT之家（RSS）",
       "sourceExcerpt": "已同明星人工智能初创企业 Anthropic 签署一项为期 20 年的租赁协议"
+    },
+    {
+      "id": "EV-a80624daa2a65d4c",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-06",
+      "updatedDate": "2026-07-26",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Substrate AI 赢得布宜诺斯艾利斯市政府合同，将在 BAX 上部署 Serenity Star 以加速政府数字化转型",
+      "originalTitle": "Substrate AI wins a contract from the Government of the City of Buenos Aires to deploy Serenity Star on BAX and accelerate the digital transformation of the administration - Substr…",
+      "subject": "Substrate AI wins a contract from the Government of the City of Buenos Aires to",
+      "action": "deploy",
+      "object": "Serenity Star on BAX and accelerate the digital transformation of the administration - Substrate AI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "government_public_sector",
+            "dimensionName": "行业",
+            "name": "政府与公共部门"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "government_public_sector",
+          "dimensionName": "行业",
+          "name": "政府与公共部门"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "government_public_sector",
+          "dimensionName": "行业",
+          "name": "政府与公共部门"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-fb92f7fc60bbf746",
+          "subject": "Substrate AI wins a contract from the Government of the City of Buenos Aires to",
+          "object": "Serenity Star on BAX and accelerate the digital transformation of the administration - Substrate AI",
+          "quote": "Substrate AI wins a contract from the Government of the City of Buenos Aires to deploy Serenity Star on BAX and accelerate the digital transformation of the administration"
+        },
+        {
+          "id": "CL-a5b46c86d4a7e9cf",
+          "subject": "Substrate AI wins a contract from the Government of the City of Buenos Aires to",
+          "object": "Serenity Star on BAX and accelerate the digital transformation of the administration - Substrate AI",
+          "quote": "The project will enable the Government of the City deploy agents of artificial intelligence capable of improve both the service provided to the citizens and operational efficiency of the administration through the automation of tasks, document analysis and intelligent support for public sector employees."
+        },
+        {
+          "id": "CL-c4cbec648368fc8c",
+          "subject": "Substrate AI wins a contract from the Government of the City of Buenos Aires to",
+          "object": "Serenity Star on BAX and accelerate the digital transformation of the administration - Substrate AI",
+          "quote": "The Serenity Star platform has been designed to create, deploy and manage artificial intelligence agents within complex organisations, integrating language models, document repositories and"
+        },
+        {
+          "id": "CL-adefd63793fc13af",
+          "subject": "Substrate AI wins a contract from the Government of the City of Buenos Aires to",
+          "object": "Serenity Star on BAX and accelerate the digital transformation of the administration - Substrate AI",
+          "quote": "Serenity Star will be the technology platform that will drive BAX, the artificial intelligence assistant of the Government of the City of Buenos Aires, and new cases of use of AI in management administration."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-4eb2368336b4284c",
+          "publisher": "substrate.ai",
+          "url": "https://substrate.ai/substrate-ai-wins-a-contract-from-the-government-of-the-city-of-buenos-aires-to-deploy-serenity-star-on-bax-and-accelerate-the-digital-transformation-of-the-administration"
+        }
+      ],
+      "sourceUrl": "https://substrate.ai/substrate-ai-wins-a-contract-from-the-government-of-the-city-of-buenos-aires-to-deploy-serenity-star-on-bax-and-accelerate-the-digital-transformation-of-the-administration",
+      "publisher": "substrate.ai",
+      "sourceExcerpt": "Substrate AI wins a contract from the Government of the City of Buenos Aires to deploy Serenity Star on BAX and accelerate the digital transformation of the administration"
     },
     {
       "id": "EV-3953d03596a0ea52",
@@ -44328,16 +45687,16 @@
     },
     {
       "id": "EV-9ad569c873451304",
-      "dataDate": "2026-07-23",
+      "dataDate": "2026-07-26",
       "date": "2026-05-14",
-      "updatedDate": "2026-07-23",
+      "updatedDate": "2026-07-26",
       "eventType": "deployment",
       "eventTypeLabel": "部署",
       "eventGroup": "部署与案例",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "INTURAI 将其AI原生多垂直平台部署至养老与零售领域的多个集团 – 公司公告",
+      "title": "INTURAI 将其AI原生多垂直领域平台部署至养老与零售垂直领域的多个集团",
       "originalTitle": "INTURAI DEPLOYS IT'S AI NATIVE MULTI-VERTICAL PLATFORM TO MULTIPLE GROUPS ACROSS AGED CARE AND RETAIL VERTICALS – Company Announcement - FT.com",
       "subject": "INTURAI",
       "action": "DEPLOYS",
@@ -44378,36 +45737,34 @@
         }
       ],
       "entityIds": [
-        "EN-6957217eb8e00a30",
-        "EN-8f71c4871a160172"
+        "EN-6957217eb8e00a30"
       ],
       "entityNames": [
-        "INTURAI",
-        "Thinking Machines Lab"
+        "INTURAI"
       ],
       "productName": "",
       "products": [],
       "claims": [
         {
-          "id": "CL-c68a2bb4fa2617e1",
+          "id": "CL-0434a857931a550e",
           "subject": "INTURAI",
           "object": "IT'S AI NATIVE MULTI-VERTICAL PLATFORM TO MULTIPLE GROUPS ACROSS AGED CARE AND RETAIL VERTICALS – Company Announcement - FT.com",
           "quote": "INTURAI DEPLOYS IT'S AI NATIVE MULTI-VERTICAL PLATFORM TO MULTIPLE GROUPS ACROSS AGED CARE AND RETAIL VERTICALS"
         },
         {
-          "id": "CL-96709f6d02d5b631",
+          "id": "CL-38ced4e002e75142",
           "subject": "INTURAI",
           "object": "IT'S AI NATIVE MULTI-VERTICAL PLATFORM TO MULTIPLE GROUPS ACROSS AGED CARE AND RETAIL VERTICALS – Company Announcement - FT.com",
           "quote": "View original content: https://www.prnewswire.com/news-releases/inturai-deploys-its-ai-native-multi-vertical-platform-to-multiple-groups-across-aged-care-and-retail-verticals-302772050.html"
         },
         {
-          "id": "CL-0b2862cdb3087388",
+          "id": "CL-4e684151b3a0eec0",
           "subject": "INTURAI",
           "object": "IT'S AI NATIVE MULTI-VERTICAL PLATFORM TO MULTIPLE GROUPS ACROSS AGED CARE AND RETAIL VERTICALS – Company Announcement - FT.com",
           "quote": "May 14 2026 13:57 BST"
         },
         {
-          "id": "CL-39171653dea29a8e",
+          "id": "CL-41de3d63363f387e",
           "subject": "INTURAI",
           "object": "IT'S AI NATIVE MULTI-VERTICAL PLATFORM TO MULTIPLE GROUPS ACROSS AGED CARE AND RETAIL VERTICALS – Company Announcement - FT.com",
           "quote": "(CSE: URAI / OTC: URAIF / FSE: 3QG0) [email protected]"
@@ -44415,12 +45772,12 @@
       ],
       "sources": [
         {
-          "id": "SA-021b7b58c6971631",
+          "id": "SA-fe50db239643ccbe",
           "publisher": "markets.ft.com",
-          "url": "https://markets.ft.com/data/announce/full?dockey=600-202605140857CANADANWCANADAPR_C8091-1"
+          "url": "https://markets.ft.com/data/announce/detail?dockey=600-202605140857CANADANWCANADAPR_C8091-1"
         }
       ],
-      "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202605140857CANADANWCANADAPR_C8091-1",
+      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202605140857CANADANWCANADAPR_C8091-1",
       "publisher": "markets.ft.com",
       "sourceExcerpt": "INTURAI DEPLOYS IT'S AI NATIVE MULTI-VERTICAL PLATFORM TO MULTIPLE GROUPS ACROSS AGED CARE AND RETAIL VERTICALS"
     },
@@ -45328,6 +46685,283 @@
       "sourceExcerpt": "Lyft and Drive.ai partner on Bay Area self-driving ride-hailing pilot"
     },
     {
+      "id": "EV-6beed07120c6c6d0",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "partial",
+      "title": "SK集团与NVIDIA扩展AI领域战略合作伙伴关系",
+      "originalTitle": "SK Group and NVIDIA Expand Strategic Partnership Across AI",
+      "subject": "SK Group and NVIDIA Expand Strategic",
+      "action": "Partnership",
+      "object": "Across AI",
+      "metrics": [
+        "$500"
+      ],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-43664b1263361b29",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "SK Group",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-63283f6593df7445",
+          "subject": "SK Group and NVIDIA Expand Strategic",
+          "object": "Across AI",
+          "quote": "SK Group and NVIDIA Expand Strategic Partnership Across AI # SK Group and NVIDIA Expand Strategic Partnership Across AI Factories and Next-Generation Memory ## $500-Billion-Plus NVIDIA-SK AI Initiative Spans SK Telecom’s AI Factory of up to 2 Gigawatts and SK hynix’s Long-Term AI Memory Partnershi..... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c6ab25db223ddb3a",
+          "publisher": "globenewswire.com",
+          "url": "https://globenewswire.com/news-release/2026/07/25/3333161/0/en/SK-Group-and-NVIDIA-Expand-Strategic-Partnership-Across-AI-Factories-and-Next-Generation-Memory.html"
+        }
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/25/3333161/0/en/SK-Group-and-NVIDIA-Expand-Strategic-Partnership-Across-AI-Factories-and-Next-Generation-Memory.html",
+      "publisher": "globenewswire.com",
+      "sourceExcerpt": "SK Group and NVIDIA Expand Strategic Partnership Across AI # SK Group and NVIDIA Expand Strategic Partnership Across AI Factories and Next-Generation Memory ## $500-Billion-Plus NVIDIA-SK AI Initiative Spans SK Telecom’s AI Factory of up to 2 Gigawatts and SK hynix’s Long-Term AI Memory Partnershi..... / query=edge AI device customer deployment manufacturing / intent=find_customer_case / path=ai_hardware_original"
+    },
+    {
+      "id": "EV-f2551f5cc8e2715e",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "日媒拆解宇树 G1 人形机器人后承认：日本短期内难以赶超中国",
+      "originalTitle": "",
+      "subject": "GMO AI & 机器人商事",
+      "action": "partnership",
+      "object": "宇树科技",
+      "metrics": [],
+      "locations": [
+        "日本"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "robot",
+            "dimensionName": "产品形态",
+            "name": "机器人"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "robot",
+          "dimensionName": "产品形态",
+          "name": "机器人"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "entityIds": [
+        "EN-3e14bbbb0445c2de"
+      ],
+      "entityNames": [
+        "GMO AI & 机器人商事"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-721536c0796ffe46",
+          "subject": "GMO AI & 机器人商事",
+          "object": "宇树科技",
+          "quote": "GMO 互联网集团旗下公司“GMO AI & 机器人商事”（GMO AIR）今年 6 月宣布，公司与“全球市场份额第一”的人形机器人厂商宇树科技签署合作协议， 成为宇树科技在日本的官方经销商 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-ec4621e7f1f3ffa4",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/619.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/619.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "GMO 互联网集团旗下公司“GMO AI & 机器人商事”（GMO AIR）今年 6 月宣布，公司与“全球市场份额第一”的人形机器人厂商宇树科技签署合作协议， 成为宇树科技在日本的官方经销商 。"
+    },
+    {
+      "id": "EV-a6b4fa32cce7c483",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "理想 AI 眼镜 Livis 七月 OTA 升级：直连 OpenClaw 终端，接入小红书 Agent",
+      "originalTitle": "",
+      "subject": "理想 AI 眼镜 Livis 七月 OTA 升级：直连 OpenClaw 终端，",
+      "action": "接入",
+      "object": "小红书 Agent",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "ai_device",
+            "dimensionName": "产品形态",
+            "name": "AI 设备"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_device",
+          "dimensionName": "产品形态",
+          "name": "AI 设备"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "ai_device",
+          "dimensionName": "产品形态",
+          "name": "AI 设备"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-90c9590b108cf71e",
+          "subject": "理想 AI 眼镜 Livis 七月 OTA 升级：直连 OpenClaw 终端，",
+          "object": "小红书 Agent",
+          "quote": "理想 AI 眼镜 Livis 七月 OTA 升级：直连个人终端 OpenClaw，接入小红书 Agent - IT之家"
+        },
+        {
+          "id": "CL-ef80a0ca250ea645",
+          "subject": "理想 AI 眼镜 Livis 七月 OTA 升级：直连 OpenClaw 终端，",
+          "object": "小红书 Agent",
+          "quote": "理想 AI 眼镜 Livis 七月 OTA 升级：直连个人终端 OpenClaw，接入小红书 Agent"
+        },
+        {
+          "id": "CL-1e1a5999bc5bb54c",
+          "subject": "理想 AI 眼镜 Livis 七月 OTA 升级：直连 OpenClaw 终端，",
+          "object": "小红书 Agent",
+          "quote": "真实种草，耳边百事通：首家接入小红书 Agent，海量真实笔记化身耳边百事通，成为你的高效生活指南。"
+        },
+        {
+          "id": "CL-64ed2f07d67cc12e",
+          "subject": "理想 AI 眼镜 Livis 七月 OTA 升级：直连 OpenClaw 终端，",
+          "object": "小红书 Agent",
+          "quote": "IT之家 7 月 25 日消息，理想汽车近日公布理想 AI 眼镜 Livis 七月 OTA 升级内容，本次新增 2 项功能，优化 4 项体验。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f5e80683b5dd4cbd",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/500.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/500.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "理想 AI 眼镜 Livis 七月 OTA 升级：直连个人终端 OpenClaw，接入小红书 Agent - IT之家"
+    },
+    {
       "id": "EV-91a444ff3955ad91",
       "dataDate": "2026-07-24",
       "date": "2026-07-24",
@@ -45642,6 +47276,126 @@
       "sourceUrl": "https://ithome.com/0/980/382.htm",
       "publisher": "IT之家（RSS）",
       "sourceExcerpt": "IT之家 7 月 23 日消息，AMD 与 Anthropic 当地时间昨日宣布了一份多层次的战略合作。"
+    },
+    {
+      "id": "EV-16cfe946bbf69aa3",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-22",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "宏利扩大与微软合作，加速企业AI治理与创新",
+      "originalTitle": "Manulife Expands Partnership with Microsoft to Accelerate Enterprise AI Governance and Innovation",
+      "subject": "Manulife Expands",
+      "action": "Partnership",
+      "object": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
+      "metrics": [],
+      "locations": [
+        "US",
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-b3f5e31ec86a08a9",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Manulife",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-f2a3e165daca6569",
+          "subject": "Manulife Expands",
+          "object": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
+          "quote": "TORONTO, ON and REDMOND, Wash. , July 22, 2026 /PRNewswire/ -- Manulife and Microsoft today announced the renewal and expansion of their longstanding relationship, supporting Manulife's strategic priority to become an AI-powered organization. As part of this partnership, Manulife has adopted Microsoft 365 E7 Frontier Suite capabilities to enable innovation at scale with secure cloud and AI solutions. This includes expanding adoption of Microsoft 365 Copilot to over 30,000 employees and deploying Microsoft Agent 365 – a next-generation suite that provides a control plane for governing, monitoring, and securing AI agents at enterprise scale. The five-year agreement supports Manulife's continue…"
+        },
+        {
+          "id": "CL-81712acab9aa5dbe",
+          "subject": "Manulife Expands",
+          "object": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
+          "quote": "\"Our partnership with Microsoft is a critical enabler of Manulife's continued evolution into a truly AI-driven organization,\" said Shamus Weiland, Chief Technology & Operations Officer, Manulife. \"Adopting the Microsoft Frontier Suite represents the next phase of that transformation, giving us the trusted foundation to advance AI across our global operations with confidence. It also provides the scale, security, stability and intelligence we need to accelerate innovation and embed AI responsibly across the franchise.\""
+        },
+        {
+          "id": "CL-8906cc4c053fff2f",
+          "subject": "Manulife Expands",
+          "object": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
+          "quote": "\"Our longstanding partnership with Manulife has always been grounded in trust, innovation and a shared commitment to responsible transformation,\" said Matt Milton, President, Microsoft Canada. \"We are proud to be Manulife's trusted partner in the agentic era, helping empower employees with Microsoft 365 Copilot and scale AI responsibly with the governance and security of Microsoft Agent 365. We look forward to continuing our work together as Manulife turns AI into practical value and better outcomes for customers around the world.\""
+        },
+        {
+          "id": "CL-8e42ac3f00a0b995",
+          "subject": "Manulife Expands",
+          "object": "with Microsoft to Accelerate Enterprise AI Governance and Innovation",
+          "quote": "The partnership expansion reinforces Manulife's position as an industry leader in AI innovation and underscores its commitment to becoming an AI‑driven organization. For two consecutive years, Manulife was recognized as the number one life insurance company in North America and Europe for AI maturity in the Evident AI Insurance Index . Continued collaboration with Microsoft helps to ensure Manulife can sustain this leadership by leveraging the latest advancements in cloud, AI technologies and enterprise AI governance capabilities."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b008ee16fb3d8f73",
+          "publisher": "prnewswire.com",
+          "url": "https://prnewswire.com/news-releases/manulife-expands-partnership-with-microsoft-to-accelerate-enterprise-ai-governance-and-innovation-302831259.html"
+        }
+      ],
+      "sourceUrl": "https://prnewswire.com/news-releases/manulife-expands-partnership-with-microsoft-to-accelerate-enterprise-ai-governance-and-innovation-302831259.html",
+      "publisher": "prnewswire.com",
+      "sourceExcerpt": "TORONTO, ON and REDMOND, Wash. , July 22, 2026 /PRNewswire/ -- Manulife and Microsoft today announced the renewal and expansion of their longstanding relationship, supporting Manulife's strategic priority to become an AI-powered organization. As part of this partnership, Manulife has adopted Microsoft 365 E7 Frontier Suite capabilities to enable innovation at scale with secure cloud and AI solutions. This includes expanding adoption of Microsoft 365 Copilot to over 30,000 employees and deploying Microsoft Agent 365 – a next-generation suite that provides a control plane for governing, monitoring, and securing AI agents at enterprise scale. The five-year agreement supports Manulife's continue…"
     },
     {
       "id": "EV-056bb8c683ef60a4",
@@ -46032,6 +47786,85 @@
       "sourceUrl": "https://ithome.com/0/980/029.htm",
       "publisher": "IT之家（RSS）",
       "sourceExcerpt": "微软被曝正评估将 Kimi K3 接入 Copilot，推理成本年降 6 亿美元 - IT之家"
+    },
+    {
+      "id": "EV-fdf6128ae36e1f5e",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "KPMG与OpenAI达成战略联盟，共同推进AI原生企业工作流程",
+      "originalTitle": "KPMG and OpenAI form Strategic Alliance to Advance AI-Native Enterprise Workflows",
+      "subject": "KPMG and OpenAI form Strategic",
+      "action": "Alliance",
+      "object": "to Advance AI-Native Enterprise Workflows",
+      "metrics": [],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-344bff8b2788383a",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "KPMG",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-bd9e2a9fa983aa31",
+          "subject": "KPMG and OpenAI form Strategic",
+          "object": "to Advance AI-Native Enterprise Workflows",
+          "quote": "KPMG and OpenAI form Strategic Alliance to Advance AI-Native Enterprise Workflows, with KPMG Named an Elite Partner"
+        },
+        {
+          "id": "CL-b0e98433ffcea27a",
+          "subject": "KPMG and OpenAI form Strategic",
+          "object": "to Advance AI-Native Enterprise Workflows",
+          "quote": "This partnership advances KPMG’s approach to enable AI-native experiences that transform how organizations interact with enterprise data, workflows and systems."
+        },
+        {
+          "id": "CL-91c2f976710c0940",
+          "subject": "KPMG and OpenAI form Strategic",
+          "object": "to Advance AI-Native Enterprise Workflows",
+          "quote": "NEW YORK, NY — July 21, 2026 — KPMG LLP, the U.S. audit, tax and advisory firm, today announced a strategic alliance with OpenAI to help organizations reimagine how employees and customers, across the public and private sectors, interact with enterprise software in the AI era."
+        },
+        {
+          "id": "CL-19ae6569453710b6",
+          "subject": "KPMG and OpenAI form Strategic",
+          "object": "to Advance AI-Native Enterprise Workflows",
+          "quote": "The alliance is an important milestone in KPMG’s effort to help clients move beyond application-centric experiences toward a new enterprise operating model where AI becomes the system of engagement, and enterprise applications continue to serve as the systems of record. Through the alliance, and as an OpenAI Elite Partner, KPMG and OpenAI will help organizations reimagine how work gets done by bringing AI directly into the flow of enterprise processes, enabling faster decisions, more intelligent automation and simpler user experiences."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-15fdd0d6ddc34c4e",
+          "publisher": "kpmg.com",
+          "url": "https://kpmg.com/us/en/media/news/kpmg-openai-strategic-alliance.html"
+        }
+      ],
+      "sourceUrl": "https://kpmg.com/us/en/media/news/kpmg-openai-strategic-alliance.html",
+      "publisher": "kpmg.com",
+      "sourceExcerpt": "KPMG and OpenAI form Strategic Alliance to Advance AI-Native Enterprise Workflows, with KPMG Named an Elite Partner"
     },
     {
       "id": "EV-6acfb15c012ddf6d",
@@ -46820,6 +48653,108 @@
       "sourceUrl": "https://www3.nhk.or.jp/nhkworld/en/news/20260717_01",
       "publisher": "www3.nhk.or.jp",
       "sourceExcerpt": "Noetra says it aims to accelerate development of the foundation model by using Nvidia's computing infrastructure."
+    },
+    {
+      "id": "EV-6e4dd5111dfaae9c",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英特尔与谷歌云宣布合作，加速英特尔AI赋能的企业转型",
+      "originalTitle": "Intel and Google Cloud Announce Collaboration to Accelerate Intel’s AI-Enabled Enterprise Transformation",
+      "subject": "Intel and Google Cloud Announce",
+      "action": "Collaboration",
+      "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-96eebba49dbbf422",
+        "EN-d9b1d7819af92e77",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Intel",
+        "Google Cloud",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-16c91905670d5c33",
+          "subject": "Intel and Google Cloud Announce",
+          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation",
+          "quote": "Intel and Google Cloud Announce Collaboration to Accelerate Intel’s AI-Enabled Enterprise Transformation"
+        },
+        {
+          "id": "CL-053348592f3e7b21",
+          "subject": "Intel and Google Cloud Announce",
+          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation",
+          "quote": "Collaboration leverages Gemini Enterprise and Google Cloud to expand Intel’s AI workforce capabilities via scalable agentic workflows across core business functions"
+        },
+        {
+          "id": "CL-df9a5f583e32db0f",
+          "subject": "Intel and Google Cloud Announce",
+          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation",
+          "quote": "SANTA CLARA, Calif., and SUNNYVALE, Calif. &ndash; July 16, 2026 &ndash; Intel and Google Cloud today announced an expansion of their previously announced multi-year strategic collaboration, which would accelerate Intel&rsquo;s enterprise-wide digital evolution through the deployment of Gemini Enterprise and Google Cloud."
+        },
+        {
+          "id": "CL-79142b898b6d1c2d",
+          "subject": "Intel and Google Cloud Announce",
+          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation",
+          "quote": "\"As part of our AI-powered transformation, we are committed to offering our employees tools that help them move with greater speed, agility, and efficiency,\" said Cindy Stoddard, senior vice president and chief information officer, Intel. \"Our work with Google Cloud allows us to provide our employees with a central hub to build and deploy agents through Gemini Enterprise and scale silicon development with elastic cloud infrastructure. This collaboration gives Intel the AI tools and workflows needed to help reinvent its operations and execute business objectives more quickly.\""
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7f1a477486ca91a5",
+          "publisher": "googlecloudpresscorner.com",
+          "url": "https://googlecloudpresscorner.com/2026-07-16-Intel-and-Google-Cloud-Announce-Collaboration-to-Accelerate-Intels-AI-Enabled-Enterprise-Transformation"
+        }
+      ],
+      "sourceUrl": "https://googlecloudpresscorner.com/2026-07-16-Intel-and-Google-Cloud-Announce-Collaboration-to-Accelerate-Intels-AI-Enabled-Enterprise-Transformation",
+      "publisher": "googlecloudpresscorner.com",
+      "sourceExcerpt": "Intel and Google Cloud Announce Collaboration to Accelerate Intel’s AI-Enabled Enterprise Transformation"
     },
     {
       "id": "EV-36a9e4e908249381",
@@ -48721,6 +50656,102 @@
       "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=600-202606040659BIZWIRE_USPRX____20260604_BW089153-1",
       "publisher": "markets.ft.com",
       "sourceExcerpt": "Palantir Technologies Inc . (NASDAQ: PLTR) and Kirkland & Ellis today announced the launch of a proprietary enterprise platform designed to transform private equity fundraising. The platform is part of a multiyear partnership expansion to deliver together custom solutions tailored to the needs of Kirkland’s clients by leveraging Palantir’s Artificial Intelligence Platform (AIP)."
+    },
+    {
+      "id": "EV-2a71353a862e56b3",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-08",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "加州通过Anthropic合作扩大州政府AI应用范围",
+      "originalTitle": "California expands AI access across state government through Anthropic partnership - Newsroom",
+      "subject": "California expands AI access across state government through Anthropic",
+      "action": "partnership",
+      "object": "- Newsroom",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-7a44d7c02bb2caec",
+          "subject": "California expands AI access across state government through Anthropic",
+          "object": "- Newsroom",
+          "quote": "California expands AI access across state government through Anthropic partnership"
+        },
+        {
+          "id": "CL-bf40bd3227071207",
+          "subject": "California expands AI access across state government through Anthropic",
+          "object": "- Newsroom",
+          "quote": "Kate Jensen, Anthropic’s Head of Americas, says the partnership reflects the company’s commitment to supporting its home state by helping government agencies adopt artificial intelligence responsibly and in ways that benefit the public."
+        },
+        {
+          "id": "CL-dd47949476bab3b1",
+          "subject": "California expands AI access across state government through Anthropic",
+          "object": "- Newsroom",
+          "quote": "Why it Matters: California is making artificial intelligence tools more accessible to state and local governments through a new statewide agreement aimed at helping government employees work more efficiently, improve customer service, and improve operations, while advancing efforts to adopt AI responsibly."
+        },
+        {
+          "id": "CL-e4a648bcd2b28186",
+          "subject": "California expands AI access across state government through Anthropic",
+          "object": "- Newsroom",
+          "quote": "SACRAMENTO, Calif. – California is partnering with San Francisco-based artificial intelligence company Anthropic to make its AI assistant, Claude, available across state government through a first-of-its-kind statewide agreement aimed at expanding the responsible use of artificial intelligence."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-de920601af99a51f",
+          "publisher": "cdt.ca.gov",
+          "url": "https://cdt.ca.gov/newsroom/2026/07/california-expands-ai-access-across-state-government-through-anthropic-partnership"
+        }
+      ],
+      "sourceUrl": "https://cdt.ca.gov/newsroom/2026/07/california-expands-ai-access-across-state-government-through-anthropic-partnership",
+      "publisher": "cdt.ca.gov",
+      "sourceExcerpt": "California expands AI access across state government through Anthropic partnership"
     },
     {
       "id": "EV-2ffc3377977da114",
@@ -52547,6 +54578,142 @@
       "sourceExcerpt": "Anthropic has partnered with Indian IT services giant Tata Consultancy Services (TCS) in a bid to accelerate adoption of its artificial intelligence models at enterprises."
     },
     {
+      "id": "EV-fe63a869fe4cee45",
+      "dataDate": "2026-07-26",
+      "date": "2026-06-11",
+      "updatedDate": "2026-07-26",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "DXC 与 Anthropic 宣布建立多年全球联盟，将 AI 引入关键任务企业系统",
+      "originalTitle": "DXC and Anthropic Announce Multi-Year Global Alliance to Bring AI into Mission-Critical Enterprise Systems – Company Announcement - FT.com",
+      "subject": "DXC and Anthropic Announce Multi-Year Global",
+      "action": "Alliance",
+      "object": "to Bring AI into Mission-Critical Enterprise Systems – Company Announcement - FT.com",
+      "metrics": [
+        "95%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        }
+      ],
+      "entityIds": [
+        "EN-fe596100f029516c",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "DXC",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-1fbcea4b5e805157",
+          "subject": "DXC and Anthropic Announce Multi-Year Global",
+          "object": "to Bring AI into Mission-Critical Enterprise Systems – Company Announcement - FT.com",
+          "quote": "DXC and Anthropic Announce Multi-Year Global Alliance to Bring AI into Mission-Critical Enterprise Systems"
+        },
+        {
+          "id": "CL-a63102858a19d99c",
+          "subject": "DXC and Anthropic Announce Multi-Year Global",
+          "object": "to Bring AI into Mission-Critical Enterprise Systems – Company Announcement - FT.com",
+          "quote": "Partnership establishes a new DXC workforce of Claude-certified forward-deployed engineers and builders to be embedded directly in customer environments to accelerate agentic AI transformation."
+        },
+        {
+          "id": "CL-594db95b552ff9d1",
+          "subject": "DXC and Anthropic Announce Multi-Year Global",
+          "object": "to Bring AI into Mission-Critical Enterprise Systems – Company Announcement - FT.com",
+          "quote": "ASHBURN, Va. and SAN FRANCISCO , June 11, 2026 /CNW/ - DXC Technology (NYSE: DXC), a leading enterprise technology and innovation partner, today announced a multi-year global partnership with Anthropic , the AI safety company and creator of Claude. Through this joint initiative, DXC becomes one of the few Global Premier partners in the Claude Partner Network."
+        },
+        {
+          "id": "CL-459dea25a5ced4e4",
+          "subject": "DXC and Anthropic Announce Multi-Year Global",
+          "object": "to Bring AI into Mission-Critical Enterprise Systems – Company Announcement - FT.com",
+          "quote": "The alliance builds on DXC's existing use of Claude in its own operations, including as the primary development tool used to build DXC OASIS, the company's AI-native orchestration platform for managed services. Using Claude models, DXC accelerated DXC OASIS software delivery by an estimated 10x, with more than 95% of code generated by Claude before human review. Claude now serves as the default foundation model powering DXC OASIS's agentic workflows. Launched in April 2026 , DXC OASIS is currently deployed across more than 50 customers and will be rolled out across the DXC global customer base."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-eec49fb13d86b5ca",
+          "publisher": "markets-data-api-proxy.ft.com",
+          "url": "https://markets-data-api-proxy.ft.com/data/announce/detail?dockey=600-202606110800CANADANWCANADAPR_C8019-1"
+        }
+      ],
+      "sourceUrl": "https://markets-data-api-proxy.ft.com/data/announce/detail?dockey=600-202606110800CANADANWCANADAPR_C8019-1",
+      "publisher": "markets-data-api-proxy.ft.com",
+      "sourceExcerpt": "DXC and Anthropic Announce Multi-Year Global Alliance to Bring AI into Mission-Critical Enterprise Systems"
+    },
+    {
       "id": "EV-436bf00fedf6288d",
       "dataDate": "2026-06-08",
       "date": "2026-06-08",
@@ -54094,6 +56261,1057 @@
       "sourceExcerpt": "OpenAI on Monday announced it is entering into multiyear partnerships with four consulting firms that will help the company deploy its enterprise platform called Frontier ."
     },
     {
+      "id": "EV-0d5a32aca724d30e",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "近200家硅谷公司致函白宫，呼吁不要禁止美国企业调用Kimi K3/Qwen 3.8等中国开源AI模型",
+      "originalTitle": "",
+      "subject": "近200家硅谷公司致函白宫，呼吁不要禁止美国企业调用",
+      "action": "Kimi K3/Qwen 3.8等中国开源AI模型",
+      "object": "近200家硅谷公司致函白宫，呼吁不要禁止美国企业调用Kimi K3/Qwen 3.8等中国开源AI模型",
+      "metrics": [],
+      "locations": [
+        "美国",
+        "中国",
+        "U.S."
+      ],
+      "missingFields": [
+        "entities",
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "compute_system",
+            "dimensionName": "产品形态",
+            "name": "计算系统"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "compute_system",
+          "dimensionName": "产品形态",
+          "name": "计算系统"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "guardrails_safety",
+          "name": "安全护栏"
+        }
+      ],
+      "entityIds": [
+        "EN-1fc54774298acc22",
+        "EN-b5251b35f15bedc4"
+      ],
+      "entityNames": [
+        "英国AISI",
+        "Moonshot AI"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-06de7920322ea9b7",
+          "subject": "近200家硅谷公司致函白宫，呼吁不要禁止美国企业调用",
+          "object": "22、近 200 家硅谷公司致函白宫，呼吁不要禁止美国企业调用 Kimi K3/Qwen 3.8 等中国开源 AI 模型",
+          "quote": "22、近 200 家硅谷公司致函白宫，呼吁不要禁止美国企业调用 Kimi K3/Qwen 3.8 等中国开源 AI 模型"
+        },
+        {
+          "id": "CL-e4305cfe7153315e",
+          "subject": "英国AISI与美国CAISI联合评估：月之暗面",
+          "object": "The UK Artificial Intelligence Security Institute (UK AISI) and the U.S. Center for AI Standards and Innovation (CAISI) (UK AISI / CAISI) conducted a joint evaluation of Moonshot AI’s latest model, Kimi K3 (released on July 16, 2026 and slated for open-weight release by July 27, 2026). This evaluation focused on Kimi K3's cyber capabilities and found that:",
+          "quote": "The UK Artificial Intelligence Security Institute (UK AISI) and the U.S. Center for AI Standards and Innovation (CAISI) (UK AISI / CAISI) conducted a joint evaluation of Moonshot AI’s latest model, Kimi K3 (released on July 16, 2026 and slated for open-weight release by July 27, 2026). This evaluation focused on Kimi K3's cyber capabilities and found that:"
+        },
+        {
+          "id": "CL-1869c8a35c2643da",
+          "subject": "undisclosed_subject",
+          "object": "马斯克看好中国 AI 发展：盛赞月之暗面 Kimi K3，称中国有望成为全球领导者",
+          "quote": "他对月之暗面刚刚发布的 Kimi K3 模型印象深刻。"
+        },
+        {
+          "id": "CL-7afede8a7f0793b0",
+          "subject": "undisclosed_subject",
+          "object": "马斯克看好中国 AI 发展：盛赞月之暗面 Kimi K3，称中国有望成为全球领导者",
+          "quote": "在 AI 安全治理方面，马斯克呼吁全球各大 AI 实验室应在发布新模型前，给予彼此一到两周的时间审查安全问题，并将潜在风险分别报告给中美两国的政府部门。"
+        },
+        {
+          "id": "CL-07c4958af92dbf1e",
+          "subject": "undisclosed_subject",
+          "object": "马斯克看好中国 AI 发展：盛赞月之暗面 Kimi K3，称中国有望成为全球领导者",
+          "quote": "马斯克认为，中国在 AI 竞赛中拥有决定性优势，其中电力供应能力是关键因素。"
+        },
+        {
+          "id": "CL-048139650975b0bd",
+          "subject": "undisclosed_subject",
+          "object": "马斯克看好中国 AI 发展：盛赞月之暗面 Kimi K3，称中国有望成为全球领导者",
+          "quote": "据他估计，2026 年中国发电量可能达到美国的三倍，足以支撑耗能巨大的 AI 数据中心运行。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-2d691fac03c3710a",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/613.htm"
+        },
+        {
+          "id": "SA-a23e5c8f49b4c1d8",
+          "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities"
+        },
+        {
+          "id": "SA-118197a370ab3248",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/496.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/613.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "22、近 200 家硅谷公司致函白宫，呼吁不要禁止美国企业调用 Kimi K3/Qwen 3.8 等中国开源 AI 模型"
+    },
+    {
+      "id": "EV-0f440082086c02df",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Launch YC：HarnessRouter：通过单一 API 将全球顶尖 AI 智能体引入您的应用",
+      "originalTitle": "Launch YC: HarnessRouter: Bring the World's Best AI Agents Into Your App, With One API | Y Combinator",
+      "subject": "undisclosed_subject",
+      "action": "Launch",
+      "object": "YC: HarnessRouter: Bring the World's Best AI Agents Into Your App, With One API | Y Combinator",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-3149ad548669e717"
+      ],
+      "entityNames": [
+        "YC"
+      ],
+      "productName": "YC",
+      "products": [
+        {
+          "name": "YC",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-97d90fc2bf6dff6d",
+          "subject": "undisclosed_subject",
+          "object": "YC: HarnessRouter: Bring the World's Best AI Agents Into Your App, With One API | Y Combinator",
+          "quote": "Launch YC: HarnessRouter: Bring the World's Best AI Agents Into Your App, With One API | Y Combinator"
+        },
+        {
+          "id": "CL-97bf87c1ccfb786e",
+          "subject": "undisclosed_subject",
+          "object": "YC: HarnessRouter: Bring the World's Best AI Agents Into Your App, With One API | Y Combinator",
+          "quote": "Home › Launches › Epsilla"
+        },
+        {
+          "id": "CL-3c401880d6b6be8e",
+          "subject": "undisclosed_subject",
+          "object": "YC: HarnessRouter: Bring the World's Best AI Agents Into Your App, With One API | Y Combinator",
+          "quote": "TL;DR: HarnessRouter lets builders bring Codex, Claude Code, Hermes, and other agents into your products through one API. Each task runs in an isolated sandbox with step-by-step tracing and configurable cost caps. It's designed to scale from consumer apps to large-scale model evaluations, orchestrating thousands of isolated sandbox runs in parallel. Start with our AGENTS.md , drop it into your coding agent, describe want you want to build, add an API key, and ship without rebuilding agent runtime infrastructure."
+        },
+        {
+          "id": "CL-3ccd88d8d4eb1a2b",
+          "subject": "undisclosed_subject",
+          "object": "YC: HarnessRouter: Bring the World's Best AI Agents Into Your App, With One API | Y Combinator",
+          "quote": "HarnessRouter: Bring the World's Best AI Agents Into Your App, With One API"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-22a15eea8891a84e",
+          "publisher": "ycombinator.com",
+          "url": "https://ycombinator.com/launches/RpL-harnessrouter-bring-the-world-s-best-ai-agents-into-your-app-with-one-api"
+        }
+      ],
+      "sourceUrl": "https://ycombinator.com/launches/RpL-harnessrouter-bring-the-world-s-best-ai-agents-into-your-app-with-one-api",
+      "publisher": "ycombinator.com",
+      "sourceExcerpt": "Launch YC: HarnessRouter: Bring the World's Best AI Agents Into Your App, With One API | Y Combinator"
+    },
+    {
+      "id": "EV-33e98b8bbd0a11b1",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "partial",
+      "title": "OpenAI 发布 Presence 新平台，助力企业部署与管理实时语音智能体及聊天机器人",
+      "originalTitle": "OpenAI unveils Presence, a new platform that lets enterprises launch and manage realtime voice agents and chatbots | VentureBeat",
+      "subject": "OpenAI",
+      "action": "unveils",
+      "object": "Presence, a new platform that lets enterprises launch and manage realtime voice agents and chatbots | VentureBeat",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-bbdefa2950f49882",
+        "EN-f65bb77682b83476"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Google",
+        "Presence"
+      ],
+      "productName": "Presence",
+      "products": [
+        {
+          "name": "Presence",
+          "type": "产品/服务",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-3ab71da89dd29a93",
+          "subject": "OpenAI",
+          "object": "Presence, a new platform that lets enterprises launch and manage realtime voice agents and chatbots | VentureBeat",
+          "quote": "OpenAI unveils Presence, a new platform that lets enterprises launch and manage realtime voice agents and chatbots | VentureBeat 7:50 am, PT, July 22, 2026 Credit: VentureBeat made with OpenAI ChatGPT-Images-2.0 Add to Google Preferred Source OpenAI has announced Presence, a new enterprise produ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c8998aee845d7540",
+          "publisher": "venturebeat.com",
+          "url": "https://venturebeat.com/orchestration/openai-unveils-presence-a-new-platform-that-lets-enterprises-launch-and-manage-realtime-voice-agents-and-chatbots"
+        }
+      ],
+      "sourceUrl": "https://venturebeat.com/orchestration/openai-unveils-presence-a-new-platform-that-lets-enterprises-launch-and-manage-realtime-voice-agents-and-chatbots",
+      "publisher": "venturebeat.com",
+      "sourceExcerpt": "OpenAI unveils Presence, a new platform that lets enterprises launch and manage realtime voice agents and chatbots | VentureBeat 7:50 am, PT, July 22, 2026 Credit: VentureBeat made with OpenAI ChatGPT-Images-2.0 Add to Google Preferred Source OpenAI has announced Presence, a new enterprise produ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original"
+    },
+    {
+      "id": "EV-97ccee25cc840092",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "partial",
+      "title": "Fluree 推出 Fluree AI，将数据孤岛转化为",
+      "originalTitle": "Fluree Launches Fluree AI to Transform Data Siloes into",
+      "subject": "Fluree",
+      "action": "Launches",
+      "object": "Fluree AI to Transform Data Siloes into",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "data_analysis",
+            "dimensionName": "应用场景",
+            "name": "数据分析"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "data_analysis",
+          "dimensionName": "应用场景",
+          "name": "数据分析"
+        }
+      ],
+      "entityIds": [
+        "EN-eed12ec090b1005c",
+        "EN-62ee696236413a09"
+      ],
+      "entityNames": [
+        "Fluree",
+        "Transform Data Siloes"
+      ],
+      "productName": "Transform Data Siloes",
+      "products": [
+        {
+          "name": "Transform Data Siloes",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-be9c6a8bd7dc5b03",
+          "subject": "Fluree",
+          "object": "Fluree AI to Transform Data Siloes into",
+          "quote": "Fluree Launches Fluree AI to Transform Data Siloes into # Fluree Launches Fluree AI to Transform Data Siloes into Institutional Memory July 23, 2026 09:05 ET | Source: Fluree, PBC Fluree, PBC --- - Automate M&A due diligence, enterprise risk assessment, business intelligence, and other tasks on ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-20c19a5a0c861793",
+          "publisher": "globenewswire.com",
+          "url": "https://globenewswire.com/news-release/2026/07/23/3332219/0/en/Fluree-Launches-Fluree-AI-to-Transform-Data-Siloes-into-Institutional-Memory.html"
+        }
+      ],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/23/3332219/0/en/Fluree-Launches-Fluree-AI-to-Transform-Data-Siloes-into-Institutional-Memory.html",
+      "publisher": "globenewswire.com",
+      "sourceExcerpt": "Fluree Launches Fluree AI to Transform Data Siloes into # Fluree Launches Fluree AI to Transform Data Siloes into Institutional Memory July 23, 2026 09:05 ET | Source: Fluree, PBC Fluree, PBC --- - Automate M&A due diligence, enterprise risk assessment, business intelligence, and other tasks on ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original"
+    },
+    {
+      "id": "EV-0f0b2013927ce156",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "马斯克点赞黄仁勋首条X帖文：完全支持开源模型重要性",
+      "originalTitle": "",
+      "subject": "马斯克点赞黄仁勋首条X帖文：完全支持",
+      "action": "开源模型",
+      "object": "重要性",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "distillation",
+          "name": "模型蒸馏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "distillation",
+          "name": "模型蒸馏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "distillation",
+          "name": "模型蒸馏"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "entityIds": [
+        "EN-cc70f504af53013a",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "马斯克点赞黄仁勋首条X帖文",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-a64d3918138b85bc",
+          "subject": "马斯克点赞黄仁勋首条X帖文：完全支持",
+          "object": "重要性",
+          "quote": "据IT之家此前援引外媒报道 ，黄仁勋首条 X 平台帖文分享了英伟达签署的公开信，阐述开源模型为何重要。"
+        },
+        {
+          "id": "CL-bc8b21ab0c64096c",
+          "subject": "马斯克点赞黄仁勋首条X帖文：完全支持",
+          "object": "重要性",
+          "quote": "黄仁勋表示：“世界需要前沿闭源模型，也需要前沿开源模型。"
+        },
+        {
+          "id": "CL-ec894c6267d874dc",
+          "subject": "马斯克点赞黄仁勋首条X帖文：完全支持",
+          "object": "重要性",
+          "quote": "黄仁勋在倡议中指出，AI 模型蒸馏等开源衍生技术和早年开源软件运动逻辑一脉相承，是行业创新根基，不能与非法盗用闭源模型技术混为一谈。"
+        },
+        {
+          "id": "CL-63e22e6146f85fc1",
+          "subject": "马斯克点赞黄仁勋首条X帖文：完全支持",
+          "object": "重要性",
+          "quote": "开源权重模型能降低 AI 落地门槛，中小企业、高校均可低成本迭代模型，充分激活市场竞争；同时开源架构避免算力、技术寡头垄断，让医疗、制造、农业等实体经济广泛共享 AI 红利。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-168135a72104b3c2",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/489.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/489.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "据IT之家此前援引外媒报道 ，黄仁勋首条 X 平台帖文分享了英伟达签署的公开信，阐述开源模型为何重要。"
+    },
+    {
+      "id": "EV-3126fb08491de669",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "华为 AI 眼镜推送 6.0.0.157 SP2 更新，新增\"看一下支付宝小蓝环\"支付与拍照识图功能",
+      "originalTitle": "",
+      "subject": "华为 AI 眼镜推送 6.0.0.157 SP2 更新，",
+      "action": "新增",
+      "object": "\"看一下支付宝小蓝环\"支付与拍照识图功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-b81c8201acfc7639",
+        "EN-88e2cce43eeadb36"
+      ],
+      "entityNames": [
+        "Huawei",
+        "Alipay"
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-f39f445bf9ad4a0a",
+          "subject": "华为 AI 眼镜推送 6.0.0.157 SP2 更新，",
+          "object": "\"看一下支付宝小蓝环\"支付与拍照识图功能",
+          "quote": "【看一下支付】新增支持“看一下支付宝小蓝环”支付功能，看一下设备蓝环轻松付；"
+        },
+        {
+          "id": "CL-a5378754d0d0c3a4",
+          "subject": "华为 AI 眼镜推送 6.0.0.157 SP2 更新，",
+          "object": "\"看一下支付宝小蓝环\"支付与拍照识图功能",
+          "quote": "【AI】AI 快捷键新增“拍照识图”功能，按键即可获取小艺解答（设置路径：华为眼镜 App- 通用设置）；"
+        },
+        {
+          "id": "CL-26f47c2e6d524674",
+          "subject": "华为 AI 眼镜推送 6.0.0.157 SP2 更新，",
+          "object": "\"看一下支付宝小蓝环\"支付与拍照识图功能",
+          "quote": "【录像】新增“开始录像”、“结束录像”人声提醒功能；"
+        },
+        {
+          "id": "CL-d66e73ddee7e2b8f",
+          "subject": "华为 AI 眼镜推送 6.0.0.157 SP2 更新，",
+          "object": "\"看一下支付宝小蓝环\"支付与拍照识图功能",
+          "quote": "华为 AI 眼镜于今年 4 月发布，售价 2499 元起，该产品采用了全新的轻量化新型材料和精密堆叠技术，镜腿薄至 6.25 毫米，镜架轻至 35.5 克，接近一副普通眼镜的重量。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-13f07cef335f752b",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/595.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/595.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "【看一下支付】新增支持“看一下支付宝小蓝环”支付功能，看一下设备蓝环轻松付；"
+    },
+    {
+      "id": "EV-935640fc8fb69e26",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "三星推出 Health Assistant，号称首款全面集成 AI 的个人健康助手",
+      "originalTitle": "",
+      "subject": "三星",
+      "action": "推出",
+      "object": "Health Assistant，号称首款全面集成 AI 的个人健康助手",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-968e2d5b08687bf4",
+        "EN-5fdd673ed1fcff1d",
+        "EN-a03e6905d6b0c2bf"
+      ],
+      "entityNames": [
+        "Samsung",
+        "三星",
+        "Health Assistant"
+      ],
+      "productName": "Health Assistant",
+      "products": [
+        {
+          "name": "Health Assistant",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Samsung"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-72dca99f66700562",
+          "subject": "三星",
+          "object": "Health Assistant，号称首款全面集成 AI 的个人健康助手",
+          "quote": "号称首款全面集成 AI 的个人健康助手，三星推出 Health Assistant - IT之家"
+        },
+        {
+          "id": "CL-883a6a10c8d568af",
+          "subject": "三星",
+          "object": "Health Assistant，号称首款全面集成 AI 的个人健康助手",
+          "quote": "号称首款全面集成 AI 的个人健康助手，三星推出 Health Assistant"
+        },
+        {
+          "id": "CL-270f10b4b38e43e1",
+          "subject": "三星",
+          "object": "Health Assistant，号称首款全面集成 AI 的个人健康助手",
+          "quote": "IT之家 7 月 25 日消息，三星本周（7 月 21 日）宣布推出 Health Assistant， 号称是“首款全面集成 AI 的个人健康助手” 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-44e71ec966a962f8",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/534.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/534.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "号称首款全面集成 AI 的个人健康助手，三星推出 Health Assistant - IT之家"
+    },
+    {
+      "id": "EV-c710c75d9c823a49",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "腾讯 WorkBuddy 桌面版上架华为鸿蒙电脑 App Gallery，原生适配鸿蒙系统",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "腾讯 WorkBuddy 桌面版上架华为鸿蒙电脑 App Gallery，原生适配鸿蒙系统",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-9c8ae69b84f21a2e",
+        "EN-b81c8201acfc7639",
+        "EN-c0fced8f2483e9f5",
+        "EN-90bce32641fcb53d"
+      ],
+      "entityNames": [
+        "Tencent",
+        "Huawei",
+        "WorkBuddy",
+        "App Gallery"
+      ],
+      "productName": "WorkBuddy",
+      "products": [
+        {
+          "name": "WorkBuddy",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Tencent"
+          ]
+        },
+        {
+          "name": "App Gallery",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Tencent"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-31694c0018b0d267",
+          "subject": "undisclosed_subject",
+          "object": "腾讯 WorkBuddy 桌面版上架华为鸿蒙电脑 App Gallery，原生适配鸿蒙系统",
+          "quote": "WorkBuddy 是腾讯推出的一款全场景 AI 办公智能体桌面工作台，覆盖日常办公、代码开发与设计创意。"
+        },
+        {
+          "id": "CL-f38cc120f5b3601c",
+          "subject": "undisclosed_subject",
+          "object": "腾讯 WorkBuddy 桌面版上架华为鸿蒙电脑 App Gallery，原生适配鸿蒙系统",
+          "quote": "据IT之家此前报道，7 月 18 日， WorkBuddy 发布移动端独立 App ，iOS、 安卓 及 鸿蒙 版本同步上线， 是 首个登陆鸿蒙系统的通用智能体应用 。"
+        },
+        {
+          "id": "CL-17468af2417f683b",
+          "subject": "undisclosed_subject",
+          "object": "腾讯 WorkBuddy 桌面版上架华为鸿蒙电脑 App Gallery，原生适配鸿蒙系统",
+          "quote": "应用商店页面显示，这款应用 原生适配 了鸿蒙系统。"
+        },
+        {
+          "id": "CL-94d11318cd4ad5c6",
+          "subject": "undisclosed_subject",
+          "object": "腾讯 WorkBuddy 桌面版上架华为鸿蒙电脑 App Gallery，原生适配鸿蒙系统",
+          "quote": "该 App 具备桌面端的大部分能力，并支持手机上远程在电脑端上发起任务。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b18d3fe4c2563959",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/602.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/602.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "WorkBuddy 是腾讯推出的一款全场景 AI 办公智能体桌面工作台，覆盖日常办公、代码开发与设计创意。"
+    },
+    {
+      "id": "EV-db7cb473fe7e9e3c",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "吴恩达开源桌面 AI 智能体 OpenWorker，已获 3.7k Star",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "吴恩达开源桌面 AI 智能体 OpenWorker，已获 3.7k Star",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-2f88ddfd544ee6f1",
+        "EN-3a7bd3e2360a3d29",
+        "EN-833940e4d17c9df3"
+      ],
+      "entityNames": [
+        "吴恩达",
+        "Apple",
+        "OpenWorker"
+      ],
+      "productName": "OpenWorker",
+      "products": [
+        {
+          "name": "OpenWorker",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Apple"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-dbd27fc97db4fe57",
+          "subject": "undisclosed_subject",
+          "object": "吴恩达开源桌面 AI 智能体 OpenWorker，已获 3.7k Star",
+          "quote": "IT之家 7 月 25 日消息，吴恩达（Andrew Ng）昨日（7 月 24 日）在领英（LinkedIn）发布动态，宣布推出开源 AI 智能体 OpenWorker， 不仅满足聊天交互，还能高效完成用户交代的任务。"
+        },
+        {
+          "id": "CL-d896881142f5c21c",
+          "subject": "undisclosed_subject",
+          "object": "吴恩达开源桌面 AI 智能体 OpenWorker，已获 3.7k Star",
+          "quote": "在运行平台上，适用于苹果 macOS 的 OpenWorker 已经上线，Github 页面显示 Windows 版已支持运行，但尚未签名。"
+        },
+        {
+          "id": "CL-e82ddc62f1f21186",
+          "subject": "undisclosed_subject",
+          "object": "吴恩达开源桌面 AI 智能体 OpenWorker，已获 3.7k Star",
+          "quote": "OpenWorker 基于 Ng 的 aisuite 库构建，这是一个与提供商无关的 Python 框架，通过统一 API 支持多种大型语言模型。"
+        },
+        {
+          "id": "CL-dabe9e7f5060fa73",
+          "subject": "undisclosed_subject",
+          "object": "吴恩达开源桌面 AI 智能体 OpenWorker，已获 3.7k Star",
+          "quote": "吴恩达，图源：WikiMedia IT之家发稿前，访问 GitHub 项目页面，OpenWorker 目前已收获 3.7k Star。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9dc278be26799e5d",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/493.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/493.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 7 月 25 日消息，吴恩达（Andrew Ng）昨日（7 月 24 日）在领英（LinkedIn）发布动态，宣布推出开源 AI 智能体 OpenWorker， 不仅满足聊天交互，还能高效完成用户交代的任务。"
+    },
+    {
+      "id": "EV-eb2d23000eed99f7",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "大阪大学用AI模型破解水结冰膨胀的百年谜团",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "大阪大学用AI模型破解水结冰膨胀的百年谜团",
+      "metrics": [],
+      "locations": [
+        "日本"
+      ],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-8b1d13bcd9e2d76e",
+          "subject": "undisclosed_subject",
+          "object": "大阪大学用AI模型破解水结冰膨胀的百年谜团",
+          "quote": "IT之家 7 月 25 日消息，日本大阪大学于 7 月 6 日发布博文， 其团队利用 AI 模型探索水的百年谜团，找到了观察水分子的最佳“透视镜”。"
+        },
+        {
+          "id": "CL-c1558bd5d47d591b",
+          "subject": "undisclosed_subject",
+          "object": "大阪大学用AI模型破解水结冰膨胀的百年谜团",
+          "quote": "该研究系统性评估了 16 种不同的分子结构描述方法， 成功找出了最能精准捕捉水分子在不同温度、压力下微观变化的“透视镜”，为理解水结冰膨胀及过冷水异常行为提供了统一的科学框架。"
+        },
+        {
+          "id": "CL-7d831b0e6ff3dae8",
+          "subject": "undisclosed_subject",
+          "object": "大阪大学用AI模型破解水结冰膨胀的百年谜团",
+          "quote": "博文指出水是地球表面最丰富的液体，但不同于其它液体，水在结冰时会膨胀。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1842e00a62669e31",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/443.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/443.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "IT之家 7 月 25 日消息，日本大阪大学于 7 月 6 日发布博文， 其团队利用 AI 模型探索水的百年谜团，找到了观察水分子的最佳“透视镜”。"
+    },
+    {
       "id": "EV-0e616f9e775a77dc",
       "dataDate": "2026-07-25",
       "date": "2026-07-25",
@@ -54563,6 +57781,214 @@
       "sourceExcerpt": "打击 AI 生成虚假账号，Meta 推出“Facebook Verified”免费徽章 - IT之家"
     },
     {
+      "id": "EV-670a5100977ac1e9",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "俄克拉荷马州推出 BEACON AI 平台以推动政府创新",
+      "originalTitle": "State of Oklahoma launches BEACON AI platform to advance government innovation",
+      "subject": "State of Oklahoma",
+      "action": "launches",
+      "object": "BEACON AI platform to advance government innovation",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "customer_service",
+          "dimensionName": "应用场景",
+          "name": "客户服务"
+        }
+      ],
+      "entityIds": [
+        "EN-76a5d97e81b562c4",
+        "EN-4c3a380e1f998775"
+      ],
+      "entityNames": [
+        "State of Oklahoma",
+        "BEACON AI"
+      ],
+      "productName": "BEACON AI",
+      "products": [
+        {
+          "name": "BEACON AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-f0130e6855751320",
+          "subject": "State of Oklahoma",
+          "object": "BEACON AI platform to advance government innovation",
+          "quote": "State of Oklahoma launches BEACON AI platform to advance government innovation"
+        },
+        {
+          "id": "CL-45bac6a041da7f39",
+          "subject": "State of Oklahoma",
+          "object": "BEACON AI platform to advance government innovation",
+          "quote": "<b>OKLAHOMA CITY –</b> The Office of Management and Enterprise Services is announcing the launch of BEACON, Oklahoma’s new enterprise artificial intelligence platform designed to help state agencies improve efficiency, strengthen customer service and deliver a better government experience to Oklahomans.</p>\\n<p>BEACON provides the state’s foundation for using AI safely, consistently and effectively. By offering a shared platform with built-in security, governance and data standards, BEACON reduces duplication across agencies and gives them a common, scalable framework for developing AI-powered solutions. This approach helps agencies focus on specific challenges while supporting Accountable I…"
+        },
+        {
+          "id": "CL-fea666588a07f066",
+          "subject": "State of Oklahoma",
+          "object": "BEACON AI platform to advance government innovation",
+          "quote": "OKLAHOMA CITY – The Office of Management and Enterprise Services is announcing the launch of BEACON, Oklahoma’s new enterprise artificial intelligence platform designed to help state agencies improve efficiency, strengthen customer service and deliver a better government experience to Oklahomans."
+        },
+        {
+          "id": "CL-2fad34a864a32eb9",
+          "subject": "State of Oklahoma",
+          "object": "BEACON AI platform to advance government innovation",
+          "quote": "The launch of BEACON follows the appointment of Oklahoma's first Chief AI and Technology Officer, Tai Phan, who is leading the state's efforts to implement AI in a secure, responsible and practical way across government."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-767dd301197432f6",
+          "publisher": "oklahoma.gov",
+          "url": "https://oklahoma.gov/omes/newsroom/2026/state-of-oklahoma-launches-beacon-ai-platform-to-advance-governm.html"
+        }
+      ],
+      "sourceUrl": "https://oklahoma.gov/omes/newsroom/2026/state-of-oklahoma-launches-beacon-ai-platform-to-advance-governm.html",
+      "publisher": "oklahoma.gov",
+      "sourceExcerpt": "State of Oklahoma launches BEACON AI platform to advance government innovation"
+    },
+    {
+      "id": "EV-b8893d112f761a30",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AMD 发布 Helios 机架级 AI 计算产品组合",
+      "originalTitle": "AMD unveils Helios rack-scale AI compute portfolio",
+      "subject": "AMD",
+      "action": "unveils",
+      "object": "Helios rack-scale AI compute portfolio",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-240389f4b730bad4",
+        "EN-a6ba9b93c5f9dc92"
+      ],
+      "entityNames": [
+        "AMD",
+        "Helios rack-scale AI compute portfolio"
+      ],
+      "productName": "Helios rack-scale AI compute portfolio",
+      "products": [
+        {
+          "name": "Helios rack-scale AI compute portfolio",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-7010ee29b88abc65",
+          "subject": "AMD",
+          "object": "Helios rack-scale AI compute portfolio",
+          "quote": "AMD unveils Helios rack-scale AI compute portfolio"
+        },
+        {
+          "id": "CL-a9d5142da1c6f4e9",
+          "subject": "AMD",
+          "object": "Helios rack-scale AI compute portfolio",
+          "quote": "AMD has unveiled a new AI compute portfolio led by its Helios rack-scale systems. The launch also included new data centre chips, embedded processors and software tools."
+        },
+        {
+          "id": "CL-9150217d4eeddf67",
+          "subject": "AMD",
+          "object": "Helios rack-scale AI compute portfolio",
+          "quote": "At the centre of the launch is AMD Helios, a rack-scale AI system now in production. The platform combines 72 Instinct MI455X graphics processors with 18 sixth-generation EPYC \"Venice\" central processors, linked with Pensando networking and ROCm software."
+        },
+        {
+          "id": "CL-aafcad2791a2c05b",
+          "subject": "AMD",
+          "object": "Helios rack-scale AI compute portfolio",
+          "quote": "The chipmaker also introduced its Instinct MI400 series graphics processors and sixth-generation EPYC server processors. According to AMD, the MI455X is positioned for cloud, enterprise and high-performance computing workloads, while the MI430X is aimed at scientific computing and sovereign AI."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-4233730a0e6e815d",
+          "publisher": "datacenter.news",
+          "url": "https://datacenter.news/story/amd-unveils-helios-rack-scale-ai-compute-portfolio"
+        }
+      ],
+      "sourceUrl": "https://datacenter.news/story/amd-unveils-helios-rack-scale-ai-compute-portfolio",
+      "publisher": "datacenter.news",
+      "sourceExcerpt": "AMD unveils Helios rack-scale AI compute portfolio"
+    },
+    {
       "id": "EV-0609f4badfe84803",
       "dataDate": "2026-07-25",
       "date": "2026-07-24",
@@ -54663,284 +58089,6 @@
       "sourceUrl": "https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool",
       "publisher": "TechCrunch：AI（RSS）",
       "sourceExcerpt": "The company this week said it’s added a new feature to the AI assistant, called Quests, that lets users ask it for information and news spreading across the broader Bluesky social network, nicknamed the Atmosphere. This includes not only Bluesky, but also any app that integrates with the underlying AT Protocol."
-    },
-    {
-      "id": "EV-0d5a32aca724d30e",
-      "dataDate": "2026-07-25",
-      "date": "2026-07-24",
-      "updatedDate": "2026-07-25",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Kimi K3 在网络安全漏洞方面大幅落后于美国前沿模型，蒸馏技术或可解释原因",
-      "originalTitle": "Kimi K3 trails frontier US models by a wide margin on cyber exploits, and distillation may explain why",
-      "subject": "undisclosed_subject",
-      "action": "Kimi K3 trails frontier US model",
-      "object": "s by a wide margin on cyber exploits, and distillation may explain why",
-      "metrics": [
-        "2.8 万",
-        "100 万"
-      ],
-      "locations": [
-        "US",
-        "U.S.",
-        "China",
-        "美国",
-        "中国"
-      ],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "long_context",
-          "name": "长上下文"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "id": "media_entertainment",
-            "dimensionName": "行业",
-            "name": "媒体与娱乐"
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "long_context",
-          "name": "长上下文"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "media_entertainment",
-          "dimensionName": "行业",
-          "name": "媒体与娱乐"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "long_context",
-          "name": "长上下文"
-        },
-        {
-          "dimensionId": "industry",
-          "id": "media_entertainment",
-          "dimensionName": "行业",
-          "name": "媒体与娱乐"
-        }
-      ],
-      "entityIds": [
-        "EN-b5251b35f15bedc4",
-        "EN-607964040e4b62e0",
-        "EN-dc33b6ff77e3359c",
-        "EN-7d3194f79e645c42",
-        "EN-c69fd0dcf781cbf6",
-        "EN-481243d2f2a235c1",
-        "EN-c70eca6b0f88f44d",
-        "EN-7839fb10a8f14c70",
-        "EN-047364b9be67f665",
-        "EN-96eebba49dbbf422",
-        "EN-10a27c6240d18dbe"
-      ],
-      "entityNames": [
-        "Moonshot AI",
-        "Kimi K3",
-        "AI communism’",
-        "OpenAI",
-        "Wall Street",
-        "月之暗面",
-        "Anthropic",
-        "GPT-5.6 Sol",
-        "Alibaba",
-        "Intel",
-        "Qwen 3.8"
-      ],
-      "productName": "Kimi K3",
-      "products": [
-        {
-          "name": "Kimi K3",
-          "type": "模型",
-          "ownerNames": [
-            "Moonshot AI"
-          ]
-        },
-        {
-          "name": "Wall Street",
-          "type": "模型",
-          "ownerNames": [
-            "Moonshot AI"
-          ]
-        },
-        {
-          "name": "GPT-5.6 Sol",
-          "type": "模型",
-          "ownerNames": [
-            "Moonshot AI"
-          ]
-        },
-        {
-          "name": "Qwen 3.8",
-          "type": "模型",
-          "ownerNames": [
-            "Moonshot AI"
-          ]
-        }
-      ],
-      "claims": [
-        {
-          "id": "CL-14ef09108cf51878",
-          "subject": "undisclosed_subject",
-          "object": "s by a wide margin on cyber exploits, and distillation may explain why",
-          "quote": "Kimi K3 trails frontier US models by a wide margin on cyber exploits, and distillation may explain why"
-        },
-        {
-          "id": "CL-00f8492ecfc5b1e9",
-          "subject": "undisclosed_subject",
-          "object": "s by a wide margin on cyber exploits, and distillation may explain why",
-          "quote": "Kimi K3 fell well behind leading U.S. models in exploit development and simulated network attacks, though it outperformed China's GLM-5.2."
-        },
-        {
-          "id": "CL-8519b036c508a6b4",
-          "subject": "undisclosed_subject",
-          "object": "s by a wide margin on cyber exploits, and distillation may explain why",
-          "quote": "Chinese models continue to improve on cyber tasks but remain behind U.S. systems. Kimi K3's results are also consistent with allegations that Moonshot AI distilled more advanced models."
-        },
-        {
-          "id": "CL-917c47951f031201",
-          "subject": "undisclosed_subject",
-          "object": "s by a wide margin on cyber exploits, and distillation may explain why",
-          "quote": "The British AI Security Institute (UK AISI) and the U.S. Center for AI Standards and Innovation (CAISI) jointly evaluated Moonshot AI's latest model, Kimi K3."
-        },
-        {
-          "id": "CL-4083dec83c62ad87",
-          "subject": "‘AI communism’, rogue",
-          "object": "spooked Wall Street",
-          "quote": "‘AI communism’, rogue models, and the why Kimi K3 spooked Wall Street"
-        },
-        {
-          "id": "CL-294a8cff06a82239",
-          "subject": "‘AI communism’, rogue",
-          "object": "spooked Wall Street",
-          "quote": "Chinese AI lab Moonshot’s open model Kimi went viral this week for reasons that had less to do with the model itself and more to do with how the U.S. AI industry reacted to it . Meanwhile, an unreleased OpenAI model wandered outside its test environment and ended up connected to a real security breach at Hugging Face — a reminder that “China risk” isn’t the only kind of AI risk worth worrying about."
-        },
-        {
-          "id": "CL-92b459e7beab21d8",
-          "subject": "‘AI communism’, rogue",
-          "object": "spooked Wall Street",
-          "quote": "On this episode of TechCrunch’s Equity podcast, hosts Kirsten Korosec, Anthony Ha, and Sean O’Kane dig into why Kimi K3 set off a fresh round of AI panic, the industry’s response to an OpenAI staffer’s “regulatory FUD” post, and what that OpenAI breach means for AI security more broadly."
-        },
-        {
-          "id": "CL-a2dc9e8619639475",
-          "subject": "‘AI communism’, rogue",
-          "object": "spooked Wall Street",
-          "quote": "Why EVs are getting killed off across the U.S. even as automakers roll out new models, and how Rivian and Ford, and a wave of new startups are betting on different EV strategies to survive"
-        },
-        {
-          "id": "CL-d69883460f93c322",
-          "subject": "月之暗面",
-          "object": "AI 智能体知识工作跑分超 GPT-5.6 Sol，仅次于 Claude Fable 5",
-          "quote": "IT之家 7 月 24 日消息， Artificial Analysis 于 7 月 22 日更新 AI 智能体知识工作基准 AA-Briefcase，显示 Kimi K3 模型斩获 1543 分 ，超过 GPT-5.6 Sol（1501 分），仅次于 Claude Fable 5 模型（1574 分）。"
-        },
-        {
-          "id": "CL-5f9d96b3c662418a",
-          "subject": "月之暗面",
-          "object": "AI 智能体知识工作跑分超 GPT-5.6 Sol，仅次于 Claude Fable 5",
-          "quote": "根据最新跑分结果显示，Kimi K3 模型在 AA-Briefcase 上的跑分达到 1543 分，仅次于 Claude Fable 5（1574 分），超过 GPT-5.6 Sol (最高 1501)、Claude Sonnet 5 (最高 1388) 和 Claude Opus 4.8 (最高 1347)。"
-        },
-        {
-          "id": "CL-00e2340d1518ac0d",
-          "subject": "月之暗面",
-          "object": "AI 智能体知识工作跑分超 GPT-5.6 Sol，仅次于 Claude Fable 5",
-          "quote": "Kimi K3 模型由月之暗面（Moonshot AI）于 2026 年 7 月 16 日正式上线，是其迄今为止最强的旗舰模型，拥有 2.8 万亿参数和 100 万 Tokens 的上下文窗口，尤其擅长编程、游戏 / 3D 与知识类任务。"
-        },
-        {
-          "id": "CL-c250be5854201f91",
-          "subject": "月之暗面",
-          "object": "AI 智能体知识工作跑分超 GPT-5.6 Sol，仅次于 Claude Fable 5",
-          "quote": "Kimi K3 模型采用按量计费，每 100 万 Tokens 的输入费用在缓存命中时为 2 元，未命中时为 20 元，输出费用为 100 元。"
-        },
-        {
-          "id": "CL-50bf8db74f1a601a",
-          "subject": "近 200 家硅谷公司致函白宫，反对封禁中国开源 AI",
-          "object": "与 Qwen 3.8",
-          "quote": "该事件的背景是 Kimi K3 模型发布后， 美国政府考虑收紧针对中国开源 AI 模型的监管政策，计划切断调用中国开源模型的渠道。"
-        },
-        {
-          "id": "CL-f0c250941b262d89",
-          "subject": "近 200 家硅谷公司致函白宫，反对封禁中国开源 AI",
-          "object": "与 Qwen 3.8",
-          "quote": "在这封公开致函中，\" 小科技协会 \" 明确提及希望美国政府不要封杀阿里 Qwen 3.8 和月之暗面的 Kimi K3 模型，主张美国企业应能获得这些模型的访问权限。"
-        },
-        {
-          "id": "CL-1e76c9277ba7d3e1",
-          "subject": "近 200 家硅谷公司致函白宫，反对封禁中国开源 AI",
-          "object": "与 Qwen 3.8",
-          "quote": "美国的领导力不仅需要世界一流的美国本土开源模型，还需要持续获取全球可用的开放模型。"
-        },
-        {
-          "id": "CL-3deadac68c2635d0",
-          "subject": "近 200 家硅谷公司致函白宫，反对封禁中国开源 AI",
-          "object": "与 Qwen 3.8",
-          "quote": "剥夺美国初创公司获取海外模型的渠道，不仅会扼杀竞争，巩固现有大型企业的地位，而且会造成一种“智能税”（tax on intelligence）。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-8bd9659108e1830a",
-          "publisher": "The Decoder AI News",
-          "url": "https://the-decoder.com/kimi-k3-trails-frontier-us-models-by-a-wide-margin-on-cyber-exploits-and-distillation-may-explain-why"
-        },
-        {
-          "id": "SA-5fad45123683a0eb",
-          "publisher": "TechCrunch AI",
-          "url": "https://techcrunch.com/podcast/ai-communism-rogue-models-and-the-why-kimi-k3-spooked-wall-street"
-        },
-        {
-          "id": "SA-89c3299a15245388",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/981/126.htm"
-        },
-        {
-          "id": "SA-23381a6e695c38fb",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/981/437.htm"
-        }
-      ],
-      "sourceUrl": "https://the-decoder.com/kimi-k3-trails-frontier-us-models-by-a-wide-margin-on-cyber-exploits-and-distillation-may-explain-why",
-      "publisher": "The Decoder AI News",
-      "sourceExcerpt": "Kimi K3 trails frontier US models by a wide margin on cyber exploits, and distillation may explain why"
     },
     {
       "id": "EV-171304f50961d182",
@@ -61822,6 +64970,111 @@
       "sourceUrl": "https://runtimewire.com/article/jack-dorsey-block-buzz-team-chat-ai-agents-git",
       "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
       "sourceExcerpt": "Buzz turns Dorsey's agent-centered operating thesis into an open-source product. Its key bet is that shared identity and signed events can make agents accountable participants in software work."
+    },
+    {
+      "id": "EV-77673483fd101c8f",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Harness Agent DLC 发布：AI 智能体开发生命周期新功能",
+      "originalTitle": "Introducing Harness Agent DLC: New Capabilities for the AI Agent Development Lifecycle",
+      "subject": "Harness",
+      "action": "product_release",
+      "object": "Harness Agent DLC",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-49f756463ad9dcfb",
+        "EN-41393a0cb1972644",
+        "EN-30272bf6669003d5"
+      ],
+      "entityNames": [
+        "Harness",
+        "Agent DLC",
+        "Introducing Harness Agent DLC"
+      ],
+      "productName": "Agent DLC",
+      "products": [
+        {
+          "name": "Agent DLC",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Introducing Harness Agent DLC",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-9e6d46de387b00f9",
+          "subject": "Harness",
+          "object": "Harness Agent DLC",
+          "quote": "Harness, the AI Software Delivery Platform™ company, today announced it is extending its platform to cover the full AI Agent Development Lifecycle (DLC), giving enterprises a single set of pipelines and controls to build, test, deploy, and run agents the same way they already ship everything else."
+        },
+        {
+          "id": "CL-ad3511b6243c453f",
+          "subject": "Harness",
+          "object": "Harness AgentTrace",
+          "quote": "Harness AgentTrace records what happens during a single agent run and across a full multi-step session, showing which path an agent took, where it slowed down, and how different models or prompts affect the outcome."
+        },
+        {
+          "id": "CL-d5dcca5558c5c6a8",
+          "subject": "Harness",
+          "object": "AI Firewall",
+          "quote": "AI Firewall enforces policy in real time against prompt injection, tool misuse, and data exfiltration."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7cb2ce1b3a5768ac",
+          "publisher": "prnewswire.com",
+          "url": "https://prnewswire.com/news-releases/introducing-harness-agent-dlc-new-capabilities-for-the-ai-agent-development-lifecycle-302830967.html"
+        }
+      ],
+      "sourceUrl": "https://prnewswire.com/news-releases/introducing-harness-agent-dlc-new-capabilities-for-the-ai-agent-development-lifecycle-302830967.html",
+      "publisher": "prnewswire.com",
+      "sourceExcerpt": "Harness, the AI Software Delivery Platform™ company, today announced it is extending its platform to cover the full AI Agent Development Lifecycle (DLC), giving enterprises a single set of pipelines and controls to build, test, deploy, and run agents the same way they already ship everything else."
     },
     {
       "id": "EV-5cd352f2a021350d",
@@ -75322,6 +78575,114 @@
       "sourceUrl": "https://ithome.com/0/977/267.htm",
       "publisher": "IT之家（RSS）",
       "sourceExcerpt": "OpenAI 首款联名硬件：Codex Micro 键盘登场，灵活操控 AI 智能体 - IT之家"
+    },
+    {
+      "id": "EV-d9da7dea91725a1c",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-15",
+      "updatedDate": "2026-07-26",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic、黑石集团与Hellman & Friedman联合推出Ode with Anthropic，一家企业AI服务公司",
+      "originalTitle": "Anthropic, Blackstone, and Hellman & Friedman Introduce Ode with Anthropic, an Enterprise AI Services Firm",
+      "subject": "Anthropic, Blackstone, and Hellman & Friedman",
+      "action": "Introduce",
+      "object": "Ode with Anthropic, an Enterprise AI Services Firm",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-eb4e7bf788bcb164",
+        "EN-774e4ec967bc4280"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "Hellman & Friedman",
+        "Ode"
+      ],
+      "productName": "Ode",
+      "products": [
+        {
+          "name": "Ode",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Anthropic"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-b211d54a7aca09b0",
+          "subject": "Anthropic, Blackstone, and Hellman & Friedman",
+          "object": "Ode with Anthropic, an Enterprise AI Services Firm",
+          "quote": "Anthropic, Blackstone, and Hellman & Friedman Introduce Ode with Anthropic, an Enterprise AI Services Firm"
+        },
+        {
+          "id": "CL-bcf0e6c8b56841fe",
+          "subject": "Anthropic, Blackstone, and Hellman & Friedman",
+          "object": "Ode with Anthropic, an Enterprise AI Services Firm",
+          "quote": "San Francisco, CA – July 15, 2026 – Today, Anthropic, Blackstone, and Hellman & Friedman introduced Ode with Anthropic (“Ode”), the AI services firm announced earlier this year, now launching under its official name and brand. Ode is a standalone company that combines Anthropic's frontier AI models, a team of experienced AI engineers and operators, and the backing of a consortium of leading investors. Alongside the founding partners, the investor consortium includes Goldman Sachs, General Atlantic, Leonard Green & Partners, Apollo Global Management, GIC, and Sequoia Capital."
+        },
+        {
+          "id": "CL-607a434d53f2396a",
+          "subject": "Anthropic, Blackstone, and Hellman & Friedman",
+          "object": "Ode with Anthropic, an Enterprise AI Services Firm",
+          "quote": "Ode with Anthropic is an AI services company launched in 2026 through a partnership between Anthropic, Blackstone, Hellman & Friedman, and a consortium of global investors including Goldman Sachs, General Atlantic, Leonard Green & Partners, Apollo Global Management, GIC, and Sequoia Capital. Ode combines Anthropic’s frontier AI models with a team of experienced AI engineers to help organizations identify where AI can have the greatest impact, and then build the systems that deliver it. For more information, visit ode.com"
+        },
+        {
+          "id": "CL-ddf5d46a2c2e1cf4",
+          "subject": "Anthropic, Blackstone, and Hellman & Friedman",
+          "object": "Ode with Anthropic, an Enterprise AI Services Firm",
+          "quote": "Ode is built on the foundation of Fractional AI, the applied AI services firm acquired in May 2026, whose team, alongside engineers from Anthropic, forms its operational core. The company is led by Chris Taylor as CEO and Eddie Siegel as CTO, who co-founded Fractional AI and held those same roles there."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b7cd479ae6356427",
+          "publisher": "ode.com",
+          "url": "https://ode.com/press/anthropic-blackstone-and-hellman-friedman-introduce-ode-with-anthropic-an-enterprise-ai-services-firm"
+        }
+      ],
+      "sourceUrl": "https://ode.com/press/anthropic-blackstone-and-hellman-friedman-introduce-ode-with-anthropic-an-enterprise-ai-services-firm",
+      "publisher": "ode.com",
+      "sourceExcerpt": "Anthropic, Blackstone, and Hellman & Friedman Introduce Ode with Anthropic, an Enterprise AI Services Firm"
     },
     {
       "id": "EV-49fcb200a72f0024",
@@ -135082,6 +138443,71 @@
       "sourceUrl": "https://techcrunch.com/2025/02/11/mattoboard-picks-up-2m-to-bring-ai-visual-search-to-its-3d-mood-board-for-designers",
       "publisher": "techcrunch.com",
       "sourceExcerpt": "3D mood board and marketplace MattoBoard picks up $2M to launch AI visual search"
+    },
+    {
+      "id": "EV-b8d851200fdbff06",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-26",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "网信办发布《国家信息化发展报告（2025 年）》：6G 完成第一阶段技术试验，生成式 AI 用户规模达 6.02 亿",
+      "originalTitle": "",
+      "subject": "6G",
+      "action": "research_result",
+      "object": "第一阶段技术试验",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2d46191d9ab8b32c",
+        "EN-cadcc6d7c722a2e4"
+      ],
+      "entityNames": [
+        "网信办",
+        "国家信息化发展报告（2025 年）"
+      ],
+      "productName": "国家信息化发展报告（2025 年）",
+      "products": [
+        {
+          "name": "国家信息化发展报告（2025 年）",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "claims": [
+        {
+          "id": "CL-cd498646b2237156",
+          "subject": "6G",
+          "object": "第一阶段技术试验",
+          "quote": "6G 完成第一阶段技术试验"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b1154321ace0195d",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/527.htm"
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/527.htm",
+      "publisher": "IT之家（RSS）",
+      "sourceExcerpt": "6G 完成第一阶段技术试验"
     },
     {
       "id": "EV-3aefbdfa5df2fd6a",

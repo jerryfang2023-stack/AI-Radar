@@ -1,0 +1,197 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-098
+title: "Ship AI Agents You Can Trust"
+title_zh: "交付值得信赖的AI智能体"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.harness.io/blog/introducing-ai-evals"
+canonical_url: "https://harness.io/blog/introducing-ai-evals"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-26T01:20:55.366Z
+language: mixed
+full_text_hash: 2ba1a3aa080b776d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-098-ship-ai-agents-you-can-trust.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-26/r-098-ship-ai-agents-you-can-trust.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: timeout-fallback-visible-text
+extraction_quality: low
+extraction_method: "fetch_failed_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+has_full_text: true
+content_length: 413
+fetch_error: "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)"
+evidence_strength: blocked
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["missing_snapshot"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2ba1a3aa080b776d","missing":["missing_snapshot"]}
+source_volatility: low
+community_name: ""
+capture_scope: summary_only
+visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: discovery_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e271d9ad7ec122d2
+content_hash: 2ba1a3aa080b776d
+semantic_hash: 2f9295a43216ab8e
+duplicate_of: ""
+first_seen_at: "2026-07-26T01:20:55.366Z"
+last_seen_at: 2026-07-26T01:20:55.366Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens"],"novelty":3,"evidence_strength":3,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["Agents","agents","agent"],"people":[],"industries":["企业服务"],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["21","2026"],"quotes":[]}
+evidence_seed: {"company_actions":["Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy. Trusting them in production is hard. Harness AI Evals scores your agents b... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original","Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy.","Trusting them in production is hard."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy. Trusting them in production is hard. Harness AI Evals scores your agents b... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Trusting them in production is hard.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Harness AI Evals scores your agents b.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"/ query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-26T01:20:55.366Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Ship AI Agents You Can Trust
+
+## clean_text
+
+Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy. Trusting them in production is hard. Harness AI Evals scores your agents b... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original
+
+## full_text
+
+Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy. Trusting them in production is hard. Harness AI Evals scores your agents b... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original
+
+## extraction_diagnostics
+
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- fetch_status: timeout-fallback-visible-text
+- extraction_quality: low
+- diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy. Trusting them in production is hard. Harness AI Evals scores your agents b... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Trusting them in production is hard.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   Harness AI Evals scores your agents b.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: Agents, agents, agent
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 21, 2026
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy. Trusting them in production is hard. Harness AI Evals scores your agents b... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original / Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy. / Trusting them in production is hard.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- visible_range: 仅保留采集通道当时可见文本，未抓到原页面正文
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Ship AI Agents You Can Trust Chapters Try It For Free / / July 21, 2026 # Ship AI Agents You Can Trust | Harness Blog Shibam DharAll this author’s posts Uri ScheinerAll this author’s posts Building AI agents is easy. Trusting them in production is hard. Harness AI Evals scores your agents b... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

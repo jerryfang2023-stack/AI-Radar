@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "latestDataDate": "2026-07-26",
+    "currentDate": "2026-07-26",
+    "eventCount": 1570,
+    "quarantinedEventCount": 17
+  },
+  "entity": {
+    "id": "EN-3711098f35d71cb9",
+    "name": "纳德拉",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-e09efcd49776cb95"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-25",
+    "lastSeen": "2026-07-26",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-e09efcd49776cb95"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-e09efcd49776cb95",
+        "dataDate": "2026-07-26",
+        "date": "2026-07-25",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "纳德拉：微软自研 MAI 模型在 Excel 任务表现与 GPT-5.6 相当，且部署成本更低",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "entityIds": [
+          "EN-3711098f35d71cb9",
+          "EN-9fbf261b62c1d7c0",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-a0230755529d6fae",
+      "eventId": "EV-e09efcd49776cb95",
+      "dataDate": "2026-07-26",
+      "date": "2026-07-25",
+      "title": "纳德拉：微软自研 MAI 模型在 Excel 任务表现与 GPT-5.6 相当，且部署成本更低",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "微软",
+      "industry": "未披露",
+      "useCase": "成本更低",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "IT之家 7 月 25 日消息，科技媒体 firstpost 于 7 月 23 日发布博文，报道称微软首席执行官萨提亚 · 纳德拉（Satya Nadella）表示， 微软自研 MAI 系列模型在许多应用场景中超越了前沿 AI，而且能降低企业部署 AI 成本。",
+        "纳德拉表示在大部分常见的 Excel 任务下，MAI 系列模型性能相当于 GPT-5.6，而且由于不需要依赖最新的 AI 加速器，企业可以在英伟达 H100/A100 GPU 上运行，因此部署成本更低。"
+      ],
+      "outcomes": [
+        "IT之家 7 月 25 日消息，科技媒体 firstpost 于 7 月 23 日发布博文，报道称微软首席执行官萨提亚 · 纳德拉（Satya Nadella）表示， 微软自研 MAI 系列模型在许多应用场景中超越了前沿 AI，而且能降低企业部署 AI 成本。"
+      ],
+      "metrics": [
+        "100 GPU"
+      ],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/981/532.htm",
+      "entityIds": [
+        "EN-3711098f35d71cb9",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ],
+  "hardware": []
+}
