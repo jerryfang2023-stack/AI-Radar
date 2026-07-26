@@ -917,6 +917,34 @@ test("FDE projection requires enterprise implementation evidence", () => {
   assert.ok(bundle.fde_records[0].reported_delivery_components.length > 0);
 });
 
+test("FDE role projection rejects substring aliases and action-fragment organizations", () => {
+  const bundle = buildBundle([
+    entry(
+      "cactus-contract",
+      "Cactus Technology wins MeitY contract for AI tender drafting platform",
+      "Cactus Technology Solutions was awarded a contract to provide an artificial intelligence platform for government procurement workflows."
+    ),
+    entry(
+      "kpmg-openai-alliance",
+      "KPMG and OpenAI form Strategic Alliance to Advance AI-Native Enterprise Workflows",
+      "KPMG and OpenAI announced a strategic alliance. KPMG employees will deploy OpenAI services across enterprise workflows."
+    )
+  ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+
+  const entityNames = bundle.entities.map((item) => item.canonical_name);
+  const claimById = new Map(bundle.claims.map((item) => [item.claim_id, item]));
+  const eventFor = (name) => bundle.canonical_events.find((event) =>
+    event.claim_refs.some((id) => claimById.get(id)?.source_quote.includes(name)));
+  const cactus = bundle.fde_records.find((item) => item.event_id === eventFor("Cactus Technology")?.event_id);
+  const kpmg = bundle.fde_records.find((item) => item.event_id === eventFor("KPMG and OpenAI")?.event_id);
+
+  assert.equal(entityNames.includes("Intel"), false, "Intel must not match inside intelligence");
+  assert.equal(entityNames.includes("OpenAI form Strategic"), false);
+  assert.notEqual(cactus?.customer, "Intel");
+  assert.equal(kpmg?.customer, "KPMG");
+  assert.equal(kpmg?.vendor, "OpenAI");
+});
+
 test("AI relevance evaluator distinguishes industry facts from generic AI wording", () => {
   assert.equal(eventAiRelevanceEvidence({
     title: "Microsoft releases Windows security patches",

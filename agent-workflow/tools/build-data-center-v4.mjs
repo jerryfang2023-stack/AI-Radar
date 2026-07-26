@@ -505,6 +505,7 @@ function cleanOrganizationCandidate(value) {
     .replace(/(?:'s|\u2019s)\s+founder(?:\s+just)?$/iu, "")
     .replace(/\s+(?:in talks to|plans? to|expected to|intends? to|to)$/iu, "")
     .replace(/\s+(?:announces?|announced)$/iu, "")
+    .replace(/\s+(?:(?:form|forms|formed|announce|announces|announced|expand|expands|expanded)(?:\s+(?:a|an|the|strategic|multi-year|global|longstanding|new|expanded)){0,4}|(?:wins?|won|awarded)\s+(?:the|a|an))$/iu, "")
     .replace(/(?:研究员|首席执行官|CEO|创始人|员工|高管|团队).*/u, "")
     .replace(/[，,:：].*$/u, "")
     .replace(/(?:将|拟|正寻求|计划|宣布)$/u, "")
@@ -517,13 +518,29 @@ function cleanOrganizationCandidate(value) {
   return candidate;
 }
 
+function exactAliasIndex(text, alias) {
+  const normalizedText = text.toLocaleLowerCase();
+  const normalizedAlias = alias.toLocaleLowerCase();
+  let offset = 0;
+  while (offset <= normalizedText.length - normalizedAlias.length) {
+    const index = normalizedText.indexOf(normalizedAlias, offset);
+    if (index < 0) return -1;
+    const before = normalizedText[index - 1] || "";
+    const after = normalizedText[index + normalizedAlias.length] || "";
+    const leftBounded = !/^[a-z0-9]/u.test(normalizedAlias) || !/[a-z0-9]/u.test(before);
+    const rightBounded = !/[a-z0-9]$/u.test(normalizedAlias) || !/[a-z0-9]/u.test(after);
+    if (leftBounded && rightBounded) return index;
+    offset = index + 1;
+  }
+  return -1;
+}
+
 function organizationMentions(title, parsed, eventType, claimEvidence = "") {
   const hits = [];
   for (const entry of ORGANIZATION_ALIASES) {
     for (const alias of [...entry.aliases].sort((a, b) => b.length - a.length)) {
-      const normalizedAlias = alias.toLocaleLowerCase();
-      const titleIndex = title.toLocaleLowerCase().indexOf(normalizedAlias);
-      const claimIndex = claimEvidence.toLocaleLowerCase().indexOf(normalizedAlias);
+      const titleIndex = exactAliasIndex(title, alias);
+      const claimIndex = exactAliasIndex(claimEvidence, alias);
       if (titleIndex < 0 && claimIndex < 0) continue;
       const source = titleIndex >= 0 ? "title_original" : "claim_evidence";
       const sourceText = source === "title_original" ? title : claimEvidence;
@@ -864,7 +881,7 @@ function fdeProjection(event, claims, entities) {
   const customer = organizations.find((entity) => {
     const escaped = entity.canonical_name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
     return new RegExp(`${escaped}.{0,100}(?:will (?:integrate|deploy|implement)|employees?|workforce|business functions?|operations?|customer)|(?:customer|enterprise).{0,50}${escaped}`, "iu").test(text);
-  })?.canonical_name || (["deployment", "procurement_contract"].includes(event.event_type) ? organizationNames[0] || "" : "");
+  })?.canonical_name || "";
   const vendor = organizationNames.find((name) => name !== customer && /Cloud/u.test(name))
     || organizationNames.find((name) => name !== customer && new RegExp(`${name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&")}.{0,80}(?:cloud|platform|model|service|infrastructure)|(?:powered by|provided by|from)\s+${name.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&")}`, "iu").test(text))
     || (event.event_type === "partnership" ? organizationNames.find((name) => name !== customer) || "" : "");

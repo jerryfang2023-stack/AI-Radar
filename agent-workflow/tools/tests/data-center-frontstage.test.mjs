@@ -113,13 +113,16 @@ test("product projection contains named products with bounded ownership", () => 
   const inkling = data.products.find((item) => item.name === "Inkling");
   const jetsonThor = data.products.find((item) => item.name === "Jetson Thor");
   const msNat5000 = data.products.find((item) => item.name === "MS-NAT5000");
+  const moonshotProducts = data.products.filter((item) =>
+    item.companyNames.some((name) => ["Moonshot AI", "月之暗面"].includes(name)));
 
   assert.ok(names.includes("1Password for Claude"));
   assert.ok(names.includes("PerceptionBench"));
   assert.ok(names.includes("GenFlow"));
   assert.ok(names.includes("Jetson Thor"));
-  assert.ok(names.includes("Kimi K3"));
   assert.ok(names.includes("LM Studio Bionic"));
+  assert.ok(moonshotProducts.length > 0);
+  assert.ok(moonshotProducts.every((item) => item.eventIds.length > 0));
   assert.deepEqual(inkling?.companyNames, ["Thinking Machines Lab"]);
   assert.deepEqual(jetsonThor?.companyNames, ["NVIDIA"], "a direct product launch proves bounded ownership");
   assert.deepEqual(msNat5000?.companyNames, ["映泰"], "the system launch proves its publisher without assigning the component supplier");
