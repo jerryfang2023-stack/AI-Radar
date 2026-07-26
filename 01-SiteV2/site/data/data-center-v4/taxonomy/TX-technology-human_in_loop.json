@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "node": {
     "id": "TX-technology-human_in_loop",
@@ -29,7 +29,6 @@
       "EN-9fbf261b62c1d7c0",
       "EN-8d4321d936320802",
       "EN-e1517be14d06cdb7",
-      "EN-9ff7e3ae1b1ab43f",
       "EN-45c52af0feb0f285"
     ],
     "fdeIds": [
@@ -409,6 +408,7 @@
         "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
         "EV-8a2d8ebbd700c787",
+        "EV-e7e2dfbc41a639d2",
         "EV-2c16aa6254de4496",
         "EV-47a16db069ed320e",
         "EV-fe601e081c090971",
@@ -453,8 +453,7 @@
         "EV-071c72225b8aaf80",
         "EV-8121a1ecdf168d8a",
         "EV-cd067fa6f39fe828",
-        "EV-684f286ef629ed0d",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-b20bf10af759bd43",
         "EV-83a8ac8a2554b60c",
         "EV-debecca007e547d2",
@@ -670,8 +669,8 @@
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
         "EN-e65e0f2695fa259d",
-        "EN-34ec8666daf7b665",
         "EN-e4ffb7bd879b89da",
+        "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
         "EN-b8c236d640d6a5fb",
         "EN-d8494bb34d6ddc43",
@@ -778,6 +777,7 @@
         "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
         "EV-6fa2c58973ea61b4",
+        "EV-e7e2dfbc41a639d2",
         "EV-e15ae1112294d59e",
         "EV-36d484148fbd3424",
         "EV-47a16db069ed320e",
@@ -821,7 +821,7 @@
         "EV-7c836c34e7cf36ee",
         "EV-071c72225b8aaf80",
         "EV-ae1e2769aff82965",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-bc41a3060f11ca2d",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
@@ -926,6 +926,7 @@
         "EV-773ffcc6e1df56fa",
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-00834dd71037c7cc",
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
@@ -1014,7 +1015,6 @@
         "EN-4d748ebd71af03a7",
         "EN-65ef4539bbcbe9fc",
         "EN-3673c8b4dba7409e",
-        "EN-b70e8201c9feb94a",
         "EN-373ac021a2c0bb2c",
         "EN-af53dbc3e443f7a9",
         "EN-3c534d54dae48cbb",
@@ -1025,7 +1025,7 @@
         "EN-9de030d092759897",
         "EN-b9db1ff13ae8496e"
       ],
-      "firstSeen": "2025-10-09",
+      "firstSeen": "2022-10-01",
       "lastSeen": "2026-07-26"
     },
     {
@@ -1050,6 +1050,7 @@
         "EV-e09efcd49776cb95",
         "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
+        "EV-f31feb5ed41be8f2",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -1078,6 +1079,7 @@
         "EV-6c81f03e885f10af",
         "EV-e1e30a2a4a5232c6",
         "EV-cd067fa6f39fe828",
+        "EV-1e611bcabcb049e9",
         "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
         "EV-7963d8c78531f12d",
@@ -1244,6 +1246,7 @@
         "EV-cb3a8846bc4f8aca",
         "EV-48977fd72d2fcfb8",
         "EV-a37b9d9fb85e460f",
+        "EV-65666f7be5ac5ca2",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-941ba9ebdc43f20c",
@@ -1394,40 +1397,20 @@
       "lastSeen": "2026-07-25"
     },
     {
-      "id": "EN-9ff7e3ae1b1ab43f",
-      "name": "Helios AI",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-243e73016576fa43",
-        "EV-563843979fb55b9b"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-human_in_loop"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-25"
-    },
-    {
       "id": "EN-45c52af0feb0f285",
       "name": "Helios",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
-      "aliases": [],
+      "aliases": [
+        "Helios AI"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
       ],
       "eventIds": [
         "EV-243e73016576fa43",
+        "EV-563843979fb55b9b",
         "EV-87f052d24396fdbc"
       ],
       "viewpointIds": [],

@@ -20,6 +20,7 @@ const legacyMappingFile = path.join(bundleRoot, "legacy-card-event-mappings.json
 const reportRoot = path.join(root, "agent-workflow", "reports");
 const write = process.argv.includes("--write=true");
 const concurrency = Math.max(1, Math.min(6, Number(arg("concurrency", "3")) || 3));
+const selectedRawIds = new Set(arg("raw-ids").split(",").map((value) => value.trim()).filter(Boolean));
 
 function arg(name, fallback = "") {
   const prefix = `--${name}=`;
@@ -140,6 +141,7 @@ async function main() {
 
   const jobsByPath = new Map();
   for (const rawId of targetRawIds) {
+    if (selectedRawIds.size && !selectedRawIds.has(rawId)) continue;
     const relativePath = rawPathById.get(rawId);
     if (!relativePath) continue;
     const file = path.join(root, relativePath);
@@ -172,7 +174,7 @@ async function main() {
       continue;
     }
     const cached = cachedTranslations.get(key) || "";
-    if (generatedTitleTranslationLooksUsable(job.sourceTitle, cached)) {
+    if (titleTranslationLooksUsable(job.sourceTitle, cached)) {
       translationResults.set(key, { titleZh: cached, status: "translated", method: "source_title_translation_db", model: "" });
     } else {
       missingJobs.push(job);
@@ -223,6 +225,7 @@ async function main() {
     dates: availableDates.length,
     event_target_raws: eventTargetRawIds.size,
     legacy_cards: legacy.mappings?.length || 0,
+    selected_raw_ids: [...selectedRawIds],
     target_raws: jobsByPath.size,
     unique_titles: uniqueTitles.size,
     cached_or_chinese: uniqueTitles.size - missingJobs.length,
@@ -280,6 +283,7 @@ async function main() {
 
   let cardsUpdated = 0;
   for (const mapping of legacy.mappings || []) {
+    if (selectedRawIds.size && !(mapping.raw_ids || []).some((rawId) => selectedRawIds.has(rawId))) continue;
     const sourceUrls = new Set((mapping.source_urls || []).map(normalizeUrl));
     const candidates = (mapping.raw_ids || []).map((rawId) => rawById.get(rawId)).filter(Boolean);
     const raw = candidates.find((item) => sourceUrls.has(normalizeUrl(item.source_url || item.canonical_url)))

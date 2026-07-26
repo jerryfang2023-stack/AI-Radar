@@ -148,7 +148,6 @@ function applyEntityReviewDecisions(entityRows, events, reviewDecisions) {
     if (preparedIds.has(decision.entity_id) || ["quarantine", "merge"].includes(decision.action)) continue;
     const entityType = REVIEW_TYPE_TO_ENTITY_TYPE[decision.canonical?.catalog_type];
     if (!entityType || !clean(decision.canonical?.name)) continue;
-    if (entityType === "person_candidate") continue;
     preparedRows.push({
       entity_id: decision.entity_id,
       canonical_name: clean(decision.canonical.name),

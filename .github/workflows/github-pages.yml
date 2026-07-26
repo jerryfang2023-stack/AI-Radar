@@ -124,6 +124,12 @@ jobs:
         if: steps.deployment-gate.outputs.deploy == 'true'
         run: node agent-workflow/tools/assert-version-consistency.mjs
 
+      - name: Assert factual catalog integrity
+        if: steps.deployment-gate.outputs.deploy == 'true'
+        run: |
+          npm run assert:source-titles
+          npm run assert:entity-catalog-review
+
       - name: Assert current rule and Skill governance
         if: steps.deployment-gate.outputs.deploy == 'true'
         env:

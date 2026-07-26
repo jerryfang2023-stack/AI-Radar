@@ -1,50 +1,51 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-26T15:27:54.746Z",
-  "date": "2026-07-26",
-  "action": "Funding Insights historical data conversion",
+  "generated_at": "2026-07-26T16:29:40.074Z",
+  "date": "2026-07-27",
+  "action": "Global code and factual catalog audit repair",
   "action_status": "current",
   "record_level": "required",
-  "trigger": "historical_backfill",
-  "status": "success",
-  "summary": "Completed the 2026-05-20 through 2026-07-26 unique-event backfill: 246 verified funding events became 203 fail-closed public cards; 43 unresolved events remain blocked and none are pending.",
+  "trigger": "manual",
+  "status": "passed",
+  "summary": "Repaired source-title integrity, entity-catalog review, DeepSeek Pro routing, concurrent audit persistence, Chinese commercial regexes, and deploy-time gates; rebuilt V4 projections.",
   "contexts": [],
   "changed_files": [
-    "01-SiteV2/content/12-applications/funding-insights/*.json",
-    "01-SiteV2/site/data/funding-insights-v1.json",
-    "agent-workflow/reports/funding-insight-historical-backfill-current.json",
-    "agent-workflow/tools/funding-insight-v1-utils.mjs",
-    "agent-workflow/tools/generate-funding-insights-deepseek.mjs",
-    "agent-workflow/tools/tests/funding-insight-v1.test.mjs",
-    "context/version-ledger.md"
+    ".github/workflows/github-pages.yml",
+    "agent-workflow/tools/assert-source-title-integrity.mjs",
+    "agent-workflow/tools/audit-entity-catalog-with-deepseek.mjs",
+    "agent-workflow/tools/finalize-current-entity-catalog-review.mjs",
+    "agent-workflow/product/entity-history-v1.mjs",
+    "01-SiteV2/site/data"
   ],
   "outputs": [
-    "59 dated bundles",
-    "203 unique public cards",
-    "43 blocked events",
-    "0 pending events",
-    "Skill Store v1.7.0"
+    "entity-catalog-deepseek-audit-current.json",
+    "entity-catalog-review-decisions.json",
+    "data-center-v4-frontstage.json",
+    "funding-insights-v1.json",
+    "trend-radar-v1.json"
   ],
   "checks": [
-    "59 of 59 bundle assertions passed",
-    "funding tests 8 of 8 passed",
-    "frontstage build produced 203 cards",
-    "frontstage regression passed with 0 issues",
-    "203 unique event IDs with 0 duplicates",
-    "Skill validation and Skill Ops passed",
-    "version consistency and current-rule hygiene passed"
+    "241 direct tests passed",
+    "Data Center prepared site suite passed",
+    "entity catalog gate passed",
+    "source title gate passed",
+    "V4 frontstage smoke passed",
+    "Skill Ops passed"
   ],
-  "issues": [],
-  "risks": [
-    "43 events remain fail-closed until missing company or funding or investor or product or cited-source evidence is recovered"
+  "issues": [
+    "Stale entity review ledger",
+    "Missing source title translations",
+    "Mojibake regexes",
+    "Concurrent report write race"
   ],
+  "risks": [],
   "lessons": [
-    "Strip incomplete optional research entries before the hard gate while keeping core funding evidence fail-closed",
-    "Retry without force so accepted cards are reused and only blocked events incur new research"
+    "Serialize audit report persistence while keeping model batches parallel",
+    "Do not require nonempty trend structures when corrected entity typing removes false positives"
   ],
   "reusable_rules": [
-    "Historical ownership is one unique CanonicalEvent per best-evidence date bundle",
-    "Blocked cards never enter the frontstage projection"
+    "Entity judgment defaults to DeepSeek Pro",
+    "Pages blocks on source-title and entity-catalog integrity"
   ],
   "retired_flags": [],
   "notes": []

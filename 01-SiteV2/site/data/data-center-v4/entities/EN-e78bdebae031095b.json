@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-e78bdebae031095b",
@@ -42,14 +42,10 @@
       "TX-use_case-software_development",
       "TX-technology-code_generation"
     ],
-    "relatedEntityIds": [
-      "EN-35ad2658e502aeda"
-    ],
+    "relatedEntityIds": [],
     "firstSeen": "2026-05-21",
     "lastSeen": "2026-07-13",
-    "relationIds": [
-      "REL2-64d994912ba46191"
-    ],
+    "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-e9b020a1b5f1af14",
@@ -168,8 +164,7 @@
           "EN-ffc33568b1122cc5",
           "EN-e78bdebae031095b",
           "EN-7d3194f79e645c42",
-          "EN-8d4321d936320802",
-          "EN-35ad2658e502aeda"
+          "EN-8d4321d936320802"
         ]
       },
       {
@@ -390,51 +385,8 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [
-    {
-      "id": "EN-35ad2658e502aeda",
-      "name": "Colossus",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-8a91e14f37d32b4d"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [
-        "EN-e78bdebae031095b"
-      ],
-      "firstSeen": "2026-06-29",
-      "lastSeen": "2026-06-29"
-    }
-  ],
-  "relationships": [
-    {
-      "relationship_id": "REL2-64d994912ba46191",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-e78bdebae031095b",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-35ad2658e502aeda",
-      "object_type": "entity",
-      "event_id": "EV-8a91e14f37d32b4d",
-      "claim_refs": [
-        "CL-95f44cb09829ce61",
-        "CL-a93154756285b513",
-        "CL-8e0772ef6fe2fd0e"
-      ],
-      "source_refs": [
-        "SA-e12af0ca03080fdd"
-      ],
-      "data_date": "2026-06-29",
-      "status": "verified"
-    }
-  ],
+  "relatedEntities": [],
+  "relationships": [],
   "taxonomyNodes": [
     {
       "id": "TX-use_case-software_development",
@@ -459,7 +411,7 @@
         "EV-b2e374d54b10b9af",
         "EV-0f440082086c02df",
         "EV-6ce069b1845f5a52",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-347d250e2769de9a",
         "EV-107725f2bdece882",
         "EV-70efbfcaadcdb259",
@@ -483,7 +435,6 @@
         "EN-3db1f560db626918",
         "EN-8f71c4871a160172",
         "EN-0cc3af265406c202",
-        "EN-b0532e1af75cc4ab",
         "EN-7106dbc04a08ce3a",
         "EN-3ccbd9105a45d8fc",
         "EN-15c785fe4bcb86f5",
@@ -568,7 +519,7 @@
         "EV-0f440082086c02df",
         "EV-2634b786bde9fb8e",
         "EV-6ce069b1845f5a52",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-c237f5dc53f0a923",
         "EV-653cbce2ccc79f8b",
         "EV-74dfbd82b47dc626",
@@ -596,7 +547,6 @@
         "EN-24af08c2634cb45a",
         "EN-9fbf261b62c1d7c0",
         "EN-0cc3af265406c202",
-        "EN-b0532e1af75cc4ab",
         "EN-7106dbc04a08ce3a",
         "EN-e78bdebae031095b",
         "EN-6fcba5d96a4fadfd",
@@ -640,7 +590,6 @@
         "EN-993599624a199fe0",
         "EN-c608c4787821de1b",
         "EN-ddf9916b459b6d77",
-        "EN-3aca03b9bb50f158",
         "EN-b644c0a9d493976a",
         "EN-412b57e712039032",
         "EN-6f7ac1823da81d2e",

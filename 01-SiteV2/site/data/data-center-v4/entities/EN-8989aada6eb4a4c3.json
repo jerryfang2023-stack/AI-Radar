@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-8989aada6eb4a4c3",
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-technology-reasoning"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-d30e5ffc0ba9150b"
+    ],
     "firstSeen": "2026-07-24",
     "lastSeen": "2026-07-25",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-e1d65aab90a4ab28"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -75,8 +79,53 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-d30e5ffc0ba9150b",
+      "name": "蚂蚁集团",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6f1729f6968b72c9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-reasoning"
+      ],
+      "relatedEntityIds": [
+        "EN-8989aada6eb4a4c3"
+      ],
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-07-25"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-e1d65aab90a4ab28",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-d30e5ffc0ba9150b",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8989aada6eb4a4c3",
+      "object_type": "entity",
+      "event_id": "EV-6f1729f6968b72c9",
+      "claim_refs": [
+        "CL-0905882f05086f45",
+        "CL-315b3e77ed185068",
+        "CL-28f467ec31f53f91"
+      ],
+      "source_refs": [
+        "SA-9be4fa95329f965d"
+      ],
+      "data_date": "2026-07-25",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-technology-reasoning",

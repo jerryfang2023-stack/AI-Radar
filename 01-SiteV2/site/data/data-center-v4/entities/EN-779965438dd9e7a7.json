@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-779965438dd9e7a7",
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-7f871cbf905f6e0c"
+    ],
     "firstSeen": "2026-06-16",
     "lastSeen": "2026-06-17",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-eaf27cde7b70ddb9"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -77,8 +81,61 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-7f871cbf905f6e0c",
+      "name": "OpenRouter",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cf6e7a2edad82c6f",
+        "EV-0e84a2f49d765ce3",
+        "EV-caec65aef89d3b4a",
+        "EV-ab3586268ebfab38",
+        "EV-86537be17d50ff20"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
+        "TX-technology-long_context",
+        "TX-use_case-cybersecurity",
+        "TX-technology-open_weights"
+      ],
+      "relatedEntityIds": [
+        "EN-779965438dd9e7a7"
+      ],
+      "firstSeen": "2026-06-08",
+      "lastSeen": "2026-07-19"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-eaf27cde7b70ddb9",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7f871cbf905f6e0c",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-779965438dd9e7a7",
+      "object_type": "entity",
+      "event_id": "EV-ab3586268ebfab38",
+      "claim_refs": [
+        "CL-8baf55396569778e",
+        "CL-73f4cfe9ec18e00c",
+        "CL-37bb9b7ce057bacb"
+      ],
+      "source_refs": [
+        "SA-0dc7f4cfc2270562"
+      ],
+      "data_date": "2026-06-17",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

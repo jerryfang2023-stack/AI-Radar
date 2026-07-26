@@ -588,3 +588,23 @@ test("a reviewed Claim-backed entity missing from historical rows is materialize
   assert.equal(service.profiles.find((item) => item.id === "EN-2222222222222222")?.eventIds.includes("EV-1"), true);
   assert.equal(service.relationships.some((item) => item.subject_ref === "EN-1111111111111111" && item.object_ref === "EN-2222222222222222"), true);
 });
+
+test("a reviewed Claim-backed person missing from historical rows is materialized in the serving projection", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [],
+    events: [event],
+    reviewDecisions: {
+      decisions: [{
+        entity_id: "EN-3333333333333333",
+        current: { name: "CEO Jane Doe", catalog_type: "product", company_names: [] },
+        action: "correct",
+        canonical: { name: "Jane Doe", catalog_type: "person", company_names: [] },
+        evidence: { claim_refs: ["CL-1"], secondary_sources: [] },
+        review_status: "accepted",
+        reviewer: "codex-entity-review"
+      }]
+    }
+  });
+
+  assert.equal(service.profiles.find((item) => item.id === "EN-3333333333333333")?.eventIds.includes("EV-1"), true);
+});

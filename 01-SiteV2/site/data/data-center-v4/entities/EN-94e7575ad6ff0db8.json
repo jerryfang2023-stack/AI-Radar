@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-94e7575ad6ff0db8",
@@ -16,32 +16,107 @@
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
     "aliases": [],
-    "verificationStatus": "verified",
+    "verificationStatus": "candidate",
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-50893df365a7097d"
+    ],
     "viewpointIds": [],
-    "classificationRefs": [],
+    "classificationRefs": [
+      "TX-technology-video_generation"
+    ],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-07-20",
+    "lastSeen": "2026-07-21",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-50893df365a7097d"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-50893df365a7097d",
+        "dataDate": "2026-07-21",
+        "date": "2026-07-20",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "《第九区》导演尼尔·布洛姆坎普发布首部完全由 AI 视频生成技术制作的短片",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "video_generation",
+            "name": "视频生成"
+          }
+        ],
+        "entityIds": [
+          "EN-3092ffb33792fe70",
+          "EN-94e7575ad6ff0db8"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],
   "relationships": [],
-  "taxonomyNodes": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-technology-video_generation",
+      "name": "视频生成",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "video_generation",
+      "eventIds": [
+        "EV-a354af52772334fd",
+        "EV-26d2874c6ce028d6",
+        "EV-6654f62015eff8e3",
+        "EV-50893df365a7097d",
+        "EV-6fbbbfcdcec81df4",
+        "EV-fd8ecce5de2f667d",
+        "EV-5babb43f4b4d302f",
+        "EV-d8c69ed782b73a34",
+        "EV-c7404765df94a3b4",
+        "EV-473f852b374d8b1c",
+        "EV-887d47bb477e2142"
+      ],
+      "entityIds": [
+        "EN-d747d6f5125b6bee",
+        "EN-047364b9be67f665",
+        "EN-b81c8201acfc7639",
+        "EN-2b6e51bec93e86c1",
+        "EN-c9e6168149dd7cf6",
+        "EN-92af3ce2fb97edf3",
+        "EN-3092ffb33792fe70",
+        "EN-94e7575ad6ff0db8",
+        "EN-ec1c8f558ff61e34",
+        "EN-01f1074bb52ff605",
+        "EN-7ed9c9e7c260ed06",
+        "EN-0e008e2c06144ec8",
+        "EN-bbdefa2950f49882",
+        "EN-5388bc10736a0eff",
+        "EN-43a340bb75b45f02",
+        "EN-2daac3672aeafcbd",
+        "EN-e9857f381893dd05",
+        "EN-4f96127fdacbb405"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-22"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

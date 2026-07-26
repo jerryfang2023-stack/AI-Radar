@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-9fbf261b62c1d7c0",
@@ -32,6 +32,7 @@
       "EV-e09efcd49776cb95",
       "EV-883d3b5f6d30eb48",
       "EV-fa66f00e9d4b20c2",
+      "EV-f31feb5ed41be8f2",
       "EV-4fba2b2f1ac10a79",
       "EV-bcb74b02448b7d78",
       "EV-47a16db069ed320e",
@@ -60,6 +61,7 @@
       "EV-6c81f03e885f10af",
       "EV-e1e30a2a4a5232c6",
       "EV-cd067fa6f39fe828",
+      "EV-1e611bcabcb049e9",
       "EV-118317b7f92e5e16",
       "EV-c4723445b11bb275",
       "EV-7963d8c78531f12d",
@@ -179,6 +181,7 @@
         "EV-e09efcd49776cb95",
         "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
+        "EV-f31feb5ed41be8f2",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-33e7429a7bc94840",
@@ -212,6 +215,7 @@
         "EV-6c81f03e885f10af",
         "EV-e1e30a2a4a5232c6",
         "EV-cd067fa6f39fe828",
+        "EV-1e611bcabcb049e9",
         "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
         "EV-7963d8c78531f12d",
@@ -407,7 +411,6 @@
           "EN-8d4321d936320802",
           "EN-e1517be14d06cdb7",
           "EN-c70eca6b0f88f44d",
-          "EN-9ff7e3ae1b1ab43f",
           "EN-45c52af0feb0f285"
         ]
       },
@@ -489,7 +492,7 @@
           "EN-240389f4b730bad4",
           "EN-8d4321d936320802",
           "EN-9fbf261b62c1d7c0",
-          "EN-9ff7e3ae1b1ab43f"
+          "EN-45c52af0feb0f285"
         ]
       },
       {
@@ -682,6 +685,28 @@
         ]
       },
       {
+        "id": "EV-f31feb5ed41be8f2",
+        "dataDate": "2026-07-21",
+        "date": "2026-07-21",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "微软借助AMD打造大规模AI CPU与GPU集群",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体"
+          }
+        ],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
         "id": "EV-4fba2b2f1ac10a79",
         "dataDate": "2026-07-21",
         "date": "2026-07-20",
@@ -702,6 +727,22 @@
         "entityIds": [
           "EN-c7d7af20b6ab853d",
           "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
+        "id": "EV-1e611bcabcb049e9",
+        "dataDate": "2026-07-21",
+        "date": "2026-07-21",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "微软经典版 Outlook 今年将整合 Copilot AI 起草邮件功能",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9fbf261b62c1d7c0",
+          "EN-850335b3887e0eb4"
         ]
       },
       {
@@ -1034,8 +1075,7 @@
         "entityIds": [
           "EN-fe47fd93d06b7a28",
           "EN-9fbf261b62c1d7c0",
-          "EN-c70eca6b0f88f44d",
-          "EN-d0bfa24cf1e53827"
+          "EN-c70eca6b0f88f44d"
         ]
       },
       {
@@ -1223,8 +1263,7 @@
         "entityIds": [
           "EN-c59bf93d7edff465",
           "EN-3d5e343dd47b9389",
-          "EN-9fbf261b62c1d7c0",
-          "EN-b0532e1af75cc4ab"
+          "EN-9fbf261b62c1d7c0"
         ]
       },
       {
@@ -1670,8 +1709,7 @@
           "EN-9fbf261b62c1d7c0",
           "EN-abc5ac745d337316",
           "EN-c70eca6b0f88f44d",
-          "EN-8d323d8bba783aa3",
-          "EN-d0bfa24cf1e53827"
+          "EN-8d323d8bba783aa3"
         ]
       },
       {
@@ -1756,8 +1794,7 @@
           }
         ],
         "entityIds": [
-          "EN-9fbf261b62c1d7c0",
-          "EN-b0532e1af75cc4ab"
+          "EN-9fbf261b62c1d7c0"
         ]
       },
       {
@@ -2191,8 +2228,7 @@
         "displayTags": [],
         "entityIds": [
           "EN-ce65fa41b16c33ff",
-          "EN-9fbf261b62c1d7c0",
-          "EN-b0532e1af75cc4ab"
+          "EN-9fbf261b62c1d7c0"
         ]
       },
       {
@@ -2502,6 +2538,7 @@
         "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
         "EV-6fa2c58973ea61b4",
+        "EV-e7e2dfbc41a639d2",
         "EV-e15ae1112294d59e",
         "EV-36d484148fbd3424",
         "EV-47a16db069ed320e",
@@ -2545,7 +2582,7 @@
         "EV-7c836c34e7cf36ee",
         "EV-071c72225b8aaf80",
         "EV-ae1e2769aff82965",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-bc41a3060f11ca2d",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
@@ -2650,6 +2687,7 @@
         "EV-773ffcc6e1df56fa",
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-00834dd71037c7cc",
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
@@ -2738,7 +2776,6 @@
         "EN-4d748ebd71af03a7",
         "EN-65ef4539bbcbe9fc",
         "EN-3673c8b4dba7409e",
-        "EN-b70e8201c9feb94a",
         "EN-373ac021a2c0bb2c",
         "EN-af53dbc3e443f7a9",
         "EN-3c534d54dae48cbb",
@@ -2749,7 +2786,7 @@
         "EN-9de030d092759897",
         "EN-b9db1ff13ae8496e"
       ],
-      "firstSeen": "2025-10-09",
+      "firstSeen": "2022-10-01",
       "lastSeen": "2026-07-26"
     },
     {
@@ -2872,6 +2909,7 @@
         "EV-cb3a8846bc4f8aca",
         "EV-48977fd72d2fcfb8",
         "EV-a37b9d9fb85e460f",
+        "EV-65666f7be5ac5ca2",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-941ba9ebdc43f20c",
@@ -3287,6 +3325,7 @@
         "EV-bffc68e7bb4d598b",
         "EV-901155ab700a7e8e",
         "EV-2069f6a931b8c9d6",
+        "EV-c84b6d7338f87990",
         "EV-f6e7a4fe77d7f5c9",
         "EV-6be89ebfbf8de6be",
         "EV-b29878fdf79f2ac5",
@@ -3380,6 +3419,7 @@
         "EV-910ebb509f1d437b",
         "EV-d4c9326c53dd927a",
         "EV-d8fc5fc40bccc0bc",
+        "EV-f31feb5ed41be8f2",
         "EV-f0966bc867e1483e",
         "EV-da9bb2c98c1ce8cd",
         "EV-4b545e310ded2baa",
@@ -3469,7 +3509,7 @@
         "EV-cc974e0031c69715",
         "EV-d4278191ae11f198",
         "EV-ed272c57e1513d3f",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-b43f22d8bc7fec3f",
         "EV-86ab9c2f1416e9d8",
         "EV-3b1d1dd87442e7f1",
@@ -3630,6 +3670,7 @@
         "EV-3550e9863266ea96",
         "EV-7ff24ae733821395",
         "EV-c52947e480fa3347",
+        "EV-8558c9cf2e0202dd",
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-747d431512701d65",
@@ -3664,6 +3705,7 @@
         "EN-12765295db4f1e79",
         "EN-73ef176d9f12809e",
         "EN-96eebba49dbbf422",
+        "EN-05cd4b807503b0f2",
         "EN-270e2cfd11014ef8",
         "EN-522656609ff15589",
         "EN-b0bc23fa8e20c543",
@@ -3677,7 +3719,6 @@
         "EN-ea3bd73e2b506e00",
         "EN-4d748ebd71af03a7",
         "EN-3afbf365c56b769d",
-        "EN-b0532e1af75cc4ab",
         "EN-7a9c94a8c201bcc2",
         "EN-d6386c59a6bcfcb1",
         "EN-19313d8b24774cbf",
@@ -3777,6 +3818,7 @@
         "EN-866e1f18c9370d5d",
         "EN-b5738c169b693bee",
         "EN-be972f28adbc6e84",
+        "EN-8d323d8bba783aa3",
         "EN-cd65acdabcbbd55c",
         "EN-2fc9fff8ab7f35aa",
         "EN-8efebac68a48c369",
@@ -3794,7 +3836,6 @@
         "EN-b3f5e31ec86a08a9",
         "EN-c55f528b3a23dc5b",
         "EN-ceef9085ddc3348c",
-        "EN-d9b1d7819af92e77",
         "EN-88e2cce43eeadb36",
         "EN-276a8bc458036a1a",
         "EN-5239a379b6326549",
@@ -3835,7 +3876,6 @@
         "EN-833940e4d17c9df3",
         "EN-240389f4b730bad4",
         "EN-e1517be14d06cdb7",
-        "EN-9ff7e3ae1b1ab43f",
         "EN-45c52af0feb0f285",
         "EN-8d57f84bd1847b24",
         "EN-a7baed72c308ce88",
@@ -3859,10 +3899,8 @@
         "EN-62503b0d3dcfd096",
         "EN-09d3eb0b07daf955",
         "EN-a1adb91065c5a347",
-        "EN-6f216f2ea5b7a13e",
         "EN-e16fc821f34228d1",
         "EN-6f21a653c48f4f19",
-        "EN-6ef7552b4631e789",
         "EN-dd758281d0c70e60",
         "EN-985e1a7c957148f9",
         "EN-2c348893efb2316e",
@@ -3889,7 +3927,6 @@
         "EN-820a72d1d4b51ae7",
         "EN-74692028630429c7",
         "EN-e6483498af8bd2cd",
-        "EN-b60e6df651264e14",
         "EN-e07654c7cc29acbd",
         "EN-842fcb5e60989a03",
         "EN-5f6367300dabc238",
@@ -3940,16 +3977,13 @@
         "EN-0a1750ec669a270c",
         "EN-c141d2237427f30d",
         "EN-a9f74d68b2b7c964",
-        "EN-098a7df7f42ccf8b",
         "EN-761c4b9294ee43a7",
         "EN-3eee4f30151db45a",
         "EN-42f0b44cc91cc5e0",
         "EN-94caa859c22071b1",
         "EN-09c344df70df9660",
-        "EN-1725c58362aadc2a",
         "EN-c31a277efac23f52",
         "EN-307557d99a7eb726",
-        "EN-557203e8cc173124",
         "EN-2ba325ce6f8e3dc9",
         "EN-96a4bc2602655473",
         "EN-2c063f604e634100",
@@ -3973,7 +4007,6 @@
         "EN-bc1fc5140040180e",
         "EN-f19600b9e18f7f27",
         "EN-478e0ad4e0940af0",
-        "EN-27c0390d5f3de698",
         "EN-27b78f50b2d3d969",
         "EN-1b0a2528912919f4",
         "EN-7d1507284a5757ca",
@@ -4014,7 +4047,6 @@
         "EN-d8494bb34d6ddc43",
         "EN-b8c236d640d6a5fb",
         "EN-8a6a6c7694a73ebd",
-        "EN-36076a5178595978",
         "EN-73df89424ba2e889",
         "EN-72e8088a05b38ae3",
         "EN-833cd615d86b73ca",
@@ -4044,12 +4076,14 @@
         "EN-b9db1ff13ae8496e",
         "EN-e99987e5c504a796",
         "EN-c4de175a35d9d9d1",
+        "EN-ec6b03fc92dcfc89",
+        "EN-552088238720cb6f",
+        "EN-c0d6535a9383cb62",
         "EN-3aa7606e6aa345a3",
         "EN-4d803c223cec4cc4",
         "EN-fa5bbac1048b9190",
         "EN-5f59f157b0f3c885",
         "EN-b7bea343b08cce2c",
-        "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
         "EN-96045bee6a2d2527",
@@ -4104,6 +4138,7 @@
         "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
+        "HW-18e9985f2e93555c",
         "HW-2ce4c2fb193555e3",
         "HW-25ce41fab12d9ef2"
       ],
@@ -4176,7 +4211,6 @@
         "EN-ee04228c5c6d8b08",
         "EN-7706c3c94d5f9b59",
         "EN-240389f4b730bad4",
-        "EN-b0532e1af75cc4ab",
         "EN-449777124b1466a8",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
@@ -4187,6 +4221,7 @@
         "EN-80d387ccb3289295",
         "EN-be972f28adbc6e84",
         "EN-bbdefa2950f49882",
+        "EN-8d323d8bba783aa3",
         "EN-2fc9fff8ab7f35aa",
         "EN-8efebac68a48c369",
         "EN-16fd849ce27f115b",
@@ -4212,7 +4247,6 @@
         "EN-94c93b5ab886f2d9",
         "EN-d7aba0f660c463d8",
         "EN-e58ee91f1d57df05",
-        "EN-8f451ae7730ddb67",
         "EN-ce635c4eabff5e4f",
         "EN-ab9e3beebd83960d",
         "EN-61cce404a45c3545",
@@ -4278,6 +4312,8 @@
         "EN-abb32701117d50a9",
         "EN-bbdefa2950f49882",
         "EN-b4a139ced5659a4e",
+        "EN-0decbc3b45f73b2b",
+        "EN-45cbca5f78f1ef44",
         "EN-fc77f762a5c2afc1",
         "EN-1e0c30e583ebb8be",
         "EN-8d4321d936320802",
@@ -4321,7 +4357,7 @@
         "EV-b2e374d54b10b9af",
         "EV-0f440082086c02df",
         "EV-6ce069b1845f5a52",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-347d250e2769de9a",
         "EV-107725f2bdece882",
         "EV-70efbfcaadcdb259",
@@ -4345,7 +4381,6 @@
         "EN-3db1f560db626918",
         "EN-8f71c4871a160172",
         "EN-0cc3af265406c202",
-        "EN-b0532e1af75cc4ab",
         "EN-7106dbc04a08ce3a",
         "EN-3ccbd9105a45d8fc",
         "EN-15c785fe4bcb86f5",
@@ -4423,7 +4458,6 @@
         "EN-e3863f813fe47240",
         "EN-047364b9be67f665",
         "EN-09c344df70df9660",
-        "EN-1725c58362aadc2a",
         "EN-bbdefa2950f49882",
         "EN-3aa38718f0399af9",
         "EN-e16fc821f34228d1",
@@ -4476,7 +4510,6 @@
         "EN-96eebba49dbbf422",
         "EN-e5dcb6b25180d1d6",
         "EN-3afbf365c56b769d",
-        "EN-b0532e1af75cc4ab",
         "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
         "EN-11507a0e2f5e69d5",
@@ -4794,7 +4827,6 @@
         "EN-96eebba49dbbf422",
         "EN-f346eaca864441f9",
         "EN-c70eca6b0f88f44d",
-        "EN-b0532e1af75cc4ab",
         "EN-e5cc9e38970eacb5",
         "EN-cbc62794911ff31b",
         "EN-b1d07f1a647ba7fb",
@@ -4812,7 +4844,7 @@
         "EN-8147e6fed86d42c1",
         "EN-e274048227f164dc",
         "EN-1bf93b12e68cac56",
-        "EN-d9b1d7819af92e77",
+        "EN-8d323d8bba783aa3",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-5388bc10736a0eff",
@@ -4899,7 +4931,7 @@
         "EV-0f440082086c02df",
         "EV-2634b786bde9fb8e",
         "EV-6ce069b1845f5a52",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-c237f5dc53f0a923",
         "EV-653cbce2ccc79f8b",
         "EV-74dfbd82b47dc626",
@@ -4927,7 +4959,6 @@
         "EN-24af08c2634cb45a",
         "EN-9fbf261b62c1d7c0",
         "EN-0cc3af265406c202",
-        "EN-b0532e1af75cc4ab",
         "EN-7106dbc04a08ce3a",
         "EN-e78bdebae031095b",
         "EN-6fcba5d96a4fadfd",
@@ -4971,7 +5002,6 @@
         "EN-993599624a199fe0",
         "EN-c608c4787821de1b",
         "EN-ddf9916b459b6d77",
-        "EN-3aca03b9bb50f158",
         "EN-b644c0a9d493976a",
         "EN-412b57e712039032",
         "EN-6f7ac1823da81d2e",
@@ -5023,7 +5053,6 @@
         "EV-94d9c8d5ac1e10de"
       ],
       "entityIds": [
-        "EN-b0532e1af75cc4ab",
         "EN-dca6ec9510fc0176",
         "EN-3ccbd9105a45d8fc",
         "EN-8147e6fed86d42c1",
@@ -5044,12 +5073,10 @@
         "EN-76a5d97e81b562c4",
         "EN-4c3a380e1f998775",
         "EN-c47b618e17c75f06",
-        "EN-1ec93c99d07feadd",
-        "EN-a6ed199f8859e462",
         "EN-21d8ce5988925f81",
+        "EN-a6ed199f8859e462",
         "EN-34da56029403e6f7",
         "EN-89e28a570dce8b18",
-        "EN-b70e8201c9feb94a",
         "EN-3673c8b4dba7409e",
         "EN-7b80ed96beed8c0a",
         "EN-7d1507284a5757ca",
@@ -5147,9 +5174,7 @@
         "EN-ac123e56b0168ec2",
         "EN-d5b8915a8c232010",
         "EN-2b6e51bec93e86c1",
-        "EN-6f216f2ea5b7a13e",
         "EN-31055a8d9856fce4",
-        "EN-204d4b18c9d78e88",
         "EN-7839fb10a8f14c70",
         "EN-ea3bd73e2b506e00",
         "EN-52fc33ae4d101a5d",
@@ -5212,7 +5237,6 @@
         "EN-33ea25778e18d372",
         "EN-047364b9be67f665",
         "EN-09c344df70df9660",
-        "EN-1725c58362aadc2a",
         "EN-e16fc821f34228d1",
         "EN-16fe95bd48dbf178",
         "EN-c70eca6b0f88f44d",
@@ -5267,7 +5291,6 @@
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
         "EN-dca6ec9510fc0176",
-        "EN-b0532e1af75cc4ab",
         "EN-8147e6fed86d42c1",
         "EN-968e2d5b08687bf4",
         "EN-16fd849ce27f115b",
@@ -5275,7 +5298,6 @@
         "EN-f5791343a13abc71",
         "EN-9fbf261b62c1d7c0",
         "EN-e21783b898b55a31",
-        "EN-b6fe9abdb194022b",
         "EN-7a2f2aafb073c74e",
         "EN-3309b3b14807f39a",
         "EN-61a405a731497229",
@@ -5333,6 +5355,7 @@
         "EV-702276a31f123374",
         "EV-fe519605ebb69aaf",
         "EV-2fea1664807824ce",
+        "EV-b888d3eb5f192649",
         "EV-b84035029a63e52e",
         "EV-3028dfadf94c8f4c",
         "EV-a06011da69abcc3d",
@@ -5354,8 +5377,9 @@
         "EN-bc1fc5140040180e",
         "EN-0d1e478de2157d48",
         "EN-6f7ac1823da81d2e",
+        "EN-047364b9be67f665",
+        "EN-0f553f48551aef83",
         "EN-d41ebd9f02722fc8",
-        "EN-b0532e1af75cc4ab",
         "EN-96eebba49dbbf422",
         "EN-10556ee2cee94c72",
         "EN-f8c237773fe24a98",
@@ -5400,7 +5424,6 @@
       "entityIds": [
         "EN-c70eca6b0f88f44d",
         "EN-e6483498af8bd2cd",
-        "EN-b60e6df651264e14",
         "EN-08b6a35be337edce",
         "EN-9fbf261b62c1d7c0",
         "EN-d2f4e09cb01afa3c",
@@ -5418,7 +5441,6 @@
         "EN-761a66c29a55bc53",
         "EN-3aa7606e6aa345a3",
         "EN-bbdefa2950f49882",
-        "EN-fdb2cc367267ac57",
         "EN-e69f64149edae6b1",
         "EN-5504f88c63fe766d"
       ],
@@ -5526,7 +5548,6 @@
         "EN-9fbf261b62c1d7c0",
         "EN-8d4321d936320802",
         "EN-e1517be14d06cdb7",
-        "EN-9ff7e3ae1b1ab43f",
         "EN-45c52af0feb0f285"
       ],
       "fdeIds": [
@@ -5590,7 +5611,6 @@
         "EN-bbdefa2950f49882",
         "EN-834ab0b6e4492d23",
         "EN-01f1074bb52ff605",
-        "EN-dd782f5241cd7e50",
         "EN-ea3bd73e2b506e00",
         "EN-96eebba49dbbf422",
         "EN-534e99d81da1c54d",
@@ -6011,6 +6031,40 @@
       "entityIds": [
         "EN-9fbf261b62c1d7c0",
         "EN-bd52a4943ae83155"
+      ]
+    },
+    {
+      "id": "HW-18e9985f2e93555c",
+      "eventId": "EV-f31feb5ed41be8f2",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-21",
+      "title": "微软借助AMD打造大规模AI CPU与GPU集群",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "Microsoft",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://nextplatform.com/cloud/2026/07/20/microsoft-taps-amd-for-at-scale-ai-cpu-and-gpu-clusters/5275161",
+      "sourceName": "nextplatform.com",
+      "sourceDate": "2026-07-21",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
       ]
     },
     {

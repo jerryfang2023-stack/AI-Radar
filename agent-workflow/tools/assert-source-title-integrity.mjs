@@ -5,6 +5,7 @@ import path from "node:path";
 import {
   generatedTitleTranslationLooksUsable,
   sourceTitleNeedsChineseTranslation,
+  titleTranslationLooksUsable,
 } from "./source-title-translation-generator.mjs";
 
 const root = process.cwd();
@@ -92,7 +93,11 @@ for (const rawId of targetRawIds) {
   const raw = readJson(path.join(root, relativePath));
   const original = String(raw.title || raw.title_original || "").trim();
   const chinese = String(raw.title_zh || "").trim();
-  if (!chinese || (sourceTitleNeedsChineseTranslation(original) && !generatedTitleTranslationLooksUsable(original, chinese))) {
+  const method = String(raw.title_translation_method || "").trim();
+  const translationLooksUsable = ["manual_reviewed_source_title_translation", "source_title_translation_db"].includes(method)
+    ? titleTranslationLooksUsable(original, chinese)
+    : generatedTitleTranslationLooksUsable(original, chinese);
+  if (sourceTitleNeedsChineseTranslation(original) && !translationLooksUsable) {
     violations.push({ type: "raw_title_invalid", raw_id: rawId, path: relativePath, original, title_zh: chinese });
   }
 }

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-8f5ef31ed5125786",
@@ -20,23 +20,43 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-f2750a3d66e06fe7"
+    ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
+    "firstSeen": "2026-07-16",
+    "lastSeen": "2026-07-19",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-f2750a3d66e06fe7"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-f2750a3d66e06fe7",
+        "dataDate": "2026-07-19",
+        "date": "2026-07-16",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Sharon AI 签署价值 13.2 亿美元的五年期云计算服务协议",
+        "displayTags": [],
+        "entityIds": [
+          "EN-8f5ef31ed5125786"
+        ]
+      }
+    ],
     "viewpoints": []
   },
   "relatedEntities": [],

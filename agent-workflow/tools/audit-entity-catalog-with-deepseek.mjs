@@ -23,7 +23,6 @@ const offset = Math.max(0, Number(args.get("offset") || 0));
 const reuseExisting = args.get("reuse-existing") === "true";
 const configuredModel = args.get("model")
   || process.env.DEEPSEEK_PRO_MODEL
-  || process.env.DEEPSEEK_MODEL
   || deepSeekModels().pro;
 
 // The shared client retries with DEEPSEEK_PRO_MODEL. Keep retries on the same
@@ -246,12 +245,14 @@ async function reviewBatch(items) {
 async function mapConcurrent(items, worker, size, onSettled) {
   const output = new Array(items.length);
   let cursor = 0;
+  let settlementQueue = Promise.resolve();
   async function run() {
     while (cursor < items.length) {
       const current = cursor++;
       try { output[current] = await worker(items[current]); }
       catch (error) { output[current] = { error: error.message, items: items[current] }; }
-      await onSettled(output[current], current);
+      settlementQueue = settlementQueue.then(() => onSettled(output[current], current));
+      await settlementQueue;
     }
   }
   await Promise.all(Array.from({ length: Math.min(size, Math.max(1, items.length)) }, run));
@@ -324,6 +325,7 @@ function markdownReport(report) {
     lines.push(`- Claims: ${(item.evidence_claim_ids || []).join(", ") || "-"}`);
     lines.push(`- Rationale: ${item.rationale}`, "");
   }
+  while (lines.at(-1) === "") lines.pop();
   return `${lines.join("\n")}\n`;
 }
 

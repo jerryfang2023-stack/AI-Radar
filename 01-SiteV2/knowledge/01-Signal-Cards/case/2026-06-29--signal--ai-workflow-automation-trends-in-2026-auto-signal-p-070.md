@@ -2,7 +2,7 @@
 id: SIG-20260629-A17
 type: signal_card
 signal_type: case
-title: "2026 年 AI 工作流自动化趋势"
+title: "2026年AI工作流自动化趋势：塑造未来的10大趋势..."
 date: 2026-06-29
 status: published
 source_title: "AI Workflow Automation Trends in 2026: 10 Trends Shaping the Future of Work"
@@ -54,12 +54,12 @@ opportunity_signals:
 signal_owner: "AI Workflow Automation Trends in 2026"
 
 frontend:
-  displayTitle: "2026 年 AI 工作流自动化趋势"
+  displayTitle: "2026年AI工作流自动化趋势：塑造未来的10大趋势..."
   sourceLinks:
     - "https://www.cflowapps.com/ai-workflow-automation-trends"
 ---
 
-# 2026 年 AI 工作流自动化趋势
+# 2026年AI工作流自动化趋势：塑造未来的10大趋势...
 
 ## 新闻事实
 

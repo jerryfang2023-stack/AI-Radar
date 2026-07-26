@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "node": {
     "id": "TX-technology-video_generation",
@@ -20,6 +20,7 @@
       "EV-a354af52772334fd",
       "EV-26d2874c6ce028d6",
       "EV-6654f62015eff8e3",
+      "EV-50893df365a7097d",
       "EV-6fbbbfcdcec81df4",
       "EV-fd8ecce5de2f667d",
       "EV-5babb43f4b4d302f",
@@ -35,8 +36,9 @@
       "EN-2b6e51bec93e86c1",
       "EN-c9e6168149dd7cf6",
       "EN-92af3ce2fb97edf3",
+      "EN-3092ffb33792fe70",
+      "EN-94e7575ad6ff0db8",
       "EN-ec1c8f558ff61e34",
-      "EN-b0532e1af75cc4ab",
       "EN-01f1074bb52ff605",
       "EN-7ed9c9e7c260ed06",
       "EN-0e008e2c06144ec8",
@@ -300,6 +302,83 @@
       ],
       "sourceUrl": "https://ithome.com/0/979/535.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-50893df365a7097d",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "《第九区》导演尼尔·布洛姆坎普发布首部完全由 AI 视频生成技术制作的短片",
+      "originalTitle": "District 9 director Neill Blomkamp releases first short film made entirely with AI video generation",
+      "subject": "District 9 director Neill Blomkamp",
+      "action": "releases",
+      "object": "first short film made entirely with AI video generation",
+      "metrics": [],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "entityIds": [
+        "EN-3092ffb33792fe70",
+        "EN-94e7575ad6ff0db8"
+      ],
+      "entityNames": [
+        "District 9",
+        "Neill Blomkamp"
+      ],
+      "productName": "District 9",
+      "products": [
+        {
+          "name": "District 9",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Neill Blomkamp",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/district-9-director-neill-blomkamp-releases-first-short-film-made-entirely-with-ai-video-generation",
+      "publisher": "The Decoder AI News"
     },
     {
       "id": "EV-6fbbbfcdcec81df4",
@@ -943,6 +1022,7 @@
         "EV-989631c550d89726",
         "EV-94ad4a217508e6e0",
         "EV-b43f22d8bc7fec3f",
+        "EV-b888d3eb5f192649",
         "EV-f388f7ae2debeae8",
         "EV-d08935b06ed9e7bb",
         "EV-215f938a46d0b126",
@@ -985,6 +1065,7 @@
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
@@ -1054,7 +1135,8 @@
       ],
       "relatedEntityIds": [
         "EN-0c2f714483c404ad",
-        "EN-eec6044eb8e4941a"
+        "EN-eec6044eb8e4941a",
+        "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-26"
@@ -1168,6 +1250,48 @@
       "lastSeen": "2026-07-22"
     },
     {
+      "id": "EN-3092ffb33792fe70",
+      "name": "District 9",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-50893df365a7097d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-21"
+    },
+    {
+      "id": "EN-94e7575ad6ff0db8",
+      "name": "Neill Blomkamp",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-50893df365a7097d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-21"
+    },
+    {
       "id": "EN-ec1c8f558ff61e34",
       "name": "阿里通义实验室",
       "entityType": "organization_candidate",
@@ -1189,79 +1313,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-17",
       "lastSeen": "2026-07-21"
-    },
-    {
-      "id": "EN-b0532e1af75cc4ab",
-      "name": "Rime",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-ccbf97fdf4dc11d0",
-        "EV-64fb6d791e19d10a",
-        "EV-8cf189b07a257c1c",
-        "EV-463cb26b5e03c7f7",
-        "EV-f0fee44c1dfdcb09",
-        "EV-52bf48005db3461a",
-        "EV-a7e14985b924b464",
-        "EV-e7dcecaed5a0ee5b",
-        "EV-40d196865997025c",
-        "EV-736404028b8ad33e",
-        "EV-44a4e92c03a31ab1",
-        "EV-3b40ec144e5db22c",
-        "EV-c8928410f6c145eb",
-        "EV-67212040ee9cd7c8",
-        "EV-cfb7c4b4b765f53b",
-        "EV-ec711aed6721bb30",
-        "EV-d756f05478303505",
-        "EV-06b294f255c0087e",
-        "EV-dac8e2b1fb11403f",
-        "EV-06487af6e98ea491",
-        "EV-bb9ba11acf104db1",
-        "EV-bee410f8134cba5a",
-        "EV-e7b7df43970f7e2c",
-        "EV-025778b83c1b2ca9",
-        "EV-b84035029a63e52e",
-        "EV-b8bba030747fd3b6",
-        "EV-5babb43f4b4d302f",
-        "EV-9ae9aa86e51e64a2",
-        "EV-173d08643472aee5",
-        "EV-d064939235825765",
-        "EV-3ef3e18df61a00d8",
-        "EV-4bb5b24400e49ea4",
-        "EV-97a8d86baa7fffc4",
-        "EV-0ad758b04b9b5313",
-        "EV-591542ccc2de5be8",
-        "EV-dab4d3f2059e8880",
-        "EV-aaaa21ae510bc87e",
-        "EV-2f56b99f72ad6c4f",
-        "EV-33e7429a7bc94840",
-        "EV-cf0551afe16562ef",
-        "EV-c17f5a364ed6a3ac"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-industry-manufacturing",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-technology-mixture_of_experts",
-        "TX-technology-on_device",
-        "TX-technology-fine_tuning",
-        "TX-technology-open_weights",
-        "TX-technology-video_generation"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-03-11",
-      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-01f1074bb52ff605",
@@ -1397,7 +1448,8 @@
         "EV-cd067fa6f39fe828",
         "EV-dc3a5509a690a6b0",
         "EV-f3cc0845ce442e6b",
-        "EV-bee410f8134cba5a",
+        "EV-636c0bb7661201cc",
+        "EV-fe4eeb733d1682ed",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
         "EV-29e069ac093f0e34",
@@ -1462,7 +1514,6 @@
         "EV-22b8d155ce027905",
         "EV-3ef3e18df61a00d8",
         "EV-4bb5b24400e49ea4",
-        "EV-568d2aeab5234e48",
         "EV-0ad758b04b9b5313",
         "EV-c08837795f9e16d2",
         "EV-4a3cb762183581cd",
@@ -1525,14 +1576,12 @@
         "TX-use_case-content_creation"
       ],
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-6f216f2ea5b7a13e",
+        "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
         "EN-40f98159922ab514",
-        "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
@@ -1541,8 +1590,7 @@
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
-        "EN-bdfecbcd7dbf76d2",
-        "EN-2aae0de3f5530f08"
+        "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
       "lastSeen": "2026-07-26"

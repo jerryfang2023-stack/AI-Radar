@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-2ca3f7d58fdda0f5",
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-use_case-cybersecurity"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-e73b79a0b10f8cdb"
+    ],
     "firstSeen": "2026-07-22",
     "lastSeen": "2026-07-23",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-a376a7931b88e456"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -76,8 +80,52 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-e73b79a0b10f8cdb",
+      "name": "Cisco",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ea6abb5378846a71"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [
+        "EN-02be787a1aacea06",
+        "EN-2ca3f7d58fdda0f5"
+      ],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-23"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-a376a7931b88e456",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-e73b79a0b10f8cdb",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-2ca3f7d58fdda0f5",
+      "object_type": "entity",
+      "event_id": "EV-ea6abb5378846a71",
+      "claim_refs": [
+        "CL-3f0f1cc25f747501"
+      ],
+      "source_refs": [
+        "SA-7776efbc2defa223"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-use_case-cybersecurity",
@@ -158,9 +206,7 @@
         "EN-ac123e56b0168ec2",
         "EN-d5b8915a8c232010",
         "EN-2b6e51bec93e86c1",
-        "EN-6f216f2ea5b7a13e",
         "EN-31055a8d9856fce4",
-        "EN-204d4b18c9d78e88",
         "EN-7839fb10a8f14c70",
         "EN-ea3bd73e2b506e00",
         "EN-52fc33ae4d101a5d",

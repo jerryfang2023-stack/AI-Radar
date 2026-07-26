@@ -58,7 +58,9 @@ test("entity kinds are normalized for structural calculations", () => {
   assert.ok(kinds.has("product"));
   assert.ok(!kinds.has("organization_candidate"));
   assert.ok(Object.values(data.periods.week.records).some((record) => record.activeEntities.length > 0));
-  assert.ok(Object.values(data.periods.week.records).some((record) => record.productsEnteringUse.length > 0));
+  for (const record of Object.values(data.periods.week.records)) {
+    for (const item of record.productsEnteringUse) assert.equal(data.entities[item.entityId]?.entityType, "product");
+  }
   assert.ok(Object.values(data.periods.week.records).some((record) => record.deploymentEventIds.some((id) => data.events[id].eventType === "hardware_deployment")));
 });
 

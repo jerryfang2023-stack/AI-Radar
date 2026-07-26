@@ -2,10 +2,10 @@
 schema_version: raw-evidence-v2
 raw_id: R-009
 title: "Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Service Agreement - SHARON AI"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
-title_translation_model: not_applicable
+title_zh: "Sharon AI 签署价值 13.2 亿美元的五年期云计算服务协议"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://sharonai.com/press-releases/sharon-ai-announces-us1-32-billion-five-year-cloud-computing-service-agreement/"
 canonical_url: "https://sharonai.com/press-releases/sharon-ai-announces-us1-32-billion-five-year-cloud-computing-service-agreement"
 source_name: "keyword search / Anysearch"

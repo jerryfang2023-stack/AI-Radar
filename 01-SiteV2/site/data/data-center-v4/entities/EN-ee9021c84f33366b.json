@@ -4,37 +4,37 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
-    "id": "EN-f5b119e89624f88e",
-    "name": "AWS Marketplace",
-    "entityType": "product_candidate",
-    "typeLabel": "产品、模型与服务",
+    "id": "EN-ee9021c84f33366b",
+    "name": "Adobe",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "verified",
+    "verificationStatus": "candidate",
     "datasetScopes": [
       "canonical"
     ],
     "eventIds": [
-      "EV-d064939235825765"
+      "EV-e02d3b5de666f349"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-06-14",
-    "lastSeen": "2026-06-14",
+    "firstSeen": "2026-07-21",
+    "lastSeen": "2026-07-21",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
-        "EV-d064939235825765"
+        "EV-e02d3b5de666f349"
       ],
       "hardware": [],
       "organizationPeople": [],
@@ -42,28 +42,19 @@
     },
     "timeline": [
       {
-        "id": "EV-d064939235825765",
-        "dataDate": "2026-06-14",
-        "date": "2026-06-14",
+        "id": "EV-e02d3b5de666f349",
+        "dataDate": "2026-07-21",
+        "date": "2026-07-21",
         "eventType": "product_release",
         "eventTypeLabel": "产品发布",
         "eventGroup": "模型、产品与服务",
         "status": "announced",
         "statusLabel": "已公布",
-        "title": "SambaNova 在 AWS 市场推出其 AI 平台",
-        "displayTags": [
-          {
-            "dimensionId": "product_form",
-            "id": "enterprise_platform",
-            "dimensionName": "产品形态",
-            "name": "企业 AI 平台"
-          }
-        ],
+        "title": "Adobe 的“自然外观”相机应用拥抱生成式 AI",
+        "displayTags": [],
         "entityIds": [
-          "EN-dfc0fdff7af68ed2",
-          "EN-6f7ac1823da81d2e",
-          "EN-b0532e1af75cc4ab",
-          "EN-f5b119e89624f88e"
+          "EN-ee9021c84f33366b",
+          "EN-cbc4f487f5f75626"
         ]
       }
     ],

@@ -35,6 +35,32 @@ const explicitAcceptedDecisionIds = new Set([
 ]);
 const organizationIdentityOverrides = [
   {
+    entity_id: "EN-8d323d8bba783aa3",
+    canonical_name: "Google Cloud",
+    aliases: ["Cloud"],
+    rationale: "accepted Claims 将 Google Cloud 明确作为芯片、规范与平台的发布主体，纠正原始 Cloud 片段并按机构实体保留。"
+  },
+  {
+    entity_id: "EN-d9b1d7819af92e77",
+    merge_into_entity_id: "EN-8d323d8bba783aa3",
+    canonical_name: "Google Cloud",
+    aliases: [],
+    rationale: "当前批次抽取出的 Google Cloud 机构候选与已复核的 Google Cloud 稳定实体重复，合并到既有实体 ID。"
+  },
+  {
+    entity_id: "EN-6f21a653c48f4f19",
+    canonical_name: "努比亚",
+    aliases: ["Nubia"],
+    rationale: "Nubia 与努比亚是同一手机厂商的中英文名称，统一使用覆盖历史事件更完整的稳定实体 ID。"
+  },
+  {
+    entity_id: "EN-6ef7552b4631e789",
+    merge_into_entity_id: "EN-6f21a653c48f4f19",
+    canonical_name: "努比亚",
+    aliases: ["Nubia"],
+    rationale: "中文名努比亚与 Nubia 重复，合并到覆盖历史事件更完整的稳定实体 ID。"
+  },
+  {
     entity_id: "EN-047364b9be67f665",
     canonical_name: "阿里巴巴",
     aliases: ["Alibaba", "Alibaba Group", "阿里"],
@@ -200,6 +226,21 @@ function exactNameSupported(name, claimRefs, claimsById) {
   return claimRefs.some((claimRef) => key(quotedText(claimsById.get(claimRef))).includes(needle));
 }
 
+function matchingClaimRefs(claimsById, patterns) {
+  return [...claimsById.entries()]
+    .filter(([, claim]) => patterns.every((pattern) => pattern.test(quotedText(claim))))
+    .map(([claimId]) => claimId)
+    .sort();
+}
+
+function entireLaunchClaimRefs(claimsById) {
+  return matchingClaimRefs(claimsById, [
+    /Thomas Dohmke/iu,
+    /\bEntire\b/iu,
+    /\blaunch(?:es|ed)?\b|\bannounced the launch\b/iu
+  ]);
+}
+
 function obviousNonProduct(name) {
   const value = clean(name);
   return /(?:报告|report)$/iu.test(value)
@@ -274,6 +315,11 @@ function currentDecision(review, claimsById) {
 }
 
 function supplementalClaimEntities(claimsById) {
+  const entireClaimRefs = entireLaunchClaimRefs(claimsById);
+  const googleCloudClaimRefs = matchingClaimRefs(claimsById, [
+    /Google Cloud/iu,
+    /\b(?:launch(?:es|ed|ing)?|announc(?:e|ed|es)|partnership|collaboration)\b/iu
+  ]).slice(0, 6);
   const rows = [
     {
       entity_id: "EN-ade7ba309eb7a3bf",
@@ -283,20 +329,20 @@ function supplementalClaimEntities(claimsById) {
       rationale: "accepted Claim 精确写明 Karamo Brown 推出健康应用 Kē，补齐此前被标题抽取遗漏的产品实体。"
     },
     {
-      entity_id: "EN-8da473e7fc7e1edf",
-      name: "Entire CLI",
-      catalog_type: "product",
-      company_names: ["Entire"],
-      claim_refs: ["CL-f449cdd84412379e"],
-      rationale: "accepted Claim 精确写明 Entire 发布 Entire CLI，补齐公司首个产品实体及发布归属。"
-    },
-    {
       entity_id: "EN-0decbc3b45f73b2b",
       name: "Entire",
       catalog_type: "company",
       company_names: [],
-      claim_refs: ["CL-b967f75e7c42d240"],
+      claim_refs: entireClaimRefs,
       rationale: "accepted Claim 精确写明 Entire 是 Thomas Dohmke 创立的新公司，保留为公司实体。"
+    },
+    {
+      entity_id: "EN-d9b1d7819af92e77",
+      name: "Google Cloud",
+      catalog_type: "company",
+      company_names: [],
+      claim_refs: googleCloudClaimRefs,
+      rationale: "accepted Claims 精确写明 Google Cloud 是商业合作与产品发布主体，补齐当前批次产生的机构候选复核。"
     },
     {
       entity_id: "EN-50ba7ff15827787b",
@@ -457,6 +503,37 @@ function enrichClaimBackedPeople(decisions, claimsById) {
   }
 }
 
+function refreshCurrentClaimEvidence(decisionById, claimsById) {
+  const thomasDohmke = decisionById.get("EN-45cbca5f78f1ef44");
+  const claimRefs = entireLaunchClaimRefs(claimsById);
+  if (!thomasDohmke || !claimRefs.length) return;
+  decisionById.set(thomasDohmke.entity_id, {
+    ...thomasDohmke,
+    evidence: {
+      ...thomasDohmke.evidence,
+      claim_refs: claimRefs
+    }
+  });
+}
+
+function applyProductOwnershipOverrides(decisionById, claimsById) {
+  const overrides = [{
+    entity_id: "EN-16fe95bd48dbf178",
+    company_name: "阿里云",
+    rationale: "accepted Claim 标题精确写明阿里云推出 QoderWork“峰谷 Token”，产品归属按直接发布主体阿里云记录。"
+  }];
+  for (const override of overrides) {
+    const decision = decisionById.get(override.entity_id);
+    const claimRefs = decision?.evidence?.claim_refs || [];
+    if (!decision || decision.canonical?.catalog_type !== "product" || !exactNameSupported(override.company_name, claimRefs, claimsById)) {
+      throw new Error(`product_ownership_override_not_claim_backed:${override.entity_id}`);
+    }
+    decision.action = "correct";
+    decision.canonical = { ...decision.canonical, company_names: [override.company_name] };
+    decision.rationale = `${decision.rationale}；${override.rationale}`;
+  }
+}
+
 function resolveMergeChains(decisions, currentIds) {
   const byId = new Map(decisions.map((item) => [item.entity_id, item]));
   for (const decision of decisions.filter((item) => item.action === "merge")) {
@@ -550,8 +627,14 @@ function main() {
   }
   const supplemental = supplementalClaimEntities(claimsById);
   for (const decision of supplemental) decisionById.set(decision.entity_id, decision);
+  refreshCurrentClaimEvidence(decisionById, claimsById);
   applyOrganizationIdentityOverrides(decisionById);
+  applyProductOwnershipOverrides(decisionById, claimsById);
   for (const manualQuarantine of [
+    {
+      entity_id: "EN-8da473e7fc7e1edf",
+      rationale: "当前 accepted Claims 不再包含 Entire CLI 的精确产品身份，无法维持来源可追溯的产品实体，保守隔离。"
+    },
     {
       entity_id: "EN-5ce177312903c604",
       rationale: "“US AI”仅来自“US AI regulatory drama”标题片段，accepted Claim 实际产品为 GPT-5.6，不构成独立产品实体。"

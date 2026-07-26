@@ -2,10 +2,10 @@
 schema_version: raw-evidence-v2
 raw_id: R-092
 title: "District 9 director Neill Blomkamp releases first short film made entirely with AI video generation"
-title_zh: ""
-title_translation_status: needs_ingestion_translation
-title_translation_method: title_translation_generator_failed
-title_translation_model: not_applicable
+title_zh: "《第九区》导演尼尔·布洛姆坎普发布首部完全由 AI 视频生成技术制作的短片"
+title_translation_status: "translated"
+title_translation_method: "source_title_translation_db"
+title_translation_model: "not_applicable"
 original_url: "https://the-decoder.com/district-9-director-neill-blomkamp-releases-first-short-film-made-entirely-with-ai-video-generation/"
 canonical_url: "https://the-decoder.com/district-9-director-neill-blomkamp-releases-first-short-film-made-entirely-with-ai-video-generation"
 source_name: "The Decoder AI News"
