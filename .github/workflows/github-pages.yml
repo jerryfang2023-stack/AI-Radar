@@ -116,6 +116,14 @@ jobs:
           });
           NODE
 
+      - name: Install validation dependencies
+        if: steps.deployment-gate.outputs.deploy == 'true'
+        run: npm ci --ignore-scripts
+
+      - name: Prepare factual catalog validation tables
+        if: steps.deployment-gate.outputs.deploy == 'true'
+        run: node agent-workflow/tools/sync-light-data-lake.mjs --v4-only=true --duckdb=skip
+
       - name: Configure GitHub Pages
         if: steps.deployment-gate.outputs.deploy == 'true'
         uses: actions/configure-pages@v6
