@@ -1,0 +1,2510 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-09",
+    "generated_at": "2026-07-26T15:09:48.934Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 3,
+      "auto_published": 3,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-94ab376337e4045f",
+      "triggered_by_event_id": "EV-0e4bddfd5c129618",
+      "as_of_date": "2026-06-09",
+      "company": {
+        "entity_id": "EN-b5251b35f15bedc4",
+        "name": "Moonshot AI",
+        "full_name": "Moonshot AI",
+        "website": "",
+        "summary": "月之暗面（Moonshot AI）是一家总部位于北京的人工智能初创公司，由杨植麟等清华校友于2023年3月创立，以开发Kimi聊天机器人及Kimi系列开源大语言模型而闻名，致力于实现通用人工智能（AGI）。",
+        "headquarters": "北京",
+        "founders": [
+          {
+            "name": "杨植麟 (Yang Zhilin)",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "Moonshot AI (月之暗面, “Dark Side of the Moon”) launched in March 2023, co-founded by Yang Zhilin, a former Google Brain and Meta AI researcher, with Tsinghua University classmates Zhou Xinyu and Wu Yuxin."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "周昕宇 (Zhou Xinyu)",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "co-founded by Yang Zhilin ... with Tsinghua University classmates Zhou Xinyu and Wu Yuxin."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吴育昕 (Wu Yuxin)",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "co-founded by Yang Zhilin ... with Tsinghua University classmates Zhou Xinyu and Wu Yuxin."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0199034a5417695f",
+            "quote": "Moonshot AI (月之暗面, “Dark Side of the Moon”) launched in March 2023, co-founded by Yang Zhilin, a former Google Brain and Meta AI researcher, with Tsinghua University classmates Zhou Xinyu and Wu Yuxin."
+          },
+          {
+            "source_id": "FISRC-09e367eaebf7a1b4",
+            "quote": "The founder, Yang Zhilin, is a former Tsinghua University professor who worked at Google Brain and Meta before co-founding Moonshot in March 2023 with Tsinghua alumni who were his university bandmates."
+          }
+        ]
+      },
+      "financing": {
+        "round": "新一轮融资",
+        "amount": "20亿美元",
+        "total_raised": "39亿美元（截至2026年5月的六个月内）",
+        "announced_at": "2026-06-08",
+        "investors": [
+          {
+            "name": "腾讯 (Tencent)",
+            "role": "2024年8月轮次领投；后续轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "Tencent, which joined in August 2024."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高榕资本 (Gaorong Capital)",
+            "role": "2024年8月轮次领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "Aug 2024 | Tencent, Gaorong Capital | $300 million | $3.3 billion"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IDG资本 (IDG Capital)",
+            "role": "2025年12月轮次领投；既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "Dec 2025 | IDG Capital | $500 million | $4.3 billion"
+              },
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "HongShan (formerly Sequoia China) and IDG Capital have remained part of the institutional base."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "五源资本 (5Y Capital)",
+            "role": "2026年2月轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "Feb 2026 | Alibaba, Tencent, 5Y Capital | $700 million+ | $10 billion"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "美团龙珠投资 (Meituan Long-Z Investments)",
+            "role": "2026年5月轮次领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "May 2026 | Meituan Long-Z Investments | $2 billion | $20 billion"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "CPE源峰 (CPE Yuanfeng)",
+            "role": "2026年5月轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "The May 2026 round added two names not previously on the cap table: China Mobile, a state-backed telecom, and CPE Yuanfeng, a private equity vehicle affiliated with CITIC Group."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "红杉中国 (HongShan)",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0199034a5417695f",
+                "quote": "HongShan (formerly Sequoia China) and IDG Capital have remained part of the institutional base."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "清华资本 (Tsinghua Capital)",
+            "role": "2026年5月轮次参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d0328bd4d2255697",
+                "quote": "Also participating were Tsinghua Capital, China Mobile and CPE Yuanfeng, according to the post."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0363504c27b067ae",
+            "quote": "Moonshot AI, the Chinese company behind the Kimi chatbot, is looking for a valuation of up to $30 billion in a new funding round."
+          },
+          {
+            "source_id": "FISRC-0199034a5417695f",
+            "quote": "Total raised in the six months through May 7, 2026 reached $3.9 billion, per Huafeng Capital."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Kimi K2.6 模型",
+          "description": "一个拥有1万亿总参数、每次推理激活320亿参数的开源大语言模型，支持262,000个token的上下文窗口，并采用Agent Swarm架构，可协调多达300个专用子智能体。",
+          "target_customers": "开发者及企业客户",
+          "features": [
+            "1万亿总参数",
+            "320亿激活参数",
+            "262K上下文窗口",
+            "Agent Swarm架构",
+            "开源（Modified MIT许可）"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "Kimi K2.6, published April 20, 2026, under a Modified MIT license, has 1 trillion total parameters with 32 billion active per inference, a 262,000-token context window, and an Agent Swarm architecture able to coordinate up to 300 specialized sub-agents executing up to 4,000 steps in a single autonomous run."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kimi Work",
+          "description": "基于K2.6模型构建的通用AI智能体。",
+          "target_customers": "企业及个人用户",
+          "features": [
+            "通用任务执行"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09e367eaebf7a1b4",
+              "quote": "This month, Moonshot launched Kimi Work, a general-purpose AI agent built on the K2.6 models."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Cursor",
+          "industry": "开发者工具",
+          "use_case": "K2.5模型为Cursor Composer 2提供底层模型支持，用于AI辅助编程。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "A Q2 2026 landscape analysis from Digital Applied places K2.5 as the base model powering Cursor Composer 2, the AI coding tool, which scored 73.7% on SWE-bench Multilingual at launch."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "字节跳动 (ByteDance)",
+          "product": "豆包 (Doubao)",
+          "scenario": "面向消费者的AI聊天机器人及企业级AI服务，深度集成于抖音等字节跳动旗下应用生态。",
+          "target_customer": "消费者及企业客户",
+          "funding_summary": "",
+          "core_difference": "豆包拥有345M月活用户，通过字节跳动现有应用生态分发，无需用户单独下载；Kimi作为独立聊天机器人，峰值月活为36M，需要用户主动下载并付费。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "A Kimi subscription requires a deliberate download and a payment decision. ByteDance can surface Doubao inside an existing app session for any of its 345 million users without asking them to change apps."
+            }
+          ]
+        },
+        {
+          "name": "DeepSeek",
+          "product": "DeepSeek V3 / R1",
+          "scenario": "以极低计算成本实现高性能的开源模型，面向研究社区和开发者。",
+          "target_customer": "开发者及企业客户",
+          "funding_summary": "据报道正以约450亿美元估值进行首轮外部融资。",
+          "core_difference": "DeepSeek强调研究产出和开源发布，尚未进行外部融资；Moonshot则专注于消费产品和商业收入，ARR已超过2亿美元。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09e367eaebf7a1b4",
+              "quote": "Unlike DeepSeek, which has emphasised research output and open-source releases, Moonshot has focused on consumer product and commercial revenue."
+            }
+          ]
+        },
+        {
+          "name": "MiniMax",
+          "product": "MiniMax",
+          "scenario": "AI模型及应用，已于2026年1月在香港上市。",
+          "target_customer": "消费者及企业客户",
+          "funding_summary": "2026年1月香港IPO，市值约330亿美元。",
+          "core_difference": "MiniMax已上市，市值约330亿美元，略高于Moonshot本轮寻求的300亿美元估值；MiniMax近期销售额翻倍，已进入公开市场。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09e367eaebf7a1b4",
+              "quote": "Publicly listed MiniMax, which recently doubled its sales, trades at about $20 billion in Hong Kong and is eyeing a Shanghai listing."
+            }
+          ]
+        }
+      ],
+      "metrics": [],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Moonshot能否在开源模型技术优势和开发者采纳速度的基础上，将ARR从2亿美元在短期内提升至20亿美元以上，以支撑其150倍ARR的估值倍数。当前估值完全依赖于对未来收入指数级增长的预期，而非已实现的财务表现。已验证的信号包括：ARR在两个月内从1亿美元翻倍至2亿美元、K2.6模型在OpenRouter上排名全球第二、以及K2.5模型被Cursor Composer 2采用为底层模型。然而，这些信号仅证明了产品市场匹配和开发者吸引力，尚未证明其能在中国企业市场中突破阿里巴巴、字节跳动和DeepSeek合计超过70%的市场份额壁垒。300亿美元估值要求未来两到三年近乎完美的执行，而公司尚未披露其烧钱速度，且仍依赖从阿里巴巴租用云计算资源。",
+        "validated_signals": [
+          "ARR在2026年4月达到2亿美元，两个月内翻倍",
+          "K2.6模型在OpenRouter上排名全球第二",
+          "K2.5模型被Cursor Composer 2采用为底层模型",
+          "Mooncake推理平台每日处理1000亿token，获USENIX FAST最佳论文奖"
+        ],
+        "risks": [
+          "150倍ARR的估值倍数要求ARR在短期内增长10倍至20亿美元，这一增速在任何国家的AI初创公司中都尚未实现",
+          "公司在中国企业AI token消费市场中未进入前三，面临阿里巴巴、字节跳动和DeepSeek合计超过70%市场份额的竞争压力",
+          "开源策略既是差异化优势也是脆弱点：竞争对手可以复制架构、压低价格，并利用其他业务的现金流吸收成本"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "sector": "人工智能基础模型与AI智能体"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Kimi K2.6 模型",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "Kimi K2.6, published April 20, 2026, under a Modified MIT license, has 1 trillion total parameters with 32 billion active per inference, a 262,000-token context window, and an Agent Swarm architecture able to coordinate up to 300 specialized sub-agents executing up to 4,000 steps in a single autonomous run."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Kimi Work",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09e367eaebf7a1b4",
+              "quote": "This month, Moonshot launched Kimi Work, a general-purpose AI agent built on the K2.6 models."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "杨植麟 (Yang Zhilin)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "Moonshot AI (月之暗面, “Dark Side of the Moon”) launched in March 2023, co-founded by Yang Zhilin, a former Google Brain and Meta AI researcher, with Tsinghua University classmates Zhou Xinyu and Wu Yuxin."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "周昕宇 (Zhou Xinyu)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "co-founded by Yang Zhilin ... with Tsinghua University classmates Zhou Xinyu and Wu Yuxin."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "吴育昕 (Wu Yuxin)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "co-founded by Yang Zhilin ... with Tsinghua University classmates Zhou Xinyu and Wu Yuxin."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "腾讯 (Tencent)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "Tencent, which joined in August 2024."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "高榕资本 (Gaorong Capital)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "Aug 2024 | Tencent, Gaorong Capital | $300 million | $3.3 billion"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IDG资本 (IDG Capital)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "Dec 2025 | IDG Capital | $500 million | $4.3 billion"
+            },
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "HongShan (formerly Sequoia China) and IDG Capital have remained part of the institutional base."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "五源资本 (5Y Capital)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "Feb 2026 | Alibaba, Tencent, 5Y Capital | $700 million+ | $10 billion"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "美团龙珠投资 (Meituan Long-Z Investments)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "May 2026 | Meituan Long-Z Investments | $2 billion | $20 billion"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CPE源峰 (CPE Yuanfeng)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "The May 2026 round added two names not previously on the cap table: China Mobile, a state-backed telecom, and CPE Yuanfeng, a private equity vehicle affiliated with CITIC Group."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "红杉中国 (HongShan)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "HongShan (formerly Sequoia China) and IDG Capital have remained part of the institutional base."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "清华资本 (Tsinghua Capital)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d0328bd4d2255697",
+              "quote": "Also participating were Tsinghua Capital, China Mobile and CPE Yuanfeng, according to the post."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Cursor",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "A Q2 2026 landscape analysis from Digital Applied places K2.5 as the base model powering Cursor Composer 2, the AI coding tool, which scored 73.7% on SWE-bench Multilingual at launch."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "字节跳动 (ByteDance)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0199034a5417695f",
+              "quote": "A Kimi subscription requires a deliberate download and a payment decision. ByteDance can surface Doubao inside an existing app session for any of its 345 million users without asking them to change apps."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "DeepSeek",
+          "canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_name": "DeepSeek",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09e367eaebf7a1b4",
+              "quote": "Unlike DeepSeek, which has emphasised research output and open-source releases, Moonshot has focused on consumer product and commercial revenue."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "MiniMax",
+          "canonical_entity_id": "EN-e1517be14d06cdb7",
+          "canonical_name": "MiniMax",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-09e367eaebf7a1b4",
+              "quote": "Publicly listed MiniMax, which recently doubled its sales, trades at about $20 billion in Hong Kong and is eyeing a Shanghai listing."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-0e4bddfd5c129618",
+          "date": "2026-06-08",
+          "title": "月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍",
+          "amount": "$30 billion",
+          "source_refs": [
+            "SA-0ad771754278ac30"
+          ]
+        },
+        {
+          "event_id": "EV-c5d7d88d1aef8edb",
+          "date": "2026-05-07",
+          "title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
+          "amount": "20亿",
+          "source_refs": [
+            "SA-73107fccccac2fc2"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-0363504c27b067ae",
+          "source_url": "https://the-decoder.com/moonshot-ai-targets-a-30-billion-valuation-more-than-six-times-its-late-2025-worth",
+          "title": "月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍",
+          "publisher": "The Decoder：AI News（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-09T02:33:36.558Z",
+          "content_hash": "9818caa89ec049a5",
+          "source_artifact_id": "SA-0ad771754278ac30",
+          "raw_id": "RAW-abb93216a1f81545"
+        },
+        {
+          "source_id": "FISRC-0199034a5417695f",
+          "source_url": "https://otontechnology.com/moonshot-ai-30-billion-valuation-funding-round/",
+          "title": "Moonshot AI's $30B Ask: What's Behind China's AI Bet",
+          "publisher": "otontechnology.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:25:17.772Z",
+          "content_hash": "fca357e99fd49983",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d0328bd4d2255697",
+          "source_url": "https://www.msn.com/en-us/money/companies/china-s-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/ar-AA22BVmf",
+          "title": "MSN",
+          "publisher": "msn.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:25:22.174Z",
+          "content_hash": "45a6d86c94ff3a75",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-09e367eaebf7a1b4",
+          "source_url": "https://thenextweb.com/news/moonshot-ai-kimi-30-billion-valuation-china-ai-race",
+          "title": "Moonshot AI seeks $30bn valuation, 7x jump in six months",
+          "publisher": "thenextweb.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:25:22.920Z",
+          "content_hash": "56dcb8a8a883ab88",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:26:34.544Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:26:34.544Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-1186b430ba0e878a",
+      "triggered_by_event_id": "EV-c5d7d88d1aef8edb",
+      "as_of_date": "2026-06-09",
+      "company": {
+        "entity_id": "EN-481243d2f2a235c1",
+        "name": "月之暗面",
+        "full_name": "月之暗面",
+        "website": "",
+        "summary": "月之暗面是一家成立于2023年4月的国内头部AI大模型创业公司，由杨植麟创办，专注于通用人工智能（AGI）领域，以长文本处理能力和Agent技术为核心突破方向，旗下产品Kimi智能助手在全球市场具备竞争力。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "杨植麟",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "月之暗面 CEO杨植麟在全员信中表示，已完成5亿美元 C轮融资"
+              },
+              {
+                "source_id": "FISRC-b8e88335555103fa",
+                "quote": "2023年3月1日，年轻的“天才AI科学家”杨植麟创办了他的第二家AI公司月之暗面。"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "周昕宇",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b8e88335555103fa",
+                "quote": "月之暗面的两位联合创始人周昕宇和吴育昕也均出身清华大学"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "吴育昕",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b8e88335555103fa",
+                "quote": "月之暗面的两位联合创始人周昕宇和吴育昕也均出身清华大学"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "300余人",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6432228f8a95c226",
+              "quote": "黄震昕特别提到，月之暗面团队规模仅300余人"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c268e82669700804",
+            "quote": "月之暗面（Kimi）已完成新一轮约20亿美元融资，投后估值超过200亿美元"
+          },
+          {
+            "source_id": "FISRC-a787070d4179477c",
+            "quote": "月之暗面成立于2023年4月"
+          }
+        ]
+      },
+      "financing": {
+        "round": "新一轮",
+        "amount": "约20亿美元",
+        "total_raised": "超39亿美元",
+        "announced_at": "2026-05-07",
+        "investors": [
+          {
+            "name": "美团龙珠",
+            "role": "本轮领投；A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c268e82669700804",
+                "quote": "本轮由美团龙珠领投"
+              },
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "水木资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c268e82669700804",
+                "quote": "水木资本、中国移动、CPE（中信产业基金）等参投"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "中国移动",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c268e82669700804",
+                "quote": "水木资本、中国移动、CPE（中信产业基金）等参投"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "CPE（中信产业基金）",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c268e82669700804",
+                "quote": "水木资本、中国移动、CPE（中信产业基金）等参投"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "红杉中国",
+            "role": "天使轮参投；A+轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本"
+              },
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "真格基金",
+            "role": "天使轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "今日资本",
+            "role": "天使轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "砺思资本",
+            "role": "天使轮参投；A+轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本"
+              },
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "襄禾资本",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "蓝驰创投",
+            "role": "A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "阿里巴巴",
+            "role": "A+轮领投；B轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本"
+              },
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等"
+              }
+            ],
+            "entity_id": "EN-047364b9be67f665"
+          },
+          {
+            "name": "小红书",
+            "role": "A+轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "美团",
+            "role": "A+轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本"
+              }
+            ],
+            "entity_id": "EN-cd6362472aea60ef"
+          },
+          {
+            "name": "腾讯投资",
+            "role": "B轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "高榕创投",
+            "role": "B轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "三七互娱",
+            "role": "B轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "五源资本",
+            "role": "C轮（前序）参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5d82f5dc9fc96ce5",
+                "quote": "2025年10月C轮（前序），数亿美元，传闻腾讯领投，五源资本等参与（未完全披露）"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c268e82669700804",
+            "quote": "月之暗面（Kimi）已完成新一轮约20亿美元融资，投后估值超过200亿美元。本轮由美团龙珠领投，水木资本、中国移动、CPE（中信产业基金）等参投。"
+          },
+          {
+            "source_id": "FISRC-a787070d4179477c",
+            "quote": "将此次最新轮次计算在内，月之暗面累计融资总额已超39亿美元（约合人民币265亿元）"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Kimi智能助手",
+          "description": "月之暗面推出的首款大模型产品，以超长无损上下文处理能力和Agent能力为核心，支持多模态交互与复杂任务执行，面向全球C端用户。",
+          "target_customers": "全球C端用户、开发者、专业用户",
+          "features": [
+            "支持20万汉字无损上下文输入",
+            "Agent集群能力，可调度多达100个分身并行处理1500个步骤",
+            "K2.5模型在OpenRouter平台调用量登顶全球前三"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b8e88335555103fa",
+              "quote": "2023年10月，月之暗面推出首款大模型产品Kimi智能助手。"
+            },
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "到2026年1月，Kimi K2.5问世，进一步进化出Agent集群能力，可以根据任务需求调度多达100个分身，并行处理1500个步骤"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kimi K2.5",
+          "description": "开源大模型，具备Agent集群能力，在代码、推理和智能体能力上达到全球领先水平，被Cursor等国际产品嵌入作为底层模型。",
+          "target_customers": "全球开发者、企业客户",
+          "features": [
+            "Agent集群能力，支持300个子Agent并行协作",
+            "开源发布，海外收入超过国内收入",
+            "在OpenRouter平台Token调用量稳居前列"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "2026年1月，Kimi K2.5开源发布，迅速成为全球开发者生态中的重要底层能力。"
+            },
+            {
+              "source_id": "FISRC-6432228f8a95c226",
+              "quote": "支持300个子Agent并行协作的集群系统，显著提升多Agent系统协作上限。"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Kimi K2.6",
+          "description": "最新发布并开源的大模型，在代码、长程任务执行和Agent集群能力等方面全面升级。",
+          "target_customers": "全球开发者、企业客户",
+          "features": [
+            "代码能力升级",
+            "长程任务执行增强",
+            "Agent集群能力升级"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a787070d4179477c",
+              "quote": "在上个月，月之暗面又发布并开源Kimi K2.6模型，在代码、长程任务执行和Agent集群能力等方面全面升级。"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Cursor",
+          "industry": "开发者工具",
+          "use_case": "将Kimi K2.5作为底层基座模型，通过RL微调后嵌入其代码编辑器产品Composer 2中，为开发者提供代码生成与调试服务。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "开发者Fynn在调试Cursor API时，发现返回的模型ID赫然写着kimi-k2p5-rl-0317-s515-fast。这意味着，Cursor此前宣传的自研模型Composer 2，实际上就是Kimi K2.5加了一层RL微调。"
+            }
+          ]
+        },
+        {
+          "name": "Perplexity",
+          "industry": "AI搜索",
+          "use_case": "将Kimi K2.5嵌入作为底层模型之一，用于增强搜索与问答能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "在Cursor、Perplexity等国际产品中，K2.5被嵌入作为底层模型之一。"
+            }
+          ]
+        },
+        {
+          "name": "OpenClaw",
+          "industry": "AI Agent平台",
+          "use_case": "通过Kimi K2.5 Thinking模型驱动Agent任务执行，贡献了Kimi K2.5在海外市场约四分之一的Token消耗。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "OpenRouter数据显示，OpenClaw几乎撑起了Kimi K2.5在海外市场四分之一的Token消耗。"
+            }
+          ]
+        },
+        {
+          "name": "财新传媒",
+          "industry": "媒体",
+          "use_case": "与月之暗面合作，为用户提供更专业、优质的财经信息分析服务。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ddf17e098255b40e",
+              "quote": "跟财新传媒达成合作，为用户提供更专业、优质的财经信息。"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "MiniMax",
+          "product": "MaxClaw",
+          "scenario": "Agent任务执行，对标Kimi Claw的云端部署方案",
+          "target_customer": "开发者和C端用户",
+          "funding_summary": "累计融资约150亿元人民币",
+          "core_difference": "MiniMax转向视频/语音赛道，而月之暗面坚持基座模型与Agent方向；月之暗面累计融资超39亿美元，资金储备远超MiniMax。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "MiniMax迅速推出MaxClaw，智谱上线AutoClaw，阿里、腾讯、百度等大厂也纷纷下场"
+            },
+            {
+              "source_id": "FISRC-a787070d4179477c",
+              "quote": "MiniMax累计融资约为150亿元人民币，智谱约为130亿元人民币。"
+            }
+          ]
+        },
+        {
+          "name": "智谱AI",
+          "product": "AutoClaw",
+          "scenario": "Agent任务执行，对标Kimi Claw的云端部署方案",
+          "target_customer": "开发者和企业客户",
+          "funding_summary": "累计融资约130亿元人民币，2026年1月登陆港股，市值突破3000亿港元",
+          "core_difference": "智谱AI深耕金融政企领域，而月之暗面聚焦To C和开源生态；月之暗面海外收入已超过国内收入，智谱以国内市场为主。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "智谱上线AutoClaw"
+            },
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "智谱与MiniMax在2026年1月相继登陆港股，上市后股价大幅走高，市值双双突破3000亿港元。"
+            }
+          ]
+        },
+        {
+          "name": "DeepSeek",
+          "product": "DeepSeek V3/R1",
+          "scenario": "低成本高性能开源模型，以极低推理成本吸引全球开发者",
+          "target_customer": "全球开发者",
+          "funding_summary": "",
+          "core_difference": "DeepSeek以极低训练成本（V3约560万美元）和API调用成本著称，月之暗面K2 Thinking训练成本据称更低（460万美元），且API输入成本与DeepSeek R1持平（0.15美元/百万Token）；月之暗面更强调Agent集群和长文本能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ddf17e098255b40e",
+              "quote": "CNBC报道称，其训练成本仅为460万美元，比年初引发轰动的DeepSeek V3（约560万美元）还低。"
+            },
+            {
+              "source_id": "FISRC-ddf17e098255b40e",
+              "quote": "Kimi K2 Thinking的API调用成本确实不高，输入和输出成本分别为0.15美元/百万Token和2.5美元/百万Token，与DeepSeek R1持平"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "约20亿美元",
+          "observed_at": "2026-05-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c268e82669700804",
+              "quote": "月之暗面（Kimi）已完成新一轮约20亿美元融资"
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "超过200亿美元",
+          "observed_at": "2026-05-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c268e82669700804",
+              "quote": "投后估值超过200亿美元"
+            }
+          ]
+        },
+        {
+          "label": "累计融资总额",
+          "value": "超39亿美元（约265亿元人民币）",
+          "observed_at": "2026-05-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a787070d4179477c",
+              "quote": "将此次最新轮次计算在内，月之暗面累计融资总额已超39亿美元（约合人民币265亿元）"
+            }
+          ]
+        },
+        {
+          "label": "年度经常性收入（ARR）",
+          "value": "突破2亿美元",
+          "observed_at": "2026-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a787070d4179477c",
+              "quote": "公司年度经常性收入在3月初突破1亿美元，4月进一步增长至超2亿美元"
+            }
+          ]
+        },
+        {
+          "label": "C轮融资后现金储备",
+          "value": "超100亿元人民币",
+          "observed_at": "2025-12-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "公司账面有超100亿元人民币 现金 储备"
+            }
+          ]
+        },
+        {
+          "label": "K2.5发布后20天收入",
+          "value": "超过2025年全年总和",
+          "observed_at": "2026-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "其K2.5模型在OpenRouter平台上调用量一度登顶全球前三，发布后不到20天，收入便超过了2025年全年总和。"
+            }
+          ]
+        },
+        {
+          "label": "Stripe个人订阅支付订单环比增长（1月）",
+          "value": "8280%",
+          "observed_at": "2026-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "Kimi个人订阅用户1月支付订单环比暴增8280%"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "300余人",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6432228f8a95c226",
+              "quote": "月之暗面团队规模仅300余人"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "杨植麟",
+          "quote": "相比于二级市场，我们判断还可以从一级市场募集更大量资金。事实上，B轮和C轮融资金额就超过绝大部分IPO募资及上市公司的定向增发，所以短期不着急上市。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "相比于二级市场，我们判断还可以从一级市场募集更大量资金，事实上，我们B/C轮融资金额就超过绝大部分IPO募资及上市公司的定向增发。所以我们短期不着急上市。"
+            }
+          ]
+        },
+        {
+          "speaker": "杨植麟",
+          "quote": "不以绝对用户数量为目标，持续追求智能上限。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "不以绝对用户数量为目标，持续追求智能上限"
+            }
+          ]
+        },
+        {
+          "speaker": "黄震昕",
+          "quote": "月之暗面团队规模仅300余人，但通过持续底层创新，在模型效率优化领域取得显著成果。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6432228f8a95c226",
+              "quote": "黄震昕特别提到，月之暗面团队规模仅300余人，但通过持续底层创新，在模型效率优化领域取得显著成果。"
+            }
+          ]
+        },
+        {
+          "speaker": "美团龙珠合伙人王新宇",
+          "quote": "自Kimi K2.5模型更新后，公司年度经常性收入在3月初突破1亿美元，4月进一步增长至超2亿美元，付费订阅与API调用均在加速增长。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a787070d4179477c",
+              "quote": "美团龙珠合伙人王新宇透露，自Kimi K2.5模型更新后，公司年度经常性收入在3月初突破1亿美元，4月进一步增长至超2亿美元，付费订阅与API调用均在加速增长。"
+            }
+          ]
+        },
+        {
+          "speaker": "Cursor联合创始人Aman Sanger",
+          "quote": "Kimi K2.5被证明是最强的模型，他们评估了多个基座后最终选择了它。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "Cursor联合创始人Aman Sanger事后承认，Kimi K2.5被证明是最强的模型，他们评估了多个基座后最终选择了它。"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "美团龙珠",
+            "speaker": "王新宇",
+            "speaker_role": "美团龙珠合伙人",
+            "rationale": "看好Kimi K2.5模型更新后商业化变现能力的加速增长，年度经常性收入在两个月内从1亿美元翻倍至超2亿美元，付费订阅与API调用均快速增长。",
+            "quote": "自Kimi K2.5模型更新后，公司年度经常性收入在3月初突破1亿美元，4月进一步增长至超2亿美元，付费订阅与API调用均在加速增长。",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a787070d4179477c",
+                "quote": "美团龙珠合伙人王新宇透露，自Kimi K2.5模型更新后，公司年度经常性收入在3月初突破1亿美元，4月进一步增长至超2亿美元，付费订阅与API调用均在加速增长。"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮约20亿美元融资将月之暗面估值推至超200亿美元，资本押注的核心变量是Agent生态的全球扩张能否将技术领先转化为可持续的商业化收入。已验证信号包括：ARR在两个月内从1亿美元翻倍至超2亿美元，K2.5模型在OpenRouter调用量登顶全球前三，海外收入已超过国内收入，以及Stripe支付订单环比暴增8280%。但当前估值远超收入体量，高度依赖Agent叙事兑现，且收入结构过度依赖外部生态（如OpenClaw贡献约四分之一Token消耗），一旦生态切换或大厂围剿加剧，估值与现实的落差将迅速暴露。",
+        "validated_signals": [
+          "ARR在2026年3月突破1亿美元，4月增至超2亿美元，商业化加速",
+          "K2.5模型在OpenRouter平台调用量登顶全球前三，发布后20天收入超2025年全年",
+          "海外收入已超过国内收入，Stripe支付订单1月环比暴增8280%",
+          "被Cursor、Perplexity等国际产品嵌入为底层模型，技术能力获全球开发者验证"
+        ],
+        "risks": [
+          "收入结构过度依赖外部Agent生态（OpenClaw贡献约四分之一Token消耗），生态切换将直接冲击收入根基",
+          "Agent赛道竞争白热化，MiniMax、智谱及阿里、腾讯、字节等大厂快速复制，先发优势窗口收窄",
+          "开源策略导致品牌话语权被下游产品层稀释，基座模型厂商在价值分配中处于弱势地位"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "人工智能大模型"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Kimi智能助手",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b8e88335555103fa",
+              "quote": "2023年10月，月之暗面推出首款大模型产品Kimi智能助手。"
+            },
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "到2026年1月，Kimi K2.5问世，进一步进化出Agent集群能力，可以根据任务需求调度多达100个分身，并行处理1500个步骤"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Kimi K2.5",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "2026年1月，Kimi K2.5开源发布，迅速成为全球开发者生态中的重要底层能力。"
+            },
+            {
+              "source_id": "FISRC-6432228f8a95c226",
+              "quote": "支持300个子Agent并行协作的集群系统，显著提升多Agent系统协作上限。"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Kimi K2.6",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a787070d4179477c",
+              "quote": "在上个月，月之暗面又发布并开源Kimi K2.6模型，在代码、长程任务执行和Agent集群能力等方面全面升级。"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "杨植麟",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "月之暗面 CEO杨植麟在全员信中表示，已完成5亿美元 C轮融资"
+            },
+            {
+              "source_id": "FISRC-b8e88335555103fa",
+              "quote": "2023年3月1日，年轻的“天才AI科学家”杨植麟创办了他的第二家AI公司月之暗面。"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "周昕宇",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b8e88335555103fa",
+              "quote": "月之暗面的两位联合创始人周昕宇和吴育昕也均出身清华大学"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "吴育昕",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b8e88335555103fa",
+              "quote": "月之暗面的两位联合创始人周昕宇和吴育昕也均出身清华大学"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "美团龙珠",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c268e82669700804",
+              "quote": "本轮由美团龙珠领投"
+            },
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "水木资本",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c268e82669700804",
+              "quote": "水木资本、中国移动、CPE（中信产业基金）等参投"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "中国移动",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c268e82669700804",
+              "quote": "水木资本、中国移动、CPE（中信产业基金）等参投"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CPE（中信产业基金）",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c268e82669700804",
+              "quote": "水木资本、中国移动、CPE（中信产业基金）等参投"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "红杉中国",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本"
+            },
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "真格基金",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "今日资本",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "砺思资本",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2023年6月天使轮 ，近20亿人民币，估值3亿美元，红杉中国、真格基金、今日资本、砺思资本"
+            },
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "襄禾资本",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "蓝驰创投",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "阿里巴巴",
+          "canonical_entity_id": "EN-047364b9be67f665",
+          "canonical_name": "阿里巴巴",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本"
+            },
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "小红书",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "美团",
+          "canonical_entity_id": "EN-cd6362472aea60ef",
+          "canonical_name": "美团",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2024年2月A+轮，超10亿美元，估值25亿美元，阿里巴巴（领投）、红杉中国、小红书、美团、砺思资本"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "腾讯投资",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "高榕创投",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "三七互娱",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2024年8月B轮，超3亿美元 ，估值33亿美元，腾讯投资、高榕创投、阿里巴巴、三七互娱等"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "五源资本",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d82f5dc9fc96ce5",
+              "quote": "2025年10月C轮（前序），数亿美元，传闻腾讯领投，五源资本等参与（未完全披露）"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Cursor",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "开发者Fynn在调试Cursor API时，发现返回的模型ID赫然写着kimi-k2p5-rl-0317-s515-fast。这意味着，Cursor此前宣传的自研模型Composer 2，实际上就是Kimi K2.5加了一层RL微调。"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Perplexity",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "在Cursor、Perplexity等国际产品中，K2.5被嵌入作为底层模型之一。"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "OpenClaw",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "OpenRouter数据显示，OpenClaw几乎撑起了Kimi K2.5在海外市场四分之一的Token消耗。"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "财新传媒",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ddf17e098255b40e",
+              "quote": "跟财新传媒达成合作，为用户提供更专业、优质的财经信息。"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "MiniMax",
+          "canonical_entity_id": "EN-e1517be14d06cdb7",
+          "canonical_name": "MiniMax",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "MiniMax迅速推出MaxClaw，智谱上线AutoClaw，阿里、腾讯、百度等大厂也纷纷下场"
+            },
+            {
+              "source_id": "FISRC-a787070d4179477c",
+              "quote": "MiniMax累计融资约为150亿元人民币，智谱约为130亿元人民币。"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "智谱AI",
+          "canonical_entity_id": "EN-1d79127e9d90e89b",
+          "canonical_name": "智谱AI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "智谱上线AutoClaw"
+            },
+            {
+              "source_id": "FISRC-4900956d29ace0fd",
+              "quote": "智谱与MiniMax在2026年1月相继登陆港股，上市后股价大幅走高，市值双双突破3000亿港元。"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "DeepSeek",
+          "canonical_entity_id": "EN-6f7ac1823da81d2e",
+          "canonical_name": "DeepSeek",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ddf17e098255b40e",
+              "quote": "CNBC报道称，其训练成本仅为460万美元，比年初引发轰动的DeepSeek V3（约560万美元）还低。"
+            },
+            {
+              "source_id": "FISRC-ddf17e098255b40e",
+              "quote": "Kimi K2 Thinking的API调用成本确实不高，输入和输出成本分别为0.15美元/百万Token和2.5美元/百万Token，与DeepSeek R1持平"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-c5d7d88d1aef8edb",
+          "date": "2026-05-07",
+          "title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
+          "amount": "20亿",
+          "source_refs": [
+            "SA-73107fccccac2fc2"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c268e82669700804",
+          "source_url": "https://www.nbd.com.cn/articles/2026-05-07/4381686.html",
+          "title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
+          "publisher": "每日经济新闻",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-25T10:00:00.000Z",
+          "content_hash": "507968dd939d15c9e72b909ed7776ff0f48463fc1f6fbc9ce4b06d5da7eee3b2",
+          "source_artifact_id": "SA-73107fccccac2fc2",
+          "raw_id": "RAW-75b193d37155ffc5"
+        },
+        {
+          "source_id": "FISRC-5d82f5dc9fc96ce5",
+          "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+          "title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+          "publisher": "163.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:25:07.947Z",
+          "content_hash": "eeb091dd8db852e6",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6432228f8a95c226",
+          "source_url": "https://m.itbear.com.cn/html/2026-07/1433521.html",
+          "title": "对话月之暗面Kimi B端负责人：借亚马逊云科技之力，向海外大模型“御三家”发起挑战-业界动态-ITBear科技资讯",
+          "publisher": "m.itbear.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:25:08.074Z",
+          "content_hash": "f3183c74bc4b77ed",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4900956d29ace0fd",
+          "source_url": "https://www.jiemian.com/article/14196663.html",
+          "title": "月之暗面：赢家的代价|界面新闻 · JMedia",
+          "publisher": "jiemian.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:25:08.200Z",
+          "content_hash": "9bd25a40dcb76f83",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ddf17e098255b40e",
+          "source_url": "https://www.growthhk.cn/cgo/market/148814.html",
+          "title": "月之暗面，不想下牌桌 - 增长黑客",
+          "publisher": "growthhk.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:25:08.412Z",
+          "content_hash": "70aa564b082e8580",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-a787070d4179477c",
+          "source_url": "https://www.163.com/dy/article/KSB4GGPN0511U82T.html",
+          "title": "Kimi成国内大模型“融资王”：半年吸金超39亿美元，估值已破200亿美元|龙珠|天使轮|kimi|月之暗面_网易订阅",
+          "publisher": "163.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:25:09.070Z",
+          "content_hash": "ee7c4df3a91d5e6b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b8e88335555103fa",
+          "source_url": "https://www.nbd.com.cn/articles/2024-02-27/3258628.html",
+          "title": "“月之暗面”要做To C超级应用 资方追投10亿美元 | 每经网",
+          "publisher": "nbd.com.cn",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:25:09.320Z",
+          "content_hash": "39ff7cd67dd7d12e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:26:09.641Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:26:09.641Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-c067d717403c8e3b",
+      "triggered_by_event_id": "EV-4c247b02485de09b",
+      "as_of_date": "2026-06-09",
+      "company": {
+        "entity_id": "EN-b10da733dff99be1",
+        "name": "Sequoia-backed Edra",
+        "full_name": "Edra",
+        "website": "edra.ai",
+        "summary": "Edra构建能够学习企业实际运作方式并自动执行工作的AI智能体。其平台通过分析企业现有系统（如支持工单、邮件、日志和聊天记录）中的数据，逆向工程出企业的真实流程，并将其转化为结构化、可执行的“活手册”（Living Playbook），该手册可随业务变化而持续演进。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Eugen Alpeza",
+            "role": "CEO兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fd79c7fe51adf731",
+                "quote": "Eugen Alpeza CEO & Co-Founder @ Edra | ex-Palantir"
+              },
+              {
+                "source_id": "FISRC-f0bd0469bbdd29e2",
+                "quote": "Founded by Croatian Eugen Alpeza and Greek Yannis Karamanlakis (former leaders of Forward Deployed AI Engineering at Palantir, which they started in the London office)."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Yannis Karamanlakis",
+            "role": "CTO兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fd79c7fe51adf731",
+                "quote": "Yannis Karamanlakis Co-Founder & CTO @ Edra | ex-Palantir AI"
+              },
+              {
+                "source_id": "FISRC-f0bd0469bbdd29e2",
+                "quote": "Founded by Croatian Eugen Alpeza and Greek Yannis Karamanlakis (former leaders of Forward Deployed AI Engineering at Palantir, which they started in the London office)."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f0bd0469bbdd29e2",
+            "quote": "Today, startup Edra announced $30 million Series A led by Sequoia, which included investment from 8VC and A*z."
+          },
+          {
+            "source_id": "FISRC-fd79c7fe51adf731",
+            "quote": "Edra is out of stealth. We're announcing our Series A led by Sequoia Capital, 8VC, A*, and HubSpot Ventures, bringing our total funding to $30M+."
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "3000万美元",
+        "total_raised": "3000万美元以上",
+        "announced_at": "2026-03-19",
+        "investors": [
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0bd0469bbdd29e2",
+                "quote": "Today, startup Edra announced $30 million Series A led by Sequoia"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "8VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0bd0469bbdd29e2",
+                "quote": "which included investment from 8VC and A*z."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "A*",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0bd0469bbdd29e2",
+                "quote": "which included investment from 8VC and A*z."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "HubSpot Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fd79c7fe51adf731",
+                "quote": "We're announcing our Series A led by Sequoia Capital, 8VC, A*, and HubSpot Ventures"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f0bd0469bbdd29e2",
+            "quote": "Today, startup Edra announced $30 million Series A led by Sequoia, which included investment from 8VC and A*z."
+          },
+          {
+            "source_id": "FISRC-fd79c7fe51adf731",
+            "quote": "We're announcing our Series A led by Sequoia Capital, 8VC, A*, and HubSpot Ventures, bringing our total funding to $30M+."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Living Playbook",
+          "description": "一个动态知识库，通过连接客户现有系统，在数分钟内摄取标准操作流程、工单和内部通信，无需手动配置。它从员工实际行为中持续学习并建议改进，随业务变化而演进，而非静态文档。",
+          "target_customers": "拥有复杂运营流程且数据丰富的企业，如IT服务管理和客户技术支持部门。",
+          "features": [
+            "连接现有系统并逆向工程企业真实运作方式",
+            "将隐性知识转化为结构化、可执行的白盒指令",
+            "持续学习并自动建议流程改进",
+            "保持透明且可编辑"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "Edra builds a Living Playbook by connecting to a customer’s existing systems within minutes and ingesting standard operating procedures, tickets, and communications without manual configuration. From there, it continuously learns from actual employee behaviour and surfaces suggested improvements. Unlike static documentation or knowledge bases, Living Playbooks evolve as the business changes."
+            },
+            {
+              "source_id": "FISRC-da6a9521913e310a",
+              "quote": "The platform connects to a customer’s existing systems within minutes, ingesting standard operating procedures, tickets, and internal communications without manual configuration. It then continuously learns from real employee behaviour and suggests improvements over time. Unlike static documentation or traditional knowledge bases, Living Playbooks evolve as the business changes."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "HubSpot",
+          "industry": "SaaS/CRM",
+          "use_case": "分析15万次支持对话，识别出600多个知识库更新项，并将人工转接率降低12%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "The HubSpot numbers are notable: Edra analysed 150,000 support conversations, surfaced 600+ knowledge base updates, and cut human handoffs by 12 per cent."
+            }
+          ]
+        },
+        {
+          "name": "ASOS",
+          "industry": "时尚电商",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "They're already in production at HubSpot, ASOS, and Cushman & Wakefield."
+            }
+          ]
+        },
+        {
+          "name": "Cushman & Wakefield",
+          "industry": "商业地产服务",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "They're already in production at HubSpot, ASOS, and Cushman & Wakefield."
+            }
+          ]
+        },
+        {
+          "name": "Ergeon",
+          "industry": "科技/建筑服务",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd79c7fe51adf731",
+              "quote": "We're already live with customers including ASOS, HubSpot, Cushman & Wakefield, and Ergeon."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "HubSpot支持对话分析量",
+          "value": "150,000",
+          "observed_at": "2026-03-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "Edra analysed 150,000 support conversations"
+            }
+          ]
+        },
+        {
+          "label": "HubSpot知识库更新建议数",
+          "value": "600+",
+          "observed_at": "2026-03-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "surfaced 600+ knowledge base updates"
+            }
+          ]
+        },
+        {
+          "label": "HubSpot人工转接率降低",
+          "value": "12%",
+          "observed_at": "2026-03-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "cut human handoffs by 12 per cent"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Luciana Lixandru",
+          "quote": "As always, our investments are all about people. When I first met Eugen and Yannis, what struck me was not only what they had built, but how they work together. Eugen is one of the most commercially gifted people I have met—someone who earns the trust of sceptical buyers and makes them believe. Yannis is technically exceptional, the kind of partner who makes the hardest things feel solid. Their dynamic as a founding duo is a genuine superpower.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "According to Sequoia partner Luciana Lixandru: “As always, our investments are all about people. When I first met Eugen and Yannis, what struck me was not only what they had built, but how they work together. Eugen is one of the most commercially gifted people I have met—someone who earns the trust of sceptical buyers and makes them believe. Yannis is technically exceptional, the kind of partner who makes the hardest things feel solid. Their dynamic as a founding duo is a genuine superpower.”"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Sequoia Capital",
+            "speaker": "Luciana Lixandru",
+            "speaker_role": "合伙人",
+            "rationale": "投资核心在于创始团队的卓越能力与互补性。Eugen具备罕见的商业天赋，能赢得持怀疑态度的客户信任；Yannis技术能力超群，能稳固解决最困难的问题。二人的合作动态被视为真正的“超能力”。",
+            "quote": "As always, our investments are all about people. When I first met Eugen and Yannis, what struck me was not only what they had built, but how they work together. Eugen is one of the most commercially gifted people I have met—someone who earns the trust of sceptical buyers and makes them believe. Yannis is technically exceptional, the kind of partner who makes the hardest things feel solid. Their dynamic as a founding duo is a genuine superpower.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0bd0469bbdd29e2",
+                "quote": "According to Sequoia partner Luciana Lixandru: “As always, our investments are all about people. When I first met Eugen and Yannis, what struck me was not only what they had built, but how they work together. Eugen is one of the most commercially gifted people I have met—someone who earns the trust of sceptical buyers and makes them believe. Yannis is technically exceptional, the kind of partner who makes the hardest things feel solid. Their dynamic as a founding duo is a genuine superpower.”"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“企业隐性知识的自动化捕获与结构化”，这是AI智能体在企业端落地的关键瓶颈。Edra的估值或融资能力依赖于已验证信号：其产品已在HubSpot、ASOS等知名企业投入生产环境，并产生了可量化的业务影响（如HubSpot人工转接率降低12%）。证据边界在于，这些信号目前仅来自少数早期客户，且主要集中在IT支持和客户服务场景，其跨行业、跨职能的规模化扩展能力尚未被充分验证。",
+        "validated_signals": [
+          "产品已在HubSpot、ASOS、Cushman & Wakefield和Ergeon投入生产环境。",
+          "在HubSpot实现了可量化的业务成果：分析15万次对话，识别600+知识库更新，人工转接率降低12%。",
+          "创始团队来自Palantir，拥有在企业内部部署AI的深厚经验。"
+        ],
+        "risks": [
+          "企业流程知识的自动化提取高度依赖源数据的质量和丰富度，在数据稀疏或高度非结构化的场景中，模型效果可能衰减。",
+          "从IT支持和客户服务扩展到销售赋能等其他职能，可能面临不同领域知识结构和决策逻辑的挑战，产品通用性有待证明。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业AI/知识管理"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Living Playbook",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "Edra builds a Living Playbook by connecting to a customer’s existing systems within minutes and ingesting standard operating procedures, tickets, and communications without manual configuration. From there, it continuously learns from actual employee behaviour and surfaces suggested improvements. Unlike static documentation or knowledge bases, Living Playbooks evolve as the business changes."
+            },
+            {
+              "source_id": "FISRC-da6a9521913e310a",
+              "quote": "The platform connects to a customer’s existing systems within minutes, ingesting standard operating procedures, tickets, and internal communications without manual configuration. It then continuously learns from real employee behaviour and suggests improvements over time. Unlike static documentation or traditional knowledge bases, Living Playbooks evolve as the business changes."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Eugen Alpeza",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd79c7fe51adf731",
+              "quote": "Eugen Alpeza CEO & Co-Founder @ Edra | ex-Palantir"
+            },
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "Founded by Croatian Eugen Alpeza and Greek Yannis Karamanlakis (former leaders of Forward Deployed AI Engineering at Palantir, which they started in the London office)."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Yannis Karamanlakis",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd79c7fe51adf731",
+              "quote": "Yannis Karamanlakis Co-Founder & CTO @ Edra | ex-Palantir AI"
+            },
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "Founded by Croatian Eugen Alpeza and Greek Yannis Karamanlakis (former leaders of Forward Deployed AI Engineering at Palantir, which they started in the London office)."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "Today, startup Edra announced $30 million Series A led by Sequoia"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "8VC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "which included investment from 8VC and A*z."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "A*",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "which included investment from 8VC and A*z."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "HubSpot Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd79c7fe51adf731",
+              "quote": "We're announcing our Series A led by Sequoia Capital, 8VC, A*, and HubSpot Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "HubSpot",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "The HubSpot numbers are notable: Edra analysed 150,000 support conversations, surfaced 600+ knowledge base updates, and cut human handoffs by 12 per cent."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "ASOS",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "They're already in production at HubSpot, ASOS, and Cushman & Wakefield."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Cushman & Wakefield",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0bd0469bbdd29e2",
+              "quote": "They're already in production at HubSpot, ASOS, and Cushman & Wakefield."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ergeon",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd79c7fe51adf731",
+              "quote": "We're already live with customers including ASOS, HubSpot, Cushman & Wakefield, and Ergeon."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-4c247b02485de09b",
+          "date": "2026-06-09",
+          "title": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体",
+          "amount": "$30M",
+          "source_refs": [
+            "SA-7f94d709e33647d0"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-f0bd0469bbdd29e2",
+          "source_url": "https://tech.eu/2026/03/19/edra-raises-309m-series-a-to-turn-enterprise-data-into-self-improving-ai-agents/",
+          "title": "红杉资本支持的Edra完成3000万美元A轮融资，将企业数据转化为自我优化的AI智能体",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-09T02:33:36.415Z",
+          "content_hash": "043f0819e45e2208",
+          "source_artifact_id": "SA-7f94d709e33647d0",
+          "raw_id": "RAW-7d266fefd9091cbf"
+        },
+        {
+          "source_id": "FISRC-da6a9521913e310a",
+          "source_url": "https://startuprise.co.uk/sequoia-backed-edra-raises-30m-series-a-to-build-self-improving-ai-agents/",
+          "title": "Sequoia-Backed Edra Raises $30M Series A To Build Self-Improving AI Agents",
+          "publisher": "startuprise.co.uk",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:25:07.605Z",
+          "content_hash": "394a1a35b92e0eeb",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fd79c7fe51adf731",
+          "source_url": "https://www.linkedin.com/posts/edra-ai_edra-is-out-of-stealth-were-announcing-activity-7440039512325439488-ISfr",
+          "title": "Edra is out of stealth. | Edra",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:25:09.913Z",
+          "content_hash": "6e6e58fb45bc0397",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:25:46.476Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:25:46.476Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-4c247b02485de09b",
+      "company_name": "Sequoia-backed Edra",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Sequoia-backed Edra\" \"$30M\" funding investors round",
+        "\"Sequoia-backed Edra\" product customers case study",
+        "\"Sequoia-backed Edra\" \"Sequoia-backed Edra raises $30M Series A to turn enterprise data into self-improving AI agents - Tech.eu\" competitors product use case",
+        "\"Sequoia-backed Edra\" \"$30M\" investor quote why invested",
+        "\"Sequoia-backed Edra\" \"$30M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Sequoia-backed Edra\" \"$30M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sequoia-backed Edra\" \"$30M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sequoia-backed Edra\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sequoia-backed Edra\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sequoia-backed Edra\" \"Sequoia-backed Edra raises $30M Series A to turn enterprise data into self-improving AI agents - Tech.eu\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sequoia-backed Edra\" \"Sequoia-backed Edra raises $30M Series A to turn enterprise data into self-improving AI agents - Tech.eu\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sequoia-backed Edra\" \"$30M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sequoia-backed Edra\" \"$30M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sequoia-backed Edra\" \"$30M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sequoia-backed Edra\" \"$30M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:26:34.622Z"
+    },
+    {
+      "event_id": "EV-0e4bddfd5c129618",
+      "company_name": "Moonshot AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Moonshot AI\" \"$30 billion\" funding investors round",
+        "\"Moonshot AI\" product customers case study",
+        "\"Moonshot AI\" \"月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍\" competitors product use case",
+        "\"Moonshot AI\" \"$30 billion\" investor quote why invested",
+        "\"Moonshot AI\" \"$30 billion\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Moonshot AI\" \"$30 billion\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonshot AI\" \"$30 billion\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Moonshot AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonshot AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Moonshot AI\" \"月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonshot AI\" \"月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Moonshot AI\" \"$30 billion\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonshot AI\" \"$30 billion\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Moonshot AI\" \"$30 billion\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Moonshot AI\" \"$30 billion\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:26:34.622Z"
+    },
+    {
+      "event_id": "EV-c5d7d88d1aef8edb",
+      "company_name": "月之暗面",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"月之暗面\" \"20亿\" funding investors round",
+        "\"月之暗面\" product customers case study",
+        "\"月之暗面\" \"月之暗面完成约20亿美元融资 投后估值超过200亿美元\" competitors product use case",
+        "\"月之暗面\" \"20亿\" investor quote why invested",
+        "\"月之暗面\" \"20亿\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"月之暗面\" \"20亿\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"月之暗面\" \"20亿\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"月之暗面\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"月之暗面\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"月之暗面\" \"月之暗面完成约20亿美元融资 投后估值超过200亿美元\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"月之暗面\" \"月之暗面完成约20亿美元融资 投后估值超过200亿美元\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"月之暗面\" \"20亿\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"月之暗面\" \"20亿\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"月之暗面\" \"20亿\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"月之暗面\" \"20亿\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:26:34.622Z"
+    }
+  ]
+}

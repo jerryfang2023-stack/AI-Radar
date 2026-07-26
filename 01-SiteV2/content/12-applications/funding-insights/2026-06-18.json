@@ -1,0 +1,2613 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-18",
+    "generated_at": "2026-07-26T15:12:24.747Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 5,
+      "auto_published": 4,
+      "blocked": 1,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-fd1ff9260cbc958b",
+      "triggered_by_event_id": "EV-8c2fdaad276818b0",
+      "as_of_date": "2026-06-18",
+      "company": {
+        "entity_id": "EN-8311b78e7ece59dd",
+        "name": "INXM",
+        "full_name": "INXM",
+        "website": "",
+        "summary": "INXM是一家总部位于柏林的初创公司，正在构建一个AI驱动的流程执行引擎，旨在帮助企业弥合AI演示与实际运营部署之间的差距。其核心方法是“编译式AI”，即利用AI设计和优化业务流程，然后通过确定性工作流执行，以确保可靠性、一致性和可审计性。",
+        "headquarters": "Berlin",
+        "founders": [
+          {
+            "name": "Alex Oelling",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8274fe935ad6e8eb",
+                "quote": "INXM was founded by Alex Oelling , Matthias Kainer , Jesper Bylund and Kamil Klüber"
+              },
+              {
+                "source_id": "FISRC-123ea7ddbd18e844",
+                "quote": "Alex Oelling, who serves as the company's Chief Executive Officer"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Matthias Kainer",
+            "role": "CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8274fe935ad6e8eb",
+                "quote": "INXM was founded by Alex Oelling , Matthias Kainer , Jesper Bylund and Kamil Klüber"
+              },
+              {
+                "source_id": "FISRC-123ea7ddbd18e844",
+                "quote": "Matthias Kainer, INXM's Chief Technology Officer"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jesper Bylund",
+            "role": "CPO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9925c0145233b196",
+                "quote": "INXM founders, Matthias Kainer (CTO), Kamil Klüber (CSO), Jesper Bylund (CPO), and Alexander Oelling (CEO)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kamil Klüber",
+            "role": "CSO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9925c0145233b196",
+                "quote": "INXM founders, Matthias Kainer (CTO), Kamil Klüber (CSO), Jesper Bylund (CPO), and Alexander Oelling (CEO)"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8274fe935ad6e8eb",
+            "quote": "INXM , a Berlin-based startup developing AI-powered process automation technology for enterprise and industrial operations"
+          },
+          {
+            "source_id": "FISRC-8b3715219a93e9b2",
+            "quote": "The company positions itself at the intersection of enterprise software and AI deployment, focused on making AI operationally reliable rather than simply demonstrating capability in controlled settings."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Pre-Seed",
+        "amount": "€5.7 Million",
+        "total_raised": "€5.7 Million",
+        "announced_at": "2026-06-03",
+        "investors": [
+          {
+            "name": "Cherry Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8b3715219a93e9b2",
+                "quote": "INXM has announced a €5.7 million pre-seed funding round led by Cherry Ventures and Redstone"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Redstone",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8b3715219a93e9b2",
+                "quote": "INXM has announced a €5.7 million pre-seed funding round led by Cherry Ventures and Redstone"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Angel Invest",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8b3715219a93e9b2",
+                "quote": "with participation from Angel Invest, Linden Capital, and a group of business angels"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Linden Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8b3715219a93e9b2",
+                "quote": "with participation from Angel Invest, Linden Capital, and a group of business angels"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-8b3715219a93e9b2",
+            "quote": "INXM has announced a €5.7 million pre-seed funding round led by Cherry Ventures and Redstone, with participation from Angel Invest, Linden Capital, and a group of business angels."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "INXM Orchestrator",
+          "description": "INXM的核心产品，一个流程执行引擎。它将用户意图转化为可执行的计划，并跨系统、人员和流程协调任务。该平台基于“编译式AI”构建，将AI用于流程设计和优化，然后通过确定性代码执行，以确保结果可预测、可重复和可审计。",
+          "target_customers": "面临复杂工作流、遗留系统和严格合规要求的欧洲工业企业及Mittelstand公司。",
+          "features": [
+            "将用户意图转化为可执行计划",
+            "跨系统、人员和流程协调任务",
+            "基于编译式AI的确定性流程执行",
+            "与现有ERP、PLM、MES、QMS系统集成",
+            "提供完整的审计追踪"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bd9af6d0b9c64015",
+              "quote": "At the core of the platform is the INXM Orchestrator, which converts user intent into executable plans and coordinates tasks across systems, people, and processes."
+            },
+            {
+              "source_id": "FISRC-9925c0145233b196",
+              "quote": "The core product, Orchestrator, connects existing enterprise platforms such as ERP, PLM, MES, and QMS systems and automates complex workflows across all of them without replacing what companies already have in place."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "n8n",
+          "product": "可视化工作流自动化平台",
+          "scenario": "连接应用程序，通过可视化界面构建软件系统之间的集成，无需深度编码。",
+          "target_customer": "需要灵活自动化连接各种软件应用的团队。",
+          "funding_summary": "2025年底完成C轮融资，估值约25亿欧元；后获SAP战略投资，估值超50亿欧元。",
+          "core_difference": "n8n构建的是一个灵活的自动化连接层，而INXM是为工业环境构建确定性的、治理优先的执行基础设施，其架构设计旨在满足合规性和可审计性要求。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-123ea7ddbd18e844",
+              "quote": "n8n is building a flexible automation fabric; INXM is building deterministic, governance-first execution infrastructure for industrial environments where the consequences of failure are operational, regulatory, and sometimes physical."
+            }
+          ]
+        },
+        {
+          "name": "Parloa",
+          "product": "AI驱动的客户服务与联络中心自动化平台",
+          "scenario": "自动化客户服务对话和联络中心运营。",
+          "target_customer": "需要提升客户服务效率的企业。",
+          "funding_summary": "2026年初完成大规模融资，估值30亿美元。",
+          "core_difference": "Parloa专注于客户服务领域的AI应用，其运营风险环境与INXM所针对的制造业、航空航天和物流等工业运营环境不同。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-123ea7ddbd18e844",
+              "quote": "Parloa's domain is AI-powered customer service and contact centre automation — a meaningful market, but one that operates in a different risk environment than the manufacturers, aerospace companies, and logistics operators INXM is targeting."
+            }
+          ]
+        }
+      ],
+      "metrics": [],
+      "quotes": [
+        {
+          "speaker": "Alex Oelling",
+          "quote": "We founded INXM because we've seen first-hand how enterprise AI projects fail: years of implementation, armies of engineers, and AI systems that break more than they fix. Knowledge workers still copy-paste between ERP, PLM, Excel, email, and approval workflows to close a month. We have set out to build AI that finishes the work for you.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8274fe935ad6e8eb",
+              "quote": "We founded INXM because we've seen first-hand how enterprise AI projects fail: years of implementation, armies of engineers, and AI systems that break more than they fix. Knowledge workers still copy-paste between ERP, PLM, Excel, email, and approval workflows to close a month. We have set out to build AI that finishes the work for you."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Cherry Ventures",
+            "speaker": "Filip Dames",
+            "speaker_role": "Founding Partner",
+            "rationale": "认为企业AI陷入了一个悖论：部署越雄心勃勃，结果越不可预测。他将编译式AI视为对这一问题的架构性重构，而非对现有方案的渐进式改进，并认为关键问题不是如何让AI更聪明，而是如何让它可执行。",
+            "quote": "enterprise AI as trapped in a paradox where the more ambitious a deployment becomes, the less predictable its outcome, and positioned Compiled AI as a genuine architectural reframing of that problem rather than an incremental improvement on what already exists.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-123ea7ddbd18e844",
+                "quote": "He described enterprise AI as trapped in a paradox where the more ambitious a deployment becomes, the less predictable its outcome, and positioned Compiled AI as a genuine architectural reframing of that problem rather than an incremental improvement on what already exists."
+              }
+            ]
+          },
+          {
+            "institution": "Redstone",
+            "speaker": "Michael Brehm",
+            "speaker_role": "Founding Partner",
+            "rationale": "指出企业AI的工作流挑战几乎总是源于与日常运营集成的脆弱性，而INXM的创始人在火箭和空中出租车等复杂工程领域拥有从概念到生产就绪的经验，这塑造了他们的系统架构思维。",
+            "quote": "workflow challenges in enterprise AI almost always trace back not just to the models themselves, but to the brittleness of integration with day-to-day operations. INXM's founders have lived that reality directly, and that lived experience has shaped their architecture.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-123ea7ddbd18e844",
+                "quote": "workflow challenges in enterprise AI almost always trace back not just to the models themselves, but to the brittleness of integration with day-to-day operations. INXM's founders have lived that reality directly, and that lived experience has shaped their architecture."
+              }
+            ]
+          },
+          {
+            "institution": "Angel Invest",
+            "speaker": "Jens Lapinski",
+            "speaker_role": "",
+            "rationale": "认为企业需要的不是更多孤立的AI工具，而是能够在现有系统上执行受治理、可重复流程的AI。INXM正在构建的连接企业平台、人员和AI智能体的编排层，正是市场上缺失的关键环节。",
+            "quote": "enterprises do not need more disconnected AI tools — they need AI that can execute governed, repeatable processes across the systems they already operate.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-123ea7ddbd18e844",
+                "quote": "His view is that enterprises do not need more disconnected AI tools — they need AI that can execute governed, repeatable processes across the systems they already operate."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“企业AI的可靠执行层”。当前估值未披露，但本轮融资所依赖的已验证信号包括：1）创始团队在Isar Aerospace和Volocopter等对系统可靠性要求极高的领域拥有直接构建经验，这构成了技术架构的信任基础；2）其“编译式AI”方案在架构上明确区别于主流的智能体方案，提供了确定性、可审计的执行路径，回应了工业界对AI不可预测性的核心顾虑。判断的证据边界在于，公司仍处于从隐身模式中浮出水面的阶段，产品尚未在公开的生产环境中得到大规模验证。",
+        "validated_signals": [
+          "创始团队在航空航天等关键任务系统领域拥有构建经验，直接塑造了其技术架构。",
+          "其“编译式AI”架构将AI用于设计阶段，执行阶段使用确定性代码，提供了与主流智能体方案不同的技术路径。"
+        ],
+        "risks": [
+          "产品仍处于早期阶段，尚未披露任何企业客户或生产环境部署案例，其架构优势有待市场验证。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业AI流程执行与自动化"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "INXM Orchestrator",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bd9af6d0b9c64015",
+              "quote": "At the core of the platform is the INXM Orchestrator, which converts user intent into executable plans and coordinates tasks across systems, people, and processes."
+            },
+            {
+              "source_id": "FISRC-9925c0145233b196",
+              "quote": "The core product, Orchestrator, connects existing enterprise platforms such as ERP, PLM, MES, and QMS systems and automates complex workflows across all of them without replacing what companies already have in place."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Alex Oelling",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8274fe935ad6e8eb",
+              "quote": "INXM was founded by Alex Oelling , Matthias Kainer , Jesper Bylund and Kamil Klüber"
+            },
+            {
+              "source_id": "FISRC-123ea7ddbd18e844",
+              "quote": "Alex Oelling, who serves as the company's Chief Executive Officer"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Matthias Kainer",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8274fe935ad6e8eb",
+              "quote": "INXM was founded by Alex Oelling , Matthias Kainer , Jesper Bylund and Kamil Klüber"
+            },
+            {
+              "source_id": "FISRC-123ea7ddbd18e844",
+              "quote": "Matthias Kainer, INXM's Chief Technology Officer"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jesper Bylund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9925c0145233b196",
+              "quote": "INXM founders, Matthias Kainer (CTO), Kamil Klüber (CSO), Jesper Bylund (CPO), and Alexander Oelling (CEO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Kamil Klüber",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9925c0145233b196",
+              "quote": "INXM founders, Matthias Kainer (CTO), Kamil Klüber (CSO), Jesper Bylund (CPO), and Alexander Oelling (CEO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cherry Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8b3715219a93e9b2",
+              "quote": "INXM has announced a €5.7 million pre-seed funding round led by Cherry Ventures and Redstone"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Redstone",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8b3715219a93e9b2",
+              "quote": "INXM has announced a €5.7 million pre-seed funding round led by Cherry Ventures and Redstone"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Angel Invest",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8b3715219a93e9b2",
+              "quote": "with participation from Angel Invest, Linden Capital, and a group of business angels"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Linden Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8b3715219a93e9b2",
+              "quote": "with participation from Angel Invest, Linden Capital, and a group of business angels"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "n8n",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-123ea7ddbd18e844",
+              "quote": "n8n is building a flexible automation fabric; INXM is building deterministic, governance-first execution infrastructure for industrial environments where the consequences of failure are operational, regulatory, and sometimes physical."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Parloa",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-123ea7ddbd18e844",
+              "quote": "Parloa's domain is AI-powered customer service and contact centre automation — a meaningful market, but one that operates in a different risk environment than the manufacturers, aerospace companies, and logistics operators INXM is targeting."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-8c2fdaad276818b0",
+          "date": "2026-06-18",
+          "title": "INXM 获 570 万欧元预种子轮融资，弥合企业 AI 演示与实际运营部署之间的差距",
+          "amount": "€5.7 Million",
+          "source_refs": [
+            "SA-842efd4c6943be34"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-8b3715219a93e9b2",
+          "source_url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
+          "title": "INXM 获 570 万欧元预种子轮融资，弥合企业 AI 演示与实际运营部署之间的差距",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-18T06:41:09.314Z",
+          "content_hash": "79ce374e023f3088",
+          "source_artifact_id": "SA-842efd4c6943be34",
+          "raw_id": "RAW-52d1f5d5d572eb15"
+        },
+        {
+          "source_id": "FISRC-8274fe935ad6e8eb",
+          "source_url": "https://tech.eu/2026/06/03/inxm-raises-eur57m-to-tackle-enterprise-ai-execution-challenges/",
+          "title": "INXM raises €5.7M to tackle enterprise AI execution challenges - Tech.eu",
+          "publisher": "tech.eu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:32:47.357Z",
+          "content_hash": "f1e652a31ca547e4",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-bd9af6d0b9c64015",
+          "source_url": "https://startuprise.co.uk/berlin-based-inxm-raises-e5-7-million-pre-seed-to-automate-enterprise-processes-with-ai/",
+          "title": "Berlin-Based INXM Raises €5.7 Million Pre-Seed To Automate Enterprise Processes With AI",
+          "publisher": "startuprise.co.uk",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:32:50.589Z",
+          "content_hash": "adaee279574fd093",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-123ea7ddbd18e844",
+          "source_url": "https://theaiworld.org/news/inxm-raises-57m-to-fix-enterprise-ai-execution",
+          "title": "INXM Raises €5.7M to Fix Enterprise AI Execution",
+          "publisher": "theaiworld.org",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:32:52.754Z",
+          "content_hash": "e5099ab9d9f63450",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9925c0145233b196",
+          "source_url": "https://invest-in.berlin/n/inxm-secures-eur57m-to-make-ai-reliable-for-industry/",
+          "title": "Invest-in.Berlin: INXM secures €5.7M to make AI reliable for industry",
+          "publisher": "invest-in.berlin",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:32:55.942Z",
+          "content_hash": "cf6ef50cae98e1ab",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:33:32.065Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:33:32.065Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-df0372913582171d",
+      "triggered_by_event_id": "EV-8bbc23e53e799d9d",
+      "as_of_date": "2026-06-18",
+      "company": {
+        "entity_id": "EN-da454b02b4700b1f",
+        "name": "Willow",
+        "full_name": "Willow",
+        "website": "https://withwillow.ai",
+        "summary": "Willow 是一家为企业提供 AI 代理访问平台的以色列初创公司，其平台为每个 AI 代理赋予真实身份、按任务限定访问范围、设置运行时护栏并提供完整的审计追踪，已在 Wix 内部以数千名员工的规模运行一年。",
+        "headquarters": "Herzliya, Israel",
+        "founders": [
+          {
+            "name": "Eyal Ben Ezra",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-799421013f33574a",
+                "quote": "Founded by former Wix engineers Eyal Ben Ezra (CEO), Shalev Shalit (CTO), and Idan Chetrit (VP Platform)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Shalev Shalit",
+            "role": "CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-799421013f33574a",
+                "quote": "Founded by former Wix engineers Eyal Ben Ezra (CEO), Shalev Shalit (CTO), and Idan Chetrit (VP Platform)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Idan Chetrit",
+            "role": "VP Platform",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-799421013f33574a",
+                "quote": "Founded by former Wix engineers Eyal Ben Ezra (CEO), Shalev Shalit (CTO), and Idan Chetrit (VP Platform)"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-799421013f33574a",
+            "quote": "Willow is the AI Basecamp for the enterprise : a unified Agentic Access Platform where every AI agent gets a real identity, scoped access to exactly the tools its task requires, runtime guardrails, and a full audit trail tied to a human."
+          },
+          {
+            "source_id": "FISRC-f6d49c20866c811c",
+            "quote": "Willow(fka Webrix), a Herzliya, Israel-based provider of an agentic access platform, raised $7M in Seed funding."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$7 million",
+        "total_raised": "$7 million",
+        "announced_at": "2026-06-04",
+        "investors": [
+          {
+            "name": "Hetz Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-799421013f33574a",
+                "quote": "Willow has raised $7 million in seed funding , led by Hetz Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Avishai Abrahami",
+            "role": "早期天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6d49c20866c811c",
+                "quote": "following early angel investment from Wix Co-Founder and CEO Avishai Abrahami and President Nir Zohar"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nir Zohar",
+            "role": "早期天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f6d49c20866c811c",
+                "quote": "following early angel investment from Wix Co-Founder and CEO Avishai Abrahami and President Nir Zohar"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-799421013f33574a",
+            "quote": "Willow has raised $7 million in seed funding , led by Hetz Ventures"
+          },
+          {
+            "source_id": "FISRC-f6d49c20866c811c",
+            "quote": "The round was led by Hetz Ventures, following early angel investment from Wix Co-Founder and CEO Avishai Abrahami and President Nir Zohar."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Willow Agentic Access Platform",
+          "description": "一个统一的代理访问平台，为每个 AI 代理提供真实身份、按任务限定工具访问范围、运行时护栏以及完整的审计追踪，并包含超过 1000 个即用连接器的市场。",
+          "target_customers": "企业客户，尤其是已大规模部署 AI 代理并需要安全治理的组织",
+          "features": [
+            "代理层身份识别，继承自现有 IdP",
+            "按任务生成工具并限定访问范围",
+            "运行时护栏，包括 PII 脱敏和提示注入保护",
+            "影子 AI 检测",
+            "实时审计追踪并关联到真实用户"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Willow is the AI Basecamp for the enterprise : a unified Agentic Access Platform where every AI agent gets a real identity, scoped access to exactly the tools its task requires, runtime guardrails, and a full audit trail tied to a human."
+            },
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "The platform also includes a marketplace with over 1,000 ready-to-use connectors , more than 100 skills, and more than 100 plugins"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Wix",
+          "industry": "网站建设与商业平台",
+          "use_case": "为约 5000 名员工提供 AI 代理访问治理，连接近 600 个工具，每周处理超过 30 万次工具调用",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "The platform is already running in production at Wix , powering ~5,000 weekly active users across engineering, product, design, HR, finance, and legal."
+            },
+            {
+              "source_id": "FISRC-151d02054b1675c7",
+              "quote": "In one recent week, nearly 5,000 distinct users used willow to connect AI systems, exceeding the size of the engineering organization alone. The system includes almost 600 unique tools and nearly 300,000+ tool calls per week."
+            }
+          ]
+        },
+        {
+          "name": "Innovid",
+          "industry": "广告技术",
+          "use_case": "治理开发者机器对 MCP 服务器和外部技能的暴露，在不阻止工程师使用的前提下控制 AI 风险",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Innovid (NYSE: CTV) uses Willow to govern developer machines specifically around exposure to MCP servers and external skills, getting control and reducing AI risk without telling their engineers to stop."
+            }
+          ]
+        },
+        {
+          "name": "Riskified",
+          "industry": "金融科技",
+          "use_case": "正在生产环境中部署 Willow",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Riskified (NYSE: RSKD) is deploying Willow in production."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "每周活跃用户数",
+          "value": "~5,000",
+          "observed_at": "2026-06-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "powering ~5,000 weekly active users across engineering, product, design, HR, finance, and legal."
+            }
+          ]
+        },
+        {
+          "label": "已治理工具数",
+          "value": "600+",
+          "observed_at": "2026-06-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "600+ governed tools , all behind Okta SSO with full audit and shadow-AI protection."
+            }
+          ]
+        },
+        {
+          "label": "每周治理工具调用次数",
+          "value": "300,000+",
+          "observed_at": "2026-06-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "300,000+ governed tool calls every week , with zero hit to security posture."
+            }
+          ]
+        },
+        {
+          "label": "平台即用连接器数量",
+          "value": "1,000+",
+          "observed_at": "2026-06-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "a marketplace with over 1,000 ready-to-use connectors"
+            }
+          ]
+        },
+        {
+          "label": "企业部署 AI 代理比例",
+          "value": "79%",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "79% of enterprises are deploying AI agents. (PwC, 2025)"
+            }
+          ]
+        },
+        {
+          "label": "运行多代理系统企业比例",
+          "value": "73%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "73% are running multi-agent systems . (HFS / Cognizant)"
+            }
+          ]
+        },
+        {
+          "label": "过去 12 个月发生代理相关事件企业比例",
+          "value": "65%",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "65% have already had an agent-related incident in the last 12 months . (Cloud Security Alliance, 2026)"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Avishai Abrahami",
+          "quote": "Thousands of Wix employees are using AI agents every day, and at our scale, visibility and control over those agents are absolutely critical. To accelerate AI adoption safely, we need guidelines, governance, and full visibility across the company. Willow provides exactly that.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Thousands of Wix employees are using AI agents every day, and at our scale, visibility and control over those agents are absolutely critical. To accelerate AI adoption safely, we need guidelines, governance, and full visibility across the company. Willow provides exactly that."
+            }
+          ]
+        },
+        {
+          "speaker": "Guy Fighel",
+          "quote": "The gateway between AI agents and an enterprise's internal systems is rapidly becoming one of the most overlooked blind spots in enterprise security. What convinced us to lead this round was watching Willow solve the problem inside Wix first, at the scale of thousands of employees, before bringing it to market.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "The gateway between AI agents and an enterprise's internal systems is rapidly becoming one of the most overlooked blind spots in enterprise security. What convinced us to lead this round was watching Willow solve the problem inside Wix first, at the scale of thousands of employees, before bringing it to market."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Hetz Ventures",
+            "speaker": "Guy Fighel",
+            "speaker_role": "Partner",
+            "rationale": "Hetz Ventures 认为 AI 代理与企业内部系统之间的网关正迅速成为企业安全中最被忽视的盲点，而 Willow 在 Wix 内部以数千名员工的规模验证了解决方案后才推向市场，这种先验证后商业化的路径是其领投的关键原因。",
+            "quote": "The gateway between AI agents and an enterprise's internal systems is rapidly becoming one of the most overlooked blind spots in enterprise security. What convinced us to lead this round was watching Willow solve the problem inside Wix first, at the scale of thousands of employees, before bringing it to market.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-799421013f33574a",
+                "quote": "The gateway between AI agents and an enterprise's internal systems is rapidly becoming one of the most overlooked blind spots in enterprise security. What convinced us to lead this round was watching Willow solve the problem inside Wix first, at the scale of thousands of employees, before bringing it to market."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 AI 代理治理层将成为继 Active Directory 和 Okta 之后企业基础设施的下一层必需品。本轮融资所依赖的已验证信号包括：在 Wix 内部以约 5000 名周活用户、600+ 治理工具和 30 万+ 周工具调用量的规模运行一年，且已有 Innovid 和 Riskified 等外部企业客户在生产环境中部署。判断的证据边界在于，这些信号目前主要来自单一深度设计合作伙伴 Wix 的内部部署数据，外部付费客户的规模和多行业复购能力尚未被公开验证。",
+        "validated_signals": [
+          "在 Wix 内部以约 5000 名周活用户、600+ 治理工具和 30 万+ 周工具调用量的规模运行一年",
+          "已获得 Innovid 和 Riskified 等外部企业客户在生产环境中部署",
+          "创始团队为前 Wix 工程师，具备构建企业级基础设施的经验"
+        ],
+        "risks": [
+          "代理访问治理是一个新兴品类，企业采购预算和流程尚未成熟，说服企业在现有安全栈之上再增加一层治理需要明确的 ROI 证明",
+          "700 万美元的种子轮资金相对于所需的企业销售周期而言规模有限，可能限制市场拓展速度",
+          "随着代理 AI 成为主流，大型网络安全厂商可能构建类似能力，竞争格局存在不确定性"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 代理治理与企业安全"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Willow Agentic Access Platform",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Willow is the AI Basecamp for the enterprise : a unified Agentic Access Platform where every AI agent gets a real identity, scoped access to exactly the tools its task requires, runtime guardrails, and a full audit trail tied to a human."
+            },
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "The platform also includes a marketplace with over 1,000 ready-to-use connectors , more than 100 skills, and more than 100 plugins"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Eyal Ben Ezra",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Founded by former Wix engineers Eyal Ben Ezra (CEO), Shalev Shalit (CTO), and Idan Chetrit (VP Platform)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Shalev Shalit",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Founded by former Wix engineers Eyal Ben Ezra (CEO), Shalev Shalit (CTO), and Idan Chetrit (VP Platform)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Idan Chetrit",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Founded by former Wix engineers Eyal Ben Ezra (CEO), Shalev Shalit (CTO), and Idan Chetrit (VP Platform)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hetz Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Willow has raised $7 million in seed funding , led by Hetz Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Avishai Abrahami",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f6d49c20866c811c",
+              "quote": "following early angel investment from Wix Co-Founder and CEO Avishai Abrahami and President Nir Zohar"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nir Zohar",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f6d49c20866c811c",
+              "quote": "following early angel investment from Wix Co-Founder and CEO Avishai Abrahami and President Nir Zohar"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Wix",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "The platform is already running in production at Wix , powering ~5,000 weekly active users across engineering, product, design, HR, finance, and legal."
+            },
+            {
+              "source_id": "FISRC-151d02054b1675c7",
+              "quote": "In one recent week, nearly 5,000 distinct users used willow to connect AI systems, exceeding the size of the engineering organization alone. The system includes almost 600 unique tools and nearly 300,000+ tool calls per week."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Innovid",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Innovid (NYSE: CTV) uses Willow to govern developer machines specifically around exposure to MCP servers and external skills, getting control and reducing AI risk without telling their engineers to stop."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Riskified",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-799421013f33574a",
+              "quote": "Riskified (NYSE: RSKD) is deploying Willow in production."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-8bbc23e53e799d9d",
+          "date": "2026-06-18",
+          "title": "Willow 获 700 万美元融资，打造企业 AI 代理治理未来",
+          "amount": "$7M",
+          "source_refs": [
+            "SA-79040909c1c77a3d"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-799421013f33574a",
+          "source_url": "https://withwillow.ai/blog/willow-7m-seed-funding",
+          "title": "Willow 获 700 万美元融资，打造企业 AI 代理治理未来",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-18T06:41:09.122Z",
+          "content_hash": "1813316511f838a0",
+          "source_artifact_id": "SA-79040909c1c77a3d",
+          "raw_id": "RAW-0e1f4b473ea156f8"
+        },
+        {
+          "source_id": "FISRC-f6d49c20866c811c",
+          "source_url": "https://www.finsmes.com/2026/06/willow-raises-7m-in-seed-funding.html",
+          "title": "Willow Raises $7M in Seed Funding",
+          "publisher": "finsmes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:31:50.773Z",
+          "content_hash": "ca0b45413738d343",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-151d02054b1675c7",
+          "source_url": "https://withwillow.ai/blog/wix-case-study",
+          "title": "How Wix scaled AI-native work to 5,000 employees with Willow | Willow",
+          "publisher": "withwillow.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:31:58.503Z",
+          "content_hash": "a126c8379b4d87c0",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:33:08.478Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:33:08.478Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-75f3824ca5cb8cb3",
+      "triggered_by_event_id": "EV-a00763037a94d512",
+      "as_of_date": "2026-06-18",
+      "company": {
+        "entity_id": "EN-cbc62794911ff31b",
+        "name": "Amazon",
+        "full_name": "Odyssey ML",
+        "website": "",
+        "summary": "一家由自动驾驶先驱创立的世界模型AI初创公司，构建能够模拟物理世界、理解物理和空间关系的通用世界模型。",
+        "headquarters": "伦敦（在苏黎世和帕洛阿尔托设有办公室）",
+        "founders": [
+          {
+            "name": "Oliver Cameron",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "Odyssey, a world model AI startup founded by self-driving vehicle pioneers CEO Oliver Cameron and CTO Jeff Hawke"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jeff Hawke",
+            "role": "CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "Odyssey, a world model AI startup founded by self-driving vehicle pioneers CEO Oliver Cameron and CTO Jeff Hawke"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "55",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "The company has 55 employees spread across London, Zurich, and Palo Alto"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e94365d0212a78f3",
+            "quote": "Odyssey, a world model AI startup founded by self-driving vehicle pioneers CEO Oliver Cameron and CTO Jeff Hawke"
+          },
+          {
+            "source_id": "FISRC-413e994d081f8e0f",
+            "quote": "Odyssey ML, co-founded by self-driving veterans Oliver Cameron and Jeff Hawke, is now valued at $1.45 billion including the new capital."
+          }
+        ]
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "3.1亿美元",
+        "total_raised": "3.37亿美元",
+        "announced_at": "2026-06-17",
+        "investors": [
+          {
+            "name": "Natural Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "has raised a $310 million Series B round at a $1.45B valuation led by Natural Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Amazon",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "with Amazon, AMD Ventures, GV, and others participating"
+              }
+            ],
+            "entity_id": "EN-cbc62794911ff31b"
+          },
+          {
+            "name": "AMD Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "with Amazon, AMD Ventures, GV, and others participating"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GV",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "with Amazon, AMD Ventures, GV, and others participating"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IQT",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c66141f186c9e128",
+                "quote": "CIA-linked fund IQT and Google chief scientist Jeff Dean are also backing the round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NVIDIA (NVentures)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-413e994d081f8e0f",
+                "quote": "NVIDIA's investment arm and AMD's investment arm both participated"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jeff Dean",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Elad Gil",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Garry Tan",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Guillermo Rauch",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kyle Vogt",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e94365d0212a78f3",
+                "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Google Ventures (GV)",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-413e994d081f8e0f",
+                "quote": "Seed $9M undisclosed Google Ventures, DCVC, Air Street Capital 2024"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "DCVC",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-413e994d081f8e0f",
+                "quote": "Seed $9M undisclosed Google Ventures, DCVC, Air Street Capital 2024"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Air Street Capital",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-413e994d081f8e0f",
+                "quote": "Seed $9M undisclosed Google Ventures, DCVC, Air Street Capital 2024"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NVentures (NVIDIA)",
+            "role": "战略轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-413e994d081f8e0f",
+                "quote": "Strategic undisclosed undisclosed NVentures (NVIDIA), Samsung Next pre-2026"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung Next",
+            "role": "战略轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-413e994d081f8e0f",
+                "quote": "Strategic undisclosed undisclosed NVentures (NVIDIA), Samsung Next pre-2026"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e94365d0212a78f3",
+            "quote": "has raised a $310 million Series B round at a $1.45B valuation led by Natural Capital, with Amazon, AMD Ventures, GV, and others participating."
+          },
+          {
+            "source_id": "FISRC-e94365d0212a78f3",
+            "quote": "The company has now raised $337 million to date."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Odyssey-2",
+          "description": "旗舰世界模型，能够根据文本或图像提示生成交互式模拟，流式延迟低于50毫秒。",
+          "target_customers": "游戏开发、机器人、模拟训练",
+          "features": [
+            "从文本或图像提示生成交互式模拟",
+            "流式延迟低于50毫秒"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Odyssey's flagship product, Odyssey-2, generates interactive simulations from text or image prompts with streaming latency under 50 milliseconds."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Starchild-1",
+          "description": "同时包含音频和空间推理能力的世界模型。",
+          "target_customers": "",
+          "features": [
+            "音频和空间推理同时进行"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Its Starchild-1 model includes audio and spatial reasoning simultaneously."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Agora-1",
+          "description": "允许多个人类和AI智能体在同一模拟环境中实时交互的世界模型。",
+          "target_customers": "多人游戏、协作模拟、智能体训练",
+          "features": [
+            "多人类与AI智能体实时交互",
+            "仅通过观察学习游戏世界行为"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Agora-1 goes further: it lets multiple humans and AI agents interact inside the same simulated environment in real time."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "B轮融资额",
+          "value": "3.1亿美元",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "has raised a $310 million Series B round"
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "14.5亿美元",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "at a $1.45B valuation"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "3.37亿美元",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "The company has now raised $337 million to date."
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "55人",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "The company has 55 employees spread across London, Zurich, and Palo Alto"
+            }
+          ]
+        },
+        {
+          "label": "种子轮融资额",
+          "value": "900万美元",
+          "observed_at": "2024",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Seed $9M undisclosed Google Ventures, DCVC, Air Street Capital 2024"
+            }
+          ]
+        },
+        {
+          "label": "当前基础设施运行成本",
+          "value": "每用户小时1-2美元",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Its current infrastructure runs at $1-2 per user-hour on NVIDIA H100 clusters."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Oliver Cameron",
+          "quote": "World models will have a much more complete understanding of the world - physics, body language, dynamics - all these things that exist in the world that language doesn't really capture.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "World models will have a much more complete understanding of the world - physics, body language, dynamics - all these things that exist in the world that language doesn't really capture"
+            }
+          ]
+        },
+        {
+          "speaker": "Jay Zaveri",
+          "quote": "a second wave of AI beyond current systems",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Jay Zaveri of Natural Capital, one of the round's participants, described the investment as funding \"a second wave of AI beyond current systems.\""
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Natural Capital",
+            "speaker": "Jay Zaveri",
+            "speaker_role": "Natural Capital成员",
+            "rationale": "认为世界模型代表了超越当前语言模型系统的AI第二波浪潮。",
+            "quote": "a second wave of AI beyond current systems",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-413e994d081f8e0f",
+                "quote": "Jay Zaveri of Natural Capital, one of the round's participants, described the investment as funding \"a second wave of AI beyond current systems.\""
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是世界模型能否从当前的“GPT-2时刻”跨越到具备通用泛化能力的“GPT-3等效阶段”。本轮融资的已验证信号包括：创始人来自Cruise和Wayve的自动驾驶背景，具备构建理解物理空间系统的经验；公司已推出Odyssey-2、Starchild-1和Agora-1三款产品，其中Agora-1展示了仅通过观察学习游戏世界行为的能力；亚马逊以云合同绑定Trainium芯片采用，提供了基础设施层面的战略背书。但当前估值14.5亿美元建立在55人团队和尚未披露商业收入的基础上，判断的证据边界受限于缺乏客户验证和营收数据。",
+        "validated_signals": [
+          "创始人Oliver Cameron曾任Cruise产品副总裁，Jeff Hawke为Wayve创始工程师，具备自动驾驶领域物理空间系统构建经验",
+          "已发布三款世界模型产品（Odyssey-2、Starchild-1、Agora-1），Agora-1可仅通过像素、动作和声音观察学习游戏世界行为",
+          "亚马逊以AWS优先云提供商身份进入，要求Odyssey优化模型以运行在Trainium芯片上",
+          "NVIDIA和AMD同时出现在同一张资本表上，表明芯片竞争对手均在对冲世界模型工作负载可能转移各自市场地位的风险",
+          "CIA关联基金IQT参投，暗示世界模型在情报和国家安全领域有明确应用前景"
+        ],
+        "risks": [
+          "世界模型可能停滞在“GPT-2时刻”——在狭窄条件下表现出色，但缺乏真实应用所需的泛化能力，无法达到商业可行性阈值",
+          "对Trainium芯片的平台锁定引入执行风险：若亚马逊芯片在生产环境中表现不佳，重新谈判安排将很困难，类似Anthropic-Trainium合作已出现摩擦"
+        ],
+        "related_direction_id": "",
+        "sector": "世界模型/物理AI"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Odyssey-2",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Odyssey's flagship product, Odyssey-2, generates interactive simulations from text or image prompts with streaming latency under 50 milliseconds."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Starchild-1",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Its Starchild-1 model includes audio and spatial reasoning simultaneously."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Agora-1",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Agora-1 goes further: it lets multiple humans and AI agents interact inside the same simulated environment in real time."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Oliver Cameron",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "Odyssey, a world model AI startup founded by self-driving vehicle pioneers CEO Oliver Cameron and CTO Jeff Hawke"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jeff Hawke",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "Odyssey, a world model AI startup founded by self-driving vehicle pioneers CEO Oliver Cameron and CTO Jeff Hawke"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Natural Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "has raised a $310 million Series B round at a $1.45B valuation led by Natural Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Amazon",
+          "canonical_entity_id": "EN-cbc62794911ff31b",
+          "canonical_name": "Amazon",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "with Amazon, AMD Ventures, GV, and others participating"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AMD Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "with Amazon, AMD Ventures, GV, and others participating"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GV",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "with Amazon, AMD Ventures, GV, and others participating"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IQT",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c66141f186c9e128",
+              "quote": "CIA-linked fund IQT and Google chief scientist Jeff Dean are also backing the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NVIDIA (NVentures)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "NVIDIA's investment arm and AMD's investment arm both participated"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jeff Dean",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Elad Gil",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Garry Tan",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Guillermo Rauch",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kyle Vogt",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e94365d0212a78f3",
+              "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Google Ventures (GV)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Seed $9M undisclosed Google Ventures, DCVC, Air Street Capital 2024"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "DCVC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Seed $9M undisclosed Google Ventures, DCVC, Air Street Capital 2024"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Air Street Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Seed $9M undisclosed Google Ventures, DCVC, Air Street Capital 2024"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NVentures (NVIDIA)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Strategic undisclosed undisclosed NVentures (NVIDIA), Samsung Next pre-2026"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung Next",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-413e994d081f8e0f",
+              "quote": "Strategic undisclosed undisclosed NVentures (NVIDIA), Samsung Next pre-2026"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-dcbe916c6138e5cb",
+          "date": "2026-07-12",
+          "title": "Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化",
+          "amount": "$50M",
+          "source_refs": [
+            "SA-54c975700d2d6969"
+          ]
+        },
+        {
+          "event_id": "EV-34255348e97ca5fe",
+          "date": "2026-06-27",
+          "title": "Orthogonal 获 430 万美元种子轮融资，用于互联网上的 AI 代理服务发现、编排与支付",
+          "amount": "$4.3 million",
+          "source_refs": [
+            "SA-3361d7570a89b2cd"
+          ]
+        },
+        {
+          "event_id": "EV-a00763037a94d512",
+          "date": "2026-06-17",
+          "title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+          "amount": "$310 million",
+          "source_refs": [
+            "SA-fcd9ebc070d58333",
+            "SA-01fd368af14b9cdb"
+          ]
+        },
+        {
+          "event_id": "EV-02548003157849bb",
+          "date": "2026-06-11",
+          "title": "贝佐斯 AI 初创公司 Prometheus 获融资，估值 410 亿美元",
+          "amount": "$41 billion",
+          "source_refs": [
+            "SA-eaddbd46096856ec"
+          ]
+        },
+        {
+          "event_id": "EV-8b0f056571d68269",
+          "date": "2026-01-19",
+          "title": "AI 初创公司：印度 Aivar 获 460 万美元融资，推动企业 AI 应用",
+          "amount": "$4.6M",
+          "source_refs": [
+            "SA-8c77d3c6dec6efe6"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e94365d0212a78f3",
+          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+          "title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-18T06:41:08.803Z",
+          "content_hash": "75587989c4b9271c",
+          "source_artifact_id": "SA-fcd9ebc070d58333",
+          "raw_id": "RAW-c95056276c76a4e0"
+        },
+        {
+          "source_id": "FISRC-c66141f186c9e128",
+          "source_url": "https://the-decoder.com/amazon-nvidia-and-amd-bet-310-million-on-ai-startup-building-3d-world-models",
+          "title": "亚马逊、英伟达和AMD向AI初创公司Odyssey投资3.1亿美元，用于构建3D世界模型",
+          "publisher": "The Decoder：AI News（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-18T06:41:09.272Z",
+          "content_hash": "f61b7cc13d637211",
+          "source_artifact_id": "SA-01fd368af14b9cdb",
+          "raw_id": "RAW-993e959cf793df4c"
+        },
+        {
+          "source_id": "FISRC-413e994d081f8e0f",
+          "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
+          "title": "Odyssey Raises $310M as Amazon Bets on World Models | Awesome Agents",
+          "publisher": "awesomeagents.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:31:50.214Z",
+          "content_hash": "37401997b6a46d75",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:32:55.707Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:32:55.707Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-bd91e0a6740c87ee",
+      "triggered_by_event_id": "EV-044b917005a8f611",
+      "as_of_date": "2026-06-18",
+      "company": {
+        "entity_id": "EN-b4835ed157e04983",
+        "name": "VoiceRun",
+        "full_name": "VoiceRun",
+        "website": "",
+        "summary": "VoiceRun 是一家面向企业的语音 AI 智能体开发平台，采用代码优先（code-first）方法，让技术团队在保留应用层代码完全所有权的同时，快速构建、治理和规模化部署满足严格可靠性、安全性与合规要求的语音 AI 智能体。",
+        "headquarters": "Cambridge, Massachusetts",
+        "founders": [
+          {
+            "name": "Nick Leonard",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4b3f6b59387f35f7",
+                "quote": "VoiceRun co-founder and Chief Executive Nick Leonard"
+              },
+              {
+                "source_id": "FISRC-60b4b11673758f7f",
+                "quote": "VoiceRun was co-founded by CEO Nicholas Leonard and CTO Derek Caneja"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Derek Caneja",
+            "role": "联合创始人兼CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-60b4b11673758f7f",
+                "quote": "VoiceRun was co-founded by CEO Nicholas Leonard and CTO Derek Caneja"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4b3f6b59387f35f7",
+            "quote": "VoiceRun, a startup that’s helping enterprises to develop voice-enabled artificial intelligence agents that they control"
+          },
+          {
+            "source_id": "FISRC-60b4b11673758f7f",
+            "quote": "VoiceRun, the Cambridge, Massachusetts–based enterprise voice artificial intelligence startup"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$5.5 million",
+        "total_raised": "$5.5 million",
+        "announced_at": "2026-01-14",
+        "investors": [
+          {
+            "name": "Flybridge Capital Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4b3f6b59387f35f7",
+                "quote": "Today’s round was led by Flybridge Capital Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "RRE Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4b3f6b59387f35f7",
+                "quote": "and saw participation from RRE Ventures and Link Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Link Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4b3f6b59387f35f7",
+                "quote": "and saw participation from RRE Ventures and Link Ventures"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4b3f6b59387f35f7",
+            "quote": "has raised $5.5 million in seed funding"
+          },
+          {
+            "source_id": "FISRC-a2a028102c283908",
+            "quote": "VoiceRun raised $5.5 million in seed funding led by Flybridge Capital Partners, with participation from RRE Ventures and Link Ventures"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "VoiceRun 平台",
+          "description": "一个面向企业的全栈语音 AI 智能体开发平台，采用代码优先方法，提供可插拔的语音识别、大语言模型和语音合成管线，以及电话集成、延迟管理和可观测性工具，支持公有云、虚拟私有云和本地部署。",
+          "target_customers": "餐饮科技、保险、银行和电信等行业中需要部署生产级语音 AI 智能体的企业技术团队",
+          "features": [
+            "可插拔的 STT、LLM、TTS 管线",
+            "代码优先的开发工作流（Git/命令行）",
+            "一键电话集成",
+            "LLM-as-a-judge 评估",
+            "端到端遥测与合成数据生成",
+            "灵活的部署选项（公有云、VPC、本地）"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b3f6b59387f35f7",
+              "quote": "The first is the infrastructure and orchestration layer, which uses pluggable LLM, speech-to-text and text-to-speech pipelines, interruptible prompts and one-click telephony"
+            },
+            {
+              "source_id": "FISRC-a2a028102c283908",
+              "quote": "The platform offers a code-first approach with flexible deployment options, allowing enterprises to maintain full code ownership while accessing real-time orchestration for speech-to-text, LLMs, and text-to-speech."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Tivly",
+          "industry": "保险",
+          "use_case": "利用 VoiceRun 平台在数周内从零完成生产级语音 AI 智能体的部署，并通过平台的工具和 AI 评估持续提升准确率和客户满意度。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a2a028102c283908",
+              "quote": "Chad Jaquays, COO and Co-Founder at Tivly, described his company's experience with the platform. \"VoiceRun took us from zero to production deployment in weeks,\" said Jaquays."
+            },
+            {
+              "source_id": "FISRC-8e3cfa068ec81a05",
+              "quote": "\"VoiceRun took us from zero to production deployment in weeks,\" Chad Jaquays, COO and co-founder at Tivly, said in the release."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Bland",
+          "product": "Bland 无代码语音构建器",
+          "scenario": "快速构建语音智能体演示",
+          "target_customer": "需要快速演示的团队",
+          "funding_summary": "Bland raises $50M",
+          "core_difference": "Bland 提供无代码工具，侧重快速演示；VoiceRun 提供代码优先平台，让开发者通过编写代码定义智能体行为，实现更深度的定制和企业级基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8838450be15d7b05",
+              "quote": "On one end are no-code voice builders like Bland and ReTell AI, which offer quick demos."
+            },
+            {
+              "source_id": "FISRC-4b3f6b59387f35f7",
+              "quote": "Bland raises $50M to automate complex, high-stakes phone calls"
+            }
+          ]
+        },
+        {
+          "name": "ReTell AI",
+          "product": "ReTell AI 无代码语音构建器",
+          "scenario": "快速构建语音智能体演示",
+          "target_customer": "需要快速演示的团队",
+          "funding_summary": "",
+          "core_difference": "ReTell AI 提供无代码工具，侧重快速演示；VoiceRun 提供代码优先平台，让开发者通过编写代码定义智能体行为，实现更深度的定制和企业级基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8838450be15d7b05",
+              "quote": "On one end are no-code voice builders like Bland and ReTell AI, which offer quick demos."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "预计2025年底使用AI智能体的企业比例",
+          "value": "85%",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a2a028102c283908",
+              "quote": "With 85% of enterprises expected to use AI agents by the end of 2025"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Nick Leonard",
+          "quote": "Many enterprise projects stall between an impressive demo and a dependable production rollout. We give teams code ownership, deployment flexibility and deep observability so they can move fast, clear security reviews and deliver production-ready solutions at scale.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b3f6b59387f35f7",
+              "quote": "“Many enterprise projects stall between an impressive demo and a dependable production rollout,” he explained. “We give teams code ownership, deployment flexibility and deep observability so they can move fast, clear security reviews and deliver production-ready solutions at scale.”"
+            }
+          ]
+        },
+        {
+          "speaker": "Chip Hazard",
+          "quote": "Bringing these applications into production presents a paralyzing build-versus-buy decision. VoiceRun offers the missing piece which empowers enterprises to build, govern and scale world-class voice deployments.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b3f6b59387f35f7",
+              "quote": "“Bringing these applications into production presents a paralyzing build-versus-buy decision,” he said. “VoiceRun offers the missing piece which empowers enterprises to build, govern and scale world-class voice deployments.”"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮融资的核心押注在于：企业语音 AI 正从演示阶段迈向大规模生产部署，而现有工具在灵活性与企业级控制之间存在断层。VoiceRun 的代码优先架构和部署灵活性（VPC/本地部署）直接回应了企业对安全、合规和代码所有权的刚性需求，这是其获得资本的关键验证信号。判断的证据边界限于已披露的种子轮融资、早期客户 Tivly 的生产部署案例，以及 Flybridge 合伙人对“自建还是购买”痛点的公开论述，尚未涉及规模化营收或广泛客户验证。",
+        "validated_signals": [
+          "企业客户 Tivly 在数周内从零完成生产级语音智能体部署，并通过平台工具持续提升准确率与客户满意度",
+          "平台支持 VPC 和本地部署，满足企业对数据驻留和合规的严格要求",
+          "代码优先方法让企业保留应用层代码完全所有权，解决了企业对供应商锁定的顾虑"
+        ],
+        "risks": [
+          "语音 AI 市场竞争激烈，既有 Bland 等快速演示工具，也有 LiveKit 等提供最大控制权的开发者工具，VoiceRun 的中间定位可能面临两端挤压"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业语音 AI 基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "VoiceRun 平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b3f6b59387f35f7",
+              "quote": "The first is the infrastructure and orchestration layer, which uses pluggable LLM, speech-to-text and text-to-speech pipelines, interruptible prompts and one-click telephony"
+            },
+            {
+              "source_id": "FISRC-a2a028102c283908",
+              "quote": "The platform offers a code-first approach with flexible deployment options, allowing enterprises to maintain full code ownership while accessing real-time orchestration for speech-to-text, LLMs, and text-to-speech."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Nick Leonard",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b3f6b59387f35f7",
+              "quote": "VoiceRun co-founder and Chief Executive Nick Leonard"
+            },
+            {
+              "source_id": "FISRC-60b4b11673758f7f",
+              "quote": "VoiceRun was co-founded by CEO Nicholas Leonard and CTO Derek Caneja"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Derek Caneja",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-60b4b11673758f7f",
+              "quote": "VoiceRun was co-founded by CEO Nicholas Leonard and CTO Derek Caneja"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Flybridge Capital Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b3f6b59387f35f7",
+              "quote": "Today’s round was led by Flybridge Capital Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "RRE Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b3f6b59387f35f7",
+              "quote": "and saw participation from RRE Ventures and Link Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Link Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b3f6b59387f35f7",
+              "quote": "and saw participation from RRE Ventures and Link Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Tivly",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a2a028102c283908",
+              "quote": "Chad Jaquays, COO and Co-Founder at Tivly, described his company's experience with the platform. \"VoiceRun took us from zero to production deployment in weeks,\" said Jaquays."
+            },
+            {
+              "source_id": "FISRC-8e3cfa068ec81a05",
+              "quote": "\"VoiceRun took us from zero to production deployment in weeks,\" Chad Jaquays, COO and co-founder at Tivly, said in the release."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Bland",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8838450be15d7b05",
+              "quote": "On one end are no-code voice builders like Bland and ReTell AI, which offer quick demos."
+            },
+            {
+              "source_id": "FISRC-4b3f6b59387f35f7",
+              "quote": "Bland raises $50M to automate complex, high-stakes phone calls"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "ReTell AI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8838450be15d7b05",
+              "quote": "On one end are no-code voice builders like Bland and ReTell AI, which offer quick demos."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-044b917005a8f611",
+          "date": "2026-06-18",
+          "title": "VoiceRun 获 550 万美元种子轮融资，助力企业增强对语音 AI 智能体的控制",
+          "amount": "$5.5 million",
+          "source_refs": [
+            "SA-c035be881cc8d4aa"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-4b3f6b59387f35f7",
+          "source_url": "https://siliconangle.com/2026/01/14/voicerun-gets-5-5m-seed-funding-give-enterprises-control-voice-ai-agents/",
+          "title": "VoiceRun 获 550 万美元种子轮融资，助力企业增强对语音 AI 智能体的控制",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-18T06:41:08.952Z",
+          "content_hash": "3250994a6860b476",
+          "source_artifact_id": "SA-c035be881cc8d4aa",
+          "raw_id": "RAW-20bba439adc5a3a1"
+        },
+        {
+          "source_id": "FISRC-a2a028102c283908",
+          "source_url": "https://technews180.com/funding-news/voicerun-secures-5-5m-seed-led-by-flybridge-capital/",
+          "title": "VoiceRun Secures $5.5M Seed Led by Flybridge Capital",
+          "publisher": "technews180.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:31:49.167Z",
+          "content_hash": "89918800de8eb700",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8e3cfa068ec81a05",
+          "source_url": "https://aibusiness.com/agentic-ai/voicerun-startup-full-stack-voice-ai-platform",
+          "title": "VoiceRun Raises $5.5M for Full-Stack Voice AI Platform",
+          "publisher": "aibusiness.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:31:49.420Z",
+          "content_hash": "6eba72c257b625a8",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-60b4b11673758f7f",
+          "source_url": "https://vctavern.com/voicerun-raises-5-5-million-seed-round-to-scale-code-first-enterprise-voice-ai-platform/",
+          "title": "VoiceRun Raises $5.5 Million Seed Round to Scale Code-First Enterprise Voice AI Platform - VC Tavern",
+          "publisher": "vctavern.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:31:53.846Z",
+          "content_hash": "53986dd39e46b973",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8838450be15d7b05",
+          "source_url": "https://learnaiwithkesse.wiki/voicerun-secures-5-5m-for-developing-voice-agent-production-facility/",
+          "title": "VoiceRun secures $5.5M for developing voice agent production facility. - Learn AI With Kesse | Best Place For AI News",
+          "publisher": "learnaiwithkesse.wiki",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:32:03.793Z",
+          "content_hash": "fcf0aa8fbce32f27",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:32:38.172Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:32:38.172Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-a00763037a94d512",
+      "company_name": "Amazon",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Amazon\" \"$310 million\" funding investors round",
+        "\"Amazon\" product customers case study",
+        "\"Amazon\" \"世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元\" competitors product use case",
+        "\"Amazon\" \"$310 million\" investor quote why invested",
+        "\"Amazon\" \"$310 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Amazon\" \"$310 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Amazon\" \"$310 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Amazon\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Amazon\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Amazon\" \"世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Amazon\" \"世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Amazon\" \"$310 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Amazon\" \"$310 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Amazon\" \"$310 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Amazon\" \"$310 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:33:32.112Z"
+    },
+    {
+      "event_id": "EV-085cb0ece7ede76c",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-26T15:12:24.737Z"
+    },
+    {
+      "event_id": "EV-044b917005a8f611",
+      "company_name": "VoiceRun",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"VoiceRun\" \"$5.5 million\" funding investors round",
+        "\"VoiceRun\" product customers case study",
+        "\"VoiceRun\" \"VoiceRun gets $5.5M in seed funding to give enterprises more control over voice AI agents - SiliconANGLE\" competitors product use case",
+        "\"VoiceRun\" \"$5.5 million\" investor quote why invested",
+        "\"VoiceRun\" \"$5.5 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"VoiceRun\" \"$5.5 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"VoiceRun\" \"$5.5 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"VoiceRun\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"VoiceRun\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"VoiceRun\" \"VoiceRun gets $5.5M in seed funding to give enterprises more control over voice AI agents - SiliconANGLE\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"VoiceRun\" \"VoiceRun gets $5.5M in seed funding to give enterprises more control over voice AI agents - SiliconANGLE\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"VoiceRun\" \"$5.5 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"VoiceRun\" \"$5.5 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"VoiceRun\" \"$5.5 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"VoiceRun\" \"$5.5 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:33:32.112Z"
+    },
+    {
+      "event_id": "EV-8bbc23e53e799d9d",
+      "company_name": "Willow",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Willow\" \"$7M\" funding investors round",
+        "\"Willow\" product customers case study",
+        "\"Willow\" \"Willow Launches with $7M to Build the Future of Enterprise AI Agent Governance | Willow\" competitors product use case",
+        "\"Willow\" \"$7M\" investor quote why invested",
+        "\"Willow\" \"$7M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Willow\" \"$7M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Willow\" \"$7M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Willow\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Willow\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Willow\" \"Willow Launches with $7M to Build the Future of Enterprise AI Agent Governance | Willow\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Willow\" \"Willow Launches with $7M to Build the Future of Enterprise AI Agent Governance | Willow\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Willow\" \"$7M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Willow\" \"$7M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Willow\" \"$7M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Willow\" \"$7M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:33:32.112Z"
+    },
+    {
+      "event_id": "EV-8c2fdaad276818b0",
+      "company_name": "INXM",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"INXM\" \"€5.7 Million\" funding investors round",
+        "\"INXM\" product customers case study",
+        "\"INXM\" \"INXM Raises €5.7 Million Pre-Seed To Bridge The Gap Between Enterprise AI Demos And Real Operational Deployment\" competitors product use case",
+        "\"INXM\" \"€5.7 Million\" investor quote why invested",
+        "\"INXM\" \"€5.7 Million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"INXM\" \"€5.7 Million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"INXM\" \"€5.7 Million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"INXM\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"INXM\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"INXM\" \"INXM Raises €5.7 Million Pre-Seed To Bridge The Gap Between Enterprise AI Demos And Real Operational Deployment\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"INXM\" \"INXM Raises €5.7 Million Pre-Seed To Bridge The Gap Between Enterprise AI Demos And Real Operational Deployment\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"INXM\" \"€5.7 Million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"INXM\" \"€5.7 Million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"INXM\" \"€5.7 Million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"INXM\" \"€5.7 Million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:33:32.112Z"
+    }
+  ]
+}

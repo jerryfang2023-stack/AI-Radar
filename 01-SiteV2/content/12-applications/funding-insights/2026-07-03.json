@@ -1,0 +1,678 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-03",
+    "generated_at": "2026-07-26T15:16:11.689Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 1,
+      "blocked": 1,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-27f66cc32481ad8e",
+      "triggered_by_event_id": "EV-9300044a58395552",
+      "as_of_date": "2026-07-03",
+      "company": {
+        "entity_id": "EN-7106dbc04a08ce3a",
+        "name": "Chamath Palihapitiya",
+        "full_name": "8090 Labs",
+        "website": "8090.ai",
+        "summary": "8090 Labs 是一家由 Chamath Palihapitiya 于 2024 年 1 月创立的 AI 编程初创公司，专注于为企业编程团队提供 AI 编码智能体，其产品 Software Factory 旨在帮助企业在受监管行业中构建具备审计追踪与合规控制的生产级软件。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Chamath Palihapitiya",
+            "role": "创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-392b2fac8b63845f",
+                "quote": "Palihapitiya founded 8090 Labs in January 2024 to offer an AI coding agent specifically for corporate programming teams."
+              },
+              {
+                "source_id": "FISRC-392b2fac8b63845f",
+                "quote": "he will lead the startup as CEO, rather than just serving as a board member."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-392b2fac8b63845f",
+            "quote": "The company, 8090 Labs, closed a $135 million round"
+          },
+          {
+            "source_id": "FISRC-053be5c994e5ae8c",
+            "quote": "8090 Labs, closed a $135 million round led by Salesforce Ventures"
+          }
+        ]
+      },
+      "financing": {
+        "round": "A 轮",
+        "amount": "1.35 亿美元",
+        "total_raised": "1.35 亿美元",
+        "announced_at": "2026-06-29",
+        "investors": [
+          {
+            "name": "Salesforce Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-392b2fac8b63845f",
+                "quote": "closed a $135 million round led by Salesforce Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "The Production Board",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-392b2fac8b63845f",
+                "quote": "David Friedberg (The Production Board)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Launch",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-392b2fac8b63845f",
+                "quote": "Jason Calacanis (Launch)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nikesh Arora",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-392b2fac8b63845f",
+                "quote": "angel investors like Palo Alto Networks CEO Nikesh Arora"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-392b2fac8b63845f",
+            "quote": "Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Software Factory",
+          "description": "一个面向企业编程团队的 AI 编码平台，将人员与 AI 智能体整合到单一协作环境中，连接业务意图、需求、架构、工单、代码、测试和生产维护，输出具备审计追踪与合规控制的生产级软件，而非快速原型。",
+          "target_customers": "医疗、保险、生命科学、航空航天、能源、金融服务及政府等受监管行业的企业编程团队",
+          "features": [
+            "审计追踪",
+            "企业级合规控制",
+            "生产级代码生成",
+            "多智能体与工程师协作编排",
+            "从想法到部署的可视化与问责"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-392b2fac8b63845f",
+              "quote": "Its product, Software Factory, helps corporate coders use AI to build production-quality software, not just vibe-coded prototypes, with all the controls enterprises need, such as audit trails"
+            },
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "Software Factory brings people and AI agents into a single collaborative environment, connecting business intent, requirements, architecture, work orders, code, testing, and production maintenance."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "一家上市健康保险公司",
+          "industry": "医疗保险",
+          "use_case": "将应付理赔规则转化为确定性预过滤器，使超过 80% 的理赔不再流向按件收费供应商，四年内避免超过 2000 万美元支出。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "A publicly traded health insurer turned its payable-claims rules into a deterministic pre-filter, routing more than 80% fewer claims to a pay-per-catch vendor and avoiding more than $20 million over four years."
+            }
+          ]
+        },
+        {
+          "name": "一家生命科学客户",
+          "industry": "生命科学",
+          "use_case": "将新诊断方法的全球研发上市时间从五年缩短至四年。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "A life sciences customer cut time-to-market for a new diagnostic from five years to four across global R&D."
+            }
+          ]
+        },
+        {
+          "name": "一家制造商",
+          "industry": "制造业",
+          "use_case": "将超过 10,000 个零部件纳入实时验证，自动审批覆盖超过 1,000 名用户。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "a manufacturer brought more than 10,000 parts under real-time validation, with automatic approvals reaching more than 1,000 users."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Anthropic",
+          "product": "Claude Code",
+          "scenario": "企业级 AI 编码与开发辅助",
+          "target_customer": "企业 IT 部门与开发者",
+          "funding_summary": "2026 年 5 月完成 650 亿美元 H 轮融资，估值 9650 亿美元",
+          "core_difference": "8090 的 Software Factory 强调审计追踪与企业合规控制，瞄准受监管行业的生产级软件交付；Anthropic 的 Claude Code 主要推动其商业牵引力，但来源未提及其是否具备同等的企业合规与审计能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e9f47e2c5f47c5b",
+              "quote": "Anthropic, whose Claude Code product has driven much of its commercial traction, closed a $65 billion Series H round in May that valued the company at $965 billion."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "逆向工程 COBOL 与 Assembly 代码行数",
+          "value": "超过 1800 万行",
+          "observed_at": "2026-06-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "8090 reverse-engineered more than 18 million lines of COBOL and Assembly behind a healthcare billing engine into more than 300,000 plain-English rules in 40 days."
+            }
+          ]
+        },
+        {
+          "label": "转化为简明英语规则数量",
+          "value": "超过 30 万条",
+          "observed_at": "2026-06-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "more than 300,000 plain-English rules in 40 days."
+            }
+          ]
+        },
+        {
+          "label": "健康保险公司理赔过滤比例",
+          "value": "减少超过 80% 的理赔流向按件收费供应商",
+          "observed_at": "2026-06-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "routing more than 80% fewer claims to a pay-per-catch vendor"
+            }
+          ]
+        },
+        {
+          "label": "健康保险公司四年避免支出",
+          "value": "超过 2000 万美元",
+          "observed_at": "2026-06-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "avoiding more than $20 million over four years."
+            }
+          ]
+        },
+        {
+          "label": "生命科学客户研发周期缩短",
+          "value": "从五年缩短至四年",
+          "observed_at": "2026-06-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "A life sciences customer cut time-to-market for a new diagnostic from five years to four across global R&D."
+            }
+          ]
+        },
+        {
+          "label": "制造商实时验证零部件数量",
+          "value": "超过 10,000 个",
+          "observed_at": "2026-06-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "a manufacturer brought more than 10,000 parts under real-time validation"
+            }
+          ]
+        },
+        {
+          "label": "制造商自动审批覆盖用户数",
+          "value": "超过 1,000 名",
+          "observed_at": "2026-06-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "automatic approvals reaching more than 1,000 users."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Chamath Palihapitiya",
+          "quote": "The best companies in the world build custom software that captures what makes them unique. We built Software Factory on the belief that every organization should be able to do the same thing.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "The best companies in the world build custom software that captures what makes them unique. We built Software Factory on the belief that every organization should be able to do the same thing."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮资本押注的核心变量是“企业 AI 编码从原型走向生产级合规交付”的范式转换。1.35 亿美元 A 轮融资的规模远超常规，其依赖的已验证信号包括：8090 已在医疗、制造、生命科学等受监管行业交付了可量化的客户成果（如理赔过滤减少 80% 以上、研发周期缩短一年），且 Salesforce Ventures 领投意味着其可能获得全球最大企业 SaaS 分销渠道的入口。然而，这些信号均来自公司官方新闻稿，尚未经独立审计或客户公开背书验证，因此资本判断的证据边界限于公司自述的客户指标与投资方战略协同的推断。",
+        "validated_signals": [
+          "在受监管行业（医疗、制造、生命科学）已有可量化的客户交付成果，包括理赔过滤率、研发周期缩短、零部件实时验证等具体指标。",
+          "Salesforce Ventures 领投，暗示其可能接入 Salesforce 的企业销售渠道，为进入财富 500 强 IT 采购流程提供分销杠杆。",
+          "创始人 Chamath Palihapitiya 从投资人转为全职 CEO，表明其对这一机会的个人承诺与运营投入。"
+        ],
+        "risks": [
+          "所有客户成果与产品能力均来自公司官方发布，缺乏独立第三方验证或客户公开背书，存在夸大或选择性披露的风险。",
+          "企业 AI 编码市场竞争激烈，Anthropic 与 OpenAI 等对手已占据开发者心智与预算，8090 能否在安全审查而非产品演示中持续赢得企业合同尚未证实。",
+          "Salesforce 自身正在推进 Agentforce AI 智能体，其与 8090 的关系可能从互补演变为竞争，分销渠道的稳定性存在不确定性。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业 AI 编码与软件交付"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Software Factory",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-392b2fac8b63845f",
+              "quote": "Its product, Software Factory, helps corporate coders use AI to build production-quality software, not just vibe-coded prototypes, with all the controls enterprises need, such as audit trails"
+            },
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "Software Factory brings people and AI agents into a single collaborative environment, connecting business intent, requirements, architecture, work orders, code, testing, and production maintenance."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Chamath Palihapitiya",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-392b2fac8b63845f",
+              "quote": "Palihapitiya founded 8090 Labs in January 2024 to offer an AI coding agent specifically for corporate programming teams."
+            },
+            {
+              "source_id": "FISRC-392b2fac8b63845f",
+              "quote": "he will lead the startup as CEO, rather than just serving as a board member."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Salesforce Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-392b2fac8b63845f",
+              "quote": "closed a $135 million round led by Salesforce Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "The Production Board",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-392b2fac8b63845f",
+              "quote": "David Friedberg (The Production Board)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Launch",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-392b2fac8b63845f",
+              "quote": "Jason Calacanis (Launch)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nikesh Arora",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-392b2fac8b63845f",
+              "quote": "angel investors like Palo Alto Networks CEO Nikesh Arora"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家上市健康保险公司",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "A publicly traded health insurer turned its payable-claims rules into a deterministic pre-filter, routing more than 80% fewer claims to a pay-per-catch vendor and avoiding more than $20 million over four years."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家生命科学客户",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "A life sciences customer cut time-to-market for a new diagnostic from five years to four across global R&D."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家制造商",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-21a379c91a90bee1",
+              "quote": "a manufacturer brought more than 10,000 parts under real-time validation, with automatic approvals reaching more than 1,000 users."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e9f47e2c5f47c5b",
+              "quote": "Anthropic, whose Claude Code product has driven much of its commercial traction, closed a $65 billion Series H round in May that valued the company at $965 billion."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-9300044a58395552",
+          "date": "2026-07-03",
+          "title": "Chamath Palihapitiya 为其 AI 编程初创公司筹集 1.35 亿美元 A 轮融资，并出任 CEO",
+          "amount": "$135M",
+          "source_refs": [
+            "SA-5c97c976507644a9"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-392b2fac8b63845f",
+          "source_url": "https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/",
+          "title": "Chamath Palihapitiya 为其 AI 编程初创公司筹集 1.35 亿美元 A 轮融资，并出任 CEO",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-03T01:59:31.112Z",
+          "content_hash": "3d3c1a68251829f0",
+          "source_artifact_id": "SA-5c97c976507644a9",
+          "raw_id": "RAW-92d60c0df2942572"
+        },
+        {
+          "source_id": "FISRC-1e9f47e2c5f47c5b",
+          "source_url": "https://siliconcanals.com/sc-n-chamath-palihapitiya-just-took-his-first-full-time-operating-job-since-facebook-and-the-135m-cap-table-behind-it-reveals-what-the-ai-coding-war-is-really-about/",
+          "title": "Chamath Palihapitiya just took his first full-time operating job since Facebook — and the $135M cap table behind it reveals what the AI coding war is really about - Silicon Canals",
+          "publisher": "siliconcanals.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:43:09.176Z",
+          "content_hash": "7e96cbed361c465c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-21a379c91a90bee1",
+          "source_url": "https://www.morningstar.com/news/business-wire/20260626795833/8090-raises-135m-series-a-to-accelerate-their-rollout-of-software-factory",
+          "title": "8090 Raises $135M Series A to Accelerate Their Rollout of Software ...",
+          "publisher": "morningstar.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:43:20.556Z",
+          "content_hash": "240b42a82b36187d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-053be5c994e5ae8c",
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/chamath-palihapitiya-raises-135m-series-205550544.html",
+          "title": "Chamath Palihapitiya raises $135M Series A for his AI coding startup ...",
+          "publisher": "finance.yahoo.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:43:21.162Z",
+          "content_hash": "7b9cfa8d1d82de9c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:44:10.588Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:44:10.588Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-9300044a58395552",
+      "company_name": "Chamath Palihapitiya",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Chamath Palihapitiya\" \"$135M\" funding investors round",
+        "\"Chamath Palihapitiya\" product customers case study",
+        "\"Chamath Palihapitiya\" \"Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role | TechCrunch\" competitors product use case",
+        "\"Chamath Palihapitiya\" \"$135M\" investor quote why invested",
+        "\"Chamath Palihapitiya\" \"$135M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Chamath Palihapitiya\" \"$135M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Chamath Palihapitiya\" \"$135M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Chamath Palihapitiya\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Chamath Palihapitiya\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Chamath Palihapitiya\" \"Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role | TechCrunch\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Chamath Palihapitiya\" \"Chamath Palihapitiya raises $135M Series A for his AI coding startup, takes CEO role | TechCrunch\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Chamath Palihapitiya\" \"$135M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Chamath Palihapitiya\" \"$135M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Chamath Palihapitiya\" \"$135M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Chamath Palihapitiya\" \"$135M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:44:10.645Z"
+    },
+    {
+      "event_id": "EV-4b8064b1139e1724",
+      "company_name": "AI Finance Automation Case Study",
+      "status": "blocked",
+      "problems": [
+        "deepseek_json_quality_failed:funding_round_missing|funding_amount_missing|investors_missing"
+      ],
+      "queries": [
+        "\"AI Finance Automation Case Study\" \"$850\" funding investors round",
+        "\"AI Finance Automation Case Study\" product customers case study",
+        "\"AI Finance Automation Case Study\" \"AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech\" competitors product use case",
+        "\"AI Finance Automation Case Study\" \"$850\" investor quote why invested",
+        "\"AI Finance Automation Case Study\" \"$850\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"AI Finance Automation Case Study\" \"$850\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI Finance Automation Case Study\" \"$850\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"AI Finance Automation Case Study\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI Finance Automation Case Study\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"AI Finance Automation Case Study\" \"AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI Finance Automation Case Study\" \"AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"AI Finance Automation Case Study\" \"$850\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI Finance Automation Case Study\" \"$850\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"AI Finance Automation Case Study\" \"$850\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI Finance Automation Case Study\" \"$850\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:16:11.688Z"
+    }
+  ]
+}

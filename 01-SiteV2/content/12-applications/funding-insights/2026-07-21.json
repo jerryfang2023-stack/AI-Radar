@@ -1,0 +1,900 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-21",
+    "generated_at": "2026-07-26T15:20:39.221Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 1,
+      "blocked": 1,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-e248db193daff590",
+      "triggered_by_event_id": "EV-439ba8d5f2f575c4",
+      "as_of_date": "2026-07-21",
+      "company": {
+        "entity_id": "EN-b0a914ead94a88da",
+        "name": "Aligned",
+        "full_name": "Aligned",
+        "website": "alignedup.com",
+        "summary": "Aligned 是一家 B2B 销售 AI 初创公司，构建了一个 AI 原生的交易执行平台，即 AI Deal Workspace。该平台为卖方、买方和 AI 智能体提供一个共享的协作空间，旨在取代混乱的邮件和附件，成为 B2B 销售中的“行动系统”，帮助企业缩短销售周期并提高赢单率。",
+        "headquarters": "Tel Aviv, Israel 和 New York",
+        "founders": [
+          {
+            "name": "Gal Aga",
+            "role": "CEO 兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e028af0b28407f13",
+                "quote": "The company was founded by Gal Aga (CEO) , Gal Deitsch (CPO) and Yotam Sela (CTO)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Gal Deitsch",
+            "role": "CPO 兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e028af0b28407f13",
+                "quote": "The company was founded by Gal Aga (CEO) , Gal Deitsch (CPO) and Yotam Sela (CTO)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Yotam Sela",
+            "role": "CTO 兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e028af0b28407f13",
+                "quote": "The company was founded by Gal Aga (CEO) , Gal Deitsch (CPO) and Yotam Sela (CTO)"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e028af0b28407f13",
+            "quote": "Aligned, the Israeli B2B sales AI startup"
+          },
+          {
+            "source_id": "FISRC-995ebf3b4af69400",
+            "quote": "Headquartered in New York and Tel Aviv, Aligned pioneered the Digital Sales Room category"
+          }
+        ]
+      },
+      "financing": {
+        "round": "B 轮",
+        "amount": "$60 million",
+        "total_raised": "$73.8 million",
+        "announced_at": "2026-07-01",
+        "investors": [
+          {
+            "name": "PeakSpan Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c7a5a66361dc784",
+                "quote": "Aligned announced a $60 million Series B financing on July 1 2026, led by PeakSpan Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hetz Ventures",
+            "role": "本轮参投，既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c7a5a66361dc784",
+                "quote": "with participation from Hetz Ventures, JAL Ventures and NFX"
+              },
+              {
+                "source_id": "FISRC-24b745611665d521",
+                "quote": "The round includes participation from existing investors NFX, Hetz Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "JAL Ventures",
+            "role": "本轮参投，既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c7a5a66361dc784",
+                "quote": "with participation from Hetz Ventures, JAL Ventures and NFX"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NFX",
+            "role": "本轮参投，既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7c7a5a66361dc784",
+                "quote": "with participation from Hetz Ventures, JAL Ventures and NFX"
+              },
+              {
+                "source_id": "FISRC-24b745611665d521",
+                "quote": "The round includes participation from existing investors NFX, Hetz Ventures"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7c7a5a66361dc784",
+            "quote": "Aligned announced a $60 million Series B financing on July 1 2026, led by PeakSpan Capital with participation from Hetz Ventures, JAL Ventures and NFX. The round lifts the company’s total capital to $73.8 million"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "AI Deal Workspace",
+          "description": "一个 AI 原生的交易执行平台，为卖方、买方和 AI 智能体提供一个共享的数字空间，用于协作推进企业级交易。它整合了提案、商业案例和反馈，取代了传统的邮件和即时通讯工具。",
+          "target_customers": "B2B 销售团队和企业级客户",
+          "features": [
+            "AI Deal Brain 引擎，从 CRM、邮件和通话中摄取数据，捕获约 95% 的买家旅程活动",
+            "Seller Agent 和 Buyer Agent，可在工作区内自主执行交易任务",
+            "Mutual Action Plans，支持双向任务分配和自动提醒",
+            "Revenue Intelligence，提供买家参与度分析和实时警报"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "Its AI Deal Workspace functions as a shared digital canvas where buyers, sellers and autonomous agents collaborate in real time"
+            },
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "At the core of Aligned’s AI Deal Workspace is the AI Deal Brain, a proprietary engine fed by live deal context across CRM, emails, calls, and the between‑meeting buyer engagement"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Deel",
+          "industry": "HR/合规",
+          "use_case": "使用 Aligned 运行其最复杂的交易，并报告销售周期缩短 30%，赢单率提高 15%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned, and report 30% faster sales cycles and 15% higher win rates."
+            }
+          ]
+        },
+        {
+          "name": "SimilarWeb",
+          "industry": "数字智能",
+          "use_case": "使用 Aligned 运行其最复杂的交易，并报告销售周期缩短 30%，赢单率提高 15%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned, and report 30% faster sales cycles and 15% higher win rates."
+            }
+          ]
+        },
+        {
+          "name": "WordPress",
+          "industry": "网站建设/内容管理",
+          "use_case": "使用 Aligned 运行其最复杂的交易，并报告销售周期缩短 30%，赢单率提高 15%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned, and report 30% faster sales cycles and 15% higher win rates."
+            }
+          ]
+        },
+        {
+          "name": "Certificial",
+          "industry": "保险科技",
+          "use_case": "利用 Aligned 识别隐藏的利益相关者，并将其引入购买委员会的时间提前了 30 天，将平均销售周期从 10 个月缩短到 7 个月。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3880978838f680f4",
+              "quote": "See how Certificial was able to identify hidden stakeholders and bring them into the buying committee 30 days earlier than normal."
+            },
+            {
+              "source_id": "FISRC-3880978838f680f4",
+              "quote": "Before implementing Aligned, our typical enterprise sales cycle averaged around 10 months. However, post-implementation with Aligned, this duration has reduced to approximately 7 months."
+            }
+          ]
+        },
+        {
+          "name": "Onebeat",
+          "industry": "零售科技",
+          "use_case": "通过 Aligned 简化了其由邮件驱动的销售流程，将销售速度提升了 20%，并实现了更清晰的沟通。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-357c4dd10e495e63",
+              "quote": "With Aligned, Onebeat streamlined their sales, achieving a 20% speed boost."
+            },
+            {
+              "source_id": "FISRC-357c4dd10e495e63",
+              "quote": "There cannot be a better platform than Aligned to communicate efficiently"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Salesforce",
+          "product": "CRM 系统",
+          "scenario": "作为销售记录系统，记录交易数据，但侧重于数据捕获而非交易执行。",
+          "target_customer": "企业级销售组织",
+          "funding_summary": "",
+          "core_difference": "Salesforce 是记录系统，侧重于记录交易数据；Aligned 是行动系统，侧重于在交易实际发生的界面进行实时协作和执行。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "incumbents such as Salesforce and revenue‑intelligence vendors have historically focused on data capture rather than execution."
+            },
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "The system of record, led by CRMs, logs what happened"
+            }
+          ]
+        },
+        {
+          "name": "Revenue Intelligence 平台",
+          "product": "收入智能工具",
+          "scenario": "作为洞察系统，分析通话和邮件数据以提供事后分析，但不直接参与交易推进。",
+          "target_customer": "销售领导和运营团队",
+          "funding_summary": "",
+          "core_difference": "收入智能工具是洞察系统，分析交易“为什么”发生；Aligned 是行动系统，在交易进行时直接运行和推进交易。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "The company positions the offering as the missing execution layer that complements record‑keeping CRMs and post‑hoc revenue intelligence tools."
+            },
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "The system of insight, led by Revenue Intelligence platforms, analyzes why"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "平台月活卖家数",
+          "value": "70,000",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Aligned’s platform is used by 70K sellers and 1 million buyers to run deals every month."
+            }
+          ]
+        },
+        {
+          "label": "平台月活买家数",
+          "value": "1,000,000",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Aligned’s platform is used by 70K sellers and 1 million buyers to run deals every month."
+            }
+          ]
+        },
+        {
+          "label": "ARR 增长 (过去12个月)",
+          "value": "增长了两倍",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "The Company has experienced rapid growth since inception, tripling ARR over the last 12 months."
+            }
+          ]
+        },
+        {
+          "label": "客户报告的销售周期缩短",
+          "value": "30%",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned, and report 30% faster sales cycles and 15% higher win rates."
+            }
+          ]
+        },
+        {
+          "label": "客户报告的赢单率提升",
+          "value": "15%",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned, and report 30% faster sales cycles and 15% higher win rates."
+            }
+          ]
+        },
+        {
+          "label": "AI Deal Brain 捕获的买家旅程活动比例",
+          "value": "95%",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "At the core is the AI Deal Brain, an engine that ingests data from CRMs, emails and calls to capture roughly 95 % of buyer‑journey activity"
+            }
+          ]
+        },
+        {
+          "label": "买家与供应商直接会面时间占采购旅程比例",
+          "value": "17%",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "multiple stakeholders spend only about 17 % of their time directly engaging suppliers"
+            }
+          ]
+        },
+        {
+          "label": "G2 数字销售室类别领导者排名",
+          "value": "SMB、中端市场、客户门户三项第一",
+          "observed_at": "2026 夏季",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Aligned is recognized by G2 as the category leader in Digital Sales Rooms , ranking No. 1 for SMB, Mid-Market, and Client Portal in the Summer 2026 reports."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Gal Aga",
+          "quote": "Aligned was built on a simple conviction: There’s no such thing as a complex sale, only a complex purchase. The top 1% of reps win not by selling harder, but by making it easier to buy.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Aligned was built on a simple conviction: There’s no such thing as a complex sale, only a complex purchase. The top 1% of reps win not by selling harder, but by making it easier to buy"
+            }
+          ]
+        },
+        {
+          "speaker": "Matt Melymuka",
+          "quote": "As selling becomes AI-driven, the advantage stops being who watches the deal from the outside and starts being who owns the deal itself, the surface where buyers and sellers transact. That surface generates proprietary data that doesn’t exist anywhere else, and it’s where AI belongs, alongside the people already working there. Whoever owns it owns the next decade of GTM software.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "As selling becomes AI-driven, the advantage stops being who watches the deal from the outside and starts being who owns the deal itself, the surface where buyers and sellers transact. That surface generates proprietary data that doesn’t exist anywhere else, and it’s where AI belongs, alongside the people already working there. Whoever owns it owns the next decade of GTM software."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "PeakSpan Capital",
+            "speaker": "Matt Melymuka",
+            "speaker_role": "Co‑Founder and Managing Partner at PeakSpan Capital",
+            "rationale": "PeakSpan 认为，随着销售变得由 AI 驱动，竞争优势将属于拥有交易执行界面的公司。Aligned 拥有买方和卖方进行交易的界面，能产生其他地方不存在的专有数据，这使其处于定义下一代 GTM 软件的类别定义地位。",
+            "quote": "As selling becomes AI-driven, the advantage stops being who watches the deal from the outside and starts being who owns the deal itself, the surface where buyers and sellers transact. That surface generates proprietary data that doesn’t exist anywhere else, and it’s where AI belongs, alongside the people already working there. Whoever owns it owns the next decade of GTM software. That’s a generational, category-defining position, and it’s why we led the largest round this category has seen.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-995ebf3b4af69400",
+                "quote": "As selling becomes AI-driven, the advantage stops being who watches the deal from the outside and starts being who owns the deal itself, the surface where buyers and sellers transact. That surface generates proprietary data that doesn’t exist anywhere else, and it’s where AI belongs, alongside the people already working there. Whoever owns it owns the next decade of GTM software. That’s a generational, category-defining position, and it’s why we led the largest round this category has seen."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 B2B 销售技术栈正从“记录系统”和“洞察系统”向“行动系统”迁移，而 Aligned 通过拥有买方和卖方交易的界面，构建了专有数据护城河。本轮融资的已验证信号包括：ARR 在过去 12 个月内增长了两倍，平台月活卖家达 7 万、买家达 100 万，以及 Deel、SimilarWeb 等企业客户报告的 30% 销售周期缩短和 15% 赢单率提升。这些数据表明其产品已实现产品市场契合，并具备向企业级市场扩张的基础。然而，判断的证据边界在于，本轮融资未披露估值，且其收入增长的绝对基数未知，因此无法准确评估其估值倍数是否合理。",
+        "validated_signals": [
+          "ARR 在过去 12 个月内增长了两倍",
+          "平台月活卖家达 7 万，买家达 100 万",
+          "企业客户报告销售周期缩短 30%，赢单率提升 15%",
+          "在 G2 数字销售室类别的 SMB、中端市场、客户门户三项排名中均位列第一",
+          "所有既有投资方（Hetz Ventures, JAL Ventures, NFX）均参与了本轮融资"
+        ],
+        "risks": [
+          "Aligned 的定位是“行动系统”，这使其与现有的 CRM 巨头（如 Salesforce）和收入智能工具形成既互补又潜在竞争的关系，后者可能通过自建或收购类似功能来挤压其市场空间。",
+          "平台的价值高度依赖于其捕获的专有交易数据，但这也意味着其增长与客户的使用深度和广度强绑定，若无法持续证明其对企业级客户的 ROI，可能会面临增长瓶颈。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "销售技术 / AI 驱动的 B2B 交易执行"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI Deal Workspace",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "Its AI Deal Workspace functions as a shared digital canvas where buyers, sellers and autonomous agents collaborate in real time"
+            },
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "At the core of Aligned’s AI Deal Workspace is the AI Deal Brain, a proprietary engine fed by live deal context across CRM, emails, calls, and the between‑meeting buyer engagement"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Gal Aga",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e028af0b28407f13",
+              "quote": "The company was founded by Gal Aga (CEO) , Gal Deitsch (CPO) and Yotam Sela (CTO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Gal Deitsch",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e028af0b28407f13",
+              "quote": "The company was founded by Gal Aga (CEO) , Gal Deitsch (CPO) and Yotam Sela (CTO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Yotam Sela",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e028af0b28407f13",
+              "quote": "The company was founded by Gal Aga (CEO) , Gal Deitsch (CPO) and Yotam Sela (CTO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "PeakSpan Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "Aligned announced a $60 million Series B financing on July 1 2026, led by PeakSpan Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hetz Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "with participation from Hetz Ventures, JAL Ventures and NFX"
+            },
+            {
+              "source_id": "FISRC-24b745611665d521",
+              "quote": "The round includes participation from existing investors NFX, Hetz Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "JAL Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "with participation from Hetz Ventures, JAL Ventures and NFX"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NFX",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "with participation from Hetz Ventures, JAL Ventures and NFX"
+            },
+            {
+              "source_id": "FISRC-24b745611665d521",
+              "quote": "The round includes participation from existing investors NFX, Hetz Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Deel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned, and report 30% faster sales cycles and 15% higher win rates."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "SimilarWeb",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned, and report 30% faster sales cycles and 15% higher win rates."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "WordPress",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "Enterprise customers, including Deel, SimilarWeb, and WordPress, run their most complex deals on Aligned, and report 30% faster sales cycles and 15% higher win rates."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Certificial",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3880978838f680f4",
+              "quote": "See how Certificial was able to identify hidden stakeholders and bring them into the buying committee 30 days earlier than normal."
+            },
+            {
+              "source_id": "FISRC-3880978838f680f4",
+              "quote": "Before implementing Aligned, our typical enterprise sales cycle averaged around 10 months. However, post-implementation with Aligned, this duration has reduced to approximately 7 months."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Onebeat",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-357c4dd10e495e63",
+              "quote": "With Aligned, Onebeat streamlined their sales, achieving a 20% speed boost."
+            },
+            {
+              "source_id": "FISRC-357c4dd10e495e63",
+              "quote": "There cannot be a better platform than Aligned to communicate efficiently"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Salesforce",
+          "canonical_entity_id": "EN-3ccbd9105a45d8fc",
+          "canonical_name": "Salesforce",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "incumbents such as Salesforce and revenue‑intelligence vendors have historically focused on data capture rather than execution."
+            },
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "The system of record, led by CRMs, logs what happened"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Revenue Intelligence 平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7c7a5a66361dc784",
+              "quote": "The company positions the offering as the missing execution layer that complements record‑keeping CRMs and post‑hoc revenue intelligence tools."
+            },
+            {
+              "source_id": "FISRC-995ebf3b4af69400",
+              "quote": "The system of insight, led by Revenue Intelligence platforms, analyzes why"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-439ba8d5f2f575c4",
+          "date": "2026-07-01",
+          "title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
+          "amount": "$60 million",
+          "source_refs": [
+            "SA-1a82ec9a5d7ed3cd"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-7c7a5a66361dc784",
+          "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
+          "title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-21T01:25:45.995Z",
+          "content_hash": "9348da1b25f12b48",
+          "source_artifact_id": "SA-1a82ec9a5d7ed3cd",
+          "raw_id": "RAW-e36bb1ec88aee549"
+        },
+        {
+          "source_id": "FISRC-e028af0b28407f13",
+          "source_url": "https://www.wortins.com/blog/aligned-funding",
+          "title": "Aligned Funding: The B2B Sales AI Startup's $60M Series B Explained · Wortins · Wortins",
+          "publisher": "wortins.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:58:23.411Z",
+          "content_hash": "3a4a6d2094fda356",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-995ebf3b4af69400",
+          "source_url": "https://salestechstar.com/price-optimization-revenue-management/aligned-closes-60m-series-b-to-solidify-leadership-position-as-the-system-of-action-for-b2b-sales/",
+          "title": "Aligned Closes $60M Series B to Solidify Leadership Position as the System of Action for B2B Sales",
+          "publisher": "salestechstar.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:58:39.452Z",
+          "content_hash": "3201a7455d18a668",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-24b745611665d521",
+          "source_url": "https://salestechstar.com/sales-engagement/aligned-raises-8m-to-shape-the-future-of-selling-with-ai-sales-rooms/",
+          "title": "Aligned raises $8M to shape the future of selling with AI sales rooms",
+          "publisher": "salestechstar.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:58:58.284Z",
+          "content_hash": "48691dffa1963c9f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-3880978838f680f4",
+          "source_url": "https://alignedup.com/certificial-case-study/",
+          "title": "Certificial Case Study - Aligned",
+          "publisher": "alignedup.com",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:59:00.778Z",
+          "content_hash": "19f87bf9900a4348",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-357c4dd10e495e63",
+          "source_url": "https://alignedup.com/onebeat-experiences-better-communication-with-aligned/",
+          "title": "Onebeat Case Study | Communicate Efficiently with Aligned",
+          "publisher": "alignedup.com",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:59:02.842Z",
+          "content_hash": "38f5056b329e4c54",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:00:07.623Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:00:07.623Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-d7a7244d620a2142",
+      "company_name": "OpenAI",
+      "status": "blocked",
+      "problems": [
+        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+      ],
+      "queries": [
+        "\"OpenAI\" \"$15M\" funding investors round",
+        "\"OpenAI\" product customers case study",
+        "\"OpenAI\" \"Inference startup Infinity raises $15M from Touring Capital, OpenAI and Anthropic researchers | TechCrunch\" competitors product use case",
+        "\"OpenAI\" \"$15M\" investor quote why invested",
+        "\"OpenAI\" \"$15M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"OpenAI\" \"$15M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"OpenAI\" \"$15M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"OpenAI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"OpenAI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"OpenAI\" \"Inference startup Infinity raises $15M from Touring Capital, OpenAI and Anthropic researchers | TechCrunch\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"OpenAI\" \"Inference startup Infinity raises $15M from Touring Capital, OpenAI and Anthropic researchers | TechCrunch\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"OpenAI\" \"$15M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"OpenAI\" \"$15M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"OpenAI\" \"$15M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"OpenAI\" \"$15M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:20:39.220Z"
+    },
+    {
+      "event_id": "EV-439ba8d5f2f575c4",
+      "company_name": "Aligned",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Aligned\" \"$60 million\" funding investors round",
+        "\"Aligned\" product customers case study",
+        "\"Aligned\" \"Aligned raises $60M Series B for AI sales execution platform | SaaS M&A and VC Deals\" competitors product use case",
+        "\"Aligned\" \"$60 million\" investor quote why invested",
+        "\"Aligned\" \"$60 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Aligned\" \"$60 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Aligned\" \"$60 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Aligned\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Aligned\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Aligned\" \"Aligned raises $60M Series B for AI sales execution platform | SaaS M&A and VC Deals\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Aligned\" \"Aligned raises $60M Series B for AI sales execution platform | SaaS M&A and VC Deals\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Aligned\" \"$60 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Aligned\" \"$60 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Aligned\" \"$60 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Aligned\" \"$60 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:00:07.677Z"
+    }
+  ]
+}

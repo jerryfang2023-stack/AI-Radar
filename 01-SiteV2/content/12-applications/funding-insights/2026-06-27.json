@@ -1,0 +1,2105 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-27",
+    "generated_at": "2026-07-26T15:16:30.511Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 5,
+      "auto_published": 3,
+      "blocked": 2,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-6ecaf4b54919ed4f",
+      "triggered_by_event_id": "EV-cc90f1eb2b0817e7",
+      "as_of_date": "2026-06-27",
+      "company": {
+        "entity_id": "EN-34bdfa9bfd563edb",
+        "name": "Netris",
+        "full_name": "Netris",
+        "website": "netris.io",
+        "summary": "Netris 是一家网络自动化与多租户软件提供商，专为 AI 基础设施（新云、主权 AI 运营商和 AI 工厂）构建 NAAM 平台，帮助 GPU 云运营商将上线时间从数月缩短至数周。",
+        "headquarters": "Santa Clara, California",
+        "founders": [
+          {
+            "name": "Alex Saroyan",
+            "role": "CEO and co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-710d897cee27dcf0",
+                "quote": "Alex Saroyan, CEO and co-founder of Netris"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-710d897cee27dcf0",
+            "quote": "Netris is the leading provider of network automation and multi-tenancy for AI infrastructure, purpose-built for neoclouds, sovereign AI operators, and AI factories."
+          },
+          {
+            "source_id": "FISRC-edf2a473ca48646a",
+            "quote": "Network automation startup Netris claims it can make that problem disappear for neoclouds."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$15M",
+        "total_raised": "",
+        "announced_at": "2026-06-25",
+        "investors": [
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-edf2a473ca48646a",
+                "quote": "Netris has now raised $15 million in a Series A round from Andreessen Horowitz"
+              },
+              {
+                "source_id": "FISRC-710d897cee27dcf0",
+                "quote": "a $15M Series A round led by Andreessen Horowitz"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-edf2a473ca48646a",
+            "quote": "Netris has now raised $15 million in a Series A round from Andreessen Horowitz"
+          },
+          {
+            "source_id": "FISRC-710d897cee27dcf0",
+            "quote": "Netris raised a $15M Series A led by Andreessen Horowitz."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy) 平台",
+          "description": "为 AI 集群提供网络编排、硬件层硬多租户隔离，以及跨以太网、InfiniBand、NVL72、BlueField DPU 和虚拟/边缘网络的云提供商级自动化，从 Day Zero 设计与仿真到在线运营。",
+          "target_customers": "新云、主权 AI 运营商、AI 工厂",
+          "features": [
+            "跨多网络结构的单一控制平面",
+            "硬件层硬多租户隔离",
+            "动态 GPU 容量重分配以最大化利用率",
+            "数周内启动 GPU 云，即时配置租户并自动隔离"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "The Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy) platform delivers network orchestration for AI clusters, hard multi-tenancy enforced on networking hardware, and cloud-provider-grade automation across Ethernet (including NVIDIA Spectrum-X), NVIDIA Quantum InfiniBand, NVL72, NVIDIA BlueField DPUs, and virtual and edge networking — from Day Zero design and simulation through live operations."
+            },
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "Operators launch GPU clouds in weeks, provision tenants instantly with isolation configured automatically, and maximize GPU utilization by dynamically reallocating capacity across tenants."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Lightning AI",
+          "industry": "新云",
+          "use_case": "GPU 集群网络自动化与多租户",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "high-growth neoclouds, including Lightning AI"
+            }
+          ]
+        },
+        {
+          "name": "TensorWave",
+          "industry": "新云",
+          "use_case": "GPU 集群网络自动化与多租户",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "high-growth neoclouds, including Lightning AI, STN, Boost Run, and TensorWave"
+            }
+          ]
+        },
+        {
+          "name": "TELUS",
+          "industry": "主权 AI 云",
+          "use_case": "GPU 集群网络自动化与多租户",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "sovereign AI cloud providers, including TELUS, DCAI, and YOTTA"
+            }
+          ]
+        },
+        {
+          "name": "Hewlett Packard Enterprise",
+          "industry": "AI 平台提供商",
+          "use_case": "为研究、教育和政府客户提供全栈 AI 解决方案中的网络自动化层",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "AI platform providers like HPE, which delivers a full-stack AI solution for customers in research, education, and state and local government."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "传统控制器与结构管理器",
+          "product": "传统控制器与结构管理器",
+          "scenario": "AI 集群网络自动化",
+          "target_customer": "AI 云运营商",
+          "funding_summary": "",
+          "core_difference": "传统控制器和结构管理器缺乏多租户能力和云提供商级功能；Netris NAAM 提供硬件层硬多租户和跨结构单一控制平面。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "traditional controllers and fabric managers lack multi-tenancy and the cloud-provider functionality AI operators require."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "ARR 增长率（过去 12 个月）",
+          "value": "800%",
+          "observed_at": "2026-06-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "In the last 12 months, Netris experienced 800% ARR growth"
+            }
+          ]
+        },
+        {
+          "label": "在线部署数量",
+          "value": "35+",
+          "observed_at": "2026-06-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "35+ live deployments at many of the largest neoclouds, sovereign AI operators, and AI factories in the world"
+            }
+          ]
+        },
+        {
+          "label": "覆盖 GPU 总数",
+          "value": "约 100 万",
+          "observed_at": "2026-06-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-edf2a473ca48646a",
+              "quote": "Netris is live at more than 35 GPU clusters around the world (about a million GPUs total)"
+            }
+          ]
+        },
+        {
+          "label": "新云市场份额（按集群数）",
+          "value": "约 12%",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-135783c04743a1c6",
+              "quote": "about a 12% share of neoclouds by cluster count"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Guido Appenzeller",
+          "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Andreessen Horowitz",
+            "speaker": "Guido Appenzeller",
+            "speaker_role": "partner at Andreessen Horowitz",
+            "rationale": "每一代计算都需要新的网络基础，AI 时代 GPU 集群同时运行多种网络结构，传统自动化无法应对；Netris 已成为 AI 云运营商标准化采用的平台。",
+            "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-710d897cee27dcf0",
+                "quote": "Every era of computing has needed a new networking foundation — first for the virtualized data center, then for the cloud, and now for AI. GPU clusters run across many fabrics at once, and legacy automation was never built for that. Netris is the platform AI cloud operators standardize on to solve it, and we are excited to partner with them on this journey."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 AI 基础设施扩张中网络自动化层的独立价值窗口。本轮融资所依赖的已验证信号包括：过去 12 个月 800% ARR 增长、35+ 在线部署覆盖约 100 万 GPU、约 12% 新云市场份额，以及 NVIDIA 作为首个 ISV 验证的 AI 网络自动化供应商所赋予的信用护城河。判断的证据边界限于来源中披露的运营指标和客户列表，未包含财务尽调或估值信息。",
+        "validated_signals": [
+          "过去 12 个月 ARR 增长 800%",
+          "35+ 在线部署，覆盖约 100 万 GPU",
+          "约 12% 新云市场份额（按集群数）",
+          "NVIDIA 首个 ISV 验证的 AI 网络自动化供应商",
+          "客户包括 Lightning AI、TensorWave、TELUS、Visionbay.ai、HPE 等"
+        ],
+        "risks": [
+          "平台吸收风险：若 NVIDIA 或交换机厂商将类似自动化能力整合进自身产品栈，Netris 的独立价值将显著缩小。"
+        ],
+        "related_direction_id": "",
+        "sector": "AI 基础设施 / 网络自动化"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy) 平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "The Netris NAAM (Network Automation, Abstraction, and Multi-Tenancy) platform delivers network orchestration for AI clusters, hard multi-tenancy enforced on networking hardware, and cloud-provider-grade automation across Ethernet (including NVIDIA Spectrum-X), NVIDIA Quantum InfiniBand, NVL72, NVIDIA BlueField DPUs, and virtual and edge networking — from Day Zero design and simulation through live operations."
+            },
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "Operators launch GPU clouds in weeks, provision tenants instantly with isolation configured automatically, and maximize GPU utilization by dynamically reallocating capacity across tenants."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Alex Saroyan",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "Alex Saroyan, CEO and co-founder of Netris"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-edf2a473ca48646a",
+              "quote": "Netris has now raised $15 million in a Series A round from Andreessen Horowitz"
+            },
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "a $15M Series A round led by Andreessen Horowitz"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Lightning AI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "high-growth neoclouds, including Lightning AI"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "TensorWave",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "high-growth neoclouds, including Lightning AI, STN, Boost Run, and TensorWave"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "TELUS",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "sovereign AI cloud providers, including TELUS, DCAI, and YOTTA"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Hewlett Packard Enterprise",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "AI platform providers like HPE, which delivers a full-stack AI solution for customers in research, education, and state and local government."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "传统控制器与结构管理器",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-710d897cee27dcf0",
+              "quote": "traditional controllers and fabric managers lack multi-tenancy and the cloud-provider functionality AI operators require."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-cc90f1eb2b0817e7",
+          "date": "2026-06-27",
+          "title": "Netris 获 a16z 领投 1500 万美元 A 轮融资，助力 AI 智能体云更快上线",
+          "amount": "$15M",
+          "source_refs": [
+            "SA-b94462686ce50e10"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-edf2a473ca48646a",
+          "source_url": "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/",
+          "title": "Netris 获 a16z 领投 1500 万美元 A 轮融资，助力 AI 智能体云更快上线",
+          "publisher": "TechCrunch AI",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-27T03:15:05.864Z",
+          "content_hash": "577ba7cc7490d477",
+          "source_artifact_id": "SA-b94462686ce50e10",
+          "raw_id": "RAW-2d73ac254fee7745"
+        },
+        {
+          "source_id": "FISRC-710d897cee27dcf0",
+          "source_url": "https://netris.io/blog/andreessen-horowitz-leads-netris-series-a-to-accelerate-adoption-of-gpu-network-automation-and-multi-tenancy-across-ai-cloud-operators-worldwide/",
+          "title": "Andreessen Horowitz Leads Netris' Series A to Accelerate Adoption of GPU Network Automation and Multi-Tenancy Across AI Cloud Operators Worldwide - Netris",
+          "publisher": "netris.io",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:37:42.538Z",
+          "content_hash": "232b472dc703660c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-135783c04743a1c6",
+          "source_url": "https://genztech.blog/p/netris-15m-series-a-a16z-ai-neocloud-networking/",
+          "title": "Netris Raises $15M From a16z to Wire Up AI Neoclouds",
+          "publisher": "genztech.blog",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:37:54.305Z",
+          "content_hash": "9f4bada27b07feeb",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:38:49.079Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:38:49.079Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-c0df7e1681e6d18e",
+      "triggered_by_event_id": "EV-2b15f160de3c7ddf",
+      "as_of_date": "2026-06-27",
+      "company": {
+        "entity_id": "EN-03abf933127f01f3",
+        "name": "Probook",
+        "full_name": "Probook",
+        "website": "probook.ai",
+        "summary": "Probook 是面向家政服务企业的 AI 操作系统，以调度为核心，统一了客户接入、数据清洗、客户沟通和外呼功能，帮助运营商提升 EBITDA 并实现一体化的客户体验。",
+        "headquarters": "New York, NY",
+        "founders": [
+          {
+            "name": "George Eliadis",
+            "role": "CEO and co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2174e1aa45a728ef",
+                "quote": "George Eliadis, CEO and co-founder of Probook"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ben Cervantez",
+            "role": "co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2174e1aa45a728ef",
+                "quote": "Probook founders Ben Cervantez, George Eliadis and Lewis Zhang."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lewis Zhang",
+            "role": "co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2174e1aa45a728ef",
+                "quote": "Probook founders Ben Cervantez, George Eliadis and Lewis Zhang."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6bff090220b83d94",
+            "quote": "Probook, a New York company that builds field service management software for home-service businesses"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A and Seed",
+        "amount": "$40 million",
+        "total_raised": "$40 million",
+        "announced_at": "2026-06-23",
+        "investors": [
+          {
+            "name": "Andreessen Horowitz (a16z)",
+            "role": "本轮（Series A）领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2174e1aa45a728ef",
+                "quote": "a $34 million Series A led by Andreessen Horowitz (a16z)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "种子轮领投，本轮（Series A）参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2174e1aa45a728ef",
+                "quote": "a $6 million Seed round led by Sequoia Capital. Sequoia also participated in the Series A."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2174e1aa45a728ef",
+            "quote": "Probook Raises $40M from Andreessen Horowitz and Sequoia to Scale the AI Operating System for Home Services"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Probook AI Operating System",
+          "description": "以调度为核心的 AI 操作系统，统一客户接入、数据清洗、客户沟通和外呼功能，所有模块共享同一上下文层，使客户从首次接触到上门服务全程保持在同一条短信线程中。",
+          "target_customers": "家政服务企业，包括独立经营店铺和私募股权支持的平台",
+          "features": [
+            "调度优先架构",
+            "统一上下文层",
+            "单线程客户沟通",
+            "预订前数据清洗",
+            "人工管理异常"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Probook built dispatch first. Intake, data cleaning, customer messaging, and outbound came next, only possible because everything shares one context layer."
+            },
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Every customer stays on one text thread, with one number, from the first touch through the front door."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "TR Miller",
+          "industry": "HVAC, plumbing, and electrical",
+          "use_case": "Probook 的首个客户，一家年收入 4000 万美元的伊利诺伊州暖通、管道和电气店铺，用于验证调度优先的 AI 操作系统。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "TR Miller, a $40M HVAC, plumbing, and electrical shop in Illinois that became Probook's first customer."
+            }
+          ]
+        },
+        {
+          "name": "TurnPoint Services",
+          "industry": "Home services",
+          "use_case": "作为私募股权支持的平台客户，使用 Probook 实现多地点标准化运营。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Notable customers include TurnPoint Services, Master Trades Group, Del-Air, Peterman Brothers, and Sila Services."
+            }
+          ]
+        },
+        {
+          "name": "Peterman Brothers",
+          "industry": "Home services",
+          "use_case": "在 11 个市场和 180/200 名技术人员中集中调度，未增加管理成本。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-18e618455ac6aa11",
+              "quote": "With Probook, we've centralized dispatch across 11 markets and 180 technicians without adding overhead."
+            }
+          ]
+        },
+        {
+          "name": "Summers Plumbing, Heating & Cooling",
+          "industry": "Plumbing, heating, and cooling",
+          "use_case": "14 个地点、260 名技术人员在平台上线首月零人工干预预订 2,542 个工单。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Summers Plumbing, Heating & Cooling, with 14 locations and 260 technicians on the platform, booked 2,542 jobs in its first month on Probook with zero human intervention."
+            }
+          ]
+        },
+        {
+          "name": "Del-Air",
+          "industry": "Home services",
+          "use_case": "佛罗里达州 8 个地点的运营商，全栈运行 Probook，选择 Probook 而非其他 AI 供应商是因为其调度能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Del-Air, an 8-location operation in Florida, runs Probook across the stack."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Avoca",
+          "product": "AI phone agents for home-service firms",
+          "scenario": "为家政服务公司构建 AI 电话代理，处理呼入线索",
+          "target_customer": "家政服务公司",
+          "funding_summary": "2026 年 4 月融资 1.25 亿美元，估值 10 亿美元",
+          "core_difference": "Avoca 提供 AI 电话代理，聚焦销售漏斗顶部的呼入线索处理；Probook 以调度为核心，从工单与技师的匹配环节切入，再向上游扩展至接入和沟通。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bff090220b83d94",
+              "quote": "Avoca, which builds AI phone agents for home-service firms, raised $125 million at a $1 billion valuation in April."
+            }
+          ]
+        },
+        {
+          "name": "Hatch",
+          "product": "AI follow-up tool",
+          "scenario": "为家政服务客户提供 AI 驱动的跟进工具",
+          "target_customer": "家政服务公司",
+          "funding_summary": "Yelp 以最高 3 亿美元收购",
+          "core_difference": "Hatch 提供 AI 跟进工具，属于销售漏斗顶部的单点解决方案；Probook 构建以调度为中心的全栈操作系统，统一客户体验而非仅解决单一环节。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bff090220b83d94",
+              "quote": "Yelp paid up to $300 million to acquire Hatch, an AI follow-up tool for the same customers."
+            }
+          ]
+        },
+        {
+          "name": "ServiceTitan",
+          "product": "field service management platform",
+          "scenario": "为家政服务行业提供调度、排程、计费等运营管理软件",
+          "target_customer": "家政服务企业",
+          "funding_summary": "2024 年上市",
+          "core_difference": "ServiceTitan 是最大的家政服务软件平台，提供传统运营管理系统；Probook 以 AI 调度为核心，从最难的问题切入，所有模块共享统一上下文层，而非在现有系统上叠加 AI。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bff090220b83d94",
+              "quote": "ServiceTitan, the largest software platform in the market, told investors before its 2024 listing that households and businesses in the United States and Canada spend roughly $1.5 trillion a year on trades services."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Summers Plumbing 首月零人工干预预订工单数",
+          "value": "2,542 jobs",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "booked 2,542 jobs in its first month on Probook with zero human intervention"
+            }
+          ]
+        },
+        {
+          "label": "Peterman Brothers 集中调度覆盖市场数",
+          "value": "11 markets",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-18e618455ac6aa11",
+              "quote": "centralized dispatch across 11 markets and 180 technicians without adding overhead"
+            }
+          ]
+        },
+        {
+          "label": "Peterman Brothers 集中调度覆盖技术人员数",
+          "value": "180-200 technicians",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-18e618455ac6aa11",
+              "quote": "180 technicians"
+            },
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "200 technicians"
+            }
+          ]
+        },
+        {
+          "label": "TR Miller 单月 HVAC 额外收入",
+          "value": "$190,000",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bff090220b83d94",
+              "quote": "the shop made an additional $190,000 in HVAC revenue in a single June after adopting the software"
+            }
+          ]
+        },
+        {
+          "label": "TR Miller 平均 HVAC 销售额提升",
+          "value": "24%",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bff090220b83d94",
+              "quote": "a 24 percent rise in average HVAC sale"
+            }
+          ]
+        },
+        {
+          "label": "TR Miller 驾驶时间缩减",
+          "value": "22%",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bff090220b83d94",
+              "quote": "a 22 percent cut in drive time"
+            }
+          ]
+        },
+        {
+          "label": "Summers Plumbing 平台技术人员数",
+          "value": "260 technicians",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "260 technicians on the platform"
+            }
+          ]
+        },
+        {
+          "label": "Del-Air 运营地点数",
+          "value": "8 locations",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "an 8-location operation in Florida"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Sequoia Capital",
+            "speaker": "Konstantine Buhler",
+            "speaker_role": "Partner",
+            "rationale": "大多数为技工行业构建产品的创始人从未在该行业工作过，而 George 有亲身经验，加上团队卓越的技术深度，是 Sequoia 在种子轮投资并持续加注的原因。",
+            "quote": "Most founders building for the trades have never worked in them. George has. Pair that with the team's outlier technical depth, and you see why we backed Probook at Seed and why we're doubling down now.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2174e1aa45a728ef",
+                "quote": "Most founders building for the trades have never worked in them. George has. Pair that with the team's outlier technical depth, and you see why we backed Probook at Seed and why we're doubling down now."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“调度作为家政服务 AI 化的结构性入口”。Probook 以调度为起点构建全栈操作系统，而非从销售漏斗顶部切入，这一架构选择被 a16z 视为“多年的结构性护城河”。当前融资由 a16z 和 Sequoia 两家顶级 VC 罕见地同时参与种子轮和 A 轮，表明机构对其创始人行业背景（George Eliadis 在技工行业长大）和技术深度的双重认可。已验证信号包括：Summers Plumbing 首月零人工干预预订 2,542 个工单，TR Miller 单月 HVAC 额外收入 19 万美元、平均销售额提升 24%、驾驶时间缩减 22%，以及 Peterman Brothers 在 11 个市场集中调度 180-200 名技术人员未增加管理成本。这些信号均来自公司自行披露，未经独立审计，但客户可核实。",
+        "validated_signals": [
+          "Summers Plumbing 在 14 个地点、260 名技术人员规模下，首月零人工干预预订 2,542 个工单",
+          "TR Miller 在采用 Probook 后单月 HVAC 额外收入 19 万美元，平均 HVAC 销售额提升 24%，驾驶时间缩减 22%",
+          "Peterman Brothers 在 11 个市场集中调度 180-200 名技术人员，未增加管理成本",
+          "客户包括 TurnPoint Services、Sila Services 等私募股权支持的平台，表明产品满足规模化、标准化需求",
+          "a16z 和 Sequoia 两家顶级 VC 罕见地同时参与种子轮和 A 轮"
+        ],
+        "risks": [
+          "所有运营指标（工单数、收入提升、效率改善）均由公司自行披露，未经独立审计，实际效果可能因客户规模和运营复杂度而异",
+          "家政服务 AI 赛道竞争加剧，Avoca 以 10 亿美元估值融资 1.25 亿美元，ServiceTitan 等大型平台可能在其现有系统中增加 AI 调度功能，挤压 Probook 的差异化空间"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "家政服务 AI 操作系统"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Probook AI Operating System",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Probook built dispatch first. Intake, data cleaning, customer messaging, and outbound came next, only possible because everything shares one context layer."
+            },
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Every customer stays on one text thread, with one number, from the first touch through the front door."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "George Eliadis",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "George Eliadis, CEO and co-founder of Probook"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ben Cervantez",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Probook founders Ben Cervantez, George Eliadis and Lewis Zhang."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Lewis Zhang",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Probook founders Ben Cervantez, George Eliadis and Lewis Zhang."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz (a16z)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "a $34 million Series A led by Andreessen Horowitz (a16z)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "a $6 million Seed round led by Sequoia Capital. Sequoia also participated in the Series A."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "TR Miller",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "TR Miller, a $40M HVAC, plumbing, and electrical shop in Illinois that became Probook's first customer."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "TurnPoint Services",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Notable customers include TurnPoint Services, Master Trades Group, Del-Air, Peterman Brothers, and Sila Services."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Peterman Brothers",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-18e618455ac6aa11",
+              "quote": "With Probook, we've centralized dispatch across 11 markets and 180 technicians without adding overhead."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Summers Plumbing, Heating & Cooling",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Summers Plumbing, Heating & Cooling, with 14 locations and 260 technicians on the platform, booked 2,542 jobs in its first month on Probook with zero human intervention."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Del-Air",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2174e1aa45a728ef",
+              "quote": "Del-Air, an 8-location operation in Florida, runs Probook across the stack."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Avoca",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bff090220b83d94",
+              "quote": "Avoca, which builds AI phone agents for home-service firms, raised $125 million at a $1 billion valuation in April."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Hatch",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bff090220b83d94",
+              "quote": "Yelp paid up to $300 million to acquire Hatch, an AI follow-up tool for the same customers."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "ServiceTitan",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6bff090220b83d94",
+              "quote": "ServiceTitan, the largest software platform in the market, told investors before its 2024 listing that households and businesses in the United States and Canada spend roughly $1.5 trillion a year on trades services."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-2b15f160de3c7ddf",
+          "date": "2026-06-27",
+          "title": "Probook 从 Andreessen Horowitz 和 Sequoia 融资 4000 万美元",
+          "amount": "$40M",
+          "source_refs": [
+            "SA-3435638f67c9c079"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2174e1aa45a728ef",
+          "source_url": "https://www.globenewswire.com/news-release/2026/06/23/3316215/0/en/Probook-Raises-40M-from-Andreessen-Horowitz-and-Sequoia-to-Scale-the-AI-Operating-System-for-Home-Services.html",
+          "title": "Probook 从 Andreessen Horowitz 和 Sequoia 融资 4000 万美元",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-27T03:15:05.828Z",
+          "content_hash": "16af0d3e75b94e37",
+          "source_artifact_id": "SA-3435638f67c9c079",
+          "raw_id": "RAW-2aa6063e747b5ad9"
+        },
+        {
+          "source_id": "FISRC-18e618455ac6aa11",
+          "source_url": "https://www.pmmag.com/articles/107540-probook-raises-40m-from-andreessen-horowitz-and-sequoia",
+          "title": "Probook Raises $40M from Andreessen Horowitz and Sequoia | Plumbing & Mechanical",
+          "publisher": "pmmag.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:36:22.398Z",
+          "content_hash": "aea793ef2d3e8ffe",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6bff090220b83d94",
+          "source_url": "https://www.sovereignmagazine.com/article/probook-40m-series-a-field-service-ai",
+          "title": "",
+          "publisher": "sovereignmagazine.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:36:34.258Z",
+          "content_hash": "2d4320d45d442253",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:37:44.760Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:37:44.760Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-ee45ffa2ccc64a4c",
+      "triggered_by_event_id": "EV-f54ec32c67e9447c",
+      "as_of_date": "2026-06-27",
+      "company": {
+        "entity_id": "EN-e23228440ca5340f",
+        "name": "Seltz",
+        "full_name": "Seltz",
+        "website": "https://seltz.ai",
+        "summary": "Seltz是一家为AI智能体和大型语言模型构建网络检索基础设施的初创公司，通过自研的爬虫、索引和检索模型，为机器提供低延迟、结构化的实时网络知识。",
+        "headquarters": "San Francisco, CA",
+        "founders": [
+          {
+            "name": "Antonio Mallia",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2f4507e8abd3a500",
+                "quote": "Seltz founder and CEO Antonio Mallia"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "15人（其中约6名全职员工）",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "it currently employs just 15 people, only a half dozen of whom are full time employees"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2f4507e8abd3a500",
+            "quote": "Seltz, a startup trying to reinvent web search for AI agents"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$12.5 million",
+        "total_raised": "$12.5 million",
+        "announced_at": "2026-06-24",
+        "investors": [
+          {
+            "name": "Speedinvest",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2f4507e8abd3a500",
+                "quote": "The round was led by the European venture firm Speedinvest and the global investor B Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "B Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2f4507e8abd3a500",
+                "quote": "The round was led by the European venture firm Speedinvest and the global investor B Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Italian Founders Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2f4507e8abd3a500",
+                "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "United Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2f4507e8abd3a500",
+                "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Future Back Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2f4507e8abd3a500",
+                "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "futurepresent",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f8a805db6934678c",
+                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "arc Investors",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f8a805db6934678c",
+                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vento Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f8a805db6934678c",
+                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mango Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f8a805db6934678c",
+                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "2100 Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f8a805db6934678c",
+                "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2f4507e8abd3a500",
+            "quote": "Seltz announced that it has raised $12.5 million in seed funding."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Seltz Web Search API",
+          "description": "一个为AI智能体设计的网络搜索API，拥有自研的爬虫、索引和检索模型，能够返回全文而非摘要，延迟低于250毫秒。",
+          "target_customers": "AI实验室、AI原生初创公司、企业客户",
+          "features": [
+            "自研网络爬虫与搜索索引",
+            "返回全文而非摘要",
+            "延迟低于250毫秒",
+            "支持本地部署和私有云部署",
+            "SOC 2 Type II合规"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-604d67eacc38719c",
+              "quote": "A web search API built for agents that need real-time information at low latency."
+            },
+            {
+              "source_id": "FISRC-d27c7d0301fe41d7",
+              "quote": "We return the full document, not a preview."
+            },
+            {
+              "source_id": "FISRC-d27c7d0301fe41d7",
+              "quote": "We deploy on-premises, in private cloud, or in whatever region your data rules require, and we're SOC 2 Type II compliant"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "US News API",
+          "description": "Seltz首个公开可用的垂直领域API，专注于美国新闻，提供约一小时内从发布到可搜索的新鲜度SLA。",
+          "target_customers": "构建需要实时新闻信息的智能体的工程师",
+          "features": [
+            "约一小时内从发布到可搜索的新鲜度SLA",
+            "专用新闻索引",
+            "针对新闻领域优化的检索模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-44eee6ef93577e29",
+              "quote": "The US News API is Seltz's first publicly available vertical."
+            },
+            {
+              "source_id": "FISRC-44eee6ef93577e29",
+              "quote": "The freshness SLA is approximately one hour from publication to searchable."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "一家基础模型实验室（未具名）",
+          "industry": "AI",
+          "use_case": "已签订合同，使用Seltz的检索基础设施",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d27c7d0301fe41d7",
+              "quote": "have a foundational lab under contract"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Parallel",
+          "product": "AI原生搜索引擎",
+          "scenario": "AI智能体的网络信息检索",
+          "target_customer": "AI公司和需要搜索能力的应用",
+          "funding_summary": "融资$100 million，估值$2 billion",
+          "core_difference": "Seltz自研完整搜索技术栈（爬虫、索引、检索模型、排序），而多数竞品构建在现有搜索引擎之上。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "Parallel, founded by former Twitter CEO Parag Agrawal, recently raised $100 million at a $2 billion valuation"
+            }
+          ]
+        },
+        {
+          "name": "Exa",
+          "product": "AI原生搜索引擎",
+          "scenario": "AI智能体的网络信息检索",
+          "target_customer": "AI公司和需要搜索能力的应用",
+          "funding_summary": "融资$85 million",
+          "core_difference": "Seltz自研完整搜索技术栈，Exa的具体技术架构未在来源中说明。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "another AI native search company, Exa, pulled in $85 million"
+            }
+          ]
+        },
+        {
+          "name": "Tavily",
+          "product": "AI搜索服务",
+          "scenario": "AI智能体的网络信息检索",
+          "target_customer": "AI公司和需要搜索能力的应用",
+          "funding_summary": "被Nebius以最高$400 million收购",
+          "core_difference": "Seltz自研完整搜索技术栈，Tavily的具体技术架构未在来源中说明。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "another called Tavily was acquired by the AI-cloud company Nebius for up to $400 million earlier this year"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "查询响应时间",
+          "value": "低于200毫秒",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "returns results in under 200 milliseconds"
+            }
+          ]
+        },
+        {
+          "label": "Dynamic News Search Benchmark准确率",
+          "value": "89%",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d27c7d0301fe41d7",
+              "quote": "On our Dynamic News Search Benchmark, Seltz answers at 89% accuracy, 5% higher than the next-best"
+            }
+          ]
+        },
+        {
+          "label": "Dynamic News Search Benchmark延迟",
+          "value": "低于250毫秒",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d27c7d0301fe41d7",
+              "quote": "returns them in under 250 milliseconds, 7 to 30 times faster than others we tested"
+            }
+          ]
+        },
+        {
+          "label": "开发者注册增长",
+          "value": "自公开API发布以来增长6倍",
+          "observed_at": "2026-06-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-992d636afcc8c022",
+              "quote": "Since the public API launch, Seltz has seen a six-fold increase in developer sign-ups"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：AI智能体需要独立于Google等传统搜索引擎的、从零构建的检索基础设施。已验证信号包括：Seltz在自有基准测试中达到89%准确率、延迟低于250毫秒（比竞品快7-30倍）、每日爬取数亿页面、开发者注册量增长6倍，以及已有一家基础模型实验室签约。然而，Seltz仅融资$12.5M，而竞品Parallel已融资$1亿、Exa融资$8500万、Tavily被以最高$4亿收购，资本差距悬殊。当前判断的证据边界限于Seltz自报的基准测试数据和早期商业牵引力，尚未有独立第三方验证或大规模企业部署的公开证据。",
+        "validated_signals": [
+          "自研完整搜索技术栈（爬虫、索引、检索模型、排序），非包装现有搜索引擎",
+          "Dynamic News Search Benchmark准确率89%，比次优竞品高5%",
+          "查询延迟低于250毫秒，比测试的其他提供商快7-30倍",
+          "每日爬取数亿网页，响应时间低于200毫秒",
+          "已有一家基础模型实验室签约，正在进行多个智能体工作流试点",
+          "自公开API发布以来开发者注册量增长6倍"
+        ],
+        "risks": [
+          "资本劣势显著：竞品Parallel融资$1亿（估值$20亿）、Exa融资$8500万、Tavily被以最高$4亿收购，Seltz仅$1250万种子轮资金可能限制其索引规模扩张和商业化速度。",
+          "性能数据来自自有基准测试，缺乏独立第三方验证，存在基准过拟合风险。",
+          "团队仅15人（约6名全职），在需要大规模基础设施投入的搜索领域，人力资源极度紧张。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI基础设施/网络检索"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Seltz Web Search API",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-604d67eacc38719c",
+              "quote": "A web search API built for agents that need real-time information at low latency."
+            },
+            {
+              "source_id": "FISRC-d27c7d0301fe41d7",
+              "quote": "We return the full document, not a preview."
+            },
+            {
+              "source_id": "FISRC-d27c7d0301fe41d7",
+              "quote": "We deploy on-premises, in private cloud, or in whatever region your data rules require, and we're SOC 2 Type II compliant"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "US News API",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-44eee6ef93577e29",
+              "quote": "The US News API is Seltz's first publicly available vertical."
+            },
+            {
+              "source_id": "FISRC-44eee6ef93577e29",
+              "quote": "The freshness SLA is approximately one hour from publication to searchable."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Antonio Mallia",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "Seltz founder and CEO Antonio Mallia"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Speedinvest",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "The round was led by the European venture firm Speedinvest and the global investor B Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "B Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "The round was led by the European venture firm Speedinvest and the global investor B Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Italian Founders Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "United Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Future Back Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "futurepresent",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f8a805db6934678c",
+              "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "arc Investors",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f8a805db6934678c",
+              "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Vento Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f8a805db6934678c",
+              "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mango Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f8a805db6934678c",
+              "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "2100 Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f8a805db6934678c",
+              "quote": "The round also saw participation from futurepresent, Italian Founders Fund, arc Investors, United Ventures, Vento Ventures, Mango Capital, 2100 Ventures, and Future Back Ventures."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家基础模型实验室（未具名）",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d27c7d0301fe41d7",
+              "quote": "have a foundational lab under contract"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Parallel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "Parallel, founded by former Twitter CEO Parag Agrawal, recently raised $100 million at a $2 billion valuation"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Exa",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "another AI native search company, Exa, pulled in $85 million"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Tavily",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2f4507e8abd3a500",
+              "quote": "another called Tavily was acquired by the AI-cloud company Nebius for up to $400 million earlier this year"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-f54ec32c67e9447c",
+          "date": "2026-06-27",
+          "title": "独家：Seltz，一家试图为AI智能体重塑网络搜索的初创公司，完成$12.5种子轮融资",
+          "amount": "$12.5 million",
+          "source_refs": [
+            "SA-944235089686314b"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2f4507e8abd3a500",
+          "source_url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+          "title": "独家：Seltz，一家试图为AI智能体重塑网络搜索的初创公司，完成$12.5种子轮融资",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-27T03:15:05.800Z",
+          "content_hash": "2159da855c1c45fd",
+          "source_artifact_id": "SA-944235089686314b",
+          "raw_id": "RAW-afc14a32a4d581c5"
+        },
+        {
+          "source_id": "FISRC-604d67eacc38719c",
+          "source_url": "https://seltz.ai/blog/why-we-built-seltz",
+          "title": "Why We Built Seltz",
+          "publisher": "seltz.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:36:32.998Z",
+          "content_hash": "ade312fba3460be5",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-44eee6ef93577e29",
+          "source_url": "https://seltz.ai/blog/why-we-built-for-news-first",
+          "title": "Why We Built for News First",
+          "publisher": "seltz.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:36:34.668Z",
+          "content_hash": "5a271de4ab5ee421",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f8a805db6934678c",
+          "source_url": "https://startuprise.io/seltz-raises-12-5m-in-seed-funding-led-by-b-capital/",
+          "title": "Seltz Raises $12.5M in Seed Funding Led by B Capital",
+          "publisher": "startuprise.io",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:36:36.672Z",
+          "content_hash": "31eebc04f8f6aab7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-992d636afcc8c022",
+          "source_url": "https://startupsunion.com/seltz-raises-12-5m/",
+          "title": "Seltz Raises $12.5M to Build the Search Layer AI Agents",
+          "publisher": "startupsunion.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:36:40.245Z",
+          "content_hash": "35e3fa67ed5fa565",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d27c7d0301fe41d7",
+          "source_url": "https://seltz.ai/blog/seed-round-announcement",
+          "title": "We've raised $12.5M to build state-of-the-art Web Search for agents",
+          "publisher": "seltz.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:36:43.286Z",
+          "content_hash": "710f172d9fe126d7",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:37:27.438Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:37:27.438Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-9ddcfd9f61c25158",
+      "company_name": "Geordie AI",
+      "status": "blocked",
+      "problems": [
+        "deepseek_json_quality_failed:company_evidence_missing"
+      ],
+      "queries": [
+        "\"Geordie AI\" \"$30 million\" funding investors round",
+        "site:geordie.ai \"Geordie AI\" product customers case study",
+        "\"Geordie AI\" \"Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents – DNYUZ\" competitors product use case",
+        "\"Geordie AI\" \"$30 million\" investor quote why invested",
+        "\"Geordie AI\" \"$30 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Geordie AI\" \"$30 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Geordie AI\" \"$30 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "site:geordie.ai \"Geordie AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "site:geordie.ai \"Geordie AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Geordie AI\" \"Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents – DNYUZ\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Geordie AI\" \"Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents – DNYUZ\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Geordie AI\" \"$30 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Geordie AI\" \"$30 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Geordie AI\" \"$30 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Geordie AI\" \"$30 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:16:30.502Z"
+    },
+    {
+      "event_id": "EV-f54ec32c67e9447c",
+      "company_name": "Seltz",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Seltz\" \"$12.5 million\" funding investors round",
+        "\"Seltz\" product customers case study",
+        "\"Seltz\" \"Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune\" competitors product use case",
+        "\"Seltz\" \"$12.5 million\" investor quote why invested",
+        "\"Seltz\" \"$12.5 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Seltz\" \"$12.5 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Seltz\" \"$12.5 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Seltz\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Seltz\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Seltz\" \"Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Seltz\" \"Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Seltz\" \"$12.5 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Seltz\" \"$12.5 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Seltz\" \"$12.5 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Seltz\" \"$12.5 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:39:05.893Z"
+    },
+    {
+      "event_id": "EV-2b15f160de3c7ddf",
+      "company_name": "Probook",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Probook\" \"$40M\" funding investors round",
+        "\"Probook\" product customers case study",
+        "\"Probook\" \"Probook Raises $40M from Andreessen Horowitz and Sequoia to\" competitors product use case",
+        "\"Probook\" \"$40M\" investor quote why invested",
+        "\"Probook\" \"$40M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Probook\" \"$40M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Probook\" \"$40M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Probook\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Probook\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Probook\" \"Probook Raises $40M from Andreessen Horowitz and Sequoia to\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Probook\" \"Probook Raises $40M from Andreessen Horowitz and Sequoia to\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Probook\" \"$40M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Probook\" \"$40M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Probook\" \"$40M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Probook\" \"$40M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:39:05.893Z"
+    },
+    {
+      "event_id": "EV-cc90f1eb2b0817e7",
+      "company_name": "Netris",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Netris\" \"$15M\" funding investors round",
+        "\"Netris\" product customers case study",
+        "\"Netris\" \"Netris raises $15M Series A from a16z to help AI neoclouds go live faster\" competitors product use case",
+        "\"Netris\" \"$15M\" investor quote why invested",
+        "\"Netris\" \"$15M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Netris\" \"$15M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Netris\" \"$15M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Netris\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Netris\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Netris\" \"Netris raises $15M Series A from a16z to help AI neoclouds go live faster\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Netris\" \"Netris raises $15M Series A from a16z to help AI neoclouds go live faster\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Netris\" \"$15M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Netris\" \"$15M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Netris\" \"$15M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Netris\" \"$15M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:39:05.893Z"
+    },
+    {
+      "event_id": "EV-26613b5bff756274",
+      "company_name": "Goodfire AI",
+      "status": "blocked",
+      "problems": [
+        "deepseek_json_quality_failed:investors_missing"
+      ],
+      "queries": [
+        "\"Goodfire AI\" \"$150M\" funding investors round",
+        "site:goodfire.ai \"Goodfire AI\" product customers case study",
+        "\"Goodfire AI\" \"The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI\" competitors product use case",
+        "\"Goodfire AI\" \"$150M\" investor quote why invested",
+        "\"Goodfire AI\" \"$150M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Goodfire AI\" \"$150M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Goodfire AI\" \"$150M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "site:goodfire.ai \"Goodfire AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "site:goodfire.ai \"Goodfire AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Goodfire AI\" \"The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Goodfire AI\" \"The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Goodfire AI\" \"$150M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Goodfire AI\" \"$150M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Goodfire AI\" \"$150M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Goodfire AI\" \"$150M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:16:30.502Z"
+    }
+  ]
+}

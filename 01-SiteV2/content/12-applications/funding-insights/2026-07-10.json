@@ -1,0 +1,1850 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-10",
+    "generated_at": "2026-07-26T15:19:36.839Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 6,
+      "auto_published": 3,
+      "blocked": 3,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-c5ffab91b210d4a8",
+      "triggered_by_event_id": "EV-7abe829941f97b65",
+      "as_of_date": "2026-07-10",
+      "company": {
+        "entity_id": "EN-70e7e370d5a50ea1",
+        "name": "Retym",
+        "full_name": "Retym",
+        "website": "www.retym.com",
+        "summary": "Retym是一家半导体公司，专注于为云和AI基础设施提供可编程相干DSP（数字信号处理）解决方案，以实现AI数据中心内部和数据中心之间更快、更高效的数据传输。",
+        "headquarters": "Cupertino, CA",
+        "founders": [
+          {
+            "name": "Roni El-Bahar",
+            "role": "CTO, 联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f1b764e21138a412",
+                "quote": "Its CTO co-founder, Roni El-Bahar, published his first blog post on Monday"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sachin Gandhi",
+            "role": "CEO, 联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1ab982a6ca2b36eb",
+                "quote": "said Sachin Gandhi, Retym’s co-founder and CEO"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f1b764e21138a412",
+            "quote": "Retym, a U.S. chipmaker with Israeli roots"
+          },
+          {
+            "source_id": "FISRC-c6c5f9de68550ea4",
+            "quote": "Retym INC 10080 N Wolfe Road, Suite SW3-200, Cupertino, CA 95014"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series D",
+        "amount": "$75 million",
+        "total_raised": "$180 million",
+        "announced_at": "2025-03-31",
+        "investors": [
+          {
+            "name": "Spark Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f1b764e21138a412",
+                "quote": "has raised a fresh $75 million series D led by James Kuklinski of Spark Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mayfield",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f1b764e21138a412",
+                "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kleiner Perkins",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f1b764e21138a412",
+                "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Fidelity Investments",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1ab982a6ca2b36eb",
+                "quote": "Alongside Spark Capital, existing investors Kleiner Perkins, Mayfield and Fidelity Investments, all participated in the round"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f1b764e21138a412",
+            "quote": "Retym, a U.S. chipmaker with Israeli roots, has raised a fresh $75 million series D led by James Kuklinski of Spark Capital."
+          },
+          {
+            "source_id": "FISRC-c6c5f9de68550ea4",
+            "quote": "the company secured $75 million in Series D funding, led by Spark Capital."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "可编程相干DSP芯片",
+          "description": "一种新型可编程相干数字信号处理芯片，旨在提升数据中心内部及与外部源之间的通信速度，不直接处理AI工作负载。",
+          "target_customers": "云和AI基础设施提供商、数据中心运营商",
+          "features": [
+            "可编程",
+            "相干数字信号处理",
+            "采用台积电5纳米工艺制造"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "It’s working on a new “programmable coherent digital signal processing DSP” chip that allows the innards of data centers to communicate faster both internally and with external sources."
+            },
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "Retym — pronounced “re-time” — is using TSMC’s state-of-the-art 5 nanometer fab for its first chip"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Marvell Technology",
+          "product": "DSP芯片",
+          "scenario": "数据中心内部和数据中心互连的光网络通信",
+          "target_customer": "数据中心、网络设备商（如Nvidia、Juniper Networks）",
+          "funding_summary": "",
+          "core_difference": "Marvell目前主导DSP行业，拥有与Nvidia和Juniper Networks等公司的成熟合作关系；Retym作为新进入者，旨在为历史上由少数大型半导体公司控制的DSP市场带来竞争。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "He was largely referring to Marvell Technology, which currently dominates the DSP industry and has partnerships with Nvidia, Juniper Networks, and many others."
+            },
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "he founded the startup to bring competition to the DSP market that has historically been “controlled by a handful of large semiconductor companies.”"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "累计融资总额",
+          "value": "$180 million",
+          "observed_at": "2025-03-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "bringing its total raised to $180 million"
+            }
+          ]
+        },
+        {
+          "label": "本轮（Series D）融资金额",
+          "value": "$75 million",
+          "observed_at": "2025-03-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "has raised a fresh $75 million series D"
+            }
+          ]
+        },
+        {
+          "label": "全球数据中心计算和网络年支出预测",
+          "value": "超过1万亿美元（未来十年内）",
+          "observed_at": "2025-03-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1ab982a6ca2b36eb",
+              "quote": "According to Dell’Oro Group, global spending on datacenter compute and networking is expected to exceed $1 trillion annually within the next decade"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI数据中心对更高带宽和更低延迟的光互连需求的爆发式增长，以及相干DSP市场从少数巨头垄断走向竞争格局的窗口期。本轮7500万美元D轮融资使累计融资达1.8亿美元，估值未披露，但多家顶级风投的持续参与表明其技术路线和团队已获得深度验证。已验证信号包括：首款芯片已采用台积电5纳米工艺进入测试阶段，公司从隐身模式正式亮相并宣布多代产品路线图，以及Dell'Oro Group预测未来十年全球数据中心计算和网络年支出将超1万亿美元。然而，这些信号仍处于早期产品验证阶段，尚未披露任何客户合作或量产订单。",
+        "validated_signals": [
+          "首款芯片采用台积电5纳米工艺，已进入测试阶段",
+          "公司从隐身模式正式亮相，宣布多代产品路线图",
+          "累计融资1.8亿美元，Spark Capital、Mayfield、Kleiner Perkins和Fidelity Investments持续投资",
+          "Dell'Oro Group预测未来十年全球数据中心计算和网络年支出将超1万亿美元，光网络和DSP需求强劲"
+        ],
+        "risks": [
+          "Marvell Technology在DSP市场占据主导地位，并与Nvidia、Juniper Networks等拥有深厚的合作关系，Retym作为新进入者面临巨大的市场准入壁垒和客户迁移成本。",
+          "首款芯片仍在测试阶段，尚未披露任何客户验证或量产订单，从测试到规模部署存在技术和商业化的不确定性。"
+        ],
+        "related_direction_id": "",
+        "sector": "半导体/AI基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "可编程相干DSP芯片",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "It’s working on a new “programmable coherent digital signal processing DSP” chip that allows the innards of data centers to communicate faster both internally and with external sources."
+            },
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "Retym — pronounced “re-time” — is using TSMC’s state-of-the-art 5 nanometer fab for its first chip"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Roni El-Bahar",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "Its CTO co-founder, Roni El-Bahar, published his first blog post on Monday"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sachin Gandhi",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1ab982a6ca2b36eb",
+              "quote": "said Sachin Gandhi, Retym’s co-founder and CEO"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Spark Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "has raised a fresh $75 million series D led by James Kuklinski of Spark Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mayfield",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kleiner Perkins",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fidelity Investments",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1ab982a6ca2b36eb",
+              "quote": "Alongside Spark Capital, existing investors Kleiner Perkins, Mayfield and Fidelity Investments, all participated in the round"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Marvell Technology",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "He was largely referring to Marvell Technology, which currently dominates the DSP industry and has partnerships with Nvidia, Juniper Networks, and many others."
+            },
+            {
+              "source_id": "FISRC-f1b764e21138a412",
+              "quote": "he founded the startup to bring competition to the DSP market that has historically been “controlled by a handful of large semiconductor companies.”"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-7abe829941f97b65",
+          "date": "2026-07-10",
+          "title": "Spark、Mayfield 和 Kleiner Perkins 再向 AI 数据中心芯片制造商 Retym 注资 7500 万美元",
+          "amount": "$75 million",
+          "source_refs": [
+            "SA-f5539c5f213639cf"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-f1b764e21138a412",
+          "source_url": "https://techcrunch.com/2025/03/31/spark-mayfield-and-kleiner-perkins-pour-another-75m-into-ai-data-center-chipmaker-retym/",
+          "title": "Spark、Mayfield 和 Kleiner Perkins 再向 AI 数据中心芯片制造商 Retym 注资 7500 万美元",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-10T01:59:59.447Z",
+          "content_hash": "b3e02e458342a3fb",
+          "source_artifact_id": "SA-f5539c5f213639cf",
+          "raw_id": "RAW-2a4ac104f95a087e"
+        },
+        {
+          "source_id": "FISRC-1ab982a6ca2b36eb",
+          "source_url": "https://www.vcaonline.com/news/2025033105/retym-launches-out-of-stealth-with-180-million-to-drive-ai-infrastructure-innovation/",
+          "title": "Retym Launches Out of Stealth with $180 Million to Drive AI Infrastructure Innovation",
+          "publisher": "vcaonline.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:48:57.189Z",
+          "content_hash": "1e910f33d65209e1",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c6c5f9de68550ea4",
+          "source_url": "https://retym.com/press-release-march-31-2025/",
+          "title": "Retym Launches Out of Stealth with $180 Million to Drive AI Infrastructure Innovation - Welcome to Retym",
+          "publisher": "retym.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:49:06.620Z",
+          "content_hash": "ae72e81deb4532de",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:50:24.723Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:50:24.723Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-4156663529273d61",
+      "triggered_by_event_id": "EV-6e516b6e68def9cf",
+      "as_of_date": "2026-07-10",
+      "company": {
+        "entity_id": "EN-2e3e41eef734616d",
+        "name": "Data center infrastructure startup TensorWave",
+        "full_name": "TensorWave Inc.",
+        "website": "https://tensorwave.com/",
+        "summary": "TensorWave是一家基于云的人工智能基础设施初创公司，专门提供由AMD Instinct加速器驱动的AI云服务，用于AI训练和推理，旨在打破英伟达在AI芯片领域的垄断。",
+        "headquarters": "拉斯维加斯",
+        "founders": [
+          {
+            "name": "Darrick Horton",
+            "role": "首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e98aedbd2eaa6410",
+                "quote": "TensorWave Chief Executive Darrick Horton"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jeff Tatarchuk",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-40084e3eb176892e",
+                "quote": "Founded in 2023 by Darrick Horton, Jeff Tatarchuk, and Piotr Tomasik"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Piotr Tomasik",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-40084e3eb176892e",
+                "quote": "Founded in 2023 by Darrick Horton, Jeff Tatarchuk, and Piotr Tomasik"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "160",
+          "observed_at": "2026-06-11",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-40084e3eb176892e",
+              "quote": "TensorWave intends to double its workforce from 160 to between 300 and 400 employees over the coming year"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e98aedbd2eaa6410",
+            "quote": "Cloud-based artificial intelligence infrastructure startup TensorWave Inc."
+          },
+          {
+            "source_id": "FISRC-e98aedbd2eaa6410",
+            "quote": "Las Vegas-based TensorWave was founded in 2023"
+          }
+        ]
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "3.5亿美元",
+        "total_raised": "约4.5亿美元",
+        "announced_at": "2026-06-10",
+        "investors": [
+          {
+            "name": "Magnetar",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e98aedbd2eaa6410",
+                "quote": "The round was co-led by Magnetar and AMD Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AMD Ventures",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e98aedbd2eaa6410",
+                "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Maverick Silicon",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e98aedbd2eaa6410",
+                "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nexus Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e98aedbd2eaa6410",
+                "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Western Frontier",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e98aedbd2eaa6410",
+                "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e98aedbd2eaa6410",
+            "quote": "it has closed on a bumper $350 million Series B funding round"
+          },
+          {
+            "source_id": "FISRC-362c32d0dae07e89",
+            "quote": "IndexBox (citing Yahoo Finance) reports a prior roughly $100 million raise that valued the company at about $400 million"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "AMD Instinct AI云服务",
+          "description": "基于AMD Instinct GPU和ROCm软件栈的云基础设施，为AI训练和推理提供高性能计算资源。",
+          "target_customers": "需要AI训练和推理资源的企业和AI原生客户",
+          "features": [
+            "裸金属访问",
+            "AMD Instinct MI325X和MI355X加速器",
+            "ROCm软件平台",
+            "液冷GPU训练集群"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "It provides access to specialized, high-performance cloud infrastructure such as AI accelerators, renting it to customers who need resources for both training and inference."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Moreh",
+          "industry": "AI",
+          "use_case": "在MI355X上进行前沿LLM推理，并减少模型权重下载时间约75%",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-956b89a1f3bd31b6",
+              "quote": "TensorWave powers Moreh's frontier LLM inference on MI355X & reduces model weight download time by ~75%"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Cerebras Systems",
+          "product": "餐盘大小的AI推理芯片",
+          "scenario": "AI推理工作负载",
+          "target_customer": "寻求英伟达替代方案的企业",
+          "funding_summary": "已于上月上市",
+          "core_difference": "Cerebras使用自研的超大尺寸芯片进行推理，而TensorWave完全依赖AMD的Instinct GPU和ROCm软件栈。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "Another major rival is Cerebras Systems Inc., which is known for its dinner plate-sized chips that also target inference. It went public last month."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "运营数据中心数量",
+          "value": "3",
+          "observed_at": "2026-06-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "it currently has three operational data centers"
+            }
+          ]
+        },
+        {
+          "label": "已签署租赁的电力容量",
+          "value": "500兆瓦",
+          "observed_at": "2026-06-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "It has signed leases for 500 megawatts of capacity"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AMD AI基础设施能否成为英伟达的有效替代方案。本轮3.5亿美元融资将估值推至15.5亿美元，较一年前约4亿美元估值增长近四倍，验证了市场对摆脱单一供应商依赖的强烈需求。已验证信号包括：已运营三个配备AMD Instinct处理器的数据中心、签署500兆瓦电力租赁协议、运营北美最大液冷AMD GPU训练集群之一。但判断的证据边界受限于软件生态成熟度和客户大规模迁移意愿，目前仅公开了一个客户案例。",
+        "validated_signals": [
+          "已运营三个数据中心，每个配备10,000个AMD Instinct处理器",
+          "已签署500兆瓦电力容量租赁协议",
+          "运营北美最大液冷AMD GPU训练集群之一，约8,000个MI325X加速器",
+          "估值一年内从约4亿美元增长至15.5亿美元"
+        ],
+        "risks": [
+          "AMD的ROCm软件平台此前被抱怨比英伟达CUDA更难用且bug更多，虽然公司声称已改善至'即插即用'，但大规模客户迁移的意愿和实际性能对比仍未得到广泛验证。"
+        ],
+        "related_direction_id": "",
+        "sector": "AI基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AMD Instinct AI云服务",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "It provides access to specialized, high-performance cloud infrastructure such as AI accelerators, renting it to customers who need resources for both training and inference."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Darrick Horton",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "TensorWave Chief Executive Darrick Horton"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jeff Tatarchuk",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-40084e3eb176892e",
+              "quote": "Founded in 2023 by Darrick Horton, Jeff Tatarchuk, and Piotr Tomasik"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Piotr Tomasik",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-40084e3eb176892e",
+              "quote": "Founded in 2023 by Darrick Horton, Jeff Tatarchuk, and Piotr Tomasik"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Magnetar",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "The round was co-led by Magnetar and AMD Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AMD Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "The round was co-led by Magnetar and AMD Ventures, the venture capital arm of the chipmaker Advanced Micro Devices Inc."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Maverick Silicon",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nexus Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Western Frontier",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Moreh",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-956b89a1f3bd31b6",
+              "quote": "TensorWave powers Moreh's frontier LLM inference on MI355X & reduces model weight download time by ~75%"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Cerebras Systems",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e98aedbd2eaa6410",
+              "quote": "Another major rival is Cerebras Systems Inc., which is known for its dinner plate-sized chips that also target inference. It went public last month."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-6e516b6e68def9cf",
+          "date": "2026-07-10",
+          "title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+          "amount": "$350M",
+          "source_refs": [
+            "SA-74b834ae5cf0f031"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e98aedbd2eaa6410",
+          "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
+          "title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-10T01:59:46.164Z",
+          "content_hash": "1d75cf39c1185f55",
+          "source_artifact_id": "SA-74b834ae5cf0f031",
+          "raw_id": "RAW-a16377a97bc0ec67"
+        },
+        {
+          "source_id": "FISRC-40084e3eb176892e",
+          "source_url": "https://frnt.com/story/29907/cloud-startup-tensorwave-hits-1-55-billion-valuation-in-amd-backed-funding-round",
+          "title": "Cloud Startup TensorWave Hits $1.55 Billion Valuation in AMD-Backed Funding Round | The Front Page",
+          "publisher": "frnt.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:48:11.747Z",
+          "content_hash": "8dcd63812a473831",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-362c32d0dae07e89",
+          "source_url": "https://letsdatascience.com/news/tensorwave-raises-350m-to-challenge-nvidias-dominance-6d92fd12",
+          "title": "TensorWave Raises $350M to Challenge Nvidia's Dominance | Let's Data Science",
+          "publisher": "letsdatascience.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:48:14.617Z",
+          "content_hash": "754a72bcba75b7a9",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-956b89a1f3bd31b6",
+          "source_url": "https://tensorwave.com/",
+          "title": "TensorWave: AI Cloud for AMD Instinct™ Accelerators",
+          "publisher": "tensorwave.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:48:16.989Z",
+          "content_hash": "102175f3ef7f62a2",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:48:58.806Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:48:58.806Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-1c92625ce15ebcac",
+      "triggered_by_event_id": "EV-e41fc65eb014893f",
+      "as_of_date": "2026-07-10",
+      "company": {
+        "entity_id": "EN-8d4321d936320802",
+        "name": "NVIDIA",
+        "full_name": "Gradium",
+        "website": "",
+        "summary": "Gradium是一家总部位于巴黎的AI语音初创公司，从法国AI实验室Kyutai分拆而来，致力于构建超低延迟的音频模型，使AI语音能够几乎即时响应，消除AI智能体对话中常见的停顿。",
+        "headquarters": "Paris",
+        "founders": [
+          {
+            "name": "Neil Zeghidour",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Both Kyutai and Gradium were co-founded by Neil Zeghidour, a researcher who previously worked at Google Brain, DeepMind, and Facebook."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9af7e6a4d7b3d5e7",
+            "quote": "Gradium, a Paris-based startup that offers voice AI models"
+          },
+          {
+            "source_id": "FISRC-e48b46a7d8a544df",
+            "quote": "Gradium was spun out of Kyutai, the French AI research lab backed by telecom billionaire Xavier Niel."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$100 million",
+        "total_raised": "$100 million",
+        "announced_at": "2026-07-09",
+        "investors": [
+          {
+            "name": "Nvidia",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium, a Paris-based startup that offers voice AI models, reopened its seed round to new investors, including Nvidia, and has now raised $100 million total for the round"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802"
+          },
+          {
+            "name": "FirstMark Capital",
+            "role": "种子轮参投（2025年12月首次披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Eurazeo",
+            "role": "种子轮参投（2025年12月首次披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "DST Global Partners",
+            "role": "种子轮参投（2025年12月首次披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Eric Schmidt",
+            "role": "种子轮参投（2025年12月首次披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Xavier Niel",
+            "role": "种子轮参投（2025年12月首次披露）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9af7e6a4d7b3d5e7",
+                "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e48b46a7d8a544df",
+            "quote": "Gradium has expanded its seed round to $100 million after adding new investors including Nvidia"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "超低延迟语音AI模型",
+          "description": "构建用于大规模语音生成的音频模型，实现几乎即时的AI语音响应，消除AI智能体对话中的不自然停顿。",
+          "target_customers": "客户支持、汽车、工作场所工具、教育、消费者应用等领域的企业客户",
+          "features": [
+            "超低延迟语音生成",
+            "大规模语音交付",
+            "几乎即时响应"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "Gradium is working on audio models that deliver voice at scale with ultra-low latency, meaning AI voices that respond almost instantly, without that awkward pause that often creeps into AI agent conversations."
+            },
+            {
+              "source_id": "FISRC-e48b46a7d8a544df",
+              "quote": "Gradium is building audio models designed for ultra low latency voice generation. In practice, that means AI voices that can respond almost instantly instead of pausing between turns"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Renault",
+          "industry": "汽车制造",
+          "use_case": "将语音AI集成到汽车产品中",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e48b46a7d8a544df",
+              "quote": "Gradium says it has already signed customers including Renault, giving it an early commercial foothold in a crowded market."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "ElevenLabs",
+          "product": "语音AI模型",
+          "scenario": "AI语音生成与合成",
+          "target_customer": "需要语音AI能力的企业和开发者",
+          "funding_summary": "2026年2月估值110亿美元",
+          "core_difference": "ElevenLabs估值已达110亿美元，而Gradium刚完成1亿美元种子轮融资，处于更早期阶段。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "The company has plenty of competition, though, from other voice AI startups like ElevenLabs, valued at $11 billion in February"
+            }
+          ]
+        },
+        {
+          "name": "Google",
+          "product": "Gemini（语音能力）",
+          "scenario": "多模态AI交互中的语音功能",
+          "target_customer": "广泛的企业和消费者用户",
+          "funding_summary": "",
+          "core_difference": "Google是大型模型制造商，语音是其多模态能力的一部分；Gradium专注于超低延迟语音模型，将语音作为AI智能体的接口层。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e48b46a7d8a544df",
+              "quote": "A voice model that responds quickly enough to feel natural can become an interface layer for agents, not just a text to speech feature."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "种子轮融资总额",
+          "value": "$100 million",
+          "observed_at": "2026-07-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "has now raised $100 million total for the round"
+            }
+          ]
+        },
+        {
+          "label": "首次披露融资金额（2025年12月）",
+          "value": "$70 million",
+          "observed_at": "2025-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors"
+            }
+          ]
+        },
+        {
+          "label": "本轮扩展新增金额",
+          "value": "约$30 million",
+          "observed_at": "2026-07-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e48b46a7d8a544df",
+              "quote": "The latest extension adds roughly $30 million and brings the round to more than $100 million, according to Sifted."
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是语音成为AI智能体主要交互界面的趋势，以及超低延迟语音模型作为智能体接口层的商业价值。Gradium以1亿美元种子轮融资获得Nvidia参投，验证信号包括：已签约雷诺等大型企业客户，团队来自Google Brain、DeepMind等顶级AI研究机构，以及从Kyutai实验室分拆的技术背景。但判断的证据边界受限于来源未披露估值、收入数据或具体客户合同规模，且Nvidia未发表公开投资声明。",
+        "validated_signals": [
+          "已签约法国汽车制造商雷诺作为客户",
+          "创始团队来自Google Brain、DeepMind、Facebook等顶级AI研究机构",
+          "从法国AI实验室Kyutai分拆，具备研究背景",
+          "Nvidia作为战略投资方参投"
+        ],
+        "risks": [
+          "语音AI市场竞争激烈，面临ElevenLabs（估值110亿美元）和Google、OpenAI、Meta等大型模型制造商的竞争压力"
+        ],
+        "related_direction_id": "",
+        "sector": "AI语音/音频模型"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "超低延迟语音AI模型",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "Gradium is working on audio models that deliver voice at scale with ultra-low latency, meaning AI voices that respond almost instantly, without that awkward pause that often creeps into AI agent conversations."
+            },
+            {
+              "source_id": "FISRC-e48b46a7d8a544df",
+              "quote": "Gradium is building audio models designed for ultra low latency voice generation. In practice, that means AI voices that can respond almost instantly instead of pausing between turns"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Neil Zeghidour",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "Both Kyutai and Gradium were co-founded by Neil Zeghidour, a researcher who previously worked at Google Brain, DeepMind, and Facebook."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "Gradium, a Paris-based startup that offers voice AI models, reopened its seed round to new investors, including Nvidia, and has now raised $100 million total for the round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "FirstMark Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Eurazeo",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "DST Global Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Eric Schmidt",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Xavier Niel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Renault",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e48b46a7d8a544df",
+              "quote": "Gradium says it has already signed customers including Renault, giving it an early commercial foothold in a crowded market."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "ElevenLabs",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9af7e6a4d7b3d5e7",
+              "quote": "The company has plenty of competition, though, from other voice AI startups like ElevenLabs, valued at $11 billion in February"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Google",
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e48b46a7d8a544df",
+              "quote": "A voice model that responds quickly enough to feel natural can become an interface layer for agents, not just a text to speech feature."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-e3792591090281c6",
+          "date": "2026-07-17",
+          "title": "推理云运营商 General Compute 获得 4 亿美元债务融资",
+          "amount": "$400M",
+          "source_refs": [
+            "SA-30b7789f423e00f3"
+          ]
+        },
+        {
+          "event_id": "EV-4eaf3aabecae6016",
+          "date": "2026-07-16",
+          "title": "AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元",
+          "amount": "$1.5B",
+          "source_refs": [
+            "SA-794812b0b50a4c5e"
+          ]
+        },
+        {
+          "event_id": "EV-8b7cbb66a33a945d",
+          "date": "2026-07-16",
+          "title": "Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务",
+          "amount": "$11.3 million",
+          "source_refs": [
+            "SA-876d57fb4eea3933"
+          ]
+        },
+        {
+          "event_id": "EV-87432dbb99cd6033",
+          "date": "2026-07-14",
+          "title": "DeepSeek 新一轮融资估值约710亿美元，资金将用于自建数据中心和AI芯片",
+          "amount": "$71 billion",
+          "source_refs": [
+            "SA-4793761bc6a08279"
+          ]
+        },
+        {
+          "event_id": "EV-6e516b6e68def9cf",
+          "date": "2026-07-10",
+          "title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
+          "amount": "$350M",
+          "source_refs": [
+            "SA-74b834ae5cf0f031"
+          ]
+        },
+        {
+          "event_id": "EV-463cb26b5e03c7f7",
+          "date": "2026-07-09",
+          "title": "Prime Intellect 获 1.3 亿美元 A 轮融资，助力企业构建自有 AI 智能体",
+          "amount": "$130M",
+          "source_refs": [
+            "SA-2bec96260be8d65c"
+          ]
+        },
+        {
+          "event_id": "EV-e41fc65eb014893f",
+          "date": "2026-07-09",
+          "title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+          "amount": "$100M",
+          "source_refs": [
+            "SA-bb1eae63037f700e"
+          ]
+        },
+        {
+          "event_id": "EV-13ec78dfdbca678b",
+          "date": "2026-07-08",
+          "title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
+          "amount": "$800M",
+          "source_refs": [
+            "SA-5cd223ef162fc17c"
+          ]
+        },
+        {
+          "event_id": "EV-040fc355bc12a750",
+          "date": "2026-07-07",
+          "title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+          "amount": "$800M",
+          "source_refs": [
+            "SA-ec3e199b7cdeadca"
+          ]
+        },
+        {
+          "event_id": "EV-7abd8ec418f1e7f3",
+          "date": "2026-07-07",
+          "title": "独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片",
+          "amount": "$230M",
+          "source_refs": [
+            "SA-565c3361c7a14ee2"
+          ]
+        },
+        {
+          "event_id": "EV-80e54c9a390da293",
+          "date": "2026-07-02",
+          "title": "宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变",
+          "amount": "$800M",
+          "source_refs": [
+            "SA-7433945944813ef2"
+          ]
+        },
+        {
+          "event_id": "EV-7817dc69d5228cbb",
+          "date": "2026-06-28",
+          "title": "Runlayer 完成3000万美元A轮融资，全力押注人工智能",
+          "amount": "$30M",
+          "source_refs": [
+            "SA-317effbacd477100",
+            "SA-e325cb15daaff611"
+          ]
+        },
+        {
+          "event_id": "EV-4118202ed0f91895",
+          "date": "2026-06-23",
+          "title": "Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资",
+          "amount": "6.5 亿",
+          "source_refs": [
+            "SA-bd5416b7b74c8cac"
+          ]
+        },
+        {
+          "event_id": "EV-236cbc2d64f0c455",
+          "date": "2026-06-22",
+          "title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
+          "amount": "$190 Million",
+          "source_refs": [
+            "SA-624721f77ca9fd88"
+          ]
+        },
+        {
+          "event_id": "EV-a00763037a94d512",
+          "date": "2026-06-17",
+          "title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+          "amount": "$310 million",
+          "source_refs": [
+            "SA-fcd9ebc070d58333",
+            "SA-01fd368af14b9cdb"
+          ]
+        },
+        {
+          "event_id": "EV-0e84a2f49d765ce3",
+          "date": "2026-06-08",
+          "title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+          "amount": "$113M",
+          "source_refs": [
+            "SA-6e67bbf3239a474e"
+          ]
+        },
+        {
+          "event_id": "EV-61546e58c0e669e7",
+          "date": "2026-05-24",
+          "title": "General Analysis 获 1000 万美元种子轮融资，用于保障 AI 智能体安全",
+          "amount": "$10M",
+          "source_refs": [
+            "SA-67f4d2fab913a648"
+          ]
+        },
+        {
+          "event_id": "EV-467d1a701d21327d",
+          "date": "2026-05-22",
+          "title": "芯片初创公司Taalas融资1.69亿美元，助力打造AI芯片挑战英伟达",
+          "amount": "$169 million",
+          "source_refs": [
+            "SA-6d71b48d0795483b"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9af7e6a4d7b3d5e7",
+          "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+          "title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-10T01:59:44.088Z",
+          "content_hash": "84b42b7082dca9a3",
+          "source_artifact_id": "SA-bb1eae63037f700e",
+          "raw_id": "RAW-6e677c698e3bb7cc"
+        },
+        {
+          "source_id": "FISRC-e48b46a7d8a544df",
+          "source_url": "https://cryptobriefing.com/gradium-100m-seed-nvidia-ai-compute/",
+          "title": "Nvidia backs Gradium as voice AI startup expands seed round to $100 million",
+          "publisher": "cryptobriefing.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:48:06.597Z",
+          "content_hash": "13af7fc256332301",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:48:47.183Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:48:47.183Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-e41fc65eb014893f",
+      "company_name": "NVIDIA",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"NVIDIA\" \"$100M\" funding investors round",
+        "\"NVIDIA\" product customers case study",
+        "\"NVIDIA\" \"巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投\" competitors product use case",
+        "\"NVIDIA\" \"$100M\" investor quote why invested",
+        "\"NVIDIA\" \"$100M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"NVIDIA\" \"$100M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"NVIDIA\" \"$100M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"NVIDIA\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"NVIDIA\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"NVIDIA\" \"巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"NVIDIA\" \"巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"NVIDIA\" \"$100M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"NVIDIA\" \"$100M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"NVIDIA\" \"$100M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"NVIDIA\" \"$100M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:50:37.035Z"
+    },
+    {
+      "event_id": "EV-6e516b6e68def9cf",
+      "company_name": "Data center infrastructure startup TensorWave",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Data center infrastructure startup TensorWave\" \"$350M\" funding investors round",
+        "\"Data center infrastructure startup TensorWave\" product customers case study",
+        "\"Data center infrastructure startup TensorWave\" \"Data center infrastructure startup TensorWave raises $350M to help break Nvidia's AI chip monopoly - SiliconANGLE\" competitors product use case",
+        "\"Data center infrastructure startup TensorWave\" \"$350M\" investor quote why invested",
+        "\"Data center infrastructure startup TensorWave\" \"$350M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Data center infrastructure startup TensorWave\" \"$350M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Data center infrastructure startup TensorWave\" \"$350M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Data center infrastructure startup TensorWave\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Data center infrastructure startup TensorWave\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Data center infrastructure startup TensorWave\" \"Data center infrastructure startup TensorWave raises $350M to help break Nvidia's AI chip monopoly - SiliconANGLE\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Data center infrastructure startup TensorWave\" \"Data center infrastructure startup TensorWave raises $350M to help break Nvidia's AI chip monopoly - SiliconANGLE\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Data center infrastructure startup TensorWave\" \"$350M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Data center infrastructure startup TensorWave\" \"$350M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Data center infrastructure startup TensorWave\" \"$350M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Data center infrastructure startup TensorWave\" \"$350M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:50:37.035Z"
+    },
+    {
+      "event_id": "EV-15cc72d7c78cad3d",
+      "company_name": "Salesforce",
+      "status": "blocked",
+      "problems": [
+        "deepseek_json_quality_failed:sector_not_chinese|cited_research_sources_insufficient"
+      ],
+      "queries": [
+        "\"Salesforce\" \"$125M\" funding investors round",
+        "\"Salesforce\" product customers case study",
+        "\"Salesforce\" \"Resolve AI Announces $125M Series A at $1B Valuation to Fix Production Operations with AI\" competitors product use case",
+        "\"Salesforce\" \"$125M\" investor quote why invested",
+        "\"Salesforce\" \"$125M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Salesforce\" \"$125M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Salesforce\" \"$125M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Salesforce\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Salesforce\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Salesforce\" \"Resolve AI Announces $125M Series A at $1B Valuation to Fix Production Operations with AI\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Salesforce\" \"Resolve AI Announces $125M Series A at $1B Valuation to Fix Production Operations with AI\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Salesforce\" \"$125M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Salesforce\" \"$125M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Salesforce\" \"$125M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Salesforce\" \"$125M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:19:36.812Z"
+    },
+    {
+      "event_id": "EV-7abe829941f97b65",
+      "company_name": "Retym",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Retym\" \"$75 million\" funding investors round",
+        "\"Retym\" product customers case study",
+        "\"Retym\" \"Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch\" competitors product use case",
+        "\"Retym\" \"$75 million\" investor quote why invested",
+        "\"Retym\" \"$75 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Retym\" \"$75 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Retym\" \"$75 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Retym\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Retym\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Retym\" \"Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Retym\" \"Spark, Mayfield, and Kleiner Perkins pour another $75M into AI data center chipmaker Retym | TechCrunch\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Retym\" \"$75 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Retym\" \"$75 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Retym\" \"$75 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Retym\" \"$75 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:50:37.035Z"
+    },
+    {
+      "event_id": "EV-9781e67076f4e06b",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-26T15:19:36.812Z"
+    },
+    {
+      "event_id": "EV-640c5ea9f4fa2780",
+      "company_name": "Intel",
+      "status": "blocked",
+      "problems": [
+        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+      ],
+      "queries": [
+        "\"Intel\" \"$100m\" funding investors round",
+        "\"Intel\" product customers case study",
+        "\"Intel\" \"Lyzr used its own AI agent to help raise a $100mn round\" competitors product use case",
+        "\"Intel\" \"$100m\" investor quote why invested",
+        "\"Intel\" \"$100m\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Intel\" \"$100m\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intel\" \"$100m\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intel\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intel\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intel\" \"Lyzr used its own AI agent to help raise a $100mn round\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intel\" \"Lyzr used its own AI agent to help raise a $100mn round\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intel\" \"$100m\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intel\" \"$100m\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intel\" \"$100m\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intel\" \"$100m\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:19:36.812Z"
+    }
+  ]
+}

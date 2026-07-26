@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-05-22",
-    "generated_at": "2026-07-26T14:17:44.478Z",
+    "generated_at": "2026-07-26T15:07:33.332Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -10,12 +10,558 @@
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
     "counts": {
       "funding_events": 5,
-      "auto_published": 4,
-      "blocked": 1,
+      "auto_published": 5,
+      "blocked": 0,
       "pending": 0
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-f4b4741489974d88",
+      "triggered_by_event_id": "EV-59882383f82f215d",
+      "as_of_date": "2026-05-22",
+      "company": {
+        "entity_id": "EN-883be863cc6562bb",
+        "name": "European AI chip startup Axelera",
+        "full_name": "Axelera AI",
+        "website": "https://axelera.ai/",
+        "summary": "Axelera AI 是一家欧洲 AI 半导体公司，为边缘计算和数据中心应用开发下一代 AI 加速硬件。其边缘优先架构旨在解决 AI 在能耗和散热方面的关键限制，提供高性能 AI 推理解决方案。",
+        "headquarters": "Eindhoven, Netherlands",
+        "founders": [
+          {
+            "name": "Fabrizio Del Maffeo",
+            "role": "CEO and co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a68637da007d3e2",
+                "quote": "said Fabrizio Del Maffeo, CEO and co-founder of Axelera AI"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-3a68637da007d3e2",
+            "quote": "Axelera AI, the European leader in AI acceleration hardware"
+          },
+          {
+            "source_id": "FISRC-6f1272d694246329",
+            "quote": "Axelera, based in Eindhoven in the Netherlands, is one of the few companies in Europe that make specialised computer chips for AI applications."
+          }
+        ]
+      },
+      "financing": {
+        "round": "latest funding round",
+        "amount": "$250 million",
+        "total_raised": "more than $450 million",
+        "announced_at": "2026-02-24",
+        "investors": [
+          {
+            "name": "Innovation Industries",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f1272d694246329",
+                "quote": "funding round led by Innovation Industries"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BlackRock",
+            "role": "本轮参投（新投资方）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f1272d694246329",
+                "quote": "included BlackRock and SiteGround Capital as new investors"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "SiteGround Capital",
+            "role": "本轮参投（新投资方）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6f1272d694246329",
+                "quote": "included BlackRock and SiteGround Capital as new investors"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6f1272d694246329",
+            "quote": "Axelera AI has secured $250 million in a funding round led by Innovation Industries"
+          },
+          {
+            "source_id": "FISRC-3a68637da007d3e2",
+            "quote": "Axelera AI has attracted over $450 million in equity, grants and venture debt since incorporating in July 2021."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Europa",
+          "description": "一款计划于2026年6月前推出的AI推理芯片，旨在扩展制造规模。",
+          "target_customers": "工业、国防、公共安全、零售、机器人、安防等领域的客户",
+          "features": [
+            "629 TOPs AI算力"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f1272d694246329",
+              "quote": "expand manufacturing of its \"Europa\" chip, which it plans to launch before June"
+            },
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "Europa® at 629 TOPs"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Metis",
+          "description": "AI加速平台，包含AIPU、M.2和PCIe加速卡及计算板，提供从214 TOPs起的AI推理性能。",
+          "target_customers": "工业制造、安防监控、零售、机器人、智慧城市、农业、太空等领域的客户",
+          "features": [
+            "214 TOPs起",
+            "15 TOPs/W能效",
+            "99.9%相对精度"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "With Metis® AIPUs starting at 214 TOPs"
+            },
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "At 15 TOPs/W, Metis AIPUs run demanding AI workloads at the edge without compromising on power, heat or operational cost."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Titania",
+          "description": "一款用于超级计算中心（AI工厂）的先进芯片，预计2027年推出，由欧盟项目资助。",
+          "target_customers": "超级计算中心、AI工厂",
+          "features": [],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f1272d694246329",
+              "quote": "develop an advanced chip dubbed \"Titania\" for use in supercomputing centres - also referred to as AI factories. That chip is expected in 2027."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Advantech",
+          "industry": "嵌入式系统",
+          "use_case": "结合Axelera AI的神经处理技术与Advantech的系统设计，部署边缘AI解决方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "By combining Axelera AI’s cutting-edge neural processing technology with Advantech’s system design expertise and global deployment capabilities, we are enabling customers to deploy cutting-edge AI solutions with greater speed and scalability."
+            }
+          ]
+        },
+        {
+          "name": "European Space Agency (ESA)",
+          "industry": "航天",
+          "use_case": "为ESA任务提供可在非许可环境下长期运行且无需人工干预的AI技术。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "We chose Axelera AI because of its sovereign technology and long-term availability, bringing fantastic capabilities to the ESA missions."
+            }
+          ]
+        },
+        {
+          "name": "Telefonica",
+          "industry": "电信",
+          "use_case": "利用高能效、推理聚焦的AI技术，实现与全球合作伙伴平台无缝集成的最佳AI解决方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "Advancing energy-efficient, inference-focused AI technologies developed in Europe is essential to meeting the rapidly growing demand for high-performance, sustainable and resilient AI deployments. These innovations will permit Telefonica to enable best-in-class AI solutions that integrate seamlessly with our partners’ platforms from around the globe."
+            }
+          ]
+        },
+        {
+          "name": "2CRSI",
+          "industry": "高性能计算/数据中心",
+          "use_case": "构建从嵌入式平台到大规模数据中心和HPC部署的弹性推理解决方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "Ensuring a sovereign, predictable and Europe-based AI supply chain is essential for building resilient edge to HPC systems. Our collaboration with Axelera strengthens our ability to secure long-term availability across our portfolio, from embedded platforms to large-scale datacenter and HPC deployments"
+            }
+          ]
+        },
+        {
+          "name": "DroneStar AI",
+          "industry": "无人机",
+          "use_case": "利用AI将一名操作员扩展为操控一群无人机的能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "How DroneStar AI Scaled One Operator into a Whole Pack"
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "累计融资额",
+          "value": "超过4.5亿美元",
+          "observed_at": "2026-02-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f1272d694246329",
+              "quote": "Since its founding in 2021, it has raised more than $450 million."
+            }
+          ]
+        },
+        {
+          "label": "本轮融资金额",
+          "value": "2.5亿美元",
+          "observed_at": "2026-02-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f1272d694246329",
+              "quote": "Axelera AI has secured $250 million in a funding round"
+            }
+          ]
+        },
+        {
+          "label": "欧盟资助金额",
+          "value": "6600万美元",
+          "observed_at": "2025-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f1272d694246329",
+              "quote": "Axelera received a $66 million grant in March 2025"
+            }
+          ]
+        },
+        {
+          "label": "Metis能效",
+          "value": "15 TOPs/W",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "At 15 TOPs/W, Metis AIPUs run demanding AI workloads at the edge without compromising on power, heat or operational cost."
+            }
+          ]
+        },
+        {
+          "label": "Metis相对精度",
+          "value": "99.9%",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "99.9% Relative Accuracy"
+            }
+          ]
+        },
+        {
+          "label": "Europa算力",
+          "value": "629 TOPs",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "Europa® at 629 TOPs"
+            }
+          ]
+        },
+        {
+          "label": "Metis算力",
+          "value": "214 TOPs起",
+          "observed_at": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "With Metis® AIPUs starting at 214 TOPs"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "SiteGround Capital",
+            "speaker": "Ivo Tzenov",
+            "speaker_role": "founder of SiteGround",
+            "rationale": "认为Axelera将推理带到数据产生的边缘，直接解决了集中式数据中心不可持续的能源需求和日益增长的隐私问题这两大行业挑战。",
+            "quote": "Axelera’s approach to AI acceleration—bringing inference to the edge where data is created—directly addresses two of the most pressing challenges facing the AI industry: the unsustainable energy demands of centralized data centers and growing privacy concerns.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3a68637da007d3e2",
+                "quote": "Axelera’s approach to AI acceleration—bringing inference to the edge where data is created—directly addresses two of the most pressing challenges facing the AI industry: the unsustainable energy demands of centralized data centers and growing privacy concerns."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是AI推理从云端向边缘迁移的确定性趋势，以及由此带来的对高能效、低成本专用推理芯片的刚性需求。本轮2.5亿美元融资及累计超4.5亿美元的融资额，验证了Axelera在边缘AI推理芯片领域的技术路线（边缘优先架构）和商业执行力（超500家全球客户）已获得产业资本和金融资本的共同认可。BlackRock的参与标志着金融市场已将解决AI基础设施的能耗和散热限制视为AI持续增长的关键前提。",
+        "validated_signals": [
+          "已出货至全球超过500家客户，覆盖国防、公共安全、工业制造、零售、农业科技、机器人和安防等行业。",
+          "与台积电和三星建立规模化制造合作伙伴关系。",
+          "获得欧盟6600万美元资助，用于开发面向超级计算中心的Titania芯片。",
+          "拥有包括Advantech、ESA、Telefonica、2CRSI在内的标杆客户和合作伙伴。"
+        ],
+        "risks": [
+          "边缘AI半导体市场在过去三年吸引了超600亿美元风险投资，市场碎片化严重，竞争激烈，Axelera需持续证明其差异化优势。",
+          "Europa芯片计划于2026年6月前推出，Titania芯片预计2027年推出，产品路线图的按时交付是维持增长势头的关键。"
+        ],
+        "related_direction_id": "",
+        "sector": "AI半导体/边缘AI推理芯片"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Europa",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f1272d694246329",
+              "quote": "expand manufacturing of its \"Europa\" chip, which it plans to launch before June"
+            },
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "Europa® at 629 TOPs"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Metis",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "With Metis® AIPUs starting at 214 TOPs"
+            },
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "At 15 TOPs/W, Metis AIPUs run demanding AI workloads at the edge without compromising on power, heat or operational cost."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Titania",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f1272d694246329",
+              "quote": "develop an advanced chip dubbed \"Titania\" for use in supercomputing centres - also referred to as AI factories. That chip is expected in 2027."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Fabrizio Del Maffeo",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3a68637da007d3e2",
+              "quote": "said Fabrizio Del Maffeo, CEO and co-founder of Axelera AI"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Innovation Industries",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f1272d694246329",
+              "quote": "funding round led by Innovation Industries"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BlackRock",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f1272d694246329",
+              "quote": "included BlackRock and SiteGround Capital as new investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "SiteGround Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6f1272d694246329",
+              "quote": "included BlackRock and SiteGround Capital as new investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Advantech",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "By combining Axelera AI’s cutting-edge neural processing technology with Advantech’s system design expertise and global deployment capabilities, we are enabling customers to deploy cutting-edge AI solutions with greater speed and scalability."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "European Space Agency (ESA)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "We chose Axelera AI because of its sovereign technology and long-term availability, bringing fantastic capabilities to the ESA missions."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Telefonica",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "Advancing energy-efficient, inference-focused AI technologies developed in Europe is essential to meeting the rapidly growing demand for high-performance, sustainable and resilient AI deployments. These innovations will permit Telefonica to enable best-in-class AI solutions that integrate seamlessly with our partners’ platforms from around the globe."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "2CRSI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "Ensuring a sovereign, predictable and Europe-based AI supply chain is essential for building resilient edge to HPC systems. Our collaboration with Axelera strengthens our ability to secure long-term availability across our portfolio, from embedded platforms to large-scale datacenter and HPC deployments"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "DroneStar AI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-243259df980d4bea",
+              "quote": "How DroneStar AI Scaled One Operator into a Whole Pack"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-59882383f82f215d",
+          "date": "2026-05-22",
+          "title": "欧洲AI芯片初创公司Axelera再获2.5亿美元融资",
+          "amount": "$250 million",
+          "source_refs": [
+            "SA-d9d49ffd69a0db31",
+            "SA-01dbe9ca013bc621"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-6f1272d694246329",
+          "source_url": "http://today.reuters.com/business/european-ai-chip-startup-axelera-raises-additional-250-million-2026-02-24/",
+          "title": "欧洲AI芯片初创公司Axelera再获2.5亿美元融资",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-05-22T05:10:29.223Z",
+          "content_hash": "d1a88dde81a4f0d1",
+          "source_artifact_id": "SA-d9d49ffd69a0db31",
+          "raw_id": "RAW-1e7302ffa6e4e37b"
+        },
+        {
+          "source_id": "FISRC-3a68637da007d3e2",
+          "source_url": "https://axelera.ai/news/axelera-ai-secures-more-than-250-million-funding-on-global-commercial-growth",
+          "title": "Axelera AI 凭借全球商业增长获得超 2.5 亿美元融资",
+          "publisher": "Axelera AI",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-25T10:00:00.000Z",
+          "content_hash": "3611daa7e730f6a044f6222d6cc03f608c607044301408f32e0c276cfaaddf1c",
+          "source_artifact_id": "SA-01dbe9ca013bc621",
+          "raw_id": "RAW-7208d366c5a34571"
+        },
+        {
+          "source_id": "FISRC-243259df980d4bea",
+          "source_url": "https://axelera.ai/",
+          "title": "Axelera AI | Datacenter Performance, Edge Efficiency",
+          "publisher": "axelera.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:06:35.329Z",
+          "content_hash": "0a2a1388b6859e05",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:07:33.248Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:07:33.248Z"
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-66cbf5e15d2306ff",
@@ -2394,10 +2940,8 @@
     {
       "event_id": "EV-59882383f82f215d",
       "company_name": "European AI chip startup Axelera",
-      "status": "blocked",
-      "problems": [
-        "deepseek_json_quality_failed:customer_1_name_missing"
-      ],
+      "status": "auto_published",
+      "problems": [],
       "queries": [
         "\"European AI chip startup Axelera\" \"$250 million\" funding investors round",
         "\"European AI chip startup Axelera\" product customers case study",
@@ -2409,8 +2953,8 @@
         {
           "provider": "tavily",
           "query": "\"European AI chip startup Axelera\" \"$250 million\" funding investors round",
-          "status": "completed",
-          "error": ""
+          "status": "failed",
+          "error": "tavily_432"
         },
         {
           "provider": "exa",
@@ -2421,8 +2965,8 @@
         {
           "provider": "tavily",
           "query": "\"European AI chip startup Axelera\" product customers case study",
-          "status": "completed",
-          "error": ""
+          "status": "failed",
+          "error": "tavily_432"
         },
         {
           "provider": "exa",
@@ -2433,8 +2977,8 @@
         {
           "provider": "tavily",
           "query": "\"European AI chip startup Axelera\" \"European AI chip startup Axelera raises additional $250 million | Reuters\" competitors product use case",
-          "status": "completed",
-          "error": ""
+          "status": "failed",
+          "error": "tavily_432"
         },
         {
           "provider": "exa",
@@ -2445,8 +2989,8 @@
         {
           "provider": "tavily",
           "query": "\"European AI chip startup Axelera\" \"$250 million\" investor quote why invested",
-          "status": "completed",
-          "error": ""
+          "status": "failed",
+          "error": "tavily_432"
         },
         {
           "provider": "exa",
@@ -2457,8 +3001,8 @@
         {
           "provider": "tavily",
           "query": "\"European AI chip startup Axelera\" \"$250 million\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
+          "status": "failed",
+          "error": "tavily_432"
         },
         {
           "provider": "exa",
@@ -2467,7 +3011,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T14:17:44.449Z"
+      "updated_at": "2026-07-26T15:07:33.305Z"
     },
     {
       "event_id": "EV-c5643983538c6513",

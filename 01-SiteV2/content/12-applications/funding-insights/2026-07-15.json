@@ -1,0 +1,2188 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-15",
+    "generated_at": "2026-07-26T15:19:19.681Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 5,
+      "auto_published": 4,
+      "blocked": 1,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-813b364f86679f0d",
+      "triggered_by_event_id": "EV-df789745fb926bfd",
+      "as_of_date": "2026-07-15",
+      "company": {
+        "entity_id": "EN-7706c3c94d5f9b59",
+        "name": "Hinge",
+        "full_name": "Overtone",
+        "website": "https://overto.ne/",
+        "summary": "Overtone 是一家由 Hinge 创始人 Justin McLeod 创立的新型约会服务公司，旨在利用人工智能、语音和音频提供高度策划的介绍，以取代传统的滑动匹配模式。",
+        "headquarters": "New York",
+        "founders": [
+          {
+            "name": "Justin McLeod",
+            "role": "创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c9fd5fac8536f13d",
+                "quote": "Hinge founder Justin McLeod announced an $18 million fundraise for his new dating company, Overtone."
+              },
+              {
+                "source_id": "FISRC-7c47bda8586a9961",
+                "quote": "Justin McLeod, the creator of Hinge, founded the company."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7c47bda8586a9961",
+            "quote": "Overtone, a modern matchmaking company based in New York"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$18M",
+        "total_raised": "$18M",
+        "announced_at": "2026-07-14",
+        "investors": [
+          {
+            "name": "Match Group",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c9fd5fac8536f13d",
+                "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "FirstMark Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c9fd5fac8536f13d",
+                "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pace Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c9fd5fac8536f13d",
+                "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c9fd5fac8536f13d",
+            "quote": "The founder of Hinge raised $18M to build a new AI dating service, Overtone"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Overtone",
+          "description": "一项由人工智能驱动的语音和音频优先服务，提供高度策划的介绍，旨在取代传统的滑动匹配模式。",
+          "target_customers": "对现有约会应用感到倦怠、寻求更有意义连接的单身用户",
+          "features": [
+            "语音和音频优先的交互方式",
+            "基于人工智能的高度策划介绍",
+            "基于关系科学的匹配",
+            "透明解释匹配理由"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "Overtone describes itself as “a voice- and audio-forward service, enabled by AI, that provides highly curated introductions.”"
+            },
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "We transparently explain why we believe someone is a great match."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Ditto",
+          "product": "Ditto",
+          "scenario": "使用人工智能为用户配对，限制每日匹配数量",
+          "target_customer": "对无尽滑动感到疲惫的约会应用用户",
+          "funding_summary": "",
+          "core_difference": "Overtone 强调语音和音频优先的交互方式，而 Ditto 的具体交互方式在来源中未详细说明。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "Other new apps like Ditto and Date Drop are betting on a similar approach, using AI to pair users up, rather than putting everyone in a pool to swipe on one another"
+            }
+          ]
+        },
+        {
+          "name": "Date Drop",
+          "product": "Date Drop",
+          "scenario": "使用人工智能为用户配对，限制每日匹配数量",
+          "target_customer": "对无尽滑动感到疲惫的约会应用用户",
+          "funding_summary": "",
+          "core_difference": "Overtone 强调语音和音频优先的交互方式，而 Date Drop 的具体交互方式在来源中未详细说明。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "Other new apps like Ditto and Date Drop are betting on a similar approach, using AI to pair users up, rather than putting everyone in a pool to swipe on one another"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "约会应用用户倦怠率",
+          "value": "78%",
+          "observed_at": "2024",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "A Forbes Health survey conducted in 2024 found that 78% of dating app users felt burnt out."
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是用户对现有“滑动匹配”模式的结构性倦怠，以及语音/音频优先的AI策划介绍能否成为下一代约会服务的突破口。本轮融资的已验证信号包括：创始人Justin McLeod曾成功创立并规模化运营Hinge，具备深厚的行业认知；Match Group作为行业巨头参与投资，表明其对现有商业模式面临结构性衰退的内部共识和风险对冲需求。但判断的证据边界在于，Overtone的产品尚未公开发布，其“关系科学”方法论缺乏具体框架和第三方验证，且市场已存在多个类似方向的竞品，尚未有突破主流市场的先例。",
+        "validated_signals": [
+          "创始人Justin McLeod曾成功创立并规模化运营Hinge，具备深厚的行业认知和执行力。",
+          "行业巨头Match Group参与投资，表明其对现有滑动匹配模式面临结构性衰退的内部共识。",
+          "市场调研显示78%的约会应用用户感到倦怠，验证了反滑动模式的市场需求基础。"
+        ],
+        "risks": [
+          "产品尚未公开发布，其核心的“关系科学”方法论缺乏具体框架和第三方验证，存在技术落地和用户信任风险。",
+          "市场已存在Ditto、Date Drop等多个类似方向的竞品，但均未突破主流市场，Overtone面临激烈的同质化竞争和用户获取挑战。"
+        ],
+        "related_direction_id": "",
+        "sector": "在线约会/人工智能"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Overtone",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "Overtone describes itself as “a voice- and audio-forward service, enabled by AI, that provides highly curated introductions.”"
+            },
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "We transparently explain why we believe someone is a great match."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Justin McLeod",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "Hinge founder Justin McLeod announced an $18 million fundraise for his new dating company, Overtone."
+            },
+            {
+              "source_id": "FISRC-7c47bda8586a9961",
+              "quote": "Justin McLeod, the creator of Hinge, founded the company."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Match Group",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "FirstMark Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Pace Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "Hinge owner Match Group — which also owns apps like Tinder and OkCupid — is helping to fund his new company, alongside FirstMark Capital and Pace Capital."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Ditto",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "Other new apps like Ditto and Date Drop are betting on a similar approach, using AI to pair users up, rather than putting everyone in a pool to swipe on one another"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Date Drop",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd5fac8536f13d",
+              "quote": "Other new apps like Ditto and Date Drop are betting on a similar approach, using AI to pair users up, rather than putting everyone in a pool to swipe on one another"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-df789745fb926bfd",
+          "date": "2026-07-14",
+          "title": "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone",
+          "amount": "$18M",
+          "source_refs": [
+            "SA-9f4af31d84030c93"
+          ]
+        },
+        {
+          "event_id": "EV-a84ec4216d3ded6d",
+          "date": "2026-05-22",
+          "title": "Wonderful 获 1.5 亿美元 B 轮融资，加速 30 多个市场的企业 AI 应用",
+          "amount": "$150 million",
+          "source_refs": [
+            "SA-6b5b6aec241beee4"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c9fd5fac8536f13d",
+          "source_url": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
+          "title": "Hinge 创始人筹集 1800 万美元打造新 AI 约会服务 Overtone",
+          "publisher": "TechCrunch AI",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-15T04:28:38.145Z",
+          "content_hash": "9b45c0bc49d8089b",
+          "source_artifact_id": "SA-9f4af31d84030c93",
+          "raw_id": "RAW-0a0b1e947654ba0a"
+        },
+        {
+          "source_id": "FISRC-7c47bda8586a9961",
+          "source_url": "https://fundraiseinsider.com/blog/hinge-founder-raises-18m-seed-for-overtone-matchmaking-app/",
+          "title": "Hinge Founder Raises $18M Seed for Overtone Matchmaking App - Fundraise Insider",
+          "publisher": "fundraiseinsider.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:53:49.887Z",
+          "content_hash": "bea75d41a180363b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:54:21.201Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:54:21.201Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-2330a54f10e6b143",
+      "triggered_by_event_id": "EV-305ec93673f4f12e",
+      "as_of_date": "2026-07-15",
+      "company": {
+        "entity_id": "EN-92dd63c8e5c77e8a",
+        "name": "Valarian",
+        "full_name": "Valarian Technologies Ltd.",
+        "website": "https://www.valarian.com/",
+        "summary": "Valarian是一家英国主权AI基础设施公司，为高后果操作和AI驱动系统构建控制层，使组织能够在基础设施层面保留对关键应用、AI系统和工作负载通信、数据访问及操作的控制权。",
+        "headquarters": "伦敦",
+        "founders": [
+          {
+            "name": "Max Buchan",
+            "role": "首席执行官兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03aa198ddff34236",
+                "quote": "It was founded by the former international finance operator Max Buchan and ex-Palantir executive and U.S. Army officer Josh McLaughlin"
+              },
+              {
+                "source_id": "FISRC-2b07f86358c31628",
+                "quote": "Max Buchan, CEO and Co-Founder of Valarian"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Josh McLaughlin",
+            "role": "联合创始人兼首席运营官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03aa198ddff34236",
+                "quote": "ex-Palantir executive and U.S. Army officer Josh McLaughlin"
+              },
+              {
+                "source_id": "FISRC-c46043d6fe16fcd9",
+                "quote": "Valarian was founded by Chief Executive Officer Max Buchan, formerly of crypto company Coinshares, and Chief Operating Officer Josh McLaughlin."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "31名员工",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Valarian has 31 employees and is headquartered in London."
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-03aa198ddff34236",
+            "quote": "The defense-focused artificial intelligence systems infrastructure startup Valarian Technologies Ltd. said today it has closed on a hefty $50 million early-stage funding round"
+          },
+          {
+            "source_id": "FISRC-2b07f86358c31628",
+            "quote": "British technology firm Valarian secures a $50 million Series A led by NEA to strengthen UK sovereign digital infrastructure across government, defence and enterprise."
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "5000万美元",
+        "total_raised": "7000万美元",
+        "announced_at": "2026-07-14",
+        "investors": [
+          {
+            "name": "New Enterprise Associates",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03aa198ddff34236",
+                "quote": "The Series A round was led by new investor New Enterprise Associates"
+              },
+              {
+                "source_id": "FISRC-2b07f86358c31628",
+                "quote": "Valarian raises $50M Series A led by NEA"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lightbank",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03aa198ddff34236",
+                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "XTX Markets",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03aa198ddff34236",
+                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sequel",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03aa198ddff34236",
+                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "LitVC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03aa198ddff34236",
+                "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Gokul Rajaram",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03aa198ddff34236",
+                "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nikesh Arora",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03aa198ddff34236",
+                "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Artis Ventures",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-421464cceb98eeb4",
+                "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Scout Ventures",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-421464cceb98eeb4",
+                "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-03aa198ddff34236",
+            "quote": "The Series A round was led by new investor New Enterprise Associates, which is making its first investment in a European defense startup. It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC, plus Gokul Rajaram and Nikesh Arora, who participated as angels."
+          },
+          {
+            "source_id": "FISRC-2b07f86358c31628",
+            "quote": "Funding brings total investment to $70 million"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Valarian Enterprise",
+          "description": "面向需要运行AI和其他高后果工作负载的商业组织，提供工作负载级治理、隔离和操作控制。",
+          "target_customers": "银行、制药公司、航空公司等受监管的商业组织",
+          "features": [
+            "工作负载级治理",
+            "隔离和操作控制",
+            "支持AI和高后果工作负载部署"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "Valarian Enterprise, which is targeted at commercial operations that need to run AI and other workloads with rigorous control."
+            },
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Valarian Enterprise, serving banks, pharmaceutical companies, airlines, and other regulated organisations"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Valarian Defence",
+          "description": "面向国家军队和国防机构，提供构建不能有任何风险的、运行关键任务工作负载的计算环境所需的工具。",
+          "target_customers": "北约成员国和主权国防项目",
+          "features": [
+            "关键任务工作负载运行",
+            "不可协商的控制",
+            "国防级架构"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "Valerian Defense is specially geared toward national militaries and defense agencies, giving them to the tools they need to build computing environments that simply cannot take any chances."
+            },
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Valarian Defence, serving NATO member states and sovereign defence programmes."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Palantir",
+          "product": "Palantir Gotham/Foundry",
+          "scenario": "为政府构建情报工具，在应用层提供数据分析和决策支持",
+          "target_customer": "北约政府、国防机构",
+          "funding_summary": "市值超过3000亿美元",
+          "core_difference": "Palantir为政府构建情报工具，Valarian构建这些工具运行的基础设施层。Valarian提供工作负载级治理，控制应用和AI系统运行的环境，而非应用本身。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Where Palantir builds intelligence tools for governments, Valarian builds the infrastructure those tools run on."
+            },
+            {
+              "source_id": "FISRC-da3ed5ba3fdd08ce",
+              "quote": "My co-founder spent 12 years at Palantir (McLaughlin was a managing director). He left in 2023 to join Valarian… What I would say is… the idea that there's only one provider that you can use just makes me nervous…"
+            }
+          ]
+        },
+        {
+          "name": "Cosine",
+          "product": "主权前沿AI模型",
+          "scenario": "与Babcock、BT、Lloyds、NatWest共同设计主权AI模型",
+          "target_customer": "英国关键基础设施企业",
+          "funding_summary": "由Lakestar和Y Combinator支持",
+          "core_difference": "Cosine构建主权模型，Valarian治理这些模型运行的环境。Valarian位于模型下方的控制层，与模型构建者互补而非直接竞争。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Where Cosine builds the sovereign model, Valarian governs the environment it operates inside."
+            }
+          ]
+        },
+        {
+          "name": "Augur",
+          "product": "主权AI感知系统",
+          "scenario": "跨关键基础设施进行主权AI感知",
+          "target_customer": "关键基础设施运营方",
+          "funding_summary": "从Plural融资1500万美元",
+          "core_difference": "Augur专注于关键基础设施的AI感知应用，Valarian提供底层基础设施控制层，使组织能够控制AI系统运行的环境。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Augur raised $15 million from Plural for sovereign AI perception across critical infrastructure."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "5000万美元",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "Valarian Technologies Ltd. said today it has closed on a hefty $50 million early-stage funding round"
+            }
+          ]
+        },
+        {
+          "label": "累计融资总额",
+          "value": "7000万美元",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2b07f86358c31628",
+              "quote": "Funding brings total investment to $70 million"
+            }
+          ]
+        },
+        {
+          "label": "上一轮种子轮金额",
+          "value": "700万美元",
+          "observed_at": "2025-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025."
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "31人",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Valarian has 31 employees and is headquartered in London."
+            }
+          ]
+        },
+        {
+          "label": "2025年欧洲国防支出",
+          "value": "3920亿欧元（约4470亿美元）",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "In 2025, European defense spending reportedly topped €392 billion (around $447 billion)"
+            }
+          ]
+        },
+        {
+          "label": "商业客户收入占比",
+          "value": "50%",
+          "observed_at": "2026-07-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da3ed5ba3fdd08ce",
+              "quote": "Buchan said half of its business now comes from commercial customers in finance, healthcare and life sciences."
+            }
+          ]
+        },
+        {
+          "label": "部署覆盖大洲",
+          "value": "四大洲",
+          "observed_at": "2026-07-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da3ed5ba3fdd08ce",
+              "quote": "we are deployed on four continents around the world"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Kanishka Narayan",
+          "quote": "Today, AI is the defining currency of both hard and soft power. To shape our own destiny, in accordance with our values, it is imperative that we build Britain's sovereign AI capabilities.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2b07f86358c31628",
+              "quote": "Today, AI is the defining currency of both hard and soft power. To shape our own destiny, in accordance with our values, it is imperative that we build Britain's sovereign AI capabilities."
+            }
+          ]
+        },
+        {
+          "speaker": "Max Buchan",
+          "quote": "The intelligence layer of Western institutions is consolidating: quietly, contract by contract, department by department, into systems those institutions do not control.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "The intelligence layer of Western institutions is consolidating: quietly, contract by contract, department by department, into systems those institutions do not control"
+            }
+          ]
+        },
+        {
+          "speaker": "Luke Pollard",
+          "quote": "To strengthen our national security, we need more innovative British companies like Valarian building the technologies that will define our future.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2b07f86358c31628",
+              "quote": "To strengthen our national security, we need more innovative British companies like Valarian building the technologies that will define our future."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：随着AI成为操作关键，主权控制正从国防和受监管机构的专属需求变为普遍需求，而Valarian在基础设施层提供工作负载级治理的架构定位使其成为这一趋势的基础设施供应商。本轮5000万美元A轮融资在100%超额认购的情况下完成，累计融资达7000万美元，验证了市场对主权AI基础设施的迫切需求。NEA将其作为在欧洲的首个国防和两用投资，表明美国顶级VC认可欧洲主权AI基础设施赛道的独立价值。但判断的证据边界在于：客户身份未公开，收入规模和具体合同金额未知，商业化仍处于早期规模化阶段。",
+        "validated_signals": [
+          "本轮融资100%超额认购，并扩大以纳入战略投资者",
+          "已在四大洲部署，客户包括国家安全、金融、医疗保健和生命科学领域",
+          "50%收入来自商业客户，证明两用模式有效",
+          "获得英国AI部长和国防部长的公开背书",
+          "NEA在欧洲的首个国防和两用投资，管理资产超350亿美元"
+        ],
+        "risks": [
+          "客户身份未公开，无法独立验证收入规模和合同质量，商业化进展缺乏可量化证据",
+          "与Palantir等市值超3000亿美元的既有巨头竞争，后者已深度嵌入北约政府客户，Valarian的替代性定位可能面临采购惯性和锁定效应的阻力"
+        ],
+        "related_direction_id": "",
+        "sector": "主权AI基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Valarian Enterprise",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "Valarian Enterprise, which is targeted at commercial operations that need to run AI and other workloads with rigorous control."
+            },
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Valarian Enterprise, serving banks, pharmaceutical companies, airlines, and other regulated organisations"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Valarian Defence",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "Valerian Defense is specially geared toward national militaries and defense agencies, giving them to the tools they need to build computing environments that simply cannot take any chances."
+            },
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Valarian Defence, serving NATO member states and sovereign defence programmes."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Max Buchan",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "It was founded by the former international finance operator Max Buchan and ex-Palantir executive and U.S. Army officer Josh McLaughlin"
+            },
+            {
+              "source_id": "FISRC-2b07f86358c31628",
+              "quote": "Max Buchan, CEO and Co-Founder of Valarian"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Josh McLaughlin",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "ex-Palantir executive and U.S. Army officer Josh McLaughlin"
+            },
+            {
+              "source_id": "FISRC-c46043d6fe16fcd9",
+              "quote": "Valarian was founded by Chief Executive Officer Max Buchan, formerly of crypto company Coinshares, and Chief Operating Officer Josh McLaughlin."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "New Enterprise Associates",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "The Series A round was led by new investor New Enterprise Associates"
+            },
+            {
+              "source_id": "FISRC-2b07f86358c31628",
+              "quote": "Valarian raises $50M Series A led by NEA"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightbank",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "XTX Markets",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "LitVC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "It was joined by a strong cohort of backers, including Lightbank, XTX Markets, Sequel and LitVC"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Gokul Rajaram",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nikesh Arora",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03aa198ddff34236",
+              "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Artis Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Scout Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Its previous round — a $7 million seed co-led by Artis Ventures, an early Palantir backer, and Scout Ventures — closed in May 2025."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Palantir",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Where Palantir builds intelligence tools for governments, Valarian builds the infrastructure those tools run on."
+            },
+            {
+              "source_id": "FISRC-da3ed5ba3fdd08ce",
+              "quote": "My co-founder spent 12 years at Palantir (McLaughlin was a managing director). He left in 2023 to join Valarian… What I would say is… the idea that there's only one provider that you can use just makes me nervous…"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Cosine",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Where Cosine builds the sovereign model, Valarian governs the environment it operates inside."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Augur",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-421464cceb98eeb4",
+              "quote": "Augur raised $15 million from Plural for sovereign AI perception across critical infrastructure."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-305ec93673f4f12e",
+          "date": "2026-07-14",
+          "title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
+          "amount": "$50M",
+          "source_refs": [
+            "SA-f8f254133ecf50ed"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-03aa198ddff34236",
+          "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
+          "title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-15T04:28:37.766Z",
+          "content_hash": "ab99df0f3d10a2c4",
+          "source_artifact_id": "SA-f8f254133ecf50ed",
+          "raw_id": "RAW-4f9a74fe2b0ed803"
+        },
+        {
+          "source_id": "FISRC-2b07f86358c31628",
+          "source_url": "https://www.valarian.com/article/valarian-raises-50m-series-a-led-by-nea",
+          "title": "Valarian | $50M Series A led by NEA",
+          "publisher": "valarian.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:16.789Z",
+          "content_hash": "7bd6453900b66054",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-da3ed5ba3fdd08ce",
+          "source_url": "https://pathfounders.com/p/valarian-raises-50m-series-a-for-sovereign-ai-infrastructure",
+          "title": "Valarian raises $50m Series A for sovereign AI infrastructure, will go up against Palantir",
+          "publisher": "pathfounders.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:52:21.360Z",
+          "content_hash": "d3bc9e4fbc0cbaf9",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-421464cceb98eeb4",
+          "source_url": "https://techfundingnews.com/every-ai-startup-in-europe-is-selling-sovereignty-valarian-just-raised-50m-to-prove-infrastructure-governance-is-different/",
+          "title": "British founder Max Buchan raises $50M from US giant NEA to build the sovereign infrastructure layer AI-era governments can't ignore — TFN",
+          "publisher": "techfundingnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:26.715Z",
+          "content_hash": "f0af5e2908fb80b5",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c46043d6fe16fcd9",
+          "source_url": "https://cybermagazine.com/news/how-valarians-us-50m-funding-promises-sovereign-ai-for-uk",
+          "title": "How Valarian's US$50m Funding Promises Sovereign AI for UK | Cybersecurity Magazine",
+          "publisher": "cybermagazine.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:29.697Z",
+          "content_hash": "27622bd801988270",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:53:31.366Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:53:31.366Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-44ac76bc6d931f0d",
+      "triggered_by_event_id": "EV-e31a6bf3c0a979f8",
+      "as_of_date": "2026-07-15",
+      "company": {
+        "entity_id": "EN-2dcd958b2064843f",
+        "name": "Thira",
+        "full_name": "Thira",
+        "website": "thira.com",
+        "summary": "Thira 是一家位于华盛顿州贝尔维尤的企业 AI 初创公司，由 Apptio 联合创始人 Sunny Gupta 和 Kurt Shintaffer 创立。公司正在构建一个安全、自学习的 AI 执行系统，专注于企业后台运营，最初面向企业 IT 流程，旨在实现“自我运行的”后台办公室。",
+        "headquarters": "Bellevue, Washington",
+        "founders": [
+          {
+            "name": "Sunny Gupta",
+            "role": "Co-Founder and Executive Chairman",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2fadf3981dda79b0",
+                "quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer"
+              },
+              {
+                "source_id": "FISRC-1da67785ba366c16",
+                "quote": "said Sunny Gupta, co-founder and Executive Chairman of Thira"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kurt Shintaffer",
+            "role": "Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2fadf3981dda79b0",
+                "quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer"
+              },
+              {
+                "source_id": "FISRC-cac0e54bdeba4e77",
+                "quote": "Sunny Gupta and Kurt Shintaffer, the co-founders of enterprise software company Apptio, have reunited to build Thira"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1da67785ba366c16",
+            "quote": "Thira is the creator of secure, self-learning, agentic execution for complex workflows that power the back-office."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$21 million",
+        "total_raised": "$21 million",
+        "announced_at": "2026-07-14",
+        "investors": [
+          {
+            "name": "Madrona",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1da67785ba366c16",
+                "quote": "a $21 million seed financing led by Madrona"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "FUSE",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1da67785ba366c16",
+                "quote": "with participation from FUSE and a group of prominent global advisors and CIOs"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1da67785ba366c16",
+            "quote": "today announced a $21 million seed financing led by Madrona, with participation from FUSE and a group of prominent global advisors and CIOs."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Thira 自学习 AI 执行系统",
+          "description": "一个安全、自学习的 AI 代理执行平台，旨在企业现有系统内运行，安全地执行复杂的运营流程。它结合了自学习代理、企业级安全与治理、系统连接性以及由企业知识图谱驱动的 AI 执行系统。",
+          "target_customers": "企业首席信息官（CIO）及其 IT 团队，以及需要自动化后台运营的企业组织。",
+          "features": [
+            "自学习 AI 代理",
+            "企业级安全与治理",
+            "跨系统连接与执行",
+            "企业知识图谱驱动",
+            "代理执行与操作问责"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "Thira securely executes complex operational processes using self-learning agents, world class security and governance, system connectivity and AI execution system powered by an enterprise knowledge graph."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "10 家设计合作伙伴企业",
+          "industry": "企业 IT",
+          "use_case": "作为设计合作伙伴，帮助塑造 Thira 的产品，为今年秋季更广泛的发布做准备。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "ten enterprise organizations are helping shape Thira as design partners ahead of its broader launch this fall."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "ServiceNow (通过收购 Moveworks)",
+          "product": "ServiceNow 平台与 Moveworks 自动化 IT 票证解决方案",
+          "scenario": "自动化 IT 票证解决，处理员工请求，如准备新员工笔记本电脑、恢复锁定账户访问权限或路由软件采购审批。",
+          "target_customer": "企业 IT 服务管理团队",
+          "funding_summary": "ServiceNow 以 28.5 亿美元收购 Moveworks",
+          "core_difference": "ServiceNow 通过收购 Moveworks 获得了直接进入自动化 IT 票证解决的路径，而 Thira 则定位为一个跨多个供应商系统工作的代理执行平台，不绑定单一平台。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cac0e54bdeba4e77",
+              "quote": "Enterprise buyers may want agents that work across several vendors instead of another tool tied to one platform."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "全球年度 IT 支出",
+          "value": "超过 6.3 万亿美元",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "Global IT spending alone exceeds $6.3 trillion annually"
+            }
+          ]
+        },
+        {
+          "label": "公司使命：释放企业支出用于再投资",
+          "value": "1 万亿美元",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "Thira's mission is to return $1 trillion of enterprise spending for reinvestment in innovation"
+            }
+          ]
+        },
+        {
+          "label": "设计合作伙伴数量",
+          "value": "10 家企业组织",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "ten enterprise organizations are helping shape Thira as design partners"
+            }
+          ]
+        },
+        {
+          "label": "TBM Council 成员规模",
+          "value": "超过 10,000 名 CIO 和高级 IT 领导者",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "They founded the TBM Council, under Apptio (now part of IBM), which grew to more than 10,000 CIOs and senior IT leaders."
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是创始人的“创始人-市场匹配”及其深厚的 CIO 关系网络。Thira 的估值或融资能力依赖于已验证信号：创始人曾成功创立并退出 Apptio（被 IBM 以 46 亿美元收购），建立了超过 10,000 名 CIO 的 TBM Council，并已获得 10 家企业设计合作伙伴。这些信号表明团队具备企业级产品构建能力和市场信任，但产品尚未公开发布，其跨系统代理执行的可靠性和实际采用率仍待验证。",
+        "validated_signals": [
+          "创始人曾创立 Apptio 并成功退出（IBM 以 46 亿美元收购）",
+          "创始人建立了超过 10,000 名 CIO 和高级 IT 领导者的 TBM Council",
+          "已获得 10 家企业组织作为设计合作伙伴",
+          "领投方 Madrona 的 Matt McIlwain 与创始人 Sunny Gupta 有 25 年合作历史，这是第三次共同创业"
+        ],
+        "risks": [
+          "产品尚未公开发布，代理执行在实际企业环境中的可靠性和安全性未经验证。",
+          "市场拥挤，ServiceNow 等大型厂商通过收购已具备自动化 IT 票证解决能力，且拥有内置的系统连接优势。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业 AI 代理执行平台"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Thira 自学习 AI 执行系统",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "Thira securely executes complex operational processes using self-learning agents, world class security and governance, system connectivity and AI execution system powered by an enterprise knowledge graph."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sunny Gupta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2fadf3981dda79b0",
+              "quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer"
+            },
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "said Sunny Gupta, co-founder and Executive Chairman of Thira"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Kurt Shintaffer",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2fadf3981dda79b0",
+              "quote": "Thira was founded by Apptio co-founders Sunny Gupta and Kurt Shintaffer"
+            },
+            {
+              "source_id": "FISRC-cac0e54bdeba4e77",
+              "quote": "Sunny Gupta and Kurt Shintaffer, the co-founders of enterprise software company Apptio, have reunited to build Thira"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Madrona",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "a $21 million seed financing led by Madrona"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "FUSE",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "with participation from FUSE and a group of prominent global advisors and CIOs"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "10 家设计合作伙伴企业",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1da67785ba366c16",
+              "quote": "ten enterprise organizations are helping shape Thira as design partners ahead of its broader launch this fall."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "ServiceNow (通过收购 Moveworks)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cac0e54bdeba4e77",
+              "quote": "Enterprise buyers may want agents that work across several vendors instead of another tool tied to one platform."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-e31a6bf3c0a979f8",
+          "date": "2026-07-14",
+          "title": "Thira 获 2100 万美元种子轮融资，打造自学习 AI 后台办公平台",
+          "amount": "$21 million",
+          "source_refs": [
+            "SA-3439ee6d697794b3"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2fadf3981dda79b0",
+          "source_url": "https://pulse2.com/thira-raises-21-million-seed-to-build-self-learning-ai-back-office-platform/",
+          "title": "Thira 获 2100 万美元种子轮融资，打造自学习 AI 后台办公平台",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-15T04:28:37.777Z",
+          "content_hash": "3ebf7695cbeb9231",
+          "source_artifact_id": "SA-3439ee6d697794b3",
+          "raw_id": "RAW-fdc7e38f60f86aac"
+        },
+        {
+          "source_id": "FISRC-1da67785ba366c16",
+          "source_url": "https://www.morningstar.com/news/business-wire/20260714608171/thira-raises-21-million-seed-round-led-by-madrona-to-build-the-back-office-that-runs-itself",
+          "title": "Thira Raises $21 Million Seed Round Led by Madrona to ...",
+          "publisher": "morningstar.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:52:16.353Z",
+          "content_hash": "d455e42bd85876dd",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-cac0e54bdeba4e77",
+          "source_url": "https://news.lavx.hu/article/apptio-co-founders-reunite-to-build-enterprise-ai-startup-thira-with-21m-seed-round",
+          "title": "Apptio co-founders reunite to build enterprise AI startup Thira with $21M seed round | LavX News",
+          "publisher": "news.lavx.hu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:21.703Z",
+          "content_hash": "9c1e00c0b35e502c",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:53:27.889Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:53:27.889Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-a268ddc643dc983b",
+      "triggered_by_event_id": "EV-2dff32c1b6f813e4",
+      "as_of_date": "2026-07-15",
+      "company": {
+        "entity_id": "EN-cf9488537f777c1a",
+        "name": "TYLsemi",
+        "full_name": "TYLsemi Inc.",
+        "website": "https://www.tylsemi.ai/",
+        "summary": "TYLsemi是一家AI芯片粒（chiplet）初创公司，致力于通过提供基于标准的、可量产的小芯片组合，降低定制AI加速器（XPU）的设计成本与复杂度，使更多企业能够开发定制AI芯片。",
+        "headquarters": "San Jose, California",
+        "founders": [
+          {
+            "name": "Mohit Gupta",
+            "role": "Co-founder and Chief Executive Officer",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2be3945d96fe8e7c",
+                "quote": "Co-founder and Chief Executive Mohit Gupta"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sunil Bhardwaj",
+            "role": "Co-Founder & COO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-53020d8815703b5f",
+                "quote": "Sunil Bhardwaj Co-Founder & COO"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2be3945d96fe8e7c",
+            "quote": "Artificial intelligence chiplet startup TYLsemi Inc. revealed itself to the world today"
+          },
+          {
+            "source_id": "FISRC-4b585d907f1a939a",
+            "quote": "The San Jose-based semiconductor startup announced the oversubscribed early-stage round on July 14"
+          }
+        ]
+      },
+      "financing": {
+        "round": "早期融资（Early-stage）",
+        "amount": "$43 million",
+        "total_raised": "$43 million",
+        "announced_at": "2026-07-14",
+        "investors": [
+          {
+            "name": "Viola Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2be3945d96fe8e7c",
+                "quote": "saw participation from Viola Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GHOVC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2be3945d96fe8e7c",
+                "quote": "saw participation from Viola Ventures, GHOVC, Egisten and a number of strategic investors"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Egis Technology",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4b585d907f1a939a",
+                "quote": "Viola Ventures, GHOVC, Egis Technology, and a handful of strategic investors focused on semiconductor and AI infrastructure also participated."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2be3945d96fe8e7c",
+            "quote": "announcing it has raised $43 million in early-stage funding"
+          },
+          {
+            "source_id": "FISRC-53ce60e4bcfe8466",
+            "quote": "announced the closing of an oversubscribed $43 million early-stage funding round"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "TYL.Power",
+          "description": "一种用于XPU的智能封装内供电解决方案，是一个集成电压调节器芯片粒，可提供高效、智能的控制并优化系统级能效。",
+          "target_customers": "AI基础设施客户",
+          "features": [
+            "集成电压调节器芯片粒",
+            "优化系统级能效"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2be3945d96fe8e7c",
+              "quote": "TYL.Power, which is a packaged power delivery system that relies on an integrated voltage regulator chiplet to maximize energy efficiency."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Broadcom",
+          "product": "定制AI芯片",
+          "scenario": "为大型科技公司开发定制AI半导体",
+          "target_customer": "大型科技公司（如Meta Platforms）",
+          "funding_summary": "",
+          "core_difference": "Broadcom拥有专有的高速芯片互连技术，客户必须与Broadcom合作才能使用该技术开发定制芯片；TYLsemi则提供基于开放行业标准（如UCIe）的芯片粒，客户可以混合搭配不同供应商的技术。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0357cefd6d11ffe1",
+              "quote": "Broadcom and its rival Marvell Technology both have proprietary technology for making chips talk to each other at high speed, and the only way to access that technology is to work with them to develop a custom chip."
+            }
+          ]
+        },
+        {
+          "name": "Marvell Technology",
+          "product": "定制AI芯片",
+          "scenario": "为大型科技公司开发定制AI半导体",
+          "target_customer": "大型科技公司",
+          "funding_summary": "",
+          "core_difference": "Marvell拥有专有的高速芯片互连技术，客户必须与Marvell合作才能使用该技术开发定制芯片；TYLsemi则提供基于开放行业标准（如UCIe）的芯片粒，客户可以混合搭配不同供应商的技术。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0357cefd6d11ffe1",
+              "quote": "Broadcom and its rival Marvell Technology both have proprietary technology for making chips talk to each other at high speed, and the only way to access that technology is to work with them to develop a custom chip."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "AI加速器市场规模预测（2033年）",
+          "value": "$604 billion annually",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2be3945d96fe8e7c",
+              "quote": "the market for AI accelerators is forecast to hit $604 billion annually by 2033"
+            }
+          ]
+        },
+        {
+          "label": "定制AI芯片开发成本降低幅度",
+          "value": "up to 50%",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2be3945d96fe8e7c",
+              "quote": "reduce the costs of custom AI silicon development by almost 50%"
+            }
+          ]
+        },
+        {
+          "label": "定制AI芯片开发时间缩短幅度",
+          "value": "less than half the time",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2be3945d96fe8e7c",
+              "quote": "get it done in less than half the time"
+            }
+          ]
+        },
+        {
+          "label": "芯片粒样品预计交付时间",
+          "value": "2027",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2be3945d96fe8e7c",
+              "quote": "provide samples of its TYL.IO and TYL.Power chiplets to qualified customers next year in partnership with Taiwan Semiconductor Manufacturing Co."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Mohit Gupta",
+          "quote": "At that scale, chiplet-based design is no longer optional, yet there is no pure-play chiplet company serving this market with a full portfolio.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2be3945d96fe8e7c",
+              "quote": "At that scale, chiplet-based design is no longer optional, yet there is no pure-play chiplet company serving this market with a full portfolio"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“定制AI芯片设计的民主化”。当前估值或融资所依赖的已验证信号包括：1）已获得多家一级客户的合作承诺，验证了技术就绪度和市场机会；2）本轮融资超额认购，表明投资者需求超出预期；3）创始团队拥有来自Alphawave（被高通收购）、SiFive、Cadence等公司的深厚行业经验。判断的证据边界在于，公司尚未交付芯片粒样品（预计2027年），其宣称的50%成本和时间节省尚未被第三方量产验证。",
+        "validated_signals": [
+          "已获得多家一级客户的合作承诺",
+          "本轮融资超额认购",
+          "创始团队拥有Alphawave（被高通以约24亿美元收购）、SiFive、Cadence等公司的行业经验"
+        ],
+        "risks": [
+          "公司尚未交付芯片粒样品（预计2027年），其宣称的50%成本和时间节省尚未被第三方量产验证，存在执行风险。"
+        ],
+        "related_direction_id": "",
+        "sector": "半导体与AI基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "TYL.Power",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2be3945d96fe8e7c",
+              "quote": "TYL.Power, which is a packaged power delivery system that relies on an integrated voltage regulator chiplet to maximize energy efficiency."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mohit Gupta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2be3945d96fe8e7c",
+              "quote": "Co-founder and Chief Executive Mohit Gupta"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sunil Bhardwaj",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53020d8815703b5f",
+              "quote": "Sunil Bhardwaj Co-Founder & COO"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Viola Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2be3945d96fe8e7c",
+              "quote": "saw participation from Viola Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GHOVC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2be3945d96fe8e7c",
+              "quote": "saw participation from Viola Ventures, GHOVC, Egisten and a number of strategic investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Egis Technology",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4b585d907f1a939a",
+              "quote": "Viola Ventures, GHOVC, Egis Technology, and a handful of strategic investors focused on semiconductor and AI infrastructure also participated."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Broadcom",
+          "canonical_entity_id": "EN-373ac021a2c0bb2c",
+          "canonical_name": "Broadcom",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0357cefd6d11ffe1",
+              "quote": "Broadcom and its rival Marvell Technology both have proprietary technology for making chips talk to each other at high speed, and the only way to access that technology is to work with them to develop a custom chip."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Marvell Technology",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0357cefd6d11ffe1",
+              "quote": "Broadcom and its rival Marvell Technology both have proprietary technology for making chips talk to each other at high speed, and the only way to access that technology is to work with them to develop a custom chip."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-2dff32c1b6f813e4",
+          "date": "2026-07-14",
+          "title": "定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE",
+          "amount": "$43M",
+          "source_refs": [
+            "SA-903d243c7a19a7c1"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2be3945d96fe8e7c",
+          "source_url": "https://siliconangle.com/2026/07/14/custom-ai-chip-design-startup-tylsemi-launches-43m-early-stage-funding/",
+          "title": "定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-15T04:28:37.744Z",
+          "content_hash": "4c33e3bd9eb86f2e",
+          "source_artifact_id": "SA-903d243c7a19a7c1",
+          "raw_id": "RAW-37698424d0b73e58"
+        },
+        {
+          "source_id": "FISRC-4b585d907f1a939a",
+          "source_url": "https://cryptobriefing.com/tylsemi-raises-43m-custom-ai-chips/",
+          "title": "TYLSemi raises $43M to build the Lego blocks of custom AI chips",
+          "publisher": "cryptobriefing.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:19.949Z",
+          "content_hash": "85b6affe1e12acfa",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0357cefd6d11ffe1",
+          "source_url": "https://theoutpost.ai/news-story/tyl-semi-raises-43-million-to-build-chiplets-that-democratize-custom-ai-chip-design-28574/",
+          "title": "TYLSemi Raises $43M for Custom AI Chips Chiplets",
+          "publisher": "theoutpost.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:22.663Z",
+          "content_hash": "38ab794a1aa1d568",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-53020d8815703b5f",
+          "source_url": "https://www.caplight.com/company/tylsemi",
+          "title": "TYLsemi | Valuation, Funding Rounds & Stock Price | Caplight",
+          "publisher": "caplight.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:24.326Z",
+          "content_hash": "c20373430106d3b9",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-53ce60e4bcfe8466",
+          "source_url": "https://www.tylsemi.ai/press-releases/tylsemi-raises-43-million-to-launch-first-full-stack-chipletplatform-for-custom-ai-silicon/",
+          "title": "TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for Custom AI Silicon - TYLsemi",
+          "publisher": "tylsemi.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:35.951Z",
+          "content_hash": "77f478a33ec57230",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:53:17.392Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:53:17.392Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-f61a61d1287e2ca9",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-26T15:19:19.671Z"
+    },
+    {
+      "event_id": "EV-2dff32c1b6f813e4",
+      "company_name": "TYLsemi",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"TYLsemi\" \"$43M\" funding investors round",
+        "\"TYLsemi\" product customers case study",
+        "\"TYLsemi\" \"Custom AI chip design startup TYLsemi launches with $43M in early-stage funding - SiliconANGLE\" competitors product use case",
+        "\"TYLsemi\" \"$43M\" investor quote why invested",
+        "\"TYLsemi\" \"$43M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"TYLsemi\" \"$43M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"TYLsemi\" \"$43M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"TYLsemi\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"TYLsemi\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"TYLsemi\" \"Custom AI chip design startup TYLsemi launches with $43M in early-stage funding - SiliconANGLE\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"TYLsemi\" \"Custom AI chip design startup TYLsemi launches with $43M in early-stage funding - SiliconANGLE\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"TYLsemi\" \"$43M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"TYLsemi\" \"$43M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"TYLsemi\" \"$43M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"TYLsemi\" \"$43M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:54:21.275Z"
+    },
+    {
+      "event_id": "EV-305ec93673f4f12e",
+      "company_name": "Valarian",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Valarian\" \"$50M\" funding investors round",
+        "\"Valarian\" product customers case study",
+        "\"Valarian\" \"Sovereign AI infrastructure startup Valarian raises $50M to help nations secure their defense systems - SiliconANGLE\" competitors product use case",
+        "\"Valarian\" \"$50M\" investor quote why invested",
+        "\"Valarian\" \"$50M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Valarian\" \"$50M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Valarian\" \"$50M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Valarian\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Valarian\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Valarian\" \"Sovereign AI infrastructure startup Valarian raises $50M to help nations secure their defense systems - SiliconANGLE\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Valarian\" \"Sovereign AI infrastructure startup Valarian raises $50M to help nations secure their defense systems - SiliconANGLE\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Valarian\" \"$50M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Valarian\" \"$50M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Valarian\" \"$50M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Valarian\" \"$50M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:54:21.275Z"
+    },
+    {
+      "event_id": "EV-e31a6bf3c0a979f8",
+      "company_name": "Thira",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Thira\" \"$21 million\" funding investors round",
+        "\"Thira\" product customers case study",
+        "\"Thira\" \"Thira Raises $21 Million Seed To Build Self-Learning AI Back-Office Platform\" competitors product use case",
+        "\"Thira\" \"$21 million\" investor quote why invested",
+        "\"Thira\" \"$21 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Thira\" \"$21 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Thira\" \"$21 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Thira\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Thira\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Thira\" \"Thira Raises $21 Million Seed To Build Self-Learning AI Back-Office Platform\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Thira\" \"Thira Raises $21 Million Seed To Build Self-Learning AI Back-Office Platform\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Thira\" \"$21 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Thira\" \"$21 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Thira\" \"$21 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Thira\" \"$21 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:54:21.275Z"
+    },
+    {
+      "event_id": "EV-df789745fb926bfd",
+      "company_name": "Hinge",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Hinge\" \"$18M\" funding investors round",
+        "\"Hinge\" product customers case study",
+        "\"Hinge\" \"The founder of Hinge raised $18M to build a new AI dating service, Overtone\" competitors product use case",
+        "\"Hinge\" \"$18M\" investor quote why invested",
+        "\"Hinge\" \"$18M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Hinge\" \"$18M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hinge\" \"$18M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hinge\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hinge\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hinge\" \"The founder of Hinge raised $18M to build a new AI dating service, Overtone\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hinge\" \"The founder of Hinge raised $18M to build a new AI dating service, Overtone\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hinge\" \"$18M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hinge\" \"$18M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hinge\" \"$18M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hinge\" \"$18M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:54:21.275Z"
+    }
+  ]
+}

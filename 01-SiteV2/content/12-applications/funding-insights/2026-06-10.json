@@ -1,0 +1,1449 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-10",
+    "generated_at": "2026-07-26T15:10:56.895Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 2,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-420f1cdc03225574",
+      "triggered_by_event_id": "EV-dd78b63f18dba410",
+      "as_of_date": "2026-06-10",
+      "company": {
+        "entity_id": "EN-20b5af8f2c749bf8",
+        "name": "Lio Technologies",
+        "full_name": "Lio Technologies",
+        "website": "lio.ai",
+        "summary": "Lio是一家AI原生公司，通过构建智能体AI平台为企业采购提供虚拟劳动力，实现端到端的采购执行。",
+        "headquarters": "Munich, Germany",
+        "founders": [
+          {
+            "name": "Vlad Keil",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e74c5c9663430e27",
+                "quote": "said Vlad Keil, founder and CEO of Lio"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "24",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-316b22ef934ac8e6",
+              "quote": "Employees 24"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e74c5c9663430e27",
+            "quote": "Lio (formerly known as askLio), the company building an agentic AI platform for enterprise procurement"
+          },
+          {
+            "source_id": "FISRC-316b22ef934ac8e6",
+            "quote": "Lio Technologies is headquartered in Munich, Germany."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$30M",
+        "total_raised": "$33M",
+        "announced_at": "2026-03-05",
+        "investors": [
+          {
+            "name": "Andreessen Horowitz (a16z)",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e74c5c9663430e27",
+                "quote": "a $30 million Series A funding round led by Andreessen Horowitz (a16z)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "SV Angels",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e74c5c9663430e27",
+                "quote": "with participation from SV Angels, Harry Stebbings and Y Combinator"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Harry Stebbings",
+            "role": "本轮参投（天使投资人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e74c5c9663430e27",
+                "quote": "with participation from SV Angels, Harry Stebbings and Y Combinator"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Y Combinator",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e74c5c9663430e27",
+                "quote": "with participation from SV Angels, Harry Stebbings and Y Combinator"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e74c5c9663430e27",
+            "quote": "today announced a $30 million Series A funding round led by Andreessen Horowitz (a16z), with participation from SV Angels, Harry Stebbings and Y Combinator. The new capital brings Lio’s total funding to $33 million"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Lio Agentic AI Platform",
+          "description": "一个为企业采购构建的智能体AI平台，通过引入智能体操作程序（AOPs），以虚拟采购部门的形式，让AI智能体像经验丰富的采购员一样自主执行端到端的采购工作流。",
+          "target_customers": "Global 2000和财富500强企业",
+          "features": [
+            "智能体分类请求、分析报价、比较供应商、谈判、引导供应商入驻",
+            "跨ERP、记录系统、收件箱、合同和开放网络端到端执行采购",
+            "并行工作的专业智能体网络，同时研究供应商、谈判条款、管理审批和跟踪交付"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Lio addresses this challenge by introducing Agent Operating Procedures (AOPs) to procurement"
+            },
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "The agents triage requests, analyze quotes, compare suppliers, negotiate, onboard vendors, and execute purchases end-to-end across ERPs, systems of record, inboxes, contracts, and the open web."
+            },
+            {
+              "source_id": "FISRC-05956935e1d4419f",
+              "quote": "Every purchase request is managed by specialized agents working in parallel - researching vendors, negotiating terms, managing approvals, and tracking deliveries simultaneously."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Munich Re",
+          "industry": "再保险",
+          "use_case": "使用Lio的智能体管理企业采购支出",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Customers include Munich Re, the world’s largest reinsurer"
+            }
+          ]
+        },
+        {
+          "name": "Brose",
+          "industry": "汽车零部件供应",
+          "use_case": "使用Lio的智能体管理企业采购支出",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Brose, among the largest family-owned automotive suppliers globally"
+            }
+          ]
+        },
+        {
+          "name": "Novozymes",
+          "industry": "生物解决方案",
+          "use_case": "使用Lio的智能体管理企业采购支出",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Novozymes, a global leader in biological solutions"
+            }
+          ]
+        },
+        {
+          "name": "Schaeffler",
+          "industry": "汽车与工业零部件供应",
+          "use_case": "与Lio合作，重新定义采购的未来，增强AI驱动能力并提高规模化效率",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "In collaboration with Lio, we are redefining the future of Purchasing at Schaeffler."
+            }
+          ]
+        },
+        {
+          "name": "Walmart",
+          "industry": "零售",
+          "use_case": "其高管评价Lio在采购领域的创新和投资回报率",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "said Jared Petras, Senior Director of Global Procurement Digital Transformation at Walmart."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "客户采用率",
+          "value": "超过95%",
+          "observed_at": "2026-03-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Over 95% adoption rates"
+            }
+          ]
+        },
+        {
+          "label": "减少的手动工作量",
+          "value": "85%",
+          "observed_at": "2026-03-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "85% less manual work"
+            }
+          ]
+        },
+        {
+          "label": "增量成本节约",
+          "value": "10%",
+          "observed_at": "2026-03-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "10% incremental savings"
+            }
+          ]
+        },
+        {
+          "label": "客户留存率",
+          "value": "100%",
+          "observed_at": "2026-03-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "100% customer retention"
+            }
+          ]
+        },
+        {
+          "label": "管理的企业支出总额",
+          "value": "数十亿美元",
+          "observed_at": "2026-03-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Lio’s agents have managed billions of dollars in enterprise spend"
+            }
+          ]
+        },
+        {
+          "label": "某全球一级工业制造商6个月内自动化外包采购工作的比例",
+          "value": "75%",
+          "observed_at": "2026-03-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "a global tier-1 industrial manufacturer automated 75% of previously outsourced procurement work in six months"
+            }
+          ]
+        },
+        {
+          "label": "释放的全职等效员工数",
+          "value": "10名",
+          "observed_at": "2026-03-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "freeing the equivalent of 10 full-time employees"
+            }
+          ]
+        },
+        {
+          "label": "全球企业年度采购人才支出",
+          "value": "超过1800亿美元",
+          "observed_at": "2026-03-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Enterprises spend over $180 billion annually on procurement talent"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Jared Petras",
+          "quote": "What sets Lio apart is the level of innovation and creativity its founder has applied to solving one of the hardest challenges in this space: serving the enterprise customer. They are reimagining how procurement can operate in a wide range of environments and the technology is fundamentally different from anything I have used in my career. The impact is real, and the ROI is compressed from years to weeks.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "What sets Lio apart is the level of innovation and creativity its founder has applied to solving one of the hardest challenges in this space: serving the enterprise customer. They are reimagining how procurement can operate in a wide range of environments and the technology is fundamentally different from anything I have used in my career. The impact is real, and the ROI is compressed from years to weeks,\" said Jared Petras, Senior Director of Global Procurement Digital Transformation at Walmart."
+            }
+          ]
+        },
+        {
+          "speaker": "Andreas Schick",
+          "quote": "In collaboration with Lio, we are redefining the future of Purchasing at Schaeffler. The rapid progress and measurable outcomes underscore the transformative potential of agentic AI.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "In collaboration with Lio, we are redefining the future of Purchasing at Schaeffler. The rapid progress and measurable outcomes underscore the transformative potential of agentic AI."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“自主多智能体执行”在企业后台职能中的落地能力，尤其是采购这一人力支出远超软件支出的巨大市场。本轮融资验证的信号包括：Lio的智能体已管理数十亿美元支出，并获得多家全球2000强和财富500强客户的采用，客户留存率高达100%，且能实现85%的手动工作减少和10%的增量成本节约。这些数据表明其产品已跨越概念验证阶段，进入规模化部署。然而，判断的证据边界在于，这些指标均来自公司单方面披露，缺乏第三方审计或公开可比的行业基准。",
+        "validated_signals": [
+          "智能体已管理数十亿美元企业支出",
+          "客户包括Munich Re、Brose、Novozymes等多家全球2000强和财富500强企业",
+          "客户留存率100%，采用率超95%",
+          "实现85%手动工作减少和10%增量成本节约",
+          "某客户在6个月内自动化了75%的外包采购工作，释放10名全职员工"
+        ],
+        "risks": [
+          "企业采购流程高度复杂且依赖人为判断，智能体在异常处理、战略谈判和合规风险上的可靠性尚未经过完整经济周期验证。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业采购智能化"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Lio Agentic AI Platform",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Lio addresses this challenge by introducing Agent Operating Procedures (AOPs) to procurement"
+            },
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "The agents triage requests, analyze quotes, compare suppliers, negotiate, onboard vendors, and execute purchases end-to-end across ERPs, systems of record, inboxes, contracts, and the open web."
+            },
+            {
+              "source_id": "FISRC-05956935e1d4419f",
+              "quote": "Every purchase request is managed by specialized agents working in parallel - researching vendors, negotiating terms, managing approvals, and tracking deliveries simultaneously."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vlad Keil",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "said Vlad Keil, founder and CEO of Lio"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz (a16z)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "a $30 million Series A funding round led by Andreessen Horowitz (a16z)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "SV Angels",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "with participation from SV Angels, Harry Stebbings and Y Combinator"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Harry Stebbings",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "with participation from SV Angels, Harry Stebbings and Y Combinator"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "with participation from SV Angels, Harry Stebbings and Y Combinator"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Munich Re",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Customers include Munich Re, the world’s largest reinsurer"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Brose",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Brose, among the largest family-owned automotive suppliers globally"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Novozymes",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "Novozymes, a global leader in biological solutions"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Schaeffler",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "In collaboration with Lio, we are redefining the future of Purchasing at Schaeffler."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Walmart",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e74c5c9663430e27",
+              "quote": "said Jared Petras, Senior Director of Global Procurement Digital Transformation at Walmart."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-dd78b63f18dba410",
+          "date": "2026-05-20",
+          "title": "Lio – 全球首个采购领域多智能体系统",
+          "amount": "$30M",
+          "source_refs": [
+            "SA-245be58b2b6f74d9"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e74c5c9663430e27",
+          "source_url": "https://www.heliad.com/highlights/lio-technologies-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement",
+          "title": "Lio Technologies 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-10T02:25:37.594Z",
+          "content_hash": "1951b94e0afb85ad",
+          "source_artifact_id": "SA-4182e1e0c8259823",
+          "raw_id": "RAW-4f79a58131b0b84b"
+        },
+        {
+          "source_id": "FISRC-05956935e1d4419f",
+          "source_url": "https://lio.ai/de/newsroom/lio-technologies-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement",
+          "title": "Lio &ndash; The worlds first multi agent system for procurement",
+          "publisher": "lio.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:10:11.549Z",
+          "content_hash": "a3ebc66bca8ca833",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-316b22ef934ac8e6",
+          "source_url": "https://pitchbook.com/profiles/company/534579-13",
+          "title": "Lio Technologies 2026 Company Profile: Valuation, Funding & Investors",
+          "publisher": "pitchbook.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T15:10:18.015Z",
+          "content_hash": "81db60e82ba70cc5",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:10:56.817Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:10:56.817Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-dac348b622e87b82",
+      "triggered_by_event_id": "EV-f1a605a25af30dc5",
+      "as_of_date": "2026-06-10",
+      "company": {
+        "entity_id": "EN-348445124d405d5a",
+        "name": "Archestra.AI",
+        "full_name": "Archestra.AI",
+        "website": "https://archestra.ai",
+        "summary": "Archestra.AI 是一家开源平台公司，其技术使企业能够安全地将敏感数据连接到 AI 智能体，提供确定性护栏、治理和可观测性，以防止数据泄露和提示注入攻击。",
+        "headquarters": "London",
+        "founders": [
+          {
+            "name": "Matvey Kukuy",
+            "role": "CEO and founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08f2020b7eca8380",
+                "quote": "Matvey Kukuy, CEO and founder"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "7",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "The seven-strong team"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-08f2020b7eca8380",
+            "quote": "Archestra.AI, which was founded in 2025 by Grafana Labs, the open-source analytics and visualisation web application, alumni"
+          },
+          {
+            "source_id": "FISRC-50130a45d72291a2",
+            "quote": "Built by the ex-Grafana team."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$10M",
+        "total_raised": "$13.5M",
+        "announced_at": "2026-06-02",
+        "investors": [
+          {
+            "name": "Visible Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08f2020b7eca8380",
+                "quote": "also includes investment from Visible Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tenacity Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08f2020b7eca8380",
+                "quote": "and Tenacity Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Olivier Pomel",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08f2020b7eca8380",
+                "quote": "Angels investing in the round include Olivier Pomel, CEO and co-founder of Datadog"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kieran Flanagan",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-08f2020b7eca8380",
+                "quote": "and Kieran Flanagan, CMO, Hubspot"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "20 Product",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Joining are 20 Product (Will Wu, CPO at Match Group)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Carolyn Everson",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Visible Ventures with Carolyn Everson (Senior Advisor at Permira, Board Member at Coca-Cola and Disney)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AJ Tennant",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Tenacity Capital (AJ Tennant, ex-VP Sales at Slack and Glean)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Insiders",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Insiders (co-founders of ESL FACEIT Group)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Debo Dutta",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Debo Dutta (Chief AI Officer at Nutanix)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alexandre Berriche",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Alexandre Berriche (Founder of Fleet)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Gerhard Eschelbeck",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Gerhard Eschelbeck (former CISO at Google)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mark Goldberger",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Mark Goldberger (VP Sales at Metaview)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Declan Kelly",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Declan Kelly (Founder & GP at Foreword)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Concept Ventures",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Zero Prime Ventures",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Celero Ventures",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Aloniq",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-08f2020b7eca8380",
+            "quote": "has raised $10m in a seed funding round"
+          },
+          {
+            "source_id": "FISRC-50130a45d72291a2",
+            "quote": "we've raised a $10 million Seed round, led by 20VC . That brings our total funding to $13.5M."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Archestra Platform",
+          "description": "一个开源控制平面，用于在生产环境中安全运行 AI 智能体。它自托管在用户自己的 Kubernetes 集群中，在智能体与企业技术栈之间放置一个确定性策略网关，对每个 LLM 调用、工具调用和外部请求进行 RBAC、凭证隔离、审计跟踪和成本控制。",
+          "target_customers": "企业内部 AI 团队，尤其是安全敏感行业（法律、采购、运营、受监管金融）",
+          "features": [
+            "MCP 网关，提供单端点、按身份路由的工具访问",
+            "LLM 代理，支持虚拟密钥、OAuth、JWKS",
+            "双 LLM 子智能体，隔离不可信工具输出以防止提示注入",
+            "动态工具引擎，在不可信来源请求时隐藏敏感工具",
+            "确定性工具护栏，基于上下文信任状态动态阻止高风险后续操作",
+            "企业级身份认证，支持 SSO、OAuth 2.1、用户 OAuth、MCP OBO、企业 IdP",
+            "每个 MCP 服务器在隔离 Pod 中运行",
+            "Prometheus、OpenTelemetry 和身份绑定审计的可观测性"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Archestra is a horizontal platform that lets in-house AI teams open up data access to business users without the usual nightmare scenarios. It plugs into the AI tools you already use, deploys in days, and gives you deterministic guardrails, governance, and observability out of the box."
+            },
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "Archestra.AI is an open-source platform aiming to remedy this, with its tech enabling enterprises to connect sensitive data to AI agents securely"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "未披露",
+          "industry": "财富 500 强",
+          "use_case": "在生产环境中运行 Archestra，将 AI 智能体连接到真实企业数据",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "multiple Fortune 500 companies are now running Archestra in production, connecting AI agents to real corporate data"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "n8n",
+          "product": "n8n 工作流自动化平台",
+          "scenario": "当 n8n 工作流从固定序列变为自主循环，AI 智能体节点读取不可信内容（如恶意 GitHub issue）时，缺乏对提示注入的防御和按身份的工具路由。",
+          "target_customer": "已在生产环境中使用 n8n 并希望添加自主智能体行为的团队",
+          "funding_summary": "",
+          "core_difference": "n8n 是可视化工作流工具，以工作流节点为中心，缺乏按身份的工具路由、MCP 服务器沙箱隔离和双 LLM 提示注入防御；Archestra 是智能体平台，以智能体轮次为中心，提供 MCP 网关、LLM 代理和确定性护栏。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d653e5a6e442aa7",
+              "quote": "n8n is a visual workflow tool that grew agent nodes. Archestra is an agent platform that integrates with workflow tools."
+            },
+            {
+              "source_id": "FISRC-5d653e5a6e442aa7",
+              "quote": "n8n does not have a per-identity tool routing model. Credentials are attached to nodes, not to the human who triggered the run"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "GitHub 星标数",
+          "value": "3,800+",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "3,800+ GitHub stars"
+            }
+          ]
+        },
+        {
+          "label": "社区成员数",
+          "value": "1,000+",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "1,000+ community members"
+            }
+          ]
+        },
+        {
+          "label": "贡献者数",
+          "value": "57",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "57 contributors"
+            }
+          ]
+        },
+        {
+          "label": "财富 500 强客户数",
+          "value": "4",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "has already bagged four Fortune 500 company clients"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Matvey Kukuy",
+          "quote": "We address this problem. We bring guardrails so employees can spin agents inside them.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "We address this problem. We bring guardrails so employees can spin agents inside them."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：企业 AI 智能体从实验走向生产时，安全与治理层将成为独立的基础设施类别，而非 LLM 提供商的内置功能。本轮融资验证的信号包括：已有 4 家财富 500 强客户在生产环境中使用，开源社区快速增长（3800+ GitHub 星标），以及创始团队来自 Grafana Labs 的工程背景。但公司仅 7 人团队，面临大型现有厂商快速添加类似安全层的竞争压力，且其护栏在大规模部署中防止数据泄露的实际效果尚未得到广泛验证。",
+        "validated_signals": [
+          "4 家财富 500 强客户已在生产环境中使用 Archestra 连接 AI 智能体与真实企业数据",
+          "开源社区快速增长，获得 3800+ GitHub 星标、1000+ 社区成员和 57 名贡献者",
+          "创始团队来自 Grafana Labs，具备开源和企业级可观测性产品的构建经验"
+        ],
+        "risks": [
+          "7 人团队在竞争激烈的企业软件市场中，面临大型现有厂商快速添加类似安全层的压力，其护栏在大规模部署中防止数据泄露的实际效果尚未得到广泛验证。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 智能体安全与治理基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Archestra Platform",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Archestra is a horizontal platform that lets in-house AI teams open up data access to business users without the usual nightmare scenarios. It plugs into the AI tools you already use, deploys in days, and gives you deterministic guardrails, governance, and observability out of the box."
+            },
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "Archestra.AI is an open-source platform aiming to remedy this, with its tech enabling enterprises to connect sensitive data to AI agents securely"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Matvey Kukuy",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "Matvey Kukuy, CEO and founder"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Visible Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "also includes investment from Visible Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Tenacity Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "and Tenacity Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Olivier Pomel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "Angels investing in the round include Olivier Pomel, CEO and co-founder of Datadog"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kieran Flanagan",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "and Kieran Flanagan, CMO, Hubspot"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "20 Product",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Joining are 20 Product (Will Wu, CPO at Match Group)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Carolyn Everson",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Visible Ventures with Carolyn Everson (Senior Advisor at Permira, Board Member at Coca-Cola and Disney)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AJ Tennant",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Tenacity Capital (AJ Tennant, ex-VP Sales at Slack and Glean)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Insiders",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Insiders (co-founders of ESL FACEIT Group)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Debo Dutta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Debo Dutta (Chief AI Officer at Nutanix)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alexandre Berriche",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Alexandre Berriche (Founder of Fleet)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Gerhard Eschelbeck",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Gerhard Eschelbeck (former CISO at Google)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mark Goldberger",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Mark Goldberger (VP Sales at Metaview)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Declan Kelly",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Declan Kelly (Founder & GP at Foreword)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Concept Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Zero Prime Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Celero Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Aloniq",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "未披露",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "multiple Fortune 500 companies are now running Archestra in production, connecting AI agents to real corporate data"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "n8n",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d653e5a6e442aa7",
+              "quote": "n8n is a visual workflow tool that grew agent nodes. Archestra is an agent platform that integrates with workflow tools."
+            },
+            {
+              "source_id": "FISRC-5d653e5a6e442aa7",
+              "quote": "n8n does not have a per-identity tool routing model. Credentials are attached to nodes, not to the human who triggered the run"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-6ae3594aadfcd3d8",
+          "date": "2026-06-05",
+          "title": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
+          "amount": "$10M",
+          "source_refs": [
+            "SA-ddb6754de5b2017d",
+            "SA-2e8806ca442bbcfe"
+          ]
+        },
+        {
+          "event_id": "EV-f1a605a25af30dc5",
+          "date": "2026-06-03",
+          "title": "",
+          "amount": "$10 million",
+          "source_refs": [
+            "SA-7e3d91e05cbcda06"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-08f2020b7eca8380",
+          "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
+          "title": "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-10T02:25:37.806Z",
+          "content_hash": "e9f5a2a28919e9c2",
+          "source_artifact_id": "SA-a4c0098bf972bc5c",
+          "raw_id": "RAW-13d8fd0af5ff44eb"
+        },
+        {
+          "source_id": "FISRC-50130a45d72291a2",
+          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+          "title": "Archestra.AI Announces $10M Seed 🎉 | Blog | Archestra",
+          "publisher": "archestra.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:25:50.216Z",
+          "content_hash": "65e55f883bf21e63",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5d653e5a6e442aa7",
+          "source_url": "https://archestra.ai/blog/n8n-vs-archestra-agents",
+          "title": "n8n vs Archestra for agentic workflows | Blog | Archestra",
+          "publisher": "archestra.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:26:54.946Z",
+          "content_hash": "a715fd522dab62e0",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:28:30.095Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:28:30.095Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-dd78b63f18dba410",
+      "company_name": "Lio Technologies",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Lio Technologies\" \"$30m\" funding investors round",
+        "\"Lio Technologies\" product customers case study",
+        "\"Lio Technologies\" \"Lio Technologies Raises $30m Series A to Bring Agentic AI to Enterprise Procurement | HELIAD Hightlights\" competitors product use case",
+        "\"Lio Technologies\" \"$30m\" investor quote why invested",
+        "\"Lio Technologies\" \"$30m\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Lio Technologies\" \"$30m\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Lio Technologies\" \"$30m\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Lio Technologies\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Lio Technologies\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Lio Technologies\" \"Lio Technologies Raises $30m Series A to Bring Agentic AI to Enterprise Procurement | HELIAD Hightlights\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Lio Technologies\" \"Lio Technologies Raises $30m Series A to Bring Agentic AI to Enterprise Procurement | HELIAD Hightlights\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Lio Technologies\" \"$30m\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Lio Technologies\" \"$30m\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Lio Technologies\" \"$30m\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Lio Technologies\" \"$30m\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:10:56.868Z"
+    },
+    {
+      "event_id": "EV-f1a605a25af30dc5",
+      "company_name": "Archestra.AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Archestra.AI\" \"$10M\" funding investors round",
+        "\"Archestra.AI\" product customers case study",
+        "\"Archestra.AI\" \"Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu\" competitors product use case",
+        "\"Archestra.AI\" \"$10M\" investor quote why invested",
+        "\"Archestra.AI\" \"$10M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Archestra.AI\" \"$10M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Archestra.AI\" \"$10M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Archestra.AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Archestra.AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Archestra.AI\" \"Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Archestra.AI\" \"Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Archestra.AI\" \"$10M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Archestra.AI\" \"$10M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Archestra.AI\" \"$10M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Archestra.AI\" \"$10M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:28:30.122Z"
+    }
+  ]
+}

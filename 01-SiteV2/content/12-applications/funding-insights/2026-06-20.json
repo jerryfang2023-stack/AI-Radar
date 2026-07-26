@@ -1,0 +1,1555 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-20",
+    "generated_at": "2026-07-26T15:12:25.289Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 2,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-26fd7dc0f7921b96",
+      "triggered_by_event_id": "EV-11b5192fc54c0aa0",
+      "as_of_date": "2026-06-20",
+      "company": {
+        "entity_id": "EN-bf0e59763d382462",
+        "name": "Union.ai",
+        "full_name": "Union.ai",
+        "website": "",
+        "summary": "Union.ai 是一家从隐身模式中浮出水面的初创公司，提供开源 AI 编排平台 Flyte 的商业版本，旨在简化 AI 和机器学习工作流编排。",
+        "headquarters": "Bellevue, Wash.",
+        "founders": [
+          {
+            "name": "Ketan Umare",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7934d4a076d4adc8",
+                "quote": "CEO Ketan Umare says that the proceeds will be put toward supporting the Flyte community"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Haytham Abuelfutuh",
+            "role": "CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ed155f917a2864ce",
+                "quote": "said Union.ai CTO Haytham Abuelfutuh"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "George Snelling",
+            "role": "COO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7666cc7890fae56b",
+                "quote": "COO George Snelling"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "20",
+          "observed_at": "2022-04-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "Union plans to double its 20-person headcount by the end of the year"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7934d4a076d4adc8",
+            "quote": "Union.ai , a startup emerging from stealth with a commercial version of the open source AI orchestration platform Flyte"
+          },
+          {
+            "source_id": "FISRC-7666cc7890fae56b",
+            "quote": "BELLEVUE, Wash. , April 12, 2022 /PRNewswire/ -- Union.ai , provider of the open source workflow orchestration platform Flyte"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$10 million",
+        "total_raised": "$10 million",
+        "announced_at": "2022-04-12",
+        "investors": [
+          {
+            "name": "NEA",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7934d4a076d4adc8",
+                "quote": "raised $10 million in a round contributed by NEA and “select” angel investors"
+              },
+              {
+                "source_id": "FISRC-e912c7440910956c",
+                "quote": "closed $10 million in seed funding led by NEA with additional participation from a select group of angels"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "select angel investors",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7934d4a076d4adc8",
+                "quote": "raised $10 million in a round contributed by NEA and “select” angel investors"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7934d4a076d4adc8",
+            "quote": "today announced that it raised $10 million in a round contributed by NEA and “select” angel investors"
+          },
+          {
+            "source_id": "FISRC-7666cc7890fae56b",
+            "quote": "closed $10 million in seed funding led by NEA with additional participation from a select group of angels"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Flyte",
+          "description": "一个用于编程和处理并发 AI 和数据分析工作流的开源平台，定义由多个任务组成的工作流，支持任何编程语言，并可本地部署。",
+          "target_customers": "数据科学家和机器学习工程师",
+          "features": [
+            "记录 AI 管道所有变更的连接器",
+            "存储管道所有执行历史",
+            "提供仪表板、命令行界面和 API 与计算交互"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "Flyte comes in — a platform for programming and processing concurrent AI and data analytics workflows"
+            },
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "Workflows and tasks can be written in any programming language and stay on-premises, as does data moving through those components."
+            },
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "connectors between computation back ends that record all changes to an AI pipeline. Union Cloud also stores a history of all a pipeline’s executions and provides a dashboard, command-line interface and API to interact with the computations."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Union Cloud",
+          "description": "Flyte 的托管版本，通过集中化基础设施管理，为 Flyte 增加敏捷性、可重复性和安全性，让小型团队无需组建基础设施团队即可使用 Flyte。",
+          "target_customers": "较小的团队和组织",
+          "features": [
+            "几分钟内即可启动并运行",
+            "零信任原则构建",
+            "保持高隐私和合规标准"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "A managed version of Flyte, called Union Cloud, will allow smaller teams and organizations to use the power of Flyte without the need to staff up on infrastructure teams"
+            },
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "adds “agility, reproducibility, and security” to Flyte by centralizing infrastructure management and maintaining “high” privacy and compliance standards."
+            },
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "Our products are built with zero-trust principles in mind"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Lyft",
+          "industry": "出行服务",
+          "use_case": "用于计算司机从 A 点到 B 点的预计到达时间 (ETA) 系统",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "helped to build Flyte while at Lyft, where it was used to help create a system to calculate the estimated time of arrival (ETA) for drivers to get from point A to point B."
+            }
+          ]
+        },
+        {
+          "name": "Spotify",
+          "industry": "音频流媒体",
+          "use_case": "采用 Flyte 技术",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "thousands” of users across companies such as Lyft, Spotify, Toyota subsidiary Woven Planet, and biotech and finance brands have adopted Flyte."
+            }
+          ]
+        },
+        {
+          "name": "Gojek",
+          "industry": "出行与生活服务",
+          "use_case": "作为合作伙伴帮助完善解决方案",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "worked] closely with extremely sophisticated and a diverse set of partners like Spotify, Gojek and Freenome [to help] refine the solution."
+            }
+          ]
+        },
+        {
+          "name": "Freenome",
+          "industry": "生物技术",
+          "use_case": "作为合作伙伴帮助完善解决方案",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "worked] closely with extremely sophisticated and a diverse set of partners like Spotify, Gojek and Freenome [to help] refine the solution."
+            }
+          ]
+        },
+        {
+          "name": "Woven Planet (Toyota subsidiary)",
+          "industry": "汽车/出行",
+          "use_case": "采用 Flyte 技术",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "thousands” of users across companies such as Lyft, Spotify, Toyota subsidiary Woven Planet, and biotech and finance brands have adopted Flyte."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "AWS Sagemaker",
+          "product": "AWS Sagemaker",
+          "scenario": "机器学习模型开发与部署",
+          "target_customer": "数据科学团队",
+          "funding_summary": "",
+          "core_difference": "Union.ai 认为 AWS Sagemaker 未能与数据科学生态系统的其余部分良好集成，而 Flyte 采用第一性原理方法定义工作流，最小化人为错误并提前预测问题。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "similar efforts from other vendors exist, like AWS Sagemaker , he believes that they fail to integrate well with the rest of the data science ecosystem."
+            }
+          ]
+        },
+        {
+          "name": "DIY (自建方案)",
+          "product": "企业内部自建方案",
+          "scenario": "生产级机器学习工作流管理",
+          "target_customer": "非大型科技公司",
+          "funding_summary": "",
+          "core_difference": "大多数公司从自建方案起步，而 Union.ai 采用第一性原理方法定义机器学习工作流，旨在最小化人为错误并提前预测问题。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "most companies start off with DIY — that is our primary competition"
+            },
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "We took a radically different, first-principles approach to defining what a workflow means for machine learning and data scientists."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$10 million",
+          "observed_at": "2022-04-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "today announced that it raised $10 million"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "20人",
+          "observed_at": "2022-04-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "Union plans to double its 20-person headcount by the end of the year"
+            }
+          ]
+        },
+        {
+          "label": "Flyte 开源时间",
+          "value": "2020年",
+          "observed_at": "2022-04-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "Lyft contributed Flyte to open source in 2020"
+            }
+          ]
+        },
+        {
+          "label": "Flyte 用户规模",
+          "value": "数千用户",
+          "observed_at": "2022-04-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "reiterated that “thousands” of users across companies such as Lyft, Spotify, Toyota subsidiary Woven Planet, and biotech and finance brands have adopted Flyte."
+            }
+          ]
+        },
+        {
+          "label": "企业数据工程师花在构建和维护数据管道上的时间比例",
+          "value": "近一半时间",
+          "observed_at": "2021",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "According to a 2021 Wakefield Research report , enterprise data engineers spend nearly half their time building and maintaining data pipelines."
+            }
+          ]
+        },
+        {
+          "label": "认为减少手动管道管理可改善业务成果的受访者比例",
+          "value": "69%",
+          "observed_at": "2021",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "Sixty-nine percent of respondents to the survey — mainly data engineers — said that business outcomes would improve if their teams could contribute more to business decisions and spend less time on manual pipeline management."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Ketan Umare",
+          "quote": "The requirements for ML/Data are very different from delivering services to production. ML/Data workflows are focused on experimentation and are stateful. Meanwhile, dealing with infrastructure procurement is one of the last things a data scientist wants to do.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e912c7440910956c",
+              "quote": "The requirements for ML/Data are very different from delivering services to production,” said Ketan Umare , CEO at Union.ai . “ML/Data workflows are focused on experimentation and are stateful. Meanwhile, dealing with infrastructure procurement is one of the last things a data scientist wants to do."
+            }
+          ]
+        },
+        {
+          "speaker": "Ketan Umare",
+          "quote": "We took a radically different, first-principles approach to defining what a workflow means for machine learning and data scientists. We started with a goal to minimize human errors and try to help predict problems ahead of time",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "We took a radically different, first-principles approach to defining what a workflow means for machine learning and data scientists. We started with a goal to minimize human errors and try to help predict problems ahead of time"
+            }
+          ]
+        },
+        {
+          "speaker": "Haytham Abuelfutuh",
+          "quote": "We built Flyte with the goal of revolutionizing ML pipelines to help ML and data engineers to easily author robust and reusable pipelines. At Union.ai, we are building the Union Cloud platform, which intends to make Flyte accessible to teams across all industries.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ed155f917a2864ce",
+              "quote": "We built Flyte with the goal of revolutionizing ML pipelines to help ML and data engineers to easily author robust and reusable pipelines,” said Union.ai CTO Haytham Abuelfutuh. “At Union.ai, we are building the Union Cloud platform, which intends to make Flyte accessible to teams across all industries."
+            }
+          ]
+        },
+        {
+          "speaker": "Ketan Umare",
+          "quote": "A managed version of Flyte, called Union Cloud, will allow smaller teams and organizations to use the power of Flyte without the need to staff up on infrastructure teams",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "A managed version of Flyte, called Union Cloud, will allow smaller teams and organizations to use the power of Flyte without the need to staff up on infrastructure teams"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是开源 ML 工作流编排平台 Flyte 的社区采纳度及其商业化潜力。已验证信号包括：Flyte 已在 Lyft 内部驱动大多数业务关键型工作负载，并被 Spotify、Gojek、Woven Planet 等多家知名企业采用，拥有数千用户；创始团队具备在 Lyft 构建 Flyte 的一手经验，且来自 Amazon、Google、Microsoft 等顶级科技公司。本轮融资用于加速开源生态增长并构建托管云服务 Union Cloud，以降低中小团队的使用门槛。判断的证据边界限于 2022 年 4 月披露的种子轮信息，尚未有 Union Cloud 的商业化收入或客户转化数据。",
+        "validated_signals": [
+          "Flyte 在 Lyft 内部驱动大多数业务关键型工作负载",
+          "Flyte 已被 Spotify、Gojek、Woven Planet 等多家知名企业采用",
+          "Flyte 拥有数千用户",
+          "创始团队具备在 Lyft 构建 Flyte 的一手经验，且来自 Amazon、Google、Microsoft 等顶级科技公司"
+        ],
+        "risks": [
+          "Union Cloud 作为托管服务尚未披露任何商业化收入或客户转化数据，商业化前景存在不确定性",
+          "生产级机器学习仍处于早期阶段，大多数公司仍以自建方案为主，市场教育成本较高"
+        ],
+        "related_direction_id": "",
+        "sector": "AI 与机器学习工作流编排"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Flyte",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "Flyte comes in — a platform for programming and processing concurrent AI and data analytics workflows"
+            },
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "Workflows and tasks can be written in any programming language and stay on-premises, as does data moving through those components."
+            },
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "connectors between computation back ends that record all changes to an AI pipeline. Union Cloud also stores a history of all a pipeline’s executions and provides a dashboard, command-line interface and API to interact with the computations."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Union Cloud",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "A managed version of Flyte, called Union Cloud, will allow smaller teams and organizations to use the power of Flyte without the need to staff up on infrastructure teams"
+            },
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "adds “agility, reproducibility, and security” to Flyte by centralizing infrastructure management and maintaining “high” privacy and compliance standards."
+            },
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "Our products are built with zero-trust principles in mind"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ketan Umare",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "CEO Ketan Umare says that the proceeds will be put toward supporting the Flyte community"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Haytham Abuelfutuh",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ed155f917a2864ce",
+              "quote": "said Union.ai CTO Haytham Abuelfutuh"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "George Snelling",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7666cc7890fae56b",
+              "quote": "COO George Snelling"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NEA",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "raised $10 million in a round contributed by NEA and “select” angel investors"
+            },
+            {
+              "source_id": "FISRC-e912c7440910956c",
+              "quote": "closed $10 million in seed funding led by NEA with additional participation from a select group of angels"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "select angel investors",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "raised $10 million in a round contributed by NEA and “select” angel investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Lyft",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "helped to build Flyte while at Lyft, where it was used to help create a system to calculate the estimated time of arrival (ETA) for drivers to get from point A to point B."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Spotify",
+          "canonical_entity_id": "EN-2b78da3dc866654e",
+          "canonical_name": "Spotify",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "thousands” of users across companies such as Lyft, Spotify, Toyota subsidiary Woven Planet, and biotech and finance brands have adopted Flyte."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Gojek",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "worked] closely with extremely sophisticated and a diverse set of partners like Spotify, Gojek and Freenome [to help] refine the solution."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Freenome",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "worked] closely with extremely sophisticated and a diverse set of partners like Spotify, Gojek and Freenome [to help] refine the solution."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Woven Planet (Toyota subsidiary)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "thousands” of users across companies such as Lyft, Spotify, Toyota subsidiary Woven Planet, and biotech and finance brands have adopted Flyte."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "AWS Sagemaker",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "similar efforts from other vendors exist, like AWS Sagemaker , he believes that they fail to integrate well with the rest of the data science ecosystem."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "DIY (自建方案)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "most companies start off with DIY — that is our primary competition"
+            },
+            {
+              "source_id": "FISRC-7934d4a076d4adc8",
+              "quote": "We took a radically different, first-principles approach to defining what a workflow means for machine learning and data scientists."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-11b5192fc54c0aa0",
+          "date": "2026-06-20",
+          "title": "Union.ai融资1000万美元，简化机器学习工作流编排",
+          "amount": "$10M",
+          "source_refs": [
+            "SA-9ca54e5fd7d94c90"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-7934d4a076d4adc8",
+          "source_url": "https://techcrunch.com/2022/04/12/union-ai-raises-10m-to-simplify-ai-and-ml-workflow-orchestration/",
+          "title": "Union.ai融资1000万美元，简化机器学习工作流编排",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-20T05:50:42.061Z",
+          "content_hash": "79c5fe52268cb7e7",
+          "source_artifact_id": "SA-9ca54e5fd7d94c90",
+          "raw_id": "RAW-918db1b376b9ff3c"
+        },
+        {
+          "source_id": "FISRC-e912c7440910956c",
+          "source_url": "https://readmagazine.com/industries/bfsi/union-ai-raises-10m-in-seed-funding-for-ai-and-ml-orchestration-technology/",
+          "title": "Union.ai Raises $10M in Seed Funding for AI and ML Orchestration",
+          "publisher": "readmagazine.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:33:06.821Z",
+          "content_hash": "17ae4ca342f22463",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ed155f917a2864ce",
+          "source_url": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/union-ai-raises-10m-in-seed-funding-for-ai-and-ml-orchestration-technology/",
+          "title": "Union.ai Raises $10M in Seed Funding for AI and ML Orchestration",
+          "publisher": "martechseries.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:34:01.839Z",
+          "content_hash": "c52d26293fccaf5a",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7666cc7890fae56b",
+          "source_url": "https://www.prnewswire.com/news-releases/unionai-raises-10m-in-seed-funding-for-ai-and-ml-orchestration-technology-301524104.html",
+          "title": "Union.ai Raises $10M in Seed Funding for AI and ML Orchestration Technology",
+          "publisher": "prnewswire.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:34:08.172Z",
+          "content_hash": "5913bde3a53a3823",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:34:51.950Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:34:51.950Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-28a9ec2f7c2c938b",
+      "triggered_by_event_id": "EV-63236c15166b71e0",
+      "as_of_date": "2026-06-20",
+      "company": {
+        "entity_id": "EN-d6386c59a6bcfcb1",
+        "name": "Pivot",
+        "full_name": "Pivot",
+        "website": "https://www.pivotapp.ai",
+        "summary": "Pivot 是一家为大型企业构建采购软件的初创公司，提供 AI 驱动的采购操作系统，旨在取代遗留软件，为财务和采购团队提供实时的承诺支出可见性。",
+        "headquarters": "法国巴黎和美国纽约",
+        "founders": [
+          {
+            "name": "Marc-Antoine Lacroix",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4db7c0e1c705be9a",
+                "quote": "The company was co-founded in 2023 by Marc-Antoine Lacroix, formerly CTO and then CPO at French neobank Qonto"
+              },
+              {
+                "source_id": "FISRC-32a4049a58ce6627",
+                "quote": "said Marc-Antoine Lacroix, Co-Founder and CEO, Pivot"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Romain Libeau",
+            "role": "联合创始人兼COO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4db7c0e1c705be9a",
+                "quote": "Romain Libeau, who held successive roles as CMO, COO, and CPO at employee benefits startup Swile"
+              },
+              {
+                "source_id": "FISRC-32a4049a58ce6627",
+                "quote": "said Romain Libeau, Co-founder and COO, Pivot"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Estelle Giuly",
+            "role": "联合创始人兼CTPO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4db7c0e1c705be9a",
+                "quote": "Estelle Giuly, a workflow automation engineer previously at Wave.ai"
+              },
+              {
+                "source_id": "FISRC-32a4049a58ce6627",
+                "quote": "said Estelle, Co-founder and CTPO, Pivot"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "100",
+          "observed_at": "2026-05-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-32a4049a58ce6627",
+              "quote": "In just three years, we’ve grown our team to 100 people"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-58b2708f2adcb70e",
+            "quote": "The Paris and New York-based start-up, founded in 2023"
+          },
+          {
+            "source_id": "FISRC-4db7c0e1c705be9a",
+            "quote": "Pivot, a Paris-based startup that builds procurement software for large companies"
+          }
+        ]
+      },
+      "financing": {
+        "round": "B轮",
+        "amount": "$40m",
+        "total_raised": "$70m",
+        "announced_at": "2026-05-21",
+        "investors": [
+          {
+            "name": "Forestay Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-58b2708f2adcb70e",
+                "quote": "has raised $40m in a Series B led by Forestay Capital and Notion Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Notion Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-58b2708f2adcb70e",
+                "quote": "has raised $40m in a Series B led by Forestay Capital and Notion Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Greyhound",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-58b2708f2adcb70e",
+                "quote": "The oversubscribed round drew participation from Greyhound"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hedosophia",
+            "role": "既有投资方（种子轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-58b2708f2adcb70e",
+                "quote": "alongside existing backers Hedosophia, Visionaries Club and Emblem"
+              },
+              {
+                "source_id": "FISRC-4db7c0e1c705be9a",
+                "quote": "followed by a $21.6 million seed round in December of the same year"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Visionaries Club",
+            "role": "既有投资方（种子轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-58b2708f2adcb70e",
+                "quote": "alongside existing backers Hedosophia, Visionaries Club and Emblem"
+              },
+              {
+                "source_id": "FISRC-4db7c0e1c705be9a",
+                "quote": "It raised a €5 million pre-seed from Visionaries Club, Emblem, and Cocoa in mid-2023"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Emblem",
+            "role": "既有投资方（种子轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-58b2708f2adcb70e",
+                "quote": "alongside existing backers Hedosophia, Visionaries Club and Emblem"
+              },
+              {
+                "source_id": "FISRC-4db7c0e1c705be9a",
+                "quote": "It raised a €5 million pre-seed from Visionaries Club, Emblem, and Cocoa in mid-2023"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-58b2708f2adcb70e",
+            "quote": "Pivot, the Paris and New York-based procurement-software start-up, has raised $40m in a Series B led by Forestay Capital and Notion Capital, taking the company’s total funding since its 2023 founding to $70m."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Pivot AI Operating System for Procurement",
+          "description": "一个企业级AI采购操作系统，从记录系统层面构建，覆盖寻源、审批、采购、发票、付款、预算、费用和报告等完整采购生命周期，并提供实时ERP集成。",
+          "target_customers": "大型企业，特别是拥有复杂多实体结构和ERP系统的财务与采购团队",
+          "features": [
+            "实时承诺支出可见性",
+            "智能体工作流配置",
+            "与数十个ERP系统的实时集成",
+            "支持复杂的多实体企业结构",
+            "模块化AI代理（如谈判代理）"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "The platform covers sourcing, approvals, purchasing, invoicing, payments, budgets, expenses and reporting inside a single environment, with real-time ERP integrations and support for multi-entity enterprise structures."
+            },
+            {
+              "source_id": "FISRC-3dee099b4ae445f1",
+              "quote": "The platform manages the complete procurement lifecycle—sourcing, approvals, purchasing, invoicing, payments, budgets, expenses, and reporting—in a single modern platform."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "DoorDash",
+          "industry": "科技/外卖配送",
+          "use_case": "支持其欧洲实体的采购，并用于升级现有采购流程中的接收和供应商入职工作流。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "DoorDash adopted Pivot for its European entity and is also using the platform to upgrade intake and vendor-onboarding workflows in parts of its existing stack."
+            }
+          ]
+        },
+        {
+          "name": "Lemonade",
+          "industry": "保险科技",
+          "use_case": "使用Pivot平台，并部署了定制的谈判代理（Negotiation Agent）来处理未谈判的合同，以挖掘潜在节省。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-791aede6d445346e",
+              "quote": "we built a custom Negotiation Agent for our client, Lemonade, to address their unnegotiated contracts."
+            }
+          ]
+        },
+        {
+          "name": "Flix",
+          "industry": "旅游科技",
+          "use_case": "使用Pivot平台，将审批时间缩短了75%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c10a17ed8932e005",
+              "quote": "Discover how Flix cut their approval times by 75% with Pivot"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "SAP Ariba",
+          "product": "SAP Ariba",
+          "scenario": "企业采购管理",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "Pivot 是从零开始构建的记录系统，并在其上配置智能体工作流；而 SAP Ariba 等遗留平台架构僵化，实施痛苦，且AI功能因底层数据碎片化而表现不佳。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "Legacy platforms have promised to fix this for two decades and delivered painful implementations and rigid architectures."
+            },
+            {
+              "source_id": "FISRC-4db7c0e1c705be9a",
+              "quote": "Older platforms such as SAP Ariba and Coupa were built for a different era of enterprise computing. They tend to require lengthy implementations, generate significant administrative work, and sit on rigid architectures"
+            }
+          ]
+        },
+        {
+          "name": "Coupa",
+          "product": "Coupa",
+          "scenario": "企业支出管理",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "Pivot 从记录系统层面重建采购流程，提供实时ERP集成和智能体AI；而 Coupa 等遗留平台架构僵化，难以与现代系统连接。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4db7c0e1c705be9a",
+              "quote": "Older platforms such as SAP Ariba and Coupa were built for a different era of enterprise computing. They tend to require lengthy implementations, generate significant administrative work, and sit on rigid architectures that are hard to connect with newer systems."
+            }
+          ]
+        },
+        {
+          "name": "新一代接收与编排工具",
+          "product": "新一代接收与编排工具",
+          "scenario": "采购前端用户体验改善",
+          "target_customer": "企业采购部门",
+          "funding_summary": "",
+          "core_difference": "Pivot 构建了完整的记录系统，解决了底层数据架构问题；而新一代工具仅改善了前端用户体验，但未触及底层数据层和ERP集成挑战。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "A newer wave of intake-and-orchestration tools improved the front end but left the underlying data layer untouched"
+            },
+            {
+              "source_id": "FISRC-3dee099b4ae445f1",
+              "quote": "A newer generation of intake and orchestration tools has improved the user experience at the front end, but leaves the data architecture and ERP integration challenges untouched."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "年处理发票金额",
+          "value": "$3bn",
+          "observed_at": "2026-05-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "$3bn in invoices already run through the system annually."
+            }
+          ]
+        },
+        {
+          "label": "运营国家数量",
+          "value": "超过25个",
+          "observed_at": "2026-05-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "Pivot operates in more than 25 countries"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "100人",
+          "observed_at": "2026-05-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-32a4049a58ce6627",
+              "quote": "In just three years, we’ve grown our team to 100 people"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Gordon Lee, Chief Accounting Officer, DoorDash",
+          "quote": "Pivot stood out for its ability to support complex operational needs while seamlessly fitting into our existing environment. For Wolt, and related intake and vendor onboarding workflows, we saw an opportunity to improve speed, flexibility, and user experience.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "‘Pivot stood out for its ability to support complex operational needs while seamlessly fitting into our existing environment,’ said Gordon Lee, DoorDash’s Chief Accounting Officer, in the announcement. ‘For Wolt, and related intake and vendor onboarding workflows, we saw an opportunity to improve speed, flexibility, and user experience.’"
+            }
+          ]
+        },
+        {
+          "speaker": "Marc-Antoine Lacroix, Co-Founder, Pivot",
+          "quote": "Finance and procurement leaders tell us the same thing: they don't need another workflow layer. They need to know what the business is committing to spend before it becomes a problem at close. Pivot gives enterprises that visibility, reinforced by agentic AI that shifts the manual grind from a human burden to a machine burden.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "‘They need to know what the business is committing to spend before it becomes a problem at close,’ he said. ‘Pivot gives enterprises that visibility, reinforced by agentic AI that shifts the manual grind from a human burden to a machine burden.’"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Forestay Capital",
+            "speaker": "Deborah Pittet",
+            "speaker_role": "Partner",
+            "rationale": "认为企业采购亟需代际变革，Pivot是少数构建了智能体AI优先平台的公司，其架构、客户牵引力和时机使其成为未来十年该品类的定义者。",
+            "quote": "Enterprise procurement has been overdue for a generational shift. Pivot is among the rare companies building an agentic AI‑first platform, with the architecture, customer traction, and timing to define this category for the next decade.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3dee099b4ae445f1",
+                "quote": "“Enterprise procurement has been overdue for a generational shift. Pivot is among the rare companies building an agentic AI‑first platform, with the architecture, customer traction, and timing to define this category for the next decade. We are proud to be backing such a strong and visionary founding team as they reshape how enterprises run procurement.” – Deborah Pittet, Partner, Forestay Capital"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“从记录系统层重建采购软件”的架构主张，以及该架构支撑的智能体AI工作流能否在大型企业中实现落地。本轮融资的已验证信号包括：年处理发票金额达30亿美元、已签约DoorDash等企业客户、在25个以上国家运营。这些信号表明产品已具备初步的企业级采用和规模化处理能力，但来源未披露估值、具体营收或盈利数据，因此无法判断其商业化的深度和效率。",
+        "validated_signals": [
+          "年处理发票金额达30亿美元，表明平台已承载实质性交易量。",
+          "已签约DoorDash、Lemonade、Flix等企业客户，证明产品在真实企业环境中得到采用。",
+          "在超过25个国家运营，显示其支持多国、多实体复杂业务的能力。"
+        ],
+        "risks": [
+          "来源未披露本轮估值、具体营收或盈利数据，商业化深度和效率无法验证。",
+          "客户名单仍以少数几家锚定客户为主，能否快速扩展至更多财富500强企业尚待证明。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业级AI采购软件"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Pivot AI Operating System for Procurement",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "The platform covers sourcing, approvals, purchasing, invoicing, payments, budgets, expenses and reporting inside a single environment, with real-time ERP integrations and support for multi-entity enterprise structures."
+            },
+            {
+              "source_id": "FISRC-3dee099b4ae445f1",
+              "quote": "The platform manages the complete procurement lifecycle—sourcing, approvals, purchasing, invoicing, payments, budgets, expenses, and reporting—in a single modern platform."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Marc-Antoine Lacroix",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4db7c0e1c705be9a",
+              "quote": "The company was co-founded in 2023 by Marc-Antoine Lacroix, formerly CTO and then CPO at French neobank Qonto"
+            },
+            {
+              "source_id": "FISRC-32a4049a58ce6627",
+              "quote": "said Marc-Antoine Lacroix, Co-Founder and CEO, Pivot"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Romain Libeau",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4db7c0e1c705be9a",
+              "quote": "Romain Libeau, who held successive roles as CMO, COO, and CPO at employee benefits startup Swile"
+            },
+            {
+              "source_id": "FISRC-32a4049a58ce6627",
+              "quote": "said Romain Libeau, Co-founder and COO, Pivot"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Estelle Giuly",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4db7c0e1c705be9a",
+              "quote": "Estelle Giuly, a workflow automation engineer previously at Wave.ai"
+            },
+            {
+              "source_id": "FISRC-32a4049a58ce6627",
+              "quote": "said Estelle, Co-founder and CTPO, Pivot"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Forestay Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "has raised $40m in a Series B led by Forestay Capital and Notion Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Notion Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "has raised $40m in a Series B led by Forestay Capital and Notion Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Greyhound",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "The oversubscribed round drew participation from Greyhound"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hedosophia",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "alongside existing backers Hedosophia, Visionaries Club and Emblem"
+            },
+            {
+              "source_id": "FISRC-4db7c0e1c705be9a",
+              "quote": "followed by a $21.6 million seed round in December of the same year"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Visionaries Club",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "alongside existing backers Hedosophia, Visionaries Club and Emblem"
+            },
+            {
+              "source_id": "FISRC-4db7c0e1c705be9a",
+              "quote": "It raised a €5 million pre-seed from Visionaries Club, Emblem, and Cocoa in mid-2023"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Emblem",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "alongside existing backers Hedosophia, Visionaries Club and Emblem"
+            },
+            {
+              "source_id": "FISRC-4db7c0e1c705be9a",
+              "quote": "It raised a €5 million pre-seed from Visionaries Club, Emblem, and Cocoa in mid-2023"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "DoorDash",
+          "canonical_entity_id": "EN-b0126946c556dc47",
+          "canonical_name": "DoorDash",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "DoorDash adopted Pivot for its European entity and is also using the platform to upgrade intake and vendor-onboarding workflows in parts of its existing stack."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Lemonade",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-791aede6d445346e",
+              "quote": "we built a custom Negotiation Agent for our client, Lemonade, to address their unnegotiated contracts."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Flix",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c10a17ed8932e005",
+              "quote": "Discover how Flix cut their approval times by 75% with Pivot"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "SAP Ariba",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "Legacy platforms have promised to fix this for two decades and delivered painful implementations and rigid architectures."
+            },
+            {
+              "source_id": "FISRC-4db7c0e1c705be9a",
+              "quote": "Older platforms such as SAP Ariba and Coupa were built for a different era of enterprise computing. They tend to require lengthy implementations, generate significant administrative work, and sit on rigid architectures"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Coupa",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4db7c0e1c705be9a",
+              "quote": "Older platforms such as SAP Ariba and Coupa were built for a different era of enterprise computing. They tend to require lengthy implementations, generate significant administrative work, and sit on rigid architectures that are hard to connect with newer systems."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "新一代接收与编排工具",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-58b2708f2adcb70e",
+              "quote": "A newer wave of intake-and-orchestration tools improved the front end but left the underlying data layer untouched"
+            },
+            {
+              "source_id": "FISRC-3dee099b4ae445f1",
+              "quote": "A newer generation of intake and orchestration tools has improved the user experience at the front end, but leaves the data architecture and ERP integration challenges untouched."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-63236c15166b71e0",
+          "date": "2026-06-20",
+          "title": "Pivot 获4000万美元B轮融资，推企业级AI代理采购操作系统，解决遗留软件未修复的问题",
+          "amount": "$40m",
+          "source_refs": [
+            "SA-2f8d0246d0c91239"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-58b2708f2adcb70e",
+          "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
+          "title": "Pivot 获4000万美元B轮融资，推企业级AI代理采购操作系统，解决遗留软件未修复的问题",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-20T05:50:41.909Z",
+          "content_hash": "4c1272518f44f483",
+          "source_artifact_id": "SA-2f8d0246d0c91239",
+          "raw_id": "RAW-26f6ad0d5f13766f"
+        },
+        {
+          "source_id": "FISRC-3dee099b4ae445f1",
+          "source_url": "https://www.pivotapp.ai/blog/pivot-raises-40-million-series-b-to-replace-legacy-procurement-software-with-an-enterprise-ai-operating-system",
+          "title": "Pivot Raises $40 Million Series B",
+          "publisher": "pivotapp.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:33:05.588Z",
+          "content_hash": "ae4add4a68e4b2a9",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-32a4049a58ce6627",
+          "source_url": "https://www.pivotapp.ai/blog/the-ai-operating-system-for-procurement-just-raised-40-million-in-series-b",
+          "title": "The AI operating system for procurement just raised $40",
+          "publisher": "pivotapp.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:33:05.961Z",
+          "content_hash": "5fb58eb4b6fa4711",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-791aede6d445346e",
+          "source_url": "https://www.pivotapp.ai/blog/the-ai-we-didnt-build-matters-most",
+          "title": "The AI We Didn't Build Matters Most | Pivot",
+          "publisher": "pivotapp.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:33:06.368Z",
+          "content_hash": "aa2b61b79d931c9d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4db7c0e1c705be9a",
+          "source_url": "https://technews180.com/funding-news/ai-procurement-startup-pivot-closes-40m-series-b-round/",
+          "title": "AI Procurement Startup Pivot Closes $40M Series B Round",
+          "publisher": "technews180.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:33:13.300Z",
+          "content_hash": "55354df96e0a2b32",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c10a17ed8932e005",
+          "source_url": "https://www.pivotapp.ai/customer-stories/moniepoint",
+          "title": "How Africa's 2nd Fastest-Growing Fintech Halved Its Cycle Time With Pivot - Moniepoint x Pivot",
+          "publisher": "pivotapp.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:33:20.098Z",
+          "content_hash": "476fe753ab4b5ade",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:34:01.679Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:34:01.679Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-63236c15166b71e0",
+      "company_name": "Pivot",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Pivot\" \"$40m\" funding investors round",
+        "\"Pivot\" product customers case study",
+        "\"Pivot\" \"Pivot raises $40m Series B to pitch an agentic-AI procurement OS at the enterprises legacy software has not fixed\" competitors product use case",
+        "\"Pivot\" \"$40m\" investor quote why invested",
+        "\"Pivot\" \"$40m\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Pivot\" \"$40m\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pivot\" \"$40m\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pivot\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pivot\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pivot\" \"Pivot raises $40m Series B to pitch an agentic-AI procurement OS at the enterprises legacy software has not fixed\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pivot\" \"Pivot raises $40m Series B to pitch an agentic-AI procurement OS at the enterprises legacy software has not fixed\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pivot\" \"$40m\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pivot\" \"$40m\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pivot\" \"$40m\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pivot\" \"$40m\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:34:51.996Z"
+    },
+    {
+      "event_id": "EV-11b5192fc54c0aa0",
+      "company_name": "Union.ai",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Union.ai\" \"$10M\" funding investors round",
+        "\"Union.ai\" product customers case study",
+        "\"Union.ai\" \"Union.ai raises $10M to simplify ML workflow orchestration\" competitors product use case",
+        "\"Union.ai\" \"$10M\" investor quote why invested",
+        "\"Union.ai\" \"$10M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Union.ai\" \"$10M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Union.ai\" \"$10M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Union.ai\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Union.ai\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Union.ai\" \"Union.ai raises $10M to simplify ML workflow orchestration\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Union.ai\" \"Union.ai raises $10M to simplify ML workflow orchestration\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Union.ai\" \"$10M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Union.ai\" \"$10M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Union.ai\" \"$10M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Union.ai\" \"$10M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:34:51.996Z"
+    }
+  ]
+}

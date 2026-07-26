@@ -1,0 +1,1588 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-16",
+    "generated_at": "2026-07-26T15:12:43.309Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 3,
+      "auto_published": 2,
+      "blocked": 1,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-b97aa7ccb5e70984",
+      "triggered_by_event_id": "EV-f3bb064250dba2b2",
+      "as_of_date": "2026-06-16",
+      "company": {
+        "entity_id": "EN-15c785fe4bcb86f5",
+        "name": "Blitzy",
+        "full_name": "Blitzy",
+        "website": "https://blitzy.com",
+        "summary": "Blitzy 是一个自主企业软件开发平台，通过协调数千个AI智能体并行工作，自动完成大规模软件项目，包括自动化测试和质量验证，旨在帮助大型企业将数月的开发工作压缩至数天。",
+        "headquarters": "Cambridge, Massachusetts",
+        "founders": [
+          {
+            "name": "Brian Elliott",
+            "role": "Co-Founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2caf93b29d914f26",
+                "quote": "Brian Elliott, co-founder and CEO of Blitzy"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sid Pardeshi",
+            "role": "Co-Founder and CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2caf93b29d914f26",
+                "quote": "Sid Pardeshi (CTO)"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "80",
+          "observed_at": "2026-05-11",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74a0b8b6b080cbc0",
+              "quote": "an 80-person startup in Kendall Square"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2caf93b29d914f26",
+            "quote": "Cambridge, Massachusetts-based Blitzy"
+          },
+          {
+            "source_id": "FISRC-5f759c18f78e8746",
+            "quote": "Blitzy, the autonomous software development platform"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Growth round",
+        "amount": "$200 million",
+        "total_raised": "more than $204.4 million",
+        "announced_at": "2026-05-05",
+        "investors": [
+          {
+            "name": "Northzone",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2caf93b29d914f26",
+                "quote": "Northzone led its latest financing."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NFX",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2caf93b29d914f26",
+                "quote": "existing backers such as NFX, Link Ventures and Flybridge"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Link Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2caf93b29d914f26",
+                "quote": "existing backers such as NFX, Link Ventures and Flybridge"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Flybridge",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2caf93b29d914f26",
+                "quote": "existing backers such as NFX, Link Ventures and Flybridge"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5f759c18f78e8746",
+            "quote": "Blitzy, the autonomous software development platform, today announced a $200 million funding round at a $1.4 billion valuation."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Blitzy Platform",
+          "description": "一个自主企业软件开发平台，通过逆向工程构建企业代码库的动态知识图谱，并协调数千个AI智能体并行工作数天至数周，自动完成大规模软件项目，包括自动化测试和质量验证。",
+          "target_customers": "Global 2000大型企业，特别是受监管行业（如政府、金融服务和保险）",
+          "features": [
+            "逆向工程现有环境并构建动态知识图谱",
+            "协调数千个智能体并行工作",
+            "自动完成数月的软件开发工作",
+            "自动化测试和质量验证",
+            "理解1M-100M+行代码的大规模企业代码库"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2caf93b29d914f26",
+              "quote": "its platform autonomously completes months of software development, including automated testing and quality validation."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "QAD",
+          "industry": "制造业/软件",
+          "use_case": "将24个月的iOS到Android迁移压缩至6个月，解锁欧洲市场扩张",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-149ad7eb8c964fbb",
+              "quote": "QAD compressed a 24-month iOS to Android migration into 6 months, unlocking a European market expansion 3x faster than their original plan"
+            }
+          ]
+        },
+        {
+          "name": "Builders FirstSource",
+          "industry": "建筑产品供应",
+          "use_case": "120名工程师在Blitzy上使用AI原生工作流，软件开发速度提升3倍",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-149ad7eb8c964fbb",
+              "quote": "Builders FirstSource, the largest supplier of structural building products in the United States and a member of the Global 2000, accelerated software development velocity by 3x in the first three months. 120 of their engineers now work in AI-native workflows on Blitzy."
+            }
+          ]
+        },
+        {
+          "name": "一家财富100强客户",
+          "industry": "未披露",
+          "use_case": "逆向工程、记录和摄取3300万行大型机代码，Blitzy在3.5天内完成，而内部估计需要9个月和一支专职工程师团队",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-149ad7eb8c964fbb",
+              "quote": "A Fortune 100 customer used Blitzy to reverse engineer, document, and ingest 33 million lines of mainframe code. The internal estimate for that work was 9 months and a dedicated team of engineers. Blitzy completed it in 3.5 days."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Anysphere",
+          "product": "Cursor",
+          "scenario": "AI辅助编程工具，为开发者提供代码片段生成",
+          "target_customer": "个人开发者",
+          "funding_summary": "已融资34亿美元，最近估值超过290亿美元",
+          "core_difference": "Cursor是面向个人开发者的AI编程助手，生成代码片段；Blitzy是自主理解整个企业代码库并协调数千个智能体执行大规模软件项目的平台。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-de5c237e0f553a36",
+              "quote": "Unlike rivals focused on coding assistants or single-agent tools, Blitzy autonomously understands entire enterprise codebases and executes large-scale software projects across thousands of coordinated agents."
+            }
+          ]
+        },
+        {
+          "name": "GitHub",
+          "product": "GitHub Copilot",
+          "scenario": "IDE内代码补全和生成",
+          "target_customer": "个人开发者",
+          "funding_summary": "",
+          "core_difference": "GitHub Copilot是集成在IDE中的代码补全工具；Blitzy是自主协调数千个智能体、理解整个企业代码库并执行大规模项目的平台。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-de5c237e0f553a36",
+              "quote": "companies such as GitHub, through GitHub Copilot and Cognition with its Devin coding agent, are pushing aggressively into enterprise automation."
+            }
+          ]
+        },
+        {
+          "name": "Cognition",
+          "product": "Devin",
+          "scenario": "AI编码智能体，执行编程任务",
+          "target_customer": "开发团队",
+          "funding_summary": "",
+          "core_difference": "Devin是单一AI编码智能体工具；Blitzy协调数千个智能体并行工作，并基于对整个代码库的深度理解执行企业级项目。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-de5c237e0f553a36",
+              "quote": "Cognition with its Devin coding agent, are pushing aggressively into enterprise automation."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "SWE-Bench Pro得分",
+          "value": "66.5%",
+          "observed_at": "2026-05-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5f759c18f78e8746",
+              "quote": "the company achieved a record-breaking score of 66.5%, surpassing the latest releases from other major incumbents."
+            }
+          ]
+        },
+        {
+          "label": "平台已摄取的企业代码行数",
+          "value": "超过10亿行",
+          "observed_at": "2026-05-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-149ad7eb8c964fbb",
+              "quote": "The platform has ingested and understood more than one billion lines of enterprise code since September 2025."
+            }
+          ]
+        },
+        {
+          "label": "自主完成开发工作的比例",
+          "value": "超过80%",
+          "observed_at": "2026-05-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-de5c237e0f553a36",
+              "quote": "more than 80% of development work can be completed autonomously before engineering teams finalise the remaining portions."
+            }
+          ]
+        },
+        {
+          "label": "资本效率（每消耗1美元产生的ARR）",
+          "value": "2.91美元",
+          "observed_at": "2026-05-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-149ad7eb8c964fbb",
+              "quote": "Since January 2025, for every dollar we have burned, we have generated $2.91 in ARR."
+            }
+          ]
+        },
+        {
+          "label": "员工人数翻倍时间",
+          "value": "过去六个月",
+          "observed_at": "2026-05-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5f759c18f78e8746",
+              "quote": "Having more than doubled its headcount in the past six months"
+            }
+          ]
+        },
+        {
+          "label": "客户年度合同价值范围",
+          "value": "50万至1000万美元以上",
+          "observed_at": "2026-05-11",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74a0b8b6b080cbc0",
+              "quote": "anywhere from $500,000 to $10 million a year or more for coding projects"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Sanjot Malhi",
+          "quote": "Blitzy has created a truly paradigm-shifting product in one of the largest markets in the world: Autonomous AI Coding. They have meaningfully shifted outcomes for several Fortune 500 enterprises, and are well on their way to creating a category-defining platform.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-de5c237e0f553a36",
+              "quote": "Blitzy has created a truly paradigm-shifting product in one of the largest markets in the world: Autonomous AI Coding. They have meaningfully shifted outcomes for several Fortune 500 enterprises, and are well on their way to creating a category-defining platform."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Northzone",
+            "speaker": "Sanjot Malhi",
+            "speaker_role": "Partner at Northzone",
+            "rationale": "Northzone认为Blitzy在自主AI编码这一全球最大市场之一中创造了范式转变的产品，已为多家财富500强企业带来显著成果，并正在打造一个品类定义的平台。",
+            "quote": "Blitzy has created a truly paradigm-shifting product in one of the largest markets in the world: Autonomous AI Coding. They have meaningfully shifted outcomes for several Fortune 500 enterprises, and are well on their way to creating a category-defining platform.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-de5c237e0f553a36",
+                "quote": "Blitzy has created a truly paradigm-shifting product in one of the largest markets in the world: Autonomous AI Coding. They have meaningfully shifted outcomes for several Fortune 500 enterprises, and are well on their way to creating a category-defining platform."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：企业级自主软件开发的可行性取决于“深度环境理解+超大规模智能体编排”的融合，而非单一模型能力。Blitzy以14亿美元估值融资2亿美元，其估值支撑来自已验证的业务信号：平台已摄取超过10亿行企业代码，在SWE-Bench Pro上以66.5%的得分超越主要竞品，并被数十家Global 2000企业采用，客户年度合同价值高达1000万美元以上。资本效率指标（每消耗1美元产生2.91美元ARR）进一步表明其商业模式具备SaaS级别的毛利率，而非单纯的模型调用成本结构。然而，这些信号主要来自公司官方披露和有限客户案例，缺乏独立审计的营收数据，且企业软件销售周期长、合规门槛高，规模化速度存在不确定性。",
+        "validated_signals": [
+          "平台已摄取并理解超过10亿行企业代码（自2025年9月以来）",
+          "SWE-Bench Pro得分66.5%，超越主要竞品最新版本",
+          "被数十家Global 2000企业采用，覆盖10个行业",
+          "客户年度合同价值范围：50万至1000万美元以上",
+          "资本效率：每消耗1美元产生2.91美元ARR（2025年1月以来）",
+          "Builders FirstSource在三个月内实现3倍开发速度提升，120名工程师采用AI原生工作流"
+        ],
+        "risks": [
+          "公司未披露硬性营收数据，所有财务指标均来自创始人自述，缺乏独立验证，实际商业化进展可能低于宣称水平。",
+          "企业级软件销售周期长、采购流程复杂，从试点到全企业部署的转化速度和客单价提升存在不确定性。",
+          "GitHub Copilot、Devin、Cursor等竞品拥有更大的开发者生态和用户基数，可能在迭代中逐步增加企业级功能，侵蚀Blitzy的差异化优势。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI智能体与自主软件开发"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Blitzy Platform",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2caf93b29d914f26",
+              "quote": "its platform autonomously completes months of software development, including automated testing and quality validation."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Brian Elliott",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2caf93b29d914f26",
+              "quote": "Brian Elliott, co-founder and CEO of Blitzy"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sid Pardeshi",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2caf93b29d914f26",
+              "quote": "Sid Pardeshi (CTO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Northzone",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2caf93b29d914f26",
+              "quote": "Northzone led its latest financing."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NFX",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2caf93b29d914f26",
+              "quote": "existing backers such as NFX, Link Ventures and Flybridge"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Link Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2caf93b29d914f26",
+              "quote": "existing backers such as NFX, Link Ventures and Flybridge"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Flybridge",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2caf93b29d914f26",
+              "quote": "existing backers such as NFX, Link Ventures and Flybridge"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "QAD",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-149ad7eb8c964fbb",
+              "quote": "QAD compressed a 24-month iOS to Android migration into 6 months, unlocking a European market expansion 3x faster than their original plan"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Builders FirstSource",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-149ad7eb8c964fbb",
+              "quote": "Builders FirstSource, the largest supplier of structural building products in the United States and a member of the Global 2000, accelerated software development velocity by 3x in the first three months. 120 of their engineers now work in AI-native workflows on Blitzy."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家财富100强客户",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-149ad7eb8c964fbb",
+              "quote": "A Fortune 100 customer used Blitzy to reverse engineer, document, and ingest 33 million lines of mainframe code. The internal estimate for that work was 9 months and a dedicated team of engineers. Blitzy completed it in 3.5 days."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anysphere",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-de5c237e0f553a36",
+              "quote": "Unlike rivals focused on coding assistants or single-agent tools, Blitzy autonomously understands entire enterprise codebases and executes large-scale software projects across thousands of coordinated agents."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "GitHub",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-de5c237e0f553a36",
+              "quote": "companies such as GitHub, through GitHub Copilot and Cognition with its Devin coding agent, are pushing aggressively into enterprise automation."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Cognition",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-de5c237e0f553a36",
+              "quote": "Cognition with its Devin coding agent, are pushing aggressively into enterprise automation."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-f3bb064250dba2b2",
+          "date": "2026-06-16",
+          "title": "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发",
+          "amount": "$200 million",
+          "source_refs": [
+            "SA-9a0db108275b7cd2"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2caf93b29d914f26",
+          "source_url": "https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/",
+          "title": "Blitzy以14亿美元估值融资2亿美元，用于自主软件开发",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-16T03:08:04.882Z",
+          "content_hash": "9bcac210292cba82",
+          "source_artifact_id": "SA-9a0db108275b7cd2",
+          "raw_id": "RAW-6fd47bbde94421ca"
+        },
+        {
+          "source_id": "FISRC-de5c237e0f553a36",
+          "source_url": "https://techfundingnews.com/ex-nvidia-architects-ai-coding-startup-blitzy-raises-200m-led-by-northzone-at-1-4b-valuation/",
+          "title": "Ex-Nvidia architect’s AI coding startup Blitzy raises $200M led by Northzone at $1.4B valuation — TFN",
+          "publisher": "techfundingnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:11:01.639Z",
+          "content_hash": "065f3fc939e0d0f0",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-149ad7eb8c964fbb",
+          "source_url": "https://blitzy.com/blog/taking-the-long-and-less-traveled-road-is-the-only-path-to-autonomy",
+          "title": "Blitzy Raises $200M: The Road to Enterprise AI Autonomy",
+          "publisher": "blitzy.com",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T15:11:07.998Z",
+          "content_hash": "28071c7466ddb9bd",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5f759c18f78e8746",
+          "source_url": "https://www.businesswire.com/news/home/20260505342338/en/Blitzy-Raises-%24200-Million-at-%241.4-Billion-Valuation-to-Advance-Autonomous-Software-Development-for-the-Enterprise",
+          "title": "Blitzy Raises $200 Million at $1.4 Billion Valuation to Advance Autonomous Software Development for the Enterprise",
+          "publisher": "businesswire.com",
+          "source_class": "secondary",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T15:11:38.011Z",
+          "content_hash": "fae3a89cadff8d5b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-74a0b8b6b080cbc0",
+          "source_url": "https://www.bostonglobe.com/2026/05/05/business/blitzy-ai-software-cambridge-unicorn-startup/",
+          "title": "Cambridge AI unicorn Blitzy has raised $200 million",
+          "publisher": "bostonglobe.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:11:40.968Z",
+          "content_hash": "d183692947d2a822",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:12:43.254Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:12:43.254Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-6b09bb9cfd443696",
+      "triggered_by_event_id": "EV-e3382d1c1d7db751",
+      "as_of_date": "2026-06-16",
+      "company": {
+        "entity_id": "EN-ee1e31ffef7dbe64",
+        "name": "Sarvam",
+        "full_name": "Sarvam",
+        "website": "sarvam.ai",
+        "summary": "Sarvam是印度全栈主权AI公司，构建覆盖模型训练与推理基础设施、前沿模型研究以及面向企业、开发者和政府的AI产品，重点服务于银行、保险、政府科技和国防等垂直领域。",
+        "headquarters": "Bengaluru",
+        "founders": [
+          {
+            "name": "Vivek Raghavan",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb156fd01909fe18",
+                "quote": "The startup was founded by Vivek Raghavan and Pratyush Kumar"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pratyush Kumar",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb156fd01909fe18",
+                "quote": "The startup was founded by Vivek Raghavan and Pratyush Kumar"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eb156fd01909fe18",
+            "quote": "The Bengaluru-based company is now India’s newest AI unicorn"
+          },
+          {
+            "source_id": "FISRC-4f01756aafea2905",
+            "quote": "Sarvam is India's full-stack sovereign AI company, building AI where the value loops of data, models, and agents remain within a country or company."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series B",
+        "amount": "$234 million",
+        "total_raised": "$275 million",
+        "announced_at": "2026-06-15",
+        "investors": [
+          {
+            "name": "HCLTech",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb156fd01909fe18",
+                "quote": "$150 million of that money will come from HCLTech, the IT subsidiary of Indian conglomerate HCL Group and lead strategic investor in the round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb156fd01909fe18",
+                "quote": "Bessemer Venture Partners also participated alongside existing backers Khosla Ventures and Peak XV Partners."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Khosla Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb156fd01909fe18",
+                "quote": "existing backers Khosla Ventures and Peak XV Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Peak XV Partners",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb156fd01909fe18",
+                "quote": "existing backers Khosla Ventures and Peak XV Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lightspeed",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-53dc2175b7e46ad0",
+                "quote": "Sarvam was last valued at $110 million in 2023, when it raised capital from Peak XV, Khosla Ventures and Lightspeed."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Avvanti Advisors",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8df989ade62ab0ef",
+                "quote": "Sarvam's previous valuation of about $196 million in 2025, when it raised $228,000 from Avvanti Advisors."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-eb156fd01909fe18",
+            "quote": "Sarvam has raised $234 million at a $1.5 billion valuation"
+          },
+          {
+            "source_id": "FISRC-53dc2175b7e46ad0",
+            "quote": "Sarvam AI has raised $234 million in an ongoing funding round led by HCLTech"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Sarvam-105B",
+          "description": "1050亿参数推理模型，在知识、推理和智能体基准测试中匹配或超越更大的推理模型。",
+          "target_customers": "企业、开发者、政府",
+          "features": [
+            "支持22种印度语言",
+            "在知识、推理和智能体基准测试中匹配或超越更大的推理模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f01756aafea2905",
+              "quote": "Sarvam 105B matches or outperforms larger reasoning models on knowledge, reasoning, and agentic benchmarks"
+            },
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Sarvam-30B and Sarvam-105B— supporting 22 Indian languages."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Sarvam-30B",
+          "description": "300亿参数模型，针对边缘部署优化，可在消费级硬件上运行。",
+          "target_customers": "企业、开发者",
+          "features": [
+            "支持22种印度语言",
+            "针对边缘部署优化，可在消费级硬件上运行"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f01756aafea2905",
+              "quote": "Sarvam 30B is optimised for the edge, running on consumer hardware."
+            },
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Sarvam-30B and Sarvam-105B— supporting 22 Indian languages."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Sarvam Vision",
+          "description": "针对手写和印度语言记录构建的视觉模型，用于数字化保险表格和遗留土地记录等文档。",
+          "target_customers": "保险、政府",
+          "features": [
+            "处理手写和印度语言记录",
+            "已用于数字化超过3500万页文档"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f01756aafea2905",
+              "quote": "Sarvam Vision, built for handwriting and Indian-language records, is being used to digitise over 35 million pages from insurance forms to legacy land records."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "一家领先保险公司",
+          "industry": "保险",
+          "use_case": "全国性语音活动支持4500万保单持有人的低成本保单续保。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "a nationwide voice campaign for a leading insurer helped support policy renewals for 45 million policyholders."
+            }
+          ]
+        },
+        {
+          "name": "一家大型金融科技公司",
+          "industry": "金融科技",
+          "use_case": "使用智能体AI平台为超过35万人的销售团队提供销售赋能。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "a large fintech company is using its agentic AI platform to support a sales force of more than 350,000 people."
+            }
+          ]
+        },
+        {
+          "name": "SBI Life",
+          "industry": "保险",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Its customers include enterprises such as SBI Life, Life Insurance Corporation, IDFC First Bank, Tata Capital and Cred."
+            }
+          ]
+        },
+        {
+          "name": "IDFC First Bank",
+          "industry": "银行",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Its customers include enterprises such as SBI Life, Life Insurance Corporation, IDFC First Bank, Tata Capital and Cred."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "ChatGPT",
+          "scenario": "前沿AI模型开发与消费级AI应用",
+          "target_customer": "全球开发者、企业和消费者",
+          "funding_summary": "已筹集数千亿美元",
+          "core_difference": "Sarvam专注于印度语言和主权用例的全栈AI，而OpenAI面向全球市场；Sarvam的融资规模远小于OpenAI。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "While Sarvam’s $300 million round is the largest for an Indian foundational model company, it pales in comparison with the hundreds of billions of dollars that firms such as ChatGPT maker OpenAI and Anthropic have raised."
+            }
+          ]
+        },
+        {
+          "name": "Anthropic",
+          "product": "Claude (Fable 5, Mythos 5)",
+          "scenario": "前沿AI模型开发，受美国出口管制限制",
+          "target_customer": "全球开发者、企业",
+          "funding_summary": "已筹集数百亿美元",
+          "core_difference": "Sarvam是印度本土主权AI公司，模型在印度从头训练，不受美国出口管制影响；Anthropic受美国政府命令限制外国国民使用其最新模型。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "Anthropic disabled access to its latest models , Fable 5 and Mythos 5, after the U.S. government ordered the company to suspend their use by any foreign national, citing national security concerns."
+            },
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "While Sarvam’s $300 million round is the largest for an Indian foundational model company, it pales in comparison with the hundreds of billions of dollars that firms such as ChatGPT maker OpenAI and Anthropic have raised."
+            }
+          ]
+        },
+        {
+          "name": "Krutrim",
+          "product": "",
+          "scenario": "印度本土AI基础模型开发",
+          "target_customer": "印度市场",
+          "funding_summary": "",
+          "core_difference": "Sarvam和Krutrim是印度仅有的两家AI独角兽初创公司，均致力于构建印度本土AI能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c0d48a8fc598fade",
+              "quote": "Sarvam joins Bhavish Aggarwal-founded Krutrim as only India's AI startups to achieve unicorn status."
+            }
+          ]
+        },
+        {
+          "name": "Neysa",
+          "product": "云基础设施",
+          "scenario": "AI云基础设施服务",
+          "target_customer": "企业",
+          "funding_summary": "完成12亿美元交易",
+          "core_difference": "Sarvam的融资是印度AI领域第二大融资，仅次于云基础设施公司Neysa的12亿美元交易。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Sarvam’s round is the second largest in India’s artificial intelligence space after cloud infrastructure company Neysa closed a $1.2 billion transaction led by US alternative asset manager Blackstone."
+            }
+          ]
+        },
+        {
+          "name": "Emergent",
+          "product": "vibe-coding平台",
+          "scenario": "AI辅助编码",
+          "target_customer": "开发者",
+          "funding_summary": "即将完成2-2.5亿美元融资",
+          "core_difference": "Sarvam专注于全栈主权AI，而Emergent专注于vibe-coding领域。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Vibe-coding startup Emergent is also closing in on a $200-250 million funding round led by private equity firm Creaegis."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "每日对话交互量",
+          "value": "超过200万次",
+          "observed_at": "2026-06-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "its conversational AI platform now handles more than 2 million interactions a day"
+            }
+          ]
+        },
+        {
+          "label": "每日API调用量",
+          "value": "约1000万次",
+          "observed_at": "2026-06-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "its inference platform processes roughly 10 million API calls daily"
+            }
+          ]
+        },
+        {
+          "label": "每月音频转录量",
+          "value": "超过50万小时",
+          "observed_at": "2026-06-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "Its speech models transcribe more than 500,000 hours of audio each month"
+            }
+          ]
+        },
+        {
+          "label": "文档数字化页数",
+          "value": "超过3500万页",
+          "observed_at": "2026-06-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "its document AI systems are being used to digitize more than 35 million pages of records"
+            }
+          ]
+        },
+        {
+          "label": "农民数据收集覆盖人数",
+          "value": "1700万农民",
+          "observed_at": "2026-06-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "its multilingual voice agents have collected data from 17 million farmers"
+            }
+          ]
+        },
+        {
+          "label": "保单续保覆盖人数",
+          "value": "4500万保单持有人",
+          "observed_at": "2026-06-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "a nationwide voice campaign for a leading insurer helped support policy renewals for 45 million policyholders"
+            }
+          ]
+        },
+        {
+          "label": "销售团队赋能规模",
+          "value": "超过35万人",
+          "observed_at": "2026-06-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "a large fintech company is using its agentic AI platform to support a sales force of more than 350,000 people"
+            }
+          ]
+        },
+        {
+          "label": "2026财年收入",
+          "value": "45亿卢比",
+          "observed_at": "2026-06-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Sarvam recorded a revenue of Rs 45 crore during fiscal 2026"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Vivek Raghavan",
+          "quote": "Our ambition is to diffuse this technology widely in India, creating significant value across sectors for citizens, small businesses, enterprises, and state and central governments.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "Our ambition is to diffuse this technology widely in India, creating significant value across sectors for citizens, small businesses, enterprises, and state and central governments"
+            }
+          ]
+        },
+        {
+          "speaker": "Pratyush Kumar",
+          "quote": "We are clear that research-led innovation to create AI that works at India's scale is a very large opportunity. That means models that understand our voices, read our documents, and serve intelligence at a cost every enterprise and government can afford.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f01756aafea2905",
+              "quote": "We are clear that research-led innovation to create AI that works at India's scale is a very large opportunity. That means models that understand our voices, read our documents, and serve intelligence at a cost every enterprise and government can afford."
+            }
+          ]
+        },
+        {
+          "speaker": "Vivek Raghavan",
+          "quote": "If you want to be completely Atmanirbhar in AI, we need to play across all these layers. This funding enables us to accelerate across them and build the full stack needed to be self-reliant in AI.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "If you want to be completely Atmanirbhar in AI, we need to play across all these layers. This funding enables us to accelerate across them and build the full stack needed to be self-reliant in AI"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是印度主权AI能力的自主可控需求，这一需求因美国对Anthropic模型的出口管制而急剧升温。本轮融资以15亿美元估值完成，验证的信号包括：Sarvam已发布从零训练的105B和30B参数模型，支持22种印度语言；对话平台日交互量超200万次，推理平台日API调用量约1000万次；已获得印度农业与农民福利部、大型保险公司和金融科技公司等政府和企业的规模化部署。HCLTech作为印度上市IT服务巨头以1.5亿美元领投并获取10.46%股权，表明产业资本正在将AI主权视为对冲其传统IT服务业务被智能体AI侵蚀的战略手段。但Sarvam的融资规模与OpenAI、Anthropic等全球竞争对手相比仍有数量级差距，其2026财年收入仅45亿卢比，商业化仍处于早期阶段。",
+        "validated_signals": [
+          "已发布从零训练的105B和30B参数基础模型，支持22种印度语言",
+          "对话平台日交互量超200万次，推理平台日API调用量约1000万次",
+          "已获得印度农业与农民福利部（1700万农民数据收集）、大型保险公司（4500万保单续保）和金融科技公司（35万销售团队赋能）的规模化部署",
+          "美国对Anthropic模型的出口管制为主权AI创造了紧迫的政策窗口"
+        ],
+        "risks": [
+          "Sarvam的融资规模与OpenAI、Anthropic等全球竞争对手相比仍有数量级差距，在开发前沿能力方面面临资本约束",
+          "2026财年收入仅45亿卢比，商业化仍处于早期阶段，大规模营收转化尚未验证"
+        ],
+        "related_direction_id": "",
+        "sector": "主权AI/基础模型"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Sarvam-105B",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f01756aafea2905",
+              "quote": "Sarvam 105B matches or outperforms larger reasoning models on knowledge, reasoning, and agentic benchmarks"
+            },
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Sarvam-30B and Sarvam-105B— supporting 22 Indian languages."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Sarvam-30B",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f01756aafea2905",
+              "quote": "Sarvam 30B is optimised for the edge, running on consumer hardware."
+            },
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Sarvam-30B and Sarvam-105B— supporting 22 Indian languages."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Sarvam Vision",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f01756aafea2905",
+              "quote": "Sarvam Vision, built for handwriting and Indian-language records, is being used to digitise over 35 million pages from insurance forms to legacy land records."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vivek Raghavan",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "The startup was founded by Vivek Raghavan and Pratyush Kumar"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Pratyush Kumar",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "The startup was founded by Vivek Raghavan and Pratyush Kumar"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "HCLTech",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "$150 million of that money will come from HCLTech, the IT subsidiary of Indian conglomerate HCL Group and lead strategic investor in the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bessemer Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "Bessemer Venture Partners also participated alongside existing backers Khosla Ventures and Peak XV Partners."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Khosla Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "existing backers Khosla Ventures and Peak XV Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Peak XV Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "existing backers Khosla Ventures and Peak XV Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Sarvam was last valued at $110 million in 2023, when it raised capital from Peak XV, Khosla Ventures and Lightspeed."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Avvanti Advisors",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8df989ade62ab0ef",
+              "quote": "Sarvam's previous valuation of about $196 million in 2025, when it raised $228,000 from Avvanti Advisors."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家领先保险公司",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "a nationwide voice campaign for a leading insurer helped support policy renewals for 45 million policyholders."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家大型金融科技公司",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "a large fintech company is using its agentic AI platform to support a sales force of more than 350,000 people."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "SBI Life",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Its customers include enterprises such as SBI Life, Life Insurance Corporation, IDFC First Bank, Tata Capital and Cred."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "IDFC First Bank",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Its customers include enterprises such as SBI Life, Life Insurance Corporation, IDFC First Bank, Tata Capital and Cred."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "While Sarvam’s $300 million round is the largest for an Indian foundational model company, it pales in comparison with the hundreds of billions of dollars that firms such as ChatGPT maker OpenAI and Anthropic have raised."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb156fd01909fe18",
+              "quote": "Anthropic disabled access to its latest models , Fable 5 and Mythos 5, after the U.S. government ordered the company to suspend their use by any foreign national, citing national security concerns."
+            },
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "While Sarvam’s $300 million round is the largest for an Indian foundational model company, it pales in comparison with the hundreds of billions of dollars that firms such as ChatGPT maker OpenAI and Anthropic have raised."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Krutrim",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c0d48a8fc598fade",
+              "quote": "Sarvam joins Bhavish Aggarwal-founded Krutrim as only India's AI startups to achieve unicorn status."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Neysa",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Sarvam’s round is the second largest in India’s artificial intelligence space after cloud infrastructure company Neysa closed a $1.2 billion transaction led by US alternative asset manager Blackstone."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Emergent",
+          "canonical_entity_id": "EN-026c3bd4be5b91f3",
+          "canonical_name": "Emergent",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-53dc2175b7e46ad0",
+              "quote": "Vibe-coding startup Emergent is also closing in on a $200-250 million funding round led by private equity firm Creaegis."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-e3382d1c1d7db751",
+          "date": "2026-06-15",
+          "title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
+          "amount": "$234 million",
+          "source_refs": [
+            "SA-d6a4c1673a691238"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-eb156fd01909fe18",
+          "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
+          "title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-16T03:08:04.848Z",
+          "content_hash": "a56910704adc32b1",
+          "source_artifact_id": "SA-d6a4c1673a691238",
+          "raw_id": "RAW-ca957e1d6fe3d8ec"
+        },
+        {
+          "source_id": "FISRC-53dc2175b7e46ad0",
+          "source_url": "https://economictimes.indiatimes.com/tech/funding/sarvam-raises-234-million-led-by-hcltech-at-1-5-billion-valuation/articleshow/131745905.cms",
+          "title": "Sarvam raises $234 million led by HCLTech at $1.5 billion valuation - The Economic Times",
+          "publisher": "economictimes.indiatimes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:30:30.463Z",
+          "content_hash": "b5373ac2789f188b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8df989ade62ab0ef",
+          "source_url": "http://uniindia.com/sarvam-ai-bags-unicorn-status-raises-usd-234-million-hcltech-to-acquire-10-46-pc-stake/business-economy/news/3877998.html",
+          "title": "Sarvam AI bags unicorn status, raises USD 234 million; HCLTech to acquire 10.46 pc stake",
+          "publisher": "uniindia.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:30:41.031Z",
+          "content_hash": "5017fce99239d59d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4f01756aafea2905",
+          "source_url": "https://www.hcltech.com/press-releases/sarvam-raises-234-million-first-close-300-million-series-b-15-billion-valuation",
+          "title": "Sarvam raises $234 million in first close of $300 million Series B at $1.5 ...",
+          "publisher": "hcltech.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:31:30.678Z",
+          "content_hash": "7b097b12ec8190cb",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c0d48a8fc598fade",
+          "source_url": "https://www.rediff.com/business/report/sarvam-ai-secures-234m-series-b-becomes-unicorn-hcltech-invests-in-indias-sovereign-ai-future/20260616.htm",
+          "title": "Sarvam AI Secures $234M Series B, Becomes Unicorn; HCLTech Invests in India's Sovereign AI Future - Rediff.com Business",
+          "publisher": "rediff.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:31:40.978Z",
+          "content_hash": "8e38d6a8bb9694d5",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:32:34.271Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:32:34.271Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-e3382d1c1d7db751",
+      "company_name": "Sarvam",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Sarvam\" \"$234 million\" funding investors round",
+        "\"Sarvam\" product customers case study",
+        "\"Sarvam\" \"Sarvam完成2.34亿美元融资，成印度最新AI独角兽\" competitors product use case",
+        "\"Sarvam\" \"$234 million\" investor quote why invested",
+        "\"Sarvam\" \"$234 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Sarvam\" \"$234 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sarvam\" \"$234 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sarvam\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sarvam\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sarvam\" \"Sarvam完成2.34亿美元融资，成印度最新AI独角兽\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sarvam\" \"Sarvam完成2.34亿美元融资，成印度最新AI独角兽\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sarvam\" \"$234 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sarvam\" \"$234 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sarvam\" \"$234 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sarvam\" \"$234 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:32:54.132Z"
+    },
+    {
+      "event_id": "EV-8be4676475a8d465",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-26T15:12:43.300Z"
+    },
+    {
+      "event_id": "EV-f3bb064250dba2b2",
+      "company_name": "Blitzy",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Blitzy\" \"$200 million\" funding investors round",
+        "\"Blitzy\" product customers case study",
+        "\"Blitzy\" \"Blitzy Raises $200M At $1.4B Valuation For Autonomous Software Development\" competitors product use case",
+        "\"Blitzy\" \"$200 million\" investor quote why invested",
+        "\"Blitzy\" \"$200 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Blitzy\" \"$200 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Blitzy\" \"$200 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Blitzy\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Blitzy\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Blitzy\" \"Blitzy Raises $200M At $1.4B Valuation For Autonomous Software Development\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Blitzy\" \"Blitzy Raises $200M At $1.4B Valuation For Autonomous Software Development\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Blitzy\" \"$200 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Blitzy\" \"$200 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Blitzy\" \"$200 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Blitzy\" \"$200 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:12:43.300Z"
+    }
+  ]
+}

@@ -1,0 +1,595 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-05",
+    "generated_at": "2026-07-26T15:09:21.522Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 1,
+      "auto_published": 1,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-6c2faabba03d416d",
+      "triggered_by_event_id": "EV-6ae3594aadfcd3d8",
+      "as_of_date": "2026-06-05",
+      "company": {
+        "entity_id": "EN-58b507456c52c9b3",
+        "name": "Archestra",
+        "full_name": "Archestra Inc.",
+        "website": "https://archestra.ai",
+        "summary": "Archestra 是一家总部位于英国的初创公司，其开源平台在 AI 智能体与企业敏感数据之间充当中介层，提供确定性护栏、治理和可观测性，使企业 AI 团队能在数天内将智能体接入内部数据，同时避免数据泄露和提示注入风险。",
+        "headquarters": "英国伦敦",
+        "founders": [
+          {
+            "name": "Matvey Kukuy",
+            "role": "首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2226010f84adae92",
+                "quote": "Chief Executive Matvey Kukuy"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "7人",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-45598d3580e32e1c",
+              "quote": "The startup is a seven-person team"
+            },
+            {
+              "source_id": "FISRC-08f2020b7eca8380",
+              "quote": "The seven-strong team"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2226010f84adae92",
+            "quote": "Archestra Inc. , a U.K.-based startup whose open-source platform brokers access between artificial intelligence agents and sensitive enterprise data"
+          },
+          {
+            "source_id": "FISRC-50130a45d72291a2",
+            "quote": "Archestra is a horizontal platform that lets in-house AI teams open up data access to business users without the usual nightmare scenarios."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "1000万美元",
+        "total_raised": "1350万美元",
+        "announced_at": "2026-06-02",
+        "investors": [
+          {
+            "name": "20VC",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2226010f84adae92",
+                "quote": "The seed round was led by 20VC"
+              },
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "we've raised a $10 million Seed round, led by 20VC"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "20 Product",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2226010f84adae92",
+                "quote": "Other participants include 20 Product"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Concept Ventures",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Zero Prime Ventures",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Celero Ventures",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Aloniq",
+            "role": "既有投资方（种子前轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2226010f84adae92",
+            "quote": "it has raised $10 million in new funding"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Archestra 平台",
+          "description": "一个开源、自托管的控制平面，作为 AI 智能体与企业数据之间的中间层，提供身份与策略检查、数据访问代理、审计日志、确定性护栏、成本优化和可观测性。支持 Claude、ChatGPT、Gemini 及开源模型，连接器覆盖 Jira、Confluence、GitHub、Notion、SharePoint、Google Drive 和 Salesforce。",
+          "target_customers": "拥有内部 AI 团队、需要将 AI 智能体安全接入敏感企业数据的大型企业，尤其是法律、采购、管理和运营部门。",
+          "features": [
+            "确定性护栏防止数据泄露",
+            "基于 RBAC 和凭证隔离的治理",
+            "完整的审计追踪",
+            "成本优化层，可将推理账单削减高达 96%",
+            "内置 RAG，含分块、嵌入、混合搜索和重排序",
+            "私有 MCP 注册表，可管理、版本化和回滚 MCP 服务器",
+            "支持 OpenTelemetry 追踪和 Prometheus 指标导出",
+            "自托管于 Kubernetes，提供 Helm chart 和 Terraform provider"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "Archestra acts as a middle layer between the agent and the data. The agent calls Archestra, which checks identity and policy, brokers the actual data access and logs the result."
+            },
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "The guardrails are pitched as protection against the combination of access to private data, exposure to untrusted content and the ability to communicate externally"
+            },
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "A cost-optimization layer tracks spending per team, agent or organization and can route simpler queries to cheaper models, which Archestra claims can cut inference bills by as much as 96%."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "未披露",
+          "industry": "财富500强企业",
+          "use_case": "在法务、采购、管理和运营等场景中，将 AI 智能体接入企业内部数据，实现安全的生产级部署。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "The platform is in production at four Fortune 500 companies, where agents are working across legal, procurement, management and operations."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "GitHub 星标数",
+          "value": "超过3700",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "The open-source core has drawn more than 3,700 stars"
+            }
+          ]
+        },
+        {
+          "label": "GitHub 贡献者数",
+          "value": "57",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "57 contributors on GitHub"
+            }
+          ]
+        },
+        {
+          "label": "生产环境部署的财富500强客户数",
+          "value": "4",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "The platform is in production at four Fortune 500 companies"
+            }
+          ]
+        },
+        {
+          "label": "第95百分位延迟",
+          "value": "45毫秒",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "95th-percentile latency comes in at 45 milliseconds"
+            }
+          ]
+        },
+        {
+          "label": "公开 MCP 目录中已评估的服务器数量",
+          "value": "超过900",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "a public catalog of more than 900 evaluated servers"
+            }
+          ]
+        },
+        {
+          "label": "社区成员数",
+          "value": "超过1000",
+          "observed_at": "2026-06-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "1,000+ community members"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Harry Stebbings",
+          "quote": "Founders fail mostly for two reasons at seed. Either they quit because they lack the grit. Or they lack the ability to build a product. Here we have psychopaths who will not quit. Plus, they are top 0.1% engineers.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Founders fail mostly for two reasons at seed. Either they quit because they lack the grit. Or they lack the ability to build a product. Here we have psychopaths who will not quit. Plus, they are top 0.1% engineers."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "20VC",
+            "speaker": "Harry Stebbings",
+            "speaker_role": "创始人",
+            "rationale": "20VC 认为 Archestra 的创始人具备极强的韧性和顶尖的工程能力，这是种子轮创始人成功的关键要素。",
+            "quote": "Founders fail mostly for two reasons at seed. Either they quit because they lack the grit. Or they lack the ability to build a product. Here we have psychopaths who will not quit. Plus, they are top 0.1% engineers.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-50130a45d72291a2",
+                "quote": "Founders fail mostly for two reasons at seed. Either they quit because they lack the grit. Or they lack the ability to build a product. Here we have psychopaths who will not quit. Plus, they are top 0.1% engineers."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：企业从 AI 智能体实验转向生产级部署时，对模型无关、独立于 LLM 提供商的治理与安全中间层的刚性需求。本轮融资所依赖的已验证信号包括：已有 4 家财富 500 强公司在生产环境中使用该平台，开源社区获得超过 3700 个 GitHub 星标和 57 名贡献者，以及种子前轮投资者全部跟投。这些信号表明早期企业客户和开发者社区对产品价值已形成初步验证，但判断的证据边界仍局限于早期采用者，尚未在大规模、多行业的严苛生产环境中得到广泛证实。",
+        "validated_signals": [
+          "4 家财富 500 强公司已在生产环境中使用 Archestra 平台连接 AI 智能体与真实企业数据",
+          "开源核心在 GitHub 上获得超过 3700 个星标和 57 名贡献者",
+          "种子前轮投资者 Concept Ventures、Zero Prime Ventures、Celero Ventures 和 Aloniq 全部参与本轮跟投"
+        ],
+        "risks": [
+          "团队仅 7 人，在竞争激烈的企业软件市场中，同时推进工程、开源生态建设和市场拓展面临资源约束",
+          "财富 500 强客户数量有限，产品在大规模、多行业生产环境中的安全性和稳定性尚未得到广泛验证"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 智能体安全与治理基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Archestra 平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "Archestra acts as a middle layer between the agent and the data. The agent calls Archestra, which checks identity and policy, brokers the actual data access and logs the result."
+            },
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "The guardrails are pitched as protection against the combination of access to private data, exposure to untrusted content and the ability to communicate externally"
+            },
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "A cost-optimization layer tracks spending per team, agent or organization and can route simpler queries to cheaper models, which Archestra claims can cut inference bills by as much as 96%."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Matvey Kukuy",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "Chief Executive Matvey Kukuy"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "20VC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "The seed round was led by 20VC"
+            },
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "we've raised a $10 million Seed round, led by 20VC"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "20 Product",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "Other participants include 20 Product"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Concept Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Zero Prime Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Celero Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Aloniq",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50130a45d72291a2",
+              "quote": "Our pre-seed investors — Concept Ventures , Zero Prime Ventures , Celero Ventures , and Aloniq — came back in."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "未披露",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2226010f84adae92",
+              "quote": "The platform is in production at four Fortune 500 companies, where agents are working across legal, procurement, management and operations."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-6ae3594aadfcd3d8",
+          "date": "2026-06-05",
+          "title": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
+          "amount": "$10M",
+          "source_refs": [
+            "SA-ddb6754de5b2017d",
+            "SA-2e8806ca442bbcfe"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2226010f84adae92",
+          "source_url": "https://siliconangle.com/2026/06/02/archestra-raises-10m-broker-ai-agent-access-corporate-data/",
+          "title": "Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-05T00:46:23.081Z",
+          "content_hash": "37249690c82d8e0a",
+          "source_artifact_id": "SA-ddb6754de5b2017d",
+          "raw_id": "RAW-3965fef66cfc3e0b"
+        },
+        {
+          "source_id": "FISRC-50130a45d72291a2",
+          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+          "title": "Archestra.AI 宣布获得 1000 万美元种子轮融资 🎉",
+          "publisher": "Archestra",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-25T10:00:00.000Z",
+          "content_hash": "57d9c53efb1800356f0ec4bea47160a857f100038380da4fd7a618e3f35fb7f0",
+          "source_artifact_id": "SA-2e8806ca442bbcfe",
+          "raw_id": "RAW-9b477c84b2f038ba"
+        },
+        {
+          "source_id": "FISRC-45598d3580e32e1c",
+          "source_url": "https://app.dealroom.co/news/note/archestra-ai-raises-10m-seed-led-by-20vc",
+          "title": "Archestra.AI raises $10M seed led by 20VC | Dealroom.co",
+          "publisher": "app.dealroom.co",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:22:49.079Z",
+          "content_hash": "02fa7c3ba3fdac10",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-08f2020b7eca8380",
+          "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
+          "title": "Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu",
+          "publisher": "tech.eu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:22:58.451Z",
+          "content_hash": "077d0abf0984e38b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:24:18.974Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:24:18.974Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-6ae3594aadfcd3d8",
+      "company_name": "Archestra",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Archestra\" \"$10M\" funding investors round",
+        "\"Archestra\" product customers case study",
+        "\"Archestra\" \"Archestra raises $10M to broker AI agent access to corporate data\" competitors product use case",
+        "\"Archestra\" \"$10M\" investor quote why invested",
+        "\"Archestra\" \"$10M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Archestra\" \"$10M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Archestra\" \"$10M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Archestra\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Archestra\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Archestra\" \"Archestra raises $10M to broker AI agent access to corporate data\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Archestra\" \"Archestra raises $10M to broker AI agent access to corporate data\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Archestra\" \"$10M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Archestra\" \"$10M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Archestra\" \"$10M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Archestra\" \"$10M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:24:19.017Z"
+    }
+  ]
+}

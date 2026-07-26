@@ -1,0 +1,1256 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-23",
+    "generated_at": "2026-07-26T15:12:37.989Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 2,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-0df92c1aa4099081",
+      "triggered_by_event_id": "EV-232ab5bcbaf6552d",
+      "as_of_date": "2026-06-23",
+      "company": {
+        "entity_id": "EN-c945929c3683ffb0",
+        "name": "ContraVault AI",
+        "full_name": "ContraVault AI",
+        "website": "http://www.contravault.com",
+        "summary": "ContraVault AI 是一家采购智能与投标管理平台，专为基础设施、建筑、能源、电力、国防和航空航天公司打造，利用AI帮助企业在招标、RFP、合规检查、风险评估和投标提交等环节实现更快、更智能的决策。",
+        "headquarters": "Bengaluru",
+        "founders": [
+          {
+            "name": "Sayan Sen",
+            "role": "Co-Founder & CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bfa3e21427fd157f",
+                "quote": "Founded in 2024 by Sayan Sen , Isha Juneja and Tanmay Juneja"
+              },
+              {
+                "source_id": "FISRC-bfa3e21427fd157f",
+                "quote": "Sayan Sen, Co-Founder & CEO, ContraVault AI"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Isha Juneja",
+            "role": "Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-78278ca61a2d245e",
+                "quote": "Founded in 2024 by Sayan Sen, Isha Juneja, and Tanmay Juneja"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tanmay Juneja",
+            "role": "Co-Founder & CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-78278ca61a2d245e",
+                "quote": "Founded in 2024 by Sayan Sen, Isha Juneja, and Tanmay Juneja"
+              },
+              {
+                "source_id": "FISRC-e10af8298e0631da",
+                "quote": "Tanmay Juneja (CTO)"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-bfa3e21427fd157f",
+            "quote": "Bengaluru, June 17, 2026: ContraVault AI , a procurement intelligence platform helping infrastructure companies make faster and smarter bidding decisions"
+          },
+          {
+            "source_id": "FISRC-78278ca61a2d245e",
+            "quote": "The Bengaluru-based startup just closed a $3.1 million pre-Series A funding round."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Pre-Series A",
+        "amount": "$3.1 million",
+        "total_raised": "$3.7 million",
+        "announced_at": "2026-06-17",
+        "investors": [
+          {
+            "name": "Chiratae Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-78278ca61a2d245e",
+                "quote": "The $3.1 million Pre-Series A round was led by Chiratae Ventures."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Titan Capital Winners Fund",
+            "role": "本轮参投、种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-78278ca61a2d245e",
+                "quote": "Titan Capital Winners Fund, an existing backer, also participated."
+              },
+              {
+                "source_id": "FISRC-78278ca61a2d245e",
+                "quote": "Before this round, the company had pulled in roughly $600,000 from Titan Capital and angel investors at the seed stage."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Titan Capital",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-78278ca61a2d245e",
+                "quote": "Before this round, the company had pulled in roughly $600,000 from Titan Capital and angel investors at the seed stage."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Angel Investors",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-78278ca61a2d245e",
+                "quote": "Before this round, the company had pulled in roughly $600,000 from Titan Capital and angel investors at the seed stage."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-78278ca61a2d245e",
+            "quote": "So the total funding now sits at approximately $3.7 million."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "ContraVault AI Platform",
+          "description": "一个AI驱动的采购智能与投标管理平台，覆盖从商机发现、招标文件分析、风险与合规检查、Go/No-Go决策到投标文件准备的完整工作流。",
+          "target_customers": "基础设施、建筑、能源、电力、国防和航空航天领域的大型EPC和工程公司",
+          "features": [
+            "Tender Hunt（商机发现与追踪）",
+            "Go/No-Go Analysis（资格与可行性分析）",
+            "Risk and Contradiction Review（风险与矛盾条款审查）",
+            "Tender Synopsis（招标书结构化摘要）",
+            "Forms AI（自动识别并填充投标表单）",
+            "Proposal Drafting（提案草稿与投标包准备）",
+            "Contextual Search（上下文感知的条款搜索）"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "The platform helps organizations discover opportunities, analyze tender documents and RFPs, flag risks, check compliance, make faster go/no-go decisions, and prepare submissions with far less manual effort."
+            },
+            {
+              "source_id": "FISRC-1894a65ef656a2f9",
+              "quote": "A single AI workspace covering tender discovery, decision-making, risk review, and submission preparation."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Voltas",
+          "industry": "基础设施/EPC",
+          "use_case": "使用ContraVault AI加速千页级招标书的审查与分析",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "It is already used by some of India’s largest infrastructure companies, including Voltas, Shapoorji Pallonji, Adani Group, and Sterling and Wilson."
+            }
+          ]
+        },
+        {
+          "name": "Shapoorji Pallonji",
+          "industry": "基础设施/EPC",
+          "use_case": "使用ContraVault AI进行投标管理与决策支持",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "It is already used by some of India’s largest infrastructure companies, including Voltas, Shapoorji Pallonji, Adani Group, and Sterling and Wilson."
+            }
+          ]
+        },
+        {
+          "name": "Adani Group",
+          "industry": "基础设施/能源",
+          "use_case": "使用ContraVault AI进行投标管理与决策支持",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "It is already used by some of India’s largest infrastructure companies, including Voltas, Shapoorji Pallonji, Adani Group, and Sterling and Wilson."
+            }
+          ]
+        },
+        {
+          "name": "Sterling and Wilson",
+          "industry": "基础设施/EPC",
+          "use_case": "使用ContraVault AI加速投标并管理风险",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "It is already used by some of India’s largest infrastructure companies, including Voltas, Shapoorji Pallonji, Adani Group, and Sterling and Wilson."
+            }
+          ]
+        },
+        {
+          "name": "Toyo Engineering",
+          "industry": "工业工程/EPC",
+          "use_case": "将ContraVault AI作为RFP分析的起点，将3000多页RFP的摘要生成时间从约4天缩短至1-2分钟",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e10af8298e0631da",
+              "quote": "ContraVault AI cuts Toyo Engineering’s 3,000+ page RFP turnaround from ~4 days to 1-2 minutes"
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "已分析招标书数量（训练数据集）",
+          "value": "超过100万份",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "The platform has analyzed over one million tenders as part of its training dataset."
+            }
+          ]
+        },
+        {
+          "label": "客户数量",
+          "value": "约40家",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "Around 40 customers in India."
+            }
+          ]
+        },
+        {
+          "label": "客户招标处理时间缩短比例",
+          "value": "60% 至 70%",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "ContraVault AI helps clients cut tender processing time by 60 to 70 percent."
+            }
+          ]
+        },
+        {
+          "label": "客户投标提交数量增加比例",
+          "value": "30% 至 35%",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "And increases the number of bids submitted by 30 to 35 percent."
+            }
+          ]
+        },
+        {
+          "label": "已分析项目总价值",
+          "value": "26亿美元",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1894a65ef656a2f9",
+              "quote": "ContraVault AI has analyzed $2.6 billion worth of projects"
+            }
+          ]
+        },
+        {
+          "label": "已中标项目总价值",
+          "value": "3942万美元",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1894a65ef656a2f9",
+              "quote": "supported $39.42 million worth of tenders won"
+            }
+          ]
+        },
+        {
+          "label": "Toyo Engineering 3000+页RFP摘要生成时间",
+          "value": "从约4天缩短至1-2分钟",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e10af8298e0631da",
+              "quote": "ContraVault AI cuts Toyo Engineering’s 3,000+ page RFP turnaround from ~4 days to 1-2 minutes"
+            }
+          ]
+        },
+        {
+          "label": "Paharpur Cooling Towers Go/No-Go决策时间缩短比例",
+          "value": "约75-83%",
+          "observed_at": "2026-06-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c9fd38d9512a3f4e",
+              "quote": "Time reduced from 2 - 3 hours → ~30 minutes ~75 - 83% faster Go/No-Go completion"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Sayan Sen",
+          "quote": "Infrastructure is the largest industry known to humankind that still relies on Excel sheets and manual intervention for most of its work. Our vision is to give this industry the ability to make decisions that help them win more business through bids and projects. There is a bridge that today’s AI needs to build to carry companies from shallow productivity promises to actual revenue. At ContraVault AI, we are building that bridge.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "Infrastructure is the largest industry known to humankind that still relies on Excel sheets and manual intervention for most of its work. Our vision is to give this industry the ability to make decisions that help them win more business through bids and projects. There is a bridge that today’s AI needs to build to carry companies from shallow productivity promises to actual revenue. At ContraVault AI, we are building that bridge."
+            }
+          ]
+        },
+        {
+          "speaker": "Mandeep Julka",
+          "quote": "ContraVault, with its proprietary AI product, is solving for one of the toughest challenges -nation building. By empowering infrastructure companies with cutting-edge yet personalised technology, we believe will provide extra power for them to march ahead. We are very excited to partner with the ContraVault team as it embarks on this ambitious global journey to transform the way large infrastructure enterprises execute mission critical projects.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bfa3e21427fd157f",
+              "quote": "ContraVault, with its proprietary AI product, is solving for one of the toughest challenges -nation building. By empowering infrastructure companies with cutting-edge yet personalised technology, we believe will provide extra power for them to march ahead. We are very excited to partner with the ContraVault team as it embarks on this ambitious global journey to transform the way large infrastructure enterprises execute mission critical projects."
+            }
+          ]
+        },
+        {
+          "speaker": "Shiv Kapoor",
+          "quote": "We are happy to double down on the ContraVault team. They have proven that they can build a technically complex product that is used by customers who want powerful features without needing an instruction manual. It is fulfilling to see ContraVault play an important role in some of the largest infrastructure projects in the country worth many crores of rupees.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bfa3e21427fd157f",
+              "quote": "We are happy to double down on the ContraVault team. They have proven that they can build a technically complex product that is used by customers who want powerful features without needing an instruction manual. It is fulfilling to see ContraVault play an important role in some of the largest infrastructure projects in the country worth many crores of rupees."
+            }
+          ]
+        },
+        {
+          "speaker": "Apratim Sen",
+          "quote": "ContraVault AI has made our Go/No-Go faster and more complete. What matters most is that the standard checks get analyzed without misses - in a way multiple stakeholders can trust.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c692201e380e99b5",
+              "quote": "ContraVault AI has made our Go/No-Go faster and more complete. What matters most is that the standard checks get analyzed without misses - in a way multiple stakeholders can trust."
+            }
+          ]
+        },
+        {
+          "speaker": "RedFox Security Team",
+          "quote": "ContraVault AI gives us structured, shareable outputs by default - and the Advanced Search is far better than doing a generic 'ChatGPT on our RFP document.' It helps us move faster on complex bids without losing context.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c692201e380e99b5",
+              "quote": "ContraVault AI gives us structured, shareable outputs by default - and the Advanced Search is far better than doing a generic 'ChatGPT on our RFP document.' It helps us move faster on complex bids without losing context."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Chiratae Ventures",
+            "speaker": "Mandeep Julka",
+            "speaker_role": "Chiratae Ventures 代表",
+            "rationale": "认为ContraVault AI用其专有AI产品解决了国家建设中最艰巨的挑战之一，通过为基础设施公司提供尖端且个性化的技术，为其注入额外的发展动力，并对其开启全球征程、变革大型基础设施企业执行关键项目的方式感到兴奋。",
+            "quote": "ContraVault, with its proprietary AI product, is solving for one of the toughest challenges -nation building. By empowering infrastructure companies with cutting-edge yet personalised technology, we believe will provide extra power for them to march ahead. We are very excited to partner with the ContraVault team as it embarks on this ambitious global journey to transform the way large infrastructure enterprises execute mission critical projects.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bfa3e21427fd157f",
+                "quote": "ContraVault, with its proprietary AI product, is solving for one of the toughest challenges -nation building. By empowering infrastructure companies with cutting-edge yet personalised technology, we believe will provide extra power for them to march ahead. We are very excited to partner with the ContraVault team as it embarks on this ambitious global journey to transform the way large infrastructure enterprises execute mission critical projects."
+              }
+            ]
+          },
+          {
+            "institution": "Titan Capital Winners Fund",
+            "speaker": "Shiv Kapoor",
+            "speaker_role": "Titan Capital Winners Fund 副总裁",
+            "rationale": "对ContraVault团队加倍下注，因为他们已证明能构建技术复杂的产品，且客户无需说明书即可使用强大功能；同时看到ContraVault在印度一些价值数亿卢比的最大基础设施项目中发挥了重要作用。",
+            "quote": "We are happy to double down on the ContraVault team. They have proven that they can build a technically complex product that is used by customers who want powerful features without needing an instruction manual. It is fulfilling to see ContraVault play an important role in some of the largest infrastructure projects in the country worth many crores of rupees.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bfa3e21427fd157f",
+                "quote": "We are happy to double down on the ContraVault team. They have proven that they can build a technically complex product that is used by customers who want powerful features without needing an instruction manual. It is fulfilling to see ContraVault play an important role in some of the largest infrastructure projects in the country worth many crores of rupees."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“深度领域AI对高价值、低数字化工作流的重构能力”。本轮融资验证的信号包括：1）产品已切入印度头部EPC客户群（Voltas、Adani等约40家客户），客户基数在两个月内翻倍；2）创造了可量化的商业价值——客户招标处理时间缩短60-70%，投标提交量增加30-35%；3）平台已分析超100万份招标书和26亿美元项目，形成了领域数据和模型迭代的复合壁垒。估值判断的证据边界限于已披露的累计融资额（约370万美元）和本轮310万美元的Pre-A轮规模，未披露估值倍数。",
+        "validated_signals": [
+          "已获得约40家付费客户，包括Voltas、Shapoorji Pallonji、Adani Group、Sterling and Wilson等印度头部基础设施公司",
+          "客户招标处理时间缩短60-70%，投标提交量增加30-35%，创造了直接可量化的收入影响",
+          "平台已分析超100万份招标书作为训练数据，支持了3942万美元的中标项目，形成了数据飞轮效应",
+          "客户基数在两个月内翻倍，显示出强劲的市场牵引力",
+          "产品从招标分析扩展为覆盖全生命周期的投标管理平台，客户粘性增强"
+        ],
+        "risks": [
+          "市场高度集中于印度基础设施领域，美国扩张计划尚未验证，跨地域的采购法规和招标流程差异可能增加产品适配成本与销售周期。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "采购智能与投标管理SaaS"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "ContraVault AI Platform",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "The platform helps organizations discover opportunities, analyze tender documents and RFPs, flag risks, check compliance, make faster go/no-go decisions, and prepare submissions with far less manual effort."
+            },
+            {
+              "source_id": "FISRC-1894a65ef656a2f9",
+              "quote": "A single AI workspace covering tender discovery, decision-making, risk review, and submission preparation."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sayan Sen",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bfa3e21427fd157f",
+              "quote": "Founded in 2024 by Sayan Sen , Isha Juneja and Tanmay Juneja"
+            },
+            {
+              "source_id": "FISRC-bfa3e21427fd157f",
+              "quote": "Sayan Sen, Co-Founder & CEO, ContraVault AI"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Isha Juneja",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "Founded in 2024 by Sayan Sen, Isha Juneja, and Tanmay Juneja"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Tanmay Juneja",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "Founded in 2024 by Sayan Sen, Isha Juneja, and Tanmay Juneja"
+            },
+            {
+              "source_id": "FISRC-e10af8298e0631da",
+              "quote": "Tanmay Juneja (CTO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Chiratae Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "The $3.1 million Pre-Series A round was led by Chiratae Ventures."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Titan Capital Winners Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "Titan Capital Winners Fund, an existing backer, also participated."
+            },
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "Before this round, the company had pulled in roughly $600,000 from Titan Capital and angel investors at the seed stage."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Titan Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "Before this round, the company had pulled in roughly $600,000 from Titan Capital and angel investors at the seed stage."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Angel Investors",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "Before this round, the company had pulled in roughly $600,000 from Titan Capital and angel investors at the seed stage."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Voltas",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "It is already used by some of India’s largest infrastructure companies, including Voltas, Shapoorji Pallonji, Adani Group, and Sterling and Wilson."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Shapoorji Pallonji",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "It is already used by some of India’s largest infrastructure companies, including Voltas, Shapoorji Pallonji, Adani Group, and Sterling and Wilson."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Adani Group",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "It is already used by some of India’s largest infrastructure companies, including Voltas, Shapoorji Pallonji, Adani Group, and Sterling and Wilson."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Sterling and Wilson",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78278ca61a2d245e",
+              "quote": "It is already used by some of India’s largest infrastructure companies, including Voltas, Shapoorji Pallonji, Adani Group, and Sterling and Wilson."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Toyo Engineering",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e10af8298e0631da",
+              "quote": "ContraVault AI cuts Toyo Engineering’s 3,000+ page RFP turnaround from ~4 days to 1-2 minutes"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-232ab5bcbaf6552d",
+          "date": "2026-06-22",
+          "title": "ContraVault AI 为投标平台融资 310 万美元",
+          "amount": "$3.1 Million",
+          "source_refs": [
+            "SA-6f97a4f42b947d4d"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-78278ca61a2d245e",
+          "source_url": "https://startupsunion.com/contravault-ai-raises-3-1m-pre-series-a-to-revolutionize-procurement-intelligence/",
+          "title": "ContraVault AI 获310万美元Pre-A轮融资，旨在革新采购智能",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-23T02:03:46.513Z",
+          "content_hash": "7821aafe08e9c8d7",
+          "source_artifact_id": "SA-673cf2d74bade870",
+          "raw_id": "RAW-5780db93ec2f3031"
+        },
+        {
+          "source_id": "FISRC-bfa3e21427fd157f",
+          "source_url": "https://chhattisgarhnewsline.in/contravault-ai-raises-usd-3-1m-led-by-chiratae-ventures-with-titan-capital-winners-fund-to-build-the-future-of-ai-powered-procurement-intelligence/",
+          "title": "ContraVault AI raises USD 3.1M led by Chiratae Ventures with Titan Capital Winners Fund to build the future of AI-powered procurement intelligence – Chhattisgarh News Line",
+          "publisher": "chhattisgarhnewsline.in",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:35:15.495Z",
+          "content_hash": "9fd326cffea5f87f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1894a65ef656a2f9",
+          "source_url": "https://www.contravault.com/launch",
+          "title": "ContraVault AI raises 3.1 Million by Chiratae | ContraVault AI",
+          "publisher": "contravault.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:35:17.318Z",
+          "content_hash": "2960998e1eb5eb5c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-e10af8298e0631da",
+          "source_url": "https://www.contravault.com/customers/TOYO",
+          "title": "Toyo Case Study | 3,000+ Page Tender Synopsis in Minutes | ContraVault AI",
+          "publisher": "contravault.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:35:18.958Z",
+          "content_hash": "70a3a23481b784d6",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c692201e380e99b5",
+          "source_url": "https://www.contravault.com/customers",
+          "title": "Customer Stories | ContraVault AI",
+          "publisher": "contravault.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:35:20.458Z",
+          "content_hash": "ca79d34970c4ee15",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c9fd38d9512a3f4e",
+          "source_url": "https://www.contravault.com/customers/Paharpur",
+          "title": "Paharpur Case Study | Faster Go/No-Go for Tenders | ContraVault AI",
+          "publisher": "contravault.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:35:21.866Z",
+          "content_hash": "db4eceef81a34310",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:36:09.709Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:36:09.709Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-879cbcbb622dbb9d",
+      "triggered_by_event_id": "EV-ebc2aaa3bbb7a004",
+      "as_of_date": "2026-06-23",
+      "company": {
+        "entity_id": "EN-e19b20530b205aa9",
+        "name": "Aigentsphere",
+        "full_name": "Aigentsphere",
+        "website": "https://aigentsphere.com/",
+        "summary": "Aigentsphere 是一家企业级 AI 智能体管理与治理平台，提供统一的控制层，帮助组织注册、监控、追踪成本、执行策略并自动生成合规报告，以解决企业因大规模部署自主 AI 系统而产生的“智能体蔓延”问题。",
+        "headquarters": "澳大利亚悉尼",
+        "founders": [
+          {
+            "name": "Quinton Anderson",
+            "role": "首席执行官兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-89fbe7d18142da86",
+                "quote": "Quinton Anderson, CEO and Co-Founder"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kelly Bayer Rosmarin",
+            "role": "主席兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-89fbe7d18142da86",
+                "quote": "Kelly Bayer Rosmarin, Chair and Co-Founder"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f3c10b61ea844c50",
+            "quote": "Sydney AI agent management and governance platform, Aigentsphere"
+          },
+          {
+            "source_id": "FISRC-d723c6696ca6b1ed",
+            "quote": "Aigentsphere — Enterprise AI Agent Management"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "400万美元",
+        "total_raised": "400万美元",
+        "announced_at": "2026-04-29",
+        "investors": [
+          {
+            "name": "Main Sequence",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f3c10b61ea844c50",
+                "quote": "has raised a $4 million Seed round led by CSIRO-backed VC Main Sequence"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f3c10b61ea844c50",
+            "quote": "Aigentsphere, has raised a $4 million Seed round"
+          },
+          {
+            "source_id": "FISRC-89fbe7d18142da86",
+            "quote": "Aigentsphere has raised $4 million in Seed funding led by Main Sequence"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Aigentsphere 平台",
+          "description": "一个统一的 AI 智能体管理与治理控制层，提供实时性能监控、成本追踪、策略执行和自动化合规报告功能，独立于底层 AI 技术。",
+          "target_customers": "企业组织，特别是其中的业务领导者、合规团队和 AI 工程师。",
+          "features": [
+            "AI 智能体注册与入职",
+            "实时性能监控与 KPI 追踪",
+            "成本追踪与 ROI 衡量",
+            "基于预置模板（GDPR, EU AI Act, ISO 42001, NIST AI RMF 等）的自动化合规与策略执行",
+            "实时风险指标与异常告警",
+            "AI 驱动的质量保证与评估",
+            "面向董事会和高管的运营仪表盘与审计报告"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3c10b61ea844c50",
+              "quote": "Aigentsphere’s platform addresses potential AI agent sprawl with a unified control layer that enables organisations to register and onboard agents, monitor their performance in real time, track costs, enforce policies and automatically generate compliance reporting."
+            },
+            {
+              "source_id": "FISRC-d723c6696ca6b1ed",
+              "quote": "Compliance Policy Management Start with six pre-built compliance policy templates aligned to global standards — GDPR, EU AI Act, ISO 27001, NIST AI RMF, SOX, and ISO 42001."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "未具名企业客户",
+          "industry": "",
+          "use_case": "平台在实时监控中发现了一个在测试和QA流程中遗漏的合规问题，使企业能够立即采取行动进行补救。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3c10b61ea844c50",
+              "quote": "In one use-case, the Aigentsphere platform identified a legal compliance issue in real time that had escaped the testing and QA process for that agent."
+            }
+          ]
+        },
+        {
+          "name": "首个试点客户",
+          "industry": "",
+          "use_case": "作为首个试点客户，已签订为期三年的合同，使用平台进行AI智能体管理。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89fbe7d18142da86",
+              "quote": "our first pilot customer signing a three-year contract"
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "400万美元",
+          "observed_at": "2026-04-29",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3c10b61ea844c50",
+              "quote": "pockets $4 million Seed round"
+            }
+          ]
+        },
+        {
+          "label": "从概念到首个试点部署时间",
+          "value": "7个月",
+          "observed_at": "2026-05-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e05afa4c001e5bd7",
+              "quote": "The team had their first customer pilot running in November last year — seven months after the original concept"
+            }
+          ]
+        },
+        {
+          "label": "从原型到首个试点部署时间",
+          "value": "4个月",
+          "observed_at": "2026-05-19",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e05afa4c001e5bd7",
+              "quote": "four months after a working prototype"
+            }
+          ]
+        },
+        {
+          "label": "首个试点客户合同期限",
+          "value": "3年",
+          "observed_at": "2026-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89fbe7d18142da86",
+              "quote": "our first pilot customer signing a three-year contract"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Kelly Bayer Rosmarin",
+          "quote": "As AI agents become more autonomous and embedded in core workflows, companies can’t afford to have unmanaged AI operating inside their business.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3c10b61ea844c50",
+              "quote": "As AI agents become more autonomous and embedded in core workflows, companies can’t afford to have unmanaged AI operating inside their business."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Main Sequence",
+            "speaker": "Mike Zimmerman",
+            "speaker_role": "合伙人",
+            "rationale": "Main Sequence 认为，AI 智能体要从实验走向企业级大规模部署，必须解决治理、监控和问责问题。Aigentsphere 正在构建使这一切成为可能的关键基础设施，其独立于供应商的监督层是核心价值。",
+            "quote": "Aigentsphere is building the critical infrastructure that makes that possible, giving enterprises the visibility and accountability they need to move from AI experimentation to confident, enterprise-wide deployment.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f3c10b61ea844c50",
+                "quote": "Aigentsphere is building the critical infrastructure that makes that possible, giving enterprises the visibility and accountability they need to move from AI experimentation to confident, enterprise-wide deployment."
+              }
+            ]
+          },
+          {
+            "institution": "Main Sequence",
+            "speaker": "Mike Zimmerman",
+            "speaker_role": "合伙人",
+            "rationale": "投资团队看重创始人在大型企业（如澳大利亚联邦银行、Optus）担任 CIO 和 CEO 的深厚背景，他们亲身经历过 AI 治理的痛点，并非纸上谈兵。",
+            "quote": "This is a founding team that has spent years on the receiving end of regulators, incident response rooms, and board-level scrutiny. They didn’t come to AI governance as an intellectual exercise. They came to it because they understood, firsthand, how badly it was needed.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e05afa4c001e5bd7",
+                "quote": "This is a founding team that has spent years on the receiving end of regulators, incident response rooms, and board-level scrutiny. They didn’t come to AI governance as an intellectual exercise. They came to it because they understood, firsthand, how badly it was needed."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“企业级 AI 智能体治理”这一新兴品类的定义权。当前融资所依赖的已验证信号包括：1）产品在不到一年内从概念走向付费试点，并签下三年合同，验证了企业客户的付费意愿和紧迫需求；2）平台在早期部署中成功发现了测试环节遗漏的实时合规问题，证明了其独立监督层的实际价值；3）创始团队拥有在顶级企业（CBA, Optus）处理技术治理和董事会问责的深厚经验，具备定义这一品类的独特信誉。判断的证据边界在于，目前客户均为未具名的试点企业，尚未公开大规模商业化的收入数据。",
+        "validated_signals": [
+          "首个试点客户已签订三年合同，验证了企业付费意愿。",
+          "平台在早期部署中实时发现了测试环节遗漏的合规问题，证明了独立监督层的实际价值。",
+          "创始团队拥有在大型企业（CBA, Optus）担任 CIO 和 CEO 的深厚背景，直面过 AI 治理的痛点。"
+        ],
+        "risks": [
+          "平台目前仍处于早期试点阶段，客户数量有限且未公开，大规模商业化能力尚未得到验证。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "人工智能治理与企业软件"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Aigentsphere 平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3c10b61ea844c50",
+              "quote": "Aigentsphere’s platform addresses potential AI agent sprawl with a unified control layer that enables organisations to register and onboard agents, monitor their performance in real time, track costs, enforce policies and automatically generate compliance reporting."
+            },
+            {
+              "source_id": "FISRC-d723c6696ca6b1ed",
+              "quote": "Compliance Policy Management Start with six pre-built compliance policy templates aligned to global standards — GDPR, EU AI Act, ISO 27001, NIST AI RMF, SOX, and ISO 42001."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Quinton Anderson",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89fbe7d18142da86",
+              "quote": "Quinton Anderson, CEO and Co-Founder"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Kelly Bayer Rosmarin",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89fbe7d18142da86",
+              "quote": "Kelly Bayer Rosmarin, Chair and Co-Founder"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Main Sequence",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3c10b61ea844c50",
+              "quote": "has raised a $4 million Seed round led by CSIRO-backed VC Main Sequence"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "未具名企业客户",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3c10b61ea844c50",
+              "quote": "In one use-case, the Aigentsphere platform identified a legal compliance issue in real time that had escaped the testing and QA process for that agent."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "首个试点客户",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-89fbe7d18142da86",
+              "quote": "our first pilot customer signing a three-year contract"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-ebc2aaa3bbb7a004",
+          "date": "2026-06-23",
+          "title": "AI 治理初创公司获 400 万美元种子轮融资",
+          "amount": "$4 million",
+          "source_refs": [
+            "SA-f67dbcc79b176ce8"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-f3c10b61ea844c50",
+          "source_url": "https://www.startupdaily.net/topic/funding/ai-governance-startup-pockets-4-million-seed-round/",
+          "title": "AI 治理初创公司获 400 万美元种子轮融资",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-23T02:03:46.525Z",
+          "content_hash": "a15429dd29e44176",
+          "source_artifact_id": "SA-f67dbcc79b176ce8",
+          "raw_id": "RAW-9d5e710071de1413"
+        },
+        {
+          "source_id": "FISRC-d723c6696ca6b1ed",
+          "source_url": "https://aigentsphere.com/",
+          "title": "Aigentsphere — Enterprise AI Agent Management",
+          "publisher": "aigentsphere.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:34:55.873Z",
+          "content_hash": "6887ddd0e323052a",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-89fbe7d18142da86",
+          "source_url": "https://www.aigentsphere.com/resources/aigentsphere-raises-4m",
+          "title": "Aigentsphere raises $4M to Bring Governance and Oversight to Enterprise AI Agents",
+          "publisher": "aigentsphere.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:35:03.631Z",
+          "content_hash": "608401a6767d0348",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-e05afa4c001e5bd7",
+          "source_url": "https://www.mseq.vc/msv-blog/our-investment-in-aigentsphere-unlocking-agent-adoption-in-the-enterprise",
+          "title": "Main Sequence - Our investment in Aigentsphere: Unlocking agent adoption in the enterprise",
+          "publisher": "mseq.vc",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:35:07.357Z",
+          "content_hash": "6ae462d29f8bd7f4",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:35:39.099Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:35:39.099Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-232ab5bcbaf6552d",
+      "company_name": "ContraVault AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"ContraVault AI\" \"$3.1M\" funding investors round",
+        "\"ContraVault AI\" product customers case study",
+        "\"ContraVault AI\" \"ContraVault AI Raises $3.1M Pre-Series A to Revolutionize Procurement Intelligence\" competitors product use case",
+        "\"ContraVault AI\" \"$3.1M\" investor quote why invested",
+        "\"ContraVault AI\" \"$3.1M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"ContraVault AI\" \"$3.1M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"ContraVault AI\" \"$3.1M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"ContraVault AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"ContraVault AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"ContraVault AI\" \"ContraVault AI Raises $3.1M Pre-Series A to Revolutionize Procurement Intelligence\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"ContraVault AI\" \"ContraVault AI Raises $3.1M Pre-Series A to Revolutionize Procurement Intelligence\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"ContraVault AI\" \"$3.1M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"ContraVault AI\" \"$3.1M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"ContraVault AI\" \"$3.1M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"ContraVault AI\" \"$3.1M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:36:09.757Z"
+    },
+    {
+      "event_id": "EV-ebc2aaa3bbb7a004",
+      "company_name": "Aigentsphere",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Aigentsphere\" \"$4 million\" funding investors round",
+        "\"Aigentsphere\" product customers case study",
+        "\"Aigentsphere\" \"AI governance startup pockets $4 million Seed round - Startup Daily\" competitors product use case",
+        "\"Aigentsphere\" \"$4 million\" investor quote why invested",
+        "\"Aigentsphere\" \"$4 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Aigentsphere\" \"$4 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Aigentsphere\" \"$4 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Aigentsphere\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Aigentsphere\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Aigentsphere\" \"AI governance startup pockets $4 million Seed round - Startup Daily\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Aigentsphere\" \"AI governance startup pockets $4 million Seed round - Startup Daily\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Aigentsphere\" \"$4 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Aigentsphere\" \"$4 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Aigentsphere\" \"$4 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Aigentsphere\" \"$4 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:36:09.757Z"
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-24",
+    "generated_at": "2026-07-26T15:14:34.114Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 3,
+      "auto_published": 1,
+      "blocked": 2,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-ff5da818d815cfd0",
+      "triggered_by_event_id": "EV-9775b60c38285615",
+      "as_of_date": "2026-06-24",
+      "company": {
+        "entity_id": "EN-aa06a7dba2266341",
+        "name": "Modiqo",
+        "full_name": "Modiqo",
+        "website": "https://www.modiqo.ai/",
+        "summary": "Modiqo 是一家 AI 基础设施公司，致力于构建可靠的 AI 智能体工作流基础设施层。其平台 Rote 能将一次性成功的智能体执行转化为可复用、可重复的确定性流程，帮助团队减少手动返工、提高一致性并规模化部署工作流。",
+        "headquarters": "San Francisco, California",
+        "founders": [
+          {
+            "name": "Chetan Conikee",
+            "role": "Founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7dcc5e58c6026e99",
+                "quote": "said Chetan Conikee, Founder and CEO of Modiqo."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7dcc5e58c6026e99",
+            "quote": "Modiqo , an AI infrastructure company"
+          },
+          {
+            "source_id": "FISRC-a45c9fe284c1fa5d",
+            "quote": "Modiqo , based in San Francisco, California"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Pre-Seed",
+        "amount": "$3 million",
+        "total_raised": "$3 million",
+        "announced_at": "2026-05-28",
+        "investors": [
+          {
+            "name": "Heavybit",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7dcc5e58c6026e99",
+                "quote": "The round was co-led by Heavybit and Seligman Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Seligman Ventures",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7dcc5e58c6026e99",
+                "quote": "The round was co-led by Heavybit and Seligman Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Irregular Expressions",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7dcc5e58c6026e99",
+                "quote": "with participation from Irregular Expressions and angel investors."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "天使投资人",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7dcc5e58c6026e99",
+                "quote": "with participation from Irregular Expressions and angel investors."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7dcc5e58c6026e99",
+            "quote": "today announced $3 million in pre-seed funding"
+          },
+          {
+            "source_id": "FISRC-a45c9fe284c1fa5d",
+            "quote": "has successfully raised $3 million in a pre-seed funding round."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Rote",
+          "description": "Rote 是一个本地执行层工具，观察 AI 智能体成功执行的操作，并将其转化为可靠、可重复的确定性流程。它通过适配器、追踪、结晶化和召回等核心原语，将一次性成功固化为代码，从而大幅降低 token 消耗并消除模型或 API 变动带来的意外。",
+          "target_customers": "在真实业务运营中部署 AI 的组织和团队",
+          "features": [
+            "使 AI 每次以相同方式工作，消除模型、API 或系统更新带来的意外",
+            "接入现有工具，无需昂贵的工程改造",
+            "通过复用已验证的工作流显著降低 AI 成本",
+            "提供完整的执行可见性，包括运行内容、时间和成本"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "Rote, a local execution layer that makes agent workflows dependable in production."
+            },
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "Rote helps teams: Make AI work the same way every time — no more surprises when a model, APIs or system updates Plug into the tools you already use — without expensive engineering work Cut AI costs significantly — by reusing proven workflows instead of paying for the AI to figure them out from scratch each time See exactly what's happening — what ran, when, and what it cost"
+            },
+            {
+              "source_id": "FISRC-da9a7494d6dd530b",
+              "quote": "rote crystallizes the run that worked into a deterministic flow — same result, ~98% fewer tokens on replay."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "Token 消耗降低比例（重放时）",
+          "value": "~98%",
+          "observed_at": "2026-05-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da9a7494d6dd530b",
+              "quote": "same result, ~98% fewer tokens on replay."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Chetan Conikee",
+          "quote": "AI workflows today are like sandcastles. They look impressive when you build them, then wash away the moment anything changes.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "AI workflows today are like sandcastles. They look impressive when you build them, then wash away the moment anything changes"
+            }
+          ]
+        },
+        {
+          "speaker": "Chetan Conikee",
+          "quote": "Companies are paying their best people to rebuild the same things again and again. Rote captures what worked the first time and locks it in, so teams can move forward instead of starting over.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "Companies are paying their best people to rebuild the same things again and again. Rote captures what worked the first time and locks it in, so teams can move forward instead of starting over."
+            }
+          ]
+        },
+        {
+          "speaker": "Umesh Padval",
+          "quote": "The industry is quickly realizing that building capable AI agents is only part of the challenge, operating them reliably at scale is the harder problem.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "The industry is quickly realizing that building capable AI agents is only part of the challenge, operating them reliably at scale is the harder problem"
+            }
+          ]
+        },
+        {
+          "speaker": "Joseph Ruscio",
+          "quote": "Today's AI agents are impressive in the demo and unreliable in production.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "Today's AI agents are impressive in the demo and unreliable in production"
+            }
+          ]
+        },
+        {
+          "speaker": "Jean Sini",
+          "quote": "Every serious team running agents is hitting the same wall: reliability, cost, and reproducibility.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "Every serious team running agents is hitting the same wall: reliability, cost, and reproducibility"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Seligman Ventures",
+            "speaker": "Umesh Padval",
+            "speaker_role": "Managing Partner",
+            "rationale": "认为构建强大的 AI 智能体只是挑战的一部分，大规模可靠地运行它们才是更困难的问题。Modiqo 正在构建关键的基础 AI 基础设施层，使团队能够以极低的 token 成本可靠地部署 AI 工作流。",
+            "quote": "Modiqo is building a critical foundational AI infrastructure layer that enables teams to deploy AI workflows reliably at a fraction of the token cost.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7dcc5e58c6026e99",
+                "quote": "Modiqo is building a critical foundational AI infrastructure layer that enables teams to deploy AI workflows reliably at a fraction of the token cost."
+              }
+            ]
+          },
+          {
+            "institution": "Heavybit",
+            "speaker": "Joseph Ruscio",
+            "speaker_role": "General Partner",
+            "rationale": "指出当前智能体的深层问题在于每次运行都是一次性对话日志，而非可验证和迭代的产物。Modiqo 的 Rote 能将首次成功转化为确定性代码，削减 token 使用量，为智能体从实验走向生产基础设施提供所需的执行层。",
+            "quote": "Modiqo's Rote captures what worked the first time and turns it into deterministic code — cutting token usage, reserving inference for the parts that genuinely need it, and reining in the context bloat plaguing today's agent stacks.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7dcc5e58c6026e99",
+                "quote": "Modiqo's Rote captures what worked the first time and turns it into deterministic code — cutting token usage, reserving inference for the parts that genuinely need it, and reining in the context bloat plaguing today's agent stacks."
+              }
+            ]
+          },
+          {
+            "institution": "Irregular Expressions",
+            "speaker": "Jean Sini",
+            "speaker_role": "Founding Partner",
+            "rationale": "认为所有认真运行智能体的团队都面临可靠性、成本和可复现性这堵墙，而 Modiqo 是第一个从执行层而非提示层同时解决这三个问题的团队。",
+            "quote": "Modiqo is the first team I've seen attack all three at the execution layer rather than the prompt layer.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7dcc5e58c6026e99",
+                "quote": "Modiqo is the first team I've seen attack all three at the execution layer rather than the prompt layer."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 AI 智能体从实验走向生产过程中必然出现的可靠性断层和成本失控问题。Modiqo 在 Pre-Seed 阶段获得 300 万美元融资，其已验证信号包括：明确的产品形态 Rote 已发布，宣称可将重放时的 token 消耗降低约 98%，并获得了 Heavybit、Seligman Ventures 等专业基础设施投资机构的联合领投。投资逻辑建立在“执行层”而非“提示层”的差异化路径上，但当前所有证据均来自公司公告和投资方引述，尚无独立客户数量、收入数据或第三方生产环境验证，产品仍处于早期市场导入阶段。",
+        "validated_signals": [
+          "产品 Rote 已正式发布，定位为本地执行层",
+          "宣称可将 AI 工作流重放的 token 消耗降低约 98%",
+          "获得 Heavybit 和 Seligman Ventures 联合领投，Irregular Expressions 参投",
+          "投资方明确表达了对执行层而非提示层路径的认可"
+        ],
+        "risks": [
+          "所有性能数据（如 token 降低 98%）均来自公司单方面宣称，缺乏第三方基准测试或客户生产环境验证，实际效果可能因场景而异。"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "sector": "AI 基础设施 / 智能体执行层"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Rote",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "Rote, a local execution layer that makes agent workflows dependable in production."
+            },
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "Rote helps teams: Make AI work the same way every time — no more surprises when a model, APIs or system updates Plug into the tools you already use — without expensive engineering work Cut AI costs significantly — by reusing proven workflows instead of paying for the AI to figure them out from scratch each time See exactly what's happening — what ran, when, and what it cost"
+            },
+            {
+              "source_id": "FISRC-da9a7494d6dd530b",
+              "quote": "rote crystallizes the run that worked into a deterministic flow — same result, ~98% fewer tokens on replay."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Chetan Conikee",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "said Chetan Conikee, Founder and CEO of Modiqo."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Heavybit",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "The round was co-led by Heavybit and Seligman Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Seligman Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "The round was co-led by Heavybit and Seligman Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Irregular Expressions",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "with participation from Irregular Expressions and angel investors."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "天使投资人",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7dcc5e58c6026e99",
+              "quote": "with participation from Irregular Expressions and angel investors."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-9775b60c38285615",
+          "date": "2026-06-24",
+          "title": "Modiqo 完成种子轮融资，以极低代币成本为企业提供确定性 AI 工作流",
+          "amount": "",
+          "source_refs": [
+            "SA-fb309372649c99dc"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-7dcc5e58c6026e99",
+          "source_url": "https://www.prnewswire.com/news-releases/modiqo-raises-pre-seed-round-to-bring-deterministic-ai-workflows-to-enterprises-at-a-fraction-of-the-token-cost-302784345.html",
+          "title": "Modiqo 完成种子轮融资，以极低代币成本为企业提供确定性 AI 工作流",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-24T01:53:52.375Z",
+          "content_hash": "776c62cfdeacb511",
+          "source_artifact_id": "SA-fb309372649c99dc",
+          "raw_id": "RAW-33945c63dd0020a9"
+        },
+        {
+          "source_id": "FISRC-a45c9fe284c1fa5d",
+          "source_url": "https://raising.fi/news/modiqo-pre-seed-may-2026",
+          "title": "Modiqo Secures $3 Million in Pre-Seed Funding Led by Heavybit and Seligman Ventures | Raising.fi",
+          "publisher": "raising.fi",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:35:03.148Z",
+          "content_hash": "47358ca10899ef1d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-da9a7494d6dd530b",
+          "source_url": "https://www.modiqo.ai/",
+          "title": "rote™ by modiqo — agent tool infrastructure",
+          "publisher": "modiqo.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:35:11.898Z",
+          "content_hash": "60132abbd5ae83bd",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:36:07.928Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:36:07.928Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-9775b60c38285615",
+      "company_name": "Modiqo",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Modiqo\" \"\" funding investors round",
+        "site:modiqo.ai \"Modiqo\" product customers case study",
+        "\"Modiqo\" \"Modiqo Raises Pre-Seed Round to Bring Deterministic AI Workflows to Enterprises at a Fraction of the Token Cost\" competitors product use case",
+        "\"Modiqo\" \"\" investor quote why invested",
+        "\"Modiqo\" \"\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Modiqo\" \"\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Modiqo\" \"\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "site:modiqo.ai \"Modiqo\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "site:modiqo.ai \"Modiqo\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Modiqo\" \"Modiqo Raises Pre-Seed Round to Bring Deterministic AI Workflows to Enterprises at a Fraction of the Token Cost\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Modiqo\" \"Modiqo Raises Pre-Seed Round to Bring Deterministic AI Workflows to Enterprises at a Fraction of the Token Cost\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Modiqo\" \"\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Modiqo\" \"\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Modiqo\" \"\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Modiqo\" \"\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:36:13.796Z"
+    },
+    {
+      "event_id": "EV-da6fe8c311fc8406",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-26T15:14:34.113Z"
+    },
+    {
+      "event_id": "EV-4118202ed0f91895",
+      "company_name": "Groq",
+      "status": "blocked",
+      "problems": [
+        "deepseek_json_quality_failed:investors_missing"
+      ],
+      "queries": [
+        "\"Groq\" \"6.5 亿\" funding investors round",
+        "\"Groq\" product customers case study",
+        "\"Groq\" \"Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资\" competitors product use case",
+        "\"Groq\" \"6.5 亿\" investor quote why invested",
+        "\"Groq\" \"6.5 亿\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Groq\" \"6.5 亿\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq\" \"6.5 亿\" funding investors round",
+          "status": "failed",
+          "error": "fetch failed"
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Groq\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Groq\" \"Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq\" \"Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Groq\" \"6.5 亿\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq\" \"6.5 亿\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Groq\" \"6.5 亿\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq\" \"6.5 亿\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:14:34.113Z"
+    }
+  ]
+}

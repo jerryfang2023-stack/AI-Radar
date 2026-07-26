@@ -1,0 +1,2834 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-28",
+    "generated_at": "2026-07-26T15:14:57.834Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 4,
+      "auto_published": 4,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-3d0c1f24bc33a340",
+      "triggered_by_event_id": "EV-d4d7b019ff0015df",
+      "as_of_date": "2026-06-28",
+      "company": {
+        "entity_id": "EN-6f7ac1823da81d2e",
+        "name": "DeepSeek",
+        "full_name": "DeepSeek",
+        "website": "",
+        "summary": "DeepSeek是一家中国人工智能研究实验室，以开源权重模型和极高的成本效率闻名，其V3和R1模型曾以远低于西方实验室的训练成本实现接近前沿的性能。公司此前完全由创始人梁文锋的量化对冲基金幻方量化资助，在2026年6月完成了首次外部融资。",
+        "headquarters": "杭州",
+        "founders": [
+          {
+            "name": "梁文锋",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d2c8c841370ed82a",
+                "quote": "DeepSeek was founded in 2023 inside Liang's quantitative hedge fund High-Flyer (幻方量化)"
+              },
+              {
+                "source_id": "FISRC-20480dcf3f970893",
+                "quote": "DeepSeek founder and CEO Liang Wenfeng"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d2c8c841370ed82a",
+            "quote": "DeepSeek was founded in 2023 inside Liang's quantitative hedge fund High-Flyer (幻方量化)"
+          }
+        ]
+      },
+      "financing": {
+        "round": "首次外部融资轮",
+        "amount": "约74亿美元（约500亿元人民币）",
+        "total_raised": "约74亿美元（约500亿元人民币）",
+        "announced_at": "2026-06-03",
+        "investors": [
+          {
+            "name": "梁文锋",
+            "role": "本轮领投（创始人个人出资）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d2c8c841370ed82a",
+                "quote": "Liang Wenfeng personally ​¥20B (the largest single check)"
+              },
+              {
+                "source_id": "FISRC-20480dcf3f970893",
+                "quote": "Founder Liang Wenfeng personally contributed roughly $2.8 billion to the round"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "腾讯",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d2c8c841370ed82a",
+                "quote": "Tencent ​¥10B"
+              },
+              {
+                "source_id": "FISRC-20480dcf3f970893",
+                "quote": "Strategic capital was anchored by Tencent"
+              }
+            ],
+            "entity_id": "EN-9c8ae69b84f21a2e"
+          },
+          {
+            "name": "宁德时代",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d2c8c841370ed82a",
+                "quote": "CATL ​¥5B"
+              },
+              {
+                "source_id": "FISRC-20480dcf3f970893",
+                "quote": "battery manufacturer CATL"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "京东",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d2c8c841370ed82a",
+                "quote": "JD.com and IDG ​¥3B each"
+              }
+            ],
+            "entity_id": "EN-81baf57e05f11276"
+          },
+          {
+            "name": "IDG资本",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d2c8c841370ed82a",
+                "quote": "JD.com and IDG ​¥3B each"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "国家人工智能产业投资基金",
+            "role": "本轮参投（唯一拥有直接投票权的投资方）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d2c8c841370ed82a",
+                "quote": "the National AI Industry Investment Fund ​¥1B as a direct equity investment"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "网易",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cb79cada9cfde759",
+                "quote": "NetEase, e-commerce group JD.com, Hong Kong-based IDG Capital and Monolith Capital, and several state-backed artificial intelligence investment funds round out the prospective syndicate"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Monolith Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-cb79cada9cfde759",
+                "quote": "Monolith Capital"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a55dd4cece8f3af3",
+            "quote": "DeepSeek raises $7.4B 💰"
+          },
+          {
+            "source_id": "FISRC-d2c8c841370ed82a",
+            "quote": "DeepSeek has closed its first external funding round: RMB 50 billion (~$7.4 billion) at a valuation above $50 billion"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "DeepSeek V4-Pro",
+          "description": "一个拥有1.6万亿总参数、490亿活跃参数的开源权重模型，支持100万token上下文窗口，采用混合注意力架构以大幅降低长上下文推理成本。",
+          "target_customers": "开发者和企业",
+          "features": [
+            "100万token上下文窗口",
+            "混合注意力架构",
+            "开源权重"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-708fa87b6b0c5e93",
+              "quote": "DeepSeek V4 launched April 24, 2026 in two open-weight variants — V4-Pro (1.6T total / 49B active parameters) and V4-Flash (284B total / 13B active) — both with 1M-token context windows."
+            },
+            {
+              "source_id": "FISRC-708fa87b6b0c5e93",
+              "quote": "Its hybrid attention architecture reduces inference cost dramatically at long context"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "DeepSeek V4-Flash",
+          "description": "V4系列中更轻量的开源权重模型，拥有2840亿总参数、130亿活跃参数，同样支持100万token上下文窗口，以极低成本提供高性能推理。",
+          "target_customers": "对成本敏感的开发者",
+          "features": [
+            "100万token上下文窗口",
+            "极低推理成本",
+            "开源权重"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-708fa87b6b0c5e93",
+              "quote": "V4-Flash (284B total / 13B active) — both with 1M-token context windows"
+            },
+            {
+              "source_id": "FISRC-708fa87b6b0c5e93",
+              "quote": "V4-Flash is positioned at roughly $0.14 input / $0.28 output per million tokens"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Anthropic",
+          "product": "Claude Code",
+          "scenario": "AI编程智能体，通过终端执行、文件I/O和工具调用来完成软件开发任务。",
+          "target_customer": "软件开发者",
+          "funding_summary": "估值约9650亿美元",
+          "core_difference": "DeepSeek正在构建开源的Code Harness直接对标Claude Code，而Claude Code已实现超过25亿美元的年化收入，DeepSeek尚未公布商业化进展。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "explicitly benchmarked against Anthropic's Claude Code"
+            },
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "Claude Code has built an AI Coding business with annualized revenue exceeding $2.5B"
+            }
+          ]
+        },
+        {
+          "name": "OpenAI",
+          "product": "Codex",
+          "scenario": "AI编程助手，为开发者提供代码生成和编辑功能。",
+          "target_customer": "软件开发者",
+          "funding_summary": "估值约8520亿美元",
+          "core_difference": "OpenAI的Codex周活跃用户从300万增长到400万仅用了15天，显示出强大的用户基础；DeepSeek的Code Harness仍处于团队组建阶段。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "OpenAI's Codex grew weekly active users from 3M to 4M in 15 days"
+            }
+          ]
+        },
+        {
+          "name": "OpenAI",
+          "product": "GPT-5.5",
+          "scenario": "通用前沿大语言模型，通过API提供付费服务。",
+          "target_customer": "开发者和企业",
+          "funding_summary": "估值约8520亿美元",
+          "core_difference": "DeepSeek V4-Pro的API定价远低于GPT-5.5，缓存命中价约为GPT-5.5长上下文价格的1/14960；在GPQA Diamond基准上，V4 Pro得分90.1%，GPT-5.5得分93.6%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "Cache-hit pricing of ​¥0.025 per million tokens is, per the report, approximately 1/14,960 of GPT-5.5's long-context tier."
+            },
+            {
+              "source_id": "FISRC-d2b1667b3a58b725",
+              "quote": "DeepSeek V4 Pro, released in April 2026, scores 90.1% on GPQA Diamond (graduate-level reasoning), compared to 93.6% for GPT-5.5."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "V4-Flash周调用量",
+          "value": "3.69万亿token",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "DeepSeek-V4-Flash has been #1 globally for three consecutive weeks at 3.69 trillion tokens per week"
+            }
+          ]
+        },
+        {
+          "label": "2025年净利润",
+          "value": "约4.7亿美元",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2b1667b3a58b725",
+              "quote": "generated an estimated $470 million in net profit during 2025"
+            }
+          ]
+        },
+        {
+          "label": "V4-Pro API输入价格",
+          "value": "每百万token 1.74美元",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2b1667b3a58b725",
+              "quote": "V4 Pro costs $1.74 per million input tokens"
+            }
+          ]
+        },
+        {
+          "label": "V4-Flash API输入价格",
+          "value": "每百万token 0.14美元",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2b1667b3a58b725",
+              "quote": "DeepSeek V4 Flash runs at $0.14 per million input tokens"
+            }
+          ]
+        },
+        {
+          "label": "GPQA Diamond基准得分",
+          "value": "90.1%",
+          "observed_at": "2026-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2b1667b3a58b725",
+              "quote": "DeepSeek V4 Pro, released in April 2026, scores 90.1% on GPQA Diamond"
+            }
+          ]
+        },
+        {
+          "label": "幻方量化2025年平均回报率",
+          "value": "56.55%",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "its 2025 product lineup posted an average return of 56.55%"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "梁文锋",
+          "quote": "Money has never been the problem for us. Bans on shipments of advanced chips are the problem.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-747c957073ba3853",
+              "quote": "Money has never been the problem for us. Bans on shipments of advanced chips are the problem."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是中国在AI前沿领域拥有一个不受西方资本控制的、具备国家战略意义的开源模型实验室。本轮融资的估值（520亿至590亿美元）并非基于其当前收入，而是基于其作为中国AI“国家队”的战略期权价值、极致的成本效率优势，以及通过开源策略对西方闭源模型定价体系的持续破坏力。已验证的信号包括：V4系列模型在多个基准上接近GPT-5.5和Claude Opus 4.7的性能，同时API价格仅为后者的几十分之一；V4-Flash连续三周位居全球模型调用量第一；公司已积累1.27亿月活用户。然而，这些判断的证据边界在于，公司的商业化路径尚不清晰，其开源策略直接限制了API收入的增长空间，且本轮融资的结构设计（外部投资者无投票权、五年锁定期）本身就反映了投资者对治理风险的妥协。",
+        "validated_signals": [
+          "V4系列模型在GPQA Diamond等基准上得分接近GPT-5.5和Claude Opus 4.7，但API价格远低于对手。",
+          "V4-Flash连续三周位居OpenRouter全球模型调用量第一，周调用量达3.69万亿token。",
+          "截至2026年3月，DeepSeek月活跃用户数约1.27亿，5月网站访问量达5.41亿，中国排名第一。",
+          "公司在2025年实现了约4.7亿美元的净利润，而同期OpenAI亏损约50亿美元。",
+          "创始人梁文锋个人出资约29.4亿美元，占本轮融资的40%，显示其对公司的绝对承诺和控制力。"
+        ],
+        "risks": [
+          "商业化路径不明确：公司向投资者承诺聚焦AGI研究和开源，而非短期商业化，其开源策略直接限制了API的直接收入潜力，高估值缺乏可验证的收入模型支撑。",
+          "人才流失压力持续：本轮融资的触发因素之一是核心研究人员被竞争对手高薪挖角，单轮融资无法从根本上解决人才保留问题。",
+          "地缘政治风险加剧：国家AI产业投资基金的参与强化了DeepSeek作为中国战略资产的属性，可能加速西方市场的禁令和限制，进一步压缩其海外商业空间。"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "sector": "人工智能基础模型与开源生态"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "DeepSeek V4-Pro",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-708fa87b6b0c5e93",
+              "quote": "DeepSeek V4 launched April 24, 2026 in two open-weight variants — V4-Pro (1.6T total / 49B active parameters) and V4-Flash (284B total / 13B active) — both with 1M-token context windows."
+            },
+            {
+              "source_id": "FISRC-708fa87b6b0c5e93",
+              "quote": "Its hybrid attention architecture reduces inference cost dramatically at long context"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "DeepSeek V4-Flash",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-708fa87b6b0c5e93",
+              "quote": "V4-Flash (284B total / 13B active) — both with 1M-token context windows"
+            },
+            {
+              "source_id": "FISRC-708fa87b6b0c5e93",
+              "quote": "V4-Flash is positioned at roughly $0.14 input / $0.28 output per million tokens"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "梁文锋",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "DeepSeek was founded in 2023 inside Liang's quantitative hedge fund High-Flyer (幻方量化)"
+            },
+            {
+              "source_id": "FISRC-20480dcf3f970893",
+              "quote": "DeepSeek founder and CEO Liang Wenfeng"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "梁文锋",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "Liang Wenfeng personally ​¥20B (the largest single check)"
+            },
+            {
+              "source_id": "FISRC-20480dcf3f970893",
+              "quote": "Founder Liang Wenfeng personally contributed roughly $2.8 billion to the round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "腾讯",
+          "canonical_entity_id": "EN-9c8ae69b84f21a2e",
+          "canonical_name": "腾讯",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "Tencent ​¥10B"
+            },
+            {
+              "source_id": "FISRC-20480dcf3f970893",
+              "quote": "Strategic capital was anchored by Tencent"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "宁德时代",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "CATL ​¥5B"
+            },
+            {
+              "source_id": "FISRC-20480dcf3f970893",
+              "quote": "battery manufacturer CATL"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "京东",
+          "canonical_entity_id": "EN-81baf57e05f11276",
+          "canonical_name": "京东",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "JD.com and IDG ​¥3B each"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IDG资本",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "JD.com and IDG ​¥3B each"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "国家人工智能产业投资基金",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "the National AI Industry Investment Fund ​¥1B as a direct equity investment"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "网易",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cb79cada9cfde759",
+              "quote": "NetEase, e-commerce group JD.com, Hong Kong-based IDG Capital and Monolith Capital, and several state-backed artificial intelligence investment funds round out the prospective syndicate"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Monolith Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cb79cada9cfde759",
+              "quote": "Monolith Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "explicitly benchmarked against Anthropic's Claude Code"
+            },
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "Claude Code has built an AI Coding business with annualized revenue exceeding $2.5B"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "OpenAI's Codex grew weekly active users from 3M to 4M in 15 days"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2c8c841370ed82a",
+              "quote": "Cache-hit pricing of ​¥0.025 per million tokens is, per the report, approximately 1/14,960 of GPT-5.5's long-context tier."
+            },
+            {
+              "source_id": "FISRC-d2b1667b3a58b725",
+              "quote": "DeepSeek V4 Pro, released in April 2026, scores 90.1% on GPQA Diamond (graduate-level reasoning), compared to 93.6% for GPT-5.5."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-87432dbb99cd6033",
+          "date": "2026-07-14",
+          "title": "DeepSeek 新一轮融资估值约710亿美元，资金将用于自建数据中心和AI芯片",
+          "amount": "$71 billion",
+          "source_refs": [
+            "SA-4793761bc6a08279"
+          ]
+        },
+        {
+          "event_id": "EV-d4d7b019ff0015df",
+          "date": "2026-06-28",
+          "title": "GLM-5.2 🤖，DeepSeek 融资 74 亿美元 💰，Android MCP 📱",
+          "amount": "$7.4B",
+          "source_refs": [
+            "SA-d7cc100a5f6aab14"
+          ]
+        },
+        {
+          "event_id": "EV-27b69ea604475b72",
+          "date": "2026-06-17",
+          "title": "IT早报：DeepSeek 4000亿元融资；微信支付AI专属卡；Android 17正式版",
+          "amount": "4000 亿",
+          "source_refs": [
+            "SA-4ab5250eb55db7ce"
+          ]
+        },
+        {
+          "event_id": "EV-f8c3a83d883c9b22",
+          "date": "2026-06-16",
+          "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
+          "amount": "50 billion",
+          "source_refs": [
+            "SA-8a94a189bf763b0b"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-a55dd4cece8f3af3",
+          "source_url": "https://tldr.tech/ai/2026-06-17",
+          "title": "GLM-5.2 🤖，DeepSeek 融资 74 亿美元 💰，Android MCP 📱",
+          "publisher": "TLDR AI Newsletter",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-28T04:05:28.140Z",
+          "content_hash": "0e630014531c2a4e",
+          "source_artifact_id": "SA-d7cc100a5f6aab14",
+          "raw_id": "RAW-4bca356da6f6b376"
+        },
+        {
+          "source_id": "FISRC-d2c8c841370ed82a",
+          "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
+          "title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
+          "publisher": "ashareinsights.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:40:46.621Z",
+          "content_hash": "1a156474d760e02b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-20480dcf3f970893",
+          "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
+          "title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
+          "publisher": "ventureburn.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:40:47.485Z",
+          "content_hash": "94a6c6ef0b270e0d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-cb79cada9cfde759",
+          "source_url": "https://techfastforward.com/articles/deepseek-raises-7-4b-at-up-to-a-59b-value-in-2026",
+          "title": "DeepSeek Raises 7.4B at 59B and Ends VC-Free Run 2026 | TechFastForward",
+          "publisher": "techfastforward.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:40:49.165Z",
+          "content_hash": "3082f211a1386051",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-708fa87b6b0c5e93",
+          "source_url": "https://www.digitalapplied.com/blog/deepseek-7-4b-funding-round-open-weight-economics-2026",
+          "title": "DeepSeek's First Raise: ~$7.4B and Open-Weight Stakes",
+          "publisher": "digitalapplied.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:40:50.435Z",
+          "content_hash": "181a4f5d99becdb1",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d2b1667b3a58b725",
+          "source_url": "https://airisingtrends.com/deepseek-first-funding-round-59-billion-valuation/",
+          "title": "DeepSeek $7.4B Funding Round at $59B Valuation: First Outside Capital",
+          "publisher": "airisingtrends.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:41:05.701Z",
+          "content_hash": "7f9608acbd621908",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-747c957073ba3853",
+          "source_url": "https://www.wangdoo.com/deepseek-raises-7-4-billion-to-advance-open-source-ai/",
+          "title": "Why Deepseek Chinese AI is raising $7.4 billion. Wangdoo!",
+          "publisher": "wangdoo.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:41:06.699Z",
+          "content_hash": "e9b2324e29dbb97a",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:41:50.578Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:41:50.578Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-01b70d8acfeaf371",
+      "triggered_by_event_id": "EV-7817dc69d5228cbb",
+      "as_of_date": "2026-06-28",
+      "company": {
+        "entity_id": "EN-e69f64149edae6b1",
+        "name": "Runlayer",
+        "full_name": "Runlayer",
+        "website": "https://www.runlayer.com",
+        "summary": "Runlayer 是一个帮助企业成为AI原生组织的平台，为每位员工提供一条安全、受管控的“黄金路径”，使其能够将实际工作委托给AI智能体，同时将AI赋能、安全治理和成本控制整合于单一平台。",
+        "headquarters": "纽约",
+        "founders": [
+          {
+            "name": "Andrew Berman",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-06082ac5aeed96c9",
+                "quote": "Runlayer is led by Andrew Berman, a three-time founder who was most recently Director of AI at Zapier"
+              },
+              {
+                "source_id": "FISRC-7ef10faa47e7acd6",
+                "quote": "Founded by Andy Berman, Tal Peretz, and Vitor Balocco"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tal Peretz",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7ef10faa47e7acd6",
+                "quote": "Founded by Andy Berman, Tal Peretz, and Vitor Balocco"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vitor Balocco",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7ef10faa47e7acd6",
+                "quote": "Founded by Andy Berman, Tal Peretz, and Vitor Balocco"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ef4e64efecd2b0f8",
+            "quote": "New York-based startup Runlayer"
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "3000万美元",
+        "total_raised": "4200万美元",
+        "announced_at": "2026-06-24",
+        "investors": [
+          {
+            "name": "Felicis",
+            "role": "本轮领投，种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-06082ac5aeed96c9",
+                "quote": "a $30 million Series A led by Felicis"
+              },
+              {
+                "source_id": "FISRC-ef4e64efecd2b0f8",
+                "quote": "Felicis preempted the round — a strong signal of investor conviction — after having also led the company’s $11 million seed round"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Khosla Ventures",
+            "role": "本轮参投，种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-06082ac5aeed96c9",
+                "quote": "with participation from Khosla Ventures"
+              },
+              {
+                "source_id": "FISRC-06082ac5aeed96c9",
+                "quote": "Jon Chu, the Partner at Khosla Ventures that led both their seed and A round investments into Runlayer"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d5cd7f6381664528",
+            "quote": "We've raised a $30M Series A from Felicis and Khosla Ventures, bringing total funding to $42M"
+          },
+          {
+            "source_id": "FISRC-06082ac5aeed96c9",
+            "quote": "announced a $30 million Series A led by Felicis, with participation from Khosla Ventures. This brings Runlayer's total capital raised to $42 million."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Runlayer平台",
+          "description": "一个模型中立的企业AI赋能、安全与管控一体化平台，为每位员工提供一条受管控的“黄金路径”，使其能够将工作委托给AI智能体，同时为安全和IT团队提供全栈可见性和控制力。",
+          "target_customers": "企业客户，包括财富500强和高增长科技公司",
+          "features": [
+            "支持企业使用的5-20种AI客户端，包括IDE、聊天客户端、垂直AI应用、独立智能体和Salesforce Agentforce等平台",
+            "提供身份、权限、策略执行、审计日志和实时可见性，关联到每一个操作",
+            "Runlayer Watch功能识别影子AI，将员工引导至已批准的工具",
+            "结合安全、可观测性和成本控制于一层，控制智能体、令牌和模型消耗",
+            "静态和动态安全模型提供全会话可观测性，捕获提示注入、工具投毒、输出操纵、数据泄露和意图漂移"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d5cd7f6381664528",
+              "quote": "Runlayer bundles enablement, security, and control all into a single, model-neutral platform. We support the 5–20 AI clients the average enterprise uses, including IDEs, chat clients, vertical AI apps, independent agents, and platforms like Salesforce Agentforce."
+            },
+            {
+              "source_id": "FISRC-06082ac5aeed96c9",
+              "quote": "Runlayer gives every employee a golden path to delegating real work to agents, with AI enablement and control built into one platform."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Instacart",
+          "industry": "零售/电商",
+          "use_case": "使用Runlayer平台实现AI赋能与管控",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d5cd7f6381664528",
+              "quote": "we've already signed some of the fastest-growing companies like Instacart"
+            }
+          ]
+        },
+        {
+          "name": "Gusto",
+          "industry": "人力资源/薪资管理",
+          "use_case": "通过Runlayer统一管理84个MCP服务器，为3000多名知识工作者提供安全的AI驱动工作流，实现会话式跨SaaS平台交互",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2af058da11633f9",
+              "quote": "How Gusto Ignited an AI-Driven Workflow Revolution Across 3,000+ Knowledge Workers With Runlayer"
+            },
+            {
+              "source_id": "FISRC-d2af058da11633f9",
+              "quote": "84 MCP servers managed through one platform"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Wiz",
+          "product": "云安全平台",
+          "scenario": "企业AI安全与治理",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "Runlayer定位为中立、跨供应商的AI管控层，而Wiz正在构建自身的智能体治理能力，可能被视为特定平台方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef4e64efecd2b0f8",
+              "quote": "Wiz, Palo Alto Networks, and Okta are all building agent governance capabilities of their own, but Runlayer is positioning itself as a neutral, cross-provider control layer"
+            }
+          ]
+        },
+        {
+          "name": "Palo Alto Networks",
+          "product": "网络安全平台",
+          "scenario": "企业AI安全与治理",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "Runlayer定位为中立、跨供应商的AI管控层，而Palo Alto Networks正在构建自身的智能体治理能力，可能被视为特定平台方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef4e64efecd2b0f8",
+              "quote": "Wiz, Palo Alto Networks, and Okta are all building agent governance capabilities of their own, but Runlayer is positioning itself as a neutral, cross-provider control layer"
+            }
+          ]
+        },
+        {
+          "name": "Okta",
+          "product": "身份管理平台",
+          "scenario": "企业AI安全与治理",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "Runlayer定位为中立、跨供应商的AI管控层，而Okta正在构建自身的智能体治理能力，可能被视为特定平台方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef4e64efecd2b0f8",
+              "quote": "Wiz, Palo Alto Networks, and Okta are all building agent governance capabilities of their own, but Runlayer is positioning itself as a neutral, cross-provider control layer"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "客户Gusto的知识工作者覆盖数",
+          "value": "3000+",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2af058da11633f9",
+              "quote": "3K+ Knowledge workers connecting tools, agents, and MCPs with Runlayer"
+            }
+          ]
+        },
+        {
+          "label": "客户Gusto的MCP服务器管理数",
+          "value": "84",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2af058da11633f9",
+              "quote": "84 MCP servers managed through one platform"
+            }
+          ]
+        },
+        {
+          "label": "客户Gusto的完全集成时间",
+          "value": "4周",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2af058da11633f9",
+              "quote": "4 Weeks to full integration"
+            }
+          ]
+        },
+        {
+          "label": "企业平均使用的AI客户端数量",
+          "value": "5-20",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d5cd7f6381664528",
+              "quote": "We support the 5–20 AI clients the average enterprise uses"
+            }
+          ]
+        },
+        {
+          "label": "未受管控的企业AI用户比例（估算）",
+          "value": "78%",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef4e64efecd2b0f8",
+              "quote": "The company estimates that as many as 78% of enterprise AI users are running unmanaged tools their employers have no visibility into"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Jake Storm",
+          "quote": "Runlayer is solving one of the most important enterprise problems of this moment: how to adopt AI at scale without losing control. This is the right team, in the right market, at the right time, which is why Felicis pre-empted this round.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-06082ac5aeed96c9",
+              "quote": "Runlayer is solving one of the most important enterprise problems of this moment: how to adopt AI at scale without losing control. This is the right team, in the right market, at the right time, which is why Felicis pre-empted this round."
+            }
+          ]
+        },
+        {
+          "speaker": "Jon Chu",
+          "quote": "Runlayer is one of those rare companies where the consequences of success are so large that almost nothing else matters. The team has found a powerful wedge by giving enterprises the solution they need to become AI-enabled.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-06082ac5aeed96c9",
+              "quote": "Runlayer is one of those rare companies where the consequences of success are so large that almost nothing else matters. The team has found a powerful wedge by giving enterprises the solution they need to become AI-enabled."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Felicis",
+            "speaker": "Jake Storm",
+            "speaker_role": "General Partner",
+            "rationale": "Felicis认为Runlayer正在解决企业当前最重要的难题：如何在不失控的情况下大规模采用AI。团队、市场和时机都恰到好处，因此Felicis抢先领投了本轮融资。",
+            "quote": "Runlayer is solving one of the most important enterprise problems of this moment: how to adopt AI at scale without losing control. This is the right team, in the right market, at the right time, which is why Felicis pre-empted this round.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-06082ac5aeed96c9",
+                "quote": "Runlayer is solving one of the most important enterprise problems of this moment: how to adopt AI at scale without losing control. This is the right team, in the right market, at the right time, which is why Felicis pre-empted this round."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：企业AI智能体从实验走向核心战略时，必然需要一个中立的、跨供应商的治理与管控基础设施层。本轮融资的已验证信号包括：1）从隐身模式推出仅6个月即签约Instacart、Gusto等多家高增长公司和财富500强客户；2）Gusto案例中已实现3000+知识工作者、84个MCP服务器的统一管理，4周完成完全集成，验证了产品在企业级场景的落地能力；3）Felicis主动抢先领投（pre-empted the round），且Khosla Ventures合伙人表示“想买下本轮所有可用的额度”，显示顶级投资机构对赛道和团队的极高确信度。判断的证据边界：当前验证集中于早期采用者（AI-maximalist companies）和科技公司，尚未看到传统行业的规模化复制证据；竞争格局中Wiz、Palo Alto Networks、Okta等巨头正在构建自身能力，Runlayer的“瑞士模式”中立定位能否在巨头挤压下持续成立仍需观察。",
+        "validated_signals": [
+          "从隐身模式推出6个月内签约Instacart、Gusto、Decagon、Opendoor、dbt Labs、AngelList、Lemonade及多家财富500强客户",
+          "Gusto案例中实现3000+知识工作者、84个MCP服务器统一管理，4周完全集成",
+          "Felicis主动抢先领投（pre-empted the round），Khosla Ventures表示想买下本轮所有可用额度",
+          "团队吸引了来自NVIDIA、Anthropic、Cursor、Databricks、Snowflake、Uber、Meta、Google等公司的工程师"
+        ],
+        "risks": [
+          "Wiz、Palo Alto Networks、Okta等安全与身份巨头正在构建自身的智能体治理能力，Runlayer的“中立跨供应商管控层”定位可能面临被巨头吸收或挤压的风险，部分早期治理工具已被质疑为“合规表演”。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业AI安全与治理基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Runlayer平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d5cd7f6381664528",
+              "quote": "Runlayer bundles enablement, security, and control all into a single, model-neutral platform. We support the 5–20 AI clients the average enterprise uses, including IDEs, chat clients, vertical AI apps, independent agents, and platforms like Salesforce Agentforce."
+            },
+            {
+              "source_id": "FISRC-06082ac5aeed96c9",
+              "quote": "Runlayer gives every employee a golden path to delegating real work to agents, with AI enablement and control built into one platform."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Andrew Berman",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-06082ac5aeed96c9",
+              "quote": "Runlayer is led by Andrew Berman, a three-time founder who was most recently Director of AI at Zapier"
+            },
+            {
+              "source_id": "FISRC-7ef10faa47e7acd6",
+              "quote": "Founded by Andy Berman, Tal Peretz, and Vitor Balocco"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Tal Peretz",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ef10faa47e7acd6",
+              "quote": "Founded by Andy Berman, Tal Peretz, and Vitor Balocco"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vitor Balocco",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ef10faa47e7acd6",
+              "quote": "Founded by Andy Berman, Tal Peretz, and Vitor Balocco"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Felicis",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-06082ac5aeed96c9",
+              "quote": "a $30 million Series A led by Felicis"
+            },
+            {
+              "source_id": "FISRC-ef4e64efecd2b0f8",
+              "quote": "Felicis preempted the round — a strong signal of investor conviction — after having also led the company’s $11 million seed round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Khosla Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-06082ac5aeed96c9",
+              "quote": "with participation from Khosla Ventures"
+            },
+            {
+              "source_id": "FISRC-06082ac5aeed96c9",
+              "quote": "Jon Chu, the Partner at Khosla Ventures that led both their seed and A round investments into Runlayer"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Instacart",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d5cd7f6381664528",
+              "quote": "we've already signed some of the fastest-growing companies like Instacart"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Gusto",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d2af058da11633f9",
+              "quote": "How Gusto Ignited an AI-Driven Workflow Revolution Across 3,000+ Knowledge Workers With Runlayer"
+            },
+            {
+              "source_id": "FISRC-d2af058da11633f9",
+              "quote": "84 MCP servers managed through one platform"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Wiz",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef4e64efecd2b0f8",
+              "quote": "Wiz, Palo Alto Networks, and Okta are all building agent governance capabilities of their own, but Runlayer is positioning itself as a neutral, cross-provider control layer"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Palo Alto Networks",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef4e64efecd2b0f8",
+              "quote": "Wiz, Palo Alto Networks, and Okta are all building agent governance capabilities of their own, but Runlayer is positioning itself as a neutral, cross-provider control layer"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Okta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef4e64efecd2b0f8",
+              "quote": "Wiz, Palo Alto Networks, and Okta are all building agent governance capabilities of their own, but Runlayer is positioning itself as a neutral, cross-provider control layer"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-7817dc69d5228cbb",
+          "date": "2026-06-28",
+          "title": "Runlayer 完成3000万美元A轮融资，全力押注人工智能",
+          "amount": "$30M",
+          "source_refs": [
+            "SA-317effbacd477100",
+            "SA-e325cb15daaff611"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-d5cd7f6381664528",
+          "source_url": "https://www.runlayer.com/blog/series-A-30m-fundraise-felicis-khosla",
+          "title": "Runlayer 完成3000万美元A轮融资，全力押注人工智能",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-28T04:05:27.893Z",
+          "content_hash": "b9ede5d5eacfb435",
+          "source_artifact_id": "SA-317effbacd477100",
+          "raw_id": "RAW-ffb88aabd1f6e3f4"
+        },
+        {
+          "source_id": "FISRC-06082ac5aeed96c9",
+          "source_url": "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html",
+          "title": "Runlayer 获 3000 万美元 A 轮融资，助力企业全面拥抱 AI",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-28T04:05:27.901Z",
+          "content_hash": "6fd7da0cbf7f6306",
+          "source_artifact_id": "SA-e325cb15daaff611",
+          "raw_id": "RAW-5a6f03a2df6d9961"
+        },
+        {
+          "source_id": "FISRC-ef4e64efecd2b0f8",
+          "source_url": "https://denotepress.com/runlayer-series-a-funding/",
+          "title": "Runlayer Raises $30M Series A to Build the Enterprise AI Governance Layer - denotepress.com",
+          "publisher": "denotepress.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:39:27.405Z",
+          "content_hash": "36d67b31b12d3716",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7ef10faa47e7acd6",
+          "source_url": "https://startuprise.io/runlayer-raises-30m-series-a-funding-led-by-felicis/",
+          "title": "Runlayer Raises $30M Series A Funding Led by Felicis",
+          "publisher": "startuprise.io",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:39:29.824Z",
+          "content_hash": "9bf2ccbbc8d91bf6",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-d2af058da11633f9",
+          "source_url": "https://www.runlayer.com/customers/gusto",
+          "title": "Gusto Case Study | Runlayer",
+          "publisher": "runlayer.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:39:45.908Z",
+          "content_hash": "4523a66a778919d1",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:40:35.803Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:40:35.803Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-3310a7b9d0359c9d",
+      "triggered_by_event_id": "EV-79a0bbe8b8623b28",
+      "as_of_date": "2026-06-28",
+      "company": {
+        "entity_id": "EN-88ab1e5d793701f9",
+        "name": "Liquid AI",
+        "full_name": "Liquid AI",
+        "website": "https://www.liquid.ai",
+        "summary": "Liquid AI 是一家 MIT 衍生公司，由机器人学权威 Daniela Rus 等人联合创立，旨在构建基于液态神经网络的全新通用 AI 系统。其模型架构比传统生成式 AI 模型更小、更灵活，所需算力显著降低，同时具备持续学习和适应环境变化的能力。",
+        "headquarters": "波士顿（Brookline）和帕洛阿尔托",
+        "founders": [
+          {
+            "name": "Ramin Hasani",
+            "role": "首席执行官（CEO）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1080395d67df2c7",
+                "quote": "Joining Rus on the founding Liquid AI team are Ramin Hasani (CEO)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mathias Lechner",
+            "role": "首席技术官（CTO）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1080395d67df2c7",
+                "quote": "Mathias Lechner (CTO)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alexander Amini",
+            "role": "首席科学官（Chief Scientific Officer）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1080395d67df2c7",
+                "quote": "Alexander Amini (chief scientific officer)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Daniela Rus",
+            "role": "技术顾问及董事会成员",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e5f377f1837e2e5",
+                "quote": "formed the startup with Rus as a technical adviser and member of the board"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "12",
+          "observed_at": "2023-12-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "Liquid AI, which has a presence in Palo Alto in addition to Boston, has a 12-person team."
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d1080395d67df2c7",
+            "quote": "An MIT spinoff co-founded by robotics luminary Daniela Rus aims to build general-purpose AI systems powered by a relatively new type of AI model called a liquid neural network."
+          },
+          {
+            "source_id": "FISRC-4e5f377f1837e2e5",
+            "quote": "Liquid AI, which was founded in March, said it raised $37.5 million in seed funding"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮（两阶段）",
+        "amount": "3750万美元",
+        "total_raised": "3750万美元",
+        "announced_at": "2023-12-06",
+        "investors": [
+          {
+            "name": "OSS Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e5f377f1837e2e5",
+                "quote": "led by Boston Celtics co-owner Stephen Pagliuca and San Francisco venture capital firm OSS Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "PagsGroup",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e5f377f1837e2e5",
+                "quote": "led by Boston Celtics co-owner Stephen Pagliuca and San Francisco venture capital firm OSS Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Automattic",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1080395d67df2c7",
+                "quote": "WordPress parent company Automattic"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung Next",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1080395d67df2c7",
+                "quote": "Samsung Next"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bold Capital Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1080395d67df2c7",
+                "quote": "Bold Capital Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "ISAI Cap Venture",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1080395d67df2c7",
+                "quote": "ISAI Cap Venture"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tom Preston Werner",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1080395d67df2c7",
+                "quote": "angel investors like GitHub co-founder Tom Preston Werner"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tobias Lütke",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1080395d67df2c7",
+                "quote": "Shopify co-founder Tobias Lütke"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bob Young",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d1080395d67df2c7",
+                "quote": "Red Hat co-founder Bob Young"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Marc Casper",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e5f377f1837e2e5",
+                "quote": "Other investors include Thermo Fisher chief executive Marc Casper"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jim Breyer",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4e5f377f1837e2e5",
+                "quote": "Texas venture capitalist Jim Breyer"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d1080395d67df2c7",
+            "quote": "announced that it has raised $37.5 million — substantial for a two-stage seed round — from VCs and organizations including OSS Capital, PagsGroup, WordPress parent company Automattic, Samsung Next, Bold Capital Partners and ISAI Cap Venture, as well as angel investors like GitHub co-founder Tom Preston Werner, Shopify co-founder Tobias Lütke and Red Hat co-founder Bob Young."
+          },
+          {
+            "source_id": "FISRC-4e5f377f1837e2e5",
+            "quote": "Liquid AI, which was founded in March, said it raised $37.5 million in seed funding from high-profile investors led by Boston Celtics co-owner Stephen Pagliuca and San Francisco venture capital firm OSS Capital. Other investors include Thermo Fisher chief executive Marc Casper, RedHat cofounder Bob Young, and Shopify cofounder Tobias Lütke."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "液态基础模型（Liquid Foundation Models, LFMs）",
+          "description": "基于液态神经网络架构构建的通用 AI 基础模型，参数规模远小于传统生成式 AI 模型，所需算力更低，并能随时间动态调整参数以适应环境变化。可用于文本、音频、图像生成及自主导航等任务。",
+          "target_customers": "希望构建私有 AI 应用的企业客户，应用场景包括金融建模、医学研究等。",
+          "features": [
+            "极低算力需求",
+            "持续学习和适应环境变化",
+            "可解释性强",
+            "支持文本、音频、图像生成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e5f377f1837e2e5",
+              "quote": "The company will start by going after corporate clients that want to build private AI apps for financial modeling, medical research, or other uses."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "GPT-3 / GPT-4",
+          "scenario": "文本生成、图像分析等通用生成式 AI 任务",
+          "target_customer": "消费者及企业",
+          "funding_summary": "",
+          "core_difference": "OpenAI 的模型拥有约 1750 亿个参数和约 5 万个神经元，需要数十亿美元的计算成本进行开发；Liquid AI 的液态神经网络模型参数可少至 2 万个，神经元少于 20 个，计算成本和碳足迹显著降低。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "a liquid neural network trained for a task like navigating a drone through an outdoor environment can contain as few as 20,000 parameters and fewer than 20 neurons."
+            },
+            {
+              "source_id": "FISRC-4e5f377f1837e2e5",
+              "quote": "industry leader OpenAI needed billions of dollars to pay for the computing power to develop the model underlying ChatGPT."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "种子轮融资额",
+          "value": "3750万美元",
+          "observed_at": "2023-12-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "announced that it has raised $37.5 million"
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "3.03亿美元",
+          "observed_at": "2023-12-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "The tranche values Liquid AI at $303 million post-money."
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "12人",
+          "observed_at": "2023-12-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "Liquid AI, which has a presence in Palo Alto in addition to Boston, has a 12-person team."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Ramin Hasani",
+          "quote": "You need a fraction of the cost of developing generative AI, and the carbon footprint is much lower. You get the same capabilities with a much smaller representation.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e5f377f1837e2e5",
+              "quote": "“You need a fraction of the cost of developing generative AI, and the carbon footprint is much lower,” Hasani said of Liquid AI. “You get the same capabilities with a much smaller representation.”"
+            }
+          ]
+        },
+        {
+          "speaker": "Ramin Hasani",
+          "quote": "Accountability and safety of large AI models is of paramount importance. Liquid AI offers more capital efficient, reliable, explainable and capable machine learning models for both domain-specific and generative AI applications.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "“Accountability and safety of large AI models is of paramount importance,” Hasani added. “Liquid AI offers more capital efficient, reliable, explainable and capable machine learning models for both domain-specific and generative AI applications.”"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 AI 模型架构的范式转移，即从参数规模驱动转向计算效率和适应性驱动。本轮 3.03 亿美元投后估值所依赖的已验证信号包括：1）液态神经网络在无人机自主导航等具体任务中展现出优于其他模型的泛化能力和抗噪性；2）该架构在理论上能以极低算力（如 Raspberry Pi）运行复杂任务，解决了当前 AI 算力紧缺的痛点。判断的证据边界在于，这些优势目前主要在特定任务（如导航、时间序列预测）中得到验证，其在通用文本、图像生成等主流生成式 AI 任务上能否与 GPT 等成熟模型竞争仍有待观察。",
+        "validated_signals": [
+          "液态神经网络在无人机自主导航测试中，成功在未见过的环境中做出决策并抵达目标，且是唯一无需微调即可可靠泛化到新场景的模型。",
+          "液态神经网络在预测大气化学到汽车交通等数据集的未来值方面，表现优于其他最先进的算法。"
+        ],
+        "risks": [
+          "液态神经网络在通用文本、图像生成等主流生成式 AI 任务上的实际表现尚未得到大规模验证，其与 GPT 等成熟模型的竞争力存疑。"
+        ],
+        "related_direction_id": "",
+        "sector": "人工智能基础模型"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "液态基础模型（Liquid Foundation Models, LFMs）",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e5f377f1837e2e5",
+              "quote": "The company will start by going after corporate clients that want to build private AI apps for financial modeling, medical research, or other uses."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ramin Hasani",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "Joining Rus on the founding Liquid AI team are Ramin Hasani (CEO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mathias Lechner",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "Mathias Lechner (CTO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Alexander Amini",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "Alexander Amini (chief scientific officer)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Daniela Rus",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e5f377f1837e2e5",
+              "quote": "formed the startup with Rus as a technical adviser and member of the board"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "OSS Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e5f377f1837e2e5",
+              "quote": "led by Boston Celtics co-owner Stephen Pagliuca and San Francisco venture capital firm OSS Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "PagsGroup",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e5f377f1837e2e5",
+              "quote": "led by Boston Celtics co-owner Stephen Pagliuca and San Francisco venture capital firm OSS Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Automattic",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "WordPress parent company Automattic"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung Next",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "Samsung Next"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bold Capital Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "Bold Capital Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ISAI Cap Venture",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "ISAI Cap Venture"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Tom Preston Werner",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "angel investors like GitHub co-founder Tom Preston Werner"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Tobias Lütke",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "Shopify co-founder Tobias Lütke"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bob Young",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "Red Hat co-founder Bob Young"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Marc Casper",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e5f377f1837e2e5",
+              "quote": "Other investors include Thermo Fisher chief executive Marc Casper"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jim Breyer",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e5f377f1837e2e5",
+              "quote": "Texas venture capitalist Jim Breyer"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d1080395d67df2c7",
+              "quote": "a liquid neural network trained for a task like navigating a drone through an outdoor environment can contain as few as 20,000 parameters and fewer than 20 neurons."
+            },
+            {
+              "source_id": "FISRC-4e5f377f1837e2e5",
+              "quote": "industry leader OpenAI needed billions of dollars to pay for the computing power to develop the model underlying ChatGPT."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-79a0bbe8b8623b28",
+          "date": "2026-06-28",
+          "title": "MIT 衍生公司 Liquid AI 希望构建一种全新类型的 AI",
+          "amount": "$37.5 million",
+          "source_refs": [
+            "SA-0d13fa3b06a5fcc7"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-d1080395d67df2c7",
+          "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
+          "title": "MIT 衍生公司 Liquid AI 希望构建一种全新类型的 AI",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-28T04:05:27.998Z",
+          "content_hash": "42d5867eaff12416",
+          "source_artifact_id": "SA-0d13fa3b06a5fcc7",
+          "raw_id": "RAW-0331d95c34e0a209"
+        },
+        {
+          "source_id": "FISRC-4e5f377f1837e2e5",
+          "source_url": "https://www.bostonglobe.com/2023/12/06/business/liquid-ai-boston-chatgpt/",
+          "title": "Liquid AI is Boston's answer to ChatGPT",
+          "publisher": "bostonglobe.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:39:21.792Z",
+          "content_hash": "af7dbaee048f0409",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:40:33.359Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:40:33.359Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-7d220ce89ea2b3c9",
+      "triggered_by_event_id": "EV-52bf48005db3461a",
+      "as_of_date": "2026-06-28",
+      "company": {
+        "entity_id": "EN-6b5df3bd8bb0c67d",
+        "name": "Robust.AI",
+        "full_name": "Robust.AI",
+        "website": "https://www.robust.ai/",
+        "summary": "Robust.AI 是一家成立于2019年的机器人公司，致力于打造AI驱动的协作移动机器人，通过以人为本的设计、智能自动化和灵活的工作流程，帮助提升仓库环境中的生产力并简化物料搬运。",
+        "headquarters": "美国加利福尼亚州圣卡洛斯",
+        "founders": [
+          {
+            "name": "Anthony Jules",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-344b2fbfbe7b7c56",
+                "quote": "co-founder, CEO and Brooks’ former student, Anthony Jules"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Rodney Brooks",
+            "role": "联合创始人兼CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-344b2fbfbe7b7c56",
+                "quote": "co-founder and CTO Rodney Brooks"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mohamed R. Amer",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8f70d2ed57d0efd4",
+                "quote": "Robust AI was founded in San Carlos, California in 2019 by Anthony Jules, Rodney Brooks, Mohamed R. Amer, and Henrik Christensen."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Henrik Christensen",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8f70d2ed57d0efd4",
+                "quote": "Robust AI was founded in San Carlos, California in 2019 by Anthony Jules, Rodney Brooks, Mohamed R. Amer, and Henrik Christensen."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "11-50",
+          "observed_at": "2026-08-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4e29cbc583c9f01",
+              "quote": "Employees: 11-50"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-344b2fbfbe7b7c56",
+            "quote": "Founded in May 2019, Robust.AI operates in the extremely popular — and wildly competitive — warehouse space."
+          },
+          {
+            "source_id": "FISRC-ee97e9a02f3c38d9",
+            "quote": "At Robust.AI, we build AI-powered collaborative mobile robots designed to work alongside people in dynamic warehouse environments."
+          }
+        ]
+      },
+      "financing": {
+        "round": "A-1轮",
+        "amount": "$20M",
+        "total_raised": "$42.5M",
+        "announced_at": "2023-04-20",
+        "investors": [
+          {
+            "name": "Prime Movers Lab",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-344b2fbfbe7b7c56",
+                "quote": "a $20 million Series A-1, led by Prime Movers Lab"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Future Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-344b2fbfbe7b7c56",
+                "quote": "featuring Future Ventures, Energy Impact Partners, JAZZ Ventures and Playground Global"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Energy Impact Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-344b2fbfbe7b7c56",
+                "quote": "featuring Future Ventures, Energy Impact Partners, JAZZ Ventures and Playground Global"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "JAZZ Ventures",
+            "role": "本轮参投，A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4e29cbc583c9f01",
+                "quote": "04.11.2020 Series A $22.5M -"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Playground Global",
+            "role": "本轮参投，A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f4e29cbc583c9f01",
+                "quote": "04.11.2020 Series A $22.5M -"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-344b2fbfbe7b7c56",
+            "quote": "This morning, Robust is announcing a $20 million Series A-1, led by Prime Movers Lab and featuring Future Ventures, Energy Impact Partners, JAZZ Ventures and Playground Global."
+          },
+          {
+            "source_id": "FISRC-f4e29cbc583c9f01",
+            "quote": "Total raised: $42.5M"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Carter",
+          "description": "一款完全自主的协作式自主移动机器人（AMR），专为在动态仓库环境中与人员协同工作而设计，可自主导航或由人工手动移动。",
+          "target_customers": "仓库、物流、第三方物流（3PL）、制造、零售、酒店、医疗保健",
+          "features": [
+            "自主导航与跟随",
+            "支持人工手动抓取把手移动",
+            "软件定义工作流，无需额外硬件即可切换任务",
+            "零基础设施改造即可部署"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "Carter — an autonomous warehouse cart — is paired with Grace, Robust’s software offering."
+            },
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "While they can navigate autonomously or follow workers around after a quick setup, human employees can also grab the handles and move them around manually, as needed."
+            },
+            {
+              "source_id": "FISRC-ee97e9a02f3c38d9",
+              "quote": "Zero infrastructure changes needed, rapid deployment, and faster productivity from day one."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Grace",
+          "description": "与Carter机器人配套的软件系统，用于映射位置、工作流程和行为，支持无代码设置和定制。",
+          "target_customers": "采用Carter机器人的仓库与物流客户",
+          "features": [
+            "无代码设置与定制",
+            "机器人车队工作流与行为映射"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "Carter — an autonomous warehouse cart — is paired with Grace, Robust’s software offering."
+            },
+            {
+              "source_id": "FISRC-8f70d2ed57d0efd4",
+              "quote": "Robust AI software helps to map out locations, workflows, and behaviors for the robot fleet in a day with no-code setup and customization tools."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "DHL Supply Chain",
+          "industry": "合同物流",
+          "use_case": "在北美和墨西哥的仓库中部署Carter协作移动机器人，用于提升拣选生产力、安全性和运营效率。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ad4d5e527f0ed235",
+              "quote": "DHL Supply Chain and Robust.AI deepen their strategic partnership through co-development, feature innovation, and a scalable deployment roadmap across regions."
+            },
+            {
+              "source_id": "FISRC-4f69aa3ddf28ad2c",
+              "quote": "The Carter™ deployment at the DHL Supply Chain facility in Las Vegas, Robust.AI achieved a 60% increase in picking productivity gain."
+            }
+          ]
+        },
+        {
+          "name": "ShipLab",
+          "industry": "电子商务履约与第三方物流",
+          "use_case": "在其加利福尼亚州Vista的设施中部署Carter协作移动机器人，用于电子商务订单履约。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4e29cbc583c9f01",
+              "quote": "announced a partnership with ShipLab, a San Diego-area ecommerce fulfillment and third-party logistics provider, to deploy Carter™ collaborative mobile robots at ShipLab’s Vista, CA facility."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Locus Robotics",
+          "product": "LocusBots",
+          "scenario": "仓库订单拣选与物料搬运",
+          "target_customer": "仓库、第三方物流",
+          "funding_summary": "",
+          "core_difference": "Robust.AI的Carter强调人机协作的灵活性，允许人工直接抓取把手手动移动机器人；Locus Robotics的解决方案在来源中未提及此手动协作模式。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "A number of companies formed in the wake of Amazon’s 2012 acquisition of Kiva already have large footprints in the category, including Locus Robotics and 6 River Systems."
+            }
+          ]
+        },
+        {
+          "name": "6 River Systems",
+          "product": "Chuck",
+          "scenario": "仓库订单拣选与物料搬运",
+          "target_customer": "仓库、第三方物流",
+          "funding_summary": "",
+          "core_difference": "Robust.AI的Carter强调人机协作的灵活性，允许人工直接抓取把手手动移动机器人；6 River Systems的解决方案在来源中未提及此手动协作模式。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "A number of companies formed in the wake of Amazon’s 2012 acquisition of Kiva already have large footprints in the category, including Locus Robotics and 6 River Systems."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "DHL拉斯维加斯设施拣选生产力提升",
+          "value": "60%",
+          "observed_at": "2025-05-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f69aa3ddf28ad2c",
+              "quote": "The Carter™ deployment at the DHL Supply Chain facility in Las Vegas, Robust.AI achieved a 60% increase in picking productivity gain."
+            }
+          ]
+        },
+        {
+          "label": "DHL墨西哥零售业务拣选生产力提升",
+          "value": "30%",
+          "observed_at": "2025-12-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ad4d5e527f0ed235",
+              "quote": "In Mexico, the improvement so far has reached 30%."
+            }
+          ]
+        },
+        {
+          "label": "DHL墨西哥首批部署Carter机器人数量",
+          "value": "15台",
+          "observed_at": "2025-12-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ad4d5e527f0ed235",
+              "quote": "a rollout of 15 units in its retail operations in Mexico."
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是Robust.AI在仓库自动化红海市场中以“人机协作灵活性”构建的差异化路径。其已验证信号包括：与DHL Supply Chain签订五年战略联盟并实现60%的拣选生产力提升，以及Carter机器人无需基础设施改造即可快速部署的能力。这些信号表明其产品在头部客户中已获得商业验证和可量化的效率增益，但判断的证据边界仍局限于早期试点客户和有限部署规模，尚未证明大规模跨行业复制的经济性。",
+        "validated_signals": [
+          "与DHL Supply Chain签订五年战略联盟，并在其北美和墨西哥设施中实现商业部署",
+          "在DHL拉斯维加斯设施实现60%的拣选生产力提升",
+          "Carter机器人支持零基础设施改造快速部署，降低采用门槛"
+        ],
+        "risks": [
+          "仓库自动化赛道竞争极度激烈，Locus Robotics和6 River Systems等对手已占据较大市场份额，Robust.AI的差异化优势可能被快速模仿。"
+        ],
+        "related_direction_id": "",
+        "sector": "机器人、仓库自动化、人工智能"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Carter",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "Carter — an autonomous warehouse cart — is paired with Grace, Robust’s software offering."
+            },
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "While they can navigate autonomously or follow workers around after a quick setup, human employees can also grab the handles and move them around manually, as needed."
+            },
+            {
+              "source_id": "FISRC-ee97e9a02f3c38d9",
+              "quote": "Zero infrastructure changes needed, rapid deployment, and faster productivity from day one."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Grace",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "Carter — an autonomous warehouse cart — is paired with Grace, Robust’s software offering."
+            },
+            {
+              "source_id": "FISRC-8f70d2ed57d0efd4",
+              "quote": "Robust AI software helps to map out locations, workflows, and behaviors for the robot fleet in a day with no-code setup and customization tools."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Anthony Jules",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "co-founder, CEO and Brooks’ former student, Anthony Jules"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Rodney Brooks",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "co-founder and CTO Rodney Brooks"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mohamed R. Amer",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8f70d2ed57d0efd4",
+              "quote": "Robust AI was founded in San Carlos, California in 2019 by Anthony Jules, Rodney Brooks, Mohamed R. Amer, and Henrik Christensen."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Henrik Christensen",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8f70d2ed57d0efd4",
+              "quote": "Robust AI was founded in San Carlos, California in 2019 by Anthony Jules, Rodney Brooks, Mohamed R. Amer, and Henrik Christensen."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Prime Movers Lab",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "a $20 million Series A-1, led by Prime Movers Lab"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Future Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "featuring Future Ventures, Energy Impact Partners, JAZZ Ventures and Playground Global"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Energy Impact Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "featuring Future Ventures, Energy Impact Partners, JAZZ Ventures and Playground Global"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "JAZZ Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4e29cbc583c9f01",
+              "quote": "04.11.2020 Series A $22.5M -"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Playground Global",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4e29cbc583c9f01",
+              "quote": "04.11.2020 Series A $22.5M -"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "DHL Supply Chain",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ad4d5e527f0ed235",
+              "quote": "DHL Supply Chain and Robust.AI deepen their strategic partnership through co-development, feature innovation, and a scalable deployment roadmap across regions."
+            },
+            {
+              "source_id": "FISRC-4f69aa3ddf28ad2c",
+              "quote": "The Carter™ deployment at the DHL Supply Chain facility in Las Vegas, Robust.AI achieved a 60% increase in picking productivity gain."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "ShipLab",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f4e29cbc583c9f01",
+              "quote": "announced a partnership with ShipLab, a San Diego-area ecommerce fulfillment and third-party logistics provider, to deploy Carter™ collaborative mobile robots at ShipLab’s Vista, CA facility."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Locus Robotics",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "A number of companies formed in the wake of Amazon’s 2012 acquisition of Kiva already have large footprints in the category, including Locus Robotics and 6 River Systems."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "6 River Systems",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-344b2fbfbe7b7c56",
+              "quote": "A number of companies formed in the wake of Amazon’s 2012 acquisition of Kiva already have large footprints in the category, including Locus Robotics and 6 River Systems."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-52bf48005db3461a",
+          "date": "2026-06-28",
+          "title": "Robust.AI 融资2000万美元，扩大机器人配送试点客户规模",
+          "amount": "$20M",
+          "source_refs": [
+            "SA-807ee9dbd47ef003"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-344b2fbfbe7b7c56",
+          "source_url": "https://techcrunch.com/2023/04/20/robust-ai-raises-20m-as-it-scales-robot-deliveries-for-pilot-customers/",
+          "title": "Robust.AI 融资2000万美元，扩大机器人配送试点客户规模",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-28T04:05:28.098Z",
+          "content_hash": "a6760de16e042160",
+          "source_artifact_id": "SA-807ee9dbd47ef003",
+          "raw_id": "RAW-efd9f3700e880a24"
+        },
+        {
+          "source_id": "FISRC-ee97e9a02f3c38d9",
+          "source_url": "https://robust.ai/",
+          "title": "Robust AI | AI-Powered Collaborative Mobile Robots",
+          "publisher": "robust.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:39:21.093Z",
+          "content_hash": "f6d9def6a4aa455f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f4e29cbc583c9f01",
+          "source_url": "https://o.parsers.vc/startup/robust.ai/",
+          "title": "RobustAI – Funding, Valuation, Investors, News",
+          "publisher": "o.parsers.vc",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:39:37.851Z",
+          "content_hash": "5938e32dd8eaa644",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8f70d2ed57d0efd4",
+          "source_url": "https://www.balticvc.com/2023/06/steve-jurvetsons-fund-future-ventures.html",
+          "title": "Steve Jurvetson's fund Future Ventures invested in US robotics solutions for warehouse Robust.AI",
+          "publisher": "balticvc.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:39:40.798Z",
+          "content_hash": "637da3967159c3c1",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4f69aa3ddf28ad2c",
+          "source_url": "https://www.robust.ai/blog/roboticsbusinessnews",
+          "title": "Inside Robust.AI’s Vision for Human-Centric Robotics: How Carter™ Is Reinventing Warehouse Productivity &mdash; Robust AI",
+          "publisher": "robust.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:39:44.801Z",
+          "content_hash": "81362e5c3ff4ba19",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ad4d5e527f0ed235",
+          "source_url": "https://www.robust.ai/dhl-supply-chain-announces-five-year-strategic-alliance-with-robustai",
+          "title": "DHL Supply Chain Announces Five-year Strategic Alliance with Robust.AI &mdash; Robust AI",
+          "publisher": "robust.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:39:49.381Z",
+          "content_hash": "4883e01d7863a4f4",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:40:24.843Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:40:24.843Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-7817dc69d5228cbb",
+      "company_name": "Runlayer",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Runlayer\" \"$30M\" funding investors round",
+        "\"Runlayer\" product customers case study",
+        "\"Runlayer\" \"Runlayer raises $30M Series A to go all in on AI\" competitors product use case",
+        "\"Runlayer\" \"$30M\" investor quote why invested",
+        "\"Runlayer\" \"$30M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Runlayer\" \"$30M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Runlayer\" \"$30M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Runlayer\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Runlayer\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Runlayer\" \"Runlayer raises $30M Series A to go all in on AI\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Runlayer\" \"Runlayer raises $30M Series A to go all in on AI\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Runlayer\" \"$30M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Runlayer\" \"$30M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Runlayer\" \"$30M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Runlayer\" \"$30M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:41:50.652Z"
+    },
+    {
+      "event_id": "EV-79a0bbe8b8623b28",
+      "company_name": "Liquid AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Liquid AI\" \"$37.5 million\" funding investors round",
+        "\"Liquid AI\" product customers case study",
+        "\"Liquid AI\" \"Liquid AI, a new MIT spinoff, wants to build an entirely new type of AI\" competitors product use case",
+        "\"Liquid AI\" \"$37.5 million\" investor quote why invested",
+        "\"Liquid AI\" \"$37.5 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Liquid AI\" \"$37.5 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Liquid AI\" \"$37.5 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Liquid AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Liquid AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Liquid AI\" \"Liquid AI, a new MIT spinoff, wants to build an entirely new type of AI\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Liquid AI\" \"Liquid AI, a new MIT spinoff, wants to build an entirely new type of AI\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Liquid AI\" \"$37.5 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Liquid AI\" \"$37.5 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Liquid AI\" \"$37.5 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Liquid AI\" \"$37.5 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:41:50.652Z"
+    },
+    {
+      "event_id": "EV-52bf48005db3461a",
+      "company_name": "Robust.AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Robust.AI\" \"$20M\" funding investors round",
+        "\"Robust.AI\" product customers case study",
+        "\"Robust.AI\" \"Robust.AI raises $20M as it scales robot deliveries for pilot customers\" competitors product use case",
+        "\"Robust.AI\" \"$20M\" investor quote why invested",
+        "\"Robust.AI\" \"$20M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Robust.AI\" \"$20M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Robust.AI\" \"$20M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Robust.AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Robust.AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Robust.AI\" \"Robust.AI raises $20M as it scales robot deliveries for pilot customers\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Robust.AI\" \"Robust.AI raises $20M as it scales robot deliveries for pilot customers\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Robust.AI\" \"$20M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Robust.AI\" \"$20M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Robust.AI\" \"$20M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Robust.AI\" \"$20M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:41:50.652Z"
+    },
+    {
+      "event_id": "EV-d4d7b019ff0015df",
+      "company_name": "DeepSeek",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"DeepSeek\" \"$7.4B\" funding investors round",
+        "\"DeepSeek\" product customers case study",
+        "\"DeepSeek\" \"GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱\" competitors product use case",
+        "\"DeepSeek\" \"$7.4B\" investor quote why invested",
+        "\"DeepSeek\" \"$7.4B\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"DeepSeek\" \"$7.4B\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"DeepSeek\" \"$7.4B\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"DeepSeek\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"DeepSeek\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"DeepSeek\" \"GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"DeepSeek\" \"GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"DeepSeek\" \"$7.4B\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"DeepSeek\" \"$7.4B\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"DeepSeek\" \"$7.4B\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"DeepSeek\" \"$7.4B\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:41:50.652Z"
+    }
+  ]
+}

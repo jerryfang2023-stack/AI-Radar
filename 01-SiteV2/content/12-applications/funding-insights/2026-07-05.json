@@ -1,0 +1,1439 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-05",
+    "generated_at": "2026-07-26T15:16:12.042Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 2,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-34ad46762c245ae0",
+      "triggered_by_event_id": "EV-78a11d309c3d4e97",
+      "as_of_date": "2026-07-05",
+      "company": {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic",
+        "full_name": "Anthropic PBC",
+        "website": "",
+        "summary": "Anthropic 是一家人工智能初创公司，由前 OpenAI 高管于 2021 年创立，专注于构建更安全、更可解释、更可靠的前沿 AI 系统。其旗舰产品 Claude 系列模型在内容创作、编程、分析、客户支持等领域展现出强大能力，并已与 Google 和 AWS 建立重大战略合作伙伴关系。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Dario Amodei",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-52917ea3c077fbf0",
+                "quote": "Anthropic was founded in 2021 by former OpenAI executives Dario Amodei (CEO), Daniela Amodei, Jack Clark, Sam McCandlish, and Tom Brown."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Daniela Amodei",
+            "role": "President",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8aac4802151d3b7d",
+                "quote": "Dario Amodei, Anthropic's CEO, and his sister, Daniela Amodei, its president, founded the company as a startup that would build AI with guardrails."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-52917ea3c077fbf0",
+            "quote": "Anthropic was founded in 2021 by former OpenAI executives Dario Amodei (CEO), Daniela Amodei, Jack Clark, Sam McCandlish, and Tom Brown."
+          },
+          {
+            "source_id": "FISRC-e3ed6c4a27cf5860",
+            "quote": "Founded in 2021 by a team of seven with a shared vision for building AI that’s both safer and more capable"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series E",
+        "amount": "$3.5B",
+        "total_raised": "$14.8B",
+        "announced_at": "2025-03-03",
+        "investors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e3ed6c4a27cf5860",
+                "quote": "Lightspeed is deepening its commitment to this vision, by leading Anthropic’s $3.5 Billion Series E as the largest investor in the round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cisco Investments",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ef9fd29dc050f7ca",
+                "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Salesforce Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ef9fd29dc050f7ca",
+                "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Fidelity Management & Research Co.",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-52917ea3c077fbf0",
+                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "General Catalyst",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-52917ea3c077fbf0",
+                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "D1 Capital Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-52917ea3c077fbf0",
+                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jane Street",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-52917ea3c077fbf0",
+                "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8aac4802151d3b7d",
+                "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Menlo Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8aac4802151d3b7d",
+                "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Amazon",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-52917ea3c077fbf0",
+                "quote": "Amazon has also doubled down on its bet, announcing a $4 billion investment in Anthropic in November, bringing its total funding commitment to $8 billion."
+              }
+            ],
+            "entity_id": "EN-cbc62794911ff31b"
+          },
+          {
+            "name": "Google",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ef9fd29dc050f7ca",
+                "quote": "The Series E deal comes less than two months after the company raised $1 billion from Google LLC."
+              }
+            ],
+            "entity_id": "EN-bbdefa2950f49882"
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ef9fd29dc050f7ca",
+            "quote": "Anthropic PBC today announced that it has closed a late-stage $3.5 billion funding round at a $61.5 billion valuation."
+          },
+          {
+            "source_id": "FISRC-8aac4802151d3b7d",
+            "quote": "Since its founding in 2021, Anthropic has raised more than $14.8 billion from venture firms like Menlo Ventures and tech giants like Amazon, Google and Salesforce."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Claude",
+          "description": "Anthropic 的旗舰大型语言模型系列，具备内容创作、编程、分析、教育、客户支持等能力。最新版本 Claude 3.7 Sonnet 是业界首个具备扩展思考能力的通用混合智能模型。",
+          "target_customers": "企业客户、开发者、以及通过 API 集成 Claude 的应用程序",
+          "features": [
+            "混合智能模型，结合标准 LLM 与推理模型特性",
+            "可自定义思考时间，从几秒到几分钟以上",
+            "在数学、物理和编程方面显著优于前代模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e3ed6c4a27cf5860",
+              "quote": "the most recent release of Claude 3.7 Sonnet is the industry’s first generally available hybrid-intelligence model with extended thinking capabilities."
+            },
+            {
+              "source_id": "FISRC-ef9fd29dc050f7ca",
+              "quote": "One of Claude 3.7 Sonnet’s flagship features is that developers can customize the amount of time it spends on a task."
+            }
+          ],
+          "entity_id": "EN-729324072d368379"
+        },
+        {
+          "name": "Claude Code",
+          "description": "一个嵌入命令行界面的智能体编程工具，可自动执行通常需要超过 45 分钟手动工作的编程任务。",
+          "target_customers": "软件开发者",
+          "features": [
+            "自动化编程任务",
+            "与外部系统（如代码仓库）交互",
+            "具备对自身能力的“自我认知”"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef9fd29dc050f7ca",
+              "quote": "Claude 3.7 Sonnet was introduced alongside a second new offering dubbed Claude Code. It’s described as an agentic coding tool. Anthropic says the software, which is embedded in a command line interface, can automate programming tasks that usually require more than 45 minutes of manual work."
+            }
+          ],
+          "entity_id": "EN-cb4754c48f8023d0"
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "ChatGPT / GPT 系列模型",
+          "scenario": "企业 AI 采用、AI 智能体、编程辅助",
+          "target_customer": "企业客户、开发者",
+          "funding_summary": "OpenAI 即将完成一轮 400 亿美元的融资，估值达 3000 亿美元。",
+          "core_difference": "Anthropic 的 Claude 3.7 Sonnet 是业界首个具备扩展思考能力的通用混合智能模型；Anthropic 强调通过“宪法 AI”框架实现安全性和可解释性，而 OpenAI 在 2022 年底通过 ChatGPT 引爆了 AI 热潮。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8aac4802151d3b7d",
+              "quote": "OpenAI is set to complete a $40 billion fundraising deal that would value the company at $300 billion, nearly double its valuation from just five months ago."
+            },
+            {
+              "source_id": "FISRC-e3ed6c4a27cf5860",
+              "quote": "the most recent release of Claude 3.7 Sonnet is the industry’s first generally available hybrid-intelligence model with extended thinking capabilities."
+            }
+          ]
+        },
+        {
+          "name": "Google",
+          "product": "Gemini",
+          "scenario": "企业 AI 解决方案、云服务集成",
+          "target_customer": "企业客户、Google Cloud 用户",
+          "funding_summary": "",
+          "core_difference": "Anthropic 与 Google 建立了重大战略合作伙伴关系，Google 已向 Anthropic 投资数十亿美元；同时，Anthropic 的 Claude 模型与 Google 的 Gemini 在企业 AI 市场形成竞争。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e3ed6c4a27cf5860",
+              "quote": "Announced major strategic partnerships with Google and AWS that surface those capabilities to millions of businesses"
+            },
+            {
+              "source_id": "FISRC-52917ea3c077fbf0",
+              "quote": "The artificial intelligence startup, backed heavily by Amazon, was founded by former OpenAI executives. Since launching Claude in March 2023, the company has gained traction alongside OpenAI’s ChatGPT and Google’s Gemini as businesses look for AI-driven solutions across sales, marketing, and customer service."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "估值",
+          "value": "$61.5B",
+          "observed_at": "2025-03-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef9fd29dc050f7ca",
+              "quote": "Anthropic PBC today announced that it has closed a late-stage $3.5 billion funding round at a $61.5 billion valuation."
+            }
+          ]
+        },
+        {
+          "label": "年化经常性收入增长",
+          "value": "30%",
+          "observed_at": "2025-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef9fd29dc050f7ca",
+              "quote": "That number has reportedly grown by 30% in the past two months."
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$14.8B",
+          "observed_at": "2025-03-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8aac4802151d3b7d",
+              "quote": "Since its founding in 2021, Anthropic has raised more than $14.8 billion from venture firms like Menlo Ventures and tech giants like Amazon, Google and Salesforce."
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Lightspeed Venture Partners",
+            "speaker": "Ravi Mhatre, Guru Chahal, Sebastian Duesterhoeft",
+            "speaker_role": "作者 / Lightspeed 团队成员",
+            "rationale": "Lightspeed 强调，企业不仅需要性能，还需要可靠性、可解释性和安全性。Anthropic 对信任的重视使其在拥挤的领域中脱颖而出，这是所有 AI 采用的基础。",
+            "quote": "Enterprises need products and solutions — not just a model. With intelligence, what works — what can scale across business functions and throughout companies — is only what’s safe and reliable. The ultimate value to be unlocked with AI is rooted in the trust people have in the model.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-e3ed6c4a27cf5860",
+                "quote": "Enterprises need products and solutions — not just a model. With intelligence, what works — what can scale across business functions and throughout companies — is only what’s safe and reliable. The ultimate value to be unlocked with AI is rooted in the trust people have in the model."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“前沿模型的智能密度与安全性”能否成为企业大规模采用 AI 的信任基石。本轮融资以 615 亿美元估值完成，较一年前的约 160 亿美元估值增长近 3 倍，验证的信号包括：年化收入突破 10 亿美元且近期增长 30%，Claude 3.7 Sonnet 作为业界首个混合智能模型发布，以及获得 AWS 和 Google 等云巨头的深度绑定与分销渠道。判断的证据边界在于，Anthropic 尚未盈利，其高估值依赖于持续的技术领先性和企业客户对安全、可解释 AI 的付费意愿，而这一意愿的强度和持久性仍有待市场进一步检验。",
+        "validated_signals": [
+          "年化经常性收入在 2024 年底突破 10 亿美元，并在过去两个月增长 30%。",
+          "发布了业界首个通用混合智能模型 Claude 3.7 Sonnet，具备扩展思考能力。",
+          "与 Google 和 AWS 建立了重大战略合作伙伴关系，将能力触达数百万企业。",
+          "企业客户包括 Zoom、Snowflake、Pfizer、Thomson Reuters 和 Novo Nordisk 等大型公司。"
+        ],
+        "risks": [
+          "AI 模型能力可能迅速商品化，若前沿创新速度放缓，Anthropic 的高估值将面临巨大压力。",
+          "公司尚未盈利，且依赖巨额资本支出以维持算力扩张和研发，对持续融资能力要求极高。"
+        ],
+        "related_direction_id": "",
+        "sector": "人工智能基础模型"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Claude",
+          "canonical_entity_id": "EN-729324072d368379",
+          "canonical_name": "Claude",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e3ed6c4a27cf5860",
+              "quote": "the most recent release of Claude 3.7 Sonnet is the industry’s first generally available hybrid-intelligence model with extended thinking capabilities."
+            },
+            {
+              "source_id": "FISRC-ef9fd29dc050f7ca",
+              "quote": "One of Claude 3.7 Sonnet’s flagship features is that developers can customize the amount of time it spends on a task."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Claude Code",
+          "canonical_entity_id": "EN-cb4754c48f8023d0",
+          "canonical_name": "Claude Code",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef9fd29dc050f7ca",
+              "quote": "Claude 3.7 Sonnet was introduced alongside a second new offering dubbed Claude Code. It’s described as an agentic coding tool. Anthropic says the software, which is embedded in a command line interface, can automate programming tasks that usually require more than 45 minutes of manual work."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Dario Amodei",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-52917ea3c077fbf0",
+              "quote": "Anthropic was founded in 2021 by former OpenAI executives Dario Amodei (CEO), Daniela Amodei, Jack Clark, Sam McCandlish, and Tom Brown."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Daniela Amodei",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8aac4802151d3b7d",
+              "quote": "Dario Amodei, Anthropic's CEO, and his sister, Daniela Amodei, its president, founded the company as a startup that would build AI with guardrails."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e3ed6c4a27cf5860",
+              "quote": "Lightspeed is deepening its commitment to this vision, by leading Anthropic’s $3.5 Billion Series E as the largest investor in the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cisco Investments",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef9fd29dc050f7ca",
+              "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Salesforce Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef9fd29dc050f7ca",
+              "quote": "Lightspeed Venture Partners led Anthropic’s latest funding round. It was joined by Cisco Investments, Salesforce Ventures and more than a half-dozen other backers."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fidelity Management & Research Co.",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-52917ea3c077fbf0",
+              "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-52917ea3c077fbf0",
+              "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "D1 Capital Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-52917ea3c077fbf0",
+              "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jane Street",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-52917ea3c077fbf0",
+              "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bessemer Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8aac4802151d3b7d",
+              "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Menlo Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8aac4802151d3b7d",
+              "quote": "Lightspeed Venture Partners led Anthropic's latest round, which included participation from Bessemer Venture Partners, Cisco Investments, D1 Capital Partners, Fidelity Management & Research Company, General Catalyst, Jane Street, Menlo Ventures and Salesforce Ventures."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Amazon",
+          "canonical_entity_id": "EN-cbc62794911ff31b",
+          "canonical_name": "Amazon",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-52917ea3c077fbf0",
+              "quote": "Amazon has also doubled down on its bet, announcing a $4 billion investment in Anthropic in November, bringing its total funding commitment to $8 billion."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Google",
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ef9fd29dc050f7ca",
+              "quote": "The Series E deal comes less than two months after the company raised $1 billion from Google LLC."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8aac4802151d3b7d",
+              "quote": "OpenAI is set to complete a $40 billion fundraising deal that would value the company at $300 billion, nearly double its valuation from just five months ago."
+            },
+            {
+              "source_id": "FISRC-e3ed6c4a27cf5860",
+              "quote": "the most recent release of Claude 3.7 Sonnet is the industry’s first generally available hybrid-intelligence model with extended thinking capabilities."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Google",
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e3ed6c4a27cf5860",
+              "quote": "Announced major strategic partnerships with Google and AWS that surface those capabilities to millions of businesses"
+            },
+            {
+              "source_id": "FISRC-52917ea3c077fbf0",
+              "quote": "The artificial intelligence startup, backed heavily by Amazon, was founded by former OpenAI executives. Since launching Claude in March 2023, the company has gained traction alongside OpenAI’s ChatGPT and Google’s Gemini as businesses look for AI-driven solutions across sales, marketing, and customer service."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-136b2edc9b9f3be8",
+          "date": "2026-07-24",
+          "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+          "amount": "$34 million",
+          "source_refs": [
+            "SA-698e748e9cefe115",
+            "SA-02eba6bdbd1a0ec5"
+          ]
+        },
+        {
+          "event_id": "EV-3fb827f44ea109de",
+          "date": "2026-07-23",
+          "title": "Paper 为其 AI 原生设计平台融资 3400 万美元",
+          "amount": "$34M",
+          "source_refs": [
+            "SA-b56e7b4b3875ece6"
+          ]
+        },
+        {
+          "event_id": "EV-d7a7244d620a2142",
+          "date": "2026-07-20",
+          "title": "推理初创公司Infinity获Touring Capital、OpenAI及Anthropic研究人员投资1500万美元",
+          "amount": "$15M",
+          "source_refs": [
+            "SA-d0ebae49db2b1883"
+          ]
+        },
+        {
+          "event_id": "EV-e41fc65eb014893f",
+          "date": "2026-07-09",
+          "title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+          "amount": "$100M",
+          "source_refs": [
+            "SA-bb1eae63037f700e"
+          ]
+        },
+        {
+          "event_id": "EV-974a6b7d0e0efef2",
+          "date": "2026-07-08",
+          "title": "获Anthropic、OpenAI及Meta内部人士支持，Bespoke Labs融资4000万美元：更好的环境能否击败更大的模型？——TFN",
+          "amount": "$40M",
+          "source_refs": [
+            "SA-d9d84b4d8a816a6e"
+          ]
+        },
+        {
+          "event_id": "EV-fb817fb0a5e63323",
+          "date": "2026-07-06",
+          "title": "",
+          "amount": "$40M",
+          "source_refs": [
+            "SA-34b3f8e3171b18e7"
+          ]
+        },
+        {
+          "event_id": "EV-78a11d309c3d4e97",
+          "date": "2026-07-05",
+          "title": "科技初创公司融资轮次：过去30天，每周更新",
+          "amount": "$3.5B",
+          "source_refs": [
+            "SA-a55430d2409741e9"
+          ]
+        },
+        {
+          "event_id": "EV-4b8064b1139e1724",
+          "date": "2026-07-03",
+          "title": "AI 财务自动化案例研究：月结从 11 天缩短至 3 天，借助 LangGraph + Claude 3.5 + SAP/Oracle/NetSuite 节省 85 万美元",
+          "amount": "$850",
+          "source_refs": [
+            "SA-3d513f23591975c8"
+          ]
+        },
+        {
+          "event_id": "EV-80e54c9a390da293",
+          "date": "2026-07-01",
+          "title": "变压器芯片初创公司Etched结束隐身模式：融资8亿美元，合同金额10亿美元",
+          "amount": "$800M",
+          "source_refs": [
+            "SA-c6ed9a630bf3d638"
+          ]
+        },
+        {
+          "event_id": "EV-d4e44892226be468",
+          "date": "2026-06-30",
+          "title": "AI 时代如何融资：投资者希望看到的5件事",
+          "amount": "$122b",
+          "source_refs": [
+            "SA-126f5da1f9043771"
+          ]
+        },
+        {
+          "event_id": "EV-7817dc69d5228cbb",
+          "date": "2026-06-28",
+          "title": "Runlayer 完成3000万美元A轮融资，全力押注人工智能",
+          "amount": "$30M",
+          "source_refs": [
+            "SA-317effbacd477100",
+            "SA-e325cb15daaff611"
+          ]
+        },
+        {
+          "event_id": "EV-e7dcecaed5a0ee5b",
+          "date": "2026-06-24",
+          "title": "JustAI 获1700万美元A轮融资，打造智能营销平台",
+          "amount": "$17 million",
+          "source_refs": [
+            "SA-880bf76d050f1840"
+          ]
+        },
+        {
+          "event_id": "EV-8861a42a8679562a",
+          "date": "2026-06-10",
+          "title": "Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资",
+          "amount": "$35 billion",
+          "source_refs": [
+            "SA-e479f38b2a986b2d"
+          ]
+        },
+        {
+          "event_id": "EV-5d581d112fdbd464",
+          "date": "2026-06-04",
+          "title": "AethexAI 获 300 万美元种子轮融资，助力非洲和中东企业级语音 AI 规模化",
+          "amount": "$3M",
+          "source_refs": [
+            "SA-4d0da767566bca0c"
+          ]
+        },
+        {
+          "event_id": "EV-201b25d4f3cf696a",
+          "date": "2026-06-02",
+          "title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+          "amount": "$100M",
+          "source_refs": [
+            "SA-a3709f58440df90e"
+          ]
+        },
+        {
+          "event_id": "EV-31df816db86db282",
+          "date": "2026-06-01",
+          "title": "44 轮融资，26.6 亿美元：2026 年第一季度 AI 智能体融资地图",
+          "amount": "$30 billion",
+          "source_refs": [
+            "SA-c10a82f9a8a1df71"
+          ]
+        },
+        {
+          "event_id": "EV-5762fe51987bc5ff",
+          "date": "2026-05-27",
+          "title": "AI 编程初创公司 Cognition 以 250 亿美元投前估值融资 10 亿美元",
+          "amount": "$1B",
+          "source_refs": [
+            "SA-5d6fd515b18ab47f"
+          ]
+        },
+        {
+          "event_id": "EV-cbc0b7a7d21a29e2",
+          "date": "2026-05-24",
+          "title": "Zenskar获1500万美元A轮融资，用于扩展B2B收入自动化的代理能力",
+          "amount": "$15 Million",
+          "source_refs": [
+            "SA-e51a2253b8d16bce"
+          ]
+        },
+        {
+          "event_id": "EV-1abf0d076d30ec6d",
+          "date": "2026-05-23",
+          "title": "AMD 与空客支持 Featherless.ai 的 2000 万美元 A 轮融资，助力开源 AI 基础设施",
+          "amount": "$20M",
+          "source_refs": [
+            "SA-83b92b4b4df84ab0"
+          ]
+        },
+        {
+          "event_id": "EV-f247eff115e840af",
+          "date": "2026-05-20",
+          "title": "彭博社报道：Anthropic 超 200 亿美元融资最早下周完成",
+          "amount": "$20 billion",
+          "source_refs": [
+            "SA-b81ac3b9a0918a61"
+          ]
+        },
+        {
+          "event_id": "EV-dfddbb260b3d1c77",
+          "date": "2026-05-07",
+          "title": "AI 产品团队初创公司 Pit 获 a16z 等投资 1600 万美元，用于自动化企业工作流",
+          "amount": "$16M",
+          "source_refs": [
+            "SA-aac29bfb7c98b3b1"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-e3ed6c4a27cf5860",
+          "source_url": "https://lsvp.com/stories/lightspeed-announces-lead-investment-in-anthropics-3-5b-series-e-financing/",
+          "title": "Lightspeed Announces Lead Investment in Anthropic’s $3.5B Series E Financing - Lightspeed Venture Partners",
+          "publisher": "lsvp.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:44:30.708Z",
+          "content_hash": "ea5b244eff64d20a",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ef9fd29dc050f7ca",
+          "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
+          "title": "Anthropic raises $3.5B at $61.5B valuation to advance its AI research - SiliconANGLE",
+          "publisher": "siliconangle.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:32.034Z",
+          "content_hash": "3484405d65f54368",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-52917ea3c077fbf0",
+          "source_url": "https://techstartups.com/2025/03/04/amazon-backed-ai-startup-anthropic-hits-61-5b-valuation-after-3-5b-funding-round/",
+          "title": "Amazon-backed AI startup Anthropic hits $61.5B valuation after $3.5B funding round - Tech Startups",
+          "publisher": "techstartups.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:46.167Z",
+          "content_hash": "574df0fdc225fe9e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8aac4802151d3b7d",
+          "source_url": "https://theoutpost.ai/news-story/anthropic-secures-3-5-billion-in-funding-reaching-61-5-billion-valuation-12772/",
+          "title": "Anthropic Raises $3.5 Billion at $61.5 Billion Valuation, Minting New AI Billionaires",
+          "publisher": "theoutpost.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:48.371Z",
+          "content_hash": "a1b8a77e1ffdaf42",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:45:44.724Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:45:44.724Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-062db0d45e38151a",
+      "triggered_by_event_id": "EV-0ade039d36e077ae",
+      "as_of_date": "2026-07-05",
+      "company": {
+        "entity_id": "EN-693b1c2b5c9e35f4",
+        "name": "Enterprise AI",
+        "full_name": "Wonderful",
+        "website": "wonderful.ai",
+        "summary": "Wonderful是一家企业级AI智能体平台，通过将模型无关的智能体平台与本地嵌入式部署团队相结合，在复杂的受监管环境中实现AI智能体的快速生产部署。",
+        "headquarters": "Amsterdam",
+        "founders": [
+          {
+            "name": "Bar Winkler",
+            "role": "CEO and Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7791f3b0abf7244c",
+                "quote": "said Bar Winkler, CEO and Co-founder of Wonderful"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Roey Lalazar",
+            "role": "CTO and Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7791f3b0abf7244c",
+                "quote": "said Roey Lalazar, CTO and Co-founder"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "350",
+          "observed_at": "2026-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "scaling headcount from 350 to approximately 900 by year-end"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a9a14160ac96ad9a",
+            "quote": "Wonderful is an enterprise AI agent platform made for deploying agents in complex enterprise environments."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series B",
+        "amount": "$150 million",
+        "total_raised": "$286 million",
+        "announced_at": "2026-03-12",
+        "investors": [
+          {
+            "name": "Insight Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7791f3b0abf7244c",
+                "quote": "led by global software investor Insight Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IVP",
+            "role": "既有投资方，本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7791f3b0abf7244c",
+                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "role": "既有投资方，本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7791f3b0abf7244c",
+                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vine Ventures",
+            "role": "既有投资方，本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7791f3b0abf7244c",
+                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a9a14160ac96ad9a",
+            "quote": "The $150 million Series B round values the company at $2 billion, just eight months after it emerged from stealth, bringing total funds raised to $284 million."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Wonderful Enterprise AI Agent Platform",
+          "description": "一个模型无关的企业级AI智能体平台，能够跨多个用例和工作流激活，而非孤立的单点解决方案。平台架构持续对可用基础模型进行基准测试，为每个用例选择性能最佳的模型。",
+          "target_customers": "电信、金融服务、制造业和医疗保健等受监管行业的大型企业",
+          "features": [
+            "模型无关架构，持续基准测试并选择最佳模型",
+            "基于harness的评估和自愈系统设计，确保智能体在生产中可靠运行",
+            "水平企业基础，可跨多个用例和工作流激活",
+            "全栈团队与客户环境协同部署，加速系统集成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves."
+            },
+            {
+              "source_id": "FISRC-9c080c9ce7a264b5",
+              "quote": "Wonderful pairs a model-agnostic agentic platform with locally embedded deployment teams that integrate directly into customer environments."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Factory AI",
+          "product": "Factory Droids（自主编码智能体）",
+          "scenario": "企业软件开发生命周期自动化，包括重构、代码审查、事件响应、文档编写和部署",
+          "target_customer": "拥有大型工程团队的企业，如Morgan Stanley、EY、Palo Alto Networks、Nvidia、Adobe",
+          "funding_summary": "2026年4月完成1.5亿美元C轮融资，估值15亿美元，由Khosla Ventures和Sequoia Capital领投",
+          "core_difference": "Factory专注于软件开发生命周期的自动化，其Droids是任务特定的自主智能体；Wonderful则是一个跨行业的企业AI智能体平台，覆盖电信、金融服务、制造和医疗等多个垂直领域，通过本地嵌入式团队实现部署。Factory的差异化在于自主完成多步骤软件任务，而Wonderful的差异化在于将智能体部署到复杂的受监管企业环境中。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50c2031888fb4f47",
+              "quote": "Factory, a startup that builds AI agents to handle software development tasks like testing, documentation, and deployment, has raised $150M at a $1.5B valuation."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "业务覆盖国家数",
+          "value": "30+",
+          "observed_at": "2026-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "scaling to more than 30 countries across Europe, the Middle East, Asia-Pacific, and Latin America"
+            }
+          ]
+        },
+        {
+          "label": "处理时间降低比例",
+          "value": "up to 60%",
+          "observed_at": "2026-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "reducing handling times by up to 60%"
+            }
+          ]
+        },
+        {
+          "label": "智能体自主解决率",
+          "value": "above 80%",
+          "observed_at": "2026-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "achieving containment rates above 80%"
+            }
+          ]
+        },
+        {
+          "label": "单用例启动后三个月内扩展至额外工作流的企业比例",
+          "value": "over 70%",
+          "observed_at": "2026-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "Over 70% of enterprises that begin with a single use case expand into additional workflows within the first three months"
+            }
+          ]
+        },
+        {
+          "label": "公司估值",
+          "value": "$2 billion",
+          "observed_at": "2026-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a9a14160ac96ad9a",
+              "quote": "The $150 million Series B round values the company at $2 billion"
+            }
+          ]
+        },
+        {
+          "label": "计划年底员工数",
+          "value": "approximately 900",
+          "observed_at": "2026-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "scaling headcount from 350 to approximately 900 by year-end"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Bar Winkler",
+          "quote": "In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization's unique environment.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization's unique environment"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是企业AI部署的“最后一公里”问题——即从技术能力到生产环境落地的鸿沟。Wonderful以2亿美元估值完成1.5亿美元B轮融资，所依赖的已验证信号包括：八个月内扩展至30多个国家、在电信、金融服务、制造和医疗四个受监管行业获得生产级部署、超过70%的企业在三个月内从单一用例扩展至额外工作流、智能体处理时间降低60%且自主解决率超过80%。这些信号表明其“模型无关平台+本地嵌入式团队”的运营模式具有跨行业可复制性。然而，当前判断的证据边界在于：公司尚未披露具体客户名称和收入规模，估值主要基于扩张速度和运营模式的可复制性，而非公开的财务指标。",
+        "validated_signals": [
+          "八个月内从隐身模式扩展至30多个国家",
+          "在电信、金融服务、制造和医疗四个受监管行业获得生产级部署",
+          "超过70%的企业在三个月内从单一用例扩展至额外工作流",
+          "智能体处理时间降低60%，自主解决率超过80%",
+          "现有投资方Index Ventures、IVP、Bessemer和Vine Ventures全部跟投"
+        ],
+        "risks": [
+          "公司未披露具体客户名称和收入规模，估值可能更多基于扩张速度而非已验证的单位经济模型",
+          "从350人扩张至900人的激进招聘计划可能带来执行风险和文化稀释",
+          "模型无关架构虽然灵活，但依赖第三方基础模型提供商，若主要模型供应商改变定价或服务条款，可能影响平台成本结构"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业AI智能体平台"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Wonderful Enterprise AI Agent Platform",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves."
+            },
+            {
+              "source_id": "FISRC-9c080c9ce7a264b5",
+              "quote": "Wonderful pairs a model-agnostic agentic platform with locally embedded deployment teams that integrate directly into customer environments."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Bar Winkler",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "said Bar Winkler, CEO and Co-founder of Wonderful"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Roey Lalazar",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "said Roey Lalazar, CTO and Co-founder"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Insight Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "led by global software investor Insight Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IVP",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bessemer Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Vine Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7791f3b0abf7244c",
+              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Factory AI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-50c2031888fb4f47",
+              "quote": "Factory, a startup that builds AI agents to handle software development tasks like testing, documentation, and deployment, has raised $150M at a $1.5B valuation."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-0ade039d36e077ae",
+          "date": "2026-06-13",
+          "title": "B轮企业AI智能体：Insight Partners 1.5亿美元",
+          "amount": "$150 million",
+          "source_refs": [
+            "SA-b8df7035787a9d4a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9c080c9ce7a264b5",
+          "source_url": "https://angelinvestorsnetwork.com/market-analysis/enterprise-ai-series-b-funding-concentration-q1-2026",
+          "title": "2026年第一季度企业AI系列B轮融资集中",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-05T04:56:15.256Z",
+          "content_hash": "8b4314a057a49499",
+          "source_artifact_id": "SA-002eb0a11c558188",
+          "raw_id": "RAW-4470d26fd31673c5"
+        },
+        {
+          "source_id": "FISRC-50c2031888fb4f47",
+          "source_url": "https://theaiworld.org/news/factory-ai-raises-150m-series-c-hits-15b-valuation",
+          "title": "Factory AI Raises $150M Series C, Hits $1.5B Valuation",
+          "publisher": "theaiworld.org",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:24.366Z",
+          "content_hash": "a7412533b1971f91",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-a9a14160ac96ad9a",
+          "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
+          "title": "Wonderful Raises $150M Series B to... | Index Ventures",
+          "publisher": "indexventures.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:25.032Z",
+          "content_hash": "a1eb7c9802c59903",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7791f3b0abf7244c",
+          "source_url": "https://www.prnewswire.co.uk/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712243.html",
+          "title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets",
+          "publisher": "prnewswire.co.uk",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:31.298Z",
+          "content_hash": "46fc6345a45bdcf2",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:45:10.814Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:45:10.814Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-0ade039d36e077ae",
+      "company_name": "Enterprise AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Enterprise AI\" \"$150M\" funding investors round",
+        "\"Enterprise AI\" product customers case study",
+        "\"Enterprise AI\" \"Enterprise AI Series B Funding Concentration Q1 2026\" competitors product use case",
+        "\"Enterprise AI\" \"$150M\" investor quote why invested",
+        "\"Enterprise AI\" \"$150M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Enterprise AI\" \"$150M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Enterprise AI\" \"$150M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Enterprise AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Enterprise AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Enterprise AI\" \"Enterprise AI Series B Funding Concentration Q1 2026\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Enterprise AI\" \"Enterprise AI Series B Funding Concentration Q1 2026\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Enterprise AI\" \"$150M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Enterprise AI\" \"$150M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Enterprise AI\" \"$150M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Enterprise AI\" \"$150M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:45:44.805Z"
+    },
+    {
+      "event_id": "EV-78a11d309c3d4e97",
+      "company_name": "Anthropic",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Anthropic\" \"$3.5B\" funding investors round",
+        "\"Anthropic\" product customers case study",
+        "\"Anthropic\" \"Tech Startup Funding Rounds: Last 30 Days, Updated Weekly\" competitors product use case",
+        "\"Anthropic\" \"$3.5B\" investor quote why invested",
+        "\"Anthropic\" \"$3.5B\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Anthropic\" \"$3.5B\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Anthropic\" \"$3.5B\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Anthropic\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Anthropic\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Anthropic\" \"Tech Startup Funding Rounds: Last 30 Days, Updated Weekly\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Anthropic\" \"Tech Startup Funding Rounds: Last 30 Days, Updated Weekly\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Anthropic\" \"$3.5B\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Anthropic\" \"$3.5B\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Anthropic\" \"$3.5B\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Anthropic\" \"$3.5B\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:45:44.805Z"
+    }
+  ]
+}

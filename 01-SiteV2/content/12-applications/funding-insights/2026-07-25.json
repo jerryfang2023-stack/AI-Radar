@@ -1,0 +1,2508 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-25",
+    "generated_at": "2026-07-26T15:22:15.103Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 4,
+      "auto_published": 4,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-f3044a2b4363e0fd",
+      "triggered_by_event_id": "EV-acdeebead5324344",
+      "as_of_date": "2026-07-25",
+      "company": {
+        "entity_id": "EN-5b3767eb23d5e4ed",
+        "name": "Qodo",
+        "full_name": "Qodo",
+        "website": "https://www.qodo.ai",
+        "summary": "Qodo是一家AI代码审查与治理平台公司，致力于为AI辅助开发提供可信赖的验证层。其平台不仅审查代码变更，更评估变更对整个系统的影响，结合组织标准、历史上下文和风险容忍度，帮助企业更可靠地管理AI生成代码。",
+        "headquarters": "New York",
+        "founders": [
+          {
+            "name": "Itamar Friedman",
+            "role": "CEO and Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-27590be22b8eef44",
+                "quote": "Qodo was founded in 2022 by Itamar Friedman, with Dedy Kredo as co-founder and chief product officer."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dedy Kredo",
+            "role": "CPO and Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-912413eb423bb183",
+                "quote": "Qodo was founded in 2018 by CEO Itamar Friedman and CPO Dedy Kredo."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f001682a294672d5",
+            "quote": "The New York-headquartered startup has raised a $70 million Series B round"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series B",
+        "amount": "$70 million",
+        "total_raised": "$120 million",
+        "announced_at": "2026-03-30",
+        "investors": [
+          {
+            "name": "Qumra Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f001682a294672d5",
+                "quote": "a $70 million Series B round led by Qumra Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Maor Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f001682a294672d5",
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Phoenix Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-912413eb423bb183",
+                "quote": "The round was led by Qumra Capital, with participation from Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welender, and Clara Shih."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "S Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f001682a294672d5",
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Square Peg",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f001682a294672d5",
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Susa Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f001682a294672d5",
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "TLV Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f001682a294672d5",
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vine Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f001682a294672d5",
+                "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Peter Welinder (OpenAI)",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f001682a294672d5",
+                "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Clara Shih (Meta)",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f001682a294672d5",
+                "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f001682a294672d5",
+            "quote": "The New York-headquartered startup has raised a $70 million Series B round led by Qumra Capital, bringing its total funding to $120 million."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Qodo AI Code Review and Governance Platform",
+          "description": "一个AI代码审查与治理平台，通过多智能体系统、上下文引擎和规则生命周期管理，在IDE、Pull Request、CLI和Git工作流中提供自动化、上下文感知的代码审查，评估代码变更对整个代码库的影响，并强制执行组织标准。",
+          "target_customers": "企业工程团队",
+          "features": [
+            "多智能体代码审查",
+            "全代码库上下文引擎",
+            "规则生命周期管理",
+            "IDE内主动审查",
+            "安全漏洞检测"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5bea4d1073dfc950",
+              "quote": "The platform's core value proposition is not just reviewing what changed in a pull request, but evaluating what that change affects across the full codebase, including its history and the organization's own engineering standards."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Nvidia",
+          "industry": "科技",
+          "use_case": "使用Qodo进行AI代码审查与治理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+            }
+          ]
+        },
+        {
+          "name": "Walmart",
+          "industry": "零售",
+          "use_case": "使用Qodo进行AI代码审查与治理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+            }
+          ]
+        },
+        {
+          "name": "Red Hat",
+          "industry": "科技",
+          "use_case": "使用Qodo进行AI代码审查与治理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+            }
+          ]
+        },
+        {
+          "name": "Intuit",
+          "industry": "金融科技",
+          "use_case": "使用Qodo进行AI代码审查与治理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+            }
+          ]
+        },
+        {
+          "name": "Monday.com",
+          "industry": "SaaS",
+          "use_case": "加速代码审查周期并提高代码质量，每月防止约800个潜在问题进入生产环境",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6a9f123ca0d3f165",
+              "quote": "Qodo now prevents an average of 800 potential issues from reaching production every month while saving monday.com developers approximately one hour per pull request."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "企业足迹年增长",
+          "value": "11倍",
+          "observed_at": "2026-03-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9be3c470afa96211",
+              "quote": "Our growth over the past year, including increasing our enterprise footprint by 11x"
+            }
+          ]
+        },
+        {
+          "label": "VS Code插件安装量",
+          "value": "890.5K",
+          "observed_at": "2026-07-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9be3c470afa96211",
+              "quote": "890.5K"
+            }
+          ]
+        },
+        {
+          "label": "JetBrains插件安装量",
+          "value": "642.1K",
+          "observed_at": "2026-07-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9be3c470afa96211",
+              "quote": "642.1K"
+            }
+          ]
+        },
+        {
+          "label": "Monday.com每月防止潜在问题数",
+          "value": "800",
+          "observed_at": "2025-11-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6a9f123ca0d3f165",
+              "quote": "Qodo now prevents an average of 800 potential issues from reaching production every month"
+            }
+          ]
+        },
+        {
+          "label": "Fortune 100零售商每月节省开发者时间",
+          "value": "约50小时/用户/月",
+          "observed_at": "2025-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7250191c87c90bc",
+              "quote": "The pilot demonstrated that developers saved ~50 hours per month per user."
+            }
+          ]
+        },
+        {
+          "label": "Fortune 100零售商月活跃用户数",
+          "value": "12,000+",
+          "observed_at": "2025-09-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7250191c87c90bc",
+              "quote": "Within six months, the retailer recorded over 12,000 monthly active users (MAUs)"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：AI代码生成商品化后，代码验证与治理将成为新的稀缺层。Qodo以7000万美元B轮融资、累计1.2亿美元总融资，验证了以下信号：企业客户包括Nvidia、Walmart、Red Hat等；Martian基准测试排名第一（64.3%）；企业足迹年增长11倍；VS Code和JetBrains插件合计超150万安装量。投资逻辑建立在“生成与验证需要根本不同的系统”这一判断上，而非简单的AI编码工具延伸。",
+        "validated_signals": [
+          "Martian's Code Review Bench排名第一，得分64.3%，领先第二名超10个百分点",
+          "企业足迹年增长11倍",
+          "客户包括Nvidia、Walmart、Red Hat、Intuit、Texas Instruments、Monday.com等大型企业",
+          "VS Code插件安装量890.5K，JetBrains插件安装量642.1K",
+          "95%的开发者不完全信任AI生成代码，但仅48%持续审查，验证了市场需求"
+        ],
+        "risks": [
+          "代码生成巨头（如GitHub Copilot、Cursor、Claude Code）正将审查功能作为附加特性集成，可能削弱独立审查层的价值主张",
+          "企业采用独立审查平台需要额外集成成本，而内置审查功能的AI编码工具可提供更低摩擦的体验"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI代码审查与治理"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Qodo AI Code Review and Governance Platform",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5bea4d1073dfc950",
+              "quote": "The platform's core value proposition is not just reviewing what changed in a pull request, but evaluating what that change affects across the full codebase, including its history and the organization's own engineering standards."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Itamar Friedman",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-27590be22b8eef44",
+              "quote": "Qodo was founded in 2022 by Itamar Friedman, with Dedy Kredo as co-founder and chief product officer."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Dedy Kredo",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-912413eb423bb183",
+              "quote": "Qodo was founded in 2018 by CEO Itamar Friedman and CPO Dedy Kredo."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Qumra Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "a $70 million Series B round led by Qumra Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Maor Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Phoenix Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-912413eb423bb183",
+              "quote": "The round was led by Qumra Capital, with participation from Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welender, and Clara Shih."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "S Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Square Peg",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Susa Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "TLV Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Vine Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Peter Welinder (OpenAI)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Clara Shih (Meta)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Walmart",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Red Hat",
+          "canonical_entity_id": "EN-6ae697ad2d668653",
+          "canonical_name": "Red Hat",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Intuit",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f001682a294672d5",
+              "quote": "The company is already working with major enterprises such as Nvidia, Walmart, Red Hat, Intuit, and Texas Instruments"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Monday.com",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6a9f123ca0d3f165",
+              "quote": "Qodo now prevents an average of 800 potential issues from reaching production every month while saving monday.com developers approximately one hour per pull request."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-acdeebead5324344",
+          "date": "2026-03-30",
+          "title": "Qodo 获 7000 万美元融资，用于 AI 编码扩展中的代码验证",
+          "amount": "$70M",
+          "source_refs": [
+            "SA-93eddb0e4a471802"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-f001682a294672d5",
+          "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
+          "title": "Qodo 获 7000 万美元融资，用于 AI 编码扩展中的代码验证",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-25T02:26:10.935Z",
+          "content_hash": "043dbfa14e6bef8c",
+          "source_artifact_id": "SA-93eddb0e4a471802",
+          "raw_id": "RAW-b5a40b6e142257a1"
+        },
+        {
+          "source_id": "FISRC-5bea4d1073dfc950",
+          "source_url": "https://technews180.com/funding-news/qodo-closes-70m-series-b-for-ai-code-review/",
+          "title": "Qodo Closes $70M Series B for AI Code Review",
+          "publisher": "technews180.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T15:02:24.854Z",
+          "content_hash": "91ea41d0b8a22e15",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-912413eb423bb183",
+          "source_url": "https://theadvisertimes.com/business/israeli-ai-code-review-co-qodo-raises-70m/",
+          "title": "Israeli AI code review co Qodo raises $70m - theadvisertimes.com",
+          "publisher": "theadvisertimes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T15:02:25.818Z",
+          "content_hash": "643f1383daf3527e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-27590be22b8eef44",
+          "source_url": "https://www.woodenscale.ai/blogs/ai-code-review-startup-qodo-raises-70m-for-verification/",
+          "title": "AI Code Review Startup Qodo Raises $70M for Verification | WoodenScale AI Blog | WoodenScale AI",
+          "publisher": "woodenscale.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:02:28.834Z",
+          "content_hash": "3ee20fc80197fea4",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9be3c470afa96211",
+          "source_url": "https://www.qodo.ai/blog/qodo-70m-series-b-shift-to-artificial-wisdom/",
+          "title": "Beyond Intelligence: Qodo’s $70M Series B and the Shift to Artificial Wisdom - Qodo",
+          "publisher": "qodo.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:02:30.365Z",
+          "content_hash": "0a9a6badfa8f461b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b7250191c87c90bc",
+          "source_url": "https://www.qodo.ai/blog/case-study-fortune-100-company-improves-code-quality-with-qodo",
+          "title": "Global Fortune 100 Case Study: Increasing Code Quality and Developer Velocity with Qodo Merge - Qodo",
+          "publisher": "qodo.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:02:33.779Z",
+          "content_hash": "c7e3e4a1a0aeb1a2",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6a9f123ca0d3f165",
+          "source_url": "https://www.qodo.ai/blog/monday-com-accelerates-review-cycles-and-improves-code-quality-with-qodo/",
+          "title": "monday.com accelerates review cycles and improves code quality with Qodo - Qodo",
+          "publisher": "qodo.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:02:35.004Z",
+          "content_hash": "686dbcfe08a03dbe",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:03:24.649Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:03:24.649Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-19d2c5144ad69c90",
+      "triggered_by_event_id": "EV-d10684a6f16afe10",
+      "as_of_date": "2026-07-25",
+      "company": {
+        "entity_id": "EN-df30a48992da7fe8",
+        "name": "All Hands AI",
+        "full_name": "All Hands AI",
+        "website": "",
+        "summary": "All Hands AI 是一家构建模型无关的开源 AI 智能体的公司，旨在处理开发者日常工作中重复性的“苦力型任务”，让开发者能专注于更具创造性的工作。",
+        "headquarters": "波士顿",
+        "founders": [
+          {
+            "name": "Robert Brennan",
+            "role": "联合创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "All Hands AI co-founder and CEO Robert Brennan"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Xingyao Wang",
+            "role": "联合创始人兼首席人工智能官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "Xingyao Wang (chief AI officer)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Graham Neubig",
+            "role": "联合创始人兼首席科学家",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "Graham Neubig (chief scientist)"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9dd8630200082b4c",
+            "quote": "All Hands AI, which announced a $5 million seed funding round led by Menlo Ventures on Thursday, aims to build model-agnostic open source AI agents"
+          },
+          {
+            "source_id": "FISRC-ec35fc2e19c07bab",
+            "quote": "All Hands AI is focused on developing open source AI agents that help developers by automating routine tasks such as writing unit tests and managing documentation."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "500万美元",
+        "total_raised": "500万美元",
+        "announced_at": "2024-09-05",
+        "investors": [
+          {
+            "name": "Menlo Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "a $5 million seed funding round led by Menlo Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pillar VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "Pillar VC, Betaworks and Rebellion also participated"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Betaworks",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "Pillar VC, Betaworks and Rebellion also participated"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Rebellion",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "Pillar VC, Betaworks and Rebellion also participated"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Thom Wolf",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "The company also brought on a number of angels, including Hugging Face co-founder Thom Wolf"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jeff Hammerbacher",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "Cloudera co-founder Jeff Hammerbacher"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Soumith Chintala",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9dd8630200082b4c",
+                "quote": "PyTorch creator and Meta VP Soumith Chintala"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9dd8630200082b4c",
+            "quote": "All Hands AI, which announced a $5 million seed funding round led by Menlo Ventures on Thursday"
+          },
+          {
+            "source_id": "FISRC-ec35fc2e19c07bab",
+            "quote": "All Hands AI raised $5M in a seed funding round led by Menlo Ventures"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "OpenHands",
+          "description": "一个模型无关的开源 AI 智能体，可作为主动型结对编程助手，处理编写测试、部署应用等日常开发任务，并能识别代码变更对应用其他部分的影响。",
+          "target_customers": "开发者",
+          "features": [
+            "编写代码",
+            "执行命令",
+            "浏览网页",
+            "端到端解决 GitHub 问题",
+            "编写单元测试",
+            "管理依赖",
+            "更新文档"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "aims to build model-agnostic open source AI agents that can handle most of this toil"
+            },
+            {
+              "source_id": "FISRC-72fd58093ec7e2ba",
+              "quote": "OpenHands can write code, run commands, browse the web, and even solve GitHub issues end-to-end."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "GitHub 星标数",
+          "value": "超过 30,000",
+          "observed_at": "2024-09-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "now has over 30,000 stars"
+            }
+          ]
+        },
+        {
+          "label": "GitHub 贡献者数",
+          "value": "超过 150",
+          "observed_at": "2024-09-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "more than 150 contributors"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是开源 AI 编码智能体能否通过社区驱动的开发模式，在开发者工具市场中建立与闭源方案（如 Devin）的差异化优势。本轮融资所依赖的已验证信号包括：OpenHands 项目在 GitHub 上已获得超过 30,000 星标和超过 150 名贡献者，显示出较强的社区牵引力；创始团队在自然语言处理和智能体构建方面拥有深厚背景。但判断的证据边界仅限于早期社区指标和团队资历，尚未有商业客户验证或收入数据。",
+        "validated_signals": [
+          "OpenHands 项目在 GitHub 上获得超过 30,000 星标",
+          "OpenHands 项目拥有超过 150 名贡献者",
+          "创始团队在自然语言处理和智能体构建方面拥有丰富经验"
+        ],
+        "risks": [
+          "产品仍处于早期阶段，尚未与 VS Code 等主流开发环境深度集成，用户体验存在未解决问题，且完整的“智能体编码循环”目标仍属愿景阶段。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "人工智能基础设施与开发者工具"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "OpenHands",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "aims to build model-agnostic open source AI agents that can handle most of this toil"
+            },
+            {
+              "source_id": "FISRC-72fd58093ec7e2ba",
+              "quote": "OpenHands can write code, run commands, browse the web, and even solve GitHub issues end-to-end."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Robert Brennan",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "All Hands AI co-founder and CEO Robert Brennan"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Xingyao Wang",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "Xingyao Wang (chief AI officer)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Graham Neubig",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "Graham Neubig (chief scientist)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Menlo Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "a $5 million seed funding round led by Menlo Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Pillar VC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "Pillar VC, Betaworks and Rebellion also participated"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Betaworks",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "Pillar VC, Betaworks and Rebellion also participated"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Rebellion",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "Pillar VC, Betaworks and Rebellion also participated"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Thom Wolf",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "The company also brought on a number of angels, including Hugging Face co-founder Thom Wolf"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jeff Hammerbacher",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "Cloudera co-founder Jeff Hammerbacher"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Soumith Chintala",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dd8630200082b4c",
+              "quote": "PyTorch creator and Meta VP Soumith Chintala"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d10684a6f16afe10",
+          "date": "2024-09-05",
+          "title": "All Hands AI 获 500 万美元融资，为开发者构建开源 AI 智能体",
+          "amount": "$5M",
+          "source_refs": [
+            "SA-4e19ebb9a91e1f75"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9dd8630200082b4c",
+          "source_url": "https://techcrunch.com/2024/09/05/all-hands-ai-raises-5m-to-build-open-source-agents-for-developers/",
+          "title": "All Hands AI 获 500 万美元融资，为开发者构建开源 AI 智能体",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-25T02:25:48.525Z",
+          "content_hash": "98fe8fb23998f253",
+          "source_artifact_id": "SA-4e19ebb9a91e1f75",
+          "raw_id": "RAW-03a2b3ae441a1ea9"
+        },
+        {
+          "source_id": "FISRC-72fd58093ec7e2ba",
+          "source_url": "https://allhandsai.applytojob.com/apply/G2iDeLQyfv/Developer-Relations-Advocate",
+          "title": "All Hands AI",
+          "publisher": "allhandsai.applytojob.com",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T15:01:28.744Z",
+          "content_hash": "f7d0d1ac165783ce",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ec35fc2e19c07bab",
+          "source_url": "https://app.fundz.net/fundings/all-hands-ai-funding-round-seed-0ff15c",
+          "title": "All Hands AI raises $5 Million Seed round (September 2024)",
+          "publisher": "app.fundz.net",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T15:01:34.342Z",
+          "content_hash": "f9c923a8f3a3f9aa",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:02:34.061Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:02:34.061Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-3c01d00486bca8e1",
+      "triggered_by_event_id": "EV-bffc68e7bb4d598b",
+      "as_of_date": "2026-07-25",
+      "company": {
+        "entity_id": "EN-7f67f2f8692510cf",
+        "name": "Hadrius",
+        "full_name": "Hadrius",
+        "website": "https://www.hadrius.com/",
+        "summary": "Hadrius 是一家为金融服务公司提供智能体合规基础设施的供应商，致力于将合规整合到单一的 AI 原生工作流中。",
+        "headquarters": "New York, United States",
+        "founders": [
+          {
+            "name": "Thomas Stewart",
+            "role": "Co-founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-70c3e89375309295",
+                "quote": "Thomas Stewart, Co-founder and CEO of Hadrius"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Som Mohapatra",
+            "role": "Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-851e6aa6d4487d48",
+                "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Allen Calderwood",
+            "role": "Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-851e6aa6d4487d48",
+                "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "80 employees",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-851e6aa6d4487d48",
+              "quote": "80 employees"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-70c3e89375309295",
+            "quote": "Hadrius, an agentic compliance infrastructure provider for financial services firms"
+          },
+          {
+            "source_id": "FISRC-851e6aa6d4487d48",
+            "quote": "New York, United States"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮和A轮",
+        "amount": "$27 million",
+        "total_raised": "$29 million",
+        "announced_at": "2026-07-14",
+        "investors": [
+          {
+            "name": "CRV",
+            "role": "本轮（A轮）领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-70c3e89375309295",
+                "quote": "led by CRV"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Y Combinator",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-70c3e89375309295",
+                "quote": "with participation from Y Combinator"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c"
+          },
+          {
+            "name": "Altruist 创始人",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-70c3e89375309295",
+                "quote": "and founders of Altruist, Jump AI, and FINNY"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jump AI 创始人",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-70c3e89375309295",
+                "quote": "and founders of Altruist, Jump AI, and FINNY"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "FINNY 创始人",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-70c3e89375309295",
+                "quote": "and founders of Altruist, Jump AI, and FINNY"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-851e6aa6d4487d48",
+            "quote": "29.0M USD total raised"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Hadrius 智能体合规平台",
+          "description": "一个 AI 原生的合规系统，将营销审核、通信存档、交易监控、员工监督等整合到一个审计就绪的单一记录系统中。",
+          "target_customers": "金融服务公司，包括注册投资顾问（RIA）、经纪交易商和投资公司。",
+          "features": [
+            "AI 驱动的通信审核",
+            "营销材料审批",
+            "交易监控",
+            "员工个人交易监控",
+            "分支机构检查",
+            "合规手册实施"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "consolidate compliance into a single AI-native workflow"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "BBVA",
+          "industry": "金融服务",
+          "use_case": "使用 Hadrius 平台运行其合规项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-81c9231781459280",
+              "quote": "including BBVA"
+            }
+          ]
+        },
+        {
+          "name": "Csenge Advisory Group",
+          "industry": "金融服务",
+          "use_case": "使用 Hadrius 替代传统合规软件，以更智能、更高效的方式进行合规工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "Michael Schmidtke, Chief Compliance Officer of Csenge Advisory Group"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "ACA Group",
+          "product": "合规服务和软件",
+          "scenario": "金融服务公司的合规管理",
+          "target_customer": "金融服务公司",
+          "funding_summary": "",
+          "core_difference": "Hadrius 是 AI 原生平台，旨在取代 ACA Group 等现有供应商；Hadrius 从 ACA Group 招募了前产品负责人以增强其领域专业知识和分销能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-851e6aa6d4487d48",
+              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
+            },
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "recruited the former Head of Product at ACA Group"
+            }
+          ]
+        },
+        {
+          "name": "StarCompliance",
+          "product": "合规软件",
+          "scenario": "金融服务公司的合规管理",
+          "target_customer": "金融服务公司",
+          "funding_summary": "",
+          "core_difference": "Hadrius 是 AI 原生平台，旨在取代 StarCompliance 等现有供应商；Hadrius 从 StarCompliance 招募了高级市场进入负责人以增强其领域专业知识和分销能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-851e6aa6d4487d48",
+              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
+            },
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "senior go-to-market leaders from StarCompliance"
+            }
+          ]
+        },
+        {
+          "name": "Smarsh",
+          "product": "通信存档和合规软件",
+          "scenario": "金融服务公司的通信合规与存档",
+          "target_customer": "金融服务公司",
+          "funding_summary": "",
+          "core_difference": "Hadrius 是 AI 原生平台，旨在取代 Smarsh 等现有供应商；Hadrius 从 Smarsh 招募了高级市场进入负责人以增强其领域专业知识和分销能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-851e6aa6d4487d48",
+              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "客户数量",
+          "value": "超过500家金融机构和投资公司",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "already serves more than 500 financial institutions and investment firms"
+            }
+          ]
+        },
+        {
+          "label": "误报减少率",
+          "value": "95%",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "reducing false positives by 95%"
+            }
+          ]
+        },
+        {
+          "label": "人工合规工作减少率",
+          "value": "70%",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "manual compliance work by 70%"
+            }
+          ]
+        },
+        {
+          "label": "每周节省时间",
+          "value": "超过20小时",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "saving over 20 hours per week"
+            }
+          ]
+        },
+        {
+          "label": "使用3个及以上模块的客户比例",
+          "value": "三分之二",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fd29ec2a7e14f56f",
+              "quote": "Two-thirds of our customers use three or more modules."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Thomas Stewart",
+          "quote": "If AI is generating the communications, the marketing, and the trades, only AI can review them at the same scale.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "If AI is generating the communications, the marketing, and the trades, only AI can review them at the same scale"
+            }
+          ]
+        },
+        {
+          "speaker": "Brittany Walker",
+          "quote": "Compliance is one of the largest and least automated labor markets in financial services. It represents a $9.4 billion technology opportunity sitting next to tens of billions in labor spend.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "Compliance is one of the largest and least automated labor markets in financial services. It represents a $9.4 billion technology opportunity sitting next to tens of billions in labor spend"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是，在AI生成内容激增导致合规审查量远超人工处理能力的背景下，Hadrius能否凭借其AI原生架构，将分散的合规支出整合为单一记录系统，从而打破合规成本与员工人数之间的线性关系。当前融资所依赖的已验证信号包括：已服务超过500家客户，并声称能减少95%的误报和70%的人工工作。判断的证据边界在于，这些效率数据来自公司单方面声明，且其客户基础部分建立在YC网络声誉之上，尚未经历现有巨头在其已有记录系统中添加AI功能后的全面竞争考验。",
+        "validated_signals": [
+          "已服务超过500家金融机构和投资公司",
+          "客户声称减少了95%的误报和70%的人工合规工作，每周节省超过20小时",
+          "三分之二的客户使用了三个或更多产品模块，表明平台粘性",
+          "从ACA Group、StarCompliance、Smarsh等现有巨头招募高级人才，将领域信誉直接转化为分销能力"
+        ],
+        "risks": [
+          "现有合规巨头（如ACA Group、Smarsh）正在其客户已使用的记录系统中添加AI功能，Hadrius面临在达到记录系统地位之前，被现有厂商的“足够好”的AI功能所挤压的风险。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "金融科技"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Hadrius 智能体合规平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "consolidate compliance into a single AI-native workflow"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Thomas Stewart",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "Thomas Stewart, Co-founder and CEO of Hadrius"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Som Mohapatra",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-851e6aa6d4487d48",
+              "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Allen Calderwood",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-851e6aa6d4487d48",
+              "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CRV",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "led by CRV"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "with participation from Y Combinator"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Altruist 创始人",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "and founders of Altruist, Jump AI, and FINNY"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jump AI 创始人",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "and founders of Altruist, Jump AI, and FINNY"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "FINNY 创始人",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "and founders of Altruist, Jump AI, and FINNY"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "BBVA",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-81c9231781459280",
+              "quote": "including BBVA"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Csenge Advisory Group",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "Michael Schmidtke, Chief Compliance Officer of Csenge Advisory Group"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "ACA Group",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-851e6aa6d4487d48",
+              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
+            },
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "recruited the former Head of Product at ACA Group"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "StarCompliance",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-851e6aa6d4487d48",
+              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
+            },
+            {
+              "source_id": "FISRC-70c3e89375309295",
+              "quote": "senior go-to-market leaders from StarCompliance"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Smarsh",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-851e6aa6d4487d48",
+              "quote": "ACA Group, StarCompliance and Smarsh are the incumbent compliance-services and archiving vendors whose seats Hadrius is trying to replace"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-bffc68e7bb4d598b",
+          "date": "2026-07-23",
+          "title": "Hadrius 融资 2700 万美元，打造智能体合规基础设施",
+          "amount": "$27M",
+          "source_refs": [
+            "SA-8e6b758953ab625d"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-70c3e89375309295",
+          "source_url": "https://theaiinsider.tech/2026/07/23/hadrius-raises-27m-to-build-agentic-compliance-infrastructure/",
+          "title": "Hadrius 融资 2700 万美元，打造智能体合规基础设施",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-25T02:25:26.726Z",
+          "content_hash": "4f89d06d00dc11fa",
+          "source_artifact_id": "SA-8e6b758953ab625d",
+          "raw_id": "RAW-217dd859531edf67"
+        },
+        {
+          "source_id": "FISRC-851e6aa6d4487d48",
+          "source_url": "https://seedtable.com/companies/hadrius/funding-rounds/series-a-2026-07",
+          "title": "Hadrius Raises 27.0M USD in Series A Funding | Seedtable",
+          "publisher": "seedtable.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T15:01:19.522Z",
+          "content_hash": "5c826ef0200c35f6",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-81c9231781459280",
+          "source_url": "https://prfintech.com/hadrius-raises-27m-series-a-ai-compliance/",
+          "title": "Hadrius Raises $27M to Scale AI Compliance Platform",
+          "publisher": "prfintech.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T15:01:31.896Z",
+          "content_hash": "d4ac732eeea2d48c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fd29ec2a7e14f56f",
+          "source_url": "https://www.hadrius.com/insights/series-a",
+          "title": "Announcing our $22 Million Series A",
+          "publisher": "hadrius.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:01:40.040Z",
+          "content_hash": "972602c652bea99d",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:02:20.968Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:02:20.968Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-4960bd099ebc8b70",
+      "triggered_by_event_id": "EV-136b2edc9b9f3be8",
+      "as_of_date": "2026-07-25",
+      "company": {
+        "entity_id": "EN-ab9b29074a980e4b",
+        "name": "Accel",
+        "full_name": "Paper",
+        "website": "",
+        "summary": "Paper 是一个面向智能体时代的设计平台，致力于为设计师与 AI 智能体提供共享的实时协作画布，以弥合设计与工程之间的交接摩擦。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Stephen Haney",
+            "role": "创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "Paper founder and CEO Stephen Haney"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4c0b752256edc3ff",
+            "quote": "Paper, a design platform aimed at the agentic era of software development"
+          }
+        ]
+      },
+      "financing": {
+        "round": "A 轮",
+        "amount": "3400 万美元",
+        "total_raised": "3400 万美元",
+        "announced_at": "2026-07-24",
+        "investors": [
+          {
+            "name": "Accel",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "a $34 million Series A funding round led by Accel and Iconiq"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Iconiq",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "a $34 million Series A funding round led by Accel and Iconiq"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Designer Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "Other participating investors included Designer Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Michael Grinich (WorkOS)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "Michael Grinich of WorkOS"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Anton Osika (Lovable)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "Anton Osika of Lovable"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Anthropic 工程师与设计师",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "engineers and designers from Anthropic and OpenAI"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "OpenAI 工程师与设计师",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "engineers and designers from Anthropic and OpenAI"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-4c0b752256edc3ff",
+            "quote": "Paper, a design platform aimed at the agentic era of software development, announced a $34 million Series A round led by Accel and ICONIQ."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Paper Desktop",
+          "description": "一个将设计画布转变为人类与 AI 智能体共享工作空间的桌面应用，支持实时设计、代码与数据的协作。",
+          "target_customers": "设计团队与工程师",
+          "features": [
+            "使用 HTML 和 CSS 渲染，使设计直接与生产代码连接",
+            "支持 AI 智能体在设计中扮演日益重要的角色"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper Desktop turns the design canvas into a shared workspace for humans and AI agents — enabling design, code, and data in real time."
+            },
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Ramp",
+          "industry": "金融科技",
+          "use_case": "使用 Paper 进行设计协作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Vercel",
+          "product": "v0 平台",
+          "scenario": "通过简单的文本指令构建设计概念和工作布局",
+          "target_customer": "设计师",
+          "funding_summary": "",
+          "core_difference": "Paper 使用 HTML 和 CSS 渲染，使设计直接与生产代码连接，并支持 AI 智能体协作；v0 侧重于通过文本指令生成视觉概念。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
+            }
+          ]
+        },
+        {
+          "name": "Canva",
+          "product": "Canva",
+          "scenario": "通过简单的文本指令构建设计概念和工作布局",
+          "target_customer": "设计师",
+          "funding_summary": "",
+          "core_difference": "Paper 使用 HTML 和 CSS 渲染，使设计直接与生产代码连接，并支持 AI 智能体协作；Canva 侧重于通过文本指令生成视觉概念。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "ARR 增长倍数（自发布以来）",
+          "value": "25 倍",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper says it has grown annualized recurring revenue (ARR) 25x since launch"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Mariano Payano",
+          "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4c0b752256edc3ff",
+              "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Iconiq",
+            "speaker": "Mariano Payano",
+            "speaker_role": "合伙人",
+            "rationale": "Iconiq 认为设计与工程的界限正在模糊，Paper 是第一个为软件未来而构建的画布，且已被众多注重品质的团队积极采用。",
+            "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4c0b752256edc3ff",
+                "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“AI 原生设计工具”这一新品类能否取代上一代以人类独立操作为前提的设计软件。本轮融资所依赖的已验证信号包括：ARR 自发布以来增长 25 倍，连续四个月登上 Ramp 增长最快公司榜单，以及 Ramp、Vercel、PostHog 等知名科技公司已成为客户。这些信号表明产品在开发者生态中已获得初步验证，但判断的证据边界仍局限于早期采用者群体，尚未证明其在大规模企业市场中的可复制性。",
+        "validated_signals": [
+          "ARR 自发布以来增长 25 倍",
+          "连续四个月登上 Ramp 增长最快公司榜单",
+          "客户包括 Ramp、Vercel、PostHog、Y Combinator 等知名科技公司"
+        ],
+        "risks": [
+          "Paper 的客户群体目前集中在科技公司和初创企业，尚未验证其在传统行业或大型企业设计团队中的渗透能力。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 原生设计工具"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Paper Desktop",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper Desktop turns the design canvas into a shared workspace for humans and AI agents — enabling design, code, and data in real time."
+            },
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Stephen Haney",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper founder and CEO Stephen Haney"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "a $34 million Series A funding round led by Accel and Iconiq"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Iconiq",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "a $34 million Series A funding round led by Accel and Iconiq"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Designer Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Other participating investors included Designer Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Michael Grinich (WorkOS)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Michael Grinich of WorkOS"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Anton Osika (Lovable)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Anton Osika of Lovable"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Anthropic 工程师与设计师",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "engineers and designers from Anthropic and OpenAI"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "OpenAI 工程师与设计师",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "engineers and designers from Anthropic and OpenAI"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ramp",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Vercel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Canva",
+          "canonical_entity_id": "EN-3db1f560db626918",
+          "canonical_name": "Canva",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-136b2edc9b9f3be8",
+          "date": "2026-07-24",
+          "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+          "amount": "$34 million",
+          "source_refs": [
+            "SA-698e748e9cefe115",
+            "SA-02eba6bdbd1a0ec5"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-545ac2658d68b038",
+          "source_url": "https://www.citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era/",
+          "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-25T02:25:53.664Z",
+          "content_hash": "a9da415791e9a9f4",
+          "source_artifact_id": "SA-698e748e9cefe115",
+          "raw_id": "RAW-549fbe22bd61dc41"
+        },
+        {
+          "source_id": "FISRC-4c0b752256edc3ff",
+          "source_url": "https://pulse2.com/paper-raises-34-million-series-a-to-build-design-platform-for-the-agentic-era/",
+          "title": "Paper 完成 3400 万美元 A 轮融资，打造面向智能体时代的设计平台",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-25T02:25:54.815Z",
+          "content_hash": "8d9bcde152036162",
+          "source_artifact_id": "SA-02eba6bdbd1a0ec5",
+          "raw_id": "RAW-fda8b641723c32ff"
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:02:12.153Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:02:12.153Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-bffc68e7bb4d598b",
+      "company_name": "Hadrius",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Hadrius\" \"$27M\" funding investors round",
+        "site:hadrius.com \"Hadrius\" product customers case study",
+        "\"Hadrius\" \"Hadrius Raises $27M to Build Agentic Compliance Infrastructure\" competitors product use case",
+        "\"Hadrius\" \"$27M\" investor quote why invested",
+        "\"Hadrius\" \"$27M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Hadrius\" \"$27M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hadrius\" \"$27M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "site:hadrius.com \"Hadrius\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "site:hadrius.com \"Hadrius\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hadrius\" \"Hadrius Raises $27M to Build Agentic Compliance Infrastructure\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hadrius\" \"Hadrius Raises $27M to Build Agentic Compliance Infrastructure\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hadrius\" \"$27M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hadrius\" \"$27M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Hadrius\" \"$27M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hadrius\" \"$27M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:03:24.699Z"
+    },
+    {
+      "event_id": "EV-d10684a6f16afe10",
+      "company_name": "All Hands AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"All Hands AI\" \"$5M\" funding investors round",
+        "\"All Hands AI\" product customers case study",
+        "\"All Hands AI\" \"All Hands AI raises $5M to build open source agents for developers | TechCrunch\" competitors product use case",
+        "\"All Hands AI\" \"$5M\" investor quote why invested",
+        "\"All Hands AI\" \"$5M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"All Hands AI\" \"$5M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"All Hands AI\" \"$5M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"All Hands AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"All Hands AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"All Hands AI\" \"All Hands AI raises $5M to build open source agents for developers | TechCrunch\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"All Hands AI\" \"All Hands AI raises $5M to build open source agents for developers | TechCrunch\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"All Hands AI\" \"$5M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"All Hands AI\" \"$5M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"All Hands AI\" \"$5M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"All Hands AI\" \"$5M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:03:24.699Z"
+    },
+    {
+      "event_id": "EV-136b2edc9b9f3be8",
+      "company_name": "Accel",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Accel\" \"$34 million\" funding investors round",
+        "\"Accel\" product customers case study",
+        "\"Accel\" \"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" competitors product use case",
+        "\"Accel\" \"$34 million\" investor quote why invested",
+        "\"Accel\" \"$34 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Accel\" \"$34 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Accel\" \"$34 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Accel\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Accel\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Accel\" \"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Accel\" \"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Accel\" \"$34 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Accel\" \"$34 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Accel\" \"$34 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Accel\" \"$34 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:03:24.699Z"
+    },
+    {
+      "event_id": "EV-acdeebead5324344",
+      "company_name": "Qodo",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Qodo\" \"$70M\" funding investors round",
+        "\"Qodo\" product customers case study",
+        "\"Qodo\" \"Qodo raises $70M for code verification as AI coding scales\" competitors product use case",
+        "\"Qodo\" \"$70M\" investor quote why invested",
+        "\"Qodo\" \"$70M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Qodo\" \"$70M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Qodo\" \"$70M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Qodo\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Qodo\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Qodo\" \"Qodo raises $70M for code verification as AI coding scales\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Qodo\" \"Qodo raises $70M for code verification as AI coding scales\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Qodo\" \"$70M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Qodo\" \"$70M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Qodo\" \"$70M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Qodo\" \"$70M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:03:24.699Z"
+    }
+  ]
+}

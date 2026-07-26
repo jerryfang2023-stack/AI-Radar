@@ -1,0 +1,4461 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-07",
+    "generated_at": "2026-07-26T15:17:40.913Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 7,
+      "auto_published": 6,
+      "blocked": 1,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-2d52edc6ddaedef8",
+      "triggered_by_event_id": "EV-e61effb7ada8508f",
+      "as_of_date": "2026-07-07",
+      "company": {
+        "entity_id": "EN-612370f44fcdeae0",
+        "name": "PYMNTS | This",
+        "full_name": "Taktile",
+        "website": "",
+        "summary": "Taktile是一家为受监管金融机构提供AI智能体决策平台的公司，帮助银行和保险公司在保持监管监督的同时，自动化复杂的运营工作流，例如商业贷款审批、保险理赔和反洗钱筛查。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Maik Taro Wehmeyer",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f796cb8967f54f5a",
+                "quote": "Maik Taro Wehmeyer , co-founder and CEO at Taktile"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f796cb8967f54f5a",
+            "quote": "Taktile is betting that the market for autonomous financial decision-making is arriving faster than many executives realize. The company’s platform deploys AI agents designed specifically for regulated financial institutions, helping banks automate some of their most complex operational workflows while maintaining regulatory oversight."
+          },
+          {
+            "source_id": "FISRC-dbf91dc4890d5e13",
+            "quote": "The company’s modular Agentic Decision Platform enables banks and insurers to combine AI agents, rules, relevant context and human oversight to automate and optimize decisions such as approving customers, reimbursing claims, stopping fraud and underwriting business loans"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series C",
+        "amount": "$110 million",
+        "total_raised": "$184 million",
+        "announced_at": "2026-06-24",
+        "investors": [
+          {
+            "name": "Goldman Sachs Alternatives",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f796cb8967f54f5a",
+                "quote": "a $110 million funding round led by Goldman Sachs Alternatives"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-dbf91dc4890d5e13",
+            "quote": "Taktile raised $110 million in a Series C funding round"
+          },
+          {
+            "source_id": "FISRC-dbf91dc4890d5e13",
+            "quote": "With its latest round, the company has raised a total of $184 million, according to the Wednesday press release."
+          },
+          {
+            "source_id": "FISRC-dbf91dc4890d5e13",
+            "quote": "Taktile’s previous funding round was a February 2025 Series B in which the company raised $54 million."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Agentic Decision Platform",
+          "description": "一个模块化平台，允许银行和保险公司结合AI智能体、规则、相关上下文和人工监督，自动化并优化高风险决策，如客户审批、理赔、欺诈拦截和商业贷款承销。",
+          "target_customers": "受监管的金融机构，包括银行和保险公司",
+          "features": [
+            "AI智能体自动化决策",
+            "规则引擎与上下文整合",
+            "人工监督机制",
+            "影子模式（AI与人工工作流对比）",
+            "Taktile Labs基准测试"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dbf91dc4890d5e13",
+              "quote": "The company’s modular Agentic Decision Platform enables banks and insurers to combine AI agents, rules, relevant context and human oversight to automate and optimize decisions such as approving customers, reimbursing claims, stopping fraud and underwriting business loans"
+            },
+            {
+              "source_id": "FISRC-f796cb8967f54f5a",
+              "quote": "The company also encourages customers to operate AI in “shadow mode,” allowing institutions to compare AI recommendations against existing human workflows before giving systems operational authority."
+            },
+            {
+              "source_id": "FISRC-f796cb8967f54f5a",
+              "quote": "Taktile has created its own research organization, Taktile Labs, dedicated to benchmarking AI performance against human experts across financial use cases."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "B2B承销自动化率",
+          "value": "95%",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dbf91dc4890d5e13",
+              "quote": "powering outcomes such as 95% automation in B2B underwriting"
+            }
+          ]
+        },
+        {
+          "label": "反洗钱误报减少比例",
+          "value": "75%",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dbf91dc4890d5e13",
+              "quote": "75% fewer anti-money laundering (AML) false positives"
+            }
+          ]
+        },
+        {
+          "label": "SMB贷款处理量提升倍数",
+          "value": "5倍",
+          "observed_at": "2025-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dbf91dc4890d5e13",
+              "quote": "AI agents that enable banks to process five times more small- to medium-sized business (SMB) loans without adding to their headcount"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Goldman Sachs Alternatives",
+            "speaker": "Jade Mandel",
+            "speaker_role": "Growth Equity at Goldman Sachs Alternatives董事总经理",
+            "rationale": "强调银行和保险公司一致反馈Taktile帮助其团队利用AI转变决策方式，实现了更快的产品发布、更精准的风险结果和显著的运营效率。",
+            "quote": "Banks and insurers consistently tell us that Taktile has helped them transform how their teams make decisions with AI — unlocking faster product launches, sharper risk outcomes, and meaningful operational efficiency.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-dbf91dc4890d5e13",
+                "quote": "Jade Mandel , managing director at Growth Equity at Goldman Sachs Alternatives, said in the release: “Banks and insurers consistently tell us that Taktile has helped them transform how their teams make decisions with AI — unlocking faster product launches, sharper risk outcomes, and meaningful operational efficiency.”"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "本轮资本押注的核心变量是受监管金融机构对AI自主决策的信任拐点。Goldman Sachs的领投表明，市场正在从“AI辅助员工”向“AI自主执行复杂工作流”迁移，且Taktile已通过95%的B2B承销自动化率和75%的反洗钱误报减少等量化指标，验证了其平台在关键任务场景中的生产级可靠性。估值或融资规模所依赖的已验证信号包括：2025年以来AI模型能力已跨越高风险决策的门槛，以及平台需求自2025年起加速增长。判断的证据边界限于已披露的客户生产结果和投资方公开声明，未涉及具体营收或估值倍数。",
+        "validated_signals": [
+          "AI模型能力在2025年已足以自动化金融业高风险决策，平台需求自此加速增长。",
+          "平台已实现95%的B2B承销自动化率和75%的反洗钱误报减少，证明其在生产环境中的有效性。",
+          "社区银行和信用合作社等小型机构在完成云现代化后，正成为AI决策的积极采用者，市场不限于大型银行。"
+        ],
+        "risks": [
+          "监管机构对AI自主决策的接受速度可能慢于技术成熟速度，从而延迟‘智能体优先’银行的实现。",
+          "大型银行对自主AI仍持犹豫态度，企业级采用需要组织变革和员工行为转变，而不仅仅是技术部署。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "金融科技，AI决策自动化"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Agentic Decision Platform",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-dbf91dc4890d5e13",
+              "quote": "The company’s modular Agentic Decision Platform enables banks and insurers to combine AI agents, rules, relevant context and human oversight to automate and optimize decisions such as approving customers, reimbursing claims, stopping fraud and underwriting business loans"
+            },
+            {
+              "source_id": "FISRC-f796cb8967f54f5a",
+              "quote": "The company also encourages customers to operate AI in “shadow mode,” allowing institutions to compare AI recommendations against existing human workflows before giving systems operational authority."
+            },
+            {
+              "source_id": "FISRC-f796cb8967f54f5a",
+              "quote": "Taktile has created its own research organization, Taktile Labs, dedicated to benchmarking AI performance against human experts across financial use cases."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Maik Taro Wehmeyer",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f796cb8967f54f5a",
+              "quote": "Maik Taro Wehmeyer , co-founder and CEO at Taktile"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Goldman Sachs Alternatives",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f796cb8967f54f5a",
+              "quote": "a $110 million funding round led by Goldman Sachs Alternatives"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-e61effb7ada8508f",
+          "date": "2026-07-07",
+          "title": "这位CEO刚刚筹集1.1亿美元，打造以AI智能体为核心的银行服务",
+          "amount": "$110 Million",
+          "source_refs": [
+            "SA-5ebc10b58e7d85a2"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-f796cb8967f54f5a",
+          "source_url": "https://www.pymnts.com/news/artificial-intelligence/2026/this-ceo-just-raised-110-million-to-make-banks-agent-first/",
+          "title": "这位CEO刚刚筹集1.1亿美元，打造以AI智能体为核心的银行服务",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-07T02:01:23.525Z",
+          "content_hash": "6d835905b577107c",
+          "source_artifact_id": "SA-5ebc10b58e7d85a2",
+          "raw_id": "RAW-72b034f17a0944df"
+        },
+        {
+          "source_id": "FISRC-dbf91dc4890d5e13",
+          "source_url": "https://www.pymnts.com/news/investment-tracker/2026/taktile-raises-110-million-to-automate-high-stakes-banking-and-insurance-decisions/",
+          "title": "PYMNTS | Taktile Nets $110M to Automate Banking and Insurance Decisions",
+          "publisher": "pymnts.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:47:18.198Z",
+          "content_hash": "148504bbe4164615",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:47:55.694Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:47:55.694Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-2e4c307c0be32b8e",
+      "triggered_by_event_id": "EV-7abd8ec418f1e7f3",
+      "as_of_date": "2026-07-07",
+      "company": {
+        "entity_id": "EN-0995103010d39563",
+        "name": "Positron",
+        "full_name": "Positron AI",
+        "website": "positron.ai",
+        "summary": "Positron AI 是一家专注于构建高能效 AI 推理硬件的半导体初创公司，旨在通过降低运行现代模型的成本和功耗，使 AI 推理在大规模部署时更加经济高效。",
+        "headquarters": "Reno, Nevada",
+        "founders": [
+          {
+            "name": "Mitesh Agrawal",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7ab329bc47036713",
+                "quote": "said Chief Executive Mitesh Agrawal"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Thomas Sohmers",
+            "role": "CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1c33ca1a5b60d234",
+                "quote": "Positron CTO Thomas Sohmers told EE Times"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "50",
+          "observed_at": "2026-02-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c33ca1a5b60d234",
+              "quote": "Positron has grown its team to 50 in the last six months and will grow to around 100 by the end of 2026."
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-272c28400131d6f2",
+            "quote": "The Reno-based startup’s Series B"
+          },
+          {
+            "source_id": "FISRC-086094933b1962b5",
+            "quote": "Positron AI builds purpose-built hardware and software to make AI inference dramatically cheaper and more energy-efficient."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series B",
+        "amount": "$230 million",
+        "total_raised": "just over $300 million",
+        "announced_at": "2026-02-04",
+        "investors": [
+          {
+            "name": "Arena Private Wealth",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272c28400131d6f2",
+                "quote": "co-led by Arena Private Wealth, Jump Trading, and Unless"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jump Trading",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272c28400131d6f2",
+                "quote": "co-led by Arena Private Wealth, Jump Trading, and Unless"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Unless",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272c28400131d6f2",
+                "quote": "co-led by Arena Private Wealth, Jump Trading, and Unless"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Qatar Investment Authority (QIA)",
+            "role": "本轮战略参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272c28400131d6f2",
+                "quote": "with strategic investment from Qatar Investment Authority (QIA)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Arm",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7ab329bc47036713",
+                "quote": "with participation from new and strategic investors Qatar Investment Authority, Arm and Helena"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Helena",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7ab329bc47036713",
+                "quote": "with participation from new and strategic investors Qatar Investment Authority, Arm and Helena"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Valor Equity Partners",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272c28400131d6f2",
+                "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve."
+              },
+              {
+                "source_id": "FISRC-7ab329bc47036713",
+                "quote": "Existing investors joining the round included Valor Equity Partners, Atreides Management and DFJ Growth, among others."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Atreides Management",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272c28400131d6f2",
+                "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve."
+              },
+              {
+                "source_id": "FISRC-7ab329bc47036713",
+                "quote": "Existing investors joining the round included Valor Equity Partners, Atreides Management and DFJ Growth, among others."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "DFJ Growth",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272c28400131d6f2",
+                "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve."
+              },
+              {
+                "source_id": "FISRC-7ab329bc47036713",
+                "quote": "Existing investors joining the round included Valor Equity Partners, Atreides Management and DFJ Growth, among others."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Flume Ventures",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272c28400131d6f2",
+                "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve."
+              },
+              {
+                "source_id": "FISRC-086094933b1962b5",
+                "quote": "Existing investors Valor Equity Partners, Atreides Management, DFJ Growth, Resilience Reserve, Flume Ventures, and 1517 also participated."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Resilience Reserve",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-272c28400131d6f2",
+                "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve."
+              },
+              {
+                "source_id": "FISRC-086094933b1962b5",
+                "quote": "Existing investors Valor Equity Partners, Atreides Management, DFJ Growth, Resilience Reserve, Flume Ventures, and 1517 also participated."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "1517",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-086094933b1962b5",
+                "quote": "Existing investors Valor Equity Partners, Atreides Management, DFJ Growth, Resilience Reserve, Flume Ventures, and 1517 also participated."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-272c28400131d6f2",
+            "quote": "Semiconductor startup Positron has secured $230 million in Series B funding"
+          },
+          {
+            "source_id": "FISRC-272c28400131d6f2",
+            "quote": "Positron’s fundraise brings the three-year-old startup’s total capital raised to just over $300 million."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Atlas",
+          "description": "第一代基于 FPGA 的 AI 推理系统，专为快速部署和扩展而设计，采用全美国制造和封装的芯片与系统。",
+          "target_customers": "云服务商、先进计算和性能敏感行业的客户",
+          "features": [
+            "全美国制造与封装",
+            "支持快速部署和扩展",
+            "针对 Transformer 推理进行硬件加速",
+            "使用 Agilex-7M FPGA，集成 HBM 和 DDR5"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-086094933b1962b5",
+              "quote": "The company’s shipping product, Atlas, is an inference system designed for rapid deployment and scaling. Atlas is also a fully American-fabricated and manufactured silicon and system"
+            },
+            {
+              "source_id": "FISRC-1c33ca1a5b60d234",
+              "quote": "The company’s first-generation product, Atlas, uses FPGAs—specifically, the Agilex-7M with HBM and DDR5."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Asimov",
+          "description": "下一代定制 ASIC 芯片，采用内存优先架构，旨在支持长上下文大语言模型、智能体工作流和下一代媒体与视频模型。",
+          "target_customers": "需要处理内存密集型推理工作负载的客户",
+          "features": [
+            "每加速器支持 2 TB 内存",
+            "每 Titan 系统支持 8 TB 内存",
+            "使用 LPDDR 内存，不依赖 HBM",
+            "基于芯粒（chiplet）设计"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c33ca1a5b60d234",
+              "quote": "Asimov will use LPDDR memory (no HBM)"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Jump Trading",
+          "industry": "金融交易",
+          "use_case": "在其生产型推理工作负载上部署 Atlas 系统，实现相比 H100 系统约 3 倍的端到端延迟降低。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c33ca1a5b60d234",
+              "quote": "Lead investor Jump Trading had come to Positron as a customer, but was so impressed that it became an investor."
+            },
+            {
+              "source_id": "FISRC-086094933b1962b5",
+              "quote": "In our testing, Positron Atlas delivered roughly 3x lower end-to-end latency than a comparable H100-based system on the inference workloads we evaluated"
+            }
+          ]
+        },
+        {
+          "name": "Cloudflare",
+          "industry": "云服务/网络",
+          "use_case": "早期部署 Atlas 系统的客户。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8322dd28c1a5e303",
+              "quote": "appealing to hyperscalers like Cloudflare and Parasail—early customers already deploying Atlas."
+            }
+          ]
+        },
+        {
+          "name": "Parasail",
+          "industry": "云服务/AI",
+          "use_case": "早期部署 Atlas 系统的客户。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8322dd28c1a5e303",
+              "quote": "appealing to hyperscalers like Cloudflare and Parasail—early customers already deploying Atlas."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Nvidia",
+          "product": "H100 GPU",
+          "scenario": "AI 推理工作负载",
+          "target_customer": "需要大规模 AI 推理的企业和云服务商",
+          "funding_summary": "",
+          "core_difference": "Positron Atlas 在特定推理工作负载上实现约 3 倍于 H100 系统的端到端延迟降低，且功耗不到其三分之一。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-086094933b1962b5",
+              "quote": "In our testing, Positron Atlas delivered roughly 3x lower end-to-end latency than a comparable H100-based system on the inference workloads we evaluated"
+            },
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "The company claims its first-generation chip, Atlas, manufactured in Arizona, can match the performance of Nvidia’s H100 GPUs for less than a third of the power."
+            }
+          ]
+        },
+        {
+          "name": "Nvidia",
+          "product": "Rubin GPU",
+          "scenario": "下一代 AI 推理工作负载",
+          "target_customer": "需要处理内存密集型推理工作负载的客户",
+          "funding_summary": "",
+          "core_difference": "Positron Asimov 每设备配备超过 2304 GB 内存，而 Rubin 仅为 384 GB；在核心工作负载上每瓦特 tokens 数提升 5 倍。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ab329bc47036713",
+              "quote": "And our next-generation chip will deliver five times more tokens per watt in our core workloads versus Nvidia’s upcoming Rubin GPU."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "B 轮融资额",
+          "value": "$230 million",
+          "observed_at": "2026-02-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "Semiconductor startup Positron has secured $230 million in Series B funding"
+            }
+          ]
+        },
+        {
+          "label": "B 轮后估值",
+          "value": "$1 billion",
+          "observed_at": "2026-02-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "The round, which brought Positron to a $1 billion valuation"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "just over $300 million",
+          "observed_at": "2026-02-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "Positron’s fundraise brings the three-year-old startup’s total capital raised to just over $300 million."
+            }
+          ]
+        },
+        {
+          "label": "Atlas 相比 H100 的端到端延迟降低",
+          "value": "roughly 3x lower",
+          "observed_at": "2026-02-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-086094933b1962b5",
+              "quote": "In our testing, Positron Atlas delivered roughly 3x lower end-to-end latency than a comparable H100-based system on the inference workloads we evaluated"
+            }
+          ]
+        },
+        {
+          "label": "Asimov 每瓦特 tokens 数 vs Rubin",
+          "value": "5x more tokens per watt",
+          "observed_at": "2026-02-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ab329bc47036713",
+              "quote": "And our next-generation chip will deliver five times more tokens per watt in our core workloads versus Nvidia’s upcoming Rubin GPU."
+            }
+          ]
+        },
+        {
+          "label": "公司成立至 B 轮时间",
+          "value": "34 months",
+          "observed_at": "2026-02-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c33ca1a5b60d234",
+              "quote": "The 34-month-old startup has reached a post-money valuation of over $1 billion"
+            }
+          ]
+        },
+        {
+          "label": "截至 B 轮的总支出",
+          "value": "$38 million",
+          "observed_at": "2026-02-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c33ca1a5b60d234",
+              "quote": "The company operates in a very capital-efficient way, he said, having spent only $38 million to date."
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Jump Trading",
+            "speaker": "Alex Davies",
+            "speaker_role": "Chief Technology Officer",
+            "rationale": "Jump Trading 在作为客户部署 Atlas 系统后，验证了其在生产环境中相比 H100 系统约 3 倍的端到端延迟降低，并认可 Positron 以内存和功耗为先的路线图能够重塑推理的成本曲线和能力。",
+            "quote": "We invested because Positron combines traction today with a roadmap that can reshape the cost curve and capabilities for inference.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-086094933b1962b5",
+                "quote": "We invested because Positron combines traction today with a roadmap that can reshape the cost curve and capabilities for inference."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 AI 推理工作负载从“计算密集型”向“内存和功耗密集型”的范式转移。本轮融资以超过 10 亿美元的估值完成，所依赖的已验证信号包括：1) 已出货的 Atlas 系统在客户 Jump Trading 的生产环境中实现了相比 H100 约 3 倍的端到端延迟降低；2) 客户 Jump Trading 从客户转变为联合领投方，提供了技术验证和真实市场需求的双重信号；3) 公司以仅 3800 万美元的总支出运营至 B 轮，展示了极高的资本效率。判断的证据边界在于，这些信号目前主要来自单一高价值客户（Jump Trading）的测试部署，大规模商业验证尚未完成。",
+        "validated_signals": [
+          "已出货的 Atlas 系统在客户 Jump Trading 的生产环境中实现了相比 H100 约 3 倍的端到端延迟降低。",
+          "客户 Jump Trading 从客户转变为联合领投方，提供了技术验证和真实市场需求的双重信号。",
+          "公司以仅 3800 万美元的总支出运营至 B 轮，展示了极高的资本效率。"
+        ],
+        "risks": [
+          "大规模商业验证尚未完成：目前公开的客户验证主要来自 Jump Trading 的小规模测试部署，尚未在多个大型云服务商或企业中证明其大规模部署的可靠性和经济性。"
+        ],
+        "related_direction_id": "",
+        "sector": "AI 推理硬件/半导体"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Atlas",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-086094933b1962b5",
+              "quote": "The company’s shipping product, Atlas, is an inference system designed for rapid deployment and scaling. Atlas is also a fully American-fabricated and manufactured silicon and system"
+            },
+            {
+              "source_id": "FISRC-1c33ca1a5b60d234",
+              "quote": "The company’s first-generation product, Atlas, uses FPGAs—specifically, the Agilex-7M with HBM and DDR5."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Asimov",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c33ca1a5b60d234",
+              "quote": "Asimov will use LPDDR memory (no HBM)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mitesh Agrawal",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ab329bc47036713",
+              "quote": "said Chief Executive Mitesh Agrawal"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Thomas Sohmers",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c33ca1a5b60d234",
+              "quote": "Positron CTO Thomas Sohmers told EE Times"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Arena Private Wealth",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "co-led by Arena Private Wealth, Jump Trading, and Unless"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jump Trading",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "co-led by Arena Private Wealth, Jump Trading, and Unless"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Unless",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "co-led by Arena Private Wealth, Jump Trading, and Unless"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Qatar Investment Authority (QIA)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "with strategic investment from Qatar Investment Authority (QIA)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Arm",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ab329bc47036713",
+              "quote": "with participation from new and strategic investors Qatar Investment Authority, Arm and Helena"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Helena",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ab329bc47036713",
+              "quote": "with participation from new and strategic investors Qatar Investment Authority, Arm and Helena"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Valor Equity Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve."
+            },
+            {
+              "source_id": "FISRC-7ab329bc47036713",
+              "quote": "Existing investors joining the round included Valor Equity Partners, Atreides Management and DFJ Growth, among others."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Atreides Management",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve."
+            },
+            {
+              "source_id": "FISRC-7ab329bc47036713",
+              "quote": "Existing investors joining the round included Valor Equity Partners, Atreides Management and DFJ Growth, among others."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "DFJ Growth",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve."
+            },
+            {
+              "source_id": "FISRC-7ab329bc47036713",
+              "quote": "Existing investors joining the round included Valor Equity Partners, Atreides Management and DFJ Growth, among others."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Flume Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve."
+            },
+            {
+              "source_id": "FISRC-086094933b1962b5",
+              "quote": "Existing investors Valor Equity Partners, Atreides Management, DFJ Growth, Resilience Reserve, Flume Ventures, and 1517 also participated."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Resilience Reserve",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve."
+            },
+            {
+              "source_id": "FISRC-086094933b1962b5",
+              "quote": "Existing investors Valor Equity Partners, Atreides Management, DFJ Growth, Resilience Reserve, Flume Ventures, and 1517 also participated."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "1517",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-086094933b1962b5",
+              "quote": "Existing investors Valor Equity Partners, Atreides Management, DFJ Growth, Resilience Reserve, Flume Ventures, and 1517 also participated."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Jump Trading",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c33ca1a5b60d234",
+              "quote": "Lead investor Jump Trading had come to Positron as a customer, but was so impressed that it became an investor."
+            },
+            {
+              "source_id": "FISRC-086094933b1962b5",
+              "quote": "In our testing, Positron Atlas delivered roughly 3x lower end-to-end latency than a comparable H100-based system on the inference workloads we evaluated"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Cloudflare",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8322dd28c1a5e303",
+              "quote": "appealing to hyperscalers like Cloudflare and Parasail—early customers already deploying Atlas."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Parasail",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8322dd28c1a5e303",
+              "quote": "appealing to hyperscalers like Cloudflare and Parasail—early customers already deploying Atlas."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-086094933b1962b5",
+              "quote": "In our testing, Positron Atlas delivered roughly 3x lower end-to-end latency than a comparable H100-based system on the inference workloads we evaluated"
+            },
+            {
+              "source_id": "FISRC-272c28400131d6f2",
+              "quote": "The company claims its first-generation chip, Atlas, manufactured in Arizona, can match the performance of Nvidia’s H100 GPUs for less than a third of the power."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7ab329bc47036713",
+              "quote": "And our next-generation chip will deliver five times more tokens per watt in our core workloads versus Nvidia’s upcoming Rubin GPU."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-7abd8ec418f1e7f3",
+          "date": "2026-07-07",
+          "title": "独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片",
+          "amount": "$230M",
+          "source_refs": [
+            "SA-565c3361c7a14ee2"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-272c28400131d6f2",
+          "source_url": "https://techcrunch.com/2026/02/04/exclusive-positron-raises-230m-series-b-to-take-on-nvidias-ai-chips/",
+          "title": "独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-07T02:01:23.365Z",
+          "content_hash": "a68fc4da018f5dc8",
+          "source_artifact_id": "SA-565c3361c7a14ee2",
+          "raw_id": "RAW-853a437af4acc0dd"
+        },
+        {
+          "source_id": "FISRC-7ab329bc47036713",
+          "source_url": "https://siliconangle.com/2026/02/04/positron-ai-raises-230m-1b-valuation-build-energy-efficient-ai-accelerator-hardware/",
+          "title": "Positron AI raises $230M at over $1B valuation to build energy-efficient AI accelerator hardware - SiliconANGLE",
+          "publisher": "siliconangle.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:45:56.079Z",
+          "content_hash": "cbb6c55f3aa631df",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1c33ca1a5b60d234",
+          "source_url": "https://www.eetimes.com/positron-230-million-funding-led-by-financial-trading-firms/",
+          "title": "Positron’s $230M Funding Led By Financial Trading Firms",
+          "publisher": "eetimes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:46:26.095Z",
+          "content_hash": "e759b1edaa67b6f2",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-086094933b1962b5",
+          "source_url": "https://theaiinsider.tech/2026/02/04/positron-ai-raises-230m-series-b-at-over-1-billion-valuation-to-scale-energy-efficient-ai-inference/",
+          "title": "Positron AI Raises $230M Series B at Over $1B Valuation to Scale Energy-Efficient AI Inference",
+          "publisher": "theaiinsider.tech",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:46:27.653Z",
+          "content_hash": "68542f86ea7b9e33",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8322dd28c1a5e303",
+          "source_url": "https://gmacouncil.org/news/positron-ai-raises-230m-series-b-to-challenge-nvidia-in-inference",
+          "title": "Positron AI Raises $230M Series B to Challenge Nvidia in Inference | GMA",
+          "publisher": "gmacouncil.org",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:46:31.816Z",
+          "content_hash": "77b4a1991c1738b6",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:47:40.716Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:47:40.716Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-00eb68c429786f43",
+      "triggered_by_event_id": "EV-b3c7c4bff17063d8",
+      "as_of_date": "2026-07-07",
+      "company": {
+        "entity_id": "EN-a736e4d4ef0af078",
+        "name": "Raja Koduri's Oxmiq Labs",
+        "full_name": "Oxmiq Labs Inc.",
+        "website": "https://oxmiq.ai/",
+        "summary": "Oxmiq Labs 是一家 GPU 与 AI 架构公司，由 Raja Koduri 创立，致力于通过可授权的 GPU IP 和自适应 AI 基础设施软件，让半导体公司和 AI 系统构建者能够开发定制 AI 芯片，而无需依赖专有 GPU 生态系统。",
+        "headquarters": "Campbell, California",
+        "founders": [
+          {
+            "name": "Raja Koduri",
+            "role": "Founder & CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-71dda6eced30e5a0",
+                "quote": "Oxmiq is founded and led by the respected graphics processing unit architect Raja Koduri"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-71dda6eced30e5a0",
+            "quote": "Artificial intelligence chipmaking startup Oxmiq Labs Inc . says it wants to become the next Arm Holdings Plc."
+          },
+          {
+            "source_id": "FISRC-2ac2183ceab4ddd7",
+            "quote": "OXMIQ Labs is a GPU and AI architecture company with expertise spanning every layer of the AI stack"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$35 million",
+        "total_raised": "$60 million",
+        "announced_at": "2026-07-01",
+        "investors": [
+          {
+            "name": "Fundomo",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung Catalyst Fund",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "MediaTek",
+            "role": "本轮参投，种子轮投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AM Intelligence Labs",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-71dda6eced30e5a0",
+                "quote": "saw participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures and Morgan Creek Digital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pegatron Venture Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-71dda6eced30e5a0",
+                "quote": "saw participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures and Morgan Creek Digital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "CDIB-TEN",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-71dda6eced30e5a0",
+                "quote": "saw participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures and Morgan Creek Digital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Darwin Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-71dda6eced30e5a0",
+                "quote": "saw participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures and Morgan Creek Digital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Morgan Creek Digital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-71dda6eced30e5a0",
+                "quote": "saw participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures and Morgan Creek Digital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Intel Capital",
+            "role": "既有投资方（战略 IP 合作伙伴）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-71dda6eced30e5a0",
+            "quote": "after raising $35 million in an early-stage A funding, bringing its total amount raised to date to $60 million."
+          },
+          {
+            "source_id": "FISRC-2ac2183ceab4ddd7",
+            "quote": "today closed its $35 million Series A financing, bringing the company's total capital raised to $60 million."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "OxCore",
+          "description": "OxCore 是 Oxmiq 的可授权 GPU 架构，集成了 CUDA 兼容的 GPU 引擎、张量处理引擎和用于协调工作负载的 CPU 引擎，使半导体公司和 AI 系统构建者无需完整的芯片项目即可构建定制 AI 芯片。",
+          "target_customers": "半导体公司、AI 系统构建者",
+          "features": [
+            "CUDA 兼容的 GPU 引擎",
+            "张量处理引擎",
+            "协调引擎（CPU）",
+            "可授权 IP 模块"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "At the center of the architecture is OxCore TM , a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU)"
+            },
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Oxmiq aims to simplify that process by collapsing three distinct components of an AI system into a single intellectual property block it can license to customers."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "OxQuilt",
+          "description": "OxQuilt 是 Oxmiq 的芯粒集成架构，将异构计算芯粒和内存组合在单一封装中，允许客户在不同的逻辑工艺节点、内存类型、互连标准和先进封装选项之间进行配置。",
+          "target_customers": "芯片设计团队",
+          "features": [
+            "异构芯粒集成",
+            "供应链自适应配置工具",
+            "支持新兴互连技术（如硅光子学）"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "OxQuilt TM , OXMIQ's chiplet integration architecture, combines heterogeneous compute chiplets and memory in a single package."
+            },
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Oxmiq is also developing a computing fabric called OxQuilt, which combines heterogeneous compute chiplets and memory into a single package."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "OxPython",
+          "description": "OxPython 使现有的 CUDA 和 PyTorch 代码无需修改即可在 OxCore 上运行，为开发者提供跨硬件平台的完全可移植性。",
+          "target_customers": "AI 开发者",
+          "features": [
+            "无需修改代码即可运行 CUDA 和 PyTorch 代码",
+            "跨硬件平台可移植性"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "OxPython TM runs existing CUDA® and PyTorch® code on OxCore without code changes, giving developers full portability across hardware."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "AM Intelligence Labs (AMI Labs)",
+          "industry": "AI 基础设施与可再生能源",
+          "use_case": "作为架构和工程合作伙伴，为 AMI Labs 在印度建设的 2 GW 可再生能源 AI 计算平台提供系统架构、硬件路线图和供应链策略设计。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70734fb3a6dcac33",
+              "quote": "OXMIQ Labs and AM Intelligence Labs Partner to Architect one of the world’s largest renewable-powered AI compute platforms"
+            },
+            {
+              "source_id": "FISRC-1fb699b3c8928ce1",
+              "quote": "OXMIQ will serve as the architecture and engineering partner for the entire compute platform."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Broadcom Inc.",
+          "product": "定制 AI 芯片设计服务",
+          "scenario": "为 Google、AWS 等超大规模客户设计和构建定制 AI 芯片",
+          "target_customer": "大型云服务提供商",
+          "funding_summary": "",
+          "core_difference": "Broadcom 提供完整的定制芯片设计服务，而 Oxmiq 提供可授权的 IP 模块（OxCore），使客户能够自行构建定制 AI 芯片，无需完整的芯片项目。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Koduri said Oxmiq eventually wants to compete in the custom chip market with semiconductor giants such as Broadcom Inc., Marvell Technologies Inc. and MediaTek Inc., which help companies such as Google LLC, Amazon Web Services Inc., and OpenAI Group PBC design and build their own silicon."
+            }
+          ]
+        },
+        {
+          "name": "Marvell Technologies Inc.",
+          "product": "定制 AI 芯片设计服务",
+          "scenario": "为大型科技公司设计和构建定制 AI 芯片",
+          "target_customer": "大型云服务提供商",
+          "funding_summary": "",
+          "core_difference": "Marvell 提供定制 ASIC 设计服务，而 Oxmiq 通过可授权 IP 架构降低芯片设计门槛，使客户无需完整的芯片项目即可开发定制 AI 芯片。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Koduri said Oxmiq eventually wants to compete in the custom chip market with semiconductor giants such as Broadcom Inc., Marvell Technologies Inc. and MediaTek Inc."
+            }
+          ]
+        },
+        {
+          "name": "MediaTek Inc.",
+          "product": "定制 AI 芯片设计服务",
+          "scenario": "为大型科技公司设计和构建定制 AI 芯片",
+          "target_customer": "大型云服务提供商",
+          "funding_summary": "",
+          "core_difference": "MediaTek 是 Oxmiq 的种子轮投资方并参与本轮融资，同时自身也提供定制芯片设计服务；Oxmiq 则专注于提供可授权的 GPU IP 架构，而非直接提供芯片设计服务。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Koduri said Oxmiq eventually wants to compete in the custom chip market with semiconductor giants such as Broadcom Inc., Marvell Technologies Inc. and MediaTek Inc."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$35 million",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "after raising $35 million in an early-stage A funding"
+            }
+          ]
+        },
+        {
+          "label": "累计融资总额",
+          "value": "$60 million",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "bringing its total amount raised to date to $60 million"
+            }
+          ]
+        },
+        {
+          "label": "AMI Labs 合作项目目标 AI 计算能力",
+          "value": "2 GW by 2030, 初始 1 GW",
+          "observed_at": "2026-03-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70734fb3a6dcac33",
+              "quote": "2 GW AI Compute Capability by 2030 with initial 1 GW AI Compute Hub in Uttar Pradesh, India"
+            }
+          ]
+        },
+        {
+          "label": "AMI Labs 合作项目 Phase 1 上线时间",
+          "value": "2027 年底前",
+          "observed_at": "2026-03-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70734fb3a6dcac33",
+              "quote": "Bringing the initial compute capacity online by the end of 2027 will be a key milestone"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Raja Koduri",
+          "quote": "A licensable core with an open architecture means design teams everywhere can build the custom AI silicon their work needs.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "A licensable core with an open architecture means design teams everywhere can build the custom AI silicon their work needs"
+            }
+          ]
+        },
+        {
+          "speaker": "Raja Koduri",
+          "quote": "Today, state-of-the-art AI reaches most people through a handful of channels, and the cost of the compute underneath is the reason. Bring that cost down, and you widen who gets to build with it.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "Today, state-of-the-art AI reaches most people through a handful of channels, and the cost of the compute underneath is the reason. Bring that cost down, and you widen who gets to build with it."
+            }
+          ]
+        },
+        {
+          "speaker": "Rajeev Surati",
+          "quote": "Raja has built silicon at every layer of the stack, and he knows exactly where the constraints sit. Most compute IP makes the customer bend their memory, packaging, and foundry around the chip. OXMIQ does the opposite, and that flips a cost center into leverage.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "Raja has built silicon at every layer of the stack, and he knows exactly where the constraints sit. Most compute IP makes the customer bend their memory, packaging, and foundry around the chip. OXMIQ does the opposite, and that flips a cost center into leverage."
+            }
+          ]
+        },
+        {
+          "speaker": "Jim Keller",
+          "quote": "I am excited to join the OXMIQ board. Raja and this team are creating an open GPU architecture, a much-needed step toward removing the artificial boundaries around AI innovation.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "I am excited to join the OXMIQ board. Raja and this team are creating an open GPU architecture, a much-needed step toward removing the artificial boundaries around AI innovation."
+            }
+          ]
+        },
+        {
+          "speaker": "David (Dede) Goldschmidt",
+          "quote": "We are very excited to co-lead OXMIQ's financing round and back Raja Koduri and the strong team at OXMIQ. OXMIQ's novel AI core and software platform enable heterogeneous compute for efficient, custom inference solutions serving large-scale agentic workloads.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "We are very excited to co-lead OXMIQ's financing round and back Raja Koduri and the strong team at OXMIQ. OXMIQ's novel AI core and software platform enable heterogeneous compute for efficient, custom inference solutions serving large-scale agentic workloads."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Fundomo",
+            "speaker": "Rajeev Surati",
+            "speaker_role": "Partner",
+            "rationale": "Fundomo 投资 Oxmiq 是因为 Raja Koduri 对芯片堆栈每一层的深刻理解，以及 Oxmiq 的 IP 能够适应客户现有的内存、封装和代工选择，将成本中心转化为杠杆。",
+            "quote": "Raja has built silicon at every layer of the stack, and he knows exactly where the constraints sit. Most compute IP makes the customer bend their memory, packaging, and foundry around the chip. OXMIQ does the opposite, and that flips a cost center into leverage. We backed this team because they will define how AI compute gets built this decade.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "Raja has built silicon at every layer of the stack, and he knows exactly where the constraints sit. Most compute IP makes the customer bend their memory, packaging, and foundry around the chip. OXMIQ does the opposite, and that flips a cost center into leverage. We backed this team because they will define how AI compute gets built this decade."
+              }
+            ]
+          },
+          {
+            "institution": "Samsung Catalyst Fund",
+            "speaker": "David (Dede) Goldschmidt",
+            "speaker_role": "SVP & Managing Director, Head of the Samsung Catalyst Fund",
+            "rationale": "三星催化剂基金投资 Oxmiq 是因为其新颖的 AI 核心和软件平台能够实现异构计算，为大规模智能体工作负载提供高效的定制推理解决方案。",
+            "quote": "We are very excited to co-lead OXMIQ's financing round and back Raja Koduri and the strong team at OXMIQ. OXMIQ's novel AI core and software platform enable heterogeneous compute for efficient, custom inference solutions serving large-scale agentic workloads.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "We are very excited to co-lead OXMIQ's financing round and back Raja Koduri and the strong team at OXMIQ. OXMIQ's novel AI core and software platform enable heterogeneous compute for efficient, custom inference solutions serving large-scale agentic workloads."
+              }
+            ]
+          },
+          {
+            "institution": "MediaTek",
+            "speaker": "Lawrence Loh",
+            "speaker_role": "SVP of MediaTek",
+            "rationale": "MediaTek 投资 Oxmiq 是为了将其 AI 雄心与 Oxmiq 高度灵活的 GPU 架构相结合，以解锁跨所有技术平台的前所未有的端侧 AI 性能。",
+            "quote": "MediaTek is actively powering today's advanced AI capabilities from the edge to the cloud. Our investment in OXMIQ underscores this push and combines our AI ambitions with their highly flexible GPU architecture. We see this investment as a way to continue unlocking unprecedented on-device AI performance across all technology platforms.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2ac2183ceab4ddd7",
+                "quote": "MediaTek is actively powering today's advanced AI capabilities from the edge to the cloud. Our investment in OXMIQ underscores this push and combines our AI ambitions with their highly flexible GPU architecture. We see this investment as a way to continue unlocking unprecedented on-device AI performance across all technology platforms."
+              }
+            ]
+          },
+          {
+            "institution": "Pegatron Venture Capital",
+            "speaker": "I-Cheng Liu",
+            "speaker_role": "Vice Chairman, Pegatron Venture Capital",
+            "rationale": "Pegatron 投资 Oxmiq 是因为其团队理解从计算 IP 到部署系统的完整路径，并将封装和集成视为一级设计输入，这正是 AI 芯片实际大规模构建的方式。",
+            "quote": "AI deployments are increasingly chiplet-based, and the systems work behind those deployments is harder than the architecture work that precedes it. OXMIQ treats packaging and integration as first-class design inputs, which is how AI silicon actually gets built at scale. We invested because the team understands the path from compute IP to deployed systems, and we want to be part of that path.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fbf7a7057b6530de",
+                "quote": "AI deployments are increasingly chiplet-based, and the systems work behind those deployments is harder than the architecture work that precedes it. OXMIQ treats packaging and integration as first-class design inputs, which is how AI silicon actually gets built at scale. We invested because the team understands the path from compute IP to deployed systems, and we want to be part of that path."
+              }
+            ]
+          },
+          {
+            "institution": "Darwin Ventures",
+            "speaker": "Simon Fang",
+            "speaker_role": "Founding Partner, Darwin Ventures",
+            "rationale": "Darwin Ventures 投资 Oxmiq 是因为随着 AI 推理在边缘、云和主权部署中扩展，对可授权、高效 GPU IP 的需求正在加速，而 Oxmiq 团队具备构建该平台所需的架构愿景和执行经验。",
+            "quote": "As AI inference scales across edge, cloud, and sovereign deployments, the demand for licensable, efficient GPU IP is accelerating. Raja and the OXMIQ team bring the rare combination of architectural vision and execution experience needed to build that platform.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fbf7a7057b6530de",
+                "quote": "As AI inference scales across edge, cloud, and sovereign deployments, the demand for licensable, efficient GPU IP is accelerating. Raja and the OXMIQ team bring the rare combination of architectural vision and execution experience needed to build that platform."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 AI 芯片设计成本的降低和可授权 GPU IP 架构的普及。Oxmiq 的估值依赖于两个已验证信号：一是 Raja Koduri 在 GPU 架构领域的深厚积累和行业信誉，二是公司已获得 AM Intelligence Labs 作为客户，参与建设全球最大的可再生能源 AI 计算平台之一。本轮融资由 Fundomo 和三星催化剂基金联合领投，并吸引了联发科、和硕等半导体供应链关键环节的战略投资方，表明产业资本认可其 IP 授权模式在降低定制 AI 芯片设计门槛方面的潜力。然而，公司仍处于早期阶段，OxCore 目前仅在 FPGA 上运行，尚未实现大规模商业化，其可授权 IP 模式能否在由 Broadcom 和 Marvell 等巨头主导的定制芯片市场中占据一席之地，仍需通过客户导入和收入增长来验证。",
+        "validated_signals": [
+          "创始人 Raja Koduri 曾担任 Intel 架构、图形和软件部门首席架构师兼执行副总裁，具备 GPU 架构全栈经验",
+          "已签约客户 AM Intelligence Labs，为其 2 GW 可再生能源 AI 计算平台提供架构和工程服务",
+          "OxCore 架构已在 FPGA 上运行，并提供现场演示",
+          "OxPython 已在第三方平台上验证，可无需修改代码运行 CUDA 和 PyTorch 代码",
+          "累计融资 6000 万美元，投资方包括三星催化剂基金、联发科、和硕等半导体产业链关键参与者"
+        ],
+        "risks": [
+          "OxCore 目前仅在 FPGA 上运行，距离可授权的量产 IP 仍有工程化差距，产品成熟度尚未得到大规模验证",
+          "定制 AI 芯片市场已被 Broadcom、Marvell 等巨头占据，Oxmiq 作为初创公司面临激烈的市场竞争和客户信任建立挑战"
+        ],
+        "related_direction_id": "",
+        "sector": "AI 芯片与可授权 GPU IP 架构"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "OxCore",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "At the center of the architecture is OxCore TM , a scalable, licensable GPU core that integrates three distinct compute engines: a CUDA®-compatible GPU engine, a tensor processing engine, and an orchestration engine (CPU)"
+            },
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Oxmiq aims to simplify that process by collapsing three distinct components of an AI system into a single intellectual property block it can license to customers."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "OxQuilt",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "OxQuilt TM , OXMIQ's chiplet integration architecture, combines heterogeneous compute chiplets and memory in a single package."
+            },
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Oxmiq is also developing a computing fabric called OxQuilt, which combines heterogeneous compute chiplets and memory into a single package."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "OxPython",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "OxPython TM runs existing CUDA® and PyTorch® code on OxCore without code changes, giving developers full portability across hardware."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Raja Koduri",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Oxmiq is founded and led by the respected graphics processing unit architect Raja Koduri"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fundomo",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung Catalyst Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "MediaTek",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AM Intelligence Labs",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "saw participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures and Morgan Creek Digital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Pegatron Venture Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "saw participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures and Morgan Creek Digital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CDIB-TEN",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "saw participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures and Morgan Creek Digital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Darwin Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "saw participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures and Morgan Creek Digital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Morgan Creek Digital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "saw participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures and Morgan Creek Digital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Intel Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2ac2183ceab4ddd7",
+              "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "AM Intelligence Labs (AMI Labs)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-70734fb3a6dcac33",
+              "quote": "OXMIQ Labs and AM Intelligence Labs Partner to Architect one of the world’s largest renewable-powered AI compute platforms"
+            },
+            {
+              "source_id": "FISRC-1fb699b3c8928ce1",
+              "quote": "OXMIQ will serve as the architecture and engineering partner for the entire compute platform."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Broadcom Inc.",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Koduri said Oxmiq eventually wants to compete in the custom chip market with semiconductor giants such as Broadcom Inc., Marvell Technologies Inc. and MediaTek Inc., which help companies such as Google LLC, Amazon Web Services Inc., and OpenAI Group PBC design and build their own silicon."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Marvell Technologies Inc.",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Koduri said Oxmiq eventually wants to compete in the custom chip market with semiconductor giants such as Broadcom Inc., Marvell Technologies Inc. and MediaTek Inc."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "MediaTek Inc.",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71dda6eced30e5a0",
+              "quote": "Koduri said Oxmiq eventually wants to compete in the custom chip market with semiconductor giants such as Broadcom Inc., Marvell Technologies Inc. and MediaTek Inc."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-b3c7c4bff17063d8",
+          "date": "2026-07-07",
+          "title": "Raja Koduri 的 Oxmiq Labs 融资 3500 万美元，以降低定制 AI 芯片的设计成本",
+          "amount": "$35M",
+          "source_refs": [
+            "SA-db32467b36e2366c"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-71dda6eced30e5a0",
+          "source_url": "https://siliconangle.com/2026/07/01/raja-koduris-oxmiq-labs-raises-35m-lower-design-cost-custom-ai-silicon/",
+          "title": "Raja Koduri 的 Oxmiq Labs 融资 3500 万美元，以降低定制 AI 芯片的设计成本",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-07T02:01:23.369Z",
+          "content_hash": "17a78ee6f62868b8",
+          "source_artifact_id": "SA-db32467b36e2366c",
+          "raw_id": "RAW-afedfc330cef0cef"
+        },
+        {
+          "source_id": "FISRC-2ac2183ceab4ddd7",
+          "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+          "title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
+          "publisher": "oxmiq.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:45:58.958Z",
+          "content_hash": "b11173439b5612a7",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-70734fb3a6dcac33",
+          "source_url": "https://oxmiq.ai/blog/raja-koduri-oxmiq-new-customer-am-intelligence-to-architect-one-of-the-world%E2%80%99s-largest-renewable-powered-ai-compute-platforms",
+          "title": "",
+          "publisher": "oxmiq.ai",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:45:59.891Z",
+          "content_hash": "2dd6ea61a843f62b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1fb699b3c8928ce1",
+          "source_url": "https://stockhausen.org/the-next-compute-transition-what-history-teaches-and-why-raja-koduri-is-building-for-it/",
+          "title": "From Photons to Outcomes: Raja Koduri's OXMIQ Labs Architects a Renewable AI Compute Hub in India -",
+          "publisher": "stockhausen.org",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:46:01.573Z",
+          "content_hash": "af65dabdbf345cef",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fbf7a7057b6530de",
+          "source_url": "https://oxmiq.ai/",
+          "title": "OXMIQ For the Age of Inference",
+          "publisher": "oxmiq.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:46:02.584Z",
+          "content_hash": "9277d3b0a6dfe293",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:47:06.354Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:47:06.354Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-811c5f10d92a2d03",
+      "triggered_by_event_id": "EV-6e06cfa28f76a76f",
+      "as_of_date": "2026-07-07",
+      "company": {
+        "entity_id": "EN-caaa8e02be54cfc9",
+        "name": "Katalyze AI",
+        "full_name": "Katalyze AI",
+        "website": "https://katalyzeai.com/",
+        "summary": "Katalyze AI 是一家为制药公司构建智能体操作系统的初创公司，其平台统一碎片化的生产和实验室数据，部署领域训练的AI智能体来执行工程、科学和制造工作。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Reza Farahani",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d887dae741d872b9",
+                "quote": "The startup’s founding team, Reza Farahani (CEO)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Shreyas Becker",
+            "role": "COO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d887dae741d872b9",
+                "quote": "Shreyas Becker (COO)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hannes Bretschneider",
+            "role": "Chief AI Officer",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d887dae741d872b9",
+                "quote": "Hannes Bretschneider (Chief AI Officer)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Matt Cruz",
+            "role": "Founding Engineer",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d887dae741d872b9",
+                "quote": "Matt Cruz (Founding Engineer)"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d887dae741d872b9",
+            "quote": "Katalyze AI, a startup that just emerged with a $10.5 million seed round to build what it calls an ‘agentic operating system’ designed specifically for the rigorous demands of pharmaceutical companies."
+          },
+          {
+            "source_id": "FISRC-96f4fc8b0f0b323a",
+            "quote": "Katalyze is based in San Francisco"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$10.5M",
+        "total_raised": "$10.5M",
+        "announced_at": "2026-07-06",
+        "investors": [
+          {
+            "name": "Bonfire Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d887dae741d872b9",
+                "quote": "Led by Bonfire Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Inovia Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d887dae741d872b9",
+                "quote": "the seed round also saw participation from Inovia Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ripple Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d887dae741d872b9",
+                "quote": "the seed round also saw participation from Inovia Capital, Ripple Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alumni Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d887dae741d872b9",
+                "quote": "the seed round also saw participation from Inovia Capital, Ripple Ventures, Alumni Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Gokul Rajaram",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d887dae741d872b9",
+                "quote": "high-profile angel investors including Gokul Rajaram and Farzad Soleimani"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Farzad Soleimani",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d887dae741d872b9",
+                "quote": "high-profile angel investors including Gokul Rajaram and Farzad Soleimani"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d887dae741d872b9",
+            "quote": "Katalyze AI, a startup that just emerged with a $10.5 million seed round"
+          },
+          {
+            "source_id": "FISRC-96f4fc8b0f0b323a",
+            "quote": "Katalyze AI, the agentic operating system for pharmaceutical companies, has raised $10.5 million in seed funding led by Bonfire Ventures, with participation from Inovia Capital, Ripple Ventures, Alumni Ventures, and angel investors including Gokul Rajaram and Farzad Soleimani."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Katalyze Agentic Operating System",
+          "description": "一个为制药公司构建的智能体操作系统，统一碎片化的工厂和实验室数据，部署领域训练的AI智能体来执行工程、科学和制造工作。",
+          "target_customers": "制药公司",
+          "features": [
+            "Operational Data Layer：统一工厂和实验室的碎片化数据为单一实时运营真相",
+            "Primary Production Record：GxP原生的本体层，将每个智能体决策锚定到不可变的合规来源",
+            "Agent Catalog：开箱即用的领域训练智能体，可调查偏差、跟踪CAPA、起草APQR",
+            "Agent Studio：低代码环境，允许内部科学家和数据工程师构建自定义专有智能体"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "Katalyze operates as a comprehensive platform designed for scientists, engineers, and analysts to build and deploy AI teams. The system breaks down into a few core pillars: Operational Data Layer: Eliminates manual data assembly by unifying fragmented plant and lab data into a real-time operational truth. Primary Production Record: A GxP-native ontology layer that anchors every decision an AI agent makes back to an immutable, regulatory-compliant source. Agent Catalog: Out-of-the-box, domain-trained agents ready on day one. These agents speak the highly specialized languages of MSAT, Quality, and bioprocess engineering to investigate deviations, track CAPAs (Corrective and Preventive Actions), and draft APQRs (Annual Product Quality Reviews). Agent Studio: A low-code environment allowing internal data engineers and scientists to build their own custom, proprietary AI agents on Katalyze’s secure infrastructure."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "已部署的全球前20大制药公司客户数",
+          "value": "5",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "Katalyze, however, has already deployed its platform across five of the 20 largest global pharmaceutical companies."
+            }
+          ]
+        },
+        {
+          "label": "已帮助交付的药物剂量数",
+          "value": "1000万",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "the startup's OS has helped pharma teams deliver 10 million medication doses with greater operational visibility."
+            }
+          ]
+        },
+        {
+          "label": "早期部署中一项运营分析的成本节约",
+          "value": "400万至600万美元",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "an operational analysis that historically would have taken a year and cost between $4 million and $6 million was completed by Katalyze's agents in just 45 minutes."
+            }
+          ]
+        },
+        {
+          "label": "早期部署中一项运营分析的时间压缩",
+          "value": "从1年缩短至45分钟",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "an operational analysis that historically would have taken a year and cost between $4 million and $6 million was completed by Katalyze's agents in just 45 minutes."
+            }
+          ]
+        },
+        {
+          "label": "合作的资深科学家和工程师社区规模",
+          "value": "超过100名",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "Katalyze collaborates with a community of over 100 tenured scientists and engineers from giants like Pfizer, Sanofi, and Eli Lilly to author the precise skills these agents rely on."
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Bonfire Ventures",
+            "speaker": "Jennifer Richard",
+            "speaker_role": "Principal",
+            "rationale": "Bonfire Ventures认为Katalyze将AI应用于制药价值链中最复杂、运营最密集的制造环节，能够帮助制造商更快解决生产挑战、提高产量，最终将更多关键疗法送到患者手中。",
+            "quote": "Manufacturing is one of the most complex parts of the pharmaceutical value chain, and it's also one of the most operationally intensive. Katalyze is applying AI where it can have a measurable impact: helping manufacturers solve production challenges faster, improve yields, and ultimately get more critical therapies into patients' hands.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b8fb5367205a53d",
+                "quote": "Manufacturing is one of the most complex parts of the pharmaceutical value chain, and it's also one of the most operationally intensive. Katalyze is applying AI where it can have a measurable impact: helping manufacturers solve production challenges faster, improve yields, and ultimately get more critical therapies into patients' hands."
+              }
+            ]
+          },
+          {
+            "institution": "Bonfire Ventures",
+            "speaker": "Brett Queener",
+            "speaker_role": "General Partner",
+            "rationale": "Bonfire Ventures认为Katalyze不是锦上添花的工作流工具，而是制药经济中基础设施级别的存在，即使微小的运营收益也能产生巨大影响。",
+            "quote": "This is not a nice-to-have workflow tool. It is infrastructure for a part of the economy where even small operational gains can have massive consequences.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5b8fb5367205a53d",
+                "quote": "This is not a nice-to-have workflow tool. It is infrastructure for a part of the economy where even small operational gains can have massive consequences."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是制药行业对GxP合规环境下可追溯、零幻觉的AI智能体的刚性需求。Katalyze已获得5家全球前20大制药公司作为客户，并展示了将一年期、400万至600万美元成本的分析压缩至45分钟的ROI信号，这构成了其本轮融资的已验证信号。然而，这些信号仅来自早期部署，尚未披露大规模复用的合同金额或续约率，因此其商业可扩展性仍待验证。",
+        "validated_signals": [
+          "已部署5家全球前20大制药公司",
+          "帮助交付1000万剂药物",
+          "一项运营分析从1年/$4-6M压缩至45分钟",
+          "获得Sanofi研发部门高管的公开背书"
+        ],
+        "risks": [
+          "制药行业销售周期长、合规审计严格，从早期部署到大规模企业级合同存在转化风险。",
+          "来源未披露任何收入或合同金额数据，商业化验证仍处于早期阶段。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "制药AI智能体/生命科学制造智能化"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Katalyze Agentic Operating System",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "Katalyze operates as a comprehensive platform designed for scientists, engineers, and analysts to build and deploy AI teams. The system breaks down into a few core pillars: Operational Data Layer: Eliminates manual data assembly by unifying fragmented plant and lab data into a real-time operational truth. Primary Production Record: A GxP-native ontology layer that anchors every decision an AI agent makes back to an immutable, regulatory-compliant source. Agent Catalog: Out-of-the-box, domain-trained agents ready on day one. These agents speak the highly specialized languages of MSAT, Quality, and bioprocess engineering to investigate deviations, track CAPAs (Corrective and Preventive Actions), and draft APQRs (Annual Product Quality Reviews). Agent Studio: A low-code environment allowing internal data engineers and scientists to build their own custom, proprietary AI agents on Katalyze’s secure infrastructure."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Reza Farahani",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "The startup’s founding team, Reza Farahani (CEO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Shreyas Becker",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "Shreyas Becker (COO)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Hannes Bretschneider",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "Hannes Bretschneider (Chief AI Officer)"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Matt Cruz",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "Matt Cruz (Founding Engineer)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bonfire Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "Led by Bonfire Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Inovia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "the seed round also saw participation from Inovia Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ripple Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "the seed round also saw participation from Inovia Capital, Ripple Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Alumni Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "the seed round also saw participation from Inovia Capital, Ripple Ventures, Alumni Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Gokul Rajaram",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "high-profile angel investors including Gokul Rajaram and Farzad Soleimani"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Farzad Soleimani",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d887dae741d872b9",
+              "quote": "high-profile angel investors including Gokul Rajaram and Farzad Soleimani"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-6e06cfa28f76a76f",
+          "date": "2026-07-07",
+          "title": "Katalyze AI获Bonfire Ventures领投1050万美元，为制药业部署代理操作系统",
+          "amount": "$10.5M",
+          "source_refs": [
+            "SA-d632c219065ffdbd",
+            "SA-b3497f1d1920dd22"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-d887dae741d872b9",
+          "source_url": "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/",
+          "title": "Katalyze AI获Bonfire Ventures领投1050万美元，为制药业部署代理操作系统",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-07T02:01:23.322Z",
+          "content_hash": "d3fbadee56dcb775",
+          "source_artifact_id": "SA-d632c219065ffdbd",
+          "raw_id": "RAW-a296e842c31fb767"
+        },
+        {
+          "source_id": "FISRC-96f4fc8b0f0b323a",
+          "source_url": "https://theaiinsider.tech/2026/07/15/katalyze-ai-raises-10-5m-to-build-the-agentic-operating-system-for-pharmaceutical-companies/",
+          "title": "Katalyze AI Raises $10.5M to Build the Agentic Operating System for Pharmaceutical Companies",
+          "publisher": "theaiinsider.tech",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:49.650Z",
+          "content_hash": "38f9ec54a4031c70",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5b8fb5367205a53d",
+          "source_url": "https://www.linkedin.com/posts/richardjennifer_why-we-invested-in-katalyze-bringing-ai-activity-7480359547270848512-BWF_",
+          "title": "Excited to welcome Katalyze AI to the Bonfire Ventures portfolio after leading their oversubscribed $10.5M Seed round! | Jennifer Richard",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:44:50.128Z",
+          "content_hash": "344e3439a9e148ac",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:46:16.035Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:46:16.035Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-006c1c557192873c",
+      "triggered_by_event_id": "EV-040fc355bc12a750",
+      "as_of_date": "2026-07-07",
+      "company": {
+        "entity_id": "EN-dc758ebb8ad248f8",
+        "name": "Nvidia rival Etched",
+        "full_name": "Etched",
+        "website": "https://www.etched.com/",
+        "summary": "Etched是一家AI芯片初创公司，设计专用于运行Transformer模型推理的芯片，而非用于训练。公司提供包含定制芯片、机架和软件的完整“前沿推理集群”系统，旨在以更低成本、更高能效运行AI模型。",
+        "headquarters": "San Jose",
+        "founders": [
+          {
+            "name": "Gavin Uberti",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "Founded in 2022 by Harvard dropouts Gavin Uberti and Robert Wachen"
+              },
+              {
+                "source_id": "FISRC-46feb61e20bda927",
+                "quote": "co-founders -- CEO Gavin Uberti and president Robert Wachen"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Robert Wachen",
+            "role": "President",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "Founded in 2022 by Harvard dropouts Gavin Uberti and Robert Wachen"
+              },
+              {
+                "source_id": "FISRC-46feb61e20bda927",
+                "quote": "co-founders -- CEO Gavin Uberti and president Robert Wachen"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "400",
+          "observed_at": "2026-06-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "The company has 400 employees, more than half based near its San Jose headquarters."
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec090e2bf0f8f6e9",
+            "quote": "AI chip startup Etched has raised $800 million and revealed that its backers include trading firm Jane Street and VentureTech Alliance"
+          }
+        ]
+      },
+      "financing": {
+        "round": "多轮（含2025年12月由Stripes领投的5亿美元轮次及Jane Street领投的此前未披露轮次）",
+        "amount": "$800 million",
+        "total_raised": "$800 million",
+        "announced_at": "2026-06-30",
+        "investors": [
+          {
+            "name": "Stripes",
+            "role": "本轮领投（2025年12月5亿美元轮次）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "The bulk of the funding came from a $500 million round led by Stripes that closed in December"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jane Street",
+            "role": "本轮领投（此前未披露轮次）及后续追加投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "Jane Street separately led a previously unannounced round and has invested more than $100 million in total"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "VentureTech Alliance",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "backers include trading firm Jane Street and VentureTech Alliance, a venture firm with a strategic partnership with TSMC"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Peter Thiel",
+            "role": "本轮参投（2025年12月5亿美元轮次）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Positive Sum",
+            "role": "本轮参投（2025年12月5亿美元轮次）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ribbit Capital",
+            "role": "本轮参投（2025年12月5亿美元轮次）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hudson River Trading",
+            "role": "本轮参投（2025年12月5亿美元轮次）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Two Sigma",
+            "role": "本轮参投（2025年12月5亿美元轮次）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Geoffrey Hinton",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "Geoffrey Hinton, who won a Nobel Prize for foundational work in modern AI, is an investor."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Fei-Fei Li",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "So are computer vision pioneer Fei-Fei Li and hedge fund manager Stanley Druckenmiller."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Stanley Druckenmiller",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec090e2bf0f8f6e9",
+                "quote": "So are computer vision pioneer Fei-Fei Li and hedge fund manager Stanley Druckenmiller."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Andrej Karpathy",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-46feb61e20bda927",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Arthur Mensch",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-46feb61e20bda927",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Scott Wu",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-46feb61e20bda927",
+                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jump Trading",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41379635293a6bc8",
+                "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Radical Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41379635293a6bc8",
+                "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Primary VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41379635293a6bc8",
+                "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec090e2bf0f8f6e9",
+            "quote": "AI chip startup Etched has raised $800 million"
+          },
+          {
+            "source_id": "FISRC-46feb61e20bda927",
+            "quote": "Etched, founded in 2022, also revealed that it has now raised a total of $800 million to date."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Sohu",
+          "description": "一款专用于运行Transformer模型的AI推理芯片，将Transformer架构直接嵌入硅片，而非依赖通用GPU。",
+          "target_customers": "需要大规模运行AI模型推理的AI公司",
+          "features": [
+            "将Transformer架构直接嵌入硅片",
+            "低电压推理（LVI），以一半电压运行数学模块，防止过热并维持持续性能",
+            "集群规模内存（CSM），结合HBM和SRAM以解决内存容量和延迟问题"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "Etched's VLI processor can run trillion-parameter sparse MoEs at 80% peak FLOPs without thermal throttling."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Frontier Inference Clusters",
+          "description": "包含Sohu芯片、定制机架、电路板、冷却板和网络连接的完整服务器机架系统，专为前沿模型推理设计。",
+          "target_customers": "需要大规模部署AI推理的客户",
+          "features": [
+            "完整机架设计，包括电路板、冷却板和网络连接",
+            "针对多万亿参数MoE、长上下文和智能体工作负载优化",
+            "2MW数据中心和台湾工厂支持24/7工程"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Etched also designed its entire server rack, including circuit boards, cooling plates, and networking connections, rather than just the chip itself."
+            },
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "It calls these systems \"frontier inference clusters,\" bundles that include the chips along with custom-designed racks and software"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Nvidia",
+          "product": "通用GPU（如H100）",
+          "scenario": "AI模型训练与推理",
+          "target_customer": "跨行业的AI公司和数据中心",
+          "funding_summary": "",
+          "core_difference": "Etched的Sohu芯片专为Transformer推理设计，将架构直接嵌入硅片；Nvidia GPU为通用设计，同时用于训练和推理。Etched声称单个8芯片Sohu服务器每秒可处理约500,000个token运行Llama 70B，性能超过160个Nvidia H100 GPU。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "The company, which designs chips specifically for running AI models rather than training them"
+            },
+            {
+              "source_id": "FISRC-f52f0f26cdd5ae35",
+              "quote": "The company claims a single 8-chip Sohu server can process around 500,000 tokens per second running Meta's Llama 70B model — outperforming 160 Nvidia H100 GPUs while using less power and taking up less physical space."
+            }
+          ]
+        },
+        {
+          "name": "Groq",
+          "product": "AI推理芯片",
+          "scenario": "AI模型推理",
+          "target_customer": "AI公司和数据中心",
+          "funding_summary": "Groq近期融资6.5亿美元；Nvidia曾以200亿美元获得其许可协议并带走大部分工程师。",
+          "core_difference": "Etched设计了完整的服务器机架系统，而不仅是芯片本身；Groq在2025年12月将大部分工程师转移至Nvidia的许可协议中。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Nvidia paid Groq $20 billion in December for a licensing deal that took most of its engineers."
+            },
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "AI chip maker Groq just raised $650 million."
+            }
+          ]
+        },
+        {
+          "name": "Fractile",
+          "product": "推理芯片（将计算和内存置于同一芯片）",
+          "scenario": "AI模型推理",
+          "target_customer": "AI公司和数据中心",
+          "funding_summary": "融资2.2亿美元",
+          "core_difference": "Fractile的芯片将计算和内存置于同一芯片上；Etched采用低电压推理和集群规模内存（HBM/SRAM混合）方案，并设计完整机架系统。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "London-based Fractile raised $220 million for inference chips that put compute and memory on the same die."
+            }
+          ]
+        },
+        {
+          "name": "Google",
+          "product": "自研AI推理芯片",
+          "scenario": "AI模型推理",
+          "target_customer": "Google自身及云客户",
+          "funding_summary": "",
+          "core_difference": "Google在2026年4月宣布其自研AI芯片的一个版本将专注于推理；Etched是独立的芯片初创公司，提供完整的前沿推理集群系统。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Google announced in April that a version of its own AI chips will focus on inference."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "累计融资额",
+          "value": "$800 million",
+          "observed_at": "2026-06-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "AI chip startup Etched has raised $800 million"
+            }
+          ]
+        },
+        {
+          "label": "估值",
+          "value": "$5 billion（post-money）",
+          "observed_at": "2025-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "a $500 million round led by Stripes that closed in December, valuing Etched at five billion dollars."
+            }
+          ]
+        },
+        {
+          "label": "已签署销售合同金额",
+          "value": "$1 billion",
+          "observed_at": "2026-06-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "says it has signed one billion dollars in sales contracts"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "400",
+          "observed_at": "2026-06-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "The company has 400 employees"
+            }
+          ]
+        },
+        {
+          "label": "Jane Street总投资额",
+          "value": "超过$100 million",
+          "observed_at": "2026-06-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Jane Street separately led a previously unannounced round and has invested more than $100 million in total"
+            }
+          ]
+        },
+        {
+          "label": "VLI处理器峰值FLOPs利用率",
+          "value": "80%（运行万亿参数稀疏MoE时无热节流）",
+          "observed_at": "2026-06-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "Etched's VLI processor can run trillion-parameter sparse MoEs at 80% peak FLOPs without thermal throttling."
+            }
+          ]
+        },
+        {
+          "label": "Sohu服务器推理性能（Llama 70B）",
+          "value": "约500,000 tokens/秒（单个8芯片服务器）",
+          "observed_at": "2026-07-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f52f0f26cdd5ae35",
+              "quote": "The company claims a single 8-chip Sohu server can process around 500,000 tokens per second running Meta's Llama 70B model"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Robert Wachen",
+          "quote": "Production is the product. We are living through one of the largest infrastructure buildouts in history, and the companies that matter will be the ones that can translate technology into systems that can be manufactured, deployed, and operated at massive scale.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41379635293a6bc8",
+              "quote": "Production is the product. We are living through one of the largest infrastructure buildouts in history, and the companies that matter will be the ones that can translate technology into systems that can be manufactured, deployed, and operated at massive scale."
+            }
+          ]
+        },
+        {
+          "speaker": "Patrick O'Shaughnessy",
+          "quote": "If you have compute now, people will buy it.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "If you have compute now, people will buy it"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI行业从模型训练向大规模推理部署的范式转移。Etched以5亿美元估值完成融资，依赖的已验证信号包括：已签署10亿美元销售合同、A0硅片在台积电N4P工艺上一次流片成功、以及来自Jane Street和台积电关联基金的战略背书。但判断的证据边界在于：公司尚未公开独立的第三方性能基准测试，芯片在实际生产负载下的表现仍未被验证，这是该赛道所有初创公司都未完全回答的问题。",
+        "validated_signals": [
+          "已签署10亿美元销售合同，表明市场对专用推理芯片存在真实需求",
+          "A0硅片在台积电N4P工艺上一次流片成功，降低了技术执行风险",
+          "Jane Street领投此前未披露轮次并累计投资超1亿美元，显示金融交易领域对低延迟推理的迫切需求",
+          "VentureTech Alliance（与台积电有战略合作关系的基金）参投，提供了制造端供应链的可信背书"
+        ],
+        "risks": [
+          "芯片在实际生产负载下的性能尚未经独立验证，能否兑现10亿美元合同取决于此",
+          "若Transformer架构被新范式（如Mamba或状态空间模型）取代，专为Transformer硬化的Sohu芯片可能面临架构性过时风险"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "sector": "AI推理芯片/半导体"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Sohu",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "Etched's VLI processor can run trillion-parameter sparse MoEs at 80% peak FLOPs without thermal throttling."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Frontier Inference Clusters",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Etched also designed its entire server rack, including circuit boards, cooling plates, and networking connections, rather than just the chip itself."
+            },
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "It calls these systems \"frontier inference clusters,\" bundles that include the chips along with custom-designed racks and software"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Gavin Uberti",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Founded in 2022 by Harvard dropouts Gavin Uberti and Robert Wachen"
+            },
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "co-founders -- CEO Gavin Uberti and president Robert Wachen"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Robert Wachen",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Founded in 2022 by Harvard dropouts Gavin Uberti and Robert Wachen"
+            },
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "co-founders -- CEO Gavin Uberti and president Robert Wachen"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Stripes",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "The bulk of the funding came from a $500 million round led by Stripes that closed in December"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jane Street",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Jane Street separately led a previously unannounced round and has invested more than $100 million in total"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "VentureTech Alliance",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "backers include trading firm Jane Street and VentureTech Alliance, a venture firm with a strategic partnership with TSMC"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Peter Thiel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Positive Sum",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ribbit Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hudson River Trading",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Two Sigma",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "That round included Peter Thiel, Positive Sum, Ribbit Capital, Hudson River Trading, and Two Sigma."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Geoffrey Hinton",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Geoffrey Hinton, who won a Nobel Prize for foundational work in modern AI, is an investor."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fei-Fei Li",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "So are computer vision pioneer Fei-Fei Li and hedge fund manager Stanley Druckenmiller."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Stanley Druckenmiller",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "So are computer vision pioneer Fei-Fei Li and hedge fund manager Stanley Druckenmiller."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andrej Karpathy",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Arthur Mensch",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Scott Wu",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch, and Scott Wu."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jump Trading",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41379635293a6bc8",
+              "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Radical Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41379635293a6bc8",
+              "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Primary VC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41379635293a6bc8",
+              "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "The company, which designs chips specifically for running AI models rather than training them"
+            },
+            {
+              "source_id": "FISRC-f52f0f26cdd5ae35",
+              "quote": "The company claims a single 8-chip Sohu server can process around 500,000 tokens per second running Meta's Llama 70B model — outperforming 160 Nvidia H100 GPUs while using less power and taking up less physical space."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Groq",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Nvidia paid Groq $20 billion in December for a licensing deal that took most of its engineers."
+            },
+            {
+              "source_id": "FISRC-46feb61e20bda927",
+              "quote": "AI chip maker Groq just raised $650 million."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Fractile",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "London-based Fractile raised $220 million for inference chips that put compute and memory on the same die."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Google",
+          "canonical_entity_id": "EN-bbdefa2950f49882",
+          "canonical_name": "Google",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec090e2bf0f8f6e9",
+              "quote": "Google announced in April that a version of its own AI chips will focus on inference."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-040fc355bc12a750",
+          "date": "2026-07-07",
+          "title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+          "amount": "$800M",
+          "source_refs": [
+            "SA-ec3e199b7cdeadca"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ec090e2bf0f8f6e9",
+          "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
+          "title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-07T02:01:23.317Z",
+          "content_hash": "fa74de6f9a9e3ef8",
+          "source_artifact_id": "SA-ec3e199b7cdeadca",
+          "raw_id": "RAW-f17935ff3de8c819"
+        },
+        {
+          "source_id": "FISRC-46feb61e20bda927",
+          "source_url": "https://theoutpost.ai/news-story/etched-raises-800-m-from-jane-street-and-tsmc-linked-fund-with-1-b-in-sales-contracts-28056/",
+          "title": "Etched Raises $800M, Hits $5B Valuation for AI Chips",
+          "publisher": "theoutpost.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:47.033Z",
+          "content_hash": "ac17ee5ecc4171d0",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-41379635293a6bc8",
+          "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
+          "title": "Nvidia Rival Etched Steps Out of Stealth With $5B Valuation - MIT Sloan Management Review Middle East",
+          "publisher": "mitsloanme.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:51.230Z",
+          "content_hash": "0fc2af151fdcca39",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f52f0f26cdd5ae35",
+          "source_url": "https://www.inbenta.com/ai-this-week/nvidia-rival-etched-hits-5-billion-valuation-with-1-billion-in-ai-chip-orders",
+          "title": "Nvidia Rival Etched Hits $5 Billion Valuation with $1 Billion in AI Chip Orders",
+          "publisher": "inbenta.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:53.406Z",
+          "content_hash": "abfb3c9ba842eb90",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:45:48.020Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:45:48.020Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-f9e179dddb3ef04f",
+      "triggered_by_event_id": "EV-63dee9f748531f08",
+      "as_of_date": "2026-07-07",
+      "company": {
+        "entity_id": "EN-86c49cd0980883a3",
+        "name": "Raja Koduri’s Oxmiq",
+        "full_name": "Oxmiq Labs",
+        "website": "",
+        "summary": "Oxmiq Labs 是一家由资深芯片架构师 Raja Koduri 创立的 AI 芯片架构初创公司，旨在通过授权其 OxCore GPU 架构，让芯片制造商无需从头开始完整的多年设计项目即可构建定制 AI 芯片。",
+        "headquarters": "Campbell, California",
+        "founders": [
+          {
+            "name": "Raja Koduri",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b7543ce87aeb9664",
+                "quote": "Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company's total capital raised to $60m since its founding by veteran chip architect Raja Koduri."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b7543ce87aeb9664",
+            "quote": "Oxmiq is headquartered in Campbell, California, with a development site in Hyderabad, India."
+          },
+          {
+            "source_id": "FISRC-0caa795661371617",
+            "quote": "Founded in 2024 and headquartered in Campbell, California, with engineering teams in Hyderabad and Bengaluru, OXMIQ is building what Koduri describes as an \"Arm for AI GPUs\"."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$35m",
+        "total_raised": "$60m",
+        "announced_at": "2026-07-02",
+        "investors": [
+          {
+            "name": "Fundomo",
+            "role": "本轮共同领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b7543ce87aeb9664",
+                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung Catalyst Fund",
+            "role": "本轮共同领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b7543ce87aeb9664",
+                "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "MediaTek",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b7543ce87aeb9664",
+                "quote": "with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pegatron Venture Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b7543ce87aeb9664",
+                "quote": "with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Darwin Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b7543ce87aeb9664",
+                "quote": "with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Morgan Creek Digital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b7543ce87aeb9664",
+                "quote": "with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Intel Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0caa795661371617",
+                "quote": "Existing investors MediaTek, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, Morgan Creek Digital, AM Intelligence Labs and Intel Capital also participated."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "CDIB-TEN",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0caa795661371617",
+                "quote": "Existing investors MediaTek, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, Morgan Creek Digital, AM Intelligence Labs and Intel Capital also participated."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "AM Intelligence Labs",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0caa795661371617",
+                "quote": "Existing investors MediaTek, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, Morgan Creek Digital, AM Intelligence Labs and Intel Capital also participated."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b7543ce87aeb9664",
+            "quote": "Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "OxCore",
+          "description": "OxCore 是一种可授权的 GPU 架构，集成了三个计算引擎：一个兼容 CUDA 的 GPU 引擎、一个张量处理引擎和一个协调系统工作负载的编排引擎，专为近内存计算设计，以减少 AI 工作负载中的数据移动。",
+          "target_customers": "半导体公司、系统构建商、AI 基础设施构建者、追求主权 AI 的政府",
+          "features": [
+            "集成 CUDA 兼容 GPU 引擎、张量处理引擎和编排引擎",
+            "近内存计算优化，减少数据移动",
+            "可授权 IP 模式，无需从头设计芯片"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "OxCore is the product at the centre of that bet. It integrates three compute engines, a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine that coordinates workloads across the system, functions typically split across separate chips. Oxmiq says the tighter coupling is built for near-memory compute, reducing the data movement that drives up both cost and energy use in AI workloads."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "OxQuilt",
+          "description": "OxQuilt 是一种灵活的小芯片集成架构，允许客户混合不同的逻辑工艺节点和先进封装选项，不受特定制造厂或内存类型的限制。",
+          "target_customers": "半导体公司",
+          "features": [
+            "灵活的小芯片集成",
+            "适应任何供应链，可混合不同逻辑工艺节点和封装选项"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-40e752fe87070758",
+              "quote": "OXMIQ pairs this core with OxQuilt, a flexible chiplet integration architecture. Traditional AI chip designs lock developers into a specific manufacturing foundry or memory type. OxQuilt bypasses this limitation entirely. It adapts to any supply chain, letting customers mix different logic process nodes and advanced packaging options."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "OxPython",
+          "description": "OxPython 是一个专用软件层，允许开发者直接在 OxCore 硬件上运行现有的 CUDA 和 PyTorch 代码，无需任何代码修改。",
+          "target_customers": "AI 开发者",
+          "features": [
+            "零代码修改运行 CUDA 和 PyTorch 代码",
+            "保证与新发布 AI 模型的即时兼容性"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-40e752fe87070758",
+              "quote": "OXMIQ tackles this problem with OxPython, a dedicated software layer designed for zero-friction deployment. OxPython allows developers to run existing CUDA and PyTorch code directly on OxCore hardware. Crucially, this requires absolutely zero code modifications."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "AM Intelligence Labs",
+          "industry": "AI 基础设施",
+          "use_case": "合作架构一个 2 GW 可再生能源驱动的 AI 计算平台",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0caa795661371617",
+              "quote": "Earlier this year, OXMIQ partnered with AM Intelligence Labs, part of the AM Green Group, to architect a 2 GW renewable-powered AI compute platform in Uttar Pradesh, with the first 1 GW phase expected to go live by the end of 2027."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Arm Holdings",
+          "product": "CPU 核心授权",
+          "scenario": "授权处理器核心设计给芯片制造商",
+          "target_customer": "半导体公司",
+          "funding_summary": "",
+          "core_difference": "Arm 授权 CPU 核心，Oxmiq 授权 AI GPU 架构；Arm 模式已运行数十年，Oxmiq 将授权模式应用于前沿 AI 加速器领域，该领域此前由 Nvidia 等自研架构主导。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "Oxmiq wants to sell the design itself as licensable IP, the way Arm licenses processor cores, rather than selling finished chips."
+            }
+          ]
+        },
+        {
+          "name": "Nvidia",
+          "product": "AI 加速器芯片",
+          "scenario": "销售完整的 AI 芯片，拥有自研架构",
+          "target_customer": "云服务商、AI 公司",
+          "funding_summary": "",
+          "core_difference": "Nvidia 倾向于完全拥有其架构而非授权他人设计，Oxmiq 则提供可授权的 GPU 架构，让客户构建定制 AI 芯片，减少对 Nvidia 的依赖。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0caa795661371617",
+              "quote": "OXMIQ aims to license GPU intellectual property, through its flagship product OxCore, enabling customers to build custom AI processors instead of relying solely on Nvidia or investing billions in developing their own silicon."
+            }
+          ]
+        },
+        {
+          "name": "SiFive",
+          "product": "RISC-V 处理器核心授权",
+          "scenario": "授权处理器核心设计",
+          "target_customer": "半导体公司",
+          "funding_summary": "",
+          "core_difference": "SiFive 基于 RISC-V 授权处理器核心，Oxmiq 授权 AI GPU 架构；两者均采用 IP 授权模式，但面向不同的计算领域。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "RISC-V startups such as SiFive have built entire businesses on licensing processor cores rather than shipping finished silicon."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "软件栈公开测试用户数",
+          "value": "20 家公司和 10 所大学",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0caa795661371617",
+              "quote": "OXMIQ launched a public beta of its software stack in November 2025 and says it is now being used by 20 companies and 10 universities across nearly 300 GPUs."
+            }
+          ]
+        },
+        {
+          "label": "软件栈公开测试 GPU 数量",
+          "value": "近 300 个 GPU",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0caa795661371617",
+              "quote": "OXMIQ launched a public beta of its software stack in November 2025 and says it is now being used by 20 companies and 10 universities across nearly 300 GPUs."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Raja Koduri",
+          "quote": "India cannot play in AI without taking control of the cost of it. AI compute costs would need to fall by 50-100 times to drive mass adoption.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0caa795661371617",
+              "quote": "\"India cannot play in AI without taking control of the cost of it. AI compute costs would need to fall by 50-100 times to drive mass adoption,\" he said adding that chip design is where 92% of margins lie."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 IP 授权模式能否在前沿 AI 加速器领域复制 Arm 在 CPU 领域的成功。本轮融资的已验证信号包括：创始人 Raja Koduri 曾在 AMD、Apple、Intel 三家行业巨头交付 GPU 芯片的履历；芯片传奇 Jim Keller 加入董事会带来的行业信任背书；以及三星催化剂基金、联发科、和硕等战略投资方构成的产业链上下游支持。但公开记录中未披露任何已签署授权协议产生的近期收入，商业牵引力尚未得到验证，判断的证据边界仅限于团队背景、董事会构成和投资方组合。",
+        "validated_signals": [
+          "创始人 Raja Koduri 曾在 AMD、Apple、Intel 三家行业巨头交付 GPU 芯片",
+          "芯片架构师 Jim Keller 加入董事会",
+          "三星催化剂基金、联发科、和硕等产业链上下游战略投资方参与本轮融资",
+          "软件栈公开测试已被 20 家公司和 10 所大学使用"
+        ],
+        "risks": [
+          "IP 授权模式在前沿 AI 加速器领域未经大规模验证，最大买家 Nvidia 等历来倾向于完全拥有自研架构而非授权他人设计",
+          "未披露任何已签署授权协议产生的近期收入，商业牵引力无法从公开记录核实"
+        ],
+        "related_direction_id": "",
+        "sector": "AI 芯片架构授权"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "OxCore",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "OxCore is the product at the centre of that bet. It integrates three compute engines, a CUDA-compatible GPU engine, a tensor processing engine, and an orchestration engine that coordinates workloads across the system, functions typically split across separate chips. Oxmiq says the tighter coupling is built for near-memory compute, reducing the data movement that drives up both cost and energy use in AI workloads."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "OxQuilt",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-40e752fe87070758",
+              "quote": "OXMIQ pairs this core with OxQuilt, a flexible chiplet integration architecture. Traditional AI chip designs lock developers into a specific manufacturing foundry or memory type. OxQuilt bypasses this limitation entirely. It adapts to any supply chain, letting customers mix different logic process nodes and advanced packaging options."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "OxPython",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-40e752fe87070758",
+              "quote": "OXMIQ tackles this problem with OxPython, a dedicated software layer designed for zero-friction deployment. OxPython allows developers to run existing CUDA and PyTorch code directly on OxCore hardware. Crucially, this requires absolutely zero code modifications."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Raja Koduri",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "Oxmiq Labs has closed a $35m Series A to scale OxCore, a licensable GPU architecture the startup says lets chipmakers build custom AI silicon without running a full, multi-year design programme of their own. The round brings the company's total capital raised to $60m since its founding by veteran chip architect Raja Koduri."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fundomo",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung Catalyst Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "MediaTek",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Pegatron Venture Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Darwin Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Morgan Creek Digital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "with participation from MediaTek, Pegatron Venture Capital, Darwin Ventures, Morgan Creek Digital, and other strategic and financial investors named in the announcement."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Intel Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0caa795661371617",
+              "quote": "Existing investors MediaTek, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, Morgan Creek Digital, AM Intelligence Labs and Intel Capital also participated."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "CDIB-TEN",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0caa795661371617",
+              "quote": "Existing investors MediaTek, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, Morgan Creek Digital, AM Intelligence Labs and Intel Capital also participated."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AM Intelligence Labs",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0caa795661371617",
+              "quote": "Existing investors MediaTek, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, Morgan Creek Digital, AM Intelligence Labs and Intel Capital also participated."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "AM Intelligence Labs",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0caa795661371617",
+              "quote": "Earlier this year, OXMIQ partnered with AM Intelligence Labs, part of the AM Green Group, to architect a 2 GW renewable-powered AI compute platform in Uttar Pradesh, with the first 1 GW phase expected to go live by the end of 2027."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Arm Holdings",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "Oxmiq wants to sell the design itself as licensable IP, the way Arm licenses processor cores, rather than selling finished chips."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0caa795661371617",
+              "quote": "OXMIQ aims to license GPU intellectual property, through its flagship product OxCore, enabling customers to build custom AI processors instead of relying solely on Nvidia or investing billions in developing their own silicon."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "SiFive",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b7543ce87aeb9664",
+              "quote": "RISC-V startups such as SiFive have built entire businesses on licensing processor cores rather than shipping finished silicon."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-63dee9f748531f08",
+          "date": "2026-07-07",
+          "title": "Raja Koduri 的 Oxmiq 融资 3500 万美元，出租 AI 芯片设计而非销售芯片",
+          "amount": "$35m",
+          "source_refs": [
+            "SA-704433e1b64cec5a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-b7543ce87aeb9664",
+          "source_url": "https://thenextweb.com/news/oxmiq-35-million-oxcore-chip-architecture",
+          "title": "Raja Koduri 的 Oxmiq 融资 3500 万美元，出租 AI 芯片设计而非销售芯片",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-07T02:01:23.360Z",
+          "content_hash": "f114b3c991a5c6c6",
+          "source_artifact_id": "SA-704433e1b64cec5a",
+          "raw_id": "RAW-1536320014de0985"
+        },
+        {
+          "source_id": "FISRC-40e752fe87070758",
+          "source_url": "https://ventureburn.com/raja-koduri-oxmiq-raises-35m-license-ai-chips/",
+          "title": "Raja Koduri’s OXMIQ Raises $35M to License AI Chips",
+          "publisher": "ventureburn.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:44:55.892Z",
+          "content_hash": "8112c9025cc744fe",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0caa795661371617",
+          "source_url": "https://m.economictimes.com/tech/artificial-intelligence/oxmiq-raises-35-million-to-license-ai-chip-designs-as-sovereign-ai-demand-grows/articleshow/132117037.cms",
+          "title": "Ex-Intel exec Raja Koduri's OXMIQ raises $35 million to ...",
+          "publisher": "m.economictimes.com",
+          "source_class": "official_candidate",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:45:06.306Z",
+          "content_hash": "a7dbfbfcee95f506",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:45:45.486Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:45:45.486Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-040fc355bc12a750",
+      "company_name": "Nvidia rival Etched",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Nvidia rival Etched\" \"$800M\" funding investors round",
+        "\"Nvidia rival Etched\" product customers case study",
+        "\"Nvidia rival Etched\" \"Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund\" competitors product use case",
+        "\"Nvidia rival Etched\" \"$800M\" investor quote why invested",
+        "\"Nvidia rival Etched\" \"$800M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Nvidia rival Etched\" \"$800M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nvidia rival Etched\" \"$800M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Nvidia rival Etched\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nvidia rival Etched\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Nvidia rival Etched\" \"Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nvidia rival Etched\" \"Nvidia rival Etched raises $800M with backing from Jane Street and a TSMC-linked fund\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Nvidia rival Etched\" \"$800M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nvidia rival Etched\" \"$800M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Nvidia rival Etched\" \"$800M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nvidia rival Etched\" \"$800M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:47:55.740Z"
+    },
+    {
+      "event_id": "EV-6e06cfa28f76a76f",
+      "company_name": "Katalyze AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Katalyze AI\" \"$10.5M\" funding investors round",
+        "site:katalyzeai.com \"Katalyze AI\" product customers case study",
+        "\"Katalyze AI\" \"Katalyze AI Raises $10.5M Led by Bonfire Ventures Deploy Agentic Operating System for Pharma | The AI Journal\" competitors product use case",
+        "\"Katalyze AI\" \"$10.5M\" investor quote why invested",
+        "\"Katalyze AI\" \"$10.5M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Katalyze AI\" \"$10.5M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Katalyze AI\" \"$10.5M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "site:katalyzeai.com \"Katalyze AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "site:katalyzeai.com \"Katalyze AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Katalyze AI\" \"Katalyze AI Raises $10.5M Led by Bonfire Ventures Deploy Agentic Operating System for Pharma | The AI Journal\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Katalyze AI\" \"Katalyze AI Raises $10.5M Led by Bonfire Ventures Deploy Agentic Operating System for Pharma | The AI Journal\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Katalyze AI\" \"$10.5M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Katalyze AI\" \"$10.5M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Katalyze AI\" \"$10.5M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Katalyze AI\" \"$10.5M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:47:55.740Z"
+    },
+    {
+      "event_id": "EV-63dee9f748531f08",
+      "company_name": "Raja Koduri’s Oxmiq",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Raja Koduri’s Oxmiq\" \"$35m\" funding investors round",
+        "\"Raja Koduri’s Oxmiq\" product customers case study",
+        "\"Raja Koduri’s Oxmiq\" \"Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips\" competitors product use case",
+        "\"Raja Koduri’s Oxmiq\" \"$35m\" investor quote why invested",
+        "\"Raja Koduri’s Oxmiq\" \"$35m\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Raja Koduri’s Oxmiq\" \"$35m\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Raja Koduri’s Oxmiq\" \"$35m\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Raja Koduri’s Oxmiq\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Raja Koduri’s Oxmiq\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Raja Koduri’s Oxmiq\" \"Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Raja Koduri’s Oxmiq\" \"Raja Koduri’s Oxmiq raises $35m to rent out AI chip design instead of selling chips\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Raja Koduri’s Oxmiq\" \"$35m\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Raja Koduri’s Oxmiq\" \"$35m\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Raja Koduri’s Oxmiq\" \"$35m\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Raja Koduri’s Oxmiq\" \"$35m\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:47:55.740Z"
+    },
+    {
+      "event_id": "EV-7abd8ec418f1e7f3",
+      "company_name": "Positron",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Positron\" \"$230M\" funding investors round",
+        "\"Positron\" product customers case study",
+        "\"Positron\" \"Exclusive: Positron raises $230M Series B to take on Nvidia's AI chips | TechCrunch\" competitors product use case",
+        "\"Positron\" \"$230M\" investor quote why invested",
+        "\"Positron\" \"$230M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Positron\" \"$230M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron\" \"$230M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron\" \"Exclusive: Positron raises $230M Series B to take on Nvidia's AI chips | TechCrunch\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron\" \"Exclusive: Positron raises $230M Series B to take on Nvidia's AI chips | TechCrunch\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron\" \"$230M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron\" \"$230M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Positron\" \"$230M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Positron\" \"$230M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:47:55.740Z"
+    },
+    {
+      "event_id": "EV-b3c7c4bff17063d8",
+      "company_name": "Raja Koduri's Oxmiq Labs",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Raja Koduri's Oxmiq Labs\" \"$35M\" funding investors round",
+        "\"Raja Koduri's Oxmiq Labs\" product customers case study",
+        "\"Raja Koduri's Oxmiq Labs\" \"Raja Koduri's Oxmiq Labs raises $35M to lower the design cost of custom AI silicon - SiliconANGLE\" competitors product use case",
+        "\"Raja Koduri's Oxmiq Labs\" \"$35M\" investor quote why invested",
+        "\"Raja Koduri's Oxmiq Labs\" \"$35M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Raja Koduri's Oxmiq Labs\" \"$35M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Raja Koduri's Oxmiq Labs\" \"$35M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Raja Koduri's Oxmiq Labs\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Raja Koduri's Oxmiq Labs\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Raja Koduri's Oxmiq Labs\" \"Raja Koduri's Oxmiq Labs raises $35M to lower the design cost of custom AI silicon - SiliconANGLE\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Raja Koduri's Oxmiq Labs\" \"Raja Koduri's Oxmiq Labs raises $35M to lower the design cost of custom AI silicon - SiliconANGLE\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Raja Koduri's Oxmiq Labs\" \"$35M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Raja Koduri's Oxmiq Labs\" \"$35M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Raja Koduri's Oxmiq Labs\" \"$35M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Raja Koduri's Oxmiq Labs\" \"$35M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:47:55.740Z"
+    },
+    {
+      "event_id": "EV-8cf189b07a257c1c",
+      "company_name": "Kapture CX",
+      "status": "blocked",
+      "problems": [
+        "deepseek_json_quality_failed:investors_missing"
+      ],
+      "queries": [
+        "\"Kapture CX\" \"$10 M\" funding investors round",
+        "\"Kapture CX\" product customers case study",
+        "\"Kapture CX\" \"Kapture CX Secures $10 Mn Pre-Series B Funding Led by Bajaj Finserv Ventures to Scale Agentic Enterprise Stack\" competitors product use case",
+        "\"Kapture CX\" \"$10 M\" investor quote why invested",
+        "\"Kapture CX\" \"$10 M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Kapture CX\" \"$10 M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Kapture CX\" \"$10 M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Kapture CX\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Kapture CX\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Kapture CX\" \"Kapture CX Secures $10 Mn Pre-Series B Funding Led by Bajaj Finserv Ventures to Scale Agentic Enterprise Stack\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Kapture CX\" \"Kapture CX Secures $10 Mn Pre-Series B Funding Led by Bajaj Finserv Ventures to Scale Agentic Enterprise Stack\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Kapture CX\" \"$10 M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Kapture CX\" \"$10 M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Kapture CX\" \"$10 M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Kapture CX\" \"$10 M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:17:40.886Z"
+    },
+    {
+      "event_id": "EV-e61effb7ada8508f",
+      "company_name": "PYMNTS | This",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"PYMNTS | This\" \"$110 Million\" funding investors round",
+        "\"PYMNTS | This\" product customers case study",
+        "\"PYMNTS | This\" \"PYMNTS | This CEO Just Raised $110 Million to Make Banks Agent-First\" competitors product use case",
+        "\"PYMNTS | This\" \"$110 Million\" investor quote why invested",
+        "\"PYMNTS | This\" \"$110 Million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"PYMNTS | This\" \"$110 Million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"PYMNTS | This\" \"$110 Million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"PYMNTS | This\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"PYMNTS | This\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"PYMNTS | This\" \"PYMNTS | This CEO Just Raised $110 Million to Make Banks Agent-First\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"PYMNTS | This\" \"PYMNTS | This CEO Just Raised $110 Million to Make Banks Agent-First\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"PYMNTS | This\" \"$110 Million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"PYMNTS | This\" \"$110 Million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"PYMNTS | This\" \"$110 Million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"PYMNTS | This\" \"$110 Million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:47:55.741Z"
+    }
+  ]
+}

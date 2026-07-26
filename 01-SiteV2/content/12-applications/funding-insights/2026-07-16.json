@@ -1,0 +1,3427 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-16",
+    "generated_at": "2026-07-26T15:19:19.977Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 5,
+      "auto_published": 5,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-c8f44dd5728f2a91",
+      "triggered_by_event_id": "EV-64fb6d791e19d10a",
+      "as_of_date": "2026-07-16",
+      "company": {
+        "entity_id": "EN-b0532e1af75cc4ab",
+        "name": "Rime",
+        "full_name": "Rime",
+        "website": "https://www.rime.ai",
+        "summary": "Rime 是一家总部位于旧金山的语音 AI 初创公司，通过自建录音棚采集对话数据来训练语音模型，专注于为企业提供高精度、低延迟的语音交互模型，以处理销售、营销和客户支持等场景的电话呼叫。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Lily Clifford",
+            "role": "CEO & Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7814afd7c39e886d",
+                "quote": "Founded in 2022 by former Stanford PhD student Lily Clifford, ex-Amazon Alexa engineer Brooke Larson, and Stanford engineer Ares Geovanos"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Brooke Larson",
+            "role": "Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7814afd7c39e886d",
+                "quote": "ex-Amazon Alexa engineer Brooke Larson"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ares Geovanos",
+            "role": "Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7814afd7c39e886d",
+                "quote": "Stanford engineer Ares Geovanos"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "35",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "Rime is planning to expand its team of 35 people"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7814afd7c39e886d",
+            "quote": "San Francisco-based Rime is trying to gain an edge in this crowded market with its voice AI models"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$24M",
+        "total_raised": "$29.5M",
+        "announced_at": "2026-07-15",
+        "investors": [
+          {
+            "name": "M13 Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7814afd7c39e886d",
+                "quote": "raised $24 million in a Series A funding round that was led by M13 Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Twilio Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7814afd7c39e886d",
+                "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Corazon Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7814afd7c39e886d",
+                "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cadenza Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3c23f338e9a9176f",
+                "quote": "Our Series A was led by M13, with participation from Corazon Capital, Unusual Ventures, Cadenza Ventures, and Twilio Ventures."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Founders You Should Know",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bf64aef858152292",
+                "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cadenza Capital",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bf64aef858152292",
+                "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7814afd7c39e886d",
+            "quote": "Rime on Wednesday said it has raised $24 million in a Series A funding round"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Rime 语音交互模型",
+          "description": "基于自建录音棚采集的对话数据训练的语音 AI 模型，采用音素级架构，能够准确发音不同品牌实体和行业特定术语，无需客户针对特定行业重新训练模型。",
+          "target_customers": "需要处理大规模电话呼叫的企业，覆盖餐饮、医疗、航空、金融科技等行业。",
+          "features": [
+            "音素级发音控制",
+            "低延迟语音交互",
+            "支持云和本地部署",
+            "SOC 2 Type II 和 HIPAA 合规"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "Rime has built a recording studio in San Francisco to collect its own conversational data rather than relying on scraping the web for audio."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mist v3",
+          "description": "生产级 TTS 引擎，具备约 40ms p90 首字节时间和确定性发音控制，适用于品牌名称和医学术语。",
+          "target_customers": "对发音准确性和响应速度有严格要求的企业客户。",
+          "features": [
+            "约 40ms p90 首字节时间",
+            "确定性发音控制"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "Rime released Mist v3 in April — a production TTS engine with roughly 40ms p90 time-to-first-byte and deterministic pronunciation control for brand names and medical terminology"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Coda",
+          "description": "双解码器旗舰模型，提供超过 600 种语音，覆盖 50 多种语言。",
+          "target_customers": "需要多语言、多语音支持的企业客户。",
+          "features": [
+            "超过 600 种语音",
+            "覆盖 50 多种语言"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Decagon",
+          "product": "客户支持专用语音 AI",
+          "scenario": "企业客户服务电话自动化",
+          "target_customer": "需要自动化客户支持的企业",
+          "funding_summary": "",
+          "core_difference": "Decagon 专注于客户支持应用层；Rime 则提供底层语音模型，不直接构建面向终端用户的应用。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "dedicated customer support shops like Decagon and Sierra"
+            }
+          ]
+        },
+        {
+          "name": "Sierra",
+          "product": "客户支持专用语音 AI",
+          "scenario": "企业客户服务电话自动化",
+          "target_customer": "需要自动化客户支持的企业",
+          "funding_summary": "",
+          "core_difference": "Sierra 专注于客户支持应用层；Rime 则专注于底层语音模型，不直接构建面向终端用户的应用。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "dedicated customer support shops like Decagon and Sierra"
+            }
+          ]
+        },
+        {
+          "name": "Vapi",
+          "product": "语音 AI 基础设施",
+          "scenario": "企业电话呼叫处理",
+          "target_customer": "需要构建语音应用的企业",
+          "funding_summary": "5000 万美元 B 轮融资，估值 5 亿美元",
+          "core_difference": "Vapi 提供语音 AI 基础设施平台；Rime 则通过自建录音棚采集数据训练模型，专注于音素级发音精度和低延迟。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "Vapi recently closed a $50M Series B at a $500M valuation, having processed one billion calls."
+            }
+          ]
+        },
+        {
+          "name": "Deepgram",
+          "product": "语音识别与合成平台",
+          "scenario": "企业语音转录和理解",
+          "target_customer": "需要语音识别基础设施的企业",
+          "funding_summary": "总融资超过 1.3 亿美元",
+          "core_difference": "Deepgram 提供通用语音识别基础设施；Rime 则专注于通过自建录音棚数据训练模型，实现音素级发音控制。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "Large organizations are offloading calls to voice model developers like ElevenLabs and Deepgram"
+            },
+            {
+              "source_id": "FISRC-823a55431ee598b5",
+              "quote": "Deepgram has raised more than $130 million for enterprise speech recognition infrastructure."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "月均处理电话呼叫量",
+          "value": "近 1 亿次",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e390fe10f0d05aa",
+              "quote": "Rime powers nearly 100 million phone calls monthly for enterprise customers"
+            }
+          ]
+        },
+        {
+          "label": "Mist v3 首字节时间",
+          "value": "约 40ms p90",
+          "observed_at": "2026-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "Rime released Mist v3 in April — a production TTS engine with roughly 40ms p90 time-to-first-byte"
+            }
+          ]
+        },
+        {
+          "label": "Coda 模型支持语音数量",
+          "value": "超过 600 种",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages"
+            }
+          ]
+        },
+        {
+          "label": "Coda 模型支持语言数量",
+          "value": "超过 50 种",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages"
+            }
+          ]
+        },
+        {
+          "label": "Miravoice 研究覆盖呼叫量",
+          "value": "10 万次",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e390fe10f0d05aa",
+              "quote": "A Miravoice study evaluating 12 voices across 100,000 calls found Rime produced statistically significantly lower hang up rates and the fastest time to completion of all providers tested."
+            }
+          ]
+        },
+        {
+          "label": "种子轮融资金额",
+          "value": "550 万美元",
+          "observed_at": "2025-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "It had previously raised $5.5 million in a seed round last May"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "35 人",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "Rime is planning to expand its team of 35 people"
+            }
+          ]
+        },
+        {
+          "label": "语音 AI 单次通话成本",
+          "value": "约 0.40 美元",
+          "observed_at": "2026-07-17",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "voice AI costs roughly $0.40 per call, compared to $7 to $12 per call for human agents"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "John Vrionis",
+          "quote": "Lily and the Rime team have the rare combination of linguistic expertise and engineering rigor to build something genuinely defensible here. We are proud to double down.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4e390fe10f0d05aa",
+              "quote": "Lily and the Rime team have the rare combination of linguistic expertise and engineering rigor to build something genuinely defensible here. We are proud to double down."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "M13 Ventures",
+            "speaker": "Morgan Blumberg",
+            "speaker_role": "Partner",
+            "rationale": "M13 认为语音 AI 时代的设计模式尚未建立，Rime 通过结合前沿 AI 与深度语言学专业知识，正在构建下一代 AI 产品所依赖的语音基础设施，尤其在受监管环境中提供低延迟、高可靠性的实时语音。",
+            "quote": "The design patterns that will define the speech-to-speech era of AI haven't been built yet. Rime is doing the foundational work by combining frontier AI with deep linguistic expertise to create the speech infrastructure the next generation of AI products will rely on. Lily, Ares and Brooke are building Rime with the rare combination of world-class AI research and deep linguistic expertise to deploy real time voice people can trust in complex, regulated environments.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3c23f338e9a9176f",
+                "quote": "The design patterns that will define the speech-to-speech era of AI haven't been built yet. Rime is doing the foundational work by combining frontier AI with deep linguistic expertise to create the speech infrastructure the next generation of AI products will rely on. Lily, Ares and Brooke are building Rime with the rare combination of world-class AI research and deep linguistic expertise to deploy real time voice people can trust in complex, regulated environments."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 Rime 能否通过自建录音棚采集的专有对话数据和音素级发音控制，在受监管行业（医疗、金融）建立语音模型的防御性壁垒。本轮融资验证的信号包括：月均处理近 1 亿次电话呼叫的生产规模、Mayo Clinic 等标杆客户、Miravoice 第三方研究证实的更低挂断率和最快完成时间，以及从种子轮领投方 Unusual Ventures 的持续加注。判断的证据边界限于已披露的客户数量、技术指标和投资方原话，尚未有独立财务数据或市场份额数据支撑。",
+        "validated_signals": [
+          "月均处理近 1 亿次企业电话呼叫，证明生产级部署规模",
+          "获得 Mayo Clinic、Upstart 等受监管行业标杆客户",
+          "Miravoice 独立研究证实 Rime 语音的挂断率显著更低、完成时间最快",
+          "自建录音棚采集对话数据，形成数据采集的差异化路径",
+          "从语音到语音模型架构转型，降低编排依赖并减少延迟"
+        ],
+        "risks": [
+          "语音 AI 市场竞争激烈，ElevenLabs 估值已达 110 亿美元且总融资 7.81 亿美元，Vapi 等基础设施公司也在快速扩张，Rime 的 2400 万美元 A 轮融资规模相对较小，可能在资源投入上处于劣势。",
+          "基础模型提供商（如 OpenAI）正在改进实时音频能力，未来可能将语音功能直接集成到 API 中，对 Rime 所在的专业语音层形成来自上游的挤压。"
+        ],
+        "related_direction_id": "",
+        "sector": "语音 AI 基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Rime 语音交互模型",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "Rime has built a recording studio in San Francisco to collect its own conversational data rather than relying on scraping the web for audio."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Mist v3",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "Rime released Mist v3 in April — a production TTS engine with roughly 40ms p90 time-to-first-byte and deterministic pronunciation control for brand names and medical terminology"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Coda",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "Coda, a dual-decoder flagship model shipping with more than 600 voices across 50-plus languages"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Lily Clifford",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "Founded in 2022 by former Stanford PhD student Lily Clifford, ex-Amazon Alexa engineer Brooke Larson, and Stanford engineer Ares Geovanos"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Brooke Larson",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "ex-Amazon Alexa engineer Brooke Larson"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ares Geovanos",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "Stanford engineer Ares Geovanos"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "M13 Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "raised $24 million in a Series A funding round that was led by M13 Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Twilio Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Corazon Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cadenza Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3c23f338e9a9176f",
+              "quote": "Our Series A was led by M13, with participation from Corazon Capital, Unusual Ventures, Cadenza Ventures, and Twilio Ventures."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Founders You Should Know",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cadenza Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "in May 2025, Rime raised a $5.5 million seed round led by Unusual Ventures, alongside Founders You Should Know and Cadenza Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Decagon",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "dedicated customer support shops like Decagon and Sierra"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Sierra",
+          "canonical_entity_id": "EN-dca6ec9510fc0176",
+          "canonical_name": "Sierra",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "dedicated customer support shops like Decagon and Sierra"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Vapi",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bf64aef858152292",
+              "quote": "Vapi recently closed a $50M Series B at a $500M valuation, having processed one billion calls."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Deepgram",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7814afd7c39e886d",
+              "quote": "Large organizations are offloading calls to voice model developers like ElevenLabs and Deepgram"
+            },
+            {
+              "source_id": "FISRC-823a55431ee598b5",
+              "quote": "Deepgram has raised more than $130 million for enterprise speech recognition infrastructure."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-ccbf97fdf4dc11d0",
+          "date": "2026-07-23",
+          "title": "AppliedAI 完成 pre-Series B 轮融资，用于扩展企业 AI 平台",
+          "amount": "$55 million",
+          "source_refs": [
+            "SA-43f1b54eb87e7daa"
+          ]
+        },
+        {
+          "event_id": "EV-64fb6d791e19d10a",
+          "date": "2026-07-15",
+          "title": "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI",
+          "amount": "$24M",
+          "source_refs": [
+            "SA-105f3ca160a84fc9"
+          ]
+        },
+        {
+          "event_id": "EV-463cb26b5e03c7f7",
+          "date": "2026-07-09",
+          "title": "Prime Intellect 获 1.3 亿美元 A 轮融资，助力企业构建自有 AI 智能体",
+          "amount": "$130M",
+          "source_refs": [
+            "SA-2bec96260be8d65c"
+          ]
+        },
+        {
+          "event_id": "EV-8cf189b07a257c1c",
+          "date": "2026-07-07",
+          "title": "Kapture CX获Bajaj Finserv Ventures领投1000万美元Pre-B轮融资，用于扩展代理型企业技术栈",
+          "amount": "$10 M",
+          "source_refs": [
+            "SA-298a6dc0a781242e",
+            "SA-6a7f67b64ff97dec"
+          ]
+        },
+        {
+          "event_id": "EV-f0fee44c1dfdcb09",
+          "date": "2026-07-04",
+          "title": "Hang Ten Systems 获 3200 万美元融资，助力企业成功应用 AI",
+          "amount": "$32M",
+          "source_refs": [
+            "SA-4c7af008a157ae01"
+          ]
+        },
+        {
+          "event_id": "EV-52bf48005db3461a",
+          "date": "2026-06-28",
+          "title": "Robust.AI 融资2000万美元，扩大机器人配送试点客户规模",
+          "amount": "$20M",
+          "source_refs": [
+            "SA-807ee9dbd47ef003"
+          ]
+        },
+        {
+          "event_id": "EV-a7e14985b924b464",
+          "date": "2026-06-25",
+          "title": "Illumine 获 Prime Venture Partners 领投的 250 万美元种子轮融资 - Startup Rise Asia",
+          "amount": "$2.5 Million",
+          "source_refs": [
+            "SA-8dbe0e8f19bfa626"
+          ]
+        },
+        {
+          "event_id": "EV-e7dcecaed5a0ee5b",
+          "date": "2026-06-24",
+          "title": "JustAI 获1700万美元A轮融资，打造智能营销平台",
+          "amount": "$17 million",
+          "source_refs": [
+            "SA-880bf76d050f1840"
+          ]
+        },
+        {
+          "event_id": "EV-40d196865997025c",
+          "date": "2026-06-13",
+          "title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
+          "amount": "$4.2M",
+          "source_refs": [
+            "SA-192e4b3ffd2e7883"
+          ]
+        },
+        {
+          "event_id": "EV-736404028b8ad33e",
+          "date": "2026-06-04",
+          "title": "FriendliAI 获 2000 万美元融资，重新定义 AI 推理",
+          "amount": "$20M",
+          "source_refs": [
+            "SA-cad8e1d4e57e146d"
+          ]
+        },
+        {
+          "event_id": "EV-44a4e92c03a31ab1",
+          "date": "2026-05-24",
+          "title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
+          "amount": "€64.7 million",
+          "source_refs": [
+            "SA-bb60bd6828830f8f"
+          ]
+        },
+        {
+          "event_id": "EV-3b40ec144e5db22c",
+          "date": "2026-05-22",
+          "title": "Temporal 完成 D 轮融资",
+          "amount": "$300M",
+          "source_refs": [
+            "SA-f9231a61d1967c3a"
+          ]
+        },
+        {
+          "event_id": "EV-c8928410f6c145eb",
+          "date": "2026-05-20",
+          "title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
+          "amount": "$4.3M",
+          "source_refs": [
+            "SA-25066f1830956af8"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-7814afd7c39e886d",
+          "source_url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls",
+          "title": "Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-16T02:39:33.658Z",
+          "content_hash": "bf887bd5437c51a7",
+          "source_artifact_id": "SA-105f3ca160a84fc9",
+          "raw_id": "RAW-d22201fb2b731af7"
+        },
+        {
+          "source_id": "FISRC-3c23f338e9a9176f",
+          "source_url": "https://www.rime.ai/resources/rime-series-a-announcement",
+          "title": "Rime",
+          "publisher": "rime.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:53:38.560Z",
+          "content_hash": "d609dc9c3caf2e30",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4e390fe10f0d05aa",
+          "source_url": "https://www.unusual.vc/announcing-our-investment-in-rimes-24m-series-a/",
+          "title": "Announcing Our Investment in Rime’s $24M Series A - Unusual",
+          "publisher": "unusual.vc",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:53:40.405Z",
+          "content_hash": "24cca69d6572435e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-bf64aef858152292",
+          "source_url": "https://entrepreneurloop.com/rime-ai-voice-funding-24m-series-a-enterprise-speech/",
+          "title": "Rime AI Voice Funding: $24M to Build Enterprise Speech-to-Speech",
+          "publisher": "entrepreneurloop.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:53:44.622Z",
+          "content_hash": "c698b2b6158dd48c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-823a55431ee598b5",
+          "source_url": "https://techfundingnews.com/rime-lands-24m-to-build-the-chatgpt-of-voice/",
+          "title": "Rime lands $24M to build the ChatGPT of voice — TFN",
+          "publisher": "techfundingnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:53:49.623Z",
+          "content_hash": "4096c248663d945b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:55:04.294Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:55:04.294Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-3ffdd16ef6d6d628",
+      "triggered_by_event_id": "EV-4da1a7c4d527eb69",
+      "as_of_date": "2026-07-16",
+      "company": {
+        "entity_id": "EN-ae1eae1d76e5b7c8",
+        "name": "Adapter",
+        "full_name": "Adapter",
+        "website": "https://www.adapter.com",
+        "summary": "Adapter 是一家位于美国得克萨斯州奥斯汀的初创公司，致力于构建“认知即服务”（Cognition as a Service）基础设施层，旨在帮助用户更好地利用和控制个人及工作数据，供 AI 智能体和应用使用。",
+        "headquarters": "Austin, Texas",
+        "founders": [
+          {
+            "name": "Adam Ghetti",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "Adapter CEO Adam Ghetti didn’t expect to be building another startup"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "David Bader",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "a prominent computer scientist focused on data science, professor David Bader (formerly of Georgia Tech, now at the New Jersey Institute of Technology) and a VC firm that had previously backed him, GV, called his bluff."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "17",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "the startup employs 17 people"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-74e051fb023f526b",
+            "quote": "Based in Austin, Texas, the startup employs 17 people"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "1780万美元",
+        "total_raised": "1780万美元",
+        "announced_at": "2026-07-14",
+        "investors": [
+          {
+            "name": "GV",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bond Partners (BOND旗下早期基金)",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hillspire (Eric Schmidt家族办公室)",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "Eric Schmidt’s family office Hillspire"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Byers Capital",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "Byers Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kevin Patrick Mahaffey基金",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "the funds of former Lookout founder Kevin Patrick Mahaffey"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Shana Fischer基金",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "and Shana Fischer"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Paul Judge",
+            "role": "种子轮个人投资者",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "personal investors including Paul Judge"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Zach Sims",
+            "role": "种子轮个人投资者",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "Zach Sims"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ted Schlein",
+            "role": "种子轮个人投资者",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "Ted Schlein"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-74e051fb023f526b",
+            "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors including Eric Schmidt’s family office Hillspire, Byers Capital, the funds of former Lookout founder Kevin Patrick Mahaffey and Shana Fischer, and personal investors including Paul Judge, Zach Sims and Ted Schlein."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Adapter Mind",
+          "description": "面向开发者的工具和API，允许开发者连接到现有应用并创建新应用，作为AI的认知层，通过知识图谱提供有据可查的个性化答案。",
+          "target_customers": "开发者和技术爱好者",
+          "features": [
+            "连接用户数据并构建持续更新的知识图谱",
+            "提供模型上下文协议（MCP）以接入Codex、Claude Cowork或Cursor等工具",
+            "提供API密钥，可嵌入产品中",
+            "提供带引用来源的细致答案"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Adapter is making available a developer tool and API, called Adapter Mind, intended for developers and tinkerers to start using immediately to connect to existing applications, and to spin up new ones."
+            },
+            {
+              "source_id": "FISRC-95f81a9d87da2248",
+              "quote": "Adapter is the cognition layer for AI. Connect your data — from your life, your business, or your product — and Adapter connects the dots and builds a constantly-improving graph of your world. Ask a hard question and get a nuanced answer with cited sources in seconds."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Adapter Life",
+          "description": "一个面向消费者的示例性工具，构建于Adapter之上，可像超级聊天机器人或智能助手一样运行，通过iMessage或WhatsApp进行交互。",
+          "target_customers": "消费者用户",
+          "features": [
+            "通过iMessage或WhatsApp通信",
+            "作为超级聊天机器人或智能助手运行"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "It’s also shared with test users a consumer-facing harness, called Adapter Life, as an example of a tool that can build upon Adapter to operate like a super-charged chatbot or agentic assistant, communicated with via iMessage or WhatsApp."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Erik Nordlander (GV合伙人)",
+          "industry": "风险投资",
+          "use_case": "使用Adapter对收件箱进行分类，标记其网络中合格的专家和高管，以帮助回答创始人的入站请求。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Erik Nordlander, a general partner at GV who previously backed Ghetti’s last startup, Ionic Security, has used it to triage his inbox. His Adapter flags qualified experts and executives in his network to help answer inbound requests from founders, beyond what he says he can do in LinkedIn."
+            }
+          ]
+        },
+        {
+          "name": "Kevin Patrick Mahaffey (前Lookout创始人)",
+          "industry": "科技/投资",
+          "use_case": "将Adapter用作研究助手，更新地热能源领域的发展动态，并查找使用新型电机的山地电动自行车评测。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Mahaffey, the former Lookout founder and an early backer and user, asks Adapter to serve as a research assistant to update him on any developments in geothermal energy, a current area of focus, as well as for reviews of mountain e-bikes using a new motor he finds promising."
+            }
+          ]
+        },
+        {
+          "name": "Adam Ghetti (Adapter CEO)",
+          "industry": "科技",
+          "use_case": "使用Adapter撰写投资者更新，了解与每位投资者的关系深度；在个人方面，使用Adapter Life了解其孩子的儿科医生就诊信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "He’s also used Adapter to write investor updates that know the depth of his relationship with each investor; on the personal side, Adapter Life (his is called Ghetti Life) knows everything about his kids’ pediatrician visits."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "ChatGPT / Codex",
+          "scenario": "通用AI助手与代码生成",
+          "target_customer": "广大消费者与开发者",
+          "funding_summary": "",
+          "core_difference": "Adapter明确不与OpenAI合作，因其使命围绕信任、透明和数据主权，而OpenAI被认为与此不一致；Adapter不直接访问或训练模型，而是按需向模型实验室分发信息。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Adapter’s CEO says it currently partners with a number of the big labs behind the scenes, but explicitly not OpenAI. (“Our entire mission is built around trust, transparency and sovereignty. OpenAI does not appear well aligned to these,” Ghetti says.)"
+            }
+          ]
+        },
+        {
+          "name": "Anthropic",
+          "product": "Claude Cowork",
+          "scenario": "AI辅助工作与协作",
+          "target_customer": "开发者与企业用户",
+          "funding_summary": "",
+          "core_difference": "Adapter作为认知层与Claude Cowork等工具并存，不替代模型，而是提供记忆、上下文和理解能力；用户通过Adapter访问Anthropic模型时不共享具体数据，仅发送聚合流量。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Users can drop Adapter’s model context protocol, or MCP, into whatever tools they prefer, like OpenAI’s Codex, Anthropic’s Claude Cowork, or Cursor."
+            },
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Adapter users who access models from Anthropic, OpenAI or elsewhere don’t share their specific data with the LLM, Ghetti notes, because Adapter sends the models an aggregate stream of traffic."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "总融资额",
+          "value": "1780万美元",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "has raised $17.8 million in capital to date"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "17人",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "the startup employs 17 people"
+            }
+          ]
+        },
+        {
+          "label": "隐秘开发时长",
+          "value": "3.5年",
+          "observed_at": "2026-07-14",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "after three and a half years of operating in stealth"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Adam Ghetti",
+          "quote": "“It was obvious to us that 10,000 other people were going to go do the content thing,” he says.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "“It was obvious to us that 10,000 other people were going to go do the content thing,” he says."
+            }
+          ]
+        },
+        {
+          "speaker": "Adam Ghetti",
+          "quote": "“We don’t want to produce many things, but the things we produce, we hope will enable a whole new world of new things to do,” he says.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "“We don’t want to produce many things, but the things we produce, we hope will enable a whole new world of new things to do,” he says."
+            }
+          ]
+        },
+        {
+          "speaker": "Adam Ghetti",
+          "quote": "“You should have sovereignty over your coal mine,” he argues.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "“You should have sovereignty over your coal mine,” he argues."
+            }
+          ]
+        },
+        {
+          "speaker": "Kevin Patrick Mahaffey",
+          "quote": "“We need a world with less noise, not one with more,” he argues.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "“We need a world with less noise, not one with more,” he argues."
+            }
+          ]
+        },
+        {
+          "speaker": "Erik Nordlander",
+          "quote": "“I don’t think in OpenAI’s wildest dreams they think you’re going to be doing all of your productivity stuff, and your social stuff, in the model.”",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "“I don’t think in OpenAI’s wildest dreams they think you’re going to be doing all of your productivity stuff, and your social stuff, in the model.”"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "GV",
+            "speaker": "Erik Nordlander",
+            "speaker_role": "GV普通合伙人",
+            "rationale": "认为即使是科技巨头也能在这种基础设施中找到价值，因为用户不会把所有生产力和社交活动都放在单一模型里。",
+            "quote": "“I don’t think in OpenAI’s wildest dreams they think you’re going to be doing all of your productivity stuff, and your social stuff, in the model.”",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74e051fb023f526b",
+                "quote": "“I don’t think in OpenAI’s wildest dreams they think you’re going to be doing all of your productivity stuff, and your social stuff, in the model.”"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“认知即服务”能否成为AI应用的新基础设施层，其价值主张在于通过CPU托管的私有知识图谱实现低成本、高上下文理解与数据主权控制。当前融资所依赖的已验证信号包括：由GV领投的1780万美元种子轮融资、3.5年隐秘研发后推出的开发者工具Adapter Mind、以及早期用户（如GV合伙人和前Lookout创始人）在真实工作流中的使用案例。然而，这些信号仅来自有限的测试用户和投资方背书，尚未有大规模市场采用或第三方收入数据验证。",
+        "validated_signals": [
+          "完成1780万美元种子轮融资，投资方包括GV、Bond Partners、Hillspire等",
+          "经过3.5年隐秘研发，推出面向开发者的Adapter Mind API和工具",
+          "早期用户包括GV合伙人Erik Nordlander和前Lookout创始人Kevin Patrick Mahaffey，用于收件箱分类、投资者更新和研究辅助等具体场景",
+          "声称其知识图谱因使用CPU而非GPU，设置和维护成本远低于模型令牌支出"
+        ],
+        "risks": [
+          "产品定位宽泛且雄心勃勃，可能面临“缺乏杀手级应用”的风险，导致无法落地而失败。",
+          "要求用户将个人和工作数据集中托管，尽管强调加密验证和数据主权，但用户信任建立门槛极高。"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "sector": "AI基础设施/数据主权与认知层"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Adapter Mind",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Adapter is making available a developer tool and API, called Adapter Mind, intended for developers and tinkerers to start using immediately to connect to existing applications, and to spin up new ones."
+            },
+            {
+              "source_id": "FISRC-95f81a9d87da2248",
+              "quote": "Adapter is the cognition layer for AI. Connect your data — from your life, your business, or your product — and Adapter connects the dots and builds a constantly-improving graph of your world. Ask a hard question and get a nuanced answer with cited sources in seconds."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Adapter Life",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "It’s also shared with test users a consumer-facing harness, called Adapter Life, as an example of a tool that can build upon Adapter to operate like a super-charged chatbot or agentic assistant, communicated with via iMessage or WhatsApp."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Adam Ghetti",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Adapter CEO Adam Ghetti didn’t expect to be building another startup"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "David Bader",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "a prominent computer scientist focused on data science, professor David Bader (formerly of Georgia Tech, now at the New Jersey Institute of Technology) and a VC firm that had previously backed him, GV, called his bluff."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GV",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bond Partners (BOND旗下早期基金)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hillspire (Eric Schmidt家族办公室)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Eric Schmidt’s family office Hillspire"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Byers Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Byers Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kevin Patrick Mahaffey基金",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "the funds of former Lookout founder Kevin Patrick Mahaffey"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Shana Fischer基金",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "and Shana Fischer"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Paul Judge",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "personal investors including Paul Judge"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Zach Sims",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Zach Sims"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ted Schlein",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Ted Schlein"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Erik Nordlander (GV合伙人)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Erik Nordlander, a general partner at GV who previously backed Ghetti’s last startup, Ionic Security, has used it to triage his inbox. His Adapter flags qualified experts and executives in his network to help answer inbound requests from founders, beyond what he says he can do in LinkedIn."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Kevin Patrick Mahaffey (前Lookout创始人)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Mahaffey, the former Lookout founder and an early backer and user, asks Adapter to serve as a research assistant to update him on any developments in geothermal energy, a current area of focus, as well as for reviews of mountain e-bikes using a new motor he finds promising."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Adam Ghetti (Adapter CEO)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "He’s also used Adapter to write investor updates that know the depth of his relationship with each investor; on the personal side, Adapter Life (his is called Ghetti Life) knows everything about his kids’ pediatrician visits."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Adapter’s CEO says it currently partners with a number of the big labs behind the scenes, but explicitly not OpenAI. (“Our entire mission is built around trust, transparency and sovereignty. OpenAI does not appear well aligned to these,” Ghetti says.)"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Users can drop Adapter’s model context protocol, or MCP, into whatever tools they prefer, like OpenAI’s Codex, Anthropic’s Claude Cowork, or Cursor."
+            },
+            {
+              "source_id": "FISRC-74e051fb023f526b",
+              "quote": "Adapter users who access models from Anthropic, OpenAI or elsewhere don’t share their specific data with the LLM, Ghetti notes, because Adapter sends the models an aggregate stream of traffic."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-4da1a7c4d527eb69",
+          "date": "2026-07-14",
+          "title": "独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力",
+          "amount": "$17.8M",
+          "source_refs": [
+            "SA-bc0b88961140eb54"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-74e051fb023f526b",
+          "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
+          "title": "独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-16T02:39:33.837Z",
+          "content_hash": "c4b4aec73019eeb8",
+          "source_artifact_id": "SA-bc0b88961140eb54",
+          "raw_id": "RAW-159bc9184a9b4084"
+        },
+        {
+          "source_id": "FISRC-95f81a9d87da2248",
+          "source_url": "https://www.linkedin.com/posts/adaptergroup_adapter-blog-activity-7482827072910852096-Xn9r",
+          "title": "AI knows the world's common knowledge. But you are not common. | Adapter",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:54:05.529Z",
+          "content_hash": "fa5b8fcb6de57585",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:55:03.702Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:55:03.702Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-f9af3dfc3109f5ee",
+      "triggered_by_event_id": "EV-9046a75f19913ca5",
+      "as_of_date": "2026-07-16",
+      "company": {
+        "entity_id": "EN-df877645404747cb",
+        "name": "Oak",
+        "full_name": "Oak",
+        "website": "",
+        "summary": "以色列初创公司Oak，正在构建一个统一的控制平面，用于治理整个组织内的身份，涵盖人类用户、机器身份、服务账户和AI智能体，定位为AI原生的身份与访问管理替代方案。",
+        "headquarters": "Tel Aviv, Israel",
+        "founders": [
+          {
+            "name": "Shai Morag",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-88cec30382296a0c",
+                "quote": "Co-founded by serial entrepreneur Shai Morag"
+              },
+              {
+                "source_id": "FISRC-71f2f6c539ed68d8",
+                "quote": "Shai Morag, co-founder and CEO, Oak"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tal Marom",
+            "role": "联合创始人兼首席产品官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-88cec30382296a0c",
+                "quote": "Oak's other co-founder, chief product officer Tal Marom"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "50人",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "While in stealth, the two also built a team of 50 people"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-88cec30382296a0c",
+            "quote": "Israeli startup Oak is stepping out of stealth to fill, it says."
+          },
+          {
+            "source_id": "FISRC-71f2f6c539ed68d8",
+            "quote": "Tel Aviv, Israel-based Oak"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$60 million",
+        "total_raised": "$60 million",
+        "announced_at": "2026-07-15",
+        "investors": [
+          {
+            "name": "AlphaDrive Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-88cec30382296a0c",
+                "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hetz Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-88cec30382296a0c",
+                "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "天使投资人",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-88cec30382296a0c",
+                "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-88cec30382296a0c",
+            "quote": "backed by $60 million in seed funding that it raised late last year"
+          },
+          {
+            "source_id": "FISRC-4f7729f74a79734a",
+            "quote": "Oak came out of stealth July 15 backed by $60 million in funding"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "统一身份控制平面",
+          "description": "一个AI原生的身份治理平台，通过AI连接器框架持续收集用户活动、权限、应用访问和身份关系等详细信息，实现持续风险评估、自动化权限回收和全面可见性，统一管理人类用户、机器身份、服务账户和AI智能体。",
+          "target_customers": "企业客户，尤其是CISO和IAM领导者",
+          "features": [
+            "AI连接器框架，将应用权限映射到实际使用情况并实时移除不再需要的权限",
+            "持续风险评估与自动化，而非仅依赖定期审查",
+            "统一管理人类、服务账户和AI智能体身份",
+            "AI辅助开发将连接器创建时间从数月缩短至数小时",
+            "AI智能体框架作为力量倍增器，自动发现风险并移除运营负担"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "building a unified control plane that governs identity across an organization"
+            },
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "an AI connector framework that maps access to actual app usage and removes permissions that are no longer needed in real time, rather than only during periodic reviews"
+            },
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "Oak instead is building an AI-native platform designed around continuous risk assessment, automation and comprehensive visibility that's capable of managing human users, machine identities, service accounts and AI agents through a unified approach."
+            },
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "AI-assisted development reduces connector creation from months to hours"
+            },
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "We also built a framework of AI agents that work for you as a force multiplier"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "SailPoint",
+          "product": "传统身份治理平台",
+          "scenario": "企业身份治理与访问管理",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "Oak是AI原生平台，设计围绕持续风险评估、自动化和全面可见性；SailPoint是Oak最常见的竞品之一，属于传统身份治理平台。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "Morag says SailPoint and Saviynt are Oak's most common competitors"
+            }
+          ]
+        },
+        {
+          "name": "Saviynt",
+          "product": "传统身份治理平台",
+          "scenario": "企业身份治理与访问管理",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "Oak是AI原生平台，设计围绕持续风险评估、自动化和全面可见性；Saviynt是Oak最常见的竞品之一，属于传统身份治理平台。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "Morag says SailPoint and Saviynt are Oak's most common competitors"
+            }
+          ]
+        },
+        {
+          "name": "Veza",
+          "product": "身份安全平台",
+          "scenario": "企业身份治理与访问管理",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "Veza是在生成式AI兴起之前进入市场的新厂商，但仍面临与传统平台类似的架构限制；Oak是AI原生平台，设计围绕持续风险评估、自动化和全面可见性。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "newer vendors entering the market before the rise of generative AI like Veza continue to face many of the same architectural limitations as legacy platforms"
+            }
+          ]
+        },
+        {
+          "name": "Okta",
+          "product": "身份与访问管理平台",
+          "scenario": "企业身份与访问管理",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "Okta和Auth0是围绕人类登录构建的IAM平台，不适用于智能体到智能体和智能体到系统的权限管理；Oak是专为AI智能体构建的身份基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f7729f74a79734a",
+              "quote": "identity and access-management platforms like Okta and Auth0 were built around the assumption of a human logging in with credentials, MFA and role-based permissions tied to a person"
+            }
+          ]
+        },
+        {
+          "name": "Microsoft",
+          "product": "Entra ID",
+          "scenario": "企业身份与访问管理",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "Microsoft Entra ID是围绕人类登录构建的IAM平台，不适用于智能体到智能体和智能体到系统的权限管理；Oak是专为AI智能体构建的身份基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f7729f74a79734a",
+              "quote": "Okta, Auth0's parent Okta, and Microsoft's Entra ID all have the distribution and enterprise relationships to bolt agent-identity features onto their existing platforms"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "种子轮融资金额",
+          "value": "$60 million",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "backed by $60 million in seed funding"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "50人",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "While in stealth, the two also built a team of 50 people"
+            }
+          ]
+        },
+        {
+          "label": "创始人此前公司退出数量",
+          "value": "3次",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "he had three exits, including selling cyber startup Secdo to Palo Alto Networks in 2018"
+            }
+          ]
+        },
+        {
+          "label": "Ermetic收购金额",
+          "value": "$265 million",
+          "observed_at": "2023-10",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "Tenable acquired his cloud identity and security startup Ermetic for $265 million in 2023"
+            }
+          ]
+        },
+        {
+          "label": "产品开发前访谈的CISO和IAM领导者数量",
+          "value": "100位",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "the startup spent months talking to 100 CISOs and IAM leaders before building its product"
+            }
+          ]
+        },
+        {
+          "label": "创始人网络安全从业年限",
+          "value": "超过20年",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "Morag, a former army major who spent more than two decades in cybersecurity"
+            }
+          ]
+        },
+        {
+          "label": "AI辅助开发将连接器创建时间缩短至",
+          "value": "从数月到数小时",
+          "observed_at": "2026-07-16",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "AI-assisted development reduces connector creation from months to hours"
+            }
+          ]
+        },
+        {
+          "label": "Secdo收购金额",
+          "value": "$82.7 million",
+          "observed_at": "2018-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "Morag sold endpoint detection and response startup Secdo to Palo Alto Networks in April 2018 for $82.7 million"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Shai Morag",
+          "quote": "Our vision is to be born as a giant",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "Our vision is to be born as a giant"
+            }
+          ]
+        },
+        {
+          "speaker": "Shai Morag",
+          "quote": "I will go big or go home",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "I will go big or go home"
+            }
+          ]
+        },
+        {
+          "speaker": "Andrei Brasoveanu",
+          "quote": "I knew he had it in him to build another company, but this time even bigger and even better.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "I knew he had it in him to build another company, but this time even bigger and even better."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI智能体身份治理作为一个独立的新品类，而非现有IAM厂商的功能附加。6000万美元的种子轮融资规模远超历史标准，表明投资者认为智能体身份需要专用基础设施，而非在Okta或Auth0等现有平台上修补。已验证信号包括：产品已正式发布并部署于企业客户；创始人有三次成功退出记录，包括将Ermetic以2.65亿美元出售给Tenable；团队在隐身期间已与100位CISO和IAM领导者进行产品验证。判断的证据边界在于：客户名称未披露，无法验证企业部署的深度和广度；现有IAM巨头Okta、Microsoft拥有分销渠道和企业关系，可能在两个季度内推出竞争功能。",
+        "validated_signals": [
+          "产品已正式发布并部署于企业客户",
+          "创始人有三次成功退出记录，包括将Ermetic以2.65亿美元出售给Tenable",
+          "团队在隐身期间已与100位CISO和IAM领导者进行产品验证",
+          "AI辅助开发将连接器创建时间从数月缩短至数小时，形成技术护城河"
+        ],
+        "risks": [
+          "Okta、Microsoft Entra ID等现有IAM巨头拥有分销渠道和企业关系，可能在未来两个季度内推出智能体身份功能，压缩Oak的市场窗口",
+          "客户名称未披露，无法验证企业部署的深度和广度，产品市场匹配度尚未被公开证实",
+          "身份管理领域供应商锁定程度深，新进入者需要克服企业客户的高转换成本"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI智能体身份与访问管理基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "统一身份控制平面",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "building a unified control plane that governs identity across an organization"
+            },
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "an AI connector framework that maps access to actual app usage and removes permissions that are no longer needed in real time, rather than only during periodic reviews"
+            },
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "Oak instead is building an AI-native platform designed around continuous risk assessment, automation and comprehensive visibility that's capable of managing human users, machine identities, service accounts and AI agents through a unified approach."
+            },
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "AI-assisted development reduces connector creation from months to hours"
+            },
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "We also built a framework of AI agents that work for you as a force multiplier"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Shai Morag",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "Co-founded by serial entrepreneur Shai Morag"
+            },
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "Shai Morag, co-founder and CEO, Oak"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Tal Marom",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "Oak's other co-founder, chief product officer Tal Marom"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "AlphaDrive Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hetz Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "天使投资人",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-88cec30382296a0c",
+              "quote": "with participation from AlphaDrive Ventures, Hetz Ventures, and angel investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "SailPoint",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "Morag says SailPoint and Saviynt are Oak's most common competitors"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Saviynt",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "Morag says SailPoint and Saviynt are Oak's most common competitors"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Veza",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-71f2f6c539ed68d8",
+              "quote": "newer vendors entering the market before the rise of generative AI like Veza continue to face many of the same architectural limitations as legacy platforms"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Okta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f7729f74a79734a",
+              "quote": "identity and access-management platforms like Okta and Auth0 were built around the assumption of a human logging in with credentials, MFA and role-based permissions tied to a person"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Microsoft",
+          "canonical_entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4f7729f74a79734a",
+              "quote": "Okta, Auth0's parent Okta, and Microsoft's Entra ID all have the distribution and enterprise relationships to bolt agent-identity features onto their existing platforms"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-9046a75f19913ca5",
+          "date": "2026-07-15",
+          "title": "获得6000万美元融资，Oak走出隐身模式，欲解决AI智能体加剧的身份混乱问题",
+          "amount": "$60 million",
+          "source_refs": [
+            "SA-9c7ee203b7e8266c"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-88cec30382296a0c",
+          "source_url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/",
+          "title": "获得6000万美元融资，Oak走出隐身模式，欲解决AI智能体加剧的身份混乱问题",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-16T02:39:33.489Z",
+          "content_hash": "c175c57e420a1b4c",
+          "source_artifact_id": "SA-9c7ee203b7e8266c",
+          "raw_id": "RAW-7f7827604ca68599"
+        },
+        {
+          "source_id": "FISRC-4f7729f74a79734a",
+          "source_url": "https://valueaddvc.com/pulse/oak-60m-ai-agent-identity-2026",
+          "title": "Oak Raises $60M to Fix AI Agent Identity | Value Add Pulse",
+          "publisher": "valueaddvc.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:18.886Z",
+          "content_hash": "d430980f71914b3f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-71f2f6c539ed68d8",
+          "source_url": "https://www.inforisktoday.eu/oak-lands-60m-seed-to-reinvent-identity-governance-ai-a-32248",
+          "title": "Oak Lands $60M Seed to Reinvent Identity Governance With AI",
+          "publisher": "inforisktoday.eu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:34.366Z",
+          "content_hash": "53ffa7f9b1f42ac0",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:54:00.287Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:54:00.287Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-516531801f5798bd",
+      "triggered_by_event_id": "EV-1a6688afdfd108ef",
+      "as_of_date": "2026-07-16",
+      "company": {
+        "entity_id": "EN-026c3bd4be5b91f3",
+        "name": "Emergent",
+        "full_name": "Emergent",
+        "website": "https://emergent.sh",
+        "summary": "Emergent是一家AI软件创建平台提供商，允许用户通过自主AI智能体构建全栈、生产就绪的应用程序，目标客户为寻求创业的企业家以及传统上依赖邮件、电子表格和通讯应用运营的中小企业。",
+        "headquarters": "San Francisco, CA",
+        "founders": [
+          {
+            "name": "Mukund Jha",
+            "role": "联合创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-07d25b80d4335f93",
+                "quote": "Emergent co-founder and chief executive Mukund Jha"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Madhav Jha",
+            "role": "联合创始人兼首席技术官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-07d25b80d4335f93",
+                "quote": "Jha started Emergent with his brother Madhav Jha (CTO) in June last year."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约200人",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "Emergent has about 200 employees"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-38a009e65abe6187",
+            "quote": "Emergent, a San Francisco, CA-based provider of an AI software creation platform"
+          },
+          {
+            "source_id": "FISRC-07d25b80d4335f93",
+            "quote": "Emergent is looking to gain a share of this crowded market by targeting entrepreneurs looking to start new businesses and small and medium-sized companies that have traditionally relied on email, spreadsheets, and messaging apps to run their operations."
+          }
+        ]
+      },
+      "financing": {
+        "round": "C轮",
+        "amount": "1.3亿美元",
+        "total_raised": "2.3亿美元",
+        "announced_at": "2026-07-15",
+        "investors": [
+          {
+            "name": "Creaegis",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-07d25b80d4335f93",
+                "quote": "The funding round was led by private equity firm Creaegis."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-07d25b80d4335f93",
+            "quote": "Indian AI coding startup Emergent has raised $130 million in a Series C funding round at a $1.5 billion post-money valuation, a five-fold jump in six months."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Emergent平台",
+          "description": "一个允许用户通过自主AI智能体创建全栈、生产就绪应用程序的平台，这些智能体像完整的开发团队一样端到端地设计、构建、测试和扩展软件。",
+          "target_customers": "寻求创业的企业家、中小企业主、无技术背景的用户",
+          "features": [
+            "全栈Web和移动应用构建",
+            "自主AI智能体驱动开发",
+            "处理部署、托管、测试和调试",
+            "支持CRM、ERP、内部工具、客户门户等应用类型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-38a009e65abe6187",
+              "quote": "Emergent provides a platform that allows to create full-stack, production-ready applications using autonomous AI agents, working like full development teams that design, build, test, and scale software end to end."
+            },
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "non-technical users need a platform that handles deployment, hosting, testing, and debugging alongside the work of programming."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "某卡车运输公司",
+          "industry": "物流运输",
+          "use_case": "构建用于追踪货运的软件",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "Customers include trucking companies building software to track shipments"
+            }
+          ]
+        },
+        {
+          "name": "某工厂",
+          "industry": "制造业",
+          "use_case": "未明确说明",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "factories"
+            }
+          ]
+        },
+        {
+          "name": "某建筑企业",
+          "industry": "建筑",
+          "use_case": "创建企业资源规划系统",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "construction businesses creating enterprise resource planning systems"
+            }
+          ]
+        },
+        {
+          "name": "某物业管理公司",
+          "industry": "房地产",
+          "use_case": "开发内部客户管理工具",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "property managers developing internal customer management tools"
+            }
+          ]
+        },
+        {
+          "name": "某美国酒店公司",
+          "industry": "酒店",
+          "use_case": "构建定制化工作追踪系统以替代Jira，管理100余人产品团队的发布流程",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cd9ac8be26effd6",
+              "quote": "For a US-based hospitality company with nearly 4,800 employees, the pressure to ship reliable, guest-facing product features quickly and without gaps was constant."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "年化经常性收入",
+          "value": "1.2亿美元",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "Jha said the startup has reached an annual run-rate revenue of $120 million, up 70% in the last four months"
+            }
+          ]
+        },
+        {
+          "label": "付费客户数",
+          "value": "超过20万",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "has more than 200,000 paying customers"
+            }
+          ]
+        },
+        {
+          "label": "平台累计构建应用数",
+          "value": "超过1200万",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-38a009e65abe6187",
+              "quote": "Since launch, more than 12 million applications have been built on Emergent by users globally"
+            }
+          ]
+        },
+        {
+          "label": "无编程经验的用户占比",
+          "value": "70%",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8ccec94955b7cc4c",
+              "quote": "70% of its users have no prior coding experience"
+            }
+          ]
+        },
+        {
+          "label": "欧洲市场收入占比",
+          "value": "约三分之一",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "Europe makes up another third"
+            }
+          ]
+        },
+        {
+          "label": "印度市场收入占比",
+          "value": "约8%至9%",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "India accounts for about 8% to 9%."
+            }
+          ]
+        },
+        {
+          "label": "估值六个月增长倍数",
+          "value": "5倍",
+          "observed_at": "2026-07-15",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "a five-fold jump in six months"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Mukund Jha",
+          "quote": "The real impact of the AI revolution will be a complete democratization of who gets to build what software, where they get to build it, and how much it costs.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1a7a88592da3edb9",
+              "quote": "The real impact of the AI revolution will be a complete democratization of who gets to build what software, where they get to build it, and how much it costs."
+            }
+          ]
+        },
+        {
+          "speaker": "Mukund Jha",
+          "quote": "design remains a weakness, pointing out that many websites built using AI tools tend to look similar.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "Jha acknowledged that design remains a weakness, pointing out that many websites built using AI tools tend to look similar."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“非技术用户的生产级应用构建平台”这一品类能否从原型工具升级为中小企业运营基础设施。本轮1.5亿美元估值较6个月前增长5倍，验证信号包括：年化经常性收入达1.2亿美元且4个月内增长70%、超过20万付费客户、1200万应用构建量、70%用户无编程经验。这些指标表明Emergent已跨越产品市场匹配阶段，进入规模化收入增长期。但判断的证据边界受限于：来源未披露毛利率、净收入留存率或客户流失率，无法评估收入质量；设计同质化被CEO承认为弱点，可能限制企业级客户的长期留存。",
+        "validated_signals": [
+          "年化经常性收入1.2亿美元，4个月内增长70%",
+          "超过20万付费客户",
+          "平台累计构建超过1200万应用",
+          "70%用户无编程经验，验证了非技术用户市场的真实需求",
+          "估值6个月内从3亿美元增长至15亿美元，增长5倍"
+        ],
+        "risks": [
+          "设计同质化问题：CEO承认使用AI工具构建的网站往往外观相似，这可能削弱企业客户对品牌差异化的需求，限制高端市场的拓展。",
+          "竞争激烈且巨头环伺：AI编程赛道已有Replit、Cursor、Lovable等初创公司，以及OpenAI Codex、Anthropic Claude Code等来自AI实验室的产品，Emergent需要在非技术用户细分市场建立足够宽的护城河。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI编程与无代码开发平台"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Emergent平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-38a009e65abe6187",
+              "quote": "Emergent provides a platform that allows to create full-stack, production-ready applications using autonomous AI agents, working like full development teams that design, build, test, and scale software end to end."
+            },
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "non-technical users need a platform that handles deployment, hosting, testing, and debugging alongside the work of programming."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mukund Jha",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "Emergent co-founder and chief executive Mukund Jha"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Madhav Jha",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "Jha started Emergent with his brother Madhav Jha (CTO) in June last year."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Creaegis",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "The funding round was led by private equity firm Creaegis."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "某卡车运输公司",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "Customers include trucking companies building software to track shipments"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "某工厂",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "factories"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "某建筑企业",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "construction businesses creating enterprise resource planning systems"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "某物业管理公司",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07d25b80d4335f93",
+              "quote": "property managers developing internal customer management tools"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "某美国酒店公司",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6cd9ac8be26effd6",
+              "quote": "For a US-based hospitality company with nearly 4,800 employees, the pressure to ship reliable, guest-facing product features quickly and without gaps was constant."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-1a6688afdfd108ef",
+          "date": "2026-07-15",
+          "title": "印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元",
+          "amount": "$130M",
+          "source_refs": [
+            "SA-04aa7c08809b24ee"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-07d25b80d4335f93",
+          "source_url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch",
+          "title": "印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-16T02:39:33.401Z",
+          "content_hash": "27b672d0df3a3b27",
+          "source_artifact_id": "SA-04aa7c08809b24ee",
+          "raw_id": "RAW-f3c5ec1a0f57cab9"
+        },
+        {
+          "source_id": "FISRC-38a009e65abe6187",
+          "source_url": "https://www.finsmes.com/2026/07/emergent-raises-130m-in-series-c-funding-at-1-5-billion-valuation.html",
+          "title": "Emergent Raises $130M in Series C Funding, at $1.5 Billion Valuation",
+          "publisher": "finsmes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:52:16.572Z",
+          "content_hash": "92481ea1f8c85903",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1a7a88592da3edb9",
+          "source_url": "https://emergent.sh/news/emergent-now-a-unicorn-at-1-5-billion-valuation",
+          "title": "Emergent Is Now a Unicorn: We Raised $130M in Our Series C at a $1.5B Valuation",
+          "publisher": "emergent.sh",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:55.379Z",
+          "content_hash": "26d7922028b675b3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6cd9ac8be26effd6",
+          "source_url": "https://emergent.sh/case-studies/how-a-non-technical-pm-built-enterprise-product-tool-with-emergent",
+          "title": "How a Non-Technical PM Used Emergent to Build an Enterprise Product Tool from Scratch",
+          "publisher": "emergent.sh",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:55.875Z",
+          "content_hash": "547ac45c3facb4f4",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8ccec94955b7cc4c",
+          "source_url": "https://www.linkedin.com/posts/y-combinator_emergent-has-raised-130m-in-series-c-funding-activity-7483188700038725633-s_dv",
+          "title": "Emergent Raises $130M in Series C Funding at $1.5B Valuation | Y Combinator posted on the topic | LinkedIn",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:52:57.007Z",
+          "content_hash": "473c57b7954d77ac",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:53:43.565Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:53:43.565Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-7629e68ffced6448",
+      "triggered_by_event_id": "EV-34255348e97ca5fe",
+      "as_of_date": "2026-07-16",
+      "company": {
+        "entity_id": "EN-37a54e5c414654d8",
+        "name": "Orthogonal",
+        "full_name": "Orthogonal",
+        "website": "orthogonal.com",
+        "summary": "Orthogonal 正在构建面向 AI 代理的发现、编排与支付层，使代理能够实时发现所需能力、编排工作流并完成支付，从而自主完成复杂任务。",
+        "headquarters": "San Francisco, California",
+        "founders": [
+          {
+            "name": "Christian Pickett",
+            "role": "Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2536493387c26797",
+                "quote": "The company was founded by Christian Pickett and Bera Sogut"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bera Sogut",
+            "role": "Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2536493387c26797",
+                "quote": "The company was founded by Christian Pickett and Bera Sogut"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "2",
+          "observed_at": "2026-06-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3da6960c55e1c71b",
+              "quote": "Orthogonal is a San Francisco startup founded in 2025 by Christian Pickett and Bera Sogut. Two employees."
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2536493387c26797",
+            "quote": "Orthogonal ( orthogonal.com ), a YC W26 startup building a unified API and payments layer for AI agents"
+          },
+          {
+            "source_id": "FISRC-92a39db011d9c07b",
+            "quote": "Orthogonal, a San Francisco, California-based developer of a discovery, orchestration, and payments layer for AI agents"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$4.3M",
+        "total_raised": "$4.3M",
+        "announced_at": "2026-06-23",
+        "investors": [
+          {
+            "name": "Pantera Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2536493387c26797",
+                "quote": "has raised $4.3M in seed funding from Pantera Capital"
+              },
+              {
+                "source_id": "FISRC-92a39db011d9c07b",
+                "quote": "The round was led by Pantera Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Blast",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-92a39db011d9c07b",
+                "quote": "The round was led by Pantera Capital, with participation from Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, and Surreal."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-2536493387c26797",
+            "quote": "Orthogonal Raises $4.3M to Build the API Layer for AI Agents"
+          },
+          {
+            "source_id": "FISRC-92a39db011d9c07b",
+            "quote": "Orthogonal Raises $4.3M in Seed Funding"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Orthogonal API 网关与支付层",
+          "description": "为 AI 代理提供统一的 API 发现、访问和支付网关，使代理无需单独管理凭证、账户或订阅即可按需调用数百个 API，并按使用量付费。",
+          "target_customers": "AI 代理开发者、AI 原生初创公司、GTM 团队",
+          "features": [
+            "统一 API 发现与访问",
+            "按使用量付费，无需订阅或销售沟通",
+            "支持 MCP 服务器和 SDK 集成",
+            "支持传统法币、x402 和 MPP 等多种支付通道",
+            "单一密钥替代数十个 API 密钥"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2536493387c26797",
+              "quote": "Orthogonal acts as a single gateway that lets agents discover, access, and pay for hundreds of APIs without separate credentials or subscriptions."
+            },
+            {
+              "source_id": "FISRC-862ff99ecf94c4dd",
+              "quote": "Orthogonal offers developers a unified SDK, API, MCP, and CLI that connects agents to internet services through a single integration."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Runtype",
+          "industry": "AI 产品平台",
+          "use_case": "将 Orthogonal API 作为原生工具集成到 Runtype 平台中，使开发者无需管理密钥即可在构建 AI 工作流时调用 100 多个 API。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6212a447f2392519",
+              "quote": "Orthogonal APIs are now available as native tools inside Runtype, so any flow or agent can access 100+ APIs without managing keys, vendor accounts, or billing for each one."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Fetch.ai",
+          "product": "Fetch.ai 代理代币经济",
+          "scenario": "代理间自主通信与交易",
+          "target_customer": "去中心化代理经济参与者",
+          "funding_summary": "",
+          "core_difference": "Fetch.ai 运营一个包含代理间通信的完整代币经济生态，而 Orthogonal 聚焦于 API 发现与支付这一更窄的层面，充当代理经济的商户记录功能。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3da6960c55e1c71b",
+              "quote": "Fetch.ai, now part of the ASI Alliance with SingularityNET and Ocean Protocol, already operates a live token economy centered on agent-to-agent interactions."
+            },
+            {
+              "source_id": "FISRC-3da6960c55e1c71b",
+              "quote": "It is not building agent-to-agent communication. It is building the API discovery and payment layer - the merchant-of-record function for agent economies."
+            }
+          ]
+        },
+        {
+          "name": "Agent2Agent (Linux Foundation)",
+          "product": "Agent2Agent 协议",
+          "scenario": "代理间通信的开放标准框架",
+          "target_customer": "AI 代理开发者",
+          "funding_summary": "",
+          "core_difference": "Agent2Agent 提供代理间通信的开放标准协议，而 Orthogonal 构建的是 API 发现与支付层，不涉及代理间通信协议。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3da6960c55e1c71b",
+              "quote": "The Linux Foundation launched the Agent2Agent protocol in June 2025, providing an open-standard framework for agent communication."
+            },
+            {
+              "source_id": "FISRC-3da6960c55e1c71b",
+              "quote": "It is not building agent-to-agent communication. It is building the API discovery and payment layer"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "已集成 API 合作伙伴数量",
+          "value": "35+",
+          "observed_at": "2026-06-25",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-862ff99ecf94c4dd",
+              "quote": "today supports 35+ APIs that power AI agents and automated workflows"
+            }
+          ]
+        },
+        {
+          "label": "已命名 API 合作伙伴数量",
+          "value": "30+",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2536493387c26797",
+              "quote": "The platform has 30+ named API partners already integrated, including Exa, CrustData, Apollo.io, and AgentMail."
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "2",
+          "observed_at": "2026-06-26",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3da6960c55e1c71b",
+              "quote": "Two employees."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Tim Suzman",
+          "quote": "Orthogonal is a perfect example of making something agents want. Agents won't want to sign up for 50 different APIs, managing accounts and keys and rate limits at each one. They'll want to use Orthogonal. So Orthogonal is agent-pilled, but it's also a marketplace and an abstraction layer over all the things agents may want to do on the internet. We were very excited to back these outlier founders.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2536493387c26797",
+              "quote": "Orthogonal is a perfect example of making something agents want. Agents won't want to sign up for 50 different APIs, managing accounts and keys and rate limits at each one. They'll want to use Orthogonal. So Orthogonal is agent-pilled, but it's also a marketplace and an abstraction layer over all the things agents may want to do on the internet. We were very excited to back these outlier founders."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "本轮融资的核心押注变量是 AI 代理从辅助工具转向自主执行商业交易时，是否需要一套全新的、非人类原生的 API 发现与支付基础设施。Pantera 的领投并非基于当前收入或用户规模，而是直接执行其 2026 年 2 月发布的《代理商业的金融轨道》论文，该论文预测 AI 代理将在 2030 年中介 3 至 5 万亿美元的全球消费商业。Orthogonal 的估值信号尚未公开，但 430 万美元的种子轮规模与两人团队、无公开收入的状态相匹配，投资方的集中度（AI×加密专项基金）表明这是一次高度主题化的早期押注，而非基于广泛市场验证的分散投资。",
+        "validated_signals": [
+          "产品已上线生产环境，支持 35 个以上 API 合作伙伴，包括 Apollo、People Data Labs、Coresignal 等",
+          "已与 Runtype 达成合作，将 Orthogonal API 作为原生工具集成到其 AI 产品平台中",
+          "创始团队具备 Coinbase 支付、Vercel 计费、Google reCAPTCHA 和 Maps API 以及 Amazon Robotics 的复合背景",
+          "已支持多种支付通道，包括传统法币、x402 和 MPP，并正与 Stripe 的 Privy 和 Tempo 团队合作"
+        ],
+        "risks": [
+          "自主代理商业仍处于预测阶段，而非可观测的经济活动流；Pantera 的 3 至 5 万亿美元预测指向 2030 年，距当前仍有四年，市场需求尚未被实际交易量验证。",
+          "团队仅两人，尚无公开收入，产品执行能力与规模化速度存在高度不确定性。",
+          "竞争格局并非空白：Fetch.ai 已运营代理间代币经济，Linux Foundation 的 Agent2Agent 协议提供了开放标准框架，大型平台可能在封闭生态内解决发现、路由和结算问题，削弱开放协议的市场空间。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 代理基础设施与支付"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Orthogonal API 网关与支付层",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2536493387c26797",
+              "quote": "Orthogonal acts as a single gateway that lets agents discover, access, and pay for hundreds of APIs without separate credentials or subscriptions."
+            },
+            {
+              "source_id": "FISRC-862ff99ecf94c4dd",
+              "quote": "Orthogonal offers developers a unified SDK, API, MCP, and CLI that connects agents to internet services through a single integration."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Christian Pickett",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2536493387c26797",
+              "quote": "The company was founded by Christian Pickett and Bera Sogut"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Bera Sogut",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2536493387c26797",
+              "quote": "The company was founded by Christian Pickett and Bera Sogut"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Pantera Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2536493387c26797",
+              "quote": "has raised $4.3M in seed funding from Pantera Capital"
+            },
+            {
+              "source_id": "FISRC-92a39db011d9c07b",
+              "quote": "The round was led by Pantera Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Blast",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-92a39db011d9c07b",
+              "quote": "The round was led by Pantera Capital, with participation from Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, and Surreal."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Runtype",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6212a447f2392519",
+              "quote": "Orthogonal APIs are now available as native tools inside Runtype, so any flow or agent can access 100+ APIs without managing keys, vendor accounts, or billing for each one."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Fetch.ai",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3da6960c55e1c71b",
+              "quote": "Fetch.ai, now part of the ASI Alliance with SingularityNET and Ocean Protocol, already operates a live token economy centered on agent-to-agent interactions."
+            },
+            {
+              "source_id": "FISRC-3da6960c55e1c71b",
+              "quote": "It is not building agent-to-agent communication. It is building the API discovery and payment layer - the merchant-of-record function for agent economies."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Agent2Agent (Linux Foundation)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3da6960c55e1c71b",
+              "quote": "The Linux Foundation launched the Agent2Agent protocol in June 2025, providing an open-standard framework for agent communication."
+            },
+            {
+              "source_id": "FISRC-3da6960c55e1c71b",
+              "quote": "It is not building agent-to-agent communication. It is building the API discovery and payment layer"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-34255348e97ca5fe",
+          "date": "2026-06-27",
+          "title": "Orthogonal 获 430 万美元种子轮融资，用于互联网上的 AI 代理服务发现、编排与支付",
+          "amount": "$4.3 million",
+          "source_refs": [
+            "SA-3361d7570a89b2cd"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-2536493387c26797",
+          "source_url": "https://svpost.com/articles/orthogonal-4-3m-seed/",
+          "title": "Orthogonal 获 430 万美元融资，打造 AI 代理的 API 层 - 《硅谷邮报》",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-16T02:39:33.546Z",
+          "content_hash": "2d2ca8e2cdf1d254",
+          "source_artifact_id": "SA-bef4dc79bc630220",
+          "raw_id": "RAW-feaba180d05afb62"
+        },
+        {
+          "source_id": "FISRC-92a39db011d9c07b",
+          "source_url": "https://www.finsmes.com/2026/06/orthogonal-raises-4-3m-in-seed-funding.html",
+          "title": "Orthogonal Raises $4.3M in Seed Funding",
+          "publisher": "finsmes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:52:18.861Z",
+          "content_hash": "7dde759971f42064",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-3da6960c55e1c71b",
+          "source_url": "https://www.ainvest.com/news/pantera-leads-orthogonal-4-3m-seed-thesis-signal-check-size-2606/",
+          "title": "Pantera Leads Orthogonal $4.3M Seed: The Thesis Is the Signal, Not the Check Size",
+          "publisher": "ainvest.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:27.111Z",
+          "content_hash": "2b9bc6b5e256f08e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-862ff99ecf94c4dd",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20260625da88425/orthogonal-raises-43m-seed-for-ai-agent-service-discovery-orchestration-and-payments-across-the-internet",
+          "title": "Orthogonal Raises $4.3M Seed for AI Agent Service ...",
+          "publisher": "morningstar.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:52:28.402Z",
+          "content_hash": "42cec0283b159a1c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6212a447f2392519",
+          "source_url": "https://www.orthogonal.com/blog/runtype-ship-ai-products-across-every-surface",
+          "title": "Runtype: Ship AI Products Across Every Surface · Orthogonal",
+          "publisher": "orthogonal.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:52:35.296Z",
+          "content_hash": "050b5fb05bab62b9",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:53:23.139Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:53:23.139Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-1a6688afdfd108ef",
+      "company_name": "Emergent",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Emergent\" \"$130M\" funding investors round",
+        "\"Emergent\" product customers case study",
+        "\"Emergent\" \"印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元\" competitors product use case",
+        "\"Emergent\" \"$130M\" investor quote why invested",
+        "\"Emergent\" \"$130M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Emergent\" \"$130M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Emergent\" \"$130M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Emergent\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Emergent\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Emergent\" \"印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Emergent\" \"印度AI编程初创公司Emergent获1.3亿美元C轮融资，估值达15亿美元\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Emergent\" \"$130M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Emergent\" \"$130M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Emergent\" \"$130M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Emergent\" \"$130M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:55:04.353Z"
+    },
+    {
+      "event_id": "EV-9046a75f19913ca5",
+      "company_name": "Oak",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Oak\" \"$60 million\" funding investors round",
+        "\"Oak\" product customers case study",
+        "\"Oak\" \"Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse | TechCrunch\" competitors product use case",
+        "\"Oak\" \"$60 million\" investor quote why invested",
+        "\"Oak\" \"$60 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Oak\" \"$60 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Oak\" \"$60 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Oak\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Oak\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Oak\" \"Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse | TechCrunch\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Oak\" \"Backed by $60M in funding, Oak steps out of stealth to fix the identity mess that AI agents are making worse | TechCrunch\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Oak\" \"$60 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Oak\" \"$60 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Oak\" \"$60 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Oak\" \"$60 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:55:04.353Z"
+    },
+    {
+      "event_id": "EV-34255348e97ca5fe",
+      "company_name": "Orthogonal",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Orthogonal\" \"$4.3M\" funding investors round",
+        "\"Orthogonal\" product customers case study",
+        "\"Orthogonal\" \"Orthogonal Raises $4.3M to Build the API Layer for AI Agents - The Silicon Valley Post\" competitors product use case",
+        "\"Orthogonal\" \"$4.3M\" investor quote why invested",
+        "\"Orthogonal\" \"$4.3M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Orthogonal\" \"$4.3M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Orthogonal\" \"$4.3M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Orthogonal\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Orthogonal\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Orthogonal\" \"Orthogonal Raises $4.3M to Build the API Layer for AI Agents - The Silicon Valley Post\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Orthogonal\" \"Orthogonal Raises $4.3M to Build the API Layer for AI Agents - The Silicon Valley Post\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Orthogonal\" \"$4.3M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Orthogonal\" \"$4.3M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Orthogonal\" \"$4.3M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Orthogonal\" \"$4.3M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:55:04.353Z"
+    },
+    {
+      "event_id": "EV-64fb6d791e19d10a",
+      "company_name": "Rime",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Rime\" \"$24M\" funding investors round",
+        "\"Rime\" product customers case study",
+        "\"Rime\" \"Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI\" competitors product use case",
+        "\"Rime\" \"$24M\" investor quote why invested",
+        "\"Rime\" \"$24M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Rime\" \"$24M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Rime\" \"$24M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Rime\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Rime\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Rime\" \"Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Rime\" \"Rime 获 2400 万美元 A 轮融资，用自建录音棚数据训练企业语音 AI\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Rime\" \"$24M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Rime\" \"$24M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Rime\" \"$24M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Rime\" \"$24M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:55:04.353Z"
+    },
+    {
+      "event_id": "EV-4da1a7c4d527eb69",
+      "company_name": "Adapter",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Adapter\" \"$17.8M\" funding investors round",
+        "\"Adapter\" product customers case study",
+        "\"Adapter\" \"Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools\" competitors product use case",
+        "\"Adapter\" \"$17.8M\" investor quote why invested",
+        "\"Adapter\" \"$17.8M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Adapter\" \"$17.8M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Adapter\" \"$17.8M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Adapter\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Adapter\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Adapter\" \"Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Adapter\" \"Exclusive: Startup Adapter Launches With $17.8M To Bring New 'Cognition' To AI Tools\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Adapter\" \"$17.8M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Adapter\" \"$17.8M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Adapter\" \"$17.8M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Adapter\" \"$17.8M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:55:04.353Z"
+    }
+  ]
+}

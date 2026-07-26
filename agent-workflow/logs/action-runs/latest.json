@@ -1,47 +1,51 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-26T14:17:11.564Z",
+  "generated_at": "2026-07-26T15:27:54.746Z",
   "date": "2026-07-26",
   "action": "Funding Insights historical data conversion",
   "action_status": "current",
   "record_level": "required",
   "trigger": "historical_backfill",
-  "status": "partial",
-  "summary": "Published 5 accepted historical Funding Insight cards from 6 processed unique events; one event remained blocked and the external full-range runner ended before later dates.",
+  "status": "success",
+  "summary": "Completed the 2026-05-20 through 2026-07-26 unique-event backfill: 246 verified funding events became 203 fail-closed public cards; 43 unresolved events remain blocked and none are pending.",
   "contexts": [],
   "changed_files": [
-    "01-SiteV2/content/12-applications/funding-insights/2026-05-20.json",
-    "01-SiteV2/content/12-applications/funding-insights/2026-05-22.json",
+    "01-SiteV2/content/12-applications/funding-insights/*.json",
     "01-SiteV2/site/data/funding-insights-v1.json",
-    "agent-workflow/tools/backfill-funding-insights-history.mjs",
+    "agent-workflow/reports/funding-insight-historical-backfill-current.json",
+    "agent-workflow/tools/funding-insight-v1-utils.mjs",
     "agent-workflow/tools/generate-funding-insights-deepseek.mjs",
-    "agent-workflow/skills/guanlan-funding-insight-generator/SKILL.md"
+    "agent-workflow/tools/tests/funding-insight-v1.test.mjs",
+    "context/version-ledger.md"
   ],
   "outputs": [
-    "5 auto-published historical cards",
-    "1 blocked historical event",
-    "8 total public cards"
+    "59 dated bundles",
+    "203 unique public cards",
+    "43 blocked events",
+    "0 pending events",
+    "Skill Store v1.7.0"
   ],
   "checks": [
-    "2026-05-20 assert passed",
-    "2026-05-22 assert passed",
-    "funding tests 7 of 7 passed",
-    "frontstage regression passed",
-    "Skill Ops audit passed",
-    "concurrent backfill dry-run passed"
+    "59 of 59 bundle assertions passed",
+    "funding tests 8 of 8 passed",
+    "frontstage build produced 203 cards",
+    "frontstage regression passed with 0 issues",
+    "203 unique event IDs with 0 duplicates",
+    "Skill validation and Skill Ops passed",
+    "version consistency and current-rule hygiene passed"
   ],
-  "issues": [
-    "Full-range external runner ended before completing 2026-05-23 and later owner dates"
-  ],
+  "issues": [],
   "risks": [
-    "240 unique historical funding events remain unprocessed",
-    "Resume requires external search and model API usage"
+    "43 events remain fail-closed until missing company or funding or investor or product or cited-source evidence is recovered"
   ],
   "lessons": [
-    "Resume without force so accepted cards are reused and blocked or missing events are retried",
-    "Use date concurrency within provider rate limits"
+    "Strip incomplete optional research entries before the hard gate while keeping core funding evidence fail-closed",
+    "Retry without force so accepted cards are reused and only blocked events incur new research"
   ],
-  "reusable_rules": [],
+  "reusable_rules": [
+    "Historical ownership is one unique CanonicalEvent per best-evidence date bundle",
+    "Blocked cards never enter the frontstage projection"
+  ],
   "retired_flags": [],
   "notes": []
 }

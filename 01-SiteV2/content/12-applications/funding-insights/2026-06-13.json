@@ -1,0 +1,5098 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-06-13",
+    "generated_at": "2026-07-26T15:10:47.129Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 6,
+      "auto_published": 6,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-5e7a360baa1c7aca",
+      "triggered_by_event_id": "EV-85506f9f86779a6d",
+      "as_of_date": "2026-06-13",
+      "company": {
+        "entity_id": "EN-c04bd5ebd10ab696",
+        "name": "Mistral AI",
+        "full_name": "Mistral AI",
+        "website": "",
+        "summary": "Mistral AI是一家总部位于巴黎的法国人工智能初创公司，致力于构建前沿大语言模型及开发者平台，提供开源权重模型、托管API及企业级私有化部署方案，定位为欧洲AI主权领域的领军者。",
+        "headquarters": "法国巴黎",
+        "founders": [
+          {
+            "name": "Arthur Mensch",
+            "role": "联合创始人兼首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-69c99e24132a43e4",
+                "quote": "It was founded in 2023 by Arthur Mensch, a former DeepMind researcher, and ex-Meta researchers Timothée Lacroix and Guillaume Lample."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Guillaume Lample",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-69c99e24132a43e4",
+                "quote": "It was founded in 2023 by Arthur Mensch, a former DeepMind researcher, and ex-Meta researchers Timothée Lacroix and Guillaume Lample."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Timothée Lacroix",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-69c99e24132a43e4",
+                "quote": "It was founded in 2023 by Arthur Mensch, a former DeepMind researcher, and ex-Meta researchers Timothée Lacroix and Guillaume Lample."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约350人",
+          "observed_at": "2026-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "The company employs roughly 350 people."
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-69c99e24132a43e4",
+            "quote": "French artificial intelligence startup Mistral AI"
+          },
+          {
+            "source_id": "FISRC-8d74a5f6eac0fc90",
+            "quote": "European vendor Mistral AI"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series C",
+        "amount": "约17亿欧元（约20亿美元）",
+        "total_raised": "约30.2亿美元",
+        "announced_at": "2025-09-09",
+        "investors": [
+          {
+            "name": "ASML",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-69c99e24132a43e4",
+                "quote": "ASML, a crucial supplier of advanced chipmaking equipment, is set to become the top shareholder of French artificial intelligence startup Mistral AI"
+              },
+              {
+                "source_id": "FISRC-8d74a5f6eac0fc90",
+                "quote": "Dutch semiconductor equipment manufacturer ASML Holding NV led the Series C funding round"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nvidia",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8d74a5f6eac0fc90",
+                "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated"
+              },
+              {
+                "source_id": "FISRC-69c99e24132a43e4",
+                "quote": "Mistral, backed by Nvidia, was valued at more than $6 billion after its Series B funding round last year"
+              }
+            ],
+            "entity_id": "EN-8d4321d936320802"
+          },
+          {
+            "name": "General Catalyst",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8d74a5f6eac0fc90",
+                "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Index Ventures",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8d74a5f6eac0fc90",
+                "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Andreessen Horowitz",
+            "role": "既有投资方（种子轮/Series A领投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Mistral AI has raised total funding of $3 B across 4 rounds from notable investors including Andreessen Horowitz, Lightspeed, General Catalyst and ASML."
+              },
+              {
+                "source_id": "FISRC-110f0e95801f33f9",
+                "quote": "Andreessen Horowitz led Mistral's Series A at a $410M valuation."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lightspeed",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Mistral AI has raised total funding of $3 B across 4 rounds from notable investors including Andreessen Horowitz, Lightspeed, General Catalyst and ASML."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Salesforce Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds. The Series C round was led by ASML. Other notable Mistral AI investors include Andreessen Horowitz, Lightspeed, General Catalyst and Salesforce Ventures."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bpifrance",
+            "role": "既有投资方（种子轮）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds."
+              },
+              {
+                "source_id": "FISRC-110f0e95801f33f9",
+                "quote": "Seed €2M Undisclosed Bpifrance, angels Q2 2023"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Microsoft",
+            "role": "既有投资方（Series B参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ce92685289bf3ad",
+                "quote": "Microsoft holds a small convertible note tied to a partnership announced in early 2024."
+              },
+              {
+                "source_id": "FISRC-110f0e95801f33f9",
+                "quote": "Series B $640M €5.8B (~$6.2B) NVIDIA, Microsoft, Salesforce, Samsung, Lightspeed June 2024"
+              }
+            ],
+            "entity_id": "EN-9fbf261b62c1d7c0"
+          },
+          {
+            "name": "Samsung",
+            "role": "既有投资方（Series B参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-110f0e95801f33f9",
+                "quote": "Series B $640M €5.8B (~$6.2B) NVIDIA, Microsoft, Salesforce, Samsung, Lightspeed June 2024"
+              }
+            ],
+            "entity_id": "EN-968e2d5b08687bf4"
+          },
+          {
+            "name": "Cisco",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ce92685289bf3ad",
+                "quote": "Its investor list spans French sovereign capital (Bpifrance), American venture firms (Andreessen Horowitz, General Catalyst, Lightspeed), major industrial corporations (Nvidia, Cisco, IBM, Salesforce Ventures, Samsung)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IBM",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9ce92685289bf3ad",
+                "quote": "Its investor list spans French sovereign capital (Bpifrance), American venture firms (Andreessen Horowitz, General Catalyst, Lightspeed), major industrial corporations (Nvidia, Cisco, IBM, Salesforce Ventures, Samsung)"
+              }
+            ],
+            "entity_id": "EN-916a98f0fa2a39af"
+          },
+          {
+            "name": "SV Angel",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "SV Angel Safe Superintelligence, Together AI, Reflection AI, Humans&, Hippocratic AI"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Elad Gil",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Elad Gil Perplexity AI, Scale AI, Odyssey Systems, Applied Compute, Datology AI"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Eurazeo",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Eurazeo Dataiku, Gradium, Doctolib, Back Market, ContentSquare, wefox, MessageBird"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Headline",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Headline Creditas, Owner.com, Swile, Sorare, Buk, Fetch Rewards, Zeller, Bokksu, Heard"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Samsung Ventures CuspAI, Liner, Audioburst, Swiggy, Animoca, SiFive, d-Matrix, Alchemy, StoreDot"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Latitude",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Latitude Glean, Monzo, Rapyd, Melio, Rain Card, Multiverse, Nothing, Hailo, Zego, Beauty Pie"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sofina",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Sofina Flipkart, BYJU's, Collibra, VerSe Innovation, CRED, Graphcore, Rohlik, Mamaearth"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "LocalGlobe",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "LocalGlobe Sword Health, HiBob, TravelPerk, Melio, Zego, At-Bay, YuLife, Cleo, Beamery, Rossum"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "ServiceNow",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "ServiceNow Scale AI, OpenRouter, Deepgram, DataRobot, Galileo, Genesys, Snyk, Harness"
+              }
+            ],
+            "entity_id": "EN-b5738c169b693bee"
+          },
+          {
+            "name": "EXOR",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "EXOR Crusoe, Alan, Tekion, Cars24, Via Transportation, Dubizzle Group, Chain Reaction"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Korelya Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Korelya Capital Gradium, Bolt, Glovo, Vestiaire Collective, Ledger, Rebellions, Finn, BitFury"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sanabil Investments",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ff92324bbd437a73",
+                "quote": "Sanabil Investments Uniphore, Tamara, Alation, Hala, Caffeine, SingleStore, Nile, Gathern, Acceldata"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "DST Global",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-110f0e95801f33f9",
+                "quote": "Venture Capital a16z, Lightspeed, General Catalyst, DST Global, Index Ventures Early-stage lead and follow-on investors"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-69c99e24132a43e4",
+            "quote": "The Dutch ASML is committing 1.3 billion euros ($1.5 billion) for Mistral's 1.7 billion euro (~$2 billion) fundraise"
+          },
+          {
+            "source_id": "FISRC-8d74a5f6eac0fc90",
+            "quote": "European vendor Mistral AI revealed Tuesday that it raised $2 billion, more than doubling its valuation from $6 billion to $14 billion."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Mistral Large 3",
+          "description": "一个6750亿参数的稀疏混合专家模型，每次查询激活410亿参数，旨在与OpenAI的GPT-4o竞争。",
+          "target_customers": "企业客户",
+          "features": [
+            "混合专家架构",
+            "6750亿总参数",
+            "每次查询激活410亿参数"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Mistral Large 3, a 675-billion-parameter sparse mixture-of-experts model with 41 billion parameters active per query"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Le Chat",
+          "description": "面向消费者和企业的聊天机器人界面，对标ChatGPT。",
+          "target_customers": "消费者及企业用户",
+          "features": [
+            "免费使用层级",
+            "无需API密钥即可体验Mistral Large"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Le Chat is the company's consumer and enterprise chatbot interface."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Mistral Workflows",
+          "description": "企业级编排平台，支持将模型调用链接为多步骤自动化流程，并包含人工审批节点，可部署在客户自有云或本地基础设施中。",
+          "target_customers": "企业客户",
+          "features": [
+            "多步骤自动化流程",
+            "人工审批节点",
+            "支持私有化部署"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Mistral Workflows is the orchestration layer for enterprises chaining model calls into multi-step automated processes, with human-approval gates and deployment flexibility into customers' own cloud or on-premises infrastructure."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "TotalEnergies",
+          "industry": "能源",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5337dadca81efe0d",
+              "quote": "ASML, TotalEnergies, and HSBC are all on the roster"
+            }
+          ]
+        },
+        {
+          "name": "HSBC",
+          "industry": "金融服务",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5337dadca81efe0d",
+              "quote": "ASML, TotalEnergies, and HSBC are all on the roster"
+            }
+          ]
+        },
+        {
+          "name": "France Travail",
+          "industry": "公共服务",
+          "use_case": "使用Mistral Workflows",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Current Workflows customers include France Travail, the French national employment agency"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "GPT-4o",
+          "scenario": "前沿模型API服务",
+          "target_customer": "全球企业及开发者",
+          "funding_summary": "2025年9月，Anthropic完成130亿美元Series F轮融资",
+          "core_difference": "Mistral采用开源与闭源双轨策略，模型定价显著低于OpenAI（如Mistral Medium 3每百万输入token 0.40美元，而Anthropic的Claude Sonnet为3.00美元）；OpenAI则坚持闭源策略。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Mistral Medium 3 is priced at $0.40 per million input tokens; Anthropic's Claude Sonnet, a comparable model in the same performance tier, is priced at $3.00 per million input tokens."
+            },
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "quote": "While Mistral's investment is significant, it pales in comparison with the $13 billion Anthropic raised earlier this month in a Series F round."
+            }
+          ]
+        },
+        {
+          "name": "Anthropic",
+          "product": "Claude Sonnet",
+          "scenario": "前沿模型API服务",
+          "target_customer": "全球企业及开发者",
+          "funding_summary": "2025年9月完成130亿美元Series F轮融资",
+          "core_difference": "Mistral的模型定价远低于Anthropic（Mistral Medium 3每百万输入token 0.40美元，Claude Sonnet为3.00美元），且Mistral提供开源模型选项，而Anthropic仅提供闭源模型。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Mistral Medium 3 is priced at $0.40 per million input tokens; Anthropic's Claude Sonnet, a comparable model in the same performance tier, is priced at $3.00 per million input tokens."
+            },
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "quote": "While Mistral's investment is significant, it pales in comparison with the $13 billion Anthropic raised earlier this month in a Series F round."
+            }
+          ]
+        },
+        {
+          "name": "Google DeepMind",
+          "product": "Gemini系列模型",
+          "scenario": "前沿模型API服务及消费者产品",
+          "target_customer": "全球企业及消费者",
+          "funding_summary": "",
+          "core_difference": "Mistral专注于模型效率、较小语言模型及本地化部署，而Google DeepMind的模型主要运行在美国云平台上，无法从结构上解决欧洲客户的数据驻留和主权要求。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "OpenAI, Anthropic, and Google DeepMind cannot structurally solve that problem because their inference infrastructure runs on American cloud platforms."
+            },
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "quote": "Mistral AI has focused specifically on regulated and financial industries while prioritizing model efficiency and smaller language models, which are often deployed on the edge, in the enterprise or on a device."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "年化经常性收入（ARR）",
+          "value": "约4亿美元",
+          "observed_at": "2026年初",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5337dadca81efe0d",
+              "quote": "Mistral's annual recurring revenue reportedly crossed $400 million in early 2026"
+            }
+          ]
+        },
+        {
+          "label": "2026年收入目标",
+          "value": "超过10亿美元",
+          "observed_at": "2026年底",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5337dadca81efe0d",
+              "quote": "the company has been aiming for annual recurring revenue above $1 billion by the end of 2026"
+            }
+          ]
+        },
+        {
+          "label": "欧洲客户收入占比",
+          "value": "约60%",
+          "observed_at": "2026-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5337dadca81efe0d",
+              "quote": "Around 60 percent of revenue has been reported to come from European clients"
+            }
+          ]
+        },
+        {
+          "label": "债务融资",
+          "value": "8.3亿美元",
+          "observed_at": "2025-11",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5337dadca81efe0d",
+              "quote": "Mistral secured an $830 million debt financing package from a seven-bank consortium"
+            }
+          ]
+        },
+        {
+          "label": "欧洲计算容量目标",
+          "value": "约200兆瓦",
+          "observed_at": "2027年",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5337dadca81efe0d",
+              "quote": "it is targeting roughly 200 megawatts of compute capacity in Europe by 2027"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "约350人",
+          "observed_at": "2026-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "The company employs roughly 350 people."
+            }
+          ]
+        },
+        {
+          "label": "2025年收入",
+          "value": "约1亿美元",
+          "observed_at": "2025年",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-110f0e95801f33f9",
+              "quote": "The company generated an estimated $100 million in revenue in 2025"
+            }
+          ]
+        },
+        {
+          "label": "ASML持股比例",
+          "value": "约11%",
+          "observed_at": "2025-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "ASML took an approximate 11 percent equity stake"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Arthur Mensch",
+          "quote": "Europe had only a short window to avoid deeper dependence on American AI infrastructure.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5337dadca81efe0d",
+              "quote": "Europe had only a short window to avoid deeper dependence on American AI infrastructure."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是欧洲主权AI需求的商业化落地能力。本轮融资估值约117亿欧元（投前），依赖于Mistral已实现的约4亿美元年化经常性收入、60%的欧洲客户收入占比，以及ASML作为战略投资者带来的供应链整合与地缘政治背书。判断的证据边界在于：主权AI采购能否从政策偏好转化为持续的大型企业合同，以及Mistral能否在2026年底前实现10亿美元收入目标。",
+        "validated_signals": [
+          "年化经常性收入在2026年初突破4亿美元，同比增长强劲",
+          "欧洲客户贡献约60%的收入，验证了主权AI的市场需求",
+          "获得ASML 13亿欧元战略投资及11%股权，并进入其客户名单",
+          "客户包括ASML、TotalEnergies、HSBC等大型企业及欧洲政府机构",
+          "计划到2027年在欧洲建成约200兆瓦的计算容量"
+        ],
+        "risks": [
+          "收入高度依赖欧洲市场，若主权AI需求仅为短期政策驱动而非持久采购模式，增长可能放缓",
+          "与OpenAI、Anthropic等美国厂商相比，在模型性能基准测试中不占优势，可能影响全球市场拓展",
+          "大规模基础设施投资（如数据中心建设）带来高额资本支出，若收入增长不及预期将面临现金流压力"
+        ],
+        "related_direction_id": "",
+        "sector": "人工智能基础模型与主权AI基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Mistral Large 3",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Mistral Large 3, a 675-billion-parameter sparse mixture-of-experts model with 41 billion parameters active per query"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Le Chat",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Le Chat is the company's consumer and enterprise chatbot interface."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Mistral Workflows",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Mistral Workflows is the orchestration layer for enterprises chaining model calls into multi-step automated processes, with human-approval gates and deployment flexibility into customers' own cloud or on-premises infrastructure."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Arthur Mensch",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-69c99e24132a43e4",
+              "quote": "It was founded in 2023 by Arthur Mensch, a former DeepMind researcher, and ex-Meta researchers Timothée Lacroix and Guillaume Lample."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Guillaume Lample",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-69c99e24132a43e4",
+              "quote": "It was founded in 2023 by Arthur Mensch, a former DeepMind researcher, and ex-Meta researchers Timothée Lacroix and Guillaume Lample."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Timothée Lacroix",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-69c99e24132a43e4",
+              "quote": "It was founded in 2023 by Arthur Mensch, a former DeepMind researcher, and ex-Meta researchers Timothée Lacroix and Guillaume Lample."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ASML",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-69c99e24132a43e4",
+              "quote": "ASML, a crucial supplier of advanced chipmaking equipment, is set to become the top shareholder of French artificial intelligence startup Mistral AI"
+            },
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "quote": "Dutch semiconductor equipment manufacturer ASML Holding NV led the Series C funding round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia",
+          "canonical_entity_id": "EN-8d4321d936320802",
+          "canonical_name": "NVIDIA",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated"
+            },
+            {
+              "source_id": "FISRC-69c99e24132a43e4",
+              "quote": "Mistral, backed by Nvidia, was valued at more than $6 billion after its Series B funding round last year"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Index Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Mistral AI has raised total funding of $3 B across 4 rounds from notable investors including Andreessen Horowitz, Lightspeed, General Catalyst and ASML."
+            },
+            {
+              "source_id": "FISRC-110f0e95801f33f9",
+              "quote": "Andreessen Horowitz led Mistral's Series A at a $410M valuation."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Mistral AI has raised total funding of $3 B across 4 rounds from notable investors including Andreessen Horowitz, Lightspeed, General Catalyst and ASML."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Salesforce Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds. The Series C round was led by ASML. Other notable Mistral AI investors include Andreessen Horowitz, Lightspeed, General Catalyst and Salesforce Ventures."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bpifrance",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds."
+            },
+            {
+              "source_id": "FISRC-110f0e95801f33f9",
+              "quote": "Seed €2M Undisclosed Bpifrance, angels Q2 2023"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Microsoft",
+          "canonical_entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Microsoft holds a small convertible note tied to a partnership announced in early 2024."
+            },
+            {
+              "source_id": "FISRC-110f0e95801f33f9",
+              "quote": "Series B $640M €5.8B (~$6.2B) NVIDIA, Microsoft, Salesforce, Samsung, Lightspeed June 2024"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung",
+          "canonical_entity_id": "EN-968e2d5b08687bf4",
+          "canonical_name": "Samsung",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-110f0e95801f33f9",
+              "quote": "Series B $640M €5.8B (~$6.2B) NVIDIA, Microsoft, Salesforce, Samsung, Lightspeed June 2024"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cisco",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Its investor list spans French sovereign capital (Bpifrance), American venture firms (Andreessen Horowitz, General Catalyst, Lightspeed), major industrial corporations (Nvidia, Cisco, IBM, Salesforce Ventures, Samsung)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IBM",
+          "canonical_entity_id": "EN-916a98f0fa2a39af",
+          "canonical_name": "IBM",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Its investor list spans French sovereign capital (Bpifrance), American venture firms (Andreessen Horowitz, General Catalyst, Lightspeed), major industrial corporations (Nvidia, Cisco, IBM, Salesforce Ventures, Samsung)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "SV Angel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "SV Angel Safe Superintelligence, Together AI, Reflection AI, Humans&, Hippocratic AI"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Elad Gil",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Elad Gil Perplexity AI, Scale AI, Odyssey Systems, Applied Compute, Datology AI"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Eurazeo",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Eurazeo Dataiku, Gradium, Doctolib, Back Market, ContentSquare, wefox, MessageBird"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Headline",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Headline Creditas, Owner.com, Swile, Sorare, Buk, Fetch Rewards, Zeller, Bokksu, Heard"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Samsung Ventures CuspAI, Liner, Audioburst, Swiggy, Animoca, SiFive, d-Matrix, Alchemy, StoreDot"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Latitude",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Latitude Glean, Monzo, Rapyd, Melio, Rain Card, Multiverse, Nothing, Hailo, Zego, Beauty Pie"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sofina",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Sofina Flipkart, BYJU's, Collibra, VerSe Innovation, CRED, Graphcore, Rohlik, Mamaearth"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "LocalGlobe",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "LocalGlobe Sword Health, HiBob, TravelPerk, Melio, Zego, At-Bay, YuLife, Cleo, Beamery, Rossum"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ServiceNow",
+          "canonical_entity_id": "EN-b5738c169b693bee",
+          "canonical_name": "ServiceNow",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "ServiceNow Scale AI, OpenRouter, Deepgram, DataRobot, Galileo, Genesys, Snyk, Harness"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "EXOR",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "EXOR Crusoe, Alan, Tekion, Cars24, Via Transportation, Dubizzle Group, Chain Reaction"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Korelya Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Korelya Capital Gradium, Bolt, Glovo, Vestiaire Collective, Ledger, Rebellions, Finn, BitFury"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sanabil Investments",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ff92324bbd437a73",
+              "quote": "Sanabil Investments Uniphore, Tamara, Alation, Hala, Caffeine, SingleStore, Nile, Gathern, Acceldata"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "DST Global",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-110f0e95801f33f9",
+              "quote": "Venture Capital a16z, Lightspeed, General Catalyst, DST Global, Index Ventures Early-stage lead and follow-on investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "TotalEnergies",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5337dadca81efe0d",
+              "quote": "ASML, TotalEnergies, and HSBC are all on the roster"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "HSBC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5337dadca81efe0d",
+              "quote": "ASML, TotalEnergies, and HSBC are all on the roster"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "France Travail",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Current Workflows customers include France Travail, the French national employment agency"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Mistral Medium 3 is priced at $0.40 per million input tokens; Anthropic's Claude Sonnet, a comparable model in the same performance tier, is priced at $3.00 per million input tokens."
+            },
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "quote": "While Mistral's investment is significant, it pales in comparison with the $13 billion Anthropic raised earlier this month in a Series F round."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "Mistral Medium 3 is priced at $0.40 per million input tokens; Anthropic's Claude Sonnet, a comparable model in the same performance tier, is priced at $3.00 per million input tokens."
+            },
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "quote": "While Mistral's investment is significant, it pales in comparison with the $13 billion Anthropic raised earlier this month in a Series F round."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Google DeepMind",
+          "canonical_entity_id": "EN-2b6e51bec93e86c1",
+          "canonical_name": "Google DeepMind",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ce92685289bf3ad",
+              "quote": "OpenAI, Anthropic, and Google DeepMind cannot structurally solve that problem because their inference infrastructure runs on American cloud platforms."
+            },
+            {
+              "source_id": "FISRC-8d74a5f6eac0fc90",
+              "quote": "Mistral AI has focused specifically on regulated and financial industries while prioritizing model efficiency and smaller language models, which are often deployed on the edge, in the enterprise or on a device."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-a89bf7c0c4203ce2",
+          "date": "2026-07-22",
+          "title": "三星考虑按 200 亿欧元估值向 Mistral AI 投资 10 亿欧元",
+          "amount": "200 亿",
+          "source_refs": [
+            "SA-c31a95e55a9ba43e"
+          ]
+        },
+        {
+          "event_id": "EV-d4e44892226be468",
+          "date": "2026-06-30",
+          "title": "AI 时代如何融资：投资者希望看到的5件事",
+          "amount": "$122b",
+          "source_refs": [
+            "SA-126f5da1f9043771"
+          ]
+        },
+        {
+          "event_id": "EV-85506f9f86779a6d",
+          "date": "2026-06-12",
+          "title": "Mistral AI 寻求30亿欧元融资以推动欧洲AI发展",
+          "amount": "3 billion",
+          "source_refs": [
+            "SA-6ea09c5ee2198b70"
+          ]
+        },
+        {
+          "event_id": "EV-dc442b91a69fcc5a",
+          "date": "2026-06-12",
+          "title": "法国 AI 初创公司 Mistral AI 估值约 200 亿欧元，正洽谈 30 亿欧元融资",
+          "amount": "€3 billion",
+          "source_refs": [
+            "SA-33242168f8591adb"
+          ]
+        },
+        {
+          "event_id": "EV-d292329c0ec64c8f",
+          "date": "2026-06-02",
+          "title": "获 Mistral AI 创始人支持，NP Company 融资 600 万欧元种子轮前资金，推动工程领域 AI 发展",
+          "amount": "€6M",
+          "source_refs": [
+            "SA-3531377a20c83a25"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-69c99e24132a43e4",
+          "source_url": "https://ae.marketscreener.com/news/asml-becomes-mistral-ai-s-top-shareholder-after-leading-latest-funding-round-sources-say-ce7d59ded981ff23",
+          "title": "Exclusive-ASML becomes Mistral AI's top shareholder after leading latest funding round, sources say | MarketScreener UAE Emirates",
+          "publisher": "ae.marketscreener.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:29:57.856Z",
+          "content_hash": "1320f5cb146361b9",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8d74a5f6eac0fc90",
+          "source_url": "https://aibusiness.com/generative-ai/european-ai-startup-mistral-ai-secures-2b-in-funding",
+          "title": "European AI startup Mistral AI secures $2B in funding",
+          "publisher": "aibusiness.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:29:58.109Z",
+          "content_hash": "a710989bdebc7feb",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5337dadca81efe0d",
+          "source_url": "https://startupfortune.com/mistral-ai-at-20-billion-is-a-bet-on-european-sovereign-ai-coming-into-its-own/",
+          "title": "Mistral AI at €20 billion is a bet on European sovereign AI coming into its own - Startup Fortune",
+          "publisher": "startupfortune.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:29:59.270Z",
+          "content_hash": "91a5d245c39b236f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9ce92685289bf3ad",
+          "source_url": "https://grep.news/episode/asml-just-bet-%E2%82%AC1-7b-on-mistral-ai's-european-answer",
+          "title": "Tamez Labs: ASML Just Bet €1.7B on Mistral AI's European Answer | Grep News",
+          "publisher": "grep.news",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:30:00.884Z",
+          "content_hash": "90d6be41c7b3ea2f",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-ff92324bbd437a73",
+          "source_url": "https://notice.co/c/mistral-ai",
+          "title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+          "publisher": "notice.co",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:30:05.064Z",
+          "content_hash": "24552deeea13b585",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-110f0e95801f33f9",
+          "source_url": "https://frontierledger.ai/investing-in-ai/how-to-invest-in-mistral-ai",
+          "title": "How to Invest in Mistral AI: Europe's Sovereign AI Champion and the ASML Connection - Frontier Ledger",
+          "publisher": "frontierledger.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:30:07.259Z",
+          "content_hash": "778e3d1b1c03a4da",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:31:39.260Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:31:39.260Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-f5235a099c27f936",
+      "triggered_by_event_id": "EV-30466ebe86779a64",
+      "as_of_date": "2026-06-13",
+      "company": {
+        "entity_id": "EN-a9aff9e0737a5d4a",
+        "name": "Mem0",
+        "full_name": "Mem0",
+        "website": "www.mem0.ai",
+        "summary": "Mem0 是一家总部位于旧金山的 AI 基础设施初创公司，为 AI 智能体提供生产级记忆层，使开发者能够通过三行代码集成持久化、可移植的 AI 记忆。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Taranjeet Singh",
+            "role": "Co-founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f3e9aa548f7703f9",
+                "quote": "Taranjeet, Co-founder and CEO of Mem0"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Deshraj Yadav",
+            "role": "Co-founder and CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-64ea8e6e29aaf600",
+                "quote": "his longtime friend and now co-founder and CTO, Deshraj Yadav"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "4",
+          "observed_at": "2025-10-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64ea8e6e29aaf600",
+              "quote": "the traction from the four-person team backs it up"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f3e9aa548f7703f9",
+            "quote": "Mem0 is a San Francisco based startup"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Seed + Series A",
+        "amount": "$24M",
+        "total_raised": "$24M",
+        "announced_at": "2025-10-28",
+        "investors": [
+          {
+            "name": "Kindred Ventures",
+            "role": "种子轮领投，本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f3e9aa548f7703f9",
+                "quote": "a Seed led by Kindred Ventures and Series A led by Basis Set Ventures, with participation from Peak XV Partners, GitHub Fund, and Y Combinator"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Basis Set Ventures",
+            "role": "本轮（A轮）领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f3e9aa548f7703f9",
+                "quote": "Series A led by Basis Set Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Peak XV Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f3e9aa548f7703f9",
+                "quote": "with participation from Peak XV Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Scott Belsky",
+            "role": "本轮战略投资（天使投资人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f3e9aa548f7703f9",
+                "quote": "strategic investments from technology leaders Scott Belsky and Dharmesh Shah"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dharmesh Shah",
+            "role": "本轮战略投资（天使投资人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f3e9aa548f7703f9",
+                "quote": "strategic investments from technology leaders Scott Belsky and Dharmesh Shah"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f3e9aa548f7703f9",
+            "quote": "today announced $24M in funding: a Seed led by Kindred Ventures and Series A led by Basis Set Ventures"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Mem0 Memory Platform",
+          "description": "一个为 AI 智能体构建的生产级记忆基础设施平台，提供持久化、可移植的记忆层，支持存储、遗忘和召回关键信息。",
+          "target_customers": "从初创公司到财富 500 强企业的开发团队，以及使用 AI 框架的开发者",
+          "features": [
+            "三行代码集成",
+            "存储过往交互中的重要信息",
+            "遗忘过时和冲突的信息",
+            "召回相关细节",
+            "模型无关，兼容 OpenAI、Anthropic 及开源 LLM"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Mem0 provides production-ready agent memory infrastructure that developers can integrate with just three lines of code. Their memory layer stores important information from past interactions, forgets outdated and conflicting information, and recalls relevant details."
+            },
+            {
+              "source_id": "FISRC-34d3958dd141df5b",
+              "quote": "The model-agnostic system works across OpenAI, Anthropic, and open-source LLMs"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "CrewAI",
+          "industry": "AI 框架",
+          "use_case": "原生集成 Mem0 作为其 AI 智能体的记忆层",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Frameworks like CrewAI, Flowise, and Langflow use it natively"
+            }
+          ]
+        },
+        {
+          "name": "Flowise",
+          "industry": "AI 框架",
+          "use_case": "原生集成 Mem0 作为其 AI 智能体的记忆层",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Frameworks like CrewAI, Flowise, and Langflow use it natively"
+            }
+          ]
+        },
+        {
+          "name": "Langflow",
+          "industry": "AI 框架",
+          "use_case": "原生集成 Mem0 作为其 AI 智能体的记忆层",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Frameworks like CrewAI, Flowise, and Langflow use it natively"
+            }
+          ]
+        },
+        {
+          "name": "AWS Agent SDK",
+          "industry": "云服务",
+          "use_case": "选择 Mem0 作为其 Agent SDK 的独家记忆提供商",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "AWS chose Mem0 as the exclusive memory provider for its Agent SDK"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "OpenAI Memory",
+          "product": "ChatGPT 长期记忆功能",
+          "scenario": "在 ChatGPT 内提供持久化、个性化的对话体验",
+          "target_customer": "ChatGPT 消费者用户",
+          "funding_summary": "",
+          "core_difference": "OpenAI 的记忆系统缺乏可移植性和互操作性，而 Mem0 提供开放、中立的解决方案，允许开发者在不同应用和平台间构建可移植的记忆。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64ea8e6e29aaf600",
+              "quote": "Singh argues that while big AI labs are building memory systems, they have little incentive to make them portable or interoperable."
+            }
+          ]
+        },
+        {
+          "name": "Supermemory",
+          "product": "Supermemory 记忆工具",
+          "scenario": "为 AI 提供记忆功能的早期初创公司",
+          "target_customer": "AI 开发者",
+          "funding_summary": "",
+          "core_difference": "来源仅提及 Supermemory 为记忆领域的早期初创公司，其创始人曾在 Mem0 短暂工作，未提供具体产品差异。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64ea8e6e29aaf600",
+              "quote": "Other early-stage startups in the memory space include Supermemory (whose founder briefly worked at Mem0)"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "GitHub 星标数",
+          "value": "41,000",
+          "observed_at": "2025-10-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "over 41,000 Github stars"
+            }
+          ]
+        },
+        {
+          "label": "下载量",
+          "value": "14M+",
+          "observed_at": "2025-10-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "14M+ downloads"
+            }
+          ]
+        },
+        {
+          "label": "2025 年 Q1 API 调用量",
+          "value": "35M",
+          "observed_at": "2025-Q1",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "API calls growing from 35 million in Q1"
+            }
+          ]
+        },
+        {
+          "label": "2025 年 Q3 API 调用量",
+          "value": "186M",
+          "observed_at": "2025-Q3",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "to 186 million in Q3 2025"
+            }
+          ]
+        },
+        {
+          "label": "云服务注册开发者数",
+          "value": "80,000+",
+          "observed_at": "2025-10-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-34d3958dd141df5b",
+              "quote": "has attracted more than 80,000 developers"
+            }
+          ]
+        },
+        {
+          "label": "LOCOMO 基准测试准确率",
+          "value": "66.9%",
+          "observed_at": "2025-10-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-92ae6715e83413c2",
+              "quote": "66.9% LOCOMO benchmark accuracy"
+            }
+          ]
+        },
+        {
+          "label": "相较于 OpenAI Memory 的延迟降低",
+          "value": "91%",
+          "observed_at": "2025-10-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-92ae6715e83413c2",
+              "quote": "with 91% lower latency"
+            }
+          ]
+        },
+        {
+          "label": "相较于 OpenAI Memory 的 Token 用量减少",
+          "value": "90%",
+          "observed_at": "2025-10-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-92ae6715e83413c2",
+              "quote": "and 90% reduced token usage"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Taranjeet Singh",
+          "quote": "Every agentic application needs memory, just as every application needs a database.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Every agentic application needs memory, just as every application needs a database"
+            }
+          ]
+        },
+        {
+          "speaker": "Taranjeet Singh",
+          "quote": "We're using this funding to become the default memory layer for AI agents, making LLM memory accessible and reliable for all developers.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "We're using this funding to become the default memory layer for AI agents, making LLM memory accessible and reliable for all developers."
+            }
+          ]
+        },
+        {
+          "speaker": "Taranjeet Singh",
+          "quote": "Memory is becoming one of their key moats now that LLMs are getting commoditized.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64ea8e6e29aaf600",
+              "quote": "Memory is becoming one of their key moats now that LLMs are getting commoditized"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Kindred Ventures",
+            "speaker": "Steve Jang and Yash Kishore",
+            "speaker_role": "Kindred Ventures 团队",
+            "rationale": "认为记忆是个性化的引擎，是 AI 从实验阶段过渡到商业时代的关键，Mem0 正在构建作为 AI 个性化护城河的记忆基础设施。",
+            "quote": "Memory is the engine that makes personalization possible. Without it, AI remains trapped in transactional interactions. With it, AI transforms into something that learns, adapts, and grows alongside users.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-92ae6715e83413c2",
+                "quote": "Memory is the engine that makes personalization possible. Without it, AI remains trapped in transactional interactions. With it, AI transforms into something that learns, adapts, and grows alongside users."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：在 LLM 能力趋于商品化的背景下，记忆层将成为 AI 应用实现持久个性化和上下文连续性的关键基础设施，从而构建用户粘性和切换成本。本轮融资验证了 Mem0 在开源社区的高速增长（41,000 GitHub 星标，1,400 万次下载）和商业落地信号（API 调用量从 Q1 的 3,500 万增长至 Q3 的 1.86 亿，被 AWS 选为 Agent SDK 独家记忆提供商）。判断的证据边界限于已披露的开发者采用指标和关键合作伙伴关系，尚未涉及营收、企业客户留存率或盈利能力数据。",
+        "validated_signals": [
+          "开源社区高速增长：41,000 GitHub 星标，1,400 万次下载",
+          "API 调用量快速增长：从 2025 年 Q1 的 3,500 万增长至 Q3 的 1.86 亿，月环比增长约 30%",
+          "被 AWS 选为其 Agent SDK 的独家记忆提供商",
+          "超过 80,000 名开发者注册了云服务",
+          "获得多家顶级 AI 基础设施公司 CEO 的战略投资"
+        ],
+        "risks": [
+          "大型 AI 实验室（如 OpenAI）正在自建记忆系统，可能通过垂直整合削弱第三方记忆层的价值，尽管目前其系统缺乏可移植性。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Mem0 Memory Platform",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Mem0 provides production-ready agent memory infrastructure that developers can integrate with just three lines of code. Their memory layer stores important information from past interactions, forgets outdated and conflicting information, and recalls relevant details."
+            },
+            {
+              "source_id": "FISRC-34d3958dd141df5b",
+              "quote": "The model-agnostic system works across OpenAI, Anthropic, and open-source LLMs"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Taranjeet Singh",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Taranjeet, Co-founder and CEO of Mem0"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Deshraj Yadav",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64ea8e6e29aaf600",
+              "quote": "his longtime friend and now co-founder and CTO, Deshraj Yadav"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kindred Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "a Seed led by Kindred Ventures and Series A led by Basis Set Ventures, with participation from Peak XV Partners, GitHub Fund, and Y Combinator"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Basis Set Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Series A led by Basis Set Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Peak XV Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "with participation from Peak XV Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Scott Belsky",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "strategic investments from technology leaders Scott Belsky and Dharmesh Shah"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dharmesh Shah",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "strategic investments from technology leaders Scott Belsky and Dharmesh Shah"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "CrewAI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Frameworks like CrewAI, Flowise, and Langflow use it natively"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Flowise",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Frameworks like CrewAI, Flowise, and Langflow use it natively"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Langflow",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "Frameworks like CrewAI, Flowise, and Langflow use it natively"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "AWS Agent SDK",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f3e9aa548f7703f9",
+              "quote": "AWS chose Mem0 as the exclusive memory provider for its Agent SDK"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI Memory",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64ea8e6e29aaf600",
+              "quote": "Singh argues that while big AI labs are building memory systems, they have little incentive to make them portable or interoperable."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Supermemory",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-64ea8e6e29aaf600",
+              "quote": "Other early-stage startups in the memory space include Supermemory (whose founder briefly worked at Mem0)"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-30466ebe86779a64",
+          "date": "2026-06-13",
+          "title": "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层",
+          "amount": "$24M",
+          "source_refs": [
+            "SA-a22bc5be4b8de98a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-f3e9aa548f7703f9",
+          "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
+          "title": "Mem0 获 2400 万美元 A 轮融资，为 AI 智能体构建记忆层",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-13T05:32:37.239Z",
+          "content_hash": "052a20f5aa557858",
+          "source_artifact_id": "SA-a22bc5be4b8de98a",
+          "raw_id": "RAW-a9a2afb5f8f32efb"
+        },
+        {
+          "source_id": "FISRC-34d3958dd141df5b",
+          "source_url": "https://theaiinsider.tech/2025/11/17/mem0-raises-24m-to-launch-universal-ai-memory-platform-for-apps-and-agents/",
+          "title": "Mem0 Raises $24M to Launch Universal AI Memory Platform for Apps and Agents",
+          "publisher": "theaiinsider.tech",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:29:54.011Z",
+          "content_hash": "97eb910e7aa80bf2",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-64ea8e6e29aaf600",
+          "source_url": "https://techcrunch.com/2025/10/28/mem0-raises-24m-from-yc-peak-xv-and-basis-set-to-build-the-memory-layer-for-ai-apps/",
+          "title": "Mem0 raises $24M from YC, Peak XV and Basis Set to build the memory layer for AI apps | TechCrunch",
+          "publisher": "techcrunch.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:29:57.119Z",
+          "content_hash": "a396b38fcc5e9ff1",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-92ae6715e83413c2",
+          "source_url": "https://kindredventures.com/announcement/mem0-building-the-memory-infrastructure-for-personalized-ai/",
+          "title": "Mem0: Building the Memory Infrastructure for Personalized AI - Kindred Ventures",
+          "publisher": "kindredventures.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:30:00.304Z",
+          "content_hash": "221bc55d79cbc4e3",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:31:30.624Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:31:30.624Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-9b8af1b829b23f08",
+      "triggered_by_event_id": "EV-b695dedc9acda5dc",
+      "as_of_date": "2026-06-13",
+      "company": {
+        "entity_id": "EN-4479ee1b529c5e82",
+        "name": "Sycamore",
+        "full_name": "Sycamore",
+        "website": "https://sycamore.so",
+        "summary": "Sycamore正在为自主企业AI构建可信的代理操作系统，使组织能够以安全、治理和人工监督的方式构建、部署和编排AI代理。",
+        "headquarters": "Palo Alto, California",
+        "founders": [
+          {
+            "name": "Sri Viswanath",
+            "role": "Founder & CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Sri Viswanath, Founder and CEO of Sycamore"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d354011359557f2f",
+            "quote": "Sycamore is building the trusted operating system for autonomous enterprise AI."
+          },
+          {
+            "source_id": "FISRC-c7db264338b2a5dc",
+            "quote": "Sycamore is headquartered in Palo Alto, California."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$65 million",
+        "total_raised": "$65 million",
+        "announced_at": "2026-03-30",
+        "investors": [
+          {
+            "name": "Coatue",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "The round was led by Coatue and Lightspeed Venture Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lightspeed Venture Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "The round was led by Coatue and Lightspeed Venture Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Abstract Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dell Technologies Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "8VC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Fellows Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "E14 Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Lip-Bu Tan",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Notable angel investors include: Lip-Bu Tan (CEO of Intel)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ali Ghodsi",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Ali Ghodsi (CEO of Databricks)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bob McGrew",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Bob McGrew (former Chief Research Officer at OpenAI)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Frederic Kerrest",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Frederic Kerrest (co-founder of Okta)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BJ Jenkins",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "BJ Jenkins (President of Palo Alto Networks)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bipul Sinha",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Bipul Sinha (CEO of Rubrik)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jay Simons",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Jay Simons (General Partner at BOND)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Anu Bharadwaj",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Anu Bharadwaj (former President of Atlassian)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sachin Katti",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Sachin Katti (Compute Infrastructure at OpenAI)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Francois Chollet",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Francois Chollet (co-founder of Ndea)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mike Knoop",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Mike Knoop (co-founder of Zapier and Ndea)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nima Khajehnouri",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Nima Khajehnouri (VP Engineering at Meta)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Abhinav Gupta",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Abhinav Gupta (co-founder of Skild AI)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Deepak Pathak",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Deepak Pathak (co-founder of Skild AI)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jerry Tworek",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Jerry Tworek (former Research Scientist at OpenAI)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Soham Majumdar",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Soham Majumdar (co-founder of Rubrik and Wisdom AI)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "John Nay",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "John Nay (founder of Norm Ai)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Rajiv Gupta",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d354011359557f2f",
+                "quote": "Rajiv Gupta (co-founder of Axiamatic)"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d354011359557f2f",
+            "quote": "Sycamore today announced a $65 million seed round"
+          },
+          {
+            "source_id": "FISRC-cb28ccff5e3e6fc8",
+            "quote": "Sycamore, founded by former Atlassian CTO Sri Viswanath, has raised a $65 million seed round led by Coatue and Lightspeed."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Sycamore Agent Operating System",
+          "description": "一个面向企业AI的全生命周期平台，覆盖发现、构建、部署、观察和演进，内置信任、治理和安全机制。",
+          "target_customers": "财富500强企业",
+          "features": [
+            "渐进式信任：代理通过验证的可靠性获得自主权，从观察过渡到行动",
+            "自适应系统生成：用户用自然语言描述意图，平台生成生产就绪的系统",
+            "持续改进：代理从结果中学习，跨部署捕获机构知识",
+            "集体智能：连接数据、工作流和团队专业知识，实现协调的多代理执行"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Sycamore provides a full lifecycle platform for enterprise AI: discover, build, deploy, observe, and evolve."
+            },
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Agents earn autonomy through demonstrated reliability, progressing from observation to action."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Isara",
+          "product": "未披露具体产品",
+          "scenario": "企业AI代理部署",
+          "target_customer": "企业客户",
+          "funding_summary": "据报道融资9400万美元",
+          "core_difference": "Isara获得OpenAI支持，而Sycamore定位为独立的代理操作系统，强调治理和安全层。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "bigger newly funded entrants like OpenAI-backed Isara with a reported $94 million raise"
+            }
+          ]
+        },
+        {
+          "name": "Airia",
+          "product": "未披露具体产品",
+          "scenario": "企业AI代理部署",
+          "target_customer": "企业客户",
+          "funding_summary": "2025年末宣布融资1亿美元",
+          "core_difference": "Airia处于成长阶段，而Sycamore以种子轮进入，试图从治理层切入，而非仅提供代理工具。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "growth-stage players like Airia and Port. Those two each announced $100 million rounds in late 2025."
+            }
+          ]
+        },
+        {
+          "name": "Port",
+          "product": "未披露具体产品",
+          "scenario": "企业AI代理部署",
+          "target_customer": "企业客户",
+          "funding_summary": "2025年末宣布融资1亿美元",
+          "core_difference": "Port处于成长阶段，而Sycamore以种子轮进入，试图从治理层切入，而非仅提供代理工具。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "growth-stage players like Airia and Port. Those two each announced $100 million rounds in late 2025."
+            }
+          ]
+        },
+        {
+          "name": "OpenAI",
+          "product": "Frontier",
+          "scenario": "企业AI代理部署",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "OpenAI是模型提供商，其代理工具Frontier可能捆绑模型能力；Sycamore定位为独立的治理和操作系统层，不依赖特定模型。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "platform giants trying to own the same control point — OpenAI with Frontier and Anthropic with Cowork."
+            }
+          ]
+        },
+        {
+          "name": "Anthropic",
+          "product": "Cowork",
+          "scenario": "企业AI代理部署",
+          "target_customer": "企业客户",
+          "funding_summary": "",
+          "core_difference": "Anthropic是模型提供商，其代理工具Cowork可能捆绑模型能力；Sycamore定位为独立的治理和操作系统层，不依赖特定模型。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "platform giants trying to own the same control point — OpenAI with Frontier and Anthropic with Cowork."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "$65 million",
+          "observed_at": "2026-03-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Sycamore today announced a $65 million seed round"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$65 million",
+          "observed_at": "2026-03-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Sycamore today announced a $65 million seed round"
+            }
+          ]
+        },
+        {
+          "label": "Coatue管理资产规模",
+          "value": "超过700亿美元",
+          "observed_at": "2026-03-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Coatue is a global technology investment platform with more than $70 billion in assets under management."
+            }
+          ]
+        },
+        {
+          "label": "Lightspeed管理资产规模",
+          "value": "超过400亿美元",
+          "observed_at": "2026-03-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Lightspeed is a global, multi-stage venture capital firm managing over $40 billion in assets."
+            }
+          ]
+        },
+        {
+          "label": "企业代理AI市场规模预测（2030年）",
+          "value": "245亿美元",
+          "observed_at": "2026-04-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "Grand View Research estimates the enterprise agentic AI market was worth about $2.58 billion in 2024, will reach $3.67 billion in 2025, and could climb to $24.5 billion by 2030"
+            }
+          ]
+        },
+        {
+          "label": "企业代理AI市场年复合增长率",
+          "value": "46.2%",
+          "observed_at": "2026-04-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "implying a 46.2% compound annual growth rate"
+            }
+          ]
+        },
+        {
+          "label": "北美市场份额（2024年）",
+          "value": "超过39%",
+          "observed_at": "2026-04-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "North America held more than 39% of the market in 2024"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：企业AI代理的瓶颈正从模型能力转向安全部署与治理。6500万美元种子轮融资规模巨大，投资方阵容包括Coatue、Lightspeed及众多企业级天使投资人，表明资本相信Sycamore有机会成为代理操作系统的基础设施层。判断依据包括：创始人Sri Viswanath在Atlassian、VMware等企业的平台构建经验，以及公司已与财富500强企业合作部署自主代理的早期信号。但公司尚未披露具体客户名称或收入数据，产品仍处于早期阶段。",
+        "validated_signals": [
+          "创始人Sri Viswanath拥有超过20年企业平台构建经验，曾任Atlassian CTO并领导云转型",
+          "公司已与财富500强企业合作部署自主AI代理",
+          "投资方包括Coatue、Lightspeed及来自Intel、Databricks、OpenAI、Okta、Palo Alto Networks等企业高管的个人投资"
+        ],
+        "risks": [
+          "公司尚未披露具体客户名称或收入数据，商业化验证仍处于早期阶段",
+          "面临来自OpenAI、Anthropic等模型提供商以及微软、亚马逊等云平台巨头的竞争，它们可能将治理功能整合到自身生态中",
+          "Gartner警告超过40%的代理AI项目可能在2027年底前被取消，市场采纳速度存在不确定性"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业AI代理治理与操作系统"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Sycamore Agent Operating System",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Sycamore provides a full lifecycle platform for enterprise AI: discover, build, deploy, observe, and evolve."
+            },
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Agents earn autonomy through demonstrated reliability, progressing from observation to action."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sri Viswanath",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Sri Viswanath, Founder and CEO of Sycamore"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Coatue",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "The round was led by Coatue and Lightspeed Venture Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "The round was led by Coatue and Lightspeed Venture Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Abstract Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dell Technologies Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "8VC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fellows Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "E14 Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lip-Bu Tan",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Notable angel investors include: Lip-Bu Tan (CEO of Intel)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ali Ghodsi",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Ali Ghodsi (CEO of Databricks)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bob McGrew",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Bob McGrew (former Chief Research Officer at OpenAI)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Frederic Kerrest",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Frederic Kerrest (co-founder of Okta)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BJ Jenkins",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "BJ Jenkins (President of Palo Alto Networks)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bipul Sinha",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Bipul Sinha (CEO of Rubrik)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jay Simons",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Jay Simons (General Partner at BOND)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Anu Bharadwaj",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Anu Bharadwaj (former President of Atlassian)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sachin Katti",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Sachin Katti (Compute Infrastructure at OpenAI)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Francois Chollet",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Francois Chollet (co-founder of Ndea)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mike Knoop",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Mike Knoop (co-founder of Zapier and Ndea)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nima Khajehnouri",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Nima Khajehnouri (VP Engineering at Meta)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Abhinav Gupta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Abhinav Gupta (co-founder of Skild AI)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Deepak Pathak",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Deepak Pathak (co-founder of Skild AI)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jerry Tworek",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Jerry Tworek (former Research Scientist at OpenAI)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Soham Majumdar",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Soham Majumdar (co-founder of Rubrik and Wisdom AI)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "John Nay",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "John Nay (founder of Norm Ai)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Rajiv Gupta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d354011359557f2f",
+              "quote": "Rajiv Gupta (co-founder of Axiamatic)"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Isara",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "bigger newly funded entrants like OpenAI-backed Isara with a reported $94 million raise"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Airia",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "growth-stage players like Airia and Port. Those two each announced $100 million rounds in late 2025."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Port",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "growth-stage players like Airia and Port. Those two each announced $100 million rounds in late 2025."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "platform giants trying to own the same control point — OpenAI with Frontier and Anthropic with Cowork."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0a47d5d35d4d00a4",
+              "quote": "platform giants trying to own the same control point — OpenAI with Frontier and Anthropic with Cowork."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-b695dedc9acda5dc",
+          "date": "2026-06-13",
+          "title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+          "amount": "$65M",
+          "source_refs": [
+            "SA-44c71e43a4df0ac1"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-d354011359557f2f",
+          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+          "title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-13T05:32:37.236Z",
+          "content_hash": "7c851906b2d8f45f",
+          "source_artifact_id": "SA-44c71e43a4df0ac1",
+          "raw_id": "RAW-ffc0308cfa2ba7b0"
+        },
+        {
+          "source_id": "FISRC-cb28ccff5e3e6fc8",
+          "source_url": "https://www.siliconreport.com/sycamore-raises-65m-seed-led-by-coatue-and-lightspeed-2604dc41c494c7ba",
+          "title": "Sycamore raises $65M seed for enterprise AI agent governance — Silicon Report",
+          "publisher": "siliconreport.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:29:36.327Z",
+          "content_hash": "e0382de6b7fd15b3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0a47d5d35d4d00a4",
+          "source_url": "https://www.woodenscale.ai/blogs/sycamore-raises-65m-for-an-agent-operating-system/",
+          "title": "Sycamore Raises $65M for an Agent Operating System | WoodenScale AI Blog | WoodenScale AI",
+          "publisher": "woodenscale.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:29:44.986Z",
+          "content_hash": "b23abf6a91b9b020",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c7db264338b2a5dc",
+          "source_url": "https://sycamore.so/about/",
+          "title": "About / Sycamore",
+          "publisher": "sycamore.so",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:29:49.876Z",
+          "content_hash": "bbfaae8faa1211a1",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:31:24.057Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:31:24.057Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-e859e1ef313564b1",
+      "triggered_by_event_id": "EV-b348083270be6c65",
+      "as_of_date": "2026-06-13",
+      "company": {
+        "entity_id": "EN-1c5483264189feef",
+        "name": "Onyx",
+        "full_name": "Onyx",
+        "website": "http://www.onyx.app",
+        "summary": "Onyx 是最大的开源企业搜索解决方案，打造了首个面向工作场所的 AI 深度研究智能体，能够像人类一样进行搜索，帮助团队从分散的 SaaS 工具中即时获取知识。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Yuhong Sun",
+            "role": "Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03b9d51b95b8c6ce",
+                "quote": "said Yuhong Sun, Co-Founder of Onyx"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Chris Weaver",
+            "role": "Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-da191eac6c9c2cd9",
+                "quote": "By Chris Weaver"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-03b9d51b95b8c6ce",
+            "quote": "Onyx is based in San Francisco"
+          },
+          {
+            "source_id": "FISRC-da191eac6c9c2cd9",
+            "quote": "Onyx is the open source solution companies use to solve this challenge."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$10M",
+        "total_raised": "$10M",
+        "announced_at": "2025-03-12",
+        "investors": [
+          {
+            "name": "Khosla Ventures",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03b9d51b95b8c6ce",
+                "quote": "The round was co-led by Khosla Ventures and First Round Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "First Round Capital",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03b9d51b95b8c6ce",
+                "quote": "The round was co-led by Khosla Ventures and First Round Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Y Combinator",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03b9d51b95b8c6ce",
+                "quote": "with participation from Y Combinator"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c"
+          },
+          {
+            "name": "Gokul Rajaram",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03b9d51b95b8c6ce",
+                "quote": "prominent angels like Gokul Rajaram (Coinbase, Pinterest)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Arash Ferdosi",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03b9d51b95b8c6ce",
+                "quote": "Arash Ferdosi (Dropbox)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Amit Agarwal",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03b9d51b95b8c6ce",
+                "quote": "Amit Agarwal (Datadog)"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kulveer Taggar",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03b9d51b95b8c6ce",
+                "quote": "Kulveer Taggar (Zeus Living)"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-03b9d51b95b8c6ce",
+            "quote": "announced today a $10M seed round of funding. The round was co-led by Khosla Ventures and First Round Capital, with participation from Y Combinator and prominent angels like Gokul Rajaram (Coinbase, Pinterest), Arash Ferdosi (Dropbox), Amit Agarwal (Datadog), Kulveer Taggar (Zeus Living) and others."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Onyx AI Research Agent",
+          "description": "首个面向工作场所的 AI 深度研究智能体，能够像人类一样搜索，通过探索并行路径并迭代挖掘有希望的方向，为每个问题检索最完整的上下文。",
+          "target_customers": "企业团队，包括大型企业、国防组织和网络安全公司",
+          "features": [
+            "索引超过 40 种工具的知识",
+            "并行搜索与迭代挖掘",
+            "即时回答，替代 Slack/Teams 等待",
+            "开源可自托管，数据本地处理"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "Onyx is the first AI research agent designed for the workplace that searches like a human would. Our agent explores parallel pathways and iteratively digs down promising directions to retrieve the most complete context for each question."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Netflix",
+          "industry": "娱乐",
+          "use_case": "部署至全部 14,000 多名员工，用于内部知识检索",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "From household names like Netflix (where we're deployed to all 14,000+ employees)"
+            }
+          ]
+        },
+        {
+          "name": "Thales Group",
+          "industry": "国防与安全",
+          "use_case": "安全敏感环境下的企业知识搜索",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "security conscious defense organizations like Thales Group"
+            }
+          ]
+        },
+        {
+          "name": "Bitwarden",
+          "industry": "网络安全",
+          "use_case": "企业知识搜索",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "cybersecurity companies like Bitwarden"
+            }
+          ]
+        },
+        {
+          "name": "Ramp",
+          "industry": "金融科技",
+          "use_case": "为内部知识库和部分产品功能提供支持，构建多步骤 AI 智能体自动解决超过 93% 的可操作客服请求",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "Ramp (where Onyx not only powers internal knowledge but parts of the Ramp product) has built multi-step AI agents to auto-resolve >93% of actionable customer service requests."
+            }
+          ]
+        },
+        {
+          "name": "University of California, San Diego",
+          "industry": "高等教育",
+          "use_case": "在 37,000 名用户中部署，构建人机协同智能体工作流以自动化常见任务",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "the University of California, San Diego (where we're live with 37,000 users) has built human-in-the-loop agent workflows to automate common tasks."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "支持集成的工具数量",
+          "value": "超过 40 种",
+          "observed_at": "2025-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "It indexes knowledge across more than 40 tools such as Salesforce, Sharepoint, GitHub, Gong and more."
+            }
+          ]
+        },
+        {
+          "label": "Netflix 部署覆盖员工数",
+          "value": "14,000+",
+          "observed_at": "2025-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "Netflix (where we're deployed to all 14,000+ employees)"
+            }
+          ]
+        },
+        {
+          "label": "UCSD 部署覆盖用户数",
+          "value": "37,000",
+          "observed_at": "2025-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "the University of California, San Diego (where we're live with 37,000 users)"
+            }
+          ]
+        },
+        {
+          "label": "Ramp 客服请求自动解决率",
+          "value": ">93%",
+          "observed_at": "2025-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "has built multi-step AI agents to auto-resolve >93% of actionable customer service requests."
+            }
+          ]
+        },
+        {
+          "label": "开发者社区贡献者数量",
+          "value": "125 名独立贡献者",
+          "observed_at": "2025-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "125 unique individuals have contributed code back to Onyx"
+            }
+          ]
+        },
+        {
+          "label": "开发者社区规模",
+          "value": "超过 3,000 人",
+          "observed_at": "2025-03-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "With the help of our developer community of more than 3,000 strong"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Yuhong Sun",
+          "quote": "We are excited to work with this impressive set of investors who have deep expertise in AI and open source technology to help us bring enterprise search and GenAI to more teams around the world.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "We are excited to work with this impressive set of investors who have deep expertise in AI and open source technology to help us bring enterprise search and GenAI to more teams around the world"
+            }
+          ]
+        },
+        {
+          "speaker": "Yuhong Sun",
+          "quote": "Having worked at high growth tech companies, we experienced first hand the challenges of knowledge getting buried in disparate knowledge bases and becoming lost. We built Onyx as an open-source solution for companies to solve this challenge without needing to send all their data to external parties.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "Having worked at high growth tech companies, we experienced first hand the challenges of knowledge getting buried in disparate knowledge bases and becoming lost. We built Onyx as an open-source solution for companies to solve this challenge without needing to send all their data to external parties."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "First Round Capital",
+            "speaker": "First Round Capital",
+            "speaker_role": "投资机构",
+            "rationale": "创始人拥有宏大愿景且视角独特，聚焦于智能体 AI 在企业搜索中的实用场景；开源方案契合企业对隐私和安全的深度关切；投资前客户背调反馈极为出色。",
+            "quote": "At First Round, we invest in founders who have huge visions and see things differently than everyone else. This is exactly how I'd describe Yuhong and Chris. While they zeroed in on a practical and important use case for agentic AI -- enterprise search -- they knew that companies care deeply about privacy and security, which is one of many reasons why their Open Source approach makes so much sense. And when I spoke with customers on reference calls before investing, the reviews were so glowing that it made the decision to invest quite easy.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-03b9d51b95b8c6ce",
+                "quote": "At First Round, we invest in founders who have huge visions and see things differently than everyone else. This is exactly how I'd describe Yuhong and Chris. While they zeroed in on a practical and important use case for agentic AI -- enterprise search -- they knew that companies care deeply about privacy and security, which is one of many reasons why their Open Source approach makes so much sense. And when I spoke with customers on reference calls before investing, the reviews were so glowing that it made the decision to invest quite easy."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“开源企业搜索 + AI 深度研究智能体”这一组合能否在隐私敏感的大型组织中建立事实标准。本轮融资所依赖的已验证信号包括：已获得 Netflix（14,000+ 员工全量部署）、Thales Group 等标杆客户；开源社区贡献者达 125 人、社区规模超 3,000 人；Ramp 基于 Onyx 构建的智能体已实现 >93% 客服请求自动解决率。这些信号表明产品在规模化部署、安全敏感场景和可编程扩展性上均已越过概念验证阶段。但当前证据仅限于单次种子轮披露，缺乏营收、留存率或付费转化数据，无法判断商业化的可持续性。",
+        "validated_signals": [
+          "Netflix 全公司 14,000+ 员工部署",
+          "Thales Group 等安全敏感机构采用",
+          "开源社区 125 名独立代码贡献者、超 3,000 人社区",
+          "Ramp 基于 Onyx 构建的智能体自动解决 >93% 客服请求",
+          "UCSD 37,000 用户部署并构建人机协同智能体工作流"
+        ],
+        "risks": [
+          "来源未披露任何营收、付费客户数或留存指标，商业化进展无法评估；开源模式从社区采用到企业付费的转化路径尚未被验证。"
+        ],
+        "related_direction_id": "",
+        "sector": "企业搜索与 AI 智能体"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Onyx AI Research Agent",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "Onyx is the first AI research agent designed for the workplace that searches like a human would. Our agent explores parallel pathways and iteratively digs down promising directions to retrieve the most complete context for each question."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Yuhong Sun",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "said Yuhong Sun, Co-Founder of Onyx"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Chris Weaver",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "By Chris Weaver"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Khosla Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "The round was co-led by Khosla Ventures and First Round Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "First Round Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "The round was co-led by Khosla Ventures and First Round Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "with participation from Y Combinator"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Gokul Rajaram",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "prominent angels like Gokul Rajaram (Coinbase, Pinterest)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Arash Ferdosi",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "Arash Ferdosi (Dropbox)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Amit Agarwal",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "Amit Agarwal (Datadog)"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kulveer Taggar",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "Kulveer Taggar (Zeus Living)"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Netflix",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "From household names like Netflix (where we're deployed to all 14,000+ employees)"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Thales Group",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "security conscious defense organizations like Thales Group"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Bitwarden",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-03b9d51b95b8c6ce",
+              "quote": "cybersecurity companies like Bitwarden"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ramp",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "Ramp (where Onyx not only powers internal knowledge but parts of the Ramp product) has built multi-step AI agents to auto-resolve >93% of actionable customer service requests."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "University of California, San Diego",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-da191eac6c9c2cd9",
+              "quote": "the University of California, San Diego (where we're live with 37,000 users) has built human-in-the-loop agent workflows to automate common tasks."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-b348083270be6c65",
+          "date": "2026-06-13",
+          "title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
+          "amount": "$10M",
+          "source_refs": [
+            "SA-3ea0d10d215c74ef"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-03b9d51b95b8c6ce",
+          "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+          "title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-13T05:32:37.233Z",
+          "content_hash": "9266f35a39d4c471",
+          "source_artifact_id": "SA-3ea0d10d215c74ef",
+          "raw_id": "RAW-88f8c157a8903364"
+        },
+        {
+          "source_id": "FISRC-da191eac6c9c2cd9",
+          "source_url": "https://onyx.app/blog/seed-round",
+          "title": "Onyx raises $10M to help teams find knowledge faster with open source AI agents | Onyx AI",
+          "publisher": "onyx.app",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:29:12.078Z",
+          "content_hash": "5d34bbd2e6e3b05b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:29:49.932Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:29:49.932Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-f38d1f53d4e0312e",
+      "triggered_by_event_id": "EV-d7f561bc4f6cb02d",
+      "as_of_date": "2026-06-13",
+      "company": {
+        "entity_id": "EN-3032646694ad17bb",
+        "name": "E2B",
+        "full_name": "E2B",
+        "website": "",
+        "summary": "E2B是一家为AI智能体提供开源云基础设施的领先供应商，其平台提供安全、可扩展的沙箱环境，使AI智能体能够执行复杂的多步骤任务。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Vasek Mlejnsky",
+            "role": "Co-founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c4bbfe8565d35dc2",
+                "quote": "Vasek Mlejnsky, Co-founder and CEO of E2B"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tomáš Valenta",
+            "role": "Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a63eab38d837820b",
+                "quote": "founded in 2023 by Tomáš Valenta and Václav Mlejnský"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-a63eab38d837820b",
+            "quote": "E2B is a Czech startup, founded in 2023 by Tomáš Valenta and Václav Mlejnský, that develops cloud infrastructure tailored for AI agents and applications."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$21 million",
+        "total_raised": "",
+        "announced_at": "2025-07-28",
+        "investors": [
+          {
+            "name": "Insight Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c4bbfe8565d35dc2",
+                "quote": "led by global software investor Insight Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Decibel",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c4bbfe8565d35dc2",
+                "quote": "with participation from Decibel"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sunflower Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c4bbfe8565d35dc2",
+                "quote": "Sunflower Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kaya",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c4bbfe8565d35dc2",
+                "quote": "and Kaya"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Scott Johnston",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c4bbfe8565d35dc2",
+                "quote": "prominent angels such as Docker's former CEO Scott Johnston"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Decibel Partners",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a63eab38d837820b",
+                "quote": "In October 2024, E2B has raised $11.5 million in seed funding, led by Decibel Partners."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c4bbfe8565d35dc2",
+            "quote": "has raised a $21 million Series A funding round led by global software investor Insight Partners, with participation from Decibel, Sunflower Capital, and Kaya, along with prominent angels such as Docker's former CEO Scott Johnston"
+          },
+          {
+            "source_id": "FISRC-a63eab38d837820b",
+            "quote": "In October 2024, E2B has raised $11.5 million in seed funding, led by Decibel Partners."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "E2B Cloud Sandboxes",
+          "description": "为AI智能体提供开源云沙箱，配备完成复杂任务所需的所有工具，支持安全、可扩展的智能体工作流。",
+          "target_customers": "财富100强企业、AI创新公司、基础模型提供商",
+          "features": [
+            "基于Firecracker microVMs的安全隔离执行环境",
+            "约150毫秒快速启动计算环境",
+            "支持Python、JavaScript、C++等多种编程语言",
+            "可自托管或部署在客户自有VPC内",
+            "企业级日志、监控、网络控制与密钥管理"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "E2B provides open-source cloud sandboxes for AI agents, equipped with all tools necessary for them to complete complex tasks like generating analyst-grade reports or building websites from a single prompt."
+            },
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "E2B's core innovation lies in its use of Firecracker microVMs— lightweight virtual machines originally developed by Amazon Web Services — to create completely isolated environments for AI-generated code execution."
+            },
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "The platform supports multiple programming languages including Python, JavaScript, and C++, and can spin up new computing environments in approximately 150 milliseconds"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Hugging Face",
+          "industry": "AI模型库",
+          "use_case": "在强化学习实验中安全执行代码，用于复现DeepSeek-R1等先进模型",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "E2B's customer list already includes leading AI innovators such as Hugging Face"
+            },
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "Hugging Face, the leading AI model repository, uses E2B to safely execute code during reinforcement learning experiments for replicating advanced models like DeepSeek-R1."
+            }
+          ]
+        },
+        {
+          "name": "Perplexity",
+          "industry": "AI搜索",
+          "use_case": "为Pro用户提供高级数据分析功能，一周内完成集成",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "search engine Perplexity uses E2B to power advanced data analysis features for Pro users, implementing the capability in just one week."
+            }
+          ]
+        },
+        {
+          "name": "Groq",
+          "industry": "AI芯片",
+          "use_case": "在其Compound AI系统中进行安全代码执行",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "AI chip company Groq relies on E2B for secure code execution in its Compound AI systems."
+            }
+          ]
+        },
+        {
+          "name": "Lindy",
+          "industry": "工作流自动化",
+          "use_case": "在用户工作流中集成自定义Python和JavaScript执行",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "Workflow automation platform Lindy integrated E2B to enable custom Python and JavaScript execution within user workflows."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Docker",
+          "product": "Docker容器",
+          "scenario": "AI智能体代码执行环境",
+          "target_customer": "企业开发者",
+          "funding_summary": "",
+          "core_difference": "Docker容器缺乏E2B基于Firecracker microVMs的安全隔离级别，不适合生产环境AI智能体部署",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "Alternative solutions like Docker containers, while technically possible, lack the security isolation and performance characteristics required for production AI agent deployments."
+            }
+          ]
+        },
+        {
+          "name": "自建方案",
+          "product": "企业内部自建基础设施",
+          "scenario": "AI智能体运行时环境",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "自建方案需5-10名基础设施工程师和至少50万美元年成本，而E2B提供即插即用方案",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "Building similar capabilities in-house typically requires 5-10 infrastructure engineers and at least $500,000 in annual costs, according to Mlejnsky."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "财富100强企业注册比例",
+          "value": "88%",
+          "observed_at": "2025-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "88% of Fortune 100 companies that have already signed up with E2B"
+            }
+          ]
+        },
+        {
+          "label": "沙箱会话处理量",
+          "value": "数亿次",
+          "observed_at": "2025-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "The company has processed hundreds of millions of sandbox sessions since October"
+            }
+          ]
+        },
+        {
+          "label": "月度新增收入",
+          "value": "七位数",
+          "observed_at": "2025-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "E2B adding \"seven figures\" in new business just in the past month"
+            }
+          ]
+        },
+        {
+          "label": "沙箱启动速度",
+          "value": "约150毫秒",
+          "observed_at": "2025-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "can spin up new computing environments in approximately 150 milliseconds"
+            }
+          ]
+        },
+        {
+          "label": "企业级并发沙箱上限",
+          "value": "20,000个",
+          "observed_at": "2025-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "The platform can scale from 100 concurrent sandboxes on the free tier to 20,000 concurrent environments for enterprise customers"
+            }
+          ]
+        },
+        {
+          "label": "UC Berkeley LMArena平台启动的E2B沙箱数",
+          "value": "超过230,000个",
+          "observed_at": "2025-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "UC Berkeley's LMArena platform has launched over 230,000 E2B sandboxes"
+            }
+          ]
+        },
+        {
+          "label": "AI智能体成功进入生产部署的比例",
+          "value": "低于30%",
+          "observed_at": "2025-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "Industry data suggests fewer than 30% of AI agents successfully make it to production deployment"
+            }
+          ]
+        },
+        {
+          "label": "代码助手生成全球代码比例",
+          "value": "至少25%",
+          "observed_at": "2025-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "Code generation assistants already produce at least 25% of the world's software code"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Vasek Mlejnsky",
+          "quote": "The expectations we have from AI agents in the enterprise are great. However, we expect them to scale and perform on legacy infrastructure not designed for agentic use.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "The expectations we have from AI agents in the enterprise are great. However, we expect them to scale and perform on legacy infrastructure not designed for agentic use"
+            }
+          ]
+        },
+        {
+          "speaker": "Vasek Mlejnsky",
+          "quote": "E2B solves this by equipping AI agents with safe, scalable, highly performant cloud infrastructure as well as tools that help agents scale in production.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "E2B solves this by equipping AI agents with safe, scalable, highly performant cloud infrastructure as well as tools that help agents scale in production."
+            }
+          ]
+        },
+        {
+          "speaker": "Praveen Akkiraju",
+          "quote": "Insight Partners is excited to back E2B's visionary team as they pioneer essential infrastructure for AI agents.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "Insight Partners is excited to back E2B's visionary team as they pioneer essential infrastructure for AI agents"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是AI智能体从实验走向生产部署所必需的专用基础设施层。当前估值或融资所依赖的已验证信号包括：88%财富100强企业已注册、月度新增七位数收入、数亿次沙箱会话处理量，以及Hugging Face、Perplexity、Groq等头部AI公司的实际采用。这些信号表明E2B的开源沙箱协议正在成为事实标准，但判断的证据边界受限于来源仅披露注册率而非付费转化率，且未提供收入绝对值或利润率数据。",
+        "validated_signals": [
+          "88%财富100强企业已注册使用E2B平台",
+          "月度新增七位数收入",
+          "自去年10月以来处理数亿次沙箱会话",
+          "客户包括Hugging Face、Perplexity、Groq、Manus等头部AI公司",
+          "UC Berkeley LMArena平台已启动超过23万个E2B沙箱"
+        ],
+        "risks": [
+          "来源仅披露财富100强企业注册率88%，未披露付费转化率或合同金额，注册用户可能存在大量免费层用户或未激活账户，实际商业化程度存疑。",
+          "AWS、Google Cloud、Microsoft Azure等云巨头可能将类似沙箱功能作为其AI平台的原生能力提供，利用现有企业客户关系和分销优势挤压E2B的市场空间。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI智能体云基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "E2B Cloud Sandboxes",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "E2B provides open-source cloud sandboxes for AI agents, equipped with all tools necessary for them to complete complex tasks like generating analyst-grade reports or building websites from a single prompt."
+            },
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "E2B's core innovation lies in its use of Firecracker microVMs— lightweight virtual machines originally developed by Amazon Web Services — to create completely isolated environments for AI-generated code execution."
+            },
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "The platform supports multiple programming languages including Python, JavaScript, and C++, and can spin up new computing environments in approximately 150 milliseconds"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vasek Mlejnsky",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "Vasek Mlejnsky, Co-founder and CEO of E2B"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Tomáš Valenta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a63eab38d837820b",
+              "quote": "founded in 2023 by Tomáš Valenta and Václav Mlejnský"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Insight Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "led by global software investor Insight Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Decibel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "with participation from Decibel"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sunflower Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "Sunflower Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kaya",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "and Kaya"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Scott Johnston",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "prominent angels such as Docker's former CEO Scott Johnston"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Decibel Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a63eab38d837820b",
+              "quote": "In October 2024, E2B has raised $11.5 million in seed funding, led by Decibel Partners."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Hugging Face",
+          "canonical_entity_id": "EN-d9352ce019e77ab3",
+          "canonical_name": "Hugging Face",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c4bbfe8565d35dc2",
+              "quote": "E2B's customer list already includes leading AI innovators such as Hugging Face"
+            },
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "Hugging Face, the leading AI model repository, uses E2B to safely execute code during reinforcement learning experiments for replicating advanced models like DeepSeek-R1."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Perplexity",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "search engine Perplexity uses E2B to power advanced data analysis features for Pro users, implementing the capability in just one week."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Groq",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "AI chip company Groq relies on E2B for secure code execution in its Compound AI systems."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Lindy",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "Workflow automation platform Lindy integrated E2B to enable custom Python and JavaScript execution within user workflows."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Docker",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "Alternative solutions like Docker containers, while technically possible, lack the security isolation and performance characteristics required for production AI agent deployments."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "自建方案",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-62e7a4647c535f43",
+              "quote": "Building similar capabilities in-house typically requires 5-10 infrastructure engineers and at least $500,000 in annual costs, according to Mlejnsky."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d7f561bc4f6cb02d",
+          "date": "2026-06-13",
+          "title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
+          "amount": "$21 million",
+          "source_refs": [
+            "SA-c3e21cbff848ba82"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c4bbfe8565d35dc2",
+          "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
+          "title": "E2B 获 2100 万美元 A 轮融资，为财富 100 强企业提供 AI 智能体云服务",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-13T05:32:37.221Z",
+          "content_hash": "db0c071a75daeddf",
+          "source_artifact_id": "SA-c3e21cbff848ba82",
+          "raw_id": "RAW-958cd2f572a87e9e"
+        },
+        {
+          "source_id": "FISRC-a63eab38d837820b",
+          "source_url": "https://euis.eu/e2b-raises-21m/",
+          "title": "Czech startup E2B raises $21M Series A led by Insight Partners to scale AI agent infrastructure – EU Information Service",
+          "publisher": "euis.eu",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:28:55.620Z",
+          "content_hash": "a94e585d28436091",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-62e7a4647c535f43",
+          "source_url": "https://venturebeat.com/business/how-e2b-became-essential-to-88-of-fortune-100-companies-and-raised-21-million",
+          "title": "How E2B became essential to 88% of Fortune 100 companies and raised $21 million | VentureBeat",
+          "publisher": "venturebeat.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:28:56.353Z",
+          "content_hash": "08118408547e2842",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:29:42.474Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:29:42.474Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-8adfa60217df71bb",
+      "triggered_by_event_id": "EV-40d196865997025c",
+      "as_of_date": "2026-06-13",
+      "company": {
+        "entity_id": "EN-8bb4f88fd3cf9b29",
+        "name": "Structured AI",
+        "full_name": "Structured AI",
+        "website": "https://getstructured.ai/",
+        "summary": "Structured AI 正在为建筑世界构建质量层，通过AI代理对技术文档和图纸进行质量控制，自动审查设计错误、合规问题和跨专业冲突，帮助工程公司将资深工程师从重复性审核工作中解放出来。",
+        "headquarters": "New York City, NY",
+        "founders": [
+          {
+            "name": "Raymond Zhao",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41c41ba6364cc2cb",
+                "quote": "Raymond Zhao Founder Cofounder & CEO @ Structured AI"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Issy Greenslade",
+            "role": "联合创始人兼COO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41c41ba6364cc2cb",
+                "quote": "Issy Greenslade Founder Cofounder & COO @ Structured AI"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Brandon Abreu Smith",
+            "role": "联合创始人兼CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41c41ba6364cc2cb",
+                "quote": "Brandon Abreu Smith Founder Cofounder & CTO @ Structured AI"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "10",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41c41ba6364cc2cb",
+              "quote": "Team Size: 10"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7568031d64eac5fa",
+            "quote": "Structured AI Raises $4.2M Seed to Build the Quality Layer for the Built World"
+          },
+          {
+            "source_id": "FISRC-41c41ba6364cc2cb",
+            "quote": "Structured AI is building the AI workforce for construction design engineering"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$4.2M",
+        "total_raised": "$5M",
+        "announced_at": "2026-06-11",
+        "investors": [
+          {
+            "name": "FCVC",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7568031d64eac5fa",
+                "quote": "The round was led by FCVC"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Y Combinator",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7568031d64eac5fa",
+                "quote": "with participation from Y Combinator"
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c"
+          },
+          {
+            "name": "Charlie Songhurst",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-7568031d64eac5fa",
+                "quote": "plus angels including Charlie Songhurst"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-7568031d64eac5fa",
+            "quote": "Today we are announcing our $4.2M seed round , bringing our total funding to $5M"
+          },
+          {
+            "source_id": "FISRC-7568031d64eac5fa",
+            "quote": "The round was led by FCVC , with participation from Y Combinator, 20VC, Cherry Ventures, Zero Prime Ventures, Transpose Platform, and Sequoia Capital's Scout Fund, plus angels including Charlie Songhurst and the founders of Supabase, Enpal, Pebble, and Privy."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "AI设计审查平台",
+          "description": "一个AI驱动的QA/QC平台，能够学习公司标准，自动审查PDF图纸中的设计错误、规范合规问题和跨专业冲突，并给出精确到页面和位置的修改建议。",
+          "target_customers": "建筑师、MEP工程师、结构及土木工程师、总承包商",
+          "features": [
+            "QA/QC与规范合规检查",
+            "图纸集对话",
+            "自定义检查与代理",
+            "叠加与冲突检测",
+            "Revit集成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "So we built an AI design reviewer that learns your firm's standards and catches issues before they reach the field."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Syska Hennessy Group",
+          "industry": "MEP工程设计",
+          "use_case": "作为设计合作伙伴，测试并使用Structured AI平台进行MEP协调和QA/QC问题审查，以在资深工程师审查前发现整个图纸集的问题。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "Syska Hennessy Group, one of the world's leading MEP engineering firms, has been testing the platform and helping us develop it."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "单个案例研究中发现的图纸问题数量",
+          "value": "400+",
+          "observed_at": "2026-06-11",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "In one case study, our design review agent caught 400+ issues in a single 1,000-page set headed to the jobsite."
+            }
+          ]
+        },
+        {
+          "label": "审查完整图纸集所需时间",
+          "value": "20分钟",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e2b120b124bd6449",
+              "quote": "20 min to review a full drawing set, not hours or days."
+            }
+          ]
+        },
+        {
+          "label": "客户工程师确认并修复的发现比例",
+          "value": "9/10",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e2b120b124bd6449",
+              "quote": "9 in 10 findings triaged by client engineers are confirmed and fixed"
+            }
+          ]
+        },
+        {
+          "label": "到达现场的问题减少比例",
+          "value": "6倍",
+          "observed_at": "2026",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e2b120b124bd6449",
+              "quote": "6x fewer issues reach the field"
+            }
+          ]
+        },
+        {
+          "label": "手动审查中工程师花费在红线批注上的时间比例",
+          "value": "高达50%",
+          "observed_at": "2026-06-11",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "firms still spend up to half their time redlining drawings by hand instead of designing."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Robert Ioanna",
+          "quote": "By partnering with startups like Structured AI and giving them access, we get a tool we really like and can use that's custom built.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "By partnering with startups like Structured AI and giving them access, we get a tool we really like and can use that's custom built."
+            }
+          ]
+        },
+        {
+          "speaker": "Robert Ioanna",
+          "quote": "A lot of these things are not just fixing a line here or there in documents, it's analyzing and interpreting something. They're moving into the next step, where it's going to be in our drawing software, so literally it's going to be almost like spell check, where they recommend a change be made, and then in your native drawing you click accept, and it's done.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "A lot of these things are not just fixing a line here or there in documents, it's analyzing and interpreting something. They're moving into the next step, where it's going to be in our drawing software, so literally it's going to be almost like spell check, where they recommend a change be made, and then in your native drawing you click accept, and it's done."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是建筑行业从“按小时计费”向“按成果交付”的商业模式转型中，AI驱动的QA/QC能释放被手动审查占用的资深工程师产能。本轮融资所依赖的已验证信号包括：与头部MEP工程公司Syska Hennessy Group的设计合作伙伴关系、在单个1000页图纸集中发现400+问题的案例研究、以及客户工程师对90%发现结果的确认修复率。判断的证据边界限于已披露的种子轮融资信息和单一设计合作伙伴的公开证言，尚未有大规模商业化部署的财务数据。",
+        "validated_signals": [
+          "与全球领先的MEP工程公司Syska Hennessy Group建立了设计合作伙伴关系，共同开发平台。",
+          "在单个案例研究中，AI设计审查代理在1000页图纸集中发现了400多个问题。",
+          "客户工程师确认并修复了90%的AI发现结果。",
+          "联合创始人被列入2026年福布斯欧洲30位30岁以下精英榜。"
+        ],
+        "risks": [
+          "产品目前仅公开了与Syska Hennessy Group的深度合作案例，客户集中度高，尚未证明跨不同规模和类型工程公司的广泛适用性。"
+        ],
+        "related_direction_id": "",
+        "sector": "建筑科技/人工智能"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI设计审查平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "So we built an AI design reviewer that learns your firm's standards and catches issues before they reach the field."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Raymond Zhao",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41c41ba6364cc2cb",
+              "quote": "Raymond Zhao Founder Cofounder & CEO @ Structured AI"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Issy Greenslade",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41c41ba6364cc2cb",
+              "quote": "Issy Greenslade Founder Cofounder & COO @ Structured AI"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Brandon Abreu Smith",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41c41ba6364cc2cb",
+              "quote": "Brandon Abreu Smith Founder Cofounder & CTO @ Structured AI"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "FCVC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "The round was led by FCVC"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "with participation from Y Combinator"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Charlie Songhurst",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "plus angels including Charlie Songhurst"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Syska Hennessy Group",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7568031d64eac5fa",
+              "quote": "Syska Hennessy Group, one of the world's leading MEP engineering firms, has been testing the platform and helping us develop it."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-40d196865997025c",
+          "date": "2026-06-13",
+          "title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
+          "amount": "$4.2M",
+          "source_refs": [
+            "SA-192e4b3ffd2e7883"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-7568031d64eac5fa",
+          "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
+          "title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-13T05:32:37.201Z",
+          "content_hash": "77fbdb6058a98d5e",
+          "source_artifact_id": "SA-192e4b3ffd2e7883",
+          "raw_id": "RAW-f992f2424778bfb4"
+        },
+        {
+          "source_id": "FISRC-41c41ba6364cc2cb",
+          "source_url": "https://www.ycombinator.com/companies/structured-ai",
+          "title": "Structured AI: AI workforce for Construction Engineering | Y Combinator",
+          "publisher": "ycombinator.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:28:46.797Z",
+          "content_hash": "4b4766d6ba312a5e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-e2b120b124bd6449",
+          "source_url": "https://getstructured.ai/",
+          "title": "Construction AI QA/QC: Automated Drawing Review | Structured AI",
+          "publisher": "getstructured.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:28:47.526Z",
+          "content_hash": "e6ee01b96406e001",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:29:25.028Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:29:25.028Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-40d196865997025c",
+      "company_name": "Structured AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Structured AI\" \"$4.2M\" funding investors round",
+        "\"Structured AI\" product customers case study",
+        "\"Structured AI\" \"Structured AI Raises $4.2M Seed to Build the Quality Layer for the Built World - Structured AI\" competitors product use case",
+        "\"Structured AI\" \"$4.2M\" investor quote why invested",
+        "\"Structured AI\" \"$4.2M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Structured AI\" \"$4.2M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Structured AI\" \"$4.2M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Structured AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Structured AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Structured AI\" \"Structured AI Raises $4.2M Seed to Build the Quality Layer for the Built World - Structured AI\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Structured AI\" \"Structured AI Raises $4.2M Seed to Build the Quality Layer for the Built World - Structured AI\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Structured AI\" \"$4.2M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Structured AI\" \"$4.2M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Structured AI\" \"$4.2M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Structured AI\" \"$4.2M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:31:39.315Z"
+    },
+    {
+      "event_id": "EV-d7f561bc4f6cb02d",
+      "company_name": "E2B",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"E2B\" \"$21 million\" funding investors round",
+        "\"E2B\" product customers case study",
+        "\"E2B\" \"E2B Raises a $21M Series A to Offer Cloud for AI Agents to Fortune 100\" competitors product use case",
+        "\"E2B\" \"$21 million\" investor quote why invested",
+        "\"E2B\" \"$21 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"E2B\" \"$21 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"E2B\" \"$21 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"E2B\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"E2B\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"E2B\" \"E2B Raises a $21M Series A to Offer Cloud for AI Agents to Fortune 100\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"E2B\" \"E2B Raises a $21M Series A to Offer Cloud for AI Agents to Fortune 100\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"E2B\" \"$21 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"E2B\" \"$21 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"E2B\" \"$21 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"E2B\" \"$21 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:31:39.315Z"
+    },
+    {
+      "event_id": "EV-b348083270be6c65",
+      "company_name": "Onyx",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Onyx\" \"$10M\" funding investors round",
+        "site:onyx.app \"Onyx\" product customers case study",
+        "\"Onyx\" \"Onyx Raises $10M To Help Teams Find Knowledge Faster with\" competitors product use case",
+        "\"Onyx\" \"$10M\" investor quote why invested",
+        "\"Onyx\" \"$10M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Onyx\" \"$10M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Onyx\" \"$10M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "site:onyx.app \"Onyx\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "site:onyx.app \"Onyx\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Onyx\" \"Onyx Raises $10M To Help Teams Find Knowledge Faster with\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Onyx\" \"Onyx Raises $10M To Help Teams Find Knowledge Faster with\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Onyx\" \"$10M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Onyx\" \"$10M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Onyx\" \"$10M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Onyx\" \"$10M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:31:39.315Z"
+    },
+    {
+      "event_id": "EV-b695dedc9acda5dc",
+      "company_name": "Sycamore",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Sycamore\" \"$65M\" funding investors round",
+        "site:sycamore.so \"Sycamore\" product customers case study",
+        "\"Sycamore\" \"Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise\" competitors product use case",
+        "\"Sycamore\" \"$65M\" investor quote why invested",
+        "\"Sycamore\" \"$65M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Sycamore\" \"$65M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sycamore\" \"$65M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "site:sycamore.so \"Sycamore\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "site:sycamore.so \"Sycamore\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sycamore\" \"Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sycamore\" \"Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sycamore\" \"$65M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sycamore\" \"$65M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Sycamore\" \"$65M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Sycamore\" \"$65M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:31:39.315Z"
+    },
+    {
+      "event_id": "EV-30466ebe86779a64",
+      "company_name": "Mem0",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Mem0\" \"$24M\" funding investors round",
+        "\"Mem0\" product customers case study",
+        "\"Mem0\" \"Mem0 Raises $24M Series A to Build Memory Layer for AI Agents\" competitors product use case",
+        "\"Mem0\" \"$24M\" investor quote why invested",
+        "\"Mem0\" \"$24M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Mem0\" \"$24M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Mem0\" \"$24M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Mem0\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Mem0\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Mem0\" \"Mem0 Raises $24M Series A to Build Memory Layer for AI Agents\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Mem0\" \"Mem0 Raises $24M Series A to Build Memory Layer for AI Agents\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Mem0\" \"$24M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Mem0\" \"$24M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Mem0\" \"$24M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Mem0\" \"$24M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:31:39.315Z"
+    },
+    {
+      "event_id": "EV-85506f9f86779a6d",
+      "company_name": "Mistral AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Mistral AI\" \"3 billion\" funding investors round",
+        "\"Mistral AI\" product customers case study",
+        "\"Mistral AI\" \"Mistral AI 寻求30亿欧元融资以推动欧洲AI发展\" competitors product use case",
+        "\"Mistral AI\" \"3 billion\" investor quote why invested",
+        "\"Mistral AI\" \"3 billion\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Mistral AI\" \"3 billion\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Mistral AI\" \"3 billion\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Mistral AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Mistral AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Mistral AI\" \"Mistral AI 寻求30亿欧元融资以推动欧洲AI发展\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Mistral AI\" \"Mistral AI 寻求30亿欧元融资以推动欧洲AI发展\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Mistral AI\" \"3 billion\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Mistral AI\" \"3 billion\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Mistral AI\" \"3 billion\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Mistral AI\" \"3 billion\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:31:39.315Z"
+    }
+  ]
+}

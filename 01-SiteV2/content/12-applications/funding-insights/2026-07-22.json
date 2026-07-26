@@ -1,0 +1,1816 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-22",
+    "generated_at": "2026-07-26T15:21:46.140Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 3,
+      "auto_published": 3,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-8a5c369cf132da9b",
+      "triggered_by_event_id": "EV-4eb0556b8c72d410",
+      "as_of_date": "2026-07-22",
+      "company": {
+        "entity_id": "EN-098a40b4499d7512",
+        "name": "Maisa AI",
+        "full_name": "Maisa AI",
+        "website": "https://maisa.ai/",
+        "summary": "Maisa AI 是一家成立一年的初创公司，致力于通过可问责的 AI 智能体解决企业 AI 高达 95% 的失败率问题。其核心方法是构建可审计的“数字员工”，而非不透明的黑箱系统。",
+        "headquarters": "Valencia, Spain, and San Francisco, USA",
+        "founders": [
+          {
+            "name": "David Villalón",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f154528a83a385f1",
+                "quote": "Maisa CEO David Villalón told TechCrunch."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Manuel Romero",
+            "role": "CSO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f154528a83a385f1",
+                "quote": "Maisa's co-founder and chief scientific officer, Manuel Romero"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "35",
+          "observed_at": "2025-08-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "Maisa plans to use its funding to grow from 35 to as many as 65 people by the first quarter of 2026"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f154528a83a385f1",
+            "quote": "The year-old startup has built its entire approach around the premise that enterprise automation requires accountable AI agents, not opaque black boxes."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$25 million",
+        "total_raised": "$30 million",
+        "announced_at": "2025-08-27",
+        "investors": [
+          {
+            "name": "Creandum",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f154528a83a385f1",
+                "quote": "a new, $25 million seed round led by European VC firm Creandum"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Forgepoint Capital International",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f154528a83a385f1",
+                "quote": "U.S. firm Forgepoint Capital International participated in this new round via its European joint venture with Spanish bank Banco Santander"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "NFX",
+            "role": "既有投资方（种子轮前领投），本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f154528a83a385f1",
+                "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Village Global",
+            "role": "既有投资方（种子轮前领投），本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f154528a83a385f1",
+                "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f154528a83a385f1",
+            "quote": "With a new, $25 million seed round led by European VC firm Creandum, it has now launched Maisa Studio"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Maisa Studio",
+          "description": "一个模型无关的自助式平台，帮助用户通过自然语言部署可训练的“数字员工”，以执行复杂的、知识密集型的流程，并具备完全的可审计性。",
+          "target_customers": "非技术背景的业务专家（公民开发者），以及银行、汽车制造、能源等受监管行业的企业。",
+          "features": [
+            "通过自然语言指令创建和训练数字员工",
+            "基于HALP（人类增强型LLM处理）的人机协作训练方法",
+            "基于KPU（知识处理单元）的确定性推理引擎，限制幻觉",
+            "记录完整的“工作链”（Chain-of-Work），提供透明、可审计的执行记录",
+            "支持在安全云或本地部署",
+            "开箱即用集成超过450个第三方系统"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b570debc734e6186",
+              "quote": "The platform is being piloted at scale inside global banks, car manufacturers and energy companies, among others, to run multi-step, complex and compliance-sensitive workflows with full traceability and reliability."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "一家全球投资银行",
+          "industry": "银行与金融服务",
+          "use_case": "使用Maisa数字员工自动化媒体筛选流程，从新闻文章中提取相关事实，评估声誉风险，并生成可供审计的摘要。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b570debc734e6186",
+              "quote": "A global investment bank has replaced its manual media screening process with Maisa digital workers, which extract relevant facts from news articles, assess reputational risk and produce audit-ready summaries in minutes, at scale."
+            }
+          ]
+        },
+        {
+          "name": "一家大型金融服务公司",
+          "industry": "金融服务",
+          "use_case": "使用Maisa Studio自动化交易检查和核对，过滤掉99%的误报，并将人均生产力提升10倍。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b570debc734e6186",
+              "quote": "A large financial services firm has automated transaction checking and reconciliation using Studio, enabling it to filter out 99% of false positives and see a 10x improvement in productivity per person."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "CrewAI",
+          "product": "AI智能体工作流自动化平台",
+          "scenario": "企业级AI驱动的业务流程自动化",
+          "target_customer": "寻求AI自动化解决方案的企业",
+          "funding_summary": "",
+          "core_difference": "Maisa专注于要求非技术用户可问责的复杂用例，强调可靠性、可审计性和修复错误的能力，而CrewAI是众多AI驱动的业务工作流自动化产品之一。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "Focusing on complex use cases demanding accountability from nontechnical users could be a differentiator for Maisa, whose competitors include CrewAI and many other AI-powered, business-focused workflow automation products."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "种子轮前融资金额",
+          "value": "$5 million",
+          "observed_at": "2024-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global."
+            }
+          ]
+        },
+        {
+          "label": "计划团队规模增长",
+          "value": "从35人增至65人",
+          "observed_at": "2026-Q1",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "Maisa plans to use its funding to grow from 35 to as many as 65 people by the first quarter of 2026"
+            }
+          ]
+        },
+        {
+          "label": "交易核对误报过滤率",
+          "value": "99%",
+          "observed_at": "2025-08-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b570debc734e6186",
+              "quote": "enabling it to filter out 99% of false positives"
+            }
+          ]
+        },
+        {
+          "label": "交易核对人均生产力提升",
+          "value": "10倍",
+          "observed_at": "2025-08-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b570debc734e6186",
+              "quote": "see a 10x improvement in productivity per person."
+            }
+          ]
+        },
+        {
+          "label": "授权书验证自动化每年释放的工作时间",
+          "value": "40,000小时",
+          "observed_at": "2025-08-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d66c1382c923cf9",
+              "quote": "Automating Power of Attorney verification freed forty thousand hours annually"
+            }
+          ]
+        },
+        {
+          "label": "授权书验证自动化单区域节省成本",
+          "value": "120万欧元",
+          "observed_at": "2025-08-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2d66c1382c923cf9",
+              "quote": "Deploying the solution in a single region generated 1.2 million euros in savings"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "David Villalón",
+          "quote": "Instead of using AI to build the responses, we use AI to build the process that needs to be executed to get to the response — what we call ‘chain-of-work,’",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "Instead of using AI to build the responses, we use AI to build the process that needs to be executed to get to the response — what we call ‘chain-of-work,’"
+            }
+          ]
+        },
+        {
+          "speaker": "David Villalón",
+          "quote": "This investment is validation that AI in business must be built on trust. Our platform gives teams the power to use AI workers which not only perform with incredible accuracy and intelligence, but also explain and prove their logic, and document every step in the work process.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b570debc734e6186",
+              "quote": "This investment is validation that AI in business must be built on trust. Our platform gives teams the power to use AI workers which not only perform with incredible accuracy and intelligence, but also explain and prove their logic, and document every step in the work process."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Creandum",
+            "speaker": "Peter Specht",
+            "speaker_role": "General Partner",
+            "rationale": "Maisa正在解决AI领域最艰巨的挑战之一：使其在关键业务运营中变得可靠和安全。该机构对其在顶级公司中的早期应用和巨大需求充满信心，并看好其规模化增长。",
+            "quote": "Maisa is solving one of the toughest challenges in AI: making it reliable and safe to use in mission-critical business operations. With a string of top global companies already using the technology and massive demand, we are extremely confident of seeing significant growth at scale.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b570debc734e6186",
+                "quote": "Maisa is solving one of the toughest challenges in AI: making it reliable and safe to use in mission-critical business operations. With a string of top global companies already using the technology and massive demand, we are extremely confident of seeing significant growth at scale."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“可审计的可靠性”能否成为企业AI从试点走向生产环境的决定性因素。当前融资和估值依赖于已验证的信号：Maisa的解决方案已在全球银行、汽车制造和能源等受监管行业的生产环境中部署，并产生了可量化的成果（如过滤99%误报、10倍生产力提升、年节省120万欧元）。这些信号表明其“工作链”和KPU技术路线在要求高合规性的复杂场景中找到了产品-市场契合点，而非仅停留在概念验证阶段。",
+        "validated_signals": [
+          "产品已在全球银行、汽车制造商和能源公司的生产环境中运行，而非实验或原型。",
+          "在金融服务客户中实现了99%的误报过滤和10倍的人均生产力提升。",
+          "在单个区域的授权书验证自动化部署中，每年节省120万欧元并释放4万小时工作时间。",
+          "被Gartner评为与Google、Amazon并列的顶级AI代理供应商。"
+        ],
+        "risks": [
+          "客户基础极小，与拥有数百万用户的免费增值平台相比，其企业优先策略可能导致市场扩张速度较慢，面临被更大平台挤压的风险。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业级AI智能体与流程自动化"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Maisa Studio",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b570debc734e6186",
+              "quote": "The platform is being piloted at scale inside global banks, car manufacturers and energy companies, among others, to run multi-step, complex and compliance-sensitive workflows with full traceability and reliability."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "David Villalón",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "Maisa CEO David Villalón told TechCrunch."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Manuel Romero",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "Maisa's co-founder and chief scientific officer, Manuel Romero"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Creandum",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "a new, $25 million seed round led by European VC firm Creandum"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Forgepoint Capital International",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "U.S. firm Forgepoint Capital International participated in this new round via its European joint venture with Spanish bank Banco Santander"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "NFX",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Village Global",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家全球投资银行",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b570debc734e6186",
+              "quote": "A global investment bank has replaced its manual media screening process with Maisa digital workers, which extract relevant facts from news articles, assess reputational risk and produce audit-ready summaries in minutes, at scale."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家大型金融服务公司",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b570debc734e6186",
+              "quote": "A large financial services firm has automated transaction checking and reconciliation using Studio, enabling it to filter out 99% of false positives and see a 10x improvement in productivity per person."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "CrewAI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f154528a83a385f1",
+              "quote": "Focusing on complex use cases demanding accountability from nontechnical users could be a differentiator for Maisa, whose competitors include CrewAI and many other AI-powered, business-focused workflow automation products."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-4eb0556b8c72d410",
+          "date": "2025-08-27",
+          "title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
+          "amount": "$25 million",
+          "source_refs": [
+            "SA-948704456ab07a3b"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-f154528a83a385f1",
+          "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
+          "title": "Maisa AI 获 2500 万美元融资，旨在解决企业 AI 95% 的失败率",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-22T01:55:20.087Z",
+          "content_hash": "8c799b616e20ea1d",
+          "source_artifact_id": "SA-948704456ab07a3b",
+          "raw_id": "RAW-67109fad98267407"
+        },
+        {
+          "source_id": "FISRC-b570debc734e6186",
+          "source_url": "https://maisa.ai/agentic-insights/maisa-raises-25m-from-creandum-and-forgepoint/",
+          "title": "Rising star of agentic AI delivering trustworthy ‘digital workers’ raises $25M from Creandum and Forgepoint - Maisa AI",
+          "publisher": "maisa.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:20:55.444Z",
+          "content_hash": "1874e1c9659c0611",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-2d66c1382c923cf9",
+          "source_url": "https://maisa.ai/banking-financial-services/power-of-attorney-verification/",
+          "title": "Power of Attorney Automation - Maisa AI",
+          "publisher": "maisa.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:21:03.868Z",
+          "content_hash": "6d802eded160568b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:21:46.071Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:21:46.071Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-f00b5824a2f30956",
+      "triggered_by_event_id": "EV-463cb26b5e03c7f7",
+      "as_of_date": "2026-07-22",
+      "company": {
+        "entity_id": "EN-fa373257792c6b9b",
+        "name": "Prime Intellect",
+        "full_name": "Prime Intellect",
+        "website": "https://www.primeintellect.ai",
+        "summary": "Prime Intellect 是一家提供全栈平台的公司，旨在帮助企业、AI 实验室和政府机构训练、部署和持续优化自己的 AI 模型，从而摆脱对封闭式前沿 AI 实验室的依赖。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Vincent Weisser",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8d68719d4ab934b9",
+                "quote": "Vincent Weisser, co-founder and CEO"
+              },
+              {
+                "source_id": "FISRC-3b1f1aee6b1a3091",
+                "quote": "Co-founders Vincent Weisser and Johannes Hagemann"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Johannes Hagemann",
+            "role": "联合创始人兼 CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b1f1aee6b1a3091",
+                "quote": "Co-founders Vincent Weisser and Johannes Hagemann"
+              },
+              {
+                "source_id": "FISRC-9e20328431888381",
+                "quote": "Co-founder and CTO Johannes Hagemann built large-scale LLM training frameworks at Aleph Alpha."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-afe2544836558c64",
+            "quote": "Prime Intellect, a startup that provides computing power and specialized software tools that help companies build AI agents, has raised a $130 million Series A at a $1 billion valuation."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$130 million",
+        "total_raised": "超过 $150 million",
+        "announced_at": "2026-07-08",
+        "investors": [
+          {
+            "name": "Radical Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-afe2544836558c64",
+                "quote": "The massive round was led by Radical Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Nvidia Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8d68719d4ab934b9",
+                "quote": "Nvidia joined as a strategic investor."
+              },
+              {
+                "source_id": "FISRC-fbda7a24ef3d8ef8",
+                "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Intel Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fbda7a24ef3d8ef8",
+                "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dell Technologies Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-afe2544836558c64",
+                "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq"
+              },
+              {
+                "source_id": "FISRC-3b1f1aee6b1a3091",
+                "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Iconiq",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-afe2544836558c64",
+                "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq"
+              },
+              {
+                "source_id": "FISRC-9e20328431888381",
+                "quote": "joined by NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and ICONIQ"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "既有投资方",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3b1f1aee6b1a3091",
+                "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors."
+              },
+              {
+                "source_id": "FISRC-13f8e60149bac60c",
+                "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and our existing investors."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-13f8e60149bac60c",
+            "quote": "Bringing our total funding to over $150M to build the open superintelligence stack."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "全栈 AI 智能体开发平台",
+          "description": "一个用于训练、部署和持续改进 AI 模型的模块化全栈平台，整合了计算资源、强化学习框架、环境、沙箱、评估工具和部署服务。",
+          "target_customers": "企业、AI 初创公司、AI 实验室、寻求主权 AI 的政府机构",
+          "features": [
+            "计算资源访问",
+            "大规模强化学习框架",
+            "模块化工具市场",
+            "评估工具",
+            "沙箱环境",
+            "部署服务"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8d68719d4ab934b9",
+              "quote": "The pitch is a full-stack platform for training, deploying, and continuously improving AI models"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Ramp",
+          "industry": "金融科技",
+          "use_case": "使用 Prime Intellect 的平台训练了一个 35B 参数的智能体，用于在电子表格中检索信息，在准确性上超越了前沿模型，同时运行速度更快、成本更低。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-13f8e60149bac60c",
+              "quote": "Ramp trained a 35B model on Lab that beat Opus at spreadsheet search, running 27% faster and far cheaper than Haiku."
+            }
+          ]
+        },
+        {
+          "name": "Zapier",
+          "industry": "自动化软件",
+          "use_case": "使用 Prime Intellect 的平台进行 AI 智能体开发。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fbda7a24ef3d8ef8",
+              "quote": "Their annualized run rate sits at $100 million, fueled by partnerships with companies like Ramp and Zapier."
+            },
+            {
+              "source_id": "FISRC-9e20328431888381",
+              "quote": "including enterprise customers like Zapier"
+            }
+          ]
+        },
+        {
+          "name": "Flapping Airplanes",
+          "industry": "AI 实验室",
+          "use_case": "使用 Prime Intellect 的平台进行 AI 智能体开发。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9e20328431888381",
+              "quote": "including enterprise customers like Zapier, Character.AI, Arcee, Browserbase, and Flapping Airplanes."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "年化经常性收入 (ARR)",
+          "value": "超过 $100 million",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8d68719d4ab934b9",
+              "quote": "reaching north of $100M ARR on less than $20 million in prior funding"
+            }
+          ]
+        },
+        {
+          "label": "运营 GPU 数量",
+          "value": "约 15,000 个，正在向 30,000+ 扩展",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8d68719d4ab934b9",
+              "quote": "Right now, we run like 15,000 GPUs and scaling to like over 30,000."
+            }
+          ]
+        },
+        {
+          "label": "客户数量",
+          "value": "超过 6,000 个团队",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-13f8e60149bac60c",
+              "quote": "We are grateful to over 6k customers working with us"
+            }
+          ]
+        },
+        {
+          "label": "Ramp 模型性能提升 (速度)",
+          "value": "比 Haiku 快 27%-30%",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8d68719d4ab934b9",
+              "quote": "at a fraction of the cost of running Haiku and 30% faster"
+            },
+            {
+              "source_id": "FISRC-13f8e60149bac60c",
+              "quote": "running 27% faster and far cheaper than Haiku."
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“企业自主拥有模型优化循环”这一范式的兴起。本轮融资的估值（10亿美元）和规模（1.3亿美元）主要依赖于已验证的业务信号：公司用不到2000万美元的前期资金撬动了超过1亿美元的ARR，证明了其产品市场契合度极高，且客户（如Ramp）已通过其平台在特定任务上实现了对前沿闭源模型的超越。判断的证据边界在于，当前的成功案例仍集中在AI原生公司，传统大型企业的采购周期和全面采用情况尚待验证。",
+        "validated_signals": [
+          "ARR 超过 1 亿美元，且前期总融资额不到 2000 万美元，展示了极高的资本效率。",
+          "客户 Ramp 使用其平台训练的模型在特定任务上超越了 Claude Opus，验证了平台的技术有效性和商业价值。",
+          "运营约 15,000 个 GPU，并计划扩展至 30,000 个以上，表明其基础设施规模和客户需求正在快速增长。"
+        ],
+        "risks": [
+          "企业级客户的全面采用可能慢于预期，因为采购决策、安全合规和与现有系统的集成复杂度高，可能导致平台仅被用作项目工具而非核心控制层。"
+        ],
+        "related_direction_id": "",
+        "sector": "AI 基础设施与开发工具"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "全栈 AI 智能体开发平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8d68719d4ab934b9",
+              "quote": "The pitch is a full-stack platform for training, deploying, and continuously improving AI models"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Vincent Weisser",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8d68719d4ab934b9",
+              "quote": "Vincent Weisser, co-founder and CEO"
+            },
+            {
+              "source_id": "FISRC-3b1f1aee6b1a3091",
+              "quote": "Co-founders Vincent Weisser and Johannes Hagemann"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Johannes Hagemann",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3b1f1aee6b1a3091",
+              "quote": "Co-founders Vincent Weisser and Johannes Hagemann"
+            },
+            {
+              "source_id": "FISRC-9e20328431888381",
+              "quote": "Co-founder and CTO Johannes Hagemann built large-scale LLM training frameworks at Aleph Alpha."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Radical Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-afe2544836558c64",
+              "quote": "The massive round was led by Radical Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Nvidia Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8d68719d4ab934b9",
+              "quote": "Nvidia joined as a strategic investor."
+            },
+            {
+              "source_id": "FISRC-fbda7a24ef3d8ef8",
+              "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Intel Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fbda7a24ef3d8ef8",
+              "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dell Technologies Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-afe2544836558c64",
+              "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq"
+            },
+            {
+              "source_id": "FISRC-3b1f1aee6b1a3091",
+              "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Iconiq",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-afe2544836558c64",
+              "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq"
+            },
+            {
+              "source_id": "FISRC-9e20328431888381",
+              "quote": "joined by NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and ICONIQ"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "既有投资方",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-3b1f1aee6b1a3091",
+              "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors."
+            },
+            {
+              "source_id": "FISRC-13f8e60149bac60c",
+              "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital, and our existing investors."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ramp",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-13f8e60149bac60c",
+              "quote": "Ramp trained a 35B model on Lab that beat Opus at spreadsheet search, running 27% faster and far cheaper than Haiku."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Zapier",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fbda7a24ef3d8ef8",
+              "quote": "Their annualized run rate sits at $100 million, fueled by partnerships with companies like Ramp and Zapier."
+            },
+            {
+              "source_id": "FISRC-9e20328431888381",
+              "quote": "including enterprise customers like Zapier"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Flapping Airplanes",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9e20328431888381",
+              "quote": "including enterprise customers like Zapier, Character.AI, Arcee, Browserbase, and Flapping Airplanes."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-463cb26b5e03c7f7",
+          "date": "2026-07-09",
+          "title": "Prime Intellect 获 1.3 亿美元 A 轮融资，助力企业构建自有 AI 智能体",
+          "amount": "$130M",
+          "source_refs": [
+            "SA-2bec96260be8d65c"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-8d68719d4ab934b9",
+          "source_url": "https://www.tbpndigest.com/story/2026-07-08/prime-intellect-raises-130m-at-1b-valuation-to-build-open-sovereign-ai-stack",
+          "title": "Prime Intellect 以 10 亿美元估值融资 1.3 亿美元，用于构建开放主权 AI 技术栈",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-22T01:55:09.914Z",
+          "content_hash": "cf35ba42863e2830",
+          "source_artifact_id": "SA-88a8bc532b52f12e",
+          "raw_id": "RAW-347ec1d6027eb9ed"
+        },
+        {
+          "source_id": "FISRC-fbda7a24ef3d8ef8",
+          "source_url": "https://vtechxhub.com/insights/prime-intellect-raises-130m-series-power-enterprise-ai",
+          "title": "Prime Intellect Raises $130M for Enterprise AI Development 2026",
+          "publisher": "vtechxhub.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:58:57.206Z",
+          "content_hash": "56b4a47eeb530513",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-afe2544836558c64",
+          "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+          "title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
+          "publisher": "techcrunch.com",
+          "source_class": "secondary",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:59:03.227Z",
+          "content_hash": "596e7c850e10c828",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-3b1f1aee6b1a3091",
+          "source_url": "https://www.intelcapital.com/prime-intellect-the-full-stack-for-training-and-deploying-self-improving-agents/",
+          "title": "Prime Intellect: The Full Stack for Training and Deploying Self-Improving Agents – Intel Capital",
+          "publisher": "intelcapital.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:59:06.884Z",
+          "content_hash": "91deffc98c827626",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9e20328431888381",
+          "source_url": "https://radical.vc/prime-intellect-owning-the-learning-loop/",
+          "title": "Prime Intellect: Owning the Learning Loop - Radical Ventures",
+          "publisher": "radical.vc",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:59:17.340Z",
+          "content_hash": "13090ff8894a6511",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-13f8e60149bac60c",
+          "source_url": "https://www.primeintellect.ai/blog/series-a",
+          "title": "$130M Series A to Build the Open Superintelligence Stack",
+          "publisher": "primeintellect.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T15:00:22.702Z",
+          "content_hash": "3b2f53fa6d0decdc",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:01:05.850Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:01:05.850Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-bc962e05b6cfb149",
+      "triggered_by_event_id": "EV-2069f6a931b8c9d6",
+      "as_of_date": "2026-07-22",
+      "company": {
+        "entity_id": "EN-73ef176d9f12809e",
+        "name": "Neo",
+        "full_name": "Neo Security, Inc.",
+        "website": "www.neo.ai",
+        "summary": "Neo 是一家智能体软件控制公司，为现代企业提供实时控制层，帮助 SecOps 团队管理企业范围内的智能体转型，并保护 AI 智能体、AI 驱动的应用程序、浏览器、身份以及传统软件的安全。",
+        "headquarters": "波士顿",
+        "founders": [
+          {
+            "name": "Nick Warner",
+            "role": "CEO 兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9a07ea732902851d",
+                "quote": "Nick Warner, CEO and Co-Founder of Neo"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Shlomi Salem",
+            "role": "首席产品官兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-40dacc7619402f63",
+                "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Eran Shirazi",
+            "role": "首席技术官兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-40dacc7619402f63",
+                "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9a07ea732902851d",
+            "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮和A轮",
+        "amount": "1亿美元",
+        "total_raised": "1亿美元",
+        "announced_at": "2026-07-20",
+        "investors": [
+          {
+            "name": "Andreessen Horowitz",
+            "role": "种子轮和A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9a07ea732902851d",
+                "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners"
+              },
+              {
+                "source_id": "FISRC-821c38da3feae3b4",
+                "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "role": "种子轮和A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9a07ea732902851d",
+                "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners"
+              },
+              {
+                "source_id": "FISRC-821c38da3feae3b4",
+                "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Craft Ventures",
+            "role": "种子轮和A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9a07ea732902851d",
+                "quote": "with participation from Craft Ventures and Merlin Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Merlin Ventures",
+            "role": "种子轮和A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9a07ea732902851d",
+                "quote": "with participation from Craft Ventures and Merlin Ventures"
+              },
+              {
+                "source_id": "FISRC-7490da5364b4f477",
+                "quote": "backed by Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Tysons, Va.-based Merlin Ventures"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9a07ea732902851d",
+            "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Merlin Ventures."
+          },
+          {
+            "source_id": "FISRC-821c38da3feae3b4",
+            "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Neo 平台",
+          "description": "一个实时控制层，为 SecOps 团队提供清单、态势情报、归因和策略控制，以管理企业范围内的智能体转型，并保护 AI 智能体、AI 驱动的应用程序、浏览器、身份以及传统软件的安全。",
+          "target_customers": "企业 SecOps 团队",
+          "features": [
+            "基于 Neoverse 的软件清单",
+            "能力与风险情报",
+            "实时归因",
+            "细粒度软件控制",
+            "原生执行"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "Neo gives SecOps teams the inventory, posture intelligence, attribution, and policy control to manage enterprise-wide agentic transformation and secure AI agents, AI-enabled applications, browsers, identities, and traditional software with newly introduced agentic capabilities."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Oasis Security",
+          "product": "非人类身份治理平台",
+          "scenario": "保护智能体和自动化服务使用的凭证和访问令牌",
+          "target_customer": "企业安全团队",
+          "funding_summary": "1.2亿美元B轮融资",
+          "core_difference": "Oasis Security 专注于非人类身份治理，而 Neo 试图将清单、态势评估、归因和实时执行统一到一个覆盖智能体、应用程序、浏览器和传统软件的单一控制层中。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-821c38da3feae3b4",
+              "quote": "Oasis Security has focused specifically on non-human identity governance — securing the credentials and access tokens that agents and service accounts use, rather than the agents' behavior itself."
+            },
+            {
+              "source_id": "FISRC-821c38da3feae3b4",
+              "quote": "Neo is attempting to unify inventory, posture assessment, attribution and real-time enforcement into a single control layer spanning agents, applications, browsers and traditional software alike."
+            }
+          ]
+        },
+        {
+          "name": "WitnessAI",
+          "product": "AI 使用治理和策略执行平台",
+          "scenario": "为生成式 AI 工具提供数据丢失防护和合规性管理",
+          "target_customer": "企业安全与合规团队",
+          "funding_summary": "",
+          "core_difference": "WitnessAI 侧重于生成式 AI 工具的广泛使用治理和数据丢失防护，而 Neo 专注于为智能体软件提供实时归因和原生执行，直接在工作流内部阻止风险活动。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-821c38da3feae3b4",
+              "quote": "WitnessAI has positioned itself around AI usage governance and policy enforcement for generative AI tools broadly, with an emphasis on data loss prevention and compliance."
+            },
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "Neo enforces controls natively, enabling organizations to block risky activity, malicious models, and redirect out-of-bound prompts without handing enforcement off to another tool."
+            }
+          ]
+        },
+        {
+          "name": "Armadin",
+          "product": "智能体安全平台",
+          "scenario": "利用事件响应和威胁情报背景评估智能体风险",
+          "target_customer": "安全运营团队",
+          "funding_summary": "近1.9亿美元种子轮和A轮融资",
+          "core_difference": "Armadin 依靠事件响应和威胁情报背景建立信任，而 Neo 通过其 Neoverse 知识库和端点传感器提供对智能体软件能力的持续发现和原生执行。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-821c38da3feae3b4",
+              "quote": "Armadin, founded by Mandiant's creator, is leaning heavily on incident-response and threat-intelligence pedigree to build trust with security operations teams evaluating agentic risk."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "2025年具备智能体能力的企业应用比例",
+          "value": "5%",
+          "observed_at": "2025",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "only 5% of enterprise applications featured agentic capabilities in 2025"
+            }
+          ]
+        },
+        {
+          "label": "预计2026年底具备智能体能力的企业应用比例",
+          "value": "40%",
+          "observed_at": "2026-12-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "40% will by the end of 2026"
+            }
+          ]
+        },
+        {
+          "label": "Neoverse 知识库覆盖的技能、二进制文件、MCP 包和第三方 AI 模型数量",
+          "value": "超过120万",
+          "observed_at": "2026-07-20",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6c70cf5c6a0d1996",
+              "quote": "covering over 1.2 million skills, binaries, MCP packages, and third-party AI models"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“智能体软件控制层”能否成为企业安全基础设施的独立品类。本轮1亿美元融资（种子轮和A轮合计）的估值基础并非来自已证实的规模化收入或产品成熟度，而是基于三个已验证信号：1）创始团队具备构建和规模化企业级安全平台的实战记录（SentinelOne 从100万美元到5亿美元 ARR 并完成 IPO）；2）企业应用智能体化的速度远超安全团队适应能力（Gartner 预测具备智能体能力的企业应用比例将从2025年的5%跃升至2026年底的40%）；3）现有安全架构无法覆盖智能体软件的非确定性行为，市场存在结构性空白。投资机构明确将 Neo 的创始团队背景作为品类定义能力的代理指标，而非依赖传统的产品市场匹配数据。",
+        "validated_signals": [
+          "创始团队曾将 SentinelOne 从100万美元 ARR 扩展至5亿美元并完成 IPO，具备构建和规模化企业级安全平台的实战记录",
+          "Gartner 数据显示具备智能体能力的企业应用比例预计从2025年的5%跃升至2026年底的40%，表明市场窗口正在快速打开",
+          "Neo 已开发出可在数分钟内生成组织完整智能体软件清单的扫描器，并建立了覆盖超过120万项技能、二进制文件、MCP 包和第三方 AI 模型的 Neoverse 知识库",
+          "Neo 的技术已在金融服务、交通运输和能源等受监管行业进行测试"
+        ],
+        "risks": [
+          "智能体 AI 治理市场尚无行业共识，Neo 及其竞争对手和客户仍在共同定义该品类的完整产品形态，存在品类定义失败或偏离预期的风险",
+          "平台型安全厂商（如 CrowdStrike、Microsoft、Okta）可能将现有平台扩展至智能体治理领域，压缩独立厂商的生存窗口",
+          "Neo 的原生执行能力要求企业授予其自主阻断或重定向生产工作流的权限，企业对此类授权的谨慎态度可能导致部署深度停留在可观测性层面而非执行层面"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "智能体安全"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Neo 平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "Neo gives SecOps teams the inventory, posture intelligence, attribution, and policy control to manage enterprise-wide agentic transformation and secure AI agents, AI-enabled applications, browsers, identities, and traditional software with newly introduced agentic capabilities."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Nick Warner",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "Nick Warner, CEO and Co-Founder of Neo"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Shlomi Salem",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-40dacc7619402f63",
+              "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Eran Shirazi",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-40dacc7619402f63",
+              "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners"
+            },
+            {
+              "source_id": "FISRC-821c38da3feae3b4",
+              "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bessemer Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "Neo , the Agentic Software Control company, today emerged from stealth with $100M in funding from Andreessen Horowitz and Bessemer Venture Partners"
+            },
+            {
+              "source_id": "FISRC-821c38da3feae3b4",
+              "quote": "Neo emerged from stealth this week with $100 million in funding across seed and Series A rounds, led by Andreessen Horowitz and Bessemer Venture Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Craft Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "with participation from Craft Ventures and Merlin Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Merlin Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "with participation from Craft Ventures and Merlin Ventures"
+            },
+            {
+              "source_id": "FISRC-7490da5364b4f477",
+              "quote": "backed by Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Tysons, Va.-based Merlin Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Oasis Security",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-821c38da3feae3b4",
+              "quote": "Oasis Security has focused specifically on non-human identity governance — securing the credentials and access tokens that agents and service accounts use, rather than the agents' behavior itself."
+            },
+            {
+              "source_id": "FISRC-821c38da3feae3b4",
+              "quote": "Neo is attempting to unify inventory, posture assessment, attribution and real-time enforcement into a single control layer spanning agents, applications, browsers and traditional software alike."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "WitnessAI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-821c38da3feae3b4",
+              "quote": "WitnessAI has positioned itself around AI usage governance and policy enforcement for generative AI tools broadly, with an emphasis on data loss prevention and compliance."
+            },
+            {
+              "source_id": "FISRC-9a07ea732902851d",
+              "quote": "Neo enforces controls natively, enabling organizations to block risky activity, malicious models, and redirect out-of-bound prompts without handing enforcement off to another tool."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Armadin",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-821c38da3feae3b4",
+              "quote": "Armadin, founded by Mandiant's creator, is leaning heavily on incident-response and threat-intelligence pedigree to build trust with security operations teams evaluating agentic risk."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-2069f6a931b8c9d6",
+          "date": "2026-07-20",
+          "title": "Neo 获 1 亿美元融资，致力于保障企业级 AI 软件安全",
+          "amount": "$100M",
+          "source_refs": [
+            "SA-bf78c1632227153c"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9a07ea732902851d",
+          "source_url": "https://www.globenewswire.com/news-release/2026/07/20/3329638/0/en/Neo-Launches-with-100M-to-Secure-AI-Software-Across-the-Enterprise.html",
+          "title": "Neo 获 1 亿美元融资，致力于保障企业级 AI 软件安全",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-22T01:55:08.247Z",
+          "content_hash": "9889ba96b2e121cd",
+          "source_artifact_id": "SA-bf78c1632227153c",
+          "raw_id": "RAW-b89e1247c47a2977"
+        },
+        {
+          "source_id": "FISRC-40dacc7619402f63",
+          "source_url": "https://theadvisertimes.com/business/neo-security-raises-100m-to-secure-ai-agents/",
+          "title": "Neo Security raises $100m to secure AI agents - theadvisertimes.com",
+          "publisher": "theadvisertimes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:59:03.445Z",
+          "content_hash": "7db9e3b1dae054c9",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6c70cf5c6a0d1996",
+          "source_url": "https://www.craftventures.com/articles/partnering-with-neo-to-secure-agentic-software",
+          "title": "Craft Ventures",
+          "publisher": "craftventures.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:59:36.592Z",
+          "content_hash": "b515861abd84685c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-821c38da3feae3b4",
+          "source_url": "https://www.thecodew.com/2026/07/why-neo-raised-big-ai-security-investment-boom.html",
+          "title": "Company Deep Dive: Why Neo Raised Big: Inside the AI Security Investment Boom - The CODEW",
+          "publisher": "thecodew.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:59:47.009Z",
+          "content_hash": "d59787388c7f4ee6",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-7490da5364b4f477",
+          "source_url": "https://www.citybiz.co/article/876464/former-sentinelone-executives-launch-neo-with-100m-to-advance-ai-security/",
+          "title": "Former SentinelOne Executives Launch Neo With $100M to Advance AI Security | citybiz",
+          "publisher": "citybiz.co",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:59:49.966Z",
+          "content_hash": "2f173c1b3f38903d",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T15:00:45.004Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T15:00:45.004Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-2069f6a931b8c9d6",
+      "company_name": "Neo",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Neo\" \"$100M\" funding investors round",
+        "\"Neo\" product customers case study",
+        "\"Neo\" \"Neo Launches with $100M to Secure AI Software Across the Enterprise\" competitors product use case",
+        "\"Neo\" \"$100M\" investor quote why invested",
+        "\"Neo\" \"$100M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Neo\" \"$100M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Neo\" \"$100M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Neo\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Neo\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Neo\" \"Neo Launches with $100M to Secure AI Software Across the Enterprise\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Neo\" \"Neo Launches with $100M to Secure AI Software Across the Enterprise\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Neo\" \"$100M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Neo\" \"$100M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Neo\" \"$100M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Neo\" \"$100M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:01:08.879Z"
+    },
+    {
+      "event_id": "EV-463cb26b5e03c7f7",
+      "company_name": "Prime Intellect",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Prime Intellect\" \"$130M\" funding investors round",
+        "\"Prime Intellect\" product customers case study",
+        "\"Prime Intellect\" \"Prime Intellect raises $130M at $1B valuation to build open sovereign AI stack | TBPN Digest\" competitors product use case",
+        "\"Prime Intellect\" \"$130M\" investor quote why invested",
+        "\"Prime Intellect\" \"$130M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Prime Intellect\" \"$130M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Prime Intellect\" \"$130M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Prime Intellect\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Prime Intellect\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Prime Intellect\" \"Prime Intellect raises $130M at $1B valuation to build open sovereign AI stack | TBPN Digest\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Prime Intellect\" \"Prime Intellect raises $130M at $1B valuation to build open sovereign AI stack | TBPN Digest\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Prime Intellect\" \"$130M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Prime Intellect\" \"$130M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Prime Intellect\" \"$130M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Prime Intellect\" \"$130M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:01:08.879Z"
+    },
+    {
+      "event_id": "EV-4eb0556b8c72d410",
+      "company_name": "Maisa AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Maisa AI\" \"$25 million\" funding investors round",
+        "\"Maisa AI\" product customers case study",
+        "\"Maisa AI\" \"Maisa AI gets $25M to fix enterprise AI's 95% failure rate | TechCrunch\" competitors product use case",
+        "\"Maisa AI\" \"$25 million\" investor quote why invested",
+        "\"Maisa AI\" \"$25 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Maisa AI\" \"$25 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Maisa AI\" \"$25 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Maisa AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Maisa AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Maisa AI\" \"Maisa AI gets $25M to fix enterprise AI's 95% failure rate | TechCrunch\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Maisa AI\" \"Maisa AI gets $25M to fix enterprise AI's 95% failure rate | TechCrunch\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Maisa AI\" \"$25 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Maisa AI\" \"$25 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Maisa AI\" \"$25 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Maisa AI\" \"$25 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T15:21:46.122Z"
+    }
+  ]
+}

@@ -1,0 +1,806 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-13",
+    "generated_at": "2026-07-26T15:19:09.388Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 2,
+      "auto_published": 1,
+      "blocked": 1,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-9166696739d69d1c",
+      "triggered_by_event_id": "EV-18304fc17b31148e",
+      "as_of_date": "2026-07-13",
+      "company": {
+        "entity_id": "EN-478cc1059b738832",
+        "name": "Alta",
+        "full_name": "Alta",
+        "website": "altahq.com",
+        "summary": "Alta 是一家为市场进入团队提供 AI 行动系统的公司，通过构建“公司大脑”作为中央智能层，以协调的 AI 智能体网络取代碎片化的销售工具栈，实现从线索挖掘到客户关系管理的全流程自动化。",
+        "headquarters": "以色列特拉维夫",
+        "founders": [
+          {
+            "name": "Stav Levi-Neumark",
+            "role": "CEO 兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "Stav Levi-Neumark, CEO and Co-founder of Alta"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tom Hoffen",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mor Shabtai",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "55人",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d43345a21f12bb8",
+              "quote": "Alta currently employs 55 people, split evenly between Israel and the United States"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5d43345a21f12bb8",
+            "quote": "Israeli startup Alta, which develops an AI agent platform for marketing, sales, and business development teams"
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "2500万美元",
+        "total_raised": "3200万美元",
+        "announced_at": "2026-07-08",
+        "investors": [
+          {
+            "name": "IN Venture",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "The round was led by IN Venture"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mindset Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Skywell Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "LeumiTech77",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Entrée Capital",
+            "role": "既有投资方（种子轮及本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+              },
+              {
+                "source_id": "FISRC-5d43345a21f12bb8",
+                "quote": "Avi Eyal, managing partner at Entrée Capital, which invested in Alta from its early stages"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Target Global",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Verissimo Ventures",
+            "role": "既有投资方（本轮参投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9661f69b0104e76e",
+                "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9661f69b0104e76e",
+            "quote": "TEL AVIV, Israel , July 8, 2026 /PRNewswire/ -- Alta , the AI System of Actions for go-to-market teams, today announced $25 million in Series A funding. The round was led by IN Venture, with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures, along with prominent angel investors and scout funds."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Alta AI System of Actions",
+          "description": "一个为市场进入团队构建的 AI 行动系统，通过“公司大脑”中央智能层协调 AI 智能体网络，取代碎片化的销售工具栈，覆盖从线索挖掘、研究、多渠道外展、入站线索资格认定、AI 电话呼叫到持续优化的全流程。",
+          "target_customers": "从财富500强到中小企业的收入团队",
+          "features": [
+            "公司大脑（Company Brain）中央智能层",
+            "协调的 AI 智能体网络",
+            "集成50多个数据源和数百个购买信号",
+            "与60多个 GTM 工具连接",
+            "线索挖掘与研究",
+            "多渠道外展",
+            "入站线索资格认定",
+            "AI 电话呼叫",
+            "持续优化"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Alta handles prospecting, research, multi-channel outbound, inbound qualification, AI calling, and continuous optimization."
+            },
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Alta tackles the challenge of deploying AI agents by first building a \"Company Brain\" that serves as a centralized intelligence layer that maps exactly how a business's GTM engine works."
+            },
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "fueled by more than 50 data sources and hundreds of buying signals"
+            },
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "connects to 60+ GTM tools, including Attio and Clay"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Snowflake",
+          "industry": "数据云平台",
+          "use_case": "使用 Alta 平台进行市场进入流程管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+            }
+          ]
+        },
+        {
+          "name": "Deel",
+          "industry": "全球招聘与薪酬管理",
+          "use_case": "使用 Alta 平台进行市场进入流程管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+            }
+          ]
+        },
+        {
+          "name": "Atlassian",
+          "industry": "软件开发与协作工具",
+          "use_case": "使用 Alta 平台进行市场进入流程管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+            }
+          ]
+        },
+        {
+          "name": "Atoms",
+          "industry": "未披露",
+          "use_case": "使用 Alta 平台进行市场进入流程管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+            }
+          ]
+        },
+        {
+          "name": "Sabio Group",
+          "industry": "客户体验解决方案",
+          "use_case": "使用 Alta 平台进行市场进入流程管理",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Its customers include revenue teams at Snowflake, Deel, Atlassian, Atoms, Riverside, and Sabio Group."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Salesforce",
+          "product": "Salesforce CRM 及 AI 智能体赋能层",
+          "scenario": "通过 API、MCP 工具和 CLI 接口在现有系统上添加智能层",
+          "target_customer": "企业级销售组织",
+          "funding_summary": "",
+          "core_difference": "Salesforce 在原有数据存储和工作流管理系统上改造添加智能层，而 Alta 从零开始构建智能原生平台，以“公司大脑”协调 AI 智能体网络，取代碎片化工具栈。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Industry leaders like Salesforce and HubSpot have introduced agent-enablement layers through APIs, MCP tools, and CLI interfaces, underscoring a broader race to add intelligence to systems originally designed for data storage and workflow management. But retrofitting intelligence onto legacy architectures is fundamentally different from building an intelligence-native platform from the ground up"
+            }
+          ]
+        },
+        {
+          "name": "HubSpot",
+          "product": "HubSpot CRM 及 AI 智能体赋能层",
+          "scenario": "通过 API、MCP 工具和 CLI 接口在现有系统上添加智能层",
+          "target_customer": "中小企业及企业级销售组织",
+          "funding_summary": "",
+          "core_difference": "HubSpot 在原有系统上改造添加智能层，而 Alta 从零开始构建智能原生平台，以“公司大脑”协调 AI 智能体网络，取代碎片化工具栈。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Industry leaders like Salesforce and HubSpot have introduced agent-enablement layers through APIs, MCP tools, and CLI interfaces, underscoring a broader race to add intelligence to systems originally designed for data storage and workflow management. But retrofitting intelligence onto legacy architectures is fundamentally different from building an intelligence-native platform from the ground up"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "本轮融资金额",
+          "value": "2500万美元",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "today announced $25 million in Series A funding"
+            }
+          ]
+        },
+        {
+          "label": "年度收入增长率",
+          "value": "800%",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "on track for 800% revenue growth this year"
+            }
+          ]
+        },
+        {
+          "label": "新增收入运行率",
+          "value": "1500万美元",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d43345a21f12bb8",
+              "quote": "reached $15 million in new revenue run rate"
+            }
+          ]
+        },
+        {
+          "label": "预计2026年底新增收入运行率",
+          "value": "约3000万美元",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d43345a21f12bb8",
+              "quote": "The company expects new revenue run rate of approximately $30 million by the end of 2026."
+            }
+          ]
+        },
+        {
+          "label": "客户数量",
+          "value": "超过300家",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d43345a21f12bb8",
+              "quote": "Alta currently works with more than 300 customers"
+            }
+          ]
+        },
+        {
+          "label": "每月新增业务额",
+          "value": "约150万美元",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d43345a21f12bb8",
+              "quote": "adding approximately $1.5 million in new business each month"
+            }
+          ]
+        },
+        {
+          "label": "每位客户经理管理账户数",
+          "value": "约80个（传统模式约20个）",
+          "observed_at": "2026-07-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5d43345a21f12bb8",
+              "quote": "a traditional account manager can typically oversee around 20 customers, while at Alta each account manager can manage approximately 80 accounts"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“从系统记录到系统行动”的 GTM 架构范式迁移。Alta 以“公司大脑”作为中央智能层，协调 AI 智能体网络取代碎片化工具栈，其估值逻辑建立在已验证的极高运营效率之上：每位客户经理管理约80个账户（传统模式约20个），以55人团队支撑超过300家客户和1500万美元新增收入运行率，并实现800%年收入增长。投资方 IN Venture 明确表示 Alta 不是在现有品类竞争，而是在定义新品类，并计划借助住友商事全球网络推动其进入日本和东南亚市场。",
+        "validated_signals": [
+          "商业化数月内达到100万美元收入",
+          "年度收入增长率800%",
+          "新增收入运行率达1500万美元，预计2026年底达约3000万美元",
+          "客户超过300家，包括 Snowflake、Deel、Atlassian 等知名企业",
+          "每月新增业务约150万美元",
+          "每位客户经理管理约80个账户，效率为传统模式的4倍",
+          "以55人团队支撑快速增长，计划2026年底仅增至80人",
+          "集成50多个数据源和60多个 GTM 工具"
+        ],
+        "risks": [
+          "Alta 宣称“定义新品类”，但 GTM 工具市场竞争激烈，Salesforce 和 HubSpot 等巨头正在其庞大现有客户基础上添加 AI 智能体赋能层，可能挤压 Alta 的市场空间。",
+          "从 SaaS 向“产品型服务公司”转型的商业模式尚未被大规模验证，服务交付的规模化可能面临边际成本上升的风险。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 驱动的销售与营销自动化"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Alta AI System of Actions",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Alta handles prospecting, research, multi-channel outbound, inbound qualification, AI calling, and continuous optimization."
+            },
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Alta tackles the challenge of deploying AI agents by first building a \"Company Brain\" that serves as a centralized intelligence layer that maps exactly how a business's GTM engine works."
+            },
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "fueled by more than 50 data sources and hundreds of buying signals"
+            },
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "connects to 60+ GTM tools, including Attio and Clay"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Stav Levi-Neumark",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Stav Levi-Neumark, CEO and Co-founder of Alta"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Tom Hoffen",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mor Shabtai",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Founded in 2023 by Stav Levi-Neumark and Tom Hoffen, both ex-monday.com, and serial entrepreneur Mor Shabtai"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IN Venture",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "The round was led by IN Venture"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mindset Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Skywell Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "LeumiTech77",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Entrée Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+            },
+            {
+              "source_id": "FISRC-5d43345a21f12bb8",
+              "quote": "Avi Eyal, managing partner at Entrée Capital, which invested in Alta from its early stages"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Target Global",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Verissimo Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "existing investors Entrée Capital, Target Global, and Verissimo Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Snowflake",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Deel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Atlassian",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Atoms",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Its platform is already being used by Snowflake, Deel, Atlassian, and Atoms"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Sabio Group",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Its customers include revenue teams at Snowflake, Deel, Atlassian, Atoms, Riverside, and Sabio Group."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Salesforce",
+          "canonical_entity_id": "EN-3ccbd9105a45d8fc",
+          "canonical_name": "Salesforce",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Industry leaders like Salesforce and HubSpot have introduced agent-enablement layers through APIs, MCP tools, and CLI interfaces, underscoring a broader race to add intelligence to systems originally designed for data storage and workflow management. But retrofitting intelligence onto legacy architectures is fundamentally different from building an intelligence-native platform from the ground up"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "HubSpot",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661f69b0104e76e",
+              "quote": "Industry leaders like Salesforce and HubSpot have introduced agent-enablement layers through APIs, MCP tools, and CLI interfaces, underscoring a broader race to add intelligence to systems originally designed for data storage and workflow management. But retrofitting intelligence onto legacy architectures is fundamentally different from building an intelligence-native platform from the ground up"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-d642ec7a9ca5eb0f",
+          "date": "2026-07-09",
+          "title": "Alta AI 获 2500 万美元融资，旨在加速上市自动化",
+          "amount": "$25 million",
+          "source_refs": [
+            "SA-57a0bd41c65f0753",
+            "SA-7b67804baea3e8ec"
+          ]
+        },
+        {
+          "event_id": "EV-18304fc17b31148e",
+          "date": "2026-07-08",
+          "title": "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构",
+          "amount": "$25 million",
+          "source_refs": [
+            "SA-3e9c362d0ec1caea"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9661f69b0104e76e",
+          "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+          "title": "Alta 完成 2500 万美元融资，用于重塑收入团队的市场进入架构",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-13T10:23:56.647Z",
+          "content_hash": "36ef58eefd2bf0d4",
+          "source_artifact_id": "SA-3e9c362d0ec1caea",
+          "raw_id": "RAW-80f61402be1f3d91"
+        },
+        {
+          "source_id": "FISRC-5d43345a21f12bb8",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/byylhojqze",
+          "title": "Alta raises $25 million Series A: “We’re doing for marketing and sales what AWS did f | Ctech",
+          "publisher": "calcalistech.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:50:59.769Z",
+          "content_hash": "98fbdec62372cf8b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:52:06.576Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:52:06.576Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-18304fc17b31148e",
+      "company_name": "Alta",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Alta\" \"$25 million\" funding investors round",
+        "\"Alta\" product customers case study",
+        "\"Alta\" \"Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams\" competitors product use case",
+        "\"Alta\" \"$25 million\" investor quote why invested",
+        "\"Alta\" \"$25 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Alta\" \"$25 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Alta\" \"$25 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Alta\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Alta\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Alta\" \"Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Alta\" \"Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Alta\" \"$25 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Alta\" \"$25 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Alta\" \"$25 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Alta\" \"$25 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:52:06.609Z"
+    },
+    {
+      "event_id": "EV-095e1a90f14ccdb9",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-26T15:19:09.387Z"
+    }
+  ]
+}

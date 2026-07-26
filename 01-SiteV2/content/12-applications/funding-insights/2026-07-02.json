@@ -1,0 +1,3111 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-02",
+    "generated_at": "2026-07-26T15:14:58.984Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 4,
+      "auto_published": 4,
+      "blocked": 0,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-a04737ee8d57173c",
+      "triggered_by_event_id": "EV-20d762872664fddb",
+      "as_of_date": "2026-07-02",
+      "company": {
+        "entity_id": "EN-450dcf23e621ff10",
+        "name": "Engram",
+        "full_name": "Engram",
+        "website": "https://engram.com/",
+        "summary": "Engram 是一家构建 AI 学习记忆层的公司，其模型会预先研究组织环境，为每个客户形成紧凑且持续改进的记忆，从而在使用极少 token 的情况下匹配或超越前沿模型。",
+        "headquarters": "San Francisco, California",
+        "founders": [
+          {
+            "name": "Dan Biderman",
+            "role": "CEO and co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "Founded by a team of researchers from Stanford, Berkeley, and Cornell, including CEO Dan Biderman and CTO Sabri Eyuboglu"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sabri Eyuboglu",
+            "role": "CTO and co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "Founded by a team of researchers from Stanford, Berkeley, and Cornell, including CEO Dan Biderman and CTO Sabri Eyuboglu"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Chris Ré",
+            "role": "co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "Chris Ré — one of the most influential figures in modern machine learning and a co-founder of Engram"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jessy Lin",
+            "role": "co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "Jessy Lin, a Berkeley PhD who researched at Meta's FAIR lab, developed Active Reading"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jack Morris",
+            "role": "co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "Jack Morris, a Cornell PhD also from FAIR, is known for his work on retrieval and memorization of LLM."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Scott Linderman",
+            "role": "co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "Scott Linderman, a tenured Stanford professor of statistics and neuroscience, is a leading researcher on state space models"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "13",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-709d518a9cc449f2",
+              "quote": "The round valued the 13-person company at $600 million."
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-39d911c5038cb1c0",
+            "quote": "Engram is headquartered in San Francisco and backed by General Catalyst, Kleiner Perkins, Sequoia Capital, and others."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Seed",
+        "amount": "$98M",
+        "total_raised": "$196M",
+        "announced_at": "2026-06-23",
+        "investors": [
+          {
+            "name": "General Catalyst",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-709d518a9cc449f2",
+                "quote": "emerged from stealth on June 23 with $98 million in funding co-led by General Catalyst and Modern Capital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Modern Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-709d518a9cc449f2",
+                "quote": "emerged from stealth on June 23 with $98 million in funding co-led by General Catalyst and Modern Capital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kleiner Perkins",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Factory",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Amplify Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Neo",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "SV Angel",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-0d1357db4e0e1a3b",
+                "quote": "Investors include General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern Capital, Amplify Partners, Neo, and SV Angel"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Assaf Rappaport",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "backed by notable angels including Andrej Karpathy, co-founder of OpenAI, and Assaf Rappaport, co-founder and CEO of Wiz."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Andrej Karpathy",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "backed by notable angels including Andrej Karpathy, co-founder of OpenAI, and Assaf Rappaport, co-founder and CEO of Wiz."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Pieter Abbeel",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-39d911c5038cb1c0",
+                "quote": "notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "General Catalyst",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf01fbecb1fbdb6",
+                "quote": "General Catalyst Seed, Early Funding"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Kleiner Perkins",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf01fbecb1fbdb6",
+                "quote": "Kleiner Perkins Seed, Early Funding"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Sequoia Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf01fbecb1fbdb6",
+                "quote": "Sequoia Capital Seed, Early Funding"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Amplify Partners",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf01fbecb1fbdb6",
+                "quote": "Amplify Partners Seed, Early Funding"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Factory",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf01fbecb1fbdb6",
+                "quote": "Factory Seed, Early Funding"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Neo",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf01fbecb1fbdb6",
+                "quote": "Neo Seed, Early Funding"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Moderne Ventures",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf01fbecb1fbdb6",
+                "quote": "Moderne Ventures Seed, Early Funding"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-bcf01fbecb1fbdb6",
+            "quote": "Total Funding Raised $196M"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Learned Memory Layer",
+          "description": "Engram 训练模型预先研究组织环境，将大量组织知识压缩为紧凑、可复用的模型记忆，使模型在推理时无需重复处理相同上下文，从而大幅降低 token 消耗。",
+          "target_customers": "中大型知识型组织、企业 SaaS 平台、法律与专业服务公司、大型企业团队",
+          "features": [
+            "将组织知识压缩为紧凑、可复用的模型记忆",
+            "使用 1% 到 10% 的 token 即可匹配或超越前沿模型",
+            "记忆随使用时间持续改进",
+            "客户拥有自己的记忆数据"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "match or outperform frontier models using up to 100x fewer tokens"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Mem0",
+          "product": "结构化记忆平台",
+          "scenario": "多会话聊天机器人、面向客户的代理个性化",
+          "target_customer": "需要结构化记忆和实体关系的开发者",
+          "funding_summary": "",
+          "core_difference": "Mem0 提供结构化记忆存储与检索，而 Engram 训练模型学习组织上下文并将其压缩为可复用的内部状态，而非仅作为外部存储。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "Mem0 raised funding and counts 48,000+ GitHub stars, offering structured memory with entity relationships and multi-hop queries"
+            },
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "While existing memory systems store and retrieve — essentially sophisticated databases that sit alongside AI models — Engram trains models to learn organizational context and compress it into reusable internal state."
+            }
+          ]
+        },
+        {
+          "name": "Zep",
+          "product": "时序上下文图记忆系统",
+          "scenario": "跟踪事实随时间变化的对话代理",
+          "target_customer": "需要持久化用户记忆的 AI 应用开发者",
+          "funding_summary": "",
+          "core_difference": "Zep 使用时序上下文图跟踪事实变化，属于存储与检索类方案；Engram 则通过训练模型内化组织知识，减少对检索的依赖。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "Zep uses temporal context graphs that track how facts change over time."
+            },
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "The distinction is between a filing cabinet (storage) and an employee who's studied the filing cabinet and can answer questions from memory (learned knowledge)."
+            }
+          ]
+        },
+        {
+          "name": "Letta",
+          "product": "分层记忆代理运行时",
+          "scenario": "需要操作系统式分层记忆的自主代理",
+          "target_customer": "构建有状态 AI 代理的开发者",
+          "funding_summary": "",
+          "core_difference": "Letta 在代理运行时内提供操作系统风格的分层记忆系统，属于存储架构创新；Engram 则通过预训练压缩记忆，使模型本身具备组织知识。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "Letta (formerly MemGPT) provides an OS-inspired tiered memory system within an agent runtime."
+            },
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "Engram trains models to learn organizational context and compress it into reusable internal state."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "Token 效率提升",
+          "value": "使用 1% 到 10% 的 token 即可匹配或超越前沿模型",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "match or outperform frontier models using up to 100x fewer tokens"
+            }
+          ]
+        },
+        {
+          "label": "公司估值",
+          "value": "$600M",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-709d518a9cc449f2",
+              "quote": "The round valued the 13-person company at $600 million."
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$196M",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf01fbecb1fbdb6",
+              "quote": "Total Funding Raised $196M"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "13 人",
+          "observed_at": "2026-06-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-709d518a9cc449f2",
+              "quote": "The round valued the 13-person company at $600 million."
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Amplify Partners",
+            "speaker": "Sarah Catanzaro",
+            "speaker_role": "投资人",
+            "rationale": "认为 Engram 团队拥有合适的人才、正确的方法，并且专注于让客户成功，其 Cartridges 和稀疏记忆微调技术能够解决 AI 代理的记忆和持续学习问题。",
+            "quote": "The Engram team has the right people (Dan, Jack, Jessy, Sabri, Scott), the right approach (initially focused on Cartridges but expanding into sparse memory fine-tuning), and an unrelenting focus on making customers like Notion, Harvey, and Microsoft successful.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8b4c35a394ae0b29",
+                "quote": "The Engram team has the right people (Dan, Jack, Jessy, Sabri, Scott), the right approach (initially focused on Cartridges but expanding into sparse memory fine-tuning), and an unrelenting focus on making customers like Notion, Harvey, and Microsoft successful."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是企业 AI 部署中因无状态推理导致的 token 成本失控问题。Engram 以 13 人团队获得 9800 万美元融资和 6 亿美元估值，依赖的已验证信号包括：与 Microsoft、Notion、Harvey 的生产级合作测试；创始团队来自 Stanford、Berkeley、Cornell 的顶尖记忆与持续学习研究者；CTO 的 Cartridges 方法已在 2025 年 6 月发表为学术论文。但 100 倍 token 效率声明尚未经独立基准测试验证，且公司仅有 8 个月历史和 13 名员工，企业级规模部署的可行性仍待证明。",
+        "validated_signals": [
+          "与 Microsoft 合作在 Microsoft 365 中测试记忆层，并获得 Dapple 和 Azure 的 GPU 容量承诺",
+          "Notion 在其自定义代理中测试 Engram 模型，已观察到 token 用量降低一个数量级",
+          "Harvey 正在将 Engram 技术应用于法律 AI 工作流",
+          "创始团队包括 Stanford 教授 Chris Ré 和 Scott Linderman，以及 Cartridges、Active Reading 等记忆相关研究的核心作者"
+        ],
+        "risks": [
+          "100 倍 token 效率声明尚未经独立第三方基准测试验证，可能仅适用于特定工作负载而非通用场景",
+          "前沿模型提供商可能在 12-24 个月内将类似记忆层功能原生集成到 API 中，削弱 Engram 的差异化优势",
+          "13 人团队和 8 个月的公司历史意味着企业级规模部署、安全合规和客户支持能力尚未得到验证"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "sector": "企业 AI 基础设施 / AI 记忆与成本优化"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Learned Memory Layer",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "match or outperform frontier models using up to 100x fewer tokens"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Dan Biderman",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "Founded by a team of researchers from Stanford, Berkeley, and Cornell, including CEO Dan Biderman and CTO Sabri Eyuboglu"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Sabri Eyuboglu",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "Founded by a team of researchers from Stanford, Berkeley, and Cornell, including CEO Dan Biderman and CTO Sabri Eyuboglu"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Chris Ré",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "Chris Ré — one of the most influential figures in modern machine learning and a co-founder of Engram"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jessy Lin",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "Jessy Lin, a Berkeley PhD who researched at Meta's FAIR lab, developed Active Reading"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jack Morris",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "Jack Morris, a Cornell PhD also from FAIR, is known for his work on retrieval and memorization of LLM."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Scott Linderman",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "Scott Linderman, a tenured Stanford professor of statistics and neuroscience, is a leading researcher on state space models"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-709d518a9cc449f2",
+              "quote": "emerged from stealth on June 23 with $98 million in funding co-led by General Catalyst and Modern Capital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Modern Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-709d518a9cc449f2",
+              "quote": "emerged from stealth on June 23 with $98 million in funding co-led by General Catalyst and Modern Capital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kleiner Perkins",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Factory",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Amplify Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Neo",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "SV Angel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0d1357db4e0e1a3b",
+              "quote": "Investors include General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern Capital, Amplify Partners, Neo, and SV Angel"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Assaf Rappaport",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "backed by notable angels including Andrej Karpathy, co-founder of OpenAI, and Assaf Rappaport, co-founder and CEO of Wiz."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andrej Karpathy",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "backed by notable angels including Andrej Karpathy, co-founder of OpenAI, and Assaf Rappaport, co-founder and CEO of Wiz."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Pieter Abbeel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-39d911c5038cb1c0",
+              "quote": "notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "General Catalyst",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf01fbecb1fbdb6",
+              "quote": "General Catalyst Seed, Early Funding"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Kleiner Perkins",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf01fbecb1fbdb6",
+              "quote": "Kleiner Perkins Seed, Early Funding"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Sequoia Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf01fbecb1fbdb6",
+              "quote": "Sequoia Capital Seed, Early Funding"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Amplify Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf01fbecb1fbdb6",
+              "quote": "Amplify Partners Seed, Early Funding"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Factory",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf01fbecb1fbdb6",
+              "quote": "Factory Seed, Early Funding"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Neo",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf01fbecb1fbdb6",
+              "quote": "Neo Seed, Early Funding"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Moderne Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf01fbecb1fbdb6",
+              "quote": "Moderne Ventures Seed, Early Funding"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Mem0",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "Mem0 raised funding and counts 48,000+ GitHub stars, offering structured memory with entity relationships and multi-hop queries"
+            },
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "While existing memory systems store and retrieve — essentially sophisticated databases that sit alongside AI models — Engram trains models to learn organizational context and compress it into reusable internal state."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Zep",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "Zep uses temporal context graphs that track how facts change over time."
+            },
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "The distinction is between a filing cabinet (storage) and an employee who's studied the filing cabinet and can answer questions from memory (learned knowledge)."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Letta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "Letta (formerly MemGPT) provides an OS-inspired tiered memory system within an agent runtime."
+            },
+            {
+              "source_id": "FISRC-1e3134ad10c52576",
+              "quote": "Engram trains models to learn organizational context and compress it into reusable internal state."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-20d762872664fddb",
+          "date": "2026-06-24",
+          "title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+          "amount": "$98M",
+          "source_refs": [
+            "SA-531a5f97b7c01835"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-39d911c5038cb1c0",
+          "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
+          "title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-02T02:28:35.320Z",
+          "content_hash": "f7105d727554bb38",
+          "source_artifact_id": "SA-e91a69292997822a",
+          "raw_id": "RAW-7915df53b6e43f60"
+        },
+        {
+          "source_id": "FISRC-8b4c35a394ae0b29",
+          "source_url": "https://www.amplifypartners.com/blog-posts/announcing-our-investment-in-engram-the-memory-dream-team",
+          "title": "Announcing our investment in Engram, the memory dream team — Amplify Partners",
+          "publisher": "amplifypartners.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:42:57.888Z",
+          "content_hash": "3cffa927be7a6f99",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0d1357db4e0e1a3b",
+          "source_url": "https://devcuration.com/articles/engram-raises-98m-to-build-an-ai-memory-layer-for-enterprise-models",
+          "title": "Engram Raises $98M to Build an AI Memory Layer for Enterprise Models | DevCuration",
+          "publisher": "devcuration.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:42:59.446Z",
+          "content_hash": "453363e20174ad0b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-bcf01fbecb1fbdb6",
+          "source_url": "https://www.caplight.com/company/engram",
+          "title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+          "publisher": "caplight.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:43:01.588Z",
+          "content_hash": "24739161319ad4eb",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-709d518a9cc449f2",
+          "source_url": "https://www.vktr.com/ai-news/engram-launches-with-98m-to-give-enterprise-ai-memory/",
+          "title": "Engram Builds Enterprise AI Memory Layer",
+          "publisher": "vktr.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:43:02.436Z",
+          "content_hash": "f18a33f76104f554",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1e3134ad10c52576",
+          "source_url": "https://www.beri.net/article/engram-98m-enterprise-ai-memory-layer-100x-token-cost-reduction-2026",
+          "title": "Engram's $98M Bet: 100x Fewer Tokens, Same Quality | THE D*AI*LY BRIEF",
+          "publisher": "beri.net",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:43:04.403Z",
+          "content_hash": "5f63cbaaa8ef6d8b",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:44:34.665Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:44:34.665Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-224d487b06cad138",
+      "triggered_by_event_id": "EV-4f7462a365561bb5",
+      "as_of_date": "2026-07-02",
+      "company": {
+        "entity_id": "EN-858b4458c482f7d2",
+        "name": "Venice AI",
+        "full_name": "Venice AI",
+        "website": "venice.ai",
+        "summary": "Venice AI 是一个以隐私为核心的生成式AI平台，提供对超过200个AI模型的访问，强调不记录用户提示词、不存储对话历史，并致力于提供不受审查的AI体验。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Erik Voorhees",
+            "role": "创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41cdbf30cbfd4eed",
+                "quote": "its CEO Erik Voorhees"
+              },
+              {
+                "source_id": "FISRC-aa49639c3bb7e84b",
+                "quote": "Erik Voorhees founded Venice in 2024"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jesse Proudman",
+            "role": "总裁兼联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb36ed84da37eceb",
+                "quote": "President and co-founder Jesse Proudman"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约45人",
+          "observed_at": "2026-07-04",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb36ed84da37eceb",
+              "quote": "now employs about 45 people"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-41cdbf30cbfd4eed",
+            "quote": "Venice AI , which offers access to more than 200 AI models while allowing users to retain their privacy"
+          },
+          {
+            "source_id": "FISRC-aa49639c3bb7e84b",
+            "quote": "Venice is a private, unrestricted AI platform that gives users access to more than 200 leading AI models across text, image, video, and audio."
+          }
+        ]
+      },
+      "financing": {
+        "round": "A轮",
+        "amount": "6500万美元",
+        "total_raised": "6500万美元",
+        "announced_at": "2026-07-01",
+        "investors": [
+          {
+            "name": "Dragonfly",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41cdbf30cbfd4eed",
+                "quote": "The round was led by crypto-focused venture firm Dragonfly"
+              },
+              {
+                "source_id": "FISRC-831c2961f3373587",
+                "quote": "Dragonfly led the round"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Coinbase Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41cdbf30cbfd4eed",
+                "quote": "with participation from Coinbase Ventures"
+              },
+              {
+                "source_id": "FISRC-831c2961f3373587",
+                "quote": "with participation from North Island Ventures, Coinbase Ventures, F-Prime, Archetype, Liquid2 Ventures, Morgan Creek and others"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "North Island Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-41cdbf30cbfd4eed",
+                "quote": "with participation from Coinbase Ventures, North Island Ventures, and others"
+              },
+              {
+                "source_id": "FISRC-831c2961f3373587",
+                "quote": "with participation from North Island Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "F-Prime",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-831c2961f3373587",
+                "quote": "with participation from North Island Ventures, Coinbase Ventures, F-Prime, Archetype, Liquid2 Ventures, Morgan Creek and others"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Archetype",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d718182aef653666",
+                "quote": "joined by Coinbase Ventures, North Island Ventures, Archetype, Morgan Creek Digital and Liquid 2 Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Liquid 2 Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d718182aef653666",
+                "quote": "joined by Coinbase Ventures, North Island Ventures, Archetype, Morgan Creek Digital and Liquid 2 Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Morgan Creek Digital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-d718182aef653666",
+                "quote": "joined by Coinbase Ventures, North Island Ventures, Archetype, Morgan Creek Digital and Liquid 2 Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Founders' Co-op",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-eb36ed84da37eceb",
+                "quote": "joined by Coinbase Ventures, Archetype, Morgan Creek, North Island Ventures, Liquid2 Ventures, and Seattle's Founders' Co-op"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-41cdbf30cbfd4eed",
+            "quote": "Venice AI on Wednesday said it had raised a $65 million Series A at a $1 billion valuation, its first external fundraise."
+          },
+          {
+            "source_id": "FISRC-831c2961f3373587",
+            "quote": "Venice AI, the privacy-focused artificial intelligence startup founded by crypto entrepreneur Erik Voorhees, has raised $65 million in a Series A funding round."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Venice AI 平台",
+          "description": "一个私密、不受审查的AI平台，通过加密代理路由用户请求，不记录提示词，并将对话历史存储在用户设备上。提供对超过200个开源和闭源AI模型的访问，涵盖文本、图像、视频和音频生成。",
+          "target_customers": "注重隐私的消费者、开发者以及寻求合规AI部署的企业客户。",
+          "features": [
+            "客户端加密与外部代理路由",
+            "零日志提示词与本地对话存储",
+            "部分模型提供端到端加密",
+            "访问超过200个AI模型",
+            "支持文本、图像、视频、音频生成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-aa49639c3bb7e84b",
+              "quote": "Venice never logs prompts. Conversations are stored on the user's device, not on Venice's servers."
+            },
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "It also provides end-to-end encryption on some models, though you have to pay for a subscription to get that feature."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "VVV 代币经济系统",
+          "description": "一个双代币经济模型，用户质押VVV代币以铸造DIEM，DIEM可用于兑换平台上的AI积分。平台通过收入回购并销毁VVV代币。",
+          "target_customers": "加密货币用户和希望通过代币激励机制使用AI服务的用户。",
+          "features": [
+            "质押VVV铸造DIEM",
+            "DIEM可兑换1美元等值的API积分",
+            "收入回购与代币销毁机制"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-831c2961f3373587",
+              "quote": "The startup plans to continue using a portion of its revenue to buy back and burn VVV tokens while reducing token emissions over time."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "OpenAI (ChatGPT)",
+          "product": "ChatGPT",
+          "scenario": "通用AI对话与内容生成",
+          "target_customer": "大众消费者与企业用户",
+          "funding_summary": "",
+          "core_difference": "ChatGPT记录用户提示词并用于训练，而Venice AI不记录提示词，并将对话存储在用户设备上，提供端到端加密选项。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-aa49639c3bb7e84b",
+              "quote": "Venice never logs prompts. Conversations are stored on the user's device, not on Venice's servers."
+            }
+          ]
+        },
+        {
+          "name": "Anthropic (Claude)",
+          "product": "Claude",
+          "scenario": "通用AI对话与内容生成",
+          "target_customer": "大众消费者与企业用户",
+          "funding_summary": "",
+          "core_difference": "Venice AI 将自身定位为 Claude 的私密替代方案，通过代理匿名访问闭源模型，而 Anthropic 的模型通常需要用户直接交互并可能记录数据。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb36ed84da37eceb",
+              "quote": "Venice describes itself as a \"private, permissionless, and uncensored\" alternative to ChatGPT, Claude, and Gemini"
+            },
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "routes queries to closed-source models, such as those by OpenAI or Anthropic. All user input is encrypted and unencrypted client-side, and routed through an external proxy"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "注册用户数",
+          "value": "350万",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-aa49639c3bb7e84b",
+              "quote": "3.5M registered users"
+            }
+          ]
+        },
+        {
+          "label": "月处理Token数",
+          "value": "1.3万亿",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-aa49639c3bb7e84b",
+              "quote": "1.3T tokens processed per month"
+            }
+          ]
+        },
+        {
+          "label": "日API调用次数",
+          "value": "170万",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "an average of 1.7 million API calls per day"
+            }
+          ]
+        },
+        {
+          "label": "年化收入运转率",
+          "value": "超过7000万美元",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "annualized run-rate revenues of over $70 million"
+            }
+          ]
+        },
+        {
+          "label": "月独立访客数",
+          "value": "85万至100万",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-aa49639c3bb7e84b",
+              "quote": "1.3M to 1.6M site visits per month from roughly 850K to 1M unique visitors"
+            }
+          ]
+        },
+        {
+          "label": "已销毁VVV代币占比",
+          "value": "约42%",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-aa49639c3bb7e84b",
+              "quote": "33.7 million VVV has been burned, about 42 percent of the total supply"
+            }
+          ]
+        },
+        {
+          "label": "盈利状态",
+          "value": "已于2026年第一季度实现盈利",
+          "observed_at": "2026-07-01",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "The company is already profitable"
+            },
+            {
+              "source_id": "FISRC-d718182aef653666",
+              "quote": "turned profitable during the first quarter of 2026"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Erik Voorhees",
+          "quote": "Venice's mission is to protect it from mass surveillance and censorship.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-aa49639c3bb7e84b",
+              "quote": "Venice's mission is to protect it from mass surveillance and censorship."
+            }
+          ]
+        },
+        {
+          "speaker": "Erik Voorhees",
+          "quote": "We are making Venice a mass market consumer app, an open and unrestricted AI platform for at least a few hundred million people and several billion AI agents. Doing so requires capital.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-831c2961f3373587",
+              "quote": "We are making Venice a mass market consumer app, an open and unrestricted AI platform for at least a few hundred million people and several billion AI agents. Doing so requires capital."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Dragonfly",
+            "speaker": "Haseeb Qureshi",
+            "speaker_role": "管理合伙人",
+            "rationale": "认为对AI交付栈的控制权是未来十年决定性战场，Venice的隐私架构能防止AI提供商监控用户内心生活。",
+            "quote": "Whoever owns the AI delivery stack owns a direct window into your interior life. They log all your chats, train on them, and will hand them over when asked. And in the end, they decide the terms on which you'll get to access the most powerful systems humankind has ever built.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8522a246c9a1a92d",
+                "quote": "Whoever owns the AI delivery stack owns a direct window into your interior life. They log all your chats, train on them, and will hand them over when asked. And in the end, they decide the terms on which you'll get to access the most powerful systems humankind has ever built."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“隐私”作为AI服务差异化的护城河，而非模型能力本身。本轮融资的估值（10亿美元）主要依赖于已验证的商业化信号：公司已实现盈利，年化收入运转率超过7000万美元，并拥有350万注册用户。这表明市场愿意为“不记录数据”的架构支付溢价。然而，该判断的证据边界在于，其收入增长部分依赖于VVV代币经济，且投资方高度集中于加密原生基金，这既是其差异化优势的来源，也可能成为其资金来源与市场情绪高度相关的风险点。",
+        "validated_signals": [
+          "已实现盈利（2026年第一季度）",
+          "年化收入运转率超过7000万美元",
+          "注册用户数达350万",
+          "日API调用量达170万次"
+        ],
+        "risks": [
+          "监管风险：“不受审查”的定位在发生重大滥用事件时可能迅速转变为巨大的法律和声誉负担，尤其是在全球AI监管趋严的背景下。",
+          "投资方集中度风险：主要投资方均为加密原生基金，其资本状况与加密市场情绪高度相关，若市场进入长期低迷，可能影响后续融资能力。",
+          "收入模式风险：部分收入依赖于VVV代币的经济模型（质押、销毁），这引入了传统SaaS公司所没有的波动性和会计复杂性。"
+        ],
+        "related_direction_id": "",
+        "sector": "隐私增强型生成式AI平台"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Venice AI 平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-aa49639c3bb7e84b",
+              "quote": "Venice never logs prompts. Conversations are stored on the user's device, not on Venice's servers."
+            },
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "It also provides end-to-end encryption on some models, though you have to pay for a subscription to get that feature."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "VVV 代币经济系统",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-831c2961f3373587",
+              "quote": "The startup plans to continue using a portion of its revenue to buy back and burn VVV tokens while reducing token emissions over time."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Erik Voorhees",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "its CEO Erik Voorhees"
+            },
+            {
+              "source_id": "FISRC-aa49639c3bb7e84b",
+              "quote": "Erik Voorhees founded Venice in 2024"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jesse Proudman",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb36ed84da37eceb",
+              "quote": "President and co-founder Jesse Proudman"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dragonfly",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "The round was led by crypto-focused venture firm Dragonfly"
+            },
+            {
+              "source_id": "FISRC-831c2961f3373587",
+              "quote": "Dragonfly led the round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Coinbase Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "with participation from Coinbase Ventures"
+            },
+            {
+              "source_id": "FISRC-831c2961f3373587",
+              "quote": "with participation from North Island Ventures, Coinbase Ventures, F-Prime, Archetype, Liquid2 Ventures, Morgan Creek and others"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "North Island Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "with participation from Coinbase Ventures, North Island Ventures, and others"
+            },
+            {
+              "source_id": "FISRC-831c2961f3373587",
+              "quote": "with participation from North Island Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "F-Prime",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-831c2961f3373587",
+              "quote": "with participation from North Island Ventures, Coinbase Ventures, F-Prime, Archetype, Liquid2 Ventures, Morgan Creek and others"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Archetype",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d718182aef653666",
+              "quote": "joined by Coinbase Ventures, North Island Ventures, Archetype, Morgan Creek Digital and Liquid 2 Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Liquid 2 Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d718182aef653666",
+              "quote": "joined by Coinbase Ventures, North Island Ventures, Archetype, Morgan Creek Digital and Liquid 2 Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Morgan Creek Digital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d718182aef653666",
+              "quote": "joined by Coinbase Ventures, North Island Ventures, Archetype, Morgan Creek Digital and Liquid 2 Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Founders' Co-op",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb36ed84da37eceb",
+              "quote": "joined by Coinbase Ventures, Archetype, Morgan Creek, North Island Ventures, Liquid2 Ventures, and Seattle's Founders' Co-op"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI (ChatGPT)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-aa49639c3bb7e84b",
+              "quote": "Venice never logs prompts. Conversations are stored on the user's device, not on Venice's servers."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Anthropic (Claude)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-eb36ed84da37eceb",
+              "quote": "Venice describes itself as a \"private, permissionless, and uncensored\" alternative to ChatGPT, Claude, and Gemini"
+            },
+            {
+              "source_id": "FISRC-41cdbf30cbfd4eed",
+              "quote": "routes queries to closed-source models, such as those by OpenAI or Anthropic. All user input is encrypted and unencrypted client-side, and routed through an external proxy"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-4f7462a365561bb5",
+          "date": "2026-07-01",
+          "title": "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元",
+          "amount": "$65 million",
+          "source_refs": [
+            "SA-2ebb0d6d5551ab7f"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-41cdbf30cbfd4eed",
+          "source_url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off",
+          "title": "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-02T02:28:35.129Z",
+          "content_hash": "ed55880406f0c2ab",
+          "source_artifact_id": "SA-2ebb0d6d5551ab7f",
+          "raw_id": "RAW-31a0c8dfb33a39e1"
+        },
+        {
+          "source_id": "FISRC-d718182aef653666",
+          "source_url": "https://en.coinotag.com/venice-ai-token-vvv-surges-12-percent-1-billion-funding-round",
+          "title": "Venice AI Token VVV Surges 12% After $1 Billion Funding Round - COINOTAG",
+          "publisher": "en.coinotag.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:42:01.214Z",
+          "content_hash": "8c7c2fd7220f54ed",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-831c2961f3373587",
+          "source_url": "https://www.theblock.co/post/406934/venice-ai-funding-equity-valuation-dragonfly",
+          "title": "Venice AI raises $65 million Series A at $1 billion equity valuation led by Dragonfly | The Block",
+          "publisher": "theblock.co",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T14:42:03.192Z",
+          "content_hash": "0dacb24c9b80532d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-eb36ed84da37eceb",
+          "source_url": "https://angelinvestorsnetwork.com/crypto-digital-assets/venice-ai-65m-series-a-dragonfly-crypto-vc-ai-crossover-2026",
+          "title": "Venice AI's $65M Round: Crypto VCs Bet on Uncensored AI",
+          "publisher": "angelinvestorsnetwork.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:42:06.405Z",
+          "content_hash": "f5f311f9c90b15ef",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-aa49639c3bb7e84b",
+          "source_url": "https://venice.ai/blog/venice-raises-65-million-series-a",
+          "title": "Venice Raises $65 Million Series A at a $1 Billion Valuation",
+          "publisher": "venice.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:42:11.620Z",
+          "content_hash": "efceb75b68f1f8d0",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-8522a246c9a1a92d",
+          "source_url": "https://cointelegraph.com/news/venice-ai-becomes-a-unicorn-as-ai-privacy-concerns-grow",
+          "title": "Venice AI Raises $65M Series A at $1B Valuation",
+          "publisher": "cointelegraph.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:42:12.915Z",
+          "content_hash": "447b1ef147270e87",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:42:57.003Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:42:57.003Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-0429a6418b0774c6",
+      "triggered_by_event_id": "EV-2bb63a3015195f9b",
+      "as_of_date": "2026-07-02",
+      "company": {
+        "entity_id": "EN-cfd62617fdedfdf4",
+        "name": "Agentic infrastructure startup Seltz",
+        "full_name": "Seltz Inc.",
+        "website": "https://seltz.ai/",
+        "summary": "Seltz 是一家智能体基础设施初创公司，构建专为 AI 代理优化的网络搜索基础设施。公司拥有完整的搜索技术栈，包括爬虫、索引、检索模型和排序系统，旨在为 AI 代理提供结构化、可引用的机器可读结果，而非传统的链接列表。",
+        "headquarters": "San Francisco, CA",
+        "founders": [
+          {
+            "name": "Antonio Mallia",
+            "role": "首席执行官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "The startup was founded by Chief Executive Officer Antonio Mallia"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "15",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "with just 15 staff on its books at present, only half of those working for it full-time"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-05007e2b6b43ffda",
+            "quote": "Agentic search startup Seltz Inc. said today it has bagged $12.5 million in seed funding to build a more optimal infrastructure so that artificial intelligence agents can find their way around the web."
+          },
+          {
+            "source_id": "FISRC-33a8ae96ef87bf5a",
+            "quote": "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$12.5M",
+        "total_raised": "$12.5M",
+        "announced_at": "2026-06-24",
+        "investors": [
+          {
+            "name": "Speedinvest",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "The round was led by Speedinvest and B Capital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "B Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "The round was led by Speedinvest and B Capital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Italian Founders Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Future Back Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "futurepresent",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Arc Investors",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vento Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mango Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "2100 Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "United Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Google LLC 天使投资人",
+            "role": "本轮天使投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "plus angel investors from Google LLC, Hugging Face Inc. and Ramp Network Inc."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hugging Face Inc. 天使投资人",
+            "role": "本轮天使投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "plus angel investors from Google LLC, Hugging Face Inc. and Ramp Network Inc."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ramp Network Inc. 天使投资人",
+            "role": "本轮天使投资",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-05007e2b6b43ffda",
+                "quote": "plus angel investors from Google LLC, Hugging Face Inc. and Ramp Network Inc."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-05007e2b6b43ffda",
+            "quote": "Agentic search startup Seltz Inc. said today it has bagged $12.5 million in seed funding"
+          },
+          {
+            "source_id": "FISRC-4808cc5abc8e856a",
+            "quote": "Today Seltz announced that it has raised $12.5 million in seed funding."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Web Knowledge API",
+          "description": "一个为AI系统提供实时、上下文工程化网络数据的API，返回经过筛选、过滤和排序的结构化内容，专为LLM、AI代理和RAG管道设计。",
+          "target_customers": "构建AI系统的团队，包括LLM应用、RAG管道和自主代理的开发者",
+          "features": [
+            "拥有完整搜索技术栈（爬虫、索引、检索模型、排序）",
+            "返回结构化、机器可读的结果（文本、表格、图像）",
+            "每日抓取数亿页面，延迟低于200毫秒",
+            "上下文工程化：评分段落并提取代理所需的确切内容"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-33a8ae96ef87bf5a",
+              "quote": "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications."
+            },
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Seltz has built its entire search stack, including the crawlers, index, retrieval models and ranking systems."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "一家基础实验室",
+          "industry": "AI研究",
+          "use_case": "已签订合同，具体应用场景未披露",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Seltz already has a foundational lab under contract"
+            }
+          ]
+        },
+        {
+          "name": "多家构建智能体工作流的公司",
+          "industry": "AI/科技",
+          "use_case": "正在进行多个试点项目",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "and is running multiple pilots with companies building agentic workflows"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Parallel Web Systems",
+          "product": "未披露具体产品名",
+          "scenario": "AI原生搜索",
+          "target_customer": "未披露",
+          "funding_summary": "2026年4月完成1亿美元B轮融资，估值20亿美元",
+          "core_difference": "Parallel 由前Twitter CEO Parag Agrawal 领导，融资规模和估值远超 Seltz（1亿美元 vs 1250万美元）；Seltz 强调自建完整搜索技术栈，而 Parallel 的技术架构未在来源中详细说明。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "In April, Parallel Web Systems Inc., led by former Twitter CEO Parag Agrawal, raised $100 million in a Series B round that valued it at $2 billion"
+            }
+          ]
+        },
+        {
+          "name": "Exa Labs",
+          "product": "未披露具体产品名",
+          "scenario": "AI原生搜索",
+          "target_customer": "未披露",
+          "funding_summary": "最近一个月融资2.5亿美元",
+          "core_difference": "Exa 的融资规模远超 Seltz（2.5亿美元 vs 1250万美元）；Seltz 强调自建完整搜索技术栈，而 Exa 的技术架构未在来源中详细说明。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "while Exa Labs Inc. nabbed $250 million just last month"
+            }
+          ]
+        },
+        {
+          "name": "Tavily (被 Nebius 收购)",
+          "product": "专为自主AI代理开发的搜索层",
+          "scenario": "为自主AI代理提供专用搜索层",
+          "target_customer": "未披露",
+          "funding_summary": "2026年2月被 Nebius 以最高4亿美元收购",
+          "core_difference": "Tavily 已被数据中心基础设施巨头 Nebius 收购，拥有更大的资源支持；Seltz 保持独立运营，强调自建完整搜索技术栈。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "The data center infrastructure giant Nebius Group N.V. is also making an agentic search play, having bought the Israeli startup Tavily Inc. , which has developed a specialized search layer for autonomous AI agents, in February."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "搜索结果返回延迟",
+          "value": "低于200毫秒",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "and generally returns its results in under 200 milliseconds"
+            }
+          ]
+        },
+        {
+          "label": "Dynamic News Search 基准测试准确率",
+          "value": "89%",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "its own Dynamic News Search benchmark, which reveals that it delivers 89% accuracy"
+            }
+          ]
+        },
+        {
+          "label": "Dynamic News Search 基准测试延迟",
+          "value": "低于250毫秒",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "and returns its results in less than 250 milliseconds"
+            }
+          ]
+        },
+        {
+          "label": "平台从构建到交付时间",
+          "value": "8个月",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "was able to ship its platform within eight months of starting to build it"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "15人（约一半为全职）",
+          "observed_at": "2026-06-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "with just 15 staff on its books at present, only half of those working for it full-time"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Antonio Mallia",
+          "quote": "The information [the AI agent needs] is actually not in the snippet. It's in the body of the web page, it's in things like tables, images, and other forms of representation that can be useful for an LLM or for an agent.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4808cc5abc8e856a",
+              "quote": "\"The information [the AI agent needs] is actually not in the snippet. It's in the body of the web page, it's in things like tables, images, and other forms of representation that can be useful for an LLM or for an agent.\""
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：AI代理作为搜索消费者的范式转变，需要从底层重建网络检索基础设施，而非在现有搜索引擎之上封装。Seltz 的已验证信号包括：1）创始人 Antonio Mallia 在信息检索领域的深厚学术和工业背景（NYU博士、Amazon AGI团队、Pinecone研究科学家）；2）团队拥有多名信息检索博士和Amazon AI研究老兵；3）已交付可用的平台（8个月内从新闻索引起步）；4）自有基准测试显示89%准确率和低于250毫秒延迟；5）已获得一家基础实验室合同并运行多个试点。然而，Seltz 的融资规模（1250万美元）远低于竞争对手 Parallel（1亿美元）和 Exa（2.5亿美元），且团队仅15人，在资本密集型的网络搜索领域面临显著资源劣势。当前估值或融资所依赖的信号主要来自团队技术深度和早期产品交付能力，而非规模化商业验证。",
+        "validated_signals": [
+          "创始人 Antonio Mallia 拥有信息检索博士学位，曾任职于 Amazon AGI 团队和 Pinecone",
+          "团队包含多名信息检索博士和 Amazon AI 研究团队前成员",
+          "自建完整搜索技术栈（爬虫、索引、检索模型、排序），不依赖 Google/Bing API",
+          "平台在8个月内从新闻索引起步并完成交付",
+          "自有 Dynamic News Search 基准测试显示89%准确率，延迟低于250毫秒",
+          "每日抓取数亿页面，返回结果延迟低于200毫秒",
+          "已获得一家基础实验室合同，并与多家构建智能体工作流的公司进行试点"
+        ],
+        "risks": [
+          "资本劣势显著：Seltz 种子轮仅融资1250万美元，而竞争对手 Parallel 已融资1亿美元（估值20亿）、Exa 融资2.5亿美元，在资本密集型的网络搜索领域面临巨大资源差距",
+          "团队规模极小：仅15名员工（约一半为全职），在需要大规模工程投入的网络搜索基础设施建设中可能面临执行瓶颈",
+          "基准测试非独立评估：89%准确率和延迟数据来自自有基准测试，缺乏第三方验证，可能无法反映真实生产环境表现"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI智能体基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Web Knowledge API",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-33a8ae96ef87bf5a",
+              "quote": "Seltz is a Web Knowledge API that provides real-time, context-engineered data from the live web, optimized for use in AI systems and applications."
+            },
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Seltz has built its entire search stack, including the crawlers, index, retrieval models and ranking systems."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Antonio Mallia",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "The startup was founded by Chief Executive Officer Antonio Mallia"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Speedinvest",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "The round was led by Speedinvest and B Capital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "B Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "The round was led by Speedinvest and B Capital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Italian Founders Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Future Back Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "futurepresent",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Arc Investors",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Vento Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mango Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "2100 Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "United Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Google LLC 天使投资人",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "plus angel investors from Google LLC, Hugging Face Inc. and Ramp Network Inc."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hugging Face Inc. 天使投资人",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "plus angel investors from Google LLC, Hugging Face Inc. and Ramp Network Inc."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ramp Network Inc. 天使投资人",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "plus angel investors from Google LLC, Hugging Face Inc. and Ramp Network Inc."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家基础实验室",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "Seltz already has a foundational lab under contract"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "多家构建智能体工作流的公司",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "and is running multiple pilots with companies building agentic workflows"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Parallel Web Systems",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "In April, Parallel Web Systems Inc., led by former Twitter CEO Parag Agrawal, raised $100 million in a Series B round that valued it at $2 billion"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Exa Labs",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "while Exa Labs Inc. nabbed $250 million just last month"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Tavily (被 Nebius 收购)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-05007e2b6b43ffda",
+              "quote": "The data center infrastructure giant Nebius Group N.V. is also making an agentic search play, having bought the Israeli startup Tavily Inc. , which has developed a specialized search layer for autonomous AI agents, in February."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-2bb63a3015195f9b",
+          "date": "2026-07-02",
+          "title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
+          "amount": "$12.5M",
+          "source_refs": [
+            "SA-344b1d90b6022053"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-05007e2b6b43ffda",
+          "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
+          "title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-02T02:28:35.310Z",
+          "content_hash": "4affcb58ccdfce57",
+          "source_artifact_id": "SA-344b1d90b6022053",
+          "raw_id": "RAW-b48e41b111cbe439"
+        },
+        {
+          "source_id": "FISRC-4808cc5abc8e856a",
+          "source_url": "https://theoutpost.ai/news-story/seltz-raises-12-5-million-to-build-search-engine-optimized-for-ai-agents-27810/",
+          "title": "Seltz Raises $12.5M to Build Search Engine for AI Agents",
+          "publisher": "theoutpost.ai",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:42:01.233Z",
+          "content_hash": "085d16d1962e038b",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-33a8ae96ef87bf5a",
+          "source_url": "https://seltz.ai/",
+          "title": "Seltz - Web Knowledge for AI Agents",
+          "publisher": "seltz.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:42:02.392Z",
+          "content_hash": "ea1d1139f66041c3",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:42:55.022Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:42:55.022Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-1f79f2b772f139dd",
+      "triggered_by_event_id": "EV-7b7f0cdf219434f6",
+      "as_of_date": "2026-07-02",
+      "company": {
+        "entity_id": "EN-4dd5b6e2bf3bfd4f",
+        "name": "Manifold",
+        "full_name": "Manifold",
+        "website": "https://www.manifold.security/",
+        "summary": "Manifold 是一家网络安全公司，为端点上的自主 AI 提供 AI 检测与响应（AIDR）平台，专注于在运行时监控和管控 AI 智能体的行为。",
+        "headquarters": "San Diego, California",
+        "founders": [
+          {
+            "name": "Neal Swaelens",
+            "role": "CEO and Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-65020b3601939429",
+                "quote": "Neal Swaelens, CEO and Co-Founder, Manifold"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Oleksandr Yaremchuk",
+            "role": "Co-Founder & CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ed2851445bdfad0",
+                "quote": "Oleksandr Yaremchuk, Co-Founder & CTO"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Michael McKenna",
+            "role": "Cofounder & CRO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-8ed2851445bdfad0",
+                "quote": "Mike McKenna, Cofounder & CRO"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "25",
+          "observed_at": "2026-03-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8ed2851445bdfad0",
+              "quote": "Employee Range 25"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-65020b3601939429",
+            "quote": "SAN DIEGO – March 18, 2026 – Manifold, the AI Detection and Response platform securing autonomous AI on endpoints"
+          },
+          {
+            "source_id": "FISRC-8ed2851445bdfad0",
+            "quote": "Manifold is a cybersecurity company that provides an AI Detection and Response (AIDR) platform for securing autonomous AI on endpoints."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$8M",
+        "total_raised": "$8M",
+        "announced_at": "2026-03-18",
+        "investors": [
+          {
+            "name": "Costanoa Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-65020b3601939429",
+                "quote": "Costanoa Ventures led the round"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cherry Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-65020b3601939429",
+                "quote": "with participation from Cherry Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Joe Sullivan",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-65020b3601939429",
+                "quote": "notable angel investors including former Uber CSO Joe Sullivan"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9661010a665526d3",
+            "quote": "Manifold Raises $8M For AI Agent Security"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Agentic AI Detection and Response (AIDR) 平台",
+          "description": "一个在端点运行时层面提供 AI 智能体行为可见性的平台，可实时映射每个智能体对 MCP 服务器、数据库和外部系统的连接，通过异常检测对比既定基线，并记录所有交互以供取证。",
+          "target_customers": "拥有使用编码智能体的开发人员，并计划将 AI 智能体扩展到所有知识工作者的企业。",
+          "features": [
+            "运行时可见性",
+            "实时映射智能体连接",
+            "异常检测",
+            "无代理部署"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661010a665526d3",
+              "quote": "Manifold's Agentic AI Detection and Response (AIDR) platform operates at the endpoint runtime layer. It provides full visibility into every tool called, system accessed, and action taken by AI agents."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Prompt Security",
+          "product": "推理时护栏",
+          "scenario": "在模型推理时监控文本提示和模型输出",
+          "target_customer": "部署了生成式 AI 模型的企业",
+          "funding_summary": "",
+          "core_difference": "Prompt Security 等第一代 AI 安全工具专注于推理时的护栏，而 Manifold 专注于 AI 智能体在运行时的实际行为监控。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661010a665526d3",
+              "quote": "First-generation AI security vendors like Prompt Security, Aim Security, and Lakera focus on inference-time guardrails rather than runtime agent behavior."
+            }
+          ]
+        },
+        {
+          "name": "Aim Security",
+          "product": "推理时护栏",
+          "scenario": "在模型推理时监控文本提示和模型输出",
+          "target_customer": "部署了生成式 AI 模型的企业",
+          "funding_summary": "",
+          "core_difference": "Aim Security 等第一代 AI 安全工具专注于推理时的护栏，而 Manifold 专注于 AI 智能体在运行时的实际行为监控。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661010a665526d3",
+              "quote": "First-generation AI security vendors like Prompt Security, Aim Security, and Lakera focus on inference-time guardrails rather than runtime agent behavior."
+            }
+          ]
+        },
+        {
+          "name": "Lakera",
+          "product": "推理时护栏",
+          "scenario": "在模型推理时监控文本提示和模型输出",
+          "target_customer": "部署了生成式 AI 模型的企业",
+          "funding_summary": "",
+          "core_difference": "Lakera 等第一代 AI 安全工具专注于推理时的护栏，而 Manifold 专注于 AI 智能体在运行时的实际行为监控。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661010a665526d3",
+              "quote": "First-generation AI security vendors like Prompt Security, Aim Security, and Lakera focus on inference-time guardrails rather than runtime agent behavior."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "使用编码智能体的开发者环境比例",
+          "value": "85%",
+          "observed_at": "2026-03-18",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-65020b3601939429",
+              "quote": "85% currently rely on coding agents like Github Copilot, Claude Code, and Cursor"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Neal Swaelens",
+          "quote": "Every developer today has coding agents on their laptop with access to source code, production systems, and CI/CD pipelines connected to an expanding ecosystem of MCP servers, skills, and third-party tools that no one is inspecting.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-65020b3601939429",
+              "quote": "Every developer today has coding agents on their laptop with access to source code, production systems, and CI/CD pipelines connected to an expanding ecosystem of MCP servers, skills, and third-party tools that no one is inspecting"
+            }
+          ]
+        },
+        {
+          "speaker": "John Cowgill",
+          "quote": "Endpoint agent security is the next major layer of enterprise infrastructure.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-65020b3601939429",
+              "quote": "Endpoint agent security is the next major layer of enterprise infrastructure."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“AI 智能体从辅助工具转向自主执行”这一行为转变所催生的新安全基础设施层。当前融资依赖于已验证的信号：创始人团队曾创建并出售了最广泛采用的开源 LLM 防火墙（LLM Guard），具备深厚的领域信誉；85% 的开发者环境已在运行编码智能体，市场痛点真实存在且规模庞大。但判断的证据边界在于，公司尚未披露付费客户或收入数据，产品仍处于早期阶段，其竞争护城河面临现有 EDR 巨头（如 CrowdStrike）未来可能构建原生 AIDR 能力的长期风险。",
+        "validated_signals": [
+          "创始人团队曾创建被广泛采用的开源 LLM 防火墙 LLM Guard，并成功退出给 Protect AI（后被 Palo Alto Networks 收购）。",
+          "85% 的开发者环境已在运行编码智能体，表明 AI 智能体已在生产环境中广泛存在，安全盲点真实且紧迫。",
+          "顾问委员会包括前 Uber CSO Joe Sullivan 和前 Google DeepMind CISO Vijay Bolina，增强了其在企业安全领域的市场信任度。"
+        ],
+        "risks": [
+          "长期竞争风险来自 CrowdStrike 和 Palo Alto Networks 等 EDR 巨头，它们可能构建原生的 AIDR 能力，挤压 Manifold 的市场空间。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "网络安全"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Agentic AI Detection and Response (AIDR) 平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661010a665526d3",
+              "quote": "Manifold's Agentic AI Detection and Response (AIDR) platform operates at the endpoint runtime layer. It provides full visibility into every tool called, system accessed, and action taken by AI agents."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Neal Swaelens",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-65020b3601939429",
+              "quote": "Neal Swaelens, CEO and Co-Founder, Manifold"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Oleksandr Yaremchuk",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8ed2851445bdfad0",
+              "quote": "Oleksandr Yaremchuk, Co-Founder & CTO"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Michael McKenna",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8ed2851445bdfad0",
+              "quote": "Mike McKenna, Cofounder & CRO"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Costanoa Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-65020b3601939429",
+              "quote": "Costanoa Ventures led the round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cherry Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-65020b3601939429",
+              "quote": "with participation from Cherry Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Joe Sullivan",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-65020b3601939429",
+              "quote": "notable angel investors including former Uber CSO Joe Sullivan"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Prompt Security",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661010a665526d3",
+              "quote": "First-generation AI security vendors like Prompt Security, Aim Security, and Lakera focus on inference-time guardrails rather than runtime agent behavior."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Aim Security",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661010a665526d3",
+              "quote": "First-generation AI security vendors like Prompt Security, Aim Security, and Lakera focus on inference-time guardrails rather than runtime agent behavior."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Lakera",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9661010a665526d3",
+              "quote": "First-generation AI security vendors like Prompt Security, Aim Security, and Lakera focus on inference-time guardrails rather than runtime agent behavior."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-7b7f0cdf219434f6",
+          "date": "2026-07-02",
+          "title": "美国种子轮每周融资汇总（2026年3月17日-24日）",
+          "amount": "$8M",
+          "source_refs": [
+            "SA-72873a2426431b5e"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9661010a665526d3",
+          "source_url": "https://qubit.capital/blog/us-seed-weekly-funding-roundup-week-4-march-2026",
+          "title": "美国种子轮每周融资汇总（2026年3月17日-24日）",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-02T02:28:35.316Z",
+          "content_hash": "712f2807c1bca2ad",
+          "source_artifact_id": "SA-72873a2426431b5e",
+          "raw_id": "RAW-f1bd55f89ec891a0"
+        },
+        {
+          "source_id": "FISRC-8ed2851445bdfad0",
+          "source_url": "https://www.caplight.com/company/manifold-security",
+          "title": "Manifold | Valuation, Funding Rounds & Stock Price | Caplight",
+          "publisher": "caplight.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:42:07.021Z",
+          "content_hash": "d138ca72c6c6adad",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-65020b3601939429",
+          "source_url": "https://www.manifold.security/blog/manifold-raises-8m-seed-funding",
+          "title": "Manifold Raises $8M to Secure AI Agents on Endpoints - Manifold Security",
+          "publisher": "manifold.security",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T14:42:08.659Z",
+          "content_hash": "9489780dc8c78240",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T14:42:43.119Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T14:42:43.119Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-4f7462a365561bb5",
+      "company_name": "Venice AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Venice AI\" \"$65 million\" funding investors round",
+        "\"Venice AI\" product customers case study",
+        "\"Venice AI\" \"Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元\" competitors product use case",
+        "\"Venice AI\" \"$65 million\" investor quote why invested",
+        "\"Venice AI\" \"$65 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Venice AI\" \"$65 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Venice AI\" \"$65 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Venice AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Venice AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Venice AI\" \"Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Venice AI\" \"Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Venice AI\" \"$65 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Venice AI\" \"$65 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Venice AI\" \"$65 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Venice AI\" \"$65 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:44:34.683Z"
+    },
+    {
+      "event_id": "EV-2bb63a3015195f9b",
+      "company_name": "Agentic infrastructure startup Seltz",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Agentic infrastructure startup Seltz\" \"$12.5M\" funding investors round",
+        "\"Agentic infrastructure startup Seltz\" product customers case study",
+        "\"Agentic infrastructure startup Seltz\" \"Agentic infrastructure startup Seltz raises $12.5M to help AI agents search the web for answers - SiliconANGLE\" competitors product use case",
+        "\"Agentic infrastructure startup Seltz\" \"$12.5M\" investor quote why invested",
+        "\"Agentic infrastructure startup Seltz\" \"$12.5M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Agentic infrastructure startup Seltz\" \"$12.5M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Agentic infrastructure startup Seltz\" \"$12.5M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Agentic infrastructure startup Seltz\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Agentic infrastructure startup Seltz\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Agentic infrastructure startup Seltz\" \"Agentic infrastructure startup Seltz raises $12.5M to help AI agents search the web for answers - SiliconANGLE\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Agentic infrastructure startup Seltz\" \"Agentic infrastructure startup Seltz raises $12.5M to help AI agents search the web for answers - SiliconANGLE\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Agentic infrastructure startup Seltz\" \"$12.5M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Agentic infrastructure startup Seltz\" \"$12.5M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Agentic infrastructure startup Seltz\" \"$12.5M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Agentic infrastructure startup Seltz\" \"$12.5M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:44:34.683Z"
+    },
+    {
+      "event_id": "EV-7b7f0cdf219434f6",
+      "company_name": "Manifold",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Manifold\" \"$8M\" funding investors round",
+        "\"Manifold\" product customers case study",
+        "\"Manifold\" \"US Seed Weekly Funding Roundup (Mar 17-24, 2026) - Qubit Capital\" competitors product use case",
+        "\"Manifold\" \"$8M\" investor quote why invested",
+        "\"Manifold\" \"$8M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Manifold\" \"$8M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Manifold\" \"$8M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Manifold\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Manifold\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Manifold\" \"US Seed Weekly Funding Roundup (Mar 17-24, 2026) - Qubit Capital\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Manifold\" \"US Seed Weekly Funding Roundup (Mar 17-24, 2026) - Qubit Capital\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Manifold\" \"$8M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Manifold\" \"$8M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Manifold\" \"$8M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Manifold\" \"$8M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:44:34.683Z"
+    },
+    {
+      "event_id": "EV-20d762872664fddb",
+      "company_name": "Engram",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Engram\" \"$98M\" funding investors round",
+        "\"Engram\" product customers case study",
+        "\"Engram\" \"Engram Launches with $98M to Build AI That Actually Knows Your Organization\" competitors product use case",
+        "\"Engram\" \"$98M\" investor quote why invested",
+        "\"Engram\" \"$98M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Engram\" \"$98M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Engram\" \"$98M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Engram\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Engram\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Engram\" \"Engram Launches with $98M to Build AI That Actually Knows Your Organization\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Engram\" \"Engram Launches with $98M to Build AI That Actually Knows Your Organization\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Engram\" \"$98M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Engram\" \"$98M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Engram\" \"$98M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Engram\" \"$98M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-26T14:44:34.683Z"
+    }
+  ]
+}
