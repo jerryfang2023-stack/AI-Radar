@@ -3,6 +3,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { formatRecordedCommand } from "./lib/report-command.mjs";
 
 const root = process.cwd();
 const args = new Map(process.argv.slice(2).map((arg) => {
@@ -65,7 +66,7 @@ function run(label, command, commandArgs, options = {}) {
     label,
     ok: !result.error && result.status === 0,
     status: result.status,
-    command: [command, ...commandArgs].join(" "),
+    command: formatRecordedCommand(command, commandArgs),
     stdout: String(result.stdout || "").trim().slice(0, 16000),
     stderr: String(result.stderr || result.error?.message || "").trim().slice(0, 16000),
   };

@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { formatRecordedCommand } from "./lib/report-command.mjs";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
@@ -90,7 +91,7 @@ function runCommand(label, command, argsList, options = {}) {
   });
   return {
     label,
-    command: [command, ...argsList].join(" "),
+    command: formatRecordedCommand(command, argsList),
     ok: !result.error && result.status === 0,
     status: result.status,
     error: result.error?.message || "",

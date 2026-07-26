@@ -1,0 +1,87 @@
+{
+  "ok": true,
+  "healthOk": true,
+  "status": "passed_or_waiting",
+  "lanes": {
+    "business": {
+      "label": "Data Center V4 recovery router",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-26T01:15:02.185Z",
+      "finished_at": "2026-07-26T01:15:22.370Z",
+      "command": "node agent-workflow/tools/run-business-signals-health-dispatch.mjs --date=2026-07-26",
+      "stdout": "{\n  \"ok\": true,\n  \"date\": \"2026-07-26\",\n  \"action\": \"waiting\",\n  \"reason\": \"same-date Business Signals workflow is already in_progress\",\n  \"report\": \"agent-workflow/reports/2026-07-26-business-signals-health-dispatch.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-26-business-signals-health-dispatch.md\"\n}",
+      "stderr": ""
+    },
+    "first_line_viewpoints": {
+      "ok": true,
+      "status": "healthy",
+      "actions": [
+        {
+          "label": "First-Line Viewpoints gate",
+          "ok": true,
+          "status": 0,
+          "started_at": "2026-07-26T01:15:22.370Z",
+          "finished_at": "2026-07-26T01:15:22.475Z",
+          "command": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-07-26",
+          "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"issue_count\": 0,\n  \"warning_count\": 0,\n  \"report\": \"agent-workflow/reports/2026-07-26-follow-builders-data-gate.md\"\n}",
+          "stderr": ""
+        }
+      ]
+    },
+    "community_intelligence": {
+      "ok": true,
+      "status": "healthy",
+      "actions": [
+        {
+          "label": "Community Intelligence gate",
+          "ok": true,
+          "status": 0,
+          "started_at": "2026-07-26T01:15:22.475Z",
+          "finished_at": "2026-07-26T01:15:22.589Z",
+          "command": "node agent-workflow/tools/assert-community-intelligence-data.mjs --date=2026-07-26",
+          "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"report\": \"agent-workflow/reports/2026-07-26-community-intelligence-gate.md\",\n  \"items\": 63,\n  \"links\": 96,\n  \"generatedAt\": \"2026-07-26T01:12:23.034Z\"\n}",
+          "stderr": ""
+        }
+      ],
+      "note": ""
+    }
+  },
+  "actions": [
+    {
+      "label": "Data Center V4 recovery router",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-26T01:15:02.185Z",
+      "finished_at": "2026-07-26T01:15:22.370Z",
+      "command": "node agent-workflow/tools/run-business-signals-health-dispatch.mjs --date=2026-07-26",
+      "stdout": "{\n  \"ok\": true,\n  \"date\": \"2026-07-26\",\n  \"action\": \"waiting\",\n  \"reason\": \"same-date Business Signals workflow is already in_progress\",\n  \"report\": \"agent-workflow/reports/2026-07-26-business-signals-health-dispatch.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-26-business-signals-health-dispatch.md\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "First-Line Viewpoints gate",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-26T01:15:22.370Z",
+      "finished_at": "2026-07-26T01:15:22.475Z",
+      "command": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-07-26",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"issue_count\": 0,\n  \"warning_count\": 0,\n  \"report\": \"agent-workflow/reports/2026-07-26-follow-builders-data-gate.md\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Community Intelligence gate",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-26T01:15:22.475Z",
+      "finished_at": "2026-07-26T01:15:22.589Z",
+      "command": "node agent-workflow/tools/assert-community-intelligence-data.mjs --date=2026-07-26",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"report\": \"agent-workflow/reports/2026-07-26-community-intelligence-gate.md\",\n  \"items\": 63,\n  \"links\": 96,\n  \"generatedAt\": \"2026-07-26T01:12:23.034Z\"\n}",
+      "stderr": ""
+    }
+  ],
+  "notes": [],
+  "phase": "recovery",
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T01:15:22.589Z",
+  "dry_run": false
+}

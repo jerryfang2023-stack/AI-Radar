@@ -2,6 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { formatRecordedCommand } from "./lib/report-command.mjs";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
@@ -46,7 +47,7 @@ function run(label, command, commandArgs, timeoutMs = 180_000) {
     status: result.status,
     started_at: startedAt,
     finished_at: new Date().toISOString(),
-    command: [command, ...commandArgs].join(" "),
+    command: formatRecordedCommand(command, commandArgs),
     stdout: String(result.stdout || "").trim(),
     stderr: String(result.stderr || result.error?.message || "").trim(),
   };
