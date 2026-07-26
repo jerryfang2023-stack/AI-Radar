@@ -31,6 +31,11 @@ const write = args.get("write") === "true";
 const force = args.get("force") === "true";
 const limit = Math.max(0, Number(args.get("limit") || 0));
 const eventId = clean(args.get("event-id") || "");
+const eventIds = new Set([
+  eventId,
+  ...clean(args.get("event-ids") || "").split(",").map(clean),
+].filter(Boolean));
+const selectedOnly = args.get("selected-only") === "true";
 const concurrency = Math.max(1, Math.min(4, Number(args.get("concurrency") || 2)));
 const output = path.resolve(args.get("output")
   || path.join(root, "01-SiteV2/content/12-applications/funding-insights", `${date}.json`));
@@ -244,13 +249,14 @@ async function researchSources(bundle, event, company) {
   for (const result of results) {
     const candidateHost = hostFor(result.url);
     const isKnownSecondary = secondaryDomains.test(candidateHost);
+    const isOfficialCandidate = result.source_class === "official_candidate";
     const isCanonicalHost = officialHosts.some((host) => sameHostFamily(candidateHost, host));
     const companyName = clean(company.canonical_name).toLowerCase();
     const companyInLead = clean(`${result.title} ${result.provider_body}`).toLowerCase().includes(companyName);
     const isInvestorRationaleLead = result.intent === "investor_rationale"
       && companyInLead
       && /\b(?:invest|investment|portfolio|series|seed|funding)\b/iu.test(clean(`${result.title} ${result.url} ${result.provider_body}`));
-    if (!isKnownSecondary && !isCanonicalHost && !isInvestorRationaleLead) continue;
+    if (!isKnownSecondary && !isOfficialCandidate && !isCanonicalHost && !isInvestorRationaleLead) continue;
     const key = normalizedUrlKey(result.url);
     if (!deduped.has(key) || scoreCandidate(result, company.canonical_name) > scoreCandidate(deduped.get(key), company.canonical_name)) {
       deduped.set(key, result);
@@ -573,19 +579,30 @@ async function main() {
   const entityIndex = readJson(path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), {});
   const existing = readJson(output, { cards: [], queue: [] });
   const existingByEvent = new Map((existing.cards || []).map((card) => [card.triggered_by_event_id, card]));
-  let events = bundle.events
+  let eligibleEvents = bundle.events
     .filter((event) => event.event_type === "funding")
     .filter((event) => event.publication_status === "verified")
     .filter((event) => event.display_title_zh);
-  if (limit) events = events.slice(0, limit);
-  const selectedEvents = eventId ? events.filter((event) => event.event_id === eventId) : events;
-  if (eventId && !selectedEvents.length) throw new Error(`funding_event_not_found:${eventId}`);
+  const eligibleEventIds = new Set(eligibleEvents.map((event) => event.event_id));
+  const missingEventIds = [...eventIds].filter((id) => !eligibleEventIds.has(id));
+  if (missingEventIds.length) throw new Error(`funding_event_not_found:${missingEventIds.join(",")}`);
+  let events = selectedOnly && eventIds.size
+    ? eligibleEvents.filter((event) => eventIds.has(event.event_id))
+    : eligibleEvents;
+  let selectedEvents = eventIds.size
+    ? events.filter((event) => eventIds.has(event.event_id))
+    : events;
+  if (limit) {
+    selectedEvents = selectedEvents.slice(0, limit);
+    if (selectedOnly) events = selectedEvents;
+  }
   const pending = selectedEvents.filter((event) => force || !existingByEvent.has(event.event_id));
   if (!write) {
     console.log(JSON.stringify({
       ok: true,
       mode: "dry-run",
       date,
+      eligible_funding_events: eligibleEvents.length,
       funding_events: events.length,
       selected_events: selectedEvents.length,
       reused: selectedEvents.length - pending.length,

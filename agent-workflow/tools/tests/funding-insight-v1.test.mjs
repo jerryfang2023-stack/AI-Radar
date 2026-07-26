@@ -10,6 +10,7 @@ import {
   fundingInsightProblems,
   researchPayloadProblems,
 } from "../funding-insight-v1-utils.mjs";
+import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
 import { buildFundingInsightsFrontstage } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
@@ -174,6 +175,47 @@ test("模型漏填融资引用时只允许回填已验收的规范 Claim 原文"
     source_id: "FISRC-1",
     quote: "Acme raises $20M in Series A funding.",
   }]);
+});
+
+test("历史融资回填为重复 CanonicalEvent 选择证据最完整的唯一归属批次", () => {
+  const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-funding-history-"));
+  try {
+    const dataRoot = path.join(tempRoot, "01-SiteV2/content/11-databases/data-center-v4");
+    const event = {
+      event_id: "EV-DUPLICATE",
+      event_type: "funding",
+      publication_status: "verified",
+      display_title_zh: "Acme 完成 A 轮融资",
+      source_refs: ["SA-1"],
+      claim_refs: ["CL-1"],
+      missing_fields: ["investors"],
+    };
+    fs.mkdirSync(path.join(dataRoot, "2026-07-01"), { recursive: true });
+    fs.mkdirSync(path.join(dataRoot, "2026-07-02"), { recursive: true });
+    fs.writeFileSync(
+      path.join(dataRoot, "2026-07-01/canonical-events.json"),
+      JSON.stringify([event]),
+    );
+    fs.writeFileSync(
+      path.join(dataRoot, "2026-07-02/canonical-events.json"),
+      JSON.stringify([{
+        ...event,
+        source_refs: ["SA-1", "SA-2"],
+        claim_refs: ["CL-1", "CL-2"],
+        missing_fields: [],
+      }]),
+    );
+    const selection = selectHistoricalFundingEvents(tempRoot, {
+      from: "2026-07-01",
+      to: "2026-07-02",
+    });
+    assert.equal(selection.occurrence_count, 2);
+    assert.equal(selection.unique_event_count, 1);
+    assert.equal(selection.duplicate_occurrences_removed, 1);
+    assert.equal(selection.owners[0].owner_date, "2026-07-02");
+  } finally {
+    fs.rmSync(tempRoot, { recursive: true, force: true });
+  }
 });
 
 test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
