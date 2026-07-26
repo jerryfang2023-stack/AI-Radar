@@ -20,6 +20,7 @@ const expectedEnterpriseAiLensVersion = "EAI-V1.2.0-raw-card-ingestion-boundary"
 const expectedLegacyIntelligenceMapColumnVersion = "IMAP-V2.0.0-report-center-opportunity-system";
 const expectedReportsCenterColumnVersion = "REPORTS-V1.0.0-periodic-report-center";
 const expectedOpportunityMapColumnVersion = "OMAP-V1.1.0-direction-cards";
+const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.0-auto-published-research";
 const rolloverAcceptedVersions = new Map([
   ["V3.3.6-business-title-hermes-handoff", new Set(["2026-06-16"])],
 ]);
@@ -31,7 +32,10 @@ const frontstageFiles = [
   "01-SiteV2/site/data-center.html",
   "01-SiteV2/site/v3-data-observation.html",
   "01-SiteV2/site/intelligence-map.html",
+  "01-SiteV2/site/funding-insights.html",
   "01-SiteV2/site/opportunity-map.html",
+  "01-SiteV2/site/weekly-ai-business-change-radar-2026-07-20.html",
+  "01-SiteV2/site/weekly-ai-business-change-radar-2026-07-13.html",
   "01-SiteV2/site/weekly-ai-business-change-radar.html",
   "01-SiteV2/site/weekly-ai-business-change-radar-2026-07-06.html",
   "01-SiteV2/site/weekly-ai-business-change-radar-2026-06-29.html",
@@ -43,13 +47,17 @@ const frontstageFiles = [
   "01-SiteV2/site/reports.html",
   "01-SiteV2/site/assets/data-center-v4.css",
   "01-SiteV2/site/assets/data-center-v4.js",
+  "01-SiteV2/site/assets/funding-insights.css",
+  "01-SiteV2/site/assets/funding-insights.js",
   "01-SiteV2/site/assets/v4-report-shell.js",
   "01-SiteV2/site/assets/weekly-report.css",
   "01-SiteV2/site/assets/reports.css",
   "01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs",
   "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs",
+  "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs",
   "01-SiteV2/site/data/data-center-v4-frontstage.json",
   "01-SiteV2/site/data/industry-reports-frontstage.json",
+  "01-SiteV2/site/data/funding-insights-v1.json",
   "01-SiteV2/site/data/first-line-viewpoints-v4.json",
   "01-SiteV2/site/data/community-intelligence.json",
 ].map((file) => path.join(root, file));
@@ -59,7 +67,10 @@ const publicFrontstageTextFiles = [
   "01-SiteV2/site/data-center.html",
   "01-SiteV2/site/v3-data-observation.html",
   "01-SiteV2/site/intelligence-map.html",
+  "01-SiteV2/site/funding-insights.html",
   "01-SiteV2/site/opportunity-map.html",
+  "01-SiteV2/site/weekly-ai-business-change-radar-2026-07-20.html",
+  "01-SiteV2/site/weekly-ai-business-change-radar-2026-07-13.html",
   "01-SiteV2/site/weekly-ai-business-change-radar.html",
   "01-SiteV2/site/weekly-ai-business-change-radar-2026-07-06.html",
   "01-SiteV2/site/weekly-ai-business-change-radar-2026-06-29.html",
@@ -71,6 +82,8 @@ const publicFrontstageTextFiles = [
   "01-SiteV2/site/reports.html",
   "01-SiteV2/site/assets/data-center-v4.css",
   "01-SiteV2/site/assets/data-center-v4.js",
+  "01-SiteV2/site/assets/funding-insights.css",
+  "01-SiteV2/site/assets/funding-insights.js",
   "01-SiteV2/site/assets/v4-report-shell.js",
   "01-SiteV2/site/assets/weekly-report.css",
   "01-SiteV2/site/assets/reports.css",
@@ -196,6 +209,7 @@ function collectUnifiedNavigationIssues() {
     "data-center.html?view=index",
     "应用中心",
     "行业报告",
+    "funding-insights.html",
     "opportunity-map.html",
   ];
   for (const token of reportsCenterRequired) {
@@ -223,6 +237,7 @@ function collectUnifiedNavigationIssues() {
     "assets/data-center-v4.css",
     "dc-sidebar",
     "href=\"intelligence-map.html\">行业报告",
+    "href=\"funding-insights.html\">融资透视",
     "href=\"opportunity-map.html\" aria-current=\"page\">机会地图",
     "data-map-panel=\"entry\"",
     "data-map-panel=\"pain\"",
@@ -236,8 +251,29 @@ function collectUnifiedNavigationIssues() {
     issues.push(issue(opportunityMapFile, "opportunity_map_projection_dependency_invalid"));
   }
 
+  const fundingInsightsFile = path.join(root, "01-SiteV2/site/funding-insights.html");
+  const fundingInsightsHtml = read(fundingInsightsFile);
+  const fundingInsightsRequired = [
+    "assets/data-center-v4.css",
+    "assets/funding-insights.css",
+    "assets/funding-insights.js",
+    "href=\"trend-radar.html\">变化雷达",
+    "href=\"funding-insights.html\" aria-current=\"page\">融资透视",
+    "href=\"opportunity-map.html\">机会地图",
+    "href=\"intelligence-map.html\">行业报告",
+  ];
+  for (const token of fundingInsightsRequired) {
+    if (!fundingInsightsHtml.includes(token)) issues.push(issue(fundingInsightsFile, "funding_insights_required_token_missing", token));
+  }
+  const fundingInsightsScript = path.join(root, "01-SiteV2/site/assets/funding-insights.js");
+  if (!read(fundingInsightsScript).includes("data/funding-insights-v1.json")) {
+    issues.push(issue(fundingInsightsScript, "funding_insights_projection_dependency_missing"));
+  }
+
   const reportDetailPages = [
     "weekly-ai-business-change-radar.html",
+    "weekly-ai-business-change-radar-2026-07-20.html",
+    "weekly-ai-business-change-radar-2026-07-13.html",
     "weekly-ai-business-change-radar-2026-07-06.html",
     "weekly-ai-business-change-radar-2026-06-29.html",
     "weekly-ai-business-change-radar-2026-06-22.html",
@@ -251,6 +287,7 @@ function collectUnifiedNavigationIssues() {
     "data-center.html?view=community",
     "data-center.html?view=viewpoints",
     "data-center.html?view=index",
+    "href=\"funding-insights.html\">融资透视",
     "href=\"intelligence-map.html\" aria-current=\"page\">行业报告",
     "href=\"opportunity-map.html\">机会地图",
     "assets/v4-report-shell.js",
@@ -493,7 +530,10 @@ function collectVersionMetaIssues() {
     "data-center.html",
     "v3-data-observation.html",
     "intelligence-map.html",
+    "funding-insights.html",
     "opportunity-map.html",
+    "weekly-ai-business-change-radar-2026-07-20.html",
+    "weekly-ai-business-change-radar-2026-07-13.html",
     "weekly-ai-business-change-radar.html",
     "weekly-ai-business-change-radar-2026-07-06.html",
     "weekly-ai-business-change-radar-2026-06-29.html",
@@ -512,6 +552,8 @@ function collectVersionMetaIssues() {
   const reportCenterPages = [
     "intelligence-map.html",
     "weekly-ai-business-change-radar.html",
+    "weekly-ai-business-change-radar-2026-07-20.html",
+    "weekly-ai-business-change-radar-2026-07-13.html",
     "weekly-ai-business-change-radar-2026-07-06.html",
     "weekly-ai-business-change-radar-2026-06-29.html",
     "weekly-ai-business-change-radar-2026-06-22.html",
@@ -526,6 +568,9 @@ function collectVersionMetaIssues() {
   const opportunityMapFile = path.join(root, "01-SiteV2/site/opportunity-map.html");
   const opportunityMapToken = `name="wavesight-column-version" content="${expectedOpportunityMapColumnVersion}"`;
   if (!read(opportunityMapFile).includes(opportunityMapToken)) issues.push(issue(opportunityMapFile, "opportunity_map_column_version_meta_missing", opportunityMapToken));
+  const fundingInsightsFile = path.join(root, "01-SiteV2/site/funding-insights.html");
+  const fundingInsightsToken = `name="wavesight-column-version" content="${expectedFundingInsightsColumnVersion}"`;
+  if (!read(fundingInsightsFile).includes(fundingInsightsToken)) issues.push(issue(fundingInsightsFile, "funding_insights_column_version_meta_missing", fundingInsightsToken));
   const graphIndexFile = path.join(root, "01-SiteV2/site/data/intelligence-graph-index.json");
   try {
     const graphIndex = JSON.parse(read(graphIndexFile));

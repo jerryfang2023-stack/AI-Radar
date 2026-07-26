@@ -808,7 +808,7 @@
         <div class="dc-relation-canvas">
           <div class="dc-relation-canvas-head">
             <div><span>ONE-HOP VIEW</span><strong>${escapeHtml(center.name)}</strong></div>
-            <p>显示 ${visibleNeighborCount} / ${neighborCount} 个直接关联实体${neighborCount > 14 ? "，优先呈现关系记录较多者" : ""}</p>
+            <p>显示 ${visibleNeighborCount} / ${neighborCount} 个直接关联实体${neighborCount > 14 ? "，优先呈现关系记录较多者" : ""}${center.indexType === "company" ? ` · <a href="funding-insights.html?company=${encodeURIComponent(center.id)}">查看融资透视</a>` : ""}</p>
           </div>
           ${relations.length
             ? relationshipGraphSvg(center, relations, entityById)
@@ -1876,6 +1876,9 @@
     });
     const aliases = (entity.aliases || []).join("、");
     const viewpoints = entity.viewpoints || [];
+    const fundingInsightLink = entity.entityType === "organization_candidate"
+      ? `<a href="funding-insights.html?company=${encodeURIComponent(entity.id)}">融资透视</a>`
+      : "";
     return `
       ${breadcrumb("index", entity.name)}
       <header class="dc-detail-head dc-entity-head">
@@ -1883,6 +1886,7 @@
         <div class="dc-detail-meta">
           <span>${escapeHtml(entity.typeLabel)}</span>
           ${entity.firstSeen ? `<span>${escapeHtml(entity.firstSeen)} — ${escapeHtml(entity.lastSeen || entity.firstSeen)}</span>` : ""}
+          ${fundingInsightLink}
         </div>
       </header>
       <div class="dc-detail-grid">

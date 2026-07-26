@@ -25,6 +25,7 @@ const cases = [
   [`data-center.html?view=index&detail=entity&id=${encodeURIComponent(smokeEntity.id)}`, "data-center.html?view=index"],
   [`data-center.html?view=index&detail=taxonomy&id=${encodeURIComponent(smokeTaxonomy.id)}`, "data-center.html?view=index"],
   ["intelligence-map.html", "intelligence-map.html"],
+  ["funding-insights.html", "funding-insights.html"],
   ["opportunity-map.html", "opportunity-map.html"],
   ["trend-radar.html", "trend-radar.html"],
   ["weekly-ai-business-change-radar.html", "weekly-ai-business-change-radar.html"],
@@ -86,6 +87,19 @@ async function main() {
         page.on("pageerror", (error) => errors.push(error.message));
         const response = await page.goto(`${baseUrl}/${route}`, { waitUntil: "networkidle" });
         await page.waitForTimeout(250);
+        let fundingDialog = null;
+        if (route === "funding-insights.html") {
+          const firstCard = page.locator("[data-open-id]").first();
+          if (await firstCard.count()) {
+            await firstCard.click();
+            await page.waitForFunction(() => document.querySelector("[data-dialog]")?.open === true);
+            const text = await page.locator("[data-dialog-content]").innerText();
+            fundingDialog = ["投资方", "融资历史", "来源证据"].every((token) => text.includes(token));
+            await page.locator("[data-dialog-close]").click();
+          } else {
+            fundingDialog = false;
+          }
+        }
         const metrics = await page.evaluate(() => ({
           title: document.title,
           width: document.documentElement.clientWidth,
@@ -135,11 +149,13 @@ async function main() {
           && page.url().includes(expected)
           && metrics.scrollWidth <= metrics.width + 1
           && (!metrics.reportFeatureAlignment || (metrics.reportFeatureAlignment.cardBottomDelta <= 1 && metrics.reportFeatureAlignment.linkBottomDelta <= 1))
+          && fundingDialog !== false
           && errors.length === 0;
-        results.push({ viewport: viewport.name, route, finalUrl: page.url(), status: response?.status(), ...metrics, errors, ok });
+        results.push({ viewport: viewport.name, route, finalUrl: page.url(), status: response?.status(), ...metrics, fundingDialog, errors, ok });
 
         if (viewport.name === "desktop" && [
           "intelligence-map.html",
+          "funding-insights.html",
           "opportunity-map.html",
           "trend-radar.html",
           "weekly-ai-business-change-radar.html",
