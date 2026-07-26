@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$RepoPath = "",
   [string]$CdpUrl = "http://127.0.0.1:9333",
   [string]$ChromePath = "",
@@ -132,9 +132,9 @@ function Invoke-NpmStep {
   }
   if ($exitCode -ne 0) {
     if (($output -join "`n") -match "COMMUNITY_LOGIN_REQUIRED") {
-      throw "COMMUNITY_LOGIN_REQUIRED: 登录状态已失效。请打开社群情报专用 Chrome 配置，完成扫码/登录验证后，重新运行本地社群情报任务。"
+      throw ('COMMUNITY_LOGIN_REQUIRED: login expired. Open the dedicated Community Intelligence Chrome profile, complete login/QR verification, then rerun the local task.')
     }
-    throw "$Name failed with exit code $exitCode."
+    throw ($Name + ' failed with exit code ' + $exitCode + '.')
   }
 }
 
@@ -151,7 +151,7 @@ function Invoke-NodeStep {
     Write-LogLine ("[$Name] " + $line)
   }
   if ($exitCode -ne 0) {
-    throw "$Name failed with exit code $exitCode."
+    throw ($Name + ' failed with exit code ' + $exitCode + '.')
   }
 }
 
@@ -235,7 +235,7 @@ try {
       $lastError = $_.Exception.Message
       Write-LogLine ("Community intelligence attempt $attempt failed: " + $lastError)
       if ($lastError -match "COMMUNITY_LOGIN_REQUIRED") {
-        Write-LogLine "MANUAL_ACTION_REQUIRED: 登录状态已失效；请打开社群情报专用 Chrome 配置完成扫码/登录，再重新运行任务。其他栏目可继续运行。"
+        Write-LogLine "MANUAL_ACTION_REQUIRED: 鐧诲綍鐘舵€佸凡澶辨晥锛涜鎵撳紑绀剧兢鎯呮姤涓撶敤 Chrome 閰嶇疆瀹屾垚鎵爜/鐧诲綍锛屽啀閲嶆柊杩愯浠诲姟銆傚叾浠栨爮鐩彲缁х画杩愯銆?"
         break
       }
       if ($attempt -lt $attemptLimit) {
@@ -254,3 +254,4 @@ catch {
 finally {
   Pop-Location
 }
+

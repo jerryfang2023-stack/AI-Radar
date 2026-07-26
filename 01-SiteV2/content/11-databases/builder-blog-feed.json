@@ -1,12 +1,10 @@
 {
-  "generatedAt": "2026-07-25T01:32:03.749Z",
+  "generatedAt": "2026-07-26T01:05:25.041Z",
   "stats": {
-    "blogsBuilt": 5,
-    "totalItems": 30,
-    "sourceCount": 8,
-    "errors": [
-      "dataiku-blog: HTTP 404"
-    ]
+    "blogsBuilt": 4,
+    "totalItems": 26,
+    "sourceCount": 6,
+    "errors": []
   },
   "blogs": [
     {
@@ -14,6 +12,16 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jul/25/ruff/#atom-everything",
+          "text": "Ruff v0.16.0",
+          "summary": "<p><strong><a href=\"https://astral.sh/blog/ruff-v0.16.0\">Ruff v0.16.0</a></strong></p>\nAstral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd. I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpin",
+          "createdAt": "2026-07-25T22:44:05+00:00",
+          "url": "https://simonwillison.net/2026/Jul/25/ruff/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
           "text": "Quoting Boris Cherny",
@@ -173,36 +181,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything",
-          "text": "SQLite Query Explainer",
-          "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/sqlite-query-explainer\">SQLite Query Explainer</a></p>\n        <p>Julia Evan's, in <a href=\"https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/\">Learning a few things about running SQLite</a>:</p>\n<blockquote>\n<p>Maybe one",
-          "createdAt": "2026-07-18T17:19:10+00:00",
-          "url": "https://simonwillison.net/2026/Jul/18/sqlite-query-explainer/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything",
-          "text": "Claude make Fable 5 permanent",
-          "summary": "<p><strong><a href=\"https://twitter.com/claudeai/status/2078302415804379218\">Claude make Fable 5 permanent</a></strong></p>\nAn update from the <code>@claudeai</code> account on Twitter:</p>\n<blockquote>\n<p>Beginning July 20, Claude Fable 5 will be included in all Max and Team Premium plans, at 50% o",
-          "createdAt": "2026-07-18T06:00:13+00:00",
-          "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jul/18/quixote/#atom-everything",
-          "text": "nascheme/quixote",
-          "summary": "<p><strong><a href=\"https://github.com/nascheme/quixote\">nascheme/quixote</a></strong></p>\nA certain vintage of Python web nerd might be delighted to learn that the most recent commit to the Quixote web framework was <a href=\"(https://github.com/nascheme/quixote/commit/7f775cf9d1e7e80fcbb2706b4a1d97",
-          "createdAt": "2026-07-18T05:27:49+00:00",
-          "url": "https://simonwillison.net/2026/Jul/18/quixote/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -311,33 +289,6 @@
           "summary": "",
           "createdAt": "Mon, 20 Jul 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-07-20",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        }
-      ]
-    },
-    {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "bio": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "tweets": [
-        {
-          "id": "https://www.tigera.io/blog/migrate-first-modernize-later-a-leadership-guide-to-converging-vms-and-containers-to-run-ai-workloads/",
-          "text": "Migrate First, Modernize Later: A Leadership Guide to Converging VMs and Containers to Run AI Workloads",
-          "summary": "The Tipping Point Every so often the ground under enterprise IT moves. It&#8217;s moving now. Across industries, organizations are consolidating fragmented infrastructure onto a single, self-hosted platform capable of running both containers and virtual machines...\nThe post Migrate First, Modernize ",
-          "createdAt": "Fri, 24 Jul 2026 21:32:47 +0000",
-          "url": "https://www.tigera.io/blog/migrate-first-modernize-later-a-leadership-guide-to-converging-vms-and-containers-to-run-ai-workloads/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.tigera.io/blog/what-happens-to-a-vms-ip-when-it-moves-during-migration/",
-          "text": "What Happens to a VM&#8217;s IP When It Moves During Migration?",
-          "summary": "Why VM IP identity needs handling on Kubernetes A KubeVirt VM runs inside a pod. That is the trick that lets Kubernetes schedule a VM like any other workload. It also means the VM and...\nThe post What Happens to a VM&#8217;s IP When It Moves During Migration? appeared first on Tigera – Creator of Ca",
-          "createdAt": "Thu, 23 Jul 2026 13:10:45 +0000",
-          "url": "https://www.tigera.io/blog/what-happens-to-a-vms-ip-when-it-moves-during-migration/",
           "likes": 0,
           "retweets": 0,
           "replies": 0
