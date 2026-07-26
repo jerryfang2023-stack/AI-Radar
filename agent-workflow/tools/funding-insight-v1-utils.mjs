@@ -136,15 +136,34 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
   sanitized.products = (sanitized.products || [])
     .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
     .filter((item) => clean(item.name) && clean(item.description) && item.evidence_refs.length);
-  for (const group of ["customers", "comparisons", "metrics", "quotes"]) {
-    sanitized[group] = (sanitized[group] || [])
-      .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
-      .filter((item) => item.evidence_refs.length);
-  }
+  sanitized.customers = (sanitized.customers || [])
+    .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
+    .filter((item) => clean(item.name) && item.evidence_refs.length);
+  sanitized.comparisons = (sanitized.comparisons || [])
+    .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
+    .filter((item) => (
+      clean(item.name)
+      && clean(item.product || item.positioning || item.scenario)
+      && item.evidence_refs.length
+    ));
+  sanitized.metrics = (sanitized.metrics || [])
+    .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
+    .filter((item) => clean(item.label) && item.evidence_refs.length);
+  sanitized.quotes = (sanitized.quotes || [])
+    .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
+    .filter((item) => clean(item.speaker) && clean(item.quote) && item.evidence_refs.length);
   if (sanitized.analysis) {
+    const investorNames = new Set((sanitized.financing?.investors || [])
+      .map((item) => clean(item.name).toLowerCase())
+      .filter(Boolean));
     sanitized.analysis.investment_rationale = (sanitized.analysis.investment_rationale || [])
       .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
-      .filter((item) => clean(item.institution) && clean(item.quote) && item.evidence_refs.length);
+      .filter((item) => (
+        investorNames.has(clean(item.institution).toLowerCase())
+        && clean(item.rationale)
+        && clean(item.quote)
+        && item.evidence_refs.some((evidence) => clean(evidence.quote).includes(clean(item.quote)))
+      ));
   }
   return sanitized;
 }

@@ -9,6 +9,7 @@ import {
   ensureCanonicalFundingEvidence,
   fundingInsightProblems,
   researchPayloadProblems,
+  sanitizeResearchPayload,
 } from "../funding-insight-v1-utils.mjs";
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
 import { buildFundingInsightsFrontstage } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
@@ -153,6 +154,39 @@ test("机构投资理由必须来自本轮投资方并保留原文证据", () =>
   payload.analysis.investment_rationale[0].institution = "Unknown Fund";
   assert.ok(researchPayloadProblems(payload, [source, productSource], ["DIR-1"])
     .includes("investment_rationale_1_institution_not_in_round"));
+});
+
+test("可选研究数组中的不完整条目在硬门禁前被删除", () => {
+  const source = {
+    source_id: "SRC-1",
+    body_clean: "Northstar invested in Acme. Acme Agent automates enterprise workflows.",
+  };
+  const payload = sanitizeResearchPayload({
+    financing: {
+      investors: [{
+        name: "Northstar",
+        role: "本轮领投",
+        evidence_refs: evidence("SRC-1", "Northstar invested in Acme."),
+      }],
+    },
+    customers: [{ name: "", evidence_refs: evidence("SRC-1", "Acme Agent automates enterprise workflows.") }],
+    comparisons: [{ name: "Peer", product: "", scenario: "", evidence_refs: evidence("SRC-1", "Acme Agent automates enterprise workflows.") }],
+    metrics: [{ label: "", evidence_refs: evidence("SRC-1", "Acme Agent automates enterprise workflows.") }],
+    quotes: [{ speaker: "", quote: "", evidence_refs: evidence("SRC-1", "Northstar invested in Acme.") }],
+    analysis: {
+      investment_rationale: [{
+        institution: "Not In Round",
+        rationale: "不属于本轮投资方",
+        quote: "Northstar invested in Acme.",
+        evidence_refs: evidence("SRC-1", "Northstar invested in Acme."),
+      }],
+    },
+  }, [source]);
+  assert.deepEqual(payload.customers, []);
+  assert.deepEqual(payload.comparisons, []);
+  assert.deepEqual(payload.metrics, []);
+  assert.deepEqual(payload.quotes, []);
+  assert.deepEqual(payload.analysis.investment_rationale, []);
 });
 
 test("模型漏填融资引用时只允许回填已验收的规范 Claim 原文", () => {

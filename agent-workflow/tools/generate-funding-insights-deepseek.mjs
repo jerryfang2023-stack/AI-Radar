@@ -335,6 +335,7 @@ function promptFor(event, company, sources, directions) {
     "related_direction_id只能从DIRECTION_OPTIONS选择；没有合适方向时返回空字符串。",
     "返回一个JSON对象，不要代码围栏。Schema:",
     "Whole-card evidence rule: cite at least two distinct SOURCE_ID values. Prefer the canonical funding source plus a captured company, investor, or credible independent source. Never add an irrelevant citation merely to reach two sources.",
+    "Keep the JSON concise: at most 3 products, 5 customers, 5 comparisons, 8 metrics, 5 quotes, and 5 investment-rationale items. Omit an optional item instead of returning a partial object.",
     JSON.stringify({
       company: {
         full_name: "string",
