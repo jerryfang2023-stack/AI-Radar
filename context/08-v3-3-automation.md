@@ -76,6 +76,7 @@ The 2026-06-09 morning incident report is treated as pre-V3.3.3 upgrade input. I
 - Consolidated closure: local Windows task `WaveSight Daily Automation Closure` runs at 09:50, runs the safe self-check and invokes Codex only for unresolved targeted tasks.
 - Final closure: local Windows task `WaveSight Daily Final Closure` runs at 16:45 after the afternoon First-Line Viewpoints window. It writes the final daily supervision report, evidence-supply health report, and stable repair incidents for signals repeated at least twice in the trailing seven daily reports.
 - Hermes control-plane watchdog: local Windows task `WaveSight Hermes Control Plane Watchdog` runs at 10:20 and checks only that the morning, recovery, and closure reports are readable.
+- GitHub heartbeat publisher: separate local Windows task `WaveSight Control Plane Heartbeat Publisher` runs at 10:25 and dispatches only sanitized controller metadata to `.github/workflows/hermes-control-plane-heartbeat.yml`; raw local reports, paths, commands, and production data are never published.
 
 Operational rules:
 
@@ -90,8 +91,9 @@ Operational rules:
 9. Daily Problem Watchdog writes `agent-workflow/reports/<date>-daily-recovery-watchdog.json`, `.md`, and `agent-workflow/inbox/production-incidents/<date>-<lane>-daily-problem-watchdog.md` for actionable problems.
 10. The 09:50 closure should complete before 10:00 when production state is observable. If a same-date workflow is still queued or in progress, classify the lane as waiting rather than failed.
 11. At 10:20 Hermes checks controller-report liveness only. An existing controller report is observable even when it records a downstream repair status.
-12. Final closure separates each lane's data, publication, task-execution, and login state where applicable. A failed lane remains visible but must not suppress the other lane results.
-13. Repeated daily problems or warnings create a neutral open production incident with a stable fingerprint. Existing open fingerprints are reused rather than duplicated.
+12. At 10:25 the separate heartbeat publisher exposes the sanitized result as a GitHub Actions run. GitHub-only monitoring reads that workflow rather than raw local report paths.
+13. Final closure separates each lane's data, publication, task-execution, and login state where applicable. A failed lane remains visible but must not suppress the other lane results.
+14. Repeated daily problems or warnings create a neutral open production incident with a stable fingerprint. Existing open fingerprints are reused rather than duplicated.
 
 ## Daily Problem Watchdog
 
