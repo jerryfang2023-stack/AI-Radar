@@ -4,7 +4,7 @@ import path from "node:path";
 
 export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.0";
 export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.0";
-export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.0";
+export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.1";
 
 export function clean(value = "") {
   return String(value || "").replace(/\s+/gu, " ").trim();
@@ -141,7 +141,36 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
       .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
       .filter((item) => item.evidence_refs.length);
   }
+  if (sanitized.analysis) {
+    sanitized.analysis.investment_rationale = (sanitized.analysis.investment_rationale || [])
+      .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
+      .filter((item) => clean(item.institution) && clean(item.quote) && item.evidence_refs.length);
+  }
   return sanitized;
+}
+
+export function ensureCanonicalFundingEvidence(payload = {}, bundle = {}, event = {}, sources = []) {
+  if (!payload.financing || payload.financing.evidence_refs?.length) return payload;
+  const claimById = new Map((bundle.claims || []).map((claim) => [claim.claim_id, claim]));
+  const sourceByRawId = new Map(sources
+    .filter((source) => source.raw_id)
+    .map((source) => [source.raw_id, source]));
+  for (const claimId of event.claim_refs || []) {
+    const claim = claimById.get(claimId);
+    const quote = clean(claim?.source_quote);
+    const source = sourceByRawId.get(claim?.raw_id);
+    if (
+      claim?.claim_type === "funding"
+      && claim?.verification_status === "accepted"
+      && source
+      && quote
+      && source.body_clean.includes(quote)
+    ) {
+      payload.financing.evidence_refs = [{ source_id: source.source_id, quote }];
+      break;
+    }
+  }
+  return payload;
 }
 
 export function referencedSourceIds(payload = {}) {
@@ -198,10 +227,31 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
       const narrative = group === "customer"
         ? item?.use_case
         : group === "comparison"
-          ? `${item?.positioning || ""}${item?.target_customer || ""}${item?.core_difference || ""}`
+          ? `${item?.product || item?.positioning || ""}${item?.scenario || ""}${item?.target_customer || ""}${item?.core_difference || ""}`
           : item?.label;
       if (clean(narrative) && !containsChinese(narrative)) problems.push(`${group}_${index + 1}_narrative_not_chinese`);
+      if (group === "comparison" && !clean(item?.product || item?.positioning) && !clean(item?.scenario)) {
+        problems.push(`comparison_${index + 1}_specifics_missing`);
+      }
       problems.push(...evidenceProblems(item?.evidence_refs, sourceById, `${group}_${index + 1}_evidence`));
+    }
+  }
+  if (!Array.isArray(payload?.analysis?.investment_rationale)) {
+    problems.push("investment_rationale_must_be_array");
+  } else {
+    const investorNames = new Set((payload?.financing?.investors || []).map((item) => clean(item.name).toLowerCase()));
+    for (const [index, item] of payload.analysis.investment_rationale.entries()) {
+      if (!clean(item?.institution) || !investorNames.has(clean(item.institution).toLowerCase())) {
+        problems.push(`investment_rationale_${index + 1}_institution_not_in_round`);
+      }
+      if (!clean(item?.rationale) || !containsChinese(item.rationale)) {
+        problems.push(`investment_rationale_${index + 1}_rationale_not_chinese`);
+      }
+      if (!clean(item?.quote)) problems.push(`investment_rationale_${index + 1}_quote_missing`);
+      else if (!(item.evidence_refs || []).some((evidence) => clean(evidence.quote).includes(clean(item.quote)))) {
+        problems.push(`investment_rationale_${index + 1}_quote_not_cited`);
+      }
+      problems.push(...evidenceProblems(item?.evidence_refs, sourceById, `investment_rationale_${index + 1}_evidence`));
     }
   }
   if (!clean(payload?.analysis?.capital_judgment)) problems.push("capital_judgment_missing");
@@ -237,6 +287,10 @@ export function fundingInsightProblems(card = {}) {
   if (!Array.isArray(card.funding_history)) problems.push("funding_history_missing");
   if (!card.analysis?.capital_judgment) problems.push("capital_judgment_missing");
   if (!containsChinese(card.analysis?.capital_judgment) || !containsChinese(card.analysis?.sector)) problems.push("analysis_not_chinese");
+  if (!Array.isArray(card.analysis?.investment_rationale)) problems.push("investment_rationale_missing");
+  if ((card.analysis?.investment_rationale || []).some((item) => (
+    !item.institution || !item.rationale || !item.quote || !item.evidence_refs?.length
+  ))) problems.push("investment_rationale_incomplete");
   if ((card.analysis?.risks || []).some((risk) => !containsChinese(risk))) problems.push("risks_not_chinese");
   if (card.publication_status !== "auto_published") problems.push("publication_status_invalid");
   if (!card.auto_publish_gate?.passed || card.auto_publish_gate?.problems?.length) problems.push("auto_publish_gate_invalid");

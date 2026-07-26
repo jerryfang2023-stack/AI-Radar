@@ -6,6 +6,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import {
   FUNDING_INSIGHT_VERSION,
+  ensureCanonicalFundingEvidence,
   fundingInsightProblems,
   researchPayloadProblems,
 } from "../funding-insight-v1-utils.mjs";
@@ -49,7 +50,9 @@ function validCard() {
     quotes: [],
     analysis: {
       sector: "企业 AI",
+      investment_rationale: [],
       capital_judgment: "资本押注的是可重复交付，而不是通用聊天入口。",
+      validated_signals: ["已经形成企业工作流产品"],
       risks: ["客户部署周期仍然较长"],
       related_direction_id: "DIR-1",
     },
@@ -94,11 +97,83 @@ test("DeepSeek 研究结果必须逐项引用已抓取来源原文", () => {
     customers: [],
     comparisons: [],
     metrics: [],
-    analysis: { capital_judgment: "资金用于扩大企业交付。", risks: ["交付周期"], related_direction_id: "DIR-1", sector: "企业人工智能" },
+    analysis: {
+      investment_rationale: [],
+      capital_judgment: "资金用于扩大企业交付。",
+      validated_signals: ["已经形成企业工作流产品"],
+      risks: ["交付周期"],
+      related_direction_id: "DIR-1",
+      sector: "企业人工智能",
+    },
   };
   assert.deepEqual(researchPayloadProblems(payload, [source, productSource], ["DIR-1"]), []);
   payload.financing.investors[0].evidence_refs[0].quote = "source does not contain this";
   assert.ok(researchPayloadProblems(payload, [source, productSource], ["DIR-1"]).includes("investor_1_evidence_1_quote_mismatch"));
+});
+
+test("机构投资理由必须来自本轮投资方并保留原文证据", () => {
+  const source = {
+    source_id: "SRC-1",
+    body_clean: "Northstar partner Ada Lee said: The team has turned a difficult workflow into measurable customer outcomes.",
+  };
+  const productSource = {
+    source_id: "SRC-2",
+    body_clean: "Acme Agent automates enterprise workflows.",
+  };
+  const payload = {
+    company: { full_name: "Acme, Inc.", summary: "企业智能代理平台", evidence_refs: evidence("SRC-1", source.body_clean) },
+    financing: {
+      round: "A 轮",
+      amount: "$20M",
+      evidence_refs: evidence("SRC-1", source.body_clean),
+      investors: [{ name: "Northstar Ventures", role: "本轮领投", evidence_refs: evidence("SRC-1", source.body_clean) }],
+    },
+    products: [{ name: "Acme Agent", description: "企业智能代理", evidence_refs: evidence("SRC-2", productSource.body_clean) }],
+    customers: [],
+    comparisons: [],
+    metrics: [],
+    analysis: {
+      investment_rationale: [{
+        institution: "Northstar Ventures",
+        speaker: "Ada Lee",
+        speaker_role: "合伙人",
+        rationale: "团队已把复杂工作流转化为可量化客户结果。",
+        quote: "The team has turned a difficult workflow into measurable customer outcomes.",
+        evidence_refs: evidence("SRC-1", source.body_clean),
+      }],
+      capital_judgment: "资金押注可量化的企业交付结果。",
+      validated_signals: ["已有工作流产品"],
+      risks: ["交付周期仍待规模化验证"],
+      related_direction_id: "DIR-1",
+      sector: "企业人工智能",
+    },
+  };
+  assert.deepEqual(researchPayloadProblems(payload, [source, productSource], ["DIR-1"]), []);
+  payload.analysis.investment_rationale[0].institution = "Unknown Fund";
+  assert.ok(researchPayloadProblems(payload, [source, productSource], ["DIR-1"])
+    .includes("investment_rationale_1_institution_not_in_round"));
+});
+
+test("模型漏填融资引用时只允许回填已验收的规范 Claim 原文", () => {
+  const payload = { financing: { evidence_refs: [] } };
+  const source = {
+    source_id: "FISRC-1",
+    raw_id: "RAW-1",
+    body_clean: "Acme raises $20M in Series A funding.",
+  };
+  ensureCanonicalFundingEvidence(payload, {
+    claims: [{
+      claim_id: "CL-1",
+      raw_id: "RAW-1",
+      claim_type: "funding",
+      source_quote: "Acme raises $20M in Series A funding.",
+      verification_status: "accepted",
+    }],
+  }, { claim_refs: ["CL-1"] }, [source]);
+  assert.deepEqual(payload.financing.evidence_refs, [{
+    source_id: "FISRC-1",
+    quote: "Acme raises $20M in Series A funding.",
+  }]);
 });
 
 test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
@@ -139,9 +214,37 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
 
 test("融资透视页面使用应用中心新结构并声明自动数据入口", () => {
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/funding-insights.html"), "utf8");
+  const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/funding-insights.js"), "utf8");
+  const styles = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/funding-insights.css"), "utf8");
   assert.match(html, /href="trend-radar\.html">变化雷达/u);
   assert.match(html, /href="funding-insights\.html" aria-current="page">融资透视/u);
   assert.match(html, /href="opportunity-map\.html">机会地图/u);
   assert.match(html, /href="intelligence-map\.html">行业报告/u);
   assert.match(html, /assets\/funding-insights\.js/u);
+  assert.match(html, /data-category-tabs/u);
+  assert.doesNotMatch(html, /select name="sector"/u);
+  assert.doesNotMatch(html, /data-status|fi-status/u);
+  assert.match(html, /<form class="fi-controls"[\s\S]*data-category-tabs[\s\S]*<\/form>/u);
+  const cardTemplate = script.slice(
+    script.indexOf('<article class="fi-card">'),
+    script.indexOf('list.querySelectorAll("[data-open-id]")'),
+  );
+  assert.match(cardTemplate, /card\.company\?\.name[\s\S]*fi-card-round[\s\S]*<span>产品<\/span>[\s\S]*本轮融资[\s\S]*投资方[\s\S]*查看完整融资透视/u);
+  const detailTemplate = script.slice(
+    script.indexOf('<div class="fi-detail">'),
+    script.indexOf("function openDetail"),
+  );
+  assert.match(detailTemplate, /fi-detail-hero[\s\S]*创始团队[\s\S]*本轮融资[\s\S]*投资逻辑[\s\S]*机构公开理由/u);
+  assert.match(detailTemplate, /<h3>产品<\/h3>[\s\S]*<h3>目标客户<\/h3>[\s\S]*<h3>客户案例<\/h3>[\s\S]*<h3>关键数据<\/h3>/u);
+  assert.match(detailTemplate, /产品 \/ 方案[\s\S]*应用场景[\s\S]*目标客户[\s\S]*融资[\s\S]*已证实差异/u);
+  assert.doesNotMatch(detailTemplate, /尚待验证问题|产品与买方|客户与关键数据/u);
+  assert.match(styles, /\.fi-list\s*\{[\s\S]*grid-template-columns:\s*repeat\(2,/u);
+  assert.match(styles, /\.fi-detail-hero\s*\{[\s\S]*grid-template-columns:/u);
+  assert.doesNotMatch(styles, /\.fi-fact-grid/u);
+  const detailStyles = styles.slice(styles.indexOf(".fi-dialog {"));
+  assert.match(detailStyles, /\.fi-detail h2\s*\{[\s\S]*--gl-type-detail-title-size[\s\S]*--gl-type-detail-title-line/u);
+  assert.match(detailStyles, /\.fi-detail-deck\s*\{[\s\S]*--gl-type-detail-deck-size[\s\S]*--gl-type-detail-deck-line/u);
+  assert.match(detailStyles, /\.fi-section h3\s*\{[\s\S]*--gl-type-detail-h2-size[\s\S]*--gl-type-detail-h2-line/u);
+  assert.match(detailStyles, /\.fi-product p\s*\{[\s\S]*--gl-type-detail-body-size[\s\S]*--gl-type-detail-body-line/u);
+  assert.doesNotMatch(detailStyles, /font-size:\s*(?:10|11)px|font-weight:\s*(?:650|700)/u);
 });

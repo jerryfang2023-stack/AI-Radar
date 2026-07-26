@@ -94,7 +94,33 @@ async function main() {
             await firstCard.click();
             await page.waitForFunction(() => document.querySelector("[data-dialog]")?.open === true);
             const text = await page.locator("[data-dialog-content]").innerText();
-            fundingDialog = ["投资方", "融资历史", "来源证据"].every((token) => text.includes(token));
+            fundingDialog = [
+              "创始团队",
+              "投资逻辑",
+              "机构公开理由",
+              "产品",
+              "目标客户",
+              "客户案例",
+              "关键数据",
+              "竞争坐标",
+              "融资历史",
+              "来源证据",
+            ].every((token) => text.includes(token))
+              && !["尚待验证问题", "产品与买方", "客户与关键数据"].some((token) => text.includes(token));
+            if (viewport.name === "desktop" || viewport.name === "mobile") {
+              await page.screenshot({
+                path: path.join(screenshotDir, `funding-insights-detail-${viewport.name}.png`),
+                fullPage: false,
+              });
+              await page.locator(".fi-investment-section").scrollIntoViewIfNeeded();
+              await page.screenshot({
+                path: path.join(screenshotDir, `funding-insights-detail-body-${viewport.name}.png`),
+                fullPage: false,
+              });
+              await page.locator("[data-dialog]").evaluate((element) => {
+                element.scrollTop = 0;
+              });
+            }
             await page.locator("[data-dialog-close]").click();
           } else {
             fundingDialog = false;
@@ -174,6 +200,9 @@ async function main() {
               && getComputedStyle(sidebar).transform === "matrix(1, 0, 0, 1, 0, 0)";
           });
           await page.screenshot({ path: path.join(screenshotDir, "weekly-mobile-nav.png"), fullPage: false });
+        }
+        if (viewport.name === "mobile" && route === "funding-insights.html") {
+          await page.screenshot({ path: path.join(screenshotDir, "funding-insights-mobile.png"), fullPage: false });
         }
         await page.close();
       }

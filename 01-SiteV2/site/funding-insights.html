@@ -8,7 +8,7 @@
   <title>融资透视｜观澜 AI</title>
   <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/data-center-v4.css?v=20260726-funding-insights">
-  <link rel="stylesheet" href="assets/funding-insights.css?v=20260726-funding-insights">
+  <link rel="stylesheet" href="assets/funding-insights.css?v=20260726-funding-detail-type">
 </head>
 <body>
   <a class="dc-skip-link" href="#main-content">跳到主要内容</a>
@@ -48,21 +48,21 @@
           <span class="fi-date" data-latest-date>读取中</span>
         </header>
         <form class="fi-controls" data-filter-form>
-          <label>
+          <label class="fi-control-search">
             <span>搜索</span>
             <input type="search" name="query" placeholder="公司、产品、投资方或客户" autocomplete="off">
           </label>
-          <label>
+          <label class="fi-control-round">
             <span>融资阶段</span>
             <select name="round"><option value="">全部阶段</option></select>
           </label>
-          <label>
-            <span>所属赛道</span>
-            <select name="sector"><option value="">全部赛道</option></select>
-          </label>
+          <nav class="fi-categories" aria-label="按赛道查看融资项目" data-category-tabs></nav>
         </form>
-        <div class="fi-status" role="status" aria-live="polite" data-status>正在读取融资透视数据</div>
-        <section class="fi-list" aria-label="融资透视列表" data-list></section>
+        <section class="fi-list" aria-label="融资透视列表" aria-live="polite" data-list>
+          <div class="fi-loading" aria-label="正在读取融资透视">
+            <span></span><span></span>
+          </div>
+        </section>
       </div>
     </main>
   </div>
@@ -73,6 +73,6 @@
     </div>
   </dialog>
   <script src="assets/v4-report-shell.js?v=20260726-funding-insights"></script>
-  <script src="assets/funding-insights.js?v=20260726-funding-insights"></script>
+  <script src="assets/funding-insights.js?v=20260726-funding-editorial-cards"></script>
 </body>
 </html>

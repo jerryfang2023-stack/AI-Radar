@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-26",
-    "generated_at": "2026-07-26T07:13:25.273Z",
+    "generated_at": "2026-07-26T08:38:16.823Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -10,652 +10,12 @@
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
     "counts": {
       "funding_events": 3,
-      "auto_published": 2,
-      "blocked": 1,
+      "auto_published": 3,
+      "blocked": 0,
       "pending": 0
     }
   },
   "cards": [
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
-      "funding_insight_id": "FI-33720a6e75d508b6",
-      "triggered_by_event_id": "EV-754e83c2d19005fe",
-      "as_of_date": "2026-07-26",
-      "company": {
-        "entity_id": "EN-834cc12fc35adde7",
-        "name": "Arrakis",
-        "full_name": "Arrakis Technologies",
-        "website": "",
-        "summary": "一家总部位于伦敦和巴黎的初创公司，为工业公司构建运营AI层，目标行业包括航空航天、能源、物流和制造业。",
-        "headquarters": "London and Paris",
-        "founders": [
-          {
-            "name": "Rafael Quintanilla",
-            "role": "CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-579585d1555750a8",
-                "quote": "CEO Rafael Quintanilla is a former Accel VP."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Haroun BELTAÏFA",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0b2fee039be34255",
-                "quote": "together with co-founders Haroun BELTAÏFA, Romain Fouilland and Mikhail G."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Romain Fouilland",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0b2fee039be34255",
-                "quote": "together with co-founders Haroun BELTAÏFA, Romain Fouilland and Mikhail G."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Mikhail G.",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0b2fee039be34255",
-                "quote": "together with co-founders Haroun BELTAÏFA, Romain Fouilland and Mikhail G."
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "约15人",
-          "observed_at": "2026-07-24",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "has about 15 employees"
-            }
-          ]
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-579585d1555750a8",
-            "quote": "Arrakis, a London and Paris-based startup"
-          }
-        ]
-      },
-      "financing": {
-        "round": "种子轮及A轮",
-        "amount": "$38 million",
-        "total_raised": "$38 million",
-        "announced_at": "2026-07-24",
-        "investors": [
-          {
-            "name": "Blossom Capital",
-            "role": "A轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-579585d1555750a8",
-                "quote": "a $30 million Series A led by Blossom Capital"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Accel",
-            "role": "种子轮领投及A轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-579585d1555750a8",
-                "quote": "a $7.5 million seed round led by Accel"
-              },
-              {
-                "source_id": "FISRC-0b2fee039be34255",
-                "quote": "with participation from Accel"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "GFC",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-579585d1555750a8",
-                "quote": "GFC, MainObject and Rerail also invested"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "MainObject",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-579585d1555750a8",
-                "quote": "GFC, MainObject and Rerail also invested"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Rerail",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-579585d1555750a8",
-                "quote": "GFC, MainObject and Rerail also invested"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Olivier Pomel",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-579585d1555750a8",
-                "quote": "angels Olivier Pomel, the Datadog CEO"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Olivier Godement",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-579585d1555750a8",
-                "quote": "and Olivier Godement, who runs business products at OpenAI"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Junaid Hussein",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-0b2fee039be34255",
-                "quote": "Cambridge Aerospace founder Junaid Hussein"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-579585d1555750a8",
-            "quote": "Arrakis, a London and Paris-based startup, came out of stealth with $38 million to build what it calls an AI layer for the operations of industrial companies"
-          }
-        ]
-      },
-      "products": [
-        {
-          "name": "Arrakis AI运营平台",
-          "description": "一个模型无关的企业AI平台，结合针对工业运营调优的应用AI研究，帮助工业公司在数周内训练、部署和扩展定制AI智能体，以重建基于电子表格的后台工作流。",
-          "target_customers": "航空航天、能源、物流、制造、建筑和电信行业的工业公司",
-          "features": [
-            "模型无关的企业AI平台",
-            "针对工业运营的应用AI研究",
-            "在数周内训练、部署和扩展定制AI智能体",
-            "重建基于电子表格的后台工作流"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b2fee039be34255",
-              "quote": "equipping FDEs with a model-agnostic enterprise AI platform and applied AI research tuned to industrial operations to train, deploy, and scale custom AI agents in weeks."
-            },
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "Arrakis rebuilds the spreadsheet-driven back-office workflows industrial companies run on."
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [
-        {
-          "name": "一家纽约上市的航运公司",
-          "industry": "物流",
-          "use_case": "将现金流可见性从月度提升至每日",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "it helped a New York-listed shipping company move from monthly to daily cash flow visibility."
-            }
-          ]
-        }
-      ],
-      "comparisons": [
-        {
-          "name": "Auger",
-          "positioning": "面向工业与供应链运营的智能体AI",
-          "target_customer": "工业与供应链企业",
-          "funding_summary": "",
-          "core_difference": "Arrakis从重建电子表格驱动的后台工作流切入，而Auger的起点不同。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "Auger, Proaction, and J.B. Hunt's Overroute are all targeting the same operations budget, but from different starting points."
-            }
-          ]
-        },
-        {
-          "name": "Proaction",
-          "positioning": "面向工业与供应链运营的智能体AI",
-          "target_customer": "工业与供应链企业",
-          "funding_summary": "",
-          "core_difference": "Arrakis从重建电子表格驱动的后台工作流切入，而Proaction的起点不同。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "Auger, Proaction, and J.B. Hunt's Overroute are all targeting the same operations budget, but from different starting points."
-            }
-          ]
-        },
-        {
-          "name": "J.B. Hunt's Overroute",
-          "positioning": "面向工业与供应链运营的智能体AI",
-          "target_customer": "工业与供应链企业",
-          "funding_summary": "",
-          "core_difference": "Arrakis从重建电子表格驱动的后台工作流切入，而Overroute的起点不同。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "Auger, Proaction, and J.B. Hunt's Overroute are all targeting the same operations budget, but from different starting points."
-            }
-          ]
-        }
-      ],
-      "metrics": [
-        {
-          "label": "公司估值（投后）",
-          "value": "$140 million",
-          "observed_at": "2026-07-24",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "The company is valued at $140 million post-money."
-            }
-          ]
-        },
-        {
-          "label": "客户数量",
-          "value": "5",
-          "observed_at": "2026-07-24",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "counts five customers."
-            }
-          ]
-        },
-        {
-          "label": "公司成立时长",
-          "value": "7个月",
-          "observed_at": "2026-07-24",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "Arrakis is seven months old"
-            }
-          ]
-        },
-        {
-          "label": "复杂运营工作流周期时间缩减",
-          "value": "60–90%",
-          "observed_at": "2026-07-24",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7ccdcd9e01649400",
-              "quote": "Delivered 60–90% cycle time reductions with 99%+ accuracy on complex operational workflows."
-            }
-          ]
-        },
-        {
-          "label": "复杂运营工作流准确率",
-          "value": "99%+",
-          "observed_at": "2026-07-24",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7ccdcd9e01649400",
-              "quote": "Delivered 60–90% cycle time reductions with 99%+ accuracy on complex operational workflows."
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "David Sainteff",
-          "quote": "What impressed us most wasn't just the technology, it was the speed of execution and the founders' obsession with solving real operational problems.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-7ccdcd9e01649400",
-              "quote": "What impressed us most wasn't just the technology, it was the speed of execution and the founders' obsession with solving real operational problems."
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "capital_judgment": "公司在成立仅7个月、团队约15人时即获得3800万美元融资，投后估值1.4亿美元，表明投资方对其创始团队背景和工业AI落地速度抱有较高信心。但当前客户仅5家，收入规模未披露，估值溢价主要建立在早期执行信号而非规模化收入上。",
-        "validated_signals": [
-          "已签约纽约证券交易所上市的付费企业客户",
-          "在复杂运营工作流上实现60-90%的周期时间缩减和99%以上的准确率",
-          "创始团队具备Accel、Palantir、Revolut等机构的复合背景"
-        ],
-        "risks": [
-          "当前仅有5家客户，客户集中度风险极高，尚未证明跨行业可复制性",
-          "来源未披露任何收入或合同金额数据，商业模式和单位经济模型无法验证",
-          "工业后台工作流高度碎片化，电子表格替代方案面临企业变革阻力和长实施周期的不确定性"
-        ],
-        "related_direction_id": "DIR-20260725-02",
-        "sector": "工业AI智能体"
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Arrakis AI运营平台",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b2fee039be34255",
-              "quote": "equipping FDEs with a model-agnostic enterprise AI platform and applied AI research tuned to industrial operations to train, deploy, and scale custom AI agents in weeks."
-            },
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "Arrakis rebuilds the spreadsheet-driven back-office workflows industrial companies run on."
-            }
-          ]
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Rafael Quintanilla",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "CEO Rafael Quintanilla is a former Accel VP."
-            }
-          ]
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Haroun BELTAÏFA",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b2fee039be34255",
-              "quote": "together with co-founders Haroun BELTAÏFA, Romain Fouilland and Mikhail G."
-            }
-          ]
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Romain Fouilland",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b2fee039be34255",
-              "quote": "together with co-founders Haroun BELTAÏFA, Romain Fouilland and Mikhail G."
-            }
-          ]
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Mikhail G.",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b2fee039be34255",
-              "quote": "together with co-founders Haroun BELTAÏFA, Romain Fouilland and Mikhail G."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Blossom Capital",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "a $30 million Series A led by Blossom Capital"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Accel",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "a $7.5 million seed round led by Accel"
-            },
-            {
-              "source_id": "FISRC-0b2fee039be34255",
-              "quote": "with participation from Accel"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "GFC",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "GFC, MainObject and Rerail also invested"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "MainObject",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "GFC, MainObject and Rerail also invested"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Rerail",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "GFC, MainObject and Rerail also invested"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Olivier Pomel",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "angels Olivier Pomel, the Datadog CEO"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Olivier Godement",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "and Olivier Godement, who runs business products at OpenAI"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Junaid Hussein",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-0b2fee039be34255",
-              "quote": "Cambridge Aerospace founder Junaid Hussein"
-            }
-          ]
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "一家纽约上市的航运公司",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "it helped a New York-listed shipping company move from monthly to daily cash flow visibility."
-            }
-          ]
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Auger",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "Auger, Proaction, and J.B. Hunt's Overroute are all targeting the same operations budget, but from different starting points."
-            }
-          ]
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Proaction",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "Auger, Proaction, and J.B. Hunt's Overroute are all targeting the same operations budget, but from different starting points."
-            }
-          ]
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "J.B. Hunt's Overroute",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-579585d1555750a8",
-              "quote": "Auger, Proaction, and J.B. Hunt's Overroute are all targeting the same operations budget, but from different starting points."
-            }
-          ]
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-754e83c2d19005fe",
-          "date": "2026-07-22",
-          "title": "Arrakis 携 3800 万美元资金走出隐身模式，将 AI 引入工厂与供应链",
-          "amount": "$38 million",
-          "source_refs": [
-            "SA-4217e8731dafc848",
-            "SA-c3b7f0be9140eddd",
-            "SA-5dd8d7f22c598317"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-579585d1555750a8",
-          "source_url": "https://www.theconveyor.co/p/arrakis-38m-industrial-ai-ops",
-          "title": "Arrakis 获 3800 万美元融资，用于工业运营中的智能体 AI",
-          "publisher": "keyword search / Anysearch",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-07-26T01:20:43.123Z",
-          "content_hash": "a18cf74b2ab09093",
-          "source_artifact_id": "SA-a7654a3e2bf5da93",
-          "raw_id": "RAW-9a8f97674d1149d1"
-        },
-        {
-          "source_id": "FISRC-0b2fee039be34255",
-          "source_url": "https://www.linkedin.com/posts/seb-johnson_breaking-arrakis-technologies-has-raised-activity-7485680143269695490-Up2P",
-          "title": "Arrakis Technologies Raises $30m Series A | Seb Johnson 📊🇪🇺 posted on the topic | LinkedIn",
-          "publisher": "linkedin.com",
-          "source_class": "secondary",
-          "capture_method": "tavily_captured_content",
-          "captured_at": "2026-07-26T07:12:12.814Z",
-          "content_hash": "cd8d291ed039ea78",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-7ccdcd9e01649400",
-          "source_url": "https://www.linkedin.com/posts/sainteff_exclusive-startup-arrakis-emerges-from-stealth-activity-7485681236099756032-TFny",
-          "title": "Exclusive: Startup Arrakis emerges from stealth with $38 million in funding to bring AI to industry | Fortune | David Sainteff",
-          "publisher": "linkedin.com",
-          "source_class": "secondary",
-          "capture_method": "tavily_captured_content",
-          "captured_at": "2026-07-26T07:12:13.268Z",
-          "content_hash": "6f71ee7d031ab280",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "attempts": 2,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.0",
-        "generated_at": "2026-07-26T07:13:25.178Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-07-26T07:13:25.178Z"
-    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-9c764b3afbbe409f",
@@ -665,28 +25,28 @@
         "entity_id": "EN-7ef08ef63597d47c",
         "name": "Gritt",
         "full_name": "Gritt",
-        "website": "https://www.gritt.ai/",
-        "summary": "Gritt 是一家将机器人技术与人工智能相结合的智能系统公司，旨在加速全球基础设施建设。其系统可连接至现有工地设备，在户外非结构化环境中执行劳动密集型任务。",
+        "website": "gritt.ai",
+        "summary": "Gritt 是一家结合机器人技术与人工智能的智能系统公司，旨在加速全球基础设施建设。其系统通过连接到现有工地设备（如滑移装载机和叉车）上的机械臂和AI，在户外非结构化环境中执行劳动密集型任务。",
         "headquarters": "SAN FRANCISCO",
         "founders": [
           {
             "name": "Puneet Puri",
-            "role": "CEO",
+            "role": "CEO and co-founder",
             "evidence_refs": [
               {
                 "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "Puneet Puri, CEO and co-founder of Gritt"
+                "quote": "said Puneet Puri, CEO and co-founder of Gritt"
               }
             ],
             "entity_id": null
           },
           {
             "name": "Vishal Dugar",
-            "role": "CTO",
+            "role": "CTO and co-founder",
             "evidence_refs": [
               {
                 "source_id": "FISRC-e5ce259c107507e9",
-                "quote": "Vishal Dugar, CTO and co-founder at Gritt"
+                "quote": "said Vishal Dugar, CTO and co-founder at Gritt"
               }
             ],
             "entity_id": null
@@ -801,15 +161,15 @@
       },
       "products": [
         {
-          "name": "Gritt 智能系统",
-          "description": "结合机器人技术与人工智能的智能系统，通过连接现有工地设备（如滑移装载机和叉车），在户外非结构化环境中执行取放、组装和运输材料等劳动密集型任务，具备毫米级精度，并能从每次部署中快速学习。",
-          "target_customers": "大型建筑公司、太阳能农场建设方、数据中心及大型基础设施项目承包商",
+          "name": "Gritt intelligent system",
+          "description": "结合机器人技术与AI的智能系统，通过连接到现有工地设备上的机械臂和AI，在户外非结构化环境中执行劳动密集型任务，如拾取放置、组装和运输材料，并收集实时数据以辅助决策。",
+          "target_customers": "大型建筑公司，特别是建设大规模太阳能电站、数据中心、桥梁和道路的承包商",
           "features": [
-            "连接现有工地设备，无需定制硬件",
-            "毫米级精度取放、组装和运输材料",
-            "从部署中快速学习，训练时间从数月缩短至数天",
-            "实时数据采集与处理，辅助现场决策",
-            "可在灰尘、高温、寒冷及各种地形中工作"
+            "连接到现有工地设备（如滑移装载机和叉车）",
+            "在多变环境中以毫米级精度执行拾取放置、组装和运输任务",
+            "从每次部署中快速学习，训练时间从数月缩短至数天",
+            "收集并处理已完成工作、物料移动和现场状况的实时数据",
+            "在严格安全范围内与工人协同作业，执行数千次精确重复动作"
           ],
           "evidence_refs": [
             {
@@ -830,13 +190,17 @@
       ],
       "customers": [
         {
-          "name": "未具名客户",
-          "industry": "电力建设",
-          "use_case": "使用 Gritt 系统安装太阳能电池板，提高安装效率并减少工人受伤风险。",
+          "name": "top 10 U.S. construction companies",
+          "industry": "建筑",
+          "use_case": "在大型太阳能电站建设中，使用Gritt系统自主安装数万块太阳能电池板，实现零破损。",
           "evidence_refs": [
             {
-              "source_id": "FISRC-267ee18d9a849d68",
-              "quote": "TechCrunch spoke to one Gritt customer who declined to be identified for competitive reasons, but who was enthusiastic about the system’s ability to improve his work. He expects it to be easier to work at remote sites where it is difficult to attract workers, and anticipates a reduction in injuries since workers won’t have to repeatedly lift 100-pound panels overhead."
+              "source_id": "FISRC-e5ce259c107507e9",
+              "quote": "its machines are already on real sites, trusted by top 10 U.S. construction companies, including those building massive solar farms."
+            },
+            {
+              "source_id": "FISRC-e5ce259c107507e9",
+              "quote": "This has enabled the autonomous placement of tens of thousands of solar panels with zero breakages."
             }
           ]
         }
@@ -844,111 +208,130 @@
       "comparisons": [
         {
           "name": "Luminous Robotics",
-          "positioning": "自研硬件太阳能板安装机器人",
+          "product": "自有太阳能电池板安装机器人",
+          "scenario": "太阳能电池板安装",
           "target_customer": "太阳能电站建设方",
           "funding_summary": "",
-          "core_difference": "Luminous Robotics 自研专用硬件，而 Gritt 采用现成硬件加 AI 的方式，可能影响扩张速度和成本结构。",
+          "core_difference": "Luminous Robotics 自研硬件，而 Gritt 采用现成车辆和机械臂，专注于AI控制层。",
           "evidence_refs": [
             {
-              "source_id": "FISRC-267ee18d9a849d68",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt, a difference that could shape who grows faster and with a leaner cost structure as demand grows."
+              "source_id": "FISRC-f613c13e331e88d2",
+              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
             }
           ]
         },
         {
           "name": "Cosmic",
-          "positioning": "自研硬件太阳能板安装机器人",
+          "product": "自有太阳能电池板安装机器人",
+          "scenario": "太阳能电池板安装",
           "target_customer": "太阳能电站建设方",
           "funding_summary": "",
-          "core_difference": "Cosmic 自研专用硬件，而 Gritt 采用现成硬件加 AI 的方式，可能影响扩张速度和成本结构。",
+          "core_difference": "Cosmic 自研硬件，而 Gritt 采用现成车辆和机械臂，专注于AI控制层。",
           "evidence_refs": [
             {
-              "source_id": "FISRC-267ee18d9a849d68",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt, a difference that could shape who grows faster and with a leaner cost structure as demand grows."
+              "source_id": "FISRC-f613c13e331e88d2",
+              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
             }
           ]
         },
         {
           "name": "Trinabot",
-          "positioning": "中国自研硬件太阳能板安装机器人",
+          "product": "自有太阳能电池板安装机器人",
+          "scenario": "太阳能电池板安装",
           "target_customer": "太阳能电站建设方",
           "funding_summary": "",
-          "core_difference": "Trinabot 自研专用硬件，而 Gritt 采用现成硬件加 AI 的方式，可能影响扩张速度和成本结构。",
+          "core_difference": "Trinabot 自研硬件，而 Gritt 采用现成车辆和机械臂，专注于AI控制层。",
           "evidence_refs": [
             {
-              "source_id": "FISRC-267ee18d9a849d68",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt, a difference that could shape who grows faster and with a leaner cost structure as demand grows."
+              "source_id": "FISRC-f613c13e331e88d2",
+              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
             }
           ]
         }
       ],
       "metrics": [
         {
-          "label": "已安装太阳能组件数量",
-          "value": "数万块，零破损",
+          "label": "已签约太阳能安装量",
+          "value": "2.8 gigawatts",
+          "observed_at": "2026-07-21",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2033b513110bbf93",
+              "quote": "currently contracted for another 2.8 gigawatts with leading US contractors"
+            }
+          ]
+        },
+        {
+          "label": "自主安装太阳能电池板数量",
+          "value": "tens of thousands",
           "observed_at": "2026-07-21",
           "evidence_refs": [
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "This has enabled the autonomous placement of tens of thousands of solar panels with zero breakages."
+              "quote": "the autonomous placement of tens of thousands of solar panels with zero breakages"
             }
           ]
         },
         {
-          "label": "效率提升",
-          "value": "4倍，无需增加劳动力",
+          "label": "美国建筑业劳动力预计退休比例",
+          "value": "41%",
           "observed_at": "2026-07-21",
           "evidence_refs": [
             {
-              "source_id": "FISRC-b9bab99ef2efe4e1",
-              "quote": "Gritt has installed tens of thousands of solar modules with zero breakages, across live jobsites around the country, at 4X the output of non-automated construction, with no added labor."
+              "source_id": "FISRC-e5ce259c107507e9",
+              "quote": "More than 41% of the U.S. construction workforce is expected to retire by 2031"
             }
           ]
         },
         {
-          "label": "已部署工地数量",
-          "value": "7个以上",
+          "label": "建筑业生产率下降幅度",
+          "value": "46%",
           "observed_at": "2026-07-21",
           "evidence_refs": [
             {
-              "source_id": "FISRC-251dc536875abfab",
-              "quote": "7+ deployed jobsites, with more coming"
-            }
-          ]
-        },
-        {
-          "label": "未来18个月合同装机量",
-          "value": "2.8 GW",
-          "observed_at": "2026-07-21",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-267ee18d9a849d68",
-              "quote": "the company says it is contracted to help install 2.8 gigawatts of solar panels in the next 18 months"
+              "source_id": "FISRC-e5ce259c107507e9",
+              "quote": "construction has experienced a 46% decline in productivity"
             }
           ]
         }
       ],
       "quotes": [],
       "analysis": {
-        "capital_judgment": "本轮融资由 Obvious Ventures 领投，并吸引了 Union Square Ventures 等知名机构参与，表明投资方对 Gritt 在户外非结构化环境中部署物理 AI 的技术路线和商业化前景具有较强信心。",
+        "investment_rationale": [
+          {
+            "institution": "Union Square Ventures",
+            "speaker": "Albert Wenger",
+            "speaker_role": "",
+            "rationale": "USV 认为机器人正从受控工厂环境走向复杂的户外条件，而 Gritt 正在攻克基础设施机器人挑战，从电网级太阳能阵列建设起步，已部署数十兆瓦项目并签约 2.8 吉瓦。",
+            "quote": "We are excited to announce our investment in Gritt , which is pursuing the infrastructure robotics challenge, starting with the build-out of grid-scale solar arrays. Gritt has already deployed their robots in the construction of tens of megawatts (a number that grows by the day) and is currently contracted for another 2.8 gigawatts with leading US contractors.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2033b513110bbf93",
+                "quote": "We are excited to announce our investment in Gritt , which is pursuing the infrastructure robotics challenge, starting with the build-out of grid-scale solar arrays. Gritt has already deployed their robots in the construction of tens of megawatts (a number that grows by the day) and is currently contracted for another 2.8 gigawatts with leading US contractors."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 Gritt 能否在户外非结构化环境中实现物理 AI 的快速泛化，并通过数据飞轮建立竞争壁垒。本轮融资的已验证信号包括：已在美国前十大建筑公司的实际工地部署，自主安装数万块太阳能电池板且零破损，签约 2.8 吉瓦太阳能安装合同，以及系统训练时间从数月缩短至数天。这些信号表明 Gritt 的技术已跨越从实验室到真实工地的鸿沟，且具备规模化复制的初步证据。但判断的证据边界仍局限于太阳能安装这一单一场景，尚未验证向其他基础设施任务（如钢筋绑扎、数据中-心建设）扩展的能力。",
         "validated_signals": [
-          "已与全美前十大建筑公司中的三家合作，并在多个真实工地部署系统",
-          "已自主安装数万块太阳能电池板且零破损，验证了系统在真实环境中的可靠性",
-          "效率提升达4倍且无需增加劳动力，初步证明其商业价值"
+          "已在美国前十大建筑公司的实际工地部署，包括大型太阳能电站建设",
+          "自主安装数万块太阳能电池板且零破损",
+          "已签约 2.8 吉瓦太阳能安装合同",
+          "系统训练时间从数月缩短至数天，显示 AI 泛化能力"
         ],
         "risks": [
-          "当前客户名称未公开，缺乏可独立验证的客户案例和长期合作数据，客户集中度风险未知",
-          "建筑行业自动化历史上进展缓慢，Gritt 的通用化 AI 模型能否在更多任务和垂直领域保持同样性能尚待验证",
-          "竞争对手采用自研硬件路线，Gritt 依赖现成硬件的模式可能在极端工况下面临集成和耐久性挑战"
+          "当前验证场景集中于太阳能电池板安装，向其他基础设施任务（如桥梁、数据中心、道路）扩展的技术可行性和经济性尚未被证实。",
+          "采用现成硬件而非自研机器人，可能在长期面临供应链依赖和硬件差异化不足的风险。",
+          "建筑行业周期性波动大，客户资本开支受宏观经济和政策影响显著，可能影响规模化部署节奏。"
         ],
-        "related_direction_id": "DIR-20260725-02",
-        "sector": "建筑科技与物理 AI"
+        "related_direction_id": "",
+        "sector": "物理AI与建筑机器人"
       },
       "entity_links": [
         {
           "relation_type": "product_of",
           "target_kind": "product",
-          "research_name": "Gritt 智能系统",
+          "research_name": "Gritt intelligent system",
           "canonical_entity_id": null,
           "canonical_name": "",
           "evidence_refs": [
@@ -975,7 +358,7 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "Puneet Puri, CEO and co-founder of Gritt"
+              "quote": "said Puneet Puri, CEO and co-founder of Gritt"
             }
           ]
         },
@@ -988,7 +371,7 @@
           "evidence_refs": [
             {
               "source_id": "FISRC-e5ce259c107507e9",
-              "quote": "Vishal Dugar, CTO and co-founder at Gritt"
+              "quote": "said Vishal Dugar, CTO and co-founder at Gritt"
             }
           ]
         },
@@ -1086,13 +469,17 @@
         {
           "relation_type": "public_customer_case",
           "target_kind": "organization",
-          "research_name": "未具名客户",
+          "research_name": "top 10 U.S. construction companies",
           "canonical_entity_id": null,
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-267ee18d9a849d68",
-              "quote": "TechCrunch spoke to one Gritt customer who declined to be identified for competitive reasons, but who was enthusiastic about the system’s ability to improve his work. He expects it to be easier to work at remote sites where it is difficult to attract workers, and anticipates a reduction in injuries since workers won’t have to repeatedly lift 100-pound panels overhead."
+              "source_id": "FISRC-e5ce259c107507e9",
+              "quote": "its machines are already on real sites, trusted by top 10 U.S. construction companies, including those building massive solar farms."
+            },
+            {
+              "source_id": "FISRC-e5ce259c107507e9",
+              "quote": "This has enabled the autonomous placement of tens of thousands of solar panels with zero breakages."
             }
           ]
         },
@@ -1104,8 +491,8 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-267ee18d9a849d68",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt, a difference that could shape who grows faster and with a leaner cost structure as demand grows."
+              "source_id": "FISRC-f613c13e331e88d2",
+              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
             }
           ]
         },
@@ -1117,8 +504,8 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-267ee18d9a849d68",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt, a difference that could shape who grows faster and with a leaner cost structure as demand grows."
+              "source_id": "FISRC-f613c13e331e88d2",
+              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
             }
           ]
         },
@@ -1130,8 +517,8 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-267ee18d9a849d68",
-              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt, a difference that could shape who grows faster and with a leaner cost structure as demand grows."
+              "source_id": "FISRC-f613c13e331e88d2",
+              "quote": "Gritt is competing against companies with their own panel-installing robots like Luminous Robotics , Cosmic , and China’s Trinabot . Those companies are building their own hardware, rather than focusing on off-the-shelf vehicles and arms like Gritt"
             }
           ]
         }
@@ -1161,38 +548,26 @@
           "raw_id": "RAW-be25bc29a786de42"
         },
         {
-          "source_id": "FISRC-b9bab99ef2efe4e1",
-          "source_url": "https://www.gritt.ai/news/the-world-cant-build-enough-infrastructure",
-          "title": "The world can’t build enough infrastructure. We intend to fix that | Gritt",
-          "publisher": "gritt.ai",
-          "source_class": "official_candidate",
+          "source_id": "FISRC-2033b513110bbf93",
+          "source_url": "https://www.usv.com/writing/2026/07/gritt/",
+          "title": "Gritt | Union Square Ventures",
+          "publisher": "usv.com",
+          "source_class": "independent",
           "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T07:10:48.067Z",
-          "content_hash": "f3b34686953989b2",
+          "captured_at": "2026-07-26T08:37:23.243Z",
+          "content_hash": "38c026a8aec84e52",
           "source_artifact_id": null,
           "raw_id": null
         },
         {
-          "source_id": "FISRC-251dc536875abfab",
-          "source_url": "https://www.gritt.ai/",
-          "title": "Gritt — AI that does the hardest work in the hardest places",
-          "publisher": "gritt.ai",
-          "source_class": "official_candidate",
+          "source_id": "FISRC-f613c13e331e88d2",
+          "source_url": "https://thenews92.com/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/",
+          "title": "Gritt exits stealth with $34 million for robots to build solar",
+          "publisher": "thenews92.com",
+          "source_class": "independent",
           "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T07:10:48.183Z",
-          "content_hash": "4c4083addb857fc2",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-267ee18d9a849d68",
-          "source_url": "https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/",
-          "title": "Gritt exits stealth with $32 million for robots to build solar plants — then, everything else | TechCrunch",
-          "publisher": "techcrunch.com",
-          "source_class": "secondary",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T07:10:49.439Z",
-          "content_hash": "ffa3a35ca1ea6f0f",
+          "captured_at": "2026-07-26T08:37:37.270Z",
+          "content_hash": "2fd26d4117d0f721",
           "source_artifact_id": null,
           "raw_id": null
         }
@@ -1200,9 +575,9 @@
       "model_provenance": {
         "provider": "deepseek",
         "model": "deepseek-v4-pro",
-        "attempts": 2,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.0",
-        "generated_at": "2026-07-26T07:11:57.567Z"
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T08:38:16.737Z"
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1210,21 +585,1106 @@
         "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T07:11:57.567Z"
+      "published_at": "2026-07-26T08:38:16.737Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-33720a6e75d508b6",
+      "triggered_by_event_id": "EV-754e83c2d19005fe",
+      "as_of_date": "2026-07-26",
+      "company": {
+        "entity_id": "EN-834cc12fc35adde7",
+        "name": "Arrakis",
+        "full_name": "Arrakis",
+        "website": "",
+        "summary": "一家总部位于伦敦和巴黎的初创公司，为工业公司构建AI运营层，目标行业包括航空航天、能源、物流和制造业。",
+        "headquarters": "London and Paris",
+        "founders": [
+          {
+            "name": "Rafael Quintanilla",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "CEO Rafael Quintanilla is a former Accel VP."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Haroun Beltaifa",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-07be648b502a96d3",
+                "quote": "Arrakis was founded in January 2026 by Rafael Quintanilla with co‑founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Romain Fouilland",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-07be648b502a96d3",
+                "quote": "Arrakis was founded in January 2026 by Rafael Quintanilla with co‑founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mikhail Galkov",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-07be648b502a96d3",
+                "quote": "Arrakis was founded in January 2026 by Rafael Quintanilla with co‑founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约15人",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "has about 15 employees"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-579585d1555750a8",
+            "quote": "Arrakis, a London and Paris-based startup, came out of stealth with $38 million to build what it calls an AI layer for the operations of industrial companies, targeting aerospace, energy, logistics and manufacturing."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$38 million",
+        "total_raised": "$38 million",
+        "announced_at": "2026-07-24",
+        "investors": [
+          {
+            "name": "Blossom Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "a $30 million Series A led by Blossom Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Accel",
+            "role": "种子轮领投，本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "a $7.5 million seed round led by Accel"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GFC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "GFC, MainObject and Rerail also invested"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "MainObject",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "GFC, MainObject and Rerail also invested"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Rerail",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "GFC, MainObject and Rerail also invested"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Olivier Pomel",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "angels Olivier Pomel, the Datadog CEO"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Olivier Godement",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "Olivier Godement, who runs business products at OpenAI"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Junaid Hussein",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-07be648b502a96d3",
+                "quote": "Cambridge Aerospace founder Junaid Hussein"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-579585d1555750a8",
+            "quote": "Arrakis raises $38M for agentic AI in industrial operations"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Arrakis AI运营层",
+          "description": "一个模型无关的企业平台，将AI智能体集成到工业公司现有的后台工作流和系统中，而非替换它们。",
+          "target_customers": "航空航天、能源、物流和制造业的大型工业公司",
+          "features": [
+            "模型无关，可路由至不同AI模型提供商",
+            "将AI智能体集成到现有ERP、数据仓库和文档库",
+            "前向部署AI工程师与客户团队协作",
+            "客户数据不用于第三方模型训练",
+            "部分费用与客户成果挂钩"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "Arrakis rebuilds the spreadsheet-driven back-office workflows industrial companies run on."
+            },
+            {
+              "source_id": "FISRC-cae40c38f1cff356",
+              "quote": "Arrakis is model-agnostic by design"
+            },
+            {
+              "source_id": "FISRC-07be648b502a96d3",
+              "quote": "The platform is model‑agnostic and integrates agents into existing stacks rather than replacing them."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "一家纽约证券交易所上市的航运公司",
+          "industry": "航运与物流",
+          "use_case": "将现金流可见性从月度提升至每日",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "the company says it helped a New York-listed shipping company move from monthly to daily cash flow visibility."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Palantir",
+          "product": "Palantir平台",
+          "scenario": "采购与供应链管理",
+          "target_customer": "大型企业和政府机构",
+          "funding_summary": "",
+          "core_difference": "Palantir是一家拥有20年历史的公司，其技术并非AI原生，且价格高昂；Arrakis是AI原生架构。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cae40c38f1cff356",
+              "quote": "Palantir is a 20-year-old company that has a very hefty price point, that has a technology that is starting to become legacy."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "客户数量",
+          "value": "5",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "counts five customers"
+            }
+          ]
+        },
+        {
+          "label": "公司估值（投后）",
+          "value": "$140 million",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "The company is valued at $140 million post-money."
+            }
+          ]
+        },
+        {
+          "label": "采购周期缩短",
+          "value": "90%",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07be648b502a96d3",
+              "quote": "a 90% reduction in procurement cycle times"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Blossom Capital",
+            "speaker": "Ophelia Brown",
+            "speaker_role": "Managing Partner",
+            "rationale": "看重团队的技术深度、运营专长和商业雄心，以及公司在大型工业组织复杂运营挑战中展现的早期牵引力。",
+            "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-07be648b502a96d3",
+                "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是AI从知识工作向实体工业运营的迁移。Arrakis在成立仅7个月、团队约15人的情况下获得3800万美元融资和1.4亿美元投后估值，依赖的已验证信号包括：已签约5家客户（含纽交所上市公司），实现了采购周期缩短90%等可量化成果，以及创始团队兼具风险投资视野与Palantir等企业级执行经验。但当前证据仅限于早期客户数量和单一案例描述，尚未披露收入规模、客户留存或扩展路径，估值更多反映市场对工业AI赛道的预期而非规模化验证。",
+        "validated_signals": [
+          "成立7个月即获得5家客户，包括纽交所上市公司",
+          "帮助一家航运客户实现从月度到每日的现金流可见性提升",
+          "采购周期时间缩短90%",
+          "创始团队包含前Accel VP及Palantir、Datadog等企业背景成员"
+        ],
+        "risks": [
+          "公司仅成立7个月，客户数量和收入规模极小，尚未证明产品的可复制性和长期客户留存能力。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "工业AI/智能体运营"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Arrakis AI运营层",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "Arrakis rebuilds the spreadsheet-driven back-office workflows industrial companies run on."
+            },
+            {
+              "source_id": "FISRC-cae40c38f1cff356",
+              "quote": "Arrakis is model-agnostic by design"
+            },
+            {
+              "source_id": "FISRC-07be648b502a96d3",
+              "quote": "The platform is model‑agnostic and integrates agents into existing stacks rather than replacing them."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Rafael Quintanilla",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "CEO Rafael Quintanilla is a former Accel VP."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Haroun Beltaifa",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07be648b502a96d3",
+              "quote": "Arrakis was founded in January 2026 by Rafael Quintanilla with co‑founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Romain Fouilland",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07be648b502a96d3",
+              "quote": "Arrakis was founded in January 2026 by Rafael Quintanilla with co‑founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mikhail Galkov",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07be648b502a96d3",
+              "quote": "Arrakis was founded in January 2026 by Rafael Quintanilla with co‑founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Blossom Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "a $30 million Series A led by Blossom Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "a $7.5 million seed round led by Accel"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GFC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "GFC, MainObject and Rerail also invested"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "MainObject",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "GFC, MainObject and Rerail also invested"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Rerail",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "GFC, MainObject and Rerail also invested"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Olivier Pomel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "angels Olivier Pomel, the Datadog CEO"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Olivier Godement",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "Olivier Godement, who runs business products at OpenAI"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Junaid Hussein",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-07be648b502a96d3",
+              "quote": "Cambridge Aerospace founder Junaid Hussein"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家纽约证券交易所上市的航运公司",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "the company says it helped a New York-listed shipping company move from monthly to daily cash flow visibility."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Palantir",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cae40c38f1cff356",
+              "quote": "Palantir is a 20-year-old company that has a very hefty price point, that has a technology that is starting to become legacy."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-754e83c2d19005fe",
+          "date": "2026-07-22",
+          "title": "Arrakis 携 3800 万美元资金走出隐身模式，将 AI 引入工厂与供应链",
+          "amount": "$38 million",
+          "source_refs": [
+            "SA-4217e8731dafc848",
+            "SA-c3b7f0be9140eddd",
+            "SA-5dd8d7f22c598317"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-579585d1555750a8",
+          "source_url": "https://www.theconveyor.co/p/arrakis-38m-industrial-ai-ops",
+          "title": "Arrakis 获 3800 万美元融资，用于工业运营中的智能体 AI",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-26T01:20:43.123Z",
+          "content_hash": "a18cf74b2ab09093",
+          "source_artifact_id": "SA-a7654a3e2bf5da93",
+          "raw_id": "RAW-9a8f97674d1149d1"
+        },
+        {
+          "source_id": "FISRC-cae40c38f1cff356",
+          "source_url": "https://fortune.com/2026/07/22/arrakis-a-startup-betting-ais-biggest-payoff-is-in-industrial-sectors-not-office-work-emerges-from-stealth-with-38-million-in-venture-funding/",
+          "title": "Exclusive: Startup Arrakis emerges from stealth with $38 million in funding to bring AI to industry | Fortune",
+          "publisher": "fortune.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T08:34:38.722Z",
+          "content_hash": "527bc6842397c702",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-07be648b502a96d3",
+          "source_url": "https://www.startupmag.co.uk/funding/arrakis-2026-growth-funding/",
+          "title": "Arrakis raises £22m from Blossom Capital and Accel | Startupmag",
+          "publisher": "startupmag.co.uk",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T08:34:40.188Z",
+          "content_hash": "59c49c6841b08429",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T08:35:46.977Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T08:35:46.977Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-01fcf93131eb921c",
+      "triggered_by_event_id": "EV-3fb827f44ea109de",
+      "as_of_date": "2026-07-26",
+      "company": {
+        "entity_id": "EN-382635c9325bf327",
+        "name": "Paper",
+        "full_name": "Paper",
+        "website": "https://paper.design",
+        "summary": "Paper 是一家位于旧金山的 AI 原生设计平台，为与 AI 编程智能体协同交付软件的团队而构建。其设计环境围绕智能体原生工作流打造，旨在取代传统的人类设计师向人类工程师交付静态模型的工作方式。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Stephen Haney",
+            "role": "Founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1c3047d162f9931f",
+                "quote": "Founder and CEO Stephen Haney built Paper around agent-native workflows"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1c3047d162f9931f",
+            "quote": "Paper, a San Francisco design platform built for teams shipping software alongside AI coding agents"
+          },
+          {
+            "source_id": "FISRC-5ee1d4324588b6e4",
+            "quote": "Paper is the design platform for the agentic era. Founded by Stephen Haney, Paper is built for teams shipping software with AI and coding agents"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$34 million",
+        "total_raised": "",
+        "announced_at": "2026-07-23",
+        "investors": [
+          {
+            "name": "Accel",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1c3047d162f9931f",
+                "quote": "raised a $34 million Series A led by Accel and ICONIQ"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "ICONIQ",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1c3047d162f9931f",
+                "quote": "raised a $34 million Series A led by Accel and ICONIQ"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Designer Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1c3047d162f9931f",
+                "quote": "with participation from Designer Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Michael Grinich",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1c3047d162f9931f",
+                "quote": "WorkOS co-founder Michael Grinich"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Anton Osika",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1c3047d162f9931f",
+                "quote": "Lovable co-founder Anton Osika"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1c3047d162f9931f",
+            "quote": "Paper, a San Francisco design platform built for teams shipping software alongside AI coding agents, raised a $34 million Series A led by Accel and ICONIQ, with participation from Designer Fund, WorkOS co-founder Michael Grinich and Lovable co-founder Anton Osika"
+          },
+          {
+            "source_id": "FISRC-5ee1d4324588b6e4",
+            "quote": "Paper, the design platform for the agentic era, today announced its $34 million Series A with Accel and ICONIQ. Investors participating include Designer Fund, Michael Grinich (WorkOS), Anton Osika (Lovable), and engineers and designers from Anthropic and OpenAI."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Paper",
+          "description": "一个 AI 原生的设计平台，为与 AI 编程智能体协同交付软件的团队而构建。它基于 HTML 和 CSS 渲染，使设计能够直接与生产代码及负责创建代码的智能体连接，从而减少设计交接摩擦，帮助团队更快地从想法走向生产。",
+          "target_customers": "使用 AI 编程智能体进行软件开发的团队，特别是追求高质量设计的专业设计师和工程师团队。",
+          "features": [
+            "基于 HTML 和 CSS 渲染，而非专有画布",
+            "设计环境原生支持智能体编码工作流",
+            "Paper Desktop 将设计画布转变为人类与 AI 智能体的共享工作空间",
+            "支持通过终端或终端模拟器进行操作",
+            "Paper MCP 服务器集成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ee1d4324588b6e4",
+              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders with HTML and CSS, enabling designs to connect directly with production code and the agents increasingly responsible for creating it."
+            },
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "Paper's design environment is built to work natively alongside agentic coding workflows rather than assuming a purely human-to-human pipeline."
+            },
+            {
+              "source_id": "FISRC-5ee1d4324588b6e4",
+              "quote": "The company has rapidly accelerated since the early 2026 launch of Paper Desktop, which turns the design canvas into a shared workspace for humans and AI agents, bridging design, code, and data in real time."
+            },
+            {
+              "source_id": "FISRC-9fd5a7f147dd199d",
+              "quote": "Users can engage with Paper in its native canvas or via their preferred terminal or terminal emulator."
+            },
+            {
+              "source_id": "FISRC-3134339a0e7f4fa5",
+              "quote": "That moment: the Paper MCP server launch."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Ramp",
+          "industry": "金融科技",
+          "use_case": "使用 Paper 进行日常设计工作",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "The company's early customer list already includes Ramp"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Figma",
+          "product": "Figma",
+          "scenario": "传统设计工具，用于人类设计师与人类工程师之间的设计交接",
+          "target_customer": "设计师和工程师团队",
+          "funding_summary": "",
+          "core_difference": "Paper 基于 HTML/CSS 渲染，原生支持智能体编码工作流；Figma 是传统设计工具，围绕人类到人类的交接流程构建。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "Paper has maybe 18 months before Figma or the coding-agent platforms themselves decide this feature belongs natively in their own product."
+            },
+            {
+              "source_id": "FISRC-5ee1d4324588b6e4",
+              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders with HTML and CSS"
+            }
+          ]
+        },
+        {
+          "name": "Framer",
+          "product": "Framer",
+          "scenario": "设计工具",
+          "target_customer": "设计师",
+          "funding_summary": "",
+          "core_difference": "Paper 基于 HTML/CSS 渲染，原生支持智能体编码工作流；Framer 是传统设计工具。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "if Figma, Framer or the coding-agent platforms themselves build comparable agent-native design capability directly, Paper's differentiation narrows quickly."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "ARR 增长倍数（自 Paper Desktop 发布以来）",
+          "value": "25x",
+          "observed_at": "2026-07-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ee1d4324588b6e4",
+              "quote": "Paper has grown ARR 25x since launch"
+            }
+          ]
+        },
+        {
+          "label": "连续登上 Ramp 增长最快公司榜单月数",
+          "value": "4个月",
+          "observed_at": "2026-07-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ee1d4324588b6e4",
+              "quote": "has appeared on Ramp's Fastest Growing Companies list for four consecutive months"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Stephen Haney",
+          "quote": "We want to help designers and creatives do deep, meaningful work, at a pace that supports their businesses in the agentic era. Helping design teams keep up with agentic workflows is our north star at Paper.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ee1d4324588b6e4",
+              "quote": "We want to help designers and creatives do deep, meaningful work, at a pace that supports their businesses in the agentic era. Helping design teams keep up with agentic workflows is our north star at Paper"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "ICONIQ",
+            "speaker": "Mariano Payano",
+            "speaker_role": "Partner",
+            "rationale": "ICONIQ 认为设计与工程之间的界限正在模糊，品味的重要性在提升。Paper 是第一个为软件未来发展方向而构建的画布，且他们认识的一些最注重质量的团队正在从各个方向主动采用它，这种有机的口碑传播非常罕见。",
+            "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions. That kind of organic word of mouth is rare.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5ee1d4324588b6e4",
+                "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions. That kind of organic word of mouth is rare."
+              }
+            ]
+          },
+          {
+            "institution": "Designer Fund",
+            "speaker": "Ben Blumenrose",
+            "speaker_role": "Co-Director, Managing Partner",
+            "rationale": "Designer Fund 在体验 Paper MCP 服务器后，看到了设计师希望与 AI 协作的未来体验：在人类精确控制与 AI 速度及广度之间轻松来回切换。他们欣赏团队对细节的执着以及服务专业设计师的明确立场。",
+            "quote": "That day I used Paper to give their team visual design feedback on a new feature they were building. I was able to create a v1 of a design using Paper + Claude with more speed and quality than other tools (thanks to Paper being native HTML/CSS) and then it let me seamlessly modify what AI created with precise controls… to me it was clear this is how designers want to work with AI, easily going back and forth between human precision and AI speed + breadth.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-3134339a0e7f4fa5",
+                "quote": "That day I used Paper to give their team visual design feedback on a new feature they were building. I was able to create a v1 of a design using Paper + Claude with more speed and quality than other tools (thanks to Paper being native HTML/CSS) and then it let me seamlessly modify what AI created with precise controls… to me it was clear this is how designers want to work with AI, easily going back and forth between human precision and AI speed + breadth."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：随着 AI 编程智能体（如 Claude Code、Codex）成为软件开发的主流力量，传统“人类设计师-人类工程师”的线性交接流程将被打破，设计工具本身需要重构为智能体原生。Paper 的融资依赖于以下已验证信号：1) 早期客户名单包含 Ramp、Vercel、Lovable 等 AI 原生工程组织，表明产品在高质量团队中已获得真实采用；2) ARR 自 Paper Desktop 发布以来增长 25 倍，并连续四个月登上 Ramp 增长最快公司榜单，验证了付费转化和增长势头；3) Anthropic 和 OpenAI 的工程师与设计师以个人天使身份参投，表明构建底层编码智能体的人认为其周边的设计层仍是一个开放且有价值的问题，而非实验室自身会轻易吸收的功能。这些信号共同指向一个判断：在 AI 编码智能体与下一代设计工具的交叉点上，存在一个尚未被充分占领的品类机会。但证据边界同样明确：该判断的有效性高度依赖于 Paper 能否在 Figma 或编码智能体平台自身构建同类功能之前（约 18 个月窗口期）建立起足够的护城河。",
+        "validated_signals": [
+          "早期客户包括 Ramp、Lovable、Vercel、PostHog、Quartr 和 Y Combinator，均为 AI 原生工程组织",
+          "ARR 自 Paper Desktop 发布以来增长 25 倍",
+          "连续四个月登上 Ramp 增长最快公司榜单",
+          "Anthropic 和 OpenAI 的工程师与设计师以个人天使身份参投，表明内部人士对智能体原生设计理念的真实信心"
+        ],
+        "risks": [
+          "平台风险：如果 Figma、Framer 或编码智能体平台自身直接构建类似的智能体原生设计功能，Paper 的差异化将迅速缩小，来源估计窗口期可能只有 18 个月。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 原生设计工具 / 开发者工具"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Paper",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ee1d4324588b6e4",
+              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders with HTML and CSS, enabling designs to connect directly with production code and the agents increasingly responsible for creating it."
+            },
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "Paper's design environment is built to work natively alongside agentic coding workflows rather than assuming a purely human-to-human pipeline."
+            },
+            {
+              "source_id": "FISRC-5ee1d4324588b6e4",
+              "quote": "The company has rapidly accelerated since the early 2026 launch of Paper Desktop, which turns the design canvas into a shared workspace for humans and AI agents, bridging design, code, and data in real time."
+            },
+            {
+              "source_id": "FISRC-9fd5a7f147dd199d",
+              "quote": "Users can engage with Paper in its native canvas or via their preferred terminal or terminal emulator."
+            },
+            {
+              "source_id": "FISRC-3134339a0e7f4fa5",
+              "quote": "That moment: the Paper MCP server launch."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Stephen Haney",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "Founder and CEO Stephen Haney built Paper around agent-native workflows"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "raised a $34 million Series A led by Accel and ICONIQ"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ICONIQ",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "raised a $34 million Series A led by Accel and ICONIQ"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Designer Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "with participation from Designer Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Michael Grinich",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "WorkOS co-founder Michael Grinich"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Anton Osika",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "Lovable co-founder Anton Osika"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ramp",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "The company's early customer list already includes Ramp"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Figma",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "Paper has maybe 18 months before Figma or the coding-agent platforms themselves decide this feature belongs natively in their own product."
+            },
+            {
+              "source_id": "FISRC-5ee1d4324588b6e4",
+              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders with HTML and CSS"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Framer",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1c3047d162f9931f",
+              "quote": "if Figma, Framer or the coding-agent platforms themselves build comparable agent-native design capability directly, Paper's differentiation narrows quickly."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-136b2edc9b9f3be8",
+          "date": "2026-07-24",
+          "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+          "amount": "$34 million",
+          "source_refs": [
+            "SA-698e748e9cefe115",
+            "SA-02eba6bdbd1a0ec5"
+          ]
+        },
+        {
+          "event_id": "EV-3fb827f44ea109de",
+          "date": "2026-07-22",
+          "title": "Paper 融资 3400 万美元，打造下一代卓越设计平台",
+          "amount": "$34M",
+          "source_refs": [
+            "SA-25b2471c6a2bc87a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-1c3047d162f9931f",
+          "source_url": "https://valueaddvc.com/pulse/paper-34m-series-a-ai-design-platform-2026",
+          "title": "Paper 为其 AI 原生设计平台融资 3400 万美元",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-26T01:20:00.660Z",
+          "content_hash": "527b8f798f6a48e3",
+          "source_artifact_id": "SA-b56e7b4b3875ece6",
+          "raw_id": "RAW-532877caa8ae957f"
+        },
+        {
+          "source_id": "FISRC-5ee1d4324588b6e4",
+          "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-23-paper-raises-34-million-series-a-with-accel-and-iconiq-to-build-the-design-platform-for-the-agentic-era",
+          "title": "Paper Raises $34 Million Series A with Accel and ICONIQ to Build the Design Platform for the Agentic Era | FinancialContent",
+          "publisher": "financialcontent.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T08:21:15.155Z",
+          "content_hash": "e9164b97cb878f6a",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-3134339a0e7f4fa5",
+          "source_url": "https://www.linkedin.com/posts/benblumenrose_proud-to-be-investing-in-papers-34m-series-activity-7486097035927126016-pIor",
+          "title": "Proud to be investing in Paper’s $34M Series A alongside Accel and ICONIQ! | Ben Blumenrose",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-26T08:21:18.444Z",
+          "content_hash": "2009003ef81a219d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9fd5a7f147dd199d",
+          "source_url": "https://www.accel.com/news/our-investment-in-paper-the-ai-native-design-space",
+          "title": "Accel | Our Investment in Paper: The AI-Native Design Space",
+          "publisher": "accel.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-26T08:21:19.991Z",
+          "content_hash": "50f8239c9f3cd3ed",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-26T08:22:29.235Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-26T08:22:29.235Z"
     }
   ],
   "queue": [
     {
       "event_id": "EV-3fb827f44ea109de",
       "company_name": "Paper",
-      "status": "blocked",
-      "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
-      ],
+      "status": "auto_published",
+      "problems": [],
       "queries": [
         "\"Paper\" funding investors round",
         "\"Paper\" official product customers case study",
-        "\"Paper\" competitors founders revenue team"
+        "\"Paper\" competitors product use case funding",
+        "\"Paper\" investor quote why invested",
+        "\"Paper\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
         {
@@ -1253,18 +1713,42 @@
         },
         {
           "provider": "tavily",
-          "query": "\"Paper\" competitors founders revenue team",
+          "query": "\"Paper\" competitors product use case funding",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "exa",
-          "query": "\"Paper\" competitors founders revenue team",
+          "query": "\"Paper\" competitors product use case funding",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Paper\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Paper\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Paper\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Paper\" \"why we invested\" OR \"our investment\"",
           "status": "completed",
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T07:13:25.248Z"
+      "updated_at": "2026-07-26T08:26:59.511Z"
     },
     {
       "event_id": "EV-fcf3c464260b6730",
@@ -1274,7 +1758,9 @@
       "queries": [
         "\"Gritt\" funding investors round",
         "\"Gritt\" official product customers case study",
-        "\"Gritt\" competitors founders revenue team"
+        "\"Gritt\" competitors product use case funding",
+        "\"Gritt\" investor quote why invested",
+        "\"Gritt\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
         {
@@ -1303,18 +1789,42 @@
         },
         {
           "provider": "tavily",
-          "query": "\"Gritt\" competitors founders revenue team",
+          "query": "\"Gritt\" competitors product use case funding",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "exa",
-          "query": "\"Gritt\" competitors founders revenue team",
+          "query": "\"Gritt\" competitors product use case funding",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Gritt\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Gritt\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Gritt\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Gritt\" \"why we invested\" OR \"our investment\"",
           "status": "completed",
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T07:13:25.248Z"
+      "updated_at": "2026-07-26T08:38:16.788Z"
     },
     {
       "event_id": "EV-754e83c2d19005fe",
@@ -1324,7 +1834,9 @@
       "queries": [
         "\"Arrakis\" funding investors round",
         "\"Arrakis\" official product customers case study",
-        "\"Arrakis\" competitors founders revenue team"
+        "\"Arrakis\" competitors product use case funding",
+        "\"Arrakis\" investor quote why invested",
+        "\"Arrakis\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
         {
@@ -1353,18 +1865,42 @@
         },
         {
           "provider": "tavily",
-          "query": "\"Arrakis\" competitors founders revenue team",
+          "query": "\"Arrakis\" competitors product use case funding",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "exa",
-          "query": "\"Arrakis\" competitors founders revenue team",
+          "query": "\"Arrakis\" competitors product use case funding",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" investor quote why invested",
+          "status": "failed",
+          "error": "The operation was aborted due to timeout"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" \"why we invested\" OR \"our investment\"",
           "status": "completed",
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T07:13:25.248Z"
+      "updated_at": "2026-07-26T08:35:47.104Z"
     }
   ]
 }

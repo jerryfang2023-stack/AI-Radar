@@ -15,16 +15,33 @@
       return "";
     }
   };
-  const state = { cards: [], filtered: [], companyId: "" };
+  const state = { cards: [], filtered: [], companyId: "", sector: "" };
   const form = $("[data-filter-form]");
+  const categoryTabs = $("[data-category-tabs]");
   const list = $("[data-list]");
-  const status = $("[data-status]");
   const dialog = $("[data-dialog]");
   const dialogContent = $("[data-dialog-content]");
 
   function fillSelect(name, values) {
     const select = form.elements.namedItem(name);
     for (const value of values) select.insertAdjacentHTML("beforeend", `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`);
+  }
+
+  function renderCategories(values) {
+    categoryTabs.innerHTML = ["", ...values].map((value) => `
+      <button
+        type="button"
+        data-sector="${escapeHtml(value)}"
+        aria-pressed="${state.sector === value ? "true" : "false"}"
+      >${escapeHtml(value || "全部")}</button>
+    `).join("");
+    categoryTabs.querySelectorAll("[data-sector]").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.sector = button.dataset.sector || "";
+        renderCategories(values);
+        render();
+      });
+    });
   }
 
   function cardSearchText(card) {
@@ -44,37 +61,56 @@
   function render() {
     const query = String(form.elements.namedItem("query").value || "").trim().toLowerCase();
     const round = form.elements.namedItem("round").value;
-    const sector = form.elements.namedItem("sector").value;
     state.filtered = state.cards.filter((card) => (
       (!state.companyId || card.company?.entity_id === state.companyId)
       && (!query || cardSearchText(card).includes(query))
       && (!round || card.financing?.round === round)
-      && (!sector || card.analysis?.sector === sector)
+      && (!state.sector || card.analysis?.sector === state.sector)
     ));
-    status.textContent = `显示 ${state.filtered.length} / ${state.cards.length} 个自动发布融资项目`;
     if (!state.filtered.length) {
       list.innerHTML = '<div class="fi-empty">当前筛选条件下暂无融资透视</div>';
       return;
     }
-    list.innerHTML = state.filtered.map((card) => `
-      <article class="fi-card">
-        <div class="fi-card-round">
-          <strong>${escapeHtml(card.financing?.amount || "金额未披露")}</strong>
-          <span>${escapeHtml(card.financing?.round || "")}</span>
-          <span>${escapeHtml(card.financing?.announced_at || card.as_of_date)}</span>
-        </div>
-        <div class="fi-card-body">
-          <p class="fi-card-label">${escapeHtml(card.analysis?.sector || "Funding Insight")}</p>
-          <h2>${escapeHtml(card.company?.name)}</h2>
-          <p class="fi-card-summary">${escapeHtml(card.company?.summary)}</p>
-          <p class="fi-card-products"><strong>产品：</strong>${(card.products || []).map((item) => linkedResearchName(card, item.name)).join("、")}</p>
-        </div>
-        <div class="fi-card-side">
-          <p class="fi-card-investors"><strong>投资方：</strong>${(card.financing?.investors || []).map((item) => linkedResearchName(card, item.name)).join("、")}</p>
-          <button type="button" data-open-id="${escapeHtml(card.funding_insight_id)}">查看融资透视与证据</button>
-        </div>
-      </article>
-    `).join("");
+    list.innerHTML = state.filtered.map((card) => {
+      const investors = card.financing?.investors || [];
+      const visibleInvestors = investors.slice(0, 4).map((item) => linkedResearchName(card, item.name)).join("、");
+      const remainingInvestors = Math.max(0, investors.length - 4);
+      return `
+        <article class="fi-card">
+          <header class="fi-card-head">
+            <div class="fi-card-meta">
+              <span>${escapeHtml(card.analysis?.sector || "AI 创业")}</span>
+              <time>${escapeHtml(card.financing?.announced_at || card.as_of_date)}</time>
+            </div>
+            <div class="fi-card-title-row">
+              <h2>${escapeHtml(card.company?.name)}</h2>
+              <span class="fi-card-round">${escapeHtml(card.financing?.round || "轮次未披露")}</span>
+            </div>
+          </header>
+          <div class="fi-card-product">
+            <span>产品</span>
+            <p>${(card.products || []).map((item) => linkedResearchName(card, item.name)).join("、") || "产品信息未披露"}</p>
+          </div>
+          <div class="fi-card-capital">
+            <div class="fi-card-amount">
+              <span>本轮融资</span>
+              <strong>${escapeHtml(card.financing?.amount || "金额未披露")}</strong>
+            </div>
+            <div class="fi-card-investors">
+              <div class="fi-card-investor-head">
+                <span>投资方</span>
+                <span>${investors.length} 家</span>
+              </div>
+              <p>${visibleInvestors || "投资方未披露"}${remainingInvestors ? `<span class="fi-card-investor-more">等 ${remainingInvestors} 家</span>` : ""}</p>
+            </div>
+          </div>
+          <button type="button" data-open-id="${escapeHtml(card.funding_insight_id)}">
+            查看完整融资透视
+            <span aria-hidden="true">→</span>
+          </button>
+        </article>
+      `;
+    }).join("");
     list.querySelectorAll("[data-open-id]").forEach((button) => {
       button.addEventListener("click", () => openDetail(button.dataset.openId));
     });
@@ -102,39 +138,88 @@
       entityLink(card.links?.funding_event, "融资事件"),
       card.analysis?.related_direction ? entityLink(card.links?.direction, `相关方向：${card.analysis.related_direction.title}`) : "",
     ].filter(Boolean).join("");
-    const investors = (card.financing?.investors || []).map((item) => linkedResearchName(card, item.name, item.role ? `（${item.role}）` : "")).join("、");
-    const founders = (card.company?.founders || []).map((item) => linkedResearchName(card, item.name, item.role ? `（${item.role}）` : "")).join("、") || "未披露";
+    const investorItems = card.financing?.investors || [];
+    const leadInvestors = investorItems.filter((item) => /领投/u.test(item.role || ""));
+    const otherInvestors = investorItems.filter((item) => !/领投/u.test(item.role || ""));
+    const investorNames = (items) => items.map((item) => linkedResearchName(card, item.name)).join("、") || "未披露";
+    const founders = (card.company?.founders || []).map((item) => `
+      <div class="fi-founder">
+        <strong>${linkedResearchName(card, item.name)}</strong>
+        <span>${escapeHtml(item.role || "联合创始人")}</span>
+      </div>
+    `).join("") || '<div class="fi-field-empty">当前来源未披露创始团队</div>';
     const teamSize = card.company?.team_size?.value || "未披露";
+    const targetCustomers = [...new Set((card.products || []).map((item) => item.target_customers).filter(Boolean))];
+    const productNames = (card.products || []).map((item) => linkedResearchName(card, item.name)).join("、") || "产品信息未披露";
     const products = (card.products || []).map((item) => `
       <article class="fi-product">
         <h4>${linkedResearchName(card, item.name)}</h4>
         <p>${escapeHtml(item.description)}</p>
-        ${item.target_customers ? `<p><strong>目标客户：</strong>${escapeHtml(item.target_customers)}</p>` : ""}
-        ${(item.features || []).length ? `<p><strong>关键能力：</strong>${escapeHtml(item.features.join("、"))}</p>` : ""}
+        ${(item.features || []).length ? `<ul>${item.features.map((feature) => `<li>${escapeHtml(feature)}</li>`).join("")}</ul>` : ""}
       </article>
     `).join("");
+    const targets = targetCustomers.map((target) => `<p>${escapeHtml(target)}</p>`).join("")
+      || '<div class="fi-field-empty">当前来源未披露目标客户</div>';
     const customers = (card.customers || []).map((item) => `
       <article class="fi-customer">
-        <h4>${linkedResearchName(card, item.name)}${item.industry ? `｜${escapeHtml(item.industry)}` : ""}</h4>
+        <div class="fi-customer-head">
+          <h4>${linkedResearchName(card, item.name)}</h4>
+          ${item.industry ? `<span>${escapeHtml(item.industry)}</span>` : ""}
+        </div>
         <p>${escapeHtml(item.use_case || "公开使用场景未披露")}</p>
       </article>
-    `).join("") || '<div class="fi-empty">当前来源未确认公开客户案例</div>';
+    `).join("") || '<div class="fi-field-empty">当前来源未确认可公开点名的客户案例</div>';
     const metrics = (card.metrics || []).map((item) => `
-      <article class="fi-metric"><p><strong>${escapeHtml(item.label)}：</strong>${escapeHtml(item.value)}${item.observed_at ? `｜观察于 ${escapeHtml(item.observed_at)}` : ""}</p></article>
-    `).join("") || '<div class="fi-empty">当前来源未披露可验证经营数据</div>';
-    const quotes = (card.quotes || []).map((item) => `
-      <blockquote class="fi-quote"><p>${escapeHtml(item.quote)}</p><cite>${escapeHtml(item.speaker || "公开来源")}</cite></blockquote>
-    `).join("");
+      <article class="fi-metric">
+        <span>${escapeHtml(item.label)}</span>
+        <strong>${escapeHtml(item.value)}</strong>
+        ${item.observed_at ? `<time>${escapeHtml(item.observed_at)}</time>` : ""}
+      </article>
+    `).join("") || '<div class="fi-field-empty">当前来源未披露可验证经营数据</div>';
     const fundingHistory = (card.funding_history || []).map((item) => `
       <a class="fi-history-item" href="data-center.html?view=events&detail=event&id=${encodeURIComponent(item.event_id)}">
         <time>${escapeHtml(item.date || "日期未披露")}</time>
         <span>${escapeHtml(item.title || item.event_id)}</span>
         <strong>${escapeHtml(item.amount || "")}</strong>
       </a>
-    `).join("") || '<div class="fi-empty">当前数据中心暂无更早融资事件</div>';
+    `).join("") || '<div class="fi-field-empty">当前数据中心暂无更早融资事件</div>';
     const comparisons = (card.comparisons || []).map((item) => `
-      <tr><td>${linkedResearchName(card, item.name)}</td><td>${escapeHtml(item.positioning)}</td><td>${escapeHtml(item.target_customer)}</td><td>${escapeHtml(item.funding_summary)}</td><td>${escapeHtml(item.core_difference)}</td></tr>
+      <tr>
+        <th scope="row">${linkedResearchName(card, item.name)}</th>
+        <td>${escapeHtml(item.product || item.positioning || "未披露")}</td>
+        <td>${escapeHtml(item.scenario || "未披露")}</td>
+        <td>${escapeHtml(item.target_customer || "未披露")}</td>
+        <td>${escapeHtml(item.funding_summary || "未披露")}</td>
+        <td>${escapeHtml(item.core_difference || "未披露")}</td>
+      </tr>
     `).join("");
+    const primaryProduct = card.products?.[0];
+    const primaryScenario = (primaryProduct?.features || []).slice(0, 2).join("；") || primaryProduct?.description || "未披露";
+    const rationale = (card.analysis?.investment_rationale || []).map((item) => {
+      const sourceId = item.evidence_refs?.[0]?.source_id;
+      const source = (card.research_sources || []).find((candidate) => candidate.source_id === sourceId);
+      const sourceLink = source ? `
+        <a href="${escapeHtml(safeUrl(source.source_url))}" target="_blank" rel="noopener noreferrer">查看机构原文</a>
+      ` : "";
+      return `
+        <article class="fi-institution-view">
+          <div class="fi-institution-head">
+            <strong>${escapeHtml(item.institution)}</strong>
+            <span>${escapeHtml([item.speaker, item.speaker_role].filter(Boolean).join(" · "))}</span>
+          </div>
+          <p>${escapeHtml(item.rationale)}</p>
+          <blockquote lang="en">${escapeHtml(item.quote)}</blockquote>
+          ${sourceLink}
+        </article>
+      `;
+    }).join("") || `
+      <div class="fi-thesis-empty">
+        当前已抓取来源未发现投资机构公开原话，因此不以模型推断替代机构判断。
+      </div>
+    `;
+    const signals = (card.analysis?.validated_signals || []).map((signal) => `<li>${escapeHtml(signal)}</li>`).join("")
+      || "<li>当前来源未形成可独立验证的业务信号。</li>";
+    const risks = (card.analysis?.risks || []).map((risk) => `<li>${escapeHtml(risk)}</li>`).join("");
     const sources = (card.research_sources || []).map((source) => `
       <div class="fi-source">
         <a href="${escapeHtml(safeUrl(source.source_url))}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.title || source.publisher)}</a>
@@ -143,41 +228,134 @@
     `).join("");
     return `
       <div class="fi-detail">
-        <p class="fi-detail-kicker">${escapeHtml(card.financing?.round)} · ${escapeHtml(card.financing?.amount)}</p>
-        <h2 id="fi-dialog-title">${escapeHtml(card.company?.full_name || card.company?.name)}</h2>
-        <p class="fi-detail-deck">${escapeHtml(card.company?.summary)}</p>
-        <div class="fi-detail-links">${links}</div>
-        <div class="fi-fact-grid">
-          <div class="fi-fact"><span>融资披露</span><strong>${escapeHtml(card.financing?.amount)}｜${escapeHtml(card.financing?.round)}${card.financing?.total_raised ? `；累计 ${escapeHtml(card.financing.total_raised)}` : ""}</strong></div>
-          <div class="fi-fact"><span>投资方</span><strong>${investors}</strong></div>
-          <div class="fi-fact"><span>总部 / 团队</span><strong>${escapeHtml(card.company?.headquarters || "未披露")}｜${escapeHtml(teamSize)}</strong></div>
-          <div class="fi-fact"><span>创始人</span><strong>${founders}</strong></div>
+        <header class="fi-detail-hero">
+          <div class="fi-detail-main">
+            <div class="fi-detail-kicker">
+              <span>${escapeHtml(card.analysis?.sector || "AI 创业")}</span>
+              <time>${escapeHtml(card.financing?.announced_at || card.as_of_date)}</time>
+            </div>
+            <h2 id="fi-dialog-title">${escapeHtml(card.company?.full_name || card.company?.name)}</h2>
+            <p class="fi-detail-deck">${escapeHtml(card.company?.summary)}</p>
+            <div class="fi-detail-links">${links}</div>
+            <div class="fi-hero-fields">
+              <div class="fi-hero-field">
+                <span>产品</span>
+                <strong>${productNames}</strong>
+              </div>
+              <div class="fi-hero-field">
+                <span>目标客户</span>
+                <strong>${escapeHtml(targetCustomers.join("；") || "未披露")}</strong>
+              </div>
+            </div>
+            <div class="fi-founder-block">
+              <span>创始团队</span>
+              <div class="fi-founder-list">${founders}</div>
+            </div>
+          </div>
+          <aside class="fi-funding-brief" aria-label="本轮融资摘要">
+            <span class="fi-funding-label">本轮融资</span>
+            <strong class="fi-funding-amount">${escapeHtml(card.financing?.amount || "金额未披露")}</strong>
+            <div class="fi-funding-round">
+              <span>${escapeHtml(card.financing?.round || "轮次未披露")}</span>
+              ${card.financing?.total_raised ? `<span>累计 ${escapeHtml(card.financing.total_raised)}</span>` : ""}
+            </div>
+            <div class="fi-investor-group">
+              <span>领投</span>
+              <strong>${investorNames(leadInvestors)}</strong>
+            </div>
+            <div class="fi-investor-group">
+              <span>其他投资方</span>
+              <strong>${investorNames(otherInvestors)}</strong>
+            </div>
+          </aside>
+        </header>
+        <div class="fi-company-strip">
+          <div><span>总部</span><strong>${escapeHtml(card.company?.headquarters || "未披露")}</strong></div>
+          <div><span>团队规模</span><strong>${escapeHtml(teamSize)}</strong></div>
+          <div><span>投资方</span><strong>${investorItems.length} 家</strong></div>
         </div>
+        <section class="fi-section fi-investment-section">
+          <div class="fi-section-head">
+            <div><span class="fi-section-index">01</span><h3>投资逻辑</h3></div>
+            <span class="fi-section-note">机构原话与证据边界分开呈现</span>
+          </div>
+          <div class="fi-thesis-layout">
+            <div class="fi-thesis-main">
+              <span class="fi-subhead">观澜判断</span>
+              <p class="fi-judgment">${escapeHtml(card.analysis?.capital_judgment)}</p>
+              <span class="fi-subhead">已验证信号</span>
+              <ul class="fi-signal-list">${signals}</ul>
+              ${risks ? `<div class="fi-risk-boundary"><span>风险边界</span><ul>${risks}</ul></div>` : ""}
+            </div>
+            <aside class="fi-institution-panel">
+              <span class="fi-subhead">机构公开理由</span>
+              <div class="fi-institution-list">${rationale}</div>
+            </aside>
+          </div>
+        </section>
         <section class="fi-section">
-          <div class="fi-section-head"><h3>产品与买方</h3><span class="fi-section-note">关联主体与产品</span></div>
+          <div class="fi-section-head">
+            <div><span class="fi-section-index">02</span><h3>产品</h3></div>
+            <span class="fi-section-note">产品形态与关键能力</span>
+          </div>
           <div class="fi-product-list">${products}</div>
         </section>
         <section class="fi-section">
-          <div class="fi-section-head"><h3>客户与关键数据</h3><span class="fi-section-note">按来源观察日期呈现</span></div>
-          <div class="fi-customer-list">${customers}</div>
-          <div class="fi-metric-list">${metrics}</div>
-          ${quotes ? `<div class="fi-quote-list">${quotes}</div>` : ""}
+          <div class="fi-section-head">
+            <div><span class="fi-section-index">03</span><h3>目标客户</h3></div>
+            <span class="fi-section-note">谁会采购或部署</span>
+          </div>
+          <div class="fi-target-list">${targets}</div>
         </section>
-        ${comparisons ? `<section class="fi-section">
-          <div class="fi-section-head"><h3>竞争比较</h3><span class="fi-section-note">应用层比较，不写入事实关系图谱</span></div>
-          <table class="fi-compare"><thead><tr><th>产品</th><th>定位</th><th>目标客户</th><th>融资</th><th>与主体的差异</th></tr></thead><tbody>${comparisons}</tbody></table>
-        </section>` : ""}
         <section class="fi-section">
-          <div class="fi-section-head"><h3>融资历史</h3><span class="fi-section-note">关联数据中心正式融资事件</span></div>
+          <div class="fi-section-head">
+            <div><span class="fi-section-index">04</span><h3>客户案例</h3></div>
+            <span class="fi-section-note">仅呈现已公开确认的使用场景</span>
+          </div>
+          <div class="fi-customer-list">${customers}</div>
+        </section>
+        <section class="fi-section">
+          <div class="fi-section-head">
+            <div><span class="fi-section-index">05</span><h3>关键数据</h3></div>
+            <span class="fi-section-note">保留观察日期与证据</span>
+          </div>
+          <div class="fi-metric-list">${metrics}</div>
+        </section>
+        <section class="fi-section">
+          <div class="fi-section-head">
+            <div><span class="fi-section-index">06</span><h3>竞争坐标</h3></div>
+            <span class="fi-section-note">具体比较产品、场景、客户与融资</span>
+          </div>
+          <div class="fi-compare-wrap">
+            <table class="fi-compare">
+              <thead><tr><th>公司</th><th>产品 / 方案</th><th>应用场景</th><th>目标客户</th><th>融资</th><th>已证实差异</th></tr></thead>
+              <tbody>
+                <tr class="fi-compare-primary">
+                  <th scope="row">${escapeHtml(card.company?.name)}</th>
+                  <td>${productNames}</td>
+                  <td>${escapeHtml(primaryScenario)}</td>
+                  <td>${escapeHtml(targetCustomers.join("；") || "未披露")}</td>
+                  <td>${escapeHtml(card.financing?.amount || "未披露")} · ${escapeHtml(card.financing?.round || "未披露")}</td>
+                  <td>当前研究主体</td>
+                </tr>
+                ${comparisons}
+              </tbody>
+            </table>
+            ${comparisons ? "" : '<div class="fi-compare-empty">当前来源不足以支持逐字段竞品比较，因此不生成概括性套话。</div>'}
+          </div>
+        </section>
+        <section class="fi-section">
+          <div class="fi-section-head">
+            <div><span class="fi-section-index">07</span><h3>融资历史</h3></div>
+            <span class="fi-section-note">关联数据中心正式融资事件</span>
+          </div>
           <div class="fi-history-list">${fundingHistory}</div>
         </section>
         <section class="fi-section">
-          <div class="fi-section-head"><h3>资本判断</h3><span class="fi-section-note">DeepSeek V4 Pro自动研究</span></div>
-          <p class="fi-judgment">${escapeHtml(card.analysis?.capital_judgment)}</p>
-          <div class="fi-risk-list">${(card.analysis?.risks || []).map((risk) => `<article class="fi-risk"><p>${escapeHtml(risk)}</p></article>`).join("")}</div>
-        </section>
-        <section class="fi-section">
-          <div class="fi-section-head"><h3>来源证据</h3><span class="fi-section-note">${card.research_sources?.length || 0} 个已抓取来源</span></div>
+          <div class="fi-section-head">
+            <div><span class="fi-section-index">08</span><h3>来源证据</h3></div>
+            <span class="fi-section-note">${card.research_sources?.length || 0} 个已抓取来源</span>
+          </div>
           <div class="fi-source-list">${sources}</div>
         </section>
       </div>
@@ -189,6 +367,7 @@
     if (!card) return;
     dialogContent.innerHTML = detailHtml(card);
     dialog.showModal();
+    dialog.scrollTop = 0;
     const next = new URLSearchParams(window.location.search);
     next.set("id", id);
     window.history.replaceState({}, "", `funding-insights.html?${next.toString()}`);
@@ -214,7 +393,7 @@
     }
     $("[data-latest-date]").textContent = data.meta?.latest_date ? `更新于 ${data.meta.latest_date}` : "暂无更新";
     fillSelect("round", data.filters?.rounds || []);
-    fillSelect("sector", data.filters?.sectors || []);
+    renderCategories(data.filters?.sectors || []);
     form.addEventListener("input", render);
     form.addEventListener("change", render);
     $("[data-dialog-close]").addEventListener("click", closeDetail);
@@ -227,7 +406,6 @@
   }
 
   init().catch((error) => {
-    status.textContent = `融资透视数据读取失败：${error.message}`;
-    list.innerHTML = '<div class="fi-empty">暂时无法读取融资透视，请稍后重试。</div>';
+    list.innerHTML = `<div class="fi-empty">暂时无法读取融资透视，请稍后重试。<small>${escapeHtml(error.message)}</small></div>`;
   });
 })();

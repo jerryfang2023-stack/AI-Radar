@@ -7,6 +7,7 @@ import {
   FUNDING_INSIGHT_PROMPT_VERSION,
   FUNDING_INSIGHT_VERSION,
   clean,
+  ensureCanonicalFundingEvidence,
   entityResolver,
   fundingInsightProblems,
   latestDataDate,
@@ -29,6 +30,7 @@ const date = args.get("date") || latestDataDate(root);
 const write = args.get("write") === "true";
 const force = args.get("force") === "true";
 const limit = Math.max(0, Number(args.get("limit") || 0));
+const eventId = clean(args.get("event-id") || "");
 const concurrency = Math.max(1, Math.min(4, Number(args.get("concurrency") || 2)));
 const output = path.resolve(args.get("output")
   || path.join(root, "01-SiteV2/content/12-applications/funding-insights", `${date}.json`));
@@ -199,10 +201,12 @@ function canonicalSources(bundle, event) {
 
 function scoreCandidate(result, companyName) {
   const text = clean(`${result.title} ${result.url}`).toLowerCase();
+  const body = clean(result.provider_body).toLowerCase();
   const name = clean(companyName).toLowerCase();
   let score = result.source_class === "official_candidate" ? 10 : result.source_class === "secondary" ? 4 : 6;
   if (text.includes(name)) score += 4;
   if (/\b(?:funding|raises|series|seed|investor|product|customer|case study|about|team|pricing)\b/iu.test(text)) score += 3;
+  if (result.intent === "investor_rationale" && body.includes(name) && /\b(?:invest|investment|portfolio)\b/iu.test(body)) score += 5;
   return score;
 }
 
@@ -210,13 +214,15 @@ async function researchSources(bundle, event, company) {
   const captured = canonicalSources(bundle, event);
   const officialHosts = [...new Set(captured.map((source) => hostFor(source.source_url)).filter(Boolean))];
   const queries = [
-    `"${company.canonical_name}" funding investors round`,
-    `"${company.canonical_name}" official product customers case study`,
-    `"${company.canonical_name}" competitors founders revenue team`,
+    { intent: "funding", query: `"${company.canonical_name}" funding investors round` },
+    { intent: "product", query: `"${company.canonical_name}" official product customers case study` },
+    { intent: "comparison", query: `"${company.canonical_name}" competitors product use case funding` },
+    { intent: "investor_rationale", query: `"${company.canonical_name}" investor quote why invested` },
+    { intent: "investor_rationale", query: `"${company.canonical_name}" \"why we invested\" OR \"our investment\"` },
   ];
   const attempts = [];
   const results = [];
-  for (const query of queries) {
+  for (const { intent, query } of queries) {
     const settled = await Promise.allSettled([
       searchTavily(query, company.canonical_name),
       searchExa(query, company.canonical_name),
@@ -229,7 +235,9 @@ async function researchSources(bundle, event, company) {
         status: outcome.status === "fulfilled" ? "completed" : "failed",
         error: outcome.status === "rejected" ? clean(outcome.reason?.message) : "",
       });
-      if (outcome.status === "fulfilled") results.push(...outcome.value);
+      if (outcome.status === "fulfilled") {
+        results.push(...outcome.value.map((result) => ({ ...result, intent, query })));
+      }
     }
   }
   const deduped = new Map();
@@ -237,19 +245,24 @@ async function researchSources(bundle, event, company) {
     const candidateHost = hostFor(result.url);
     const isKnownSecondary = secondaryDomains.test(candidateHost);
     const isCanonicalHost = officialHosts.some((host) => sameHostFamily(candidateHost, host));
-    if (!isKnownSecondary && !isCanonicalHost) continue;
+    const companyName = clean(company.canonical_name).toLowerCase();
+    const companyInLead = clean(`${result.title} ${result.provider_body}`).toLowerCase().includes(companyName);
+    const isInvestorRationaleLead = result.intent === "investor_rationale"
+      && companyInLead
+      && /\b(?:invest|investment|portfolio|series|seed|funding)\b/iu.test(clean(`${result.title} ${result.url} ${result.provider_body}`));
+    if (!isKnownSecondary && !isCanonicalHost && !isInvestorRationaleLead) continue;
     const key = normalizedUrlKey(result.url);
     if (!deduped.has(key) || scoreCandidate(result, company.canonical_name) > scoreCandidate(deduped.get(key), company.canonical_name)) {
       deduped.set(key, result);
     }
   }
   for (const candidate of [...deduped.values()].sort((a, b) => scoreCandidate(b, company.canonical_name) - scoreCandidate(a, company.canonical_name))) {
-    if (captured.length >= 7) break;
+    if (captured.length >= 8) break;
     if (captured.some((source) => normalizedUrlKey(source.source_url) === normalizedUrlKey(candidate.url))) continue;
     const source = await capturePage(candidate);
     if (source) captured.push(source);
   }
-  return { sources: captured, queries, attempts };
+  return { sources: captured, queries: queries.map((item) => item.query), attempts };
 }
 
 function directionManifest() {
@@ -267,13 +280,15 @@ function promptFor(event, company, sources, directions) {
   ].join("\n")).join("\n\n---\n\n");
   return [
     "你是观澜AI融资透视研究员。只使用下方已抓取SOURCE正文，不得使用模型记忆、搜索摘要或常识补写事实。",
-    "任务：基于一个已验证融资事件，完成公司、产品、投资方、客户、关键数据和竞争比较的结构化二次研究。投资方必须明确列出；无法从来源确认投资方时，返回空数组，系统会阻止发布。",
+    "任务：基于一个已验证融资事件，完成公司、产品、投资方、客户、关键数据、竞争比较和投资逻辑的结构化二次研究。投资方必须明确列出；无法从来源确认投资方时，返回空数组，系统会阻止发布。",
     "每个事实对象必须附evidence_refs。quote必须逐字复制SOURCE正文中的连续短片段，不得改写。缺失信息用空字符串或空数组，不得猜测。",
     "除公司、产品、人名、金额、轮次等专有名词外，summary、description、use_case、比较字段、sector、capital_judgment、risks等面向读者的内容必须使用简体中文。",
     "financing.amount写round所覆盖轮次的金额；若round同时覆盖多轮，则写多轮合计。total_raised写截至本次披露的累计融资额，不得混用。每个投资方的role必须用中文并写清轮次语境，例如“本轮领投”“本轮参投”“种子轮领投”“天使投资人”或“既有投资方”。",
     "必须列出来源中与本次披露及其所述历史轮次有关的全部投资方，不得选择性省略；同一机构只列一次，并在role中说明所属轮次。",
-    "comparisons是应用层比较集合，不代表事实关系；core_difference必须写成有边界的比较，不得写宣传口号。analysis可以综合判断，但不得新增来源中没有的数字。",
-    "related_direction_id只能从DIRECTION_OPTIONS选择；没有合适方向时返回空字符串。risks至少一项，必须说明当前证据不足、商业模式或执行上的真实不确定性。",
+    "comparisons是应用层比较集合，不代表事实关系。只收录来源明确支持具体产品或方案、应用场景、目标客户、融资信息或商业路径的竞品；如果来源只说“同类公司”或“起点不同”，不要输出该条。product写具体产品或方案，scenario写具体工作流，缺失融资金额时funding_summary留空；core_difference必须逐字段比较已经证实的差异，不得写“起点不同”“各有优势”等机械句式。",
+    "analysis.investment_rationale只收录本轮投资机构或其投资人的公开原话。institution必须与financing.investors中的机构名一致；speaker和speaker_role写公开归属；rationale用中文概括机构为何投资；quote逐字复制机构或投资人原文。没有机构原话时返回空数组，不得用公司创始人、媒体或模型判断冒充。",
+    "analysis.capital_judgment必须回答资本押注的核心变量、当前估值或融资所依赖的已验证信号，以及判断的证据边界；不得使用“知名机构参与表明看好”“商业化前景广阔”等空泛模板。validated_signals只写来源已验证的业务信号。risks至少一项，用于约束资本判断，不单独扩展成问题清单。",
+    "related_direction_id只能从DIRECTION_OPTIONS选择；没有合适方向时返回空字符串。",
     "返回一个JSON对象，不要代码围栏。Schema:",
     JSON.stringify({
       company: {
@@ -308,7 +323,8 @@ function promptFor(event, company, sources, directions) {
       }],
       comparisons: [{
         name: "string",
-        positioning: "string",
+        product: "string",
+        scenario: "string",
         target_customer: "string",
         funding_summary: "string",
         core_difference: "string",
@@ -326,6 +342,14 @@ function promptFor(event, company, sources, directions) {
         evidence_refs: [{ source_id: "string", quote: "string" }],
       }],
       analysis: {
+        investment_rationale: [{
+          institution: "string",
+          speaker: "string",
+          speaker_role: "string",
+          rationale: "string",
+          quote: "exact source quote",
+          evidence_refs: [{ source_id: "string", quote: "string" }],
+        }],
         capital_judgment: "string",
         validated_signals: ["string"],
         risks: ["string"],
@@ -497,10 +521,12 @@ async function processEvent(bundle, event, entityIndex) {
       timeoutMs: 180000,
       validate: (payload) => {
         acceptedPayload = sanitizeResearchPayload(payload, research.sources);
+        ensureCanonicalFundingEvidence(acceptedPayload, bundle, event, research.sources);
         return researchPayloadProblems(acceptedPayload, research.sources, directions.map((item) => item.id));
       },
     });
     const payload = acceptedPayload || sanitizeResearchPayload(result.payload, research.sources);
+    ensureCanonicalFundingEvidence(payload, bundle, event, research.sources);
     return {
       event_id: event.event_id,
       company_name: company.canonical_name,
@@ -552,14 +578,17 @@ async function main() {
     .filter((event) => event.publication_status === "verified")
     .filter((event) => event.display_title_zh);
   if (limit) events = events.slice(0, limit);
-  const pending = events.filter((event) => force || !existingByEvent.has(event.event_id));
+  const selectedEvents = eventId ? events.filter((event) => event.event_id === eventId) : events;
+  if (eventId && !selectedEvents.length) throw new Error(`funding_event_not_found:${eventId}`);
+  const pending = selectedEvents.filter((event) => force || !existingByEvent.has(event.event_id));
   if (!write) {
     console.log(JSON.stringify({
       ok: true,
       mode: "dry-run",
       date,
       funding_events: events.length,
-      reused: events.length - pending.length,
+      selected_events: selectedEvents.length,
+      reused: selectedEvents.length - pending.length,
       pending: pending.length,
       providers: {
         tavily: Boolean(process.env.TAVILY_API_KEY) && process.env.TAVILY_DISABLED !== "true",
