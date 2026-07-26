@@ -42,13 +42,13 @@ Close a repaired production incident:
 npm run resolve:incident -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>
 ```
 
-Audit Guanlan Skill Ops after skill edits or repeated lane failures. This command is read-only: it reports mirror drift, checks governed Skill metadata, and validates the generated Skill Store dashboard contract without synchronizing or rebuilding anything:
+Audit Guanlan Skill Ops after skill edits or repeated lane failures. This command is read-only: it hard-gates the repo-scoped `.agents/skills` runtime, reports private compatibility-mirror drift separately, checks governed Skill metadata, and validates the generated Skill Store dashboard contract without requiring a developer-local `.skill-store`:
 
 ```powershell
 npm run audit:skills
 ```
 
-After confirming that the project copy is the source of truth, repair the `.skill-store` mirror and generated dashboard explicitly. The repair command synchronizes, rebuilds, then finishes with the read-only audit:
+After confirming that the project copy is the source of truth, repair the repo runtime, optional `.skill-store` compatibility mirror, and generated dashboard explicitly. The repair command synchronizes, rebuilds, then finishes with the read-only audit:
 
 ```powershell
 npm run repair:skills
@@ -59,6 +59,10 @@ Read-only Skill Ops check used by daily supervision. It includes the dashboard s
 ```powershell
 npm run check:skill-ops
 ```
+
+On a configured development machine, this check also audits effective local Skill discovery and requires the dashboard to match the discovered, enabled, and reversibly disabled counts. In CI or deploy environments without the developer-local Codex config and private store, it still validates project manifests and the committed dashboard contract without treating missing personal state as a dependency.
+
+For an explicit compatibility-mirror release check, use `npm run check:skill-ops -- --require-skill-store`; this is intentionally not part of the default or deploy-time gate.
 
 ## Output Files
 

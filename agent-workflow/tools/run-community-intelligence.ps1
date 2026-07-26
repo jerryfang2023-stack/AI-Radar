@@ -235,7 +235,7 @@ try {
       $lastError = $_.Exception.Message
       Write-LogLine ("Community intelligence attempt $attempt failed: " + $lastError)
       if ($lastError -match "COMMUNITY_LOGIN_REQUIRED") {
-        Write-LogLine "MANUAL_ACTION_REQUIRED: 鐧诲綍鐘舵€佸凡澶辨晥锛涜鎵撳紑绀剧兢鎯呮姤涓撶敤 Chrome 閰嶇疆瀹屾垚鎵爜/鐧诲綍锛屽啀閲嶆柊杩愯浠诲姟銆傚叾浠栨爮鐩彲缁х画杩愯銆?"
+        Write-LogLine "MANUAL_ACTION_REQUIRED: 登录状态已失效；请打开社群情报专用 Chrome 配置完成扫码/登录，再重新运行任务。其他栏目可继续运行。"
         break
       }
       if ($attempt -lt $attemptLimit) {
@@ -254,4 +254,3 @@ catch {
 finally {
   Pop-Location
 }
-

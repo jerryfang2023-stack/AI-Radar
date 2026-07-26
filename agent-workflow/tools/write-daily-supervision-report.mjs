@@ -1090,6 +1090,14 @@ function buildSkillOpsLane() {
     evalCoverage: summary.evalCoverage ?? null,
     exampleCoverage: summary.exampleCoverage ?? null,
     memoryRequiredMissing: summary.memoryRequiredMissing ?? null,
+    discoveryState: summary.discoveryState || "unknown",
+    discoveryAvailable: summary.discoveryAvailable ?? false,
+    discoveredSkills: summary.discoveredSkills ?? null,
+    enabledSkills: summary.enabledSkills ?? null,
+    disabledSkills: summary.disabledSkills ?? null,
+    invalidSkillManifests: summary.invalidSkillManifests ?? null,
+    enabledDuplicateSkillNames: summary.enabledDuplicateSkillNames ?? null,
+    discoveryErrors: Array.isArray(check?.discovery?.errors) ? check.discovery.errors : [],
   };
 
   if (!check) {
@@ -1100,7 +1108,7 @@ function buildSkillOpsLane() {
   if (!result.ok && check?.ok) warnings.push(result.stderr.trim() || "Skill Ops check returned a non-zero status without blocking errors");
 
   if (problems.length) {
-    actions.push("repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror");
+    actions.push("repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror");
     if (summary.syncDrift) {
       actions.push("run `npm run repair:skills` after confirming the project copy is the source of truth");
     } else {

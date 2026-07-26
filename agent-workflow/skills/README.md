@@ -1,47 +1,72 @@
-# WaveSight Skill Mirrors
+# WaveSight Project Skills
 
-This directory mirrors selected Guanlan / WaveSight skills from:
+This directory is the authoritative, versioned source for WaveSight-specific Skills.
+
+## Runtime scope
+
+Codex discovers project Skills from:
+
+```text
+.agents/skills/
+```
+
+That runtime directory is generated from this folder:
+
+```text
+npm run sync:repo-skills
+```
+
+Check for drift without writing:
+
+```text
+npm run diff:repo-skills
+```
+
+Do not edit `.agents/skills/` directly.
+
+## Compatibility mirror
+
+Selected rule assets are also mirrored to the private user Skill Store:
 
 ```text
 C:\Users\86186\.skill-store
 ```
 
-The mirror exists so project-specific skill rules can be reviewed, versioned, rolled back, and handed off with the WaveSight repository.
+The private store is retained for Skill Ops compatibility, backup and dashboard workflows. It is not the runtime source or a default validation dependency for this repository. Project-specific global entries are disabled in Codex configuration so the repo-scoped copy wins deterministically.
 
-## Scope
+Use:
 
-Mirror only rule assets:
+```text
+npm run sync:skill-store
+npm run diff:skill-store
+```
+
+The default `check:skill-ops` gate requires the repo-scoped `.agents/skills` runtime and reports private mirror drift as informational. Use `npm run check:skill-ops -- --require-skill-store` or `npm run diff:skill-store` when the compatibility mirror itself must be exact.
+
+Audit effective local discovery after changing global Skill configuration:
+
+```text
+npm run audit:skill-discovery
+```
+
+The audit rejects invalid manifests and duplicate enabled names. Global cleanup uses reversible `enabled = false` entries; it does not delete source folders.
+
+`check:skill-ops` runs the same discovery audit and compares its effective counts with the generated Skill Store dashboard when the local Codex config and private store are available. Daily supervision already consumes this check; no second discovery scan is scheduled.
+
+## Mirrored assets
 
 - `SKILL.md`
+- `MEMORY.md`
 - `agents/`
 - `evals/`
 - `examples/`
 - `references/`
-- `MEMORY.md`
 
-Do not mirror runtime caches, package installs, generated feeds, `node_modules`, or personal delivery configuration.
+Do not mirror runtime caches, package installs, generated feeds, `node_modules`, personal delivery configuration or secrets.
 
-## Current Mirrors
+## Governance
 
-- `guanlan-business-signals-monitor`
-- `guanlan-first-line-viewpoints-monitor`
-- `guanlan-community-intelligence-monitor`
-- `guanlan-daily-monitor`
-- `guanlan-raw-pool-card`
-- `guanlan-daily-monitor-qc`
-- `guanlan-monitor-quality-gate`
-- `guanlan-trend-candidate-writer`
-- `guanlan-typography-qc`
-- `guanlan-skill-editor`
-- `guanlan-code-rule-auditor`
-- `follow-builders`
-
-## Registry
-
-- `skill-registry.md` indexes the current lane owner, upstream / downstream boundary, main gates, eval coverage, latest reusable learning, and whether the skill is mirrored in `.skill-store`.
-
-## Update Rule
-
-When a mirrored skill changes in `.skill-store`, copy the same scoped rule assets here and validate the mirrored folder. If the project mirror and `.skill-store` conflict, treat `.skill-store` as the installed runtime source and update this mirror before committing.
-
-Do not use this directory to run daily production, generate Cards, or change frontstage data directly.
+- `skill-registry.md` is generated from Skill metadata.
+- Change the source Skill here, run its evals, regenerate the registry when metadata changes, then sync both runtime and compatibility mirrors.
+- Never delete or merge a Skill automatically during cleanup. Disable ambiguous or duplicate discovery paths first, validate routing, and remove only with explicit approval.
+- Skills handle bounded judgment and project rules; deterministic scripts handle repeatable transformations; gates block unsafe outputs.

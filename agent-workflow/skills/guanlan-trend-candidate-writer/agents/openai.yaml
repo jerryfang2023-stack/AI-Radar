@@ -1,4 +1,6 @@
 interface:
   display_name: "观澜趋势候选"
-  short_description: "判断并撰写观澜 AI 趋势候选，不硬写趋势报告。"
-  default_prompt: "请从今天的 Raw、Pool、商业信号卡和观点卡中判断是否形成趋势候选；证据不足时输出 no_trend_candidate_decision。"
+  short_description: "执行历史或人工研究中的趋势候选审查，不参与每日生产。"
+  default_prompt: "仅在用户明确要求历史或人工趋势审查时使用 $guanlan-trend-candidate-writer；从合格 Card 与来源证据判断是否形成趋势候选，排除 First-Line Viewpoints 和 builders 观点，证据不足时输出 no_trend_candidate_decision。"
+policy:
+  allow_implicit_invocation: false

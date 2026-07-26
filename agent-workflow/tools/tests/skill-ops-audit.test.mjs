@@ -5,6 +5,12 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import {
+  evaluateSkillOps,
+  readGovernedSkills,
+  renderRegistryMarkdown,
+} from "../lib/guanlan-skill-ops.mjs";
+import { auditSkillDiscovery } from "../lib/skill-discovery-audit.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "..", "..", "..");
@@ -15,9 +21,110 @@ const skillStoreDiff = path.join(root, "agent-workflow", "tools", "diff-skill-st
 const skillOpsCheck = path.join(root, "agent-workflow", "tools", "check-skill-ops.mjs");
 const skillOpsServer = path.join(root, "agent-workflow", "tools", "skill-store-ops-server.mjs");
 const dailySelfCheck = path.join(root, "agent-workflow", "tools", "run-daily-self-check.mjs");
+const dailySupervision = path.join(root, "agent-workflow", "tools", "write-daily-supervision-report.mjs");
 const selfCheckPolicy = path.join(root, "agent-workflow", "tools", "lib", "daily-self-check-policy.mjs");
 const skillStorePaths = path.join(root, "agent-workflow", "tools", "lib", "skill-store-paths.mjs");
 const communityWorkflow = path.join(root, ".github", "workflows", "daily-community-intelligence-pr.yml");
+
+test("Skill discovery audit honors disabled paths and rejects enabled duplicates or invalid manifests", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-skill-discovery-"));
+  const store = path.join(fixture, ".skill-store");
+  const userSkills = path.join(fixture, ".agents", "skills");
+  const repoSkills = path.join(fixture, "repo", ".agents", "skills");
+  const configPath = path.join(fixture, ".codex", "config.toml");
+  const skill = (name) => `---\nname: ${name}\ndescription: Fixture Skill.\n---\n`;
+  fs.mkdirSync(path.join(store, "alpha"), { recursive: true });
+  fs.mkdirSync(path.join(userSkills, "alpha"), { recursive: true });
+  fs.mkdirSync(path.dirname(configPath), { recursive: true });
+  fs.writeFileSync(path.join(store, "alpha", "SKILL.md"), skill("alpha"), "utf8");
+  fs.writeFileSync(path.join(userSkills, "alpha", "SKILL.md"), skill("alpha"), "utf8");
+  fs.writeFileSync(configPath, `[[skills.config]]\npath = '${path.join(store, "alpha", "SKILL.md")}'\nenabled = false\n`, "utf8");
+  const paths = {
+    root: path.join(fixture, "repo"),
+    configPath,
+    skillStoreDir: store,
+    discoveryRoots: [store, userSkills, repoSkills],
+  };
+
+  const deduplicated = auditSkillDiscovery(paths);
+  assert.equal(deduplicated.ok, true);
+  assert.deepEqual(deduplicated.summary, {
+    discovered: 2,
+    configuredDisabled: 1,
+    enabled: 1,
+    invalidManifests: 0,
+    enabledDuplicateNames: 0,
+  });
+
+  fs.writeFileSync(configPath, "", "utf8");
+  const duplicated = auditSkillDiscovery(paths);
+  assert.equal(duplicated.ok, false);
+  assert.equal(duplicated.summary.enabledDuplicateNames, 1);
+
+  fs.mkdirSync(path.join(store, "broken"), { recursive: true });
+  fs.writeFileSync(path.join(store, "broken", "SKILL.md"), "# no frontmatter\n", "utf8");
+  const invalid = auditSkillDiscovery(paths);
+  assert.equal(invalid.ok, false);
+  assert.equal(invalid.summary.invalidManifests, 1);
+});
+
+test("default Skill Ops gate requires repo runtime but not the private compatibility store", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-repo-skill-runtime-"));
+  const projectSkillDir = path.join(fixture, "agent-workflow", "skills");
+  const repoRuntimeSkillDir = path.join(fixture, ".agents", "skills");
+  const storeDir = path.join(fixture, "empty-private-store");
+  const registryPath = path.join(projectSkillDir, "skill-registry.md");
+  const versionPath = path.join(projectSkillDir, "skill-store-version.json");
+  const skillDir = path.join(projectSkillDir, "alpha");
+  const skill = `---
+name: alpha
+description: Test repository runtime authority.
+metadata:
+  guanlan:
+    version: "1.0.0"
+    lane: "Test"
+    status: "governance"
+    order: 1
+    responsibility: "Validate repo runtime authority."
+    upstream: "fixture"
+    downstream: "fixture"
+    gates: "fixture"
+    mirrored_in_skill_store: true
+    memory_required: false
+---
+`;
+  fs.mkdirSync(path.join(skillDir, "evals"), { recursive: true });
+  fs.mkdirSync(path.join(skillDir, "examples"), { recursive: true });
+  fs.mkdirSync(storeDir, { recursive: true });
+  fs.writeFileSync(path.join(skillDir, "SKILL.md"), skill, "utf8");
+  fs.writeFileSync(path.join(skillDir, "evals", "one.md"), "pass", "utf8");
+  fs.writeFileSync(path.join(skillDir, "examples", "one.md"), "pass", "utf8");
+  fs.writeFileSync(versionPath, JSON.stringify({ version: "1.0.0" }), "utf8");
+  fs.cpSync(skillDir, path.join(repoRuntimeSkillDir, "alpha"), { recursive: true });
+  fs.writeFileSync(registryPath, renderRegistryMarkdown(readGovernedSkills(projectSkillDir)), "utf8");
+
+  const paths = {
+    root: fixture,
+    projectSkillDir,
+    repoRuntimeSkillDir,
+    storeDir,
+    registryPath,
+    versionPath,
+  };
+  const defaultResult = evaluateSkillOps(paths);
+  const strictCompatibilityResult = evaluateSkillOps(paths, { requireCompatibilityStore: true });
+
+  assert.equal(defaultResult.ok, true);
+  assert.equal(defaultResult.summary.syncDrift, 0);
+  assert.equal(defaultResult.summary.compatibilitySyncDrift, 1);
+  assert.equal(strictCompatibilityResult.ok, false);
+  assert.match(strictCompatibilityResult.errors.join("\n"), /compatibility \.skill-store sync state is project-only/u);
+
+  fs.rmSync(path.join(repoRuntimeSkillDir, "alpha"), { recursive: true, force: true });
+  const missingRuntimeResult = evaluateSkillOps(paths);
+  assert.equal(missingRuntimeResult.ok, false);
+  assert.match(missingRuntimeResult.errors.join("\n"), /repo Skill runtime sync state is project-only/u);
+});
 
 test("Skill Ops separates read-only audit from explicit repair", () => {
   const audit = packageJson.scripts["audit:skills"] || "";
@@ -72,15 +179,27 @@ test("daily safe repair rebuilds for every Skill Ops contract problem", () => {
   const policy = spawnSync(process.execPath, [
     "--input-type=module",
     "--eval",
-    `import { shouldRebuildSkillStore, shouldSyncSkillStore } from ${JSON.stringify(pathToFileURL(selfCheckPolicy).href)}; const drift = { lanes: [{ id: "skill_ops", evidence: { registryState: "current", dashboardState: "failed", syncDrift: 1, dashboardErrors: ["alpha syncState expected drift, got synced"] }, problems: [{ message: "skill sync drift" }] }] }; const mixed = { lanes: [{ id: "skill_ops", evidence: { registryState: "current", dashboardState: "failed", syncDrift: 1, dashboardErrors: ["alpha syncState expected drift, got synced", "summary.total expected 3, got 2"] }, problems: [] }] }; const results = [shouldRebuildSkillStore({ lanes: [{ id: "skill_ops", evidence: { registryState: "current", dashboardState: "failed", syncDrift: 0 }, problems: [{ message: "summary.total expected 3, got 2" }] }] }), shouldRebuildSkillStore(drift), shouldRebuildSkillStore({ lanes: [{ id: "skill_ops", evidence: { registryState: "current", dashboardState: "passed", syncDrift: 0 }, problems: [{ message: "missing evals" }] }] }), shouldSyncSkillStore(drift, true), shouldSyncSkillStore(drift, false), shouldRebuildSkillStore(mixed)]; console.log(JSON.stringify(results));`,
+    `import { shouldRebuildSkillStore, shouldSyncSkillStore } from ${JSON.stringify(pathToFileURL(selfCheckPolicy).href)}; const drift = { lanes: [{ id: "skill_ops", evidence: { registryState: "current", dashboardState: "failed", syncDrift: 1, dashboardErrors: ["alpha syncState expected drift, got synced"] }, problems: [{ message: "skill sync drift" }] }] }; const mixed = { lanes: [{ id: "skill_ops", evidence: { registryState: "current", dashboardState: "failed", syncDrift: 1, dashboardErrors: ["alpha syncState expected drift, got synced", "summary.total expected 3, got 2"] }, problems: [] }] }; const results = [shouldRebuildSkillStore({ lanes: [{ id: "skill_ops", evidence: { registryState: "current", dashboardState: "failed", syncDrift: 0 }, problems: [{ message: "summary.total expected 3, got 2" }] }] }), shouldRebuildSkillStore(drift), shouldRebuildSkillStore({ lanes: [{ id: "skill_ops", evidence: { registryState: "current", dashboardState: "passed", syncDrift: 0 }, problems: [{ message: "missing evals" }] }] }), shouldSyncSkillStore(drift, true), shouldSyncSkillStore(drift, false), shouldRebuildSkillStore(mixed), shouldRebuildSkillStore({ lanes: [{ id: "skill_ops", evidence: { registryState: "current", dashboardState: "passed", discoveryState: "stale", syncDrift: 0 }, problems: [{ message: "Skill discovery summary is stale" }] }] })]; console.log(JSON.stringify(results));`,
   ], { encoding: "utf8" });
   const source = fs.readFileSync(dailySelfCheck, "utf8");
   const safeRepair = source.slice(source.indexOf("function runSafeRepairs"), source.indexOf("function unresolvedRepairTasks"));
 
   assert.equal(policy.status, 0);
-  assert.equal(policy.stdout.trim(), "[true,false,false,true,false,true]");
+  assert.equal(policy.stdout.trim(), "[true,false,false,true,false,true,true]");
   assert.match(safeRepair, /shouldRebuildSkillStore\(report\)/u);
   assert.match(safeRepair, /shouldSyncSkillStore\(report, allowSkillStoreSync\)/u);
+});
+
+test("daily supervision exposes effective Skill discovery evidence through the existing Skill Ops lane", () => {
+  const source = fs.readFileSync(dailySupervision, "utf8");
+  const lane = source.slice(source.indexOf("function buildSkillOpsLane"), source.indexOf("function aggregateStatus"));
+
+  assert.match(lane, /check-skill-ops\.mjs/u);
+  assert.match(lane, /discoveredSkills/u);
+  assert.match(lane, /enabledSkills/u);
+  assert.match(lane, /disabledSkills/u);
+  assert.match(lane, /invalidSkillManifests/u);
+  assert.match(lane, /enabledDuplicateSkillNames/u);
 });
 
 test("Community Intelligence publication serializes runs that can write the same daily branch", () => {
@@ -154,6 +273,56 @@ test("dashboard contract rejects a summary that does not match its skills", () =
 
   assert.equal(result.status, 1);
   assert.match(result.stderr, /summary\.total/u);
+});
+
+test("dashboard contract rejects an inconsistent effective discovery summary", () => {
+  const fixture = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-skill-dashboard-discovery-"));
+  const dashboard = path.join(fixture, "dashboard.js");
+  const projectSkills = path.join(fixture, "project-skills");
+  const store = path.join(fixture, "store");
+  const versionFile = path.join(fixture, "version.json");
+  fs.mkdirSync(projectSkills, { recursive: true });
+  fs.mkdirSync(store, { recursive: true });
+  fs.writeFileSync(versionFile, JSON.stringify({ version: "1.0.0" }), "utf8");
+  fs.writeFileSync(dashboard, `window.WaveSightLocalSkillStore = ${JSON.stringify({
+    meta: {
+      version: { version: "1.0.0" },
+      summary: {
+        total: 0,
+        guanlan: 0,
+        current: 0,
+        laneOwners: 0,
+        needsAction: 0,
+        syncIssues: 0,
+        dormant: 0,
+        retired: 0,
+        cleanupQueue: 0,
+        cleanupActions: {},
+        evalCoverage: 0,
+        exampleCoverage: 0,
+        discovery: {
+          discovered: 10,
+          configuredDisabled: 4,
+          enabled: 5,
+          invalidManifests: 0,
+          enabledDuplicateNames: 0,
+        },
+      },
+    },
+    cleanupQueue: [],
+    skills: [],
+  })};\n`, "utf8");
+
+  const result = spawnSync(process.execPath, [
+    dashboardGate,
+    `--dashboard=${dashboard}`,
+    `--project-skill-dir=${projectSkills}`,
+    `--store-dir=${store}`,
+    `--version-file=${versionFile}`,
+  ], { encoding: "utf8" });
+
+  assert.equal(result.status, 1);
+  assert.match(result.stderr, /discovered count must equal enabled plus configuredDisabled/u);
 });
 
 test("dashboard contract rejects a version that differs from the governed source", () => {
