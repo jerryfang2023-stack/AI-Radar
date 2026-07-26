@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-07-25
+last_updated: 2026-07-26
 use_when:
   - task startup
   - page change
@@ -22,7 +22,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | WaveSight Entity History |
 | Version layer | Minor |
 | Release date | 2026-07-17 |
-| Last modified at | 2026-07-25T20:36:03+08:00 |
+| Last modified at | 2026-07-26T15:32:50+08:00 |
 | Product version | V4.2 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.2.0-entity-history |
@@ -36,6 +36,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Reports Center column version | REPORTS-V1.0.0-periodic-report-center |
 | Opportunity Map column version | OMAP-V1.1.0-direction-cards |
 | Trend Radar column version | TRADAR-V1.0.0-factual-change-explorer |
+| Funding Insights column version | FUNDING-INSIGHT-V1.0-auto-published-research |
 | Data Center Raw contract | RAW-V3.0 |
 | Canonical event contract | EVENT-V1.1 |
 | Entity history contract | ENTITY-V1.0 |
@@ -56,8 +57,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Operations backend version | OPS-V1.2.3-content-factory-cleanout |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.6.5 Governance audit alignment |
-| Git tag | `v4.2.5-governance-audit` |
-| Current entries | Data Center / Trend Radar / Industry Reports / Opportunity Map; V3 column URLs redirect into V4; Dashboard retained as backend |
+| Git tag | `v4.2.6-funding-insights` |
+| Current entries | Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
 
@@ -87,6 +88,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Reports Center is versioned independently as `REPORTS-V1.0.0-periodic-report-center`. It contains Monthly / Weekly reports and archives; `.github/workflows/periodic-reports-pr.yml` invokes DeepSeek for source-ID-cited Markdown only, `assert-periodic-report-content.mjs` gates the content, and `render-periodic-report-pages.mjs` is the sole HTML/navigation/version writer under the monthly and weekly page-generator Skills.
 - Opportunity Map is versioned independently as `OMAP-V1.1.0-direction-cards`. It reads `industry-reports-frontstage.json`, renders Entry Point Map and Product Pain Map from source-backed `opportunity_signals`, and adds a small Direction Card layer. DeepSeek V4 Pro writes titles and editorial content from a bounded accepted-Card manifest; generated candidates stay review-only until evidence, unsupported-number, judgment, counter-signal, and human-review gates pass. Direction Cards never enter V4 canonical data and are not automated recommendations.
 - Trend Radar is versioned independently as `TRADAR-V1.0.0-factual-change-explorer`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
+- Funding Insights is versioned independently as `FUNDING-INSIGHT-V1.0-auto-published-research`. Verified funding events trigger secondary source capture and DeepSeek V4 Pro application research. Every published investor is explicitly named and exact-quote-backed; missing investors or evidence block that card. Automatic publication does not mutate canonical entities or relationships, and exact matches link cards to stable entity profiles, relationship views, funding history, competitors, customers, and reviewed Direction Cards.
 - Skill Store `v1.6.5` aligns the formal project Skill source, external mirror, generated dashboard, ledger, and deploy-time read-only governance checks. It does not change any factual data contract or public column boundary.
 - `guanlan-code-rule-auditor` v1.0.2 requires version audits to compare every active version surface and preserves pre-repair drift evidence before synchronization.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
@@ -103,6 +105,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 |---|---|---|
 | Data Center | `01-SiteV2/site/data-center.html` | Unified V4 entry for Commercial Events, FDE, AI Hardware, Community Intelligence, First-Line Viewpoints, Industry Dossiers, and the entity-centered one-hop Relationship Map |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` | Independent V4 Application Center entry for daily, weekly, and monthly evidence-backed factual change exploration |
+| Funding Insights | `01-SiteV2/site/funding-insights.html` | Independent V4 Application Center entry for auto-published, evidence-bounded funding research with explicit investors and company/product/customer/competition/entity links |
 | Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 sidebar application entry containing latest Monthly / Weekly reports and report archives |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent V4 sidebar application entry containing source-backed Entry Point Map, Product Pain Map, human-reviewed Direction Cards, and click-to-open evidence modals |
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and timelines in the V4 shell |
@@ -178,6 +181,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.2.6-funding-insights` | Funding Insights / shared V4 Application Center navigation / entity and Direction Card cross-links | 2026-07-26 | 2026-07-26T15:32:50+08:00 | FUNDING-INSIGHT-V1.0-auto-published-research / SITE-V4.2.0-entity-history | unnamed investors; model-only facts without captured exact quotes; search snippets as evidence; cards failing the deterministic publication gate; automatic mutation of canonical entities or relationships; human-review placeholders; Funding Insights buried inside Opportunity Map | funding schema + explicit-investor and exact-quote gates + generation/projection tests + desktop/mobile dialog smoke + GitHub Pages live verification |
 | `v4.2.5-governance-audit` | Current V4 version surfaces / Skill Store / daily compatibility supervision / Pages release gate | 2026-07-25 | 2026-07-25T20:36:03+08:00 | SITE-V4.2.0-entity-history / Skill Store v1.6.5 / guanlan-code-rule-auditor v1.0.2 | project Skills, external mirrors, dashboard, ledger, or release gate drifting; retired daily Trend Candidate or Intelligence Map ownership language returning to active supervision | version consistency + current-rule hygiene + Skill validation/sync/dashboard + core V4 and frontstage tests + GitHub Pages deploy |
 | `v4.2.4-direction-cards` | Opportunity Map / Direction Cards / opportunity projection | 2026-07-25 | 2026-07-25T15:37:44+08:00 | OMAP-V1.1.0-direction-cards / DIRECTION-CARD-V1.0-reviewed-hypothesis | Direction Cards generated from tag frequency alone; recommendation scores; unsupported market size or revenue claims; Direction Cards entering Data Center V4 canonical data; map toggles or persistent evidence panels returning | opportunity projection tests + frontstage regression + typography QC + desktop/mobile browser verification + GitHub Pages live verification |
 | `v4.2.3-relationship-map` | Data Center Industry Dossiers / entity-centered Relationship Map / relationship evidence detail service | 2026-07-25 | 2026-07-25T13:44:11+08:00 | SITE-V4.2.0-entity-history / ENTITY-V1.0 / RELATION-V2.1 | Entity and relationship database labels returning to the public navigation; unbounded global graph; Tag-co-occurrence, viewpoint, inferred, scored, or recommendation edges; relationship detail without accepted event, exact Claim, and source references | Data Center core tests + entity-history integrity gate + desktop/mobile browser verification + GitHub Pages live verification |

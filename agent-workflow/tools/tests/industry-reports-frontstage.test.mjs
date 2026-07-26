@@ -113,6 +113,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
     assert.match(html, /assets\/data-center-v4\.css/u);
     assert.match(html, /class="dc-sidebar"/u);
     assert.match(html, /href="intelligence-map\.html" aria-current="page">行业报告/u);
+    assert.match(html, /href="funding-insights\.html">融资透视/u);
     assert.match(html, /href="opportunity-map\.html">机会地图/u);
     assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar|v3-data-observation\.html|follow-builders\.html|community-intelligence\.html/u);
   }

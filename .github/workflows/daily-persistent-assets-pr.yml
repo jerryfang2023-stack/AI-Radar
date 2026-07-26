@@ -95,6 +95,7 @@ jobs:
             if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ] && [ -f "$data_center_manifest" ] && [ "$signal_card_count" -ge 1 ]; then
               if node agent-workflow/tools/assert-business-signals-frontstage.mjs --date="${RUN_DATE}" >/tmp/business-frontstage-health.log 2>&1 \
                 && node agent-workflow/tools/assert-data-center-v4.mjs --date="${RUN_DATE}" >/tmp/data-center-v4-health.log 2>&1 \
+                && node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}" >/tmp/funding-insights-health.log 2>&1 \
                 && node agent-workflow/tools/assert-daily-production-chain.mjs --date="${RUN_DATE}" --stage=pre-commit --block-stale=true >/tmp/business-chain-health.log 2>&1; then
                 skip=true
                 reason="same-date V4 data-center and V3 compatibility assets exist on main and current gates pass"
@@ -355,6 +356,21 @@ jobs:
           node agent-workflow/tools/assert-trend-radar-v1.mjs
           npm run test:trend-radar
 
+      - name: Research, gate, and publish Funding Insights
+        id: funding-insights
+        if: steps.data-center-v4-materialize.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          node agent-workflow/tools/generate-funding-insights-deepseek.mjs \
+            --date="${RUN_DATE}" \
+            --write=true \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-funding-insights.log"
+          node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}"
+          node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          npm run test:funding-insights
+
       - name: Regenerate business-signal Card assets
         id: assets
         if: steps.data-center-v4-materialize.outcome == 'success'
@@ -483,6 +499,7 @@ jobs:
           - data_center_v4_gate: ${{ steps.data-center-v4-gate.outcome }}
           - data_center_v4_materialize: ${{ steps.data-center-v4-materialize.outcome }}
           - trend_radar_projection: ${{ steps.trend-radar-projection.outcome }}
+          - funding_insights: ${{ steps.funding-insights.outcome }}
           - asset_generation: ${{ steps.assets.outcome }}
           - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
           - card_editorial_gate: ${{ steps.card-editorial-gate.outcome }}
@@ -500,6 +517,8 @@ jobs:
           | Raw originals | $(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}") |
           | Pool candidates | $(state_for "$pool_file") |
           | Data Center V4 bundle | $(state_for "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}/manifest.json") |
+          | Funding Insights application bundle | $(state_for "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json") |
+          | Funding Insights frontstage | $(state_for "01-SiteV2/site/data/funding-insights-v1.json") |
           | Business signals | $(state_for "$signal_file") |
           | Signal card files | ${signal_card_count} |
           | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
@@ -529,6 +548,7 @@ jobs:
               "data_center_v4_gate": "${{ steps.data-center-v4-gate.outcome }}",
               "data_center_v4_materialize": "${{ steps.data-center-v4-materialize.outcome }}",
               "trend_radar_projection": "${{ steps.trend-radar-projection.outcome }}",
+              "funding_insights": "${{ steps.funding-insights.outcome }}",
               "asset_generation": "${{ steps.assets.outcome }}",
               "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
               "card_editorial_gate": "${{ steps.card-editorial-gate.outcome }}",
@@ -544,6 +564,7 @@ jobs:
               "pool_candidates": "$(state_for "$pool_file")",
               "data_center_v4_bundle": "$(state_for "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}/manifest.json")",
               "trend_radar_frontstage": "$(state_for "01-SiteV2/site/data/trend-radar-v1.json")",
+              "funding_insights_frontstage": "$(state_for "01-SiteV2/site/data/funding-insights-v1.json")",
               "business_signals": "$(state_for "$signal_file")",
               "signal_card_files": ${signal_card_count},
               "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")",
@@ -598,6 +619,8 @@ jobs:
             01-SiteV2/site/data/data-center-v4-frontstage.json
             01-SiteV2/site/data/data-center-v4/**
             01-SiteV2/site/data/trend-radar-v1.json
+            01-SiteV2/content/12-applications/funding-insights/${{ steps.run-date.outputs.date }}.json
+            01-SiteV2/site/data/funding-insights-v1.json
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
             01-SiteV2/site/data/v3-data-observation-desk.json
@@ -658,6 +681,11 @@ jobs:
 
           if [ "${{ steps.trend-radar-projection.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/site/data/trend-radar-v1.json"
+          fi
+
+          if [ "${{ steps.funding-insights.outcome }}" = "success" ]; then
+            stage_if_exists "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json"
+            stage_if_exists "01-SiteV2/site/data/funding-insights-v1.json"
           fi
 
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.assets.outcome }}" = "success" ]; then

@@ -371,6 +371,8 @@ body.weekly-report-page {
   color: var(--weekly-muted);
   font-size: var(--gl-type-detail-body-size, 16px);
   line-height: var(--gl-type-detail-body-line, 30px);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .weekly-report-section p {

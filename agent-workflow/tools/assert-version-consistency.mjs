@@ -60,7 +60,7 @@ const ledgerChecks = [
   ["Skill governance editor", "guanlan-skill-editor v1.0.2"],
   ["Code and rule auditor", "guanlan-code-rule-auditor v1.0.2"],
   ["Skill Store version", expected.skillStore],
-  ["Git tag", "v4.2.5-governance-audit"],
+  ["Git tag", "v4.2.6-funding-insights"],
 ];
 for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
