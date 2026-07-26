@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "hardware": [
     {
@@ -104,7 +104,7 @@
       "eventType": "hardware_deployment",
       "eventTypeLabel": "硬件部署",
       "computeLayer": "未披露",
-      "supplier": "未披露",
+      "supplier": "AMD",
       "customer": "未披露",
       "processNode": "未披露",
       "capacity": "未披露",
@@ -118,8 +118,7 @@
       "sourceName": "amd.com",
       "sourceDate": "2026-07-23",
       "entityIds": [
-        "EN-240389f4b730bad4",
-        "EN-b0532e1af75cc4ab"
+        "EN-240389f4b730bad4"
       ]
     },
     {
@@ -467,6 +466,40 @@
       ]
     },
     {
+      "id": "HW-18e9985f2e93555c",
+      "eventId": "EV-f31feb5ed41be8f2",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-21",
+      "title": "微软借助AMD打造大规模AI CPU与GPU集群",
+      "hardwareType": "gpu",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "computeLayer": "data_center",
+      "supplier": "Microsoft",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://nextplatform.com/cloud/2026/07/20/microsoft-taps-amd-for-at-scale-ai-cpu-and-gpu-clusters/5275161",
+      "sourceName": "nextplatform.com",
+      "sourceDate": "2026-07-21",
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ]
+    },
+    {
       "id": "HW-fda4fe26e7e80468",
       "eventId": "EV-7bc2e6744a92c81f",
       "dataDate": "2026-07-21",
@@ -476,8 +509,8 @@
       "eventType": "hardware_product",
       "eventTypeLabel": "硬件产品",
       "computeLayer": "未披露",
-      "supplier": "未披露",
-      "customer": "未披露",
+      "supplier": "Together AI",
+      "customer": "Y Combinator",
       "processNode": "未披露",
       "capacity": "未披露",
       "capacityUnit": "",

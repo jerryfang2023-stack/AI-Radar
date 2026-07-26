@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-7c4cee6f28a9c6cc",
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-419f38e27e81e1f1"
+    ],
     "firstSeen": "2026-05-05",
     "lastSeen": "2026-06-15",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-033196ca9d691fcd"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -60,8 +64,49 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-419f38e27e81e1f1",
+      "name": "Studio",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-510fd43cf3ecc17d"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-7c4cee6f28a9c6cc"
+      ],
+      "firstSeen": "2026-05-05",
+      "lastSeen": "2026-06-15"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-033196ca9d691fcd",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7c4cee6f28a9c6cc",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-419f38e27e81e1f1",
+      "object_type": "entity",
+      "event_id": "EV-510fd43cf3ecc17d",
+      "claim_refs": [
+        "CL-f47ca11b3cce6401"
+      ],
+      "source_refs": [
+        "SA-fd3e806e9480be49"
+      ],
+      "data_date": "2026-06-15",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

@@ -4,15 +4,15 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17,
+    "eventCount": 1582,
+    "quarantinedEventCount": 14,
     "entityHistory": {
       "entityVersion": "ENTITY-V1.0",
       "relationshipVersion": "RELATION-V2.1",
-      "generatedAt": "2026-07-26T02:29:47.988Z",
+      "generatedAt": "2026-07-26T16:24:00.797Z",
       "coverage": {
         "startDate": "2017-09-07",
         "endDate": "2026-07-26",
@@ -24,19 +24,19 @@
         }
       },
       "counts": {
-        "entities": 1337,
+        "entities": 1295,
         "organizations": 894,
-        "products": 413,
-        "people": 30,
+        "products": 370,
+        "people": 31,
         "taxonomyNodes": 43,
-        "relationships": 341
+        "relationships": 344
       },
       "review": {
-        "reviewed": 894,
-        "confirmed": 434,
-        "corrected": 161,
-        "merged": 92,
-        "quarantined": 207
+        "reviewed": 910,
+        "confirmed": 387,
+        "corrected": 174,
+        "merged": 107,
+        "quarantined": 242
       }
     }
   },
@@ -98,6 +98,7 @@
         "EV-989631c550d89726",
         "EV-94ad4a217508e6e0",
         "EV-b43f22d8bc7fec3f",
+        "EV-b888d3eb5f192649",
         "EV-f388f7ae2debeae8",
         "EV-d08935b06ed9e7bb",
         "EV-215f938a46d0b126",
@@ -233,6 +234,28 @@
       "productIds": []
     },
     {
+      "id": "EN-721eb3fd31f8e1f6",
+      "name": "壁仞科技",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-f5483fed83363fa1"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20",
+      "relatedEntityIds": [
+        "EN-581b48f2032c9621"
+      ],
+      "relationIds": [
+        "REL2-216bff5a55bd1890"
+      ],
+      "type": "公司/机构",
+      "productIds": [
+        "EN-581b48f2032c9621"
+      ]
+    },
+    {
       "id": "EN-0a64d5a41e885455",
       "name": "此芯",
       "sourceType": "organization_candidate",
@@ -362,16 +385,19 @@
       "lastSeen": "2026-07-26",
       "relatedEntityIds": [
         "EN-0c2f714483c404ad",
-        "EN-eec6044eb8e4941a"
+        "EN-eec6044eb8e4941a",
+        "EN-24381ecb01753c1b"
       ],
       "relationIds": [
         "REL2-1c93528fe8275df1",
-        "REL2-f54ed840f69a1dcb"
+        "REL2-f54ed840f69a1dcb",
+        "REL2-b34511f516d08ba3"
       ],
       "type": "公司/机构",
       "productIds": [
         "EN-0c2f714483c404ad",
-        "EN-eec6044eb8e4941a"
+        "EN-eec6044eb8e4941a",
+        "EN-24381ecb01753c1b"
       ]
     },
     {
@@ -487,6 +513,30 @@
       ]
     },
     {
+      "id": "EN-d30e5ffc0ba9150b",
+      "name": "蚂蚁集团",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [
+        "推理能力"
+      ],
+      "eventIds": [
+        "EV-6f1729f6968b72c9"
+      ],
+      "firstSeen": "2026-07-24",
+      "lastSeen": "2026-07-25",
+      "relatedEntityIds": [
+        "EN-8989aada6eb4a4c3"
+      ],
+      "relationIds": [
+        "REL2-e1d65aab90a4ab28"
+      ],
+      "type": "公司/机构",
+      "productIds": [
+        "EN-8989aada6eb4a4c3"
+      ]
+    },
+    {
       "id": "EN-754c490bd199c21a",
       "name": "蚂蚁灵波",
       "sourceType": "organization_candidate",
@@ -509,6 +559,33 @@
       "type": "公司/机构",
       "productIds": [
         "EN-7a3ecc54829211df"
+      ]
+    },
+    {
+      "id": "EN-2abf8289b2f2113f",
+      "name": "蚂蚁数科",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [
+        "智能体",
+        "制造业",
+        "数据分析",
+        "工具调用"
+      ],
+      "eventIds": [
+        "EV-19bcfc6d7c1612cb"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-19",
+      "relatedEntityIds": [
+        "EN-91901356a63794df"
+      ],
+      "relationIds": [
+        "REL2-efebd768694539ca"
+      ],
+      "type": "公司/机构",
+      "productIds": [
+        "EN-91901356a63794df"
       ]
     },
     {
@@ -582,6 +659,33 @@
       "productIds": [
         "EN-c27c48199bb1e14b"
       ]
+    },
+    {
+      "id": "EN-6f21a653c48f4f19",
+      "name": "努比亚",
+      "sourceType": "organization_candidate",
+      "aliases": [
+        "Nubia"
+      ],
+      "tags": [
+        "智能体",
+        "机器人与物理自动化",
+        "零售与电商",
+        "端侧"
+      ],
+      "eventIds": [
+        "EV-434dcf1813a84ead",
+        "EV-3b1d1dd87442e7f1",
+        "EV-938e395d50c33f40",
+        "EV-8a9b12665a3e40a0",
+        "EV-7256017056b81bbe"
+      ],
+      "firstSeen": "2026-07-12",
+      "lastSeen": "2026-07-20",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "公司/机构",
+      "productIds": []
     },
     {
       "id": "EN-2ab6d53e717a0e0d",
@@ -780,18 +884,21 @@
         "EN-a1adb91065c5a347",
         "EN-f0da91960830b394",
         "EN-ea3bd73e2b506e00",
+        "EN-be1a3c9420d88ea5",
         "EN-30a63b26b06e096e"
       ],
       "relationIds": [
         "REL2-40a53a0ef359ae41",
         "REL2-5f0d9f90c84e1075",
         "REL2-852252ecbc817b4a",
+        "REL2-2c87b80484b30f13",
         "REL2-aff21a98fc290524"
       ],
       "type": "公司/机构",
       "productIds": [
         "EN-a1adb91065c5a347",
         "EN-f0da91960830b394",
+        "EN-be1a3c9420d88ea5",
         "EN-30a63b26b06e096e"
       ]
     },
@@ -1042,6 +1149,30 @@
       ]
     },
     {
+      "id": "EN-4e721fae5963494d",
+      "name": "招商银行",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [
+        "金融服务"
+      ],
+      "eventIds": [
+        "EV-5caf7f83664b1a2c"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-06-16",
+      "relatedEntityIds": [
+        "EN-a4eee620f5a081bd"
+      ],
+      "relationIds": [
+        "REL2-81f239c52fa7d8bc"
+      ],
+      "type": "公司/机构",
+      "productIds": [
+        "EN-a4eee620f5a081bd"
+      ]
+    },
+    {
       "id": "EN-1d79127e9d90e89b",
       "name": "智谱AI",
       "sourceType": "organization_candidate",
@@ -1089,6 +1220,7 @@
       "eventIds": [
         "EV-640c5ea9f4fa2780",
         "EV-bbab0dff2f55a4f6",
+        "EV-e7e2dfbc41a639d2",
         "EV-eb2b4ee2c8cb0daa",
         "EV-01df8e489a34893b",
         "EV-2c87c8ea47cbd1b6",
@@ -1096,7 +1228,7 @@
         "EV-b95539d17772a4ce"
       ],
       "firstSeen": "2026-05-06",
-      "lastSeen": "2026-07-15",
+      "lastSeen": "2026-07-21",
       "relatedEntityIds": [
         "EN-7d3194f79e645c42"
       ],
@@ -1331,6 +1463,7 @@
       ],
       "relationIds": [
         "REL2-94778ccfca07e1dd",
+        "REL2-0f7e1be3ae6f4e69",
         "REL2-22f155352c15dcea",
         "REL2-25f3f53fb03f6d90",
         "REL2-9b018eafb983e9fe",
@@ -1340,6 +1473,7 @@
       ],
       "type": "公司/机构",
       "productIds": [
+        "EN-45c52af0feb0f285",
         "EN-45c52af0feb0f285",
         "EN-45c52af0feb0f285",
         "EN-dc9993227a515201",
@@ -1388,6 +1522,7 @@
         "EV-b150af93042566a6",
         "EV-0e3f748f87f5892a",
         "EV-8a2d8ebbd700c787",
+        "EV-e7e2dfbc41a639d2",
         "EV-2c16aa6254de4496",
         "EV-47a16db069ed320e",
         "EV-fe601e081c090971",
@@ -1432,8 +1567,7 @@
         "EV-071c72225b8aaf80",
         "EV-8121a1ecdf168d8a",
         "EV-cd067fa6f39fe828",
-        "EV-684f286ef629ed0d",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-b20bf10af759bd43",
         "EV-83a8ac8a2554b60c",
         "EV-debecca007e547d2",
@@ -1621,8 +1755,8 @@
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
         "EN-e65e0f2695fa259d",
-        "EN-34ec8666daf7b665",
         "EN-e4ffb7bd879b89da",
+        "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
         "EN-b8c236d640d6a5fb",
         "EN-d8494bb34d6ddc43",
@@ -1661,9 +1795,10 @@
         "REL2-8f5f9424d107b468",
         "REL2-a3a488f8efd223ce",
         "REL2-0d6cdbc1686a734f",
-        "REL2-57cb7e90eb817c55",
+        "REL2-107bb924258efdcc",
         "REL2-2f06b45ec0e97621",
         "REL2-fd71230f58245d0a",
+        "REL2-aa4d8b5683268ed3",
         "REL2-013b22e68558afbc",
         "REL2-02309f1dd31d167e",
         "REL2-48cdf6bd8d397fed",
@@ -1710,8 +1845,9 @@
         "EN-e65e0f2695fa259d",
         "EN-729324072d368379",
         "EN-9f15bb7e29e191eb",
-        "EN-34ec8666daf7b665",
+        "EN-9f15bb7e29e191eb",
         "EN-cb4754c48f8023d0",
+        "EN-c8185a1a8a6595ad",
         "EN-3a13916345b60fad",
         "EN-3a13916345b60fad",
         "EN-3a13916345b60fad",
@@ -2202,7 +2338,6 @@
       ],
       "eventIds": [
         "EV-136b2edc9b9f3be8",
-        "EV-439ba8d5f2f575c4",
         "EV-2d6d2dc0ead4be10",
         "EV-6aabfaa0c7c7f838",
         "EV-ad111bcc8e2bd103",
@@ -2284,6 +2419,53 @@
       ],
       "firstSeen": "2026-07-16",
       "lastSeen": "2026-07-18",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "公司/机构",
+      "productIds": []
+    },
+    {
+      "id": "EN-e73b79a0b10f8cdb",
+      "name": "Cisco",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [
+        "网络安全"
+      ],
+      "eventIds": [
+        "EV-ea6abb5378846a71"
+      ],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-23",
+      "relatedEntityIds": [
+        "EN-02be787a1aacea06",
+        "EN-2ca3f7d58fdda0f5"
+      ],
+      "relationIds": [
+        "REL2-987a83667061cf46",
+        "REL2-a376a7931b88e456"
+      ],
+      "type": "公司/机构",
+      "productIds": [
+        "EN-02be787a1aacea06",
+        "EN-2ca3f7d58fdda0f5"
+      ]
+    },
+    {
+      "id": "EN-72e8088a05b38ae3",
+      "name": "Cohere",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [
+        "智能体",
+        "混合专家模型"
+      ],
+      "eventIds": [
+        "EV-7fd3102ac547cbda",
+        "EV-964971e83a649d4d"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-12",
       "relatedEntityIds": [],
       "relationIds": [],
       "type": "公司/机构",
@@ -2557,6 +2739,28 @@
       "productIds": []
     },
     {
+      "id": "EN-0decbc3b45f73b2b",
+      "name": "Entire",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [
+        "科技与软件"
+      ],
+      "eventIds": [
+        "EV-618e5729145025e4"
+      ],
+      "firstSeen": "2026-02-10",
+      "lastSeen": "2026-06-06",
+      "relatedEntityIds": [
+        "EN-45cbca5f78f1ef44"
+      ],
+      "relationIds": [
+        "REL2-bb9d1a0fc52f9ceb"
+      ],
+      "type": "公司/机构",
+      "productIds": []
+    },
+    {
       "id": "EN-3d59f7548e1af215",
       "name": "Facebook",
       "sourceType": "organization_candidate",
@@ -2747,7 +2951,8 @@
         "EV-cd067fa6f39fe828",
         "EV-dc3a5509a690a6b0",
         "EV-f3cc0845ce442e6b",
-        "EV-bee410f8134cba5a",
+        "EV-636c0bb7661201cc",
+        "EV-fe4eeb733d1682ed",
         "EV-a255cfc0dab44564",
         "EV-98a80b75b27d9f3b",
         "EV-29e069ac093f0e34",
@@ -2812,7 +3017,6 @@
         "EV-22b8d155ce027905",
         "EV-3ef3e18df61a00d8",
         "EV-4bb5b24400e49ea4",
-        "EV-568d2aeab5234e48",
         "EV-0ad758b04b9b5313",
         "EV-c08837795f9e16d2",
         "EV-4a3cb762183581cd",
@@ -2848,14 +3052,12 @@
       "firstSeen": "2025-10-09",
       "lastSeen": "2026-07-26",
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422",
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-6f216f2ea5b7a13e",
+        "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
         "EN-40f98159922ab514",
-        "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
@@ -2864,21 +3066,17 @@
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
-        "EN-bdfecbcd7dbf76d2",
-        "EN-2aae0de3f5530f08"
+        "EN-bdfecbcd7dbf76d2"
       ],
       "relationIds": [
-        "REL2-deafb88879becf80",
         "REL2-a5a15f09d4da8135",
         "REL2-066894debed9bb20",
-        "REL2-dccb634be274d411",
         "REL2-de5487ce28a724fb",
         "REL2-fcedf12f07ebc6c2",
-        "REL2-84466085129acbe5",
+        "REL2-5d24ca1eeaa32514",
         "REL2-70d05a81606b3589",
         "REL2-d68bd82241b5ba02",
         "REL2-6e0bd52053c02359",
-        "REL2-f92ce4e61c880fbe",
         "REL2-c2d351d111dce63d",
         "REL2-1967b453be7e7724",
         "REL2-65389a75e3085862",
@@ -2887,25 +3085,21 @@
         "REL2-eba841d5627207a4",
         "REL2-80e7d430efc92a5c",
         "REL2-3831db0cf6e33a54",
-        "REL2-eab334edbd3e9d50",
         "REL2-d205049958061bb1",
         "REL2-d38107a2fe8bacd9",
         "REL2-572d299c04663eb3",
         "REL2-653e76cf1e48b6fd",
-        "REL2-0637ce4d20d93f49",
-        "REL2-ff60075c4628759d"
+        "REL2-0637ce4d20d93f49"
       ],
       "type": "公司/机构",
       "productIds": [
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-6f216f2ea5b7a13e",
         "EN-18f0900d6c487f59",
         "EN-18f0900d6c487f59",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
         "EN-40f98159922ab514",
-        "EN-8d323d8bba783aa3",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
@@ -2914,14 +3108,54 @@
         "EN-f2c032b19edb7900",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
-        "EN-8d323d8bba783aa3",
         "EN-d56aa2f9908f566a",
         "EN-d56aa2f9908f566a",
         "EN-4baef0e41cbd7ae2",
         "EN-4baef0e41cbd7ae2",
-        "EN-bdfecbcd7dbf76d2",
-        "EN-2aae0de3f5530f08"
+        "EN-bdfecbcd7dbf76d2"
       ]
+    },
+    {
+      "id": "EN-8d323d8bba783aa3",
+      "name": "Google Cloud",
+      "sourceType": "organization_candidate",
+      "aliases": [
+        "Cloud"
+      ],
+      "tags": [
+        "智能体",
+        "制造业",
+        "零售与电商"
+      ],
+      "eventIds": [
+        "EV-ff1f6119de13fa19",
+        "EV-b4b5d141dac164c2",
+        "EV-6e4dd5111dfaae9c",
+        "EV-36a9e4e908249381",
+        "EV-d12aa40eff40c97e",
+        "EV-9254af7aaedaafbe",
+        "EV-96c8ce4ee89adb84",
+        "EV-b8bba030747fd3b6",
+        "EV-8a26b85b4f432525",
+        "EV-a886a800f06ab9d6",
+        "EV-009105cbcf82a638",
+        "EV-51dfd0d541380500"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-07-26",
+      "relatedEntityIds": [
+        "EN-96eebba49dbbf422",
+        "EN-bbdefa2950f49882",
+        "EN-8d4321d936320802"
+      ],
+      "relationIds": [
+        "REL2-ab4c37dd40240134",
+        "REL2-5d24ca1eeaa32514",
+        "REL2-ede305f9f251f48d",
+        "REL2-434765e50ff89fea"
+      ],
+      "type": "公司/机构",
+      "productIds": []
     },
     {
       "id": "EN-2b6e51bec93e86c1",
@@ -3022,16 +3256,13 @@
       "firstSeen": "2026-07-04",
       "lastSeen": "2026-07-26",
       "relatedEntityIds": [
-        "EN-098a7df7f42ccf8b",
         "EN-a9f74d68b2b7c964"
       ],
       "relationIds": [
-        "REL2-1eef5fec24c6d66d",
         "REL2-d65d452ea0ec06b8"
       ],
       "type": "公司/机构",
       "productIds": [
-        "EN-098a7df7f42ccf8b",
         "EN-a9f74d68b2b7c964"
       ]
     },
@@ -3211,7 +3442,6 @@
         "EV-ccbf97fdf4dc11d0",
         "EV-2069f6a931b8c9d6",
         "EV-02882e6f5e1902c6",
-        "EV-e3792591090281c6",
         "EV-f6a72cddbda748b3",
         "EV-4eaf3aabecae6016",
         "EV-2dff32c1b6f813e4",
@@ -3230,7 +3460,6 @@
         "EV-81bd541510a530f0",
         "EV-2bb63a3015195f9b",
         "EV-4e7a32c9ee893918",
-        "EV-439ba8d5f2f575c4",
         "EV-d4e44892226be468",
         "EV-921c843ad32c993c",
         "EV-2bea8d8046a9b325",
@@ -3264,10 +3493,8 @@
         "EV-c5643983538c6513",
         "EV-b85139b8fba1a5c5",
         "EV-c4303801ea8c54dc",
-        "EV-0b7f11c0c18b8bf4",
         "EV-0b6cfbf67ba2da31",
         "EV-8b0f056571d68269",
-        "EV-30ba1a24f74ccc6d",
         "EV-4b545e310ded2baa",
         "EV-b4eb99a878be9bb2",
         "EV-cfb7c4b4b765f53b",
@@ -3292,7 +3519,6 @@
         "EV-8e01849c05b50355",
         "EV-4faa2bcf2e42e60c",
         "EV-45be473baf6dfa4c",
-        "EV-9852a10590030da9",
         "EV-1ba939d8baf43207",
         "EV-941ba9ebdc43f20c",
         "EV-92d28aef0c4b0a8a",
@@ -3359,13 +3585,10 @@
       "lastSeen": "2026-07-26",
       "relatedEntityIds": [
         "EN-8d323d8bba783aa3",
-        "EN-bbdefa2950f49882",
         "EN-c70eca6b0f88f44d"
       ],
       "relationIds": [
         "REL2-ab4c37dd40240134",
-        "REL2-deafb88879becf80",
-        "REL2-84466085129acbe5",
         "REL2-ede305f9f251f48d",
         "REL2-99bd5a8f466f8f29"
       ],
@@ -3434,18 +3657,15 @@
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-07-17",
       "relatedEntityIds": [
-        "EN-d8fbfdb6a8143da8",
-        "EN-9d93b78264eb6acb"
+        "EN-d8fbfdb6a8143da8"
       ],
       "relationIds": [
         "REL2-2bf29f48932fee41",
-        "REL2-80071fad8ab7c49a",
         "REL2-c30eb43794c611de"
       ],
       "type": "公司/机构",
       "productIds": [
         "EN-d8fbfdb6a8143da8",
-        "EN-9d93b78264eb6acb",
         "EN-d8fbfdb6a8143da8"
       ]
     },
@@ -3670,7 +3890,6 @@
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
-        "EN-557203e8cc173124",
         "EN-e71558a14e7ed6ab"
       ],
       "relationIds": [
@@ -3682,8 +3901,6 @@
         "REL2-9065834fc8baa149",
         "REL2-21ba6859a5126bc7",
         "REL2-0e706b202f0da6cb",
-        "REL2-d39ae220d8211bae",
-        "REL2-4d57a9097008ed15",
         "REL2-c845513b806c827a",
         "REL2-46a3bba9339e6660"
       ],
@@ -3696,8 +3913,6 @@
         "EN-d85ad5e8ff8e2889",
         "EN-a2fa009495c3bb3a",
         "EN-2ba325ce6f8e3dc9",
-        "EN-557203e8cc173124",
-        "EN-557203e8cc173124",
         "EN-2ba325ce6f8e3dc9",
         "EN-e71558a14e7ed6ab"
       ]
@@ -3726,6 +3941,7 @@
         "EV-e09efcd49776cb95",
         "EV-883d3b5f6d30eb48",
         "EV-fa66f00e9d4b20c2",
+        "EV-f31feb5ed41be8f2",
         "EV-4fba2b2f1ac10a79",
         "EV-bcb74b02448b7d78",
         "EV-47a16db069ed320e",
@@ -3754,6 +3970,7 @@
         "EV-6c81f03e885f10af",
         "EV-e1e30a2a4a5232c6",
         "EV-cd067fa6f39fe828",
+        "EV-1e611bcabcb049e9",
         "EV-118317b7f92e5e16",
         "EV-c4723445b11bb275",
         "EV-7963d8c78531f12d",
@@ -4079,33 +4296,6 @@
       "productIds": []
     },
     {
-      "id": "EN-6f21a653c48f4f19",
-      "name": "Nubia",
-      "sourceType": "organization_candidate",
-      "aliases": [
-        "努比亚"
-      ],
-      "tags": [
-        "智能体",
-        "机器人与物理自动化",
-        "零售与电商",
-        "端侧"
-      ],
-      "eventIds": [
-        "EV-434dcf1813a84ead",
-        "EV-3b1d1dd87442e7f1",
-        "EV-938e395d50c33f40",
-        "EV-8a9b12665a3e40a0",
-        "EV-7256017056b81bbe"
-      ],
-      "firstSeen": "2026-07-12",
-      "lastSeen": "2026-07-20",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "type": "公司/机构",
-      "productIds": []
-    },
-    {
       "id": "EN-8d4321d936320802",
       "name": "NVIDIA",
       "sourceType": "organization_candidate",
@@ -4182,6 +4372,7 @@
         "EV-cb3a8846bc4f8aca",
         "EV-48977fd72d2fcfb8",
         "EV-a37b9d9fb85e460f",
+        "EV-65666f7be5ac5ca2",
         "EV-118317b7f92e5e16",
         "EV-950237c6b3eb6343",
         "EV-941ba9ebdc43f20c",
@@ -4380,6 +4571,7 @@
         "EV-d4c9326c53dd927a",
         "EV-c3f617e75d303f59",
         "EV-6fa2c58973ea61b4",
+        "EV-e7e2dfbc41a639d2",
         "EV-e15ae1112294d59e",
         "EV-36d484148fbd3424",
         "EV-47a16db069ed320e",
@@ -4423,7 +4615,7 @@
         "EV-7c836c34e7cf36ee",
         "EV-071c72225b8aaf80",
         "EV-ae1e2769aff82965",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-bc41a3060f11ca2d",
         "EV-83a8ac8a2554b60c",
         "EV-a68475d82ec939b5",
@@ -4528,6 +4720,7 @@
         "EV-773ffcc6e1df56fa",
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
+        "EV-00834dd71037c7cc",
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
@@ -4572,7 +4765,7 @@
         "EV-65a4b47d1cca0a7a",
         "EV-e8e47f4bb528e107"
       ],
-      "firstSeen": "2025-10-09",
+      "firstSeen": "2022-10-01",
       "lastSeen": "2026-07-26",
       "relatedEntityIds": [
         "EN-f65bb77682b83476",
@@ -4587,7 +4780,6 @@
         "EN-4d748ebd71af03a7",
         "EN-65ef4539bbcbe9fc",
         "EN-3673c8b4dba7409e",
-        "EN-b70e8201c9feb94a",
         "EN-373ac021a2c0bb2c",
         "EN-af53dbc3e443f7a9",
         "EN-3c534d54dae48cbb",
@@ -4620,7 +4812,6 @@
         "REL2-59679543b4dca9a2",
         "REL2-2cec5ab5fcf0fb92",
         "REL2-0b106eae73719732",
-        "REL2-223567d6ca7b1e88",
         "REL2-59ab2863fcb1e150",
         "REL2-b13a518b42e7b47e",
         "REL2-11dd120fdec0f81f",
@@ -4657,7 +4848,6 @@
         "EN-7839fb10a8f14c70",
         "EN-52fc33ae4d101a5d",
         "EN-3673c8b4dba7409e",
-        "EN-b70e8201c9feb94a",
         "EN-af53dbc3e443f7a9",
         "EN-52fc33ae4d101a5d",
         "EN-3c534d54dae48cbb",
@@ -4735,10 +4925,16 @@
       ],
       "firstSeen": "2026-06-08",
       "lastSeen": "2026-07-19",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-779965438dd9e7a7"
+      ],
+      "relationIds": [
+        "REL2-eaf27cde7b70ddb9"
+      ],
       "type": "公司/机构",
-      "productIds": []
+      "productIds": [
+        "EN-779965438dd9e7a7"
+      ]
     },
     {
       "id": "EN-8147e6fed86d42c1",
@@ -4967,68 +5163,6 @@
       "productIds": []
     },
     {
-      "id": "EN-b0532e1af75cc4ab",
-      "name": "Rime",
-      "sourceType": "organization_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体",
-        "制造业",
-        "软件开发",
-        "多模态",
-        "金融服务"
-      ],
-      "eventIds": [
-        "EV-ccbf97fdf4dc11d0",
-        "EV-64fb6d791e19d10a",
-        "EV-8cf189b07a257c1c",
-        "EV-463cb26b5e03c7f7",
-        "EV-f0fee44c1dfdcb09",
-        "EV-52bf48005db3461a",
-        "EV-a7e14985b924b464",
-        "EV-e7dcecaed5a0ee5b",
-        "EV-40d196865997025c",
-        "EV-736404028b8ad33e",
-        "EV-44a4e92c03a31ab1",
-        "EV-3b40ec144e5db22c",
-        "EV-c8928410f6c145eb",
-        "EV-67212040ee9cd7c8",
-        "EV-cfb7c4b4b765f53b",
-        "EV-ec711aed6721bb30",
-        "EV-d756f05478303505",
-        "EV-06b294f255c0087e",
-        "EV-dac8e2b1fb11403f",
-        "EV-06487af6e98ea491",
-        "EV-bb9ba11acf104db1",
-        "EV-bee410f8134cba5a",
-        "EV-e7b7df43970f7e2c",
-        "EV-025778b83c1b2ca9",
-        "EV-b84035029a63e52e",
-        "EV-b8bba030747fd3b6",
-        "EV-5babb43f4b4d302f",
-        "EV-9ae9aa86e51e64a2",
-        "EV-173d08643472aee5",
-        "EV-d064939235825765",
-        "EV-3ef3e18df61a00d8",
-        "EV-4bb5b24400e49ea4",
-        "EV-97a8d86baa7fffc4",
-        "EV-0ad758b04b9b5313",
-        "EV-591542ccc2de5be8",
-        "EV-dab4d3f2059e8880",
-        "EV-aaaa21ae510bc87e",
-        "EV-2f56b99f72ad6c4f",
-        "EV-33e7429a7bc94840",
-        "EV-cf0551afe16562ef",
-        "EV-c17f5a364ed6a3ac"
-      ],
-      "firstSeen": "2026-03-11",
-      "lastSeen": "2026-07-24",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "type": "公司/机构",
-      "productIds": []
-    },
-    {
       "id": "EN-d36e5a1a7a3c45ce",
       "name": "Roblox",
       "sourceType": "organization_candidate",
@@ -5077,7 +5211,9 @@
       "id": "EN-e69f64149edae6b1",
       "name": "Runlayer",
       "sourceType": "organization_candidate",
-      "aliases": [],
+      "aliases": [
+        "MCP AI"
+      ],
       "tags": [
         "智能体",
         "MCP"
@@ -5088,16 +5224,10 @@
       ],
       "firstSeen": "2025-11-17",
       "lastSeen": "2026-07-23",
-      "relatedEntityIds": [
-        "EN-fdb2cc367267ac57"
-      ],
-      "relationIds": [
-        "REL2-5099d8dc9fc49803"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "type": "公司/机构",
-      "productIds": [
-        "EN-fdb2cc367267ac57"
-      ]
+      "productIds": []
     },
     {
       "id": "EN-ac123e56b0168ec2",
@@ -5349,6 +5479,28 @@
       "productIds": []
     },
     {
+      "id": "EN-7c4cee6f28a9c6cc",
+      "name": "Setset",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-510fd43cf3ecc17d"
+      ],
+      "firstSeen": "2026-05-05",
+      "lastSeen": "2026-06-15",
+      "relatedEntityIds": [
+        "EN-419f38e27e81e1f1"
+      ],
+      "relationIds": [
+        "REL2-033196ca9d691fcd"
+      ],
+      "type": "公司/机构",
+      "productIds": [
+        "EN-419f38e27e81e1f1"
+      ]
+    },
+    {
       "id": "EN-ce635c4eabff5e4f",
       "name": "Shell",
       "sourceType": "organization_candidate",
@@ -5538,16 +5690,10 @@
       ],
       "firstSeen": "2026-05-21",
       "lastSeen": "2026-07-13",
-      "relatedEntityIds": [
-        "EN-35ad2658e502aeda"
-      ],
-      "relationIds": [
-        "REL2-64d994912ba46191"
-      ],
+      "relatedEntityIds": [],
+      "relationIds": [],
       "type": "公司/机构",
-      "productIds": [
-        "EN-35ad2658e502aeda"
-      ]
+      "productIds": []
     },
     {
       "id": "EN-2b78da3dc866654e",
@@ -5621,14 +5767,17 @@
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-20",
       "relatedEntityIds": [
-        "EN-44a9bf3b11abea5c"
+        "EN-44a9bf3b11abea5c",
+        "EN-ed501d3e2d977553"
       ],
       "relationIds": [
-        "REL2-a243d283b580493c"
+        "REL2-a243d283b580493c",
+        "REL2-b2812101f3a49110"
       ],
       "type": "公司/机构",
       "productIds": [
-        "EN-44a9bf3b11abea5c"
+        "EN-44a9bf3b11abea5c",
+        "EN-ed501d3e2d977553"
       ]
     },
     {
@@ -5748,6 +5897,22 @@
       ]
     },
     {
+      "id": "EN-fa6d7e7ab893803f",
+      "name": "Synthesia",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-1ba939d8baf43207"
+      ],
+      "firstSeen": "2026-07-22",
+      "lastSeen": "2026-07-23",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "公司/机构",
+      "productIds": []
+    },
+    {
       "id": "EN-7c0e908da2e0a81f",
       "name": "Synthetic Sciences",
       "sourceType": "organization_candidate",
@@ -5770,22 +5935,26 @@
       ]
     },
     {
-      "id": "EN-a33d30b5f34bdff5",
-      "name": "Teamily AI",
+      "id": "EN-e482463e2656ed1c",
+      "name": "Tensordyne",
       "sourceType": "organization_candidate",
       "aliases": [],
-      "tags": [
-        "智能体"
-      ],
+      "tags": [],
       "eventIds": [
-        "EV-3e55e1cd1d54f6ef"
+        "EV-c7426bbb0eb26ba7"
       ],
-      "firstSeen": "2026-07-08",
-      "lastSeen": "2026-07-21",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-06-16",
+      "relatedEntityIds": [
+        "EN-5f3c568f90d87caf"
+      ],
+      "relationIds": [
+        "REL2-c65195f29de29271"
+      ],
       "type": "公司/机构",
-      "productIds": []
+      "productIds": [
+        "EN-5f3c568f90d87caf"
+      ]
     },
     {
       "id": "EN-8f71c4871a160172",
@@ -5931,11 +6100,20 @@
         "EV-c52947e480fa3347"
       ],
       "firstSeen": "2026-05-05",
-      "lastSeen": "2026-07-18",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "lastSeen": "2026-07-21",
+      "relatedEntityIds": [
+        "EN-c4de175a35d9d9d1",
+        "EN-e99987e5c504a796"
+      ],
+      "relationIds": [
+        "REL2-2cebf3233014cd07",
+        "REL2-31cf6128660f61b0"
+      ],
       "type": "公司/机构",
-      "productIds": []
+      "productIds": [
+        "EN-c4de175a35d9d9d1",
+        "EN-e99987e5c504a796"
+      ]
     },
     {
       "id": "EN-b3e3bce83d29e787",
@@ -6043,6 +6221,23 @@
       "productIds": [
         "EN-23b979df49741c93"
       ]
+    },
+    {
+      "id": "EN-9d3508a8484ee252",
+      "name": "Vercel",
+      "sourceType": "organization_candidate",
+      "aliases": [],
+      "tags": [],
+      "eventIds": [
+        "EV-d16dce141d477839",
+        "EV-84180c1fb12ac404"
+      ],
+      "firstSeen": "2026-06-29",
+      "lastSeen": "2026-07-07",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "type": "公司/机构",
+      "productIds": []
     },
     {
       "id": "EN-e21783b898b55a31",
@@ -6198,18 +6393,15 @@
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-07-23",
       "relatedEntityIds": [
-        "EN-bac541b589c8a0d1",
         "EN-c4bc2d00a42f220f",
         "EN-24caf10fe9bfb1c5"
       ],
       "relationIds": [
-        "REL2-fe33f6bf65f6dfab",
         "REL2-e0b4c492d7f56ad2",
         "REL2-6e6899469cc60402"
       ],
       "type": "公司/机构",
       "productIds": [
-        "EN-bac541b589c8a0d1",
         "EN-c4bc2d00a42f220f",
         "EN-24caf10fe9bfb1c5"
       ]
@@ -6246,19 +6438,16 @@
       "lastSeen": "2026-07-25",
       "relatedEntityIds": [
         "EN-101a515191c6be9e",
-        "EN-ddf9916b459b6d77",
-        "EN-3aca03b9bb50f158"
+        "EN-ddf9916b459b6d77"
       ],
       "relationIds": [
         "REL2-d51ced7ee48e317e",
-        "REL2-b30737fc4bbfa97d",
-        "REL2-b5b5d61d16610804"
+        "REL2-b30737fc4bbfa97d"
       ],
       "type": "公司/机构",
       "productIds": [
         "EN-101a515191c6be9e",
-        "EN-ddf9916b459b6d77",
-        "EN-3aca03b9bb50f158"
+        "EN-ddf9916b459b6d77"
       ]
     },
     {
@@ -6439,26 +6628,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-88d56d69ca3828db",
-      "name": "4T AMD AI 395",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-385fee01e808b5fa"
-      ],
-      "firstSeen": "2026-06-21",
-      "lastSeen": "2026-06-22",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-39ac57ecba0b43"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-16fe95bd48dbf178",
       "name": "峰谷 Token",
       "sourceType": "product_candidate",
@@ -6512,9 +6681,11 @@
     },
     {
       "id": "EN-3c2a3673eabc9a46",
-      "name": "国内首个全周期高考志愿填报",
+      "name": "国内首个全周期高考志愿填报 Agent",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "国内首个全周期高考志愿填报"
+      ],
       "tags": [],
       "eventIds": [
         "EV-bbc34d7bc9c02b6f"
@@ -6528,7 +6699,7 @@
         "REL2-95e8b066d9485da0"
       ],
       "legacyIds": [
-        "PD-5ef23a6d776d61"
+        "PD-287beb19caf65b"
       ],
       "companyIds": [
         "EN-047364b9be67f665"
@@ -6536,6 +6707,50 @@
       "companyNames": [
         "阿里巴巴"
       ],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-88d56d69ca3828db",
+      "name": "极摩客 EVO-X3 4T AMD AI 395 机皇版",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "4T AMD AI 395"
+      ],
+      "tags": [],
+      "eventIds": [
+        "EV-385fee01e808b5fa"
+      ],
+      "firstSeen": "2026-06-21",
+      "lastSeen": "2026-06-22",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-a297f01f19bc27"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-14754db7f1439c88",
+      "name": "科大讯飞智能办公本 Air 3 系列",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "Air 3"
+      ],
+      "tags": [],
+      "eventIds": [
+        "EV-e2f3ad52e83f51ed"
+      ],
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-05-25",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-25fc936d41a9f6"
+      ],
+      "companyIds": [],
+      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -6589,6 +6804,38 @@
       "companyIds": [],
       "companyNames": [],
       "type": "产品/服务"
+    },
+    {
+      "id": "EN-c0d023c66edfc877",
+      "name": "日日新 SenseNova U1 Pro",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "U1 Pro"
+      ],
+      "tags": [
+        "推理能力"
+      ],
+      "eventIds": [
+        "EV-314b1d80bc4aa50d"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-19",
+      "relatedEntityIds": [
+        "EN-a8100d425f663eac"
+      ],
+      "relationIds": [
+        "REL2-47a0caf57696d3ff"
+      ],
+      "legacyIds": [
+        "PD-bc04e078d87aa9"
+      ],
+      "companyIds": [
+        "EN-a8100d425f663eac"
+      ],
+      "companyNames": [
+        "商汤科技"
+      ],
+      "type": "模型"
     },
     {
       "id": "EN-24dcf762a3ebce39",
@@ -6655,13 +6902,21 @@
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-06-16",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-4e721fae5963494d"
+      ],
+      "relationIds": [
+        "REL2-81f239c52fa7d8bc"
+      ],
       "legacyIds": [
         "PD-f7a08e04af36e8"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-4e721fae5963494d"
+      ],
+      "companyNames": [
+        "招商银行"
+      ],
       "type": "产品/服务"
     },
     {
@@ -6707,26 +6962,6 @@
       "relationIds": [],
       "legacyIds": [
         "PD-d86caede0264d4"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-252da501233d3c2d",
-      "name": "ACE 1.15",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-0f0a6418c784fe40"
-      ],
-      "firstSeen": "2026-06-20",
-      "lastSeen": "2026-06-20",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-111f1e0e6c704e"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -6847,7 +7082,9 @@
       "id": "EN-3673c8b4dba7409e",
       "name": "Agent Builder",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "AI Workflow Automation"
+      ],
       "tags": [
         "企业运营自动化",
         "客户服务"
@@ -6941,13 +7178,21 @@
       ],
       "firstSeen": "2026-07-19",
       "lastSeen": "2026-07-19",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-2abf8289b2f2113f"
+      ],
+      "relationIds": [
+        "REL2-efebd768694539ca"
+      ],
       "legacyIds": [
         "PD-fed14acb7032dd"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-2abf8289b2f2113f"
+      ],
+      "companyNames": [
+        "蚂蚁数科"
+      ],
       "type": "产品/服务"
     },
     {
@@ -7290,6 +7535,30 @@
       "type": "产品/服务"
     },
     {
+      "id": "EN-73df89424ba2e889",
+      "name": "AI Data Readiness Platform",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "Data Readiness Problem Killing"
+      ],
+      "tags": [
+        "智能体"
+      ],
+      "eventIds": [
+        "EV-4ac38ecfe0be9b80"
+      ],
+      "firstSeen": "2026-06-09",
+      "lastSeen": "2026-06-15",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-0121fe5cf2e266"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
       "id": "EN-892b87f4931551f6",
       "name": "AI detector",
       "sourceType": "product_candidate",
@@ -7348,26 +7617,6 @@
       "relationIds": [],
       "legacyIds": [
         "PD-b84a9bec99b6a8"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-c921627ea80315ed",
-      "name": "AI for Teams",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-68cbf05f07a4613c"
-      ],
-      "firstSeen": "2026-07-08",
-      "lastSeen": "2026-07-08",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-4fcf0c3930539b"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -7522,28 +7771,6 @@
       "type": "AI 硬件"
     },
     {
-      "id": "EN-36076a5178595978",
-      "name": "AI Projects",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体"
-      ],
-      "eventIds": [
-        "EV-4ac38ecfe0be9b80"
-      ],
-      "firstSeen": "2026-06-09",
-      "lastSeen": "2026-06-15",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-d13768c11d58e5"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-6852734baccb5ebd",
       "name": "AI Roleplay Sessions",
       "sourceType": "product_candidate",
@@ -7605,9 +7832,11 @@
     },
     {
       "id": "EN-8487426ba81162db",
-      "name": "AI Trust Platform Built",
+      "name": "AI Trust Platform",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "AI Trust Platform Built"
+      ],
       "tags": [
         "智能体"
       ],
@@ -7619,7 +7848,7 @@
       "relatedEntityIds": [],
       "relationIds": [],
       "legacyIds": [
-        "PD-d83de0856b5cbf"
+        "PD-85350143694682"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -7650,37 +7879,6 @@
       ],
       "companyNames": [
         "Google"
-      ],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-b70e8201c9feb94a",
-      "name": "AI Workflow Automation",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "企业运营自动化",
-        "客户服务"
-      ],
-      "eventIds": [
-        "EV-6364cfadff0d1d30"
-      ],
-      "firstSeen": "2026-06-25",
-      "lastSeen": "2026-06-25",
-      "relatedEntityIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "relationIds": [
-        "REL2-223567d6ca7b1e88"
-      ],
-      "legacyIds": [
-        "PD-0fa317af77d1b8"
-      ],
-      "companyIds": [
-        "EN-7d3194f79e645c42"
-      ],
-      "companyNames": [
-        "OpenAI"
       ],
       "type": "产品/服务"
     },
@@ -7735,6 +7933,40 @@
       "type": "产品/服务"
     },
     {
+      "id": "EN-2a817d99285e12c4",
+      "name": "AI-Native Cloud",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "AI-Native Cloud Built",
+        "AI-Native Cloud Built for",
+        "Inference Era"
+      ],
+      "tags": [
+        "智能体"
+      ],
+      "eventIds": [
+        "EV-c846e768dad05441"
+      ],
+      "firstSeen": "2026-06-27",
+      "lastSeen": "2026-06-27",
+      "relatedEntityIds": [
+        "EN-042e9398f2cc8902"
+      ],
+      "relationIds": [
+        "REL2-e7354e218da95ebb"
+      ],
+      "legacyIds": [
+        "PD-82419c02901e6d"
+      ],
+      "companyIds": [
+        "EN-042e9398f2cc8902"
+      ],
+      "companyNames": [
+        "DigitalOcean"
+      ],
+      "type": "产品/服务"
+    },
+    {
       "id": "EN-f0fa30cd90f406c8",
       "name": "AI-RAN",
       "sourceType": "product_candidate",
@@ -7751,66 +7983,6 @@
       "relationIds": [],
       "legacyIds": [
         "PD-8b240e5a270ca1"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-d0cf06b547fad71d",
-      "name": "AI-specific",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-60bc38fbf2bbb1ea"
-      ],
-      "firstSeen": "2026-07-10",
-      "lastSeen": "2026-07-10",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-f2efcb2f7f66c5"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "AI 硬件"
-    },
-    {
-      "id": "EN-5dcd7df1a5bf068f",
-      "name": "AI内容标注行为守则",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-9a42742bce93c26c"
-      ],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-06-17",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-356ff01df41a55"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-14754db7f1439c88",
-      "name": "Air 3",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-e2f3ad52e83f51ed"
-      ],
-      "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-25",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-b4fe3a187e4593"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -7866,28 +8038,6 @@
         "NVIDIA"
       ],
       "type": "模型"
-    },
-    {
-      "id": "EN-c910c1cd382be9a0",
-      "name": "Amazon Bedrock",
-      "sourceType": "product_candidate",
-      "aliases": [
-        "Bedrock"
-      ],
-      "tags": [],
-      "eventIds": [
-        "EV-f89ba2b487d4abf1"
-      ],
-      "firstSeen": "2026-06-10",
-      "lastSeen": "2026-06-10",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-20982889d8358b"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
     },
     {
       "id": "EN-b8087e26a688494b",
@@ -7963,7 +8113,7 @@
     },
     {
       "id": "EN-02be787a1aacea06",
-      "name": "Antares-1B AI",
+      "name": "Antares-1B",
       "sourceType": "product_candidate",
       "aliases": [],
       "tags": [
@@ -7974,13 +8124,21 @@
       ],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-07-23",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-de5b352d08feee"
+      "relatedEntityIds": [
+        "EN-e73b79a0b10f8cdb"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "relationIds": [
+        "REL2-987a83667061cf46"
+      ],
+      "legacyIds": [
+        "PD-521340d63bf30b"
+      ],
+      "companyIds": [
+        "EN-e73b79a0b10f8cdb"
+      ],
+      "companyNames": [
+        "Cisco"
+      ],
       "type": "模型"
     },
     {
@@ -7996,13 +8154,21 @@
       ],
       "firstSeen": "2026-07-22",
       "lastSeen": "2026-07-23",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-e73b79a0b10f8cdb"
+      ],
+      "relationIds": [
+        "REL2-a376a7931b88e456"
+      ],
       "legacyIds": [
         "PD-003d176b6ac703"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-e73b79a0b10f8cdb"
+      ],
+      "companyNames": [
+        "Cisco"
+      ],
       "type": "模型"
     },
     {
@@ -8147,32 +8313,11 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-b6fe9abdb194022b",
-      "name": "Auto Immersive",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "端侧"
-      ],
-      "eventIds": [
-        "EV-79913a2e72f0269b"
-      ],
-      "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-21",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-fa3168ab909f62"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-7a2f2aafb073c74e",
       "name": "Auto Immersive 3D",
       "sourceType": "product_candidate",
       "aliases": [
+        "Auto Immersive",
         "Auto Immersive 3"
       ],
       "tags": [
@@ -8233,14 +8378,22 @@
         "EV-c52947e480fa3347"
       ],
       "firstSeen": "2026-05-05",
-      "lastSeen": "2026-07-18",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "lastSeen": "2026-07-21",
+      "relatedEntityIds": [
+        "EN-f19600b9e18f7f27"
+      ],
+      "relationIds": [
+        "REL2-31cf6128660f61b0"
+      ],
       "legacyIds": [
         "PD-0e7776d1866164"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-f19600b9e18f7f27"
+      ],
+      "companyNames": [
+        "UiPath"
+      ],
       "type": "产品/服务"
     },
     {
@@ -8273,38 +8426,6 @@
       ],
       "companyNames": [
         "Zendesk"
-      ],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-098a7df7f42ccf8b",
-      "name": "Autonomous Worker Agents",
-      "sourceType": "product_candidate",
-      "aliases": [
-        "Launches Autonomous Worker"
-      ],
-      "tags": [
-        "智能体"
-      ],
-      "eventIds": [
-        "EV-a70d5cf3ee6d6d64"
-      ],
-      "firstSeen": "2026-07-04",
-      "lastSeen": "2026-07-04",
-      "relatedEntityIds": [
-        "EN-49f756463ad9dcfb"
-      ],
-      "relationIds": [
-        "REL2-1eef5fec24c6d66d"
-      ],
-      "legacyIds": [
-        "PD-8c30d8753cf75a"
-      ],
-      "companyIds": [
-        "EN-49f756463ad9dcfb"
-      ],
-      "companyNames": [
-        "Harness"
       ],
       "type": "产品/服务"
     },
@@ -8372,26 +8493,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-f5b119e89624f88e",
-      "name": "AWS Marketplace",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-d064939235825765"
-      ],
-      "firstSeen": "2026-06-14",
-      "lastSeen": "2026-06-14",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-f4bd36b58a82ce"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-553d045569eaf2e5",
       "name": "AZ3 Pro",
       "sourceType": "product_candidate",
@@ -8428,26 +8529,6 @@
       "relationIds": [],
       "legacyIds": [
         "PD-57d190e79fa2de"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "模型"
-    },
-    {
-      "id": "EN-bc604773f5053671",
-      "name": "BioNeMo",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-1a1fb68ba4d6a377"
-      ],
-      "firstSeen": "2026-06-21",
-      "lastSeen": "2026-06-21",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-55111784316acf"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -8532,44 +8613,12 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-557203e8cc173124",
-      "name": "Brain2Qwerty",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体"
-      ],
-      "eventIds": [
-        "EV-f34eec5df7f5bcb7",
-        "EV-c996e56f7f4bdc49",
-        "EV-b60df35d168fe6b7",
-        "EV-0d6433da1f8d256a"
-      ],
-      "firstSeen": "2026-06-30",
-      "lastSeen": "2026-07-02",
-      "relatedEntityIds": [
-        "EN-ea3bd73e2b506e00"
-      ],
-      "relationIds": [
-        "REL2-d39ae220d8211bae",
-        "REL2-4d57a9097008ed15"
-      ],
-      "legacyIds": [
-        "PD-3c05f3eee4a93d"
-      ],
-      "companyIds": [
-        "EN-ea3bd73e2b506e00"
-      ],
-      "companyNames": [
-        "Meta"
-      ],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-2ba325ce6f8e3dc9",
       "name": "Brain2Qwerty v2",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "Brain2Qwerty"
+      ],
       "tags": [
         "智能体"
       ],
@@ -8806,8 +8855,7 @@
         "Claude Code v2.1.207",
         "Claude Code v2.1.208",
         "Claude Code v2.1.210",
-        "Claude Code v2.1.212",
-        "Claude Code v2.1.216"
+        "Claude Code v2.1.212"
       ],
       "tags": [
         "智能体",
@@ -8822,7 +8870,7 @@
         "EV-7b3d99fb28e5f613",
         "EV-a06d2f33db7f9b98",
         "EV-8121a1ecdf168d8a",
-        "EV-684f286ef629ed0d",
+        "EV-3b6252b20720e697",
         "EV-815cf2e2041b509b",
         "EV-debecca007e547d2",
         "EV-a8a8f26c5128d894",
@@ -9219,64 +9267,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-3fe9141f6d2e3e7f",
-      "name": "CLI",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体"
-      ],
-      "eventIds": [
-        "EV-43a39dfbbc05a8ce"
-      ],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17",
-      "relatedEntityIds": [
-        "EN-b0126946c556dc47"
-      ],
-      "relationIds": [
-        "REL2-4aad8e07c7c357e8"
-      ],
-      "legacyIds": [
-        "PD-2bd8e9c9c868ef"
-      ],
-      "companyIds": [
-        "EN-b0126946c556dc47"
-      ],
-      "companyNames": [
-        "DoorDash"
-      ],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-2aae0de3f5530f08",
-      "name": "Cloud Marketplace",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-5493c61bcbe58aa2"
-      ],
-      "firstSeen": "2026-06-05",
-      "lastSeen": "2026-06-05",
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "relationIds": [
-        "REL2-ff60075c4628759d"
-      ],
-      "legacyIds": [
-        "PD-0bdb807079a381"
-      ],
-      "companyIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "companyNames": [
-        "Google"
-      ],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-9ff1a58a589bc318",
       "name": "Cloud Workbench Notebooks",
       "sourceType": "product_candidate",
@@ -9301,36 +9291,6 @@
       ],
       "companyNames": [
         "Google"
-      ],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-3aca03b9bb50f158",
-      "name": "Code V0.1.0",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "代码生成"
-      ],
-      "eventIds": [
-        "EV-564f3df8d487ca6f"
-      ],
-      "firstSeen": "2026-06-11",
-      "lastSeen": "2026-06-11",
-      "relatedEntityIds": [
-        "EN-c608c4787821de1b"
-      ],
-      "relationIds": [
-        "REL2-b5b5d61d16610804"
-      ],
-      "legacyIds": [
-        "PD-12a9368e2c15da"
-      ],
-      "companyIds": [
-        "EN-c608c4787821de1b"
-      ],
-      "companyNames": [
-        "Xiaomi"
       ],
       "type": "产品/服务"
     },
@@ -9416,34 +9376,6 @@
       ],
       "companyIds": [],
       "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-35ad2658e502aeda",
-      "name": "Colossus",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-8a91e14f37d32b4d"
-      ],
-      "firstSeen": "2026-06-29",
-      "lastSeen": "2026-06-29",
-      "relatedEntityIds": [
-        "EN-e78bdebae031095b"
-      ],
-      "relationIds": [
-        "REL2-64d994912ba46191"
-      ],
-      "legacyIds": [
-        "PD-2b8009c63a06a0"
-      ],
-      "companyIds": [
-        "EN-e78bdebae031095b"
-      ],
-      "companyNames": [
-        "SpaceX"
-      ],
       "type": "产品/服务"
     },
     {
@@ -9707,6 +9639,7 @@
         "端侧"
       ],
       "eventIds": [
+        "EV-65666f7be5ac5ca2",
         "EV-941ba9ebdc43f20c",
         "EV-d4ddee1b39cced77",
         "EV-0e2a68efc19bfbaa"
@@ -9823,6 +9756,39 @@
       "type": "产品/服务"
     },
     {
+      "id": "EN-10556ee2cee94c72",
+      "name": "Crusoe Serverless Fine-Tuning",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "Fine-Tuning"
+      ],
+      "tags": [
+        "模型微调",
+        "开放权重"
+      ],
+      "eventIds": [
+        "EV-b84035029a63e52e"
+      ],
+      "firstSeen": "2026-07-07",
+      "lastSeen": "2026-07-15",
+      "relatedEntityIds": [
+        "EN-d41ebd9f02722fc8"
+      ],
+      "relationIds": [
+        "REL2-0290625c26082cef"
+      ],
+      "legacyIds": [
+        "PD-cd4fc2b9d6a21a"
+      ],
+      "companyIds": [
+        "EN-d41ebd9f02722fc8"
+      ],
+      "companyNames": [
+        "Crusoe"
+      ],
+      "type": "模型"
+    },
+    {
       "id": "EN-d6d6e4e33c59b45e",
       "name": "CUGA",
       "sourceType": "product_candidate",
@@ -9869,50 +9835,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-ba961b5c6d1aee29",
-      "name": "Custom",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体"
-      ],
-      "eventIds": [
-        "EV-dfbc2f02003c7595"
-      ],
-      "firstSeen": "2026-07-06",
-      "lastSeen": "2026-07-06",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-f9ac14b63a75fa"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-73df89424ba2e889",
-      "name": "Data Readiness Problem Killing",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体"
-      ],
-      "eventIds": [
-        "EV-4ac38ecfe0be9b80"
-      ],
-      "firstSeen": "2026-06-09",
-      "lastSeen": "2026-06-15",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-5800f8e90c1dc7"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-64d17ceed397dfde",
       "name": "DataRobot AI Cloud",
       "sourceType": "product_candidate",
@@ -9927,6 +9849,30 @@
       "relationIds": [],
       "legacyIds": [
         "PD-5e4c9e7a7c09d4"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-774e4ae6eef0efdb",
+      "name": "DeepFabric AI Agent Platform",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "End-to-End Supply Chain Operations"
+      ],
+      "tags": [
+        "智能体"
+      ],
+      "eventIds": [
+        "EV-701417bcd9b57095"
+      ],
+      "firstSeen": "2026-07-09",
+      "lastSeen": "2026-07-09",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-24c6873fc5eead"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -9949,26 +9895,6 @@
       "relationIds": [],
       "legacyIds": [
         "PD-bbda097069f1ec"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-16912c2e35f7be68",
-      "name": "DFlash",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-de3f5938545ad83a"
-      ],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-06-16",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-5faef1105f115a"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -10014,26 +9940,36 @@
       "type": "模型"
     },
     {
-      "id": "EN-7e6582d8b1b179bf",
-      "name": "DNN",
+      "id": "EN-3fe9141f6d2e3e7f",
+      "name": "DoorDash CLI",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "CLI"
+      ],
       "tags": [
-        "视觉语言"
+        "智能体"
       ],
       "eventIds": [
-        "EV-27fef7b87ee871ae"
+        "EV-43a39dfbbc05a8ce"
       ],
-      "firstSeen": "2026-06-06",
-      "lastSeen": "2026-06-06",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "firstSeen": "2026-07-16",
+      "lastSeen": "2026-07-17",
+      "relatedEntityIds": [
+        "EN-b0126946c556dc47"
+      ],
+      "relationIds": [
+        "REL2-4aad8e07c7c357e8"
+      ],
       "legacyIds": [
-        "PD-afe02bfcc68321"
+        "PD-957fdfe31b664e"
       ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "模型"
+      "companyIds": [
+        "EN-b0126946c556dc47"
+      ],
+      "companyNames": [
+        "DoorDash"
+      ],
+      "type": "产品/服务"
     },
     {
       "id": "EN-9d534deeea39a521",
@@ -10054,26 +9990,6 @@
       "companyIds": [],
       "companyNames": [],
       "type": "产品/服务"
-    },
-    {
-      "id": "EN-9086d4784c07561e",
-      "name": "Duet AI for Developers",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-71226eeff6dc7c42"
-      ],
-      "firstSeen": "2026-07-10",
-      "lastSeen": "2026-07-10",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-db9c9f6ab97523"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "模型"
     },
     {
       "id": "EN-830abc32d2a443c5",
@@ -10105,9 +10021,11 @@
     },
     {
       "id": "EN-3f750f52c80c4445",
-      "name": "EdgeMesa N AI",
+      "name": "EdgeMesa N AI+",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "EdgeMesa N AI"
+      ],
       "tags": [],
       "eventIds": [
         "EV-62a2246aa3df0438"
@@ -10117,7 +10035,7 @@
       "relatedEntityIds": [],
       "relationIds": [],
       "legacyIds": [
-        "PD-eb537cc699540a"
+        "PD-a1d82dd8156c5c"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -10140,28 +10058,6 @@
       "relationIds": [],
       "legacyIds": [
         "PD-26484e11d3cb89"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-774e4ae6eef0efdb",
-      "name": "End-to-End Supply Chain Operations",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体"
-      ],
-      "eventIds": [
-        "EV-701417bcd9b57095"
-      ],
-      "firstSeen": "2026-07-09",
-      "lastSeen": "2026-07-09",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-30278de83909c7"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -10298,38 +10194,12 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-34ec8666daf7b665",
-      "name": "Fable",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-574998b1638a3f4f"
-      ],
-      "firstSeen": "2026-06-19",
-      "lastSeen": "2026-06-20",
-      "relatedEntityIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "relationIds": [
-        "REL2-57cb7e90eb817c55"
-      ],
-      "legacyIds": [
-        "PD-e40132f760dd58"
-      ],
-      "companyIds": [
-        "EN-c70eca6b0f88f44d"
-      ],
-      "companyNames": [
-        "Anthropic"
-      ],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-9f15bb7e29e191eb",
       "name": "Fable 5",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "Fable"
+      ],
       "tags": [
         "网络安全",
         "数据分析",
@@ -10340,6 +10210,7 @@
         "EV-83a8ac8a2554b60c",
         "EV-9c0552732b34f278",
         "EV-491e7b4b506ab3e3",
+        "EV-574998b1638a3f4f",
         "EV-c7a2774b07554f5d",
         "EV-e09bff5515b1896b",
         "EV-2eabd03665cbdef7"
@@ -10352,6 +10223,7 @@
       "relationIds": [
         "REL2-89a72154363953eb",
         "REL2-0d6cdbc1686a734f",
+        "REL2-107bb924258efdcc",
         "REL2-a1a07a9f9db7d893",
         "REL2-b860d0f781b1fe45"
       ],
@@ -10430,6 +10302,7 @@
       "name": "Fin",
       "sourceType": "product_candidate",
       "aliases": [
+        "Fin AI",
         "Innovates Outcome-Based Pricing"
       ],
       "tags": [
@@ -10456,87 +10329,6 @@
         "Intercom"
       ],
       "type": "产品/服务"
-    },
-    {
-      "id": "EN-1ec93c99d07feadd",
-      "name": "Fin AI",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "客户服务"
-      ],
-      "eventIds": [
-        "EV-78277c678f01e540"
-      ],
-      "firstSeen": "2026-07-01",
-      "lastSeen": "2026-07-01",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-f4dfba61fba67c"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-f2c032b19edb7900",
-      "name": "Finance",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-d5cc9a50a9b88d2b"
-      ],
-      "firstSeen": "2026-06-26",
-      "lastSeen": "2026-06-26",
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "relationIds": [
-        "REL2-eba841d5627207a4"
-      ],
-      "legacyIds": [
-        "PD-a1cf62af599e2c"
-      ],
-      "companyIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "companyNames": [
-        "Google"
-      ],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-10556ee2cee94c72",
-      "name": "Fine-Tuning",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "模型微调",
-        "开放权重"
-      ],
-      "eventIds": [
-        "EV-b84035029a63e52e"
-      ],
-      "firstSeen": "2026-07-07",
-      "lastSeen": "2026-07-15",
-      "relatedEntityIds": [
-        "EN-d41ebd9f02722fc8"
-      ],
-      "relationIds": [
-        "REL2-0290625c26082cef"
-      ],
-      "legacyIds": [
-        "PD-e82adb46c84598"
-      ],
-      "companyIds": [
-        "EN-d41ebd9f02722fc8"
-      ],
-      "companyNames": [
-        "Crusoe"
-      ],
-      "type": "模型"
     },
     {
       "id": "EN-94c93b5ab886f2d9",
@@ -10567,39 +10359,6 @@
       ],
       "companyNames": [
         "TYLsemi"
-      ],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-6f216f2ea5b7a13e",
-      "name": "Flash-Lite",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体",
-        "网络安全"
-      ],
-      "eventIds": [
-        "EV-597b8257a97b3d02",
-        "EV-cc974e0031c69715",
-        "EV-cb3cb11ff13f6069"
-      ],
-      "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-22",
-      "relatedEntityIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "relationIds": [
-        "REL2-dccb634be274d411"
-      ],
-      "legacyIds": [
-        "PD-d6d20242bb26b8"
-      ],
-      "companyIds": [
-        "EN-bbdefa2950f49882"
-      ],
-      "companyNames": [
-        "Google"
       ],
       "type": "产品/服务"
     },
@@ -10661,27 +10420,6 @@
       "companyIds": [],
       "companyNames": [],
       "type": "产品/服务"
-    },
-    {
-      "id": "EN-d0bfa24cf1e53827",
-      "name": "Foundry",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-fdcc4ff01b49053e",
-        "EV-8a26b85b4f432525"
-      ],
-      "firstSeen": "2026-06-23",
-      "lastSeen": "2026-07-09",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-38753311db5094"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "模型"
     },
     {
       "id": "EN-e3a80a99bb5fa250",
@@ -10849,13 +10587,21 @@
       ],
       "firstSeen": "2026-06-16",
       "lastSeen": "2026-06-17",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-7f871cbf905f6e0c"
+      ],
+      "relationIds": [
+        "REL2-eaf27cde7b70ddb9"
+      ],
       "legacyIds": [
         "PD-88aed727061cbe"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-7f871cbf905f6e0c"
+      ],
+      "companyNames": [
+        "OpenRouter"
+      ],
       "type": "模型"
     },
     {
@@ -11006,26 +10752,26 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-204d4b18c9d78e88",
-      "name": "Gemini Flash",
+      "id": "EN-5567ce1995cc85d7",
+      "name": "Gemini Enterprise Agent Platform",
       "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "网络安全"
+      "aliases": [
+        "Introducing Gemini Enterprise"
       ],
+      "tags": [],
       "eventIds": [
-        "EV-5aaa4c6697606274"
+        "EV-a886a800f06ab9d6"
       ],
-      "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-22",
+      "firstSeen": "2026-06-22",
+      "lastSeen": "2026-06-22",
       "relatedEntityIds": [],
       "relationIds": [],
       "legacyIds": [
-        "PD-801defd601da5e"
+        "PD-ad740129209e71"
       ],
       "companyIds": [],
       "companyNames": [],
-      "type": "模型"
+      "type": "产品/服务"
     },
     {
       "id": "EN-ec75c4fe965a0492",
@@ -11320,35 +11066,26 @@
       "type": "模型"
     },
     {
-      "id": "EN-8d323d8bba783aa3",
-      "name": "Google Cloud",
+      "id": "EN-f2c032b19edb7900",
+      "name": "Google Finance",
       "sourceType": "product_candidate",
       "aliases": [
-        "Cloud"
+        "Finance"
       ],
       "tags": [],
       "eventIds": [
-        "EV-9254af7aaedaafbe",
-        "EV-96c8ce4ee89adb84",
-        "EV-8a26b85b4f432525",
-        "EV-51dfd0d541380500"
+        "EV-d5cc9a50a9b88d2b"
       ],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-07-14",
+      "firstSeen": "2026-06-26",
+      "lastSeen": "2026-06-26",
       "relatedEntityIds": [
-        "EN-96eebba49dbbf422",
-        "EN-8d4321d936320802",
         "EN-bbdefa2950f49882"
       ],
       "relationIds": [
-        "REL2-ab4c37dd40240134",
-        "REL2-ede305f9f251f48d",
-        "REL2-434765e50ff89fea",
-        "REL2-f92ce4e61c880fbe",
-        "REL2-eab334edbd3e9d50"
+        "REL2-eba841d5627207a4"
       ],
       "legacyIds": [
-        "PD-6e9b504d492913"
+        "PD-141b3fd5c0cad9"
       ],
       "companyIds": [
         "EN-bbdefa2950f49882"
@@ -11596,34 +11333,6 @@
       "type": "模型"
     },
     {
-      "id": "EN-bac541b589c8a0d1",
-      "name": "Grok 4.6",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-2351415291cb9fcd"
-      ],
-      "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-19",
-      "relatedEntityIds": [
-        "EN-6fcba5d96a4fadfd"
-      ],
-      "relationIds": [
-        "REL2-fe33f6bf65f6dfab"
-      ],
-      "legacyIds": [
-        "PD-d03bdccf7374d0"
-      ],
-      "companyIds": [
-        "EN-6fcba5d96a4fadfd"
-      ],
-      "companyNames": [
-        "xAI"
-      ],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-c4bc2d00a42f220f",
       "name": "Grok Build",
       "sourceType": "product_candidate",
@@ -11802,13 +11511,16 @@
       "id": "EN-45c52af0feb0f285",
       "name": "Helios",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "Helios AI"
+      ],
       "tags": [
         "智能体",
         "人在回路"
       ],
       "eventIds": [
         "EV-243e73016576fa43",
+        "EV-563843979fb55b9b",
         "EV-87f052d24396fdbc"
       ],
       "firstSeen": "2026-07-23",
@@ -11818,6 +11530,7 @@
       ],
       "relationIds": [
         "REL2-94778ccfca07e1dd",
+        "REL2-0f7e1be3ae6f4e69",
         "REL2-22f155352c15dcea"
       ],
       "legacyIds": [
@@ -11829,30 +11542,6 @@
       "companyNames": [
         "AMD"
       ],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-9ff7e3ae1b1ab43f",
-      "name": "Helios AI",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体",
-        "人在回路"
-      ],
-      "eventIds": [
-        "EV-243e73016576fa43",
-        "EV-563843979fb55b9b"
-      ],
-      "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-25",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-63381a72aaf709"
-      ],
-      "companyIds": [],
-      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -11916,13 +11605,21 @@
       ],
       "firstSeen": "2026-06-11",
       "lastSeen": "2026-06-12",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-b81c8201acfc7639"
+      ],
+      "relationIds": [
+        "REL2-b34511f516d08ba3"
+      ],
       "legacyIds": [
         "PD-7c5faac759e8c7"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-b81c8201acfc7639"
+      ],
+      "companyNames": [
+        "华为"
+      ],
       "type": "产品/服务"
     },
     {
@@ -11989,13 +11686,21 @@
       ],
       "firstSeen": "2026-07-06",
       "lastSeen": "2026-07-07",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "relationIds": [
+        "REL2-2c87b80484b30f13"
+      ],
       "legacyIds": [
         "PD-ff2f5114125ff6"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "companyNames": [
+        "腾讯"
+      ],
       "type": "模型"
     },
     {
@@ -12061,40 +11766,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-2a817d99285e12c4",
-      "name": "Inference Era",
-      "sourceType": "product_candidate",
-      "aliases": [
-        "AI-Native Cloud Built",
-        "AI-Native Cloud Built for",
-        "AI-Native Cloud"
-      ],
-      "tags": [
-        "智能体"
-      ],
-      "eventIds": [
-        "EV-c846e768dad05441"
-      ],
-      "firstSeen": "2026-06-27",
-      "lastSeen": "2026-06-27",
-      "relatedEntityIds": [
-        "EN-042e9398f2cc8902"
-      ],
-      "relationIds": [
-        "REL2-e7354e218da95ebb"
-      ],
-      "legacyIds": [
-        "PD-9c8992fe6d4313"
-      ],
-      "companyIds": [
-        "EN-042e9398f2cc8902"
-      ],
-      "companyNames": [
-        "DigitalOcean"
-      ],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-78624f0a98e78301",
       "name": "Inkling",
       "sourceType": "product_candidate",
@@ -12130,7 +11801,9 @@
       "id": "EN-eab9999c377924ae",
       "name": "Instinct MI455X",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "Instinct MI455X AI"
+      ],
       "tags": [],
       "eventIds": [
         "EV-1dc482e2fe2f10bc",
@@ -12142,26 +11815,6 @@
       "relationIds": [],
       "legacyIds": [
         "PD-fb9e85a9f92d43"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-1e87a708856ea16d",
-      "name": "Instinct MI455X AI",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-ca819cdf9008f342"
-      ],
-      "firstSeen": "2026-07-24",
-      "lastSeen": "2026-07-24",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-b5e9459f51b0a3"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -12211,68 +11864,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-27c0390d5f3de698",
-      "name": "Introduces Maestro Case",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体"
-      ],
-      "eventIds": [
-        "EV-54c7f0169fbd500e"
-      ],
-      "firstSeen": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-dfa75c02a16e45"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-876fd4f1c5320cc4",
-      "name": "Introducing Claude Opus 4.8",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-03a6077b5d3f4475"
-      ],
-      "firstSeen": "2026-06-04",
-      "lastSeen": "2026-06-04",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-2796c656b23ddf"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-5567ce1995cc85d7",
-      "name": "Introducing Gemini Enterprise",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-a886a800f06ab9d6"
-      ],
-      "firstSeen": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-50dc93bed7ac67"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-a1b0d8a938903dc7",
       "name": "Jetson Thor",
       "sourceType": "product_candidate",
@@ -12305,9 +11896,11 @@
     },
     {
       "id": "EN-a4e7560e8d2b340f",
-      "name": "Jio Call",
+      "name": "Jio Call Agent",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "Jio Call"
+      ],
       "tags": [
         "智能体"
       ],
@@ -12324,7 +11917,7 @@
         "REL2-e3017d63f107b72b"
       ],
       "legacyIds": [
-        "PD-2fa96e388cc236"
+        "PD-c7f237d5dc6107"
       ],
       "companyIds": [
         "EN-28d79881d0386305"
@@ -12499,26 +12092,6 @@
       ],
       "legacyIds": [
         "PD-94cf8d56d99f44"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-4e80857d445cea34",
-      "name": "Keep",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-982a92fc86f1d20c"
-      ],
-      "firstSeen": "2026-07-01",
-      "lastSeen": "2026-07-02",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-1264bdfe5ff321"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -12712,13 +12285,21 @@
       ],
       "firstSeen": "2026-07-24",
       "lastSeen": "2026-07-25",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-d30e5ffc0ba9150b"
+      ],
+      "relationIds": [
+        "REL2-e1d65aab90a4ab28"
+      ],
       "legacyIds": [
         "PD-57f3fc21d3f961"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-d30e5ffc0ba9150b"
+      ],
+      "companyNames": [
+        "蚂蚁集团"
+      ],
       "type": "模型"
     },
     {
@@ -12957,6 +12538,30 @@
       "type": "产品/服务"
     },
     {
+      "id": "EN-ba961b5c6d1aee29",
+      "name": "M-Files Custom Agents",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "Custom"
+      ],
+      "tags": [
+        "智能体"
+      ],
+      "eventIds": [
+        "EV-dfbc2f02003c7595"
+      ],
+      "firstSeen": "2026-07-06",
+      "lastSeen": "2026-07-06",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-69b4e8d1925faf"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
       "id": "EN-b465eebe35e3889a",
       "name": "M-Files Custom Agents (Beta)",
       "sourceType": "product_candidate",
@@ -13041,7 +12646,8 @@
       "name": "Maestro Case",
       "sourceType": "product_candidate",
       "aliases": [
-        "Orchestrate Dynamic Business Processes"
+        "Orchestrate Dynamic Business Processes",
+        "Introduces Maestro Case"
       ],
       "tags": [
         "智能体"
@@ -13226,124 +12832,12 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-45066a1a95a3a0f2",
-      "name": "MattoBoard",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-2296ba412e4bcd07"
-      ],
-      "firstSeen": "2025-02-11",
-      "lastSeen": "2026-06-15",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-93edab2b165e31"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-b60e6df651264e14",
-      "name": "MCP",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体",
-        "MCP"
-      ],
-      "eventIds": [
-        "EV-49fcb200a72f0024"
-      ],
-      "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-18",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-c3ecbf70b781d0"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-fdb2cc367267ac57",
-      "name": "MCP AI",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体",
-        "MCP"
-      ],
-      "eventIds": [
-        "EV-8cb5b0ed18c7cdd8"
-      ],
-      "firstSeen": "2025-11-17",
-      "lastSeen": "2026-07-23",
-      "relatedEntityIds": [
-        "EN-e69f64149edae6b1"
-      ],
-      "relationIds": [
-        "REL2-5099d8dc9fc49803"
-      ],
-      "legacyIds": [
-        "PD-d75db91138f7e6"
-      ],
-      "companyIds": [
-        "EN-e69f64149edae6b1"
-      ],
-      "companyNames": [
-        "Runlayer"
-      ],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-d7f998cb97f37349",
-      "name": "MCP Connector",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-0df617a9a5ac727e"
-      ],
-      "firstSeen": "2026-07-02",
-      "lastSeen": "2026-07-02",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-a2cb00f21b00a6"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-46045341ebce3cd6",
-      "name": "MCP Connector for",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-0df617a9a5ac727e"
-      ],
-      "firstSeen": "2026-07-02",
-      "lastSeen": "2026-07-02",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-6352ffb22d14ff"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-ddf9916b459b6d77",
       "name": "MiMo Code V0.1.0",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "Code V0.1.0"
+      ],
       "tags": [
         "代码生成"
       ],
@@ -13451,28 +12945,6 @@
       "type": "模型"
     },
     {
-      "id": "EN-cf5378a2305a999f",
-      "name": "MiniMax 2.7 Trillion Parameter Model",
-      "sourceType": "product_candidate",
-      "aliases": [
-        "Chinese AI"
-      ],
-      "tags": [],
-      "eventIds": [
-        "EV-9da9d755019f241f"
-      ],
-      "firstSeen": "2026-07-09",
-      "lastSeen": "2026-07-09",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-099fdf3c2b9e8a"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "模型"
-    },
-    {
       "id": "EN-8950d72f381130ac",
       "name": "Modelplane",
       "sourceType": "product_candidate",
@@ -13559,50 +13031,6 @@
         "映泰"
       ],
       "type": "AI 硬件"
-    },
-    {
-      "id": "EN-7d48744f8d0f0657",
-      "name": "MTT S5000",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-083b0337ce30931c"
-      ],
-      "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-19",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-ad9cb13d1ac6b1"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-1725c58362aadc2a",
-      "name": "MuleRun",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体",
-        "计算机操作",
-        "数据分析"
-      ],
-      "eventIds": [
-        "EV-333851b077b606c8"
-      ],
-      "firstSeen": "2026-07-02",
-      "lastSeen": "2026-07-03",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-e0fd0532605572"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
     },
     {
       "id": "EN-c27c48199bb1e14b",
@@ -13737,6 +13165,38 @@
       "type": "模型"
     },
     {
+      "id": "EN-c8185a1a8a6595ad",
+      "name": "Mythos",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "Mythos AI"
+      ],
+      "tags": [
+        "网络安全"
+      ],
+      "eventIds": [
+        "EV-832fa2db95cfea6e"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-06-16",
+      "relatedEntityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "relationIds": [
+        "REL2-aa4d8b5683268ed3"
+      ],
+      "legacyIds": [
+        "PD-5f9e748257611c"
+      ],
+      "companyIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "companyNames": [
+        "Anthropic"
+      ],
+      "type": "产品/服务"
+    },
+    {
       "id": "EN-b59c577ed73536c6",
       "name": "Mythos 5",
       "sourceType": "product_candidate",
@@ -13769,28 +13229,6 @@
       "companyNames": [
         "Anthropic"
       ],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-c8185a1a8a6595ad",
-      "name": "Mythos AI",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "网络安全"
-      ],
-      "eventIds": [
-        "EV-832fa2db95cfea6e"
-      ],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-06-16",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-4baab49bb84137"
-      ],
-      "companyIds": [],
-      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -13885,26 +13323,6 @@
         "Google"
       ],
       "type": "产品/服务"
-    },
-    {
-      "id": "EN-5f3c568f90d87caf",
-      "name": "Napier",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-c7426bbb0eb26ba7"
-      ],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-06-16",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-929dfabac8899b"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "AI 硬件"
     },
     {
       "id": "EN-dd758281d0c70e60",
@@ -14267,13 +13685,21 @@
       ],
       "firstSeen": "2026-07-19",
       "lastSeen": "2026-07-20",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-721eb3fd31f8e1f6"
+      ],
+      "relationIds": [
+        "REL2-216bff5a55bd1890"
+      ],
       "legacyIds": [
         "PD-2f6acb833d7dc2"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-721eb3fd31f8e1f6"
+      ],
+      "companyNames": [
+        "壁仞科技"
+      ],
       "type": "产品/服务"
     },
     {
@@ -14397,28 +13823,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-c4de175a35d9d9d1",
-      "name": "On-Premises Agentic AI",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "智能体"
-      ],
-      "eventIds": [
-        "EV-c52947e480fa3347"
-      ],
-      "firstSeen": "2026-05-05",
-      "lastSeen": "2026-07-18",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-963bc409dc1e6d"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-b644c0a9d493976a",
       "name": "OpenCode",
       "sourceType": "product_candidate",
@@ -14441,28 +13845,6 @@
       "companyIds": [],
       "companyNames": [],
       "type": "产品/服务"
-    },
-    {
-      "id": "EN-b8220dc313f4ad31",
-      "name": "OpenCV 5",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "视觉语言"
-      ],
-      "eventIds": [
-        "EV-27fef7b87ee871ae"
-      ],
-      "firstSeen": "2026-06-06",
-      "lastSeen": "2026-06-06",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-cc2f3c466ed741"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "模型"
     },
     {
       "id": "EN-28fe761f463b7fae",
@@ -14835,26 +14217,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-419f2cd96ee122e3",
-      "name": "Project Indigo",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-bee410f8134cba5a"
-      ],
-      "firstSeen": "2026-07-20",
-      "lastSeen": "2026-07-21",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-a52582415fc06a"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-e86f78ed260caf24",
       "name": "Project Indigo 1.1",
       "sourceType": "product_candidate",
@@ -14882,6 +14244,7 @@
       "sourceType": "product_candidate",
       "aliases": [
         "Proton Order",
+        "Quote Entry Automation",
         "Re-Keying Era"
       ],
       "tags": [],
@@ -14966,26 +14329,6 @@
       "relationIds": [],
       "legacyIds": [
         "PD-cecb007f45818b"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-c21867c45d603d0b",
-      "name": "Quote Entry Automation",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-955b5810b3fca4c7"
-      ],
-      "firstSeen": "2026-07-21",
-      "lastSeen": "2026-07-23",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-2d85d8fe56e7f6"
       ],
       "companyIds": [],
       "companyNames": [],
@@ -15118,11 +14461,14 @@
       "name": "Qwen3.8",
       "sourceType": "product_candidate",
       "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-2e1352039c487bb0"
+      "tags": [
+        "开放权重"
       ],
-      "firstSeen": "2026-07-23",
+      "eventIds": [
+        "EV-2e1352039c487bb0",
+        "EV-b888d3eb5f192649"
+      ],
+      "firstSeen": "2026-07-20",
       "lastSeen": "2026-07-24",
       "relatedEntityIds": [],
       "relationIds": [],
@@ -15428,28 +14774,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-dd782f5241cd7e50",
-      "name": "Search",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "图像生成"
-      ],
-      "eventIds": [
-        "EV-a442b55d0bac5651"
-      ],
-      "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-15",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-3559d7accf0036"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-4f96127fdacbb405",
       "name": "Seedance 2.0 Mini",
       "sourceType": "product_candidate",
@@ -15560,28 +14884,6 @@
         "Google"
       ],
       "type": "模型"
-    },
-    {
-      "id": "EN-8f451ae7730ddb67",
-      "name": "Server Edition GPUs",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "制造业"
-      ],
-      "eventIds": [
-        "EV-625904809a9b14b8"
-      ],
-      "firstSeen": "2026-06-16",
-      "lastSeen": "2026-07-20",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-9aac010b9c6a47"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
     },
     {
       "id": "EN-2b5e92d1908d42f6",
@@ -15716,6 +15018,29 @@
       "type": "产品/服务"
     },
     {
+      "id": "EN-46045341ebce3cd6",
+      "name": "Smartsheet MCP Connector for Claude",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "MCP Connector",
+        "MCP Connector for"
+      ],
+      "tags": [],
+      "eventIds": [
+        "EV-0df617a9a5ac727e"
+      ],
+      "firstSeen": "2026-07-02",
+      "lastSeen": "2026-07-02",
+      "relatedEntityIds": [],
+      "relationIds": [],
+      "legacyIds": [
+        "PD-6c92ea512e48da"
+      ],
+      "companyIds": [],
+      "companyNames": [],
+      "type": "产品/服务"
+    },
+    {
       "id": "EN-5f59f157b0f3c885",
       "name": "Sovereign Agentic Studios",
       "sourceType": "product_candidate",
@@ -15838,13 +15163,21 @@
       ],
       "firstSeen": "2026-05-25",
       "lastSeen": "2026-05-25",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-2c348893efb2316e"
+      ],
+      "relationIds": [
+        "REL2-b2812101f3a49110"
+      ],
       "legacyIds": [
         "PD-af95213596c1b2"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-2c348893efb2316e"
+      ],
+      "companyNames": [
+        "StepFun"
+      ],
       "type": "产品/服务"
     },
     {
@@ -15930,13 +15263,21 @@
       ],
       "firstSeen": "2026-05-05",
       "lastSeen": "2026-06-15",
-      "relatedEntityIds": [],
-      "relationIds": [],
+      "relatedEntityIds": [
+        "EN-7c4cee6f28a9c6cc"
+      ],
+      "relationIds": [
+        "REL2-033196ca9d691fcd"
+      ],
       "legacyIds": [
         "PD-9a12c50f2f23af"
       ],
-      "companyIds": [],
-      "companyNames": [],
+      "companyIds": [
+        "EN-7c4cee6f28a9c6cc"
+      ],
+      "companyNames": [
+        "Setset"
+      ],
       "type": "产品/服务"
     },
     {
@@ -16081,24 +15422,56 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-2e0d0d78480f0cac",
-      "name": "Tasks",
+      "id": "EN-a33d30b5f34bdff5",
+      "name": "Teamily AI",
       "sourceType": "product_candidate",
       "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-982a92fc86f1d20c"
+      "tags": [
+        "智能体"
       ],
-      "firstSeen": "2026-07-01",
-      "lastSeen": "2026-07-02",
+      "eventIds": [
+        "EV-3e55e1cd1d54f6ef"
+      ],
+      "firstSeen": "2026-07-08",
+      "lastSeen": "2026-07-21",
       "relatedEntityIds": [],
       "relationIds": [],
       "legacyIds": [
-        "PD-55d8727a05eb80"
+        "PD-8518d08faed55e"
       ],
       "companyIds": [],
       "companyNames": [],
       "type": "产品/服务"
+    },
+    {
+      "id": "EN-5f3c568f90d87caf",
+      "name": "Tensordyne Napier",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "Napier"
+      ],
+      "tags": [],
+      "eventIds": [
+        "EV-c7426bbb0eb26ba7"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-06-16",
+      "relatedEntityIds": [
+        "EN-e482463e2656ed1c"
+      ],
+      "relationIds": [
+        "REL2-c65195f29de29271"
+      ],
+      "legacyIds": [
+        "PD-ec0571e660883d"
+      ],
+      "companyIds": [
+        "EN-e482463e2656ed1c"
+      ],
+      "companyNames": [
+        "Tensordyne"
+      ],
+      "type": "AI 硬件"
     },
     {
       "id": "EN-094b0c7d2d7a382e",
@@ -16222,36 +15595,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-c0d023c66edfc877",
-      "name": "U1 Pro",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "推理能力"
-      ],
-      "eventIds": [
-        "EV-314b1d80bc4aa50d"
-      ],
-      "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-19",
-      "relatedEntityIds": [
-        "EN-a8100d425f663eac"
-      ],
-      "relationIds": [
-        "REL2-47a0caf57696d3ff"
-      ],
-      "legacyIds": [
-        "PD-152e10dfb14150"
-      ],
-      "companyIds": [
-        "EN-a8100d425f663eac"
-      ],
-      "companyNames": [
-        "商汤科技"
-      ],
-      "type": "模型"
-    },
-    {
       "id": "EN-d84c1d1c315bc2f8",
       "name": "UFS 5.0",
       "sourceType": "product_candidate",
@@ -16276,6 +15619,38 @@
       ],
       "companyNames": [
         "Samsung"
+      ],
+      "type": "产品/服务"
+    },
+    {
+      "id": "EN-c4de175a35d9d9d1",
+      "name": "UiPath Automation Suite",
+      "sourceType": "product_candidate",
+      "aliases": [
+        "On-Premises Agentic AI"
+      ],
+      "tags": [
+        "智能体"
+      ],
+      "eventIds": [
+        "EV-c52947e480fa3347"
+      ],
+      "firstSeen": "2026-05-05",
+      "lastSeen": "2026-07-21",
+      "relatedEntityIds": [
+        "EN-f19600b9e18f7f27"
+      ],
+      "relationIds": [
+        "REL2-2cebf3233014cd07"
+      ],
+      "legacyIds": [
+        "PD-082c7d8d7c4086"
+      ],
+      "companyIds": [
+        "EN-f19600b9e18f7f27"
+      ],
+      "companyNames": [
+        "UiPath"
       ],
       "type": "产品/服务"
     },
@@ -16315,7 +15690,9 @@
       "id": "EN-1731c71acfed1ed3",
       "name": "V9X",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "V9X AI"
+      ],
       "tags": [],
       "eventIds": [
         "EV-c930058cf6ea047d"
@@ -16337,46 +15714,6 @@
       "companyNames": [
         "长城汽车"
       ],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-bfa86ed4368cf7d0",
-      "name": "V9X AI",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-c930058cf6ea047d"
-      ],
-      "firstSeen": "2026-05-18",
-      "lastSeen": "2026-05-19",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-b23df2e3b5fc1a"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-c9db5a13a1b509b2",
-      "name": "Veea Announces",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-92d28aef0c4b0a8a"
-      ],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-4ab2ab72f0548b"
-      ],
-      "companyIds": [],
-      "companyNames": [],
       "type": "产品/服务"
     },
     {
@@ -16524,26 +15861,6 @@
       "type": "产品/服务"
     },
     {
-      "id": "EN-9f39a037ee96670b",
-      "name": "Vera Rubin NVL72",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [],
-      "eventIds": [
-        "EV-c14e5185fd6bbe30"
-      ],
-      "firstSeen": "2026-07-22",
-      "lastSeen": "2026-07-22",
-      "relatedEntityIds": [],
-      "relationIds": [],
-      "legacyIds": [
-        "PD-b488a7935b2780"
-      ],
-      "companyIds": [],
-      "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
       "id": "EN-1c6392c229ed9069",
       "name": "Verifiers",
       "sourceType": "product_candidate",
@@ -16675,9 +15992,11 @@
     },
     {
       "id": "EN-f2fbe15b2a0782c0",
-      "name": "Win11 RP",
+      "name": "Win11 RP 预览版文件管理器",
       "sourceType": "product_candidate",
-      "aliases": [],
+      "aliases": [
+        "Win11 RP"
+      ],
       "tags": [],
       "eventIds": [
         "EV-e1e30a2a4a5232c6"
@@ -16687,40 +16006,10 @@
       "relatedEntityIds": [],
       "relationIds": [],
       "legacyIds": [
-        "PD-be2a0ece7353c6"
+        "PD-f32fe21f4bb381"
       ],
       "companyIds": [],
       "companyNames": [],
-      "type": "产品/服务"
-    },
-    {
-      "id": "EN-9d93b78264eb6acb",
-      "name": "WPS 365",
-      "sourceType": "product_candidate",
-      "aliases": [],
-      "tags": [
-        "知识与搜索"
-      ],
-      "eventIds": [
-        "EV-702ed039940800fb"
-      ],
-      "firstSeen": "2026-07-15",
-      "lastSeen": "2026-07-16",
-      "relatedEntityIds": [
-        "EN-3f726694f178ed7a"
-      ],
-      "relationIds": [
-        "REL2-80071fad8ab7c49a"
-      ],
-      "legacyIds": [
-        "PD-512096dfeb2acb"
-      ],
-      "companyIds": [
-        "EN-3f726694f178ed7a"
-      ],
-      "companyNames": [
-        "Kingsoft Office"
-      ],
       "type": "产品/服务"
     },
     {
@@ -18298,6 +17587,38 @@
       ]
     },
     {
+      "id": "EN-45cbca5f78f1ef44",
+      "name": "Thomas Dohmke",
+      "sourceType": "person_candidate",
+      "aliases": [
+        "CEO Thomas Dohmke"
+      ],
+      "tags": [
+        "科技与软件"
+      ],
+      "eventIds": [
+        "EV-618e5729145025e4"
+      ],
+      "firstSeen": "2026-02-10",
+      "lastSeen": "2026-06-06",
+      "relatedEntityIds": [
+        "EN-0decbc3b45f73b2b"
+      ],
+      "relationIds": [
+        "REL2-bb9d1a0fc52f9ceb"
+      ],
+      "type": "人物",
+      "handle": "",
+      "role": "",
+      "roleTitle": "创始人",
+      "organization": "Entire",
+      "organizationNames": [
+        "Entire"
+      ],
+      "affiliationEvidence": [],
+      "viewpointIds": []
+    },
+    {
       "id": "EN-f41223b7e1ce4931",
       "name": "Zara Zhang",
       "sourceType": "person_candidate",
@@ -18425,7 +17746,7 @@
         "EV-0f440082086c02df",
         "EV-2634b786bde9fb8e",
         "EV-6ce069b1845f5a52",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-c237f5dc53f0a923",
         "EV-653cbce2ccc79f8b",
         "EV-74dfbd82b47dc626",
@@ -18453,7 +17774,6 @@
         "EN-24af08c2634cb45a",
         "EN-9fbf261b62c1d7c0",
         "EN-0cc3af265406c202",
-        "EN-b0532e1af75cc4ab",
         "EN-7106dbc04a08ce3a",
         "EN-e78bdebae031095b",
         "EN-6fcba5d96a4fadfd",
@@ -18497,7 +17817,6 @@
         "EN-993599624a199fe0",
         "EN-c608c4787821de1b",
         "EN-ddf9916b459b6d77",
-        "EN-3aca03b9bb50f158",
         "EN-b644c0a9d493976a",
         "EN-412b57e712039032",
         "EN-6f7ac1823da81d2e",
@@ -18595,7 +17914,6 @@
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
         "EN-dca6ec9510fc0176",
-        "EN-b0532e1af75cc4ab",
         "EN-8147e6fed86d42c1",
         "EN-968e2d5b08687bf4",
         "EN-16fd849ce27f115b",
@@ -18603,7 +17921,6 @@
         "EN-f5791343a13abc71",
         "EN-9fbf261b62c1d7c0",
         "EN-e21783b898b55a31",
-        "EN-b6fe9abdb194022b",
         "EN-7a2f2aafb073c74e",
         "EN-3309b3b14807f39a",
         "EN-61a405a731497229",
@@ -18729,7 +18046,6 @@
         "EN-9e193e1ec8d75d41",
         "EN-51fd7dc086fcb858",
         "EN-2b6e51bec93e86c1",
-        "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
         "EN-0e008e2c06144ec8",
@@ -18849,7 +18165,6 @@
         "EN-bbf9aece05291ea4",
         "EN-bbdefa2950f49882",
         "EN-2b6e51bec93e86c1",
-        "EN-b0532e1af75cc4ab",
         "EN-d56aa2f9908f566a",
         "EN-3db1f560db626918",
         "EN-6e898ad0522fca30",
@@ -19017,7 +18332,6 @@
         "EN-e3863f813fe47240",
         "EN-047364b9be67f665",
         "EN-09c344df70df9660",
-        "EN-1725c58362aadc2a",
         "EN-bbdefa2950f49882",
         "EN-3aa38718f0399af9",
         "EN-e16fc821f34228d1",
@@ -19089,7 +18403,6 @@
         "EN-96eebba49dbbf422",
         "EN-e5dcb6b25180d1d6",
         "EN-3afbf365c56b769d",
-        "EN-b0532e1af75cc4ab",
         "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
         "EN-11507a0e2f5e69d5",
@@ -19224,6 +18537,7 @@
         "EV-702276a31f123374",
         "EV-fe519605ebb69aaf",
         "EV-2fea1664807824ce",
+        "EV-b888d3eb5f192649",
         "EV-b84035029a63e52e",
         "EV-3028dfadf94c8f4c",
         "EV-a06011da69abcc3d",
@@ -19245,8 +18559,9 @@
         "EN-bc1fc5140040180e",
         "EN-0d1e478de2157d48",
         "EN-6f7ac1823da81d2e",
+        "EN-047364b9be67f665",
+        "EN-0f553f48551aef83",
         "EN-d41ebd9f02722fc8",
-        "EN-b0532e1af75cc4ab",
         "EN-96eebba49dbbf422",
         "EN-10556ee2cee94c72",
         "EN-f8c237773fe24a98",
@@ -19305,6 +18620,8 @@
         "EN-abb32701117d50a9",
         "EN-bbdefa2950f49882",
         "EN-b4a139ced5659a4e",
+        "EN-0decbc3b45f73b2b",
+        "EN-45cbca5f78f1ef44",
         "EN-fc77f762a5c2afc1",
         "EN-1e0c30e583ebb8be",
         "EN-8d4321d936320802",
@@ -19378,7 +18695,6 @@
         "EV-94d9c8d5ac1e10de"
       ],
       "entityIds": [
-        "EN-b0532e1af75cc4ab",
         "EN-dca6ec9510fc0176",
         "EN-3ccbd9105a45d8fc",
         "EN-8147e6fed86d42c1",
@@ -19399,12 +18715,10 @@
         "EN-76a5d97e81b562c4",
         "EN-4c3a380e1f998775",
         "EN-c47b618e17c75f06",
-        "EN-1ec93c99d07feadd",
-        "EN-a6ed199f8859e462",
         "EN-21d8ce5988925f81",
+        "EN-a6ed199f8859e462",
         "EN-34da56029403e6f7",
         "EN-89e28a570dce8b18",
-        "EN-b70e8201c9feb94a",
         "EN-3673c8b4dba7409e",
         "EN-7b80ed96beed8c0a",
         "EN-7d1507284a5757ca",
@@ -19456,7 +18770,6 @@
         "EN-96eebba49dbbf422",
         "EN-f346eaca864441f9",
         "EN-c70eca6b0f88f44d",
-        "EN-b0532e1af75cc4ab",
         "EN-e5cc9e38970eacb5",
         "EN-cbc62794911ff31b",
         "EN-b1d07f1a647ba7fb",
@@ -19474,7 +18787,7 @@
         "EN-8147e6fed86d42c1",
         "EN-e274048227f164dc",
         "EN-1bf93b12e68cac56",
-        "EN-d9b1d7819af92e77",
+        "EN-8d323d8bba783aa3",
         "EN-01f1074bb52ff605",
         "EN-0e008e2c06144ec8",
         "EN-5388bc10736a0eff",
@@ -19603,7 +18916,6 @@
         "EN-3a7bd3e2360a3d29",
         "EN-03e2a9d18916f7c5",
         "EN-d41ebd9f02722fc8",
-        "EN-b0532e1af75cc4ab",
         "EN-96eebba49dbbf422",
         "EN-10556ee2cee94c72",
         "EN-f8c237773fe24a98",
@@ -19733,7 +19045,6 @@
         "EN-0dba03107c52ed3e",
         "EN-51a5b811990f2a2a",
         "EN-89e28a570dce8b18",
-        "EN-b70e8201c9feb94a",
         "EN-3673c8b4dba7409e",
         "EN-7b80ed96beed8c0a",
         "EN-ae4ea495016fb286"
@@ -19798,7 +19109,6 @@
         "EN-9fbf261b62c1d7c0",
         "EN-8d4321d936320802",
         "EN-e1517be14d06cdb7",
-        "EN-9ff7e3ae1b1ab43f",
         "EN-45c52af0feb0f285"
       ],
       "fdeIds": [
@@ -19831,7 +19141,7 @@
         "EV-b2e374d54b10b9af",
         "EV-0f440082086c02df",
         "EV-6ce069b1845f5a52",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-347d250e2769de9a",
         "EV-107725f2bdece882",
         "EV-70efbfcaadcdb259",
@@ -19855,7 +19165,6 @@
         "EN-3db1f560db626918",
         "EN-8f71c4871a160172",
         "EN-0cc3af265406c202",
-        "EN-b0532e1af75cc4ab",
         "EN-7106dbc04a08ce3a",
         "EN-3ccbd9105a45d8fc",
         "EN-15c785fe4bcb86f5",
@@ -19939,8 +19248,6 @@
         "EN-505ff8a27618ef39",
         "EN-7117fa8d72fb99b9",
         "EN-24dcf762a3ebce39",
-        "EN-b8220dc313f4ad31",
-        "EN-7e6582d8b1b179bf",
         "EN-b5251b35f15bedc4",
         "EN-d831f1170590ddb1"
       ],
@@ -19959,6 +19266,7 @@
         "EV-a354af52772334fd",
         "EV-26d2874c6ce028d6",
         "EV-6654f62015eff8e3",
+        "EV-50893df365a7097d",
         "EV-6fbbbfcdcec81df4",
         "EV-fd8ecce5de2f667d",
         "EV-5babb43f4b4d302f",
@@ -19974,8 +19282,9 @@
         "EN-2b6e51bec93e86c1",
         "EN-c9e6168149dd7cf6",
         "EN-92af3ce2fb97edf3",
+        "EN-3092ffb33792fe70",
+        "EN-94e7575ad6ff0db8",
         "EN-ec1c8f558ff61e34",
-        "EN-b0532e1af75cc4ab",
         "EN-01f1074bb52ff605",
         "EN-7ed9c9e7c260ed06",
         "EN-0e008e2c06144ec8",
@@ -20026,7 +19335,6 @@
         "EN-33ea25778e18d372",
         "EN-047364b9be67f665",
         "EN-09c344df70df9660",
-        "EN-1725c58362aadc2a",
         "EN-e16fc821f34228d1",
         "EN-16fe95bd48dbf178",
         "EN-c70eca6b0f88f44d",
@@ -20067,7 +19375,6 @@
         "EN-bbdefa2950f49882",
         "EN-834ab0b6e4492d23",
         "EN-01f1074bb52ff605",
-        "EN-dd782f5241cd7e50",
         "EN-ea3bd73e2b506e00",
         "EN-96eebba49dbbf422",
         "EN-534e99d81da1c54d",
@@ -20225,9 +19532,7 @@
         "EN-ac123e56b0168ec2",
         "EN-d5b8915a8c232010",
         "EN-2b6e51bec93e86c1",
-        "EN-6f216f2ea5b7a13e",
         "EN-31055a8d9856fce4",
-        "EN-204d4b18c9d78e88",
         "EN-7839fb10a8f14c70",
         "EN-ea3bd73e2b506e00",
         "EN-52fc33ae4d101a5d",
@@ -20515,7 +19820,6 @@
         "EN-3f726694f178ed7a",
         "EN-45e0ade11fed1e44",
         "EN-d8fbfdb6a8143da8",
-        "EN-9d93b78264eb6acb",
         "EN-b81c8201acfc7639",
         "EN-9a6ee79873b1fb7b"
       ],
@@ -20590,7 +19894,6 @@
         "EN-ee04228c5c6d8b08",
         "EN-7706c3c94d5f9b59",
         "EN-240389f4b730bad4",
-        "EN-b0532e1af75cc4ab",
         "EN-449777124b1466a8",
         "EN-01839aa42da88393",
         "EN-9fbf261b62c1d7c0",
@@ -20601,6 +19904,7 @@
         "EN-80d387ccb3289295",
         "EN-be972f28adbc6e84",
         "EN-bbdefa2950f49882",
+        "EN-8d323d8bba783aa3",
         "EN-2fc9fff8ab7f35aa",
         "EN-8efebac68a48c369",
         "EN-16fd849ce27f115b",
@@ -20626,7 +19930,6 @@
         "EN-94c93b5ab886f2d9",
         "EN-d7aba0f660c463d8",
         "EN-e58ee91f1d57df05",
-        "EN-8f451ae7730ddb67",
         "EN-ce635c4eabff5e4f",
         "EN-ab9e3beebd83960d",
         "EN-61cce404a45c3545",
@@ -20666,6 +19969,7 @@
         "EV-bffc68e7bb4d598b",
         "EV-901155ab700a7e8e",
         "EV-2069f6a931b8c9d6",
+        "EV-c84b6d7338f87990",
         "EV-f6e7a4fe77d7f5c9",
         "EV-6be89ebfbf8de6be",
         "EV-b29878fdf79f2ac5",
@@ -20759,6 +20063,7 @@
         "EV-910ebb509f1d437b",
         "EV-d4c9326c53dd927a",
         "EV-d8fc5fc40bccc0bc",
+        "EV-f31feb5ed41be8f2",
         "EV-f0966bc867e1483e",
         "EV-da9bb2c98c1ce8cd",
         "EV-4b545e310ded2baa",
@@ -20848,7 +20153,7 @@
         "EV-cc974e0031c69715",
         "EV-d4278191ae11f198",
         "EV-ed272c57e1513d3f",
-        "EV-ab3e820aa6d92542",
+        "EV-4f36e494d9281522",
         "EV-b43f22d8bc7fec3f",
         "EV-86ab9c2f1416e9d8",
         "EV-3b1d1dd87442e7f1",
@@ -21009,6 +20314,7 @@
         "EV-3550e9863266ea96",
         "EV-7ff24ae733821395",
         "EV-c52947e480fa3347",
+        "EV-8558c9cf2e0202dd",
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-747d431512701d65",
@@ -21043,6 +20349,7 @@
         "EN-12765295db4f1e79",
         "EN-73ef176d9f12809e",
         "EN-96eebba49dbbf422",
+        "EN-05cd4b807503b0f2",
         "EN-270e2cfd11014ef8",
         "EN-522656609ff15589",
         "EN-b0bc23fa8e20c543",
@@ -21056,7 +20363,6 @@
         "EN-ea3bd73e2b506e00",
         "EN-4d748ebd71af03a7",
         "EN-3afbf365c56b769d",
-        "EN-b0532e1af75cc4ab",
         "EN-7a9c94a8c201bcc2",
         "EN-d6386c59a6bcfcb1",
         "EN-19313d8b24774cbf",
@@ -21156,6 +20462,7 @@
         "EN-866e1f18c9370d5d",
         "EN-b5738c169b693bee",
         "EN-be972f28adbc6e84",
+        "EN-8d323d8bba783aa3",
         "EN-cd65acdabcbbd55c",
         "EN-2fc9fff8ab7f35aa",
         "EN-8efebac68a48c369",
@@ -21173,7 +20480,6 @@
         "EN-b3f5e31ec86a08a9",
         "EN-c55f528b3a23dc5b",
         "EN-ceef9085ddc3348c",
-        "EN-d9b1d7819af92e77",
         "EN-88e2cce43eeadb36",
         "EN-276a8bc458036a1a",
         "EN-5239a379b6326549",
@@ -21214,7 +20520,6 @@
         "EN-833940e4d17c9df3",
         "EN-240389f4b730bad4",
         "EN-e1517be14d06cdb7",
-        "EN-9ff7e3ae1b1ab43f",
         "EN-45c52af0feb0f285",
         "EN-8d57f84bd1847b24",
         "EN-a7baed72c308ce88",
@@ -21238,10 +20543,8 @@
         "EN-62503b0d3dcfd096",
         "EN-09d3eb0b07daf955",
         "EN-a1adb91065c5a347",
-        "EN-6f216f2ea5b7a13e",
         "EN-e16fc821f34228d1",
         "EN-6f21a653c48f4f19",
-        "EN-6ef7552b4631e789",
         "EN-dd758281d0c70e60",
         "EN-985e1a7c957148f9",
         "EN-2c348893efb2316e",
@@ -21268,7 +20571,6 @@
         "EN-820a72d1d4b51ae7",
         "EN-74692028630429c7",
         "EN-e6483498af8bd2cd",
-        "EN-b60e6df651264e14",
         "EN-e07654c7cc29acbd",
         "EN-842fcb5e60989a03",
         "EN-5f6367300dabc238",
@@ -21319,16 +20621,13 @@
         "EN-0a1750ec669a270c",
         "EN-c141d2237427f30d",
         "EN-a9f74d68b2b7c964",
-        "EN-098a7df7f42ccf8b",
         "EN-761c4b9294ee43a7",
         "EN-3eee4f30151db45a",
         "EN-42f0b44cc91cc5e0",
         "EN-94caa859c22071b1",
         "EN-09c344df70df9660",
-        "EN-1725c58362aadc2a",
         "EN-c31a277efac23f52",
         "EN-307557d99a7eb726",
-        "EN-557203e8cc173124",
         "EN-2ba325ce6f8e3dc9",
         "EN-96a4bc2602655473",
         "EN-2c063f604e634100",
@@ -21352,7 +20651,6 @@
         "EN-bc1fc5140040180e",
         "EN-f19600b9e18f7f27",
         "EN-478e0ad4e0940af0",
-        "EN-27c0390d5f3de698",
         "EN-27b78f50b2d3d969",
         "EN-1b0a2528912919f4",
         "EN-7d1507284a5757ca",
@@ -21393,7 +20691,6 @@
         "EN-d8494bb34d6ddc43",
         "EN-b8c236d640d6a5fb",
         "EN-8a6a6c7694a73ebd",
-        "EN-36076a5178595978",
         "EN-73df89424ba2e889",
         "EN-72e8088a05b38ae3",
         "EN-833cd615d86b73ca",
@@ -21423,12 +20720,14 @@
         "EN-b9db1ff13ae8496e",
         "EN-e99987e5c504a796",
         "EN-c4de175a35d9d9d1",
+        "EN-ec6b03fc92dcfc89",
+        "EN-552088238720cb6f",
+        "EN-c0d6535a9383cb62",
         "EN-3aa7606e6aa345a3",
         "EN-4d803c223cec4cc4",
         "EN-fa5bbac1048b9190",
         "EN-5f59f157b0f3c885",
         "EN-b7bea343b08cce2c",
-        "EN-fdb2cc367267ac57",
         "EN-4a639cb888a15d75",
         "EN-65b3aa2f527deeef",
         "EN-96045bee6a2d2527",
@@ -21483,6 +20782,7 @@
         "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [
+        "HW-18e9985f2e93555c",
         "HW-2ce4c2fb193555e3",
         "HW-25ce41fab12d9ef2"
       ],
@@ -21544,7 +20844,6 @@
       "entityIds": [
         "EN-c70eca6b0f88f44d",
         "EN-e6483498af8bd2cd",
-        "EN-b60e6df651264e14",
         "EN-08b6a35be337edce",
         "EN-9fbf261b62c1d7c0",
         "EN-d2f4e09cb01afa3c",
@@ -21562,7 +20861,6 @@
         "EN-761a66c29a55bc53",
         "EN-3aa7606e6aa345a3",
         "EN-bbdefa2950f49882",
-        "EN-fdb2cc367267ac57",
         "EN-e69f64149edae6b1",
         "EN-5504f88c63fe766d"
       ],

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-be1a3c9420d88ea5",
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-9c8ae69b84f21a2e"
+    ],
     "firstSeen": "2026-07-06",
     "lastSeen": "2026-07-07",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-2c87b80484b30f13"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -61,8 +65,95 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-9c8ae69b84f21a2e",
+      "name": "腾讯",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Tencent"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d3054a8a2b62a503",
+        "EV-87432dbb99cd6033",
+        "EV-427081ec574b43bb",
+        "EV-acaf06b262d9c3db",
+        "EV-27b69ea604475b72",
+        "EV-da9bb2c98c1ce8cd",
+        "EV-afcd5426f5c01dc7",
+        "EV-619e33abf3f9bfbf",
+        "EV-be2f6bfcad93c42f",
+        "EV-c7b81290859057b0",
+        "EV-c710c75d9c823a49",
+        "EV-59fb7ba1fd6ac55e",
+        "EV-aa25937649956e62",
+        "EV-86ab9c2f1416e9d8",
+        "EV-c5a59cb4cc9d7e8e",
+        "EV-de54542fd7e2282c",
+        "EV-3167e6eed75597e9",
+        "EV-9e35de25113a9269",
+        "EV-ad2e4fe6a149d95d",
+        "EV-c2f5b59db9912018",
+        "EV-57e6392fe3bb69cd",
+        "EV-1a073cd22d1bfa59",
+        "EV-a498b12f3fa2197e",
+        "EV-c11ee0da38376254",
+        "EV-6a6ff349579765ad",
+        "EV-7ff24ae733821395",
+        "EV-86537be17d50ff20",
+        "EV-6b7917bd7edd4bde",
+        "EV-e70b2c66b996d138",
+        "EV-8b4f7844af234ed8",
+        "EV-fc8b280e83232d6f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-multimodal",
+        "TX-use_case-robotics_automation",
+        "TX-technology-vision_language",
+        "TX-technology-long_context",
+        "TX-technology-open_weights",
+        "TX-industry-media_entertainment"
+      ],
+      "relatedEntityIds": [
+        "EN-a1adb91065c5a347",
+        "EN-f0da91960830b394",
+        "EN-ea3bd73e2b506e00",
+        "EN-be1a3c9420d88ea5",
+        "EN-30a63b26b06e096e"
+      ],
+      "firstSeen": "2026-05-18",
+      "lastSeen": "2026-07-26"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-2c87b80484b30f13",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9c8ae69b84f21a2e",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-be1a3c9420d88ea5",
+      "object_type": "entity",
+      "event_id": "EV-c2f5b59db9912018",
+      "claim_refs": [
+        "CL-8aab7b79006b4541",
+        "CL-f213f8f529bbde36",
+        "CL-3a8619e7c67dab96"
+      ],
+      "source_refs": [
+        "SA-f44e4ab94cfc5d44"
+      ],
+      "data_date": "2026-07-07",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

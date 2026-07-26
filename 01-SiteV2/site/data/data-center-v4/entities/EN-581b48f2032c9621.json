@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-581b48f2032c9621",
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-721eb3fd31f8e1f6"
+    ],
     "firstSeen": "2026-07-19",
     "lastSeen": "2026-07-20",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-216bff5a55bd1890"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -60,8 +64,51 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-721eb3fd31f8e1f6",
+      "name": "壁仞科技",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f5483fed83363fa1"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-581b48f2032c9621"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-216bff5a55bd1890",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-721eb3fd31f8e1f6",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-581b48f2032c9621",
+      "object_type": "entity",
+      "event_id": "EV-f5483fed83363fa1",
+      "claim_refs": [
+        "CL-4803481bd6c46420",
+        "CL-940b75befd32b922",
+        "CL-136ba5c1ac1faec3"
+      ],
+      "source_refs": [
+        "SA-fbb91e6c03b2774c"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

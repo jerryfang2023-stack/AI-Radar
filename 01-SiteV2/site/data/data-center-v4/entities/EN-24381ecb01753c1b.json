@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-24381ecb01753c1b",
@@ -25,10 +25,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-b81c8201acfc7639"
+    ],
     "firstSeen": "2026-06-11",
     "lastSeen": "2026-06-12",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-b34511f516d08ba3"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -60,8 +64,83 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-b81c8201acfc7639",
+      "name": "华为",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "Huawei"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-87432dbb99cd6033",
+        "EV-9563aa162529aab0",
+        "EV-b726a9cda7beae64",
+        "EV-a9810b47e0408a05",
+        "EV-afcd5426f5c01dc7",
+        "EV-26d2874c6ce028d6",
+        "EV-b93102125cc062e3",
+        "EV-6c361125c3f50bb6",
+        "EV-3126fb08491de669",
+        "EV-c710c75d9c823a49",
+        "EV-b8bc579bfa5797a2",
+        "EV-8a9b12665a3e40a0",
+        "EV-2d5746e41f96c3c2",
+        "EV-26c1248692fdcc10",
+        "EV-20cdbe59ba2a1359",
+        "EV-3c51bcb5e99d2b68",
+        "EV-2ce9542169b5dfda",
+        "EV-8e6f9c324aa0b2f3",
+        "EV-0597e07d7e73051a"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-code_generation",
+        "TX-technology-on_device",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
+        "TX-use_case-knowledge_search"
+      ],
+      "relatedEntityIds": [
+        "EN-0c2f714483c404ad",
+        "EN-eec6044eb8e4941a",
+        "EN-24381ecb01753c1b"
+      ],
+      "firstSeen": "2026-05-25",
+      "lastSeen": "2026-07-26"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-b34511f516d08ba3",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-b81c8201acfc7639",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-24381ecb01753c1b",
+      "object_type": "entity",
+      "event_id": "EV-2ce9542169b5dfda",
+      "claim_refs": [
+        "CL-c61188c3b5bb06e7",
+        "CL-dc99caf32a5e5bbf",
+        "CL-130338c5508e70c3"
+      ],
+      "source_refs": [
+        "SA-fee0eb6617aa3179"
+      ],
+      "data_date": "2026-06-12",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": []

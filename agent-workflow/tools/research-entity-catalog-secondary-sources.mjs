@@ -16,7 +16,7 @@ const concurrency = Math.max(1, Math.min(6, Number(args.get("concurrency") || 3)
 const limit = Math.max(0, Number(args.get("limit") || 0));
 const selectedDecisions = new Set(String(args.get("decisions") || "requires_review,insufficient_evidence").split(",").filter(Boolean));
 const correctionConfidenceBelow = Math.max(0, Math.min(1, Number(args.get("correction-confidence-below") || 0)));
-const model = process.env.DEEPSEEK_PRO_MODEL || process.env.DEEPSEEK_MODEL || deepSeekModels().pro;
+const model = args.get("model") || process.env.DEEPSEEK_PRO_MODEL || deepSeekModels().pro;
 const promptVersion = "ENTITY-SECONDARY-SEARCH-V1.0";
 if (!process.env.DEEPSEEK_PRO_MODEL) process.env.DEEPSEEK_PRO_MODEL = model;
 

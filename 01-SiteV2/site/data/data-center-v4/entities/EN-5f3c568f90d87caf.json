@@ -4,18 +4,20 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-5f3c568f90d87caf",
-    "name": "Napier",
+    "name": "Tensordyne Napier",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
-    "aliases": [],
+    "aliases": [
+      "Napier"
+    ],
     "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
@@ -25,10 +27,14 @@
     ],
     "viewpointIds": [],
     "classificationRefs": [],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-e482463e2656ed1c"
+    ],
     "firstSeen": "2026-06-16",
     "lastSeen": "2026-06-16",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-c65195f29de29271"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -67,8 +73,49 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-e482463e2656ed1c",
+      "name": "Tensordyne",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-c7426bbb0eb26ba7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-5f3c568f90d87caf"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-06-16"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-c65195f29de29271",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-e482463e2656ed1c",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-5f3c568f90d87caf",
+      "object_type": "entity",
+      "event_id": "EV-c7426bbb0eb26ba7",
+      "claim_refs": [
+        "CL-6c4db9db9579073e"
+      ],
+      "source_refs": [
+        "SA-fd381a0d98d354cb"
+      ],
+      "data_date": "2026-06-16",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [],
   "fde": [],
   "hardware": [

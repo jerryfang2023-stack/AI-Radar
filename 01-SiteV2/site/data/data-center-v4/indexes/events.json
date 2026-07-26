@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "eventTypes": {
     "model_release": {
@@ -1391,6 +1391,70 @@
       "publisher": "globenewswire.com"
     },
     {
+      "id": "EV-c84b6d7338f87990",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Neo Security 获 1 亿美元融资，为企业 AI 智能体构建安全控制层",
+      "originalTitle": "Neo Security bags $100M to build the secure control layer for enterprise AI agents - SiliconANGLE",
+      "subject": "Neo Security Inc.",
+      "action": "funding",
+      "object": "$100 million",
+      "metrics": [
+        "$100 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-05cd4b807503b0f2"
+      ],
+      "entityNames": [
+        "Neo Security Inc."
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://siliconangle.com/2026/07/20/neo-security-bags-100m-build-secure-control-layer-enterprise-ai-agents",
+      "publisher": "siliconangle.com"
+    },
+    {
       "id": "EV-d7a7244d620a2142",
       "dataDate": "2026-07-21",
       "date": "2026-07-20",
@@ -1840,12 +1904,10 @@
       ],
       "entityIds": [
         "EN-fdecfc27f301da9c",
-        "EN-96eebba49dbbf422",
         "EN-8d4321d936320802"
       ],
       "entityNames": [
         "Inference cloud operator General Compute",
-        "Intel",
         "NVIDIA"
       ],
       "productName": "",
@@ -8117,14 +8179,10 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-b0a914ead94a88da",
-        "EN-3db1f560db626918",
-        "EN-96eebba49dbbf422"
+        "EN-b0a914ead94a88da"
       ],
       "entityNames": [
-        "Aligned",
-        "Canva",
-        "Intel"
+        "Aligned"
       ],
       "productName": "",
       "products": [],
@@ -20342,7 +20400,7 @@
       "publisher": "Avoca AI"
     },
     {
-      "id": "EV-0b7f11c0c18b8bf4",
+      "id": "EV-f9fe9f781c6ce583",
       "dataDate": "2026-07-19",
       "date": "2026-04-07",
       "updatedDate": "2026-07-19",
@@ -20371,7 +20429,9 @@
         "$17.9M"
       ],
       "locations": [],
-      "missingFields": [],
+      "missingFields": [
+        "entities"
+      ],
       "conflicts": [],
       "tags": [],
       "facets": {
@@ -20383,12 +20443,8 @@
       },
       "classifications": [],
       "displayTags": [],
-      "entityIds": [
-        "EN-96eebba49dbbf422"
-      ],
-      "entityNames": [
-        "Intel"
-      ],
+      "entityIds": [],
+      "entityNames": [],
       "productName": "",
       "products": [],
       "sourceUrl": "https://eqvista.com/ai-startup-fundraising-trends",
@@ -22066,12 +22122,10 @@
         }
       ],
       "entityIds": [
-        "EN-240389f4b730bad4",
-        "EN-b0532e1af75cc4ab"
+        "EN-240389f4b730bad4"
       ],
       "entityNames": [
-        "AMD",
-        "Rime"
+        "AMD"
       ],
       "productName": "",
       "products": [],
@@ -23402,6 +23456,68 @@
       "publisher": "The Decoder AI News"
     },
     {
+      "id": "EV-f31feb5ed41be8f2",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-21",
+      "eventType": "hardware_deployment",
+      "eventTypeLabel": "硬件部署",
+      "eventGroup": "AI 硬件",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "微软借助AMD打造大规模AI CPU与GPU集群",
+      "originalTitle": "Microsoft Taps AMD For At Scale AI CPU And GPU Clusters",
+      "subject": "Microsoft",
+      "action": "hardware_deployment",
+      "object": "AMD Helios racks with MI455X GPUs and Venice Epyc 9006 CPUs",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://nextplatform.com/cloud/2026/07/20/microsoft-taps-amd-for-at-scale-ai-cpu-and-gpu-clusters/5275161",
+      "publisher": "nextplatform.com"
+    },
+    {
       "id": "EV-0d08cee88fe18483",
       "dataDate": "2026-07-22",
       "date": "2026-07-20",
@@ -23571,6 +23687,55 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/979/174.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-e7e2dfbc41a639d2",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "美国公共卫生部门将在 PULSE 项目中测试 OpenAI 与 Anthropic 的 AI 模型",
+      "originalTitle": "",
+      "subject": "US public health agencies",
+      "action": "deployment",
+      "object": "OpenAI and Anthropic AI models",
+      "metrics": [],
+      "locations": [
+        "United States"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-204ac1214ed28159",
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-4d748ebd71af03a7"
+      ],
+      "entityNames": [
+        "US public health agencies",
+        "OpenAI",
+        "Anthropic",
+        "Accenture"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://artificialintelligence-news.com/news/openai-anthropic-public-health-ai",
+      "publisher": "Artificial Intelligence News（RSS）"
     },
     {
       "id": "EV-4740121f428e4bda",
@@ -23815,12 +23980,10 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-50c0152c2952082a",
-        "EN-96eebba49dbbf422"
+        "EN-50c0152c2952082a"
       ],
       "entityNames": [
-        "China",
-        "Intel"
+        "China"
       ],
       "productName": "",
       "products": [],
@@ -24180,6 +24343,51 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/978/019.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-f2750a3d66e06fe7",
+      "dataDate": "2026-07-19",
+      "date": "2026-07-16",
+      "updatedDate": "2026-07-19",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Sharon AI 签署价值 13.2 亿美元的五年期云计算服务协议",
+      "originalTitle": "Sharon AI Announces US$1.32 Billion Five-Year Cloud Computing Service Agreement - SHARON AI",
+      "subject": "Sharon AI",
+      "action": "procurement_contract",
+      "object": "global Artificial Intelligence Lab",
+      "metrics": [
+        "$1.32 billion"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8f5ef31ed5125786"
+      ],
+      "entityNames": [
+        "Sharon AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://sharonai.com/press-releases/sharon-ai-announces-us1-32-billion-five-year-cloud-computing-service-agreement",
+      "publisher": "sharonai.com"
     },
     {
       "id": "EV-cafe435ddd007821",
@@ -24633,47 +24841,6 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/976/803.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-aa6f83d2515ee546",
-      "dataDate": "2026-07-21",
-      "date": "2026-07-14",
-      "updatedDate": "2026-07-21",
-      "eventType": "deployment",
-      "eventTypeLabel": "部署",
-      "eventGroup": "部署与案例",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "从AI试飞到生产：前线部署工程师的角色",
-      "originalTitle": "From AI Pilot to Production: The Role of Forward Deployed Engineers",
-      "subject": "From AI",
-      "action": "Pilot",
-      "object": "to Production: The Role of Forward Deployed Engineers",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-25690754dd14bd1b"
-      ],
-      "entityNames": [
-        "From AI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://manras.com/agentforce-fde",
-      "publisher": "manras.com"
     },
     {
       "id": "EV-4b545e310ded2baa",
@@ -33039,6 +33206,45 @@
       "productName": "",
       "products": [],
       "sourceUrl": "https://ithome.com/0/979/773.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-53363a500447afe6",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "王祖贤息影 22 年后授权 AI 形象，网易《天下》合作推出首个 AI 短片《倩影》",
+      "originalTitle": "",
+      "subject": "王祖贤",
+      "action": "合作",
+      "object": "推出首个 AI 短片《倩影》",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/979/089.htm",
       "publisher": "IT之家（RSS）"
     },
     {
@@ -42444,14 +42650,12 @@
       ],
       "entityIds": [
         "EN-ba728f8ca730921f",
-        "EN-96eebba49dbbf422",
         "EN-cb3cddd8f161d840",
         "EN-71f3ed83fd5a3ed9",
         "EN-e3c189c04bf15baf"
       ],
       "entityNames": [
         "Acrab",
-        "Intel",
         "SoC",
         "LIX 1 SoC",
         "Agent Box"
@@ -42461,23 +42665,17 @@
         {
           "name": "SoC",
           "type": "产品/服务",
-          "ownerNames": [
-            "Intel"
-          ]
+          "ownerNames": []
         },
         {
           "name": "LIX 1 SoC",
           "type": "产品/服务",
-          "ownerNames": [
-            "Intel"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Agent Box",
           "type": "产品/服务",
-          "ownerNames": [
-            "Intel"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://prnewswire.com/news-releases/acrab-unveils-glix-1-soc-and-agent-box-bringing-state-of-the-art-ai-to-the-edge-302833081.html",
@@ -47172,7 +47370,58 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-684f286ef629ed0d",
+      "id": "EV-1e611bcabcb049e9",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "微软经典版 Outlook 今年将整合 Copilot AI 起草邮件功能",
+      "originalTitle": "",
+      "subject": "微软",
+      "action": "product_release",
+      "object": "经典版 Outlook Copilot 起草电子邮件功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-850335b3887e0eb4"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "Copilot AI"
+      ],
+      "productName": "Copilot AI",
+      "products": [
+        {
+          "name": "Copilot AI",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/297.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-3b6252b20720e697",
       "dataDate": "2026-07-21",
       "date": "2026-07-21",
       "updatedDate": "2026-07-21",
@@ -47202,21 +47451,17 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-15f1e7e60a8c6c0f"
+        "EN-cb4754c48f8023d0"
       ],
       "entityNames": [
-        "Anthropic",
-        "Claude Code v2.1.216"
+        "Claude Code"
       ],
-      "productName": "Claude Code v2.1.216",
+      "productName": "Claude Code",
       "products": [
         {
-          "name": "Claude Code v2.1.216",
+          "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.216",
@@ -47297,6 +47542,55 @@
       "publisher": "MarkTechPost（RSS）"
     },
     {
+      "id": "EV-e02d3b5de666f349",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-21",
+      "updatedDate": "2026-07-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Adobe 的“自然外观”相机应用拥抱生成式 AI",
+      "originalTitle": "Adobe’s ‘natural look’ camera app embraces generative AI",
+      "subject": "Adobe",
+      "action": "product_release",
+      "object": "Indigo camera app version 1.1 with AI Playground suite",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ee9021c84f33366b",
+        "EN-cbc4f487f5f75626"
+      ],
+      "entityNames": [
+        "Adobe",
+        "AI Playground"
+      ],
+      "productName": "AI Playground",
+      "products": [
+        {
+          "name": "AI Playground",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update",
+      "publisher": "The Verge AI"
+    },
+    {
       "id": "EV-f3cc0845ce442e6b",
       "dataDate": "2026-07-21",
       "date": "2026-07-21",
@@ -47346,6 +47640,286 @@
       ],
       "sourceUrl": "https://ithome.com/0/979/273.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-4f36e494d9281522",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "OpenAI 重获二级市场投资者青睐，Anthropic 仍是最热门标的",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "product_release",
+      "object": "OpenAI 重获二级市场投资者青睐，Anthropic 仍是最热门标的",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/979/213.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-50893df365a7097d",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "《第九区》导演尼尔·布洛姆坎普发布首部完全由 AI 视频生成技术制作的短片",
+      "originalTitle": "District 9 director Neill Blomkamp releases first short film made entirely with AI video generation",
+      "subject": "District 9 director Neill Blomkamp",
+      "action": "releases",
+      "object": "first short film made entirely with AI video generation",
+      "metrics": [],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成"
+        }
+      ],
+      "entityIds": [
+        "EN-3092ffb33792fe70",
+        "EN-94e7575ad6ff0db8"
+      ],
+      "entityNames": [
+        "District 9",
+        "Neill Blomkamp"
+      ],
+      "productName": "District 9",
+      "products": [
+        {
+          "name": "District 9",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Neill Blomkamp",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/district-9-director-neill-blomkamp-releases-first-short-film-made-entirely-with-ai-video-generation",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-636c0bb7661201cc",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "eventGroup": "AI 硬件",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "谷歌研发 Frozen v2 芯片，将 Gemini 模型架构固化进硬件，能效可达现有自研芯片 6-10 倍",
+      "originalTitle": "",
+      "subject": "谷歌",
+      "action": "hardware_product",
+      "object": "Frozen v2 芯片",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-630d9c19095e906b"
+      ],
+      "entityNames": [
+        "Google",
+        "Frozen v2"
+      ],
+      "productName": "Frozen v2",
+      "products": [
+        {
+          "name": "Frozen v2",
+          "type": "AI 硬件",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/979/251.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-65666f7be5ac5ca2",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
+      "originalTitle": "",
+      "subject": "NVIDIA",
+      "action": "发布 Cosmos 3 Edge：4B 参数开源世界模型",
+      "object": "，为机器人及边缘 AI 提供实时推理与动作生成",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-e07654c7cc29acbd"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Cosmos 3 Edge"
+      ],
+      "productName": "Cosmos 3 Edge",
+      "products": [
+        {
+          "name": "Cosmos 3 Edge",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos3edge",
+      "publisher": "Hugging Face：Blog（RSS）"
     },
     {
       "id": "EV-79913a2e72f0269b",
@@ -47581,107 +48155,6 @@
       "publisher": "IT之家（RSS）"
     },
     {
-      "id": "EV-ab3e820aa6d92542",
-      "dataDate": "2026-07-21",
-      "date": "2026-07-20",
-      "updatedDate": "2026-07-21",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "OpenAI 重获二级市场投资者青睐，Anthropic 仍是最热门标的",
-      "originalTitle": "",
-      "subject": "OpenAI",
-      "action": "product_release",
-      "object": "OpenAI 重获二级市场投资者青睐，Anthropic 仍是最热门标的",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "id": "software_development",
-            "dimensionName": "应用场景",
-            "name": "软件开发"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        },
-        {
-          "dimensionId": "use_case",
-          "id": "software_development",
-          "dimensionName": "应用场景",
-          "name": "软件开发"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "id": "software_development",
-          "dimensionName": "应用场景",
-          "name": "软件开发"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        }
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-7d3194f79e645c42"
-      ],
-      "entityNames": [
-        "Anthropic",
-        "OpenAI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://ithome.com/0/979/213.htm",
-      "publisher": "IT之家（RSS）"
-    },
-    {
       "id": "EV-b43f22d8bc7fec3f",
       "dataDate": "2026-07-21",
       "date": "2026-07-20",
@@ -47772,6 +48245,87 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-b888d3eb5f192649",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Qwen 3.8 ✨、Kimi Code CLI 👨‍💻、Netflix 的 LLM 技术栈 🤖 TLDR",
+      "originalTitle": "Qwen 3.8 ✨, Kimi Code CLI 👨‍💻, Netflix’s LLM stack 🤖 TLDR",
+      "subject": "Alibaba",
+      "action": "model_release",
+      "object": "Qwen3.8",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        }
+      ],
+      "entityIds": [
+        "EN-047364b9be67f665",
+        "EN-0f553f48551aef83",
+        "EN-10a27c6240d18dbe"
+      ],
+      "entityNames": [
+        "Alibaba",
+        "Qwen3.8",
+        "Qwen 3.8"
+      ],
+      "productName": "Qwen3.8",
+      "products": [
+        {
+          "name": "Qwen3.8",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        },
+        {
+          "name": "Qwen 3.8",
+          "type": "模型",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://tldr.tech/ai/2026-07-20",
+      "publisher": "TLDR AI Newsletter"
+    },
+    {
       "id": "EV-bc41a3060f11ca2d",
       "dataDate": "2026-07-21",
       "date": "2026-07-20",
@@ -47825,59 +48379,6 @@
       ],
       "sourceUrl": "https://ithome.com/0/979/146.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-bee410f8134cba5a",
-      "dataDate": "2026-07-21",
-      "date": "2026-07-20",
-      "updatedDate": "2026-07-21",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "Adobe 实验性相机应用 Project Indigo 新增 AI 照片批评与编辑建议功能",
-      "originalTitle": "",
-      "subject": "Adobe 实验性相机应用 Project Indigo",
-      "action": "新增",
-      "object": "AI 照片批评与编辑建议功能",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-b0532e1af75cc4ab",
-        "EN-bbdefa2950f49882",
-        "EN-419f2cd96ee122e3"
-      ],
-      "entityNames": [
-        "Rime",
-        "Google",
-        "Project Indigo"
-      ],
-      "productName": "Project Indigo",
-      "products": [
-        {
-          "name": "Project Indigo",
-          "type": "产品/服务",
-          "ownerNames": [
-            "Rime"
-          ]
-        }
-      ],
-      "sourceUrl": "https://techcrunch.com/2026/07/20/adobe-camera-apps-new-feature-will-critique-your-photos-using-ai",
-      "publisher": "TechCrunch：AI（RSS）"
     },
     {
       "id": "EV-ee2c14ff0904a814",
@@ -48036,6 +48537,57 @@
       ],
       "sourceUrl": "https://ithome.com/0/979/128.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-fe4eeb733d1682ed",
+      "dataDate": "2026-07-21",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-21",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Adobe 实验性相机应用 Project Indigo 新增 AI 照片批评与编辑建议功能",
+      "originalTitle": "",
+      "subject": "Adobe 实验性相机应用 Project Indigo",
+      "action": "新增",
+      "object": "AI 照片批评与编辑建议功能",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-419f2cd96ee122e3"
+      ],
+      "entityNames": [
+        "Google",
+        "Project Indigo"
+      ],
+      "productName": "Project Indigo",
+      "products": [
+        {
+          "name": "Project Indigo",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/20/adobe-camera-apps-new-feature-will-critique-your-photos-using-ai",
+      "publisher": "TechCrunch：AI（RSS）"
     },
     {
       "id": "EV-3fedea3a77dc26ed",
@@ -96117,9 +96669,9 @@
     },
     {
       "id": "EV-c52947e480fa3347",
-      "dataDate": "2026-07-18",
+      "dataDate": "2026-07-21",
       "date": "2026-05-05",
-      "updatedDate": "2026-07-18",
+      "updatedDate": "2026-07-21",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -96196,8 +96748,8 @@
           "ownerNames": []
         }
       ],
-      "sourceUrl": "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202605050830BIZWIRE_USPRX____20260505_BW017359-1",
-      "publisher": "markets-data-api-proxy.ft.com"
+      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202605050830BIZWIRE_USPRX____20260505_BW017359-1",
+      "publisher": "markets.ft.com"
     },
     {
       "id": "EV-510fd43cf3ecc17d",
@@ -96247,6 +96799,83 @@
       ],
       "sourceUrl": "https://setset.ai/news/setset-studio-launch",
       "publisher": "setset.ai"
+    },
+    {
+      "id": "EV-8558c9cf2e0202dd",
+      "dataDate": "2026-07-24",
+      "date": "2026-04-18",
+      "updatedDate": "2026-07-24",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 智能体与开源架构核心：2026 年 4 月生态系统回顾",
+      "originalTitle": "Essential AI Agent and Open-Source Architectures: April 2026 Ecosystem Review | Epsilla Blog",
+      "subject": "Essential AI Agent and",
+      "action": "Open-Source",
+      "object": "Architectures: April 2026 Ecosystem Review | Epsilla Blog",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-ec6b03fc92dcfc89",
+        "EN-552088238720cb6f",
+        "EN-c0d6535a9383cb62"
+      ],
+      "entityNames": [
+        "Essential AI Agent and",
+        "Architectures",
+        "Essential AI"
+      ],
+      "productName": "Architectures",
+      "products": [
+        {
+          "name": "Architectures",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Essential AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://epsilla.com/blogs/2026-04-18-essential-ai-agent-and-open-source-architectures-a",
+      "publisher": "epsilla.com"
     },
     {
       "id": "EV-dd62847548bb6ae3",
@@ -96764,12 +97393,10 @@
       ],
       "entityIds": [
         "EN-b7bea343b08cce2c",
-        "EN-b0532e1af75cc4ab",
         "EN-d736115a934212d4"
       ],
       "entityNames": [
         "EXL",
-        "Rime",
         "FT.com"
       ],
       "productName": "FT.com",
@@ -96777,9 +97404,7 @@
         {
           "name": "FT.com",
           "type": "产品/服务",
-          "ownerNames": [
-            "Rime"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=1330-9669994en-6NRUBJC70ICE0846KF55Q7FKA7",
@@ -97350,6 +97975,80 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-00834dd71037c7cc",
+      "dataDate": "2026-07-21",
+      "date": "2022-10-01",
+      "updatedDate": "2026-07-21",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Sam Altman 2022年邮件曝光：OpenAI曾计划发布可本地运行的GPT-3级模型",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "发布可本地运行的GPT-3级模型",
+      "object": "Sam Altman 2022年邮件曝光：OpenAI曾计划发布可本地运行的GPT-3级模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-974fd326da5c5b9e"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Sam Altman 2022"
+      ],
+      "productName": "Sam Altman 2022",
+      "products": [
+        {
+          "name": "Sam Altman 2022",
+          "type": "模型",
+          "ownerNames": [
+            "OpenAI"
+          ]
+        }
+      ],
+      "sourceUrl": "https://simonwillison.net/2026/Jul/20/sam-altman",
+      "publisher": "Simon Willison 博客"
+    },
+    {
       "id": "EV-b8d851200fdbff06",
       "dataDate": "2026-07-26",
       "date": "2026-07-25",
@@ -97822,14 +98521,12 @@
       "entityIds": [
         "EN-2d01d00b0173101b",
         "EN-3a7bd3e2360a3d29",
-        "EN-7d3194f79e645c42",
-        "EN-e9b67bdfb6ae6a2e"
+        "EN-7d3194f79e645c42"
       ],
       "entityNames": [
         "Apple’s OpenAI",
         "Apple",
-        "OpenAI",
-        "NIO"
+        "OpenAI"
       ],
       "productName": "",
       "products": [],

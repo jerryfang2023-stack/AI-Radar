@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-4e721fae5963494d",
@@ -16,7 +16,7 @@
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
-    "verificationStatus": "candidate",
+    "verificationStatus": "verified",
     "datasetScopes": [
       "canonical"
     ],
@@ -27,10 +27,14 @@
     "classificationRefs": [
       "TX-industry-financial_services"
     ],
-    "relatedEntityIds": [],
+    "relatedEntityIds": [
+      "EN-a4eee620f5a081bd"
+    ],
     "firstSeen": "2026-06-16",
     "lastSeen": "2026-06-16",
-    "relationIds": [],
+    "relationIds": [
+      "REL2-81f239c52fa7d8bc"
+    ],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
@@ -75,8 +79,53 @@
     ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
+  "relatedEntities": [
+    {
+      "id": "EN-a4eee620f5a081bd",
+      "name": "运通工程师信用卡",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5caf7f83664b1a2c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [
+        "EN-4e721fae5963494d"
+      ],
+      "firstSeen": "2026-06-16",
+      "lastSeen": "2026-06-16"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-81f239c52fa7d8bc",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-4e721fae5963494d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-a4eee620f5a081bd",
+      "object_type": "entity",
+      "event_id": "EV-5caf7f83664b1a2c",
+      "claim_refs": [
+        "CL-0055eba8920e653f",
+        "CL-7651d5ca3ddd7f19",
+        "CL-29e108a33e0ec4d9"
+      ],
+      "source_refs": [
+        "SA-490cf926e269dc6a"
+      ],
+      "data_date": "2026-06-16",
+      "status": "verified"
+    }
+  ],
   "taxonomyNodes": [
     {
       "id": "TX-industry-financial_services",
@@ -117,7 +166,6 @@
         "EN-96eebba49dbbf422",
         "EN-e5dcb6b25180d1d6",
         "EN-3afbf365c56b769d",
-        "EN-b0532e1af75cc4ab",
         "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
         "EN-11507a0e2f5e69d5",

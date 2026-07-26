@@ -3,9 +3,9 @@ schema_version: raw-evidence-v2
 raw_id: R-050
 title: "AI Workflow Automation Trends in 2026: 10 Trends Shaping the Future ..."
 title_zh: "2026年AI工作流自动化趋势：塑造未来的10大趋势..."
-title_translation_status: translated
-title_translation_method: deepseek_title_translation
-title_translation_model: deepseek-v4-flash
+title_translation_status: "translated"
+title_translation_method: "deepseek_title_translation"
+title_translation_model: "deepseek-v4-flash"
 original_url: "https://www.cflowapps.com/ai-workflow-automation-trends/"
 canonical_url: "https://cflowapps.com/ai-workflow-automation-trends"
 source_name: "keyword search / Anysearch"

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-0decbc3b45f73b2b",
@@ -20,15 +20,25 @@
     "datasetScopes": [
       "canonical"
     ],
-    "eventIds": [],
+    "eventIds": [
+      "EV-618e5729145025e4"
+    ],
     "viewpointIds": [],
-    "classificationRefs": [],
-    "relatedEntityIds": [],
-    "firstSeen": "",
-    "lastSeen": "",
-    "relationIds": [],
+    "classificationRefs": [
+      "TX-industry-technology"
+    ],
+    "relatedEntityIds": [
+      "EN-45cbca5f78f1ef44"
+    ],
+    "firstSeen": "2026-02-10",
+    "lastSeen": "2026-06-06",
+    "relationIds": [
+      "REL2-bb9d1a0fc52f9ceb"
+    ],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-618e5729145025e4"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [],
@@ -36,12 +46,151 @@
       "organizationPeople": [],
       "other": []
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "id": "EV-618e5729145025e4",
+        "dataDate": "2026-06-06",
+        "date": "2026-02-10",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "id": "technology",
+            "dimensionName": "行业",
+            "name": "科技与软件"
+          }
+        ],
+        "entityIds": [
+          "EN-b4a139ced5659a4e",
+          "EN-0decbc3b45f73b2b",
+          "EN-45cbca5f78f1ef44"
+        ]
+      }
+    ],
     "viewpoints": []
   },
-  "relatedEntities": [],
-  "relationships": [],
-  "taxonomyNodes": [],
+  "relatedEntities": [
+    {
+      "id": "EN-45cbca5f78f1ef44",
+      "name": "Thomas Dohmke",
+      "entityType": "person_candidate",
+      "typeLabel": "人物",
+      "aliases": [
+        "CEO Thomas Dohmke"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-618e5729145025e4"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-technology"
+      ],
+      "relatedEntityIds": [
+        "EN-0decbc3b45f73b2b"
+      ],
+      "firstSeen": "2026-02-10",
+      "lastSeen": "2026-06-06",
+      "organizationNames": [
+        "Entire"
+      ],
+      "organization": "Entire",
+      "roleTitle": "创始人"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-bb9d1a0fc52f9ceb",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-45cbca5f78f1ef44",
+      "subject_type": "entity",
+      "predicate": "founds",
+      "object_ref": "EN-0decbc3b45f73b2b",
+      "object_type": "entity",
+      "event_id": "EV-618e5729145025e4",
+      "claim_refs": [
+        "CL-7f60271f31492339",
+        "CL-dbbcaad406de1404",
+        "CL-c229b0e74638f6ab"
+      ],
+      "source_refs": [
+        "SA-8c5a5b31c0966503"
+      ],
+      "data_date": "2026-06-06",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-technology",
+      "name": "科技与软件",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "technology",
+      "eventIds": [
+        "EV-136b2edc9b9f3be8",
+        "EV-cf6e7a2edad82c6f",
+        "EV-e1e0a38da122caed",
+        "EV-b563d5cf0f12119e",
+        "EV-220be2fe413b8cfa",
+        "EV-ebe9ed3158df619b",
+        "EV-6cb8979f92cf74ce",
+        "EV-618e5729145025e4",
+        "EV-2ca230a3dec71ba6",
+        "EV-ed388875bc004add",
+        "EV-8abf5adc3e72fbb8",
+        "EV-9852a10590030da9",
+        "EV-ba89f9414be0b041",
+        "EV-42f0dcfbb70ce73e",
+        "EV-97fecfb2f20f582f",
+        "EV-bf8086947a2639d4"
+      ],
+      "entityIds": [
+        "EN-ab9b29074a980e4b",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-382635c9325bf327",
+        "EN-3db1f560db626918",
+        "EN-8f71c4871a160172",
+        "EN-7f871cbf905f6e0c",
+        "EN-3c567a300232d3bb",
+        "EN-10535ca23448d8bb",
+        "EN-96eebba49dbbf422",
+        "EN-4de4a07ad031569c",
+        "EN-abb32701117d50a9",
+        "EN-bbdefa2950f49882",
+        "EN-b4a139ced5659a4e",
+        "EN-0decbc3b45f73b2b",
+        "EN-45cbca5f78f1ef44",
+        "EN-fc77f762a5c2afc1",
+        "EN-1e0c30e583ebb8be",
+        "EN-8d4321d936320802",
+        "EN-28d0bd981118a907",
+        "EN-9fbf261b62c1d7c0",
+        "EN-ba728f8ca730921f",
+        "EN-71f3ed83fd5a3ed9",
+        "EN-e3c189c04bf15baf",
+        "EN-3c6d89173e6636d7",
+        "EN-31f61ed3e6e210c5"
+      ],
+      "fdeIds": [
+        "FDE-d08fed45110ab44b"
+      ],
+      "hardwareIds": [
+        "HW-e11208b1ddb2dc49"
+      ],
+      "firstSeen": "2026-02-10",
+      "lastSeen": "2026-07-25"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

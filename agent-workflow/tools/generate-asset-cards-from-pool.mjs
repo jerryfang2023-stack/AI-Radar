@@ -1992,7 +1992,7 @@ function isResearchBenchmarkContext(section) {
 
 function hasStrictMarketStructureEvent(section) {
   const text = commercialEvidenceText(section);
-  return /\b(acquires?|acquired|acquisition|merger|buyout|strategic partnership|partners? with|collaborates? with|procurement contract|contract award(?:ed)?|signed (?:a )?contract|tender award(?:ed)?|rfp award(?:ed)?|pricing|price increase|price cut|billing change|regulatory approval|clearance|antitrust|lawsuit|settlement)\b|鏀惰喘|骞惰喘|鍚堝苟|鎴樼暐鍚堜綔|閲囪喘鍚堝悓|涓爣|绛剧害|瀹氫环|璁¤垂|鐩戠鎵瑰噯|鍙嶅瀯鏂瓅璇夎|鍜岃В/iu.test(text);
+  return /\b(acquires?|acquired|acquisition|merger|buyout|strategic partnership|partners? with|collaborates? with|procurement contract|contract award(?:ed)?|signed (?:a )?contract|tender award(?:ed)?|rfp award(?:ed)?|pricing|price increase|price cut|billing change|regulatory approval|clearance|antitrust|lawsuit|settlement)\b|收购|并购|合并|战略合作|采购合同|中标|签约|定价|计费|监管批准|反垄断|诉讼|和解/iu.test(text);
 }
 
 function hasStrongCommercialActionEvent(section) {
@@ -2453,7 +2453,7 @@ function companyFromSection(section) {
   const interviewCompanyClean = shortCompany(String(interviewCompany || "").replace(/^Ep\s+\d+:\s*/iu, ""));
   if (interviewCompanyClean && !isWeakCompanyName(interviewCompanyClean)) return interviewCompanyClean;
   const patterns = [
-    /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})(?:'s|&#8217;s|&rsquo;s|鈥檚)\s+(?:app|platform|product|tool|agent|service)\b/iu,
+    /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})(?:'s|’s|&#8217;s|&rsquo;s)\s+(?:app|platform|product|tool|agent|service)\b/iu,
     /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:unveils?|launches?|introduces?|debuts?|announces?)\s+[A-Z][A-Za-z0-9.[\]&™-]+/iu,
     /\bstartup\s+([A-Z][A-Za-z0-9.&-]+)\s+(?:raises|raised|secures|secured|said|announced)\b/iu,
     /\bseed\s+for\s+([A-Z][A-Za-z0-9.&-]+)\s+to\b/iu,
@@ -2955,7 +2955,7 @@ function isNonCommercialPolicyOrEthicsSignal(section) {
   const hasCommercialAction = hasConcreteProductEvent(section)
     || hasConcreteCaseEvent(section)
     || hasStrictMarketStructureEvent(section);
-  const purePolicyConflict = /\b(ban|banned|prohibit|controversy|privacy pledge|self-regulation)\b|绂佷护|绂佹|浜夎|公约|自律|个人信息保护/iu;
+  const purePolicyConflict = /\b(ban|banned|prohibit|controversy|privacy pledge|self-regulation)\b|禁令|禁止|争议|公约|自律|个人信息保护/iu;
   const text = [
     poolTitle(section),
     value(section, "source"),
@@ -4466,6 +4466,31 @@ function runCoreRecallRegressionFixtures() {
     isNonCommercialPolicyOrEthicsSignal(privacyPledgeFixture),
     true,
     "a voluntary privacy pledge without a product, funding, procurement or customer event must remain backend context",
+  );
+
+  const chineseProcurementFixture = [
+    "## P-990｜某公司签约 AI 平台采购合同",
+    "- source_url: https://example.com/chinese-procurement",
+    "- evidence_object_type: event",
+    "- event_evidence: true",
+    "- key_excerpts: 某客户已与该公司签约并完成 AI 平台采购合同。",
+  ].join("\n");
+  assert.equal(
+    hasStrictMarketStructureEvent(chineseProcurementFixture),
+    true,
+    "Chinese procurement and contract evidence must be recognized as a commercial market-structure event",
+  );
+  const chinesePolicyFixture = [
+    "## P-989｜行业协会发布 AI 禁令争议说明",
+    "- source_url: https://example.com/chinese-policy",
+    "- evidence_object_type: event",
+    "- event_evidence: true",
+    "- key_excerpts: 行业协会发布禁令说明并回应相关争议。",
+  ].join("\n");
+  assert.equal(
+    isNonCommercialPolicyOrEthicsSignal(chinesePolicyFixture),
+    true,
+    "Chinese policy-conflict terms must remain backend context without a commercial event",
   );
 
   const fundingDatabaseFixture = [

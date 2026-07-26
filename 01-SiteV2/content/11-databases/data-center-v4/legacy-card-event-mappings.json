@@ -1,14 +1,14 @@
 {
   "schema_version": "LEGACY-CARD-EVENT-MAP-V1.0",
-  "generated_at": "2026-07-25T04:31:52.287Z",
+  "generated_at": "2026-07-26T02:26:57.787Z",
   "summary": {
     "card_instances": 1136,
     "logical_card_ids": 1026,
     "duplicate_legacy_ids": 104,
-    "mapped": 513,
+    "mapped": 517,
     "ambiguous": 3,
-    "raw_only": 582,
-    "unresolved": 38
+    "raw_only": 579,
+    "unresolved": 37
   },
   "duplicate_legacy_ids": [
     {
@@ -7772,10 +7772,14 @@
       "legacy_raw_ids": [
         "R-071"
       ],
-      "raw_ids": [],
+      "raw_ids": [
+        "RAW-6caace4d9963f51b"
+      ],
       "event_ids": [],
-      "mapping_status": "unresolved",
-      "mapping_methods": [],
+      "mapping_status": "raw_only",
+      "mapping_methods": [
+        "source_url"
+      ],
       "duplicate_legacy_id": false
     },
     {
@@ -11000,8 +11004,10 @@
       "raw_ids": [
         "RAW-6fe572bbe8cb93e0"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-53363a500447afe6"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -11194,8 +11200,10 @@
       "raw_ids": [
         "RAW-dced56d88bb665e6"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-f31feb5ed41be8f2"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -16097,8 +16105,10 @@
       "raw_ids": [
         "RAW-c9c7fcdfeefec194"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-c84b6d7338f87990"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",
@@ -16122,7 +16132,7 @@
         "RAW-accc337018847e0e"
       ],
       "event_ids": [
-        "EV-ab3e820aa6d92542"
+        "EV-4f36e494d9281522"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -26905,7 +26915,7 @@
         "RAW-e58d22b64ef66f2e"
       ],
       "event_ids": [
-        "EV-684f286ef629ed0d"
+        "EV-3b6252b20720e697"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -27003,7 +27013,7 @@
         "RAW-3e3482331ef8dfe4"
       ],
       "event_ids": [
-        "EV-bee410f8134cba5a"
+        "EV-fe4eeb733d1682ed"
       ],
       "mapping_status": "mapped",
       "mapping_methods": [
@@ -27128,8 +27138,10 @@
       "raw_ids": [
         "RAW-fbd67898da9427a3"
       ],
-      "event_ids": [],
-      "mapping_status": "raw_only",
+      "event_ids": [
+        "EV-e02d3b5de666f349"
+      ],
+      "mapping_status": "mapped",
       "mapping_methods": [
         "legacy_path",
         "legacy_raw_id",

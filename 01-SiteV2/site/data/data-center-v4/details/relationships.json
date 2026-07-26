@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T02:29:48.027Z",
+    "generatedAt": "2026-07-26T16:24:00.830Z",
     "latestDataDate": "2026-07-26",
     "currentDate": "2026-07-26",
-    "eventCount": 1570,
-    "quarantinedEventCount": 17
+    "eventCount": 1582,
+    "quarantinedEventCount": 14
   },
   "relationships": [
     {
@@ -84,76 +84,6 @@
       "objectName": "Intel",
       "predicateLabel": "服务",
       "title": "Google Cloud 服务 Intel",
-      "eventTitle": "英特尔与谷歌云宣布合作，加速英特尔AI赋能的企业转型",
-      "eventDate": "2026-07-16",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-16c91905670d5c33",
-          "subject": "Intel and Google Cloud Announce",
-          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation",
-          "quote": "Intel and Google Cloud Announce Collaboration to Accelerate Intel’s AI-Enabled Enterprise Transformation"
-        },
-        {
-          "id": "CL-053348592f3e7b21",
-          "subject": "Intel and Google Cloud Announce",
-          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation",
-          "quote": "Collaboration leverages Gemini Enterprise and Google Cloud to expand Intel’s AI workforce capabilities via scalable agentic workflows across core business functions"
-        },
-        {
-          "id": "CL-df9a5f583e32db0f",
-          "subject": "Intel and Google Cloud Announce",
-          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation",
-          "quote": "SANTA CLARA, Calif., and SUNNYVALE, Calif. &ndash; July 16, 2026 &ndash; Intel and Google Cloud today announced an expansion of their previously announced multi-year strategic collaboration, which would accelerate Intel&rsquo;s enterprise-wide digital evolution through the deployment of Gemini Enterprise and Google Cloud."
-        },
-        {
-          "id": "CL-79142b898b6d1c2d",
-          "subject": "Intel and Google Cloud Announce",
-          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation",
-          "quote": "\"As part of our AI-powered transformation, we are committed to offering our employees tools that help them move with greater speed, agility, and efficiency,\" said Cindy Stoddard, senior vice president and chief information officer, Intel. \"Our work with Google Cloud allows us to provide our employees with a central hub to build and deploy agents through Gemini Enterprise and scale silicon development with elastic cloud infrastructure. This collaboration gives Intel the AI tools and workflows needed to help reinvent its operations and execute business objectives more quickly.\""
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-7f1a477486ca91a5",
-          "publisher": "googlecloudpresscorner.com",
-          "url": "https://googlecloudpresscorner.com/2026-07-16-Intel-and-Google-Cloud-Announce-Collaboration-to-Accelerate-Intels-AI-Enabled-Enterprise-Transformation"
-        }
-      ],
-      "sourceExcerpt": "Intel and Google Cloud Announce Collaboration to Accelerate Intel’s AI-Enabled Enterprise Transformation",
-      "event": {
-        "id": "EV-6e4dd5111dfaae9c",
-        "title": "英特尔与谷歌云宣布合作，加速英特尔AI赋能的企业转型",
-        "originalTitle": "Intel and Google Cloud Announce Collaboration to Accelerate Intel’s AI-Enabled Enterprise Transformation",
-        "date": "2026-07-16",
-        "dataDate": "2026-07-26",
-        "eventTypeLabel": "合作"
-      }
-    },
-    {
-      "relationship_id": "REL2-deafb88879becf80",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-96eebba49dbbf422",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-bbdefa2950f49882",
-      "object_type": "entity",
-      "event_id": "EV-6e4dd5111dfaae9c",
-      "claim_refs": [
-        "CL-16c91905670d5c33",
-        "CL-053348592f3e7b21",
-        "CL-df9a5f583e32db0f",
-        "CL-79142b898b6d1c2d"
-      ],
-      "source_refs": [
-        "SA-7f1a477486ca91a5"
-      ],
-      "data_date": "2026-07-26",
-      "status": "verified",
-      "subjectName": "Intel",
-      "objectName": "Google",
-      "predicateLabel": "合作",
-      "title": "Intel 合作 Google",
       "eventTitle": "英特尔与谷歌云宣布合作，加速英特尔AI赋能的企业转型",
       "eventDate": "2026-07-16",
       "sourceCount": 1,
@@ -392,9 +322,7 @@
       "object_type": "entity",
       "event_id": "EV-c7e1e920e54bb364",
       "claim_refs": [
-        "CL-01d12c5b17204923",
-        "CL-b273f36025a4ecd1",
-        "CL-53a1c9e1a93d8ce9"
+        "CL-01d12c5b17204923"
       ],
       "source_refs": [
         "SA-b5ad0786877f8a47"
@@ -414,18 +342,6 @@
           "subject": "Black Forest Labs",
           "object": "，支持单次生成 20 秒视频与原生音频",
           "quote": "IT之家 7 月 24 日消息，Black Forest Labs 昨日（7 月 23 日）发布博文，宣布以 Early Access 方式，上线推出 Flux 3 多模态基础模型， 采用统一架构联合学习图像、视频和音频。"
-        },
-        {
-          "id": "CL-b273f36025a4ecd1",
-          "subject": "Black Forest Labs",
-          "object": "，支持单次生成 20 秒视频与原生音频",
-          "quote": "FLUX 3 可在单次生成中输出最长 20 秒的视频，并附带原生音频。"
-        },
-        {
-          "id": "CL-53a1c9e1a93d8ce9",
-          "subject": "Black Forest Labs",
-          "object": "，支持单次生成 20 秒视频与原生音频",
-          "quote": "在机器人方向，Black Forest Labs 正与 Mimic Robotics 合作，研究将 FLUX 3 用作机器人行为预测模型。"
         }
       ],
       "sources": [
@@ -775,6 +691,139 @@
       }
     },
     {
+      "relationship_id": "REL2-e1d65aab90a4ab28",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-d30e5ffc0ba9150b",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-8989aada6eb4a4c3",
+      "object_type": "entity",
+      "event_id": "EV-6f1729f6968b72c9",
+      "claim_refs": [
+        "CL-0905882f05086f45",
+        "CL-315b3e77ed185068",
+        "CL-28f467ec31f53f91"
+      ],
+      "source_refs": [
+        "SA-9be4fa95329f965d"
+      ],
+      "data_date": "2026-07-25",
+      "status": "verified",
+      "subjectName": "蚂蚁集团",
+      "objectName": "Ling-3.0-flash",
+      "predicateLabel": "发布",
+      "title": "蚂蚁集团 发布 Ling-3.0-flash",
+      "eventTitle": "蚂蚁集团发布百灵原生混合推理模型 Ling-3.0-flash",
+      "eventDate": "2026-07-24",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-0905882f05086f45",
+          "subject": "蚂蚁集团",
+          "object": "Ling-3.0-flash",
+          "quote": "蚂蚁集团发布百灵原生混合推理模型 Ling-3.0-flash：124B 总参数量，能力对标上一代旗舰 Ring-2.6-1T - IT之家"
+        },
+        {
+          "id": "CL-315b3e77ed185068",
+          "subject": "蚂蚁集团",
+          "object": "Ling-3.0-flash",
+          "quote": "IT之家 7 月 24 日消息，蚂蚁集团旗下百灵大模型今日发布百灵新一代 原生混合推理模型 Ling-3.0-flash。"
+        },
+        {
+          "id": "CL-28f467ec31f53f91",
+          "subject": "蚂蚁集团",
+          "object": "Ling-3.0-flash",
+          "quote": "官方表示，相比上一代 1T 级旗舰思考模型 Ring-2.6-1T ，Ling-3.0-flash 的总参数量为 124B （约为 Ring-2.6-1T 的 12.4%），激活参数量仅为 5.1B （约为 Ring-2.6-1T 的 8.1%），却实现了全方位的能力对标甚至超越。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-9be4fa95329f965d",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/981/382.htm"
+        }
+      ],
+      "sourceExcerpt": "蚂蚁集团发布百灵原生混合推理模型 Ling-3.0-flash：124B 总参数量，能力对标上一代旗舰 Ring-2.6-1T - IT之家",
+      "event": {
+        "id": "EV-6f1729f6968b72c9",
+        "title": "蚂蚁集团发布百灵原生混合推理模型 Ling-3.0-flash",
+        "originalTitle": "",
+        "date": "2026-07-24",
+        "dataDate": "2026-07-25",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-0f7e1be3ae6f4e69",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-240389f4b730bad4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-45c52af0feb0f285",
+      "object_type": "entity",
+      "event_id": "EV-563843979fb55b9b",
+      "claim_refs": [
+        "CL-ca28c23330521e3b",
+        "CL-eb7324405355d417",
+        "CL-9d428d6af7143334",
+        "CL-a5953ac25aa0914a"
+      ],
+      "source_refs": [
+        "SA-748a00cdc15141e6"
+      ],
+      "data_date": "2026-07-24",
+      "status": "verified",
+      "subjectName": "AMD",
+      "objectName": "Helios",
+      "predicateLabel": "发布",
+      "title": "AMD 发布 Helios",
+      "eventTitle": "AMD 发布 Helios AI 机架系统，对标 Nvidia",
+      "eventDate": "2026-07-23",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-ca28c23330521e3b",
+          "subject": "AMD",
+          "object": "Helios AI 机架系统，对标 Nvidia",
+          "quote": "Chipmaker AMD is taking aim at competitor Nvidia with its latest hardware release: a rack-scale system designed to power computing needs of the world’s largest AI labs."
+        },
+        {
+          "id": "CL-eb7324405355d417",
+          "subject": "AMD",
+          "object": "Helios AI 机架系统，对标 Nvidia",
+          "quote": "AMD also introduced Thursday its Venice-X CPU, which is designed for data centers and to handle high-computing workloads. The Venice-X is expected to launch in 2027."
+        },
+        {
+          "id": "CL-9d428d6af7143334",
+          "subject": "AMD",
+          "object": "Helios AI 机架系统，对标 Nvidia",
+          "quote": "At the company’s sold-out Advancing AI conference in San Francisco on Thursday, AMD Chair and CEO Dr. Lisa Su promoted the new AI rack system known as Helios — along with its growing list of customers, including Microsoft — as the company prepares to ship it later this year. Su also pitched the company’s newest chips that are designed to feed the compute-hungry dragon that is the AI industry."
+        },
+        {
+          "id": "CL-a5953ac25aa0914a",
+          "subject": "AMD",
+          "object": "Helios AI 机架系统，对标 Nvidia",
+          "quote": "Rack systems combine many processors into a single high-powered unit . They are built for data centers, where they train and run AI models and other compute-intensive workloads."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-748a00cdc15141e6",
+          "publisher": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system"
+        }
+      ],
+      "sourceExcerpt": "Chipmaker AMD is taking aim at competitor Nvidia with its latest hardware release: a rack-scale system designed to power computing needs of the world’s largest AI labs.",
+      "event": {
+        "id": "EV-563843979fb55b9b",
+        "title": "AMD 发布 Helios AI 机架系统，对标 Nvidia",
+        "originalTitle": "",
+        "date": "2026-07-23",
+        "dataDate": "2026-07-24",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-149d0f5b1831ea53",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-ba728f8ca730921f",
@@ -784,7 +833,9 @@
       "object_type": "entity",
       "event_id": "EV-9852a10590030da9",
       "claim_refs": [
-        "CL-53c4769858a5242f"
+        "CL-53c4769858a5242f",
+        "CL-9f12686b9e8cf30e",
+        "CL-2be420805b63eda7"
       ],
       "source_refs": [
         "SA-6e5c2bfbb7fc55d7"
@@ -804,6 +855,18 @@
           "subject": "Acrab",
           "object": "GΞLIX 1 SoC and Agent Box, Bringing State-of-the-Art AI to the Edge",
           "quote": "SINGAPORE , July 23, 2026 /PRNewswire/ -- Acrab, a technology company building agentic AI compute infrastructure for the next generation of intelligent systems, today unveiled GΞLIX 1, its first-generation edge AI system-on-chip (SoC), together with Agent Box, a personal edge AI system powered by the company's full-stack computing platform."
+        },
+        {
+          "id": "CL-9f12686b9e8cf30e",
+          "subject": "Acrab",
+          "object": "GΞLIX 1 SoC and Agent Box, Bringing State-of-the-Art AI to the Edge",
+          "quote": "GΞLIX 1, Acrab’s 1st Generation edge AI system-on-chip (SoC)"
+        },
+        {
+          "id": "CL-2be420805b63eda7",
+          "subject": "Acrab",
+          "object": "GΞLIX 1 SoC and Agent Box, Bringing State-of-the-Art AI to the Edge",
+          "quote": "As AI moves from generating answers to completing tasks, agents increasingly need to understand context, remember preferences and coordinate tools and devices in real time. Running these capabilities locally can produce faster responses, keep sensitive information under the user's control and maintain core functions when cloud connectivity is limited."
         }
       ],
       "sources": [
@@ -1141,8 +1204,7 @@
       "object_type": "entity",
       "event_id": "EV-b76705cd8461925f",
       "claim_refs": [
-        "CL-d89dc531e7b6c362",
-        "CL-a72b1a9a96a542b2"
+        "CL-d89dc531e7b6c362"
       ],
       "source_refs": [
         "SA-77bf71001f334cc2"
@@ -1162,12 +1224,6 @@
           "subject": "Black Forest Labs",
           "object": "Flux 3",
           "quote": "The German AI company Black Forest Labs has released Flux 3, a multimodal foundation model that learns from images, videos, and audio simultaneously."
-        },
-        {
-          "id": "CL-a72b1a9a96a542b2",
-          "subject": "Black Forest Labs",
-          "object": "Flux-mimic",
-          "quote": "the company has developed Flux-mimic, a video action model for robotics applications, which is already being tested at Audi."
         }
       ],
       "sources": [
@@ -1260,10 +1316,7 @@
       "object_type": "entity",
       "event_id": "EV-ae9f1e2cf5a28be4",
       "claim_refs": [
-        "CL-8fb93499974e477c",
-        "CL-ec9cd7e9023cb1e5",
-        "CL-c6075e977dbdf266",
-        "CL-4a0c5302a5bcc60c"
+        "CL-8fb93499974e477c"
       ],
       "source_refs": [
         "SA-430830a640f17413"
@@ -1283,24 +1336,6 @@
           "subject": "Anthropic",
           "object": "Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
           "quote": "Anthropic has released the Claude Security plugin for Claude Code in beta. The plugin runs a multi-agent vulnerability scan of a repository from inside an existing Claude Code session, then turns the findings you select into patch files that you review and apply yourself. Anthropic emphasized the tool’s versatility upon announcement, highlighting its capability to either run a comprehensive scan across the full codebase or inspect changes from the terminal right before a commit."
-        },
-        {
-          "id": "CL-ec9cd7e9023cb1e5",
-          "subject": "Anthropic",
-          "object": "Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
-          "quote": "The plugin adds a single command, /claude-security, which opens a menu of three jobs, per the official documentation :"
-        },
-        {
-          "id": "CL-c6075e977dbdf266",
-          "subject": "Anthropic",
-          "object": "Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
-          "quote": "If the marketplace is not found, run /plugin marketplace add anthropics/claude-plugins-official first. The plugin source is public in the claude-plugins-official repository , currently at version 0.10.0."
-        },
-        {
-          "id": "CL-4a0c5302a5bcc60c",
-          "subject": "Anthropic",
-          "object": "Claude Security 插件 Beta 版：面向 Claude Code 的多智能体漏洞扫描器",
-          "quote": "/plugin install claude-security@claude-plugins-official"
         }
       ],
       "sources": [
@@ -1489,69 +1524,6 @@
       }
     },
     {
-      "relationship_id": "REL2-5099d8dc9fc49803",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-e69f64149edae6b1",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-fdb2cc367267ac57",
-      "object_type": "entity",
-      "event_id": "EV-8cb5b0ed18c7cdd8",
-      "claim_refs": [
-        "CL-3045faa5b7c2d8a6",
-        "CL-b9b439f2ee62d40d",
-        "CL-42691ff969e959e0"
-      ],
-      "source_refs": [
-        "SA-bdc057280e60ebfd"
-      ],
-      "data_date": "2026-07-23",
-      "status": "verified",
-      "subjectName": "Runlayer",
-      "objectName": "MCP AI",
-      "predicateLabel": "发布",
-      "title": "Runlayer 发布 MCP AI",
-      "eventTitle": "MCP AI 智能体安全初创公司 Runlayer 获 Khosla 的 Keith Rabois 和 Felicis 投资 1100 万美元，与 8 家独角兽企业共同启动",
-      "eventDate": "2025-11-17",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-3045faa5b7c2d8a6",
-          "subject": "MCP AI agent security startup Runlayer",
-          "object": "with 8 unicorns, $11M from Khosla’s Keith Rabois and Felicis",
-          "quote": "MCP AI agent security startup Runlayer launches with 8 unicorns, $11M from Khosla’s Keith Rabois and Felicis"
-        },
-        {
-          "id": "CL-b9b439f2ee62d40d",
-          "subject": "MCP AI agent security startup Runlayer",
-          "object": "with 8 unicorns, $11M from Khosla’s Keith Rabois and Felicis",
-          "quote": "On Monday, a new Model Context Protocol security startup called Runlayer launched out of stealth with $11 million in seed funding from Khosla Ventures’ Keith Rabois and Felicis."
-        },
-        {
-          "id": "CL-42691ff969e959e0",
-          "subject": "MCP AI agent security startup Runlayer",
-          "object": "with 8 unicorns, $11M from Khosla’s Keith Rabois and Felicis",
-          "quote": "In the four months since Runlayer launched its product in stealth, it has signed dozens of customers, including eight unicorns or public companies like Gusto, dbt Labs, Instacart, and Opendoor, it says. It also nabbed David Soria Parra, the lead creator of MCP, as an angel and advisor, Berman tells TechCrunch. (Parra did not respond to our request for comment.)"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-bdc057280e60ebfd",
-          "publisher": "techcrunch.com",
-          "url": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis"
-        }
-      ],
-      "sourceExcerpt": "MCP AI agent security startup Runlayer launches with 8 unicorns, $11M from Khosla’s Keith Rabois and Felicis",
-      "event": {
-        "id": "EV-8cb5b0ed18c7cdd8",
-        "title": "MCP AI 智能体安全初创公司 Runlayer 获 Khosla 的 Keith Rabois 和 Felicis 投资 1100 万美元，与 8 家独角兽企业共同启动",
-        "originalTitle": "MCP AI agent security startup Runlayer launches with 8 unicorns, $11M from Khosla’s Keith Rabois and Felicis | TechCrunch",
-        "date": "2025-11-17",
-        "dataDate": "2026-07-23",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
       "relationship_id": "REL2-600c4c1962ee80f3",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -1673,7 +1645,9 @@
       "object_type": "entity",
       "event_id": "EV-bf68acb1350e039b",
       "claim_refs": [
-        "CL-9d406758add23e66"
+        "CL-9d406758add23e66",
+        "CL-8784763ff249e4e3",
+        "CL-f46614fe8ff66e28"
       ],
       "source_refs": [
         "SA-3b29004038d52b63"
@@ -1693,6 +1667,18 @@
           "subject": "Ushur",
           "object": "the Ushur Agentic Platform: AI agents that finish the job",
           "quote": "Ushur launches the Ushur Agentic Platform: AI agents that finish the job"
+        },
+        {
+          "id": "CL-8784763ff249e4e3",
+          "subject": "Ushur",
+          "object": "the Ushur Agentic Platform: AI agents that finish the job",
+          "quote": "Building one of these experiences begins with a simple conversation. A team asks Ushur Assist to “Build me a claims status experience,” then launches it, measures performance, and continuously improves it through the same conversational interface. The same interface answers business questions ( “What are the top reasons customers contact us?"
+        },
+        {
+          "id": "CL-f46614fe8ff66e28",
+          "subject": "Ushur",
+          "object": "the Ushur Agentic Platform: AI agents that finish the job",
+          "quote": "” ), allowing teams to improve an experience as quickly as they launched it through Ushur Insights."
         }
       ],
       "sources": [
@@ -1776,6 +1762,55 @@
       }
     },
     {
+      "relationship_id": "REL2-987a83667061cf46",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-e73b79a0b10f8cdb",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-02be787a1aacea06",
+      "object_type": "entity",
+      "event_id": "EV-ea6abb5378846a71",
+      "claim_refs": [
+        "CL-3f0f1cc25f747501"
+      ],
+      "source_refs": [
+        "SA-7776efbc2defa223"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified",
+      "subjectName": "Cisco",
+      "objectName": "Antares-1B",
+      "predicateLabel": "发布",
+      "title": "Cisco 发布 Antares-1B",
+      "eventTitle": "思科押注其小型开源网络安全模型能以更低成本在漏洞检测上超越GPT-5.5",
+      "eventDate": "2026-07-22",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-3f0f1cc25f747501",
+          "subject": "Cisco",
+          "object": "Antares-350M and Antares-1B AI models",
+          "quote": "Cisco has released two small, open AI models for cybersecurity. Antares-350M and Antares-1B spot vulnerabilities in software code."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7776efbc2defa223",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/cisco-bets-its-small-open-cybersecurity-models-can-outperform-gpt-5-5-at-vulnerability-detection-for-a-fraction-of-the-cost"
+        }
+      ],
+      "sourceExcerpt": "Cisco has released two small, open AI models for cybersecurity. Antares-350M and Antares-1B spot vulnerabilities in software code.",
+      "event": {
+        "id": "EV-ea6abb5378846a71",
+        "title": "思科押注其小型开源网络安全模型能以更低成本在漏洞检测上超越GPT-5.5",
+        "originalTitle": "Cisco bets its small open cybersecurity models can outperform GPT-5.5 at vulnerability detection for a fraction of the cost",
+        "date": "2026-07-22",
+        "dataDate": "2026-07-23",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-9b018eafb983e9fe",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-240389f4b730bad4",
@@ -1843,6 +1878,55 @@
         "date": "2026-07-23",
         "dataDate": "2026-07-23",
         "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-a376a7931b88e456",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-e73b79a0b10f8cdb",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-2ca3f7d58fdda0f5",
+      "object_type": "entity",
+      "event_id": "EV-ea6abb5378846a71",
+      "claim_refs": [
+        "CL-3f0f1cc25f747501"
+      ],
+      "source_refs": [
+        "SA-7776efbc2defa223"
+      ],
+      "data_date": "2026-07-23",
+      "status": "verified",
+      "subjectName": "Cisco",
+      "objectName": "Antares-350M",
+      "predicateLabel": "发布",
+      "title": "Cisco 发布 Antares-350M",
+      "eventTitle": "思科押注其小型开源网络安全模型能以更低成本在漏洞检测上超越GPT-5.5",
+      "eventDate": "2026-07-22",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-3f0f1cc25f747501",
+          "subject": "Cisco",
+          "object": "Antares-350M and Antares-1B AI models",
+          "quote": "Cisco has released two small, open AI models for cybersecurity. Antares-350M and Antares-1B spot vulnerabilities in software code."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7776efbc2defa223",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/cisco-bets-its-small-open-cybersecurity-models-can-outperform-gpt-5-5-at-vulnerability-detection-for-a-fraction-of-the-cost"
+        }
+      ],
+      "sourceExcerpt": "Cisco has released two small, open AI models for cybersecurity. Antares-350M and Antares-1B spot vulnerabilities in software code.",
+      "event": {
+        "id": "EV-ea6abb5378846a71",
+        "title": "思科押注其小型开源网络安全模型能以更低成本在漏洞检测上超越GPT-5.5",
+        "originalTitle": "Cisco bets its small open cybersecurity models can outperform GPT-5.5 at vulnerability detection for a fraction of the cost",
+        "date": "2026-07-22",
+        "dataDate": "2026-07-23",
+        "eventTypeLabel": "模型发布"
       }
     },
     {
@@ -2157,8 +2241,7 @@
       "event_id": "EV-5b193a038ab4ea22",
       "claim_refs": [
         "CL-ddb0aefd30a5f206",
-        "CL-9a8819e778cded30",
-        "CL-49e9cbca0f22eebe"
+        "CL-9a8819e778cded30"
       ],
       "source_refs": [
         "SA-3d3eb79137181535"
@@ -2184,12 +2267,6 @@
           "subject": "OpenAI",
           "object": "OpenAI Presence，布局企业软件赛道",
           "quote": "这款产品名为 OpenAI Presence，旨在帮助企业更高效地部署和管理 AI 智能体（AI Agent）。"
-        },
-        {
-          "id": "CL-49e9cbca0f22eebe",
-          "subject": "OpenAI",
-          "object": "OpenAI Presence，布局企业软件赛道",
-          "quote": "它能够将 AI 智能体与企业内部数据、管理制度、现有软件以及业务流程连接起来，使 AI 更好地融入企业运营。"
         }
       ],
       "sources": [
@@ -3120,69 +3197,6 @@
       }
     },
     {
-      "relationship_id": "REL2-dccb634be274d411",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-6f216f2ea5b7a13e",
-      "object_type": "entity",
-      "event_id": "EV-cc974e0031c69715",
-      "claim_refs": [
-        "CL-d475a8e56415cfd2",
-        "CL-2b6cdcc11e952da7",
-        "CL-8f05b63f73a1ee0d"
-      ],
-      "source_refs": [
-        "SA-52874072b86357e5"
-      ],
-      "data_date": "2026-07-22",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Flash-Lite",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Flash-Lite",
-      "eventTitle": "Google 发布 Gemini 3.6 Flash 与 3.5 Flash-Lite，降低企业 AI 智能体成本",
-      "eventDate": "2026-07-21",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-d475a8e56415cfd2",
-          "subject": "Google",
-          "object": "Gemini 3.6 Flash 与 3.5 Flash-Lite，降低企业 AI 智能体成本",
-          "quote": "Google has released Gemini 3.6 Flash and 3.5 Flash-Lite as new workhorses designed to cut latency and token costs for enterprise AI agents."
-        },
-        {
-          "id": "CL-2b6cdcc11e952da7",
-          "subject": "Google",
-          "object": "Gemini 3.6 Flash 与 3.5 Flash-Lite，降低企业 AI 智能体成本",
-          "quote": "Separately, Google says Gemini 3.5 Pro remains in partner testing ahead of a full release, and pre-training for the next Gemini 4 architecture is already underway."
-        },
-        {
-          "id": "CL-8f05b63f73a1ee0d",
-          "subject": "Google",
-          "object": "Gemini 3.6 Flash 与 3.5 Flash-Lite，降低企业 AI 智能体成本",
-          "quote": "The model is built to validate and remediate code vulnerabilities, and Google reports performance on the CyberGym benchmark competitive with frontier models (though it hasn’t made those figures public in the same detail as its consumer-facing releases.)"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-52874072b86357e5",
-          "publisher": "Artificial Intelligence News（RSS）",
-          "url": "https://artificialintelligence-news.com/news/googles-gemini-3-6-flash-targets-enterprise-agent-token-costs"
-        }
-      ],
-      "sourceExcerpt": "Google has released Gemini 3.6 Flash and 3.5 Flash-Lite as new workhorses designed to cut latency and token costs for enterprise AI agents.",
-      "event": {
-        "id": "EV-cc974e0031c69715",
-        "title": "Google 发布 Gemini 3.6 Flash 与 3.5 Flash-Lite，降低企业 AI 智能体成本",
-        "originalTitle": "",
-        "date": "2026-07-21",
-        "dataDate": "2026-07-22",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
       "relationship_id": "REL2-de5487ce28a724fb",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -3330,6 +3344,104 @@
       }
     },
     {
+      "relationship_id": "REL2-2cebf3233014cd07",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-f19600b9e18f7f27",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-c4de175a35d9d9d1",
+      "object_type": "entity",
+      "event_id": "EV-c52947e480fa3347",
+      "claim_refs": [
+        "CL-8bf5b034e885327e"
+      ],
+      "source_refs": [
+        "SA-83aef56c33749019"
+      ],
+      "data_date": "2026-07-21",
+      "status": "verified",
+      "subjectName": "UiPath",
+      "objectName": "UiPath Automation Suite",
+      "predicateLabel": "发布",
+      "title": "UiPath 发布 UiPath Automation Suite",
+      "eventTitle": "UiPath Automation Suite™ 为公共部门提供本地部署的智能体 AI",
+      "eventDate": "2026-05-05",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-8bf5b034e885327e",
+          "subject": "UiPath",
+          "object": "agentic AI capabilities on UiPath Automation Suite™",
+          "quote": "UiPath (NYSE: PATH), a leader in agentic business orchestration, today announced the release of agentic AI capabilities on UiPath Automation Suite™ ."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-83aef56c33749019",
+          "publisher": "markets.ft.com",
+          "url": "https://markets.ft.com/data/announce/detail?dockey=600-202605050830BIZWIRE_USPRX____20260505_BW017359-1"
+        }
+      ],
+      "sourceExcerpt": "UiPath (NYSE: PATH), a leader in agentic business orchestration, today announced the release of agentic AI capabilities on UiPath Automation Suite™ .",
+      "event": {
+        "id": "EV-c52947e480fa3347",
+        "title": "UiPath Automation Suite™ 为公共部门提供本地部署的智能体 AI",
+        "originalTitle": "UiPath Automation Suite™ Delivers On-Premises Agentic AI for the Public Sector – Company Announcement - FT.com",
+        "date": "2026-05-05",
+        "dataDate": "2026-07-21",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-31cf6128660f61b0",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-f19600b9e18f7f27",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-e99987e5c504a796",
+      "object_type": "entity",
+      "event_id": "EV-c52947e480fa3347",
+      "claim_refs": [
+        "CL-8bf5b034e885327e"
+      ],
+      "source_refs": [
+        "SA-83aef56c33749019"
+      ],
+      "data_date": "2026-07-21",
+      "status": "verified",
+      "subjectName": "UiPath",
+      "objectName": "Automation Suite",
+      "predicateLabel": "发布",
+      "title": "UiPath 发布 Automation Suite",
+      "eventTitle": "UiPath Automation Suite™ 为公共部门提供本地部署的智能体 AI",
+      "eventDate": "2026-05-05",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-8bf5b034e885327e",
+          "subject": "UiPath",
+          "object": "agentic AI capabilities on UiPath Automation Suite™",
+          "quote": "UiPath (NYSE: PATH), a leader in agentic business orchestration, today announced the release of agentic AI capabilities on UiPath Automation Suite™ ."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-83aef56c33749019",
+          "publisher": "markets.ft.com",
+          "url": "https://markets.ft.com/data/announce/detail?dockey=600-202605050830BIZWIRE_USPRX____20260505_BW017359-1"
+        }
+      ],
+      "sourceExcerpt": "UiPath (NYSE: PATH), a leader in agentic business orchestration, today announced the release of agentic AI capabilities on UiPath Automation Suite™ .",
+      "event": {
+        "id": "EV-c52947e480fa3347",
+        "title": "UiPath Automation Suite™ 为公共部门提供本地部署的智能体 AI",
+        "originalTitle": "UiPath Automation Suite™ Delivers On-Premises Agentic AI for the Public Sector – Company Announcement - FT.com",
+        "date": "2026-05-05",
+        "dataDate": "2026-07-21",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-7ae0c6bd5891fc63",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-047364b9be67f665",
@@ -3411,6 +3523,7 @@
       "claim_refs": [
         "CL-d7c36097d96ddbd1",
         "CL-0483747d98685d38",
+        "CL-dd6404c9b3bb6b8f",
         "CL-7f17eefc0a7526c1"
       ],
       "source_refs": [
@@ -3437,6 +3550,12 @@
           "subject": "阿里通义实验室",
           "object": "Qwen-Audio-3.0-TTS，面向 16 种语言的 Flash 与 Plus 级托管语音合成模型",
           "quote": "The release focuses on four things developers hit in production: broader language coverage, natural-language style control, fine-grained tag control, and robustness when the reference audio is not clean. Qwen-Audio-3.0-TTS-Plus also ranks first on the independent Artificial Analysis Text-to-Speech leaderboard."
+        },
+        {
+          "id": "CL-dd6404c9b3bb6b8f",
+          "subject": "阿里通义实验室",
+          "object": "Qwen-Audio-3.0-TTS，面向 16 种语言的 Flash 与 Plus 级托管语音合成模型",
+          "quote": "Two variants, one lineage"
         },
         {
           "id": "CL-7f17eefc0a7526c1",
@@ -3584,6 +3703,69 @@
         "title": "华为 Pura 80 系列率先升级 HarmonyOS 6.1.0.135 SP8，新增单应用音量调节与图库 AI 修图增强",
         "originalTitle": "",
         "date": "2026-07-20",
+        "dataDate": "2026-07-20",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-216bff5a55bd1890",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-721eb3fd31f8e1f6",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-581b48f2032c9621",
+      "object_type": "entity",
+      "event_id": "EV-f5483fed83363fa1",
+      "claim_refs": [
+        "CL-4803481bd6c46420",
+        "CL-940b75befd32b922",
+        "CL-136ba5c1ac1faec3"
+      ],
+      "source_refs": [
+        "SA-fbb91e6c03b2774c"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified",
+      "subjectName": "壁仞科技",
+      "objectName": "NPO",
+      "predicateLabel": "发布",
+      "title": "壁仞科技 发布 NPO",
+      "eventTitle": "壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案",
+      "eventDate": "2026-07-19",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-4803481bd6c46420",
+          "subject": "壁仞科技",
+          "object": "NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案",
+          "quote": "壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案 - IT之家"
+        },
+        {
+          "id": "CL-940b75befd32b922",
+          "subject": "壁仞科技",
+          "object": "NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案",
+          "quote": "壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案"
+        },
+        {
+          "id": "CL-136ba5c1ac1faec3",
+          "subject": "壁仞科技",
+          "object": "NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案",
+          "quote": "IT之家 7 月 19 日消息，在 2026 世界人工智能大会上，壁仞科技推出下一代 NPO 光互连、分布式解耦架构超节点方案，支持单个超节点 1024 卡 Scale-up 扩展。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-fbb91e6c03b2774c",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/978/705.htm"
+        }
+      ],
+      "sourceExcerpt": "壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案 - IT之家",
+      "event": {
+        "id": "EV-f5483fed83363fa1",
+        "title": "壁仞科技推出 NPO 光互连、分布式解耦架构、最大 1024 卡超节点方案",
+        "originalTitle": "",
+        "date": "2026-07-19",
         "dataDate": "2026-07-20",
         "eventTypeLabel": "产品发布"
       }
@@ -3909,9 +4091,9 @@
       "data_date": "2026-07-19",
       "status": "verified",
       "subjectName": "商汤科技",
-      "objectName": "U1 Pro",
+      "objectName": "日日新 SenseNova U1 Pro",
       "predicateLabel": "发布",
-      "title": "商汤科技 发布 U1 Pro",
+      "title": "商汤科技 发布 日日新 SenseNova U1 Pro",
       "eventTitle": "商汤科技发布日日新 U1 Pro 图片创作模型：最高 8K 原生分辨率输出，宣称告别\"AI 味\"",
       "eventDate": "2026-07-18",
       "sourceCount": 1,
@@ -4145,7 +4327,8 @@
       "event_id": "EV-0a9617a5118564db",
       "claim_refs": [
         "CL-58c689baa9bc67b1",
-        "CL-8cdcf3ff96f2a74e"
+        "CL-8cdcf3ff96f2a74e",
+        "CL-3e4f249d46540501"
       ],
       "source_refs": [
         "SA-4804497da53bf822"
@@ -4171,6 +4354,12 @@
           "subject": "京东",
           "object": "与 JoyAI-Video-Edit 视频编辑模型",
           "quote": "据京东介绍，JoyAI-Talker 具备低延迟对话、情绪理解、工具调用和记忆等能力，让 AI 从机械执行指令走向理解人的意图和状态。"
+        },
+        {
+          "id": "CL-3e4f249d46540501",
+          "subject": "京东",
+          "object": "与 JoyAI-Video-Edit 视频编辑模型",
+          "quote": "7 月 18 日，京东以“AI 进入物理世界”为核心主题亮相上海世博展览馆，首次系统展示面向物理世界的 JoyAI 模型矩阵。"
         }
       ],
       "sources": [
@@ -4310,64 +4499,64 @@
       }
     },
     {
-      "relationship_id": "REL2-fe33f6bf65f6dfab",
+      "relationship_id": "REL2-efebd768694539ca",
       "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-6fcba5d96a4fadfd",
+      "subject_ref": "EN-2abf8289b2f2113f",
       "subject_type": "entity",
       "predicate": "publishes",
-      "object_ref": "EN-bac541b589c8a0d1",
+      "object_ref": "EN-91901356a63794df",
       "object_type": "entity",
-      "event_id": "EV-2351415291cb9fcd",
+      "event_id": "EV-19bcfc6d7c1612cb",
       "claim_refs": [
-        "CL-2f11988570d1a12e",
-        "CL-9a20738640be8455",
-        "CL-0cee176c13a479cb"
+        "CL-1e962342447786b8",
+        "CL-78681e9f39f62358",
+        "CL-0bd5ffdc03145e05"
       ],
       "source_refs": [
-        "SA-5e076b3303d1b0cc"
+        "SA-515588617a2b8390"
       ],
       "data_date": "2026-07-19",
       "status": "verified",
-      "subjectName": "xAI",
-      "objectName": "Grok 4.6",
+      "subjectName": "蚂蚁数科",
+      "objectName": "Agentar2.0",
       "predicateLabel": "发布",
-      "title": "xAI 发布 Grok 4.6",
-      "eventTitle": "马斯克透露 Grok 4.6 参数规模达 2 万亿，下周完成初始训练",
-      "eventDate": "2026-07-18",
+      "title": "蚂蚁数科 发布 Agentar2.0",
+      "eventTitle": "蚂蚁数科发布商业智能体超级工厂核心平台 Agentar2.0",
+      "eventDate": "2026-07-19",
       "sourceCount": 1,
       "claims": [
         {
-          "id": "CL-2f11988570d1a12e",
-          "subject": "undisclosed_subject",
-          "object": "马斯克透露 Grok 4.6 参数规模达 2 万亿，下周完成初始训练",
-          "quote": "目前，xAI 尚未公布 Grok 4.6 的正式发布时间、训练细节以及完整技术指标。"
+          "id": "CL-1e962342447786b8",
+          "subject": "蚂蚁数科",
+          "object": "商业智能体超级工厂核心平台 Agentar2.0",
+          "quote": "IT之家 7 月 19 日消息，今日，在 2026 世界人工智能大会，蚂蚁数科正式发布商业智能体超级工厂核心平台“Agentar2.0”。"
         },
         {
-          "id": "CL-9a20738640be8455",
-          "subject": "undisclosed_subject",
-          "object": "马斯克透露 Grok 4.6 参数规模达 2 万亿，下周完成初始训练",
-          "quote": "此前，xAI 已推出 Grok 系列多个版本。"
+          "id": "CL-78681e9f39f62358",
+          "subject": "蚂蚁数科",
+          "object": "商业智能体超级工厂核心平台 Agentar2.0",
+          "quote": "据介绍，Agentar2.0 首批预置 200 个岗位级数字专家模板，并提供数百个可订阅的 Skills 级开箱可用的智能体工具。"
         },
         {
-          "id": "CL-0cee176c13a479cb",
-          "subject": "undisclosed_subject",
-          "object": "马斯克透露 Grok 4.6 参数规模达 2 万亿，下周完成初始训练",
-          "quote": "在参数规模方面，马斯克 2026 年 5 月表示 Grok 基础模型 V9-Medium（1.5T 参数）已经完成训练，后续正在进行微调和强化学习阶段。"
+          "id": "CL-0bd5ffdc03145e05",
+          "subject": "蚂蚁数科",
+          "object": "商业智能体超级工厂核心平台 Agentar2.0",
+          "quote": "企业可以根据具体岗位和经营需求，快速启用具备专业知识、业务流程及工具调用能力的数字专家，无需从零起步。"
         }
       ],
       "sources": [
         {
-          "id": "SA-5e076b3303d1b0cc",
+          "id": "SA-515588617a2b8390",
           "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/978/595.htm"
+          "url": "https://ithome.com/0/978/684.htm"
         }
       ],
-      "sourceExcerpt": "目前，xAI 尚未公布 Grok 4.6 的正式发布时间、训练细节以及完整技术指标。",
+      "sourceExcerpt": "IT之家 7 月 19 日消息，今日，在 2026 世界人工智能大会，蚂蚁数科正式发布商业智能体超级工厂核心平台“Agentar2.0”。",
       "event": {
-        "id": "EV-2351415291cb9fcd",
-        "title": "马斯克透露 Grok 4.6 参数规模达 2 万亿，下周完成初始训练",
+        "id": "EV-19bcfc6d7c1612cb",
+        "title": "蚂蚁数科发布商业智能体超级工厂核心平台 Agentar2.0",
         "originalTitle": "",
-        "date": "2026-07-18",
+        "date": "2026-07-19",
         "dataDate": "2026-07-19",
         "eventTypeLabel": "产品发布"
       }
@@ -4545,6 +4734,76 @@
         "date": "2026-07-18",
         "dataDate": "2026-07-18",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-5d24ca1eeaa32514",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-8d323d8bba783aa3",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-bbdefa2950f49882",
+      "object_type": "entity",
+      "event_id": "EV-b4b5d141dac164c2",
+      "claim_refs": [
+        "CL-e63a51153c4130ba",
+        "CL-d6081b3a92fec5c6",
+        "CL-e7d02b5069eb2d16",
+        "CL-925d8618ab7f4707"
+      ],
+      "source_refs": [
+        "SA-7275aacd7db34e0c"
+      ],
+      "data_date": "2026-07-18",
+      "status": "verified",
+      "subjectName": "Google Cloud",
+      "objectName": "Google",
+      "predicateLabel": "合作",
+      "title": "Google Cloud 合作 Google",
+      "eventTitle": "英特尔扩大与 Google Cloud 合作，为全球员工提供 Gemini Enterprise 并加速芯片开发",
+      "eventDate": "2026-07-17",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-e63a51153c4130ba",
+          "subject": "英特尔扩大与 Google Cloud",
+          "object": "，为全球员工提供 Gemini Enterprise 并加速芯片开发",
+          "quote": "英特尔扩大与谷歌 Google Cloud 合作，加速企业 AI 赋能转型 - IT之家"
+        },
+        {
+          "id": "CL-d6081b3a92fec5c6",
+          "subject": "英特尔扩大与 Google Cloud",
+          "object": "，为全球员工提供 Gemini Enterprise 并加速芯片开发",
+          "quote": "英特尔扩大与谷歌 Google Cloud 合作，加速企业 AI 赋能转型"
+        },
+        {
+          "id": "CL-e7d02b5069eb2d16",
+          "subject": "英特尔扩大与 Google Cloud",
+          "object": "，为全球员工提供 Gemini Enterprise 并加速芯片开发",
+          "quote": "IT之家 7 月 17 日消息，Intel（英特尔）当地时间 16 日宣布扩大与谷歌云服务部门 Google Cloud 的既有合作，加速自身的 AI 赋能转型。"
+        },
+        {
+          "id": "CL-925d8618ab7f4707",
+          "subject": "英特尔扩大与 Google Cloud",
+          "object": "，为全球员工提供 Gemini Enterprise 并加速芯片开发",
+          "quote": "英特尔将 为其全球员工提供 Gemini Enterprise 生成式 AI 服务 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-7275aacd7db34e0c",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/978/036.htm"
+        }
+      ],
+      "sourceExcerpt": "英特尔扩大与谷歌 Google Cloud 合作，加速企业 AI 赋能转型 - IT之家",
+      "event": {
+        "id": "EV-b4b5d141dac164c2",
+        "title": "英特尔扩大与 Google Cloud 合作，为全球员工提供 Gemini Enterprise 并加速芯片开发",
+        "originalTitle": "",
+        "date": "2026-07-17",
+        "dataDate": "2026-07-18",
+        "eventTypeLabel": "合作"
       }
     },
     {
@@ -5066,9 +5325,9 @@
       "data_date": "2026-07-17",
       "status": "verified",
       "subjectName": "DoorDash",
-      "objectName": "CLI",
+      "objectName": "DoorDash CLI",
       "predicateLabel": "发布",
-      "title": "DoorDash 发布 CLI",
+      "title": "DoorDash 发布 DoorDash CLI",
       "eventTitle": "是的，现在可以通过命令行订购DoorDash",
       "eventDate": "2026-07-16",
       "sourceCount": 1,
@@ -5219,76 +5478,6 @@
         "date": "2026-07-16",
         "dataDate": "2026-07-17",
         "eventTypeLabel": "模型发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-84466085129acbe5",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-96eebba49dbbf422",
-      "subject_type": "entity",
-      "predicate": "partners_with",
-      "object_ref": "EN-bbdefa2950f49882",
-      "object_type": "entity",
-      "event_id": "EV-36a9e4e908249381",
-      "claim_refs": [
-        "CL-56cfd71a92a6d725",
-        "CL-9d71306c9c628a4b",
-        "CL-67b3c798eceba675",
-        "CL-48ed24b187f4f180"
-      ],
-      "source_refs": [
-        "SA-fcb11f81b111a714"
-      ],
-      "data_date": "2026-07-17",
-      "status": "verified",
-      "subjectName": "Intel",
-      "objectName": "Google",
-      "predicateLabel": "合作",
-      "title": "Intel 合作 Google",
-      "eventTitle": "Intel 与 Google Cloud 宣布合作，加速 Intel 的 AI 赋能企业转型",
-      "eventDate": "2026-07-16",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-56cfd71a92a6d725",
-          "subject": "Intel and Google Cloud Announce",
-          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation - Intel Newsroom",
-          "quote": "Collaboration leverages Gemini Enterprise and Google Cloud to expand Intel’s AI workforce capabilities via scalable agentic workflows across core business functions"
-        },
-        {
-          "id": "CL-9d71306c9c628a4b",
-          "subject": "Intel and Google Cloud Announce",
-          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation - Intel Newsroom",
-          "quote": "SANTA CLARA, Calif., and SUNNYVALE, Calif. &ndash; July 16, 2026 &ndash; Intel and Google Cloud today announced an expansion of their previously announced multi-year strategic collaboration, which would accelerate Intel&rsquo;s enterprise-wide digital evolution through the deployment of Gemini Enterprise and Google Cloud."
-        },
-        {
-          "id": "CL-67b3c798eceba675",
-          "subject": "Intel and Google Cloud Announce",
-          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation - Intel Newsroom",
-          "quote": "\"As part of our AI-powered transformation, we are committed to offering our employees tools that help them move with greater speed, agility, and efficiency,\" said Cindy Stoddard, senior vice president and chief information officer, Intel. \"Our work with Google Cloud allows us to provide our employees with a central hub to build and deploy agents through Gemini Enterprise and scale silicon development with elastic cloud infrastructure. This collaboration gives Intel the AI tools and workflows needed to help reinvent its operations and execute business objectives more quickly.\""
-        },
-        {
-          "id": "CL-48ed24b187f4f180",
-          "subject": "Intel and Google Cloud Announce",
-          "object": "to Accelerate Intel’s AI-Enabled Enterprise Transformation - Intel Newsroom",
-          "quote": "This expansion builds on a long-standing history of co-innovation between the two companies, most recently highlighted by the collaboration to optimize next-generation AI infrastructure ."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-fcb11f81b111a714",
-          "publisher": "newsroom.intel.com",
-          "url": "https://newsroom.intel.com/artificial-intelligence/intel-google-cloud-announce-collaboration-to-accelerate-intel-ai-enabled-enterprise-transformation"
-        }
-      ],
-      "sourceExcerpt": "Collaboration leverages Gemini Enterprise and Google Cloud to expand Intel’s AI workforce capabilities via scalable agentic workflows across core business functions",
-      "event": {
-        "id": "EV-36a9e4e908249381",
-        "title": "Intel 与 Google Cloud 宣布合作，加速 Intel 的 AI 赋能企业转型",
-        "originalTitle": "Intel and Google Cloud Announce Collaboration to Accelerate Intel’s AI-Enabled Enterprise Transformation - Intel Newsroom",
-        "date": "2026-07-16",
-        "dataDate": "2026-07-17",
-        "eventTypeLabel": "合作"
       }
     },
     {
@@ -5748,69 +5937,6 @@
         "date": "2026-07-15",
         "dataDate": "2026-07-16",
         "eventTypeLabel": "模型发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-80071fad8ab7c49a",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-3f726694f178ed7a",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-9d93b78264eb6acb",
-      "object_type": "entity",
-      "event_id": "EV-702ed039940800fb",
-      "claim_refs": [
-        "CL-c925bbad2b823d08",
-        "CL-5fd685ea5e45fab9",
-        "CL-465a68f25ab3c791"
-      ],
-      "source_refs": [
-        "SA-c82c09f4581c09fc"
-      ],
-      "data_date": "2026-07-16",
-      "status": "verified",
-      "subjectName": "Kingsoft Office",
-      "objectName": "WPS 365",
-      "predicateLabel": "发布",
-      "title": "Kingsoft Office 发布 WPS 365",
-      "eventTitle": "金山办公推出 WPS Comate AI 办公客户端",
-      "eventDate": "2026-07-15",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-c925bbad2b823d08",
-          "subject": "金山办公",
-          "object": "WPS Comate AI 办公客户端",
-          "quote": "IT之家 7 月 15 日消息，在今天的 2026 金山办公 AI 生产力大会上，金山办公正式推出了 WPS 365 家庭新成员 —— WPS Comate。"
-        },
-        {
-          "id": "CL-5fd685ea5e45fab9",
-          "subject": "金山办公",
-          "object": "WPS Comate AI 办公客户端",
-          "quote": "根据官方定义， 这是一款面向员工的 AI 办公客户端 。"
-        },
-        {
-          "id": "CL-465a68f25ab3c791",
-          "subject": "金山办公",
-          "object": "WPS Comate AI 办公客户端",
-          "quote": "据介绍，WPS Comate 可连接组织数据、系统、流程，让 AI 融入到组织工作流中，交付业务结果，支持个人提效、团队沉淀和组织赋能，并提供覆盖全工作场景的六大模块，包括：AI 岗位专家、Skill 技能生态、自动化任务、团队协作空间、Wiki 知识库和应用广场。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-c82c09f4581c09fc",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/977/105.htm"
-        }
-      ],
-      "sourceExcerpt": "IT之家 7 月 15 日消息，在今天的 2026 金山办公 AI 生产力大会上，金山办公正式推出了 WPS 365 家庭新成员 —— WPS Comate。",
-      "event": {
-        "id": "EV-702ed039940800fb",
-        "title": "金山办公推出 WPS Comate AI 办公客户端",
-        "originalTitle": "",
-        "date": "2026-07-15",
-        "dataDate": "2026-07-16",
-        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -6365,9 +6491,9 @@
       "data_date": "2026-07-15",
       "status": "verified",
       "subjectName": "Crusoe",
-      "objectName": "Fine-Tuning",
+      "objectName": "Crusoe Serverless Fine-Tuning",
       "predicateLabel": "发布",
-      "title": "Crusoe 发布 Fine-Tuning",
+      "title": "Crusoe 发布 Crusoe Serverless Fine-Tuning",
       "eventTitle": "Crusoe 推出无服务器微调与自助推理部署，加速开放模型从实验到生产的开发进程",
       "eventDate": "2026-07-07",
       "sourceCount": 1,
@@ -9244,62 +9370,6 @@
       }
     },
     {
-      "relationship_id": "REL2-f92ce4e61c880fbe",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-8d323d8bba783aa3",
-      "object_type": "entity",
-      "event_id": "EV-96c8ce4ee89adb84",
-      "claim_refs": [
-        "CL-1cc211dda48a2df5",
-        "CL-349612643de6fc05"
-      ],
-      "source_refs": [
-        "SA-e694ff120209f67a"
-      ],
-      "data_date": "2026-07-09",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Google Cloud",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Google Cloud",
-      "eventTitle": "谷歌云推出两款新AI芯片以与英伟达竞争",
-      "eventDate": "2026-07-09",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-1cc211dda48a2df5",
-          "subject": "Google Cloud",
-          "object": "to compete with Nvidia",
-          "quote": "Google Cloud launches two new AI chips to compete with Nvidia"
-        },
-        {
-          "id": "CL-349612643de6fc05",
-          "subject": "Google Cloud",
-          "object": "to compete with Nvidia",
-          "quote": "Google Cloud on Wednesday announced that its eighth generation of custom-built AI chips, or tensor processing units (TPUs), will be split in two. One chip, named the TPU 8t, will be geared for model training and another, the TPU 8i, is aimed at inference."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-e694ff120209f67a",
-          "publisher": "techcrunch.com",
-          "url": "https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia"
-        }
-      ],
-      "sourceExcerpt": "Google Cloud launches two new AI chips to compete with Nvidia",
-      "event": {
-        "id": "EV-96c8ce4ee89adb84",
-        "title": "谷歌云推出两款新AI芯片以与英伟达竞争",
-        "originalTitle": "Google Cloud launches two new AI chips to compete with Nvidia",
-        "date": "2026-07-09",
-        "dataDate": "2026-07-09",
-        "eventTypeLabel": "硬件产品"
-      }
-    },
-    {
       "relationship_id": "REL2-1408b94e058f06a8",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-8d4321d936320802",
@@ -9734,6 +9804,69 @@
       }
     },
     {
+      "relationship_id": "REL2-2c87b80484b30f13",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-9c8ae69b84f21a2e",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-be1a3c9420d88ea5",
+      "object_type": "entity",
+      "event_id": "EV-c2f5b59db9912018",
+      "claim_refs": [
+        "CL-8aab7b79006b4541",
+        "CL-f213f8f529bbde36",
+        "CL-3a8619e7c67dab96"
+      ],
+      "source_refs": [
+        "SA-f44e4ab94cfc5d44"
+      ],
+      "data_date": "2026-07-07",
+      "status": "verified",
+      "subjectName": "腾讯",
+      "objectName": "Hy3",
+      "predicateLabel": "发布",
+      "title": "腾讯 发布 Hy3",
+      "eventTitle": "腾讯混元今日发布并开源 Hy3 模型，性能比肩 2~5 倍参数规模旗舰模型",
+      "eventDate": "2026-07-06",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-8aab7b79006b4541",
+          "subject": "腾讯混元今日",
+          "object": "腾讯发布并开源混元 Hy3 模型，宣称效果比肩国内外更大尺寸旗舰模型 - IT之家",
+          "quote": "腾讯发布并开源混元 Hy3 模型，宣称效果比肩国内外更大尺寸旗舰模型 - IT之家"
+        },
+        {
+          "id": "CL-f213f8f529bbde36",
+          "subject": "腾讯混元今日",
+          "object": "腾讯发布并开源混元 Hy3 模型，宣称效果比肩国内外更大尺寸旗舰模型",
+          "quote": "腾讯发布并开源混元 Hy3 模型，宣称效果比肩国内外更大尺寸旗舰模型"
+        },
+        {
+          "id": "CL-3a8619e7c67dab96",
+          "subject": "腾讯混元今日",
+          "object": "IT之家 7 月 6 日消息，腾讯混元官方今日宣布，继 4 月底发布 Hy3 preview 后，通过反馈修复了各种体验问题，进一步提升了后训练的质量和规模。",
+          "quote": "IT之家 7 月 6 日消息，腾讯混元官方今日宣布，继 4 月底发布 Hy3 preview 后，通过反馈修复了各种体验问题，进一步提升了后训练的质量和规模。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-f44e4ab94cfc5d44",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/973/106.htm"
+        }
+      ],
+      "sourceExcerpt": "腾讯发布并开源混元 Hy3 模型，宣称效果比肩国内外更大尺寸旗舰模型 - IT之家",
+      "event": {
+        "id": "EV-c2f5b59db9912018",
+        "title": "腾讯混元今日发布并开源 Hy3 模型，性能比肩 2~5 倍参数规模旗舰模型",
+        "originalTitle": "",
+        "date": "2026-07-06",
+        "dataDate": "2026-07-07",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-8ece73de065422cf",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c04bd5ebd10ab696",
@@ -10119,62 +10252,6 @@
       }
     },
     {
-      "relationship_id": "REL2-1eef5fec24c6d66d",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-49f756463ad9dcfb",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-098a7df7f42ccf8b",
-      "object_type": "entity",
-      "event_id": "EV-a70d5cf3ee6d6d64",
-      "claim_refs": [
-        "CL-8d7813f50efd79be",
-        "CL-62e26c367ac42c6a"
-      ],
-      "source_refs": [
-        "SA-c1f8723a192b7f19"
-      ],
-      "data_date": "2026-07-04",
-      "status": "verified",
-      "subjectName": "Harness",
-      "objectName": "Autonomous Worker Agents",
-      "predicateLabel": "发布",
-      "title": "Harness 发布 Autonomous Worker Agents",
-      "eventTitle": "Harness推出面向软件交付的自主工作代理",
-      "eventDate": "2026-07-04",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-8d7813f50efd79be",
-          "subject": "Harness",
-          "object": "Autonomous Worker Agents for Software Delivery",
-          "quote": "SAN FRANCISCO , June 30, 2026 /PRNewswire/ -- Harness, the AI Software Delivery Platform TM company, today launched Autonomous Worker Agents for software delivery: the platform for enterprises to build and safely run AI agents that handle the work between writing code and shipping it to production."
-        },
-        {
-          "id": "CL-62e26c367ac42c6a",
-          "subject": "Harness",
-          "object": "Autonomous Worker Agents for Software Delivery",
-          "quote": "Build and safely run AI agents for software delivery, with a curated Marketplace featuring Harness Managed and Community-authored agents."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-c1f8723a192b7f19",
-          "publisher": "prnewswire.com",
-          "url": "https://prnewswire.com/news-releases/harness-launches-autonomous-worker-agents-for-software-delivery-302814180.html"
-        }
-      ],
-      "sourceExcerpt": "SAN FRANCISCO , June 30, 2026 /PRNewswire/ -- Harness, the AI Software Delivery Platform TM company, today launched Autonomous Worker Agents for software delivery: the platform for enterprises to build and safely run AI agents that handle the work between writing code and shipping it to production.",
-      "event": {
-        "id": "EV-a70d5cf3ee6d6d64",
-        "title": "Harness推出面向软件交付的自主工作代理",
-        "originalTitle": "Harness Launches Autonomous Worker Agents for Software Delivery",
-        "date": "2026-07-04",
-        "dataDate": "2026-07-04",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
       "relationship_id": "REL2-3134364c4ac137b8",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-1da46c494dfdd8d3",
@@ -10184,7 +10261,6 @@
       "object_type": "entity",
       "event_id": "EV-587c18cb1837c74f",
       "claim_refs": [
-        "CL-7321602e8e376ee4",
         "CL-7088c965de696f86",
         "CL-7976fa739a9fd65e"
       ],
@@ -10201,12 +10277,6 @@
       "eventDate": "2026-07-03",
       "sourceCount": 1,
       "claims": [
-        {
-          "id": "CL-7321602e8e376ee4",
-          "subject": "磐仪",
-          "object": "强固型边缘 AI 平台 FPC-9309W-G5，支持 RTX 5090 显卡",
-          "quote": "磐仪推出强固型边缘 AI 平台 FPC-9309W-G5，支持 RTX 5090 显卡 - IT之家"
-        },
         {
           "id": "CL-7088c965de696f86",
           "subject": "磐仪",
@@ -10798,69 +10868,6 @@
       }
     },
     {
-      "relationship_id": "REL2-d39ae220d8211bae",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-ea3bd73e2b506e00",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-557203e8cc173124",
-      "object_type": "entity",
-      "event_id": "EV-f34eec5df7f5bcb7",
-      "claim_refs": [
-        "CL-601390d975f30011",
-        "CL-22b210018f5193f7",
-        "CL-7c6f61d5cad29584"
-      ],
-      "source_refs": [
-        "SA-01bdd26d6ecd1a44"
-      ],
-      "data_date": "2026-07-02",
-      "status": "verified",
-      "subjectName": "Meta",
-      "objectName": "Brain2Qwerty",
-      "predicateLabel": "发布",
-      "title": "Meta 发布 Brain2Qwerty",
-      "eventTitle": "Meta 发布非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
-      "eventDate": "2026-07-01",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-601390d975f30011",
-          "subject": "Meta",
-          "object": "非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
-          "quote": "Meta's FAIR research team has released Brain2Qwerty v2, a model that reconstructs full sentences from non-invasive brain recordings. The average word error rate drops to 39 percent, and the best participant hits 22 percent."
-        },
-        {
-          "id": "CL-22b210018f5193f7",
-          "subject": "Meta",
-          "object": "非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
-          "quote": "Meta's FAIR AI team uses Brain2Qwerty v2 to translate brain activity into typed sentences, with no implants or surgery required. The system reads magnetic signals outside the skull and reconstructs what a person is typing. Clinical use for paralyzed patients is still a long way off, but accuracy keeps improving with every additional recording. AI agents that wrote their own code helped with the optimization."
-        },
-        {
-          "id": "CL-7c6f61d5cad29584",
-          "subject": "Meta",
-          "object": "非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
-          "quote": "Meta's FAIR AI team uses Brain2Qwerty v2 to translate brain activity into typed sentences, with no implants or surgery required. The system reads magnetic signals outside the skull and reconstructs what a person is typing. Clinical use for paralyzed patients is still a long way off, but accuracy keeps improving with every additional recording. AI agents that wrote their own code helped with the optimization."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-01bdd26d6ecd1a44",
-          "publisher": "The Decoder：AI News（RSS）",
-          "url": "https://the-decoder.com/metas-non-invasive-brain-to-text-ai-is-closing-the-gap-with-surgical-implants"
-        }
-      ],
-      "sourceExcerpt": "Meta's FAIR research team has released Brain2Qwerty v2, a model that reconstructs full sentences from non-invasive brain recordings. The average word error rate drops to 39 percent, and the best participant hits 22 percent.",
-      "event": {
-        "id": "EV-f34eec5df7f5bcb7",
-        "title": "Meta 发布非侵入式脑机接口 Brain2Qwerty v2，词错误率降至 39%",
-        "originalTitle": "",
-        "date": "2026-07-01",
-        "dataDate": "2026-07-02",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
       "relationship_id": "REL2-d9ba4c1f870adb8b",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -10872,7 +10879,8 @@
       "claim_refs": [
         "CL-a443b4503f34acea",
         "CL-426e067d1ff091c4",
-        "CL-259615c509f24d9c"
+        "CL-259615c509f24d9c",
+        "CL-94e0cab7efd339d9"
       ],
       "source_refs": [
         "SA-0955f4f3c5b71400"
@@ -10904,6 +10912,12 @@
           "subject": "Anthropic",
           "object": "Anthropic 回应 Claude Code 暗藏检测中国用户代码：将在明日更新中删除",
           "quote": "Anthropic 回应 Claude Code 暗藏代码检测中国用户：将在明日更新中删除"
+        },
+        {
+          "id": "CL-94e0cab7efd339d9",
+          "subject": "Anthropic",
+          "object": "Anthropic 回应 Claude Code 暗藏检测中国用户代码：将在明日更新中删除",
+          "quote": "IT之家 7 月 1 日消息，用户 LegitMichel777 昨日在 Reddit 发帖称，其在逆向分析 Claude Code 2.1.196 版本时，发现该工具自今年 4 月 2 日发布的 2.1.91 版本起便内置了一套隐蔽的检测机制。"
         }
       ],
       "sources": [
@@ -11136,69 +11150,6 @@
         "title": "Intercom 为其 Fin AI 智能体推出基于结果的定价模式",
         "originalTitle": "Intercom Innovates Outcome-Based Pricing for its Fin AI Agent | Stripe",
         "date": "2026-07-01",
-        "dataDate": "2026-07-01",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-4d57a9097008ed15",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-ea3bd73e2b506e00",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-557203e8cc173124",
-      "object_type": "entity",
-      "event_id": "EV-b60df35d168fe6b7",
-      "claim_refs": [
-        "CL-8b8c958533d0e038",
-        "CL-9bc49e8ccccb2592",
-        "CL-de00de874752d3d6"
-      ],
-      "source_refs": [
-        "SA-eb397f2ea8a52371"
-      ],
-      "data_date": "2026-07-01",
-      "status": "verified",
-      "subjectName": "Meta",
-      "objectName": "Brain2Qwerty",
-      "predicateLabel": "发布",
-      "title": "Meta 发布 Brain2Qwerty",
-      "eventTitle": "Meta AI 发布 Brain2Qwerty v2：非侵入式 MEG 脑到文本解码管线",
-      "eventDate": "2026-06-30",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-8b8c958533d0e038",
-          "subject": "Meta AI",
-          "object": "Brain2Qwerty v2：非侵入式 MEG 脑到文本解码管线",
-          "quote": "Meta AI just introduced Brain2Qwerty v2 . It decodes natural sentences from non-invasive brain recordings in real time. The system reads magnetoencephalography (MEG) signals while a person types. It reconstructs what they typed, with no implant and no surgery. This is the follow-up to Brain2Qwerty v1, released in February 2025. Meta is also releasing the full training code for both versions. The pipeline combines a convolutional encoder, a transformer, and a character-level language model."
-        },
-        {
-          "id": "CL-9bc49e8ccccb2592",
-          "subject": "Meta AI",
-          "object": "Brain2Qwerty v2：非侵入式 MEG 脑到文本解码管线",
-          "quote": "Brain2Qwerty v2 decodes typed sentences from non-invasive MEG signals, with no implant or surgery."
-        },
-        {
-          "id": "CL-de00de874752d3d6",
-          "subject": "Meta AI",
-          "object": "Brain2Qwerty v2：非侵入式 MEG 脑到文本解码管线",
-          "quote": "It reaches 61% average word accuracy (39% WER), up from 8% for prior non-invasive methods."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-eb397f2ea8a52371",
-          "publisher": "MarkTechPost（RSS）",
-          "url": "https://marktechpost.com/2026/06/30/meta-ai-releases-brain2qwerty-v2-a-non-invasive-meg-brain-to-text-pipeline-decoding-typed-sentences-at-61-word-accuracy"
-        }
-      ],
-      "sourceExcerpt": "Meta AI just introduced Brain2Qwerty v2 . It decodes natural sentences from non-invasive brain recordings in real time. The system reads magnetoencephalography (MEG) signals while a person types. It reconstructs what they typed, with no implant and no surgery. This is the follow-up to Brain2Qwerty v1, released in February 2025. Meta is also releasing the full training code for both versions. The pipeline combines a convolutional encoder, a transformer, and a character-level language model.",
-      "event": {
-        "id": "EV-b60df35d168fe6b7",
-        "title": "Meta AI 发布 Brain2Qwerty v2：非侵入式 MEG 脑到文本解码管线",
-        "originalTitle": "",
-        "date": "2026-06-30",
         "dataDate": "2026-07-01",
         "eventTypeLabel": "产品发布"
       }
@@ -12023,69 +11974,6 @@
       }
     },
     {
-      "relationship_id": "REL2-64d994912ba46191",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-e78bdebae031095b",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-35ad2658e502aeda",
-      "object_type": "entity",
-      "event_id": "EV-8a91e14f37d32b4d",
-      "claim_refs": [
-        "CL-95f44cb09829ce61",
-        "CL-a93154756285b513",
-        "CL-8e0772ef6fe2fd0e"
-      ],
-      "source_refs": [
-        "SA-e12af0ca03080fdd"
-      ],
-      "data_date": "2026-06-29",
-      "status": "verified",
-      "subjectName": "SpaceX",
-      "objectName": "Colossus",
-      "predicateLabel": "发布",
-      "title": "SpaceX 发布 Colossus",
-      "eventTitle": "SpaceX Colossus交易🚀，GPT-5.5 Cyber发布🛡️，Codex作为工作空间🤖",
-      "eventDate": "2026-06-29",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-95f44cb09829ce61",
-          "subject": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber",
-          "object": "🛡️, Codex as workspace 🤖",
-          "quote": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber launch 🛡️, Codex as workspace 🤖 TLDR"
-        },
-        {
-          "id": "CL-a93154756285b513",
-          "subject": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber",
-          "object": "🛡️, Codex as workspace 🤖",
-          "quote": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber launch 🛡️, Codex as workspace 🤖"
-        },
-        {
-          "id": "CL-8e0772ef6fe2fd0e",
-          "subject": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber",
-          "object": "🛡️, Codex as workspace 🤖",
-          "quote": "SpaceX signed a deal worth up to $6.3 billion with Reflection AI for access to its supercomputer Project Colossus. This agreement allows Reflection to use Nvidia GB300s for training open-source AI models, reflecting a shift toward increased demand for compute power in AI development. SpaceX aims to capitalize on this by offering its infrastructure to outside AI companies, bolstering its position in the AI and data center space."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-e12af0ca03080fdd",
-          "publisher": "TLDR AI Newsletter",
-          "url": "https://tldr.tech/ai/2026-06-23"
-        }
-      ],
-      "sourceExcerpt": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber launch 🛡️, Codex as workspace 🤖 TLDR",
-      "event": {
-        "id": "EV-8a91e14f37d32b4d",
-        "title": "SpaceX Colossus交易🚀，GPT-5.5 Cyber发布🛡️，Codex作为工作空间🤖",
-        "originalTitle": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber launch 🛡️, Codex as workspace 🤖",
-        "date": "2026-06-29",
-        "dataDate": "2026-06-29",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
       "relationship_id": "REL2-fcc9ff6116dfab34",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-64933d23013df5dc",
@@ -12336,9 +12224,9 @@
       "data_date": "2026-06-27",
       "status": "verified",
       "subjectName": "DigitalOcean",
-      "objectName": "Inference Era",
+      "objectName": "AI-Native Cloud",
       "predicateLabel": "发布",
-      "title": "DigitalOcean 发布 Inference Era",
+      "title": "DigitalOcean 发布 AI-Native Cloud",
       "eventTitle": "DigitalOcean推出专为推理时代打造的AI原生云平台",
       "eventDate": "2026-06-27",
       "sourceCount": 1,
@@ -12462,9 +12350,9 @@
       "data_date": "2026-06-26",
       "status": "verified",
       "subjectName": "Google",
-      "objectName": "Finance",
+      "objectName": "Google Finance",
       "predicateLabel": "发布",
-      "title": "Google 发布 Finance",
+      "title": "Google 发布 Google Finance",
       "eventTitle": "Google Finance 推出首款独立 Android 应用，iOS 版计划今年晚些时候上线",
       "eventDate": "2026-06-26",
       "sourceCount": 1,
@@ -12516,7 +12404,8 @@
       "event_id": "EV-6364cfadff0d1d30",
       "claim_refs": [
         "CL-57944e88ad8b9e0f",
-        "CL-4629f6be78335566"
+        "CL-4629f6be78335566",
+        "CL-c46156bcf6d9fb53"
       ],
       "source_refs": [
         "SA-d0f9d0d6b7907fd9"
@@ -12542,6 +12431,12 @@
           "subject": "TECHSHOTS | OpenAI",
           "object": "Agent Builder to Compete with n8n and Zapier in AI Workflow Automation",
           "quote": "OpenAI has introduced Agent Builder, a visual, drag-and-drop tool designed to create AI workflows, positioning itself against platforms like n8n and Zapier. Users can build agent flows from templates, incorporating modular components such as logic notes, connectors, and data transformation steps. The platform aims to streamline the development of customer service bots, Q&A agents, and document comparison tools."
+        },
+        {
+          "id": "CL-c46156bcf6d9fb53",
+          "subject": "TECHSHOTS | OpenAI",
+          "object": "Agent Builder to Compete with n8n and Zapier in AI Workflow Automation",
+          "quote": "Tags: openai workflow development"
         }
       ],
       "sources": [
@@ -12615,69 +12510,6 @@
         "date": "2026-06-24",
         "dataDate": "2026-06-25",
         "eventTypeLabel": "模型发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-223567d6ca7b1e88",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-7d3194f79e645c42",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-b70e8201c9feb94a",
-      "object_type": "entity",
-      "event_id": "EV-6364cfadff0d1d30",
-      "claim_refs": [
-        "CL-57944e88ad8b9e0f",
-        "CL-4629f6be78335566",
-        "CL-c46156bcf6d9fb53"
-      ],
-      "source_refs": [
-        "SA-d0f9d0d6b7907fd9"
-      ],
-      "data_date": "2026-06-25",
-      "status": "verified",
-      "subjectName": "OpenAI",
-      "objectName": "AI Workflow Automation",
-      "predicateLabel": "发布",
-      "title": "OpenAI 发布 AI Workflow Automation",
-      "eventTitle": "OpenAI 推出 AI 智能体构建器，与 n8n 和 Zapier 竞争 AI 工作流自动化市场",
-      "eventDate": "2026-06-25",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-57944e88ad8b9e0f",
-          "subject": "TECHSHOTS | OpenAI",
-          "object": "Agent Builder to Compete with n8n and Zapier in AI Workflow Automation",
-          "quote": "OpenAI Launches Agent Builder to Compete with n8n and Zapier in AI Workflow Automation"
-        },
-        {
-          "id": "CL-4629f6be78335566",
-          "subject": "TECHSHOTS | OpenAI",
-          "object": "Agent Builder to Compete with n8n and Zapier in AI Workflow Automation",
-          "quote": "OpenAI has introduced Agent Builder, a visual, drag-and-drop tool designed to create AI workflows, positioning itself against platforms like n8n and Zapier. Users can build agent flows from templates, incorporating modular components such as logic notes, connectors, and data transformation steps. The platform aims to streamline the development of customer service bots, Q&A agents, and document comparison tools."
-        },
-        {
-          "id": "CL-c46156bcf6d9fb53",
-          "subject": "TECHSHOTS | OpenAI",
-          "object": "Agent Builder to Compete with n8n and Zapier in AI Workflow Automation",
-          "quote": "Tags: openai workflow development"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-d0f9d0d6b7907fd9",
-          "publisher": "techshotsapp.com",
-          "url": "https://techshotsapp.com/artificial-intelligence/openai-launches-agent-builder-to-compete-with-n8n-and-zapier-in-ai-workflow-automation"
-        }
-      ],
-      "sourceExcerpt": "OpenAI Launches Agent Builder to Compete with n8n and Zapier in AI Workflow Automation",
-      "event": {
-        "id": "EV-6364cfadff0d1d30",
-        "title": "OpenAI 推出 AI 智能体构建器，与 n8n 和 Zapier 竞争 AI 工作流自动化市场",
-        "originalTitle": "TECHSHOTS | OpenAI Launches Agent Builder to Compete with n8n and Zapier in AI Workflow Automation",
-        "date": "2026-06-25",
-        "dataDate": "2026-06-25",
-        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -13532,6 +13364,7 @@
       "object_type": "entity",
       "event_id": "EV-276d6fc7ccb9eb76",
       "claim_refs": [
+        "CL-102d849216d18311",
         "CL-70ac2bee72954721"
       ],
       "source_refs": [
@@ -13547,6 +13380,12 @@
       "eventDate": "2026-06-23",
       "sourceCount": 1,
       "claims": [
+        {
+          "id": "CL-102d849216d18311",
+          "subject": "Sakana AI",
+          "object": "多智能体编排系统 Sakana Fugu",
+          "quote": "日本 Sakana AI 推出 Fugu：智能调用最佳模型，部分场景优于 Fable 5"
+        },
         {
           "id": "CL-70ac2bee72954721",
           "subject": "Sakana AI",
@@ -14636,12 +14475,12 @@
       }
     },
     {
-      "relationship_id": "REL2-57cb7e90eb817c55",
+      "relationship_id": "REL2-107bb924258efdcc",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
       "subject_type": "entity",
       "predicate": "publishes",
-      "object_ref": "EN-34ec8666daf7b665",
+      "object_ref": "EN-9f15bb7e29e191eb",
       "object_type": "entity",
       "event_id": "EV-574998b1638a3f4f",
       "claim_refs": [
@@ -14654,9 +14493,9 @@
       "data_date": "2026-06-20",
       "status": "verified",
       "subjectName": "Anthropic",
-      "objectName": "Fable",
+      "objectName": "Fable 5",
       "predicateLabel": "发布",
-      "title": "Anthropic 发布 Fable",
+      "title": "Anthropic 发布 Fable 5",
       "eventTitle": "马斯克预测中国大模型2027年Q1追上Anthropic Fable，智谱唐杰回应\"用不了那么久\"",
       "eventDate": "2026-06-19",
       "sourceCount": 1,
@@ -14701,7 +14540,8 @@
       "object_type": "entity",
       "event_id": "EV-9f58b4784df1f163",
       "claim_refs": [
-        "CL-6fc1d514e07ffb91"
+        "CL-6fc1d514e07ffb91",
+        "CL-016544935e0df003"
       ],
       "source_refs": [
         "SA-2b1bc53bfaf09e1d"
@@ -14709,9 +14549,9 @@
       "data_date": "2026-06-20",
       "status": "verified",
       "subjectName": "信实工业",
-      "objectName": "Jio Call",
+      "objectName": "Jio Call Agent",
       "predicateLabel": "发布",
-      "title": "信实工业 发布 Jio Call",
+      "title": "信实工业 发布 Jio Call Agent",
       "eventTitle": "印度首富安巴尼：印度必须成为 AI 的创造者和全球领导者",
       "eventDate": "2026-06-19",
       "sourceCount": 1,
@@ -14721,6 +14561,12 @@
           "subject": "信实工业",
           "object": "Jio Call Agent",
           "quote": "信实工业举行了年度股东大会，并发布 AI 通话助手 Jio Call Agent。"
+        },
+        {
+          "id": "CL-016544935e0df003",
+          "subject": "信实工业",
+          "object": "AI 版 MyJio",
+          "quote": "信实工业还推出 AI 版 MyJio。"
         }
       ],
       "sources": [
@@ -15490,66 +15336,66 @@
       }
     },
     {
-      "relationship_id": "REL2-eab334edbd3e9d50",
+      "relationship_id": "REL2-eaf27cde7b70ddb9",
       "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_ref": "EN-7f871cbf905f6e0c",
       "subject_type": "entity",
       "predicate": "publishes",
-      "object_ref": "EN-8d323d8bba783aa3",
+      "object_ref": "EN-779965438dd9e7a7",
       "object_type": "entity",
-      "event_id": "EV-51dfd0d541380500",
+      "event_id": "EV-ab3586268ebfab38",
       "claim_refs": [
-        "CL-c83d337cfa0736fd",
-        "CL-ca554276228d639a",
-        "CL-191ed56085648a37"
+        "CL-8baf55396569778e",
+        "CL-73f4cfe9ec18e00c",
+        "CL-37bb9b7ce057bacb"
       ],
       "source_refs": [
-        "SA-3322f5b356cb1b1c"
+        "SA-0dc7f4cfc2270562"
       ],
       "data_date": "2026-06-17",
       "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Google Cloud",
+      "subjectName": "OpenRouter",
+      "objectName": "Fusion API",
       "predicateLabel": "发布",
-      "title": "Google 发布 Google Cloud",
-      "eventTitle": "Google Cloud 推出 OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
+      "title": "OpenRouter 发布 Fusion API",
+      "eventTitle": "OpenRouter 发布 Fusion API，多模型协同以一半成本接近 Claude Fable 5 性能",
       "eventDate": "2026-06-16",
       "sourceCount": 1,
       "claims": [
         {
-          "id": "CL-c83d337cfa0736fd",
-          "subject": "Google Cloud",
-          "object": "OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
-          "quote": "Google Cloud introduced the Open Knowledge Format (OKF) , an open specification that formalizes the LLM-wiki pattern into a portable, interoperable format. It is a vendor-neutral, agent- and human-friendly standard for the context modern AI systems need."
+          "id": "CL-8baf55396569778e",
+          "subject": "OpenRouter",
+          "object": "协同以一半成本接近 Claude Fable 5 性能",
+          "quote": "IT之家 6 月 16 日消息，全球最大 AI 大模型 API 聚合平台 OpenRouter 于 6 月 14 日发布公告，宣布推出 Fusion API 复合 AI 模型， 只需约一半成本就能实现 Claude Fable 5 级别性能。"
         },
         {
-          "id": "CL-ca554276228d639a",
-          "subject": "Google Cloud",
-          "object": "OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
-          "quote": "Open Knowledge Format (OKF)"
+          "id": "CL-73f4cfe9ec18e00c",
+          "subject": "OpenRouter",
+          "object": "协同以一半成本接近 Claude Fable 5 性能",
+          "quote": "官方测试组合包括 Claude Opus 4.8 与 GPT-5.5、双 Claude Opus 4.8 等“双强”组合，以及 Claude Opus 4.8、GPT-5.5、Gemini 3.1 Pro“三强”组合。"
         },
         {
-          "id": "CL-191ed56085648a37",
-          "subject": "Google Cloud",
-          "object": "OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
-          "quote": "That is the whole idea. There is no compression scheme, no new runtime, and no required SDK. A bundle of OKF documents is just markdown, just files, and just YAML frontmatter. It renders on GitHub, ships as a tarball, and mounts on any filesystem."
+          "id": "CL-37bb9b7ce057bacb",
+          "subject": "OpenRouter",
+          "object": "协同以一半成本接近 Claude Fable 5 性能",
+          "quote": "Fusion Fable 5 + GPT-5.5**"
         }
       ],
       "sources": [
         {
-          "id": "SA-3322f5b356cb1b1c",
-          "publisher": "MarkTechPost（RSS）",
-          "url": "https://marktechpost.com/2026/06/16/google-cloud-introduces-open-knowledge-format-okf-a-vendor-neutral-markdown-spec-for-giving-ai-agents-curated-context"
+          "id": "SA-0dc7f4cfc2270562",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/964/920.htm"
         }
       ],
-      "sourceExcerpt": "Google Cloud introduced the Open Knowledge Format (OKF) , an open specification that formalizes the LLM-wiki pattern into a portable, interoperable format. It is a vendor-neutral, agent- and human-friendly standard for the context modern AI systems need.",
+      "sourceExcerpt": "IT之家 6 月 16 日消息，全球最大 AI 大模型 API 聚合平台 OpenRouter 于 6 月 14 日发布公告，宣布推出 Fusion API 复合 AI 模型， 只需约一半成本就能实现 Claude Fable 5 级别性能。",
       "event": {
-        "id": "EV-51dfd0d541380500",
-        "title": "Google Cloud 推出 OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
+        "id": "EV-ab3586268ebfab38",
+        "title": "OpenRouter 发布 Fusion API，多模型协同以一半成本接近 Claude Fable 5 性能",
         "originalTitle": "",
         "date": "2026-06-16",
         "dataDate": "2026-06-17",
-        "eventTypeLabel": "产品发布"
+        "eventTypeLabel": "模型发布"
       }
     },
     {
@@ -15679,6 +15525,69 @@
       }
     },
     {
+      "relationship_id": "REL2-81f239c52fa7d8bc",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-4e721fae5963494d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-a4eee620f5a081bd",
+      "object_type": "entity",
+      "event_id": "EV-5caf7f83664b1a2c",
+      "claim_refs": [
+        "CL-0055eba8920e653f",
+        "CL-7651d5ca3ddd7f19",
+        "CL-29e108a33e0ec4d9"
+      ],
+      "source_refs": [
+        "SA-490cf926e269dc6a"
+      ],
+      "data_date": "2026-06-16",
+      "status": "verified",
+      "subjectName": "招商银行",
+      "objectName": "运通工程师信用卡",
+      "predicateLabel": "发布",
+      "title": "招商银行 发布 运通工程师信用卡",
+      "eventTitle": "招商银行推出\"运通工程师信用卡\"，新用户可享每月18亿Token AI权益",
+      "eventDate": "2026-06-16",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-0055eba8920e653f",
+          "subject": "招商银行",
+          "object": "\"运通工程师信用卡\"，新用户可享每月18亿Token AI权益",
+          "quote": "IT之家 6 月 16 日消息，招商银行宣布推出一款“运通工程师信用卡”，强调相应信用卡拥有“专属 AI 权益”。"
+        },
+        {
+          "id": "CL-7651d5ca3ddd7f19",
+          "subject": "招商银行",
+          "object": "\"运通工程师信用卡\"，新用户可享每月18亿Token AI权益",
+          "quote": "事实上，此前 Kimi 智能助手也 推出了一款“Kimi 信用卡” ，持卡人可通过消费积分兑换 Kimi 算力额度（如 Agent 使用额度、高级功能权限等），该卡预计 7 月正式面市。"
+        },
+        {
+          "id": "CL-29e108a33e0ec4d9",
+          "subject": "招商银行",
+          "object": "\"运通工程师信用卡\"，新用户可享每月18亿Token AI权益",
+          "quote": "参考央行发布的《2025 年支付体系运行总体情况》，截至 2025 年年末，全国信用卡和借贷合一卡的数量为 6.96 亿张，较 2024 年年末减少约 3100 万张；发卡量已连续三年下滑，较 2022 年三季度末的历史高点减少 1.11 亿张，规模创下数年来新低。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-490cf926e269dc6a",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/964/614.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 6 月 16 日消息，招商银行宣布推出一款“运通工程师信用卡”，强调相应信用卡拥有“专属 AI 权益”。",
+      "event": {
+        "id": "EV-5caf7f83664b1a2c",
+        "title": "招商银行推出\"运通工程师信用卡\"，新用户可享每月18亿Token AI权益",
+        "originalTitle": "",
+        "date": "2026-06-16",
+        "dataDate": "2026-06-16",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-832f07f7596b011a",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-d3c20bd565303d39",
@@ -15689,7 +15598,6 @@
       "event_id": "EV-e2d4132c671e3d41",
       "claim_refs": [
         "CL-b676343f7dedcf37",
-        "CL-686e36f03a60435e",
         "CL-ca044777717424e5"
       ],
       "source_refs": [
@@ -15710,12 +15618,6 @@
           "subject": "理想马赫 M100",
           "object": "，5nm 车规级工艺，单芯算力 1280 TOPS",
           "quote": "IT之家 6 月 15 日消息，在今天的 Livis Day 理想汽车软件与具身智能发布会上，理想汽车发布了“全球首款动态数据流 AI 芯片”—— 理想马赫 M100。"
-        },
-        {
-          "id": "CL-686e36f03a60435e",
-          "subject": "理想马赫 M100",
-          "object": "，5nm 车规级工艺，单芯算力 1280 TOPS",
-          "quote": "数据是张量，关系是确定的，流动路径是清晰的。"
         },
         {
           "id": "CL-ca044777717424e5",
@@ -15811,6 +15713,111 @@
       }
     },
     {
+      "relationship_id": "REL2-aa4d8b5683268ed3",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-c8185a1a8a6595ad",
+      "object_type": "entity",
+      "event_id": "EV-832fa2db95cfea6e",
+      "claim_refs": [
+        "CL-5572124dcc10c5ad",
+        "CL-c55c682ea203271e"
+      ],
+      "source_refs": [
+        "SA-a7bb8e3a97876633"
+      ],
+      "data_date": "2026-06-16",
+      "status": "verified",
+      "subjectName": "Anthropic",
+      "objectName": "Mythos",
+      "predicateLabel": "发布",
+      "title": "Anthropic 发布 Mythos",
+      "eventTitle": "Anthropic 的 Mythos AI 是什么？为何被限制发布？",
+      "eventDate": "2026-06-16",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-5572124dcc10c5ad",
+          "subject": "Anthropic 的 Mythos AI 是什么？为何被限制",
+          "object": "？",
+          "quote": "Anthropic PBC has said its new artificial intelligence tool, Mythos, is so good at finding vulnerabilities in software and computer systems that it can’t be released to the general public. The AI giant released Mythos to only 200 partner organizations because if a tool this powerful fell into the wrong hands, Anthropic says, it could help attackers more easily steal data or disrupt critical infrastructure."
+        },
+        {
+          "id": "CL-c55c682ea203271e",
+          "subject": "Anthropic 的 Mythos AI 是什么？为何被限制",
+          "object": "？",
+          "quote": "Despite the precautions taken by Anthropic, the Trump administration on June 12 ordered the company to keep its most advanced models out of the hands of all foreign nationals inside and outside the US. To ensure compliance, Anthropic has since shut off access for all customers to Mythos 5 and Fable 5, a version of Mythos that the company blocked from carrying out cybersecurity tasks. Anthropic said it believes the US government issued the order after discovering that it’s possible to “jailbreak,” or bypass the guardrails, of Fable 5."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a7bb8e3a97876633",
+          "publisher": "Bloomberg：Technology（RSS）",
+          "url": "https://bloomberg.com/news/articles/2026-06-15/why-was-anthropic-s-mythos-ai-blocked-security-risks-and-capabilities-explained"
+        }
+      ],
+      "sourceExcerpt": "Anthropic PBC has said its new artificial intelligence tool, Mythos, is so good at finding vulnerabilities in software and computer systems that it can’t be released to the general public. The AI giant released Mythos to only 200 partner organizations because if a tool this powerful fell into the wrong hands, Anthropic says, it could help attackers more easily steal data or disrupt critical infrastructure.",
+      "event": {
+        "id": "EV-832fa2db95cfea6e",
+        "title": "Anthropic 的 Mythos AI 是什么？为何被限制发布？",
+        "originalTitle": "",
+        "date": "2026-06-16",
+        "dataDate": "2026-06-16",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-c65195f29de29271",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-e482463e2656ed1c",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-5f3c568f90d87caf",
+      "object_type": "entity",
+      "event_id": "EV-c7426bbb0eb26ba7",
+      "claim_refs": [
+        "CL-6c4db9db9579073e"
+      ],
+      "source_refs": [
+        "SA-fd381a0d98d354cb"
+      ],
+      "data_date": "2026-06-16",
+      "status": "verified",
+      "subjectName": "Tensordyne",
+      "objectName": "Tensordyne Napier",
+      "predicateLabel": "发布",
+      "title": "Tensordyne 发布 Tensordyne Napier",
+      "eventTitle": "Tensordyne Napier 流片：宣称平台 AI 推理吞吐 13 倍于 Blackwell 系统",
+      "eventDate": "2026-06-16",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-6c4db9db9579073e",
+          "subject": "Tensordyne",
+          "object": "Tensordyne Napier (TDN) AI推理系统",
+          "quote": "北美-欧洲 AI 芯片初创企业 Tensordyne 当地时间 15 日宣布推出 AI 推理系统 Tensordyne Napier (TDN)"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-fd381a0d98d354cb",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/964/688.htm"
+        }
+      ],
+      "sourceExcerpt": "北美-欧洲 AI 芯片初创企业 Tensordyne 当地时间 15 日宣布推出 AI 推理系统 Tensordyne Napier (TDN)",
+      "event": {
+        "id": "EV-c7426bbb0eb26ba7",
+        "title": "Tensordyne Napier 流片：宣称平台 AI 推理吞吐 13 倍于 Blackwell 系统",
+        "originalTitle": "",
+        "date": "2026-06-16",
+        "dataDate": "2026-06-16",
+        "eventTypeLabel": "硬件产品"
+      }
+    },
+    {
       "relationship_id": "REL2-fc89e0f24571bef8",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-5388bc10736a0eff",
@@ -15871,6 +15878,55 @@
         "date": "2026-06-16",
         "dataDate": "2026-06-16",
         "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-033196ca9d691fcd",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7c4cee6f28a9c6cc",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-419f38e27e81e1f1",
+      "object_type": "entity",
+      "event_id": "EV-510fd43cf3ecc17d",
+      "claim_refs": [
+        "CL-f47ca11b3cce6401"
+      ],
+      "source_refs": [
+        "SA-fd3e806e9480be49"
+      ],
+      "data_date": "2026-06-15",
+      "status": "verified",
+      "subjectName": "Setset",
+      "objectName": "Studio",
+      "predicateLabel": "发布",
+      "title": "Setset 发布 Studio",
+      "eventTitle": "Setset Studio：面向时尚品牌的无提示界面",
+      "eventDate": "2026-05-05",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-f47ca11b3cce6401",
+          "subject": "Setset",
+          "object": "Setset Studio",
+          "quote": "Today we’re announcing the release of Setset Studio: the no-prompt interface for fashion brands to create studio-quality AI visuals at scale."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-fd3e806e9480be49",
+          "publisher": "setset.ai",
+          "url": "https://setset.ai/news/setset-studio-launch"
+        }
+      ],
+      "sourceExcerpt": "Today we’re announcing the release of Setset Studio: the no-prompt interface for fashion brands to create studio-quality AI visuals at scale.",
+      "event": {
+        "id": "EV-510fd43cf3ecc17d",
+        "title": "Setset Studio：面向时尚品牌的无提示界面",
+        "originalTitle": "Setset Studio: the no-prompt interface for fashion brands",
+        "date": "2026-05-05",
+        "dataDate": "2026-06-15",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -16567,6 +16623,69 @@
       }
     },
     {
+      "relationship_id": "REL2-b34511f516d08ba3",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-b81c8201acfc7639",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-24381ecb01753c1b",
+      "object_type": "entity",
+      "event_id": "EV-2ce9542169b5dfda",
+      "claim_refs": [
+        "CL-c61188c3b5bb06e7",
+        "CL-dc99caf32a5e5bbf",
+        "CL-130338c5508e70c3"
+      ],
+      "source_refs": [
+        "SA-fee0eb6617aa3179"
+      ],
+      "data_date": "2026-06-12",
+      "status": "verified",
+      "subjectName": "华为",
+      "objectName": "HiCar 7.0",
+      "predicateLabel": "发布",
+      "title": "华为 发布 HiCar 7.0",
+      "eventTitle": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日发布",
+      "eventDate": "2026-06-11",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-c61188c3b5bb06e7",
+          "subject": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日",
+          "object": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日发布 - IT之家",
+          "quote": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日发布 - IT之家"
+        },
+        {
+          "id": "CL-dc99caf32a5e5bbf",
+          "subject": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日",
+          "object": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日发布",
+          "quote": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日发布"
+        },
+        {
+          "id": "CL-130338c5508e70c3",
+          "subject": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日",
+          "object": "IT之家从 HDC 2026 官网议程板块了解到，在 6 月 13 日的【HUAWEI HiCar】智慧出行生态峰会上， 将发布最新的 HUAWEI HiCar 7.0 解决方案 。",
+          "quote": "IT之家从 HDC 2026 官网议程板块了解到，在 6 月 13 日的【HUAWEI HiCar】智慧出行生态峰会上， 将发布最新的 HUAWEI HiCar 7.0 解决方案 。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-fee0eb6617aa3179",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/963/222.htm"
+        }
+      ],
+      "sourceExcerpt": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日发布 - IT之家",
+      "event": {
+        "id": "EV-2ce9542169b5dfda",
+        "title": "华为 HiCar 7.0 手车互联解决方案官宣，定档 6 月 13 日发布",
+        "originalTitle": "",
+        "date": "2026-06-11",
+        "dataDate": "2026-06-12",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-013b22e68558afbc",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -16950,9 +17069,9 @@
       "data_date": "2026-06-11",
       "status": "verified",
       "subjectName": "阿里巴巴",
-      "objectName": "国内首个全周期高考志愿填报",
+      "objectName": "国内首个全周期高考志愿填报 Agent",
       "predicateLabel": "发布",
-      "title": "阿里巴巴 发布 国内首个全周期高考志愿填报",
+      "title": "阿里巴巴 发布 国内首个全周期高考志愿填报 Agent",
       "eventTitle": "阿里千问上线国内首个全周期高考志愿填报Agent，免费提供咨询服务",
       "eventDate": "2026-06-10",
       "sourceCount": 1,
@@ -17275,69 +17394,6 @@
       "objectName": "MiMo Code V0.1.0",
       "predicateLabel": "发布",
       "title": "Xiaomi 发布 MiMo Code V0.1.0",
-      "eventTitle": "小米 MiMo Code V0.1.0 发布并开源：AI 编程助手，基于 OpenCode 二次开发",
-      "eventDate": "2026-06-11",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-74848e2afb65c933",
-          "subject": "小米 MiMo Code V0.1.0",
-          "object": "并开源：AI 编程助手，基于 OpenCode 二次开发",
-          "quote": "小米 MiMo Code V0.1.0 探索性 AI 编程助手发布并开源：基于 OpenCode 二次开发，采用 MIT 协议 - IT之家"
-        },
-        {
-          "id": "CL-56f2e0c1154392a0",
-          "subject": "小米 MiMo Code V0.1.0",
-          "object": "并开源：AI 编程助手，基于 OpenCode 二次开发",
-          "quote": "小米 MiMo Code V0.1.0 探索性 AI 编程助手发布并开源：基于 OpenCode 二次开发，采用 MIT 协议"
-        },
-        {
-          "id": "CL-81cbc84733597f2c",
-          "subject": "小米 MiMo Code V0.1.0",
-          "object": "并开源：AI 编程助手，基于 OpenCode 二次开发",
-          "quote": "IT之家 6 月 11 日消息，小米 MiMo 官方今日凌晨正式发布并开源 MiMo Code V0.1.0 —— 一款运行在终端里的探索性 AI 编程助手。"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-ee6f6715c400e152",
-          "publisher": "IT之家（RSS）",
-          "url": "https://ithome.com/0/962/693.htm"
-        }
-      ],
-      "sourceExcerpt": "小米 MiMo Code V0.1.0 探索性 AI 编程助手发布并开源：基于 OpenCode 二次开发，采用 MIT 协议 - IT之家",
-      "event": {
-        "id": "EV-564f3df8d487ca6f",
-        "title": "小米 MiMo Code V0.1.0 发布并开源：AI 编程助手，基于 OpenCode 二次开发",
-        "originalTitle": "",
-        "date": "2026-06-11",
-        "dataDate": "2026-06-11",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-b5b5d61d16610804",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-c608c4787821de1b",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-3aca03b9bb50f158",
-      "object_type": "entity",
-      "event_id": "EV-564f3df8d487ca6f",
-      "claim_refs": [
-        "CL-74848e2afb65c933",
-        "CL-56f2e0c1154392a0",
-        "CL-81cbc84733597f2c"
-      ],
-      "source_refs": [
-        "SA-ee6f6715c400e152"
-      ],
-      "data_date": "2026-06-11",
-      "status": "verified",
-      "subjectName": "Xiaomi",
-      "objectName": "Code V0.1.0",
-      "predicateLabel": "发布",
-      "title": "Xiaomi 发布 Code V0.1.0",
       "eventTitle": "小米 MiMo Code V0.1.0 发布并开源：AI 编程助手，基于 OpenCode 二次开发",
       "eventDate": "2026-06-11",
       "sourceCount": 1,
@@ -18942,9 +18998,7 @@
       "object_type": "entity",
       "event_id": "EV-b986a633cca27df9",
       "claim_refs": [
-        "CL-1177f4766d0ab0c0",
-        "CL-59691fe365995307",
-        "CL-90a5e38489937264"
+        "CL-1177f4766d0ab0c0"
       ],
       "source_refs": [
         "SA-ddcd68ce19f86a84"
@@ -18964,18 +19018,6 @@
           "subject": "NVIDIA 与 KRAFTON、NC、T1 在韩国 PC 房庆祝 RTX Spark",
           "object": "At GTC Taipei at COMPUTEX last week, NVIDIA unveiled RTX Spark , the superchip that reinvents Windows PCs for the era of personal AI agents. On the heels of this announcement, NVIDIA founder and CEO Jensen Huang headed to South Korea , where he introduced RTX Spark to the nation’s passionate gaming community.",
           "quote": "At GTC Taipei at COMPUTEX last week, NVIDIA unveiled RTX Spark , the superchip that reinvents Windows PCs for the era of personal AI agents. On the heels of this announcement, NVIDIA founder and CEO Jensen Huang headed to South Korea , where he introduced RTX Spark to the nation’s passionate gaming community."
-        },
-        {
-          "id": "CL-59691fe365995307",
-          "subject": "NVIDIA 与 KRAFTON、NC、T1 在韩国 PC 房庆祝 RTX Spark",
-          "object": "On Friday, Huang headed to T1 Base Camp — a PC bang owned by T1, one of Korea’s top esports teams. There, he met with T1’s reigning League of Legends World Champion team, including six-time World Champion Lee “Faker” Sang-hyeok to unveil RTX Spark.",
-          "quote": "On Friday, Huang headed to T1 Base Camp — a PC bang owned by T1, one of Korea’s top esports teams. There, he met with T1’s reigning League of Legends World Champion team, including six-time World Champion Lee “Faker” Sang-hyeok to unveil RTX Spark."
-        },
-        {
-          "id": "CL-90a5e38489937264",
-          "subject": "NVIDIA 与 KRAFTON、NC、T1 在韩国 PC 房庆祝 RTX Spark",
-          "object": "Learn more about RTX Spark and its launch partners .",
-          "quote": "Learn more about RTX Spark and its launch partners ."
         }
       ],
       "sources": [
@@ -19297,6 +19339,69 @@
       }
     },
     {
+      "relationship_id": "REL2-bb9d1a0fc52f9ceb",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-45cbca5f78f1ef44",
+      "subject_type": "entity",
+      "predicate": "founds",
+      "object_ref": "EN-0decbc3b45f73b2b",
+      "object_type": "entity",
+      "event_id": "EV-618e5729145025e4",
+      "claim_refs": [
+        "CL-7f60271f31492339",
+        "CL-dbbcaad406de1404",
+        "CL-c229b0e74638f6ab"
+      ],
+      "source_refs": [
+        "SA-8c5a5b31c0966503"
+      ],
+      "data_date": "2026-06-06",
+      "status": "verified",
+      "subjectName": "Thomas Dohmke",
+      "objectName": "Entire",
+      "predicateLabel": "创立",
+      "title": "Thomas Dohmke 创立 Entire",
+      "eventTitle": "前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。",
+      "eventDate": "2026-02-10",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-7f60271f31492339",
+          "subject": "Former GitHub CEO Thomas Dohmke",
+          "object": "Entire with a landmark $60 million seed round to build the world's next developer platform for the era of AI.",
+          "quote": "Former GitHub CEO Thomas Dohmke launches Entire with a landmark $60 million seed round to build the world's next developer platform for the era of AI."
+        },
+        {
+          "id": "CL-dbbcaad406de1404",
+          "subject": "Former GitHub CEO Thomas Dohmke",
+          "object": "Entire with a landmark $60 million seed round to build the world's next developer platform for the era of AI.",
+          "quote": "Former GitHub CEO Thomas Dohmke launches Entire with a landmark $60 million seed round to build the world's next developer platform for the era of AI."
+        },
+        {
+          "id": "CL-c229b0e74638f6ab",
+          "subject": "Former GitHub CEO Thomas Dohmke",
+          "object": "Entire with a landmark $60 million seed round to build the world's next developer platform for the era of AI.",
+          "quote": "February 10, 2026 — Former GitHub CEO Thomas Dohmke today announced the launch of Entire , a new developer platform designed for human-agent collaboration, backed by a landmark $60 million seed round at $300 million valuation . The round was led by Felicis, with participation from Madrona, M12, and Basis Set, 20VC, Cherry Ventures, Picus Capital, and Global Founders Capital. Entire is further backed by a slate of international investors, including Gergely Orosz (The Pragmatic Engineer), Theo Browne (T3 Chat), Jerry Yang (AME Cloud Ventures, previously Yahoo), Olivier Pomel (Datadog), Garry Tan (Y Combinator), and others."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-8c5a5b31c0966503",
+          "publisher": "Entire",
+          "url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round"
+        }
+      ],
+      "sourceExcerpt": "Former GitHub CEO Thomas Dohmke launches Entire with a landmark $60 million seed round to build the world's next developer platform for the era of AI.",
+      "event": {
+        "id": "EV-618e5729145025e4",
+        "title": "前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。",
+        "originalTitle": "Former GitHub CEO Thomas Dohmke launches Entire with a landmark $60 million seed round to build the world's next developer platform for the era of AI.",
+        "date": "2026-02-10",
+        "dataDate": "2026-06-06",
+        "eventTypeLabel": "融资"
+      }
+    },
+    {
       "relationship_id": "REL2-ec88f13cd3171c26",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-b5251b35f15bedc4",
@@ -19578,69 +19683,6 @@
         "id": "EV-4bf0e4043c3562f2",
         "title": "NVIDIA AI 发布 Nemotron 3 Ultra：开源 550B MoE 混合 Mamba-Transformer，面向长时间运行智能体",
         "originalTitle": "",
-        "date": "2026-06-05",
-        "dataDate": "2026-06-05",
-        "eventTypeLabel": "产品发布"
-      }
-    },
-    {
-      "relationship_id": "REL2-ff60075c4628759d",
-      "relationship_version": "RELATION-V2.1",
-      "subject_ref": "EN-bbdefa2950f49882",
-      "subject_type": "entity",
-      "predicate": "publishes",
-      "object_ref": "EN-2aae0de3f5530f08",
-      "object_type": "entity",
-      "event_id": "EV-5493c61bcbe58aa2",
-      "claim_refs": [
-        "CL-57ed0bec96d075d4",
-        "CL-3ce00d540bcdd10e",
-        "CL-b84ce1a03fcf6751"
-      ],
-      "source_refs": [
-        "SA-6167412f76ca2c15"
-      ],
-      "data_date": "2026-06-05",
-      "status": "verified",
-      "subjectName": "Google",
-      "objectName": "Cloud Marketplace",
-      "predicateLabel": "发布",
-      "title": "Google 发布 Cloud Marketplace",
-      "eventTitle": "DataRobot AI Cloud 在 Google Cloud Marketplace 上线",
-      "eventDate": "2026-06-05",
-      "sourceCount": 1,
-      "claims": [
-        {
-          "id": "CL-57ed0bec96d075d4",
-          "subject": "DataRobot AI Cloud",
-          "object": "on Google Cloud Marketplace",
-          "quote": "DataRobot AI Cloud Launches on Google Cloud Marketplace"
-        },
-        {
-          "id": "CL-3ce00d540bcdd10e",
-          "subject": "DataRobot AI Cloud",
-          "object": "on Google Cloud Marketplace",
-          "quote": "JUNE 7, 2022 — BOSTON — AI Cloud leader DataRobot today announced at DataRobot AIX 2022 its availability on Google Cloud Marketplace, enabling more customers to accelerate and scale their impact with AI. DataRobot customers will now be able to take advantage of Google Cloud Marketplace — along with unique Google Cloud services — to streamline the procurement and deployment process, build AI-based models, and generate even more intelligent business solutions on Google Cloud."
-        },
-        {
-          "id": "CL-b84ce1a03fcf6751",
-          "subject": "DataRobot AI Cloud",
-          "object": "on Google Cloud Marketplace",
-          "quote": "“In order to thrive in today’s market, customers must have the ability to deliver AI where their data resides,” said Debanjan Saha, President and COO, DataRobot. “By expanding our strategic partnership with Google Cloud, and joining Google Cloud Marketplace, we’re meeting our customers where they are; enabling them to accelerate and scale as industry innovators, with a seamless experience across cloud platforms.”"
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-6167412f76ca2c15",
-          "publisher": "datarobot.com",
-          "url": "https://datarobot.com/newsroom/press/datarobot-ai-cloud-launches-on-google-cloud-marketplace"
-        }
-      ],
-      "sourceExcerpt": "DataRobot AI Cloud Launches on Google Cloud Marketplace",
-      "event": {
-        "id": "EV-5493c61bcbe58aa2",
-        "title": "DataRobot AI Cloud 在 Google Cloud Marketplace 上线",
-        "originalTitle": "DataRobot AI Cloud Launches on Google Cloud Marketplace",
         "date": "2026-06-05",
         "dataDate": "2026-06-05",
         "eventTypeLabel": "产品发布"
@@ -20349,9 +20391,7 @@
       "object_type": "entity",
       "event_id": "EV-4026c95d4c01b96e",
       "claim_refs": [
-        "CL-c760dac3d6f48dfe",
         "CL-4da5059a56f65a27",
-        "CL-76346a50d43922a0",
         "CL-26bb8ccc93236d56"
       ],
       "source_refs": [
@@ -20368,22 +20408,10 @@
       "sourceCount": 1,
       "claims": [
         {
-          "id": "CL-c760dac3d6f48dfe",
-          "subject": "NVIDIA",
-          "object": "RTX Spark 与 OpenShell，强化本地 AI 智能体",
-          "quote": "Personal agents are exploding in popularity, with open source projects like OpenClaw and Hermes seeing rapid adoption by AI developer communities on GitHub. Built to adapt to individual preferences and workflows, these agents can interact with applications, generate content, automate repetitive processes and manage multi-step tasks — all while running locally on device."
-        },
-        {
           "id": "CL-4da5059a56f65a27",
           "subject": "NVIDIA",
           "object": "RTX Spark 与 OpenShell，强化本地 AI 智能体",
           "quote": "Today at NVIDIA GTC Taipei at COMPUTEX , NVIDIA unveiled NVIDIA RTX Spark — a new class of Windows PCs purpose-built for personal agents — alongside a wave of updates that expand local agents across the broader NVIDIA RTX and DGX ecosystems."
-        },
-        {
-          "id": "CL-76346a50d43922a0",
-          "subject": "NVIDIA",
-          "object": "RTX Spark 与 OpenShell，强化本地 AI 智能体",
-          "quote": "NVIDIA’s partnership with Windows scales from personal to enterprise solutions. Also introduced at the show was NVIDIA DGX Station for Windows , the ultimate AI deskside supercomputer for professionals, bringing a data-center-class GPU and CPU for inference in a desktop system equipped with Windows for manageability, security and compatibility."
         },
         {
           "id": "CL-26bb8ccc93236d56",
@@ -20463,6 +20491,69 @@
         "date": "2026-06-01",
         "dataDate": "2026-06-01",
         "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-b2812101f3a49110",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-2c348893efb2316e",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-ed501d3e2d977553",
+      "object_type": "entity",
+      "event_id": "EV-d99037f2ed8db897",
+      "claim_refs": [
+        "CL-b7a461c1023fcdc8",
+        "CL-52a84bcf4c306930",
+        "CL-ca66b229cce5d7ed"
+      ],
+      "source_refs": [
+        "SA-01b198e7bed0acf7"
+      ],
+      "data_date": "2026-05-25",
+      "status": "verified",
+      "subjectName": "StepFun",
+      "objectName": "StepAudio 2.5 Realtime",
+      "predicateLabel": "发布",
+      "title": "StepFun 发布 StepAudio 2.5 Realtime",
+      "eventTitle": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+      "eventDate": "2026-05-25",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b7a461c1023fcdc8",
+          "subject": "阶跃星辰",
+          "object": "StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+          "quote": "StepFun, the Shanghai-based AI lab, released StepAudio 2.5 Realtime. It is an end-to-end real-time speech large language model with fully customizable persona capabilities."
+        },
+        {
+          "id": "CL-52a84bcf4c306930",
+          "subject": "阶跃星辰",
+          "object": "StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+          "quote": "StepAudio 2.5 Realtime is a voice model that operates in real time. Unlike pipeline-based systems that separate speech recognition, reasoning, and synthesis into sequential steps, this is an end-to-end model. Audio goes in and audio comes out through a single unified system. The model supports Chinese and English."
+        },
+        {
+          "id": "CL-ca66b229cce5d7ed",
+          "subject": "阶跃星辰",
+          "object": "StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+          "quote": "It connects via a WebSocket API. The endpoint is wss://api.stepfun.com/v1/realtime using the model string step-2.5-realtime ."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-01b198e7bed0acf7",
+          "publisher": "MarkTechPost（RSS）",
+          "url": "https://marktechpost.com/2026/05/24/stepfun-releases-stepaudio-2-5-realtime-an-end-to-end-voice-model-with-roleplay-specific-rlhf-and-paralinguistic-comprehension"
+        }
+      ],
+      "sourceExcerpt": "StepFun, the Shanghai-based AI lab, released StepAudio 2.5 Realtime. It is an end-to-end real-time speech large language model with fully customizable persona capabilities.",
+      "event": {
+        "id": "EV-d99037f2ed8db897",
+        "title": "阶跃星辰发布StepAudio 2.5 Realtime：一款具有角色扮演RLHF和副语言理解的端到端语音模型",
+        "originalTitle": "",
+        "date": "2026-05-25",
+        "dataDate": "2026-05-25",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
