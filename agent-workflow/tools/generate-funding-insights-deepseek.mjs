@@ -630,15 +630,12 @@ async function main() {
   const eligibleEventIds = new Set(eligibleEvents.map((event) => event.event_id));
   const missingEventIds = [...eventIds].filter((id) => !eligibleEventIds.has(id));
   if (missingEventIds.length) throw new Error(`funding_event_not_found:${missingEventIds.join(",")}`);
-  let events = selectedOnly && eventIds.size
-    ? eligibleEvents.filter((event) => eventIds.has(event.event_id))
-    : eligibleEvents;
+  const events = eligibleEvents;
   let selectedEvents = eventIds.size
-    ? events.filter((event) => eventIds.has(event.event_id))
+    ? eligibleEvents.filter((event) => eventIds.has(event.event_id))
     : events;
   if (limit) {
     selectedEvents = selectedEvents.slice(0, limit);
-    if (selectedOnly) events = selectedEvents;
   }
   const pending = selectedEvents.filter((event) => force || !existingByEvent.has(event.event_id));
   if (!write) {
@@ -649,6 +646,7 @@ async function main() {
       eligible_funding_events: eligibleEvents.length,
       funding_events: events.length,
       selected_events: selectedEvents.length,
+      selected_only: selectedOnly,
       reused: selectedEvents.length - pending.length,
       pending: pending.length,
       providers: {

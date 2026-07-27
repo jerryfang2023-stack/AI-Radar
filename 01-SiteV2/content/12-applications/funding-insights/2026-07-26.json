@@ -2,20 +2,1448 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-26",
-    "generated_at": "2026-07-26T15:22:15.355Z",
+    "generated_at": "2026-07-27T10:25:31.347Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
     "counts": {
-      "funding_events": 2,
-      "auto_published": 2,
+      "funding_events": 4,
+      "auto_published": 4,
       "blocked": 0,
       "pending": 0
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-196069d480a4118a",
+      "triggered_by_event_id": "EV-fb817fb0a5e63323",
+      "as_of_date": "2026-07-26",
+      "company": {
+        "entity_id": "EN-9007bd372bab6334",
+        "name": "Bespoke Labs",
+        "full_name": "Bespoke Labs",
+        "website": "https://bespokelabs.ai",
+        "summary": "Bespoke Labs 是一家AI研究实验室，构建强化学习环境和基础设施，让前沿实验室和企业能够训练、评估和改进用于生产环境的长期自主AI智能体。",
+        "headquarters": "Mountain View, California",
+        "founders": [
+          {
+            "name": "Mahesh Sathiamoorthy",
+            "role": "Co-founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf489b2ae49f41b",
+                "quote": "We're excited to announce our Seed and Series A financing rounds to build the world's best frontier data research lab"
+              },
+              {
+                "source_id": "FISRC-338676825311d210",
+                "quote": "Mahesh Sathiamoorthy, co-founder and CEO of Bespoke Labs"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Alex Dimakis",
+            "role": "Co-founder and Chief Science Officer",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-338676825311d210",
+                "quote": "Founded in 2024 by Sathiamoorthy and Alex Dimakis"
+              },
+              {
+                "source_id": "FISRC-b675439a45a13649",
+                "quote": "Alex Dimakis, co-founder and Chief Science Officer of Bespoke Labs"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "40-48",
+          "observed_at": "2026-07-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "employs roughly 40-48 people"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-bcf489b2ae49f41b",
+            "quote": "Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents"
+          },
+          {
+            "source_id": "FISRC-b675439a45a13649",
+            "quote": "Bespoke Labs is based in Mountain View, California."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Seed and Series A",
+        "amount": "$40 million",
+        "total_raised": "$40 million",
+        "announced_at": "2026-07-06",
+        "investors": [
+          {
+            "name": "Wing VC",
+            "role": "Series A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf489b2ae49f41b",
+                "quote": "Our Series A round was led by Wing VC"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "8VC",
+            "role": "种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf489b2ae49f41b",
+                "quote": "Our $8.25 million seed round was led by 8VC"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mayfield",
+            "role": "Series A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf489b2ae49f41b",
+                "quote": "with participation from Mayfield"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "The House Fund",
+            "role": "Series A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf489b2ae49f41b",
+                "quote": "with participation from Mayfield, The House Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tristan Handy",
+            "role": "Series A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf489b2ae49f41b",
+                "quote": "dbt Labs CEO Tristan Handy"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Jeff Dean",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf489b2ae49f41b",
+                "quote": "with participation from Jeff Dean"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Spiros Xanthos",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf489b2ae49f41b",
+                "quote": "Resolve AI CEO Spiros Xanthos"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dheeraj Pandey",
+            "role": "种子轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf489b2ae49f41b",
+                "quote": "DevRev CEO Dheeraj Pandey"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Angels from Anthropic, OpenAI, and Meta",
+            "role": "Series A轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-bcf489b2ae49f41b",
+                "quote": "angels from Anthropic, OpenAI, and Meta"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1086b3ea3749f22b",
+            "quote": "Bespoke Labs has raised $40 million total — a $31.75 million Series A led by Wing VC, layered on top of an earlier $8.25 million seed round led by 8VC"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "强化学习环境平台",
+          "description": "构建模拟真实企业的训练环境，包括大型代码库、微服务、日志、工单、邮件和Slack消息，让AI智能体在部署前练习长期、多步骤的工作流程。",
+          "target_customers": "前沿AI实验室、新实验室和企业",
+          "features": [
+            "环境引擎",
+            "沙盒与执行层",
+            "智能体优化层（GEPA）"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "An environment engine that lets our expert network and our own systems compose realistic, multitool, multistep worlds"
+            },
+            {
+              "source_id": "FISRC-b675439a45a13649",
+              "quote": "designs and builds environments that look and behave like real companies: large codebases, microservices, realistic logs, tickets, email, Slack, and more"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "OpenThoughts",
+          "description": "一个开放的推理数据集，已被下载数十万次，用于训练模型并推动LLM推理和强化学习研究。",
+          "target_customers": "研究人员和AI实验室",
+          "features": [
+            "开放数据管理",
+            "推理数据集"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "OpenThoughts is one of the most impactful open data curation projects of the past year. The open reasoning dataset has been downloaded hundreds of thousands of times"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Terminal-Bench",
+          "description": "一个领先的智能体编码基准测试，用于评估AI智能体在真实终端工程任务上的能力。",
+          "target_customers": "前沿AI模型开发商",
+          "features": [
+            "智能体能力基准测试"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Terminal-Bench is a leading agentic coding benchmark, and we're core contributors. Anthropic, OpenAI, and Google DeepMind use this benchmark"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Meta",
+          "industry": "科技",
+          "use_case": "使用OpenThoughts数据集进行模型训练",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "has powered work at Meta, Amazon, and AI2"
+            }
+          ]
+        },
+        {
+          "name": "Amazon",
+          "industry": "科技/云计算",
+          "use_case": "使用OpenThoughts数据集进行模型训练",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "has powered work at Meta, Amazon, and AI2"
+            }
+          ]
+        },
+        {
+          "name": "Anthropic",
+          "industry": "AI研究",
+          "use_case": "使用Terminal-Bench展示前沿模型的智能体能力",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
+            }
+          ]
+        },
+        {
+          "name": "OpenAI",
+          "industry": "AI研究",
+          "use_case": "使用Terminal-Bench展示前沿模型的智能体能力",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
+            }
+          ]
+        },
+        {
+          "name": "Google DeepMind",
+          "industry": "AI研究",
+          "use_case": "使用Terminal-Bench展示前沿模型的智能体能力",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Scale AI",
+          "product": "标注数据平台",
+          "scenario": "为模型训练提供人工标注的数据集",
+          "target_customer": "AI模型开发商",
+          "funding_summary": "Meta投资143亿美元，估值近290亿美元",
+          "core_difference": "Scale AI 提供标注数据，而 Bespoke Labs 提供交互式训练环境，让智能体在其中实际操作并接受评估。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Scale AI, whose $14.3 billion investment from Meta valued it near $29 billion, supplies labelled data rather than interactive training environments."
+            }
+          ]
+        },
+        {
+          "name": "Poolside",
+          "product": "编码基础模型",
+          "scenario": "构建专注于代码生成的基础模型",
+          "target_customer": "开发者",
+          "funding_summary": "融资5亿美元，估值30亿美元",
+          "core_difference": "Poolside 构建编码专用基础模型，而 Bespoke Labs 构建训练环境，定位为基础模型的上游基础设施。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Poolside raised $500 million at a $3 billion valuation to build coding-focused foundation models."
+            }
+          ]
+        },
+        {
+          "name": "Reflection AI",
+          "product": "自主软件工程智能体",
+          "scenario": "开发能够自主完成软件工程任务的智能体",
+          "target_customer": "软件工程团队",
+          "funding_summary": "种子轮融资1.3亿美元",
+          "core_difference": "Reflection AI 开发自主软件工程智能体，而 Bespoke Labs 销售用于训练此类智能体的实践环境，定位为基础设施而非竞争模型。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Reflection AI raised $130 million in seed funding for autonomous software engineering agents."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "OpenThoughts数据集下载量",
+          "value": "超过500,000次",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b675439a45a13649",
+              "quote": "OpenThoughts, an open reasoning dataset that has been downloaded more than 500,000 times"
+            }
+          ]
+        },
+        {
+          "label": "种子轮融资金额",
+          "value": "825万美元",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Our $8.25 million seed round was led by 8VC"
+            }
+          ]
+        },
+        {
+          "label": "Series A融资金额",
+          "value": "3175万美元",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1086b3ea3749f22b",
+              "quote": "a $31.75 million Series A led by Wing VC"
+            }
+          ]
+        },
+        {
+          "label": "团队规模",
+          "value": "约40-48人",
+          "observed_at": "2026-07-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "employs roughly 40-48 people"
+            }
+          ]
+        },
+        {
+          "label": "METR任务长度翻倍周期",
+          "value": "约每7个月翻倍",
+          "observed_at": "2026-07-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "METR's data shows the length of tasks AI agents can complete is roughly doubling every seven months."
+            }
+          ]
+        },
+        {
+          "label": "全球AI智能体市场规模预测（2033年）",
+          "value": "1829亿美元",
+          "observed_at": "2026-07-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "the global AI agents market is projected to grow from $10.9 billion in 2026 to $182.9 billion by 2033"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是：AI智能体的可靠性瓶颈不在于模型本身，而在于训练环境的质量和复杂度。本轮融资验证的信号包括：OpenThoughts数据集超过50万次下载并被Meta、Amazon等使用；Terminal-Bench被Anthropic、OpenAI、Google DeepMind采用；以及来自Anthropic、OpenAI、Meta内部人士和Jeff Dean的个人投资，表明前沿实验室内部也认为智能体可靠性是一个需要外部基础设施来解决的结构性问题。",
+        "validated_signals": [
+          "OpenThoughts数据集下载量超过50万次，被Meta、Amazon、Thinking Machines Lab等使用",
+          "Terminal-Bench被Anthropic、OpenAI、Google DeepMind用于展示前沿模型能力",
+          "来自Anthropic、OpenAI、Meta内部人士的个人天使投资",
+          "Jeff Dean以个人身份参与种子轮投资"
+        ],
+        "risks": [
+          "“更好的环境”是否能真正超越“更大的模型”仍是一个未解决的问题，如果下一代基础模型显著提升了可靠性，Bespoke Labs的差异化价值可能被削弱。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI基础设施/智能体训练环境"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "强化学习环境平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "An environment engine that lets our expert network and our own systems compose realistic, multitool, multistep worlds"
+            },
+            {
+              "source_id": "FISRC-b675439a45a13649",
+              "quote": "designs and builds environments that look and behave like real companies: large codebases, microservices, realistic logs, tickets, email, Slack, and more"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "OpenThoughts",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "OpenThoughts is one of the most impactful open data curation projects of the past year. The open reasoning dataset has been downloaded hundreds of thousands of times"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Terminal-Bench",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Terminal-Bench is a leading agentic coding benchmark, and we're core contributors. Anthropic, OpenAI, and Google DeepMind use this benchmark"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mahesh Sathiamoorthy",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "We're excited to announce our Seed and Series A financing rounds to build the world's best frontier data research lab"
+            },
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Mahesh Sathiamoorthy, co-founder and CEO of Bespoke Labs"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Alex Dimakis",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Founded in 2024 by Sathiamoorthy and Alex Dimakis"
+            },
+            {
+              "source_id": "FISRC-b675439a45a13649",
+              "quote": "Alex Dimakis, co-founder and Chief Science Officer of Bespoke Labs"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Wing VC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Our Series A round was led by Wing VC"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "8VC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Our $8.25 million seed round was led by 8VC"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mayfield",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "with participation from Mayfield"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "The House Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "with participation from Mayfield, The House Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Tristan Handy",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "dbt Labs CEO Tristan Handy"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Jeff Dean",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "with participation from Jeff Dean"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Spiros Xanthos",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Resolve AI CEO Spiros Xanthos"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Dheeraj Pandey",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "DevRev CEO Dheeraj Pandey"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Angels from Anthropic, OpenAI, and Meta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "angels from Anthropic, OpenAI, and Meta"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Meta",
+          "canonical_entity_id": "EN-ea3bd73e2b506e00",
+          "canonical_name": "Meta",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "has powered work at Meta, Amazon, and AI2"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Amazon",
+          "canonical_entity_id": "EN-cbc62794911ff31b",
+          "canonical_name": "Amazon",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "has powered work at Meta, Amazon, and AI2"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Anthropic",
+          "canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "canonical_name": "Anthropic",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Google DeepMind",
+          "canonical_entity_id": "EN-2b6e51bec93e86c1",
+          "canonical_name": "Google DeepMind",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-bcf489b2ae49f41b",
+              "quote": "Anthropic, OpenAI, and Google DeepMind use this benchmark to showcase the agentic abilities of frontier models."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Scale AI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Scale AI, whose $14.3 billion investment from Meta valued it near $29 billion, supplies labelled data rather than interactive training environments."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Poolside",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Poolside raised $500 million at a $3 billion valuation to build coding-focused foundation models."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Reflection AI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-338676825311d210",
+              "quote": "Reflection AI raised $130 million in seed funding for autonomous software engineering agents."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-fb817fb0a5e63323",
+          "date": "2026-07-06",
+          "title": "Bespoke Labs 融资 4000 万美元，打造支持可靠 AI 智能体的环境",
+          "amount": "$40M",
+          "source_refs": [
+            "SA-34b3f8e3171b18e7"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-bcf489b2ae49f41b",
+          "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
+          "title": "Bespoke Labs 融资 4000 万美元，打造支持可靠 AI 智能体的环境",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-26T01:20:23.828Z",
+          "content_hash": "0eae2122fce5a05c",
+          "source_artifact_id": "SA-34b3f8e3171b18e7",
+          "raw_id": "RAW-be633c88ec01cc9d"
+        },
+        {
+          "source_id": "FISRC-338676825311d210",
+          "source_url": "https://techfundingnews.com/backed-by-anthropic-openai-and-meta-insiders-bespoke-labs-raises-40m-can-better-environments-beat-bigger-models/",
+          "title": "Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN",
+          "publisher": "techfundingnews.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T10:23:44.851Z",
+          "content_hash": "5b6857fa049ce39e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-1086b3ea3749f22b",
+          "source_url": "https://www.wortins.com/blog/bespoke-labs-funding",
+          "title": "Bespoke Labs Funding: $40M to Build AI Agent Training Environments · Wortins · Wortins",
+          "publisher": "wortins.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T10:23:46.855Z",
+          "content_hash": "4c5e3e95abc4b920",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b675439a45a13649",
+          "source_url": "https://www.morningstar.com/news/business-wire/20260706827813/bespoke-labs-announces-40m-to-build-the-environments-that-train-reliable-agents",
+          "title": "Bespoke Labs Announces $40M to Build the Environments That Train Reliable Agents | Morningstar",
+          "publisher": "morningstar.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T10:23:52.212Z",
+          "content_hash": "c06a19f9bdff08b6",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-27T10:25:31.285Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-27T10:25:31.285Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-33720a6e75d508b6",
+      "triggered_by_event_id": "EV-754e83c2d19005fe",
+      "as_of_date": "2026-07-26",
+      "company": {
+        "entity_id": "EN-834cc12fc35adde7",
+        "name": "Arrakis",
+        "full_name": "Arrakis",
+        "website": "https://www.arrakistechnologies.ai/",
+        "summary": "Arrakis 是一家帮助工业企业在航空航天、能源、物流和制造等领域部署 AI 智能体以执行关键运营工作流的 AI 部署公司，致力于解决工业 AI 落地的“最后一公里”问题。",
+        "headquarters": "伦敦和巴黎",
+        "founders": [
+          {
+            "name": "Rafael Quintanilla",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "CEO Rafael Quintanilla is a former Accel VP."
+              },
+              {
+                "source_id": "FISRC-b000b5cd09445eff",
+                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Haroun Beltaifa",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b000b5cd09445eff",
+                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Romain Fouilland",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b000b5cd09445eff",
+                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mikhail Galkov",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b000b5cd09445eff",
+                "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约 15 人",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "Arrakis is seven months old, has about 15 employees"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-579585d1555750a8",
+            "quote": "Arrakis, a London and Paris-based startup, came out of stealth with $38 million to build what it calls an AI layer for the operations of industrial companies, targeting aerospace, energy, logistics and manufacturing."
+          },
+          {
+            "source_id": "FISRC-e48cc519bf5982be",
+            "quote": "Arrakis helps industrial companies deploy AI agents into mission-critical operations, tackling the \"last mile\" challenge that prevents most AI projects reaching production."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$38 million",
+        "total_raised": "$38 million",
+        "announced_at": "2026-07-22",
+        "investors": [
+          {
+            "name": "Blossom Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "The funding is a $30 million Series A led by Blossom Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Accel",
+            "role": "种子轮领投，本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "on top of a $7.5 million seed round led by Accel"
+              },
+              {
+                "source_id": "FISRC-e48cc519bf5982be",
+                "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GFC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "GFC, MainObject and Rerail also invested"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "MainObject",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "GFC, MainObject and Rerail also invested"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Rerail",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "GFC, MainObject and Rerail also invested"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Olivier Pomel",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "angels Olivier Pomel, the Datadog CEO"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Olivier Godement",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-579585d1555750a8",
+                "quote": "Olivier Godement, who runs business products at OpenAI"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Junaid Hussein",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b000b5cd09445eff",
+                "quote": "Junaid Hussein, founder of Cambridge Aerospace"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-e48cc519bf5982be",
+            "quote": "today announced a $30 million Series A led by Blossom Capital, with participation from existing investor Accel, which also led the company's $7.5 million seed round. The round brings total funding to around $38 million"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Arrakis AI 部署平台",
+          "description": "一个模型无关的企业 AI 平台，结合前向部署的 AI 工程师和应用 AI 研究，帮助工业公司利用其运营数据在数周内训练、部署和扩展定制 AI 智能体，而无需替换现有软件系统。",
+          "target_customers": "航空航天、能源、物流、制造、建筑和电信行业的工业企业",
+          "features": [
+            "模型无关，可灵活切换 AI 模型",
+            "前向部署 AI 工程师嵌入客户团队",
+            "将 AI 智能体部署到现有 ERP、数据仓库和文档库等系统之上",
+            "客户数据和 IP 归客户所有，不用于第三方模型训练",
+            "持有 SOC 2、ISO 27001 和 GDPR 认证"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Arrakis does not require companies to replace their existing software. Its AI agents connect to the tools a company already uses, such as ERP systems, data warehouses, and document repositories, and run workflows on top of them."
+            },
+            {
+              "source_id": "FISRC-857f3ec7b6684e02",
+              "quote": "Arrakis takes a full-stack approach: forward-deployed engineers working as an extension of customers' teams, combined with a model-agnostic, sovereign AI platform and an applied AI team that tunes models on each company's operational corpus."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "一家纽约证券交易所上市的航运公司",
+          "industry": "物流",
+          "use_case": "通过 Arrakis 将现金流可见性从月度提升至每日",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "In one example, the company says it helped a New York-listed shipping company move from monthly to daily cash flow visibility."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "采购周期时间缩短",
+          "value": "90%",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-857f3ec7b6684e02",
+              "quote": "a 90% reduction in procurement cycle times"
+            }
+          ]
+        },
+        {
+          "label": "公司成立时间",
+          "value": "7 个月",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "Arrakis is seven months old"
+            }
+          ]
+        },
+        {
+          "label": "员工人数",
+          "value": "约 15 人",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "has about 15 employees"
+            }
+          ]
+        },
+        {
+          "label": "客户数量",
+          "value": "5 家",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "counts five customers"
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "$1.4 亿",
+          "observed_at": "2026-07-24",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "The company is valued at $140 million post-money."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Rafael Quintanilla",
+          "quote": "The West is under growing pressure to reindustrialise, but that renaissance won't be powered by net new companies alone. It requires equipping our industrial champions with the tools to harness their data, navigate the AI transition and compete on a global stage.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e48cc519bf5982be",
+              "quote": "The West is under growing pressure to reindustrialise, but that renaissance won't be powered by net new companies alone. It requires equipping our industrial champions with the tools to harness their data, navigate the AI transition and compete on a global stage."
+            }
+          ]
+        },
+        {
+          "speaker": "Ophelia Brown",
+          "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations."
+            }
+          ]
+        },
+        {
+          "speaker": "Sonali De Rycker",
+          "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Blossom Capital",
+            "speaker": "Ophelia Brown",
+            "speaker_role": "Managing Partner",
+            "rationale": "看重团队的技术深度、运营专长和商业雄心，认为 Arrakis 正在解决大型工业组织最复杂的运营挑战，而非仅停留在企业边缘的 AI 应用。",
+            "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b000b5cd09445eff",
+                "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes."
+              }
+            ]
+          },
+          {
+            "institution": "Accel",
+            "speaker": "Sonali De Rycker",
+            "speaker_role": "Partner",
+            "rationale": "认可创始人对 AI 变革实体经济的愿景及其对工业挑战的深刻理解，并强调公司在短时间内建立的业务、人才和客户需求。",
+            "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company. In a short period of time, they've built an impressive business, attracted world-class talent and secured significant customer demand.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-b000b5cd09445eff",
+                "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company. In a short period of time, they've built an impressive business, attracted world-class talent and secured significant customer demand."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是工业 AI 落地的“最后一公里”问题：即如何将 AI 智能体可靠地部署到运行着老旧软件和碎片化系统的工业环境中。本轮融资所依赖的已验证信号包括：公司成立仅 7 个月即获得纽约证券交易所上市企业客户，并实现了采购周期缩短 90% 等可量化成果；创始团队兼具 Accel 投资背景与 Palantir、Datadog 等顶尖企业的运营经验。$1.4 亿投后估值反映的是对创始人市场匹配度和早期客户验证的溢价，而非规模化收入的折现。",
+        "validated_signals": [
+          "已签约包括纽约证券交易所上市企业在内的 5 家企业客户",
+          "客户采购周期时间缩短 90%",
+          "创始人为前 Accel 副总裁，具备工业与国防领域投资经验",
+          "团队来自 Palantir、Datadog、Revolut、ASML 等顶尖企业"
+        ],
+        "risks": [
+          "工业客户销售周期长、采购流程保守，7 个月的公司尚未证明其可复制性。",
+          "面临西门子、通用电气、霍尼韦尔等工业科技巨头自有 AI 项目的竞争压力。",
+          "智能体 AI 依赖快速演进的基础模型，在安全关键环境中任何失误都可能阻碍整个品类的推广。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "工业 AI 与智能体部署"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Arrakis AI 部署平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Arrakis does not require companies to replace their existing software. Its AI agents connect to the tools a company already uses, such as ERP systems, data warehouses, and document repositories, and run workflows on top of them."
+            },
+            {
+              "source_id": "FISRC-857f3ec7b6684e02",
+              "quote": "Arrakis takes a full-stack approach: forward-deployed engineers working as an extension of customers' teams, combined with a model-agnostic, sovereign AI platform and an applied AI team that tunes models on each company's operational corpus."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Rafael Quintanilla",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "CEO Rafael Quintanilla is a former Accel VP."
+            },
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Haroun Beltaifa",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Romain Fouilland",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mikhail Galkov",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Rafael Quintanilla founded Arrakis in January 2026 with co-founders Haroun Beltaifa, Romain Fouilland, and Mikhail Galkov."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Blossom Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "The funding is a $30 million Series A led by Blossom Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "on top of a $7.5 million seed round led by Accel"
+            },
+            {
+              "source_id": "FISRC-e48cc519bf5982be",
+              "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GFC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "GFC, MainObject and Rerail also invested"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "MainObject",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "GFC, MainObject and Rerail also invested"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Rerail",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "GFC, MainObject and Rerail also invested"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Olivier Pomel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "angels Olivier Pomel, the Datadog CEO"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Olivier Godement",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "Olivier Godement, who runs business products at OpenAI"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Junaid Hussein",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Junaid Hussein, founder of Cambridge Aerospace"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "一家纽约证券交易所上市的航运公司",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-579585d1555750a8",
+              "quote": "In one example, the company says it helped a New York-listed shipping company move from monthly to daily cash flow visibility."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-754e83c2d19005fe",
+          "date": "2026-07-22",
+          "title": "Arrakis 携 3800 万美元资金走出隐身模式，将 AI 引入工厂与供应链",
+          "amount": "$38 million",
+          "source_refs": [
+            "SA-4217e8731dafc848",
+            "SA-c3b7f0be9140eddd",
+            "SA-5dd8d7f22c598317"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-579585d1555750a8",
+          "source_url": "https://www.theconveyor.co/p/arrakis-38m-industrial-ai-ops",
+          "title": "Arrakis 获 3800 万美元融资，用于工业运营中的智能体 AI",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-26T01:20:43.123Z",
+          "content_hash": "a18cf74b2ab09093",
+          "source_artifact_id": "SA-a7654a3e2bf5da93",
+          "raw_id": "RAW-9a8f97674d1149d1"
+        },
+        {
+          "source_id": "FISRC-b000b5cd09445eff",
+          "source_url": "https://justainews.com/companies/funding-news/arrakis-raises-38m-to-bring-ai-agents-into-industrial-operations/",
+          "title": "Arrakis Raises $38M to Bring AI Agents Into Industrial Operations",
+          "publisher": "justainews.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-27T10:23:35.404Z",
+          "content_hash": "2522b5c4c402c8e8",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-857f3ec7b6684e02",
+          "source_url": "https://www.accel.com/news/tackling-industrial-ai-s-last-mile-problem-our-investment-in-arrakis",
+          "title": "Accel | Tackling Industrial AI’s Last Mile Problem: Our Investment in Arrakis",
+          "publisher": "accel.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T10:23:40.450Z",
+          "content_hash": "41709710488bb5fe",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-e48cc519bf5982be",
+          "source_url": "https://finance.yahoo.com/technology/ai/articles/arrakis-comes-stealth-38m-help-135600506.html",
+          "title": "Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era",
+          "publisher": "finance.yahoo.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-27T10:23:40.940Z",
+          "content_hash": "c5326009db895271",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-27T10:24:23.609Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-27T10:24:23.609Z"
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-9c764b3afbbe409f",
@@ -1180,6 +2608,95 @@
       "updated_at": "2026-07-26T08:26:59.511Z"
     },
     {
+      "event_id": "EV-fb817fb0a5e63323",
+      "company_name": "Bespoke Labs",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents\" funding company investors product",
+        "\"Bespoke Labs\" \"$40M\" funding investors round",
+        "\"Bespoke Labs\" product customers case study",
+        "\"Bespoke Labs\" \"Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents\" competitors product use case",
+        "\"Bespoke Labs\" \"$40M\" investor quote why invested",
+        "\"Bespoke Labs\" \"$40M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Bespoke Labs\" \"$40M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Bespoke Labs\" \"$40M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Bespoke Labs\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Bespoke Labs\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Bespoke Labs\" \"Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Bespoke Labs\" \"Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Bespoke Labs\" \"$40M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Bespoke Labs\" \"$40M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Bespoke Labs\" \"$40M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Bespoke Labs\" \"$40M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-27T10:25:31.322Z"
+    },
+    {
       "event_id": "EV-fcf3c464260b6730",
       "company_name": "Gritt",
       "status": "auto_published",
@@ -1254,6 +2771,95 @@
         }
       ],
       "updated_at": "2026-07-26T08:38:16.788Z"
+    },
+    {
+      "event_id": "EV-754e83c2d19005fe",
+      "company_name": "Arrakis",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Arrakis raises $38M for agentic AI in industrial operations\" funding company investors product",
+        "\"Arrakis\" \"$38M\" funding investors round",
+        "\"Arrakis\" product customers case study",
+        "\"Arrakis\" \"Arrakis raises $38M for agentic AI in industrial operations\" competitors product use case",
+        "\"Arrakis\" \"$38M\" investor quote why invested",
+        "\"Arrakis\" \"$38M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis raises $38M for agentic AI in industrial operations\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis raises $38M for agentic AI in industrial operations\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" \"$38M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" \"$38M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" \"Arrakis raises $38M for agentic AI in industrial operations\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" \"Arrakis raises $38M for agentic AI in industrial operations\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" \"$38M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" \"$38M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" \"$38M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" \"$38M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-27T10:25:31.322Z"
     }
   ]
 }

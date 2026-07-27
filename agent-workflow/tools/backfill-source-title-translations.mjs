@@ -7,6 +7,7 @@ import {
   generatedTitleTranslationLooksUsable,
   hasCjk,
   loadSourceTitleTranslations,
+  sourceTitleFromCapturedPayload,
   sourceTitleNeedsChineseTranslation,
   titleTranslationKey,
   titleTranslationLooksUsable,
@@ -67,10 +68,11 @@ function replaceOrInsertFrontmatterField(text, field, value) {
   return `${text.slice(0, closing)}\n${field}: ${yamlValue(value)}${text.slice(closing)}`;
 }
 
-function updateRawMarkdown(file, result) {
+function updateRawMarkdown(file, result, sourceTitle = "") {
   if (!file || !fs.existsSync(file)) return false;
   let text = fs.readFileSync(file, "utf8");
   const before = text;
+  if (sourceTitle) text = replaceOrInsertFrontmatterField(text, "title", sourceTitle);
   text = replaceOrInsertFrontmatterField(text, "title_zh", result.titleZh);
   text = replaceOrInsertFrontmatterField(text, "title_translation_status", result.status);
   text = replaceOrInsertFrontmatterField(text, "title_translation_method", result.method);
@@ -147,7 +149,8 @@ async function main() {
     const file = path.join(root, relativePath);
     if (!fs.existsSync(file)) continue;
     const payload = readJson(file);
-    const sourceTitle = String(payload.title || payload.title_original || payload.title_zh || "").trim();
+    const storedSourceTitle = String(payload.title || payload.title_original || "").trim();
+    const sourceTitle = sourceTitleFromCapturedPayload(payload);
     if (!sourceTitle) continue;
     jobsByPath.set(relativePath, {
       rawId,
@@ -155,6 +158,7 @@ async function main() {
       file,
       payload,
       sourceTitle,
+      sourceTitleRepaired: sourceTitle !== storedSourceTitle,
       sourceUrl: payload.original_url || payload.canonical_url || payload.source_url || "",
     });
   }
@@ -266,9 +270,14 @@ async function main() {
 
   let rawJsonUpdated = 0;
   let rawMarkdownUpdated = 0;
+  let sourceTitlesRepaired = 0;
   for (const job of jobsByPath.values()) {
     const result = translationResults.get(titleTranslationKey(job.sourceTitle));
     const before = JSON.stringify(job.payload);
+    if (job.sourceTitleRepaired) {
+      job.payload.title = job.sourceTitle;
+      sourceTitlesRepaired += 1;
+    }
     job.payload.title_zh = result.titleZh;
     job.payload.title_translation_status = result.status;
     job.payload.title_translation_method = result.method;
@@ -278,7 +287,7 @@ async function main() {
       rawJsonUpdated += 1;
     }
     const markdownPath = job.payload.markdown_snapshot_path ? path.join(root, job.payload.markdown_snapshot_path) : "";
-    if (updateRawMarkdown(markdownPath, result)) rawMarkdownUpdated += 1;
+    if (updateRawMarkdown(markdownPath, result, job.sourceTitleRepaired ? job.sourceTitle : "")) rawMarkdownUpdated += 1;
   }
 
   let cardsUpdated = 0;
@@ -301,6 +310,7 @@ async function main() {
 
   report.raw_json_updated = rawJsonUpdated;
   report.raw_markdown_updated = rawMarkdownUpdated;
+  report.source_titles_repaired = sourceTitlesRepaired;
   report.cards_updated = cardsUpdated;
   writeJson(reportFile, report);
   console.log(JSON.stringify({
@@ -312,6 +322,7 @@ async function main() {
     generated: report.generated,
     raw_json_updated: report.raw_json_updated,
     raw_markdown_updated: report.raw_markdown_updated,
+    source_titles_repaired: report.source_titles_repaired,
     cards_updated: report.cards_updated,
   }, null, 2));
 }

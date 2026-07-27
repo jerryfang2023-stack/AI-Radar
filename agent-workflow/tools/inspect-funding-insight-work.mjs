@@ -22,10 +22,16 @@ export function inspectFundingInsightWork(projectRoot = root, requestedDate = ""
     `${date}.json`,
   );
   const outputExists = fs.existsSync(output);
-  const existing = readJson(output, { cards: [], queue: [] });
-  const acceptedEventIds = new Set((existing.cards || [])
-    .filter((card) => fundingInsightProblems(card).length === 0)
-    .map((card) => card.triggered_by_event_id));
+  const applicationRoot = path.dirname(output);
+  const acceptedEventIds = new Set();
+  if (fs.existsSync(applicationRoot)) {
+    for (const file of fs.readdirSync(applicationRoot).filter((name) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(name))) {
+      const application = readJson(path.join(applicationRoot, file), { cards: [] });
+      for (const card of application.cards || []) {
+        if (fundingInsightProblems(card).length === 0) acceptedEventIds.add(card.triggered_by_event_id);
+      }
+    }
+  }
   const eligibleEvents = [...new Map(bundle.events
     .filter((event) => event.event_type === "funding")
     .filter((event) => event.publication_status === "verified")
@@ -34,7 +40,7 @@ export function inspectFundingInsightWork(projectRoot = root, requestedDate = ""
   const pendingEventIds = eligibleEvents
     .filter((event) => !acceptedEventIds.has(event.event_id))
     .map((event) => event.event_id);
-  const needsGeneration = !outputExists || pendingEventIds.length > 0;
+  const needsGeneration = pendingEventIds.length > 0;
   return {
     ok: true,
     date,
@@ -45,9 +51,7 @@ export function inspectFundingInsightWork(projectRoot = root, requestedDate = ""
     pending: pendingEventIds.length,
     pending_event_ids: pendingEventIds,
     needs_generation: needsGeneration,
-    reason: !outputExists
-      ? "daily_application_bundle_missing"
-      : pendingEventIds.length
+    reason: pendingEventIds.length
         ? "verified_funding_events_without_published_cards"
         : "up_to_date",
   };

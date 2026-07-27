@@ -68,7 +68,7 @@
           <header class="fi-card-head">
             <div class="fi-card-meta">
               <span>${escapeHtml(card.application_category?.name || card.analysis?.sector || "AI 应用")}</span>
-              <time>${escapeHtml(card.financing?.announced_at || card.as_of_date)}</time>
+              <time>收录于 ${escapeHtml(card.as_of_date || card.financing?.announced_at)}</time>
             </div>
             <div class="fi-card-title-row">
               <h2>${escapeHtml(card.company?.name)}</h2>
@@ -220,7 +220,7 @@
           <div class="fi-detail-main">
             <div class="fi-detail-kicker">
               <span>${escapeHtml(card.application_category?.name || card.analysis?.sector || "AI 应用")}</span>
-              <time>${escapeHtml(card.financing?.announced_at || card.as_of_date)}</time>
+              <time>融资 ${escapeHtml(card.financing?.announced_at || "日期未披露")} · 收录 ${escapeHtml(card.as_of_date || "日期未披露")}</time>
             </div>
             <h2 id="fi-dialog-title">${escapeHtml(card.company?.full_name || card.company?.name)}</h2>
             <p class="fi-detail-deck">${escapeHtml(card.company?.summary)}</p>

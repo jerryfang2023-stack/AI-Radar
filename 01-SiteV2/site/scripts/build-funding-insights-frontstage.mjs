@@ -9,6 +9,7 @@ import {
   readJson,
   writeJson,
 } from "../../../agent-workflow/tools/funding-insight-v1-utils.mjs";
+import { extractMoneyAmounts } from "../../../agent-workflow/tools/source-title-translation-generator.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 
@@ -57,6 +58,51 @@ function productFormNames(projectRoot) {
     .map((value) => [value.id, value.name]));
 }
 
+function fundingRoundKey(value = "") {
+  const text = String(value || "").toLowerCase().replace(/[\s_-]+/gu, "");
+  if (/preseed|种子前/u.test(text)) return "pre_seed";
+  if (/seed|种子|天使/u.test(text)) return "seed";
+  if (/growth|成长/u.test(text)) return "growth";
+  if (/preipo/u.test(text)) return "pre_ipo";
+  if (/\bipo\b/u.test(text)) return "ipo";
+  const series = text.match(/^(?:series)?([a-f])(\d+)?(?:round|轮)?/iu);
+  if (series) return `series_${series[1].toLowerCase()}${series[2] || ""}`;
+  return text;
+}
+
+function fundingAmountKey(value = "") {
+  const amount = extractMoneyAmounts(value)[0];
+  return amount ? `${amount.currency || "UNKNOWN"}:${amount.value}` : "";
+}
+
+export function dedupeFundingRounds(inputCards = []) {
+  const cards = [...inputCards].sort((left, right) => (
+    String(right.published_at || "").localeCompare(String(left.published_at || ""))
+  ));
+  const accepted = [];
+  for (const card of cards) {
+    const companyKey = card.company?.entity_id || String(card.company?.name || "").trim().toLowerCase();
+    const roundKey = fundingRoundKey(card.financing?.round);
+    const amountKey = fundingAmountKey(card.financing?.amount);
+    const announcedAt = Date.parse(card.financing?.announced_at || "");
+    const duplicate = accepted.some((current) => {
+      const currentCompanyKey = current.company?.entity_id || String(current.company?.name || "").trim().toLowerCase();
+      const currentAnnouncedAt = Date.parse(current.financing?.announced_at || "");
+      return companyKey
+        && companyKey === currentCompanyKey
+        && roundKey
+        && roundKey === fundingRoundKey(current.financing?.round)
+        && amountKey
+        && amountKey === fundingAmountKey(current.financing?.amount)
+        && Number.isFinite(announcedAt)
+        && Number.isFinite(currentAnnouncedAt)
+        && Math.abs(announcedAt - currentAnnouncedAt) <= 7 * 24 * 60 * 60 * 1000;
+    });
+    if (!duplicate) accepted.push(card);
+  }
+  return accepted;
+}
+
 export function buildFundingInsightsFrontstage(projectRoot = root) {
   const bundles = listBundles(projectRoot);
   const directions = directionById(projectRoot);
@@ -75,11 +121,11 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       if (!current || card.published_at > current.published_at) cardByEvent.set(card.triggered_by_event_id, card);
     }
   }
-  const cards = [...cardByEvent.values()]
+  const cards = dedupeFundingRounds([...cardByEvent.values()])
     .sort((left, right) => {
-      const leftDate = left.financing.announced_at || left.as_of_date;
-      const rightDate = right.financing.announced_at || right.as_of_date;
-      return rightDate.localeCompare(leftDate) || right.published_at.localeCompare(left.published_at);
+      return String(right.as_of_date || "").localeCompare(String(left.as_of_date || ""))
+        || String(right.financing?.announced_at || "").localeCompare(String(left.financing?.announced_at || ""))
+        || String(right.published_at || "").localeCompare(String(left.published_at || ""));
     })
     .map((card) => {
       const productFormId = fundingProductFormId(card);
@@ -124,6 +170,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       latest_date: latestDate,
       generated_at: generatedAt,
       card_count: cards.length,
+      duplicate_rounds_removed: cardByEvent.size - cards.length,
       automatic_publication: true,
     },
     filters: {
