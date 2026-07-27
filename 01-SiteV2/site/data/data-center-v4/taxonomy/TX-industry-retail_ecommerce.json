@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T16:24:00.830Z",
-    "latestDataDate": "2026-07-26",
-    "currentDate": "2026-07-26",
-    "eventCount": 1582,
+    "generatedAt": "2026-07-27T03:18:25.889Z",
+    "latestDataDate": "2026-07-27",
+    "currentDate": "2026-07-27",
+    "eventCount": 1603,
     "quarantinedEventCount": 14
   },
   "node": {
@@ -30,6 +30,8 @@
       "EV-02686922dd82c4aa",
       "EV-99a0cb6bac516bdd",
       "EV-2ffc3377977da114",
+      "EV-047b90521b1e5903",
+      "EV-26ed882216bda8b9",
       "EV-d12aa40eff40c97e",
       "EV-89b644ff05e6b93b",
       "EV-c7404765df94a3b4",
@@ -59,6 +61,12 @@
       "EN-5239a379b6326549",
       "EN-8147e6fed86d42c1",
       "EN-e274048227f164dc",
+      "EN-ee7978d5f78778c6",
+      "EN-e12148e6dfeaba80",
+      "EN-a2170e32f473e17f",
+      "EN-a5401322acafcd3f",
+      "EN-fe1e855f806b71eb",
+      "EN-f61fdda9db2b9e38",
       "EN-1bf93b12e68cac56",
       "EN-8d323d8bba783aa3",
       "EN-01f1074bb52ff605",
@@ -84,7 +92,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-07-26"
+    "lastSeen": "2026-07-27"
   },
   "events": [
     {
@@ -1297,6 +1305,167 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-047b90521b1e5903",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "ABOUT YOU 集团携手 SCAYLE STUDIOS 推出 AI 驱动摄影工作室",
+      "originalTitle": "ABOUT YOU Group Launches AI-Powered Photo Studio With SCAYLE STUDIOS | ABOUT YOU",
+      "subject": "ABOUT YOU Group",
+      "action": "Launches",
+      "object": "AI-Powered Photo Studio With SCAYLE STUDIOS | ABOUT YOU",
+      "metrics": [
+        "9.2%",
+        "5.1%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "entityIds": [
+        "EN-ee7978d5f78778c6",
+        "EN-e12148e6dfeaba80",
+        "EN-a2170e32f473e17f"
+      ],
+      "entityNames": [
+        "ABOUT YOU Group",
+        "SCAYLE STUDIOS",
+        "ABOUT YOU"
+      ],
+      "productName": "SCAYLE STUDIOS",
+      "products": [
+        {
+          "name": "SCAYLE STUDIOS",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "ABOUT YOU",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://corporate.aboutyou.de/en/newsroom/press-releases/in-minutes-instead-of-weeks-about-you-group-launches-ai-powered-photo-studio-with-scayle-studios",
+      "publisher": "corporate.aboutyou.de"
+    },
+    {
+      "id": "EV-26ed882216bda8b9",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SCAYLE 推出 SCAYLE STUDIOS",
+      "originalTitle": "SCAYLE Launches SCAYLE STUDIOS | SCAYLE Commerce Engine",
+      "subject": "SCAYLE",
+      "action": "Launches",
+      "object": "SCAYLE STUDIOS | SCAYLE Commerce Engine",
+      "metrics": [
+        "9.2%",
+        "5.1%",
+        "€1 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "entityIds": [
+        "EN-a5401322acafcd3f",
+        "EN-fe1e855f806b71eb",
+        "EN-f61fdda9db2b9e38"
+      ],
+      "entityNames": [
+        "SCAYLE",
+        "STUDIOS",
+        "Commerce Engine"
+      ],
+      "productName": "STUDIOS",
+      "products": [
+        {
+          "name": "STUDIOS",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Commerce Engine",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://scayle.com/company/newsroom/studios",
+      "publisher": "scayle.com"
+    },
+    {
       "id": "EV-d12aa40eff40c97e",
       "dataDate": "2026-07-10",
       "date": "2026-07-10",
@@ -2287,10 +2456,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-industry-technology",
         "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -2396,6 +2565,7 @@
         "EV-75b9b997e9c7e5d1",
         "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
+        "EV-d010133e168aee90",
         "EV-6415a58637893b34",
         "EV-2a71353a862e56b3",
         "EV-4515377aa6311bf1",
@@ -2411,6 +2581,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-272c5c798bc95d9d",
         "EV-0e616f9e775a77dc",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
@@ -2557,6 +2728,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-0eef30387327e73f",
         "EV-ae9142b65fa86975",
         "EV-d709599eddf5db04",
         "EV-7b2a272a891f54d1",
@@ -2598,8 +2770,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
@@ -2619,8 +2791,8 @@
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-technology-guardrails_safety",
         "TX-industry-government_public_sector",
+        "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-human_in_loop",
         "TX-technology-distillation",
@@ -2653,7 +2825,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-e5cc9e38970eacb5",
@@ -2721,8 +2893,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
@@ -2914,6 +3086,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-14cc7f194f3e5af8",
@@ -2963,6 +3136,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-286574206caa37ab",
         "EV-eec1e6857f0e0b2b",
         "EV-fdf6128ae36e1f5e",
         "EV-7f2811d2272cf4a3",
@@ -2978,6 +3152,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-272c5c798bc95d9d",
         "EV-33e98b8bbd0a11b1",
         "EV-c9aba59ba04c9fc8",
         "EV-5ec22cf9a1fb59d4",
@@ -3099,6 +3274,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-0eef30387327e73f",
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
@@ -3145,11 +3321,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -3175,6 +3351,7 @@
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
+        "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-7839fb10a8f14c70",
@@ -3198,7 +3375,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-bbdefa2950f49882",
@@ -3355,11 +3532,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -3509,8 +3686,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
@@ -3543,6 +3720,132 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
       "lastSeen": "2026-07-09"
+    },
+    {
+      "id": "EN-ee7978d5f78778c6",
+      "name": "ABOUT YOU Group",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-047b90521b1e5903"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-27"
+    },
+    {
+      "id": "EN-e12148e6dfeaba80",
+      "name": "SCAYLE STUDIOS",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-047b90521b1e5903"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-27"
+    },
+    {
+      "id": "EN-a2170e32f473e17f",
+      "name": "ABOUT YOU",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-047b90521b1e5903"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-27"
+    },
+    {
+      "id": "EN-a5401322acafcd3f",
+      "name": "SCAYLE",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-26ed882216bda8b9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-27"
+    },
+    {
+      "id": "EN-fe1e855f806b71eb",
+      "name": "STUDIOS",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-26ed882216bda8b9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-27"
+    },
+    {
+      "id": "EN-f61fdda9db2b9e38",
+      "name": "Commerce Engine",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-26ed882216bda8b9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-20",
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-1bf93b12e68cac56",
@@ -3596,8 +3899,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [
@@ -3880,8 +4183,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-technology-multimodal",
         "TX-industry-retail_ecommerce",
         "TX-technology-code_generation",
@@ -3981,8 +4284,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-telecommunications"
@@ -4004,6 +4307,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-97854226b6f43a95",
         "EV-86ca5af11ee4d275",
         "EV-52115fee0e716170",
         "EV-20d762872664fddb",
@@ -4033,6 +4337,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-272c5c798bc95d9d",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
         "EV-37ff2485172cab0b",
@@ -4095,11 +4400,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-computer_use",
         "TX-industry-financial_services",
         "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
@@ -4132,7 +4437,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-2dc010636b9dce91",
@@ -4156,8 +4461,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-use_case-cybersecurity",
@@ -4217,8 +4522,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-technology-fine_tuning"

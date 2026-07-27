@@ -4,13 +4,68 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T16:24:00.830Z",
-    "latestDataDate": "2026-07-26",
-    "currentDate": "2026-07-26",
-    "eventCount": 1582,
+    "generatedAt": "2026-07-27T03:18:25.889Z",
+    "latestDataDate": "2026-07-27",
+    "currentDate": "2026-07-27",
+    "eventCount": 1603,
     "quarantinedEventCount": 14
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-1965c9aefccb981e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-7d3194f79e645c42",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-968e2d5b08687bf4",
+      "object_type": "entity",
+      "event_id": "EV-286574206caa37ab",
+      "claim_refs": [
+        "CL-c4fadc9c91330c0e",
+        "CL-413aff7261ffd1b3",
+        "CL-9aeba7ac3376d815",
+        "CL-60bbd5cc7fdbabc9"
+      ],
+      "source_refs": [
+        "SA-2f6238bd9a3e07d9"
+      ],
+      "data_date": "2026-07-27",
+      "status": "verified",
+      "subjectName": "OpenAI",
+      "objectName": "Samsung",
+      "predicateLabel": "合作",
+      "title": "OpenAI 合作 Samsung",
+      "eventTitle": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体合作方案",
+      "eventDate": "2026-07-26",
+      "sourceCount": 1
+    },
+    {
+      "relationship_id": "REL2-b705d2e554e2ddf1",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-febedfcafee9d610",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0bd85984211bd173",
+      "object_type": "entity",
+      "event_id": "EV-58457ebde013a438",
+      "claim_refs": [
+        "CL-90241b6c17f6d304",
+        "CL-0d9ad5a5c856503c",
+        "CL-bedee29b84f010bb"
+      ],
+      "source_refs": [
+        "SA-81eb5e9d8182ca37"
+      ],
+      "data_date": "2026-07-27",
+      "status": "verified",
+      "subjectName": "Black Forest Labs",
+      "objectName": "FLUX 3",
+      "predicateLabel": "发布",
+      "title": "Black Forest Labs 发布 FLUX 3",
+      "eventTitle": "Black Forest Labs 发布 FLUX 3：统一图像、视频、音频与机器人动作预测的多模态基础模型",
+      "eventDate": "2026-07-27",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-943072eb7e694145",
       "relationship_version": "RELATION-V2.1",
@@ -162,9 +217,9 @@
       "data_date": "2026-07-25",
       "status": "verified",
       "subjectName": "Black Forest Labs",
-      "objectName": "Flux 3",
+      "objectName": "FLUX 3",
       "predicateLabel": "发布",
-      "title": "Black Forest Labs 发布 Flux 3",
+      "title": "Black Forest Labs 发布 FLUX 3",
       "eventTitle": "Black Forest Labs 发布 FLUX 3 多模态模型，支持单次生成 20 秒视频与原生音频",
       "eventDate": "2026-07-24",
       "sourceCount": 1
@@ -540,9 +595,9 @@
       "data_date": "2026-07-24",
       "status": "verified",
       "subjectName": "Black Forest Labs",
-      "objectName": "Flux 3",
+      "objectName": "FLUX 3",
       "predicateLabel": "发布",
-      "title": "Black Forest Labs 发布 Flux 3",
+      "title": "Black Forest Labs 发布 FLUX 3",
       "eventTitle": "Flux 3 生成最长20秒原生音频视频，Black Forest Labs 首创",
       "eventDate": "2026-07-23",
       "sourceCount": 1

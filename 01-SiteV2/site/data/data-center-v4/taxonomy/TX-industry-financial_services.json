@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T16:24:00.830Z",
-    "latestDataDate": "2026-07-26",
-    "currentDate": "2026-07-26",
-    "eventCount": 1582,
+    "generatedAt": "2026-07-27T03:18:25.889Z",
+    "latestDataDate": "2026-07-27",
+    "currentDate": "2026-07-27",
+    "eventCount": 1603,
     "quarantinedEventCount": 14
   },
   "node": {
@@ -38,6 +38,7 @@
       "EV-2c87c8ea47cbd1b6",
       "EV-97747aee0cafd9f3",
       "EV-bad301e14b034fbd",
+      "EV-9cd1cb31e2adf5dc",
       "EV-5caf7f83664b1a2c",
       "EV-4b44f5eafecf4922",
       "EV-f7aa6d43b75238fb",
@@ -72,6 +73,10 @@
       "EN-9b6ea48b511ffd60",
       "EN-bbdefa2950f49882",
       "EN-06b5472c16feae4c",
+      "EN-0078ec52880eaa14",
+      "EN-240a52e3b5823aeb",
+      "EN-a6f83207fb0bf2aa",
+      "EN-26a060957221fd5d",
       "EN-4e721fae5963494d",
       "EN-a4eee620f5a081bd",
       "EN-18b4bbfd60f4137e",
@@ -90,7 +95,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-05-22",
-    "lastSeen": "2026-07-26"
+    "lastSeen": "2026-07-27"
   },
   "events": [
     {
@@ -2222,6 +2227,109 @@
       "publisher": "Anthropic：Newsroom（网页）"
     },
     {
+      "id": "EV-9cd1cb31e2adf5dc",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-14",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "H2O AI Super Agent™ 被 AT&T 采用，助力企业级 AI 智能体",
+      "originalTitle": "H2O AI Super Agent™ is Added by AT&T to Power Enterprise Agentic AI",
+      "subject": "H2O AI Super Agent™",
+      "action": "Added",
+      "object": "by AT&T to Power Enterprise Agentic AI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-0078ec52880eaa14",
+        "EN-240a52e3b5823aeb",
+        "EN-a6f83207fb0bf2aa",
+        "EN-26a060957221fd5d"
+      ],
+      "entityNames": [
+        "H2O AI Super Agent™",
+        "Power Enterprise Agentic AI",
+        "H2O AI Super",
+        "AI Super"
+      ],
+      "productName": "Power Enterprise Agentic AI",
+      "products": [
+        {
+          "name": "Power Enterprise Agentic AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "H2O AI Super",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "AI Super",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://h2o.ai/company/press-media/2026/h20-ai-super-agent-is-added-by-att-to-power-enterprise-agentic-ai",
+      "publisher": "h2o.ai"
+    },
+    {
       "id": "EV-5caf7f83664b1a2c",
       "dataDate": "2026-06-16",
       "date": "2026-06-16",
@@ -2712,10 +2820,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-industry-technology",
         "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -2806,8 +2914,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences"
       ],
@@ -2826,6 +2934,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-14cc7f194f3e5af8",
@@ -2875,6 +2984,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-286574206caa37ab",
         "EV-eec1e6857f0e0b2b",
         "EV-fdf6128ae36e1f5e",
         "EV-7f2811d2272cf4a3",
@@ -2890,6 +3000,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-272c5c798bc95d9d",
         "EV-33e98b8bbd0a11b1",
         "EV-c9aba59ba04c9fc8",
         "EV-5ec22cf9a1fb59d4",
@@ -3011,6 +3122,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-0eef30387327e73f",
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
@@ -3057,11 +3169,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -3087,6 +3199,7 @@
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
+        "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-7839fb10a8f14c70",
@@ -3110,7 +3223,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-11507a0e2f5e69d5",
@@ -3236,8 +3349,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences"
       ],
@@ -3261,8 +3374,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences"
       ],
@@ -3410,6 +3523,7 @@
         "EV-75b9b997e9c7e5d1",
         "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
+        "EV-d010133e168aee90",
         "EV-6415a58637893b34",
         "EV-2a71353a862e56b3",
         "EV-4515377aa6311bf1",
@@ -3425,6 +3539,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-272c5c798bc95d9d",
         "EV-0e616f9e775a77dc",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
@@ -3571,6 +3686,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-0eef30387327e73f",
         "EV-ae9142b65fa86975",
         "EV-d709599eddf5db04",
         "EV-7b2a272a891f54d1",
@@ -3612,8 +3728,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
@@ -3633,8 +3749,8 @@
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-technology-guardrails_safety",
         "TX-industry-government_public_sector",
+        "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-human_in_loop",
         "TX-technology-distillation",
@@ -3667,7 +3783,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-5e757c7fc575c41e",
@@ -3746,6 +3862,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-97854226b6f43a95",
         "EV-86ca5af11ee4d275",
         "EV-52115fee0e716170",
         "EV-20d762872664fddb",
@@ -3775,6 +3892,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-272c5c798bc95d9d",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
         "EV-37ff2485172cab0b",
@@ -3837,11 +3955,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-computer_use",
         "TX-industry-financial_services",
         "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
@@ -3874,7 +3992,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-4d748ebd71af03a7",
@@ -4108,11 +4226,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -4177,6 +4295,94 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-13",
       "lastSeen": "2026-06-13"
+    },
+    {
+      "id": "EN-0078ec52880eaa14",
+      "name": "H2O AI Super Agent™",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9cd1cb31e2adf5dc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-14",
+      "lastSeen": "2026-07-27"
+    },
+    {
+      "id": "EN-240a52e3b5823aeb",
+      "name": "Power Enterprise Agentic AI",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9cd1cb31e2adf5dc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-14",
+      "lastSeen": "2026-07-27"
+    },
+    {
+      "id": "EN-a6f83207fb0bf2aa",
+      "name": "H2O AI Super",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9cd1cb31e2adf5dc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-14",
+      "lastSeen": "2026-07-27"
+    },
+    {
+      "id": "EN-26a060957221fd5d",
+      "name": "AI Super",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-9cd1cb31e2adf5dc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-financial_services"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-14",
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-4e721fae5963494d",
@@ -4298,8 +4504,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-use_case-enterprise_operations",

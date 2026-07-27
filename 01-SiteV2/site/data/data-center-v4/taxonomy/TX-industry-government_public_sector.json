@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T16:24:00.830Z",
-    "latestDataDate": "2026-07-26",
-    "currentDate": "2026-07-26",
-    "eventCount": 1582,
+    "generatedAt": "2026-07-27T03:18:25.889Z",
+    "latestDataDate": "2026-07-27",
+    "currentDate": "2026-07-27",
+    "eventCount": 1603,
     "quarantinedEventCount": 14
   },
   "node": {
@@ -17,6 +17,7 @@
     "typeLabel": "行业",
     "valueId": "government_public_sector",
     "eventIds": [
+      "EV-cea525b2226b0078",
       "EV-b9a1cba0b59a5354",
       "EV-a80624daa2a65d4c",
       "EV-b240fb11e65b018e",
@@ -24,6 +25,7 @@
       "EV-3a7128e2d7ff149e"
     ],
     "entityIds": [
+      "EN-9599cd200c6527a7",
       "EN-ee1e31ffef7dbe64",
       "EN-c70eca6b0f88f44d",
       "EN-06b5472c16feae4c",
@@ -32,15 +34,78 @@
       "EN-0dba03107c52ed3e"
     ],
     "fdeIds": [
+      "FDE-5d7f931cdd66f577",
       "FDE-9331f5d8c795e023"
     ],
     "hardwareIds": [
       "HW-c5a22adcc66136ed"
     ],
     "firstSeen": "2026-06-13",
-    "lastSeen": "2026-07-26"
+    "lastSeen": "2026-07-27"
   },
   "events": [
+    {
+      "id": "EV-cea525b2226b0078",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-27",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "印度电子与信息技术部为政府AI使命选定六家科技公司，包括TCS和CoRover",
+      "originalTitle": "MeitY empanels six tech firms including TCS and CoRover for Government AI Mission – Daily PRABHAT",
+      "subject": "National e-Governance Division (NeGD) under the Ministry of Electronics and Information Technology (MeitY)",
+      "action": "procurement_contract",
+      "object": "CoRover Pvt. Ltd., Tata Consultancy Services (TCS), NEC Corporation India, Innefu Labs Ltd., Kyndryl Solutions Pvt. Ltd., and Cactus Technology Solutions Pvt. Ltd. (CTSPL)",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "government_public_sector",
+            "dimensionName": "行业",
+            "name": "政府与公共部门"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "government_public_sector",
+          "dimensionName": "行业",
+          "name": "政府与公共部门"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "government_public_sector",
+          "dimensionName": "行业",
+          "name": "政府与公共部门"
+        }
+      ],
+      "entityIds": [
+        "EN-9599cd200c6527a7"
+      ],
+      "entityNames": [
+        "Information Technology (MeitY)"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dailyprabhat.com/meity-empanels-six-tech-firms-including-tcs-and-corover-for-government-ai-mission",
+      "publisher": "dailyprabhat.com"
+    },
     {
       "id": "EV-b9a1cba0b59a5354",
       "dataDate": "2026-07-25",
@@ -578,6 +643,27 @@
   ],
   "entities": [
     {
+      "id": "EN-9599cd200c6527a7",
+      "name": "Information Technology (MeitY)",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-cea525b2226b0078"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-government_public_sector"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-27",
+      "lastSeen": "2026-07-27"
+    },
+    {
       "id": "EN-ee1e31ffef7dbe64",
       "name": "Sarvam",
       "entityType": "organization_candidate",
@@ -651,6 +737,7 @@
         "EV-75b9b997e9c7e5d1",
         "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
+        "EV-d010133e168aee90",
         "EV-6415a58637893b34",
         "EV-2a71353a862e56b3",
         "EV-4515377aa6311bf1",
@@ -666,6 +753,7 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-272c5c798bc95d9d",
         "EV-0e616f9e775a77dc",
         "EV-c59d80939faf17cc",
         "EV-c9aba59ba04c9fc8",
@@ -812,6 +900,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-0eef30387327e73f",
         "EV-ae9142b65fa86975",
         "EV-d709599eddf5db04",
         "EV-7b2a272a891f54d1",
@@ -853,8 +942,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
@@ -874,8 +963,8 @@
         "TX-technology-fine_tuning",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
-        "TX-technology-guardrails_safety",
         "TX-industry-government_public_sector",
+        "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
         "TX-technology-human_in_loop",
         "TX-technology-distillation",
@@ -908,7 +997,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-06b5472c16feae4c",
@@ -1113,10 +1202,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-industry-technology",
         "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -1175,6 +1264,43 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-5d7f931cdd66f577",
+      "eventId": "EV-cea525b2226b0078",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-27",
+      "title": "印度电子与信息技术部为政府AI使命选定六家科技公司，包括TCS和CoRover",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "CoRover Pvt. Ltd., Tata Consultancy Services (TCS), NEC Corporation India, Innefu Labs Ltd., Kyndryl Solutions Pvt. Ltd., and Cactus Technology Solutions Pvt. Ltd. (CTSPL)",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://dailyprabhat.com/meity-empanels-six-tech-firms-including-tcs-and-corover-for-government-ai-mission",
+      "entityIds": [
+        "EN-9599cd200c6527a7"
+      ]
+    },
     {
       "id": "FDE-9331f5d8c795e023",
       "eventId": "EV-a80624daa2a65d4c",

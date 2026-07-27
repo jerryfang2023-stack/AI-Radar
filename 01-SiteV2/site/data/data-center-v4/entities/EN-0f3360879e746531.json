@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T16:24:00.830Z",
-    "latestDataDate": "2026-07-26",
-    "currentDate": "2026-07-26",
-    "eventCount": 1582,
+    "generatedAt": "2026-07-27T03:18:25.889Z",
+    "latestDataDate": "2026-07-27",
+    "currentDate": "2026-07-27",
+    "eventCount": 1603,
     "quarantinedEventCount": 14
   },
   "entity": {
@@ -294,6 +294,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
@@ -329,7 +330,10 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-06526dd6cb2157f4",
+        "EV-98aa6402a8e256db",
         "EV-6beed07120c6c6d0",
+        "EV-0d424ee04b1860ce",
         "EV-91a444ff3955ad91",
         "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
@@ -342,6 +346,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-272c5c798bc95d9d",
         "EV-0f0b2013927ce156",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
@@ -409,6 +414,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-cd7e18de453152dd",
         "EV-89bdda008227fb6b",
         "EV-89f9216de5b559ac",
         "EV-c14e5185fd6bbe30",
@@ -419,8 +425,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
@@ -475,7 +481,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     }
   ],
   "relationships": [
@@ -537,6 +543,7 @@
       "typeLabel": "行业",
       "valueId": "manufacturing",
       "eventIds": [
+        "EV-da1655ecfaf35feb",
         "EV-754e83c2d19005fe",
         "EV-f6a72cddbda748b3",
         "EV-9300044a58395552",
@@ -555,7 +562,9 @@
         "EV-ff1f6119de13fa19",
         "EV-4dd25589d834060d",
         "EV-7263caa45bbf168e",
+        "EV-06526dd6cb2157f4",
         "EV-6beed07120c6c6d0",
+        "EV-0d424ee04b1860ce",
         "EV-e4fec8a00b416d12",
         "EV-5b16886442234f81",
         "EV-3d8608d3e78e031b",
@@ -573,17 +582,19 @@
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
         "EV-8993e021ac17df4a",
+        "EV-cd7e18de453152dd",
         "EV-08f736f61f2b46f3",
         "EV-946569cccbd9222f",
         "EV-2c7d13d234147817"
       ],
       "entityIds": [
+        "EN-9cb45a27a2808c01",
+        "EN-8d4321d936320802",
         "EN-834cc12fc35adde7",
         "EN-a5d2ae286d0d9e45",
         "EN-96eebba49dbbf422",
         "EN-7106dbc04a08ce3a",
         "EN-3ccbd9105a45d8fc",
-        "EN-8d4321d936320802",
         "EN-c70eca6b0f88f44d",
         "EN-1bd14cd1a58c5708",
         "EN-7d3194f79e645c42",
@@ -611,7 +622,9 @@
         "EN-8efebac68a48c369",
         "EN-16fd849ce27f115b",
         "EN-f5791343a13abc71",
+        "EN-a23ce6a4e25da9aa",
         "EN-43664b1263361b29",
+        "EN-bb74959cf87dec17",
         "EN-956b7280912ef1cc",
         "EN-18ada5002dd89e01",
         "EN-222f930b87524636",
@@ -656,7 +669,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "TX-technology-multimodal",
@@ -671,6 +684,8 @@
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
+        "EV-58457ebde013a438",
+        "EV-6bac0bf442887889",
         "EV-c7e1e920e54bb364",
         "EV-03d40407042d7986",
         "EV-b76705cd8461925f",
@@ -764,7 +779,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "TX-technology-embodied_ai",
@@ -865,6 +880,7 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-6bac0bf442887889",
         "EV-c7e1e920e54bb364",
         "EV-f79713437230562f",
         "EV-03d40407042d7986",
@@ -918,10 +934,10 @@
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
+        "EN-8d57f84bd1847b24",
         "EN-febedfcafee9d610",
         "EN-0bd85984211bd173",
         "EN-240389f4b730bad4",
-        "EN-8d57f84bd1847b24",
         "EN-593d0361124f348f",
         "EN-843e746333671ab1",
         "EN-a96df57737b74def",
@@ -977,7 +993,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "TX-industry-healthcare_life_sciences",
@@ -1003,6 +1019,7 @@
         "EV-d1e2a7c6d314612c",
         "EV-8abf5adc3e72fbb8",
         "EV-afd0332ad8f5f05b",
+        "EV-d010133e168aee90",
         "EV-2c87c8ea47cbd1b6",
         "EV-794296a712c1cf15",
         "EV-f4ead1a54e596bf8",
@@ -1049,6 +1066,7 @@
         "EN-9fbf261b62c1d7c0",
         "EN-8d291c7017252b07",
         "EN-8147e6fed86d42c1",
+        "EN-a7d324a4b53ea387",
         "EN-4d748ebd71af03a7",
         "EN-c3e4cc183d345262",
         "EN-ab877737b6081bd1",
@@ -1076,6 +1094,7 @@
         "FDE-0ee0fe3baa3f1364",
         "FDE-d08fed45110ab44b",
         "FDE-ab9c514225686f60",
+        "FDE-19037355d2791a8e",
         "FDE-560b710961006374",
         "FDE-1fb7e2ae69d2f044"
       ],
@@ -1083,7 +1102,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "TX-industry-automotive_transportation",

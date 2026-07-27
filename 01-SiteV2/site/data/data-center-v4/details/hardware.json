@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T16:24:00.830Z",
-    "latestDataDate": "2026-07-26",
-    "currentDate": "2026-07-26",
-    "eventCount": 1582,
+    "generatedAt": "2026-07-27T03:18:25.889Z",
+    "latestDataDate": "2026-07-27",
+    "currentDate": "2026-07-27",
+    "eventCount": 1603,
     "quarantinedEventCount": 14
   },
   "hardware": [
@@ -1797,6 +1797,95 @@
   ],
   "events": [
     {
+      "id": "EV-da1655ecfaf35feb",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Etched 融资 3 亿美元，103 亿美元估值考验 AI 推理芯片经济性",
+      "originalTitle": "Etched raises $300m as $10.3bn valuation tests AI inference chip economics",
+      "subject": "Etched",
+      "action": "raises",
+      "object": "$300m as $10.3bn valuation tests AI inference chip economics",
+      "metrics": [
+        "$300m",
+        "$10.3b",
+        "$300 million",
+        "$10.3 billion",
+        "$1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-9cb45a27a2808c01",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Etched",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://business-news-today.com/etched-raises-300m-as-10-3bn-valuation-tests-ai-inference-chip-economics",
+      "publisher": "business-news-today.com"
+    },
+    {
       "id": "EV-a1e79d22310709c0",
       "dataDate": "2026-07-26",
       "date": "2026-07-26",
@@ -1838,6 +1927,77 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/981/625.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-97854226b6f43a95",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "in_progress",
+      "statusLabel": "进行中",
+      "publicationStatus": "partial",
+      "title": "Prentis，由Reid Hoffman、Marc Pincus联合创立的新AI实验室，正洽谈融资1亿美元",
+      "originalTitle": "Prentis, new AI lab co-founded by Reid Hoffman, Marc Pincus in talks to raise $100M | TechCrunch",
+      "subject": "Prentis, new AI lab co-founded by Reid Hoffman, Marc Pincus",
+      "action": "raise",
+      "object": "$100M",
+      "metrics": [
+        "$100M",
+        "$100 million",
+        "$1 billion",
+        "$55 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作"
+        }
+      ],
+      "entityIds": [
+        "EN-9d4cbc0ceab2c56a",
+        "EN-9fbf261b62c1d7c0",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Prentis",
+        "Microsoft",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-marc-pincus-in-talks-to-raise-100m",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-754e83c2d19005fe",
@@ -2038,90 +2198,6 @@
       "products": [],
       "sourceUrl": "https://citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era",
       "publisher": "citybiz.co"
-    },
-    {
-      "id": "EV-97854226b6f43a95",
-      "dataDate": "2026-07-25",
-      "date": "2026-07-24",
-      "updatedDate": "2026-07-25",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "in_progress",
-      "statusLabel": "进行中",
-      "publicationStatus": "partial",
-      "title": "Prentis 正以 10 亿美元估值洽谈融资 1 亿美元",
-      "originalTitle": "",
-      "subject": "Prentis 正以 10 亿美元估值洽谈",
-      "action": "融资",
-      "object": "1 亿美元",
-      "metrics": [
-        "$100M",
-        "$100 million",
-        "$1 billion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "computer_use",
-          "name": "计算机操作"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "computer_use",
-          "name": "计算机操作"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "computer_use",
-          "name": "计算机操作"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "entityIds": [
-        "EN-9d4cbc0ceab2c56a"
-      ],
-      "entityNames": [
-        "Prentis"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m",
-      "publisher": "TechCrunch：AI（RSS）"
     },
     {
       "id": "EV-ca2587895f498112",
@@ -2472,71 +2548,6 @@
       "products": [],
       "sourceUrl": "https://eu-startups.com/2026/07/yc-backed-telli-raises-e13-1-million-to-build-ai-for-b2c-customer-operations",
       "publisher": "eu-startups.com"
-    },
-    {
-      "id": "EV-da1655ecfaf35feb",
-      "dataDate": "2026-07-24",
-      "date": "2026-07-23",
-      "updatedDate": "2026-07-24",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "AI芯片初创公司Etched无视质疑，获知名投资者青睐估值达103亿美元",
-      "originalTitle": "AI chip startup Etched defies skeptics, hits $10.3B valuation from big-name investors",
-      "subject": "Etched",
-      "action": "funding",
-      "object": "$300 million Series C funding round at a $10.3 billion valuation",
-      "metrics": [
-        "$300 million",
-        "$10.3 billion"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "id": "chip_accelerator",
-            "dimensionName": "产品形态",
-            "name": "芯片与加速器"
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "product_form",
-          "id": "chip_accelerator",
-          "dimensionName": "产品形态",
-          "name": "芯片与加速器"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "id": "chip_accelerator",
-          "dimensionName": "产品形态",
-          "name": "芯片与加速器"
-        }
-      ],
-      "entityIds": [
-        "EN-9cb45a27a2808c01"
-      ],
-      "entityNames": [
-        "Etched"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors",
-      "publisher": "TechCrunch AI"
     },
     {
       "id": "EV-ccbf97fdf4dc11d0",
@@ -4843,6 +4854,68 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/video/inside-ode-with-anthropic-the-startup-betting-ai-services-are-the-future-of-enterprise",
       "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-8bdb2829d0ed29fc",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-14",
+      "updatedDate": "2026-07-27",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "GovSignals 收购 Turingon，为唯一通过 FedRAMP High 和 DoW IL5 认证的 AI 平台增添经验丰富的 Capture 与 Proposal 团队",
+      "originalTitle": "GovSignals acquires Turingon, adding a proven Capture and Proposal team to the only AI platform cleared at FedRAMP High and DoW IL5",
+      "subject": "GovSignals",
+      "action": "acquires",
+      "object": "Turingon, adding a proven Capture and Proposal team to the only AI platform cleared at FedRAMP High and DoW IL5",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        }
+      ],
+      "entityIds": [
+        "EN-39f1654a4fd3c7d7"
+      ],
+      "entityNames": [
+        "GovSignals"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://globenewswire.com/news-release/2026/07/14/3326798/0/en/GovSignals-acquires-Turingon-adding-a-proven-Capture-and-Proposal-team-to-the-only-AI-platform-cleared-at-FedRAMP-High-and-DoW-IL5.html",
+      "publisher": "globenewswire.com"
     },
     {
       "id": "EV-34a077ec20c91cea",
@@ -22964,6 +23037,115 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-b31602193dbf4e08",
+      "dataDate": "2026-07-27",
+      "date": "2023-04-27",
+      "updatedDate": "2026-07-27",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+      "originalTitle": "Replit, the web-based IDE developing a GitHub Copilot competitor, raises $100M | TechCrunch",
+      "subject": "Replit, the web-based IDE developing a GitHub Copilot competitor,",
+      "action": "raises",
+      "object": "$100M",
+      "metrics": [
+        "$100M",
+        "$100 million",
+        "$97.4 million",
+        "$1.16 billion",
+        "$200 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-53b69ef92c836777"
+      ],
+      "entityNames": [
+        "Replit"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-cea525b2226b0078",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-27",
+      "eventType": "procurement_contract",
+      "eventTypeLabel": "采购合同",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "印度电子与信息技术部为政府AI使命选定六家科技公司，包括TCS和CoRover",
+      "originalTitle": "MeitY empanels six tech firms including TCS and CoRover for Government AI Mission – Daily PRABHAT",
+      "subject": "National e-Governance Division (NeGD) under the Ministry of Electronics and Information Technology (MeitY)",
+      "action": "procurement_contract",
+      "object": "CoRover Pvt. Ltd., Tata Consultancy Services (TCS), NEC Corporation India, Innefu Labs Ltd., Kyndryl Solutions Pvt. Ltd., and Cactus Technology Solutions Pvt. Ltd. (CTSPL)",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "government_public_sector",
+            "dimensionName": "行业",
+            "name": "政府与公共部门"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "government_public_sector",
+          "dimensionName": "行业",
+          "name": "政府与公共部门"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "government_public_sector",
+          "dimensionName": "行业",
+          "name": "政府与公共部门"
+        }
+      ],
+      "entityIds": [
+        "EN-9599cd200c6527a7"
+      ],
+      "entityNames": [
+        "Information Technology (MeitY)"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dailyprabhat.com/meity-empanels-six-tech-firms-including-tcs-and-corover-for-government-ai-mission",
+      "publisher": "dailyprabhat.com"
+    },
+    {
       "id": "EV-729a0261934b73d9",
       "dataDate": "2026-07-26",
       "date": "2026-07-26",
@@ -34007,6 +34189,184 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-06526dd6cb2157f4",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-27",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "SK 集团与英伟达达成 5000 亿美元合作，2027 年上线首个 AI 工厂",
+      "originalTitle": "",
+      "subject": "SK 集团与英伟达达成 5000 亿美元",
+      "action": "合作",
+      "object": "，2027 年上线首个 AI 工厂",
+      "metrics": [
+        "5000 亿",
+        "3.39 万"
+      ],
+      "locations": [
+        "韩国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "chip_accelerator",
+            "dimensionName": "产品形态",
+            "name": "芯片与加速器"
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "chip_accelerator",
+          "dimensionName": "产品形态",
+          "name": "芯片与加速器"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-a23ce6a4e25da9aa",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "SK 集团",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/787.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-286574206caa37ab",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-27",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体合作方案",
+      "originalTitle": "",
+      "subject": "三星电子会长李在镕与 OpenAI CEO 奥尔特曼会面，商讨 AI 半导体",
+      "action": "合作",
+      "object": "方案",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-ef770057280091f9",
+        "EN-968e2d5b08687bf4",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "三星电子会长李在镕",
+        "Samsung",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/705.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-98aa6402a8e256db",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-27",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达与首尔大学合作建立 AI 实验室，聚焦科学计算与半导体研究",
+      "originalTitle": "",
+      "subject": "英伟达与首尔大学",
+      "action": "合作",
+      "object": "建立 AI 实验室，聚焦科学计算与半导体研究",
+      "metrics": [],
+      "locations": [
+        "韩国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-6c94b3080bce5bba"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "首尔大学"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/699.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-6beed07120c6c6d0",
       "dataDate": "2026-07-26",
       "date": "2026-07-26",
@@ -34216,6 +34576,72 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/981/500.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-0d424ee04b1860ce",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-24",
+      "updatedDate": "2026-07-27",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 公司 - SK 集团与 NVIDIA 扩大战略合作，覆盖 AI 工厂与下一代内存",
+      "originalTitle": "NVIDIA Corporation - SK Group and NVIDIA Expand Strategic Partnership Across AI Factories and Next-Generation Memory",
+      "subject": "NVIDIA Corporation - SK Group and NVIDIA Expand Strategic",
+      "action": "Partnership",
+      "object": "Across AI Factories and Next-Generation Memory",
+      "metrics": [
+        "$500"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-bb74959cf87dec17",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA Corporation - SK Group",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://investor.nvidia.com/news/press-release-details/2026/SK-Group-and-NVIDIA-Expand-Strategic-Partnership-Across-AI-Factories-and-Next-Generation-Memory/default.aspx",
+      "publisher": "investor.nvidia.com"
     },
     {
       "id": "EV-91a444ff3955ad91",
@@ -35870,6 +36296,72 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius",
       "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-d010133e168aee90",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-13",
+      "updatedDate": "2026-07-27",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Optum 与 Anthropic 合作，在医疗理赔与收入工作流中部署 Claude",
+      "originalTitle": "Optum Partners with Anthropic to Deploy Claude Across Healthcare Claims and Revenue Workflows",
+      "subject": "Optum",
+      "action": "Partners with",
+      "object": "Anthropic to Deploy Claude Across Healthcare Claims and Revenue Workflows",
+      "metrics": [
+        "$3 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "healthcare_life_sciences",
+            "dimensionName": "行业",
+            "name": "医疗与生命科学"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "healthcare_life_sciences",
+          "dimensionName": "行业",
+          "name": "医疗与生命科学"
+        }
+      ],
+      "entityIds": [
+        "EN-a7d324a4b53ea387",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Optum",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://hitconsultant.net/2026/07/13/optum-partners-anthropic-healthcare-ai",
+      "publisher": "hitconsultant.net"
     },
     {
       "id": "EV-2fab4396000198d2",
@@ -40841,6 +41333,411 @@
       "publisher": "cnbc.com"
     },
     {
+      "id": "EV-58457ebde013a438",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-27",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Black Forest Labs 发布 FLUX 3：统一图像、视频、音频与机器人动作预测的多模态基础模型",
+      "originalTitle": "",
+      "subject": "Black Forest Labs",
+      "action": "发布 FLUX 3：统一图像、视频、音频与机器人动作预测的多模态基础模型",
+      "object": "Black Forest Labs 发布 FLUX 3：统一图像、视频、音频与机器人动作预测的多模态基础模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-febedfcafee9d610",
+        "EN-0bd85984211bd173"
+      ],
+      "entityNames": [
+        "Black Forest Labs",
+        "FLUX 3"
+      ],
+      "productName": "FLUX 3",
+      "products": [
+        {
+          "name": "FLUX 3",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/26/black-forest-labs-releases-flux-3-a-multimodal-flow-model-for-image-video-audio-and-robot-action-prediction",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
+      "id": "EV-6bac0bf442887889",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "荣耀 Robot Phone 定档 8 月 12 日发布，搭载第五代骁龙 8 至尊版与阿莱联合研发",
+      "originalTitle": "",
+      "subject": "荣耀 Robot Phone 定档 8 月 12 日",
+      "action": "发布",
+      "object": "，搭载第五代骁龙 8 至尊版与阿莱联合研发",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-8d57f84bd1847b24"
+      ],
+      "entityNames": [
+        "Robot Phone"
+      ],
+      "productName": "Robot Phone",
+      "products": [
+        {
+          "name": "Robot Phone",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/843.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-272c5c798bc95d9d",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-27",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "OpenAI、Anthropic 游说美国限制中国开源模型，黄仁勋与马斯克公开反对",
+      "originalTitle": "",
+      "subject": "OpenAI、Anthropic 游说美国限制中国",
+      "action": "开源模型",
+      "object": "，黄仁勋与马斯克公开反对",
+      "metrics": [],
+      "locations": [
+        "美国",
+        "中国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-c70eca6b0f88f44d",
+        "EN-9fbf261b62c1d7c0",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Anthropic",
+        "Microsoft",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/797.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6a207c11798c1d4a",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "欧盟 AI 透明度准则 8 月 2 日生效：聊天机器人须\"自报身份\"，深度伪造内容需带机读标签",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "欧盟 AI 透明度准则 8 月 2 日生效：聊天机器人须\"自报身份\"，深度伪造内容需带机读标签",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "entities"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/755.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-8d63a70542a5da26",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "开发者推出防AI训练图片干扰工具，意外催生\"抖动视觉风格\"梗图创作潮流",
+      "originalTitle": "",
+      "subject": "开发者",
+      "action": "推出",
+      "object": "防AI训练图片干扰工具，意外催生\"抖动视觉风格\"梗图创作潮流",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-38084d301e3f1a31"
+      ],
+      "entityNames": [
+        "开发者"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/786.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ca18725115b61bd3",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-26",
+      "updatedDate": "2026-07-27",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "快手KwaiKAT团队发布KAT-Coder-V2.5：基于10万+可验证仓库环境训练的智能体编程模型",
+      "originalTitle": "",
+      "subject": "快手KwaiKAT团队",
+      "action": "发布KAT-Coder-V2.5：基于10万+可验证仓库环境训练的智能体编程模型",
+      "object": "快手KwaiKAT团队发布KAT-Coder-V2.5：基于10万+可验证仓库环境训练的智能体编程模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "open_weights",
+          "name": "开放权重"
+        }
+      ],
+      "entityIds": [
+        "EN-6b61eab266a42eb0",
+        "EN-845153a713bc1643",
+        "EN-ca231d0c3ae59041"
+      ],
+      "entityNames": [
+        "快手KwaiKAT",
+        "KwaiKAT",
+        "KAT-Coder-V2.5"
+      ],
+      "productName": "KwaiKAT",
+      "products": [
+        {
+          "name": "KwaiKAT",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "KAT-Coder-V2.5",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/26/kwaikat-team-releases-kat-coder-v2-5-an-agentic-coding-model-trained-on-100000-verifiable-repository-environments",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
       "id": "EV-0d5a32aca724d30e",
       "dataDate": "2026-07-26",
       "date": "2026-07-26",
@@ -41181,6 +42078,88 @@
       ],
       "sourceUrl": "https://globenewswire.com/news-release/2026/07/23/3332219/0/en/Fluree-Launches-Fluree-AI-to-Transform-Data-Siloes-into-Institutional-Memory.html",
       "publisher": "globenewswire.com"
+    },
+    {
+      "id": "EV-6f62a16e5647c499",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI 智能体新闻 — 2026年7月发布、模型与研究",
+      "originalTitle": "Agentic AI News — July 2026 Launches, Models & Research | Agentic.ai",
+      "subject": "Agentic AI News — July 2026",
+      "action": "Launches",
+      "object": ", Models & Research | Agentic.ai",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-0631a6a6c0e2cbb0",
+        "EN-ffb1e7dbfba5bd22",
+        "EN-66d87265951ddd5e"
+      ],
+      "entityNames": [
+        "AI News",
+        "Agentic AI News",
+        "Jul 25"
+      ],
+      "productName": "AI News",
+      "products": [
+        {
+          "name": "AI News",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Agentic AI News",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Jul 25",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://agentic.ai/news",
+      "publisher": "agentic.ai"
     },
     {
       "id": "EV-0f0b2013927ce156",
@@ -42459,12 +43438,12 @@
       ],
       "entityNames": [
         "Black Forest Labs",
-        "Flux 3"
+        "FLUX 3"
       ],
-      "productName": "Flux 3",
+      "productName": "FLUX 3",
       "products": [
         {
-          "name": "Flux 3",
+          "name": "FLUX 3",
           "type": "模型",
           "ownerNames": []
         }
@@ -43254,12 +44233,12 @@
         "EN-0bd85984211bd173"
       ],
       "entityNames": [
-        "Flux 3"
+        "FLUX 3"
       ],
-      "productName": "Flux 3",
+      "productName": "FLUX 3",
       "products": [
         {
-          "name": "Flux 3",
+          "name": "FLUX 3",
           "type": "产品/服务",
           "ownerNames": []
         }
@@ -44636,12 +45615,12 @@
       ],
       "entityNames": [
         "Black Forest Labs",
-        "Flux 3"
+        "FLUX 3"
       ],
-      "productName": "Flux 3",
+      "productName": "FLUX 3",
       "products": [
         {
-          "name": "Flux 3",
+          "name": "FLUX 3",
           "type": "模型",
           "ownerNames": []
         }
@@ -49323,6 +50302,167 @@
       ],
       "sourceUrl": "https://ithome.com/0/979/273.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-047b90521b1e5903",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "ABOUT YOU 集团携手 SCAYLE STUDIOS 推出 AI 驱动摄影工作室",
+      "originalTitle": "ABOUT YOU Group Launches AI-Powered Photo Studio With SCAYLE STUDIOS | ABOUT YOU",
+      "subject": "ABOUT YOU Group",
+      "action": "Launches",
+      "object": "AI-Powered Photo Studio With SCAYLE STUDIOS | ABOUT YOU",
+      "metrics": [
+        "9.2%",
+        "5.1%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "entityIds": [
+        "EN-ee7978d5f78778c6",
+        "EN-e12148e6dfeaba80",
+        "EN-a2170e32f473e17f"
+      ],
+      "entityNames": [
+        "ABOUT YOU Group",
+        "SCAYLE STUDIOS",
+        "ABOUT YOU"
+      ],
+      "productName": "SCAYLE STUDIOS",
+      "products": [
+        {
+          "name": "SCAYLE STUDIOS",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "ABOUT YOU",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://corporate.aboutyou.de/en/newsroom/press-releases/in-minutes-instead-of-weeks-about-you-group-launches-ai-powered-photo-studio-with-scayle-studios",
+      "publisher": "corporate.aboutyou.de"
+    },
+    {
+      "id": "EV-26ed882216bda8b9",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-20",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "SCAYLE 推出 SCAYLE STUDIOS",
+      "originalTitle": "SCAYLE Launches SCAYLE STUDIOS | SCAYLE Commerce Engine",
+      "subject": "SCAYLE",
+      "action": "Launches",
+      "object": "SCAYLE STUDIOS | SCAYLE Commerce Engine",
+      "metrics": [
+        "9.2%",
+        "5.1%",
+        "€1 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "entityIds": [
+        "EN-a5401322acafcd3f",
+        "EN-fe1e855f806b71eb",
+        "EN-f61fdda9db2b9e38"
+      ],
+      "entityNames": [
+        "SCAYLE",
+        "STUDIOS",
+        "Commerce Engine"
+      ],
+      "productName": "STUDIOS",
+      "products": [
+        {
+          "name": "STUDIOS",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "Commerce Engine",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://scayle.com/company/newsroom/studios",
+      "publisher": "scayle.com"
     },
     {
       "id": "EV-4f36e494d9281522",
@@ -59200,6 +60340,109 @@
       ],
       "sourceUrl": "https://ycombinator.com/launches/RIH-nitrode-advancing-ai-for-game-development",
       "publisher": "ycombinator.com"
+    },
+    {
+      "id": "EV-9cd1cb31e2adf5dc",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-14",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "H2O AI Super Agent™ 被 AT&T 采用，助力企业级 AI 智能体",
+      "originalTitle": "H2O AI Super Agent™ is Added by AT&T to Power Enterprise Agentic AI",
+      "subject": "H2O AI Super Agent™",
+      "action": "Added",
+      "object": "by AT&T to Power Enterprise Agentic AI",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "financial_services",
+          "dimensionName": "行业",
+          "name": "金融服务"
+        }
+      ],
+      "entityIds": [
+        "EN-0078ec52880eaa14",
+        "EN-240a52e3b5823aeb",
+        "EN-a6f83207fb0bf2aa",
+        "EN-26a060957221fd5d"
+      ],
+      "entityNames": [
+        "H2O AI Super Agent™",
+        "Power Enterprise Agentic AI",
+        "H2O AI Super",
+        "AI Super"
+      ],
+      "productName": "Power Enterprise Agentic AI",
+      "products": [
+        {
+          "name": "Power Enterprise Agentic AI",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "H2O AI Super",
+          "type": "产品/服务",
+          "ownerNames": []
+        },
+        {
+          "name": "AI Super",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://h2o.ai/company/press-media/2026/h20-ai-super-agent-is-added-by-att-to-power-enterprise-agentic-ai",
+      "publisher": "h2o.ai"
     },
     {
       "id": "EV-30749250196dd507",
@@ -99732,6 +100975,147 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-cd7e18de453152dd",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-27",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达与韩国 Naver 达成 10 亿美元投资，扩容 NVIDIA DSX AI 工厂至 200 兆瓦",
+      "originalTitle": "",
+      "subject": "英伟达与韩国 Naver 达成 10 亿美元",
+      "action": "投资，扩容 NVIDIA DSX AI 工厂",
+      "object": "至 200 兆瓦",
+      "metrics": [
+        "10 亿",
+        "67.78 亿"
+      ],
+      "locations": [
+        "韩国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "manufacturing",
+            "dimensionName": "行业",
+            "name": "制造业"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "manufacturing",
+          "dimensionName": "行业",
+          "name": "制造业"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/981/825.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-0eef30387327e73f",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-25",
+      "updatedDate": "2026-07-27",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Monday.com 成为最新一家将裁员归咎于AI的科技公司——以下是其他20家",
+      "originalTitle": "Monday.com is the latest tech company to blame AI for layoffs — here are 20 others",
+      "subject": "Monday.com is the latest tech company to blame AI for",
+      "action": "layoffs",
+      "object": "— here are 20 others",
+      "metrics": [
+        "20%",
+        "$45 million",
+        "$55 million"
+      ],
+      "locations": [
+        "U.S."
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "technology",
+            "dimensionName": "行业",
+            "name": "科技与软件"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "id": "technology",
+          "dimensionName": "行业",
+          "name": "科技与软件"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-ea3bd73e2b506e00",
+        "EN-916a98f0fa2a39af"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "OpenAI",
+        "Meta",
+        "IBM"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai",
+      "publisher": "TechCrunch AI"
+    },
+    {
       "id": "EV-b8d851200fdbff06",
       "dataDate": "2026-07-26",
       "date": "2026-07-25",
@@ -103376,6 +104760,71 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/976/767.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-caf5d85e980c86fd",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-14",
+      "updatedDate": "2026-07-27",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Medallia 通过全新 Frontline-Ready AI™ 功能扩大企业 AI 应用并提升可量化生产力",
+      "originalTitle": "Medallia Scales Enterprise AI Adoption and Measurable Productivity with New Frontline-Ready AI™ Capabilities – Medallia",
+      "subject": "Medallia",
+      "action": "financial_performance",
+      "object": "More than 40% of top 300 enterprise customers representing more than $200M in software ACV have enabled generative AI",
+      "metrics": [
+        "40%",
+        "$200M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "id": "enterprise",
+            "dimensionName": "目标用户",
+            "name": "企业用户"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "id": "enterprise",
+          "dimensionName": "目标用户",
+          "name": "企业用户"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "id": "enterprise",
+          "dimensionName": "目标用户",
+          "name": "企业用户"
+        }
+      ],
+      "entityIds": [
+        "EN-74bec9be9c8f2e09"
+      ],
+      "entityNames": [
+        "Medallia"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://medallia.com/press-release/medallia-scales-enterprise-ai-adoption-with-frontline-ready-ai-capabilities",
+      "publisher": "medallia.com"
     },
     {
       "id": "EV-14b44a40808340f5",

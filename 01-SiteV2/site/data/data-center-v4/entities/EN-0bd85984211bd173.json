@@ -4,15 +4,15 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T16:24:00.830Z",
-    "latestDataDate": "2026-07-26",
-    "currentDate": "2026-07-26",
-    "eventCount": 1582,
+    "generatedAt": "2026-07-27T03:18:25.889Z",
+    "latestDataDate": "2026-07-27",
+    "currentDate": "2026-07-27",
+    "eventCount": 1603,
     "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-0bd85984211bd173",
-    "name": "Flux 3",
+    "name": "FLUX 3",
     "entityType": "product_candidate",
     "typeLabel": "产品、模型与服务",
     "aliases": [],
@@ -21,6 +21,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-58457ebde013a438",
       "EV-c7e1e920e54bb364",
       "EV-d4d03a7ad477aaa2",
       "EV-b76705cd8461925f"
@@ -34,8 +35,9 @@
       "EN-febedfcafee9d610"
     ],
     "firstSeen": "2026-07-23",
-    "lastSeen": "2026-07-25",
+    "lastSeen": "2026-07-27",
     "relationIds": [
+      "REL2-b705d2e554e2ddf1",
       "REL2-5f4972be933ff6b2",
       "REL2-82d95dce19bccd53"
     ],
@@ -44,6 +46,7 @@
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-58457ebde013a438",
         "EV-c7e1e920e54bb364",
         "EV-d4d03a7ad477aaa2",
         "EV-b76705cd8461925f"
@@ -53,6 +56,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-58457ebde013a438",
+        "dataDate": "2026-07-27",
+        "date": "2026-07-27",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "Black Forest Labs 发布 FLUX 3：统一图像、视频、音频与机器人动作预测的多模态基础模型",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态"
+          }
+        ],
+        "entityIds": [
+          "EN-febedfcafee9d610",
+          "EN-0bd85984211bd173"
+        ]
+      },
       {
         "id": "EV-c7e1e920e54bb364",
         "dataDate": "2026-07-25",
@@ -153,6 +185,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-58457ebde013a438",
         "EV-c7e1e920e54bb364",
         "EV-b76705cd8461925f"
       ],
@@ -165,10 +198,30 @@
         "EN-0bd85984211bd173"
       ],
       "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-27"
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-b705d2e554e2ddf1",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-febedfcafee9d610",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0bd85984211bd173",
+      "object_type": "entity",
+      "event_id": "EV-58457ebde013a438",
+      "claim_refs": [
+        "CL-90241b6c17f6d304",
+        "CL-0d9ad5a5c856503c",
+        "CL-bedee29b84f010bb"
+      ],
+      "source_refs": [
+        "SA-81eb5e9d8182ca37"
+      ],
+      "data_date": "2026-07-27",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-5f4972be933ff6b2",
       "relationship_version": "RELATION-V2.1",
@@ -220,6 +273,8 @@
         "EV-a9810b47e0408a05",
         "EV-26d2874c6ce028d6",
         "EV-fd21441fb6e143c3",
+        "EV-58457ebde013a438",
+        "EV-6bac0bf442887889",
         "EV-c7e1e920e54bb364",
         "EV-03d40407042d7986",
         "EV-b76705cd8461925f",
@@ -313,7 +368,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "TX-use_case-robotics_automation",
@@ -336,6 +391,7 @@
         "EV-e4fec8a00b416d12",
         "EV-39848cdd62c00e59",
         "EV-4faa2bcf2e42e60c",
+        "EV-6bac0bf442887889",
         "EV-c7e1e920e54bb364",
         "EV-f79713437230562f",
         "EV-03d40407042d7986",
@@ -389,10 +445,10 @@
         "EN-72138e570e5103e2",
         "EN-aa75c47729b4a292",
         "EN-8147e6fed86d42c1",
+        "EN-8d57f84bd1847b24",
         "EN-febedfcafee9d610",
         "EN-0bd85984211bd173",
         "EN-240389f4b730bad4",
-        "EN-8d57f84bd1847b24",
         "EN-593d0361124f348f",
         "EN-843e746333671ab1",
         "EN-a96df57737b74def",
@@ -448,7 +504,7 @@
         "HW-dca442211b264bbe"
       ],
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     }
   ],
   "fde": [],
