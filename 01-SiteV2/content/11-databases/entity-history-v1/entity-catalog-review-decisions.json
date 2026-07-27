@@ -1,6 +1,6 @@
 {
   "schema_version": "ENTITY-CATALOG-REVIEW-V1",
-  "generated_at": "2026-07-26T16:23:11.511Z",
+  "generated_at": "2026-07-27T06:22:00.000Z",
   "reviewer": "codex-global-audit-repair",
   "inputs": [
     "agent-workflow/reports/entity-catalog-deepseek-audit-phase2.json",
@@ -8,11 +8,11 @@
     "agent-workflow/reports/entity-catalog-deepseek-audit-current.json"
   ],
   "summary": {
-    "current_catalog_reviewed": 533,
+    "current_catalog_reviewed": 534,
     "supplemental_claim_entities": 8,
     "historical_decisions_retained": 342,
-    "reviewed": 876,
-    "confirmed": 363,
+    "reviewed": 877,
+    "confirmed": 364,
     "corrected": 170,
     "merged": 107,
     "quarantined": 236
@@ -29618,6 +29618,41 @@
       "review_status": "accepted",
       "reviewer": "codex-global-audit-repair",
       "reviewed_at": "2026-07-26T16:23:11.511Z",
+      "error_patterns": []
+    },
+    {
+      "entity_id": "EN-1706429cbf67f1c9",
+      "current": {
+        "name": "European Union",
+        "catalog_type": "company",
+        "company_names": []
+      },
+      "action": "confirm",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "European Union",
+        "catalog_type": "company",
+        "company_names": [],
+        "aliases": [
+          "欧盟"
+        ]
+      },
+      "evidence": {
+        "claim_refs": [
+          "CL-62975bc1cadbad52",
+          "CL-f6c8e024716e721d",
+          "CL-079815561bc2cfe5",
+          "CL-d9f6efe2ccf4020b"
+        ],
+        "secondary_sources": []
+      },
+      "advisory_source": "codex_explicit_claim_review",
+      "advisory_decision": "explicit_review",
+      "confidence": 1,
+      "rationale": "标题与 exact Claims 明确记录欧盟《人工智能法案》第 50 条 AI 透明度准则生效及其对聊天机器人和 AI 生成内容的要求，支持 European Union 作为政策监管事件的组织主体；欧盟为其中文别名。",
+      "review_status": "accepted",
+      "reviewer": "codex-ci-deploy-repair",
+      "reviewed_at": "2026-07-27T06:22:00.000Z",
       "error_patterns": []
     }
   ]
