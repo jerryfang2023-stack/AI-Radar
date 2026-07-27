@@ -120,7 +120,20 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
 });
 
 test("the two latest weekly issues have independent editorial pages", () => {
-  for (const date of ["2026-07-13", "2026-07-20"]) {
+  const weeklySources = fs.readdirSync(path.join(root, "01-SiteV2/content/08-report"))
+    .filter((file) => /^\d{4}-\d{2}-\d{2}--weekly-report--ai-business-change-radar\.md$/u.test(file))
+    .map((file) => ({
+      file,
+      markdown: fs.readFileSync(path.join(root, "01-SiteV2/content/08-report", file), "utf8"),
+    }))
+    .filter(({ markdown }) => /^status:\s*published$/mu.test(markdown))
+    .map(({ file, markdown }) => ({
+      file,
+      date: markdown.match(/^date:\s*(\d{4}-\d{2}-\d{2})$/mu)?.[1] || "",
+    }))
+    .sort((left, right) => right.date.localeCompare(left.date));
+  assert.ok(weeklySources.length >= 2, "at least two published weekly sources must exist");
+  for (const { date } of weeklySources.slice(0, 2)) {
     const file = path.join(root, "01-SiteV2", "site", `weekly-ai-business-change-radar-${date}.html`);
     assert.ok(fs.existsSync(file), `${date} weekly detail page must exist`);
     const html = fs.readFileSync(file, "utf8");
@@ -133,7 +146,7 @@ test("the two latest weekly issues have independent editorial pages", () => {
     assert.doesNotMatch(html, /<table/u);
   }
   const latest = fs.readFileSync(path.join(root, "01-SiteV2", "site", "weekly-ai-business-change-radar.html"), "utf8");
-  assert.match(latest, /2026-07-20--weekly-report--ai-business-change-radar\.md/u);
+  assert.match(latest, new RegExp(weeklySources[0].file.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"), "u"));
 });
 
 test("retired V3 page assets are deleted and internal compatibility datasets stay private", () => {
