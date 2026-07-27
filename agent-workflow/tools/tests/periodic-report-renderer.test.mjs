@@ -4,6 +4,7 @@ import path from "node:path";
 import test from "node:test";
 import { periodicReportTitleProblems } from "../periodic-report-title.mjs";
 import {
+  buildEvidenceSourceIndex,
   discoverPublishedReports,
   escapeHtml,
   formatReportWindow,
@@ -33,13 +34,29 @@ test("June monthly title records DeepSeek title provenance", () => {
   assert.match(metadata.title_generated_at, /^2026-07-18T/u);
 });
 
-test("periodic renderer parses accepted metadata and preserves evidence IDs", () => {
-  const source = "---\ntitle: Test\nstatus: draft\nwindow: 2026-07-06 to 2026-07-12\n---\n## 0. 数据边界\n\n- 判断 [E:EVT-1]";
+test("periodic renderer turns resolvable evidence IDs into understandable links and hides unresolved IDs", () => {
+  const source = "---\ntitle: Test\nstatus: draft\nwindow: 2026-07-06 to 2026-07-12\n---\n## 0. 数据边界\n\n- 事件 [E:EVT-1]、观点 [O:OP-1]、社群 [C:CM-1]、未解析 [E:MISSING]";
   const parsed = parseFrontmatter(source);
   assert.equal(parsed.values.status, "draft");
-  const html = renderBody(parsed.body);
+  const html = renderBody(parsed.body, {
+    evidenceSources: new Map([
+      ["E:EVT-1", "https://example.com/event?a=1&b=2"],
+      ["O:OP-1", "https://example.com/opinion"],
+      ["C:CM-1", "https://example.com/community"],
+    ]),
+  });
   assert.match(html, /id="section-0"/u);
-  assert.match(html, /\[E:EVT-1\]/u);
+  assert.match(html, /href="https:\/\/example\.com\/event\?a=1&amp;b=2"[^>]*>查看事件来源<\/a>/u);
+  assert.match(html, />查看观点来源<\/a>/u);
+  assert.match(html, />查看社群来源<\/a>/u);
+  assert.doesNotMatch(html, /\[(?:E|O|C):|EVT-1|OP-1|CM-1|MISSING|report-evidence-ref/u);
+});
+
+test("public evidence index resolves event, viewpoint, and historical community sources", () => {
+  const evidence = buildEvidenceSourceIndex(process.cwd());
+  assert.match(evidence.get("E:EV-db82b90cad1e7c14") || "", /^https?:\/\//u);
+  assert.match(evidence.get("O:2081223709755650054") || "", /^https?:\/\//u);
+  assert.match(evidence.get("C:28a9c526fc924e") || "", /^https?:\/\//u);
 });
 
 test("periodic renderer escapes model-supplied HTML", () => {

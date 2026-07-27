@@ -1,5 +1,10 @@
 # Monthly Report Page Generator Memory
 
+## 2026-07-27
+
+- Public report prose must never expose internal evidence IDs such as `[E:...]`, `[O:...]`, or `[C:...]`. Resolve them to understated, reader-facing source links with understandable labels; suppress a marker entirely when no safe public URL can be resolved.
+- Evidence-presentation changes are cross-report contract changes: audit all published weekly and monthly pages and rebuild only the dated pages that actually contain obsolete markers.
+
 ## 2026-07-21
 
 - Every weekly or monthly renderer run must rebuild both Reports Center feature cards from the latest `status: published` canonical report sources. The monthly title, reporting window, and route must never be maintained as independent static HTML fields.

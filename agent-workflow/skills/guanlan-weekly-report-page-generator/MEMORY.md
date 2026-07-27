@@ -1,5 +1,10 @@
 # Weekly Report Page Generator Memory
 
+## 2026-07-27
+
+- Public report prose must never expose internal evidence IDs such as `[E:...]`, `[O:...]`, or `[C:...]`. Resolve them to understated, reader-facing source links with understandable labels; suppress a marker entirely when no safe public URL can be resolved.
+- A renderer repair for evidence presentation must audit every published weekly and monthly HTML page, and explicitly rebuild each affected dated report plus the current undated alias.
+
 ## 2026-07-21
 
 - Every weekly or monthly renderer run must rebuild both Reports Center feature cards from the latest `status: published` canonical report sources. Updating only an archive link is insufficient; the visible title, reporting window, and route must move together.
