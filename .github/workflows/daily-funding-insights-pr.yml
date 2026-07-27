@@ -1,0 +1,397 @@
+name: WaveSight Funding Insights PR
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "01-SiteV2/content/11-databases/data-center-v4/**/canonical-events.json"
+  workflow_run:
+    workflows:
+      - WaveSight Business Signals PR
+    types:
+      - completed
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Asia/Shanghai data date, formatted as YYYY-MM-DD. Leave empty for the latest V4 bundle."
+        required: false
+        type: string
+
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+
+jobs:
+  resolve-date:
+    name: Resolve Funding Insights dates
+    if: >-
+      github.event_name == 'workflow_dispatch'
+      || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+      || (github.event_name == 'push' && !startsWith(github.event.head_commit.message, 'Persist business signals for '))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      date: ${{ steps.run-date.outputs.date }}
+    env:
+      TZ: Asia/Shanghai
+
+    steps:
+      - name: Check out merged main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
+      - name: Resolve funding event date
+        id: run-date
+        env:
+          INPUT_DATE: ${{ github.event.inputs.date || '' }}
+          SOURCE_BRANCH: ${{ github.event.workflow_run.head_branch || '' }}
+          SOURCE_CREATED_AT: ${{ github.event.workflow_run.created_at || '' }}
+          BEFORE_SHA: ${{ github.event.before || '' }}
+          CURRENT_SHA: ${{ github.sha }}
+          EVENT_NAME: ${{ github.event_name }}
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          run_date="$INPUT_DATE"
+          if [ -z "$run_date" ] && [[ "$SOURCE_BRANCH" =~ automation/business-signals-([0-9]{4}-[0-9]{2}-[0-9]{2})$ ]]; then
+            run_date="${BASH_REMATCH[1]}"
+          fi
+          if [ -z "$run_date" ] && [ -n "$SOURCE_CREATED_AT" ]; then
+            run_date="$(date -d "$SOURCE_CREATED_AT" +%F)"
+          fi
+          if [ -z "$run_date" ] && [ "$EVENT_NAME" = "push" ] && [ -n "$BEFORE_SHA" ]; then
+            changed_dates="$(git diff --name-only "$BEFORE_SHA" "$CURRENT_SHA" -- \
+              '01-SiteV2/content/11-databases/data-center-v4/*/canonical-events.json' \
+              | sed -nE 's#^.*/([0-9]{4}-[0-9]{2}-[0-9]{2})/canonical-events\.json$#\1#p' \
+              | sort -ru)"
+            run_date="$(printf '%s\n' "$changed_dates" | head -n 1)"
+            while IFS= read -r extra_date; do
+              if [ -n "$extra_date" ] && [ "$extra_date" != "$run_date" ]; then
+                gh workflow run daily-funding-insights-pr.yml --ref main -f date="$extra_date"
+                echo "Queued Funding Insights follow-up for ${extra_date}"
+              fi
+            done <<< "$changed_dates"
+          fi
+          if [ -z "$run_date" ]; then
+            run_date="$(node -e "import('./agent-workflow/tools/funding-insight-v1-utils.mjs').then(({latestDataDate}) => process.stdout.write(latestDataDate(process.cwd())))")"
+          fi
+          if ! [[ "$run_date" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "Invalid funding event date: $run_date" >&2
+            exit 2
+          fi
+          echo "date=$run_date" >> "$GITHUB_OUTPUT"
+
+  funding-insights-pr:
+    name: Funding Insights downstream PR
+    needs:
+      - resolve-date
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    concurrency:
+      group: wavesight-funding-insights-${{ needs.resolve-date.outputs.date }}
+      cancel-in-progress: false
+    env:
+      TZ: Asia/Shanghai
+      RUN_DATE: ${{ needs.resolve-date.outputs.date }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      TAVILY_DISABLED: "false"
+      EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      DEEPSEEK_FLASH_MODEL: deepseek-v4-flash
+      DEEPSEEK_PRO_MODEL: deepseek-v4-pro
+
+    steps:
+      - name: Check out merged main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Wait for the verified event bundle on main
+        if: github.event_name == 'workflow_run'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+          SOURCE_CREATED_AT: ${{ github.event.workflow_run.created_at || '' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}/canonical-events.json"
+          source_branch="automation/business-signals-${RUN_DATE}"
+          for attempt in $(seq 1 20); do
+            git fetch origin main
+            merged_sha="$(gh pr list \
+              --base main \
+              --head "$source_branch" \
+              --state merged \
+              --json mergedAt,mergeCommit \
+              --limit 5 \
+              --jq ".[] | select((.mergedAt | fromdateiso8601) >= ((\"${SOURCE_CREATED_AT}\" | fromdateiso8601) - 300)) | .mergeCommit.oid" \
+              | head -n 1)"
+            if [ -n "$merged_sha" ] \
+              && git merge-base --is-ancestor "$merged_sha" origin/main \
+              && git cat-file -e "origin/main:${target}" 2>/dev/null; then
+              git checkout --detach origin/main
+              exit 0
+            fi
+            echo "Waiting for the upstream PR and ${target} to reach main (${attempt}/20)"
+            sleep 15
+          done
+          echo "Verified event bundle was not merged by the completed upstream workflow: ${target}" >&2
+          exit 1
+
+      - name: Inspect incremental Funding Insights work
+        id: funding-work
+        shell: bash
+        run: |
+          set -euo pipefail
+          node agent-workflow/tools/inspect-funding-insight-work.mjs \
+            --date="${RUN_DATE}" \
+            --github-output="${GITHUB_OUTPUT}"
+
+      - name: Research missing Funding Insights cards
+        id: research
+        if: steps.funding-work.outputs.needs_generation == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          node agent-workflow/tools/generate-funding-insights-deepseek.mjs \
+            --date="${RUN_DATE}" \
+            --write=true \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-funding-insights-retry.log"
+
+      - name: Gate, project, and sync Funding Insights
+        id: publish
+        if: >-
+          always()
+          && steps.funding-work.outcome == 'success'
+          && (steps.funding-work.outputs.needs_generation != 'true' || steps.research.outcome == 'success')
+        shell: bash
+        run: |
+          set -euo pipefail
+          node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}"
+          node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
+          node agent-workflow/tools/sync-funding-insights-to-obsidian.mjs
+          npm run test:funding-insights
+          node agent-workflow/tools/frontstage-regression-gate.mjs
+
+      - name: Upload Funding Insights diagnostics
+        if: always() && steps.funding-work.outcome == 'success'
+        uses: actions/upload-artifact@v6
+        with:
+          name: wavesight-funding-insights-${{ needs.resolve-date.outputs.date }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            agent-workflow/reports/${{ needs.resolve-date.outputs.date }}-github-funding-insights-retry.log
+            agent-workflow/reports/frontstage-regression-gate-*.md
+            01-SiteV2/content/12-applications/funding-insights/${{ needs.resolve-date.outputs.date }}.json
+            01-SiteV2/site/data/funding-insights-v1.json
+
+      - name: Commit accepted Funding Insights assets
+        id: commit
+        if: steps.publish.outcome == 'success'
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="automation/funding-insights-${RUN_DATE}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add \
+            "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json" \
+            "01-SiteV2/site/data/funding-insights-v1.json"
+          git add -A -- "01-SiteV2/knowledge/04-Funding-Insights"
+          if git diff --cached --quiet; then
+            echo "No Funding Insights changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Update Funding Insights for ${RUN_DATE}"
+          git push --force-with-lease origin "$branch"
+          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update Funding Insights PR
+        id: pr
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="${{ steps.commit.outputs.branch }}"
+          body_file="$(mktemp)"
+          cat > "$body_file" <<BODY
+          Funding Insights downstream update for ${RUN_DATE}.
+
+          - Triggered only after the verified Data Center V4 event bundle reached \`main\`.
+          - Retried verified funding events that do not yet own a valid published card.
+          - Used captured-source secondary research plus DeepSeek V4 Pro.
+          - Passed explicit-investor, exact-quote, schema, publication, projection, Obsidian-sync, and frontstage gates.
+          - Did not mutate CanonicalEvents, Claims, entities, or factual relationships.
+
+          GitHub Pages deploys after this PR updates \`main\`.
+          BODY
+          pr_number="$(gh pr list --base main --head "$branch" --state open --json number --jq '.[0].number // empty')"
+          if [ -n "$pr_number" ]; then
+            pr_url="$(gh pr view "$pr_number" --json url --jq .url)"
+            gh pr edit "$pr_number" \
+              --title "Funding Insights update ${RUN_DATE}" \
+              --body-file "$body_file"
+          else
+            pr_url="$(gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "Funding Insights update ${RUN_DATE}" \
+              --body-file "$body_file")"
+            pr_number="$(gh pr view "$branch" --json number --jq .number)"
+          fi
+          echo "pr_number=$pr_number" >> "$GITHUB_OUTPUT"
+          echo "pr_url=$pr_url" >> "$GITHUB_OUTPUT"
+
+      - name: Auto-merge Funding Insights PR after gates pass
+        id: auto-merge
+        if: steps.pr.outputs.pr_number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          pr_number="${{ steps.pr.outputs.pr_number }}"
+          if gh pr merge "$pr_number" \
+            --squash \
+            --auto \
+            --delete-branch \
+            --subject "Update Funding Insights for ${RUN_DATE}" \
+            --body "Automated downstream publication after Funding Insights gates passed." \
+            2>auto-merge-error.log; then
+            echo "status=enabled_or_merged" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          cat auto-merge-error.log >&2
+          if grep -Eqi "auto-merge.*disabled|not enabled for this repository|GraphQL:.*auto.?merge" auto-merge-error.log; then
+            gh pr merge "$pr_number" \
+              --squash \
+              --delete-branch \
+              --subject "Update Funding Insights for ${RUN_DATE}" \
+              --body "Automated downstream publication after Funding Insights gates passed."
+            echo "status=merged" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          exit 1
+
+      - name: Wait for Funding Insights PR to reach main
+        id: merged
+        if: steps.pr.outputs.pr_number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          pr_number="${{ steps.pr.outputs.pr_number }}"
+          for attempt in $(seq 1 30); do
+            pr_json="$(gh pr view "$pr_number" --json state,mergeCommit)"
+            state="$(node -e "const value=JSON.parse(process.argv[1]); process.stdout.write(value.state || '');" "$pr_json")"
+            merge_sha="$(node -e "const value=JSON.parse(process.argv[1]); process.stdout.write(value.mergeCommit?.oid || '');" "$pr_json")"
+            if [ "$state" = "MERGED" ] && [ -n "$merge_sha" ]; then
+              git fetch origin main
+              if git merge-base --is-ancestor "$merge_sha" origin/main; then
+                echo "status=merged" >> "$GITHUB_OUTPUT"
+                echo "merge_sha=$merge_sha" >> "$GITHUB_OUTPUT"
+                echo "main_sha=$(git rev-parse origin/main)" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+            fi
+            echo "Waiting for Funding Insights PR #${pr_number} to reach main (${attempt}/30)"
+            sleep 10
+          done
+          echo "Funding Insights PR #${pr_number} did not reach main." >&2
+          exit 1
+
+      - name: Deploy merged Funding Insights through GitHub Pages
+        id: deploy
+        if: steps.merged.outputs.status == 'merged'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          main_sha="${{ steps.merged.outputs.main_sha }}"
+          run_title="Deploy Frontstage to GitHub Pages ${main_sha}"
+          gh workflow run github-pages.yml --ref main -f source_sha="$main_sha"
+          run_id=""
+          for attempt in $(seq 1 20); do
+            run_id="$(gh run list \
+              --workflow github-pages.yml \
+              --event workflow_dispatch \
+              --limit 20 \
+              --json databaseId,displayTitle \
+              --jq ".[] | select(.displayTitle == \"${run_title}\") | .databaseId" \
+              | head -n 1)"
+            if [ -n "$run_id" ]; then
+              break
+            fi
+            echo "Waiting for explicit GitHub Pages run (${attempt}/20)"
+            sleep 5
+          done
+          if [ -z "$run_id" ]; then
+            echo "Unable to resolve the dispatched GitHub Pages run." >&2
+            exit 1
+          fi
+          gh run watch "$run_id" --exit-status --interval 10
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
+          echo "status=deployed" >> "$GITHUB_OUTPUT"
+
+      - name: Funding Insights result
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ steps.funding-work.outcome }}" != "success" ]; then
+            echo "Funding Insights work inspection failed." >&2
+            exit 1
+          fi
+          if [ "${{ steps.funding-work.outputs.needs_generation }}" = "true" ] && [ "${{ steps.research.outcome }}" != "success" ]; then
+            echo "Funding Insights research failed." >&2
+            exit 1
+          fi
+          if [ "${{ steps.publish.outcome }}" != "success" ]; then
+            echo "Funding Insights publication gate or Obsidian sync failed." >&2
+            exit 1
+          fi
+          if [ "${{ steps.commit.outcome }}" != "success" ]; then
+            echo "Funding Insights commit failed." >&2
+            exit 1
+          fi
+          if [ "${{ steps.commit.outputs.changed }}" = "true" ] && [ "${{ steps.auto-merge.outcome }}" != "success" ]; then
+            echo "Funding Insights PR was not merged or queued for auto-merge." >&2
+            exit 1
+          fi
+          if [ "${{ steps.commit.outputs.changed }}" = "true" ] && [ "${{ steps.merged.outputs.status }}" != "merged" ]; then
+            echo "Funding Insights PR did not reach main." >&2
+            exit 1
+          fi
+          if [ "${{ steps.commit.outputs.changed }}" = "true" ] && [ "${{ steps.deploy.outputs.status }}" != "deployed" ]; then
+            echo "Funding Insights GitHub Pages deployment did not pass." >&2
+            exit 1
+          fi
+          echo "Funding Insights downstream publication and Obsidian sync completed for ${RUN_DATE}."

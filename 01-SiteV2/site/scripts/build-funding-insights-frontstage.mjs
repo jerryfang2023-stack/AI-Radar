@@ -66,6 +66,10 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       },
     }));
   const latestDate = bundles.map((bundle) => bundle.meta?.date || "").sort().at(-1) || "";
+  const generatedAt = [
+    ...bundles.map((bundle) => bundle.meta?.generated_at || ""),
+    ...cards.map((card) => card.published_at || ""),
+  ].filter(Boolean).sort().at(-1) || "";
   return {
     meta: {
       schema_version: FUNDING_INSIGHT_FRONTSTAGE_VERSION,
@@ -73,7 +77,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       site_version: "SITE-V4.2.0-entity-history",
       column_version: "FUNDING-INSIGHT-V1.0-auto-published-research",
       latest_date: latestDate,
-      generated_at: new Date().toISOString(),
+      generated_at: generatedAt,
       card_count: cards.length,
       automatic_publication: true,
     },

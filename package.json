@@ -72,6 +72,7 @@
     "build:opportunity-map-site": "node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs",
     "generate:direction-cards": "node agent-workflow/tools/generate-opportunity-direction-cards-deepseek.mjs",
     "generate:funding-insights": "node agent-workflow/tools/generate-funding-insights-deepseek.mjs",
+    "inspect:funding-insights": "node agent-workflow/tools/inspect-funding-insight-work.mjs",
     "backfill:funding-insights": "node agent-workflow/tools/backfill-funding-insights-history.mjs",
     "assert:funding-insights": "node agent-workflow/tools/assert-funding-insights-v1.mjs",
     "build:funding-insights-site": "node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs",
