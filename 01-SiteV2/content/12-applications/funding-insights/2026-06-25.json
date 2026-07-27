@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-06-25",
-    "generated_at": "2026-07-26T15:14:22.924Z",
+    "generated_at": "2026-07-27T05:19:02.439Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -3127,81 +3127,94 @@
     },
     {
       "event_id": "EV-2bea8d8046a9b325",
-      "company_name": "Why we",
+      "company_name": "Intel",
       "status": "blocked",
       "problems": [
         "deepseek_json_quality_failed:products_missing|cited_research_sources_insufficient"
       ],
       "queries": [
-        "\"Why we\" \"$13.5M\" funding investors round",
-        "\"Why we\" product customers case study",
-        "\"Why we\" \"Why we raised $13.5M to define Process Intelligence for the Agentic Era\" competitors product use case",
-        "\"Why we\" \"$13.5M\" investor quote why invested",
-        "\"Why we\" \"$13.5M\" \"why we invested\" OR \"our investment\""
+        "\"Why we raised $13.5M to define Process Intelligence for the Agentic Era\" funding company investors product",
+        "\"Intel\" \"$13.5M\" funding investors round",
+        "\"Intel\" product customers case study",
+        "\"Intel\" \"Why we raised $13.5M to define Process Intelligence for the Agentic Era\" competitors product use case",
+        "\"Intel\" \"$13.5M\" investor quote why invested",
+        "\"Intel\" \"$13.5M\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
         {
           "provider": "tavily",
-          "query": "\"Why we\" \"$13.5M\" funding investors round",
+          "query": "\"Why we raised $13.5M to define Process Intelligence for the Agentic Era\" funding company investors product",
           "status": "failed",
           "error": "tavily_432"
         },
         {
           "provider": "exa",
-          "query": "\"Why we\" \"$13.5M\" funding investors round",
+          "query": "\"Why we raised $13.5M to define Process Intelligence for the Agentic Era\" funding company investors product",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"Why we\" product customers case study",
+          "query": "\"Intel\" \"$13.5M\" funding investors round",
           "status": "failed",
           "error": "tavily_432"
         },
         {
           "provider": "exa",
-          "query": "\"Why we\" product customers case study",
+          "query": "\"Intel\" \"$13.5M\" funding investors round",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"Why we\" \"Why we raised $13.5M to define Process Intelligence for the Agentic Era\" competitors product use case",
+          "query": "\"Intel\" product customers case study",
           "status": "failed",
           "error": "tavily_432"
         },
         {
           "provider": "exa",
-          "query": "\"Why we\" \"Why we raised $13.5M to define Process Intelligence for the Agentic Era\" competitors product use case",
+          "query": "\"Intel\" product customers case study",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"Why we\" \"$13.5M\" investor quote why invested",
+          "query": "\"Intel\" \"Why we raised $13.5M to define Process Intelligence for the Agentic Era\" competitors product use case",
           "status": "failed",
           "error": "tavily_432"
         },
         {
           "provider": "exa",
-          "query": "\"Why we\" \"$13.5M\" investor quote why invested",
+          "query": "\"Intel\" \"Why we raised $13.5M to define Process Intelligence for the Agentic Era\" competitors product use case",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"Why we\" \"$13.5M\" \"why we invested\" OR \"our investment\"",
+          "query": "\"Intel\" \"$13.5M\" investor quote why invested",
           "status": "failed",
           "error": "tavily_432"
         },
         {
           "provider": "exa",
-          "query": "\"Why we\" \"$13.5M\" \"why we invested\" OR \"our investment\"",
+          "query": "\"Intel\" \"$13.5M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Intel\" \"$13.5M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Intel\" \"$13.5M\" \"why we invested\" OR \"our investment\"",
           "status": "completed",
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:14:22.895Z"
+      "updated_at": "2026-07-27T05:19:02.408Z"
     },
     {
       "event_id": "EV-ad0589423b3aa1ce",
@@ -3281,14 +3294,94 @@
     },
     {
       "event_id": "EV-8aa51e324eca8fc2",
-      "company_name": "",
+      "company_name": "Runlayer",
       "status": "blocked",
       "problems": [
-        "subject_company_unresolved"
+        "deepseek_json_quality_failed:investors_missing"
       ],
-      "queries": [],
-      "attempts": [],
-      "updated_at": "2026-07-26T15:14:22.895Z"
+      "queries": [
+        "\"Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune\" funding company investors product",
+        "\"Runlayer\" \"$30 million\" funding investors round",
+        "\"Runlayer\" product customers case study",
+        "\"Runlayer\" \"Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune\" competitors product use case",
+        "\"Runlayer\" \"$30 million\" investor quote why invested",
+        "\"Runlayer\" \"$30 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Runlayer\" \"$30 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Runlayer\" \"$30 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Runlayer\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Runlayer\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Runlayer\" \"Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Runlayer\" \"Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Runlayer\" \"$30 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Runlayer\" \"$30 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Runlayer\" \"$30 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Runlayer\" \"$30 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-27T05:19:02.408Z"
     },
     {
       "event_id": "EV-9fc8916c19c19f99",

@@ -10,6 +10,7 @@ import {
   fundingInsightProblems,
   researchPayloadProblems,
   sanitizeResearchPayload,
+  subjectCompanyForEvent,
 } from "../funding-insight-v1-utils.mjs";
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
 import { buildFundingInsightsFrontstage } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
@@ -76,6 +77,52 @@ test("自动发布门禁要求明确投资方及产品证据", () => {
   assert.deepEqual(fundingInsightProblems(card), []);
   card.financing.investors = [];
   assert.ok(fundingInsightProblems(card).includes("investors_missing"));
+});
+
+test("融资主体解析优先选择被投公司而不是投资方", () => {
+  const entities = [
+    { entity_id: "EN-OPENAI", entity_type: "organization_candidate", canonical_name: "OpenAI" },
+    { entity_id: "EN-POETIC", entity_type: "organization_candidate", canonical_name: "Poetic" },
+  ];
+  const event = {
+    display_title_zh: "OpenAI 投资 AI 初创公司 Poetic，布局合规与承保任务",
+    action: "投资",
+    object: "$50 million",
+    entities: ["EN-OPENAI", "EN-POETIC"],
+  };
+  assert.equal(subjectCompanyForEvent(event, entities)?.entity_id, "EN-POETIC");
+});
+
+test("融资主体可按事件标题精确链接稳定公司实体", () => {
+  const event = {
+    display_title_zh: "Runlayer 完成 3000 万美元 A 轮融资",
+    action: "完成融资",
+    object: "$30 million",
+    entities: [],
+  };
+  const entityIndex = {
+    companies: [{
+      id: "EN-RUNLAYER",
+      name: "Runlayer",
+      sourceType: "organization_candidate",
+      aliases: [],
+    }],
+  };
+  assert.equal(subjectCompanyForEvent(event, [], entityIndex)?.entity_id, "EN-RUNLAYER");
+});
+
+test("融资主体没有强主语信号时保持阻断", () => {
+  const entities = [
+    { entity_id: "EN-ANTHROPIC", entity_type: "organization_candidate", canonical_name: "Anthropic" },
+    { entity_id: "EN-META", entity_type: "organization_candidate", canonical_name: "Meta" },
+  ];
+  const event = {
+    display_title_zh: "获 Anthropic、OpenAI 及 Meta 内部人士支持，Bespoke Labs 融资 4000 万美元",
+    action: "获支持",
+    object: "$40 million",
+    entities: ["EN-ANTHROPIC", "EN-META"],
+  };
+  assert.equal(subjectCompanyForEvent(event, entities), null);
 });
 
 test("DeepSeek 研究结果必须逐项引用已抓取来源原文", () => {

@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-06-02",
-    "generated_at": "2026-07-26T15:09:48.420Z",
+    "generated_at": "2026-07-27T05:14:26.089Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -4667,81 +4667,14 @@
     },
     {
       "event_id": "EV-4a162c41bb82f325",
-      "company_name": "Google",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Google\" \"800 亿\" funding investors round",
-        "\"Google\" product customers case study",
-        "\"Google\" \"谷歌母公司 Alphabet 宣布 800 亿美元大额融资，用于 AI 基础设施与算力建设\" competitors product use case",
-        "\"Google\" \"800 亿\" investor quote why invested",
-        "\"Google\" \"800 亿\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Google\" \"800 亿\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Google\" \"800 亿\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Google\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Google\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Google\" \"谷歌母公司 Alphabet 宣布 800 亿美元大额融资，用于 AI 基础设施与算力建设\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Google\" \"谷歌母公司 Alphabet 宣布 800 亿美元大额融资，用于 AI 基础设施与算力建设\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Google\" \"800 亿\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Google\" \"800 亿\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Google\" \"800 亿\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Google\" \"800 亿\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:09:48.393Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:14:26.078Z"
     },
     {
       "event_id": "EV-e12b17260d19c5ff",

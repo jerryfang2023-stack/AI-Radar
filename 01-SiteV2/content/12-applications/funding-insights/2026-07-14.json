@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-14",
-    "generated_at": "2026-07-26T15:22:14.862Z",
+    "generated_at": "2026-07-27T05:24:41.418Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -10,12 +10,424 @@
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
     "counts": {
       "funding_events": 8,
-      "auto_published": 4,
-      "blocked": 4,
+      "auto_published": 5,
+      "blocked": 3,
       "pending": 0
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-a3b0e6ba9c45f3fc",
+      "triggered_by_event_id": "EV-7a85e21802efd8b2",
+      "as_of_date": "2026-07-14",
+      "company": {
+        "entity_id": "EN-3eee4f30151db45a",
+        "name": "Nous Research",
+        "full_name": "Nous Research",
+        "website": "",
+        "summary": "Nous Research 是一家开源 AI 初创公司，开发了开源智能体 Hermes，该智能体内置网络搜索、编程和图像理解等技能，并能从用户使用中自动学习新技能。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Jeffrey Quesnelle",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Karan Malhotra",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ryan Teknium",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Shivani Mitra",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-74000160f5a289fa",
+            "quote": "Nous Research, the startup behind the open-source Hermes agent, is finalizing a new round of funding"
+          },
+          {
+            "source_id": "FISRC-640d2a53bd0ab084",
+            "quote": "Nous Research, an open-source AI startup behind the Hermes agent, is finalising a new funding round"
+          }
+        ]
+      },
+      "financing": {
+        "round": "B 轮",
+        "amount": "至少 7500 万美元",
+        "total_raised": "约 1.45 亿美元",
+        "announced_at": "2026-07-13",
+        "investors": [
+          {
+            "name": "Robot Ventures",
+            "role": "本轮领投；既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "is finalizing a new round of funding led by Robot Ventures"
+              },
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "it had raised a total of $70 million in funding from investors including Paradigm, Robot Ventures, North Island Ventures, OSS Capital, and Balaji Srinivasan"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Union Square Ventures (USV)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "with significant participation from USV"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Paradigm",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-74000160f5a289fa",
+                "quote": "it had raised a total of $70 million in funding from investors including Paradigm"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-74000160f5a289fa",
+            "quote": "is finalizing a new round of funding led by Robot Ventures, with significant participation from USV and other prominent investors at a $1.5 billion valuation"
+          },
+          {
+            "source_id": "FISRC-74000160f5a289fa",
+            "quote": "The company is raising at least $75 million"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Hermes",
+          "description": "一个开源 AI 智能体，内置网络搜索、编程和图像理解等技能，并能从用户使用中自动学习新技能，无需人工干预。",
+          "target_customers": "开发者和终端用户",
+          "features": [
+            "内置网络搜索、编程和图像理解技能",
+            "从用户使用中自动学习并构建新技能",
+            "可通过 Telegram 和 Discord 与智能体聊天或接收消息",
+            "可在桌面或虚拟专用服务器上本地运行",
+            "提供云托管版本，按月付费"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "Hermes shipped with built-in “skills,” such as web search, coding and image understanding. Furthermore, it was designed to automatically learn from people’s usage and build more skills without manual intervention."
+            },
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "users can automate tasks with Hermes and chat with these agents or receive messages from them in apps like Telegram and Discord."
+            }
+          ],
+          "entity_id": "EN-0db2d631b42da133"
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "OpenClaw",
+          "product": "OpenClaw 智能体",
+          "scenario": "在 PC 上本地运行，代表用户执行任务",
+          "target_customer": "终端用户",
+          "funding_summary": "",
+          "core_difference": "Hermes 内置网络搜索、编程和图像理解等技能，并能从用户使用中自动学习新技能，无需人工干预；而来源未提及 OpenClaw 具备这些内置技能和自动学习能力。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "OpenClaw is an agent that runs locally on a PC and can perform tasks on behalf of the user. One key difference is that Hermes shipped with built-in “skills,” such as web search, coding and image understanding. Furthermore, it was designed to automatically learn from people’s usage and build more skills without manual intervention."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "GitHub 星标数",
+          "value": "约 214,000",
+          "observed_at": "2026-07-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "boasting roughly 214,000 stars"
+            }
+          ]
+        },
+        {
+          "label": "GitHub 复刻数",
+          "value": "近 40,000",
+          "observed_at": "2026-07-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "nearly 40,000 forks"
+            }
+          ]
+        },
+        {
+          "label": "云托管版本月费区间",
+          "value": "20 至 200 美元",
+          "observed_at": "2026-07-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "The hosted version is available via various paid tiers ranging from $20-$200 a month."
+            }
+          ]
+        },
+        {
+          "label": "本轮估值",
+          "value": "15 亿美元",
+          "observed_at": "2026-07-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "at a $1.5 billion valuation"
+            }
+          ]
+        },
+        {
+          "label": "本轮融资前累计融资额",
+          "value": "7000 万美元",
+          "observed_at": "2026-07-13",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "Before this round, it had raised a total of $70 million"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是开源智能体基础设施的快速采用和社区规模。已验证信号包括：Hermes 在 GitHub 上获得约 214,000 星标和近 40,000 复刻，表明开发者社区的高度认可；公司从 A 轮（5000 万美元）到 B 轮（至少 7500 万美元）仅间隔不到三个月，且估值达到 15 亿美元，显示融资节奏极快。但判断的证据边界在于：来源未披露收入、付费客户数或企业合同等商业指标，估值主要基于社区牵引力和投资者兴趣，而非已验证的商业化规模。",
+        "validated_signals": [
+          "Hermes 在 GitHub 上获得约 214,000 星标和近 40,000 复刻，显示大规模开发者采用",
+          "从 A 轮（5000 万美元）到 B 轮（至少 7500 万美元）仅间隔不到三个月，融资节奏极快",
+          "云托管版本已推出 20 至 200 美元的付费层级，初步验证付费意愿"
+        ],
+        "risks": [
+          "来源未披露任何收入、付费客户数或企业合同数据，商业化验证仍处于早期阶段，高估值缺乏营收支撑"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "开源 AI 智能体基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Hermes",
+          "canonical_entity_id": "EN-0db2d631b42da133",
+          "canonical_name": "Hermes Agent",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "Hermes shipped with built-in “skills,” such as web search, coding and image understanding. Furthermore, it was designed to automatically learn from people’s usage and build more skills without manual intervention."
+            },
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "users can automate tasks with Hermes and chat with these agents or receive messages from them in apps like Telegram and Discord."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Jeffrey Quesnelle",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Karan Malhotra",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ryan Teknium",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Shivani Mitra",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "The company was founded in 2023 by Jeffrey Quesnelle, Karan Malhotra, Ryan Teknium, Shivani Mitra."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Robot Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "is finalizing a new round of funding led by Robot Ventures"
+            },
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "it had raised a total of $70 million in funding from investors including Paradigm, Robot Ventures, North Island Ventures, OSS Capital, and Balaji Srinivasan"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Union Square Ventures (USV)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "with significant participation from USV"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Paradigm",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "it had raised a total of $70 million in funding from investors including Paradigm"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenClaw",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-74000160f5a289fa",
+              "quote": "OpenClaw is an agent that runs locally on a PC and can perform tasks on behalf of the user. One key difference is that Hermes shipped with built-in “skills,” such as web search, coding and image understanding. Furthermore, it was designed to automatically learn from people’s usage and build more skills without manual intervention."
+            }
+          ]
+        }
+      ],
+      "funding_history": [],
+      "research_sources": [
+        {
+          "source_id": "FISRC-74000160f5a289fa",
+          "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation",
+          "title": "Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资",
+          "publisher": "TechCrunch：AI（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-14T01:56:51.235Z",
+          "content_hash": "78c1fee941fb6b34",
+          "source_artifact_id": "SA-cbc55b4bf03e297a",
+          "raw_id": "RAW-f15dbf62b931cf0b"
+        },
+        {
+          "source_id": "FISRC-640d2a53bd0ab084",
+          "source_url": "https://timesofindia.indiatimes.com/technology/tech-news/nous-research-maker-of-openclaws-american-rival-hermes-agent-in-talks-to-raise-new-funding-at-1-5-billion-valuation/articleshow/132389419.cms",
+          "title": "Nous Research, maker of OpenClaws' American rival Hermes agent, in talks to raise new funding at $1.5 billion valuation - The Times of India",
+          "publisher": "timesofindia.indiatimes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-27T05:21:26.213Z",
+          "content_hash": "310e4168e4f519d8",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 2,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-27T05:22:52.695Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-27T05:22:52.695Z"
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-90716f36aa32be3e",
@@ -2174,14 +2586,92 @@
   "queue": [
     {
       "event_id": "EV-7a85e21802efd8b2",
-      "company_name": "",
-      "status": "blocked",
-      "problems": [
-        "subject_company_unresolved"
+      "company_name": "Nous Research",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资\" funding company investors product",
+        "\"Nous Research\" \"$1.5 billion\" funding investors round",
+        "\"Nous Research\" product customers case study",
+        "\"Nous Research\" \"Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资\" competitors product use case",
+        "\"Nous Research\" \"$1.5 billion\" investor quote why invested",
+        "\"Nous Research\" \"$1.5 billion\" \"why we invested\" OR \"our investment\""
       ],
-      "queries": [],
-      "attempts": [],
-      "updated_at": "2026-07-26T15:22:14.849Z"
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Nous Research\" \"$1.5 billion\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nous Research\" \"$1.5 billion\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Nous Research\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nous Research\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Nous Research\" \"Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nous Research\" \"Hermes 智能体开发商 Nous Research 正以 15 亿美元估值完成新一轮融资\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Nous Research\" \"$1.5 billion\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nous Research\" \"$1.5 billion\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Nous Research\" \"$1.5 billion\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Nous Research\" \"$1.5 billion\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-27T05:24:41.410Z"
     },
     {
       "event_id": "EV-38cce1b72977ff2b",
@@ -2191,6 +2681,7 @@
         "deepseek_json_quality_failed:investors_missing"
       ],
       "queries": [
+        "\"Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130‑Plus Investors And Generated $400 Million In Interest\" funding company investors product",
         "\"Lyzr AI\" \"$100 Million\" funding investors round",
         "\"Lyzr AI\" product customers case study",
         "\"Lyzr AI\" \"Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130‑Plus Investors And Generated $400 Million In Interest\" competitors product use case",
@@ -2198,6 +2689,18 @@
         "\"Lyzr AI\" \"$100 Million\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130‑Plus Investors And Generated $400 Million In Interest\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Lyzr AI Raises $100 Million Series B After Its Own AI Agent SivaClaw Fielded 130‑Plus Investors And Generated $400 Million In Interest\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
         {
           "provider": "tavily",
           "query": "\"Lyzr AI\" \"$100 Million\" funding investors round",
@@ -2259,7 +2762,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:22:14.849Z"
+      "updated_at": "2026-07-27T05:24:41.410Z"
     },
     {
       "event_id": "EV-80e54c9a390da293",
@@ -2339,81 +2842,14 @@
     },
     {
       "event_id": "EV-b546801d74dc61b1",
-      "company_name": "We've",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"We've\" \"$12.5M\" funding investors round",
-        "\"We've\" product customers case study",
-        "\"We've\" \"We've raised $12.5M to build state-of-the-art Web Search for agents\" competitors product use case",
-        "\"We've\" \"$12.5M\" investor quote why invested",
-        "\"We've\" \"$12.5M\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"We've\" \"$12.5M\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"We've\" \"$12.5M\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"We've\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"We've\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"We've\" \"We've raised $12.5M to build state-of-the-art Web Search for agents\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"We've\" \"We've raised $12.5M to build state-of-the-art Web Search for agents\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"We've\" \"$12.5M\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"We've\" \"$12.5M\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"We've\" \"$12.5M\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"We've\" \"$12.5M\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:22:14.849Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:24:41.410Z"
     },
     {
       "event_id": "EV-1349fd0441b75da0",
@@ -2423,6 +2859,7 @@
         "deepseek_json_quality_failed:investors_missing"
       ],
       "queries": [
+        "\"Display.dev raises €470K to power document collaboration for AI agents - Tech.eu\" funding company investors product",
         "\"Display.dev\" \"€470\" funding investors round",
         "\"Display.dev\" product customers case study",
         "\"Display.dev\" \"Display.dev raises €470K to power document collaboration for AI agents - Tech.eu\" competitors product use case",
@@ -2430,6 +2867,18 @@
         "\"Display.dev\" \"€470\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Display.dev raises €470K to power document collaboration for AI agents - Tech.eu\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Display.dev raises €470K to power document collaboration for AI agents - Tech.eu\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
         {
           "provider": "tavily",
           "query": "\"Display.dev\" \"€470\" funding investors round",
@@ -2491,7 +2940,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:22:14.849Z"
+      "updated_at": "2026-07-27T05:24:41.410Z"
     },
     {
       "event_id": "EV-869c9ea96c58873d",

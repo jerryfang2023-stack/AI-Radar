@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-06-24",
-    "generated_at": "2026-07-26T15:14:34.114Z",
+    "generated_at": "2026-07-27T05:17:13.250Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -10,12 +10,750 @@
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
     "counts": {
       "funding_events": 3,
-      "auto_published": 1,
-      "blocked": 2,
+      "auto_published": 2,
+      "blocked": 1,
       "pending": 0
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-d6cb4942d1df5522",
+      "triggered_by_event_id": "EV-4118202ed0f91895",
+      "as_of_date": "2026-06-24",
+      "company": {
+        "entity_id": "EN-0b79cf2de0ee6b8e",
+        "name": "Groq",
+        "full_name": "Groq",
+        "website": "https://groq.com",
+        "summary": "Groq 是一家 AI 推理云服务供应商，运营全球 AI 推理基础设施，为开发者和企业提供快速、低成本的推理服务。",
+        "headquarters": "San Francisco, CA",
+        "founders": [],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c46abe65803d1634",
+            "quote": "Groq today announced $650 million in new growth capital to accelerate the expansion of its AI inference cloud."
+          },
+          {
+            "source_id": "FISRC-c66ca0ea17b53d98",
+            "quote": "Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资"
+          }
+        ]
+      },
+      "financing": {
+        "round": "新一轮",
+        "amount": "6.5 亿美元",
+        "total_raised": "",
+        "announced_at": "2026-06-22",
+        "investors": [
+          {
+            "name": "Disruptive",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c46abe65803d1634",
+                "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Infinitum",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c46abe65803d1634",
+                "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Blackstone",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Newport Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Deutsche Telekom Capital Partners",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
+              }
+            ],
+            "entity_id": "EN-968e2d5b08687bf4"
+          },
+          {
+            "name": "Cisco",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
+              }
+            ],
+            "entity_id": "EN-e73b79a0b10f8cdb"
+          },
+          {
+            "name": "D1",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Altimeter",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "1789Capital",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-85e8550490e53490",
+                "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Cisco Investments",
+            "role": "D轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6ef693ebacbad168",
+                "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Samsung Catalyst Fund",
+            "role": "D轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6ef693ebacbad168",
+                "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BlackRock Private Equity Partners",
+            "role": "D轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6ef693ebacbad168",
+                "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c46abe65803d1634",
+            "quote": "Groq today announced $650 million in new growth capital to accelerate the expansion of its AI inference cloud."
+          },
+          {
+            "source_id": "FISRC-c66ca0ea17b53d98",
+            "quote": "Groq 宣布完成新一轮 6.5 亿美元（IT之家注：现汇率约合 44.11 亿元人民币）融资"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "GroqCloud",
+          "description": "一个为开发者构建的 AI 推理平台，提供快速响应、可扩展的性能和可预测的成本，支持公共、私有或混合云实例。",
+          "target_customers": "开发者和 AI 原生企业",
+          "features": [
+            "支持 LLM、STT、TTS 和图像转文本模型",
+            "按需提供流行模型",
+            "行业标准框架和集成"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "The AI inference platform built for developers. Fast responses, scalable performance, and costs you can plan for. Available in public, private, or co-cloud instances."
+            },
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "Support for LLMs, STT, TTS, and image-to-text models"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Stash",
+          "industry": "个人金融",
+          "use_case": "利用 Groq 的高速推理为其 AI 资金教练提供支持，实现实时、合规的个性化金融指导。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78b93a03bb4b0a9e",
+              "quote": "Today, Groq powers Stash's entire agent network, the system Parrish describes as a \"virtual company\" working on behalf of each individual user."
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "OpenAI",
+          "product": "GPT-4o mini / API",
+          "scenario": "GPTZero 的 AI 写作反馈功能",
+          "target_customer": "教育工作者、出版商",
+          "funding_summary": "",
+          "core_difference": "GPTZero 从 OpenAI 切换到 Groq 后，端到端响应时间提升 7 倍，年度成本降低 50%。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-10fe972eac4b2d88",
+              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis."
+            }
+          ]
+        },
+        {
+          "name": "OpenAI",
+          "product": "API",
+          "scenario": "Stash 的 AI 资金教练多步骤合规检查",
+          "target_customer": "个人投资者",
+          "funding_summary": "",
+          "core_difference": "Stash 从 OpenAI 切换到 Groq 后，处理的任务量是之前的 12 到 15 倍，同时成本大幅降低。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78b93a03bb4b0a9e",
+              "quote": "With Groq and the OSS models, we're able to achieve the same level of intelligence at dramatically higher speeds. Now we can do 12 to 15 times the tasks we were doing before."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "服务开发者数量",
+          "value": "超过 500 万",
+          "observed_at": "2026-06-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "The company serves more than five million developers and thousands of AI-native companies that consume trillions of tokens each week."
+            }
+          ]
+        },
+        {
+          "label": "数据中心数量",
+          "value": "13 座",
+          "observed_at": "2026-06-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "Today, Groq operates 13 data centers across North America, Europe, the Middle East and APAC."
+            }
+          ]
+        },
+        {
+          "label": "每周 Token 消耗量",
+          "value": "万亿计",
+          "observed_at": "2026-06-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "The company serves more than five million developers and thousands of AI-native companies that consume trillions of tokens each week."
+            }
+          ]
+        },
+        {
+          "label": "目标算力资源",
+          "value": "200MW",
+          "observed_at": "2027-12-31",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "Groq expects to scale toward 200 MW by the end of 2027."
+            }
+          ]
+        },
+        {
+          "label": "GPTZero 端到端响应时间提升",
+          "value": "7 倍",
+          "observed_at": "2026-06-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-10fe972eac4b2d88",
+              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis."
+            }
+          ]
+        },
+        {
+          "label": "GPTZero 年度成本降低",
+          "value": "50%",
+          "observed_at": "2026-06-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-10fe972eac4b2d88",
+              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis."
+            }
+          ]
+        },
+        {
+          "label": "Tenali 成本降低",
+          "value": "10 倍",
+          "observed_at": "2026-06-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5590f39907841311",
+              "quote": "After switching to Groq, Tenali saw an over 25x reduction in latency and 10x cost reduction."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Alex Davis",
+          "quote": "Groq has spent years building the technology, infrastructure, and operational expertise required for the next phase of AI. Today, the company has a proven global platform, a world-class leadership team, and a clear strategy focused on one of the most important opportunities in technology: AI inference at scale.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "Groq has spent years building the technology, infrastructure, and operational expertise required for the next phase of AI. Today, the company has a proven global platform, a world-class leadership team, and a clear strategy focused on one of the most important opportunities in technology: AI inference at scale."
+            }
+          ]
+        },
+        {
+          "speaker": "John Yetimoglu",
+          "quote": "We believe inference will become the largest infrastructure market in technology. As AI moves from experimentation to production, demand for reliable, cost-efficient inference will continue to grow exponentially.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "We believe inference will become the largest infrastructure market in technology. As AI moves from experimentation to production, demand for reliable, cost-efficient inference will continue to grow exponentially."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Disruptive",
+            "speaker": "Alex Davis",
+            "speaker_role": "Groq 董事长兼 Disruptive 创始人兼首席执行官",
+            "rationale": "Disruptive 认为 Groq 拥有经过验证的全球平台、世界级领导团队和清晰的战略，专注于 AI 推理规模化这一最重要的技术机遇，有望成为 AI 经济的基础层。",
+            "quote": "Groq has spent years building the technology, infrastructure, and operational expertise required for the next phase of AI. Today, the company has a proven global platform, a world-class leadership team, and a clear strategy focused on one of the most important opportunities in technology: AI inference at scale. We believe that combination positions Groq to become a foundational layer of the AI economy.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c46abe65803d1634",
+                "quote": "Groq has spent years building the technology, infrastructure, and operational expertise required for the next phase of AI. Today, the company has a proven global platform, a world-class leadership team, and a clear strategy focused on one of the most important opportunities in technology: AI inference at scale. We believe that combination positions Groq to become a foundational layer of the AI economy."
+              }
+            ]
+          },
+          {
+            "institution": "Infinitum",
+            "speaker": "John Yetimoglu",
+            "speaker_role": "Groq 董事会成员兼 Infinitum 创始人兼首席投资官",
+            "rationale": "Infinitum 认为推理将成为技术领域最大的基础设施市场，Groq 拥有差异化的技术、运营专长和全球规模，能够抓住这一机遇。",
+            "quote": "We believe inference will become the largest infrastructure market in technology. As AI moves from experimentation to production, demand for reliable, cost-efficient inference will continue to grow exponentially. Groq has the rare combination of differentiated technology, operating expertise, and global scale required to capitalize on that opportunity.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c46abe65803d1634",
+                "quote": "We believe inference will become the largest infrastructure market in technology. As AI moves from experimentation to production, demand for reliable, cost-efficient inference will continue to grow exponentially. Groq has the rare combination of differentiated technology, operating expertise, and global scale required to capitalize on that opportunity."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是 Groq 从芯片技术授权商向 AI 推理云服务商的战略转型。本轮融资的已验证信号包括：1) 已运营 13 座数据中心，服务超 500 万开发者，Token 周消耗量达万亿级，证明了其商业牵引力；2) 与英伟达的非排他性授权协议为其提供了资金和下一代 LPX 系统，强化了其基础设施壁垒；3) 客户 GPTZero、Tenali 和 Stash 的案例证明了其 LPU 在延迟和成本上相比 OpenAI 等竞品有数量级优势。资本判断 Groq 有机会在“推理”这一比训练大 15-20 倍的市场中占据领先地位，但这一判断的证据边界在于其转型尚在早期，且面临英伟达等巨头的直接竞争。",
+        "validated_signals": [
+          "已运营 13 座数据中心，服务超 500 万开发者，Token 周消耗量达万亿级。",
+          "客户 GPTZero 实现端到端响应时间提升 7 倍，年度成本降低 50%。",
+          "客户 Tenali 实现延迟降低超 25 倍，成本降低 10 倍。",
+          "与英伟达达成非独家技术授权协议，并获得其下一代 LPX 系统支持。"
+        ],
+        "risks": [
+          "Groq 的推理云业务高度依赖其 LPU 芯片，而该技术已非独家授权给英伟达，未来可能面临来自英伟达 LPX 系统的直接竞争。"
+        ],
+        "related_direction_id": "",
+        "sector": "AI 推理云基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "GroqCloud",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "The AI inference platform built for developers. Fast responses, scalable performance, and costs you can plan for. Available in public, private, or co-cloud instances."
+            },
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "Support for LLMs, STT, TTS, and image-to-text models"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Disruptive",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Infinitum",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c46abe65803d1634",
+              "quote": "The round was led by Disruptive and Infinitum, with participation from investors who elected to reinvest in the company."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Blackstone",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e8550490e53490",
+              "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Newport Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e8550490e53490",
+              "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Deutsche Telekom Capital Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e8550490e53490",
+              "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung",
+          "canonical_entity_id": "EN-968e2d5b08687bf4",
+          "canonical_name": "Samsung",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e8550490e53490",
+              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cisco",
+          "canonical_entity_id": "EN-e73b79a0b10f8cdb",
+          "canonical_name": "Cisco",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e8550490e53490",
+              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "D1",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e8550490e53490",
+              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Altimeter",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e8550490e53490",
+              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "1789Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-85e8550490e53490",
+              "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Cisco Investments",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6ef693ebacbad168",
+              "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Samsung Catalyst Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6ef693ebacbad168",
+              "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BlackRock Private Equity Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6ef693ebacbad168",
+              "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Stash",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78b93a03bb4b0a9e",
+              "quote": "Today, Groq powers Stash's entire agent network, the system Parrish describes as a \"virtual company\" working on behalf of each individual user."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-10fe972eac4b2d88",
+              "quote": "With Groq, GPTZero gained a 7x improvement in end-to-end response time and lower time-to-first-token while reducing cost by 50% on an annualized basis."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "OpenAI",
+          "canonical_entity_id": "EN-7d3194f79e645c42",
+          "canonical_name": "OpenAI",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-78b93a03bb4b0a9e",
+              "quote": "With Groq and the OSS models, we're able to achieve the same level of intelligence at dramatically higher speeds. Now we can do 12 to 15 times the tasks we were doing before."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-4118202ed0f91895",
+          "date": "2026-06-23",
+          "title": "Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资",
+          "amount": "6.5 亿",
+          "source_refs": [
+            "SA-bd5416b7b74c8cac"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-c66ca0ea17b53d98",
+          "source_url": "https://www.ithome.com/0/967/312.htm",
+          "title": "Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资",
+          "publisher": "IT之家（RSS）",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-06-24T01:53:52.478Z",
+          "content_hash": "394e38a9fa692709",
+          "source_artifact_id": "SA-bd5416b7b74c8cac",
+          "raw_id": "RAW-6f5d21c2918a7d65"
+        },
+        {
+          "source_id": "FISRC-85e8550490e53490",
+          "source_url": "https://test-news.aibase.com/news/21366",
+          "title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+          "publisher": "test-news.aibase.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:16:10.963Z",
+          "content_hash": "6efab5b69f3f9aa3",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-6ef693ebacbad168",
+          "source_url": "https://economictimes.indiatimes.com/topic/investment-in-groq",
+          "title": "investment in groq: Latest News & Videos, Photos about investment in groq | The Economic Times - Page 1",
+          "publisher": "economictimes.indiatimes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-27T05:16:21.159Z",
+          "content_hash": "49d31e2d6afab8b0",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c46abe65803d1634",
+          "source_url": "https://groq.com/newsroom/groq-raises-usd650m-to-scale-its-ai-inference-cloud-business",
+          "title": "Groq Raises $650M to Scale Its AI Inference Cloud Business | Groq is fast, low cost inference.",
+          "publisher": "groq.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:16:21.798Z",
+          "content_hash": "5d508256a555c742",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-78b93a03bb4b0a9e",
+          "source_url": "https://groq.com/customer-stories/how-stash-unlocked-the-future-of-personal-finance-with-groq",
+          "title": "How Stash AI Unlocked the Future of Personal Finance with Groq | Groq is fast, low cost inference.",
+          "publisher": "groq.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:16:21.938Z",
+          "content_hash": "d01cc6a511514680",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-10fe972eac4b2d88",
+          "source_url": "https://groq.com/customer-stories/why-gptzero-switched-to-groq-7x-faster-50-lower-cost-99-accuracy",
+          "title": "Why GPTZero Switched to Groq: 7X Faster, 50% Lower Cost, 99% Accuracy | Groq is fast, low cost inference.",
+          "publisher": "groq.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:16:22.071Z",
+          "content_hash": "2940d9310ef20fb1",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5590f39907841311",
+          "source_url": "https://groq.com/customer-stories/how-tenali-is-redefining-real-time-sales-with-groq",
+          "title": "How Tenali is Redefining Real-Time Sales with Groq | Groq is fast, low cost inference.",
+          "publisher": "groq.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:16:22.228Z",
+          "content_hash": "a472c12afcd714cc",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-27T05:17:13.205Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-27T05:17:13.205Z"
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-ff5da818d815cfd0",
@@ -508,16 +1246,15 @@
       ],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-07-26T15:14:34.113Z"
+      "updated_at": "2026-07-27T05:17:13.233Z"
     },
     {
       "event_id": "EV-4118202ed0f91895",
       "company_name": "Groq",
-      "status": "blocked",
-      "problems": [
-        "deepseek_json_quality_failed:investors_missing"
-      ],
+      "status": "auto_published",
+      "problems": [],
       "queries": [
+        "\"Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资\" funding company investors product",
         "\"Groq\" \"6.5 亿\" funding investors round",
         "\"Groq\" product customers case study",
         "\"Groq\" \"Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资\" competitors product use case",
@@ -527,6 +1264,18 @@
       "attempts": [
         {
           "provider": "tavily",
+          "query": "\"Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
           "query": "\"Groq\" \"6.5 亿\" funding investors round",
           "status": "failed",
           "error": "tavily_432"
@@ -534,8 +1283,8 @@
         {
           "provider": "exa",
           "query": "\"Groq\" \"6.5 亿\" funding investors round",
-          "status": "failed",
-          "error": "fetch failed"
+          "status": "completed",
+          "error": ""
         },
         {
           "provider": "tavily",
@@ -586,7 +1335,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:14:34.113Z"
+      "updated_at": "2026-07-27T05:17:13.233Z"
     }
   ]
 }

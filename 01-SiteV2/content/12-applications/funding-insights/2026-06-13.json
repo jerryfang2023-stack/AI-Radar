@@ -2,20 +2,507 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-06-13",
-    "generated_at": "2026-07-26T15:10:47.129Z",
+    "generated_at": "2026-07-27T05:16:25.032Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
     "counts": {
-      "funding_events": 6,
-      "auto_published": 6,
+      "funding_events": 7,
+      "auto_published": 7,
       "blocked": 0,
       "pending": 0
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-062db0d45e38151a",
+      "triggered_by_event_id": "EV-0ade039d36e077ae",
+      "as_of_date": "2026-06-13",
+      "company": {
+        "entity_id": "EN-693b1c2b5c9e35f4",
+        "name": "Enterprise AI",
+        "full_name": "Wonderful",
+        "website": "wonderful.ai",
+        "summary": "Wonderful 是一家企业级AI智能体平台，通过将先进的智能体平台与本地化部署团队相结合，为全球复杂企业环境提供生产级AI智能体。公司采用模型无关架构，持续为每个用例选择最佳模型，并已在30多个国家为电信、金融服务、制造和医疗行业的客户部署智能体。",
+        "headquarters": "阿姆斯特丹",
+        "founders": [
+          {
+            "name": "Bar Winkler",
+            "role": "CEO and Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c29f00f067579660",
+                "quote": "said Bar Winkler, CEO and Co-founder of Wonderful"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Roey Lalazar",
+            "role": "CTO and Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c29f00f067579660",
+                "quote": "said Roey Lalazar, CTO and Co-founder"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "350",
+          "observed_at": "2026-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "scaling headcount from 350 to approximately 900 by year-end"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c29f00f067579660",
+            "quote": "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round"
+          },
+          {
+            "source_id": "FISRC-a9a14160ac96ad9a",
+            "quote": "Wonderful is an enterprise AI agent platform made for deploying agents in complex enterprise environments."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series B",
+        "amount": "$150 million",
+        "total_raised": "$286 million",
+        "announced_at": "2026-03-12",
+        "investors": [
+          {
+            "name": "Insight Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c29f00f067579660",
+                "quote": "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Index Ventures",
+            "role": "本轮参投，种子轮和A轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a9a14160ac96ad9a",
+                "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "IVP",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c29f00f067579660",
+                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bessemer Venture Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c29f00f067579660",
+                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Vine Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-c29f00f067579660",
+                "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c29f00f067579660",
+            "quote": "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners, with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures."
+          },
+          {
+            "source_id": "FISRC-54d5efb9221d2b89",
+            "quote": "brings the company’s total funding to $286 million"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Wonderful Enterprise AI Agent Platform",
+          "description": "一个水平化的企业级AI智能体平台，可在多个用例和工作流中激活，而非孤立的单点解决方案。平台采用模型无关架构，持续为每个用例选择最佳模型，并包含基于Harness的评估和自愈系统设计，确保智能体在生产环境中可靠运行。",
+          "target_customers": "电信、金融服务、制造业和医疗保健行业的大型企业",
+          "features": [
+            "模型无关架构，持续基准测试并选择最佳模型",
+            "基于Harness的评估和自愈系统设计",
+            "水平化企业基础，支持多用例和工作流激活",
+            "本地嵌入式部署团队，实现快速生产部署"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions. The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves. It incorporates state-of-the-art engineering practices, including harness-based evaluation and self-healing system design, to ensure agents remain reliable in production."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "Salesforce",
+          "product": "Agentforce",
+          "scenario": "企业客户服务和运营自动化",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "Salesforce拥有更深的现有企业关系和更大的销售组织，但Wonderful采用超本地化、多语言AI智能体的非对称策略，优先服务非英语市场，而Salesforce等现有厂商受限于传统架构和英语市场假设。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-54d5efb9221d2b89",
+              "quote": "incumbent players like Salesforce (with its Agentforce platform), Microsoft (Copilot for enterprise), and contact center veterans like Genesys and NICE are the most directly threatened. These companies have deeper existing enterprise relationships and larger sales organizations, but they also carry the weight of legacy architecture and English-language market assumptions. Wonderful’s asymmetric bet on hyper-local, multilingual AI agents may prove harder to replicate than it appears."
+            }
+          ]
+        },
+        {
+          "name": "Microsoft",
+          "product": "Copilot for enterprise",
+          "scenario": "企业生产力与工作流自动化",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "Microsoft拥有更深的企业关系和更大的销售组织，但Wonderful采用超本地化、多语言AI智能体的非对称策略，优先服务非英语市场，而Microsoft等现有厂商受限于传统架构和英语市场假设。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-54d5efb9221d2b89",
+              "quote": "incumbent players like Salesforce (with its Agentforce platform), Microsoft (Copilot for enterprise), and contact center veterans like Genesys and NICE are the most directly threatened. These companies have deeper existing enterprise relationships and larger sales organizations, but they also carry the weight of legacy architecture and English-language market assumptions. Wonderful’s asymmetric bet on hyper-local, multilingual AI agents may prove harder to replicate than it appears."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "估值",
+          "value": "$2 billion",
+          "observed_at": "2026-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a9a14160ac96ad9a",
+              "quote": "The $150 million Series B round values the company at $2 billion"
+            }
+          ]
+        },
+        {
+          "label": "覆盖国家数",
+          "value": "30+",
+          "observed_at": "2026-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "scaling to more than 30 countries across Europe, the Middle East, Asia-Pacific, and Latin America"
+            }
+          ]
+        },
+        {
+          "label": "处理时间降低",
+          "value": "up to 60%",
+          "observed_at": "2026-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "reducing handling times by up to 60%"
+            }
+          ]
+        },
+        {
+          "label": "问题自助解决率",
+          "value": "above 80%",
+          "observed_at": "2026-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "achieving containment rates above 80%"
+            }
+          ]
+        },
+        {
+          "label": "单用例三月内扩展率",
+          "value": "over 70%",
+          "observed_at": "2026-03",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "Over 70% of enterprises that begin with a single use case expand into additional workflows within the first three months"
+            }
+          ]
+        },
+        {
+          "label": "年底预计员工数",
+          "value": "approximately 900",
+          "observed_at": "2026-12",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "scaling headcount from 350 to approximately 900 by year-end"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Bar Winkler",
+          "quote": "In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization’s unique environment.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization’s unique environment"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Index Ventures",
+            "speaker": "Hannah Seal and Juriaan Duizendstraal",
+            "speaker_role": "Partners",
+            "rationale": "认为Wonderful团队极其出色，能够在进入的每个地区赢得最大企业客户并招募最优秀的技术人才，其超本地化部署模式使智能体在数天或数周内从试点进入全面生产，而非数月。",
+            "quote": "It’s not often that we make three investments in a company within a year. But it’s also a rarity for a company to scale across more than 30 countries and reach a $2 billion valuation in just eight months since emerging from stealth. What’s even rarer is for a startup to both land the largest enterprises in every geography it enters and to recruit the very best technical teams and managers available.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-a9a14160ac96ad9a",
+                "quote": "It’s not often that we make three investments in a company within a year. But it’s also a rarity for a company to scale across more than 30 countries and reach a $2 billion valuation in just eight months since emerging from stealth. What’s even rarer is for a startup to both land the largest enterprises in every geography it enters and to recruit the very best technical teams and managers available."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“企业AI部署基础设施”而非模型能力。Insight Partners作为企业软件专业投资者领投1.5亿美元，表明市场认为AI的瓶颈已从模型能力转向部署执行。Wonderful的模型无关架构和本地化部署团队解决了企业AI落地的“最后一公里”问题——复杂系统集成、监管合规和利益相关者协调。当前2亿美元估值基于已验证信号：8个月内扩展至30多个国家、覆盖电信和金融等受监管行业的生产级部署、超过70%的客户在三个月内扩展至额外工作流。但判断的证据边界在于：这些信号来自公司公告和投资者声明，缺乏独立验证的ARR数据或客户留存指标。",
+        "validated_signals": [
+          "8个月内从隐身模式扩展至30多个国家",
+          "在电信、金融服务、制造业和医疗保健等受监管行业实现生产级部署",
+          "超过70%的企业在三个月内从单一用例扩展至额外工作流",
+          "智能体从试点到全面生产仅需数天或数周，而非数月",
+          "处理时间降低高达60%，问题自助解决率超过80%"
+        ],
+        "risks": [
+          "基础模型商品化可能摧毁平台差异化：若OpenAI或Anthropic推出具有可比部署基础设施的企业智能体框架，Wonderful的护城河将受到侵蚀。尽管模型无关架构可缓解此风险，但若基础模型提供商开始提供白手套部署服务，竞争格局将发生根本性转变。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业AI智能体平台"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Wonderful Enterprise AI Agent Platform",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions. The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves. It incorporates state-of-the-art engineering practices, including harness-based evaluation and self-healing system design, to ensure agents remain reliable in production."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Bar Winkler",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "said Bar Winkler, CEO and Co-founder of Wonderful"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Roey Lalazar",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "said Roey Lalazar, CTO and Co-founder"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Insight Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "Wonderful, the enterprise AI agent platform, today announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Index Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-a9a14160ac96ad9a",
+              "quote": "At Index, we’re tripling down on Wonderful, participating in the Series B round after leading the company’s $100 million Series A and its $34 million Seed round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "IVP",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bessemer Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Vine Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c29f00f067579660",
+              "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Salesforce",
+          "canonical_entity_id": "EN-3ccbd9105a45d8fc",
+          "canonical_name": "Salesforce",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-54d5efb9221d2b89",
+              "quote": "incumbent players like Salesforce (with its Agentforce platform), Microsoft (Copilot for enterprise), and contact center veterans like Genesys and NICE are the most directly threatened. These companies have deeper existing enterprise relationships and larger sales organizations, but they also carry the weight of legacy architecture and English-language market assumptions. Wonderful’s asymmetric bet on hyper-local, multilingual AI agents may prove harder to replicate than it appears."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Microsoft",
+          "canonical_entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-54d5efb9221d2b89",
+              "quote": "incumbent players like Salesforce (with its Agentforce platform), Microsoft (Copilot for enterprise), and contact center veterans like Genesys and NICE are the most directly threatened. These companies have deeper existing enterprise relationships and larger sales organizations, but they also carry the weight of legacy architecture and English-language market assumptions. Wonderful’s asymmetric bet on hyper-local, multilingual AI agents may prove harder to replicate than it appears."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-0ade039d36e077ae",
+          "date": "2026-06-13",
+          "title": "B轮企业AI智能体：Insight Partners 1.5亿美元",
+          "amount": "$150 million",
+          "source_refs": [
+            "SA-b8df7035787a9d4a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-a9a14160ac96ad9a",
+          "source_url": "https://www.indexventures.com/perspectives/index-ventures-triples-down-as-wonderful-raises-150m-series-b-to-scale-its-hyper-local-enterprise-ai-platform/",
+          "title": "Wonderful Raises $150M Series B to... | Index Ventures",
+          "publisher": "indexventures.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:15:33.346Z",
+          "content_hash": "a1eb7c9802c59903",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-54d5efb9221d2b89",
+          "source_url": "https://goodmunity.com/funding/wonderful-raises-150m-series-b-at-2b-valuation-the-enterprise-ai-agent-platform-shaking-up-global-markets-in-2026/",
+          "title": "Wonderful Raises $150M Series B at $2B Valuation: The Enterprise AI Agent Platform Shaking Up Global Markets in 2026 - From conversations to real-world change",
+          "publisher": "goodmunity.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:15:34.186Z",
+          "content_hash": "13e42a9153b93318",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c29f00f067579660",
+          "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
+          "title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
+          "publisher": "insightpartners.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:15:39.140Z",
+          "content_hash": "67f409ee5b146b1d",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-27T05:16:24.946Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-27T05:16:24.946Z"
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-5e7a360baa1c7aca",
@@ -4713,6 +5200,95 @@
         }
       ],
       "updated_at": "2026-07-26T14:31:39.315Z"
+    },
+    {
+      "event_id": "EV-0ade039d36e077ae",
+      "company_name": "Enterprise AI",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Series B Enterprise AI Agents: Insight Partners $150M\" funding company investors product",
+        "\"Enterprise AI\" \"$150 million\" funding investors round",
+        "\"Enterprise AI\" product customers case study",
+        "\"Enterprise AI\" \"Series B Enterprise AI Agents: Insight Partners $150M\" competitors product use case",
+        "\"Enterprise AI\" \"$150 million\" investor quote why invested",
+        "\"Enterprise AI\" \"$150 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Series B Enterprise AI Agents: Insight Partners $150M\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Series B Enterprise AI Agents: Insight Partners $150M\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Enterprise AI\" \"$150 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Enterprise AI\" \"$150 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Enterprise AI\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Enterprise AI\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Enterprise AI\" \"Series B Enterprise AI Agents: Insight Partners $150M\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Enterprise AI\" \"Series B Enterprise AI Agents: Insight Partners $150M\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Enterprise AI\" \"$150 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Enterprise AI\" \"$150 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Enterprise AI\" \"$150 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Enterprise AI\" \"$150 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-27T05:16:25.003Z"
     },
     {
       "event_id": "EV-d7f561bc4f6cb02d",

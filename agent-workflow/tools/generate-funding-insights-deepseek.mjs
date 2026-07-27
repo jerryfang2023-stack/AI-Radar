@@ -233,6 +233,10 @@ async function researchSources(bundle, event, company) {
   const siteHint = companyHost ? `site:${companyHost} ` : "";
   const queries = [
     {
+      intent: "event_discovery",
+      query: clean(`"${identityHint}" funding company investors product`),
+    },
+    {
       intent: "funding",
       query: clean(`"${company.canonical_name}" "${amountHint}" funding investors round`),
     },
@@ -540,7 +544,7 @@ function buildCard(event, company, payload, sources, result, resolver) {
 }
 
 async function processEvent(bundle, event, entityIndex) {
-  const company = subjectCompanyForEvent(event, bundle.entities);
+  const company = subjectCompanyForEvent(event, bundle.entities, entityIndex);
   if (!company) return { event_id: event.event_id, status: "blocked", problems: ["subject_company_unresolved"] };
   const research = await researchSources(bundle, event, company);
   if (research.sources.length < 2) {
@@ -652,6 +656,17 @@ async function main() {
         exa: Boolean(process.env.EXA_API_KEY),
         deepseek: Boolean(process.env.DEEPSEEK_API_KEY),
       },
+    }, null, 2));
+    return;
+  }
+  if (!pending.length) {
+    console.log(JSON.stringify({
+      ok: true,
+      mode: "write",
+      date,
+      reused: selectedEvents.length,
+      pending: 0,
+      output: path.relative(root, output).replace(/\\/gu, "/"),
     }, null, 2));
     return;
   }

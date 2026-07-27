@@ -1,36 +1,36 @@
 {
   "schema_version": "FUNDING-INSIGHT-HISTORICAL-BACKFILL-V1.0",
-  "generated_at": "2026-07-26T15:23:44.394Z",
+  "generated_at": "2026-07-27T05:24:41.902Z",
   "range": {
     "from": "2026-05-20",
-    "to": "2026-07-26"
+    "to": "2026-07-27"
   },
   "counts": {
-    "funding_event_occurrences": 285,
-    "unique_funding_events": 246,
-    "selected_events": 246,
-    "duplicate_occurrences_removed": 39,
-    "auto_published": 203,
-    "blocked": 43,
+    "funding_event_occurrences": 288,
+    "unique_funding_events": 248,
+    "selected_events": 248,
+    "duplicate_occurrences_removed": 40,
+    "auto_published": 208,
+    "blocked": 40,
     "pending": 0
   },
   "blocked": [
     {
       "event_id": "EV-3b1613cedea7dad4",
       "problems": [
-        "deepseek_json_quality_failed:investors_missing"
+        "subject_company_unresolved"
       ]
     },
     {
       "event_id": "EV-4a162c41bb82f325",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ]
     },
     {
       "event_id": "EV-86489eda802ffc19",
       "problems": [
-        "deepseek_json_quality_failed:funding_round_missing|funding_amount_missing|investors_missing"
+        "subject_company_unresolved"
       ]
     },
     {
@@ -48,7 +48,7 @@
     {
       "event_id": "EV-cc7020e12bcaa0d7",
       "problems": [
-        "deepseek_json_quality_failed:company_evidence_missing|investors_missing|products_missing"
+        "subject_company_unresolved"
       ]
     },
     {
@@ -70,21 +70,15 @@
       ]
     },
     {
-      "event_id": "EV-b1138bccf5ccd86c",
-      "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
-      ]
-    },
-    {
       "event_id": "EV-02548003157849bb",
       "problems": [
-        "deepseek_json_quality_failed:products_missing|cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ]
     },
     {
       "event_id": "EV-43b56d49df9a73a2",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ]
     },
     {
@@ -96,7 +90,7 @@
     {
       "event_id": "EV-189e43cb9fea8e1a",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ]
     },
     {
@@ -109,12 +103,6 @@
       "event_id": "EV-c5bebc78fa35d074",
       "problems": [
         "subject_company_unresolved"
-      ]
-    },
-    {
-      "event_id": "EV-4118202ed0f91895",
-      "problems": [
-        "deepseek_json_quality_failed:investors_missing"
       ]
     },
     {
@@ -132,31 +120,25 @@
     {
       "event_id": "EV-8aa51e324eca8fc2",
       "problems": [
-        "subject_company_unresolved"
+        "deepseek_json_quality_failed:investors_missing"
       ]
     },
     {
       "event_id": "EV-614fb5bb3cfc2519",
       "problems": [
-        "deepseek_json_quality_failed:products_missing|cited_research_sources_insufficient"
-      ]
-    },
-    {
-      "event_id": "EV-26613b5bff756274",
-      "problems": [
-        "deepseek_json_quality_failed:investors_missing"
+        "subject_company_unresolved"
       ]
     },
     {
       "event_id": "EV-9ddcfd9f61c25158",
       "problems": [
-        "deepseek_json_quality_failed:company_evidence_missing"
+        "deepseek_json_quality_failed:company_evidence_missing|products_missing"
       ]
     },
     {
       "event_id": "EV-4b8064b1139e1724",
       "problems": [
-        "deepseek_json_quality_failed:funding_round_missing|funding_amount_missing|investors_missing"
+        "subject_company_unresolved"
       ]
     },
     {
@@ -168,7 +150,7 @@
     {
       "event_id": "EV-8cf189b07a257c1c",
       "problems": [
-        "deepseek_json_quality_failed:investors_missing"
+        "deepseek_json_quality_failed:company_evidence_missing|investors_missing"
       ]
     },
     {
@@ -180,19 +162,19 @@
     {
       "event_id": "EV-974a6b7d0e0efef2",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ]
     },
     {
       "event_id": "EV-15cc72d7c78cad3d",
       "problems": [
-        "deepseek_json_quality_failed:sector_not_chinese|cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ]
     },
     {
       "event_id": "EV-640c5ea9f4fa2780",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ]
     },
     {
@@ -226,15 +208,9 @@
       ]
     },
     {
-      "event_id": "EV-7a85e21802efd8b2",
-      "problems": [
-        "subject_company_unresolved"
-      ]
-    },
-    {
       "event_id": "EV-b546801d74dc61b1",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ]
     },
     {
@@ -244,21 +220,27 @@
       ]
     },
     {
-      "event_id": "EV-0b7f11c0c18b8bf4",
+      "event_id": "EV-f9fe9f781c6ce583",
       "problems": [
-        "deepseek_json_quality_failed:funding_amount_missing|investors_missing"
+        "subject_company_unresolved"
+      ]
+    },
+    {
+      "event_id": "EV-c84b6d7338f87990",
+      "problems": [
+        "subject_company_unresolved"
       ]
     },
     {
       "event_id": "EV-d7a7244d620a2142",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ]
     },
     {
       "event_id": "EV-14cc7f194f3e5af8",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ]
     },
     {

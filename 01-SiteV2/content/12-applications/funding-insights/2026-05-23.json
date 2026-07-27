@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-05-23",
-    "generated_at": "2026-07-26T15:08:35.908Z",
+    "generated_at": "2026-07-27T05:14:25.802Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -3358,81 +3358,14 @@
     },
     {
       "event_id": "EV-3b1613cedea7dad4",
-      "company_name": "Multiplayer AI startup Dust",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:investors_missing"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Multiplayer AI startup Dust\" \"$40M\" funding investors round",
-        "\"Multiplayer AI startup Dust\" product customers case study",
-        "\"Multiplayer AI startup Dust\" \"Multiplayer AI startup Dust raises $40M to help enterprises move beyond isolated AI assistants - SiliconANGLE\" competitors product use case",
-        "\"Multiplayer AI startup Dust\" \"$40M\" investor quote why invested",
-        "\"Multiplayer AI startup Dust\" \"$40M\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Multiplayer AI startup Dust\" \"$40M\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Multiplayer AI startup Dust\" \"$40M\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Multiplayer AI startup Dust\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Multiplayer AI startup Dust\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Multiplayer AI startup Dust\" \"Multiplayer AI startup Dust raises $40M to help enterprises move beyond isolated AI assistants - SiliconANGLE\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Multiplayer AI startup Dust\" \"Multiplayer AI startup Dust raises $40M to help enterprises move beyond isolated AI assistants - SiliconANGLE\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Multiplayer AI startup Dust\" \"$40M\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Multiplayer AI startup Dust\" \"$40M\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Multiplayer AI startup Dust\" \"$40M\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Multiplayer AI startup Dust\" \"$40M\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:08:35.907Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:14:25.793Z"
     },
     {
       "event_id": "EV-e0ecb5f81a273447",

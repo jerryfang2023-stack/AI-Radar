@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-06-26",
-    "generated_at": "2026-07-26T15:15:44.997Z",
+    "generated_at": "2026-07-27T05:17:13.725Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -2592,81 +2592,14 @@
   "queue": [
     {
       "event_id": "EV-614fb5bb3cfc2519",
-      "company_name": "Samsung",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:products_missing|cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Samsung\" \"$50 million\" funding investors round",
-        "\"Samsung\" product customers case study",
-        "\"Samsung\" \"Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体\" competitors product use case",
-        "\"Samsung\" \"$50 million\" investor quote why invested",
-        "\"Samsung\" \"$50 million\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Samsung\" \"$50 million\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Samsung\" \"$50 million\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Samsung\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Samsung\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Samsung\" \"Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Samsung\" \"Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Samsung\" \"$50 million\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Samsung\" \"$50 million\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Samsung\" \"$50 million\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Samsung\" \"$50 million\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:15:44.969Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:17:13.701Z"
     },
     {
       "event_id": "EV-7283de3f3a76d22b",
