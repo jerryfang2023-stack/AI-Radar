@@ -31,6 +31,9 @@ test("source-title integrity only requires Chinese output when translation is ne
     /if \(sourceTitleNeedsChineseTranslation\(original\) && !translationLooksUsable\)/u,
   );
   assert.doesNotMatch(text, /if \(!chinese \|\|/u);
+  assert.match(text, /item\.data_date === mapping\.card_date/u);
+  assert.match(text, /titleKey\(item\.title_zh\) === titleKey\(cardTitle\)/u);
+  assert.match(text, /titleKey\(item\.title_original \|\| item\.title\) === titleKey\(cardSourceTitle\)/u);
 });
 
 test("entity review finalization does not retain stale Entire claim ids", () => {

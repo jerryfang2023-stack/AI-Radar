@@ -16,16 +16,8 @@ function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
 }
 
-function normalizeUrl(value = "") {
-  try {
-    const url = new URL(String(value || ""));
-    url.hash = "";
-    url.search = "";
-    url.hostname = url.hostname.replace(/^www\./u, "");
-    return url.toString().replace(/\/+$/u, "").toLowerCase();
-  } catch {
-    return String(value || "").trim().replace(/\/+$/u, "").toLowerCase();
-  }
+function titleKey(value = "") {
+  return String(value || "").normalize("NFKC").replace(/\s+/gu, " ").trim().toLocaleLowerCase();
 }
 
 function frontmatterValue(text, field) {
@@ -44,8 +36,9 @@ function firstHeading(text) {
   return text.slice(frontmatterEnd > 0 ? frontmatterEnd + 4 : 0).match(/^#\s+(.+)$/mu)?.[1]?.trim() || "";
 }
 
-const rawById = new Map();
+const rawVersionsById = new Map();
 const rawPathById = new Map();
+const rawPathByDateAndId = new Map();
 const rawBySourceArtifact = new Map();
 const eventTargetRawIds = new Set();
 const eventChecks = [];
@@ -61,11 +54,15 @@ for (const date of dates) {
   const events = readJson(path.join(dir, "canonical-events.json"));
   const dateRawByArtifact = new Map();
   for (const raw of raws) {
-    rawById.set(raw.raw_id, { ...raw, data_date: date });
+    if (!rawVersionsById.has(raw.raw_id)) rawVersionsById.set(raw.raw_id, []);
+    rawVersionsById.get(raw.raw_id).push({ ...raw, data_date: date });
     rawBySourceArtifact.set(raw.source_artifact_id, raw.raw_id);
     dateRawByArtifact.set(raw.source_artifact_id, raw);
   }
-  for (const mapping of mappings) rawPathById.set(mapping.raw_id, mapping.legacy_path);
+  for (const mapping of mappings) {
+    rawPathById.set(mapping.raw_id, mapping.legacy_path);
+    rawPathByDateAndId.set(`${date}|${mapping.raw_id}`, mapping.legacy_path);
+  }
   for (const event of events) {
     const sources = (event.source_refs || []).map((ref) => dateRawByArtifact.get(ref)).filter(Boolean);
     for (const ref of event.source_refs || []) {
@@ -103,20 +100,25 @@ for (const rawId of targetRawIds) {
 }
 
 for (const mapping of legacy.mappings || []) {
-  const sourceUrls = new Set((mapping.source_urls || []).map(normalizeUrl));
-  const candidates = (mapping.raw_ids || []).map((rawId) => rawById.get(rawId)).filter(Boolean);
-  const raw = candidates.find((item) => sourceUrls.has(normalizeUrl(item.source_url || item.canonical_url)))
-    || (!sourceUrls.size ? candidates.find((item) => item.data_date === mapping.card_date) || candidates[0] : null);
-  const rawPath = raw ? rawPathById.get(raw.raw_id) : "";
-  const source = rawPath && fs.existsSync(path.join(root, rawPath)) ? readJson(path.join(root, rawPath)) : null;
-  const expected = String(source?.title_zh || "").trim();
   const cardFile = path.join(root, mapping.legacy_path);
   if (!fs.existsSync(cardFile)) {
     violations.push({ type: "card_source_missing", path: mapping.legacy_path });
     continue;
   }
-  if (!expected) continue;
   const text = fs.readFileSync(cardFile, "utf8");
+  const cardSourceTitle = frontmatterValue(text, "source_title");
+  const cardTitle = frontmatterValue(text, "title");
+  const candidates = (mapping.raw_ids || [])
+    .flatMap((rawId) => rawVersionsById.get(rawId) || [])
+    .filter((item) => item.data_date === mapping.card_date);
+  const raw = candidates.find((item) => titleKey(item.title_zh) === titleKey(cardTitle))
+    || candidates.find((item) => titleKey(item.title_original || item.title) === titleKey(cardSourceTitle));
+  const rawPath = raw
+    ? rawPathByDateAndId.get(`${raw.data_date}|${raw.raw_id}`) || rawPathById.get(raw.raw_id)
+    : "";
+  const source = rawPath && fs.existsSync(path.join(root, rawPath)) ? readJson(path.join(root, rawPath)) : null;
+  const expected = String(source?.title_zh || cardTitle).trim();
+  if (!expected) continue;
   const values = {
     title: frontmatterValue(text, "title"),
     heading: firstHeading(text),
