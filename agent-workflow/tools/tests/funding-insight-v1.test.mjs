@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import childProcess from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -13,6 +14,7 @@ import {
   subjectCompanyForEvent,
 } from "../funding-insight-v1-utils.mjs";
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
+import { inspectFundingInsightWork } from "../inspect-funding-insight-work.mjs";
 import { buildFundingInsightsFrontstage } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
@@ -72,11 +74,116 @@ function validCard() {
   };
 }
 
+function writeDailyFundingFixture(projectRoot, events) {
+  const dir = path.join(projectRoot, "01-SiteV2/content/11-databases/data-center-v4/2026-07-26");
+  fs.mkdirSync(dir, { recursive: true });
+  for (const [file, value] of [
+    ["canonical-events.json", events],
+    ["claims.json", []],
+    ["entities.json", []],
+    ["raw-documents.json", []],
+    ["source-artifacts.json", []],
+  ]) {
+    fs.writeFileSync(path.join(dir, file), `${JSON.stringify(value)}\n`, "utf8");
+  }
+}
+
 test("自动发布门禁要求明确投资方及产品证据", () => {
   const card = validCard();
   assert.deepEqual(fundingInsightProblems(card), []);
   card.financing.investors = [];
   assert.ok(fundingInsightProblems(card).includes("investors_missing"));
+});
+
+test("融资卡工作检查器只调度尚未发布的已验证融资事件", () => {
+  const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-funding-work-"));
+  try {
+    writeDailyFundingFixture(projectRoot, [{
+      event_id: "EV-1",
+      event_type: "funding",
+      publication_status: "verified",
+      display_title_zh: "Acme 完成 A 轮融资",
+    }]);
+    const pending = inspectFundingInsightWork(projectRoot, "2026-07-26");
+    assert.equal(pending.needs_generation, true);
+    assert.deepEqual(pending.pending_event_ids, ["EV-1"]);
+
+    const output = path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/2026-07-26.json");
+    fs.mkdirSync(path.dirname(output), { recursive: true });
+    fs.writeFileSync(output, `${JSON.stringify({ cards: [validCard()], queue: [] })}\n`, "utf8");
+    const current = inspectFundingInsightWork(projectRoot, "2026-07-26");
+    assert.equal(current.needs_generation, false);
+    assert.equal(current.auto_published, 1);
+    assert.deepEqual(current.pending_event_ids, []);
+
+    const invalid = validCard();
+    invalid.financing.investors = [];
+    fs.writeFileSync(output, `${JSON.stringify({ cards: [invalid], queue: [] })}\n`, "utf8");
+    const repair = inspectFundingInsightWork(projectRoot, "2026-07-26");
+    assert.equal(repair.needs_generation, true);
+    assert.deepEqual(repair.pending_event_ids, ["EV-1"]);
+  } finally {
+    fs.rmSync(projectRoot, { recursive: true, force: true });
+  }
+});
+
+test("没有融资事件时生成器无需搜索或模型密钥也会写出可验证空包", () => {
+  const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-funding-empty-"));
+  try {
+    writeDailyFundingFixture(projectRoot, []);
+    const generator = path.join(root, "agent-workflow/tools/generate-funding-insights-deepseek.mjs");
+    childProcess.execFileSync(process.execPath, [
+      generator,
+      "--date=2026-07-26",
+      "--write=true",
+    ], {
+      cwd: projectRoot,
+      env: {
+        ...process.env,
+        DEEPSEEK_API_KEY: "",
+        TAVILY_API_KEY: "",
+        EXA_API_KEY: "",
+      },
+      stdio: "pipe",
+    });
+    const output = JSON.parse(fs.readFileSync(
+      path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/2026-07-26.json"),
+      "utf8",
+    ));
+    assert.deepEqual(output.meta.counts, {
+      funding_events: 0,
+      auto_published: 0,
+      blocked: 0,
+      pending: 0,
+    });
+    assert.deepEqual(output.cards, []);
+    assert.deepEqual(output.queue, []);
+  } finally {
+    fs.rmSync(projectRoot, { recursive: true, force: true });
+  }
+});
+
+test("融资透视自动化在商业事件工作流后增量研究、同步并发布", () => {
+  const workflow = fs.readFileSync(
+    path.join(root, ".github/workflows/daily-funding-insights-pr.yml"),
+    "utf8",
+  );
+  const pagesWorkflow = fs.readFileSync(path.join(root, ".github/workflows/github-pages.yml"), "utf8");
+  assert.match(workflow, /workflow_run:[\s\S]*WaveSight Business Signals PR/u);
+  assert.match(workflow, /inspect-funding-insight-work\.mjs/u);
+  assert.match(workflow, /TAVILY_DISABLED: "false"/u);
+  assert.match(workflow, /generate-funding-insights-deepseek\.mjs[\s\S]*assert-funding-insights-v1\.mjs[\s\S]*build-funding-insights-frontstage\.mjs[\s\S]*sync-funding-insights-to-obsidian\.mjs/u);
+  assert.match(workflow, /automation\/funding-insights-\$\{RUN_DATE\}/u);
+  assert.match(workflow, /push:[\s\S]*canonical-events\.json/u);
+  assert.match(workflow, /startsWith\(github\.event\.head_commit\.message, 'Persist business signals for '\)/u);
+  assert.match(workflow, /gh workflow run daily-funding-insights-pr\.yml --ref main -f date=/u);
+  assert.match(workflow, /group: wavesight-funding-insights-\$\{\{ needs\.resolve-date\.outputs\.date \}\}/u);
+  assert.match(workflow, /Wait for Funding Insights PR to reach main/u);
+  assert.match(workflow, /gh workflow run github-pages\.yml --ref main -f source_sha=/u);
+  assert.match(workflow, /gh run watch "\$run_id" --exit-status/u);
+  assert.match(pagesWorkflow, /run-name: Deploy Frontstage to GitHub Pages \$\{\{ inputs\.source_sha \|\| github\.sha \}\}/u);
+  const fundingJob = workflow.slice(workflow.indexOf("  funding-insights-pr:"));
+  assert.doesNotMatch(fundingJob, /steps\.run-date\.outputs\.date/u);
 });
 
 test("融资主体解析优先选择被投公司而不是投资方", () => {
@@ -312,7 +419,7 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     blocked.triggered_by_event_id = "EV-2";
     blocked.financing.investors = [];
     fs.writeFileSync(path.join(bundleDir, "2026-07-26.json"), JSON.stringify({
-      meta: { date: "2026-07-26" },
+      meta: { date: "2026-07-26", generated_at: "2026-07-26T09:00:00.000Z" },
       cards: [validCard(), blocked],
       queue: [],
     }));
@@ -325,7 +432,10 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
       people: [],
     }));
     const data = buildFundingInsightsFrontstage(tempRoot);
+    const rebuilt = buildFundingInsightsFrontstage(tempRoot);
     assert.equal(data.cards.length, 1);
+    assert.equal(data.meta.generated_at, "2026-07-26T09:00:00.000Z");
+    assert.equal(rebuilt.meta.generated_at, data.meta.generated_at);
     assert.equal(data.cards[0].financing.investors[0].name, "Northstar Ventures");
     assert.match(data.cards[0].links.company, /detail=entity&id=EN-1/u);
     assert.match(data.cards[0].links.relation_map, /view=relations&entity=EN-1/u);

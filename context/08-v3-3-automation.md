@@ -49,10 +49,27 @@ Execution order:
 4. Persist Raw / Pool assets.
 5. Build SourceArtifact / RawDocument / Claim / Entity / CanonicalEvent and FDE / hardware / TAG-V4 projections.
 6. Run the Data Center V4 integrity gate and materialize V4 JSONL tables.
-7. Generate Signal Card, relationship, and trend assets only for V3 internal compatibility, then run their existing gates.
-8. Build and gate V4 frontstage projections, Trend Radar factual-change data, Industry Reports application data, and operations data.
-9. Run the pre-commit freshness gate and write the persistent asset manifest.
-10. Push the automation branch, create or update the PR, merge after gates pass, and deploy through GitHub Pages.
+7. Immediately attempt Funding Insights generation from the verified daily funding events. This downstream attempt may fail closed without blocking accepted V4 facts.
+8. Generate Signal Card and relationship assets only for V3 internal compatibility, then run their existing gates.
+9. Build and gate V4 frontstage projections, Trend Radar factual-change data, Industry Reports application data, and operations data.
+10. Run the pre-commit freshness gate and write the persistent asset manifest.
+11. Push the automation branch, create or update the PR, merge after gates pass, and deploy through GitHub Pages.
+12. After the Business Signals workflow completes, or whenever a canonical-event file reaches `main`, `.github/workflows/daily-funding-insights-pr.yml` rechecks the merged verified event bundle. It retries only funding events without a valid published card, deterministically rebuilds the combined projection, syncs `01-SiteV2/knowledge/04-Funding-Insights`, publishes through its own PR, waits for the merge, and explicitly dispatches and verifies GitHub Pages when assets changed.
+
+## Funding Insights Event Trigger
+
+Workflow: `.github/workflows/daily-funding-insights-pr.yml`
+
+Funding Insights is event-triggered but remains downstream from the factual layer:
+
+1. A funding candidate first completes SourceArtifact -> RawDocument -> exact-span Claim -> Entity -> verified CanonicalEvent.
+2. The main Business Signals workflow makes an immediate Funding Insights attempt after the V4 integrity and materialization gates.
+3. The Funding Insights generator uses Tavily and Exa discovery when configured, captures original page bodies, and sends only captured evidence plus the verified event to DeepSeek V4 Pro.
+4. Missing investors, fewer than two cited captured sources, unresolved companies, missing products, invalid exact quotes, or schema failures keep the event in the application queue and out of `funding-insights-v1.json`.
+5. The independent downstream workflow runs after the Business Signals workflow and on canonical-event changes reaching `main`. Its inspector skips already published event IDs and retries only missing or blocked current-date events.
+6. Accepted cards deterministically rebuild `01-SiteV2/site/data/funding-insights-v1.json`, sync the Obsidian funding-card directory, merge through `automation/funding-insights-<date>`, and explicitly dispatch a GitHub Pages run from `main`; the workflow does not report completion until that deploy passes.
+
+Do not generate a Funding Insight card while a commercial event is still a draft or before the V4 integrity gate. Search/model latency and failures must not block or mutate the canonical commercial-event dataset.
 
 The four production states are `evidence_supply`, `card_quality`, `frontstage_contract`, and `publication`. A failure must be owned by exactly one state. Publication conflict or an open automation PR is `publication_waiting`; it must not dispatch another monitor run.
 

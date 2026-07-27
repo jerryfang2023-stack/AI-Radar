@@ -617,12 +617,12 @@ async function mapConcurrent(items, worker, size) {
 
 async function main() {
   if (!date) throw new Error("funding_insight_date_missing");
-  if (!process.env.DEEPSEEK_API_KEY) throw new Error("deepseek_key_missing_for_funding_insight");
-  if (!process.env.TAVILY_API_KEY && !process.env.EXA_API_KEY) throw new Error("funding_insight_search_provider_missing");
   const bundle = loadDailyBundle(root, date);
   const entityIndex = readJson(path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), {});
   const existing = readJson(output, { cards: [], queue: [] });
-  const existingByEvent = new Map((existing.cards || []).map((card) => [card.triggered_by_event_id, card]));
+  const existingByEvent = new Map((existing.cards || [])
+    .filter((card) => fundingInsightProblems(card).length === 0)
+    .map((card) => [card.triggered_by_event_id, card]));
   let eligibleEvents = bundle.events
     .filter((event) => event.event_type === "funding")
     .filter((event) => event.publication_status === "verified")
@@ -659,18 +659,16 @@ async function main() {
     }, null, 2));
     return;
   }
-  if (!pending.length) {
-    console.log(JSON.stringify({
-      ok: true,
-      mode: "write",
-      date,
-      reused: selectedEvents.length,
-      pending: 0,
-      output: path.relative(root, output).replace(/\\/gu, "/"),
-    }, null, 2));
-    return;
+  if (pending.length && !process.env.DEEPSEEK_API_KEY) {
+    throw new Error("deepseek_key_missing_for_funding_insight");
   }
-  const results = await mapConcurrent(pending, (event) => processEvent(bundle, event, entityIndex), concurrency);
+  const tavilyAvailable = Boolean(process.env.TAVILY_API_KEY) && process.env.TAVILY_DISABLED !== "true";
+  if (pending.length && !tavilyAvailable && !process.env.EXA_API_KEY) {
+    throw new Error("funding_insight_search_provider_missing");
+  }
+  const results = pending.length
+    ? await mapConcurrent(pending, (event) => processEvent(bundle, event, entityIndex), concurrency)
+    : [];
   for (const result of results) {
     if (result.card) existingByEvent.set(result.event_id, result.card);
     else if (force) existingByEvent.delete(result.event_id);
@@ -692,7 +690,15 @@ async function main() {
     .filter((card) => fundingInsightProblems(card).length === 0)
     .sort((left, right) => right.published_at.localeCompare(left.published_at));
   const queue = events.map((event) => queueByEvent.get(event.event_id)
-    || { event_id: event.event_id, company_name: "", status: "pending", problems: [], queries: [], attempts: [], updated_at: "" });
+    || {
+      event_id: event.event_id,
+      company_name: "",
+      status: existingByEvent.has(event.event_id) ? "auto_published" : "pending",
+      problems: [],
+      queries: [],
+      attempts: [],
+      updated_at: "",
+    });
   const value = {
     meta: {
       schema_version: FUNDING_INSIGHT_VERSION,
@@ -716,7 +722,10 @@ async function main() {
   writeJson(output, value);
   console.log(JSON.stringify({
     ok: true,
+    mode: "write",
     output: path.relative(root, output).replace(/\\/gu, "/"),
+    reused: selectedEvents.length - pending.length,
+    processed: pending.length,
     counts: value.meta.counts,
   }, null, 2));
 }

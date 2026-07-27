@@ -360,6 +360,8 @@ jobs:
         id: funding-insights
         if: steps.data-center-v4-materialize.outcome == 'success'
         continue-on-error: true
+        env:
+          TAVILY_DISABLED: "false"
         shell: bash
         run: |
           set -euo pipefail
