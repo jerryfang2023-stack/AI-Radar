@@ -96,7 +96,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-22--Realm Technologies Oy--FI-7061bf1fb99b60ef|2026-05-24｜Realm 获450万美元融资，将“Cursor时刻”带入企业销售领域｜$4.5 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-22--Realm Technologies Oy--FI-7061bf1fb99b60ef|2026-05-24｜Realm 获450万美元融资，将“Cursor时刻”带入企业销售领域｜$4.5 million]]
 
 ## 研究来源
 

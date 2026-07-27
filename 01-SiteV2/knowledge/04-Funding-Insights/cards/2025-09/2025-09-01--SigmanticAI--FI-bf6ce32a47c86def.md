@@ -85,7 +85,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2025-09/2025-09-01--SigmanticAI--FI-bf6ce32a47c86def|2026-07-04｜SigmanticAI - 半导体工程的AI操作系统]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2025-09/2025-09-01--SigmanticAI--FI-bf6ce32a47c86def|2026-07-04｜SigmanticAI - 半导体工程的AI操作系统]]
 
 ## 研究来源
 

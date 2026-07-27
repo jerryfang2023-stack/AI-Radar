@@ -93,7 +93,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-15--Arcade AI Inc--FI-9cbc09818a9be1c5|2026-06-19｜AI 智能体授权初创公司 Arcade 获 6000 万美元投资｜$60M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-15--Arcade AI Inc--FI-9cbc09818a9be1c5|2026-06-19｜AI 智能体授权初创公司 Arcade 获 6000 万美元投资｜$60M]]
 
 ## 研究来源
 

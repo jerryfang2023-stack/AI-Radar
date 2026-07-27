@@ -113,7 +113,7 @@ Goodfire 的可解释性平台，用于开发和测试不同的模型行为检�
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-02/2026-02-05--Goodfire AI--FI-4bcb177ce9d0b4d0|2026-06-27｜首个机械可解释性前沿实验室——Goodfire AI 的 Myra Deng 与 Mark Bissell｜$150M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-02/2026-02-05--Goodfire AI--FI-4bcb177ce9d0b4d0|2026-06-27｜首个机械可解释性前沿实验室——Goodfire AI 的 Myra Deng 与 Mark Bissell｜$150M]]
 
 ## 研究来源
 

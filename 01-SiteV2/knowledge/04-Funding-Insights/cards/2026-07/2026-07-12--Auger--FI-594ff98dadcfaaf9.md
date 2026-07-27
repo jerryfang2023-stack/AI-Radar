@@ -122,7 +122,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-12--Auger--FI-594ff98dadcfaaf9|2026-07-12｜Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化｜$50M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-12--Auger--FI-594ff98dadcfaaf9|2026-07-12｜Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化｜$50M]]
 
 ## 研究来源
 

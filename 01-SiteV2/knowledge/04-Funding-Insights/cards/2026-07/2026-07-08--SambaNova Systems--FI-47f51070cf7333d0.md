@@ -121,7 +121,7 @@ SambaNova的推理系统，支持云端和本地部署，用于运行大规模AI
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-08--SambaNova Systems--FI-47f51070cf7333d0|2026-07-09｜AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月｜$1B]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-08--SambaNova Systems--FI-47f51070cf7333d0|2026-07-09｜AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月｜$1B]]
 
 ## 研究来源
 

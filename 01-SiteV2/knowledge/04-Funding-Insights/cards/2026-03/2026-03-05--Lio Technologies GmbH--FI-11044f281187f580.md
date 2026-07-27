@@ -137,7 +137,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-05--Lio Technologies GmbH--FI-11044f281187f580|2026-05-20｜Lio 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购｜$30M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-05--Lio Technologies GmbH--FI-11044f281187f580|2026-05-20｜Lio 获 3000 万美元 A 轮融资，将智能体 AI 引入企业采购｜$30M]]
 
 ## 研究来源
 

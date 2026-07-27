@@ -98,7 +98,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-16--Bunkerhill Health--FI-9417daa78d366442|2026-07-16｜Bunkerhill Health 融资 5500 万美元，助力医疗系统将最佳创意变为现实｜$55 Million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-16--Bunkerhill Health--FI-9417daa78d366442|2026-07-16｜Bunkerhill Health 融资 5500 万美元，助力医疗系统将最佳创意变为现实｜$55 Million]]
 
 ## 研究来源
 

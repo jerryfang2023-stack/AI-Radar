@@ -142,7 +142,7 @@ GV认为AI是代码，而AI现在可以编码，当这两个现实连接时，�
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-13--Recursive Superintelligence Inc--FI-65a8d1e29665fc99|2026-07-06｜当人工智能开始自我构建时会发生什么？｜$650 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-13--Recursive Superintelligence Inc--FI-65a8d1e29665fc99|2026-07-06｜当人工智能开始自我构建时会发生什么？｜$650 million]]
 
 ## 研究来源
 

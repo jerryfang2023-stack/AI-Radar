@@ -117,7 +117,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-22--Thoughtly--FI-c3e7cd8ffc3f5819|2026-06-02｜Thoughtly 获超800万美元融资，为营收团队打造全渠道智能代理｜16%]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-22--Thoughtly--FI-c3e7cd8ffc3f5819|2026-06-02｜Thoughtly 获超800万美元融资，为营收团队打造全渠道智能代理｜16%]]
 
 ## 研究来源
 

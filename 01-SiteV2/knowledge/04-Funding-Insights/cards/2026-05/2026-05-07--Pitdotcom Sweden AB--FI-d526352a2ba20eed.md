@@ -128,7 +128,7 @@ Pit Cloud 提供受管控的基础设施，具备租户隔离、ISO 27001、SSO�
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-07--Pitdotcom Sweden AB--FI-d526352a2ba20eed|2026-05-07｜AI 产品团队初创公司 Pit 获 a16z 等投资 1600 万美元，用于自动化企业工作流｜$16M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-07--Pitdotcom Sweden AB--FI-d526352a2ba20eed|2026-05-07｜AI 产品团队初创公司 Pit 获 a16z 等投资 1600 万美元，用于自动化企业工作流｜$16M]]
 
 ## 研究来源
 

@@ -110,7 +110,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-23--JustAI--FI-8a0181e5ddebe9ca|2026-06-24｜JustAI 获1700万美元A轮融资，打造智能营销平台｜$17 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-23--JustAI--FI-8a0181e5ddebe9ca|2026-06-24｜JustAI 获1700万美元A轮融资，打造智能营销平台｜$17 million]]
 
 ## 研究来源
 

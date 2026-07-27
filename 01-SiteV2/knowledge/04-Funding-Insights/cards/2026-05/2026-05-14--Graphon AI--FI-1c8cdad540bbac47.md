@@ -84,7 +84,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-14--Graphon AI--FI-1c8cdad540bbac47|2026-06-08｜Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层｜$8.3 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-14--Graphon AI--FI-1c8cdad540bbac47|2026-06-08｜Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层｜$8.3 million]]
 
 ## 研究来源
 

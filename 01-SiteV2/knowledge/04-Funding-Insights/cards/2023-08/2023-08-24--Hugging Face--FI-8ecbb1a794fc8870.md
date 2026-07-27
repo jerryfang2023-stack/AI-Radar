@@ -157,7 +157,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2023-08/2023-08-24--Hugging Face--FI-8ecbb1a794fc8870|2026-06-07｜Hugging Face：AI 引用与可见性｜$235 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2023-08/2023-08-24--Hugging Face--FI-8ecbb1a794fc8870|2026-06-07｜Hugging Face：AI 引用与可见性｜$235 million]]
 
 ## 研究来源
 

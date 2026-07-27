@@ -115,7 +115,7 @@ Antler 认为 First Concepts 的创始人拥有重新定义团队协作方式所
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-17--First Concepts--FI-f48d49f57172e13d|2026-05-25｜First Concepts 获 100 万美元种子轮融资，为创意团队打造 AI 工作空间｜$1M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-17--First Concepts--FI-f48d49f57172e13d|2026-05-25｜First Concepts 获 100 万美元种子轮融资，为创意团队打造 AI 工作空间｜$1M]]
 
 ## 研究来源
 

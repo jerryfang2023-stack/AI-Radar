@@ -118,7 +118,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2025-04/2025-04-15--telli technologies GmbH--FI-256d9398b7fed31d|2026-05-25｜telli 借助 LiveKit 与 ai-coustics 实现高量企业电话运营自动化｜$3.6M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2025-04/2025-04-15--telli technologies GmbH--FI-256d9398b7fed31d|2026-05-25｜telli 借助 LiveKit 与 ai-coustics 实现高量企业电话运营自动化｜$3.6M]]
 
 ## 研究来源
 

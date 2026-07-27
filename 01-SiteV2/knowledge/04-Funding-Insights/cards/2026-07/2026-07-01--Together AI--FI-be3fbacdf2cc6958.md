@@ -125,7 +125,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-01--Together AI--FI-be3fbacdf2cc6958|2026-07-08｜Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元｜$800M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-01--Together AI--FI-be3fbacdf2cc6958|2026-07-08｜Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元｜$800M]]
 
 ## 研究来源
 

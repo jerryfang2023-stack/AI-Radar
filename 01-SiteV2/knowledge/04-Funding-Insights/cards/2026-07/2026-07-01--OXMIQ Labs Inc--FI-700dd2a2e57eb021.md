@@ -180,7 +180,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-01--OXMIQ Labs Inc--FI-700dd2a2e57eb021|2026-07-08｜OXMIQ 获3500万美元融资，用于扩展OxCore™架构｜$35 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-01--OXMIQ Labs Inc--FI-700dd2a2e57eb021|2026-07-08｜OXMIQ 获3500万美元融资，用于扩展OxCore™架构｜$35 million]]
 
 ## 研究来源
 

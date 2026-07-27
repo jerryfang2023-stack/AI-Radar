@@ -142,13 +142,13 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-17--Databricks--FI-d6560f76dae43e6b|2026-07-17｜Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资｜$3 billion]]
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-14--Thira--FI-44ac76bc6d931f0d|2026-07-14｜Thira 获 2100 万美元种子轮融资，打造自学习 AI 后台办公平台｜$21 million]]
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2025-03/2025-03-03--Anthropic PBC--FI-34ad46762c245ae0|2026-07-05｜科技初创公司融资轮次：过去30天，每周更新｜$3.5B]]
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Runlayer--FI-01b70d8acfeaf371|2026-06-28｜Runlayer 完成3000万美元A轮融资，全力押注人工智能｜$30M]]
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-26--OpenRouter--FI-2e5005ab43ef0057|2026-06-08｜AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由｜$113M]]
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-30--Sycamore--FI-8478addb443b9e38|2026-05-23｜前Coatue合伙人筹集6500万美元种子轮，用于企业AI智能体初创公司｜$65M]]
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-30--Sycamore Labs, Inc--FI-66cbf5e15d2306ff|2026-05-22｜Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台｜$65 Million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-17--Databricks--FI-d6560f76dae43e6b|2026-07-17｜Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资｜$3 billion]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-14--Thira--FI-44ac76bc6d931f0d|2026-07-14｜Thira 获 2100 万美元种子轮融资，打造自学习 AI 后台办公平台｜$21 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2025-03/2025-03-03--Anthropic PBC--FI-34ad46762c245ae0|2026-07-05｜科技初创公司融资轮次：过去30天，每周更新｜$3.5B]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Runlayer--FI-01b70d8acfeaf371|2026-06-28｜Runlayer 完成3000万美元A轮融资，全力押注人工智能｜$30M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-26--OpenRouter--FI-2e5005ab43ef0057|2026-06-08｜AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由｜$113M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-30--Sycamore--FI-8478addb443b9e38|2026-05-23｜前Coatue合伙人筹集6500万美元种子轮，用于企业AI智能体初创公司｜$65M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-30--Sycamore Labs, Inc--FI-66cbf5e15d2306ff|2026-05-22｜Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台｜$65 Million]]
 
 ## 研究来源
 

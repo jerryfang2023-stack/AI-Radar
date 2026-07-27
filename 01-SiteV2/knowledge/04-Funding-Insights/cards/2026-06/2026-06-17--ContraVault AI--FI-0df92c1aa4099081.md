@@ -140,7 +140,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-17--ContraVault AI--FI-0df92c1aa4099081|2026-06-22｜ContraVault AI 为投标平台融资 310 万美元｜$3.1 Million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-17--ContraVault AI--FI-0df92c1aa4099081|2026-06-22｜ContraVault AI 为投标平台融资 310 万美元｜$3.1 Million]]
 
 ## 研究来源
 

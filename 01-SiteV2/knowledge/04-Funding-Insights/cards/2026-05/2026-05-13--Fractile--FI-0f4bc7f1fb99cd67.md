@@ -109,7 +109,7 @@ Fractile正在开发用于数据中心AI推理的专用芯片，采用内存内�
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-13--Fractile--FI-0f4bc7f1fb99cd67|2026-05-23｜Fractile 融资2.2亿美元，打造下一代推理硬件｜$220M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-13--Fractile--FI-0f4bc7f1fb99cd67|2026-05-23｜Fractile 融资2.2亿美元，打造下一代推理硬件｜$220M]]
 
 ## 研究来源
 

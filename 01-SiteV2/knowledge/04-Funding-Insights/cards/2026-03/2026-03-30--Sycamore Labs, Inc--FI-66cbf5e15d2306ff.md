@@ -123,7 +123,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-30--Sycamore Labs, Inc--FI-66cbf5e15d2306ff|2026-05-22｜Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台｜$65 Million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-30--Sycamore Labs, Inc--FI-66cbf5e15d2306ff|2026-05-22｜Sycamore Labs 获 6500 万美元种子轮融资，打造企业级 AI 智能体平台｜$65 Million]]
 
 ## 研究来源
 

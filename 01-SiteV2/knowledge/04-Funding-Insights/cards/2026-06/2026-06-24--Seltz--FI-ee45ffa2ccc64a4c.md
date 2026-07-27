@@ -138,7 +138,7 @@ Seltz首个公开可用的垂直领域API，专注于美国新闻，提供约一
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Seltz--FI-ee45ffa2ccc64a4c|2026-06-27｜独家：Seltz，一家试图为AI智能体重塑网络搜索的初创公司，完成$12.5种子轮融资｜$12.5 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Seltz--FI-ee45ffa2ccc64a4c|2026-06-27｜独家：Seltz，一家试图为AI智能体重塑网络搜索的初创公司，完成$12.5种子轮融资｜$12.5 million]]
 
 ## 研究来源
 

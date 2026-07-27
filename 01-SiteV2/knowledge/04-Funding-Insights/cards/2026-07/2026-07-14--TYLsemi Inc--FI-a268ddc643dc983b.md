@@ -105,7 +105,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-14--TYLsemi Inc--FI-a268ddc643dc983b|2026-07-14｜定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE｜$43M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-14--TYLsemi Inc--FI-a268ddc643dc983b|2026-07-14｜定制AI芯片设计初创公司TYLsemi获4300万美元早期融资 - SiliconANGLE｜$43M]]
 
 ## 研究来源
 

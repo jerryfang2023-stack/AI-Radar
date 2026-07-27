@@ -110,7 +110,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2024-01/2024-01-30--Inference.ai--FI-5d6f8b305204eb55|2026-06-07｜Inference.ai 将 AI 工作负载与云端 GPU 算力匹配｜$4 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2024-01/2024-01-30--Inference.ai--FI-5d6f8b305204eb55|2026-06-07｜Inference.ai 将 AI 工作负载与云端 GPU 算力匹配｜$4 million]]
 
 ## 研究来源
 

@@ -122,7 +122,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-19--Work Nexus Labs Limited (trading as Zaro)--FI-8077351721f9c4e3|2026-06-22｜Zaro.ai 获 510 万美元融资，在单一上下文层中统一企业 AI 智能体、数据与应用｜$5.1M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-19--Work Nexus Labs Limited (trading as Zaro)--FI-8077351721f9c4e3|2026-06-22｜Zaro.ai 获 510 万美元融资，在单一上下文层中统一企业 AI 智能体、数据与应用｜$5.1M]]
 
 ## 研究来源
 

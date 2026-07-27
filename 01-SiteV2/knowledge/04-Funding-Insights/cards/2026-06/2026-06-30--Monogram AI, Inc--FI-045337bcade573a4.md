@@ -128,7 +128,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-30--Monogram AI, Inc--FI-045337bcade573a4|2026-07-07｜Monogram 获 4000 万美元种子轮融资，用于开发视觉 AI 界面｜$40M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-30--Monogram AI, Inc--FI-045337bcade573a4|2026-07-07｜Monogram 获 4000 万美元种子轮融资，用于开发视觉 AI 界面｜$40M]]
 
 ## 研究来源
 

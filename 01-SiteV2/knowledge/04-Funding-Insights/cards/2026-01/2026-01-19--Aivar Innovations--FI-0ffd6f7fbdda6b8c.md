@@ -117,7 +117,7 @@ Sorin Investments 认为 Aivar 通过将深厚的云专业知识与 AI 原生加
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-01/2026-01-19--Aivar Innovations--FI-0ffd6f7fbdda6b8c|2026-01-19｜AI 初创公司：印度 Aivar 获 460 万美元融资，推动企业 AI 应用｜$4.6M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-01/2026-01-19--Aivar Innovations--FI-0ffd6f7fbdda6b8c|2026-01-19｜AI 初创公司：印度 Aivar 获 460 万美元融资，推动企业 AI 应用｜$4.6M]]
 
 ## 研究来源
 

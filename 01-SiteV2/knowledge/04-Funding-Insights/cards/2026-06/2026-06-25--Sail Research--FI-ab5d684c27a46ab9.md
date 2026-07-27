@@ -101,7 +101,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-25--Sail Research--FI-ab5d684c27a46ab9|2026-06-25｜Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施｜$80 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-25--Sail Research--FI-ab5d684c27a46ab9|2026-06-25｜Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施｜$80 million]]
 
 ## 研究来源
 

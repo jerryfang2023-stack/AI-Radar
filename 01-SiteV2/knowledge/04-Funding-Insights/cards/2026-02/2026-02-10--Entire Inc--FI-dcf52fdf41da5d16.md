@@ -96,7 +96,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-02/2026-02-10--Entire Inc--FI-dcf52fdf41da5d16|2026-02-10｜前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。｜$60 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-02/2026-02-10--Entire Inc--FI-dcf52fdf41da5d16|2026-02-10｜前 GitHub CEO Thomas Dohmke 以创纪录的 6000 万美元种子轮融资推出 Entire，打造 AI 时代全球下一代开发者平台。｜$60 million]]
 
 ## 研究来源
 

@@ -127,7 +127,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-23--telli technologies GmbH--FI-9e322d5bafc9c0c7|2026-07-23｜YC支持的telli融资1310万欧元，打造面向B2C客户运营的AI智能体｜€13.1 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-23--telli technologies GmbH--FI-9e322d5bafc9c0c7|2026-07-23｜YC支持的telli融资1310万欧元，打造面向B2C客户运营的AI智能体｜€13.1 million]]
 
 ## 研究来源
 

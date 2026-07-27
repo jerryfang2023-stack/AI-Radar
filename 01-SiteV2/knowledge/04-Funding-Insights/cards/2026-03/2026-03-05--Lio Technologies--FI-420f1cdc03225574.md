@@ -109,7 +109,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-05--Lio Technologies--FI-420f1cdc03225574|2026-05-20｜Lio – 全球首个采购领域多智能体系统｜$30M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-05--Lio Technologies--FI-420f1cdc03225574|2026-05-20｜Lio – 全球首个采购领域多智能体系统｜$30M]]
 
 ## 研究来源
 

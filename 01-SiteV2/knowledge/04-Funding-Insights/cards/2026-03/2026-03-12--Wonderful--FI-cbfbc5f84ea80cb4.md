@@ -96,7 +96,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-12--Wonderful--FI-cbfbc5f84ea80cb4|2026-05-20｜Wonderful 获 1.5 亿美元 B 轮融资，加速 30 多个市场的企业 AI 应用｜$150M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-12--Wonderful--FI-cbfbc5f84ea80cb4|2026-05-20｜Wonderful 获 1.5 亿美元 B 轮融资，加速 30 多个市场的企业 AI 应用｜$150M]]
 
 ## 研究来源
 

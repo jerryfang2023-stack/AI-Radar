@@ -139,7 +139,7 @@ Jump Trading 在作为客户部署 Atlas 系统后，验证了其在生产环境
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-02/2026-02-04--Positron AI--FI-2e4c307c0be32b8e|2026-07-07｜独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片｜$230M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-02/2026-02-04--Positron AI--FI-2e4c307c0be32b8e|2026-07-07｜独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片｜$230M]]
 
 ## 研究来源
 

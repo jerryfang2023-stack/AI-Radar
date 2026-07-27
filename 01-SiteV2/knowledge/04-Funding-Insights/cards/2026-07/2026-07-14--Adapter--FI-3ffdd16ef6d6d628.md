@@ -154,7 +154,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-14--Adapter--FI-3ffdd16ef6d6d628|2026-07-14｜独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力｜$17.8M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-14--Adapter--FI-3ffdd16ef6d6d628|2026-07-14｜独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力｜$17.8M]]
 
 ## 研究来源
 
