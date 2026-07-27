@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-03",
-    "generated_at": "2026-07-26T15:16:11.689Z",
+    "generated_at": "2026-07-27T05:19:04.155Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -598,81 +598,14 @@
     },
     {
       "event_id": "EV-4b8064b1139e1724",
-      "company_name": "AI Finance Automation Case Study",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:funding_round_missing|funding_amount_missing|investors_missing"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"AI Finance Automation Case Study\" \"$850\" funding investors round",
-        "\"AI Finance Automation Case Study\" product customers case study",
-        "\"AI Finance Automation Case Study\" \"AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech\" competitors product use case",
-        "\"AI Finance Automation Case Study\" \"$850\" investor quote why invested",
-        "\"AI Finance Automation Case Study\" \"$850\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"AI Finance Automation Case Study\" \"$850\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"AI Finance Automation Case Study\" \"$850\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"AI Finance Automation Case Study\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"AI Finance Automation Case Study\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"AI Finance Automation Case Study\" \"AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"AI Finance Automation Case Study\" \"AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"AI Finance Automation Case Study\" \"$850\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"AI Finance Automation Case Study\" \"$850\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"AI Finance Automation Case Study\" \"$850\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"AI Finance Automation Case Study\" \"$850\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:16:11.688Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:19:04.153Z"
     }
   ]
 }

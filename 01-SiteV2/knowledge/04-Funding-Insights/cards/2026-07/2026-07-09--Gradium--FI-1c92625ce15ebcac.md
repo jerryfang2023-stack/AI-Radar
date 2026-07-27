@@ -118,7 +118,7 @@ tags:
 - [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-02/2026-02-04--Positron AI--FI-2e4c307c0be32b8e|2026-07-07｜独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片｜$230M]]
 - [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-30--Etched--FI-941760709039dd07|2026-07-02｜宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变｜$800M]]
 - [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Runlayer--FI-01b70d8acfeaf371|2026-06-28｜Runlayer 完成3000万美元A轮融资，全力押注人工智能｜$30M]]
-- 2026-06-23｜Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资｜6.5 亿
+- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-22--Groq--FI-d6cb4942d1df5522|2026-06-23｜Groq 与英伟达交易后转型 AI 推理 CSP，完成新一轮 6.5 亿美元融资｜6.5 亿]]
 - [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-22--Upscale AI--FI-3630ce639ee99761|2026-06-22｜Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元｜$190 Million]]
 - [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-17--Odyssey ML--FI-75f3824ca5cb8cb3|2026-06-17｜世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元｜$310 million]]
 - [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-26--OpenRouter--FI-2e5005ab43ef0057|2026-06-08｜AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由｜$113M]]

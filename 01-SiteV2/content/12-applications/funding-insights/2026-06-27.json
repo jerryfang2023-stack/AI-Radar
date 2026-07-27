@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-06-27",
-    "generated_at": "2026-07-26T15:16:30.511Z",
+    "generated_at": "2026-07-27T05:19:27.251Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -10,12 +10,603 @@
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
     "counts": {
       "funding_events": 5,
-      "auto_published": 3,
-      "blocked": 2,
+      "auto_published": 4,
+      "blocked": 1,
       "pending": 0
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-4bcb177ce9d0b4d0",
+      "triggered_by_event_id": "EV-26613b5bff756274",
+      "as_of_date": "2026-06-27",
+      "company": {
+        "entity_id": "EN-641a309108850fc9",
+        "name": "Goodfire AI",
+        "full_name": "Goodfire AI",
+        "website": "https://goodfire.ai",
+        "summary": "Goodfire AI 是一家人工智能研究实验室，致力于利用可解释性来理解、学习和设计 AI 模型。公司旨在将“黑箱”式的模型开发转变为可理解、可调试和可精确设计的工程实践。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Eric Ho",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0d4056113fd3650",
+                "quote": "Goodfire CEO Eric Ho"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Tom McGrath",
+            "role": "Chief Scientist / Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0d4056113fd3650",
+                "quote": "co-founder Tom McGrath, who founded the interpretability team at Google DeepMind"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dan Balsam",
+            "role": "Co-founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-49dd6b4ad8b49359",
+                "quote": "The company was founded in 2023 by Eric Ho, Dan Balsam and Tom McGrath."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "above 40",
+          "observed_at": "2026-02-06",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c253e601c735392a",
+              "quote": "Now we're above 40"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-f0d4056113fd3650",
+            "quote": "Goodfire is a research company and public benefit corporation based in San Francisco"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series B",
+        "amount": "$150M",
+        "total_raised": "over $200M",
+        "announced_at": "2026-02-05",
+        "investors": [
+          {
+            "name": "B Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0d4056113fd3650",
+                "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Juniper Ventures",
+            "role": "既有投资方，本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0d4056113fd3650",
+                "quote": "participation from existing investors Juniper Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "DFJ Growth",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f0d4056113fd3650",
+                "quote": "new investors DFJ Growth"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-84e4d0c096ffb50a",
+            "quote": "a $150 million Series B funding round at a $1.25 billion valuation"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Silico",
+          "description": "一个用于构建 AI 模型的平台，旨在实现像编写软件一样精确地设计模型。提供理解、调试和设计 AI 模型的功能。",
+          "target_customers": "生命科学、机器人技术与视觉、大语言模型（LLM）领域的团队",
+          "features": [
+            "理解模型内部表征",
+            "调试模型行为",
+            "进行针对性干预以改善性能"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-844f3749fd963598",
+              "quote": "Introducing Silico: the platform for building AI models with the precision of written software"
+            },
+            {
+              "source_id": "FISRC-844f3749fd963598",
+              "quote": "Silico lets you build AI models with the precision of written software. See what models have learned, find undesired behavior, and make targeted interventions to improve performance."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Ember",
+          "description": "Goodfire 的可解释性平台，用于开发和测试不同的模型行为检测与干预方法，例如 PII 检测。",
+          "target_customers": "需要高可靠性 AI 的企业客户",
+          "features": [
+            "基于可解释性的 PII 检测",
+            "轻量级、低延迟的实时检测",
+            "跨语言和格式的鲁棒性"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f9f02c21aeb65119",
+              "quote": "Goodfire’s interpretability platform, Ember, to develop and test different methods for PII detection"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Rakuten",
+          "industry": "电子商务/科技",
+          "use_case": "部署基于可解释性的令牌级 PII 检测护栏，防止用户隐私数据被发送到下游模型提供商。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f9f02c21aeb65119",
+              "quote": "Rakuten and Goodfire partnered to explore ways to make Rakuten AI even more reliable and trustworthy, leading the industry to use frontier interpretability to improve security and prevent customers’ PII (personally identifiable information) from being sent downstream to model providers."
+            }
+          ]
+        },
+        {
+          "name": "Prima Mente",
+          "industry": "AI 神经科学/生物技术",
+          "use_case": "解码其表观基因组学基础模型，识别用于阿尔茨海默病检测的新型生物标志物。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ba07a04ddd30c38",
+              "quote": "Goodfire’s platform for in silico science decoded their model, identifying a novel class of biomarkers for Alzheimer’s detection"
+            }
+          ]
+        },
+        {
+          "name": "Mayo Clinic",
+          "industry": "医疗健康",
+          "use_case": "合作利用可解释性技术进行科学发现和模型分析。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0d4056113fd3650",
+              "quote": "Goodfire has focused on deciphering scientific foundation models with partners like Mayo Clinic"
+            }
+          ]
+        },
+        {
+          "name": "Arc Institute",
+          "industry": "生物医学研究",
+          "use_case": "合作解码基因组模型 Evo 2 的内部表征，发现映射到生物学概念的特征。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-844f3749fd963598",
+              "quote": "We decoded the internal representations of Arc Institute's Evo 2 genomic model, finding features that map onto biological concepts from coding sequences to protein secondary structure."
+            }
+          ]
+        },
+        {
+          "name": "Microsoft",
+          "industry": "科技",
+          "use_case": "合作伙伴，部署 Goodfire 的技术。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-84e4d0c096ffb50a",
+              "quote": "partnered with industry leaders like Arc Institute, Mayo Clinic, and Microsoft to deploy our technology"
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "幻觉减少比例",
+          "value": "58%",
+          "observed_at": "2026-02-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-844f3749fd963598",
+              "quote": "We cut hallucinations in an LLM by 58% by using interpretability to guide model training."
+            }
+          ]
+        },
+        {
+          "label": "推理令牌节省比例",
+          "value": "68%",
+          "observed_at": "2026-02-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-844f3749fd963598",
+              "quote": "saving up to 68% of tokens with minimal accuracy loss"
+            }
+          ]
+        },
+        {
+          "label": "PII 检测成本节省（对比 LLM-as-a-judge）",
+          "value": "15–500x",
+          "observed_at": "2026-02-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f9f02c21aeb65119",
+              "quote": "the SAE probes showed 15–500x cost savings over LLM-as-a-judge setups with comparable performance"
+            }
+          ]
+        },
+        {
+          "label": "幻觉干预成本降低（对比 LLM-as-a-judge）",
+          "value": "~90x",
+          "observed_at": "2026-02-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-844f3749fd963598",
+              "quote": "Our approach was ~90x lower cost per intervention than LLM-as-judge"
+            }
+          ]
+        },
+        {
+          "label": "材料候选物存活率提升",
+          "value": "~30%",
+          "observed_at": "2026-02-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-844f3749fd963598",
+              "quote": "resulting in ~30% more viable candidate materials with target properties"
+            }
+          ]
+        },
+        {
+          "label": "Rakuten 月活用户覆盖数",
+          "value": "44M+",
+          "observed_at": "2026-02-05",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f9f02c21aeb65119",
+              "quote": "serving over 44 million monthly active users in Japan"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Myra Deng",
+          "quote": "Goodfire is an AI research lab that focuses on using interpretability to understand, learn from and design AI models. We really believe that interpretability will unlock the new generation next frontier of safe and powerful AI models.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c253e601c735392a",
+              "quote": "Goodfire is an AI research lab that focuses on using interpretability to understand, learn from and design AI models. We really believe that interpretability will unlock the new generation next frontier of safe and powerful AI models."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“可解释性”从学术研究向生产级基础设施的范式迁移。本轮融资的验证信号包括：1) 已获得 Rakuten 等企业客户的生产部署，证明了其在 PII 检测等场景的商业价值；2) 在生命科学领域实现了从基础模型中提取新型阿尔茨海默病生物标志物的科学突破；3) 展示了在万亿参数级模型上进行实时操控的技术能力。估值依据建立在将可解释性定位为 AI 安全、对齐及科学发现的底层操作系统，而非单纯的工具。",
+        "validated_signals": [
+          "企业级生产部署：为 Rakuten 部署了基于可解释性的 PII 检测护栏，实现了 15-500 倍的成本节省。",
+          "科学发现验证：与 Prima Mente 合作，通过逆向工程基础模型发现了新型阿尔茨海默病生物标志物。",
+          "前沿模型操控：实现了对 Kimi K2（约 1 万亿参数）模型的实时特征操控。",
+          "技术降本增效：通过可解释性引导训练，将大语言模型的幻觉减少了 58%，且干预成本比 LLM-as-a-judge 低约 90 倍。"
+        ],
+        "risks": [
+          "可解释性技术的通用性尚未被大规模证实，目前主要应用于特定高价值场景（如 PII 检测、科学发现），能否成为所有 AI 模型训练的标配流程存在不确定性。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "人工智能可解释性与安全"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Silico",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-844f3749fd963598",
+              "quote": "Introducing Silico: the platform for building AI models with the precision of written software"
+            },
+            {
+              "source_id": "FISRC-844f3749fd963598",
+              "quote": "Silico lets you build AI models with the precision of written software. See what models have learned, find undesired behavior, and make targeted interventions to improve performance."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Ember",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f9f02c21aeb65119",
+              "quote": "Goodfire’s interpretability platform, Ember, to develop and test different methods for PII detection"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Eric Ho",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0d4056113fd3650",
+              "quote": "Goodfire CEO Eric Ho"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Tom McGrath",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0d4056113fd3650",
+              "quote": "co-founder Tom McGrath, who founded the interpretability team at Google DeepMind"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Dan Balsam",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-49dd6b4ad8b49359",
+              "quote": "The company was founded in 2023 by Eric Ho, Dan Balsam and Tom McGrath."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "B Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0d4056113fd3650",
+              "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Juniper Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0d4056113fd3650",
+              "quote": "participation from existing investors Juniper Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "DFJ Growth",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0d4056113fd3650",
+              "quote": "new investors DFJ Growth"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Rakuten",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f9f02c21aeb65119",
+              "quote": "Rakuten and Goodfire partnered to explore ways to make Rakuten AI even more reliable and trustworthy, leading the industry to use frontier interpretability to improve security and prevent customers’ PII (personally identifiable information) from being sent downstream to model providers."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Prima Mente",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9ba07a04ddd30c38",
+              "quote": "Goodfire’s platform for in silico science decoded their model, identifying a novel class of biomarkers for Alzheimer’s detection"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Mayo Clinic",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f0d4056113fd3650",
+              "quote": "Goodfire has focused on deciphering scientific foundation models with partners like Mayo Clinic"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Arc Institute",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-844f3749fd963598",
+              "quote": "We decoded the internal representations of Arc Institute's Evo 2 genomic model, finding features that map onto biological concepts from coding sequences to protein secondary structure."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Microsoft",
+          "canonical_entity_id": "EN-9fbf261b62c1d7c0",
+          "canonical_name": "Microsoft",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-84e4d0c096ffb50a",
+              "quote": "partnered with industry leaders like Arc Institute, Mayo Clinic, and Microsoft to deploy our technology"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-26613b5bff756274",
+          "date": "2026-06-27",
+          "title": "首个机械可解释性前沿实验室——Goodfire AI 的 Myra Deng 与 Mark Bissell",
+          "amount": "$150M",
+          "source_refs": [
+            "SA-90d16922920a0f86"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-844f3749fd963598",
+          "source_url": "https://www.goodfire.ai/",
+          "title": "Goodfire AI",
+          "publisher": "goodfire.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:17:25.192Z",
+          "content_hash": "4727b59719874f15",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f0d4056113fd3650",
+          "source_url": "https://theaiinsider.tech/2026/02/11/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability/",
+          "title": "AI Lab Goodfire Raises $150M at $1.25B Valuation to Design Models with Interpretability",
+          "publisher": "theaiinsider.tech",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:17:27.256Z",
+          "content_hash": "065e9d351d56505a",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-84e4d0c096ffb50a",
+          "source_url": "https://www.goodfire.ai/blog/our-series-b",
+          "title": "Understanding, Learning From, and Designing AI: Our Series B",
+          "publisher": "goodfire.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:17:28.166Z",
+          "content_hash": "37a3bfceda84a002",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-49dd6b4ad8b49359",
+          "source_url": "https://app.dealroom.co/news/feed/us-ai-research-lab-goodfire-ai-raises-150m-series-b-at-1-25b-valuation",
+          "title": "US AI research lab Goodfire AI raises $150M Series B at $1.25B valuation | Dealroom.co",
+          "publisher": "app.dealroom.co",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-27T05:17:31.094Z",
+          "content_hash": "dfca503db1cd4f8c",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f9f02c21aeb65119",
+          "source_url": "https://www.goodfire.ai/customer-stories/rakuten",
+          "title": "Goodfire",
+          "publisher": "goodfire.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:17:31.896Z",
+          "content_hash": "b726a23a72dd6c96",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9ba07a04ddd30c38",
+          "source_url": "https://www.goodfire.ai/customer-stories/prima-mente",
+          "title": "Goodfire",
+          "publisher": "goodfire.ai",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:17:32.108Z",
+          "content_hash": "8ec48c9b087c720d",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-c253e601c735392a",
+          "source_url": "https://stationlm.com/analysis/55656174-7069-43cc-abd9-9080926c7d97",
+          "title": "How AI Interpretability Unlocks Real-Time Model Control",
+          "publisher": "stationlm.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T05:17:34.795Z",
+          "content_hash": "fe9a536af93789f6",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-27T05:18:20.583Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-27T05:18:20.583Z"
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-6ecaf4b54919ed4f",
@@ -1722,9 +2313,10 @@
       "company_name": "Geordie AI",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:company_evidence_missing"
+        "deepseek_json_quality_failed:company_evidence_missing|products_missing"
       ],
       "queries": [
+        "\"Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents – DNYUZ\" funding company investors product",
         "\"Geordie AI\" \"$30 million\" funding investors round",
         "site:geordie.ai \"Geordie AI\" product customers case study",
         "\"Geordie AI\" \"Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents – DNYUZ\" competitors product use case",
@@ -1732,6 +2324,18 @@
         "\"Geordie AI\" \"$30 million\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents – DNYUZ\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents – DNYUZ\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
         {
           "provider": "tavily",
           "query": "\"Geordie AI\" \"$30 million\" funding investors round",
@@ -1793,7 +2397,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:16:30.502Z"
+      "updated_at": "2026-07-27T05:19:27.240Z"
     },
     {
       "event_id": "EV-f54ec32c67e9447c",
@@ -2026,11 +2630,10 @@
     {
       "event_id": "EV-26613b5bff756274",
       "company_name": "Goodfire AI",
-      "status": "blocked",
-      "problems": [
-        "deepseek_json_quality_failed:investors_missing"
-      ],
+      "status": "auto_published",
+      "problems": [],
       "queries": [
+        "\"The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI\" funding company investors product",
         "\"Goodfire AI\" \"$150M\" funding investors round",
         "site:goodfire.ai \"Goodfire AI\" product customers case study",
         "\"Goodfire AI\" \"The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI\" competitors product use case",
@@ -2038,6 +2641,18 @@
         "\"Goodfire AI\" \"$150M\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
         {
           "provider": "tavily",
           "query": "\"Goodfire AI\" \"$150M\" funding investors round",
@@ -2099,7 +2714,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:16:30.502Z"
+      "updated_at": "2026-07-27T05:19:27.240Z"
     }
   ]
 }

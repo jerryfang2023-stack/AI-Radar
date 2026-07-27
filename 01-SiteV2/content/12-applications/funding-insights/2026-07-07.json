@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-07",
-    "generated_at": "2026-07-26T15:17:40.913Z",
+    "generated_at": "2026-07-27T05:20:51.606Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -4308,9 +4308,10 @@
       "company_name": "Kapture CX",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:investors_missing"
+        "deepseek_json_quality_failed:company_evidence_missing|investors_missing"
       ],
       "queries": [
+        "\"Kapture CX Secures $10 Mn Pre-Series B Funding Led by Bajaj Finserv Ventures to Scale Agentic Enterprise Stack\" funding company investors product",
         "\"Kapture CX\" \"$10 M\" funding investors round",
         "\"Kapture CX\" product customers case study",
         "\"Kapture CX\" \"Kapture CX Secures $10 Mn Pre-Series B Funding Led by Bajaj Finserv Ventures to Scale Agentic Enterprise Stack\" competitors product use case",
@@ -4318,6 +4319,18 @@
         "\"Kapture CX\" \"$10 M\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Kapture CX Secures $10 Mn Pre-Series B Funding Led by Bajaj Finserv Ventures to Scale Agentic Enterprise Stack\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Kapture CX Secures $10 Mn Pre-Series B Funding Led by Bajaj Finserv Ventures to Scale Agentic Enterprise Stack\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
         {
           "provider": "tavily",
           "query": "\"Kapture CX\" \"$10 M\" funding investors round",
@@ -4379,7 +4392,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:17:40.886Z"
+      "updated_at": "2026-07-27T05:20:51.592Z"
     },
     {
       "event_id": "EV-e61effb7ada8508f",

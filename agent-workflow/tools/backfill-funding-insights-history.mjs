@@ -17,7 +17,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
   return [key, rest.join("=") || "true"];
 }));
 
-function fundingEventsForDate(projectRoot, date) {
+function fundingEventsForDate(projectRoot, date, entityIndex) {
   const dir = path.join(
     projectRoot,
     "01-SiteV2/content/11-databases/data-center-v4",
@@ -32,7 +32,7 @@ function fundingEventsForDate(projectRoot, date) {
     ))
     .map((event) => ({
       event,
-      subject_company_resolved: Boolean(subjectCompanyForEvent(event, entities)),
+      subject_company_resolved: Boolean(subjectCompanyForEvent(event, entities, entityIndex)),
     }));
 }
 
@@ -68,10 +68,14 @@ export function selectHistoricalFundingEvents(projectRoot, {
     .map((entry) => entry.name)
     .filter((date) => (!from || date >= from) && (!to || date <= to))
     .sort();
+  const entityIndex = readJson(
+    path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"),
+    {},
+  );
   const occurrencesByEvent = new Map();
   let occurrenceCount = 0;
   for (const date of dates) {
-    for (const candidate of fundingEventsForDate(projectRoot, date)) {
+    for (const candidate of fundingEventsForDate(projectRoot, date, entityIndex)) {
       const { event, subject_company_resolved: subjectCompanyResolved } = candidate;
       occurrenceCount += 1;
       const occurrence = { date, event, subject_company_resolved: subjectCompanyResolved };

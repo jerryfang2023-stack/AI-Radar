@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-06-03",
-    "generated_at": "2026-07-26T15:10:01.744Z",
+    "generated_at": "2026-07-27T05:14:26.318Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -19,81 +19,14 @@
   "queue": [
     {
       "event_id": "EV-86489eda802ffc19",
-      "company_name": "Questex Used AI Agents",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:funding_round_missing|funding_amount_missing|investors_missing"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Questex Used AI Agents\" \"$1 Million\" funding investors round",
-        "\"Questex Used AI Agents\" product customers case study",
-        "\"Questex Used AI Agents\" \"Questex Used AI Agents to Close $1 Million in 90 Days - A Media Operator\" competitors product use case",
-        "\"Questex Used AI Agents\" \"$1 Million\" investor quote why invested",
-        "\"Questex Used AI Agents\" \"$1 Million\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Questex Used AI Agents\" \"$1 Million\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Questex Used AI Agents\" \"$1 Million\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Questex Used AI Agents\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Questex Used AI Agents\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Questex Used AI Agents\" \"Questex Used AI Agents to Close $1 Million in 90 Days - A Media Operator\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Questex Used AI Agents\" \"Questex Used AI Agents to Close $1 Million in 90 Days - A Media Operator\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Questex Used AI Agents\" \"$1 Million\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Questex Used AI Agents\" \"$1 Million\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Questex Used AI Agents\" \"$1 Million\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Questex Used AI Agents\" \"$1 Million\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:10:01.744Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:14:26.317Z"
     }
   ]
 }

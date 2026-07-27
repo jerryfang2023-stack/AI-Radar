@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-10",
-    "generated_at": "2026-07-26T15:19:36.839Z",
+    "generated_at": "2026-07-27T05:20:52.209Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -1605,81 +1605,14 @@
     },
     {
       "event_id": "EV-15cc72d7c78cad3d",
-      "company_name": "Salesforce",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:sector_not_chinese|cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Salesforce\" \"$125M\" funding investors round",
-        "\"Salesforce\" product customers case study",
-        "\"Salesforce\" \"Resolve AI Announces $125M Series A at $1B Valuation to Fix Production Operations with AI\" competitors product use case",
-        "\"Salesforce\" \"$125M\" investor quote why invested",
-        "\"Salesforce\" \"$125M\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Salesforce\" \"$125M\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Salesforce\" \"$125M\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Salesforce\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Salesforce\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Salesforce\" \"Resolve AI Announces $125M Series A at $1B Valuation to Fix Production Operations with AI\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Salesforce\" \"Resolve AI Announces $125M Series A at $1B Valuation to Fix Production Operations with AI\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Salesforce\" \"$125M\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Salesforce\" \"$125M\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Salesforce\" \"$125M\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Salesforce\" \"$125M\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:19:36.812Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:20:52.197Z"
     },
     {
       "event_id": "EV-7abe829941f97b65",
@@ -1766,85 +1699,18 @@
       ],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-07-26T15:19:36.812Z"
+      "updated_at": "2026-07-27T05:20:52.198Z"
     },
     {
       "event_id": "EV-640c5ea9f4fa2780",
-      "company_name": "Intel",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Intel\" \"$100m\" funding investors round",
-        "\"Intel\" product customers case study",
-        "\"Intel\" \"Lyzr used its own AI agent to help raise a $100mn round\" competitors product use case",
-        "\"Intel\" \"$100m\" investor quote why invested",
-        "\"Intel\" \"$100m\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"$100m\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"$100m\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"Lyzr used its own AI agent to help raise a $100mn round\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"Lyzr used its own AI agent to help raise a $100mn round\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"$100m\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"$100m\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"$100m\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"$100m\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:19:36.812Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:20:52.198Z"
     }
   ]
 }

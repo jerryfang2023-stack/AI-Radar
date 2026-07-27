@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-19",
-    "generated_at": "2026-07-26T15:21:33.124Z",
+    "generated_at": "2026-07-27T05:21:47.523Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -1768,82 +1768,15 @@
       "updated_at": "2026-07-26T14:58:10.786Z"
     },
     {
-      "event_id": "EV-0b7f11c0c18b8bf4",
-      "company_name": "Intel",
+      "event_id": "EV-f9fe9f781c6ce583",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:funding_amount_missing|investors_missing"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Intel\" \"$100\" funding investors round",
-        "\"Intel\" product customers case study",
-        "\"Intel\" \"AI Startup Fundraising Trends 2026 (Seed to Series B)\" competitors product use case",
-        "\"Intel\" \"$100\" investor quote why invested",
-        "\"Intel\" \"$100\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"$100\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"$100\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"AI Startup Fundraising Trends 2026 (Seed to Series B)\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"AI Startup Fundraising Trends 2026 (Seed to Series B)\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"$100\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"$100\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"$100\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"$100\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:21:33.095Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:21:47.506Z"
     },
     {
       "event_id": "EV-b678e91bc60fb0f0",

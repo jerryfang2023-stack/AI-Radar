@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-06-12",
-    "generated_at": "2026-07-26T15:12:37.655Z",
+    "generated_at": "2026-07-27T05:15:26.711Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -1018,81 +1018,14 @@
   "queue": [
     {
       "event_id": "EV-43b56d49df9a73a2",
-      "company_name": "Google",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Google\" \"$12B\" funding investors round",
-        "\"Google\" product customers case study",
-        "\"Google\" \"Jeff Bezos 的 Prometheus 融资 120 亿美元，打造面向物理世界的\"人工通用工程师\"\" competitors product use case",
-        "\"Google\" \"$12B\" investor quote why invested",
-        "\"Google\" \"$12B\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Google\" \"$12B\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Google\" \"$12B\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Google\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Google\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Google\" \"Jeff Bezos 的 Prometheus 融资 120 亿美元，打造面向物理世界的\"人工通用工程师\"\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Google\" \"Jeff Bezos 的 Prometheus 融资 120 亿美元，打造面向物理世界的\"人工通用工程师\"\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Google\" \"$12B\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Google\" \"$12B\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Google\" \"$12B\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Google\" \"$12B\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:12:37.628Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:15:26.701Z"
     },
     {
       "event_id": "EV-a42e51959c627554",
@@ -1248,81 +1181,14 @@
     },
     {
       "event_id": "EV-02548003157849bb",
-      "company_name": "Intel",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:products_missing|cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Intel\" \"$41 billion\" funding investors round",
-        "\"Intel\" product customers case study",
-        "\"Intel\" \"贝佐斯 AI 初创公司 Prometheus 获融资，估值 410 亿美元\" competitors product use case",
-        "\"Intel\" \"$41 billion\" investor quote why invested",
-        "\"Intel\" \"$41 billion\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"$41 billion\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"$41 billion\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"贝佐斯 AI 初创公司 Prometheus 获融资，估值 410 亿美元\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"贝佐斯 AI 初创公司 Prometheus 获融资，估值 410 亿美元\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"$41 billion\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"$41 billion\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Intel\" \"$41 billion\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Intel\" \"$41 billion\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:12:37.628Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:15:26.702Z"
     }
   ]
 }

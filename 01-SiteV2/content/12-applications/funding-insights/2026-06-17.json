@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-06-17",
-    "generated_at": "2026-07-26T15:12:24.389Z",
+    "generated_at": "2026-07-27T05:15:52.434Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -934,81 +934,14 @@
   "queue": [
     {
       "event_id": "EV-189e43cb9fea8e1a",
-      "company_name": "New",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"New\" \"$50 million\" funding investors round",
-        "\"New\" product customers case study",
-        "\"New\" \"Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations\" competitors product use case",
-        "\"New\" \"$50 million\" investor quote why invested",
-        "\"New\" \"$50 million\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"New\" \"$50 million\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"New\" \"$50 million\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"New\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"New\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"New\" \"Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"New\" \"Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"New\" \"$50 million\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"New\" \"$50 million\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"New\" \"$50 million\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"New\" \"$50 million\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:12:24.361Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:15:52.425Z"
     },
     {
       "event_id": "EV-c4c8976ab5b629a3",

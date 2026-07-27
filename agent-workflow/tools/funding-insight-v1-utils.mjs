@@ -91,19 +91,85 @@ export function entityResolver(entityIndex = {}) {
   };
 }
 
-export function subjectCompanyForEvent(event, entities) {
+function subjectSignalScore(text = "", name = "") {
+  const haystack = clean(text).toLowerCase();
+  const needle = clean(name).toLowerCase();
+  if (!haystack || !needle || !haystack.includes(needle)) return 0;
+  const escaped = needle.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+  let score = 0;
+  if (new RegExp(`(?:^|[\\s:：|｜—-])${escaped}`, "iu").test(haystack)) score += 20;
+  if (new RegExp(`${escaped}.{0,24}(?:获|完成|宣布|融资|筹集|募资|估值|ipo|raises?|raised|funding|series|seed|round)`, "iu").test(haystack)) {
+    score += 45;
+  }
+  if (new RegExp(`(?:投资|领投|back(?:ed)?|invest(?:s|ed|ment)?).{0,36}${escaped}`, "iu").test(haystack)) {
+    score += 55;
+  }
+  if (new RegExp(`${escaped}.{0,12}(?:投资|领投|back(?:ed)?|invest(?:s|ed|ment)?)`, "iu").test(haystack)) {
+    score -= 35;
+  }
+  if (new RegExp(`(?:获|得到|backed by).{0,36}${escaped}.{0,16}(?:支持|背书|backing)`, "iu").test(haystack)) {
+    score -= 60;
+  }
+  return score;
+}
+
+function subjectCandidate(entity, index, eventText) {
+  const names = [entity.canonical_name || entity.name, ...(entity.aliases || [])].filter(Boolean);
+  const scores = names.map((name) => {
+    const normalized = normalizedName(name);
+    const lexical = eventText.normalized.includes(normalized) ? Math.min(30, normalized.length) : 0;
+    return lexical + subjectSignalScore(eventText.raw, name);
+  });
+  return {
+    entity,
+    index,
+    score: Math.max(0, ...scores),
+    has_subject_signal: scores.some((score) => score >= 45),
+  };
+}
+
+export function subjectCompanyForEvent(event, entities, entityIndex = {}) {
   const byId = new Map(entities.map((entity) => [entity.entity_id, entity]));
-  const title = normalizedName(event.display_title_zh);
-  const candidates = (event.entities || [])
+  const eventText = {
+    raw: clean([event.display_title_zh, event.action, event.object].filter(Boolean).join(" | ")),
+    normalized: normalizedName([event.display_title_zh, event.action, event.object].filter(Boolean).join(" ")),
+  };
+  const rejectedNames = new Set(["new", "weve", "whywe", "backedbyanthropic"]);
+  const daily = (event.entities || [])
     .map((id, index) => ({ entity: byId.get(id), index }))
     .filter(({ entity }) => entity?.entity_type === "organization_candidate")
-    .map(({ entity, index }) => ({
-      entity,
-      score: title.includes(normalizedName(entity.canonical_name)) ? 20 : 0,
-      index,
+    .filter(({ entity }) => !rejectedNames.has(normalizedName(entity.canonical_name)))
+    .map(({ entity, index }) => subjectCandidate(entity, index, eventText));
+  const linkedIds = new Set(daily.map(({ entity }) => entity.entity_id));
+  const global = (entityIndex.companies || [])
+    .filter((entity) => !linkedIds.has(entity.id))
+    .map((entity, index) => ({
+      entity: {
+        entity_id: entity.id,
+        canonical_name: entity.name,
+        entity_type: entity.sourceType || "organization_candidate",
+        aliases: entity.aliases || [],
+      },
+      index: daily.length + index,
     }))
+    .map(({ entity, index }) => subjectCandidate(entity, index, eventText))
+    .filter((candidate) => candidate.score > 0);
+  const candidates = [...daily, ...global]
+    .filter((candidate) => candidate.score > 0)
     .sort((left, right) => right.score - left.score || left.index - right.index);
-  return candidates[0]?.entity || null;
+  if (!candidates.length) return null;
+  if (!candidates[0].has_subject_signal) {
+    const lexicalMatches = candidates.filter((candidate) => candidate.score >= 6);
+    const eventHasFundingSignal = Boolean((event.metrics || []).length)
+      && /(?:融资|筹集|募资|估值|ipo|raises?|raised|funding|series|seed|round)/iu.test(eventText.raw);
+    return lexicalMatches.length === 1 && eventHasFundingSignal ? lexicalMatches[0].entity : null;
+  }
+  if (
+    candidates[1]
+    && candidates[0].score === candidates[1].score
+    && candidates[0].entity.entity_id !== candidates[1].entity.entity_id
+  ) return null;
+  return candidates[0].entity;
 }
 
 export function evidenceProblems(evidenceRefs = [], sourceById = new Map(), prefix = "evidence") {

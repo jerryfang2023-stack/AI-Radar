@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-11",
-    "generated_at": "2026-07-26T15:19:08.908Z",
+    "generated_at": "2026-07-27T05:21:45.369Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -565,6 +565,7 @@
         "deepseek_json_quality_failed:investors_missing"
       ],
       "queries": [
+        "\"SK Hynix 美国 IPO 融资 265 亿美元，创史上最大外国公司上市纪录\" funding company investors product",
         "\"SK Hynix 美国 IPO\" \"$26.5B\" funding investors round",
         "\"SK Hynix 美国 IPO\" product customers case study",
         "\"SK Hynix 美国 IPO\" \"SK Hynix 美国 IPO 融资 265 亿美元，创史上最大外国公司上市纪录\" competitors product use case",
@@ -572,6 +573,18 @@
         "\"SK Hynix 美国 IPO\" \"$26.5B\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"SK Hynix 美国 IPO 融资 265 亿美元，创史上最大外国公司上市纪录\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"SK Hynix 美国 IPO 融资 265 亿美元，创史上最大外国公司上市纪录\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
         {
           "provider": "tavily",
           "query": "\"SK Hynix 美国 IPO\" \"$26.5B\" funding investors round",
@@ -633,7 +646,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:19:08.908Z"
+      "updated_at": "2026-07-27T05:21:45.368Z"
     },
     {
       "event_id": "EV-415b083fdaa8077f",

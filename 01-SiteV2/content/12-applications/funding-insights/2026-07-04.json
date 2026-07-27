@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-04",
-    "generated_at": "2026-07-26T15:16:50.398Z",
+    "generated_at": "2026-07-27T05:20:00.769Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -863,6 +863,7 @@
         "deepseek_json_quality_failed:products_missing"
       ],
       "queries": [
+        "\"快手旗下AI视频部门Kling融资20亿美元，准备赴港IPO\" funding company investors product",
         "\"快手旗下AI视频部门Kling\" \"$2 billion\" funding investors round",
         "\"快手旗下AI视频部门Kling\" product customers case study",
         "\"快手旗下AI视频部门Kling\" \"快手旗下AI视频部门Kling融资20亿美元，准备赴港IPO\" competitors product use case",
@@ -870,6 +871,18 @@
         "\"快手旗下AI视频部门Kling\" \"$2 billion\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"快手旗下AI视频部门Kling融资20亿美元，准备赴港IPO\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"快手旗下AI视频部门Kling融资20亿美元，准备赴港IPO\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
         {
           "provider": "tavily",
           "query": "\"快手旗下AI视频部门Kling\" \"$2 billion\" funding investors round",
@@ -931,7 +944,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:16:50.373Z"
+      "updated_at": "2026-07-27T05:20:00.725Z"
     }
   ]
 }

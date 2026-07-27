@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-06-06",
-    "generated_at": "2026-07-26T15:10:35.812Z",
+    "generated_at": "2026-07-27T05:15:26.385Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -2617,81 +2617,14 @@
   "queue": [
     {
       "event_id": "EV-cc7020e12bcaa0d7",
-      "company_name": "Salesforce Ventures",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:company_evidence_missing|investors_missing|products_missing"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Salesforce Ventures\" \"$250 million\" funding investors round",
-        "\"Salesforce Ventures\" product customers case study",
-        "\"Salesforce Ventures\" \"Salesforce Ventures targets new $250M fund at generative AI startups\" competitors product use case",
-        "\"Salesforce Ventures\" \"$250 million\" investor quote why invested",
-        "\"Salesforce Ventures\" \"$250 million\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Salesforce Ventures\" \"$250 million\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Salesforce Ventures\" \"$250 million\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Salesforce Ventures\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Salesforce Ventures\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Salesforce Ventures\" \"Salesforce Ventures targets new $250M fund at generative AI startups\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Salesforce Ventures\" \"Salesforce Ventures targets new $250M fund at generative AI startups\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Salesforce Ventures\" \"$250 million\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Salesforce Ventures\" \"$250 million\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Salesforce Ventures\" \"$250 million\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Salesforce Ventures\" \"$250 million\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:10:35.785Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:15:26.358Z"
     },
     {
       "event_id": "EV-a7fd981ce15cd7d8",
@@ -2702,7 +2635,7 @@
       ],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-07-26T15:10:35.785Z"
+      "updated_at": "2026-07-27T05:15:26.358Z"
     },
     {
       "event_id": "EV-29eea3f4a8fcd6f5",
@@ -2864,6 +2797,7 @@
         "deepseek_json_quality_failed:cited_research_sources_insufficient"
       ],
       "queries": [
+        "\"Clara launches with $12M pre-seed round, joins Y Combinator — Clara\" funding company investors product",
         "\"Clara\" \"$12M\" funding investors round",
         "\"Clara\" product customers case study",
         "\"Clara\" \"Clara launches with $12M pre-seed round, joins Y Combinator — Clara\" competitors product use case",
@@ -2871,6 +2805,18 @@
         "\"Clara\" \"$12M\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Clara launches with $12M pre-seed round, joins Y Combinator — Clara\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Clara launches with $12M pre-seed round, joins Y Combinator — Clara\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
         {
           "provider": "tavily",
           "query": "\"Clara\" \"$12M\" funding investors round",
@@ -2932,7 +2878,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:10:35.785Z"
+      "updated_at": "2026-07-27T05:15:26.358Z"
     },
     {
       "event_id": "EV-e579af588ad8cf64",

@@ -2,16 +2,16 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-21",
-    "generated_at": "2026-07-26T15:20:39.221Z",
+    "generated_at": "2026-07-27T05:21:48.507Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
     "counts": {
-      "funding_events": 2,
+      "funding_events": 3,
       "auto_published": 1,
-      "blocked": 1,
+      "blocked": 2,
       "pending": 0
     }
   },
@@ -743,82 +743,26 @@
   ],
   "queue": [
     {
-      "event_id": "EV-d7a7244d620a2142",
-      "company_name": "OpenAI",
+      "event_id": "EV-c84b6d7338f87990",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"OpenAI\" \"$15M\" funding investors round",
-        "\"OpenAI\" product customers case study",
-        "\"OpenAI\" \"Inference startup Infinity raises $15M from Touring Capital, OpenAI and Anthropic researchers | TechCrunch\" competitors product use case",
-        "\"OpenAI\" \"$15M\" investor quote why invested",
-        "\"OpenAI\" \"$15M\" \"why we invested\" OR \"our investment\""
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:21:48.505Z"
+    },
+    {
+      "event_id": "EV-d7a7244d620a2142",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
       ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"OpenAI\" \"$15M\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"OpenAI\" \"$15M\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"OpenAI\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"OpenAI\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"OpenAI\" \"Inference startup Infinity raises $15M from Touring Capital, OpenAI and Anthropic researchers | TechCrunch\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"OpenAI\" \"Inference startup Infinity raises $15M from Touring Capital, OpenAI and Anthropic researchers | TechCrunch\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"OpenAI\" \"$15M\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"OpenAI\" \"$15M\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"OpenAI\" \"$15M\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"OpenAI\" \"$15M\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:20:39.220Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:21:48.506Z"
     },
     {
       "event_id": "EV-439ba8d5f2f575c4",

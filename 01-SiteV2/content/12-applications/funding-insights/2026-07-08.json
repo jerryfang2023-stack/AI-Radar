@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-08",
-    "generated_at": "2026-07-26T15:18:09.184Z",
+    "generated_at": "2026-07-27T05:21:03.542Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -3240,6 +3240,7 @@
         "deepseek_json_quality_failed:cited_research_sources_insufficient"
       ],
       "queries": [
+        "\"One raises $4M to build the trust layer for AI agents | One\" funding company investors product",
         "\"One\" \"$4M\" funding investors round",
         "\"One\" product customers case study",
         "\"One\" \"One raises $4M to build the trust layer for AI agents | One\" competitors product use case",
@@ -3247,6 +3248,18 @@
         "\"One\" \"$4M\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"One raises $4M to build the trust layer for AI agents | One\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"One raises $4M to build the trust layer for AI agents | One\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
         {
           "provider": "tavily",
           "query": "\"One\" \"$4M\" funding investors round",
@@ -3308,7 +3321,7 @@
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:18:09.155Z"
+      "updated_at": "2026-07-27T05:21:03.529Z"
     },
     {
       "event_id": "EV-53acea531ac371d6",
@@ -3464,81 +3477,14 @@
     },
     {
       "event_id": "EV-974a6b7d0e0efef2",
-      "company_name": "Anthropic",
+      "company_name": "",
       "status": "blocked",
       "problems": [
-        "deepseek_json_quality_failed:cited_research_sources_insufficient"
+        "subject_company_unresolved"
       ],
-      "queries": [
-        "\"Anthropic\" \"$40M\" funding investors round",
-        "\"Anthropic\" product customers case study",
-        "\"Anthropic\" \"Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN\" competitors product use case",
-        "\"Anthropic\" \"$40M\" investor quote why invested",
-        "\"Anthropic\" \"$40M\" \"why we invested\" OR \"our investment\""
-      ],
-      "attempts": [
-        {
-          "provider": "tavily",
-          "query": "\"Anthropic\" \"$40M\" funding investors round",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Anthropic\" \"$40M\" funding investors round",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Anthropic\" product customers case study",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Anthropic\" product customers case study",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Anthropic\" \"Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN\" competitors product use case",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Anthropic\" \"Backed by Anthropic, OpenAI, and Meta insiders, Bespoke Labs raises $40M: can better environments beat bigger models? — TFN\" competitors product use case",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Anthropic\" \"$40M\" investor quote why invested",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Anthropic\" \"$40M\" investor quote why invested",
-          "status": "completed",
-          "error": ""
-        },
-        {
-          "provider": "tavily",
-          "query": "\"Anthropic\" \"$40M\" \"why we invested\" OR \"our investment\"",
-          "status": "failed",
-          "error": "tavily_432"
-        },
-        {
-          "provider": "exa",
-          "query": "\"Anthropic\" \"$40M\" \"why we invested\" OR \"our investment\"",
-          "status": "completed",
-          "error": ""
-        }
-      ],
-      "updated_at": "2026-07-26T15:18:09.155Z"
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-27T05:21:03.529Z"
     },
     {
       "event_id": "EV-0f520c9e5b1ea1d2",
