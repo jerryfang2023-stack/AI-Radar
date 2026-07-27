@@ -15,7 +15,10 @@ import {
 } from "../funding-insight-v1-utils.mjs";
 import { selectHistoricalFundingEvents } from "../backfill-funding-insights-history.mjs";
 import { inspectFundingInsightWork } from "../inspect-funding-insight-work.mjs";
-import { buildFundingInsightsFrontstage } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
+import {
+  buildFundingInsightsFrontstage,
+  fundingProductFormId,
+} from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 
@@ -412,8 +415,10 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
     const bundleDir = path.join(tempRoot, "01-SiteV2/content/12-applications/funding-insights");
     const dataDir = path.join(tempRoot, "01-SiteV2/site/data");
     const entityIndexDir = path.join(dataDir, "data-center-v4/indexes");
+    const productDir = path.join(tempRoot, "agent-workflow/product");
     fs.mkdirSync(bundleDir, { recursive: true });
     fs.mkdirSync(entityIndexDir, { recursive: true });
+    fs.mkdirSync(productDir, { recursive: true });
     const blocked = validCard();
     blocked.funding_insight_id = "FI-2";
     blocked.triggered_by_event_id = "EV-2";
@@ -431,12 +436,28 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
       products: [],
       people: [],
     }));
+    fs.writeFileSync(path.join(productDir, "tag-taxonomy-v4.json"), JSON.stringify({
+      facets: [{
+        id: "product_form",
+        values: [{ id: "enterprise_platform", name: "企业 AI 平台", status: "active" }],
+      }],
+    }));
     const data = buildFundingInsightsFrontstage(tempRoot);
     const rebuilt = buildFundingInsightsFrontstage(tempRoot);
     assert.equal(data.cards.length, 1);
     assert.equal(data.meta.generated_at, "2026-07-26T09:00:00.000Z");
     assert.equal(rebuilt.meta.generated_at, data.meta.generated_at);
     assert.equal(data.cards[0].financing.investors[0].name, "Northstar Ventures");
+    assert.deepEqual(data.cards[0].application_category, {
+      dimension: "product_form",
+      id: "enterprise_platform",
+      name: "企业 AI 平台",
+    });
+    assert.deepEqual(data.filters.product_forms, [{
+      dimension: "product_form",
+      id: "enterprise_platform",
+      name: "企业 AI 平台",
+    }]);
     assert.match(data.cards[0].links.company, /detail=entity&id=EN-1/u);
     assert.match(data.cards[0].links.relation_map, /view=relations&entity=EN-1/u);
     assert.equal(data.cards[0].analysis.related_direction.title, "企业智能代理的可重复交付");
@@ -454,10 +475,12 @@ test("融资透视页面使用应用中心新结构并声明自动数据入口",
   assert.match(html, /href="opportunity-map\.html">机会地图/u);
   assert.match(html, /href="intelligence-map\.html">行业报告/u);
   assert.match(html, /assets\/funding-insights\.js/u);
-  assert.match(html, /data-category-tabs/u);
-  assert.doesNotMatch(html, /select name="sector"/u);
+  assert.match(html, /<span>产品方向<\/span>[\s\S]*<select name="product_form"><option value="">全部产品方向<\/option><\/select>/u);
+  assert.doesNotMatch(html, /data-category-tabs|按赛道查看融资项目/u);
   assert.doesNotMatch(html, /data-status|fi-status/u);
-  assert.match(html, /<form class="fi-controls"[\s\S]*data-category-tabs[\s\S]*<\/form>/u);
+  assert.match(html, /<form class="fi-controls"[\s\S]*name="query"[\s\S]*name="round"[\s\S]*name="product_form"[\s\S]*<\/form>/u);
+  assert.match(script, /fillSelect\("product_form", data\.filters\?\.product_forms \|\| \[\]\)/u);
+  assert.match(script, /card\.application_category\?\.id === productForm/u);
   const cardTemplate = script.slice(
     script.indexOf('<article class="fi-card">'),
     script.indexOf('list.querySelectorAll("[data-open-id]")'),
@@ -480,4 +503,20 @@ test("融资透视页面使用应用中心新结构并声明自动数据入口",
   assert.match(detailStyles, /\.fi-section h3\s*\{[\s\S]*--gl-type-detail-h2-size[\s\S]*--gl-type-detail-h2-line/u);
   assert.match(detailStyles, /\.fi-product p\s*\{[\s\S]*--gl-type-detail-body-size[\s\S]*--gl-type-detail-body-line/u);
   assert.doesNotMatch(detailStyles, /font-size:\s*(?:10|11)px|font-weight:\s*(?:650|700)/u);
+});
+
+test("融资透视产品方向使用受控应用层分类，不把自由文本赛道当作 TAG-V4 标签", () => {
+  const chip = validCard();
+  chip.analysis.sector = "AI 推理芯片 / 半导体硬件";
+  assert.equal(fundingProductFormId(chip), "chip_accelerator");
+
+  const agentPlatform = validCard();
+  agentPlatform.analysis.sector = "企业 AI 智能体平台";
+  assert.equal(fundingProductFormId(agentPlatform), "enterprise_platform");
+
+  const application = validCard();
+  application.analysis.sector = "餐饮科技 / AI 虚拟礼宾";
+  application.company.summary = "";
+  application.products = [];
+  assert.equal(fundingProductFormId(application), "ai_application");
 });

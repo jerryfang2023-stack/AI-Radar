@@ -88,7 +88,22 @@ async function main() {
         const response = await page.goto(`${baseUrl}/${route}`, { waitUntil: "networkidle" });
         await page.waitForTimeout(250);
         let fundingDialog = null;
+        let fundingProductFormFilter = null;
         if (route === "funding-insights.html") {
+          const productFormSelect = page.locator('select[name="product_form"]');
+          const productFormOptions = await productFormSelect.locator("option").evaluateAll((options) => options
+            .map((option) => ({ value: option.value, label: option.textContent?.trim() || "" }))
+            .filter((option) => option.value));
+          if (productFormOptions.length) {
+            const selected = productFormOptions[0];
+            await productFormSelect.selectOption(selected.value);
+            const visibleCategories = await page.locator(".fi-card-meta span:first-child").allTextContents();
+            fundingProductFormFilter = visibleCategories.length > 0
+              && visibleCategories.every((label) => label.trim() === selected.label);
+            await productFormSelect.selectOption("");
+          } else {
+            fundingProductFormFilter = false;
+          }
           const firstCard = page.locator("[data-open-id]").first();
           if (await firstCard.count()) {
             await firstCard.click();
@@ -176,8 +191,19 @@ async function main() {
           && metrics.scrollWidth <= metrics.width + 1
           && (!metrics.reportFeatureAlignment || (metrics.reportFeatureAlignment.cardBottomDelta <= 1 && metrics.reportFeatureAlignment.linkBottomDelta <= 1))
           && fundingDialog !== false
+          && fundingProductFormFilter !== false
           && errors.length === 0;
-        results.push({ viewport: viewport.name, route, finalUrl: page.url(), status: response?.status(), ...metrics, fundingDialog, errors, ok });
+        results.push({
+          viewport: viewport.name,
+          route,
+          finalUrl: page.url(),
+          status: response?.status(),
+          ...metrics,
+          fundingDialog,
+          fundingProductFormFilter,
+          errors,
+          ok,
+        });
 
         if (viewport.name === "desktop" && [
           "intelligence-map.html",
