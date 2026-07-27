@@ -131,7 +131,7 @@ InstaLILY从企业AI最困难的领域起步——遗留系统、复杂集成和
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-14--InstaLILY AI--FI-2cd25b403c424ea4|2026-07-14｜InstaLILY，AI 智能体开发者，可自动化复杂业务工作，获 6000 万美元融资｜$60M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-14--InstaLILY AI--FI-2cd25b403c424ea4|2026-07-14｜InstaLILY，AI 智能体开发者，可自动化复杂业务工作，获 6000 万美元融资｜$60M]]
 
 ## 研究来源
 

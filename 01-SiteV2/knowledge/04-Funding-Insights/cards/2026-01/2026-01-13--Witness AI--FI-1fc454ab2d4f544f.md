@@ -126,7 +126,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-01/2026-01-13--Witness AI--FI-1fc454ab2d4f544f|2026-06-04｜恶意智能体与影子AI：风投为何重注AI安全领域｜$58 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-01/2026-01-13--Witness AI--FI-1fc454ab2d4f544f|2026-06-04｜恶意智能体与影子AI：风投为何重注AI安全领域｜$58 million]]
 
 ## 研究来源
 

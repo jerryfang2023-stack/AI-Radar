@@ -118,7 +118,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-29--Drafted--FI-f281c9debf3bb41c|2026-05-29｜Drafted 获 1600 万美元融资，以 AI 重塑家居设计｜$16 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-29--Drafted--FI-f281c9debf3bb41c|2026-05-29｜Drafted 获 1600 万美元融资，以 AI 重塑家居设计｜$16 million]]
 
 ## 研究来源
 

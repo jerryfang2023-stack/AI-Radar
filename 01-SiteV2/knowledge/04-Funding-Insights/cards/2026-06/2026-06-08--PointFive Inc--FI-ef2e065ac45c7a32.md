@@ -157,7 +157,7 @@ Accel 认为管理云和 AI 基础设施是一个工程问题而非仪表盘问�
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-08--PointFive Inc--FI-ef2e065ac45c7a32|2026-06-11｜AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支｜$60 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-08--PointFive Inc--FI-ef2e065ac45c7a32|2026-06-11｜AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支｜$60 million]]
 
 ## 研究来源
 

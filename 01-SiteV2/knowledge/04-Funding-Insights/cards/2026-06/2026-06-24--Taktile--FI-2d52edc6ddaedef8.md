@@ -90,7 +90,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Taktile--FI-2d52edc6ddaedef8|2026-07-07｜这位CEO刚刚筹集1.1亿美元，打造以AI智能体为核心的银行服务｜$110 Million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Taktile--FI-2d52edc6ddaedef8|2026-07-07｜这位CEO刚刚筹集1.1亿美元，打造以AI智能体为核心的银行服务｜$110 Million]]
 
 ## 研究来源
 

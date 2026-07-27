@@ -134,7 +134,7 @@ Felicis认为Runlayer正在解决企业当前最重要的难题：如何在不�
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Runlayer--FI-01b70d8acfeaf371|2026-06-28｜Runlayer 完成3000万美元A轮融资，全力押注人工智能｜$30M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Runlayer--FI-01b70d8acfeaf371|2026-06-28｜Runlayer 完成3000万美元A轮融资，全力押注人工智能｜$30M]]
 
 ## 研究来源
 

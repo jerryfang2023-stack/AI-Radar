@@ -137,7 +137,7 @@ AethexAI 的专有语音模型堆栈，基于呼叫中心、广播和内容平�
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-04--AethexAI--FI-254db0b1596faeda|2026-06-04｜AethexAI 获 300 万美元种子轮融资，助力非洲和中东企业级语音 AI 规模化｜$3M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-04--AethexAI--FI-254db0b1596faeda|2026-06-04｜AethexAI 获 300 万美元种子轮融资，助力非洲和中东企业级语音 AI 规模化｜$3M]]
 
 ## 研究来源
 

@@ -98,7 +98,7 @@ Apollo 将 AI 计算视为具有合同现金流、关键任务属性和持续供
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-10--Anthropic--FI-2c7e9c7109babb35|2026-06-10｜Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资｜$35 billion]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-10--Anthropic--FI-2c7e9c7109babb35|2026-06-10｜Apollo 与 Blackstone 为 Anthropic 完成 350 亿美元 AI 基础设施融资｜$35 billion]]
 
 ## 研究来源
 

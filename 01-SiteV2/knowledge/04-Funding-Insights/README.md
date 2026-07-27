@@ -3,7 +3,7 @@
 本目录由融资透视同步脚本维护：
 
 - 数据源：`01-SiteV2/site/data/funding-insights-v1.json`
-- 根索引：[[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/Funding Insights Index|Funding Insights Index]]
+- 根索引：[[01-SiteV2/knowledge/04-Funding-Insights/Funding Insights Index|Funding Insights Index]]
 - 卡片目录：`cards/YYYY-MM/`
 - 同步命令：`npm run sync:funding-insights-obsidian`
 

@@ -99,7 +99,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Compri--FI-9c3c3a2fb0eee6ff|2026-06-25｜Compri获320万欧元融资，打造AI驱动的采购团队 - Tech.eu｜€3.2M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-24--Compri--FI-9c3c3a2fb0eee6ff|2026-06-25｜Compri获320万欧元融资，打造AI驱动的采购团队 - Tech.eu｜€3.2M]]
 
 ## 研究来源
 

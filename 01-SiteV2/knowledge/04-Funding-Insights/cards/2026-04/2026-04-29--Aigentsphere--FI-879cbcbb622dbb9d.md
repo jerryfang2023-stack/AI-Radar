@@ -111,7 +111,7 @@ Main Sequence 认为，AI 智能体要从实验走向企业级大规模部署，
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-29--Aigentsphere--FI-879cbcbb622dbb9d|2026-06-23｜AI 治理初创公司获 400 万美元种子轮融资｜$4 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-29--Aigentsphere--FI-879cbcbb622dbb9d|2026-06-23｜AI 治理初创公司获 400 万美元种子轮融资｜$4 million]]
 
 ## 研究来源
 

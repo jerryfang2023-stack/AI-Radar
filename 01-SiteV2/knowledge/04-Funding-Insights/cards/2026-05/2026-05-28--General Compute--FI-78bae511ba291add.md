@@ -108,7 +108,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-28--General Compute--FI-78bae511ba291add|2026-07-08｜AI 算力争夺战是否催生了下一个 Cerebras？｜$15 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-28--General Compute--FI-78bae511ba291add|2026-07-08｜AI 算力争夺战是否催生了下一个 Cerebras？｜$15 million]]
 
 ## 研究来源
 

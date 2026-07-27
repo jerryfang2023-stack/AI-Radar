@@ -152,7 +152,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-25--General Intuition--FI-adb73b37b79b4dc7|2026-06-25｜General Intuition 完成 3.2 亿美元融资，用游戏数据训练通用 AI 智能体｜$320 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-25--General Intuition--FI-adb73b37b79b4dc7|2026-06-25｜General Intuition 完成 3.2 亿美元融资，用游戏数据训练通用 AI 智能体｜$320 million]]
 
 ## 研究来源
 

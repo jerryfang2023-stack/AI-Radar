@@ -139,7 +139,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-01--Team Aligned Inc--FI-58dc16e46e57a9e8|2026-07-06｜Aligned获6000万美元融资，打造面向企业交易的AI原生销售执行层 - SiliconANGLE｜$60 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-01--Team Aligned Inc--FI-58dc16e46e57a9e8|2026-07-06｜Aligned获6000万美元融资，打造面向企业交易的AI原生销售执行层 - SiliconANGLE｜$60 million]]
 
 ## 研究来源
 

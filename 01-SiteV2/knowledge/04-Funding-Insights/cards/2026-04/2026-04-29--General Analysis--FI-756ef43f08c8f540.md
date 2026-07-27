@@ -84,7 +84,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-29--General Analysis--FI-756ef43f08c8f540|2026-05-24｜General Analysis 获 1000 万美元种子轮融资，用于保障 AI 智能体安全｜$10M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-29--General Analysis--FI-756ef43f08c8f540|2026-05-24｜General Analysis 获 1000 万美元种子轮融资，用于保障 AI 智能体安全｜$10M]]
 
 ## 研究来源
 

@@ -113,7 +113,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-02--Archestra Inc--FI-6c2faabba03d416d|2026-06-05｜Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务｜$10M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-02--Archestra Inc--FI-6c2faabba03d416d|2026-06-05｜Archestra 融资 1000 万美元，为 AI 智能体接入企业数据提供中介服务｜$10M]]
 
 ## 研究来源
 

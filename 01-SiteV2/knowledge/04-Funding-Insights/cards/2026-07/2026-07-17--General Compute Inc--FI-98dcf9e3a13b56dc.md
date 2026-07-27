@@ -100,7 +100,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-17--General Compute Inc--FI-98dcf9e3a13b56dc|2026-07-17｜推理云运营商 General Compute 获得 4 亿美元债务融资｜$400M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-17--General Compute Inc--FI-98dcf9e3a13b56dc|2026-07-17｜推理云运营商 General Compute 获得 4 亿美元债务融资｜$400M]]
 
 ## 研究来源
 

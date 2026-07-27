@@ -119,7 +119,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2025-05/2025-05-06--Relevance AI--FI-650c1ce24e056ab4|2026-06-02｜Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体｜$24M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2025-05/2025-05-06--Relevance AI--FI-650c1ce24e056ab4|2026-06-02｜Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体｜$24M]]
 
 ## 研究来源
 

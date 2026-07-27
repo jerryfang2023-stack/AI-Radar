@@ -115,7 +115,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-20--Neo Security, Inc--FI-bc962e05b6cfb149|2026-07-20｜Neo 获 1 亿美元融资，致力于保障企业级 AI 软件安全｜$100M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-20--Neo Security, Inc--FI-bc962e05b6cfb149|2026-07-20｜Neo 获 1 亿美元融资，致力于保障企业级 AI 软件安全｜$100M]]
 
 ## 研究来源
 

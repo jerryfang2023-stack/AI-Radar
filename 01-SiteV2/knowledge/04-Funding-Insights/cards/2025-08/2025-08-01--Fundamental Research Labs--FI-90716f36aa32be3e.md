@@ -94,7 +94,7 @@ Fairies是一款通用消费者助手，允许用户与AI机器人聊天、连�
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2025-08/2025-08-01--Fundamental Research Labs--FI-90716f36aa32be3e|2025-08-01｜Fundamental Research Labs 获超 3000 万美元融资，用于跨垂直领域构建 AI 智能体｜$30M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2025-08/2025-08-01--Fundamental Research Labs--FI-90716f36aa32be3e|2025-08-01｜Fundamental Research Labs 获超 3000 万美元融资，用于跨垂直领域构建 AI 智能体｜$30M]]
 
 ## 研究来源
 

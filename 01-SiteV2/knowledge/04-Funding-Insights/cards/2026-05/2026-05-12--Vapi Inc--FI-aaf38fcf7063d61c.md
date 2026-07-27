@@ -96,7 +96,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-12--Vapi Inc--FI-aaf38fcf7063d61c|2026-06-04｜Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE｜$50M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-12--Vapi Inc--FI-aaf38fcf7063d61c|2026-06-04｜Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE｜$50M]]
 
 ## 研究来源
 

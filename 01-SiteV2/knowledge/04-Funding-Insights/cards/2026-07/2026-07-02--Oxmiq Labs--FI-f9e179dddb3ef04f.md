@@ -139,7 +139,7 @@ OxPython 是一个专用软件层，允许开发者直接在 OxCore 硬件上运
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-02--Oxmiq Labs--FI-f9e179dddb3ef04f|2026-07-07｜Raja Koduri 的 Oxmiq 融资 3500 万美元，出租 AI 芯片设计而非销售芯片｜$35m]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-02--Oxmiq Labs--FI-f9e179dddb3ef04f|2026-07-07｜Raja Koduri 的 Oxmiq 融资 3500 万美元，出租 AI 芯片设计而非销售芯片｜$35m]]
 
 ## 研究来源
 

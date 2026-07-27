@@ -133,7 +133,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-08--Hostie--FI-1fd24df5ecb12af2|2026-07-09｜Hostie 完成1200万美元A轮融资，助力餐饮服务业未来｜$12 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-08--Hostie--FI-1fd24df5ecb12af2|2026-07-09｜Hostie 完成1200万美元A轮融资，助力餐饮服务业未来｜$12 million]]
 
 ## 研究来源
 

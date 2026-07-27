@@ -140,7 +140,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-31--Nexus Enterprises, Inc--FI-f85a19449e9db508|2026-05-20｜Nexus 获430万美元种子轮融资，助力业务团队部署｜$4.3M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-03/2026-03-31--Nexus Enterprises, Inc--FI-f85a19449e9db508|2026-05-20｜Nexus 获430万美元种子轮融资，助力业务团队部署｜$4.3M]]
 
 ## 研究来源
 

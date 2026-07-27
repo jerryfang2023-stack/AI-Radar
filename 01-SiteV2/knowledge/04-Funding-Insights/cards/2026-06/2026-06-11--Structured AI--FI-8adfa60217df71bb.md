@@ -104,7 +104,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-11--Structured AI--FI-8adfa60217df71bb|2026-06-13｜Structured AI 获420万美元种子轮融资，为建筑世界构建质量层｜$4.2M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-11--Structured AI--FI-8adfa60217df71bb|2026-06-13｜Structured AI 获420万美元种子轮融资，为建筑世界构建质量层｜$4.2M]]
 
 ## 研究来源
 

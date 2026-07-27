@@ -176,7 +176,7 @@ Thakker注意到邮件攻击增加后，主动寻找一家能以AI对抗AI的初
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-23--AegisAI--FI-efb7c752e7a0f57f|2026-07-23｜由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼｜$36 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-23--AegisAI--FI-efb7c752e7a0f57f|2026-07-23｜由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼｜$36 million]]
 
 ## 研究来源
 

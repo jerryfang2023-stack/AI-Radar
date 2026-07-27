@@ -115,7 +115,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-30--Featherless.ai--FI-2292727d2e0b8d81|2026-04-30｜Featherless.ai 获 2000 万美元融资，扩展开源 AI 无服务器平台｜$20M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-30--Featherless.ai--FI-2292727d2e0b8d81|2026-04-30｜Featherless.ai 获 2000 万美元融资，扩展开源 AI 无服务器平台｜$20M]]
 
 ## 研究来源
 

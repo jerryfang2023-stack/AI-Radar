@@ -107,7 +107,7 @@ PXN Ventures 从 PraeSeed 项目开始持续支持，看好创始人和他们为
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-02--BidScript LTD--FI-0999f8df1caf6c00|2026-07-09｜BidScript 获 80 万美元融资，推动 AI 平台升级公共与私营部门招投标流程｜$800]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-02--BidScript LTD--FI-0999f8df1caf6c00|2026-07-09｜BidScript 获 80 万美元融资，推动 AI 平台升级公共与私营部门招投标流程｜$800]]
 
 ## 研究来源
 

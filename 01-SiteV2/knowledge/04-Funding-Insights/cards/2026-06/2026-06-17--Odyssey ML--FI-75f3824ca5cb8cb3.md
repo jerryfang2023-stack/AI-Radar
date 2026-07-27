@@ -135,11 +135,11 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-12--Auger--FI-594ff98dadcfaaf9|2026-07-12｜Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化｜$50M]]
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-23--Orthogonal--FI-7629e68ffced6448|2026-06-27｜Orthogonal 获 430 万美元种子轮融资，用于互联网上的 AI 代理服务发现、编排与支付｜$4.3 million]]
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-17--Odyssey ML--FI-75f3824ca5cb8cb3|2026-06-17｜世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元｜$310 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-12--Auger--FI-594ff98dadcfaaf9|2026-07-12｜Auger 获 5000 万美元 B 轮融资，用于 AI 供应链自动化｜$50M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-23--Orthogonal--FI-7629e68ffced6448|2026-06-27｜Orthogonal 获 430 万美元种子轮融资，用于互联网上的 AI 代理服务发现、编排与支付｜$4.3 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-17--Odyssey ML--FI-75f3824ca5cb8cb3|2026-06-17｜世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元｜$310 million]]
 - 2026-06-11｜贝佐斯 AI 初创公司 Prometheus 获融资，估值 410 亿美元｜$41 billion
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-01/2026-01-19--Aivar Innovations--FI-0ffd6f7fbdda6b8c|2026-01-19｜AI 初创公司：印度 Aivar 获 460 万美元融资，推动企业 AI 应用｜$4.6M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-01/2026-01-19--Aivar Innovations--FI-0ffd6f7fbdda6b8c|2026-01-19｜AI 初创公司：印度 Aivar 获 460 万美元融资，推动企业 AI 应用｜$4.6M]]
 
 ## 研究来源
 

@@ -123,7 +123,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-02/2026-02-17--Temporal Technologies--FI-f963f997b1209180|2026-05-22｜Temporal 完成 D 轮融资｜$300M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-02/2026-02-17--Temporal Technologies--FI-f963f997b1209180|2026-05-22｜Temporal 完成 D 轮融资｜$300M]]
 
 ## 研究来源
 

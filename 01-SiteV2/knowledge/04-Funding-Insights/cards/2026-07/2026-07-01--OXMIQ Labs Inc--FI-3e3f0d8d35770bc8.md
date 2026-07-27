@@ -128,7 +128,7 @@ MediaTek正在积极推动从边缘到云的AI能力，投资OXMIQ旨在结合�
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-01--OXMIQ Labs Inc--FI-3e3f0d8d35770bc8|2026-07-11｜HPCwire - 自1987年起——报道全球最快计算机及其运营者｜$35 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-01--OXMIQ Labs Inc--FI-3e3f0d8d35770bc8|2026-07-11｜HPCwire - 自1987年起——报道全球最快计算机及其运营者｜$35 million]]
 
 ## 研究来源
 

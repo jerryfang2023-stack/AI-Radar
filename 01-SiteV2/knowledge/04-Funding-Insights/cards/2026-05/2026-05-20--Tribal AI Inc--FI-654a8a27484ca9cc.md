@@ -78,7 +78,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-20--Tribal AI Inc--FI-654a8a27484ca9cc|2026-05-23｜Tribal AI 获 1000 万美元种子轮融资，为企业带来元数据原生 AI 智能体｜$10 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-05/2026-05-20--Tribal AI Inc--FI-654a8a27484ca9cc|2026-05-23｜Tribal AI 获 1000 万美元种子轮融资，为企业带来元数据原生 AI 智能体｜$10 million]]
 
 ## 研究来源
 

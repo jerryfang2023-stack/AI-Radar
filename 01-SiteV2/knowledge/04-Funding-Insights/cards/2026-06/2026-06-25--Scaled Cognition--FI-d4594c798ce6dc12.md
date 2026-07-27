@@ -122,7 +122,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-25--Scaled Cognition--FI-d4594c798ce6dc12|2026-06-25｜Scaled Cognition 获 Khosla 领投 1 亿美元融资｜$100M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-25--Scaled Cognition--FI-d4594c798ce6dc12|2026-06-25｜Scaled Cognition 获 Khosla 领投 1 亿美元融资｜$100M]]
 
 ## 研究来源
 

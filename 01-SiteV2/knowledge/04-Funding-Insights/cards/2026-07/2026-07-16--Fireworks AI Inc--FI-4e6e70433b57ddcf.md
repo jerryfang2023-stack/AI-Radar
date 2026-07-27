@@ -138,7 +138,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-16--Fireworks AI Inc--FI-4e6e70433b57ddcf|2026-07-16｜AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元｜$1.5B]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-16--Fireworks AI Inc--FI-4e6e70433b57ddcf|2026-07-16｜AI 基础设施初创公司 Fireworks 完成 15 亿美元融资，估值达 175 亿美元｜$1.5B]]
 
 ## 研究来源
 

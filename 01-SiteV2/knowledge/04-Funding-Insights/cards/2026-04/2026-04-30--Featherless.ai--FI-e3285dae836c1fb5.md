@@ -109,8 +109,8 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-17--Odyssey ML--FI-75f3824ca5cb8cb3|2026-06-17｜世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元｜$310 million]]
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-30--Featherless.ai--FI-e3285dae836c1fb5|2026-05-23｜AMD 与空客支持 Featherless.ai 的 2000 万美元 A 轮融资，助力开源 AI 基础设施｜$20M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-17--Odyssey ML--FI-75f3824ca5cb8cb3|2026-06-17｜世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元｜$310 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-04/2026-04-30--Featherless.ai--FI-e3285dae836c1fb5|2026-05-23｜AMD 与空客支持 Featherless.ai 的 2000 万美元 A 轮融资，助力开源 AI 基础设施｜$20M]]
 
 ## 研究来源
 

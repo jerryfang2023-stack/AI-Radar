@@ -114,7 +114,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-02--Impulse Space--FI-a329e296c3d1ffea|2026-06-22｜本周十大融资轮次 - Crunchbase News｜$500 million]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-06/2026-06-02--Impulse Space--FI-a329e296c3d1ffea|2026-06-22｜本周十大融资轮次 - Crunchbase News｜$500 million]]
 
 ## 研究来源
 

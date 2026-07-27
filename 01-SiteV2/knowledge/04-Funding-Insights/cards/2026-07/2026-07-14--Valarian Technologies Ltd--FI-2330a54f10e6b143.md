@@ -147,7 +147,7 @@ tags:
 
 ## 融资历史
 
-- [[01-WaveSight/01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-14--Valarian Technologies Ltd--FI-2330a54f10e6b143|2026-07-14｜主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全｜$50M]]
+- [[01-SiteV2/knowledge/04-Funding-Insights/cards/2026-07/2026-07-14--Valarian Technologies Ltd--FI-2330a54f10e6b143|2026-07-14｜主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全｜$50M]]
 
 ## 研究来源
 
