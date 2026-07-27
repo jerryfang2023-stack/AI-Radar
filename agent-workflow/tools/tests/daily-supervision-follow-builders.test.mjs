@@ -178,3 +178,35 @@ test("historical morning health uses its exact-date gate and manifest", async ()
     fs.rmSync(fixtureRoot, { recursive: true, force: true });
   }
 });
+
+test("confirmed Community Intelligence publication prevents recurring task-result noise", async () => {
+  const originalCwd = process.cwd();
+  const originalArgv = process.argv;
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-community-task-result-"));
+  try {
+    const supervisor = await loadSupervisor(
+      fixtureRoot,
+      ["--date=2026-07-27", "--github=off", "--scheduled-task=off", "--hermes=off"],
+      "community-task-result",
+    );
+    assert.equal(supervisor.classifyCommunityTaskResult({
+      lastResult: 1,
+      dataHealthy: true,
+      publicationConfirmed: true,
+    }), "published");
+    assert.equal(supervisor.classifyCommunityTaskResult({
+      lastResult: 1,
+      dataHealthy: true,
+      publicationConfirmed: false,
+    }), "warning");
+    assert.equal(supervisor.classifyCommunityTaskResult({
+      lastResult: 1,
+      dataHealthy: false,
+      publicationConfirmed: true,
+    }), "problem");
+  } finally {
+    process.chdir(originalCwd);
+    process.argv = originalArgv;
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});

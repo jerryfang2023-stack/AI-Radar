@@ -903,6 +903,12 @@ export function buildFollowBuildersSkillLane() {
   };
 }
 
+export function classifyCommunityTaskResult({ lastResult, dataHealthy, publicationConfirmed }) {
+  if (!Number.isFinite(lastResult) || lastResult === 0) return "passed";
+  if (!dataHealthy) return "problem";
+  return publicationConfirmed ? "published" : "warning";
+}
+
 function buildCommunityLane() {
   const problems = [];
   const waiting = [];
@@ -937,6 +943,11 @@ function buildCommunityLane() {
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
   const openPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.state === "OPEN") : null;
   const publicationReady = Boolean(gh.latest_run || mergedPr || openPr || usePublishedData);
+  const publicationConfirmed = Boolean(
+    mergedPr
+    || usePublishedData
+    || gh.latest_run?.conclusion === "success",
+  );
   const publishedGateText = usePublishedData ? readTextFromGit("origin/main", gateFile) : "";
 
   evidence.generatedAt = data?.meta?.generatedAt || "";
@@ -992,12 +1003,16 @@ function buildCommunityLane() {
     if (!["Ready", "Running"].includes(state)) {
       addProblem(problems, `community scheduled task state is ${state || "unknown"}`, "manual_required");
     }
-    if (Number.isFinite(lastResult) && lastResult !== 0) {
-      if (communityDataHealthy) {
-        warnings.push(`community scheduled task last result is ${lastResult}, but same-date data and gate are healthy`);
-      } else {
-        addProblem(problems, `community scheduled task last result is ${lastResult}`, "manual_required");
-      }
+    const taskResultStatus = classifyCommunityTaskResult({
+      lastResult,
+      dataHealthy: communityDataHealthy,
+      publicationConfirmed,
+    });
+    evidence.scheduledTask.lastResultStatus = taskResultStatus;
+    if (taskResultStatus === "warning") {
+      warnings.push(`community scheduled task last result is ${lastResult}, but same-date data and gate are healthy`);
+    } else if (taskResultStatus === "problem") {
+      addProblem(problems, `community scheduled task last result is ${lastResult}`, "manual_required");
     }
   } else {
     warnings.push(task.warning || "scheduled task state unavailable");
