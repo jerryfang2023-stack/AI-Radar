@@ -21,6 +21,7 @@ encoding: UTF-8
 | `02-Opinion-Cards/` | First-Line Viewpoints 相关观点资产 | 必须有原文 / 摘录、出处、事实边界和评级 |
 | `02-Opinion-Timelines/` | First-Line Viewpoints Obsidian 时间线 | 按人物 / 日期同步，必须可幂等重跑 |
 | `03-Asset-Candidates/` | 后台判断候选 | 变化、场景、趋势候选；未成熟前不直接前台展示 |
+| `04-Funding-Insights/` | 融资透视 Obsidian 研究档案 | 仅同步自动发布门禁通过的融资卡片，保留研究来源和 exact-quote 证据 |
 | `10-Templates/` | 当前知识卡模板 | 只能保留当前仍会使用的模板 |
 
 ## 不进入 knowledge 的内容

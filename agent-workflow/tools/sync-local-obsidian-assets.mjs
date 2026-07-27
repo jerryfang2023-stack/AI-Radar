@@ -24,6 +24,7 @@ const commands = [
   ["node", ["01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs"]],
   ["node", ["agent-workflow/tools/build-legacy-card-event-mappings.mjs"]],
   ["node", ["agent-workflow/tools/build-data-center-v4-obsidian-index.mjs"]],
+  ["node", ["agent-workflow/tools/sync-funding-insights-to-obsidian.mjs"]],
   ["node", ["agent-workflow/tools/sync-business-lenses-to-obsidian.mjs"]],
   ["node", ["01-SiteV2/site/scripts/build-follow-builders-page-data.mjs"]],
   ["node", ["01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"]],
@@ -82,6 +83,7 @@ function main() {
     "- `01-SiteV2/site/data/data-center-v4-frontstage.json`",
     "- `01-SiteV2/content/11-databases/data-center-v4/Data Center V4 Index.md`",
     "- `01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.json`",
+    "- `01-SiteV2/knowledge/04-Funding-Insights/`",
     "- `01-SiteV2/content/09-fde/`",
     "- `01-SiteV2/content/10-ai-hardware/`",
     "- `01-SiteV2/site/data/follow-builders-daily.json`",
@@ -97,6 +99,7 @@ function main() {
       "01-SiteV2/site/data/data-center-v4-frontstage.json",
       "01-SiteV2/content/11-databases/data-center-v4/Data Center V4 Index.md",
       "01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.json",
+      "01-SiteV2/knowledge/04-Funding-Insights/",
       "01-SiteV2/site/data/follow-builders-daily.json",
     ],
   }, null, 2));
