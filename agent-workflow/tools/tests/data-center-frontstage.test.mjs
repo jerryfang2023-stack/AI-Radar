@@ -221,6 +221,7 @@ test("first-line viewpoints uses both monitoring lanes and the three-level V4 pa
   const html = fs.readFileSync(path.join(root, "01-SiteV2/site/data-center.html"), "utf8");
   const script = fs.readFileSync(path.join(root, "01-SiteV2/site/assets/data-center-v4.js"), "utf8");
   const projection = fs.readFileSync(path.join(root, "01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs"), "utf8");
+  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-first-line-viewpoints-pr.yml"), "utf8");
   const data = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/first-line-viewpoints-v4.json"), "utf8"));
 
   assert.match(html, /data-viewpoint-dialog/u);
@@ -233,6 +234,9 @@ test("first-line viewpoints uses both monitoring lanes and the three-level V4 pa
   assert.match(projection, /afternoon-skill/u);
   assert.match(projection, /first-line-viewpoints-history\.json/u);
   assert.match(projection, /coveredByMorning/u);
+  assert.match(workflow, /Refresh Data Center viewpoint adapter/u);
+  assert.match(workflow, /refresh-data-center-viewpoints-adapter\.mjs/u);
+  assert.match(workflow, /stage_if_exists "01-SiteV2\/site\/data\/data-center-v4-frontstage\.json"/u);
   assert.equal(data.meta.lanes.morning.id, "morning-rss");
   assert.equal(data.meta.lanes.afternoon.id, "afternoon-skill");
   assert.equal(data.meta.lanes.afternoon.declaredCount, data.intake.length);

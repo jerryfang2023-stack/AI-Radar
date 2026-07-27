@@ -115,6 +115,7 @@ jobs:
           node --check agent-workflow/tools/opinion-translation-utils.mjs
           node --check agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs
           node --check agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs
+          node --check agent-workflow/tools/refresh-data-center-viewpoints-adapter.mjs
           node --check 01-SiteV2/site/scripts/build-follow-builders-page-data.mjs
           node --check 01-SiteV2/site/scripts/build-first-line-viewpoints-v4-data.mjs
           gh --version
@@ -176,6 +177,16 @@ jobs:
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-builders-gate.log"
           node agent-workflow/tools/assert-first-line-viewpoints-v4-data.mjs --require-afternoon=false
 
+      - name: Refresh Data Center viewpoint adapter
+        id: viewpoint-adapter
+        if: always() && steps.builders-gate.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          node agent-workflow/tools/refresh-data-center-viewpoints-adapter.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-first-line-viewpoints-adapter.log"
+
       - name: Sync first-line viewpoints to Obsidian timelines
         id: obsidian-sync
         if: always() && steps.builders-gate.outcome == 'success'
@@ -213,6 +224,7 @@ jobs:
           - builder_podcasts: ${{ steps.builder-podcasts.outcome }}
           - builders_data: ${{ steps.builders-data.outcome }}
           - builders_gate: ${{ steps.builders-gate.outcome }}
+          - viewpoint_adapter: ${{ steps.viewpoint-adapter.outcome }}
           - obsidian_sync: ${{ steps.obsidian-sync.outcome }}
           - deepseek_translation: $([ -n "$DEEPSEEK_API_KEY" ] && echo configured || echo missing)
           - deepseek_flash_model: ${DEEPSEEK_FLASH_MODEL}
@@ -235,13 +247,14 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-follow-builders-data-gate.md
             01-SiteV2/site/data/follow-builders-daily.json
             01-SiteV2/site/data/first-line-viewpoints-v4.json
+            01-SiteV2/site/data/data-center-v4-frontstage.json
             01-SiteV2/knowledge/02-Opinion-Timelines/**
             01-SiteV2/content/11-databases/builder-blog-feed.json
             01-SiteV2/content/11-databases/builder-podcast-feed.json
 
       - name: Commit first-line viewpoints to automation branch
         id: commit
-        if: always() && steps.builders-gate.outcome == 'success' && steps.obsidian-sync.outcome == 'success'
+        if: always() && steps.builders-gate.outcome == 'success' && steps.viewpoint-adapter.outcome == 'success' && steps.obsidian-sync.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
@@ -261,6 +274,7 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-follow-builders-data-gate.md"
           stage_if_exists "01-SiteV2/site/data/follow-builders-daily.json"
           stage_if_exists "01-SiteV2/site/data/first-line-viewpoints-v4.json"
+          stage_if_exists "01-SiteV2/site/data/data-center-v4-frontstage.json"
           stage_if_exists "01-SiteV2/knowledge/02-Opinion-Timelines"
           stage_if_exists "01-SiteV2/content/11-databases/builder-blog-feed.json"
           stage_if_exists "01-SiteV2/content/11-databases/builder-podcast-feed.json"
@@ -294,6 +308,7 @@ jobs:
           - refreshed builder blog and podcast feeds when available;
           - rebuilt \`follow-builders-daily.json\`;
           - passed \`assert-follow-builders-data.mjs\`;
+          - refreshed the Data Center viewpoint adapter used by the factual catalog gate;
           - synced same-day Builder viewpoints into \`01-SiteV2/knowledge/02-Opinion-Timelines/\`;
           - no business-signal Cards, relationship graph data, trend candidates, or community intelligence data.
 
@@ -336,7 +351,7 @@ jobs:
 
       - name: Auto-merge PR after gate passes
         id: auto-merge
-        if: always() && steps.pr.outputs.pr_number != '' && steps.builders-gate.outcome == 'success'
+        if: always() && steps.pr.outputs.pr_number != '' && steps.builders-gate.outcome == 'success' && steps.viewpoint-adapter.outcome == 'success'
         env:
           GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
         shell: bash
@@ -390,6 +405,7 @@ jobs:
 
           require_success "Build first-line viewpoints data" "${{ steps.builders-data.outcome }}"
           require_success "First-line viewpoints data gate" "${{ steps.builders-gate.outcome }}"
+          require_success "Data Center viewpoint adapter" "${{ steps.viewpoint-adapter.outcome }}"
           require_success "Obsidian viewpoint timeline sync" "${{ steps.obsidian-sync.outcome }}"
 
           if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then

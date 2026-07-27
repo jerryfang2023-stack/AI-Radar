@@ -387,7 +387,7 @@ function buildCommunity(root) {
   })).sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id));
 }
 
-function buildViewpoints(root, entityProfiles = []) {
+export function buildViewpoints(root, entityProfiles = []) {
   const file = path.join(root, "01-SiteV2/site/data/first-line-viewpoints-v4.json");
   const data = readJson(file, { meta: {}, remarks: [] });
   const peopleByKey = new Map();
