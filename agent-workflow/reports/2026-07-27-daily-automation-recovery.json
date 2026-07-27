@@ -1,0 +1,87 @@
+{
+  "ok": true,
+  "healthOk": true,
+  "status": "passed_or_waiting",
+  "lanes": {
+    "business": {
+      "label": "Data Center V4 recovery router",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-27T01:15:02.448Z",
+      "finished_at": "2026-07-27T01:15:24.032Z",
+      "command": "node agent-workflow/tools/run-business-signals-health-dispatch.mjs --date=2026-07-27",
+      "stdout": "{\n  \"ok\": true,\n  \"date\": \"2026-07-27\",\n  \"action\": \"dispatched\",\n  \"reason\": \"no healthy same-date assets and no active/successful run; dispatched primary Business Signals workflow\",\n  \"report\": \"agent-workflow/reports/2026-07-27-business-signals-health-dispatch.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-27-business-signals-health-dispatch.md\"\n}",
+      "stderr": ""
+    },
+    "first_line_viewpoints": {
+      "ok": true,
+      "status": "healthy",
+      "actions": [
+        {
+          "label": "First-Line Viewpoints gate",
+          "ok": true,
+          "status": 0,
+          "started_at": "2026-07-27T01:15:24.032Z",
+          "finished_at": "2026-07-27T01:15:24.170Z",
+          "command": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-07-27",
+          "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"issue_count\": 0,\n  \"warning_count\": 0,\n  \"report\": \"agent-workflow/reports/2026-07-27-follow-builders-data-gate.md\"\n}",
+          "stderr": ""
+        }
+      ]
+    },
+    "community_intelligence": {
+      "ok": true,
+      "status": "healthy",
+      "actions": [
+        {
+          "label": "Community Intelligence gate",
+          "ok": true,
+          "status": 0,
+          "started_at": "2026-07-27T01:15:24.170Z",
+          "finished_at": "2026-07-27T01:15:24.260Z",
+          "command": "node agent-workflow/tools/assert-community-intelligence-data.mjs --date=2026-07-27",
+          "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"report\": \"agent-workflow/reports/2026-07-27-community-intelligence-gate.md\",\n  \"items\": 35,\n  \"links\": 98,\n  \"generatedAt\": \"2026-07-27T00:32:59.270Z\"\n}",
+          "stderr": ""
+        }
+      ],
+      "note": ""
+    }
+  },
+  "actions": [
+    {
+      "label": "Data Center V4 recovery router",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-27T01:15:02.448Z",
+      "finished_at": "2026-07-27T01:15:24.032Z",
+      "command": "node agent-workflow/tools/run-business-signals-health-dispatch.mjs --date=2026-07-27",
+      "stdout": "{\n  \"ok\": true,\n  \"date\": \"2026-07-27\",\n  \"action\": \"dispatched\",\n  \"reason\": \"no healthy same-date assets and no active/successful run; dispatched primary Business Signals workflow\",\n  \"report\": \"agent-workflow/reports/2026-07-27-business-signals-health-dispatch.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-27-business-signals-health-dispatch.md\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "First-Line Viewpoints gate",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-27T01:15:24.032Z",
+      "finished_at": "2026-07-27T01:15:24.170Z",
+      "command": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-07-27",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"issue_count\": 0,\n  \"warning_count\": 0,\n  \"report\": \"agent-workflow/reports/2026-07-27-follow-builders-data-gate.md\"\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Community Intelligence gate",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-27T01:15:24.170Z",
+      "finished_at": "2026-07-27T01:15:24.260Z",
+      "command": "node agent-workflow/tools/assert-community-intelligence-data.mjs --date=2026-07-27",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"passed\",\n  \"report\": \"agent-workflow/reports/2026-07-27-community-intelligence-gate.md\",\n  \"items\": 35,\n  \"links\": 98,\n  \"generatedAt\": \"2026-07-27T00:32:59.270Z\"\n}",
+      "stderr": ""
+    }
+  ],
+  "notes": [],
+  "phase": "recovery",
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T01:15:24.260Z",
+  "dry_run": false
+}

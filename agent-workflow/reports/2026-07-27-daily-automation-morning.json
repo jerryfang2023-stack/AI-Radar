@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "status": "passed",
+  "actions": [
+    {
+      "label": "Skill Ops preflight",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-27T00:10:03.262Z",
+      "finished_at": "2026-07-27T00:10:09.041Z",
+      "command": "node agent-workflow/tools/check-skill-ops.mjs",
+      "stdout": "Skill Ops status: passed\nSkill Store version: v1.7.0\nGoverned skills: 27\nCurrent skills: 19\nLane owners: 5\nRegistry: current\nRepo runtime drift: 0\nCompatibility mirror drift: 0 (informational)\nEval coverage: 100%\nExample coverage: 100%\nDashboard contract: passed\nDashboard skills: 167\nLocal Skill discovery: passed (239 discovered, 52 enabled, 187 disabled)",
+      "stderr": ""
+    },
+    {
+      "label": "Data Center V4 production dispatch",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-27T00:10:09.041Z",
+      "finished_at": "2026-07-27T00:10:48.491Z",
+      "command": "node agent-workflow/tools/run-business-signals-health-dispatch.mjs --date=2026-07-27",
+      "stdout": "{\n  \"ok\": true,\n  \"date\": \"2026-07-27\",\n  \"action\": \"dispatched\",\n  \"reason\": \"no healthy same-date assets and no active/successful run; dispatched primary Business Signals workflow\",\n  \"report\": \"agent-workflow/reports/2026-07-27-business-signals-health-dispatch.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-27-business-signals-health-dispatch.md\"\n}",
+      "stderr": ""
+    }
+  ],
+  "notes": [],
+  "phase": "morning",
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T00:10:48.491Z",
+  "dry_run": false
+}

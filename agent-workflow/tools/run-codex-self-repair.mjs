@@ -235,9 +235,8 @@ function writeReport(payload) {
         `- status: ${payload.codex_invocation.status}`,
       ].join("\n")
       : "- none",
-    "",
-    payload.block_reason ? `## Block Reason\n\n${payload.block_reason}\n` : "",
-  ].join("\n");
+    ...(payload.block_reason ? ["", "## Block Reason", "", payload.block_reason] : []),
+  ].join("\n") + "\n";
 
   fs.writeFileSync(jsonPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   fs.writeFileSync(mdPath, md, "utf8");

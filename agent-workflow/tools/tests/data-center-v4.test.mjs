@@ -585,6 +585,7 @@ test("current factual title language maps to canonical event types", () => {
     ["OpenAI 首款联名硬件：Codex Micro 键盘登场", "hardware_product"],
     ["Suno 接入 iMessage：用户可在聊天内直接 AI 生成歌曲", "partnership"],
     ["Rubrik Announces Upcoming Integration with Amazon Bedrock AgentCore to Secure AI Agents", "partnership"],
+    ["欧盟 AI 透明度准则 8 月 2 日生效：聊天机器人须自报身份", "policy_regulation"],
     ["澳大利亚将推出人工智能标准并设立人工智能办公室", "policy_regulation"],
     ["Anthropic 与私募巨头合资成立 AI 实施公司 Ode，初始资金 15 亿美元", "partnership"],
     ["Exclusive: Startup Adapter 完成 1780 万美元融资，用于 Bring New Cognition To AI Tools", "funding"],
@@ -593,6 +594,24 @@ test("current factual title language maps to canonical event types", () => {
   ];
 
   for (const [title, eventType] of cases) assert.equal(findEventRule(title)?.eventType, eventType, title);
+});
+
+test("EU AI Act transparency rules resolve to a policy event with an entity", () => {
+  const bundle = buildBundle([
+    entry(
+      "eu-ai-transparency-rules",
+      "欧盟 AI 透明度准则 8 月 2 日生效：聊天机器人须自报身份",
+      "欧盟《人工智能法案》第 50 条 AI 透明度准则将于 8 月 2 日正式生效。根据法案，聊天机器人必须明确告知用户其为 AI 系统。",
+      { language: "zh" }
+    )
+  ], taxonomy, date, "2026-07-27T00:00:00.000Z");
+
+  assert.equal(bundle.canonical_events.length, 1);
+  assert.equal(bundle.canonical_events[0].event_type, "policy_regulation");
+  assert.ok(bundle.canonical_events[0].entities.length > 0);
+  assert.ok(!bundle.canonical_events[0].missing_fields.includes("entities"));
+  assert.ok(bundle.entities.some((entity) => entity.canonical_name === "European Union"));
+  assert.ok(!bundle.entities.some((entity) => entity.canonical_name === "欧盟"));
 });
 
 test("known upstream category collisions stay in their responsible canonical types", () => {

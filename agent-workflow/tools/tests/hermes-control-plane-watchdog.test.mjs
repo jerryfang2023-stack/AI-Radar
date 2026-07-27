@@ -37,6 +37,9 @@ test("Hermes watchdog passes when all controller reports are observable", () => 
   const result = runWatchdog(reportsDir, incidentDir);
   assert.equal(result.status, 0, result.stderr);
   assert.equal(fs.existsSync(path.join(incidentDir, `${date}-automation-control-plane-liveness.md`)), false);
+  const report = fs.readFileSync(path.join(reportsDir, `${date}-hermes-control-plane-watchdog.md`), "utf8");
+  assert.match(report, /\n$/u);
+  assert.doesNotMatch(report, /\n\n$/u);
 });
 
 test("Hermes watchdog creates one control-plane incident for a missing controller report", () => {
@@ -52,4 +55,6 @@ test("Hermes watchdog creates one control-plane incident for a missing controlle
   const incident = fs.readFileSync(path.join(incidentDir, `${date}-automation-control-plane-liveness.md`), "utf8");
   assert.match(incident, /closure controller report is missing or unreadable/u);
   assert.doesNotMatch(incident, /business_signals|public Card count/u);
+  assert.match(incident, /\n$/u);
+  assert.doesNotMatch(incident, /\n\n$/u);
 });
