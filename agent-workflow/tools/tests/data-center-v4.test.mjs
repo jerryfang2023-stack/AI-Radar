@@ -6,7 +6,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { buildBundle, eventAiRelevanceEvidence, eventSourceEligibility, findEventRule, normalizeEventTitle, repairExistingEntityLinks, sourceArtifact, trimBoilerplate } from "../build-data-center-v4.mjs";
 import { evaluateBundle, evaluateBundleFiles } from "../assert-data-center-v4.mjs";
-import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
+import { generateSourceTitleTranslation, isApprovedSourceTitleTranslation, normalizeSourceTitleTranslation, sourceTitleFactsPreserved, sourceTitleFromCapturedPayload, sourceTitleNeedsChineseTranslation, titleTranslationLooksUsable } from "../source-title-translation-generator.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
@@ -100,6 +100,13 @@ test("source title translation cannot omit explicit AI semantics", () => {
 test("source title normalization removes a trailing publisher suffix", () => {
   assert.equal(normalizeSourceTitleTranslation("Maybern MCP 已上线 | Maybern"), "Maybern MCP 已上线");
   assert.equal(normalizeSourceTitleTranslation("SambaNova | The Fastest AI Inference Platform"), "SambaNova | The Fastest AI Inference Platform");
+});
+
+test("placeholder source title is repaired from captured article text", () => {
+  assert.equal(sourceTitleFromCapturedPayload({
+    title: "-",
+    clean_text: "Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents - My Framer Site\nBlog",
+  }), "Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents");
 });
 
 function entry(id, title, body, extra = {}) {

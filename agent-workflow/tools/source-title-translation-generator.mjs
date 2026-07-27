@@ -67,6 +67,34 @@ export function normalizeSourceTitleTranslation(value = "") {
   return stripGeneratorNoise(value);
 }
 
+const sourceTitlePlaceholderPattern = /^(?:[-—–_|]+|n\/?a|none|null|undefined|untitled)$/iu;
+
+export function sourceTitleFromCapturedPayload(payload = {}) {
+  const storedCandidates = [payload.title, payload.title_original]
+    .map((value) => String(value || "").trim())
+    .filter((value) => value && !sourceTitlePlaceholderPattern.test(value));
+  if (storedCandidates.length) return normalizeSourceTitleTranslation(storedCandidates[0]);
+
+  const capturedText = String(
+    payload.clean_text
+    || payload.full_text
+    || payload.body_clean
+    || "",
+  );
+  const candidate = capturedText
+    .split(/\r?\n/gu)
+    .map((line) => line.replace(/\s+/gu, " ").trim())
+    .find((line) => (
+      line.length >= 12
+      && line.length <= 240
+      && !sourceTitlePlaceholderPattern.test(line)
+      && !/^(?:home|blog|menu|share|sign in|log in|we['’]re hiring|no headings found)/iu.test(line)
+    ));
+  if (!candidate) return "";
+  return normalizeSourceTitleTranslation(candidate
+    .replace(/\s+-\s+(?:My Framer Site|Official (?:Site|Website)|Home)\s*$/iu, ""));
+}
+
 const moneyUnitFactors = new Map([
   ["trillion", 1e12],
   ["billion", 1e9],

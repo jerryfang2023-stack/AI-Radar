@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-25",
-    "generated_at": "2026-07-26T15:22:15.103Z",
+    "generated_at": "2026-07-27T10:26:48.053Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -16,6 +16,867 @@
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-4960bd099ebc8b70",
+      "triggered_by_event_id": "EV-136b2edc9b9f3be8",
+      "as_of_date": "2026-07-25",
+      "company": {
+        "entity_id": "EN-382635c9325bf327",
+        "name": "Paper",
+        "full_name": "Paper",
+        "website": "https://paper.design",
+        "summary": "Paper 是一家面向智能体时代的设计平台，通过将设计画布转变为人类与AI智能体的共享工作空间，实现设计、代码和数据的实时协作。",
+        "headquarters": "San Francisco, California",
+        "founders": [
+          {
+            "name": "Stephen Haney",
+            "role": "Founder and CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "Paper founder and CEO Stephen Haney"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-545ac2658d68b038",
+            "quote": "Paper , which calls itself a design platform for the agentic era"
+          },
+          {
+            "source_id": "FISRC-34abfc7a017c54f3",
+            "quote": "Paper, a San Francisco , California company building a design platform for the AI era"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$34 million",
+        "total_raised": "$38.5M",
+        "announced_at": "2026-07-23",
+        "investors": [
+          {
+            "name": "Accel",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "a $34 million Series A funding round led by Accel and Iconiq"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "ICONIQ",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "a $34 million Series A funding round led by Accel and Iconiq"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Designer Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "Other participating investors included Designer Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Michael Grinich (WorkOS)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "Michael Grinich of WorkOS"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Anton Osika (Lovable)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "Anton Osika of Lovable"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Anthropic (工程师和设计师个人)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "engineers and designers from Anthropic and OpenAI"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "OpenAI (工程师和设计师个人)",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-545ac2658d68b038",
+                "quote": "engineers and designers from Anthropic and OpenAI"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Basecase",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23493910baa1c861",
+                "quote": "renewed support from Basecase"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "David Hoang",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23493910baa1c861",
+                "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Guillermo Rauch",
+            "role": "既有投资方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23493910baa1c861",
+                "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-545ac2658d68b038",
+            "quote": "announced the closing of a $34 million Series A funding round led by Accel and Iconiq"
+          },
+          {
+            "source_id": "FISRC-23493910baa1c861",
+            "quote": "This brings Paper ’s total funding to $38.5M."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Paper Desktop",
+          "description": "将设计画布转变为人类与AI智能体的共享工作空间，实时连接设计、代码和数据。",
+          "target_customers": "设计团队、工程师、销售团队、增长团队",
+          "features": [
+            "使用HTML和CSS渲染，使设计直接连接生产代码",
+            "支持AI智能体协作",
+            "实时连接设计、代码和数据"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper Desktop turns the design canvas into a shared workspace for humans and AI agents — enabling design, code, and data in real time."
+            },
+            {
+              "source_id": "FISRC-4c0b752256edc3ff",
+              "quote": "Paper renders using HTML and CSS, allowing designs to connect directly with production code and the AI agents increasingly responsible for writing it."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Paper MCP",
+          "description": "Paper的MCP服务器，使设计师能够使用Paper与Claude等AI工具进行视觉设计反馈和协作。",
+          "target_customers": "设计师",
+          "features": [
+            "与Claude等AI工具集成",
+            "支持视觉设计反馈"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "We saw designers moving en masse to Claude Code, so we followed them to the desktop with Paper Desktop and MCP ."
+            },
+            {
+              "source_id": "FISRC-fdcc2ce9d2bfd5c8",
+              "quote": "That moment: the Paper MCP server launch. That day I used Paper to give their team visual design feedback on a new feature they were building."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Ramp",
+          "industry": "金融科技",
+          "use_case": "使用Paper进行产品设计，将设计直接插入生产代码。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp"
+            },
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "Paper plugs directly into Inspect, our own coding agent, and can pull and push right from production. Designers can spend more energy on the craft. Diego Zaks VP Design at Ramp"
+            }
+          ]
+        },
+        {
+          "name": "Lovable",
+          "industry": "软件开发",
+          "use_case": "将生产代码库引入无限画布进行设计流程，在真实生产环境中进行构思。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp, Lovable"
+            },
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "Paper brings our production codebase into an infinite canvas for our design process. We can ideate in the context of our production experience. Nad Chishtie Head of Design at Lovable"
+            }
+          ]
+        },
+        {
+          "name": "Vercel",
+          "industry": "云计算/开发者工具",
+          "use_case": "采用Paper作为设计工具。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp, Lovable, Vercel"
+            }
+          ]
+        },
+        {
+          "name": "PostHog",
+          "industry": "数据分析",
+          "use_case": "采用Paper作为设计工具。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp, Lovable, Vercel, PostHog"
+            }
+          ]
+        },
+        {
+          "name": "Quartr",
+          "industry": "金融信息",
+          "use_case": "采用Paper作为设计工具。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp, Lovable, Vercel, PostHog, Quartr"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Figma",
+          "product": "Figma",
+          "scenario": "传统设计工具，围绕专有画布构建，设计需翻译为代码。",
+          "target_customer": "设计师和工程师",
+          "funding_summary": "",
+          "core_difference": "Paper使用HTML和CSS渲染，设计直接连接生产代码，消除设计到工程的交接摩擦；Figma基于专有画布，设计需翻译为代码。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4c0b752256edc3ff",
+              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders using HTML and CSS, allowing designs to connect directly with production code"
+            },
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "Compare Paper vs Figma"
+            }
+          ]
+        },
+        {
+          "name": "Canva",
+          "product": "Canva",
+          "scenario": "允许设计师通过简单文本指令构建视觉概念和工作布局。",
+          "target_customer": "非专业设计师和普通用户",
+          "funding_summary": "",
+          "core_difference": "Paper服务于专业设计师，提供与AI智能体协作的专业级设计环境；Canva面向更广泛的用户群体，侧重简单易用的视觉内容创建。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Vercel’s v0 platform or Canva allows designers to build simple visual concepts and working layouts with simple text instructions."
+            },
+            {
+              "source_id": "FISRC-fdcc2ce9d2bfd5c8",
+              "quote": "They serve professional designers and have been clear about that since their founding. This is a big difference from other tools that believe they can replace designers"
+            }
+          ]
+        },
+        {
+          "name": "Vercel v0",
+          "product": "v0",
+          "scenario": "允许设计师通过简单文本指令构建视觉概念和工作布局。",
+          "target_customer": "设计师和开发者",
+          "funding_summary": "",
+          "core_difference": "Paper提供专业级设计环境，支持与AI智能体的深度协作，设计直接连接生产代码；v0侧重通过文本指令快速生成简单视觉概念。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Vercel’s v0 platform or Canva allows designers to build simple visual concepts and working layouts with simple text instructions."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "ARR增长倍数（自发布以来）",
+          "value": "25倍",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper says it has grown annualized recurring revenue (ARR) 25x since launch"
+            }
+          ]
+        },
+        {
+          "label": "Ramp最快增长公司榜单连续上榜月数",
+          "value": "4个月",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "appearing on Ramp’s Fastest Growing Companies list for four consecutive months"
+            }
+          ]
+        },
+        {
+          "label": "累计融资总额",
+          "value": "$38.5M",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "This brings Paper ’s total funding to $38.5M."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Stephen Haney",
+          "quote": "We want to help designers and creatives do deep, meaningful work, at a pace that supports their businesses in the agentic era. Helping design teams keep up with agentic workflows is our north star at Paper.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "We want to help designers and creatives do deep, meaningful work, at a pace that supports their businesses in the agentic era. Helping design teams keep up with agentic workflows is our north star at Paper"
+            }
+          ]
+        },
+        {
+          "speaker": "Stephen Haney",
+          "quote": "Designers are being asked to move faster than ever, yet they’re still working with tools built for a different time. We believe there is a massive opportunity for a new generation of tools that help designers do their best work while working seamlessly with…coding agents like Claude Code and Codex.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Designers are being asked to move faster than ever, yet they’re still working with tools built for a different time. We believe there is a massive opportunity for a new generation of tools that help designers do their best work while working seamlessly with…coding agents like Claude Code and Codex."
+            }
+          ]
+        },
+        {
+          "speaker": "Mariano Payano",
+          "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4c0b752256edc3ff",
+              "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Accel",
+            "speaker": "Dan Levine",
+            "speaker_role": "Partner",
+            "rationale": "Paper正在定义一个全新品类，采用根本不同的设计软件方法，为人类与AI共同创作的世界而构建，已在有影响力的科技公司中获得强劲采用。",
+            "quote": "Paper is defining a new category with a fundamentally new approach to design software. Most design tools were built for a world where humans did all the work. Paper is built for a world where humans and AI create together, and is already seeing strong adoption among some of the world’s most influential technology companies.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4c0b752256edc3ff",
+                "quote": "Paper is defining a new category with a fundamentally new approach to design software. Most design tools were built for a world where humans did all the work. Paper is built for a world where humans and AI create together, and is already seeing strong adoption among some of the world’s most influential technology companies."
+              }
+            ]
+          },
+          {
+            "institution": "ICONIQ",
+            "speaker": "Mariano Payano",
+            "speaker_role": "Partner",
+            "rationale": "设计与工程的界限正在模糊，品味的重要性上升。Paper是第一个为软件未来而构建的画布，受到最注重质量的团队的自发采用，这种有机口碑非常罕见。",
+            "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions. That kind of organic word of mouth is rare.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5ee1d4324588b6e4",
+                "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions. That kind of organic word of mouth is rare."
+              }
+            ]
+          },
+          {
+            "institution": "Designer Fund",
+            "speaker": "Ben Blumenrose",
+            "speaker_role": "Co-Director, Managing Partner",
+            "rationale": "Paper MCP服务器发布展示了设计师与AI协作的未来体验：使用Paper与Claude进行设计反馈，速度和质量优于其他工具，并能无缝地在人类精度与AI速度之间切换。",
+            "quote": "That moment: the Paper MCP server launch. That day I used Paper to give their team visual design feedback on a new feature they were building. I was able to create a v1 of a design using Paper + Claude with more speed and quality than other tools (thanks to Paper being native HTML/CSS) and then it let me seamlessly modify what AI created with precise controls… to me it was clear this is how designers want to work with AI, easily going back and forth between human precision and AI speed + breadth.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fdcc2ce9d2bfd5c8",
+                "quote": "That moment: the Paper MCP server launch. That day I used Paper to give their team visual design feedback on a new feature they were building. I was able to create a v1 of a design using Paper + Claude with more speed and quality than other tools (thanks to Paper being native HTML/CSS) and then it let me seamlessly modify what AI created with precise controls… to me it was clear this is how designers want to work with AI, easily going back and forth between human precision and AI speed + breadth."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是：在AI智能体日益参与软件开发的趋势下，设计工具需要从“人类独享的画布”转变为“人类与AI共享的协作空间”。Paper以HTML/CSS为原生渲染引擎，使设计直接连接生产代码，消除了设计到工程的交接摩擦，这一架构选择使其成为智能体时代的基础设施。本轮融资的已验证信号包括：ARR自发布以来增长25倍，连续四个月登上Ramp最快增长公司榜单，以及Ramp、Lovable、Vercel等头部科技公司的采用。这些信号表明产品-市场契合度正在形成，但证据边界仍限于早期采用者群体，尚未证明其在大规模企业市场中的渗透能力。",
+        "validated_signals": [
+          "ARR自发布以来增长25倍",
+          "连续四个月登上Ramp最快增长公司榜单",
+          "客户包括Ramp、Lovable、Vercel、PostHog、Quartr、Y Combinator等头部科技公司",
+          "获得Accel和ICONIQ联合领投的3400万美元A轮融资"
+        ],
+        "risks": [
+          "Paper的客户群体目前集中在AI原生和开发者工具公司，尚未证明其能在传统企业设计团队中替代Figma等成熟工具。",
+          "HTML/CSS渲染引擎的差异化优势可能被现有竞品通过功能更新追赶，技术护城河的持久性有待验证。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "设计工具/AI协作平台"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Paper Desktop",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper Desktop turns the design canvas into a shared workspace for humans and AI agents — enabling design, code, and data in real time."
+            },
+            {
+              "source_id": "FISRC-4c0b752256edc3ff",
+              "quote": "Paper renders using HTML and CSS, allowing designs to connect directly with production code and the AI agents increasingly responsible for writing it."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Paper MCP",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "We saw designers moving en masse to Claude Code, so we followed them to the desktop with Paper Desktop and MCP ."
+            },
+            {
+              "source_id": "FISRC-fdcc2ce9d2bfd5c8",
+              "quote": "That moment: the Paper MCP server launch. That day I used Paper to give their team visual design feedback on a new feature they were building."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Stephen Haney",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Paper founder and CEO Stephen Haney"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "a $34 million Series A funding round led by Accel and Iconiq"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ICONIQ",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "a $34 million Series A funding round led by Accel and Iconiq"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Designer Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Other participating investors included Designer Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Michael Grinich (WorkOS)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Michael Grinich of WorkOS"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Anton Osika (Lovable)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Anton Osika of Lovable"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Anthropic (工程师和设计师个人)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "engineers and designers from Anthropic and OpenAI"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "OpenAI (工程师和设计师个人)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "engineers and designers from Anthropic and OpenAI"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Basecase",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "renewed support from Basecase"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "David Hoang",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Guillermo Rauch",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ramp",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp"
+            },
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "Paper plugs directly into Inspect, our own coding agent, and can pull and push right from production. Designers can spend more energy on the craft. Diego Zaks VP Design at Ramp"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Lovable",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp, Lovable"
+            },
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "Paper brings our production codebase into an infinite canvas for our design process. We can ideate in the context of our production experience. Nad Chishtie Head of Design at Lovable"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Vercel",
+          "canonical_entity_id": "EN-9d3508a8484ee252",
+          "canonical_name": "Vercel",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp, Lovable, Vercel"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "PostHog",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp, Lovable, Vercel, PostHog"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Quartr",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Its customers include Ramp, Lovable, Vercel, PostHog, Quartr"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Figma",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4c0b752256edc3ff",
+              "quote": "Unlike traditional design tools built around proprietary canvases, Paper renders using HTML and CSS, allowing designs to connect directly with production code"
+            },
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "Compare Paper vs Figma"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Canva",
+          "canonical_entity_id": "EN-3db1f560db626918",
+          "canonical_name": "Canva",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Vercel’s v0 platform or Canva allows designers to build simple visual concepts and working layouts with simple text instructions."
+            },
+            {
+              "source_id": "FISRC-fdcc2ce9d2bfd5c8",
+              "quote": "They serve professional designers and have been clear about that since their founding. This is a big difference from other tools that believe they can replace designers"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Vercel v0",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-545ac2658d68b038",
+              "quote": "Vercel’s v0 platform or Canva allows designers to build simple visual concepts and working layouts with simple text instructions."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-136b2edc9b9f3be8",
+          "date": "2026-07-24",
+          "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+          "amount": "$34 million",
+          "source_refs": [
+            "SA-698e748e9cefe115",
+            "SA-02eba6bdbd1a0ec5"
+          ]
+        },
+        {
+          "event_id": "EV-3fb827f44ea109de",
+          "date": "2026-07-22",
+          "title": "Paper 融资 3400 万美元，打造下一代卓越设计平台",
+          "amount": "$34M",
+          "source_refs": [
+            "SA-25b2471c6a2bc87a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-545ac2658d68b038",
+          "source_url": "https://www.citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era/",
+          "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-25T02:25:53.664Z",
+          "content_hash": "a9da415791e9a9f4",
+          "source_artifact_id": "SA-698e748e9cefe115",
+          "raw_id": "RAW-549fbe22bd61dc41"
+        },
+        {
+          "source_id": "FISRC-4c0b752256edc3ff",
+          "source_url": "https://pulse2.com/paper-raises-34-million-series-a-to-build-design-platform-for-the-agentic-era/",
+          "title": "Paper 完成 3400 万美元 A 轮融资，打造面向智能体时代的设计平台",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-25T02:25:54.815Z",
+          "content_hash": "8d9bcde152036162",
+          "source_artifact_id": "SA-02eba6bdbd1a0ec5",
+          "raw_id": "RAW-fda8b641723c32ff"
+        },
+        {
+          "source_id": "FISRC-34abfc7a017c54f3",
+          "source_url": "https://fundraiseinsider.com/blog/paper-raises-34m-series-a-for-agentic-design-platform/",
+          "title": "Paper Raises $34M Series A for Agentic Design Platform - Fundraise Insider",
+          "publisher": "fundraiseinsider.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T10:25:51.327Z",
+          "content_hash": "54e8872766d0f8dc",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5ee1d4324588b6e4",
+          "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-23-paper-raises-34-million-series-a-with-accel-and-iconiq-to-build-the-design-platform-for-the-agentic-era",
+          "title": "Paper Raises $34 Million Series A with Accel and ICONIQ to Build the Design Platform for the Agentic Era | FinancialContent",
+          "publisher": "financialcontent.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T10:25:52.329Z",
+          "content_hash": "e9164b97cb878f6a",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-23493910baa1c861",
+          "source_url": "https://paper.design/blog/series-a",
+          "title": "Paper raises $34M to build the next great design platform",
+          "publisher": "paper.design",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T10:25:54.871Z",
+          "content_hash": "6bc97de07bc79d43",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-fdcc2ce9d2bfd5c8",
+          "source_url": "https://www.linkedin.com/posts/jacqueline-berardo-princetonu_at-designer-fund-were-proud-to-be-investing-activity-7486114078030209024-dit2",
+          "title": "At Designer Fund, we're proud to be investing in Paper's $34M Series A alongside Accel and ICONIQ. | Jackie Berardo",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-27T10:25:55.331Z",
+          "content_hash": "c1aacae38fbdada2",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-27T10:26:47.980Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-27T10:26:47.980Z"
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-f3044a2b4363e0fd",
@@ -1736,467 +2597,6 @@
       },
       "publication_status": "auto_published",
       "published_at": "2026-07-26T15:02:20.968Z"
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.0",
-      "funding_insight_id": "FI-4960bd099ebc8b70",
-      "triggered_by_event_id": "EV-136b2edc9b9f3be8",
-      "as_of_date": "2026-07-25",
-      "company": {
-        "entity_id": "EN-ab9b29074a980e4b",
-        "name": "Accel",
-        "full_name": "Paper",
-        "website": "",
-        "summary": "Paper 是一个面向智能体时代的设计平台，致力于为设计师与 AI 智能体提供共享的实时协作画布，以弥合设计与工程之间的交接摩擦。",
-        "headquarters": "San Francisco",
-        "founders": [
-          {
-            "name": "Stephen Haney",
-            "role": "创始人兼 CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-545ac2658d68b038",
-                "quote": "Paper founder and CEO Stephen Haney"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-4c0b752256edc3ff",
-            "quote": "Paper, a design platform aimed at the agentic era of software development"
-          }
-        ]
-      },
-      "financing": {
-        "round": "A 轮",
-        "amount": "3400 万美元",
-        "total_raised": "3400 万美元",
-        "announced_at": "2026-07-24",
-        "investors": [
-          {
-            "name": "Accel",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-545ac2658d68b038",
-                "quote": "a $34 million Series A funding round led by Accel and Iconiq"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Iconiq",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-545ac2658d68b038",
-                "quote": "a $34 million Series A funding round led by Accel and Iconiq"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Designer Fund",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-545ac2658d68b038",
-                "quote": "Other participating investors included Designer Fund"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Michael Grinich (WorkOS)",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-545ac2658d68b038",
-                "quote": "Michael Grinich of WorkOS"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Anton Osika (Lovable)",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-545ac2658d68b038",
-                "quote": "Anton Osika of Lovable"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Anthropic 工程师与设计师",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-545ac2658d68b038",
-                "quote": "engineers and designers from Anthropic and OpenAI"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "OpenAI 工程师与设计师",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-545ac2658d68b038",
-                "quote": "engineers and designers from Anthropic and OpenAI"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-4c0b752256edc3ff",
-            "quote": "Paper, a design platform aimed at the agentic era of software development, announced a $34 million Series A round led by Accel and ICONIQ."
-          }
-        ]
-      },
-      "products": [
-        {
-          "name": "Paper Desktop",
-          "description": "一个将设计画布转变为人类与 AI 智能体共享工作空间的桌面应用，支持实时设计、代码与数据的协作。",
-          "target_customers": "设计团队与工程师",
-          "features": [
-            "使用 HTML 和 CSS 渲染，使设计直接与生产代码连接",
-            "支持 AI 智能体在设计中扮演日益重要的角色"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper Desktop turns the design canvas into a shared workspace for humans and AI agents — enabling design, code, and data in real time."
-            },
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [
-        {
-          "name": "Ramp",
-          "industry": "金融科技",
-          "use_case": "使用 Paper 进行设计协作",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp"
-            }
-          ]
-        }
-      ],
-      "comparisons": [
-        {
-          "name": "Vercel",
-          "product": "v0 平台",
-          "scenario": "通过简单的文本指令构建设计概念和工作布局",
-          "target_customer": "设计师",
-          "funding_summary": "",
-          "core_difference": "Paper 使用 HTML 和 CSS 渲染，使设计直接与生产代码连接，并支持 AI 智能体协作；v0 侧重于通过文本指令生成视觉概念。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
-            }
-          ]
-        },
-        {
-          "name": "Canva",
-          "product": "Canva",
-          "scenario": "通过简单的文本指令构建设计概念和工作布局",
-          "target_customer": "设计师",
-          "funding_summary": "",
-          "core_difference": "Paper 使用 HTML 和 CSS 渲染，使设计直接与生产代码连接，并支持 AI 智能体协作；Canva 侧重于通过文本指令生成视觉概念。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
-            }
-          ]
-        }
-      ],
-      "metrics": [
-        {
-          "label": "ARR 增长倍数（自发布以来）",
-          "value": "25 倍",
-          "observed_at": "2026-07-24",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper says it has grown annualized recurring revenue (ARR) 25x since launch"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Mariano Payano",
-          "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-4c0b752256edc3ff",
-              "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions."
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [
-          {
-            "institution": "Iconiq",
-            "speaker": "Mariano Payano",
-            "speaker_role": "合伙人",
-            "rationale": "Iconiq 认为设计与工程的界限正在模糊，Paper 是第一个为软件未来而构建的画布，且已被众多注重品质的团队积极采用。",
-            "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions.",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-4c0b752256edc3ff",
-                "quote": "The line between design and engineering is blurring, elevating the importance of taste. We believe Paper is the first canvas built for where software is going, and some of the most quality-obsessed teams we know are pulling it in from all directions."
-              }
-            ]
-          }
-        ],
-        "capital_judgment": "资本押注的核心变量是“AI 原生设计工具”这一新品类能否取代上一代以人类独立操作为前提的设计软件。本轮融资所依赖的已验证信号包括：ARR 自发布以来增长 25 倍，连续四个月登上 Ramp 增长最快公司榜单，以及 Ramp、Vercel、PostHog 等知名科技公司已成为客户。这些信号表明产品在开发者生态中已获得初步验证，但判断的证据边界仍局限于早期采用者群体，尚未证明其在大规模企业市场中的可复制性。",
-        "validated_signals": [
-          "ARR 自发布以来增长 25 倍",
-          "连续四个月登上 Ramp 增长最快公司榜单",
-          "客户包括 Ramp、Vercel、PostHog、Y Combinator 等知名科技公司"
-        ],
-        "risks": [
-          "Paper 的客户群体目前集中在科技公司和初创企业，尚未验证其在传统行业或大型企业设计团队中的渗透能力。"
-        ],
-        "related_direction_id": "DIR-20260725-02",
-        "sector": "AI 原生设计工具"
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Paper Desktop",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper Desktop turns the design canvas into a shared workspace for humans and AI agents — enabling design, code, and data in real time."
-            },
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
-            }
-          ]
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Stephen Haney",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper founder and CEO Stephen Haney"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Accel",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "a $34 million Series A funding round led by Accel and Iconiq"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Iconiq",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "a $34 million Series A funding round led by Accel and Iconiq"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Designer Fund",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Other participating investors included Designer Fund"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Michael Grinich (WorkOS)",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Michael Grinich of WorkOS"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Anton Osika (Lovable)",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Anton Osika of Lovable"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Anthropic 工程师与设计师",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "engineers and designers from Anthropic and OpenAI"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "OpenAI 工程师与设计师",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "engineers and designers from Anthropic and OpenAI"
-            }
-          ]
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Ramp",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Its customers include Ramp"
-            }
-          ]
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Vercel",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
-            }
-          ]
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Canva",
-          "canonical_entity_id": "EN-3db1f560db626918",
-          "canonical_name": "Canva",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-545ac2658d68b038",
-              "quote": "Paper renders with HTML and CSS, enabling designs to connect directly with production code, with AI agents playing a growing role."
-            }
-          ]
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-136b2edc9b9f3be8",
-          "date": "2026-07-24",
-          "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
-          "amount": "$34 million",
-          "source_refs": [
-            "SA-698e748e9cefe115",
-            "SA-02eba6bdbd1a0ec5"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-545ac2658d68b038",
-          "source_url": "https://www.citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era/",
-          "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
-          "publisher": "keyword search / Anysearch",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-07-25T02:25:53.664Z",
-          "content_hash": "a9da415791e9a9f4",
-          "source_artifact_id": "SA-698e748e9cefe115",
-          "raw_id": "RAW-549fbe22bd61dc41"
-        },
-        {
-          "source_id": "FISRC-4c0b752256edc3ff",
-          "source_url": "https://pulse2.com/paper-raises-34-million-series-a-to-build-design-platform-for-the-agentic-era/",
-          "title": "Paper 完成 3400 万美元 A 轮融资，打造面向智能体时代的设计平台",
-          "publisher": "keyword search / Anysearch",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-07-25T02:25:54.815Z",
-          "content_hash": "8d9bcde152036162",
-          "source_artifact_id": "SA-02eba6bdbd1a0ec5",
-          "raw_id": "RAW-fda8b641723c32ff"
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:02:12.153Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:02:12.153Z"
     }
   ],
   "queue": [
@@ -2354,79 +2754,92 @@
     },
     {
       "event_id": "EV-136b2edc9b9f3be8",
-      "company_name": "Accel",
+      "company_name": "Paper",
       "status": "auto_published",
       "problems": [],
       "queries": [
-        "\"Accel\" \"$34 million\" funding investors round",
-        "\"Accel\" product customers case study",
-        "\"Accel\" \"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" competitors product use case",
-        "\"Accel\" \"$34 million\" investor quote why invested",
-        "\"Accel\" \"$34 million\" \"why we invested\" OR \"our investment\""
+        "\"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" funding company investors product",
+        "\"Paper\" \"$34 million\" funding investors round",
+        "\"Paper\" product customers case study",
+        "\"Paper\" \"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" competitors product use case",
+        "\"Paper\" \"$34 million\" investor quote why invested",
+        "\"Paper\" \"$34 million\" \"why we invested\" OR \"our investment\""
       ],
       "attempts": [
         {
           "provider": "tavily",
-          "query": "\"Accel\" \"$34 million\" funding investors round",
+          "query": "\"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" funding company investors product",
           "status": "failed",
           "error": "tavily_432"
         },
         {
           "provider": "exa",
-          "query": "\"Accel\" \"$34 million\" funding investors round",
+          "query": "\"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" funding company investors product",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"Accel\" product customers case study",
+          "query": "\"Paper\" \"$34 million\" funding investors round",
           "status": "failed",
           "error": "tavily_432"
         },
         {
           "provider": "exa",
-          "query": "\"Accel\" product customers case study",
+          "query": "\"Paper\" \"$34 million\" funding investors round",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"Accel\" \"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" competitors product use case",
+          "query": "\"Paper\" product customers case study",
           "status": "failed",
           "error": "tavily_432"
         },
         {
           "provider": "exa",
-          "query": "\"Accel\" \"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" competitors product use case",
+          "query": "\"Paper\" product customers case study",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"Accel\" \"$34 million\" investor quote why invested",
+          "query": "\"Paper\" \"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" competitors product use case",
           "status": "failed",
           "error": "tavily_432"
         },
         {
           "provider": "exa",
-          "query": "\"Accel\" \"$34 million\" investor quote why invested",
+          "query": "\"Paper\" \"Accel, Iconiq Join $34M Series A for Paper, Design Platform for AI Era | citybiz\" competitors product use case",
           "status": "completed",
           "error": ""
         },
         {
           "provider": "tavily",
-          "query": "\"Accel\" \"$34 million\" \"why we invested\" OR \"our investment\"",
+          "query": "\"Paper\" \"$34 million\" investor quote why invested",
           "status": "failed",
           "error": "tavily_432"
         },
         {
           "provider": "exa",
-          "query": "\"Accel\" \"$34 million\" \"why we invested\" OR \"our investment\"",
+          "query": "\"Paper\" \"$34 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Paper\" \"$34 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Paper\" \"$34 million\" \"why we invested\" OR \"our investment\"",
           "status": "completed",
           "error": ""
         }
       ],
-      "updated_at": "2026-07-26T15:03:24.699Z"
+      "updated_at": "2026-07-27T10:26:48.053Z"
     },
     {
       "event_id": "EV-acdeebead5324344",

@@ -204,17 +204,27 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
     .filter((item) => clean(item.name) && clean(item.description) && item.evidence_refs.length);
   sanitized.customers = (sanitized.customers || [])
     .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
-    .filter((item) => clean(item.name) && item.evidence_refs.length);
+    .filter((item) => (
+      clean(item.name)
+      && item.evidence_refs.length
+      && (!clean(item.use_case) || containsChinese(item.use_case))
+    ));
   sanitized.comparisons = (sanitized.comparisons || [])
     .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
     .filter((item) => (
       clean(item.name)
       && clean(item.product || item.positioning || item.scenario)
       && item.evidence_refs.length
+      && containsChinese([
+        item.product || item.positioning,
+        item.scenario,
+        item.target_customer,
+        item.core_difference,
+      ].filter(Boolean).join(" "))
     ));
   sanitized.metrics = (sanitized.metrics || [])
     .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
-    .filter((item) => clean(item.label) && item.evidence_refs.length);
+    .filter((item) => clean(item.label) && containsChinese(item.label) && item.evidence_refs.length);
   sanitized.quotes = (sanitized.quotes || [])
     .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
     .filter((item) => clean(item.speaker) && clean(item.quote) && item.evidence_refs.length);

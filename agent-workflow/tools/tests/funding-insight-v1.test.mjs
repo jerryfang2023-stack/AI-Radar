@@ -17,6 +17,7 @@ import { selectHistoricalFundingEvents } from "../backfill-funding-insights-hist
 import { inspectFundingInsightWork } from "../inspect-funding-insight-work.mjs";
 import {
   buildFundingInsightsFrontstage,
+  dedupeFundingRounds,
   fundingProductFormId,
 } from "../../../01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs";
 
@@ -113,6 +114,14 @@ test("融资卡工作检查器只调度尚未发布的已验证融资事件", ()
 
     const output = path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/2026-07-26.json");
     fs.mkdirSync(path.dirname(output), { recursive: true });
+    const priorOutput = path.join(path.dirname(output), "2026-07-25.json");
+    fs.writeFileSync(priorOutput, `${JSON.stringify({ cards: [validCard()], queue: [] })}\n`, "utf8");
+    const publishedPreviously = inspectFundingInsightWork(projectRoot, "2026-07-26");
+    assert.equal(publishedPreviously.output_exists, false);
+    assert.equal(publishedPreviously.needs_generation, false);
+    assert.equal(publishedPreviously.auto_published, 1);
+    fs.unlinkSync(priorOutput);
+
     fs.writeFileSync(output, `${JSON.stringify({ cards: [validCard()], queue: [] })}\n`, "utf8");
     const current = inspectFundingInsightWork(projectRoot, "2026-07-26");
     assert.equal(current.needs_generation, false);
@@ -125,6 +134,40 @@ test("融资卡工作检查器只调度尚未发布的已验证融资事件", ()
     const repair = inspectFundingInsightWork(projectRoot, "2026-07-26");
     assert.equal(repair.needs_generation, true);
     assert.deepEqual(repair.pending_event_ids, ["EV-1"]);
+  } finally {
+    fs.rmSync(projectRoot, { recursive: true, force: true });
+  }
+});
+
+test("单事件增量生成不会删除同日已经发布的其他融资卡", () => {
+  const projectRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-funding-selected-"));
+  try {
+    writeDailyFundingFixture(projectRoot, [
+      { event_id: "EV-1", event_type: "funding", publication_status: "verified", display_title_zh: "Acme 完成 A 轮融资" },
+      { event_id: "EV-2", event_type: "funding", publication_status: "verified", display_title_zh: "Beta 完成种子轮融资" },
+    ]);
+    const output = path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights/2026-07-26.json");
+    fs.mkdirSync(path.dirname(output), { recursive: true });
+    const secondCard = structuredClone(validCard());
+    secondCard.funding_insight_id = "FI-2";
+    secondCard.triggered_by_event_id = "EV-2";
+    secondCard.company.entity_id = "EN-2";
+    secondCard.company.name = "Beta";
+    fs.writeFileSync(output, `${JSON.stringify({ cards: [validCard(), secondCard], queue: [] })}\n`, "utf8");
+    childProcess.execFileSync(process.execPath, [
+      path.join(root, "agent-workflow/tools/generate-funding-insights-deepseek.mjs"),
+      "--date=2026-07-26",
+      "--event-id=EV-1",
+      "--selected-only=true",
+      "--write=true",
+    ], {
+      cwd: projectRoot,
+      env: { ...process.env, DEEPSEEK_API_KEY: "", TAVILY_API_KEY: "", EXA_API_KEY: "" },
+      stdio: "pipe",
+    });
+    const result = JSON.parse(fs.readFileSync(output, "utf8"));
+    assert.equal(result.meta.counts.funding_events, 2);
+    assert.deepEqual(result.cards.map((card) => card.triggered_by_event_id).sort(), ["EV-1", "EV-2"]);
   } finally {
     fs.rmSync(projectRoot, { recursive: true, force: true });
   }
@@ -316,7 +359,7 @@ test("机构投资理由必须来自本轮投资方并保留原文证据", () =>
 test("可选研究数组中的不完整条目在硬门禁前被删除", () => {
   const source = {
     source_id: "SRC-1",
-    body_clean: "Northstar invested in Acme. Acme Agent automates enterprise workflows.",
+    body_clean: "Northstar invested in Acme. Acme Agent automates enterprise workflows. Peer serves developers. Revenue grew 50%.",
   };
   const payload = sanitizeResearchPayload({
     financing: {
@@ -326,9 +369,18 @@ test("可选研究数组中的不完整条目在硬门禁前被删除", () => {
         evidence_refs: evidence("SRC-1", "Northstar invested in Acme."),
       }],
     },
-    customers: [{ name: "", evidence_refs: evidence("SRC-1", "Acme Agent automates enterprise workflows.") }],
-    comparisons: [{ name: "Peer", product: "", scenario: "", evidence_refs: evidence("SRC-1", "Acme Agent automates enterprise workflows.") }],
-    metrics: [{ label: "", evidence_refs: evidence("SRC-1", "Acme Agent automates enterprise workflows.") }],
+    customers: [
+      { name: "", evidence_refs: evidence("SRC-1", "Acme Agent automates enterprise workflows.") },
+      { name: "Customer", use_case: "Automates enterprise workflows", evidence_refs: evidence("SRC-1", "Acme Agent automates enterprise workflows.") },
+    ],
+    comparisons: [
+      { name: "Peer", product: "", scenario: "", evidence_refs: evidence("SRC-1", "Acme Agent automates enterprise workflows.") },
+      { name: "Peer", product: "Developer platform", scenario: "Coding", evidence_refs: evidence("SRC-1", "Peer serves developers.") },
+    ],
+    metrics: [
+      { label: "", evidence_refs: evidence("SRC-1", "Acme Agent automates enterprise workflows.") },
+      { label: "Revenue growth", value: "50%", evidence_refs: evidence("SRC-1", "Revenue grew 50%.") },
+    ],
     quotes: [{ speaker: "", quote: "", evidence_refs: evidence("SRC-1", "Northstar invested in Acme.") }],
     analysis: {
       investment_rationale: [{
@@ -344,6 +396,25 @@ test("可选研究数组中的不完整条目在硬门禁前被删除", () => {
   assert.deepEqual(payload.metrics, []);
   assert.deepEqual(payload.quotes, []);
   assert.deepEqual(payload.analysis.investment_rationale, []);
+});
+
+test("同一公司同轮次同金额的重复融资事件只投影为一张前台卡", () => {
+  const older = validCard();
+  older.triggered_by_event_id = "EV-PAPER-OLD";
+  older.financing.round = "Series A";
+  older.financing.amount = "$34 million";
+  older.financing.announced_at = "2026-07-23";
+  older.published_at = "2026-07-25T08:00:00.000Z";
+  const newer = structuredClone(older);
+  newer.triggered_by_event_id = "EV-PAPER-NEW";
+  newer.financing.round = "A 轮";
+  newer.financing.amount = "3400 万美元";
+  newer.financing.announced_at = "2026-07-24";
+  newer.published_at = "2026-07-26T08:00:00.000Z";
+  assert.deepEqual(
+    dedupeFundingRounds([older, newer]).map((card) => card.triggered_by_event_id),
+    ["EV-PAPER-NEW"],
+  );
 });
 
 test("模型漏填融资引用时只允许回填已验收的规范 Claim 原文", () => {
@@ -481,6 +552,8 @@ test("融资透视页面使用应用中心新结构并声明自动数据入口",
   assert.match(html, /<form class="fi-controls"[\s\S]*name="query"[\s\S]*name="round"[\s\S]*name="product_form"[\s\S]*<\/form>/u);
   assert.match(script, /fillSelect\("product_form", data\.filters\?\.product_forms \|\| \[\]\)/u);
   assert.match(script, /card\.application_category\?\.id === productForm/u);
+  assert.match(script, /收录于 \$\{escapeHtml\(card\.as_of_date/u);
+  assert.match(script, /融资 \$\{escapeHtml\(card\.financing\?\.announced_at[\s\S]*· 收录/u);
   const cardTemplate = script.slice(
     script.indexOf('<article class="fi-card">'),
     script.indexOf('list.querySelectorAll("[data-open-id]")'),
