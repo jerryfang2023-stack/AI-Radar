@@ -14,6 +14,7 @@
    - Pass when longform sections have visible hierarchy, section labels, heading ornaments, and readable paragraph rhythm.
    - Pass when charts, matrices, cards, and lists are used where they clarify the report.
    - Pass when the monthly hero is clean: no unnecessary helper subtitle, no explanatory deck copy, and the desktop title uses enough width to stay on one line when practical.
+   - Pass when evidence references are understandable source links rather than internal IDs, and unresolved references are omitted.
 
 4. Table readability
    - Pass when all monthly tables have designed styling, emphasized first column, restrained row bands, and readable cell spacing.
@@ -50,3 +51,4 @@
 9. Fail if page generation runs before the content acceptance gate.
 10. Fail if a monthly report page restores shared `IMAP-V2.1.0` metadata or emits any Opportunity Map column metadata, including `OMAP-V1.1.0-direction-cards`.
 11. Fail if a newly published monthly source leaves the Reports Center first-screen card on an older month or requires a manual HTML edit.
+12. Fail if any published report page exposes raw `[E:...]`, `[O:...]`, or `[C:...]` identifiers, or styles them as backend evidence badges.

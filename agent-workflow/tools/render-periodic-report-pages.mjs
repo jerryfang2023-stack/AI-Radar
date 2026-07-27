@@ -16,11 +16,97 @@ export function escapeHtml(value = "") {
   return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 }
 
+const evidenceLabels = {
+  E: "查看事件来源",
+  O: "查看观点来源",
+  C: "查看社群来源",
+};
+let activeEvidenceSources = new Map();
+
+function isPublicUrl(value = "") {
+  try {
+    return new Set(["http:", "https:"]).has(new URL(String(value).trim()).protocol);
+  } catch {
+    return false;
+  }
+}
+
+function readJson(file, fallback = null) {
+  if (!fs.existsSync(file)) return fallback;
+  try {
+    return JSON.parse(fs.readFileSync(file, "utf8"));
+  } catch {
+    return fallback;
+  }
+}
+
+function addEvidenceSource(index, type, id, url) {
+  const normalizedId = String(id || "").trim();
+  const normalizedUrl = String(url || "").trim();
+  if (!normalizedId || !isPublicUrl(normalizedUrl)) return;
+  index.set(`${type}:${normalizedId}`, normalizedUrl);
+}
+
+export function buildEvidenceSourceIndex(rootDir = root) {
+  const index = new Map();
+  const siteData = path.join(rootDir, "01-SiteV2", "site", "data");
+  const frontstage = readJson(path.join(siteData, "data-center-v4-frontstage.json"), {});
+  for (const event of frontstage.events || []) {
+    addEvidenceSource(index, "E", event.id, event.sourceUrl || event.sources?.[0]?.url);
+  }
+
+  for (const file of ["first-line-viewpoints-v4.json", "follow-builders-daily.json"]) {
+    const data = readJson(path.join(siteData, file), {});
+    for (const collection of ["remarks", "podcasts", "intake", "morningIntake"]) {
+      for (const item of data[collection] || []) addEvidenceSource(index, "O", item.id, item.url || item.sourceUrl);
+    }
+  }
+
+  const communityDir = path.join(siteData, "community-intelligence-daily");
+  if (fs.existsSync(communityDir)) {
+    for (const file of fs.readdirSync(communityDir).filter((name) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(name))) {
+      const data = readJson(path.join(communityDir, file), {});
+      for (const item of data.items || []) addEvidenceSource(index, "C", item.id, item.url || item.sourceUrl);
+    }
+  }
+  for (const item of frontstage.community || []) addEvidenceSource(index, "C", item.id, item.sourceUrl);
+  return index;
+}
+
+function evidenceSourceUrl(type, id) {
+  const normalizedId = String(id || "").trim();
+  return activeEvidenceSources.get(`${type}:${normalizedId}`) || (isPublicUrl(normalizedId) ? normalizedId : "");
+}
+
+function evidenceLink(type, id, position = 1, total = 1) {
+  const url = evidenceSourceUrl(type, id);
+  if (!url) return "";
+  const suffix = total > 1 ? ` ${position}` : "";
+  return `<a class="report-evidence-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${evidenceLabels[type]}${suffix}</a>`;
+}
+
 function inline(value = "") {
-  return escapeHtml(value)
-    .replace(/\[([EOC]):([^\]]+)\]/gu, '<code class="report-evidence-ref">[$1:$2]</code>')
+  const source = String(value);
+  const totals = new Map();
+  for (const match of source.matchAll(/\[([EOC]):([^\]]+)\]/gu)) {
+    if (evidenceSourceUrl(match[1], match[2])) totals.set(match[1], (totals.get(match[1]) || 0) + 1);
+  }
+  const positions = new Map();
+  const evidence = [];
+  const protectedValue = source.replace(/\[([EOC]):([^\]]+)\]/gu, (_match, type, id) => {
+    const position = (positions.get(type) || 0) + 1;
+    const link = evidenceLink(type, id, position, totals.get(type) || 0);
+    if (!link) return "";
+    positions.set(type, position);
+    const token = `WAVESIGHTEVIDENCE${evidence.length}TOKEN`;
+    evidence.push([token, link]);
+    return token;
+  });
+  let html = escapeHtml(protectedValue)
     .replace(/\*\*([^*]+)\*\*/gu, "<strong>$1</strong>")
     .replace(/`([^`]+)`/gu, "<code>$1</code>");
+  for (const [token, link] of evidence) html = html.replaceAll(token, link);
+  return html;
 }
 
 export function parseFrontmatter(text) {
@@ -283,9 +369,15 @@ function renderSection(section) {
   return `<section class="weekly-report-section${section.number === "0" ? " weekly-report-method" : ""}" id="section-${section.number}" aria-labelledby="section-${section.number}-title"><p class="weekly-report-section-label">${label}</p><h2 id="section-${section.number}-title">${inline(section.title)}</h2>${content}</section>`;
 }
 
-export function renderBody(markdown) {
-  const sections = parseReportSections(markdown);
-  return [...sections.filter((section) => section.number !== "0"), ...sections.filter((section) => section.number === "0")].map(renderSection).join("\n");
+export function renderBody(markdown, { evidenceSources } = {}) {
+  const previousEvidenceSources = activeEvidenceSources;
+  if (evidenceSources) activeEvidenceSources = evidenceSources;
+  try {
+    const sections = parseReportSections(markdown);
+    return [...sections.filter((section) => section.number !== "0"), ...sections.filter((section) => section.number === "0")].map(renderSection).join("\n");
+  } finally {
+    activeEvidenceSources = previousEvidenceSources;
+  }
 }
 
 function evidenceTags(markdown) {
@@ -417,6 +509,7 @@ function main() {
     throw new Error("renderer_requires_gate_accepted_draft_or_explicit_published_rebuild");
   }
   const promoted = parseFrontmatter(markdown);
+  activeEvidenceSources = buildEvidenceSourceIndex(root);
   const route = reportRoute(kind, promoted.values);
   const source = path.relative(root, contentFile).replace(/\\/gu, "/");
   const page = shell({ ...promoted.values, source }, renderBody(promoted.body), promoted.body);

@@ -116,6 +116,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
     assert.match(html, /href="funding-insights\.html">融资透视/u);
     assert.match(html, /href="opportunity-map\.html">机会地图/u);
     assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar|v3-data-observation\.html|follow-builders\.html|community-intelligence\.html/u);
+    assert.doesNotMatch(html, /\[(?:E|O|C):[^\]]+\]|report-evidence-ref/u, `${file} must not expose internal evidence IDs`);
   }
 });
 

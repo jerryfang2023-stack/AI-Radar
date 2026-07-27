@@ -16,6 +16,7 @@
    - Pass when the two latest accepted issues have independent dated detail pages and the undated alias resolves only to the newest issue.
    - Pass when the weekly detail page has no `<table>` elements unless the user explicitly requests an appendix.
    - Pass when section labels are visually paired with headings and do not create isolated full-width label rows.
+   - Pass when report evidence is presented as understandable source links and unresolved internal references are omitted.
 
 4. Flexible weekly structure
    - Pass when section 7 remains a stable categorized watchlist.
@@ -48,3 +49,4 @@
 11. Fail if a weekly report page restores shared `IMAP-V2.1.0` metadata or emits any Opportunity Map column metadata, including `OMAP-V1.1.0-direction-cards`.
 12. Fail if a newly published weekly source updates the archive but leaves the Reports Center first-screen card on an older issue.
 13. Fail if a recent weekly issue is rendered as paragraph/list-only HTML despite having structured trend, chain, impact, opportunity, watchlist, and action sections.
+14. Fail if any published report page exposes raw `[E:...]`, `[O:...]`, or `[C:...]` identifiers, or styles them as backend evidence badges.

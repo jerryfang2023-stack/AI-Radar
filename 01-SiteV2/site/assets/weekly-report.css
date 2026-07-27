@@ -379,6 +379,25 @@ body.weekly-report-page {
   margin: 0 0 12px;
 }
 
+.report-evidence-link {
+  display: inline;
+  margin-inline: .18em;
+  color: var(--weekly-blue);
+  font-family: var(--weekly-sans);
+  font-size: .86em;
+  font-weight: var(--gl-weight-label, 600);
+  text-decoration-line: underline;
+  text-decoration-color: rgba(13, 53, 92, .34);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+
+.report-evidence-link:hover {
+  color: var(--weekly-gold);
+  text-decoration-color: currentColor;
+}
+
 .weekly-report-section .weekly-conclusion-lead {
   padding: 18px 20px;
   border-left: 3px solid var(--weekly-gold);
