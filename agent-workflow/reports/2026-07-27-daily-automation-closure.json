@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "status": "closed",
+  "actions": [
+    {
+      "label": "Data Center projection coverage",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-27T06:13:45.375Z",
+      "finished_at": "2026-07-27T06:13:46.221Z",
+      "command": "node agent-workflow/tools/assert-data-center-projection-coverage.mjs --date=2026-07-27",
+      "stdout": "{\n  \"ok\": true,\n  \"date\": \"2026-07-27\",\n  \"report\": \"agent-workflow/reports/2026-07-27-data-center-projection-coverage.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-27-data-center-projection-coverage.md\",\n  \"failures\": 0,\n  \"warnings\": 1,\n  \"metrics\": {\n    \"entity_mention_coverage\": 1,\n    \"accepted_event_entity_coverage\": 1,\n    \"entity_index_organization_coverage\": 1,\n    \"entity_index_product_coverage\": 1,\n    \"fde_frontstage_coverage\": 1,\n    \"hardware_frontstage_coverage\": 1\n  }\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Daily self-check and safe repair",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-27T06:13:46.221Z",
+      "finished_at": "2026-07-27T06:14:30.609Z",
+      "command": "node agent-workflow/tools/run-daily-self-check.mjs --date=2026-07-27 --repair=safe",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"waiting\",\n  \"report\": \"agent-workflow/reports/2026-07-27-daily-self-check.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-27-daily-self-check.md\",\n  \"repair_attempts\": 0,\n  \"codex_repair_tasks\": 0\n}",
+      "stderr": ""
+    },
+    {
+      "label": "Codex targeted repair handoff",
+      "ok": true,
+      "status": 0,
+      "started_at": "2026-07-27T06:14:30.609Z",
+      "finished_at": "2026-07-27T06:15:20.958Z",
+      "command": "node agent-workflow/tools/run-codex-self-repair.mjs --date=2026-07-27 --repair=safe --invoke=off --codex-command=codex",
+      "stdout": "{\n  \"ok\": true,\n  \"status\": \"no_action\",\n  \"report\": \"agent-workflow/reports/2026-07-27-codex-self-repair.json\",\n  \"markdown\": \"agent-workflow/reports/2026-07-27-codex-self-repair.md\",\n  \"prompt\": \"agent-workflow/reports/2026-07-27-codex-self-repair-prompt.md\",\n  \"tasks\": 0,\n  \"block_reason\": \"\"\n}",
+      "stderr": ""
+    }
+  ],
+  "notes": [],
+  "phase": "closure",
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T06:15:20.959Z",
+  "dry_run": false
+}

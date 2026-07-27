@@ -1,7 +1,7 @@
 # Community Intelligence Data Gate - 2026-07-27
 
 - status: passed
-- generated_at: 2026-07-27T00:33:03.240Z
+- generated_at: 2026-07-27T03:33:26.316Z
 - data_file: 01-SiteV2/site/data/community-intelligence.json
 - items: 35
 - links: 98

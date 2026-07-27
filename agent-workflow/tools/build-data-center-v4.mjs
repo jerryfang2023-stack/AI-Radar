@@ -41,7 +41,7 @@ const EVENT_RULES = [
   ["hardware_supply", /\b(?:chip supply|gpu supply|semiconductor supply|ship(?:s|ped)? .*(?:chips?|gpus?|accelerators?)|deliver(?:s|ed) .*(?:chips?|gpus?|accelerators?)|(?:buys?|orders?|purchases?) .{0,80}(?:chips?|gpus?|accelerators?))\b|芯片供应|GPU供应|出货.*(?:芯片|GPU)|交付.*(?:芯片|GPU)|(?:购买|订购|采购).{0,40}(?:芯片|GPU|加速器)/iu],
   ["hardware_deployment", /\b(?:deploys?|deployed|installs?|installed)\b.{0,80}\b(?:gpu|accelerator|server|cluster|data cent(?:er|re))\b|部署.{0,40}(?:GPU|芯片|服务器|集群|数据中心)/iu],
   ["pricing_change", /\b(?:price|pricing|subscription|billing)\b.{0,40}\b(?:changes?|changed|increases?|decreases?|cuts?|launches?)\b|调价|定价|计费变化|降价|涨价/iu],
-  ["policy_regulation", /\b(?:regulator|regulation|policy|executive order|approved by|banned by|European Commission.{0,100}(?:announced|requires?|orders?|binding|DMA measures)|(?:commission|authority|regulator).{0,80}(?:requires?|orders?|rules?))\b|监管|法规|政策|行政令|批准|禁令|(?:欧盟|网信|监管|政府|有关部门).{0,50}(?:备案|公告|公布|要求|裁定)|备案信息/iu],
+  ["policy_regulation", /\b(?:regulator|regulation|policy|executive order|approved by|banned by|European Commission.{0,100}(?:announced|requires?|orders?|binding|DMA measures)|(?:commission|authority|regulator).{0,80}(?:requires?|orders?|rules?))\b|监管|法规|政策|行政令|批准|禁令|(?:欧盟|网信|监管|政府|有关部门).{0,50}(?:备案|公告|公布|要求|裁定)|(?:人工智能法案|AI\s*法案|AI\s*透明度准则).{0,50}(?:生效|实施|要求)|备案信息/iu],
   ["standard_specification", /\b(?:publishes?|published|releases?|released|adopts?|adopted)\b.{0,70}\b(?:(?:open )?technical specification|open specification|industry standard|technical standard|protocol)\b|发布.{0,40}(?:技术规范|开放规范|行业标准|技术标准|协议)|制定.{0,40}(?:行业标准|技术标准|技术规范)/iu],
   ["deployment", /\b(?:deploy(?:s|ed|ing)?|rolls? out|rolled out|implement(?:s|ed|ing)?|goes? live|pilots?|piloted)\b|部署|上线|落地|试点|实施/iu],
   ["research_result", /\b(?:study|research|benchmark|paper|report)\b.{0,70}\b(?:finds?|shows?|reports?|achieves?|usage|gap)\b|(?:研究(?!员)|论文|基准|报告).{0,50}(?:显示|表明|达到|结果|差距|用量|增长|下降|登顶|占比)/iu],
@@ -212,6 +212,7 @@ const ORGANIZATION_ALIASES = [
   ["Databricks", ["Databricks"]],
   ["DeepSeek", ["DeepSeek"]],
   ["Emergent", ["Emergent"]],
+  ["European Union", ["European Union", "欧盟"]],
   ["Elorian", ["Elorian"]],
   ["FuriosaAI", ["FuriosaAI"]],
   ["Gaode", ["高德"]],
@@ -569,9 +570,12 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "") {
 
   if (eventType !== "organization_people") {
     const leadingActionSubject = title.match(/^(.{2,40}?)(?=\s*(?:发布|推出|上线|宣布|开源))/u)?.[1] || "";
+    const resolvedMentionAliases = new Set(selected.map((item) => item.mentionText.toLocaleLowerCase()));
     for (const rawCandidate of [...splitEntityNames(parsed.subject), leadingActionSubject]) {
       const candidate = cleanOrganizationCandidate(rawCandidate);
-      if (!candidate || canonical.has(candidate.toLocaleLowerCase())) continue;
+      if (!candidate
+          || canonical.has(candidate.toLocaleLowerCase())
+          || resolvedMentionAliases.has(candidate.toLocaleLowerCase())) continue;
       const start = Math.max(0, title.indexOf(candidate));
       selected.push({ canonicalName: candidate, mentionText: candidate, start, source: "title_original", verified: false });
       canonical.add(candidate.toLocaleLowerCase());

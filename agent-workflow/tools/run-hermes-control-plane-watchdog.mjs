@@ -105,7 +105,6 @@ function writeReport(payload) {
     ...rows,
     "",
     "Hermes does not evaluate lane data quality, compatibility Card counts, or downstream repair results.",
-    "",
   ].join("\n");
   fs.writeFileSync(jsonFile, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   fs.writeFileSync(mdFile, `${md}\n`, "utf8");
@@ -145,7 +144,6 @@ function writeIncident(payload, reportFile) {
     "2. Restore the missing controller or report-writing path.",
     "3. Let Closure/Codex own any downstream data repair.",
     "4. Do not inspect V3 Card counts or lower V4 evidence gates.",
-    "",
   ].join("\n");
   fs.writeFileSync(file, `${md}\n`, "utf8");
   return rel(file);

@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "status": "passed",
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T06:17:09.887Z",
+  "check_window": "10:20 Asia/Shanghai",
+  "controllers": [
+    {
+      "phase": "morning",
+      "observable": true,
+      "report": "agent-workflow/reports/2026-07-27-daily-automation-morning.json",
+      "controller_status": "passed",
+      "controller_ok": true,
+      "note": "controller executed; downstream status remains owned by Closure/Codex"
+    },
+    {
+      "phase": "recovery",
+      "observable": true,
+      "report": "agent-workflow/reports/2026-07-27-daily-automation-recovery.json",
+      "controller_status": "passed_or_waiting",
+      "controller_ok": true,
+      "note": "controller executed; downstream status remains owned by Closure/Codex"
+    },
+    {
+      "phase": "closure",
+      "observable": true,
+      "report": "agent-workflow/reports/2026-07-27-daily-automation-closure.json",
+      "controller_status": "closed",
+      "controller_ok": true,
+      "note": "controller executed; downstream status remains owned by Closure/Codex"
+    }
+  ],
+  "missing_or_invalid": []
+}
