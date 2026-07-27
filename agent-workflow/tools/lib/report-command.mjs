@@ -11,7 +11,7 @@ function sameExecutable(left, right) {
 export function formatRecordedCommand(command, args = []) {
   const executable = String(command || "");
   const commandArgs = Array.isArray(args) ? args.map(String) : [];
-  const base = path.basename(executable).toLowerCase();
+  const base = path.win32.basename(executable).toLowerCase();
 
   if (
     ["cmd", "cmd.exe"].includes(base)
