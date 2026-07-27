@@ -15,33 +15,19 @@
       return "";
     }
   };
-  const state = { cards: [], filtered: [], companyId: "", sector: "" };
+  const state = { cards: [], filtered: [], companyId: "" };
   const form = $("[data-filter-form]");
-  const categoryTabs = $("[data-category-tabs]");
   const list = $("[data-list]");
   const dialog = $("[data-dialog]");
   const dialogContent = $("[data-dialog-content]");
 
   function fillSelect(name, values) {
     const select = form.elements.namedItem(name);
-    for (const value of values) select.insertAdjacentHTML("beforeend", `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`);
-  }
-
-  function renderCategories(values) {
-    categoryTabs.innerHTML = ["", ...values].map((value) => `
-      <button
-        type="button"
-        data-sector="${escapeHtml(value)}"
-        aria-pressed="${state.sector === value ? "true" : "false"}"
-      >${escapeHtml(value || "全部")}</button>
-    `).join("");
-    categoryTabs.querySelectorAll("[data-sector]").forEach((button) => {
-      button.addEventListener("click", () => {
-        state.sector = button.dataset.sector || "";
-        renderCategories(values);
-        render();
-      });
-    });
+    for (const item of values) {
+      const value = typeof item === "string" ? item : item.id;
+      const label = typeof item === "string" ? item : item.name;
+      select.insertAdjacentHTML("beforeend", `<option value="${escapeHtml(value)}">${escapeHtml(label)}</option>`);
+    }
   }
 
   function cardSearchText(card) {
@@ -55,17 +41,19 @@
       ...(card.comparisons || []).map((item) => item.name),
       card.analysis?.capital_judgment,
       card.analysis?.sector,
+      card.application_category?.name,
     ].join(" ").toLowerCase();
   }
 
   function render() {
     const query = String(form.elements.namedItem("query").value || "").trim().toLowerCase();
     const round = form.elements.namedItem("round").value;
+    const productForm = form.elements.namedItem("product_form").value;
     state.filtered = state.cards.filter((card) => (
       (!state.companyId || card.company?.entity_id === state.companyId)
       && (!query || cardSearchText(card).includes(query))
       && (!round || card.financing?.round === round)
-      && (!state.sector || card.analysis?.sector === state.sector)
+      && (!productForm || card.application_category?.id === productForm)
     ));
     if (!state.filtered.length) {
       list.innerHTML = '<div class="fi-empty">当前筛选条件下暂无融资透视</div>';
@@ -79,7 +67,7 @@
         <article class="fi-card">
           <header class="fi-card-head">
             <div class="fi-card-meta">
-              <span>${escapeHtml(card.analysis?.sector || "AI 创业")}</span>
+              <span>${escapeHtml(card.application_category?.name || card.analysis?.sector || "AI 应用")}</span>
               <time>${escapeHtml(card.financing?.announced_at || card.as_of_date)}</time>
             </div>
             <div class="fi-card-title-row">
@@ -231,7 +219,7 @@
         <header class="fi-detail-hero">
           <div class="fi-detail-main">
             <div class="fi-detail-kicker">
-              <span>${escapeHtml(card.analysis?.sector || "AI 创业")}</span>
+              <span>${escapeHtml(card.application_category?.name || card.analysis?.sector || "AI 应用")}</span>
               <time>${escapeHtml(card.financing?.announced_at || card.as_of_date)}</time>
             </div>
             <h2 id="fi-dialog-title">${escapeHtml(card.company?.full_name || card.company?.name)}</h2>
@@ -393,7 +381,7 @@
     }
     $("[data-latest-date]").textContent = data.meta?.latest_date ? `更新于 ${data.meta.latest_date}` : "暂无更新";
     fillSelect("round", data.filters?.rounds || []);
-    renderCategories(data.filters?.sectors || []);
+    fillSelect("product_form", data.filters?.product_forms || []);
     form.addEventListener("input", render);
     form.addEventListener("change", render);
     $("[data-dialog-close]").addEventListener("click", closeDetail);

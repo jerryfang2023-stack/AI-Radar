@@ -20,7 +20,7 @@
 
 .fi-controls {
   display: grid;
-  grid-template-columns: minmax(280px, 1fr) 180px minmax(280px, auto);
+  grid-template-columns: minmax(280px, 1fr) minmax(150px, 190px) minmax(180px, 240px);
   align-items: end;
   gap: 16px;
   margin-bottom: 24px;
@@ -45,42 +45,9 @@
 }
 .fi-controls input:focus-visible,
 .fi-controls select:focus-visible,
-.fi-categories button:focus-visible,
 .fi-card button:focus-visible,
 .fi-dialog a:focus-visible,
 .fi-dialog button:focus-visible { outline: 2px solid var(--fi-gold); outline-offset: 3px; }
-
-.fi-categories {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 6px;
-  min-width: 0;
-  padding-left: 16px;
-  border-left: 1px solid var(--fi-line);
-  overflow-x: auto;
-  scrollbar-width: thin;
-}
-.fi-categories button {
-  flex: 0 0 auto;
-  min-height: 40px;
-  padding: 0 13px;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  background: transparent;
-  color: var(--fi-muted);
-  font: inherit;
-  font-size: 13px;
-  cursor: pointer;
-  transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
-}
-.fi-categories button[aria-pressed="true"] {
-  border-color: rgba(13, 53, 92, .16);
-  background: rgba(13, 53, 92, .08);
-  color: var(--fi-blue);
-  font-weight: 700;
-}
-.fi-categories button:active { transform: scale(.98); }
 .fi-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -803,12 +770,6 @@
   .fi-page-head h1 { width: 100%; font-size: 30px; line-height: 42px; }
   .fi-date { margin-left: 0; }
   .fi-controls { grid-template-columns: 1fr; padding: 14px; }
-  .fi-categories {
-    justify-content: flex-start;
-    padding-top: 2px;
-    padding-left: 0;
-    border-left: 0;
-  }
   .fi-card { min-height: 334px; padding: 22px 20px 19px; }
   .fi-card-title-row { align-items: flex-start; }
   .fi-card h2 { font-size: 26px; line-height: 35px; }

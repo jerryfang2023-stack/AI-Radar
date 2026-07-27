@@ -12,6 +12,28 @@ import {
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
 
+const PRODUCT_FORM_RULES = [
+  ["chip_accelerator", /(?:芯片|半导体|加速器|ASIC|GPU\s*IP|EDA)/iu],
+  ["compute_system", /(?:算力|推理云|新云|Neocloud|数据中心|GPU\s*集群|计算系统)/iu],
+  ["robot", /(?:机器人|具身|Physical\s*AI|物理\s*AI|仓库自动化)/iu],
+  ["ai_device", /(?:AI\s*设备|AI\s*硬件|消费硬件|智能硬件|家居设计)/iu],
+  ["security_product", /(?:AI\s*安全|智能体安全|安全与治理|网络安全|邮件安全|身份与访问|隐私增强)/iu],
+  ["developer_tool", /(?:开发者|编程|编码|代码|软件开发|软件交付|IDE|低代码|无代码|CAD|设计工具)/iu],
+  ["model", /(?:基础模型|大模型|前沿模型|世界模型|视觉推理|语音.*模型|模型与能力)/iu],
+  ["api_service", /(?:\bAPI\b|模型服务)/iu],
+  ["data_infrastructure", /(?:AI\s*基础设施|人工智能基础设施|推理优化|模型路由|模型推理|MLOps|数据平台|网络基础设施|记忆与成本)/iu],
+  ["enterprise_platform", /(?:企业|工作流|智能体|自动化|销售|营销|客服|供应链|采购|投标|法律|合规|金融|保险|医疗|教育|政府|建筑|工业|制药)/iu],
+];
+
+export function fundingProductFormId(card) {
+  const searchText = [
+    card.analysis?.sector,
+    card.company?.summary,
+    ...(card.products || []).flatMap((item) => [item.name, item.description]),
+  ].filter(Boolean).join(" ");
+  return PRODUCT_FORM_RULES.find(([, pattern]) => pattern.test(searchText))?.[0] || "ai_application";
+}
+
 function listBundles(projectRoot) {
   const dir = path.join(projectRoot, "01-SiteV2/content/12-applications/funding-insights");
   if (!fs.existsSync(dir)) return [];
@@ -27,9 +49,18 @@ function directionById(projectRoot) {
   return new Map((data.directionCards || []).map((card) => [card.id, { id: card.id, title: card.title }]));
 }
 
+function productFormNames(projectRoot) {
+  const taxonomy = readJson(path.join(projectRoot, "agent-workflow/product/tag-taxonomy-v4.json"), {});
+  const productForm = (taxonomy.facets || []).find((facet) => facet.id === "product_form");
+  return new Map((productForm?.values || [])
+    .filter((value) => value.status === "active")
+    .map((value) => [value.id, value.name]));
+}
+
 export function buildFundingInsightsFrontstage(projectRoot = root) {
   const bundles = listBundles(projectRoot);
   const directions = directionById(projectRoot);
+  const productForms = productFormNames(projectRoot);
   const entityIndex = readJson(path.join(projectRoot, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), {});
   const relationshipEntityIds = new Set([
     ...(entityIndex.companies || []),
@@ -50,26 +81,40 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
       const rightDate = right.financing.announced_at || right.as_of_date;
       return rightDate.localeCompare(leftDate) || right.published_at.localeCompare(left.published_at);
     })
-    .map((card) => ({
-      ...card,
-      analysis: {
-        ...card.analysis,
-        related_direction: directions.get(card.analysis?.related_direction_id) || null,
-      },
-      links: {
-        company: `data-center.html?view=index&detail=entity&id=${encodeURIComponent(card.company.entity_id)}`,
-        relation_map: relationshipEntityIds.has(card.company.entity_id)
-          ? `data-center.html?view=relations&entity=${encodeURIComponent(card.company.entity_id)}`
-          : "",
-        funding_event: `data-center.html?view=events&detail=event&id=${encodeURIComponent(card.triggered_by_event_id)}`,
-        direction: card.analysis?.related_direction_id ? "opportunity-map.html#direction-cards" : "",
-      },
-    }));
+    .map((card) => {
+      const productFormId = fundingProductFormId(card);
+      const productFormName = productForms.get(productFormId);
+      if (!productFormName) throw new Error(`Unknown TAG-V4 product_form value: ${productFormId}`);
+      return {
+        ...card,
+        application_category: {
+          dimension: "product_form",
+          id: productFormId,
+          name: productFormName,
+        },
+        analysis: {
+          ...card.analysis,
+          related_direction: directions.get(card.analysis?.related_direction_id) || null,
+        },
+        links: {
+          company: `data-center.html?view=index&detail=entity&id=${encodeURIComponent(card.company.entity_id)}`,
+          relation_map: relationshipEntityIds.has(card.company.entity_id)
+            ? `data-center.html?view=relations&entity=${encodeURIComponent(card.company.entity_id)}`
+            : "",
+          funding_event: `data-center.html?view=events&detail=event&id=${encodeURIComponent(card.triggered_by_event_id)}`,
+          direction: card.analysis?.related_direction_id ? "opportunity-map.html#direction-cards" : "",
+        },
+      };
+    });
   const latestDate = bundles.map((bundle) => bundle.meta?.date || "").sort().at(-1) || "";
   const generatedAt = [
     ...bundles.map((bundle) => bundle.meta?.generated_at || ""),
     ...cards.map((card) => card.published_at || ""),
   ].filter(Boolean).sort().at(-1) || "";
+  const usedProductFormIds = new Set(cards.map((card) => card.application_category?.id).filter(Boolean));
+  const productFormFilters = [...productForms.entries()]
+    .filter(([id]) => usedProductFormIds.has(id))
+    .map(([id, name]) => ({ dimension: "product_form", id, name }));
   return {
     meta: {
       schema_version: FUNDING_INSIGHT_FRONTSTAGE_VERSION,
@@ -83,7 +128,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
     },
     filters: {
       rounds: [...new Set(cards.map((card) => card.financing.round).filter(Boolean))].sort(),
-      sectors: [...new Set(cards.map((card) => card.analysis?.sector).filter(Boolean))].sort(),
+      product_forms: productFormFilters,
       directions: [...new Map(cards
         .map((card) => card.analysis?.related_direction)
         .filter(Boolean)
