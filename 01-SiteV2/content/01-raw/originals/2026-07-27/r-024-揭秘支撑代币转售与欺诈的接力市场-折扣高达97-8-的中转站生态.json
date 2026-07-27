@@ -1,0 +1,298 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-024",
+  "title": "揭秘支撑代币转售与欺诈的接力市场：折扣高达97.8%的中转站生态",
+  "title_zh": "揭秘支撑代币转售与欺诈的接力市场：折扣高达97.8%的中转站生态",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://vectoral.com/blog/token-relay-market",
+  "canonical_url": "https://vectoral.com/blog/token-relay-market",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "operators",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-28T00:00:00.000Z",
+  "collected_at": "2026-07-27T03:16:46.066Z",
+  "language": "mixed",
+  "full_text": "threat-research llm-security\nAn Inside Look at the Relay Market Powering Token Resellers and Fraud\nJune 28, 2026 · Matt Lenhard · 9 min read\nShare\nMy Story\nI’ve spent a lot of time thinking about token fraud, a problem I first stumbled upon while working as a software engineer on an AI gateway.\nWe faced constant abuse. At first it was free-credit abuse, where users spun up accounts en masse. Then it was our support chatbot. I started talking to friends about it and hearing stories of companies losing millions of dollars to abuse each day.\nThe abuse took a number of different shapes, and the abusers were relentless. I came to realize that the problem was much bigger than us. A new form of fraud had emerged, and it had become endemic to the token economy.\nWhile researching where the abuse was coming from, I stumbled onto a Chinese forum where operators openly discussed the relays and their methods. My notes on the industry and its players are below.\nSo What Is a Relay?\nA relay — or “transfer station” — is essentially a service that proxies traffic to U.S. models, often at a deep discount. For example, one operator’s price-comparison site listed a package that bought the equivalent of $3,333 worth of official Anthropic credit for 425 RMB — roughly $0.13 of usage per $1 spent.\nEffective rate\n$0.13\nof official usage per $1 spent\nSample package\n$3,333\nof Anthropic credit for just 425 RMB\nTop discount\n97.8%\noff official pricing, at the cheapest relay\nTo make that concrete, here’s how far below official pricing the relays we track actually run, ranked by discount:\n# Provider Median discount from official list price\n01 Now Coding\n97.8%\n02 I Code Easy\n97.1%\n03 Claude ZZ\n96.6%\n04 Doro\n96.4%\n05 UoCode\n96.3%\n06 ZeroCode\n94.9%\n07 AiYa\n94.9%\n08 HongMaCC\n94.2%\n09 Right Code\n94.1%\n10 BUZZ\n94.1%\nSee all 49\nHow the Market Works\nThe ecosystem runs four layers deep, from the merchants sourcing raw accounts down to the developers buying cheap tokens:\n01 Upstream 卡商 / 号商\nCard & account merchants — virtual credit cards built to pass U.S. and European billing checks, plus bulk-registered accounts.\n02 Midstream 账号池\nAccount pools — aggregate hundreds of upstream accounts, manage tokens and rate limits, handle failover, and expose a single API.\n03 Downstream 中转站\nRelays / transfer stations — wrap the pool's API in a clean, billed, Chinese-language product and compete on price.\n04 End users\nDevelopers, startups, and SaaS chasing cheap inference — plus commercial buyers running model distillation.\nUpstream\nSitting at the top are the card merchants (卡商) and account merchants (号商). They sell virtual credit cards designed to pass U.S. and European billing checks, along with bulk-registered accounts.\nMidstream\nIn the middle sit the account pools (账号池) . A pool aggregates dozens or hundreds of upstream accounts, manages their authentication tokens and rate limits, handles failover when accounts get flagged, and exposes a single API surface that downstream relays can consume.\nThe inventory isn’t only model-lab accounts. Alongside direct OpenAI, Anthropic, and Google credentials are accounts harvested from the application layer.\nMuch of the forum’s activity centers on “reverse-engineered” access to tools like Kiro and antigravity, which are consumer products, not lab APIs. To a pool, it makes no difference whether a token comes from a lab or from an app built on one; anything that resells or exposes a model is a target.\nDownstream\nDownstream sit the relay / transfer stations themselves — the consumer-facing layer. They wrap the pool’s API in a clean Chinese-language product, handle billing and invoicing, run customer-support WeChat groups, and compete on price.\nEnd users\nAt the bottom are individual Chinese developers, small startups, and mid-sized SaaS companies hunting for cheap inference — as well as some larger commercial buyers using the infrastructure for model distillation.\nIn practice these layers blur. Many operators run both the pool and the relay, and the forum’s own participants often use “pool” and “transfer station” interchangeably.\nThe Software Behind the Relays\nAlmost every relay I’ve looked at runs on one of two open-source projects: one-api or new-api .\nBoth are OpenAI-compatible gateways. An operator deploys the panel and adds a set of channels (渠道) . Each channel represents a provider plus a pool of API keys. The panel exposes a single endpoint that matches the OpenAI API, so buyers just point their existing SDK at the relay’s URL. On every request it pulls a key from the pool, forwards it upstream, returns the response, and deducts quota priced by usage times a multiplier (倍率) . It manages the users, tokens, pricing tiers, logs, and billing.\nnew-api is a more actively developed fork of one-api , and the difference is mostly commerce: it ships with self-service payment and recharge, plus image, video, and audio models. Across the relays we track, one-api turns up roughly four times as often as new-api; the original base is the more widespread of the two, even if new-api is the one built to sell.\nThere’s nothing inherently illicit about the software. one-api and new-api are neutral, legitimate tools. Plenty of companies self-host them to put their own accounts behind a single gateway with team quotas and spend tracking. A relay crosses the line when its channels are stocked with stolen, leaked, or pooled keys instead of the operator’s own, and when it resells that access against the providers’ terms.\nThe Methods\nFree-trial abuse. Abusers automate account creation en masse to claim free credits, then proxy that traffic back to their own end users.\nChargeback attacks. Abusers charge back their spend after the usage period ends to recoup their costs — or use stolen cards from the start.\nPrepaid cards. Abusers fund accounts with prepaid cards capped at a set limit.\nOpen inference. Any support chatbot without strict guardrails is ripe for having traffic proxied through it.\nDenial of wallet. Not strictly a relay technique, but an emerging form of abuse I’ve been tracking: attackers fire off a flood of concurrent requests purely to burn a provider’s spend. It can be facilitated by any of the methods above. The difference is there’s no financial motive.\nWho Are the Buyers?\nThe three main use cases seem to be cheap tokens, getting around geo-restrictions and model distillation. A few relevant quotes from the forum:\nFrom the V2EX thread · translated\n> @v2exgo · reply #38 V2EX\n“Distillation uses Claude/CodeX models to train domestic models. There are intermediaries that specialize in distillation and can provide relevant evidence, but I can’t name specific domestic companies. Anyway, companies with strong programming capabilities are all distilling Claude; it’s a multi-billion RMB industry chain, and many big players earn hundreds of thousands a day.”\nFrom the V2EX thread · translated\n> @v2exgo · reply #129 V2EX\n“It’s not just true — many distillers in the industry have made millions.”\nA Growing and Maturing Market\n> @v2exgo · reply #82 V2EX\n“I got 20TB on my first day online.” (And: “You might get 100TB of traffic as soon as you go online.”)\nI was surprised by how mature the market already is. There are price-comparison sites for the relays, affiliate programs, and even gateway products. On the forums, consumer demand looks just as strong. And these aren’t fringe operations: the ten highest-traffic relays we track pull a combined 3.6 million visits a month between them.\nMy hunch is that things get worse for the application layer from here. As Anthropic and others roll out KYC controls and identity verification, the abuse won’t disappear, it will just move somewhere else.\nThey’re Raffling Off Keys Now\nA clear sign of how normalized this has become is that one of the relay directories runs a daily lottery for API keys.\nThe site — hvoy.ai, which otherwise bills itself as a relay authenticity checker and price-comparison tool, gives away fifty $100 API keys every single day. You earn entry credits from a daily check-in, spend 20 credits per ticket, and can buy up to three tickets a round. On the day I looked, 258 people had entered 401 tickets for the fifty keys.\nhvoy.ai · daily draw for 50 × $100 API keys\nEvery day\n50\n$100 API keys given away per round\nCost to enter\n20 pts\nearned free from a daily check-in\nA recent round\n1,150\ntickets competing for 50 keys\nThe part that got me is the fairness theater. The draw is provably fair — the same cryptographic scheme legitimate crypto-gambling sites use to prove they didn’t rig the result. The random seed is the hash of the latest Bitcoin block, winners are picked with a Partial Fisher-Yates shuffle, and the full list of entries is published as a snapshot before the draw.\nHow Providers Can Defend Themselves\nI’ve talked to many companies facing this, and the truth is that there’s no clean fix. Fraud is a constant cat-and-mouse game. What follows isn’t a silver bullet — it’s the set of things that I’ve seen work and that others are doing, roughly in the order that abuse travels: from account creation, to detection and then to damage control.\nRaise the cost of entry. Make accounts hard to create in bulk and cap what a fresh one can spend. Check for browser-based automation signals. Any client-side detection can be bypassed, but every bit of friction raises the attacker’s cost.\nWatch the money. Flag prepaid cards, virtual cards, mismatched billing info, and small card-testing charges.\nWatch the behavior. Look for patterns no real user produces: time from registration to first token, the model selected, prompt relevance (where you can measure it), account age, and IP signals (proxy, VPN, country).\nCluster the accounts. Watch for IP sybils and shared device fingerprints that tie supposedly-separate accounts back to one operator.\nMonitor for cost anomalies. Setup monitos and alerts on AI spend as a failsafe, so that you can flip things off if abuse does start.\nAssume some abuse gets through anyway, and limit what it can cost you:\nEnforce spend caps, spend locks, and concurrency limits per account.\nReserve budget for every in-flight request, so concurrent calls can’t blow past your limit.\nStart new accounts with low caps; let them earn higher limits with age and a verified card.\nIf an account’s risk rises mid-session, add friction like a CAPTCHA or an additional form of identity verification.\nAnd when you do catch someone, throttle quietly. A clean error just tells the attacker which signal to fix before they come back.\nNone of this stops the abuse for good. But if you make attacking your own service expensive enough that the numbers stop working, they’ll try to find an easier target.\nSources\nAll quotes are translated from a V2EX thread in the site’s Programmers section, “A comprehensive guide to AI transfer station jargon,” started by the user v2exgo (who operates the relay at terminal.pub). The thread ran from March 5 to June 23, 2026 and drew roughly 35,000 views and 190 replies. Reply numbers below refer to that thread.\nPrimary source — V2EX thread: https://www.v2ex.com/t/1196011\nPrice-comparison aggregator: getcheapai.com.\nDaily API-key lottery: hvoy.ai/free-tokens/lottery — 50 $100 keys drawn per day, settled with a Bitcoin-block-hash seed and a Partial Fisher-Yates shuffle.\nOperator’s relay: terminal.pub\nEffective-rate derivation: reply #50, where milkleeeeee computes the 425 RMB package as equal to the official $3,333 — about $0.13 per $1 of official usage.\nShare",
+  "clean_text": "threat-research llm-security\nAn Inside Look at the Relay Market Powering Token Resellers and Fraud\nJune 28, 2026 · Matt Lenhard · 9 min read\nShare\nMy Story\nI’ve spent a lot of time thinking about token fraud, a problem I first stumbled upon while working as a software engineer on an AI gateway.\nWe faced constant abuse. At first it was free-credit abuse, where users spun up accounts en masse. Then it was our support chatbot. I started talking to friends about it and hearing stories of companies losing millions of dollars to abuse each day.\nThe abuse took a number of different shapes, and the abusers were relentless. I came to realize that the problem was much bigger than us. A new form of fraud had emerged, and it had become endemic to the token economy.\nWhile researching where the abuse was coming from, I stumbled onto a Chinese forum where operators openly discussed the relays and their methods. My notes on the industry and its players are below.\nSo What Is a Relay?\nA relay — or “transfer station” — is essentially a service that proxies traffic to U.S. models, often at a deep discount. For example, one operator’s price-comparison site listed a package that bought the equivalent of $3,333 worth of official Anthropic credit for 425 RMB — roughly $0.13 of usage per $1 spent.\nEffective rate\n$0.13\nof official usage per $1 spent\nSample package\n$3,333\nof Anthropic credit for just 425 RMB\nTop discount\n97.8%\noff official pricing, at the cheapest relay\nTo make that concrete, here’s how far below official pricing the relays we track actually run, ranked by discount:\n# Provider Median discount from official list price\n01 Now Coding\n97.8%\n02 I Code Easy\n97.1%\n03 Claude ZZ\n96.6%\n04 Doro\n96.4%\n05 UoCode\n96.3%\n06 ZeroCode\n94.9%\n07 AiYa\n94.9%\n08 HongMaCC\n94.2%\n09 Right Code\n94.1%\n10 BUZZ\n94.1%\nSee all 49\nHow the Market Works\nThe ecosystem runs four layers deep, from the merchants sourcing raw accounts down to the developers buying cheap tokens:\n01 Upstream 卡商 / 号商\nCard & account merchants — virtual credit cards built to pass U.S. and European billing checks, plus bulk-registered accounts.\n02 Midstream 账号池\nAccount pools — aggregate hundreds of upstream accounts, manage tokens and rate limits, handle failover, and expose a single API.\n03 Downstream 中转站\nRelays / transfer stations — wrap the pool's API in a clean, billed, Chinese-language product and compete on price.\n04 End users\nDevelopers, startups, and SaaS chasing cheap inference — plus commercial buyers running model distillation.\nUpstream\nSitting at the top are the card merchants (卡商) and account merchants (号商). They sell virtual credit cards designed to pass U.S. and European billing checks, along with bulk-registered accounts.\nMidstream\nIn the middle sit the account pools (账号池) . A pool aggregates dozens or hundreds of upstream accounts, manages their authentication tokens and rate limits, handles failover when accounts get flagged, and exposes a single API surface that downstream relays can consume.\nThe inventory isn’t only model-lab accounts. Alongside direct OpenAI, Anthropic, and Google credentials are accounts harvested from the application layer.\nMuch of the forum’s activity centers on “reverse-engineered” access to tools like Kiro and antigravity, which are consumer products, not lab APIs. To a pool, it makes no difference whether a token comes from a lab or from an app built on one; anything that resells or exposes a model is a target.\nDownstream\nDownstream sit the relay / transfer stations themselves — the consumer-facing layer. They wrap the pool’s API in a clean Chinese-language product, handle billing and invoicing, run customer-support WeChat groups, and compete on price.\nEnd users\nAt the bottom are individual Chinese developers, small startups, and mid-sized SaaS companies hunting for cheap inference — as well as some larger commercial buyers using the infrastructure for model distillation.\nIn practice these layers blur. Many operators run both the pool and the relay, and the forum’s own participants often use “pool” and “transfer station” interchangeably.\nThe Software Behind the Relays\nAlmost every relay I’ve looked at runs on one of two open-source projects: one-api or new-api .\nBoth are OpenAI-compatible gateways. An operator deploys the panel and adds a set of channels (渠道) . Each channel represents a provider plus a pool of API keys. The panel exposes a single endpoint that matches the OpenAI API, so buyers just point their existing SDK at the relay’s URL. On every request it pulls a key from the pool, forwards it upstream, returns the response, and deducts quota priced by usage times a multiplier (倍率) . It manages the users, tokens, pricing tiers, logs, and billing.\nnew-api is a more actively developed fork of one-api , and the difference is mostly commerce: it ships with self-service payment and recharge, plus image, video, and audio models. Across the relays we track, one-api turns up roughly four times as often as new-api; the original base is the more widespread of the two, even if new-api is the one built to sell.\nThere’s nothing inherently illicit about the software. one-api and new-api are neutral, legitimate tools. Plenty of companies self-host them to put their own accounts behind a single gateway with team quotas and spend tracking. A relay crosses the line when its channels are stocked with stolen, leaked, or pooled keys instead of the operator’s own, and when it resells that access against the providers’ terms.\nThe Methods\nFree-trial abuse. Abusers automate account creation en masse to claim free credits, then proxy that traffic back to their own end users.\nChargeback attacks. Abusers charge back their spend after the usage period ends to recoup their costs — or use stolen cards from the start.\nPrepaid cards. Abusers fund accounts with prepaid cards capped at a set limit.\nOpen inference. Any support chatbot without strict guardrails is ripe for having traffic proxied through it.\nDenial of wallet. Not strictly a relay technique, but an emerging form of abuse I’ve been tracking: attackers fire off a flood of concurrent requests purely to burn a provider’s spend. It can be facilitated by any of the methods above. The difference is there’s no financial motive.\nWho Are the Buyers?\nThe three main use cases seem to be cheap tokens, getting around geo-restrictions and model distillation. A few relevant quotes from the forum:\nFrom the V2EX thread · translated\n> @v2exgo · reply #38 V2EX\n“Distillation uses Claude/CodeX models to train domestic models. There are intermediaries that specialize in distillation and can provide relevant evidence, but I can’t name specific domestic companies. Anyway, companies with strong programming capabilities are all distilling Claude; it’s a multi-billion RMB industry chain, and many big players earn hundreds of thousands a day.”\nFrom the V2EX thread · translated\n> @v2exgo · reply #129 V2EX\n“It’s not just true — many distillers in the industry have made millions.”\nA Growing and Maturing Market\n> @v2exgo · reply #82 V2EX\n“I got 20TB on my first day online.” (And: “You might get 100TB of traffic as soon as you go online.”)\nI was surprised by how mature the market already is. There are price-comparison sites for the relays, affiliate programs, and even gateway products. On the forums, consumer demand looks just as strong. And these aren’t fringe operations: the ten highest-traffic relays we track pull a combined 3.6 million visits a month between them.\nMy hunch is that things get worse for the application layer from here. As Anthropic and others roll out KYC controls and identity verification, the abuse won’t disappear, it will just move somewhere else.\nThey’re Raffling Off Keys Now\nA clear sign of how normalized this has become is that one of the relay directories runs a daily lottery for API keys.\nThe site — hvoy.ai, which otherwise bills itself as a relay authenticity checker and price-comparison tool, gives away fifty $100 API keys every single day. You earn entry credits from a daily check-in, spend 20 credits per ticket, and can buy up to three tickets a round. On the day I looked, 258 people had entered 401 tickets for the fifty keys.\nhvoy.ai · daily draw for 50 × $100 API keys\nEvery day\n50\n$100 API keys given away per round\nCost to enter\n20 pts\nearned free from a daily check-in\nA recent round\n1,150\ntickets competing for 50 keys\nThe part that got me is the fairness theater. The draw is provably fair — the same cryptographic scheme legitimate crypto-gambling sites use to prove they didn’t rig the result. The random seed is the hash of the latest Bitcoin block, winners are picked with a Partial Fisher-Yates shuffle, and the full list of entries is published as a snapshot before the draw.\nHow Providers Can Defend Themselves\nI’ve talked to many companies facing this, and the truth is that there’s no clean fix. Fraud is a constant cat-and-mouse game. What follows isn’t a silver bullet — it’s the set of things that I’ve seen work and that others are doing, roughly in the order that abuse travels: from account creation, to detection and then to damage control.\nRaise the cost of entry. Make accounts hard to create in bulk and cap what a fresh one can spend. Check for browser-based automation signals. Any client-side detection can be bypassed, but every bit of friction raises the attacker’s cost.\nWatch the money. Flag prepaid cards, virtual cards, mismatched billing info, and small card-testing charges.\nWatch the behavior. Look for patterns no real user produces: time from registration to first token, the model selected, prompt relevance (where you can measure it), account age, and IP signals (proxy, VPN, country).\nCluster the accounts. Watch for IP sybils and shared device fingerprints that tie supposedly-separate accounts back to one operator.\nMonitor for cost anomalies. Setup monitos and alerts on AI spend as a failsafe, so that you can flip things off if abuse does start.\nAssume some abuse gets through anyway, and limit what it can cost you:\nEnforce spend caps, spend locks, and concurrency limits per account.\nReserve budget for every in-flight request, so concurrent calls can’t blow past your limit.\nStart new accounts with low caps; let them earn higher limits with age and a verified card.\nIf an account’s risk rises mid-session, add friction like a CAPTCHA or an additional form of identity verification.\nAnd when you do catch someone, throttle quietly. A clean error just tells the attacker which signal to fix before they come back.\nNone of this stops the abuse for good. But if you make attacking your own service expensive enough that the numbers stop working, they’ll try to find an easier target.\nSources\nAll quotes are translated from a V2EX thread in the site’s Programmers section, “A comprehensive guide to AI transfer station jargon,” started by the user v2exgo (who operates the relay at terminal.pub). The thread ran from March 5 to June 23, 2026 and drew roughly 35,000 views and 190 replies. Reply numbers below refer to that thread.\nPrimary source — V2EX thread: https://www.v2ex.com/t/1196011\nPrice-comparison aggregator: getcheapai.com.\nDaily API-key lottery: hvoy.ai/free-tokens/lottery — 50 $100 keys drawn per day, settled with a Bitcoin-block-hash seed and a Partial Fisher-Yates shuffle.\nOperator’s relay: terminal.pub\nEffective-rate derivation: reply #50, where milkleeeeee computes the 425 RMB package as equal to the official $3,333 — about $0.13 per $1 of official usage.\nShare",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-27/r-024-揭秘支撑代币转售与欺诈的接力市场-折扣高达97-8-的中转站生态.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-27/r-024-揭秘支撑代币转售与欺诈的接力市场-折扣高达97-8-的中转站生态.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 11493,
+    "paragraph_count": 76,
+    "sentence_count": 104,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0003,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 11493,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "d28949073dedc0ef",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "揭秘支撑代币转售与欺诈的接力市场：折扣高达97.8%的中转站生态",
+    "discovery_summary": "一个由卡商、账号池、中转站和终端用户构成的四层接力市场，正以低至官方价格0.13美元/1美元的成本转售OpenAI、Anthropic等模型token。其中Top 1中转站\"Now Coding\"提供97.8%折扣，425元人民币即可获得价值3333美元的Anthropic额度。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://vectoral.com/blog/token-relay-market",
+    "discovered_at": "2026-07-27T03:05:56.401Z",
+    "rank_on_page": 41,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "cf99f0a3ecdb1854",
+  "content_hash": "d28949073dedc0ef",
+  "full_text_hash": "d28949073dedc0ef",
+  "semantic_hash": "51e2b2e85325e3e5",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-28T00:00:00.000Z",
+  "last_seen_at": "2026-07-27T03:16:46.066Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "一个由卡商、账号池、中转站和终端用户构成的四层接力市场，正以低至官方价格0.13美元/1美元的成本转售OpenAI、Anthropic等模型token。其中Top 1中转站\"Now Coding\"提供97.8%折扣，425元人民币即可获得价值3333美元的Anthropic额度。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "threat-research llm-security An Inside Look at the Relay Market Powering Token Resellers and Fraud June 28, 2026 · Matt Lenhard · 9 min read Share My Story I’ve spent a lot of time thinking about token fraud, a problem I first stumbled upon while working as a software engineer on an AI gateway.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "We faced constant abuse.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "At first it was free-credit abuse, where users spun up accounts en masse.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Then it was our support chatbot.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "I started talking to friends about it and hearing stories of companies losing millions of dollars to abuse each day.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-27T03:16:46.066Z",
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "OpenAI",
+      "Anthropic",
+      "Google"
+    ],
+    "products": [
+      "Claude",
+      "CodeX"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "部署 / 上线",
+      "定价 / 计费变化",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "97.8%",
+      "0.13美元",
+      "1美元",
+      "1",
+      "425",
+      "3333美元",
+      "28",
+      "2026"
+    ],
+    "quotes": [
+      "Now Coding",
+      "transfer station",
+      "reverse-engineered",
+      "transfer station",
+      "It’s not just true — many distillers in the industry have made millions."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "We faced constant abuse.",
+      "At first it was free-credit abuse, where users spun up accounts en masse.",
+      "I started talking to friends about it and hearing stories of companies losing millions of dollars to abuse each day."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Then it was our support chatbot."
+    ],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": [
+      "threat-research llm-security An Inside Look at the Relay Market Powering Token Resellers and Fraud June 28, 2026 · Matt Lenhard · 9 min read Share My Story I’ve spent a lot of time thinking about token fraud, a problem I first stumbled upon while working as a software engineer on an AI gateway."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 揭秘支撑代币转售与欺诈的接力市场：折扣高达97.8%的中转站生态\n\n- raw_id: R-024\n- title_zh: 揭秘支撑代币转售与欺诈的接力市场：折扣高达97.8%的中转站生态\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://vectoral.com/blog/token-relay-market\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-07-27T03:16:46.066Z\n\n## clean_text\n\nthreat-research llm-security\nAn Inside Look at the Relay Market Powering Token Resellers and Fraud\nJune 28, 2026 · Matt Lenhard · 9 min read\nShare\nMy Story\nI’ve spent a lot of time thinking about token fraud, a problem I first stumbled upon while working as a software engineer on an AI gateway.\nWe faced constant abuse. At first it was free-credit abuse, where users spun up accounts en masse. Then it was our support chatbot. I started talking to friends about it and hearing stories of companies losing millions of dollars to abuse each day.\nThe abuse took a number of different shapes, and the abusers were relentless. I came to realize that the problem was much bigger than us. A new form of fraud had emerged, and it had become endemic to the token economy.\nWhile researching where the abuse was coming from, I stumbled onto a Chinese forum where operators openly discussed the relays and their methods. My notes on the industry and its players are below.\nSo What Is a Relay?\nA relay — or “transfer station” — is essentially a service that proxies traffic to U.S. models, often at a deep discount. For example, one operator’s price-comparison site listed a package that bought the equivalent of $3,333 worth of official Anthropic credit for 425 RMB — roughly $0.13 of usage per $1 spent.\nEffective rate\n$0.13\nof official usage per $1 spent\nSample package\n$3,333\nof Anthropic credit for just 425 RMB\nTop discount\n97.8%\noff official pricing, at the cheapest relay\nTo make that concrete, here’s how far below official pricing the relays we track actually run, ranked by discount:\n# Provider Median discount from official list price\n01 Now Coding\n97.8%\n02 I Code Easy\n97.1%\n03 Claude ZZ\n96.6%\n04 Doro\n96.4%\n05 UoCode\n96.3%\n06 ZeroCode\n94.9%\n07 AiYa\n94.9%\n08 HongMaCC\n94.2%\n09 Right Code\n94.1%\n10 BUZZ\n94.1%\nSee all 49\nHow the Market Works\nThe ecosystem runs four layers deep, from the merchants sourcing raw accounts down to the developers buying cheap tokens:\n01 Upstream 卡商 / 号商\nCard & account merchants — virtual credit cards built to pass U.S. and European billing checks, plus bulk-registered accounts.\n02 Midstream 账号池\nAccount pools — aggregate hundreds of upstream accounts, manage tokens and rate limits, handle failover, and expose a single API.\n03 Downstream 中转站\nRelays / transfer stations — wrap the pool's API in a clean, billed, Chinese-language product and compete on price.\n04 End users\nDevelopers, startups, and SaaS chasing cheap inference — plus commercial buyers running model distillation.\nUpstream\nSitting at the top are the card merchants (卡商) and account merchants (号商). They sell virtual credit cards designed to pass U.S. and European billing checks, along with bulk-registered accounts.\nMidstream\nIn the middle sit the account pools (账号池) . A pool aggregates dozens or hundreds of upstream accounts, manages their authentication tokens and rate limits, handles failover when accounts get flagged, and exposes a single API surface that downstream relays can consume.\nThe inventory isn’t only model-lab accounts. Alongside direct OpenAI, Anthropic, and Google credentials are accounts harvested from the application layer.\nMuch of the forum’s activity centers on “reverse-engineered” access to tools like Kiro and antigravity, which are consumer products, not lab APIs. To a pool, it makes no difference whether a token comes from a lab or from an app built on one; anything that resells or exposes a model is a target.\nDownstream\nDownstream sit the relay / transfer stations themselves — the consumer-facing layer. They wrap the pool’s API in a clean Chinese-language product, handle billing and invoicing, run customer-support WeChat groups, and compete on price.\nEnd users\nAt the bottom are individual Chinese developers, small startups, and mid-sized SaaS companies hunting for cheap inference — as well as some larger commercial buyers using the infrastructure for model distillation.\nIn practice these layers blur. Many operators run both the pool and the relay, and the forum’s own participants often use “pool” and “transfer station” interchangeably.\nThe Software Behind the Relays\nAlmost every relay I’ve looked at runs on one of two open-source projects: one-api or new-api .\nBoth are OpenAI-compatible gateways. An operator deploys the panel and adds a set of channels (渠道) . Each channel represents a provider plus a pool of API keys. The panel exposes a single endpoint that matches the OpenAI API, so buyers just point their existing SDK at the relay’s URL. On every request it pulls a key from the pool, forwards it upstream, returns the response, and deducts quota priced by usage times a multiplier (倍率) . It manages the users, tokens, pricing tiers, logs, and billing.\nnew-api is a more actively developed fork of one-api , and the difference is mostly commerce: it ships with self-service payment and recharge, plus image, video, and audio models. Across the relays we track, one-api turns up roughly four times as often as new-api; the original base is the more widespread of the two, even if new-api is the one built to sell.\nThere’s nothing inherently illicit about the software. one-api and new-api are neutral, legitimate tools. Plenty of companies self-host them to put their own accounts behind a single gateway with team quotas and spend tracking. A relay crosses the line when its channels are stocked with stolen, leaked, or pooled keys instead of the operator’s own, and when it resells that access against the providers’ terms.\nThe Methods\nFree-trial abuse. Abusers automate account creation en masse to claim free credits, then proxy that traffic back to their own end users.\nChargeback attacks. Abusers charge back their spend after the usage period ends to recoup their costs — or use stolen cards from the start.\nPrepaid cards. Abusers fund accounts with prepaid cards capped at a set limit.\nOpen inference. Any support chatbot without strict guardrails is ripe for having traffic proxied through it.\nDenial of wallet. Not strictly a relay technique, but an emerging form of abuse I’ve been tracking: attackers fire off a flood of concurrent requests purely to burn a provider’s spend. It can be facilitated by any of the methods above. The difference is there’s no financial motive.\nWho Are the Buyers?\nThe three main use cases seem to be cheap tokens, getting around geo-restrictions and model distillation. A few relevant quotes from the forum:\nFrom the V2EX thread · translated\n> @v2exgo · reply #38 V2EX\n“Distillation uses Claude/CodeX models to train domestic models. There are intermediaries that specialize in distillation and can provide relevant evidence, but I can’t name specific domestic companies. Anyway, companies with strong programming capabilities are all distilling Claude; it’s a multi-billion RMB industry chain, and many big players earn hundreds of thousands a day.”\nFrom the V2EX thread · translated\n> @v2exgo · reply #129 V2EX\n“It’s not just true — many distillers in the industry have made millions.”\nA Growing and Maturing Market\n> @v2exgo · reply #82 V2EX\n“I got 20TB on my first day online.” (And: “You might get 100TB of traffic as soon as you go online.”)\nI was surprised by how mature the market already is. There are price-comparison sites for the relays, affiliate programs, and even gateway products. On the forums, consumer demand looks just as strong. And these aren’t fringe operations: the ten highest-traffic relays we track pull a combined 3.6 million visits a month between them.\nMy hunch is that things get worse for the application layer from here. As Anthropic and others roll out KYC controls and identity verification, the abuse won’t disappear, it will just move somewhere else.\nThey’re Raffling Off Keys Now\nA clear sign of how normalized this has become is that one of the relay directories runs a daily lottery for API keys.\nThe site — hvoy.ai, which otherwise bills itself as a relay authenticity checker and price-comparison tool, gives away fifty $100 API keys every single day. You earn entry credits from a daily check-in, spend 20 credits per ticket, and can buy up to three tickets a round. On the day I looked, 258 people had entered 401 tickets for the fifty keys.\nhvoy.ai · daily draw for 50 × $100 API keys\nEvery day\n50\n$100 API keys given away per round\nCost to enter\n20 pts\nearned free from a daily check-in\nA recent round\n1,150\ntickets competing for 50 keys\nThe part that got me is the fairness theater. The draw is provably fair — the same cryptographic scheme legitimate crypto-gambling sites use to prove they didn’t rig the result. The random seed is the hash of the latest Bitcoin block, winners are picked with a Partial Fisher-Yates shuffle, and the full list of entries is published as a snapshot before the draw.\nHow Providers Can Defend Themselves\nI’ve talked to many companies facing this, and the truth is that there’s no clean fix. Fraud is a constant cat-and-mouse game. What follows isn’t a silver bullet — it’s the set of things that I’ve seen work and that others are doing, roughly in the order that abuse travels: from account creation, to detection and then to damage control.\nRaise the cost of entry. Make accounts hard to create in bulk and cap what a fresh one can spend. Check for browser-based automation signals. Any client-side detection can be bypassed, but every bit of friction raises the attacker’s cost.\nWatch the money. Flag prepaid cards, virtual cards, mismatched billing info, and small card-testing charges.\nWatch the behavior. Look for patterns no real user produces: time from registration to first token, the model selected, prompt relevance (where you can measure it), account age, and IP signals (proxy, VPN, country).\nCluster the accounts. Watch for IP sybils and shared device fingerprints that tie supposedly-separate accounts back to one operator.\nMonitor for cost anomalies. Setup monitos and alerts on AI spend as a failsafe, so that you can flip things off if abuse does start.\nAssume some abuse gets through anyway, and limit what it can cost you:\nEnforce spend caps, spend locks, and concurrency limits per account.\nReserve budget for every in-flight request, so concurrent calls can’t blow past your limit.\nStart new accounts with low caps; let them earn higher limits with age and a verified card.\nIf an account’s risk rises mid-session, add friction like a CAPTCHA or an additional form of identity verification.\nAnd when you do catch someone, throttle quietly. A clean error just tells the attacker which signal to fix before they come back.\nNone of this stops the abuse for good. But if you make attacking your own service expensive enough that the numbers stop working, they’ll try to find an easier target.\nSources\nAll quotes are translated from a V2EX thread in the site’s Programmers section, “A comprehensive guide to AI transfer station jargon,” started by the user v2exgo (who operates the relay at terminal.pub). The thread ran from March 5 to June 23, 2026 and drew roughly 35,000 views and 190 replies. Reply numbers below refer to that thread.\nPrimary source — V2EX thread: https://www.v2ex.com/t/1196011\nPrice-comparison aggregator: getcheapai.com.\nDaily API-key lottery: hvoy.ai/free-tokens/lottery — 50 $100 keys drawn per day, settled with a Bitcoin-block-hash seed and a Partial Fisher-Yates shuffle.\nOperator’s relay: terminal.pub\nEffective-rate derivation: reply #50, where milkleeeeee computes the 425 RMB package as equal to the official $3,333 — about $0.13 per $1 of official usage.\nShare\n\n## full_text\n\nthreat-research llm-security\nAn Inside Look at the Relay Market Powering Token Resellers and Fraud\nJune 28, 2026 · Matt Lenhard · 9 min read\nShare\nMy Story\nI’ve spent a lot of time thinking about token fraud, a problem I first stumbled upon while working as a software engineer on an AI gateway.\nWe faced constant abuse. At first it was free-credit abuse, where users spun up accounts en masse. Then it was our support chatbot. I started talking to friends about it and hearing stories of companies losing millions of dollars to abuse each day.\nThe abuse took a number of different shapes, and the abusers were relentless. I came to realize that the problem was much bigger than us. A new form of fraud had emerged, and it had become endemic to the token economy.\nWhile researching where the abuse was coming from, I stumbled onto a Chinese forum where operators openly discussed the relays and their methods. My notes on the industry and its players are below.\nSo What Is a Relay?\nA relay — or “transfer station” — is essentially a service that proxies traffic to U.S. models, often at a deep discount. For example, one operator’s price-comparison site listed a package that bought the equivalent of $3,333 worth of official Anthropic credit for 425 RMB — roughly $0.13 of usage per $1 spent.\nEffective rate\n$0.13\nof official usage per $1 spent\nSample package\n$3,333\nof Anthropic credit for just 425 RMB\nTop discount\n97.8%\noff official pricing, at the cheapest relay\nTo make that concrete, here’s how far below official pricing the relays we track actually run, ranked by discount:\n# Provider Median discount from official list price\n01 Now Coding\n97.8%\n02 I Code Easy\n97.1%\n03 Claude ZZ\n96.6%\n04 Doro\n96.4%\n05 UoCode\n96.3%\n06 ZeroCode\n94.9%\n07 AiYa\n94.9%\n08 HongMaCC\n94.2%\n09 Right Code\n94.1%\n10 BUZZ\n94.1%\nSee all 49\nHow the Market Works\nThe ecosystem runs four layers deep, from the merchants sourcing raw accounts down to the developers buying cheap tokens:\n01 Upstream 卡商 / 号商\nCard & account merchants — virtual credit cards built to pass U.S. and European billing checks, plus bulk-registered accounts.\n02 Midstream 账号池\nAccount pools — aggregate hundreds of upstream accounts, manage tokens and rate limits, handle failover, and expose a single API.\n03 Downstream 中转站\nRelays / transfer stations — wrap the pool's API in a clean, billed, Chinese-language product and compete on price.\n04 End users\nDevelopers, startups, and SaaS chasing cheap inference — plus commercial buyers running model distillation.\nUpstream\nSitting at the top are the card merchants (卡商) and account merchants (号商). They sell virtual credit cards designed to pass U.S. and European billing checks, along with bulk-registered accounts.\nMidstream\nIn the middle sit the account pools (账号池) . A pool aggregates dozens or hundreds of upstream accounts, manages their authentication tokens and rate limits, handles failover when accounts get flagged, and exposes a single API surface that downstream relays can consume.\nThe inventory isn’t only model-lab accounts. Alongside direct OpenAI, Anthropic, and Google credentials are accounts harvested from the application layer.\nMuch of the forum’s activity centers on “reverse-engineered” access to tools like Kiro and antigravity, which are consumer products, not lab APIs. To a pool, it makes no difference whether a token comes from a lab or from an app built on one; anything that resells or exposes a model is a target.\nDownstream\nDownstream sit the relay / transfer stations themselves — the consumer-facing layer. They wrap the pool’s API in a clean Chinese-language product, handle billing and invoicing, run customer-support WeChat groups, and compete on price.\nEnd users\nAt the bottom are individual Chinese developers, small startups, and mid-sized SaaS companies hunting for cheap inference — as well as some larger commercial buyers using the infrastructure for model distillation.\nIn practice these layers blur. Many operators run both the pool and the relay, and the forum’s own participants often use “pool” and “transfer station” interchangeably.\nThe Software Behind the Relays\nAlmost every relay I’ve looked at runs on one of two open-source projects: one-api or new-api .\nBoth are OpenAI-compatible gateways. An operator deploys the panel and adds a set of channels (渠道) . Each channel represents a provider plus a pool of API keys. The panel exposes a single endpoint that matches the OpenAI API, so buyers just point their existing SDK at the relay’s URL. On every request it pulls a key from the pool, forwards it upstream, returns the response, and deducts quota priced by usage times a multiplier (倍率) . It manages the users, tokens, pricing tiers, logs, and billing.\nnew-api is a more actively developed fork of one-api , and the difference is mostly commerce: it ships with self-service payment and recharge, plus image, video, and audio models. Across the relays we track, one-api turns up roughly four times as often as new-api; the original base is the more widespread of the two, even if new-api is the one built to sell.\nThere’s nothing inherently illicit about the software. one-api and new-api are neutral, legitimate tools. Plenty of companies self-host them to put their own accounts behind a single gateway with team quotas and spend tracking. A relay crosses the line when its channels are stocked with stolen, leaked, or pooled keys instead of the operator’s own, and when it resells that access against the providers’ terms.\nThe Methods\nFree-trial abuse. Abusers automate account creation en masse to claim free credits, then proxy that traffic back to their own end users.\nChargeback attacks. Abusers charge back their spend after the usage period ends to recoup their costs — or use stolen cards from the start.\nPrepaid cards. Abusers fund accounts with prepaid cards capped at a set limit.\nOpen inference. Any support chatbot without strict guardrails is ripe for having traffic proxied through it.\nDenial of wallet. Not strictly a relay technique, but an emerging form of abuse I’ve been tracking: attackers fire off a flood of concurrent requests purely to burn a provider’s spend. It can be facilitated by any of the methods above. The difference is there’s no financial motive.\nWho Are the Buyers?\nThe three main use cases seem to be cheap tokens, getting around geo-restrictions and model distillation. A few relevant quotes from the forum:\nFrom the V2EX thread · translated\n> @v2exgo · reply #38 V2EX\n“Distillation uses Claude/CodeX models to train domestic models. There are intermediaries that specialize in distillation and can provide relevant evidence, but I can’t name specific domestic companies. Anyway, companies with strong programming capabilities are all distilling Claude; it’s a multi-billion RMB industry chain, and many big players earn hundreds of thousands a day.”\nFrom the V2EX thread · translated\n> @v2exgo · reply #129 V2EX\n“It’s not just true — many distillers in the industry have made millions.”\nA Growing and Maturing Market\n> @v2exgo · reply #82 V2EX\n“I got 20TB on my first day online.” (And: “You might get 100TB of traffic as soon as you go online.”)\nI was surprised by how mature the market already is. There are price-comparison sites for the relays, affiliate programs, and even gateway products. On the forums, consumer demand looks just as strong. And these aren’t fringe operations: the ten highest-traffic relays we track pull a combined 3.6 million visits a month between them.\nMy hunch is that things get worse for the application layer from here. As Anthropic and others roll out KYC controls and identity verification, the abuse won’t disappear, it will just move somewhere else.\nThey’re Raffling Off Keys Now\nA clear sign of how normalized this has become is that one of the relay directories runs a daily lottery for API keys.\nThe site — hvoy.ai, which otherwise bills itself as a relay authenticity checker and price-comparison tool, gives away fifty $100 API keys every single day. You earn entry credits from a daily check-in, spend 20 credits per ticket, and can buy up to three tickets a round. On the day I looked, 258 people had entered 401 tickets for the fifty keys.\nhvoy.ai · daily draw for 50 × $100 API keys\nEvery day\n50\n$100 API keys given away per round\nCost to enter\n20 pts\nearned free from a daily check-in\nA recent round\n1,150\ntickets competing for 50 keys\nThe part that got me is the fairness theater. The draw is provably fair — the same cryptographic scheme legitimate crypto-gambling sites use to prove they didn’t rig the result. The random seed is the hash of the latest Bitcoin block, winners are picked with a Partial Fisher-Yates shuffle, and the full list of entries is published as a snapshot before the draw.\nHow Providers Can Defend Themselves\nI’ve talked to many companies facing this, and the truth is that there’s no clean fix. Fraud is a constant cat-and-mouse game. What follows isn’t a silver bullet — it’s the set of things that I’ve seen work and that others are doing, roughly in the order that abuse travels: from account creation, to detection and then to damage control.\nRaise the cost of entry. Make accounts hard to create in bulk and cap what a fresh one can spend. Check for browser-based automation signals. Any client-side detection can be bypassed, but every bit of friction raises the attacker’s cost.\nWatch the money. Flag prepaid cards, virtual cards, mismatched billing info, and small card-testing charges.\nWatch the behavior. Look for patterns no real user produces: time from registration to first token, the model selected, prompt relevance (where you can measure it), account age, and IP signals (proxy, VPN, country).\nCluster the accounts. Watch for IP sybils and shared device fingerprints that tie supposedly-separate accounts back to one operator.\nMonitor for cost anomalies. Setup monitos and alerts on AI spend as a failsafe, so that you can flip things off if abuse does start.\nAssume some abuse gets through anyway, and limit what it can cost you:\nEnforce spend caps, spend locks, and concurrency limits per account.\nReserve budget for every in-flight request, so concurrent calls can’t blow past your limit.\nStart new accounts with low caps; let them earn higher limits with age and a verified card.\nIf an account’s risk rises mid-session, add friction like a CAPTCHA or an additional form of identity verification.\nAnd when you do catch someone, throttle quietly. A clean error just tells the attacker which signal to fix before they come back.\nNone of this stops the abuse for good. But if you make attacking your own service expensive enough that the numbers stop working, they’ll try to find an easier target.\nSources\nAll quotes are translated from a V2EX thread in the site’s Programmers section, “A comprehensive guide to AI transfer station jargon,” started by the user v2exgo (who operates the relay at terminal.pub). The thread ran from March 5 to June 23, 2026 and drew roughly 35,000 views and 190 replies. Reply numbers below refer to that thread.\nPrimary source — V2EX thread: https://www.v2ex.com/t/1196011\nPrice-comparison aggregator: getcheapai.com.\nDaily API-key lottery: hvoy.ai/free-tokens/lottery — 50 $100 keys drawn per day, settled with a Bitcoin-block-hash seed and a Partial Fisher-Yates shuffle.\nOperator’s relay: terminal.pub\nEffective-rate derivation: reply #50, where milkleeeeee computes the 425 RMB package as equal to the official $3,333 — about $0.13 per $1 of official usage.\nShare\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 一个由卡商、账号池、中转站和终端用户构成的四层接力市场，正以低至官方价格0.13美元/1美元的成本转售OpenAI、Anthropic等模型token。其中Top 1中转站\"Now Coding\"提供97.8%折扣，425元人民币即可获得价值3333美元的Anthropic额度。\n2. [supporting_context / signal_card_candidate, relationship_graph_input / high] threat-research llm-security An Inside Look at the Relay Market Powering Token Resellers and Fraud June 28, 2026 · Matt Lenhard · 9 min read Share My Story I’ve spent a lot of time thinking about token fraud, a problem I first stumbled upon while working as a software engineer on an AI gateway.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] We faced constant abuse.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] At first it was free-credit abuse, where users spun up accounts en masse.\n5. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Then it was our support chatbot.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] I started talking to friends about it and hearing stories of companies losing millions of dollars to abuse each day.\n"
+}

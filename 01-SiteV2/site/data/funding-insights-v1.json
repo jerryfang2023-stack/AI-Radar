@@ -4,9 +4,9 @@
     "funding_insight_version": "FUNDING-INSIGHT-V1.0",
     "site_version": "SITE-V4.2.0-entity-history",
     "column_version": "FUNDING-INSIGHT-V1.0-auto-published-research",
-    "latest_date": "2026-07-26",
-    "generated_at": "2026-07-26T16:24:06.877Z",
-    "card_count": 203,
+    "latest_date": "2026-07-27",
+    "generated_at": "2026-07-27T03:20:12.095Z",
+    "card_count": 204,
     "automatic_publication": true
   },
   "filters": {
@@ -32,6 +32,7 @@
       "Series A and Seed",
       "Series A-1 (A轮扩展)",
       "Series B",
+      "Series B extension",
       "Series C",
       "Series D",
       "Series E",
@@ -96,6 +97,7 @@
       "AI 家居设计",
       "AI 工作流自动化与编排",
       "AI 推理硬件/半导体",
+      "AI 推理芯片 / 半导体硬件",
       "AI 智能体与市场进入自动化",
       "AI 智能体基础设施",
       "AI 智能体安全与治理基础设施",
@@ -108,6 +110,7 @@
       "AI 语音智能体 / 呼叫运营自动化",
       "AI 销售情报 / 开发者 GTM",
       "AI 驱动的供应链自动化 SaaS",
+      "AI 驱动的开发者工具与云端 IDE",
       "AI 驱动的计算机辅助设计（CAD）",
       "AI 驱动的软件创建平台，属于 AI 智能体在开发者工具和低代码/无代码领域的应用",
       "AI 驱动的销售与营销自动化",
@@ -744,78 +747,90 @@
       "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-630989a4e13b10d0",
       "triggered_by_event_id": "EV-da1655ecfaf35feb",
-      "as_of_date": "2026-07-24",
+      "as_of_date": "2026-07-27",
       "company": {
         "entity_id": "EN-9cb45a27a2808c01",
         "name": "Etched",
-        "full_name": "Etched",
-        "website": "https://www.etched.com",
-        "summary": "Etched是一家成立于2022年的AI芯片初创公司，由三名哈佛辍学生创立。公司专注于为基于Transformer架构的AI模型构建专用推理芯片和系统，旨在通过软硬件协同设计，在吞吐量、延迟、成本和能效方面实现突破。",
+        "full_name": "Etched, Inc.",
+        "website": "etched.com",
+        "summary": "Etched 是一家 AI 芯片初创公司，专注于构建用于 Transformer 推理的前沿推理集群，通过全栈垂直整合设计，提供比通用 GPU 更高效、更低成本的推理硬件系统。",
         "headquarters": "San Jose, California",
         "founders": [
           {
             "name": "Gavin Uberti",
-            "role": "CEO",
+            "role": "联合创始人兼 CEO",
             "evidence_refs": [
               {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Robert Wachen",
-            "role": "COO",
-            "evidence_refs": [
+                "source_id": "FISRC-98b7c0b3b5f71805",
+                "quote": "Co-founder and CEO Gavin Uberti"
+              },
               {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "co-founder and COO Robert Wachen"
+                "source_id": "FISRC-0164bd71853acd7e",
+                "quote": "Gavin Uberti, co-founder and CEO of Etched"
               }
             ],
             "entity_id": null
           },
           {
             "name": "Chris Zhu",
-            "role": "联合创始人",
+            "role": "联合创始人兼 CTO",
             "evidence_refs": [
               {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu"
+                "source_id": "FISRC-98b7c0b3b5f71805",
+                "quote": "Uberti dropped out of Harvard alongside co-founders Chris Zhu and Robert Wachen"
+              },
+              {
+                "source_id": "FISRC-ac975c8b74c8714c",
+                "quote": "They are chief executive Gavin Uberti, president Rob Wachen, and chief technology officer Chris Zhu."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Robert Wachen",
+            "role": "联合创始人兼总裁 / COO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-f34324e392a333c0",
+                "quote": "the startup's COO Robert Wachen"
+              },
+              {
+                "source_id": "FISRC-0164bd71853acd7e",
+                "quote": "Rob Wachen, co-founder and President of Etched"
               }
             ],
             "entity_id": null
           }
         ],
         "team_size": {
-          "value": "约400人",
-          "observed_at": "2026-07-23",
+          "value": "约 400–450 人",
+          "observed_at": "2026-07",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Today, there are 400 people bustling in an office"
+              "source_id": "FISRC-f34324e392a333c0",
+              "quote": "Etched employs around 400 people at its San Jose, California, office"
             },
             {
-              "source_id": "FISRC-b9dffc6a2431ff31",
-              "quote": "The company said it has about 400 employees, and is rapidly expanding."
+              "source_id": "FISRC-61cfa2417d89dd41",
+              "quote": "the team is over 450 and growing"
             }
           ]
         },
         "evidence_refs": [
           {
-            "source_id": "FISRC-2b073f5d2caeb82a",
-            "quote": "Etched, the AI chip startup founded by three Harvard dropouts in 2022"
+            "source_id": "FISRC-7032d0b33d579ec8",
+            "quote": "Etched, Inc. has raised $300 million in Series C funding at a $10.3 billion valuation, giving the San Jose artificial intelligence chip startup fresh capital"
           },
           {
-            "source_id": "FISRC-51d5a146312ce5b6",
-            "quote": "Etched HQ 3155 Olsen Dr San Jose, CA 95117"
+            "source_id": "FISRC-0164bd71853acd7e",
+            "quote": "Etched was founded on the belief that inference is the defining workload of the AI era."
           }
         ]
       },
       "financing": {
         "round": "Series C",
         "amount": "$300 million",
-        "total_raised": "超过$1.1 billion",
+        "total_raised": "超过 $1.1 billion",
         "announced_at": "2026-07-23",
         "investors": [
           {
@@ -823,34 +838,27 @@
             "role": "本轮领投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "The round was led by Sequoia"
+                "source_id": "FISRC-7032d0b33d579ec8",
+                "quote": "Sequoia Capital led the round"
               },
               {
-                "source_id": "FISRC-51d5a146312ce5b6",
-                "quote": "We’ve raised $300M at a $10.3B valuation, led by Sequoia Capital"
+                "source_id": "FISRC-0164bd71853acd7e",
+                "quote": "The latest round was led by Sequoia"
               }
             ],
             "entity_id": null
           },
           {
-            "name": "Andreessen Horowitz",
+            "name": "Andreessen Horowitz (a16z)",
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "SK Hynix",
-            "role": "本轮参投",
-            "evidence_refs": [
+                "source_id": "FISRC-7032d0b33d579ec8",
+                "quote": "with participation from Andreessen Horowitz"
+              },
               {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
+                "source_id": "FISRC-0164bd71853acd7e",
+                "quote": "with participation from a16z"
               }
             ],
             "entity_id": null
@@ -860,30 +868,19 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
+                "source_id": "FISRC-f34324e392a333c0",
+                "quote": "with participation from SK Hynix, Andreessen Horowitz, Jane Street, and Diffusion"
               }
             ],
             "entity_id": null
           },
           {
-            "name": "Diffusion Capital",
+            "name": "SK Hynix",
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Argo",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-51d5a146312ce5b6",
-                "quote": "led by Sequoia Capital alongside Andreessen Horowitz, Jane Street, Diffusion, Argo, and SK Hynix"
+                "source_id": "FISRC-f34324e392a333c0",
+                "quote": "with participation from SK Hynix"
               }
             ],
             "entity_id": null
@@ -893,162 +890,23 @@
             "role": "既有投资方",
             "evidence_refs": [
               {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
+                "source_id": "FISRC-0164bd71853acd7e",
+                "quote": "Etched has raised over $1B from investors including Sequoia, a16z, SK Hynix, VentureTech Alliance, Peter Thiel, Jane Street, HRT, Jump Trading, Two Sigma, Ribbit Capital, Stripes, Radical Ventures, Primary, and Positive Sum."
+              },
+              {
+                "source_id": "FISRC-ebe9b53f6375c99a",
+                "quote": "Sequoia led the round alongside Peter Thiel, Andrej Karpathy, SK Hynix, and Jane Street."
               }
             ],
             "entity_id": null
           },
           {
             "name": "Andrej Karpathy",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "VentureTech Alliance",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-51d5a146312ce5b6",
-                "quote": "We’ve raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Copper Sky Capital",
-            "role": "A轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d31c563ee521526a",
-                "quote": "When the four-year-old VC firm invested in Etched’s $120 million Series A two years ago"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Stripes",
-            "role": "种子轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Hudson River Trading",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Two Sigma",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Ribbit Capital",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Geoffrey Hinton",
             "role": "天使投资人",
             "evidence_refs": [
               {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Fei-Fei Li",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Arthur Mensch",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Scott Wu",
-            "role": "天使投资人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Stanley Druckenmiller",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-e9f4ccdf9c4d73e0",
-                "quote": "The cap also includes billionaires Stanley Druckenmiller and Peter Thiel."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Dylan Field",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Amjad Masad",
-            "role": "既有投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-2b073f5d2caeb82a",
-                "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
+                "source_id": "FISRC-ebe9b53f6375c99a",
+                "quote": "Sequoia led the round alongside Peter Thiel, Andrej Karpathy, SK Hynix, and Jane Street."
               }
             ],
             "entity_id": null
@@ -1056,90 +914,82 @@
         ],
         "evidence_refs": [
           {
-            "source_id": "FISRC-2b073f5d2caeb82a",
-            "quote": "has closed a $300 million Series C funding round at a $10.3 billion valuation"
+            "source_id": "FISRC-7032d0b33d579ec8",
+            "quote": "Etched, Inc. has raised $300 million in Series C funding at a $10.3 billion valuation"
           },
           {
-            "source_id": "FISRC-ebe9b53f6375c99a",
-            "quote": "The round brings total capital raised past $1.1 billion, following a $500 million Series B."
+            "source_id": "FISRC-0164bd71853acd7e",
+            "quote": "Etched today announced $300M in new financing at a $10.3B valuation"
           }
         ]
       },
       "products": [
         {
-          "name": "Sohu",
-          "description": "一款专为Transformer架构神经网络推理而设计的专用集成电路（ASIC），采用台积电N4P工艺制造。通过低电压推理（LVI）和集群级内存（CSM）两项技术突破，在推理工作负载上实现比通用GPU更高的每瓦性能。",
-          "target_customers": "领先的AI公司、云服务提供商和超大规模数据中心",
+          "name": "Sohu ASIC",
+          "description": "一款专为 Transformer 推理设计的专用集成电路（ASIC），将 Transformer 架构硬编码到硅片中，采用台积电 N4P 工艺制造，旨在提供远超通用 GPU 的每瓦推理性能。",
+          "target_customers": "大型 AI 公司、模型提供商、云服务商、超大规模数据中心运营商",
           "features": [
-            "低电压推理（LVI）：在低于大多数AI芯片一半的电压下运行数学模块，实现数倍的FLOPs密度，可在万亿参数稀疏MoE模型上达到80%以上的峰值FLOPs利用率且无热节流。",
-            "集群级内存（CSM）：通过专有的超低延迟、高带宽互连，在芯片间创建共享内存池，解决HBM的内存子系统瓶颈，同时实现高吞吐量和低延迟。",
-            "专为Transformer推理优化，可运行任何AI模型，包括DeepSeek和Qwen等MoE模型，以及Mamba等非Transformer架构。"
+            "低电压推理（LVI）：数学引擎运行电压低于常规 AI 芯片的一半，减少发热，提高每瓦 FLOPS 密度",
+            "集群级内存（CSM）：跨整个扩展域创建共享低延迟 SRAM 内存池，通过专有高带宽互连实现集群级内存访问",
+            "支持万亿参数稀疏 MoE 模型，利用率超过 80% 峰值 FLOPS",
+            "架构无关：可运行 DeepSeek、Qwen 等大型 MoE 模型以及 Mamba 等非 Transformer 架构"
           ],
           "evidence_refs": [
             {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We’ve designed a new architecture to run our chip’s math blocks at under half the voltage of most AI chips. This enables multiple times the FLOPs density of AI chips today. We can run trillion-parameter sparse MoEs at 80%+ Peak FLOPs without thermal throttling."
+              "source_id": "FISRC-7032d0b33d579ec8",
+              "quote": "a specialised system designed to run transformer-based artificial intelligence models more efficiently"
             },
             {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We created a much lower-latency shared memory pool across our scale-up domain. We use a proprietary ultra-low-latency, high-bandwidth interconnect to enable dramatically faster memory access across chips."
+              "source_id": "FISRC-0164bd71853acd7e",
+              "quote": "Low Voltage Inference (LVI) is a new paradigm in AI computing that unlocks dramatically better power and cost efficiency."
             },
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "The systems can run any AI model, including Mixture of Experts models like DeepSeek and Qwen — an architecture that splits tasks across specialized sub-models rather than relying on one large model — as well as non-transformer designs like Mamba"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Frontier Inference Clusters",
-          "description": "包含Sohu芯片、定制机架、冷板、互连和软件的完整推理系统，专为前沿模型设计，旨在在预填充和解码工作负载上实现一流的吞吐量、延迟、成本和能效。",
-          "target_customers": "前沿AI模型开发商和超大规模推理服务提供商",
-          "features": [
-            "芯片、封装、PCB、冷板、互连的协同设计",
-            "针对数万亿参数MoE、长上下文和智能体工作负载优化",
-            "首批机架于2026年夏季发货"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We co-design chips, racks, software, and manufacturing methods so frontier models can run with best-in-class throughput, latency, cost, and power efficiency for both prefill and decode workloads."
-            },
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "Our first racks ship this summer, and we’ve kicked off production to fulfill over $1B in customer contracts."
+              "source_id": "FISRC-0164bd71853acd7e",
+              "quote": "Cluster Scale Memory (CSM) is a hybrid SRAM/HBM memory subsystem designed around an entire cluster rather than a single chip."
             }
           ],
           "entity_id": null
         }
       ],
-      "customers": [],
+      "customers": [
+        {
+          "name": "未披露具体客户名称",
+          "industry": "AI / 云计算",
+          "use_case": "大规模 Transformer 模型推理服务，包括编程、长上下文、长周期智能体等工作负载",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61cfa2417d89dd41",
+              "quote": "we expect that the product will be very good for coding, long context, long horizon agents, and a lot of things that inference tokens are going to be used for."
+            },
+            {
+              "source_id": "FISRC-7032d0b33d579ec8",
+              "quote": "more than $1 billion in customer demand"
+            }
+          ]
+        }
+      ],
       "comparisons": [
         {
           "name": "NVIDIA",
           "product": "H100 GPU",
-          "scenario": "AI模型推理",
-          "target_customer": "所有需要AI计算的企业和云服务商",
+          "scenario": "通用 AI 训练与推理，支持多种模型架构和工作负载",
+          "target_customer": "所有需要 AI 计算的企业和云服务商",
           "funding_summary": "",
-          "core_difference": "Sohu是专为Transformer推理优化的ASIC，声称每瓦效率比H100高10到100倍；H100是通用GPU，可运行任意工作负载，拥有成熟的CUDA软件生态。",
+          "core_difference": "NVIDIA H100 是通用 GPU，可运行任意工作负载；Etched Sohu 是专为 Transformer 推理优化的 ASIC，在特定推理工作负载上声称每瓦效率提升 10–100 倍，但缺乏通用 GPU 的灵活性。",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Etched claims this produces a 10 to 100 times efficiency improvement per watt compared to H100-class GPUs for inference workloads."
-            },
-            {
-              "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Unlike NVIDIA's H100, which is a general-purpose GPU designed to run essentially any workload you send it (training, inference, simulation, rendering), Sohu does exactly one thing. It runs transformer-architecture neural network inference."
+              "source_id": "FISRC-98b7c0b3b5f71805",
+              "quote": "the Sohu ASIC, does exactly one thing: run transformer model inference. There are no general-purpose compute paths, no fallback modes."
             }
           ]
         },
         {
           "name": "Google",
           "product": "TPU v5p",
-          "scenario": "AI模型训练与推理",
-          "target_customer": "Google Cloud客户",
+          "scenario": "Google Cloud 上的 AI 训练与推理，针对 Google 生态优化",
+          "target_customer": "Google Cloud 客户",
           "funding_summary": "",
-          "core_difference": "Sohu专为Transformer推理设计，声称在推理效率上远超通用芯片；TPU是谷歌定制ASIC，已运行近十年，但仅通过Google Cloud提供，且针对谷歌自身生态优化。",
+          "core_difference": "Google TPU 是 Google 自研的 AI 加速器，已运行近十年，拥有成熟的软件栈和云生态；Etched Sohu 是独立的第三方 ASIC，声称在 Transformer 推理效率上更优，但工具链成熟度和生态锁定程度不同。",
           "evidence_refs": [
             {
               "source_id": "FISRC-ebe9b53f6375c99a",
@@ -1152,208 +1002,170 @@
           ]
         },
         {
-          "name": "Cerebras",
-          "product": "晶圆级引擎",
-          "scenario": "AI模型训练与推理",
-          "target_customer": "企业、研究机构和超大规模客户",
-          "funding_summary": "已融资27亿美元，2026年IPO后市值达600亿美元",
-          "core_difference": "Cerebras制造巨型晶圆级芯片，面向通用AI工作负载；Etched专注于Transformer推理ASIC，追求特定工作负载的极致效率。",
+          "name": "Graphcore",
+          "product": "Intelligence Processing Unit (IPU)",
+          "scenario": "图神经网络和非 Transformer 工作负载的 AI 加速",
+          "target_customer": "AI 研究机构和企业",
+          "funding_summary": "累计融资超过 $900 million，2024 年被 SoftBank 以低于 $500 million 收购",
+          "core_difference": "Graphcore 押注非 Transformer 架构，因市场转向 Transformer 而失败；Etched 则专门针对 Transformer 推理优化，但面临同样的架构单一性风险。",
           "evidence_refs": [
             {
               "source_id": "FISRC-d9ef0217fdcf7272",
-              "quote": "Cerebras raised $2.7 billion and came close to dying entirely in its early years"
-            },
-            {
-              "source_id": "FISRC-d9ef0217fdcf7272",
-              "quote": "Cerebras eventually found its footing and achieved a $60 billion market cap post-IPO"
-            }
-          ]
-        },
-        {
-          "name": "Groq",
-          "product": "LPU（语言处理单元）",
-          "scenario": "AI模型推理",
-          "target_customer": "需要低延迟推理的企业和开发者",
-          "funding_summary": "近期融资6.5亿美元",
-          "core_difference": "Groq的LPU采用不同的架构方法（张量流处理器），而Etched的Sohu是专为Transformer设计的ASIC，通过低电压推理和集群级内存在特定架构上追求极致效率。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "while AI chipmaker Groq just raised $650 million."
+              "quote": "By 2024, SoftBank acquired Graphcore for a reported price well below $500 million"
             }
           ]
         }
       ],
       "metrics": [
         {
-          "label": "本轮估值",
-          "value": "$10.3 billion",
+          "label": "本轮融资金额",
+          "value": "$300 million",
           "observed_at": "2026-07-23",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "has closed a $300 million Series C funding round at a $10.3 billion valuation"
+              "source_id": "FISRC-7032d0b33d579ec8",
+              "quote": "Etched, Inc. has raised $300 million in Series C funding"
             }
           ]
         },
         {
-          "label": "已预订客户订单",
-          "value": "$1 billion",
-          "observed_at": "2026-06-30",
+          "label": "投后估值",
+          "value": "$10.3 billion",
+          "observed_at": "2026-07-23",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "it had already booked $1 billion worth of orders."
+              "source_id": "FISRC-7032d0b33d579ec8",
+              "quote": "at a $10.3 billion valuation"
+            }
+          ]
+        },
+        {
+          "label": "累计融资总额",
+          "value": "超过 $1.1 billion",
+          "observed_at": "2026-07-23",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-61cfa2417d89dd41",
+              "quote": "bringing the total raised to $1.1 billion"
+            }
+          ]
+        },
+        {
+          "label": "已签约客户订单",
+          "value": "超过 $1 billion",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-7032d0b33d579ec8",
+              "quote": "more than $1 billion in customer demand"
+            },
+            {
+              "source_id": "FISRC-98b7c0b3b5f71805",
+              "quote": "more than $1 billion in signed customer contracts"
+            }
+          ]
+        },
+        {
+          "label": "Sohu 服务器推理吞吐量（Llama 70B）",
+          "value": "8 芯片服务器超过 500,000 tokens/秒",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-98b7c0b3b5f71805",
+              "quote": "an eight-chip Sohu server hits over 500,000 tokens per second on Llama 70B"
+            }
+          ]
+        },
+        {
+          "label": "H100 等效推理吞吐量（Llama 70B）",
+          "value": "约 23,000–25,000 tokens/秒",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-98b7c0b3b5f71805",
+              "quote": "An equivalent eight-GPU Nvidia H100 setup produces around 23,000 to 25,000 tokens per second."
+            }
+          ]
+        },
+        {
+          "label": "新研发设施规模",
+          "value": "80,000 平方英尺，10 MW",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f34324e392a333c0",
+              "quote": "a new 80,000 square-foot (7,432 sqm), 10MW facility in Milpitas"
             }
           ]
         },
         {
           "label": "员工人数",
-          "value": "约400人",
-          "observed_at": "2026-07-23",
+          "value": "约 400–450 人",
+          "observed_at": "2026-07",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Today, there are 400 people bustling in an office"
-            }
-          ]
-        },
-        {
-          "label": "上次估值（2025年12月）",
-          "value": "$5 billion",
-          "observed_at": "2025-12",
-          "evidence_refs": [
+              "source_id": "FISRC-f34324e392a333c0",
+              "quote": "Etched employs around 400 people"
+            },
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Etched was previously valued at $5 billion in December when it raised a $500 million round"
-            }
-          ]
-        },
-        {
-          "label": "新设施面积",
-          "value": "80,000平方英尺",
-          "observed_at": "2026-07-23",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "it just opened a new 80,000 square-foot, 10MW facility in Milpitas"
-            }
-          ]
-        },
-        {
-          "label": "新设施功率容量",
-          "value": "10MW",
-          "observed_at": "2026-07-23",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "it just opened a new 80,000 square-foot, 10MW facility in Milpitas"
-            }
-          ]
-        },
-        {
-          "label": "累计融资额",
-          "value": "超过$1.1 billion",
-          "observed_at": "2026-07-23",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "The round brings total capital raised past $1.1 billion, following a $500 million Series B."
-            }
-          ]
-        },
-        {
-          "label": "芯片工艺节点",
-          "value": "TSMC N4P",
-          "observed_at": "2026-06-30",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "Earlier this year our A0 silicon came back from TSMC N4P"
+              "source_id": "FISRC-61cfa2417d89dd41",
+              "quote": "the team is over 450 and growing"
             }
           ]
         }
       ],
       "quotes": [
         {
-          "speaker": "Robert Wachen",
-          "quote": "We call this low-voltage inference.",
+          "speaker": "Rob Wachen",
+          "quote": "We tend not to celebrate fundraises. We have a lot of work to do to get to Gigawatt scale.",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "We call this low-voltage inference."
+              "source_id": "FISRC-0164bd71853acd7e",
+              "quote": "We tend not to celebrate fundraises. We have a lot of work to do to get to Gigawatt scale."
             }
           ]
         }
       ],
       "analysis": {
-        "investment_rationale": [
-          {
-            "institution": "Sequoia Capital",
-            "speaker": "",
-            "speaker_role": "",
-            "rationale": "红杉资本将此次投资主题定为“构建推理机器”，押注推理而非训练将成为未来五年AI公司的主要基础设施成本。",
-            "quote": "Building the Inference Machine",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-ebe9b53f6375c99a",
-                "quote": "Sequoia's partnership post is titled \"Building the Inference Machine,\" a direct signal of their thesis. They are not betting on AI broadly. They are betting that inference, not training, becomes the dominant infrastructure cost for every AI company in the next five years."
-              }
-            ]
-          }
-        ],
-        "capital_judgment": "资本押注的核心变量是Transformer架构在未来五到七年内仍将是AI推理的主导范式。本轮估值较七个月前翻倍至103亿美元，依据是已获得10亿美元客户订单这一已验证信号，以及芯片成功流片并开始客户测试的里程碑。然而，该判断的证据边界受限于：硬件尚未大规模量产交付，性能声明尚未在真实生产环境中得到广泛验证，且架构单一性风险无法通过现有订单完全消除。",
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 Transformer 架构在未来 5–7 年内是否保持主导地位，以及 Etched 能否在量产规模上兑现其每瓦性能优势。$10.3B 估值建立在超过 $1B 的已签约客户订单、工作芯片和即将出货的机架系统之上，但尚未经过大规模生产部署和独立第三方基准验证。估值隐含的假设是 Etched 将成为推理基础设施的重要供应商，而非仅凭幻灯片融资的硬件初创公司。",
         "validated_signals": [
-          "Sohu芯片已在台积电N4P工艺上成功流片并回片。",
-          "首批完整系统正在由客户进行测试。",
-          "在C轮融资关闭前已获得10亿美元的客户预订订单。",
-          "已开设10MW新实验室用于持续部署和快速原型迭代。"
+          "已签约超过 $1 billion 客户订单，表明真实市场需求而非意向书",
+          "芯片已流片并运行，基于台积电 N4P 工艺，非纸面设计",
+          "已建立 10 MW 新研发设施和台湾工厂，具备量产基础设施",
+          "团队规模超过 400 人，包括来自 NVIDIA、Broadcom、Google TPU、SK Hynix 的工程师",
+          "首套机架计划于 2026 年夏季出货，进入实际部署阶段"
         ],
         "risks": [
-          "架构过时风险：Sohu芯片专为Transformer推理硬编码，若AI研究社区在未来几年转向非Transformer架构（如状态空间模型），芯片将失去核心价值，无法通过软件更新适配。",
-          "竞争风险：谷歌TPU、亚马逊Trainium/Inferentia、微软自研芯片等超大规模厂商已垂直整合硬件、软件和客户，Etched需在工具链成熟度和客户切换成本上证明其优势。",
-          "供应链依赖：芯片制造依赖台积电产能，而台积电先进制程产能持续紧张，可能限制Etched的扩产速度。"
+          "架构单一性风险：Sohu 专为 Transformer 推理硬编码，若 AI 模型架构发生根本性转变（如状态空间模型成为主流），芯片将失去竞争力，类似 Graphcore 押注非 Transformer 架构而失败的前例。",
+          "量产与供应链复杂性：芯片设计成功不等于量产成功，良率、封装、散热、固件、供应链连续性等任一环节出问题都可能延迟交付并损害客户信任。",
+          "软件生态不成熟：NVIDIA 的 CUDA 生态是强大护城河，Etched 需要说服客户承担工具链切换成本和单一供应商依赖风险。",
+          "客户集中度风险：超过 $1B 订单可能集中在少数大客户，若部署延迟或性能不达预期，收入将高度暴露于个别客户决策。",
+          "持续融资压力：芯片量产和集群部署极其烧钱，在实现稳定现金流之前可能需要额外融资，若资本市场环境变化可能面临资金链压力。"
         ],
         "related_direction_id": "",
-        "sector": "AI芯片/半导体",
+        "sector": "AI 推理芯片 / 半导体硬件",
         "related_direction": null
       },
       "entity_links": [
         {
           "relation_type": "product_of",
           "target_kind": "product",
-          "research_name": "Sohu",
+          "research_name": "Sohu ASIC",
           "canonical_entity_id": null,
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We’ve designed a new architecture to run our chip’s math blocks at under half the voltage of most AI chips. This enables multiple times the FLOPs density of AI chips today. We can run trillion-parameter sparse MoEs at 80%+ Peak FLOPs without thermal throttling."
+              "source_id": "FISRC-7032d0b33d579ec8",
+              "quote": "a specialised system designed to run transformer-based artificial intelligence models more efficiently"
             },
             {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We created a much lower-latency shared memory pool across our scale-up domain. We use a proprietary ultra-low-latency, high-bandwidth interconnect to enable dramatically faster memory access across chips."
+              "source_id": "FISRC-0164bd71853acd7e",
+              "quote": "Low Voltage Inference (LVI) is a new paradigm in AI computing that unlocks dramatically better power and cost efficiency."
             },
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "The systems can run any AI model, including Mixture of Experts models like DeepSeek and Qwen — an architecture that splits tasks across specialized sub-models rather than relying on one large model — as well as non-transformer designs like Mamba"
-            }
-          ]
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Frontier Inference Clusters",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We co-design chips, racks, software, and manufacturing methods so frontier models can run with best-in-class throughput, latency, cost, and power efficiency for both prefill and decode workloads."
-            },
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "Our first racks ship this summer, and we’ve kicked off production to fulfill over $1B in customer contracts."
+              "source_id": "FISRC-0164bd71853acd7e",
+              "quote": "Cluster Scale Memory (CSM) is a hybrid SRAM/HBM memory subsystem designed around an entire cluster rather than a single chip."
             }
           ]
         },
@@ -1365,21 +1177,12 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu"
-            }
-          ]
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Robert Wachen",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
+              "source_id": "FISRC-98b7c0b3b5f71805",
+              "quote": "Co-founder and CEO Gavin Uberti"
+            },
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "co-founder and COO Robert Wachen"
+              "source_id": "FISRC-0164bd71853acd7e",
+              "quote": "Gavin Uberti, co-founder and CEO of Etched"
             }
           ]
         },
@@ -1391,8 +1194,29 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "the founders, CEO Gavin Uberti, Wachen, and Chris Zhu"
+              "source_id": "FISRC-98b7c0b3b5f71805",
+              "quote": "Uberti dropped out of Harvard alongside co-founders Chris Zhu and Robert Wachen"
+            },
+            {
+              "source_id": "FISRC-ac975c8b74c8714c",
+              "quote": "They are chief executive Gavin Uberti, president Rob Wachen, and chief technology officer Chris Zhu."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Robert Wachen",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f34324e392a333c0",
+              "quote": "the startup's COO Robert Wachen"
+            },
+            {
+              "source_id": "FISRC-0164bd71853acd7e",
+              "quote": "Rob Wachen, co-founder and President of Etched"
             }
           ]
         },
@@ -1404,38 +1228,29 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "The round was led by Sequoia"
+              "source_id": "FISRC-7032d0b33d579ec8",
+              "quote": "Sequoia Capital led the round"
             },
             {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We’ve raised $300M at a $10.3B valuation, led by Sequoia Capital"
+              "source_id": "FISRC-0164bd71853acd7e",
+              "quote": "The latest round was led by Sequoia"
             }
           ]
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
-          "research_name": "Andreessen Horowitz",
+          "research_name": "Andreessen Horowitz (a16z)",
           "canonical_entity_id": null,
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "SK Hynix",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
+              "source_id": "FISRC-7032d0b33d579ec8",
+              "quote": "with participation from Andreessen Horowitz"
+            },
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
+              "source_id": "FISRC-0164bd71853acd7e",
+              "quote": "with participation from a16z"
             }
           ]
         },
@@ -1447,34 +1262,21 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
+              "source_id": "FISRC-f34324e392a333c0",
+              "quote": "with participation from SK Hynix, Andreessen Horowitz, Jane Street, and Diffusion"
             }
           ]
         },
         {
           "relation_type": "invested_in_round",
           "target_kind": "organization",
-          "research_name": "Diffusion Capital",
+          "research_name": "SK Hynix",
           "canonical_entity_id": null,
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "with Andreessen Horowitz, SK Hynix, Jane Street, and Diffusion Capital also participating"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Argo",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "led by Sequoia Capital alongside Andreessen Horowitz, Jane Street, Diffusion, Argo, and SK Hynix"
+              "source_id": "FISRC-f34324e392a333c0",
+              "quote": "with participation from SK Hynix"
             }
           ]
         },
@@ -1486,8 +1288,12 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
+              "source_id": "FISRC-0164bd71853acd7e",
+              "quote": "Etched has raised over $1B from investors including Sequoia, a16z, SK Hynix, VentureTech Alliance, Peter Thiel, Jane Street, HRT, Jump Trading, Two Sigma, Ribbit Capital, Stripes, Radical Ventures, Primary, and Positive Sum."
+            },
+            {
+              "source_id": "FISRC-ebe9b53f6375c99a",
+              "quote": "Sequoia led the round alongside Peter Thiel, Andrej Karpathy, SK Hynix, and Jane Street."
             }
           ]
         },
@@ -1499,177 +1305,25 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
+              "source_id": "FISRC-ebe9b53f6375c99a",
+              "quote": "Sequoia led the round alongside Peter Thiel, Andrej Karpathy, SK Hynix, and Jane Street."
             }
           ]
         },
         {
-          "relation_type": "invested_in_round",
+          "relation_type": "public_customer_case",
           "target_kind": "organization",
-          "research_name": "VentureTech Alliance",
+          "research_name": "未披露具体客户名称",
           "canonical_entity_id": null,
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-51d5a146312ce5b6",
-              "quote": "We’ve raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Copper Sky Capital",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
+              "source_id": "FISRC-61cfa2417d89dd41",
+              "quote": "we expect that the product will be very good for coding, long context, long horizon agents, and a lot of things that inference tokens are going to be used for."
+            },
             {
-              "source_id": "FISRC-d31c563ee521526a",
-              "quote": "When the four-year-old VC firm invested in Etched’s $120 million Series A two years ago"
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Stripes",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Hudson River Trading",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Two Sigma",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Ribbit Capital",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital and Stripes, who led the $500 million round."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Geoffrey Hinton",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Fei-Fei Li",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Arthur Mensch",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Scott Wu",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "It has also secured angel investment from AI heavyweights including Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, Arthur Mensch and Scott Wu."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Stanley Druckenmiller",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "The cap also includes billionaires Stanley Druckenmiller and Peter Thiel."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Dylan Field",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
-            }
-          ]
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Amjad Masad",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-2b073f5d2caeb82a",
-              "quote": "Other backers of the company include names like Peter Thiel, Andrej Karpathy, Dylan Field, Amjad Masad, and more."
+              "source_id": "FISRC-7032d0b33d579ec8",
+              "quote": "more than $1 billion in customer demand"
             }
           ]
         },
@@ -1681,12 +1335,8 @@
           "canonical_name": "NVIDIA",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Etched claims this produces a 10 to 100 times efficiency improvement per watt compared to H100-class GPUs for inference workloads."
-            },
-            {
-              "source_id": "FISRC-ebe9b53f6375c99a",
-              "quote": "Unlike NVIDIA's H100, which is a general-purpose GPU designed to run essentially any workload you send it (training, inference, simulation, rendering), Sohu does exactly one thing. It runs transformer-architecture neural network inference."
+              "source_id": "FISRC-98b7c0b3b5f71805",
+              "quote": "the Sohu ASIC, does exactly one thing: run transformer model inference. There are no general-purpose compute paths, no fallback modes."
             }
           ]
         },
@@ -1710,30 +1360,13 @@
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
-          "research_name": "Cerebras",
+          "research_name": "Graphcore",
           "canonical_entity_id": null,
           "canonical_name": "",
           "evidence_refs": [
             {
               "source_id": "FISRC-d9ef0217fdcf7272",
-              "quote": "Cerebras raised $2.7 billion and came close to dying entirely in its early years"
-            },
-            {
-              "source_id": "FISRC-d9ef0217fdcf7272",
-              "quote": "Cerebras eventually found its footing and achieved a $60 billion market cap post-IPO"
-            }
-          ]
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Groq",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-e9f4ccdf9c4d73e0",
-              "quote": "while AI chipmaker Groq just raised $650 million."
+              "quote": "By 2024, SoftBank acquired Graphcore for a reported price well below $500 million"
             }
           ]
         }
@@ -1760,26 +1393,50 @@
       ],
       "research_sources": [
         {
-          "source_id": "FISRC-2b073f5d2caeb82a",
-          "source_url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
-          "title": "AI芯片初创公司Etched无视质疑，获知名投资者青睐估值达103亿美元",
-          "publisher": "TechCrunch AI",
+          "source_id": "FISRC-7032d0b33d579ec8",
+          "source_url": "https://business-news-today.com/etched-raises-300m-as-10-3bn-valuation-tests-ai-inference-chip-economics/",
+          "title": "Etched 融资 3 亿美元，103 亿美元估值考验 AI 推理芯片经济性",
+          "publisher": "keyword search / Anysearch",
           "source_class": "canonical_event_source",
           "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-07-24T01:25:36.343Z",
-          "content_hash": "d49333849e09cee2",
-          "source_artifact_id": "SA-737a1ad4e68ae050",
-          "raw_id": "RAW-bcf75f83626a4f5f"
+          "captured_at": "2026-07-27T03:16:25.991Z",
+          "content_hash": "f44cf113ff366cc2",
+          "source_artifact_id": "SA-3c367842ae9ee6e7",
+          "raw_id": "RAW-0645b86a6b5f4a80"
         },
         {
-          "source_id": "FISRC-b9dffc6a2431ff31",
-          "source_url": "https://m.economictimes.com/tech/artificial-intelligence/ai-chip-startup-etched-raises-300-million-at-10-3-billion-valuation/amp_articleshow/132587068.cms",
-          "title": "AI chip startup Etched raises $300 million at $10.3 billion valuation - The Economic Times",
-          "publisher": "m.economictimes.com",
+          "source_id": "FISRC-f34324e392a333c0",
+          "source_url": "https://www.datacenterdynamics.com/en/news/ai-chip-startup-etched-closes-300m-funding-round-doubles-its-valuation-to-103bn/",
+          "title": "AI chip startup Etched closes $300m funding round, doubles its valuation to $10.3bn - DCD",
+          "publisher": "datacenterdynamics.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-27T03:18:37.740Z",
+          "content_hash": "fbd60dfb1abe4670",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-98b7c0b3b5f71805",
+          "source_url": "https://startupfortune.com/etched-raises-300m-at-a-103b-valuation-on-a-bet-that-transformer-only-chips-will-displace-nvidia-at-the-inference-layer/",
+          "title": "Etched raises $300M at a $10.3B valuation on a bet that transformer-only chips will displace Nvidia at the inference layer - Startup Fortune",
+          "publisher": "startupfortune.com",
           "source_class": "independent",
           "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T15:21:56.322Z",
-          "content_hash": "490d145e48e31646",
+          "captured_at": "2026-07-27T03:18:38.787Z",
+          "content_hash": "b3842344845b7e31",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0164bd71853acd7e",
+          "source_url": "https://www.hpcwire.com/off-the-wire/etched-raises-300m-to-scale-production-of-frontier-scale-inference-hardware/",
+          "title": "HPCwire - Since 1987 – Covering the Fastest Computers in the World and the People Who Run Them",
+          "publisher": "hpcwire.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-27T03:18:39.122Z",
+          "content_hash": "acbb892603033145",
           "source_artifact_id": null,
           "raw_id": null
         },
@@ -1790,7 +1447,7 @@
           "publisher": "angelinvestorsnetwork.com",
           "source_class": "independent",
           "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T15:21:57.305Z",
+          "captured_at": "2026-07-27T03:18:39.543Z",
           "content_hash": "609ac79493f0a8a6",
           "source_artifact_id": null,
           "raw_id": null
@@ -1802,44 +1459,32 @@
           "publisher": "angelinvestorsnetwork.com",
           "source_class": "independent",
           "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T15:21:58.699Z",
+          "captured_at": "2026-07-27T03:18:39.774Z",
           "content_hash": "c5f7711604038d11",
           "source_artifact_id": null,
           "raw_id": null
         },
         {
-          "source_id": "FISRC-e9f4ccdf9c4d73e0",
-          "source_url": "https://techtost.com/nvidia-competitor-etched-hits-5-billion-valuation-1-billion-in-ai-chip-sales/",
-          "title": "Nvidia competitor Etched hits $5 billion valuation, $1 billion in AI chip sales – TechTost",
-          "publisher": "techtost.com",
+          "source_id": "FISRC-ac975c8b74c8714c",
+          "source_url": "https://thenextweb.com/news/etched-300m-series-c-10-3b-valuation-sequoia-sk-hynix",
+          "title": "Etched raises $300M at a $10.3B valuation, SK Hynix in",
+          "publisher": "thenextweb.com",
           "source_class": "independent",
-          "capture_method": "exa_captured_content",
-          "captured_at": "2026-07-26T15:22:28.708Z",
-          "content_hash": "aaeadfd77d5e96e0",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-d31c563ee521526a",
-          "source_url": "https://ourinsaneblogs.com/2026/07/02/thiel-capitals-jack-selby-nabs-stakes-in-hot-startups-like-etched-through-arizona-connections/",
-          "title": "Thiel Capital’s Jack Selby nabs stakes in hot startups like Etched through Arizona connections - ourinsaneblogs",
-          "publisher": "ourinsaneblogs.com",
-          "source_class": "independent",
-          "capture_method": "exa_captured_content",
-          "captured_at": "2026-07-26T15:22:37.380Z",
-          "content_hash": "3844889648361182",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-51d5a146312ce5b6",
-          "source_url": "https://www.etched.com/progress",
-          "title": "Progress | Etched",
-          "publisher": "etched.com",
-          "source_class": "official_candidate",
           "capture_method": "direct_fetch",
-          "captured_at": "2026-07-26T15:22:38.445Z",
-          "content_hash": "888acda40563a8b2",
+          "captured_at": "2026-07-27T03:18:40.161Z",
+          "content_hash": "10f4e2ac549825bd",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-61cfa2417d89dd41",
+          "source_url": "https://www.eetimes.com/etched-raises-300m-with-1b-in-pre-orders/",
+          "title": "Etched Raises $300M with $1B in Pre-Orders",
+          "publisher": "eetimes.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-27T03:19:10.162Z",
+          "content_hash": "4f71928056e1fcd0",
           "source_artifact_id": null,
           "raw_id": null
         }
@@ -1849,7 +1494,7 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-26T15:23:43.896Z"
+        "generated_at": "2026-07-27T03:20:11.825Z"
       },
       "auto_publish_gate": {
         "passed": true,
@@ -1857,7 +1502,7 @@
         "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-26T15:23:43.896Z",
+      "published_at": "2026-07-27T03:20:11.825Z",
       "links": {
         "company": "data-center.html?view=index&detail=entity&id=EN-9cb45a27a2808c01",
         "relation_map": "",
@@ -120755,6 +120400,586 @@
         "company": "data-center.html?view=index&detail=entity&id=EN-7209ec6f68ac0bcd",
         "relation_map": "",
         "funding_event": "data-center.html?view=events&detail=event&id=EV-6e79974732a5db6b",
+        "direction": ""
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-b918d689c67718a8",
+      "triggered_by_event_id": "EV-b31602193dbf4e08",
+      "as_of_date": "2026-07-27",
+      "company": {
+        "entity_id": "EN-53b69ef92c836777",
+        "name": "Replit",
+        "full_name": "Replit",
+        "website": "https://replit.com",
+        "summary": "Replit 是一个基于浏览器的 AI 驱动软件开发平台，将 IDE、云服务、部署和 AI 辅助编码工具整合在单一环境中，旨在让任何有想法和网络连接的人都能构建软件应用。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Amjad Masad",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "Replit was co-founded by programmers Amjad Masad, Faris Masad and designer Haya Odeh in 2016."
+              },
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "Replit founder and CEO Amjad Masad"
+              }
+            ],
+            "entity_id": "EN-fd67ab47893c5a98"
+          },
+          {
+            "name": "Faris Masad",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "Replit was co-founded by programmers Amjad Masad, Faris Masad and designer Haya Odeh in 2016."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Haya Odeh",
+            "role": "联合创始人兼设计负责人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "Replit was co-founded by programmers Amjad Masad, Faris Masad and designer Haya Odeh in 2016."
+              },
+              {
+                "source_id": "FISRC-96403c3e6eeb4174",
+                "quote": "Replit was founded by Amjad Masad and his wife Haya, who now serves as the company's head of design."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9b0f32fe01d091cc",
+            "quote": "Based in San Francisco, Replit was co-founded by programmers Amjad Masad, Faris Masad and designer Haya Odeh in 2016."
+          },
+          {
+            "source_id": "FISRC-96403c3e6eeb4174",
+            "quote": "Replit has closed a $400 million Series D funding round, valuing the San Francisco-based company at $9 billion."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series B extension",
+        "amount": "$97.4 million",
+        "total_raised": "over $200 million",
+        "announced_at": "2023-04-27",
+        "investors": [
+          {
+            "name": "Andreessen Horowitz",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "Andreessen Horowitz led the round — a Series B extension"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Khosla Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Coatue",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "SV Angel",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Y Combinator",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+              }
+            ],
+            "entity_id": "EN-275b0f4a4023d91c"
+          },
+          {
+            "name": "Bloomberg Beta",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Naval Ravikant",
+            "role": "本轮参投（天使投资人）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "ARK Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hamilton Helmer",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-9b0f32fe01d091cc",
+                "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-9b0f32fe01d091cc",
+            "quote": "this week raised nearly $100 million ($97.4 million) at a $1.16 billion post-money valuation."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Replit (Web-based IDE)",
+          "description": "一个基于浏览器的在线协作集成开发环境，支持多种编程语言，允许用户共享工作区、实时编辑、调试代码，并提供项目分享、教程和模板功能。",
+          "target_customers": "软件开发者和编程学习者",
+          "features": [
+            "支持 JavaScript、Python、Go、C++ 等多种编程语言",
+            "多人实时协作编辑和调试",
+            "项目分享、教程和模板"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "Replit offers an online, collaborative IDE that supports a range of programming languages, including JavaScript, Python, Go and C++."
+            },
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "With Replit, users can share a workspace with one or many users and see real-time edits across files, message each other and debug code together."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Ghostwriter",
+          "description": "一套基于 AI 模型的代码生成与辅助功能套件，类似于 GitHub Copilot，能够根据用户输入和上下文提供代码建议并解释代码。",
+          "target_customers": "使用 Replit 平台的开发者",
+          "features": [
+            "基于公开代码训练的 AI 模型",
+            "代码建议和解释功能",
+            "根据用户输入和编程语言上下文提供辅助"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "its headlining feature is Ghostwriter, a suite of features powered by an AI model trained on publicly available code."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [],
+      "comparisons": [
+        {
+          "name": "GitHub Copilot",
+          "product": "GitHub Copilot",
+          "scenario": "在 IDE 中为专业开发者提供代码补全和建议",
+          "target_customer": "专业软件开发者",
+          "funding_summary": "",
+          "core_difference": "Ghostwriter 是 Replit 基于浏览器的在线 IDE 的内置功能，而 Copilot 是作为 IDE 插件服务于需要控制和定制的专业开发者。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e875c1e03bf64038",
+              "quote": "Copilot is an IDE plugin serving developers who want control and customization. Pivoting to browser-based, zero-setup platforms for non-technical users would cannibalize that revenue and alienate paying customers."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "用户数",
+          "value": "超过2200万开发者",
+          "observed_at": "2023-04-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "a user base eclipsing 22 million developers."
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "11.6亿美元",
+          "observed_at": "2023-04-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "at a $1.16 billion post-money valuation."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Amjad Masad",
+          "quote": "We are relentless in our mission to empower a billion software developers.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "We are relentless in our mission to empower a billion software developers"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是生成式 AI 与云端开发环境的深度融合，以及由此带来的开发者工具市场格局重塑的机会。本轮融资的已验证信号包括：Ghostwriter 驱动的用户爆炸式增长（超过2200万开发者）、与 Google Cloud 达成战略合作，以及 11.6 亿美元的独角兽估值。判断的证据边界限于本轮融资公告中披露的用户规模、合作伙伴关系和估值数据，缺乏收入、付费转化率等商业指标。",
+        "validated_signals": [
+          "Ghostwriter 功能推动用户基数超过2200万开发者",
+          "与 Google Cloud 建立战略合作伙伴关系",
+          "以 11.6 亿美元估值完成近 1 亿美元融资"
+        ],
+        "risks": [
+          "Ghostwriter 基于公开代码训练，可能面临与 GitHub Copilot 类似的版权侵权集体诉讼风险，且代码建议可能包含不安全或不当内容。"
+        ],
+        "related_direction_id": "",
+        "sector": "AI 驱动的开发者工具与云端 IDE",
+        "related_direction": null
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Replit (Web-based IDE)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "Replit offers an online, collaborative IDE that supports a range of programming languages, including JavaScript, Python, Go and C++."
+            },
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "With Replit, users can share a workspace with one or many users and see real-time edits across files, message each other and debug code together."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Ghostwriter",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "its headlining feature is Ghostwriter, a suite of features powered by an AI model trained on publicly available code."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Amjad Masad",
+          "canonical_entity_id": "EN-fd67ab47893c5a98",
+          "canonical_name": "Amjad Masad",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "Replit was co-founded by programmers Amjad Masad, Faris Masad and designer Haya Odeh in 2016."
+            },
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "Replit founder and CEO Amjad Masad"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Faris Masad",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "Replit was co-founded by programmers Amjad Masad, Faris Masad and designer Haya Odeh in 2016."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Haya Odeh",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "Replit was co-founded by programmers Amjad Masad, Faris Masad and designer Haya Odeh in 2016."
+            },
+            {
+              "source_id": "FISRC-96403c3e6eeb4174",
+              "quote": "Replit was founded by Amjad Masad and his wife Haya, who now serves as the company's head of design."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Andreessen Horowitz",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "Andreessen Horowitz led the round — a Series B extension"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Khosla Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Coatue",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "SV Angel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Y Combinator",
+          "canonical_entity_id": "EN-275b0f4a4023d91c",
+          "canonical_name": "Y Combinator",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bloomberg Beta",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Naval Ravikant",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ARK Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hamilton Helmer",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9b0f32fe01d091cc",
+              "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "GitHub Copilot",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-e875c1e03bf64038",
+              "quote": "Copilot is an IDE plugin serving developers who want control and customization. Pivoting to browser-based, zero-setup platforms for non-technical users would cannibalize that revenue and alienate paying customers."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-8eb0acb180b7ad9d",
+          "date": "2026-06-01",
+          "title": "2026年顶级AI智能体初创公司（融资与估值）",
+          "amount": "$400M",
+          "source_refs": [
+            "SA-43cefbe4eab62f4a"
+          ]
+        },
+        {
+          "event_id": "EV-b31602193dbf4e08",
+          "date": "2023-04-27",
+          "title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+          "amount": "$100M",
+          "source_refs": [
+            "SA-0b9a587f50329f4f"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-9b0f32fe01d091cc",
+          "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
+          "title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-27T03:16:37.407Z",
+          "content_hash": "3b03664369ea0afe",
+          "source_artifact_id": "SA-0b9a587f50329f4f",
+          "raw_id": "RAW-aa259065295765b2"
+        },
+        {
+          "source_id": "FISRC-e875c1e03bf64038",
+          "source_url": "https://prodfolks.substack.com/p/why-replit-won",
+          "title": "why replit won - by Suhas - The Product Folks",
+          "publisher": "prodfolks.substack.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-27T03:18:40.364Z",
+          "content_hash": "d6f85d0db3dbfc8e",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-96403c3e6eeb4174",
+          "source_url": "https://technews180.com/funding-news/replit-raises-400m-series-d-at-9b-valuation/",
+          "title": "Replit Raises $400M Series D at $9B Valuation",
+          "publisher": "technews180.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-27T03:18:41.664Z",
+          "content_hash": "406ec8f541f23974",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-27T03:19:12.653Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-27T03:19:12.653Z",
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-53b69ef92c836777",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-b31602193dbf4e08",
         "direction": ""
       }
     },

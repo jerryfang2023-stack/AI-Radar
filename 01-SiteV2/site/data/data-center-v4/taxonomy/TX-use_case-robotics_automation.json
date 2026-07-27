@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-26T16:24:00.830Z",
-    "latestDataDate": "2026-07-26",
-    "currentDate": "2026-07-26",
-    "eventCount": 1582,
+    "generatedAt": "2026-07-27T03:18:25.889Z",
+    "latestDataDate": "2026-07-27",
+    "currentDate": "2026-07-27",
+    "eventCount": 1603,
     "quarantinedEventCount": 14
   },
   "node": {
@@ -31,6 +31,7 @@
       "EV-e4fec8a00b416d12",
       "EV-39848cdd62c00e59",
       "EV-4faa2bcf2e42e60c",
+      "EV-6bac0bf442887889",
       "EV-c7e1e920e54bb364",
       "EV-f79713437230562f",
       "EV-03d40407042d7986",
@@ -84,10 +85,10 @@
       "EN-72138e570e5103e2",
       "EN-aa75c47729b4a292",
       "EN-8147e6fed86d42c1",
+      "EN-8d57f84bd1847b24",
       "EN-febedfcafee9d610",
       "EN-0bd85984211bd173",
       "EN-240389f4b730bad4",
-      "EN-8d57f84bd1847b24",
       "EN-593d0361124f348f",
       "EN-843e746333671ab1",
       "EN-a96df57737b74def",
@@ -143,7 +144,7 @@
       "HW-dca442211b264bbe"
     ],
     "firstSeen": "2026-05-24",
-    "lastSeen": "2026-07-26"
+    "lastSeen": "2026-07-27"
   },
   "events": [
     {
@@ -1552,6 +1553,111 @@
       "publisher": "NVIDIA AI Blog"
     },
     {
+      "id": "EV-6bac0bf442887889",
+      "dataDate": "2026-07-27",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-27",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "荣耀 Robot Phone 定档 8 月 12 日发布，搭载第五代骁龙 8 至尊版与阿莱联合研发",
+      "originalTitle": "",
+      "subject": "荣耀 Robot Phone 定档 8 月 12 日",
+      "action": "发布",
+      "object": "，搭载第五代骁龙 8 至尊版与阿莱联合研发",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "robotics_automation",
+            "dimensionName": "应用场景",
+            "name": "机器人与物理自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "robotics_automation",
+          "dimensionName": "应用场景",
+          "name": "机器人与物理自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        }
+      ],
+      "entityIds": [
+        "EN-8d57f84bd1847b24"
+      ],
+      "entityNames": [
+        "Robot Phone"
+      ],
+      "productName": "Robot Phone",
+      "products": [
+        {
+          "name": "Robot Phone",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/981/843.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-c7e1e920e54bb364",
       "dataDate": "2026-07-25",
       "date": "2026-07-24",
@@ -1646,12 +1752,12 @@
       ],
       "entityNames": [
         "Black Forest Labs",
-        "Flux 3"
+        "FLUX 3"
       ],
-      "productName": "Flux 3",
+      "productName": "FLUX 3",
       "products": [
         {
-          "name": "Flux 3",
+          "name": "FLUX 3",
           "type": "模型",
           "ownerNames": []
         }
@@ -2052,12 +2158,12 @@
       ],
       "entityNames": [
         "Black Forest Labs",
-        "Flux 3"
+        "FLUX 3"
       ],
-      "productName": "Flux 3",
+      "productName": "FLUX 3",
       "products": [
         {
-          "name": "Flux 3",
+          "name": "FLUX 3",
           "type": "模型",
           "ownerNames": []
         }
@@ -4983,10 +5089,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
-        "TX-industry-technology",
         "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -5031,6 +5137,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
@@ -5066,7 +5173,10 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-06526dd6cb2157f4",
+        "EV-98aa6402a8e256db",
         "EV-6beed07120c6c6d0",
+        "EV-0d424ee04b1860ce",
         "EV-91a444ff3955ad91",
         "EV-e4fec8a00b416d12",
         "EV-8c526681b74e2762",
@@ -5079,6 +5189,7 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-272c5c798bc95d9d",
         "EV-0f0b2013927ce156",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
@@ -5146,6 +5257,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-cd7e18de453152dd",
         "EV-89bdda008227fb6b",
         "EV-89f9216de5b559ac",
         "EV-c14e5185fd6bbe30",
@@ -5156,8 +5268,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
@@ -5212,7 +5324,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-59ae856cd788d0f5",
@@ -5544,11 +5656,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -5730,8 +5842,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
@@ -5744,6 +5856,37 @@
       "lastSeen": "2026-07-23"
     },
     {
+      "id": "EN-8d57f84bd1847b24",
+      "name": "Robot Phone",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6bac0bf442887889",
+        "EV-03d40407042d7986",
+        "EV-d4278191ae11f198",
+        "EV-ed272c57e1513d3f",
+        "EV-2499dc922663af7e",
+        "EV-c844ddabb8528896"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-multimodal",
+        "TX-technology-embodied_ai",
+        "TX-use_case-robotics_automation"
+      ],
+      "relatedEntityIds": [
+        "EN-be548deba4a093d7"
+      ],
+      "firstSeen": "2026-07-18",
+      "lastSeen": "2026-07-27"
+    },
+    {
       "id": "EN-febedfcafee9d610",
       "name": "Black Forest Labs",
       "entityType": "organization_candidate",
@@ -5754,6 +5897,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-58457ebde013a438",
         "EV-c7e1e920e54bb364",
         "EV-b76705cd8461925f"
       ],
@@ -5766,11 +5910,11 @@
         "EN-0bd85984211bd173"
       ],
       "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-0bd85984211bd173",
-      "name": "Flux 3",
+      "name": "FLUX 3",
       "entityType": "product_candidate",
       "typeLabel": "产品、模型与服务",
       "aliases": [],
@@ -5779,6 +5923,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-58457ebde013a438",
         "EV-c7e1e920e54bb364",
         "EV-d4d03a7ad477aaa2",
         "EV-b76705cd8461925f"
@@ -5792,7 +5937,7 @@
         "EN-febedfcafee9d610"
       ],
       "firstSeen": "2026-07-23",
-      "lastSeen": "2026-07-25"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-240389f4b730bad4",
@@ -5828,8 +5973,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-use_case-robotics_automation",
         "TX-technology-open_weights",
@@ -5844,36 +5989,6 @@
       ],
       "firstSeen": "2026-05-23",
       "lastSeen": "2026-07-26"
-    },
-    {
-      "id": "EN-8d57f84bd1847b24",
-      "name": "Robot Phone",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-03d40407042d7986",
-        "EV-d4278191ae11f198",
-        "EV-ed272c57e1513d3f",
-        "EV-2499dc922663af7e",
-        "EV-c844ddabb8528896"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation"
-      ],
-      "relatedEntityIds": [
-        "EN-be548deba4a093d7"
-      ],
-      "firstSeen": "2026-07-18",
-      "lastSeen": "2026-07-24"
     },
     {
       "id": "EN-593d0361124f348f",
@@ -6217,8 +6332,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-robotics_automation"
       ],
@@ -6246,8 +6361,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-technology-embodied_ai",
         "TX-use_case-robotics_automation",
         "TX-technology-on_device"
@@ -6328,8 +6443,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
@@ -6645,8 +6760,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-use_case-robotics_automation",
         "TX-use_case-enterprise_operations",
@@ -6740,6 +6855,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-97854226b6f43a95",
         "EV-136b2edc9b9f3be8",
         "EV-3fb827f44ea109de",
         "EV-14cc7f194f3e5af8",
@@ -6789,6 +6905,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-286574206caa37ab",
         "EV-eec1e6857f0e0b2b",
         "EV-fdf6128ae36e1f5e",
         "EV-7f2811d2272cf4a3",
@@ -6804,6 +6921,7 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-272c5c798bc95d9d",
         "EV-33e98b8bbd0a11b1",
         "EV-c9aba59ba04c9fc8",
         "EV-5ec22cf9a1fb59d4",
@@ -6925,6 +7043,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-0eef30387327e73f",
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
         "EV-d40d5c9625f296db",
@@ -6971,11 +7090,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-computer_use",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
@@ -7001,6 +7120,7 @@
         "TX-technology-human_in_loop"
       ],
       "relatedEntityIds": [
+        "EN-968e2d5b08687bf4",
         "EN-f65bb77682b83476",
         "EN-3850792f618f534b",
         "EN-7839fb10a8f14c70",
@@ -7024,7 +7144,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     },
     {
       "id": "EN-94ff75465b1afa65",
@@ -7150,6 +7270,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-97854226b6f43a95",
         "EV-86ca5af11ee4d275",
         "EV-52115fee0e716170",
         "EV-20d762872664fddb",
@@ -7179,6 +7300,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-272c5c798bc95d9d",
         "EV-5bc7efca0bc7fec0",
         "EV-702276a31f123374",
         "EV-37ff2485172cab0b",
@@ -7241,11 +7363,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
-        "TX-technology-computer_use",
         "TX-industry-financial_services",
         "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
@@ -7278,7 +7400,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-27"
     }
   ],
   "fde": [
