@@ -131,8 +131,7 @@ function applyEntityReviewDecisions(entityRows, events, reviewDecisions) {
     const aliases = Array.isArray(canonical.aliases)
       ? unique(canonical.aliases).filter((alias) => key(alias) !== key(canonical.name || row.canonical_name))
       : [...(row.aliases || [])];
-    if (decision.action === "confirm") return { ...row, aliases, verification_status: "verified" };
-    if (!["correct", "merge"].includes(decision.action)) return { ...row, aliases: [...(row.aliases || [])] };
+    if (!["confirm", "correct", "merge"].includes(decision.action)) return { ...row, aliases: [...(row.aliases || [])] };
     const reviewedName = clean(canonical.name);
     return {
       ...row,

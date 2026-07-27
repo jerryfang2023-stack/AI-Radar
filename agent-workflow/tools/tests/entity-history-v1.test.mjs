@@ -471,6 +471,27 @@ test("accepted catalog review corrections update serving fields and keep Claim-b
   assert.equal(service.manifest.review.corrected, 1);
 });
 
+test("accepted confirmations keep the reviewed canonical spelling when later source rows drift", () => {
+  const service = buildEntityHistoryService({
+    entityRows: [
+      { entity_id: "EN-2222222222222222", canonical_name: "ATLAS AGENT", entity_type: "product_candidate", aliases: [], verification_status: "verified" }
+    ],
+    reviewDecisions: {
+      decisions: [{
+        entity_id: "EN-2222222222222222",
+        action: "confirm",
+        canonical: { name: "Atlas Agent", catalog_type: "product", company_names: [] },
+        evidence: { claim_refs: ["CL-1"], secondary_sources: [] },
+        review_status: "accepted",
+        reviewer: "codex-entity-review"
+      }]
+    }
+  });
+
+  assert.equal(service.profiles.find((item) => item.id === "EN-2222222222222222")?.name, "Atlas Agent");
+  assert.equal(service.manifest.review.confirmed, 1);
+});
+
 test("accepted catalog review quarantines non-entities and merges duplicate ids in the serving projection", () => {
   const service = buildEntityHistoryService({
     entityRows: [

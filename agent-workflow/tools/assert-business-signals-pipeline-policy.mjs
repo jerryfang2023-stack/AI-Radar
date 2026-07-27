@@ -110,6 +110,9 @@ if (!/industry-reports-frontstage\.test\.mjs/u.test(compatibilitySiteTestCommand
 if (!/npm run test:data-center-site:compatibility/u.test(workflow)) {
   problems.push("production workflow does not run compatibility tests after rebuilding compatibility projections");
 }
+if (!/stage_if_exists "01-SiteV2\/content\/11-databases\/source-title-translations\.json"/u.test(workflow)) {
+  problems.push("production workflow does not persist approved source-title translations with Raw assets");
+}
 if (!/failedWorkflowSupersededByPublication/u.test(dailySupervision)) {
   problems.push("daily supervision does not close an earlier failed Business run after a later healthy Pages publication");
 }

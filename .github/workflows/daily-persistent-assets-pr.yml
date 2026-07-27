@@ -598,6 +598,7 @@ jobs:
             agent-workflow/reports/frontstage-regression-gate-*.md
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
+            01-SiteV2/content/11-databases/source-title-translations.json
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
             01-SiteV2/content/11-databases/data-center-v4/${{ steps.run-date.outputs.date }}/**
             data-lake/tables/source_artifacts.jsonl
@@ -671,6 +672,7 @@ jobs:
           if [ "${{ steps.data-center-v4-materialize.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
             stage_if_exists "01-SiteV2/content/01-raw/originals/${RUN_DATE}"
+            stage_if_exists "01-SiteV2/content/11-databases/source-title-translations.json"
             stage_if_exists "01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
             stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}"
             stage_if_exists "01-SiteV2/content/11-databases/model-assist-v1/${RUN_DATE}.json"
