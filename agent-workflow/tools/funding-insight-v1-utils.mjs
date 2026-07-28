@@ -113,17 +113,30 @@ function subjectSignalScore(text = "", name = "") {
   return score;
 }
 
+function descriptiveCompanyTail(name = "") {
+  const match = clean(name).match(
+    /\b(?:company|startup|firm|platform|provider)\s+([A-Z][\p{L}\p{N}.&'-]*(?:\s+[A-Z][\p{L}\p{N}.&'-]*){0,3})$/u,
+  );
+  return clean(match?.[1]);
+}
+
 function subjectCandidate(entity, index, eventText) {
-  const names = [entity.canonical_name || entity.name, ...(entity.aliases || [])].filter(Boolean);
+  const canonicalName = entity.canonical_name || entity.name;
+  const inferredName = descriptiveCompanyTail(canonicalName);
+  const names = [canonicalName, ...(entity.aliases || []), inferredName].filter(Boolean);
   const scores = names.map((name) => {
     const normalized = normalizedName(name);
     const lexical = eventText.normalized.includes(normalized) ? Math.min(30, normalized.length) : 0;
     return lexical + subjectSignalScore(eventText.raw, name);
   });
+  const bestScore = Math.max(0, ...scores);
+  const bestName = names[scores.indexOf(bestScore)];
   return {
-    entity,
+    entity: inferredName && bestName === inferredName
+      ? { ...entity, canonical_name: inferredName }
+      : entity,
     index,
-    score: Math.max(0, ...scores),
+    score: bestScore,
     has_subject_signal: scores.some((score) => score >= 45),
   };
 }

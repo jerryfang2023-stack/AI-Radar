@@ -2,7 +2,7 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-28",
-    "generated_at": "2026-07-28T06:28:03.907Z",
+    "generated_at": "2026-07-28T09:28:04.764Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
@@ -10,12 +10,653 @@
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
     "counts": {
       "funding_events": 6,
-      "auto_published": 3,
-      "blocked": 3,
+      "auto_published": 4,
+      "blocked": 2,
       "pending": 0
     }
   },
   "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-8753b7f23092e468",
+      "triggered_by_event_id": "EV-986ac3a819d23388",
+      "as_of_date": "2026-07-28",
+      "company": {
+        "entity_id": "EN-c71496986d06e3f2",
+        "name": "Pathwork",
+        "full_name": "Pathwork",
+        "website": "https://www.pathwork.com",
+        "summary": "Pathwork是一家AI原生平台，专为人寿与健康保险的分销环节构建，致力于改变保单的销售、投放和留存方式。",
+        "headquarters": "",
+        "founders": [
+          {
+            "name": "Ian Levinsky",
+            "role": "CEO & Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5827527c9c624d25",
+                "quote": "Ian Levinsky CEO & Co-Founder"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Blake Butterworth",
+            "role": "CTO & Co-Founder",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-5827527c9c624d25",
+                "quote": "Blake Butterworth CTO & Co-Founder"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1bd630ac44028d8a",
+            "quote": "Pathwork is the AI platform purpose-built for the distribution side of life & health insurance, transforming how policies are sold, placed, and retained."
+          },
+          {
+            "source_id": "FISRC-5827527c9c624d25",
+            "quote": "An AI-native platform that brings clarity, speed, and confidence to the people powering insurance—so they can spend less time chasing answers and more time driving impact."
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$3.5M",
+        "total_raised": "$3.5M",
+        "announced_at": "2025-09-09",
+        "investors": [
+          {
+            "name": "Costanoa Ventures",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bd630ac44028d8a",
+                "quote": "our $3.5M seed investment round led by Costanoa Ventures"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Logos Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bd630ac44028d8a",
+                "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "American Family Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bd630ac44028d8a",
+                "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Meridian Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-1bd630ac44028d8a",
+                "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-1bd630ac44028d8a",
+            "quote": "Today, Blake and I are thrilled to announce our $3.5M seed investment round led by Costanoa Ventures and joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Case Underwriter",
+          "description": "用于APS摘要、核保支持和案件验证的AI工具，可在数分钟内生成简洁摘要并关联源文件。",
+          "target_customers": "人寿与健康保险经纪人",
+          "features": [
+            "APS文件上传与分钟级摘要生成",
+            "点击源页面直接验证关键发现",
+            "跨数千页文件的定向搜索（Chat-with-files）"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "APS files are uploaded into Pathwork Summaries are generated in minutes – even for large files Underwriters validate key findings by clicking directly into source pages Chat-with-files enables targeted searches across thousands of pages"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "PreQual Manager",
+          "description": "与NGL Insurance Company合作推出的AI驱动收件箱，使核保团队能更快、更一致地回复经纪人咨询。",
+          "target_customers": "人寿与健康保险承运人",
+          "features": [
+            "AI驱动的核保咨询回复",
+            "更快、更一致的响应"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "Pathwork and NGL Insurance Company (NGL), in partnership with LifeCare Assurance Company, announced the launch of PreQual Manager, an AI-powered inbox that enables underwriting teams to respond to broker inquiries faster and more consistently."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Medical Data on Demand",
+          "description": "为寿险经纪人提供处方和医疗理赔数据的按需访问，用于现代核保。",
+          "target_customers": "人寿保险经纪人",
+          "features": [
+            "按需访问处方数据",
+            "按需访问医疗理赔数据"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "Pathwork launched a first-of-its-kind offering that gives life insurance brokers on-demand access to the prescription and medical claims data used in modern underwriting."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Highland Capital Brokerage",
+          "industry": "人寿、残疾、长期护理及年金分销",
+          "use_case": "APS摘要、核保支持、案件验证，回收近三年核保产能。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "Customer: Highland Capital Brokerage Industry: Life, Disability, Long-Term Care & Annuity Distribution Primary Use Case: APS summarization, underwriting support, case validation Impact: 3 years of underwriting capacity reclaimed"
+            }
+          ]
+        },
+        {
+          "name": "NFP (LTCI Partners)",
+          "industry": "长期护理保险分销",
+          "use_case": "简化长期护理保险销售的核保复杂性，缩短响应时间。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "Pathwork helps LTCI Partners, a division of NFP, an Aon company, simplify the complexities of long-term care sales by thinking like an underwriter, shaving days off response times"
+            }
+          ]
+        },
+        {
+          "name": "Brokers Central",
+          "industry": "保险经纪",
+          "use_case": "移除繁琐工作，在数分钟内交付完整的核保就绪报告，提升投保率。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "For Brokers Central, Pathwork removes the busywork and delivers a complete, underwriter-ready story in minutes—helping agents move faster, communicate better, and deliver higher placement rates."
+            }
+          ]
+        },
+        {
+          "name": "MERIT Insurance",
+          "industry": "保险",
+          "use_case": "通过承接更多案件（包括高难度案件）实现收入增长。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "Pathwork’s AI Underwriter has allowed MERIT to grow revenue by taking on more cases, even the most difficult"
+            }
+          ]
+        },
+        {
+          "name": "Life Quotes",
+          "industry": "保险经纪",
+          "use_case": "消除代理人研究时间，帮助其在首次通话中提交申请。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "Using Pathwork’s AI Underwriter, Life Quotes has removed “Let me research that for you” from agent vocabulary, helping them submit applications during the first phone call."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "累计服务经纪商数量",
+          "value": "超过65家",
+          "observed_at": "2025-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bd630ac44028d8a",
+              "quote": "Today, we are proud to count more than 65 brokerages as trusted partners"
+            }
+          ]
+        },
+        {
+          "label": "年度生产力节约天数",
+          "value": "约1,400天",
+          "observed_at": "2025-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bd630ac44028d8a",
+              "quote": "we’ve generated an estimated 1,400 days of productivity savings (nearly 4 years!)"
+            }
+          ]
+        },
+        {
+          "label": "客户盈利能力提升",
+          "value": "8-12%",
+          "observed_at": "2025-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bd630ac44028d8a",
+              "quote": "early studies with customers show profitability increases of 8-12%"
+            }
+          ]
+        },
+        {
+          "label": "美国保险分销市场支出规模",
+          "value": "超过1,600亿美元",
+          "observed_at": "2025-09-09",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bd630ac44028d8a",
+              "quote": "Distribution represents more than $160B in spend in the U.S. alone"
+            }
+          ]
+        },
+        {
+          "label": "Highland Capital Brokerage年度APS处理页数",
+          "value": "约182,000页",
+          "observed_at": "2026-03-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "Highland processes approximately 182,000 APS pages per year through Pathwork."
+            }
+          ]
+        },
+        {
+          "label": "Highland Capital Brokerage回收核保产能",
+          "value": "近3年",
+          "observed_at": "2026-03-02",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "that translates to 758 workdays, or nearly three full years of underwriting capacity reclaimed."
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Lori-Anne Walker, VP & Chief Underwriter at Highland Capital Brokerage",
+          "quote": "If you had a 1,500-page APS, that could take days. Even when it came back summarized, you still had to double-check everything. It slowed the entire process.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "If you had a 1,500-page APS, that could take days. Even when it came back summarized, you still had to double-check everything. It slowed the entire process."
+            }
+          ]
+        },
+        {
+          "speaker": "Shelley Bondurant, EVP of Operations & Sales Enablement at Highland Capital Brokerage",
+          "quote": "It shocks me how many times I find myself in front of vendors who don’t really know what they’re delivering to market.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "It shocks me how many times I find myself in front of vendors who don’t really know what they’re delivering to market."
+            }
+          ]
+        },
+        {
+          "speaker": "Lori-Anne Walker, VP & Chief Underwriter at Highland Capital Brokerage",
+          "quote": "Chat with files is where I find the gold. I can pull every page that mentions a specific impairment in seconds. That used to take hours.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "Chat with files is where I find the gold. I can pull every page that mentions a specific impairment in seconds. That used to take hours."
+            }
+          ]
+        },
+        {
+          "speaker": "Lori-Anne Walker, VP & Chief Underwriter at Highland Capital Brokerage",
+          "quote": "Pathwork gives me the time to focus on strategy and custom analysis, allowing me to deliver far more value and influence on each case than I ever could the old way.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "Pathwork gives me the time to focus on strategy and custom analysis, allowing me to deliver far more value and influence on each case than I ever could the old way."
+            }
+          ]
+        },
+        {
+          "speaker": "Adnan Raja, SVP of Digital Transformation at Highland Capital Brokerage",
+          "quote": "For us, this was about putting the right infrastructure in place early, so we’re not rebuilding processes every time the business grows.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "For us, this was about putting the right infrastructure in place early, so we’re not rebuilding processes every time the business grows."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "American Family Ventures",
+            "speaker": "American Family Ventures",
+            "speaker_role": "投资方",
+            "rationale": "投资Pathwork以推动其人寿与健康保险分销的现代化，看好其AI原生平台对经纪人和承运人的价值。",
+            "quote": "American Family Ventures is excited to announce our seed investment into Pathwork, an AI-native platform purpose-built to modernize life and health insurance distribution for brokers and carriers!",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-4efe7c4a106a5862",
+                "quote": "American Family Ventures is excited to announce our seed investment into Pathwork, an AI-native platform purpose-built to modernize life and health insurance distribution for brokers and carriers!"
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是AI能否在高度依赖人工判断的保险核保与分销工作流中实现可量化的效率提升。本轮融资的已验证信号包括：Pathwork已签约超过65家经纪商，为客户创造了约1,400天的生产力节约和8-12%的盈利能力提升，并在头部客户Highland Capital Brokerage处实现了近三年核保产能的回收。这些数据表明产品已嵌入核心工作流并产生可衡量的ROI，而非停留在试点阶段。但判断的证据边界在于：这些指标均来自公司官方披露和单一深度案例，缺乏独立第三方验证；且融资额仅为350万美元种子轮，尚未证明其模式在大规模多承运人生态中的可复制性。",
+        "validated_signals": [
+          "已签约超过65家经纪商，包括Highland Capital Brokerage、NFP、Hilb等全国性平台",
+          "为客户创造约1,400天生产力节约，早期研究显示客户盈利能力提升8-12%",
+          "在Highland Capital Brokerage实现近三年核保产能回收，年度处理约182,000页APS",
+          "产品已嵌入客户日常工作流，从APS上传到生成摘要仅需数分钟"
+        ],
+        "risks": [
+          "所有效能数据均来自公司官方披露和单一深度案例，缺乏独立第三方审计或跨客户统计验证，实际ROI可能因客户规模和案件复杂度而异。",
+          "种子轮融资额仅350万美元，团队规模和工程资源有限，在面向承运人的下一阶段扩展中可能面临产品化和集成挑战。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "保险科技（Insurtech）"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Case Underwriter",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "APS files are uploaded into Pathwork Summaries are generated in minutes – even for large files Underwriters validate key findings by clicking directly into source pages Chat-with-files enables targeted searches across thousands of pages"
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "PreQual Manager",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "Pathwork and NGL Insurance Company (NGL), in partnership with LifeCare Assurance Company, announced the launch of PreQual Manager, an AI-powered inbox that enables underwriting teams to respond to broker inquiries faster and more consistently."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Medical Data on Demand",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "Pathwork launched a first-of-its-kind offering that gives life insurance brokers on-demand access to the prescription and medical claims data used in modern underwriting."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ian Levinsky",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5827527c9c624d25",
+              "quote": "Ian Levinsky CEO & Co-Founder"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Blake Butterworth",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5827527c9c624d25",
+              "quote": "Blake Butterworth CTO & Co-Founder"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Costanoa Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bd630ac44028d8a",
+              "quote": "our $3.5M seed investment round led by Costanoa Ventures"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Logos Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bd630ac44028d8a",
+              "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "American Family Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bd630ac44028d8a",
+              "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Meridian Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-1bd630ac44028d8a",
+              "quote": "joined by Logos Fund, American Family Ventures, Meridian Ventures, and a number of prominent insurtech and vertical SaaS angel investors"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Highland Capital Brokerage",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-9dbdb1b3246dfc3a",
+              "quote": "Customer: Highland Capital Brokerage Industry: Life, Disability, Long-Term Care & Annuity Distribution Primary Use Case: APS summarization, underwriting support, case validation Impact: 3 years of underwriting capacity reclaimed"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "NFP (LTCI Partners)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "Pathwork helps LTCI Partners, a division of NFP, an Aon company, simplify the complexities of long-term care sales by thinking like an underwriter, shaving days off response times"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Brokers Central",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "For Brokers Central, Pathwork removes the busywork and delivers a complete, underwriter-ready story in minutes—helping agents move faster, communicate better, and deliver higher placement rates."
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "MERIT Insurance",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "Pathwork’s AI Underwriter has allowed MERIT to grow revenue by taking on more cases, even the most difficult"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Life Quotes",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0bdf3a9f2f593f6d",
+              "quote": "Using Pathwork’s AI Underwriter, Life Quotes has removed “Let me research that for you” from agent vocabulary, helping them submit applications during the first phone call."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-986ac3a819d23388",
+          "date": "2025-09-10",
+          "title": "AI驱动的保险科技公司Pathwork获350万美元种子轮融资",
+          "amount": "$3.5m",
+          "source_refs": [
+            "SA-12008c6dd1444dd9"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-1bd630ac44028d8a",
+          "source_url": "https://www.pathwork.com/resources/announcing-pathworks-seed-investment",
+          "title": "Announcing Pathwork’s Seed Investment led by Costanoa Ventures",
+          "publisher": "pathwork.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-28T09:26:44.819Z",
+          "content_hash": "e75d7d220f4a2887",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-0bdf3a9f2f593f6d",
+          "source_url": "https://www.pathwork.com/resources",
+          "title": "Resources",
+          "publisher": "pathwork.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-28T09:26:49.008Z",
+          "content_hash": "8a94e278f0e13520",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-5827527c9c624d25",
+          "source_url": "https://www.pathwork.com/about-us",
+          "title": "About Us",
+          "publisher": "pathwork.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-28T09:26:52.490Z",
+          "content_hash": "2145b8707d982803",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-4efe7c4a106a5862",
+          "source_url": "https://www.linkedin.com/posts/american-family-ventures_announcing-pathworks-seed-investment-led-activity-7371217934784008192-Oye4",
+          "title": "American Family Ventures is excited to announce our seed investment into Pathwork, an AI-native platform purpose-built to modernize life and health insurance distribution for brokers and carriers! | American Family Ventures",
+          "publisher": "linkedin.com",
+          "source_class": "secondary",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-28T09:26:53.194Z",
+          "content_hash": "f85052fe97ebf182",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-9dbdb1b3246dfc3a",
+          "source_url": "https://www.pathwork.com/resources/how-highland-reclaimed-three-years-of-underwriting-capacity",
+          "title": "How Highland Capital Brokerage Reclaimed Three Years of Underwriting Capacity with Pathwork",
+          "publisher": "pathwork.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-28T09:27:24.040Z",
+          "content_hash": "9c2d23ccdd8620e3",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-28T09:28:04.674Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-28T09:28:04.674Z"
+    },
     {
       "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-33720a6e75d508b6",
@@ -1791,14 +2432,92 @@
     },
     {
       "event_id": "EV-986ac3a819d23388",
-      "company_name": "",
-      "status": "blocked",
-      "problems": [
-        "subject_company_unresolved"
+      "company_name": "Pathwork",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"AI-driven insurtech company Pathwork raises $3.5m in seed funding\" funding company investors product",
+        "\"Pathwork\" \"$3.5m\" funding investors round",
+        "\"Pathwork\" product customers case study",
+        "\"Pathwork\" \"AI-driven insurtech company Pathwork raises $3.5m in seed funding\" competitors product use case",
+        "\"Pathwork\" \"$3.5m\" investor quote why invested",
+        "\"Pathwork\" \"$3.5m\" \"why we invested\" OR \"our investment\""
       ],
-      "queries": [],
-      "attempts": [],
-      "updated_at": "2026-07-28T06:28:03.899Z"
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"AI-driven insurtech company Pathwork raises $3.5m in seed funding\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"AI-driven insurtech company Pathwork raises $3.5m in seed funding\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pathwork\" \"$3.5m\" funding investors round",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pathwork\" \"$3.5m\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pathwork\" product customers case study",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pathwork\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pathwork\" \"AI-driven insurtech company Pathwork raises $3.5m in seed funding\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pathwork\" \"AI-driven insurtech company Pathwork raises $3.5m in seed funding\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pathwork\" \"$3.5m\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pathwork\" \"$3.5m\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Pathwork\" \"$3.5m\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_432"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Pathwork\" \"$3.5m\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-28T09:28:04.736Z"
     },
     {
       "event_id": "EV-eb881f5de456b59a",
@@ -1809,7 +2528,7 @@
       ],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-07-28T06:28:03.900Z"
+      "updated_at": "2026-07-28T09:28:04.736Z"
     },
     {
       "event_id": "EV-1196b80b537957f2",
@@ -1820,7 +2539,7 @@
       ],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-07-28T06:28:03.900Z"
+      "updated_at": "2026-07-28T09:28:04.736Z"
     },
     {
       "event_id": "EV-754e83c2d19005fe",

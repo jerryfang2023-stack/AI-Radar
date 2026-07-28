@@ -264,6 +264,24 @@ test("融资主体可按事件标题精确链接稳定公司实体", () => {
   assert.equal(subjectCompanyForEvent(event, [], entityIndex)?.entity_id, "EN-RUNLAYER");
 });
 
+test("融资主体可从带英文描述前缀的规范实体名中恢复公司名", () => {
+  const entities = [{
+    entity_id: "EN-PATHWORK",
+    entity_type: "organization_candidate",
+    canonical_name: "AI-driven insurtech company Pathwork",
+  }];
+  const event = {
+    display_title_zh: "AI驱动的保险科技公司Pathwork获350万美元种子轮融资",
+    action: "获种子轮融资",
+    object: "$3.5 million",
+    metrics: ["$3.5 million"],
+    entities: ["EN-PATHWORK"],
+  };
+  const company = subjectCompanyForEvent(event, entities);
+  assert.equal(company?.entity_id, "EN-PATHWORK");
+  assert.equal(company?.canonical_name, "Pathwork");
+});
+
 test("融资主体没有强主语信号时保持阻断", () => {
   const entities = [
     { entity_id: "EN-ANTHROPIC", entity_type: "organization_candidate", canonical_name: "Anthropic" },
