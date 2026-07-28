@@ -2,7 +2,7 @@
   "ok": false,
   "status": "manual_required",
   "date": "2026-07-28",
-  "generated_at": "2026-07-28T06:36:54.458Z",
+  "generated_at": "2026-07-28T06:37:58.075Z",
   "timezone": "Asia/Shanghai",
   "hermes_mode": "off",
   "hermes_write": "disabled",
@@ -224,7 +224,7 @@
       "id": "business_signals",
       "label": "Data Center V4 / Business Signals Operations",
       "schedule": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
-      "status": "warning",
+      "status": "passed",
       "evidence": {
         "activeDate": "2026-07-28",
         "generatedAt": "2026-07-28T06:20:12.943Z",
@@ -294,12 +294,12 @@
           "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30335008937",
           "localSync": {
             "available": true,
-            "clean": false,
-            "dirtyFiles": 2,
-            "ignoredReportFiles": 4,
-            "head": "313bf72acabc23d707c48b60d6149b5b6e432a2b",
+            "clean": true,
+            "dirtyFiles": 0,
+            "ignoredReportFiles": 0,
+            "head": "a731b58717217778a75b3c7da1e2afa9f0b4a304",
             "originMain": "313bf72acabc23d707c48b60d6149b5b6e432a2b",
-            "fastForwarded": true,
+            "fastForwarded": false,
             "warning": ""
           }
         },
@@ -315,9 +315,9 @@
           "healthy": true
         },
         "diagnosis": {
-          "category": "local_sync",
-          "reason": "same-date data is healthy; remaining issue is publication/local sync closure",
-          "neededAction": "repair publication/local sync closure only; do not rerun Raw/Pool/Card generation",
+          "category": "passed",
+          "reason": "same-date Data Center V4 canonical data, integrity gate, and materialization are healthy",
+          "neededAction": "none",
           "preRerunChecklist": {
             "dataCenterDate": "2026-07-28",
             "materializedEventCount": 1656,
@@ -337,16 +337,14 @@
             "missingSourceTitleTranslations": [],
             "businessPrMerged": true,
             "pagesState": "success",
-            "localDirtyFiles": 2,
-            "localFastForwarded": true
+            "localDirtyFiles": 0,
+            "localFastForwarded": false
           }
         }
       },
       "problems": [],
       "waiting": [],
-      "warnings": [
-        "local Obsidian sync may be blocked by 2 dirty file(s)"
-      ],
+      "warnings": [],
       "actions": []
     },
     {
