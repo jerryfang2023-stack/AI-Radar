@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-27T03:18:25.889Z",
-    "latestDataDate": "2026-07-27",
-    "currentDate": "2026-07-27",
-    "eventCount": 1603,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-28T05:43:43.570Z",
+    "latestDataDate": "2026-07-28",
+    "currentDate": "2026-07-28",
+    "eventCount": 1656,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-1706429cbf67f1c9",
@@ -23,19 +23,22 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-a9b7129f547eef64",
       "EV-c480dc8fac2afae0"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-26",
-    "lastSeen": "2026-07-27",
+    "lastSeen": "2026-07-28",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
-      "productsServices": [],
+      "productsServices": [
+        "EV-a9b7129f547eef64"
+      ],
       "hardware": [],
       "organizationPeople": [],
       "other": [
@@ -43,6 +46,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-a9b7129f547eef64",
+        "dataDate": "2026-07-28",
+        "date": "2026-07-27",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "OpenAI 在都柏林设立欧盟总部，两年内新增 250 个岗位",
+        "displayTags": [],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-1706429cbf67f1c9"
+        ]
+      },
       {
         "id": "EV-c480dc8fac2afae0",
         "dataDate": "2026-07-27",

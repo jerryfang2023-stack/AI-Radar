@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-28T05:43:43.570Z",
+    "latestDataDate": "2026-07-28",
+    "currentDate": "2026-07-28",
+    "eventCount": 1656,
+    "quarantinedEventCount": 13
+  },
+  "entity": {
+    "id": "EN-b26b96e75e6b2e5a",
+    "name": "HP Inc. Launches Frontier Strategic",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-9793aeed336b1357"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-28",
+    "lastSeen": "2026-07-28",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [
+        "EV-9793aeed336b1357"
+      ],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-9793aeed336b1357",
+        "dataDate": "2026-07-28",
+        "date": "2026-06-28",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "惠普公司与OpenAI启动Frontier战略合作，推动客户体验升级与内部运营转型",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b26b96e75e6b2e5a",
+          "EN-7d3194f79e645c42"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-ac124e89582b13f1",
+      "eventId": "EV-9793aeed336b1357",
+      "dataDate": "2026-07-28",
+      "date": "2026-06-28",
+      "title": "惠普公司与OpenAI启动Frontier战略合作，推动客户体验升级与内部运营转型",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "HP Inc. Launches Frontier Strategic",
+      "vendor": "OpenAI",
+      "industry": "未披露",
+      "useCase": "with OpenAI to Fuel Customer-Facing Experiences and Transform Internal Operations | HP® Official Site",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "PALO ALTO, CA, June 28, 2026 — Today, HP Inc. (NYSE: HPQ) announced the launch of a strategic partnership with OpenAI, integrating its Frontier platform into HP’s global efforts to shape the Future of Work through enhanced customer-facing experiences and accelerated transformation across its operations."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://hp.com/us-en/newsroom/press-releases/2026/open-ai-partnership.html",
+      "entityIds": [
+        "EN-b26b96e75e6b2e5a",
+        "EN-7d3194f79e645c42"
+      ]
+    }
+  ],
+  "hardware": []
+}

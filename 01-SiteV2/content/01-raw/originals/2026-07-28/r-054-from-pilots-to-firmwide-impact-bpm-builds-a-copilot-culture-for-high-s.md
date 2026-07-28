@@ -1,0 +1,458 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-054
+title: "From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work | Microsoft Customer Stories"
+title_zh: "从试点到全公司影响：BPM 为高风险工作构建 Copilot 文化"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.microsoft.com/en/customers/story/26531-bpm-microsoft-365-copilot"
+canonical_url: "https://microsoft.com/en/customers/story/26531-bpm-microsoft-365-copilot"
+source_name: "keyword search / Anysearch"
+source_type: product
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-28T05:39:42.133Z
+language: mixed
+full_text_hash: e669e765190a3e8b
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-28/r-054-from-pilots-to-firmwide-impact-bpm-builds-a-copilot-culture-for-high-s.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-28/r-054-from-pilots-to-firmwide-impact-bpm-builds-a-copilot-culture-for-high-s.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":13562,"paragraph_count":89,"sentence_count":95,"boilerplate_hits":1,"symbol_ratio":0.0013,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 13562
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e669e765190a3e8b","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 7cbb4471aa46645d
+content_hash: e669e765190a3e8b
+semantic_hash: 00ffbe9f108286f1
+duplicate_of: ""
+first_seen_at: "2026-07-28T05:39:42.133Z"
+last_seen_at: 2026-07-28T05:39:42.133Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Google","Microsoft","Apple"],"products":["Copilot","agents","agent"],"people":[],"industries":["企业服务"],"roles":["CIO / IT 负责人","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理"],"business_actions":["合作 / 联盟"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["8b","319845","0b","97","62b","10","1822b","64"],"quotes":["startup friction","We couldn’t scale AI responsibly without the governance and consistency Microsoft provides.","about 30 messages,","by the time I get to them…there’ll be another 15,","the stakes are real"]}
+evidence_seed: {"company_actions":["Busy season doesn’t wait Busy season at BPM isn’t a calendar event, it’s lived pressure.","For Tax teams, it’s a compressed window where engagement teams must rebuild context fast: What happened last year?"],"case_details":["From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work | Microsoft Customer Stories This is the Trace Id: f8b319845c0b97ec62b10d1822b64ae3 5/13/2026 # From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work Share the story Busy season at BPM ... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing","5/13/2026 From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work</h1> \"> From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work Share the story Share this story LinkedIn Facebook WhatsApp Email Busy season at BPM puts intense pressure on Tax and Assurance teams to rebuild context quickly, manage message overload, and deliver accurate work at scale, without sacrificing trust, judgment, or client experience.","With Copilot and agents, BPM improved clarity amid message overload, reduced startup friction, and accelerated high stakes work freeing time for higher value advisory work."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":["BPM adopted Microsoft 365 Copilot to embed AI directly into daily workflows and built agents to apply firm expertise at scale, supporting planning, quality checks, and decision making while maintaining enterprise grade security and governance."]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work | Microsoft Customer Stories This is the Trace Id: f8b319845c0b97ec62b10d1822b64ae3 5/13/2026 # From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work Share the story Busy season at BPM ... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"5/13/2026 From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work</h1> \"> From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work Share the story Share this story LinkedIn Facebook WhatsApp Email Busy season at BPM puts intense pressure on Tax and Assurance teams to rebuild context quickly, manage message overload, and deliver accurate work at scale, without sacrificing trust, judgment, or client experience.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"BPM adopted Microsoft 365 Copilot to embed AI directly into daily workflows and built agents to apply firm expertise at scale, supporting planning, quality checks, and decision making while maintaining enterprise grade security and governance.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"With Copilot and agents, BPM improved clarity amid message overload, reduced startup friction, and accelerated high stakes work freeing time for higher value advisory work.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Busy season doesn’t wait Busy season at BPM isn’t a calendar event, it’s lived pressure.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"For Tax teams, it’s a compressed window where engagement teams must rebuild context fast: What happened last year?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-28T05:39:42.133Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work | Microsoft Customer Stories
+
+## clean_text
+
+5/13/2026
+From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work</h1> "> From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work
+Share the story
+Share this story
+LinkedIn
+Facebook
+WhatsApp
+Email
+Busy season at BPM puts intense pressure on Tax and Assurance teams to rebuild context quickly, manage message overload, and deliver accurate work at scale, without sacrificing trust, judgment, or client experience.
+BPM adopted Microsoft 365 Copilot to embed AI directly into daily workflows and built agents to apply firm expertise at scale, supporting planning, quality checks, and decision making while maintaining enterprise grade security and governance.
+With Copilot and agents, BPM improved clarity amid message overload, reduced startup friction, and accelerated high stakes work freeing time for higher value advisory work.
+Busy season doesn’t wait
+Busy season at BPM isn’t a calendar event, it’s lived pressure. For Tax teams, it’s a compressed window where engagement teams must rebuild context fast: What happened last year? What changed? What decisions could impact a filing position? As Carolyn Cotter, Managing Director of Tax Operations, explains, “in busy season, so much of the work is context building. Getting up to speed quickly on each client and that upfront ramp can be a lot of work in a very compressed period.” Microsoft 365 Copilot helps teams get oriented faster: summarizing what to look for and reducing the “startup friction” when every moment counts.
+“We couldn’t scale AI responsibly without the governance and consistency Microsoft provides.”
+Moe Asgharnia, Chief Information Officer, BPM
+At the same time, leaders face constant context switching. Tony Gales, Partner, Tax, describes mornings with “about 30 messages,” and “by the time I get to them…there’ll be another 15,” with Teams layered on top.
+BPM looked for leverage where work already happens: in Word, Outlook, Teams, and the workflows that move client work forward. They didn’t want a standalone AI tool that forced people to stop, switch, and retrain. They wanted AI embedded in daily work, at firm scale.
+High stakes. Higher standards
+BPM’s work is built on credibility. As CIO Moe Asgharnia explains, “the stakes are real” because the work impacts financial reporting, compliance, and downstream client decisions. In that environment, accuracy isn’t optional. “Mostly right is still wrong.”
+Before BPM scaled AI beyond pilots, the firm put clear governance in place. Leaders established an AI Acceptable Use Policy that colleagues were required to read and acknowledge, along with guidance on which AI-enabled tools were approved for work, and which were restricted.
+But BPM also recognized that restriction alone was only half of the equation. Without a strong, approved alternative that fit how professionals actually work, policies and reactive controls wouldn’t fully address day-to-day demand for AI—especially under busy-season pressure.
+“Microsoft gave us the best of both worlds: leading AI technology with the enterprise governance and data protection we need.”
+Vandy Hamidi, Chief Information Security Officer, BPM
+BPM LLP: Copilot reduces friction for tax teams
+Three-panel infographic showing the challenge, the stakes, and the solution for BPM LLP. Panel 1: Tax busy season creates urgent client demand. Panel 2: High-stakes work requires precision and high standards. Panel 3: Microsoft 365 Copilot reduces friction, freeing teams to focus on expertise.
+More about this diagram
+Firmwide Copilot adoption (all employees)
+AI embedded directly in daily workflows
+That bar became harder to maintain as BPM significantly scaled over the past five years, growing headcount materially and increasing revenue by roughly 50% while continuing to climb national rankings. To scale without diluting quality, pilots weren’t enough. AI had to be standardized, governed, and intentional.
+To enable safe and responsible AI usage at scale, BPM chose to standardize on Microsoft 365 Copilot as a trusted, enterprise-grade alternative to consumer AI tools. Firmwide licensing ensured colleagues had access to a sanctioned AI experience—controlled by the organization and aligned with BPM’s security, privacy, and governance requirements. “We couldn’t scale AI responsibly without the governance and consistency Microsoft provides,” says Moe Asgharnia.
+“We didn’t roll Copilot out in phases; we licensed everyone in the firm.”
+Carl Sorboro, Chief Operating Officer, BPM
+BPM LLP innovating for firmwide impact
+Four-panel infographic showing how BPM innovates with Copilot. Panel 1: Leading AI technology with enterprise governance and data protection. Panel 2: Firmwide agents licensed to everyone. Panel 3: Respects existing roles and permissions. Panel 4: Impact.
+More about this diagram
+Security and trust were non‑negotiable. CISO Vandy Hamidi sees security not as a gatekeeper, but as an enabler of the firm’s success. For BPM, adopting AI safely mattered as much as adopting it at all, especially as the firm moved from pilots to firmwide agents.
+Microsoft provided leading AI capability alongside enterprise protections—data not used for training, not retained, and governed—with identity and access controls that fit BPM’s existing Microsoft infrastructure.
+BPM also applied Microsoft-recommended best practices to reduce the risk of Copilot surfacing confidential or inappropriate information, ensuring Copilot respects the same access controls and permissions as existing firm systems, people only see what they already have rights to access. “Microsoft gave us the best of both worlds: leading AI technology with the enterprise governance and data protection we need,” Hamidi says.
+For COO Carl Sorboro, the fit felt natural: “Copilot fit with how we already work and who we are as a firm.”
+From platform decision to firm‑wide practice
+To enable safe, responsible AI usage at scale, BPM chose to standardize on Microsoft 365 Copilot as a trusted, enterprise-grade alternative to consumer AI tools . Firmwide licensing ensured colleagues had access to a sanctioned AI experience—controlled by the organization and aligned to BPM’s security, privacy, and governance requirements—instead of creating a patchwork of unmanaged tools.
+Choosing Microsoft was only the start. BPM made a deliberate decision to scale.
+That shift came with structured enablement—not just licensing. BPM invested in role-based training and guidance focused on effective, responsible Copilot use, reinforcing that AI could accelerate work without replacing professional judgment or accountability.
+Sorboro explains: “We didn’t roll Copilot out in phases; we licensed everyone in the firm.” To accelerate adoption, BPM partnered with Reply, which delivered role‑based training and tied Copilot directly to everyday workflows in Word, Excel, Outlook, and Teams—making it feel like a habit, not a tool. Behind the scenes, BPM’s IT team treated Copilot as a firmwide governance program—putting guardrails, operating discipline, and adoption rhythms in place so the firm could use AI responsibly at scale, not just roll it out.
+From the delivery side, Scott Keenan, Director of IT Delivery and Operations, reinforces the lesson: with a small IT team, “you cannot do it alone.” Practice leaders, internal champions, and a trusted partner were essential to scaling responsibly across the firm.
+“Nine times out of ten, I’m using Copilot to refine my messaging—so it says exactly what I want it to say.”
+Tony Gales, Partner, Tax, BPM
+BPM LLP: Scaling AI where accuracy matters most
+Infographic showing how BPM scales AI with Microsoft 365 Copilot. Left: Risk of compressed timelines, control via governance and standardization, outcome of reduced friction. Right: Firmwide agents licensed to all, tasks accelerated from weeks to one day.
+More about this diagram
+Faster first drafts; same review standards
+Faster busy‑season onboarding and context rebuild
+What “AI in the flow of work” looks like in practice
+For professionals, the difference is staying in flow, without breaking concentration or context.
+“It’s no longer about what a person can do at a job. It’s what a person can do with the technology at that job. That’s where true productivity comes from.”
+Scott Keenan, Director of IT Delivery and Operations, BPM
+According to Gales, the impact isn’t just speed; it’s clarity. Copilot helps him make sense of constant inbound communication across email and Teams, surfacing what matters and what needs action. He uses it daily to refine his language, pressure‑test tone, and ensure his thinking comes through clearly before messages go out. The result is fewer missed signals, stronger preparation for client discussions, and more mental space for advisory work that depends on judgment, not reaction. “Nine times out of ten, I’m using Copilot to refine my messaging—so it says exactly what I want it to say,” he says.
+Keenan connects that clarity to productivity at scale. “It’s no longer about what a person can do at a job. It’s what a person can do with the technology at that job. That’s where true productivity comes from.” In his own work, tasks that once took days or weeks are now completed in a single day, with the same (or higher) quality. Copilot accelerates the first pass and sharpens direction early, while BPM maintains the same review discipline and accountability for final work.
+When Copilot isn’t enough, BPM turns to agents
+As BPM scaled usage, some problems couldn’t be solved with prompts alone. Teams needed guidance baked into the work itself.
+In Tax, that’s where Copilot agents come in.
+Cotter describes agents to turn BPM’s hard‑won expertise into everyday support. One agent helps teams evaluate a tax return against BPM’s own planning frameworks, surfacing potential opportunities earlier in the process. Staff who once wouldn’t engage in tax planning until manager level now take a first pass, learning to think analytically sooner in their careers.
+Another agent acts as a quality checkpoint. Built with clear criteria from subject‑matter experts, it flags when work requires a second set of eyes, from national tax or estate and trust specialists, before it moves forward. That removes guesswork, reduces risk, and creates a clear record of due diligence. These agents don’t replace professional judgment, rather they standardize the right questions, flag potential risk, and guide escalation when specialist review is needed at BPM.
+For Cotter, the value isn’t automation for its own sake. It’s confidence. “It lowers the barrier to asking the right questions,” she explains, helping people move faster without cutting corners, and making sure the firm’s highest‑stakes work stays defensible as BPM scales.
+The humans behind the transformation
+At BPM, Copilot didn’t scale because it was interesting. It scaled because leaders treated it like a change in how the firm works, not another tool to ship.
+For Keenan, adoption is the whole job. With a small team supporting a firm of roughly 1,300 people, he’s blunt about what fails: “You can implement any kind of tool but if people are not using it, it doesn’t matter.” He sees Copilot to remove friction without replacing judgment and he uses it the same way. Work that once took “days to weeks,” like drafting policies and guidance, now happens “in a day,” with the same—or higher—quality.
+If Keenan represents scale, Cotter represents culture. For her the real win is human: using AI to help early‑career staff build a more analytical skill set—elevating people to higher‑value work rather than replacing them.
+Together BPM leaders turned Copilot from pilots into a firmwide habit—one leader focused on making it usable at scale, the other focused on making it meaningful when the work is at its hardest.
+Discover more about BPM on Facebook , Instagram , LinkedIn , and YouTube .
+“It lowers the barrier to asking the right questions.”
+Carolyn Cotter, Managing Director of Tax Operations, BPM
+Discover more details
+CUSTOMER
+BPM
+PARTNER
+Reply
+PRODUCTS
+Microsoft 365 Copilot
+Microsoft 365
+SERVICES AND SUPPORT
+ORGANIZATION SIZE
+10,000+ employees
+COUNTRY/REGION
+United States
+BUSINESS NEED
+INDUSTRY
+Accounting and Tax Services
+Share the story
+Explore related stories</h2> "> Explore related stories
+Stories in this industry
+Stories about this customer
+"Previous"
+"Next"
+Showing 32 of 98 categories
+Showing 1-2 of 2 slides Previous slide Next slide
+We are Microsoft
+Empowering others
+Our mission is to empower every person and every organization on the planet to achieve more.
+Microsoft
+Apple
+Google
+Label
+We are Microsoft
+Empowering others
+Our mission is to empower every person and every organization on the planet to achieve more.
+Label
+Back to carousel navigation controls
+Load more
+Take the next step
+Fuel innovation with Microsoft</h2> "> Fuel innovation with Microsoft
+Explore more customer stories</h3> ">
+Explore more customer stories
+Find out how customers are achieving more with Microsoft products and solutions.
+Search all stories
+Talk to an expert about custom solutions</h3> ">
+Talk to an expert about custom solutions
+Let us help you create customized solutions and achieve your unique business goals.
+Contact Sales
+Microsoft 365
+Dynamics 365
+Microsoft Power Platform
+Microsoft Teams
+Microsoft Security
+Nonprofit
+Transform work with Microsoft AI</h3> ">
+Transform work with Microsoft AI
+Bring intelligence into the flow of work and help your organization achieve its goals with secure, scalable AI solutions.
+Explore AI solutions
+Follow Microsoft
+
+## full_text
+
+5/13/2026
+From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work</h1> "> From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work
+Share the story
+Share this story
+LinkedIn
+Facebook
+WhatsApp
+Email
+Busy season at BPM puts intense pressure on Tax and Assurance teams to rebuild context quickly, manage message overload, and deliver accurate work at scale, without sacrificing trust, judgment, or client experience.
+BPM adopted Microsoft 365 Copilot to embed AI directly into daily workflows and built agents to apply firm expertise at scale, supporting planning, quality checks, and decision making while maintaining enterprise grade security and governance.
+With Copilot and agents, BPM improved clarity amid message overload, reduced startup friction, and accelerated high stakes work freeing time for higher value advisory work.
+Busy season doesn’t wait
+Busy season at BPM isn’t a calendar event, it’s lived pressure. For Tax teams, it’s a compressed window where engagement teams must rebuild context fast: What happened last year? What changed? What decisions could impact a filing position? As Carolyn Cotter, Managing Director of Tax Operations, explains, “in busy season, so much of the work is context building. Getting up to speed quickly on each client and that upfront ramp can be a lot of work in a very compressed period.” Microsoft 365 Copilot helps teams get oriented faster: summarizing what to look for and reducing the “startup friction” when every moment counts.
+“We couldn’t scale AI responsibly without the governance and consistency Microsoft provides.”
+Moe Asgharnia, Chief Information Officer, BPM
+At the same time, leaders face constant context switching. Tony Gales, Partner, Tax, describes mornings with “about 30 messages,” and “by the time I get to them…there’ll be another 15,” with Teams layered on top.
+BPM looked for leverage where work already happens: in Word, Outlook, Teams, and the workflows that move client work forward. They didn’t want a standalone AI tool that forced people to stop, switch, and retrain. They wanted AI embedded in daily work, at firm scale.
+High stakes. Higher standards
+BPM’s work is built on credibility. As CIO Moe Asgharnia explains, “the stakes are real” because the work impacts financial reporting, compliance, and downstream client decisions. In that environment, accuracy isn’t optional. “Mostly right is still wrong.”
+Before BPM scaled AI beyond pilots, the firm put clear governance in place. Leaders established an AI Acceptable Use Policy that colleagues were required to read and acknowledge, along with guidance on which AI-enabled tools were approved for work, and which were restricted.
+But BPM also recognized that restriction alone was only half of the equation. Without a strong, approved alternative that fit how professionals actually work, policies and reactive controls wouldn’t fully address day-to-day demand for AI—especially under busy-season pressure.
+“Microsoft gave us the best of both worlds: leading AI technology with the enterprise governance and data protection we need.”
+Vandy Hamidi, Chief Information Security Officer, BPM
+BPM LLP: Copilot reduces friction for tax teams
+Three-panel infographic showing the challenge, the stakes, and the solution for BPM LLP. Panel 1: Tax busy season creates urgent client demand. Panel 2: High-stakes work requires precision and high standards. Panel 3: Microsoft 365 Copilot reduces friction, freeing teams to focus on expertise.
+More about this diagram
+Firmwide Copilot adoption (all employees)
+AI embedded directly in daily workflows
+That bar became harder to maintain as BPM significantly scaled over the past five years, growing headcount materially and increasing revenue by roughly 50% while continuing to climb national rankings. To scale without diluting quality, pilots weren’t enough. AI had to be standardized, governed, and intentional.
+To enable safe and responsible AI usage at scale, BPM chose to standardize on Microsoft 365 Copilot as a trusted, enterprise-grade alternative to consumer AI tools. Firmwide licensing ensured colleagues had access to a sanctioned AI experience—controlled by the organization and aligned with BPM’s security, privacy, and governance requirements. “We couldn’t scale AI responsibly without the governance and consistency Microsoft provides,” says Moe Asgharnia.
+“We didn’t roll Copilot out in phases; we licensed everyone in the firm.”
+Carl Sorboro, Chief Operating Officer, BPM
+BPM LLP innovating for firmwide impact
+Four-panel infographic showing how BPM innovates with Copilot. Panel 1: Leading AI technology with enterprise governance and data protection. Panel 2: Firmwide agents licensed to everyone. Panel 3: Respects existing roles and permissions. Panel 4: Impact.
+More about this diagram
+Security and trust were non‑negotiable. CISO Vandy Hamidi sees security not as a gatekeeper, but as an enabler of the firm’s success. For BPM, adopting AI safely mattered as much as adopting it at all, especially as the firm moved from pilots to firmwide agents.
+Microsoft provided leading AI capability alongside enterprise protections—data not used for training, not retained, and governed—with identity and access controls that fit BPM’s existing Microsoft infrastructure.
+BPM also applied Microsoft-recommended best practices to reduce the risk of Copilot surfacing confidential or inappropriate information, ensuring Copilot respects the same access controls and permissions as existing firm systems, people only see what they already have rights to access. “Microsoft gave us the best of both worlds: leading AI technology with the enterprise governance and data protection we need,” Hamidi says.
+For COO Carl Sorboro, the fit felt natural: “Copilot fit with how we already work and who we are as a firm.”
+From platform decision to firm‑wide practice
+To enable safe, responsible AI usage at scale, BPM chose to standardize on Microsoft 365 Copilot as a trusted, enterprise-grade alternative to consumer AI tools . Firmwide licensing ensured colleagues had access to a sanctioned AI experience—controlled by the organization and aligned to BPM’s security, privacy, and governance requirements—instead of creating a patchwork of unmanaged tools.
+Choosing Microsoft was only the start. BPM made a deliberate decision to scale.
+That shift came with structured enablement—not just licensing. BPM invested in role-based training and guidance focused on effective, responsible Copilot use, reinforcing that AI could accelerate work without replacing professional judgment or accountability.
+Sorboro explains: “We didn’t roll Copilot out in phases; we licensed everyone in the firm.” To accelerate adoption, BPM partnered with Reply, which delivered role‑based training and tied Copilot directly to everyday workflows in Word, Excel, Outlook, and Teams—making it feel like a habit, not a tool. Behind the scenes, BPM’s IT team treated Copilot as a firmwide governance program—putting guardrails, operating discipline, and adoption rhythms in place so the firm could use AI responsibly at scale, not just roll it out.
+From the delivery side, Scott Keenan, Director of IT Delivery and Operations, reinforces the lesson: with a small IT team, “you cannot do it alone.” Practice leaders, internal champions, and a trusted partner were essential to scaling responsibly across the firm.
+“Nine times out of ten, I’m using Copilot to refine my messaging—so it says exactly what I want it to say.”
+Tony Gales, Partner, Tax, BPM
+BPM LLP: Scaling AI where accuracy matters most
+Infographic showing how BPM scales AI with Microsoft 365 Copilot. Left: Risk of compressed timelines, control via governance and standardization, outcome of reduced friction. Right: Firmwide agents licensed to all, tasks accelerated from weeks to one day.
+More about this diagram
+Faster first drafts; same review standards
+Faster busy‑season onboarding and context rebuild
+What “AI in the flow of work” looks like in practice
+For professionals, the difference is staying in flow, without breaking concentration or context.
+“It’s no longer about what a person can do at a job. It’s what a person can do with the technology at that job. That’s where true productivity comes from.”
+Scott Keenan, Director of IT Delivery and Operations, BPM
+According to Gales, the impact isn’t just speed; it’s clarity. Copilot helps him make sense of constant inbound communication across email and Teams, surfacing what matters and what needs action. He uses it daily to refine his language, pressure‑test tone, and ensure his thinking comes through clearly before messages go out. The result is fewer missed signals, stronger preparation for client discussions, and more mental space for advisory work that depends on judgment, not reaction. “Nine times out of ten, I’m using Copilot to refine my messaging—so it says exactly what I want it to say,” he says.
+Keenan connects that clarity to productivity at scale. “It’s no longer about what a person can do at a job. It’s what a person can do with the technology at that job. That’s where true productivity comes from.” In his own work, tasks that once took days or weeks are now completed in a single day, with the same (or higher) quality. Copilot accelerates the first pass and sharpens direction early, while BPM maintains the same review discipline and accountability for final work.
+When Copilot isn’t enough, BPM turns to agents
+As BPM scaled usage, some problems couldn’t be solved with prompts alone. Teams needed guidance baked into the work itself.
+In Tax, that’s where Copilot agents come in.
+Cotter describes agents to turn BPM’s hard‑won expertise into everyday support. One agent helps teams evaluate a tax return against BPM’s own planning frameworks, surfacing potential opportunities earlier in the process. Staff who once wouldn’t engage in tax planning until manager level now take a first pass, learning to think analytically sooner in their careers.
+Another agent acts as a quality checkpoint. Built with clear criteria from subject‑matter experts, it flags when work requires a second set of eyes, from national tax or estate and trust specialists, before it moves forward. That removes guesswork, reduces risk, and creates a clear record of due diligence. These agents don’t replace professional judgment, rather they standardize the right questions, flag potential risk, and guide escalation when specialist review is needed at BPM.
+For Cotter, the value isn’t automation for its own sake. It’s confidence. “It lowers the barrier to asking the right questions,” she explains, helping people move faster without cutting corners, and making sure the firm’s highest‑stakes work stays defensible as BPM scales.
+The humans behind the transformation
+At BPM, Copilot didn’t scale because it was interesting. It scaled because leaders treated it like a change in how the firm works, not another tool to ship.
+For Keenan, adoption is the whole job. With a small team supporting a firm of roughly 1,300 people, he’s blunt about what fails: “You can implement any kind of tool but if people are not using it, it doesn’t matter.” He sees Copilot to remove friction without replacing judgment and he uses it the same way. Work that once took “days to weeks,” like drafting policies and guidance, now happens “in a day,” with the same—or higher—quality.
+If Keenan represents scale, Cotter represents culture. For her the real win is human: using AI to help early‑career staff build a more analytical skill set—elevating people to higher‑value work rather than replacing them.
+Together BPM leaders turned Copilot from pilots into a firmwide habit—one leader focused on making it usable at scale, the other focused on making it meaningful when the work is at its hardest.
+Discover more about BPM on Facebook , Instagram , LinkedIn , and YouTube .
+“It lowers the barrier to asking the right questions.”
+Carolyn Cotter, Managing Director of Tax Operations, BPM
+Discover more details
+CUSTOMER
+BPM
+PARTNER
+Reply
+PRODUCTS
+Microsoft 365 Copilot
+Microsoft 365
+SERVICES AND SUPPORT
+ORGANIZATION SIZE
+10,000+ employees
+COUNTRY/REGION
+United States
+BUSINESS NEED
+INDUSTRY
+Accounting and Tax Services
+Share the story
+Explore related stories</h2> "> Explore related stories
+Stories in this industry
+Stories about this customer
+"Previous"
+"Next"
+Showing 32 of 98 categories
+Showing 1-2 of 2 slides Previous slide Next slide
+We are Microsoft
+Empowering others
+Our mission is to empower every person and every organization on the planet to achieve more.
+Microsoft
+Apple
+Google
+Label
+We are Microsoft
+Empowering others
+Our mission is to empower every person and every organization on the planet to achieve more.
+Label
+Back to carousel navigation controls
+Load more
+Take the next step
+Fuel innovation with Microsoft</h2> "> Fuel innovation with Microsoft
+Explore more customer stories</h3> ">
+Explore more customer stories
+Find out how customers are achieving more with Microsoft products and solutions.
+Search all stories
+Talk to an expert about custom solutions</h3> ">
+Talk to an expert about custom solutions
+Let us help you create customized solutions and achieve your unique business goals.
+Contact Sales
+Microsoft 365
+Dynamics 365
+Microsoft Power Platform
+Microsoft Teams
+Microsoft Security
+Nonprofit
+Transform work with Microsoft AI</h3> ">
+Transform work with Microsoft AI
+Bring intelligence into the flow of work and help your organization achieve its goals with secure, scalable AI solutions.
+Explore AI solutions
+Follow Microsoft
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 94
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":13562,"paragraph_count":89,"sentence_count":95,"boilerplate_hits":1,"symbol_ratio":0.0013,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work | Microsoft Customer Stories This is the Trace Id: f8b319845c0b97ec62b10d1822b64ae3 5/13/2026 # From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work Share the story Busy season at BPM ... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   5/13/2026 From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work</h1> "> From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work Share the story Share this story LinkedIn Facebook WhatsApp Email Busy season at BPM puts intense pressure on Tax and Assurance teams to rebuild context quickly, manage message overload, and deliver accurate work at scale, without sacrificing trust, judgment, or client experience.
+
+3. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=high
+   BPM adopted Microsoft 365 Copilot to embed AI directly into daily workflows and built agents to apply firm expertise at scale, supporting planning, quality checks, and decision making while maintaining enterprise grade security and governance.
+
+4. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   With Copilot and agents, BPM improved clarity amid message overload, reduced startup friction, and accelerated high stakes work freeing time for higher value advisory work.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Busy season doesn’t wait Busy season at BPM isn’t a calendar event, it’s lived pressure.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   For Tax teams, it’s a compressed window where engagement teams must rebuild context fast: What happened last year?
+
+## business_elements
+
+- companies: keyword search, Anysearch, Google, Microsoft, Apple
+- products: Copilot, agents, agent
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: CIO / IT 负责人, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 合作 / 联盟
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 8b, 319845, 0b, 97, 62b, 10, 1822b, 64
+- quotes: startup friction / We couldn’t scale AI responsibly without the governance and consistency Microsoft provides. / about 30 messages, / by the time I get to them…there’ll be another 15, / the stakes are real
+
+## evidence_seed
+
+- company_actions: Busy season doesn’t wait Busy season at BPM isn’t a calendar event, it’s lived pressure. / For Tax teams, it’s a compressed window where engagement teams must rebuild context fast: What happened last year?
+- case_details: From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work | Microsoft Customer Stories This is the Trace Id: f8b319845c0b97ec62b10d1822b64ae3 5/13/2026 # From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work Share the story Busy season at BPM ... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing / 5/13/2026 From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work</h1> "> From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work Share the story Share this story LinkedIn Facebook WhatsApp Email Busy season at BPM puts intense pressure on Tax and Assurance teams to rebuild context quickly, manage message overload, and deliver accurate work at scale, without sacrificing trust, judgment, or client experience. / With Copilot and agents, BPM improved clarity amid message overload, reduced startup friction, and accelerated high stakes work freeing time for higher value advisory work.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 销售 / 客服
+- risks_or_constraints: BPM adopted Microsoft 365 Copilot to embed AI directly into daily workflows and built agents to apply firm expertise at scale, supporting planning, quality checks, and decision making while maintaining enterprise grade security and governance.
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work | Microsoft Customer Stories This is the Trace Id: f8b319845c0b97ec62b10d1822b64ae3 5/13/2026 # From pilots to firmwide impact: BPM builds a Copilot culture for high-stakes work Share the story Busy season at BPM ... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

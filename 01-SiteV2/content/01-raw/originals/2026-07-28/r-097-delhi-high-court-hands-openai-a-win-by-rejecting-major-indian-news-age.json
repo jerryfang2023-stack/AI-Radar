@@ -1,0 +1,288 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-097",
+  "title": "Delhi High Court hands OpenAI a win by rejecting major Indian news agency's copyright injunction",
+  "title_zh": "德里高等法院驳回印度主要新闻机构的版权禁令，OpenAI 获胜",
+  "title_translation_status": "translated",
+  "title_translation_method": "deepseek_title_translation",
+  "title_translation_model": "deepseek-v4-flash",
+  "original_url": "https://the-decoder.com/delhi-high-court-hands-openai-a-win-by-rejecting-major-indian-news-agencys-copyright-injunction/",
+  "canonical_url": "https://the-decoder.com/delhi-high-court-hands-openai-a-win-by-rejecting-major-indian-news-agencys-copyright-injunction",
+  "source_name": "The Decoder AI News",
+  "source_type": "media",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "research_or_report",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-07-27T00:00:00.000Z",
+  "collected_at": "2026-07-28T05:39:57.763Z",
+  "language": "mixed",
+  "full_text": "Ad\nSkip to content\nDelhi High Court hands OpenAI a win by rejecting major Indian news agency's copyright injunction\nMatthias Bastian\nView the LinkedIn Profile of Matthias Bastian\nJul 27, 2026\nKey Points\nThe Delhi High Court has rejected Indian news agency ANI's request for a preliminary injunction against OpenAI over copyright infringement.\nANI couldn't prove that ChatGPT reproduced its articles verbatim. The articles it submitted as evidence were published after the models had already been trained.\nThe judge found no economic harm to ANI because OpenAI and the news agency operate in different sectors, and affirmed the public benefit of language models for education, research, and accessibility.\nIn an interim ruling, the Delhi High Court rejected a request by Indian news agency Asian News International (ANI) for a preliminary injunction against OpenAI.\nANI, one of India's largest news agencies, sued OpenAI over its use of copyrighted material for AI training and in ChatGPT's outputs. Judge Amit Bansal denied the requested relief on both claims.\nThe decision addresses memorization, Retrieval Augmented Generation (RAG) , and the legal status of AI training. AI copyright law expert Andres Guadamuz calls the ruling an important early win for OpenAI. Ad\nANI's evidence undermined its copyright claims\nANI submitted several ChatGPT outputs to the court that it claimed were substantial copies of its articles. The move backfired because OpenAI showed that the models used, GPT-4 and GPT-4o, were trained on data from April 2022 and April 2024. The articles ANI cited were mostly from August and September 2024, so they couldn't have been part of the training data. Ad\nDEC_D_Incontent-1\nThe judge's preliminary view was that the similarities came from RAG, which lets a language model retrieve online information in real time, much like a search engine. ANI hadn't addressed RAG in its filing, so the court couldn't make a final ruling on the issue. The judge said RAG-based outputs could qualify as \"communication to the public,\" a question the court will address in the main proceedings.\nANI's case got weaker from there. The agency had used adversarial prompts, explicitly telling the model to reproduce articles \"exactly.\" Even so, ANI couldn't produce a single verbatim copy. The judge found that facts in news articles in general aren't copyrightable and that reproducing topics and headlines didn't amount to direct competition with ANI in this case. Ad\nThe evidence also didn't support ANI's claim that OpenAI permanently stores training data in its models and can reproduce the agency's work verbatim on demand. But the court will revisit that question in the main proceedings.\nCourt tentatively treats AI training as fair use\nANI also failed to show that copying its work for AI training amounted to copyright infringement. Both parties agreed that OpenAI had used ANI content during training, but OpenAI argued that the material made up a tiny share of the overall dataset and that the model extracted only non-expressive elements such as grammar, syntax, and language patterns. Ad\nDEC_D_Incontent-2\nThe judge looked at exceptions under Indian copyright law and relied on a clause covering \"private or personal use, including research,\" reading \"research\" broadly enough to cover AI training. Ad\nFor that exception to hold, the judge set conditions. Training copies must come from lawful sources, not shadow libraries or paywalled sites accessed without permission. OpenAI also never made the training copies public and processed them only internally. Guadamuz says this is the first time a court has explicitly found that AI training falls under a private use exception.\nThe court ran a three-part fairness test and sided with OpenAI on all three counts. OpenAI's use of ANI's works was limited to training, since no memorization or reproduction was proven. ANI also couldn't show economic harm because the two companies operate in different sectors. Even when users ask ChatGPT about ANI headlines, the model only returns topics and, at most, a few article titles.\nThe judge cited U.S. cases including Bartz v. Anthropic and Kadrey v. Meta , where language model outputs were deemed transformative. He also pointed to the earlier Google Books ruling .\nThe judge also found that trained language models improve access to information, support education, advance scientific research, help with software development, enable translation, and create tools for people with disabilities.\nInternational AI copyright cases paint a mixed picture\nThe Delhi ruling joins a growing list of court decisions worldwide that have reached conflicting conclusions. In the U.S., a judge threw out the lawsuit filed by Raw Story and AlterNet against OpenAI because the plaintiffs couldn't show enough harm and the odds of exact copies were low. That court also held that facts aren't copyrightable.\nThe GitHub Copilot case failed too, with plaintiffs unable to present a single example of identical code. The Intercept, on the other hand, won a partial victory through a DMCA complaint over copyrighted material that had been stripped out before training.\nIn Ross Intelligence v. Thomson Reuters , a court denied fair use because the AI research tool directly competed with Thomson Reuters' legal database Westlaw, making the use non-transformative. The court stressed that this ruling applied only to this non-generative use case and couldn't be extended to large language models.\nIn the Anthropic case , a federal court in San Francisco called AI training with copyrighted works \"spectacularly\" transformative, a strong signal favoring fair use. But the court drew a \"Napster comparison\" because Anthropic had used pirated books from shadow libraries as training data. Fair use doesn't cover unlawfully obtained material. Anthropic later paid $1.5 billion to book authors for using those pirated copies.\nThe U.S. Copyright Office rejected the AI industry's argument that training on \"vast troves of copyrighted works\" broadly qualifies as fair use. The official who wrote the report was fired by the Trump administration shortly after it was published .\nIn Europe, two courts reached opposite conclusions almost simultaneously. The Munich Regional Court ruled in the GEMA case that song lyrics were reproducible in the model weights, making it a copyright-relevant reproduction. The High Court in London dismissed the Getty Images v. Stability AI lawsuit , ruling that an AI model isn't an \"infringing copy.\" New research showing that language models can memorize copyrighted books could ramp up the memorization debate further.\nAcross all these cases, the same core questions remain unresolved. Do AI models permanently store training data? Can training qualify as fair use? Where's the line between lawfully and unlawfully obtained data? And do copies generated through adversarial prompts reflect normal use?\nAI and media face a problem beyond copyright\nBeyond copyright, another question looms for the media industry. Even if courts rule that AI training is lawful, AI-powered search products could still gut the news market. A recent Pew Research Center study shows that click-through rates to external websites drop to just 8 percent with Google's AI Overviews, compared to 15 percent without an AI summary. Users tend to stop searching right after getting the AI response. They don't check other sources.\nFor news agencies like ANI, this means AI systems that summarize news and make clicking the original source unnecessary could erode the industry's business model over time, even without direct copyright infringement.\nThe Munich I Regional Court also recently ruled that Google is directly liable for false claims in its AI summaries , since these count as independent content rather than search results. The limited liability that traditionally shielded search engine operators doesn't extend to AI-generated summaries.\nThat ruling could become relevant for ChatGPT's RAG-based responses too. When AI systems summarize news and make independent claims, their operators effectively become media providers, with all the liability that comes with it. That shift could also force courts to reconsider fair use. One key factor in the fairness test is whether the new product competes with the works it was trained on. If AI summaries replace the need to visit news sites, judges may have a harder time ruling that the use is non-competitive.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: TechnoLlama | Judgment\nBETA-TEST\n&times;\nwpDiscuz\nInsert",
+  "clean_text": "Ad\nSkip to content\nDelhi High Court hands OpenAI a win by rejecting major Indian news agency's copyright injunction\nMatthias Bastian\nView the LinkedIn Profile of Matthias Bastian\nJul 27, 2026\nKey Points\nThe Delhi High Court has rejected Indian news agency ANI's request for a preliminary injunction against OpenAI over copyright infringement.\nANI couldn't prove that ChatGPT reproduced its articles verbatim. The articles it submitted as evidence were published after the models had already been trained.\nThe judge found no economic harm to ANI because OpenAI and the news agency operate in different sectors, and affirmed the public benefit of language models for education, research, and accessibility.\nIn an interim ruling, the Delhi High Court rejected a request by Indian news agency Asian News International (ANI) for a preliminary injunction against OpenAI.\nANI, one of India's largest news agencies, sued OpenAI over its use of copyrighted material for AI training and in ChatGPT's outputs. Judge Amit Bansal denied the requested relief on both claims.\nThe decision addresses memorization, Retrieval Augmented Generation (RAG) , and the legal status of AI training. AI copyright law expert Andres Guadamuz calls the ruling an important early win for OpenAI. Ad\nANI's evidence undermined its copyright claims\nANI submitted several ChatGPT outputs to the court that it claimed were substantial copies of its articles. The move backfired because OpenAI showed that the models used, GPT-4 and GPT-4o, were trained on data from April 2022 and April 2024. The articles ANI cited were mostly from August and September 2024, so they couldn't have been part of the training data. Ad\nDEC_D_Incontent-1\nThe judge's preliminary view was that the similarities came from RAG, which lets a language model retrieve online information in real time, much like a search engine. ANI hadn't addressed RAG in its filing, so the court couldn't make a final ruling on the issue. The judge said RAG-based outputs could qualify as \"communication to the public,\" a question the court will address in the main proceedings.\nANI's case got weaker from there. The agency had used adversarial prompts, explicitly telling the model to reproduce articles \"exactly.\" Even so, ANI couldn't produce a single verbatim copy. The judge found that facts in news articles in general aren't copyrightable and that reproducing topics and headlines didn't amount to direct competition with ANI in this case. Ad\nThe evidence also didn't support ANI's claim that OpenAI permanently stores training data in its models and can reproduce the agency's work verbatim on demand. But the court will revisit that question in the main proceedings.\nCourt tentatively treats AI training as fair use\nANI also failed to show that copying its work for AI training amounted to copyright infringement. Both parties agreed that OpenAI had used ANI content during training, but OpenAI argued that the material made up a tiny share of the overall dataset and that the model extracted only non-expressive elements such as grammar, syntax, and language patterns. Ad\nDEC_D_Incontent-2\nThe judge looked at exceptions under Indian copyright law and relied on a clause covering \"private or personal use, including research,\" reading \"research\" broadly enough to cover AI training. Ad\nFor that exception to hold, the judge set conditions. Training copies must come from lawful sources, not shadow libraries or paywalled sites accessed without permission. OpenAI also never made the training copies public and processed them only internally. Guadamuz says this is the first time a court has explicitly found that AI training falls under a private use exception.\nThe court ran a three-part fairness test and sided with OpenAI on all three counts. OpenAI's use of ANI's works was limited to training, since no memorization or reproduction was proven. ANI also couldn't show economic harm because the two companies operate in different sectors. Even when users ask ChatGPT about ANI headlines, the model only returns topics and, at most, a few article titles.\nThe judge cited U.S. cases including Bartz v. Anthropic and Kadrey v. Meta , where language model outputs were deemed transformative. He also pointed to the earlier Google Books ruling .\nThe judge also found that trained language models improve access to information, support education, advance scientific research, help with software development, enable translation, and create tools for people with disabilities.\nInternational AI copyright cases paint a mixed picture\nThe Delhi ruling joins a growing list of court decisions worldwide that have reached conflicting conclusions. In the U.S., a judge threw out the lawsuit filed by Raw Story and AlterNet against OpenAI because the plaintiffs couldn't show enough harm and the odds of exact copies were low. That court also held that facts aren't copyrightable.\nThe GitHub Copilot case failed too, with plaintiffs unable to present a single example of identical code. The Intercept, on the other hand, won a partial victory through a DMCA complaint over copyrighted material that had been stripped out before training.\nIn Ross Intelligence v. Thomson Reuters , a court denied fair use because the AI research tool directly competed with Thomson Reuters' legal database Westlaw, making the use non-transformative. The court stressed that this ruling applied only to this non-generative use case and couldn't be extended to large language models.\nIn the Anthropic case , a federal court in San Francisco called AI training with copyrighted works \"spectacularly\" transformative, a strong signal favoring fair use. But the court drew a \"Napster comparison\" because Anthropic had used pirated books from shadow libraries as training data. Fair use doesn't cover unlawfully obtained material. Anthropic later paid $1.5 billion to book authors for using those pirated copies.\nThe U.S. Copyright Office rejected the AI industry's argument that training on \"vast troves of copyrighted works\" broadly qualifies as fair use. The official who wrote the report was fired by the Trump administration shortly after it was published .\nIn Europe, two courts reached opposite conclusions almost simultaneously. The Munich Regional Court ruled in the GEMA case that song lyrics were reproducible in the model weights, making it a copyright-relevant reproduction. The High Court in London dismissed the Getty Images v. Stability AI lawsuit , ruling that an AI model isn't an \"infringing copy.\" New research showing that language models can memorize copyrighted books could ramp up the memorization debate further.\nAcross all these cases, the same core questions remain unresolved. Do AI models permanently store training data? Can training qualify as fair use? Where's the line between lawfully and unlawfully obtained data? And do copies generated through adversarial prompts reflect normal use?\nAI and media face a problem beyond copyright\nBeyond copyright, another question looms for the media industry. Even if courts rule that AI training is lawful, AI-powered search products could still gut the news market. A recent Pew Research Center study shows that click-through rates to external websites drop to just 8 percent with Google's AI Overviews, compared to 15 percent without an AI summary. Users tend to stop searching right after getting the AI response. They don't check other sources.\nFor news agencies like ANI, this means AI systems that summarize news and make clicking the original source unnecessary could erode the industry's business model over time, even without direct copyright infringement.\nThe Munich I Regional Court also recently ruled that Google is directly liable for false claims in its AI summaries , since these count as independent content rather than search results. The limited liability that traditionally shielded search engine operators doesn't extend to AI-generated summaries.\nThat ruling could become relevant for ChatGPT's RAG-based responses too. When AI systems summarize news and make independent claims, their operators effectively become media providers, with all the liability that comes with it. That shift could also force courts to reconsider fair use. One key factor in the fairness test is whether the new product competes with the works it was trained on. If AI summaries replace the need to visit news sites, judges may have a harder time ruling that the use is non-competitive.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: TechnoLlama | Judgment\nBETA-TEST\n&times;\nwpDiscuz\nInsert",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-28/r-097-delhi-high-court-hands-openai-a-win-by-rejecting-major-indian-news-age.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-28/r-097-delhi-high-court-hands-openai-a-win-by-rejecting-major-indian-news-age.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 88,
+  "extractor_diagnostics": {
+    "readability_score": 88,
+    "text_length": 8763,
+    "paragraph_count": 36,
+    "sentence_count": 75,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0006,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 8763,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "4e8ca86b8c3e4871",
+    "missing": []
+  },
+  "evidence_strength": "source_backed_event",
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "5832d76c9036036e",
+  "content_hash": "4e8ca86b8c3e4871",
+  "full_text_hash": "4e8ca86b8c3e4871",
+  "semantic_hash": "f1956fb3b9503c39",
+  "duplicate_of": "merged 1 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-07-27T00:00:00.000Z",
+  "last_seen_at": "2026-07-28T05:39:57.763Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "The Delhi High Court has handed OpenAI a major win in its copyright fight with news agency ANI. For the first time, a court has classified AI training as private use. ANI undermined its own case by citing articles published after the models were trained. The main trial is still pending. The article Delhi High Court hands OpenAI a win by rejecting major Indian news agency&#039;s copyright injunction appeared first on The Decoder. ]]>",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Ad Skip to content Delhi High Court hands OpenAI a win by rejecting major Indian news agency's copyright injunction Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 27, 2026 Key Points The Delhi High Court has rejected Indian news agency ANI's request for a preliminary injunction against OpenAI over copyright infringement.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "ANI couldn't prove that ChatGPT reproduced its articles verbatim.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The articles it submitted as evidence were published after the models had already been trained.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The judge found no economic harm to ANI because OpenAI and the news agency operate in different sectors, and affirmed the public benefit of language models for education, research, and accessibility.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "In an interim ruling, the Delhi High Court rejected a request by Indian news agency Asian News International (ANI) for a preliminary injunction against OpenAI.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-28T05:39:57.763Z",
+  "business_elements": {
+    "companies": [
+      "The Decoder AI News",
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "GitHub",
+      "Meta"
+    ],
+    "products": [
+      "ChatGPT",
+      "GPT-4",
+      "Copilot"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "法务 / 律师"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "039",
+      "27",
+      "2026",
+      "4",
+      "2022",
+      "2024",
+      "1",
+      "2"
+    ],
+    "quotes": [
+      "communication to the public,",
+      "exactly.",
+      "private or personal use, including research,",
+      "research",
+      "spectacularly"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "The Delhi High Court has handed OpenAI a major win in its copyright fight with news agency ANI. For the first time, a court has classified AI training as private use. ANI undermined its own case by citing articles published after the models were trained. The main trial is still pending. The article Delhi High Court hands OpenAI a win by rejecting major Indian news agency&#039;s copyright injunction appeared first on The Decoder. ]]>",
+      "Ad Skip to content Delhi High Court hands OpenAI a win by rejecting major Indian news agency's copyright injunction Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 27, 2026 Key Points The Delhi High Court has rejected Indian news agency ANI's request for a preliminary injunction against OpenAI over copyright infringement.",
+      "ANI couldn't prove that ChatGPT reproduced its articles verbatim."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "法务 / 律师"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "supporting_signal",
+    "importance_score": 2,
+    "importance_reason": "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+    "supporting_signals": [
+      "low_value_ai_adjacent_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 2,
+    "guanlan_relevance": 2,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "relationship_graph_input": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Delhi High Court hands OpenAI a win by rejecting major Indian news agency's copyright injunction\n\n- raw_id: R-097\n- title_zh: 德里高等法院驳回印度主要新闻机构的版权禁令，OpenAI 获胜\n- title_translation_status: translated\n- title_translation_method: deepseek_title_translation\n- original_url: https://the-decoder.com/delhi-high-court-hands-openai-a-win-by-rejecting-major-indian-news-agencys-copyright-injunction/\n- source_name: The Decoder AI News\n- collected_at: 2026-07-28T05:39:57.763Z\n\n## clean_text\n\nAd\nSkip to content\nDelhi High Court hands OpenAI a win by rejecting major Indian news agency's copyright injunction\nMatthias Bastian\nView the LinkedIn Profile of Matthias Bastian\nJul 27, 2026\nKey Points\nThe Delhi High Court has rejected Indian news agency ANI's request for a preliminary injunction against OpenAI over copyright infringement.\nANI couldn't prove that ChatGPT reproduced its articles verbatim. The articles it submitted as evidence were published after the models had already been trained.\nThe judge found no economic harm to ANI because OpenAI and the news agency operate in different sectors, and affirmed the public benefit of language models for education, research, and accessibility.\nIn an interim ruling, the Delhi High Court rejected a request by Indian news agency Asian News International (ANI) for a preliminary injunction against OpenAI.\nANI, one of India's largest news agencies, sued OpenAI over its use of copyrighted material for AI training and in ChatGPT's outputs. Judge Amit Bansal denied the requested relief on both claims.\nThe decision addresses memorization, Retrieval Augmented Generation (RAG) , and the legal status of AI training. AI copyright law expert Andres Guadamuz calls the ruling an important early win for OpenAI. Ad\nANI's evidence undermined its copyright claims\nANI submitted several ChatGPT outputs to the court that it claimed were substantial copies of its articles. The move backfired because OpenAI showed that the models used, GPT-4 and GPT-4o, were trained on data from April 2022 and April 2024. The articles ANI cited were mostly from August and September 2024, so they couldn't have been part of the training data. Ad\nDEC_D_Incontent-1\nThe judge's preliminary view was that the similarities came from RAG, which lets a language model retrieve online information in real time, much like a search engine. ANI hadn't addressed RAG in its filing, so the court couldn't make a final ruling on the issue. The judge said RAG-based outputs could qualify as \"communication to the public,\" a question the court will address in the main proceedings.\nANI's case got weaker from there. The agency had used adversarial prompts, explicitly telling the model to reproduce articles \"exactly.\" Even so, ANI couldn't produce a single verbatim copy. The judge found that facts in news articles in general aren't copyrightable and that reproducing topics and headlines didn't amount to direct competition with ANI in this case. Ad\nThe evidence also didn't support ANI's claim that OpenAI permanently stores training data in its models and can reproduce the agency's work verbatim on demand. But the court will revisit that question in the main proceedings.\nCourt tentatively treats AI training as fair use\nANI also failed to show that copying its work for AI training amounted to copyright infringement. Both parties agreed that OpenAI had used ANI content during training, but OpenAI argued that the material made up a tiny share of the overall dataset and that the model extracted only non-expressive elements such as grammar, syntax, and language patterns. Ad\nDEC_D_Incontent-2\nThe judge looked at exceptions under Indian copyright law and relied on a clause covering \"private or personal use, including research,\" reading \"research\" broadly enough to cover AI training. Ad\nFor that exception to hold, the judge set conditions. Training copies must come from lawful sources, not shadow libraries or paywalled sites accessed without permission. OpenAI also never made the training copies public and processed them only internally. Guadamuz says this is the first time a court has explicitly found that AI training falls under a private use exception.\nThe court ran a three-part fairness test and sided with OpenAI on all three counts. OpenAI's use of ANI's works was limited to training, since no memorization or reproduction was proven. ANI also couldn't show economic harm because the two companies operate in different sectors. Even when users ask ChatGPT about ANI headlines, the model only returns topics and, at most, a few article titles.\nThe judge cited U.S. cases including Bartz v. Anthropic and Kadrey v. Meta , where language model outputs were deemed transformative. He also pointed to the earlier Google Books ruling .\nThe judge also found that trained language models improve access to information, support education, advance scientific research, help with software development, enable translation, and create tools for people with disabilities.\nInternational AI copyright cases paint a mixed picture\nThe Delhi ruling joins a growing list of court decisions worldwide that have reached conflicting conclusions. In the U.S., a judge threw out the lawsuit filed by Raw Story and AlterNet against OpenAI because the plaintiffs couldn't show enough harm and the odds of exact copies were low. That court also held that facts aren't copyrightable.\nThe GitHub Copilot case failed too, with plaintiffs unable to present a single example of identical code. The Intercept, on the other hand, won a partial victory through a DMCA complaint over copyrighted material that had been stripped out before training.\nIn Ross Intelligence v. Thomson Reuters , a court denied fair use because the AI research tool directly competed with Thomson Reuters' legal database Westlaw, making the use non-transformative. The court stressed that this ruling applied only to this non-generative use case and couldn't be extended to large language models.\nIn the Anthropic case , a federal court in San Francisco called AI training with copyrighted works \"spectacularly\" transformative, a strong signal favoring fair use. But the court drew a \"Napster comparison\" because Anthropic had used pirated books from shadow libraries as training data. Fair use doesn't cover unlawfully obtained material. Anthropic later paid $1.5 billion to book authors for using those pirated copies.\nThe U.S. Copyright Office rejected the AI industry's argument that training on \"vast troves of copyrighted works\" broadly qualifies as fair use. The official who wrote the report was fired by the Trump administration shortly after it was published .\nIn Europe, two courts reached opposite conclusions almost simultaneously. The Munich Regional Court ruled in the GEMA case that song lyrics were reproducible in the model weights, making it a copyright-relevant reproduction. The High Court in London dismissed the Getty Images v. Stability AI lawsuit , ruling that an AI model isn't an \"infringing copy.\" New research showing that language models can memorize copyrighted books could ramp up the memorization debate further.\nAcross all these cases, the same core questions remain unresolved. Do AI models permanently store training data? Can training qualify as fair use? Where's the line between lawfully and unlawfully obtained data? And do copies generated through adversarial prompts reflect normal use?\nAI and media face a problem beyond copyright\nBeyond copyright, another question looms for the media industry. Even if courts rule that AI training is lawful, AI-powered search products could still gut the news market. A recent Pew Research Center study shows that click-through rates to external websites drop to just 8 percent with Google's AI Overviews, compared to 15 percent without an AI summary. Users tend to stop searching right after getting the AI response. They don't check other sources.\nFor news agencies like ANI, this means AI systems that summarize news and make clicking the original source unnecessary could erode the industry's business model over time, even without direct copyright infringement.\nThe Munich I Regional Court also recently ruled that Google is directly liable for false claims in its AI summaries , since these count as independent content rather than search results. The limited liability that traditionally shielded search engine operators doesn't extend to AI-generated summaries.\nThat ruling could become relevant for ChatGPT's RAG-based responses too. When AI systems summarize news and make independent claims, their operators effectively become media providers, with all the liability that comes with it. That shift could also force courts to reconsider fair use. One key factor in the fairness test is whether the new product competes with the works it was trained on. If AI summaries replace the need to visit news sites, judges may have a harder time ruling that the use is non-competitive.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: TechnoLlama | Judgment\nBETA-TEST\n&times;\nwpDiscuz\nInsert\n\n## full_text\n\nAd\nSkip to content\nDelhi High Court hands OpenAI a win by rejecting major Indian news agency's copyright injunction\nMatthias Bastian\nView the LinkedIn Profile of Matthias Bastian\nJul 27, 2026\nKey Points\nThe Delhi High Court has rejected Indian news agency ANI's request for a preliminary injunction against OpenAI over copyright infringement.\nANI couldn't prove that ChatGPT reproduced its articles verbatim. The articles it submitted as evidence were published after the models had already been trained.\nThe judge found no economic harm to ANI because OpenAI and the news agency operate in different sectors, and affirmed the public benefit of language models for education, research, and accessibility.\nIn an interim ruling, the Delhi High Court rejected a request by Indian news agency Asian News International (ANI) for a preliminary injunction against OpenAI.\nANI, one of India's largest news agencies, sued OpenAI over its use of copyrighted material for AI training and in ChatGPT's outputs. Judge Amit Bansal denied the requested relief on both claims.\nThe decision addresses memorization, Retrieval Augmented Generation (RAG) , and the legal status of AI training. AI copyright law expert Andres Guadamuz calls the ruling an important early win for OpenAI. Ad\nANI's evidence undermined its copyright claims\nANI submitted several ChatGPT outputs to the court that it claimed were substantial copies of its articles. The move backfired because OpenAI showed that the models used, GPT-4 and GPT-4o, were trained on data from April 2022 and April 2024. The articles ANI cited were mostly from August and September 2024, so they couldn't have been part of the training data. Ad\nDEC_D_Incontent-1\nThe judge's preliminary view was that the similarities came from RAG, which lets a language model retrieve online information in real time, much like a search engine. ANI hadn't addressed RAG in its filing, so the court couldn't make a final ruling on the issue. The judge said RAG-based outputs could qualify as \"communication to the public,\" a question the court will address in the main proceedings.\nANI's case got weaker from there. The agency had used adversarial prompts, explicitly telling the model to reproduce articles \"exactly.\" Even so, ANI couldn't produce a single verbatim copy. The judge found that facts in news articles in general aren't copyrightable and that reproducing topics and headlines didn't amount to direct competition with ANI in this case. Ad\nThe evidence also didn't support ANI's claim that OpenAI permanently stores training data in its models and can reproduce the agency's work verbatim on demand. But the court will revisit that question in the main proceedings.\nCourt tentatively treats AI training as fair use\nANI also failed to show that copying its work for AI training amounted to copyright infringement. Both parties agreed that OpenAI had used ANI content during training, but OpenAI argued that the material made up a tiny share of the overall dataset and that the model extracted only non-expressive elements such as grammar, syntax, and language patterns. Ad\nDEC_D_Incontent-2\nThe judge looked at exceptions under Indian copyright law and relied on a clause covering \"private or personal use, including research,\" reading \"research\" broadly enough to cover AI training. Ad\nFor that exception to hold, the judge set conditions. Training copies must come from lawful sources, not shadow libraries or paywalled sites accessed without permission. OpenAI also never made the training copies public and processed them only internally. Guadamuz says this is the first time a court has explicitly found that AI training falls under a private use exception.\nThe court ran a three-part fairness test and sided with OpenAI on all three counts. OpenAI's use of ANI's works was limited to training, since no memorization or reproduction was proven. ANI also couldn't show economic harm because the two companies operate in different sectors. Even when users ask ChatGPT about ANI headlines, the model only returns topics and, at most, a few article titles.\nThe judge cited U.S. cases including Bartz v. Anthropic and Kadrey v. Meta , where language model outputs were deemed transformative. He also pointed to the earlier Google Books ruling .\nThe judge also found that trained language models improve access to information, support education, advance scientific research, help with software development, enable translation, and create tools for people with disabilities.\nInternational AI copyright cases paint a mixed picture\nThe Delhi ruling joins a growing list of court decisions worldwide that have reached conflicting conclusions. In the U.S., a judge threw out the lawsuit filed by Raw Story and AlterNet against OpenAI because the plaintiffs couldn't show enough harm and the odds of exact copies were low. That court also held that facts aren't copyrightable.\nThe GitHub Copilot case failed too, with plaintiffs unable to present a single example of identical code. The Intercept, on the other hand, won a partial victory through a DMCA complaint over copyrighted material that had been stripped out before training.\nIn Ross Intelligence v. Thomson Reuters , a court denied fair use because the AI research tool directly competed with Thomson Reuters' legal database Westlaw, making the use non-transformative. The court stressed that this ruling applied only to this non-generative use case and couldn't be extended to large language models.\nIn the Anthropic case , a federal court in San Francisco called AI training with copyrighted works \"spectacularly\" transformative, a strong signal favoring fair use. But the court drew a \"Napster comparison\" because Anthropic had used pirated books from shadow libraries as training data. Fair use doesn't cover unlawfully obtained material. Anthropic later paid $1.5 billion to book authors for using those pirated copies.\nThe U.S. Copyright Office rejected the AI industry's argument that training on \"vast troves of copyrighted works\" broadly qualifies as fair use. The official who wrote the report was fired by the Trump administration shortly after it was published .\nIn Europe, two courts reached opposite conclusions almost simultaneously. The Munich Regional Court ruled in the GEMA case that song lyrics were reproducible in the model weights, making it a copyright-relevant reproduction. The High Court in London dismissed the Getty Images v. Stability AI lawsuit , ruling that an AI model isn't an \"infringing copy.\" New research showing that language models can memorize copyrighted books could ramp up the memorization debate further.\nAcross all these cases, the same core questions remain unresolved. Do AI models permanently store training data? Can training qualify as fair use? Where's the line between lawfully and unlawfully obtained data? And do copies generated through adversarial prompts reflect normal use?\nAI and media face a problem beyond copyright\nBeyond copyright, another question looms for the media industry. Even if courts rule that AI training is lawful, AI-powered search products could still gut the news market. A recent Pew Research Center study shows that click-through rates to external websites drop to just 8 percent with Google's AI Overviews, compared to 15 percent without an AI summary. Users tend to stop searching right after getting the AI response. They don't check other sources.\nFor news agencies like ANI, this means AI systems that summarize news and make clicking the original source unnecessary could erode the industry's business model over time, even without direct copyright infringement.\nThe Munich I Regional Court also recently ruled that Google is directly liable for false claims in its AI summaries , since these count as independent content rather than search results. The limited liability that traditionally shielded search engine operators doesn't extend to AI-generated summaries.\nThat ruling could become relevant for ChatGPT's RAG-based responses too. When AI systems summarize news and make independent claims, their operators effectively become media providers, with all the liability that comes with it. That shift could also force courts to reconsider fair use. One key factor in the fairness test is whether the new product competes with the works it was trained on. If AI summaries replace the need to visit news sites, judges may have a harder time ruling that the use is non-competitive.\nAI News Without the Hype – Curated by Humans\nSubscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive \"AI Radar\" frontier report six times a year, full archive access, and access to our comment section.\nSubscribe now\nSource: TechnoLlama | Judgment\nBETA-TEST\n&times;\nwpDiscuz\nInsert\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 88\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The Delhi High Court has handed OpenAI a major win in its copyright fight with news agency ANI. For the first time, a court has classified AI training as private use. ANI undermined its own case by citing articles published after the models were trained. The main trial is still pending. The article Delhi High Court hands OpenAI a win by rejecting major Indian news agency&#039;s copyright injunction appeared first on The Decoder. ]]>\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Ad Skip to content Delhi High Court hands OpenAI a win by rejecting major Indian news agency's copyright injunction Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jul 27, 2026 Key Points The Delhi High Court has rejected Indian news agency ANI's request for a preliminary injunction against OpenAI over copyright infringement.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] ANI couldn't prove that ChatGPT reproduced its articles verbatim.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The articles it submitted as evidence were published after the models had already been trained.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The judge found no economic harm to ANI because OpenAI and the news agency operate in different sectors, and affirmed the public benefit of language models for education, research, and accessibility.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] In an interim ruling, the Delhi High Court rejected a request by Indian news agency Asian News International (ANI) for a preliminary injunction against OpenAI.\n"
+}

@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-27T03:18:25.889Z",
-    "latestDataDate": "2026-07-27",
-    "currentDate": "2026-07-27",
-    "eventCount": 1603,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-28T05:43:43.570Z",
+    "latestDataDate": "2026-07-28",
+    "currentDate": "2026-07-28",
+    "eventCount": 1656,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-d56aa2f9908f566a",
@@ -39,6 +39,7 @@
     "lastSeen": "2026-06-11",
     "relationIds": [
       "REL2-1bac7c6922a7a98b",
+      "REL2-44ebd8a7378accce",
       "REL2-d205049958061bb1",
       "REL2-d38107a2fe8bacd9"
     ],
@@ -156,7 +157,6 @@
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
       "aliases": [
-        "谷歌 DeepMind",
         "DeepMind"
       ],
       "verificationStatus": "verified",
@@ -171,6 +171,7 @@
         "EV-67ef7accd26a07a0",
         "EV-a7e1ecd212474e00",
         "EV-d961d3ad02f6ae14",
+        "EV-5f2acbfb8f54fd59",
         "EV-59229486408edb05",
         "EV-6654f62015eff8e3",
         "EV-7c6a9f4ee4829976",
@@ -190,11 +191,11 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
-        "TX-technology-code_generation",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-retrieval_augmented_generation",
@@ -212,14 +213,16 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -243,6 +246,7 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-f55d16df5b5fecb2",
         "EV-5a9fe80f8e4ae066",
         "EV-b4b5d141dac164c2",
         "EV-6e4dd5111dfaae9c",
@@ -254,6 +258,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-395884a4c090103c",
+        "EV-6f26809c0ae960a8",
         "EV-33e98b8bbd0a11b1",
         "EV-2634b786bde9fb8e",
         "EV-6aabfaa0c7c7f838",
@@ -349,6 +355,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-5bfcc506994f103f",
         "EV-909cf18b467d6fdf",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
@@ -370,6 +377,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
@@ -377,16 +386,15 @@
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
@@ -399,14 +407,16 @@
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -414,7 +424,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-28"
     }
   ],
   "relationships": [
@@ -434,6 +444,27 @@
       ],
       "source_refs": [
         "SA-87ccc3513174eaba"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified"
+    },
+    {
+      "relationship_id": "REL2-44ebd8a7378accce",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-22b8d155ce027905",
+      "claim_refs": [
+        "CL-0ffd4a87d0bf9a23",
+        "CL-9a3abffb4df3b677",
+        "CL-53bc4ba62a2c55fb",
+        "CL-c0d954c60d8247d3"
+      ],
+      "source_refs": [
+        "SA-30fb0e04917bc0f3"
       ],
       "data_date": "2026-06-11",
       "status": "verified"

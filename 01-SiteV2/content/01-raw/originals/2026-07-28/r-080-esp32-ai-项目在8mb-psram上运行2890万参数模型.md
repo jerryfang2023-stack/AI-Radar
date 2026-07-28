@@ -1,0 +1,346 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-080
+title: "ESP32-AI 项目在8MB PSRAM上运行2890万参数模型"
+title_zh: "ESP32-AI 项目在8MB PSRAM上运行2890万参数模型"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/982/494.htm"
+canonical_url: "https://ithome.com/0/982/494.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-28T04:03:00.000Z"
+collected_at: 2026-07-28T05:39:48.790Z
+language: mixed
+full_text_hash: c2592318ab05369e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-28/r-080-esp32-ai-项目在8mb-psram上运行2890万参数模型.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-28/r-080-esp32-ai-项目在8mb-psram上运行2890万参数模型.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 38
+extractor_diagnostics: {"readability_score":38,"text_length":1361,"paragraph_count":13,"sentence_count":5,"boilerplate_hits":3,"symbol_ratio":0.0015,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 1361
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c2592318ab05369e","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"ESP32-AI 项目在8MB PSRAM上运行2890万参数模型","discovery_summary":"乌克兰开发者Slava S发布ESP32-AI项目，在乐鑫ESP32-S3开发板上成功部署2890万个参数的本地AI模型。该模型采用分层嵌入技术，经4-bit量化后文件大小为14.9MB，每生成1个Token只需读取嵌入表中的少量数据。开发者设想将其用于离线咖啡机，围绕咖啡豆、研磨方式等生成内容。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/982/494.htm","discovered_at":"2026-07-28T05:29:44.781Z","rank_on_page":33,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 585f574d534213f2
+content_hash: c2592318ab05369e
+semantic_hash: 32ca74b00a2c0a63
+duplicate_of: ""
+first_seen_at: "2026-07-28T04:03:00.000Z"
+last_seen_at: 2026-07-28T05:39:48.790Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","Google"],"products":[],"people":[],"industries":["制造 / 工业","开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["32","8M","2890万","3","4","14.9M","1","2890 万"],"quotes":[]}
+evidence_seed: {"company_actions":["模型经过 4-bit 量化后，文件大小为 14.","开发者把 25M 参数嵌入表存入 16MB 闪存。"],"case_details":["Slava S 采用 Google Gemma 使用的 P er-Layer Embeddings（分层嵌入）技术。"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"number","text":"乌克兰开发者Slava S发布ESP32-AI项目，在乐鑫ESP32-S3开发板上成功部署2890万个参数的本地AI模型。该模型采用分层嵌入技术，经4-bit量化后文件大小为14.9MB，每生成1个Token只需读取嵌入表中的少量数据。开发者设想将其用于离线咖啡机，围绕咖啡豆、研磨方式等生成内容。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"ESP32-AI 亮相：8MB PSRAM 运行 2890 万参数模型，设想离线调配出最佳咖啡 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 ESP32-AI 亮相：8MB PSRAM 运行 2890 万参数模型，设想离线调配出最佳咖啡 2026/7/28 12:03:00 来源： IT之家 作者： 故渊 责编： 故渊 评论： IT之家 7 月 28 日消息，科技媒体 Tom's Hardware 昨日（7 月 27 日）发布博文，报道称乌克兰开发者 Slava S 发布 ESP32-AI 项目， 针对乐鑫（Espressif）的 ESP32-S3 开发板，成功部署 2890 万个参数的本地 AI 模型。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"IT之家注：ESP32-S3 开发板由乐鑫推出，配备 512KB 的 SRAM（片上高速存储，访问周期仅需 1 个 CPU 时钟）、8MB 的 PSRAM（通过 SPI 总线扩展的 8MB 内存，访问速度取决于 SPI 时钟配置）和 16MB 的闪存，由于内存容量受限，此前 Dave Bennett 针对该开发板部署 AI 参数上限为 26 万个。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"Slava S 采用 Google Gemma 使用的 P er-Layer Embeddings（分层嵌入）技术。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"模型经过 4-bit 量化后，文件大小为 14.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"开发者把 25M 参数嵌入表存入 16MB 闪存。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-28T05:39:48.790Z
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# ESP32-AI 项目在8MB PSRAM上运行2890万参数模型
+
+## clean_text
+
+ESP32-AI 亮相：8MB PSRAM 运行 2890 万参数模型，设想离线调配出最佳咖啡 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 智能时代 > 人工智能
+ESP32-AI 亮相：8MB PSRAM 运行 2890 万参数模型，设想离线调配出最佳咖啡
+2026/7/28 12:03:00
+来源： IT之家
+作者： 故渊
+责编： 故渊
+评论：
+IT之家 7 月 28 日消息，科技媒体 Tom's Hardware 昨日（7 月 27 日）发布博文，报道称乌克兰开发者 Slava S 发布 ESP32-AI 项目， 针对乐鑫（Espressif）的 ESP32-S3 开发板，成功部署 2890 万个参数的本地 AI 模型。
+IT之家注：ESP32-S3 开发板由乐鑫推出，配备 512KB 的 SRAM（片上高速存储，访问周期仅需 1 个 CPU 时钟）、8MB 的 PSRAM（通过 SPI 总线扩展的 8MB 内存，访问速度取决于 SPI 时钟配置）和 16MB 的闪存，由于内存容量受限，此前 Dave Bennett 针对该开发板部署 AI 参数上限为 26 万个。
+Slava S 采用 Google Gemma 使用的 P er-Layer Embeddings（分层嵌入）技术。模型经过 4-bit 量化后，文件大小为 14.9MB。开发者把 25M 参数嵌入表存入 16MB 闪存。模型每生成 1 个 Tokens，只需读取嵌入表中的少量数据。
+在使用场景方面，ESP32-S3 开发板虽然成功部署 2890 万个参数模型，但无法支持聊天或者编程，不过开发者提出离线咖啡机应用设想。该设备可以围绕咖啡豆、研磨方式、配比和水温生成内容。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： AI
+Aitver 推出 ESP32-C3 开发板：集成 0.42 英寸 OLED 面板，4.99 美元
+Arduino 推出 4GB + 32GB 版 UNO Q 开发板，较 2GB + 16GB 款贵 15 美元
+赛昉 VisionFive 2 Lite 开发板发售，轻量化工业级 RISC-V SBC
+波兰 Grinn 推出联发科 Genio 700 芯片 AIoT 开发板 GenioBoard
+全球首款 Arm v9 开源主板：Radxa 瑞莎星睿 O6N 发布，32GB 国行首发价 1499 元
+高通将收购开源开发板软硬件企业 Arduino，尚需满足成交条件
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+ESP32-AI 亮相：8MB PSRAM 运行 2890 万参数模型，设想离线调配出最佳咖啡 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 智能时代 > 人工智能
+ESP32-AI 亮相：8MB PSRAM 运行 2890 万参数模型，设想离线调配出最佳咖啡
+2026/7/28 12:03:00
+来源： IT之家
+作者： 故渊
+责编： 故渊
+评论：
+IT之家 7 月 28 日消息，科技媒体 Tom's Hardware 昨日（7 月 27 日）发布博文，报道称乌克兰开发者 Slava S 发布 ESP32-AI 项目， 针对乐鑫（Espressif）的 ESP32-S3 开发板，成功部署 2890 万个参数的本地 AI 模型。
+IT之家注：ESP32-S3 开发板由乐鑫推出，配备 512KB 的 SRAM（片上高速存储，访问周期仅需 1 个 CPU 时钟）、8MB 的 PSRAM（通过 SPI 总线扩展的 8MB 内存，访问速度取决于 SPI 时钟配置）和 16MB 的闪存，由于内存容量受限，此前 Dave Bennett 针对该开发板部署 AI 参数上限为 26 万个。
+Slava S 采用 Google Gemma 使用的 P er-Layer Embeddings（分层嵌入）技术。模型经过 4-bit 量化后，文件大小为 14.9MB。开发者把 25M 参数嵌入表存入 16MB 闪存。模型每生成 1 个 Tokens，只需读取嵌入表中的少量数据。
+在使用场景方面，ESP32-S3 开发板虽然成功部署 2890 万个参数模型，但无法支持聊天或者编程，不过开发者提出离线咖啡机应用设想。该设备可以围绕咖啡豆、研磨方式、配比和水温生成内容。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： AI
+Aitver 推出 ESP32-C3 开发板：集成 0.42 英寸 OLED 面板，4.99 美元
+Arduino 推出 4GB + 32GB 版 UNO Q 开发板，较 2GB + 16GB 款贵 15 美元
+赛昉 VisionFive 2 Lite 开发板发售，轻量化工业级 RISC-V SBC
+波兰 Grinn 推出联发科 Genio 700 芯片 AIoT 开发板 GenioBoard
+全球首款 Arm v9 开源主板：Radxa 瑞莎星睿 O6N 发布，32GB 国行首发价 1499 元
+高通将收购开源开发板软硬件企业 Arduino，尚需满足成交条件
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 38
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":38,"text_length":1361,"paragraph_count":13,"sentence_count":5,"boilerplate_hits":3,"symbol_ratio":0.0015,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   乌克兰开发者Slava S发布ESP32-AI项目，在乐鑫ESP32-S3开发板上成功部署2890万个参数的本地AI模型。该模型采用分层嵌入技术，经4-bit量化后文件大小为14.9MB，每生成1个Token只需读取嵌入表中的少量数据。开发者设想将其用于离线咖啡机，围绕咖啡豆、研磨方式等生成内容。
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   ESP32-AI 亮相：8MB PSRAM 运行 2890 万参数模型，设想离线调配出最佳咖啡 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 智能时代 > 人工智能 ESP32-AI 亮相：8MB PSRAM 运行 2890 万参数模型，设想离线调配出最佳咖啡 2026/7/28 12:03:00 来源： IT之家 作者： 故渊 责编： 故渊 评论： IT之家 7 月 28 日消息，科技媒体 Tom's Hardware 昨日（7 月 27 日）发布博文，报道称乌克兰开发者 Slava S 发布 ESP32-AI 项目， 针对乐鑫（Espressif）的 ESP32-S3 开发板，成功部署 2890 万个参数的本地 AI 模型。
+
+3. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家注：ESP32-S3 开发板由乐鑫推出，配备 512KB 的 SRAM（片上高速存储，访问周期仅需 1 个 CPU 时钟）、8MB 的 PSRAM（通过 SPI 总线扩展的 8MB 内存，访问速度取决于 SPI 时钟配置）和 16MB 的闪存，由于内存容量受限，此前 Dave Bennett 针对该开发板部署 AI 参数上限为 26 万个。
+
+4. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   Slava S 采用 Google Gemma 使用的 P er-Layer Embeddings（分层嵌入）技术。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   模型经过 4-bit 量化后，文件大小为 14.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   开发者把 25M 参数嵌入表存入 16MB 闪存。
+
+## business_elements
+
+- companies: IT之家（RSS）, Google
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 制造 / 工业, 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 32, 8M, 2890万, 3, 4, 14.9M, 1, 2890 万
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 模型经过 4-bit 量化后，文件大小为 14. / 开发者把 25M 参数嵌入表存入 16MB 闪存。
+- case_details: Slava S 采用 Google Gemma 使用的 P er-Layer Embeddings（分层嵌入）技术。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"ESP32-AI 项目在8MB PSRAM上运行2890万参数模型","discovery_summary":"乌克兰开发者Slava S发布ESP32-AI项目，在乐鑫ESP32-S3开发板上成功部署2890万个参数的本地AI模型。该模型采用分层嵌入技术，经4-bit量化后文件大小为14.9MB，每生成1个Token只需读取嵌入表中的少量数据。开发者设想将其用于离线咖啡机，围绕咖啡豆、研磨方式等生成内容。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/982/494.htm","discovered_at":"2026-07-28T05:29:44.781Z","rank_on_page":33,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+乌克兰开发者Slava S发布ESP32-AI项目，在乐鑫ESP32-S3开发板上成功部署2890万个参数的本地AI模型。该模型采用分层嵌入技术，经4-bit量化后文件大小为14.9MB，每生成1个Token只需读取嵌入表中的少量数据。开发者设想将其用于离线咖啡机，围绕咖啡豆、研磨方式等生成内容。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

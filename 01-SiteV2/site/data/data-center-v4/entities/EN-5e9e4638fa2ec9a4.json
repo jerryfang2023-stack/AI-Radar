@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-27T03:18:25.889Z",
-    "latestDataDate": "2026-07-27",
-    "currentDate": "2026-07-27",
-    "eventCount": 1603,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-28T05:43:43.570Z",
+    "latestDataDate": "2026-07-28",
+    "currentDate": "2026-07-28",
+    "eventCount": 1656,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-5e9e4638fa2ec9a4",
@@ -21,19 +21,22 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-eb61ddca7f36f55c",
       "EV-9ff0c57323ed8318"
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-industry-financial_services",
       "TX-use_case-customer_service"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-23",
-    "lastSeen": "2026-07-26",
+    "lastSeen": "2026-07-28",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
+        "EV-eb61ddca7f36f55c",
         "EV-9ff0c57323ed8318"
       ],
       "partnerships": [],
@@ -43,6 +46,35 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-eb61ddca7f36f55c",
+        "dataDate": "2026-07-28",
+        "date": "2026-07-23",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "TTEC Digital 在 Agentforce 联络中心部署首个实时 Salesforce 客户",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "customer_service",
+            "dimensionName": "应用场景",
+            "name": "客户服务"
+          },
+          {
+            "dimensionId": "industry",
+            "id": "financial_services",
+            "dimensionName": "行业",
+            "name": "金融服务"
+          }
+        ],
+        "entityIds": [
+          "EN-5e9e4638fa2ec9a4",
+          "EN-3ccbd9105a45d8fc"
+        ]
+      },
       {
         "id": "EV-9ff0c57323ed8318",
         "dataDate": "2026-07-26",
@@ -73,6 +105,101 @@
   "relationships": [],
   "taxonomyNodes": [
     {
+      "id": "TX-industry-financial_services",
+      "name": "金融服务",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "financial_services",
+      "eventIds": [
+        "EV-bffc68e7bb4d598b",
+        "EV-f6a72cddbda748b3",
+        "EV-34a077ec20c91cea",
+        "EV-8cf189b07a257c1c",
+        "EV-aa33ca051f3a7f78",
+        "EV-189e43cb9fea8e1a",
+        "EV-a42e51959c627554",
+        "EV-c0d19b8641a7a36c",
+        "EV-e4b3a19529576778",
+        "EV-a84ec4216d3ded6d",
+        "EV-986ac3a819d23388",
+        "EV-eb61ddca7f36f55c",
+        "EV-4b545e310ded2baa",
+        "EV-778ae7684a4d782e",
+        "EV-9709ad47faf0ede2",
+        "EV-86247a326e79bb88",
+        "EV-d1e2a7c6d314612c",
+        "EV-33717672cb5e8004",
+        "EV-83b2e8f7fe679bc3",
+        "EV-f65a1b053e5dca70",
+        "EV-16cfe946bbf69aa3",
+        "EV-2c87c8ea47cbd1b6",
+        "EV-97747aee0cafd9f3",
+        "EV-bad301e14b034fbd",
+        "EV-9cd1cb31e2adf5dc",
+        "EV-5caf7f83664b1a2c",
+        "EV-4b44f5eafecf4922",
+        "EV-f7aa6d43b75238fb",
+        "EV-889f518dcce85a8f"
+      ],
+      "entityIds": [
+        "EN-7f67f2f8692510cf",
+        "EN-a5d2ae286d0d9e45",
+        "EN-96eebba49dbbf422",
+        "EN-e5dcb6b25180d1d6",
+        "EN-3afbf365c56b769d",
+        "EN-1bd14cd1a58c5708",
+        "EN-7d3194f79e645c42",
+        "EN-11507a0e2f5e69d5",
+        "EN-b314f58f5f506fd2",
+        "EN-a972bc1b3220493e",
+        "EN-eaa1c24270a0d057",
+        "EN-d82ff987d73882b8",
+        "EN-ee04228c5c6d8b08",
+        "EN-7706c3c94d5f9b59",
+        "EN-c71496986d06e3f2",
+        "EN-5e9e4638fa2ec9a4",
+        "EN-3ccbd9105a45d8fc",
+        "EN-d3565d297d476f10",
+        "EN-25690754dd14bd1b",
+        "EN-214a50c40a4157a1",
+        "EN-43381465c2b7d64e",
+        "EN-c70eca6b0f88f44d",
+        "EN-5e757c7fc575c41e",
+        "EN-bc8a00f7f6fb535f",
+        "EN-86f73dfe7bb6a9e6",
+        "EN-df1970d2ada6b501",
+        "EN-b3f5e31ec86a08a9",
+        "EN-9fbf261b62c1d7c0",
+        "EN-4d748ebd71af03a7",
+        "EN-c3e4cc183d345262",
+        "EN-9b6ea48b511ffd60",
+        "EN-bbdefa2950f49882",
+        "EN-06b5472c16feae4c",
+        "EN-0078ec52880eaa14",
+        "EN-240a52e3b5823aeb",
+        "EN-a6f83207fb0bf2aa",
+        "EN-26a060957221fd5d",
+        "EN-4e721fae5963494d",
+        "EN-a4eee620f5a081bd",
+        "EN-18b4bbfd60f4137e",
+        "EN-6eedfb906b1652fb",
+        "EN-32e83e92d45d71f6"
+      ],
+      "fdeIds": [
+        "FDE-34d87868ff636016",
+        "FDE-e79a238725a98c06",
+        "FDE-e1b2683e8d017358",
+        "FDE-0ee0fe3baa3f1364",
+        "FDE-d0a39c8df546833a",
+        "FDE-8506e8248e149161",
+        "FDE-560b710961006374",
+        "FDE-ae4c44cd0de9d48a"
+      ],
+      "hardwareIds": [],
+      "firstSeen": "2025-09-10",
+      "lastSeen": "2026-07-28"
+    },
+    {
       "id": "TX-use_case-customer_service",
       "name": "客户服务",
       "nodeType": "use_case",
@@ -84,6 +211,8 @@
         "EV-a9d0bb672c5ec0ab",
         "EV-88f4ee8cd57bdf42",
         "EV-b85139b8fba1a5c5",
+        "EV-1196b80b537957f2",
+        "EV-eb61ddca7f36f55c",
         "EV-9ff0c57323ed8318",
         "EV-4b545e310ded2baa",
         "EV-e869f17214557633",
@@ -106,6 +235,7 @@
         "EN-96eebba49dbbf422",
         "EN-9fbf261b62c1d7c0",
         "EN-28d0bd981118a907",
+        "EN-91776f01fce0c960",
         "EN-5e9e4638fa2ec9a4",
         "EN-d3565d297d476f10",
         "EN-3474e24464fc25a7",
@@ -130,6 +260,7 @@
         "EN-dba61afed18c85d6"
       ],
       "fdeIds": [
+        "FDE-34d87868ff636016",
         "FDE-d57aceb85d7bcd3e",
         "FDE-e79a238725a98c06",
         "FDE-3e499215265a81d5",
@@ -138,11 +269,50 @@
         "FDE-3665b073634d4b9d"
       ],
       "hardwareIds": [],
-      "firstSeen": "2026-03-04",
-      "lastSeen": "2026-07-26"
+      "firstSeen": "2019-03-11",
+      "lastSeen": "2026-07-28"
     }
   ],
   "fde": [
+    {
+      "id": "FDE-34d87868ff636016",
+      "eventId": "EV-eb61ddca7f36f55c",
+      "dataDate": "2026-07-28",
+      "date": "2026-07-23",
+      "title": "TTEC Digital 在 Agentforce 联络中心部署首个实时 Salesforce 客户",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "TTEC Digital",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "First Live Salesforce Customer on Agentforce Contact Center | MarketMinute",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "“The TTEC Digital team worked alongside us as true partners, taking the time to understand our clients, our coaches, and the realities of serving busy families managing tight budgets and full lives. With that insight, TTEC Digital implemented Agentforce Contact Center in a way that was designed around our needs, helping calls reach the right coach, enabling callbacks on our clients’ schedule, and using AI to handle data entry so our staff can stay focused on the conversation in front of them,” said George Reuter, managing director of impact and innovation at Compass Working Capital .",
+        "Earlier this year, TTEC Digital was selected for Salesforce's elite Forward Deployed Engineering Partner Network , enabling TTEC Digital architects to collaborate directly with Salesforce product engineering teams during implementation. That collaboration helped accelerate deployment from project kickoff to production in six weeks."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://wyow.marketminute.com/article/gnwcq-2026-7-23-ttec-digital-deploys-first-live-salesforce-customer-on-agentforce-contact-center",
+      "entityIds": [
+        "EN-5e9e4638fa2ec9a4",
+        "EN-3ccbd9105a45d8fc"
+      ]
+    },
     {
       "id": "FDE-d57aceb85d7bcd3e",
       "eventId": "EV-9ff0c57323ed8318",

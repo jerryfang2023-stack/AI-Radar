@@ -1,0 +1,287 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-008
+title: "微软发布 MAI-Cyber 1 模型"
+title_zh: "微软发布 MAI-Cyber 1 模型"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash"
+canonical_url: "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: official
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-27T00:00:00.000Z"
+collected_at: 2026-07-28T05:39:20.561Z
+language: mixed
+full_text_hash: 7fc93723556924ce
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-28/r-008-微软发布-mai-cyber-1-模型.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-28/r-008-微软发布-mai-cyber-1-模型.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6299,"paragraph_count":30,"sentence_count":48,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 6299
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7fc93723556924ce","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"微软发布 MAI-Cyber 1 模型","discovery_summary":"微软发布 MAI-Cyber 1 模型，专注于网络安全领域。该模型在 Hacker News 上获得 111 个点赞，引发社区关注。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash","discovered_at":"2026-07-28T05:29:44.812Z","rank_on_page":146,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 2afea9953d9cbbaa
+content_hash: 7fc93723556924ce
+semantic_hash: c3200adad3f2e4e8
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-27T00:00:00.000Z"
+last_seen_at: 2026-07-28T05:39:20.561Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","Microsoft","GitHub"],"products":["agent","Gemini","GPT-5","codex","agents","Copilot"],"people":[],"industries":["法律 / 法务","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["1","111","27","2026\nM","50%","90%","5.4","10%"],"quotes":[]}
+evidence_seed: {"company_actions":["Progress in AI has been startling and so has the new generation of cyber threats it’s unleashing.","Attackers now wield increasingly powerful capabilities, probing an ever-growing mountain of code for just a single weakness that lets them in."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["微软发布 MAI-Cyber 1 模型，专注于网络安全领域。该模型在 Hacker News 上获得 111 个点赞，引发社区关注。","Models Introducing MAI-Cyber-1-Flash inside MDASH World-class security at half the cost Mustafa Suleyman & Hayete Gallot July 27, 2026 Models Mustafa Suleyman & Hayete Gallot LI FB Today we’re announcing MAI-Cyber-1-Flash inside of MDASH, our multi-agent vulnerability identification and remediation harness.","As the cost of finding a flaw collapses, the old model of security, where you scan occasionally and patch eventually, is now obsolete."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"微软发布 MAI-Cyber 1 模型，专注于网络安全领域。该模型在 Hacker News 上获得 111 个点赞，引发社区关注。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Models Introducing MAI-Cyber-1-Flash inside MDASH World-class security at half the cost Mustafa Suleyman & Hayete Gallot July 27, 2026 Models Mustafa Suleyman & Hayete Gallot LI FB Today we’re announcing MAI-Cyber-1-Flash inside of MDASH, our multi-agent vulnerability identification and remediation harness.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"number","text":"Together they deliver world-class performance at 50% of the cost of leading models.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Progress in AI has been startling and so has the new generation of cyber threats it’s unleashing.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Attackers now wield increasingly powerful capabilities, probing an ever-growing mountain of code for just a single weakness that lets them in.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"As the cost of finding a flaw collapses, the old model of security, where you scan occasionally and patch eventually, is now obsolete.","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-28T05:39:20.561Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 微软发布 MAI-Cyber 1 模型
+
+## clean_text
+
+Models
+Introducing MAI-Cyber-1-Flash inside MDASH
+World-class security at half the cost
+Mustafa Suleyman
+& Hayete Gallot
+July 27, 2026
+Models
+Mustafa Suleyman
+& Hayete Gallot
+LI
+FB
+Today we’re announcing MAI-Cyber-1-Flash inside of MDASH, our multi-agent vulnerability identification and remediation harness. Together they deliver world-class performance at 50% of the cost of leading models.
+Progress in AI has been startling and so has the new generation of cyber threats it’s unleashing. Attackers now wield increasingly powerful capabilities, probing an ever-growing mountain of code for just a single weakness that lets them in.
+As the cost of finding a flaw collapses, the old model of security, where you scan occasionally and patch eventually, is now obsolete. If we’re to unlock the true benefits of AI, we must first build outstanding cyber models that help all of us harden the software the world runs on.
+That’s the motivation behind MAI-Cyber-1-Flash, which has been built to find challenging vulnerabilities in complex codebases. It’s been deeply integrated into MDASH, honed by the best cybersecurity experts in the industry and hardened across the largest security estate on the planet.
+This combined expertise delivers exceptional security protection, beating Mythos, Gemini and GPT on CyberGym, the gold standard benchmark for evaluating how systems reason over large codebases to find real vulnerabilities in the code.
+Picking the right model for the task
+Security is an always-on mission, and given the enormous volume of inbound attacks, token cost is now the real constraint for defenders. MAI-Cyber-1-Flash was designed to efficiently handle up to 90% of all tasks, enabling MDASH to use the larger and most costly models in our fleet (in this case GPT-5.4) for the 10% of exceptionally hard tasks that truly need them.
+The result is that the unified system of MDASH with MAI-Cyber-1-Flash delivers 96% on CyberGym (+12 pt above Mythos) .
+This combination delivers a 50% cost saving when compared against our best offering in MDASH today (GPT 5.4 + 5.4 mini + 5.3 codex). That’s the power of a well-tuned, multi-model system with access to uniquely rich historical training data. It ensures you always have the best model at the best price for every task.
+In this new environment, being able to go from identifying a new vulnerability to addressing it in real-time is critical. And while AI remediation of software vulnerabilities is now a key security workflow, there are many jobs to be done by Security practitioners themselves.
+That’s why today we’re also launching Perception , our agentic security systems, that provides teams of agents for a variety of security workflows in MDASH, to continuously monitor, patch, and close new threat vectors. Perception will also soon use MAI-Cyber-1-Flash for many more security workflows, beyond the software vulnerability work.
+Three things matter today: Model. Data. Harness.
+We have jointly optimized our world-class models, our unmatched historic data, and our expert-tuned harness to ensure that our customers have a uniquely powerful security offering.
+Model. MAI-Cyber-1-Flash is a compact, code-heavy security model derived from the MAI-Thinking-1 lineage, which was built from scratch, in-house, on the highest quality data. Details in our technical report .
+Data. Our deepest advantage. Decades of building world-class security systems now give us trillions of daily signals across identity, endpoint, cloud, and network, and an unmatched record of real exploits and remediations. No one can manufacture this history.
+Harness. MDASH , our multi-agent vulnerability identification and remediation harness, is tuned by the best security experts in the industry, who have created 100+ agents using multiple leading models to find, validate, and remediate vulnerabilities. Agentic code scanning is a critical function in the Security Operating Center and feeds Project Perception, our new agentic security system.
+Built with safety first
+Because MAI-Cyber-1-Flash is Microsoft’s first cyber model, we built trust into every layer of the system, from model training to customer deployment. The model was developed with a security-first calibration, rigorously evaluated by Microsoft’s AI Red Team, tested through automated and expert-led adversarial exercises, and independently assessed by a third party.
+Trust extends beyond the model itself. Through MDASH, customers get enterprise-grade controls including Role-Based Controls, tenant isolation, encryption, auditability, and sandboxed execution environments with no internet access. The result is a cyber model that delivers powerful capabilities to defenders while maintaining the governance, security, and control enterprises expect from Microsoft.
+Our hill-climbing machine
+Cybersecurity is not just a data-rich domain; it is a live reinforcement learning loop. Every day, defenders investigate threats, triage alerts, hunt adversaries, remediate vulnerabilities, deploy protections, and learn from the outcome.
+Microsoft sees that loop end to end: vulnerabilities through Microsoft Security Response Center ; attacks and defenses across identity, endpoint, cloud, data, browser, and applications; more than 100 trillion security signals every day ; and operational insight from 1.6 million customers. Because we can connect actions to outcomes; what was exploitable, what was contained, what was blocked, and what actually worked; we have more than data.
+Our MAI reinforcement learning loop gives us the foundation to build cyber models that improve continuously and become expert cyber defenders. That’ll remain our commitment to our customers for years to come.
+Build the Future With Us
+We’re a lean, talent-dense team of explorers, researchers, and full-stack engineers. We move fast, sweat the details, and operate at frontier scale with a roadmap to build the world’s most powerful AI models. Most importantly, we’re united by the belief that doing this right is the only way to do it at all. If our mission resonates with you, we’d love to talk.
+Explore all jobs
+Related Stories
+Hill-climbing MAI models for GitHub Copilot and Excel
+models
+Introducing MAI-Image-2.5-Pro and MAI-Voice-2-Flash
+models
+Bringing Ode Poetry to life with MAI’s audio models
+partnerships
+
+## full_text
+
+Models
+Introducing MAI-Cyber-1-Flash inside MDASH
+World-class security at half the cost
+Mustafa Suleyman
+& Hayete Gallot
+July 27, 2026
+Models
+Mustafa Suleyman
+& Hayete Gallot
+LI
+FB
+Today we’re announcing MAI-Cyber-1-Flash inside of MDASH, our multi-agent vulnerability identification and remediation harness. Together they deliver world-class performance at 50% of the cost of leading models.
+Progress in AI has been startling and so has the new generation of cyber threats it’s unleashing. Attackers now wield increasingly powerful capabilities, probing an ever-growing mountain of code for just a single weakness that lets them in.
+As the cost of finding a flaw collapses, the old model of security, where you scan occasionally and patch eventually, is now obsolete. If we’re to unlock the true benefits of AI, we must first build outstanding cyber models that help all of us harden the software the world runs on.
+That’s the motivation behind MAI-Cyber-1-Flash, which has been built to find challenging vulnerabilities in complex codebases. It’s been deeply integrated into MDASH, honed by the best cybersecurity experts in the industry and hardened across the largest security estate on the planet.
+This combined expertise delivers exceptional security protection, beating Mythos, Gemini and GPT on CyberGym, the gold standard benchmark for evaluating how systems reason over large codebases to find real vulnerabilities in the code.
+Picking the right model for the task
+Security is an always-on mission, and given the enormous volume of inbound attacks, token cost is now the real constraint for defenders. MAI-Cyber-1-Flash was designed to efficiently handle up to 90% of all tasks, enabling MDASH to use the larger and most costly models in our fleet (in this case GPT-5.4) for the 10% of exceptionally hard tasks that truly need them.
+The result is that the unified system of MDASH with MAI-Cyber-1-Flash delivers 96% on CyberGym (+12 pt above Mythos) .
+This combination delivers a 50% cost saving when compared against our best offering in MDASH today (GPT 5.4 + 5.4 mini + 5.3 codex). That’s the power of a well-tuned, multi-model system with access to uniquely rich historical training data. It ensures you always have the best model at the best price for every task.
+In this new environment, being able to go from identifying a new vulnerability to addressing it in real-time is critical. And while AI remediation of software vulnerabilities is now a key security workflow, there are many jobs to be done by Security practitioners themselves.
+That’s why today we’re also launching Perception , our agentic security systems, that provides teams of agents for a variety of security workflows in MDASH, to continuously monitor, patch, and close new threat vectors. Perception will also soon use MAI-Cyber-1-Flash for many more security workflows, beyond the software vulnerability work.
+Three things matter today: Model. Data. Harness.
+We have jointly optimized our world-class models, our unmatched historic data, and our expert-tuned harness to ensure that our customers have a uniquely powerful security offering.
+Model. MAI-Cyber-1-Flash is a compact, code-heavy security model derived from the MAI-Thinking-1 lineage, which was built from scratch, in-house, on the highest quality data. Details in our technical report .
+Data. Our deepest advantage. Decades of building world-class security systems now give us trillions of daily signals across identity, endpoint, cloud, and network, and an unmatched record of real exploits and remediations. No one can manufacture this history.
+Harness. MDASH , our multi-agent vulnerability identification and remediation harness, is tuned by the best security experts in the industry, who have created 100+ agents using multiple leading models to find, validate, and remediate vulnerabilities. Agentic code scanning is a critical function in the Security Operating Center and feeds Project Perception, our new agentic security system.
+Built with safety first
+Because MAI-Cyber-1-Flash is Microsoft’s first cyber model, we built trust into every layer of the system, from model training to customer deployment. The model was developed with a security-first calibration, rigorously evaluated by Microsoft’s AI Red Team, tested through automated and expert-led adversarial exercises, and independently assessed by a third party.
+Trust extends beyond the model itself. Through MDASH, customers get enterprise-grade controls including Role-Based Controls, tenant isolation, encryption, auditability, and sandboxed execution environments with no internet access. The result is a cyber model that delivers powerful capabilities to defenders while maintaining the governance, security, and control enterprises expect from Microsoft.
+Our hill-climbing machine
+Cybersecurity is not just a data-rich domain; it is a live reinforcement learning loop. Every day, defenders investigate threats, triage alerts, hunt adversaries, remediate vulnerabilities, deploy protections, and learn from the outcome.
+Microsoft sees that loop end to end: vulnerabilities through Microsoft Security Response Center ; attacks and defenses across identity, endpoint, cloud, data, browser, and applications; more than 100 trillion security signals every day ; and operational insight from 1.6 million customers. Because we can connect actions to outcomes; what was exploitable, what was contained, what was blocked, and what actually worked; we have more than data.
+Our MAI reinforcement learning loop gives us the foundation to build cyber models that improve continuously and become expert cyber defenders. That’ll remain our commitment to our customers for years to come.
+Build the Future With Us
+We’re a lean, talent-dense team of explorers, researchers, and full-stack engineers. We move fast, sweat the details, and operate at frontier scale with a roadmap to build the world’s most powerful AI models. Most importantly, we’re united by the belief that doing this right is the only way to do it at all. If our mission resonates with you, we’d love to talk.
+Explore all jobs
+Related Stories
+Hill-climbing MAI models for GitHub Copilot and Excel
+models
+Introducing MAI-Image-2.5-Pro and MAI-Voice-2-Flash
+models
+Bringing Ode Poetry to life with MAI’s audio models
+partnerships
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6299,"paragraph_count":30,"sentence_count":48,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   微软发布 MAI-Cyber 1 模型，专注于网络安全领域。该模型在 Hacker News 上获得 111 个点赞，引发社区关注。
+
+2. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   Models Introducing MAI-Cyber-1-Flash inside MDASH World-class security at half the cost Mustafa Suleyman & Hayete Gallot July 27, 2026 Models Mustafa Suleyman & Hayete Gallot LI FB Today we’re announcing MAI-Cyber-1-Flash inside of MDASH, our multi-agent vulnerability identification and remediation harness.
+
+3. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Together they deliver world-class performance at 50% of the cost of leading models.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Progress in AI has been startling and so has the new generation of cyber threats it’s unleashing.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Attackers now wield increasingly powerful capabilities, probing an ever-growing mountain of code for just a single weakness that lets them in.
+
+6. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   As the cost of finding a flaw collapses, the old model of security, where you scan occasionally and patch eventually, is now obsolete.
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, Microsoft, GitHub
+- products: agent, Gemini, GPT-5, codex, agents, Copilot
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 1, 111, 27, 2026
+M, 50%, 90%, 5.4, 10%
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Progress in AI has been startling and so has the new generation of cyber threats it’s unleashing. / Attackers now wield increasingly powerful capabilities, probing an ever-growing mountain of code for just a single weakness that lets them in.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 微软发布 MAI-Cyber 1 模型，专注于网络安全领域。该模型在 Hacker News 上获得 111 个点赞，引发社区关注。 / Models Introducing MAI-Cyber-1-Flash inside MDASH World-class security at half the cost Mustafa Suleyman & Hayete Gallot July 27, 2026 Models Mustafa Suleyman & Hayete Gallot LI FB Today we’re announcing MAI-Cyber-1-Flash inside of MDASH, our multi-agent vulnerability identification and remediation harness. / As the cost of finding a flaw collapses, the old model of security, where you scan occasionally and patch eventually, is now obsolete.
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"微软发布 MAI-Cyber 1 模型","discovery_summary":"微软发布 MAI-Cyber 1 模型，专注于网络安全领域。该模型在 Hacker News 上获得 111 个点赞，引发社区关注。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash","discovered_at":"2026-07-28T05:29:44.812Z","rank_on_page":146,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+微软发布 MAI-Cyber 1 模型，专注于网络安全领域。该模型在 Hacker News 上获得 111 个点赞，引发社区关注。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

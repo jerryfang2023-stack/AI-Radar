@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-27T03:18:25.889Z",
-    "latestDataDate": "2026-07-27",
-    "currentDate": "2026-07-27",
-    "eventCount": 1603,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-28T05:43:43.570Z",
+    "latestDataDate": "2026-07-28",
+    "currentDate": "2026-07-28",
+    "eventCount": 1656,
+    "quarantinedEventCount": 13
   },
   "node": {
     "id": "TX-use_case-cybersecurity",
@@ -26,10 +26,15 @@
       "EV-d4c9326c53dd927a",
       "EV-7012e774379b9c11",
       "EV-c81cb21337a9bb98",
+      "EV-6272444f30281858",
       "EV-9dab7fa55702e561",
       "EV-53f4f2a34b3ce1b4",
       "EV-b240fb11e65b018e",
       "EV-bd508dbe4205774f",
+      "EV-5f2acbfb8f54fd59",
+      "EV-6aae550a6523a8fd",
+      "EV-c9216f0145c3ef2b",
+      "EV-395884a4c090103c",
       "EV-ea6abb5378846a71",
       "EV-6ce069b1845f5a52",
       "EV-7c836c34e7cf36ee",
@@ -57,7 +62,8 @@
       "EV-c7a2774b07554f5d",
       "EV-f1418d9e3b1413b7",
       "EV-2eabd03665cbdef7",
-      "EV-a35a3871bf36fea2"
+      "EV-a35a3871bf36fea2",
+      "EV-dbda21182e61923b"
     ],
     "entityIds": [
       "EN-871e6f4bf723cb1b",
@@ -74,13 +80,17 @@
       "EN-449777124b1466a8",
       "EN-c70eca6b0f88f44d",
       "EN-96eebba49dbbf422",
+      "EN-916a98f0fa2a39af",
+      "EN-9fbf261b62c1d7c0",
+      "EN-3ccbd9105a45d8fc",
       "EN-a23572554f6c861e",
       "EN-8652f6cd9088f1fa",
       "EN-fb2a436a76aa9fde",
-      "EN-9fbf261b62c1d7c0",
       "EN-ea87a2bd84296f73",
       "EN-4094a2b7125c7564",
       "EN-cbc62794911ff31b",
+      "EN-2b6e51bec93e86c1",
+      "EN-0d4bbb73ac4c7513",
       "EN-e73b79a0b10f8cdb",
       "EN-2ca3f7d58fdda0f5",
       "EN-02be787a1aacea06",
@@ -88,7 +98,6 @@
       "EN-d9352ce019e77ab3",
       "EN-ac123e56b0168ec2",
       "EN-d5b8915a8c232010",
-      "EN-2b6e51bec93e86c1",
       "EN-31055a8d9856fce4",
       "EN-7839fb10a8f14c70",
       "EN-ea3bd73e2b506e00",
@@ -105,7 +114,11 @@
       "EN-ced86039c0ad6a7c",
       "EN-3a13916345b60fad",
       "EN-b59c577ed73536c6",
-      "EN-842a7da99bd249d4"
+      "EN-842a7da99bd249d4",
+      "EN-65c9b6f61b2502b0",
+      "EN-1ad3d4263b03cdf5",
+      "EN-4906a49adc5c472b",
+      "EN-8631ef491b6a9786"
     ],
     "fdeIds": [
       "FDE-b44bbcf1ee8caad0",
@@ -115,7 +128,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-04-16",
-    "lastSeen": "2026-07-26"
+    "lastSeen": "2026-07-28"
   },
   "events": [
     {
@@ -938,6 +951,78 @@
       "publisher": "Bloomberg：Technology（RSS）"
     },
     {
+      "id": "EV-6272444f30281858",
+      "dataDate": "2026-07-28",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-28",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 等多家行业领袖联合成立 Open Secure AI Alliance，推动 AI 安全与防御开源化",
+      "originalTitle": "",
+      "subject": "NVIDIA 等多家行业领袖联合成立 Open Secure AI",
+      "action": "Alliance",
+      "object": "，推动 AI 安全与防御开源化",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-2dc010636b9dce91",
+        "EN-916a98f0fa2a39af",
+        "EN-9fbf261b62c1d7c0",
+        "EN-3ccbd9105a45d8fc",
+        "EN-b5738c169b693bee"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Databricks",
+        "IBM",
+        "Microsoft",
+        "Salesforce",
+        "ServiceNow"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://blogs.nvidia.com/blog/open-secure-ai-alliance",
+      "publisher": "NVIDIA Blog（RSS）"
+    },
+    {
       "id": "EV-9dab7fa55702e561",
       "dataDate": "2026-07-07",
       "date": "2026-07-07",
@@ -1301,6 +1386,364 @@
       "products": [],
       "sourceUrl": "https://markets.ft.com/data/announce/full?dockey=1330-1001176217en-1878JJNUD9H6E0K0LPGOSGE4ST",
       "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-5f2acbfb8f54fd59",
+      "dataDate": "2026-07-28",
+      "date": "2026-07-28",
+      "updatedDate": "2026-07-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "微软 AI CEO 称 OpenAI 模型失控攻击事件是 AI 网络攻击崛起的警告信号",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "微软 AI CEO 称 OpenAI 模型失控攻击事件是 AI 网络攻击崛起的警告信号",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-2b6e51bec93e86c1"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "Anthropic",
+        "OpenAI",
+        "Google DeepMind"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/982/296.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-6aae550a6523a8fd",
+      "dataDate": "2026-07-28",
+      "date": "2026-07-28",
+      "updatedDate": "2026-07-28",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "微软推出首个网络安全 AI 模型 MAI-Cyber-1-Flash",
+      "originalTitle": "",
+      "subject": "微软",
+      "action": "推出首个网络安全 AI 模型",
+      "object": "MAI-Cyber-1-Flash",
+      "metrics": [
+        "95.95%",
+        "90%",
+        "10%",
+        "50%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42",
+        "EN-0d4bbb73ac4c7513"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "Anthropic",
+        "OpenAI",
+        "MAI-Cyber-1-Flash"
+      ],
+      "productName": "MAI-Cyber-1-Flash",
+      "products": [
+        {
+          "name": "MAI-Cyber-1-Flash",
+          "type": "模型",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/982/312.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-c9216f0145c3ef2b",
+      "dataDate": "2026-07-28",
+      "date": "2026-07-28",
+      "updatedDate": "2026-07-28",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "微软发布自有网络安全模型MAI-Cyber-1-Flash，但最艰巨任务仍依赖OpenAI",
+      "originalTitle": "Microsoft launches its own cybersecurity model MAI-Cyber-1-Flash but still depends on OpenAI for the toughest tasks",
+      "subject": "Microsoft",
+      "action": "launches its own cybersecurity model",
+      "object": "MAI-Cyber-1-Flash but still depends on OpenAI for the toughest tasks",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-7d3194f79e645c42",
+        "EN-0d4bbb73ac4c7513"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "OpenAI",
+        "MAI-Cyber-1-Flash"
+      ],
+      "productName": "MAI-Cyber-1-Flash",
+      "products": [
+        {
+          "name": "MAI-Cyber-1-Flash",
+          "type": "模型",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/microsoft-launches-its-own-cybersecurity-model-mai-cyber-1-flash-but-still-depends-on-openai-for-the-toughest-tasks",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-395884a4c090103c",
+      "dataDate": "2026-07-28",
+      "date": "2026-07-27",
+      "updatedDate": "2026-07-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "微软发布首个网络安全专用模型 MAI-Cyber-1-Flash 及 Perception 平台",
+      "originalTitle": "",
+      "subject": "微软",
+      "action": "发布",
+      "object": "首个网络安全专用模型 MAI-Cyber-1-Flash 及 Perception 平台",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-9fbf261b62c1d7c0",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-7d3194f79e645c42",
+        "EN-0d4bbb73ac4c7513"
+      ],
+      "entityNames": [
+        "Microsoft",
+        "Anthropic",
+        "Google",
+        "OpenAI",
+        "MAI-Cyber-1-Flash"
+      ],
+      "productName": "MAI-Cyber-1-Flash",
+      "products": [
+        {
+          "name": "MAI-Cyber-1-Flash",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Microsoft"
+          ]
+        }
+      ],
+      "sourceUrl": "https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system",
+      "publisher": "TechCrunch：AI（RSS）"
     },
     {
       "id": "EV-ea6abb5378846a71",
@@ -3688,6 +4131,93 @@
       "products": [],
       "sourceUrl": "https://ithome.com/0/961/014.htm",
       "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-dbda21182e61923b",
+      "dataDate": "2026-07-28",
+      "date": "2026-07-28",
+      "updatedDate": "2026-07-28",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "我国启动\"人工智能大模型 IPv6 能力提升专项行动\"，推动生成式 AI 全面支持 IPv6",
+      "originalTitle": "",
+      "subject": "中央网信办联合北京、上海、浙江、深圳四地网信办，会同5家头部大模型企业",
+      "action": "policy_regulation",
+      "object": "人工智能大模型 IPv6 能力提升专项行动",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "cybersecurity",
+            "dimensionName": "应用场景",
+            "name": "网络安全"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "cybersecurity",
+          "dimensionName": "应用场景",
+          "name": "网络安全"
+        }
+      ],
+      "entityIds": [
+        "EN-65c9b6f61b2502b0",
+        "EN-1ad3d4263b03cdf5",
+        "EN-4906a49adc5c472b",
+        "EN-8631ef491b6a9786"
+      ],
+      "entityNames": [
+        "中央网信办联合北京",
+        "深圳四地网信办",
+        "上海",
+        "浙江"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/0/982/501.htm",
+      "publisher": "IT之家（RSS）"
     }
   ],
   "entities": [
@@ -3813,7 +4343,9 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [],
+      "aliases": [
+        "谷歌"
+      ],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -3837,6 +4369,7 @@
         "EV-cec235426920c522",
         "EV-051d1924db7ba65d",
         "EV-777eb5b7783b71fb",
+        "EV-f55d16df5b5fecb2",
         "EV-5a9fe80f8e4ae066",
         "EV-b4b5d141dac164c2",
         "EV-6e4dd5111dfaae9c",
@@ -3848,6 +4381,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-395884a4c090103c",
+        "EV-6f26809c0ae960a8",
         "EV-33e98b8bbd0a11b1",
         "EV-2634b786bde9fb8e",
         "EV-6aabfaa0c7c7f838",
@@ -3943,6 +4478,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-5bfcc506994f103f",
         "EV-909cf18b467d6fdf",
         "EV-89bdda008227fb6b",
         "EV-ef823877347ff40f",
@@ -3964,6 +4500,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
@@ -3971,16 +4509,15 @@
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
+        "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
@@ -3993,14 +4530,16 @@
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
+        "EN-31055a8d9856fce4",
         "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
+        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
-        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
+        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -4008,7 +4547,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -4040,6 +4579,7 @@
         "EV-a00763037a94d512",
         "EV-0e84a2f49d765ce3",
         "EV-467d1a701d21327d",
+        "EV-87b7a16e70770a36",
         "EV-e09efcd49776cb95",
         "EV-c2fe5030e8c71d8a",
         "EV-c3f617e75d303f59",
@@ -4059,6 +4599,9 @@
         "EV-79c3f4f7cb2f2c86",
         "EV-7263caa45bbf168e",
         "EV-234ad54940674bf6",
+        "EV-6272444f30281858",
+        "EV-92be9fa58b1ee19f",
+        "EV-f55d16df5b5fecb2",
         "EV-06526dd6cb2157f4",
         "EV-98aa6402a8e256db",
         "EV-6beed07120c6c6d0",
@@ -4075,6 +4618,9 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-2ee06634c0ce9f30",
+        "EV-afb3bceddc36a696",
+        "EV-c4f8ef356373ab24",
         "EV-272c5c798bc95d9d",
         "EV-0f0b2013927ce156",
         "EV-5bc7efca0bc7fec0",
@@ -4143,6 +4689,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-8993e021ac17df4a",
         "EV-34929bdd016dc8d6",
+        "EV-eae8f316bc05820b",
         "EV-cd7e18de453152dd",
         "EV-89bdda008227fb6b",
         "EV-89f9216de5b559ac",
@@ -4155,15 +4702,15 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-use_case-cybersecurity",
@@ -4210,7 +4757,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-27"
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-b5738c169b693bee",
@@ -4227,6 +4774,7 @@
         "EV-fa46e5177d548bad",
         "EV-eb2b4ee2c8cb0daa",
         "EV-01df8e489a34893b",
+        "EV-6272444f30281858",
         "EV-181b425d2a600cad",
         "EV-80f4e7972384ace8",
         "EV-3c26d873f436981b",
@@ -4244,7 +4792,7 @@
         "EN-8d4321d936320802"
       ],
       "firstSeen": "2026-05-06",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-2dc010636b9dce91",
@@ -4262,6 +4810,7 @@
         "EV-0e84a2f49d765ce3",
         "EV-7add33b4c74dbf1a",
         "EV-c5643983538c6513",
+        "EV-6272444f30281858",
         "EV-226a363f84676808",
         "EV-9ae9aa86e51e64a2",
         "EV-6ce6b9c9780b97d9"
@@ -4279,7 +4828,7 @@
         "EN-a42d5d95234db6c4"
       ],
       "firstSeen": "2026-05-20",
-      "lastSeen": "2026-07-18"
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-ddadc7e89f7cd629",
@@ -4324,6 +4873,7 @@
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
         "EV-7abd8ec418f1e7f3",
+        "EV-fb817fb0a5e63323",
         "EV-dfddbb260b3d1c77",
         "EV-78a11d309c3d4e97",
         "EV-20d762872664fddb",
@@ -4365,6 +4915,9 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-92be9fa58b1ee19f",
+        "EV-dc56b5ae3009f6f5",
+        "EV-f55d16df5b5fecb2",
         "EV-286574206caa37ab",
         "EV-eec1e6857f0e0b2b",
         "EV-fdf6128ae36e1f5e",
@@ -4374,6 +4927,7 @@
         "EV-b833b29d904b39ac",
         "EV-48015ed51ec9be9f",
         "EV-8ab833e13ecaa916",
+        "EV-9793aeed336b1357",
         "EV-41ffecb51e643397",
         "EV-5f199c45a41b8555",
         "EV-26183a56cf9ed63c",
@@ -4381,6 +4935,15 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-0d5a32aca724d30e",
+        "EV-272aea63d4e50349",
+        "EV-5f2acbfb8f54fd59",
+        "EV-6aae550a6523a8fd",
+        "EV-c9216f0145c3ef2b",
+        "EV-2ee06634c0ce9f30",
+        "EV-395884a4c090103c",
+        "EV-56626f2604aa1e30",
+        "EV-a9b7129f547eef64",
         "EV-272c5c798bc95d9d",
         "EV-33e98b8bbd0a11b1",
         "EV-c9aba59ba04c9fc8",
@@ -4500,6 +5063,7 @@
         "EV-3550e9863266ea96",
         "EV-ca420d07e12369f1",
         "EV-773ffcc6e1df56fa",
+        "EV-cfce55156a2ed7d2",
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
@@ -4551,6 +5115,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
@@ -4558,11 +5124,9 @@
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-long_context",
@@ -4604,7 +5168,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-27"
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-449777124b1466a8",
@@ -4645,6 +5209,7 @@
         "EV-fbb105be35c21eb4",
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
+        "EV-fb817fb0a5e63323",
         "EV-dfddbb260b3d1c77",
         "EV-78a11d309c3d4e97",
         "EV-4b8064b1139e1724",
@@ -4677,6 +5242,9 @@
         "EV-3a704c40204ecfd9",
         "EV-94e0afb44c320c99",
         "EV-777eb5b7783b71fb",
+        "EV-5d185ac33faedb68",
+        "EV-f55d16df5b5fecb2",
+        "EV-f65a1b053e5dca70",
         "EV-75b9b997e9c7e5d1",
         "EV-eec1e6857f0e0b2b",
         "EV-7f2811d2272cf4a3",
@@ -4696,6 +5264,15 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-0d5a32aca724d30e",
+        "EV-5f2acbfb8f54fd59",
+        "EV-6aae550a6523a8fd",
+        "EV-ab93c7a2f4178e93",
+        "EV-afcefb5d86a2db45",
+        "EV-2ee06634c0ce9f30",
+        "EV-395884a4c090103c",
+        "EV-6035ab78ed393335",
+        "EV-6f2b7d7bc72b1ed4",
         "EV-272c5c798bc95d9d",
         "EV-0e616f9e775a77dc",
         "EV-c59d80939faf17cc",
@@ -4886,6 +5463,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
@@ -4894,7 +5472,6 @@
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-long_context",
@@ -4914,6 +5491,7 @@
         "TX-industry-education"
       ],
       "relatedEntityIds": [
+        "EN-5a4c2be958c0af72",
         "EN-163fa867e7ef6ee6",
         "EN-9f15bb7e29e191eb",
         "EN-fa12a0c13e906f43",
@@ -4926,7 +5504,6 @@
         "EN-ef11a801c5bd3673",
         "EN-fab30471ea65d627",
         "EN-3a13916345b60fad",
-        "EN-5a4c2be958c0af72",
         "EN-968e2d5b08687bf4",
         "EN-2c063f604e634100",
         "EN-d0a0acb9a5ef0560",
@@ -4940,7 +5517,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-27"
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -5083,6 +5660,7 @@
         "EV-6ce6b9c9780b97d9",
         "EV-dd62847548bb6ae3",
         "EV-34929bdd016dc8d6",
+        "EV-0fd8bb718db1118c",
         "EV-067f57f6e6ffa6ce",
         "EV-02b07069713d9a1c",
         "EV-8cb2374f76202ecc",
@@ -5098,18 +5676,18 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
-        "TX-use_case-robotics_automation",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
         "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-mixture_of_experts",
@@ -5130,7 +5708,249 @@
         "EN-c70eca6b0f88f44d"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-07-26"
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-916a98f0fa2a39af",
+      "name": "IBM",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-32d7c52f89d74e88",
+        "EV-ad40755ca624afe7",
+        "EV-bcb74b02448b7d78",
+        "EV-df2357fc3c3b4f5e",
+        "EV-bbc1042dcf5ad317",
+        "EV-6272444f30281858",
+        "EV-b95539d17772a4ce",
+        "EV-5bc7efca0bc7fec0",
+        "EV-9fb08b68f301eb88",
+        "EV-347d250e2769de9a",
+        "EV-7449d239223d4928",
+        "EV-0eef30387327e73f",
+        "EV-2f56b99f72ad6c4f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-use_case-cybersecurity",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-technology-model_context_protocol",
+        "TX-technology-tool_use",
+        "TX-technology-reasoning",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-dc6c28a2123e8efb"
+      ],
+      "firstSeen": "2026-05-15",
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-9fbf261b62c1d7c0",
+      "name": "Microsoft",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "微软"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-97854226b6f43a95",
+        "EV-86ca5af11ee4d275",
+        "EV-52115fee0e716170",
+        "EV-20d762872664fddb",
+        "EV-88f4ee8cd57bdf42",
+        "EV-44a4e92c03a31ab1",
+        "EV-7585b033d4005977",
+        "EV-005a017a310d1fdd",
+        "EV-e09efcd49776cb95",
+        "EV-883d3b5f6d30eb48",
+        "EV-fa66f00e9d4b20c2",
+        "EV-f31feb5ed41be8f2",
+        "EV-4fba2b2f1ac10a79",
+        "EV-bcb74b02448b7d78",
+        "EV-47a16db069ed320e",
+        "EV-381b79897d896995",
+        "EV-d756f05478303505",
+        "EV-7263caa45bbf168e",
+        "EV-8abf5adc3e72fbb8",
+        "EV-6272444f30281858",
+        "EV-f55d16df5b5fecb2",
+        "EV-16cfe946bbf69aa3",
+        "EV-eec1e6857f0e0b2b",
+        "EV-6acfb15c012ddf6d",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-b833b29d904b39ac",
+        "EV-9dab7fa55702e561",
+        "EV-b2e374d54b10b9af",
+        "EV-4763b46821ab746e",
+        "EV-58c1cc3749294649",
+        "EV-c0a65877001ed413",
+        "EV-bd508dbe4205774f",
+        "EV-272aea63d4e50349",
+        "EV-5f2acbfb8f54fd59",
+        "EV-6aae550a6523a8fd",
+        "EV-c9216f0145c3ef2b",
+        "EV-395884a4c090103c",
+        "EV-272c5c798bc95d9d",
+        "EV-5bc7efca0bc7fec0",
+        "EV-702276a31f123374",
+        "EV-37ff2485172cab0b",
+        "EV-82ae0ea3bfe336a1",
+        "EV-243e73016576fa43",
+        "EV-563843979fb55b9b",
+        "EV-6c81f03e885f10af",
+        "EV-e1e30a2a4a5232c6",
+        "EV-cd067fa6f39fe828",
+        "EV-1e611bcabcb049e9",
+        "EV-118317b7f92e5e16",
+        "EV-c4723445b11bb275",
+        "EV-7963d8c78531f12d",
+        "EV-7c899d5decafc42f",
+        "EV-b920999c64aa9ef6",
+        "EV-33292a33d0f4d599",
+        "EV-b3a050d576cea2f2",
+        "EV-fdcc4ff01b49053e",
+        "EV-cadcc94249dea81d",
+        "EV-dae42c1daf8ba2f8",
+        "EV-b862692915ae70bb",
+        "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
+        "EV-0370a17f0ef39c3e",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-7309586168387ad8",
+        "EV-8aead769e84de342",
+        "EV-7fb25ff3d853c314",
+        "EV-3acf607a02706fa8",
+        "EV-4ee99f92b011d16f",
+        "EV-9009adaed650ddde",
+        "EV-8a26b85b4f432525",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-10aac036228b3c6b",
+        "EV-8495af729cd05f62",
+        "EV-e28e134345ea5f99",
+        "EV-f7484ad16a6d1876",
+        "EV-d2d1834222ab32d3",
+        "EV-04c2ffd7f6b10126",
+        "EV-922de7a46f447efa",
+        "EV-1f61330a3f828179",
+        "EV-523e5de44cc464fb",
+        "EV-ae89898e7aa4a4d6",
+        "EV-d596f111808bd55b",
+        "EV-a4f052325d0ef230",
+        "EV-6ce6b9c9780b97d9",
+        "EV-bce258f8f915ff5f",
+        "EV-89bdda008227fb6b",
+        "EV-62df953d81def866",
+        "EV-1b92b6c835ce240c",
+        "EV-3da14e3743571e92",
+        "EV-d9a78a839d6c628f",
+        "EV-1587a760d81451be",
+        "EV-33e7429a7bc94840",
+        "EV-022d1f3160d94048",
+        "EV-933294dfb2d19a67",
+        "EV-7580a050ca19a8ae"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
+        "TX-technology-computer_use",
+        "TX-technology-agentic_execution",
+        "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-automotive_transportation",
+        "TX-use_case-customer_service",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-data_analysis",
+        "TX-technology-on_device",
+        "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-industry-telecommunications",
+        "TX-technology-reasoning",
+        "TX-technology-human_in_loop",
+        "TX-technology-distillation",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
+        "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
+        "EN-d2f4e09cb01afa3c",
+        "EN-7d3194f79e645c42",
+        "EN-38945a66b4806b11",
+        "EN-c141d2237427f30d",
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
+      ],
+      "firstSeen": "2026-02-13",
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-3ccbd9105a45d8fc",
+      "name": "Salesforce",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-15cc72d7c78cad3d",
+        "EV-9300044a58395552",
+        "EV-4e7a32c9ee893918",
+        "EV-236cbc2d64f0c455",
+        "EV-14a666fc27d73a80",
+        "EV-fb5d2ae875255804",
+        "EV-f020dd198aa2f952",
+        "EV-cc7020e12bcaa0d7",
+        "EV-d9270ae7b862212b",
+        "EV-3f8f6a578be79988",
+        "EV-910ebb509f1d437b",
+        "EV-eb61ddca7f36f55c",
+        "EV-9ff0c57323ed8318",
+        "EV-8b73e88ffd3569b2",
+        "EV-30d7f1c5dc8ea464",
+        "EV-6272444f30281858",
+        "EV-9009adaed650ddde",
+        "EV-11a8e196deb21300",
+        "EV-f7aa6d43b75238fb"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-manufacturing",
+        "TX-technology-code_generation",
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-industry-financial_services",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-customer_service",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2023-03-21",
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-a23572554f6c861e",
@@ -5204,151 +6024,6 @@
       "lastSeen": "2026-07-17"
     },
     {
-      "id": "EN-9fbf261b62c1d7c0",
-      "name": "Microsoft",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "微软"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-97854226b6f43a95",
-        "EV-86ca5af11ee4d275",
-        "EV-52115fee0e716170",
-        "EV-20d762872664fddb",
-        "EV-88f4ee8cd57bdf42",
-        "EV-44a4e92c03a31ab1",
-        "EV-7585b033d4005977",
-        "EV-e09efcd49776cb95",
-        "EV-883d3b5f6d30eb48",
-        "EV-fa66f00e9d4b20c2",
-        "EV-f31feb5ed41be8f2",
-        "EV-4fba2b2f1ac10a79",
-        "EV-bcb74b02448b7d78",
-        "EV-47a16db069ed320e",
-        "EV-381b79897d896995",
-        "EV-d756f05478303505",
-        "EV-7263caa45bbf168e",
-        "EV-8abf5adc3e72fbb8",
-        "EV-16cfe946bbf69aa3",
-        "EV-eec1e6857f0e0b2b",
-        "EV-6acfb15c012ddf6d",
-        "EV-2fab4396000198d2",
-        "EV-3fb492fb45980541",
-        "EV-b833b29d904b39ac",
-        "EV-9dab7fa55702e561",
-        "EV-b2e374d54b10b9af",
-        "EV-4763b46821ab746e",
-        "EV-58c1cc3749294649",
-        "EV-c0a65877001ed413",
-        "EV-bd508dbe4205774f",
-        "EV-272c5c798bc95d9d",
-        "EV-5bc7efca0bc7fec0",
-        "EV-702276a31f123374",
-        "EV-37ff2485172cab0b",
-        "EV-82ae0ea3bfe336a1",
-        "EV-243e73016576fa43",
-        "EV-563843979fb55b9b",
-        "EV-6c81f03e885f10af",
-        "EV-e1e30a2a4a5232c6",
-        "EV-cd067fa6f39fe828",
-        "EV-1e611bcabcb049e9",
-        "EV-118317b7f92e5e16",
-        "EV-c4723445b11bb275",
-        "EV-7963d8c78531f12d",
-        "EV-7c899d5decafc42f",
-        "EV-b920999c64aa9ef6",
-        "EV-33292a33d0f4d599",
-        "EV-b3a050d576cea2f2",
-        "EV-fdcc4ff01b49053e",
-        "EV-cadcc94249dea81d",
-        "EV-dae42c1daf8ba2f8",
-        "EV-b862692915ae70bb",
-        "EV-51aed98773a9fca1",
-        "EV-cc3b92fe233953cf",
-        "EV-0370a17f0ef39c3e",
-        "EV-578a9db1fe952d0a",
-        "EV-b93b5cc15823e9c3",
-        "EV-7309586168387ad8",
-        "EV-8aead769e84de342",
-        "EV-7fb25ff3d853c314",
-        "EV-3acf607a02706fa8",
-        "EV-4ee99f92b011d16f",
-        "EV-9009adaed650ddde",
-        "EV-8a26b85b4f432525",
-        "EV-f953555178744c22",
-        "EV-28145c97a7237d6d",
-        "EV-10aac036228b3c6b",
-        "EV-8495af729cd05f62",
-        "EV-e28e134345ea5f99",
-        "EV-f7484ad16a6d1876",
-        "EV-d2d1834222ab32d3",
-        "EV-04c2ffd7f6b10126",
-        "EV-922de7a46f447efa",
-        "EV-1f61330a3f828179",
-        "EV-523e5de44cc464fb",
-        "EV-ae89898e7aa4a4d6",
-        "EV-d596f111808bd55b",
-        "EV-a4f052325d0ef230",
-        "EV-6ce6b9c9780b97d9",
-        "EV-bce258f8f915ff5f",
-        "EV-89bdda008227fb6b",
-        "EV-62df953d81def866",
-        "EV-1b92b6c835ce240c",
-        "EV-3da14e3743571e92",
-        "EV-d9a78a839d6c628f",
-        "EV-1587a760d81451be",
-        "EV-33e7429a7bc94840",
-        "EV-022d1f3160d94048",
-        "EV-933294dfb2d19a67",
-        "EV-7580a050ca19a8ae"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-computer_use",
-        "TX-technology-agentic_execution",
-        "TX-industry-technology",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-use_case-robotics_automation",
-        "TX-industry-healthcare_life_sciences",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-automotive_transportation",
-        "TX-technology-code_generation",
-        "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity",
-        "TX-use_case-data_analysis",
-        "TX-technology-on_device",
-        "TX-technology-open_weights",
-        "TX-technology-model_context_protocol",
-        "TX-industry-telecommunications",
-        "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
-        "TX-technology-distillation",
-        "TX-technology-image_generation"
-      ],
-      "relatedEntityIds": [
-        "EN-688f8db7018da7d4",
-        "EN-827b607311e6593e",
-        "EN-068e7ccb7d4b07a6",
-        "EN-8652f6cd9088f1fa",
-        "EN-597d8c4afa5fe3d6",
-        "EN-d2f4e09cb01afa3c",
-        "EN-7d3194f79e645c42",
-        "EN-38945a66b4806b11",
-        "EN-c141d2237427f30d",
-        "EN-8d4321d936320802",
-        "EN-10fce287b4b1464c"
-      ],
-      "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-27"
-    },
-    {
       "id": "EN-ea87a2bd84296f73",
       "name": "Rubrik Announces Upcoming",
       "entityType": "organization_candidate",
@@ -5386,8 +6061,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
+        "TX-technology-agentic_execution",
         "TX-use_case-cybersecurity"
       ],
       "relatedEntityIds": [],
@@ -5433,22 +6108,111 @@
         "EV-84b423077bf8dac8",
         "EV-7f9631d793292d07",
         "EV-8993e021ac17df4a",
+        "EV-67a69ab5b20da3c1",
         "EV-1b92b6c835ce240c",
         "EV-933294dfb2d19a67"
       ],
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
-        "TX-technology-agentic_execution",
         "TX-use_case-robotics_automation",
+        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-use_case-customer_service",
         "TX-use_case-cybersecurity"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2025-12-02",
-      "lastSeen": "2026-07-20"
+      "firstSeen": "2023-11-28",
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-2b6e51bec93e86c1",
+      "name": "Google DeepMind",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "DeepMind"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6f092cfc7a064d64",
+        "EV-d4e44892226be468",
+        "EV-1ac32035d5e425e1",
+        "EV-19ebde6e2de35fc9",
+        "EV-67ef7accd26a07a0",
+        "EV-a7e1ecd212474e00",
+        "EV-d961d3ad02f6ae14",
+        "EV-5f2acbfb8f54fd59",
+        "EV-59229486408edb05",
+        "EV-6654f62015eff8e3",
+        "EV-7c6a9f4ee4829976",
+        "EV-93c6ccf23cc422cb",
+        "EV-5babb43f4b4d302f",
+        "EV-ff10670ad06959ec",
+        "EV-011eeba13ebcc9a8",
+        "EV-8eed6489ab514823",
+        "EV-3ef3e18df61a00d8",
+        "EV-568d2aeab5234e48",
+        "EV-f68e00bb9fd49fac",
+        "EV-3e9a0d1be6de5096",
+        "EV-e96aba142e46eba1",
+        "EV-d49da50484ba781f",
+        "EV-81e297ea6f8fde3b",
+        "EV-68edd592c36dccd3"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-code_generation",
+        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-technology-vision_language",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-cybersecurity",
+        "TX-technology-retrieval_augmented_generation",
+        "TX-use_case-research_science",
+        "TX-technology-video_generation",
+        "TX-industry-media_entertainment",
+        "TX-technology-image_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-18f0900d6c487f59",
+        "EN-92af3ce2fb97edf3",
+        "EN-d56aa2f9908f566a",
+        "EN-085598c00f2aaccf",
+        "EN-a3c3b987b09fc1bb"
+      ],
+      "firstSeen": "2026-06-02",
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-0d4bbb73ac4c7513",
+      "name": "MAI-Cyber-1-Flash",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-6aae550a6523a8fd",
+        "EV-c9216f0145c3ef2b",
+        "EV-395884a4c090103c"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-27",
+      "lastSeen": "2026-07-28"
     },
     {
       "id": "EN-e73b79a0b10f8cdb",
@@ -5540,9 +6304,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
         "TX-use_case-cybersecurity"
       ],
       "relatedEntityIds": [
@@ -5634,70 +6398,6 @@
       "lastSeen": "2026-07-22"
     },
     {
-      "id": "EN-2b6e51bec93e86c1",
-      "name": "Google DeepMind",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌 DeepMind",
-        "DeepMind"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-6f092cfc7a064d64",
-        "EV-d4e44892226be468",
-        "EV-1ac32035d5e425e1",
-        "EV-19ebde6e2de35fc9",
-        "EV-67ef7accd26a07a0",
-        "EV-a7e1ecd212474e00",
-        "EV-d961d3ad02f6ae14",
-        "EV-59229486408edb05",
-        "EV-6654f62015eff8e3",
-        "EV-7c6a9f4ee4829976",
-        "EV-93c6ccf23cc422cb",
-        "EV-5babb43f4b4d302f",
-        "EV-ff10670ad06959ec",
-        "EV-011eeba13ebcc9a8",
-        "EV-8eed6489ab514823",
-        "EV-3ef3e18df61a00d8",
-        "EV-568d2aeab5234e48",
-        "EV-f68e00bb9fd49fac",
-        "EV-3e9a0d1be6de5096",
-        "EV-e96aba142e46eba1",
-        "EV-d49da50484ba781f",
-        "EV-81e297ea6f8fde3b",
-        "EV-68edd592c36dccd3"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
-        "TX-technology-multimodal",
-        "TX-technology-vision_language",
-        "TX-technology-code_generation",
-        "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
-        "TX-technology-retrieval_augmented_generation",
-        "TX-use_case-research_science",
-        "TX-technology-video_generation",
-        "TX-industry-media_entertainment",
-        "TX-technology-image_generation",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-18f0900d6c487f59",
-        "EN-92af3ce2fb97edf3",
-        "EN-d56aa2f9908f566a",
-        "EN-085598c00f2aaccf",
-        "EN-a3c3b987b09fc1bb"
-      ],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-22"
-    },
-    {
       "id": "EN-31055a8d9856fce4",
       "name": "Gemini 3.5 Flash Cyber",
       "entityType": "product_candidate",
@@ -5716,7 +6416,9 @@
       "classificationRefs": [
         "TX-use_case-cybersecurity"
       ],
-      "relatedEntityIds": [],
+      "relatedEntityIds": [
+        "EN-bbdefa2950f49882"
+      ],
       "firstSeen": "2026-07-21",
       "lastSeen": "2026-07-22"
     },
@@ -5770,6 +6472,7 @@
         "EV-427081ec574b43bb",
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
+        "EV-fb817fb0a5e63323",
         "EV-917a390341b9fce6",
         "EV-3f8f6a578be79988",
         "EV-467d1a701d21327d",
@@ -5828,6 +6531,7 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-technology-computer_use",
         "TX-technology-agentic_execution",
         "TX-industry-technology",
@@ -5835,7 +6539,6 @@
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
         "TX-use_case-enterprise_operations",
-        "TX-technology-code_generation",
         "TX-use_case-cybersecurity",
         "TX-technology-open_weights",
         "TX-technology-guardrails_safety",
@@ -6037,10 +6740,10 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-industry-manufacturing",
+        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
         "TX-technology-multimodal",
         "TX-industry-retail_ecommerce",
-        "TX-technology-code_generation",
         "TX-technology-long_context",
         "TX-use_case-cybersecurity",
         "TX-technology-on_device",
@@ -6326,6 +7029,90 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-09",
       "lastSeen": "2026-06-10"
+    },
+    {
+      "id": "EN-65c9b6f61b2502b0",
+      "name": "中央网信办联合北京",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dbda21182e61923b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-1ad3d4263b03cdf5",
+      "name": "深圳四地网信办",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dbda21182e61923b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-4906a49adc5c472b",
+      "name": "上海",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dbda21182e61923b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-28"
+    },
+    {
+      "id": "EN-8631ef491b6a9786",
+      "name": "浙江",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dbda21182e61923b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-cybersecurity"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-28"
     }
   ],
   "fde": [
