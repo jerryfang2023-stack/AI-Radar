@@ -182,6 +182,8 @@ export function classifyCommunityStages({
       : publicationWaiting ? "waiting" : publishWindowPassed ? "failed" : "not_due",
     task_execution: !taskAvailable
       ? "unavailable"
+      : taskState === "Running"
+        ? "running"
       : Number.isFinite(lastTaskResult) && lastTaskResult !== 0
         ? communityDataHealthy ? "anomaly_after_data_success" : "failed"
         : ["Ready", "Running"].includes(taskState) ? "passed" : "failed",
@@ -453,7 +455,7 @@ function scheduledTaskStateName(value) {
   return String(value || "");
 }
 
-function buildBusinessSignalsLane() {
+export function buildBusinessSignalsLane() {
   const problems = [];
   const waiting = [];
   const warnings = [];
@@ -462,12 +464,29 @@ function buildBusinessSignalsLane() {
   const windowPassed = hasWindowPassed(date, "09:50");
 
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
-  const graphFile = path.join(root, "01-SiteV2", "site", "data", "intelligence-graph-index.json");
+  const dataCenterManifestFile = path.join(root, "01-SiteV2", "site", "data", "data-center-v4", "manifest.json");
+  const dataCenterGateFile = path.join(reportsDir, `${date}-data-center-v4-integrity-gate.json`);
   const manifestFile = path.join(reportsDir, `${date}-persistent-asset-manifest.json`);
   const qualityGateFile = path.join(reportsDir, `${date}-guanlan-monitor-quality-gate.md`);
   const readinessFile = path.join(reportsDir, `${date}-daily-production-chain-readiness.md`);
   const data = readJson(dataFile, {});
+  const dataCenterManifest = readJson(dataCenterManifestFile, {});
+  const dataCenterGate = readJson(dataCenterGateFile, {});
+  const persistentManifest = readJson(manifestFile, {});
   const activeDate = data?.meta?.activeDate || "";
+  const dataCenterDate = dataCenterManifest?.currentDate || "";
+  const materializedEventCount = Number(dataCenterManifest?.counts?.events || 0);
+  const canonicalEventCount = Number(dataCenterGate?.counts?.canonical_events || 0);
+  const dataCenterGatePassed =
+    dataCenterGate?.date === date
+    && dataCenterGate?.ok === true
+    && Array.isArray(dataCenterGate?.failures)
+    && dataCenterGate.failures.length === 0;
+  const dataCenterPipelinePassed =
+    persistentManifest?.date === date
+    && persistentManifest?.outcomes?.data_center_v4_build === "success"
+    && persistentManifest?.outcomes?.data_center_v4_gate === "success"
+    && persistentManifest?.outcomes?.data_center_v4_materialize === "success";
   const selection = Array.isArray(data.frontstageSelection)
     ? data.frontstageSelection.find((item) => item.date === date)
     : null;
@@ -497,10 +516,30 @@ function buildBusinessSignalsLane() {
   evidence.manifest = exists(manifestFile) ? rel(manifestFile) : "missing";
   evidence.qualityGateStatus = statusFromGate(qualityGateFile);
   evidence.readinessReport = exists(readinessFile) ? rel(readinessFile) : "missing";
+  evidence.dataCenterV4 = {
+    manifest: exists(dataCenterManifestFile) ? rel(dataCenterManifestFile) : "missing",
+    currentDate: dataCenterDate,
+    materializedEventCount,
+    integrityGate: exists(dataCenterGateFile) ? rel(dataCenterGateFile) : "missing",
+    integrityGatePassed: dataCenterGatePassed,
+    canonicalEventCount,
+    pipelinePassed: dataCenterPipelinePassed,
+  };
+  evidence.compatibility = {
+    activeDate,
+    publicCardCount: sameDateCards.length,
+    frontstageSelected: selection?.selectedCount ?? sameDateCards.length,
+    signalCardFiles: cardFiles,
+    status: activeDate === date && sameDateCards.length > 0
+      ? "current"
+      : persistentManifest?.outcomes?.business_frontstage_data === "skipped"
+        ? "skipped_by_compatibility_gate"
+        : "stale",
+  };
   evidence.github = gh;
   evidence.publicationClosure = {
     checkpoint: "09:50",
-    businessDataSameDate: activeDate === date,
+    businessDataSameDate: dataCenterDate === date,
     cardCount: selection?.selectedCount ?? sameDateCards.length,
     businessPrMerged: Boolean(mergedPr),
     businessPrUrl: mergedPr?.url || "",
@@ -510,13 +549,14 @@ function buildBusinessSignalsLane() {
     localSync: localGitSyncState(),
   };
   const selectedCount = selection?.selectedCount ?? sameDateCards.length;
-  const coreSignalCardsHealthy = selectedCount > 0 && evidence.qualityGateStatus === "passed";
   const businessDataHealthy =
-    exists(dataFile) &&
-    exists(graphFile) &&
-    activeDate === date &&
-    sameDateCards.length > 0 &&
-    evidence.qualityGateStatus === "passed";
+    exists(dataCenterManifestFile)
+    && dataCenterDate === date
+    && materializedEventCount > 0
+    && exists(dataCenterGateFile)
+    && dataCenterGatePassed
+    && canonicalEventCount > 0
+    && dataCenterPipelinePassed;
   const failedWorkflowSupersededByPublication = Boolean(
     businessDataHealthy &&
     gh.latest_run?.conclusion &&
@@ -526,21 +566,25 @@ function buildBusinessSignalsLane() {
   );
   evidence.failedWorkflowSupersededByPublication = failedWorkflowSupersededByPublication;
   evidence.dataHealth = {
-    dataFile: exists(dataFile) ? rel(dataFile) : "missing",
-    graphFile: exists(graphFile) ? rel(graphFile) : "missing",
-    activeDateMatches: activeDate === date,
-    publicCardCount: sameDateCards.length,
-    frontstageSelected: selectedCount,
-    signalCardFiles: cardFiles,
-    coreSignalCardsHealthy,
-    qualityGateStatus: evidence.qualityGateStatus,
+    contract: "SITE-V4.2.0 / Data Center V4 canonical production",
+    manifestDateMatches: dataCenterDate === date,
+    materializedEventCount,
+    integrityGatePassed: dataCenterGatePassed,
+    canonicalEventCount,
+    pipelinePassed: dataCenterPipelinePassed,
+    compatibilityStatus: evidence.compatibility.status,
     healthy: businessDataHealthy,
   };
   evidence.diagnosis = {
     category: businessDataHealthy ? "passed" : "supervision_observability",
-    reason: businessDataHealthy ? "same-date Business data, public Cards, graph, and gate are healthy" : "not classified yet",
+    reason: businessDataHealthy ? "same-date Data Center V4 canonical data, integrity gate, and materialization are healthy" : "not classified yet",
     neededAction: businessDataHealthy ? "none" : "inspect and classify",
     preRerunChecklist: {
+      dataCenterDate,
+      materializedEventCount,
+      canonicalEventCount,
+      dataCenterGatePassed,
+      dataCenterPipelinePassed,
       activeDate,
       publicCardCount: sameDateCards.length,
       frontstageSelected: selectedCount,
@@ -565,20 +609,13 @@ function buildBusinessSignalsLane() {
       if (waitingForBusinessRun) warnings.push(`${message}; Business Signals workflow is ${gh.latest_run.status}`);
       else addProblem(problems, message);
     };
-    if (!exists(dataFile)) recordDataProblem(`missing business-signal data file: ${rel(dataFile)}`);
-    if (activeDate !== date) recordDataProblem(`business-signal activeDate is ${activeDate || "missing"}, expected ${date}`);
-    if (!exists(graphFile)) recordDataProblem(`missing compatibility relationship graph data: ${rel(graphFile)}`);
-    if (!sameDateCards.length) recordDataProblem(`public Card count is 0 for ${date}`);
-    if (selection?.supplyConstrained) {
-      if (!selectedCount || evidence.qualityGateStatus !== "passed") {
-        recordDataProblem("frontstage selection is supply constrained");
-      } else {
-        warnings.push("frontstage selection reported supply constrained after public Cards and gates passed; treat as supply warning, not data failure");
-      }
-    }
-    if (cardFiles < 1 && !coreSignalCardsHealthy) {
-      recordDataProblem("no same-date signal Card files or frontstage Core Signal Cards");
-    }
+    if (!exists(dataCenterManifestFile)) recordDataProblem(`missing Data Center V4 manifest: ${rel(dataCenterManifestFile)}`);
+    if (dataCenterDate !== date) recordDataProblem(`Data Center V4 currentDate is ${dataCenterDate || "missing"}, expected ${date}`);
+    if (!materializedEventCount) recordDataProblem("Data Center V4 materialized event count is 0");
+    if (!exists(dataCenterGateFile)) recordDataProblem(`missing Data Center V4 integrity gate: ${rel(dataCenterGateFile)}`);
+    if (exists(dataCenterGateFile) && !dataCenterGatePassed) recordDataProblem(`Data Center V4 integrity gate did not pass for ${date}`);
+    if (!canonicalEventCount) recordDataProblem(`Data Center V4 canonical event count is 0 for ${date}`);
+    if (!dataCenterPipelinePassed) recordDataProblem("Data Center V4 build, gate, and materialization outcomes are not all successful");
     if (!exists(manifestFile)) warnings.push(`missing same-date persistent asset manifest: ${rel(manifestFile)}`);
     if (evidence.qualityGateStatus === "failed") addProblem(problems, `quality gate failed: ${rel(qualityGateFile)}`);
     if (evidence.qualityGateStatus === "missing") warnings.push(`missing quality gate report: ${rel(qualityGateFile)}`);
@@ -630,26 +667,18 @@ function buildBusinessSignalsLane() {
       evidence.diagnosis.category = "supervision_observability";
       evidence.diagnosis.reason = "workflow or Pages is still queued/in_progress";
       evidence.diagnosis.neededAction = "wait for active workflow completion and rerun supervision";
-    } else if (!exists(dataFile) || activeDate !== date) {
+    } else if (!exists(dataCenterManifestFile) || dataCenterDate !== date) {
       evidence.diagnosis.category = "no_run_or_stale_assets";
-      evidence.diagnosis.reason = `activeDate is ${activeDate || "missing"}, expected ${date}`;
+      evidence.diagnosis.reason = `Data Center V4 currentDate is ${dataCenterDate || "missing"}, expected ${date}`;
       evidence.diagnosis.neededAction = "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow";
-    } else if (sameDateCards.length === 0 && titleTranslations.missingCount > 0) {
-      evidence.diagnosis.category = "raw_card_ingestion_fields";
-      evidence.diagnosis.reason = `${titleTranslations.missingCount} active-date Signal Card source title(s) need Raw/Card title-translation repair`;
-      evidence.diagnosis.neededAction = "repair Raw/Card title-translation or fact-extraction fields, rebuild affected Card/site JSON, rerun the unified Business gate only";
-    } else if (sameDateCards.length === 0) {
-      evidence.diagnosis.category = "frontstage_card_contract";
-      evidence.diagnosis.reason = "no active-date public Cards";
-      evidence.diagnosis.neededAction = "repair frontstage Card build contract; do not recollect Raw unless supply counts prove a specific source/channel shortage";
-    } else if (cardFiles < 1 && !coreSignalCardsHealthy) {
-      evidence.diagnosis.category = "core_supply_shortfall";
-      evidence.diagnosis.reason = "no same-date signal Card files or frontstage Core Signal Cards";
-      evidence.diagnosis.neededAction = "diagnose Raw/Pool/Core/non-large Core counts and refill only the deficient source/channel";
-    } else if (evidence.qualityGateStatus === "failed") {
-      evidence.diagnosis.category = "source_first_frontstage_gate";
-      evidence.diagnosis.reason = `quality gate failed: ${rel(qualityGateFile)}`;
-      evidence.diagnosis.neededAction = "repair the failed source-first/frontstage gate and rerun that gate";
+    } else if (!dataCenterGatePassed || canonicalEventCount < 1) {
+      evidence.diagnosis.category = "data_center_v4_integrity";
+      evidence.diagnosis.reason = `Data Center V4 integrity gate passed=${dataCenterGatePassed}, canonical events=${canonicalEventCount}`;
+      evidence.diagnosis.neededAction = "repair the failed Data Center V4 claim/event integrity stage and rerun only the owning build/gate/materialization path";
+    } else if (!dataCenterPipelinePassed) {
+      evidence.diagnosis.category = "data_center_v4_materialization";
+      evidence.diagnosis.reason = "persistent manifest does not confirm successful V4 build, gate, and materialization";
+      evidence.diagnosis.neededAction = "repair the first unsuccessful V4 pipeline outcome; do not rerun compatibility Card production";
     } else if (evidence.publicationClosure.localSync.available && !evidence.publicationClosure.localSync.clean) {
       evidence.diagnosis.category = "local_sync";
       evidence.diagnosis.reason = `local workspace has ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s)`;
@@ -670,7 +699,7 @@ function buildBusinessSignalsLane() {
 
   return {
     id: "business_signals",
-    label: "Business Signals compatibility / Operations",
+    label: "Data Center V4 / Business Signals Operations",
     schedule: "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
     status: laneStatus(problems, warnings, waiting),
     evidence,
@@ -903,7 +932,8 @@ export function buildFollowBuildersSkillLane() {
   };
 }
 
-export function classifyCommunityTaskResult({ lastResult, dataHealthy, publicationConfirmed }) {
+export function classifyCommunityTaskResult({ lastResult, dataHealthy, publicationConfirmed, taskState = "" }) {
+  if (taskState === "Running") return "running";
   if (!Number.isFinite(lastResult) || lastResult === 0) return "passed";
   if (!dataHealthy) return "problem";
   return publicationConfirmed ? "published" : "warning";
@@ -1007,9 +1037,12 @@ function buildCommunityLane() {
       lastResult,
       dataHealthy: communityDataHealthy,
       publicationConfirmed,
+      taskState: state,
     });
     evidence.scheduledTask.lastResultStatus = taskResultStatus;
-    if (taskResultStatus === "warning") {
+    if (taskResultStatus === "running") {
+      addWaiting(waiting, "Community Intelligence scheduled task is still running");
+    } else if (taskResultStatus === "warning") {
       warnings.push(`community scheduled task last result is ${lastResult}, but same-date data and gate are healthy`);
     } else if (taskResultStatus === "problem") {
       addProblem(problems, `community scheduled task last result is ${lastResult}`, "manual_required");

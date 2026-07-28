@@ -1205,6 +1205,7 @@ function findExistingSignalCard(index, spec, section) {
 function fundingCompanyFromTitle(title = "") {
   const text = cleanSourceEventTitle(title);
   const patterns = [
+    /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:comes?|came)\s+out\s+of\s+stealth\b/iu,
     /^([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})['’]s\b/u,
     /^([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:used|uses|announced|launches)\b/u,
     /^(.+?)\s+(?:raises?|raised|secures?|secured|closes?|closed|lands?|landed|nabs?|nabbed)\b/iu,
@@ -1683,7 +1684,7 @@ function dateFromText(value = "") {
   const text = String(value || "").slice(0, 4000);
   const iso = text.match(/\b(20\d{2})-(\d{2})-(\d{2})(?:T|\b)/u);
   if (iso) return new Date(Date.UTC(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3])));
-  const match = text.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})\b/iu);
+  const match = text.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)?,\s+(20\d{2})\b/iu);
   if (!match) return null;
   const month = monthNames.get(match[1].toLowerCase());
   if (month === undefined) return null;
@@ -2399,6 +2400,11 @@ function companyFromSection(section) {
   const title = poolTitle(section);
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
+  const sourceTitle = originalSourceTitleFromSection(section);
+  const namedStealthCompany = `${title} ${sourceTitle}`.match(
+    /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:comes|came)\s+out\s+of\s+stealth\b/iu,
+  )?.[1];
+  if (namedStealthCompany && !isWeakCompanyName(namedStealthCompany)) return shortCompany(namedStealthCompany);
   const specialCases = [
     [/\bMowito\b/iu, "Mowito"],
     [/^Meet\s+Talp:|techfundingnews\.com\/meet-talp-/iu, "Talp"],
@@ -4511,6 +4517,14 @@ function runCoreRecallRegressionFixtures() {
     "- source_url: https://techfundingnews.com/meet-talp-ai-startup-with-turkish-roots-raising-20m-pre-seed-valuation-to-simulate-customers-with-ai-personas/",
   ].join("\n");
   assert.equal(companyFromSection(talpFundingFixture), "Talp", "funding article chrome must not become the signal owner");
+  assert.equal(
+    companyFromSection([
+      "## P-992｜Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | FinancialContent",
+      "- source_url: https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m",
+    ].join("\n")),
+    "Arrakis",
+    "a syndication publisher must not replace the named company in a comes-out-of-stealth funding title",
+  );
   assert.equal(fundingCompletionAmountMismatch("Talp宣布完成2000万美元种子前轮融资。", 20), false);
   assert.equal(fundingCompletionAmountMismatch("Talp宣布完成5000万美元A轮融资。", 20), true);
   assert.equal(fundingCompletionMissingAmount("Monogram宣布完成融资。", 40), true);
@@ -4655,6 +4669,14 @@ function runCoreRecallRegressionFixtures() {
     }).toISOString().slice(0, 10),
     "2026-05-27",
     "captured source text must override a provider-inferred publication date before freshness gating",
+  );
+  assert.equal(
+    publicationDateFromRawData({
+      published_at: "",
+      full_text: "San Sebastian, Spain — July 27th, 2026: Multiverse Computing announced a Series C round.",
+    }).toISOString().slice(0, 10),
+    "2026-07-27",
+    "ordinal dates in captured source text must satisfy publication-date gating",
   );
   assert.equal(
     fundingEventIdentityKey("Thenextweb", "Lyzr used its own AI agent to help raise a $100mn round. The company described it as a Series B."),

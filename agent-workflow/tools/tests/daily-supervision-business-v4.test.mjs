@@ -1,0 +1,73 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import test from "node:test";
+import { pathToFileURL } from "node:url";
+
+const repositoryRoot = process.cwd();
+const scriptFile = path.join(repositoryRoot, "agent-workflow", "tools", "write-daily-supervision-report.mjs");
+
+function writeJson(file, value) {
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, JSON.stringify(value), "utf8");
+}
+
+test("Business supervision uses current V4 canonical production instead of stale V3 compatibility Cards", async () => {
+  const originalCwd = process.cwd();
+  const originalArgv = process.argv;
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-business-v4-supervision-"));
+  const date = "2026-07-28";
+  try {
+    writeJson(path.join(fixtureRoot, "01-SiteV2", "site", "data", "v3-data-observation-desk.json"), {
+      meta: { activeDate: "2026-07-27" },
+      frontstageCards: [],
+    });
+    writeJson(path.join(fixtureRoot, "01-SiteV2", "site", "data", "data-center-v4", "manifest.json"), {
+      currentDate: date,
+      counts: { events: 20 },
+    });
+    writeJson(path.join(fixtureRoot, "agent-workflow", "reports", `${date}-data-center-v4-integrity-gate.json`), {
+      date,
+      ok: true,
+      failures: [],
+      counts: { canonical_events: 5 },
+    });
+    writeJson(path.join(fixtureRoot, "agent-workflow", "reports", `${date}-persistent-asset-manifest.json`), {
+      date,
+      outcomes: {
+        data_center_v4_build: "success",
+        data_center_v4_gate: "success",
+        data_center_v4_materialize: "success",
+        business_frontstage_data: "skipped",
+      },
+    });
+    fs.writeFileSync(
+      path.join(fixtureRoot, "agent-workflow", "reports", `${date}-daily-production-chain-readiness.md`),
+      "# Ready\n",
+      "utf8",
+    );
+
+    process.chdir(fixtureRoot);
+    process.argv = [
+      process.execPath,
+      path.join(fixtureRoot, "test-harness.mjs"),
+      `--date=${date}`,
+      "--github=off",
+      "--scheduled-task=off",
+      "--hermes=off",
+    ];
+    const supervisor = await import(`${pathToFileURL(scriptFile).href}?test=business-v4`);
+    const lane = supervisor.buildBusinessSignalsLane();
+
+    assert.equal(lane.evidence.dataHealth.healthy, true);
+    assert.equal(lane.evidence.dataHealth.contract, "SITE-V4.2.0 / Data Center V4 canonical production");
+    assert.equal(lane.evidence.compatibility.status, "skipped_by_compatibility_gate");
+    assert.equal(lane.problems.length, 0);
+    assert.ok(!lane.warnings.some((message) => /Card count|activeDate|relationship graph/u.test(message)));
+  } finally {
+    process.chdir(originalCwd);
+    process.argv = originalArgv;
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});

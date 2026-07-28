@@ -1306,6 +1306,9 @@ async function runMetadataRegressionFixtures() {
   if (publishedAtFromCapturedText("FuriosaAI partners with Broadcom\nNews\nMay 27, 2026\nSummary") !== "2026-05-27T00:00:00.000Z") {
     throw new Error("visible article publication date was not normalized");
   }
+  if (publishedAtFromCapturedText("San Sebastian, Spain — July 27th, 2026: Multiverse Computing announced a Series C round.") !== "2026-07-27T00:00:00.000Z") {
+    throw new Error("visible ordinal publication date was not normalized");
+  }
   if (preferredPublishedAt("2026-07-07T00:00:00Z", "2026-05-27T00:00:00Z") !== "2026-05-27T00:00:00.000Z") {
     throw new Error("captured source publication date did not override provider-inferred freshness");
   }
@@ -1648,7 +1651,7 @@ function dayFromText(value = "") {
     dec: "12",
     december: "12",
   };
-  const match = text.match(/\b(?:published|updated|posted|date)?\s*:?\s*(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t|tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?\s+(\d{1,2})(?:-\d{1,2})?,?\s+(20\d{2})\b/iu);
+  const match = text.match(/\b(?:published|updated|posted|date)?\s*:?\s*(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t|tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?\s+(\d{1,2})(?:st|nd|rd|th)?(?:-\d{1,2})?,?\s+(20\d{2})\b/iu);
   if (!match) return "";
   const [, rawMonth, rawDay, year] = match;
   const month = months[rawMonth.toLowerCase()];
@@ -1744,8 +1747,9 @@ function listJsonFilesRecursive(dir) {
 
 function publishedAtFromCapturedText(value = "") {
   const text = String(value || "").slice(0, 1600);
-  const labeledDate = text.match(/\b(?:last updated|published(?: on)?|publication date|date)\s*[:\n-]?\s*((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+20\d{2}|20\d{2}[-/]\d{1,2}[-/]\d{1,2})/iu)?.[1] || "";
-  return normalizePublishedAt(labeledDate || dayFromText(text));
+  const labeledDate = text.match(/\b(?:last updated|published(?: on)?|publication date|date)\s*[:\n-]?\s*((?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}(?:st|nd|rd|th)?,\s+20\d{2}|20\d{2}[-/]\d{1,2}[-/]\d{1,2})/iu)?.[1] || "";
+  const normalizedLabel = normalizePublishedAt(labeledDate.replace(/(\d{1,2})(?:st|nd|rd|th)(?=,)/iu, "$1"));
+  return normalizedLabel || normalizePublishedAt(dayFromText(text));
 }
 
 function preferredPublishedAt(providerPublishedAt = "", sourcePublishedAt = "") {

@@ -23,7 +23,7 @@ search_intent: "find_startups"
 search_path: "ai_hardware_original"
 search_path_label: "AI hardware original-source path"
 author: ""
-published_at: ""
+published_at: "2026-07-27T00:00:00.000Z"
 collected_at: 2026-07-28T05:39:23.583Z
 language: mixed
 full_text_hash: c6efbd1a58ae661a

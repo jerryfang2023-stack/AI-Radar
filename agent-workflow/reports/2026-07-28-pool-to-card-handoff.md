@@ -1,6 +1,6 @@
 # 2026-07-28 Pool-to-Card Handoff
 
-- generated_at: 2026-07-28T05:45:57.942Z
+- generated_at: 2026-07-28T06:19:58.232Z
 - raw_input_count: 156
 - pool_input_count: 146
 - written_count: 36
@@ -56,7 +56,7 @@
 - P-029｜event:case:presence:583756｜accepted
 - P-020｜event:funding:multiverse computing:$570m｜accepted
 - P-039｜event:funding:enigma:70m｜accepted
-- P-092｜event:funding:financialcontent:$38m｜accepted
+- P-092｜event:funding:arrakis:$38m｜accepted
 - P-023｜event:case:unanimous ai:302835249｜accepted
 - P-006｜event:case:nvidia:case nvidia 等多家行业领袖联合成立 open secure ai alliance 推动 ai 安全与防御开源化｜accepted
 - P-010｜event:case:用claude和python构建技能驱动的金融分析智能体:2026｜accepted
@@ -94,7 +94,7 @@
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-28--signal--presence-auto-signal-p-029.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-28--signal--multiverse-computing-auto-signal-p-020.md
 - 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-28--signal--enigma-auto-signal-p-039.md
-- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-28--signal--financialcontent-auto-signal-p-092.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-07-28--signal--arrakis-auto-signal-p-092.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-28--signal--unanimous-ai-auto-signal-p-023.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-28--signal--nvidia-auto-signal-p-006.md
 - 01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-28--signal--claude-python-auto-signal-p-010.md

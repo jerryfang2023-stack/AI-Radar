@@ -204,6 +204,12 @@ test("confirmed Community Intelligence publication prevents recurring task-resul
       dataHealthy: false,
       publicationConfirmed: true,
     }), "problem");
+    assert.equal(supervisor.classifyCommunityTaskResult({
+      lastResult: 267009,
+      dataHealthy: false,
+      publicationConfirmed: false,
+      taskState: "Running",
+    }), "running");
   } finally {
     process.chdir(originalCwd);
     process.argv = originalArgv;

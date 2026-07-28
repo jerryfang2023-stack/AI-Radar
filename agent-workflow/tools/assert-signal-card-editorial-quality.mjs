@@ -50,7 +50,7 @@ function parseDate(raw = {}) {
   const text = String(raw.full_text || raw.clean_text || "").slice(0, 4000);
   const iso = text.match(/\b(20\d{2})-(\d{2})-(\d{2})(?:T|\b)/u);
   if (iso) return new Date(Date.UTC(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3])));
-  const named = text.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})\b/iu);
+  const named = text.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})(?:st|nd|rd|th)?,\s+(20\d{2})\b/iu);
   if (!named) return null;
   const month = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"].indexOf(named[1].toLowerCase());
   return new Date(Date.UTC(Number(named[3]), month, Number(named[2])));

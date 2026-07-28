@@ -39,3 +39,18 @@ test("expired login is carried as an independent manual state", () => {
   assert.equal(stages.task_execution, "failed");
   assert.equal(stages.login, "manual_relogin_required");
 });
+
+test("a running scheduled task is waiting even while Task Scheduler reports 0x41301", () => {
+  const stages = classifyCommunityStages({
+    communityDataHealthy: false,
+    localWindowPassed: true,
+    published: false,
+    publicationWaiting: false,
+    publishWindowPassed: true,
+    taskAvailable: true,
+    lastTaskResult: 267009,
+    taskState: "Running",
+    loginState: "unknown",
+  });
+  assert.equal(stages.task_execution, "running");
+});
