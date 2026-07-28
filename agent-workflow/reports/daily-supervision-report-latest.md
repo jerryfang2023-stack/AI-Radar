@@ -1,6 +1,6 @@
 # WaveSight Daily Supervision - 2026-07-28
 
-- generated_at: 2026-07-28T06:02:27.665Z
+- generated_at: 2026-07-28T06:36:54.458Z
 - status: manual_required
 - github_mode: auto
 - scheduled_task_mode: auto
@@ -9,9 +9,9 @@
 | Lane | Timeline | Status | Problems | Waiting | Warnings |
 |---|---|---|---:|---:|---:|
 | Skill Ops Governance | daily supervision preflight | manual_required | 28 | 0 | 0 |
-| Community Intelligence | 08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure | manual_required | 2 | 1 | 1 |
+| Community Intelligence | 08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure | passed | 0 | 0 | 0 |
 | Data Center V4 / Business Signals Operations | 08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback | warning | 0 | 0 | 1 |
-| First-Line Viewpoints | 08:30 local RSS collection + page build + Obsidian sync; 09:15 conditional fallback; 09:50 consolidated closure | warning | 0 | 0 | 1 |
+| First-Line Viewpoints | 08:30 local RSS collection + page build + Obsidian sync; 09:15 conditional fallback; 09:50 consolidated closure | passed | 0 | 0 | 0 |
 | First-Line Viewpoints Skill | 16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45 | waiting | 0 | 1 | 0 |
 
 ## Skill Ops Governance
@@ -74,36 +74,29 @@ needed_action: repair the owning Guanlan skill metadata, evals, examples, regist
 ```
 ## Community Intelligence
 
-- status: manual_required
+- status: passed
 - schedule: 08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure
 
 ### Problems
 
-- community data date is 2026-07-27, expected 2026-07-28
-- no same-date Community Intelligence publish workflow after the morning publication window
+- none
 
 ### Waiting
 
-- Community Intelligence scheduled task is still running
+- none
 
 ### Warnings
 
-- missing community gate report: agent-workflow/reports/2026-07-28-community-intelligence-gate.md
+- none
 
 ### Actions
 
-- inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-community-intelligence-pr.yml` only after local collection and archive pass
-- rerun `agent-workflow/tools/run-community-intelligence.ps1` locally
-- send Codex a community_intelligence repair request with log and gate report path
+- none
 
 ### Repair Request
 
 ```text
-lane: community_intelligence
-failed_gate: missing
-report_path: agent-workflow/reports/2026-07-28-daily-supervision-report.md
-data_generated: no_or_stale
-needed_action: inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-community-intelligence-pr.yml` only after local collection and archive pass
+none
 ```
 ## Data Center V4 / Business Signals Operations
 
@@ -120,7 +113,7 @@ needed_action: inspect the Daily Problem Watchdog inbox report, then dispatch `.
 
 ### Warnings
 
-- local Obsidian sync may be blocked by 4 dirty file(s)
+- local Obsidian sync may be blocked by 2 dirty file(s)
 
 ### Actions
 
@@ -133,7 +126,7 @@ none
 ```
 ## First-Line Viewpoints
 
-- status: warning
+- status: passed
 - schedule: 08:30 local RSS collection + page build + Obsidian sync; 09:15 conditional fallback; 09:50 consolidated closure
 
 ### Problems
@@ -146,7 +139,7 @@ none
 
 ### Warnings
 
-- PR check unavailable: Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+- none
 
 ### Actions
 

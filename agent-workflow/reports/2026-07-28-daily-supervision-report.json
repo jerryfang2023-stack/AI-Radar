@@ -2,7 +2,7 @@
   "ok": false,
   "status": "manual_required",
   "date": "2026-07-28",
-  "generated_at": "2026-07-28T06:02:27.665Z",
+  "generated_at": "2026-07-28T06:36:54.458Z",
   "timezone": "Asia/Shanghai",
   "hermes_mode": "off",
   "hermes_write": "disabled",
@@ -159,77 +159,66 @@
       "id": "community_intelligence",
       "label": "Community Intelligence",
       "schedule": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure",
-      "status": "manual_required",
+      "status": "passed",
       "evidence": {
-        "generatedAt": "2026-07-27T00:32:59.270Z",
-        "generatedDate": "2026-07-27",
+        "generatedAt": "2026-07-28T06:06:16.835Z",
+        "generatedDate": "2026-07-28",
         "dataSource": "working_tree",
-        "localGeneratedDate": "2026-07-27",
-        "items": 35,
-        "links": 98,
+        "localGeneratedDate": "2026-07-28",
+        "items": 96,
+        "links": 149,
         "selectedKeywords": 8,
         "collectorErrors": 0,
-        "gateStatus": "missing",
-        "gateReport": "missing",
+        "gateStatus": "passed",
+        "gateReport": "agent-workflow/reports/2026-07-28-community-intelligence-gate.md",
         "scheduledTask": {
           "available": true,
           "task": {
-            "State": 4,
-            "LastTaskResult": 267009,
+            "State": 3,
+            "LastTaskResult": 1,
             "LastRunTime": "/Date(1785217669000)/",
             "NextRunTime": "/Date(1785285000000)/"
           },
-          "stateName": "Running",
-          "lastResultStatus": "running"
+          "stateName": "Ready",
+          "lastResultStatus": "published"
         },
         "github": {
           "available": true,
           "latest_run": null,
           "same_date_run_count": 0,
-          "prs": [],
+          "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": null,
+              "number": 443,
+              "state": "CLOSED",
+              "updatedAt": "2026-07-28T06:27:03Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/443"
+            }
+          ],
           "pr_warning": ""
         },
         "publication": {
           "communityPrMerged": false,
           "communityPrOpen": false,
           "communityPrUrl": "",
-          "publishedOnOriginMain": false
+          "publishedOnOriginMain": true
         },
         "login": {
-          "state": "unknown",
+          "state": "healthy",
           "log": "missing"
         },
         "stageStatus": {
-          "data": "failed",
+          "data": "healthy",
           "publication": "failed",
-          "task_execution": "running",
-          "login": "unknown"
+          "task_execution": "anomaly_after_data_success",
+          "login": "healthy"
         }
       },
-      "problems": [
-        {
-          "message": "community data date is 2026-07-27, expected 2026-07-28",
-          "severity": "failed"
-        },
-        {
-          "message": "no same-date Community Intelligence publish workflow after the morning publication window",
-          "severity": "manual_required"
-        }
-      ],
-      "waiting": [
-        {
-          "message": "Community Intelligence scheduled task is still running",
-          "severity": "waiting"
-        }
-      ],
-      "warnings": [
-        "missing community gate report: agent-workflow/reports/2026-07-28-community-intelligence-gate.md"
-      ],
-      "actions": [
-        "inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-community-intelligence-pr.yml` only after local collection and archive pass",
-        "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-        "send Codex a community_intelligence repair request with log and gate report path"
-      ]
+      "problems": [],
+      "waiting": [],
+      "warnings": [],
+      "actions": []
     },
     {
       "id": "business_signals",
@@ -237,14 +226,14 @@
       "schedule": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
       "status": "warning",
       "evidence": {
-        "activeDate": "2026-07-27",
-        "generatedAt": "2026-07-27T03:20:30.927Z",
-        "publicCardCount": 0,
-        "frontstageSelected": 0,
-        "supplyConstrained": null,
-        "coreCandidateCount": null,
-        "qualifiedCount": null,
-        "signalCardFiles": 0,
+        "activeDate": "2026-07-28",
+        "generatedAt": "2026-07-28T06:20:12.943Z",
+        "publicCardCount": 35,
+        "frontstageSelected": 35,
+        "supplyConstrained": false,
+        "coreCandidateCount": 0,
+        "qualifiedCount": 35,
+        "signalCardFiles": 35,
         "titleTranslations": {
           "translationDb": "01-SiteV2/content/11-databases/source-title-translations.json",
           "missingCount": 0,
@@ -263,11 +252,11 @@
           "pipelinePassed": true
         },
         "compatibility": {
-          "activeDate": "2026-07-27",
-          "publicCardCount": 0,
-          "frontstageSelected": 0,
-          "signalCardFiles": 0,
-          "status": "skipped_by_compatibility_gate"
+          "activeDate": "2026-07-28",
+          "publicCardCount": 35,
+          "frontstageSelected": 35,
+          "signalCardFiles": 35,
+          "status": "current"
         },
         "github": {
           "available": true,
@@ -297,20 +286,20 @@
         "publicationClosure": {
           "checkpoint": "09:50",
           "businessDataSameDate": true,
-          "cardCount": 0,
+          "cardCount": 35,
           "businessPrMerged": true,
           "businessPrUrl": "https://github.com/jerryfang2023-stack/AI-Radar/pull/441",
           "pagesSuccess": true,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30333335381",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30335008937",
           "localSync": {
             "available": true,
             "clean": false,
-            "dirtyFiles": 4,
+            "dirtyFiles": 2,
             "ignoredReportFiles": 4,
-            "head": "b0bc24f784b69633ebb23320852c626f41ad5d3c",
-            "originMain": "1103d642e57cc29051705b5af3d9fe2d2a4bd8a4",
-            "fastForwarded": false,
+            "head": "313bf72acabc23d707c48b60d6149b5b6e432a2b",
+            "originMain": "313bf72acabc23d707c48b60d6149b5b6e432a2b",
+            "fastForwarded": true,
             "warning": ""
           }
         },
@@ -322,7 +311,7 @@
           "integrityGatePassed": true,
           "canonicalEventCount": 56,
           "pipelinePassed": true,
-          "compatibilityStatus": "skipped_by_compatibility_gate",
+          "compatibilityStatus": "current",
           "healthy": true
         },
         "diagnosis": {
@@ -335,28 +324,28 @@
             "canonicalEventCount": 56,
             "dataCenterGatePassed": true,
             "dataCenterPipelinePassed": true,
-            "activeDate": "2026-07-27",
-            "publicCardCount": 0,
-            "frontstageSelected": 0,
-            "signalCardFiles": 0,
+            "activeDate": "2026-07-28",
+            "publicCardCount": 35,
+            "frontstageSelected": 35,
+            "signalCardFiles": 35,
             "rawCount": null,
             "poolCount": null,
             "routedPoolCount": null,
-            "corePoolCount": null,
+            "corePoolCount": 0,
             "nonLargeCorePoolCount": null,
             "sourceArtifactFreshness": "not_checked_by_daily_supervision",
             "missingSourceTitleTranslations": [],
             "businessPrMerged": true,
             "pagesState": "success",
-            "localDirtyFiles": 4,
-            "localFastForwarded": false
+            "localDirtyFiles": 2,
+            "localFastForwarded": true
           }
         }
       },
       "problems": [],
       "waiting": [],
       "warnings": [
-        "local Obsidian sync may be blocked by 4 dirty file(s)"
+        "local Obsidian sync may be blocked by 2 dirty file(s)"
       ],
       "actions": []
     },
@@ -364,18 +353,18 @@
       "id": "first_line_viewpoints",
       "label": "First-Line Viewpoints",
       "schedule": "08:30 local RSS collection + page build + Obsidian sync; 09:15 conditional fallback; 09:50 consolidated closure",
-      "status": "warning",
+      "status": "passed",
       "evidence": {
         "generatedAt": "2026-07-28T05:57:37.994Z",
         "generatedDate": "2026-07-28",
-        "dataSource": "origin/main",
-        "localGeneratedDate": "2026-07-27",
+        "dataSource": "working_tree",
+        "localGeneratedDate": "2026-07-28",
         "feedGeneratedAt": "2026-07-27T07:26:55.001Z",
         "remarks": 35,
         "builders": 14,
         "gateStatus": "passed",
-        "gateReport": "origin/main:agent-workflow/reports/2026-07-28-follow-builders-data-gate.md",
-        "manifest": "origin/main:agent-workflow/reports/2026-07-28-first-line-viewpoints-manifest.md",
+        "gateReport": "agent-workflow/reports/2026-07-28-follow-builders-data-gate.md",
+        "manifest": "agent-workflow/reports/2026-07-28-first-line-viewpoints-manifest.md",
         "manifestHealthy": true,
         "historicalEvidenceHealthy": false,
         "github": {
@@ -391,15 +380,22 @@
             "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30333186439"
           },
           "same_date_run_count": 1,
-          "prs": [],
-          "pr_warning": "PR check unavailable: Post \"https://api.github.com/graphql\": net/http: TLS handshake timeout"
+          "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": "2026-07-28T05:59:39Z",
+              "number": 442,
+              "state": "MERGED",
+              "updatedAt": "2026-07-28T05:59:42Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/442"
+            }
+          ],
+          "pr_warning": ""
         },
         "localDataHealthy": true
       },
       "problems": [],
-      "warnings": [
-        "PR check unavailable: Post \"https://api.github.com/graphql\": net/http: TLS handshake timeout"
-      ],
+      "warnings": [],
       "actions": []
     },
     {

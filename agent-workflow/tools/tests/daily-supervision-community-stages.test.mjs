@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { classifyCommunityStages } from "../write-daily-supervision-report.mjs";
+import {
+  classifyCommunityPublication,
+  classifyCommunityStages,
+} from "../write-daily-supervision-report.mjs";
 
 test("healthy data plus a non-zero task exit is an execution anomaly, not data failure", () => {
   const stages = classifyCommunityStages({
@@ -53,4 +56,18 @@ test("a running scheduled task is waiting even while Task Scheduler reports 0x41
     loginState: "unknown",
   });
   assert.equal(stages.task_execution, "running");
+});
+
+test("same-date data on origin/main confirms publication without a dedicated workflow run", () => {
+  assert.deepEqual(
+    classifyCommunityPublication({
+      targetDate: "2026-07-28",
+      originGeneratedDate: "2026-07-28",
+    }),
+    {
+      publishedOnOriginMain: true,
+      ready: true,
+      confirmed: true,
+    },
+  );
 });

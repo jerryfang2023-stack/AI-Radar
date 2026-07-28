@@ -191,6 +191,25 @@ export function classifyCommunityStages({
   };
 }
 
+export function classifyCommunityPublication({
+  targetDate,
+  originGeneratedDate = "",
+  latestRun = null,
+  mergedPr = null,
+  openPr = null,
+}) {
+  const publishedOnOriginMain = originGeneratedDate === targetDate;
+  return {
+    publishedOnOriginMain,
+    ready: Boolean(latestRun || mergedPr || openPr || publishedOnOriginMain),
+    confirmed: Boolean(
+      mergedPr
+      || publishedOnOriginMain
+      || latestRun?.conclusion === "success"
+    ),
+  };
+}
+
 function addProblem(list, message, severity = "failed") {
   list.push({ message, severity });
 }
@@ -963,7 +982,7 @@ function buildCommunityLane() {
   const loginRequired = lastLoginRequiredAt >= 0 && lastLoginRequiredAt > lastCompletedAt;
   const localData = readJson(dataFile, {});
   const localGeneratedDate = shanghaiDate(localData?.meta?.generatedAt || "");
-  const publishedData = localGeneratedDate === date ? null : readJsonFromGit("origin/main", dataFile, null);
+  const publishedData = readJsonFromGit("origin/main", dataFile, null);
   const publishedGeneratedDate = shanghaiDate(publishedData?.meta?.generatedAt || "");
   const usePublishedData = localGeneratedDate !== date && publishedGeneratedDate === date;
   const data = usePublishedData ? publishedData : localData;
@@ -972,12 +991,15 @@ function buildCommunityLane() {
   const gh = githubWorkflowState("daily-community-intelligence-pr.yml", `automation/community-intelligence-${date}`);
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
   const openPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.state === "OPEN") : null;
-  const publicationReady = Boolean(gh.latest_run || mergedPr || openPr || usePublishedData);
-  const publicationConfirmed = Boolean(
-    mergedPr
-    || usePublishedData
-    || gh.latest_run?.conclusion === "success",
-  );
+  const publication = classifyCommunityPublication({
+    targetDate: date,
+    originGeneratedDate: publishedGeneratedDate,
+    latestRun: gh.latest_run,
+    mergedPr,
+    openPr,
+  });
+  const publicationReady = publication.ready;
+  const publicationConfirmed = publication.confirmed;
   const publishedGateText = usePublishedData ? readTextFromGit("origin/main", gateFile) : "";
 
   evidence.generatedAt = data?.meta?.generatedAt || "";
@@ -998,7 +1020,7 @@ function buildCommunityLane() {
     communityPrMerged: Boolean(mergedPr),
     communityPrOpen: Boolean(openPr),
     communityPrUrl: mergedPr?.url || openPr?.url || "",
-    publishedOnOriginMain: usePublishedData,
+    publishedOnOriginMain: publication.publishedOnOriginMain,
   };
   const communityDataHealthy =
     (exists(dataFile) || usePublishedData) &&
