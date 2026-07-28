@@ -1,0 +1,249 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-055
+title: "Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding - Front AI"
+title_zh: "新闻稿：新对话式AI公司Front AI获50万欧元种子轮融资"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://front.ai/press-release-new-conversational-ai-company-front-ai-raises-e500k-in-seed-funding"
+canonical_url: "https://front.ai/press-release-new-conversational-ai-company-front-ai-raises-e500k-in-seed-funding"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: "2019-03-11T07:48:24.000Z"
+collected_at: 2026-07-28T05:39:43.082Z
+language: mixed
+full_text_hash: ff8a73b3dfdfd0a8
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-28/r-055-press-release-new-conversational-ai-company-front-ai-raises-500k-in-se.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-28/r-055-press-release-new-conversational-ai-company-front-ai-raises-500k-in-se.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 92
+extractor_diagnostics: {"readability_score":92,"text_length":3678,"paragraph_count":14,"sentence_count":18,"boilerplate_hits":0,"symbol_ratio":0.0005,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 3678
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ff8a73b3dfdfd0a8","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 07a9965283e616fe
+content_hash: ff8a73b3dfdfd0a8
+semantic_hash: f012e0d2e73631aa
+duplicate_of: ""
+first_seen_at: "2019-03-11T07:48:24.000Z"
+last_seen_at: 2026-07-28T05:39:43.082Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agent","agents","Agent"],"people":[],"industries":["金融 / 保险","企业服务"],"roles":["CIO / IT 负责人"],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["500","358","40","033","8585","4745407334","50","590"],"quotes":[]}
+evidence_seed: {"company_actions":["Front AI is initially targeting the Nordic market. Media contacts: Jari Annala – CEO, Front AI, +358 40 033 8585, jari.annala@front.ai Henry Vaage Iversen – Chief Commercial Officer, boost.ai, +4745407334, henry@boost.ai Juha Mikkola – Managing Partner, Capman Growth Fund, +358 50 590 0522, juha.mik... / query=AI agent startup raises seed Series A funding company announcement 2026 / intent=find_startups / path=capital_startup","Skip to content reChanneld Careers Book a demo Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding New Conversational AI Company Front AI Raises €500k in Seed Funding: Creating a Game-changing Chatbot Service beyond Traditional Customer Interactions [Helsinki 11.","2019] – Front AI, a Helsinki-based AI chatbot service startup that allows organisations to automate customer service interactions through the use of advanced chatbot and AI technology, announced today it had raised €500,000 Seed Funding from the owners of Digital Workforce: Capman Growth Fund, Leena Niemistö, Lifeline Ventures and the co-founders."],"case_details":["We are positioning ourselves as a game-changer in customer conversations by automating a majority of customer dialogues."],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"Front AI is initially targeting the Nordic market. Media contacts: Jari Annala – CEO, Front AI, +358 40 033 8585, jari.annala@front.ai Henry Vaage Iversen – Chief Commercial Officer, boost.ai, +4745407334, henry@boost.ai Juha Mikkola – Managing Partner, Capman Growth Fund, +358 50 590 0522, juha.mik... / query=AI agent startup raises seed Series A funding company announcement 2026 / intent=find_startups / path=capital_startup","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Skip to content reChanneld Careers Book a demo Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding New Conversational AI Company Front AI Raises €500k in Seed Funding: Creating a Game-changing Chatbot Service beyond Traditional Customer Interactions [Helsinki 11.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"2019] – Front AI, a Helsinki-based AI chatbot service startup that allows organisations to automate customer service interactions through the use of advanced chatbot and AI technology, announced today it had raised €500,000 Seed Funding from the owners of Digital Workforce: Capman Growth Fund, Leena Niemistö, Lifeline Ventures and the co-founders.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The raised capital will be used to create a unique conversational AI solution that changes the way chatbots are used not only for informational, but also for transactional purposes: chatbots can serve customers and execute their requests 24/7.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"“The AI chatbot market is doubling each year.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"We are positioning ourselves as a game-changer in customer conversations by automating a majority of customer dialogues.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-28T05:39:43.082Z
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding - Front AI
+
+## clean_text
+
+Skip to content
+reChanneld
+Careers
+Book a demo
+Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding
+New Conversational AI Company Front AI Raises €500k in Seed Funding: Creating a Game-changing Chatbot Service beyond Traditional Customer Interactions
+[Helsinki 11.3.2019] – Front AI, a Helsinki-based AI chatbot service startup that allows organisations to automate customer service interactions through the use of advanced chatbot and AI technology, announced today it had raised €500,000 Seed Funding from the owners of Digital Workforce: Capman Growth Fund, Leena Niemistö, Lifeline Ventures and the co-founders. The raised capital will be used to create a unique conversational AI solution that changes the way chatbots are used not only for informational, but also for transactional purposes: chatbots can serve customers and execute their requests 24/7.
+“The AI chatbot market is doubling each year. We are positioning ourselves as a game-changer in customer conversations by automating a majority of customer dialogues. In addition to providing information and guidance, our bots can recognise customers and their personalised needs and directly handle most actions in IT systems traditionally used by customer service agents. This is a true, value-added service for end- customers waiting to be served around the clock. Our technology partner boost.ai is the next generation chatbot – neural network based conversational AI platform, which enables new kind of intelligent and integrated customer service automations previously not possible”, said Jari Annala, CEO of Front AI.
+“The Front AI team has deep industry knowledge in our key customer segments, such as in the financial, telecom and insurance sectors. We see great potential in industry-specific use cases going beyond traditional customer service. For example, an enterprise may extend the question-answer chatbot solution within customer operations to update customer data in IT tools like ERP systems, CRM systems etc. without building integrations with these tools”, said Henry Vaage Iversen, Chief Commercial Officer of boost.ai.
+The same experienced investors and people are behind both Front AI and Digital Workforce Services: Capman Growth Fund, Leena Niemistö, Lifeline Ventures and private investors. Digital Workforce, the leading Intelligent Process Automation company, has grown from a startup to a growth company employing over 200 people globally in less than four years.
+“Front AI has a unique value proposition to automate end-to-end customer service workflows and processes in the fast-growing market for chatbots. The timing is right now and the 2nd generation AI chatbots are ready to make a breakthrough. The team has an impressive track record of growth and technical AI skills from Digital Workforce. There is no doubt in my mind that we’ll see Front AI becoming a market leader in Conversational AI services”, commented Juha Mikkola Managing Partner at Capman Growth Fund.
+Front AI is initially targeting the Nordic market.
+Media contacts:
+Jari Annala – CEO, Front AI, +358 40 033 8585, jari.annala@front.ai
+Henry Vaage Iversen – Chief Commercial Officer, boost.ai, +4745407334, henry@boost.ai
+Juha Mikkola – Managing Partner, Capman Growth Fund, +358 50 590 0522, juha.mikkola@capman.com
+Recent posts
+Front AI Completes Divestiture of AI Agent Business to Digital Workforce
+July 13, 2026
+Digital Workforce expands use of agentic AI and acquires Agentic AI for customer service business from Front AI Oy
+July 1, 2026
+Video: Case Schibsted – Beyond the Hype: Turning AI into Measurable Business Value in the Nordics
+May 5, 2026
+Back to all news
+Scroll To Top
+
+## full_text
+
+Skip to content
+reChanneld
+Careers
+Book a demo
+Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding
+New Conversational AI Company Front AI Raises €500k in Seed Funding: Creating a Game-changing Chatbot Service beyond Traditional Customer Interactions
+[Helsinki 11.3.2019] – Front AI, a Helsinki-based AI chatbot service startup that allows organisations to automate customer service interactions through the use of advanced chatbot and AI technology, announced today it had raised €500,000 Seed Funding from the owners of Digital Workforce: Capman Growth Fund, Leena Niemistö, Lifeline Ventures and the co-founders. The raised capital will be used to create a unique conversational AI solution that changes the way chatbots are used not only for informational, but also for transactional purposes: chatbots can serve customers and execute their requests 24/7.
+“The AI chatbot market is doubling each year. We are positioning ourselves as a game-changer in customer conversations by automating a majority of customer dialogues. In addition to providing information and guidance, our bots can recognise customers and their personalised needs and directly handle most actions in IT systems traditionally used by customer service agents. This is a true, value-added service for end- customers waiting to be served around the clock. Our technology partner boost.ai is the next generation chatbot – neural network based conversational AI platform, which enables new kind of intelligent and integrated customer service automations previously not possible”, said Jari Annala, CEO of Front AI.
+“The Front AI team has deep industry knowledge in our key customer segments, such as in the financial, telecom and insurance sectors. We see great potential in industry-specific use cases going beyond traditional customer service. For example, an enterprise may extend the question-answer chatbot solution within customer operations to update customer data in IT tools like ERP systems, CRM systems etc. without building integrations with these tools”, said Henry Vaage Iversen, Chief Commercial Officer of boost.ai.
+The same experienced investors and people are behind both Front AI and Digital Workforce Services: Capman Growth Fund, Leena Niemistö, Lifeline Ventures and private investors. Digital Workforce, the leading Intelligent Process Automation company, has grown from a startup to a growth company employing over 200 people globally in less than four years.
+“Front AI has a unique value proposition to automate end-to-end customer service workflows and processes in the fast-growing market for chatbots. The timing is right now and the 2nd generation AI chatbots are ready to make a breakthrough. The team has an impressive track record of growth and technical AI skills from Digital Workforce. There is no doubt in my mind that we’ll see Front AI becoming a market leader in Conversational AI services”, commented Juha Mikkola Managing Partner at Capman Growth Fund.
+Front AI is initially targeting the Nordic market.
+Media contacts:
+Jari Annala – CEO, Front AI, +358 40 033 8585, jari.annala@front.ai
+Henry Vaage Iversen – Chief Commercial Officer, boost.ai, +4745407334, henry@boost.ai
+Juha Mikkola – Managing Partner, Capman Growth Fund, +358 50 590 0522, juha.mikkola@capman.com
+Recent posts
+Front AI Completes Divestiture of AI Agent Business to Digital Workforce
+July 13, 2026
+Digital Workforce expands use of agentic AI and acquires Agentic AI for customer service business from Front AI Oy
+July 1, 2026
+Video: Case Schibsted – Beyond the Hype: Turning AI into Measurable Business Value in the Nordics
+May 5, 2026
+Back to all news
+Scroll To Top
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 92
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":92,"text_length":3678,"paragraph_count":14,"sentence_count":18,"boilerplate_hits":0,"symbol_ratio":0.0005,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Front AI is initially targeting the Nordic market. Media contacts: Jari Annala – CEO, Front AI, +358 40 033 8585, jari.annala@front.ai Henry Vaage Iversen – Chief Commercial Officer, boost.ai, +4745407334, henry@boost.ai Juha Mikkola – Managing Partner, Capman Growth Fund, +358 50 590 0522, juha.mik... / query=AI agent startup raises seed Series A funding company announcement 2026 / intent=find_startups / path=capital_startup
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Skip to content reChanneld Careers Book a demo Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding New Conversational AI Company Front AI Raises €500k in Seed Funding: Creating a Game-changing Chatbot Service beyond Traditional Customer Interactions [Helsinki 11.
+
+3. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   2019] – Front AI, a Helsinki-based AI chatbot service startup that allows organisations to automate customer service interactions through the use of advanced chatbot and AI technology, announced today it had raised €500,000 Seed Funding from the owners of Digital Workforce: Capman Growth Fund, Leena Niemistö, Lifeline Ventures and the co-founders.
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   The raised capital will be used to create a unique conversational AI solution that changes the way chatbots are used not only for informational, but also for transactional purposes: chatbots can serve customers and execute their requests 24/7.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   “The AI chatbot market is doubling each year.
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   We are positioning ourselves as a game-changer in customer conversations by automating a majority of customer dialogues.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agent, agents, Agent
+- people: 暂无公开信息
+- industries: 金融 / 保险, 企业服务
+- roles: CIO / IT 负责人
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 500, 358, 40, 033, 8585, 4745407334, 50, 590
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Front AI is initially targeting the Nordic market. Media contacts: Jari Annala – CEO, Front AI, +358 40 033 8585, jari.annala@front.ai Henry Vaage Iversen – Chief Commercial Officer, boost.ai, +4745407334, henry@boost.ai Juha Mikkola – Managing Partner, Capman Growth Fund, +358 50 590 0522, juha.mik... / query=AI agent startup raises seed Series A funding company announcement 2026 / intent=find_startups / path=capital_startup / Skip to content reChanneld Careers Book a demo Press release: New Conversational AI Company Front AI Raises €500k in Seed Funding New Conversational AI Company Front AI Raises €500k in Seed Funding: Creating a Game-changing Chatbot Service beyond Traditional Customer Interactions [Helsinki 11. / 2019] – Front AI, a Helsinki-based AI chatbot service startup that allows organisations to automate customer service interactions through the use of advanced chatbot and AI technology, announced today it had raised €500,000 Seed Funding from the owners of Digital Workforce: Capman Growth Fund, Leena Niemistö, Lifeline Ventures and the co-founders.
+- case_details: We are positioning ourselves as a game-changer in customer conversations by automating a majority of customer dialogues.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Front AI is initially targeting the Nordic market. Media contacts: Jari Annala – CEO, Front AI, +358 40 033 8585, jari.annala@front.ai Henry Vaage Iversen – Chief Commercial Officer, boost.ai, +4745407334, henry@boost.ai Juha Mikkola – Managing Partner, Capman Growth Fund, +358 50 590 0522, juha.mik... / query=AI agent startup raises seed Series A funding company announcement 2026 / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

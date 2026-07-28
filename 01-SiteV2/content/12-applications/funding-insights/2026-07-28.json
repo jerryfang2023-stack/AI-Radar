@@ -1,0 +1,1915 @@
+{
+  "meta": {
+    "schema_version": "FUNDING-INSIGHT-V1.0",
+    "date": "2026-07-28",
+    "generated_at": "2026-07-28T05:45:53.141Z",
+    "trigger": "verified_daily_funding_events",
+    "research_provider": "tavily+exa+deepseek",
+    "model": "deepseek-v4-pro",
+    "human_review_required": false,
+    "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
+    "counts": {
+      "funding_events": 6,
+      "auto_published": 3,
+      "blocked": 3,
+      "pending": 0
+    }
+  },
+  "cards": [
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-33720a6e75d508b6",
+      "triggered_by_event_id": "EV-754e83c2d19005fe",
+      "as_of_date": "2026-07-28",
+      "company": {
+        "entity_id": "EN-834cc12fc35adde7",
+        "name": "Arrakis",
+        "full_name": "Arrakis",
+        "website": "https://www.arrakistechnologies.ai/",
+        "summary": "Arrakis 是一家AI软件公司，帮助工业企业在航空航天、能源、物流、制造、建筑和电信等领域的核心运营工作流中部署AI智能体，解决AI项目落地的“最后一公里”难题。",
+        "headquarters": "伦敦和巴黎",
+        "founders": [
+          {
+            "name": "Rafael Quintanilla",
+            "role": "联合创始人兼CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "Founded in January 2026 by former Accel investor Rafael Quintanilla, together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+              },
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "Rafael Quintanilla, co-founder and CEO of Arrakis"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Haroun Beltaifa",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Romain Fouilland",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mikhail Galkov",
+            "role": "联合创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "约15人",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cc4a5fb5f0c65e73",
+              "quote": "Arrakis currently has five customers and plans to triple its headcount from roughly 15"
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ac4fd601f33650ff",
+            "quote": "Arrakis is an AI software company helping industrial organisations deploy AI agents into mission-critical operational workflows."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$30 million",
+        "total_raised": "约$38 million",
+        "announced_at": "2026-07-22",
+        "investors": [
+          {
+            "name": "Blossom Capital",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "a $30 million Series A led by Blossom Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Accel",
+            "role": "本轮参投，种子轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "GFC",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "MainObject",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Rerail",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Olivier Pomel",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Olivier Godement",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Junaid Hussein",
+            "role": "本轮天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products and Junaid Hussein, founder of Cambridge Aerospace"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ac4fd601f33650ff",
+            "quote": "today announced a $30 million Series A led by Blossom Capital, with participation from existing investor Accel, which also led the company's $7.5 million seed round. The round brings total funding to around $38 million"
+          },
+          {
+            "source_id": "FISRC-cc4a5fb5f0c65e73",
+            "quote": "The latest round values the company at $140 million post-money, cofounder and CEO Rafael Quintanilla told Fortune."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Arrakis AI部署平台",
+          "description": "一个模型无关的企业AI平台，结合前向部署的AI工程师和应用AI研究，让工业公司利用自身数据在数周内训练、部署和扩展定制AI智能体，而非数月。",
+          "target_customers": "航空航天、能源、物流、制造、建筑和电信领域的工业企业",
+          "features": [
+            "模型无关，可灵活切换AI模型提供商",
+            "将AI智能体部署到现有系统，无需替换技术栈",
+            "客户数据和IP归客户所有，不用于第三方模型训练",
+            "相当比例的费用与客户成果直接挂钩",
+            "持有SOC 2、ISO 27001和GDPR认证"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Arrakis combines elite forward-deployed AI engineers with a model-agnostic enterprise AI platform and applied AI research tuned to industrial operations, letting companies leverage their data to train, deploy, and scale custom AI agents in weeks, not quarters."
+            },
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Rather than replacing existing technology stacks, Arrakis deploys AI agents into existing systems, improving operational throughput without multi-year migrations."
+            },
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Arrakis operates to the strictest data and security standards: customer data and IP remain theirs, and the company never uses them for third-party model training."
+            },
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "The company ties a significant proportion of its fees directly to customer outcomes, aligning its commercial model with the value delivered."
+            },
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Arrakis holds SOC 2, ISO 27001, and GDPR certifications."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "未具名纽约证券交易所上市企业",
+          "industry": "能源、物流和工业领域",
+          "use_case": "在数周内获得可衡量的回报，包括采购周期时间缩短90%，以及实时可见此前手动操作的运营和财务流程",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Within six months of launch, Arrakis has secured enterprise customers, including NYSE-listed enterprises across the energy, logistics, and industrial sectors. Arrakis customers are seeing measurable returns within weeks, including reducing procurement cycle times by 90% and real-time visibility into previously manual operational and financial processes."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "采购周期时间缩短",
+          "value": "90%",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "reducing procurement cycle times by 90%"
+            }
+          ]
+        },
+        {
+          "label": "投后估值",
+          "value": "$140 million",
+          "observed_at": "2026-07-22",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-cc4a5fb5f0c65e73",
+              "quote": "The latest round values the company at $140 million post-money"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Rafael Quintanilla",
+          "quote": "Most AI investment to date has targeted the 30% of workers behind a desk. The real ROI lies in the 70% running industrial operations. We're building from Europe for the world, with the ambition to build the Operating System our industrial champions need to win.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Most AI investment to date has targeted the 30% of workers behind a desk. The real ROI lies in the 70% running industrial operations. We're building from Europe for the world, with the ambition to build the Operating System our industrial champions need to win."
+            }
+          ]
+        },
+        {
+          "speaker": "Ophelia Brown",
+          "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations."
+            }
+          ]
+        },
+        {
+          "speaker": "Sonali De Rycker",
+          "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company."
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [
+          {
+            "institution": "Blossom Capital",
+            "speaker": "Ophelia Brown",
+            "speaker_role": "Managing Partner",
+            "rationale": "看重团队在技术深度、运营专长和商业雄心上的罕见组合，以及公司切入大型工业组织最复杂运营挑战的定位和早期客户牵引力。",
+            "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "Rafael and the Arrakis team have an exceptional combination of technical depth, operational expertise and commercial ambition. While many companies are focused on AI applications at the edge of the enterprise, Arrakis is tackling some of the most complex operational challenges facing large industrial organisations. Their early traction demonstrates both the scale of the opportunity and the demand for solutions that deliver measurable outcomes."
+              }
+            ]
+          },
+          {
+            "institution": "Accel",
+            "speaker": "Sonali De Rycker",
+            "speaker_role": "Partner",
+            "rationale": "押注创始人对AI变革实体经济的愿景及其对工业公司挑战的深刻理解，认可团队在短时间内建立的业务、吸引的人才和显著的客户需求。",
+            "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company. In a short period of time, they've built an impressive business, attracted world-class talent and secured significant customer demand. We're excited to continue supporting Arrakis as it scales globally.",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ac4fd601f33650ff",
+                "quote": "Rafael's vision of how AI will transform the physical economy and his deep understanding of the challenges industrial companies face means he and the team are building a transformative company. In a short period of time, they've built an impressive business, attracted world-class talent and secured significant customer demand. We're excited to continue supporting Arrakis as it scales globally."
+              }
+            ]
+          }
+        ],
+        "capital_judgment": "资本押注的核心变量是“工业AI落地的最后一公里”——即跨越AI实验与生产级部署之间鸿沟的能力。本轮$1400万投后估值所依赖的已验证信号包括：成立6个月内即获得5家企业客户（含纽交所上市公司），并实现采购周期缩短90%等可量化成果；创始团队兼具Accel投资背景与Palantir、Datadog、ASML等工业与基础设施领域顶级公司的运营经验。但判断的证据边界受限于客户数量少、收入规模未披露，且客户名单受保密协议限制无法独立验证。",
+        "validated_signals": [
+          "成立6个月内获得5家企业客户，包括纽交所上市公司",
+          "客户在数周内实现采购周期时间缩短90%",
+          "创始团队来自Accel、Palantir、Datadog、ASML等顶级机构",
+          "已签署首个美国客户，需求横跨航空航天、能源和物流市场"
+        ],
+        "risks": [
+          "客户集中度高且数量极少（仅5家），单一客户流失将对业务产生重大影响；同时，工业客户销售周期长、决策保守，规模化速度可能慢于预期。"
+        ],
+        "related_direction_id": "DIR-20260725-01",
+        "sector": "工业AI/企业软件"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Arrakis AI部署平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Arrakis combines elite forward-deployed AI engineers with a model-agnostic enterprise AI platform and applied AI research tuned to industrial operations, letting companies leverage their data to train, deploy, and scale custom AI agents in weeks, not quarters."
+            },
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Rather than replacing existing technology stacks, Arrakis deploys AI agents into existing systems, improving operational throughput without multi-year migrations."
+            },
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Arrakis operates to the strictest data and security standards: customer data and IP remain theirs, and the company never uses them for third-party model training."
+            },
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "The company ties a significant proportion of its fees directly to customer outcomes, aligning its commercial model with the value delivered."
+            },
+            {
+              "source_id": "FISRC-b000b5cd09445eff",
+              "quote": "Arrakis holds SOC 2, ISO 27001, and GDPR certifications."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Rafael Quintanilla",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Founded in January 2026 by former Accel investor Rafael Quintanilla, together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+            },
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Rafael Quintanilla, co-founder and CEO of Arrakis"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Haroun Beltaifa",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Romain Fouilland",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Mikhail Galkov",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "together with co-founders Haroun Beltaifa, Romain Fouilland and Mikhail Galkov"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Blossom Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "a $30 million Series A led by Blossom Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "with participation from existing investor Accel, which also led the company's $7.5 million seed round"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "GFC",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "MainObject",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Rerail",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Funding led by Blossom Capital with participation from Accel, GFC, MainObject, and Rerail"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Olivier Pomel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Olivier Godement",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Junaid Hussein",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog, Olivier Godement, OpenAI’s Head of business products and Junaid Hussein, founder of Cambridge Aerospace"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "未具名纽约证券交易所上市企业",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ac4fd601f33650ff",
+              "quote": "Within six months of launch, Arrakis has secured enterprise customers, including NYSE-listed enterprises across the energy, logistics, and industrial sectors. Arrakis customers are seeing measurable returns within weeks, including reducing procurement cycle times by 90% and real-time visibility into previously manual operational and financial processes."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-754e83c2d19005fe",
+          "date": "2026-07-22",
+          "title": "Arrakis 携 3800 万美元资金走出隐身模式，将 AI 引入工厂与供应链",
+          "amount": "$38 million",
+          "source_refs": [
+            "SA-4217e8731dafc848",
+            "SA-c3b7f0be9140eddd",
+            "SA-5dd8d7f22c598317"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ac4fd601f33650ff",
+          "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
+          "title": "Arrakis 携 3800 万美元走出隐身模式，助力工业企业竞争 AI 时代",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-28T05:39:53.608Z",
+          "content_hash": "4d42f1ad7c55a3e3",
+          "source_artifact_id": "SA-3f0218328d7927d1",
+          "raw_id": "RAW-838f14dd246e4d70"
+        },
+        {
+          "source_id": "FISRC-cc4a5fb5f0c65e73",
+          "source_url": "https://vcptrading.com/2026/07/22/exclusive-startup-arrakis-emerges-from-stealth-with-38-million-in-funding-to-bring-ai-to-industry/",
+          "title": "Exclusive: Startup Arrakis emerges from stealth with $38 million in funding to bring AI to industry – VCP Trading",
+          "publisher": "vcptrading.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-28T05:44:59.765Z",
+          "content_hash": "c8500cdec29dbb19",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-b000b5cd09445eff",
+          "source_url": "https://justainews.com/companies/funding-news/arrakis-raises-38m-to-bring-ai-agents-into-industrial-operations/",
+          "title": "Arrakis Raises $38M to Bring AI Agents Into Industrial Operations",
+          "publisher": "justainews.com",
+          "source_class": "independent",
+          "capture_method": "exa_captured_content",
+          "captured_at": "2026-07-28T05:45:01.124Z",
+          "content_hash": "252ed5d6accd948e",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-28T05:45:53.127Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-28T05:45:53.127Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-9812ec69e97e0357",
+      "triggered_by_event_id": "EV-33b3cf34f8ff7bd8",
+      "as_of_date": "2026-07-28",
+      "company": {
+        "entity_id": "EN-0b01f10e87d13e75",
+        "name": "Multiverse Computing",
+        "full_name": "Multiverse Computing",
+        "website": "multiversecomputing.com",
+        "summary": "Multiverse Computing 是高效 AI 领域的全球领导者，其核心平台 CompactifAI 利用源自量子物理的张量网络数学框架压缩大语言模型，可将模型规模缩减 80-95% 且精度损失极小，使 AI 能够在云端、本地及边缘设备上更快、更节能地运行。",
+        "headquarters": "Donostia, Spain",
+        "founders": [
+          {
+            "name": "Enrique Lizaso",
+            "role": "联合创始人兼 CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec66bd3ab9da8317",
+                "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Dr. Román Orús",
+            "role": "联合创始人兼首席科学官",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec66bd3ab9da8317",
+                "quote": "co-founder and Chief Scientific Officer Dr. Román Orús"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec66bd3ab9da8317",
+            "quote": "Multiverse Computing is the global leader in sovereign and efficient AI."
+          },
+          {
+            "source_id": "FISRC-ec66bd3ab9da8317",
+            "quote": "Headquartered in Donostia, Spain"
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series C",
+        "amount": "$570 million (€500M)",
+        "total_raised": "$800 million",
+        "announced_at": "2026-07-27",
+        "investors": [
+          {
+            "name": "Forgepoint Capital International",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec66bd3ab9da8317",
+                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "BNPP SIVF",
+            "role": "本轮联合领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec66bd3ab9da8317",
+                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Bullhound Capital",
+            "role": "本轮联合领投；B 轮领投方",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec66bd3ab9da8317",
+                "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+              },
+              {
+                "source_id": "FISRC-0a07bce6fc40cc12",
+                "quote": "In June 2025, Multiverse Computing announced a €189 million Series B funding round led by Bullhound Capital."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Santander Alternative Investments",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-ec66bd3ab9da8317",
+                "quote": "additional commitments to date from investors including Santander Alternative Investments"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-ec66bd3ab9da8317",
+            "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation"
+          },
+          {
+            "source_id": "FISRC-ec66bd3ab9da8317",
+            "quote": "expected to bring total funding to $800 million, inclusive of prior rounds"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "CompactifAI",
+          "description": "CompactifAI 是一种应用张量网络的 AI 模型压缩技术，可将大语言模型规模缩减 80-95%，在保持精度的同时实现更快的推理速度、更低的能耗，并支持在云端、本地及边缘设备上部署。",
+          "target_customers": "制造业、金融、能源、航空航天、网络安全、国防、健康与生命科学等领域的企业",
+          "features": [
+            "将大语言模型规模压缩 80-95%",
+            "精度损失极小",
+            "支持云端、本地及设备端部署",
+            "降低 GPU 利用率和能耗"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "CompactifAI, a compression technology that applies tensor networks, a mathematical framework from quantum physics, to the problem of AI model compression."
+            },
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CompactifAI Router",
+          "description": "CompactifAI Router 实时决定工作负载应在本地运行还是发送到云端，从而在云端、本地和设备端环境中编排压缩模型。",
+          "target_customers": "需要混合部署 AI 工作负载的企业",
+          "features": [
+            "实时决策本地或云端运行",
+            "跨云端、本地和设备端编排压缩模型"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud."
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "AI 工厂与数据中心端到端软件层",
+          "description": "为下一代 AI 工厂和数据中心提供统一的软件层，集成模型压缩、GPU 编排、AI 服务和主权级控制。",
+          "target_customers": "主权 AI 基础设施投资者和数据中心运营商",
+          "features": [
+            "模型压缩",
+            "GPU 编排",
+            "AI 服务",
+            "主权级控制"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "an end-to-end software layer for next-generation AI factories and data centers that brings model compression, GPU orchestration, AI services, and sovereign-grade controls into a unified platform."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Allianz",
+          "industry": "金融",
+          "use_case": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "Customers and partners span manufacturing, finance, energy, aerospace, cybersecurity, defense, and health and life sciences, including Allianz"
+            }
+          ]
+        },
+        {
+          "name": "Telefónica",
+          "industry": "电信",
+          "use_case": "压缩并微调大语言模型用于客服聊天系统，为客服人员提供辅助信息以更快解决客户查询，同时降低 75% 能耗和 80% 存储与计算需求。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f56b3890c53aeb9c",
+              "quote": "The AI model compression process also significantly reduces storage and computing needs, with cuts of up to 80%, and lowers energy consumption by up to 75%."
+            }
+          ]
+        }
+      ],
+      "comparisons": [],
+      "metrics": [
+        {
+          "label": "C 轮融资金额",
+          "value": "$570 million (€500M)",
+          "observed_at": "2026-07-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "a $570 million (€500M) Series C funding round"
+            }
+          ]
+        },
+        {
+          "label": "C 轮投前估值",
+          "value": "$1.7 billion (€1.5B)",
+          "observed_at": "2026-07-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "at a $1.7 billion (€1.5B) pre-money valuation"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$800 million",
+          "observed_at": "2026-07-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "expected to bring total funding to $800 million, inclusive of prior rounds"
+            }
+          ]
+        },
+        {
+          "label": "B 轮后年化收入增长",
+          "value": "超过 10 倍",
+          "observed_at": "2026-07-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "Since closing its Series B in June 2025, Multiverse Computing has grown annualized revenue by more than 10x"
+            }
+          ]
+        },
+        {
+          "label": "2026 年 Q1 销售额同比增长",
+          "value": "96 倍",
+          "observed_at": "2026-Q1",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "with 96x year-over-year sales growth in Q1 of 2026"
+            }
+          ]
+        },
+        {
+          "label": "模型压缩率",
+          "value": "80-95%",
+          "observed_at": "2026-07-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss"
+            }
+          ]
+        },
+        {
+          "label": "全球客户数",
+          "value": "超过 100 家",
+          "observed_at": "2026-07-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "Multiverse serves more than 100 global customers"
+            }
+          ]
+        },
+        {
+          "label": "估值较 B 轮增长",
+          "value": "5 倍",
+          "observed_at": "2026-07-27",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "a 5x step-up from its Series B"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是 AI 模型压缩技术能否成为基础设施层与应用层之间的关键效率平台。本轮 5 倍估值跃升和 17 亿美元投前估值，依赖于两个已验证信号：一是 B 轮后年化收入增长超 10 倍、2026 年 Q1 销售额同比增长 96 倍的商业牵引力；二是 CompactifAI 已在数百万设备上部署并获得 Allianz、Bosch、Telefónica 等标杆客户的采用。投资方的判断边界在于，Multiverse 从下游压缩工具向完整 AI 代工厂和操作系统的演进是否能在主权 AI 和边缘 AI 两个方向上同时兑现。",
+        "validated_signals": [
+          "B 轮后年化收入增长超 10 倍，2026 年 Q1 销售额同比增长 96 倍",
+          "CompactifAI 模型已在数百万设备上部署，覆盖无人机、摄像头、卫星、车辆和电信基础设施",
+          "拥有超过 100 家全球客户，包括 Allianz、Bank of Canada、Bosch、Iberdrola、Telefónica 等",
+          "与 Telefónica 合作压缩客服 LLM，实现 75% 能耗降低和 80% 存储与计算需求削减"
+        ],
+        "risks": [
+          "来源未披露绝对收入基数，仅提供增长倍数，无法判断实际营收规模是否支撑 17 亿美元估值。",
+          "本轮融资尚未关闭，仍对额外战略投资者开放，最终金额和投资方结构存在不确定性。"
+        ],
+        "related_direction_id": "",
+        "sector": "高效 AI 与模型压缩基础设施"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CompactifAI",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "CompactifAI, a compression technology that applies tensor networks, a mathematical framework from quantum physics, to the problem of AI model compression."
+            },
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "CompactifAI Router",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud."
+            }
+          ]
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "AI 工厂与数据中心端到端软件层",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "an end-to-end software layer for next-generation AI factories and data centers that brings model compression, GPU orchestration, AI services, and sovereign-grade controls into a unified platform."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Enrique Lizaso",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Dr. Román Orús",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "co-founder and Chief Scientific Officer Dr. Román Orús"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Forgepoint Capital International",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "BNPP SIVF",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Bullhound Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
+            },
+            {
+              "source_id": "FISRC-0a07bce6fc40cc12",
+              "quote": "In June 2025, Multiverse Computing announced a €189 million Series B funding round led by Bullhound Capital."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Santander Alternative Investments",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "additional commitments to date from investors including Santander Alternative Investments"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Allianz",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-ec66bd3ab9da8317",
+              "quote": "Customers and partners span manufacturing, finance, energy, aerospace, cybersecurity, defense, and health and life sciences, including Allianz"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Telefónica",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-f56b3890c53aeb9c",
+              "quote": "The AI model compression process also significantly reduces storage and computing needs, with cuts of up to 80%, and lowers energy consumption by up to 75%."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-33b3cf34f8ff7bd8",
+          "date": "2026-07-28",
+          "title": "Multiverse Computing 宣布 C 轮融资，目标高达 5.7 亿美元（5 亿欧元），为从边缘到云端的高效 AI 提供动力",
+          "amount": "$570 million",
+          "source_refs": [
+            "SA-4bd23dfb7d177851"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-ec66bd3ab9da8317",
+          "source_url": "https://multiversecomputing.com/resources/multiverse-computing-announces-series-c-fundraising-targeting-up-to-usd570m-eur500m-to-power",
+          "title": "Multiverse Computing 宣布 C 轮融资，目标高达 5.7 亿美元（5 亿欧元），为从边缘到云端的高效 AI 提供动力",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-28T05:39:23.583Z",
+          "content_hash": "c6efbd1a58ae661a",
+          "source_artifact_id": "SA-4bd23dfb7d177851",
+          "raw_id": "RAW-42daee3e9c2446c9"
+        },
+        {
+          "source_id": "FISRC-0a07bce6fc40cc12",
+          "source_url": "https://www.eu-startups.com/2026/07/spains-multiverse-computing-hits-unicorn-status-after-raising-e500-million-series-c-at-e1-5-billion-valuation/",
+          "title": "Spain’s Multiverse Computing hits unicorn status after raising €500 million Series C at €1.5 billion valuation | EU-Startups",
+          "publisher": "eu-startups.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-28T05:43:57.801Z",
+          "content_hash": "33629c1d4d0fd084",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-f56b3890c53aeb9c",
+          "source_url": "https://multiversecomputing.com/resources/telefonica-and-multiverse-computing-develop-an-ai-based-model-to-support-customer-service-agents",
+          "title": "Telefónica and Multiverse Computing develop an AI-based model to support customer service agents with 75% energy savings",
+          "publisher": "multiversecomputing.com",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-28T05:44:00.540Z",
+          "content_hash": "d0ae05f8928c6034",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-28T05:45:01.499Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-28T05:45:01.499Z"
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-01fcf93131eb921c",
+      "triggered_by_event_id": "EV-3fb827f44ea109de",
+      "as_of_date": "2026-07-28",
+      "company": {
+        "entity_id": "EN-382635c9325bf327",
+        "name": "Paper",
+        "full_name": "Paper",
+        "website": "https://paper.design",
+        "summary": "Paper 是一家总部位于旧金山的初创公司，正在构建一个面向智能体时代的设计平台。其核心理念是使用真实的 HTML 和 CSS 作为设计的原生语言，从而消除设计与工程之间的传统交接摩擦，并原生支持 AI 智能体参与设计工作流。",
+        "headquarters": "San Francisco",
+        "founders": [
+          {
+            "name": "Stephen Haney",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6be00539e7d0e25e",
+                "quote": "Paper was founded by CEO Stephen Haney"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "",
+          "observed_at": "",
+          "evidence_refs": []
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6be00539e7d0e25e",
+            "quote": "San Francisco startup Paper raised $34 million from Accel and ICONIQ on July 23, 2026, building a design platform where every element is real HTML and CSS rather than a proprietary format."
+          },
+          {
+            "source_id": "FISRC-fa985513def1ff4e",
+            "quote": "Paper is building a new foundation for design that enables designers and engineers to collaborate through a shared language, while incorporating AI and agents directly into the creative process."
+          }
+        ]
+      },
+      "financing": {
+        "round": "Series A",
+        "amount": "$34M",
+        "total_raised": "$38.5M",
+        "announced_at": "2026-07-23",
+        "investors": [
+          {
+            "name": "Accel",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6be00539e7d0e25e",
+                "quote": "The round was led by Accel and ICONIQ"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "ICONIQ",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6be00539e7d0e25e",
+                "quote": "The round was led by Accel and ICONIQ"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Designer Fund",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-6be00539e7d0e25e",
+                "quote": "with participation from Designer Fund"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Basecase",
+            "role": "既有投资方（本轮续投）",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-23493910baa1c861",
+                "quote": "alongside renewed support from Basecase"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6be00539e7d0e25e",
+            "quote": "San Francisco startup Paper closed a $34 million Series A on July 23"
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Paper Desktop",
+          "description": "一个将设计画布转变为人类与AI智能体共享工作空间的原生应用，能够实时连接设计、代码和数据。",
+          "target_customers": "使用AI和编码智能体发布软件的团队",
+          "features": [
+            "以HTML和CSS原生渲染设计元素",
+            "双向MCP服务器，允许智能体在画布上读写",
+            "连接生产代码与设计画布"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Paper renders every design element in real HTML and CSS, so what a designer touches on the canvas is literally the same code that ships to production."
+            },
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Paper has a bidirectional MCP server with 24 tools, letting agents read and write on the design canvas: creating artboards, updating styles, syncing design tokens, pulling JSX or Tailwind output from any node."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "Ramp",
+          "industry": "金融科技",
+          "use_case": "使用Paper作为设计工具，使设计师能够将更多精力放在工艺上，并通过Inspect和编码智能体直接与生产环境交互。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Customers include Ramp"
+            },
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "Paper plugs directly into Inspect, our own coding agent, and can pull and push right from production. Designers can spend more energy on the craft. Diego Zaks VP Design at Ramp"
+            }
+          ]
+        },
+        {
+          "name": "Lovable",
+          "industry": "AI开发工具",
+          "use_case": "将Paper的生产代码库引入无限画布进行设计流程，在设计过程中直接参考生产环境的上下文。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "Paper brings our production codebase into an infinite canvas for our design process. We can ideate in the context of our production experience. Nad Chishtie Head of Design at Lovable"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "Figma",
+          "product": "Figma 设计平台",
+          "scenario": "产品团队的设计到开发交接流程",
+          "target_customer": "传统人机协作的设计团队",
+          "funding_summary": "上市公司，2026年上半年营收3.334亿美元，同比增长46%",
+          "core_difference": "Figma 使用专有的矢量格式，设计需经过翻译才能接触生产代码；Paper 以 HTML 和 CSS 原生渲染，设计与生产代码完全一致，无需交接文档。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Paper renders every design element in real HTML and CSS, so what a designer touches on the canvas is literally the same code that ships to production. There's no handoff document, no Zeplin annotation layer, no developer spending a Tuesday afternoon re-implementing what the designer built in a proprietary format."
+            }
+          ]
+        },
+        {
+          "name": "Claude Design (Anthropic)",
+          "product": "Claude Design",
+          "scenario": "通过自然语言提示生成交互式原型和营销材料",
+          "target_customer": "希望快速生成设计原型的非专业用户或产品团队",
+          "funding_summary": "",
+          "core_difference": "Claude Design 是从自然语言生成设计的 AI 工具，可能绕过传统设计工具；Paper 是面向专业设计师的 HTML/CSS 原生设计平台，并内置 MCP 服务器让智能体参与协作。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Anthropic launching Claude Design in April 2026, a tool that generates interactive prototypes and marketing materials from natural language prompts."
+            },
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Paper has a bidirectional MCP server with 24 tools, letting agents read and write on the design canvas"
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "ARR 增长倍数（自发布以来）",
+          "value": "25倍",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "its ARR has grown 25 times since launch"
+            }
+          ]
+        },
+        {
+          "label": "连续上榜 Ramp 增长最快公司榜单月数",
+          "value": "4个月",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "For four consecutive months, Ramp's Fastest Growing Companies list has included it."
+            }
+          ]
+        },
+        {
+          "label": "MCP 服务器工具数量",
+          "value": "24个",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Paper has a bidirectional MCP server with 24 tools"
+            }
+          ]
+        },
+        {
+          "label": "Figma 2026年上半年股价跌幅",
+          "value": "52%",
+          "observed_at": "2026-07",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Figma's stock has lost 52% in 2026"
+            }
+          ]
+        }
+      ],
+      "quotes": [],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是“AI智能体原生”的设计架构能否成为下一代软件团队的工作流标准。Paper 获得融资的已验证信号包括：ARR 在发布后增长25倍、连续四个月位列 Ramp 增长最快公司榜单、以及 Ramp、Vercel、PostHog 等知名科技公司的采用。这些信号表明，市场对能够消除设计与生产代码之间“翻译”鸿沟的工具存在真实且迫切的需求。然而，这些增长数据基于一个较小的早期基数，且面临 Figma 等拥有庞大企业客户关系和设计师品牌忠诚度的现有巨头的竞争。",
+        "validated_signals": [
+          "ARR 自发布以来增长25倍，表明产品市场契合度正在快速提升。",
+          "连续四个月位列 Ramp 增长最快公司榜单，验证了其收入的持续增长势头。",
+          "获得 Ramp、Vercel、PostHog、Y Combinator 等知名科技公司采用，验证了其在要求严苛的工程团队中的价值。"
+        ],
+        "risks": [
+          "Figma 拥有庞大的企业客户关系和深厚的设计师品牌忠诚度，Paper 作为初创公司难以在分销渠道上与之匹敌。",
+          "ARR 的25倍增长基于一个未披露的早期基数，其绝对收入规模和长期增长可持续性尚未得到验证。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "AI 原生设计工具"
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Paper Desktop",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Paper renders every design element in real HTML and CSS, so what a designer touches on the canvas is literally the same code that ships to production."
+            },
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Paper has a bidirectional MCP server with 24 tools, letting agents read and write on the design canvas: creating artboards, updating styles, syncing design tokens, pulling JSX or Tailwind output from any node."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Stephen Haney",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Paper was founded by CEO Stephen Haney"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Accel",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "The round was led by Accel and ICONIQ"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "ICONIQ",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "The round was led by Accel and ICONIQ"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Designer Fund",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "with participation from Designer Fund"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Basecase",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "alongside renewed support from Basecase"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Ramp",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Customers include Ramp"
+            },
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "Paper plugs directly into Inspect, our own coding agent, and can pull and push right from production. Designers can spend more energy on the craft. Diego Zaks VP Design at Ramp"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "Lovable",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-23493910baa1c861",
+              "quote": "Paper brings our production codebase into an infinite canvas for our design process. We can ideate in the context of our production experience. Nad Chishtie Head of Design at Lovable"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Figma",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Paper renders every design element in real HTML and CSS, so what a designer touches on the canvas is literally the same code that ships to production. There's no handoff document, no Zeplin annotation layer, no developer spending a Tuesday afternoon re-implementing what the designer built in a proprietary format."
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "Claude Design (Anthropic)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Anthropic launching Claude Design in April 2026, a tool that generates interactive prototypes and marketing materials from natural language prompts."
+            },
+            {
+              "source_id": "FISRC-6be00539e7d0e25e",
+              "quote": "Paper has a bidirectional MCP server with 24 tools, letting agents read and write on the design canvas"
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-136b2edc9b9f3be8",
+          "date": "2026-07-24",
+          "title": "Accel、Iconiq 参与AI时代设计平台Paper的3400万美元A轮融资",
+          "amount": "$34 million",
+          "source_refs": [
+            "SA-698e748e9cefe115",
+            "SA-02eba6bdbd1a0ec5"
+          ]
+        },
+        {
+          "event_id": "EV-3fb827f44ea109de",
+          "date": "2026-07-22",
+          "title": "Paper 融资 3400 万美元，打造下一代卓越设计平台",
+          "amount": "$34M",
+          "source_refs": [
+            "SA-25b2471c6a2bc87a"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-6be00539e7d0e25e",
+          "source_url": "https://startupfortune.com/paper-raised-34m-on-the-exact-thesis-that-wiped-out-half-of-figmas-market-cap/",
+          "title": "Paper 基于导致 Figma 市值腰斩的同一论点融资 3400 万美元",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-28T05:39:24.716Z",
+          "content_hash": "e33f25fc65f5596d",
+          "source_artifact_id": "SA-b164da327549453d",
+          "raw_id": "RAW-48289f3531978e14"
+        },
+        {
+          "source_id": "FISRC-fa985513def1ff4e",
+          "source_url": "https://buzzbytech.com/paper-raises-34m-series-a-with-accel-and-iconiq-to-build-the-design-platform-for-the-agentic-era/",
+          "title": "Paper Raises $34M Series A with Accel and ICONIQ to Build the Design Platform for the Agentic Era - buzzbytech.com",
+          "publisher": "buzzbytech.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-28T05:43:57.785Z",
+          "content_hash": "1c3457623d51a9d2",
+          "source_artifact_id": null,
+          "raw_id": null
+        },
+        {
+          "source_id": "FISRC-23493910baa1c861",
+          "source_url": "https://paper.design/blog/series-a",
+          "title": "Paper raises $34M to build the next great design platform",
+          "publisher": "paper.design",
+          "source_class": "official_candidate",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-28T05:43:59.935Z",
+          "content_hash": "6bc97de07bc79d43",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-28T05:44:51.884Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-28T05:44:51.884Z"
+    }
+  ],
+  "queue": [
+    {
+      "event_id": "EV-33b3cf34f8ff7bd8",
+      "company_name": "Multiverse Computing",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Multiverse Computing Announces Series C Fundraising Targeting up to $570M (€500M) to Power Efficient AI from Edge to Cloud\" funding company investors product",
+        "\"Multiverse Computing\" \"$570 million\" funding investors round",
+        "\"Multiverse Computing\" product customers case study",
+        "\"Multiverse Computing\" \"Multiverse Computing Announces Series C Fundraising Targeting up to $570M (€500M) to Power Efficient AI from Edge to Cloud\" competitors product use case",
+        "\"Multiverse Computing\" \"$570 million\" investor quote why invested",
+        "\"Multiverse Computing\" \"$570 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Multiverse Computing Announces Series C Fundraising Targeting up to $570M (€500M) to Power Efficient AI from Edge to Cloud\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Multiverse Computing Announces Series C Fundraising Targeting up to $570M (€500M) to Power Efficient AI from Edge to Cloud\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Multiverse Computing\" \"$570 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Multiverse Computing\" \"$570 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Multiverse Computing\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Multiverse Computing\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Multiverse Computing\" \"Multiverse Computing Announces Series C Fundraising Targeting up to $570M (€500M) to Power Efficient AI from Edge to Cloud\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Multiverse Computing\" \"Multiverse Computing Announces Series C Fundraising Targeting up to $570M (€500M) to Power Efficient AI from Edge to Cloud\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Multiverse Computing\" \"$570 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Multiverse Computing\" \"$570 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Multiverse Computing\" \"$570 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Multiverse Computing\" \"$570 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-28T05:45:53.140Z"
+    },
+    {
+      "event_id": "EV-3fb827f44ea109de",
+      "company_name": "Paper",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Paper raised $34M on the exact thesis that wiped out half of Figma's market cap - Startup Fortune\" funding company investors product",
+        "\"Paper\" \"$34M\" funding investors round",
+        "\"Paper\" product customers case study",
+        "\"Paper\" \"Paper raised $34M on the exact thesis that wiped out half of Figma's market cap - Startup Fortune\" competitors product use case",
+        "\"Paper\" \"$34M\" investor quote why invested",
+        "\"Paper\" \"$34M\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Paper raised $34M on the exact thesis that wiped out half of Figma's market cap - Startup Fortune\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Paper raised $34M on the exact thesis that wiped out half of Figma's market cap - Startup Fortune\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Paper\" \"$34M\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Paper\" \"$34M\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Paper\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Paper\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Paper\" \"Paper raised $34M on the exact thesis that wiped out half of Figma's market cap - Startup Fortune\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Paper\" \"Paper raised $34M on the exact thesis that wiped out half of Figma's market cap - Startup Fortune\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Paper\" \"$34M\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Paper\" \"$34M\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Paper\" \"$34M\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Paper\" \"$34M\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-28T05:45:53.140Z"
+    },
+    {
+      "event_id": "EV-986ac3a819d23388",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-28T05:45:53.140Z"
+    },
+    {
+      "event_id": "EV-eb881f5de456b59a",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-28T05:45:53.140Z"
+    },
+    {
+      "event_id": "EV-1196b80b537957f2",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-28T05:45:53.140Z"
+    },
+    {
+      "event_id": "EV-754e83c2d19005fe",
+      "company_name": "Arrakis",
+      "status": "auto_published",
+      "problems": [],
+      "queries": [
+        "\"Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | FinancialContent\" funding company investors product",
+        "\"Arrakis\" \"$38 million\" funding investors round",
+        "site:arrakistechnologies.ai \"Arrakis\" product customers case study",
+        "\"Arrakis\" \"Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | FinancialContent\" competitors product use case",
+        "\"Arrakis\" \"$38 million\" investor quote why invested",
+        "\"Arrakis\" \"$38 million\" \"why we invested\" OR \"our investment\""
+      ],
+      "attempts": [
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | FinancialContent\" funding company investors product",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | FinancialContent\" funding company investors product",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" \"$38 million\" funding investors round",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" \"$38 million\" funding investors round",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "site:arrakistechnologies.ai \"Arrakis\" product customers case study",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "site:arrakistechnologies.ai \"Arrakis\" product customers case study",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" \"Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | FinancialContent\" competitors product use case",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" \"Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | FinancialContent\" competitors product use case",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" \"$38 million\" investor quote why invested",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" \"$38 million\" investor quote why invested",
+          "status": "completed",
+          "error": ""
+        },
+        {
+          "provider": "tavily",
+          "query": "\"Arrakis\" \"$38 million\" \"why we invested\" OR \"our investment\"",
+          "status": "failed",
+          "error": "tavily_401"
+        },
+        {
+          "provider": "exa",
+          "query": "\"Arrakis\" \"$38 million\" \"why we invested\" OR \"our investment\"",
+          "status": "completed",
+          "error": ""
+        }
+      ],
+      "updated_at": "2026-07-28T05:45:53.140Z"
+    }
+  ]
+}

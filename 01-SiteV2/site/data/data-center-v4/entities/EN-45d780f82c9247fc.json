@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-27T03:18:25.889Z",
-    "latestDataDate": "2026-07-27",
-    "currentDate": "2026-07-27",
-    "eventCount": 1603,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-28T05:43:43.570Z",
+    "latestDataDate": "2026-07-28",
+    "currentDate": "2026-07-28",
+    "eventCount": 1656,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-45d780f82c9247fc",
@@ -21,6 +21,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-e4227b2cdef166b3",
       "EV-3b2626ff7d23a6d7",
       "EV-e81f3b979f169cfa"
     ],
@@ -30,13 +31,14 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-19",
-    "lastSeen": "2026-07-20",
+    "lastSeen": "2026-07-28",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-e4227b2cdef166b3",
         "EV-3b2626ff7d23a6d7"
       ],
       "hardware": [],
@@ -46,6 +48,21 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-e4227b2cdef166b3",
+        "dataDate": "2026-07-28",
+        "date": "2026-07-28",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Perplexity 发布 pplx：单二进制 CLI 工具，将 Search API 带入终端供编码智能体使用",
+        "displayTags": [],
+        "entityIds": [
+          "EN-45d780f82c9247fc"
+        ]
+      },
       {
         "id": "EV-e81f3b979f169cfa",
         "dataDate": "2026-07-20",

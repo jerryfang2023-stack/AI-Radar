@@ -4,13 +4,302 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-27T03:18:25.889Z",
-    "latestDataDate": "2026-07-27",
-    "currentDate": "2026-07-27",
-    "eventCount": 1603,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-28T05:43:43.570Z",
+    "latestDataDate": "2026-07-28",
+    "currentDate": "2026-07-28",
+    "eventCount": 1656,
+    "quarantinedEventCount": 13
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-6c33e8063218608e",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-5a4c2be958c0af72",
+      "object_type": "entity",
+      "event_id": "EV-ab93c7a2f4178e93",
+      "claim_refs": [
+        "CL-0627a90b3374d94a",
+        "CL-c2ba4bd65e95790b",
+        "CL-3a1da7376b6f8316",
+        "CL-d0d0b687dc963fdc"
+      ],
+      "source_refs": [
+        "SA-5fcf49f81eb8277f"
+      ],
+      "data_date": "2026-07-28",
+      "status": "verified",
+      "subjectName": "Anthropic",
+      "objectName": "Cowork",
+      "predicateLabel": "发布",
+      "title": "Anthropic 发布 Cowork",
+      "eventTitle": "Claude Cowork 智能体存在漏洞，可读写 Mac 任意文件",
+      "eventDate": "2026-07-28",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-0627a90b3374d94a",
+          "subject": "Claude",
+          "object": "Claude Cowork 智能体存在漏洞，可读写 Mac 任意文件",
+          "quote": "IT之家注：Claude Cowork 是 Anthropic 推出的 AI 智能体工具，在征得用户明确授权许可之后，该工具可以在 Mac 上访问本地文件和文件夹，并依据用户指令处理相关任务。"
+        },
+        {
+          "id": "CL-c2ba4bd65e95790b",
+          "subject": "Claude",
+          "object": "Claude Cowork 智能体存在漏洞，可读写 Mac 任意文件",
+          "quote": "在安全防护方面，Anthropic 为此设置 2 层限制，其一是 Cowork 在虚拟机内隔离运行，其二是仅可访问用户授权的文件与文件夹。"
+        },
+        {
+          "id": "CL-3a1da7376b6f8316",
+          "subject": "Claude",
+          "object": "Claude Cowork 智能体存在漏洞，可读写 Mac 任意文件",
+          "quote": "安全研究人员发现， 开发者利用该漏洞可同时突破上述 2 层限制。"
+        },
+        {
+          "id": "CL-d0d0b687dc963fdc",
+          "subject": "Claude",
+          "object": "Claude Cowork 智能体存在漏洞，可读写 Mac 任意文件",
+          "quote": "IT之家 7 月 28 日消息，科技媒体 9to5Mac 昨日（7 月 27 日）发布博文，报道称 Anthropic 的 Claude Cowork 存在安全漏洞， 攻击者利用漏洞可以从 Linux 虚拟机沙箱逃逸，并读写 Mac 任意位置文件。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-5fcf49f81eb8277f",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/982/277.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家注：Claude Cowork 是 Anthropic 推出的 AI 智能体工具，在征得用户明确授权许可之后，该工具可以在 Mac 上访问本地文件和文件夹，并依据用户指令处理相关任务。",
+      "event": {
+        "id": "EV-ab93c7a2f4178e93",
+        "title": "Claude Cowork 智能体存在漏洞，可读写 Mac 任意文件",
+        "originalTitle": "",
+        "date": "2026-07-28",
+        "dataDate": "2026-07-28",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-89beb40b356699d5",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-b5251b35f15bedc4",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-607964040e4b62e0",
+      "object_type": "entity",
+      "event_id": "EV-0d5a32aca724d30e",
+      "claim_refs": [
+        "CL-17917a446a0b1745",
+        "CL-6098e00d87661f17",
+        "CL-3f491467da2c1188",
+        "CL-025b5fe61e47e270",
+        "CL-d3827d00009ffed3",
+        "CL-0b29bd8d805a6d88",
+        "CL-e4b1174b8c46db80",
+        "CL-6b110325b1342b23",
+        "CL-5bd8cbc4e05c0c91",
+        "CL-8af57485c5109a4d",
+        "CL-cd309fb0e74719dd",
+        "CL-02639ae1f16e0bc6",
+        "CL-77573cdb7ebc5676",
+        "CL-5d036806becac7cb",
+        "CL-072040a564f2dcd5",
+        "CL-aef1a8c1c8f4b505",
+        "CL-1517646ea37dcab5",
+        "CL-c088a36059a2b177",
+        "CL-7cb6b54cfee08b14",
+        "CL-6eb59b5913b993a7",
+        "CL-4be8eeee15df7419"
+      ],
+      "source_refs": [
+        "SA-505e82d4a6cf3bae",
+        "SA-3f18b40231af33e5",
+        "SA-1e6605f6ec3da92f",
+        "SA-0fc832c5c81eed7f",
+        "SA-18435cce10dc5c42",
+        "SA-e267a5ad5dfe48c6"
+      ],
+      "data_date": "2026-07-28",
+      "status": "verified",
+      "subjectName": "Moonshot AI",
+      "objectName": "Kimi K3",
+      "predicateLabel": "发布",
+      "title": "Moonshot AI 发布 Kimi K3",
+      "eventTitle": "月之暗面正式开源 Kimi K3 模型，2.8 万亿参数",
+      "eventDate": "2026-07-28",
+      "sourceCount": 6,
+      "claims": [
+        {
+          "id": "CL-17917a446a0b1745",
+          "subject": "月之暗面正式开源",
+          "object": "，2.8 万亿参数",
+          "quote": "IT早报 0728：月之暗面正式开源 Kimi K3 模型；长鑫科技首日收盘市值 3.28 万亿元稳居 A 股一哥；小米澎程官宣 7 月 30 日发布；尊界时代旗舰 MPV 定档 8 月 5 日... - IT之家"
+        },
+        {
+          "id": "CL-6098e00d87661f17",
+          "subject": "月之暗面正式开源",
+          "object": "，2.8 万亿参数",
+          "quote": "IT早报 0728：月之暗面正式开源 Kimi K3 模型；长鑫科技首日收盘市值 3.28 万亿元稳居 A 股一哥；小米澎程官宣 7 月 30 日发布；尊界时代旗舰 MPV 定档 8 月 5 日..."
+        },
+        {
+          "id": "CL-3f491467da2c1188",
+          "subject": "月之暗面正式开源",
+          "object": "，2.8 万亿参数",
+          "quote": "1、月之暗面开源 Kimi K3 模型，2.8 万亿参数"
+        },
+        {
+          "id": "CL-025b5fe61e47e270",
+          "subject": "月之暗面正式开源",
+          "object": "，2.8 万亿参数",
+          "quote": "月之暗面官方 7 月 27 日晚正式开源 Kimi K3 模型。"
+        },
+        {
+          "id": "CL-d3827d00009ffed3",
+          "subject": "Arena",
+          "object": "Arena 第 30 周周榜：Kimi K3 蝉联前端开发榜全球第一，智能体榜表现突出",
+          "quote": "IT之家 7 月 27 日消息，Arena（ arena.ai ）平台今日发布了 2026 年第 30 周的 AI 大模型排行数据，统计周期为 2026-07-20 ~ 2026-07-26。"
+        },
+        {
+          "id": "CL-0b29bd8d805a6d88",
+          "subject": "Arena",
+          "object": "Arena 第 30 周周榜：Kimi K3 蝉联前端开发榜全球第一，智能体榜表现突出",
+          "quote": "本周国产模型表现亮眼， 月之暗面旗下的 kimi-k3 蝉联前端开发榜全球第一 ，同时代码榜杀入 Top 10，成为本期最大亮点。"
+        },
+        {
+          "id": "CL-e4b1174b8c46db80",
+          "subject": "Arena",
+          "object": "Arena 第 30 周周榜：Kimi K3 蝉联前端开发榜全球第一，智能体榜表现突出",
+          "quote": "整体榜单中 Anthropic 旗下多款 Claude 新模型集中入榜，头部梯队集中在 1500 分区间，国产模型在多个细分赛道持续实现突破，不少模型进入对应榜单的头部序列，整体竞争力稳步提升。"
+        },
+        {
+          "id": "CL-6b110325b1342b23",
+          "subject": "Arena",
+          "object": "Arena 第 30 周周榜：Kimi K3 蝉联前端开发榜全球第一，智能体榜表现突出",
+          "quote": "整体来看，本周 Arena 榜单最大的突破来自国产模型在前端开发赛道登顶， kimi-k3 同时在代码榜和智能体榜进入头部序列，体现出国产模型在工程开发、智能体实际应用场景的快速进步 。"
+        },
+        {
+          "id": "CL-5bd8cbc4e05c0c91",
+          "subject": "Kimi-K3 于 7 月 27 日在 HuggingFace 上",
+          "object": "Open Frontier Weights : We release the full Kimi K3 model weights under the Kimi K3 License, making frontier intelligence openly available for research, deployment, and further innovation.",
+          "quote": "Open Frontier Weights : We release the full Kimi K3 model weights under the Kimi K3 License, making frontier intelligence openly available for research, deployment, and further innovation."
+        },
+        {
+          "id": "CL-8af57485c5109a4d",
+          "subject": "Kimi-K3 于 7 月 27 日在 HuggingFace 上",
+          "object": "DeepSWE. Kimi K3 is evaluated with the Kimi Code harness. The GLM-5.2 score is taken from the GLM-5.2 release blog ; all remaining scores are from the official DeepSWE leaderboard , under which Kimi K3 attains 67.3 with the mini-SWE-agent harness. We report the DeepSWE v1.1 tasks.",
+          "quote": "DeepSWE. Kimi K3 is evaluated with the Kimi Code harness. The GLM-5.2 score is taken from the GLM-5.2 release blog ; all remaining scores are from the official DeepSWE leaderboard , under which Kimi K3 attains 67.3 with the mini-SWE-agent harness. We report the DeepSWE v1.1 tasks."
+        },
+        {
+          "id": "CL-cd309fb0e74719dd",
+          "subject": "Kimi-K3 于 7 月 27 日在 HuggingFace 上",
+          "object": "Terminal-Bench 2.1. Kimi K3 is evaluated with the Kimi Code harness. For all other models, we report the best score across harnesses: GLM-5.2 with Claude Code ( GLM-5.2 release blog ); Claude Opus 4.8 and Claude Fable 5 with Terminus 2 ( Artificial Analysis ); GPT-5.5 and GPT-5.6 Sol with Codex ( OpenAI ).",
+          "quote": "Terminal-Bench 2.1. Kimi K3 is evaluated with the Kimi Code harness. For all other models, we report the best score across harnesses: GLM-5.2 with Claude Code ( GLM-5.2 release blog ); Claude Opus 4.8 and Claude Fable 5 with Terminus 2 ( Artificial Analysis ); GPT-5.5 and GPT-5.6 Sol with Codex ( OpenAI )."
+        },
+        {
+          "id": "CL-02639ae1f16e0bc6",
+          "subject": "Kimi-K3 于 7 月 27 日在 HuggingFace 上",
+          "object": "ProgramBench. Kimi K3 is evaluated with the Kimi Code harness. The GLM-5.2 score is from the GLM-5.2 release blog ; all other scores are from Vals AI .",
+          "quote": "ProgramBench. Kimi K3 is evaluated with the Kimi Code harness. The GLM-5.2 score is from the GLM-5.2 release blog ; all other scores are from Vals AI ."
+        },
+        {
+          "id": "CL-77573cdb7ebc5676",
+          "subject": "Modal",
+          "object": "Kimi K3",
+          "quote": "today we just launched Kimi K3 on managed endpoints"
+        },
+        {
+          "id": "CL-5d036806becac7cb",
+          "subject": "月之暗面开源",
+          "object": "，2.8 万亿参数",
+          "quote": "月之暗面开源 Kimi K3 模型，2.8 万亿参数 - IT之家"
+        },
+        {
+          "id": "CL-072040a564f2dcd5",
+          "subject": "月之暗面开源",
+          "object": "，2.8 万亿参数",
+          "quote": "月之暗面开源 Kimi K3 模型，2.8 万亿参数"
+        },
+        {
+          "id": "CL-aef1a8c1c8f4b505",
+          "subject": "月之暗面开源",
+          "object": "，2.8 万亿参数",
+          "quote": "IT之家 7 月 27 日消息，月之暗面官方今晚正式开源 Kimi K3 模型。"
+        },
+        {
+          "id": "CL-1517646ea37dcab5",
+          "subject": "月之暗面开源",
+          "object": "，2.8 万亿参数",
+          "quote": "官方发布了 Kimi K3 的模型权重、技术报告，并开源支撑 Kimi K3 模型训练的关键 Infra 技术：MoonEP、FlashKDA 和 AgentEnv。"
+        },
+        {
+          "id": "CL-c088a36059a2b177",
+          "subject": "Moonshot AI releases",
+          "object": "race",
+          "quote": "Moonshot AI releases Kimi K3 open weights and infrastructure after shaking up the frontier model race"
+        },
+        {
+          "id": "CL-7cb6b54cfee08b14",
+          "subject": "Moonshot AI releases",
+          "object": "race",
+          "quote": "Chinese AI company Moonshot AI has released the model weights and technical report for Kimi K3. Along with the model weights on Hugging Face , the company is open-sourcing parts of its infrastructure, including high-performance attention kernels, an MoE communication library, and tools for running AI agents at scale. Moonshot AI claims the new architecture delivers 2.5 times more intelligence per unit of compute. The technical report is available on GitHub."
+        },
+        {
+          "id": "CL-6eb59b5913b993a7",
+          "subject": "Moonshot AI releases",
+          "object": "race",
+          "quote": "Since its initial announcement in mid-July 2026, Kimi K3 has caused a stir by scoring close to Western frontier models such as Fable 5 and GPT-5.6 Sol on popular benchmarks, but at a slightly lower cost and now with open weights. However, an independent test by the UK's Cyber Institute found that the model's cyber capabilities lag far behind those of frontier models. The same is true of its math skills ."
+        },
+        {
+          "id": "CL-4be8eeee15df7419",
+          "subject": "Moonshot AI releases",
+          "object": "race",
+          "quote": "Both gaps could suggest that Kimi K3 relies on distillation, a technique in which a smaller model learns from the outputs of a more capable one. Chinese models often face this accusation . At the same time, American open-weight advocates increasingly view distillation as a legitimate technique . Ad"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-505e82d4a6cf3bae",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/982/283.htm"
+        },
+        {
+          "id": "SA-3f18b40231af33e5",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/982/095.htm"
+        },
+        {
+          "id": "SA-1e6605f6ec3da92f",
+          "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://huggingface.co/moonshotai/Kimi-K3"
+        },
+        {
+          "id": "SA-0fc832c5c81eed7f",
+          "publisher": "Hacker News 热门（buzzing.cc 中文翻译）",
+          "url": "https://matthewsaltz.com/blog/using-an-open-model-feels-surprisingly-good"
+        },
+        {
+          "id": "SA-18435cce10dc5c42",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/982/259.htm"
+        },
+        {
+          "id": "SA-e267a5ad5dfe48c6",
+          "publisher": "The Decoder AI News",
+          "url": "https://the-decoder.com/moonshot-ai-releases-kimi-k3-open-weights-and-infrastructure-after-shaking-up-the-frontier-model-race"
+        }
+      ],
+      "sourceExcerpt": "IT早报 0728：月之暗面正式开源 Kimi K3 模型；长鑫科技首日收盘市值 3.28 万亿元稳居 A 股一哥；小米澎程官宣 7 月 30 日发布；尊界时代旗舰 MPV 定档 8 月 5 日... - IT之家",
+      "event": {
+        "id": "EV-0d5a32aca724d30e",
+        "title": "月之暗面正式开源 Kimi K3 模型，2.8 万亿参数",
+        "originalTitle": "",
+        "date": "2026-07-28",
+        "dataDate": "2026-07-28",
+        "eventTypeLabel": "模型发布"
+      }
+    },
     {
       "relationship_id": "REL2-1965c9aefccb981e",
       "relationship_version": "RELATION-V2.1",
@@ -3155,6 +3444,76 @@
       }
     },
     {
+      "relationship_id": "REL2-9ad2c97e765910d9",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-18f0900d6c487f59",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-bcf6cc5593de2a0f",
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.6 Flash",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.6 Flash",
+      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+      "eventDate": "2026-07-21",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-bcf6cc5593de2a0f",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家"
+        },
+        {
+          "id": "CL-1407e158e3017631",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber"
+        },
+        {
+          "id": "CL-bcccc3f03d4b38a9",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "IT之家 7 月 21 日消息，谷歌今日发布了三款新的人工智能模型，包括性能最强的 Gemini 3.6 Flash，以及专门针对网络安全优化的 Gemini 3.5 Flash Cyber。"
+        },
+        {
+          "id": "CL-910d21a1f5ab0b3c",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "今年以来，这两家 AI 公司相继推出了能够发现软件安全漏洞的先进模型，在网络安全领域占据了领先地位。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a3cf2c06935ba536",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/979/795.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家",
+      "event": {
+        "id": "EV-597b8257a97b3d02",
+        "title": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+        "originalTitle": "",
+        "date": "2026-07-21",
+        "dataDate": "2026-07-22",
+        "eventTypeLabel": "产品发布"
+      }
+    },
+    {
       "relationship_id": "REL2-a2a2d52284004533",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-ac123e56b0168ec2",
@@ -3327,6 +3686,69 @@
         "date": "2026-07-21",
         "dataDate": "2026-07-22",
         "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-ddbd67ee39ac2096",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-31055a8d9856fce4",
+      "object_type": "entity",
+      "event_id": "EV-597b8257a97b3d02",
+      "claim_refs": [
+        "CL-1407e158e3017631",
+        "CL-bcccc3f03d4b38a9",
+        "CL-910d21a1f5ab0b3c"
+      ],
+      "source_refs": [
+        "SA-a3cf2c06935ba536"
+      ],
+      "data_date": "2026-07-22",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.5 Flash Cyber",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.5 Flash Cyber",
+      "eventTitle": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+      "eventDate": "2026-07-21",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-1407e158e3017631",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber"
+        },
+        {
+          "id": "CL-bcccc3f03d4b38a9",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "IT之家 7 月 21 日消息，谷歌今日发布了三款新的人工智能模型，包括性能最强的 Gemini 3.6 Flash，以及专门针对网络安全优化的 Gemini 3.5 Flash Cyber。"
+        },
+        {
+          "id": "CL-910d21a1f5ab0b3c",
+          "subject": "谷歌",
+          "object": "Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+          "quote": "今年以来，这两家 AI 公司相继推出了能够发现软件安全漏洞的先进模型，在网络安全领域占据了领先地位。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a3cf2c06935ba536",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/979/795.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌发布三款新 AI 模型，含 Gemini 3.6 Flash、3.5 Flash Cyber - IT之家",
+      "event": {
+        "id": "EV-597b8257a97b3d02",
+        "title": "谷歌发布 Gemini 3.6 Flash、3.5 Flash Cyber 及 3.5 Flash-Lite 三款新 AI 模型",
+        "originalTitle": "",
+        "date": "2026-07-21",
+        "dataDate": "2026-07-22",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -6602,6 +7024,76 @@
         "date": "2026-07-15",
         "dataDate": "2026-07-16",
         "eventTypeLabel": "合作"
+      }
+    },
+    {
+      "relationship_id": "REL2-f92ee2f782a8185b",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0e008e2c06144ec8",
+      "object_type": "entity",
+      "event_id": "EV-6359c9f6c2609a38",
+      "claim_refs": [
+        "CL-3c3d4af5e069787d",
+        "CL-714aa682873fac8b",
+        "CL-b606f6b126922962",
+        "CL-4a7039df083c3152"
+      ],
+      "source_refs": [
+        "SA-b894cd4477812b65"
+      ],
+      "data_date": "2026-07-16",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Nano Banana",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Nano Banana",
+      "eventTitle": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
+      "eventDate": "2026-07-15",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-3c3d4af5e069787d",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 - IT之家"
+        },
+        {
+          "id": "CL-714aa682873fac8b",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能"
+        },
+        {
+          "id": "CL-b606f6b126922962",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "IT之家 7 月 15 日消息，谷歌昨日（7 月 14 日）发布博文，宣布庆祝谷歌图片（Google Image）功能上线 25 周年，并推出新功能： 用户在 AI 概览中，可以直接调用 Nano Banana 模型自定义生成图片。"
+        },
+        {
+          "id": "CL-4a7039df083c3152",
+          "subject": "谷歌图片服务 25 周年，AI 概览",
+          "object": "Nano Banana 生图功能",
+          "quote": "谷歌为庆祝谷歌图片服务上线 25 周年，在 AI 概览中新增生图功能，谷歌表示："
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b894cd4477812b65",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/976/980.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌图片服务上线 25 周年，AI 概览新增 Nano Banana 生图功能 - IT之家",
+      "event": {
+        "id": "EV-6359c9f6c2609a38",
+        "title": "谷歌图片服务 25 周年，AI 概览新增 Nano Banana 生图功能",
+        "originalTitle": "",
+        "date": "2026-07-15",
+        "dataDate": "2026-07-16",
+        "eventTypeLabel": "产品发布"
       }
     },
     {
@@ -11288,6 +11780,76 @@
       }
     },
     {
+      "relationship_id": "REL2-638b55900181fbf2",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-01f1074bb52ff605",
+      "object_type": "entity",
+      "event_id": "EV-d8c69ed782b73a34",
+      "claim_refs": [
+        "CL-b5bc8b4e766de0ef",
+        "CL-dbee760c0db43fab",
+        "CL-72f47e56c761bde4",
+        "CL-9fdeb9adf922c9da"
+      ],
+      "source_refs": [
+        "SA-cb3a20fe357ba722"
+      ],
+      "data_date": "2026-07-01",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Nano Banana 2 Lite",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Nano Banana 2 Lite",
+      "eventTitle": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+      "eventDate": "2026-07-01",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b5bc8b4e766de0ef",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜 - IT之家"
+        },
+        {
+          "id": "CL-dbee760c0db43fab",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜"
+        },
+        {
+          "id": "CL-72f47e56c761bde4",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "IT之家 7 月 1 日消息，当地时间周二，谷歌发布了新款自研 AI 图像与视频生成模型 Nano Banana 2 Lite，宣称 相比上一代速度更快、使用成本更低 。"
+        },
+        {
+          "id": "CL-9fdeb9adf922c9da",
+          "subject": "谷歌",
+          "object": "Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+          "quote": "Nano Banana 2 Lite 可在 4 秒内生成一张图像 ，延迟较此前明显下降，适合需要快速反复修改方案，或在短时间内批量生成大量图像的工作，每生成 1000 张图像 仅收费 0.034 美元 （IT之家注：现汇率约合 0.23 元人民币）。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-cb3a20fe357ba722",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/970/812.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜 - IT之家",
+      "event": {
+        "id": "EV-d8c69ed782b73a34",
+        "title": "谷歌推出 AI 生图模型 Nano Banana 2 Lite：4 秒出图，比标准版更快更便宜",
+        "originalTitle": "",
+        "date": "2026-07-01",
+        "dataDate": "2026-07-01",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-65389a75e3085862",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-bbdefa2950f49882",
@@ -13961,6 +14523,69 @@
         "date": "2026-06-23",
         "dataDate": "2026-06-23",
         "eventTypeLabel": "模型发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-7a95bce5aecaba79",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-2ab6d53e717a0e0d",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-bbdefa2950f49882",
+      "object_type": "entity",
+      "event_id": "EV-d1a3f5c8045e548d",
+      "claim_refs": [
+        "CL-5758242d40096958",
+        "CL-108011dcac3f51c9",
+        "CL-6816c5ea4abdfa87"
+      ],
+      "source_refs": [
+        "SA-572f0e8d4b983d74"
+      ],
+      "data_date": "2026-06-23",
+      "status": "verified",
+      "subjectName": "诺基亚",
+      "objectName": "Google",
+      "predicateLabel": "合作",
+      "title": "诺基亚 合作 Google",
+      "eventTitle": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
+      "eventDate": "2026-06-22",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-5758242d40096958",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台 - IT之家"
+        },
+        {
+          "id": "CL-108011dcac3f51c9",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台"
+        },
+        {
+          "id": "CL-6816c5ea4abdfa87",
+          "subject": "谷歌云与诺基亚扩大",
+          "object": "，将 Gemini 模型融入电信网络智能运维平台",
+          "quote": "IT之家 6 月 22 日消息，谷歌云与诺基亚当地时间 6 月 22 日宣布扩展合作关系，将谷歌 Gemini 模型整合至诺基亚网络软件套件 Nokia Assurance Center。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-572f0e8d4b983d74",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/967/200.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台 - IT之家",
+      "event": {
+        "id": "EV-d1a3f5c8045e548d",
+        "title": "谷歌云与诺基亚扩大合作，将 Gemini 模型融入电信网络智能运维平台",
+        "originalTitle": "",
+        "date": "2026-06-22",
+        "dataDate": "2026-06-23",
+        "eventTypeLabel": "合作"
       }
     },
     {
@@ -17057,6 +17682,76 @@
       }
     },
     {
+      "relationship_id": "REL2-44ebd8a7378accce",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-d56aa2f9908f566a",
+      "object_type": "entity",
+      "event_id": "EV-22b8d155ce027905",
+      "claim_refs": [
+        "CL-0ffd4a87d0bf9a23",
+        "CL-9a3abffb4df3b677",
+        "CL-53bc4ba62a2c55fb",
+        "CL-c0d954c60d8247d3"
+      ],
+      "source_refs": [
+        "SA-30fb0e04917bc0f3"
+      ],
+      "data_date": "2026-06-11",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "DiffusionGemma",
+      "predicateLabel": "发布",
+      "title": "Google 发布 DiffusionGemma",
+      "eventTitle": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
+      "eventDate": "2026-06-11",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-0ffd4a87d0bf9a23",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍 - IT之家"
+        },
+        {
+          "id": "CL-9a3abffb4df3b677",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍"
+        },
+        {
+          "id": "CL-53bc4ba62a2c55fb",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "IT之家 6 月 11 日消息，谷歌今天（6 月 11 日）发布公告，宣布推出 DiffusionGemma，是基于文本扩散机制的开放 AI 模型， 相比较自回归模型在本地推理速度上提升了 4 倍。"
+        },
+        {
+          "id": "CL-c0d954c60d8247d3",
+          "subject": "谷歌",
+          "object": "：本地 AI 推理速度提升 4 倍",
+          "quote": "开源方面，该模型能力与其他 Gemma 4 模型相当，但推理效率显著更高。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-30fb0e04917bc0f3",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/962/696.htm"
+        }
+      ],
+      "sourceExcerpt": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍 - IT之家",
+      "event": {
+        "id": "EV-22b8d155ce027905",
+        "title": "谷歌推出 DiffusionGemma 文本扩散模型：本地 AI 推理速度提升 4 倍",
+        "originalTitle": "",
+        "date": "2026-06-11",
+        "dataDate": "2026-06-11",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-48cdf6bd8d397fed",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -17992,6 +18687,76 @@
         "date": "2026-06-10",
         "dataDate": "2026-06-10",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-4aa175c42153e014",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-bbdefa2950f49882",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-4baef0e41cbd7ae2",
+      "object_type": "entity",
+      "event_id": "EV-4a3cb762183581cd",
+      "claim_refs": [
+        "CL-b487cc8855f09bf4",
+        "CL-5b9c208e3329948f",
+        "CL-a0bae28c89384d4f",
+        "CL-c2d89368f69456e3"
+      ],
+      "source_refs": [
+        "SA-b6f2cdfb3b2eff0e"
+      ],
+      "data_date": "2026-06-10",
+      "status": "verified",
+      "subjectName": "Google",
+      "objectName": "Gemini 3.5 Live Translate",
+      "predicateLabel": "发布",
+      "title": "Google 发布 Gemini 3.5 Live Translate",
+      "eventTitle": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+      "eventDate": "2026-06-09",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-b487cc8855f09bf4",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "IT之家 6 月 9 日消息，北京时间 9 日（今天）晚间，谷歌正式发布 最新的实时语音互译音频模型 Gemini 3.5 Live Translate，迈出实时翻译的下一步。"
+        },
+        {
+          "id": "CL-5b9c208e3329948f",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "Gemini 3.5 Live Translate 可自动识别 70 多种语言，并生成流畅、自然的翻译语音，同时保留说话者的语调、语速和音高 。"
+        },
+        {
+          "id": "CL-a0bae28c89384d4f",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "根据介绍，传统轮流式系统通常要等说话者说完后才开始翻译，Gemini 3.5 Live Translate 则会连续生成语音，在“等待更多上下文以提升翻译质量”和“即时翻译以跟上说话者节奏”之间取得平衡。"
+        },
+        {
+          "id": "CL-c2d89368f69456e3",
+          "subject": "谷歌",
+          "object": "Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+          "quote": "Gemini 3.5 Live Translate 今起陆续登陆谷歌产品："
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-b6f2cdfb3b2eff0e",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/962/143.htm"
+        }
+      ],
+      "sourceExcerpt": "IT之家 6 月 9 日消息，北京时间 9 日（今天）晚间，谷歌正式发布 最新的实时语音互译音频模型 Gemini 3.5 Live Translate，迈出实时翻译的下一步。",
+      "event": {
+        "id": "EV-4a3cb762183581cd",
+        "title": "谷歌发布实时语音互译模型 Gemini 3.5 Live Translate，谷歌翻译 App 即用",
+        "originalTitle": "",
+        "date": "2026-06-09",
+        "dataDate": "2026-06-10",
+        "eventTypeLabel": "模型发布"
       }
     },
     {

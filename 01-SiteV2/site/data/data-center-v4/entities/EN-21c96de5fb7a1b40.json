@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-27T03:18:25.889Z",
-    "latestDataDate": "2026-07-27",
-    "currentDate": "2026-07-27",
-    "eventCount": 1603,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-28T05:43:43.570Z",
+    "latestDataDate": "2026-07-28",
+    "currentDate": "2026-07-28",
+    "eventCount": 1656,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-21c96de5fb7a1b40",
@@ -21,17 +21,19 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-87b7a16e70770a36",
       "EV-1d5a70a0b4ca741c"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-08",
-    "lastSeen": "2026-07-08",
+    "lastSeen": "2026-07-28",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [
+        "EV-87b7a16e70770a36",
         "EV-1d5a70a0b4ca741c"
       ],
       "partnerships": [],
@@ -41,6 +43,29 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-87b7a16e70770a36",
+        "dataDate": "2026-07-28",
+        "date": "2026-07-27",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Axe Compute 赢得 15 亿美元 AI 基础设施合同",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "id": "data_infrastructure",
+            "dimensionName": "产品形态",
+            "name": "数据与模型基础设施"
+          }
+        ],
+        "entityIds": [
+          "EN-21c96de5fb7a1b40",
+          "EN-8d4321d936320802"
+        ]
+      },
       {
         "id": "EV-1d5a70a0b4ca741c",
         "dataDate": "2026-07-08",
@@ -62,6 +87,45 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [],
-  "fde": [],
+  "fde": [
+    {
+      "id": "FDE-eb7e643ba83a040d",
+      "eventId": "EV-87b7a16e70770a36",
+      "dataDate": "2026-07-28",
+      "date": "2026-07-27",
+      "title": "Axe Compute 赢得 15 亿美元 AI 基础设施合同",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "Axe Compute Inc.",
+      "vendor": "NVIDIA",
+      "industry": "未披露",
+      "useCase": "five-year customer agreement with total committed contract value of over $1.5 billion to deploy a dedicated NVIDIA Blackwell-based AI infrastructure cluster in the United States",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [
+        "$1.5 billion"
+      ],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://stocktitan.net/sec-filings/AGPU/8-k-axe-compute-inc-reports-material-event-a6704d207de2.html",
+      "entityIds": [
+        "EN-21c96de5fb7a1b40",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ],
   "hardware": []
 }

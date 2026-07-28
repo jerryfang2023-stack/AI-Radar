@@ -1,0 +1,252 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-111
+title: "韩国企业引入海外 AI 模型遇成本难题，三星等巨头实施 Token 配额制"
+title_zh: "韩国企业引入海外 AI 模型遇成本难题，三星等巨头实施 Token 配额制"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.ithome.com/0/982/241.htm"
+canonical_url: "https://ithome.com/0/982/241.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-27T13:11:43.000Z"
+collected_at: 2026-07-28T05:40:07.959Z
+language: mixed
+full_text_hash: 7fa9cb157f34507c
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-28/r-111-韩国企业引入海外-ai-模型遇成本难题-三星等巨头实施-token-配额制.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-28/r-111-韩国企业引入海外-ai-模型遇成本难题-三星等巨头实施-token-配额制.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 71
+extractor_diagnostics: {"readability_score":71,"text_length":2058,"paragraph_count":26,"sentence_count":21,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 2058
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7fa9cb157f34507c","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"韩国企业引入海外 AI 模型遇成本难题，三星等巨头实施 Token 配额制","discovery_summary":"三星、SK 集团等韩国大型企业向员工开放 Claude、Gemini 和 ChatGPT 等美国 AI 模型后，面临 Token 成本快速攀升的挑战。三星已实施严格的 Token 配额制度，员工需按等级获取额度，提升额度需证明 AI 提升了工作效率。韩国在全球 Claude 使用量排名第 14 位，人均使用量超过全球平均水平的 3.5 倍，软件开发领域渗透率最高。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/982/241.htm","discovered_at":"2026-07-28T05:29:44.840Z","rank_on_page":266,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 01c336ce4aed39c4
+content_hash: 7fa9cb157f34507c
+semantic_hash: ad80f20a07e9fafb
+duplicate_of: ""
+first_seen_at: "2026-07-27T13:11:43.000Z"
+last_seen_at: 2026-07-28T05:40:07.959Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["ai_hardware_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic","Microsoft"],"products":["Claude","Gemini","ChatGPT","Agent","Codex","Copilot"],"people":[],"industries":["制造 / 工业","开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["14","3.5 倍","7","27","121","600 万","27624","365"],"quotes":["额度提升并不是自动完成的。如果你想提高额度，就必须拿出成果，证明自己确实把 AI 用到了工作中。","有一天，公司公布了 AI Token 消耗排名，第一名员工一个人就花掉了约 600 万韩元（IT之家注：现汇率约合 27624 元人民币）。管理层希望大家使用 AI，但如果你用得太多，就会明显感觉到他们一直在盯着成本。","目前 GPT 和 Claude 仍然是最受欢迎的选择，但额度限制太严格，所以大多数人更愿意使用 Codex，因为它在编程任务上的 Token 消耗更低。","芯片部门的员工一直在等待审批，但短期内看不到获批的迹象。","评估引入 Microsoft 365 和 Copilot，同时也在研究采用 ChatGPT Enterprise 的可能性"]}
+evidence_seed: {"company_actions":["包括三星、SK 集团在内的韩国大型企业，正通过企业版合同，陆续向员工开放 Anthropic 的 Claude、谷歌 Gemini 以及 OpenAI ChatGPT 等美国 AI 模型。","包括三星在内的企业，如今正研究如何限制员工的 Token 使用额度，以在提升生产效率和控制运营成本之间取得平衡。"],"case_details":[],"workflow_changes":["IT之家 7 月 27 日消息，随着韩国企业加快将海外大模型引入业务流程，它们正面临 AI 词元（Token）使用成本快速攀升的挑战。"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":["自 ChatGPT 于近四年前引爆全球 AI 热潮以来，韩国企业整体在 AI 应用方面一直较为落后，许多公司要么推进缓慢，要么出于数据安全考虑直接禁止员工使用相关工具。","然而，这一转变不仅成本高昂，对于半导体等对数据安全极为敏感的行业来说，推广过程依然十分谨慎。"]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"三星、SK 集团等韩国大型企业向员工开放 Claude、Gemini 和 ChatGPT 等美国 AI 模型后，面临 Token 成本快速攀升的挑战。三星已实施严格的 Token 配额制度，员工需按等级获取额度，提升额度需证明 AI 提升了工作效率。韩国在全球 Claude 使用量排名第 14 位，人均使用量超过全球平均水平的 3.5 倍，软件开发领域渗透率最高。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"IT之家 7 月 27 日消息，随着韩国企业加快将海外大模型引入业务流程，它们正面临 AI 词元（Token）使用成本快速攀升的挑战。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"自 ChatGPT 于近四年前引爆全球 AI 热潮以来，韩国企业整体在 AI 应用方面一直较为落后，许多公司要么推进缓慢，要么出于数据安全考虑直接禁止员工使用相关工具。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"包括三星、SK 集团在内的韩国大型企业，正通过企业版合同，陆续向员工开放 Anthropic 的 Claude、谷歌 Gemini 以及 OpenAI ChatGPT 等美国 AI 模型。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"然而，这一转变不仅成本高昂，对于半导体等对数据安全极为敏感的行业来说，推广过程依然十分谨慎。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"包括三星在内的企业，如今正研究如何限制员工的 Token 使用额度，以在提升生产效率和控制运营成本之间取得平衡。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"medium"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-28T05:40:07.959Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 韩国企业引入海外 AI 模型遇成本难题，三星等巨头实施 Token 配额制
+
+## clean_text
+
+IT之家 7 月 27 日消息，随着韩国企业加快将海外大模型引入业务流程，它们正面临 AI 词元（Token）使用成本快速攀升的挑战。
+自 ChatGPT 于近四年前引爆全球 AI 热潮以来，韩国企业整体在 AI 应用方面一直较为落后，许多公司要么推进缓慢，要么出于数据安全考虑直接禁止员工使用相关工具。
+不过，近期这一局面开始发生变化。包括三星、SK 集团在内的韩国大型企业，正通过企业版合同，陆续向员工开放 Anthropic 的 Claude、谷歌 Gemini 以及 OpenAI ChatGPT 等美国 AI 模型。
+然而，这一转变不仅成本高昂，对于半导体等对数据安全极为敏感的行业来说，推广过程依然十分谨慎。包括三星在内的企业，如今正研究如何限制员工的 Token 使用额度，以在提升生产效率和控制运营成本之间取得平衡。
+企业应用成本高企，Token 成为新负担
+相比普通消费者，企业工作流程通常涉及复杂、高容量的任务，因此 Token 消耗也远高于个人用户。
+其中，Claude 的 Token 成本已成为韩国企业关注的新问题。虽然 Claude 进入主流市场的时间并不长，但凭借出色的编程和任务执行能力，其迅速成为韩国最受开发者等重度用户欢迎的 AI 工具之一。
+为了控制成本，三星在向员工开放 Claude、Gemini 和 ChatGPT 三款美国大模型时，同时实施了严格的 Token 配额制度。员工根据不同等级获得不同的使用额度，基础等级仅能完成简单任务。如果希望提升额度，则必须证明 AI 确实提高了自己的工作效率。
+一位不愿透露姓名的三星员工表示：“额度提升并不是自动完成的。如果你想提高额度，就必须拿出成果，证明自己确实把 AI 用到了工作中。”
+这一制度也在公司内部引发了一些不满。一些员工认为，目前的 Token 限额过于严格，根本不足以充分发挥 AI 的作用。
+根据 Anthropic 发布的《Anthropic Economic Index》，韩国在全球 121 个国家和地区中，Claude 使用量排名第 14 位，人均使用量超过全球平均水平的 3.5 倍。
+目前，Claude 在软件开发领域的渗透率最高。
+Naver 已在整个工程研发团队全面部署 Claude Code，并称这是亚洲规模最大的同类部署之一。游戏公司 Nexon 也有数千名开发者在游戏开发全过程中使用 Claude Code，包括策划、编程、代码审查以及在线运营版本部署等环节。
+对于大型企业而言，AI 的应用范围正进一步扩展至任务自动化和系统集成。
+三星 SDS 已为三星电子员工推出 Claude Cowork 和 Claude Code，用于日常办公、基于 AI Agent 的任务自动化以及软件开发。LG CNS 也正分阶段向数千名员工部署 Claude，用于软件开发和客户技术解决方案，并计划未来推广至整个 LG 集团。
+相比之下，许多中小企业缺乏完善的管理体系，只能通过一些“隐性方式”提醒员工不要过度使用 AI。
+一位大型生物科技制造企业的员工表示：“有一天，公司公布了 AI Token 消耗排名，第一名员工一个人就花掉了约 600 万韩元（IT之家注：现汇率约合 27624 元人民币）。管理层希望大家使用 AI，但如果你用得太多，就会明显感觉到他们一直在盯着成本。”
+还有一些企业采取团队共享 Token 配额的方式，几十名员工共同使用一份额度，这也限制了大家使用 Fable 等高消耗模型。
+另一位制造业员工表示：“目前 GPT 和 Claude 仍然是最受欢迎的选择，但额度限制太严格，所以大多数人更愿意使用 Codex，因为它在编程任务上的 Token 消耗更低。”
+半导体行业依然保持谨慎
+AI 在韩国各行业的普及程度并不一致，其中半导体行业尤其谨慎。
+据知情人士透露，即便是在三星电子内部，不同事业部的推进速度也存在明显差异。一些部门已经可以自由使用 AI，但半导体业务目前仍基本禁止使用外部大模型。
+该人士表示：“芯片部门的员工一直在等待审批，但短期内看不到获批的迹象。”
+SK 集团内部的差异则更加明显。一些子公司已经通过企业版合同部署了 Claude、Gemini 和 ChatGPT 三大美国模型，并积极培养员工日常使用 AI 的习惯，而 SK 海力士目前仍主要依赖自研 AI 模型。
+就在三星宣布开放美国 AI 模型几天后，SK 海力士首席执行官郭鲁正（Kwak Noh-jung）在京畿道利川举行的一场员工座谈会上表示，公司正在“评估引入 Microsoft 365 和 Copilot，同时也在研究采用 ChatGPT Enterprise 的可能性”。
+不过，目前这些计划仍停留在评估阶段，尚未正式落地。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 27 日消息，随着韩国企业加快将海外大模型引入业务流程，它们正面临 AI 词元（Token）使用成本快速攀升的挑战。
+自 ChatGPT 于近四年前引爆全球 AI 热潮以来，韩国企业整体在 AI 应用方面一直较为落后，许多公司要么推进缓慢，要么出于数据安全考虑直接禁止员工使用相关工具。
+不过，近期这一局面开始发生变化。包括三星、SK 集团在内的韩国大型企业，正通过企业版合同，陆续向员工开放 Anthropic 的 Claude、谷歌 Gemini 以及 OpenAI ChatGPT 等美国 AI 模型。
+然而，这一转变不仅成本高昂，对于半导体等对数据安全极为敏感的行业来说，推广过程依然十分谨慎。包括三星在内的企业，如今正研究如何限制员工的 Token 使用额度，以在提升生产效率和控制运营成本之间取得平衡。
+企业应用成本高企，Token 成为新负担
+相比普通消费者，企业工作流程通常涉及复杂、高容量的任务，因此 Token 消耗也远高于个人用户。
+其中，Claude 的 Token 成本已成为韩国企业关注的新问题。虽然 Claude 进入主流市场的时间并不长，但凭借出色的编程和任务执行能力，其迅速成为韩国最受开发者等重度用户欢迎的 AI 工具之一。
+为了控制成本，三星在向员工开放 Claude、Gemini 和 ChatGPT 三款美国大模型时，同时实施了严格的 Token 配额制度。员工根据不同等级获得不同的使用额度，基础等级仅能完成简单任务。如果希望提升额度，则必须证明 AI 确实提高了自己的工作效率。
+一位不愿透露姓名的三星员工表示：“额度提升并不是自动完成的。如果你想提高额度，就必须拿出成果，证明自己确实把 AI 用到了工作中。”
+这一制度也在公司内部引发了一些不满。一些员工认为，目前的 Token 限额过于严格，根本不足以充分发挥 AI 的作用。
+根据 Anthropic 发布的《Anthropic Economic Index》，韩国在全球 121 个国家和地区中，Claude 使用量排名第 14 位，人均使用量超过全球平均水平的 3.5 倍。
+目前，Claude 在软件开发领域的渗透率最高。
+Naver 已在整个工程研发团队全面部署 Claude Code，并称这是亚洲规模最大的同类部署之一。游戏公司 Nexon 也有数千名开发者在游戏开发全过程中使用 Claude Code，包括策划、编程、代码审查以及在线运营版本部署等环节。
+对于大型企业而言，AI 的应用范围正进一步扩展至任务自动化和系统集成。
+三星 SDS 已为三星电子员工推出 Claude Cowork 和 Claude Code，用于日常办公、基于 AI Agent 的任务自动化以及软件开发。LG CNS 也正分阶段向数千名员工部署 Claude，用于软件开发和客户技术解决方案，并计划未来推广至整个 LG 集团。
+相比之下，许多中小企业缺乏完善的管理体系，只能通过一些“隐性方式”提醒员工不要过度使用 AI。
+一位大型生物科技制造企业的员工表示：“有一天，公司公布了 AI Token 消耗排名，第一名员工一个人就花掉了约 600 万韩元（IT之家注：现汇率约合 27624 元人民币）。管理层希望大家使用 AI，但如果你用得太多，就会明显感觉到他们一直在盯着成本。”
+还有一些企业采取团队共享 Token 配额的方式，几十名员工共同使用一份额度，这也限制了大家使用 Fable 等高消耗模型。
+另一位制造业员工表示：“目前 GPT 和 Claude 仍然是最受欢迎的选择，但额度限制太严格，所以大多数人更愿意使用 Codex，因为它在编程任务上的 Token 消耗更低。”
+半导体行业依然保持谨慎
+AI 在韩国各行业的普及程度并不一致，其中半导体行业尤其谨慎。
+据知情人士透露，即便是在三星电子内部，不同事业部的推进速度也存在明显差异。一些部门已经可以自由使用 AI，但半导体业务目前仍基本禁止使用外部大模型。
+该人士表示：“芯片部门的员工一直在等待审批，但短期内看不到获批的迹象。”
+SK 集团内部的差异则更加明显。一些子公司已经通过企业版合同部署了 Claude、Gemini 和 ChatGPT 三大美国模型，并积极培养员工日常使用 AI 的习惯，而 SK 海力士目前仍主要依赖自研 AI 模型。
+就在三星宣布开放美国 AI 模型几天后，SK 海力士首席执行官郭鲁正（Kwak Noh-jung）在京畿道利川举行的一场员工座谈会上表示，公司正在“评估引入 Microsoft 365 和 Copilot，同时也在研究采用 ChatGPT Enterprise 的可能性”。
+不过，目前这些计划仍停留在评估阶段，尚未正式落地。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 71
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":71,"text_length":2058,"paragraph_count":26,"sentence_count":21,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   三星、SK 集团等韩国大型企业向员工开放 Claude、Gemini 和 ChatGPT 等美国 AI 模型后，面临 Token 成本快速攀升的挑战。三星已实施严格的 Token 配额制度，员工需按等级获取额度，提升额度需证明 AI 提升了工作效率。韩国在全球 Claude 使用量排名第 14 位，人均使用量超过全球平均水平的 3.5 倍，软件开发领域渗透率最高。
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家 7 月 27 日消息，随着韩国企业加快将海外大模型引入业务流程，它们正面临 AI 词元（Token）使用成本快速攀升的挑战。
+
+3. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   自 ChatGPT 于近四年前引爆全球 AI 热潮以来，韩国企业整体在 AI 应用方面一直较为落后，许多公司要么推进缓慢，要么出于数据安全考虑直接禁止员工使用相关工具。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   包括三星、SK 集团在内的韩国大型企业，正通过企业版合同，陆续向员工开放 Anthropic 的 Claude、谷歌 Gemini 以及 OpenAI ChatGPT 等美国 AI 模型。
+
+5. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=medium｜confidence=medium
+   然而，这一转变不仅成本高昂，对于半导体等对数据安全极为敏感的行业来说，推广过程依然十分谨慎。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=medium
+   包括三星在内的企业，如今正研究如何限制员工的 Token 使用额度，以在提升生产效率和控制运营成本之间取得平衡。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, Anthropic, Microsoft
+- products: Claude, Gemini, ChatGPT, Agent, Codex, Copilot
+- people: 暂无公开信息
+- industries: 制造 / 工业, 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 14, 3.5 倍, 7, 27, 121, 600 万, 27624, 365
+- quotes: 额度提升并不是自动完成的。如果你想提高额度，就必须拿出成果，证明自己确实把 AI 用到了工作中。 / 有一天，公司公布了 AI Token 消耗排名，第一名员工一个人就花掉了约 600 万韩元（IT之家注：现汇率约合 27624 元人民币）。管理层希望大家使用 AI，但如果你用得太多，就会明显感觉到他们一直在盯着成本。 / 目前 GPT 和 Claude 仍然是最受欢迎的选择，但额度限制太严格，所以大多数人更愿意使用 Codex，因为它在编程任务上的 Token 消耗更低。 / 芯片部门的员工一直在等待审批，但短期内看不到获批的迹象。 / 评估引入 Microsoft 365 和 Copilot，同时也在研究采用 ChatGPT Enterprise 的可能性
+
+## evidence_seed
+
+- company_actions: 包括三星、SK 集团在内的韩国大型企业，正通过企业版合同，陆续向员工开放 Anthropic 的 Claude、谷歌 Gemini 以及 OpenAI ChatGPT 等美国 AI 模型。 / 包括三星在内的企业，如今正研究如何限制员工的 Token 使用额度，以在提升生产效率和控制运营成本之间取得平衡。
+- case_details: 暂无公开信息
+- workflow_changes: IT之家 7 月 27 日消息，随着韩国企业加快将海外大模型引入业务流程，它们正面临 AI 词元（Token）使用成本快速攀升的挑战。
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 自 ChatGPT 于近四年前引爆全球 AI 热潮以来，韩国企业整体在 AI 应用方面一直较为落后，许多公司要么推进缓慢，要么出于数据安全考虑直接禁止员工使用相关工具。 / 然而，这一转变不仅成本高昂，对于半导体等对数据安全极为敏感的行业来说，推广过程依然十分谨慎。
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: ai_hardware_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"韩国企业引入海外 AI 模型遇成本难题，三星等巨头实施 Token 配额制","discovery_summary":"三星、SK 集团等韩国大型企业向员工开放 Claude、Gemini 和 ChatGPT 等美国 AI 模型后，面临 Token 成本快速攀升的挑战。三星已实施严格的 Token 配额制度，员工需按等级获取额度，提升额度需证明 AI 提升了工作效率。韩国在全球 Claude 使用量排名第 14 位，人均使用量超过全球平均水平的 3.5 倍，软件开发领域渗透率最高。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/982/241.htm","discovered_at":"2026-07-28T05:29:44.840Z","rank_on_page":266,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+三星、SK 集团等韩国大型企业向员工开放 Claude、Gemini 和 ChatGPT 等美国 AI 模型后，面临 Token 成本快速攀升的挑战。三星已实施严格的 Token 配额制度，员工需按等级获取额度，提升额度需证明 AI 提升了工作效率。韩国在全球 Claude 使用量排名第 14 位，人均使用量超过全球平均水平的 3.5 倍，软件开发领域渗透率最高。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

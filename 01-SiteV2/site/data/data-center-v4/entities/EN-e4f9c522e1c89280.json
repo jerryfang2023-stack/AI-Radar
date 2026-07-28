@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-27T03:18:25.889Z",
-    "latestDataDate": "2026-07-27",
-    "currentDate": "2026-07-27",
-    "eventCount": 1603,
-    "quarantinedEventCount": 14
+    "generatedAt": "2026-07-28T05:43:43.570Z",
+    "latestDataDate": "2026-07-28",
+    "currentDate": "2026-07-28",
+    "eventCount": 1656,
+    "quarantinedEventCount": 13
   },
   "entity": {
     "id": "EN-e4f9c522e1c89280",
@@ -21,19 +21,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-deaa5d80d1166e9f",
       "EV-77042592591657bf"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-12",
-    "lastSeen": "2026-06-13",
+    "lastSeen": "2026-07-28",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-deaa5d80d1166e9f",
         "EV-77042592591657bf"
       ],
       "hardware": [],
@@ -41,6 +43,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-deaa5d80d1166e9f",
+        "dataDate": "2026-07-28",
+        "date": "2026-07-28",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Kimi 团队开源 AgentENV：为 2.8 万亿参数模型提供智能体强化学习训练",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b5251b35f15bedc4",
+          "EN-e4f9c522e1c89280",
+          "EN-b70faa0af5f1a28a"
+        ]
+      },
       {
         "id": "EV-77042592591657bf",
         "dataDate": "2026-06-13",

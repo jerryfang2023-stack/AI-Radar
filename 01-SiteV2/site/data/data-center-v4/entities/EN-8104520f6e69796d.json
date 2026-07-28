@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-28T05:43:43.570Z",
+    "latestDataDate": "2026-07-28",
+    "currentDate": "2026-07-28",
+    "eventCount": 1656,
+    "quarantinedEventCount": 13
+  },
+  "entity": {
+    "id": "EN-8104520f6e69796d",
+    "name": "艺术家",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-0933cc40b4fe5f21"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-use_case-content_creation"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-27",
+    "lastSeen": "2026-07-28",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": [
+        "EV-0933cc40b4fe5f21"
+      ]
+    },
+    "timeline": [
+      {
+        "id": "EV-0933cc40b4fe5f21",
+        "dataDate": "2026-07-28",
+        "date": "2026-07-27",
+        "eventType": "lawsuit_settlement",
+        "eventTypeLabel": "诉讼与和解",
+        "eventGroup": "组织、政策与法律",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "艺术家起诉AI模因生成器，未经授权将个人漫画作为广告模板出售",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "id": "content_creation",
+            "dimensionName": "应用场景",
+            "name": "内容创作"
+          }
+        ],
+        "entityIds": [
+          "EN-8104520f6e69796d"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-use_case-content_creation",
+      "name": "内容创作",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "content_creation",
+      "eventIds": [
+        "EV-1de38866b4b92754",
+        "EV-99e5df844a1bd670",
+        "EV-0933cc40b4fe5f21",
+        "EV-3bd84e75aa7f18b3",
+        "EV-631dce4dc135d01b"
+      ],
+      "entityIds": [
+        "EN-e93e29634540a290",
+        "EN-bbdefa2950f49882",
+        "EN-3a7bd3e2360a3d29",
+        "EN-e0bab6f6c58bfe4e",
+        "EN-afe83c198e329ef2",
+        "EN-8104520f6e69796d",
+        "EN-f8bebacc033880dd",
+        "EN-b2968d9ba72f4818"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-04",
+      "lastSeen": "2026-07-28"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}
