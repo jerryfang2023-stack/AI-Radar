@@ -1,0 +1,274 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-038
+title: "Tines Launches 3B to Help Enterprises Govern AI Workflows, Apps and Agents"
+title_zh: "Tines 推出 3B 助力企业管理 AI 工作流、应用与智能体"
+title_translation_status: translated
+title_translation_method: deepseek_title_translation
+title_translation_model: deepseek-v4-flash
+original_url: "https://www.prnewswire.com/news-releases/tines-launches-3b-to-help-enterprises-govern-ai-workflows-apps-and-agents-302836517.html"
+canonical_url: "https://prnewswire.com/news-releases/tines-launches-3b-to-help-enterprises-govern-ai-workflows-apps-and-agents-302836517.html"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: "2026-07-28T00:00:00.000Z"
+collected_at: 2026-07-29T04:43:29.378Z
+language: mixed
+full_text_hash: b7cc392f2486bd30
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-29/r-038-tines-launches-3b-to-help-enterprises-govern-ai-workflows-apps-and-age.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-29/r-038-tines-launches-3b-to-help-enterprises-govern-ai-workflows-apps-and-age.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5923,"paragraph_count":29,"sentence_count":36,"boilerplate_hits":0,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 5923
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b7cc392f2486bd30","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 17cb7e5aa5f621b1
+content_hash: b7cc392f2486bd30
+semantic_hash: fefd958ea5a1cd3d
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-28T00:00:00.000Z"
+last_seen_at: 2026-07-29T04:43:29.378Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["Agents","agent","agents"],"people":[],"industries":["金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["3B","28","2026","77%","2018","$1.125 billion","2025","124%"],"quotes":[", said Eoin Hinchy, Tines co-founder and CEO. ","For years, Tines has been a trusted tool for our IT team and 3B is an exciting step forward,"]}
+evidence_seed: {"company_actions":["AI has made it possible for every employee to build software in minutes.","Continue Reading Tines 3B is a single place to see and orchestrate all apps, agents, integrations, and automations happening across systems."],"case_details":["Tines Launches 3B to Help Enterprises Govern AI Workflows, Apps and Agents Accessibility Statement Skip Navigation After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI. DUBLIN and BOSTON, July 28, 2026 /PRNewswire/ -- Tines, the..... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original","After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI."],"workflow_changes":["DUBLIN and BOSTON , July 28, 2026 /PRNewswire/ -- Tines, the intelligent workflow company trusted by enterprises including Coinbase , Reddit and SAP today launches Tines 3B, an AI-native platform for building, running and governing enterprise workflows, applications and agents securely at scale.","The result is an explosion of vibe-coded software spread across the enterprise, much of it built outside traditional IT processes and lacking the governance, visibility and controls enterprises require."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"Tines Launches 3B to Help Enterprises Govern AI Workflows, Apps and Agents Accessibility Statement Skip Navigation After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI. DUBLIN and BOSTON, July 28, 2026 /PRNewswire/ -- Tines, the..... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI.","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"DUBLIN and BOSTON , July 28, 2026 /PRNewswire/ -- Tines, the intelligent workflow company trusted by enterprises including Coinbase , Reddit and SAP today launches Tines 3B, an AI-native platform for building, running and governing enterprise workflows, applications and agents securely at scale.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI has made it possible for every employee to build software in minutes.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The result is an explosion of vibe-coded software spread across the enterprise, much of it built outside traditional IT processes and lacking the governance, visibility and controls enterprises require.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Continue Reading Tines 3B is a single place to see and orchestrate all apps, agents, integrations, and automations happening across systems.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-29T04:43:29.378Z
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Tines Launches 3B to Help Enterprises Govern AI Workflows, Apps and Agents
+
+## clean_text
+
+After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI.
+DUBLIN and BOSTON , July 28, 2026 /PRNewswire/ -- Tines, the intelligent workflow company trusted by enterprises including Coinbase , Reddit and SAP today launches Tines 3B, an AI-native platform for building, running and governing enterprise workflows, applications and agents securely at scale.
+AI has made it possible for every employee to build software in minutes. The result is an explosion of vibe-coded software spread across the enterprise, much of it built outside traditional IT processes and lacking the governance, visibility and controls enterprises require.
+Continue Reading
+Tines 3B is a single place to see and orchestrate all apps, agents, integrations, and automations happening across systems.
+The launch comes as the pace of building accelerates, and organizations struggle to deploy, govern and operate that software safely, and at scale. In a recent IBM study, 77% of CxOs reported that AI adoption is already outpacing current governance capabilities.
+"AI has made creating software almost effortless. The hard part isn't building anymore, it's connecting that software to your systems, knowing what's running, whether you can trust it, and who's responsible for it. We saw that challenge emerging again and again with customers and started referring to it as 'Wild Code.' Once we understood the problem, it became obvious that simply bolting AI onto our existing product wasn't the answer", said Eoin Hinchy, Tines co-founder and CEO. "We built Tines 3B because we believe enterprises need an environment designed specifically to build, run and govern AI-generated workflows, applications and agents."
+Tines 3B helps organizations build with AI while giving IT and Security the control to run that work safely at enterprise scale. With Tines 3B, users can:
+Build: In 3B, users describe what they want in natural language and Tines 3B builds it, connecting to the tools, systems, and data their organization has authorized.
+Run: Builders can deploy apps, agents and automations instantly across the enterprise. It runs securely with credential protection, isolated execution, and full logging. 3B's self-healing capabilities, which fix inconsistencies and edge cases, ensures that important work keeps running.
+Monitor: The 3B environment acts as a single place to see and orchestrate all apps, agents, integrations, and automations happening across systems.
+Teams can build workflows directly in Tines 3B or any other preferred coding assistants, and use 3B to run and monitor their entire workflow environment from a single system.
+Tines 3B was built by and for security and IT practitioners for environments where failure has real consequences. Every workflow step runs in a completely isolated environment, executes, and disappears. This makes cross-contamination between runs or users architecturally impossible. Sensitive data is never exposed and governance is embedded from the start.
+"For years, Tines has been a trusted tool for our IT team and 3B is an exciting step forward," said Emanuele Sparvoli, Senior Director of IT at Fin, formerly known as Intercom. "It provides an environment where employees across our organization can build their own workflows, while our IT team retains the control and governance needed to enable innovation at scale.
+"Like many IT teams, we think carefully about the governance challenges that come with AI — security risks, rising costs and shadow AI. 3B's governance and monitoring capabilities, including strong credential protection and access controls, were central to our decision to deploy it. We're a few weeks into our rollout and already see 3B becoming a critical part of how teams build at Fin."
+Founded by Eoin Hinchy and Thomas Kinsella in Dublin in 2018, Tines was most recently valued at $1.125 billion during its Series C raise in 2025. Tines has tripled its enterprise customer base year over year, with companies including Coinbase , SAP, Experian, Reddit, Notion and Mars relying on the platform for their most critical workflows. A 124% net revenue retention rate, 302% growth in adoption of AI capabilities, and 59% weekly-to-monthly active user ratio — a benchmark more commonly associated with consumer applications than enterprise software — reflect deepening adoption across the customer base.
+Tines 3B is available today while the original Tines platform, Tines Stories, continues to power mission-critical workflows for customers. For more information, visit tines.com/3b .
+About Tines
+Tines is the intelligent workflow company trusted by the world's most advanced enterprises. Organizations like Coinbase , Mars, Reddit, and SAP use Tines to power their most important workflows. With Tines, they've built a secure, flexible foundation to operationalize AI agents, unlocking productivity, moving faster, and future-proofing how work gets done. Co-headquartered in Dublin and Boston, Tines has raised $272M from investors including Goldman Sachs, SoftBank, Felicis, Addition, Accel, Blossom Capital, and Lux Capital.
+CONTACT: [email protected]
+SOURCE Tines
+21 %
+more press release views with
+Request a Demo
+&times;
+Modal title
+Also from this source
+Tines Launches 3B to Help Enterprises Govern AI Workflows, Apps and Agents
+Tines, the intelligent workflow company trusted by enterprises including Coinbase, Reddit and SAP today launches Tines 3B, an AI-native platform for...
+Tines Report Finds Widespread Use of AI in Security Operations, But Manual Work Persists
+Tines, the intelligent workflow platform used by the world's most advanced security and IT teams, today published Voice of Security 2026, the fourth...
+More Releases From This Source
+Explore
+Artificial Intelligence
+The Latest Artificial Intelligence News
+Cloud Computing/Internet of Things
+Computer Software
+News Releases in Similar Topics
+
+## full_text
+
+After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI.
+DUBLIN and BOSTON , July 28, 2026 /PRNewswire/ -- Tines, the intelligent workflow company trusted by enterprises including Coinbase , Reddit and SAP today launches Tines 3B, an AI-native platform for building, running and governing enterprise workflows, applications and agents securely at scale.
+AI has made it possible for every employee to build software in minutes. The result is an explosion of vibe-coded software spread across the enterprise, much of it built outside traditional IT processes and lacking the governance, visibility and controls enterprises require.
+Continue Reading
+Tines 3B is a single place to see and orchestrate all apps, agents, integrations, and automations happening across systems.
+The launch comes as the pace of building accelerates, and organizations struggle to deploy, govern and operate that software safely, and at scale. In a recent IBM study, 77% of CxOs reported that AI adoption is already outpacing current governance capabilities.
+"AI has made creating software almost effortless. The hard part isn't building anymore, it's connecting that software to your systems, knowing what's running, whether you can trust it, and who's responsible for it. We saw that challenge emerging again and again with customers and started referring to it as 'Wild Code.' Once we understood the problem, it became obvious that simply bolting AI onto our existing product wasn't the answer", said Eoin Hinchy, Tines co-founder and CEO. "We built Tines 3B because we believe enterprises need an environment designed specifically to build, run and govern AI-generated workflows, applications and agents."
+Tines 3B helps organizations build with AI while giving IT and Security the control to run that work safely at enterprise scale. With Tines 3B, users can:
+Build: In 3B, users describe what they want in natural language and Tines 3B builds it, connecting to the tools, systems, and data their organization has authorized.
+Run: Builders can deploy apps, agents and automations instantly across the enterprise. It runs securely with credential protection, isolated execution, and full logging. 3B's self-healing capabilities, which fix inconsistencies and edge cases, ensures that important work keeps running.
+Monitor: The 3B environment acts as a single place to see and orchestrate all apps, agents, integrations, and automations happening across systems.
+Teams can build workflows directly in Tines 3B or any other preferred coding assistants, and use 3B to run and monitor their entire workflow environment from a single system.
+Tines 3B was built by and for security and IT practitioners for environments where failure has real consequences. Every workflow step runs in a completely isolated environment, executes, and disappears. This makes cross-contamination between runs or users architecturally impossible. Sensitive data is never exposed and governance is embedded from the start.
+"For years, Tines has been a trusted tool for our IT team and 3B is an exciting step forward," said Emanuele Sparvoli, Senior Director of IT at Fin, formerly known as Intercom. "It provides an environment where employees across our organization can build their own workflows, while our IT team retains the control and governance needed to enable innovation at scale.
+"Like many IT teams, we think carefully about the governance challenges that come with AI — security risks, rising costs and shadow AI. 3B's governance and monitoring capabilities, including strong credential protection and access controls, were central to our decision to deploy it. We're a few weeks into our rollout and already see 3B becoming a critical part of how teams build at Fin."
+Founded by Eoin Hinchy and Thomas Kinsella in Dublin in 2018, Tines was most recently valued at $1.125 billion during its Series C raise in 2025. Tines has tripled its enterprise customer base year over year, with companies including Coinbase , SAP, Experian, Reddit, Notion and Mars relying on the platform for their most critical workflows. A 124% net revenue retention rate, 302% growth in adoption of AI capabilities, and 59% weekly-to-monthly active user ratio — a benchmark more commonly associated with consumer applications than enterprise software — reflect deepening adoption across the customer base.
+Tines 3B is available today while the original Tines platform, Tines Stories, continues to power mission-critical workflows for customers. For more information, visit tines.com/3b .
+About Tines
+Tines is the intelligent workflow company trusted by the world's most advanced enterprises. Organizations like Coinbase , Mars, Reddit, and SAP use Tines to power their most important workflows. With Tines, they've built a secure, flexible foundation to operationalize AI agents, unlocking productivity, moving faster, and future-proofing how work gets done. Co-headquartered in Dublin and Boston, Tines has raised $272M from investors including Goldman Sachs, SoftBank, Felicis, Addition, Accel, Blossom Capital, and Lux Capital.
+CONTACT: [email protected]
+SOURCE Tines
+21 %
+more press release views with
+Request a Demo
+&times;
+Modal title
+Also from this source
+Tines Launches 3B to Help Enterprises Govern AI Workflows, Apps and Agents
+Tines, the intelligent workflow company trusted by enterprises including Coinbase, Reddit and SAP today launches Tines 3B, an AI-native platform for...
+Tines Report Finds Widespread Use of AI in Security Operations, But Manual Work Persists
+Tines, the intelligent workflow platform used by the world's most advanced security and IT teams, today published Voice of Security 2026, the fourth...
+More Releases From This Source
+Explore
+Artificial Intelligence
+The Latest Artificial Intelligence News
+Cloud Computing/Internet of Things
+Computer Software
+News Releases in Similar Topics
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5923,"paragraph_count":29,"sentence_count":36,"boilerplate_hits":0,"symbol_ratio":0.0003,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Tines Launches 3B to Help Enterprises Govern AI Workflows, Apps and Agents Accessibility Statement Skip Navigation After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI. DUBLIN and BOSTON, July 28, 2026 /PRNewswire/ -- Tines, the..... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI.
+
+3. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   DUBLIN and BOSTON , July 28, 2026 /PRNewswire/ -- Tines, the intelligent workflow company trusted by enterprises including Coinbase , Reddit and SAP today launches Tines 3B, an AI-native platform for building, running and governing enterprise workflows, applications and agents securely at scale.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   AI has made it possible for every employee to build software in minutes.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The result is an explosion of vibe-coded software spread across the enterprise, much of it built outside traditional IT processes and lacking the governance, visibility and controls enterprises require.
+
+6. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=high
+   Continue Reading Tines 3B is a single place to see and orchestrate all apps, agents, integrations, and automations happening across systems.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: Agents, agent, agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 3B, 28, 2026, 77%, 2018, $1.125 billion, 2025, 124%
+- quotes: , said Eoin Hinchy, Tines co-founder and CEO.  / For years, Tines has been a trusted tool for our IT team and 3B is an exciting step forward,
+
+## evidence_seed
+
+- company_actions: AI has made it possible for every employee to build software in minutes. / Continue Reading Tines 3B is a single place to see and orchestrate all apps, agents, integrations, and automations happening across systems.
+- case_details: Tines Launches 3B to Help Enterprises Govern AI Workflows, Apps and Agents Accessibility Statement Skip Navigation After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI. DUBLIN and BOSTON, July 28, 2026 /PRNewswire/ -- Tines, the..... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original / After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI.
+- workflow_changes: DUBLIN and BOSTON , July 28, 2026 /PRNewswire/ -- Tines, the intelligent workflow company trusted by enterprises including Coinbase , Reddit and SAP today launches Tines 3B, an AI-native platform for building, running and governing enterprise workflows, applications and agents securely at scale. / The result is an explosion of vibe-coded software spread across the enterprise, much of it built outside traditional IT processes and lacking the governance, visibility and controls enterprises require.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Tines Launches 3B to Help Enterprises Govern AI Workflows, Apps and Agents Accessibility Statement Skip Navigation After tripling its enterprise customer base, Tines rebuilt its platform for a world where every employee can build with AI. DUBLIN and BOSTON, July 28, 2026 /PRNewswire/ -- Tines, the..... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

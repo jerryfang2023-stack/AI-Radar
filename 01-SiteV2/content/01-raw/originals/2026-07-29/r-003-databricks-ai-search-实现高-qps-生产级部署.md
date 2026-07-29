@@ -1,0 +1,284 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-003
+title: "Databricks AI Search 实现高 QPS 生产级部署"
+title_zh: "Databricks AI Search 实现高 QPS 生产级部署"
+title_translation_status: not_required
+title_translation_method: source_title
+title_translation_model: not_applicable
+original_url: "https://www.databricks.com/blog/prototype-production-high-qps-databricks-ai-search"
+canonical_url: "https://databricks.com/blog/prototype-production-high-qps-databricks-ai-search"
+source_name: "Databricks：Blog（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-28T16:50:57.000Z"
+collected_at: 2026-07-29T04:43:07.009Z
+language: mixed
+full_text_hash: 8b59a710c376e5dc
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-29/r-003-databricks-ai-search-实现高-qps-生产级部署.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-29/r-003-databricks-ai-search-实现高-qps-生产级部署.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 79
+extractor_diagnostics: {"readability_score":79,"text_length":5539,"paragraph_count":38,"sentence_count":54,"boilerplate_hits":2,"symbol_ratio":0.002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 5539
+fetch_error: ""
+evidence_strength: rich_evidence
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8b59a710c376e5dc","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Databricks AI Search 实现高 QPS 生产级部署","discovery_summary":"Databricks AI Search 从原型走向生产，支持高 QPS 的实时搜索场景。该系统基于 Databricks 平台构建，可处理零售网站商品发现、智能语音查询等任务。其核心优势在于将 AI 搜索能力与现有数据基础设施无缝集成，实现低延迟、高吞吐量的生产级部署。","source_name":"Databricks：Blog（RSS）","origin_url":"https://www.databricks.com/blog/prototype-production-high-qps-databricks-ai-search","discovered_at":"2026-07-29T04:35:06.311Z","rank_on_page":182,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 66dda988e339237a
+content_hash: 8b59a710c376e5dc
+semantic_hash: 726b9aedc3c3687d
+duplicate_of: ""
+first_seen_at: "2026-07-28T16:50:57.000Z"
+last_seen_at: 2026-07-29T04:43:07.009Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["Databricks","Blog（RSS）"],"products":[],"people":[],"industries":["医疗"],"roles":["CIO / IT 负责人"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["429","95"],"quotes":["You may also like"]}
+evidence_seed: {"company_actions":["From prototype to production: High QPS for Databricks AI Search | Databricks Blog Skip to main content Summary Real-time search bars, recommendation and personalization systems, and entity resolution can run at peak production traffic without managing replicas, sizing nodes, or building load balancers in front of the index Scale endpoints to thousands of QPS with a single configuration parameter, generally available today Built-in production observability: endpoint QPS, latency, and health visible in the AI Search ","Each fires a request per page view, per keystroke, per user action.","At consumer scale, that translates into thousands of queries per second hitting the search index, with peak traffic often several times higher."],"case_details":["Databricks AI Search 从原型走向生产，支持高 QPS 的实时搜索场景。该系统基于 Databricks 平台构建，可处理零售网站商品发现、智能语音查询等任务。其核心优势在于将 AI 搜索能力与现有数据基础设施无缝集成，实现低延迟、高吞吐量的生产级部署。"],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"Databricks AI Search 从原型走向生产，支持高 QPS 的实时搜索场景。该系统基于 Databricks 平台构建，可处理零售网站商品发现、智能语音查询等任务。其核心优势在于将 AI 搜索能力与现有数据基础设施无缝集成，实现低延迟、高吞吐量的生产级部署。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"From prototype to production: High QPS for Databricks AI Search | Databricks Blog Skip to main content Summary Real-time search bars, recommendation and personalization systems, and entity resolution can run at peak production traffic without managing replicas, sizing nodes, or building load balancers in front of the index Scale endpoints to thousands of QPS with a single configuration parameter, generally available today Built-in production observability: endpoint QPS, latency, and health visible in the AI Search ","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Each fires a request per page view, per keystroke, per user action.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"At consumer scale, that translates into thousands of queries per second hitting the search index, with peak traffic often several times higher.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Search also sits on the critical path of revenue.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In retail, shoppers who use search convert at two to three times the rate of those who simply browse.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+fact_extraction_status: extracted_at_raw_ingestion
+fact_extraction_method: structured_key_excerpts_and_business_elements
+fact_extraction_completed_at: 2026-07-29T04:43:07.009Z
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Databricks AI Search 实现高 QPS 生产级部署
+
+## clean_text
+
+From prototype to production: High QPS for Databricks AI Search | Databricks Blog Skip to main content
+Summary
+Real-time search bars, recommendation and personalization systems, and entity resolution can run at peak production traffic without managing replicas, sizing nodes, or building load balancers in front of the index
+Scale endpoints to thousands of QPS with a single configuration parameter, generally available today
+Built-in production observability: endpoint QPS, latency, and health visible in the AI Search UI for every endpoint
+Search is everywhere: product discovery on retail sites, voice queries on smart TVs, recommendations in every feed, and identity matching during account lookups. Each fires a request per page view, per keystroke, per user action. At consumer scale, that translates into thousands of queries per second hitting the search index, with peak traffic often several times higher.
+Search also sits on the critical path of revenue. In retail, shoppers who use search convert at two to three times the rate of those who simply browse. On streaming platforms, recommendations drive most of what users watch.
+Reaching production-level QPS used to mean building a bespoke retrieval stack per app. Load testing across index sizes, query types, and filters. Manually sizing capacity. Wiring up load balancers in front of the index. Every new search use case restarts the work. The pain is universal across vector databases, search engines, and DIY stacks.
+Announcing high-QPS scaling for Databricks AI Search
+Today we're announcing high-QPS scaling for Databricks AI Search which is generally available. Standard endpoints can now scale to thousands of QPS with a single, human-readable parameter. You tell us your target. We provision the infrastructure to meet it.
+Set target_qps on the endpoint at creation, or update it on any existing endpoint at any time via the SDK, REST API, or the endpoint UI. Databricks provisions the infrastructure to meet the target. No replica counts to manage, no nodes to size, no load balancers to wire up.
+Unity Catalog governance and Delta Sync stay in place. The same endpoint that powered your prototype now scales to production traffic without leaving the platform.
+When you need high-QPS scaling
+Three real-time production patterns require it.
+Search bars, like product search on e-commerce, content discovery on streaming and media platforms, voice search on connected devices. A typeahead box can fire a search call per keystroke, so QPS scales with active typing volume. Latency directly affects conversion. For an end-to-end architecture, see Building Real-Time Product Search on Databricks .
+Recommendation / personalization systems, like "You may also like" panels on e-commerce, personalized feeds on media and streaming platforms. Every page view fires a recommendation query, so traffic spikes hit retrieval first. Recommendation latency is on the critical path of the request.
+Real-time entity resolution, like identity matching, deduplication, lookup against large catalogs at request time. Query rate here is an operational SLA, not a burst you can buffer.
+If you're seeing any of the following, you probably need this:
+429 (Too Many Requests) errors showing up in production logs
+P95 latency spiking as traffic ramps, even at moderate average utilization
+Workarounds like duplicate endpoints or client-side load balancing
+Deep dive into how it works
+Declare. You set a QPS target on the endpoint. Databricks calculates and provisions the compute capacity to deliver that target. No replica counts, no node sizing, no capacity planning.
+Works with existing endpoints. Update any Standard endpoint via the Python SDK, REST API, or the UI. New capacity takes effect the next time an index on the endpoint is created or synced.
+Monitor scaling state. The scaling_info field on the endpoint tracks progress as it transitions from SCALING_CHANGE_IN_PROGRESS to SCALING_CHANGE_APPLIED .
+Production observability. Operating a retrieval system in production needs visibility into requests per second, request latency, and endpoint health. The endpoint UI now surfaces all three for every endpoint.
+Use service principal auth to maximize performance. Service principal traffic is routed through performance-optimized networks built for high-QPS production workloads. Personal access token (PAT) traffic is capped at a few tens of QPS, making it suitable for prototyping but not production. See the performance guide for the full walkthrough.
+Sizing. Use the endpoint observability UI and native Genie integration to understand your traffic patterns and set target_qps with sufficient headroom for spikes.
+Start building today
+The difference between prototype and production is now a configuration parameter. High-QPS scaling is generally available today, no opt-in required. Two paths to start:
+Spin up a new endpoint with target_qps set to your initial target
+Update an existing endpoint with target_qps to scale up the index already serving your application
+What’s coming next
+We’re continuing to make search easier to operate at scale. Automatic scaling for traffic spikes—without manual capacity planning or sizing—and support for Storage-Optimized endpoints are planned for later this year.
+To go deeper:
+High QPS documentation
+Databricks AI Search overview
+Performance best practices
+Building Real-Time Product Search on Databricks
+Get the latest posts in your inbox
+Subscribe to our blog and get the latest posts delivered to your inbox.
+Sign up
+View all blogs
+
+## full_text
+
+From prototype to production: High QPS for Databricks AI Search | Databricks Blog Skip to main content
+Summary
+Real-time search bars, recommendation and personalization systems, and entity resolution can run at peak production traffic without managing replicas, sizing nodes, or building load balancers in front of the index
+Scale endpoints to thousands of QPS with a single configuration parameter, generally available today
+Built-in production observability: endpoint QPS, latency, and health visible in the AI Search UI for every endpoint
+Search is everywhere: product discovery on retail sites, voice queries on smart TVs, recommendations in every feed, and identity matching during account lookups. Each fires a request per page view, per keystroke, per user action. At consumer scale, that translates into thousands of queries per second hitting the search index, with peak traffic often several times higher.
+Search also sits on the critical path of revenue. In retail, shoppers who use search convert at two to three times the rate of those who simply browse. On streaming platforms, recommendations drive most of what users watch.
+Reaching production-level QPS used to mean building a bespoke retrieval stack per app. Load testing across index sizes, query types, and filters. Manually sizing capacity. Wiring up load balancers in front of the index. Every new search use case restarts the work. The pain is universal across vector databases, search engines, and DIY stacks.
+Announcing high-QPS scaling for Databricks AI Search
+Today we're announcing high-QPS scaling for Databricks AI Search which is generally available. Standard endpoints can now scale to thousands of QPS with a single, human-readable parameter. You tell us your target. We provision the infrastructure to meet it.
+Set target_qps on the endpoint at creation, or update it on any existing endpoint at any time via the SDK, REST API, or the endpoint UI. Databricks provisions the infrastructure to meet the target. No replica counts to manage, no nodes to size, no load balancers to wire up.
+Unity Catalog governance and Delta Sync stay in place. The same endpoint that powered your prototype now scales to production traffic without leaving the platform.
+When you need high-QPS scaling
+Three real-time production patterns require it.
+Search bars, like product search on e-commerce, content discovery on streaming and media platforms, voice search on connected devices. A typeahead box can fire a search call per keystroke, so QPS scales with active typing volume. Latency directly affects conversion. For an end-to-end architecture, see Building Real-Time Product Search on Databricks .
+Recommendation / personalization systems, like "You may also like" panels on e-commerce, personalized feeds on media and streaming platforms. Every page view fires a recommendation query, so traffic spikes hit retrieval first. Recommendation latency is on the critical path of the request.
+Real-time entity resolution, like identity matching, deduplication, lookup against large catalogs at request time. Query rate here is an operational SLA, not a burst you can buffer.
+If you're seeing any of the following, you probably need this:
+429 (Too Many Requests) errors showing up in production logs
+P95 latency spiking as traffic ramps, even at moderate average utilization
+Workarounds like duplicate endpoints or client-side load balancing
+Deep dive into how it works
+Declare. You set a QPS target on the endpoint. Databricks calculates and provisions the compute capacity to deliver that target. No replica counts, no node sizing, no capacity planning.
+Works with existing endpoints. Update any Standard endpoint via the Python SDK, REST API, or the UI. New capacity takes effect the next time an index on the endpoint is created or synced.
+Monitor scaling state. The scaling_info field on the endpoint tracks progress as it transitions from SCALING_CHANGE_IN_PROGRESS to SCALING_CHANGE_APPLIED .
+Production observability. Operating a retrieval system in production needs visibility into requests per second, request latency, and endpoint health. The endpoint UI now surfaces all three for every endpoint.
+Use service principal auth to maximize performance. Service principal traffic is routed through performance-optimized networks built for high-QPS production workloads. Personal access token (PAT) traffic is capped at a few tens of QPS, making it suitable for prototyping but not production. See the performance guide for the full walkthrough.
+Sizing. Use the endpoint observability UI and native Genie integration to understand your traffic patterns and set target_qps with sufficient headroom for spikes.
+Start building today
+The difference between prototype and production is now a configuration parameter. High-QPS scaling is generally available today, no opt-in required. Two paths to start:
+Spin up a new endpoint with target_qps set to your initial target
+Update an existing endpoint with target_qps to scale up the index already serving your application
+What’s coming next
+We’re continuing to make search easier to operate at scale. Automatic scaling for traffic spikes—without manual capacity planning or sizing—and support for Storage-Optimized endpoints are planned for later this year.
+To go deeper:
+High QPS documentation
+Databricks AI Search overview
+Performance best practices
+Building Real-Time Product Search on Databricks
+Get the latest posts in your inbox
+Subscribe to our blog and get the latest posts delivered to your inbox.
+Sign up
+View all blogs
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 79
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":79,"text_length":5539,"paragraph_count":38,"sentence_count":54,"boilerplate_hits":2,"symbol_ratio":0.002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   Databricks AI Search 从原型走向生产，支持高 QPS 的实时搜索场景。该系统基于 Databricks 平台构建，可处理零售网站商品发现、智能语音查询等任务。其核心优势在于将 AI 搜索能力与现有数据基础设施无缝集成，实现低延迟、高吞吐量的生产级部署。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   From prototype to production: High QPS for Databricks AI Search | Databricks Blog Skip to main content Summary Real-time search bars, recommendation and personalization systems, and entity resolution can run at peak production traffic without managing replicas, sizing nodes, or building load balancers in front of the index Scale endpoints to thousands of QPS with a single configuration parameter, generally available today Built-in production observability: endpoint QPS, latency, and health visible in the AI Search 
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Each fires a request per page view, per keystroke, per user action.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   At consumer scale, that translates into thousands of queries per second hitting the search index, with peak traffic often several times higher.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Search also sits on the critical path of revenue.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   In retail, shoppers who use search convert at two to three times the rate of those who simply browse.
+
+## business_elements
+
+- companies: Databricks, Blog（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 医疗
+- roles: CIO / IT 负责人
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 429, 95
+- quotes: You may also like
+
+## evidence_seed
+
+- company_actions: From prototype to production: High QPS for Databricks AI Search | Databricks Blog Skip to main content Summary Real-time search bars, recommendation and personalization systems, and entity resolution can run at peak production traffic without managing replicas, sizing nodes, or building load balancers in front of the index Scale endpoints to thousands of QPS with a single configuration parameter, generally available today Built-in production observability: endpoint QPS, latency, and health visible in the AI Search  / Each fires a request per page view, per keystroke, per user action. / At consumer scale, that translates into thousands of queries per second hitting the search index, with peak traffic often several times higher.
+- case_details: Databricks AI Search 从原型走向生产，支持高 QPS 的实时搜索场景。该系统基于 Databricks 平台构建，可处理零售网站商品发现、智能语音查询等任务。其核心优势在于将 AI 搜索能力与现有数据基础设施无缝集成，实现低延迟、高吞吐量的生产级部署。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Databricks AI Search 实现高 QPS 生产级部署","discovery_summary":"Databricks AI Search 从原型走向生产，支持高 QPS 的实时搜索场景。该系统基于 Databricks 平台构建，可处理零售网站商品发现、智能语音查询等任务。其核心优势在于将 AI 搜索能力与现有数据基础设施无缝集成，实现低延迟、高吞吐量的生产级部署。","source_name":"Databricks：Blog（RSS）","origin_url":"https://www.databricks.com/blog/prototype-production-high-qps-databricks-ai-search","discovered_at":"2026-07-29T04:35:06.311Z","rank_on_page":182,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Databricks AI Search 从原型走向生产，支持高 QPS 的实时搜索场景。该系统基于 Databricks 平台构建，可处理零售网站商品发现、智能语音查询等任务。其核心优势在于将 AI 搜索能力与现有数据基础设施无缝集成，实现低延迟、高吞吐量的生产级部署。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

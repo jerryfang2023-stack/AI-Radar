@@ -4,9 +4,9 @@
     "funding_insight_version": "FUNDING-INSIGHT-V1.0",
     "site_version": "SITE-V4.2.0-entity-history",
     "column_version": "FUNDING-INSIGHT-V1.0-auto-published-research",
-    "latest_date": "2026-07-28",
-    "generated_at": "2026-07-28T09:28:04.764Z",
-    "card_count": 208,
+    "latest_date": "2026-07-29",
+    "generated_at": "2026-07-29T04:48:47.321Z",
+    "card_count": 209,
     "duplicate_rounds_removed": 3,
     "automatic_publication": true
   },
@@ -139,23 +139,603 @@
   "cards": [
     {
       "schema_version": "FUNDING-INSIGHT-V1.0",
+      "funding_insight_id": "FI-9f71fd64de900bbd",
+      "triggered_by_event_id": "EV-5f3ccb941a2fe5d7",
+      "as_of_date": "2026-07-29",
+      "company": {
+        "entity_id": "EN-2be663431f007250",
+        "name": "Harmony",
+        "full_name": "Harmony",
+        "website": "",
+        "summary": "Harmony 是一家 AI 初创公司，由连续创业者 Nitzan Shapira 和 Ran Ribenzaft 于 2025 年创立。公司开发了一个嵌入 Slack 和 Microsoft Teams 的 AI 平台，用于处理员工在工作场所的各类请求，如入职、软件访问和密码重置等，旨在帮助员工避免在内部系统中查找信息或等待技术支持与人力资源部门。",
+        "headquarters": "以色列和纽约",
+        "founders": [
+          {
+            "name": "Nitzan Shapira",
+            "role": "CEO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe66d902ece1db68",
+                "quote": "CEO Nitzan Shapira and CTO Ran Ribenzaft launched their new startup Harmony"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ran Ribenzaft",
+            "role": "CTO",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe66d902ece1db68",
+                "quote": "CEO Nitzan Shapira and CTO Ran Ribenzaft launched their new startup Harmony"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "team_size": {
+          "value": "60",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Harmony has 60 employees, with roughly two-thirds in Israel and the rest in New York."
+            }
+          ]
+        },
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fe66d902ece1db68",
+            "quote": "AI startup Harmony raises $34 million seed after founders' Cisco exit"
+          }
+        ]
+      },
+      "financing": {
+        "round": "种子轮",
+        "amount": "$34 million",
+        "total_raised": "$34 million",
+        "announced_at": "2026-07-28",
+        "investors": [
+          {
+            "name": "Lightspeed Venture Partners",
+            "role": "本轮领投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe66d902ece1db68",
+                "quote": "Lightspeed led Harmony's $34 million round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Hitachi Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe66d902ece1db68",
+                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Fin Capital",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe66d902ece1db68",
+                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Mercer Ventures",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe66d902ece1db68",
+                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Operator Partners",
+            "role": "本轮参投",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-fe66d902ece1db68",
+                "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Assaf Rappaport (Wiz 创始团队成员)",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2a6970c8768c84ff",
+                "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io"
+              }
+            ],
+            "entity_id": null
+          },
+          {
+            "name": "Ofir Ehrlich (Eon.io 联合创始人兼 CEO)",
+            "role": "天使投资人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-2a6970c8768c84ff",
+                "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fe66d902ece1db68",
+            "quote": "Harmony raised a $34 million round led by Lightspeed."
+          }
+        ]
+      },
+      "products": [
+        {
+          "name": "Harmony AI 平台",
+          "description": "一个嵌入 Slack 和 Microsoft Teams 的 AI 平台，利用组织上下文（员工角色、应用、权限和工作历史）提供个性化支持，并直接跨企业系统执行操作。",
+          "target_customers": "拥有复杂企业软件生态、面临大量重复性内部支持请求的大中型企业。",
+          "features": [
+            "在 Slack 和 Microsoft Teams 内部运行",
+            "处理入职、软件访问、密码重置等任务",
+            "与超过 100 个应用集成",
+            "利用员工角色和权限定制响应",
+            "AI 执行操作前可要求人工审批"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Harmony operates inside Slack and Microsoft Teams to handle tasks like onboarding, software access, and resetting passwords."
+            },
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Harmony works with more than 100 applications and can use an employee's role and permissions to tailor responses."
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "customers": [
+        {
+          "name": "n8n",
+          "industry": "工作流自动化",
+          "use_case": "使用 Harmony 简化工作场所运营、减少响应时间。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Customers include workflow automation company n8n"
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "name": "ServiceNow",
+          "product": "企业服务管理平台",
+          "scenario": "IT 服务台、HR 服务交付、客户服务管理等工作流自动化。",
+          "target_customer": "大型企业",
+          "funding_summary": "",
+          "core_difference": "Harmony 的 CTO 将 ServiceNow 描述为在计算环境市场产生数十亿美元收入的公司，而 Harmony 的目标是成为价值数十亿美元的公司，暗示其定位为 ServiceNow 的挑战者或替代方案。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-02ef8f0167178ccb",
+              "quote": "We focused on the computing environment, a market where companies like ServiceNow generate billions of dollars in revenue. We don't want to build another company that sells for hundreds of millions of dollars and move on. We want to build a company worth billions of dollars."
+            }
+          ]
+        }
+      ],
+      "metrics": [
+        {
+          "label": "部署两周内支持请求偏转率",
+          "value": "48%",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "Harmony deflected 48% of support requests within two weeks of deployment"
+            }
+          ]
+        },
+        {
+          "label": "部署三个月内支持请求偏转率",
+          "value": "超过 75%",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "more than 75% within three months."
+            }
+          ]
+        },
+        {
+          "label": "HR 部门请求偏转率",
+          "value": "高达 68%",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "deflection rates of up to 68% in HR"
+            }
+          ]
+        },
+        {
+          "label": "采购部门请求偏转率",
+          "value": "58%",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "58% in procurement"
+            }
+          ]
+        },
+        {
+          "label": "员工采用率",
+          "value": "超过 80%",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "employee adoption has exceeded 80% across the organization"
+            }
+          ]
+        },
+        {
+          "label": "无接触解决率",
+          "value": "70%",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fb806bb82e9fff33",
+              "quote": "a 70% no-touch resolution rate"
+            }
+          ]
+        },
+        {
+          "label": "预构建 AI 代理数量",
+          "value": "超过 100 个",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "With more than 100 prebuilt agents that deploy in days, not months"
+            }
+          ]
+        },
+        {
+          "label": "员工支持请求平均解决时间",
+          "value": "长达 48 小时",
+          "observed_at": "2026-07-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "With employee support requests often taking up to 48 hours to resolve"
+            }
+          ]
+        }
+      ],
+      "quotes": [
+        {
+          "speaker": "Nitzan Shapira",
+          "quote": "Most organizations have accumulated hundreds of systems, workflows, and processes over the years, but every new layer of software creates more complexity for employees and more work for the teams supporting them.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "Most organizations have accumulated hundreds of systems, workflows, and processes over the years, but every new layer of software creates more complexity for employees and more work for the teams supporting them"
+            }
+          ]
+        },
+        {
+          "speaker": "Yoni Cheifetz",
+          "quote": "Harmony is driving a fundamental shift in how employee support is delivered, moving from a model built around tickets and queues to one powered by AI agents that resolve requests instantly and at scale.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "Harmony is driving a fundamental shift in how employee support is delivered, moving from a model built around tickets and queues to one powered by AI agents that resolve requests instantly and at scale"
+            }
+          ]
+        }
+      ],
+      "analysis": {
+        "investment_rationale": [],
+        "capital_judgment": "资本押注的核心变量是连续创业者的成功退出记录（以5亿美元将Epsagon卖给思科）与 Harmony 在早期客户中展现的快速部署和高请求偏转率（两周内48%，三个月内超75%）所验证的产品市场契合度。这笔远超常规种子轮的3400万美元融资，使公司能够跳过早期增长的资金限制，快速扩张工程、产品和销售团队，直接瞄准成为价值数十亿美元的企业服务平台。",
+        "validated_signals": [
+          "创始团队曾以5亿美元将前公司 Epsagon 出售给思科，具备企业级产品构建和退出经验。",
+          "产品在部署两周内实现48%的支持请求偏转率，三个月内超过75%，显示出强大的自动化能力。",
+          "客户群已覆盖工作流自动化（n8n）、金融科技（eToro）、网络安全（Cyera）和零售（Kith）等多个行业。",
+          "员工采用率超过80%，解决了企业AI工具普遍面临的持续使用率低的问题。"
+        ],
+        "risks": [
+          "Harmony 的 AI 代理需要深度集成并访问企业内部的多个系统（IT、HR、财务等），这可能面临大型企业在数据安全、合规和权限管理方面的严格审查，从而延长销售周期。"
+        ],
+        "related_direction_id": "DIR-20260725-02",
+        "sector": "企业服务 / AI 驱动的员工体验平台",
+        "related_direction": {
+          "id": "DIR-20260725-02",
+          "title": "AI智能体从“辅助写作”转向“自主执行”，催生对智能体行为审计与权限控制的新需求"
+        }
+      },
+      "entity_links": [
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
+          "research_name": "Harmony AI 平台",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Harmony operates inside Slack and Microsoft Teams to handle tasks like onboarding, software access, and resetting passwords."
+            },
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Harmony works with more than 100 applications and can use an employee's role and permissions to tailor responses."
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Nitzan Shapira",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "CEO Nitzan Shapira and CTO Ran Ribenzaft launched their new startup Harmony"
+            }
+          ]
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Ran Ribenzaft",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "CEO Nitzan Shapira and CTO Ran Ribenzaft launched their new startup Harmony"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Lightspeed Venture Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Lightspeed led Harmony's $34 million round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Hitachi Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Fin Capital",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Mercer Ventures",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Operator Partners",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round."
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Assaf Rappaport (Wiz 创始团队成员)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io"
+            }
+          ]
+        },
+        {
+          "relation_type": "invested_in_round",
+          "target_kind": "organization",
+          "research_name": "Ofir Ehrlich (Eon.io 联合创始人兼 CEO)",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-2a6970c8768c84ff",
+              "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io"
+            }
+          ]
+        },
+        {
+          "relation_type": "public_customer_case",
+          "target_kind": "organization",
+          "research_name": "n8n",
+          "canonical_entity_id": null,
+          "canonical_name": "",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-fe66d902ece1db68",
+              "quote": "Customers include workflow automation company n8n"
+            }
+          ]
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
+          "research_name": "ServiceNow",
+          "canonical_entity_id": "EN-b5738c169b693bee",
+          "canonical_name": "ServiceNow",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-02ef8f0167178ccb",
+              "quote": "We focused on the computing environment, a market where companies like ServiceNow generate billions of dollars in revenue. We don't want to build another company that sells for hundreds of millions of dollars and move on. We want to build a company worth billions of dollars."
+            }
+          ]
+        }
+      ],
+      "funding_history": [
+        {
+          "event_id": "EV-5f3ccb941a2fe5d7",
+          "date": "2026-07-28",
+          "title": "AI 初创公司 Harmony 在创始人离开思科后获得 3400 万美元种子轮融资",
+          "amount": "$34 million",
+          "source_refs": [
+            "SA-407e1806d4af2005",
+            "SA-4179346bb8aa6324",
+            "SA-6e01a4e9e174ac13"
+          ]
+        }
+      ],
+      "research_sources": [
+        {
+          "source_id": "FISRC-fe66d902ece1db68",
+          "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
+          "title": "AI 初创公司 Harmony 在创始人离开思科后获得 3400 万美元种子轮融资",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-29T04:43:07.104Z",
+          "content_hash": "dd2e48aec8384eca",
+          "source_artifact_id": "SA-407e1806d4af2005",
+          "raw_id": "RAW-c2429c6c4ff38069"
+        },
+        {
+          "source_id": "FISRC-2a6970c8768c84ff",
+          "source_url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/harmony-raises-34-million-to-reinvent-employee-experience-powered-1193998",
+          "title": "Harmony 获 3400 万美元融资，以 AI 重塑员工体验",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-29T04:43:24.286Z",
+          "content_hash": "0b26337e0dc79c5e",
+          "source_artifact_id": "SA-4179346bb8aa6324",
+          "raw_id": "RAW-d057d11506afe980"
+        },
+        {
+          "source_id": "FISRC-02ef8f0167178ccb",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/sj0nhfurmx",
+          "title": "以5亿美元将Epsagon卖给思科后，创始人携AI企业级方案回归",
+          "publisher": "keyword search / Anysearch",
+          "source_class": "canonical_event_source",
+          "capture_method": "data_center_v4_source_artifact",
+          "captured_at": "2026-07-29T04:43:50.609Z",
+          "content_hash": "44be587e7c003a7e",
+          "source_artifact_id": "SA-6e01a4e9e174ac13",
+          "raw_id": "RAW-4b77eee24e7e0592"
+        },
+        {
+          "source_id": "FISRC-fb806bb82e9fff33",
+          "source_url": "https://www.morningstar.com/news/accesswire/1193998msn/harmony-raises-34-million-to-reinvent-employee-experience-powered-by-ai",
+          "title": "Harmony Raises $34 Million to Reinvent Employee Experience Powered by AI | Morningstar",
+          "publisher": "morningstar.com",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-07-29T04:46:32.173Z",
+          "content_hash": "78e63b348f0c0579",
+          "source_artifact_id": null,
+          "raw_id": null
+        }
+      ],
+      "model_provenance": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "attempts": 1,
+        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
+        "generated_at": "2026-07-29T04:47:07.714Z"
+      },
+      "auto_publish_gate": {
+        "passed": true,
+        "problems": [],
+        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
+      },
+      "publication_status": "auto_published",
+      "published_at": "2026-07-29T04:47:07.714Z",
+      "application_category": {
+        "dimension": "product_form",
+        "id": "enterprise_platform",
+        "name": "企业 AI 平台"
+      },
+      "links": {
+        "company": "data-center.html?view=index&detail=entity&id=EN-2be663431f007250",
+        "relation_map": "",
+        "funding_event": "data-center.html?view=events&detail=event&id=EV-5f3ccb941a2fe5d7",
+        "direction": "opportunity-map.html#direction-cards"
+      }
+    },
+    {
+      "schema_version": "FUNDING-INSIGHT-V1.0",
       "funding_insight_id": "FI-9812ec69e97e0357",
       "triggered_by_event_id": "EV-33b3cf34f8ff7bd8",
-      "as_of_date": "2026-07-28",
+      "as_of_date": "2026-07-29",
       "company": {
         "entity_id": "EN-0b01f10e87d13e75",
         "name": "Multiverse Computing",
         "full_name": "Multiverse Computing",
         "website": "multiversecomputing.com",
-        "summary": "Multiverse Computing 是高效 AI 领域的全球领导者，其核心平台 CompactifAI 利用源自量子物理的张量网络数学框架压缩大语言模型，可将模型规模缩减 80-95% 且精度损失极小，使 AI 能够在云端、本地及边缘设备上更快、更节能地运行。",
+        "summary": "Multiverse Computing 是全球领先的高效与主权AI公司，其核心平台 CompactifAI 利用源自量子物理的张量网络技术，可将大语言模型体积压缩80%-95%且精度损失极小，使AI能在智能手机、主权数据中心、无云连接的工厂车间等环境中全性能运行。",
         "headquarters": "Donostia, Spain",
         "founders": [
           {
             "name": "Enrique Lizaso",
-            "role": "联合创始人兼 CEO",
+            "role": "co-founder and CEO",
             "evidence_refs": [
               {
-                "source_id": "FISRC-ec66bd3ab9da8317",
+                "source_id": "FISRC-fa5aeddf845d651b",
                 "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing"
               }
             ],
@@ -163,10 +743,10 @@
           },
           {
             "name": "Dr. Román Orús",
-            "role": "联合创始人兼首席科学官",
+            "role": "co-founder and Chief Scientific Officer",
             "evidence_refs": [
               {
-                "source_id": "FISRC-ec66bd3ab9da8317",
+                "source_id": "FISRC-fa5aeddf845d651b",
                 "quote": "co-founder and Chief Scientific Officer Dr. Román Orús"
               }
             ],
@@ -180,12 +760,12 @@
         },
         "evidence_refs": [
           {
-            "source_id": "FISRC-ec66bd3ab9da8317",
-            "quote": "Multiverse Computing is the global leader in sovereign and efficient AI."
+            "source_id": "FISRC-fa5aeddf845d651b",
+            "quote": "Multiverse Computing, the global leader in efficient AI"
           },
           {
             "source_id": "FISRC-ec66bd3ab9da8317",
-            "quote": "Headquartered in Donostia, Spain"
+            "quote": "Multiverse Computing is the global leader in sovereign and efficient AI."
           }
         ]
       },
@@ -200,7 +780,7 @@
             "role": "本轮联合领投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-ec66bd3ab9da8317",
+                "source_id": "FISRC-fa5aeddf845d651b",
                 "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
               }
             ],
@@ -211,7 +791,7 @@
             "role": "本轮联合领投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-ec66bd3ab9da8317",
+                "source_id": "FISRC-fa5aeddf845d651b",
                 "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
               }
             ],
@@ -219,15 +799,11 @@
           },
           {
             "name": "Bullhound Capital",
-            "role": "本轮联合领投；B 轮领投方",
+            "role": "本轮联合领投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-ec66bd3ab9da8317",
+                "source_id": "FISRC-fa5aeddf845d651b",
                 "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
-              },
-              {
-                "source_id": "FISRC-0a07bce6fc40cc12",
-                "quote": "In June 2025, Multiverse Computing announced a €189 million Series B funding round led by Bullhound Capital."
               }
             ],
             "entity_id": null
@@ -237,7 +813,7 @@
             "role": "本轮参投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-ec66bd3ab9da8317",
+                "source_id": "FISRC-fa5aeddf845d651b",
                 "quote": "additional commitments to date from investors including Santander Alternative Investments"
               }
             ],
@@ -246,11 +822,11 @@
         ],
         "evidence_refs": [
           {
-            "source_id": "FISRC-ec66bd3ab9da8317",
+            "source_id": "FISRC-fa5aeddf845d651b",
             "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation"
           },
           {
-            "source_id": "FISRC-ec66bd3ab9da8317",
+            "source_id": "FISRC-fa5aeddf845d651b",
             "quote": "expected to bring total funding to $800 million, inclusive of prior rounds"
           }
         ]
@@ -258,56 +834,27 @@
       "products": [
         {
           "name": "CompactifAI",
-          "description": "CompactifAI 是一种应用张量网络的 AI 模型压缩技术，可将大语言模型规模缩减 80-95%，在保持精度的同时实现更快的推理速度、更低的能耗，并支持在云端、本地及边缘设备上部署。",
-          "target_customers": "制造业、金融、能源、航空航天、网络安全、国防、健康与生命科学等领域的企业",
+          "description": "一种利用量子物理中的张量网络框架压缩AI模型的技术，可将大语言模型体积减少80%-95%，精度损失极小，使AI运行更快、能耗更低，并可在向超大规模云服务商发送数据过于昂贵、缓慢或不被允许的环境中部署。",
+          "target_customers": "设备制造商、基础设施运营商、企业、主权数据中心",
           "features": [
-            "将大语言模型规模压缩 80-95%",
+            "将大语言模型体积压缩80%-95%",
             "精度损失极小",
-            "支持云端、本地及设备端部署",
-            "降低 GPU 利用率和能耗"
+            "支持云端、本地和端侧部署",
+            "CompactifAI Router 实时决定工作负载在本地运行还是发送到云端",
+            "为下一代AI工厂和数据中心提供端到端软件层，集成模型压缩、GPU编排、AI服务和主权级控制"
           ],
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "CompactifAI, a compression technology that applies tensor networks, a mathematical framework from quantum physics, to the problem of AI model compression."
             },
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss."
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "CompactifAI Router",
-          "description": "CompactifAI Router 实时决定工作负载应在本地运行还是发送到云端，从而在云端、本地和设备端环境中编排压缩模型。",
-          "target_customers": "需要混合部署 AI 工作负载的企业",
-          "features": [
-            "实时决策本地或云端运行",
-            "跨云端、本地和设备端编排压缩模型"
-          ],
-          "evidence_refs": [
+              "source_id": "FISRC-fa5aeddf845d651b",
+              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss"
+            },
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud."
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "AI 工厂与数据中心端到端软件层",
-          "description": "为下一代 AI 工厂和数据中心提供统一的软件层，集成模型压缩、GPU 编排、AI 服务和主权级控制。",
-          "target_customers": "主权 AI 基础设施投资者和数据中心运营商",
-          "features": [
-            "模型压缩",
-            "GPU 编排",
-            "AI 服务",
-            "主权级控制"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "an end-to-end software layer for next-generation AI factories and data centers that brings model compression, GPU orchestration, AI services, and sovereign-grade controls into a unified platform."
+              "source_id": "FISRC-fa5aeddf845d651b",
+              "quote": "compressed models optimized for cloud, on-premises, and on-device environments, orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud"
             }
           ],
           "entity_id": null
@@ -320,19 +867,8 @@
           "use_case": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "Customers and partners span manufacturing, finance, energy, aerospace, cybersecurity, defense, and health and life sciences, including Allianz"
-            }
-          ]
-        },
-        {
-          "name": "Telefónica",
-          "industry": "电信",
-          "use_case": "压缩并微调大语言模型用于客服聊天系统，为客服人员提供辅助信息以更快解决客户查询，同时降低 75% 能耗和 80% 存储与计算需求。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f56b3890c53aeb9c",
-              "quote": "The AI model compression process also significantly reduces storage and computing needs, with cuts of up to 80%, and lowers energy consumption by up to 75%."
             }
           ]
         }
@@ -340,74 +876,63 @@
       "comparisons": [],
       "metrics": [
         {
-          "label": "C 轮融资金额",
-          "value": "$570 million (€500M)",
-          "observed_at": "2026-07-27",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "a $570 million (€500M) Series C funding round"
-            }
-          ]
-        },
-        {
-          "label": "C 轮投前估值",
+          "label": "C轮融资前估值",
           "value": "$1.7 billion (€1.5B)",
           "observed_at": "2026-07-27",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "at a $1.7 billion (€1.5B) pre-money valuation"
+              "source_id": "FISRC-fa5aeddf845d651b",
+              "quote": "a $570 million (€500M) Series C funding round at a $1.7 billion (€1.5B) pre-money valuation"
             }
           ]
         },
         {
-          "label": "累计融资额",
-          "value": "$800 million",
+          "label": "估值较B轮增长倍数",
+          "value": "5x",
           "observed_at": "2026-07-27",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "expected to bring total funding to $800 million, inclusive of prior rounds"
+              "source_id": "FISRC-fa5aeddf845d651b",
+              "quote": "a 5x step-up from its Series B"
             }
           ]
         },
         {
-          "label": "B 轮后年化收入增长",
-          "value": "超过 10 倍",
+          "label": "年化收入增长（自2025年6月B轮结束以来）",
+          "value": "超过10倍",
           "observed_at": "2026-07-27",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "Since closing its Series B in June 2025, Multiverse Computing has grown annualized revenue by more than 10x"
             }
           ]
         },
         {
-          "label": "2026 年 Q1 销售额同比增长",
-          "value": "96 倍",
+          "label": "2026年Q1销售额同比增长",
+          "value": "96倍",
           "observed_at": "2026-Q1",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "with 96x year-over-year sales growth in Q1 of 2026"
             }
           ]
         },
         {
-          "label": "模型压缩率",
-          "value": "80-95%",
+          "label": "模型压缩比例",
+          "value": "80%-95%",
           "observed_at": "2026-07-27",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss"
             }
           ]
         },
         {
-          "label": "全球客户数",
-          "value": "超过 100 家",
+          "label": "全球客户数量",
+          "value": "超过100家",
           "observed_at": "2026-07-27",
           "evidence_refs": [
             {
@@ -417,13 +942,13 @@
           ]
         },
         {
-          "label": "估值较 B 轮增长",
-          "value": "5 倍",
+          "label": "模型部署设备与系统数量",
+          "value": "数百万台",
           "observed_at": "2026-07-27",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "a 5x step-up from its Series B"
+              "source_id": "FISRC-fa5aeddf845d651b",
+              "quote": "Multiverse models are already being deployed across millions of devices and systems"
             }
           ]
         }
@@ -431,19 +956,21 @@
       "quotes": [],
       "analysis": {
         "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是 AI 模型压缩技术能否成为基础设施层与应用层之间的关键效率平台。本轮 5 倍估值跃升和 17 亿美元投前估值，依赖于两个已验证信号：一是 B 轮后年化收入增长超 10 倍、2026 年 Q1 销售额同比增长 96 倍的商业牵引力；二是 CompactifAI 已在数百万设备上部署并获得 Allianz、Bosch、Telefónica 等标杆客户的采用。投资方的判断边界在于，Multiverse 从下游压缩工具向完整 AI 代工厂和操作系统的演进是否能在主权 AI 和边缘 AI 两个方向上同时兑现。",
+        "capital_judgment": "资本押注的核心变量是AI模型压缩技术能否成为基础设施层与应用层之间的关键效率平台。本轮融资以17亿美元pre-money估值完成，较B轮增长5倍，验证信号包括：年化收入自B轮以来增长超10倍、2026年Q1销售额同比增长96倍、模型已部署在数百万台设备上、客户涵盖Allianz、Bosch、Bank of Canada等100多家全球企业。投资方构成涵盖企业战略资本（HP、Orange、Scania）、主权基金（Qatar Development Bank、SETT）和传统VC，表明市场同时认可其商业牵引力和主权AI基础设施的战略价值。但判断的证据边界在于：来源仅披露收入增长倍数而未提供绝对收入基数，且融资轮次仍可能向额外战略投资者开放，最终关闭金额存在不确定性。",
         "validated_signals": [
-          "B 轮后年化收入增长超 10 倍，2026 年 Q1 销售额同比增长 96 倍",
-          "CompactifAI 模型已在数百万设备上部署，覆盖无人机、摄像头、卫星、车辆和电信基础设施",
-          "拥有超过 100 家全球客户，包括 Allianz、Bank of Canada、Bosch、Iberdrola、Telefónica 等",
-          "与 Telefónica 合作压缩客服 LLM，实现 75% 能耗降低和 80% 存储与计算需求削减"
+          "年化收入自2025年6月B轮结束以来增长超过10倍",
+          "2026年Q1销售额同比增长96倍",
+          "模型已部署在数百万台设备上，覆盖无人机、摄像头、卫星、车辆和电信基础设施",
+          "全球客户超过100家，包括Allianz、Bosch、Bank of Canada、Iberdrola、Telefónica等",
+          "C轮估值较B轮增长5倍，达到17亿美元pre-money"
         ],
         "risks": [
-          "来源未披露绝对收入基数，仅提供增长倍数，无法判断实际营收规模是否支撑 17 亿美元估值。",
-          "本轮融资尚未关闭，仍对额外战略投资者开放，最终金额和投资方结构存在不确定性。"
+          "来源仅披露收入增长倍数而未提供绝对收入基数，无法判断实际营收规模；高倍数增长可能来自低基数效应。",
+          "融资轮次尚未最终关闭，可能向额外战略投资者开放，最终金额和投资方构成存在变数。",
+          "模型压缩技术面临来自其他压缩方案和硬件效率提升的竞争，且客户可能通过直接使用更小模型绕过压缩层。"
         ],
         "related_direction_id": "",
-        "sector": "高效 AI 与模型压缩基础设施",
+        "sector": "高效AI与模型压缩基础设施",
         "related_direction": null
       },
       "entity_links": [
@@ -455,38 +982,16 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "CompactifAI, a compression technology that applies tensor networks, a mathematical framework from quantum physics, to the problem of AI model compression."
             },
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss."
-            }
-          ]
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "CompactifAI Router",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
+              "source_id": "FISRC-fa5aeddf845d651b",
+              "quote": "reduces the size of large language models by up to 80-95% with immaterial accuracy loss"
+            },
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud."
-            }
-          ]
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "AI 工厂与数据中心端到端软件层",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-ec66bd3ab9da8317",
-              "quote": "an end-to-end software layer for next-generation AI factories and data centers that brings model compression, GPU orchestration, AI services, and sovereign-grade controls into a unified platform."
+              "source_id": "FISRC-fa5aeddf845d651b",
+              "quote": "compressed models optimized for cloud, on-premises, and on-device environments, orchestrated by the CompactifAI Router that decides in real time whether a workload should run locally or be sent to the cloud"
             }
           ]
         },
@@ -498,7 +1003,7 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "Enrique Lizaso, co-founder and CEO of Multiverse Computing"
             }
           ]
@@ -511,7 +1016,7 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "co-founder and Chief Scientific Officer Dr. Román Orús"
             }
           ]
@@ -524,7 +1029,7 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
             }
           ]
@@ -537,7 +1042,7 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
             }
           ]
@@ -550,12 +1055,8 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "The round is co-led by Forgepoint Capital International, BNPP SIVF, and Bullhound Capital"
-            },
-            {
-              "source_id": "FISRC-0a07bce6fc40cc12",
-              "quote": "In June 2025, Multiverse Computing announced a €189 million Series B funding round led by Bullhound Capital."
             }
           ]
         },
@@ -567,7 +1068,7 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "additional commitments to date from investors including Santander Alternative Investments"
             }
           ]
@@ -580,21 +1081,8 @@
           "canonical_name": "",
           "evidence_refs": [
             {
-              "source_id": "FISRC-ec66bd3ab9da8317",
+              "source_id": "FISRC-fa5aeddf845d651b",
               "quote": "Customers and partners span manufacturing, finance, energy, aerospace, cybersecurity, defense, and health and life sciences, including Allianz"
-            }
-          ]
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Telefónica",
-          "canonical_entity_id": null,
-          "canonical_name": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-f56b3890c53aeb9c",
-              "quote": "The AI model compression process also significantly reduces storage and computing needs, with cuts of up to 80%, and lowers energy consumption by up to 75%."
             }
           ]
         }
@@ -602,7 +1090,7 @@
       "funding_history": [
         {
           "event_id": "EV-33b3cf34f8ff7bd8",
-          "date": "2026-07-28",
+          "date": "2026-07-27",
           "title": "Multiverse Computing 宣布 C 轮融资，目标高达 5.7 亿美元（5 亿欧元），为从边缘到云端的高效 AI 提供动力",
           "amount": "$570 million",
           "source_refs": [
@@ -612,38 +1100,26 @@
       ],
       "research_sources": [
         {
-          "source_id": "FISRC-ec66bd3ab9da8317",
-          "source_url": "https://multiversecomputing.com/resources/multiverse-computing-announces-series-c-fundraising-targeting-up-to-usd570m-eur500m-to-power",
+          "source_id": "FISRC-fa5aeddf845d651b",
+          "source_url": "https://www.globenewswire.com/news-release/2026/07/27/3333282/0/en/Multiverse-Computing-Announces-Series-C-Fundraising-Targeting-up-to-570M-500M-to-Power-Efficient-AI-from-Edge-to-Cloud.html",
           "title": "Multiverse Computing 宣布 C 轮融资，目标高达 5.7 亿美元（5 亿欧元），为从边缘到云端的高效 AI 提供动力",
           "publisher": "keyword search / Anysearch",
           "source_class": "canonical_event_source",
           "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-07-28T05:39:23.583Z",
-          "content_hash": "c6efbd1a58ae661a",
-          "source_artifact_id": "SA-4bd23dfb7d177851",
-          "raw_id": "RAW-42daee3e9c2446c9"
+          "captured_at": "2026-07-29T04:43:14.069Z",
+          "content_hash": "070cd1b0f627dcdf",
+          "source_artifact_id": "SA-b5238000065c8be5",
+          "raw_id": "RAW-c047a3e1a21f0cdb"
         },
         {
-          "source_id": "FISRC-0a07bce6fc40cc12",
-          "source_url": "https://www.eu-startups.com/2026/07/spains-multiverse-computing-hits-unicorn-status-after-raising-e500-million-series-c-at-e1-5-billion-valuation/",
-          "title": "Spain’s Multiverse Computing hits unicorn status after raising €500 million Series C at €1.5 billion valuation | EU-Startups",
-          "publisher": "eu-startups.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-07-28T05:43:57.801Z",
-          "content_hash": "33629c1d4d0fd084",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-f56b3890c53aeb9c",
-          "source_url": "https://multiversecomputing.com/resources/telefonica-and-multiverse-computing-develop-an-ai-based-model-to-support-customer-service-agents",
-          "title": "Telefónica and Multiverse Computing develop an AI-based model to support customer service agents with 75% energy savings",
+          "source_id": "FISRC-ec66bd3ab9da8317",
+          "source_url": "https://multiversecomputing.com/resources/multiverse-computing-announces-series-c-fundraising-targeting-up-to-usd570m-eur500m-to-power",
+          "title": "Multiverse Computing Announces Series C Fundraising Targeting up to $570M (€500M) to Power Efficient AI from Edge to Cloud",
           "publisher": "multiversecomputing.com",
           "source_class": "official_candidate",
           "capture_method": "direct_fetch",
-          "captured_at": "2026-07-28T05:44:00.540Z",
-          "content_hash": "d0ae05f8928c6034",
+          "captured_at": "2026-07-29T04:46:27.645Z",
+          "content_hash": "331e50cc84dc1a65",
           "source_artifact_id": null,
           "raw_id": null
         }
@@ -653,7 +1129,7 @@
         "model": "deepseek-v4-pro",
         "attempts": 1,
         "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.1",
-        "generated_at": "2026-07-28T05:45:01.499Z"
+        "generated_at": "2026-07-29T04:47:17.227Z"
       },
       "auto_publish_gate": {
         "passed": true,
@@ -661,7 +1137,7 @@
         "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0"
       },
       "publication_status": "auto_published",
-      "published_at": "2026-07-28T05:45:01.499Z",
+      "published_at": "2026-07-29T04:47:17.227Z",
       "application_category": {
         "dimension": "product_form",
         "id": "compute_system",

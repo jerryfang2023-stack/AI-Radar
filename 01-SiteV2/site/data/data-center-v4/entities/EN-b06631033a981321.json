@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-28T05:43:43.570Z",
-    "latestDataDate": "2026-07-28",
-    "currentDate": "2026-07-28",
-    "eventCount": 1656,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-29T04:46:12.968Z",
+    "latestDataDate": "2026-07-29",
+    "currentDate": "2026-07-29",
+    "eventCount": 1695,
+    "quarantinedEventCount": 14
   },
   "entity": {
     "id": "EN-b06631033a981321",
@@ -21,19 +21,22 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-12a42b0aabee236f"
+      "EV-12a42b0aabee236f",
+      "EV-84697d26f813b122"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-06",
-    "lastSeen": "2026-07-06",
+    "lastSeen": "2026-07-29",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-12a42b0aabee236f"
       ],
-      "deployments": [],
+      "deployments": [
+        "EV-84697d26f813b122"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
@@ -41,6 +44,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-84697d26f813b122",
+        "dataDate": "2026-07-29",
+        "date": "2026-07-28",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Recursive Superintelligence 与亚马逊签署 4.1 亿美元计算协议",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b06631033a981321",
+          "EN-cbc62794911ff31b"
+        ]
+      },
       {
         "id": "EV-12a42b0aabee236f",
         "dataDate": "2026-07-06",

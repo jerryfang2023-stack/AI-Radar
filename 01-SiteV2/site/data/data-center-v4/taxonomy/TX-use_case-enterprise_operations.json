@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-28T05:43:43.570Z",
-    "latestDataDate": "2026-07-28",
-    "currentDate": "2026-07-28",
-    "eventCount": 1656,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-29T04:46:12.968Z",
+    "latestDataDate": "2026-07-29",
+    "currentDate": "2026-07-29",
+    "eventCount": 1695,
+    "quarantinedEventCount": 14
   },
   "node": {
     "id": "TX-use_case-enterprise_operations",
@@ -17,6 +17,7 @@
     "typeLabel": "应用场景",
     "valueId": "enterprise_operations",
     "eventIds": [
+      "EV-5f3ccb941a2fe5d7",
       "EV-f6a72cddbda748b3",
       "EV-6e06cfa28f76a76f",
       "EV-dfddbb260b3d1c77",
@@ -29,6 +30,7 @@
       "EV-286846e21412f3c7",
       "EV-12ca2aae7bfcd080",
       "EV-acf1bcb321414706",
+      "EV-57944eebac69d510",
       "EV-57d3b7aa1a2f0fda",
       "EV-5b193a038ab4ea22",
       "EV-3a7128e2d7ff149e",
@@ -37,6 +39,9 @@
       "EV-f50752717e2a8536"
     ],
     "entityIds": [
+      "EN-fb42d760d80a6314",
+      "EN-9fbf261b62c1d7c0",
+      "EN-2be663431f007250",
       "EN-a5d2ae286d0d9e45",
       "EN-96eebba49dbbf422",
       "EN-caaa8e02be54cfc9",
@@ -53,6 +58,7 @@
       "EN-3ccbd9105a45d8fc",
       "EN-636396f02b6571e4",
       "EN-b1d07f1a647ba7fb",
+      "EN-2dc010636b9dce91",
       "EN-3cce50ffb12f1a69",
       "EN-8d4321d936320802",
       "EN-6fcba5d96a4fadfd",
@@ -68,13 +74,141 @@
       "EN-ae4ea495016fb286"
     ],
     "fdeIds": [
+      "FDE-e32500a9c4f90e91",
       "FDE-a9fc583eb4065d4d"
     ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-07-23"
+    "lastSeen": "2026-07-29"
   },
   "events": [
+    {
+      "id": "EV-5f3ccb941a2fe5d7",
+      "dataDate": "2026-07-29",
+      "date": "2026-07-28",
+      "updatedDate": "2026-07-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "AI 初创公司 Harmony 在创始人离开思科后获得 3400 万美元种子轮融资",
+      "originalTitle": "AI Startup Harmony Raises $34 Million Seed After Founders' Cisco Exit - Business Insider",
+      "subject": "AI Startup Harmony",
+      "action": "Raises",
+      "object": "$34 Million Seed After Founders' Cisco Exit - Business Insider",
+      "metrics": [
+        "$34 million",
+        "$500 million",
+        "$34M",
+        "$500M"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "enterprise_platform",
+            "dimensionName": "产品形态",
+            "name": "企业 AI 平台"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "enterprise_operations",
+            "dimensionName": "应用场景",
+            "name": "企业运营自动化"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "enterprise_platform",
+          "dimensionName": "产品形态",
+          "name": "企业 AI 平台"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "human_in_loop",
+          "name": "人在回路"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-fb42d760d80a6314",
+        "EN-9fbf261b62c1d7c0",
+        "EN-2be663431f007250"
+      ],
+      "entityNames": [
+        "AI Startup Harmony",
+        "Microsoft",
+        "Harmony"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
+      "publisher": "businessinsider.com"
+    },
     {
       "id": "EV-f6a72cddbda748b3",
       "dataDate": "2026-07-18",
@@ -1183,6 +1317,112 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-57944eebac69d510",
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-29",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Tredence 推出前向部署工程实践",
+      "originalTitle": "Tredence Launches Forward Deployed Engineering Practice",
+      "subject": "Tredence Launches Forward",
+      "action": "Deployed",
+      "object": "Engineering Practice",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "enterprise_operations",
+            "dimensionName": "应用场景",
+            "name": "企业运营自动化"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "id": "retail_ecommerce",
+            "dimensionName": "行业",
+            "name": "零售与电商"
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "enterprise_operations",
+          "dimensionName": "应用场景",
+          "name": "企业运营自动化"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "industry",
+          "id": "retail_ecommerce",
+          "dimensionName": "行业",
+          "name": "零售与电商"
+        }
+      ],
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "Databricks",
+        "Google",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tredence.com/news/tredence-launches-domain-native-forward-deployed-engineering-to-close-the-last-mile-of-enterprise-ai",
+      "publisher": "tredence.com"
+    },
+    {
       "id": "EV-57d3b7aa1a2f0fda",
       "dataDate": "2026-06-22",
       "date": "2026-06-22",
@@ -1854,6 +2094,213 @@
   ],
   "entities": [
     {
+      "id": "EN-fb42d760d80a6314",
+      "name": "AI Startup Harmony",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5f3ccb941a2fe5d7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-human_in_loop",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-9fbf261b62c1d7c0",
+      "name": "Microsoft",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "微软"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5f3ccb941a2fe5d7",
+        "EV-97854226b6f43a95",
+        "EV-86ca5af11ee4d275",
+        "EV-52115fee0e716170",
+        "EV-20d762872664fddb",
+        "EV-88f4ee8cd57bdf42",
+        "EV-44a4e92c03a31ab1",
+        "EV-7585b033d4005977",
+        "EV-57944eebac69d510",
+        "EV-306ac8217c66dc81",
+        "EV-005a017a310d1fdd",
+        "EV-e09efcd49776cb95",
+        "EV-883d3b5f6d30eb48",
+        "EV-fa66f00e9d4b20c2",
+        "EV-f31feb5ed41be8f2",
+        "EV-4fba2b2f1ac10a79",
+        "EV-bcb74b02448b7d78",
+        "EV-47a16db069ed320e",
+        "EV-381b79897d896995",
+        "EV-d756f05478303505",
+        "EV-7263caa45bbf168e",
+        "EV-8abf5adc3e72fbb8",
+        "EV-6272444f30281858",
+        "EV-f55d16df5b5fecb2",
+        "EV-16cfe946bbf69aa3",
+        "EV-eec1e6857f0e0b2b",
+        "EV-6acfb15c012ddf6d",
+        "EV-2fab4396000198d2",
+        "EV-3fb492fb45980541",
+        "EV-b833b29d904b39ac",
+        "EV-9dab7fa55702e561",
+        "EV-b2e374d54b10b9af",
+        "EV-4763b46821ab746e",
+        "EV-58c1cc3749294649",
+        "EV-c0a65877001ed413",
+        "EV-bd508dbe4205774f",
+        "EV-7a4d1e871dcd3b1f",
+        "EV-3eb44a239ebef4b0",
+        "EV-272aea63d4e50349",
+        "EV-5f2acbfb8f54fd59",
+        "EV-6aae550a6523a8fd",
+        "EV-c9216f0145c3ef2b",
+        "EV-395884a4c090103c",
+        "EV-272c5c798bc95d9d",
+        "EV-5bc7efca0bc7fec0",
+        "EV-702276a31f123374",
+        "EV-37ff2485172cab0b",
+        "EV-82ae0ea3bfe336a1",
+        "EV-243e73016576fa43",
+        "EV-563843979fb55b9b",
+        "EV-6c81f03e885f10af",
+        "EV-e1e30a2a4a5232c6",
+        "EV-cd067fa6f39fe828",
+        "EV-1e611bcabcb049e9",
+        "EV-118317b7f92e5e16",
+        "EV-c4723445b11bb275",
+        "EV-7963d8c78531f12d",
+        "EV-7c899d5decafc42f",
+        "EV-b920999c64aa9ef6",
+        "EV-33292a33d0f4d599",
+        "EV-b3a050d576cea2f2",
+        "EV-fdcc4ff01b49053e",
+        "EV-cadcc94249dea81d",
+        "EV-dae42c1daf8ba2f8",
+        "EV-b862692915ae70bb",
+        "EV-51aed98773a9fca1",
+        "EV-cc3b92fe233953cf",
+        "EV-0370a17f0ef39c3e",
+        "EV-578a9db1fe952d0a",
+        "EV-b93b5cc15823e9c3",
+        "EV-7309586168387ad8",
+        "EV-8aead769e84de342",
+        "EV-7fb25ff3d853c314",
+        "EV-3acf607a02706fa8",
+        "EV-4ee99f92b011d16f",
+        "EV-9009adaed650ddde",
+        "EV-8a26b85b4f432525",
+        "EV-f953555178744c22",
+        "EV-28145c97a7237d6d",
+        "EV-10aac036228b3c6b",
+        "EV-8495af729cd05f62",
+        "EV-e28e134345ea5f99",
+        "EV-f7484ad16a6d1876",
+        "EV-d2d1834222ab32d3",
+        "EV-04c2ffd7f6b10126",
+        "EV-922de7a46f447efa",
+        "EV-1f61330a3f828179",
+        "EV-523e5de44cc464fb",
+        "EV-ae89898e7aa4a4d6",
+        "EV-d596f111808bd55b",
+        "EV-a4f052325d0ef230",
+        "EV-6ce6b9c9780b97d9",
+        "EV-bce258f8f915ff5f",
+        "EV-89bdda008227fb6b",
+        "EV-62df953d81def866",
+        "EV-1b92b6c835ce240c",
+        "EV-3da14e3743571e92",
+        "EV-d9a78a839d6c628f",
+        "EV-1587a760d81451be",
+        "EV-33e7429a7bc94840",
+        "EV-022d1f3160d94048",
+        "EV-933294dfb2d19a67",
+        "EV-7580a050ca19a8ae"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-use_case-customer_service",
+        "TX-technology-human_in_loop",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
+        "TX-use_case-robotics_automation",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
+        "TX-technology-computer_use",
+        "TX-industry-technology",
+        "TX-use_case-software_development",
+        "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-automotive_transportation",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
+        "TX-use_case-data_analysis",
+        "TX-technology-on_device",
+        "TX-technology-open_weights",
+        "TX-technology-model_context_protocol",
+        "TX-industry-telecommunications",
+        "TX-technology-reasoning",
+        "TX-technology-distillation",
+        "TX-technology-image_generation"
+      ],
+      "relatedEntityIds": [
+        "EN-688f8db7018da7d4",
+        "EN-827b607311e6593e",
+        "EN-068e7ccb7d4b07a6",
+        "EN-8652f6cd9088f1fa",
+        "EN-597d8c4afa5fe3d6",
+        "EN-d2f4e09cb01afa3c",
+        "EN-7d3194f79e645c42",
+        "EN-38945a66b4806b11",
+        "EN-c141d2237427f30d",
+        "EN-8d4321d936320802",
+        "EN-10fce287b4b1464c"
+      ],
+      "firstSeen": "2026-02-13",
+      "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-2be663431f007250",
+      "name": "Harmony",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5f3ccb941a2fe5d7"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-human_in_loop",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-29"
+    },
+    {
       "id": "EN-a5d2ae286d0d9e45",
       "name": "Whale",
       "entityType": "organization_candidate",
@@ -1868,9 +2315,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-enterprise_operations",
         "TX-industry-manufacturing",
         "TX-industry-financial_services",
-        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation"
       ],
@@ -2034,23 +2481,23 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-use_case-customer_service",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation",
-        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
@@ -2085,8 +2532,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations"
+        "TX-use_case-enterprise_operations",
+        "TX-industry-healthcare_life_sciences"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-07",
@@ -2155,6 +2602,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-dda9429d76897a3d",
         "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
         "EV-a4f5d59c1b4ddce1",
@@ -2175,6 +2623,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
         "EV-dc56b5ae3009f6f5",
         "EV-f55d16df5b5fecb2",
@@ -2195,7 +2644,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-0d5a32aca724d30e",
+        "EV-2aa470d66b93391d",
+        "EV-7c934b299d048348",
+        "EV-96cfe78a2dee2182",
         "EV-272aea63d4e50349",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -2327,6 +2778,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-e86fcdb67a637c4c",
         "EV-0eef30387327e73f",
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
@@ -2374,24 +2826,25 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-use_case-customer_service",
+        "TX-technology-human_in_loop",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
@@ -2400,8 +2853,7 @@
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-human_in_loop"
+        "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
         "EN-968e2d5b08687bf4",
@@ -2428,7 +2880,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -2658,6 +3110,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-a61345459e796a19",
         "EV-0eef30387327e73f",
         "EV-ae9142b65fa86975",
         "EV-d709599eddf5db04",
@@ -2700,21 +3153,22 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-technology-human_in_loop",
         "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
@@ -2724,7 +3178,6 @@
         "TX-industry-government_public_sector",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-industry-education"
       ],
@@ -2755,16 +3208,14 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-bbdefa2950f49882",
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -2781,6 +3232,7 @@
         "EV-4a162c41bb82f325",
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
+        "EV-57944eebac69d510",
         "EV-38232fed5e0cfdd6",
         "EV-e7b228c1b6b54c6a",
         "EV-cf76f090a1a20a36",
@@ -2918,21 +3370,21 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-use_case-customer_service",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
-        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_service",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
@@ -2949,16 +3401,14 @@
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -2966,7 +3416,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-4728b0c37dc84206",
@@ -3026,9 +3476,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
         "TX-technology-agentic_execution",
-        "TX-use_case-enterprise_operations"
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-robotics_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-25",
@@ -3050,8 +3500,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-technology",
-        "TX-use_case-enterprise_operations"
+        "TX-use_case-enterprise_operations",
+        "TX-industry-technology"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-01",
@@ -3073,8 +3523,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-technology",
-        "TX-use_case-enterprise_operations"
+        "TX-use_case-enterprise_operations",
+        "TX-industry-technology"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-01",
@@ -3098,8 +3548,8 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-industry-technology",
-        "TX-use_case-enterprise_operations"
+        "TX-use_case-enterprise_operations",
+        "TX-industry-technology"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-29",
@@ -3138,14 +3588,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity"
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
+        "TX-use_case-software_development",
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
@@ -3196,6 +3646,45 @@
       "lastSeen": "2026-07-20"
     },
     {
+      "id": "EN-2dc010636b9dce91",
+      "name": "Databricks",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0d4e656aa51f9a46",
+        "EV-78a11d309c3d4e97",
+        "EV-0e84a2f49d765ce3",
+        "EV-7add33b4c74dbf1a",
+        "EV-c5643983538c6513",
+        "EV-57944eebac69d510",
+        "EV-5b1bdc06406424b4",
+        "EV-6272444f30281858",
+        "EV-226a363f84676808",
+        "EV-9ae9aa86e51e64a2",
+        "EV-6ce6b9c9780b97d9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
+        "TX-industry-manufacturing",
+        "TX-industry-healthcare_life_sciences",
+        "TX-industry-retail_ecommerce",
+        "TX-industry-telecommunications"
+      ],
+      "relatedEntityIds": [
+        "EN-a42d5d95234db6c4"
+      ],
+      "firstSeen": "2026-05-20",
+      "lastSeen": "2026-07-29"
+    },
+    {
       "id": "EN-3cce50ffb12f1a69",
       "name": "HD 现代",
       "entityType": "organization_candidate",
@@ -3210,8 +3699,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-robotics_automation",
-        "TX-use_case-enterprise_operations"
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-robotics_automation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-22",
@@ -3369,19 +3858,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-technology-human_in_loop",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-industry-automotive_transportation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
@@ -3392,7 +3882,6 @@
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
@@ -3445,9 +3934,11 @@
         "EV-5d581d112fdbd464",
         "EV-201b25d4f3cf696a",
         "EV-31df816db86db282",
+        "EV-721215fba1addc6c",
         "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
+        "EV-7a4d1e871dcd3b1f",
         "EV-5b193a038ab4ea22",
         "EV-2351415291cb9fcd",
         "EV-e7b7df43970f7e2c",
@@ -3467,12 +3958,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-software_development",
-        "TX-use_case-enterprise_operations",
+        "TX-technology-long_context",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -3480,7 +3972,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-ea3bd73e2b506e00",
@@ -3503,6 +3995,8 @@
         "EV-3f8f6a578be79988",
         "EV-467d1a701d21327d",
         "EV-acdeebead5324344",
+        "EV-cded77b1de2db61a",
+        "EV-8805e96b4fb544dd",
         "EV-c3f617e75d303f59",
         "EV-bc9abd502c002102",
         "EV-9efcf6480f6c6f48",
@@ -3556,16 +4050,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
+        "TX-technology-computer_use",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
-        "TX-use_case-cybersecurity",
         "TX-technology-open_weights",
         "TX-technology-guardrails_safety",
         "TX-industry-media_entertainment",
@@ -3584,8 +4078,8 @@
         "EN-2ba325ce6f8e3dc9",
         "EN-e71558a14e7ed6ab"
       ],
-      "firstSeen": "2026-03-30",
-      "lastSeen": "2026-07-27"
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-6f7ac1823da81d2e",
@@ -3627,12 +4121,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -3759,8 +4253,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-enterprise_operations",
-        "TX-use_case-customer_service"
+        "TX-use_case-customer_service",
+        "TX-use_case-enterprise_operations"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-25",
@@ -3783,8 +4277,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-use_case-enterprise_operations",
-        "TX-use_case-customer_service"
+        "TX-use_case-customer_service",
+        "TX-use_case-enterprise_operations"
       ],
       "relatedEntityIds": [
         "EN-7d3194f79e645c42"
@@ -3820,6 +4314,53 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-e32500a9c4f90e91",
+      "eventId": "EV-57944eebac69d510",
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "title": "Tredence 推出前向部署工程实践",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "Databricks",
+      "industry": "未披露",
+      "useCase": "Engineering Practice",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "Bengaluru/ San Jose, July 27 &mdash; Tredence, the world's leading data & AI services company, today announced the launch of its Forward Deployed Engineering (FDE) practice, committing to build a dedicated pool of 200 FDEs over the next 12-18 months. Through this practice, the company intends to build the most domain-native engineering capability in the market, helping clients move faster from problem to impact.",
+        "Enterprise AI often struggles at the last mile, where data, systems, and business decisions must come together to create measurable value. Tredence's Forward Deployed Engineers combine speed, powered by deep AI, data, and engineering expertise, with depth, built through years of domain experience, to turn AI into business outcomes faster."
+      ],
+      "outcomes": [
+        "Bengaluru/ San Jose, July 27 &mdash; Tredence, the world's leading data & AI services company, today announced the launch of its Forward Deployed Engineering (FDE) practice, committing to build a dedicated pool of 200 FDEs over the next 12-18 months. Through this practice, the company intends to build the most domain-native engineering capability in the market, helping clients move faster from problem to impact.",
+        "Enterprise AI often struggles at the last mile, where data, systems, and business decisions must come together to create measurable value. Tredence's Forward Deployed Engineers combine speed, powered by deep AI, data, and engineering expertise, with depth, built through years of domain experience, to turn AI into business outcomes faster."
+      ],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "reported_need",
+        "data_requirements",
+        "governance_controls"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "sourceUrl": "https://tredence.com/news/tredence-launches-domain-native-forward-deployed-engineering-to-close-the-last-mile-of-enterprise-ai",
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-bbdefa2950f49882",
+        "EN-9fbf261b62c1d7c0"
+      ]
+    },
     {
       "id": "FDE-a9fc583eb4065d4d",
       "eventId": "EV-57d3b7aa1a2f0fda",

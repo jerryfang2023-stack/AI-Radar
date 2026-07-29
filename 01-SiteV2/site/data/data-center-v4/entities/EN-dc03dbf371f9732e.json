@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "generatedAt": "2026-07-29T04:46:12.968Z",
+    "latestDataDate": "2026-07-29",
+    "currentDate": "2026-07-29",
+    "eventCount": 1695,
+    "quarantinedEventCount": 14
+  },
+  "entity": {
+    "id": "EN-dc03dbf371f9732e",
+    "name": "TKMS",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-e34e2d79df7412a7"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-06-29",
+    "lastSeen": "2026-07-29",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [],
+      "deployments": [
+        "EV-e34e2d79df7412a7"
+      ],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-e34e2d79df7412a7",
+        "dataDate": "2026-07-29",
+        "date": "2026-06-29",
+        "eventType": "procurement_contract",
+        "eventTypeLabel": "采购合同",
+        "eventGroup": "商业合作",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "TKMS 与 Cohere 签署合同，为 TKMS 集团部署 AI 数据集成平台",
+        "displayTags": [],
+        "entityIds": [
+          "EN-dc03dbf371f9732e",
+          "EN-72e8088a05b38ae3"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [
+    {
+      "id": "FDE-352c1e8a7414da2a",
+      "eventId": "EV-e34e2d79df7412a7",
+      "dataDate": "2026-07-29",
+      "date": "2026-06-29",
+      "title": "TKMS 与 Cohere 签署合同，为 TKMS 集团部署 AI 数据集成平台",
+      "stage": "planned",
+      "stageLabel": "计划中",
+      "customer": "TKMS",
+      "vendor": "TKMS",
+      "industry": "未披露",
+      "useCase": "deploy an AI data integration platform for the TKMS Group - TKMS Group",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "TKMS and Cohere sign a contract to deploy an AI data integration platform for the TKMS Group",
+        "The contract covers the deployment of Cohere’s North platform and related project services for TKMS.",
+        "The project supports the introduction of a group-wide AI data and integration platform and reinforces TKMS’s commitment to secure, responsible AI and Canadian industrial participation.",
+        "Kiel/Toronto, June 29, 2026 – TKMS and Cohere, the world’s leading sovereign AI company, have signed a contract for IT services. The contract marks the next phase of the companies’ collaboration and covers the deployment of Cohere’s North platform and related project services to support the introduction of a group-wide AI data and integration platform at TKMS."
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://tkmsgroup.com/news/article/tkms-and-cohere-sign-a-contract-to-deploy-an-ai-data-integration-platform-for-the-tkms-group",
+      "entityIds": [
+        "EN-dc03dbf371f9732e",
+        "EN-72e8088a05b38ae3"
+      ]
+    }
+  ],
+  "hardware": []
+}
