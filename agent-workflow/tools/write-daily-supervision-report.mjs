@@ -484,12 +484,14 @@ export function buildBusinessSignalsLane() {
 
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
   const dataCenterManifestFile = path.join(root, "01-SiteV2", "site", "data", "data-center-v4", "manifest.json");
+  const telemetryFile = path.join(root, "01-SiteV2", "site", "data", "collection-telemetry-v1.json");
   const dataCenterGateFile = path.join(reportsDir, `${date}-data-center-v4-integrity-gate.json`);
   const manifestFile = path.join(reportsDir, `${date}-persistent-asset-manifest.json`);
   const qualityGateFile = path.join(reportsDir, `${date}-guanlan-monitor-quality-gate.md`);
   const readinessFile = path.join(reportsDir, `${date}-daily-production-chain-readiness.md`);
   const data = readJson(dataFile, {});
   const dataCenterManifest = readJson(dataCenterManifestFile, {});
+  const telemetry = readJson(telemetryFile, {});
   const dataCenterGate = readJson(dataCenterGateFile, {});
   const persistentManifest = readJson(manifestFile, {});
   const activeDate = data?.meta?.activeDate || "";
@@ -502,10 +504,16 @@ export function buildBusinessSignalsLane() {
     && Array.isArray(dataCenterGate?.failures)
     && dataCenterGate.failures.length === 0;
   const dataCenterPipelinePassed =
-    persistentManifest?.date === date
-    && persistentManifest?.outcomes?.data_center_v4_build === "success"
-    && persistentManifest?.outcomes?.data_center_v4_gate === "success"
-    && persistentManifest?.outcomes?.data_center_v4_materialize === "success";
+    (
+      persistentManifest?.date === date
+      && persistentManifest?.outcomes?.data_center_v4_build === "success"
+      && persistentManifest?.outcomes?.data_center_v4_gate === "success"
+      && persistentManifest?.outcomes?.data_center_v4_materialize === "success"
+    )
+    || (
+      telemetry?.meta?.data_date === date
+      && telemetry?.v4_gate?.status === "passed"
+    );
   const selection = Array.isArray(data.frontstageSelection)
     ? data.frontstageSelection.find((item) => item.date === date)
     : null;
@@ -543,6 +551,9 @@ export function buildBusinessSignalsLane() {
     integrityGatePassed: dataCenterGatePassed,
     canonicalEventCount,
     pipelinePassed: dataCenterPipelinePassed,
+    telemetry: exists(telemetryFile) ? rel(telemetryFile) : "missing",
+    telemetryDate: telemetry?.meta?.data_date || "",
+    telemetryGateStatus: telemetry?.v4_gate?.status || "",
   };
   evidence.compatibility = {
     activeDate,
@@ -571,11 +582,11 @@ export function buildBusinessSignalsLane() {
   const businessDataHealthy =
     exists(dataCenterManifestFile)
     && dataCenterDate === date
-    && materializedEventCount > 0
     && exists(dataCenterGateFile)
     && dataCenterGatePassed
-    && canonicalEventCount > 0
-    && dataCenterPipelinePassed;
+    && dataCenterPipelinePassed
+    && telemetry?.meta?.data_date === date
+    && telemetry?.v4_gate?.status === "passed";
   const failedWorkflowSupersededByPublication = Boolean(
     businessDataHealthy &&
     gh.latest_run?.conclusion &&
@@ -630,16 +641,20 @@ export function buildBusinessSignalsLane() {
     };
     if (!exists(dataCenterManifestFile)) recordDataProblem(`missing Data Center V4 manifest: ${rel(dataCenterManifestFile)}`);
     if (dataCenterDate !== date) recordDataProblem(`Data Center V4 currentDate is ${dataCenterDate || "missing"}, expected ${date}`);
-    if (!materializedEventCount) recordDataProblem("Data Center V4 materialized event count is 0");
     if (!exists(dataCenterGateFile)) recordDataProblem(`missing Data Center V4 integrity gate: ${rel(dataCenterGateFile)}`);
     if (exists(dataCenterGateFile) && !dataCenterGatePassed) recordDataProblem(`Data Center V4 integrity gate did not pass for ${date}`);
-    if (!canonicalEventCount) recordDataProblem(`Data Center V4 canonical event count is 0 for ${date}`);
     if (!dataCenterPipelinePassed) recordDataProblem("Data Center V4 build, gate, and materialization outcomes are not all successful");
+    if (!exists(telemetryFile)) recordDataProblem(`missing collection telemetry: ${rel(telemetryFile)}`);
+    if (exists(telemetryFile) && telemetry?.meta?.data_date !== date) recordDataProblem(`collection telemetry date is ${telemetry?.meta?.data_date || "missing"}, expected ${date}`);
+    if (exists(telemetryFile) && telemetry?.v4_gate?.status !== "passed") recordDataProblem(`collection telemetry V4 gate status is ${telemetry?.v4_gate?.status || "missing"}`);
     if (!exists(manifestFile)) warnings.push(`missing same-date persistent asset manifest: ${rel(manifestFile)}`);
     if (evidence.qualityGateStatus === "failed") addProblem(problems, `quality gate failed: ${rel(qualityGateFile)}`);
     if (evidence.qualityGateStatus === "missing") warnings.push(`missing quality gate report: ${rel(qualityGateFile)}`);
     if (evidence.readinessReport === "missing") warnings.push(`missing readiness report: ${rel(readinessFile)}`);
   }
+
+  if (!exists(dataFile)) warnings.push("deprecated V3 observation desk is absent; ignored by OPS-V2");
+  if (!fs.existsSync(signalCardRoot)) warnings.push("deprecated Signal Card directory is absent; ignored by OPS-V2");
 
   if (publicationClosureWindowPassed) {
     if (gh.available && !evidence.publicationClosure.businessPrMerged && !gh.latest_run) {

@@ -54,7 +54,9 @@ for (const id of [
   for (const field of ["status", "module", "interface", "implementation", "replacement"]) {
     if (!String(asset[field] || "").trim()) problems.push(`${id} is missing ${field}`);
   }
-  if (!asset.current_consumers?.length) problems.push(`${id} has no named current consumers`);
+  if (!asset.current_consumers?.length && asset.status !== "deprecated_non_blocking") {
+    problems.push(`${id} has no named current consumers`);
+  }
   if (!asset.exit_conditions?.length) problems.push(`${id} has no exit conditions`);
 }
 

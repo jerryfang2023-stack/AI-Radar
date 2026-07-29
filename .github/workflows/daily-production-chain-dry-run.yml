@@ -251,15 +251,21 @@ jobs:
             --skip-editorial=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-business-frontstage-gate.log"
 
-      - name: Build operations data after frontstage gate
+      - name: Build operations data after V4 materialization
         id: operations-data
-        if: steps.business-frontstage-gate.outcome == 'success'
+        if: always() && steps.data-center-v4-materialize.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
           set -o pipefail
+          node agent-workflow/tools/build-collection-telemetry-v1.mjs \
+            --date="${RUN_DATE}" \
+            --opportunity="${{ steps.opportunity-map-v4.outcome }}" \
+            --publication=waiting \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-collection-telemetry.log"
           node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-operations-data.log"
+          node agent-workflow/tools/build-ops-console-data.mjs
 
       - name: Upload full-chain dry-run artifacts
         if: always()

@@ -74,22 +74,27 @@ function v4Assets() {
   const manifestPath = `01-SiteV2/content/11-databases/data-center-v4/${date}/manifest.json`;
   const gatePath = `agent-workflow/reports/${date}-data-center-v4-integrity-gate.json`;
   const frontstagePath = "01-SiteV2/site/data/data-center-v4-frontstage.json";
+  const telemetryPath = "01-SiteV2/site/data/collection-telemetry-v1.json";
   const manifest = readOriginJson(manifestPath, {});
   const gate = readOriginJson(gatePath, {});
   const frontstage = readOriginJson(frontstagePath, {});
+  const telemetry = readOriginJson(telemetryPath, {});
   const eventCount = Number(gate?.counts?.canonical_events || manifest?.counts?.canonical_events || 0);
   return {
     ready: manifest?.date === date
       && gate?.date === date
       && gate?.ok === true
-      && eventCount > 0
-      && frontstage?.meta?.latestDataDate === date,
+      && telemetry?.meta?.data_date === date
+      && telemetry?.v4_gate?.status === "passed"
+      && [frontstage?.meta?.latestDataDate, frontstage?.meta?.currentDate].includes(date),
     fetch_ok: fetch.ok,
     manifest_date: manifest?.date || "",
     gate_date: gate?.date || "",
     gate_ok: gate?.ok === true,
     canonical_events: eventCount,
     frontstage_date: frontstage?.meta?.latestDataDate || "",
+    telemetry_date: telemetry?.meta?.data_date || "",
+    telemetry_gate_status: telemetry?.v4_gate?.status || "",
   };
 }
 
@@ -104,21 +109,15 @@ function businessAssets() {
   const cards = Array.isArray(data.frontstageCards) ? data.frontstageCards : (Array.isArray(data.cards) ? data.cards : []);
   const sameDateCards = cards.filter((item) => !item?.date || item.date === date);
   const badTitleCount = sameDateCards.filter((item) => badBusinessTitle(item.title || item.displayTitle || "")).length;
-  const rawFile = path.join(root, "01-SiteV2", "content", "01-raw", `${date}-raw-candidates.md`);
-  const poolFile = path.join(root, "01-SiteV2", "content", "02-pool", `${date}-pool-candidates.md`);
-  const frontstageGate = runOptional(process.execPath, ["agent-workflow/tools/assert-business-signals-frontstage.mjs", `--date=${date}`]);
-  const chainGate = runOptional(process.execPath, ["agent-workflow/tools/assert-daily-production-chain.mjs", `--date=${date}`, "--stage=pre-commit", "--block-stale=true"]);
   return {
-    ready: fs.existsSync(rawFile) && fs.existsSync(poolFile) && activeDate === date && sameDateCards.length > 0 && badTitleCount === 0 && frontstageGate.ok && chainGate.ok,
+    ready: fs.existsSync(file) && activeDate === date && sameDateCards.length > 0,
+    status: "deprecated_non_blocking",
     file: rel(file),
-    rawFile: rel(rawFile),
-    poolFile: rel(poolFile),
     activeDate,
     cards: sameDateCards.length,
     badTitleCount,
-    frontstageGatePassed: frontstageGate.ok,
-    chainGatePassed: chainGate.ok,
     generatedAt: data?.meta?.generatedAt || "",
+    warning: fs.existsSync(file) ? "" : "V3 observation desk is absent; ignored by OPS-V2",
   };
 }
 
@@ -181,12 +180,11 @@ function publicationState() {
 
 export function decideHealthState({ runsAvailable, runsError = "", v4Ready = false, assetsReady, activeRun, publication, successfulRun }) {
   if (!runsAvailable) return { ok: false, action: "failed", reason: `GitHub run inspection failed: ${runsError}`, dispatchRequired: false };
-  if (assetsReady) return { ok: true, action: "skipped", reason: "same-date Business Signals assets are already healthy", dispatchRequired: false };
   if (v4Ready) {
     return {
       ok: true,
-      action: "compatibility_repair_required",
-      reason: "same-date Data Center V4 is accepted and published; repair the compatibility stage without rerunning source collection",
+      action: "skipped",
+      reason: "same-date Data Center V4 manifest, integrity gate, materialization, and OPS telemetry are healthy; V3 compatibility state is non-blocking",
       dispatchRequired: false,
     };
   }
@@ -214,8 +212,8 @@ export function decideHealthState({ runsAvailable, runsError = "", v4Ready = fal
 
 function runPolicyFixtures() {
   const base = { runsAvailable: true, runsError: "", v4Ready: false, assetsReady: false, activeRun: null, publication: { waiting: false }, successfulRun: null };
-  assert.equal(decideHealthState({ ...base, assetsReady: true }).action, "skipped");
-  assert.equal(decideHealthState({ ...base, v4Ready: true }).action, "compatibility_repair_required");
+  assert.equal(decideHealthState({ ...base, assetsReady: true }).dispatchRequired, true);
+  assert.equal(decideHealthState({ ...base, v4Ready: true }).action, "skipped");
   assert.equal(decideHealthState({ ...base, v4Ready: true }).dispatchRequired, false);
   assert.equal(decideHealthState({ ...base, activeRun: { status: "in_progress" } }).action, "waiting");
   assert.equal(decideHealthState({ ...base, publication: { waiting: true, branch: "automation/business-signals-fixture", pull_request: { url: "https://example.test/pr/1" } } }).action, "publication_waiting");

@@ -10,7 +10,6 @@
       "interface": "Raw and Pool Markdown, accepted Signal Card Markdown, compatibility_cards JSONL",
       "implementation": "daily source monitor, evidence QA, Card generator, and Card gates",
       "current_consumers": [
-        "Operations Dashboard source-supply and Card funnel diagnostics",
         "legacy Card-to-event mappings and Obsidian compatibility archives"
       ],
       "replacement": "Keep original source artifacts in V4; move opportunity semantics to a downstream V4 adapter and move supply diagnostics to dedicated collection telemetry.",
@@ -23,13 +22,12 @@
     },
     {
       "id": "v3_data_observation_desk",
-      "status": "retained_private_adapter",
+      "status": "deprecated_non_blocking",
       "module": "V3 data observation desk dataset",
       "interface": "01-SiteV2/site/data/v3-data-observation-desk.json",
       "implementation": "build-v3-data-observation-desk.mjs",
       "current_consumers": [
         "Business Signals compatibility gates",
-        "daily supervision and health diagnostics",
         "legacy light data-lake compatibility materialization"
       ],
       "replacement": "Split each consumer onto V4 canonical tables or dedicated collection telemetry.",
@@ -42,15 +40,11 @@
     },
     {
       "id": "intelligence_graph_index",
-      "status": "retained_private_adapter",
+      "status": "deprecated_non_blocking",
       "module": "Legacy intelligence graph index",
       "interface": "01-SiteV2/site/data/intelligence-graph-index.json",
       "implementation": "buildIntelligenceGraphIndex inside build-v3-data-observation-desk.mjs",
-      "current_consumers": [
-        "internal agent review",
-        "daily supervision compatibility existence checks",
-        "legacy regression gates"
-      ],
+      "current_consumers": [],
       "replacement": "Use ENTITY-V1.0 profiles and RELATION-V2.1 factual relationship indexes.",
       "exit_conditions": [
         "agent review reads V4 entity and relationship indexes",
@@ -66,8 +60,7 @@
       "interface": "relationshipGraph and relationshipDirections inside the V3 desk",
       "implementation": "Card category, subject, and tag-derived graph builders",
       "current_consumers": [
-        "Business Signals compatibility contract",
-        "internal agent review"
+        "Business Signals compatibility contract"
       ],
       "replacement": "RELATION-V2.1 accepted event, Claim, entity, and source-backed relationships.",
       "exit_conditions": [

@@ -247,11 +247,19 @@
     const lanes = $("[data-task-lanes]");
     if (lanes) {
       const items = list(ops.tasks?.lanes);
-      lanes.innerHTML = items.length ? items.map((lane) => {
+      const stages = list(ops.tasks?.stages);
+      const stageCards = stages.map((stage) => {
+        const counts = Object.entries(stage.counts || {})
+          .map(([key, value]) => `<span>${html(key)} ${html(value)}</span>`)
+          .join("");
+        return `<article class="card"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center">${statusBadge(stage.status)}<span class="label">OPS STAGE</span></div><h2 style="margin-top:10px">${html(stage.label || stage.id)}</h2><p>${html(stage.id)}</p><div class="tag-cloud" style="margin-top:12px">${counts || "<span>no metrics</span>"}</div></article>`;
+      }).join("");
+      const laneCards = items.map((lane) => {
         const evidence = list(lane.evidence).map((item) => row(item.label, item.value, Math.min(100, Number(item.value) || 0))).join("");
         const action = list(lane.actions)[0] || "暂无人工动作";
         return `<article class="card"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center">${statusBadge(lane.status)}<span class="label">${html(lane.id)}</span></div><h2 style="margin-top:10px">${html(lane.label)}</h2><p>${html(lane.schedule)}</p><div class="rows">${evidence || row("Evidence", "-", 3)}</div><div class="issue-meta"><span>问题 ${html(lane.problemCount || 0)}</span><span>提醒 ${html(lane.warningCount || 0)}</span><span>${html(action)}</span></div></article>`;
-      }).join("") : `<div class="empty">未读取到任务链路数据。</div>`;
+      }).join("");
+      lanes.innerHTML = stageCards || laneCards ? `${stageCards}${laneCards}` : `<div class="empty">未读取到任务链路数据。</div>`;
     }
     const sync = $("[data-sync-status]");
     if (sync) {
@@ -277,7 +285,7 @@
     dataStatus.classList.add("data-status-list");
     const sources = list(ops.meta?.sources);
     dataStatus.innerHTML = [
-      ["ops-console", ops.meta?.version || "OPS-V1.2.3-content-factory-cleanout"],
+      ["ops-console", ops.meta?.version || "OPS-V2.0.0-v4-telemetry"],
       ["generated", ops.meta?.generatedAt || "-"],
       ["date", ops.meta?.date || "-"],
       ["pipeline", quality.pipelineMeta?.generatedAt || pipeline.meta?.generatedAt || "-"],
