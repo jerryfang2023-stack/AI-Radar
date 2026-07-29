@@ -85,6 +85,7 @@ const redirectPages = [
 for (const file of new Set([...sitePages, ...redirectPages])) expectText(file, expected.site, "current SITE version");
 expectText("01-SiteV2/site/operations-console.html", expected.ops, "current Operations Backend version");
 expectText("01-SiteV2/site/intelligence-map.html", expected.reports);
+expectText("01-SiteV2/site/weekly-ai-business-change-radar.html", expected.reports);
 expectText("01-SiteV2/site/opportunity-map.html", expected.opportunity);
 expectText("01-SiteV2/site/trend-radar.html", expected.trendRadar);
 for (const file of new Set(sitePages)) expectText(file, 'href="trend-radar.html"', "Trend Radar navigation entry");

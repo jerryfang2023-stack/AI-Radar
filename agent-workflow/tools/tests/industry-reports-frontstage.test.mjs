@@ -150,8 +150,19 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   assert.ok(reportPages.length >= 2);
   for (const file of reportPages) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
-    assert.match(html, /SITE-V4\.2\.0-entity-history/u);
-    assert.match(html, /REPORTS-V1\.0\.0-periodic-report-center/u);
+    const isHistoricalSnapshot = /-\d{4}-\d{2}(?:-\d{2})?\.html$/u.test(file);
+    assert.match(
+      html,
+      isHistoricalSnapshot
+        ? /SITE-V4\.2\.0-entity-history/u
+        : /SITE-V4\.3\.0-compatibility-write-disabled/u,
+    );
+    assert.match(
+      html,
+      isHistoricalSnapshot
+        ? /REPORTS-V1\.0\.0-periodic-report-center/u
+        : /REPORTS-V1\.1\.0-lane-independent/u,
+    );
     assert.match(html, /assets\/data-center-v4\.css/u);
     assert.match(html, /class="dc-sidebar"/u);
     assert.match(html, /href="intelligence-map\.html" aria-current="page">行业报告/u);
