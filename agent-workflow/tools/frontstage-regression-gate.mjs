@@ -4,7 +4,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const expectedSiteVersion = "SITE-V4.3.0-compatibility-write-disabled";
+const expectedSiteVersion = "SITE-V4.3.0-compatibility-retired";
 const expectedDataCenterProductVersion = "SITE-V4.2.0-entity-history";
 const expectedOpportunityEvidenceSiteVersion = "SITE-V4.2.0-entity-history";
 const expectedReportsCenterColumnVersion = "REPORTS-V1.1.0-lane-independent";
@@ -294,26 +294,13 @@ function collectUnifiedNavigationIssues() {
 }
 
 function latestContentDate() {
-  const roots = [
-    path.join(root, "01-SiteV2", "content", "01-raw"),
-    path.join(root, "01-SiteV2", "content", "02-pool"),
-    path.join(root, "01-SiteV2", "content", "04-business-signals", "signals"),
-  ];
-  const dates = [];
-  const walk = (dir) => {
-    if (!fs.existsSync(dir)) return;
-    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-      const full = path.join(dir, entry.name);
-      if (entry.isDirectory()) {
-        walk(full);
-        continue;
-      }
-      const match = entry.name.match(/^(20\d{2}-\d{2}-\d{2})/u);
-      if (match) dates.push(match[1]);
-    }
-  };
-  roots.forEach(walk);
-  return dates.sort().at(-1) || "";
+  const dataRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
+  if (!fs.existsSync(dataRoot)) return "";
+  return fs.readdirSync(dataRoot, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory() && /^20\d{2}-\d{2}-\d{2}$/u.test(entry.name))
+    .map((entry) => entry.name)
+    .sort()
+    .at(-1) || "";
 }
 
 function collectIndustryReportsDataIssues() {

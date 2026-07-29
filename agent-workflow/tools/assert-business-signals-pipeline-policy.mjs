@@ -35,8 +35,8 @@ for (const workflow of workflows) {
     && !text.includes("data-center-v4/intake-v1/${{ steps.run-date.outputs.date }}.json")) {
     problems.push(`${workflow} does not persist the structured source intake`);
   }
-  if (!text.includes("--compatibilityWriteDisabled=true")) {
-    problems.push(`${workflow} does not declare compatibility-write-disabled classification`);
+  if (!text.includes("--compatibilityRetired=true")) {
+    problems.push(`${workflow} does not declare compatibility-retired classification`);
   }
 }
 
@@ -71,17 +71,16 @@ if (!builder.includes("loadSourceIntakeEntries")) {
 }
 
 const schema = JSON.parse(read("agent-workflow/product/data-center-v4.schema.json"));
-if ((schema.required || []).includes("compatibility_cards")) {
-  problems.push("compatibility_cards remains required by the V4 schema");
+if ("compatibility_cards" in (schema.properties || {}) || "compatibilityCard" in (schema.$defs || {})) {
+  problems.push("compatibility_cards remains in the retired V4 schema surface");
 }
-const compatibilityProperty = schema.properties?.compatibility_cards || {};
-if (compatibilityProperty.deprecated !== true || compatibilityProperty.readOnly !== true) {
-  problems.push("compatibility_cards is not marked optional, deprecated, and read-only");
+if (/compatibility_cards|compatibilityCardType/u.test(builder)) {
+  problems.push("Data Center V4 builder still emits the retired compatibility projection");
 }
 
 console.log(JSON.stringify({
   ok: problems.length === 0,
-  policy: "SITE-V4.3.0-compatibility-write-disabled",
+  policy: "SITE-V4.3.0-compatibility-retired",
   workflows_checked: workflows.length,
   problems,
 }, null, 2));

@@ -20,7 +20,7 @@ metadata:
 
 Implementation boundary: `guanlan-source-ingestion` defines RAW-V3 truth. This skill remains the current source collector and may not promote its legacy scores or routes into V4.
 
-This skill owns only Business Signals source capture and Raw / Pool persistence. The lane owner is `guanlan-business-signals-monitor`.
+This skill owns commercial-source discovery and immutable source snapshot capture only. Structured intake is handed to `guanlan-source-ingestion`; the V4 lane owner is `guanlan-data-center-supervisor`.
 
 ## Required Reads
 

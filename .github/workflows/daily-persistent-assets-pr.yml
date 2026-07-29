@@ -525,7 +525,6 @@ jobs:
             data-lake/tables/entities.jsonl
             data-lake/tables/entity_mentions.jsonl
             data-lake/tables/canonical_events.jsonl
-            data-lake/tables/compatibility_cards.jsonl
             data-lake/tables/event_sources.jsonl
             data-lake/tables/event_claims.jsonl
             data-lake/tables/event_conflicts.jsonl
@@ -777,7 +776,7 @@ jobs:
             --opportunity="${{ steps.opportunity-map-v4.outcome }}" \
             --trend="${{ steps.trend-radar-projection.outcome }}" \
             --funding="${{ steps.funding-insights.outcome }}" \
-            --compatibilityWriteDisabled=true \
+            --compatibilityRetired=true \
             --operations="${{ steps.operations-data.outcome }}" \
             --freshness="${{ steps.pre-commit-gate.outcome }}" \
             --commit="${{ steps.commit.outcome }}" \

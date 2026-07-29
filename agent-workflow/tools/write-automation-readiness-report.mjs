@@ -33,7 +33,7 @@ fs.writeFileSync(file, [
   `- generated_at: ${new Date().toISOString()}`,
   `- status: ${status}`,
   "- current_chain: structured intake -> V4 factual core -> application projections -> operations -> publication",
-  "- compatibility_write: disabled",
+  "- compatibility_state: retired",
   "- compatibility_archive: read_only",
   "",
   "## Step Readiness",

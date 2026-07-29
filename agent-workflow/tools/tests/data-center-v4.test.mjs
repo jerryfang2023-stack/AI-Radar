@@ -296,10 +296,10 @@ test("public event title is the exact Raw source-title translation", () => {
   assert.equal(bundle.raw_documents[0].title_original, sourceTitle);
   assert.equal(bundle.raw_documents[0].title_zh, translatedTitle);
   assert.equal(bundle.canonical_events[0].display_title_zh, translatedTitle);
-  assert.equal(bundle.compatibility_cards[0].title, translatedTitle);
+  assert.equal("compatibility_cards" in bundle, false);
 });
 
-test("incomplete mixed-language public titles remain canonical but are withheld from public compatibility output", () => {
+test("incomplete mixed-language public titles remain canonical and enter QA", () => {
   const bundle = buildBundle([
     entry(
       "untranslated-product",
@@ -310,7 +310,7 @@ test("incomplete mixed-language public titles remain canonical but are withheld 
 
   assert.equal(bundle.canonical_events.length, 1);
   assert.ok(bundle.canonical_events[0].missing_fields.includes("display_title_zh"));
-  assert.equal(bundle.compatibility_cards.length, 0);
+  assert.equal("compatibility_cards" in bundle, false);
   assert.ok(bundle.qa_queue.some((item) => item.reason === "public_event_title_incomplete"));
   const result = evaluateBundle(bundle, taxonomy);
   assert.equal(result.failures.some((failure) => failure.includes("display_title_zh incomplete")), false);
@@ -528,7 +528,6 @@ test("entity-link repair preserves an accepted bundle while restoring missing or
   const event = bundle.canonical_events[0];
   event.entities = [];
   event.missing_fields = [...new Set([...(event.missing_fields || []), "entities"])];
-  bundle.compatibility_cards[0].missing_fields = [...new Set([...(bundle.compatibility_cards[0].missing_fields || []), "entities"])];
   bundle.entities = [];
   bundle.entity_mentions = [];
   for (const document of bundle.raw_documents) document.entity_mention_ids = [];
@@ -540,7 +539,6 @@ test("entity-link repair preserves an accepted bundle while restoring missing or
   assert.deepEqual(names, new Set(["HCLTech", "Government of Odisha", "Sarvam"]));
   assert.equal(event.entities.length, 3);
   assert.ok(!event.missing_fields.includes("entities"));
-  assert.ok(!bundle.compatibility_cards[0].missing_fields.includes("entities"));
   assert.equal(bundle.manifest.counts.entities, 3);
   assert.equal(bundle.manifest.counts.entity_mentions, 3);
 });
@@ -1013,7 +1011,8 @@ test("generated bundle passes the V4 integrity gate", () => {
     entry("deployment", "Hospital deploys Acme AI workflow", "Hospital deployed Acme AI workflow in production. The system reduced review time by 20%."),
     entry("model", "Example releases multimodal open weights model", "Example released a multimodal model with open weights for on-device use.")
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
-  assert.equal(bundle.manifest.compatibility_write_state, "disabled");
+  assert.equal(bundle.manifest.compatibility_state, "retired");
+  assert.equal("compatibility_cards" in bundle, false);
   assert.equal("legacy_asset_mappings" in bundle, false);
   assert.ok(bundle.raw_documents.every((raw) => raw.body_ref));
   const result = evaluateBundle({
@@ -1024,7 +1023,6 @@ test("generated bundle passes the V4 integrity gate", () => {
     entities: bundle.entities,
     entity_mentions: bundle.entity_mentions,
     canonical_events: bundle.canonical_events,
-    compatibility_cards: bundle.compatibility_cards,
     event_sources: bundle.event_sources,
     event_claims: bundle.event_claims,
     event_conflicts: bundle.event_conflicts,
@@ -1110,7 +1108,6 @@ test("integrity gate blocks a canonical event whose evidence is no longer AI-ind
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
   const raw = bundle.raw_documents[0];
   const claim = bundle.claims[0];
-  const card = bundle.compatibility_cards[0];
   const quote = "Acme launched a billing dashboard for finance teams.";
 
   raw.title_original = "Acme launches billing dashboard";
@@ -1120,8 +1117,6 @@ test("integrity gate blocks a canonical event whose evidence is no longer AI-ind
   claim.source_quote = quote;
   claim.object = "billing dashboard";
   claim.source_span = { raw_id: raw.raw_id, start: 0, end: quote.length };
-  card.title = raw.title_original;
-  card.fact = quote;
   bundle.tag_assertions = [];
 
   const result = evaluateBundle(bundle, taxonomy);
@@ -1283,46 +1278,4 @@ test("Noetra infrastructure sources merge and preserve disclosed chip capacity",
   assert.equal(bundle.hardware_records[0].supplier, "NVIDIA");
   assert.equal(bundle.hardware_records[0].customer, "Noetra");
   assert.equal(bundle.hardware_records[0].source_refs.length, 2);
-});
-
-test("archived legacy Card projection disambiguates physical files and keeps URL-conflicting legacy ids unresolved", () => {
-  const dataRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
-  const projection = JSON.parse(fs.readFileSync(path.join(root, "archive/v3-compat/legacy-mappings/legacy-card-event-mappings.json"), "utf8"));
-  assert.equal(projection.failures.length, 0);
-  assert.equal(projection.summary.card_instances, projection.mappings.length);
-  assert.equal(new Set(projection.mappings.map((item) => item.card_instance_id)).size, projection.mappings.length);
-  const unresolved = projection.mappings.filter((item) => item.mapping_status === "unresolved");
-  assert.equal(projection.summary.unresolved, unresolved.length);
-  assert.ok(unresolved.length > 0, "legacy Cards without a matching source URL must remain unresolved");
-  for (const item of unresolved) {
-    assert.ok(item.source_urls.length > 0);
-    assert.equal(item.raw_ids.length, 0);
-    assert.equal(item.event_ids.length, 0);
-  }
-  assert.ok(projection.summary.raw_only > 0, "legacy Cards without a canonical event must remain explicit");
-
-  const eventIds = new Set();
-  for (const entry of fs.readdirSync(dataRoot, { withFileTypes: true })) {
-    if (!entry.isDirectory() || !/^\d{4}-\d{2}-\d{2}$/u.test(entry.name)) continue;
-    const events = JSON.parse(fs.readFileSync(path.join(dataRoot, entry.name, "canonical-events.json"), "utf8"));
-    for (const event of events) eventIds.add(event.event_id);
-  }
-  for (const item of projection.mappings) for (const eventId of item.event_ids) assert.ok(eventIds.has(eventId), `${eventId} must resolve`);
-});
-
-test("archived legacy Card local Raw links are either valid or explicitly retired", () => {
-  const projection = JSON.parse(fs.readFileSync(path.join(root, "archive/v3-compat/legacy-mappings/legacy-card-event-mappings.json"), "utf8"));
-  for (const item of projection.mappings) {
-    const archivedPath = item.legacy_path.replace(/^01-SiteV2\/knowledge\/01-Signal-Cards/u, "archive/v3-compat/signal-cards");
-    const cardFile = path.join(root, archivedPath.replace(/\//gu, path.sep));
-    const text = fs.readFileSync(cardFile, "utf8");
-    const fm = text.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/u)?.[1] || "";
-    const status = fm.match(/^\s+legacy_source_status:\s*(.+)$/mu)?.[1]?.trim() || "";
-    const paths = [...fm.matchAll(/^\s+(?:raw_archive|raw_json):\s*["']?([^"'\r\n]*)/gmu)].map((match) => match[1].trim()).filter(Boolean);
-    if (!paths.length) {
-      assert.ok(["external_only", "ambiguous_source"].includes(status), `${item.legacy_path} must explain retired local snapshots`);
-      continue;
-    }
-    for (const value of paths) assert.ok(fs.existsSync(path.join(root, value.replace(/\//gu, path.sep))), `${item.legacy_path} links missing ${value}`);
-  }
 });

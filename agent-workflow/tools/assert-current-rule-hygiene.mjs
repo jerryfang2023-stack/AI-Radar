@@ -65,39 +65,6 @@ const retiredAllowlist = new Set([
   "agent-workflow/tools/frontstage-regression-gate.mjs",
 ]);
 
-const rawToCardRuleFiles = [
-  "context/00-current-state.md",
-  "context/05-daily-monitoring.md",
-  "context/06-execution-harness.md",
-  "context/07-v3-intelligence-generation-rules.md",
-  "context/08-v3-3-automation.md",
-  "context/11-hermes-daily-supervision-instructions.md",
-  "context/frontstage-page-contracts.md",
-  ".github/workflows/daily-persistent-assets-pr.yml",
-  ".github/workflows/daily-production-chain-dry-run.yml",
-  "agent-workflow/automation-prompts/guanlan-daily-monitor.md",
-  "agent-workflow/tools/generate-asset-cards-from-pool.mjs",
-  "agent-workflow/skills/skill-registry.md",
-  "agent-workflow/skills/guanlan-raw-pool-card",
-  "agent-workflow/skills/guanlan-business-signals-monitor",
-  "agent-workflow/skills/guanlan-monitor-quality-gate/evals/monitor-quality-gate-evals.md",
-];
-
-const rawToCardForbiddenPatterns = [
-  { pattern: /frontstage-top10-target/u, term: "frontstage-top10-target" },
-  { pattern: /pool_core_supply_release/u, term: "pool_core_supply_release" },
-  { pattern: /all_qualified_core_pool/u, term: "all_qualified_core_pool" },
-  { pattern: /core_pool_not_promoted/u, term: "core_pool_not_promoted" },
-  { pattern: /all qualified Core Pool/iu, term: "all qualified Core Pool" },
-  { pattern: /qualified Core Pool items/iu, term: "qualified Core Pool items" },
-  { pattern: /usable `core_pool`/iu, term: "usable `core_pool`" },
-  { pattern: /`core_pool` must/iu, term: "`core_pool` must" },
-  { pattern: /Core Pool count/iu, term: "Core Pool count" },
-  { pattern: /non-large Core/iu, term: "non-large Core" },
-  { pattern: /Pool\/Core\/Top10/iu, term: "Pool/Core/Top10" },
-  { pattern: /Pool\/Core\/Card/iu, term: "Pool/Core/Card" },
-];
-
 const v4PublicRuleFiles = [
   "context/01-product-map.md",
   "context/version-ledger.md",
@@ -115,10 +82,9 @@ const currentGovernanceRuleFiles = [
   "agent-workflow/tools/write-daily-supervision-report.mjs",
   "agent-workflow/tools/assert-daily-production-chain.mjs",
   "agent-workflow/tools/write-weekly-health-report.mjs",
-  "agent-workflow/skills/guanlan-business-signals-monitor",
   "agent-workflow/skills/guanlan-first-line-viewpoints-monitor",
   "agent-workflow/skills/guanlan-community-intelligence-monitor",
-  "agent-workflow/skills/guanlan-enterprise-ai-fde-monitor",
+  "agent-workflow/skills/guanlan-fde-data-projection",
   "agent-workflow/skills/guanlan-skill-editor",
 ];
 
@@ -155,19 +121,10 @@ const activeRoots = [
   "01-SiteV2/README.md",
   "01-SiteV2/content/README.md",
   "01-SiteV2/knowledge/README.md",
-  "01-SiteV2/knowledge/10-Templates",
   ".github/workflows",
   "agent-workflow/tools",
   "01-SiteV2/site/scripts",
   "01-SiteV2/content/11-databases/source-title-translations.json",
-  "01-SiteV2/site/data/v3-data-observation-desk.json",
-  "01-SiteV2/site/data/intelligence-graph-index.json",
-];
-
-const currentCardRoots = [
-  "01-SiteV2/knowledge/01-Signal-Cards/funding",
-  "01-SiteV2/knowledge/01-Signal-Cards/case",
-  "01-SiteV2/knowledge/01-Signal-Cards/product-service",
 ];
 
 const exts = new Set([".md", ".mjs", ".js", ".json", ".yml", ".yaml", ".toml", ".ps1"]);
@@ -189,19 +146,6 @@ function filesUnder(target) {
     else if (exts.has(path.extname(entry.name))) out.push(child);
   }
   return out;
-}
-
-function currentCardFiles() {
-  return currentCardRoots.flatMap((dir) => filesUnder(dir))
-    .filter((file) => path.basename(file).startsWith(`${date}--signal--`));
-}
-
-function currentRawPoolFiles() {
-  return [
-    `01-SiteV2/content/01-raw/${date}-raw-candidates.md`,
-    `01-SiteV2/content/02-pool/${date}-pool-candidates.md`,
-    `01-SiteV2/content/01-raw/originals/${date}`,
-  ].flatMap(filesUnder);
 }
 
 function scanFile(file, terms, kind) {
@@ -274,20 +218,13 @@ function isProtectiveRetiredLine(line) {
 }
 
 function main() {
-  const activeFiles = [...new Set([...activeRoots.flatMap(filesUnder), ...currentCardFiles()])];
-  const rawToCardRuleScanFiles = [...new Set(rawToCardRuleFiles.flatMap(filesUnder))];
-  const dataFiles = [...new Set(currentRawPoolFiles())];
+  const activeFiles = [...new Set(activeRoots.flatMap(filesUnder))];
+  const dataFiles = filesUnder(`01-SiteV2/content/11-databases/data-center-v4/${date}`);
   const retiredHits = activeFiles
     .filter((file) => !retiredAllowlist.has(rel(file)))
     .flatMap((file) => scanFile(file, retiredTerms, "retired_term"));
   const retiredDataHits = dataFiles.flatMap((file) => scanFile(file, retiredDataTerms, "retired_data_term"));
   const mojibakeHits = [...activeFiles, ...dataFiles].flatMap((file) => scanFile(file, mojibakeMarkers, "text_contamination"));
-  const rawToCardRuleHits = rawToCardRuleScanFiles
-    .filter((file) => !retiredAllowlist.has(rel(file)))
-    .flatMap((file) => scanFilePatterns(file, rawToCardForbiddenPatterns, "raw_to_card_rule_conflict"));
-  const workflowHits = rawToCardRuleScanFiles
-    .filter((file) => [".yml", ".yaml"].includes(path.extname(file)))
-    .flatMap(workflowRawToCardHits);
   const v4PublicRuleHits = v4PublicRuleFiles.flatMap(filesUnder)
     .flatMap((file) => scanFilePatterns(file, v4PublicForbiddenPatterns, "v4_public_rule_conflict"));
   const governanceRuleScanFiles = [...new Set(currentGovernanceRuleFiles.flatMap(filesUnder))];
@@ -300,8 +237,6 @@ function main() {
     ...retiredHits,
     ...retiredDataHits,
     ...mojibakeHits,
-    ...rawToCardRuleHits,
-    ...workflowHits,
     ...v4PublicRuleHits,
     ...governanceRuleHits,
     ...frontstageIntegrationHits,
@@ -309,7 +244,6 @@ function main() {
   const scannedFiles = new Set([
     ...activeFiles,
     ...dataFiles,
-    ...rawToCardRuleScanFiles,
     ...v4PublicRuleFiles.flatMap(filesUnder),
     ...governanceRuleScanFiles,
     ...frontstageIntegrationScanFiles,

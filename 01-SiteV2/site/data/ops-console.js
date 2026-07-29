@@ -1447,7 +1447,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "SITE",
         "label": "Main website",
-        "value": "SITE-V4.3.0-compatibility-write-disabled"
+        "value": "SITE-V4.3.0-compatibility-retired"
       },
       {
         "key": "OPS",

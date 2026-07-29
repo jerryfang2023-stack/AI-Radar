@@ -6,7 +6,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V4.3.0 compatibility write disabled; the unified V4 shell, stable entities, factual timelines, and evidence-backed relations remain first-class data services. V3 Card/desk/graph assets are read-only history under `archive/v3-compat/` and have no active consumers.
+- Current stage: SITE-V4.3.0 compatibility retired; the unified V4 shell, stable entities, factual timelines, and evidence-backed relations remain first-class data services. V3 Card/desk/graph interfaces and payloads are absent from the working tree and recoverable only through explicit Git history.
 - Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/opportunity-map.html`, and the V4 report detail pages.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
@@ -38,7 +38,7 @@ Daily core production must preserve source artifacts and build exact-span Claims
 - funding;
 - case / vertical deployment.
 
-The core does not make decisions, judge value or opportunity, recommend actions, or educate readers. Card, trend, opportunity, and report objects are downstream or frozen-page compatibility outputs and cannot enter V4 canonical tables.
+The core does not make decisions, judge value or opportunity, recommend actions, or educate readers. Trend, opportunity, funding-insight, and report objects are downstream application outputs and cannot enter V4 canonical tables.
 
 First-line viewpoints are a separate builders column. They are useful for reading public operator / builder viewpoints, but they are not business-signal facts.
 
@@ -107,29 +107,29 @@ Rules:
 - The V4 sidebar and Data Center / Application Center page plan are the only current public page contract.
 - Targeted company, product, funding, and deployment backfill is an operational discovery queue. Search results remain leads until original-source capture, exact-span Claim extraction, and the responsible V4 gate pass.
 
-### Historical V3 Archive Tools
+### Historical V3 Recovery
 
 Read:
 
 1. `context/07-v3-intelligence-generation-rules.md`
 2. `context/05-daily-monitoring.md`
 3. `context/06-execution-harness.md`
-4. relevant script or data file
+4. the explicit historical Git commit or tag requested by the user
 
 Archive rules:
 
 - Do not create new Raw candidate Markdown, Pool candidate Markdown, Signal Cards, V3 desk JSON, graph JSON, or legacy mappings.
-- Historical V3 assets are read-only under `archive/v3-compat/`.
+- Historical V3 payloads are not present in the working tree. Recovery must use an explicit Git ref in an isolated temporary worktree.
 - Current production uses immutable original snapshots plus `SOURCE-INTAKE-V1`.
-- Explicit historical tools must use archive paths and cannot be discovered by production.
+- Historical recovery must never restore files into current production paths or make them discoverable by automation.
 
 ### Relationship Graph / Historical Trend Candidate Audit
 
 Read:
 
 1. `context/07-v3-intelligence-generation-rules.md`
-2. archived Card files under `archive/v3-compat/`
-3. related trend script only when the user explicitly requests a historical/manual trend review
+2. the explicit Git ref containing the historical Cards
+3. related historical tool only when the user explicitly requests a historical/manual review
 
 Rules:
 
@@ -142,11 +142,10 @@ Rules:
 
 Read:
 
-1. `agent-workflow/skills/guanlan-enterprise-ai-fde-monitor/SKILL.md`
-2. `context/07-v3-intelligence-generation-rules.md`
-3. `context/05-daily-monitoring.md`
-4. current V4 FDE generator and integrity gate
-5. `agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs`
+1. `agent-workflow/skills/guanlan-fde-data-projection/SKILL.md`
+2. `context/12-data-center-v4.md`
+3. current V4 FDE generator and integrity gate
+4. `agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs`
 
 Rules:
 

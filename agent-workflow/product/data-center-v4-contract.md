@@ -27,7 +27,7 @@ Daily canonical bundles are written to:
 01-SiteV2/content/11-databases/data-center-v4/<YYYY-MM-DD>/
 ```
 
-Every bundle contains source artifacts, raw documents, claims, entities, entity mentions, canonical events, event-source and event-claim links, conflicts, factual relationships, technical tag assertions, structured facet assertions, FDE records, hardware records, a QA queue, legacy mappings, and a manifest. During the V4.3 observation release, judgment-free `compatibility_cards` may be emitted as an optional, read-only, deprecated projection.
+Every bundle contains source artifacts, raw documents, claims, entities, entity mentions, canonical events, event-source and event-claim links, conflicts, factual relationships, technical tag assertions, structured facet assertions, FDE records, hardware records, a QA queue, and a manifest. V3 Cards, legacy mappings, and `compatibility_cards` are not part of the V4 interface.
 
 The public interface is defined by `data-center-v4.schema.json`. Stable identifiers are `source_artifact_id`, `raw_id`, `claim_id`, `entity_id`, `event_id`, and `tag_id`.
 

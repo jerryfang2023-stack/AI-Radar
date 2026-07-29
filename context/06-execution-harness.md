@@ -34,14 +34,13 @@ records.
 
 ## Compatibility boundary
 
-- `archive/v3-compat/` is read-only and excluded from production discovery and
-  GitHub Pages.
+- V3 payloads are absent from the working tree; historical recovery requires
+  an explicit Git ref in an isolated worktree.
 - No daily or dry-run workflow may invoke Card generation, Pool-to-Card,
   editorial Card gates, the V3 desk builder, the old graph builder, or legacy
   mappings.
-- `compatibility_cards` is optional/read-only/deprecated for this observation
-  release. Do not add consumers.
-- Dormant V3 implementations remain only until Phase 4 deletion.
+- `compatibility_cards` and dormant V3 implementations are deleted. Any return
+  of those interfaces is a release-blocking regression.
 
 ## Required validation
 

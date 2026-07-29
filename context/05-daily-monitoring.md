@@ -8,7 +8,7 @@ priority: historical
 # V3 Daily Monitoring — Retired Archive
 
 The Raw / Pool / Signal Card production route stopped writing in
-`SITE-V4.3.0-compatibility-write-disabled`.
+`SITE-V4.3.0-compatibility-retired`.
 
 Current daily collection is governed by `context/12-data-center-v4.md`:
 
@@ -33,10 +33,10 @@ Operational rules:
 - First-Line Viewpoints (`O`) and Community Intelligence (`C`) stay independent
   from factual events (`E`). Operations reports (`OPS`) stay outside all public
   evidence.
-- Historical V3 artifacts are read-only under `archive/v3-compat/`.
-- Historical recovery requires an explicit manual tool and must never be
-  auto-discovered by production.
+- Historical V3 artifacts are absent from the working tree.
+- Historical recovery requires an explicit Git ref in an isolated worktree and
+  must never be auto-discovered by production.
 
-The optional read-only `compatibility_cards` projection is deprecated during
-the observation release. Phase 4 removes that interface after seven consecutive
-days and one weekly cycle pass without compatibility fallback.
+Phase 4 removed `compatibility_cards`, the historical payload archive, dormant
+V3 producers, and compatibility-only gates. Git history is the only explicit
+recovery route.

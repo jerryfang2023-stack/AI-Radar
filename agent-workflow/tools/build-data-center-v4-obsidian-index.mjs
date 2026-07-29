@@ -36,7 +36,7 @@ function main() {
     "status: current",
     `updated_at: ${current.manifest.generated_at}`,
     `current_date: ${current.date}`,
-    "product_version: SITE-V4.3.0-compatibility-write-disabled",
+    "product_version: SITE-V4.3.0-compatibility-retired",
     "raw_version: RAW-V3.0",
     "event_version: EVENT-V1.1",
     "---",
@@ -62,19 +62,18 @@ function main() {
     "",
     "## Daily bundles",
     "",
-    "| date | Raw | Claims | Events | Optional compatibility | QA | files |",
-    "|---|---:|---:|---:|---:|---:|---|",
+    "| date | Raw | Claims | Events | QA | files |",
+    "|---|---:|---:|---:|---:|---|",
     ...days.slice().reverse().map((day) => {
       const counts = day.manifest.counts;
-      return `| ${day.date} | ${counts.raw_documents} | ${counts.claims} | ${counts.canonical_events} | ${counts.compatibility_cards || 0} | ${counts.qa_queue} | [[${day.date}/raw-documents.json|Raw]] · [[${day.date}/canonical-events.json|Events]] · [[${day.date}/qa-queue.json|QA]] |`;
+      return `| ${day.date} | ${counts.raw_documents} | ${counts.claims} | ${counts.canonical_events} | ${counts.qa_queue} | [[${day.date}/raw-documents.json|Raw]] · [[${day.date}/canonical-events.json|Events]] · [[${day.date}/qa-queue.json|QA]] |`;
     }),
     "",
     "## Object boundaries",
     "",
     "- RawDocument：原始材料的结构化保存，不代表已经形成商业事件。",
     "- CanonicalEvent：通过 Claim 与 SourceArtifact 引用形成的 V4 事实事件。",
-    "- compatibility_cards：由 CanonicalEvent 生成的可选只读投影，不是生产输入。",
-    "- 历史兼容资产不进入当前索引或同步路径。",
+    "- V3 compatibility Cards、desk 与旧 graph 已彻底退役，不再生成、同步或建立索引。",
     "",
   ];
   fs.writeFileSync(output, lines.join("\n"), "utf8");

@@ -13,14 +13,12 @@ const reportMarkdownPath = path.join(root, "agent-workflow", "reports", "model-r
 const cases = [
   ["follow-builders", "follow-builders", "wavesight-boundary-evals.md", "A builder post is used directly as the factual basis for a Business Signal without separate original-source capture.", "fail"],
   ["hardware-projection", "guanlan-ai-hardware-data-projection", "hardware-projection-evals.md", "A lawsuit is projected as a hardware record only because its body mentions chips and servers.", "fail"],
-  ["business-signals", "guanlan-business-signals-monitor", "business-signals-monitor-evals.md", "Minimum evidence supply and downstream gates pass, but release is blocked only because Raw is below 150.", "fail"],
   ["code-rule-audit", "guanlan-code-rule-auditor", "code-rule-auditor-evals.md", "A retired Top10 gate appears only in a historical closeout and is reported as an active production defect without reachability proof.", "fail"],
   ["community-intelligence", "guanlan-community-intelligence-monitor", "community-intelligence-monitor-evals.md", "A GitHub Action is required to perform logged-in local Community Intelligence collection.", "fail"],
   ["daily-monitor", "guanlan-daily-monitor", "daily-monitor-evals.md", "A Raw-volume diagnostic shortfall triggers a second full provider collection cycle.", "fail"],
   ["daily-monitor-qc", "guanlan-daily-monitor-qc", "daily-monitor-qc-evals.md", "Semantic QC runs only for an anomaly or explicit audit and is not a mandatory publication gate.", "pass"],
   ["data-center-supervisor", "guanlan-data-center-supervisor", "data-center-supervisor-evals.md", "The daily chain produces Claims and canonical events with source references, leaves missing values explicit, and contains no importance or opportunity fields.", "pass"],
   ["data-integrity", "guanlan-data-integrity-gate", "data-integrity-gate-evals.md", "An FDE record points directly to a SourceArtifact and has no accepted event reference.", "fail"],
-  ["enterprise-fde", "guanlan-enterprise-ai-fde-monitor", "enterprise-ai-fde-monitor-evals.md", "FDE publication is made dependent on introducing a fourth formal Signal Card type.", "fail"],
   ["event-normalizer", "guanlan-event-normalizer", "event-normalizer-evals.md", "Conflicting source claims remain distinct and a disputed event state is preserved rather than overwritten.", "pass"],
   ["fde-projection", "guanlan-fde-data-projection", "fde-projection-evals.md", "A source reports no outcome, so reported_outcomes remains empty and the missing outcome is listed under undisclosed_fields.", "pass"],
   ["first-line-viewpoints", "guanlan-first-line-viewpoints-monitor", "first-line-viewpoints-monitor-evals.md", "First-Line Viewpoints work routes through its lane owner before the generic follow-builders capability.", "pass"],
@@ -28,11 +26,9 @@ const cases = [
   ["monthly-report", "guanlan-monthly-business-structure-report", "monthly-business-structure-report-evals.md", "A downstream monthly report states one evidence-bounded structural judgment and keeps the date in metadata.", "pass"],
   ["monthly-page", "guanlan-monthly-report-page-generator", "monthly-report-page-generator-evals.md", "The page renders the complete accepted monthly Markdown with readable hierarchy and preserves the content-writing Skill as judgment owner.", "pass"],
   ["opportunity-radar", "guanlan-opportunity-radar-updater", "opportunity-radar-updater-evals.md", "The map uses a 7-day window, 30-day baseline, source-backed fields and human-reviewed Direction Cards.", "pass"],
-  ["raw-pool-card", "guanlan-raw-pool-card", "raw-pool-card-evals.md", "An explicitly requested compatibility run emits only product_service, funding and case Cards and does not treat them as V4 canonical data.", "pass"],
   ["skill-editor", "guanlan-skill-editor", "skill-editor-evals.md", "A project Skill is edited and validated, but its configured compatibility mirror is deliberately left out of sync.", "fail"],
   ["source-ingestion", "guanlan-source-ingestion", "source-ingestion-evals.md", "A search-result snippet is accepted as sufficient evidence to close a funding fact gap.", "fail"],
   ["taxonomy", "guanlan-taxonomy-governor", "taxonomy-governor-evals.md", "A TagAssertion records tag_id, exact Claim span, method, confidence and taxonomy version and does not affect eligibility.", "pass"],
-  ["trend-candidate", "guanlan-trend-candidate-writer", "trend-candidate-evals.md", "Without an explicit historical or manual review request, the daily pipeline creates a trend candidate from one company announcement.", "fail"],
   ["trend-radar", "guanlan-trend-radar-updater", "trend-radar-updater-evals.md", "A factual Trend Radar payload includes an opportunity score and recommendation field.", "fail"],
   ["typography", "guanlan-typography-qc", "typography-qc-evals.md", "A retired V3 daily-observation page is used as the current typography baseline.", "fail"],
   ["weekly-report", "guanlan-weekly-business-change-radar", "weekly-business-change-radar-evals.md", "A weekly report uses exact counts and each trend chain cites at least two named Signals and one named Opinion.", "pass"],
@@ -53,7 +49,7 @@ const profiles = [
 
 function validateManifest() {
   const errors = [];
-  if (cases.length !== 26) errors.push(`expected 26 cases, found ${cases.length}`);
+  if (cases.length !== 22) errors.push(`expected 22 cases, found ${cases.length}`);
   if (new Set(cases.map((item) => item.id)).size !== cases.length) errors.push("case ids must be unique");
   if (new Set(cases.map((item) => item.skill)).size !== cases.length) errors.push("each governed Skill must appear once");
   for (const item of cases) {

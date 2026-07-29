@@ -48,10 +48,9 @@ asset is absent.
 
 ## Archive and Pages
 
-`archive/v3-compat/` is read-only and outside the Pages source tree. Production
-cannot discover it. `compatibility_cards` remains optional/read-only/deprecated
-for this observation release; Phase 4 removes it after seven days and one
-weekly cycle pass.
+V3 payload archives and `compatibility_cards` are absent from the working tree.
+Production cannot discover them; explicit historical recovery uses Git history
+in an isolated temporary worktree.
 
 Required policy gates:
 

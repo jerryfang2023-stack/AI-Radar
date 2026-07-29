@@ -13,6 +13,14 @@ const retiredCommands = [
   "assert-business-signals-frontstage.mjs",
   "assert-business-signals-compatibility-contract.mjs",
   "build-legacy-card-event-mappings.mjs",
+  "repair-legacy-signal-card-links.mjs",
+  "assert-v3-source-first-frontstage.mjs",
+  "assert-tag-taxonomy-v3.mjs",
+  "check-tags.mjs",
+  "evidence-gate-eval.mjs",
+  "run-trend-candidate-decision.mjs",
+  "backfill-opportunity-signals.mjs",
+  "audit-tags.mjs",
 ];
 
 const retiredActivePaths = [
@@ -23,6 +31,11 @@ const retiredActivePaths = [
   "01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.md",
   "01-SiteV2/site/data/site-content.json",
   "01-SiteV2/site/data/site-content.js",
+  "01-SiteV2/content/02-pool",
+  "01-SiteV2/content/03-daily-observation",
+  "01-SiteV2/content/04-business-signals",
+  "01-SiteV2/content/06-asset-candidates",
+  "01-SiteV2/knowledge/03-Asset-Candidates",
 ];
 const retiredBasenames = [
   "01-Signal-Cards",
@@ -34,8 +47,7 @@ const retiredBasenames = [
   "site-content.js",
 ];
 
-const requiredArchivePaths = [
-  "archive/v3-compat/README.md",
+const retiredArchivePayloads = [
   "archive/v3-compat/signal-cards",
   "archive/v3-compat/frontstage/v3-data-observation-desk.json",
   "archive/v3-compat/frontstage/intelligence-graph-index.json",
@@ -71,8 +83,14 @@ function filesUnder(relative, extensions) {
 for (const relative of retiredActivePaths) {
   if (fs.existsSync(path.join(root, relative))) problems.push(`retired asset remains active: ${relative}`);
 }
-for (const relative of requiredArchivePaths) {
-  if (!fs.existsSync(path.join(root, relative))) problems.push(`retired asset is not in the read-only archive: ${relative}`);
+for (const relative of retiredArchivePayloads) {
+  if (fs.existsSync(path.join(root, relative))) problems.push(`retired V3 payload remains in the working tree: ${relative}`);
+}
+for (const command of retiredCommands) {
+  const matches = filesUnder("agent-workflow/tools", new Set([".mjs", ".js"]))
+    .concat(filesUnder("01-SiteV2/site/scripts", new Set([".mjs", ".js"])))
+    .filter((file) => path.basename(file) === command);
+  if (matches.length) problems.push(`retired producer implementation remains: ${command}`);
 }
 
 const workflowFiles = filesUnder(".github/workflows", new Set([".yml", ".yaml"]));
@@ -142,16 +160,15 @@ const schema = JSON.parse(read("agent-workflow/product/data-center-v4.schema.jso
 if ((schema.required || []).includes("compatibility_cards")) {
   problems.push("compatibility_cards remains required by the V4 schema");
 }
-const compatibility = schema.properties?.compatibility_cards;
-if (!compatibility?.deprecated || !compatibility?.readOnly) {
-  problems.push("compatibility_cards must remain read-only and deprecated during the observation release");
+if ("compatibility_cards" in (schema.properties || {}) || "compatibilityCard" in (schema.$defs || {})) {
+  problems.push("compatibility_cards remains in the V4 schema");
 }
 
 const result = {
   ok: problems.length === 0,
-  schema_version: "NO-ACTIVE-V3-COMPAT-V1.0",
+  schema_version: "NO-ACTIVE-V3-COMPAT-V2.0",
   active_v3_consumers: problems.filter((problem) => problem.includes("references retired") || problem.includes("invokes retired")).length,
-  archived_assets_checked: requiredArchivePaths.length,
+  retired_payloads_checked: retiredArchivePayloads.length,
   problems,
 };
 
