@@ -3,7 +3,7 @@ name: guanlan-data-center-supervisor
 description: Use when supervising, running, repairing, or changing the WaveSight Data Center V4 factual data lane. Covers SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, ENTITY-V1 history profiles, RELATION-V2 factual links, BACKFILL-V1 targeted historical collection, TAG-V4 assertions, FDE and hardware projections, database materialization, historical reprojection, and integrity gates. Do not use for page design, opportunity judgment, trend judgment, recommendations, or legacy Card editorial work.
 metadata:
   guanlan:
-    version: "1.2.1"
+    version: "1.2.2"
     lane: "Data Center"
     status: "current lane owner"
     order: 5
@@ -40,7 +40,7 @@ Read `agent-workflow/product/data-center-v4-contract.md`, the relevant schema, t
 - LLM use is limited to evidence-linked extraction, translation with the original preserved, and ambiguity candidates.
 - DeepSeek is the only production model provider. OpenAI-compatible and generic public machine-translation fallbacks are not permitted.
 - English source titles are translated at Raw ingestion with DeepSeek, source-hash and model provenance. Flash handles titles; Pro is the quality retry. Missing credentials or an unresolved title blocks publication.
-- Historical repair must update Raw first, then regenerate canonical events and compatibility Cards. The public title must exactly equal the approved Raw `title_zh` (or an already-Chinese original), never an event-field summary.
+- Historical repair must update the source-backed RawDocument first, then regenerate Claims, Entities, CanonicalEvents, and factual projections. The public title must exactly equal the approved RawDocument `title_zh` (or an already-Chinese original), never an event-field summary.
 - Formal relationships require verified endpoints, one accepted event, Claim references, SourceArtifact references, and an explicit supported action. Entity or Tag co-occurrence is insufficient.
 - Historical reprojection aggregates accepted facts only; it cannot manufacture missing dates or use legacy page copy as evidence.
 - A recurring company/product sweep may record `no_findings`; it cannot infer that no event occurred. Funding/deployment tasks require original-source capture and exact-span Claims before canonical repair.

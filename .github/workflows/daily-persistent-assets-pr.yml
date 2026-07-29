@@ -8,7 +8,7 @@ on:
         required: false
         type: string
       pass_score:
-        description: "Daily Monitor diagnostic score reference. Evidence-supply, Card/editorial and frontstage gates decide release."
+        description: "Source-intake diagnostic score reference. V4 integrity, application projection, and frontstage gates decide release."
         required: false
         default: "85"
         type: string
@@ -222,9 +222,9 @@ jobs:
             else
               echo "Source collection failed: $source" >&2
               failed=1
-              printf '{"date":"%s","generated_at":"%s","mode":"business_source_raw","source_id":"%s","source_label":"%s","status":"failed","discovered_count":0,"raw_candidate_count":0,"failures":["source collection command failed; see %s-source-run.log"],"items":[]}\n' \
+              printf '{"date":"%s","generated_at":"%s","mode":"data_center_source_intake","source_id":"%s","source_label":"%s","status":"failed","discovered_count":0,"source_candidate_count":0,"failures":["source collection command failed; see %s-source-run.log"],"items":[]}\n' \
                 "$RUN_DATE" "$(date -Is)" "$source" "$source" "$source" \
-                > "agent-workflow/reports/source-runs/${RUN_DATE}/${source}-raw-source-candidates.json"
+                > "agent-workflow/reports/source-runs/${RUN_DATE}/${source}-source-intake-candidates.json"
             fi
             echo "--- ${source} source log ---"
             cat "$log_file"
@@ -259,7 +259,7 @@ jobs:
             --monitor-timeout-ms=900000 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-run.log"
 
-      - name: Confirm V3 evidence-supply handoff and dedupe state
+      - name: Confirm V4 source-intake handoff and dedupe state
         id: persistent-assets-post-monitor
         if: always() && steps.existing-assets.outputs.skip != 'true'
         continue-on-error: true
@@ -486,7 +486,7 @@ jobs:
             },
             "assets": {
               "structured_intake": "$(state_for "01-SiteV2/content/11-databases/data-center-v4/intake-v1/${RUN_DATE}.json")",
-              "source_raw_artifacts": "$(state_for "agent-workflow/reports/source-runs/${RUN_DATE}")",
+              "source_intake_artifacts": "$(state_for "agent-workflow/reports/source-runs/${RUN_DATE}")",
               "source_snapshots": "$(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}")",
               "data_center_v4_bundle": "$(state_for "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}/manifest.json")",
               "trend_radar_frontstage": "$(state_for "01-SiteV2/site/data/trend-radar-v1.json")",
@@ -635,7 +635,7 @@ jobs:
           - Data Center V4 factual bundle generated, gated, and materialized before application projections.
           - Opportunity Map, Trend Radar, and Funding Insights generated from V4 evidence.
           - Operations dashboard data included after V4 materialization.
-          - Compatibility writers remain disabled; archived V3 assets are not staged or deployed.
+          - Retired compatibility writers remain disabled; archived compatibility assets are not staged or deployed.
           - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.
 

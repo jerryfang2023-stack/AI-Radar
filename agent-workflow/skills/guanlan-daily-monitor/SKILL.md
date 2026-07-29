@@ -1,49 +1,46 @@
 ---
 name: guanlan-daily-monitor
-description: Use when running or repairing the existing daily source-capture implementation that supplies SourceArtifacts and legacy Raw/Pool data to Data Center V4. It does not own Claims, CanonicalEvents, tags, projections, Cards, pages, judgment, or recommendations.
+description: Use when running or repairing the daily source-capture implementation that writes immutable snapshots and SOURCE-INTAKE-V1 for Data Center V4. It does not own Claims, CanonicalEvents, tags, projections, pages, judgment, or recommendations, and it must not create V3 Raw/Pool Markdown or Signal Cards.
 metadata:
   guanlan:
-    version: "1.1.1"
+    version: "1.2.0"
     lane: "Data Center Source Ingestion"
     status: "current sub-skill"
     order: 40
-    responsibility: "Run the existing source-capture stage once and hand immutable evidence to V4 ingestion."
+    responsibility: "Run source capture once and hand immutable evidence plus structured intake to the V4 build."
     upstream: "external monitoring sources"
-    downstream: "SourceArtifact snapshots, legacy Raw/Pool compatibility, and evidence-supply report"
-    gates: "source capture, evidence integrity, minimum evidence supply"
-    recent_learning: "After post-fetch hash dedupe, expand adaptively within the same collected source-artifact candidate pool; do not recollect providers or pad Raw with weak evidence."
+    downstream: "immutable snapshots, SOURCE-INTAKE-V1, and evidence-supply diagnostics"
+    gates: "source capture, provenance integrity, minimum structured evidence supply"
+    recent_learning: "After post-fetch hash dedupe, expand only within the already collected candidate set; do not recollect providers or pad intake with weak evidence."
     mirrored_in_skill_store: true
     memory_required: false
 ---
 
 # Guanlan Daily Monitor
 
-Implementation boundary: `guanlan-source-ingestion` defines RAW-V3 truth. This skill remains the current source collector and may not promote its legacy scores or routes into V4.
-
-This skill owns commercial-source discovery and immutable source snapshot capture only. Structured intake is handed to `guanlan-source-ingestion`; the V4 lane owner is `guanlan-data-center-supervisor`.
+This skill owns commercial-source discovery, immutable snapshot capture, and `SOURCE-INTAKE-V1` only. `guanlan-source-ingestion` owns SourceArtifact and RawDocument normalization; `guanlan-data-center-supervisor` owns the V4 factual chain.
 
 ## Required Reads
 
 1. `AGENTS.md`
 2. `context/12-data-center-v4.md`
-3. `context/05-daily-monitoring.md` for the current collector implementation
-4. `context/07-v3-intelligence-generation-rules.md` only for legacy Pool compatibility
-5. `context/08-v3-3-automation.md`
+3. `context/06-execution-harness.md`
+4. `context/08-v3-3-automation.md`
 5. `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md`
 6. `evals/daily-monitor-evals.md` when changing the monitor.
 
-## Current Flow
+## Current flow
 
 ```text
-aihot + keyword + gdelt + rss source artifacts
--> one unified normalize stage
--> enrich an initial balanced batch, then expand the same candidate pool adaptively when post-fetch hash dedupe leaves Raw below target
--> at most one targeted refill when the hard evidence-supply minimum is missing
--> Raw / Pool files and monitor diagnostics
--> evidence-supply gate
+AI HOT + keyword + GDELT + RSS discovery
+-> immutable source snapshots
+-> one unified normalization pass
+-> SOURCE-INTAKE-V1
+-> source-intake gate
+-> V4 SourceArtifact / RawDocument build
 ```
 
-The production wrapper runs one monitor attempt. It must not refresh every source lane and rerun the whole monitor because a diagnostic target, provider note, keyword mix, or Raw count is below target.
+Internal collector fields such as `pool_count` or `core_pool` are selection diagnostics only. They must not create Pool Markdown, Signal Cards, a V3 Desk, an old graph, or compatibility payloads.
 
 ## Execution
 
@@ -51,48 +48,29 @@ The production wrapper runs one monitor attempt. It must not refresh every sourc
 node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD> --pass-score=85 --max-cycles=1 --search-limit=200 --search-path-query-limit=5 --gdelt-query-limit=12 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000 --monitor-timeout-ms=900000
 ```
 
-`--max-cycles` is retained for command compatibility but the current policy permits one production attempt only.
+The production policy permits one monitor attempt and at most one targeted refill for a failed hard evidence-supply bucket. Provider or volume diagnostics cannot trigger a full recollection.
 
-## Targets Versus Blockers
-
-Diagnostic targets remain visible:
-
-- Raw 150;
-- Pool 75;
-- routed Pool 60;
-- Core evidence 30;
-- channel, keyword, importance-lane and large-company balance.
-
-They are not V4 fact fields or independent release blockers. The monitor blocks only when configured evidence supply or evidence integrity fails: missing snapshots, too little auditable evidence to attempt the V4 build, contaminated/blocked evidence in the accepted acquisition set, or no usable original evidence.
-
-Provider and channel failures remain diagnostics. They become actionable supply failures only when the combined evidence supply is also below the hard minimum.
-
-## Operating Rules
+## Rules
 
 - Resolve discovery results to original sources before factual use.
-- Preserve original URL, readable text or fallback boundary, extraction diagnostics, hashes, excerpts and missing information.
-- Keep homepage, directory, login, docs-index, catalog, marketplace, search-result, SEO and navigation pages `index_only` unless the page contains a dated concrete event.
-- Normalize standard RSS publication dates, filter stale feed archives, and bound each RSS source's daily contribution. Undated podcast/newsletter archive entries are not active daily Raw supply, and lead-only podcast/newsletter pages cannot enter Core Pool without resolving the original event source.
-- On a same-date production rerun, carry forward the readable dated source snapshots referenced by already published formal Cards before resetting generated Raw. Recover a missing structured date from the captured article body or dated URL, and normalize the carried snapshot as resolved original evidence. Live-search randomness must not erase a gate-passed same-date Card.
-- Historical duplicates do not count as active supply.
-- Start from the configured balanced Raw batch. If post-fetch content-hash dedupe leaves fewer than the Raw coverage target, consume additional balanced batches from the already collected source-artifact candidate pool until the target, candidate-pool exhaustion, or the adaptive fetch limit is reached.
-- Same-attempt adaptive candidate expansion is part of capture and is not provider recollection or weak-evidence Raw padding. It must not call source providers again.
-- Do not refill solely to reach Raw 150 or an old importance-lane quota.
-- Do not stage First-Line Viewpoints, Community Intelligence, Cards or frontstage data from this skill.
+- Preserve original URL, readable text or fallback boundary, extraction diagnostics, content hash, excerpts, and missing information.
+- Keep homepage, directory, login, docs-index, catalog, marketplace, search-result, SEO, and navigation pages discovery-only unless they contain a dated concrete event.
+- Normalize publication dates and filter stale archives.
+- Use same-attempt adaptive expansion only from already collected candidates.
+- Do not stage First-Line Viewpoints, Community Intelligence, canonical facts, application projections, or frontstage data.
+- Do not write `01-SiteV2/content/01-raw`, `01-SiteV2/content/02-pool`, Signal Cards, V3 Desk, graph, or legacy mappings.
 
-## Failure Routing
+## Failure routing
 
-- Collection command or evidence-supply failure: stop once, record the deficient evidence bucket, and hand off targeted repair.
-- Provider unavailable but evidence supply healthy: continue and keep a diagnostic note.
-- Card or frontstage failure: reuse Raw / Pool; do not rerun this skill.
-- PR, merge or Pages failure: route to publication repair; do not rerun this skill.
+- Capture or source-intake failure: stop once, name the deficient bucket, and hand off targeted repair.
+- Provider unavailable with healthy combined evidence: continue with a diagnostic.
+- Claim/Event, application, frontstage, PR, Pages, or local-sync failure: repair that downstream owner; do not recollect sources.
 
 ## Outputs
 
 ```text
-01-SiteV2/content/01-raw/
-01-SiteV2/content/01-raw/originals/
-01-SiteV2/content/02-pool/
+agent-workflow/reports/source-runs/<date>/
+01-SiteV2/content/11-databases/data-center-v4/intake-v1/<date>.json
 agent-workflow/reports/<date>-guanlan-daily-monitor-*.md
 ```
 
@@ -101,6 +79,6 @@ agent-workflow/reports/<date>-guanlan-daily-monitor-*.md
 ```powershell
 node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
 node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
-node agent-workflow/tools/run-guanlan-daily-monitor.mjs --date=2026-07-13 --rss-ingestion-regression-fixtures=true
 node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
+npm run assert:no-active-v3
 ```

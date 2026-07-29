@@ -1,9 +1,9 @@
 ---
 name: guanlan-first-line-viewpoints-monitor
-description: Use when supervising, running, repairing, backfilling, or improving the WaveSight AI SITE-V4.2.0 First-Line Viewpoints lane at FLV-V1.1.0-history-backfill. Covers current morning builders data, committed morning history, afternoon follow-builders intake, V4 projection, Chinese translation provenance, original-URL dedupe, AI relevance and opinion tags, Obsidian person/date timelines, publication closure, and production-incident repair. Do not use for Business Signals, Signal Cards, factual relationships, trend candidates, or Community Intelligence.
+description: Use when supervising, running, repairing, backfilling, or improving the WaveSight AI First-Line Viewpoints lane at FLV-V1.1.0-history-backfill. Covers current morning builders data, committed morning history, afternoon follow-builders intake, V4 projection, Chinese translation provenance, original-URL dedupe, AI relevance and opinion tags, Obsidian person/date timelines, publication closure, and production-incident repair. Do not use to create Claims, CanonicalEvents, RELATION-V2.1 facts, or Community Intelligence.
 metadata:
   guanlan:
-    version: "1.1.2"
+    version: "1.1.3"
     lane: "First-Line Viewpoints"
     status: "current lane owner"
     order: 20
@@ -153,7 +153,7 @@ If the report shows healthy feed/archive counts but a publish failure, repair th
 ## Lane Boundaries
 
 - Builder viewpoints are independent public viewpoints.
-- Do not write Business Signal Cards, relationship graph evidence, trend candidates, or Community Intelligence data.
+- Do not write Claims, CanonicalEvents, RELATION-V2.1 evidence, or Community Intelligence data.
 - Do not use `01-SiteV2/content/05-frontier-opinions/*` as current evidence.
 - Do not treat old `YYYY-MM.md` month files as current sync success.
 - Do not allow untranslated English as primary Chinese frontstage text.

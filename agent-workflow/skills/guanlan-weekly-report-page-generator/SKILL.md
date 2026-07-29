@@ -3,7 +3,7 @@ name: guanlan-weekly-report-page-generator
 description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/08-report/`. Applies to Industry Reports weekly entries, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
 metadata:
   guanlan:
-    version: "1.1.1"
+    version: "1.1.2"
     column_version: "REPORTS-V1.0.0-periodic-report-center"
     lane: "Reports Center"
     status: "current sub-skill"
@@ -75,7 +75,7 @@ For detailed rules, load:
    - Treat user-deleted elements as blocked unless the user explicitly reintroduces them.
 
 5. Update version metadata when releasing.
-   - Main site version lives in `meta[name="wavesight-version"]` and must match the current public website version in `context/version-ledger.md` (`SITE-V4.2.0-entity-history` for this release).
+   - Main site version lives in `meta[name="wavesight-version"]` and must match the current public website version in `context/version-ledger.md` (`SITE-V4.3.0-compatibility-retired` for this release).
    - Reports Center column version lives in `meta[name="wavesight-column-version"]` and must be `REPORTS-V1.0.0-periodic-report-center` for this release.
    - Weekly source path lives in `meta[name="weekly-report-source"]`.
    - Update `context/version-ledger.md` only for accepted release changes.

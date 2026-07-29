@@ -31,7 +31,7 @@ const cases = [
   ["taxonomy", "guanlan-taxonomy-governor", "taxonomy-governor-evals.md", "A TagAssertion records tag_id, exact Claim span, method, confidence and taxonomy version and does not affect eligibility.", "pass"],
   ["trend-radar", "guanlan-trend-radar-updater", "trend-radar-updater-evals.md", "A factual Trend Radar payload includes an opportunity score and recommendation field.", "fail"],
   ["typography", "guanlan-typography-qc", "typography-qc-evals.md", "A retired V3 daily-observation page is used as the current typography baseline.", "fail"],
-  ["weekly-report", "guanlan-weekly-business-change-radar", "weekly-business-change-radar-evals.md", "A weekly report uses exact counts and each trend chain cites at least two named Signals and one named Opinion.", "pass"],
+  ["weekly-report", "guanlan-weekly-business-change-radar", "weekly-business-change-radar-evals.md", "A weekly report uses exact counts, factual claims cite accepted V4 Events, and O/C remain independent context.", "pass"],
   ["weekly-page", "guanlan-weekly-report-page-generator", "weekly-report-page-generator-evals.md", "A weekly page is generated only from an operational report archive, with no canonical content source under 01-SiteV2/content/08-report.", "fail"]
 ].map(([id, skill, evalFile, scenario, expected]) => ({
   id,

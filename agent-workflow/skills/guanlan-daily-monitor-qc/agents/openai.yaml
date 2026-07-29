@@ -1,6 +1,6 @@
 interface:
   display_name: "观澜每日监测 QC"
-  short_description: "质检每日监测 Raw / Pool 的全文、来源和入池质量。"
-  default_prompt: "Use $guanlan-daily-monitor-qc to audit a Guanlan daily-monitor run, identify Raw / Pool quality failures, check full-text and S/A source coverage, block bad core materials, and output a Markdown QC report."
+  short_description: "质检 V4 每日来源采集的全文、出处和结构化 intake 质量。"
+  default_prompt: "Use $guanlan-daily-monitor-qc to audit one V4 source-intake run, identify provenance and full-text failures, check original-source coverage, keep weak material discovery-only, and output a Markdown QC report."
 policy:
   allow_implicit_invocation: true

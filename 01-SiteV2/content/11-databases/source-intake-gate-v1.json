@@ -1,0 +1,82 @@
+{
+  "schema_version": "SOURCE-INTAKE-GATE-V1.0",
+  "updated_at": "2026-07-29",
+  "owner": "Data Center Source Ingestion / Build & Release",
+  "purpose": "V4 source-intake readiness policy. It checks captured SourceArtifact and RawDocument supply before the Claim and CanonicalEvent build. It does not generate or validate V3 Pool, Card, desk, graph, or compatibility assets.",
+  "diagnostic_score_reference": 85,
+  "score_mode": "diagnostic_only",
+  "score_release_gate": false,
+  "pipeline_policy": {
+    "monitor_attempts": 1,
+    "targeted_supply_refill_cycles": 1,
+    "raw_volume_refill": false,
+    "provider_failures": "diagnostic_unless_evidence_supply_fails",
+    "semantic_qc": "on_demand_diagnostic"
+  },
+  "hard_gates": {
+    "pool_count_min": 15,
+    "routed_pool_count_min": 10,
+    "core_pool_min": 1,
+    "usable_core_evidence_min": 1,
+    "homepage_directory_core_max": 0,
+    "core_text_contamination_max": 0,
+    "core_raw_qc_block_max": 0,
+    "core_raw_qc_degraded_max": 0
+  },
+  "diagnostic_targets": {
+    "raw_count_min": 150,
+    "pool_count_target": 75,
+    "routed_pool_count_target": 60,
+    "core_pool_target": 30,
+    "usable_core_evidence_target": 30,
+    "keyword_search_non_community_min": 6,
+    "ai_relevant_title_ratio_min": 0.7,
+    "off_topic_title_max": 3,
+    "importance_coverage_gaps_target": "none",
+    "pool_importance_coverage_gaps_target": "none",
+    "core_non_large_vendor_target": 20,
+    "core_large_vendor_count_target_max": 10,
+    "core_large_vendor_ratio_target_max": 0.35
+  },
+  "keyword_requirements": {
+    "non_community_paths_min": 6,
+    "non_community_paths": [
+      "official_original",
+      "developer_ecosystem",
+      "capital_startup",
+      "industry_landing",
+      "procurement_marketplace",
+      "a_media_gdelt"
+    ]
+  },
+  "strategy_requirements": {
+    "outside_core_exploration_min_raw": 5,
+    "max_theme_concentration": 0.4
+  },
+  "off_topic_patterns": [
+    "dictionary",
+    "translation",
+    "manga",
+    "comic",
+    "html <pre",
+    "<pre",
+    "tag-pre",
+    "runoob",
+    "mdn",
+    "w3school",
+    "iciba",
+    "youdao",
+    "pronunciation",
+    "definition",
+    "tool directory"
+  ],
+  "monitor_limits": {
+    "search_limit": 200,
+    "search_path_query_limit": 5,
+    "gdelt_query_limit": 12,
+    "hn_limit": 8,
+    "raw_dedupe_buffer": 140,
+    "raw_max": 360
+  },
+  "internal_selection_note": "Legacy-named pool_count and core_pool fields are internal collector selection metrics only. They do not create Pool Markdown, Signal Cards, compatibility payloads, or V4 facts."
+}

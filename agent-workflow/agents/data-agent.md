@@ -8,7 +8,7 @@ Intelligence Engine 是 WaveSight AI 的来源、证据和结构化事实生产�
 
 `SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> evidence-backed projections / exports`
 
-V3 `Raw -> Pool -> Card` 仅是内部兼容和下游应用输入，不是 V4 规范数据模型。
+V3 `Raw -> Pool -> Card` 兼容链已经退役并从工作树删除。历史恢复只能使用显式 Git ref 和隔离 worktree，不能进入现役生产。
 
 ## 负责
 
@@ -18,7 +18,7 @@ V3 `Raw -> Pool -> Card` 仅是内部兼容和下游应用输入，不是 V4 规
 - 仅从已接受证据生成 FDE、硬件、标签和关系等事实投影。
 - 明示缺失字段、冲突字段、证据缺口和降级原因。
 - 运行目标数据契约、完整性门和可追溯性检查。
-- 在用户明确要求时维护 V3 Raw / Pool / Card 兼容输出。
+- 阻止 V3 Raw / Pool / Card、desk、旧 graph 或 compatibility interface 回到现役生产。
 
 ## 核心边界
 
@@ -45,7 +45,7 @@ V3 `Raw -> Pool -> Card` 仅是内部兼容和下游应用输入，不是 V4 规
 - `agent-workflow/product/data-center-v4.schema.json`
 - 当前生成器、投影、数据包或 gate
 
-仅在兼容任务中读取：
+仅在历史审计中读取：
 
 - `context/07-v3-intelligence-generation-rules.md`
 - `context/05-daily-monitoring.md`
@@ -55,7 +55,7 @@ V3 `Raw -> Pool -> Card` 仅是内部兼容和下游应用输入，不是 V4 规
 - 来源与证据边界说明；
 - SourceArtifact、RawDocument、Claim、Entity、CanonicalEvent 或事实投影；
 - 可定位的完整性问题和证据缺口；
-- 明确标记为兼容层的 V3 handoff（仅在任务要求时）。
+- 下游应用使用的 V4 Event / Claim / SourceArtifact handoff。
 
 ## 验收标准
 

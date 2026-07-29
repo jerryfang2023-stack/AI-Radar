@@ -20,7 +20,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
    - Pass when validated community data reaches automation branch -> PR -> `main` -> GitHub Pages when publication is required.
 
 6. `lead_not_fact`
-   - Pass when community posts remain leads and are not used as Business Signal facts unless separately verified through Raw / Pool.
+   - Pass when community posts remain leads and do not create Claims, CanonicalEvents, or RELATION-V2.1 rows; factual promotion requires separate original-source capture through the V4 integrity chain.
 
 7. `lane_isolation`
    - Pass when the Community Intelligence PR stages no Business Signals or First-Line Viewpoints data.

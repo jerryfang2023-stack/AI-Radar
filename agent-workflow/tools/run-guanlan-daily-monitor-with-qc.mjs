@@ -11,7 +11,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 
 const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const configPath = args.get("quality-config") || path.join(root, "01-SiteV2", "content", "11-databases", "business-signals-gate-v3.json");
+const configPath = args.get("quality-config") || path.join(root, "01-SiteV2", "content", "11-databases", "source-intake-gate-v1.json");
 const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 const limits = config.monitor_limits || {};
 const diagnosticScoreReference = Number(args.get("pass-score") || config.diagnostic_score_reference || 85);

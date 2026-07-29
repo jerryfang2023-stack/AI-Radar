@@ -41,7 +41,7 @@ const expected = {
   opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.0.0-factual-change-explorer",
   person: "PERSON-REVIEW-V1.0",
-  skillStore: "v1.7.0 Funding Insights generation lane",
+  skillStore: "v1.8.0 V4 retirement governance",
 };
 
 const ledgerChecks = [
@@ -51,15 +51,22 @@ const ledgerChecks = [
   ["Opportunity Map column version", expected.opportunity],
   ["Trend Radar column version", expected.trendRadar],
   ["Person-account review contract", expected.person],
-  ["Weekly report page-generator Skill", "guanlan-weekly-report-page-generator v1.1.1"],
+  ["Weekly report page-generator Skill", "guanlan-weekly-report-page-generator v1.1.2"],
   ["Monthly report page-generator Skill", "guanlan-monthly-report-page-generator v1.1.0"],
-  ["Opportunity Map updater Skill", "guanlan-opportunity-radar-updater v1.4.0"],
+  ["Data Center supervisor Skill", "guanlan-data-center-supervisor v1.2.2"],
+  ["Opportunity Map updater Skill", "guanlan-opportunity-radar-updater v1.4.1"],
   ["Trend Radar updater Skill", "guanlan-trend-radar-updater v1.0.0"],
   ["Funding Insight generator Skill", "guanlan-funding-insight-generator v1.0.0"],
-  ["Community Intelligence monitor Skill", "guanlan-community-intelligence-monitor v1.0.6"],
-  ["Monthly business-structure content Skill", "guanlan-monthly-business-structure-report v0.2.1"],
+  ["First-Line Viewpoints monitor Skill", "guanlan-first-line-viewpoints-monitor v1.1.3"],
+  ["Community Intelligence monitor Skill", "guanlan-community-intelligence-monitor v1.0.7"],
+  ["Follow-builders support Skill", "follow-builders v1.0.1"],
+  ["Weekly business-change content Skill", "guanlan-weekly-business-change-radar v1.2.0"],
+  ["Monthly business-structure content Skill", "guanlan-monthly-business-structure-report v0.3.0"],
+  ["Daily source monitor Skill", "guanlan-daily-monitor v1.2.0"],
+  ["Source-intake quality gate Skill", "guanlan-monitor-quality-gate v1.2.0"],
+  ["Source-intake QC Skill", "guanlan-daily-monitor-qc v1.2.0"],
   ["Skill governance editor", "guanlan-skill-editor v1.0.2"],
-  ["Code and rule auditor", "guanlan-code-rule-auditor v1.0.2"],
+  ["Code and rule auditor", "guanlan-code-rule-auditor v1.1.0"],
   ["Skill Store version", expected.skillStore],
   ["Git tag", "v4.3.0-compatibility-retired"],
 ];
@@ -126,12 +133,19 @@ if (personReview.summary?.candidates !== 37 || personReview.summary?.expected_pu
 }
 
 const skillVersions = [
-  ["agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", 'version: "1.4.0"'],
-  ["agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", 'version: "1.0.6"'],
-  ["agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md", 'version: "1.1.1"'],
-  ["agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md", 'version: "0.2.1"'],
+  ["agent-workflow/skills/guanlan-data-center-supervisor/SKILL.md", 'version: "1.2.2"'],
+  ["agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", 'version: "1.4.1"'],
+  ["agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md", 'version: "1.1.3"'],
+  ["agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", 'version: "1.0.7"'],
+  ["agent-workflow/skills/follow-builders/SKILL.md", 'version: "1.0.1"'],
+  ["agent-workflow/skills/guanlan-weekly-report-page-generator/SKILL.md", 'version: "1.1.2"'],
+  ["agent-workflow/skills/guanlan-monthly-business-structure-report/SKILL.md", 'version: "0.3.0"'],
   ["agent-workflow/skills/guanlan-skill-editor/SKILL.md", 'version: "1.0.2"'],
-  ["agent-workflow/skills/guanlan-code-rule-auditor/SKILL.md", 'version: "1.0.2"'],
+  ["agent-workflow/skills/guanlan-code-rule-auditor/SKILL.md", 'version: "1.1.0"'],
+  ["agent-workflow/skills/guanlan-weekly-business-change-radar/SKILL.md", 'version: "1.2.0"'],
+  ["agent-workflow/skills/guanlan-daily-monitor/SKILL.md", 'version: "1.2.0"'],
+  ["agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md", 'version: "1.2.0"'],
+  ["agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md", 'version: "1.2.0"'],
   ["agent-workflow/skills/guanlan-trend-radar-updater/SKILL.md", 'version: "1.0.0"'],
 ];
 for (const [file, version] of skillVersions) expectText(file, version);
@@ -139,7 +153,7 @@ expectText("agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", e
 expectText("agent-workflow/skills/guanlan-trend-radar-updater/SKILL.md", expected.trendRadar);
 rejectText("agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", "Industry Reports page's two", "nested Industry Reports ownership");
 rejectText("agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", "current SITE-V3.4.5", "current V3 site claim");
-expectText("agent-workflow/product/tag-taxonomy.md", "Data Center V4 uses `tag-taxonomy-v4.json`");
+expectText("agent-workflow/product/column-tag-taxonomy-v1.json", '"canonical_fact_input": false');
 expectText("context/frontstage-page-contracts.md", expected.site, "current SITE version");
 expectText("context/project-memory.md", "SITE-V4.3.0", "current SITE major/minor version");
 rejectText("context/frontstage-page-contracts.md", "The legacy Business Signals Card set remains an internal compatibility dataset", "active Card compatibility contract");

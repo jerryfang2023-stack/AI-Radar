@@ -12,7 +12,7 @@ const args = new Map(
 
 const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const defaultConfigPath = path.join(root, "01-SiteV2", "content", "11-databases", "business-signals-gate-v3.json");
+const defaultConfigPath = path.join(root, "01-SiteV2", "content", "11-databases", "source-intake-gate-v1.json");
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 const clamp = (value, min = 0, max = 1) => Math.max(min, Math.min(max, value));
@@ -370,8 +370,8 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
     return {
       level: reasons.length ? "allow_with_notes" : "allow",
       action: reasons.length
-        ? "Allow Signal Card asset generation and frontstage release with noted soft risks."
-        : "Allow Signal Card asset generation and frontstage release.",
+        ? "Allow the V4 factual build to proceed with noted source-supply diagnostics."
+        : "Allow the V4 factual build to proceed.",
       reasons: reasons.length ? reasons : ["all hard gates passed"],
     };
   }
@@ -390,7 +390,7 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
   if (severe) {
     return {
       level: "pause",
-      action: "Pause Signal Card asset generation and frontstage release until repair; only Watchlist / User Feedback use is allowed.",
+      action: "Pause the V4 factual build until source-intake evidence is repaired; discovery-only material remains non-factual.",
       reasons,
     };
   }

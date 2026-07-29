@@ -1,9 +1,9 @@
 ---
 name: follow-builders
-description: AI builders digest — monitors top AI builders on X and YouTube podcasts, remixes their content into digestible summaries. Use when the user wants AI industry insights, first-line builder viewpoints, builder updates, or invokes /ai. Do not use as business-signal fact evidence for WaveSight AI Raw / Pool / Card, relationship graph, or trend-candidate production.
+description: AI builders digest — monitors top AI builders on X and YouTube podcasts and turns their public content into a viewpoint digest. Use for first-line builder viewpoints or builder updates. Do not use it to create WaveSight Claims, CanonicalEvents, or RELATION-V2.1 facts.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.0.1"
     lane: "First-Line Viewpoints"
     status: "supporting skill"
     order: 90
@@ -30,7 +30,7 @@ a public feed. Users only need API keys if they choose Telegram or email deliver
 
 ## WaveSight AI Boundary
 
-For WaveSight AI / Guanlan current V3, this skill only owns the independent First-Line Viewpoints column. Builder posts, podcasts, and summaries may help discover questions or operator perspectives, but they must not be used as business-signal facts, relationship-graph evidence, trend-candidate evidence, or Signal Card source material unless a separate original business source is captured through the Raw / Pool chain.
+For WaveSight AI, this skill owns only the independent First-Line Viewpoints column. Builder posts, podcasts, and summaries may help discover questions or operator perspectives, but they must not create Claims, CanonicalEvents, or RELATION-V2.1 rows. A factual promotion requires separate original-source capture and the full V4 integrity chain.
 
 When using this skill inside WaveSight AI work, run the checks in `evals/wavesight-boundary-evals.md`.
 
@@ -53,7 +53,7 @@ The sync must:
 - dedupe by original URL / id;
 - update person date files and person README indexes;
 - update `01-SiteV2/knowledge/02-Opinion-Timelines/README.md`;
-- keep Builder viewpoints out of Business Signals, relationship graph evidence, and trend candidates.
+- keep Builder viewpoints out of Claims, CanonicalEvents, and RELATION-V2.1 evidence.
 
 For backfill, run the same command with a date range, for example:
 

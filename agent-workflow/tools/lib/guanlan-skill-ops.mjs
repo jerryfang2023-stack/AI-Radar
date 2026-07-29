@@ -418,7 +418,7 @@ ${rows.map((row) => `| ${row.join(" | ")} |`).join("\n")}
 
 - Start with a lane owner when supervising or repairing a lane.
 - Use sub-skills only after the lane owner identifies the failing stage.
-- Do not let First-Line Viewpoints or Community Intelligence evidence enter Business Signal Cards, relationship graph evidence, or trend candidates without separate Raw / Pool verification.
+- Do not let First-Line Viewpoints or Community Intelligence enter CanonicalEvents, Claims, or RELATION-V2.1. A factual promotion requires separate original-source capture and the full V4 integrity chain.
 - Prefer examples and evals for recurring mistakes; add long rule text only when examples and evals are insufficient.
 - Keep workflow thin: scripts handle deterministic work, skills handle judgment and boundaries, gates block unsafe outputs, context stores project-level truth.
 `;

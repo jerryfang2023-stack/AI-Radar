@@ -8,7 +8,7 @@ on:
         required: false
         type: string
       pass_score:
-        description: "Daily Monitor diagnostic score reference. Evidence, Card and frontstage gates decide release."
+        description: "Source-intake diagnostic score reference. V4 integrity, application projection, and frontstage gates decide release."
         required: false
         default: "85"
         type: string
@@ -81,7 +81,7 @@ jobs:
             echo "This workflow is a dry run. It uploads artifacts only and never commits, pushes, opens PRs, commits site data, or deploys."
             echo
             echo "Production order:"
-            echo "1. Run the V3 evidence-supply gate."
+            echo "1. Run the V4 source-intake gate."
             echo "2. Confirm structured intake integrity and historical duplicate state."
             echo "3. Mark same-date V4 projections stale if source intake changed."
             echo "4. Build and gate the Data Center V4 factual bundle."

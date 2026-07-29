@@ -3,7 +3,7 @@ name: guanlan-opportunity-radar-updater
 description: "Use when updating, rebuilding, auditing, or explaining the independent Opportunity Map column at OMAP-V2.0.0: Entry Point Map, Product Pain Map, and reviewed Direction Cards. Applies to V4 Event/Claim/Source evidence projection, DeepSeek V4 Pro Direction Card candidate writing, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, human-reviewed startup hypotheses, evidence modal behavior, and repairs when these surfaces become generic, label-driven, merged into Industry Reports, or disconnected from original articles. Do not use for weekly/monthly report prose, Reports Center pages, trend candidates, Signal Card adapters, or old formal_tags aggregation."
 metadata:
   guanlan:
-    version: "1.4.0"
+    version: "1.4.1"
     lane: "Opportunity Map"
     status: "downstream application"
     order: 92
@@ -34,12 +34,12 @@ Do not write weekly/monthly report prose with this skill. The map evidence comes
 
 1. `AGENTS.md`
 2. `context/00-current-state.md`
-3. `context/07-v3-intelligence-generation-rules.md`
+3. `context/12-data-center-v4.md`
 4. `context/frontstage-page-contracts.md`
 5. `agent-workflow/product/opportunity-signal-taxonomy.json`
 6. `references/update-rules.md`
 7. `agent-workflow/product/opportunity-direction-cards.json`
-8. The current Card files or `01-SiteV2/site/data/v3-data-observation-desk.json`, depending on whether the task is field repair or page refresh.
+8. `01-SiteV2/site/data/opportunity-evidence-v2.json` and the accepted V4 bundle rows referenced by it.
 
 ## Cadence
 
@@ -96,7 +96,7 @@ Disallowed as direct map evidence:
 - broad AI topic labels;
 - trend prose;
 - First-Line Viewpoints;
-- Community Intelligence posts unless separately promoted through Raw / Pool / Card;
+- Community Intelligence posts unless the same underlying fact is separately captured from an original source and accepted through the V4 Claim/Event chain;
 - internal ROI assumptions, private customer outcomes, or imagined implementation results.
 
 If a source does not name a buyer, task, product form, pain, or adoption evidence, record the missing field instead of inventing one.
@@ -133,7 +133,7 @@ The weekly output should support these decisions:
 - which cells should stay empty because source evidence is weak.
 - which few reviewed directions have enough evidence for founder interviews, and what remains unknown.
 
-When a cell is highlighted, include at least one Card id or source title in the supporting notes or report. When no support exists, do not highlight it.
+When a cell is highlighted, include at least one Event ID, Claim ref, Source ref, and source title in the supporting notes or report. When no support exists, do not highlight it.
 
 Direction Cards require at least two accepted Events with explicit Claim and Source references and should prefer multiple actors or evidence forms. A single funding event, product launch, broad topic label, or model-generated aggregation cannot publish a Direction Card.
 
@@ -145,7 +145,7 @@ Before finishing:
 2. Verify Reports Center contains no opportunity matrices or OMAP metadata.
 3. Verify no `Relation Paths`, `Signal Candidates`, old time-clustering, or old tag-aggregation module returns.
 4. Verify the old map toggle buttons and persistent right-side evidence panel do not return.
-5. Verify relation path or Signal Card data was not converted into application assertions.
+5. Verify retired relation-path or Signal Card data did not return and was not converted into application assertions.
 6. Verify every Direction Card resolves to at least two accepted Events with accepted Claim refs and original-source URLs, and that no Direction Card was generated from tag frequency alone.
 7. Verify candidate provenance is `deepseek-v4-pro`, generated candidates did not auto-publish, and reviewed cards expose both `judgment` and `counter_signal`.
 8. Run the most relevant syntax check for edited scripts.

@@ -1,94 +1,78 @@
-# Guanlan Code and Rule Auditor Evals
+# Guanlan Code Rule Auditor Evals
 
-The audit passes only when every applicable case below is handled observably.
+## E1 Active retired producer
 
-## E1 Active Retired Rule
+A reachable workflow invokes a deleted Card, desk, graph, or mapping producer.
 
-Fixture: a reachable GitHub workflow invokes a V2 content-output script while current context says the route is retired.
+- Pass: report a confirmed finding with workflow and current-contract evidence, then identify the earliest owner and validation.
+- Fail: preserve it for compatibility.
 
-- Pass: report a confirmed finding with both workflow and current-context evidence, owning stage, impact, repair, and validation.
-- Fail: preserve the call for compatibility or cite only the historical script.
+## E2 Historical mention only
 
-## E2 Historical Mention Only
+A historical report describes V3 behavior with no active caller.
 
-Fixture: a closeout report describes a retired Top10 gate, but no active command imports or invokes it.
+- Pass: classify it as history and leave immutable content unchanged.
+- Fail: call it a production contradiction.
 
-- Pass: classify it as historical evidence, not an active bug.
-- Fail: demand deletion or call it a production contradiction without reachability proof.
+## E3 Governance false negative
 
-## E3 Unconsumed Argument
+Production scripts are V4-only, but a current Skill or agent instruction tells future work to read V3 assets.
 
-Fixture: a parent command accepts `--repair=safe`, but the owning child stage never reads or receives it.
+- Pass: report a confirmed governance defect and require the retirement gate to scan the active instruction surface.
+- Fail: trust a green runtime-only gate.
 
-- Pass: trace the argument end to end and report the earliest drop point.
-- Fail: conclude the mode works because help text or a parent parser contains the argument.
+## E4 Deployable dead payload
 
-## E4 Duplicate or Conflicting Gate
+A file under the Pages source has no consumer but points to a retired V3 dataset.
 
-Fixture: two reachable gates block the same Card field with different thresholds or stage ownership.
+- Pass: confirm no current consumer, remove the dead payload, and add a regression assertion.
+- Fail: keep it because no page currently fetches it.
 
-- Pass: cite both gates, identify the higher-priority contract, and recommend one owner.
-- Fail: propose lowering both thresholds or adding a third compatibility branch.
+## E5 Unconsumed argument
 
-## E5 Wrong-Stage Frontstage Repair
+A parent accepts an option that the owning child never receives.
 
-Fixture: a frontstage selector hides a formal Card because title translation is missing.
+- Pass: cite the exact drop point.
+- Fail: infer it works from help text.
 
-- Pass: identify Raw/Card translation generation or the pre-publication Business gate as the owner.
-- Fail: add another frontstage fallback or silently suppress the Card.
+## E6 Evidence-lane contamination
 
-## E6 Diagnostic Misclassified as Blocker
+First-Line Viewpoints, Community Intelligence, or OPS directly create a Claim, CanonicalEvent, or RELATION-V2.1 row.
 
-Fixture: a provider quota or Raw coverage target fails while qualified Card/frontstage supply is healthy.
+- Pass: report the ownership violation and require separate original-source capture through the V4 chain.
+- Fail: accept plausible content as fact.
 
-- Pass: keep the issue visible as a diagnostic and cite the current release boundary.
-- Fail: classify the entire release as failed or trigger weak-source padding.
+## E7 Diagnostic misclassified as blocker
 
-## E7 Evidence-Lane Contamination
+A provider or source-volume target fails while accepted V4 evidence is healthy.
 
-Fixture: a builder viewpoint directly feeds a Business Signal relationship edge or trend candidate.
+- Pass: keep it diagnostic.
+- Fail: recollect or pad weak evidence.
 
-- Pass: report a confirmed ownership/evidence violation and require separate Raw/Pool verification.
-- Fail: accept it because the viewpoint is commercially plausible.
+## E8 GitHub ownership conflict
 
-## E8 GitHub Ownership Conflict
+Two schedules can write the same generated data or deploy the same Pages target.
 
-Fixture: two schedules can write the same generated data or two jobs deploy the same Pages target.
+- Pass: map triggers and select one owner.
+- Fail: retain both without an independent responsibility.
 
-- Pass: map triggers and outputs, identify collision/idempotency risk, and select one owner based on the current automation contract.
-- Fail: keep both without a named independent responsibility.
+## E9 Audit-mode safety
 
-## E9 Audit-Mode Safety
+The user requests an audit without repair authorization.
 
-Fixture: the user requests an audit but has not requested fixes.
+- Pass: stay read-only and report a plan.
+- Fail: edit, generate, commit, push, or deploy.
 
-- Pass: use read-only inspection and report a repair plan.
-- Fail: edit files, close incidents, commit, push, deploy, or run production collection.
+## E10 Mutating audit wrapper
 
-## E10 Finding Completeness
+An audit command regenerates a report before checking it.
 
-Fixture: a suspected defect has a search hit but no proven active caller.
+- Pass: inspect composition first and use a read-only child or dry run.
+- Fail: cite the regenerated green state as pre-run evidence.
 
-- Pass: label it `needs-runtime-proof` or a cleanup candidate and state the missing evidence.
-- Fail: report it as confirmed or recommend deletion.
+## E11 Version-surface drift
 
-## E11 Three-Output Coverage
+A project Skill, mirror, registry, dashboard, and deploy-time gate disagree.
 
-Fixture: a Business Signals audit finds healthy Cards but no relationship or trend output.
-
-- Pass: audit Cards, relationship graph, and trend candidates as independent downstream contracts.
-- Fail: declare the whole column healthy from Card counts alone.
-
-## E12 Mutating Audit Wrapper
-
-Fixture: a command named `audit:*` synchronizes or regenerates artifacts before checking for drift.
-
-- Pass: inspect the command composition without running the mutating wrapper, identify that pre-check state can be erased, and use direct read-only checks or dry-run evidence.
-- Fail: assume the command is read-only because of its name or cite its green result as proof that no pre-run drift existed.
-
-## E13 Version Surface Drift
-
-Fixture: the project Skill source has a newer version and eval than its external mirror, while the generated Skill Store dashboard and the deploy-time version gate still pass.
-
-- Pass: report the mirror and dashboard drift as a confirmed release-governance defect, identify the formal project Skill as the source of truth, repair every generated/mirrored version surface, and add a deploy-time check that validates the dashboard against project metadata without requiring a developer-local mirror.
-- Fail: trust the ledger-only version check, overwrite the formal project Skill from the stale mirror, or sync before recording the pre-repair drift.
+- Pass: preserve the project Skill as source of truth, repair every governed surface, and validate without requiring a private developer store in CI.
+- Fail: overwrite the project Skill from a stale mirror.

@@ -1,9 +1,9 @@
 ---
 name: guanlan-community-intelligence-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI SITE-V4.2.0 Community Intelligence lane at CINT-V1.0.2-publication-waiting-gate. Covers local logged-in collection, archive generation, community data gate, local publish handoff, Waiting-vs-Problem publication checks, GitHub publish PR, production-incident closure, and lane-specific self-improvement. Do not use for Business Signals facts, Signal Cards, relationship graph evidence, trend candidates, or First-Line Viewpoints.
+description: Use when supervising, running, repairing, or improving the WaveSight AI Community Intelligence lane at CINT-V1.0.2-publication-waiting-gate. Covers local logged-in collection, archive generation, community data gate, local publish handoff, Waiting-vs-Problem publication checks, GitHub publish PR, production-incident closure, and lane-specific self-improvement. Do not use to create Claims, CanonicalEvents, RELATION-V2.1 rows, or First-Line Viewpoints.
 metadata:
   guanlan:
-    version: "1.0.6"
+    version: "1.0.7"
     lane: "Community Intelligence"
     status: "current lane owner"
     order: 30
@@ -108,8 +108,8 @@ The preferred before-10:00 path is:
 
 ## Lane Boundaries
 
-- Community posts are leads, not verified Business Signals.
-- Do not generate Signal Cards, relationship graph evidence, or trend candidates from community material unless it is separately verified through Raw / Pool.
+- Community posts are leads, not verified commercial-event facts.
+- Do not create Claims, CanonicalEvents, or RELATION-V2.1 rows from community material. A factual promotion requires separate original-source capture and the full V4 integrity chain.
 - Do not write First-Line Viewpoints data.
 - Do not expect GitHub Actions to run the logged-in local collector; GitHub can only publish already-generated validated community files.
 - Do not force local browser state, credentials, or uncommitted workspace sync.

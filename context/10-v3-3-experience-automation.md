@@ -10,7 +10,7 @@ use_when:
 priority: current
 ---
 
-# SITE-V4.2 Experience Automation
+# SITE-V4.3 Experience Automation
 
 This file defines the lightweight automation for recording development actions and generating experience retrospectives.
 
@@ -93,7 +93,7 @@ Always record:
 - any current action from `context/09-v3-3-current-action-index.md`;
 - edits to `AGENTS.md`, `context/`, `.github/workflows/`, automation scripts, or core site scripts;
 - any failed gate, failed workflow, rollback, manual override, or skipped safety check;
-- any action that changes frontstage pages, site data, dashboard data, Raw / Pool / Card assets, graph data, trend candidates, or local sync behavior;
+- any action that changes frontstage pages, site data, dashboard data, SourceArtifact / RawDocument / Claim / Event assets, application projections, or local sync behavior;
 - any action that touches `retired` outputs or may revive historical routes;
 - any decision that creates a reusable rule.
 
@@ -155,7 +155,7 @@ Do not close a recurring issue by only editing same-day data. A repeated failure
 
 Weekly health classifies repeated incidents into categories such as:
 
-- `business_signals_top10_missing`;
+- `commercial_event_chain_missing`;
 - `source_first_frontstage_gate`;
 - `frontstage_title_translation`;
 - `frontstage_detail_content`;

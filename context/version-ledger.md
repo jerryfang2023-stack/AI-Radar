@@ -22,7 +22,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | WaveSight V4 Compatibility Retired |
 | Version layer | Minor |
 | Release date | 2026-07-29 |
-| Last modified at | 2026-07-29T00:00:00+08:00 |
+| Last modified at | 2026-07-29T23:20:00+08:00 |
 | Product version | V4.3 |
 | Data center version | SITE-V4.0-data-center |
 | Main website version | SITE-V4.3.0-compatibility-retired |
@@ -45,18 +45,25 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Targeted historical collection contract | BACKFILL-V1.0 |
 | Weekly Report content source | `01-SiteV2/content/08-report/` |
 | Monthly Report content source | `01-SiteV2/content/08-report/monthly/` |
-| Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.1.1 |
+| Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.1.2 |
 | Monthly report page-generator Skill | guanlan-monthly-report-page-generator v1.1.0 |
-| Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.4.0 |
+| Data Center supervisor Skill | guanlan-data-center-supervisor v1.2.2 |
+| Opportunity Map updater Skill | guanlan-opportunity-radar-updater v1.4.1 |
 | Trend Radar updater Skill | guanlan-trend-radar-updater v1.0.0 |
 | Funding Insight generator Skill | guanlan-funding-insight-generator v1.0.0 |
-| Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.6 |
-| Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.2.1 |
+| First-Line Viewpoints monitor Skill | guanlan-first-line-viewpoints-monitor v1.1.3 |
+| Community Intelligence monitor Skill | guanlan-community-intelligence-monitor v1.0.7 |
+| Follow-builders support Skill | follow-builders v1.0.1 |
+| Weekly business-change content Skill | guanlan-weekly-business-change-radar v1.2.0 |
+| Monthly business-structure content Skill | guanlan-monthly-business-structure-report v0.3.0 |
+| Daily source monitor Skill | guanlan-daily-monitor v1.2.0 |
+| Source-intake quality gate Skill | guanlan-monitor-quality-gate v1.2.0 |
+| Source-intake QC Skill | guanlan-daily-monitor-qc v1.2.0 |
 | Skill governance editor | guanlan-skill-editor v1.0.2 |
-| Code and rule auditor | guanlan-code-rule-auditor v1.0.2 |
+| Code and rule auditor | guanlan-code-rule-auditor v1.1.0 |
 | Operations backend version | OPS-V2.0.0-v4-telemetry |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
-| Skill Store version | v1.7.0 Funding Insights generation lane |
+| Skill Store version | v1.8.0 V4 retirement governance |
 | Git tag | `v4.3.0-compatibility-retired` |
 | Current entries | Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
 
@@ -89,14 +96,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Reports Center is versioned as `REPORTS-V1.1.0-lane-independent`; report content and rendering no longer depend on Opportunity Map or Direction Card generation succeeding.
 - Trend Radar is versioned independently as `TRADAR-V1.0.0-factual-change-explorer`. It reads accepted Data Center V4 events only, uses `dataDate` for daily/weekly/monthly aggregation, exposes observed batch-day coverage, and preserves event/entity/Claim/SourceArtifact/source traceability without scores, recommendations or report prose.
 - Funding Insights is versioned independently as `FUNDING-INSIGHT-V1.0-auto-published-research`. Verified funding events trigger secondary source capture and DeepSeek V4 Pro application research. Every published investor is explicitly named and exact-quote-backed; missing investors or evidence block that card. Automatic publication does not mutate canonical entities or relationships, and exact matches link cards to stable entity profiles, relationship views, funding history, competitors, customers, and reviewed Direction Cards.
-- Skill Store `v1.7.0` adds the governed Funding Insight generator, unique-event historical backfill, secondary source capture, DeepSeek V4 Pro card generation, and fail-closed publication. It does not change any factual data contract or public column boundary.
-- `guanlan-code-rule-auditor` v1.0.2 requires version audits to compare every active version surface and preserves pre-repair drift evidence before synchronization.
+- Skill Store `v1.8.0` migrates current source-intake, report, opportunity, agent, and audit instructions off retired V3 interfaces and extends retirement checks to governance and deployable data.
+- `guanlan-code-rule-auditor` v1.1.0 audits V4 facts, applications, operations, deployment, and the permanent V3-retirement boundary; a green runtime-only gate is no longer sufficient when current instructions or deployable files still reference retired inputs.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - No internal V3 compatibility data remains. Opportunity Map, historical analytics, Obsidian indexing, and operations read V4-native data only.
 - Current V4 lane skills must encode recurring failures in gates or evals.
 - Daily supervision and Codex handoff are routed through the consolidated Closure controller. The legacy Hermes inbox remains readable history only.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
-- Skill Store governance is versioned separately as `v1.7.0`. Current Skill metadata, evals, registry entries, and mirrors add the Funding Insights historical generation lane while preserving Data Center V4, Trend Radar, Opportunity Map, Reports Center, Community Intelligence, and governance boundaries.
+- Skill Store governance is versioned separately as `v1.8.0`. Current Skill metadata, evals, registry entries, mirrors, and dashboard enforce the V4 retirement boundary while preserving Data Center V4 and independent application lanes.
 - Deployment path is GitHub Pages only. Netlify is retired and must not be used for future website deployment.
 
 ## Current Pages

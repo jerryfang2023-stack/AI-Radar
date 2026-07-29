@@ -25,9 +25,9 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `context/02-vi-style.md` | VI, typography, visual style | UI, layout, brand assets |
 | `context/04-qc-rules.md` | General quality gates | Acceptance, release, closeout |
 | `context/05-daily-monitoring.md` | Daily monitoring minimum context | Raw / Pool / monitoring QC |
-| `context/06-execution-harness.md` | High-risk execution harness | Monitoring, Raw / Pool / Card, page changes |
+| `context/06-execution-harness.md` | High-risk execution harness | V4 source intake, fact build, application projections, page changes |
 | `context/07-v3-intelligence-generation-rules.md` | V3 retirement notice and explicit Git-history recovery boundary | Historical V3 audit only |
-| `context/08-v3-3-automation.md` | SITE-V4.2 GitHub / site / local Obsidian automation loop | GitHub Actions, data sync, local sync |
+| `context/08-v3-3-automation.md` | SITE-V4.3 GitHub / site / local Obsidian automation loop | GitHub Actions, data sync, local sync |
 | `context/09-v3-3-current-action-index.md` | Current V4 action registry | Action dispatch and automation recovery |
 | `context/10-v3-3-experience-automation.md` | Action logging and retrospective automation | Record meaningful actions, summarize mistakes and lessons |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes control-plane watchdog instructions | Controller liveness only; no lane supervision or repair |
@@ -63,7 +63,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 
 ## Paused Or Retired
 
-- Legacy content-output routes are not SITE-V4.2 required outputs.
+- Legacy content-output routes are not SITE-V4.3 required outputs.
 - Legacy copy gates are not publication blockers.
 - Follow-builders / builders viewpoints are active only as the independent first-line viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
