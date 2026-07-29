@@ -2,16 +2,16 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-V1.0",
     "date": "2026-07-29",
-    "generated_at": "2026-07-29T04:51:33.086Z",
+    "generated_at": "2026-07-29T14:31:05.460Z",
     "trigger": "verified_daily_funding_events",
     "research_provider": "tavily+exa+deepseek",
     "model": "deepseek-v4-pro",
     "human_review_required": false,
     "auto_publish_gate": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.0",
     "counts": {
-      "funding_events": 5,
+      "funding_events": 6,
       "auto_published": 3,
-      "blocked": 2,
+      "blocked": 3,
       "pending": 0
     }
   },
@@ -2313,6 +2313,17 @@
       "updated_at": "2026-07-29T04:48:47.313Z"
     },
     {
+      "event_id": "EV-faf8db3567f108e2",
+      "company_name": "",
+      "status": "blocked",
+      "problems": [
+        "subject_company_unresolved"
+      ],
+      "queries": [],
+      "attempts": [],
+      "updated_at": "2026-07-29T14:31:05.453Z"
+    },
+    {
       "event_id": "EV-33b3cf34f8ff7bd8",
       "company_name": "Multiverse Computing",
       "status": "auto_published",
@@ -2499,7 +2510,7 @@
       ],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-07-29T04:51:33.079Z"
+      "updated_at": "2026-07-29T14:31:05.453Z"
     },
     {
       "event_id": "EV-e2e51316d0075b44",
@@ -2510,7 +2521,7 @@
       ],
       "queries": [],
       "attempts": [],
-      "updated_at": "2026-07-29T04:51:33.079Z"
+      "updated_at": "2026-07-29T14:31:05.453Z"
     }
   ]
 }

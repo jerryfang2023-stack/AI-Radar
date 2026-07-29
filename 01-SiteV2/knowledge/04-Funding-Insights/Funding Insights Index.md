@@ -2,7 +2,7 @@
 type: funding_insight_index
 sync_owner: guanlan-funding-insight-obsidian-sync
 card_count: 210
-updated_at: "2026-07-29T04:51:33.086Z"
+updated_at: "2026-07-29T14:31:05.460Z"
 source: "01-SiteV2/site/data/funding-insights-v1.json"
 ---
 
