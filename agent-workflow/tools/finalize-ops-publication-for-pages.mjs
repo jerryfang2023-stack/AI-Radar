@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
+import { V3_RETIRED_COMPATIBILITY } from "./lib/collection-telemetry-v1.mjs";
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -37,6 +38,10 @@ export function finalizeOpsPublicationData({
   const telemetry = readJson(telemetryFile);
   telemetry.publication = evidence;
   telemetry.stages = updateStage(telemetry.stages, status, evidence);
+  telemetry.deprecated_compatibility = {
+    ...V3_RETIRED_COMPATIBILITY,
+    warnings: [],
+  };
   writeJson(telemetryFile, telemetry);
 
   const pipelineFile = path.join(dataDir, "pipeline-dashboard.json");

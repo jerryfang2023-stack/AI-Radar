@@ -84,6 +84,12 @@ test("Pages artifact finalization marks publication passed with deployment evide
   writeJson(root, "01-SiteV2/site/data/collection-telemetry-v1.json", {
     publication: { status: "waiting" },
     stages,
+    deprecated_compatibility: {
+      status: "deprecated_non_blocking",
+      v3_desk_present: true,
+      intelligence_graph_present: true,
+      signal_card_directory_present: true,
+    },
   });
   writeJson(root, "01-SiteV2/site/data/pipeline-dashboard.json", {
     meta: {},
@@ -108,6 +114,13 @@ test("Pages artifact finalization marks publication passed with deployment evide
   const ops = JSON.parse(fs.readFileSync(path.join(dataDir, "ops-console.json"), "utf8"));
   assert.equal(telemetry.publication.status, "passed");
   assert.equal(telemetry.stages[0].status, "passed");
+  assert.deepEqual(telemetry.deprecated_compatibility, {
+    status: "retired_archive",
+    production_write: "disabled",
+    active_consumers: 0,
+    blocking: false,
+    warnings: [],
+  });
   assert.equal(pipeline.latest.publication.commit, "abc123");
   assert.equal(ops.tasks.stages[0].status, "passed");
   assert.match(fs.readFileSync(path.join(dataDir, "ops-console.js"), "utf8"), /abc123/u);

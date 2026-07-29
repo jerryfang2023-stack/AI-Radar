@@ -3,6 +3,12 @@ import path from "node:path";
 
 export const COLLECTION_TELEMETRY_VERSION = "COLLECTION-TELEMETRY-V1.0";
 export const OPS_VERSION = "OPS-V2.0.0-v4-telemetry";
+export const V3_RETIRED_COMPATIBILITY = Object.freeze({
+  status: "retired_archive",
+  production_write: "disabled",
+  active_consumers: 0,
+  blocking: false,
+});
 
 function readJson(file, fallback) {
   try {
@@ -101,12 +107,6 @@ export function buildCollectionTelemetry({
       : "unknown";
 
   const publicationOutcome = normalizedOutcome(outcomes.publication || persistentManifest?.outcomes?.pre_commit_gate);
-  const compatibility = {
-    status: "retired_archive",
-    production_write: "disabled",
-    active_consumers: 0,
-    blocking: false,
-  };
   const compatibilityWarnings = [];
 
   const stages = [
@@ -162,7 +162,7 @@ export function buildCollectionTelemetry({
     },
     stages,
     deprecated_compatibility: {
-      ...compatibility,
+      ...V3_RETIRED_COMPATIBILITY,
       warnings: compatibilityWarnings,
     },
   };
