@@ -23,6 +23,7 @@ const cardGenerator = read("agent-workflow/tools/generate-asset-cards-from-pool.
 const qualityGates = read("agent-workflow/tools/run-quality-gates.mjs");
 const dataCenterFrontstageTest = read("agent-workflow/tools/tests/data-center-frontstage.test.mjs");
 const coreSiteTestCommand = packageJson.scripts?.["test:data-center-site:core"] || "";
+const opportunitySiteTestCommand = packageJson.scripts?.["test:data-center-site:opportunity"] || "";
 const compatibilitySiteTestCommand = packageJson.scripts?.["test:data-center-site:compatibility"] || "";
 const dailySupervision = read("agent-workflow/tools/write-daily-supervision-report.mjs");
 const editorialGate = read("agent-workflow/tools/assert-signal-card-editorial-quality.mjs");
@@ -104,11 +105,14 @@ if (/v3-data-observation-desk\.json|legacyDesk|legacyCurrentCards/u.test(dataCen
 if (/industry-reports-frontstage\.test\.mjs/u.test(coreSiteTestCommand)) {
   problems.push("Data Center V4 core test command still runs the downstream Industry Reports compatibility suite");
 }
-if (!/industry-reports-frontstage\.test\.mjs/u.test(compatibilitySiteTestCommand)) {
-  problems.push("Industry Reports compatibility tests are not isolated in the compatibility test command");
+if (!/industry-reports-frontstage\.test\.mjs/u.test(opportunitySiteTestCommand)) {
+  problems.push("Opportunity Map V4 tests are not isolated in the opportunity test command");
 }
-if (!/npm run test:data-center-site:compatibility/u.test(workflow)) {
-  problems.push("production workflow does not run compatibility tests after rebuilding compatibility projections");
+if (/industry-reports-frontstage\.test\.mjs|opportunity-direction-cards-deepseek\.test\.mjs/u.test(compatibilitySiteTestCommand)) {
+  problems.push("V3 compatibility tests still own Opportunity Map V4 tests");
+}
+if (!/npm run test:data-center-site:opportunity/u.test(workflow) || !/npm run test:data-center-site:opportunity/u.test(dryRunWorkflow)) {
+  problems.push("production workflows do not run the independent Opportunity Map V4 test command");
 }
 if (!/stage_if_exists "01-SiteV2\/content\/11-databases\/source-title-translations\.json"/u.test(workflow)) {
   problems.push("production workflow does not persist approved source-title translations with Raw assets");

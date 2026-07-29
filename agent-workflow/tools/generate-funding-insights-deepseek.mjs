@@ -314,7 +314,7 @@ async function researchSources(bundle, event, company) {
 }
 
 function directionManifest() {
-  const file = path.join(root, "01-SiteV2/site/data/industry-reports-frontstage.json");
+  const file = path.join(root, "01-SiteV2/site/data/opportunity-evidence-v2.json");
   return (readJson(file, {})?.directionCards || []).map((card) => ({ id: card.id, title: card.title }));
 }
 

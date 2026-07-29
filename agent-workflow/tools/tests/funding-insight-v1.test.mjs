@@ -95,6 +95,8 @@ function writeDailyFundingFixture(projectRoot, events) {
 test("自动发布门禁要求明确投资方及产品证据", () => {
   const card = validCard();
   assert.deepEqual(fundingInsightProblems(card), []);
+  card.analysis.related_direction_id = "";
+  assert.deepEqual(fundingInsightProblems(card), [], "a funding event may publish without a matching Direction Card");
   card.financing.investors = [];
   assert.ok(fundingInsightProblems(card).includes("investors_missing"));
 });
@@ -517,7 +519,7 @@ test("前台构建只发布通过门禁的卡片并生成双向链接", () => {
       cards: [validCard(), blocked],
       queue: [],
     }));
-    fs.writeFileSync(path.join(dataDir, "industry-reports-frontstage.json"), JSON.stringify({
+    fs.writeFileSync(path.join(dataDir, "opportunity-evidence-v2.json"), JSON.stringify({
       directionCards: [{ id: "DIR-1", title: "企业智能代理的可重复交付" }],
     }));
     fs.writeFileSync(path.join(entityIndexDir, "entities.json"), JSON.stringify({

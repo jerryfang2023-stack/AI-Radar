@@ -73,8 +73,11 @@ const opportunityBuilder = read("01-SiteV2/site/scripts/build-industry-reports-f
 if (opportunityBuilder.includes("v3-data-observation-desk.json")) {
   problems.push("Opportunity Map projection still reads the V3 desk");
 }
-if (!opportunityBuilder.includes("01-SiteV2/knowledge/01-Signal-Cards")) {
-  problems.push("Opportunity Map projection does not declare its accepted Signal Card adapter");
+if (!opportunityBuilder.includes("opportunity-evidence-v2.mjs")) {
+  problems.push("Opportunity Map projection does not declare its V4 CanonicalEvent/Claim adapter");
+}
+if (opportunityBuilder.includes("01-SiteV2/knowledge/01-Signal-Cards")) {
+  problems.push("Opportunity Map projection still reads accepted Signal Cards");
 }
 
 const periodicController = read("agent-workflow/tools/run-periodic-automation-controller.mjs");

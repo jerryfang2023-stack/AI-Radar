@@ -1,5 +1,5 @@
 {
-  "schema_version": "direction-cards-v2",
+  "schema_version": "direction-cards-v3-v4-evidence",
   "updated_at": "2026-07-25",
   "review_mode": "human_reviewed_deepseek_draft",
   "draft_provenance": {
@@ -20,7 +20,7 @@
       "pain": "前沿模型API成本高企，且开源模型切换复杂，缺乏统一的成本与性能管理工具",
       "product_wedge": "一个根据任务类型、延迟和成本自动路由请求的模型网关",
       "current_alternatives": "手动在多个模型API间切换，或使用Runway Media Router等初步的自动切换工具",
-      "why_now": "SIG-20260707-A08指出开源模型推理成本极低且切换成本低，对前沿模型定价构成压力；SIG-20260725-A23显示Runway已推出根据场景自动切换模型以节省成本的路由器，表明市场正在形成此类需求。两者共同揭示了从使用单一模型到多模型动态路由的转变正在发生。",
+      "why_now": "EV-3e5da88ce004fcf3 显示 Cursor 已推出请求级模型路由器，以更低成本维持前沿编码质量；EV-2ca230a3dec71ba6 显示 Runway 已部署根据场景自动切换模型的媒体路由器。两个不同主体的已验收事件共同表明，多模型动态路由正在从成本讨论转为实际产品与部署。",
       "counter_signal": "如果主流开源模型在关键企业基准测试中的可靠性得分持续低于闭源模型，或者模型路由带来的延迟增加导致关键业务应用无法接受，则该判断被推翻。",
       "unknowns": [
         "模型路由决策引入的额外延迟，在延迟敏感型任务中是否会被用户容忍？",
@@ -29,9 +29,30 @@
       "validation_action": "与5个使用多个模型API的工程团队访谈，验证他们是否已在手动进行模型切换以优化成本，并量化他们每月因缺乏自动化路由而浪费的推理费用。",
       "reviewed_at": "2026-07-25",
       "minimum_evidence": 2,
-      "evidence_card_ids": [
-        "SIG-20260707-A08",
-        "SIG-20260725-A23"
+      "evidence_refs": [
+        {
+          "event_id": "EV-3e5da88ce004fcf3",
+          "claim_refs": [
+            "CL-0a0a652be7d568e9",
+            "CL-9794e466b1dbb4f9",
+            "CL-b97835c526656871",
+            "CL-44753af41b8c40bc"
+          ],
+          "source_refs": [
+            "SA-841b91de97897a67"
+          ]
+        },
+        {
+          "event_id": "EV-2ca230a3dec71ba6",
+          "claim_refs": [
+            "CL-79d0e175e018b170",
+            "CL-baaf7193ed98b4be",
+            "CL-4886c69fac0db0ed"
+          ],
+          "source_refs": [
+            "SA-9961ac9be4c55bd0"
+          ]
+        }
       ]
     },
     {
@@ -45,7 +66,7 @@
       "pain": "AI智能体开始具备自主执行能力，但其操作不透明，可能带来数据删除、权限滥用等安全风险",
       "product_wedge": "一个能拦截智能体高风险操作、记录行为日志并强制执行权限策略的中间件",
       "current_alternatives": "依赖操作系统层面的权限控制，或完全禁用智能体的写操作能力，缺乏针对AI行为的细粒度审计工具",
-      "why_now": "SIG-20260718-A25报道了GPT-5.6 Sol意外删除用户文件的事件，暴露了高级模型自主操作的风险；同时，SIG-20260704-A04介绍的WebBrain等开源项目已让智能体具备在浏览器中执行点击、输入等操作的能力。两者共同表明，智能体的“行动”能力正在快速增强，而相应的安全事件已经出现，创造了紧迫的治理需求。",
+      "why_now": "EV-a68475d82ec939b5 记录了 OpenAI 对智能体意外删除用户文件的回应与风险缓解；EV-ab93c7a2f4178e93 记录了 Claude Cowork 可读写 Mac 任意文件的漏洞。两个不同主体的已验收事件共同表明，智能体写操作已经带来可验证的权限边界与治理问题。",
       "counter_signal": "如果主流企业AI平台（如Microsoft Copilot, GitHub Copilot）默认不开放或严格限制智能体的文件写入和执行能力，导致该问题在短期内不普遍，则该判断的市场时机不成熟。",
       "unknowns": [
         "企业是倾向于购买独立的智能体安全产品，还是期望模型供应商或云平台内置这些功能？",
@@ -54,9 +75,31 @@
       "validation_action": "与10位负责评估或部署AI智能体的企业安全工程师进行访谈，了解他们当前如何管理智能体的文件系统和网络访问权限，并询问他们对GPT-5.6 Sol文件删除事件的看法及应对措施。",
       "reviewed_at": "2026-07-25",
       "minimum_evidence": 2,
-      "evidence_card_ids": [
-        "SIG-20260718-A25",
-        "SIG-20260704-A04"
+      "evidence_refs": [
+        {
+          "event_id": "EV-a68475d82ec939b5",
+          "claim_refs": [
+            "CL-6aa01720dbc6285a",
+            "CL-e7bf0d793338ed13",
+            "CL-ac6dea5ec76009be",
+            "CL-fda63f0ba624a06f"
+          ],
+          "source_refs": [
+            "SA-e7fbbb0f6c048cd5"
+          ]
+        },
+        {
+          "event_id": "EV-ab93c7a2f4178e93",
+          "claim_refs": [
+            "CL-0627a90b3374d94a",
+            "CL-c2ba4bd65e95790b",
+            "CL-3a1da7376b6f8316",
+            "CL-d0d0b687dc963fdc"
+          ],
+          "source_refs": [
+            "SA-5fcf49f81eb8277f"
+          ]
+        }
       ]
     }
   ]

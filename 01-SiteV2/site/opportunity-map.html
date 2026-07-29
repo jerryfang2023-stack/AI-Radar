@@ -7,7 +7,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <meta name="wavesight-version" content="SITE-V4.2.0-entity-history">
-  <meta name="wavesight-column-version" content="OMAP-V1.1.0-direction-cards">
+  <meta name="wavesight-column-version" content="OMAP-V2.0.0-v4-evidence">
   <meta name="weekly-report-source" content="01-SiteV2/content/08-report/">
   <meta name="monthly-report-source" content="01-SiteV2/content/08-report/monthly/">
   <title>机会地图｜观澜 AI</title>
@@ -499,12 +499,12 @@
       const root = $("[data-cell-inspector]");
       if (!cell?.count) { return; }
       const boundary = cell.stats.strong ? `强证据 ${cell.stats.strong} 条，包含部署、融资、采购、合作或定价信号。` : cell.stats.launch ? "证据偏供给侧，主要来自产品发布、开源或技术材料，需要继续补客户结果。" : "有重复信号，但客户部署、采购或结果数据仍不足。";
-      root.innerHTML = `<p class="kicker">${cell.type === "entry" ? "Entry Point Cell" : "Product Pain Cell"}</p><h3 id="cell-modal-title">${escapeHtml(cell.row)} × ${escapeHtml(cell.col)}</h3><p>${cell.count} 条 7 日 Cards，30 日基线 ${cell.baseline} 条；状态为 <b>${statusText(cell.status)}</b>。${boundary}</p><div class="legend" style="margin-top:12px"><span class="${statusClass(cell.status)}">${statusText(cell.status)}</span><span>代表主体：${escapeHtml(cell.stats.subjects.join(" / ") || "未提取")}</span></div><div class="item-list">${cell.cards.slice(0,5).map((card) => card.sourceUrl ? `<a class="evidence" href="${safeHref(card.sourceUrl)}" target="_blank" rel="noopener noreferrer"><b>${escapeHtml(card.title)}</b><span>${escapeHtml(card.id)} · ${escapeHtml(card.categoryLabel || card.category || "Card")} · ${escapeHtml(card.date)} · ${escapeHtml(card.sourceName || "")}</span></a>` : `<article class="evidence"><b>${escapeHtml(card.title)}</b><span>${escapeHtml(card.id)} · ${escapeHtml(card.categoryLabel || card.category || "Card")} · ${escapeHtml(card.date)} · ${escapeHtml(card.sourceName || "")}</span></article>`).join("")}</div>`;
+      root.innerHTML = `<p class="kicker">${cell.type === "entry" ? "Entry Point Cell" : "Product Pain Cell"}</p><h3 id="cell-modal-title">${escapeHtml(cell.row)} × ${escapeHtml(cell.col)}</h3><p>${cell.count} 条 7 日 V4 事件证据，30 日基线 ${cell.baseline} 条；状态为 <b>${statusText(cell.status)}</b>。${boundary}</p><div class="legend" style="margin-top:12px"><span class="${statusClass(cell.status)}">${statusText(cell.status)}</span><span>代表主体：${escapeHtml(cell.stats.subjects.join(" / ") || "未提取")}</span></div><div class="item-list">${cell.cards.slice(0,5).map((card) => card.sourceUrl ? `<a class="evidence" href="${safeHref(card.sourceUrl)}" target="_blank" rel="noopener noreferrer"><b>${escapeHtml(card.title)}</b><span>${escapeHtml(card.id)} · ${escapeHtml(card.categoryLabel || card.category || "事件")} · ${escapeHtml(card.date)} · ${escapeHtml(card.sourceName || "")}</span></a>` : `<article class="evidence"><b>${escapeHtml(card.title)}</b><span>${escapeHtml(card.id)} · ${escapeHtml(card.categoryLabel || card.category || "事件")} · ${escapeHtml(card.date)} · ${escapeHtml(card.sourceName || "")}</span></article>`).join("")}</div>`;
       $("[data-cell-modal]").hidden = false;
       $("[data-modal-close]").focus();
     }
     function renderTop(cells) {
-      $("[data-top-cells]").innerHTML = cells.filter((c) => c.count).sort((a,b) => b.count - a.count).slice(0,4).map((cell) => `<article class="top-cell"><p class="kicker">${statusText(cell.status)}</p><b>${cell.row} × ${cell.col}</b><span>${cell.count} 条 7 日 Cards，代表主体：${cell.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span></article>`).join("");
+      $("[data-top-cells]").innerHTML = cells.filter((c) => c.count).sort((a,b) => b.count - a.count).slice(0,4).map((cell) => `<article class="top-cell"><p class="kicker">${statusText(cell.status)}</p><b>${cell.row} × ${cell.col}</b><span>${cell.count} 条 7 日 V4 事件证据，代表主体：${cell.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span></article>`).join("");
     }
     function directionStatusText(status) {
       return ({ validation_ready:"值得验证", forming:"线索形成", tracking:"持续跟踪" })[status] || "持续跟踪";
@@ -553,8 +553,8 @@
       lastModalTrigger = null;
     }
     async function init() {
-      const payload = await fetch("data/industry-reports-frontstage.json", { cache: "no-store" }).then((r) => r.json());
-      const cards = (payload.cards || []).filter((c) => c.category !== "opinion");
+      const payload = await fetch("data/opportunity-evidence-v2.json", { cache: "no-store" }).then((r) => r.json());
+      const cards = (payload.evidence || []).filter((c) => c.category !== "opinion");
       const activeDate = payload.meta?.activeDate || cards.map((c) => c.date).sort().at(-1);
       $("[data-map-updated]").textContent = activeDate || "未提供";
       state.entryCells = buildCells(cards, activeDate, entryRows, entryCols, "entry");

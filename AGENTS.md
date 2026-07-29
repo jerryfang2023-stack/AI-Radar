@@ -14,8 +14,8 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
 - Current Enterprise AI / FDE data version: FDE-V2.0.
 - Current AI Hardware data version: HARDWARE-V1.0.
-- Current Reports Center column version: REPORTS-V1.0.0-periodic-report-center.
-- Current Opportunity Map column version: OMAP-V1.1.0-direction-cards.
+- Current Reports Center column version: REPORTS-V1.1.0-lane-independent.
+- Current Opportunity Map column version: OMAP-V2.0.0-v4-evidence.
 - Current Trend Radar column version: TRADAR-V1.0.0-factual-change-explorer.
 - Current Raw contract: RAW-V3.0.
 - Current canonical event contract: EVENT-V1.1.

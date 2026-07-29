@@ -270,7 +270,7 @@ test("industry reports uses the V4 sidebar and contains reports only", () => {
   assert.match(html, /href="opportunity-map\.html">机会地图/u);
   assert.match(html, /class="report-feature-grid"/u);
   assert.ok(weeklyFeaturePosition >= 0 && weeklyFeaturePosition < monthlyFeaturePosition);
-  assert.match(html, /REPORTS-V1\.0\.0-periodic-report-center/u);
+  assert.match(html, /REPORTS-V1\.1\.0-lane-independent/u);
   assert.match(html, /class="report-archive-grid"/u);
   assert.ok(weeklyArchivePosition >= 0 && weeklyArchivePosition < monthlyArchivePosition);
   assert.match(html, /最新月报/u);
@@ -291,12 +291,12 @@ test("opportunity map is an independent application-center column", () => {
   assert.match(html, /href="intelligence-map\.html">行业报告/u);
   assert.match(html, /href="opportunity-map\.html" aria-current="page">机会地图/u);
   assert.match(html, /id="entry-map"/u);
-  assert.match(html, /OMAP-V1\.1\.0-direction-cards/u);
+  assert.match(html, /OMAP-V2\.0\.0-v4-evidence/u);
   assert.match(html, /id="pain-map"/u);
   assert.match(html, /data-map-panel="entry"/u);
   assert.match(html, /data-map-panel="pain"/u);
   assert.match(html, /data-cell-modal/u);
-  assert.match(html, /data\/industry-reports-frontstage\.json/u);
+  assert.match(html, /data\/opportunity-evidence-v2\.json/u);
   assert.doesNotMatch(html, /最新月报|最新周报|report-feature-grid/u);
 });
 

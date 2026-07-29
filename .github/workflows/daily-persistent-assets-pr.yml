@@ -344,6 +344,18 @@ jobs:
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-data-center-v4-frontstage.log"
           npm run test:data-center-site:core
 
+      - name: Build and gate Opportunity Map V4 projection
+        id: opportunity-map-v4
+        if: steps.data-center-v4-materialize.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-opportunity-map-v4.log"
+          npm run test:data-center-site:opportunity
+
       - name: Build and gate Trend Radar projection
         id: trend-radar-projection
         if: steps.data-center-v4-materialize.outcome == 'success'
@@ -409,7 +421,7 @@ jobs:
           node agent-workflow/tools/build-legacy-card-event-mappings.mjs
           node agent-workflow/tools/build-data-center-v4-obsidian-index.mjs
 
-      - name: Build internal Card compatibility data and Opportunity Map projection
+      - name: Build internal Card compatibility data
         id: business-frontstage-data
         if: steps.card-editorial-gate.outcome == 'success'
         continue-on-error: true
@@ -418,8 +430,6 @@ jobs:
           set -o pipefail
           node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-frontstage-data.log"
-          node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-opportunity-map-frontstage.log"
           npm run test:data-center-site:compatibility
 
       - name: Run unified Business Signals frontstage gate
@@ -524,7 +534,7 @@ jobs:
           | Business signals | $(state_for "$signal_file") |
           | Signal card files | ${signal_card_count} |
           | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
-          | Opportunity Map application data | $(state_for "01-SiteV2/site/data/industry-reports-frontstage.json") |
+          | Opportunity Map V4 evidence | $(state_for "01-SiteV2/site/data/opportunity-evidence-v2.json") |
           | Intelligence graph index | $(state_for "01-SiteV2/site/data/intelligence-graph-index.json") |
           | Operations dashboard data | $(state_for "01-SiteV2/site/data/pipeline-dashboard.json") |
 
@@ -549,6 +559,7 @@ jobs:
               "data_center_v4_build": "${{ steps.data-center-v4.outcome }}",
               "data_center_v4_gate": "${{ steps.data-center-v4-gate.outcome }}",
               "data_center_v4_materialize": "${{ steps.data-center-v4-materialize.outcome }}",
+              "opportunity_map_v4": "${{ steps.opportunity-map-v4.outcome }}",
               "trend_radar_projection": "${{ steps.trend-radar-projection.outcome }}",
               "funding_insights": "${{ steps.funding-insights.outcome }}",
               "asset_generation": "${{ steps.assets.outcome }}",
@@ -570,7 +581,7 @@ jobs:
               "business_signals": "$(state_for "$signal_file")",
               "signal_card_files": ${signal_card_count},
               "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")",
-              "opportunity_map_frontstage": "$(state_for "01-SiteV2/site/data/industry-reports-frontstage.json")",
+              "opportunity_map_v4_evidence": "$(state_for "01-SiteV2/site/data/opportunity-evidence-v2.json")",
               "intelligence_graph_index": "$(state_for "01-SiteV2/site/data/intelligence-graph-index.json")",
               "operations_dashboard_data": "$(state_for "01-SiteV2/site/data/pipeline-dashboard.json")"
             }
@@ -627,7 +638,7 @@ jobs:
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
             01-SiteV2/site/data/v3-data-observation-desk.json
-            01-SiteV2/site/data/industry-reports-frontstage.json
+            01-SiteV2/site/data/opportunity-evidence-v2.json
             01-SiteV2/site/data/intelligence-graph-index.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
@@ -692,6 +703,10 @@ jobs:
             stage_if_exists "01-SiteV2/site/data/funding-insights-v1.json"
           fi
 
+          if [ "${{ steps.opportunity-map-v4.outcome }}" = "success" ]; then
+            stage_if_exists "01-SiteV2/site/data/opportunity-evidence-v2.json"
+          fi
+
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.assets.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
             stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.json"
@@ -717,10 +732,6 @@ jobs:
           if [ "${{ steps.operations-data.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
-          fi
-
-          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.business-frontstage-data.outcome }}" = "success" ]; then
-            stage_if_exists "01-SiteV2/site/data/industry-reports-frontstage.json"
           fi
 
           if git diff --cached --quiet; then

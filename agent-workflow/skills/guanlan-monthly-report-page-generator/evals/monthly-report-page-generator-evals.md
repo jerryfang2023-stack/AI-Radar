@@ -49,6 +49,6 @@
 7. Fail if the page has horizontal overflow at 390px mobile width.
 8. Fail if a skill update is made but `.skill-store` sync and registry rebuild are skipped.
 9. Fail if page generation runs before the content acceptance gate.
-10. Fail if a monthly report page restores shared `IMAP-V2.1.0` metadata or emits any Opportunity Map column metadata, including `OMAP-V1.1.0-direction-cards`.
+10. Fail if a monthly report page restores shared `IMAP-V2.1.0` metadata or emits any Opportunity Map column metadata, including `OMAP-V2.0.0-v4-evidence`.
 11. Fail if a newly published monthly source leaves the Reports Center first-screen card on an older month or requires a manual HTML edit.
 12. Fail if any published report page exposes raw `[E:...]`, `[O:...]`, or `[C:...]` identifiers, or styles them as backend evidence badges.

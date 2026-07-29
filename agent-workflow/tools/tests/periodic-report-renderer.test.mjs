@@ -15,7 +15,7 @@ import {
 } from "../render-periodic-report-pages.mjs";
 
 test("periodic renderer owns the report-center release version", () => {
-  assert.equal(REPORTS_CENTER_VERSION, "REPORTS-V1.0.0-periodic-report-center");
+  assert.equal(REPORTS_CENTER_VERSION, "REPORTS-V1.1.0-lane-independent");
 });
 
 test("periodic report titles carry tension and a business consequence", () => {

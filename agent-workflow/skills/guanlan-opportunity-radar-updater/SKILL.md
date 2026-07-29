@@ -1,6 +1,6 @@
 ---
 name: guanlan-opportunity-radar-updater
-description: "Use when updating, rebuilding, auditing, or explaining the independent Opportunity Map column at OMAP-V1.1.0: Entry Point Map, Product Pain Map, and reviewed Direction Cards. Applies to weekly refreshes of opportunity_signals, DeepSeek V4 Pro Direction Card candidate writing, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, human-reviewed startup hypotheses, evidence modal behavior, and repairs when these surfaces become generic, label-driven, merged into Industry Reports, or disconnected from original articles. Do not use for weekly/monthly report prose, Reports Center pages, trend candidates, or old formal_tags aggregation."
+description: "Use when updating, rebuilding, auditing, or explaining the independent Opportunity Map column at OMAP-V2.0.0: Entry Point Map, Product Pain Map, and reviewed Direction Cards. Applies to V4 Event/Claim/Source evidence projection, DeepSeek V4 Pro Direction Card candidate writing, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, human-reviewed startup hypotheses, evidence modal behavior, and repairs when these surfaces become generic, label-driven, merged into Industry Reports, or disconnected from original articles. Do not use for weekly/monthly report prose, Reports Center pages, trend candidates, Signal Card adapters, or old formal_tags aggregation."
 metadata:
   guanlan:
     version: "1.4.0"
@@ -8,9 +8,9 @@ metadata:
     status: "downstream application"
     order: 92
     responsibility: "Own the independent source-backed Opportunity Map projection and frontstage: Entry Point Map, Product Pain Map, and reviewed Direction Cards."
-    upstream: "Business Signal Cards, original source excerpts, opportunity_signals taxonomy"
-    downstream: "opportunity-map.html, industry-reports-frontstage.json, opportunity-direction-cards.json, source-near opportunity field repairs, evidence modal behavior, weekly opportunity radar notes"
-    gates: "OMAP version boundary, weekly cadence, source-backed opportunity_signals, reviewed direction definitions, no old formal_tags aggregation, map-specific evidence thresholds, independent map page, no Relation Paths, evidence modal smoke, frontstage regression"
+    upstream: "Accepted V4 CanonicalEvents, Claims, SourceArtifacts, Entities, FacetAssertions"
+    downstream: "opportunity-map.html, opportunity-evidence-v2.json, opportunity-direction-cards.json, Claim-bound application assertions, evidence modal behavior, weekly opportunity radar notes"
+    gates: "OMAP version boundary, accepted Claim/Source refs, reviewed direction definitions, no Signal Card fallback, no old formal_tags aggregation, map-specific evidence thresholds, independent map page, no Relation Paths, evidence modal smoke, frontstage regression"
     recent_learning: "DeepSeek V4 Pro may write Direction Card titles and content, but generated candidates stay pending until evidence, unsupported numbers, judgment depth, and falsifiability pass gates plus human review."
     mirrored_in_skill_store: true
     memory_required: false
@@ -26,9 +26,9 @@ Use this skill to update the independent `01-SiteV2/site/opportunity-map.html` c
 
 - `Entry Point Map`: buyer or user x specific task.
 - `Product Pain Map`: pain or constraint x product form / delivery model.
-- `Direction Cards`: a small set of DeepSeek V4 Pro-drafted, human-reviewed startup hypotheses linked to accepted Cards and original sources.
+- `Direction Cards`: a small set of DeepSeek V4 Pro-drafted, human-reviewed startup hypotheses linked to accepted V4 Events, Claims, and SourceArtifacts.
 
-Do not write weekly/monthly report prose with this skill. The map evidence comes from `opportunity_signals`; retired relation-path modules must not return to the page.
+Do not write weekly/monthly report prose with this skill. The map evidence comes from Claim-bound downstream application assertions; retired relation-path and Signal Card adapters must not return to the page.
 
 ## Required Reads
 
@@ -47,18 +47,18 @@ Run as part of the consolidated weekly report task every Monday at 10:30 Asia/Sh
 
 Default window:
 
-- Primary update window: latest 7 complete days of Business Signal Cards.
+- Primary update window: latest 30 days of accepted V4 evidence, with weekly editorial review of Direction Cards.
 - Baseline comparison: previous 30 days.
 - Context check: 90 days only when deciding whether a cell is persistent, newly warming, or a one-off spike.
 
-Do not run a full map rewrite every day. Daily Cards may add `opportunity_signals`, but the map interpretation should be reviewed weekly so it reflects accumulated evidence rather than news noise.
+The deterministic V4 evidence projection may rebuild daily. Direction Card interpretation should be reviewed weekly so it reflects accumulated evidence rather than news noise.
 
 This skill does not own an independent scheduled task. Its refresh completes before weekly report content generation so Opportunity Map and downstream reports may read the same accepted projection without sharing page ownership or version metadata.
 
 ## Workflow
 
 1. Confirm the week window and active data source.
-2. Rebuild or audit `opportunity_signals` from original source text, source excerpts, and Card facts.
+2. Rebuild or audit application assertions from exact accepted Claims and their SourceArtifact references.
 3. Keep only source-near fields that the source supports:
    - buyer/user;
    - team/function;
@@ -74,7 +74,7 @@ This skill does not own an independent scheduled task. Its refresh completes bef
    - `Product Pain Map`: pain rows x product-form or delivery-model columns.
 5. Compare 7-day cells against the 30-day baseline.
 6. Leave unsupported cells blank. A blank cell is better than a vague cell.
-7. Send only accepted 30-day Card IDs, source excerpts, original URLs, actors, and `opportunity_signals` to `deepseek-v4-pro`; require 2–3 candidate directions with judgmental titles, a structural judgment, a falsifiable hypothesis, a counter-signal, unknowns, and a first validation action.
+7. Send only accepted 30-day Event IDs, Claim refs, Source refs, source excerpts, original URLs, actors, and downstream assertions to `deepseek-v4-pro`; require 2–3 candidate directions with judgmental titles, a structural judgment, a falsifiable hypothesis, a counter-signal, unknowns, and a first validation action.
 8. Keep generated candidates in `opportunity-direction-card-candidates.json` with `pending_human_review`; DeepSeek output cannot publish or replace `opportunity-direction-cards.json` automatically.
 9. Human-review a maximum of a few Direction Cards. Reject unsupported numbers, absolute or promotional language, weak actor diversity, evidence mismatches, and category-name titles before promotion.
 10. Keep the two maps as separate sections on `opportunity-map.html`; Direction Cards are a third full-width section, not a new top-level navigation item and not a replacement for either map.
@@ -85,9 +85,9 @@ This skill does not own an independent scheduled task. Its refresh completes bef
 
 Allowed evidence:
 
-- accepted Business Signal Cards;
+- accepted V4 CanonicalEvents and exact Claims;
 - source URL and original source excerpt;
-- source-backed `opportunity_signals`;
+- Claim-bound downstream application assertions;
 - first-party announcement, case study, customer deployment, funding news, procurement, pricing, product launch, technical release, or credible business media.
 
 Disallowed as direct map evidence:
@@ -135,18 +135,18 @@ The weekly output should support these decisions:
 
 When a cell is highlighted, include at least one Card id or source title in the supporting notes or report. When no support exists, do not highlight it.
 
-Direction Cards require at least two accepted Cards and should prefer multiple actors or evidence forms. A single funding event, product launch, broad topic label, or model-generated aggregation cannot publish a Direction Card.
+Direction Cards require at least two accepted Events with explicit Claim and Source references and should prefer multiple actors or evidence forms. A single funding event, product launch, broad topic label, or model-generated aggregation cannot publish a Direction Card.
 
 ## Validation
 
 Before finishing:
 
-1. Verify both maps and reviewed Direction Cards render only in `01-SiteV2/site/opportunity-map.html`, under `OMAP-V1.1.0-direction-cards`.
+1. Verify both maps and reviewed Direction Cards render only in `01-SiteV2/site/opportunity-map.html`, under `OMAP-V2.0.0-v4-evidence`.
 2. Verify Reports Center contains no opportunity matrices or OMAP metadata.
 3. Verify no `Relation Paths`, `Signal Candidates`, old time-clustering, or old tag-aggregation module returns.
 4. Verify the old map toggle buttons and persistent right-side evidence panel do not return.
-5. Verify relation path data was not converted into `opportunity_signals`.
-6. Verify every Direction Card resolves to at least two accepted Cards and original-source URLs, and that no Direction Card was generated from tag frequency alone.
+5. Verify relation path or Signal Card data was not converted into application assertions.
+6. Verify every Direction Card resolves to at least two accepted Events with accepted Claim refs and original-source URLs, and that no Direction Card was generated from tag frequency alone.
 7. Verify candidate provenance is `deepseek-v4-pro`, generated candidates did not auto-publish, and reviewed cards expose both `judgment` and `counter_signal`.
 8. Run the most relevant syntax check for edited scripts.
 9. Run `node agent-workflow/tools/frontstage-regression-gate.mjs` after page/data changes.

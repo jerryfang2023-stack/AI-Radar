@@ -10,7 +10,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 }));
 const kind = args.get("kind") || "weekly";
 const date = args.get("date") || "";
-export const REPORTS_CENTER_VERSION = "REPORTS-V1.0.0-periodic-report-center";
+export const REPORTS_CENTER_VERSION = "REPORTS-V1.1.0-lane-independent";
 
 export function escapeHtml(value = "") {
   return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
