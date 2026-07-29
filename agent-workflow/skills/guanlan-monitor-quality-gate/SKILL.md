@@ -1,17 +1,17 @@
 ---
 name: guanlan-monitor-quality-gate
-description: Run or repair the acquisition evidence-supply pre-gate before Data Center V4 build. It validates that source snapshots and legacy Raw/Pool supply are present after one monitor attempt. It does not validate CanonicalEvents, tags, projections, commercial value, or page quality.
+description: Run or repair the structured source-intake pre-gate before the Data Center V4 build. It validates captured SourceArtifact/RawDocument supply after one monitor attempt. It does not validate CanonicalEvents, tags, projections, commercial value, or page quality.
 metadata:
   guanlan:
-    version: "1.1.0"
+    version: "1.2.0"
     lane: "Data Center Source Ingestion"
     status: "current sub-skill"
     order: 50
     responsibility: "Decide whether captured evidence is sufficient to attempt the V4 factual build."
-    upstream: "Raw / Pool output"
+    upstream: "SOURCE-INTAKE-V1 and immutable source snapshots"
     downstream: "Data Center V4 build decision and source diagnostics"
     gates: "minimum evidence supply and evidence integrity"
-    recent_learning: "Provider, Raw-volume and channel-mix diagnostics do not independently block release or trigger repeated collection."
+    recent_learning: "Provider, source-volume and channel-mix diagnostics do not independently block release or trigger repeated collection."
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -26,8 +26,7 @@ For changes, read only the relevant source:
 
 - `context/12-data-center-v4.md`
 - `context/05-daily-monitoring.md` for the collector implementation
-- `context/07-v3-intelligence-generation-rules.md` only for legacy Pool thresholds
-- `01-SiteV2/content/11-databases/business-signals-gate-v3.json`
+- `01-SiteV2/content/11-databases/source-intake-gate-v1.json`
 - `agent-workflow/tools/guanlan-monitor-quality-gate.mjs`
 - `agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs`
 - `evals/monitor-quality-gate-evals.md`
@@ -37,23 +36,22 @@ For changes, read only the relevant source:
 This gate answers:
 
 ```text
-Are Raw / Pool artifacts present and internally consistent?
+Are immutable snapshots and structured intake records present and internally consistent?
 Is there enough source-backed evidence to attempt the V4 factual build?
 Did index, contaminated, blocked or degraded evidence enter Core?
 ```
 
-It does not answer whether events are valuable or important, and it does not validate Claims, CanonicalEvents, tags, projections, Cards, or pages. V4 structural truth belongs to `guanlan-data-integrity-gate`; page compatibility has separate legacy gates.
+It does not answer whether events are valuable or important, and it does not validate Claims, CanonicalEvents, tags, projections, applications, or pages. V4 structural truth belongs to `guanlan-data-integrity-gate`; application and page contracts have separate gates.
 
 ## Hard Gates
 
-Read hard thresholds from `business-signals-gate-v3.json`:
+Read hard thresholds from `source-intake-gate-v1.json`:
 
-- minimum Pool count;
-- minimum routed Pool count;
-- minimum Core and usable Core evidence;
-- zero homepage/directory Core promotion;
-- zero Core text contamination;
-- zero blocked/degraded Raw QC in Core.
+- minimum captured and selected evidence counts;
+- minimum routed and usable core evidence;
+- zero homepage/directory promotion into factual intake;
+- zero core text contamination;
+- zero blocked/degraded source QC in factual intake.
 
 Provider failures are never a standalone hard gate. When evidence supply is below minimum, report both the deficient supply bucket and provider diagnostics; do not report the provider note as an independent blocker.
 
@@ -61,8 +59,8 @@ Provider failures are never a standalone hard gate. When evidence supply is belo
 
 Keep these visible without converting them into release blockers:
 
-- Raw 150 target;
-- Pool/routed/Core targets above the hard minimum;
+- source 150 target;
+- selected/routed/core targets above the hard minimum;
 - keyword and channel breadth;
 - AI-title ratio and off-topic titles;
 - importance-lane gaps;

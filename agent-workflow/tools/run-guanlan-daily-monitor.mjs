@@ -105,7 +105,7 @@ const rawDir = path.join(contentRoot, "01-raw");
 const originalDir = path.join(rawDir, "originals", date);
 const keywordMonitoringPath = path.join(contentRoot, "11-databases", "keyword-monitoring-v2.json");
 const sourceRegistryPath = path.join(contentRoot, "11-databases", "source-registry-v2.json");
-const monitorQualityGatePath = path.join(contentRoot, "11-databases", "business-signals-gate-v3.json");
+const monitorQualityGatePath = path.join(contentRoot, "11-databases", "source-intake-gate-v1.json");
 const sourceTitleTranslationsPath = path.join(contentRoot, "11-databases", "source-title-translations.json");
 const titleTranslationProvider = args.get("title-translation-provider") || process.env.TITLE_TRANSLATION_PROVIDER || "auto";
 const titleTranslationTimeoutMs = Number(args.get("title-translation-timeout-ms") || process.env.TITLE_TRANSLATION_TIMEOUT_MS || 12000);
@@ -4503,14 +4503,14 @@ function sourceRunArtifactItems(items, sourceId) {
 
 function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems, sourceItems) {
   const sourceRunDir = sourceArtifactDir;
-  const jsonPath = path.join(sourceRunDir, `${sourceId}-raw-source-candidates.json`);
+  const jsonPath = path.join(sourceRunDir, `${sourceId}-source-intake-candidates.json`);
   const reportPath = path.join(sourceRunDir, `${sourceId}-raw-source-report.md`);
   const failures = Array.isArray(sourceResult.failures) ? sourceResult.failures : [];
   const rawSourceItems = Array.isArray(sourceItems) ? sourceItems : [];
   const payload = {
     date,
     generated_at: new Date().toISOString(),
-    mode: "business_source_raw",
+    mode: "data_center_source_intake",
     source_id: sourceId,
     source_label: sourceLabel,
     status: rawSourceItems.length ? "collected" : "empty",
@@ -4526,7 +4526,7 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
   };
 
   const report = [
-    `# ${date} Business Source Raw - ${sourceLabel}`,
+    `# ${date} Data Center Source Intake - ${sourceLabel}`,
     "",
     `- generated_at: ${payload.generated_at}`,
     `- mode: ${payload.mode}`,
@@ -4577,7 +4577,7 @@ function loadSourceArtifactItems() {
     };
   }
   const files = fs.readdirSync(sourceArtifactDir)
-    .filter((file) => /-raw-source-candidates\.json$/u.test(file))
+    .filter((file) => /-source-intake-candidates\.json$/u.test(file))
     .map((file) => path.join(sourceArtifactDir, file))
     .sort();
   if (!files.length) {
@@ -4602,7 +4602,7 @@ function loadSourceArtifactItems() {
       failures.push(`source-artifact ${rel(file)}: date ${payload.date} does not match run date ${date}`);
       continue;
     }
-    const sourceId = payload.source_id || path.basename(file).replace(/-raw-source-candidates\.json$/u, "");
+    const sourceId = payload.source_id || path.basename(file).replace(/-source-intake-candidates\.json$/u, "");
     const sourceItems = Array.isArray(payload.items) ? payload.items : [];
     sourceRuns.push({
       source_id: sourceId,
@@ -4649,7 +4649,7 @@ async function runSourceOnly() {
     JSON.stringify(
       {
         date,
-        mode: "business_source_raw",
+        mode: "data_center_source_intake",
         source_id: sourceOnlyMode,
         source_label: collector.label,
         status: sourceItems.length ? "collected" : "empty",
@@ -5784,7 +5784,7 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     "- enterprise_ai_transformation_column: 企业AI化",
     `- enterprise_ai_transformation_candidate_count: ${enterpriseAiTransformationItems.length}`,
     `- enterprise_ai_transformation_stage_distribution: ${distributionText(byEnterpriseAiTransformationStage)}`,
-    "- enterprise_ai_transformation_boundary: Enterprise AI transformation is a monitoring lens, not a fourth Business Signal Card type; FDE / Applied AI role pages are organization-capability signals and require separate source-backed product, funding, customer deployment, procurement, or production rollout evidence before formal Card use.",
+    "- enterprise_ai_transformation_boundary: Enterprise AI transformation is a monitoring lens; FDE / Applied AI role pages are organization-capability signals and require accepted source-backed Claims and CanonicalEvents before factual projection.",
     `- raw_count_by_channel: ${distributionText(distribution)}`,
     `- keyword_monitoring_config: ${rel(keywordMonitoringPath)}`,
     `- keyword_group_distribution: ${distributionText(byKeywordGroup)}`,
@@ -5848,7 +5848,7 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     "",
     "## Three-Lane Monitor Policy",
     "",
-    "Default strategy: AI HOT, RSS, keyword search and GDELT are discovery entrances; keyword rules fill overseas big-company events, vertical product news, startup/funding news, customer adoption and industry landing. Builder and operator viewpoints are isolated from Business Signals. HN / community is feedback only. Business Signal Cards must resolve original text, page type and usable evidence object before publication.",
+    "Default strategy: AI HOT, RSS, keyword search and GDELT are discovery entrances; keyword rules fill overseas big-company events, vertical product news, startup/funding news, customer adoption and industry landing. Builder and operator viewpoints are isolated from factual events. HN / community is feedback only. CanonicalEvents require captured original text, exact-span accepted Claims, SourceArtifact references, and the V4 integrity gate.",
     "",
   ].join("\n");
   writeFile(path.join(reportsDir, `${date}-guanlan-daily-monitor-log.md`), log);

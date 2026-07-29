@@ -1,6 +1,6 @@
-# V3.3 Skill Pattern Gate
+# V4.3 Skill Pattern Gate
 
-Date: 2026-06-09
+Date: 2026-07-29
 Status: current
 Owner: `workflow` / `product-commander`
 
@@ -30,7 +30,7 @@ New dispatches must name at least one Skill Pattern. Complex tasks may combine p
 | Copy review | Tool Wrapper + Generator + Reviewer | Read current copy rules, update by table, then check boundaries |
 | Product feature / new module | Inversion + Reviewer + Generator | Run product decision first, then generate module decision artifacts |
 | Source / content automation | Tool Wrapper + Pipeline + Reviewer | Read source rules, run the ingest funnel, then run source and content gates |
-| Business-signal data chain | Tool Wrapper + Pipeline + Reviewer | Raw -> Pool -> Card -> frontstage data -> gates |
+| Commercial-event data chain | Tool Wrapper + Pipeline + Reviewer | SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> application projections -> gates |
 | Deployment / GitHub Pages | Pipeline + Reviewer | Build, preview or smoke check, explain rollback and release risk |
 | Dispatch / closeout / governance | Generator + Reviewer | Use fixed templates and verify against hard gates |
 
@@ -56,14 +56,15 @@ Do not mark a task accepted when:
 - the reviewer also implemented the change and no independent review evidence is provided;
 - an external skill or repo is used without stating safety and adaptation boundaries.
 
-## 6. Current V3.3 Rules
+## 6. Current V4.3 Rules
 
 - Current version baseline comes from `context/version-ledger.md`.
-- Current frontstage entries are Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence.
+- Current frontstage entries are Commercial Events, Industry Reports, Opportunity Map, Trend Radar, Funding Insights, First-Line Viewpoints, and Community Intelligence.
 - Current backend entry is Dashboard / operations console.
 - V2 homepage, daily observation, business brief, trend-report prose, and Netlify deployment are retired.
-- `follow-builders`, `AI HOT`, HN, X, Reddit, search tools, and community sources are discovery or viewpoint routes unless separately verified and promoted into the Raw / Pool / Card chain.
-- V3.3 daily automation belongs to Pipeline and must cover Raw / Pool / Card, frontstage data, operations data, GitHub Pages, and local sync stages.
+- `follow-builders`, AI HOT, HN, X, Reddit, search tools, and community sources are discovery or viewpoint routes. A fact requires separate original-source capture plus accepted V4 Claim/Event evidence.
+- V4 daily automation belongs to Pipeline and must cover structured source intake, factual build, application projections, operations data, GitHub Pages, and local sync stages.
+- V3 Card, desk, graph, legacy mapping, and compatibility interfaces must not return.
 - Page, data, automation, and release tasks must write review evidence into closeout.
 
 ## 7. Closeout

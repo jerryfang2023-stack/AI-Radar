@@ -19,5 +19,5 @@ detail: "A community user said this happened, so it is treated as a verified cus
 Why it fails:
 
 - A community post is a lead, not verified Business Signals evidence.
-- No Raw / Pool verification exists.
-- The item must not feed Signal Cards, relationship graph evidence, or trend candidates until separately verified.
+- No separately captured original source, exact-span Claim, or accepted CanonicalEvent exists.
+- The item must not create Claims, CanonicalEvents, or RELATION-V2.1 rows. The underlying fact needs a separately captured original source and the V4 integrity gate.

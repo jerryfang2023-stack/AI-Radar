@@ -1,94 +1,64 @@
-# WaveSight Code and Rule Audit Checklist
+# WaveSight V4 Code and Rule Audit Checklist
 
-Use each applicable item as pass/fail. The five review axes are adapted from Addy Osmani's `code-review-and-quality` approach; WaveSight current context and stage ownership always override generic guidance.
+## 1. Source of truth and reachability
 
-## 1. Source of Truth and Reachability
-
-- Resolve the current version and task route before inspecting implementation.
-- Identify the actual entry command and every reachable child command.
-- Inspect commands named `audit`, `check`, or `validate` for hidden sync, generation, repair, Git, or deployment writes before running them.
-- Prefer direct read-only child checks or a proven dry-run when a wrapper mixes mutation and verification.
-- Confirm workflow/script paths and imported modules exist with exact casing.
-- Confirm declared CLI arguments are parsed, consumed, and forwarded to the stage that owns them.
-- Confirm each generated artifact has one authoritative producer and at least one current consumer.
-- Flag active references to V2 pages, legacy content outputs, publiccopy/cardcopy, old Top10/candidate modes, or retired copy gates.
-- Do not flag historical reports merely for describing retired behavior.
-- Treat a contradiction as confirmed only when both sides are reachable or one reachable implementation violates a higher-priority current source.
+- Pin the current version and task route.
+- Inspect commands named `audit`, `check`, or `validate` for hidden writes before running them.
+- Confirm workflow/script paths and imports exist with exact casing.
+- Trace CLI arguments to the owning child stage.
+- Require one producer and at least one current consumer for every generated artifact.
+- Separate active contradictions from historical descriptions.
 
 ## 2. Correctness
 
-- Compare the code's observable behavior with the current context and target Skill contract.
-- Check empty, partial, stale, duplicated, malformed, and same-date rerun states.
-- Check whether fallback behavior hides failures, leaks backend fields, or silently changes source ownership.
-- Check that gates read the same artifact and field versions produced upstream.
-- Check that failure/waiting/success classifications match actual GitHub and publication state.
-- Check that tests validate business behavior, not only syntax or file existence.
-- Check whether an error is swallowed, converted to success, or reported at the wrong stage.
+- Compare observable behavior with current V4 context and contracts.
+- Check empty, partial, stale, duplicate, malformed, conflict, and same-date rerun states.
+- Ensure fallbacks do not hide missing evidence or leak backend-only fields.
+- Confirm gates read the exact artifact and version produced upstream.
+- Confirm tests validate behavior and lineage, not only syntax or existence.
 
-## 3. Simplicity and Readability
+## 3. Architecture and ownership
 
-- Flag duplicated condition trees, thresholds, path constants, selectors, and field-normalization logic.
-- Flag compatibility branches with no current caller or consumer.
-- Flag helpers that only forward calls without enforcing a boundary.
-- Flag oversized scripts that mix collection, classification, publication, and UI rendering.
-- Prefer deletion or reuse of an existing owner over a new abstraction.
-- Distinguish maintainability smells from confirmed behavior defects.
+- Keep deterministic work in scripts, judgment boundaries in Skills, release decisions in gates, and project truth in context.
+- Keep SourceArtifact, RawDocument, Claim, Entity, CanonicalEvent, FDE, hardware, facets, tags, and relationships within their contracts.
+- Keep Opportunity Map, Trend Radar, Funding Insights, and Reports downstream from accepted V4 evidence.
+- Keep First-Line Viewpoints, Community Intelligence, and OPS out of canonical fact tables.
+- Prefer deleting unreachable compatibility code over adding another branch.
 
-## 4. Architecture and Stage Ownership
+## 4. V3 retirement integrity
 
-- Keep deterministic work in scripts, judgment/boundaries in Skills, release decisions in gates, and project truth in context.
-- Repair title translation and source-backed fact extraction in Raw/Card/FDE asset generation, not frontstage suppression.
-- Keep Pool as audit/repair evidence, not a mandatory selector before a source-backed Card.
-- Keep Card types limited to `product_service`, `funding`, and `case`.
-- Keep relationship edges Card-backed and source-linked.
-- Require multiple same-direction Cards and evidence contexts for trend candidates.
-- Keep First-Line Viewpoints and Community Intelligence out of Business Signal evidence unless separately verified through Raw/Pool.
-- Keep Enterprise AI / FDE and AI Hardware as documented lenses, not extra Card types.
-- Find shotgun surgery: one policy change duplicated across context, Skills, scripts, gates, and pages.
+- No active workflow, package command, Skill, agent instruction, page, deployable JSON, or current contract may require V3 Card, Pool files, desk, old graph, legacy mappings, or `compatibility_cards`.
+- No current source may claim that retired payloads live in the working tree or archive.
+- Historical reports and immutable published HTML may describe prior V3 behavior.
+- Old route redirects may remain only when they load no V3 content or data.
+- `RAW-V3.0` is a current RawDocument contract version and is not itself a compatibility interface.
 
-## 5. Security and Integrity
+## 5. Security and integrity
 
-- Check secrets, tokens, webhook URLs, credentials, and personal paths are not committed or logged.
+- Check secrets, tokens, webhooks, credentials, and personal paths are not committed or logged.
 - Check external input is not passed unsafely to shells, templates, paths, or generated JavaScript.
-- Check workflow permissions are minimal and third-party actions are version-pinned where practical.
-- Check untrusted pull requests cannot access production credentials or deployment steps.
-- Check artifact downloads, cache restores, and generated-data writes preserve provenance.
-- Check repair automation cannot silently edit, commit, push, close incidents, or deploy outside its declared mode.
+- Check workflow permissions are minimal and untrusted pull requests cannot access production credentials.
+- Check generated-data writes preserve source lineage.
+- Check repair automation cannot silently commit, push, close incidents, or deploy outside its declared mode.
 
-## 6. Performance and Reliability
+## 6. Performance and reliability
 
-- Find repeated full scans, repeated source collection, serial network work, and duplicate builds.
-- Confirm retry/backoff/timeout logic does not turn permanent contract failures into endless reruns.
-- Confirm idempotency for same-date data generation, Obsidian sync, comments, and publication.
-- Confirm locks and PID files cannot leave a healthy lane permanently blocked after a crash.
-- Confirm cached or previous-good data is used only where the current lane contract permits it.
-- Confirm diagnostics do not trigger expensive recollection when downstream Card supply is already healthy.
+- Find repeated full scans, duplicate builds, repeated collection, and serial network work.
+- Confirm retries do not convert permanent contract failures into endless reruns.
+- Confirm same-date generation, synchronization, and publication are idempotent.
+- Confirm diagnostics cannot trigger source recollection after an accepted V4 batch.
 
-## 7. GitHub Workflow Necessity
+## 7. GitHub workflow necessity
 
-- Map every workflow trigger, job, output artifact, environment, permission, and deployment target.
-- Name the single owner for collection, aggregation, validation, PR creation, merge, Pages build, and deployment.
-- Flag duplicate schedules, duplicate Pages deployments, recursive workflow triggers, and jobs that rebuild unchanged artifacts.
-- Confirm branch filters and path filters cannot skip required gates or trigger production from documentation-only changes.
-- Confirm generated files are either committed by one controlled owner or built at deploy time, not both without a contract.
-- Separate advisory audits from merge-blocking gates until false-positive behavior is proven.
-- Retain a workflow only when it prevents a named failure or produces a required artifact not owned elsewhere.
+- Map each trigger, permission, artifact, PR writer, merge step, Pages owner, and deployment target.
+- Flag duplicate schedules, duplicate Pages deployments, recursive triggers, and jobs rebuilding unchanged artifacts.
+- Confirm generated files have one controlled writer.
+- Keep advisory audits non-blocking until their false-positive behavior is understood.
 
-## 8. Business Signals Contract
+## 8. Finding quality
 
-- Cards: publish every active-date qualified source-backed event that passes formal Card gates; no public Top10/candidate split.
-- Relationship graph: use Card nodes and source-backed edges; no opinion evidence.
-- Trend candidates: require repeated evidence; never promote one article, opinion, or funding event alone.
-- Keep ordering by importance/impact without exposing sorting reasons as public copy.
-- Preserve original-source traceability and never summarize a summary.
-- Keep Raw provider/coverage shortfalls diagnostic when Pool/Card/frontstage contracts remain healthy.
-
-## 9. Finding Quality Gate
-
-- Cite tight evidence from the active path.
-- Name the violated current contract.
-- Explain downstream impact without speculation.
-- Name the earliest owning stage.
-- Propose the smallest repair and a concrete validation.
-- Separate confirmed defects, likely risks, code smells, and cleanup.
-- Do not recommend deletion until all current callers, workflows, imports, docs, and generated consumers are checked.
+- Cite a current reachable path and tight evidence.
+- Name the violated contract and earliest owner.
+- Explain actual impact without speculation.
+- Propose the smallest repair and concrete validation.
+- Label unresolved reachability as `needs-runtime-proof`.

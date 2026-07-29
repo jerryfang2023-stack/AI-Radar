@@ -6,7 +6,7 @@
 |---|---|
 | `window-dispatch-hub.md` | 调度窗口规则 |
 | `quality-gates.md` | 质量门统一说明 |
-| `../../context/06-execution-harness.md` | 高风险流程执行外壳：每日监测、Raw / Pool / Card、页面 / 文案 / Typography |
+| `../../context/06-execution-harness.md` | 高风险流程执行外壳：V4 来源采集、事实构建、应用投影、页面 / 文案 / Typography |
 | `plan-first-policy.md` | 重大任务先计划 |
 | `copy-first-page-gate.md` | 页面文案前置 |
 | `typography-first-page-gate.md` | 页面字体位置前置 |

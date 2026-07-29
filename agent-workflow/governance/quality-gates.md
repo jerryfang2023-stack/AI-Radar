@@ -1,9 +1,9 @@
 # Current Quality Gates
 
 Status: current
-Updated: 2026-07-17
+Updated: 2026-07-29
 
-This governance note lists active SITE-V4.2 public checks and the remaining V3 internal compatibility checks. Retired V1/V2 outputs and retired V3 page CSS/JS are not active release gates.
+This governance note lists active `SITE-V4.3.0-compatibility-retired` checks. V3 compatibility writers, consumers, assets, and gates are absent.
 
 ## General Completion Rule
 
@@ -15,7 +15,7 @@ Before closing a task, report:
 - whether the change affects automation, data, website, or publication;
 - remaining risk or required user confirmation.
 
-For daily monitor, Raw / Pool / Card, page, copy, or typography work, state whether `context/06-execution-harness.md` was relevant.
+For source intake, V4 facts, application projections, page, copy, or typography work, state whether `context/06-execution-harness.md` was relevant.
 
 ## Current Common Checks
 
@@ -40,11 +40,11 @@ node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
 node agent-workflow/tools/assert-daily-production-chain.mjs --date=YYYY-MM-DD --stage=post-monitor
 ```
 
-## Business Signals Release Rule
+## V4 Source-Intake Release Rule
 
-Raw channel diagnostics must not block release when the configured minimum Pool/routed/Core evidence supply is healthy. GDELT, keyword search, RSS, AI HOT, and quota-backed provider notes are peer source diagnostics, not priority lanes or standalone hard gates.
+Source-channel diagnostics must not block release when the configured minimum structured evidence supply is healthy. GDELT, keyword search, RSS, AI HOT, and quota-backed provider notes are peer source diagnostics, not priority lanes or standalone hard gates.
 
-Production runs one monitor attempt and at most one targeted refill for a failed hard evidence-supply bucket. Do not rerun the full monitor chain to satisfy a Raw-only diagnostic. Repair the failing evidence, Card, frontstage, or publication stage and rerun only its validation.
+Production runs one monitor attempt and at most one targeted refill for a failed hard evidence-supply bucket. Do not rerun the full monitor chain to satisfy a volume-only diagnostic. Repair the failing source-intake, Claim/Event, application, frontstage, or publication stage and rerun only its validation.
 
 ## Publication Checks
 

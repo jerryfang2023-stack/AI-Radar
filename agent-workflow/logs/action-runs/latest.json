@@ -1,21 +1,37 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-29T13:33:30.962Z",
+  "generated_at": "2026-07-29T15:09:53.656Z",
   "date": "2026-07-29",
-  "action": "Resolve final OPS audit findings",
-  "action_status": "unregistered",
+  "action": "Close source-intake workflow naming gap",
+  "action_status": "current",
   "record_level": "required",
-  "trigger": "manual",
+  "trigger": "post-repair audit",
   "status": "success",
-  "summary": "Normalized Community publication evidence, documented same-day First-Line manifest policy, prevented unknown application projections from passing, and excluded resolved pre-retirement Business Signals incidents from public OPS data.",
+  "summary": "Renamed the active source collection workflow and source-run artifact contract to Data Center V4 source intake, removed V3 and Card gate routing language, and added regression coverage.",
   "contexts": [],
-  "changed_files": [],
+  "changed_files": [
+    ".github/workflows/data-center-source-intake.yml",
+    ".github/workflows/daily-persistent-assets-pr.yml",
+    ".github/workflows/daily-production-chain-dry-run.yml",
+    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
+    "agent-workflow/tools/assert-no-active-v3-compat.mjs"
+  ],
   "outputs": [],
-  "checks": [],
-  "issues": [],
+  "checks": [
+    "workflow strings contain no retired routing",
+    "compatibility retirement tests passed",
+    "NO-ACTIVE-V3-COMPAT-V2.2 passed",
+    "31 quality gates passed"
+  ],
+  "issues": [
+    "active daily workflow still said V3 evidence-supply",
+    "manual source workflow still emitted business_source_raw artifacts"
+  ],
   "risks": [],
   "lessons": [],
-  "reusable_rules": [],
+  "reusable_rules": [
+    "active workflow labels and artifact schemas are part of the compatibility surface and must be covered by retirement gates"
+  ],
   "retired_flags": [],
   "notes": []
 }

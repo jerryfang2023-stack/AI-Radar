@@ -1,80 +1,38 @@
 # Daily Monitor Evals
 
 1. `single_monitor_attempt`
-   - Pass when production collects peer source artifacts once and runs one unified monitor attempt.
-   - Fail when a diagnostic shortfall refreshes every source lane or starts another full monitor cycle.
+   - Pass when production collects peer sources once and runs one unified monitor attempt.
 
-2. `targets_are_diagnostic`
-   - Pass when Raw 150, Pool 75, routed Pool 60, Core 30, keyword paths and importance balance remain visible diagnostics.
-   - Fail when any of them independently blocks healthy minimum evidence supply or triggers Raw padding.
+2. `structured_intake_output`
+   - Pass when the monitor writes immutable snapshots and `SOURCE-INTAKE-V1`.
+   - Fail when it writes daily Raw/Pool candidate Markdown, Signal Cards, V3 Desk, graph, or mappings.
 
-3. `targeted_supply_refill`
-   - Pass when at most one refill is attempted only for a failed hard evidence-supply bucket.
-   - Fail when refill is driven by Raw volume, non-large-vendor quota, old importance-lane quotas or provider status alone.
+3. `targets_are_diagnostic`
+   - Pass when volume, route mix, provider, and concentration targets stay diagnostic unless the configured minimum evidence supply fails.
 
-4. `original_source_capture`
-   - Pass when downstream-worthy items preserve original URL, readable evidence/fallback boundary, extraction diagnostics, hashes, excerpts and missing information.
+4. `targeted_supply_refill`
+   - Pass when at most one refill addresses a failed hard evidence bucket using already collected candidates.
 
-5. `page_type_boundary`
-   - Pass when homepage, directory, login, docs-index, catalog, marketplace, search-result, SEO and navigation pages remain `index_only` without a dated concrete event.
+5. `original_source_capture`
+   - Pass when every downstream-worthy item preserves URL, readable evidence boundary, extraction diagnostics, hash, excerpt, and missing fields.
 
-6. `provider_failure_routing`
-   - Pass when provider/channel failures stay diagnostic while combined evidence supply passes.
-   - Fail when `unrecovered_failed_sources_max` or one empty peer channel is an independent release blocker.
+6. `page_type_boundary`
+   - Pass when homepages, directories, login pages, indexes, marketplaces, search results, and SEO pages remain discovery-only without a dated event.
 
-7. `lane_isolation`
-   - Pass when the monitor and Business dry run do not generate First-Line Viewpoints, Community Intelligence or trend outputs.
+7. `provider_failure_routing`
+   - Pass when one provider failure stays diagnostic while combined evidence supply is healthy.
 
-8. `failure_route`
-   - Pass when evidence failure names the deficient bucket and stops for targeted repair.
-   - Fail when Card, frontstage or publication failures route back to source collection.
+8. `namespace_isolation`
+   - Pass when the monitor does not write First-Line Viewpoints, Community Intelligence, canonical facts, application judgments, or OPS evidence.
 
-9. `monitor_startup_smoke`
-   - Pass when the pipeline-policy gate loads the daily monitor and reaches source routing before production collection begins.
-   - Fail when an undefined top-level config reference or other module-startup error can pass syntax checks and make every peer source collector return empty artifacts.
+9. `downstream_failure_route`
+   - Pass when Claim/Event, application, frontstage, PR, Pages, or sync failures do not route back to source recollection.
 
-10. `published_metadata_ingestion`
-   - Pass when original-source `article:published_time`, `datePublished`, or `dateCreated` metadata is normalized and persisted to Raw `published_at` before freshness evaluation.
-   - Fail when a rich-evidence funding or customer event is excluded only because source publication metadata was extracted as text but discarded as metadata.
+10. `same_date_idempotency`
+    - Pass when a same-date rerun preserves valid immutable snapshots and stable structured references without relying on V3 Cards.
 
-11. `multilingual_job_listing_boundary`
-   - Pass when English and Chinese recruitment stories, including `招聘/招募/诚聘 + 岗位`, remain backend-only unless the same source contains a separate dated product, funding, or customer event.
+11. `adaptive_dedupe_expansion`
+    - Pass when post-fetch hash dedupe may consume additional balanced candidates from the same attempt but cannot recollect providers or pad weak evidence.
 
-12. `raw_funding_evidence_recall`
-   - Pass when strict funding confirmation reads Raw structured excerpts and evidence seeds, even if Pool trace metadata truncates a serialized excerpt.
-   - Fail when a dated official funding announcement with amount, round, investors, and valuation becomes `auto_signal_spec_null` despite complete Raw evidence.
-
-13. `adaptive_post_fetch_dedupe_expansion`
-   - Pass when post-fetch URL/content-hash dedupe below the Raw coverage target causes additional balanced batches to be consumed from the same already collected source-artifact candidate pool until the target, candidate exhaustion, or adaptive fetch limit.
-   - Pass when a first batch that survives above target does not expand.
-   - Fail when the monitor always stops at the fixed initial batch, recollects providers, or pads Raw with weak/index evidence.
-
-14. `capital_startup_query_priority`
-   - Pass when the `capital_startup` path spends its limited query budget on dedicated funding / startup queries before unrelated global themes and adds the production month as a recency hint.
-   - Fail when configured financing queries are displaced by earlier product, developer, policy, or general-market themes, or generic queries keep returning stale rounds.
-
-15. `rss_freshness_and_single_source_cap`
-   - Pass when RFC 2822 / RFC 1123 RSS dates are normalized, dated URLs can repair a missing feed date, stale archive entries are filtered, and each RSS source has a bounded daily contribution.
-   - Pass when undated podcast/newsletter archive entries are excluded and lead-only podcast/newsletter pages cannot enter Core Pool without recapture of the original event source.
-   - Fail when old podcast catalogs or newsletter roundups can fill Raw / Pool merely because post-fetch dedupe is expanding toward the Raw coverage target.
-
-16. `same_date_formal_card_source_carry_forward`
-   - Pass when a same-date rerun reuses readable, dated Raw source snapshots referenced by already published formal Cards before generated Raw is reset; a missing structured date may be recovered from the captured article body or dated URL.
-   - Fail when a valid current-day Card disappears only because the rerun's live search did not rediscover its source URL.
-
-17. `curated_original_source_window_fixture`
-   - Pass when direct-source recall fixtures use an explicit fixture date and verify both active inclusion and expired exclusion.
-   - Fail when a production preflight depends on a real curated source remaining active after its configured `active_until` date.
-
-18. `high_value_original_source_recall`
-   - Pass when customer case, production deployment, procurement contract, and funding refill queries prioritize official newsroom, company/investor announcement, customer story, case study, government notice, or contract-award pages.
-   - Fail when marketplace directories, app stores, job descriptions, or generic consulting reports consume the procurement / customer-evidence refill budget.
-
-19. `dead_rss_retirement`
-   - Pass when a repeatedly 404 RSS endpoint is removed from RSS collection and replaced only with a verified public-web discovery page or disabled source entry.
-   - Fail when the same dead RSS endpoint remains an expected daily source and repeats in failure diagnostics.
-
-20. `fact_type_source_gap_report`
-   - Pass when daily final closure records customer-case, procurement, deployment, funding, and original-source registry coverage gaps without lowering any evidence gate.
-   - Pass when the report distinguishes source-backed accepted events from conservative S-level original-domain matches.
-   - Fail when a missing fact type is hidden by total Raw volume or used to fabricate a same-day item.
+12. `fact_type_gap_visibility`
+    - Pass when source-coverage gaps stay visible without fabricating same-day facts or lowering the V4 integrity gate.

@@ -1,14 +1,14 @@
 {
   "project": "观澜AI｜WaveSight AI",
-  "updatedAt": "2026-07-26",
-  "projectDefinition": "WaveSight AI 是一个 AI 行业数据中心和结构化事实数据基础，为 AIP 产品、行业研究和创业决策支持应用提供可追溯数据。V3 Card、关系图和趋势对象只作为内部兼容及下游应用输入。",
+  "updatedAt": "2026-07-29",
+  "projectDefinition": "WaveSight AI 是一个 AI 行业数据中心和结构化事实数据基础，为 AIP 产品、行业研究和创业决策支持应用提供可追溯数据。V3 Card、desk、旧 graph 和兼容接口已经退役并从工作树删除。",
   "model": "process-driven-light-agents + reusable-skills",
   "rule": "Agent 按流程节点设置，Skill 按能力模块沉淀；栏目能力优先做 Skill，不新增常驻 Agent；Agent 之间通过结构化 handoff、质量门和自动化任务形成 AI Native 联动。",
   "execution_harness": {
     "file": "../../context/06-execution-harness.md",
     "applies_to": [
       "data_center_v4_production",
-      "v3_internal_card_compatibility",
+      "v4_compatibility_retirement_guard",
       "page_contract_typography"
     ],
     "requirement": "高风险流程派发、执行和 closeout 必须说明使用的 harness、固定读取、质量门和下游放行结论。"
@@ -27,7 +27,7 @@
       "name": "Intelligence Engine",
       "file": "agents/data-agent.md",
       "process_node": "source_claim_entity_event",
-      "primary_outputs": ["来源与证据规则", "SourceArtifact / RawDocument", "Claim / Entity / CanonicalEvent", "事实投影", "完整性报告", "V3 兼容 handoff"]
+      "primary_outputs": ["来源与证据规则", "SourceArtifact / RawDocument", "Claim / Entity / CanonicalEvent", "事实投影", "完整性报告", "V4 应用 handoff"]
     },
     {
       "id": "experience-editorial",

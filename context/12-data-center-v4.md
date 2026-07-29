@@ -29,7 +29,7 @@ SourceArtifact
 -> downstream applications
 ```
 
-Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is the normalized fact layer. FDE and hardware are source-bounded projections. Pool is an operational QA queue. Card is a legacy page renderer, not a V4 truth asset.
+Raw snapshots and exact Claim spans are the evidence layer. CanonicalEvent is the normalized fact layer. FDE and hardware are source-bounded projections. `qa_queue` is the only current review queue. Signal Card and V3 Pool interfaces are retired and absent.
 
 ## Versions and contracts
 

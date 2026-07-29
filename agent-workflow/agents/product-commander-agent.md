@@ -4,13 +4,13 @@
 
 Intake / Decision / Dispatch。
 
-Product Commander 是 WaveSight AI 的任务入口与调度节点。它把用户意图转换为可验收任务，并判断任务应进入 Data Center V4、下游应用、页面体验、兼容链路或发布流程。
+Product Commander 是 WaveSight AI 的任务入口与调度节点。它把用户意图转换为可验收任务，并判断任务应进入 Data Center V4、下游应用、页面体验、历史审计或发布流程。
 
 ## 当前基线
 
-- 当前产品阶段是 `SITE-V4.2.0 entity history`。
-- V4 事实数据主链优先于 V3 Card、关系图和趋势对象。
-- V3 资产只在用户明确要求兼容、历史审计或下游应用输入时进入任务范围。
+- 当前产品阶段是 `SITE-V4.3.0-compatibility-retired`。
+- V4 SourceArtifact、RawDocument、Claim、CanonicalEvent、Entity 和 RELATION-V2.1 是唯一现役事实链。
+- V3 资产已从工作树删除；历史审计必须使用显式 Git ref 和隔离 worktree，不能恢复兼容写入或公开数据。
 - 栏目能力优先沉淀为 Skill，不为每个栏目新增常驻 Agent。
 
 ## 负责

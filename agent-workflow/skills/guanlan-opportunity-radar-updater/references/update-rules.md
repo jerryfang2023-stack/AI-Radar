@@ -114,7 +114,7 @@ Direction Cards are a reviewed downstream layer built after the two maps, not an
 - DeepSeek V4 Pro writes the title and all editorial content from a bounded 30-day accepted-Card manifest.
 - Generated output is a candidate, not a publication. Persist it with model provenance and `pending_human_review`.
 - Keep the published set small.
-- Require at least two accepted Signal Cards with original-source URLs.
+- Require at least two accepted CanonicalEvents with Claim refs, Source refs, and original-source URLs.
 - Prefer evidence from multiple actors or evidence forms.
 - State one structural judgment, one falsifiable startup hypothesis, the buyer, task, pain, product wedge, current alternatives, counter-signal, unknowns, and a first validation action.
 - A title must express a change in value, budget, entry point, bottleneck, or competitive boundary. A category name such as `企业 AI 安全平台` is not a Direction Card title.
@@ -144,4 +144,4 @@ The independent Opportunity Map page should present the two matrices as source-b
 - Relationship graph uses old graph tags and Card edges.
 - Opportunity maps use `opportunity_signals`.
 - Weekly report prose may interpret the accepted map projection, but it is not the data source for the map and does not own OMAP page metadata.
-- Community and viewpoint materials can inspire questions, but cannot directly heat a cell unless promoted through Raw / Pool / Card.
+- Community and viewpoint materials can inspire questions, but cannot directly heat a cell. The same fact must be separately captured from an original source and accepted through the V4 Claim/Event chain.

@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "name": "Guanlan Skill Store",
-  "version": "1.7.0",
-  "release_date": "2026-07-26",
-  "stage": "Funding Insights generation lane",
-  "scope": "Adds the governed Funding Insight generator Skill, historical unique-event backfill, secondary search, DeepSeek card generation, and fail-closed application publication without changing Data Center V4 canonical truth.",
+  "version": "1.8.0",
+  "release_date": "2026-07-29",
+  "stage": "V4 retirement governance",
+  "scope": "Migrates active source-intake, report, opportunity, agent, and audit instructions off retired V3 interfaces; adds governance and deployable-artifact retirement checks without changing Data Center V4 canonical truth.",
   "upgrade_policy": {
     "patch": "Fix dashboard display, metadata wording, examples, evals, or sync handling without changing governance flow.",
     "minor": "Add a new governed skill lane, new required metadata field, new audit gate, or new lifecycle state.",

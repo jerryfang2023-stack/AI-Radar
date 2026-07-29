@@ -17,7 +17,7 @@ SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent
                -> FDE / Hardware projections -> database / exports
 ```
 
-Archived Signal Cards and V3 page JSON are read-only historical renderings. They are not V4 sources of truth or current inputs.
+Signal Cards, V3 page JSON, legacy mappings, and compatibility interfaces are absent from the working tree. Historical recovery is possible only from an explicit Git ref in an isolated worktree; recovered assets cannot enter current production or Pages.
 
 ## Storage
 
@@ -58,10 +58,10 @@ The following fields and concepts are forbidden in V4 canonical outputs:
 
 Opinion and community material may be stored as source datasets, but it is not promoted to a factual event without a separate source-bounded event claim.
 
-## Compatibility
+## Retired compatibility boundary
 
-The public website uses the unified V4 frontstage. Current production does not generate or consume V3 Card, desk, graph, or legacy mapping assets. Historical files live under `archive/v3-compat/`, are excluded from Pages and automatic discovery, and cannot enter V4 tables. Current opportunity, trend, funding, and report adapters read accepted V4 evidence.
+The public website uses the unified V4 frontstage. Current production does not generate or consume V3 Card, desk, graph, archive payload, or legacy mapping assets. Current opportunity, trend, funding, and report adapters read accepted V4 evidence.
 
-The daily data-center list uses bundle `data_date` as its grouping and filter date. Canonical `event_time` and `disclosed_at` retain the source-reported time and must not replace the daily batch date in default list selection. During dual-write, legacy factual Cards are a coverage comparison only; they are never promoted as V4 evidence.
+The daily data-center list uses bundle `data_date` as its grouping and filter date. Canonical `event_time` and `disclosed_at` retain the source-reported time and must not replace the daily batch date in default list selection.
 
-Daily `legacy-asset-mappings.json` rows map legacy Raw snapshots to V4 RawDocuments and optional CanonicalEvents. The repository-level `legacy-card-event-mappings.json` is the separate Card-instance projection. It disambiguates duplicate legacy Card IDs and records whether each physical Markdown Card maps to one event, multiple events, Raw only, or remains unresolved. A legacy Markdown Card must never be treated as identical to a CanonicalEvent without this projection.
+No dual-write, compatibility comparison, or legacy mapping stage remains. Reintroducing one is a release-blocking regression.

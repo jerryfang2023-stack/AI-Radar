@@ -1,4 +1,4 @@
-name: WaveSight Business Source Raw
+name: WaveSight Data Center Source Intake
 
 on:
   workflow_dispatch:
@@ -48,12 +48,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: wavesight-business-source-raw-${{ github.event.inputs.date || github.run_id }}
+  group: wavesight-data-center-source-intake-${{ github.event.inputs.date || github.run_id }}
   cancel-in-progress: false
 
 jobs:
-  source-raw:
-    name: Business Source Raw Artifacts
+  source-intake:
+    name: Data Center Source Intake Artifacts
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
@@ -139,9 +139,9 @@ jobs:
             else
               echo "Source collection failed: $source" >&2
               failed=1
-              printf '{"date":"%s","generated_at":"%s","mode":"business_source_raw","source_id":"%s","source_label":"%s","status":"failed","discovered_count":0,"raw_candidate_count":0,"failures":["source collection command failed; see %s-source-run.log"],"items":[]}\n' \
+              printf '{"date":"%s","generated_at":"%s","mode":"data_center_source_intake","source_id":"%s","source_label":"%s","status":"failed","discovered_count":0,"source_candidate_count":0,"failures":["source collection command failed; see %s-source-run.log"],"items":[]}\n' \
                 "$RUN_DATE" "$(date -Is)" "$source" "$source" "$source" \
-                > "agent-workflow/reports/source-runs/${RUN_DATE}/${source}-raw-source-candidates.json"
+                > "agent-workflow/reports/source-runs/${RUN_DATE}/${source}-source-intake-candidates.json"
             fi
             echo "--- ${source} source log ---"
             cat "$log_file"
@@ -167,7 +167,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v6
         with:
-          name: wavesight-business-source-raw-${{ steps.run-date.outputs.date }}
+          name: wavesight-data-center-source-intake-${{ steps.run-date.outputs.date }}
           if-no-files-found: warn
           retention-days: 14
           path: agent-workflow/reports/source-runs/${{ steps.run-date.outputs.date }}/**

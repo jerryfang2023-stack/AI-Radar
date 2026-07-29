@@ -1,103 +1,22 @@
 import fs from "node:fs";
 import path from "node:path";
 
-export const formalTagGroups = [
-  "track",
-  "function",
-  "scenario",
-  "customer",
-  "evidence",
-];
+export const tagGroups = ["track", "opinion"];
 
-export const privateTagGroups = ["opinion"];
-
-export const tagGroups = [...formalTagGroups, ...privateTagGroups];
-
-export const deprecatedTagIds = new Set(["customer-enterprise"]);
-export const deprecatedTagPrefixes = ["stage-", "region-", "source-"];
-
-export const tagIdPattern = new RegExp(`\\b(?:${tagGroups.join("|")})-[a-z0-9-]+\\b`, "gu");
-
-export const deprecatedTagIdPattern = new RegExp(
-  `\\b(?:${deprecatedTagPrefixes.map((prefix) => prefix.slice(0, -1)).join("|")})-[a-z0-9-]+\\b|\\bcustomer-enterprise\\b`,
-  "gu",
-);
-
-export function isDeprecatedTagId(value = "") {
-  return deprecatedTagIds.has(value) || deprecatedTagPrefixes.some((prefix) => value.startsWith(prefix));
-}
-
-const taxonomyRelativePath = path.join("agent-workflow", "product", "tag-taxonomy.md");
-
-function splitTableRow(line) {
-  return line
-    .replace(/^\s*\|/u, "")
-    .replace(/\|\s*$/u, "")
-    .split("|")
-    .map((cell) => cell.trim());
-}
-
-function cleanCell(cell = "") {
-  return cell
-    .replace(/`([^`]+)`/gu, "$1")
-    .replace(/\s+/gu, " ")
-    .trim();
-}
-
-function parseAliases(cell = "") {
-  const cleaned = cleanCell(cell);
-  if (!cleaned || cleaned === "-") return [];
-  return cleaned
-    .split(/[、,，]/u)
-    .map((item) => item.trim())
-    .filter(Boolean);
-}
-
-export function parseTagTaxonomyMarkdown(markdown) {
-  const tags = [];
-  let currentGroup = "";
-
-  for (const rawLine of String(markdown || "").split(/\r?\n/u)) {
-    const heading = rawLine.match(/^###\s+([a-z-]+)\s*$/u);
-    if (heading) {
-      currentGroup = tagGroups.includes(heading[1]) ? heading[1] : "";
-      continue;
-    }
-    if (/^#/u.test(rawLine)) {
-      currentGroup = "";
-      continue;
-    }
-
-    if (!currentGroup || !rawLine.trim().startsWith("|")) continue;
-    if (/^\|\s*-+/u.test(rawLine) || /\|\s*tag_id\s*\|/iu.test(rawLine)) continue;
-
-    const [idCell, nameCell, aliasesCell, descriptionCell] = splitTableRow(rawLine);
-    const id = cleanCell(idCell);
-    if (!tagIdPattern.test(id)) {
-      tagIdPattern.lastIndex = 0;
-      continue;
-    }
-    tagIdPattern.lastIndex = 0;
-
-    tags.push({
-      id,
-      tag_id: id,
-      name: cleanCell(nameCell),
-      group: currentGroup,
-      aliases: parseAliases(aliasesCell),
-      description: cleanCell(descriptionCell),
-      status: "active",
-      merge_to: null,
-    });
-  }
-
-  return tags;
-}
+const taxonomyRelativePath = path.join("agent-workflow", "product", "column-tag-taxonomy-v1.json");
 
 export function readTagTaxonomy(root = process.cwd()) {
   const taxonomyPath = path.join(root, taxonomyRelativePath);
-  const markdown = fs.readFileSync(taxonomyPath, "utf8");
-  return parseTagTaxonomyMarkdown(markdown);
+  const payload = JSON.parse(fs.readFileSync(taxonomyPath, "utf8"));
+  if (payload.taxonomy_version !== "COLUMN-TAG-V1.0" || payload.canonical_fact_input !== false || !Array.isArray(payload.tags)) {
+    throw new Error("invalid First-Line Viewpoints column tag taxonomy");
+  }
+  return payload.tags.map((tag) => ({
+    ...tag,
+    aliases: Array.isArray(tag.aliases) ? tag.aliases : [],
+    status: "active",
+    merge_to: null,
+  }));
 }
 
 export function buildTagIndex(tags) {
@@ -107,9 +26,7 @@ export function buildTagIndex(tags) {
     byId.set(tag.id, tag);
     byAlias.set(tag.id.toLowerCase(), tag.id);
     if (tag.name) byAlias.set(tag.name.toLowerCase(), tag.id);
-    for (const alias of tag.aliases || []) {
-      byAlias.set(String(alias).toLowerCase(), tag.id);
-    }
+    for (const alias of tag.aliases || []) byAlias.set(String(alias).toLowerCase(), tag.id);
   }
   return { byId, byAlias };
 }
