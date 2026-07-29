@@ -263,7 +263,7 @@
 <body class="page-operations-console">
   <main class="shell" data-ops-console>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V1.2.2</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V2.0.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="issues"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span><span class="nav-text">问题中心</span></button>
@@ -290,7 +290,7 @@
           <div class="module-head"><div><span class="kicker">TODAY</span><h2>今日治理状态</h2></div><p>把生产状态、未解决问题和已关闭问题放在同一个判断面里。</p></div>
           <div class="grid grid-3" data-overview-risks></div>
           <div class="grid grid-3" style="margin-top:12px">
-            <article class="card"><span class="label">Production Chain</span><h2>生产漏斗</h2><div class="rows" data-overview-funnel></div></article>
+            <article class="card"><span class="label">Production Stages</span><h2>生产阶段</h2><div class="rows" data-overview-funnel></div></article>
             <article class="card"><span class="label">Issue Queue</span><h2>待处理队列</h2><div class="rows" data-work-queue></div></article>
             <article class="card"><span class="label">Release</span><h2>上线同步</h2><div class="rows" data-overview-routing></div></article>
           </div>
@@ -347,10 +347,10 @@
         <div class="page-surface">
           <header class="page-head">
             <div><span class="kicker">DATA QUALITY</span><h1>数据质量</h1></div>
-            <p>看生产漏斗、来源质量、资产结构和异常比例，决定要补源、改门禁还是修脚本。</p>
+            <p>看采集、事实构建、应用投影和发布状态，决定要补源、改门禁还是修脚本。</p>
           </header>
           <section>
-            <div class="module-head"><div><span class="kicker">SOURCE QUALITY</span><h2>来源质量雷达</h2></div><p>对比样本量、新鲜度、重复率、官方源占比和 Raw 到 Card 转化。</p></div>
+            <div class="module-head"><div><span class="kicker">SOURCE QUALITY</span><h2>来源质量雷达</h2></div><p>对比发现量、抓取成功率、V4 事实构建和 QA 队列。</p></div>
             <article class="card"><div data-source-quality></div></article>
           </section>
           <section>
@@ -387,7 +387,7 @@
             <p>查看后台数据源、生成时间、自动化入口和本地任务状态。</p>
           </header>
           <div class="grid grid-2">
-            <article class="card"><span class="label">Automation</span><h2>本地任务</h2><p>每日监督、生产漏斗同步和后台数据生成会共同驱动这个后台。</p></article>
+            <article class="card"><span class="label">Automation</span><h2>本地任务</h2><p>每日监督、V4 telemetry 同步和后台数据生成会共同驱动这个后台。</p></article>
             <article class="card"><span class="label">Data</span><h2>数据状态</h2><div class="rows" data-data-status></div></article>
           </div>
         </div>

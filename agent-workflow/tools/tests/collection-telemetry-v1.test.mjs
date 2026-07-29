@@ -62,3 +62,13 @@ test("daily workflow keeps lens sync and OPS telemetry independent from the V3 f
   assert.match(opsBlock, /steps\.data-center-v4-materialize\.outcome == 'success'/u);
   assert.doesNotMatch(opsBlock, /if:.*business-frontstage-gate/u);
 });
+
+test("operations console renders the four V4 production stages instead of the V3 funnel", () => {
+  const html = fs.readFileSync(path.join(process.cwd(), "01-SiteV2/site/operations-console.html"), "utf8");
+  const client = fs.readFileSync(path.join(process.cwd(), "01-SiteV2/site/assets/operations-console.js"), "utf8");
+  assert.match(html, /OPS V2\.0\.0/u);
+  assert.match(html, /Production Stages/u);
+  assert.match(client, /application_projection/u);
+  assert.match(client, /fact_build/u);
+  assert.doesNotMatch(client, /row\("Raw"[\s\S]*row\("Pool"[\s\S]*row\("Cards"/u);
+});
