@@ -47,6 +47,19 @@ function addEvidenceSource(index, type, id, url) {
   index.set(`${type}:${normalizedId}`, normalizedUrl);
 }
 
+function addArchivedViewpointSource(index, stableId, url) {
+  addEvidenceSource(index, "O", stableId, url);
+  try {
+    const parsed = new URL(String(url).trim());
+    const host = parsed.hostname.toLowerCase().replace(/^www\./u, "");
+    if (host === "x.com" || host === "twitter.com") {
+      addEvidenceSource(index, "O", parsed.pathname.match(/\/status\/([^/]+)/u)?.[1], url);
+    }
+  } catch {
+    // Invalid and non-public URLs are ignored by addEvidenceSource.
+  }
+}
+
 export function buildEvidenceSourceIndex(rootDir = root) {
   const index = new Map();
   const siteData = path.join(rootDir, "01-SiteV2", "site", "data");
@@ -78,6 +91,18 @@ export function buildEvidenceSourceIndex(rootDir = root) {
     }
   }
   for (const item of frontstage.community || []) addEvidenceSource(index, "C", item.id, item.sourceUrl);
+
+  const viewpointArchiveDir = path.join(rootDir, "01-SiteV2", "content", "07-points");
+  if (fs.existsSync(viewpointArchiveDir)) {
+    for (const file of fs.readdirSync(viewpointArchiveDir).filter((name) => /-builders-viewpoints\.md$/u.test(name))) {
+      const markdown = fs.readFileSync(path.join(viewpointArchiveDir, file), "utf8");
+      for (const section of markdown.split(/^##\s+/mu)) {
+        const stableId = section.match(/^- stable_id:\s*`?([^`\r\n]+)`?\s*$/mu)?.[1];
+        const url = section.match(/^- source_url:\s*`?(https?:\/\/[^`\s]+)`?\s*$/mu)?.[1];
+        if (url) addArchivedViewpointSource(index, stableId, url);
+      }
+    }
+  }
   return index;
 }
 
