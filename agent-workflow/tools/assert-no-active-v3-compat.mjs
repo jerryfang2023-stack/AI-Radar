@@ -22,6 +22,7 @@ const retiredCommands = [
   "backfill-opportunity-signals.mjs",
   "audit-tags.mjs",
   "cleanup-tags.mjs",
+  "manual-backfill-raw-from-json.mjs",
 ];
 
 const retiredActivePaths = [
@@ -33,6 +34,20 @@ const retiredActivePaths = [
   "01-SiteV2/site/data/site-content.json",
   "01-SiteV2/site/data/site-content.js",
   "01-SiteV2/site/data/enterprise-ai-fde.json",
+  "01-SiteV2/site/daily-brief.html",
+  "01-SiteV2/site/daily-brief-2026-06-05.html",
+  "01-SiteV2/site/account.html",
+  "01-SiteV2/site/admin.html",
+  "01-SiteV2/site/checkout.html",
+  "01-SiteV2/site/invite-request.html",
+  "01-SiteV2/site/login.html",
+  "01-SiteV2/site/pricing.html",
+  "01-SiteV2/site/register.html",
+  "01-SiteV2/site/assets/app.js",
+  "01-SiteV2/site/assets/styles.css",
+  "01-SiteV2/site/assets/pipeline-dashboard.js",
+  "01-SiteV2/site/assets/relationship-graph-demo.css",
+  "01-SiteV2/site/assets/relationship-graph-demo.js",
   "01-SiteV2/content/11-databases/business-signals-gate-v3.json",
   "agent-workflow/product/tag-taxonomy.md",
   ".github/workflows/business-signals-source-raw.yml",
@@ -116,6 +131,11 @@ for (const relative of retiredActivePaths) {
 }
 for (const relative of retiredArchivePayloads) {
   if (fs.existsSync(path.join(root, relative))) problems.push(`retired V3 payload remains in the working tree: ${relative}`);
+}
+for (const file of filesUnder("01-SiteV2/content/01-raw", new Set([".md"]))) {
+  if (path.basename(file).endsWith("-raw-candidates.md")) {
+    problems.push(`retired V1/V2 Raw candidate Markdown remains: ${path.relative(root, file).replace(/\\/gu, "/")}`);
+  }
 }
 for (const file of filesUnder("01-SiteV2/content/11-databases/data-center-v4", new Set([".json", ".md"]))) {
   if (retiredBasenames.includes(path.basename(file))) {
@@ -305,7 +325,7 @@ for (const check of governanceRetirementChecks) {
 
 const result = {
   ok: problems.length === 0,
-  schema_version: "NO-ACTIVE-V3-COMPAT-V2.2",
+  schema_version: "NO-ACTIVE-V1-V3-COMPAT-V1.0",
   active_v3_consumers: problems.filter((problem) => problem.includes("references retired") || problem.includes("invokes retired")).length,
   retired_payloads_checked: retiredArchivePayloads.length,
   problems,

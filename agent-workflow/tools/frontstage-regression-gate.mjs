@@ -89,9 +89,23 @@ const retiredFrontstagePages = [
   "01-SiteV2/site/opinion-detail.html",
   "01-SiteV2/site/builders.html",
   "01-SiteV2/site/builder-detail.html",
+  "01-SiteV2/site/daily-brief.html",
+  "01-SiteV2/site/daily-brief-2026-06-05.html",
+  "01-SiteV2/site/account.html",
+  "01-SiteV2/site/admin.html",
+  "01-SiteV2/site/checkout.html",
+  "01-SiteV2/site/invite-request.html",
+  "01-SiteV2/site/login.html",
+  "01-SiteV2/site/pricing.html",
+  "01-SiteV2/site/register.html",
 ].map((file) => path.join(root, file));
 
-const retiredV3PageAssets = [
+const retiredLegacyPageAssets = [
+  "01-SiteV2/site/assets/app.js",
+  "01-SiteV2/site/assets/styles.css",
+  "01-SiteV2/site/assets/pipeline-dashboard.js",
+  "01-SiteV2/site/assets/relationship-graph-demo.css",
+  "01-SiteV2/site/assets/relationship-graph-demo.js",
   "01-SiteV2/site/assets/wavesight-nav.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.js",
@@ -102,7 +116,6 @@ const retiredV3PageAssets = [
 ].map((file) => path.join(root, file));
 
 const requiredOperationalPages = [
-  "01-SiteV2/site/admin.html",
   "01-SiteV2/site/operations-console.html",
 ].map((file) => path.join(root, file));
 
@@ -159,8 +172,8 @@ function collectRetiredPageIssues() {
   for (const file of retiredFrontstagePages) {
     if (fs.existsSync(file)) issues.push(issue(file, "retired_v2_frontstage_page_still_exists"));
   }
-  for (const file of retiredV3PageAssets) {
-    if (fs.existsSync(file)) issues.push(issue(file, "retired_v3_page_asset_still_exists"));
+  for (const file of retiredLegacyPageAssets) {
+    if (fs.existsSync(file)) issues.push(issue(file, "retired_legacy_page_asset_still_exists"));
   }
   for (const file of requiredOperationalPages) {
     if (!fs.existsSync(file)) issues.push(issue(file, "missing_required_operational_page"));

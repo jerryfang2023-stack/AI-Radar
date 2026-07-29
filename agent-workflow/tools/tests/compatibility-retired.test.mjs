@@ -21,6 +21,20 @@ test("retired V3 assets and archive payloads are absent", () => {
     "01-SiteV2/site/data/site-content.json",
     "01-SiteV2/site/data/site-content.js",
     "01-SiteV2/site/data/enterprise-ai-fde.json",
+    "01-SiteV2/site/daily-brief.html",
+    "01-SiteV2/site/daily-brief-2026-06-05.html",
+    "01-SiteV2/site/account.html",
+    "01-SiteV2/site/admin.html",
+    "01-SiteV2/site/checkout.html",
+    "01-SiteV2/site/invite-request.html",
+    "01-SiteV2/site/login.html",
+    "01-SiteV2/site/pricing.html",
+    "01-SiteV2/site/register.html",
+    "01-SiteV2/site/assets/app.js",
+    "01-SiteV2/site/assets/styles.css",
+    "01-SiteV2/site/assets/pipeline-dashboard.js",
+    "01-SiteV2/site/assets/relationship-graph-demo.css",
+    "01-SiteV2/site/assets/relationship-graph-demo.js",
     "01-SiteV2/content/11-databases/business-signals-gate-v3.json",
     "agent-workflow/product/tag-taxonomy.md",
     ".github/workflows/business-signals-source-raw.yml",
@@ -58,6 +72,17 @@ test("retired V3 operational reports are absent", () => {
   for (const name of reports) {
     assert.equal(suffixes.some((suffix) => name.endsWith(suffix)), false, name);
   }
+});
+
+test("retired V1/V2 Raw candidate Markdown and producer are absent", () => {
+  const rawRoot = path.join(root, "01-SiteV2", "content", "01-raw");
+  const candidateFiles = fs.readdirSync(rawRoot)
+    .filter((name) => name.endsWith("-raw-candidates.md"));
+  assert.deepEqual(candidateFiles, []);
+  assert.equal(
+    fs.existsSync(path.join(root, "agent-workflow", "tools", "manual-backfill-raw-from-json.mjs")),
+    false,
+  );
 });
 
 test("current V4 context names replace the retired V3.3 filenames", () => {

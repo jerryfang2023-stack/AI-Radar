@@ -1,6 +1,6 @@
 ---
 title: WaveSight Knowledge
-date: 2026-07-29
+date: 2026-07-30
 status: current
 type: obsidian-knowledge-root
 encoding: UTF-8
@@ -10,7 +10,7 @@ encoding: UTF-8
 
 本目录是观澜 AI 的长期判断资产库，服务 Obsidian / 本地知识库使用。
 
-它不是每日 Raw 生产漏斗，也不是网站发布目录。每日监测、候选池、自动生成过程文件和前台页面数据写入 `01-SiteV2/content/` 或 `01-SiteV2/site/data/`；本目录只保留可复用、可追溯、可复核、可关联的长期知识卡。
+它不是 Data Center 事实表，也不是网站发布目录。原始快照、结构化事实与前台页面数据分别写入 `01-SiteV2/content/` 和 `01-SiteV2/site/data/`；本目录只保留可复用、可追溯、可复核、可关联的长期知识卡。
 
 ## 当前结构
 
@@ -29,7 +29,7 @@ encoding: UTF-8
 - 重复日期版本。
 - 调试、过程、临时、低质量或无效文件。
 
-这些内容应留在 `content/` 的生产过程层；不具备长期价值时直接删除。
+原始证据保留在 `content/01-raw/originals/`；旧候选汇总和其他不具备长期价值的过程 Markdown 直接删除，不迁入 `knowledge/`。
 
 ## First-Line Viewpoints
 
@@ -46,8 +46,8 @@ encoding: UTF-8
 ## 与 content / site 的关系
 
 ```text
-content/ 生产候选和过程数据
-knowledge/ 观点时间线与已发布应用研究
+content/ Data Center 事实资产与 Application Center 发布归档
+knowledge/ Application Center 的观点时间线与已发布研究
 site/ 前台展示
 ```
 
