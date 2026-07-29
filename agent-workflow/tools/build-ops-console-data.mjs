@@ -287,7 +287,7 @@ const allIssues = [...supervisionIssues, ...inbox];
 const openIssues = allIssues.filter((item) => item.state !== "resolved");
 const resolvedIssues = allIssues.filter((item) => item.state === "resolved");
 const latestDay = pipeline.latest || (pipeline.days || [])[0] || {};
-const dailyDate = supervision.date || latestDay.date || latestDay.label || "";
+const dailyDate = telemetry.meta?.data_date || supervision.date || latestDay.date || latestDay.label || "";
 
 const data = {
   meta: {

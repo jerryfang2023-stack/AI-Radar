@@ -84,13 +84,8 @@
     return `<span class="badge ${cls}">${html(label)}</span>`;
   }
 
-  function percentOf(value, max) {
-    return max ? Number(value || 0) / max * 100 : 0;
-  }
-
   function renderOverview() {
     const summary = ops.daily?.issueSummary || {};
-    const production = ops.tasks?.latestProduction || latest;
     const status = $("[data-overview-status]");
     if (status) {
       status.innerHTML = [
@@ -138,12 +133,16 @@
     }
     const funnel = $("[data-overview-funnel]");
     if (funnel) {
-      const max = Math.max(production.raw || 1, production.pool || 1, production.cards || 1);
-      funnel.innerHTML = [
-        row("Raw", production.raw || 0, percentOf(production.raw, max)),
-        row("Pool", production.pool || 0, percentOf(production.pool, max)),
-        row("Cards", production.cards || 0, percentOf(production.cards, max)),
-      ].join("");
+      const stageLabels = {
+        collection: "采集",
+        fact_build: "事实构建",
+        application_projection: "应用投影",
+        publication: "发布",
+      };
+      const stageProgress = { passed: 100, success: 100, completed: 100, partial: 65, waiting: 45, in_progress: 55, skipped: 35, unknown: 18, failed: 12 };
+      funnel.innerHTML = list(ops.tasks?.stages).map((stage) => (
+        row(stageLabels[stage.id] || stage.label || stage.id, stage.status || "unknown", stageProgress[stage.status] ?? 18)
+      )).join("") || row("V4 telemetry", "missing", 8);
     }
     const queue = $("[data-work-queue]");
     if (queue) {
