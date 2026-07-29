@@ -176,14 +176,18 @@ function aggregateIssues(items, days) {
   };
 }
 
-function laneToTask(lane) {
+function laneToTask(lane, telemetry = {}) {
   const evidence = lane.evidence || {};
-  const counts = [
-    ["Raw", evidence.rawCount],
-    ["Pool", evidence.coreCandidateCount || evidence.qualifiedCount],
-    ["Cards", evidence.publicCardCount || evidence.frontstageSelected],
-    ["Items", evidence.items || evidence.remarks || evidence.itemCount],
-  ].filter(([, value]) => value != null);
+  const counts = lane.id === "business_signals"
+    ? [
+        ["Sources", telemetry.collection?.discovered],
+        ["Claims", telemetry.fact_build?.accepted_claims],
+        ["Events", telemetry.fact_build?.canonical_events],
+        ["QA", telemetry.fact_build?.qa_queue],
+      ].filter(([, value]) => value != null)
+    : [
+        ["Items", evidence.items || evidence.remarks || evidence.itemCount],
+      ].filter(([, value]) => value != null);
   return {
     id: lane.id,
     label: lane.label || lane.id,
@@ -327,7 +331,7 @@ const data = {
     resolved: resolvedIssues.slice().sort((a, b) => String(b.resolvedAt || b.updatedAt || b.date).localeCompare(String(a.resolvedAt || a.updatedAt || a.date))).slice(0, 30),
   },
   tasks: {
-    lanes: (supervision.lanes || []).map(laneToTask),
+    lanes: (supervision.lanes || []).map((lane) => laneToTask(lane, telemetry)),
     stages: Array.isArray(telemetry.stages) ? telemetry.stages : [],
     latestProduction: {
       date: latestDay.date || latestDay.label || "",
