@@ -71,6 +71,10 @@ export function finalizeOpsPublicationData({
     telemetry: {
       ...ops.quality?.telemetry,
       publication: evidence,
+      compatibility: {
+        ...V3_RETIRED_COMPATIBILITY,
+        warnings: [],
+      },
     },
   };
   writeJson(opsFile, ops);
