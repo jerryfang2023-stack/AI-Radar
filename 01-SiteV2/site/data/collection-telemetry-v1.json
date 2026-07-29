@@ -3,7 +3,7 @@
     "version": "COLLECTION-TELEMETRY-V1.0",
     "ops_version": "OPS-V2.0.0-v4-telemetry",
     "data_date": "2026-07-29",
-    "generated_at": "2026-07-29T13:24:14.194Z",
+    "generated_at": "2026-07-29T13:33:07.276Z",
     "scope": "OPS",
     "canonical_writeback": false,
     "source_of_truth": "Data Center V4 manifest and integrity gate"
@@ -38,13 +38,13 @@
     "warnings": []
   },
   "application_projection": {
-    "opportunity_map": "unknown",
+    "opportunity_map": "passed",
     "trend_radar": "passed",
     "funding_insights": "passed",
-    "fde_hardware_sync": "unknown"
+    "fde_hardware_sync": "passed"
   },
   "publication": {
-    "status": "skipped"
+    "status": "waiting"
   },
   "stages": [
     {
@@ -88,10 +88,10 @@
       "label": "应用投影",
       "status": "passed",
       "counts": {
-        "opportunity_map": "unknown",
+        "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "passed",
-        "fde_hardware_sync": "unknown"
+        "fde_hardware_sync": "passed"
       },
       "evidence": [
         "agent-workflow/reports/2026-07-29-persistent-asset-manifest.json"
@@ -100,7 +100,7 @@
     {
       "id": "publication",
       "label": "发布",
-      "status": "skipped",
+      "status": "waiting",
       "counts": {
         "v4_bundle_ready": true
       },

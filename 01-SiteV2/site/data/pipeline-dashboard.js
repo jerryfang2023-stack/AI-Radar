@@ -1,7 +1,7 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-07-29T13:24:14.756Z",
+    "generatedAt": "2026-07-29T13:33:07.873Z",
     "dateRange": {
       "start": "2026-07-23",
       "end": "2026-07-29"
@@ -51,10 +51,10 @@ window.WaveSightPipelineDashboard = {
       "label": "应用投影",
       "status": "passed",
       "counts": {
-        "opportunity_map": "unknown",
+        "opportunity_map": "passed",
         "trend_radar": "passed",
         "funding_insights": "passed",
-        "fde_hardware_sync": "unknown"
+        "fde_hardware_sync": "passed"
       },
       "evidence": [
         "agent-workflow/reports/2026-07-29-persistent-asset-manifest.json"
@@ -63,7 +63,7 @@ window.WaveSightPipelineDashboard = {
     {
       "id": "publication",
       "label": "发布",
-      "status": "skipped",
+      "status": "waiting",
       "counts": {
         "v4_bundle_ready": true
       },
@@ -108,13 +108,13 @@ window.WaveSightPipelineDashboard = {
       }
     },
     "applicationProjection": {
-      "opportunity_map": "unknown",
+      "opportunity_map": "passed",
       "trend_radar": "passed",
       "funding_insights": "passed",
-      "fde_hardware_sync": "unknown"
+      "fde_hardware_sync": "passed"
     },
     "publication": {
-      "status": "skipped"
+      "status": "waiting"
     }
   },
   "days": [

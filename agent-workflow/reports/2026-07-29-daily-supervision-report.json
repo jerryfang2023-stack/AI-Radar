@@ -2,7 +2,7 @@
   "ok": true,
   "status": "passed",
   "date": "2026-07-29",
-  "generated_at": "2026-07-29T13:22:27.773Z",
+  "generated_at": "2026-07-29T13:33:06.722Z",
   "timezone": "Asia/Shanghai",
   "hermes_mode": "off",
   "hermes_write": "disabled",
@@ -92,8 +92,8 @@
         },
         "stageStatus": {
           "data": "healthy",
-          "publication": "failed",
-          "task_execution": "anomaly_after_data_success",
+          "publication": "published",
+          "task_execution": "passed",
           "login": "healthy"
         }
       },
@@ -170,7 +170,7 @@
             "clean": true,
             "dirtyFiles": 0,
             "ignoredReportFiles": 0,
-            "head": "d0863633e795f3780103dd51b10743551cd9cf1c",
+            "head": "2e455f58ba442f96d63a74b917eb64c3f7f5203d",
             "originMain": "500ca387bcb86ff5ae766906341cabd9c576bab6",
             "fastForwarded": false,
             "warning": ""
@@ -226,8 +226,10 @@
         "builders": 17,
         "gateStatus": "passed",
         "gateReport": "agent-workflow/reports/2026-07-29-follow-builders-data-gate.md",
-        "manifest": "missing",
+        "manifest": "not_required_for_same_day_local_gate",
         "manifestHealthy": false,
+        "manifestRequired": false,
+        "manifestStatus": "not_required_for_same_day_local_gate",
         "historicalEvidenceHealthy": false,
         "github": {
           "available": true,
