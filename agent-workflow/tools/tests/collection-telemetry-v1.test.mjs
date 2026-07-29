@@ -4,6 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { buildCollectionTelemetry, OPS_VERSION } from "../lib/collection-telemetry-v1.mjs";
+import { finalizeOpsPublicationData } from "../finalize-ops-publication-for-pages.mjs";
 
 function writeJson(root, relative, data) {
   const file = path.join(root, relative);
@@ -73,4 +74,40 @@ test("operations console renders the four V4 production stages instead of the V3
   assert.doesNotMatch(client, /row\("Raw"[\s\S]*row\("Pool"[\s\S]*row\("Cards"/u);
   assert.doesNotMatch(client, />RAW<|>POOL<|>CARDS</u);
   assert.match(client, />SOURCES<[\s\S]*>CLAIMS<[\s\S]*>EVENTS</u);
+});
+
+test("Pages artifact finalization marks publication passed with deployment evidence", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-pages-ops-"));
+  const dataDir = path.join(root, "01-SiteV2/site/data");
+  const stages = [{ id: "publication", status: "waiting" }];
+  writeJson(root, "01-SiteV2/site/data/collection-telemetry-v1.json", {
+    publication: { status: "waiting" },
+    stages,
+  });
+  writeJson(root, "01-SiteV2/site/data/pipeline-dashboard.json", {
+    meta: {},
+    stages,
+    latest: { publication: { status: "waiting" } },
+  });
+  writeJson(root, "01-SiteV2/site/data/ops-console.json", {
+    meta: {},
+    tasks: { stages },
+    quality: { telemetry: { publication: { status: "waiting" } } },
+  });
+
+  finalizeOpsPublicationData({
+    root,
+    commit: "abc123",
+    runUrl: "https://example.test/actions/runs/1",
+    deployedAt: "2026-07-29T00:00:00.000Z",
+  });
+
+  const telemetry = JSON.parse(fs.readFileSync(path.join(dataDir, "collection-telemetry-v1.json"), "utf8"));
+  const pipeline = JSON.parse(fs.readFileSync(path.join(dataDir, "pipeline-dashboard.json"), "utf8"));
+  const ops = JSON.parse(fs.readFileSync(path.join(dataDir, "ops-console.json"), "utf8"));
+  assert.equal(telemetry.publication.status, "passed");
+  assert.equal(telemetry.stages[0].status, "passed");
+  assert.equal(pipeline.latest.publication.commit, "abc123");
+  assert.equal(ops.tasks.stages[0].status, "passed");
+  assert.match(fs.readFileSync(path.join(dataDir, "ops-console.js"), "utf8"), /abc123/u);
 });
