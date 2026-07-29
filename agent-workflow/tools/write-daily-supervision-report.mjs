@@ -482,19 +482,16 @@ export function buildBusinessSignalsLane() {
   const actions = [];
   const windowPassed = hasWindowPassed(date, "09:50");
 
-  const dataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
   const dataCenterManifestFile = path.join(root, "01-SiteV2", "site", "data", "data-center-v4", "manifest.json");
   const telemetryFile = path.join(root, "01-SiteV2", "site", "data", "collection-telemetry-v1.json");
   const dataCenterGateFile = path.join(reportsDir, `${date}-data-center-v4-integrity-gate.json`);
   const manifestFile = path.join(reportsDir, `${date}-persistent-asset-manifest.json`);
   const qualityGateFile = path.join(reportsDir, `${date}-guanlan-monitor-quality-gate.md`);
   const readinessFile = path.join(reportsDir, `${date}-daily-production-chain-readiness.md`);
-  const data = readJson(dataFile, {});
   const dataCenterManifest = readJson(dataCenterManifestFile, {});
   const telemetry = readJson(telemetryFile, {});
   const dataCenterGate = readJson(dataCenterGateFile, {});
   const persistentManifest = readJson(manifestFile, {});
-  const activeDate = data?.meta?.activeDate || "";
   const dataCenterDate = dataCenterManifest?.currentDate || "";
   const materializedEventCount = Number(dataCenterManifest?.counts?.events || 0);
   const canonicalEventCount = Number(dataCenterGate?.counts?.canonical_events || 0);
@@ -514,16 +511,7 @@ export function buildBusinessSignalsLane() {
       telemetry?.meta?.data_date === date
       && telemetry?.v4_gate?.status === "passed"
     );
-  const selection = Array.isArray(data.frontstageSelection)
-    ? data.frontstageSelection.find((item) => item.date === date)
-    : null;
-  const sameDateCards = Array.isArray(data.frontstageCards)
-    ? data.frontstageCards.filter((card) => card.date === date)
-    : (Array.isArray(data.cards) ? data.cards.filter((card) => card.date === date) : []);
-  const signalCardRoot = path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards");
-  const cardFileList = listFiles(signalCardRoot, new RegExp(`^${date}--signal--.*\\.md$`, "u"));
-  const cardFiles = cardFileList.length;
-  const titleTranslations = sourceTitleTranslationDiagnostics(cardFileList);
+  const titleTranslations = { missingSourceTitles: [] };
   const gh = githubWorkflowState("daily-persistent-assets-pr.yml", `automation/business-signals-${date}`);
   const pages = githubWorkflowState("github-pages.yml");
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
@@ -531,14 +519,6 @@ export function buildBusinessSignalsLane() {
   const pagesActive = pages.latest_run?.status === "queued" || pages.latest_run?.status === "in_progress";
   const publicationClosureWindowPassed = hasWindowPassed(date, "09:50");
 
-  evidence.activeDate = activeDate;
-  evidence.generatedAt = data?.meta?.generatedAt || "";
-  evidence.publicCardCount = sameDateCards.length;
-  evidence.frontstageSelected = selection?.selectedCount ?? sameDateCards.length;
-  evidence.supplyConstrained = selection?.supplyConstrained ?? null;
-  evidence.coreCandidateCount = selection?.coreCandidateCount ?? null;
-  evidence.qualifiedCount = selection?.qualifiedCount ?? null;
-  evidence.signalCardFiles = cardFiles;
   evidence.titleTranslations = titleTranslations;
   evidence.manifest = exists(manifestFile) ? rel(manifestFile) : "missing";
   evidence.qualityGateStatus = statusFromGate(qualityGateFile);
@@ -556,21 +536,15 @@ export function buildBusinessSignalsLane() {
     telemetryGateStatus: telemetry?.v4_gate?.status || "",
   };
   evidence.compatibility = {
-    activeDate,
-    publicCardCount: sameDateCards.length,
-    frontstageSelected: selection?.selectedCount ?? sameDateCards.length,
-    signalCardFiles: cardFiles,
-    status: activeDate === date && sameDateCards.length > 0
-      ? "current"
-      : persistentManifest?.outcomes?.business_frontstage_data === "skipped"
-        ? "skipped_by_compatibility_gate"
-        : "stale",
+    status: "retired_archive",
+    production_write: "disabled",
+    active_consumers: 0,
+    blocking: false,
   };
   evidence.github = gh;
   evidence.publicationClosure = {
     checkpoint: "09:50",
     businessDataSameDate: dataCenterDate === date,
-    cardCount: selection?.selectedCount ?? sameDateCards.length,
     businessPrMerged: Boolean(mergedPr),
     businessPrUrl: mergedPr?.url || "",
     pagesSuccess: pages.latest_run?.conclusion === "success",
@@ -578,7 +552,6 @@ export function buildBusinessSignalsLane() {
     pagesRunUrl: pages.latest_run?.url || "",
     localSync: localGitSyncState(),
   };
-  const selectedCount = selection?.selectedCount ?? sameDateCards.length;
   const businessDataHealthy =
     exists(dataCenterManifestFile)
     && dataCenterDate === date
@@ -596,7 +569,7 @@ export function buildBusinessSignalsLane() {
   );
   evidence.failedWorkflowSupersededByPublication = failedWorkflowSupersededByPublication;
   evidence.dataHealth = {
-    contract: "SITE-V4.2.0 / Data Center V4 canonical production",
+    contract: "SITE-V4.3.0 / Data Center V4 canonical production",
     manifestDateMatches: dataCenterDate === date,
     materializedEventCount,
     integrityGatePassed: dataCenterGatePassed,
@@ -615,15 +588,6 @@ export function buildBusinessSignalsLane() {
       canonicalEventCount,
       dataCenterGatePassed,
       dataCenterPipelinePassed,
-      activeDate,
-      publicCardCount: sameDateCards.length,
-      frontstageSelected: selectedCount,
-      signalCardFiles: cardFiles,
-      rawCount: null,
-      poolCount: null,
-      routedPoolCount: null,
-      corePoolCount: evidence.coreCandidateCount,
-      nonLargeCorePoolCount: null,
       sourceArtifactFreshness: "not_checked_by_daily_supervision",
       missingSourceTitleTranslations: titleTranslations.missingSourceTitles,
       businessPrMerged: Boolean(mergedPr),
@@ -652,9 +616,6 @@ export function buildBusinessSignalsLane() {
     if (evidence.qualityGateStatus === "missing") warnings.push(`missing quality gate report: ${rel(qualityGateFile)}`);
     if (evidence.readinessReport === "missing") warnings.push(`missing readiness report: ${rel(readinessFile)}`);
   }
-
-  if (!exists(dataFile)) warnings.push("deprecated V3 observation desk is absent; ignored by OPS-V2");
-  if (!fs.existsSync(signalCardRoot)) warnings.push("deprecated Signal Card directory is absent; ignored by OPS-V2");
 
   if (publicationClosureWindowPassed) {
     if (gh.available && !evidence.publicationClosure.businessPrMerged && !gh.latest_run) {

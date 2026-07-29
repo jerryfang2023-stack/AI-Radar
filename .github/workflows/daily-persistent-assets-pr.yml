@@ -80,28 +80,24 @@ jobs:
           reason="not_applicable"
           branch_exists=false
 
-          raw_file="01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
-          pool_file="01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
-          signal_file="01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
+          intake_file="01-SiteV2/content/11-databases/data-center-v4/intake-v1/${RUN_DATE}.json"
           data_center_manifest="01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}/manifest.json"
+          telemetry_file="01-SiteV2/site/data/collection-telemetry-v1.json"
           branch="automation/business-signals-${RUN_DATE}"
-          signal_card_count="$(find 01-SiteV2/knowledge/01-Signal-Cards -type f -name "${RUN_DATE}--signal--*.md" 2>/dev/null | wc -l | tr -d ' ')"
 
           if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
             branch_exists=true
           fi
 
           if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            if [ -f "$raw_file" ] && [ -f "$pool_file" ] && [ -f "$signal_file" ] && [ -f "$data_center_manifest" ] && [ "$signal_card_count" -ge 1 ]; then
-              if node agent-workflow/tools/assert-business-signals-frontstage.mjs --date="${RUN_DATE}" >/tmp/business-frontstage-health.log 2>&1 \
-                && node agent-workflow/tools/assert-data-center-v4.mjs --date="${RUN_DATE}" >/tmp/data-center-v4-health.log 2>&1 \
+            if [ -f "$intake_file" ] && [ -f "$data_center_manifest" ] && [ -f "$telemetry_file" ]; then
+              if node agent-workflow/tools/assert-data-center-v4.mjs --date="${RUN_DATE}" >/tmp/data-center-v4-health.log 2>&1 \
                 && node agent-workflow/tools/assert-funding-insights-v1.mjs --date="${RUN_DATE}" >/tmp/funding-insights-health.log 2>&1 \
                 && node agent-workflow/tools/assert-daily-production-chain.mjs --date="${RUN_DATE}" --stage=pre-commit --block-stale=true >/tmp/business-chain-health.log 2>&1; then
                 skip=true
-                reason="same-date V4 data-center and V3 compatibility assets exist on main and current gates pass"
+                reason="same-date structured intake, V4 materialization, applications, and operations data pass"
               else
                 reason="same-date files exist but current gates do not pass; continue targeted production"
-                cat /tmp/business-frontstage-health.log 2>/dev/null || true
                 cat /tmp/data-center-v4-health.log 2>/dev/null || true
                 cat /tmp/business-chain-health.log 2>/dev/null || true
               fi
@@ -111,11 +107,9 @@ jobs:
           echo "skip=$skip" >> "$GITHUB_OUTPUT"
           echo "reason=$reason" >> "$GITHUB_OUTPUT"
           echo "branch_exists=$branch_exists" >> "$GITHUB_OUTPUT"
-          echo "signal_card_count=$signal_card_count" >> "$GITHUB_OUTPUT"
           echo "skip_business_signal_assets=$skip"
           echo "business_signal_skip_reason=$reason"
           echo "existing_automation_branch=$branch_exists"
-          echo "same_date_signal_card_count=$signal_card_count"
 
       - name: Report cloud dependency state
         shell: bash
@@ -131,26 +125,25 @@ jobs:
             echo "- business_signal_skip: ${{ steps.existing-assets.outputs.skip }}"
             echo "- business_signal_skip_reason: ${{ steps.existing-assets.outputs.reason }}"
             echo "- existing_automation_branch: ${{ steps.existing-assets.outputs.branch_exists }}"
-            echo "- existing_signal_card_count: ${{ steps.existing-assets.outputs.signal_card_count }}"
             echo "- anysearch_secret: $([ -n "$ANYSEARCH_API_KEY" ] && echo configured || echo missing)"
             echo "- tavily_secret: $([ "$TAVILY_DISABLED" = "true" ] && echo disabled || ([ -n "$TAVILY_API_KEY" ] && echo configured || echo missing))"
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- deepseek_v4_title_translation: $([ -n "$DEEPSEEK_API_KEY" ] && echo configured || echo missing)"
             echo
-            echo "This V4 workflow commits the Data Center factual bundle plus frozen V3 page-compatibility assets to an automation branch, opens or updates a PR, and auto-merges only after factual-integrity and compatibility gates pass."
-            echo "Raw / Pool are persisted after V3 monitor hard gates pass. Card assets are persisted after asset generation. Site data is persisted only after Card/source-first/frontstage gates pass."
-            echo "Business Signals monitor now defaults to source artifact aggregation: AI HOT, keyword, GDELT, and RSS are collected as independent source artifacts before the unified Raw / Pool chain runs."
+            echo "This V4 workflow commits structured intake, immutable source snapshots, the factual bundle, application projections, and operations data to an automation branch."
+            echo "The source collector writes SourceArtifact / RawDocument intake directly; legacy compatibility writers are disabled."
+            echo "AI HOT, keyword, GDELT, and RSS are collected as independent source artifacts before V4 normalization."
             echo "First-line viewpoints are produced by .github/workflows/daily-first-line-viewpoints-pr.yml and are not part of this business-signal PR."
             echo "It never pushes directly to main. GitHub Pages deploys automatically after the PR merge updates main."
             echo
             echo "Production order:"
             echo "1. Collect source Raw artifacts independently and in parallel."
-            echo "2. Run the V3 evidence-supply gate from source artifacts."
-            echo "3. Confirm Raw / Pool integrity and historical duplicate state without re-blocking diagnostic volume targets."
+            echo "2. Build and gate structured SourceArtifact / RawDocument intake."
+            echo "3. Confirm source integrity and historical duplicate state."
             echo "4. Build and gate the Data Center V4 factual bundle."
             echo "5. Materialize V4 JSONL serving tables."
-            echo "6. Run frozen V3 Card, trend, and frontstage compatibility stages."
-            echo "7. Build operations data after V4 and compatibility gates pass."
+            echo "6. Build Opportunity Map, Trend Radar, and Funding Insights projections."
+            echo "7. Build operations data after V4 materialization."
             echo "8. Confirm same-date downstream assets are no longer stale."
             echo "9. Write a persistent asset manifest."
             echo "10. Commit generated assets to an automation branch and open or update a PR."
@@ -172,7 +165,6 @@ jobs:
           node --check agent-workflow/tools/build-data-center-v4.mjs
           node --check agent-workflow/tools/backfill-data-center-v4.mjs
           node --check agent-workflow/tools/assert-data-center-v4.mjs
-          node --check agent-workflow/tools/build-legacy-card-event-mappings.mjs
           node --check agent-workflow/tools/build-data-center-v4-obsidian-index.mjs
           node --check agent-workflow/tools/assert-tag-taxonomy-v4.mjs
           node --check agent-workflow/tools/event-public-title.mjs
@@ -180,18 +172,12 @@ jobs:
           node --check 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs
           node --check 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs
           node --check agent-workflow/tools/assert-daily-production-chain.mjs
-          node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs
-          node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs
-          node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
-          node --check agent-workflow/tools/assert-business-signals-compatibility-contract.mjs
           node agent-workflow/tools/assert-compatibility-retirement.mjs
           node agent-workflow/tools/assert-business-signals-pipeline-policy.mjs
           node --check agent-workflow/tools/classify-business-signals-production-state.mjs
-          node --check agent-workflow/tools/assert-v3-source-first-frontstage.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
           node --check agent-workflow/tools/assert-community-intelligence-data.mjs
           node --check agent-workflow/tools/send-feishu-webhook.mjs
-          node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
           gh --version
           npm run test:data-center
@@ -385,65 +371,6 @@ jobs:
           node 01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs
           npm run test:funding-insights
 
-      - name: Regenerate business-signal Card assets
-        id: assets
-        if: steps.data-center-v4-materialize.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
-            --date="${RUN_DATE}" \
-            --from-raw=true \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-assets.log"
-
-      - name: Run Pool-to-Card duplicate gate
-        id: pool-to-card-dedupe
-        if: steps.assets.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/assert-pool-to-card-dedupe.mjs \
-            --date="${RUN_DATE}" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pool-to-card-dedupe.log"
-
-      - name: Run Signal Card editorial quality gate
-        id: card-editorial-gate
-        if: steps.pool-to-card-dedupe.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/assert-signal-card-editorial-quality.mjs \
-            --date="${RUN_DATE}" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-card-editorial-gate.log"
-          node agent-workflow/tools/build-legacy-card-event-mappings.mjs
-          node agent-workflow/tools/build-data-center-v4-obsidian-index.mjs
-
-      - name: Build internal Card compatibility data
-        id: business-frontstage-data
-        if: steps.card-editorial-gate.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-frontstage-data.log"
-          npm run test:data-center-site:compatibility
-
-      - name: Run unified Business Signals frontstage gate
-        id: business-frontstage-gate
-        if: steps.business-frontstage-data.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/assert-business-signals-frontstage.mjs \
-            --date="${RUN_DATE}" \
-            --skip-editorial=true \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-business-frontstage-gate.log"
-
       - name: Sync FDE and AI hardware Obsidian archives
         id: business-lenses-obsidian-sync
         if: always() && steps.data-center-v4-materialize.outcome == 'success'
@@ -475,7 +402,7 @@ jobs:
 
       - name: Confirm site data freshness
         id: pre-commit-gate
-        if: steps.business-frontstage-gate.outcome == 'success' && steps.operations-data.outcome == 'success'
+        if: steps.data-center-v4-materialize.outcome == 'success' && steps.operations-data.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -494,10 +421,6 @@ jobs:
           set -euo pipefail
           mkdir -p agent-workflow/reports
 
-          raw_file="01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
-          pool_file="01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
-          signal_file="01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
-
           state_for() {
             local path="$1"
             if [ -e "$path" ]; then
@@ -507,25 +430,18 @@ jobs:
             fi
           }
 
-          signal_card_count="$(find 01-SiteV2/knowledge/01-Signal-Cards -type f -name "${RUN_DATE}--signal--*.md" 2>/dev/null | wc -l | tr -d ' ')"
-
           cat > "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md" <<EOF
-          # ${RUN_DATE} Data Center V4 + Internal Compatibility Asset Manifest
+          # ${RUN_DATE} Data Center V4 Asset Manifest
 
           - generated_at: $(date -Is)
           - workflow_mode: business_signals_pr
           - monitor: ${{ steps.monitor.outcome }}
-          - raw_pool_gate: ${{ steps.persistent-assets-post-monitor.outcome }}
+          - structured_intake_gate: ${{ steps.persistent-assets-post-monitor.outcome }}
           - data_center_v4_build: ${{ steps.data-center-v4.outcome }}
           - data_center_v4_gate: ${{ steps.data-center-v4-gate.outcome }}
           - data_center_v4_materialize: ${{ steps.data-center-v4-materialize.outcome }}
           - trend_radar_projection: ${{ steps.trend-radar-projection.outcome }}
           - funding_insights: ${{ steps.funding-insights.outcome }}
-          - asset_generation: ${{ steps.assets.outcome }}
-          - pool_to_card_dedupe_gate: ${{ steps.pool-to-card-dedupe.outcome }}
-          - card_editorial_gate: ${{ steps.card-editorial-gate.outcome }}
-          - business_frontstage_data: ${{ steps.business-frontstage-data.outcome }}
-          - business_frontstage_gate: ${{ steps.business-frontstage-gate.outcome }}
           - operations_data_sync: ${{ steps.operations-data.outcome }}
           - pre_commit_gate: ${{ steps.pre-commit-gate.outcome }}
 
@@ -533,27 +449,21 @@ jobs:
 
           | Asset | State |
           |---|---|
-          | Raw candidates | $(state_for "$raw_file") |
+          | Structured SourceArtifact / RawDocument intake | $(state_for "01-SiteV2/content/11-databases/data-center-v4/intake-v1/${RUN_DATE}.json") |
           | Source raw artifacts | $(state_for "agent-workflow/reports/source-runs/${RUN_DATE}") |
-          | Raw originals | $(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}") |
-          | Pool candidates | $(state_for "$pool_file") |
+          | Immutable source snapshots | $(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}") |
           | Data Center V4 bundle | $(state_for "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}/manifest.json") |
           | Funding Insights application bundle | $(state_for "01-SiteV2/content/12-applications/funding-insights/${RUN_DATE}.json") |
           | Funding Insights frontstage | $(state_for "01-SiteV2/site/data/funding-insights-v1.json") |
-          | Business signals | $(state_for "$signal_file") |
-          | Signal card files | ${signal_card_count} |
-          | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
           | Opportunity Map V4 evidence | $(state_for "01-SiteV2/site/data/opportunity-evidence-v2.json") |
-          | Intelligence graph index | $(state_for "01-SiteV2/site/data/intelligence-graph-index.json") |
           | Operations dashboard data | $(state_for "01-SiteV2/site/data/pipeline-dashboard.json") |
 
           ## Persistence Rule
 
           The Data Center V4 bundle must be committed only after its integrity gate passes.
-          Raw / Pool remain source-capture and compatibility artifacts.
-          Card assets must be committed once asset generation runs.
-          The operations dashboard records V4 and compatibility lane states independently; compatibility assets are published only after their own gate passes.
-          Accepted V4 facts persist after the V4 integrity/materialization gate; compatibility site data persists only when its own gates pass.
+          Structured intake and immutable source snapshots replace new candidate-index Markdown.
+          Accepted V4 facts persist after the V4 integrity/materialization gate.
+          Compatibility writers are disabled; frozen compatibility output remains read-only in the archive.
           First-line viewpoints data is produced by the independent first-line workflow.
           EOF
 
@@ -564,34 +474,24 @@ jobs:
             "workflow_mode": "business_signals_pr",
             "outcomes": {
               "monitor": "${{ steps.monitor.outcome }}",
-              "raw_pool_gate": "${{ steps.persistent-assets-post-monitor.outcome }}",
+              "structured_intake_gate": "${{ steps.persistent-assets-post-monitor.outcome }}",
               "data_center_v4_build": "${{ steps.data-center-v4.outcome }}",
               "data_center_v4_gate": "${{ steps.data-center-v4-gate.outcome }}",
               "data_center_v4_materialize": "${{ steps.data-center-v4-materialize.outcome }}",
               "opportunity_map_v4": "${{ steps.opportunity-map-v4.outcome }}",
               "trend_radar_projection": "${{ steps.trend-radar-projection.outcome }}",
               "funding_insights": "${{ steps.funding-insights.outcome }}",
-              "asset_generation": "${{ steps.assets.outcome }}",
-              "pool_to_card_dedupe_gate": "${{ steps.pool-to-card-dedupe.outcome }}",
-              "card_editorial_gate": "${{ steps.card-editorial-gate.outcome }}",
-              "business_frontstage_data": "${{ steps.business-frontstage-data.outcome }}",
-              "business_frontstage_gate": "${{ steps.business-frontstage-gate.outcome }}",
               "operations_data_sync": "${{ steps.operations-data.outcome }}",
               "pre_commit_gate": "${{ steps.pre-commit-gate.outcome }}"
             },
             "assets": {
-              "raw_candidates": "$(state_for "$raw_file")",
+              "structured_intake": "$(state_for "01-SiteV2/content/11-databases/data-center-v4/intake-v1/${RUN_DATE}.json")",
               "source_raw_artifacts": "$(state_for "agent-workflow/reports/source-runs/${RUN_DATE}")",
-              "raw_originals": "$(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}")",
-              "pool_candidates": "$(state_for "$pool_file")",
+              "source_snapshots": "$(state_for "01-SiteV2/content/01-raw/originals/${RUN_DATE}")",
               "data_center_v4_bundle": "$(state_for "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}/manifest.json")",
               "trend_radar_frontstage": "$(state_for "01-SiteV2/site/data/trend-radar-v1.json")",
               "funding_insights_frontstage": "$(state_for "01-SiteV2/site/data/funding-insights-v1.json")",
-              "business_signals": "$(state_for "$signal_file")",
-              "signal_card_files": ${signal_card_count},
-              "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")",
               "opportunity_map_v4_evidence": "$(state_for "01-SiteV2/site/data/opportunity-evidence-v2.json")",
-              "intelligence_graph_index": "$(state_for "01-SiteV2/site/data/intelligence-graph-index.json")",
               "operations_dashboard_data": "$(state_for "01-SiteV2/site/data/pipeline-dashboard.json")"
             }
           }
@@ -612,16 +512,12 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-persistent-asset-manifest.json
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-guanlan-*.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-daily-production-chain-readiness.md
-            agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
-            agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.md
-            agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.json
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-data-center-v4-integrity-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-data-center-v4-integrity-gate.json
             agent-workflow/reports/frontstage-regression-gate-*.md
-            01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
             01-SiteV2/content/11-databases/source-title-translations.json
-            01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
+            01-SiteV2/content/11-databases/data-center-v4/intake-v1/${{ steps.run-date.outputs.date }}.json
             01-SiteV2/content/11-databases/data-center-v4/${{ steps.run-date.outputs.date }}/**
             data-lake/tables/source_artifacts.jsonl
             data-lake/tables/raw_documents.jsonl
@@ -644,20 +540,16 @@ jobs:
             01-SiteV2/site/data/trend-radar-v1.json
             01-SiteV2/content/12-applications/funding-insights/${{ steps.run-date.outputs.date }}.json
             01-SiteV2/site/data/funding-insights-v1.json
-            01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
-            01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
-            01-SiteV2/site/data/v3-data-observation-desk.json
             01-SiteV2/site/data/opportunity-evidence-v2.json
-            01-SiteV2/site/data/intelligence-graph-index.json
             01-SiteV2/site/data/collection-telemetry-v1.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
             01-SiteV2/site/data/ops-console.json
             01-SiteV2/site/data/ops-console.js
 
-      - name: Commit Data Center V4 and accepted compatibility assets
+      - name: Commit Data Center V4 assets
         id: commit
-        if: always() && (steps.data-center-v4-materialize.outcome == 'success' || steps.pre-commit-gate.outcome == 'success')
+        if: always() && steps.pre-commit-gate.outcome == 'success'
         shell: bash
         run: |
           set -euo pipefail
@@ -673,19 +565,8 @@ jobs:
             fi
           }
 
-          stage_find() {
-            local root="$1"
-            local pattern="$2"
-            if [ -d "$root" ]; then
-              find "$root" -type f -name "$pattern" -print0 | xargs -0 -r git add
-            fi
-          }
-
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-github-daily-persistent-assets-pr.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-daily-production-chain-readiness.md"
-          stage_if_exists "agent-workflow/reports/${RUN_DATE}-pool-to-card-dedupe-gate.md"
-          stage_if_exists "agent-workflow/reports/${RUN_DATE}-pool-to-card-handoff.md"
-          stage_if_exists "agent-workflow/reports/${RUN_DATE}-frontstage-manifest.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-data-center-v4-integrity-gate.md"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-data-center-v4-integrity-gate.json"
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-persistent-asset-manifest.md"
@@ -695,10 +576,9 @@ jobs:
           stage_if_exists "agent-workflow/reports/${RUN_DATE}-guanlan-monitor-quality-gate.md"
 
           if [ "${{ steps.data-center-v4-materialize.outcome }}" = "success" ]; then
-            stage_if_exists "01-SiteV2/content/01-raw/${RUN_DATE}-raw-candidates.md"
             stage_if_exists "01-SiteV2/content/01-raw/originals/${RUN_DATE}"
             stage_if_exists "01-SiteV2/content/11-databases/source-title-translations.json"
-            stage_if_exists "01-SiteV2/content/02-pool/${RUN_DATE}-pool-candidates.md"
+            stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/intake-v1/${RUN_DATE}.json"
             stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/${RUN_DATE}"
             stage_if_exists "01-SiteV2/content/11-databases/model-assist-v1/${RUN_DATE}.json"
             stage_if_exists "01-SiteV2/content/11-databases/model-assist-v1/checkpoint.json"
@@ -717,28 +597,6 @@ jobs:
 
           if [ "${{ steps.opportunity-map-v4.outcome }}" = "success" ]; then
             stage_if_exists "01-SiteV2/site/data/opportunity-evidence-v2.json"
-          fi
-
-          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ] && [ "${{ steps.assets.outcome }}" = "success" ]; then
-            stage_if_exists "01-SiteV2/content/04-business-signals/signals/${RUN_DATE}-signals.md"
-            stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.json"
-            stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.md"
-            stage_if_exists "01-SiteV2/content/11-databases/data-center-v4/Data Center V4 Index.md"
-            stage_find "01-SiteV2/knowledge/01-Signal-Cards" "${RUN_DATE}--signal--*.md"
-            git add -u -- "01-SiteV2/knowledge/01-Signal-Cards"
-            current_card_count="$(find "01-SiteV2/knowledge/01-Signal-Cards" -type f -name "${RUN_DATE}--signal--*.md" | wc -l | tr -d ' ')"
-            staged_card_count="$(git ls-files ":(glob)01-SiteV2/knowledge/01-Signal-Cards/*/${RUN_DATE}--signal--*.md" | wc -l | tr -d ' ')"
-            if [ "$current_card_count" != "$staged_card_count" ]; then
-              echo "Same-date Card replacement mismatch: worktree=${current_card_count}, staged=${staged_card_count}" >&2
-              exit 1
-            fi
-          fi
-
-          if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
-            stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.md"
-            stage_if_exists "agent-workflow/reports/${RUN_DATE}-business-signals-frontstage-gate.json"
-            stage_if_exists "01-SiteV2/site/data/v3-data-observation-desk.json"
-            stage_if_exists "01-SiteV2/site/data/intelligence-graph-index.json"
           fi
 
           if [ "${{ steps.operations-data.outcome }}" = "success" ]; then
@@ -775,13 +633,11 @@ jobs:
           Data Center V4 update for ${RUN_DATE}.
 
           What this PR contains:
-          - Data Center V4 factual bundle generated, gated, and materialized before page compatibility stages.
-          - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
-          - Signal Cards persisted when asset generation succeeded.
-          - A trend candidate or explicit no-candidate decision persisted after Card quality passed.
-          - Internal Business Signals compatibility data included only when dedupe, source-first/regression, operations sync and pre-commit gates passed.
-          - Industry Reports application data generated as a dedicated public projection when compatibility data is available.
-          - Operations dashboard data included when the business-signal frontstage sync passes.
+          - Structured SourceArtifact / RawDocument intake and immutable source snapshots.
+          - Data Center V4 factual bundle generated, gated, and materialized before application projections.
+          - Opportunity Map, Trend Radar, and Funding Insights generated from V4 evidence.
+          - Operations dashboard data included after V4 materialization.
+          - Compatibility writers remain disabled; archived V3 assets are not staged or deployed.
           - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.
 
@@ -869,7 +725,7 @@ jobs:
         run: |
           set -euo pipefail
           pr_number="${{ steps.pr.outputs.pr_number }}"
-          merge_body="Automated Data Center V4 update after factual integrity and materialization gates passed; compatibility assets are included only when their own gates pass."
+          merge_body="Automated Data Center V4 update after structured intake, factual integrity, application projection, and operations gates passed."
 
           if gh pr merge "$pr_number" \
             --squash \
@@ -919,11 +775,10 @@ jobs:
             --dataCenterBuild="${{ steps.data-center-v4.outcome }}" \
             --dataCenterGate="${{ steps.data-center-v4-gate.outcome }}" \
             --dataCenterMaterialize="${{ steps.data-center-v4-materialize.outcome }}" \
-            --cards="${{ steps.assets.outcome }}" \
-            --dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
-            --cardEditorial="${{ steps.card-editorial-gate.outcome }}" \
-            --frontstageData="${{ steps.business-frontstage-data.outcome }}" \
-            --frontstageGate="${{ steps.business-frontstage-gate.outcome }}" \
+            --opportunity="${{ steps.opportunity-map-v4.outcome }}" \
+            --trend="${{ steps.trend-radar-projection.outcome }}" \
+            --funding="${{ steps.funding-insights.outcome }}" \
+            --compatibilityWriteDisabled=true \
             --operations="${{ steps.operations-data.outcome }}" \
             --freshness="${{ steps.pre-commit-gate.outcome }}" \
             --commit="${{ steps.commit.outcome }}" \

@@ -98,29 +98,6 @@ function v4Assets() {
   };
 }
 
-function badBusinessTitle(title = "") {
-  return /用处见原文|原文 AI 事件|原文事件标题|原文业务场景|linkedin\s+融资|github\s+original title|purpose see original/iu.test(String(title || ""));
-}
-
-function businessAssets() {
-  const file = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
-  const data = readJson(file, {});
-  const activeDate = data?.meta?.activeDate || "";
-  const cards = Array.isArray(data.frontstageCards) ? data.frontstageCards : (Array.isArray(data.cards) ? data.cards : []);
-  const sameDateCards = cards.filter((item) => !item?.date || item.date === date);
-  const badTitleCount = sameDateCards.filter((item) => badBusinessTitle(item.title || item.displayTitle || "")).length;
-  return {
-    ready: fs.existsSync(file) && activeDate === date && sameDateCards.length > 0,
-    status: "deprecated_non_blocking",
-    file: rel(file),
-    activeDate,
-    cards: sameDateCards.length,
-    badTitleCount,
-    generatedAt: data?.meta?.generatedAt || "",
-    warning: fs.existsSync(file) ? "" : "V3 observation desk is absent; ignored by OPS-V2",
-  };
-}
-
 function workflowRuns() {
   const result = runOptional("gh", [
     "run",
@@ -184,7 +161,7 @@ export function decideHealthState({ runsAvailable, runsError = "", v4Ready = fal
     return {
       ok: true,
       action: "skipped",
-      reason: "same-date Data Center V4 manifest, integrity gate, materialization, and OPS telemetry are healthy; V3 compatibility state is non-blocking",
+      reason: "same-date Data Center V4 manifest, integrity gate, materialization, and OPS telemetry are healthy; compatibility writers are disabled",
       dispatchRequired: false,
     };
   }
@@ -275,7 +252,7 @@ function writeReports(payload) {
 function main() {
   if (!date) throw new Error("Unable to resolve production date.");
   const v4 = v4Assets();
-  const assets = businessAssets();
+  const assets = { status: "retired_archive", production_write: "disabled", blocking: false };
   const runs = workflowRuns();
   const publication = publicationState();
   const activeRun = runs.sameDateRuns.find((run) => run.status === "queued" || run.status === "in_progress") || null;

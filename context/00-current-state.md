@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-07-18
+last_updated: 2026-07-29
 use_when:
   - large task startup
   - dispatch planning
@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now on the `SITE-V4.2.0-entity-history` public website and data-service baseline.
+WaveSight AI is now on the `SITE-V4.3.0-compatibility-write-disabled` public website and data-service baseline.
 
 ## Current Positioning
 
@@ -20,7 +20,7 @@ WaveSight AI is now on the `SITE-V4.2.0-entity-history` public website and data-
 - The public frontstage uses the V4 Data Center / Application Center shell. V3 page routes are redirects only.
 - The current backend entry is the operations dashboard.
 - The production core turns external sources into SourceArtifacts, RawDocuments, Claims, Entities, CanonicalEvents, domain projections, and queryable exports.
-- Pool is an operational QA queue. Card, trend, opportunity, and report objects are internal compatibility or downstream application assets, not V4 truth assets.
+- The current collection lane writes immutable source snapshots and `SOURCE-INTAKE-V1`. Card, trend, opportunity, and report objects are downstream application or frozen historical assets, not V4 truth assets.
 - Current column versions: First-Line Viewpoints `FLV-V1.1.0-history-backfill`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Trend Radar `TRADAR-V1.0.0-factual-change-explorer`, Funding Insights `FUNDING-INSIGHT-V1.0-auto-published-research`, Reports Center `REPORTS-V1.1.0-lane-independent`, Opportunity Map `OMAP-V2.0.0-v4-evidence`.
 - Current person-account review contract: `PERSON-REVIEW-V1.0`; all 37 person/account candidates are reviewed, 31 natural people are public, and 6 non-natural accounts remain quarantined without removing their viewpoint records.
 - Current data versions: `RAW-V3.0`, `EVENT-V1.1`, `ENTITY-V1.0`, `RELATION-V2.1`, `BACKFILL-V1.0`, `FDE-V2.0`, `HARDWARE-V1.0`, `TAG-V4.0`.
@@ -56,21 +56,21 @@ External sources
 -> local Obsidian sync
 ```
 
-First-line viewpoints use two independent builders monitoring lanes: the morning RSS/X lane produces translated, gated public remarks, while the afternoon follow-builders Skill lane preserves separate discovery intake and syncs person/date timelines to Obsidian. Accepted historical morning snapshots are materialized in `01-SiteV2/site/data/first-line-viewpoints-history.json`; V4 merges current and historical morning data plus the afternoon lane by original URL into `01-SiteV2/site/data/first-line-viewpoints-v4.json`. Historical or afternoon-only intake remains outside the public feed until it passes the same approved-Chinese-translation provenance, source, formal-tag, and AI-relevance gates. Viewpoints are not evidence for business-signal Cards, the relationship graph, or trend candidates. Their daily data build must not be blocked by Raw / Pool / Card failures in the business-signal chain.
+First-line viewpoints use two independent builders monitoring lanes: the morning RSS/X lane produces translated, gated public remarks, while the afternoon follow-builders Skill lane preserves separate discovery intake and syncs person/date timelines to Obsidian. Accepted historical morning snapshots are materialized in `01-SiteV2/site/data/first-line-viewpoints-history.json`; V4 merges current and historical morning data plus the afternoon lane by original URL into `01-SiteV2/site/data/first-line-viewpoints-v4.json`. Historical or afternoon-only intake remains outside the public feed until it passes the same approved-Chinese-translation provenance, source, formal-tag, and AI-relevance gates. Viewpoints are not evidence for Claims, CanonicalEvents, or RELATION-V2.1. Their daily data build is independent from the commercial-event chain.
 
-Community Intelligence uses the logged-in scys.com / aipoju.com collection route as a separate frontstage column. Its materials are community-sourced leads and must not be treated as business-signal facts unless separately verified and promoted into the Raw / Pool / Card chain.
+Community Intelligence uses the logged-in scys.com / aipoju.com collection route as a separate frontstage column. Its materials are community-sourced leads and must not be treated as facts unless the original source is separately captured, exact-span Claims are accepted, and the responsible V4 event gate passes.
 
 ## Paused / Retired
 
 The V3 column pages and old Reports page are retired as content surfaces and remain only as redirects into V4.
 
-Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.2.0, remove or rebuild them.
+Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.3.0, remove or rebuild them.
 
 ## Current Hard Rules
 
 - Raw only collects external materials. Search tools are discovery entrances and accepted facts must resolve to original sources.
 - Claims require exact RawDocument source spans. Events require Claim and SourceArtifact references.
-- Pool is QA state; Card is compatibility rendering. Neither is a V4 fact layer.
+- Pool/Card files are frozen history under `archive/v3-compat/`; neither is a V4 fact layer or current production input.
 - Missing and conflicting fields remain explicit; no source-bounded field may be invented.
 - Technical Tags and structured Facets require Claim evidence and do not rank or admit events. Product form, use case, industry, deployment model, and target user remain Facets rather than technical Tags.
 - Missing frontstage fields must not fallback to backend fields.

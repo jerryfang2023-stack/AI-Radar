@@ -26,7 +26,12 @@ test("Business supervision passes V4 telemetry with no V3 desk, graph, Cards, or
     writeJson(path.join(fixtureRoot, "01-SiteV2", "site", "data", "collection-telemetry-v1.json"), {
       meta: { version: "COLLECTION-TELEMETRY-V1.0", data_date: date },
       v4_gate: { status: "passed" },
-      deprecated_compatibility: { status: "deprecated_non_blocking" },
+      deprecated_compatibility: {
+        status: "retired_archive",
+        production_write: "disabled",
+        active_consumers: 0,
+        blocking: false,
+      },
     });
     writeJson(path.join(fixtureRoot, "agent-workflow", "reports", `${date}-data-center-v4-integrity-gate.json`), {
       date,
@@ -62,11 +67,12 @@ test("Business supervision passes V4 telemetry with no V3 desk, graph, Cards, or
     const lane = supervisor.buildBusinessSignalsLane();
 
     assert.equal(lane.evidence.dataHealth.healthy, true);
-    assert.equal(lane.evidence.dataHealth.contract, "SITE-V4.2.0 / Data Center V4 canonical production");
-    assert.equal(lane.evidence.compatibility.status, "skipped_by_compatibility_gate");
+    assert.equal(lane.evidence.dataHealth.contract, "SITE-V4.3.0 / Data Center V4 canonical production");
+    assert.equal(lane.evidence.compatibility.status, "retired_archive");
+    assert.equal(lane.evidence.compatibility.production_write, "disabled");
+    assert.equal(lane.evidence.compatibility.active_consumers, 0);
     assert.equal(lane.problems.length, 0);
-    assert.ok(lane.warnings.some((message) => /V3 observation desk is absent/u.test(message)));
-    assert.ok(lane.warnings.some((message) => /Signal Card directory is absent/u.test(message)));
+    assert.ok(lane.warnings.every((message) => !/V3 observation desk|Signal Card directory/u.test(message)));
   } finally {
     process.chdir(originalCwd);
     process.argv = originalArgv;

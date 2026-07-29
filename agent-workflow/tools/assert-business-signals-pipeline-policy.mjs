@@ -1,201 +1,88 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
 
 const root = process.cwd();
-
-function read(relative) {
-  return fs.readFileSync(path.join(root, relative), "utf8");
-}
-
-function includesAny(text, patterns) {
-  return patterns.some((pattern) => pattern.test(text));
-}
-
-const config = JSON.parse(read("01-SiteV2/content/11-databases/business-signals-gate-v3.json"));
-const packageJson = JSON.parse(read("package.json"));
-const workflow = read(".github/workflows/daily-persistent-assets-pr.yml");
-const dryRunWorkflow = read(".github/workflows/daily-production-chain-dry-run.yml");
-const monitorWrapper = read("agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs");
-const monitor = read("agent-workflow/tools/run-guanlan-daily-monitor.mjs");
-const cardGenerator = read("agent-workflow/tools/generate-asset-cards-from-pool.mjs");
-const qualityGates = read("agent-workflow/tools/run-quality-gates.mjs");
-const dataCenterFrontstageTest = read("agent-workflow/tools/tests/data-center-frontstage.test.mjs");
-const coreSiteTestCommand = packageJson.scripts?.["test:data-center-site:core"] || "";
-const opportunitySiteTestCommand = packageJson.scripts?.["test:data-center-site:opportunity"] || "";
-const compatibilitySiteTestCommand = packageJson.scripts?.["test:data-center-site:compatibility"] || "";
-const dailySupervision = read("agent-workflow/tools/write-daily-supervision-report.mjs");
-const editorialGate = read("agent-workflow/tools/assert-signal-card-editorial-quality.mjs");
-const healthDispatch = read("agent-workflow/tools/run-business-signals-health-dispatch.mjs");
-const stateClassifier = read("agent-workflow/tools/classify-business-signals-production-state.mjs");
-const dailySkill = read("agent-workflow/skills/guanlan-daily-monitor/SKILL.md");
-const preGateSkill = read("agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md");
-const qcSkill = read("agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md");
-const preGateEvals = read("agent-workflow/skills/guanlan-monitor-quality-gate/evals/monitor-quality-gate-evals.md");
-const dailyEvals = read("agent-workflow/skills/guanlan-daily-monitor/evals/daily-monitor-evals.md");
-
 const problems = [];
-const policy = config.pipeline_policy || {};
-const monitorStartup = spawnSync(
-  process.execPath,
-  [path.join(root, "agent-workflow", "tools", "run-guanlan-daily-monitor.mjs"), "--source-only=invalid", "--dry-run=true"],
-  { cwd: root, encoding: "utf8" }
-);
-const monitorStartupOutput = `${monitorStartup.stdout || ""}\n${monitorStartup.stderr || ""}`;
-const monitorMetadataFixture = spawnSync(
-  process.execPath,
-  [path.join(root, "agent-workflow", "tools", "run-guanlan-daily-monitor.mjs"), "--metadata-regression-fixtures=true"],
-  { cwd: root, encoding: "utf8" }
-);
-const monitorMetadataOutput = `${monitorMetadataFixture.stdout || ""}\n${monitorMetadataFixture.stderr || ""}`;
-const monitorAdaptiveRawFixture = spawnSync(
-  process.execPath,
-  [path.join(root, "agent-workflow", "tools", "run-guanlan-daily-monitor.mjs"), "--adaptive-raw-regression-fixtures=true"],
-  { cwd: root, encoding: "utf8" }
-);
-const monitorAdaptiveRawOutput = `${monitorAdaptiveRawFixture.stdout || ""}\n${monitorAdaptiveRawFixture.stderr || ""}`;
-const monitorEvidenceObjectFixture = spawnSync(
-  process.execPath,
-  [path.join(root, "agent-workflow", "tools", "run-guanlan-daily-monitor.mjs"), "--evidence-object-regression-fixtures=true"],
-  { cwd: root, encoding: "utf8" }
-);
-const monitorEvidenceObjectOutput = `${monitorEvidenceObjectFixture.stdout || ""}\n${monitorEvidenceObjectFixture.stderr || ""}`;
-const cardCoreRecallFixture = spawnSync(
-  process.execPath,
-  [
-    path.join(root, "agent-workflow", "tools", "generate-asset-cards-from-pool.mjs"),
-    "--date=2026-07-12",
-    "--core-recall-regression-fixtures=true",
-    "--source-title-translations=agent-workflow/tools/tests/fixtures/business-signal-source-title-translations.json",
-  ],
-  { cwd: root, encoding: "utf8" }
-);
-const cardCoreRecallOutput = `${cardCoreRecallFixture.stdout || ""}\n${cardCoreRecallFixture.stderr || ""}`;
+const read = (relative) => fs.readFileSync(path.join(root, relative), "utf8");
+const workflows = [
+  ".github/workflows/daily-persistent-assets-pr.yml",
+  ".github/workflows/daily-production-chain-dry-run.yml",
+];
+const retiredCommands = [
+  "generate-asset-cards-from-pool.mjs",
+  "assert-pool-to-card-dedupe.mjs",
+  "assert-signal-card-editorial-quality.mjs",
+  "build-v3-data-observation-desk.mjs",
+  "assert-business-signals-frontstage.mjs",
+  "build-legacy-card-event-mappings.mjs",
+];
+const retiredStagePaths = [
+  "01-SiteV2/knowledge/01-Signal-Cards",
+  "01-SiteV2/site/data/v3-data-observation-desk.json",
+  "01-SiteV2/site/data/intelligence-graph-index.json",
+];
 
-if (!monitorStartupOutput.includes("Unknown --source-only=invalid")) {
-  const firstFailureLine = monitorStartupOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
-  problems.push(`daily monitor startup smoke failed before source routing: ${firstFailureLine}`);
-}
-if (monitorMetadataFixture.status !== 0 || !monitorMetadataOutput.includes('"fixture": "source-publication-metadata"')) {
-  const firstFailureLine = monitorMetadataOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
-  problems.push(`daily monitor publication-metadata fixture failed: ${firstFailureLine}`);
-}
-if (monitorAdaptiveRawFixture.status !== 0 || !monitorAdaptiveRawOutput.includes('"fixture": "adaptive-post-fetch-raw-expansion"')) {
-  const firstFailureLine = monitorAdaptiveRawOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
-  problems.push(`daily monitor adaptive Raw expansion fixture failed: ${firstFailureLine}`);
-}
-if (monitorEvidenceObjectFixture.status !== 0 || !monitorEvidenceObjectOutput.includes('"fixture": "evidence-object-commercial-action"')) {
-  const firstFailureLine = monitorEvidenceObjectOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
-  problems.push(`daily monitor evidence-object fixture failed: ${firstFailureLine}`);
-}
-if (cardCoreRecallFixture.status !== 0 || !cardCoreRecallOutput.includes('"fixture": "business-signal-core-recall"')) {
-  const firstFailureLine = cardCoreRecallOutput.split(/\r?\n/u).find((line) => line.trim()) || "no diagnostic output";
-  problems.push(`Card core-recall fixture failed: ${firstFailureLine}`);
-}
-if (!/quality-regression-fixtures=true[^\n]*source-title-translations=agent-workflow\/tools\/tests\/fixtures\/business-signal-source-title-translations\.json/u.test(qualityGates)) {
-  problems.push("Card editorial regression fixtures do not pin their title-translation input");
-}
-if (/source-title-translations\.json|Aina raises \$5\.5M with new hardware interface/iu.test(dataCenterFrontstageTest)) {
-  problems.push("Data Center frontstage integration tests depend on mutable production title data or a named historical article");
-}
-if (/v3-data-observation-desk\.json|legacyDesk|legacyCurrentCards/u.test(dataCenterFrontstageTest)) {
-  problems.push("Data Center V4 core tests depend on downstream compatibility assets before the compatibility stage runs");
-}
-if (/industry-reports-frontstage\.test\.mjs/u.test(coreSiteTestCommand)) {
-  problems.push("Data Center V4 core test command still runs the downstream Industry Reports compatibility suite");
-}
-if (!/industry-reports-frontstage\.test\.mjs/u.test(opportunitySiteTestCommand)) {
-  problems.push("Opportunity Map V4 tests are not isolated in the opportunity test command");
-}
-if (/industry-reports-frontstage\.test\.mjs|opportunity-direction-cards-deepseek\.test\.mjs/u.test(compatibilitySiteTestCommand)) {
-  problems.push("V3 compatibility tests still own Opportunity Map V4 tests");
-}
-if (!/npm run test:data-center-site:opportunity/u.test(workflow) || !/npm run test:data-center-site:opportunity/u.test(dryRunWorkflow)) {
-  problems.push("production workflows do not run the independent Opportunity Map V4 test command");
-}
-if (!/stage_if_exists "01-SiteV2\/content\/11-databases\/source-title-translations\.json"/u.test(workflow)) {
-  problems.push("production workflow does not persist approved source-title translations with Raw assets");
-}
-if (!/failedWorkflowSupersededByPublication/u.test(dailySupervision)) {
-  problems.push("daily supervision does not close an earlier failed Business run after a later healthy Pages publication");
-}
-
-if (Number(policy.monitor_attempts) !== 1) problems.push("pipeline_policy.monitor_attempts must be 1");
-if (Number(policy.targeted_supply_refill_cycles) !== 1) problems.push("pipeline_policy.targeted_supply_refill_cycles must be 1");
-if (policy.raw_volume_refill !== false) problems.push("pipeline_policy.raw_volume_refill must be false");
-if (Object.hasOwn(config.hard_gates || {}, "unrecovered_failed_sources_max")) {
-  problems.push("provider/channel failure must not be an independent hard gate");
-}
-
-for (const [name, text] of [["production workflow", workflow], ["dry-run workflow", dryRunWorkflow]]) {
-  if (/--max-cycles=3/u.test(text)) problems.push(`${name} still requests three monitor cycles`);
-  if (/id:\s*monitor-readiness/u.test(text)) problems.push(`${name} still runs the duplicate monitor-readiness gate`);
-}
-const repeatsDataCenterMaterialization = /npm run test:data-center-site(?:\s|$)/mu.test(workflow);
-const runsPreparedSiteTests = /npm run test:data-center-site:prepared/u.test(workflow);
-const runsSplitSiteTests =
-  /npm run test:data-center-site:core/u.test(workflow) && /npm run test:trend-radar/u.test(workflow);
-if (repeatsDataCenterMaterialization || (!runsPreparedSiteTests && !runsSplitSiteTests)) {
-  problems.push("production workflow repeats Data Center materialization inside the site test command");
-}
-if (!/assert-business-signals-compatibility-contract\.mjs/u.test(fs.readFileSync(path.join(root, "agent-workflow", "tools", "assert-business-signals-frontstage.mjs"), "utf8"))) {
-  problems.push("unified Business frontstage gate does not enforce the compatibility contract");
-}
-
-if (includesAny(monitorWrapper, [/refreshSourceArtifactsForCycle/u, /max_retry_cycles\s*\|\|\s*3/u])) {
-  problems.push("monitor wrapper still recollects all source artifacts across retry cycles");
-}
-if (/targeted raw-volume refill cycle/u.test(monitor)) problems.push("monitor still refills solely to reach the Raw diagnostic target");
-if (/cycle\s*<=\s*3/u.test(monitor)) problems.push("monitor still performs three targeted Pool/Core refill cycles");
-if (/sourceArtifactsNeedSupplement/u.test(monitor)) problems.push("unified monitor recollects peer source lanes after source artifacts were already collected");
-if (/assert-guanlan-automation-readiness/u.test(cardGenerator)) problems.push("Card generator still re-runs the retired duplicate readiness gate");
-if (!/no formal Signal Cards generated/u.test(editorialGate)) problems.push("Card editorial gate does not block an empty active-date Card set");
-
-if (/--max-cycles=3/u.test(dailySkill) || /--max-cycles=3/u.test(preGateSkill)) {
-  problems.push("current monitor skills still prescribe three full monitor cycles");
-}
-if (includesAny(qcSkill, [/Active Raw count is below 150/u, /Do not report the daily monitor as complete until both conditions are true/u])) {
-  problems.push("daily-monitor QC still treats diagnostic quantity/final QC as mandatory release blockers");
-}
-if (/pending_qc/u.test(preGateEvals) || /at most 3 bounded refetch cycles/u.test(preGateEvals)) {
-  problems.push("monitor-quality evals still require the retired pending-QC/three-cycle model");
-}
-if (/source_artifact_retry_refresh/u.test(dailyEvals)) problems.push("daily-monitor evals still require full source-artifact retry refresh");
-
-if (!/publication_waiting/u.test(workflow)) problems.push("production workflow does not classify merge conflicts as publication_waiting");
-if (!/if \[ "\$\{\{ github\.event_name \}\}" = "schedule" \] \|\| \[ "\$\{\{ github\.event_name \}\}" = "workflow_dispatch" \]; then/u.test(workflow)) {
-  problems.push("production workflow does not reuse healthy same-date assets for manual health dispatches");
-}
-if (!/publication_waiting/u.test(healthDispatch)) problems.push("health dispatch does not recognize an open publication branch/PR as waiting");
-if (!/classify-business-signals-production-state\.mjs/u.test(workflow) || !/classify-business-signals-production-state\.mjs/u.test(dryRunWorkflow)) {
-  problems.push("production workflows do not share the stage-owned result classifier");
-}
-if (!/evidence_supply/u.test(stateClassifier) || !/card_quality/u.test(stateClassifier) || !/frontstage_contract/u.test(stateClassifier) || !/publication/u.test(stateClassifier)) {
-  problems.push("production-state classifier is missing a current owning stage");
-}
-if (/build-follow-builders/u.test(dryRunWorkflow)) problems.push("Business Signals dry-run still executes another lane");
-for (const [name, text] of [["production workflow", workflow], ["dry-run workflow", dryRunWorkflow]]) {
-  if (!/id:\s*card-editorial-gate/u.test(text) || !/--skip-editorial=true/u.test(text)) {
-    problems.push(`${name} does not own editorial quality before the frontstage contract`);
+for (const workflow of workflows) {
+  const text = read(workflow);
+  for (const command of retiredCommands) {
+    if (text.includes(command)) problems.push(`${workflow} still invokes retired compatibility command ${command}`);
   }
-  if (/id:\s*trend-decision/u.test(text) || /run-trend-candidate-decision\.mjs/u.test(text)) {
-    problems.push(`${name} still runs the retired daily trend-candidate decision stage`);
+  for (const retiredPath of retiredStagePaths) {
+    if (text.includes(retiredPath)) problems.push(`${workflow} still stages or inspects retired compatibility path ${retiredPath}`);
   }
-  if (/--raw-min=|--pool-min=/u.test(text)) {
-    problems.push(`${name} still duplicates V3 evidence supply with hard-coded diagnostic volume thresholds`);
+  if (!text.includes("data-center-v4/intake-v1/${RUN_DATE}.json")
+    && !text.includes("data-center-v4/intake-v1/${{ steps.run-date.outputs.date }}.json")) {
+    problems.push(`${workflow} does not persist the structured source intake`);
   }
-  if (/--trend-candidates=/u.test(text)) {
-    problems.push(`${name} still routes trend writing through the Card generator instead of the current trend decision stage`);
+  if (!text.includes("--compatibilityWriteDisabled=true")) {
+    problems.push(`${workflow} does not declare compatibility-write-disabled classification`);
   }
 }
 
-const result = {
+const persistent = read(workflows[0]);
+if (!/id:\s*pre-commit-gate[\s\S]*steps\.data-center-v4-materialize\.outcome == 'success' && steps\.operations-data\.outcome == 'success'/u.test(persistent)) {
+  problems.push("persistent workflow pre-commit gate is not owned by V4 materialization and operations data");
+}
+if (/pre-commit-gate[\s\S]{0,400}(?:business-frontstage|card-editorial|pool-to-card)/u.test(persistent)) {
+  problems.push("persistent pre-commit gate still depends on a retired compatibility stage");
+}
+
+const monitor = read("agent-workflow/tools/run-guanlan-daily-monitor.mjs");
+if (/writeFile\([^)]*(?:raw-candidates|pool-candidates)\.md/u.test(monitor)) {
+  problems.push("source monitor still writes candidate Markdown");
+}
+if (!monitor.includes("buildSourceIntake") || !monitor.includes("sourceIntakePath")) {
+  problems.push("source monitor does not write structured SourceArtifact / RawDocument intake");
+}
+if (/01-Signal-Cards|existingFormalCardSourceItems/u.test(monitor)) {
+  problems.push("source monitor still discovers compatibility Cards");
+}
+if (monitor.includes("resetGeneratedDir(originalDir")) {
+  problems.push("source monitor still deletes same-date immutable source snapshots on rerun");
+}
+if (!monitor.includes("fs.readdirSync(originalDir)")) {
+  problems.push("source monitor does not carry existing same-date snapshots into structured intake");
+}
+
+const builder = read("agent-workflow/tools/build-data-center-v4.mjs");
+if (!builder.includes("loadSourceIntakeEntries")) {
+  problems.push("Data Center V4 builder does not consume structured source intake");
+}
+
+const schema = JSON.parse(read("agent-workflow/product/data-center-v4.schema.json"));
+if ((schema.required || []).includes("compatibility_cards")) {
+  problems.push("compatibility_cards remains required by the V4 schema");
+}
+const compatibilityProperty = schema.properties?.compatibility_cards || {};
+if (compatibilityProperty.deprecated !== true || compatibilityProperty.readOnly !== true) {
+  problems.push("compatibility_cards is not marked optional, deprecated, and read-only");
+}
+
+console.log(JSON.stringify({
   ok: problems.length === 0,
-  policy_version: config.schema_version || "unknown",
-  checks: 24,
+  policy: "SITE-V4.3.0-compatibility-write-disabled",
+  workflows_checked: workflows.length,
   problems,
-};
-
-console.log(JSON.stringify(result, null, 2));
-if (!result.ok) process.exit(1);
+}, null, 2));
+if (problems.length) process.exit(1);

@@ -6,7 +6,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V4.2.0 entity history; the unified V4 shell remains, while stable entities, factual timelines, and evidence-backed relations are first-class data services. V3 Card/trend data remains an internal compatibility and downstream-application input only.
+- Current stage: SITE-V4.3.0 compatibility write disabled; the unified V4 shell, stable entities, factual timelines, and evidence-backed relations remain first-class data services. V3 Card/desk/graph assets are read-only history under `archive/v3-compat/` and have no active consumers.
 - Current frontstage: `01-SiteV2/site/data-center.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/opportunity-map.html`, and the V4 report detail pages.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V2.2.0-pipeline-stage-ownership.
@@ -25,7 +25,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current targeted historical collection contract: BACKFILL-V1.0.
 - Current tag taxonomy version: TAG-V4.0.
 - Current data-center rule source: `context/12-data-center-v4.md`.
-- `context/07-v3-intelligence-generation-rules.md` governs frozen V3 page compatibility only.
+- `context/07-v3-intelligence-generation-rules.md` documents frozen V3 history only; it is not a production route.
 - V2 website pages and old four-column output rules are retired.
 
 ## Current Product Goal
@@ -63,7 +63,7 @@ All public pages and report details use the V4 logo header and shared Data Cente
 
 Follow-builders / builders viewpoints are active only as the independent First-Line Viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
-If an old page rule conflicts with SITE-V4.2.0, delete or rebuild it instead of preserving V3 public compatibility.
+If an old page rule conflicts with SITE-V4.3.0, delete or rebuild it instead of preserving V3 public compatibility.
 
 ## Current Context
 
@@ -73,14 +73,14 @@ If an old page rule conflicts with SITE-V4.2.0, delete or rebuild it instead of 
 | `context/00-current-state.md` | current project state |
 | `context/version-ledger.md` | version baseline and freeze points |
 | `context/frontstage-page-contracts.md` | frontstage page contracts |
-| `context/01-product-map.md` | SITE-V4.2 product structure and data flow |
+| `context/01-product-map.md` | SITE-V4.3 product structure and data flow |
 | `context/02-vi-style.md` | VI, typography, visual rules |
 | `context/04-qc-rules.md` | general quality gates |
-| `context/05-daily-monitoring.md` | V3 Raw / Pool monitoring context |
+| `context/05-daily-monitoring.md` | retired V3 monitoring archive notice |
 | `context/06-execution-harness.md` | high-risk execution harness |
-| `context/07-v3-intelligence-generation-rules.md` | Raw / Pool / Card / retained relation adapter rules; historical/manual trend-candidate rules only |
-| `context/08-v3-3-automation.md` | SITE-V4.2 GitHub / site / Obsidian sync automation loop |
-| `context/09-v3-3-current-action-index.md` | current V4 and compatibility action registry |
+| `context/07-v3-intelligence-generation-rules.md` | retired V3 archive notice |
+| `context/08-v3-3-automation.md` | SITE-V4.3 GitHub / site / Obsidian sync automation loop |
+| `context/09-v3-3-current-action-index.md` | current V4 action registry |
 | `context/10-v3-3-experience-automation.md` | action logging and retrospective automation |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes control-plane liveness watchdog |
 | `context/12-data-center-v4.md` | SITE-V4.0 factual data contract, boundaries, and daily execution |
@@ -107,7 +107,7 @@ Rules:
 - The V4 sidebar and Data Center / Application Center page plan are the only current public page contract.
 - Targeted company, product, funding, and deployment backfill is an operational discovery queue. Search results remain leads until original-source capture, exact-span Claim extraction, and the responsible V4 gate pass.
 
-### Raw / Pool / Card Generation
+### Historical V3 Archive Tools
 
 Read:
 
@@ -116,25 +116,24 @@ Read:
 3. `context/06-execution-harness.md`
 4. relevant script or data file
 
-Compatibility rules:
+Archive rules:
 
-- Raw only collects external materials.
-- Pool screens evidence.
-- Card types are only `product_service`, `funding`, and `case`.
-- Card details must come from original source text, not old summaries or backend fields.
-- Missing frontstage fields must not fallback to backend fields.
+- Do not create new Raw candidate Markdown, Pool candidate Markdown, Signal Cards, V3 desk JSON, graph JSON, or legacy mappings.
+- Historical V3 assets are read-only under `archive/v3-compat/`.
+- Current production uses immutable original snapshots plus `SOURCE-INTAKE-V1`.
+- Explicit historical tools must use archive paths and cannot be discovered by production.
 
 ### Relationship Graph / Historical Trend Candidate Audit
 
 Read:
 
 1. `context/07-v3-intelligence-generation-rules.md`
-2. current Card files
+2. archived Card files under `archive/v3-compat/`
 3. related trend script only when the user explicitly requests a historical/manual trend review
 
 Rules:
 
-- Relationship graph uses Card nodes and source-backed edges.
+- Archived relationship graphs use historical Card nodes and must never be promoted into RELATION-V2.1.
 - Trend candidates and explicit no-decision shells are historical/manual research artifacts, not daily production outputs or publication gates.
 - A single article, opinion, or funding event cannot form a trend.
 - Builders viewpoints must not be used as evidence.
@@ -146,15 +145,15 @@ Read:
 1. `agent-workflow/skills/guanlan-enterprise-ai-fde-monitor/SKILL.md`
 2. `context/07-v3-intelligence-generation-rules.md`
 3. `context/05-daily-monitoring.md`
-4. `01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs`
+4. current V4 FDE generator and integrity gate
 5. `agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs`
 
 Rules:
 
-- FDE is an independent implementation lens, not a fourth Business Signal Card type.
+- FDE is an independent V4 implementation projection.
 - Every public FDE item must include source-bounded demand / service / result analysis.
-- FDE follows the Raw/Card ingestion boundary: English title translation and source-backed fact extraction are recorded in Raw, Signal Card, or FDE Lens Pool assets before frontstage rendering.
-- Missing FDE title/fact fields are repaired in the Raw/Card/FDE asset generator, not by blocking an already generated formal Business Signal Card in the generic frontstage selector.
+- FDE follows the V4 evidence boundary: English title translation and source-backed fact extraction resolve through SourceArtifact, RawDocument, accepted Claims, and the FDE projection.
+- Missing FDE title/fact fields are repaired in V4 intake/extraction/projection, not through archived Cards.
 - If the source does not disclose implementation results, state that explicitly instead of inventing ROI or production outcome.
 - FDE detail openability and `content/09-fde` sync are owned by the FDE skill, not by generic Business Signals Card repair.
 

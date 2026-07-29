@@ -422,15 +422,6 @@ function querySummary(duckdb, tableNames) {
 function main() {
   ensureDir(lakeDir);
   ensureDir(tablesDir);
-  const legacyTables = {
-    raw_items: collectRawItems(),
-    pool_daily: collectPoolDaily(),
-    signal_cards: collectSignalCards(),
-    builders_daily: collectBuildersDaily(),
-    community_items: collectCommunityItems(),
-    frontstage_cards: collectFrontstageCards(),
-    fde_items: collectFdeItems()
-  };
   const v4Tables = {
     source_artifacts: collectDataCenterRows("source-artifacts", "source_artifact_id"),
     raw_documents: collectDataCenterRows("raw-documents", "raw_id"),
@@ -454,7 +445,20 @@ function main() {
     qa_queue: collectDataCenterRows("qa-queue", "qa_id"),
     legacy_asset_mappings: collectDataCenterRows("legacy-asset-mappings")
   };
-  const tables = arg("v4-only", "false") === "true" ? v4Tables : { ...legacyTables, ...v4Tables };
+  // V4-only is the safe production default. Historical compatibility imports
+  // require an explicit opt-in and are removed entirely in Phase 4.
+  const legacyTables = arg("legacy-compat", "false") === "true"
+    ? {
+        raw_items: collectRawItems(),
+        pool_daily: collectPoolDaily(),
+        signal_cards: collectSignalCards(),
+        builders_daily: collectBuildersDaily(),
+        community_items: collectCommunityItems(),
+        frontstage_cards: collectFrontstageCards(),
+        fde_items: collectFdeItems(),
+      }
+    : {};
+  const tables = { ...legacyTables, ...v4Tables };
   for (const [name, rows] of Object.entries(tables)) writeJsonl(name, rows);
   if (arg("duckdb", "required") === "skip") {
     console.log(JSON.stringify({ ok: true, duckdb: "skipped", database: rel(dbPath), generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])) }, null, 2));

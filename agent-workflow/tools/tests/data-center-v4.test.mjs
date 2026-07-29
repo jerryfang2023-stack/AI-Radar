@@ -1203,21 +1203,22 @@ test("integrity gate rejects duplicate stable identifiers", () => {
   assert.ok(result.failures.some((failure) => failure.includes("duplicate raw_id")));
 });
 
-test("daily workflow commits compatibility outputs only after the compatibility gate succeeds", () => {
+test("daily workflow stages only V4-native outputs after the pre-commit gate succeeds", () => {
   const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  const compatibilityBlock = workflow.indexOf('if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then');
+  const stagingBlock = workflow.indexOf("- name: Commit Data Center V4 assets");
 
-  assert.ok(compatibilityBlock > 0);
+  assert.ok(stagingBlock > 0);
   for (const asset of [
-    "business-signals-frontstage-gate.md",
-    "business-signals-frontstage-gate.json",
-    "v3-data-observation-desk.json",
-    "intelligence-graph-index.json"
+    "data-center-v4/intake-v1/${RUN_DATE}.json",
+    "data-center-v4/${RUN_DATE}",
+    "opportunity-evidence-v2.json",
+    "trend-radar-v1.json",
+    "collection-telemetry-v1.json",
   ]) {
-    assert.ok(workflow.indexOf(asset, compatibilityBlock) > compatibilityBlock, `${asset} must be staged inside the compatibility-success block`);
+    assert.ok(workflow.indexOf(asset, stagingBlock) > stagingBlock, `${asset} must be staged inside the V4-success block`);
   }
-  assert.doesNotMatch(workflow, /(?:no-)?trend-candidate-decision\.md/iu);
-  assert.match(workflow, /pre-commit-gate\.outcome \}\}" = "success" \] && \[ "\$\{\{ steps\.business-frontstage-data\.outcome/iu);
+  assert.doesNotMatch(workflow, /(?:no-)?trend-candidate-decision\.md|v3-data-observation-desk\.json|intelligence-graph-index\.json|01-Signal-Cards/iu);
+  assert.match(workflow, /if: always\(\) && steps\.pre-commit-gate\.outcome == 'success'/iu);
 });
 
 test("Chinese related-article tails never enter accepted claims", () => {
@@ -1278,9 +1279,9 @@ test("Noetra infrastructure sources merge and preserve disclosed chip capacity",
   assert.equal(bundle.hardware_records[0].source_refs.length, 2);
 });
 
-test("legacy Card projection disambiguates physical files and keeps URL-conflicting legacy ids unresolved", () => {
+test("archived legacy Card projection disambiguates physical files and keeps URL-conflicting legacy ids unresolved", () => {
   const dataRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4");
-  const projection = JSON.parse(fs.readFileSync(path.join(dataRoot, "legacy-card-event-mappings.json"), "utf8"));
+  const projection = JSON.parse(fs.readFileSync(path.join(root, "archive/v3-compat/legacy-mappings/legacy-card-event-mappings.json"), "utf8"));
   assert.equal(projection.failures.length, 0);
   assert.equal(projection.summary.card_instances, projection.mappings.length);
   assert.equal(new Set(projection.mappings.map((item) => item.card_instance_id)).size, projection.mappings.length);
@@ -1303,10 +1304,11 @@ test("legacy Card projection disambiguates physical files and keeps URL-conflict
   for (const item of projection.mappings) for (const eventId of item.event_ids) assert.ok(eventIds.has(eventId), `${eventId} must resolve`);
 });
 
-test("legacy Card local Raw links are either valid or explicitly retired", () => {
-  const projection = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/content/11-databases/data-center-v4/legacy-card-event-mappings.json"), "utf8"));
+test("archived legacy Card local Raw links are either valid or explicitly retired", () => {
+  const projection = JSON.parse(fs.readFileSync(path.join(root, "archive/v3-compat/legacy-mappings/legacy-card-event-mappings.json"), "utf8"));
   for (const item of projection.mappings) {
-    const cardFile = path.join(root, item.legacy_path.replace(/\//gu, path.sep));
+    const archivedPath = item.legacy_path.replace(/^01-SiteV2\/knowledge\/01-Signal-Cards/u, "archive/v3-compat/signal-cards");
+    const cardFile = path.join(root, archivedPath.replace(/\//gu, path.sep));
     const text = fs.readFileSync(cardFile, "utf8");
     const fm = text.match(/^---\s*\r?\n([\s\S]*?)\r?\n---/u)?.[1] || "";
     const status = fm.match(/^\s+legacy_source_status:\s*(.+)$/mu)?.[1]?.trim() || "";
