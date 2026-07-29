@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { readSourceIntake } from "./lib/source-intake-v1.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -204,6 +205,51 @@ function parsePoolItems(poolMarkdown = "") {
     });
 }
 
+function structuredIntakeItems(intake = null) {
+  if (!intake?.payload?.raw_documents) return [];
+  return intake.payload.raw_documents.map((document) => {
+    const diagnostics = document.intake_diagnostics || {};
+    const bodyFile = path.resolve(root, document.body_ref || "");
+    const rawRecord = bodyFile.startsWith(`${path.resolve(root)}${path.sep}`)
+      ? readJson(bodyFile, {})
+      : {};
+    return {
+      title: document.title_original || document.title_zh || "",
+      routes: Array.isArray(diagnostics.pool_routes) ? diagnostics.pool_routes : [],
+      sourceName: document.publisher || "",
+      sourceUrl: document.source_url || "",
+      acquisitionChannel: diagnostics.acquisition_channel || "",
+      sourceLevel: rawRecord.source_level || "",
+      acquisitionSourceLevel: rawRecord.acquisition_source_level || "",
+      evidenceObjectType: diagnostics.evidence_object_type || "",
+      evidenceStrength: normalizeEvidenceStrength(diagnostics.evidence_strength),
+      evidenceObjectUsable: Boolean(diagnostics.evidence_object_usable),
+      eventEvidence: Boolean(rawRecord.event_evidence),
+      indexOnlyEvidence: Boolean(rawRecord.index_only_evidence),
+      rawQcDecision: diagnostics.raw_qc_decision || "",
+      rawQcDownstreamUse: diagnostics.raw_qc_downstream_use || "",
+      hasFullText: Boolean(diagnostics.has_full_text),
+      extractionQuality: diagnostics.extraction_quality || "",
+      extractionMethod: document.capture_method || "",
+      readabilityScore: Number(diagnostics.readability_score || 0),
+      contentHash: document.content_hash || "",
+      fullTextHash: rawRecord.full_text_hash || "",
+      keyExcerpts: JSON.stringify(diagnostics.key_excerpts || []),
+      sourceRole: rawRecord.source_role || "",
+      originFetchStatus: diagnostics.origin_fetch_status || "",
+      keywordGroup: rawRecord.keyword_group || "",
+      rawRef: document.raw_id || "",
+      text: [
+        document.title_original,
+        rawRecord.clean_text,
+        rawRecord.full_text,
+        JSON.stringify(diagnostics.key_excerpts || []),
+      ].filter(Boolean).join("\n"),
+      pooled: Boolean(diagnostics.pooled),
+    };
+  });
+}
+
 function isHomepageDirectoryCoreItem(item = {}) {
   if (!item.routes?.includes("core_pool")) return false;
   if (item.indexOnlyEvidence) return true;
@@ -374,6 +420,7 @@ export function runGuanlanMonitorQualityGate({
   const scoreMode = config.score_mode || "diagnostic_only";
   const rawFile = path.join(root, "01-SiteV2", "content", "01-raw", `${targetDate}-raw-candidates.md`);
   const poolFile = path.join(root, "01-SiteV2", "content", "02-pool", `${targetDate}-pool-candidates.md`);
+  const structuredIntake = readSourceIntake(root, targetDate);
   const logFile = firstExisting([
     path.join(root, "agent-workflow", "reports", `${targetDate}-guanlan-daily-monitor-log.md`),
   ]);
@@ -383,10 +430,17 @@ export function runGuanlanMonitorQualityGate({
   const logText = readText(logFile);
   const logBullets = parseBulletMap(logText);
 
-  const rawCount = parseNumber(logBullets.raw_count, parseNumber(parseFrontMatterValue(rawText, "raw_count", "0"), 0));
-  const poolCount = parseNumber(logBullets.pool_count, parseNumber(parseFrontMatterValue(poolText, "pool_count", "0"), 0));
+  const rawCount = parseNumber(
+    logBullets.raw_count,
+    Number(structuredIntake?.payload?.counts?.raw_documents || parseNumber(parseFrontMatterValue(rawText, "raw_count", "0"), 0))
+  );
+  const poolCount = parseNumber(
+    logBullets.pool_count,
+    Number(structuredIntake?.payload?.counts?.pooled_documents || parseNumber(parseFrontMatterValue(poolText, "pool_count", "0"), 0))
+  );
 
-  const rawTitles = parseRawTitles(rawText);
+  const intakeItems = structuredIntakeItems(structuredIntake);
+  const rawTitles = intakeItems.length ? intakeItems.map((item) => item.title).filter(Boolean) : parseRawTitles(rawText);
   const aiRelevantCount = rawTitles.filter((title) => isAIRelevant(title)).length;
   const offTopicCount = rawTitles.filter((title) => hasOffTopicSignal(title, offTopicPatterns) && !isAIRelevant(title)).length;
   const aiRelevantRatio = ratio(aiRelevantCount, rawTitles.length || rawCount);
@@ -404,7 +458,7 @@ export function runGuanlanMonitorQualityGate({
   const outsideCoreCount = themeDist["outside-core-exploration"] || 0;
   const poolImportanceCoverageValue = String(logBullets.pool_importance_coverage_gaps || "unknown").trim().toLowerCase();
   const poolCoverageGapFlag = poolImportanceCoverageValue !== "none";
-  const poolItems = parsePoolItems(poolText);
+  const poolItems = intakeItems.length ? intakeItems.filter((item) => item.pooled) : parsePoolItems(poolText);
   const poolRouteDist = poolItems.reduce((acc, item) => {
     const routes = item.routes?.length ? item.routes : ["index_only"];
     for (const route of routes) acc[route] = (acc[route] || 0) + 1;
@@ -791,8 +845,9 @@ export function runGuanlanMonitorQualityGate({
     "",
     "## Inputs",
     "",
-    `- raw_file: ${rawFile && fs.existsSync(rawFile) ? rel(rawFile) : "missing"}`,
-    `- pool_file: ${poolFile && fs.existsSync(poolFile) ? rel(poolFile) : "missing"}`,
+    `- structured_intake_file: ${structuredIntake?.file ? rel(structuredIntake.file) : "missing"}`,
+    `- legacy_raw_file: ${rawFile && fs.existsSync(rawFile) ? rel(rawFile) : "not_generated"}`,
+    `- legacy_pool_file: ${poolFile && fs.existsSync(poolFile) ? rel(poolFile) : "not_generated"}`,
     `- monitor_log_file: ${logFile && fs.existsSync(logFile) ? rel(logFile) : "missing"}`,
     `- config_file: ${rel(configPath)}`,
     "",
@@ -816,8 +871,9 @@ export function runGuanlanMonitorQualityGate({
     report_path: reportPath,
     latest_path: latestPath,
     input_files: {
-      raw: rawFile,
-      pool: poolFile,
+      structured_intake: structuredIntake?.file || "",
+      raw: fs.existsSync(rawFile) ? rawFile : "",
+      pool: fs.existsSync(poolFile) ? poolFile : "",
       log: logFile || "",
       config: configPath,
     },

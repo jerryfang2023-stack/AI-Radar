@@ -35,7 +35,7 @@ function parseCurrentVersions() {
 
 const versions = parseCurrentVersions();
 const expected = {
-  site: "SITE-V4.2.0-entity-history",
+  site: "SITE-V4.3.0-compatibility-write-disabled",
   ops: "OPS-V2.0.0-v4-telemetry",
   reports: "REPORTS-V1.1.0-lane-independent",
   opportunity: "OMAP-V2.0.0-v4-evidence",
@@ -61,7 +61,7 @@ const ledgerChecks = [
   ["Skill governance editor", "guanlan-skill-editor v1.0.2"],
   ["Code and rule auditor", "guanlan-code-rule-auditor v1.0.2"],
   ["Skill Store version", expected.skillStore],
-  ["Git tag", "v4.2.6-funding-insights"],
+  ["Git tag", "v4.3.0-compatibility-write-disabled"],
 ];
 for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
@@ -72,24 +72,32 @@ const sitePages = [
   "01-SiteV2/site/intelligence-map.html",
   "01-SiteV2/site/opportunity-map.html",
   "01-SiteV2/site/trend-radar.html",
-  ...fs.readdirSync(path.join(root, "01-SiteV2/site"))
-    .filter((name) => /^(weekly-ai-business-change-radar|monthly-business-structure).*\.html$/u.test(name))
-    .map((name) => `01-SiteV2/site/${name}`),
+  "01-SiteV2/site/funding-insights.html",
+  "01-SiteV2/site/weekly-ai-business-change-radar.html",
 ];
-for (const file of new Set(sitePages)) expectText(file, expected.site, "current SITE version");
+const redirectPages = [
+  "01-SiteV2/site/v3-data-observation.html",
+  "01-SiteV2/site/follow-builders.html",
+  "01-SiteV2/site/community-intelligence.html",
+  "01-SiteV2/site/reports.html",
+];
+for (const file of new Set([...sitePages, ...redirectPages])) expectText(file, expected.site, "current SITE version");
 expectText("01-SiteV2/site/operations-console.html", expected.ops, "current Operations Backend version");
 expectText("01-SiteV2/site/intelligence-map.html", expected.reports);
 expectText("01-SiteV2/site/opportunity-map.html", expected.opportunity);
 expectText("01-SiteV2/site/trend-radar.html", expected.trendRadar);
 for (const file of new Set(sitePages)) expectText(file, 'href="trend-radar.html"', "Trend Radar navigation entry");
-for (const file of sitePages.filter((file) => /weekly-|monthly-/u.test(file))) {
+const historicalReportPages = fs.readdirSync(path.join(root, "01-SiteV2/site"))
+  .filter((name) => /^(weekly-ai-business-change-radar-\d{4}-\d{2}-\d{2}|monthly-business-structure-\d{4}-\d{2})\.html$/u.test(name))
+  .map((name) => `01-SiteV2/site/${name}`);
+for (const file of historicalReportPages) {
   const html = read(file);
   if (!/REPORTS-V1\.(?:0\.0-periodic-report-center|1\.0-lane-independent)/u.test(html)) {
     fail(`${file} missing supported Reports Center version`);
   }
   rejectText(file, expected.opportunity, "Opportunity Map column version");
 }
-for (const file of ["01-SiteV2/site/intelligence-map.html", "01-SiteV2/site/opportunity-map.html", ...sitePages.filter((file) => /weekly-|monthly-/u.test(file))]) {
+for (const file of ["01-SiteV2/site/intelligence-map.html", "01-SiteV2/site/opportunity-map.html", ...historicalReportPages]) {
   rejectText(file, "IMAP-V2.1.0", "shared IMAP metadata");
 }
 
@@ -151,6 +159,6 @@ console.log(JSON.stringify({
   trend_radar_version: expected.trendRadar,
   person_review_version: expected.person,
   skill_store_version: expected.skillStore,
-  public_pages_checked: new Set(sitePages).size,
+  public_pages_checked: new Set([...sitePages, ...redirectPages, ...historicalReportPages]).size,
   ops_version_rows: opsVersions.size,
 }, null, 2));

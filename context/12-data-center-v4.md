@@ -2,13 +2,13 @@
 status: current
 scope: data-center-v4
 version: SITE-V4.0-data-center
-last_updated: 2026-07-18
+last_updated: 2026-07-29
 priority: current
 ---
 
 # WaveSight Data Center V4
 
-This is the current source of truth for the factual data layer. `context/07-v3-intelligence-generation-rules.md` remains active only for internal compatibility data and downstream application adapters.
+This is the current source of truth for the factual data layer. `context/07-v3-intelligence-generation-rules.md` is retired historical guidance and is not a production route.
 
 ## Positioning
 
@@ -84,7 +84,7 @@ npm run sync:data-center
 npm run assert:entity-history
 ```
 
-The daily GitHub workflow runs these steps after Raw evidence supply passes and before legacy Card/page compatibility work.
+The daily GitHub workflow first captures immutable source snapshots and writes `SOURCE-INTAKE-V1`, then runs these V4 steps. No legacy Card, desk, graph, or mapping writer follows them.
 
 For a full historical reprojection of all accepted canonical data, run `npm run backfill:entity-history`. The generated coverage report must disclose boundary and source-batch gaps rather than manufacture records.
 
@@ -107,8 +107,8 @@ The entity-history manifest reports accepted data-batch counts by month. Sparse 
 - The event list groups and filters daily records by the bundle `data_date`, because it represents the accepted daily data batch.
 - `event_time` and `disclosed_at` remain separate factual timestamps and are shown only as auxiliary event metadata using the Asia/Shanghai calendar date.
 - Search, type, and tag filters remain inside the current data batch unless the user explicitly supplies a date range.
-- While the internal V3 compatibility lane remains active, a current V4 event batch unexpectedly smaller than the same-date factual legacy Card set is a coverage diagnostic that requires Raw-to-Event investigation.
+- Coverage diagnostics compare structured intake, accepted Claims/Events, conflicts, and QA state. Archived V3 counts are not production baselines.
 
 ## Page contract
 
-The unified V4 shell for Data Center, Industry Reports, and the independent Opportunity Map is governed by `context/frontstage-page-contracts.md`. Legacy V3 column URLs are redirects only. Existing trend, opportunity, report, and importance-sorted outputs may continue only as internal compatibility or downstream application data. They do not enter V4 tables.
+The unified V4 shell for Data Center, Industry Reports, and the independent Opportunity Map is governed by `context/frontstage-page-contracts.md`. Legacy V3 column URLs are redirects only. Trend, opportunity, funding, and report outputs are downstream application data and do not enter V4 canonical tables.

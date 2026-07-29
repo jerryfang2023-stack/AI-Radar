@@ -102,14 +102,12 @@ export function buildCollectionTelemetry({
 
   const publicationOutcome = normalizedOutcome(outcomes.publication || persistentManifest?.outcomes?.pre_commit_gate);
   const compatibility = {
-    status: "deprecated_non_blocking",
-    v3_desk_present: fs.existsSync(path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json")),
-    intelligence_graph_present: fs.existsSync(path.join(root, "01-SiteV2", "site", "data", "intelligence-graph-index.json")),
-    signal_card_directory_present: fs.existsSync(path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards")),
+    status: "retired_archive",
+    production_write: "disabled",
+    active_consumers: 0,
+    blocking: false,
   };
-  const compatibilityWarnings = Object.entries(compatibility)
-    .filter(([key, value]) => key.endsWith("_present") && value === false)
-    .map(([key]) => `${key.replace(/_present$/u, "")} is absent; ignored by OPS-V2`);
+  const compatibilityWarnings = [];
 
   const stages = [
     stage("collection", "采集", gatePassed && captureFailed === 0 ? "passed" : captureSucceeded ? "partial" : "failed", {

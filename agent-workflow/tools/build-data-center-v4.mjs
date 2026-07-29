@@ -6,6 +6,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { extractExplicitProductNames } from "../product/product-entity-normalizer.mjs";
 import { buildEventDisplayTitle, isCompletePublicEventTitle } from "./event-public-title.mjs";
+import { loadSourceIntakeEntries } from "./lib/source-intake-v1.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -336,11 +337,14 @@ function writeJson(file, value) {
 }
 
 function availableDates() {
-  if (!fs.existsSync(rawRoot)) return [];
-  return fs.readdirSync(rawRoot, { withFileTypes: true })
+  const snapshotDates = !fs.existsSync(rawRoot) ? [] : fs.readdirSync(rawRoot, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name))
-    .map((entry) => entry.name)
-    .sort();
+    .map((entry) => entry.name);
+  const intakeRoot = path.join(outputRoot, "intake-v1");
+  const intakeDates = !fs.existsSync(intakeRoot) ? [] : fs.readdirSync(intakeRoot)
+    .filter((name) => /^\d{4}-\d{2}-\d{2}\.json$/u.test(name))
+    .map((name) => name.replace(/\.json$/u, ""));
+  return [...new Set([...snapshotDates, ...intakeDates])].sort();
 }
 
 function trimBoilerplate(text) {
@@ -1545,6 +1549,20 @@ function loadExistingBundle(date) {
 }
 
 function loadRawEntries(date) {
+  const intake = loadSourceIntakeEntries(root, date);
+  if (intake) {
+    for (const entry of intake.entries) {
+      const artifact = sourceArtifact(entry.raw, entry.file);
+      const expectedRawId = `RAW-${hash(`${date}|${artifact.source_artifact_id}`)}`;
+      if (artifact.source_artifact_id !== entry.intake_document.source_artifact_id) {
+        throw new Error(`${entry.intake_document.raw_id}: structured intake SourceArtifact identity drift`);
+      }
+      if (expectedRawId !== entry.intake_document.raw_id) {
+        throw new Error(`${entry.intake_document.raw_id}: structured intake RawDocument identity drift`);
+      }
+    }
+    return intake.entries;
+  }
   const dir = path.join(rawRoot, date);
   if (!fs.existsSync(dir)) throw new Error(`Raw originals directory not found: ${rel(dir)}`);
   return fs.readdirSync(dir).filter((name) => name.endsWith(".json")).sort().map((name) => {

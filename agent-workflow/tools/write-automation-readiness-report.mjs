@@ -3,33 +3,28 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const args = new Map(
-  process.argv.slice(2).map((arg) => {
-    const [key, ...rest] = arg.replace(/^--/, "").split("=");
-    return [key, rest.join("=") || "true"];
-  })
-);
-
+const args = new Map(process.argv.slice(2).map((arg) => {
+  const [key, ...rest] = arg.replace(/^--/u, "").split("=");
+  return [key, rest.join("=") || "true"];
+}));
 const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const file = path.join(reportsDir, `${date}-github-automation-readiness-report.md`);
-
 const steps = [
-  ["Run Raw / Pool monitor with QC", "agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs"],
-  ["Confirm Raw / Pool counts and stale state", "agent-workflow/tools/assert-daily-production-chain.mjs"],
-  ["Generate qualified Signal Card assets and frontstage Cards", "agent-workflow/tools/generate-asset-cards-from-pool.mjs"],
-  ["Run Pool-to-Card duplicate gate", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"],
-  ["Build V3 data observation desk", "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"],
-  ["Build Opportunity Map projection from accepted V4 Event/Claim/Source evidence", "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"],
-  ["Sync operations dashboard data", "01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"],
+  ["Collect structured source intake", "agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs"],
+  ["Gate SourceArtifact / RawDocument intake", "agent-workflow/tools/assert-daily-production-chain.mjs"],
+  ["Build the Data Center V4 factual bundle", "agent-workflow/tools/build-data-center-v4.mjs"],
+  ["Run the V4 integrity gate", "agent-workflow/tools/assert-data-center-v4.mjs"],
+  ["Materialize V4 serving tables", "agent-workflow/tools/sync-light-data-lake.mjs"],
+  ["Build Opportunity Map projection", "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"],
+  ["Build Trend Radar projection", "01-SiteV2/site/scripts/build-trend-radar-frontstage.mjs"],
+  ["Build Funding Insights projection", "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs"],
+  ["Sync operations data", "01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"],
+  ["Assert compatibility writers remain disabled", "agent-workflow/tools/assert-no-active-v3-compat.mjs"],
 ];
-
-function exists(target) {
-  return fs.existsSync(path.join(root, target));
-}
-
+const exists = (target) => fs.existsSync(path.join(root, target));
 const missing = steps.filter(([, script]) => !exists(script));
-const status = missing.length ? "blocked_missing_scripts" : "ready_for_v3_asset_chain";
+const status = missing.length ? "blocked_missing_scripts" : "ready_for_v4_native_chain";
 
 fs.mkdirSync(reportsDir, { recursive: true });
 fs.writeFileSync(file, [
@@ -37,9 +32,9 @@ fs.writeFileSync(file, [
   "",
   `- generated_at: ${new Date().toISOString()}`,
   `- status: ${status}`,
-  "- current_chain: V4 factual core plus internal Raw / Pool / Signal Card compatibility adapters",
-  "- active_outputs: V4 canonical facts, Raw candidates, Pool evidence, Signal Card assets, relationship graph inputs, and the Opportunity Map projection",
-  "- frontstage_goal: update V4 pages and the source-backed Opportunity Map projection after PR merge",
+  "- current_chain: structured intake -> V4 factual core -> application projections -> operations -> publication",
+  "- compatibility_write: disabled",
+  "- compatibility_archive: read_only",
   "",
   "## Step Readiness",
   "",
@@ -49,25 +44,22 @@ fs.writeFileSync(file, [
   "",
   "## Required Gates",
   "",
-  "- Raw / Pool count and historical duplicate gate.",
-  "- Pool-to-Card duplicate gate.",
-  "- V3 source-first frontstage gate.",
-  "- Frontstage regression gate.",
-  "- Pre-commit gate before PR update.",
+  "- Structured intake integrity and historical duplicate gate.",
+  "- V4 Claim, Event, Entity, relationship, and materialization gates.",
+  "- Opportunity Map, Trend Radar, and Funding Insights projection gates.",
+  "- Operations telemetry and final pre-commit gate.",
+  "- No active compatibility writer or consumer.",
   "",
-  "## Current Boundaries",
+  "## Boundaries",
   "",
-  "- Only current Business Signals assets are executed in this chain.",
-  "- Publishing uses source-first, frontstage regression, Pool-to-Card dedupe, and freshness gates.",
-  "- No opinion / follow-builders material enters business-signal generation.",
-  "- Card details must be generated from original source text, not old summaries or backend fields.",
-  "- Trend candidates and no-decision shells are historical/manual research artifacts and are not part of daily production.",
+  "- First-line viewpoints and community material remain independent from canonical facts.",
+  "- Archived compatibility data is read-only and cannot be discovered by production.",
+  "- Historical report HTML is immutable.",
   "",
   "## Missing / Blocked",
   "",
   ...(missing.length ? missing.map(([, script]) => `- Missing script: \`${script}\``) : ["- none"]),
   "",
 ].join("\n"), "utf8");
-
-console.log(`Wrote ${path.relative(root, file).replace(/\\/g, "/")}`);
+console.log(`Wrote ${path.relative(root, file).replace(/\\/gu, "/")}`);
 if (missing.length) process.exit(1);

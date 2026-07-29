@@ -42,9 +42,10 @@ test("V4 telemetry passes without V3 desk, graph, or Signal Cards", () => {
   assert.equal(result.v4_gate.status, "passed");
   assert.equal(result.fact_build.canonical_events, 0);
   assert.equal(result.stages.find((item) => item.id === "fact_build").status, "passed");
-  assert.equal(result.deprecated_compatibility.status, "deprecated_non_blocking");
-  assert.equal(result.deprecated_compatibility.v3_desk_present, false);
-  assert.equal(result.deprecated_compatibility.intelligence_graph_present, false);
+  assert.equal(result.deprecated_compatibility.status, "retired_archive");
+  assert.equal(result.deprecated_compatibility.production_write, "disabled");
+  assert.equal(result.deprecated_compatibility.active_consumers, 0);
+  assert.equal(result.deprecated_compatibility.blocking, false);
   assert.deepEqual(result.stages.map((item) => item.id), [
     "collection",
     "fact_build",

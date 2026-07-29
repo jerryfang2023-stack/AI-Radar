@@ -17,7 +17,7 @@ SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent
                -> FDE / Hardware projections -> database / exports
 ```
 
-Legacy Signal Cards and page JSON are compatibility renderings. They are not V4 sources of truth.
+Archived Signal Cards and V3 page JSON are read-only historical renderings. They are not V4 sources of truth or current inputs.
 
 ## Storage
 
@@ -27,7 +27,7 @@ Daily canonical bundles are written to:
 01-SiteV2/content/11-databases/data-center-v4/<YYYY-MM-DD>/
 ```
 
-Every bundle contains source artifacts, raw documents, claims, entities, entity mentions, canonical events, event-source and event-claim links, conflicts, factual relationships, technical tag assertions, structured facet assertions, FDE records, hardware records, a QA queue, legacy mappings, judgment-free compatibility Cards, and a manifest.
+Every bundle contains source artifacts, raw documents, claims, entities, entity mentions, canonical events, event-source and event-claim links, conflicts, factual relationships, technical tag assertions, structured facet assertions, FDE records, hardware records, a QA queue, legacy mappings, and a manifest. During the V4.3 observation release, judgment-free `compatibility_cards` may be emitted as an optional, read-only, deprecated projection.
 
 The public interface is defined by `data-center-v4.schema.json`. Stable identifiers are `source_artifact_id`, `raw_id`, `claim_id`, `entity_id`, `event_id`, and `tag_id`.
 
@@ -60,7 +60,7 @@ Opinion and community material may be stored as source datasets, but it is not p
 
 ## Compatibility
 
-The public website uses the unified V4 frontstage. The legacy pipeline may continue producing internal Card, trend, graph, and opportunity objects for historical analytics, Obsidian sync, and downstream application adapters, but public pages cannot load V3 navigation, page assets, or the V3 desk JSON. Those compatibility objects cannot enter V4 tables. Historical files are not overwritten; mappings connect legacy Raw/Card identifiers to V4 events.
+The public website uses the unified V4 frontstage. Current production does not generate or consume V3 Card, desk, graph, or legacy mapping assets. Historical files live under `archive/v3-compat/`, are excluded from Pages and automatic discovery, and cannot enter V4 tables. Current opportunity, trend, funding, and report adapters read accepted V4 evidence.
 
 The daily data-center list uses bundle `data_date` as its grouping and filter date. Canonical `event_time` and `disclosed_at` retain the source-reported time and must not replace the daily batch date in default list selection. During dual-write, legacy factual Cards are a coverage comparison only; they are never promoted as V4 evidence.
 

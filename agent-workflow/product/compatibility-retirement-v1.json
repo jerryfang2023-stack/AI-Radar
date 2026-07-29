@@ -1,93 +1,95 @@
 {
   "schema_version": "COMPATIBILITY-RETIREMENT-V1.0",
   "updated_at": "2026-07-29",
-  "principle": "Retain a compatibility module only while a named current consumer still needs behavior that the V4 factual core or a downstream adapter does not provide.",
+  "release": "SITE-V4.3.0-compatibility-write-disabled",
+  "principle": "V3 compatibility assets are read-only history. No current production workflow, gate, page, projection, health check, or synchronization task may discover them.",
+  "observation": {
+    "state": "started_on_deploy",
+    "minimum_days": 7,
+    "must_cover_weekly_cycle": true,
+    "final_interface_removal": "Phase 4 after the observation gate passes"
+  },
   "assets": [
     {
       "id": "raw_pool_card",
-      "status": "retained_internal_adapter",
+      "status": "retired_archive",
       "module": "Raw / Pool / Signal Card compatibility chain",
-      "interface": "Raw and Pool Markdown, accepted Signal Card Markdown, compatibility_cards JSONL",
-      "implementation": "daily source monitor, evidence QA, Card generator, and Card gates",
-      "current_consumers": [
-        "legacy Card-to-event mappings and Obsidian compatibility archives"
-      ],
-      "replacement": "Keep original source artifacts in V4; move opportunity semantics to a downstream V4 adapter and move supply diagnostics to dedicated collection telemetry.",
+      "interface": "archive/v3-compat/signal-cards and optional read-only compatibility_cards JSONL",
+      "implementation": "Historical assets are archived; current collection writes SOURCE-INTAKE-V1 and immutable source snapshots.",
+      "current_consumers": [],
+      "replacement": "SourceArtifact, RawDocument, Claim, CanonicalEvent, and downstream V4 evidence projections.",
       "exit_conditions": [
-        "Opportunity Map no longer reads Signal Card assets",
-        "Dashboard collection telemetry no longer reads Raw, Pool, or Card Markdown",
-        "legacy Card-to-event mappings are frozen as historical mappings",
-        "current workflows and gates have zero Card-generation requirements"
+        "complete: current workflows and gates have zero Card-generation requirements",
+        "complete: current pages and projections do not read Signal Cards",
+        "pending Phase 4: remove the optional compatibility_cards interface after observation"
       ]
     },
     {
       "id": "v3_data_observation_desk",
-      "status": "deprecated_non_blocking",
+      "status": "retired_archive",
       "module": "V3 data observation desk dataset",
-      "interface": "01-SiteV2/site/data/v3-data-observation-desk.json",
-      "implementation": "build-v3-data-observation-desk.mjs",
-      "current_consumers": [
-        "Business Signals compatibility gates",
-        "legacy light data-lake compatibility materialization"
-      ],
-      "replacement": "Split each consumer onto V4 canonical tables or dedicated collection telemetry.",
+      "interface": "archive/v3-compat/frontstage/v3-data-observation-desk.json",
+      "implementation": "Read-only historical JSON; its builder is dormant until Phase 4 deletion.",
+      "current_consumers": [],
+      "replacement": "V4 manifests, collection-telemetry-v1.json, and dedicated application projections.",
       "exit_conditions": [
-        "Opportunity Map projection remains independent from the V3 desk",
-        "supervision and health dispatch read V4 manifests and collection telemetry",
-        "compatibility Card materialization reads accepted Card assets directly",
-        "no current tool references the V3 desk interface"
+        "complete: supervision and health dispatch read V4 telemetry",
+        "complete: no current workflow or public page reads the V3 desk"
       ]
     },
     {
       "id": "intelligence_graph_index",
-      "status": "deprecated_non_blocking",
+      "status": "retired_archive",
       "module": "Legacy intelligence graph index",
-      "interface": "01-SiteV2/site/data/intelligence-graph-index.json",
-      "implementation": "buildIntelligenceGraphIndex inside build-v3-data-observation-desk.mjs",
+      "interface": "archive/v3-compat/frontstage/intelligence-graph-index.json",
+      "implementation": "Read-only historical JSON; its builder is dormant until Phase 4 deletion.",
       "current_consumers": [],
-      "replacement": "Use ENTITY-V1.0 profiles and RELATION-V2.1 factual relationship indexes.",
+      "replacement": "ENTITY-V1.0 profiles and RELATION-V2.1 factual relationship indexes.",
       "exit_conditions": [
-        "agent review reads V4 entity and relationship indexes",
-        "daily supervision stops checking the legacy graph",
-        "regression gates validate RELATION-V2.1 instead",
-        "no current tool references the graph index interface"
+        "complete: relationship review and gates use ENTITY-V1.0 and RELATION-V2.1",
+        "complete: no current workflow or public page reads the graph index"
       ]
     },
     {
       "id": "v3_relationship_graph",
-      "status": "retained_private_adapter",
+      "status": "retired_archive",
       "module": "Card-derived relationship graph",
-      "interface": "relationshipGraph and relationshipDirections inside the V3 desk",
-      "implementation": "Card category, subject, and tag-derived graph builders",
-      "current_consumers": [
-        "Business Signals compatibility contract"
-      ],
+      "interface": "relationshipGraph and relationshipDirections in the archived V3 desk",
+      "implementation": "Archived with the V3 desk; never used as factual evidence.",
+      "current_consumers": [],
       "replacement": "RELATION-V2.1 accepted event, Claim, entity, and source-backed relationships.",
       "exit_conditions": [
-        "compatibility contract no longer requires a Card-derived graph",
-        "agent review reads RELATION-V2.1",
-        "no current workflow treats tag or category co-occurrence as a factual relationship"
+        "complete: no current consumer treats tag or category co-occurrence as a factual relationship"
+      ]
+    },
+    {
+      "id": "v3_frontstage_site_content",
+      "status": "retired_archive",
+      "module": "Legacy site-content frontstage payload",
+      "interface": "archive/v3-compat/frontstage/site-content.json and site-content.js",
+      "implementation": "Read-only historical JSON/JavaScript payload; removed from public site pages and Pages source.",
+      "current_consumers": [],
+      "replacement": "Split V4 frontstage services and dedicated application datasets.",
+      "exit_conditions": [
+        "complete: no public page loads site-content.js",
+        "complete: Pages source contains no site-content compatibility payload"
       ]
     },
     {
       "id": "trend_candidates",
       "status": "manual_archive",
       "module": "Trend candidate and explicit no-decision artifacts",
-      "interface": "historical trend-candidate Markdown and manual trend-candidate writer",
-      "implementation": "run-trend-candidate-decision.mjs and archived trend-candidate skill",
+      "interface": "Historical trend-candidate Markdown and explicit historical tooling",
+      "implementation": "run-trend-candidate-decision.mjs is historical/manual only.",
       "current_consumers": [
         "manual historical research only"
       ],
-      "replacement": "Trend Radar reads accepted V4 events, Claims, entities, and sources as a factual change explorer.",
+      "replacement": "Trend Radar reads accepted V4 events, Claims, entities, and sources.",
       "exit_conditions": [
-        "already removed from daily workflows",
-        "already removed from daily production readiness and release gates",
-        "historical files remain immutable and are never required for V4 publication"
+        "complete: absent from daily workflows and publication gates"
       ],
       "forbidden_in_daily_execution": [
         "run-trend-candidate-decision.mjs",
-        "trend-decision",
-        "trend_candidate_decision",
         "trend-candidate-decision",
         "no-trend-candidate-decision",
         "06-asset-candidates/trend",
@@ -99,33 +101,29 @@
       "status": "v4_native",
       "module": "Opportunity Map projection",
       "interface": "01-SiteV2/site/data/opportunity-evidence-v2.json",
-      "implementation": "opportunity-evidence-v2.mjs reads accepted V4 CanonicalEvents, Claims, SourceArtifacts, Entities, and FacetAssertions",
+      "implementation": "opportunity-evidence-v2.mjs reads accepted V4 evidence.",
       "current_consumers": [
         "opportunity-map.html",
-        "Funding Insights related_direction_id resolver",
-        "weekly Direction Card candidate generator"
+        "Funding Insights direction resolver"
       ],
-      "replacement": "Completed: downstream application assertions remain outside canonical V4 tables and each assertion binds an accepted Claim and SourceArtifact.",
+      "replacement": "Completed V4 downstream evidence adapter.",
       "exit_conditions": [
-        "complete: no V3 desk dependency",
-        "complete: application assertions are projected from accepted Claims outside canonical V4 tables",
-        "complete: Opportunity Map and Funding Insights no longer read Signal Card assets"
+        "complete: no V3 desk or Signal Card dependency"
       ]
     },
     {
       "id": "industry_reports",
       "status": "v4_native",
       "module": "Industry Reports generation",
-      "interface": "report Markdown, deterministic report pages, and report center index",
-      "implementation": "periodic report controller and report page-generator skills",
+      "interface": "Report Markdown, deterministic report pages, and report center index",
+      "implementation": "Periodic report controller reads accepted V4 canonical events.",
       "current_consumers": [
         "intelligence-map.html",
         "weekly and monthly report detail pages"
       ],
-      "replacement": "Already reads accepted V4 canonical events for report generation.",
+      "replacement": "Completed V4 report lane.",
       "exit_conditions": [
-        "keep V3 desk and graph out of report generation and periodic change allowlists",
-        "Opportunity Map generation failure remains a non-blocking warning for weekly report publication"
+        "complete: opportunity task failure remains non-blocking for report publication"
       ]
     },
     {
@@ -133,22 +131,21 @@
       "status": "v4_native",
       "module": "Trend Radar factual change explorer",
       "interface": "trend-radar-v1.json and trend-radar.html",
-      "implementation": "V4 event, entity, Claim, and source projection",
+      "implementation": "V4 event, entity, Claim, and source projection.",
       "current_consumers": [
         "trend-radar.html"
       ],
-      "replacement": "Already independent from V3 trend candidates.",
+      "replacement": "Completed V4 factual change projection.",
       "exit_conditions": [
-        "keep trend-candidate and no-decision artifacts out of its inputs"
+        "complete: historical trend-candidate artifacts are not inputs"
       ]
     }
   ],
   "daily_execution_files": [
     ".github/workflows/daily-persistent-assets-pr.yml",
     ".github/workflows/daily-production-chain-dry-run.yml",
+    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
     "agent-workflow/tools/assert-daily-production-chain.mjs",
-    "agent-workflow/tools/assert-business-signals-frontstage.mjs",
-    "agent-workflow/tools/assert-business-signals-compatibility-contract.mjs",
     "agent-workflow/tools/classify-business-signals-production-state.mjs",
     "agent-workflow/tools/write-automation-readiness-report.mjs"
   ]

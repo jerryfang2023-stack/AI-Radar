@@ -4,6 +4,7 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import crypto from "node:crypto";
 import { resolveSourceTitleTranslation, sourceTitleNeedsChineseTranslation } from "./source-title-translation-generator.mjs";
+import { buildSourceIntake, sourceIntakePath } from "./lib/source-intake-v1.mjs";
 
 const root = process.cwd();
 const execFileAsync = promisify(execFile);
@@ -101,9 +102,6 @@ const reportsDir = path.join(root, "agent-workflow", "reports");
 const sourceArtifactDir = path.resolve(root, args.get("source-artifact-dir") || path.join(reportsDir, "source-runs", date));
 const rawDir = path.join(contentRoot, "01-raw");
 const originalDir = path.join(rawDir, "originals", date);
-const poolDir = path.join(contentRoot, "02-pool");
-const businessSignalsDir = path.join(contentRoot, "04-business-signals");
-const signalCardRoot = path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards");
 const keywordMonitoringPath = path.join(contentRoot, "11-databases", "keyword-monitoring-v2.json");
 const sourceRegistryPath = path.join(contentRoot, "11-databases", "source-registry-v2.json");
 const monitorQualityGatePath = path.join(contentRoot, "11-databases", "business-signals-gate-v3.json");
@@ -1754,67 +1752,6 @@ function publishedAtFromCapturedText(value = "") {
 
 function preferredPublishedAt(providerPublishedAt = "", sourcePublishedAt = "") {
   return normalizePublishedAt(sourcePublishedAt, providerPublishedAt);
-}
-
-function existingFormalCardSourceItems() {
-  const items = [];
-  for (const subdir of ["case", "funding", "product-service"]) {
-    const dir = path.join(signalCardRoot, subdir);
-    if (!fs.existsSync(dir)) continue;
-    for (const name of fs.readdirSync(dir)) {
-      if (!name.startsWith(`${date}--signal--`) || !name.endsWith(".md")) continue;
-      const markdown = fs.readFileSync(path.join(dir, name), "utf8");
-      if (!/^status:\s*published\s*$/mu.test(markdown)) continue;
-      const rawJsonRel = String(markdown.match(/^\s*raw_json:\s*"?(.+?)"?\s*$/mu)?.[1] || "").trim();
-      if (!rawJsonRel) continue;
-      const rawFile = path.resolve(root, rawJsonRel);
-      if (!fs.existsSync(rawFile)) continue;
-      const record = readJson(rawFile, null);
-      const url = canonicalUrl(record?.canonical_url || record?.original_url || "");
-      const fullText = String(record?.full_text || record?.clean_text || "").trim();
-      const publishedAt = normalizePublishedAt(record?.published_at)
-        || publishedAtFromCapturedText(fullText)
-        || normalizePublishedAt(dayFromUrl(url));
-      if (!record || !url || !fullText || !publishedAt) continue;
-      const excerptText = Array.isArray(record.key_excerpts)
-        ? record.key_excerpts.map((entry) => entry?.text || "").filter(Boolean).slice(0, 3).join(" ")
-        : "";
-      items.push({
-        acquisition_channel: record.acquisition_channel || "keyword-search",
-        original_id: record.raw_original_id || url,
-        title: record.title || record.title_zh || "",
-        summary: record.discovery_record?.discovery_summary || excerptText || fullText.slice(0, 800),
-        url,
-        source: record.source_name || "existing formal Signal Card source",
-        source_type: record.source_type || "web",
-        published_at: publishedAt,
-        category: "same-date-formal-card-source",
-        search_intent: record.search_intent || "",
-        search_path: record.search_path || "",
-        evidence_role: record.evidence_role || "",
-        registry_source_type: record.registry_source_type || "",
-        carried_formal_card_source: true,
-        carry_forward_snapshot: {
-          status: "fetched-readable-text-carry-forward",
-          text: record.clean_text || fullText,
-          full_text: fullText,
-          excerpt: excerptText || fullText.slice(0, 800),
-          fetched_at: record.collected_at || new Date().toISOString(),
-          content_type: "text/plain",
-          capture_scope: record.capture_scope || "article_text",
-          visible_range: record.visible_range || "same-date formal Card source snapshot",
-          hash: record.content_hash || record.evidence_completeness?.evidence_hash || contentHash(record.clean_text || fullText),
-          full_text_hash: record.full_text_hash || contentHash(fullText),
-          extraction_method: record.extraction_method || "same_date_formal_card_carry_forward",
-          readability_score: record.readability_score ?? 80,
-          extractor_diagnostics: record.extractor_diagnostics || { method: "same_date_formal_card_carry_forward" },
-          published_at: publishedAt,
-          error: "",
-        },
-      });
-    }
-  }
-  return items;
 }
 
 function rawDateFromArchivePath(file) {
@@ -5113,22 +5050,6 @@ async function runRssIngestionRegressionFixtures() {
   if (!isLeadOnlyDiscoveryItem({ evidence_role: "lead-only", registry_source_type: "newsletter" })) {
     throw new Error("lead-only RSS/newsletter source could still qualify as Core evidence");
   }
-  const carriedFormalCards = existingFormalCardSourceItems();
-  const publishedFormalCardCount = ["case", "funding", "product-service"].reduce((count, subdir) => {
-    const dir = path.join(signalCardRoot, subdir);
-    if (!fs.existsSync(dir)) return count;
-    return count + fs.readdirSync(dir).filter((name) => {
-      if (!name.startsWith(`${date}--signal--`) || !name.endsWith(".md")) return false;
-      return /^status:\s*published\s*$/mu.test(fs.readFileSync(path.join(dir, name), "utf8"));
-    }).length;
-  }, 0);
-  if (
-    !carriedFormalCards.length
-    || carriedFormalCards.length !== publishedFormalCardCount
-    || carriedFormalCards.some((item) => !item.carry_forward_snapshot?.full_text)
-  ) {
-    throw new Error("same-date rerun did not preserve already published formal Card source snapshots");
-  }
   console.log(JSON.stringify({ ok: true, fixture: "rss-date-freshness-and-source-cap" }, null, 2));
 }
 
@@ -5350,10 +5271,11 @@ function selectMonitorPoolItems(items) {
 }
 
 async function makeRawFiles(items, failures, runMeta = {}) {
-  resetGeneratedDir(originalDir, path.join(rawDir, "originals"));
+  fs.mkdirSync(originalDir, { recursive: true });
   const poolItemsPre = selectMonitorPoolItems(items);
   const poolKeySet = new Set(poolItemsPre.map(poolKeyFor));
   const poolImportanceGaps = importanceCoverageGaps(poolItemsPre, "pool");
+  const intakeEntries = [];
   const rawLines = [
     "---",
     `date: ${date}`,
@@ -5400,7 +5322,11 @@ async function makeRawFiles(items, failures, runMeta = {}) {
 
   for (const [index, item] of items.entries()) {
     const id = `R-${String(index + 1).padStart(3, "0")}`;
-    const originalName = `${id.toLowerCase()}-${slugify(item.title)}.md`;
+    const baseName = `${id.toLowerCase()}-${slugify(item.title)}`;
+    const initialJsonPath = path.join(originalDir, `${baseName}.json`);
+    const originalName = fs.existsSync(initialJsonPath)
+      ? `${baseName}-${contentHash(`${item.url || ""}|${item.snapshot?.full_text || item.snapshot?.text || item.title}`).slice(0, 8)}.md`
+      : `${baseName}.md`;
     const originalPath = path.join(originalDir, originalName);
     const jsonPath = path.join(originalDir, `${originalName.replace(/\.md$/u, "")}.json`);
     const isPooled = poolKeySet.has(poolKeyFor(item));
@@ -5625,9 +5551,31 @@ async function makeRawFiles(items, failures, runMeta = {}) {
     ].join("\n");
     writeFile(originalPath, original);
     writeFile(jsonPath, `${JSON.stringify(record, null, 2)}\n`);
+    intakeEntries.push({
+      record,
+      jsonPath,
+      markdownPath: originalPath,
+      pooled: isPooled,
+    });
   }
 
-  writeFile(path.join(rawDir, `${date}-raw-candidates.md`), rawLines.join("\n"));
+  const currentIntakeFiles = new Set(intakeEntries.map((entry) => path.resolve(entry.jsonPath)));
+  for (const name of fs.readdirSync(originalDir).filter((entry) => entry.endsWith(".json")).sort()) {
+    const jsonPath = path.join(originalDir, name);
+    if (currentIntakeFiles.has(path.resolve(jsonPath))) continue;
+    const record = readJson(jsonPath, null);
+    if (!record) continue;
+    const markdownPath = jsonPath.replace(/\.json$/u, ".md");
+    intakeEntries.push({
+      record,
+      jsonPath,
+      markdownPath,
+      pooled: Array.isArray(record.pool_routes) && record.pool_routes.length > 0,
+    });
+  }
+
+  const structuredIntake = buildSourceIntake({ root, date, entries: intakeEntries });
+  writeFile(sourceIntakePath(root, date), `${JSON.stringify(structuredIntake, null, 2)}\n`);
 
   const poolItems = items.filter((item) => poolKeySet.has(poolKeyFor(item)));
   const aihotDailyPoolCount = poolItems.filter(isAIHotDailySelected).length;
@@ -5722,8 +5670,6 @@ async function makeRawFiles(items, failures, runMeta = {}) {
       ""
     );
   });
-  writeFile(path.join(poolDir, `${date}-pool-candidates.md`), poolLines.join("\n"));
-
   const distribution = countBy(items, "acquisition_channel");
   const byType = countBy(items, "source_type");
   const byLevel = countBy(items, "source_level");
@@ -5921,13 +5867,9 @@ async function main() {
   } else {
     aihot = await collectAIHot();
   }
-  const carriedFormalCardSources = existingFormalCardSourceItems();
-  if (carriedFormalCardSources.length) {
-    providerFallbackNotes.push(`Same-date rerun carried forward ${carriedFormalCardSources.length} already published formal Card source snapshot(s).`);
-  }
   const primaryItems = useSourceArtifacts
-    ? [...carriedFormalCardSources, ...sourceArtifacts.items, ...aihot.items]
-    : [...carriedFormalCardSources, ...aihot.items];
+    ? [...sourceArtifacts.items, ...aihot.items]
+    : [...aihot.items];
   let keywordSearch = { items: [], failures: [] };
   let hn = { items: [], failures: [] };
   let gdelt = { items: [], failures: [] };
@@ -6012,7 +5954,6 @@ async function main() {
         source_artifact_dir: useSourceArtifacts ? rel(sourceArtifactDir) : "",
         source_artifact_files: sourceArtifacts.files,
         source_artifact_runs: sourceArtifacts.sourceRuns,
-        carried_formal_card_source_count: carriedFormalCardSources.length,
         anysearch_configured: Boolean(anysearchApiKey),
         anysearch_disabled_for_run: anysearchDisabledForRun,
         provider_fallback_notes: providerFallbackNotes,
@@ -6053,9 +5994,8 @@ async function main() {
           outputs: dryRun
             ? []
             : [
-                rel(path.join(rawDir, `${date}-raw-candidates.md`)),
                 rel(originalDir),
-                rel(path.join(poolDir, `${date}-pool-candidates.md`)),
+                rel(sourceIntakePath(root, date)),
                 rel(path.join(reportsDir, `${date}-guanlan-daily-monitor-log.md`)),
               ],
       },

@@ -3,7 +3,7 @@
   "$id": "https://wavesight.local/schemas/data-center-v4.schema.json",
   "title": "WaveSight Data Center V4",
   "type": "object",
-  "required": ["manifest", "source_artifacts", "raw_documents", "claims", "entities", "entity_mentions", "canonical_events", "compatibility_cards", "event_sources", "event_claims", "event_conflicts", "relationships", "tag_assertions", "facet_assertions", "fde_records", "hardware_records", "qa_queue", "legacy_asset_mappings"],
+  "required": ["manifest", "source_artifacts", "raw_documents", "claims", "entities", "entity_mentions", "canonical_events", "event_sources", "event_claims", "event_conflicts", "relationships", "tag_assertions", "facet_assertions", "fde_records", "hardware_records", "qa_queue", "legacy_asset_mappings"],
   "properties": {
     "manifest": { "$ref": "#/$defs/manifest" },
     "source_artifacts": { "type": "array", "items": { "$ref": "#/$defs/sourceArtifact" } },
@@ -12,7 +12,13 @@
     "entities": { "type": "array", "items": { "$ref": "#/$defs/entity" } },
     "entity_mentions": { "type": "array", "items": { "$ref": "#/$defs/entityMention" } },
     "canonical_events": { "type": "array", "items": { "$ref": "#/$defs/canonicalEvent" } },
-    "compatibility_cards": { "type": "array", "items": { "$ref": "#/$defs/compatibilityCard" } },
+    "compatibility_cards": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/compatibilityCard" },
+      "readOnly": true,
+      "deprecated": true,
+      "description": "Optional read-only V4 projection retained for one compatibility observation release. It is not a production input and will be removed after the retirement window."
+    },
     "event_sources": { "type": "array", "items": { "$ref": "#/$defs/eventSource" } },
     "event_claims": { "type": "array", "items": { "$ref": "#/$defs/eventClaim" } },
     "event_conflicts": { "type": "array", "items": { "$ref": "#/$defs/eventConflict" } },

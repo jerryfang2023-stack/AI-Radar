@@ -111,12 +111,17 @@ export function readBundle(date) {
     "canonical-events", "compatibility-cards", "event-sources", "event-claims", "event-conflicts", "relationships", "tag-assertions",
     "facet-assertions", "fde-records", "hardware-records", "qa-queue", "legacy-asset-mappings"
   ];
-  return Object.fromEntries(names.map((name) => [name.replace(/-/gu, "_"), readJson(path.join(dir, `${name}.json`))]));
+  return Object.fromEntries(names.flatMap((name) => {
+    const file = path.join(dir, `${name}.json`);
+    if (name === "compatibility-cards" && !fs.existsSync(file)) return [];
+    return [[name.replace(/-/gu, "_"), readJson(file)]];
+  }));
 }
 
 export function evaluateBundle(bundle, taxonomy) {
   const failures = [];
   const warnings = [];
+  const compatibilityCards = bundle.compatibility_cards || [];
   failures.push(...validateSchema(bundle));
   failures.push(...duplicateIds(bundle.source_artifacts, "source_artifact_id", "source_artifacts"));
   failures.push(...duplicateIds(bundle.raw_documents, "raw_id", "raw_documents"));
@@ -124,7 +129,7 @@ export function evaluateBundle(bundle, taxonomy) {
   failures.push(...duplicateIds(bundle.entities, "entity_id", "entities"));
   failures.push(...duplicateIds(bundle.entity_mentions, "mention_id", "entity_mentions"));
   failures.push(...duplicateIds(bundle.canonical_events, "event_id", "canonical_events"));
-  failures.push(...duplicateIds(bundle.compatibility_cards, "card_id", "compatibility_cards"));
+  failures.push(...duplicateIds(compatibilityCards, "card_id", "compatibility_cards"));
   const sourceIds = new Set(bundle.source_artifacts.map((item) => item.source_artifact_id));
   const rawById = new Map(bundle.raw_documents.map((item) => [item.raw_id, item]));
   const rawBySourceId = new Map(bundle.raw_documents.map((item) => [item.source_artifact_id, item]));
@@ -204,7 +209,7 @@ export function evaluateBundle(bundle, taxonomy) {
     }
   }
 
-  for (const card of bundle.compatibility_cards) {
+  for (const card of compatibilityCards) {
     const event = eventById.get(card.event_id);
     if (!event) failures.push(`${card.card_id}: compatibility card event_id does not resolve`);
     if (!card.title || !card.fact) failures.push(`${card.card_id}: compatibility card title/fact missing`);

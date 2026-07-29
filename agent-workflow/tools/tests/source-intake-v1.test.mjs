@@ -1,0 +1,74 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import test from "node:test";
+import {
+  buildSourceIntake,
+  loadSourceIntakeEntries,
+  readSourceIntake,
+  SOURCE_INTAKE_VERSION,
+  sourceIntakePath,
+} from "../lib/source-intake-v1.mjs";
+
+function writeJson(file, value) {
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, `${JSON.stringify(value)}\n`, "utf8");
+}
+
+test("SOURCE-INTAKE-V1 preserves stable source identity and immutable body references", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-source-intake-"));
+  const date = "2026-07-29";
+  const jsonPath = path.join(root, "01-SiteV2/content/01-raw/originals/2026-07-29/source.json");
+  const markdownPath = jsonPath.replace(/\.json$/u, ".md");
+  const record = {
+    original_url: "https://example.test/release",
+    canonical_url: "https://example.test/release",
+    source_name: "Example",
+    title: "Example AI release",
+    clean_text: "Example released a dated AI product for enterprise users with source-bounded facts.",
+    content_hash: "content-hash-1",
+    collected_at: "2026-07-29T01:00:00.000Z",
+  };
+  writeJson(jsonPath, record);
+  fs.writeFileSync(markdownPath, record.clean_text, "utf8");
+
+  const intake = buildSourceIntake({
+    root,
+    date,
+    generatedAt: "2026-07-29T02:00:00.000Z",
+    entries: [
+      { record, jsonPath, markdownPath, pooled: true },
+      { record, jsonPath, markdownPath, pooled: true },
+    ],
+  });
+  assert.equal(intake.schema_version, SOURCE_INTAKE_VERSION);
+  assert.equal(intake.counts.source_artifacts, 1);
+  assert.equal(intake.counts.raw_documents, 1);
+  assert.equal(intake.counts.pooled_documents, 1);
+  assert.match(intake.source_artifacts[0].source_artifact_id, /^SA-[a-f0-9]{16}$/u);
+  assert.match(intake.raw_documents[0].raw_id, /^RAW-[a-f0-9]{16}$/u);
+  assert.equal(intake.raw_documents[0].source_artifact_id, intake.source_artifacts[0].source_artifact_id);
+  assert.equal(intake.raw_documents[0].body_ref, path.relative(root, jsonPath).replace(/\\/gu, "/"));
+
+  writeJson(sourceIntakePath(root, date), intake);
+  assert.equal(readSourceIntake(root, date).payload.data_date, date);
+  const loaded = loadSourceIntakeEntries(root, date);
+  assert.equal(loaded.entries.length, 1);
+  assert.equal(loaded.entries[0].raw.original_url, record.original_url);
+  assert.equal(loaded.entries[0].intake_document.body_ref, intake.raw_documents[0].body_ref);
+});
+
+test("SOURCE-INTAKE-V1 rejects body references outside the repository", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-source-intake-root-"));
+  const outside = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-source-intake-outside-"));
+  const date = "2026-07-29";
+  writeJson(path.join(outside, "source.json"), { original_url: "https://example.test" });
+  writeJson(sourceIntakePath(root, date), {
+    schema_version: SOURCE_INTAKE_VERSION,
+    data_date: date,
+    source_artifacts: [],
+    raw_documents: [{ raw_id: "RAW-1", body_ref: path.join(outside, "source.json") }],
+  });
+  assert.throws(() => loadSourceIntakeEntries(root, date), /does not resolve inside the repository/u);
+});
