@@ -5,8 +5,6 @@
   const ops = window.WaveSightOpsConsole || {};
   const pipeline = window.WaveSightPipelineDashboard || {};
   const quality = ops.quality || {};
-  const latest = quality.latest || pipeline.latest || {};
-  const totals = quality.totals || pipeline.totals || {};
   const state = {
     panel: location.hash ? location.hash.slice(1) : "overview",
     railCollapsed: localStorage.getItem("wavesight-rail-collapsed") === "1",
@@ -22,7 +20,6 @@
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
-  const pct = (value) => Number.isFinite(Number(value)) ? `${Math.round(Number(value))}%` : "-";
   const list = (value) => Array.isArray(value) ? value : [];
 
   function setPanel(id) {
@@ -219,26 +216,39 @@
     if (timeline) {
       const days = list(quality.days || pipeline.days).slice(0, 4);
       timeline.innerHTML = days.map((day, index) => {
-        const assets = day.assets || {};
-        const assetRows = Object.entries(assets).slice(0, 4).map(([key, value]) => row(key, value, Math.min(100, Number(value) * 4))).join("");
-        return `<article class="card day-card ${index === 0 ? "is-latest" : ""}"><div class="day-date"><span>${html(day.label || day.date)}</span><b>${index === 0 ? "最新生产日" : "资产链运行"}</b></div><div class="day-numbers"><span>RAW<b>${html(day.raw || 0)}</b></span><span>POOL<b>${html(day.pool || 0)}</b></span><span>CARDS<b>${html(day.cards || 0)}</b></span></div><div class="rows">${assetRows}</div></article>`;
+        const detailRows = [
+          row("Entities", day.entities || 0, Math.min(100, Number(day.entities || 0))),
+          row("Relationships", day.relationships || 0, Math.min(100, Number(day.relationships || 0))),
+          row("Conflicts", day.conflicts || 0, Math.min(100, Number(day.conflicts || 0) * 20)),
+          row("QA Queue", day.qaQueue || 0, Math.min(100, Number(day.qaQueue || 0))),
+        ].join("");
+        return `<article class="card day-card ${index === 0 ? "is-latest" : ""}"><div class="day-date"><span>${html(day.label || day.date)}</span><b>${index === 0 ? "最新数据批次" : "V4 数据批次"}</b></div><div class="day-numbers"><span>SOURCES<b>${html(day.discovered || 0)}</b></span><span>CLAIMS<b>${html(day.claims || 0)}</b></span><span>EVENTS<b>${html(day.events || 0)}</b></span></div><div class="rows">${detailRows}</div></article>`;
       }).join("");
     }
     const sourceQuality = $("[data-source-quality]");
     if (sourceQuality) {
-      const rows = list(quality.engineQuality?.rows || pipeline.engineQuality?.rows);
-      sourceQuality.innerHTML = rows.length ? rows.map((item) => {
-        const score = Math.round(((item.conversionRate || 0) * .36) + ((item.officialRate || 0) * .24) + ((100 - (item.duplicateRate || 0)) * .22) + ((item.freshnessRate ?? 50) * .18));
-        return `<div class="source-row"><div class="source-name"><strong>${html(item.label || item.id)}</strong><em>${item.total || 0} samples</em></div><div class="mini-kpi"><span>样本量</span><b>${html(item.total || 0)}</b></div><div class="mini-kpi"><span>新鲜度</span><b>${html(pct(item.freshnessRate))}</b></div><div class="mini-kpi"><span>重复率</span><b>${html(pct(item.duplicateRate))}</b></div><div class="mini-kpi"><span>官方源</span><b>${html(pct(item.officialRate))}</b></div><div class="mini-kpi"><span>转卡率</span><b>${html(pct(item.conversionRate))}</b></div><div class="score-pill">${score}</div></div>`;
-      }).join("") : `<div class="empty">未读取到来源质量数据。</div>`;
+      const collection = quality.telemetry?.collection || {};
+      const facts = quality.telemetry?.factBuild || {};
+      const discovered = Number(collection.discovered || 0);
+      const captured = Number(collection.capture_succeeded || 0);
+      sourceQuality.innerHTML = [
+        row("发现", discovered, 100),
+        row("抓取成功", captured, discovered ? captured / discovered * 100 : 0),
+        row("抓取失败", collection.capture_failed || 0, Math.min(100, Number(collection.capture_failed || 0) * 20)),
+        row("Accepted Claims", facts.accepted_claims || 0, facts.accepted_claims ? 100 : 0),
+        row("QA Queue", facts.qa_queue || 0, Math.min(100, Number(facts.qa_queue || 0))),
+      ].join("");
     }
     const matrix = $("[data-asset-matrix]");
     if (matrix) {
-      const assets = totals.assets || latest.assets || {};
-      const important = ["opinion", "case", "funding", "product-service"];
-      const cards = important.map((key, index) => `<article class="card asset-card ${index === 0 ? "asset-main" : ""}"><span class="label">${html(key)}</span><strong>${html(assets[key] || 0)}</strong><p>${index === 0 ? "观点资产占比需要持续压低，用事实型资产托住判断。" : "重点资产类型，进入前台前需要确认来源边界。"}</p></article>`).join("");
-      const rest = Object.entries(assets).filter(([key]) => !important.includes(key)).map(([key, value]) => `<span>${html(key)} ${html(value)}</span>`).join("");
-      matrix.innerHTML = `${cards}<article class="card span-all"><span class="label">Other Assets</span><div class="tag-cloud" style="margin-top:12px">${rest || "<span>暂无其他类型</span>"}</div></article>`;
+      const facts = quality.telemetry?.factBuild || {};
+      matrix.innerHTML = [
+        ["Canonical Events", facts.canonical_events],
+        ["Entities", facts.entities],
+        ["Relationships", facts.relationships],
+        ["Conflicts", facts.conflicts],
+        ["QA Queue", facts.qa_queue],
+      ].map(([label, value], index) => `<article class="card asset-card ${index === 0 ? "asset-main" : ""}"><span class="label">${html(label)}</span><strong>${html(value || 0)}</strong><p>来自 COLLECTION-TELEMETRY-V1，不读取 V3 Card 或旧 graph。</p></article>`).join("");
     }
   }
 

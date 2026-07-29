@@ -71,4 +71,6 @@ test("operations console renders the four V4 production stages instead of the V3
   assert.match(client, /application_projection/u);
   assert.match(client, /fact_build/u);
   assert.doesNotMatch(client, /row\("Raw"[\s\S]*row\("Pool"[\s\S]*row\("Cards"/u);
+  assert.doesNotMatch(client, />RAW<|>POOL<|>CARDS</u);
+  assert.match(client, />SOURCES<[\s\S]*>CLAIMS<[\s\S]*>EVENTS</u);
 });
