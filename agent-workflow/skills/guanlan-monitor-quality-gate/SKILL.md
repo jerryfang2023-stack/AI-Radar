@@ -18,14 +18,14 @@ metadata:
 
 # Guanlan Monitor Quality Gate
 
-This is the acquisition evidence-supply gate between monitoring and the Data Center V4 build. It is not the V4 integrity gate and does not decide event value, Card quality, or page quality.
+This is the acquisition evidence-supply gate between monitoring and the Data Center V4 build. It is not the V4 integrity gate and does not decide event value or application/page quality.
 
 ## Required Reads
 
 For changes, read only the relevant source:
 
 - `context/12-data-center-v4.md`
-- `context/05-daily-monitoring.md` for the collector implementation
+- `context/08-automation.md` for the current collection and production loop
 - `01-SiteV2/content/11-databases/source-intake-gate-v1.json`
 - `agent-workflow/tools/guanlan-monitor-quality-gate.mjs`
 - `agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs`

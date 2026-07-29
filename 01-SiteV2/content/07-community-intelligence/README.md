@@ -15,7 +15,7 @@ source: community-intelligence
 - 原始抓取数据仍保留在网页数据文件中；Obsidian 只保存去重后的可读摘要和链接索引。
 - 每天生成一篇日报，适合回看当天社群讨论重点。
 - 分类索引只保留最新一次运行的高价值条目，避免知识库被低价值重复帖子淹没。
-- 真正值得长期跟踪的案例，再升级到正式 Signal Card 或场景候选资产。
+- 真正值得长期跟踪的事实线索，必须先独立捕获原始来源，再经过 SourceArtifact → RawDocument → exact-span Claim → CanonicalEvent 的 V4 事实链；社群帖子本身不能直接升级为正式事实。
 
 ## 入口
 

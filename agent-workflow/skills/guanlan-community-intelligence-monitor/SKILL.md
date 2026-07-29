@@ -36,8 +36,8 @@ Read only what is needed:
 1. `AGENTS.md`
 2. `context/00-current-state.md`
 3. `context/version-ledger.md`
-4. `context/08-v3-3-automation.md`
-5. `context/09-v3-3-current-action-index.md`
+4. `context/08-automation.md`
+5. `context/09-current-action-index.md`
 6. Relevant Community Intelligence report, production incident, legacy Hermes record, local log, workflow log, or gate output.
 
 For implementation detail, read:

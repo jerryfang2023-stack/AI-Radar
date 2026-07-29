@@ -79,9 +79,9 @@ If an old page rule conflicts with SITE-V4.3.0, delete or rebuild it instead of 
 | `context/05-daily-monitoring.md` | retired V3 monitoring archive notice |
 | `context/06-execution-harness.md` | high-risk execution harness |
 | `context/07-v3-intelligence-generation-rules.md` | retired V3 archive notice |
-| `context/08-v3-3-automation.md` | SITE-V4.3 GitHub / site / Obsidian sync automation loop |
-| `context/09-v3-3-current-action-index.md` | current V4 action registry |
-| `context/10-v3-3-experience-automation.md` | action logging and retrospective automation |
+| `context/08-automation.md` | SITE-V4.3 GitHub / site / Obsidian sync automation loop |
+| `context/09-current-action-index.md` | current V4 action registry |
+| `context/10-experience-automation.md` | action logging and retrospective automation |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes control-plane liveness watchdog |
 | `context/12-data-center-v4.md` | SITE-V4.0 factual data contract, boundaries, and daily execution |
 | `context/context-index.md` | context router |
@@ -177,7 +177,7 @@ Field discipline:
 Read:
 
 1. `context/11-hermes-daily-supervision-instructions.md`
-2. `context/10-v3-3-experience-automation.md`
+2. `context/10-experience-automation.md`
 3. open production incidents with `npm run inbox:incidents -- --status=open --latest=false`
 4. the linked `report_path` and failed gate or lane script
 

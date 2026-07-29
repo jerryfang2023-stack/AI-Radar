@@ -30,5 +30,5 @@
 
 计划通过后，只更新当前需要的文件：
 
-- `context/09-v3-3-current-action-index.md`（仅在当前动作索引确需更新时）
+- `context/09-current-action-index.md`（仅在当前动作索引确需更新时）
 - 必要 closeout

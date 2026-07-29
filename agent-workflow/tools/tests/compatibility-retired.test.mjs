@@ -28,6 +28,14 @@ test("retired V3 assets and archive payloads are absent", () => {
     ".agents/skills/guanlan-raw-pool-card",
     ".agents/skills/guanlan-trend-candidate-writer",
     ".agents/skills/guanlan-enterprise-ai-fde-monitor",
+    "01-SiteV2/content/05-frontier-opinions",
+    "01-SiteV2/content/11-databases/urgent-trend-candidates",
+    "01-SiteV2/knowledge/10-Templates/change-candidate-template.md",
+    "01-SiteV2/knowledge/10-Templates/opinion-card-template.md",
+    "01-SiteV2/knowledge/10-Templates/trend-candidate-cluster-template.md",
+    "01-SiteV2/knowledge/10-Templates/trend-candidate-template.md",
+    "agent-workflow/reports/2026-06-05-v3-1-mobile-copy-release.md",
+    "agent-workflow/reports/2026-06-05-raw-pool-card-source-first-governance.md",
     "archive/v3-compat/signal-cards",
     "archive/v3-compat/frontstage/v3-data-observation-desk.json",
     "archive/v3-compat/frontstage/intelligence-graph-index.json",
@@ -35,6 +43,44 @@ test("retired V3 assets and archive payloads are absent", () => {
     "archive/v3-compat/frontstage/site-content.js",
   ]) {
     assert.equal(fs.existsSync(path.join(root, relative)), false, relative);
+  }
+});
+
+test("retired V3 operational reports are absent", () => {
+  const suffixes = [
+    "-pool-to-card-handoff.md",
+    "-pool-to-card-dedupe-gate.md",
+    "-business-signals-frontstage-gate.md",
+    "-business-signals-frontstage-gate.json",
+    "-no-trend-candidate-decision.md",
+  ];
+  const reports = fs.readdirSync(path.join(root, "agent-workflow", "reports"));
+  for (const name of reports) {
+    assert.equal(suffixes.some((suffix) => name.endsWith(suffix)), false, name);
+  }
+});
+
+test("current V4 context names replace the retired V3.3 filenames", () => {
+  for (const relative of [
+    "context/08-automation.md",
+    "context/09-current-action-index.md",
+    "context/10-experience-automation.md",
+  ]) {
+    assert.equal(fs.existsSync(path.join(root, relative)), true, relative);
+  }
+  const retired = [
+    "context/08-v3-3-automation.md",
+    "context/09-v3-3-current-action-index.md",
+    "context/10-v3-3-experience-automation.md",
+  ];
+  for (const relative of retired) {
+    assert.equal(fs.existsSync(path.join(root, relative)), false, relative);
+  }
+  const tools = fs.readdirSync(path.join(root, "agent-workflow", "tools"))
+    .filter((name) => /\.(?:mjs|js)$/u.test(name) && name !== "assert-no-active-v3-compat.mjs");
+  for (const name of tools) {
+    const text = read(`agent-workflow/tools/${name}`);
+    for (const relative of retired) assert.equal(text.includes(relative), false, `${name}: ${relative}`);
   }
 });
 
@@ -50,6 +96,11 @@ test("V4 source intake has a current policy and no retired config fallback", () 
     assert.match(text, /source-intake-gate-v1\.json/u, file);
     assert.doesNotMatch(text, /business-signals-gate-v3\.json/u, file);
   }
+  const gate = read("agent-workflow/tools/guanlan-monitor-quality-gate.mjs");
+  assert.doesNotMatch(
+    gate,
+    /01-SiteV2\/content\/02-pool|-pool-candidates\.md|raw_to_card|legacy_(?:raw|pool)_file|Card generation/u,
+  );
   const workflow = read(".github/workflows/data-center-source-intake.yml");
   assert.match(workflow, /Data Center Source Intake/u);
   assert.match(workflow, /data_center_source_intake/u);
@@ -69,6 +120,10 @@ test("current contracts and Skills cannot route work back to V3 assets", () => {
     ["agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", /The current Card files|data\/v3-data-observation-desk\.json|promoted through Raw \/ Pool \/ Card/u],
     ["agent-workflow/skills/guanlan-code-rule-auditor/SKILL.md", /V3 internal Card|qualified Signal Cards|Card-backed relationship graph/u],
     ["agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md", /business-signals-gate-v3\.json|legacy Raw\/Pool supply/u],
+    ["agent-workflow/skills/guanlan-monitor-quality-gate/references/scorecard.md", /Card generation|Raw\/Pool\/Core targets/u],
+    ["agent-workflow/skills/guanlan-monitor-quality-gate/evals/monitor-quality-gate-evals.md", /Card\/editorial\/frontstage gates|Raw\/Pool\/Core targets/u],
+    ["agent-workflow/agents/README.md", /兼容或下游应用支线/u],
+    ["docs/agent-handoff.md", /downstream compatibility outputs|SITE-V4\.2\.0-entity-history/u],
   ];
   for (const [file, forbidden] of checks) assert.doesNotMatch(read(file), forbidden, file);
 });
@@ -108,11 +163,16 @@ test("historical weekly HTML remains outside the V4.3 version rewrite", () => {
 test("V4 production no longer depends on active legacy mappings or a public V3 pipeline page", () => {
   for (const file of [
     "agent-workflow/tools/build-data-center-v4.mjs",
+    "agent-workflow/tools/build-data-center-v4-obsidian-index.mjs",
     "agent-workflow/tools/assert-source-title-integrity.mjs",
     "agent-workflow/tools/backfill-source-title-translations.mjs",
   ]) {
     const text = read(file);
-    assert.doesNotMatch(text, /legacy-card-event-mappings\.json|readJson\(path\.join\(dir, "legacy-asset-mappings\.json"\)\)/u, file);
+    assert.doesNotMatch(
+      text,
+      /compatibility-cards\.json|compatibility_cards|legacy-card-event-mappings\.json|readJson\(path\.join\(dir, "legacy-asset-mappings\.json"\)\)/u,
+      file,
+    );
   }
   const pipeline = read("01-SiteV2/site/pipeline-dashboard.html");
   assert.match(pipeline, /url=operations-console\.html/u);

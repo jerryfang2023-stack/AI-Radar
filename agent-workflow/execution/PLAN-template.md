@@ -30,4 +30,4 @@
 
 ## 回填位置
 
-- `context/09-v3-3-current-action-index.md`（仅在当前动作索引确需更新时）
+- `context/09-current-action-index.md`（仅在当前动作索引确需更新时）

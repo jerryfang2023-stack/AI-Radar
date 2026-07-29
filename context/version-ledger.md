@@ -148,7 +148,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | V4 factual production | `context/12-data-center-v4.md` |
 | V3 archive notice | `context/07-v3-intelligence-generation-rules.md` |
 | Product map | `context/01-product-map.md` |
-| V4.3 automation loop | `context/08-v3-3-automation.md` |
+| V4.3 automation loop | `context/08-automation.md` |
 | VI / typography | `context/02-vi-style.md` |
 | Page contracts | `context/frontstage-page-contracts.md` |
 | Quality gates | `context/04-qc-rules.md` |

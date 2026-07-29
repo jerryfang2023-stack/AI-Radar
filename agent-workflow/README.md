@@ -41,5 +41,5 @@
 当前动作索引见：
 
 ```text
-context/09-v3-3-current-action-index.md
+context/09-current-action-index.md
 ```

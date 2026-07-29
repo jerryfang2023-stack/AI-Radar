@@ -40,12 +40,6 @@ function firstExisting(paths) {
   return "";
 }
 
-function parseFrontMatterValue(text, key, fallback = "") {
-  const matcher = new RegExp(`^${key}:\\s*(.+)$`, "m");
-  const match = text.match(matcher);
-  return match ? String(match[1]).replace(/^"|"$/g, "").trim() : fallback;
-}
-
 function parseBulletMap(text) {
   const map = {};
   for (const line of String(text || "").split(/\r?\n/u)) {
@@ -142,12 +136,6 @@ function weekendPolicyState(config = {}, targetDate = "") {
   };
 }
 
-function parseLineInBlock(block = "", key = "") {
-  const pattern = new RegExp(`^-\\s*${key}:\\s*(.+)$`, "im");
-  const match = String(block || "").match(pattern);
-  return match ? match[1].trim() : "";
-}
-
 const evidenceStrengthOrder = ["blocked", "traceable_summary", "source_backed_event", "rich_evidence"];
 const usableEvidenceStrengths = new Set(["traceable_summary", "source_backed_event", "rich_evidence"]);
 
@@ -162,47 +150,6 @@ function formatEvidenceStrengthDistribution(distribution = {}) {
     .map((key) => `${key}=${distribution[key]}`);
   const unknown = distribution.unknown ? [`unknown=${distribution.unknown}`] : [];
   return [...ordered, ...unknown].join("; ") || "none";
-}
-
-function parsePoolItems(poolMarkdown = "") {
-  return String(poolMarkdown || "")
-    .split(/\r?\n##\s+/u)
-    .slice(1)
-    .map((block) => {
-      const title = String(block.split(/\r?\n/u)[0] || "").replace(/^P-\d+\s*[|｜-]?\s*/u, "").trim();
-      const routes = parseLineInBlock(block, "pool_routes")
-        .split(/,\s*/u)
-        .map((item) => item.trim())
-        .filter(Boolean);
-      return {
-        title,
-        routes,
-        sourceName: parseLineInBlock(block, "source"),
-        sourceUrl: parseLineInBlock(block, "source_url"),
-        acquisitionChannel: parseLineInBlock(block, "acquisition_channel"),
-        sourceLevel: parseLineInBlock(block, "source_level"),
-        acquisitionSourceLevel: parseLineInBlock(block, "acquisition_source_level"),
-        evidenceObjectType: parseLineInBlock(block, "evidence_object_type"),
-        evidenceStrength: normalizeEvidenceStrength(parseLineInBlock(block, "evidence_strength")),
-        evidenceObjectUsable: /^true$/iu.test(parseLineInBlock(block, "evidence_object_usable")),
-        eventEvidence: /^true$/iu.test(parseLineInBlock(block, "event_evidence")),
-        indexOnlyEvidence: /^true$/iu.test(parseLineInBlock(block, "index_only_evidence")),
-        rawQcDecision: parseLineInBlock(block, "raw_qc_decision"),
-        rawQcDownstreamUse: parseLineInBlock(block, "raw_qc_downstream_use"),
-        hasFullText: /^true$/iu.test(parseLineInBlock(block, "has_full_text")),
-        extractionQuality: parseLineInBlock(block, "extraction_quality"),
-        extractionMethod: parseLineInBlock(block, "extraction_method"),
-        readabilityScore: parseNumber(parseLineInBlock(block, "readability_score"), 0),
-        contentHash: parseLineInBlock(block, "raw_content_hash"),
-        fullTextHash: parseLineInBlock(block, "raw_full_text_hash"),
-        keyExcerpts: parseLineInBlock(block, "key_excerpts"),
-        sourceRole: parseLineInBlock(block, "source_role"),
-        originFetchStatus: parseLineInBlock(block, "origin_fetch_status"),
-        keywordGroup: parseLineInBlock(block, "keyword_group"),
-        rawRef: parseLineInBlock(block, "raw_ref"),
-        text: block,
-      };
-    });
 }
 
 function structuredIntakeItems(intake = null) {
@@ -301,14 +248,6 @@ function isUsableCoreEvidenceItem(item = {}) {
   return true;
 }
 
-function parseRawTitles(rawMarkdown = "") {
-  return String(rawMarkdown)
-    .split(/\r?\n/u)
-    .map((line) => line.match(/^###\s+R-\d+(?:\s*[|｜-]\s*)?(.+)$/u))
-    .filter(Boolean)
-    .map((match) => String(match[1] || "").trim());
-}
-
 function isAIRelevant(text = "") {
   return /\bai\b|artificial intelligence|llm|agent|agentic|mcp|copilot|codex|gpt|claude|openai|anthropic|gemini|deepmind|hugging\s?face|chatgpt|deepseek|sandbox|evals|world\s?model|model|inference|multimodal|sdk|api|open\s?source|github|人工智能|大模型|智能体|模型|推理|多模态|开源|开发者/iu.test(
     String(text || "")
@@ -397,7 +336,7 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
 
   return {
     level: "degrade",
-    action: "Run downstream in degraded mode; cards and articles may only use repaired original-evidence items.",
+    action: "Run downstream in degraded mode; canonical facts and applications may only use repaired original-evidence items.",
     reasons,
   };
 }
@@ -418,29 +357,19 @@ export function runGuanlanMonitorQualityGate({
 
   const scoreThreshold = Number(passScore ?? config.diagnostic_score_reference ?? config.pass_score ?? 85);
   const scoreMode = config.score_mode || "diagnostic_only";
-  const rawFile = path.join(root, "01-SiteV2", "content", "01-raw", `${targetDate}-raw-candidates.md`);
-  const poolFile = path.join(root, "01-SiteV2", "content", "02-pool", `${targetDate}-pool-candidates.md`);
   const structuredIntake = readSourceIntake(root, targetDate);
   const logFile = firstExisting([
     path.join(root, "agent-workflow", "reports", `${targetDate}-guanlan-daily-monitor-log.md`),
   ]);
 
-  const rawText = readText(rawFile);
-  const poolText = readText(poolFile);
   const logText = readText(logFile);
   const logBullets = parseBulletMap(logText);
 
-  const rawCount = parseNumber(
-    logBullets.raw_count,
-    Number(structuredIntake?.payload?.counts?.raw_documents || parseNumber(parseFrontMatterValue(rawText, "raw_count", "0"), 0))
-  );
-  const poolCount = parseNumber(
-    logBullets.pool_count,
-    Number(structuredIntake?.payload?.counts?.pooled_documents || parseNumber(parseFrontMatterValue(poolText, "pool_count", "0"), 0))
-  );
+  const rawCount = Number(structuredIntake?.payload?.counts?.raw_documents || 0);
+  const poolCount = Number(structuredIntake?.payload?.counts?.pooled_documents || 0);
 
   const intakeItems = structuredIntakeItems(structuredIntake);
-  const rawTitles = intakeItems.length ? intakeItems.map((item) => item.title).filter(Boolean) : parseRawTitles(rawText);
+  const rawTitles = intakeItems.map((item) => item.title).filter(Boolean);
   const aiRelevantCount = rawTitles.filter((title) => isAIRelevant(title)).length;
   const offTopicCount = rawTitles.filter((title) => hasOffTopicSignal(title, offTopicPatterns) && !isAIRelevant(title)).length;
   const aiRelevantRatio = ratio(aiRelevantCount, rawTitles.length || rawCount);
@@ -458,7 +387,7 @@ export function runGuanlanMonitorQualityGate({
   const outsideCoreCount = themeDist["outside-core-exploration"] || 0;
   const poolImportanceCoverageValue = String(logBullets.pool_importance_coverage_gaps || "unknown").trim().toLowerCase();
   const poolCoverageGapFlag = poolImportanceCoverageValue !== "none";
-  const poolItems = intakeItems.length ? intakeItems.filter((item) => item.pooled) : parsePoolItems(poolText);
+  const poolItems = intakeItems.filter((item) => item.pooled);
   const poolRouteDist = poolItems.reduce((acc, item) => {
     const routes = item.routes?.length ? item.routes : ["index_only"];
     for (const route of routes) acc[route] = (acc[route] || 0) + 1;
@@ -550,7 +479,7 @@ export function runGuanlanMonitorQualityGate({
   const effectiveCoreNonLargeVendorMin = weekend.active
     ? Math.min(coreNonLargeVendorMin, Number(weekendAdjusted.core_non_large_vendor_min ?? coreNonLargeVendorMin))
     : coreNonLargeVendorMin;
-  const rawToCardSupplyRelease =
+  const structuredSupplyHealthy =
     poolCount >= poolMinHard &&
     routedPoolCount >= routedPoolMinHard &&
     corePoolCount >= effectiveCorePoolMinHard &&
@@ -559,11 +488,10 @@ export function runGuanlanMonitorQualityGate({
     coreTextContaminationCount <= coreTextContaminationMax &&
     coreRawQcBlockCount <= coreRawQcBlockMax &&
     coreRawQcDegradedCount <= coreRawQcDegradedMax;
-  const rawCountReleaseByRawToCard = rawCount < effectiveRawMinHard && rawToCardSupplyRelease;
-  const rawChannelDiagnosticsReleasedByRawToCard = rawToCardSupplyRelease;
-  // Once combined Pool audit and raw-to-card supply is healthy, peer source-channel failures are
+  const rawCountRecoveredByStructuredSupply = rawCount < effectiveRawMinHard && structuredSupplyHealthy;
+  // Once structured intake supply is healthy, peer source-channel failures are
   // diagnostic supply-risk notes rather than downstream release blockers.
-  const sourceFallbackRecovered = rawToCardSupplyRelease;
+  const sourceFallbackRecovered = structuredSupplyHealthy;
   const sourceFailureRecovery = splitSourceFailureRecovery(failedSources, sourceFallbackRecovered);
   const recoveredFailedSources = sourceFailureRecovery.recovered;
   const unrecoveredFailedSources = sourceFailureRecovery.unrecovered;
@@ -572,21 +500,21 @@ export function runGuanlanMonitorQualityGate({
     : "none";
 
   const diagnosticChecks = [
-    { key: "raw_count_min", passed: rawCount >= effectiveRawMinHard || rawCountReleaseByRawToCard, value: `${rawCount}/${effectiveRawMinHard}${weekend.active ? `; default=${rawMinHard}` : ""}${rawCountReleaseByRawToCard ? "; released_by_raw_to_card_supply=true" : ""}` },
+    { key: "raw_count_min", passed: rawCount >= effectiveRawMinHard || rawCountRecoveredByStructuredSupply, value: `${rawCount}/${effectiveRawMinHard}${weekend.active ? `; default=${rawMinHard}` : ""}${rawCountRecoveredByStructuredSupply ? "; recovered_by_structured_supply=true" : ""}` },
     {
       key: "keyword_search_non_community_min",
-      passed: keywordNonCommunityCount >= nonCommunityMinHard || rawChannelDiagnosticsReleasedByRawToCard,
-      value: `${keywordNonCommunityCount}/${nonCommunityMinHard}${rawChannelDiagnosticsReleasedByRawToCard && keywordNonCommunityCount < nonCommunityMinHard ? "; diagnostic_released_by_raw_to_card_supply=true" : ""}`,
+      passed: keywordNonCommunityCount >= nonCommunityMinHard || structuredSupplyHealthy,
+      value: `${keywordNonCommunityCount}/${nonCommunityMinHard}${structuredSupplyHealthy && keywordNonCommunityCount < nonCommunityMinHard ? "; diagnostic_recovered_by_structured_supply=true" : ""}`,
     },
     {
       key: "ai_relevant_title_ratio_min",
-      passed: aiRelevantRatio >= aiRelevantMinHard || rawChannelDiagnosticsReleasedByRawToCard,
-      value: `${aiRelevantRatio.toFixed(2)}/${aiRelevantMinHard}${rawChannelDiagnosticsReleasedByRawToCard && aiRelevantRatio < aiRelevantMinHard ? "; diagnostic_released_by_raw_to_card_supply=true" : ""}`,
+      passed: aiRelevantRatio >= aiRelevantMinHard || structuredSupplyHealthy,
+      value: `${aiRelevantRatio.toFixed(2)}/${aiRelevantMinHard}${structuredSupplyHealthy && aiRelevantRatio < aiRelevantMinHard ? "; diagnostic_recovered_by_structured_supply=true" : ""}`,
     },
     {
       key: "off_topic_title_max",
-      passed: offTopicCount <= offTopicMaxHard || rawChannelDiagnosticsReleasedByRawToCard,
-      value: `${offTopicCount}/${offTopicMaxHard}${rawChannelDiagnosticsReleasedByRawToCard && offTopicCount > offTopicMaxHard ? "; diagnostic_released_by_raw_to_card_supply=true" : ""}`,
+      passed: offTopicCount <= offTopicMaxHard || structuredSupplyHealthy,
+      value: `${offTopicCount}/${offTopicMaxHard}${structuredSupplyHealthy && offTopicCount > offTopicMaxHard ? "; diagnostic_recovered_by_structured_supply=true" : ""}`,
     },
     {
       key: "importance_coverage_gaps",
@@ -759,13 +687,12 @@ export function runGuanlanMonitorQualityGate({
     `- status: ${status}`,
     `- production_weekday: ${weekend.weekday || "unknown"}`,
     `- weekend_policy: ${weekend.active ? "active" : "inactive"}`,
-    `- weekend_policy_note: ${weekend.active ? "light weekend quantity floors applied; evidence-quality gates and downstream card/frontstage gates remain required" : "not_applied"}`,
+    `- weekend_policy_note: ${weekend.active ? "light weekend quantity floors applied; V4 evidence-integrity and application gates remain required" : "not_applied"}`,
     `- total_score: ${totalScore}`,
     `- diagnostic_score_reference: ${scoreThreshold}`,
     `- score_mode: ${scoreMode}`,
     `- raw_count: ${rawCount}`,
-    `- raw_count_release_override: ${rawCountReleaseByRawToCard ? "raw_to_card_supply" : "false"}`,
-    `- raw_to_card_supply_release: ${rawToCardSupplyRelease ? "true" : "false"}`,
+    `- structured_supply_healthy: ${structuredSupplyHealthy ? "true" : "false"}`,
     `- pool_count: ${poolCount}`,
     `- pool_index_count: ${poolItems.length}`,
     `- routed_pool_count: ${routedPoolCount}`,
@@ -846,8 +773,6 @@ export function runGuanlanMonitorQualityGate({
     "## Inputs",
     "",
     `- structured_intake_file: ${structuredIntake?.file ? rel(structuredIntake.file) : "missing"}`,
-    `- legacy_raw_file: ${rawFile && fs.existsSync(rawFile) ? rel(rawFile) : "not_generated"}`,
-    `- legacy_pool_file: ${poolFile && fs.existsSync(poolFile) ? rel(poolFile) : "not_generated"}`,
     `- monitor_log_file: ${logFile && fs.existsSync(logFile) ? rel(logFile) : "missing"}`,
     `- config_file: ${rel(configPath)}`,
     "",
@@ -872,15 +797,12 @@ export function runGuanlanMonitorQualityGate({
     latest_path: latestPath,
     input_files: {
       structured_intake: structuredIntake?.file || "",
-      raw: fs.existsSync(rawFile) ? rawFile : "",
-      pool: fs.existsSync(poolFile) ? poolFile : "",
       log: logFile || "",
       config: configPath,
     },
     metrics: {
       raw_count: rawCount,
-      raw_count_release_override: rawCountReleaseByRawToCard ? "raw_to_card_supply" : "false",
-      raw_to_card_supply_release: rawToCardSupplyRelease,
+      structured_supply_healthy: structuredSupplyHealthy,
       pool_count: poolCount,
       keyword_search_non_community_count: keywordNonCommunityCount,
       non_community_paths_hit: nonCommunityPaths,

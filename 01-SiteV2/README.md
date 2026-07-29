@@ -1,13 +1,13 @@
 ---
 title: WaveSight 01-SiteV2
-date: 2026-07-17
+date: 2026-07-29
 status: current
 encoding: UTF-8
 ---
 
 # WaveSight 01-SiteV2
 
-本目录是 SITE-V4.1 站点、事实数据与本地 Obsidian 资产的统一入口。
+本目录是 SITE-V4.3 站点、事实数据与本地 Obsidian 资产的统一入口。
 
 ## 当前入口
 

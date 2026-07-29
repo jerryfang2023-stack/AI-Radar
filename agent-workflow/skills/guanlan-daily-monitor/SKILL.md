@@ -25,7 +25,7 @@ This skill owns commercial-source discovery, immutable snapshot capture, and `SO
 1. `AGENTS.md`
 2. `context/12-data-center-v4.md`
 3. `context/06-execution-harness.md`
-4. `context/08-v3-3-automation.md`
+4. `context/08-automation.md`
 5. `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md`
 6. `evals/daily-monitor-evals.md` when changing the monitor.
 

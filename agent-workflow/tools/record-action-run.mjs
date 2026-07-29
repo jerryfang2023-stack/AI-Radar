@@ -10,7 +10,7 @@ const args = new Map(
   })
 );
 
-const actionIndex = path.join(root, "context", "09-v3-3-current-action-index.md");
+const actionIndex = path.join(root, "context", "09-current-action-index.md");
 const logsDir = path.join(root, "agent-workflow", "logs", "action-runs");
 const date = args.get("date") || beijingDate();
 const action = clean(args.get("action") || args.get("name") || "Unspecified action");

@@ -45,8 +45,8 @@ Read only what is needed:
 2. `context/00-current-state.md`
 3. `context/version-ledger.md`
 4. `context/frontstage-page-contracts.md`
-5. `context/08-v3-3-automation.md`
-6. `context/09-v3-3-current-action-index.md`
+5. `context/08-automation.md`
+6. `context/09-current-action-index.md`
 7. Relevant First-Line Viewpoints report, production incident, legacy Hermes record, workflow log, or gate output.
 
 For implementation detail, read:
@@ -154,7 +154,7 @@ If the report shows healthy feed/archive counts but a publish failure, repair th
 
 - Builder viewpoints are independent public viewpoints.
 - Do not write Claims, CanonicalEvents, RELATION-V2.1 evidence, or Community Intelligence data.
-- Do not use `01-SiteV2/content/05-frontier-opinions/*` as current evidence.
+- Do not restore or use the retired `05-frontier-opinions` candidate/Card archive; Git history is its only recovery path.
 - Do not treat old `YYYY-MM.md` month files as current sync success.
 - Do not allow untranslated English as primary Chinese frontstage text.
 - Do not treat a report file's existence as publish success when its item count is zero or mismatched.

@@ -41,7 +41,7 @@ Product Commander 是 WaveSight AI 的任务入口与调度节点。它把用户
 - Data Center V4：`context/12-data-center-v4.md`
 - 页面工作：`context/frontstage-page-contracts.md`
 - 高风险执行：`context/06-execution-harness.md`
-- 当前行动索引：`context/09-v3-3-current-action-index.md`
+- 当前行动索引：`context/09-current-action-index.md`
 
 ## 输出与验收
 

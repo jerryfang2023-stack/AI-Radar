@@ -13,7 +13,7 @@
    - Pass when index-like pages and unresolved discovery text are not approved as facts.
 
 5. `stage_owned_findings`
-   - Pass when every finding maps to source capture, evidence supply, Card/editorial quality, frontstage contract or publication.
+   - Pass when every finding maps to source capture, evidence supply, Claim/Event integrity, application quality, frontstage contract, or publication.
 
 6. `no_full_chain_rerun`
    - Pass when the audit recommends the smallest targeted repair and validation.

@@ -27,8 +27,8 @@ Read only the sources needed for the target:
 1. Repository `AGENTS.md` and the current task route it names.
 2. `context/00-current-state.md` and the target lane context.
 3. `context/06-execution-harness.md` for high-risk commands or automation.
-4. `context/08-v3-3-automation.md` for GitHub, Pages, scheduling, or deployment audits.
-5. `context/10-v3-3-experience-automation.md` for Skill Ops, action logging, or retrospective automation audits.
+4. `context/08-automation.md` for GitHub, Pages, scheduling, or deployment audits.
+5. `context/10-experience-automation.md` for Skill Ops, action logging, or retrospective automation audits.
 6. Target Skills, workflows, scripts, data contracts, gates, and directly linked incident evidence.
 7. [references/audit-checklist.md](references/audit-checklist.md).
 8. [evals/code-rule-auditor-evals.md](evals/code-rule-auditor-evals.md) before finalizing findings.

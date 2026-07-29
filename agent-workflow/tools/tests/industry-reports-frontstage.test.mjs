@@ -203,7 +203,7 @@ test("the two latest weekly issues have independent editorial pages", () => {
   assert.match(latest, new RegExp(weeklySources[0].file.replace(/[.*+?^${}()|[\]\\]/gu, "\\$&"), "u"));
 });
 
-test("retired V3 page assets are deleted and internal compatibility datasets stay private", () => {
+test("retired V3 page assets and datasets are absent while the current internal viewpoint feed stays private", () => {
   const workflow = fs.readFileSync(path.join(root, ".github/workflows/github-pages.yml"), "utf8");
   for (const retired of [
     "assets/wavesight-nav.css",
@@ -216,11 +216,15 @@ test("retired V3 page assets are deleted and internal compatibility datasets sta
   ]) {
     assert.equal(fs.existsSync(path.join(root, "01-SiteV2/site", retired)), false, `${retired} must stay deleted`);
   }
-  for (const internal of [
+  for (const retired of [
     "data/v3-data-observation-desk.json",
     "data/intelligence-graph-index.json",
-    "data/follow-builders-daily.json",
   ]) {
-    assert.ok(workflow.includes(`--exclude="${internal}"`), `${internal} must be excluded from Pages`);
+    assert.equal(fs.existsSync(path.join(root, "01-SiteV2/site", retired)), false, `${retired} must stay deleted`);
+    assert.equal(workflow.includes(retired), false, `${retired} must not remain in the Pages contract`);
   }
+  assert.ok(
+    workflow.includes('--exclude="data/follow-builders-daily.json"'),
+    "the current internal viewpoint feed must be excluded from Pages",
+  );
 });

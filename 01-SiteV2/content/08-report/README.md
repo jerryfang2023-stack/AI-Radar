@@ -1,17 +1,17 @@
 # 08-report | 周报与月报
 
-This directory stores report source files used by the Intelligence Map report route.
+This directory stores the accepted report source files used by the Industry Reports route.
 
 ## Directory Structure
 
 | Path | Use |
 |---|---|
 | `*.md` | Weekly AI business change radar reports |
-| `monthly/` | Reserved for future monthly AI business structure reports |
+| `monthly/` | Monthly AI business structure reports |
 
 ## Weekly Reports
 
-Weekly reports are published source files for the Weekly AI Business Change Radar. They compare Business Signals, First-Line Viewpoints, and Community Intelligence to judge short-cycle changes.
+Weekly reports are downstream judgment outputs. Accepted V4 CanonicalEvents (`E`) are their factual base; First-Line Viewpoints (`O`) and Community Intelligence (`C`) may provide separately namespaced interpretation and context but cannot create facts.
 
 ### Naming
 
@@ -29,6 +29,8 @@ Example:
 
 | Date | Week | File |
 |---|---|---|
+| 2026-07-27 | 2026-W30 | `2026-07-27--weekly-report--ai-business-change-radar.md` |
+| 2026-07-20 | 2026-W29 | `2026-07-20--weekly-report--ai-business-change-radar.md` |
 | 2026-07-13 | 2026-W28 | `2026-07-13--weekly-report--ai-business-change-radar.md` |
 | 2026-07-06 | 2026-W27 | `2026-07-06--weekly-report--ai-business-change-radar.md` |
 | 2026-06-29 | 2026-W26 | `2026-06-29--weekly-report--ai-business-change-radar.md` |
@@ -51,13 +53,17 @@ status: published
 
 ## Monthly Reports
 
-Monthly reports are reserved but not yet a current published source route.
+Monthly reports are current downstream application outputs under
+`REPORTS-V1.1.0-lane-independent`. Their factual statements must resolve to
+accepted V4 evidence; V3 Desk, Signal Cards, the old graph, trend candidates,
+and legacy mappings are forbidden inputs.
 
-Do not publish monthly files until:
+The deterministic monthly source path is:
 
-- the source Markdown is clean UTF-8;
-- the file uses a current monthly frontmatter contract;
-- retired fields such as `daily_observations` are not used;
-- the monthly report generator and frontstage entry are explicitly versioned.
+```text
+monthly/YYYY-MM-DD--monthly-report--ai-business-structure-and-opportunity.md
+```
 
-Until those conditions are met, monthly report drafts must stay out of git.
+DeepSeek writes bounded Markdown; the content gate must pass before
+deterministic HTML and navigation rendering. Opportunity Map generation remains
+independent and cannot block an accepted monthly report.

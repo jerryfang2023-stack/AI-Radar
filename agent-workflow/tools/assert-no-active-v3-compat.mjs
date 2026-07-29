@@ -43,11 +43,20 @@ const retiredActivePaths = [
   "01-SiteV2/content/02-pool",
   "01-SiteV2/content/03-daily-observation",
   "01-SiteV2/content/04-business-signals",
+  "01-SiteV2/content/05-frontier-opinions",
   "01-SiteV2/content/06-asset-candidates",
+  "01-SiteV2/content/11-databases/urgent-trend-candidates",
   "01-SiteV2/knowledge/03-Asset-Candidates",
+  "01-SiteV2/knowledge/10-Templates/change-candidate-template.md",
+  "01-SiteV2/knowledge/10-Templates/opinion-card-template.md",
+  "01-SiteV2/knowledge/10-Templates/trend-candidate-cluster-template.md",
+  "01-SiteV2/knowledge/10-Templates/trend-candidate-template.md",
+  "agent-workflow/reports/2026-06-05-v3-1-mobile-copy-release.md",
+  "agent-workflow/reports/2026-06-05-raw-pool-card-source-first-governance.md",
 ];
 const retiredBasenames = [
   "01-Signal-Cards",
+  "compatibility-cards.json",
   "v3-data-observation-desk.json",
   "intelligence-graph-index.json",
   "legacy-card-event-mappings.json",
@@ -65,6 +74,18 @@ const retiredArchivePayloads = [
   "archive/v3-compat/legacy-mappings/legacy-card-event-mappings.md",
   "archive/v3-compat/frontstage/site-content.json",
   "archive/v3-compat/frontstage/site-content.js",
+];
+const retiredReportSuffixes = [
+  "-pool-to-card-handoff.md",
+  "-pool-to-card-dedupe-gate.md",
+  "-business-signals-frontstage-gate.md",
+  "-business-signals-frontstage-gate.json",
+  "-no-trend-candidate-decision.md",
+];
+const retiredCurrentContextPaths = [
+  "context/08-v3-3-automation.md",
+  "context/09-v3-3-current-action-index.md",
+  "context/10-v3-3-experience-automation.md",
 ];
 
 function read(relative) {
@@ -96,13 +117,23 @@ for (const relative of retiredActivePaths) {
 for (const relative of retiredArchivePayloads) {
   if (fs.existsSync(path.join(root, relative))) problems.push(`retired V3 payload remains in the working tree: ${relative}`);
 }
+for (const file of filesUnder("01-SiteV2/content/11-databases/data-center-v4", new Set([".json", ".md"]))) {
+  if (retiredBasenames.includes(path.basename(file))) {
+    problems.push(`retired V3 database payload remains: ${path.relative(root, file).replace(/\\/gu, "/")}`);
+  }
+}
+for (const file of filesUnder("agent-workflow/reports", new Set([".json", ".md"]))) {
+  const name = path.basename(file);
+  if (retiredReportSuffixes.some((suffix) => name.endsWith(suffix))) {
+    problems.push(`retired V3 operational report remains: ${path.relative(root, file).replace(/\\/gu, "/")}`);
+  }
+}
 for (const command of retiredCommands) {
   const matches = filesUnder("agent-workflow/tools", new Set([".mjs", ".js"]))
     .concat(filesUnder("01-SiteV2/site/scripts", new Set([".mjs", ".js"])))
     .filter((file) => path.basename(file) === command);
   if (matches.length) problems.push(`retired producer implementation remains: ${command}`);
 }
-
 const workflowFiles = filesUnder(".github/workflows", new Set([".yml", ".yaml"]));
 const retiredWorkflowCopy = [
   "V3 evidence-supply",
@@ -137,11 +168,14 @@ for (const command of retiredCommands) {
 
 const productionTools = [
   "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
+  "agent-workflow/tools/guanlan-monitor-quality-gate.mjs",
   "agent-workflow/tools/build-data-center-v4.mjs",
   "agent-workflow/tools/assert-daily-production-chain.mjs",
   "agent-workflow/tools/write-daily-supervision-report.mjs",
   "agent-workflow/tools/run-business-signals-health-dispatch.mjs",
   "agent-workflow/tools/write-automation-readiness-report.mjs",
+  "agent-workflow/tools/record-action-run.mjs",
+  "agent-workflow/tools/write-weekly-health-report.mjs",
   "agent-workflow/tools/sync-local-obsidian-assets.mjs",
   "agent-workflow/tools/build-data-center-v4-obsidian-index.mjs",
   "agent-workflow/tools/backfill-source-title-translations.mjs",
@@ -150,6 +184,9 @@ for (const relative of productionTools) {
   const text = read(relative);
   for (const retiredName of retiredBasenames) {
     if (text.includes(retiredName)) problems.push(`${relative} references retired active asset: ${retiredName}`);
+  }
+  for (const retiredPath of retiredCurrentContextPaths) {
+    if (text.includes(retiredPath)) problems.push(`${relative} references renamed current context: ${retiredPath}`);
   }
 }
 
@@ -199,6 +236,19 @@ const sourceIntakePolicy = JSON.parse(read("01-SiteV2/content/11-databases/sourc
 if (sourceIntakePolicy.schema_version !== "SOURCE-INTAKE-GATE-V1.0") {
   problems.push("V4 source-intake gate policy is missing or has the wrong schema version");
 }
+const sourceIntakeGate = read("agent-workflow/tools/guanlan-monitor-quality-gate.mjs");
+for (const forbidden of [
+  "01-SiteV2/content/02-pool",
+  "-pool-candidates.md",
+  "raw_to_card",
+  "legacy_raw_file",
+  "legacy_pool_file",
+  "Card generation",
+]) {
+  if (sourceIntakeGate.includes(forbidden)) {
+    problems.push(`source-intake quality gate retains retired V3 fallback or routing copy: ${forbidden}`);
+  }
+}
 
 const governanceRetirementChecks = [
   {
@@ -224,6 +274,22 @@ const governanceRetirementChecks = [
   {
     file: "agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md",
     forbidden: ["business-signals-gate-v3.json", "legacy Raw/Pool supply"],
+  },
+  {
+    file: "agent-workflow/skills/guanlan-monitor-quality-gate/references/scorecard.md",
+    forbidden: ["Card generation", "Card generation, dedupe", "Raw/Pool/Core targets"],
+  },
+  {
+    file: "agent-workflow/skills/guanlan-monitor-quality-gate/evals/monitor-quality-gate-evals.md",
+    forbidden: ["Card/editorial/frontstage gates", "Raw/Pool/Core targets"],
+  },
+  {
+    file: "agent-workflow/agents/README.md",
+    forbidden: ["兼容或下游应用支线"],
+  },
+  {
+    file: "docs/agent-handoff.md",
+    forbidden: ["downstream compatibility outputs", "SITE-V4.2.0-entity-history"],
   },
   {
     file: "agent-workflow/agents/data-agent.md",

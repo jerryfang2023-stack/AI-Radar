@@ -6,6 +6,7 @@
 
 html {
   color-scheme: light;
+  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
@@ -1296,6 +1297,7 @@ body[data-dc-view="community"] .dc-source-link:active {
 }
 
 .dc-viewpoint-switch a {
+  min-width: 0;
   min-height: 52px;
   padding: 10px 18px;
   display: flex;
@@ -2725,6 +2727,17 @@ body[data-dc-view="community"] .dc-source-link:active {
 
   .dc-viewpoint-switch {
     max-width: none;
+  }
+
+  body[data-dc-view="viewpoints"] {
+    overflow-x: clip;
+  }
+
+  .dc-viewpoint-switch a span {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .dc-viewpoint-person {

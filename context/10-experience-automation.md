@@ -1,7 +1,7 @@
 ---
 status: current
-scope: v3-3-experience-automation
-last_updated: 2026-07-01
+scope: v4-experience-automation
+last_updated: 2026-07-29
 use_when:
   - record development action
   - summarize execution lessons
@@ -90,7 +90,7 @@ agent-workflow/reports/<YYYY-MM-DD>-action-retrospective.md
 
 Always record:
 
-- any current action from `context/09-v3-3-current-action-index.md`;
+- any current action from `context/09-current-action-index.md`;
 - edits to `AGENTS.md`, `context/`, `.github/workflows/`, automation scripts, or core site scripts;
 - any failed gate, failed workflow, rollback, manual override, or skipped safety check;
 - any action that changes frontstage pages, site data, dashboard data, SourceArtifact / RawDocument / Claim / Event assets, application projections, or local sync behavior;

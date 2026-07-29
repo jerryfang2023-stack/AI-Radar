@@ -6,7 +6,6 @@ const root = process.cwd();
 const dataRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
 const output = path.join(dataRoot, "Data Center V4 Index.md");
 const readJson = (file) => JSON.parse(fs.readFileSync(file, "utf8").replace(/^\uFEFF/u, ""));
-const readOptional = (file) => fs.existsSync(file) ? readJson(file) : [];
 const dates = () => fs.readdirSync(dataRoot, { withFileTypes: true })
   .filter((entry) => entry.isDirectory() && /^\d{4}-\d{2}-\d{2}$/u.test(entry.name))
   .map((entry) => entry.name)
@@ -23,7 +22,6 @@ function main() {
       raws: readJson(path.join(dir, "raw-documents.json")),
       claims: readJson(path.join(dir, "claims.json")),
       events: readJson(path.join(dir, "canonical-events.json")),
-      compatibility: readOptional(path.join(dir, "compatibility-cards.json")),
       qa: readJson(path.join(dir, "qa-queue.json")),
     };
   });
@@ -43,7 +41,7 @@ function main() {
     "",
     "# Data Center V4 Index",
     "",
-    "> 当前事实数据与本地 Obsidian 入口。RawDocument 保存来源文本，CanonicalEvent 保存通过 V4 合同的事实。兼容投影只读且可选。",
+    "> 当前事实数据与本地 Obsidian 入口。RawDocument 保存来源文本，CanonicalEvent 保存通过 V4 合同的事实。",
     "",
     "## Current snapshot",
     "",
@@ -52,7 +50,6 @@ function main() {
     `- RawDocument: ${uniqueCount(all("raws"), "raw_id")}`,
     `- Claim: ${uniqueCount(all("claims"), "claim_id")}`,
     `- CanonicalEvent: ${uniqueCount(all("events"), "event_id")}`,
-    `- optional compatibility projection: ${uniqueCount(all("compatibility"), "event_id")}`,
     `- QA items: ${uniqueCount(all("qa"), "qa_id")}`,
     "",
     "## Navigation",

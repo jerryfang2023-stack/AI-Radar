@@ -1,7 +1,7 @@
 ---
 status: current
 scope: context-index
-last_updated: 2026-07-17
+last_updated: 2026-07-29
 use_when:
   - decide what to read
   - dispatch task
@@ -24,12 +24,12 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `context/01-product-map.md` | SITE-V4.0 data-center product structure and downstream applications | Product and data structure changes |
 | `context/02-vi-style.md` | VI, typography, visual style | UI, layout, brand assets |
 | `context/04-qc-rules.md` | General quality gates | Acceptance, release, closeout |
-| `context/05-daily-monitoring.md` | Daily monitoring minimum context | Raw / Pool / monitoring QC |
+| `context/05-daily-monitoring.md` | Retired V3 daily-monitoring notice | Historical V3 audit only |
 | `context/06-execution-harness.md` | High-risk execution harness | V4 source intake, fact build, application projections, page changes |
 | `context/07-v3-intelligence-generation-rules.md` | V3 retirement notice and explicit Git-history recovery boundary | Historical V3 audit only |
-| `context/08-v3-3-automation.md` | SITE-V4.3 GitHub / site / local Obsidian automation loop | GitHub Actions, data sync, local sync |
-| `context/09-v3-3-current-action-index.md` | Current V4 action registry | Action dispatch and automation recovery |
-| `context/10-v3-3-experience-automation.md` | Action logging and retrospective automation | Record meaningful actions, summarize mistakes and lessons |
+| `context/08-automation.md` | SITE-V4.3 GitHub / site / local Obsidian automation loop | GitHub Actions, data sync, local sync |
+| `context/09-current-action-index.md` | Current V4 action registry | Action dispatch and automation recovery |
+| `context/10-experience-automation.md` | Action logging and retrospective automation | Record meaningful actions, summarize mistakes and lessons |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes control-plane watchdog instructions | Controller liveness only; no lane supervision or repair |
 | `context/12-data-center-v4.md` | Current Data Center V4 contract and factual production boundary | Raw / Claim / Event / FDE / hardware / tags / database work |
 
@@ -45,9 +45,9 @@ This file is the reading router. Do not use old closeout files as current truth.
 | Skill | Purpose |
 |---|---|
 | `agent-workflow/skills/guanlan-data-center-supervisor/SKILL.md` | Data Center V4 lane supervision and repair |
-| `agent-workflow/skills/guanlan-daily-monitor/SKILL.md` | Raw monitoring and candidate collection |
+| `agent-workflow/skills/guanlan-daily-monitor/SKILL.md` | Immutable snapshot capture and SOURCE-INTAKE-V1 production |
 | `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md` | Monitoring pre-gate |
-| `agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md` | Raw / Pool quality release |
+| `agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md` | On-demand V4 source-intake semantic audit |
 | `agent-workflow/skills/guanlan-data-center-supervisor/SKILL.md` | V4 commercial-event production supervision and repair |
 | `agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md` | First-Line Viewpoints lane supervision and repair |
 | `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` | Community Intelligence lane supervision and repair |
@@ -56,7 +56,9 @@ This file is the reading router. Do not use old closeout files as current truth.
 ## Active Frontstage
 
 - `01-SiteV2/site/data-center.html`: Commercial Events, FDE, AI hardware, Community Intelligence, First-Line Viewpoints, Industry Dossiers, and the one-hop Relationship Map.
-- `01-SiteV2/site/intelligence-map.html`: Industry Reports, opportunity maps, and report archive.
+- `01-SiteV2/site/intelligence-map.html`: Industry Reports and report archive.
+- `01-SiteV2/site/funding-insights.html`: source-backed Funding Insights.
+- `01-SiteV2/site/opportunity-map.html`: source-backed Opportunity Map.
 - `01-SiteV2/site/weekly-ai-business-change-radar.html`: weekly AI business change radar detail page.
 - `01-SiteV2/site/v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html`: compatibility redirects only.
 - `01-SiteV2/site/operations-console.html`: dashboard / operations backend.

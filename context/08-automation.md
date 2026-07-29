@@ -5,7 +5,7 @@ last_updated: 2026-07-29
 priority: current
 ---
 
-# SITE-V4.3 Automation Loop
+# WaveSight V4 Automation Loop
 
 ## Daily production
 

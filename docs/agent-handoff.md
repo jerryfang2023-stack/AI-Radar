@@ -1,6 +1,6 @@
 ---
 title: WaveSight Current Handoff
-date: 2026-07-22
+date: 2026-07-29
 status: current
 encoding: UTF-8
 ---
@@ -12,9 +12,9 @@ This file keeps only the current handoff state needed by a new window. Historica
 ## Current Position
 
 - Project: WaveSight AI / 观澜 AI.
-- Current stage: `SITE-V4.2.0-entity-history` public website and data-service baseline.
+- Current stage: `SITE-V4.3.0-compatibility-retired` public website and data-service baseline.
 - Product role: AI industry data center and structured factual data foundation for downstream products and research.
-- Current public frontstage: Data Center / Trend Radar / Industry Reports / Opportunity Map.
+- Current public frontstage: Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports.
 - Current backend: Dashboard / operations console.
 - Default truth sources: `AGENTS.md`, `context/00-current-state.md`, `context/version-ledger.md`, `context/12-data-center-v4.md`, and directly relevant task files.
 
@@ -23,6 +23,7 @@ This file keeps only the current handoff state needed by a new window. Historica
 | Entry | File |
 |---|---|
 | Commercial Events / FDE / AI Hardware | `01-SiteV2/site/data-center.html` |
+| Funding Insights | `01-SiteV2/site/funding-insights.html` |
 | Industry Reports | `01-SiteV2/site/intelligence-map.html` |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` |
 | Trend Radar | `01-SiteV2/site/trend-radar.html` |
@@ -46,7 +47,7 @@ External sources
 -> local Obsidian sync
 ```
 
-V4 canonical tables contain factual evidence only. Card, trend, opportunity, report, recommendation, and value-judgment objects remain downstream compatibility outputs. First-Line Viewpoints and Community Intelligence are independent columns and cannot become business-signal facts without source-backed recapture.
+V4 canonical tables contain factual evidence only. Trend, opportunity, funding-insight, report, recommendation, and value-judgment objects are downstream applications. V3 Card interfaces are removed. First-Line Viewpoints and Community Intelligence are independent columns and cannot become business-signal facts without separate original-source capture through the V4 evidence chain.
 
 ## Retired Routes
 
@@ -64,6 +65,6 @@ New windows should read:
 1. `AGENTS.md`
 2. `context/context-index.md`
 3. `context/version-ledger.md`
-4. `context/12-data-center-v4.md` for V4 work, or the routed V3 compatibility context for frozen-page work
+4. `context/12-data-center-v4.md` for V4 work; historical V3 recovery requires an explicit Git ref and isolated worktree
 5. The current task dispatch or closeout
 6. One to three directly relevant task files or skills

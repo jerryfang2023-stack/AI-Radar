@@ -10,7 +10,7 @@ The Community Intelligence lane owns:
 
 It must not own:
 
-- Business Signal Cards;
+- V4 Claims, CanonicalEvents, or factual relationships;
 - relationship graph or trend-candidate evidence;
 - First-Line Viewpoints data;
-- verified business facts unless separately promoted through Raw / Pool.
+- verified business facts unless the original source is separately captured and passes the full SourceArtifact → RawDocument → exact-span Claim → CanonicalEvent chain.

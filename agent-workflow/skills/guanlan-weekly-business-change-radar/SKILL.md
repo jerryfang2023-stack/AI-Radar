@@ -25,7 +25,7 @@ This is a downstream judgment report. It cannot write Data Center V4 canonical f
 1. `AGENTS.md`
 2. `context/00-current-state.md`
 3. `context/12-data-center-v4.md`
-4. `context/08-v3-3-automation.md`
+4. `context/08-automation.md`
 5. `01-SiteV2/content/08-report/`
 6. `agent-workflow/tools/generate-periodic-report-deepseek.mjs`
 7. `agent-workflow/tools/assert-periodic-report-content.mjs`

@@ -345,7 +345,7 @@ function collectConflictSignals() {
   const result = runOptional("rg", [
     "-n",
     "-i",
-    "netlify|daily observation|business brief|trend report|05-frontier-opinions|V2 four-column",
+    "netlify|daily observation|business brief|trend report|retired viewpoint candidate|V2 four-column",
     "context",
     ".github",
     "package.json",

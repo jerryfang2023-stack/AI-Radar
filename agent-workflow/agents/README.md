@@ -23,7 +23,7 @@ Experience & Editorial
 Build & Release
 ```
 
-V3 `Raw -> Pool -> Card`、关系图和趋势候选是兼容或下游应用支线。只有任务明确要求时才进入范围，不能反向污染 V4 规范数据。
+V3 `Raw -> Pool -> Card`、旧关系图和趋势候选已从工作树及现行流程删除。历史核查只能使用显式 Git ref 和隔离 worktree；它们不能进入 V4 生产或下游应用。
 
 ## 四个流程角色
 

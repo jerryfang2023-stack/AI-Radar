@@ -1,6 +1,6 @@
 ---
 title: WaveSight Content
-date: 2026-07-17
+date: 2026-07-29
 status: active-v4-data-pipeline
 type: v4-factual-data-pipeline
 encoding: UTF-8
@@ -15,11 +15,13 @@ encoding: UTF-8
 | 目录 | 用途 | 状态 |
 |---|---|---|
 | `01-raw/originals/` | 每日来源快照 | V4 输入 |
-| `07-points/` | First-Line Viewpoints | 独立栏目 |
-| `08-report/` | 周报内容 | 下游报告 |
+| `07-community-intelligence/` | Community Intelligence 的可读归档与索引 | 独立栏目 |
+| `07-points/` | First-Line Viewpoints 下午采集归档 | 独立栏目 |
+| `08-report/` | 周报与月报源文件 | 下游报告 |
 | `09-fde/` | V4 FDERecord 的 Obsidian 投影 | 当前 |
 | `10-ai-hardware/` | V4 HardwareRecord 的 Obsidian 投影 | 当前 |
 | `11-databases/data-center-v4/` | V4 SourceArtifact、RawDocument、Claim、Entity、CanonicalEvent 与 QA | 当前事实库 |
+| `12-applications/` | Funding Insights 等下游应用数据 | 下游应用 |
 
 ## V4 事实链
 
