@@ -165,7 +165,7 @@ export function buildFundingInsightsFrontstage(projectRoot = root) {
     meta: {
       schema_version: FUNDING_INSIGHT_FRONTSTAGE_VERSION,
       funding_insight_version: FUNDING_INSIGHT_VERSION,
-      site_version: "SITE-V4.2.0-entity-history",
+      site_version: "SITE-V4.3.0-compatibility-retired",
       column_version: "FUNDING-INSIGHT-V1.0-auto-published-research",
       latest_date: latestDate,
       generated_at: generatedAt,

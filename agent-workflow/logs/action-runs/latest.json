@@ -1,36 +1,33 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-29T15:09:53.656Z",
+  "generated_at": "2026-07-29T15:16:51.240Z",
   "date": "2026-07-29",
-  "action": "Close source-intake workflow naming gap",
+  "action": "Repair Funding Insights site-version drift",
   "action_status": "current",
   "record_level": "required",
-  "trigger": "post-repair audit",
+  "trigger": "post-deployment online smoke",
   "status": "success",
-  "summary": "Renamed the active source collection workflow and source-run artifact contract to Data Center V4 source intake, removed V3 and Card gate routing language, and added regression coverage.",
+  "summary": "Updated the Funding Insights frontstage builder and published dataset to SITE-V4.3.0 and added a permanent version-consistency assertion.",
   "contexts": [],
   "changed_files": [
-    ".github/workflows/data-center-source-intake.yml",
-    ".github/workflows/daily-persistent-assets-pr.yml",
-    ".github/workflows/daily-production-chain-dry-run.yml",
-    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
-    "agent-workflow/tools/assert-no-active-v3-compat.mjs"
+    "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs",
+    "01-SiteV2/site/data/funding-insights-v1.json",
+    "agent-workflow/tools/assert-version-consistency.mjs",
+    "agent-workflow/tools/tests/funding-insight-v1.test.mjs"
   ],
   "outputs": [],
   "checks": [
-    "workflow strings contain no retired routing",
-    "compatibility retirement tests passed",
-    "NO-ACTIVE-V3-COMPAT-V2.2 passed",
-    "31 quality gates passed"
+    "20 Funding Insights tests passed",
+    "version consistency passed",
+    "active V3 consumers equals zero"
   ],
   "issues": [
-    "active daily workflow still said V3 evidence-supply",
-    "manual source workflow still emitted business_source_raw artifacts"
+    "online Funding Insights metadata remained SITE-V4.2.0 after the V4.3 retirement deployment"
   ],
   "risks": [],
   "lessons": [],
   "reusable_rules": [
-    "active workflow labels and artifact schemas are part of the compatibility surface and must be covered by retirement gates"
+    "application frontstage datasets must expose the current SITE release and be checked by the central version gate"
   ],
   "retired_flags": [],
   "notes": []

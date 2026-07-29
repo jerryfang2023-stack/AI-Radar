@@ -126,6 +126,11 @@ for (const [key, value] of opsChecks) {
 }
 if (opsVersions.has("IMAP")) fail("ops console still exposes retired IMAP version row");
 
+const fundingInsights = readJson("01-SiteV2/site/data/funding-insights-v1.json");
+if (fundingInsights.meta?.site_version !== expected.site) {
+  fail(`Funding Insights site version expected ${expected.site}, found ${fundingInsights.meta?.site_version || "missing"}`);
+}
+
 const personReview = readJson("01-SiteV2/content/11-databases/entity-history-v1/person-account-review-decisions.json");
 if (personReview.review_version !== expected.person) fail("person review version does not match ledger");
 if (personReview.summary?.candidates !== 37 || personReview.summary?.expected_public_natural_people !== 31 || personReview.summary?.quarantined !== 6) {
