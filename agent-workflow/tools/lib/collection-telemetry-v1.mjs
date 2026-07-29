@@ -106,9 +106,10 @@ export function buildCollectionTelemetry({
   const knownProjectionStates = Object.values(projectionOutcomes).filter((value) => value !== "unknown");
   const projectionStatus = knownProjectionStates.includes("failed")
     ? "partial"
-    : knownProjectionStates.length && knownProjectionStates.every((value) => value === "passed" || value === "skipped")
+    : knownProjectionStates.length === Object.keys(projectionOutcomes).length
+      && knownProjectionStates.every((value) => value === "passed" || value === "skipped")
       ? "passed"
-      : "unknown";
+      : knownProjectionStates.length ? "partial" : "unknown";
 
   const publicationOutcome = normalizedOutcome(outcomes.publication || persistentManifest?.outcomes?.pre_commit_gate);
   const compatibilityWarnings = [];

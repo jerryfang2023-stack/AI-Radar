@@ -194,6 +194,23 @@ test("confirmed Community Intelligence publication prevents recurring task-resul
       dataHealthy: true,
       publicationConfirmed: true,
     }), "published");
+    assert.deepEqual(supervisor.classifyCommunityStages({
+      communityDataHealthy: true,
+      localWindowPassed: true,
+      published: true,
+      publicationWaiting: false,
+      publishWindowPassed: true,
+      taskAvailable: true,
+      lastTaskResult: 1,
+      taskState: "Ready",
+      loginState: "healthy",
+      publicationConfirmed: true,
+    }), {
+      data: "healthy",
+      publication: "published",
+      task_execution: "passed",
+      login: "healthy",
+    });
     assert.equal(supervisor.classifyCommunityTaskResult({
       lastResult: 1,
       dataHealthy: true,
