@@ -164,12 +164,14 @@ function runSafeRepairs(report) {
     }
   }
 
-  if (businessLane?.status !== "waiting" && (
-    hasLaneProblem(report, "business_signals", /frontstage|public Card|source-first|regression|gate|activeDate|signal Card/iu)
-    || hasLaneWarning(report, "business_signals", /frontstage|public Card|source-first|regression|gate/iu)
+  if (businessLane?.status !== "waiting" && hasLaneProblem(
+    report,
+    "business_signals",
+    /Data Center V4|integrity gate|materialization|collection telemetry/iu,
   )) {
-    if (exists("01-SiteV2/site/data/v3-data-observation-desk.json")) {
-      attempts.push(runNpm("rerun Business Signals frontstage gate", "assert:business-frontstage", [`--date=${date}`], 120000));
+    if (exists(`01-SiteV2/content/11-databases/data-center-v4/${date}/manifest.json`)) {
+      attempts.push(runNpm("rerun Data Center V4 integrity gate", "assert:data-center", [`--date=${date}`], 120000));
+      attempts.push(runNpm("rebuild collection telemetry", "build:collection-telemetry", [`--date=${date}`], 120000));
     }
   }
 

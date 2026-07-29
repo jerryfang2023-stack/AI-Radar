@@ -3,27 +3,12 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const args = new Map(
-  process.argv.slice(2).map((arg) => {
-    const [key, ...rest] = arg.replace(/^--/, "").split("=");
-    return [key, rest.join("=") || "true"];
-  })
-);
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const expectedDate = args.get("date") || "";
-const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
 const expectedSiteVersion = "SITE-V4.2.0-entity-history";
 const expectedDataCenterProductVersion = "SITE-V4.2.0-entity-history";
-const expectedLegacySiteVersion = "SITE-V3.4.5";
-const expectedBusinessSignalsColumnVersion = "BSIG-V2.2.0-pipeline-stage-ownership";
-const expectedEnterpriseAiLensVersion = "EAI-V1.2.0-raw-card-ingestion-boundary";
-const expectedLegacyIntelligenceMapColumnVersion = "IMAP-V2.0.0-report-center-opportunity-system";
 const expectedReportsCenterColumnVersion = "REPORTS-V1.1.0-lane-independent";
 const expectedOpportunityMapColumnVersion = "OMAP-V2.0.0-v4-evidence";
 const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.0-auto-published-research";
-const rolloverAcceptedVersions = new Map([
-  ["V3.3.6-business-title-hermes-handoff", new Set(["2026-06-16"])],
-]);
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
@@ -310,7 +295,6 @@ function latestContentDate() {
     path.join(root, "01-SiteV2", "content", "01-raw"),
     path.join(root, "01-SiteV2", "content", "02-pool"),
     path.join(root, "01-SiteV2", "content", "04-business-signals", "signals"),
-    path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"),
   ];
   const dates = [];
   const walk = (dir) => {
@@ -327,131 +311,6 @@ function latestContentDate() {
   };
   roots.forEach(walk);
   return dates.sort().at(-1) || "";
-}
-
-function collectGeneratedDataIssues() {
-  const issues = [];
-  const dataFile = path.join(root, "01-SiteV2/site/data/v3-data-observation-desk.json");
-  const text = read(dataFile);
-  if (!text) return [issue(dataFile, "missing_v3_site_data")];
-  try {
-    const data = JSON.parse(text);
-    if (!isAcceptedDataVersion(data?.meta?.version, data?.meta?.activeDate)) {
-      issues.push(issue(dataFile, "v3_data_version_mismatch", `${data?.meta?.version || "missing"}; expected ${expectedVersion}`));
-    }
-    if (data?.meta?.siteVersion !== expectedLegacySiteVersion) {
-      issues.push(issue(dataFile, "v3_data_site_version_mismatch", `${data?.meta?.siteVersion || "missing"}; expected ${expectedLegacySiteVersion}`));
-    }
-    if (data?.meta?.businessSignalsColumnVersion !== expectedBusinessSignalsColumnVersion) {
-      issues.push(issue(dataFile, "v3_data_business_signals_column_version_mismatch", `${data?.meta?.businessSignalsColumnVersion || "missing"}; expected ${expectedBusinessSignalsColumnVersion}`));
-    }
-    if (data?.meta?.enterpriseAiLensVersion !== expectedEnterpriseAiLensVersion) {
-      issues.push(issue(dataFile, "v3_data_enterprise_ai_lens_version_mismatch", `${data?.meta?.enterpriseAiLensVersion || "missing"}; expected ${expectedEnterpriseAiLensVersion}`));
-    }
-    if (data?.meta?.intelligenceMapColumnVersion !== expectedLegacyIntelligenceMapColumnVersion) {
-      issues.push(issue(dataFile, "v3_data_intelligence_map_column_version_mismatch", `${data?.meta?.intelligenceMapColumnVersion || "missing"}; expected ${expectedLegacyIntelligenceMapColumnVersion}`));
-    }
-    const activeDate = data?.meta?.activeDate || "";
-    if (expectedDate && activeDate !== expectedDate) {
-      issues.push(issue(dataFile, "v3_data_active_date_unexpected", `${activeDate || "missing"} != ${expectedDate}`));
-    }
-    const activeCards = (data?.frontstageCards || data?.cards || []).filter((item) => item.date === activeDate);
-    if (!activeCards.length) {
-      issues.push(issue(dataFile, "v3_active_date_has_no_cards", activeDate || "missing"));
-    }
-    const detailItems = [
-      ...(Array.isArray(data?.cards) ? data.cards : []),
-      ...(Array.isArray(data?.enterpriseAiFdePool) ? data.enterpriseAiFdePool : []),
-      ...(Array.isArray(data?.enterpriseAiLensCandidates) ? data.enterpriseAiLensCandidates : []),
-    ];
-    const detailById = new Map();
-    for (const item of detailItems) {
-      for (const key of [item.id, item.cardId, item.linkedCardId].filter(Boolean)) {
-        if (!detailById.has(key)) detailById.set(key, item);
-      }
-    }
-    const enterpriseItems = Array.isArray(data?.enterpriseAiTransformation) ? data.enterpriseAiTransformation : [];
-    const aiHardwareItems = Array.isArray(data?.aiHardwareSignals) ? data.aiHardwareSignals : [];
-    const hasHistoricalCards = (data?.cards || []).some((item) => item.date && item.date !== activeDate);
-    const hasHistoricalLensItems = [...enterpriseItems, ...aiHardwareItems]
-      .some((item) => item.date && item.date !== activeDate);
-    if (hasHistoricalCards && data?.meta?.lensHistoryMode !== "all_available_dates") {
-      issues.push(issue(dataFile, "business_lens_history_mode_missing", data?.meta?.lensHistoryMode || "missing"));
-    }
-    if (hasHistoricalCards && !hasHistoricalLensItems) {
-      issues.push(issue(dataFile, "business_lens_history_missing", "FDE and AI Hardware arrays contain active-date items only"));
-    }
-    for (const item of enterpriseItems) {
-      const detail = detailById.get(item.cardId);
-      if (!detail) {
-        issues.push(issue(dataFile, "enterprise_ai_fde_detail_missing", item.cardId || item.title || "missing"));
-        continue;
-      }
-      const evidenceText = enterpriseItemEvidenceText(item, detail);
-      if (!hasConcreteEnterpriseImplementationEvidence(evidenceText)) {
-        issues.push(issue(dataFile, "enterprise_ai_fde_lens_imprecise", `${item.title || item.cardId || "untitled"} lacks concrete implementation evidence`));
-      }
-      const analysis = item.implementationAnalysis || {};
-      if (!analysis.demand || !analysis.services || !analysis.result) {
-        issues.push(issue(dataFile, "enterprise_ai_fde_analysis_missing", item.cardId || item.title || "missing"));
-      }
-    }
-  } catch (error) {
-    issues.push(issue(dataFile, "v3_data_json_parse_failed", error.message));
-  }
-  return issues;
-}
-
-function isAcceptedDataVersion(version, activeDate) {
-  if (version === expectedVersion) return true;
-  return rolloverAcceptedVersions.get(version)?.has(activeDate) || false;
-}
-
-function enterpriseItemEvidenceText(item = {}, detail = {}) {
-  return [
-    item.title,
-    item.subject,
-    item.sourceName,
-    item.sourceUrl,
-    item.stage,
-    item.scenario,
-    item.workflow,
-    item.evidenceBoundary,
-    item.implementationAnalysis?.demand,
-    item.implementationAnalysis?.services,
-    item.implementationAnalysis?.result,
-    item.implementationAnalysis?.sourceBasis,
-    detail.title,
-    detail.displayTitle,
-    detail.originalTitle,
-    detail.translatedFact,
-    detail.visibleFragment,
-    detail.summary,
-    ...(detail.originalHighlights || []),
-    ...(detail.flatTags || []),
-  ].filter(Boolean).join(" ");
-}
-
-function hasConcreteEnterpriseImplementationEvidence(text = "") {
-  const source = String(text || "");
-  if (!source) return false;
-
-  const explicitFde = /\bFDE\b|forward deployed|customer-embedded|domain operator|regulated payer workflow/iu.test(source);
-  const productionDelivery = /production (?:deployment|rollout|environment|workflow|workload)|deploys?|deployed|deployment|rollout|go[- ]?live|at scale|scale[sd]? deployment|customer adoption|case study|customer story|implemented|implementation|pilot|poc|proof of concept|procurement|technical scoping|launched (?:a |an )?(?:conversational,?\s*)?AI-powered digital experience|部署|上线|落地|规模化|采用|试点|采购|合作协议|用例|工作流/iu.test(source);
-  const customerOrVertical = /customer|client|enterprise|bank|insurer|insurance|hospital|healthcare|payer|retail|store|manufactur|factory|financial|wealth management|financial crime|claims|underwriting|loan|contact center|support|sales|crm|procurement|supply chain|inventory|shelf|transaction|workflow|企业|客户|银行|金融|保险|医疗|零售|门店|制造|工厂|财富管理|金融犯罪|交易|库存|货架|客服|销售|采购|供应链|工作流/iu.test(source);
-  const businessMetric = /\b\d+(?:\.\d+)?\s?(?:%|percent|x|times|use cases?|transactions?|calls?|bookings?|stores?|employees?|customers?|million|billion|hours?|days?)\b|\d+(?:\.\d+)?\s*(?:个|项|笔|次|家|名|倍|%|亿美元|万美元|万|亿)|超\d+/iu.test(source);
-  const adoptionTag = /evidence-customer-adoption|evidence-customer-metric|evidence-partnership-integration/iu.test(source);
-
-  const researchOnly = /benchmark|evaluation|evals?|research|paper|dataset|alignment|reinforcement learning|HealthBench|AA-Briefcase|MLCR|Elo|leaderboard|model capability|model capabilities|open source benchmark|基准|评测|研究|论文|数据集|强化学习|排行榜/iu.test(source);
-  const consumerOnly = /iMessage|App Store|consumer app|AR character|interactive AR|game character|mobile game|social app|消费级|互动角色|移动应用/iu.test(source);
-  const platformOnly = /OAuth|authorization|memory layer|knowledge base|SDK|API|protocol|specification|release notes|developer tool|framework|library|runtime|benchmark/iu.test(source)
-    && !/(customer adoption|customer story|case study|deployed by|used by|implemented by|signed|partnership|procurement|pilot|poc|proof of concept|production deployment|at scale)/iu.test(source);
-  const broadGovernance = /world leaders|turn it off|G7|sovereign AI|national security/iu.test(source);
-
-  const weakPlaceholder = /原文未提供更多可拆分事实点|是否进入具体企业工作流|signal value is to observe|need to continue verifying/iu.test(source);
-  if (weakPlaceholder && !explicitFde && !(productionDelivery && customerOrVertical)) return false;
-  if (!explicitFde && ((researchOnly && !(productionDelivery && customerOrVertical)) || consumerOnly || platformOnly || broadGovernance)) return false;
-  return explicitFde || (productionDelivery && customerOrVertical) || (adoptionTag && productionDelivery && customerOrVertical && businessMetric);
 }
 
 function collectIndustryReportsDataIssues() {
@@ -531,6 +390,45 @@ function collectV4FrontstageDataIssues() {
   return issues;
 }
 
+function collectV4EntityRelationIssues() {
+  const issues = [];
+  const entityFile = path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/entities.json");
+  const relationshipFile = path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/relationships.json");
+  try {
+    const data = JSON.parse(read(entityFile));
+    if (data?.meta?.entityVersion !== "ENTITY-V1.0") {
+      issues.push(issue(entityFile, "entity_index_version_mismatch", data?.meta?.entityVersion || "missing"));
+    }
+    const entityCount = ["companies", "products", "people"].reduce(
+      (sum, key) => sum + (Array.isArray(data?.[key]) ? data[key].length : 0),
+      0,
+    );
+    if (!entityCount) issues.push(issue(entityFile, "entity_index_empty"));
+  } catch (error) {
+    issues.push(issue(entityFile, "entity_index_json_parse_failed", error.message));
+  }
+  try {
+    const data = JSON.parse(read(relationshipFile));
+    if (data?.meta?.relationshipVersion !== "RELATION-V2.1") {
+      issues.push(issue(relationshipFile, "relationship_index_version_mismatch", data?.meta?.relationshipVersion || "missing"));
+    }
+    for (const relation of data?.relationships || []) {
+      if (
+        !relation.relationship_id?.startsWith("REL2-")
+        || !relation.event_id?.startsWith("EV-")
+        || !relation.claim_refs?.length
+        || !relation.source_refs?.length
+      ) {
+        issues.push(issue(relationshipFile, "relationship_evidence_chain_invalid", relation.relationship_id || "missing"));
+        break;
+      }
+    }
+  } catch (error) {
+    issues.push(issue(relationshipFile, "relationship_index_json_parse_failed", error.message));
+  }
+  return issues;
+}
+
 function collectVersionMetaIssues() {
   const issues = [];
   const publicPages = [
@@ -586,18 +484,6 @@ function collectVersionMetaIssues() {
   const fundingInsightsFile = path.join(root, "01-SiteV2/site/funding-insights.html");
   const fundingInsightsToken = `name="wavesight-column-version" content="${expectedFundingInsightsColumnVersion}"`;
   if (!read(fundingInsightsFile).includes(fundingInsightsToken)) issues.push(issue(fundingInsightsFile, "funding_insights_column_version_meta_missing", fundingInsightsToken));
-  const graphIndexFile = path.join(root, "01-SiteV2/site/data/intelligence-graph-index.json");
-  try {
-    const graphIndex = JSON.parse(read(graphIndexFile));
-    if (graphIndex?.meta?.siteVersion !== expectedLegacySiteVersion) {
-      issues.push(issue(graphIndexFile, "intelligence_graph_site_version_mismatch", `${graphIndex?.meta?.siteVersion || "missing"}; expected ${expectedLegacySiteVersion}`));
-    }
-    if (graphIndex?.meta?.intelligenceMapColumnVersion !== expectedLegacyIntelligenceMapColumnVersion) {
-      issues.push(issue(graphIndexFile, "intelligence_graph_column_version_mismatch", `${graphIndex?.meta?.intelligenceMapColumnVersion || "missing"}; expected ${expectedLegacyIntelligenceMapColumnVersion}`));
-    }
-  } catch (error) {
-    issues.push(issue(graphIndexFile, "intelligence_graph_json_parse_failed", error.message));
-  }
   return issues;
 }
 
@@ -610,8 +496,6 @@ function writeReport(issues) {
     "",
     `- status: ${issues.length ? "failed" : "passed"}`,
     `- expected_public_site_version: ${expectedSiteVersion}`,
-    `- expected_legacy_data_version: ${expectedVersion}`,
-    `- rollover_accepted_versions: ${[...rolloverAcceptedVersions.keys()].join(", ") || "none"}`,
     `- latest_content_date: ${latestContentDate() || "unknown"}`,
     `- issue_count: ${issues.length}`,
     "",
@@ -630,8 +514,8 @@ const issues = [
   ...collectRetiredPatternIssues(),
   ...collectRetiredPageIssues(),
   ...collectUnifiedNavigationIssues(),
-  ...collectGeneratedDataIssues(),
   ...collectV4FrontstageDataIssues(),
+  ...collectV4EntityRelationIssues(),
   ...collectIndustryReportsDataIssues(),
   ...collectVersionMetaIssues(),
 ];

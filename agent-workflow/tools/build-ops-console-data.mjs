@@ -3,7 +3,7 @@ import path from "node:path";
 import { isHermesInboxRecordFilename } from "./hermes-inbox-utils.mjs";
 
 const root = process.cwd();
-const VERSION = "OPS-V1.2.3-content-factory-cleanout";
+const VERSION = "OPS-V2.0.0-v4-telemetry";
 
 const rel = (...parts) => path.join(...parts).replaceAll("\\", "/");
 const abs = (...parts) => path.join(root, ...parts);
@@ -276,9 +276,11 @@ function buildSyncStatus(supervision, pipeline) {
 
 const supervisionFile = "agent-workflow/reports/daily-supervision-report-latest.json";
 const pipelineFile = "01-SiteV2/site/data/pipeline-dashboard.json";
+const telemetryFile = "01-SiteV2/site/data/collection-telemetry-v1.json";
 const ledgerFile = "context/version-ledger.md";
 const supervision = readJson(supervisionFile, { lanes: [] });
 const pipeline = readJson(pipelineFile, {});
+const telemetry = readJson(telemetryFile, {});
 const inbox = parseIncidentInbox();
 const supervisionIssues = buildSupervisionIssues(supervision);
 const allIssues = [...supervisionIssues, ...inbox];
@@ -292,7 +294,7 @@ const data = {
     version: VERSION,
     generatedAt: new Date().toISOString(),
     date: dailyDate,
-    sources: [supervisionFile, pipelineFile, ledgerFile, "agent-workflow/inbox/production-incidents/*.md", "agent-workflow/inbox/hermes-to-codex/*.md"],
+    sources: [supervisionFile, pipelineFile, telemetryFile, ledgerFile, "agent-workflow/inbox/production-incidents/*.md", "agent-workflow/inbox/hermes-to-codex/*.md"],
   },
   navigation: [
     { id: "overview", label: "总览" },
@@ -326,16 +328,28 @@ const data = {
   },
   tasks: {
     lanes: (supervision.lanes || []).map(laneToTask),
+    stages: Array.isArray(telemetry.stages) ? telemetry.stages : [],
     latestProduction: {
       date: latestDay.date || latestDay.label || "",
-      raw: latestDay.raw || 0,
-      pool: latestDay.pool || 0,
-      cards: latestDay.cards || 0,
-      assets: latestDay.assets || {},
+      discovered: latestDay.discovered || telemetry.collection?.discovered || 0,
+      captured: latestDay.captured || telemetry.collection?.capture_succeeded || 0,
+      claims: latestDay.claims || telemetry.fact_build?.accepted_claims || 0,
+      events: latestDay.events || telemetry.fact_build?.canonical_events || 0,
+      entities: latestDay.entities || telemetry.fact_build?.entities || 0,
+      relationships: latestDay.relationships || telemetry.fact_build?.relationships || 0,
     },
     sync: buildSyncStatus(supervision, pipeline),
   },
   quality: {
+    telemetry: {
+      meta: telemetry.meta || {},
+      collection: telemetry.collection || {},
+      factBuild: telemetry.fact_build || {},
+      v4Gate: telemetry.v4_gate || {},
+      applicationProjection: telemetry.application_projection || {},
+      publication: telemetry.publication || {},
+      compatibility: telemetry.deprecated_compatibility || {},
+    },
     pipelineMeta: pipeline.meta || {},
     latest: latestDay,
     totals: pipeline.totals || {},

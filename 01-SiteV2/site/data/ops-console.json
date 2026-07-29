@@ -1,11 +1,12 @@
 {
   "meta": {
-    "version": "OPS-V1.2.3-content-factory-cleanout",
-    "generatedAt": "2026-07-26T15:29:38.219Z",
-    "date": "2026-07-26",
+    "version": "OPS-V2.0.0-v4-telemetry",
+    "generatedAt": "2026-07-29T07:50:04.432Z",
+    "date": "2026-07-28",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
+      "01-SiteV2/site/data/collection-telemetry-v1.json",
       "context/version-ledger.md",
       "agent-workflow/inbox/production-incidents/*.md",
       "agent-workflow/inbox/hermes-to-codex/*.md"
@@ -42,166 +43,463 @@
     }
   ],
   "daily": {
-    "date": "2026-07-26",
-    "status": "failed",
-    "statusText": "失败",
+    "date": "2026-07-28",
+    "status": "manual_required",
+    "statusText": "需人工处理",
     "issueSummary": {
-      "total": 60,
-      "daily": 8,
-      "open": 9,
-      "resolved": 51,
-      "urgent": 4
+      "total": 81,
+      "daily": 28,
+      "open": 28,
+      "resolved": 53,
+      "urgent": 0
     },
     "issues": [
       {
-        "id": "supervision-2026-07-26-community_intelligence-warning-0",
-        "date": "2026-07-26",
-        "title": "community scheduled task last result is 1, but same-date data and gate are healthy",
-        "status": "warning",
+        "id": "supervision-2026-07-28-skill_ops-problem-0",
+        "date": "2026-07-28",
+        "title": "guanlan-data-center-supervisor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "normal",
-        "laneId": "community_intelligence",
-        "lane": "Community Intelligence",
-        "category": "warning",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "",
-        "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-problem-0",
-        "date": "2026-07-26",
-        "title": "business-signal activeDate is 2026-07-25, expected 2026-07-26",
-        "status": "failed",
+        "id": "supervision-2026-07-28-skill_ops-problem-1",
+        "date": "2026-07-28",
+        "title": "guanlan-business-signals-monitor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "urgent",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "failed",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-problem-1",
-        "date": "2026-07-26",
-        "title": "public Card count is 0 for 2026-07-26",
-        "status": "failed",
+        "id": "supervision-2026-07-28-skill_ops-problem-2",
+        "date": "2026-07-28",
+        "title": "guanlan-source-ingestion: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "urgent",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "failed",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-problem-2",
-        "date": "2026-07-26",
-        "title": "no same-date signal Card files or frontstage Core Signal Cards",
-        "status": "failed",
+        "id": "supervision-2026-07-28-skill_ops-problem-3",
+        "date": "2026-07-28",
+        "title": "guanlan-enterprise-ai-fde-monitor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "urgent",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "failed",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-problem-3",
-        "date": "2026-07-26",
-        "title": "Business Signals workflow conclusion is failure",
-        "status": "failed",
+        "id": "supervision-2026-07-28-skill_ops-problem-4",
+        "date": "2026-07-28",
+        "title": "guanlan-event-normalizer: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "urgent",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "failed",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-warning-0",
-        "date": "2026-07-26",
-        "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-26-persistent-asset-manifest.json",
-        "status": "warning",
+        "id": "supervision-2026-07-28-skill_ops-problem-5",
+        "date": "2026-07-28",
+        "title": "guanlan-first-line-viewpoints-monitor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "normal",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "warning",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-warning-1",
-        "date": "2026-07-26",
-        "title": "missing quality gate report: agent-workflow/reports/2026-07-26-guanlan-monitor-quality-gate.md",
-        "status": "warning",
+        "id": "supervision-2026-07-28-skill_ops-problem-6",
+        "date": "2026-07-28",
+        "title": "guanlan-community-intelligence-monitor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "normal",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "warning",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-warning-2",
-        "date": "2026-07-26",
-        "title": "local Obsidian sync may be blocked by 44 dirty file(s)",
-        "status": "warning",
+        "id": "supervision-2026-07-28-skill_ops-problem-7",
+        "date": "2026-07-28",
+        "title": "guanlan-data-integrity-gate: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "normal",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "warning",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-8",
+        "date": "2026-07-28",
+        "title": "guanlan-daily-monitor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-9",
+        "date": "2026-07-28",
+        "title": "guanlan-fde-data-projection: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-10",
+        "date": "2026-07-28",
+        "title": "guanlan-ai-hardware-data-projection: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-11",
+        "date": "2026-07-28",
+        "title": "guanlan-monitor-quality-gate: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-12",
+        "date": "2026-07-28",
+        "title": "guanlan-daily-monitor-qc: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-13",
+        "date": "2026-07-28",
+        "title": "guanlan-taxonomy-governor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-14",
+        "date": "2026-07-28",
+        "title": "guanlan-raw-pool-card: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-15",
+        "date": "2026-07-28",
+        "title": "guanlan-trend-candidate-writer: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-16",
+        "date": "2026-07-28",
+        "title": "follow-builders: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-17",
+        "date": "2026-07-28",
+        "title": "guanlan-weekly-business-change-radar: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-18",
+        "date": "2026-07-28",
+        "title": "guanlan-funding-insight-generator: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-19",
+        "date": "2026-07-28",
+        "title": "guanlan-trend-radar-updater: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-20",
+        "date": "2026-07-28",
+        "title": "guanlan-weekly-report-page-generator: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-21",
+        "date": "2026-07-28",
+        "title": "guanlan-opportunity-radar-updater: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-22",
+        "date": "2026-07-28",
+        "title": "guanlan-monthly-business-structure-report: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-23",
+        "date": "2026-07-28",
+        "title": "guanlan-monthly-report-page-generator: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-24",
+        "date": "2026-07-28",
+        "title": "guanlan-typography-qc: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-25",
+        "date": "2026-07-28",
+        "title": "guanlan-skill-editor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-26",
+        "date": "2026-07-28",
+        "title": "guanlan-code-rule-auditor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-27",
+        "date": "2026-07-28",
+        "title": "Skill discovery summary is stale; run npm run build:skill-store-dashboard",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       }
     ]
   },
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 13,
-      "open": 9,
-      "resolved": 4,
+      "total": 34,
+      "open": 28,
+      "resolved": 6,
       "byLane": {
-        "community_intelligence": 3,
-        "business_signals": 9,
-        "follow_builders_skill": 1
+        "skill_ops": 29,
+        "community_intelligence": 2,
+        "follow_builders_skill": 1,
+        "business_signals": 2
       },
       "byCategory": {
-        "warning": 4,
-        "failed": 4,
+        "manual_required": 28,
         "recurring_automation_issue": 1,
+        "weekly_learning_loop": 1,
         "afternoon_skill_runner": 1,
         "no_run_or_stale_assets": 2,
         "community_intelligence": 1
       },
       "recurring": [
         {
-          "category": "warning",
-          "count": 4
-        },
-        {
-          "category": "failed",
-          "count": 4
+          "category": "manual_required",
+          "count": 28
         },
         {
           "category": "no_run_or_stale_assets",
@@ -210,471 +508,406 @@
       ],
       "latest": [
         {
-          "id": "2026-07-26-community-intelligence-recurring-73a400f41c5af405",
-          "date": "2026-07-26",
-          "title": "Recurring warning: community_intelligence",
-          "status": "open",
+          "id": "supervision-2026-07-28-skill_ops-problem-0",
+          "date": "2026-07-28",
+          "title": "guanlan-data-center-supervisor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-07-26T08:45:31.857Z",
-          "updatedAt": "",
-          "resolvedAt": "",
-          "resolver": "",
-          "fixCommit": "",
-          "validation": "",
-          "prevention": "",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-26-community-intelligence-recurring-73a400f41c5af405.md"
-        },
-        {
-          "id": "supervision-2026-07-26-community_intelligence-warning-0",
-          "date": "2026-07-26",
-          "title": "community scheduled task last result is 1, but same-date data and gate are healthy",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "warning",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
-          "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-problem-0",
-          "date": "2026-07-26",
-          "title": "business-signal activeDate is 2026-07-25, expected 2026-07-26",
-          "status": "failed",
+          "id": "supervision-2026-07-28-skill_ops-problem-1",
+          "date": "2026-07-28",
+          "title": "guanlan-business-signals-monitor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "failed",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-problem-1",
-          "date": "2026-07-26",
-          "title": "public Card count is 0 for 2026-07-26",
-          "status": "failed",
+          "id": "supervision-2026-07-28-skill_ops-problem-2",
+          "date": "2026-07-28",
+          "title": "guanlan-source-ingestion: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "failed",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-problem-2",
-          "date": "2026-07-26",
-          "title": "no same-date signal Card files or frontstage Core Signal Cards",
-          "status": "failed",
+          "id": "supervision-2026-07-28-skill_ops-problem-3",
+          "date": "2026-07-28",
+          "title": "guanlan-enterprise-ai-fde-monitor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "failed",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-problem-3",
-          "date": "2026-07-26",
-          "title": "Business Signals workflow conclusion is failure",
-          "status": "failed",
+          "id": "supervision-2026-07-28-skill_ops-problem-4",
+          "date": "2026-07-28",
+          "title": "guanlan-event-normalizer: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "failed",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-warning-0",
-          "date": "2026-07-26",
-          "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-26-persistent-asset-manifest.json",
-          "status": "warning",
+          "id": "supervision-2026-07-28-skill_ops-problem-5",
+          "date": "2026-07-28",
+          "title": "guanlan-first-line-viewpoints-monitor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "warning",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-warning-1",
-          "date": "2026-07-26",
-          "title": "missing quality gate report: agent-workflow/reports/2026-07-26-guanlan-monitor-quality-gate.md",
-          "status": "warning",
+          "id": "supervision-2026-07-28-skill_ops-problem-6",
+          "date": "2026-07-28",
+          "title": "guanlan-community-intelligence-monitor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "warning",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-warning-2",
-          "date": "2026-07-26",
-          "title": "local Obsidian sync may be blocked by 44 dirty file(s)",
-          "status": "warning",
+          "id": "supervision-2026-07-28-skill_ops-problem-7",
+          "date": "2026-07-28",
+          "title": "guanlan-data-integrity-gate: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "warning",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "2026-07-25-business_signals-no-run-or-stale-assets",
-          "date": "2026-07-25",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "manual_archive",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "no_run_or_stale_assets",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-07-25-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
-          "createdAt": "2026-07-25T10:03:54+08:00",
-          "updatedAt": "2026-07-25T10:44:38+08:00",
-          "resolvedAt": "2026-07-25T10:44:38+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "HERMES-V4.0 control-plane-only migration",
-          "prevention": "context",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-25-business_signals-no-run-or-stale-assets.md"
+          "id": "supervision-2026-07-28-skill_ops-problem-8",
+          "date": "2026-07-28",
+          "title": "guanlan-daily-monitor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
+          "state": "open",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "2026-07-25-community_intelligence-community-intelligence",
-          "date": "2026-07-25",
-          "title": "Hermes Repair Request: Community Intelligence",
-          "status": "manual_archive",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "community_intelligence",
-          "failedGate": "agent-workflow/reports/2026-07-25-community-intelligence-gate.md",
-          "reportPath": "agent-workflow/reports/2026-07-25-daily-supervision-report.md",
-          "dataGenerated": "yes",
-          "neededAction": "inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-community-intelligence-pr.yml` only after local collection and archive pass",
-          "createdAt": "2026-07-25T10:03:54+08:00",
-          "updatedAt": "2026-07-25T10:44:38+08:00",
-          "resolvedAt": "2026-07-25T10:44:38+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "HERMES-V4.0 control-plane-only migration",
-          "prevention": "context",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-25-community_intelligence-community-intelligence.md"
+          "id": "supervision-2026-07-28-skill_ops-problem-9",
+          "date": "2026-07-28",
+          "title": "guanlan-fde-data-projection: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
+          "state": "open",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "2026-07-24-business_signals-no-run-or-stale-assets",
-          "date": "2026-07-24",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "no_run_or_stale_assets",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-07-24-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
-          "createdAt": "2026-07-24T16:54:08+08:00",
-          "updatedAt": "2026-07-24T21:22:21+08:00",
-          "resolvedAt": "2026-07-24T21:22:21+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "38-card editorial, unified frontstage, and pre-commit gates passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-24-business_signals-no-run-or-stale-assets.md"
+          "id": "supervision-2026-07-28-skill_ops-problem-10",
+          "date": "2026-07-28",
+          "title": "guanlan-ai-hardware-data-projection: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
+          "state": "open",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
+        },
+        {
+          "id": "supervision-2026-07-28-skill_ops-problem-11",
+          "date": "2026-07-28",
+          "title": "guanlan-monitor-quality-gate: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
+          "state": "open",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         }
       ]
     },
     "monthly": {
       "windowDays": 30,
-      "total": 27,
-      "open": 9,
-      "resolved": 18,
+      "total": 41,
+      "open": 28,
+      "resolved": 13,
       "byLane": {
-        "community_intelligence": 5,
-        "business_signals": 15,
-        "skill_ops": 3,
-        "follow_builders_skill": 3,
-        "first_line_viewpoints": 1
+        "skill_ops": 31,
+        "community_intelligence": 2,
+        "business_signals": 5,
+        "first_line_viewpoints": 1,
+        "follow_builders_skill": 2
       },
       "byCategory": {
-        "warning": 4,
-        "failed": 4,
+        "manual_required": 28,
         "recurring_automation_issue": 1,
-        "business_signals_top10_missing": 1,
-        "monitor_or_gate_failure": 5,
-        "no_run_or_stale_assets": 5,
-        "community_intelligence": 2,
+        "weekly_learning_loop": 1,
+        "no_run_or_stale_assets": 3,
         "core_supply_shortfall": 1,
         "daily_problem_watchdog": 1,
         "skill_ops": 1,
+        "monitor_or_gate_failure": 2,
         "first_line_viewpoints": 1,
-        "afternoon_skill_runner": 1
+        "afternoon_skill_runner": 1,
+        "community_intelligence": 1
       },
       "recurring": [
         {
-          "category": "monitor_or_gate_failure",
-          "count": 5
+          "category": "manual_required",
+          "count": 28
         },
         {
           "category": "no_run_or_stale_assets",
-          "count": 5
+          "count": 3
         },
         {
-          "category": "warning",
-          "count": 4
-        },
-        {
-          "category": "failed",
-          "count": 4
-        },
-        {
-          "category": "community_intelligence",
+          "category": "monitor_or_gate_failure",
           "count": 2
         }
       ],
       "latest": [
         {
-          "id": "2026-07-26-community-intelligence-recurring-73a400f41c5af405",
-          "date": "2026-07-26",
-          "title": "Recurring warning: community_intelligence",
-          "status": "open",
+          "id": "supervision-2026-07-28-skill_ops-problem-0",
+          "date": "2026-07-28",
+          "title": "guanlan-data-center-supervisor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "recurring_automation_issue",
-          "failedGate": "repeated daily supervision signal",
-          "reportPath": "agent-workflow/reports/2026-07-26-daily-supervision-report.json",
-          "dataGenerated": "inspect linked daily reports",
-          "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
-          "createdAt": "2026-07-26T08:45:31.857Z",
-          "updatedAt": "",
-          "resolvedAt": "",
-          "resolver": "",
-          "fixCommit": "",
-          "validation": "",
-          "prevention": "",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-26-community-intelligence-recurring-73a400f41c5af405.md"
-        },
-        {
-          "id": "supervision-2026-07-26-community_intelligence-warning-0",
-          "date": "2026-07-26",
-          "title": "community scheduled task last result is 1, but same-date data and gate are healthy",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "warning",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "",
-          "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-problem-0",
-          "date": "2026-07-26",
-          "title": "business-signal activeDate is 2026-07-25, expected 2026-07-26",
-          "status": "failed",
+          "id": "supervision-2026-07-28-skill_ops-problem-1",
+          "date": "2026-07-28",
+          "title": "guanlan-business-signals-monitor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "failed",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-problem-1",
-          "date": "2026-07-26",
-          "title": "public Card count is 0 for 2026-07-26",
-          "status": "failed",
+          "id": "supervision-2026-07-28-skill_ops-problem-2",
+          "date": "2026-07-28",
+          "title": "guanlan-source-ingestion: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "failed",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-problem-2",
-          "date": "2026-07-26",
-          "title": "no same-date signal Card files or frontstage Core Signal Cards",
-          "status": "failed",
+          "id": "supervision-2026-07-28-skill_ops-problem-3",
+          "date": "2026-07-28",
+          "title": "guanlan-enterprise-ai-fde-monitor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "failed",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-problem-3",
-          "date": "2026-07-26",
-          "title": "Business Signals workflow conclusion is failure",
-          "status": "failed",
+          "id": "supervision-2026-07-28-skill_ops-problem-4",
+          "date": "2026-07-28",
+          "title": "guanlan-event-normalizer: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "failed",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-warning-0",
-          "date": "2026-07-26",
-          "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-26-persistent-asset-manifest.json",
-          "status": "warning",
+          "id": "supervision-2026-07-28-skill_ops-problem-5",
+          "date": "2026-07-28",
+          "title": "guanlan-first-line-viewpoints-monitor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "warning",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-warning-1",
-          "date": "2026-07-26",
-          "title": "missing quality gate report: agent-workflow/reports/2026-07-26-guanlan-monitor-quality-gate.md",
-          "status": "warning",
+          "id": "supervision-2026-07-28-skill_ops-problem-6",
+          "date": "2026-07-28",
+          "title": "guanlan-community-intelligence-monitor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "warning",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "supervision-2026-07-26-business_signals-warning-2",
-          "date": "2026-07-26",
-          "title": "local Obsidian sync may be blocked by 44 dirty file(s)",
-          "status": "warning",
+          "id": "supervision-2026-07-28-skill_ops-problem-7",
+          "date": "2026-07-28",
+          "title": "guanlan-data-integrity-gate: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
           "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals compatibility / Operations",
-          "category": "warning",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
           "source": "daily-supervision",
           "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-          "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "2026-07-25-business_signals-no-run-or-stale-assets",
-          "date": "2026-07-25",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "manual_archive",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "no_run_or_stale_assets",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-07-25-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
-          "createdAt": "2026-07-25T10:03:54+08:00",
-          "updatedAt": "2026-07-25T10:44:38+08:00",
-          "resolvedAt": "2026-07-25T10:44:38+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "HERMES-V4.0 control-plane-only migration",
-          "prevention": "context",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-25-business_signals-no-run-or-stale-assets.md"
+          "id": "supervision-2026-07-28-skill_ops-problem-8",
+          "date": "2026-07-28",
+          "title": "guanlan-daily-monitor: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
+          "state": "open",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "2026-07-25-community_intelligence-community-intelligence",
-          "date": "2026-07-25",
-          "title": "Hermes Repair Request: Community Intelligence",
-          "status": "manual_archive",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "community_intelligence",
-          "failedGate": "agent-workflow/reports/2026-07-25-community-intelligence-gate.md",
-          "reportPath": "agent-workflow/reports/2026-07-25-daily-supervision-report.md",
-          "dataGenerated": "yes",
-          "neededAction": "inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-community-intelligence-pr.yml` only after local collection and archive pass",
-          "createdAt": "2026-07-25T10:03:54+08:00",
-          "updatedAt": "2026-07-25T10:44:38+08:00",
-          "resolvedAt": "2026-07-25T10:44:38+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "HERMES-V4.0 control-plane-only migration",
-          "prevention": "context",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-25-community_intelligence-community-intelligence.md"
+          "id": "supervision-2026-07-28-skill_ops-problem-9",
+          "date": "2026-07-28",
+          "title": "guanlan-fde-data-projection: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
+          "state": "open",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         },
         {
-          "id": "2026-07-24-business_signals-no-run-or-stale-assets",
-          "date": "2026-07-24",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "no_run_or_stale_assets",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-07-24-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
-          "createdAt": "2026-07-24T16:54:08+08:00",
-          "updatedAt": "2026-07-24T21:22:21+08:00",
-          "resolvedAt": "2026-07-24T21:22:21+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "38-card editorial, unified frontstage, and pre-commit gates passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-24-business_signals-no-run-or-stale-assets.md"
+          "id": "supervision-2026-07-28-skill_ops-problem-10",
+          "date": "2026-07-28",
+          "title": "guanlan-ai-hardware-data-projection: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
+          "state": "open",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
+        },
+        {
+          "id": "supervision-2026-07-28-skill_ops-problem-11",
+          "date": "2026-07-28",
+          "title": "guanlan-monitor-quality-gate: repo Skill runtime sync state is project-only",
+          "status": "manual_required",
+          "state": "open",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "evidence": "daily supervision preflight"
         }
       ]
     }
@@ -682,131 +915,455 @@
   "inbox": {
     "open": [
       {
-        "id": "supervision-2026-07-26-community_intelligence-warning-0",
-        "date": "2026-07-26",
-        "title": "community scheduled task last result is 1, but same-date data and gate are healthy",
-        "status": "warning",
+        "id": "supervision-2026-07-28-skill_ops-problem-0",
+        "date": "2026-07-28",
+        "title": "guanlan-data-center-supervisor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "normal",
-        "laneId": "community_intelligence",
-        "lane": "Community Intelligence",
-        "category": "warning",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "",
-        "evidence": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-problem-0",
-        "date": "2026-07-26",
-        "title": "business-signal activeDate is 2026-07-25, expected 2026-07-26",
-        "status": "failed",
+        "id": "supervision-2026-07-28-skill_ops-problem-1",
+        "date": "2026-07-28",
+        "title": "guanlan-business-signals-monitor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "urgent",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "failed",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-problem-1",
-        "date": "2026-07-26",
-        "title": "public Card count is 0 for 2026-07-26",
-        "status": "failed",
+        "id": "supervision-2026-07-28-skill_ops-problem-2",
+        "date": "2026-07-28",
+        "title": "guanlan-source-ingestion: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "urgent",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "failed",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-problem-2",
-        "date": "2026-07-26",
-        "title": "no same-date signal Card files or frontstage Core Signal Cards",
-        "status": "failed",
+        "id": "supervision-2026-07-28-skill_ops-problem-3",
+        "date": "2026-07-28",
+        "title": "guanlan-enterprise-ai-fde-monitor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "urgent",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "failed",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-problem-3",
-        "date": "2026-07-26",
-        "title": "Business Signals workflow conclusion is failure",
-        "status": "failed",
+        "id": "supervision-2026-07-28-skill_ops-problem-4",
+        "date": "2026-07-28",
+        "title": "guanlan-event-normalizer: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "urgent",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "failed",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-warning-0",
-        "date": "2026-07-26",
-        "title": "missing same-date persistent asset manifest: agent-workflow/reports/2026-07-26-persistent-asset-manifest.json",
-        "status": "warning",
+        "id": "supervision-2026-07-28-skill_ops-problem-5",
+        "date": "2026-07-28",
+        "title": "guanlan-first-line-viewpoints-monitor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "normal",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "warning",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-warning-1",
-        "date": "2026-07-26",
-        "title": "missing quality gate report: agent-workflow/reports/2026-07-26-guanlan-monitor-quality-gate.md",
-        "status": "warning",
+        "id": "supervision-2026-07-28-skill_ops-problem-6",
+        "date": "2026-07-28",
+        "title": "guanlan-community-intelligence-monitor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "normal",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "warning",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-07-26-business_signals-warning-2",
-        "date": "2026-07-26",
-        "title": "local Obsidian sync may be blocked by 44 dirty file(s)",
-        "status": "warning",
+        "id": "supervision-2026-07-28-skill_ops-problem-7",
+        "date": "2026-07-28",
+        "title": "guanlan-data-integrity-gate: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
         "state": "open",
-        "priority": "normal",
-        "laneId": "business_signals",
-        "lane": "Business Signals compatibility / Operations",
-        "category": "warning",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "send Codex a business_signals repair request with failed gate and report path",
-        "evidence": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-8",
+        "date": "2026-07-28",
+        "title": "guanlan-daily-monitor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-9",
+        "date": "2026-07-28",
+        "title": "guanlan-fde-data-projection: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-10",
+        "date": "2026-07-28",
+        "title": "guanlan-ai-hardware-data-projection: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-11",
+        "date": "2026-07-28",
+        "title": "guanlan-monitor-quality-gate: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-12",
+        "date": "2026-07-28",
+        "title": "guanlan-daily-monitor-qc: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-13",
+        "date": "2026-07-28",
+        "title": "guanlan-taxonomy-governor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-14",
+        "date": "2026-07-28",
+        "title": "guanlan-raw-pool-card: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-15",
+        "date": "2026-07-28",
+        "title": "guanlan-trend-candidate-writer: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-16",
+        "date": "2026-07-28",
+        "title": "follow-builders: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-17",
+        "date": "2026-07-28",
+        "title": "guanlan-weekly-business-change-radar: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-18",
+        "date": "2026-07-28",
+        "title": "guanlan-funding-insight-generator: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-19",
+        "date": "2026-07-28",
+        "title": "guanlan-trend-radar-updater: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-20",
+        "date": "2026-07-28",
+        "title": "guanlan-weekly-report-page-generator: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-21",
+        "date": "2026-07-28",
+        "title": "guanlan-opportunity-radar-updater: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-22",
+        "date": "2026-07-28",
+        "title": "guanlan-monthly-business-structure-report: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-23",
+        "date": "2026-07-28",
+        "title": "guanlan-monthly-report-page-generator: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-24",
+        "date": "2026-07-28",
+        "title": "guanlan-typography-qc: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-25",
+        "date": "2026-07-28",
+        "title": "guanlan-skill-editor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-26",
+        "date": "2026-07-28",
+        "title": "guanlan-code-rule-auditor: repo Skill runtime sync state is project-only",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      },
+      {
+        "id": "supervision-2026-07-28-skill_ops-problem-27",
+        "date": "2026-07-28",
+        "title": "Skill discovery summary is stale; run npm run build:skill-store-dashboard",
+        "status": "manual_required",
+        "state": "open",
+        "priority": "high",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
+        "category": "manual_required",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+        "evidence": "daily supervision preflight"
+      }
+    ],
+    "resolved": [
+      {
+        "id": "2026-07-26-skill_ops-weekly-learning-loop",
+        "date": "2026-07-26",
+        "title": "Weekly Learning Loop - 2026-07-26",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "medium",
+        "laneId": "skill_ops",
+        "category": "weekly_learning_loop",
+        "failedGate": "weekly_learning_loop",
+        "reportPath": "agent-workflow/reports/2026-07-26-weekly-health.md",
+        "dataGenerated": "not_applicable",
+        "neededAction": "add or tighten gate / eval / MEMORY prevention",
+        "createdAt": "2026-07-26T11:16:52.426Z",
+        "updatedAt": "2026-07-27T14:13:06+08:00",
+        "resolvedAt": "2026-07-27T14:13:06+08:00",
+        "resolver": "codex",
+        "fixCommit": "f3ea9554c",
+        "validation": "node --test agent-workflow/tools/tests/daily-supervision-follow-builders.test.mjs agent-workflow/tools/tests/recurring-production-incidents.test.mjs",
+        "prevention": "eval",
+        "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-26-skill_ops-weekly-learning-loop.md"
       },
       {
         "id": "2026-07-26-community-intelligence-recurring-73a400f41c5af405",
         "date": "2026-07-26",
         "title": "Recurring warning: community_intelligence",
-        "status": "open",
-        "state": "open",
+        "status": "resolved",
+        "state": "resolved",
         "priority": "normal",
         "laneId": "community_intelligence",
         "category": "recurring_automation_issue",
@@ -815,16 +1372,14 @@
         "dataGenerated": "inspect linked daily reports",
         "neededAction": "repair the owning script, gate, eval, memory, or data build path; do not close by editing same-day data only",
         "createdAt": "2026-07-26T08:45:31.857Z",
-        "updatedAt": "",
-        "resolvedAt": "",
-        "resolver": "",
-        "fixCommit": "",
-        "validation": "",
-        "prevention": "",
+        "updatedAt": "2026-07-27T11:35:25+08:00",
+        "resolvedAt": "2026-07-27T11:35:25+08:00",
+        "resolver": "codex",
+        "fixCommit": "f3ea9554c",
+        "validation": "node --test agent-workflow/tools/tests/daily-supervision-follow-builders.test.mjs && npm run supervise:daily -- --date=2026-07-27",
+        "prevention": "gate",
         "sourceFile": "agent-workflow/inbox/production-incidents/2026-07-26-community-intelligence-recurring-73a400f41c5af405.md"
-      }
-    ],
-    "resolved": [
+      },
       {
         "id": "2026-07-25-business_signals-no-run-or-stale-assets",
         "date": "2026-07-25",
@@ -1440,50 +1995,6 @@
         "validation": "node agent-workflow/tools/assert-daily-production-chain.mjs --date=2026-06-21 --stage=pre-commit --raw-min=150 --pool-min=75 --block-stale=true",
         "prevention": "gate",
         "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-21-business_signals-monitor-or-gate-failure.md"
-      },
-      {
-        "id": "2026-06-21-community_intelligence-monitor-or-gate-failure",
-        "date": "2026-06-21",
-        "title": "Hermes Repair Request: Community Intelligence",
-        "status": "resolved",
-        "state": "resolved",
-        "priority": "normal",
-        "laneId": "community_intelligence",
-        "category": "monitor_or_gate_failure",
-        "failedGate": "missing",
-        "reportPath": "agent-workflow/reports/2026-06-21-daily-supervision-report.md",
-        "dataGenerated": "no_or_stale",
-        "neededAction": "rerun gate",
-        "createdAt": "2026-06-21T12:57:36+08:00",
-        "updatedAt": "2026-06-21T13:18:37+08:00",
-        "resolvedAt": "2026-06-21T13:18:37+08:00",
-        "resolver": "codex",
-        "fixCommit": "pending",
-        "validation": "npm run assert:community-intelligence -- --date=2026-06-21",
-        "prevention": "gate",
-        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-21-community_intelligence-monitor-or-gate-failure.md"
-      },
-      {
-        "id": "2026-06-20-community_intelligence-monitor-or-gate-failure",
-        "date": "2026-06-20",
-        "title": "Hermes Repair Request: Community Intelligence",
-        "status": "resolved",
-        "state": "resolved",
-        "priority": "normal",
-        "laneId": "community_intelligence",
-        "category": "monitor_or_gate_failure",
-        "failedGate": "agent-workflow/reports/2026-06-20-community-intelligence-gate.md",
-        "reportPath": "agent-workflow/reports/2026-06-20-daily-supervision-report.md",
-        "dataGenerated": "yes",
-        "neededAction": "send Codex a community_intelligence repair request with log and gate report path",
-        "createdAt": "2026-06-20T16:23:13+08:00",
-        "updatedAt": "2026-06-20T16:29:46+08:00",
-        "resolvedAt": "2026-06-20T16:29:46+08:00",
-        "resolver": "codex",
-        "fixCommit": "pending",
-        "validation": "run-community-intelligence + assert-community-intelligence-data passed",
-        "prevention": "gate",
-        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-20-community_intelligence-monitor-or-gate-failure.md"
       }
     ]
   },
@@ -1493,44 +2004,49 @@
         "id": "skill_ops",
         "label": "Skill Ops Governance",
         "schedule": "daily supervision preflight",
-        "status": "passed",
-        "statusText": "已通过",
-        "problemCount": 0,
+        "status": "manual_required",
+        "statusText": "需人工处理",
+        "problemCount": 28,
         "warningCount": 0,
-        "actions": [],
+        "actions": [
+          "repair the owning Guanlan skill metadata, evals, examples, registry, repo runtime, discovery config, or compatibility mirror",
+          "run `npm run repair:skills` after confirming the project copy is the source of truth"
+        ],
         "evidence": []
       },
       {
         "id": "community_intelligence",
         "label": "Community Intelligence",
         "schedule": "08:30 local logged-in collection and publish handoff; 09:15 local-data validation; 09:50 publication check; 16:45 final closure",
-        "status": "warning",
-        "statusText": "warning",
+        "status": "passed",
+        "statusText": "已通过",
         "problemCount": 0,
-        "warningCount": 1,
+        "warningCount": 0,
         "actions": [],
         "evidence": [
           {
             "label": "Items",
-            "value": 65
+            "value": 96
           }
         ]
       },
       {
         "id": "business_signals",
-        "label": "Business Signals compatibility / Operations",
+        "label": "Data Center V4 / Business Signals Operations",
         "schedule": "08:10 local conditional production; 09:15 targeted recovery; 09:50 consolidated closure; 10:30 cloud safety fallback",
-        "status": "failed",
-        "statusText": "失败",
-        "problemCount": 4,
-        "warningCount": 3,
-        "actions": [
-          "send Codex a business_signals repair request with failed gate and report path"
-        ],
+        "status": "passed",
+        "statusText": "已通过",
+        "problemCount": 0,
+        "warningCount": 0,
+        "actions": [],
         "evidence": [
           {
+            "label": "Pool",
+            "value": 35
+          },
+          {
             "label": "Cards",
-            "value": 0
+            "value": 35
           }
         ]
       },
@@ -1546,7 +2062,7 @@
         "evidence": [
           {
             "label": "Items",
-            "value": 62
+            "value": 35
           }
         ]
       },
@@ -1554,839 +2070,335 @@
         "id": "follow_builders_skill",
         "label": "First-Line Viewpoints Skill",
         "schedule": "16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45",
-        "status": "passed",
-        "statusText": "已通过",
+        "status": "waiting",
+        "statusText": "等待中",
         "problemCount": 0,
         "warningCount": 0,
         "actions": [],
         "evidence": [
           {
             "label": "Items",
-            "value": 35
+            "value": 0
           }
         ]
       }
     ],
-    "latestProduction": {
-      "date": "2026-07-25",
-      "raw": 163,
-      "pool": 150,
-      "cards": 28,
-      "assets": {
-        "case": 7,
-        "funding": 4,
-        "product-service": 16,
-        "opinion": 1
+    "stages": [
+      {
+        "id": "collection",
+        "label": "采集",
+        "status": "passed",
+        "counts": {
+          "discovered": 290,
+          "capture_succeeded": 159,
+          "capture_failed": 0,
+          "raw_documents": 159
+        },
+        "evidence": [
+          "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\01-SiteV2\\content\\11-databases\\data-center-v4\\2026-07-29\\manifest.json",
+          "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\agent-workflow\\reports\\2026-07-29-guanlan-daily-monitor-log.md"
+        ]
+      },
+      {
+        "id": "fact_build",
+        "label": "事实构建",
+        "status": "passed",
+        "counts": {
+          "accepted_claims": 159,
+          "rejected_claims": 0,
+          "accepted": 159,
+          "rejected": 0,
+          "pending_claims": 0,
+          "canonical_events": 43,
+          "entities": 70,
+          "relationships": 159,
+          "conflicts": 0,
+          "qa_queue": 111
+        },
+        "evidence": [
+          "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\01-SiteV2\\content\\11-databases\\data-center-v4\\2026-07-29\\manifest.json",
+          "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\agent-workflow\\reports\\2026-07-29-data-center-v4-integrity-gate.json"
+        ]
+      },
+      {
+        "id": "application_projection",
+        "label": "应用投影",
+        "status": "passed",
+        "counts": {
+          "opportunity_map": "passed",
+          "trend_radar": "passed",
+          "funding_insights": "passed",
+          "fde_hardware_sync": "passed"
+        },
+        "evidence": [
+          "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\agent-workflow\\reports\\2026-07-29-persistent-asset-manifest.json"
+        ]
+      },
+      {
+        "id": "publication",
+        "label": "发布",
+        "status": "waiting",
+        "counts": {
+          "v4_bundle_ready": true
+        },
+        "evidence": [
+          "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\agent-workflow\\reports\\2026-07-29-persistent-asset-manifest.json"
+        ]
       }
+    ],
+    "latestProduction": {
+      "date": "2026-07-29",
+      "discovered": 159,
+      "captured": 159,
+      "claims": 159,
+      "events": 43,
+      "entities": 70,
+      "relationships": 159
     },
     "sync": [
       {
         "label": "GitHub Pages",
         "status": "passed",
-        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30194231608"
+        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/30335008937"
       },
       {
         "label": "Business Signals PR",
-        "status": "waiting",
-        "detail": "当前监督报告显示未合并或等待中"
+        "status": "passed",
+        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/pull/441"
       },
       {
         "label": "本地 Obsidian 同步",
-        "status": "manual_required",
-        "detail": "44 个本地变更阻塞自动判断"
+        "status": "passed",
+        "detail": "工作区干净"
       },
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-07-25T07:22:53.809Z"
+        "detail": "2026-07-29T07:50:04.354Z"
       },
       {
         "label": "Daily Supervision",
-        "status": "failed",
-        "detail": "2026-07-26T08:45:31.578Z"
+        "status": "manual_required",
+        "detail": "2026-07-28T06:37:58.075Z"
       }
     ]
   },
   "quality": {
-    "pipelineMeta": {
-      "generatedAt": "2026-07-25T07:22:53.809Z",
-      "dateRange": {
-        "start": "2025-10-13",
-        "end": "2026-07-25"
+    "telemetry": {
+      "meta": {
+        "version": "COLLECTION-TELEMETRY-V1.0",
+        "ops_version": "OPS-V2.0.0-v4-telemetry",
+        "data_date": "2026-07-29",
+        "generated_at": "2026-07-29T07:50:04.253Z",
+        "scope": "OPS",
+        "canonical_writeback": false,
+        "source_of_truth": "Data Center V4 manifest and integrity gate"
       },
-      "source": "01-SiteV2/content + 01-SiteV2/knowledge"
-    },
-    "latest": {
-      "date": "2026-07-25",
-      "label": "2026.07.25",
-      "shortLabel": "07.25",
-      "raw": 163,
-      "pool": 150,
-      "assets": {
-        "case": 7,
-        "funding": 4,
-        "product-service": 16,
-        "opinion": 1
+      "collection": {
+        "discovered": 290,
+        "capture_succeeded": 159,
+        "capture_failed": 0,
+        "raw_documents": 159
       },
-      "cards": 28,
-      "rawChannels": {
-        "aihot": 98,
-        "keyword_search": 35,
-        "follow_builders": 0
-      },
-      "poolRoutes": {
-        "core_pool": 55,
-        "emerging_pool": 17,
-        "index_only": 39,
-        "watchlist": 56
-      },
-      "evidenceLevels": {
-        "core_evidence_candidate": 100,
-        "user_feedback_signal": 12,
-        "supporting_evidence": 12,
-        "weak_signal": 3,
-        "discovery_only": 23
-      },
-      "sourceLevels": {
-        "A": 38,
-        "S": 10,
-        "B": 101,
-        "C": 1
-      },
-      "sourceTypes": {
-        "news": 15,
-        "product": 2,
-        "web": 96,
-        "media": 23,
-        "official": 3,
-        "developer": 6,
-        "analysis": 1,
-        "operators": 1,
-        "builder": 2,
-        "newsletter": 1
-      },
-      "assetStatus": {
-        "case": {
-          "published": 7
-        },
-        "funding": {
-          "published": 4
-        },
-        "product-service": {
-          "published": 16
+      "factBuild": {
+        "accepted_claims": 159,
+        "rejected_claims": 0,
+        "accepted": 159,
+        "rejected": 0,
+        "pending_claims": 0,
+        "canonical_events": 43,
+        "entities": 70,
+        "relationships": 159,
+        "conflicts": 0,
+        "qa_queue": 111,
+        "qa_by_status": {
+          "review_optional": 86,
+          "open": 25
         }
       },
-      "assetLevels": {
-        "case": {
-          "frontstage": 7
-        },
-        "funding": {
-          "frontstage": 4
-        },
-        "product-service": {
-          "frontstage": 16
-        }
+      "v4Gate": {
+        "status": "passed",
+        "manifest_date": "2026-07-29",
+        "gate_date": "2026-07-29",
+        "failures": [],
+        "warnings": []
       },
-      "assetEvidenceGates": {
-        "case": {
-          "core_evidence_passed": 7
-        },
-        "funding": {
-          "core_evidence_passed": 4
-        },
-        "product-service": {
-          "core_evidence_passed": 16
-        }
+      "applicationProjection": {
+        "opportunity_map": "passed",
+        "trend_radar": "passed",
+        "funding_insights": "passed",
+        "fde_hardware_sync": "passed"
       },
-      "assetCopyGates": {}
-    },
-    "totals": {
-      "raw": 9560,
-      "pool": 5857,
-      "assets": {
-        "case": 485,
-        "funding": 174,
-        "product-service": 477,
-        "opinion": 1709,
-        "trend": 6,
-        "scene": 3,
-        "change": 14
+      "publication": {
+        "status": "waiting"
+      },
+      "compatibility": {
+        "status": "deprecated_non_blocking",
+        "v3_desk_present": true,
+        "intelligence_graph_present": true,
+        "signal_card_directory_present": true,
+        "warnings": []
       }
     },
+    "pipelineMeta": {
+      "version": "OPS-V2.0.0-v4-telemetry",
+      "generatedAt": "2026-07-29T07:50:04.354Z",
+      "dateRange": {
+        "start": "2026-07-23",
+        "end": "2026-07-29"
+      },
+      "source": "Data Center V4 manifest + collection-telemetry-v1",
+      "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
+    },
+    "latest": {
+      "date": "2026-07-29",
+      "label": "2026.07.29",
+      "shortLabel": "07.29",
+      "discovered": 159,
+      "captured": 159,
+      "claims": 159,
+      "events": 43,
+      "entities": 70,
+      "relationships": 159,
+      "conflicts": 0,
+      "qaQueue": 111,
+      "telemetryDate": "2026-07-29",
+      "collection": {
+        "discovered": 290,
+        "capture_succeeded": 159,
+        "capture_failed": 0,
+        "raw_documents": 159
+      },
+      "factBuild": {
+        "accepted_claims": 159,
+        "rejected_claims": 0,
+        "accepted": 159,
+        "rejected": 0,
+        "pending_claims": 0,
+        "canonical_events": 43,
+        "entities": 70,
+        "relationships": 159,
+        "conflicts": 0,
+        "qa_queue": 111,
+        "qa_by_status": {
+          "review_optional": 86,
+          "open": 25
+        }
+      },
+      "applicationProjection": {
+        "opportunity_map": "passed",
+        "trend_radar": "passed",
+        "funding_insights": "passed",
+        "fde_hardware_sync": "passed"
+      },
+      "publication": {
+        "status": "waiting"
+      }
+    },
+    "totals": {
+      "discovered": 1001,
+      "captured": 1001,
+      "claims": 1065,
+      "events": 307,
+      "entities": 466,
+      "relationships": 1065,
+      "conflicts": 0,
+      "qaQueue": 675
+    },
     "days": [
+      {
+        "date": "2026-07-29",
+        "label": "2026.07.29",
+        "shortLabel": "07.29",
+        "discovered": 159,
+        "captured": 159,
+        "claims": 159,
+        "events": 43,
+        "entities": 70,
+        "relationships": 159,
+        "conflicts": 0,
+        "qaQueue": 111
+      },
+      {
+        "date": "2026-07-28",
+        "label": "2026.07.28",
+        "shortLabel": "07.28",
+        "discovered": 156,
+        "captured": 156,
+        "claims": 188,
+        "events": 56,
+        "entities": 85,
+        "relationships": 188,
+        "conflicts": 0,
+        "qaQueue": 95
+      },
+      {
+        "date": "2026-07-27",
+        "label": "2026.07.27",
+        "shortLabel": "07.27",
+        "discovered": 73,
+        "captured": 73,
+        "claims": 81,
+        "events": 23,
+        "entities": 39,
+        "relationships": 81,
+        "conflicts": 0,
+        "qaQueue": 50
+      },
+      {
+        "date": "2026-07-26",
+        "label": "2026.07.26",
+        "shortLabel": "07.26",
+        "discovered": 121,
+        "captured": 121,
+        "claims": 142,
+        "events": 42,
+        "entities": 59,
+        "relationships": 142,
+        "conflicts": 0,
+        "qaQueue": 77
+      },
       {
         "date": "2026-07-25",
         "label": "2026.07.25",
         "shortLabel": "07.25",
-        "raw": 163,
-        "pool": 150,
-        "assets": {
-          "case": 7,
-          "funding": 4,
-          "product-service": 16,
-          "opinion": 1
-        },
-        "cards": 28,
-        "rawChannels": {
-          "aihot": 98,
-          "keyword_search": 35,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "core_pool": 55,
-          "emerging_pool": 17,
-          "index_only": 39,
-          "watchlist": 56
-        },
-        "evidenceLevels": {
-          "core_evidence_candidate": 100,
-          "user_feedback_signal": 12,
-          "supporting_evidence": 12,
-          "weak_signal": 3,
-          "discovery_only": 23
-        },
-        "sourceLevels": {
-          "A": 38,
-          "S": 10,
-          "B": 101,
-          "C": 1
-        },
-        "sourceTypes": {
-          "news": 15,
-          "product": 2,
-          "web": 96,
-          "media": 23,
-          "official": 3,
-          "developer": 6,
-          "analysis": 1,
-          "operators": 1,
-          "builder": 2,
-          "newsletter": 1
-        },
-        "assetStatus": {
-          "case": {
-            "published": 7
-          },
-          "funding": {
-            "published": 4
-          },
-          "product-service": {
-            "published": 16
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 7
-          },
-          "funding": {
-            "frontstage": 4
-          },
-          "product-service": {
-            "frontstage": 16
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 7
-          },
-          "funding": {
-            "core_evidence_passed": 4
-          },
-          "product-service": {
-            "core_evidence_passed": 16
-          }
-        },
-        "assetCopyGates": {}
+        "discovered": 163,
+        "captured": 163,
+        "claims": 122,
+        "events": 28,
+        "entities": 54,
+        "relationships": 122,
+        "conflicts": 0,
+        "qaQueue": 131
       },
       {
         "date": "2026-07-24",
         "label": "2026.07.24",
         "shortLabel": "07.24",
-        "raw": 166,
-        "pool": 151,
-        "assets": {
-          "case": 16,
-          "funding": 3,
-          "product-service": 19,
-          "opinion": 14
-        },
-        "cards": 52,
-        "rawChannels": {
-          "aihot": 98,
-          "keyword_search": 36,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "core_pool": 54,
-          "emerging_pool": 28,
-          "index_only": 37,
-          "watchlist": 57
-        },
-        "evidenceLevels": {
-          "user_feedback_signal": 11,
-          "core_evidence_candidate": 114,
-          "supporting_evidence": 9,
-          "discovery_only": 17
-        },
-        "sourceLevels": {
-          "B": 108,
-          "A": 34,
-          "C": 5,
-          "S": 4
-        },
-        "sourceTypes": {
-          "web": 95,
-          "news": 11,
-          "developer": 7,
-          "media": 23,
-          "marketplace": 2,
-          "operators": 5,
-          "industry": 1,
-          "builder": 1,
-          "funding": 1,
-          "analysis": 1,
-          "newsletter": 2,
-          "official": 2
-        },
-        "assetStatus": {
-          "case": {
-            "published": 16
-          },
-          "funding": {
-            "published": 3
-          },
-          "product-service": {
-            "published": 19
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 16
-          },
-          "funding": {
-            "frontstage": 3
-          },
-          "product-service": {
-            "frontstage": 19
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 16
-          },
-          "funding": {
-            "core_evidence_passed": 3
-          },
-          "product-service": {
-            "core_evidence_passed": 19
-          }
-        },
-        "assetCopyGates": {}
+        "discovered": 166,
+        "captured": 166,
+        "claims": 180,
+        "events": 56,
+        "entities": 73,
+        "relationships": 180,
+        "conflicts": 0,
+        "qaQueue": 109
       },
       {
         "date": "2026-07-23",
         "label": "2026.07.23",
         "shortLabel": "07.23",
-        "raw": 163,
-        "pool": 155,
-        "assets": {
-          "case": 11,
-          "funding": 9,
-          "product-service": 10,
-          "opinion": 31
-        },
-        "cards": 61,
-        "rawChannels": {
-          "aihot": 92,
-          "keyword_search": 39,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "core_pool": 49,
-          "index_only": 41,
-          "watchlist": 62,
-          "emerging_pool": 27
-        },
-        "evidenceLevels": {
-          "core_evidence_candidate": 114,
-          "user_feedback_signal": 7,
-          "supporting_evidence": 6,
-          "community_signal": 1,
-          "discovery_only": 27
-        },
-        "sourceLevels": {
-          "A": 33,
-          "S": 18,
-          "B": 97,
-          "C": 7
-        },
-        "sourceTypes": {
-          "news": 12,
-          "developer": 10,
-          "product": 2,
-          "web": 87,
-          "builder": 4,
-          "official": 10,
-          "media": 21,
-          "operators": 7,
-          "marketplace": 1,
-          "newsletter": 1
-        },
-        "assetStatus": {
-          "case": {
-            "published": 11
-          },
-          "funding": {
-            "published": 9
-          },
-          "product-service": {
-            "published": 10
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 11
-          },
-          "funding": {
-            "frontstage": 9
-          },
-          "product-service": {
-            "frontstage": 10
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 11
-          },
-          "funding": {
-            "core_evidence_passed": 9
-          },
-          "product-service": {
-            "core_evidence_passed": 10
-          }
-        },
-        "assetCopyGates": {}
-      },
-      {
-        "date": "2026-07-22",
-        "label": "2026.07.22",
-        "shortLabel": "07.22",
-        "raw": 164,
-        "pool": 152,
-        "assets": {
-          "opinion": 32
-        },
-        "cards": 32,
-        "rawChannels": {
-          "aihot": 112,
-          "keyword_search": 20,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "index_only": 48,
-          "core_pool": 52,
-          "emerging_pool": 20,
-          "watchlist": 49
-        },
-        "evidenceLevels": {
-          "core_evidence_candidate": 99,
-          "user_feedback_signal": 5,
-          "supporting_evidence": 12,
-          "weak_signal": 1,
-          "discovery_only": 35
-        },
-        "sourceLevels": {
-          "B": 99,
-          "S": 17,
-          "A": 36
-        },
-        "sourceTypes": {
-          "web": 93,
-          "developer": 6,
-          "news": 10,
-          "official": 9,
-          "product": 3,
-          "media": 26,
-          "builder": 2,
-          "funding": 1,
-          "newsletter": 2
-        },
-        "assetStatus": {},
-        "assetLevels": {},
-        "assetEvidenceGates": {},
-        "assetCopyGates": {}
-      },
-      {
-        "date": "2026-07-21",
-        "label": "2026.07.21",
-        "shortLabel": "07.21",
-        "raw": 139,
-        "pool": 134,
-        "assets": {
-          "case": 13,
-          "funding": 5,
-          "product-service": 17,
-          "opinion": 40
-        },
-        "cards": 75,
-        "rawChannels": {
-          "aihot": 93,
-          "keyword_search": 24,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "core_pool": 57,
-          "emerging_pool": 28,
-          "watchlist": 43,
-          "index_only": 31
-        },
-        "evidenceLevels": {
-          "user_feedback_signal": 12,
-          "core_evidence_candidate": 88,
-          "supporting_evidence": 8,
-          "index_only_evidence": 1,
-          "discovery_only": 25
-        },
-        "sourceLevels": {
-          "B": 86,
-          "A": 30,
-          "S": 12,
-          "C": 6
-        },
-        "sourceTypes": {
-          "web": 76,
-          "news": 11,
-          "developer": 6,
-          "operators": 6,
-          "official": 5,
-          "marketplace": 1,
-          "media": 19,
-          "builder": 4,
-          "product": 2,
-          "funding": 3,
-          "newsletter": 1
-        },
-        "assetStatus": {
-          "case": {
-            "published": 13
-          },
-          "funding": {
-            "published": 5
-          },
-          "product-service": {
-            "published": 17
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 13
-          },
-          "funding": {
-            "frontstage": 5
-          },
-          "product-service": {
-            "frontstage": 17
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 13
-          },
-          "funding": {
-            "core_evidence_passed": 5
-          },
-          "product-service": {
-            "core_evidence_passed": 17
-          }
-        },
-        "assetCopyGates": {}
-      },
-      {
-        "date": "2026-07-20",
-        "label": "2026.07.20",
-        "shortLabel": "07.20",
-        "raw": 116,
-        "pool": 108,
-        "assets": {
-          "case": 4,
-          "funding": 2,
-          "product-service": 12,
-          "opinion": 31
-        },
-        "cards": 49,
-        "rawChannels": {
-          "aihot": 65,
-          "keyword_search": 31,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "core_pool": 51,
-          "emerging_pool": 15,
-          "watchlist": 38,
-          "index_only": 19
-        },
-        "evidenceLevels": {
-          "user_feedback_signal": 7,
-          "core_evidence_candidate": 80,
-          "community_signal": 1,
-          "supporting_evidence": 6,
-          "weak_signal": 2,
-          "discovery_only": 12
-        },
-        "sourceLevels": {
-          "B": 86,
-          "A": 16,
-          "C": 4,
-          "S": 2
-        },
-        "sourceTypes": {
-          "web": 74,
-          "news": 7,
-          "developer": 8,
-          "marketplace": 3,
-          "domestic_vendor": 2,
-          "operators": 4,
-          "media": 9,
-          "official": 1
-        },
-        "assetStatus": {
-          "case": {
-            "published": 4
-          },
-          "funding": {
-            "published": 2
-          },
-          "product-service": {
-            "published": 12
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 4
-          },
-          "funding": {
-            "frontstage": 2
-          },
-          "product-service": {
-            "frontstage": 12
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 4
-          },
-          "funding": {
-            "core_evidence_passed": 2
-          },
-          "product-service": {
-            "core_evidence_passed": 12
-          }
-        },
-        "assetCopyGates": {}
-      },
-      {
-        "date": "2026-07-19",
-        "label": "2026.07.19",
-        "shortLabel": "07.19",
-        "raw": 111,
-        "pool": 103,
-        "assets": {
-          "case": 6,
-          "funding": 4,
-          "product-service": 23,
-          "opinion": 32
-        },
-        "cards": 65,
-        "rawChannels": {
-          "aihot": 70,
-          "keyword_search": 28,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "index_only": 13,
-          "core_pool": 56,
-          "emerging_pool": 13,
-          "watchlist": 34
-        },
-        "evidenceLevels": {
-          "user_feedback_signal": 7,
-          "core_evidence_candidate": 82,
-          "index_only_evidence": 1,
-          "supporting_evidence": 4,
-          "discovery_only": 9
-        },
-        "sourceLevels": {
-          "B": 77,
-          "A": 17,
-          "C": 1,
-          "S": 8
-        },
-        "sourceTypes": {
-          "web": 74,
-          "news": 8,
-          "operators": 1,
-          "official": 1,
-          "developer": 4,
-          "media": 9,
-          "product": 1,
-          "industry": 1,
-          "builder": 4
-        },
-        "assetStatus": {
-          "case": {
-            "published": 6
-          },
-          "funding": {
-            "published": 4
-          },
-          "product-service": {
-            "published": 23
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 6
-          },
-          "funding": {
-            "frontstage": 4
-          },
-          "product-service": {
-            "frontstage": 23
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 6
-          },
-          "funding": {
-            "core_evidence_passed": 4
-          },
-          "product-service": {
-            "core_evidence_passed": 23
-          }
-        },
-        "assetCopyGates": {}
+        "discovered": 163,
+        "captured": 163,
+        "claims": 193,
+        "events": 59,
+        "entities": 86,
+        "relationships": 193,
+        "conflicts": 0,
+        "qaQueue": 102
       }
     ],
-    "engineQuality": {
-      "updatedAt": "2026-07-25T07:22:54.192Z",
-      "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
-      "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
-      "rows": [
-        {
-          "id": "tavily",
-          "label": "Tavily",
-          "total": 117,
-          "freshKnown": 0,
-          "fresh": 0,
-          "duplicates": 2,
-          "official": 28,
-          "convertible": 65,
-          "freshnessRate": null,
-          "duplicateRate": 2,
-          "officialRate": 24,
-          "conversionRate": 56
-        },
-        {
-          "id": "exa",
-          "label": "Exa",
-          "total": 162,
-          "freshKnown": 100,
-          "fresh": 1,
-          "duplicates": 23,
-          "official": 26,
-          "convertible": 87,
-          "freshnessRate": 1,
-          "duplicateRate": 14,
-          "officialRate": 16,
-          "conversionRate": 54
-        },
-        {
-          "id": "newsapi",
-          "label": "NewsAPI",
-          "total": 0,
-          "freshKnown": 0,
-          "fresh": 0,
-          "duplicates": 0,
-          "official": 0,
-          "convertible": 0,
-          "freshnessRate": null,
-          "duplicateRate": null,
-          "officialRate": null,
-          "conversionRate": null
-        },
-        {
-          "id": "gdelt",
-          "label": "GDELT",
-          "total": 811,
-          "freshKnown": 111,
-          "fresh": 2,
-          "duplicates": 131,
-          "official": 7,
-          "convertible": 295,
-          "freshnessRate": 2,
-          "duplicateRate": 16,
-          "officialRate": 1,
-          "conversionRate": 36
-        },
-        {
-          "id": "anysearch",
-          "label": "AnySearch",
-          "total": 2434,
-          "freshKnown": 311,
-          "fresh": 65,
-          "duplicates": 210,
-          "official": 434,
-          "convertible": 1257,
-          "freshnessRate": 21,
-          "duplicateRate": 9,
-          "officialRate": 18,
-          "conversionRate": 52
-        },
-        {
-          "id": "firecrawl",
-          "label": "Firecrawl",
-          "total": 2,
-          "freshKnown": 0,
-          "fresh": 0,
-          "duplicates": 0,
-          "official": 0,
-          "convertible": 2,
-          "freshnessRate": null,
-          "duplicateRate": 0,
-          "officialRate": 0,
-          "conversionRate": 100
-        },
-        {
-          "id": "aihot",
-          "label": "AI HOT",
-          "total": 5442,
-          "freshKnown": 4351,
-          "fresh": 4291,
-          "duplicates": 18,
-          "official": 296,
-          "convertible": 1842,
-          "freshnessRate": 99,
-          "duplicateRate": 0,
-          "officialRate": 5,
-          "conversionRate": 34
-        },
-        {
-          "id": "follow_builders",
-          "label": "Follow Builders",
-          "total": 153,
-          "freshKnown": 105,
-          "fresh": 43,
-          "duplicates": 37,
-          "official": 33,
-          "convertible": 42,
-          "freshnessRate": 41,
-          "duplicateRate": 24,
-          "officialRate": 22,
-          "conversionRate": 27
-        }
-      ]
-    }
+    "engineQuality": {}
   },
   "governance": {
     "versions": [
@@ -2398,7 +2410,7 @@
       {
         "key": "OPS",
         "label": "Operations backend",
-        "value": "OPS-V1.2.3-content-factory-cleanout"
+        "value": "OPS-V2.0.0-v4-telemetry"
       },
       {
         "key": "BSIG",

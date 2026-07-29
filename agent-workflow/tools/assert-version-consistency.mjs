@@ -36,7 +36,7 @@ function parseCurrentVersions() {
 const versions = parseCurrentVersions();
 const expected = {
   site: "SITE-V4.2.0-entity-history",
-  ops: "OPS-V1.2.3-content-factory-cleanout",
+  ops: "OPS-V2.0.0-v4-telemetry",
   reports: "REPORTS-V1.1.0-lane-independent",
   opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.0.0-factual-change-explorer",

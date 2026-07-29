@@ -446,7 +446,7 @@ jobs:
 
       - name: Sync FDE and AI hardware Obsidian archives
         id: business-lenses-obsidian-sync
-        if: steps.business-frontstage-gate.outcome == 'success'
+        if: always() && steps.data-center-v4-materialize.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -461,8 +461,17 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
+          node agent-workflow/tools/build-collection-telemetry-v1.mjs \
+            --date="${RUN_DATE}" \
+            --opportunity="${{ steps.opportunity-map-v4.outcome }}" \
+            --trend="${{ steps.trend-radar-projection.outcome }}" \
+            --funding="${{ steps.funding-insights.outcome }}" \
+            --lenses="${{ steps.business-lenses-obsidian-sync.outcome }}" \
+            --publication=waiting \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-collection-telemetry.log"
           node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-operations-data.log"
+          node agent-workflow/tools/build-ops-console-data.mjs
 
       - name: Confirm site data freshness
         id: pre-commit-gate
@@ -640,8 +649,11 @@ jobs:
             01-SiteV2/site/data/v3-data-observation-desk.json
             01-SiteV2/site/data/opportunity-evidence-v2.json
             01-SiteV2/site/data/intelligence-graph-index.json
+            01-SiteV2/site/data/collection-telemetry-v1.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
+            01-SiteV2/site/data/ops-console.json
+            01-SiteV2/site/data/ops-console.js
 
       - name: Commit Data Center V4 and accepted compatibility assets
         id: commit
@@ -730,8 +742,11 @@ jobs:
           fi
 
           if [ "${{ steps.operations-data.outcome }}" = "success" ]; then
+            stage_if_exists "01-SiteV2/site/data/collection-telemetry-v1.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
+            stage_if_exists "01-SiteV2/site/data/ops-console.json"
+            stage_if_exists "01-SiteV2/site/data/ops-console.js"
           fi
 
           if git diff --cached --quiet; then
