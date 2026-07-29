@@ -4,11 +4,11 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-28T05:43:43.570Z",
-    "latestDataDate": "2026-07-28",
-    "currentDate": "2026-07-28",
-    "eventCount": 1656,
-    "quarantinedEventCount": 13
+    "generatedAt": "2026-07-29T04:46:12.968Z",
+    "latestDataDate": "2026-07-29",
+    "currentDate": "2026-07-29",
+    "eventCount": 1695,
+    "quarantinedEventCount": 14
   },
   "node": {
     "id": "TX-technology-code_generation",
@@ -31,16 +31,17 @@
       "EV-03f661e8dcdf1b58",
       "EV-5762fe51987bc5ff",
       "EV-acdeebead5324344",
+      "EV-dda9429d76897a3d",
       "EV-2d6d2dc0ead4be10",
       "EV-4c0af31f1399ea8c",
       "EV-e1a4bc40db4a9d8f",
       "EV-d5f276ad6b2ac9de",
+      "EV-bfa090c78227abf8",
       "EV-0f440082086c02df",
       "EV-2634b786bde9fb8e",
       "EV-6ce069b1845f5a52",
       "EV-4f36e494d9281522",
       "EV-c237f5dc53f0a923",
-      "EV-653cbce2ccc79f8b",
       "EV-74dfbd82b47dc626",
       "EV-0dbc7b904378f713",
       "EV-578a9db1fe952d0a",
@@ -79,20 +80,19 @@
       "EN-bbdefa2950f49882",
       "EN-5b3767eb23d5e4ed",
       "EN-ea3bd73e2b506e00",
+      "EN-95b0632f1b292fa7",
       "EN-3db1f560db626918",
       "EN-047364b9be67f665",
       "EN-86f73dfe7bb6a9e6",
       "EN-86ca9936019f1039",
       "EN-4094a2b7125c7564",
       "EN-8f71c4871a160172",
+      "EN-76a9a8a6e2f1a47b",
+      "EN-7ad3f3203e5d717e",
       "EN-275b0f4a4023d91c",
       "EN-18f0900d6c487f59",
       "EN-3a7bd3e2360a3d29",
       "EN-d1ad14d4ad57d207",
-      "EN-f3cfedbe8428c9f7",
-      "EN-7df09a7717ef2feb",
-      "EN-c04bd5ebd10ab696",
-      "EN-50ba7ff15827787b",
       "EN-1076719c4826c477",
       "EN-0a1750ec669a270c",
       "EN-c141d2237427f30d",
@@ -130,6 +130,7 @@
       "EN-0030f5adc7a3f4d7"
     ],
     "fdeIds": [
+      "FDE-0ef4045e28c345f8",
       "FDE-a68ccf61a21e22ce",
       "FDE-467e0bd030c922df"
     ],
@@ -137,7 +138,7 @@
       "HW-b1302168a9ab18e8"
     ],
     "firstSeen": "2026-03-30",
-    "lastSeen": "2026-07-28"
+    "lastSeen": "2026-07-29"
   },
   "events": [
     {
@@ -1380,6 +1381,126 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-dda9429d76897a3d",
+      "dataDate": "2026-07-29",
+      "date": "2026-07-28",
+      "updatedDate": "2026-07-29",
+      "eventType": "deployment",
+      "eventTypeLabel": "部署",
+      "eventGroup": "部署与案例",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "使用 PrismML llama.cpp 部署 1-Bit Bonsai-27B 模型",
+      "originalTitle": "",
+      "subject": "使用 PrismML llama.cpp",
+      "action": "部署",
+      "object": "1-Bit Bonsai-27B 模型",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "id": "model",
+            "dimensionName": "产品形态",
+            "name": "模型"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "id": "model",
+          "dimensionName": "产品形态",
+          "name": "模型"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-95b0632f1b292fa7",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "PrismML",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://marktechpost.com/2026/07/28/deploying-a-1-bit-bonsai-27b-model-with-prismml-llama-cpp-and-openai-compatible-local-inference-workflows",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
       "id": "EV-2d6d2dc0ead4be10",
       "dataDate": "2026-07-15",
       "date": "2026-07-15",
@@ -1701,6 +1822,119 @@
       "products": [],
       "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202606161000PR_NEWS_USPRX____NY84494-1",
       "publisher": "markets.ft.com"
+    },
+    {
+      "id": "EV-bfa090c78227abf8",
+      "dataDate": "2026-07-29",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-29",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "阿里云 Qoder 开源 Better Harness，面向编程 Agent 的分析与持续改进工具",
+      "originalTitle": "",
+      "subject": "阿里云 Qoder",
+      "action": "开源 Better Harness，面向编程 Agent 的分析与持续改进工具",
+      "object": "阿里云 Qoder 开源 Better Harness，面向编程 Agent 的分析与持续改进工具",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "id": "software_development",
+            "dimensionName": "应用场景",
+            "name": "软件开发"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        },
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "id": "software_development",
+          "dimensionName": "应用场景",
+          "name": "软件开发"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "entityIds": [
+        "EN-76a9a8a6e2f1a47b",
+        "EN-047364b9be67f665",
+        "EN-7ad3f3203e5d717e"
+      ],
+      "entityNames": [
+        "阿里云 Qoder",
+        "Alibaba",
+        "Better Harness"
+      ],
+      "productName": "Better Harness",
+      "products": [
+        {
+          "name": "Better Harness",
+          "type": "产品/服务",
+          "ownerNames": [
+            "Alibaba"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/0/982/852.htm",
+      "publisher": "IT之家（RSS）"
     },
     {
       "id": "EV-0f440082086c02df",
@@ -2221,173 +2455,6 @@
       ],
       "sourceUrl": "https://ithome.com/0/978/358.htm",
       "publisher": "IT之家（RSS）"
-    },
-    {
-      "id": "EV-653cbce2ccc79f8b",
-      "dataDate": "2026-07-17",
-      "date": "2026-07-16",
-      "updatedDate": "2026-07-17",
-      "eventType": "product_release",
-      "eventTypeLabel": "产品发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "LM Studio Bionic 发布：面向开放模型的 AI 智能体",
-      "originalTitle": "",
-      "subject": "LM Studio Bionic",
-      "action": "发布",
-      "object": "：面向开放模型的 AI 智能体",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "tool_use",
-          "name": "工具调用"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "long_context",
-          "name": "长上下文"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [
-          {
-            "dimensionId": "deployment_model",
-            "id": "edge_device",
-            "dimensionName": "部署形态",
-            "name": "边缘与端侧"
-          }
-        ],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "tool_use",
-          "name": "工具调用"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "long_context",
-          "name": "长上下文"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧"
-        },
-        {
-          "dimensionId": "deployment_model",
-          "id": "edge_device",
-          "dimensionName": "部署形态",
-          "name": "边缘与端侧"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "code_generation",
-          "name": "代码生成"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "tool_use",
-          "name": "工具调用"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "long_context",
-          "name": "长上下文"
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "on_device",
-          "name": "端侧"
-        },
-        {
-          "dimensionId": "deployment_model",
-          "id": "edge_device",
-          "dimensionName": "部署形态",
-          "name": "边缘与端侧"
-        }
-      ],
-      "entityIds": [
-        "EN-f3cfedbe8428c9f7",
-        "EN-7df09a7717ef2feb",
-        "EN-c04bd5ebd10ab696",
-        "EN-50ba7ff15827787b"
-      ],
-      "entityNames": [
-        "LM Studio Bionic",
-        "LM Studio",
-        "Mistral AI",
-        "LM Studio Bionic"
-      ],
-      "productName": "LM Studio Bionic",
-      "products": [
-        {
-          "name": "LM Studio Bionic",
-          "type": "产品/服务",
-          "ownerNames": [
-            "LM Studio"
-          ]
-        }
-      ],
-      "sourceUrl": "https://lmstudio.ai/blog/introducing-lm-studio-bionic",
-      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
       "id": "EV-74dfbd82b47dc626",
@@ -4330,9 +4397,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
@@ -4377,14 +4444,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
-        "TX-industry-financial_services",
-        "TX-use_case-enterprise_operations",
         "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity"
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
+        "TX-use_case-software_development",
+        "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2023-03-21",
@@ -4405,8 +4472,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-04",
@@ -4425,6 +4492,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-5f3ccb941a2fe5d7",
         "EV-97854226b6f43a95",
         "EV-86ca5af11ee4d275",
         "EV-52115fee0e716170",
@@ -4432,6 +4500,8 @@
         "EV-88f4ee8cd57bdf42",
         "EV-44a4e92c03a31ab1",
         "EV-7585b033d4005977",
+        "EV-57944eebac69d510",
+        "EV-306ac8217c66dc81",
         "EV-005a017a310d1fdd",
         "EV-e09efcd49776cb95",
         "EV-883d3b5f6d30eb48",
@@ -4458,6 +4528,8 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-7a4d1e871dcd3b1f",
+        "EV-3eb44a239ebef4b0",
         "EV-272aea63d4e50349",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -4526,26 +4598,29 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-use_case-customer_service",
+        "TX-technology-human_in_loop",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation",
-        "TX-use_case-customer_service",
-        "TX-use_case-cybersecurity",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-open_weights",
         "TX-technology-model_context_protocol",
         "TX-industry-telecommunications",
         "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-technology-image_generation"
       ],
@@ -4563,7 +4638,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-0cc3af265406c202",
@@ -4580,8 +4655,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -4603,8 +4678,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
         "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -4629,9 +4704,11 @@
         "EV-5d581d112fdbd464",
         "EV-201b25d4f3cf696a",
         "EV-31df816db86db282",
+        "EV-721215fba1addc6c",
         "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
+        "EV-7a4d1e871dcd3b1f",
         "EV-5b193a038ab4ea22",
         "EV-2351415291cb9fcd",
         "EV-e7b7df43970f7e2c",
@@ -4651,12 +4728,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-use_case-software_development",
-        "TX-use_case-enterprise_operations",
+        "TX-technology-long_context",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -4664,7 +4742,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-23"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -4894,6 +4972,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-a61345459e796a19",
         "EV-0eef30387327e73f",
         "EV-ae9142b65fa86975",
         "EV-d709599eddf5db04",
@@ -4936,21 +5015,22 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
+        "TX-use_case-customer_service",
+        "TX-technology-human_in_loop",
         "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
@@ -4960,7 +5040,6 @@
         "TX-industry-government_public_sector",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-industry-education"
       ],
@@ -4991,7 +5070,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -5035,6 +5114,7 @@
         "EV-c5643983538c6513",
         "EV-1f55bab475db2c30",
         "EV-acdeebead5324344",
+        "EV-dda9429d76897a3d",
         "EV-2a101d792d92fb1f",
         "EV-b78d7fc420117d68",
         "EV-a4f5d59c1b4ddce1",
@@ -5055,6 +5135,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-6cea35f065f0ee9e",
         "EV-92be9fa58b1ee19f",
         "EV-dc56b5ae3009f6f5",
         "EV-f55d16df5b5fecb2",
@@ -5075,7 +5156,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
-        "EV-0d5a32aca724d30e",
+        "EV-2aa470d66b93391d",
+        "EV-7c934b299d048348",
+        "EV-96cfe78a2dee2182",
         "EV-272aea63d4e50349",
         "EV-5f2acbfb8f54fd59",
         "EV-6aae550a6523a8fd",
@@ -5207,6 +5290,7 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-e86fcdb67a637c4c",
         "EV-0eef30387327e73f",
         "EV-bce258f8f915ff5f",
         "EV-a0ec365561b53cd4",
@@ -5254,24 +5338,25 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-use_case-customer_service",
+        "TX-technology-human_in_loop",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
@@ -5280,8 +5365,7 @@
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-tool_use",
-        "TX-technology-reasoning",
-        "TX-technology-human_in_loop"
+        "TX-technology-reasoning"
       ],
       "relatedEntityIds": [
         "EN-968e2d5b08687bf4",
@@ -5308,7 +5392,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-96eebba49dbbf422",
@@ -5466,23 +5550,23 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-use_case-customer_service",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
         "TX-industry-automotive_transportation",
-        "TX-use_case-customer_service",
         "TX-industry-professional_services",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
@@ -5551,9 +5635,7 @@
       "name": "Google",
       "entityType": "organization_candidate",
       "typeLabel": "公司与机构",
-      "aliases": [
-        "谷歌"
-      ],
+      "aliases": [],
       "verificationStatus": "verified",
       "datasetScopes": [
         "canonical"
@@ -5570,6 +5652,7 @@
         "EV-4a162c41bb82f325",
         "EV-5762fe51987bc5ff",
         "EV-6cb8979f92cf74ce",
+        "EV-57944eebac69d510",
         "EV-38232fed5e0cfdd6",
         "EV-e7b228c1b6b54c6a",
         "EV-cf76f090a1a20a36",
@@ -5707,21 +5790,21 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-use_case-customer_service",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-technology-computer_use",
-        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-financial_services",
         "TX-technology-embodied_ai",
-        "TX-use_case-enterprise_operations",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-customer_service",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
@@ -5738,16 +5821,14 @@
       "relatedEntityIds": [
         "EN-18f0900d6c487f59",
         "EN-a85d5a9b4a77d59b",
-        "EN-31055a8d9856fce4",
         "EN-8d323d8bba783aa3",
         "EN-81e577740888ca6d",
         "EN-1229af0aa3b0305e",
-        "EN-0e008e2c06144ec8",
         "EN-40f98159922ab514",
         "EN-9ff1a58a589bc318",
         "EN-01f1074bb52ff605",
+        "EN-0e008e2c06144ec8",
         "EN-f2c032b19edb7900",
-        "EN-2ab6d53e717a0e0d",
         "EN-2998f8b13f4fd72e",
         "EN-b5c336c0dd1ff29c",
         "EN-d56aa2f9908f566a",
@@ -5755,7 +5836,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-5b3767eb23d5e4ed",
@@ -5772,8 +5853,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -5801,6 +5882,8 @@
         "EV-3f8f6a578be79988",
         "EV-467d1a701d21327d",
         "EV-acdeebead5324344",
+        "EV-cded77b1de2db61a",
+        "EV-8805e96b4fb544dd",
         "EV-c3f617e75d303f59",
         "EV-bc9abd502c002102",
         "EV-9efcf6480f6c6f48",
@@ -5854,16 +5937,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
-        "TX-technology-computer_use",
         "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
+        "TX-technology-computer_use",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
-        "TX-use_case-cybersecurity",
         "TX-technology-open_weights",
         "TX-technology-guardrails_safety",
         "TX-industry-media_entertainment",
@@ -5882,8 +5965,39 @@
         "EN-2ba325ce6f8e3dc9",
         "EN-e71558a14e7ed6ab"
       ],
-      "firstSeen": "2026-03-30",
-      "lastSeen": "2026-07-27"
+      "firstSeen": "2026-03-13",
+      "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-95b0632f1b292fa7",
+      "name": "PrismML",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-dda9429d76897a3d",
+        "EV-70cbf25f7ec2cc3a",
+        "EV-8b9e4428074bde60"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development",
+        "TX-technology-multimodal",
+        "TX-technology-long_context",
+        "TX-technology-fine_tuning",
+        "TX-technology-quantization"
+      ],
+      "relatedEntityIds": [
+        "EN-03e2a9d18916f7c5"
+      ],
+      "firstSeen": "2026-07-15",
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-3db1f560db626918",
@@ -5909,8 +6023,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-mixture_of_experts",
@@ -5942,6 +6056,7 @@
       "eventIds": [
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
+        "EV-2d9fde7bc0cd7a22",
         "EV-c2b613b5a2fb1135",
         "EV-ef2cd6bd912a6ed8",
         "EV-4740121f428e4bda",
@@ -5950,6 +6065,8 @@
         "EV-53f08daddd011dbb",
         "EV-e1a4bc40db4a9d8f",
         "EV-2a833330267cb2df",
+        "EV-bfa090c78227abf8",
+        "EV-0d5a32aca724d30e",
         "EV-2e1352039c487bb0",
         "EV-b4aa08aef57bdb0f",
         "EV-1a241bcb4fad886c",
@@ -5992,12 +6109,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-technology-code_generation",
         "TX-technology-computer_use",
-        "TX-technology-agentic_execution",
+        "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
         "TX-use_case-data_analysis",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
@@ -6016,7 +6135,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-07-26",
+      "lastSeen": "2026-07-29",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -6042,9 +6161,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-industry-financial_services"
       ],
       "relatedEntityIds": [],
@@ -6066,8 +6185,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-10",
@@ -6089,9 +6208,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
-        "TX-use_case-cybersecurity"
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-17",
@@ -6127,9 +6246,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
         "TX-industry-technology",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
@@ -6142,6 +6261,53 @@
       ],
       "firstSeen": "2026-06-15",
       "lastSeen": "2026-07-25"
+    },
+    {
+      "id": "EN-76a9a8a6e2f1a47b",
+      "name": "阿里云 Qoder",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2d9fde7bc0cd7a22",
+        "EV-bfa090c78227abf8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-28",
+      "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-7ad3f3203e5d717e",
+      "name": "Better Harness",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-bfa090c78227abf8"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-29",
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-275b0f4a4023d91c",
@@ -6165,8 +6331,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -6193,10 +6359,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
-        "TX-use_case-software_development",
-        "TX-use_case-cybersecurity"
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation",
+        "TX-use_case-software_development"
       ],
       "relatedEntityIds": [
         "EN-bbdefa2950f49882",
@@ -6297,13 +6463,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-technology-multimodal",
         "TX-industry-retail_ecommerce",
         "TX-technology-long_context",
-        "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-fine_tuning",
         "TX-industry-media_entertainment",
@@ -6357,129 +6523,6 @@
       "lastSeen": "2026-07-24"
     },
     {
-      "id": "EN-f3cfedbe8428c9f7",
-      "name": "LM Studio Bionic",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-653cbce2ccc79f8b"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
-        "TX-technology-long_context",
-        "TX-technology-on_device",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-7df09a7717ef2feb",
-      "name": "LM Studio",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-67ef7accd26a07a0",
-        "EV-a7e1ecd212474e00",
-        "EV-fd21441fb6e143c3",
-        "EV-653cbce2ccc79f8b"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
-        "TX-technology-multimodal",
-        "TX-technology-long_context",
-        "TX-technology-on_device",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [
-        "EN-50ba7ff15827787b",
-        "EN-3a7bd3e2360a3d29"
-      ],
-      "firstSeen": "2026-06-20",
-      "lastSeen": "2026-07-17"
-    },
-    {
-      "id": "EN-c04bd5ebd10ab696",
-      "name": "Mistral AI",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-a89bf7c0c4203ce2",
-        "EV-24265c0f0fa45343",
-        "EV-d4e44892226be468",
-        "EV-85506f9f86779a6d",
-        "EV-dc442b91a69fcc5a",
-        "EV-d292329c0ec64c8f",
-        "EV-653cbce2ccc79f8b",
-        "EV-3a67edc87806b5f1",
-        "EV-dbc47d61f3e94306",
-        "EV-eb2584a4801eb1e6",
-        "EV-865af5f2f09605c4"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
-        "TX-industry-automotive_transportation",
-        "TX-technology-long_context",
-        "TX-technology-on_device",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [
-        "EN-0d4ab5f8db6e89bc",
-        "EN-2c2a76216a876127"
-      ],
-      "firstSeen": "2026-06-02",
-      "lastSeen": "2026-07-23"
-    },
-    {
-      "id": "EN-50ba7ff15827787b",
-      "name": "LM Studio Bionic",
-      "entityType": "product_candidate",
-      "typeLabel": "产品、模型与服务",
-      "aliases": [],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-653cbce2ccc79f8b"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
-        "TX-technology-long_context",
-        "TX-technology-on_device",
-        "TX-technology-tool_use"
-      ],
-      "relatedEntityIds": [
-        "EN-7df09a7717ef2feb"
-      ],
-      "firstSeen": "2026-07-16",
-      "lastSeen": "2026-07-17"
-    },
-    {
       "id": "EN-1076719c4826c477",
       "name": "Amid hardware legal battle",
       "entityType": "organization_candidate",
@@ -6515,8 +6558,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-04",
@@ -6537,8 +6580,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [
         "EN-9fbf261b62c1d7c0"
@@ -6698,19 +6741,20 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
+        "TX-technology-human_in_loop",
+        "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-use_case-cybersecurity",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
+        "TX-industry-manufacturing",
         "TX-industry-technology",
         "TX-technology-multimodal",
         "TX-technology-embodied_ai",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-industry-automotive_transportation",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-technology-on_device",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-fine_tuning",
@@ -6721,7 +6765,6 @@
         "TX-industry-media_entertainment",
         "TX-technology-tool_use",
         "TX-technology-reasoning",
-        "TX-technology-human_in_loop",
         "TX-technology-distillation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
@@ -6823,8 +6866,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-long_context",
         "TX-technology-tool_use",
@@ -6851,8 +6894,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-04",
@@ -6874,8 +6917,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-technology-retrieval_augmented_generation"
       ],
       "relatedEntityIds": [],
@@ -6897,8 +6940,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -6924,8 +6967,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-guardrails_safety"
       ],
@@ -6948,8 +6991,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-retrieval_augmented_generation"
       ],
@@ -6977,6 +7020,7 @@
         "EV-eec1e6857f0e0b2b",
         "EV-fd21441fb6e143c3",
         "EV-0d5a32aca724d30e",
+        "EV-653cbce2ccc79f8b",
         "EV-deaa5d80d1166e9f",
         "EV-56626f2604aa1e30",
         "EV-26a71ab785014e54",
@@ -6991,24 +7035,24 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
         "TX-technology-retrieval_augmented_generation",
         "TX-technology-open_weights"
       ],
       "relatedEntityIds": [
-        "EN-607964040e4b62e0",
         "EN-eb732565c71e6b85",
         "EN-2cfed21b7a971267",
         "EN-23bc2a854bc0cfb0",
         "EN-b57c95289680078c"
       ],
       "firstSeen": "2026-05-07",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-0db2d631b42da133",
@@ -7027,8 +7071,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-retrieval_augmented_generation"
       ],
@@ -7058,6 +7102,7 @@
         "EV-26d2874c6ce028d6",
         "EV-b93102125cc062e3",
         "EV-6c361125c3f50bb6",
+        "EV-0d5a32aca724d30e",
         "EV-3126fb08491de669",
         "EV-c710c75d9c823a49",
         "EV-b8bc579bfa5797a2",
@@ -7072,12 +7117,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-long_context",
+        "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
+        "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-industry-media_entertainment",
         "TX-use_case-knowledge_search"
@@ -7088,7 +7136,7 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-29"
     },
     {
       "id": "EN-e18cb6435603205d",
@@ -7105,8 +7153,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -7181,7 +7229,6 @@
       ],
       "eventIds": [
         "EV-53f08daddd011dbb",
-        "EV-0d5a32aca724d30e",
         "EV-3353bd96728c99e2",
         "EV-8a9b12665a3e40a0",
         "EV-28145c97a7237d6d",
@@ -7196,9 +7243,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-use_case-robotics_automation",
         "TX-technology-code_generation",
-        "TX-technology-agentic_execution",
         "TX-technology-multimodal",
         "TX-technology-long_context",
         "TX-technology-on_device",
@@ -7209,7 +7256,7 @@
         "EN-ddf9916b459b6d77"
       ],
       "firstSeen": "2026-06-10",
-      "lastSeen": "2026-07-28"
+      "lastSeen": "2026-07-25"
     },
     {
       "id": "EN-ddf9916b459b6d77",
@@ -7252,8 +7299,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
-        "TX-technology-agentic_execution"
+        "TX-technology-agentic_execution",
+        "TX-technology-code_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-11",
@@ -7323,12 +7370,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-use_case-enterprise_operations",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-industry-healthcare_life_sciences",
-        "TX-use_case-enterprise_operations",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-on_device",
@@ -7387,9 +7434,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-manufacturing",
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
+        "TX-industry-manufacturing",
         "TX-use_case-software_development",
         "TX-technology-on_device",
         "TX-technology-tool_use"
@@ -7464,13 +7511,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-use_case-cybersecurity",
+        "TX-technology-code_generation",
         "TX-use_case-software_development",
         "TX-technology-multimodal",
         "TX-technology-vision_language",
         "TX-technology-mixture_of_experts",
-        "TX-use_case-cybersecurity",
         "TX-technology-retrieval_augmented_generation",
         "TX-use_case-research_science",
         "TX-technology-video_generation",
@@ -7607,8 +7654,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [
@@ -7633,8 +7680,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -7656,8 +7703,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -7679,8 +7726,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-use_case-software_development"
       ],
       "relatedEntityIds": [],
@@ -7704,8 +7751,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-code_generation",
         "TX-technology-agentic_execution",
+        "TX-technology-code_generation",
         "TX-industry-retail_ecommerce"
       ],
       "relatedEntityIds": [],
@@ -7735,6 +7782,60 @@
     }
   ],
   "fde": [
+    {
+      "id": "FDE-0ef4045e28c345f8",
+      "eventId": "EV-dda9429d76897a3d",
+      "dataDate": "2026-07-29",
+      "date": "2026-07-28",
+      "title": "使用 PrismML llama.cpp 部署 1-Bit Bonsai-27B 模型",
+      "stage": "completed",
+      "stageLabel": "已完成",
+      "customer": "未披露",
+      "vendor": "PrismML",
+      "industry": "未披露",
+      "useCase": "1-Bit Bonsai-27B 模型",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [
+        "PrismML fork of llama.cpp",
+        "CUDA-enabled inference binaries",
+        "OpenAI-compatible local inference server",
+        "Python client"
+      ],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_outcomes"
+      ],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "code_generation",
+          "name": "代码生成"
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/07/28/deploying-a-1-bit-bonsai-27b-model-with-prismml-llama-cpp-and-openai-compatible-local-inference-workflows",
+      "entityIds": [
+        "EN-95b0632f1b292fa7",
+        "EN-7d3194f79e645c42"
+      ]
+    },
     {
       "id": "FDE-467e0bd030c922df",
       "eventId": "EV-d5f276ad6b2ac9de",

@@ -1,0 +1,269 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-062",
+  "title": "摩尔线程完成Kimi K3适配：MTT S5000国产GPU支撑2.8万亿参数大模型",
+  "title_zh": "摩尔线程完成Kimi K3适配：MTT S5000国产GPU支撑2.8万亿参数大模型",
+  "title_translation_status": "not_required",
+  "title_translation_method": "source_title",
+  "title_translation_model": "",
+  "original_url": "https://www.ithome.com/0/982/959.htm",
+  "canonical_url": "https://ithome.com/0/982/959.htm",
+  "source_name": "IT之家（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-07-29T03:00:21.000Z",
+  "collected_at": "2026-07-29T04:43:42.703Z",
+  "language": "mixed",
+  "full_text": "摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.8 万亿参数大模型 - IT之家\n首页\nIT圈\n最会买\n设置\n日夜间\n随系统\n浅色\n深色\n主题色 黑色\n投稿\n订阅\nRSS订阅\n收藏IT之家\n软媒应用\nApp客户端\n要知App\n软媒魔方\n业界\n手机\n电脑\n测评\n视频\nAI\n苹果\niPhone\n鸿蒙\n软件\n智车\n数码\n学院\n游戏\n直播\n5G\n微软\nWin10\nWin11\n专题\n搜索\n首页 > IT资讯 > 业界\n摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.8 万亿参数大模型\n2026/7/29 11:00:21\n来源： IT之家\n作者： 问舟\n责编： 问舟\n评论：\n感谢IT之家网友 麻辣清补凉 的线索投递！\nIT之家 7 月 29 日消息，月之暗面 7 月 28 日正式开源 2.8 万亿参数模型 Kimi K3 并发布模型权重与技术报告。\n同日，摩尔线程基于 AI 训推一体智算卡 MTT S5000 及 MUSA 软件栈，宣布完成 Kimi K3 的 Day-0 支持。\nKimi K3 是全球首个开源的 3 万亿级别模型，总参数达 2.8 万亿，基于 KDA 混合线性注意力机制（Kimi Delta Attention）和注意力残差（Attention Residuals）技术构建，采用 Gated MLA 与 Stable Latent MoE 等架构创新，原生支持视觉理解，并拥有 100 万 token 上下文窗口。\n与传统 Transformer 模型不同，Kimi K3 的 69 层 KDA 与 24 层 Gated MLA 构成混合注意力主干，Stable Latent MoE 以 896 个专家、每个 token 激活 16 个专家的方式提升模型容量。\n面对新架构对 AI 芯片软件栈提出的系统性挑战，摩尔线程在模型开源后第一时间完成了模型结构解析、权重加载、核心算子、缓存管理与分布式运行链路的适配。针对 KDA 核心创新，团队分别完成了 Prefill 与 Decode 阶段的关键路径适配，并以 Triton MUSA 正确性实现作为稳定基线。SGLang-MUSA 同步适配了 Hybrid State Pool，用于管理 KDA 递归状态与卷积状态，覆盖 Prefix Cache、分块 Prefill 及 PD 分离场景所需的状态生命周期。\n针对 Stable Latent MoE 的 896 专家、TopK 16 激活规模，摩尔线程快速完成了 DeepEP 适配，打通 token dispatch、combine 与跨卡 All-to-All 通信链路。MUSA 软件栈进一步完成模型路由、专家映射和分布式执行链路适配，通过 MCCL、DeepEP 与 MTSHMEM 协同承载张量并行、专家并行和低时延通信。面对 Kimi K3 官方 MXFP4 checkpoint，摩尔线程设计了加载期在线逐层量化方案，无需离线转换即可快速拉起推理。\nIT之家查询获悉，MTT S5000 是摩尔线程基于第四代“平湖”芯片架构打造的 AI 训推一体智算卡，单卡 AI 稠密算力最高可达 1000TFLOPS，配备 80GB 显存，显存带宽达 1.6TB/s，卡间互联带宽为 784GB/s，完整支持从 FP8 到 FP64 的全精度计算。\n相关阅读：\n《 Day0 适配：阿里云灵骏真武 M890 超节点实例现已支持月之暗面 Kimi K3 大模型 》\n《 月之暗面开源 Kimi K3 模型，2.8 万亿参数 》\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n投诉水文\n我要纠错\n下载IT之家APP，签到赚金币兑豪礼\n相关文章\n关键词： 摩尔线程 ， Kimi K3 ， MTT S5000\nDay0 适配：阿里云灵骏真武 M890 超节点实例现已支持月之暗面 Kimi K3 大模型\n华为官宣昇腾 0day 支持 Kimi K3 的训练适配及推理部署\nLM Studio Bionic 智能体工具新增月之暗面 Kimi K3 模型支持，定价方案公布\n科技行业力挺开源 AI，Anthropic 因保持沉默遭同行批评\n月之暗面开源 Kimi K3 模型，2.8 万亿参数\n月之暗面 Kimi K3 庆功照流出，现场标语“冲上月球”\n软媒旗下网站：\nIT之家\n最会买 - 返利返现优惠券\niPhone之家\nWin7之家\nWin10之家\nWin11之家\n软媒旗下软件：\n软媒手机APP应用\n魔方\n最会买\n要知",
+  "clean_text": "摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.8 万亿参数大模型 - IT之家\n首页\nIT圈\n最会买\n设置\n日夜间\n随系统\n浅色\n深色\n主题色 黑色\n投稿\n订阅\nRSS订阅\n收藏IT之家\n软媒应用\nApp客户端\n要知App\n软媒魔方\n业界\n手机\n电脑\n测评\n视频\nAI\n苹果\niPhone\n鸿蒙\n软件\n智车\n数码\n学院\n游戏\n直播\n5G\n微软\nWin10\nWin11\n专题\n搜索\n首页 > IT资讯 > 业界\n摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.8 万亿参数大模型\n2026/7/29 11:00:21\n来源： IT之家\n作者： 问舟\n责编： 问舟\n评论：\n感谢IT之家网友 麻辣清补凉 的线索投递！\nIT之家 7 月 29 日消息，月之暗面 7 月 28 日正式开源 2.8 万亿参数模型 Kimi K3 并发布模型权重与技术报告。\n同日，摩尔线程基于 AI 训推一体智算卡 MTT S5000 及 MUSA 软件栈，宣布完成 Kimi K3 的 Day-0 支持。\nKimi K3 是全球首个开源的 3 万亿级别模型，总参数达 2.8 万亿，基于 KDA 混合线性注意力机制（Kimi Delta Attention）和注意力残差（Attention Residuals）技术构建，采用 Gated MLA 与 Stable Latent MoE 等架构创新，原生支持视觉理解，并拥有 100 万 token 上下文窗口。\n与传统 Transformer 模型不同，Kimi K3 的 69 层 KDA 与 24 层 Gated MLA 构成混合注意力主干，Stable Latent MoE 以 896 个专家、每个 token 激活 16 个专家的方式提升模型容量。\n面对新架构对 AI 芯片软件栈提出的系统性挑战，摩尔线程在模型开源后第一时间完成了模型结构解析、权重加载、核心算子、缓存管理与分布式运行链路的适配。针对 KDA 核心创新，团队分别完成了 Prefill 与 Decode 阶段的关键路径适配，并以 Triton MUSA 正确性实现作为稳定基线。SGLang-MUSA 同步适配了 Hybrid State Pool，用于管理 KDA 递归状态与卷积状态，覆盖 Prefix Cache、分块 Prefill 及 PD 分离场景所需的状态生命周期。\n针对 Stable Latent MoE 的 896 专家、TopK 16 激活规模，摩尔线程快速完成了 DeepEP 适配，打通 token dispatch、combine 与跨卡 All-to-All 通信链路。MUSA 软件栈进一步完成模型路由、专家映射和分布式执行链路适配，通过 MCCL、DeepEP 与 MTSHMEM 协同承载张量并行、专家并行和低时延通信。面对 Kimi K3 官方 MXFP4 checkpoint，摩尔线程设计了加载期在线逐层量化方案，无需离线转换即可快速拉起推理。\nIT之家查询获悉，MTT S5000 是摩尔线程基于第四代“平湖”芯片架构打造的 AI 训推一体智算卡，单卡 AI 稠密算力最高可达 1000TFLOPS，配备 80GB 显存，显存带宽达 1.6TB/s，卡间互联带宽为 784GB/s，完整支持从 FP8 到 FP64 的全精度计算。\n相关阅读：\n《 Day0 适配：阿里云灵骏真武 M890 超节点实例现已支持月之暗面 Kimi K3 大模型 》\n《 月之暗面开源 Kimi K3 模型，2.8 万亿参数 》\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n投诉水文\n我要纠错\n下载IT之家APP，签到赚金币兑豪礼\n相关文章\n关键词： 摩尔线程 ， Kimi K3 ， MTT S5000\nDay0 适配：阿里云灵骏真武 M890 超节点实例现已支持月之暗面 Kimi K3 大模型\n华为官宣昇腾 0day 支持 Kimi K3 的训练适配及推理部署\nLM Studio Bionic 智能体工具新增月之暗面 Kimi K3 模型支持，定价方案公布\n科技行业力挺开源 AI，Anthropic 因保持沉默遭同行批评\n月之暗面开源 Kimi K3 模型，2.8 万亿参数\n月之暗面 Kimi K3 庆功照流出，现场标语“冲上月球”\n软媒旗下网站：\nIT之家\n最会买 - 返利返现优惠券\niPhone之家\nWin7之家\nWin10之家\nWin11之家\n软媒旗下软件：\n软媒手机APP应用\n魔方\n最会买\n要知",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-29/r-062-摩尔线程完成kimi-k3适配-mtt-s5000国产gpu支撑2-8万亿参数大模型.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-29/r-062-摩尔线程完成kimi-k3适配-mtt-s5000国产gpu支撑2-8万亿参数大模型.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "medium",
+  "extraction_method": "body-visible-text",
+  "readability_score": 52,
+  "extractor_diagnostics": {
+    "readability_score": 52,
+    "text_length": 1964,
+    "paragraph_count": 20,
+    "sentence_count": 9,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.001,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 1964,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "ae3e008b08cec062",
+    "missing": []
+  },
+  "evidence_strength": "rich_evidence",
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "摩尔线程完成Kimi K3适配：MTT S5000国产GPU支撑2.8万亿参数大模型",
+    "discovery_summary": "摩尔线程基于MTT S5000智算卡及MUSA软件栈，完成对月之暗面开源模型Kimi K3的Day-0支持。Kimi K3总参数达2.8万亿，是全球首个开源的3万亿级别模型，原生支持视觉理解并拥有100万token上下文窗口。",
+    "source_name": "IT之家（RSS）",
+    "origin_url": "https://www.ithome.com/0/982/959.htm",
+    "discovered_at": "2026-07-29T04:35:06.272Z",
+    "rank_on_page": 35,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "558ef52038fd249d",
+  "content_hash": "ae3e008b08cec062",
+  "full_text_hash": "ae3e008b08cec062",
+  "semantic_hash": "26e6431e9fabf569",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-29T03:00:21.000Z",
+  "last_seen_at": "2026-07-29T04:43:42.703Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "摩尔线程基于MTT S5000智算卡及MUSA软件栈，完成对月之暗面开源模型Kimi K3的Day-0支持。Kimi K3总参数达2.8万亿，是全球首个开源的3万亿级别模型，原生支持视觉理解并拥有100万token上下文窗口。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "8 万亿参数大模型 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "8 万亿参数大模型 2026/7/29 11:00:21 来源： IT之家 作者： 问舟 责编： 问舟 评论： 感谢IT之家网友 麻辣清补凉 的线索投递！",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "IT之家 7 月 29 日消息，月之暗面 7 月 28 日正式开源 2.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "8 万亿参数模型 Kimi K3 并发布模型权重与技术报告。",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "fact_extraction_status": "extracted_at_raw_ingestion",
+  "fact_extraction_method": "structured_key_excerpts_and_business_elements",
+  "fact_extraction_completed_at": "2026-07-29T04:43:42.703Z",
+  "business_elements": {
+    "companies": [
+      "IT之家（RSS）",
+      "Anthropic"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "3",
+      "5000",
+      "2.8万",
+      "0",
+      "3万",
+      "100万",
+      "2.8 万",
+      "5"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.",
+      "IT之家 7 月 29 日消息，月之暗面 7 月 28 日正式开源 2."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 摩尔线程完成Kimi K3适配：MTT S5000国产GPU支撑2.8万亿参数大模型\n\n- raw_id: R-062\n- title_zh: 摩尔线程完成Kimi K3适配：MTT S5000国产GPU支撑2.8万亿参数大模型\n- title_translation_status: not_required\n- title_translation_method: source_title\n- original_url: https://www.ithome.com/0/982/959.htm\n- source_name: IT之家（RSS）\n- collected_at: 2026-07-29T04:43:42.703Z\n\n## clean_text\n\n摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.8 万亿参数大模型 - IT之家\n首页\nIT圈\n最会买\n设置\n日夜间\n随系统\n浅色\n深色\n主题色 黑色\n投稿\n订阅\nRSS订阅\n收藏IT之家\n软媒应用\nApp客户端\n要知App\n软媒魔方\n业界\n手机\n电脑\n测评\n视频\nAI\n苹果\niPhone\n鸿蒙\n软件\n智车\n数码\n学院\n游戏\n直播\n5G\n微软\nWin10\nWin11\n专题\n搜索\n首页 > IT资讯 > 业界\n摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.8 万亿参数大模型\n2026/7/29 11:00:21\n来源： IT之家\n作者： 问舟\n责编： 问舟\n评论：\n感谢IT之家网友 麻辣清补凉 的线索投递！\nIT之家 7 月 29 日消息，月之暗面 7 月 28 日正式开源 2.8 万亿参数模型 Kimi K3 并发布模型权重与技术报告。\n同日，摩尔线程基于 AI 训推一体智算卡 MTT S5000 及 MUSA 软件栈，宣布完成 Kimi K3 的 Day-0 支持。\nKimi K3 是全球首个开源的 3 万亿级别模型，总参数达 2.8 万亿，基于 KDA 混合线性注意力机制（Kimi Delta Attention）和注意力残差（Attention Residuals）技术构建，采用 Gated MLA 与 Stable Latent MoE 等架构创新，原生支持视觉理解，并拥有 100 万 token 上下文窗口。\n与传统 Transformer 模型不同，Kimi K3 的 69 层 KDA 与 24 层 Gated MLA 构成混合注意力主干，Stable Latent MoE 以 896 个专家、每个 token 激活 16 个专家的方式提升模型容量。\n面对新架构对 AI 芯片软件栈提出的系统性挑战，摩尔线程在模型开源后第一时间完成了模型结构解析、权重加载、核心算子、缓存管理与分布式运行链路的适配。针对 KDA 核心创新，团队分别完成了 Prefill 与 Decode 阶段的关键路径适配，并以 Triton MUSA 正确性实现作为稳定基线。SGLang-MUSA 同步适配了 Hybrid State Pool，用于管理 KDA 递归状态与卷积状态，覆盖 Prefix Cache、分块 Prefill 及 PD 分离场景所需的状态生命周期。\n针对 Stable Latent MoE 的 896 专家、TopK 16 激活规模，摩尔线程快速完成了 DeepEP 适配，打通 token dispatch、combine 与跨卡 All-to-All 通信链路。MUSA 软件栈进一步完成模型路由、专家映射和分布式执行链路适配，通过 MCCL、DeepEP 与 MTSHMEM 协同承载张量并行、专家并行和低时延通信。面对 Kimi K3 官方 MXFP4 checkpoint，摩尔线程设计了加载期在线逐层量化方案，无需离线转换即可快速拉起推理。\nIT之家查询获悉，MTT S5000 是摩尔线程基于第四代“平湖”芯片架构打造的 AI 训推一体智算卡，单卡 AI 稠密算力最高可达 1000TFLOPS，配备 80GB 显存，显存带宽达 1.6TB/s，卡间互联带宽为 784GB/s，完整支持从 FP8 到 FP64 的全精度计算。\n相关阅读：\n《 Day0 适配：阿里云灵骏真武 M890 超节点实例现已支持月之暗面 Kimi K3 大模型 》\n《 月之暗面开源 Kimi K3 模型，2.8 万亿参数 》\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n投诉水文\n我要纠错\n下载IT之家APP，签到赚金币兑豪礼\n相关文章\n关键词： 摩尔线程 ， Kimi K3 ， MTT S5000\nDay0 适配：阿里云灵骏真武 M890 超节点实例现已支持月之暗面 Kimi K3 大模型\n华为官宣昇腾 0day 支持 Kimi K3 的训练适配及推理部署\nLM Studio Bionic 智能体工具新增月之暗面 Kimi K3 模型支持，定价方案公布\n科技行业力挺开源 AI，Anthropic 因保持沉默遭同行批评\n月之暗面开源 Kimi K3 模型，2.8 万亿参数\n月之暗面 Kimi K3 庆功照流出，现场标语“冲上月球”\n软媒旗下网站：\nIT之家\n最会买 - 返利返现优惠券\niPhone之家\nWin7之家\nWin10之家\nWin11之家\n软媒旗下软件：\n软媒手机APP应用\n魔方\n最会买\n要知\n\n## full_text\n\n摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.8 万亿参数大模型 - IT之家\n首页\nIT圈\n最会买\n设置\n日夜间\n随系统\n浅色\n深色\n主题色 黑色\n投稿\n订阅\nRSS订阅\n收藏IT之家\n软媒应用\nApp客户端\n要知App\n软媒魔方\n业界\n手机\n电脑\n测评\n视频\nAI\n苹果\niPhone\n鸿蒙\n软件\n智车\n数码\n学院\n游戏\n直播\n5G\n微软\nWin10\nWin11\n专题\n搜索\n首页 > IT资讯 > 业界\n摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.8 万亿参数大模型\n2026/7/29 11:00:21\n来源： IT之家\n作者： 问舟\n责编： 问舟\n评论：\n感谢IT之家网友 麻辣清补凉 的线索投递！\nIT之家 7 月 29 日消息，月之暗面 7 月 28 日正式开源 2.8 万亿参数模型 Kimi K3 并发布模型权重与技术报告。\n同日，摩尔线程基于 AI 训推一体智算卡 MTT S5000 及 MUSA 软件栈，宣布完成 Kimi K3 的 Day-0 支持。\nKimi K3 是全球首个开源的 3 万亿级别模型，总参数达 2.8 万亿，基于 KDA 混合线性注意力机制（Kimi Delta Attention）和注意力残差（Attention Residuals）技术构建，采用 Gated MLA 与 Stable Latent MoE 等架构创新，原生支持视觉理解，并拥有 100 万 token 上下文窗口。\n与传统 Transformer 模型不同，Kimi K3 的 69 层 KDA 与 24 层 Gated MLA 构成混合注意力主干，Stable Latent MoE 以 896 个专家、每个 token 激活 16 个专家的方式提升模型容量。\n面对新架构对 AI 芯片软件栈提出的系统性挑战，摩尔线程在模型开源后第一时间完成了模型结构解析、权重加载、核心算子、缓存管理与分布式运行链路的适配。针对 KDA 核心创新，团队分别完成了 Prefill 与 Decode 阶段的关键路径适配，并以 Triton MUSA 正确性实现作为稳定基线。SGLang-MUSA 同步适配了 Hybrid State Pool，用于管理 KDA 递归状态与卷积状态，覆盖 Prefix Cache、分块 Prefill 及 PD 分离场景所需的状态生命周期。\n针对 Stable Latent MoE 的 896 专家、TopK 16 激活规模，摩尔线程快速完成了 DeepEP 适配，打通 token dispatch、combine 与跨卡 All-to-All 通信链路。MUSA 软件栈进一步完成模型路由、专家映射和分布式执行链路适配，通过 MCCL、DeepEP 与 MTSHMEM 协同承载张量并行、专家并行和低时延通信。面对 Kimi K3 官方 MXFP4 checkpoint，摩尔线程设计了加载期在线逐层量化方案，无需离线转换即可快速拉起推理。\nIT之家查询获悉，MTT S5000 是摩尔线程基于第四代“平湖”芯片架构打造的 AI 训推一体智算卡，单卡 AI 稠密算力最高可达 1000TFLOPS，配备 80GB 显存，显存带宽达 1.6TB/s，卡间互联带宽为 784GB/s，完整支持从 FP8 到 FP64 的全精度计算。\n相关阅读：\n《 Day0 适配：阿里云灵骏真武 M890 超节点实例现已支持月之暗面 Kimi K3 大模型 》\n《 月之暗面开源 Kimi K3 模型，2.8 万亿参数 》\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n投诉水文\n我要纠错\n下载IT之家APP，签到赚金币兑豪礼\n相关文章\n关键词： 摩尔线程 ， Kimi K3 ， MTT S5000\nDay0 适配：阿里云灵骏真武 M890 超节点实例现已支持月之暗面 Kimi K3 大模型\n华为官宣昇腾 0day 支持 Kimi K3 的训练适配及推理部署\nLM Studio Bionic 智能体工具新增月之暗面 Kimi K3 模型支持，定价方案公布\n科技行业力挺开源 AI，Anthropic 因保持沉默遭同行批评\n月之暗面开源 Kimi K3 模型，2.8 万亿参数\n月之暗面 Kimi K3 庆功照流出，现场标语“冲上月球”\n软媒旗下网站：\nIT之家\n最会买 - 返利返现优惠券\niPhone之家\nWin7之家\nWin10之家\nWin11之家\n软媒旗下软件：\n软媒手机APP应用\n魔方\n最会买\n要知\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 52\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: medium\n\n## key_excerpts\n\n- fact_extraction_status: extracted_at_raw_ingestion\n- fact_extraction_method: structured_key_excerpts_and_business_elements\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 摩尔线程基于MTT S5000智算卡及MUSA软件栈，完成对月之暗面开源模型Kimi K3的Day-0支持。Kimi K3总参数达2.8万亿，是全球首个开源的3万亿级别模型，原生支持视觉理解并拥有100万token上下文窗口。\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.\n3. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 8 万亿参数大模型 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 摩尔线程宣布完成 Kimi K3 适配：MTT S5000 国产 GPU 支撑 2.\n4. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 8 万亿参数大模型 2026/7/29 11:00:21 来源： IT之家 作者： 问舟 责编： 问舟 评论： 感谢IT之家网友 麻辣清补凉 的线索投递！\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] IT之家 7 月 29 日消息，月之暗面 7 月 28 日正式开源 2.\n6. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 8 万亿参数模型 Kimi K3 并发布模型权重与技术报告。\n"
+}
