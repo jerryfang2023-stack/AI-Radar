@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { periodicReportTitleProblems } from "../periodic-report-title.mjs";
@@ -57,6 +58,24 @@ test("public evidence index resolves event, viewpoint, and historical community 
   assert.match(evidence.get("E:EV-db82b90cad1e7c14") || "", /^https?:\/\//u);
   assert.match(evidence.get("O:2081223709755650054") || "", /^https?:\/\//u);
   assert.match(evidence.get("C:28a9c526fc924e") || "", /^https?:\/\//u);
+});
+
+test("public evidence index keeps historical viewpoint sources after current snapshots are rebuilt", (t) => {
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-report-evidence-"));
+  t.after(() => fs.rmSync(fixtureRoot, { recursive: true, force: true }));
+  const siteData = path.join(fixtureRoot, "01-SiteV2", "site", "data");
+  const archiveDir = path.join(fixtureRoot, "01-SiteV2", "content", "07-points");
+  fs.mkdirSync(siteData, { recursive: true });
+  fs.mkdirSync(archiveDir, { recursive: true });
+  fs.writeFileSync(path.join(siteData, "data-center-v4-frontstage.json"), JSON.stringify({ events: [], entityProfiles: [] }));
+  fs.writeFileSync(
+    path.join(archiveDir, "2026-07-26-builders-viewpoints.md"),
+    "## Archived viewpoint\n\n- stable_id: `BP-20260726-24`\n- source_url: `https://x.com/example/status/2081223709755650054`\n",
+  );
+
+  const evidence = buildEvidenceSourceIndex(fixtureRoot);
+  assert.equal(evidence.get("O:BP-20260726-24"), "https://x.com/example/status/2081223709755650054");
+  assert.equal(evidence.get("O:2081223709755650054"), "https://x.com/example/status/2081223709755650054");
 });
 
 test("periodic renderer escapes model-supplied HTML", () => {
