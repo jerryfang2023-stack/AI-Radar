@@ -141,7 +141,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
   for (const [file, target] of redirects) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
     assert.match(html, new RegExp(`url=${target.replace(/[?]/gu, "\\?")}`, "u"));
-    assert.match(html, /SITE-V4\.(?:2\.0-entity-history|3\.0-compatibility-write-disabled)/u);
+    assert.match(html, /SITE-V4\.(?:2\.0-entity-history|3\.0-compatibility-retired)/u);
     assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar/u);
   }
 
@@ -155,7 +155,7 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
       html,
       isHistoricalSnapshot
         ? /SITE-V4\.2\.0-entity-history/u
-        : /SITE-V4\.3\.0-compatibility-write-disabled/u,
+        : /SITE-V4\.3\.0-compatibility-retired/u,
     );
     assert.match(
       html,

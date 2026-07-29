@@ -74,7 +74,7 @@ Legacy page data remains isolated from the canonical flow. Page JSON cannot be u
 - `01-SiteV2/content/11-databases/targeted-backfill-v1/`: internal backfill queue and immutable discovery-run records; never a factual source.
 - `data-lake/tables/`: materialized V4 JSONL serving tables.
 - `01-SiteV2/site/data/data-center-v4/`: split frontstage indexes, details, entity profiles, taxonomy nodes, and manifest.
-- `archive/v3-compat/`: read-only historical Cards, V3 desk/graph, and mappings; never auto-discovered.
+- Historical V3 Cards, desk/graph, and mappings are absent from the working tree and recoverable only through an explicit Git ref.
 - `01-SiteV2/site/data/follow-builders-daily.json`: first-line viewpoints data.
 - `01-SiteV2/site/data/pipeline-dashboard.json`: operations dashboard data.
 

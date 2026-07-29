@@ -25,11 +25,14 @@ try {
 if (contract.schema_version !== "COMPATIBILITY-RETIREMENT-V1.0") {
   problems.push(`unexpected compatibility retirement schema: ${contract.schema_version || "missing"}`);
 }
-if (contract.release !== "SITE-V4.3.0-compatibility-write-disabled") {
+if (contract.release !== "SITE-V4.3.0-compatibility-retired") {
   problems.push(`unexpected compatibility retirement release: ${contract.release || "missing"}`);
 }
-if (contract.observation?.minimum_days !== 7 || !contract.observation?.must_cover_weekly_cycle) {
-  problems.push("compatibility observation must cover seven days and one weekly cycle");
+if (contract.observation?.state !== "superseded_by_explicit_retirement") {
+  problems.push("compatibility observation exception is not recorded");
+}
+if (!String(contract.observation?.final_interface_removal || "").includes("explicit user-directed")) {
+  problems.push("early final-interface removal must record explicit user direction");
 }
 
 const assets = new Map((contract.assets || []).map((asset) => [asset.id, asset]));
@@ -56,13 +59,10 @@ for (const id of [
   if (!asset.exit_conditions?.length) problems.push(`${id} has no exit conditions`);
 }
 
-for (const id of ["raw_pool_card", "v3_data_observation_desk", "intelligence_graph_index", "v3_relationship_graph", "v3_frontstage_site_content"]) {
+for (const id of ["raw_pool_card", "v3_data_observation_desk", "intelligence_graph_index", "v3_relationship_graph", "v3_frontstage_site_content", "trend_candidates"]) {
   const asset = assets.get(id);
-  if (asset?.status !== "retired_archive") problems.push(`${id} must be retired_archive`);
+  if (asset?.status !== "retired_git_history") problems.push(`${id} must be retired_git_history`);
   if (asset?.current_consumers?.length) problems.push(`${id} still has active consumers`);
-}
-if (assets.get("trend_candidates")?.status !== "manual_archive") {
-  problems.push("trend_candidates must remain manual_archive");
 }
 
 const retiredTrend = assets.get("trend_candidates") || {};

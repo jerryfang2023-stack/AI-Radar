@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now on the `SITE-V4.3.0-compatibility-write-disabled` public website and data-service baseline.
+WaveSight AI is now on the `SITE-V4.3.0-compatibility-retired` public website and data-service baseline.
 
 ## Current Positioning
 
@@ -70,7 +70,7 @@ Old V2 and V3 public page rules are retired. If they conflict with SITE-V4.3.0, 
 
 - Raw only collects external materials. Search tools are discovery entrances and accepted facts must resolve to original sources.
 - Claims require exact RawDocument source spans. Events require Claim and SourceArtifact references.
-- Pool/Card files are frozen history under `archive/v3-compat/`; neither is a V4 fact layer or current production input.
+- Pool/Card files and compatibility payloads are absent from the working tree; Git history is the only explicit recovery route.
 - Missing and conflicting fields remain explicit; no source-bounded field may be invented.
 - Technical Tags and structured Facets require Claim evidence and do not rank or admit events. Product form, use case, industry, deployment model, and target user remain Facets rather than technical Tags.
 - Missing frontstage fields must not fallback to backend fields.

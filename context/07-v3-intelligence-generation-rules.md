@@ -8,7 +8,7 @@ priority: historical
 # V3 Intelligence Generation Rules — Retired
 
 V3 Raw / Pool / Signal Card, V3 desk, Card-derived graph, and legacy mapping
-production stopped in `SITE-V4.3.0-compatibility-write-disabled`.
+production and compatibility interfaces were removed in `SITE-V4.3.0-compatibility-retired`.
 
 This file is a routing notice, not a production rule source.
 
@@ -23,23 +23,17 @@ Use:
 
 ## Historical assets
 
-Frozen assets are stored under:
+No V3 payload directory remains in the current working tree. Production,
+pages, gates, data-lake sync, Obsidian sync, supervision, and health recovery
+cannot discover historical assets.
 
-- `archive/v3-compat/signal-cards/`
-- `archive/v3-compat/frontstage/`
-- `archive/v3-compat/legacy-mappings/`
-
-They are read-only, excluded from deployment, and cannot be auto-discovered by
-current workflows, pages, gates, data-lake sync, Obsidian sync, supervision, or
-health recovery.
-
-Historical/manual research may access them only through an explicit archive
-path. It cannot publish them, mutate V4 canonical tables, or re-enable daily
-compatibility writers.
+Historical/manual research may restore them only through an explicit Git ref in
+an isolated worktree. It cannot publish them, mutate V4 canonical tables, or
+re-enable compatibility writers.
 
 ## Phase boundary
 
-The compatibility writers and consumers are disabled in Phase 3. Dormant
-implementation files and the optional read-only `compatibility_cards`
-projection remain for one observation release. Phase 4 deletes those interfaces
-only after seven consecutive days and one weekly cycle pass without fallback.
+Phase 4 is complete: compatibility writers, consumers, dormant implementations,
+payload archives, and `compatibility_cards` are removed. The planned observation
+window was superseded by the user's explicit final-retirement instruction on
+2026-07-29 and is recorded as an exception rather than a completed observation.

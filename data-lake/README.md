@@ -1,6 +1,6 @@
 # WaveSight Light Data Lake
 
-This directory is the rebuildable machine-readable serving layer for WaveSight Data Center V4 and frozen V3 compatibility data.
+This directory is the rebuildable machine-readable serving layer for WaveSight Data Center V4.
 
 It does not replace the Git-tracked daily V4 bundles under `01-SiteV2/content/11-databases/data-center-v4/`.
 
@@ -55,7 +55,6 @@ V4 canonical serving tables:
 | `claims` | Exact-span factual claims |
 | `entities`, `entity_mentions` | Candidate entity registry and mentions |
 | `canonical_events` | EVENT-V1 normalized events, status, conflicts and revisions |
-| `compatibility_cards` | Judgment-free Card renderers derived from CanonicalEvents |
 | `event_sources`, `event_claims`, `event_conflicts` | Event provenance and conflict links |
 | `relationships` | Source-backed subject/predicate/object rows linked to events and Claims |
 | `tag_assertions` | TAG-V4 evidence-backed technical semantic assertions |
@@ -63,36 +62,12 @@ V4 canonical serving tables:
 | `fde_records` | FDE-V2 source-bounded implementation projections |
 | `hardware_records` | HARDWARE-V1 source-bounded hardware projections |
 | `qa_queue` | Quarantined, partial, or no-event review records |
-| `legacy_asset_mappings` | V3 Raw/Card compatibility identifiers mapped to V4 records |
-
-Legacy compatibility tables:
-
-| Table | Source | Purpose |
-|---|---|---|
-| `raw_items` | `01-SiteV2/content/01-raw/originals/**/*.json` | Raw evidence inventory, extraction quality, source routing, and text-contamination checks |
-| `pool_daily` | `01-SiteV2/content/02-pool/*.md` | Daily Pool count and candidate heading counts |
-| `signal_cards` | `01-SiteV2/knowledge/01-Signal-Cards/**/*.md` | Long-term Signal Card inventory and evidence linkage |
-| `builders_daily` | `01-SiteV2/content/07-points/*.md` | First-Line Viewpoints daily sync summary |
-| `community_items` | `01-SiteV2/site/data/community-intelligence.json` | Community Intelligence current item index |
-| `frontstage_cards` | `01-SiteV2/site/data/v3-data-observation-desk.json` | Internal V3 compatibility Cards; not the public V4 event set |
-| `fde_items` | `01-SiteV2/site/data/enterprise-ai-fde.json` and V3 desk data | Enterprise AI / FDE lens item index |
 
 ## Example Queries
 
 ```sql
-select date, count(*) as raw_count
-from raw_items
-group by date
-order by date desc;
-
-select date, count(*) as contaminated
-from raw_items
-where mojibake_score > 0
-group by date
-order by contaminated desc;
-
-select card_kind, count(*) as cards
-from signal_cards
-group by card_kind
-order by cards desc;
+select data_date, count(*) as event_count
+from canonical_events
+group by data_date
+order by data_date desc;
 ```

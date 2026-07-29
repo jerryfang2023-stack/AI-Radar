@@ -234,5 +234,5 @@ agent-workflow/reports/YYYY-MM-DD-weekly-ai-business-change-radar.md
 ## Handoff
 
 After weekly report, coordinate with:
-- `guanlan-trend-candidate-writer` only when a chain needs a lightweight trend-candidate decision
+- Trend structure is written only inside the evidence-bounded weekly report task; the retired V3 trend-candidate skill must not be used
 - Codex / Hermes repair handoff when report generation exposes missing source data, weak counts, or cross-lane freshness gaps

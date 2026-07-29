@@ -35,7 +35,7 @@ function parseCurrentVersions() {
 
 const versions = parseCurrentVersions();
 const expected = {
-  site: "SITE-V4.3.0-compatibility-write-disabled",
+  site: "SITE-V4.3.0-compatibility-retired",
   ops: "OPS-V2.0.0-v4-telemetry",
   reports: "REPORTS-V1.1.0-lane-independent",
   opportunity: "OMAP-V2.0.0-v4-evidence",
@@ -61,7 +61,7 @@ const ledgerChecks = [
   ["Skill governance editor", "guanlan-skill-editor v1.0.2"],
   ["Code and rule auditor", "guanlan-code-rule-auditor v1.0.2"],
   ["Skill Store version", expected.skillStore],
-  ["Git tag", "v4.3.0-compatibility-write-disabled"],
+  ["Git tag", "v4.3.0-compatibility-retired"],
 ];
 for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);

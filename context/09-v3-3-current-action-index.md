@@ -36,8 +36,8 @@ These actions cannot run by default and cannot block publication:
 - compatibility frontstage/data-lake/Obsidian staging;
 - daily trend-candidate or no-decision generation.
 
-Historical assets live under `archive/v3-compat/`. Only explicit historical
-tools may read them.
+Historical assets are available only through explicit Git-history recovery in
+an isolated worktree. Current tools cannot discover them.
 
 ## Execution rules
 
@@ -47,4 +47,4 @@ tools may read them.
 - Report content generation is independent from Opportunity Map direction work.
 - FDE/Hardware sync follows V4 materialization.
 - `assert:no-active-v3` is release-blocking.
-- `compatibility_cards` is optional/read-only/deprecated until the Phase 4 gate.
+- `compatibility_cards` is deleted; its return is release-blocking.

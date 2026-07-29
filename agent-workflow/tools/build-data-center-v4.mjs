@@ -1042,12 +1042,6 @@ function clusterEvents(candidates) {
   return { canonicalEvents, conflicts };
 }
 
-function compatibilityCardType(eventType) {
-  if (eventType === "funding") return "funding";
-  if (["deployment", "procurement_contract", "partnership"].includes(eventType)) return "case";
-  return "product_service";
-}
-
 function forbiddenKeys(value, trail = "", out = []) {
   if (Array.isArray(value)) value.forEach((item, index) => forbiddenKeys(item, `${trail}[${index}]`, out));
   else if (value && typeof value === "object") {
@@ -1379,31 +1373,6 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     claim_ref: claim.claim_id,
     source_refs: event.source_refs
   })));
-  const compatibilityCards = canonicalEvents.flatMap((event) => {
-    if (!isCompletePublicEventTitle(event.display_title_zh)) return [];
-    const document = event.source_refs.map((id) => rawBySource.get(id)).find(Boolean);
-    const displayTitle = event.display_title_zh;
-    const eventClaimRows = event.claim_refs.map((id) => claimsById.get(id)).filter(Boolean);
-    const firstClaim = eventClaimRows.find((claim) => normalizeEventTitle(claim.source_quote).toLowerCase() !== displayTitle.toLowerCase());
-    if (!firstClaim) {
-      qaQueue.push({ qa_id: `QA-${hash(`${event.event_id}|card-fact`)}`, asset_id: event.event_id, reason: "compatibility_card_distinct_fact_missing", status: "open", source_ref: event.source_refs[0] });
-      return [];
-    }
-    return [{
-      card_id: `CARD-${hash(event.event_id)}`,
-      event_id: event.event_id,
-      card_type: compatibilityCardType(event.event_type),
-      title: displayTitle,
-      fact: firstClaim?.source_quote || "",
-      event_status: event.event_status,
-      publication_status: event.publication_status,
-      event_time: event.event_time,
-      claim_refs: event.claim_refs,
-      source_refs: event.source_refs,
-      conflicts: event.conflicts,
-      missing_fields: event.missing_fields
-    }];
-  });
   const files = {
     source_artifacts: sourceArtifacts,
     raw_documents: rawDocuments,
@@ -1411,7 +1380,6 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     entities: entityRows,
     entity_mentions: entityMentions,
     canonical_events: canonicalEvents,
-    compatibility_cards: compatibilityCards,
     event_sources: eventSources,
     event_claims: eventClaims,
     relationships,
@@ -1432,7 +1400,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     date,
     generated_at: generatedAt,
     source_of_truth: "source_artifact_raw_claim_event",
-    compatibility_write_state: "disabled",
+    compatibility_state: "retired",
     counts: Object.fromEntries(Object.entries(files).map(([name, rows]) => [name, rows.length])),
     forbidden_field_hits: forbiddenKeys(files)
   };
@@ -1509,12 +1477,6 @@ export function repairExistingEntityLinks(bundle, generatedAt = new Date().toISO
     repairedEventIds.push(event.event_id);
   }
 
-  const repairedIds = new Set(repairedEventIds);
-  for (const card of bundle.compatibility_cards || []) {
-    if (repairedIds.has(card.event_id)) {
-      card.missing_fields = (card.missing_fields || []).filter((field) => field !== "entities");
-    }
-  }
   if (bundle.manifest) {
     bundle.manifest.generated_at = generatedAt;
     bundle.manifest.counts.entities = bundle.entities.length;

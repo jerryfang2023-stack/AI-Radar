@@ -219,32 +219,6 @@ function collectPoolDaily() {
   });
 }
 
-function collectSignalCards() {
-  const cardRoot = path.join(root, "01-SiteV2/knowledge/01-Signal-Cards");
-  return listFiles(cardRoot, (file) => file.endsWith(".md") && !file.endsWith("README.md")).map((file) => {
-    const text = readText(file);
-    const fm = parseFrontmatter(text);
-    const relativeParts = rel(file).split("/");
-    const cardKind = relativeParts[3] || "";
-    return {
-      date: safeString(fm.date || extractDateFromPath(file)),
-      id: safeString(fm.id),
-      card_kind: cardKind,
-      type: safeString(fm.type),
-      title: safeString(fm.title),
-      status: safeString(fm.status),
-      evidence_gate: safeString(fm.evidence_gate),
-      company_name: safeString(fm.company_name || fm.organization),
-      product_name: safeString(fm.product_name),
-      website: safeString(fm.website || fm.primary_raw?.source_url),
-      raw_ref: safeString(Array.isArray(fm.raw_refs) ? fm.raw_refs[0] : fm.primary_raw?.raw_ref),
-      raw_json: safeString(fm.primary_raw?.raw_json),
-      mojibake_score: contaminationScore(fm.title, fm.company_name, fm.product_name, text.slice(0, 12000)),
-      path: rel(file)
-    };
-  });
-}
-
 function collectBuildersDaily() {
   const pointsRoot = path.join(root, "01-SiteV2/content/07-points");
   return listFiles(pointsRoot, (file) => file.endsWith(".md")).map((file) => {
@@ -280,24 +254,6 @@ function collectCommunityItems() {
   }));
 }
 
-function collectFrontstageCards() {
-  const file = path.join(root, "01-SiteV2/site/data/v3-data-observation-desk.json");
-  if (!exists(file)) return [];
-  const data = readJson(file);
-  return (data.frontstageCards || data.cards || []).map((card, index) => ({
-    date: safeString(card.date || card.published_at || data.meta?.date || ""),
-    id: safeString(card.id || card.card_id || `frontstage-${index + 1}`),
-    title: safeString(card.title),
-    card_type: safeString(card.type || card.cardType || card.category),
-    company: safeString(card.company || card.company_name || card.signal_owner),
-    source_url: safeString(card.source_url || card.url || card.original_url),
-    score: safeNumber(card.score || card.importance_score),
-    is_top10: Boolean((data.top10 || []).some((top) => (top.id || top.card_id || top.title) === (card.id || card.card_id || card.title))),
-    mojibake_score: contaminationScore(card.title, card.company, card.signal_owner, card.summary, card.fact),
-    path: rel(file)
-  }));
-}
-
 function collectEntityHistoryRows(field) {
   const file = path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json");
   if (!exists(file)) return [];
@@ -324,47 +280,6 @@ function collectDataCenterRows(fileName, idKey = "") {
   const deduped = new Map();
   for (const row of rows) deduped.set(safeString(row[idKey]) || JSON.stringify(row), row);
   return [...deduped.values()];
-}
-
-function collectFdeItems() {
-  const rows = [];
-  const fdeFile = path.join(root, "01-SiteV2/site/data/enterprise-ai-fde.json");
-  if (exists(fdeFile)) {
-    const data = readJson(fdeFile);
-    for (const [index, item] of [...(data.fdePool || []), ...(data.items || [])].entries()) {
-      rows.push({
-        date: safeString(item.date || data.meta?.date || ""),
-        id: safeString(item.id || item.stable_id || `fde-${index + 1}`),
-        title: safeString(item.title),
-        company: safeString(item.company || item.company_name || item.customer),
-        source_url: safeString(item.source_url || item.url),
-        stage: safeString(item.stage || item.implementation_stage),
-        mojibake_score: contaminationScore(item.title, item.company, item.summary),
-        path: rel(fdeFile)
-      });
-    }
-  }
-  const deskFile = path.join(root, "01-SiteV2/site/data/v3-data-observation-desk.json");
-  if (exists(deskFile)) {
-    const data = readJson(deskFile);
-    for (const [index, item] of [
-      ...(data.enterpriseAiFdePool || []),
-      ...(data.enterpriseAiLensCandidates || []),
-      ...(data.enterpriseAiTransformation || [])
-    ].entries()) {
-      rows.push({
-        date: safeString(item.date || data.meta?.date || ""),
-        id: safeString(item.id || item.raw_id || `desk-fde-${index + 1}`),
-        title: safeString(item.title),
-        company: safeString(item.company || item.company_name || item.signal_owner),
-        source_url: safeString(item.source_url || item.original_url || item.url),
-        stage: safeString(item.stage || item.enterprise_ai_transformation_stage),
-        mojibake_score: contaminationScore(item.title, item.company, item.summary, item.reason),
-        path: rel(deskFile)
-      });
-    }
-  }
-  return rows;
 }
 
 function findDuckDb() {
@@ -429,7 +344,6 @@ function main() {
     entities: collectDataCenterRows("entities", "entity_id"),
     entity_mentions: collectDataCenterRows("entity-mentions", "mention_id"),
     canonical_events: collectDataCenterRows("canonical-events", "event_id"),
-    compatibility_cards: collectDataCenterRows("compatibility-cards", "card_id"),
     event_sources: collectDataCenterRows("event-sources"),
     event_claims: collectDataCenterRows("event-claims"),
     event_conflicts: collectDataCenterRows("event-conflicts", "conflict_id"),
@@ -444,10 +358,7 @@ function main() {
     entity_relationships: collectEntityHistoryRows("entityRelationships"),
     qa_queue: collectDataCenterRows("qa-queue", "qa_id")
   };
-  // Phase 3 disables all production discovery of archived V3 tables. The
-  // historical collectors remain unreachable until they are deleted in Phase 4.
-  const legacyTables = {};
-  const tables = { ...legacyTables, ...v4Tables };
+  const tables = v4Tables;
   for (const [name, rows] of Object.entries(tables)) writeJsonl(name, rows);
   if (arg("duckdb", "required") === "skip") {
     console.log(JSON.stringify({ ok: true, duckdb: "skipped", database: rel(dbPath), generated_tables: Object.fromEntries(Object.entries(tables).map(([k, v]) => [k, v.length])) }, null, 2));

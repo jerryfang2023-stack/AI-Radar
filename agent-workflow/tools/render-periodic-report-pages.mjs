@@ -10,7 +10,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 }));
 const kind = args.get("kind") || "weekly";
 const date = args.get("date") || "";
-export const SITE_VERSION = "SITE-V4.3.0-compatibility-write-disabled";
+export const SITE_VERSION = "SITE-V4.3.0-compatibility-retired";
 export const REPORTS_CENTER_VERSION = "REPORTS-V1.1.0-lane-independent";
 
 export function escapeHtml(value = "") {

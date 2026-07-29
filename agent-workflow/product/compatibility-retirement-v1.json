@@ -1,35 +1,37 @@
 {
   "schema_version": "COMPATIBILITY-RETIREMENT-V1.0",
   "updated_at": "2026-07-29",
-  "release": "SITE-V4.3.0-compatibility-write-disabled",
-  "principle": "V3 compatibility assets are read-only history. No current production workflow, gate, page, projection, health check, or synchronization task may discover them.",
+  "release": "SITE-V4.3.0-compatibility-retired",
+  "principle": "V3 compatibility interfaces and payloads are removed from the working tree. Recovery is available only through explicit Git history and cannot be discovered by production.",
   "observation": {
-    "state": "started_on_deploy",
+    "state": "superseded_by_explicit_retirement",
     "minimum_days": 7,
     "must_cover_weekly_cycle": true,
-    "final_interface_removal": "Phase 4 after the observation gate passes"
+    "observed_days": 0,
+    "weekly_cycle_observed": false,
+    "final_interface_removal": "Completed early by explicit user-directed repository and Obsidian cleanup on 2026-07-29"
   },
   "assets": [
     {
       "id": "raw_pool_card",
-      "status": "retired_archive",
+      "status": "retired_git_history",
       "module": "Raw / Pool / Signal Card compatibility chain",
-      "interface": "archive/v3-compat/signal-cards and optional read-only compatibility_cards JSONL",
-      "implementation": "Historical assets are archived; current collection writes SOURCE-INTAKE-V1 and immutable source snapshots.",
+      "interface": "none",
+      "implementation": "Signal Cards and compatibility_cards are absent from the working tree, schema, builder, data lake, tests, and synchronization.",
       "current_consumers": [],
       "replacement": "SourceArtifact, RawDocument, Claim, CanonicalEvent, and downstream V4 evidence projections.",
       "exit_conditions": [
         "complete: current workflows and gates have zero Card-generation requirements",
         "complete: current pages and projections do not read Signal Cards",
-        "pending Phase 4: remove the optional compatibility_cards interface after observation"
+        "complete: optional compatibility_cards interface removed"
       ]
     },
     {
       "id": "v3_data_observation_desk",
-      "status": "retired_archive",
+      "status": "retired_git_history",
       "module": "V3 data observation desk dataset",
-      "interface": "archive/v3-compat/frontstage/v3-data-observation-desk.json",
-      "implementation": "Read-only historical JSON; its builder is dormant until Phase 4 deletion.",
+      "interface": "none",
+      "implementation": "Historical payload and dormant builder were removed; Git history is the only recovery route.",
       "current_consumers": [],
       "replacement": "V4 manifests, collection-telemetry-v1.json, and dedicated application projections.",
       "exit_conditions": [
@@ -39,10 +41,10 @@
     },
     {
       "id": "intelligence_graph_index",
-      "status": "retired_archive",
+      "status": "retired_git_history",
       "module": "Legacy intelligence graph index",
-      "interface": "archive/v3-compat/frontstage/intelligence-graph-index.json",
-      "implementation": "Read-only historical JSON; its builder is dormant until Phase 4 deletion.",
+      "interface": "none",
+      "implementation": "Historical payload and dormant builder were removed; Git history is the only recovery route.",
       "current_consumers": [],
       "replacement": "ENTITY-V1.0 profiles and RELATION-V2.1 factual relationship indexes.",
       "exit_conditions": [
@@ -52,10 +54,10 @@
     },
     {
       "id": "v3_relationship_graph",
-      "status": "retired_archive",
+      "status": "retired_git_history",
       "module": "Card-derived relationship graph",
-      "interface": "relationshipGraph and relationshipDirections in the archived V3 desk",
-      "implementation": "Archived with the V3 desk; never used as factual evidence.",
+      "interface": "none",
+      "implementation": "Removed with the V3 desk; Git history is the only recovery route.",
       "current_consumers": [],
       "replacement": "RELATION-V2.1 accepted event, Claim, entity, and source-backed relationships.",
       "exit_conditions": [
@@ -64,10 +66,10 @@
     },
     {
       "id": "v3_frontstage_site_content",
-      "status": "retired_archive",
+      "status": "retired_git_history",
       "module": "Legacy site-content frontstage payload",
-      "interface": "archive/v3-compat/frontstage/site-content.json and site-content.js",
-      "implementation": "Read-only historical JSON/JavaScript payload; removed from public site pages and Pages source.",
+      "interface": "none",
+      "implementation": "Historical JSON/JavaScript payload was removed from the working tree and Pages source.",
       "current_consumers": [],
       "replacement": "Split V4 frontstage services and dedicated application datasets.",
       "exit_conditions": [
@@ -77,16 +79,14 @@
     },
     {
       "id": "trend_candidates",
-      "status": "manual_archive",
-      "module": "Trend candidate and explicit no-decision artifacts",
-      "interface": "Historical trend-candidate Markdown and explicit historical tooling",
-      "implementation": "run-trend-candidate-decision.mjs is historical/manual only.",
-      "current_consumers": [
-        "manual historical research only"
-      ],
+      "status": "retired_git_history",
+      "module": "V3 trend candidate and explicit no-decision artifacts",
+      "interface": "none",
+      "implementation": "Historical Markdown and the explicit V3 trend-candidate tool were removed; Git history is the only recovery route.",
+      "current_consumers": [],
       "replacement": "Trend Radar reads accepted V4 events, Claims, entities, and sources.",
       "exit_conditions": [
-        "complete: absent from daily workflows and publication gates"
+        "complete: absent from the working tree, daily workflows, and publication gates"
       ],
       "forbidden_in_daily_execution": [
         "run-trend-candidate-decision.mjs",

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: local-sync
-last_updated: 2026-07-09
+last_updated: 2026-07-29
 ---
 
 # Local GitHub Sync
@@ -12,13 +12,13 @@ Purpose: after GitHub daily automation merges a PR into `main`, this local Windo
 
 The local workspace is the Obsidian vault. After a fast-forward sync from `origin/main`, the following updated assets become visible locally:
 
-- business-signal Raw / Pool / Card assets under `01-SiteV2/content/`
-- persistent business-signal Cards under `01-SiteV2/knowledge/01-Signal-Cards/`
+- V4 SourceArtifact / RawDocument snapshots and canonical bundles under `01-SiteV2/content/01-raw/originals/` and `01-SiteV2/content/11-databases/data-center-v4/`
+- V4 entity, relationship, application-projection, and operations data under `01-SiteV2/site/data/`
 - first-line viewpoint data under `01-SiteV2/site/data/follow-builders-daily.json`
 - first-line viewpoint Obsidian timelines under `01-SiteV2/knowledge/02-Opinion-Timelines/`
 - frontstage and dashboard data under `01-SiteV2/site/data/`
 
-Business Signals and First-Line Viewpoints are synced as separate data streams. Builders content stays in the builders route and must not be treated as business-signal evidence.
+V4 factual data and First-Line Viewpoints are synced as separate data streams. Builders content stays in the builders route and must not be treated as factual evidence.
 
 ## Scripts
 
@@ -72,9 +72,9 @@ When online monitoring adds or changes source pools, the local sync path still r
 3. The merge lands on `main`.
 4. Local sync pulls the updated files into Obsidian.
 
-For the current SITE-V4.2 routes:
+For the current SITE-V4.3 routes:
 
-- commercial signal sources are expected to land in the Raw / Pool / Card chain and then into `01-SiteV2/content/04-business-signals/` and `01-SiteV2/knowledge/01-Signal-Cards/`
+- commercial sources enter structured intake, then SourceArtifact / RawDocument / Claim / CanonicalEvent bundles and V4 application projections
 - builders sources are expected to land in the independent follow-builders chain and then into `01-SiteV2/site/data/follow-builders-daily.json` and `01-SiteV2/knowledge/02-Opinion-Timelines/`
 
 If you need to refresh First-Line Viewpoints locally before merge, run:

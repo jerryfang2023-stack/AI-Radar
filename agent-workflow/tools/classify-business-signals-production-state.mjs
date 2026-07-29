@@ -27,8 +27,8 @@ export function classifyBusinessSignalsProduction(input = {}) {
     if (failed) return { ok: false, status: "failed", stage, reason: `${failed[1]} outcome is ${value(input, failed[0])}` };
   }
 
-  if (String(input.compatibilityWriteDisabled) !== "true") {
-    return { ok: false, status: "failed", stage: "policy", reason: "compatibility writers are not explicitly disabled" };
+  if (String(input.compatibilityRetired) !== "true") {
+    return { ok: false, status: "failed", stage: "policy", reason: "V3 compatibility retirement is not explicitly declared" };
   }
 
   if (value(input, "commit") !== "success") {
@@ -52,10 +52,10 @@ export function classifyBusinessSignalsProduction(input = {}) {
 }
 
 function runFixtures() {
-  const passedStages = { monitor: "success", evidenceGate: "success", dataCenterBuild: "success", dataCenterGate: "success", dataCenterMaterialize: "success", opportunity: "success", trend: "success", funding: "success", operations: "success", freshness: "success", compatibilityWriteDisabled: "true", commit: "success" };
+  const passedStages = { monitor: "success", evidenceGate: "success", dataCenterBuild: "success", dataCenterGate: "success", dataCenterMaterialize: "success", opportunity: "success", trend: "success", funding: "success", operations: "success", freshness: "success", compatibilityRetired: "true", commit: "success" };
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, dataCenterGate: "failure" }).stage, "data_center_v4");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, opportunity: "failure" }).stage, "application_projection");
-  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, compatibilityWriteDisabled: "false" }).stage, "policy");
+  assert.equal(classifyBusinessSignalsProduction({ ...passedStages, compatibilityRetired: "false" }).stage, "policy");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, changed: "true", pr: "success", merge: "success", mergeStatus: "publication_waiting" }).status, "publication_waiting");
   assert.equal(classifyBusinessSignalsProduction({ ...passedStages, changed: "false" }).status, "passed");
   console.log(JSON.stringify({ ok: true, fixture: "business-signals-production-state" }, null, 2));

@@ -18,20 +18,20 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V4.3.0-compatibility-write-disabled |
-| Version name | WaveSight V4 Compatibility Write Disabled |
+| Current version | V4.3.0-compatibility-retired |
+| Version name | WaveSight V4 Compatibility Retired |
 | Version layer | Minor |
 | Release date | 2026-07-29 |
 | Last modified at | 2026-07-29T00:00:00+08:00 |
 | Product version | V4.3 |
 | Data center version | SITE-V4.0-data-center |
-| Main website version | SITE-V4.3.0-compatibility-write-disabled |
+| Main website version | SITE-V4.3.0-compatibility-retired |
 | Business Signals column version | BSIG-V2.2.0-pipeline-stage-ownership |
 | Tag taxonomy version | TAG-V4.0 |
 | First-Line Viewpoints column version | FLV-V1.1.0-history-backfill |
 | Community Intelligence column version | CINT-V1.0.2-publication-waiting-gate |
 | Enterprise AI / FDE data contract | FDE-V2.0 |
-| Enterprise AI compatibility lens version | EAI-V1.2.0-raw-card-ingestion-boundary |
+| Enterprise AI / FDE projection version | FDE-V2.0 |
 | AI Hardware data version | HARDWARE-V1.0 |
 | Reports Center column version | REPORTS-V1.1.0-lane-independent |
 | Opportunity Map column version | OMAP-V2.0.0-v4-evidence |
@@ -43,7 +43,6 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Person-account review contract | PERSON-REVIEW-V1.0 |
 | Factual relationship contract | RELATION-V2.1 |
 | Targeted historical collection contract | BACKFILL-V1.0 |
-| Legacy Business Signals contract | V3.3.6.3-business-source-artifact-aggregation |
 | Weekly Report content source | `01-SiteV2/content/08-report/` |
 | Monthly Report content source | `01-SiteV2/content/08-report/monthly/` |
 | Weekly report page-generator Skill | guanlan-weekly-report-page-generator v1.1.1 |
@@ -58,31 +57,30 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Operations backend version | OPS-V2.0.0-v4-telemetry |
 | Hermes contract | HERMES-V4.0-control-plane-watchdog |
 | Skill Store version | v1.7.0 Funding Insights generation lane |
-| Git tag | `v4.3.0-compatibility-write-disabled` |
+| Git tag | `v4.3.0-compatibility-retired` |
 | Current entries | Data Center / Trend Radar / Funding Insights / Opportunity Map / Industry Reports; V3 column URLs redirect into V4; Dashboard retained as backend |
 
 ## Current Product Baseline
 
 - WaveSight AI is now an AI industry data center. It produces source-traceable structured facts, not decisions, recommendations, commercial judgments, or education.
 - The canonical chain is SourceArtifact -> RawDocument -> Claim / Entity -> CanonicalEvent -> FDE / hardware projections -> data service.
-- SITE-V4.3.0 is the current public and data-service release. It preserves the V4 entity-history frontstage while disabling all current V3 compatibility writers.
+- SITE-V4.3.0 is the current public and data-service release. It preserves the V4 entity-history frontstage after removing all V3 compatibility writers, interfaces, payloads, and active documentation routes.
 - ENTITY-V1.0 formalizes companies/organizations, products/models/services, and people with stable `EN-*` IDs. Technology, use case, and industry remain `TX-*` classification nodes.
 - PERSON-REVIEW-V1.0 reviews all 37 unified person/account candidates, publishes 31 accepted natural people, quarantines 6 non-natural accounts from the person index, and preserves every source viewpoint record.
 - RELATION-V2.1 accepts only verified typed endpoints with an accepted event, Claim references, and SourceArtifact references; it adds explicit join, leave, and founding edges for people, and no Tag co-occurrence edges are allowed.
 - `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are compatibility redirects into V4.
-- The retired Raw / Pool / Signal Card chain, V3 desk, graph, and legacy mappings live only under `archive/v3-compat/`. Current collection writes immutable source snapshots plus `SOURCE-INTAKE-V1`; no current workflow, gate, page, projection, or synchronization task reads the archive.
-- `compatibility_cards` is optional, read-only, and deprecated for one observation release. Its final schema, builder, data-lake, Obsidian, test, and documentation removal belongs to Phase 4 after seven days and one weekly cycle pass.
+- The retired Raw / Pool / Signal Card chain, V3 desk, graph, legacy mappings, and `compatibility_cards` interface are absent from the working tree. Git history is the only explicit recovery route; current production cannot discover them.
 - First-Line Viewpoints is versioned as `FLV-V1.1.0-history-backfill` in this release. It materializes accepted committed morning snapshots into a historical dataset, merges current morning, historical morning, and afternoon intake by original URL, and admits only AI-relevant records with approved Chinese translation provenance and opinion tags. The morning RSS and afternoon local `follow-builders` lanes remain independent, and Obsidian person/date timeline sync remains idempotent.
 - Community Intelligence is versioned as `CINT-V1.0.2-publication-waiting-gate` in this release. It keeps logged-in local collection as the only collection route, uses GitHub only to publish already-generated validated files, and treats open PR / queued workflow states after healthy same-date data as Waiting rather than repair Problems.
-- Enterprise AI / FDE is versioned as `EAI-V1.2.0-raw-card-ingestion-boundary`. It is a frontstage interpretation and monitoring lens backed by an independent FDE Lens Pool, not a fourth Card type. English title translation and source-backed fact extraction belong to Raw / Card / FDE Lens Pool asset generation before frontstage rendering; public FDE items still require concrete implementation evidence, detail openability, and source-bounded demand / service / result analysis.
-- Business Signals now defaults to independent source artifact collection before unified Raw / Pool normalization: `aihot`, `keyword`, `gdelt`, and `rss` each preserve source-discovered items, while the unified monitor decides final eligibility and release gates.
+- Enterprise AI / FDE uses `FDE-V2.0`, projected only from accepted V4 Events, Claims, Entities, and Sources. It has no Card or Lens Pool dependency.
+- Commercial-event production collects independent source artifacts from `aihot`, `keyword`, `gdelt`, and `rss`, then builds structured V4 intake and canonical facts.
 - First-Line Viewpoints uses the independent morning RSS and afternoon follow-builders lanes, projected into `data-center.html?view=viewpoints`.
 - Community Intelligence uses the logged-in collection route and is projected into `data-center.html?view=community`.
-- Builders content must not enter business-signal Cards, relationship-graph evidence, or trend-candidate evidence.
+- Builders content must not enter CanonicalEvent, Claim, RELATION-V2.1, or factual Trend Radar evidence.
 - Dashboard keeps the operations backend at `operations-console.html`, but it is now a Data Observation governance loop rather than a content-production workspace. It is not exposed in the public frontstage navigation for this release.
 - Daily automation is split by production lane: Business Signals, First-Line Viewpoints, and Community Intelligence each have independent monitoring / gate / persistence / PR publication boundaries.
 - First-Line Viewpoints persists local Obsidian timelines as person / date files under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`; old month files must not be reintroduced.
-- Business Signals blocks social/community posts, repo/catalog pages, marketplace/package/model pages, generic funding lists, funding roundups, generic funding commentary, generic FDE role/service pages, job posts, role explainers, consulting/service landing pages, old evergreen technical posts, and search-query artifacts from formal Card promotion unless the same original source contains a concrete dated product/service, funding, customer deployment, procurement, partnership, or production rollout event.
+- V4 event normalization blocks social/community posts, repo/catalog pages, marketplace/package/model pages, generic funding lists, commentary, generic role/service pages, old evergreen posts, and search snippets from canonical facts unless accepted original-source evidence proves a concrete dated event.
 - Hermes no longer performs daily production supervision. `HERMES-V4.0-control-plane-watchdog` runs once at 10:20, after the Closure timeout window, and checks only whether the morning, recovery, and closure controllers left readable reports. Routine failures use the neutral production incident registry and are owned by Closure/Codex.
 - Production failures must be repaired from the earliest failed gate or report. If same-date artifacts are sufficient, use targeted repair and publication instead of restarting the lane.
 - Opportunity Map reads the dedicated downstream V4 projection `opportunity-evidence-v2.json`; neither application-center page fetches the public V3 desk JSON. Dashboard remains an independent backend consumer.
@@ -94,8 +92,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Skill Store `v1.7.0` adds the governed Funding Insight generator, unique-event historical backfill, secondary source capture, DeepSeek V4 Pro card generation, and fail-closed publication. It does not change any factual data contract or public column boundary.
 - `guanlan-code-rule-auditor` v1.0.2 requires version audits to compare every active version surface and preserves pre-repair drift evidence before synchronization.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
-- Internal V3 compatibility data may continue for opportunity-map projection, historical analytics, and Obsidian sync, but no public page may load its V3 CSS, JavaScript, navigation, or desk JSON.
-- The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
+- No internal V3 compatibility data remains. Opportunity Map, historical analytics, Obsidian indexing, and operations read V4-native data only.
+- Current V4 lane skills must encode recurring failures in gates or evals.
 - Daily supervision and Codex handoff are routed through the consolidated Closure controller. The legacy Hermes inbox remains readable history only.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
 - Skill Store governance is versioned separately as `v1.7.0`. Current Skill metadata, evals, registry entries, and mirrors add the Funding Insights historical generation lane while preserving Data Center V4, Trend Radar, Opportunity Map, Reports Center, Community Intelligence, and governance boundaries.
@@ -124,7 +122,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Scope | Version | Automation status | Source | Outputs |
 |---|---|---|---|---|
 | Operations Backend / 运营大后台 | `OPS-V2.0.0-v4-telemetry` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Reads `collection-telemetry-v1` and the V4 manifest/gate to separate collection, fact build, application projection, and publication. V3 assets are retired archive state and never health inputs. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, version ledger |
-| Commercial Events production | `SITE-V4.3.0-compatibility-write-disabled` | V4-native structured intake, canonical facts, application projections, and OPS; no V3 writer or consumer | `SOURCE-INTAKE-V1`, V4 integrity/materialization, application projection gates, `assert:no-active-v3` | V4 bundle, current application JSON, collection telemetry |
+| Commercial Events production | `SITE-V4.3.0-compatibility-retired` | V4-native structured intake, canonical facts, application projections, and OPS; V3 interfaces and payloads are absent | `SOURCE-INTAKE-V1`, V4 integrity/materialization, application projection gates, `assert:no-active-v3` | V4 bundle, current application JSON, collection telemetry |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Published in the V4 Data Center shell through the independent First-Line PR lane and GitHub Pages | Current morning RSS/X data, accepted committed morning snapshots, afternoon follow-builders intake, translation provenance, original-URL dedupe, and opinion timeline idempotency | `first-line-viewpoints-history.json`, `first-line-viewpoints-v4.json`, `data-center.html?view=viewpoints`, Obsidian opinion timelines |
 | Person-account review | `PERSON-REVIEW-V1.0` | Serving-layer admission contract for the Entity Index people view | Canonical entity candidates plus First-Line authors and accepted review evidence | 31 public natural-person profiles, 6 quarantined non-natural accounts, preserved viewpoint records |
 | Reports Center / 行业报告 | `REPORTS-V1.1.0-lane-independent` | Published as the first Application Center entry. Owns accepted Monthly / Weekly Markdown, deterministic page rendering, archives, and page-generator Skill validation independently from Opportunity Map. | `.github/workflows/periodic-reports-pr.yml` + `assert-periodic-report-content.mjs` + `render-periodic-report-pages.mjs` + Monthly/Weekly report content | `intelligence-map.html`, `monthly-business-structure-*.html`, `weekly-ai-business-change-radar*.html`, monthly/weekly report page-generator Skills, `01-SiteV2/content/08-report/` |
@@ -184,6 +182,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `v4.3.0-compatibility-retired` | V4 production / schema / data lake / Obsidian index / quality gates | 2026-07-29 | 2026-07-29T22:00:00+08:00 | SITE-V4.3.0-compatibility-retired | V3 payload archives in the working tree; compatibility_cards schema or output; dormant V3 producers or quality gates; Pages V3 exclusions | final no-active-V3 gate + pipeline policy + V4 schema/build/integrity tests + full frontstage/OPS tests |
 | `v4.3.0-compatibility-write-disabled` | Structured source intake / V4 production / application projections / OPS / V3 archive | 2026-07-29 | 2026-07-29T00:00:00+08:00 | SITE-V4.3.0-compatibility-write-disabled | daily Raw/Pool candidate Markdown; Signal Card, V3 desk, old graph, or legacy mapping writes; V3 health or publication blockers; archive discovery; required `compatibility_cards` | structured-intake tests + no-active-V3 gate + pipeline policy + compatibility retirement contract + full V4/site/OPS tests + no-V3 production rehearsal + Pages verification |
 | `v4.2.7-funding-insights-history` | Funding Insights historical application bundles / combined frontstage / generator Skill | 2026-07-26 | 2026-07-26T23:24:49+08:00 | FUNDING-INSIGHT-V1.0-auto-published-research / Skill Store v1.7.0 / guanlan-funding-insight-generator v1.0.0 | duplicate event research; search snippets as evidence; unnamed investors; missing exact quotes; blocked cards entering the public projection; application analysis mutating canonical facts | 59 bundle schema gates + unique-event coverage report + funding tests + Skill validation/sync/audit + frontstage regression + desktop/mobile smoke + GitHub Pages deploy |
 | `v4.2.6-funding-insights` | Funding Insights / shared V4 Application Center navigation / entity and Direction Card cross-links | 2026-07-26 | 2026-07-26T15:32:50+08:00 | FUNDING-INSIGHT-V1.0-auto-published-research / SITE-V4.2.0-entity-history | unnamed investors; model-only facts without captured exact quotes; search snippets as evidence; cards failing the deterministic publication gate; automatic mutation of canonical entities or relationships; human-review placeholders; Funding Insights buried inside Opportunity Map | funding schema + explicit-investor and exact-quote gates + generation/projection tests + desktop/mobile dialog smoke + GitHub Pages live verification |
@@ -264,7 +263,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 | SITE-V3.4.3 / EAI-V1.2.0-raw-card-ingestion-boundary | 2026-07-02T16:22:12+08:00 | Upgrades the Enterprise AI / FDE lens to the Raw/Card/FDE asset ingestion boundary: English title translation and source-backed fact extraction are recorded before frontstage rendering, FDE sync preserves ingestion-status metadata, and FDE precision still requires concrete implementation evidence, detail openability, and source-bounded demand / service / result analysis. | upgraded |
 | SITE-V3.4.2 / BSIG-V1.2.1-quality-boundary | 2026-07-02T12:45:00+08:00 | Hardens Business Signals quality boundaries from Raw/Pool routing through Card generation and public frontstage export: `notPromotedIssues` block public promotion, low-value AI-adjacent consumer entertainment / platform policy / roundup / explainer / analyst commentary / unclosed VC-fund items stay backend-only unless same-source concrete business evidence exists, Enterprise AI public candidates reuse the same low-value filter, retired Top10 fill memory is removed from skills, and same-date artifacts are repaired without rerunning the monitor chain. | upgraded |
 | SITE-V3.4.0 / IMAP-V2.0.0-report-center-opportunity-system | 2026-07-01T13:10:03+08:00 | Upgrades the former Intelligence Map into the Reports Center opportunity system: report-first hero, Monthly / Weekly entry cards, separate full-width Entry Point Map and Product Pain Map, click-to-open evidence modal, lower-saturation report-style palette, and relation paths as a supporting section. | upgraded |
-| OPS-V2.0.0-v4-telemetry | 2026-07-29T00:00:00+08:00 | Makes Data Center V4 manifest, integrity gate, ENTITY-V1.0, and RELATION-V2.1 the operations truth. Adds four-stage collection telemetry and demotes V3 desk, graph, and Signal Cards to non-blocking compatibility warnings. | current operations backend |
+| OPS-V2.0.0-v4-telemetry | 2026-07-29T00:00:00+08:00 | Makes Data Center V4 manifest, integrity gate, ENTITY-V1.0, and RELATION-V2.1 the operations truth. Adds four-stage collection telemetry and verifies V3 desk, graph, and Signal Cards are absent. | current operations backend |
 | OPS-V1.2.3-content-factory-cleanout | 2026-07-01T21:45:00+08:00 | Removes retired Topic Center / Content Factory / Publishing Queue surfaces from current operations rules and automation: deletes topic-center site data and generator scripts, removes Hermes topic-table handoff, stops AIP daily topic export, removes the local NotebookLM content-factory API, and keeps the operations backend focused on Data Observation governance plus independent Skill Store. | upgraded |
 | SITE-V3.3.8.7 / IMAP-V1.3.0-report-center-monthly / REPORTS-V0.2.0-monthly-report-center | 2026-06-30T18:00:00+08:00 | Adds the Reports Center release to Intelligence Map: weekly and monthly reports become separate subcolumns, the June monthly business-structure report has a full detail page with richer report typography and visual tables, the report page generator skill is registered, and opportunity radar content is refreshed from source-backed current-month signal cards. | upgraded |
 | OPS-V1.2.2-skill-store-title-dedupe | 2026-06-30T17:55:00+08:00 | Removes the duplicate outer Skill Store title from the operations shell while keeping Skill Store as an independent rail entry and embedded governance surface. | upgraded |
