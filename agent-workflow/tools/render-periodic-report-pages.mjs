@@ -10,6 +10,7 @@ const args = new Map(process.argv.slice(2).map((arg) => {
 }));
 const kind = args.get("kind") || "weekly";
 const date = args.get("date") || "";
+export const SITE_VERSION = "SITE-V4.3.0-compatibility-write-disabled";
 export const REPORTS_CENTER_VERSION = "REPORTS-V1.1.0-lane-independent";
 
 export function escapeHtml(value = "") {
@@ -461,7 +462,7 @@ function shell(metadata, content, markdown) {
   const sourceMetaName = kind === "weekly" ? "weekly-report-source" : "monthly-report-source";
   return `<!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="wavesight-version" content="SITE-V4.2.0-entity-history"><meta name="wavesight-column-version" content="${REPORTS_CENTER_VERSION}">
+<meta name="wavesight-version" content="${SITE_VERSION}"><meta name="wavesight-column-version" content="${REPORTS_CENTER_VERSION}">
 <meta name="${sourceMetaName}" content="${escapeHtml(metadata.source)}"><title>${escapeHtml(metadata.title)}｜观澜 AI</title>
 <link rel="icon" href="assets/brand/logo-wavesight-reference-symbol.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/data-center-v4.css"><link rel="stylesheet" href="assets/weekly-report.css"></head>
 <body class="weekly-report-page dc-report-page"><header class="dc-header"><a class="dc-brand" href="data-center.html" aria-label="观澜 AI 数据中心"><img src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI"></a><button class="dc-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="dc-sidebar">栏目</button></header>

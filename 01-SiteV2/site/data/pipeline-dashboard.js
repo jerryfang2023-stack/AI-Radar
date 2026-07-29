@@ -1,7 +1,7 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
     "version": "OPS-V2.0.0-v4-telemetry",
-    "generatedAt": "2026-07-29T07:50:04.354Z",
+    "generatedAt": "2026-07-29T13:33:07.873Z",
     "dateRange": {
       "start": "2026-07-23",
       "end": "2026-07-29"
@@ -21,8 +21,8 @@ window.WaveSightPipelineDashboard = {
         "raw_documents": 159
       },
       "evidence": [
-        "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\01-SiteV2\\content\\11-databases\\data-center-v4\\2026-07-29\\manifest.json",
-        "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\agent-workflow\\reports\\2026-07-29-guanlan-daily-monitor-log.md"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/manifest.json",
+        "agent-workflow/reports/2026-07-29-guanlan-daily-monitor-log.md"
       ]
     },
     {
@@ -42,8 +42,8 @@ window.WaveSightPipelineDashboard = {
         "qa_queue": 111
       },
       "evidence": [
-        "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\01-SiteV2\\content\\11-databases\\data-center-v4\\2026-07-29\\manifest.json",
-        "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\agent-workflow\\reports\\2026-07-29-data-center-v4-integrity-gate.json"
+        "01-SiteV2/content/11-databases/data-center-v4/2026-07-29/manifest.json",
+        "agent-workflow/reports/2026-07-29-data-center-v4-integrity-gate.json"
       ]
     },
     {
@@ -57,7 +57,7 @@ window.WaveSightPipelineDashboard = {
         "fde_hardware_sync": "passed"
       },
       "evidence": [
-        "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\agent-workflow\\reports\\2026-07-29-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-07-29-persistent-asset-manifest.json"
       ]
     },
     {
@@ -68,7 +68,7 @@ window.WaveSightPipelineDashboard = {
         "v4_bundle_ready": true
       },
       "evidence": [
-        "C:\\Users\\86186\\Documents\\Fang\\wiki\\AI热点\\01-WaveSight-v4-telemetry\\agent-workflow\\reports\\2026-07-29-persistent-asset-manifest.json"
+        "agent-workflow/reports/2026-07-29-persistent-asset-manifest.json"
       ]
     }
   ],
@@ -228,10 +228,10 @@ window.WaveSightPipelineDashboard = {
     "warnings": []
   },
   "compatibility": {
-    "status": "deprecated_non_blocking",
-    "v3_desk_present": true,
-    "intelligence_graph_present": true,
-    "signal_card_directory_present": true,
+    "status": "retired_archive",
+    "production_write": "disabled",
+    "active_consumers": 0,
+    "blocking": false,
     "warnings": []
   }
 };

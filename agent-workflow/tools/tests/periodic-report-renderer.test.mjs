@@ -11,10 +11,12 @@ import {
   formatReportWindow,
   parseFrontmatter,
   renderBody,
+  SITE_VERSION,
   REPORTS_CENTER_VERSION,
 } from "../render-periodic-report-pages.mjs";
 
 test("periodic renderer owns the report-center release version", () => {
+  assert.equal(SITE_VERSION, "SITE-V4.3.0-compatibility-write-disabled");
   assert.equal(REPORTS_CENTER_VERSION, "REPORTS-V1.1.0-lane-independent");
 });
 

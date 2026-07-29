@@ -174,6 +174,7 @@ export function classifyCommunityStages({
   lastTaskResult,
   taskState,
   loginState,
+  publicationConfirmed = false,
 }) {
   return {
     data: communityDataHealthy ? "healthy" : localWindowPassed ? "failed" : "pre_window_waiting",
@@ -185,7 +186,7 @@ export function classifyCommunityStages({
       : taskState === "Running"
         ? "running"
       : Number.isFinite(lastTaskResult) && lastTaskResult !== 0
-        ? communityDataHealthy ? "anomaly_after_data_success" : "failed"
+        ? publicationConfirmed ? "passed" : communityDataHealthy ? "anomaly_after_data_success" : "failed"
         : ["Ready", "Running"].includes(taskState) ? "passed" : "failed",
     login: loginState,
   };
@@ -749,8 +750,12 @@ export function buildFirstLineLane() {
     : publishedGateText ? `origin/main:${rel(gateFile)}` : "missing";
   evidence.manifest = localManifestText
     ? rel(manifestFile)
-    : publishedManifestText ? `origin/main:${rel(manifestFile)}` : "missing";
+    : publishedManifestText ? `origin/main:${rel(manifestFile)}` : "not_required_for_same_day_local_gate";
   evidence.manifestHealthy = manifestHealthy;
+  evidence.manifestRequired = date < shanghaiDate();
+  evidence.manifestStatus = manifestHealthy
+    ? "passed"
+    : evidence.manifestRequired ? "missing" : "not_required_for_same_day_local_gate";
   evidence.historicalEvidenceHealthy = historicalEvidenceHealthy;
   evidence.github = gh;
 
@@ -1088,13 +1093,14 @@ function buildCommunityLane() {
   evidence.stageStatus = classifyCommunityStages({
     communityDataHealthy,
     localWindowPassed,
-    published: Boolean(mergedPr || usePublishedData),
+    published: publicationConfirmed,
     publicationWaiting: Boolean(openPr || ["queued", "in_progress"].includes(gh.latest_run?.status)),
     publishWindowPassed,
     taskAvailable: task.available,
     lastTaskResult,
     taskState,
     loginState: evidence.login.state,
+    publicationConfirmed,
   });
 
   if (localWindowPassed && generatedDate !== date) {

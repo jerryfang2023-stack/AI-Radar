@@ -176,6 +176,12 @@ function aggregateIssues(items, days) {
   };
 }
 
+function isRetiredV3CompatibilityIssue(item) {
+  return item.state === "resolved"
+    && item.laneId === "business_signals"
+    && String(item.date || "") < "2026-07-29";
+}
+
 function laneToTask(lane, telemetry = {}) {
   const evidence = lane.evidence || {};
   const counts = lane.id === "business_signals"
@@ -285,7 +291,7 @@ const ledgerFile = "context/version-ledger.md";
 const supervision = readJson(supervisionFile, { lanes: [] });
 const pipeline = readJson(pipelineFile, {});
 const telemetry = readJson(telemetryFile, {});
-const inbox = parseIncidentInbox();
+const inbox = parseIncidentInbox().filter((item) => !isRetiredV3CompatibilityIssue(item));
 const supervisionIssues = buildSupervisionIssues(supervision);
 const allIssues = [...supervisionIssues, ...inbox];
 const openIssues = allIssues.filter((item) => item.state !== "resolved");

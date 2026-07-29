@@ -52,6 +52,44 @@ test("V4 telemetry passes without V3 desk, graph, or Signal Cards", () => {
     "application_projection",
     "publication",
   ]);
+  const evidence = result.stages.flatMap((item) => item.evidence);
+  assert.ok(evidence.length > 0);
+  assert.ok(evidence.every((item) => !path.isAbsolute(item)));
+  assert.ok(evidence.every((item) => !item.includes("\\")));
+  assert.ok(evidence.every((item) => item.startsWith("01-SiteV2/") || item.startsWith("agent-workflow/")));
+});
+
+test("application projection is not passed while any projection outcome is unknown", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-telemetry-partial-"));
+  const date = "2026-07-29";
+  const bundle = `01-SiteV2/content/11-databases/data-center-v4/${date}`;
+  writeJson(root, `${bundle}/manifest.json`, { date });
+  for (const name of [
+    "source-artifacts",
+    "raw-documents",
+    "claims",
+    "canonical-events",
+    "event-conflicts",
+    "qa-queue",
+    "entities",
+    "relationships",
+  ]) writeJson(root, `${bundle}/${name}.json`, []);
+  writeJson(root, `agent-workflow/reports/${date}-data-center-v4-integrity-gate.json`, {
+    date,
+    ok: true,
+    failures: [],
+    warnings: [],
+  });
+
+  const result = buildCollectionTelemetry({
+    root,
+    date,
+    outcomes: { trend: "success", funding: "success" },
+  });
+
+  assert.equal(result.application_projection.opportunity_map, "unknown");
+  assert.equal(result.application_projection.fde_hardware_sync, "unknown");
+  assert.equal(result.stages.find((item) => item.id === "application_projection").status, "partial");
 });
 
 test("daily workflow keeps lens sync and OPS telemetry independent from the V3 frontstage gate", () => {
@@ -75,6 +113,12 @@ test("operations console renders the four V4 production stages instead of the V3
   assert.doesNotMatch(client, /row\("Raw"[\s\S]*row\("Pool"[\s\S]*row\("Cards"/u);
   assert.doesNotMatch(client, />RAW<|>POOL<|>CARDS</u);
   assert.match(client, />SOURCES<[\s\S]*>CLAIMS<[\s\S]*>EVENTS</u);
+  const data = JSON.parse(fs.readFileSync(path.join(process.cwd(), "01-SiteV2/site/data/ops-console.json"), "utf8"));
+  const publishedIssues = [...(data.inbox?.open || []), ...(data.inbox?.resolved || [])];
+  assert.equal(
+    publishedIssues.some((item) => item.laneId === "business_signals" && item.state === "resolved" && item.date < "2026-07-29"),
+    false,
+  );
 });
 
 test("Pages artifact finalization marks publication passed with deployment evidence", () => {
