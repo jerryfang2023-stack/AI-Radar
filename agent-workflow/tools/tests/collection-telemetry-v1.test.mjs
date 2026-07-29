@@ -52,6 +52,11 @@ test("V4 telemetry passes without V3 desk, graph, or Signal Cards", () => {
     "application_projection",
     "publication",
   ]);
+  const evidence = result.stages.flatMap((item) => item.evidence);
+  assert.ok(evidence.length > 0);
+  assert.ok(evidence.every((item) => !path.isAbsolute(item)));
+  assert.ok(evidence.every((item) => !item.includes("\\")));
+  assert.ok(evidence.every((item) => item.startsWith("01-SiteV2/") || item.startsWith("agent-workflow/")));
 });
 
 test("daily workflow keeps lens sync and OPS telemetry independent from the V3 frontstage gate", () => {

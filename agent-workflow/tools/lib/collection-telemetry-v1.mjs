@@ -48,6 +48,10 @@ function normalizedOutcome(value, fallback = "unknown") {
   return fallback;
 }
 
+function repoRelative(root, file) {
+  return path.relative(root, file).replace(/\\/gu, "/");
+}
+
 function stage(id, label, status, counts = {}, evidence = []) {
   return { id, label, status, counts, evidence: evidence.filter(Boolean) };
 }
@@ -115,7 +119,7 @@ export function buildCollectionTelemetry({
       capture_succeeded: captureSucceeded,
       capture_failed: captureFailed,
       raw_documents: rawDocuments.length,
-    }, [manifestFile, monitorReportFile]),
+    }, [repoRelative(root, manifestFile), repoRelative(root, monitorReportFile)]),
     stage("fact_build", "事实构建", gatePassed ? "passed" : "failed", {
       accepted_claims: acceptedClaims,
       rejected_claims: rejectedClaims,
@@ -127,11 +131,11 @@ export function buildCollectionTelemetry({
       relationships: relationships.length,
       conflicts: conflicts.length,
       qa_queue: qaQueue.length,
-    }, [manifestFile, gateFile]),
-    stage("application_projection", "应用投影", projectionStatus, projectionOutcomes, [persistentManifestFile]),
+    }, [repoRelative(root, manifestFile), repoRelative(root, gateFile)]),
+    stage("application_projection", "应用投影", projectionStatus, projectionOutcomes, [repoRelative(root, persistentManifestFile)]),
     stage("publication", "发布", publicationOutcome, {
       v4_bundle_ready: gatePassed,
-    }, [persistentManifestFile]),
+    }, [repoRelative(root, persistentManifestFile)]),
   ];
 
   return {
