@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Ben's Bites AI Newsletter"
-opinion_count: 7
-latest_date: 2026-07-23
+opinion_count: 8
+latest_date: 2026-07-28
 ---
 
 # Ben's Bites AI Newsletter 观点时间线
-共 7 条观点，按人物 + 日期文件聚合。
+共 8 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-07-28](./2026-07-28.md)
 - [2026-07-23](./2026-07-23.md)
 - [2026-07-21](./2026-07-21.md)
 - [2026-07-16](./2026-07-16.md)
