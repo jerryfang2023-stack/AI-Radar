@@ -1,6 +1,6 @@
 {
   "schema_version": "COMPATIBILITY-RETIREMENT-V1.0",
-  "updated_at": "2026-07-25",
+  "updated_at": "2026-07-29",
   "principle": "Retain a compatibility module only while a named current consumer still needs behavior that the V4 factual core or a downstream adapter does not provide.",
   "assets": [
     {
@@ -10,7 +10,6 @@
       "interface": "Raw and Pool Markdown, accepted Signal Card Markdown, compatibility_cards JSONL",
       "implementation": "daily source monitor, evidence QA, Card generator, and Card gates",
       "current_consumers": [
-        "Opportunity Map opportunity_signals projection",
         "Operations Dashboard source-supply and Card funnel diagnostics",
         "legacy Card-to-event mappings and Obsidian compatibility archives"
       ],
@@ -104,18 +103,20 @@
     },
     {
       "id": "opportunity_map_projection",
-      "status": "migrated_off_v3_desk",
+      "status": "v4_native",
       "module": "Opportunity Map projection",
-      "interface": "01-SiteV2/site/data/industry-reports-frontstage.json",
-      "implementation": "build-industry-reports-frontstage.mjs reads accepted Signal Card assets directly",
+      "interface": "01-SiteV2/site/data/opportunity-evidence-v2.json",
+      "implementation": "opportunity-evidence-v2.mjs reads accepted V4 CanonicalEvents, Claims, SourceArtifacts, Entities, and FacetAssertions",
       "current_consumers": [
-        "opportunity-map.html"
+        "opportunity-map.html",
+        "Funding Insights related_direction_id resolver",
+        "weekly Direction Card candidate generator"
       ],
-      "replacement": "Next migration uses accepted V4 events, Claims, Facets, and a downstream opportunity semantics adapter while preserving the current page interface.",
+      "replacement": "Completed: downstream application assertions remain outside canonical V4 tables and each assertion binds an accepted Claim and SourceArtifact.",
       "exit_conditions": [
-        "current milestone complete: no V3 desk dependency",
-        "future milestone: team_or_function, specific_task, and pain_or_constraint are projected from accepted Claims outside canonical V4 tables",
-        "future milestone: Opportunity Map no longer reads Signal Card assets"
+        "complete: no V3 desk dependency",
+        "complete: application assertions are projected from accepted Claims outside canonical V4 tables",
+        "complete: Opportunity Map and Funding Insights no longer read Signal Card assets"
       ]
     },
     {
@@ -130,7 +131,8 @@
       ],
       "replacement": "Already reads accepted V4 canonical events for report generation.",
       "exit_conditions": [
-        "keep V3 desk and graph out of report generation and periodic change allowlists"
+        "keep V3 desk and graph out of report generation and periodic change allowlists",
+        "Opportunity Map generation failure remains a non-blocking warning for weekly report publication"
       ]
     },
     {

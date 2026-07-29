@@ -181,6 +181,18 @@ jobs:
           node 01-SiteV2/site/scripts/build-data-center-v4-frontstage.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-data-center-v4-frontstage.log"
 
+      - name: Build and gate Opportunity Map V4 projection
+        id: opportunity-map-v4
+        if: steps.data-center-v4-materialize.outcome == 'success'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs \
+            --date="${RUN_DATE}" \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-opportunity-map-v4.log"
+          npm run test:data-center-site:opportunity
+
       - name: Regenerate business-signal Card assets
         id: assets
         if: steps.data-center-v4-materialize.outcome == 'success'
@@ -217,7 +229,7 @@ jobs:
           node agent-workflow/tools/build-legacy-card-event-mappings.mjs
           node agent-workflow/tools/build-data-center-v4-obsidian-index.mjs
 
-      - name: Build internal Card compatibility data and Opportunity Map projection
+      - name: Build internal Card compatibility data
         id: site-sync
         if: steps.card-editorial-gate.outcome == 'success'
         continue-on-error: true
@@ -226,9 +238,6 @@ jobs:
           set -o pipefail
           node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-site-sync.log"
-          node 01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-opportunity-map-frontstage.log"
-          node --test agent-workflow/tools/tests/industry-reports-frontstage.test.mjs
 
       - name: Run unified Business Signals frontstage gate
         id: business-frontstage-gate
@@ -293,7 +302,7 @@ jobs:
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
             01-SiteV2/site/data/v3-data-observation-desk.json
-            01-SiteV2/site/data/industry-reports-frontstage.json
+            01-SiteV2/site/data/opportunity-evidence-v2.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
 

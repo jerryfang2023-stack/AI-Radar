@@ -46,7 +46,7 @@ function listBundles(projectRoot) {
 }
 
 function directionById(projectRoot) {
-  const data = readJson(path.join(projectRoot, "01-SiteV2/site/data/industry-reports-frontstage.json"), {});
+  const data = readJson(path.join(projectRoot, "01-SiteV2/site/data/opportunity-evidence-v2.json"), {});
   return new Map((data.directionCards || []).map((card) => [card.id, { id: card.id, title: card.title }]));
 }
 

@@ -20,7 +20,7 @@ const steps = [
   ["Generate qualified Signal Card assets and frontstage Cards", "agent-workflow/tools/generate-asset-cards-from-pool.mjs"],
   ["Run Pool-to-Card duplicate gate", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"],
   ["Build V3 data observation desk", "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"],
-  ["Build Opportunity Map projection from accepted Signal Cards", "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"],
+  ["Build Opportunity Map projection from accepted V4 Event/Claim/Source evidence", "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"],
   ["Sync operations dashboard data", "01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"],
 ];
 

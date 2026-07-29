@@ -37,8 +37,8 @@ const versions = parseCurrentVersions();
 const expected = {
   site: "SITE-V4.2.0-entity-history",
   ops: "OPS-V1.2.3-content-factory-cleanout",
-  reports: "REPORTS-V1.0.0-periodic-report-center",
-  opportunity: "OMAP-V1.1.0-direction-cards",
+  reports: "REPORTS-V1.1.0-lane-independent",
+  opportunity: "OMAP-V2.0.0-v4-evidence",
   trendRadar: "TRADAR-V1.0.0-factual-change-explorer",
   person: "PERSON-REVIEW-V1.0",
   skillStore: "v1.7.0 Funding Insights generation lane",
@@ -83,7 +83,10 @@ expectText("01-SiteV2/site/opportunity-map.html", expected.opportunity);
 expectText("01-SiteV2/site/trend-radar.html", expected.trendRadar);
 for (const file of new Set(sitePages)) expectText(file, 'href="trend-radar.html"', "Trend Radar navigation entry");
 for (const file of sitePages.filter((file) => /weekly-|monthly-/u.test(file))) {
-  expectText(file, expected.reports);
+  const html = read(file);
+  if (!/REPORTS-V1\.(?:0\.0-periodic-report-center|1\.0-lane-independent)/u.test(html)) {
+    fail(`${file} missing supported Reports Center version`);
+  }
   rejectText(file, expected.opportunity, "Opportunity Map column version");
 }
 for (const file of ["01-SiteV2/site/intelligence-map.html", "01-SiteV2/site/opportunity-map.html", ...sitePages.filter((file) => /weekly-|monthly-/u.test(file))]) {

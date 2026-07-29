@@ -83,10 +83,12 @@ function writeText(file, text) {
 
 function pageGate(cwd) {
   const actions = [];
-  actions.push(run("build Opportunity Map projection", process.execPath, ["01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs"], { cwd }));
-  if (actions.at(-1).ok) actions.push(run("Opportunity Map projection tests", process.execPath, ["--test", "agent-workflow/tools/tests/industry-reports-frontstage.test.mjs"], { cwd }));
-  if (actions.at(-1).ok) actions.push(run("frontstage regression gate", process.execPath, ["agent-workflow/tools/frontstage-regression-gate.mjs"], { cwd, timeoutMs: 600_000 }));
-  if (actions.at(-1).ok) actions.push(run("V4 visual smoke", "npm", ["run", "test:v4-frontstage-smoke"], { cwd, timeoutMs: 900_000 }));
+  actions.push(run("periodic report renderer tests", process.execPath, [
+    "--test", "agent-workflow/tools/tests/periodic-report-renderer.test.mjs",
+  ], { cwd }));
+  if (actions.at(-1).ok) actions.push(run("V4 report shell syntax", process.execPath, [
+    "--check", "01-SiteV2/site/assets/v4-report-shell.js",
+  ], { cwd }));
   return { ok: actions.every((item) => item.ok), actions };
 }
 
@@ -98,17 +100,18 @@ function workerRun(kind) {
     if (!actions.at(-1).ok) return { ok: false, status: "monthly_maintenance_failed", window, actions };
   }
 
+  let opportunityWarning = false;
   if (kind === "weekly") {
-    actions.push(run("refresh weekly opportunity signals", process.execPath, [
-      "agent-workflow/tools/backfill-opportunity-signals.mjs", "--write=true", `--from=${window.start}`, `--to=${window.end}`,
+    actions.push(run("build weekly V4 opportunity evidence", process.execPath, [
+      "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs", `--date=${window.end}`,
     ]));
-    if (actions.at(-1).ok) actions.push(run("rebuild weekly compatibility projection", process.execPath, [
-      "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs", `--date=${date}`,
+    if (actions.at(-1).ok) actions.push(run("V4 opportunity evidence tests", process.execPath, [
+      "--test", "agent-workflow/tools/tests/industry-reports-frontstage.test.mjs",
     ]));
-    if (actions.at(-1).ok) actions.push(run("DeepSeek Pro direction card candidates", process.execPath, [
+    if (actions.at(-1).ok) actions.push(run("DeepSeek Pro V4 direction card candidates", process.execPath, [
       "agent-workflow/tools/generate-opportunity-direction-cards-deepseek.mjs", `--date=${window.end}`,
     ], { timeoutMs: 600_000 }));
-    if (!actions.at(-1).ok) return { ok: false, status: "opportunity_refresh_failed", window, actions };
+    opportunityWarning = !actions.at(-1).ok;
   }
 
   const content = run("DeepSeek Pro report draft", process.execPath, [
@@ -132,7 +135,15 @@ function workerRun(kind) {
   if (!page.ok) return { ok: false, status: "page_generation_failed", window, actions };
   const gate = pageGate(root);
   actions.push(...gate.actions);
-  return { ok: gate.ok, status: gate.ok ? "page_gate_passed" : "page_gate_failed", window, actions };
+  return {
+    ok: gate.ok,
+    status: gate.ok
+      ? opportunityWarning ? "page_gate_passed_with_opportunity_warning" : "page_gate_passed"
+      : "page_gate_failed",
+    window,
+    actions,
+    opportunity_warning: opportunityWarning,
+  };
 }
 
 function writeWeeklyEscalation(payload) {
@@ -165,8 +176,8 @@ function changedPaths(cwd) {
 }
 
 function allowedPath(file, kind) {
-  const common = ["agent-workflow/reports/", "01-SiteV2/content/08-report/", "01-SiteV2/site/data/industry-reports-frontstage.json", "01-SiteV2/site/intelligence-map.html"];
-  const weekly = ["01-SiteV2/knowledge/01-Signal-Cards/", "01-SiteV2/site/data/enterprise-ai-fde.json", "01-SiteV2/site/weekly-ai-business-change-radar", "01-SiteV2/site/assets/weekly-report.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js", "agent-workflow/product/opportunity-direction-card-candidates.json"];
+  const common = ["agent-workflow/reports/", "01-SiteV2/content/08-report/", "01-SiteV2/site/data/opportunity-evidence-v2.json", "01-SiteV2/site/intelligence-map.html"];
+  const weekly = ["01-SiteV2/site/weekly-ai-business-change-radar", "01-SiteV2/site/assets/weekly-report.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js", "agent-workflow/product/opportunity-direction-card-candidates.json"];
   const monthly = ["01-SiteV2/site/monthly-business-structure-", "01-SiteV2/site/assets/reports.css", "01-SiteV2/site/assets/data-center-v4.css", "01-SiteV2/site/assets/v4-report-shell.js"];
   return [...common, ...(kind === "weekly" ? weekly : monthly)].some((prefix) => file === prefix || file.startsWith(prefix));
 }

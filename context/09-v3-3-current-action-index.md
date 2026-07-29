@@ -226,7 +226,7 @@ Reads:
 - accepted Business Signal Cards.
 - original source excerpts.
 - `agent-workflow/product/opportunity-signal-taxonomy.json`.
-- `01-SiteV2/site/data/industry-reports-frontstage.json` is rebuilt directly from accepted Signal Card assets; it must not read `v3-data-observation-desk.json`.
+- `01-SiteV2/site/data/opportunity-evidence-v2.json` is rebuilt from accepted V4 CanonicalEvents, Claims, SourceArtifacts, Entities, and FacetAssertions; it must not read Signal Cards or `v3-data-observation-desk.json`.
 
 Cadence:
 

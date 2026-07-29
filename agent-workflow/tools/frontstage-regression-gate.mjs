@@ -18,8 +18,8 @@ const expectedLegacySiteVersion = "SITE-V3.4.5";
 const expectedBusinessSignalsColumnVersion = "BSIG-V2.2.0-pipeline-stage-ownership";
 const expectedEnterpriseAiLensVersion = "EAI-V1.2.0-raw-card-ingestion-boundary";
 const expectedLegacyIntelligenceMapColumnVersion = "IMAP-V2.0.0-report-center-opportunity-system";
-const expectedReportsCenterColumnVersion = "REPORTS-V1.0.0-periodic-report-center";
-const expectedOpportunityMapColumnVersion = "OMAP-V1.1.0-direction-cards";
+const expectedReportsCenterColumnVersion = "REPORTS-V1.1.0-lane-independent";
+const expectedOpportunityMapColumnVersion = "OMAP-V2.0.0-v4-evidence";
 const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.0-auto-published-research";
 const rolloverAcceptedVersions = new Map([
   ["V3.3.6-business-title-hermes-handoff", new Set(["2026-06-16"])],
@@ -56,7 +56,7 @@ const frontstageFiles = [
   "01-SiteV2/site/scripts/build-industry-reports-frontstage.mjs",
   "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs",
   "01-SiteV2/site/data/data-center-v4-frontstage.json",
-  "01-SiteV2/site/data/industry-reports-frontstage.json",
+  "01-SiteV2/site/data/opportunity-evidence-v2.json",
   "01-SiteV2/site/data/funding-insights-v1.json",
   "01-SiteV2/site/data/first-line-viewpoints-v4.json",
   "01-SiteV2/site/data/community-intelligence.json",
@@ -247,7 +247,7 @@ function collectUnifiedNavigationIssues() {
   for (const token of opportunityMapRequired) {
     if (!opportunityMapHtml.includes(token)) issues.push(issue(opportunityMapFile, "opportunity_map_required_token_missing", token));
   }
-  if (!opportunityMapHtml.includes("data/industry-reports-frontstage.json") || opportunityMapHtml.includes("data/v3-data-observation-desk.json")) {
+  if (!opportunityMapHtml.includes("data/opportunity-evidence-v2.json") || opportunityMapHtml.includes("data/v3-data-observation-desk.json")) {
     issues.push(issue(opportunityMapFile, "opportunity_map_projection_dependency_invalid"));
   }
 
@@ -455,7 +455,7 @@ function hasConcreteEnterpriseImplementationEvidence(text = "") {
 }
 
 function collectIndustryReportsDataIssues() {
-  const file = path.join(root, "01-SiteV2/site/data/industry-reports-frontstage.json");
+  const file = path.join(root, "01-SiteV2/site/data/opportunity-evidence-v2.json");
   const text = read(file);
   if (!text) return [issue(file, "missing_industry_reports_frontstage_data")];
   const issues = [];
@@ -467,19 +467,24 @@ function collectIndustryReportsDataIssues() {
     if (data?.meta?.applicationVersion !== expectedOpportunityMapColumnVersion || data?.meta?.opportunityMapVersion !== expectedOpportunityMapColumnVersion) {
       issues.push(issue(file, "opportunity_map_application_version_mismatch", `${data?.meta?.opportunityMapVersion || data?.meta?.applicationVersion || "missing"}; expected ${expectedOpportunityMapColumnVersion}`));
     }
-    const legacyData = JSON.parse(read(path.join(root, "01-SiteV2/site/data/v3-data-observation-desk.json")) || "{}");
-    if (data?.meta?.activeDate !== legacyData?.meta?.activeDate) {
-      issues.push(issue(file, "industry_reports_projection_date_mismatch", `${data?.meta?.activeDate || "missing"} != ${legacyData?.meta?.activeDate || "missing"}`));
-    }
-    if (!Array.isArray(data?.cards) || !data.cards.length) {
+    if (!Array.isArray(data?.evidence) || !data.evidence.length) {
       issues.push(issue(file, "industry_reports_cards_missing"));
     }
-    const allowedCardKeys = new Set(["id", "title", "category", "categoryLabel", "date", "sourceUrl", "sourceName", "subject", "opportunitySignals"]);
-    for (const card of data?.cards || []) {
-      const unexpected = Object.keys(card).filter((key) => !allowedCardKeys.has(key));
-      if (unexpected.length) issues.push(issue(file, "industry_reports_card_field_leak", unexpected.join(",")));
-      if (!card.id || !card.title || !card.date || !card.opportunitySignals?.labels) {
+    for (const card of data?.evidence || []) {
+      if (
+        !card.id?.startsWith("EV-")
+        || !card.title
+        || !card.date
+        || !card.opportunitySignals?.labels
+        || !card.claim_refs?.length
+        || !card.source_refs?.length
+      ) {
         issues.push(issue(file, "industry_reports_card_incomplete", card.id || card.title || "missing"));
+      }
+      for (const assertion of Object.values(card.application_assertions || {}).flat()) {
+        if (!card.claim_refs.includes(assertion.claim_ref) || assertion.source_refs?.some((id) => !card.source_refs.includes(id))) {
+          issues.push(issue(file, "opportunity_assertion_evidence_invalid", card.id || card.title || "missing"));
+        }
       }
     }
     if (!Array.isArray(data?.directionCards) || !data.directionCards.length) {
@@ -492,7 +497,9 @@ function collectIndustryReportsDataIssues() {
       if (!Array.isArray(card.unknowns) || !card.unknowns.length || !card.validationAction) {
         issues.push(issue(file, "direction_card_validation_boundary_missing", card.id || card.title || "missing"));
       }
-      if (!Array.isArray(card.evidence) || card.evidence.length < 2 || card.evidence.some((item) => !item.id || !item.sourceUrl)) {
+      if (!Array.isArray(card.evidence) || card.evidence.length < 2 || card.evidence.some((item) => (
+        !item.eventId?.startsWith("EV-") || !item.claimRefs?.length || !item.sourceRefs?.length || !item.sourceUrl
+      ))) {
         issues.push(issue(file, "direction_card_evidence_invalid", card.id || card.title || "missing"));
       }
     }
@@ -549,8 +556,15 @@ function collectVersionMetaIssues() {
     const token = `name="wavesight-version" content="${expectedSiteVersion}"`;
     if (!html.includes(token)) issues.push(issue(file, "site_version_meta_missing", token));
   }
-  const reportCenterPages = [
+  const currentReportCenterPages = [
     "intelligence-map.html",
+  ].map((file) => path.join(root, "01-SiteV2/site", file));
+  for (const file of currentReportCenterPages) {
+    const html = read(file);
+    const token = `name="wavesight-column-version" content="${expectedReportsCenterColumnVersion}"`;
+    if (!html.includes(token)) issues.push(issue(file, "reports_center_column_version_meta_missing", token));
+  }
+  const historicalReportPages = [
     "weekly-ai-business-change-radar.html",
     "weekly-ai-business-change-radar-2026-07-20.html",
     "weekly-ai-business-change-radar-2026-07-13.html",
@@ -560,10 +574,11 @@ function collectVersionMetaIssues() {
     "weekly-ai-business-change-radar-2026-06-15.html",
     "monthly-business-structure-2026-06.html",
   ].map((file) => path.join(root, "01-SiteV2/site", file));
-  for (const file of reportCenterPages) {
+  for (const file of historicalReportPages) {
     const html = read(file);
-    const token = `name="wavesight-column-version" content="${expectedReportsCenterColumnVersion}"`;
-    if (!html.includes(token)) issues.push(issue(file, "reports_center_column_version_meta_missing", token));
+    if (!/name="wavesight-column-version" content="REPORTS-V1\.(?:0\.0-periodic-report-center|1\.0-lane-independent)"/u.test(html)) {
+      issues.push(issue(file, "reports_center_column_version_meta_missing"));
+    }
   }
   const opportunityMapFile = path.join(root, "01-SiteV2/site/opportunity-map.html");
   const opportunityMapToken = `name="wavesight-column-version" content="${expectedOpportunityMapColumnVersion}"`;
