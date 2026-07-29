@@ -54,6 +54,14 @@ export function buildEvidenceSourceIndex(rootDir = root) {
   for (const event of frontstage.events || []) {
     addEvidenceSource(index, "E", event.id, event.sourceUrl || event.sources?.[0]?.url);
   }
+  for (const item of frontstage.viewpoints || []) {
+    addEvidenceSource(index, "O", item.id, item.sourceUrl || item.url);
+  }
+  for (const profile of frontstage.entityProfiles || []) {
+    for (const item of profile.viewpoints || []) {
+      addEvidenceSource(index, "O", item.id, item.sourceUrl || item.url);
+    }
+  }
 
   for (const file of ["first-line-viewpoints-v4.json", "follow-builders-daily.json"]) {
     const data = readJson(path.join(siteData, file), {});
