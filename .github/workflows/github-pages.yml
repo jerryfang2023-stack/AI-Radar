@@ -153,6 +153,16 @@ jobs:
           node agent-workflow/tools/validate-guanlan-skills.mjs
           node agent-workflow/tools/assert-skill-store-dashboard.mjs
 
+      - name: Finalize OPS publication telemetry for Pages
+        if: steps.deployment-gate.outputs.deploy == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          node agent-workflow/tools/finalize-ops-publication-for-pages.mjs \
+            --status=passed \
+            --commit="$(git rev-parse HEAD)" \
+            --run-url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
       - name: Archive Frontstage artifact
         if: steps.deployment-gate.outputs.deploy == 'true'
         shell: bash
