@@ -3,7 +3,7 @@
   "$id": "https://wavesight.local/schemas/data-center-v4.schema.json",
   "title": "WaveSight Data Center V4",
   "type": "object",
-  "required": ["manifest", "source_artifacts", "raw_documents", "claims", "entities", "entity_mentions", "canonical_events", "event_sources", "event_claims", "event_conflicts", "relationships", "tag_assertions", "facet_assertions", "fde_records", "hardware_records", "qa_queue", "legacy_asset_mappings"],
+  "required": ["manifest", "source_artifacts", "raw_documents", "claims", "entities", "entity_mentions", "canonical_events", "event_sources", "event_claims", "event_conflicts", "relationships", "tag_assertions", "facet_assertions", "fde_records", "hardware_records", "qa_queue"],
   "properties": {
     "manifest": { "$ref": "#/$defs/manifest" },
     "source_artifacts": { "type": "array", "items": { "$ref": "#/$defs/sourceArtifact" } },
@@ -28,7 +28,13 @@
     "fde_records": { "type": "array", "items": { "$ref": "#/$defs/fdeRecord" } },
     "hardware_records": { "type": "array", "items": { "$ref": "#/$defs/hardwareRecord" } },
     "qa_queue": { "type": "array", "items": { "$ref": "#/$defs/qaItem" } },
-    "legacy_asset_mappings": { "type": "array", "items": { "$ref": "#/$defs/legacyAssetMapping" } }
+    "legacy_asset_mappings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/legacyAssetMapping" },
+      "readOnly": true,
+      "deprecated": true,
+      "description": "Historical-only mapping accepted while archived V3 bundles remain readable. New V4 bundles must not emit it."
+    }
   },
   "additionalProperties": false,
   "$defs": {
@@ -55,7 +61,8 @@
         "date": { "type": "string", "format": "date" },
         "generated_at": { "type": "string" },
         "source_of_truth": { "type": "string" },
-        "legacy_page_compatibility": { "type": "string" },
+        "legacy_page_compatibility": { "type": "string", "deprecated": true },
+        "compatibility_write_state": { "const": "disabled" },
         "counts": { "type": "object" },
         "forbidden_field_hits": { "type": "array", "items": { "type": "string" } }
       },
@@ -102,7 +109,8 @@
         "source_update_history": { "type": "array" },
         "claim_ids": { "type": "array", "items": { "type": "string" } },
         "entity_mention_ids": { "type": "array", "items": { "type": "string" } },
-        "event_candidate_ids": { "type": "array", "items": { "type": "string" } }
+        "event_candidate_ids": { "type": "array", "items": { "type": "string" } },
+        "body_ref": { "type": "string", "minLength": 1 }
       },
       "additionalProperties": false
     },

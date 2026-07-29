@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-memory
-last_updated: 2026-07-17
+last_updated: 2026-07-29
 use_when:
   - project startup
   - agent handoff
@@ -19,7 +19,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - WaveSight AI / Guanlan AI is an AI business intelligence asset system, not a general content site.
 - The public frontstage is organized as a V4 Data Center plus one Application Center entry, Industry Reports.
 - Dashboard / Operations Console is a backend-facing operations surface, not a public content column.
-- Business Signals is an internal compatibility chain for Raw / Pool / Card and the remaining relationship/operations adapters; it is not a public page. Trend candidates are historical/manual research artifacts and are not part of daily production.
+- Business Signals is the V4 SourceArtifact / RawDocument / Claim / CanonicalEvent factual production chain. Retired Raw / Pool / Card assets are archive-only and have no active production, page, relationship, or operations consumer.
 - First-Line Viewpoints and Community Intelligence are independent data lanes projected into the V4 Data Center shell.
 - The local DuckDB data lake is an analytical index layer for machine queries; Obsidian remains the human-readable knowledge base.
 
@@ -30,7 +30,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Do not restore legacy copy gates as publication blockers.
 - Builders / First-Line Viewpoints must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 - Community posts are demand signals unless recaptured through source-backed business evidence.
-- If an old rule conflicts with the current SITE-V4.2.0 public contract, rebuild or delete the old route instead of restoring V3 page content.
+- If an old rule conflicts with the current SITE-V4.3.0 public contract, rebuild or delete the old route instead of restoring V3 page content.
 - Legacy V3 column URLs remain redirects only; no public page may load V3 navigation, V3 page assets, or the V3 desk JSON.
 
 ## Operating Model
@@ -46,7 +46,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 
 - GitHub Actions schedule can be delayed or skipped during busy periods; Hermes must use staged checks instead of waiting blindly.
 - Business Signals should not fail only because one source lane failed; source artifacts should isolate source-lane failures behind unified quality gates.
-- Business Signals can regress when cardable Raw / Pool supply is too small, source titles are untranslated before Card promotion, or duplicate candidates crowd out qualified Cards.
+- Business Signals can regress when immutable source capture is incomplete, source titles remain untranslated before V4 event publication, or duplicate discovery candidates reduce accepted factual coverage.
 - First-Line Viewpoints must keep morning RSS collection and afternoon follow-builders skill publishing separate.
 - Community Intelligence depends on local logged-in collection; GitHub can publish already collected data but cannot replace the logged-in local collector.
 - Weekly report content should be sourced from `01-SiteV2/content/08-report/` before site generation.

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: frontstage-page-contracts
-last_updated: 2026-07-18
+last_updated: 2026-07-29
 use_when:
   - page change
   - navigation change
@@ -13,7 +13,7 @@ priority: current
 
 # Frontstage Page Contracts
 
-SITE-V4.2.0 is the only current public page and entity-history system. `data-center.html`, `trend-radar.html`, `funding-insights.html`, `intelligence-map.html`, `opportunity-map.html`, and all weekly/monthly report details use the V4 logo header and shared sidebar. Legacy V3 column URLs are compatibility redirects only. These page contracts do not define V4 canonical data truth.
+SITE-V4.3.0 is the only current public page system; ENTITY-V1.0 and RELATION-V2.1 remain its factual entity-history contracts. `data-center.html`, `trend-radar.html`, `funding-insights.html`, `intelligence-map.html`, `opportunity-map.html`, and current report routes use the V4 logo header and shared sidebar. Legacy V3 column URLs are redirects only. These page contracts do not define V4 canonical data truth.
 
 Read `context/version-ledger.md` first. This file defines what each current frontstage page must keep and what must not contaminate it.
 
@@ -27,17 +27,17 @@ Read `context/version-ledger.md` first. This file defines what each current fron
 | Industry Reports | `01-SiteV2/site/intelligence-map.html` | V4 compact title and subtitle; latest Monthly / Weekly report entries; separate Monthly / Weekly archives; weekly reports sourced from `01-SiteV2/content/08-report/`; monthly reports sourced from `01-SiteV2/content/08-report/monthly/` | Opportunity-map matrices or evidence modal returning to the report landing page; retired `报告中心` / `Reports Center` naming; Relation Paths / 关联路径; retired V3 top navigation; separate sidebar entries for Weekly Report or Monthly Report; orphaned relationship demo navigation; V2 graph prose cards; detached page style; Trend Candidates / History blocks returning; weekly reports generated only from `agent-workflow/reports/`; monthly report detail pages reduced to summary-only cards or raw unstyled tables | syntax + visual smoke + frontstage regression |
 | Opportunity Map | `01-SiteV2/site/opportunity-map.html` | Independent Application Center sidebar entry; source-backed Entry Point Map and Product Pain Map as separate full-width maps; a small set of DeepSeek V4 Pro-drafted and human-reviewed Direction Cards with structural judgment and counter-signal; map cells and Direction Cards open evidence in a modal; `opportunity-evidence-v2.json` as the dedicated V4 downstream application projection | Signal Card or V3 desk evidence; unreviewed model output; unsupported factual numbers or promotional conclusions; Monthly / Weekly report cards; map toggle buttons replacing the two standalone maps; persistent right-side Cell Evidence panel; auto-generated recommendations or opaque scores; Relation Paths; Signal Candidates / 时间聚集 / Tag 聚合 modules | syntax + V4 Event/Claim/Source reference gate + DeepSeek candidate gate + human-review boundary + data projection + interaction smoke + desktop/mobile visual smoke + frontstage regression |
 | Weekly / Monthly Details | `weekly-ai-business-change-radar*.html`, `monthly-business-structure*.html` | Complete accepted reports using the V4 logo header, shared sidebar, responsive editorial layouts, and Industry Reports return path | V3 topbar/assets/routes; raw Markdown dumps; detached report navigation; public V3 JSON fetches | syntax + content-source gate + desktop/mobile visual smoke + frontstage regression |
-| Legacy Redirects | `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, `reports.html` | Canonical redirect to the matching V4 route while preserving query parameters and hash | Page content, V3 CSS/JS, V3 navigation, independent report-center content | redirect test + public dependency scan |
+| Legacy Redirects | `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, `reports.html`, `pipeline-dashboard.html` | Canonical redirect to the matching V4 route while preserving query parameters and hash | Page content, V3 CSS/JS, V3 navigation, independent report-center or V3 pipeline content | redirect test + public dependency scan |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Data Observation operations governance backend; issue center; task chain; data quality; version governance; independent Skill Store; settings; generated ops data from daily supervision, production incidents, legacy Hermes history, production funnel, and version ledger | Accidental deletion; Skill Store deletion or merge into version governance; frontstage restyling that breaks operations UI; V2 public navigation takeover; content-production workspace modules returning to the operations backend | syntax + generated ops data build + manual smoke |
 
-The legacy Business Signals Card set remains an internal compatibility dataset for downstream analytics and Opportunity Map projection. It is not a public V4 page and cannot define V4 facts.
+The legacy Business Signals Card set is read-only history under `archive/v3-compat/`; no current page, projection, relationship, gate, or operations task may consume it. The optional deprecated `compatibility_cards` V4 projection remains observation-only until Phase 4 and cannot define V4 facts.
 
 ## Current Frontstage Versions
 
 | Scope | Version | Meaning |
 |---|---|---|
-| Main website | `SITE-V4.2.0-entity-history` | Keeps the unified V4 shell and adds stable entity profiles, cross-day timelines, typed factual relationships, and split frontstage data loading. |
-| Business Signals compatibility lane | `BSIG-V2.2.0-pipeline-stage-ownership` | Internal Card and relationship adapters only; trend candidates are manual audit/archive inputs and are not part of daily production or a public page. |
+| Main website | `SITE-V4.3.0-compatibility-write-disabled` | Keeps the unified V4 shell and stable entity history while disabling V3 compatibility production and public pipeline surfaces. |
+| Business Signals factual lane | `EVENT-V1.1` | SourceArtifact / RawDocument / Claim / CanonicalEvent production only; archived Cards and trend candidates are not daily inputs or public pages. |
 | First-Line Viewpoints column | `FLV-V1.1.0-history-backfill` | Adds accepted committed morning history to the V4 projection while keeping current morning RSS and afternoon follow-builders production independent; original-URL dedupe, approved Chinese translation provenance, AI relevance, opinion tags, and Obsidian timeline idempotency remain release gates. |
 | Community Intelligence column | `CINT-V1.0.2-publication-waiting-gate` | Keeps local logged-in collection separate from GitHub publication and treats open PR / queued workflow states after healthy same-date data as Waiting, not Problems. |
 | Enterprise AI / FDE lens | `EAI-V1.2.0-raw-card-ingestion-boundary` | Boss-facing implementation lens backed by the independent FDE Lens Pool; title translation and fact extraction belong to Raw/Card/FDE asset generation, not generic frontstage blocking; not a fourth Card type. |

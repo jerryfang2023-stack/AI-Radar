@@ -59,7 +59,7 @@ All public pages and report details use the V4 logo header and shared Data Cente
 
 ## Retired Routes
 
-`v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, and `reports.html` are compatibility redirects only and must not regain page content or the V3 topbar.
+`v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, `reports.html`, and `pipeline-dashboard.html` are compatibility redirects only and must not regain page content or the V3 topbar.
 
 Follow-builders / builders viewpoints are active only as the independent First-Line Viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 

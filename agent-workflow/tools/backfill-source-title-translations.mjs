@@ -5,7 +5,6 @@ import path from "node:path";
 import {
   generateSourceTitleTranslation,
   generatedTitleTranslationLooksUsable,
-  hasCjk,
   loadSourceTitleTranslations,
   sourceTitleFromCapturedPayload,
   sourceTitleNeedsChineseTranslation,
@@ -13,11 +12,11 @@ import {
   titleTranslationLooksUsable,
   upsertSourceTitleTranslations,
 } from "./source-title-translation-generator.mjs";
+import { sourceSnapshotRefsByRawId } from "./lib/source-snapshot-ref-v1.mjs";
 
 const root = process.cwd();
 const bundleRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
 const translationFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
-const legacyMappingFile = path.join(bundleRoot, "legacy-card-event-mappings.json");
 const reportRoot = path.join(root, "agent-workflow", "reports");
 const write = process.argv.includes("--write=true");
 const concurrency = Math.max(1, Math.min(6, Number(arg("concurrency", "3")) || 3));
@@ -35,18 +34,6 @@ function readJson(file) {
 
 function writeJson(file, value) {
   fs.writeFileSync(file, `${JSON.stringify(value, null, 2)}\n`, "utf8");
-}
-
-function normalizeUrl(value = "") {
-  try {
-    const url = new URL(String(value || ""));
-    url.hash = "";
-    url.search = "";
-    url.hostname = url.hostname.replace(/^www\./u, "");
-    return url.toString().replace(/\/+$/u, "").toLowerCase();
-  } catch {
-    return String(value || "").trim().replace(/\/+$/u, "").toLowerCase();
-  }
 }
 
 function dates() {
@@ -81,22 +68,6 @@ function updateRawMarkdown(file, result, sourceTitle = "") {
   return text !== before;
 }
 
-function updateLegacyCard(file, title) {
-  if (!file || !fs.existsSync(file)) return false;
-  let text = fs.readFileSync(file, "utf8");
-  const before = text;
-  text = text.replace(/^title:.*$/mu, `title: ${yamlValue(title)}`);
-  text = text.replace(/^(\s{2}displayTitle:)\s*.*$/mu, (_match, field) => `${field} ${yamlValue(title)}`);
-  const frontmatterEnd = text.indexOf("\n---", 4);
-  const headingStart = text.indexOf("\n# ", frontmatterEnd > 0 ? frontmatterEnd + 4 : 0);
-  if (headingStart >= 0) {
-    const headingEnd = text.indexOf("\n", headingStart + 3);
-    text = `${text.slice(0, headingStart)}\n# ${title}${headingEnd >= 0 ? text.slice(headingEnd) : "\n"}`;
-  }
-  if (text !== before) fs.writeFileSync(file, text, "utf8");
-  return text !== before;
-}
-
 async function mapConcurrent(items, worker, limit) {
   const results = new Array(items.length);
   let index = 0;
@@ -111,7 +82,6 @@ async function mapConcurrent(items, worker, limit) {
 }
 
 async function main() {
-  const rawById = new Map();
   const rawPathById = new Map();
   const rawBySourceArtifact = new Map();
   const eventTargetRawIds = new Set();
@@ -120,13 +90,12 @@ async function main() {
   for (const date of availableDates) {
     const dir = path.join(bundleRoot, date);
     const raws = readJson(path.join(dir, "raw-documents.json"));
-    const mappings = readJson(path.join(dir, "legacy-asset-mappings.json"));
+    const sourceArtifacts = readJson(path.join(dir, "source-artifacts.json"));
     const events = readJson(path.join(dir, "canonical-events.json"));
     for (const raw of raws) {
-      rawById.set(raw.raw_id, { ...raw, data_date: date });
       rawBySourceArtifact.set(raw.source_artifact_id, raw.raw_id);
     }
-    for (const mapping of mappings) rawPathById.set(mapping.raw_id, mapping.legacy_path);
+    for (const [rawId, snapshotRef] of sourceSnapshotRefsByRawId(sourceArtifacts, raws)) rawPathById.set(rawId, snapshotRef);
     for (const event of events) {
       for (const sourceRef of event.source_refs || []) {
         const rawId = rawBySourceArtifact.get(sourceRef);
@@ -135,11 +104,7 @@ async function main() {
     }
   }
 
-  const legacy = readJson(legacyMappingFile);
   const targetRawIds = new Set(eventTargetRawIds);
-  for (const mapping of legacy.mappings || []) {
-    for (const rawId of mapping.raw_ids || []) targetRawIds.add(rawId);
-  }
 
   const jobsByPath = new Map();
   for (const rawId of targetRawIds) {
@@ -228,7 +193,6 @@ async function main() {
     mode: write ? "write" : "dry-run",
     dates: availableDates.length,
     event_target_raws: eventTargetRawIds.size,
-    legacy_cards: legacy.mappings?.length || 0,
     selected_raw_ids: [...selectedRawIds],
     target_raws: jobsByPath.size,
     unique_titles: uniqueTitles.size,
@@ -290,28 +254,9 @@ async function main() {
     if (updateRawMarkdown(markdownPath, result, job.sourceTitleRepaired ? job.sourceTitle : "")) rawMarkdownUpdated += 1;
   }
 
-  let cardsUpdated = 0;
-  for (const mapping of legacy.mappings || []) {
-    if (selectedRawIds.size && !(mapping.raw_ids || []).some((rawId) => selectedRawIds.has(rawId))) continue;
-    const sourceUrls = new Set((mapping.source_urls || []).map(normalizeUrl));
-    const candidates = (mapping.raw_ids || []).map((rawId) => rawById.get(rawId)).filter(Boolean);
-    const raw = candidates.find((item) => sourceUrls.has(normalizeUrl(item.source_url || item.canonical_url)))
-      || (!sourceUrls.size ? candidates.find((item) => item.data_date === mapping.card_date) || candidates[0] : null);
-    if (!raw) continue;
-    const sourcePath = rawPathById.get(raw.raw_id);
-    const job = jobsByPath.get(sourcePath);
-    const result = job ? translationResults.get(titleTranslationKey(job.sourceTitle)) : null;
-    if (!result?.titleZh) throw new Error(`No source title resolved for ${mapping.legacy_path}`);
-    if (sourceTitleNeedsChineseTranslation(job.sourceTitle) && !hasCjk(result.titleZh)) {
-      throw new Error(`No Chinese source title resolved for ${mapping.legacy_path}`);
-    }
-    if (updateLegacyCard(path.join(root, mapping.legacy_path), result.titleZh)) cardsUpdated += 1;
-  }
-
   report.raw_json_updated = rawJsonUpdated;
   report.raw_markdown_updated = rawMarkdownUpdated;
   report.source_titles_repaired = sourceTitlesRepaired;
-  report.cards_updated = cardsUpdated;
   writeJson(reportFile, report);
   console.log(JSON.stringify({
     ok: true,
@@ -323,7 +268,6 @@ async function main() {
     raw_json_updated: report.raw_json_updated,
     raw_markdown_updated: report.raw_markdown_updated,
     source_titles_repaired: report.source_titles_repaired,
-    cards_updated: report.cards_updated,
   }, null, 2));
 }
 

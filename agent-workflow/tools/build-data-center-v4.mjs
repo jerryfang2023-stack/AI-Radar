@@ -377,8 +377,7 @@ function sourceArtifact(raw, file) {
     capture_method: cleanString(raw.extraction_method || raw.fetch_status),
     captured_at: cleanString(raw.collected_at || raw.last_seen_at),
     snapshot_refs: [...new Set(snapshotRefs)],
-    content_hash: contentHash,
-    _legacy_path: rel(file)
+    content_hash: contentHash
   };
 }
 
@@ -1070,7 +1069,6 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   const tagAssertions = [];
   const facetAssertions = [];
   const qaQueue = [];
-  const legacyMappings = [];
   const matchers = taxonomyMatchers(taxonomy);
   const structuredMatchers = facetMatchers(taxonomy);
   const modelAssist = readJson(path.join(modelAssistRoot, `${date}.json`), { candidates: [] });
@@ -1139,9 +1137,9 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       source_update_history: raw.update_detected ? [{ detected_at: cleanString(raw.last_seen_at), previous_ref: cleanString(raw.duplicate_of) }] : [],
       claim_ids: [],
       entity_mention_ids: [],
-      event_candidate_ids: []
+      event_candidate_ids: [],
+      body_ref: rel(file)
     };
-    delete artifact._legacy_path;
     sourceArtifacts.push(artifact);
 
     if (extractionStatus === "quarantined") {
@@ -1184,7 +1182,6 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
           source_ref: artifact.source_artifact_id
         });
         rawDocuments.push(doc);
-        legacyMappings.push({ legacy_raw_id: cleanString(raw.raw_id), legacy_path: rel(file), raw_id: rawId, event_candidate_id: "", event_id: "" });
         continue;
       }
       const entityNames = [...new Map(organizationMentions(
@@ -1216,7 +1213,6 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
           source_ref: artifact.source_artifact_id
         });
         rawDocuments.push(doc);
-        legacyMappings.push({ legacy_raw_id: cleanString(raw.raw_id), legacy_path: rel(file), raw_id: rawId, event_candidate_id: "", event_id: "" });
         continue;
       }
 
@@ -1330,11 +1326,9 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
           update_history: [],
           publication_status: publicationStatus(status, cleanString(raw.source_role), eventClaimRows.length)
         });
-        legacyMappings.push({ legacy_raw_id: cleanString(raw.raw_id), legacy_path: rel(file), raw_id: rawId, event_candidate_id: candidateId, event_id: "" });
       }
     }
     rawDocuments.push(doc);
-    if (!legacyMappings.some((mapping) => mapping.raw_id === rawId)) legacyMappings.push({ legacy_raw_id: cleanString(raw.raw_id), legacy_path: rel(file), raw_id: rawId, event_candidate_id: "", event_id: "" });
   }
 
   const clustered = clusterEvents(eventCandidates);
@@ -1362,14 +1356,6 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   }
   const canonicalEvents = clustered.canonicalEvents;
   const acceptedEventIds = new Set(canonicalEvents.map((event) => event.event_id));
-  const candidateToEvent = new Map();
-  for (const event of canonicalEvents) {
-    for (const claimRef of event.claim_refs) candidateToEvent.set(claimRef, event.event_id);
-  }
-  for (const mapping of legacyMappings) {
-    const doc = rawDocuments.find((item) => item.raw_id === mapping.raw_id);
-    mapping.event_id = doc?.claim_ids.map((id) => candidateToEvent.get(id)).find(Boolean) || "";
-  }
   const fdeRecords = [];
   const hardwareRecords = [];
   const acceptedAssist = [...acceptedAssistByRaw.values()].flat();
@@ -1434,8 +1420,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     facet_assertions: facetAssertions,
     fde_records: fdeRecords,
     hardware_records: hardwareRecords,
-    qa_queue: qaQueue,
-    legacy_asset_mappings: legacyMappings
+    qa_queue: qaQueue
   };
   const manifest = {
     product_version: VERSION.product,
@@ -1447,7 +1432,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     date,
     generated_at: generatedAt,
     source_of_truth: "source_artifact_raw_claim_event",
-    legacy_page_compatibility: "v3_pipeline_unchanged",
+    compatibility_write_state: "disabled",
     counts: Object.fromEntries(Object.entries(files).map(([name, rows]) => [name, rows.length])),
     forbidden_field_hits: forbiddenKeys(files)
   };

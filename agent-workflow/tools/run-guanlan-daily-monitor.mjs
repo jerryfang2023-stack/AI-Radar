@@ -5,6 +5,7 @@ import { promisify } from "node:util";
 import crypto from "node:crypto";
 import { resolveSourceTitleTranslation, sourceTitleNeedsChineseTranslation } from "./source-title-translation-generator.mjs";
 import { buildSourceIntake, sourceIntakePath } from "./lib/source-intake-v1.mjs";
+import { selectImmutableSourceSnapshot } from "./lib/immutable-source-snapshot-v1.mjs";
 
 const root = process.cwd();
 const execFileAsync = promisify(execFile);
@@ -5323,14 +5324,19 @@ async function makeRawFiles(items, failures, runMeta = {}) {
   for (const [index, item] of items.entries()) {
     const id = `R-${String(index + 1).padStart(3, "0")}`;
     const baseName = `${id.toLowerCase()}-${slugify(item.title)}`;
-    const initialJsonPath = path.join(originalDir, `${baseName}.json`);
-    const originalName = fs.existsSync(initialJsonPath)
-      ? `${baseName}-${contentHash(`${item.url || ""}|${item.snapshot?.full_text || item.snapshot?.text || item.title}`).slice(0, 8)}.md`
-      : `${baseName}.md`;
-    const originalPath = path.join(originalDir, originalName);
-    const jsonPath = path.join(originalDir, `${originalName.replace(/\.md$/u, "")}.json`);
+    const provisionalOriginalPath = path.join(originalDir, `${baseName}.md`);
+    const provisionalJsonPath = path.join(originalDir, `${baseName}.json`);
     const isPooled = poolKeySet.has(poolKeyFor(item));
-    const record = await buildRawRecord(item, id, originalPath, jsonPath, isPooled);
+    let record = await buildRawRecord(item, id, provisionalOriginalPath, provisionalJsonPath, isPooled);
+    const selectedSnapshot = selectImmutableSourceSnapshot({ directory: originalDir, baseName, record });
+    const originalPath = selectedSnapshot.markdownPath;
+    const jsonPath = selectedSnapshot.jsonPath;
+    if (selectedSnapshot.reused) {
+      record = selectedSnapshot.existingRecord;
+    } else {
+      record.markdown_snapshot_path = rel(originalPath);
+      record.json_snapshot_path = rel(jsonPath);
+    }
     item.raw_id = id;
     item.raw_archive_path = rel(originalPath);
     item.raw_json_path = rel(jsonPath);
@@ -5549,8 +5555,12 @@ async function makeRawFiles(items, failures, runMeta = {}) {
       `该条目由 ${item.acquisition_channel} 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。`,
       "",
     ].join("\n");
-    writeFile(originalPath, original);
-    writeFile(jsonPath, `${JSON.stringify(record, null, 2)}\n`);
+    if (!selectedSnapshot.reused) {
+      writeFile(originalPath, original);
+      writeFile(jsonPath, `${JSON.stringify(record, null, 2)}\n`);
+    } else if (!fs.existsSync(originalPath)) {
+      writeFile(originalPath, original);
+    }
     intakeEntries.push({
       record,
       jsonPath,

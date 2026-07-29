@@ -80,6 +80,7 @@ const redirectPages = [
   "01-SiteV2/site/follow-builders.html",
   "01-SiteV2/site/community-intelligence.html",
   "01-SiteV2/site/reports.html",
+  "01-SiteV2/site/pipeline-dashboard.html",
 ];
 for (const file of new Set([...sitePages, ...redirectPages])) expectText(file, expected.site, "current SITE version");
 expectText("01-SiteV2/site/operations-console.html", expected.ops, "current Operations Backend version");
@@ -138,6 +139,10 @@ expectText("agent-workflow/skills/guanlan-trend-radar-updater/SKILL.md", expecte
 rejectText("agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md", "Industry Reports page's two", "nested Industry Reports ownership");
 rejectText("agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md", "current SITE-V3.4.5", "current V3 site claim");
 expectText("agent-workflow/product/tag-taxonomy.md", "Data Center V4 uses `tag-taxonomy-v4.json`");
+expectText("context/frontstage-page-contracts.md", expected.site, "current SITE version");
+expectText("context/project-memory.md", "SITE-V4.3.0", "current SITE major/minor version");
+rejectText("context/frontstage-page-contracts.md", "The legacy Business Signals Card set remains an internal compatibility dataset", "active Card compatibility contract");
+rejectText("context/project-memory.md", "Business Signals is an internal compatibility chain for Raw / Pool / Card", "active Raw/Pool/Card operating model");
 
 const legacySkillFiles = fs.existsSync(path.join(root, "skills"))
   ? fs.readdirSync(path.join(root, "skills"), { recursive: true, withFileTypes: true })

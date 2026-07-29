@@ -9,6 +9,14 @@ on:
       - "01-SiteV2/site/**"
       - "01-SiteV2/content/**"
       - "01-SiteV2/knowledge/**"
+      - "agent-workflow/tools/**"
+      - "agent-workflow/product/**"
+      - "context/version-ledger.md"
+      - "context/frontstage-page-contracts.md"
+      - "context/project-memory.md"
+      - "AGENTS.md"
+      - "package.json"
+      - "package-lock.json"
       - ".github/workflows/github-pages.yml"
   workflow_run:
     # GitHub suppresses workflow triggers from some bot-authored pushes. These
