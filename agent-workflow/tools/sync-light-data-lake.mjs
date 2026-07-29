@@ -442,22 +442,11 @@ function main() {
     entity_profiles: collectEntityHistoryRows("entityProfiles"),
     taxonomy_nodes: collectEntityHistoryRows("taxonomyNodes"),
     entity_relationships: collectEntityHistoryRows("entityRelationships"),
-    qa_queue: collectDataCenterRows("qa-queue", "qa_id"),
-    legacy_asset_mappings: collectDataCenterRows("legacy-asset-mappings")
+    qa_queue: collectDataCenterRows("qa-queue", "qa_id")
   };
-  // V4-only is the safe production default. Historical compatibility imports
-  // require an explicit opt-in and are removed entirely in Phase 4.
-  const legacyTables = arg("legacy-compat", "false") === "true"
-    ? {
-        raw_items: collectRawItems(),
-        pool_daily: collectPoolDaily(),
-        signal_cards: collectSignalCards(),
-        builders_daily: collectBuildersDaily(),
-        community_items: collectCommunityItems(),
-        frontstage_cards: collectFrontstageCards(),
-        fde_items: collectFdeItems(),
-      }
-    : {};
+  // Phase 3 disables all production discovery of archived V3 tables. The
+  // historical collectors remain unreachable until they are deleted in Phase 4.
+  const legacyTables = {};
   const tables = { ...legacyTables, ...v4Tables };
   for (const [name, rows] of Object.entries(tables)) writeJsonl(name, rows);
   if (arg("duckdb", "required") === "skip") {

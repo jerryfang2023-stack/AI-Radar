@@ -4,8 +4,9 @@ import path from "node:path";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const expectedSiteVersion = "SITE-V4.2.0-entity-history";
+const expectedSiteVersion = "SITE-V4.3.0-compatibility-write-disabled";
 const expectedDataCenterProductVersion = "SITE-V4.2.0-entity-history";
+const expectedOpportunityEvidenceSiteVersion = "SITE-V4.2.0-entity-history";
 const expectedReportsCenterColumnVersion = "REPORTS-V1.1.0-lane-independent";
 const expectedOpportunityMapColumnVersion = "OMAP-V2.0.0-v4-evidence";
 const expectedFundingInsightsColumnVersion = "FUNDING-INSIGHT-V1.0-auto-published-research";
@@ -30,6 +31,7 @@ const frontstageFiles = [
   "01-SiteV2/site/follow-builders.html",
   "01-SiteV2/site/community-intelligence.html",
   "01-SiteV2/site/reports.html",
+  "01-SiteV2/site/pipeline-dashboard.html",
   "01-SiteV2/site/assets/data-center-v4.css",
   "01-SiteV2/site/assets/data-center-v4.js",
   "01-SiteV2/site/assets/funding-insights.css",
@@ -65,6 +67,7 @@ const publicFrontstageTextFiles = [
   "01-SiteV2/site/follow-builders.html",
   "01-SiteV2/site/community-intelligence.html",
   "01-SiteV2/site/reports.html",
+  "01-SiteV2/site/pipeline-dashboard.html",
   "01-SiteV2/site/assets/data-center-v4.css",
   "01-SiteV2/site/assets/data-center-v4.js",
   "01-SiteV2/site/assets/funding-insights.css",
@@ -101,7 +104,6 @@ const retiredV3PageAssets = [
 const requiredOperationalPages = [
   "01-SiteV2/site/admin.html",
   "01-SiteV2/site/operations-console.html",
-  "01-SiteV2/site/pipeline-dashboard.html",
 ].map((file) => path.join(root, file));
 
 const retiredPatterns = [
@@ -173,6 +175,7 @@ function collectUnifiedNavigationIssues() {
     ["follow-builders.html", "data-center.html?view=viewpoints"],
     ["community-intelligence.html", "data-center.html?view=community"],
     ["reports.html", "intelligence-map.html"],
+    ["pipeline-dashboard.html", "operations-console.html"],
   ]);
   for (const [name, target] of redirects) {
     const file = path.join(root, "01-SiteV2/site", name);
@@ -320,8 +323,8 @@ function collectIndustryReportsDataIssues() {
   const issues = [];
   try {
     const data = JSON.parse(text);
-    if (data?.meta?.siteVersion !== expectedSiteVersion) {
-      issues.push(issue(file, "industry_reports_site_version_mismatch", `${data?.meta?.siteVersion || "missing"}; expected ${expectedSiteVersion}`));
+    if (data?.meta?.siteVersion !== expectedOpportunityEvidenceSiteVersion) {
+      issues.push(issue(file, "industry_reports_site_version_mismatch", `${data?.meta?.siteVersion || "missing"}; expected ${expectedOpportunityEvidenceSiteVersion}`));
     }
     if (data?.meta?.applicationVersion !== expectedOpportunityMapColumnVersion || data?.meta?.opportunityMapVersion !== expectedOpportunityMapColumnVersion) {
       issues.push(issue(file, "opportunity_map_application_version_mismatch", `${data?.meta?.opportunityMapVersion || data?.meta?.applicationVersion || "missing"}; expected ${expectedOpportunityMapColumnVersion}`));
@@ -431,25 +434,19 @@ function collectV4EntityRelationIssues() {
 
 function collectVersionMetaIssues() {
   const issues = [];
-  const publicPages = [
+  const currentPages = [
     "data-center.html",
     "v3-data-observation.html",
     "intelligence-map.html",
     "funding-insights.html",
     "opportunity-map.html",
-    "weekly-ai-business-change-radar-2026-07-20.html",
-    "weekly-ai-business-change-radar-2026-07-13.html",
     "weekly-ai-business-change-radar.html",
-    "weekly-ai-business-change-radar-2026-07-06.html",
-    "weekly-ai-business-change-radar-2026-06-29.html",
-    "weekly-ai-business-change-radar-2026-06-22.html",
-    "weekly-ai-business-change-radar-2026-06-15.html",
-    "monthly-business-structure-2026-06.html",
     "follow-builders.html",
     "community-intelligence.html",
     "reports.html",
+    "pipeline-dashboard.html",
   ].map((file) => path.join(root, "01-SiteV2/site", file));
-  for (const file of publicPages) {
+  for (const file of currentPages) {
     const html = read(file);
     const token = `name="wavesight-version" content="${expectedSiteVersion}"`;
     if (!html.includes(token)) issues.push(issue(file, "site_version_meta_missing", token));
@@ -462,16 +459,9 @@ function collectVersionMetaIssues() {
     const token = `name="wavesight-column-version" content="${expectedReportsCenterColumnVersion}"`;
     if (!html.includes(token)) issues.push(issue(file, "reports_center_column_version_meta_missing", token));
   }
-  const historicalReportPages = [
-    "weekly-ai-business-change-radar.html",
-    "weekly-ai-business-change-radar-2026-07-20.html",
-    "weekly-ai-business-change-radar-2026-07-13.html",
-    "weekly-ai-business-change-radar-2026-07-06.html",
-    "weekly-ai-business-change-radar-2026-06-29.html",
-    "weekly-ai-business-change-radar-2026-06-22.html",
-    "weekly-ai-business-change-radar-2026-06-15.html",
-    "monthly-business-structure-2026-06.html",
-  ].map((file) => path.join(root, "01-SiteV2/site", file));
+  const historicalReportPages = fs.readdirSync(path.join(root, "01-SiteV2/site"))
+    .filter((name) => /^(?:weekly-ai-business-change-radar-\d{4}-\d{2}-\d{2}|monthly-business-structure-\d{4}-\d{2})\.html$/u.test(name))
+    .map((file) => path.join(root, "01-SiteV2/site", file));
   for (const file of historicalReportPages) {
     const html = read(file);
     if (!/name="wavesight-column-version" content="REPORTS-V1\.(?:0\.0-periodic-report-center|1\.0-lane-independent)"/u.test(html)) {

@@ -7,6 +7,7 @@ import {
   sourceTitleNeedsChineseTranslation,
   titleTranslationLooksUsable,
 } from "./source-title-translation-generator.mjs";
+import { sourceSnapshotRefsByRawId } from "./lib/source-snapshot-ref-v1.mjs";
 
 const root = process.cwd();
 const bundleRoot = path.join(root, "01-SiteV2", "content", "11-databases", "data-center-v4");
@@ -27,16 +28,14 @@ const dates = fs.readdirSync(bundleRoot, { withFileTypes: true })
 for (const date of dates) {
   const dir = path.join(bundleRoot, date);
   const raws = readJson(path.join(dir, "raw-documents.json"));
-  const mappings = readJson(path.join(dir, "legacy-asset-mappings.json"));
+  const sourceArtifacts = readJson(path.join(dir, "source-artifacts.json"));
   const events = readJson(path.join(dir, "canonical-events.json"));
   const dateRawByArtifact = new Map();
   for (const raw of raws) {
     rawBySourceArtifact.set(raw.source_artifact_id, raw.raw_id);
     dateRawByArtifact.set(raw.source_artifact_id, raw);
   }
-  for (const mapping of mappings) {
-    rawPathById.set(mapping.raw_id, mapping.legacy_path);
-  }
+  for (const [rawId, snapshotRef] of sourceSnapshotRefsByRawId(sourceArtifacts, raws)) rawPathById.set(rawId, snapshotRef);
   for (const event of events) {
     const sources = (event.source_refs || []).map((ref) => dateRawByArtifact.get(ref)).filter(Boolean);
     for (const ref of event.source_refs || []) {

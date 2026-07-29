@@ -60,3 +60,27 @@ test("historical weekly HTML remains outside the V4.3 version rewrite", () => {
     assert.doesNotMatch(read(`01-SiteV2/site/${name}`), /SITE-V4\.3\.0-compatibility-write-disabled/u);
   }
 });
+
+test("V4 production no longer depends on active legacy mappings or a public V3 pipeline page", () => {
+  for (const file of [
+    "agent-workflow/tools/build-data-center-v4.mjs",
+    "agent-workflow/tools/assert-source-title-integrity.mjs",
+    "agent-workflow/tools/backfill-source-title-translations.mjs",
+  ]) {
+    const text = read(file);
+    assert.doesNotMatch(text, /legacy-card-event-mappings\.json|readJson\(path\.join\(dir, "legacy-asset-mappings\.json"\)\)/u, file);
+  }
+  const pipeline = read("01-SiteV2/site/pipeline-dashboard.html");
+  assert.match(pipeline, /url=operations-console\.html/u);
+  assert.doesNotMatch(pipeline, /Signal Cards|Raw\s*(?:→|->)\s*Pool/u);
+});
+
+test("Pages deployment watches V4 gate, schema, and version-only changes", () => {
+  const workflow = read(".github/workflows/github-pages.yml");
+  for (const trigger of [
+    "agent-workflow/tools/**",
+    "agent-workflow/product/**",
+    "context/version-ledger.md",
+    "package.json",
+  ]) assert.ok(workflow.includes(`"${trigger}"`), trigger);
+});

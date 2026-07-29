@@ -136,11 +136,12 @@ test("legacy public routes are redirects and report detail pages use the V4 shel
     ["follow-builders.html", "data-center.html?view=viewpoints"],
     ["community-intelligence.html", "data-center.html?view=community"],
     ["reports.html", "intelligence-map.html"],
+    ["pipeline-dashboard.html", "operations-console.html"],
   ]);
   for (const [file, target] of redirects) {
     const html = fs.readFileSync(path.join(root, "01-SiteV2/site", file), "utf8");
     assert.match(html, new RegExp(`url=${target.replace(/[?]/gu, "\\?")}`, "u"));
-    assert.match(html, /SITE-V4\.2\.0-entity-history/u);
+    assert.match(html, /SITE-V4\.(?:2\.0-entity-history|3\.0-compatibility-write-disabled)/u);
     assert.doesNotMatch(html, /wavesight-nav\.css|wavesight-topbar/u);
   }
 

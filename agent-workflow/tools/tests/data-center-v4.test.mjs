@@ -1013,6 +1013,9 @@ test("generated bundle passes the V4 integrity gate", () => {
     entry("deployment", "Hospital deploys Acme AI workflow", "Hospital deployed Acme AI workflow in production. The system reduced review time by 20%."),
     entry("model", "Example releases multimodal open weights model", "Example released a multimodal model with open weights for on-device use.")
   ], taxonomy, date, "2026-07-16T00:00:00.000Z");
+  assert.equal(bundle.manifest.compatibility_write_state, "disabled");
+  assert.equal("legacy_asset_mappings" in bundle, false);
+  assert.ok(bundle.raw_documents.every((raw) => raw.body_ref));
   const result = evaluateBundle({
     manifest: bundle.manifest,
     source_artifacts: bundle.source_artifacts,
@@ -1030,8 +1033,7 @@ test("generated bundle passes the V4 integrity gate", () => {
     facet_assertions: bundle.facet_assertions,
     fde_records: bundle.fde_records,
     hardware_records: bundle.hardware_records,
-    qa_queue: bundle.qa_queue,
-    legacy_asset_mappings: bundle.legacy_asset_mappings
+    qa_queue: bundle.qa_queue
   }, taxonomy);
   assert.deepEqual(result.failures, []);
 });
@@ -1075,8 +1077,13 @@ test("filesystem integrity gate requires resolvable snapshots and complete curre
       snapshot_refs: [relativeRawPath],
       content_hash: "hash-001"
     }],
-    raw_documents: [{ raw_id: "RAW-001", source_url: "https://example.com/story", canonical_url: "https://example.com/story" }],
-    legacy_asset_mappings: [{ legacy_raw_id: "legacy-raw-001", legacy_path: relativeRawPath, raw_id: "RAW-001" }]
+    raw_documents: [{
+      raw_id: "RAW-001",
+      source_artifact_id: "SA-001",
+      source_url: "https://example.com/story",
+      canonical_url: "https://example.com/story",
+      body_ref: relativeRawPath,
+    }]
   };
 
   const passing = evaluateBundleFiles(bundle, { workspaceRoot, date });
@@ -1084,7 +1091,7 @@ test("filesystem integrity gate requires resolvable snapshots and complete curre
   assert.equal(passing.metrics.current_raw_snapshot_coverage, 1);
 
   bundle.source_artifacts[0].snapshot_refs = ["outside/missing.json"];
-  bundle.legacy_asset_mappings[0].legacy_path = "outside/missing.json";
+  bundle.raw_documents[0].body_ref = "outside/missing.json";
   bundle.source_artifacts[0].source_url = "https://example.com/different";
   bundle.source_artifacts[0].canonical_url = "https://example.com/different";
   bundle.source_artifacts[0].content_hash = "different";
@@ -1092,7 +1099,6 @@ test("filesystem integrity gate requires resolvable snapshots and complete curre
   bundle.raw_documents[0].canonical_url = "https://example.com/different";
   const failing = evaluateBundleFiles(bundle, { workspaceRoot, date });
   assert.ok(failing.failures.some((failure) => failure.includes("snapshot_ref does not exist")));
-  assert.ok(failing.failures.some((failure) => failure.includes("legacy_path does not exist")));
   assert.ok(failing.failures.some((failure) => failure.includes("not represented in the V4 bundle")));
 });
 

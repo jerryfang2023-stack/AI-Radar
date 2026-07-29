@@ -10,6 +10,7 @@ import {
   SOURCE_INTAKE_VERSION,
   sourceIntakePath,
 } from "../lib/source-intake-v1.mjs";
+import { selectImmutableSourceSnapshot } from "../lib/immutable-source-snapshot-v1.mjs";
 
 function writeJson(file, value) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -71,4 +72,27 @@ test("SOURCE-INTAKE-V1 rejects body references outside the repository", () => {
     raw_documents: [{ raw_id: "RAW-1", body_ref: path.join(outside, "source.json") }],
   });
   assert.throws(() => loadSourceIntakeEntries(root, date), /does not resolve inside the repository/u);
+});
+
+test("source snapshots are reused immutably and content changes get a stable versioned path", () => {
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-immutable-source-"));
+  const baseName = "r-001-example";
+  const first = { canonical_url: "https://example.test/release", content_hash: "hash-1" };
+  const firstSelection = selectImmutableSourceSnapshot({ directory, baseName, record: first });
+  assert.equal(firstSelection.reused, false);
+  writeJson(firstSelection.jsonPath, first);
+
+  const repeated = selectImmutableSourceSnapshot({ directory, baseName, record: first });
+  assert.equal(repeated.reused, true);
+  assert.equal(repeated.jsonPath, firstSelection.jsonPath);
+
+  const changed = { canonical_url: first.canonical_url, content_hash: "hash-2" };
+  const changedSelection = selectImmutableSourceSnapshot({ directory, baseName, record: changed });
+  assert.equal(changedSelection.reused, false);
+  assert.match(path.basename(changedSelection.jsonPath), /^r-001-example-[a-f0-9]{16}\.json$/u);
+  writeJson(changedSelection.jsonPath, changed);
+
+  const changedRepeated = selectImmutableSourceSnapshot({ directory, baseName, record: changed });
+  assert.equal(changedRepeated.reused, true);
+  assert.equal(changedRepeated.jsonPath, changedSelection.jsonPath);
 });

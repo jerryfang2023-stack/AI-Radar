@@ -103,6 +103,7 @@ const productionTools = [
   "agent-workflow/tools/write-automation-readiness-report.mjs",
   "agent-workflow/tools/sync-local-obsidian-assets.mjs",
   "agent-workflow/tools/build-data-center-v4-obsidian-index.mjs",
+  "agent-workflow/tools/backfill-source-title-translations.mjs",
 ];
 for (const relative of productionTools) {
   const text = read(relative);
@@ -112,12 +113,16 @@ for (const relative of productionTools) {
 }
 
 const publicPages = filesUnder("01-SiteV2/site", new Set([".html"]))
-  .filter((file) => !/weekly-ai-business-change-radar-\d{4}-\d{2}-\d{2}\.html$/u.test(file));
+  .filter((file) => !/(?:weekly-ai-business-change-radar-\d{4}-\d{2}-\d{2}|monthly-business-structure-\d{4}-\d{2})\.html$/u.test(file));
 const publicFetch = /(?:fetch|loadJson)\(\s*["']data\/(?:v3-data-observation-desk|intelligence-graph-index)\.json["']/u;
+const publicV3Copy = /01-Signal-Cards|Raw\s*(?:→|->)\s*Pool|Signal Cards?/iu;
 for (const file of publicPages) {
   const text = fs.readFileSync(file, "utf8");
   if (publicFetch.test(text)) {
     problems.push(`${path.relative(root, file).replace(/\\/gu, "/")} loads a retired V3 dataset`);
+  }
+  if (publicV3Copy.test(text)) {
+    problems.push(`${path.relative(root, file).replace(/\\/gu, "/")} exposes retired V3 production copy`);
   }
 }
 

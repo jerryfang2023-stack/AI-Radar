@@ -113,7 +113,7 @@ export function readBundle(date) {
   ];
   return Object.fromEntries(names.flatMap((name) => {
     const file = path.join(dir, `${name}.json`);
-    if (name === "compatibility-cards" && !fs.existsSync(file)) return [];
+    if (["compatibility-cards", "legacy-asset-mappings"].includes(name) && !fs.existsSync(file)) return [];
     return [[name.replace(/-/gu, "_"), readJson(file)]];
   }));
 }
@@ -276,8 +276,6 @@ export function evaluateBundle(bundle, taxonomy) {
     if (record.source_refs.some((id) => !sourceIds.has(id) || !event?.source_refs.includes(id))) failures.push(`${record.hardware_record_id}: hardware source_refs invalid`);
   }
 
-  const mappedEvents = bundle.legacy_asset_mappings.filter((item) => item.event_id).map((item) => item.event_id);
-  for (const eventId of mappedEvents) if (!eventById.has(eventId)) failures.push(`legacy mapping event ${eventId} does not resolve`);
   if (!bundle.canonical_events.length) warnings.push("No canonical event was produced; Raw data remains available and the day requires coverage review.");
   if (!bundle.fde_records.length) warnings.push("No source-bounded FDE projection was produced.");
   if (!bundle.hardware_records.length) warnings.push("No source-bounded hardware projection was produced.");
@@ -306,7 +304,6 @@ export function evaluateBundleFiles(bundle, options = {}) {
   const sourceUrls = new Set();
   const contentHashes = new Set();
   const snapshotRefs = new Set();
-  const rawIds = new Set((bundle.raw_documents || []).map((item) => normalize(item.raw_id)).filter(Boolean));
 
   for (const artifact of bundle.source_artifacts || []) {
     const refs = Array.isArray(artifact.snapshot_refs) ? artifact.snapshot_refs.filter((value) => normalize(value)) : [];
@@ -335,17 +332,6 @@ export function evaluateBundleFiles(bundle, options = {}) {
     for (const value of [raw.content_hash, raw.evidence_hash]) {
       if (normalize(value)) contentHashes.add(normalize(value));
     }
-  }
-
-  for (const mapping of bundle.legacy_asset_mappings || []) {
-    if (!rawIds.has(normalize(mapping.raw_id))) failures.push(`${mapping.legacy_raw_id || mapping.legacy_path}: legacy mapping raw_id does not resolve`);
-    const resolved = resolveWorkspaceRef(workspaceRoot, mapping.legacy_path);
-    if (!resolved.ok) {
-      failures.push(`${mapping.legacy_raw_id || mapping.raw_id}: legacy_path ${mapping.legacy_path || "<empty>"} is ${resolved.reason}`);
-      continue;
-    }
-    snapshotRefs.add(resolved.relative);
-    if (!fs.existsSync(resolved.file)) failures.push(`${mapping.legacy_raw_id || mapping.raw_id}: legacy_path does not exist: ${resolved.relative}`);
   }
 
   const rawFiles = fs.existsSync(rawRoot)

@@ -113,7 +113,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | First-Line Viewpoints | `01-SiteV2/site/data-center.html?view=viewpoints` | Independent builders viewpoint feed, people index, and timelines in the V4 shell |
 | Community Intelligence | `01-SiteV2/site/data-center.html?view=community` | Logged-in community cases, AI tool tactics, opportunities, and document links in the V4 shell |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Data Observation operations governance backend |
-| Pipeline Dashboard | `01-SiteV2/site/pipeline-dashboard.html` | Production-chain dashboard, kept |
+| Pipeline Dashboard | `01-SiteV2/site/pipeline-dashboard.html` | Retired route redirecting to the V4 Operations Console |
 | Admin | `01-SiteV2/site/admin.html` | Admin entry, kept |
 | Root | `01-SiteV2/site/index.html` | Redirects to Data Center |
 

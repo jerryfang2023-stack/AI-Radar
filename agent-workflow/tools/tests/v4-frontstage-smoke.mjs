@@ -34,6 +34,7 @@ const cases = [
   ["follow-builders.html", "data-center.html"],
   ["community-intelligence.html", "data-center.html"],
   ["reports.html", "intelligence-map.html"],
+  ["pipeline-dashboard.html?from=legacy#status", "operations-console.html"],
 ];
 
 function contentType(file) {

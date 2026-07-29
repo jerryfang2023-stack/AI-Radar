@@ -89,6 +89,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          npm run assert:no-active-v3
           git add 01-SiteV2/content/11-databases/model-assist-v1 01-SiteV2/content/11-databases/source-title-translations.json 01-SiteV2/content/01-raw/originals agent-workflow/reports/source-title-translation-backfill-write.json
           if ! git diff --cached --quiet; then
             git commit -m "Checkpoint model-assist backfill ${FROM_DATE} to ${TO_DATE}"
