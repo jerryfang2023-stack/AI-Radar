@@ -155,7 +155,37 @@ function publicationState() {
   };
 }
 
-export function decideHealthState({ runsAvailable, runsError = "", v4Ready = false, assetsReady, activeRun, publication, successfulRun }) {
+function reusableFailedRun(sameDateRuns) {
+  const requiredSteps = [
+    "Collect source raw artifacts",
+    "Run Daily Monitor with QC",
+    "Confirm V4 source-intake handoff and dedupe state",
+  ];
+  for (const run of sameDateRuns.filter((candidate) => candidate.conclusion === "failure")) {
+    const view = runOptional("gh", [
+      "run", "view", String(run.databaseId),
+      "--json", "workflowName,conclusion,jobs",
+    ]);
+    if (!view.ok) continue;
+    const detail = readJsonText(view.stdout, {});
+    const steps = (detail.jobs || []).flatMap((job) => job.steps || []);
+    const evidenceReady = detail.workflowName === "WaveSight Business Signals PR"
+      && detail.conclusion === "failure"
+      && requiredSteps.every((name) => steps.some((step) => step.name === name && step.conclusion === "success"));
+    if (!evidenceReady) continue;
+
+    const artifacts = runOptional("gh", [
+      "api", `repos/{owner}/{repo}/actions/runs/${run.databaseId}/artifacts`,
+    ]);
+    const artifactPayload = artifacts.ok ? readJsonText(artifacts.stdout, {}) : {};
+    const artifactName = `wavesight-business-signals-pr-${date}`;
+    const artifactReady = (artifactPayload.artifacts || []).some((artifact) => artifact.name === artifactName && artifact.expired !== true);
+    if (artifactReady) return { ...run, artifact_name: artifactName };
+  }
+  return null;
+}
+
+export function decideHealthState({ runsAvailable, runsError = "", v4Ready = false, assetsReady, activeRun, publication, successfulRun, reusableRun }) {
   if (!runsAvailable) return { ok: false, action: "failed", reason: `GitHub run inspection failed: ${runsError}`, dispatchRequired: false };
   if (v4Ready) {
     return {
@@ -184,22 +214,34 @@ export function decideHealthState({ runsAvailable, runsError = "", v4Ready = fal
       dispatchRequired: false,
     };
   }
+  if (reusableRun) {
+    return {
+      ok: true,
+      action: "resume_dispatch_required",
+      reason: `same-date collection and V4 source-intake handoff already passed; resume downstream production from ${reusableRun.url}`,
+      dispatchRequired: true,
+      resumeRunId: reusableRun.databaseId,
+    };
+  }
   return { ok: true, action: "dispatch_required", reason: "no healthy same-date assets and no active/successful/publication-waiting run", dispatchRequired: true };
 }
 
 function runPolicyFixtures() {
-  const base = { runsAvailable: true, runsError: "", v4Ready: false, assetsReady: false, activeRun: null, publication: { waiting: false }, successfulRun: null };
+  const base = { runsAvailable: true, runsError: "", v4Ready: false, assetsReady: false, activeRun: null, publication: { waiting: false }, successfulRun: null, reusableRun: null };
   assert.equal(decideHealthState({ ...base, assetsReady: true }).dispatchRequired, true);
   assert.equal(decideHealthState({ ...base, v4Ready: true }).action, "skipped");
   assert.equal(decideHealthState({ ...base, v4Ready: true }).dispatchRequired, false);
   assert.equal(decideHealthState({ ...base, activeRun: { status: "in_progress" } }).action, "waiting");
   assert.equal(decideHealthState({ ...base, publication: { waiting: true, branch: "automation/business-signals-fixture", pull_request: { url: "https://example.test/pr/1" } } }).action, "publication_waiting");
   assert.equal(decideHealthState({ ...base, successfulRun: { url: "https://example.test/run/1" } }).action, "publication_waiting");
+  const resume = decideHealthState({ ...base, reusableRun: { databaseId: 42, url: "https://example.test/run/42" } });
+  assert.equal(resume.action, "resume_dispatch_required");
+  assert.equal(resume.resumeRunId, 42);
   assert.equal(decideHealthState(base).dispatchRequired, true);
   console.log(JSON.stringify({ ok: true, fixture: "business-signals-health-state" }, null, 2));
 }
 
-function dispatchWorkflow() {
+function dispatchWorkflow(resumeRunId = null) {
   const commandArgs = [
     "workflow",
     "run",
@@ -209,6 +251,7 @@ function dispatchWorkflow() {
     "-f",
     `pass_score=${passScore}`,
   ];
+  if (resumeRunId) commandArgs.push("-f", `resume_run_id=${resumeRunId}`);
   if (dryRun) {
     return { ok: true, output: `dry-run: gh ${commandArgs.join(" ")}` };
   }
@@ -238,6 +281,7 @@ function writeReports(payload) {
     `- assets: \`${JSON.stringify(payload.assets)}\``,
     `- active_run: ${payload.active_run?.url || "none"}`,
     `- successful_run: ${payload.successful_run?.url || "none"}`,
+    `- reusable_run: ${payload.reusable_run?.url || "none"}`,
     `- publication: \`${JSON.stringify(payload.publication)}\``,
     `- dispatch_output: ${payload.dispatch_output || "none"}`,
     "",
@@ -257,6 +301,9 @@ function main() {
   const publication = publicationState();
   const activeRun = runs.sameDateRuns.find((run) => run.status === "queued" || run.status === "in_progress") || null;
   const successfulRun = runs.sameDateRuns.find((run) => run.conclusion === "success") || null;
+  const reusableRun = activeRun || successfulRun || publication.waiting
+    ? null
+    : reusableFailedRun(runs.sameDateRuns);
   const decision = decideHealthState({
     runsAvailable: runs.available,
     runsError: runs.error,
@@ -265,16 +312,19 @@ function main() {
     activeRun,
     publication,
     successfulRun,
+    reusableRun,
   });
   let { action, reason, ok } = decision;
   let dispatch = null;
 
   if (decision.dispatchRequired) {
-    dispatch = dispatchWorkflow();
+    dispatch = dispatchWorkflow(decision.resumeRunId);
     ok = dispatch.ok;
     action = dryRun ? "dry_run_dispatch" : dispatch.ok ? "dispatched" : "dispatch_failed";
     reason = dispatch.ok
-      ? "no healthy same-date assets and no active/successful run; dispatched primary Business Signals workflow"
+      ? decision.resumeRunId
+        ? `same-date source intake is reusable; dispatched downstream recovery from run ${decision.resumeRunId} without recollection`
+        : "no reusable same-date source intake exists; dispatched primary Business Signals workflow with fresh collection"
       : `failed to dispatch primary Business Signals workflow: ${dispatch.output || "unknown error"}`;
   }
 
@@ -291,6 +341,7 @@ function main() {
     assets,
     active_run: activeRun,
     successful_run: successfulRun,
+    reusable_run: reusableRun,
     publication,
     same_date_runs: runs.sameDateRuns,
     dispatch_output: dispatch?.output || "",

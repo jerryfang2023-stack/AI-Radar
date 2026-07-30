@@ -1222,6 +1222,17 @@ test("daily workflow stages only V4-native outputs after the pre-commit gate suc
   assert.match(workflow, /if: always\(\) && steps\.pre-commit-gate\.outcome == 'success'/iu);
 });
 
+test("daily workflow resumes downstream failures without repeating accepted collection", () => {
+  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+
+  assert.match(workflow, /resume_run_id:/u);
+  assert.match(workflow, /Restore accepted source intake from failed run/u);
+  assert.match(workflow, /gh run download "\$resume_run_id" --name "\$artifact_name"/u);
+  assert.match(workflow, /Collect source raw artifacts[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
+  assert.match(workflow, /Run Daily Monitor with QC[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
+  assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?conclusion !== "success"/u);
+});
+
 test("Chinese related-article tails never enter accepted claims", () => {
   const bundle = buildBundle([
     entry(
