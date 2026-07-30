@@ -516,6 +516,22 @@ test("current funding, public-sector, and hardware titles resolve named organiza
   assert.ok(bundle.canonical_events.every((event) => event.entities.length > 0));
 });
 
+test("funding organization is recovered from accepted Claim evidence when the title is descriptive", () => {
+  const bundle = buildBundle([
+    entry(
+      "claim-led-funding-company",
+      "Agentic AI engineering startup announces initial closing of $50 million Series A",
+      "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round."
+    )
+  ], taxonomy, date, "2026-07-30T00:00:00.000Z");
+  const event = bundle.canonical_events[0];
+  const organization = bundle.entities.find((entity) => entity.canonical_name === "P-1 AI, Inc.");
+
+  assert.equal(event.event_type, "funding");
+  assert.ok(organization);
+  assert.ok(event.entities.includes(organization.entity_id));
+});
+
 test("entity-link repair preserves an accepted bundle while restoring missing organizations", () => {
   const bundle = buildBundle([
     entry(
@@ -917,6 +933,22 @@ test("current Chinese Jetson expansion is classified as hardware product", () =>
   assert.equal(bundle.hardware_records.length, 1);
 });
 
+test("NPU mini PCs produce a hardware projection with source-bounded TOPS capacity", () => {
+  const bundle = buildBundle([
+    entry(
+      "npu-mini-pc",
+      "零刻推出 SEi13 AI / SEi14 AI 迷你主机：独立 NPU 最高 160TOPS",
+      "零刻今日宣布推出零刻 SEi13 AI 与零刻 SEi14 AI 迷你主机，搭载最高 160TOPS 算力独立 NPU，为本地 AI 推理而生。",
+      { language: "zh" }
+    )
+  ], taxonomy, date, "2026-07-30T00:00:00.000Z");
+
+  assert.equal(bundle.hardware_records.length, 1);
+  assert.equal(bundle.hardware_records[0].component_type, "ai_accelerator");
+  assert.equal(bundle.hardware_records[0].capacity, 160);
+  assert.equal(bundle.hardware_records[0].capacity_unit.toLowerCase(), "tops");
+});
+
 test("FDE projection requires enterprise implementation evidence", () => {
   const bundle = buildBundle([
     entry(
@@ -967,6 +999,21 @@ test("FDE role projection rejects substring aliases and action-fragment organiza
   assert.notEqual(cactus?.customer, "Intel");
   assert.equal(kpmg?.customer, "KPMG");
   assert.equal(kpmg?.vendor, "OpenAI");
+});
+
+test("FDE partnership entity extraction does not turn an action fragment into the vendor", () => {
+  const bundle = buildBundle([
+    entry(
+      "stellantis-mistral",
+      "Stellantis and Mistral AI Expand Their Collaboration to Accelerate Enterprise-Wide AI Adoption",
+      "Stellantis and Mistral AI elevate their partnership from pilots to company-wide AI deployment, embedding generative AI across operations."
+    )
+  ], taxonomy, date, "2026-07-30T00:00:00.000Z");
+
+  assert.equal(bundle.fde_records.length, 1);
+  assert.equal(bundle.fde_records[0].customer, "Stellantis");
+  assert.equal(bundle.fde_records[0].vendor, "Mistral AI");
+  assert.equal(bundle.entities.some((entity) => entity.canonical_name === "Mistral AI Expand Their"), false);
 });
 
 test("AI relevance evaluator distinguishes industry facts from generic AI wording", () => {

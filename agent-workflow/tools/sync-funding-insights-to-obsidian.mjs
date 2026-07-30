@@ -88,16 +88,6 @@ function webUrl(relativeUrl) {
   return `${SITE_BASE}/${value.replace(/^\/+/u, "")}`;
 }
 
-function findVaultRoot(start) {
-  let current = path.resolve(start);
-  while (true) {
-    if (fs.existsSync(path.join(current, ".obsidian"))) return current;
-    const parent = path.dirname(current);
-    if (parent === current) return path.resolve(start);
-    current = parent;
-  }
-}
-
 function vaultLink(vaultRoot, file) {
   return path.relative(vaultRoot, file).replace(/\\/gu, "/").replace(/\.md$/u, "");
 }
@@ -396,7 +386,9 @@ export function syncFundingInsightsToObsidian({
 } = {}) {
   const inputFile = path.resolve(root, input);
   const outputRoot = path.resolve(root, output);
-  const vaultRoot = findVaultRoot(root);
+  // Keep generated links stable in local Obsidian vaults and GitHub Actions.
+  // A parent `.obsidian` directory is an environment detail, not repository data.
+  const vaultRoot = path.resolve(root);
   const vaultOutputPath = path.relative(vaultRoot, outputRoot).replace(/\\/gu, "/");
   const sourcePath = path.relative(root, inputFile).replace(/\\/gu, "/");
   const data = JSON.parse(fs.readFileSync(inputFile, "utf8").replace(/^\uFEFF/u, ""));

@@ -24,6 +24,7 @@ function fundingEventsForDate(projectRoot, date, entityIndex) {
     date,
   );
   const entities = readJson(path.join(dir, "entities.json"), []);
+  const claims = readJson(path.join(dir, "claims.json"), []);
   return readJson(path.join(dir, "canonical-events.json"), [])
     .filter((event) => (
       event.event_type === "funding"
@@ -32,7 +33,7 @@ function fundingEventsForDate(projectRoot, date, entityIndex) {
     ))
     .map((event) => ({
       event,
-      subject_company_resolved: Boolean(subjectCompanyForEvent(event, entities, entityIndex)),
+      subject_company_resolved: Boolean(subjectCompanyForEvent(event, entities, entityIndex, claims)),
     }));
 }
 

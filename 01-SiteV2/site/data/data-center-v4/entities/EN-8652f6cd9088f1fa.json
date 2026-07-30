@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "generatedAt": "2026-07-30T03:53:16.459Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1731,
+    "eventCount": 1732,
     "quarantinedEventCount": 13
   },
   "entity": {
@@ -38,6 +38,7 @@
     "lastSeen": "2026-07-30",
     "relationIds": [
       "REL2-229f4051d4ed3200",
+      "REL2-9c0ac2940324ff78",
       "REL2-4410cf5eef104c6e",
       "REL2-c2250eeea2122198"
     ],
@@ -68,7 +69,6 @@
         "displayTags": [],
         "entityIds": [
           "EN-8652f6cd9088f1fa",
-          "EN-819101e7958d70f8",
           "EN-c04bd5ebd10ab696"
         ]
       },
@@ -355,6 +355,27 @@
       "status": "verified"
     },
     {
+      "relationship_id": "REL2-9c0ac2940324ff78",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c04bd5ebd10ab696",
+      "subject_type": "entity",
+      "predicate": "serves",
+      "object_ref": "EN-8652f6cd9088f1fa",
+      "object_type": "entity",
+      "event_id": "EV-c8f3db31cb266b64",
+      "claim_refs": [
+        "CL-c0efbf2fe9d9f1e2",
+        "CL-e93909cf86da757a",
+        "CL-e80bd9d99c74aec9",
+        "CL-baaed277998933ae"
+      ],
+      "source_refs": [
+        "SA-1b35ce83e38353eb"
+      ],
+      "data_date": "2026-07-30",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-4410cf5eef104c6e",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-8652f6cd9088f1fa",
@@ -567,7 +588,7 @@
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Stellantis",
-      "vendor": "Mistral AI Expand Their",
+      "vendor": "Mistral AI",
       "industry": "未披露",
       "useCase": "Accelerate Enterprise-Wide AI Adoption",
       "reportedNeed": "未披露",
@@ -590,7 +611,6 @@
       "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=1330-1001130978en-33HTR88M4N3TCG5HLKBIGEHTEH",
       "entityIds": [
         "EN-8652f6cd9088f1fa",
-        "EN-819101e7958d70f8",
         "EN-c04bd5ebd10ab696"
       ]
     }

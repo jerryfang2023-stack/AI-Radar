@@ -4,13 +4,42 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "generatedAt": "2026-07-30T03:53:16.459Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1731,
+    "eventCount": 1732,
     "quarantinedEventCount": 13
   },
   "hardware": [
+    {
+      "id": "HW-b0c753b9501f996e",
+      "eventId": "EV-0a4e9b2eca953036",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "title": "零刻推出 SEi13 AI / SEi14 AI 迷你主机：独立 NPU 最高 160TOPS，11895 元起",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "零刻",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 160,
+      "capacityUnit": "TOPS",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/983/263.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-29",
+      "entityIds": [
+        "EN-36b1dbc8da066a19",
+        "EN-7a03939835d5eee2",
+        "EN-3e134fc2d861146f"
+      ]
+    },
     {
       "id": "HW-e74af0366681ccbe",
       "eventId": "EV-8805e96b4fb544dd",
@@ -1867,7 +1896,71 @@
       "publisher": "TechCrunch：AI（RSS）"
     },
     {
-      "id": "EV-8aa51e324eca8fc2",
+      "id": "EV-39b075c62ba4e927",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "智能体AI能否让美国制造业回归？",
+      "originalTitle": "Could Agentic AI Bring American Manufacturing Back?",
+      "subject": "P-1 AI, Inc.",
+      "action": "funding",
+      "object": "$50 million Series A financing round",
+      "metrics": [
+        "$50 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-f9075cc99990820a"
+      ],
+      "entityNames": [
+        "P-1 AI, Inc."
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
+      "publisher": "tech.yahoo.com"
+    },
+    {
+      "id": "EV-57cf8e14d6994c1b",
       "dataDate": "2026-07-30",
       "date": "2026-07-29",
       "updatedDate": "2026-07-30",
@@ -1887,9 +1980,7 @@
         "$30 million"
       ],
       "locations": [],
-      "missingFields": [
-        "entities"
-      ],
+      "missingFields": [],
       "conflicts": [],
       "tags": [
         {
@@ -1960,74 +2051,16 @@
           "name": "企业用户"
         }
       ],
-      "entityIds": [],
-      "entityNames": [],
+      "entityIds": [
+        "EN-556c337c4f0b031e"
+      ],
+      "entityNames": [
+        "Encore AI"
+      ],
       "productName": "",
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls",
       "publisher": "TechCrunch：AI（RSS）"
-    },
-    {
-      "id": "EV-9f847fced6da7c4c",
-      "dataDate": "2026-07-30",
-      "date": "2026-07-29",
-      "updatedDate": "2026-07-30",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "智能体AI能否让美国制造业回归？",
-      "originalTitle": "Could Agentic AI Bring American Manufacturing Back?",
-      "subject": "P-1 AI, Inc.",
-      "action": "funding",
-      "object": "$50 million Series A financing round",
-      "metrics": [
-        "$50 million"
-      ],
-      "locations": [],
-      "missingFields": [
-        "entities"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "entityIds": [],
-      "entityNames": [],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
-      "publisher": "tech.yahoo.com"
     },
     {
       "id": "EV-f1553722b4ce43af",
@@ -12895,6 +12928,71 @@
       "products": [],
       "sourceUrl": "https://startuprise.org/fire-ai-secures-pre-seed-funding-from-venture-catalysts",
       "publisher": "startuprise.org"
+    },
+    {
+      "id": "EV-8aa51e324eca8fc2",
+      "dataDate": "2026-06-25",
+      "date": "2026-06-25",
+      "updatedDate": "2026-06-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元",
+      "originalTitle": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune",
+      "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+      "action": "raised",
+      "object": "$30 million | Fortune",
+      "metrics": [
+        "$30 million",
+        "$42 million",
+        "$11 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://fortune.com/2026/06/24/exclusive-vinod-khosla-felicis-runlayer-nanit-30-million-enterprise-ai",
+      "publisher": "fortune.com"
     },
     {
       "id": "EV-9fa9822969d3c3fd",
@@ -44609,12 +44707,10 @@
       "displayTags": [],
       "entityIds": [
         "EN-8652f6cd9088f1fa",
-        "EN-819101e7958d70f8",
         "EN-c04bd5ebd10ab696"
       ],
       "entityNames": [
         "Stellantis",
-        "Mistral AI Expand Their",
         "Mistral AI"
       ],
       "productName": "",
@@ -44973,6 +45069,7 @@
       "action": "发布",
       "object": "MIX-Q870A1 主板：AI 算力最高 36 TOPS，配双网口",
       "metrics": [
+        "36 TOPS",
         "6 Gb"
       ],
       "locations": [],
@@ -45274,6 +45371,7 @@
       "action": "推出 SEi13 AI / SEi14 AI 迷你主机：独立 NPU",
       "object": "最高 160TOPS，11895 元起",
       "metrics": [
+        "160TOPS",
         "1TB"
       ],
       "locations": [],

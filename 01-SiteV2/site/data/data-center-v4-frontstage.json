@@ -4,10 +4,10 @@
     "dataVersion": "SITE-V4.0-data-center",
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T03:17:55.488Z",
+    "generatedAt": "2026-07-30T03:53:16.459Z",
     "latestDataDate": "2026-07-30",
     "currentDate": "2026-07-30",
-    "eventCount": 1731,
+    "eventCount": 1732,
     "quarantinedEventCount": 13
   },
   "eventTypes": {
@@ -173,7 +173,87 @@
       "sourceExcerpt": "New York-based AI detection startup Pangram is on a mission to combat the AI slop infestation spreading across the internet, and it just raised $9 million"
     },
     {
-      "id": "EV-8aa51e324eca8fc2",
+      "id": "EV-39b075c62ba4e927",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "updatedDate": "2026-07-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "智能体AI能否让美国制造业回归？",
+      "originalTitle": "Could Agentic AI Bring American Manufacturing Back?",
+      "subject": "P-1 AI, Inc.",
+      "action": "funding",
+      "object": "$50 million Series A financing round",
+      "metrics": [
+        "$50 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [
+        "EN-f9075cc99990820a"
+      ],
+      "entityNames": [
+        "P-1 AI, Inc."
+      ],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-fd851e83627a98a0",
+          "subject": "P-1 AI, Inc.",
+          "object": "$50 million Series A financing round",
+          "quote": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-a0add4bf85cb8a64",
+          "publisher": "tech.yahoo.com",
+          "url": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html"
+        }
+      ],
+      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
+      "publisher": "tech.yahoo.com",
+      "sourceExcerpt": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round."
+    },
+    {
+      "id": "EV-57cf8e14d6994c1b",
       "dataDate": "2026-07-30",
       "date": "2026-07-29",
       "updatedDate": "2026-07-30",
@@ -193,9 +273,7 @@
         "$30 million"
       ],
       "locations": [],
-      "missingFields": [
-        "entities"
-      ],
+      "missingFields": [],
       "conflicts": [],
       "tags": [
         {
@@ -266,8 +344,12 @@
           "name": "企业用户"
         }
       ],
-      "entityIds": [],
-      "entityNames": [],
+      "entityIds": [
+        "EN-556c337c4f0b031e"
+      ],
+      "entityNames": [
+        "Encore AI"
+      ],
       "productName": "",
       "products": [],
       "claims": [
@@ -300,84 +382,6 @@
       "sourceUrl": "https://techcrunch.com/2026/07/29/encore-ai-raises-30m-to-build-ai-agents-that-learn-from-customer-calls",
       "publisher": "TechCrunch：AI（RSS）",
       "sourceExcerpt": "Encore AI raises $30M to build AI agents that learn from customer calls"
-    },
-    {
-      "id": "EV-9f847fced6da7c4c",
-      "dataDate": "2026-07-30",
-      "date": "2026-07-29",
-      "updatedDate": "2026-07-30",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "智能体AI能否让美国制造业回归？",
-      "originalTitle": "Could Agentic AI Bring American Manufacturing Back?",
-      "subject": "P-1 AI, Inc.",
-      "action": "funding",
-      "object": "$50 million Series A financing round",
-      "metrics": [
-        "$50 million"
-      ],
-      "locations": [],
-      "missingFields": [
-        "entities"
-      ],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "facets": {
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体"
-        }
-      ],
-      "entityIds": [],
-      "entityNames": [],
-      "productName": "",
-      "products": [],
-      "claims": [
-        {
-          "id": "CL-fd851e83627a98a0",
-          "subject": "P-1 AI, Inc.",
-          "object": "$50 million Series A financing round",
-          "quote": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round."
-        }
-      ],
-      "sources": [
-        {
-          "id": "SA-a0add4bf85cb8a64",
-          "publisher": "tech.yahoo.com",
-          "url": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html"
-        }
-      ],
-      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
-      "publisher": "tech.yahoo.com",
-      "sourceExcerpt": "P-1 AI, Inc. , an Agentic AI engineering startup for industrial teams that just announced the initial closing of its $50 million Series A financing round."
     },
     {
       "id": "EV-f1553722b4ce43af",
@@ -16177,6 +16181,116 @@
       "sourceUrl": "https://startuprise.org/fire-ai-secures-pre-seed-funding-from-venture-catalysts",
       "publisher": "startuprise.org",
       "sourceExcerpt": "# Fire AI Secures Pre-Seed Funding from Venture Catalysts. Jul 16, 2025 | By Yan li. Fire AI, a startup that helps businesses with automation and data analysis through conversation-based tools, has raised money in a pre-seed funding round. The round was led by Venture Catalysts and included support from key investors like Gaurav Khatri (Co-founder and CEO of Noise) and Amit Kumar Singh (former MD of Central Warehousing Corporation). Founded by Vipul Prakash, a former product and growth leader at Zomato, Delhivery, and BharatPe, Fire AI is building a unified platform that integrates descriptive, diagnostic, predictive, and prescriptive analytics to help businesses derive insights from data in…"
+    },
+    {
+      "id": "EV-8aa51e324eca8fc2",
+      "dataDate": "2026-06-25",
+      "date": "2026-06-25",
+      "updatedDate": "2026-06-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "独家：Vinod Khosla曾希望获得Runlayer本轮融资的每一美元。该公司刚刚筹集了3000万美元",
+      "originalTitle": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune",
+      "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+      "action": "raised",
+      "object": "$30 million | Fortune",
+      "metrics": [
+        "$30 million",
+        "$42 million",
+        "$11 million"
+      ],
+      "locations": [],
+      "missingFields": [
+        "entities",
+        "event_time"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "facets": {
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体"
+        }
+      ],
+      "entityIds": [],
+      "entityNames": [],
+      "productName": "",
+      "products": [],
+      "claims": [
+        {
+          "id": "CL-608fabcffd3158a7",
+          "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+          "object": "$30 million | Fortune",
+          "quote": "Exclusive: Vinod Khosla wanted ‘every available dollar’ of Runlayer’s funding round. It just raised $30 million to govern the agent workforce"
+        },
+        {
+          "id": "CL-5f698fc55c752013",
+          "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+          "object": "$30 million | Fortune",
+          "quote": "Runlayer raised a $30 million Series A led by Felicis , with Khosla Ventures participating, Fortune learned exclusively. Felicis preempted the round which brought Runlayer’s total capital raised to $42 million."
+        },
+        {
+          "id": "CL-3a8f3cebc775c977",
+          "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+          "object": "$30 million | Fortune",
+          "quote": "When longtime tech investor Vinod Khosla heard that Runlayer—the startup trying to become the default infrastructure layer governing how every corporate employee interacts with AI agents—was raising a new round, his response was unambiguous: he wanted “to buy every available dollar of the round.” Now, that conviction is official."
+        },
+        {
+          "id": "CL-d619f647981a0bf6",
+          "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+          "object": "$30 million | Fortune",
+          "quote": "The startup, which launched out of stealth just seven months ago with an $11 million seed from the same two investors, is tackling one of enterprise tech’s most pressing problems. Companies are deploying AI agents everywhere, but no one has a reliable way to see what those agents are doing , control what they access, or stop them from going rogue. Last year, one of Runlayer’s customers discovered that an agent had blown through its entire annual AI-compute budget in a single weekend, running in a loop."
+        },
+        {
+          "id": "CL-e407c14141c8071b",
+          "subject": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just",
+          "object": "$30 million | Fortune",
+          "quote": "Exclusive: Vinod Khosla wanted every dollar of Runlayer's round. It just raised $30 million | Fortune ... # Exclusive: Vinod Khosla wanted ‘every available dollar’ of Runlayer’s funding round. It just raised $30 million to govern the agent workforce ... Andrew Berman, a three-time founder, previousl... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=capital_startup"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-54df3798734d572f",
+          "publisher": "fortune.com",
+          "url": "https://fortune.com/2026/06/24/exclusive-vinod-khosla-felicis-runlayer-nanit-30-million-enterprise-ai"
+        },
+        {
+          "id": "SA-154b2b3c6c20227a",
+          "publisher": "fortune.com",
+          "url": "https://fortune.com/2026/06/24/exclusive-vinod-khosla-felicis-runlayer-nanit-30-million-enterprise-ai"
+        }
+      ],
+      "sourceUrl": "https://fortune.com/2026/06/24/exclusive-vinod-khosla-felicis-runlayer-nanit-30-million-enterprise-ai",
+      "publisher": "fortune.com",
+      "sourceExcerpt": "Exclusive: Vinod Khosla wanted ‘every available dollar’ of Runlayer’s funding round. It just raised $30 million to govern the agent workforce"
     },
     {
       "id": "EV-9fa9822969d3c3fd",
@@ -62121,12 +62235,10 @@
       "displayTags": [],
       "entityIds": [
         "EN-8652f6cd9088f1fa",
-        "EN-819101e7958d70f8",
         "EN-c04bd5ebd10ab696"
       ],
       "entityNames": [
         "Stellantis",
-        "Mistral AI Expand Their",
         "Mistral AI"
       ],
       "productName": "",
@@ -62641,6 +62753,7 @@
       "action": "发布",
       "object": "MIX-Q870A1 主板：AI 算力最高 36 TOPS，配双网口",
       "metrics": [
+        "36 TOPS",
         "6 Gb"
       ],
       "locations": [],
@@ -63072,6 +63185,7 @@
       "action": "推出 SEi13 AI / SEi14 AI 迷你主机：独立 NPU",
       "object": "最高 160TOPS，11895 元起",
       "metrics": [
+        "160TOPS",
         "1TB"
       ],
       "locations": [],
@@ -172866,6 +172980,7 @@
       ],
       "relationIds": [
         "REL2-229f4051d4ed3200",
+        "REL2-9c0ac2940324ff78",
         "REL2-8ece73de065422cf",
         "REL2-8d7f8c3e4ca24dcb",
         "REL2-3ea72ee73bfd8b44",
@@ -174516,6 +174631,7 @@
       ],
       "relationIds": [
         "REL2-229f4051d4ed3200",
+        "REL2-9c0ac2940324ff78",
         "REL2-4410cf5eef104c6e",
         "REL2-c2250eeea2122198"
       ],
@@ -187542,7 +187658,7 @@
       "typeLabel": "应用场景",
       "valueId": "customer_service",
       "eventIds": [
-        "EV-8aa51e324eca8fc2",
+        "EV-57cf8e14d6994c1b",
         "EV-506f1936ecfb350f",
         "EV-64fb6d791e19d10a",
         "EV-f020dd198aa2f952",
@@ -187566,6 +187682,7 @@
         "EV-94d9c8d5ac1e10de"
       ],
       "entityIds": [
+        "EN-556c337c4f0b031e",
         "EN-dca6ec9510fc0176",
         "EN-3ccbd9105a45d8fc",
         "EN-8147e6fed86d42c1",
@@ -188924,8 +189041,8 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
-        "EV-8aa51e324eca8fc2",
-        "EV-9f847fced6da7c4c",
+        "EV-39b075c62ba4e927",
+        "EV-57cf8e14d6994c1b",
         "EV-5f3ccb941a2fe5d7",
         "EV-9490bae84e7b4707",
         "EV-cc65a81f48e10ceb",
@@ -188972,6 +189089,7 @@
         "EV-921c843ad32c993c",
         "EV-010946e35d35bb43",
         "EV-2bea8d8046a9b325",
+        "EV-8aa51e324eca8fc2",
         "EV-9fa9822969d3c3fd",
         "EV-da064f736e880e30",
         "EV-f487788f3d44f288",
@@ -189335,6 +189453,8 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-f9075cc99990820a",
+        "EN-556c337c4f0b031e",
         "EN-fb42d760d80a6314",
         "EN-9fbf261b62c1d7c0",
         "EN-2be663431f007250",
@@ -248410,6 +248530,77 @@
       "viewpoints": []
     },
     {
+      "id": "EN-556c337c4f0b031e",
+      "name": "Encore AI",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-57cf8e14d6994c1b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-customer_service"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-29",
+      "lastSeen": "2026-07-30",
+      "relationIds": [],
+      "groupedEventIds": {
+        "fundingAcquisition": [
+          "EV-57cf8e14d6994c1b"
+        ],
+        "deployments": [],
+        "partnerships": [],
+        "productsServices": [],
+        "hardware": [],
+        "organizationPeople": [],
+        "other": []
+      },
+      "timeline": [
+        {
+          "id": "EV-57cf8e14d6994c1b",
+          "dataDate": "2026-07-30",
+          "date": "2026-07-29",
+          "eventType": "funding",
+          "eventTypeLabel": "融资",
+          "eventGroup": "融资与并购",
+          "status": "completed",
+          "statusLabel": "已完成",
+          "title": "Encore AI 获 3000 万美元 A 轮融资，用客户通话训练 AI 语音智能体",
+          "displayTags": [
+            {
+              "dimensionId": "use_case",
+              "id": "customer_service",
+              "dimensionName": "应用场景",
+              "name": "客户服务"
+            },
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "agentic_execution",
+              "name": "智能体"
+            },
+            {
+              "dimensionId": "target_user",
+              "id": "enterprise",
+              "dimensionName": "目标用户",
+              "name": "企业用户"
+            }
+          ],
+          "entityIds": [
+            "EN-556c337c4f0b031e"
+          ]
+        }
+      ],
+      "viewpoints": []
+    },
+    {
       "id": "EN-450dcf23e621ff10",
       "name": "Engram",
       "entityType": "organization_candidate",
@@ -285469,6 +285660,7 @@
       "lastSeen": "2026-07-30",
       "relationIds": [
         "REL2-229f4051d4ed3200",
+        "REL2-9c0ac2940324ff78",
         "REL2-8ece73de065422cf",
         "REL2-8d7f8c3e4ca24dcb",
         "REL2-3ea72ee73bfd8b44",
@@ -285511,7 +285703,6 @@
           "displayTags": [],
           "entityIds": [
             "EN-8652f6cd9088f1fa",
-            "EN-819101e7958d70f8",
             "EN-c04bd5ebd10ab696"
           ]
         },
@@ -285691,57 +285882,6 @@
           "entityIds": [
             "EN-c04bd5ebd10ab696",
             "EN-96eebba49dbbf422"
-          ]
-        }
-      ],
-      "viewpoints": []
-    },
-    {
-      "id": "EN-819101e7958d70f8",
-      "name": "Mistral AI Expand Their",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [],
-      "verificationStatus": "candidate",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-c8f3db31cb266b64"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [],
-      "relatedEntityIds": [],
-      "firstSeen": "2025-10-01",
-      "lastSeen": "2026-07-30",
-      "relationIds": [],
-      "groupedEventIds": {
-        "fundingAcquisition": [],
-        "deployments": [],
-        "partnerships": [
-          "EV-c8f3db31cb266b64"
-        ],
-        "productsServices": [],
-        "hardware": [],
-        "organizationPeople": [],
-        "other": []
-      },
-      "timeline": [
-        {
-          "id": "EV-c8f3db31cb266b64",
-          "dataDate": "2026-07-30",
-          "date": "2025-10-01",
-          "eventType": "partnership",
-          "eventTypeLabel": "合作",
-          "eventGroup": "商业合作",
-          "status": "announced",
-          "statusLabel": "已公布",
-          "title": "Stellantis 与 Mistral AI 扩大合作，加速企业级 AI 应用",
-          "displayTags": [],
-          "entityIds": [
-            "EN-8652f6cd9088f1fa",
-            "EN-819101e7958d70f8",
-            "EN-c04bd5ebd10ab696"
           ]
         }
       ],
@@ -305555,6 +305695,64 @@
       "viewpoints": []
     },
     {
+      "id": "EN-f9075cc99990820a",
+      "name": "P-1 AI, Inc.",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-39b075c62ba4e927"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-29",
+      "lastSeen": "2026-07-30",
+      "relationIds": [],
+      "groupedEventIds": {
+        "fundingAcquisition": [
+          "EV-39b075c62ba4e927"
+        ],
+        "deployments": [],
+        "partnerships": [],
+        "productsServices": [],
+        "hardware": [],
+        "organizationPeople": [],
+        "other": []
+      },
+      "timeline": [
+        {
+          "id": "EV-39b075c62ba4e927",
+          "dataDate": "2026-07-30",
+          "date": "2026-07-29",
+          "eventType": "funding",
+          "eventTypeLabel": "融资",
+          "eventGroup": "融资与并购",
+          "status": "announced",
+          "statusLabel": "已公布",
+          "title": "智能体AI能否让美国制造业回归？",
+          "displayTags": [
+            {
+              "dimensionId": "technology",
+              "dimensionName": "技术",
+              "id": "agentic_execution",
+              "name": "智能体"
+            }
+          ],
+          "entityIds": [
+            "EN-f9075cc99990820a"
+          ]
+        }
+      ],
+      "viewpoints": []
+    },
+    {
       "id": "EN-c8df76b80d0e312e",
       "name": "Palantir Technologies Inc.",
       "entityType": "organization_candidate",
@@ -320911,6 +321109,7 @@
       "lastSeen": "2026-07-30",
       "relationIds": [
         "REL2-229f4051d4ed3200",
+        "REL2-9c0ac2940324ff78",
         "REL2-4410cf5eef104c6e",
         "REL2-c2250eeea2122198"
       ],
@@ -320941,7 +321140,6 @@
           "displayTags": [],
           "entityIds": [
             "EN-8652f6cd9088f1fa",
-            "EN-819101e7958d70f8",
             "EN-c04bd5ebd10ab696"
           ]
         },
@@ -334392,6 +334590,27 @@
       "status": "verified"
     },
     {
+      "relationship_id": "REL2-9c0ac2940324ff78",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c04bd5ebd10ab696",
+      "subject_type": "entity",
+      "predicate": "serves",
+      "object_ref": "EN-8652f6cd9088f1fa",
+      "object_type": "entity",
+      "event_id": "EV-c8f3db31cb266b64",
+      "claim_refs": [
+        "CL-c0efbf2fe9d9f1e2",
+        "CL-e93909cf86da757a",
+        "CL-e80bd9d99c74aec9",
+        "CL-baaed277998933ae"
+      ],
+      "source_refs": [
+        "SA-1b35ce83e38353eb"
+      ],
+      "data_date": "2026-07-30",
+      "status": "verified"
+    },
+    {
       "relationship_id": "REL2-6c33e8063218608e",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-c70eca6b0f88f44d",
@@ -341343,7 +341562,7 @@
   "entityHistoryManifest": {
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
-    "generatedAt": "2026-07-30T03:17:55.455Z",
+    "generatedAt": "2026-07-30T03:53:16.409Z",
     "coverage": {
       "startDate": "2017-09-07",
       "endDate": "2027-09-30",
@@ -341355,12 +341574,12 @@
       }
     },
     "counts": {
-      "entities": 1434,
-      "organizations": 971,
+      "entities": 1435,
+      "organizations": 972,
       "products": 432,
       "people": 31,
       "taxonomyNodes": 43,
-      "relationships": 355
+      "relationships": 356
     },
     "review": {
       "reviewed": 911,
@@ -341380,7 +341599,7 @@
       "stage": "announced",
       "stageLabel": "已公布",
       "customer": "Stellantis",
-      "vendor": "Mistral AI Expand Their",
+      "vendor": "Mistral AI",
       "industry": "未披露",
       "useCase": "Accelerate Enterprise-Wide AI Adoption",
       "reportedNeed": "未披露",
@@ -341403,7 +341622,6 @@
       "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=1330-1001130978en-33HTR88M4N3TCG5HLKBIGEHTEH",
       "entityIds": [
         "EN-8652f6cd9088f1fa",
-        "EN-819101e7958d70f8",
         "EN-c04bd5ebd10ab696"
       ]
     },
@@ -345597,6 +345815,35 @@
     }
   ],
   "hardware": [
+    {
+      "id": "HW-b0c753b9501f996e",
+      "eventId": "EV-0a4e9b2eca953036",
+      "dataDate": "2026-07-30",
+      "date": "2026-07-29",
+      "title": "零刻推出 SEi13 AI / SEi14 AI 迷你主机：独立 NPU 最高 160TOPS，11895 元起",
+      "hardwareType": "ai_accelerator",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "未披露",
+      "supplier": "零刻",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": 160,
+      "capacityUnit": "TOPS",
+      "site": "未披露",
+      "region": "未披露",
+      "contractValue": "未披露",
+      "shipmentDate": "未披露",
+      "tags": [],
+      "sourceUrl": "https://ithome.com/0/983/263.htm",
+      "sourceName": "IT之家（RSS）",
+      "sourceDate": "2026-07-29",
+      "entityIds": [
+        "EN-36b1dbc8da066a19",
+        "EN-7a03939835d5eee2",
+        "EN-3e134fc2d861146f"
+      ]
+    },
     {
       "id": "HW-e74af0366681ccbe",
       "eventId": "EV-8805e96b4fb544dd",
