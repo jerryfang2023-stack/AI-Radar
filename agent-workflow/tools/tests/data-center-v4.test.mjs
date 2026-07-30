@@ -1235,6 +1235,13 @@ test("daily workflow resumes downstream failures without repeating accepted coll
   assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?conclusion !== "success"/u);
 });
 
+test("production-chain staleness ignores clean-checkout filesystem timestamp order", () => {
+  const gate = fs.readFileSync(path.join(root, "agent-workflow/tools/assert-daily-production-chain.mjs"), "utf8");
+
+  assert.match(gate, /git", \[\s*"status",\s*"--porcelain"/u);
+  assert.match(gate, /relevantWorktreeChanged \? Object\.entries\(downstreamGroups\) : \[\]/u);
+});
+
 test("Chinese related-article tails never enter accepted claims", () => {
   const bundle = buildBundle([
     entry(

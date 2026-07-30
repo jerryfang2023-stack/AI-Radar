@@ -1,33 +1,36 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T03:14:06.964Z",
+  "generated_at": "2026-07-30T03:22:16.437Z",
   "date": "2026-07-30",
-  "action": "Repair Business Signals artifact restore collision",
+  "action": "Repair clean-checkout Data Center staleness check",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Extract the validated resume artifact into an isolated temporary directory before copying it over the checkout",
+  "summary": "Only compare filesystem ordering when relevant production paths are changed in the worktree, preventing a clean pull from appearing stale",
   "contexts": [],
   "changed_files": [
-    ".github/workflows/daily-persistent-assets-pr.yml",
+    "agent-workflow/tools/assert-daily-production-chain.mjs",
     "agent-workflow/tools/tests/data-center-v4.test.mjs"
   ],
   "outputs": [],
   "checks": [
-    "test:data-center 149 passed",
+    "test:data-center 150 passed",
+    "exact pre-commit gate passed on merged 2026-07-30 assets",
     "git diff --check"
   ],
   "issues": [
-    "Direct artifact extraction collided with the workflow report created earlier in the same job"
+    "Git checkout write order made a healthy committed manifest look older than raw snapshots"
   ],
   "risks": [
-    "Temporary directory is scoped to the job and removed on exit"
+    "Dirty in-progress production paths still use ordering checks and remain release-blocking"
   ],
   "lessons": [
-    "Artifact resume must tolerate checkout files that share artifact paths"
+    "Filesystem mtimes are not production chronology on a clean checkout"
   ],
-  "reusable_rules": [],
+  "reusable_rules": [
+    "Do not trigger recollection from clean-checkout timestamp order"
+  ],
   "retired_flags": [],
   "notes": []
 }
