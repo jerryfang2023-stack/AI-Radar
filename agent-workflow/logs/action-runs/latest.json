@@ -1,34 +1,30 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-29T15:16:51.240Z",
-  "date": "2026-07-29",
-  "action": "Repair Funding Insights site-version drift",
-  "action_status": "current",
+  "generated_at": "2026-07-30T02:36:01.037Z",
+  "date": "2026-07-30",
+  "action": "Repair Data Center duplicate-state gate",
+  "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "post-deployment online smoke",
+  "trigger": "manual",
   "status": "success",
-  "summary": "Updated the Funding Insights frontstage builder and published dataset to SITE-V4.3.0 and added a permanent version-consistency assertion.",
+  "summary": "Distinguish merged provider duplicates from active historical duplicates so valid SOURCE-INTAKE-V1 batches can proceed",
   "contexts": [],
-  "changed_files": [
-    "01-SiteV2/site/scripts/build-funding-insights-frontstage.mjs",
-    "01-SiteV2/site/data/funding-insights-v1.json",
-    "agent-workflow/tools/assert-version-consistency.mjs",
-    "agent-workflow/tools/tests/funding-insight-v1.test.mjs"
-  ],
+  "changed_files": [],
   "outputs": [],
   "checks": [
-    "20 Funding Insights tests passed",
-    "version consistency passed",
-    "active V3 consumers equals zero"
+    "source-intake-v1 test; exact post-monitor gate against run 30505143823 artifact"
   ],
   "issues": [
-    "online Funding Insights metadata remained SITE-V4.2.0 after the V4.3 retirement deployment"
+    "2026-07-30 production blocked after intake despite 32 records already marked merged_provider_duplicates"
   ],
-  "risks": [],
-  "lessons": [],
-  "reusable_rules": [
-    "application frontstage datasets must expose the current SITE release and be checked by the central version gate"
+  "risks": [
+    "True duplicate_status=duplicate remains release-blocking"
   ],
+  "lessons": [
+    "Gate duplicate semantics by explicit status",
+    "not by explanatory duplicate_of text"
+  ],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }

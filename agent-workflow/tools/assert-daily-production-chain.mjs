@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
-import { readSourceIntake } from "./lib/source-intake-v1.mjs";
+import { hasActiveHistoricalDuplicate, readSourceIntake } from "./lib/source-intake-v1.mjs";
 
 const root = process.cwd();
 const args = new Map(process.argv.slice(2).map((arg) => {
@@ -93,7 +93,7 @@ const finalQcDecision = (
 
 const activeDuplicateCount = rawDocuments.filter((document) => {
   const raw = readJson(path.resolve(root, document.body_ref || ""), {});
-  return raw.duplicate_status === "duplicate" || Boolean(String(raw.duplicate_of || "").trim());
+  return hasActiveHistoricalDuplicate(raw);
 }).length;
 
 const upstreamFiles = [

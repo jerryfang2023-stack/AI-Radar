@@ -5,6 +5,10 @@ import path from "node:path";
 export const SOURCE_INTAKE_VERSION = "SOURCE-INTAKE-V1.0";
 export const RAW_VERSION = "RAW-V3.0";
 
+export function hasActiveHistoricalDuplicate(record = {}) {
+  return clean(record.duplicate_status) === "duplicate";
+}
+
 function hash(value, length = 16) {
   return crypto.createHash("sha256").update(String(value || ""), "utf8").digest("hex").slice(0, length);
 }
