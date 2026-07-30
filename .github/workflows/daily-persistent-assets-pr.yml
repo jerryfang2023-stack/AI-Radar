@@ -12,8 +12,13 @@ on:
         required: false
         default: "85"
         type: string
+      resume_run_id:
+        description: "Failed same-date run whose accepted collection artifact should be reused. Leave empty for a fresh collection."
+        required: false
+        type: string
 
 permissions:
+  actions: read
   contents: write
   pull-requests: write
 
@@ -182,9 +187,61 @@ jobs:
           gh --version
           npm run test:data-center
 
+      - name: Restore accepted source intake from failed run
+        id: resume-artifact
+        if: steps.existing-assets.outputs.skip != 'true' && github.event.inputs.resume_run_id != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          resume_run_id="${{ github.event.inputs.resume_run_id }}"
+          artifact_name="wavesight-business-signals-pr-${RUN_DATE}"
+
+          if ! [[ "$resume_run_id" =~ ^[0-9]+$ ]]; then
+            echo "Invalid resume_run_id: $resume_run_id" >&2
+            exit 2
+          fi
+
+          run_json="$(gh run view "$resume_run_id" --json workflowName,conclusion,jobs)"
+          RUN_JSON="$run_json" node --input-type=module <<'NODE'
+          const run = JSON.parse(process.env.RUN_JSON || "{}");
+          const requiredSteps = [
+            "Collect source raw artifacts",
+            "Run Daily Monitor with QC",
+            "Confirm V4 source-intake handoff and dedupe state",
+          ];
+          if (run.workflowName !== "WaveSight Business Signals PR" || run.conclusion !== "failure") {
+            throw new Error("Resume source must be a failed WaveSight Business Signals PR run.");
+          }
+          const steps = (run.jobs || []).flatMap((job) => job.steps || []);
+          for (const name of requiredSteps) {
+            const step = steps.find((candidate) => candidate.name === name);
+            if (step?.conclusion !== "success") {
+              throw new Error(`Resume source is not reusable: ${name} concluded ${step?.conclusion || "missing"}.`);
+            }
+          }
+          NODE
+
+          artifact_ready="$(gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${resume_run_id}/artifacts" \
+            --jq ".artifacts | any(.name == \"${artifact_name}\" and (.expired | not))")"
+          if [ "$artifact_ready" != "true" ]; then
+            echo "Reusable artifact is missing or expired: $artifact_name" >&2
+            exit 1
+          fi
+
+          gh run download "$resume_run_id" --name "$artifact_name" --dir .
+          node agent-workflow/tools/assert-daily-production-chain.mjs \
+            --date="${RUN_DATE}" \
+            --stage=post-monitor
+
+          echo "used=true" >> "$GITHUB_OUTPUT"
+          echo "source_run_id=$resume_run_id" >> "$GITHUB_OUTPUT"
+          echo "Restored accepted source intake from failed run $resume_run_id without recollection."
+
       - name: Collect source raw artifacts
         id: source-artifacts
-        if: steps.existing-assets.outputs.skip != 'true'
+        if: steps.existing-assets.outputs.skip != 'true' && steps.resume-artifact.outputs.used != 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -236,7 +293,7 @@ jobs:
 
       - name: Run Daily Monitor with QC
         id: monitor
-        if: steps.existing-assets.outputs.skip != 'true'
+        if: steps.existing-assets.outputs.skip != 'true' && steps.resume-artifact.outputs.used != 'true'
         continue-on-error: true
         shell: bash
         run: |
@@ -273,7 +330,7 @@ jobs:
 
       - name: Build Data Center V4 factual bundle
         id: data-center-v4
-        if: steps.monitor.outcome == 'success' && steps.persistent-assets-post-monitor.outcome == 'success'
+        if: (steps.monitor.outcome == 'success' || steps.resume-artifact.outputs.used == 'true') && steps.persistent-assets-post-monitor.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
@@ -435,7 +492,8 @@ jobs:
 
           - generated_at: $(date -Is)
           - workflow_mode: business_signals_pr
-          - monitor: ${{ steps.monitor.outcome }}
+          - monitor: ${{ steps.resume-artifact.outputs.used == 'true' && 'restored' || steps.monitor.outcome }}
+          - resumed_from_run: ${{ steps.resume-artifact.outputs.source_run_id || 'none' }}
           - structured_intake_gate: ${{ steps.persistent-assets-post-monitor.outcome }}
           - data_center_v4_build: ${{ steps.data-center-v4.outcome }}
           - data_center_v4_gate: ${{ steps.data-center-v4-gate.outcome }}
@@ -472,8 +530,9 @@ jobs:
             "date": "${RUN_DATE}",
             "generated_at": "$(date -Is)",
             "workflow_mode": "business_signals_pr",
+            "resumed_from_run": "${{ steps.resume-artifact.outputs.source_run_id }}",
             "outcomes": {
-              "monitor": "${{ steps.monitor.outcome }}",
+              "monitor": "${{ steps.resume-artifact.outputs.used == 'true' && 'restored' || steps.monitor.outcome }}",
               "structured_intake_gate": "${{ steps.persistent-assets-post-monitor.outcome }}",
               "data_center_v4_build": "${{ steps.data-center-v4.outcome }}",
               "data_center_v4_gate": "${{ steps.data-center-v4-gate.outcome }}",
@@ -768,7 +827,7 @@ jobs:
           node agent-workflow/tools/classify-business-signals-production-state.mjs \
             --skip="${{ steps.existing-assets.outputs.skip }}" \
             --skipReason="${{ steps.existing-assets.outputs.reason }}" \
-            --monitor="${{ steps.monitor.outcome }}" \
+            --monitor="${{ steps.resume-artifact.outputs.used == 'true' && 'success' || steps.monitor.outcome }}" \
             --evidenceGate="${{ steps.persistent-assets-post-monitor.outcome }}" \
             --dataCenterBuild="${{ steps.data-center-v4.outcome }}" \
             --dataCenterGate="${{ steps.data-center-v4-gate.outcome }}" \
